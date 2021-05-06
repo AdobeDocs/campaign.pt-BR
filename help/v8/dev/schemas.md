@@ -4,22 +4,95 @@ product: campaign
 title: Trabalhar com esquemas do Campaign
 description: Introdução a esquemas
 translation-type: tm+mt
-source-git-commit: 779542ab70f0bf3812358884c698203bab98d1ce
+source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 9%
+source-wordcount: '1243'
+ht-degree: 7%
 
 ---
 
 # Trabalhar com schemas{#gs-ac-schemas}
 
+A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de **schema**.
+
+Um schema é um documento XML associado a uma tabela de banco de dados. Ele define a estrutura de dados e descreve a definição SQL da tabela:
+
+* O nome da tabela
+* Campos
+* Links com outras tabelas
+
+Ele também descreve a estrutura XML usada para armazenar dados:
+
+* Elementos e atributos
+* Hierarquia de elementos
+* Tipos de elemento e atributo
+* Valores padrão
+* Rótulos, descrições e outras propriedades.
+
+Os esquemas permitem definir uma entidade no banco de dados. Existe um schema para cada entidade.
+
 A Adobe Campaign emprega os Esquemas de dados para:
 
-* Definir como os objetos de dados no aplicativo estão vinculados às tabelas de banco de dados subjacentes.
+* Defina como o objeto de dados no aplicativo é vinculado às tabelas de banco de dados subjacentes.
 * Definir links entre os diferentes objetos de dados no aplicativo Campaign.
 * Definir e descrever os campos individuais incluídos em cada objeto.
 
 Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta seção](datamodel.md).
+
+>[!CAUTION]
+>
+>Alguns esquemas internos do Campaign têm um schema associado no banco de dados do Cloud. Esses esquemas são identificados pelo namespace **Xxl** e não devem ser modificados.
+
+## Sintaxe de schemas {#syntax-of-schemas}
+
+O elemento raiz do schema é **`<srcschema>`**. Ele contém os subelementos **`<element>`** e **`<attribute>`**.
+
+O primeiro subelemento **`<element>`** coincide com a raiz da entidade.
+
+```
+<srcSchema name="recipient" namespace="cus">
+  <element name="recipient">  
+    <attribute name="lastName"/>
+    <attribute name="email"/>
+    <element name="location">
+      <attribute name="city"/>
+   </element>
+  </element>
+</srcSchema>
+```
+
+>[!NOTE]
+>
+>O elemento raiz da entidade tem o mesmo nome do schema.
+
+![](assets/schema_and_entity.png)
+
+As tags **`<element>`** definem os nomes dos elementos da entidade. **`<attribute>`** as tags do schema definem os nomes dos atributos nas  **`<element>`** tags às quais foram vinculadas.
+
+## Identificação de um schema {#identification-of-a-schema}
+
+Um schema de dados é identificado por seu nome e namespace.
+
+Um namespace permite agrupar um conjunto de schemas por área de interesse. Por exemplo, o namespace **cus** é usado para configuração específica do cliente (**customers**).
+
+>[!CAUTION]
+>
+>Como padrão, o nome do namespace deve ser conciso e deve conter somente caracteres autorizados de acordo com as regras de nomenclatura XML.
+>
+>Os identificadores não devem começar com caracteres numéricos.
+
+## Namespaces reservados
+
+Determinados namespaces são reservados para descrições das entidades do sistema necessárias para a operação do aplicativo Adobe Campaign. O namespace a seguir **não deve ser usado** para identificar um novo schema, em qualquer combinação de maiúsculas/minúsculas:
+
+* **xxl**: reservado para esquemas de banco de dados do Cloud,
+* **xtk**: reservado aos dados do sistema de plataforma,
+* **nl**: reservado à utilização global do pedido,
+* **nms**: reservado para deliveries (recipient, delivery, rastreamento etc.),
+* **ncm**: reservado para gerenciamento de conteúdo,
+* **temp**: reservado para schemas temporários.
+
+A chave de identificação de um schema é uma cadeia de caracteres criada usando o namespace e o nome separados por dois pontos; por exemplo: **nms:recipient**.
 
 ## Criar ou estender esquemas do Campaign {#create-or-extend-schemas}
 
@@ -32,6 +105,7 @@ Para adicionar um tipo de dados totalmente novo que não existe no Adobe Campaig
 :bulb: Para obter mais informações, consulte [Criar um novo schema](create-schema.md).
 
 ![](assets/schemaextension_1.png)
+
 
 Depois de criar ou estender um schema para funcionar, a prática recomendada é definir seus elementos de conteúdo XML na mesma ordem em que aparecem abaixo.
 
