@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
 translation-type: tm+mt
-source-git-commit: 54837c7da2382696718ace7ec0ebde956efd33f4
+source-git-commit: 369ddafcc64fa418a479ab03092d3475f1c811b2
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '539'
 ht-degree: 2%
 
 ---
@@ -37,6 +37,8 @@ Esse workflow replica dados de preparo para chamadas unitárias. Ele é agendado
 Esse workflow replica os dados XS para uma determinada conta externa.
 
 Esses workflows técnicos estão disponíveis no nó **[!UICONTROL Administration > Production > Technical workflows > Full FFDA replication]** do explorador do Campaign.
+
+**DEVEMOS ADICIONAR ISSO? https://wiki.corp.adobe.com/display/neolane/Full+FDA+%3A%3A+Replication+strategy**
 
 
 **Tópicos relacionados**
