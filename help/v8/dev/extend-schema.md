@@ -4,9 +4,9 @@ product: campaign
 title: Estender esquemas do Campaign
 description: Saiba como estender schemas do Campaign
 translation-type: tm+mt
-source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
+source-git-commit: 8e90eb762a6e08077270d4f5852bfc37ac783122
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '235'
 ht-degree: 1%
 
 ---
@@ -45,20 +45,26 @@ Para estender um schema, siga as etapas abaixo:
 
    ![](assets/extend-schema-edit.png)
 
-   No exemplo abaixo, adicionamos o atributo Ano de associação, colocamos um limite de comprimento para sobrenome (esse limite substituirá o padrão) e removemos a data de nascimento do schema incorporado.
+   No exemplo abaixo, adicionamos o atributo MembershipYear, colocamos um limite de comprimento para o sobrenome (esse limite substituirá o padrão) e removemos a data de nascimento do schema incorporado.
+
+   ![](assets/extend-schema-sample.png)
 
    ```
    <srcSchema created="YY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
            img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YY-MM-DD"
            mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">
-   <element desc="Recipient table" img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
-           name="recipient">
-   <attribute name="Membership Year" label="memberYear" type="long"/>
+    <element desc="Recipient table" img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
+          name="recipient">
+   <attribute label="Member since" name="MembershipYear" type="long"/>
    <attribute length="50" name="lastName"/>
    <attribute _operation="delete" name="birthDate"/>
    </element>
-   </srcSchema> 
+   </srcSchema>
    ```
+1. Desconecte e reconecte ao Campaign para verificar a atualização da estrutura do schema na guia **[!UICONTROL Structure]**.
+
+   ![](assets/extend-schema-structure.png)
 
 1. Atualize a estrutura do banco de dados para aplicar as alterações. [Saiba mais](update-database-structure.md)
+
 1. Depois que as alterações forem implementadas no banco de dados, você poderá adaptar o formulário de entrada do recipient para tornar suas alterações visíveis. [Saiba mais](forms.md)
