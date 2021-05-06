@@ -4,7 +4,7 @@ product: campaign
 title: Formulários de entrada de campanha
 description: Saiba como personalizar formulários de entrada
 translation-type: tm+mt
-source-git-commit: b4d5ed24bcca46591543b835b2fec1c18b26fc74
+source-git-commit: 8e90eb762a6e08077270d4f5852bfc37ac783122
 workflow-type: tm+mt
 source-wordcount: '2557'
 ht-degree: 3%
@@ -290,9 +290,7 @@ A seleção de destino é acessível por meio do campo de edição. A entrada é
 
 Uma lista suspensa é usada para selecionar um elemento de destino da lista de registros já criados.
 
-O ícone **[!UICONTROL Modify the link]** (pasta) inicia um formulário de seleção com a lista de elementos pretendidos e uma zona de filtro:
-
-![](assets/do-not-localize/form_exemple10.png)
+O ícone **[!UICONTROL Modify the link]** (pasta) inicia um formulário de seleção com a lista de elementos pretendidos e uma zona de filtro.
 
 O ícone **[!UICONTROL Edit link]** (lente de aumento) inicia o formulário de edição do elemento vinculado. O formulário usado é deduzido por padrão na chave do schema direcionado. O atributo **form** permite forçar o nome do formulário de edição (por exemplo, &quot;cus:company2&quot;).
 
@@ -433,8 +431,6 @@ Essas listas são usadas em elementos de coleção XML mapeados ou em links de b
 
 Este controle exibe uma lista de colunas editável com uma barra de ferramentas contendo os botões Adicionar e Excluir.
 
-![](assets/do-not-localize/form_exemple13.png)
-
 ```
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
@@ -452,8 +448,6 @@ As colunas são declaradas nas tags filho **`<input>`** da lista. O rótulo e o 
 
 Os botões da barra de ferramentas podem ser alinhados horizontalmente:
 
-![](assets/do-not-localize/form_exemple14.png)
-
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
@@ -466,8 +460,6 @@ O atributo **toolbarCaption** força o alinhamento horizontal da barra de ferram
 ### Ativar zoom em uma lista {#zoom-in-a-list}
 
 A inserção e a edição dos dados em uma lista podem ser inseridas em um formulário de edição separado.
-
-![](assets/do-not-localize/form_exemple15.png)
 
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
@@ -640,8 +632,6 @@ Para adicionar um assistente, use o seguinte tipo de estrutura:
   ...
 </form>
 ```
-
-![](assets/do-not-localize/form_exemple19.png)
 
 A presença do atributo **type=&quot;wizard&quot;** no elemento `<form>` permite definir o modo do assistente na construção do formulário. As páginas são concluídas a partir de elementos `<container>`, que são filhos do elemento `<form>`. O elemento `<container>` de uma página é preenchido com os atributos de título do título e desc para exibir a descrição sob o título da página. Os botões **[!UICONTROL Previous]** e **[!UICONTROL Next]** são adicionados automaticamente para permitir a navegação entre páginas.
 
