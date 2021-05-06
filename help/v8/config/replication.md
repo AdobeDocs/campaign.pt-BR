@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
 translation-type: tm+mt
-source-git-commit: 9efd6442336a62e627b0da4e17fa742f59f715f9
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '312'
 ht-degree: 2%
 
 ---
@@ -28,8 +28,7 @@ Esses workflows executam operações de manutenção no banco de dados, aproveit
 Além desses workflows técnicos, o Campaign v8 depende de workflows técnicos específicos para gerenciar [replicação de dados](#data-replication).
 
 * **[!UICONTROL Replicate Reference tables]**
-Esse workflow executa a replicação automática de tabelas de referência que precisam estar presentes no banco de dados local do Campaign (Postgres) e no banco de dados do Cloud (Snowflake). Ele é agendado para ser executado a cada hora, diariamente. If 
-**** lastModifiedfield existe, a replicação acontece de forma incremental, caso contrário, toda a tabela é replicada. A ordem das tabelas na matriz abaixo é a ordem usada pelo workflow de replicação.
+Esse workflow executa a replicação automática de tabelas de referência que precisam estar presentes no banco de dados local do Campaign (Postgres) e no banco de dados do Cloud ([!DNL Snowflake]). Ele é agendado para ser executado a cada hora, diariamente. Se o campo **lastModified** existir, a replicação ocorrerá de forma incremental, caso contrário, toda a tabela será replicada. A ordem das tabelas na matriz abaixo é a ordem usada pelo workflow de replicação.
 * **[!UICONTROL Replicate Staging data]**
 Esse workflow replica dados de preparo para chamadas unitárias. Ele é agendado para ser executado a cada hora, diariamente.
 * **[!UICONTROL Deploy FFDA immediately]**\
@@ -41,7 +40,7 @@ Esses workflows técnicos estão disponíveis no nó **[!UICONTROL Administratio
 
 ## Replicação de dados{#data-replication}
 
-As tabelas são replicadas do banco de dados do Campaign para o banco de dados da Snowflake Cloud por meio de workflows dedicados descritos acima.
+As tabelas são replicadas do banco de dados do Campaign para [!DNL Snowflake] o banco de dados da nuvem por meio de workflows dedicados descritos acima.
 
 As políticas de replicação são baseadas no tamanho da tabela. Algumas tabelas serão replicadas. Algumas tabelas serão replicadas em tempo real, e outras serão replicadas a cada hora. Algumas tabelas terão atualizações incrementais quando outras forem substituídas.
 
