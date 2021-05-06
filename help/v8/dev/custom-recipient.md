@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 translation-type: tm+mt
-source-git-commit: fc258cac85f1f96b6d03d69eff4e7ac70ba4247d
+source-git-commit: 5b9e381c154420c57a66e5b41b25bd4754036c60
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '254'
 ht-degree: 2%
 
 ---
@@ -34,4 +34,3 @@ Esta seção descreve os pontos principais para mapear tabelas existentes no Ado
 >
 >A personalização do Adobe Campaign é reservada somente para usuários especialistas. Ela requer experiência em formulários de entrada e design de esquema.
 
-Veja o que é válido/inválido aqui: https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html?lang=en#configuring-campaign-classic
