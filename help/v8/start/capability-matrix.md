@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 translation-type: tm+mt
-source-git-commit: 04859274593f507a0b07f46cf6a65434b6a4bc60
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '549'
 ht-degree: 3%
 
 ---
@@ -33,9 +33,9 @@ Como usuário do Campaign Classic, observe que a maioria dos recursos do Campaig
 
 ## Alterações na configuração do produto
 
-### Campanha e Snowflake {#ac-gs-snowflake}
+### Campanha e [!DNL Snowflake] {#ac-gs-snowflake}
 
-O armazenamento na nuvem é executado no Snowflake: uma nova conta externa garante a conectividade com o banco de dados da nuvem. [Saiba mais](#ac-gs-snowflake).
+O armazenamento na nuvem é executado em [!DNL Snowflake]: uma nova conta externa garante a conectividade com o banco de dados da nuvem. [Saiba mais](#ac-gs-snowflake).
 
 Esta é uma mudança fundamental na arquitetura de software. Os dados agora são remotos: O Campaign federaliza todos os dados, incluindo Perfis. O processo de campanha agora é dimensionado de ponta a ponta, desde Targeting até Delivery execution: A assimilação de dados, a segmentação, a segmentação, as consultas, a execução do Delivery agora serão executadas em minutos.
 
@@ -45,7 +45,7 @@ Uma nova conta externa **incorporada** é dedicada ao FDA completo. Este é o co
 
 Qualquer esquema/tabela interna que precise ser movida ou replicada no Banco de Dados da Nuvem vem com uma extensão de esquema incorporada no namespace **xxl**. Quanto à extensão de esquema, o novo namespace XXL será usado para qualquer nova parte da configuração OOTB, como JavaScript, JSSP etc.
 
-Essas extensões conteúdo qualquer modificação necessária para mover esquemas internos do banco de dados local do Campaign para o banco de dados do Snowflake Cloud e adaptar sua estrutura de acordo: novo UUID, links atualizados, etc.
+Essas extensões conteúdo qualquer modificação necessária para mover esquemas internos do banco de dados local do Campaign para o [!DNL Snowflake] banco de dados do Cloud e adaptar sua estrutura de acordo: novo UUID, links atualizados, etc.
 
 >[!CAUTION]
 >
