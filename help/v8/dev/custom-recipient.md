@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 translation-type: tm+mt
-source-git-commit: 5b9e381c154420c57a66e5b41b25bd4754036c60
+source-git-commit: ac75a1c085e13cd934af0f09ceba89c54bbc560a
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -28,7 +28,6 @@ Essa funcionalidade permite que o Adobe Campaign processe dados de um banco de d
 * Uso de um banco de dados de perfil com uma estrutura não padrão: possibilidade de delivery em perfis salvos em várias tabelas com várias estruturas, usando uma única instância.
 
 Esta seção descreve os pontos principais para mapear tabelas existentes no Adobe Campaign e as configurações a serem aplicadas para executar deliveries com base em qualquer tabela. Ele também descreve como projetar interfaces de consulta para usuários finais.
-
 
 >[!CAUTION]
 >
