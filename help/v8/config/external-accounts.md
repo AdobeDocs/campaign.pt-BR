@@ -7,10 +7,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
+source-git-commit: fa46fc3218d3bdc90c27d1abc9e944d73c7b91bc
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 15%
+source-wordcount: '134'
+ht-degree: 18%
 
 ---
 
@@ -25,26 +25,3 @@ As contas externas são usadas por processos técnicos, como workflows técnicos
 Uma conta externa específica gerencia a conexão entre o banco de dados local do Campaign e o banco de dados do Cloud ([!DNL Snowflake]).
 
 :voice_balloon: Como um usuário do Managed Cloud Services, [!DNL Snowflake] a conta externa é configurada para sua instância pelo Adobe.
-
-Você pode acessar essa conta externa para verificar as configurações e executar workflows de replicação. Para fazer isso, siga as etapas abaixo:
-
-1. Em Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration > Platform > External Accounts]**.
-
-1. Selecione a conta externa **[!UICONTROL Full FDA]**.
-
-![](assets/snowflake-ext-account.png)
-
-As configurações globais são exibidas no **[!UICONTROL General tab]**.
-
-Use a guia **[!UICONTROL Parameters]** e depois o botão **[!UICONTROL Deploy functions]** para criar funções.
-
-![](assets/snowflake-parameters.png)
-
-**ADICIONAR PARÂMETROS DESC AQUI**
-
-Use a guia **[!UICONTROL Full FDA]** para forçar a execução do workflow de replicação.
-
-![](assets/snowflake-full-fda.png)
-
-**ADICIONAR DETALHES AQUI**
-
