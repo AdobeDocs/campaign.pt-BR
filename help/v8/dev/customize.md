@@ -1,0 +1,91 @@
+---
+solution: Campaign Classic
+product: campaign
+title: Personalize sua instância
+description: Saiba como personalizar sua instância
+feature: Visão geral
+role: Data Engineer
+level: Beginner
+exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
+translation-type: tm+mt
+source-git-commit: 805deadf994e2c4fdfb850ea5b1c3dedf565ef2d
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 21%
+
+---
+
+# Personalize sua instância{#gs-ac-custom}
+
+Saiba como **Personalizar a instância do Campaign**
+
+>[!CAUTION]
+>
+>A personalização do Adobe Campaign é reservada somente para usuários especialistas.
+
+## Criar novos campos de dados e esquemas
+
+A Adobe Campaign emprega os Esquemas de dados para:
+
+* Definir como os objetos de dados no aplicativo estão vinculados às tabelas de banco de dados subjacentes
+* Definir links entre os diferentes objetos de dados no aplicativo Campaign
+* Definir e descrever os campos individuais incluídos em cada objeto
+
+É possível adicionar um campo a uma tabela existente, como a tabela de recipients (nms:recipient), é necessário estender esse schema.
+
+Dois modos de extensão de tabela estão disponíveis:
+
+* Por meio da interface, usando o assistente **New field**
+
+   :seta_upper_right: Saiba como adicionar rapidamente um novo campo no Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic)
+
+* Programaticamente, estendendo o esquema
+
+   :bulb: Saiba como estender um schema existente em [esta seção](../dev/extend-schema.md).
+
+
+Você pode criar novas tabelas no banco de dados do Campaign e estender o modelo de dados integrado.
+
+Para adicionar um tipo de dados totalmente novo que não existe pronto para uso no Adobe Campaign (uma tabela de contratos, por exemplo), é possível criar um schema personalizado diretamente. Para obter mais informações, consulte [este exemplo](../dev/create-schema.md#example--creating-a-contract-table).
+
+**Tópicos relacionados**
+
+:seta_upper_right: Exemplo de edição do schema na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic)
+
+:seta_upper_right: Caso de uso: vincular um campo a uma tabela de referência existente em [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link)
+
+
+## Modificar os formulários de entrada
+
+Os formulários de entrada da campanha podem ser adaptados para se adequarem à sua implementação. Você pode adicionar ou remover campos modificando o conteúdo XML.
+
+:bulb: Saiba como modificar um formulário de entrada existente ou criar um novo formulário em [esta seção](../dev/forms.md).
+
+## Personalizar painéis{#gs-custom-dashboards}
+
+A interface do Adobe Campaign usa muitas aplicações web para acessar, gerenciar e interagir com recipients, deliveries, campanhas, estoques, etc. Elas são vistas na interface do formulário de painéis com apenas uma página.
+
+Os aplicativos web prontos para uso são armazenadas no nó Administration > Configuration > Web applications.
+
+:seta_upper_right: Saiba como criar uma página de visão geral no Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application)
+
+
+## Personalizar listas e criar filtros {#gs-lists-and-filters}
+
+### Acessar dados de painéis
+
+As listas de campanha são fornecidas com filtros predefinidos para facilitar a navegação e a virtualização de dados.
+
+:seta_upper_right: Saiba mais sobre as opções de filtragem na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering)
+
+
+### Acessar dados do Explorer
+
+Ao navegar na árvore do Adobe Campaign Explorer, os dados no banco de dados são exibidos em listas. Você pode filtrar essas listas, executar pesquisas, adicionar informações, filtrar e classificar dados.
+
+:seta_upper_right: Saiba como configurar listas e salvar uma configuração de lista na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started)
+
+
+É possível aplicar filtros nessas listas para exibir apenas os dados necessários para o operador. Em seguida, as ações podem ser executadas nos dados filtrados. A configuração de filtro permite selecionar dados de uma lista dynamically. Se os dados forem modificados, os dados filtrados serão atualizados.
+
+:seta_upper_right: Saiba como filtrar dados na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters)
