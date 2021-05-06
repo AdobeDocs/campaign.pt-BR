@@ -1,0 +1,76 @@
+---
+solution: Campaign Classic
+product: campaign
+title: Matriz de compatibilidade do Campaign v8
+description: Conheça os sistemas e as versões compatíveis com o Campaign v8
+feature: Visão geral
+role: Data Engineer
+level: Beginner
+exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
+translation-type: tm+mt
+source-git-commit: 29f3a760f2fc55290c4d53d70af89061b9c9f8ba
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 35%
+
+---
+
+# Matriz de compatibilidade do Campaign v8
+
+Este documento lista todos os sistemas e componentes compatíveis com [a build mais recente](release-notes.md) de **Adobe Campaign v8**. Os produtos e as versões que não estão nessa lista não são compatíveis com o Adobe Campaign.
+
+>[!CAUTION]
+>
+>* Salvo indicação em contrário, todas as versões secundárias são compatíveis.
+>* À medida que versões específicas desses sistemas e ferramentas de terceiros atingem o fim da vida útil (EOL), a Adobe Campaign não será mais compatível com essas versões e elas serão removidas dessa matriz de compatibilidade. Verifique se você está usando as versões compatíveis dos sistemas listadas na matriz de compatibilidade para evitar problemas.
+
+
+## Sistemas compatíveis
+
+### Conectores CRM{#CRMconnectors}
+
+* **** API do Salesforceconnector versão 49
+* **Microsoft** Dynamics connector, Web API: Dynamics 365 No local e Online
+
+### Federated Data Access (FDA){#FederatedDataAccessFDA}
+
+* **Análise do Microsoft Azure Synapse**
+* **Amazon Redshift**
+* **Snowflake**
+* **Oracle** 19c, 18c, 12c, 11G
+* **PostgreSQL** 12.x, 11.x, 10.x, 9.6.x, 9.5.x, 9.4.x
+* **Microsoft SQL Server** 2019, 2017, 2016, 2014, 2012 SP1 e SP2
+* **MySQL** 5.7
+* **Teradata** 16.20, 16, 15.10, 15.0
+* **Netezza** 7.2
+* **sybase IQ** 16, ASE 15.7
+* **SAP** HANA versão 1 SPS 12
+* **Hadoop via HiveSQL**
+   * HortonWorks HDP 2.4.X, 2.5.x, 2.6.x
+   * HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6
+   * Cloudera CDH6.x
+
+### Sistemas operacionais do console do cliente{#ClientConsoleoperatingsystems}
+
+* **Microsoft Windows Server** 2016, 2012
+* **Microsoft Windows** 8, 10 (recomendado para instâncias japonesas)
+
+### Mobile SDK{#MobileSDK}
+
+* **Android** 7.x, 8.x, 9.0 com o SDK móvel build 1.0.27.
+* **Apple iOS** 9 - 14 com SDK móvel build 1.0.26, compatível com as versões de 32 e 64 bits.
+
+## Navegadores compatíveis {#Browsers}
+
+* **Microsoft Edge**,  **Mozilla Firefox**,  **Google Chrome**,  **Safari**  (versões mais recentes)
+
+* **Internet Explorer** 11
+
+## Como verificar a versão do Campaign
+
+O menu **Help > About..** permite que você acesse as seguintes informações:
+
+* o número da versão para o Console do cliente do Campaign e o servidor de aplicativos
+* o número de compilação do Console do Cliente do Campaign e do servidor de aplicativos
+* um link para entrar em contato com o Atendimento ao cliente da Adobe
+* links para Política de privacidade da Adobe, Termos de uso e Política de cookies
