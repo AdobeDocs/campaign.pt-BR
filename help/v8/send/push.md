@@ -1,13 +1,13 @@
 ---
-solution: Campaign Classic
-product: campaign
+solution: Campaign
+product: Adobe Campaign
 title: Enviar notificação por push com o Adobe Campaign
 description: Introdução à notificação por push no Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 32f73f8ecf2ce66fa6e58adb5bce7320fc65f94c
+source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 16%
