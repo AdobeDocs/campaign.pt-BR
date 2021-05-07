@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 9b6190f48373b772a72d6c1ef1b7510ec41112be
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1159'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ Nesta seção, você aprenderá a ajustar o Adobe Campaign às necessidades da s
 
 ## Antes de começar
 
-Esta seção inclui informações para desenvolvedores específicos de sua implementação que precisam cuidar da privacidade e da segurança antes de começar.
+Esta seção contém informações críticas sobre privacidade e segurança que precisam ser revisadas e consideradas antes mesmo de iniciar a implementação real.
 
 ### Privacidade
 
@@ -62,7 +62,7 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
 
 1. Importar perfis e criar públicos-alvo
 
-   O Campaign ajuda a adicionar contatos ao banco de dados do Cloud. Você pode carregar um arquivo, agendar e automatizar várias atualizações de contato, coletar dados na Web ou inserir informações de perfis diretamente na tabela do recipient.
+   O Campaign ajuda a adicionar contatos ao banco de dados do Cloud. Você pode carregar um arquivo, agendar e automatizar várias atualizações de contato, coletar dados na Web ou inserir informações de perfil diretamente na tabela do recipient.
 
    :bulb: [Saiba como importar perfis](import.md).
 
@@ -88,7 +88,7 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
 
 1. Conheça o modelo de dados integrado do Campaign
 
-   O Adobe Campaign vem com um modelo de dados predefinido. Para implementar e personalizar seu ambiente, você precisa conhecer as tabelas integradas do modelo de dados do Adobe Campaign e sua interação.
+   O Adobe Campaign vem com um modelo de dados predefinido. Para implementar e personalizar seu ambiente, você precisa conhecer as tabelas integradas do modelo de dados do Adobe Campaign e como elas se relacionam entre si.
 
    :bulb: [Saiba mais sobre o datamodel do Campaign](../dev/datamodel.md).
 
