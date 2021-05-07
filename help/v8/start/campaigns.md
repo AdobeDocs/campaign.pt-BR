@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: b39cac492f4605b7d1d7aeb75f6af26a20bf43e6
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '746'
 ht-degree: 21%
 
 ---
@@ -35,7 +35,7 @@ Antes de começar a implementar campanhas de marketing, você precisa conhecer o
 
 * **Plano**: o plano de marketing pode conter vários programas. Ele está vinculado a um período de calendário, tem um orçamento alocado e também pode ser vinculado a documentos e objetivos.
 
-* **Fluxo de trabalho** da campanha: um workflow de campanha contém atividades para criar a lógica de campanha. Usar workflows da campanha permite definir públicos e criar deliveries para todos os canais disponíveis.
+* **Fluxo de trabalho** da campanha: um workflow de campanha contém atividades para criar a lógica de campanha. Use workflows da campanha para definir públicos e criar deliveries para todos os canais disponíveis.
 
 * **Campanhas** recorrentes: as campanhas recorrentes são criadas a partir de um template específico que define o template de workflow a ser executado e o agendamento de execução.
 
