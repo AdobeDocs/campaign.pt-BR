@@ -7,10 +7,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: bbaa603e73d4c1618f326624600ea3d357b265e6
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 26%
+source-wordcount: '309'
+ht-degree: 22%
 
 ---
 
@@ -30,9 +30,9 @@ As principais etapas para enviar um SMS estão detalhadas nestas seções:
 Antes de começar a enviar SMS:
 
 * Verifique se os perfis de recipient contêm pelo menos um celular em seus perfis.
-* Leia Adobe Campaign Classic [Práticas recomendadas de delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=en#sending-messages) que também se aplicam ao Campaign v8.
+* Revise as [Práticas recomendadas de delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=en#sending-messages) do Adobe Campaign Classic que também se aplicam ao Campaign v8.
 
-Além disso, você precisa estar familiarizado com o protocolo e as configurações de SMS. Veja a conexão configurada entre o Adobe Campaign e um provedor SMPP [neste documento](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol.html?lang=en#sending-messages)
+Além disso, você precisa conhecer o protocolo e as configurações do SMS. Veja a conexão configurada entre o Adobe Campaign e um provedor SMPP [neste documento](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol.html?lang=en#sending-messages)
 
 Para obter informações globais sobre como criar um delivery, consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages).
 
