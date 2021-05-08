@@ -4,9 +4,9 @@ product: Adobe Campaign
 title: Práticas recomendadas do modelo de dados
 description: Conheça as práticas recomendadas de extensão do modelo de dados do Campaign
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 8da6928096feec988d6495fdb617dda7d7cac6ff
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2663'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ Este documento descreve as principais recomendações ao projetar o modelo de da
 
 O sistema Adobe Campaign é muito flexível e pode ser estendido além da implementação inicial. No entanto, embora as possibilidades sejam infinitas, é fundamental tomar decisões sábias e criar bases fortes para começar a projetar seu modelo de dados.
 
-Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta seção](datamodel.md) .
+Para obter uma melhor compreensão das tabelas integradas do Campaign e como elas se relacionam entre si, consulte [esta seção](datamodel.md) .
 
 :bulb: Leia [esta seção](schemas.md) para começar a usar os esquemas do Campaign.
 
@@ -59,7 +59,7 @@ Se não estiver caindo em nenhum desses, você provavelmente não precisará des
 Para garantir uma boa arquitetura e o desempenho do sistema, siga as práticas recomendadas abaixo para configurar os dados no Adobe Campaign.
 
 * Uma tabela grande deve ter principalmente campos numéricos e conter links para tabelas de referência (ao trabalhar com a lista de valores).
-* O atributo **expr** permite definir um atributo de esquema como um campo calculado em vez de um valor de conjunto físico em uma tabela. Isso pode permitir o acesso a informações em um formato diferente (como idade e data de nascimento, por exemplo) sem a necessidade de armazenar ambos os valores. Essa é uma boa maneira de evitar a duplicação de campos. Por exemplo, a tabela Recipient usa uma expressão para o domínio, que já está presente no campo de email.
+* O atributo **expr** permite definir um atributo de esquema como um campo calculado em vez de um valor de conjunto físico em uma tabela. Isso pode habilitar o acesso às informações em um formato diferente (como para idade e data de nascimento, por exemplo) sem a necessidade de armazenar ambos os valores. Essa é uma boa maneira de evitar a duplicação de campos. Por exemplo, a tabela Recipient usa uma expressão para o domínio, que já está presente no campo de email.
 * No entanto, quando o cálculo da expressão é complexo, não é recomendável usar o atributo **expr**, pois o cálculo instantâneo pode afetar o desempenho das consultas.
 * O tipo **XML** é uma boa maneira de evitar a criação de muitos campos. Mas também ocupa espaço em disco, pois usa uma coluna CLOB no banco de dados. Também pode levar a queries SQL complexos e afetar o desempenho.
 * O comprimento de um campo **string** deve sempre ser definido com a coluna . Por padrão, o comprimento máximo no Adobe Campaign é 255, mas o Adobe recomenda manter o campo mais curto se você já souber que o tamanho não excederá um comprimento menor.
@@ -67,9 +67,8 @@ Para garantir uma boa arquitetura e o desempenho do sistema, siga as práticas r
 
 ### Escolha dos campos {#choice-of-fields}
 
-Um campo precisa ser armazenado em uma tabela se tiver uma finalidade de direcionamento ou personalização. Em outras palavras, se um campo não for usado para enviar um email personalizado ou como um critério em uma query, ele ocupará espaço em disco, enquanto será inútil.
+Um campo precisa ser armazenado em uma tabela se tiver uma finalidade de direcionamento ou personalização. Em outras palavras, se um campo não for usado para enviar um email personalizado ou como um critério em uma query, ele ocupará espaço em disco desnecessariamente.
 
-Para instâncias híbridas e no local, o FDA (Federated Data Access, um recurso opcional que permite acessar dados externos) cobre a necessidade de adicionar um campo &quot;instantaneamente&quot; durante um processo de campanha. Você não precisa importar tudo se tiver FDA. Para obter mais informações, consulte [Federated Data Access](../connect/fda.md).
 
 ### Escolha das chaves {#choice-of-keys}
 
@@ -97,7 +96,7 @@ A tabela a seguir descreve esses identificadores e sua finalidade.
 | Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto for implantado de um ambiente para outro.</li><li>Quando um objeto tem um atributo de namespace (*schema* por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*.</li><li>Quando um objeto não tem namespace (*workflow* ou *delivery* por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais, como espaço &quot;&quot;, semircoluna &quot;:&quot; ou hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenadas como &quot;abc_def&quot; e se substituiriam.</li></ul> |
 | Rótulo | <ul><li>O rótulo é o identificador comercial de um objeto ou registro no Adobe Campaign.</li><li>Esse objeto permite espaços e caracteres especiais.</li><li>Não garante a singularidade de um registro.</li></ul> | <ul><li>É recomendável determinar uma estrutura para seus rótulos de objetos.</li><li>Essa é a solução mais fácil de usar para identificar um registro ou objeto para um usuário do Adobe Campaign.</li></ul> |
 
-A chave primária do Adobe Campaign é uma UUID gerada automaticamente para todas as tabelas incorporadas e pode ser a mesma para tabelas personalizadas.
+A chave primária do Adobe Campaign é um UUID gerado automaticamente para todas as tabelas integradas. Uma UUID também pode ser usada para tabelas personalizadas.
 
 Mesmo que o número de IDs seja infinito, é necessário tomar cuidado com o tamanho do banco de dados para garantir desempenho ideal. Para evitar qualquer problema, ajuste as configurações de limpeza de instância. Para obter mais informações, consulte [esta seção](#data-retention).
 
@@ -123,7 +122,7 @@ Ao criar uma tabela personalizada, você tem duas opções:
 
 ### Links {#links}
 
-Cuidado com a &quot;própria&quot; integridade em tabelas grandes. Excluir registros que tenham tabelas largas na integridade &quot;própria&quot; pode interromper a instância. A tabela está bloqueada e as exclusões são feitas uma por uma. Portanto, é melhor usar integridade &quot;neutra&quot; em tabelas secundárias que têm grandes volumes.
+Cuidado com a &quot;própria&quot; integridade em tabelas grandes. Excluir registros que tenham tabelas grandes na integridade &quot;própria&quot; pode potencialmente interromper a instância. A tabela está bloqueada e as exclusões são feitas uma por uma. Portanto, é melhor usar integridade &quot;neutra&quot; em tabelas secundárias que têm grandes volumes.
 
 Declarar um link como uma associação externa não é bom para o desempenho. O registro de id zero emula a funcionalidade de associação externa. Não é necessário declarar associações externas se o link usar o autouuid.
 
