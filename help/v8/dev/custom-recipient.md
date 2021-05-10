@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 84ee7eb2bf2e15d30c81f32f6b25c9801b3b12b1
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '253'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 O Adobe Campaign vem com uma tabela de perfil integrada: **nmsRecipient**. Essa tabela tem vários campos e tabelas predefinidos que podem ser facilmente estendidos. Saiba mais sobre esta tabela em [this page](datamodel.md#ootb-profiles).
 
-A extensão de tabela integrada oferece boa flexibilidade, mas não permite remover alguns campos ou links não utilizados. Como consequência, usar uma tabela de recipient personalizada pode ser uma boa opção quando o modelo de dados for diferente drasticamente da estrutura da tabela de recipients integrada do Campaign ou se você tiver um grande número de perfis.  No entanto, este método exige determinadas precauções ao implementá-lo.
+A extensão de tabela integrada oferece flexibilidade, mas não permite remover alguns campos ou links não utilizados. Como consequência, usar uma tabela de recipient personalizada pode ser uma boa opção quando o modelo de dados for diferente drasticamente da estrutura da tabela de recipients integrada do Campaign ou se você tiver um grande número de perfis.  No entanto, este método exige determinadas precauções ao implementá-lo.
 
 Essa funcionalidade permite que o Adobe Campaign processe dados de um banco de dados externo: esses dados serão usados como um conjunto de perfis para deliveries. A implementação desse processo envolve limitações, como:
 
