@@ -7,7 +7,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 37%
@@ -68,7 +68,7 @@ Antes de começar, como um **Administrador** do Campaign, certifique-se de execu
 
 1. Crie perfis de usuário. [Saiba mais](interaction-operators.md).
 1. (opcional) Crie um ambiente de oferta para cada targeting dimension. [Saiba mais](interaction-env.md)
-1. Crie regras de tipologia para cada ambiente. [Saiba mais](interaction-offers.md#offer-presentation).
+1. Crie regras de tipologia para cada ambiente. [Saiba mais](interaction-offer.md#offer-presentation).
 1. Crie espaços de ofertas para cada ambiente e configure as funções de renderização. [Saiba mais](interaction-offer-spaces.md).
 Se o espaço for definido por um canal unitário no modo identificado, você deverá especificar os parâmetros avançados para esse espaço.
 
