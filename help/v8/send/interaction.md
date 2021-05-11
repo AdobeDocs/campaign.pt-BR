@@ -7,7 +7,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 37%
@@ -68,22 +68,22 @@ Antes de começar, como um **Administrador** do Campaign, certifique-se de execu
 
 1. Crie perfis de usuário. [Saiba mais](interaction-operators.md).
 1. (opcional) Crie um ambiente de oferta para cada targeting dimension. [Saiba mais](interaction-env.md)
-1. Crie regras de tipologia para cada ambiente. [Saiba mais](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule).
-1. Crie espaços de ofertas para cada ambiente e configure as funções de renderização. [Saiba mais](../../interaction/using/creating-offer-spaces.md).
+1. Crie regras de tipologia para cada ambiente. [Saiba mais](interaction-offers.md#offer-presentation).
+1. Crie espaços de ofertas para cada ambiente e configure as funções de renderização. [Saiba mais](interaction-offer-spaces.md).
 Se o espaço for definido por um canal unitário no modo identificado, você deverá especificar os parâmetros avançados para esse espaço.
 
 ### Criar e publicar o catálogo de ofertas {#managing-the-offer-catalog-}
 
 Como um **Offer manager**, você precisa executar as seguintes tarefas:
 
-1. Crie categorias de ofertas em ambientes de design. [Saiba mais](../../interaction/using/creating-offer-categories.md).
-1. Crie ofertas em ambientes de design. [Saiba mais](../../interaction/using/creating-an-offer.md).
-1. Aprove e publique ofertas em um ou vários espaços para torná-las disponíveis em ambientes dinâmicos para o gerenciador de delivery. [Saiba mais](../../interaction/using/approving-and-activating-an-offer.md).
+1. Crie categorias de ofertas em ambientes de design. [Saiba mais](interaction-offer-catalog.md#creating-offer-categories).
+1. Crie ofertas em ambientes de design. [Saiba mais](interaction-offer.md).
+1. Aprove e publique ofertas em um ou vários espaços para torná-las disponíveis em ambientes dinâmicos para o gerenciador de delivery. [Saiba mais](interaction-offer.md#approve-offers).
 
 ### Aproveite o catálogo de ofertas {#using-the-offer-catalog-}
 
 Como **Delivery manager**, você precisa executar as seguintes tarefas:
 
 1. Crie uma campanha.
-1. Faça referência a uma oferta na campanha ou no delivery. [Saiba mais](../../interaction/using/about-outbound-channels.md).
+1. Faça referência a uma oferta na campanha ou no delivery. [Saiba mais](interaction-send-offers.md).
 
