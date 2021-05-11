@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 translation-type: tm+mt
-source-git-commit: 3419ede105f652f0a33362468a7d119687c078de
+source-git-commit: 1ac6b58e1d5731d4df4d6d7c6a9b25f0f41ff563
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 32%
+ht-degree: 31%
 
 ---
 
@@ -26,6 +26,19 @@ Este documento lista todos os sistemas e componentes compatíveis com a última 
 
 
 ## Sistemas compatíveis
+
+### Console do cliente{#ClientConsoleoperatingsystems}
+
+:warning: Os seguintes sistemas operacionais e navegadores são necessários para usar o Console do Cliente do Campaign.
+
+**Sistemas operacionais**
+
+* **Microsoft Windows Server** 2016, 2012
+* **Microsoft Windows** 8, 10 (recomendado para instâncias japonesas)
+
+**Navegador**
+
+**Microsoft Internet Explorer** 11
 
 ### Conectores CRM{#CRMconnectors}
 
@@ -49,19 +62,6 @@ Este documento lista todos os sistemas e componentes compatíveis com a última 
    * HortonWorks HDP 2.4.X, 2.5.x, 2.6.x
    * HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6
    * Cloudera CDH6.x
-
-### Console do cliente{#ClientConsoleoperatingsystems}
-
-:warning: Os seguintes sistemas operacionais e navegadores são necessários para usar o Console do Cliente do Campaign.
-
-**Sistemas operacionais**
-
-* **Microsoft Windows Server** 2016, 2012
-* **Microsoft Windows** 8, 10 (recomendado para instâncias japonesas)
-
-**Navegador**
-
-Microsoft Internet Explorer 11
 
 ### Mobile SDK{#MobileSDK}
 
