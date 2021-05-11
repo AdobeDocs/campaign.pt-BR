@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 43914bcbe3cf0ddb323d99a9df16189a1f687317
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 18%
+source-wordcount: '287'
+ht-degree: 17%
 
 ---
 
@@ -35,7 +35,8 @@ CubosAnalise e meça dados, calcule estatísticas, simplifique e otimize a cria�
 
 Dependendo da complexidade das queries, cálculos e volumes, os dados analisados nesses relatórios podem ser coletados por meio de uma query e pré-agregados em uma lista (fluxo de trabalho do tipo &quot;gestão de dados&quot;) ou em um Cubo (usando Marketing Analytics). Ele será exibido na forma de uma tabela dinâmica ou uma lista de grupos.
 
+
 :seta_upper_right: Para obter mais informações sobre recursos de relatórios, [consulte esta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reporting-in-adobe-campaign/about-adobe-campaign-reporting-tools.html).
 
-## Métricas principais a serem verificadas
+Observe que os relatórios do Campaign v8 são otimizados e oferecem recursos de melhor escala do que o Campaign Classic v7. As limitações existentes em cubos não se aplicam.
 
