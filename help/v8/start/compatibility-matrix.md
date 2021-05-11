@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: e94080bc5e56e642494de48ff4b739b806c6e2e7
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '323'
 ht-degree: 34%
 
 ---
@@ -55,12 +55,54 @@ Este documento lista todos os sistemas e componentes compatíveis com a última 
 * **Microsoft Windows Server** 2016, 2012
 * **Microsoft Windows** 8, 10 (recomendado para instâncias japonesas)
 
+## Console do cliente {#ClientConsoleoperatingsystems}
+
+:warning: Os seguintes sistemas operacionais e navegadores são necessários para usar o Console do Cliente do Campaign.
+
+### Sistemas operacionais
+
+<table>
+<tbody>
+<tr>
+<td>Microsoft Windows Server</td>
+<td>
+<p>2016</p>
+<p>2012</p>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows</td>
+<td>
+<p>8</p>
+<p>10 (recomendado para instâncias em japonês)</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Navegador
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Mobile SDK{#MobileSDK}
 
 * **Android** 7.x, 8.x, 9.0 com o SDK móvel build 1.0.27.
 * **Apple iOS** 9 - 14 com SDK móvel build 1.0.26, compatível com as versões de 32 e 64 bits.
 
 ## Navegadores compatíveis {#Browsers}
+
+Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 
 * **Microsoft Edge**,  **Mozilla Firefox**,  **Google Chrome**,  **Safari**  (versões mais recentes)
 
