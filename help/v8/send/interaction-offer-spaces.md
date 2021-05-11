@@ -7,10 +7,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 42%
+source-wordcount: '606'
+ht-degree: 39%
 
 ---
 
@@ -19,8 +19,6 @@ ht-degree: 42%
 O conteúdo do catálogo de ofertas é configurado em espaços de ofertas. Por padrão, o conteúdo pode incluir os seguintes campos: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** e **[!UICONTROL Text content]**. A sequência de campos é configurada no espaço de oferta.
 
 Como um **administrador técnico**, você pode criar espaços de oferta no ambiente Design . Você precisa ter acesso à subpasta de espaço de oferta. Depois de criados, esses espaços de oferta são duplicados automaticamente no ambiente Live durante a aprovação da oferta.
-
-Parâmetros avançados permitem especificar uma chave de identificação de contato (que pode ser feita de vários elementos, o nome e o campo de e-mail ao mesmo tempo, por exemplo). Para obter mais informações, consulte a seção [Apresentação de uma oferta identificada](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer).
 
 A renderização HTML é criada por meio de uma função de renderização. A seqüência dos campos definidos na função de renderização deve ser idêntica à sequência configurada no conteúdo.
 
@@ -66,8 +64,6 @@ Para criar um novo espaço de oferta, siga as etapas abaixo:
 1. Insira a função de renderização.
 
    ![](assets/offer_space_create_007.png)
-
-Se necessário, é possível sobrecarregar as funções de renderização de texto e HTML. [Saiba mais](../../interaction/using/about-inbound-channels.md).
 
 ## Status da apresentação de oferta {#offer-proposition-statuses}
 
@@ -161,5 +157,5 @@ Se um recipient não estiver qualificado para ofertas, isso será mostrado na vi
 ![](assets/offer_space_overview_001.png)
 
 <!--
-The preview can ignore contexts when they are restricted to a space. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to [Extension example](../../interaction/using/extension-example.md)).
+The preview can ignore contexts when they are restricted to a space. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to Extension example.
 -->
