@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 translation-type: tm+mt
-source-git-commit: eb47761f20c02474bb971ab992cf1ea5098bb350
+source-git-commit: 878badaa696e11771388d3a37658f75cca756543
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 40%
@@ -30,7 +30,7 @@ No Adobe Campaign, os recipients são os perfis padrão direcionados para envio 
 
 :seta_forward: [Entender o que é um perfil no vídeo](https://video.tv.adobe.com/v/35611?quality=12)
 
-:seta_upper_right: Saiba como gerenciar perfis em [este guia](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html{{){:target=&quot;_blank&quot;}.
+:seta_upper_right: Saiba como gerenciar perfis em [este guia](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html{:target=&quot;_blank&quot;}).
 
 ## Privacidade e consentimento
 
