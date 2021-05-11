@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 1ac6b58e1d5731d4df4d6d7c6a9b25f0f41ff563
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '674'
 ht-degree: 11%
 
 ---
@@ -19,9 +19,11 @@ ht-degree: 11%
 
 O Console do Cliente do Campaign é um cliente avançado que permite a conexão com o(s) servidor(es) de aplicativos do Campaign.
 
->[!CAUTION]
->
->Antes de começar, você precisa verificar a [Matriz de compatibilidade](compatibility-matrix.md) do Campaign, obter o URL do servidor do Campaign e as credenciais do usuário.
+Antes de começar, é necessário:
+
+* Verifique a compatibilidade do sistema e das ferramentas com o Adobe Campaign na [Matriz de Compatibilidade](compatibility-matrix.md)
+* Obter o URL do servidor do Campaign
+* Obter suas credenciais de usuário
 
 ## Baixe e instale o Console do cliente
 
@@ -93,7 +95,6 @@ O Adobe Campaign permite definir e gerenciar os direitos atribuídos aos diverso
 Saiba mais sobre usuários e como definir suas permissões em [esta seção](permissions.md).
 
 Como administrador do Campaign, você é responsável por criar os operadores e compartilhar suas credenciais com os usuários.
-
 
 ## Conecte-se ao Campaign com seu Adobe ID{#connect-ims}
 
