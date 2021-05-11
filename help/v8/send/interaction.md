@@ -7,7 +7,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
+source-git-commit: 3783cb5ed3085b988f573fbf15858377b2bb2e05
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 37%
@@ -21,6 +21,36 @@ O Campaign vem com um módulo **Interaction** que permite responder em tempo rea
 Você pode criar um catálogo de ofertas com seus canais de saída (email, correspondência direta, SMS) para selecionar a melhor oferta para enviar a um contato em um determinado contexto. A seleção de melhor oferta para um recipient é baseada em **regras de elegibilidade**. A seleção de uma oferta de um conjunto de ofertas relevantes é determinada usando regras de prioridade. As regras de apresentação de ofertas levam em consideração o histórico do contato e ajudam a evitar que elas recebam a mesma oferta várias vezes.
 
 A interação permite criar e gerenciar um catálogo de ofertas e configurar as regras de elegibilidade e os temas de aplicações vinculados a elas. Dependendo do canal escolhido, o conteúdo da oferta pode ser personalizado graças a várias funções de renderização. Por fim, você pode usar o módulo de simulação para calcular o impacto de uma apresentação de ofertas.
+
+## Introdução a ofertas
+
+As principais etapas para iniciar estão listadas abaixo.
+
+### Configurar sua plataforma
+
+Antes de começar, como um **Administrador** do Campaign, certifique-se de executar as seguintes tarefas em ambientes de design:
+
+1. Crie perfis de usuário. [Saiba mais](interaction-operators.md).
+1. (opcional) Crie um ambiente de oferta para cada targeting dimension. [Saiba mais](interaction-env.md)
+1. Crie regras de tipologia para cada ambiente. [Saiba mais](interaction-offer.md#offer-presentation).
+1. Crie espaços de ofertas para cada ambiente e configure as funções de renderização. [Saiba mais](interaction-offer-spaces.md).
+Se o espaço for definido por um canal unitário no modo identificado, você deverá especificar os parâmetros avançados para esse espaço.
+
+### Criar e publicar o catálogo de ofertas {#managing-the-offer-catalog-}
+
+Como um **Offer manager**, você precisa executar as seguintes tarefas:
+
+1. Crie categorias de ofertas em ambientes de design. [Saiba mais](interaction-offer-catalog.md#creating-offer-categories).
+1. Crie ofertas em ambientes de design. [Saiba mais](interaction-offer.md).
+1. Aprove e publique ofertas em um ou vários espaços para torná-las disponíveis em ambientes dinâmicos para o gerenciador de delivery. [Saiba mais](interaction-offer.md#approve-offers).
+
+### Aproveite o catálogo de ofertas {#using-the-offer-catalog-}
+
+Como **Delivery manager**, você precisa executar as seguintes tarefas:
+
+1. Crie uma campanha.
+1. Faça referência a uma oferta na campanha ou no delivery. [Saiba mais](interaction-send-offers.md).
+
 
 ## Conceitos e terminologia
 
@@ -57,33 +87,4 @@ Há dois tipos de ambientes:
 * O **Preview** da oferta mostra a oferta como ela é exibida em sua pasta. É acessível a partir da janela de configurações de oferta ou do perfil de contato.
 * **Os** filtros predefinidos são regras de filtragem que podem considerar os parâmetros de oferta (por exemplo, um código de oferta). Eles podem ser reutilizados após a criação de ofertas.
 * Uma **Representação da oferta** é uma informação usada pelo canal para exibir a oferta. A representação da oferta pode ser construída a partir da função de renderização do espaço em que a oferta é representada ou inserida diretamente na interface (por exemplo, no bloco HTML). Uma oferta pode ser representada por espaço.
-
-## Introdução a ofertas
-
-As principais etapas para iniciar estão listadas abaixo.
-
-### Configurar sua plataforma
-
-Antes de começar, como um **Administrador** do Campaign, certifique-se de executar as seguintes tarefas em ambientes de design:
-
-1. Crie perfis de usuário. [Saiba mais](interaction-operators.md).
-1. (opcional) Crie um ambiente de oferta para cada targeting dimension. [Saiba mais](interaction-env.md)
-1. Crie regras de tipologia para cada ambiente. [Saiba mais](interaction-offer.md#offer-presentation).
-1. Crie espaços de ofertas para cada ambiente e configure as funções de renderização. [Saiba mais](interaction-offer-spaces.md).
-Se o espaço for definido por um canal unitário no modo identificado, você deverá especificar os parâmetros avançados para esse espaço.
-
-### Criar e publicar o catálogo de ofertas {#managing-the-offer-catalog-}
-
-Como um **Offer manager**, você precisa executar as seguintes tarefas:
-
-1. Crie categorias de ofertas em ambientes de design. [Saiba mais](interaction-offer-catalog.md#creating-offer-categories).
-1. Crie ofertas em ambientes de design. [Saiba mais](interaction-offer.md).
-1. Aprove e publique ofertas em um ou vários espaços para torná-las disponíveis em ambientes dinâmicos para o gerenciador de delivery. [Saiba mais](interaction-offer.md#approve-offers).
-
-### Aproveite o catálogo de ofertas {#using-the-offer-catalog-}
-
-Como **Delivery manager**, você precisa executar as seguintes tarefas:
-
-1. Crie uma campanha.
-1. Faça referência a uma oferta na campanha ou no delivery. [Saiba mais](interaction-send-offers.md).
 
