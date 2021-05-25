@@ -1,15 +1,14 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Aplicativos da Web do Campaign e formulários web
 description: Introdução a aplicativos web e formulários web
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 31%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 31%
 
 O Adobe Campaign integra um módulo gráfico para definir e publicar **formulários Web** a fim de criar páginas contendo campos de entrada e seleção e que possam incluir dados no banco de dados. Isso permite a criação e publicação de páginas da Web onde os usuários podem visualizar ou inserir informações.
 
-:seta_upper_right: Saiba como criar e publicar formulários web na [documentação do Campaign Classic](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=en#designing-content)
+:seta_upper_right: Saiba como criar e publicar formulários web na [documentação do Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=en#designing-content)
 
 ![](assets/sample.png)
 
@@ -26,4 +25,4 @@ O Adobe Campaign também permite criar e publicar aplicações web dinâmicas e 
 
 É possível criar páginas, como um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada, etc. Essa funcionalidade permite criar e publicar páginas da Web em que os usuários podem pesquisar ou inserir informações.
 
-:seta_upper_right: Saiba como criar e publicar aplicações Web na [documentação do Campaign Classic](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=en#designing-content)
+:seta_upper_right: Saiba como criar e publicar aplicações Web na documentação do [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=en#designing-content)
