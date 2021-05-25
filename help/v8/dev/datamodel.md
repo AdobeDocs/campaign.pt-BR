@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: 'Introdução ao modelo de dados do Campaign '
 description: 'Introdução ao modelo de dados do Campaign '
@@ -7,10 +7,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '657'
 ht-degree: 4%
 
 ---
@@ -29,11 +28,11 @@ A estrutura básica do modelo de dados Adobe Campaign pode ser descrita da segui
 
 * **Registra tabelas**: Essas tabelas armazenam todos os logs associados à execução das campanhas.
 
-   Todos os logs do delivery são mensagens enviadas a recipients ou dispositivos em todos os canais. A tabela principal Delivery logs (NmsBroadLog) contém os logs de delivery para todos os recipients.
-A tabela principal Tracking logs (NmsTrackingLog) armazena os logs de rastreamento para todos os recipients. Os logs de rastreamento se referem a reações de recipients, como aberturas de email e cliques. Cada reação corresponde a um log de rastreamento.
+   Todos os logs do delivery são mensagens enviadas a recipients ou dispositivos em todos os canais. A tabela principal Delivery logs (NmsBroadLogRcp) contém os logs de delivery para todos os recipients.
+A tabela principal Tracking logs (NmsTrackingLogRcp) armazena os logs de rastreamento para todos os recipients. Os logs de rastreamento se referem a reações de recipients, como aberturas de email e cliques. Cada reação corresponde a um log de rastreamento.
 Os logs de delivery e de rastreamento são excluídos após um determinado período, que é especificado no Adobe Campaign e pode ser modificado. Portanto, é altamente recomendável exportar os logs regularmente.
 
-* **Tabelas** técnicas: Colete dados técnicos usados para o processo do aplicativo, incluindo operadores e direitos de usuário (NmsGroup), pastas (XtkFolder).
+* **Tabelas** técnicas: Colete dados técnicos usados para o processo do aplicativo, incluindo operadores e direitos do usuário (xtkGroup), pastas (XtkFolder).
 
 >[!NOTE]
 >
@@ -63,7 +62,7 @@ Os benefícios de usar a tabela de recipients padrão são:
 
 :bulb: Saiba como estender um schema existente em [esta seção](extend-schema.md).
 
-:seta_upper_right: Descubra exemplos de extensões internas da tabela de destinatários em [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)
+:seta_upper_right: Descubra exemplos de extensões de tabela de recipient incorporadas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)
 
 Você também pode usar uma tabela de recipients diferente para se adequar melhor às suas necessidades comerciais ou funcionais. Este método vem com limitações e é descrito em [this section](custom-recipient.md).
 
