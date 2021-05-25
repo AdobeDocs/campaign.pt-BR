@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Matriz de compatibilidade do Campaign v8
 description: Conheça os sistemas e as versões compatíveis com o Campaign v8
@@ -7,10 +7,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-translation-type: tm+mt
-source-git-commit: 1ac6b58e1d5731d4df4d6d7c6a9b25f0f41ff563
+source-git-commit: ffdfc9a2e1bec191b5a3cc7f7b40683b2456bf3e
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '274'
 ht-degree: 31%
 
 ---
@@ -29,7 +28,7 @@ Este documento lista todos os sistemas e componentes compatíveis com a última 
 
 ### Console do cliente{#ClientConsoleoperatingsystems}
 
-:warning: Os seguintes sistemas operacionais e navegadores são necessários para usar o Console do Cliente do Campaign.
+:aviso: os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
 
 **Sistemas operacionais**
 
@@ -47,23 +46,10 @@ Este documento lista todos os sistemas e componentes compatíveis com a última 
 
 ### Federated Data Access (FDA){#FederatedDataAccessFDA}
 
-* **Análise do Microsoft Azure Synapse**
 * **Amazon Redshift**
 * **[!DNL Snowflake]**
-* **Oracle** 19c, 18c, 12c, 11G
-* **PostgreSQL** 12.x, 11.x, 10.x, 9.6.x, 9.5.x, 9.4.x
-* **Microsoft SQL Server** 2019, 2017, 2016, 2014, 2012 SP1 e SP2
-* **MySQL** 5.7
-* **Teradata** 16.20, 16, 15.10, 15.0
-* **Netezza** 7.2
-* **sybase IQ** 16, ASE 15.7
-* **SAP** HANA versão 1 SPS 12
-* **Hadoop via HiveSQL**
-   * HortonWorks HDP 2.4.X, 2.5.x, 2.6.x
-   * HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6
-   * Cloudera CDH6.x
 
-### Mobile SDK{#MobileSDK}
+### SDK móvel{#MobileSDK}
 
 * **Android** 7.x, 8.x, 9.0 com o SDK móvel build 1.0.27.
 * **Apple iOS** 9 - 14 com SDK móvel build 1.0.26, compatível com as versões de 32 e 64 bits.
@@ -78,9 +64,13 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 
 ## Como verificar a versão do Campaign
 
-O menu **Help > About..** permite que você acesse as seguintes informações:
+Use o menu **Ajuda > Sobre...** para verificar sua versão.
 
-* o número da versão para o Console do cliente do Campaign e o servidor de aplicativos
-* o número de compilação do Console do Cliente do Campaign e do servidor de aplicativos
-* um link para entrar em contato com o Atendimento ao cliente da Adobe
-* links para Política de privacidade da Adobe, Termos de uso e Política de cookies
+![](assets/ac-version.png)
+
+Você acessa as seguintes informações:
+
+* O número **version** do console do cliente e do servidor de aplicativos. Na amostra acima, a versão é 8.1.5 para o console do cliente e para o servidor de aplicativos.
+* O número SHA, entre parênteses.
+* Um link para entrar em contato com o Atendimento ao cliente do Adobe.
+* Links para Política de privacidade do Adobe, Termos de uso e Política de cookies.
