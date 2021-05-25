@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Campaign Classic v7 - Matriz de recursos do Campaign v8
 description: Entender as diferenças entre o Campaign Classic v7 e o Campaign v8
@@ -7,50 +7,45 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-translation-type: tm+mt
-source-git-commit: e1308398e5a33f2ad9659ad632aeb05af9916e69
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 3%
+source-wordcount: '572'
+ht-degree: 4%
 
 ---
 
-# Campaign Classic v7 - recursos do Campaign v8{#gs-matrix}
+# [!DNL Campaign Classic] v7 - recursos  [!DNL Campaign] v8{#gs-matrix}
 
-
-Como um usuário existente do Campaign Classic v7, você não deve esperar grandes interrupções na maneira como você normalmente interage com o Adobe Campaign. A maioria das alterações na v8 não está visível, exceto para pequenas alterações que surgiram na interface do usuário e nas etapas de configuração.
+Como um usuário [!DNL Campaign Classic] v7 existente, você não deve esperar grandes interrupções na maneira como geralmente interage com [!DNL Adobe Campaign]. A maioria das alterações na v8 não está visível, exceto para pequenas alterações que surgiram na interface do usuário e nas etapas de configuração.
 
 Alterações principais:
 
 * Crie segmentos 200 vezes mais rápidos
-
 * Aumentar a velocidade de entrega
+* Relatório em tempo real com cubos
 
-* Relatório em tempo real
+Como usuário [!DNL Campaign Classic], observe que a maioria dos recursos [!DNL Campaign Classic] v7 está disponível com [!DNL Campaign] v8, exceto um pequeno conjunto deles, listado em [esta seção](#gs-removed). Outros serão lançados em versões futuras. [Saiba mais nesta seção](#gs-unavailable-features)
 
-Como usuário do Campaign Classic, observe que a maioria dos recursos do Campaign Classic v7 está disponível com o Campaign v8, exceto um pequeno conjunto deles, listado em [this section](#gs-removed). Outros serão lançados em versões futuras. [Saiba mais](#gs-unavailable-features)
-
+:bulb: Saiba mais sobre a arquitetura [!DNL Campaign] v8 em [esta página](../dev/architecture.md).
 
 ## Alterações na configuração do produto
 
-### Campanha e [!DNL Snowflake] {#ac-gs-snowflake}
+### [!DNL Campaign] e [!DNL Snowflake] {#ac-gs-snowflake}
 
-O armazenamento na nuvem é executado em [!DNL Snowflake]: uma nova conta externa garante a conectividade com o banco de dados da nuvem. [Saiba mais](#ac-gs-snowflake).
+[!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um banco de dados local para a interface do usuário, mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e um banco de dados do Cloud para execução de campanha, consultas em lote e execução de workflows.
 
-Esta é uma mudança fundamental na arquitetura de software. Agora os dados são remotos e o Campaign federa todos os dados, incluindo Perfis. Os processos de campanha agora escalam de ponta a ponta, do direcionamento à execução de mensagem: a assimilação de dados, a segmentação, o direcionamento, as consultas, os deliveries normalmente serão executados em minutos.
+Esta é uma mudança fundamental na arquitetura de software. Agora os dados são remotos e o Campaign federa todos os dados, incluindo Perfis. [!DNL Campaign] Os processos agora dimensionam de ponta a ponta, do direcionamento à execução de mensagem: a assimilação de dados, a segmentação, o direcionamento, as consultas, os deliveries normalmente serão executados em minutos. Esta nova versão resolve todo o desafio do dimensionamento, mantendo o mesmo nível de flexibilidade e extensibilidade. O número de perfis é quase ilimitado e a retenção de dados pode ser estendida.
 
-Esta nova versão resolve todo o desafio do dimensionamento, mantendo o mesmo nível de flexibilidade e extensibilidade. O número de perfis é quase ilimitado e a retenção de dados pode ser estendida.
+O armazenamento na nuvem é executado em **[!DNL Snowflake]**: uma nova **conta externa** integrada garante a conectividade com o banco de dados da nuvem. Ele é configurado pelo Adobe e não deve ser modificado. [Saiba mais](../config/external-accounts.md).
 
-Uma nova conta externa **incorporada** é dedicada ao FDA completo. Este é o coração da conectividade com o banco de dados da nuvem. Recomendamos partir como está.
-
-Qualquer esquema/tabela interna que precise ser movida ou replicada no banco de dados do Cloud vem com uma extensão de schema incorporada no namespace **xxl**.
-
-Essas extensões contêm qualquer modificação necessária para mover esquemas internos do banco de dados local do Campaign para o banco de dados do [!DNL Snowflake] Cloud e adaptar sua estrutura de acordo: novo UUID, links atualizados, etc.
+Qualquer esquema/tabela interna que precise ser movida ou replicada no banco de dados do Cloud vem com uma extensão de schema incorporada no namespace **xxl**. Essas extensões contêm qualquer modificação necessária para mover esquemas internos do banco de dados local [!DNL Campaign] para o banco de dados do [!DNL Snowflake] Cloud e adaptar sua estrutura de acordo: novo UUID, links atualizados, etc.
 
 >[!CAUTION]
 >
-> Os dados do cliente não são armazenados no banco de dados local do Campaign. Como consequência, qualquer tabela personalizada precisa ser criada no banco de dados do Cloud.
+> Os dados do cliente não são armazenados no banco de dados local [!DNL Campaign]. Como consequência, qualquer tabela personalizada precisa ser criada no banco de dados do Cloud.
 
+
+APIs específicas estão disponíveis para gerenciar dados entre o banco de dados local e da nuvem. Saiba como essas novas APIs funcionam e como usá-las em [this page](../dev/new-apis.md).
 
 ### Replicação de dados
 
@@ -68,7 +63,7 @@ Um workflow técnico específico trata da replicação de tabelas que precisam e
 
 Os objetos do Campaign v8 agora usam um **ID universal exclusiva (UUID)**, que permite que valores exclusivos ilimitados identifiquem dados
 
-Não que essa ID seja baseada em sequência e não sequencial.
+Observe que essa ID é baseada em sequência e não sequencial.
 
 ### Manutenção simplificada
 
