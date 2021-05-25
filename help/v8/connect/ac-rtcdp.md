@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Trabalhe com o Campaign e a Plataforma de dados do cliente em tempo real
 description: Saiba como trabalhar com o Campaign e a Plataforma de dados do cliente em tempo real
@@ -7,20 +7,19 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 36%
+source-wordcount: '138'
+ht-degree: 23%
 
 ---
 
 # Trabalhe com o Campaign e a Plataforma de dados do cliente em tempo real
 
-Com a Adobe Experience Platform, você pode compartilhar dados entre o Campaign e a Plataforma de dados do cliente em tempo real (RTCDP) da Adobe. Isso permite direcionar os públicos da Adobe Experience Platform nos workflows do Campaign e enviar de volta para a Plataforma de dados do cliente em tempo real da Adobe relacionados a esses públicos, como envios, aberturas e cliques.
+Com **Adobe Experience Platform**, você pode compartilhar dados entre o Campaign e o Adobe Real-time Customer Data Platform (RTCDP). Isso permite direcionar os públicos da Adobe Experience Platform nos workflows do Campaign e enviar de volta para a Plataforma de dados do cliente em tempo real da Adobe relacionados a esses públicos, como envios, aberturas e cliques.
 
 :seta_upper_right: Saiba mais sobre RTCDP em [nesta seção](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=en)
 
-:seta_upper_right: Saiba como implementar e usar o RTCDP com o Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=en#integrating-with-adobe-experience-cloud)
+:seta_upper_right: Saiba como implementar e usar o RTCDP com o Campaign na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=en#integrating-with-adobe-experience-cloud)
 
-:voice_balloon: Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/support.md#support) para conectar o RTCDP e o Campaign.
+:voice_balloon: Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para conectar o RTCDP e o Campaign.
