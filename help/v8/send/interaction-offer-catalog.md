@@ -1,16 +1,15 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Catálogo de oferta de interação de campanha
 description: Saiba como criar um catálogo de ofertas
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: 58f294b3d17de5eca64c82fdf7720b2734320bad
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 41%
+source-wordcount: '381'
+ht-degree: 27%
 
 ---
 
@@ -52,19 +51,9 @@ Para criar uma nova categoria, siga as etapas abaixo:
 
       ![](assets/offer_cat_create_004.png)
 
-   * Insira as palavras-chave que podem ser usadas para selecionar ofertas dentro desta categoria, usando o campo **[!UICONTROL Themes]**.
+   * **[!UICONTROL Edit query]** para aplicar filtros ao target da oferta.
 
-      ![](assets/offer_cat_create_005.png)
-
-      >[!NOTE]
-      >
-      >Ao chamar o mecanismo de oferta, somente a parte do catálogo no qual os temas ou categorias correspondem aos parâmetros é selecionada.
-
-   * “Impulsione” temporariamente o peso da oferta de uma categoria por um determinado período por meio do campo **[!UICONTROL Multiplier weight]**.
-
-      ![](assets/offer_cat_create_006.png)
-
-Um resumo das regras de qualificação está disponível no painel das ofertas incluídas na categoria. Para visualizá-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]**.
+   * Um resumo das regras de qualificação. Para exibi-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]**.
 
 ## Adicionar uma categoria de fallback
 
