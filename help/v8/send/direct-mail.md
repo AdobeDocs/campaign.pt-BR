@@ -1,15 +1,14 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Enviar malas diretas com o Adobe Campaign
 description: Introdução à correspondência direta no Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '52'
 ht-degree: 1%
 
 ---
@@ -18,5 +17,5 @@ ht-degree: 1%
 
 Os deliveries de correspondência direta permitem gerar um arquivo de extração que contém dados sobre a população do target.
 
-:seta_upper_right: Saiba mais em [Campaign Classic documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/about-direct-mail-channel.html)
+:seta_upper_right: Saiba mais em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/about-direct-mail-channel.html)
 
