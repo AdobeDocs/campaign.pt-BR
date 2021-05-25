@@ -1,13 +1,12 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Interação de campanha - Gerenciamento de ofertas
 description: Introdução ao Gerenciamento de ofertas
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 3783cb5ed3085b988f573fbf15858377b2bb2e05
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 37%
