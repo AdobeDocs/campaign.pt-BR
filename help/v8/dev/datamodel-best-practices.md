@@ -1,12 +1,11 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Práticas recomendadas do modelo de dados
 description: Conheça as práticas recomendadas de extensão do modelo de dados do Campaign
-translation-type: tm+mt
-source-git-commit: 8da6928096feec988d6495fdb617dda7d7cac6ff
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2683'
 ht-degree: 4%
 
 ---
@@ -58,11 +57,11 @@ Se não estiver caindo em nenhum desses, você provavelmente não precisará des
 
 Para garantir uma boa arquitetura e o desempenho do sistema, siga as práticas recomendadas abaixo para configurar os dados no Adobe Campaign.
 
-* Uma tabela grande deve ter principalmente campos numéricos e conter links para tabelas de referência (ao trabalhar com a lista de valores).
+* Em uma tabela grande, é possível inserir campos de sequência ou numéricos e adicionar links a tabelas de referência (ao trabalhar com a lista de valores).
 * O atributo **expr** permite definir um atributo de esquema como um campo calculado em vez de um valor de conjunto físico em uma tabela. Isso pode habilitar o acesso às informações em um formato diferente (como para idade e data de nascimento, por exemplo) sem a necessidade de armazenar ambos os valores. Essa é uma boa maneira de evitar a duplicação de campos. Por exemplo, a tabela Recipient usa uma expressão para o domínio, que já está presente no campo de email.
 * No entanto, quando o cálculo da expressão é complexo, não é recomendável usar o atributo **expr**, pois o cálculo instantâneo pode afetar o desempenho das consultas.
 * O tipo **XML** é uma boa maneira de evitar a criação de muitos campos. Mas também ocupa espaço em disco, pois usa uma coluna CLOB no banco de dados. Também pode levar a queries SQL complexos e afetar o desempenho.
-* O comprimento de um campo **string** deve sempre ser definido com a coluna . Por padrão, o comprimento máximo no Adobe Campaign é 255, mas o Adobe recomenda manter o campo mais curto se você já souber que o tamanho não excederá um comprimento menor.
+* O comprimento de um campo **string** deve sempre ser definido com a coluna . Por padrão, o comprimento máximo no Adobe Campaign é de 16K, mas o Adobe recomenda manter o campo mais curto se você já souber que o tamanho não excederá um comprimento menor.
 * É aceitável ter um campo menor no Adobe Campaign do que no sistema de origem se você tiver certeza de que o tamanho no sistema de origem foi superestimado e não seria atingido. Isso pode significar uma string menor ou um número inteiro menor no Adobe Campaign.
 
 ### Escolha dos campos {#choice-of-fields}
@@ -74,7 +73,7 @@ Um campo precisa ser armazenado em uma tabela se tiver uma finalidade de direcio
 
 Além do **autouuid** definido por padrão na maioria das tabelas, você deve considerar adicionar algumas chaves lógicas ou de negócios (número de conta, número de cliente e assim por diante). Ele pode ser usado posteriormente para importações/reconciliação ou pacotes de dados. Para obter mais informações, consulte [Identificadores](#identifiers).
 
-Chaves eficientes são essenciais para o desempenho. Os tipos de dados numéricos devem sempre ser preferidos como chaves para tabelas.
+Chaves eficientes são essenciais para o desempenho. Com o Snowflake, é possível inserir tipos de dados numéricos ou baseados em sequência como chaves para tabelas.
 
 <!-- ### Dedicated tablespaces {#dedicated-tablespaces}
 
@@ -93,7 +92,7 @@ A tabela a seguir descreve esses identificadores e sua finalidade.
 | Identifier | Descrição | Práticas recomendadas |
 |--- |--- |--- |
 | Id | <ul><li>A id é a chave primária física de uma tabela do Adobe Campaign. Para tabelas integradas, é uma ID universal exclusiva (UUID)</li><li>Esse identificador deve ser exclusivo. </li><li>Uma UUID pode ser visível em uma definição de esquema.</li></ul> | <ul><li>Os identificadores gerados automaticamente não devem ser usados como referência em um workflow ou em uma definição de pacote.</li><li>A id em uma tabela é um UUID e esse tipo não deve ser alterado.</li></ul> |
-| Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto for implantado de um ambiente para outro.</li><li>Quando um objeto tem um atributo de namespace (*schema* por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*.</li><li>Quando um objeto não tem namespace (*workflow* ou *delivery* por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais, como espaço &quot;&quot;, semircoluna &quot;:&quot; ou hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenadas como &quot;abc_def&quot; e se substituiriam.</li></ul> |
+| Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto for implantado de um ambiente para outro.</li><li>Quando um objeto tem um atributo de namespace (*schema* por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*, etc.  Observe que alguns namespaces são somente internos. [Saiba mais](schemas.md#reserved-namespaces).</li><li>Quando um objeto não tem namespace (*workflow* ou *delivery* por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais, como espaço &quot;&quot;, semircoluna &quot;:&quot; ou hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenadas como &quot;abc_def&quot; e se substituiriam.</li></ul> |
 | Rótulo | <ul><li>O rótulo é o identificador comercial de um objeto ou registro no Adobe Campaign.</li><li>Esse objeto permite espaços e caracteres especiais.</li><li>Não garante a singularidade de um registro.</li></ul> | <ul><li>É recomendável determinar uma estrutura para seus rótulos de objetos.</li><li>Essa é a solução mais fácil de usar para identificar um registro ou objeto para um usuário do Adobe Campaign.</li></ul> |
 
 A chave primária do Adobe Campaign é um UUID gerado automaticamente para todas as tabelas integradas. Uma UUID também pode ser usada para tabelas personalizadas.
@@ -110,7 +109,7 @@ A maioria das organizações está importando registros de sistemas externos. Em
 Essa chave personalizada é a chave primária de registro real no sistema externo que alimenta o Adobe Campaign.
 
 Ao criar uma tabela personalizada, você tem duas opções:
-* Uma combinação de chave gerada automaticamente (id) e chave interna (personalizada). Essa opção é interessante se a chave do sistema for uma chave composta ou não um inteiro. Os inteiros fornecerão desempenho mais alto em grandes tabelas e unirão a outras tabelas.
+* Uma combinação de chave gerada automaticamente (id) e chave interna (personalizada). Essa opção é interessante se a chave do sistema for uma chave composta ou não um inteiro. Com Snowflake, números inteiros ou chaves baseadas em sequência fornecerão desempenho mais alto em grandes tabelas e unirão a outras tabelas.
 * Usar a chave primária como a chave primária do sistema externo. Essa solução geralmente é preferida, pois simplifica a abordagem para importar e exportar dados, com uma chave consistente entre diferentes sistemas. O Autouuid deve ser desativado se a chave for chamada de &quot;id&quot; e se espera que seja preenchida com valores externos (não gerado automaticamente).
 
 >[!CAUTION]
@@ -209,7 +208,7 @@ Abaixo estão algumas práticas recomendadas comuns que devem ser seguidas ao pr
 * Ao usar tabelas de recipients personalizadas adicionais, verifique se você tem uma tabela de log dedicada para cada mapeamento de delivery.
 * Reduza o número de colunas, principalmente identificando aquelas que não estão utilizadas.
 * Otimize as relações do modelo de dados evitando associações complexas, como associações em várias condições e/ou várias colunas.
-* Para chaves de junção, sempre use dados numéricos em vez de cadeias de caracteres.
+* Para chaves de junção, você pode usar valores numéricos ou baseados em sequência.
 * Reduza o máximo possível de profundidade da retenção de log. Se precisar de um histórico mais profundo, você pode agregar computação e/ou manipular tabelas de log personalizadas para armazenar um histórico maior.
 
 ### Tamanho das tabelas {#size-of-tables}
