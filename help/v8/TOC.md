@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 audience: end-user
 user-guide-title: Campaign v8
@@ -7,21 +7,21 @@ description: Documentação do Campaign v8
 breadcrumb-title: Campanha v8
 title: Documentos do Campaign v8
 hide: true
-translation-type: tm+mt
-source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
+source-git-commit: 6e098ffa538c4348889a35eb454da747c80d6262
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 38%
+source-wordcount: '193'
+ht-degree: 35%
 
 ---
 
 
 # Documentação do Adobe Campaign v8 {#campaign-v8}
 
-+ [Documentação do produto](campaign-home.md)
++ [Documentação do Campaign v8](campaign-home.md)
 + Novidades? {#start}
    + [Principais recursos](start/whats-new.md)
    + [Notas de versão](start/release-notes.md)
+   + [Limitações conhecidas](start/known-limitations.md)
    + [Classic v7 para v8](start/capability-matrix.md)
 + Iniciar {#start}
    + [Introdução](start/get-started.md)
@@ -44,7 +44,6 @@ ht-degree: 38%
    + [Conectar-se ao Campaign](start/connect.md)
    + [Permissões](start/permissions.md)
    + [Painel de controle do Campaign](config/self-service.md)
-   + [Ajuda e suporte](start/support.md)
 + Envio {#send}
    + [Emails](send/email.md)
    + [SMS](send/sms.md)
@@ -64,7 +63,7 @@ ht-degree: 38%
       + [Envio de uma oferta](send/interaction-send-offers.md)
       + [Casos de uso](send/interaction-use-cases.md)
 + Configurar {#config}
-   + [Automação](config/workflows.md)
+   + [Automatizar com workflows](config/workflows.md)
    + [Gerenciar dados](config/replication.md)
    + [Configurações de email](config/email-settings.md)
    + [Configurações de mensagens transacionais](config/transactional-msg-settings.md)
@@ -95,6 +94,4 @@ ht-degree: 38%
    + APIs {#api}
       + [Introdução](dev/api.md)
       + [Novas APIs](dev/new-apis.md)
-      + [APIs v8 do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)
-
-
+      + [Mecanismo de preparo da API](dev/staging.md)
