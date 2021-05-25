@@ -1,12 +1,11 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Trabalhar com esquemas do Campaign
 description: Introdução a esquemas
-translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1252'
 ht-degree: 7%
 
 ---
@@ -41,7 +40,7 @@ Para obter uma melhor compreensão das tabelas integradas do Campaign e sua inte
 
 >[!CAUTION]
 >
->Alguns esquemas internos do Campaign têm um schema associado no banco de dados do Cloud. Esses esquemas são identificados pelo namespace **Xxl** e não devem ser modificados.
+>Alguns esquemas internos do Campaign têm um schema associado no banco de dados do Cloud. Esses esquemas são identificados pelo namespace **Xxl** e não devem ser modificados ou estendidos.
 
 ## Sintaxe de schemas {#syntax-of-schemas}
 
@@ -81,16 +80,17 @@ Um namespace permite agrupar um conjunto de schemas por área de interesse. Por 
 >
 >Os identificadores não devem começar com caracteres numéricos.
 
-## Namespaces reservados
+## Namespaces reservados {#reserved-namespaces}
 
 Determinados namespaces são reservados para descrições das entidades do sistema necessárias para a operação do aplicativo Adobe Campaign. O namespace a seguir **não deve ser usado** para identificar um novo schema, em qualquer combinação de maiúsculas/minúsculas:
 
-* **xxl**: reservado para esquemas de banco de dados do Cloud,
-* **xtk**: reservado aos dados do sistema de plataforma,
-* **nl**: reservado à utilização global do pedido,
-* **nms**: reservado para deliveries (recipient, delivery, rastreamento etc.),
-* **ncm**: reservado para gerenciamento de conteúdo,
-* **temp**: reservado para schemas temporários.
+* **xxl**: reservado para esquemas de banco de dados do Cloud
+* **xtk**: reservado para dados do sistema da plataforma
+* **nl**: reservado à utilização global do pedido
+* **nms**: reservado para deliveries (recipient, delivery, rastreamento etc.)
+* **ncm**: reservado para gerenciamento de conteúdo
+* **temp**: reservado para schemas temporários
+* **crm**: reservado para integração de conectores CRM
 
 A chave de identificação de um schema é uma cadeia de caracteres criada usando o namespace e o nome separados por dois pontos; por exemplo: **nms:recipient**.
 
@@ -162,9 +162,9 @@ Os atributos permitem definir os campos que compõem o objeto de dados. Você po
 
 ![](assets/schemaextension_2.png)
 
-A lista completa de atributos está disponível na seção `<attribute>` element em [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Estes são alguns dos atributos mais usados: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label a13/>,**@length **,**@name **,**@notNull **,**@required **,**@ref 23/>, **@xml**, **@type**.****
+A lista completa de atributos está disponível na seção `<attribute>` element em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Estes são alguns dos atributos mais usados: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label a13/>,**@length **,**@name **,**@notNull **,**@required **,**@ref 23/>, **@xml**, **@type**.****
 
-:seta_upper_right: Para obter mais informações sobre cada atributo, consulte a Descrição do atributo em [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
+:seta_upper_right: Para obter mais informações sobre cada atributo, consulte a Descrição de atributo na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
 
 ### Exemplos {#examples}
 
