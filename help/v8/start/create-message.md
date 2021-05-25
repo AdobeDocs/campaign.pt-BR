@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Introdução a mensagens
 description: Introdução a mensagens
@@ -7,21 +7,20 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-translation-type: tm+mt
-source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
+source-git-commit: c659c31c15916077e71c63f3b3f4ca135d4d7f7d
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 27%
+source-wordcount: '666'
+ht-degree: 23%
 
 ---
 
 # Introdução a mensagens{#gs-ac-audiences}
 
-Com o Adobe Campaign, você pode enviar campanhas em vários canais, incluindo emails, SMS, mensagens pelo LINE, notificações por push e correspondência direta, e medir sua eficácia usando vários relatórios exclusivos. Essas mensagens são projetadas e enviadas por deliveries, além disso podem ser personalizadas para cada recipient.
+Com o Adobe Campaign, você pode enviar campanhas em vários canais, incluindo emails, SMS, notificações por push e mala direta, e medir sua eficácia usando vários relatórios dedicados. Essas mensagens são projetadas e enviadas por deliveries, além disso podem ser personalizadas para cada recipient.
 
 As funcionalidades principais incluem definição de metas, definição e personalização de mensagens, execução de comunicações e relatórios operacionais associados. O principal ponto de acesso funcional é o assistente de delivery. Esse ponto de acesso leva a vários recursos cobertos pelo Adobe Campaign.
 
-Saiba mais sobre as principais etapas para criar um delivery na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html).
+Saiba mais sobre as principais etapas para criar um delivery na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html).
 
 O Adobe Campaign v8 vem com os seguintes canais de delivery:
 
@@ -33,7 +32,9 @@ O Adobe Campaign v8 vem com os seguintes canais de delivery:
 
 * **Canal de aplicativo móvel**: os deliveries por aplicativo móvel permitem enviar as notificações para sistemas iOs e Android.  Saiba mais [nesta página](../send/push.md)
 
-* **Canal** LINE: Os deliveries LINE permitem enviar mensagens no LINE, um aplicativo de mensagens instantâneas disponível em todos os smartphones. Saiba mais [nesta página](../send/line.md)
+<!--
+* **LINE channel**: LINE deliveries let you send messages on LINE, an instant messaging application available on all smartphones. Learn more in [this page](../send/line.md)
+-->
 
 ## Escolha como enviar suas mensagens
 
@@ -57,11 +58,11 @@ As mensagens entregues pelo Adobe Campaign podem ser personalizadas de várias m
 Você pode:
 
 * Inserir campos de personalização dinâmicos.
-:seta_upper_right: Saiba como usar campos de personalização na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html)
+:seta_upper_right: Saiba como usar campos de personalização na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html)
 * Inserir blocos de personalização predefinidos.
-:seta_upper_right: Saiba o que é um bloco de personalização e como usá-lo na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html)
+:seta_upper_right: Saiba o que é um bloco de personalização e como usá-lo na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html)
 * Criar conteúdo condicional.
-:seta_upper_right: Saiba como inserir conteúdo condicional na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html)
+:seta_upper_right: Saiba como inserir conteúdo condicional na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html)
 
 ## Enviar mensagens transacionais
 
@@ -71,7 +72,7 @@ As mensagens transacionais (Centro de Mensagens) são o módulo do Campaign cria
 
 :bulb: As etapas para configurar e enviar mensagens transacionais são detalhadas em [this page](../send/transactional.md)
 
-:seta_upper_right: Descubra esse recurso em um caso de uso completo na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=en#transactional-messaging)
+:seta_upper_right: Descubra esse recurso em um caso de uso completo na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=en#transactional-messaging)
 
 ## Logs de rastreamento e delivery
 
