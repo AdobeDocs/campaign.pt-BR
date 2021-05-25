@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Introdução à arquitetura do Campaign
 description: Introdução à arquitetura do Campaign
@@ -7,9 +7,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 51efce79e4195c9d53db167be80c7adcda811e21
+source-git-commit: c659c31c15916077e71c63f3b3f4ca135d4d7f7d
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '642'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,7 @@ Três tipos de ambientes disponíveis com o Campaign Cloud Service:
 
 É possível exportar e importar pacotes de um ambiente para outro.
 
-:seta_upper_right: Saiba mais sobre pacotes na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
+:seta_upper_right: Saiba mais sobre pacotes na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
 
 ## Implantação Mid-sourcing{#mid-sourcing-deployment}
 
@@ -47,7 +47,6 @@ A comunicação geral entre servidores e processos é realizada de acordo com o 
 > O Campaign v8 depende de uma arquitetura híbrida. Se estiver fazendo a transição do Campaign Classic v7, observe que todos os deliveries passam pelo servidor mid-sourcing.
 > Como consequência, o roteamento interno é **not possible** no Campaign v8 e a conta externa foi desabilitada adequadamente.
 
-
 ## Arquitetura do Centro de Mensagens{#transac-msg-archi}
 
 As mensagens transacionais (Centro de Mensagens) são o módulo do Campaign criado para gerenciar mensagens por disparo.
@@ -60,7 +59,7 @@ Nesta arquitetura específica, a célula de execução é separada da instância
 
 * O **Control instance** (ou Marketing instance) é usado por profissionais de marketing e equipes de TI para criar, configurar e publicar templates de mensagem. Essa instância também centraliza o monitoramento e o histórico do evento.
 
-   :seta_upper_right: Saiba como criar e publicar modelos de mensagem na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/message-templates/introduction.html?lang=en#transactional-messaging)
+   :bulb: Saiba como criar e publicar templates de mensagem em [esta seção](../send/transactional.md).
 
 * O **Execution instance** recupera eventos recebidos (redefinição de senha ou pedidos de um site, por exemplo) e envia mensagens personalizadas. Pode haver mais de uma instância de execução para processar mensagens por meio do balanceador de carga e dimensionar o número de eventos a serem processados para proporcionar disponibilidade máxima.
 
@@ -70,8 +69,7 @@ Nesta arquitetura específica, a célula de execução é separada da instância
 
 ![](assets/messagecenter_diagram.png)
 
-:seta_upper_right: A arquitetura do Centro de mensagens é descrita em [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
-
+:seta_upper_right: A arquitetura do Centro de Mensagens é descrita na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
 
 ### Autenticação
 
@@ -84,4 +82,4 @@ Em seguida, com o sessionToken fornecido pela instância de execução em respos
 * Várias instâncias de execução
 Em uma arquitetura de execução de várias células com várias instâncias de execução atrás de um balanceador de carga, o método logon chamado pelo aplicativo externo está passando pelo balanceador de carga: por esse motivo, não é possível usar uma autenticação baseada em token. É necessária uma autenticação baseada em usuário/senha.
 
-:seta_upper_right: Saiba mais sobre eventos de mensagens transacionais na [documentação do Campaign Classic](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
+:seta_upper_right: Saiba mais sobre eventos de mensagens transacionais na documentação do [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
