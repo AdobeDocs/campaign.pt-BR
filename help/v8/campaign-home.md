@@ -1,14 +1,13 @@
 ---
 keywords: Campaign Classic;página inicial;tópicos populares
-solution: Campaign
+solution: Campaign v8
 description: Central de ajuda do Campaign v8
 title: Documentação do produto Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 30b363ca9905c71f24a9b3db2404a301a5965eac
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 33%
+source-wordcount: '85'
+ht-degree: 25%
 
 ---
 
@@ -18,7 +17,7 @@ ht-degree: 33%
 
 ## Novidades
 
-* **[O que é o Adobe Campaign](start/get-started.md)**  - Principais recursos e casos de uso
+* **[O que é o [!DNL Adobe Campaign]](start/get-started.md)**  - Principais recursos e casos de uso
 
 * **[Novidades na v8](start/whats-new.md)**  - Recursos do Discover Campaign v8
 
@@ -62,8 +61,8 @@ ht-degree: 33%
 
 ## Mais recursos
 
+* [Problemas conhecidos e limitações](start/known-limitations.md)
 * [Arquitetura](dev/architecture.md)
 * [Medir e rastrear](start/reporting.md)
 * [Conectar-se com outras soluções](connect/integration.md)
-* [Ajuda e suporte](start/support.md)
-* [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
+* [Perguntas frequentes sobre o Campaign v8](start/campaign-faq.md)
