@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Workflows técnicos e replicação de dados
 description: Workflows técnicos e replicação de dados
@@ -7,23 +7,23 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '369'
 ht-degree: 3%
 
 ---
 
 # Workflows técnicos e replicação de dados
 
-## Workflows técnicos 
+## Workflows técnicos{#tech-wf}
 
 O Adobe Campaign vem com um conjunto de fluxos de trabalho técnicos incorporados. Os workflows técnicos executam processos ou tarefas agendados regularmente no servidor.
 
 Esses workflows executam operações de manutenção no banco de dados, aproveitam as informações de rastreamento nos logs do delivery, criam campanhas recorrentes e muito mais.
 
-:seta_upper_right: A lista completa de workflows técnicos é detalhada em [Campaign Classic documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=en#overview)
+:seta_upper_right: A lista completa de workflows técnicos é detalhada na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html)
+
 
 Além desses workflows técnicos, o Campaign v8 depende de workflows técnicos específicos para gerenciar [replicação de dados](#data-replication).
 
@@ -38,15 +38,37 @@ Esse workflow replica os dados XS para uma determinada conta externa.
 
 Esses workflows técnicos estão disponíveis no nó **[!UICONTROL Administration > Production > Technical workflows > Full FFDA replication]** do explorador do Campaign. **Eles não devem ser modificados.**
 
+Se necessário, é possível iniciar a sincronização de dados manualmente. Para fazer isso, clique com o botão direito do mouse na atividade **Scheduler** e selecione **Execute pending task(s) now**.
+
 ## Replicação de dados{#data-replication}
 
-Algumas tabelas integradas são replicadas do banco de dados do Campaign para o [!DNL Snowflake] banco de dados do Cloud por meio de workflows dedicados descritos acima.
+Algumas tabelas integradas são replicadas do banco de dados local do Campaign para o [!DNL Snowflake] banco de dados do Cloud por meio de workflows dedicados descritos acima.
 
 As políticas de replicação são baseadas no tamanho das tabelas. Algumas tabelas serão replicadas em tempo real, outras serão replicadas a cada hora. Algumas tabelas terão atualizações incrementais quando outras forem substituídas.
 
+Além do workflow técnico interno **Replicar tabelas de referência**, você pode forçar a replicação de dados em seus workflows.
+
+Você pode:
+
+* adicione uma atividade específica **Javascript code** com o seguinte código:
+
+```
+nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
+```
+
+![](assets/jscode.png)
+
+
+* adicione uma atividade **nlmodule** específica com o seguinte comando:
+
+```
+nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
+```
+
+![](assets/nlmodule.png)
+
 **Tópicos relacionados**
 
-:seta_upper_right: Saiba como começar a usar workflows na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows)
+:seta_upper_right: Saiba como começar a usar workflows na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows)
 
 :bulb: Acesse os períodos de retenção de dados em [nesta seção](../dev/datamodel-best-practices.md#data-retention)
-
