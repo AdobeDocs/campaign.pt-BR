@@ -1,22 +1,21 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Casos de uso de interação da campanha
 description: Casos de uso de interação
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '73'
 ht-degree: 4%
 
 ---
 
 # Casos de uso
 
-Aproveite os recursos de interação do Campaign por meio desses casos de uso passo a passo disponíveis na documentação do Campaign Classic.
+Aproveite os recursos de interação do Campaign por meio desses casos de uso passo a passo disponíveis na documentação do Campaign Classic v7.
 
 :seta_upper_right: [Criar e aplicar uma regra de apresentação](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html)
 
