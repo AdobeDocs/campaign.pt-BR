@@ -1,13 +1,12 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Operadores de interação de campanha
 description: Criar operadores de Gerenciamento de ofertas
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 43%
@@ -39,7 +38,7 @@ Os gerentes de delivery só podem visualizar o ambiente **[!UICONTROL Live]** e 
 
 Por padrão, o Campaign vem com um ambiente integrado para direcionar à tabela de recipients (ofertas identificadas). Para direcionar outra tabela, siga as etapas abaixo:
 
-1. Navegue até **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Delivery mappings]**, clique com o botão direito do mouse no mapeamento de delivery que deseja usar e selecione **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
+1. Navegue até **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**, clique com o botão direito do mouse no target mapping que deseja usar e selecione **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
 
    ![](assets/offer_env_anonymous_001.png)
 
