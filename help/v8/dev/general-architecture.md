@@ -1,12 +1,12 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Arquitetura geral
 description: Arquitetura geral do Campaign v8
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 51efce79e4195c9d53db167be80c7adcda811e21
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ A implantação típica da solução Adobe Campaign consiste nos seguintes compo
 
 O aplicativo pode ser acessado de diferentes maneiras: Integração avançada de cliente, cliente thin ou API.
 
-* **Console** do cliente: A principal interface de usuário do aplicativo é um cliente avançado, em outras palavras, um aplicativo nativo (Windows) que se comunica com o servidor de aplicativos Adobe Campaign exclusivamente com protocolos padrão de Internet (SOAP, HTTP etc.). O console do cliente Adobe Campaign oferece excelente facilidade de uso para produtividade, usa pouca largura de banda (por meio do uso de um cache local) e foi projetado para facilitar a implantação. Esse Console pode ser implantado a partir de um navegador da Internet, pode ser atualizado automaticamente e não requer nenhuma configuração de rede específica porque gera apenas tráfego HTTP(S).
+* **Console** do cliente: A principal interface de usuário do aplicativo é um aplicativo nativo (no Windows) que se comunica com o servidor de aplicativos Adobe Campaign com protocolos padrão de Internet (SOAP, HTTP etc.). O console do cliente Adobe Campaign oferece excelente facilidade de uso para produtividade, usa pouca largura de banda (por meio do uso de um cache local) e foi projetado para facilitar a implantação. Esse Console pode ser implantado a partir de um navegador da Internet, pode ser atualizado automaticamente e não requer nenhuma configuração de rede específica, pois gera apenas tráfego HTTP(S).
 
    :bulb: [Saiba mais sobre o Console do Cliente do Campaign](../start/connect.md).
 
-* **Acesso** à Web: Certas partes do aplicativo podem ser acessadas por um navegador da Web simples usando uma interface de usuário HTML, incluindo o módulo de relatórios, os estágios de aprovação de delivery, o monitoramento de instâncias etc.
+* **Acesso** à Web: partes do aplicativo podem ser acessadas por um navegador da Web simples usando uma interface de usuário HTML, incluindo o módulo de relatório, estágios de aprovação de delivery, monitoramento de instância etc.
 
    :bulb: [Saiba mais sobre o Campaign Web Access](../start/connect.md).
 
@@ -45,21 +45,21 @@ O aplicativo pode ser acessado de diferentes maneiras: Integração avançada de
 
 ## Ambiente de desenvolvimento {#dev-env}
 
-O Adobe Campaign é uma plataforma única com diferentes aplicativos que se combinam para criar uma arquitetura aberta e escalável. A plataforma Adobe Campaign é gravada em uma camada de aplicativo flexível e pode ser facilmente configurada para atender às suas necessidades comerciais. A arquitetura distribuída garante a escalabilidade linear do sistema, de milhares de mensagens a milhões de mensagens.
+O Adobe Campaign é uma plataforma única com aplicativos diferentes para criar uma arquitetura aberta e escalável. A plataforma Adobe Campaign é gravada em uma camada de aplicativo flexível e pode ser facilmente configurada para atender às suas necessidades comerciais. A arquitetura distribuída garante a escalabilidade linear do sistema, de milhares de mensagens a milhões de mensagens.
 
 Alguns módulos do Campaign operam continuamente, enquanto outros são iniciados ocasionalmente para executar tarefas administrativas (por exemplo, para configurar a conexão do banco de dados) ou para executar uma tarefa recorrente (por exemplo, consolidando informações de rastreamento).
 
 Existem três tipos de módulos Adobe Campaign:
 
-* Módulos de várias instâncias: um único processo é executado para todas as instâncias. Isso se aplica aos seguintes módulos: web, syslogd, trackinglogd e watchdog.
-* Módulos de instância única: um processo é executado por instância. Isso se aplica aos seguintes módulos: mta, wfserver, inMail, sms e stat.
-* Módulos do utilitário: são módulos executados ocasionalmente para executar operações ocasionais ou recorrentes (limpeza, configuração, download de logs de rastreamento etc.).
+* **Módulos** de várias instâncias: um único processo é executado para todas as instâncias. Isso se aplica aos seguintes módulos: web, syslogd, trackinglogd e watchdog.
+* **Módulos** de mono-instância: um processo é executado por instância. Isso se aplica aos seguintes módulos: mta, wfserver, inMail, sms e stat.
+* **Módulos** do utilitário: são módulos executados ocasionalmente para executar operações ocasionais ou recorrentes (limpeza, configuração, download de logs de rastreamento etc.).
 
 Os principais processos são:
 
 **Servidor de aplicativos**  (nlserver web)
 
-Esse processo expõe toda a gama de funcionalidades do Adobe Campaign por meio de APIs de Serviços da Web (SOAP - HTTP + XML). Além disso, ele pode gerar dinamicamente as páginas da Web usadas para acesso baseado em HTML (relatórios, formulários Web etc.). Para isso, esse processo inclui um servidor JSP Apache Tomcat. Esse é o processo ao qual o Console se conecta.
+Esse processo expõe toda a gama de funcionalidades do Adobe Campaign por meio de APIs de serviços da Web (SOAP / HTTP + XML). Além disso, ele pode gerar dinamicamente as páginas da Web usadas para acesso baseado em HTML (relatórios, formulários Web etc.). Para isso, esse processo inclui um servidor JSP Apache Tomcat. Esse é o processo ao qual o Console se conecta.
 
 **Mecanismo de fluxo de trabalho**  (nlserver wfserver)
 
@@ -67,13 +67,13 @@ Ele executa os processos de workflow definidos no aplicativo.
 
 Também lida com workflows técnicos executados periodicamente, incluindo:
 
-* Rastreamento: Recuperação e consolidação de logs de rastreamento. Ele permite recuperar os logs do servidor de redirecionamento e criar os indicadores agregados usados pelo módulo de relatórios.
-* Limpeza: Limpeza do banco de dados. Usado para limpar registros antigos e evitar o crescimento exponencial do banco de dados.
-* Faturamento: Envio automático de um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações de marketing etc.).
+* **Rastreamento**: Recuperação e consolidação de logs de rastreamento. Ele permite recuperar os logs do servidor de redirecionamento e criar os indicadores agregados usados pelo módulo de relatórios.
+* **Limpeza**: Limpeza do banco de dados. Usado para limpar registros antigos e evitar o crescimento exponencial do banco de dados.
+* **Faturamento**: Envio automático de um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações de marketing etc.).
 
 **Servidor de entrega**  (nlserver mta)
 
-A Adobe Campaign tem funcionalidade nativa de transmissão de email. Esse processo funciona como um agente de transferência de email SMTP (MTA). Ele executa a personalização &quot;um para um&quot; de mensagens e manipula sua entrega física. Funciona usando tarefas de delivery e lida com tentativas automáticas. Além disso, quando o rastreamento é ativado, ele substitui automaticamente os URLs para que apontem para o servidor de redirecionamento.
+A Adobe Campaign tem funcionalidade nativa de transmissão de email. Esse processo funciona como um agente de transferência de email SMTP (MTA). Ele executa a personalização &quot;um para um&quot; de mensagens e manipula sua entrega física. Ele é executado usando tarefas de delivery e lida com tentativas automáticas. Além disso, quando o rastreamento é ativado, ele substitui automaticamente os URLs para que apontem para o servidor de redirecionamento.
 
 Esse processo pode lidar com a personalização e o envio automático para um roteador de terceiros para SMS, fax e mala direta.
 
@@ -119,7 +119,7 @@ Esse processo mantém estatísticas sobre o número de conexões, as mensagens e
 
 O banco de dados da Adobe Campaign Cloud depende de [!DNL Snowflake], que contém os dados funcionais (perfis, assinaturas, conteúdo etc.), os dados técnicos (trabalhos e logs de delivery, logs de rastreamento etc.) e os dados de trabalho (compras, clientes em potencial) da solução, e todos os componentes do Adobe Campaign se comunicam com o banco de dados para executar suas tarefas específicas.
 
-Os clientes podem implantar o Adobe Campaign usando o data mart e os schemas predefinidos e também podem estendê-lo. Todos os dados no data mart são acessados pela Adobe Campaign através de chamadas SQL. A Adobe Campaign também fornece um complemento completo das ferramentas Extrair transformação e carregamento (ETL) para executar a importação e exportação de dados para dentro e para fora do sistema.
+Os clientes podem implantar o Adobe Campaign usando o banco de dados e os esquemas predefinidos e, se necessário, esse ambiente predefinido pode ser estendido. Todos os dados no data mart são acessados pela Adobe Campaign através de chamadas SQL. A Adobe Campaign também fornece um complemento completo das ferramentas Extrair transformação e carregamento (ETL) para executar a importação e exportação de dados para dentro e para fora do sistema.
 
 ![](assets/data-flow-diagram.png)
 
