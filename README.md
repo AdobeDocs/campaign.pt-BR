@@ -1,7 +1,6 @@
 ---
-source-git-commit: 4884271a9fcd96b4ad1da2e2aed5d25c8f267a7f
+source-git-commit: 098bb2252708f4c59e2ee186d4c3d0074ebec1fd
 workflow-type: tm+mt
-translation-type: tm+mt
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -13,6 +12,7 @@ As contribuições de nossa comunidade, bem como de funcionários da Adobe que n
 ## Código de conduta de fonte aberta da Adobe
 
 Este projeto adotou o [Código de conduta de código aberto da Adobe](code-of-conduct.md) ou o [Código de conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o artigo [Contribuição](contributing.md).
+
 
 ## Sobre suas contribuições para o conteúdo da Adobe
 
