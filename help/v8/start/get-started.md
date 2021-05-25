@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Introdução ao Campaign v8
 description: Conheça os principais recursos, a interface do usuário e as diretrizes globais
@@ -7,11 +7,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-translation-type: tm+mt
-source-git-commit: cebe3fedb97a5570aa404bf97709e6b26bf90d7c
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 47%
+source-wordcount: '898'
+ht-degree: 44%
 
 ---
 
@@ -21,9 +20,9 @@ O Adobe Campaign fornece uma plataforma para projetar experiências de clientes 
 
 Use o Campaign para:
 
-* Impulsionar a personalização e o envolvimento por meio de uma única visualização acessível do cliente
-* Integre canais de email, móveis, online e offline à jornada do cliente
-* Automatize a entrega de mensagens e ofertas significativas e oportunas
+* **** Impulsionar a personalização e o engajamento por meio de uma única visualização acessível do cliente
+* **** Integre canais de email, móveis, online e offline à jornada do cliente
+* **** Automatize a entrega de mensagens e ofertas significativas e oportunas
 
 ![](assets/ac-capabilities.png)
 
@@ -70,7 +69,7 @@ Os workflows podem ser usados em contextos diferentes, como por exemplo:
 
 O Adobe Campaign permite monitorar e interpretar o comportamento dos clientes por meio do aprimoramento gradual de seus dados e perfis. As ferramentas de análise e geração de relatórios permitem capitalizar cada nova campanha, melhorar o direcionamento das suas iniciativas de marketing e otimizar seu impacto e o retorno sobre o investimento.
 
-:bulb:  Saiba mais sobre os recursos de relatório e rastreamento em [esta seção](reporting.md).
+:bulb: Saiba mais sobre os recursos de relatório e rastreamento em [esta seção](reporting.md).
 
 ## Integrações com a Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
@@ -86,11 +85,36 @@ O Adobe Campaign oferece um conjunto de recursos para ajudá-lo a implementar e 
 
 ## Workspace e personalização
 
-A área de trabalho do Campaign está disponível por meio do Console do cliente.
+O espaço de trabalho da campanha está disponível por meio do [Console do Cliente](../dev/general-architecture.md).
 
-:bulb:  Saiba como usar o espaço de trabalho do Campaign em [esta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html)
+:bulb: [Saiba mais sobre o Console do Cliente do Campaign](../start/connect.md).
 
-:bulb:  Saiba como personalizar listas em [esta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html)
+A área de trabalho do Campaign pode ser adaptada dependendo de suas necessidades.
+
+:seta_upper_right:  Saiba como usar o espaço de trabalho do Campaign na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html)
+
+:seta_upper_right:  Saiba como personalizar listas na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html)
 
 Você também pode acessar alguns recursos pela Web.
+
+:bulb: [Saiba mais sobre o Campaign Web Access](../start/connect.md#web-access).
+
+
+## Languages
+
+A interface do usuário do Campaign v8 está disponível nos seguintes idiomas:
+
+* Inglês (Reino Unido)
+* Inglês (EUA)
+* Francês
+* Alemão
+* Japonês
+
+O idioma é selecionado durante o processo de instalação.
+
+>[!CAUTION]
+>
+>O idioma não pode ser alterado após a criação da instância.
+
+O idioma afetou datas e formatos de hora. Para obter mais informações, consulte a documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#date-and-time).
 
