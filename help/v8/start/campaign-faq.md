@@ -7,7 +7,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 46%
@@ -40,9 +40,9 @@ Precisa de ajuda enquanto trabalha com o Campaign? Leia as principais perguntas/
 
    A capacidade de fornecimento de email, um componente essencial para o sucesso do programa de marketing de cada remetente, é caracterizada por critérios e regras em constante mudança. Navegar efetivamente neste mundo digital requer o ajuste regular de sua estratégia de email, considerando as principais tendências de deliverability, para melhor alcançar seus públicos-alvo.
 
-   :[!DNL :arrow_upper_right:]: Consulte este guia para saber mais sobre [Práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
+   [!DNL :arrow_upper_right:] Consulte este guia para saber mais sobre  [Práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
-   :[!DNL :arrow_upper_right:]: Saiba como implementar a capacidade de entrega no Campaign [neste guia](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html)
+   [!DNL :arrow_upper_right:] Saiba como implementar a capacidade de entrega no Campaign  [neste guia](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html)
 
 1. **Como posso garantir que meu delivery seja enviado sem erros?**
 
@@ -52,7 +52,7 @@ Precisa de ajuda enquanto trabalha com o Campaign? Leia as principais perguntas/
 
 1. **Posso monitorar a execução do workflow?**
 
-   :[!DNL :arrow_upper_right:]: Entenda como monitorar a execução do workflow do Campaign [na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html).
+   [!DNL :arrow_upper_right:] Entenda como monitorar a execução do workflow do Campaign  [na documentação](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html) do Campaign Classic v7.
 
 1. **Com quais sistemas e componentes o Campaign v8 é compatível?**
 
