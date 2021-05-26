@@ -6,7 +6,7 @@ description: Introdução a mensagens transacionais
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 73%
@@ -152,7 +152,7 @@ Você pode testar o delivery de mensagens enviando uma prova para um seed addres
 
 O envio de uma prova envolve o mesmo processo de qualquer delivery.
 
-:[!DNL :arrow_upper_right:]: Saiba mais sobre provas na documentação do [Campaign Classic v7]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html))
+[!DNL :arrow_upper_right:] Saiba mais sobre provas na documentação do  [Campaign Classic v7]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html))
 
 No entanto, para enviar uma prova de uma mensagem transacional, você precisa realizar as seguintes operações:
 
