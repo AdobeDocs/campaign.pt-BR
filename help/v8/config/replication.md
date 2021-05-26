@@ -7,9 +7,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '362'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ O Adobe Campaign vem com um conjunto de fluxos de trabalho técnicos incorporado
 
 Esses workflows executam operações de manutenção no banco de dados, aproveitam as informações de rastreamento nos logs do delivery, criam campanhas recorrentes e muito mais.
 
-:seta_upper_right: A lista completa de workflows técnicos é detalhada na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html)
+:[!DNL :arrow_upper_right:]: A lista completa de workflows técnicos é detalhada na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html)
 
 
 Além desses workflows técnicos, o Campaign v8 depende de workflows técnicos específicos para gerenciar [replicação de dados](#data-replication).
@@ -69,6 +69,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Tópicos relacionados**
 
-:seta_upper_right: Saiba como começar a usar workflows na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows)
+:[!DNL :arrow_upper_right:]: Saiba como começar a usar workflows na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows)
 
-:bulb: Acesse os períodos de retenção de dados em [nesta seção](../dev/datamodel-best-practices.md#data-retention)
+[!DNL :bulb:] Acesse os períodos de retenção de dados  [nesta seção](../dev/datamodel-best-practices.md#data-retention)
