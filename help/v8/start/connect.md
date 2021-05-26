@@ -7,7 +7,7 @@ feature: Públicos
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 10%
@@ -117,8 +117,8 @@ O Adobe Campaign pode ser configurado para que o usuário acesse a plataforma po
 
 Certas partes do aplicativo podem ser acessadas por um navegador da Web simples usando uma interface de usuário HTML: Painel de campanha, relatório de Cubo, monitoramento de instância e muito mais.
 
-:[!DNL :arrow_upper_right:]: Saiba mais sobre o acesso à Web na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)
+[!DNL :arrow_upper_right:] Saiba mais sobre o acesso à Web na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)
 
 O acesso à Web também é usado para no processo de validação: Os operadores podem clicar no email de solicitação de aprovação e se conectar ao Campaign por meio de seu navegador da Web para validar ou rejeitar um conteúdo ou orçamento de delivery.
 
-:[!DNL :arrow_upper_right:]: Saiba como configurar e gerenciar aprovações na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
+[!DNL :arrow_upper_right:] Saiba como configurar e gerenciar aprovações na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
