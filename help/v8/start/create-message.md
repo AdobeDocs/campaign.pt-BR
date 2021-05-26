@@ -7,7 +7,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 25%
@@ -73,19 +73,19 @@ As mensagens transacionais (Centro de Mensagens) são o módulo do Campaign cria
 
 [!DNL :bulb:] As etapas para configurar e enviar mensagens transacionais estão detalhadas  [nesta página](../send/transactional.md)
 
-:[!DNL :arrow_upper_right:]: Descubra esse recurso em um caso de uso completo na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=en#transactional-messaging)
+[!DNL :arrow_upper_right:] Descubra esse recurso em um caso de uso completo na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=en#transactional-messaging)
 
 ## Logs de rastreamento e delivery
 
 O monitoramento de deliveries após serem enviados é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes. Você pode monitorar após enviar um delivery, bem como entender como as falhas de delivery e as quarentenas são gerenciadas.
 
-:[!DNL :arrow_upper_right:]: [Saiba como monitorar seus deliveries nesta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=en#sending-messages)
+[!DNL :arrow_upper_right:] [Saiba como monitorar suas entregas nesta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=en#sending-messages)
 
 
 **Tópicos relacionados**
 
-:[!DNL :arrow_upper_right:]:  [Práticas recomendadas de delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html)
+[!DNL :arrow_upper_right:]  [Práticas recomendadas de delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html)
 
-:[!DNL :arrow_upper_right:]:  [Teste e envie um email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
+[!DNL :arrow_upper_right:]  [Testar e enviar um email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
 
-:[!DNL :arrow_upper_right:]:  [Enviar provas](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+[!DNL :arrow_upper_right:]  [Enviar provas](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
