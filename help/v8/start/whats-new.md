@@ -7,9 +7,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -57,5 +57,5 @@ Você pode integrar o Campaign a um conjunto de soluções Adobe potentes, como:
 
 Você também pode configurar a otimização preditiva do tempo de envio e a pontuação preditiva do envolvimento com a IA do Jornada, além de aumentar as taxas de abertura, cliques e receitas.
 
-:bulb: [Saiba mais sobre integrações do Campaign](../connect/integration.md)
+[!DNL :bulb:] [Saiba mais sobre integrações do Campaign](../connect/integration.md)
 
