@@ -7,9 +7,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '638'
 ht-degree: 46%
 
 ---
@@ -24,7 +24,7 @@ Precisa de ajuda enquanto trabalha com o Campaign? Leia as principais perguntas/
 
    Essa frequência regular atualizações tem como objetivo fazer com que você tenha disponível as mais recentes e melhores atualizações, além de manter seu ambiente protegido e melhorar sua experiência com nosso produto. É por isso que acreditamos que é essencial executar a versão mais recente do Adobe Campaign.
 
-   :voice_balloon: Como usuário do Managed Cloud Services, sua instância é atualizada pelo Adobe a cada nova versão.
+   [!DNL :speech_balloon:] Como usuário do Managed Cloud Services, sua instância é atualizada pelo Adobe a cada nova versão.
 
 1. **Como posso me conectar ao Campaign v8?**
 
@@ -62,7 +62,7 @@ Precisa de ajuda enquanto trabalha com o Campaign? Leia as principais perguntas/
 
    Um subdomínio é uma divisão do seu domínio que pode ser usada para isolar suas marcas ou vários tipos de tráfego (mensagens transacionais, informações de marketing etc.).
 
-   :voice_balloon: Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para delegar seus subdomínios ao Adobe.
+   [!DNL :speech_balloon:] Como um usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para delegar os subdomínios ao Adobe.
 
 1. **Como usuário do Campaign Classic v7, posso migrar para o Campaign v8?**
 
