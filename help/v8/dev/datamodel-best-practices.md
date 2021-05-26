@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Práticas recomendadas do modelo de dados
 description: Conheça as práticas recomendadas de extensão do modelo de dados do Campaign
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2681'
 ht-degree: 4%
 
 ---
@@ -18,9 +18,9 @@ O sistema Adobe Campaign é muito flexível e pode ser estendido além da implem
 
 Para obter uma melhor compreensão das tabelas integradas do Campaign e como elas se relacionam entre si, consulte [esta seção](datamodel.md) .
 
-:bulb: Leia [esta seção](schemas.md) para começar a usar os esquemas do Campaign.
+[!DNL :bulb:] Leia  [esta ](schemas.md) seção para começar a usar os esquemas do Campaign.
 
-:bulb: Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign em [this page](extend-schema.md).
+[!DNL :bulb:] Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign  [nesta página](extend-schema.md).
 
 ## Arquitetura do modelo de dados {#data-model-architecture}
 
