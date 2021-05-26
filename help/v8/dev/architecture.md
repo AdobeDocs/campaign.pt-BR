@@ -7,9 +7,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: c659c31c15916077e71c63f3b3f4ca135d4d7f7d
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '631'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,7 @@ Três tipos de ambientes disponíveis com o Campaign Cloud Service:
 
 É possível exportar e importar pacotes de um ambiente para outro.
 
-:seta_upper_right: Saiba mais sobre pacotes na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
+:[!DNL :arrow_upper_right:]: Saiba mais sobre pacotes na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
 
 ## Implantação Mid-sourcing{#mid-sourcing-deployment}
 
@@ -51,7 +51,7 @@ A comunicação geral entre servidores e processos é realizada de acordo com o 
 
 As mensagens transacionais (Centro de Mensagens) são o módulo do Campaign criado para gerenciar mensagens por disparo.
 
-:bulb: Saiba como enviar mensagens transacionais em [esta seção](../send/transactional.md).
+[!DNL :bulb:] Saiba como enviar mensagens transacionais  [nesta seção](../send/transactional.md).
 
 Em resposta a uma ação de um cliente em um site, um evento é enviado ao Campaign por meio de uma API REST e o modelo de mensagem é preenchido com as informações ou os dados fornecidos por meio da chamada da API, e uma mensagem transacional é enviada em tempo real ao cliente. Essas mensagens podem ser enviadas individualmente ou em batches por email, SMS ou notificações por push.
 
@@ -59,7 +59,7 @@ Nesta arquitetura específica, a célula de execução é separada da instância
 
 * O **Control instance** (ou Marketing instance) é usado por profissionais de marketing e equipes de TI para criar, configurar e publicar templates de mensagem. Essa instância também centraliza o monitoramento e o histórico do evento.
 
-   :bulb: Saiba como criar e publicar templates de mensagem em [esta seção](../send/transactional.md).
+   [!DNL :bulb:] Saiba como criar e publicar modelos de mensagem  [nesta seção](../send/transactional.md).
 
 * O **Execution instance** recupera eventos recebidos (redefinição de senha ou pedidos de um site, por exemplo) e envia mensagens personalizadas. Pode haver mais de uma instância de execução para processar mensagens por meio do balanceador de carga e dimensionar o número de eventos a serem processados para proporcionar disponibilidade máxima.
 
@@ -69,7 +69,7 @@ Nesta arquitetura específica, a célula de execução é separada da instância
 
 ![](assets/messagecenter_diagram.png)
 
-:seta_upper_right: A arquitetura do Centro de Mensagens é descrita na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
+:[!DNL :arrow_upper_right:]: A arquitetura do Centro de mensagens é descrita na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
 
 ### Autenticação
 
@@ -82,4 +82,4 @@ Em seguida, com o sessionToken fornecido pela instância de execução em respos
 * Várias instâncias de execução
 Em uma arquitetura de execução de várias células com várias instâncias de execução atrás de um balanceador de carga, o método logon chamado pelo aplicativo externo está passando pelo balanceador de carga: por esse motivo, não é possível usar uma autenticação baseada em token. É necessária uma autenticação baseada em usuário/senha.
 
-:seta_upper_right: Saiba mais sobre eventos de mensagens transacionais na documentação do [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
+:[!DNL :arrow_upper_right:]: Saiba mais sobre eventos de mensagens transacionais na documentação do [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
