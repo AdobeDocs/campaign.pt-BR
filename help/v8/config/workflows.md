@@ -7,10 +7,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 3fd91879485a33961769c684acba8ca3c48bbbed
+source-git-commit: 8ede6bc1bc08a27e74dde6a427561c33f154a883
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 17%
+source-wordcount: '1187'
+ht-degree: 18%
 
 ---
 
@@ -59,12 +59,9 @@ Projete um workflow recorrente e crie uma nova instância de delivery toda vez q
 
 Use as mensagens transacionais do Campaign para automatizar as mensagens geradas a partir de eventos acionados de sistemas de informações. Essas mensagens transacionais podem ser fatura, confirmação de pedido, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta ou criação de conta de site, por exemplo. Essas mensagens podem ser enviadas individualmente ou em lote por email, SMS ou notificações por push.
 
-[!DNL :arrow_upper_right:] Saiba mais sobre os recursos de mensagens transacionais na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html?lang=en#transactional-messaging).
-
+[!DNL :bulb:] Saiba mais sobre os recursos de mensagens transacionais  [nesta seção](../send/transactional.md).
 
 Conecte o Adobe Campaign e o Adobe Analytics para recuperar as ações do usuário e enviar mensagens personalizadas em tempo quase real.
-
-[!DNL :arrow_upper_right:] Saiba como integrar o Campaign com acionadores do Analytics na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en#integrating-with-adobe-experience-cloud).
 
 [!DNL :bulb:] Saiba como integrar o Campaign com outras soluções  [nesta seção](../start/connect.md)
 
