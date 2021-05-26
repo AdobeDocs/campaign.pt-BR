@@ -7,7 +7,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 0dae3431ac1ddc840244d7df4929b0c949f8011f
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 6%
@@ -82,4 +82,4 @@ Em seguida, com o sessionToken fornecido pela instância de execução em respos
 * Várias instâncias de execução
 Em uma arquitetura de execução de várias células com várias instâncias de execução atrás de um balanceador de carga, o método logon chamado pelo aplicativo externo está passando pelo balanceador de carga: por esse motivo, não é possível usar uma autenticação baseada em token. É necessária uma autenticação baseada em usuário/senha.
 
-:[!DNL :arrow_upper_right:]: Saiba mais sobre eventos de mensagens transacionais na documentação do [Campaign Classic v7](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
+:[!DNL :arrow_upper_right:]: Saiba mais sobre eventos de mensagens transacionais na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
