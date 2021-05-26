@@ -6,9 +6,9 @@ description: Mecanismo de preparo da API do Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
    </srcSchema>
    ```
 
-   :bulb: Saiba mais sobre a criação de esquema personalizado em [this page](create-schema.md).
+   [!DNL :bulb:] Saiba mais sobre a criação de esquema personalizado  [nesta página](create-schema.md).
 
 1. Salve e atualize a estrutura do banco de dados.  [Saiba mais](update-database-structure.md)
 
