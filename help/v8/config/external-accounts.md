@@ -6,7 +6,7 @@ description: Contas externas do Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 33%
@@ -42,7 +42,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para habilitar e ex
 
    A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
-   :[!DNL :arrow_upper_right:]: Saiba mais sobre emails de entrada na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)
+   [!DNL :arrow_upper_right:] Saiba mais sobre emails de entrada na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)
 
 * **Roteamento**
 
