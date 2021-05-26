@@ -3,7 +3,7 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Práticas recomendadas de segurança do Campaign
 description: Introdução às práticas recomendadas de segurança do Campaign
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 22%
@@ -108,7 +108,7 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 * Verifique se cada operador tem os direitos de acesso apropriados
 * Evite usar o operador administrador e evite ter muitos operadores no grupo de administradores
 
-:[!DNL :arrow_upper_right:]: Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator)
+[!DNL :arrow_upper_right:] Saiba mais na documentação do  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator)
 
 ## Diretrizes de codificação
 
@@ -120,4 +120,4 @@ Ao desenvolver no Adobe Campaign (fluxos de trabalho, Javascript, JSSP etc.), se
 
 * **Adicionar captchas em aplicações** web: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
-:[!DNL :arrow_upper_right:]: Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)
+[!DNL :arrow_upper_right:] Saiba mais na documentação do  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)
