@@ -7,10 +7,10 @@ feature: Públicos
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 21%
+source-wordcount: '730'
+ht-degree: 22%
 
 ---
 
@@ -44,7 +44,7 @@ Antes de começar a implementar campanhas de marketing, você precisa conhecer o
 
 O Adobe Campaign permite criar, configurar, executar e analisar todas as campanhas de marketing de um centro de controle unificado.
 
-:seta_upper_right: Saiba como acessar e implementar campanhas de marketing na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
+:[!DNL :arrow_upper_right:]: Saiba como acessar e implementar campanhas de marketing na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
 
 
 ## Etapas principais para iniciar
@@ -55,33 +55,33 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    Defina a hierarquia e o cronograma, defina o orçamento, adicione recursos e selecione operadores.
 
-   :seta_upper_right: Saiba como criar um plano de marketing e configurar campanhas na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)
+   :[!DNL :arrow_upper_right:]: Saiba como criar um plano de marketing e configurar campanhas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)
 
    Todas as campanhas de marketing são baseadas em um template, que armazena as principais configurações e recursos. Um modelo integrado é fornecido para criar uma campanha para a qual nenhuma configuração específica foi definida. Você pode criar e configurar seus modelos de campanha e, em seguida, criar campanhas com base nesses modelos.
 
-   :seta_upper_right: Saiba como trabalhar com templates de campanha na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
+   :[!DNL :arrow_upper_right:]: Saiba como trabalhar com templates de campanha na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
 
-   :seta_upper_right: Descubra campanhas recorrentes e como configurá-las na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
+   :[!DNL :arrow_upper_right:]: Descubra campanhas recorrentes e como configurá-las na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
 
 1. **Definir públicos-alvo**
 
    Você pode criar o público-alvo em um workflow ou selecionar um grupo existente, como uma lista de recipients, assinantes de um boletim informativo, recipients de um delivery anterior ou qualquer condição de filtragem.
 
-   :seta_upper_right: Saiba como definir o público-alvo de suas mensagens na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)
+   :[!DNL :arrow_upper_right:]: Saiba como definir o público das mensagens na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)
 
 1. **Criar deliveries**
 
    Selecione os canais, defina o conteúdo da mensagem e inicie os deliveries.
 
-   :seta_upper_right: Saiba como criar e iniciar deliveries de campanha de marketing na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
+   :[!DNL :arrow_upper_right:]: Saiba como criar e iniciar deliveries de campanha de marketing na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
 
    Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama, etc.
 
-   :seta_upper_right: Saiba mais sobre documentos associados na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)
+   :[!DNL :arrow_upper_right:]: Saiba mais sobre documentos associados na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)
 
 1. **Configurar o processo de aprovação**
 
    O Adobe Campaign permite que você configure processos de aprovação colaborativa para os principais estágios da campanha de marketing. Para cada campanha você pode aprovar o target, o conteúdo e os custos do delivery. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por e-mail e podem aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a Web.
 
-   :seta_upper_right: Saiba como configurar e gerenciar aprovações na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
+   :[!DNL :arrow_upper_right:]: Saiba como configurar e gerenciar aprovações na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
 
