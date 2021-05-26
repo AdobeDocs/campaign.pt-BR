@@ -7,7 +7,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 13%
@@ -40,9 +40,9 @@ O Campaign v8 pode se conectar com:
 
 Você também pode combinar seus **audiences** e **assets** em soluções do Experience Cloud com recursos de compartilhamento de ativos e público-alvo.
 
-:[!DNL :arrow_upper_right:]: Saiba mais sobre o **Compartilhamento de público** entre as soluções do Campaign e do Experience Cloud na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)
+[!DNL :arrow_upper_right:] Saiba mais sobre o compartilhamento de  **público-alvo** entre as soluções do Campaign e do Experience Cloud na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)
 
-:[!DNL :arrow_upper_right:]: Saiba mais sobre o **Compartilhamento de ativos** entre as soluções do Campaign e do Experience Cloud na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)
+[!DNL :arrow_upper_right:] Saiba mais sobre o compartilhamento  **de ativos** entre as soluções Campaign e Experience Cloud na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)
 
 ## Conectores CRM{#gs-crm-connectors}
 
