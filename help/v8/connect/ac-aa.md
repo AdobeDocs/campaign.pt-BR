@@ -7,10 +7,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 556cd7727c7c2bf0158d59d71ae0131b4c1013ee
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 43%
+source-wordcount: '364'
+ht-degree: 44%
 
 ---
 
@@ -40,7 +40,7 @@ Os campos de ação para cada ferramenta são os seguintes:
 
 Saiba mais sobre o Adobe Campaign e Adobe Analytics em [esta página](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-data-connector.html)
 
-:voice_balloon:  Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para integrar o Adobe Analytics Data Connector ao Campaign.
+[!DNL :speech_balloon:]  Como um usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para integrar o Adobe Analytics Data Connector ao Campaign.
 
 
 ## Acionadores da Experience Cloud
@@ -49,4 +49,4 @@ Você pode usar Experience Cloud Triggers para conectar dados entre o Adobe Camp
 
 Saiba mais sobre Adobe Campaign e Experience Cloud Triggers em [esta página](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en).
 
-:voice_balloon:  Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para implementar acionadores de Experience Cloud com o Campaign.
+[!DNL :speech_balloon:]  Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para implementar acionadores de Experience Cloud com o Campaign.
