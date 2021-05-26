@@ -7,7 +7,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 17%
@@ -35,7 +35,7 @@ CubosAnalise e meça dados, calcule estatísticas, simplifique e otimize a cria�
 Dependendo da complexidade das queries, cálculos e volumes, os dados analisados nesses relatórios podem ser coletados por meio de uma query e pré-agregados em uma lista (workflow do tipo gestão de dados) ou em um Cubo (usando Marketing Analytics). Ele será exibido na forma de uma tabela dinâmica ou uma lista de grupos.
 
 
-:[!DNL :arrow_upper_right:]: Para obter mais informações sobre recursos de relatórios, [consulte esta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reporting-in-adobe-campaign/about-adobe-campaign-reporting-tools.html).
+[!DNL :arrow_upper_right:] Para obter mais informações sobre recursos de relatórios,  [consulte esta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reporting-in-adobe-campaign/about-adobe-campaign-reporting-tools.html).
 
 Observe que os relatórios do Adobe Campaign são otimizados e oferecem recursos de melhor escala que o Campaign Classic v7. As limitações existentes em cubos não se aplicam.
 
