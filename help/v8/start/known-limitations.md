@@ -7,7 +7,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
+source-git-commit: 15cd7228a4920702cae182c68e7a329345946e31
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Limitações conhecidas identificam recursos, arquitetura ou processos que não 
 
 Para o Adobe Campaign v8, existem as seguintes limitações:
 
-* O Adobe Campaign v8 não está disponível para implantações locais/híbridas - somente lançado como um Cloud Service Adobe Managed
+* O Adobe Campaign v8 não está disponível para implantações locais/híbridas, apenas lançadas como um Cloud Service Adobe Managed.
 * Os clientes existentes não podem migrar de um ambiente Adobe Campaign existente para o Adobe Campaign v8
 * Nenhuma replicação de dados bidirecional: a replicação acontece somente a partir do banco de dados local do Campaign para o banco de dados do Cloud
 * Os recursos listados [nesta seção](capability-matrix.md#gs-unavailable-features) não estão disponíveis na build atual do Campaign v8
@@ -29,5 +29,3 @@ Para o Adobe Campaign v8, existem as seguintes limitações:
 * Gerenciamento de ID - duplicatas - para confirmar + detalhes
 * LINE - para confirmar + detalhes
 * Latência - para confirmar + detalhes
-
-
