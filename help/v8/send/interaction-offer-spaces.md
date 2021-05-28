@@ -6,7 +6,7 @@ description: Saiba como criar Espaços de oferta
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 39%
@@ -70,7 +70,7 @@ O status da apresentação da oferta varia dependendo das interações com a pop
 
 >[!NOTE]
 >
->A atualização de status é um processo assíncrono. Ele é realizado pelo workflow de rastreamento que é acionado a cada hora.
+>A atualização de status é um processo **assíncrono**. Ele é realizado pelo workflow de rastreamento que é acionado a cada hora.
 
 ### Lista de status da oferta {#status-list}
 
