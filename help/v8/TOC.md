@@ -7,10 +7,10 @@ description: Documentação do Campaign v8
 breadcrumb-title: Campanha v8
 title: Documentos do Campaign v8
 hide: true
-source-git-commit: 6e098ffa538c4348889a35eb454da747c80d6262
+source-git-commit: eaad05675d2f875af2db5f71781afdad3a9ff004
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 35%
+source-wordcount: '197'
+ht-degree: 84%
 
 ---
 
@@ -25,17 +25,17 @@ ht-degree: 35%
    + [Classic v7 para v8](start/capability-matrix.md)
 + Iniciar {#start}
    + [Introdução](start/get-started.md)
-   + [Perfis e públicos-alvo](start/audiences.md)
+   + [Perfis e públicos](start/audiences.md)
    + [Importar dados](start/import.md)
    + [Criar campanhas](start/campaigns.md)
-   + [Envio de mensagens](start/create-message.md)
-   + [Gerenciar assinaturas](start/subscriptions.md)
+   + [Enviar mensagens](start/create-message.md)
+   + [Gerenciar subscrições](start/subscriptions.md)
    + [Rastrear e monitorar](start/tracking.md)
    + [Métricas e relatórios](start/reporting.md)
    + [Perguntas frequentes](start/campaign-faq.md)
 + Implementar {#implement}
    + [Etapas de implementação](start/implement.md)
-   + [Personalize sua instância](dev/customize.md)
+   + [Personalizar sua instância](dev/customize.md)
    + [Diretrizes de segurança](config/security.md)
    + [Criar aplicativos e formulários Web](dev/webapps.md)
    + [Práticas recomendadas do Modelo de dados](dev/datamodel-best-practices.md)
@@ -44,7 +44,7 @@ ht-degree: 35%
    + [Conectar-se ao Campaign](start/connect.md)
    + [Permissões](start/permissions.md)
    + [Painel de controle do Campaign](config/self-service.md)
-+ Envio {#send}
++ Enviar {#send}
    + [Emails](send/email.md)
    + [SMS](send/sms.md)
    + [Notificações por push](send/push.md)
@@ -69,14 +69,15 @@ ht-degree: 35%
    + [Configurações de mensagens transacionais](config/transactional-msg-settings.md)
    + [Contas externas](config/external-accounts.md)
 + Conectar {#connect}
-   + [Conectar-se com outras soluções](connect/integration.md)
-   + [Campanha + Analytics](connect/ac-aa.md)
-   + [Campanha + Experience Manager](connect/ac-aem.md)
-   + [Campanha + Target](connect/ac-at.md)
-   + [Campanha + RTCDP](connect/ac-rtcdp.md)
-   + [Campanha + Twitter](connect/ac-tw.md)
+   + [Conectar-se a outras soluções](connect/integration.md)
+   + [Campaign + Analytics](connect/ac-aa.md)
+   + [Campaign + Experience Manager](connect/ac-aem.md)
+   + [Campaign + Target](connect/ac-at.md)
+   + [Campanha + Experience Cloud acionadores](connect/ac-triggers.md)
+   + [Campaign + RTCDP](connect/ac-rtcdp.md)
+   + [Campaign + Twitter](connect/ac-tw.md)
    + [Campaign + Banco de dados externo](connect/fda.md)
-   + [Campanha + seu CRM](connect/crm.md)
+   + [Campaign + seu CRM](connect/crm.md)
 + Recursos do desenvolvedor {#architecture}
    + [Princípios globais](dev/general-architecture.md)
    + [Arquitetura](dev/architecture.md)
@@ -85,9 +86,9 @@ ht-degree: 35%
       + [Trabalhar com esquemas](dev/schemas.md)
       + [Criar esquemas](dev/create-schema.md)
       + [Estender schemas](dev/extend-schema.md)
-      + [Estrutura de schema](dev/schema-structure.md)
+      + [Estrutura de esquema](dev/schema-structure.md)
       + [Mapeamento de banco de dados](dev/database-mapping.md)
-      + [Restringir exibição de IP](dev/restrict-pi-view.md)
+      + [Restringir visualização de IP](dev/restrict-pi-view.md)
       + [Usar tabela de recipient personalizada](dev/custom-recipient.md)
       + [Atualizar o banco de dados](dev/update-database-structure.md)
       + [Formulários de entrada](dev/forms.md)
