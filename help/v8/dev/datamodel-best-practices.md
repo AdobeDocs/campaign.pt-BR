@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Práticas recomendadas do modelo de dados
 description: Conheça as práticas recomendadas de extensão do modelo de dados do Campaign
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2681'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ Um campo precisa ser armazenado em uma tabela se tiver uma finalidade de direcio
 
 ### Escolha das chaves {#choice-of-keys}
 
-Além do **autouuid** definido por padrão na maioria das tabelas, você deve considerar adicionar algumas chaves lógicas ou de negócios (número de conta, número de cliente e assim por diante). Ele pode ser usado posteriormente para importações/reconciliação ou pacotes de dados. Para obter mais informações, consulte [Identificadores](#identifiers).
+Além dos **autouuid** e **autopk** definidos por padrão na maioria das tabelas, você deve considerar adicionar algumas chaves lógicas ou de negócios (número de conta, número de cliente e assim por diante). Ele pode ser usado posteriormente para importações/reconciliação ou pacotes de dados. Para obter mais informações, consulte [Identificadores](#identifiers).
 
 Chaves eficientes são essenciais para o desempenho. Com o Snowflake, é possível inserir tipos de dados numéricos ou baseados em sequência como chaves para tabelas.
 
@@ -110,7 +110,7 @@ Essa chave personalizada é a chave primária de registro real no sistema extern
 
 Ao criar uma tabela personalizada, você tem duas opções:
 * Uma combinação de chave gerada automaticamente (id) e chave interna (personalizada). Essa opção é interessante se a chave do sistema for uma chave composta ou não um inteiro. Com Snowflake, números inteiros ou chaves baseadas em sequência fornecerão desempenho mais alto em grandes tabelas e unirão a outras tabelas.
-* Usar a chave primária como a chave primária do sistema externo. Essa solução geralmente é preferida, pois simplifica a abordagem para importar e exportar dados, com uma chave consistente entre diferentes sistemas. O Autouuid deve ser desativado se a chave for chamada de &quot;id&quot; e se espera que seja preenchida com valores externos (não gerado automaticamente).
+* Usar a chave primária como a chave primária do sistema externo. Essa solução geralmente é preferida, pois simplifica a abordagem para importar e exportar dados, com uma chave consistente entre diferentes sistemas. **** O Autouuid deve ser desativado se a chave for chamada de &quot;id&quot; e se espera que seja preenchida com valores externos (não gerado automaticamente).
 
 >[!CAUTION]
 >
@@ -123,7 +123,7 @@ Ao criar uma tabela personalizada, você tem duas opções:
 
 Cuidado com a &quot;própria&quot; integridade em tabelas grandes. Excluir registros que tenham tabelas grandes na integridade &quot;própria&quot; pode potencialmente interromper a instância. A tabela está bloqueada e as exclusões são feitas uma por uma. Portanto, é melhor usar integridade &quot;neutra&quot; em tabelas secundárias que têm grandes volumes.
 
-Declarar um link como uma associação externa não é bom para o desempenho. O registro de id zero emula a funcionalidade de associação externa. Não é necessário declarar associações externas se o link usar o autouuid.
+Declarar um link como uma associação externa não é bom para o desempenho. O registro de id zero emula a funcionalidade de associação externa. Não é necessário declarar associações externas se o link usar **autouuid**.
 
 Embora seja possível unir qualquer tabela em um workflow, o Adobe recomenda definir links comuns entre recursos diretamente na definição da estrutura de dados.
 
