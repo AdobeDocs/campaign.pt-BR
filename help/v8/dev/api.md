@@ -7,10 +7,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 93ab81f60c96a44ca702cfc278b87903a977763c
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 5%
+source-wordcount: '331'
+ht-degree: 7%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 5%
 * em Scripts - em [!DNL Adobe Campaign] workflows
 * por APIs - de sistemas externos
 
-Você pode usar APIs do Javascript para gravar no banco de dados da nuvem do Campaign ou ler a partir do banco de dados:
+Você pode usar APIs do JavaScript para gravar no banco de dados da nuvem do Campaign ou ler a partir do banco de dados:
 
-* APIs específicas de negócios que permitem agir em cada objeto: deliveries, workflows, subscrições etc. Saiba mais em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html).
+* APIs específicas de negócios que permitem agir em cada objeto: deliveries, workflows, subscrições e assim por diante. Saiba mais em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html).
 * APIs genéricas de acesso aos dados para consultar os dados do modelo de dados. Saiba mais em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html).
 
 O Campaign v8 funciona com dois bancos de dados: um banco de dados local para a interface do usuário, mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e um banco de dados da nuvem para execução de campanha, relatórios, assimilação de dados, consultas em lote e execução de workflows.
@@ -37,11 +37,11 @@ O Campaign v8 funciona com dois bancos de dados: um banco de dados local para a 
 
 Antes de usar [!DNL Adobe Campaign] APIs, é necessário conhecer os seguintes tópicos:
 
-* Javascript
+* JavaScript
 * Protocolo SOAP
 * [!DNL Adobe Campaign] datamodel
 
-Para usar APIs e interagir com [!DNL Adobe Campaign], você também precisa estar familiarizado com seu modelo de dados.
+Para usar APIs e interagir com [!DNL Adobe Campaign], você também deve estar familiarizado com o modelo de dados.
 
 >[!NOTE]
 >Você pode gerar uma descrição completa do seu modelo de dados. Saiba mais [nesta página](datamodel.md).
@@ -54,10 +54,10 @@ Com o [!DNL Campaign] banco de dados da nuvem, as chamadas unitárias de explos�
 
 ## Novas APIs
 
-Novas APIs estão disponíveis para gerenciar a sincronização de dados entre o banco de dados local [!DNL Campaign] e o banco de dados da nuvem. Um novo mecanismo também foi introduzido para lidar com chamadas de API no nível do banco de dados local para evitar latência e aumentar o desempenho geral
+Novas APIs estão disponíveis para gerenciar a sincronização de dados entre o banco de dados local [!DNL Campaign] e o banco de dados da nuvem. Um novo mecanismo também foi introduzido para lidar com chamadas de API no nível do banco de dados local, a fim de evitar latência e aumentar o desempenho geral.
 
 [!DNL :bulb:] [As novas APIs são detalhadas nesta página](new-apis.md)
 
 **Tópicos relacionados**
 
-* [Práticas recomendadas do Modelo de dados](datamodel-best-practices.md)
+* [Práticas recomendadas do modelo de dados](datamodel-best-practices.md)
