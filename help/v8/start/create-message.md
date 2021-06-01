@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Introdução a mensagens
 description: Introdução a mensagens
@@ -7,7 +6,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 72%
@@ -84,7 +83,7 @@ O monitoramento de entregas após serem enviados é uma etapa essencial para gar
 
 **Tópicos relacionados**
 
-[!DNL :arrow_upper_right:]  [Práticas recomendadas de delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=pt-BR)
+[!DNL :arrow_upper_right:]  [Práticas recomendadas para entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=pt-BR)
 
 [!DNL :arrow_upper_right:]  [Testar e enviar um email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
 
