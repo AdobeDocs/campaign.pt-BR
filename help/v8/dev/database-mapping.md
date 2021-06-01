@@ -1,9 +1,8 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Mapeamento do banco de dados do Campaign
 description: Mapeamento do banco de dados do Campaign
-source-git-commit: 1b731045783565c93a2db0923dea6b6d100471ad
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 0%
@@ -378,7 +377,7 @@ Neste exemplo, declararemos um link para a tabela de schema &quot;nms:address&qu
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Exemplo 5 {#example-4}
+### Exemplo 4 {#example-4}
 
 Link para uma pasta (schema &quot;xtk:folder&quot;):
 
@@ -388,7 +387,7 @@ Link para uma pasta (schema &quot;xtk:folder&quot;):
 
 O valor padrão retorna o identificador do primeiro arquivo de tipo de parâmetro elegível inserido na função &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Exemplo 4 {#example-5}
+### Exemplo 5 {#example-5}
 
 Neste exemplo, queremos criar uma chave em um link (&quot;empresa&quot; para &quot;cus:empresa&quot; schema) com o atributo **xlink** e um campo da tabela (&quot;email&quot;):
 
