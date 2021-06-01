@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Introdução à automação de campanha
 description: Introdução à automação de campanha
@@ -7,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 8ede6bc1bc08a27e74dde6a427561c33f154a883
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1187'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -99,7 +98,7 @@ Nesta seção você encontrará vários casos de uso que usam os recursos dos wo
    Saiba como automatizar a criação e o delivery de um bloco de conteúdo com o complemento Campaign Content Management.
 
 
-### Monitoramento de {#monitoring}
+### Monitoramento {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
@@ -115,7 +114,7 @@ Nesta seção você encontrará vários casos de uso que usam os recursos dos wo
 
    Saiba como enviar um alerta para um operador que conterá o nome dos perfis que abriram um boletim informativo, mas não clicaram no link que ele continha.
 
-### Gestão de dados {#management}
+### Gerenciamento de dados {#management}
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 
