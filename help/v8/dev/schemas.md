@@ -1,16 +1,15 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Trabalhar com esquemas do Campaign
 description: Introdução a esquemas
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 7%
 
 ---
 
-# Trabalhar com schemas{#gs-ac-schemas}
+# Trabalhar com esquemas{#gs-ac-schemas}
 
 A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de **schema**.
 
@@ -109,7 +108,7 @@ Para adicionar um tipo de dados totalmente novo que não existe no Adobe Campaig
 
 Depois de criar ou estender um schema para funcionar, a prática recomendada é definir seus elementos de conteúdo XML na mesma ordem em que aparecem abaixo.
 
-## Enumerações {#enumerations}
+## Listas discriminadas {#enumerations}
 
 As enumerações são definidas primeiro, antes do elemento principal do schema. Eles permitem exibir valores em uma lista para restringir as opções que o usuário tem para um determinado campo.
 
