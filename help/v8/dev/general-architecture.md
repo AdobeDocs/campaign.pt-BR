@@ -1,13 +1,12 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Arquitetura geral
 description: Arquitetura geral do Campaign v8
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -33,7 +32,7 @@ O aplicativo pode ser acessado de diferentes maneiras: Integração avançada de
 
 * **Console** do cliente: A principal interface de usuário do aplicativo é um aplicativo nativo (no Windows) que se comunica com o servidor de aplicativos Adobe Campaign com protocolos padrão de Internet (SOAP, HTTP etc.). O console do cliente Adobe Campaign oferece excelente facilidade de uso para produtividade, usa pouca largura de banda (por meio do uso de um cache local) e foi projetado para facilitar a implantação. Esse Console pode ser implantado a partir de um navegador da Internet, pode ser atualizado automaticamente e não requer nenhuma configuração de rede específica, pois gera apenas tráfego HTTP(S).
 
-   [!DNL :bulb:] [Saiba mais sobre o Console](../start/connect.md) do cliente do Campaign.
+   [!DNL :bulb:] [Saiba mais sobre o Console do Cliente do Campaign](../start/connect.md).
 
 * **Acesso** à Web: partes do aplicativo podem ser acessadas por um navegador da Web simples usando uma interface de usuário HTML, incluindo o módulo de relatório, estágios de aprovação de delivery, monitoramento de instância etc.
 
