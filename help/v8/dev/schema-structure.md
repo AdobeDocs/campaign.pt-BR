@@ -1,9 +1,8 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Estrutura do esquema da campanha
 description: Estrutura do schema da campanha
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 12%
@@ -219,7 +218,7 @@ Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <
 
 `<sqldefault>` : permite ter um valor adicionado ao criar um campo. Esse valor aparece como um resultado SQL. Durante uma atualização do schema, somente os novos registros serão afetados por esse valor.
 
-### Enumerações {#enumerations}
+### Listas discriminadas {#enumerations}
 
 #### Enumeração livre {#free-enumeration}
 
