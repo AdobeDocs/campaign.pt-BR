@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Introdução aos recursos de rastreamento e monitoramento
 description: Introdução aos recursos de rastreamento e monitoramento
@@ -7,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -113,7 +112,7 @@ As diferentes tabelas fornecem a lista de indicadores usados nos diferentes rela
 
 [!DNL :arrow_upper_right:] [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/indicator-calculation.html?lang=en#reporting)
 
-## Orientações de monitoramento
+## Diretrizes de monitoramento
 
 A Adobe Campaign oferece um conjunto de recursos para monitorar seus processos e seu ambiente.
 
