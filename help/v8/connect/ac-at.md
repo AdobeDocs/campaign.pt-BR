@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Trabalhar com o Campaign e o Adobe Target
 description: Saiba como trabalhar com o Campaign e o Adobe Target
@@ -7,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 52%
+ht-degree: 53%
 
 ---
 
@@ -49,7 +48,7 @@ As etapas a seguir precisam ser realizadas no Adobe Campaign e no Adobe Target:
 
 1. [Insira a oferta dinâmica em um email](#inserting-dynamic-offer)
 1. [Criar ofertas de redirecionamento](#create-redirect-offers)
-1. [Criar públicos-alvo](#audiences-target)
+1. [Criar públicos](#audiences-target)
 1. [Criar uma atividade de direcionamento de experiência](#creating-targeting-activity)
 1. [Visualizar e enviar a mensagem](#preview-send-email)
 
@@ -98,7 +97,7 @@ Em nosso caso, precisamos de duas ofertas de redirecionamento, a terceira (a pad
 
 1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=en#experiences).
 
-### Criar públicos-alvo {#audiences-target}
+### Criar públicos {#audiences-target}
 
 No Adobe Target, é necessário criar os dois públicos nos quais as pessoas que visitam sua oferta serão categorizadas para os diferentes conteúdos a serem entregues. Para cada público, adicione uma regra para definir quem poderá ver a oferta.
 
