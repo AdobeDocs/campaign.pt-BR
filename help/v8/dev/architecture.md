@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Introdução à arquitetura do Campaign
 description: Introdução à arquitetura do Campaign
@@ -7,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '631'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -32,7 +31,7 @@ Três tipos de ambientes disponíveis com o Campaign Cloud Service:
 
 [!DNL :arrow_upper_right:] Saiba mais sobre pacotes na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
 
-## Implantação Mid-sourcing{#mid-sourcing-deployment}
+## Implantação mid-sourcing{#mid-sourcing-deployment}
 
 A comunicação geral entre servidores e processos é realizada de acordo com o seguinte schema:
 
@@ -49,7 +48,7 @@ A comunicação geral entre servidores e processos é realizada de acordo com o 
 
 ## Arquitetura do Centro de Mensagens{#transac-msg-archi}
 
-As mensagens transacionais (Centro de Mensagens) são o módulo do Campaign criado para gerenciar mensagens por disparo.
+O envio de mensagens transacionais (Centro de mensagens) é o módulo do Campaign criado para gerenciar mensagens de acionador.
 
 [!DNL :bulb:] Saiba como enviar mensagens transacionais  [nesta seção](../send/transactional.md).
 
