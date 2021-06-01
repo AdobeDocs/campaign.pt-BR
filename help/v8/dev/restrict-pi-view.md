@@ -1,12 +1,11 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
-title: Restringir exibição de IP
+title: Restringir visualização de IP
 description: Saiba como restringir a exibição de PI
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
