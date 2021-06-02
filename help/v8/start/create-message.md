@@ -6,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 72%
+source-wordcount: '601'
+ht-degree: 71%
 
 ---
 
@@ -41,11 +41,11 @@ Depois que a mensagem for criada e o conteúdo testado, você poderá escolher c
 
 * Enviar mensagens manualmente para o target principal
    [!DNL :arrow_upper_right:] [Saiba como enviar mensagens](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=pt-BR)
-* Enviar mensagens associadas a uma [campanha de marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=pt-BR)
+* Enviar mensagens associadas a uma [campanha de marketing](campaigns.md)
    [!DNL :arrow_upper_right:] [Saiba como enviar mensagens no contexto de uma campanha](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=pt-BR).
-* Enviar mensagens por meio de um [workflow](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=pt-BR)
+* Enviar mensagens por meio de um [workflow](../config/workflows.md)
    [!DNL :arrow_upper_right:] [Saiba como automatizar deliveries de email](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=pt-BR)
-* [Acionar ](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html?lang=pt-BR) mensagens de um evento
+* [Acionar ](../send/transactional.md) mensagens de um evento
    [!DNL :arrow_upper_right:] [Caso de uso: saiba como enviar um email transacional com um anexo](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=pt-BR)
 * Agendar suas mensagens
    [!DNL :arrow_upper_right:] [Caso de uso: saiba como agendar e enviar email de aniversário](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=pt-BR)
