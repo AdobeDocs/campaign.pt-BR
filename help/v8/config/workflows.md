@@ -6,7 +6,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 19%
@@ -30,16 +30,16 @@ Você pode configurar:
 
 Use os fluxos de trabalho do Adobe Campaign para melhorar a velocidade e a escala de cada aspecto de suas campanhas de marketing, desde a criação de segmentos e a preparação de mensagens até o delivery.
 
-Saiba como criar workflows nesses[casos de uso completos](#end-to-end-uc).
+Saiba como criar workflows nesses [casos de uso completos](#end-to-end-uc).
 
 Saiba mais sobre a interface de usuário de workflows e a execução na documentação do Campaign Classic v7:
 
 [!DNL :arrow_upper_right:]  [Introdução a workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows)
 * Atividades de workflow:
-   * [Atividades](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html) de direcionamento: query, lista de leitura, enriquecimento, união e muito mais
-   * [Atividades](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html) de controle de fluxo: scheduler, bifurcação, alerta, sinal externo e muito mais
-   * [Atividades](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html) de ação: deliveries entre canais, código Javascript, atividades CRM, agregação de atualização e muito mais
-   * [Atividades](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html) de evento: transferência de arquivos, download da Web e muito mais
+   * [Atividades](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html) de direcionamento: Consulta, lista de leitura, Enriquecimento, União e muito mais
+   * [Atividades](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html) de controle de fluxo: Scheduler, Bifurcar, Alerta, Sinal externo e muito mais
+   * [Atividades](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html) de ação: Deliveries entre canais, código Javascript, atividades CRM, Atualizar agregação e muito mais
+   * [Atividades](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html) de evento: Transferência de arquivos, download da Web e muito mais
       [!DNL :arrow_upper_right:]  [Criar um público-alvo em um workflow de campanha de marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow)
 
       [!DNL :arrow_upper_right:]  [Práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html)
