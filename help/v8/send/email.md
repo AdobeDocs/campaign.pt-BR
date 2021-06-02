@@ -5,9 +5,9 @@ description: Introdução a emails no Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: d1e96b1311d9de24ceb918230186cd3cad609ab2
+source-git-commit: 5762e58aafb11932d0e28d87df84704974c09564
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '790'
 ht-degree: 51%
 
 ---
@@ -77,7 +77,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
    * Integrar um link a uma aplicação web
 
-      O Editor de conteúdo digital permite integrar links às aplicações web no console do Adobe Campaign, como uma landing page ou uma página de formulário. Para saber mais, consulte [Vincular a uma aplicação web](../../web/using/editing-content.md#link-to-a-web-application).
+      O Editor de conteúdo digital permite integrar links às aplicações web no console do Adobe Campaign, como uma landing page ou uma página de formulário.
 
       Selecione um campo de texto para seu link para uma aplicação web e clique no primeiro ícone. Escolha **[!UICONTROL Link to a Web application]** e selecione a aplicação desejada clicando no ícone no final do campo **Web Application**.
 
