@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Gerenciamento de chaves no Campaign '
 description: Introdução ao gerenciamento de chaves
-source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
+source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ No Campaign v8, a chave primária é um UUID (Universally Unique IDentifier), qu
 
 O Adobe campaign v8 vem com o Snowflake como o banco de dados principal. A arquitetura distribuída do banco de dados do Snowflake não fornece mecanismos para gerenciar a unicidade de uma chave em uma tabela: os usuários finais são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign.
 
-Evitar duplicatas em chaves e, especialmente, em chaves primárias, é obrigatório para preservar a consistência do banco de dados relacional. As duplicatas em chaves primárias levam a problemas com atividades de workflow do gerenciamento de dados, como Query, Reconciliation, Update e muito mais.
+Evitar duplicatas em chaves e, especialmente, em chaves primárias, é obrigatório para preservar a consistência do banco de dados relacional. As duplicatas em chaves primárias levam a problemas com atividades de workflow do gerenciamento de dados, como **Query**, **Reconciliation**, **Update data** e muito mais.
 
-A Adobe Campaign propõe ferramentas eficientes de Gestão de Dados para reconciliar os dados, garantir a inserção ou atualização dos dados, dependendo de sua presença no banco de dados (Reconciliação) e remover duplicatas antes de assimilar dados (Desduplicação). Como prática recomendada, o Adobe recomenda a adoção de uma estratégia [Detect](#detect-duplicates) e [Correct](#correct-duplicates) como parte do processo geral de Gerenciamento de dados, caso chaves duplicadas tenham sido carregadas no banco de dados.
+A Adobe Campaign propõe ferramentas eficientes de gerenciamento de dados para reconciliar os dados, certificar-se de inserir ou atualizar dados dependendo de sua presença no banco de dados (**Reconciliation**) e remover duplicatas antes de assimilar dados (**Deduplication**). Como prática recomendada, o Adobe recomenda a adoção de uma estratégia [Detect](#detect-duplicates) e [Correct](#correct-duplicates) como parte do processo geral de Gerenciamento de dados, caso chaves duplicadas tenham sido carregadas no banco de dados.
 
 ## Detectar duplicatas{#detect-duplicates}
 
 O Campaign vem com uma nova garantia que remove automaticamente qualquer UUID duplicada de um público-alvo durante a preparação do delivery. Esse novo mecanismo impede que qualquer erro ocorra ao preparar um delivery.
 
-Como usuário final, você pode verificar essas informações nos Logs do delivery: alguns recipients podem ser excluídos do target principal devido à chave duplicada. Nesse caso, o seguinte aviso é exibido: `Exclusion of duplicates (based on the primary key or targeted records)`.
+Como usuário final, você pode verificar essas informações nos logs do delivery: alguns recipients podem ser excluídos do target principal devido à chave duplicada. Nesse caso, o seguinte aviso é exibido: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
 ![](assets/delivery-log-duplicates.png)
 
@@ -81,4 +81,4 @@ and urecipientid = 'c04d93f2-6012-4668-b523-88db1262cd46';
 
 ![](assets/sql-data-management.png)
 
-Depois que a linha selecionada é atualizada com um novo UUID, você pode verificar a linha atualizada da interface e observar que o UUID foi atualizado conforme esperado. Você também pode detectar duplicatas no Banco de Dados executando o workflow &quot;Detectar duplicatas&quot; [conforme explicado aqui](#detect-duplicates).
+Depois que a linha selecionada é atualizada com um novo UUID, você pode verificar a linha atualizada da interface e observar que o UUID foi atualizado conforme esperado. Você também pode detectar duplicatas no Banco de Dados executando o workflow **Detectar duplicatas** [conforme explicado aqui](#detect-duplicates).
