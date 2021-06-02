@@ -5,7 +5,7 @@ description: Introdução a mensagens transacionais
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 73%
@@ -36,7 +36,7 @@ As mensagens transacionais são usadas para enviar:
 
 Cada evento pode acionar uma mensagem personalizada. Para que isso aconteça, é necessário criar um template de mensagem para corresponder a cada tipo de evento. Os templates contêm as informações necessárias para personalizar a mensagem transacional. Você também pode usar templates para testar a pré-visualização da mensagem e enviar provas usando seed addresses antes de entregar ao target final.
 
-### Criar o modelo
+## Criar o modelo
 
 Para criar um template de mensagem, siga as etapas abaixo:
 
@@ -62,7 +62,7 @@ Para criar um template de mensagem, siga as etapas abaixo:
 
 1. Insira uma natureza e uma descrição, depois clique em **[!UICONTROL Continue]** para criar o corpo da mensagem. Consulte [Criar o conteúdo da mensagem](#create-message-content).
 
-### Criar o conteúdo{#create-message-content}
+## Criar o conteúdo{#create-message-content}
 
 A definição do conteúdo da mensagem transacional é a mesma para todos os deliveries no Adobe Campaign. Por exemplo, para um delivery de email, você pode criar conteúdo em formato HTML ou texto, adicionar anexos ou personalizar o objeto do delivery. Para obter mais informações, consulte [esta seção](../start/create-message.md).
 
@@ -92,7 +92,7 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 
    ![](assets/messagecenter_create_custo_2.png)
 
-### Adicionar seed addresses{#add-seeds}
+## Adicionar seed addresses{#add-seeds}
 
 Um seed address permite exibir uma pré-visualização da mensagem, enviar uma prova e testar a personalização da mensagem antes de enviar a mensagem. Os seed addresses estão vinculados ao delivery e não podem ser usados para outros deliveries.
 
@@ -118,7 +118,7 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
 
 Depois que os endereços forem criados, você poderá acessar a visualização e personalização.
 
-### Adicionar dados de personalização{#personalization-data}
+## Adicionar dados de personalização{#personalization-data}
 
 Você pode adicionar dados no template de mensagem para testar a personalização da mensagem transacional. Isso permitirá gerar uma pré-visualização ou enviar uma prova. Se instalar o módulo **Deliverability**, esses dados permitirão exibir uma renderização das mensagens para vários clientes de desktop, Web ou dispositivos móveis.
 
@@ -133,7 +133,7 @@ Essas informações permitem personalizar o conteúdo da mensagem usando tags de
 
    ![](assets/messagecenter_create_custo_3.png)
 
-### Visualizar sua mensagem transacional{#transactional-message-preview}
+## Visualizar sua mensagem transacional{#transactional-message-preview}
 
 Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-visualizar a mensagem e verificar sua personalização.
 
@@ -145,7 +145,7 @@ Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-v
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### Enviar uma prova
+## Enviar uma prova
 
 Você pode testar o delivery de mensagens enviando uma prova para um seed address criado anteriormente.
 
