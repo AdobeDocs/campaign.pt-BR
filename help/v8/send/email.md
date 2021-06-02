@@ -5,10 +5,10 @@ description: Introdução a emails no Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 5762e58aafb11932d0e28d87df84704974c09564
+source-git-commit: dc99c00f68e53a308f8c869f07aa93baed3a5129
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 51%
+source-wordcount: '604'
+ht-degree: 15%
 
 ---
 
@@ -24,71 +24,58 @@ Crie emails personalizados e relevantes contextualmente que sejam consistentes c
 
 ![](assets/new-email-content.png)
 
-[!DNL :arrow_upper_right:] [Saiba como criar um delivery de email na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case--creating-an-email-delivery.html)
 
+No exemplo a seguir, você aprenderá as etapas para criar um delivery de email no Adobe Campaign que contenha dados personalizados, links para um URL externo e um link para a mirror page.
 
-No exemplo a seguir, você aprenderá as etapas para criar um delivery de email no Adobe Campaign que contenha dados personalizados, links para um URL externo, um link para a mirror page e um link para um formulário da Web.
-
-1. Criar o delivery
+1. **Criar o delivery**
 
    Para criar um novo delivery, navegue até a guia **Campaigns**, clique em **Deliveries** e clique no botão **Create** acima da lista de deliveries existentes.
 
    ![](assets/delivery_step_1.png)
 
-1. Selecionar o modelo
+1. **Selecionar o modelo**
 
    Selecione um template do delivery e nomeie o delivery. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus recipients, no entanto, esse título será exibido na lista de deliveries. Clique em **[!UICONTROL Continue]**.
 
    ![](assets/dce_delivery_model.png)
 
-1. Importe seu conteúdo
+1. **Importe seu conteúdo**
 
    Clique na guia **Source** para colar seu conteúdo HTML.
 
    ![](assets/paste-content.png)
 
 
-1. Personalizar sua mensagem
+1. **Personalizar sua mensagem**
 
 
-   * Exiba o nome e o sobrenome dos recipients
+   * Adicione o nome e o sobrenome dos recipients
 
-      Para inserir o nome e o sobrenome dos recipients em um campo de texto no delivery, clique no campo de texto escolhido e coloque o cursor onde deseja exibi-los. Clique no primeiro ícone na barra de ferramentas pop-up e, depois, em **[!UICONTROL Personalization block]**. Selecione **[!UICONTROL Greetings]** e clique em **[!UICONTROL OK]**.
+      Para inserir o nome e o sobrenome dos perfis segmentados no conteúdo da mensagem, coloque o cursor onde deseja inseri-los, clique no último ícone na barra de ferramentas, em seguida, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL Greetings]**.
 
-   * Inserir um link em uma imagem
+      ![](assets/include-greetings.png)
 
-      Para levar os destinatários do delivery para um endereço externo por meio de uma imagem, clique na imagem relevante para exibir a barra de ferramentas pop-up, coloque o cursor no primeiro ícone e clique em **[!UICONTROL Link to an external URL]**.
+      Navegue até a guia Preview para verificar a personalização selecionando um recipient.
+
+      ![](assets/perso-check.png)
+
+   * Inserir um link rastreado
+
+      Para levar os recipients do delivery para um endereço externo por meio de uma imagem ou um texto, selecione-o e clique no ícone **[!UICONTROL Add a link]** na barra de ferramentas.
 
       Insira a URL do link no campo **URL** usando o seguinte formato **https://www.myURL.com** e, em seguida, confirme.
 
-      O link pode ser alterado a qualquer momento usando a seção à direita da janela.
-
-   * Inserir um link no texto
-
-      Para integrar um link externo ao texto no seu delivery, selecione um texto ou um bloco de texto e clique no primeiro ícone na barra de ferramentas pop-up. Clique em **[!UICONTROL Link to an external URL]** e digite o endereço do link no campo **[!UICONTROL URL]**.
-
-      O link pode ser alterado a qualquer momento usando a seção à direita da janela.
+      ![](assets/add-a-link.png)
 
    * Adicionar uma mirror page
 
-      Para permitir que os recipients vejam o conteúdo do delivery em um navegador da Web, você pode integrar um link a uma mirror page no delivery.
+      Para permitir que seus recipients visualizem o conteúdo do delivery em um navegador da Web, adicione um link à mirror page da mensagem.
 
-      Clique no campo de texto em que você deseja ver o link publicado. Clique no primeiro ícone na barra de ferramentas pop-up, selecione **[!UICONTROL Personalization block]** e, então, **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Clique em **[!UICONTROL Save]** para confirmar.
-
-   * Integrar um link a uma aplicação web
-
-      O Editor de conteúdo digital permite integrar links às aplicações web no console do Adobe Campaign, como uma landing page ou uma página de formulário.
-
-      Selecione um campo de texto para seu link para uma aplicação web e clique no primeiro ícone. Escolha **[!UICONTROL Link to a Web application]** e selecione a aplicação desejada clicando no ícone no final do campo **Web Application**.
-
-1. Enviar mensagens
-
-   Quando o conteúdo for integrado, salve o delivery clicando em **Salvar**. Agora ele será exibido na lista de deliveries, encontrada na guia **[!UICONTROL Campaigns > Deliveries]**.
+      Coloque o cursor onde deseja inserir este link, clique no último ícone na barra de ferramentas, em seguida, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL link to mirror page]**.
+   Quando o conteúdo estiver pronto, clique em **Salvar**: agora ele será exibido na lista de deliveries, na guia **[!UICONTROL Campaigns > Deliveries]**. Seu primeiro delivery de email está pronto. Agora é necessário definir o público-alvo, validar o delivery e enviá-lo.
 
 
-## Criar conteúdo e selecionar o público
-
-Você pode criar diretamente no Campaign ou importar seu público, bem como seu conteúdo de email. Use os links abaixo para saber como:
+Saiba mais nestas seções da documentação do Campaign Classic v7:
 
 * Criar um email no Campaign
    [!DNL :arrow_upper_right:] [Saiba como criar um email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html)
