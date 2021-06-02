@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Gerenciamento de chaves no Campaign '
 description: Introdução ao gerenciamento de chaves
-source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
+source-git-commit: 9a1c44f74f6558f0397617353f3e78186fb15717
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ O Adobe campaign v8 vem com o Snowflake como o banco de dados principal. A arqui
 
 Evitar duplicatas em chaves e, especialmente, em chaves primárias, é obrigatório para preservar a consistência do banco de dados relacional. As duplicatas em chaves primárias levam a problemas com atividades de workflow do gerenciamento de dados, como **Query**, **Reconciliation**, **Update data** e muito mais.
 
-A Adobe Campaign propõe ferramentas eficientes de gerenciamento de dados para reconciliar os dados, certificar-se de inserir ou atualizar dados dependendo de sua presença no banco de dados (**Reconciliation**) e remover duplicatas antes de assimilar dados (**Deduplication**). Como prática recomendada, o Adobe recomenda a adoção de uma estratégia [Detect](#detect-duplicates) e [Correct](#correct-duplicates) como parte do processo geral de Gerenciamento de dados, caso chaves duplicadas tenham sido carregadas no banco de dados.
+Como prática recomendada, o Adobe recomenda a adoção de uma estratégia [Detect](#detect-duplicates) e [Correct](#correct-duplicates) como parte do processo geral de Gerenciamento de dados, caso chaves duplicadas tenham sido carregadas no banco de dados.
 
 ## Detectar duplicatas{#detect-duplicates}
 
