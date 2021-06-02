@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
 title: Trabalhar com o Campaign e o Adobe Analytics
-description: Saiba como trabalhar com o Campaign e o Adobe Analytics
+description: Saiba como integrar o Campaign e o Analytics
 feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 7bb480eb69aa92e8876acaf2322e532dbb2f1f96
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 47%
+source-wordcount: '1096'
+ht-degree: 32%
 
 ---
 
@@ -19,22 +19,15 @@ Você pode configurar o Adobe Analytics para integrar o Campaign e o Analytics.
 
 Essa integração permite que o Adobe Campaign e o Adobe Analytics interajam por meio do complemento **Web Analytics connectors**. Essa integração envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para a Adobe Analytics.
 
+[!DNL :speech_balloon:] Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para conectar o Campaign com os serviços e as soluções da Adobe Experience Cloud. O Adobe Identity Management Service (IMS) deve ser implementado para sua instância. [Saiba mais](../start/connect.md#connect-ims). O complemento do conector do Web Analytics deve ser instalado no ambiente, por meio do pacote dedicado.
+
 Usando o Adobe Analytics Connector, o Adobe Campaign tem uma maneira de medir o público-alvo da Internet (Web Analytics). As ferramentas de análise da Web permitem que o Adobe Campaign encaminhe indicadores e atributos de campanha para o Analytics.
 
 O perímetro de ação de cada ferramenta é o seguinte:
 
-* **Adobe Analytics**
+* **O Adobe** Analytics marca as campanhas de email iniciadas com o Adobe Campaign
 
-   * marca as campanhas de e-mail iniciadas com o Adobe Campaign
-   * salva o comportamento do recipient, no site navegado depois de clicar no e-mail da campanha, no formato de segmentos. Os segmentos estão relacionados a produtos abandonados (visualizados, mas não adicionados ao carrinho ou comprados), compras ou abandonos de carrinho.
-
-* **Adobe Campaign**
-
-   * envia os indicadores e os atributos da campanha para o conector, que, por sua vez, os encaminha para a ferramenta Web Analytics
-   * recupera e analisa segmentos
-   * e dispara uma campanha de re-marketing
-
-[!DNL :speech_balloon:]  Como um usuário do Managed Cloud Services,  [entre em contato com o ](../start/campaign-faq.md#support) Adobe para integrar o Adobe Analytics Connector ao Campaign. O complemento do conector do Web Analytics deve ser instalado no ambiente, por meio do pacote dedicado.
+* **O Adobe** Campaign envia os indicadores e os atributos da campanha para o conector, que, por sua vez, os encaminha para a ferramenta Web Analytics
 
 
 >[!CAUTION]
@@ -47,7 +40,7 @@ Para configurar a conexão do Campaign com o Analytics, você deve executar as s
 1. [Configurar as variáveis de conversão e os eventos bem-sucedidos](#configure-conversion-success)
 1. [Configurar sua conta externa no Adobe Campaign](#external-account-ac)
 
-## Criar seu conjunto de relatórios no Adobe Analytics {#report-suite-analytics}
+## Crie seu conjunto de relatórios do Analytics {#report-suite-analytics}
 
 Para criar seu **[!UICONTROL Report suite]** em [!DNL Adobe Analytics], siga as etapas abaixo:
 
@@ -122,7 +115,7 @@ Depois de criar seu **[!UICONTROL Report suite]**, você precisa configurar seus
 
 Quando seu conjunto de relatórios é configurado, é necessário configurar o **[!UICONTROL External accounts]** no Adobe Campaign.
 
-## Configurar sua conta externa no Adobe Campaign {#external-account-ac}
+## Configurar a conta externa do Campaign {#external-account-ac}
 
 Agora é necessário configurar sua conta externa **[!UICONTROL Web Analytics]** no Adobe Campaign para habilitar a sincronização entre as duas soluções.
 
@@ -192,7 +185,7 @@ Para obter mais informações, consulte a página [Product profiles for Adobe An
 >
 >Se estiver usando várias ferramentas de medição de público, você pode selecionar **[!UICONTROL Other]** na lista suspensa **[!UICONTROL Partners]** ao criar a conta externa. Você só pode fazer referência a uma conta externa nas propriedades de delivery: será necessário adaptar a fórmula de URLs controladas adicionando os parâmetros esperados pela Adobe e todas as outras ferramentas de medição usadas.
 
-## Workflows técnicos de processos do Web Analytics {#technical-workflows-of-web-analytics-processes}
+## Fluxo de trabalho técnico dos processos de análise da Web {#technical-workflows-of-web-analytics-processes}
 
 A troca de dados entre o Adobe Campaign e o Adobe Analytics é realizada por um workflow técnico que é executado como uma tarefa em segundo plano.
 
@@ -232,7 +225,7 @@ Os atributos enviados são os seguintes:
 * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
 * **[!UICONTROL Contact date]** (scheduling/@contactDate)
 
-## Rastreamento de deliveries no Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
+## Rastrear deliveries {#tracking-deliveries-in-adobe-campaign}
 
 Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois que o Adobe Campaign enviou o delivery, é necessário fazer referência ao conector correspondente nas propriedades de delivery. Para fazer isso, siga as etapas abaixo:
 
@@ -246,46 +239,6 @@ Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois q
    ![](assets/webanalytics_delivery_properties_002.png)
 
 1. Agora você pode enviar o delivery e acessar o relatório no Adobe Analytics.
-
-## Criação de uma campanha de re-marketing {#creating-a-re-marketing-campaign}
-
-Para preparar sua campanha de re-marketing, basta criar templates do delivery para campanhas do tipo re-marketing. Em seguida, configure sua campanha de re-marketing e a vincule a um segmento. Cada segmento deve ter uma campanha de re-marketing diferente.
-
-As campanhas re-marketing são iniciadas automaticamente quando o Adobe Campaign conclui a recuperação dos segmentos que analisam o comportamento das pessoas direcionadas pela campanha inicial. No caso de abandono do carrinho ou visualização do produto sem uma compra, um delivery é enviado para os recipients relacionados para que o site navegue para o fim da compra.
-
-O Adobe Campaign fornece templates do delivery personalizados que você pode usar ou o banco de dados para preparar campanhas.
-
-1. Na pasta **[!UICONTROL Explorer]**, vá para a pasta **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** da árvore do Adobe Campaign.
-
-1. Duplique o template **[!UICONTROL Email delivery (re-marketing)]** ou os exemplos de template de re-marketing oferecidos pelo Adobe Campaign.
-
-   ![](assets/webanalytics_delivery_model.png)
-
-1. Personalize o template para atender às suas necessidades e salve.
-
-1. Crie uma nova campanha e selecione o template **[!UICONTROL Re-marketing campaign]** na lista suspensa.
-
-   ![](assets/webanalytics_remarketing_campaign_002.png)
-
-1. Clique no link **[!UICONTROL Configure...]** para especificar o segmento e o template do delivery vinculados à campanha.
-
-1. Selecione a conta externa configurada anteriormente.
-
-   ![](assets/webanalytics_remarketing_campaign_003.png)
-
-1. Selecione o segmento relacionado.
-
-   ![](assets/webanalytics_remarketing_campaign_005.png)
-
-1. Selecione o template do delivery a ser usado para essa campanha de re-marketing e clique em **[!UICONTROL Finish]** para fechar a janela.
-
-   ![](assets/webanalytics_remarketing_campaign_006.png)
-
-1. Clique em **[!UICONTROL OK]** para fechar a janela do Campaign.
-
-O relatório **[!UICONTROL Re-marketing efficiency]** é acessado por meio da página de relatórios globais. Ele permite que você visualize o número de contatos convertidos (isto é, quem comprou algo) em relação ao número de abandonos do carrinho após a campanha de re-marketing do Adobe Campaign. A taxa de conversão é calculada por semana, mês ou desde o início da sincronização entre o e o Adobe Campaign e as ferramentas do Web Analytics.
-
-![](assets/webanalytics_reporting.png)
 
 
 **Tópicos relacionados**
