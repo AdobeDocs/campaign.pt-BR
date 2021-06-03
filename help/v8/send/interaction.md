@@ -5,10 +5,10 @@ description: Introdução ao Gerenciamento de ofertas
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 37%
+ht-degree: 35%
 
 ---
 
@@ -28,19 +28,19 @@ As principais etapas para iniciar estão listadas abaixo.
 
 Antes de começar, como um **Administrador** do Campaign, certifique-se de executar as seguintes tarefas em ambientes de design:
 
-1. Crie perfis de usuário. [Saiba mais](interaction-operators.md).
+1. Crie perfis de usuário. [Saiba mais](interaction-operators.md)
 1. (opcional) Crie um ambiente de oferta para cada targeting dimension. [Saiba mais](interaction-env.md)
-1. Crie regras de tipologia para cada ambiente. [Saiba mais](interaction-offer.md#offer-presentation).
-1. Crie espaços de ofertas para cada ambiente e configure as funções de renderização. [Saiba mais](interaction-offer-spaces.md).
-Se o espaço for definido por um canal unitário no modo identificado, você deverá especificar os parâmetros avançados para esse espaço.
+1. Crie regras de tipologia para cada ambiente. [Saiba mais](interaction-offer.md#offer-presentation)
+1. Crie espaços de ofertas para cada ambiente e configure as funções de renderização. [Saiba ](interaction-offer-spaces.md)
+maisSe o espaço for definido por um canal unitário no modo identificado, você deverá especificar os parâmetros avançados para esse espaço.
 
 ### Criar e publicar o catálogo de ofertas {#managing-the-offer-catalog-}
 
 Como um **Offer manager**, você precisa executar as seguintes tarefas:
 
-1. Crie categorias de ofertas em ambientes de design. [Saiba mais](interaction-offer-catalog.md#creating-offer-categories).
-1. Crie ofertas em ambientes de design. [Saiba mais](interaction-offer.md).
-1. Aprove e publique ofertas em um ou vários espaços para torná-las disponíveis em ambientes dinâmicos para o gerenciador de delivery. [Saiba mais](interaction-offer.md#approve-offers).
+1. Crie categorias de ofertas em ambientes de design. [Saiba mais](interaction-offer-catalog.md#creating-offer-categories)
+1. Crie ofertas em ambientes de design. [Saiba mais](interaction-offer.md)
+1. Aprove e publique ofertas em um ou vários espaços para torná-las disponíveis em ambientes dinâmicos para o gerenciador de delivery. [Saiba mais](interaction-offer.md#approve-offers)
 
 ### Aproveite o catálogo de ofertas {#using-the-offer-catalog-}
 
