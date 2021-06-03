@@ -5,7 +5,7 @@ description: Saiba como trabalhar com bancos de dados externos e do Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 58%
@@ -54,7 +54,7 @@ A opção FDA do Campaign permite estender o modelo de dados em um banco de dado
 Para configurar o acesso a um banco de dados externo com o FDA, as etapas de configuração são:
 
 1. Como usuário do Adobe Managed Services, entre em contato com o Adobe para instalar os drivers na instância do Campaign.
-1. Depois que os drivers forem instalados, configure a conta externa que corresponde ao banco de dados no servidor do Adobe Campaign e teste a conta externa. [Saiba mais](#fda-external-account).
+1. Depois que os drivers forem instalados, configure a conta externa que corresponde ao banco de dados no servidor do Adobe Campaign e teste a conta externa. [Saiba mais](#fda-external-account)
 1. Criar o schema do banco de dados externo no Adobe Campaign. Isso permite identificar a estrutura de dados do banco de dados externo. [Saiba mais](#create-data-schema)
 1. Se necessário, crie um novo target mapping do schema criado anteriormente. Isso é necessário se os recipients de seus deliveries vierem do banco de dados externo. Essa implementação vem com limitações relacionadas à personalização de mensagens. [Saiba mais](#define-data-mapping)
 
