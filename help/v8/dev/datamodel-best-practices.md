@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Práticas recomendadas do modelo de dados
 description: Conheça as práticas recomendadas de extensão do modelo de dados do Campaign
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
 workflow-type: tm+mt
 source-wordcount: '2681'
 ht-degree: 4%
@@ -66,7 +66,6 @@ Para garantir uma boa arquitetura e o desempenho do sistema, siga as práticas r
 ### Escolha dos campos {#choice-of-fields}
 
 Um campo precisa ser armazenado em uma tabela se tiver uma finalidade de direcionamento ou personalização. Em outras palavras, se um campo não for usado para enviar um email personalizado ou como um critério em uma query, ele ocupará espaço em disco desnecessariamente.
-
 
 ### Escolha das chaves {#choice-of-keys}
 
