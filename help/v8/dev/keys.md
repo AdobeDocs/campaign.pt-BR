@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Gerenciamento de chaves no Campaign '
 description: Introdução ao gerenciamento de chaves
-source-git-commit: 9a1c44f74f6558f0397617353f3e78186fb15717
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Como prática recomendada, o Adobe recomenda a adoção de uma estratégia [Dete
 ## Detectar duplicatas{#detect-duplicates}
 
 O Campaign vem com uma nova garantia que remove automaticamente qualquer UUID duplicada de um público-alvo durante a preparação do delivery. Esse novo mecanismo impede que qualquer erro ocorra ao preparar um delivery.
+
+>[!CAUTION]
+>
+>Chaves duplicadas não são restritas a UUIDs. Isso pode ocorrer no com IDs, incluindo chaves personalizadas criadas em tabelas personalizadas.
 
 Como usuário final, você pode verificar essas informações nos logs do delivery: alguns recipients podem ser excluídos do target principal devido à chave duplicada. Nesse caso, o seguinte aviso é exibido: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
