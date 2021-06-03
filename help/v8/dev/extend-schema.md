@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Estender esquemas do Campaign
 description: Saiba como estender schemas do Campaign
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -35,7 +35,7 @@ Para estender um schema, siga as etapas abaixo:
 
    ![](assets/extend-schema-select.png)
 
-   Por convenção, nomeie o schema de extensão como o schema incorporado e use um namespace personalizado.  Observe que alguns namespaces são somente internos. [Saiba mais](schemas.md#reserved-namespaces).
+   Por convenção, nomeie o schema de extensão como o schema incorporado e use um namespace personalizado.  Observe que alguns namespaces são somente internos. [Saiba mais](schemas.md#reserved-namespaces)
 
    ![](assets/extend-schema-validate.png)
 
