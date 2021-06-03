@@ -5,7 +5,7 @@ description: Criar operadores de Gerenciamento de ofertas
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 43%
@@ -31,7 +31,7 @@ Por padrão, o Campaign vem com um ambiente **[!UICONTROL Design]** e um ambient
 
 ![](assets/offer_environments_overview_002.png)
 
-Os gerentes de delivery só podem visualizar o ambiente **[!UICONTROL Live]** e aproveitar as ofertas para entregá-las. Os gerentes de oferta podem visualizar e usar o ambiente **[!UICONTROL Design]** e visualizar o ambiente **[!UICONTROL Live]**. [Saiba mais](interaction-operators.md).
+Os gerentes de delivery só podem visualizar o ambiente **[!UICONTROL Live]** e aproveitar as ofertas para entregá-las. Os gerentes de oferta podem visualizar e usar o ambiente **[!UICONTROL Design]** e visualizar o ambiente **[!UICONTROL Live]**. [Saiba mais](interaction-operators.md)
 
 ## Criar um ambiente de oferta {#creating-an-offer-environment}
 
