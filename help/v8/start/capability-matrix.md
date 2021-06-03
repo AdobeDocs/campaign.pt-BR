@@ -6,9 +6,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 38ea3e82fca6299b067d6843424d4ccb92213d00
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '805'
 ht-degree: 45%
 
 ---
@@ -35,7 +35,7 @@ Como usuário [!DNL Campaign Classic], observe que a maioria dos recursos [!DNL 
 
 É uma mudança fundamental na arquitetura de software. Agora os dados são remotos e o Campaign federa todos os dados, incluindo Perfis. [!DNL Campaign]Os processos do agora escalam de ponta a ponta, do direcionamento à execução da mensagem: a assimilação de dados, a segmentação, o direcionamento, as consultas e as entregas normalmente serão executados em minutos. Esta nova versão resolve todo o desafio do dimensionamento, mantendo o mesmo nível de flexibilidade e extensibilidade. O número de perfis é quase ilimitado e a retenção de dados pode ser estendida.
 
-O armazenamento na nuvem é executado em **[!DNL Snowflake]**: uma nova **conta externa** integrada garante a conectividade com o banco de dados da nuvem. Ele é configurado pelo Adobe e não deve ser modificado. [Saiba mais](../config/external-accounts.md).
+O armazenamento na nuvem é executado em **[!DNL Snowflake]**: uma nova **conta externa** integrada garante a conectividade com o banco de dados da nuvem. Ele é configurado pelo Adobe e não deve ser modificado. [Saiba mais](../config/external-accounts.md)
 
 Qualquer esquema/tabela interna que precise ser movido ou replicado no banco de dados da nuvem vem com uma extensão de esquema incorporada no namespace **xxl.** Essas extensões contêm qualquer modificação necessária para mover esquemas internos do banco de dados local [!DNL Campaign] para o banco de dados do [!DNL Snowflake] Cloud e adaptar sua estrutura de acordo: novo UUID, links atualizados, etc.
 
@@ -66,8 +66,7 @@ Observe que essa ID é baseada em sequência e não sequencial. A chave primári
 
 No Campaign Classic v7 e em versões anteriores, a unicidade de uma chave em um schema (ou seja, tabela) é manipulada no nível do mecanismo de banco de dados. Em geral, os mecanismos do Banco de Dados Clássico como PostgreSQL, Oracle ou SQL Server incluem um mecanismo nativo para impedir a inserção de linhas duplicadas com base em uma coluna ou um conjunto de colunas por meio de chaves primárias e/ou índices exclusivos. A ID duplicada não existe nessas versões quando o índice adequado e as chaves primárias são definidos no nível do banco de dados.
 
-O Adobe campaign v8 vem com o Snowflake como o banco de dados principal. Como aumenta drasticamente a escala de queries, a arquitetura distribuída do banco de dados do Snowflake não fornece esses mecanismos para gerenciar e impor a unicidade de uma chave dentro de uma tabela. Como consequência, com o Adobe Campaign v8, nada impede a assimilação de chaves duplicadas em uma tabela. Os usuários finais agora são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign. [Saiba mais](../dev/keys.md).
-
+O Adobe campaign v8 vem com o Snowflake como o banco de dados principal. Como aumenta drasticamente a escala de queries, a arquitetura distribuída do banco de dados do Snowflake não fornece esses mecanismos para gerenciar e impor a unicidade de uma chave dentro de uma tabela. Como consequência, com o Adobe Campaign v8, nada impede a assimilação de chaves duplicadas em uma tabela. Os usuários finais agora são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign. [Saiba mais](../dev/keys.md)
 
 ### Manutenção simplificada
 
@@ -84,6 +83,7 @@ Observe que alguns recursos não estão disponíveis nesta primeira versão, com
 * Gestor de Resposta
 * Modelos de implantação híbridos/no local
 * Mensagens LINE
+* Painel de controle do Campaign
 
 >[!CAUTION]
 >
