@@ -5,10 +5,10 @@ description: Introdução a mensagens transacionais
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
+source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 73%
+source-wordcount: '1477'
+ht-degree: 72%
 
 ---
 
@@ -219,8 +219,8 @@ Depois que um template de mensagem é publicado nas instâncias de execução, v
 
 Para desfazer a publicação de um template de mensagem transacional, siga as etapas abaixo.
 
-1. Na instância de controle, acesse a pasta **[!UICONTROL Message Center > Transactional message templates]** da árvore.
-1. Selecione o template do qual você deseja desfazer a publicação.
+1. Na instância de controle, navegue até a pasta **[!UICONTROL Message Center > Transactional message templates]**.
+1. Selecione o template para desfazer a publicação.
 1. Clique em **[!UICONTROL Unpublish]**.
 1. Clique em **[!UICONTROL Start]**.
 
