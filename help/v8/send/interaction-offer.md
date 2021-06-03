@@ -5,7 +5,7 @@ description: Saiba como criar uma oferta
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 67%
@@ -50,7 +50,7 @@ Para fazer isso, clique no link **[!UICONTROL Edit query]** e selecione o filtro
 
 ![](assets/offer_eligibility_create_003.png)
 
-Se os filtros predefinidos já tiverem sido criados, é possível selecioná-los na lista de filtros de usuário. [Saiba mais](interaction-predefined-filters.md).
+Se os filtros predefinidos já tiverem sido criados, é possível selecioná-los na lista de filtros de usuário. [Saiba mais](interaction-predefined-filters.md)
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -64,7 +64,7 @@ Por exemplo, uma oferta pode ter um peso de A para contatos com idade entre 18 e
 
 >[!NOTE]
 >
->O peso atribuído pode ser modificado temporariamente de acordo com os parâmetros da categoria à qual a oferta pertence. [Saiba mais](interaction-offer-catalog.md#creating-offer-categories).
+>O peso atribuído pode ser modificado temporariamente de acordo com os parâmetros da categoria à qual a oferta pertence. [Saiba mais](interaction-offer-catalog.md#creating-offer-categories)
 
 Para criar um peso em uma oferta, aplique as seguintes etapas:
 
@@ -140,7 +140,7 @@ Use a guia **[!UICONTROL Content]** para definir o conteúdo da oferta.
 
    ![](assets/offer_content_create_002.png)
 
-   Para localizar os campos obrigatórios conforme foram definidos durante a configuração do espaço de oferta, clique no link **[!UICONTROL Content definitions]** para exibir a lista. [Saiba mais](interaction-offer-spaces.md).
+   Para localizar os campos obrigatórios conforme foram definidos durante a configuração do espaço de oferta, clique no link **[!UICONTROL Content definitions]** para exibir a lista. [Saiba mais](interaction-offer-spaces.md)
 
    ![](assets/offer_content_create_003.png)
 
