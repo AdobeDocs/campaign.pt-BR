@@ -6,9 +6,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '626'
 ht-degree: 8%
 
 ---
@@ -68,7 +68,7 @@ Nesta arquitetura específica, a célula de execução é separada da instância
 
 ![](assets/messagecenter_diagram.png)
 
-[!DNL :arrow_upper_right:] A arquitetura do Centro de mensagens é descrita na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
+[!DNL :arrow_upper_right:] A arquitetura do Centro de mensagens é descrita na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture.html)
 
 ### Autenticação
 
@@ -81,4 +81,4 @@ Em seguida, com o sessionToken fornecido pela instância de execução em respos
 * Várias instâncias de execução
 Em uma arquitetura de execução de várias células com várias instâncias de execução atrás de um balanceador de carga, o método logon chamado pelo aplicativo externo está passando pelo balanceador de carga: por esse motivo, não é possível usar uma autenticação baseada em token. É necessária uma autenticação baseada em usuário/senha.
 
-[!DNL :arrow_upper_right:] Saiba mais sobre eventos de mensagens transacionais na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
+[!DNL :arrow_upper_right:] Saiba mais sobre eventos de mensagens transacionais na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)
