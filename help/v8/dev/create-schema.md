@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: Criar um novo schema no Campaign
 description: Saiba como criar um novo schema no Campaign
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ Para editar, criar e configurar os esquemas, clique no nó **[!UICONTROL Adminis
 
 >[!NOTE]
 >
->Os esquemas de dados incorporados só podem ser excluídos por um administrador do console do Adobe Campaign Classic.
+>Os esquemas de dados incorporados só podem ser excluídos por um administrador do console do Adobe Campaign.
 
 ![](assets/schema_navtree.png)
 
@@ -60,7 +60,9 @@ Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura
 
    ![](assets/create_new_content.png)
 
-1. Defina as configurações da tabela de contrato:
+1. Defina as configurações da tabela de contrato.
+
+   Como prática recomendada, crie a tabela no banco de dados do Cloud adicionando o atributo `dataSource="nms:extAccount:ffda"` . Esse atributo é adicionado por padrão ao criar uma nova tabela.
 
    ```
    <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
