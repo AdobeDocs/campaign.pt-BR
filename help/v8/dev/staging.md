@@ -5,7 +5,7 @@ description: Mecanismo de preparo da API do Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 2%
@@ -20,7 +20,7 @@ O recurso de preparo da campanha é ativado por padrão em alguns schemas incorp
 
 * A estrutura do schema de dados é duplicada na tabela de preparo local
 * Novas APIs dedicadas à assimilação de dados fluem diretamente na tabela de preparo local. [Saiba mais](new-apis.md)
-* Um workflow agendado dispara a cada hora e sincroniza dados de volta ao banco de dados da nuvem. [Saiba mais](../config/replication.md).
+* Um workflow agendado dispara a cada hora e sincroniza dados de volta ao banco de dados da nuvem. [Saiba mais](../config/replication.md)
 
 Alguns esquemas internos são Preparados por padrão, como nmsSubscriptionRcp, nmsAppSubscriptionRcp, nmsRecipient.
 
