@@ -5,7 +5,7 @@ description: Novas APIs do Campaign v8
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Novas APIs do Campaign{#gs-new-api}
 
-O Campaign v8 vem com duas novas APIs para gerenciar dados entre o banco de dados local do Campaign e o banco de dados do Cloud. Os pré-requisitos para usá-los é ativar o mecanismo de preparo no schema. [Saiba mais](staging.md).
+O Campaign v8 vem com duas novas APIs para gerenciar dados entre o banco de dados local do Campaign e o banco de dados do Cloud. Os pré-requisitos para usá-los é ativar o mecanismo de preparo no schema. [Saiba mais](staging.md)
 
 * API de assimilação: **xtk.session.ingest**
 
