@@ -5,21 +5,21 @@ description: Mecanismo de preparo da API do Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 3%
+source-wordcount: '312'
+ht-degree: 2%
 
 ---
 
 # Mecanismo de preparo da API do Campaign
 
-Com o banco de dados da Campaign Cloud, as chamadas unitárias de explosão não são recomendadas devido ao desempenho (latência e simultaneidade). A operação em lote é sempre preferida. Para garantir desempenho ideal das APIs, o Campaign continua lidando com chamadas de API no nível do banco de dados local.
+Com o banco de dados do Campaign Cloud, chamadas unitárias de explosão não são recomendadas em relação a desempenhos (latência e simultaneidade). A operação de lote é sempre preferida. Para melhorar o desempenho, as APIs de assimilação são redirecionadas para o banco de dados local.
 
-O mecanismo de preparo da campanha está disponível para tabelas incorporadas e personalizadas e traz as seguintes vantagens:
+O recurso de preparo da campanha é ativado por padrão em alguns schemas incorporados. Também podemos ativá-lo em qualquer schema personalizado. Mecanismo de armazenamento temporário em poucas palavras:
 
-* A estrutura do schema de dados é replicada na tabela de preparo local
-* Novas APIs para assimilação fluem diretamente na tabela de preparo. [Saiba mais](new-apis.md)
+* A estrutura do schema de dados é duplicada na tabela de preparo local
+* Novas APIs dedicadas à assimilação de dados fluem diretamente na tabela de preparo local. [Saiba mais](new-apis.md)
 * Um workflow agendado dispara a cada hora e sincroniza dados de volta ao banco de dados da nuvem. [Saiba mais](../config/replication.md).
 
 Alguns esquemas internos são Preparados por padrão, como nmsSubscriptionRcp, nmsAppSubscriptionRcp, nmsRecipient.
@@ -28,7 +28,13 @@ As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se bene
 
 >[!CAUTION]
 >
->Com esse novo mecanismo, a sincronização de dados para assinaturas, unsubscriptions ou registro móvel agora é **assíncrona**.
+>* Com esse novo mecanismo, a sincronização de dados para exclusão de canal, assinaturas, unsubscriptions ou registro móvel agora é **assíncrona**.
+   >
+   >
+* O armazenamento temporário só se aplica a esquemas armazenados no banco de dados da nuvem. Não ative o armazenamento temporário em schemas replicados. Não ative o armazenamento temporário em esquemas locais. Não ativar Preparo em um esquema Preparado
+
+>
+
 
 
 ## Etapas de implementação{#implement-staging}
