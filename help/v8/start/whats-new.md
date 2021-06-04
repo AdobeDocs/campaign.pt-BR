@@ -6,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 62%
+ht-degree: 53%
 
 ---
 
@@ -44,7 +44,7 @@ O Campaign v8 traz uma escala completa em qualquer etapa do processo, do direcio
 
 ## Simplificação e aumento de desempenho
 
-O Campaign v8 traz o conceito de **Federated Data Access Completo** (FDA): todos os dados agora são remotos no banco de dados da nuvem.
+O Campaign v8 traz o conceito de **Acesso a Dados Federados Completo** (FFDA): todos os dados agora são remotos no banco de dados da nuvem.
 
 Com essa nova arquitetura, o Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar.
 
@@ -54,7 +54,7 @@ A tecnologia de banco de dados da nuvem não requer manutenção específica par
 
 ## ecossistema integrado
 
-É possível integrar o Campaign a um conjunto de soluções eficientes da Adobe, como: Adobe Analytics, Workfront, Journey Orchestration, CDP em tempo real e muito mais.
+Você pode integrar o Campaign a um conjunto de soluções Adobe potentes, como: Adobe Analytics, Adobe Journey Orchestration, CDP em tempo real e muito mais.
 
 Também é possível configurar a otimização preditiva do tempo de envio e a pontuação preditiva do envolvimento com a IA de jornada, além de aumentar as taxas de abertura, cliques e receitas.
 
