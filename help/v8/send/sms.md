@@ -5,9 +5,9 @@ description: Introdução ao SMS no Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
+source-git-commit: 04f9d80e26fab372a1819590f8e79298c7a69ab5
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '583'
 ht-degree: 16%
 
 ---
@@ -30,7 +30,7 @@ Para enviar para um celular, você precisa:
 
 * Um template do delivery no qual essa conta externa é referenciada.
 
-!DNL :seta_superior_direita:] Saiba como configurar um canal SMS em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#sending-messages)
+[!DNL :arrow_upper_right:]  Saiba como configurar um canal SMS na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#sending-messages)
 
 Antes de começar a enviar SMS:
 
