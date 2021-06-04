@@ -6,7 +6,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
+source-git-commit: 9ecd0af7a6e8e173a89106c84a78de8b2311fef7
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 71%
@@ -40,14 +40,26 @@ O Adobe Campaign v8 vem com os seguintes canais de entrega:
 Depois que a mensagem for criada e o conteúdo testado, você poderá escolher como deseja enviá-la. O Campaign oferece um conjunto de recursos para:
 
 * Enviar mensagens manualmente para o target principal
+
+   ![](assets/send-email.png)
+
    [!DNL :arrow_upper_right:] [Saiba como enviar mensagens](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=pt-BR)
 * Enviar mensagens associadas a uma [campanha de marketing](campaigns.md)
+
+   ![](assets/deliveries-in-a-campaign.png)
+
    [!DNL :arrow_upper_right:] [Saiba como enviar mensagens no contexto de uma campanha](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=pt-BR).
 * Enviar mensagens por meio de um [workflow](../config/workflows.md)
+
+   ![](assets/send-in-a-wf.png)
+
    [!DNL :arrow_upper_right:] [Saiba como automatizar deliveries de email](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=pt-BR)
 * [Acionar ](../send/transactional.md) mensagens de um evento
    [!DNL :arrow_upper_right:] [Caso de uso: saiba como enviar um email transacional com um anexo](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=pt-BR)
 * Agendar suas mensagens
+
+   ![](assets/schedule-send.png)
+
    [!DNL :arrow_upper_right:] [Caso de uso: saiba como agendar e enviar email de aniversário](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=pt-BR)
 
 
