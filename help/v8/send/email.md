@@ -5,9 +5,9 @@ description: Introdução a emails no Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: dc99c00f68e53a308f8c869f07aa93baed3a5129
+source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '605'
 ht-degree: 15%
 
 ---
