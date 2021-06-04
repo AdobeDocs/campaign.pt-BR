@@ -6,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
+source-git-commit: 6a22bdd563bb0be26df12ce8d2b6da266d16f2e3
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 32%
+source-wordcount: '1097'
+ht-degree: 31%
 
 ---
 
@@ -157,9 +157,9 @@ Para obter mais informações, consulte a página [Product profiles for Adobe An
 
    ![](assets/analytics_connnector_12.png)
 
-1. Se necessário, você pode adicionar ou remover segmentos da guia **[!UICONTROL Update Segments]**.
-
-   ![](assets/analytics_connnector_12a.png)
+   >[!NOTE]
+   >
+   > Não é possível adicionar ou remover segmentos nesta versão do Campaign v8.
 
 1. Em **[!UICONTROL External account]**, clique no link **[!UICONTROL Enrich the formula...]** para alterar a fórmula de cálculo da URL para especificar as informações de integração da ferramenta Web Analytics (IDs da campanha) e os domínios dos sites cuja atividade deve ser rastreada.
 
