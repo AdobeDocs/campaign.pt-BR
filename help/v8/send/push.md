@@ -5,7 +5,7 @@ description: Introdução à notificação por push no Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: c6f1cfdec3d05a81f8885cc73b370723024f858f
+source-git-commit: b0fcdefb638a2424e9464cf520724cc492fabc55
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 44%
@@ -97,19 +97,19 @@ Para criar um novo delivery, navegue até a guia **[!UICONTROL Campaigns]** , cl
 
 1. Selecione o modelo de delivery **[!UICONTROL Deliver on Android (android)]**.
 
-   ![](assets/push-template-android.png)
+   <!--![](assets/push-template-android.png)-->
 
 1. Para definir o target da notificação, clique no link **[!UICONTROL To]** e, em seguida, clique em **[!UICONTROL Add]**.
 
-   ![](assets/nmac_delivery_android_2.png)
+   <!--![](assets/nmac_delivery_android_2.png)-->
 
 1. Selecione **[!UICONTROL Subscribers of an Android mobile application]**, escolha o serviço relevante para seu aplicativo móvel (Neotrips, neste caso) e selecione a versão Android do aplicativo.
 
-   ![](assets/push-android-select-target.png)
+   <!--![](assets/push-android-select-target.png)-->
 
 1. Em seguida, insira o conteúdo da notificação.
 
-   ![](assets/push-android-content.png)
+   <!--![](assets/push-android-content.png)-->
 
 1. Clique no ícone **[!UICONTROL Insert emoticon]** para inserir emoticons à notificação via push.
 
@@ -117,7 +117,7 @@ Para criar um novo delivery, navegue até a guia **[!UICONTROL Campaigns]** , cl
 
 1. Quando a notificação estiver configurada, clique na guia **[!UICONTROL Preview]** para visualizar a notificação.
 
-   ![](assets/push-android-preview.png)
+   <!--![](assets/push-android-preview.png)-->
 
 ## Teste, envie e monitore suas notificações por push
 
