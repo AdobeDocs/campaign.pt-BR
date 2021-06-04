@@ -5,10 +5,10 @@ description: Saiba como gerenciar assinaturas e unsubscriptions no Campaign v8
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: f69d318b4ea767c44f8c19bf0cf45fb1b7001b11
+source-git-commit: 4cdf1b30584088d1c5de301d89c6d09bf5429ca1
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 26%
+source-wordcount: '522'
+ht-degree: 25%
 
 ---
 
@@ -26,7 +26,13 @@ Para assinar (aceitar) um perfil para um serviço, as opções disponíveis são
 
    [!DNL :arrow_upper_right:] Saiba mais na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab)
 
-* Subscrever automaticamente um conjunto de recipients ao serviço. A lista de recipients pode vir de uma operação de filtragem, grupo, pasta, importação ou seleção manual direta. Para inscrever esses recipients, selecione os perfis e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Subscribe selection to a service...]**, selecione o serviço desejado e inicie a operação.
+* Subscrever automaticamente um conjunto de recipients ao serviço. A lista de recipients pode vir de uma operação de filtragem, grupo, pasta, importação ou seleção manual direta. Para inscrever esses recipients, selecione os perfis e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Subscribe selection to a service...]**.
+
+   ![](assets/subscribe-selection.png)
+
+   Selecione o serviço desejado e inicie a operação.
+
+   ![](assets/subscribe-confirm.png)
 
    [!DNL :arrow_upper_right:] Saiba mais na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab)
 
@@ -37,13 +43,20 @@ Para assinar (aceitar) um perfil para um serviço, as opções disponíveis são
 
 * Usar um formulário da Web para que os recipients possam subscrever-se a um serviço.
 
+   ![](assets/opt-in-webapp.png)
+
+   O Campaign vem com um formulário da Web padrão para gerenciar a aceitação. Você pode personalizá-lo e mapear os dados do perfil.
+
+   ![](assets/web-app.png)
+
    [!DNL :arrow_upper_right:] Saiba mais na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
 
 
 * Crie um workflow de direcionamento e use uma atividade **[!UICONTROL Subscription service]** .
 
-   [!DNL :arrow_upper_right:] Saiba mais na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=en#example--subscribe-a-list-of-recipients-to-a-newsletter)
+   ![](assets/wf-subscription.png)
 
+   [!DNL :arrow_upper_right:] Saiba mais na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=en#example--subscribe-a-list-of-recipients-to-a-newsletter)
 
 Para cancelar a assinatura (recusa) de um perfil de um serviço, as opções disponíveis são:
 
@@ -56,7 +69,7 @@ Para cancelar a assinatura (recusa) de um perfil de um serviço, as opções dis
 **Cancelamento automático de subscrição**
 
 * Especifique um limite de duração do serviço de informação: os recipients serão cancelados automaticamente quando o período de validade expirar. Este período é especificado na guia Edit das propriedades do serviço. Ele é expresso em dias.
-* Configurar um fluxo de trabalho de cancelamento de subscrição de uma população
+* Configure um workflow de unsubscription para uma população.
 
 [!DNL :arrow_upper_right:] Saiba mais na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=en#unsubscribing-a-recipient-from-a-service)
 
