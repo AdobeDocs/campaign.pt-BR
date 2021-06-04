@@ -6,9 +6,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
+source-git-commit: e6086620909277eaaf5966335df9b71c6830e726
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '608'
 ht-degree: 8%
 
 ---
@@ -67,8 +67,6 @@ Nesta arquitetura específica, a célula de execução é separada da instância
 >A instância de controle e a instância de execução devem ser instaladas em máquinas diferentes. Elas não podem compartilhar a mesma instância do Campaign.
 
 ![](assets/messagecenter_diagram.png)
-
-[!DNL :arrow_upper_right:] A arquitetura do Centro de mensagens é descrita na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture.html)
 
 ### Autenticação
 
