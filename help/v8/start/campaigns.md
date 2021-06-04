@@ -6,7 +6,7 @@ feature: Públicos
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 032bee3b58948b558efe50796efa789a046ff5e4
+source-git-commit: efb236fe47653ddd45f8a5a08e0595b9f6287b7d
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 85%
@@ -70,11 +70,15 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    Você pode criar o público em um fluxo de trabalho ou selecionar um grupo existente, como uma lista de recipients, assinantes de um boletim informativo, recipients de uma entrega anterior ou qualquer condição de filtragem.
 
+   ![](assets/campaign-wf.png)
+
    [!DNL :arrow_upper_right:] Saiba como definir o público-alvo de suas mensagens na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=pt-BR#orchestrating-campaigns)
 
 1. **Criar entregas**
 
    Selecione os canais, defina o conteúdo da mensagem e inicie as entregas.
+
+   ![](assets/campaign-dashboard.png)
 
    [!DNL :arrow_upper_right:] Saiba como criar e iniciar deliveries de campanha de marketing na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=pt-BR#orchestrating-campaigns)
 
