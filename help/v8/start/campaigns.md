@@ -6,7 +6,7 @@ feature: Públicos
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 032bee3b58948b558efe50796efa789a046ff5e4
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 85%
@@ -22,6 +22,8 @@ As campanhas incluem ações (deliveries) e processos (importação ou extraçã
 ## Organização de campanha entre canais
 
 O Adobe Campaign permite criar e organizar campanhas direcionadas e personalizadas em vários canais: email, correspondência direta, SMS e notificação por push. Uma única interface fornece todas as funções necessárias para agendar, organizar, configurar, personalizar, automatizar, executar e medir todas as suas campanhas e comunicações.
+
+![](assets/campaign-tab.png)
 
 ### Conceitos principais
 
@@ -42,6 +44,8 @@ Antes de começar a implementar campanhas de marketing, você precisa conhecer o
 ## Área de trabalho da campanha de marketing
 
 O Adobe Campaign permite criar, configurar, executar e analisar todas as campanhas de marketing de um centro de controle unificado.
+
+![](assets/calendar.png)
 
 [!DNL :arrow_upper_right:] Saiba como acessar e implementar campanhas de marketing na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=pt-BR#orchestrating-campaigns)
 
