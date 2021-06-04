@@ -3,10 +3,10 @@ keywords: Campaign Classic;página inicial;tópicos populares
 description: Central de ajuda do Campaign v8
 title: Documentação do produto Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 48aa738c81a811ccf314ca9cc710c34a685060c5
+source-git-commit: f266172e6b0e14aedd0029025260c42977cf467f
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 74%
+source-wordcount: '96'
+ht-degree: 62%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 74%
 
 * **[Diretrizes de implementação](start/implement.md)** — saiba como iniciar a implementação
 
-* **[Da v7 para v8](start/capability-matrix.md)** — transição do Campaign Classic v7 para v8? Conheça as principais diferenças
+* **[Da v7 para v8](start/capability-matrix.md)**  - Transição do Campaign Classic v7 para o Campaign v8? Conheça as principais diferenças
 
 ## Introdução
 
