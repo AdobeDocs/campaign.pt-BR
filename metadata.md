@@ -7,11 +7,11 @@ feature-set: Campaign
 type: Documentation
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/campaign.pt-BR
-hide: true
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+index: true
+source-git-commit: f11b26d1145e0762484bbdd63cfcdbce48941de6
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
