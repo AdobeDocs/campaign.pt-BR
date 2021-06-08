@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
 title: Introdução ao Campaign v8
-description: Conheça os principais recursos, a interface do usuário e as diretrizes globais
+description: Novo no Campaign? Saiba como começar
 feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: bf2c44adc560d2be700a27b02ab35f6630192d00
+source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 88%
+source-wordcount: '894'
+ht-degree: 86%
 
 ---
 
@@ -119,3 +119,8 @@ O idioma é selecionado durante o processo de instalação.
 
 O idioma afetou datas e formatos de hora. Para obter mais informações, consulte a documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#date-and-time).
 
+**Consulte também**
+
+* [Matriz de compatibilidade do Campaign v8](compatibility-matrix.md)
+* [Conectar-se ao Campaign](connect.md)
+* [Perguntas frequentes](campaign-faq.md)
