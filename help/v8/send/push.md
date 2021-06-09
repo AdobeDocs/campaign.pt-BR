@@ -5,10 +5,10 @@ description: Introdução à notificação por push no Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 42a83fefb9c4ae3cea906c5dce8ecf725909b4eb
+source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 33%
+source-wordcount: '780'
+ht-degree: 34%
 
 ---
 
@@ -33,7 +33,7 @@ O SDK do Campaign facilita a integração do aplicativo móvel na plataforma Ado
 
 Versões compatíveis do SDK são listadas em [Matriz de compatibilidade do Campaign](../start/compatibility-matrix.md#MobileSDK).
 
-[!DNL :arrow_upper_right:] Saiba como integrar o SDK do Campaign ao seu aplicativo na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en#loading-campaign-sdk)
+[!DNL :arrow_upper_right:] Saiba como integrar SDKs do Campaign Android e iOS ao seu aplicativo nesta  [seção](../config/push-config.md)
 
 ### Configurar a extensão do Campaign no Launch
 
@@ -45,7 +45,7 @@ Versões compatíveis do SDK são listadas em [Matriz de compatibilidade do Camp
 
 Você deve definir as configurações dos aplicativos iOS e Android no Adobe Campaign.
 
-[!DNL :arrow_upper_right:] As diretrizes de configuração para iOS são detalhadas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages)
+[!DNL :arrow_upper_right:] As diretrizes de configuração para iOS são detalhadas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=pt-BR#sending-messages)
 
 [!DNL :arrow_upper_right:] As diretrizes de configuração para Android estão detalhadas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages)
 
