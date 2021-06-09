@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
+source-git-commit: f1a854c6aa91755add4dfe422879ffd12e8d297b
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 43%
@@ -19,7 +19,7 @@ ht-degree: 43%
 
 Use SDKs do Campaign para iOS e Android para facilitar a integração de seu aplicativo móvel na plataforma Adobe Campaign.
 
-As versões compatíveis com Android e iOS e as versões compatíveis com SDKs do Campaign para o Campaign v8 estão listadas na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md#MobileSDK) .
+As versões compatíveis com Android e iOS e as versões compatíveis com SDKs do Campaign para o Campaign v8 estão listadas na [Matriz de compatibilidade](../start/compatibility-matrix.md#MobileSDK) .
 
 >[!NOTE]
 >
@@ -422,6 +422,7 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
 >
 > Um gerenciamento semelhante precisa ser feito se o usuário estiver usando a opção `click_action` dentro da atividade de target.
 
+
 1. **Receber rastreamento de mensagens de dados**
 
    Para mensagens de dados, o rastreamento é recebido no nível de chamada `onMessageReceived`. A função &#39;notifyReceive&#39; precisa ser chamada.
@@ -552,8 +553,6 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
        }
    }
    ```
-
-
 
 
 ## Integrar SDK do iOS
