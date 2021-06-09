@@ -5,9 +5,9 @@ description: Configurações de mensagens transacionais de campanha
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '327'
 ht-degree: 22%
 
 ---
@@ -28,7 +28,7 @@ Para criar novos usuários para as instâncias de execução do Centro de mensag
 
 Todas as extensões de schema feitas nos schemas usados pelos **workflows técnicos do Centro de Mensagens** em instâncias de controle ou de execução precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais do Adobe Campaign.
 
-[!DNL :arrow_upper_right:] Saiba mais sobre os workflows técnicos do Centro de mensagens na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows)
+[!DNL :arrow_upper_right:] Saiba mais sobre os workflows técnicos do Centro de mensagens na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)
 
 ## Enviar notificações transacionais por push
 
