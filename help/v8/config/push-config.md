@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: eec769a09d59034dde59983bd0a53a4ac4fddde5
+source-git-commit: 9f05209e47f35c91720f68d56593812115726817
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 32%
@@ -644,7 +644,6 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
 
    * **ErrorReason** fornece mais informações sobre os erros que ocorreram. Para obter mais informações sobre erros disponíveis e suas descrições, consulte a tabela abaixo.
 
-
 | Status | Descrição | ErrorReason |
 | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
 | ACCRegisterDeviceStatusSuccess | Registration Succeeded | EMPTY |
@@ -653,7 +652,6 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
 | ACCRegisterDeviceStatusFailureConnectionIssue | Problema de conexão com o ACC | Mais informações (na linguagem atual do SO) |
 | ACCRegisterDeviceStatusFailureUnknownUUID | O UUID fornecido (chave de integração) é desconhecido. | EMPTY |
 | ACCRegisterDeviceStatusFailureUnexpectedError | Erro inesperado retornado ao servidor ACC. | A mensagem de erro retornou para o ACC. |
-
 
 {style=&quot;table-layout:auto&quot;}
 
