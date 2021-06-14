@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
+source-git-commit: 35fcedd8e4d44bb6c5a97b2a48ff55aa2632947d
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 45%
+source-wordcount: '1284'
+ht-degree: 43%
 
 ---
 
@@ -644,56 +644,15 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
 
    * **ErrorReason** fornece mais informações sobre os erros que ocorreram. Para obter mais informações sobre erros disponíveis e suas descrições, consulte a tabela abaixo.
 
+   | Status | Descrição | ErrorReason |
+   | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+   | ACCRegisterDeviceStatusSuccess | Registration Succeeded | EMPTY |
+   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | O nome de host do servidor de marketing ACC está vazio ou não está definido. | EMPTY |
+   | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | A chave de integração está vazia ou não está definida. | EMPTY |
+   | ACCRegisterDeviceStatusFailureConnectionIssue | Problema de conexão com o ACC | Mais informações (na linguagem atual do SO) |
+   | ACCRegisterDeviceStatusFailureUnknownUUID | O UUID fornecido (chave de integração) é desconhecido. | EMPTY |
+   | ACCRegisterDeviceStatusFailureUnexpectedError | Erro inesperado retornado ao servidor ACC. | A mensagem de erro retornou para o ACC. |
 
-      | Status | Descrição | ErrorReason |
-      | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
-      | ACCRegisterDeviceStatusSuccess | Registration Succeeded | EMPTY |
-      | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | O nome de host do servidor de marketing ACC está vazio ou não está definido. | EMPTY |
-      | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | A chave de integração está vazia ou não está definida. | EMPTY |
-      | ACCRegisterDeviceStatusFailureConnectionIssue | Problema de conexão com o ACC | Mais informações (na linguagem atual do SO) |
-      | ACCRegisterDeviceStatusFailureUnknownUUID | O UUID fornecido (chave de integração) é desconhecido. | EMPTY |
-      | ACCRegisterDeviceStatusFailureUnexpectedError | Erro inesperado retornado ao servidor ACC. | A mensagem de erro retornou para o ACC. |
-   <table> 
-    <thead>
-    <tr>
-    <th> Status<br /> </th>
-    <th> Descrição<br /> </th>
-    <th> ErrorReason<br /> </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td> ACCRegisterDeviceStatusSuccess <br /> </td>
-    <td> Registration Succeeded<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
-    <td> O nome de host do servidor de marketing ACC está vazio ou não está definido.<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureIntegrationKeyEmpty <br /> </td>
-    <td> A chave de integração está vazia ou não está definida.<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureConnectionIssue<br /> </td>
-    <td> Problema de conexão com o ACC<br /> </td>
-    <td> Mais informações (na linguagem atual do SO)<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureUnknownUUID<br /> </td>
-    <td> O UUID fornecido (chave de integração) é desconhecido.<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureUnexpectedError<br /> </td>
-    <td> Erro inesperado retornado ao servidor ACC.<br /> </td>
-    <td> A mensagem de erro retornou para o ACC.<br /> </td>
-    </tr>
-    </tbody>
-    </table>
 
    A definição do protocolo **Neolane_SDKDelegate** e do delegado **registerDeviceStatus** e a seguinte:
 
@@ -830,6 +789,7 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
       }
       @end
       ```
+
 
 
 ## Variáveis {#variables}
