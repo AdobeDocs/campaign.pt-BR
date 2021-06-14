@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 170a80942aff9951859646942657938e206959fe
+source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 43%
+source-wordcount: '1346'
+ht-degree: 45%
 
 ---
 
@@ -419,9 +419,9 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    }
    ```
 
->[!NOTE]
->
-> Um gerenciamento semelhante precisa ser feito se o usuário estiver usando a opção `click_action` dentro da atividade de target.
+   >[!NOTE]
+   >
+   > Um gerenciamento semelhante precisa ser feito se o usuário estiver usando a opção `click_action` dentro da atividade de target.
 
 
 1. **Receber rastreamento de mensagens de dados**
@@ -644,6 +644,15 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
 
    * **ErrorReason** fornece mais informações sobre os erros que ocorreram. Para obter mais informações sobre erros disponíveis e suas descrições, consulte a tabela abaixo.
 
+
+      | Status | Descrição | ErrorReason |
+      | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+      | ACCRegisterDeviceStatusSuccess | Registration Succeeded | EMPTY |
+      | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | O nome de host do servidor de marketing ACC está vazio ou não está definido. | EMPTY |
+      | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | A chave de integração está vazia ou não está definida. | EMPTY |
+      | ACCRegisterDeviceStatusFailureConnectionIssue | Problema de conexão com o ACC | Mais informações (na linguagem atual do SO) |
+      | ACCRegisterDeviceStatusFailureUnknownUUID | O UUID fornecido (chave de integração) é desconhecido. | EMPTY |
+      | ACCRegisterDeviceStatusFailureUnexpectedError | Erro inesperado retornado ao servidor ACC. | A mensagem de erro retornou para o ACC. |
    <table> 
     <thead>
     <tr>
