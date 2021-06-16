@@ -5,10 +5,10 @@ description: Introdução à notificação por push no Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
+source-git-commit: aa3f2f17981ad10221771b3a22c76f7a445b94c9
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 34%
+source-wordcount: '765'
+ht-degree: 35%
 
 ---
 
@@ -33,7 +33,10 @@ O SDK do Campaign facilita a integração do aplicativo móvel na plataforma Ado
 
 Versões compatíveis do SDK são listadas em [Matriz de compatibilidade do Campaign](../start/compatibility-matrix.md#MobileSDK).
 
-[!DNL :arrow_upper_right:] Saiba como integrar SDKs do Campaign Android e iOS ao seu aplicativo nesta  [seção](../config/push-config.md)
+<!--
+[!DNL :arrow_upper_right:] Learn how to integrate Campaign Android and iOS SDKs with your app in [this section](../config/push-config.md)
+-->
+
 
 ### Configurar a extensão do Campaign no Launch
 
