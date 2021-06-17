@@ -6,7 +6,7 @@ exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74
 source-git-commit: 58632224858391f673dfdc87b49417d65b2f9b09
 workflow-type: tm+mt
 source-wordcount: '93'
-ht-degree: 76%
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 76%
 
 ## Novidades
 
-* **[O que é o [!DNL Adobe Campaign]](start/get-started.md)**  - Principais recursos e casos de uso
+* **[O que é o [!DNL Adobe Campaign]](start/get-started.md)** - Principais recursos e casos de uso
 
 * **[Novidades na v8](start/whats-new.md)** — descubra os recursos do Campaign v8
 
