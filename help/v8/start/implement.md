@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Nesta seção, você aprenderá a ajustar o Adobe Campaign às necessidades da s
 
 >[!CAUTION]
 >
->Com **Campaign Managed Cloud Services**, o ambiente e a configuração inicial foram definidos pelo Adobe, de acordo com os termos do contrato de licença. Você não tem permissão para modificar pacotes incorporados instalados, esquemas ou relatórios incorporados.
+>Com o **Campaign Managed Cloud Services**, o ambiente e a configuração inicial foram definidos pela Adobe, de acordo com os termos do contrato de licença. Você não tem permissão para modificar pacotes incorporados instalados, esquemas ou relatórios incorporados.
 >
->Se precisar usar um complemento do Campaign ou um recurso específico que não foi fornecido para você, entre em contato com o **Atendimento ao cliente do Adobe**.
+>Se precisar usar um complemento do Campaign ou um recurso específico que não foi fornecido para você, entre em contato com o **Atendimento ao cliente da Adobe**.
 
 ## Antes de começar
 
@@ -36,15 +36,15 @@ Esta seção contém informações críticas sobre privacidade e segurança que 
 
 O Adobe Campaign vem com processos e configurações que permitem usar o Campaign em conformidade com as leis de privacidade de dados aplicáveis e as preferências do recipient. Você pode gerenciar:
 
-* **Aquisição de dados**: o Adobe Campaign permite que você colete dados, incluindo informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus recipients. Saiba mais em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition)
+* **Aquisição de dados**: o Adobe Campaign permite que você colete dados, incluindo informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus recipients. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=br#data-acquisition)
 
-* **Consentimento do usuário e retenção de dados**: saiba como obter consentimento do usuário, configurar mecanismos de subscrição de aceitação dupla, facilitar a recusa e configurar a retenção de dados na [Documentação de privacidade do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent)
+* **Consentimento do usuário e retenção de dados**: saiba como obter consentimento do usuário, configurar mecanismos de subscrição de aceitação dupla, facilitar a recusa e configurar a retenção de dados na [Documentação de privacidade do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=br#consent)
 
-* **Privacidade e regulamentos sobre proteção de dados**: consulte a [Documentação de privacidade do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html) para obter informações sobre o Regulamento Geral sobre a Proteção de Dados (GDPR) da União Europeia, a Lei de Privacidade do Consumidor da Califórnia (CCPA) e outros requisitos de privacidade internacionais e como esses regulamentos afetam sua organização e o Adobe Campaign.
+* **Privacidade e regulamentos sobre proteção de dados**: consulte a [Documentação de privacidade do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR) para obter informações sobre o Regulamento Geral sobre a Proteção de Dados (GDPR) da União Europeia, a Lei de Privacidade do Consumidor da Califórnia (CCPA) e outros requisitos de privacidade internacionais e como esses regulamentos afetam sua organização e o Adobe Campaign.
 
 ### Segurança
 
-Saiba mais sobre as diretrizes e princípios de segurança com o Adobe Campaign em [Lista de verificação de segurança do Campaign](../config/security.md).
+Saiba mais sobre as diretrizes e princípios de segurança com o Adobe Campaign na [Lista de verificação de segurança do Campaign](../config/security.md).
 
 ## Definir configurações do Campaign
 
@@ -52,7 +52,7 @@ Saiba mais sobre as diretrizes e princípios de segurança com o Adobe Campaign 
 
 Você pode adicionar usuários manualmente ao Campaign e associá-los a grupos, alinhados à sua hierarquia de funções. Os usuários poderão fazer logon e acessar os dados e permissões apropriados para eles.
 
-[!DNL :arrow_upper_right:] Saiba como adicionar usuários ao Adobe Campaign  [nesta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=pt-BR#getting-started).
+[!DNL :arrow_upper_right:] Saiba como adicionar usuários ao Adobe Campaign [nesta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=pt-BR#getting-started).
 
 ### Instalar o console do cliente do Campaign
 
@@ -78,11 +78,11 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
 
    Campanhas, entregas, tarefas ou workflows são todos baseados em um modelo, que armazena configurações e recursos principais. Um modelo integrado é fornecido para cada componente, para o qual nenhuma configuração específica foi definida. Você precisa configurar e adaptar modelos às suas necessidades e disponibilizá-los aos usuários finais.
 
-   [!DNL :arrow_upper_right:] [Saiba mais sobre templates de email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR)
+   [!DNL :arrow_upper_right:] [Saiba mais sobre modelos de email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR)
 
-   [!DNL :arrow_upper_right:] Saiba como trabalhar com templates de campanha  [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=pt-BR#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] Saiba como trabalhar com modelos de campanha [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=pt-BR#orchestrating-campaigns)
 
-   [!DNL :arrow_upper_right:] Saiba como configurar um modelo de fluxo de trabalho  [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=pt-BR#automating-with-workflows)
+   [!DNL :arrow_upper_right:] Saiba como configurar um modelo de fluxo de trabalho [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=pt-BR#workflow-templates)
 
 1. Configurar regras de tipologia
 
@@ -104,7 +104,7 @@ Você pode personalizar diversas áreas e recursos do Campaign. A maioria de nos
 
    O Adobe Campaign vem com esquemas comuns para identificar dados como: recipients, logs do delivery, subscrições e muito mais.
 
-   [!DNL :bulb:] Consulte esta seção para saber mais sobre [Modelo de dados integrado do Campaign](../dev/datamodel.md).
+   [!DNL :bulb:] Consulte esta seção para saber mais sobre o [Modelo de dados integrado do Campaign](../dev/datamodel.md).
 
    [!DNL :bulb:] É possível estender esquemas existentes ou criar novos esquemas do zero. Saiba mais [nesta página](../dev/customize.md).
 
