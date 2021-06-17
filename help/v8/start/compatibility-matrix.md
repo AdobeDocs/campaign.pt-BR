@@ -9,7 +9,7 @@ exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6e
 source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 68%
+ht-degree: 92%
 
 ---
 
@@ -71,7 +71,7 @@ Use o menu **Ajuda > Sobre...** para verificar sua versão.
 
 Você acessa as seguintes informações:
 
-* O número **version** do console do cliente e do servidor de aplicativos. Na amostra acima, a versão é 8.1.5 para o console do cliente e para o servidor de aplicativos.
+* O número da **versão** do console do cliente e do servidor de aplicativos. Na amostra acima, a versão é 8.1.5 para o console do cliente e para o servidor de aplicativos.
 * O número SHA, entre parênteses.
-* Um link para entrar em contato com o Atendimento ao cliente do Adobe.
-* Links para Política de privacidade do Adobe, Termos de uso e Política de cookies.
+* Um link para entrar em contato com o Atendimento ao cliente da Adobe.
+* Links para Política de privacidade da Adobe, Termos de uso e Política de cookies.
