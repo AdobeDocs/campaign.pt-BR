@@ -5,10 +5,10 @@ description: Configurações do canal de email do Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 7%
+source-wordcount: '290'
+ht-degree: 6%
 
 ---
 
@@ -41,14 +41,14 @@ Depois que o Cco de email estiver configurado, verifique se o recurso está ativ
 **Documentação relacionada** do Campaign Classic v7:
 
 
-[!DNL :arrow_upper_right:] [Gerar a mirror page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#generating-mirror-page)
+[!DNL :arrow_upper_right:] [Gerar a mirror page](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#generating-mirror-page){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Selecionar formato do email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats)
+[!DNL :arrow_upper_right:] [Selecione o formato do email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Selecionar codificação de caractere](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#character-encoding)
+[!DNL :arrow_upper_right:] [Selecionar codificação de caractere](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#character-encoding){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Definir o endereço de email de devolução](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails)
+[!DNL :arrow_upper_right:] [Defina o endereço de email de devolução](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Usar templates de delivery de email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR)
+[!DNL :arrow_upper_right:] [Usar templates de delivery de email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Entender as falhas de entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html)
+[!DNL :arrow_upper_right:] [Entender as falhas de delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html){target=&quot;_blank&quot;}
