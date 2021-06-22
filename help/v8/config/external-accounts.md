@@ -5,9 +5,9 @@ description: Contas externas do Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: ff2c49a2b4f22cde7ebb798d9f565e133c0268fc
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1013'
 ht-degree: 33%
 
 ---
@@ -41,7 +41,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para habilitar e ex
 
    A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
-   [!DNL :arrow_upper_right:] Saiba mais sobre emails de entrada na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)
+   [!DNL :arrow_upper_right:] Saiba mais sobre emails de entrada na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
 
 * **Roteamento**
 
@@ -145,7 +145,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para habilitar e ex
 
 Essas contas externas podem ser usadas para importar ou exportar dados para o Adobe Campaign usando uma atividade de workflow **[!UICONTROL Transfer file]** .
 
-[!DNL :arrow_upper_right:] Saiba mais sobre Transferência de arquivos em workflows na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html)
+[!DNL :arrow_upper_right:] Saiba mais sobre a Transferência de arquivos em workflows na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
 
 * **FTP e SFTP**
 
