@@ -6,10 +6,10 @@ feature: Públicos
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 4bd67cd3e4e88015d8044f07ca95927b6d7867f3
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 1%
+source-wordcount: '280'
+ht-degree: 4%
 
 ---
 
@@ -27,14 +27,14 @@ Permissões de concessão de direitos nomeados para:
 Por exemplo, o botão **Analisar** no Editor de Delivery é ativado para membros do grupo **Operador de Delivery** que têm o **Preparar Delivery** Direito Nomeado
 
 * Acesso a pastas
-A associação de grupos de operadores pode conceder ou restringir direitos de acesso a pastas, alterando as configurações de segurança em pastas. [Saiba mais na documentação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-folders.html?lang=en#permissions-on-a-folder) do Campaign Classic v7. Por exemplo, pode afetar: **Write access** para criar novas entidades (como remessas, perfis etc.), **Read access** para usar entidades, **Delete access** para excluir entidades.
+A associação de grupos de operadores pode conceder ou restringir direitos de acesso a pastas, alterando as configurações de segurança em pastas. [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-folders.html?lang=en#permissions-on-a-folder){target=&quot;_blank&quot;}. Por exemplo, pode afetar: **Write access** para criar novas entidades (como remessas, perfis etc.), **Read access** para usar entidades, **Delete access** para excluir entidades.
 
-**Saiba** mais sobre a documentação do Campaign Classic v7:
+**Saiba mais na documentação do Campaign Classic v7:**
 
-[!DNL :arrow_upper_right:] [Direitos nomeados embutidos](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-named-rights.html)
+[!DNL :arrow_upper_right:] [Direitos nomeados incorporados](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-named-rights.html){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Grupos de operadores incorporados](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=en#default-groups)
+[!DNL :arrow_upper_right:] [Grupos de Operadores Integrados](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=en#default-groups){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Etapas para configurar permissões](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html)
+[!DNL :arrow_upper_right:] [Etapas para configurar permissões](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Configurações de segurança em pastas](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-folders.html?lang=en#permissions-on-a-folder).
+[!DNL :arrow_upper_right:] [Configurações de segurança em pastas](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-folders.html?lang=en#permissions-on-a-folder){target=&quot;_blank&quot;}
