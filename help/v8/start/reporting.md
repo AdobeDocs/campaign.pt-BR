@@ -6,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: 983b3cfc2f1569cd071848805e6b6b3411b4d6c6
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 16%
+source-wordcount: '374'
+ht-degree: 15%
 
 ---
 
@@ -27,7 +27,7 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
    ![](assets/built-in-reports.png)
 
-   [!DNL :arrow_upper_right:] Os relatórios internos do Campaign são apresentados na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html)
+   [!DNL :arrow_upper_right:] Os relatórios internos da campanha são apresentados na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html){target=&quot;_blank&quot;}
 
 * **Análise de dados descritiva**
 
@@ -37,13 +37,13 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
    ![](assets/desc-analysis-report.png)
 
-   [!DNL :arrow_upper_right:] O relatório de análise descritiva da campanha é apresentado na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html)
+   [!DNL :arrow_upper_right:] O relatório de análise descritiva da campanha é apresentado na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target=&quot;_blank&quot;}
 
 * **Relatórios personalizados**
 
    Use o Adobe Campaign para criar relatórios sobre os dados no banco de dados. Depois que eles tiverem sido criados, torne-os acessíveis nos contextos apropriados.
 
-   [!DNL :arrow_upper_right:] As etapas para criar um relatório são detalhadas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html). A criação de relatórios personalizados é reservada para usuários avançados.
+   [!DNL :arrow_upper_right:] As etapas para criar um relatório são detalhadas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target=&quot;_blank&quot;}. A criação de relatórios personalizados é reservada para usuários avançados.
 
 * **Cubos**
 
@@ -53,7 +53,7 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
    Dependendo da complexidade das queries, cálculos e volumes, os dados analisados nesses relatórios podem ser coletados por meio de uma query e pré-agregados em uma lista (workflow do tipo gestão de dados) ou em um Cubo (usando Marketing Analytics). Ele será exibido na forma de uma tabela dinâmica ou uma lista de grupos.
 
-   [!DNL :arrow_upper_right:] Saiba como criar Cubos na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html)
+   [!DNL :arrow_upper_right:] Saiba como criar Cubos na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html){target=&quot;_blank&quot;}
 
 
 Observe que os relatórios do Adobe Campaign são otimizados e oferecem recursos de melhor escala que o Campaign Classic v7. As limitações existentes em cubos não se aplicam.
