@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '658'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -39,19 +39,19 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    A capacidade de entrega de email, um componente essencial para o sucesso do programa de marketing de cada remetente, é caracterizada por critérios e regras em constante mudança. Navegar efetivamente neste mundo digital requer o ajuste regular de sua estratégia de email, considerando as principais tendências de capacidade de entrega, para melhor alcançar seus públicos.
 
-   [!DNL :arrow_upper_right:] Consulte este guia para saber mais sobre as Práticas recomendadas  [de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] Consulte este manual para conhecer as [Práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] Saiba como implementar a capacidade de entrega no Campaign  [neste guia](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=pt-BR){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] Saiba como implementar a capacidade de entrega no Campaign [neste manual](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 1. **Como posso garantir que minha entrega seja enviada sem erros?**
 
    O Adobe Campaign vem com um conjunto de painéis e ferramentas para monitorar suas entregas de email.
 
-   [Leia a documentação do Campaign Classic v7 para saber](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR){target=&quot;_blank&quot;} como se certificar de que suas mensagens estejam sendo enviadas, monitorar a execução e tomar medidas apropriadas caso ocorra um erro.
+   [Leia a documentação do Campaign Classic v7 para saber](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR){target=&quot;_blank&quot;} como verificar se suas mensagens estão sendo enviadas, monitorar a execução e iniciar a ação se ocorrer um erro.
 
 1. **Posso monitorar a execução do fluxo de trabalho?**
 
-   [!DNL :arrow_upper_right:] Saiba como monitorar a execução do workflow do Campaign  [na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=pt-BR){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] Entenda como monitorar a execução do fluxo de trabalho do Campaign [na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 1. **Com quais sistemas e componentes o Campaign v8 é compatível?**
 
@@ -71,7 +71,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Você pode obter o programa de instalação e o console do cliente do Centro de download da Adobe.
 
-   [Clique aqui](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;} para acessar a Distribuição de software do Experience Cloud.
+   [Clique aqui](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;} para acessar a Distribuição de software da Experience Cloud.
 
    Saiba mais sobre o Centro de distribuição [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
@@ -84,6 +84,6 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    A criação de um caso permite que você entre em contato com a Equipe de suporte ao cliente da Adobe sobre qualquer problema que você tiver com produtos da Adobe. Para ajudar a resolver ou solucionar problemas, o Adobe Admin Console permitirá que você fale com o Suporte ao cliente da Adobe.
 
-   Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se a [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;}.
+   Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;}.
 
    Esse sistema exige contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá o problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
