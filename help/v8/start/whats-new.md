@@ -1,21 +1,21 @@
 ---
 product: Adobe Campaign
 title: Novidades do Campaign v8
-description: Descubra os principais recursos no Campaign v8
+description: Descubra os principais recursos do Campaign v8
 feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '455'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Quais são as novidades do Adobe Campaign v8? {#ac-gs-what-is-new}
 
-O Adobe Campaign v8 oferece infraestrutura, segurança, capacidade de delivery e aprimoramentos significativos de monitoramento. Utilizando o [[!DNL Snowflake]](https://www.snowflake.com/), uma tecnologia de banco de dados em nuvem, o Adobe Campaign melhora consideravelmente sua escala e velocidade, com a capacidade de gerenciar um número muito maior de perfis de clientes, bem como taxas de entrega e transações por hora muito mais altas.
+O Adobe Campaign v8 oferece aprimoramentos significativos em infraestrutura, segurança, capacidade de entrega e monitoramento. Utilizando o [[!DNL Snowflake]](https://www.snowflake.com/), uma tecnologia de banco de dados em nuvem, o Adobe Campaign melhora consideravelmente sua escala e velocidade, com a capacidade de gerenciar um número muito maior de perfis de clientes, bem como taxas de entrega e transações por hora muito mais altas.
 
 Os principais recursos incluem:
 
@@ -45,7 +45,7 @@ O Campaign v8 traz uma escala completa em qualquer etapa do processo, desde o di
 
 ## Simplificação e aumento de desempenho
 
-O Campaign v8 traz o conceito de **Acesso a Dados Federados Completo** (FFDA): todos os dados agora são remotos no banco de dados da nuvem.
+O Campaign v8 traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados são disponíveis remotamente no banco de dados da nuvem.
 
 Com essa nova arquitetura, o Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar.
 
@@ -55,7 +55,7 @@ A tecnologia de banco de dados da nuvem não requer manutenção específica par
 
 ## ecossistema integrado
 
-Você pode integrar o Campaign a um conjunto de soluções Adobe potentes, como: Adobe Analytics, Adobe Journey Orchestration, CDP em tempo real e muito mais.
+É possível integrar o Campaign a um conjunto de soluções avançadas da Adobe, como: Adobe Analytics, Adobe Journey Orchestration, CDP em tempo real, e muito mais.
 
 Também é possível configurar a otimização preditiva do tempo de envio e a pontuação preditiva do envolvimento com a IA de jornada, além de aumentar as taxas de abertura, cliques e receitas.
 
