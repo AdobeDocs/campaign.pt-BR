@@ -7,15 +7,15 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '829'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
-# [!DNL Campaign Classic] v7 - recursos  [!DNL Campaign] v8{#gs-matrix}
+# [!DNL Campaign Classic] v7 - recursos do [!DNL Campaign] v8{#gs-matrix}
 
-Como um usuário [!DNL Campaign Classic] v7 existente, você não deve esperar grandes interrupções na maneira como geralmente interage com [!DNL Adobe Campaign]. A maioria das alterações na v8 não é visível, exceto pequenas alterações que surgiram na interface e nas etapas de configuração.
+Como usuário do [!DNL Campaign Classic] v7, você não deve esperar nenhuma grande interrupção na maneira como costuma interagir com o [!DNL Adobe Campaign]. A maioria das alterações na v8 não é visível, exceto pequenas alterações que surgiram na interface e nas etapas de configuração.
 
 Alterações principais:
 
@@ -23,28 +23,28 @@ Alterações principais:
 * Aumentar a velocidade de entrega
 * Relatórios em tempo real com Cubos
 
-Como usuário [!DNL Campaign Classic], observe que a maioria dos recursos [!DNL Campaign Classic] v7 está disponível com [!DNL Campaign] v8, exceto um pequeno conjunto deles, listado em [esta seção](#gs-removed). Outros serão lançados em versões futuras. [Saiba mais nesta seção](#gs-unavailable-features)
+Como usuário do [!DNL Campaign Classic], observe que a maioria dos recursos do [!DNL Campaign Classic] v7 está disponível com o [!DNL Campaign] v8, exceto um pequeno conjunto listado [nesta seção](#gs-removed). Outros serão lançados em versões futuras. [Saiba mais nesta seção](#gs-unavailable-features)
 
-[!DNL :bulb:] Saiba mais sobre a arquitetura  [!DNL Campaign] v8  [nesta página](../dev/architecture.md).
+[!DNL :bulb:] Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../dev/architecture.md).
 
 ## Alterações na configuração do produto
 
 ### [!DNL Campaign] e [!DNL Snowflake] {#ac-gs-snowflake}
 
-[!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um banco de dados local para a interface do usuário, mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e um banco de dados do Cloud para execução de campanha, consultas em lote e execução de workflows.
+O [!DNL Adobe Campaign] v8 funciona com dois bancos de dados: um banco de dados local para a interface do usuário de mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e um banco de dados em nuvem para execução de campanha, consultas em lote e execução de fluxo de trabalho.
 
-É uma mudança fundamental na arquitetura de software. Agora os dados são remotos e o Campaign federa todos os dados, incluindo Perfis. [!DNL Campaign]Os processos do agora escalam de ponta a ponta, do direcionamento à execução da mensagem: a assimilação de dados, a segmentação, o direcionamento, as consultas e as entregas normalmente serão executados em minutos. Esta nova versão resolve todo o desafio do dimensionamento, mantendo o mesmo nível de flexibilidade e extensibilidade. O número de perfis é quase ilimitado e a retenção de dados pode ser estendida.
+É uma mudança fundamental na arquitetura de software. Agora os dados são remotos e o Campaign federa todos os dados, incluindo Perfis. Os processos do [!DNL Campaign] agora são escalonados de ponta a ponta, desde o direcionamento até a execução da mensagem: assimilação de dados, segmentação, direcionamento, consultas e entregas agora normalmente são executados em minutos. Esta nova versão resolve todo o desafio do dimensionamento, mantendo o mesmo nível de flexibilidade e extensibilidade. O número de perfis é quase ilimitado e a retenção de dados pode ser estendida.
 
-O armazenamento na nuvem é executado em **[!DNL Snowflake]**: uma nova **conta externa** integrada garante a conectividade com o banco de dados da nuvem. Ele é configurado pelo Adobe e não deve ser modificado. [Saiba mais](../config/external-accounts.md)
+O armazenamento na nuvem é feito no **[!DNL Snowflake]**: uma nova **conta externa** incorporada garante a conectividade com o banco de dados na nuvem. Ele é configurado pela Adobe e não deve ser modificado. [Saiba mais](../config/external-accounts.md)
 
-Qualquer esquema/tabela interna que precise ser movido ou replicado no banco de dados da nuvem vem com uma extensão de esquema incorporada no namespace **xxl.** Essas extensões contêm qualquer modificação necessária para mover esquemas internos do banco de dados local [!DNL Campaign] para o banco de dados do [!DNL Snowflake] Cloud e adaptar sua estrutura de acordo: novo UUID, links atualizados, etc.
+Qualquer esquema/tabela interna que precise ser movido ou replicado no banco de dados na nuvem vem com uma extensão de esquema incorporada no namespace **xxl**. Essas extensões contêm as modificações necessárias para mover esquemas integrados do banco local do [!DNL Campaign] para o banco de dados na nuvem do [!DNL Snowflake] e adaptar sua estrutura em conformidade: novo UUID, links atualizados, etc.
 
 >[!CAUTION]
 >
-> Os dados do cliente não são armazenados no banco de dados local [!DNL Campaign]. Como consequência, qualquer tabela personalizada precisa ser criada no banco de dados da nuvem.
+> Os dados do cliente não são armazenados no banco de dados local do [!DNL Campaign]. Como consequência, qualquer tabela personalizada precisa ser criada no banco de dados na nuvem.
 
 
-APIs específicas estão disponíveis para gerenciar dados entre o banco de dados local e da nuvem. Saiba como essas novas APIs funcionam e como usá-las em [this page](../dev/new-apis.md).
+APIs específicas estão disponíveis para gerenciar dados entre o banco de dados local e na nuvem. Saiba como essas novas APIs funcionam e como usá-las [nesta página](../dev/new-apis.md).
 
 ### Replicação de dados
 
@@ -62,11 +62,11 @@ Um fluxo de trabalho técnico específico trata da replicação de tabelas que p
 
 Os objetos do Campaign v8 agora usam um **Identificador exclusivo universal (UUID)**, que permite que valores exclusivos ilimitados identifiquem dados.
 
-Observe que essa ID é baseada em sequência e não sequencial. A chave primária não é um valor numérico no Campaign v8 e você precisa usar os atributos **autouuid** e **autopk** em seus esquemas.
+Observe que essa ID é baseada em uma sequência e não é sequencial. A chave primária não é um valor numérico no Campaign v8 e você precisa usar os atributos **autouuid** e **autopk** em seus esquemas.
 
-No Campaign Classic v7 e em versões anteriores, a unicidade de uma chave em um schema (ou seja, tabela) é manipulada no nível do mecanismo de banco de dados. Em geral, os mecanismos do Banco de Dados Clássico como PostgreSQL, Oracle ou SQL Server incluem um mecanismo nativo para impedir a inserção de linhas duplicadas com base em uma coluna ou um conjunto de colunas por meio de chaves primárias e/ou índices exclusivos. A ID duplicada não existe nessas versões quando o índice adequado e as chaves primárias são definidos no nível do banco de dados.
+No Campaign Classic v7 e em versões anteriores, a unicidade de uma chave em um esquema (ou seja, tabela) é manipulada no nível do mecanismo de banco de dados. Em geral, os mecanismos do banco de dados do Classic como PostgreSQL, Oracle ou SQL Server incluem um mecanismo nativo para impedir a inserção de linhas duplicadas com base em uma coluna ou um conjunto de colunas por meio de chaves principais e/ou índices únicos. A ID duplicada não existe nessas versões quando o índice adequado e as chaves principais são definidos no nível do banco de dados.
 
-O Adobe campaign v8 vem com o Snowflake como o banco de dados principal. Como aumenta drasticamente a escala de queries, a arquitetura distribuída do banco de dados do Snowflake não fornece esses mecanismos para gerenciar e impor a unicidade de uma chave dentro de uma tabela. Como consequência, com o Adobe Campaign v8, nada impede a assimilação de chaves duplicadas em uma tabela. Os usuários finais agora são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign. [Saiba mais](../dev/keys.md)
+O Adobe campaign v8 vem com o Snowflake como o banco de dados principal. Como aumenta drasticamente a escala de consultas, a arquitetura distribuída do banco de dados do Snowflake não fornece esses mecanismos para gerenciar e impor a unicidade de uma chave dentro de uma tabela. Como consequência, com o Adobe Campaign v8, nada impede a assimilação de chaves duplicadas em uma tabela. Os usuários finais agora são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign. [Saiba mais](../dev/keys.md)
 
 ### Manutenção simplificada
 
@@ -78,7 +78,7 @@ Observe que os relatórios do Adobe Campaign são otimizados e oferecem recursos
 
 ## Recursos indisponíveis{#gs-unavailable-features}
 
-Observe que alguns recursos não estão disponíveis nesta primeira versão, como:
+Observe que alguns recursos ainda não estão disponíveis nessa primeira versão, como:
 
 * Gerenciamento de recursos de marketing
 * Marketing distribuído
@@ -91,9 +91,9 @@ Observe que alguns recursos não estão disponíveis nesta primeira versão, com
 
 >[!CAUTION]
 >
->Por enquanto, o Campaign v8 é **only** disponível como um Cloud Service gerenciado e não pode ser implantado em um ambiente local ou híbrido.
+>Por enquanto, o Campaign v8 está disponível **apenas** como um serviço na nuvem gerenciado e não pode ser implantado em um ambiente local ou híbrido.
 >
->A migração de um ambiente Campaign Classic v7 existente ainda não está disponível.
+>A migração de um ambiente do Campaign Classic v7 existente ainda não está disponível.
 >
 >Se não tiver certeza do modelo de implantação ou se tiver dúvidas, entre em contato com a equipe de conta.
 
