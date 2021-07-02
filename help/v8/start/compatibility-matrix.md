@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
-workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 92%
+workflow-type: ht
+source-wordcount: '277'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Este documento lista todos os sistemas e componentes compatíveis com o último 
 
 ### Console do cliente{#ClientConsoleoperatingsystems}
 
-:aviso: os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
+:warning: os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
 
 **Sistemas operacionais**
 
@@ -52,8 +52,8 @@ Este documento lista todos os sistemas e componentes compatíveis com o último 
 
 ### SDK móvel{#MobileSDK}
 
-* **Android** 7.x, 8.x, 9.0 com o Campaign Android SDK build 1.1.1.
-* **Apple iOS** 9 - 14 com Campaign iOS SDK build 1.0.26, compatível com as versões de 32 e 64 bits.
+* **Android** 7.x, 8.x e 9.0 com o SDK Campaign Android build 1.1.1.
+* **Apple iOS** 9 - 14 com o SDK Campaign iOS build 1.0.26, compatível com versões de 32 e 64 bits.
 
 ### Navegadores compatíveis {#Browsers}
 
@@ -63,7 +63,7 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 
 * **Internet Explorer** 11
 
-## Como verificar a versão do Campaign e criar
+## Como verificar a versão do Campaign e build
 
 Use o menu **Ajuda > Sobre...** para verificar sua versão.
 
