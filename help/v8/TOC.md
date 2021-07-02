@@ -3,12 +3,12 @@ product: Adobe Campaign
 audience: end-user
 user-guide-title: Campaign v8
 description: Documentação do Campaign v8
-breadcrumb-title: Campanha v8
+breadcrumb-title: Campaign v8
 title: Documentos do Campaign v8
 source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '204'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -56,9 +56,9 @@ ht-degree: 81%
          + [Criar ambientes](send/interaction-env.md)
          + [Criar filtros predefinidos](send/interaction-predefined-filters.md)
          + [Criar espaços de oferta](send/interaction-offer-spaces.md)
-      + [Criar um catálogo de ofertas](send/interaction-offer-catalog.md)
+      + [Criar um catálogo de oferta](send/interaction-offer-catalog.md)
       + [Criar uma oferta](send/interaction-offer.md)
-      + [Envio de uma oferta](send/interaction-send-offers.md)
+      + [Enviar uma oferta](send/interaction-send-offers.md)
       + [Casos de uso](send/interaction-use-cases.md)
 + Configurar {#config}
    + [Automatizar com workflows](config/workflows.md)
@@ -72,7 +72,7 @@ ht-degree: 81%
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
-   + [Campanha + Experience Cloud acionadores](connect/ac-triggers.md)
+   + [Campaign + Acionadores da Experience Cloud](connect/ac-triggers.md)
    + [Campaign + RTCDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Campaign + Banco de dados externo](connect/fda.md)
