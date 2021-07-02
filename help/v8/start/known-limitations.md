@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: true
 source-git-commit: cf00895f988514fc029d0060d7404bdef0c8b30e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -26,6 +26,6 @@ Para o Adobe Campaign v8, existem as seguintes limitações:
 * Alguns recursos não disponíveis ou removidos ainda estão visíveis na interface do usuário
 * Os mecanismos de subscrição (aceitação) e cancelamento de subscrição (recusa) e registro móvel são processos assíncronos. As solicitações são processadas a cada hora por meio de um fluxo de trabalho técnico específico. [Saiba mais](../config/replication.md#tech-wf)
 * As duplicatas precisam ser manipuladas manualmente pelos usuários finais. [Saiba mais](../dev/keys.md)
-* O Adobe Campaign v8 não suporta throughput estendida em aplicativos da API e da Web. Em caso de necessidades específicas, entre em contato com o Adobe para obter orientação.
+* O Adobe Campaign v8 não dá suporte à produtividade estendida em aplicativos API e da Web. Em caso de necessidades específicas, entre em contato com a Adobe para obter orientação.
 
 
