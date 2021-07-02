@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ O Campaign ajuda a adicionar contatos ao banco de dados da nuvem. Você pode car
 
 ## Direcionar perfis em um fluxo de trabalho
 
-As importações de perfil são configuradas em modelos dedicados executados por meio de workflows através da atividade **Importar**. Elas podem ser repetidas automaticamente de acordo com uma programação, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. Saiba mais em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/import-export-workflows.html?lang=pt-BR){target=&quot;_blank&quot;}.
+As importações de perfil são configuradas em modelos dedicados executados por meio de workflows através da atividade **Importar**. Elas podem ser repetidas automaticamente de acordo com uma programação, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/import-export-workflows.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 ![](assets/import-wf.png)
 
@@ -32,7 +32,7 @@ Saiba mais na documentação do Campaign Classic v7:
 
 [!DNL :arrow_upper_right:] [Práticas recomendadas de importação e exportação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html?lang=pt-BR){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Configure e execute uma importação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=pt-BR){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] [Configurar e executar uma importação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 ## Executar importações unitárias
 
@@ -40,7 +40,7 @@ Crie e execute um trabalho de importação de dados genérico para carregar cont
 
 ![](assets/new-import.png)
 
-[!DNL :arrow_upper_right:] Saiba como executar tarefas de importação unitárias para alimentar seu banco de dados na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=pt-BR){target=&quot;_blank&quot;}.
+[!DNL :arrow_upper_right:] Saiba como executar tarefas de importação unitárias para alimentar seu banco de dados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 ## Coletar perfis por meio de aplicativos da Web
 
@@ -48,7 +48,7 @@ Use o Campaign para criar formulários web e coletar e gerenciar informações d
 
 ![](assets/web-form-page.png)
 
-[!DNL :arrow_upper_right:] Saiba como criar formulários web na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=pt-BR){target=&quot;_blank&quot;}.
+[!DNL :arrow_upper_right:] Saiba como criar formulários da Web na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 **Tópicos relacionados**
 
