@@ -5,7 +5,7 @@ description: Introdução a mensagens transacionais
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 72%
@@ -16,7 +16,7 @@ ht-degree: 72%
 
 O envio de mensagens transacionais (Centro de mensagens) é um módulo do Campaign criado para gerenciar mensagens por disparo. Essas mensagens são geradas por eventos disparados dos sistemas de informações e podem ser: fatura, confirmação de pedidos, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta ou criação de conta de site, por exemplo.
 
-[!DNL :speech_balloon:] Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
+?? Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
 
 As mensagens transacionais são usadas para enviar:
 
@@ -24,9 +24,9 @@ As mensagens transacionais são usadas para enviar:
 * uma resposta individual em tempo real a uma ação do cliente
 * conteúdo não promocional
 
-[!DNL :bulb:] As configurações de mensagens transacionais são detalhadas  [nesta seção](../config/transactional-msg-settings.md).
+?? As configurações de mensagens transacionais são detalhadas em [this section](../config/transactional-msg-settings.md).
 
-[!DNL :bulb:] Entenda a arquitetura de mensagens transacionais  [nesta página](../dev/architecture.md).
+?? Entenda a arquitetura de mensagens transacionais em [esta página](../dev/architecture.md).
 
 >[!CAUTION]
 >
@@ -133,7 +133,7 @@ Essas informações permitem personalizar o conteúdo da mensagem usando tags de
 
    ![](assets/messagecenter_create_custo_3.png)
 
-### Visualizar sua mensagem transacional{#transactional-message-preview}
+### Pré-visualizar mensagem transacional{#transactional-message-preview}
 
 Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-visualizar a mensagem e verificar sua personalização.
 
@@ -147,11 +147,11 @@ Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-v
 
 ### Enviar uma prova
 
-Você pode testar o delivery de mensagens enviando uma prova para um seed address criado anteriormente.
+Você pode testar a entrega de mensagens enviando uma prova para um seed address criado anteriormente.
 
 O envio de uma prova envolve o mesmo processo de qualquer delivery.
 
-[!DNL :arrow_upper_right:] Saiba mais sobre provas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target=&quot;_blank&quot;}
+↗️ Saiba mais sobre provas em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 No entanto, para enviar uma prova de uma mensagem transacional, você precisa realizar as seguintes operações:
 
