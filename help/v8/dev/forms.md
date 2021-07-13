@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Formulários de entrada de campanha
 description: Saiba como personalizar formulários de entrada
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '2555'
 ht-degree: 3%
@@ -84,7 +84,7 @@ O controle de edição se adapta automaticamente ao tipo de dados correspondente
 
 Por padrão, cada campo é exibido em uma única linha e ocupa todo o espaço disponível, dependendo do tipo de dados.
 
-[!DNL :arrow_upper_right:] Todos os atributos de formulário são listados na documentação [ do ](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html)Campaign Classic v7.
+↗️ Todos os atributos do formulário são listados na documentação do [Campaign Classic v7](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html).
 
 ## Formatação {#formatting}
 
@@ -178,7 +178,7 @@ Exemplo com a adição de &quot;xpath&quot; ao elemento chamado &quot;location&q
 
 Os contêineres são usados para construir controles complexos usando um conjunto de campos formatados em páginas.
 
-### Adicionar guias (bloco de anotações) {#tab-container}
+### Adicionar guias (notebook) {#tab-container}
 
 Use um contêiner **bloco de anotações** para formatar dados em páginas que são acessíveis a partir de guias.
 
@@ -312,7 +312,7 @@ Também é possível classificar a lista com o elemento **`<orderby>`** :
 </input>
 ```
 
-## Propriedades de controle {#control-properties}
+## Propriedades do controle {#control-properties}
 
 * **noAutoComplete**: desativa o tipo forward (com o valor &quot;true&quot;)
 * **createMode**: cria o link dinamicamente, se ele não existir. Os valores possíveis são:
@@ -324,7 +324,7 @@ Também é possível classificar a lista com o elemento **`<orderby>`** :
 * **noZoom**: nenhum formulário de edição no link (com o valor &quot;true&quot;)
 * **formulário**: sobrecarrega o formulário de edição do elemento direcionado
 
-## Adicionar uma lista de links (não vinculados) {#list-of-links}
+## Adicionar uma lista de links (não vinculado) {#list-of-links}
 
 Um link inserido no schema de dados como um elemento de coleção (unbound=&quot;true&quot;) deve passar por uma lista para exibir todos os elementos associados a ele.
 
@@ -499,7 +499,7 @@ Exemplo no campo &quot;Gênero&quot;:
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## Adicionar botão de opção {#radio-button}
+## Botão Adicionar rádio {#radio-button}
 
 Um botão de opção permite escolher entre várias opções. As tags **`<input>`** são usadas para listar as opções possíveis, e o atributo **checkedValue** especifica o valor associado à escolha.
 
