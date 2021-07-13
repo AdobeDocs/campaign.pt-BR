@@ -6,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
-workflow-type: ht
-source-wordcount: '829'
-ht-degree: 100%
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+workflow-type: tm+mt
+source-wordcount: '873'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Alterações principais:
 
 Como usuário do [!DNL Campaign Classic], observe que a maioria dos recursos do [!DNL Campaign Classic] v7 está disponível com o [!DNL Campaign] v8, exceto um pequeno conjunto listado [nesta seção](#gs-removed). Outros serão lançados em versões futuras. [Saiba mais nesta seção](#gs-unavailable-features)
 
-[!DNL :bulb:] Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../dev/architecture.md).
+?? Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../dev/architecture.md).
 
 ## Alterações na configuração do produto
 
@@ -72,6 +72,12 @@ O Adobe campaign v8 vem com o Snowflake como o banco de dados principal. Como au
 
 Usuários do Campaign não precisam ser especialistas em banco de dados: não há mais necessidade de operações complexas de manutenção de banco de dados ou indexação de tabela complexa.
 
+## Conexão com o Campaign
+
+Os usuários da campanha se conectam por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos de Adobe associados a uma única conta.
+
+?? Saiba como se conectar a [!DNL Campaign] em [esta página](connect.md).
+
 ## Relatórios
 
 Observe que os relatórios do Adobe Campaign são otimizados e oferecem recursos de melhor escala que o Campaign Classic v7. As limitações existentes em cubos não se aplicam.
@@ -106,4 +112,5 @@ Para alinhar-se à nova arquitetura e ao novo modelo de implantação do Campaig
 * Pesquisas
 * Marketing social
 * Conector ACS (oferta principal)
-
+* Integração com o LDAP
+* Logon de usuário/senha
