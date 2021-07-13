@@ -6,10 +6,10 @@ feature: Públicos
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 13f3122a830c723fa940290689c8e3a1baa0443a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 10%
+source-wordcount: '691'
+ht-degree: 12%
 
 ---
 
@@ -99,9 +99,7 @@ Saiba mais sobre o Adobe IMS em [esta página](https://helpx.adobe.com/br/enterp
 
 ## Acesso à Web{#web-access}
 
-Certas partes do aplicativo podem ser acessadas por um navegador da Web simples usando uma interface de usuário HTML: Painel de campanha, relatório de Cubo, monitoramento de instância e muito mais.
-
-↗️ Saiba mais sobre o acesso à Web na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access){target=&quot;_blank&quot;}
+Certas partes do aplicativo podem ser acessadas por um navegador da Web usando uma interface de usuário HTML: relatórios, aprovação de delivery, monitoramento de instância e muito mais.
 
 O acesso via Web fornece uma interface semelhante ao console, mas com um conjunto reduzido de funcionalidades.
 
@@ -115,4 +113,4 @@ Considerando o acesso via Web, as opções permitirão principalmente a visualiz
 
 O acesso à Web também é usado para no processo de validação: Os operadores podem clicar no email de solicitação de aprovação e se conectar ao Campaign por meio de seu navegador da Web para validar ou rejeitar um conteúdo ou orçamento de delivery.
 
-↗️ Saiba como configurar e gerenciar aprovações na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=pt-BR#orchestrating-campaigns){target=&quot;_blank&quot;}
+Para acessar a instância do Campaign a partir da Web, o URL é:  `https://<your adobe campaign server>:<port number>/view/home`.
