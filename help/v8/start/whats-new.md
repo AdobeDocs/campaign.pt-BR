@@ -6,8 +6,8 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
-workflow-type: ht
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 100%
 
@@ -59,5 +59,5 @@ A tecnologia de banco de dados da nuvem não requer manutenção específica par
 
 Também é possível configurar a otimização preditiva do tempo de envio e a pontuação preditiva do envolvimento com a IA de jornada, além de aumentar as taxas de abertura, cliques e receitas.
 
-[!DNL :bulb:] [Saiba mais sobre integrações do Campaign](../connect/integration.md)
+💡 [Saiba mais sobre integrações do Campaign](../connect/integration.md)
 
