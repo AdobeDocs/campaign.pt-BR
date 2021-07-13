@@ -2,14 +2,14 @@
 product: Adobe Campaign
 title: Práticas recomendadas de segurança do Campaign
 description: Introdução às práticas recomendadas de segurança do Campaign
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 22%
 
 ---
 
-# Práticas recomendadas de segurança da campanha {#ac-security}
+# Práticas recomendadas de segurança do Campaign {#ac-security}
 
 No Adobe, levamos a segurança de sua experiência digital muito a sério. As práticas de segurança estão profundamente enraizadas em nossos processos e ferramentas internos de desenvolvimento e operações de software e são rigorosamente seguidas por nossas equipes multifuncionais para prevenir, detectar e responder a incidentes de maneira conveniente.
 
@@ -24,7 +24,7 @@ A configuração e proteção da privacidade é um elemento essencial da otimiza
 * Certifique-se de que as senhas criptografadas sejam restritas
 * Proteja as páginas que podem conter informações pessoais, como mirror pages, aplicativos web, etc.
 
-[!DNL :speech_balloon:] Como usuário do Managed Cloud Services, o Adobe trabalhará com você para implementar essas configurações no ambiente.
+?? Como usuário do Managed Cloud Services, o Adobe trabalhará com você para implementar essas configurações no ambiente.
 
 ## Personalização
 
@@ -107,7 +107,7 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 * Verifique se cada operador tem os direitos de acesso apropriados
 * Evite usar o operador administrador e evite ter muitos operadores no grupo de administradores
 
-[!DNL :arrow_upper_right:] Saiba mais na documentação do  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+↗️ Saiba mais em [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
 
 ## Diretrizes de codificação
 
@@ -119,4 +119,4 @@ Ao desenvolver no Adobe Campaign (fluxos de trabalho, Javascript, JSSP etc.), se
 
 * **Adicionar captchas em aplicações** web: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
-[!DNL :arrow_upper_right:] Saiba mais na documentação do  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+↗️ Saiba mais em [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
