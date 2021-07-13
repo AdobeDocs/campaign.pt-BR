@@ -6,10 +6,10 @@ feature: Perfis
 role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
-workflow-type: ht
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 
 O Campaign ajuda a adicionar contatos ao banco de dados da nuvem. Você pode carregar um arquivo, agendar e automatizar várias atualizações de contato, coletar dados na Web ou inserir informações de perfil diretamente na tabela do recipient.
 
-[!DNL :bulb:] Introdução a [públicos](audiences.md)
-[!DNL :bulb:] Compreenda o [modelo de dados do Campaign](../dev/datamodel.md)
+?? Introdução a [públicos](audiences.md)
+?? Entender o Campaign [datamodel](../dev/datamodel.md)
 
 ## Direcionar perfis em um fluxo de trabalho
 
@@ -28,11 +28,11 @@ As importações de perfil são configuradas em modelos dedicados executados por
 
 Saiba mais na documentação do Campaign Classic v7:
 
-[!DNL :arrow_upper_right:] [Introdução a importações e exportações](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html?lang=pt-BR){target=&quot;_blank&quot;}
+↗️ [Introdução a importações e exportações](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html?lang=pt-BR){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Práticas recomendadas de importação e exportação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html?lang=pt-BR){target=&quot;_blank&quot;}
+↗️ [Práticas recomendadas de importação e exportação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html?lang=pt-BR){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Configurar e executar uma importação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=pt-BR){target=&quot;_blank&quot;}
+↗️ [Configurar e executar uma importação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 ## Executar importações unitárias
 
@@ -40,7 +40,7 @@ Crie e execute um trabalho de importação de dados genérico para carregar cont
 
 ![](assets/new-import.png)
 
-[!DNL :arrow_upper_right:] Saiba como executar tarefas de importação unitárias para alimentar seu banco de dados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=pt-BR){target=&quot;_blank&quot;}.
+↗️ Saiba como executar tarefas de importação unitárias para alimentar seu banco de dados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 ## Coletar perfis por meio de aplicativos da Web
 
@@ -48,7 +48,7 @@ Use o Campaign para criar formulários web e coletar e gerenciar informações d
 
 ![](assets/web-form-page.png)
 
-[!DNL :arrow_upper_right:] Saiba como criar formulários da Web na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=pt-BR){target=&quot;_blank&quot;}.
+↗️ Saiba como criar formulários da Web na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 **Tópicos relacionados**
 
