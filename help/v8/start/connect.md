@@ -6,10 +6,10 @@ feature: Públicos
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 13f3122a830c723fa940290689c8e3a1baa0443a
+source-git-commit: 136209f05cf302a1e73a2aa18c051260edeb0762
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 12%
+source-wordcount: '695'
+ht-degree: 11%
 
 ---
 
@@ -75,7 +75,7 @@ Para fazer logon em uma instância existente, siga as etapas abaixo:
 
 1. Clique em **[!UICONTROL Ok]**.
 
-1. Você pode fazer logon no Campaign.
+1. Em seguida, você pode fazer logon no Campaign com [seu Adobe ID](#connect-ims).
 
    ![](assets/adobeID.png)
 
