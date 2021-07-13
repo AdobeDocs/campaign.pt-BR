@@ -5,20 +5,20 @@ description: Saiba como criar um catálogo de ofertas
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 75%
 
 ---
 
-# Envio de uma oferta
+# Enviar uma oferta
 
 Para que uma oferta seja selecionada pelo mecanismo de oferta, ela deve ser aprovada e estar disponível em um ambiente **Live**. [Saiba mais](interaction-offer.md#approve-offers)
 
 A apresentação de oferta por meio de um canal de comunicação de saída é realizada por mala direta, email ou deliveries móveis. Também é possível usar o modo unitário com mensagens transacionais (Centro de mensagens).
 
-## Insira uma oferta em um delivery {#offer-into-a-delivery}
+## Inserir uma oferta em um delivery {#offer-into-a-delivery}
 
 Para inserir apresentações de oferta em um delivery, siga as etapas abaixo:
 
@@ -78,7 +78,7 @@ Várias atividades de workflow permitem definir a forma como as ofertas são apr
 
 A atividade **Enrichment** permite adicionar ofertas ou links para ofertas para recipients de delivery.
 
-[!DNL :arrow_upper_right:] Para obter mais informações sobre a atividade Enrichment , consulte a documentação do  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
+↗️ Para obter mais informações sobre a atividade Enrichment , consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
 
 Por exemplo, é possível enriquecer os dados de uma query de recipient antes de um delivery.
 
@@ -89,7 +89,7 @@ Há dois métodos para especificar apresentações de oferta.
 * Especificação de oferta ou de chamada de motor de oferta.
 * Fazendo referência a um link para uma oferta.
 
-#### Especifique uma oferta ou uma chamada para o mecanismo de oferta {#specifying-an-offer-or-a-call-to-the-offer-engine}
+#### Especificar uma oferta ou uma chamada para o mecanismo de oferta {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
 Após configurar sua atividade **Query**:
 
@@ -138,7 +138,7 @@ Para fazer isso, siga as etapas abaixo:
    >
    >O número de propostas disponíveis para a pré-visualização depende da configuração realizada no delivery.
 
-#### Armazenar classificações e pesos de oferta {#storing-offer-rankings-and-weights}
+#### Armazenar classificações e pesos de ofertas {#storing-offer-rankings-and-weights}
 
 Por padrão, quando uma atividade **Enrichment** é usada para fornecer ofertas, suas classificações e seus pesos não são armazenados na tabela de propostas.
 
@@ -165,7 +165,7 @@ O delivery armazena automaticamente a classificação e o peso das ofertas. Essa
 
 A atividade de **[!UICONTROL Offer engine]** também permite especificar uma chamada para o mecanismo de oferta antes da entrega.
 
-[!DNL :arrow_upper_right:] Para obter mais informações sobre a atividade  **Offer** Engineer, consulte a documentação do  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
+↗️ Para obter mais informações sobre a atividade **Offer engine**, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
 
 Essa atividade funciona de acordo com o mesmo princípio da atividade **Enrichment** com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de um delivery.
 
@@ -188,7 +188,7 @@ Após configurar sua atividade **Query**:
 
 A atividade **[!UICONTROL Offers by cell]** permite distribuir a população de entrada (de uma consulta, por exemplo) em vários segmentos e especificar uma oferta a ser apresentada para cada um desses segmentos.
 
-[!DNL :arrow_upper_right:] Para obter mais informações sobre  **Offer by** cellactivity, consulte a documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
+↗️ Para obter mais informações sobre a atividade **Offer by cell**, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
 
 Para fazer isso, realize o seguinte processo:
 
