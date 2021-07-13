@@ -5,10 +5,10 @@ description: Contas externas do Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 33%
+source-wordcount: '1001'
+ht-degree: 32%
 
 ---
 
@@ -35,13 +35,13 @@ Você pode acessar contas externas do Adobe Campaign **[!UICONTROL Explorer]**: 
 
 As contas técnicas a seguir são usadas pela Adobe Campaign para habilitar e executar processos específicos.
 
-[!DNL :speech_balloon:] Como usuário do Managed Cloud Services, o Adobe configura todas as contas externas específicas da campanha para você.
+?? Como usuário do Managed Cloud Services, o Adobe configura todas as contas externas específicas da campanha para você.
 
 * **Emails de devolução (POP3)**
 
    A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
-   [!DNL :arrow_upper_right:] Saiba mais sobre emails de entrada na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
+   ↗️ Saiba mais sobre emails de entrada em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
 
 * **Roteamento**
 
@@ -55,7 +55,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para habilitar e ex
 
    No contexto de mensagens transacionais, as instâncias de execução são vinculadas à instância de controle e as conectam. Os templates de mensagem transacional são implantados nas instâncias de execução.
 
-   [!DNL :bulb:] Saiba mais sobre a arquitetura do Centro de mensagens  [nesta página](../dev/architecture.md#transac-msg-archi).
+   ?? Saiba mais sobre a arquitetura do Centro de Mensagens em [this page](../dev/architecture.md#transac-msg-archi).
 
 ## Acesso a contas externas de sistemas externos
 
@@ -65,32 +65,30 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para habilitar e ex
 
    Bancos de dados externos compatíveis com o Adobe Campaign v8 são listados na [Matriz de compatibilidade](../start/compatibility-matrix.md)
 
-   [!DNL :bulb:] Saiba mais sobre a opção Federated Data Access (FDA)  [nesta seção](../connect/fda.md).
+   ?? Saiba mais sobre a opção Federated Data Access (FDA) em [this section](../connect/fda.md).
 
 ## Contas externas de integração de solução Adobe
 
 * **Adobe Experience Cloud**
 
-   Para se conectar ao console do Adobe Campaign por meio de uma Adobe ID, é necessário configurar a conta externa **[!UICONTROL Adobe Experience Cloud]**.
+   A conta externa **[!UICONTROL Adobe Experience Cloud]** é usada para implementar o Adobe IMS para se conectar ao console do Adobe Campaign usando uma Adobe ID.
 
-   [!DNL :bulb:] Saiba mais sobre o Adobe Identity Management Service (IMS)  [nesta seção](../start/connect.md#connect-ims).
-
-   [!DNL :speech_balloon:] Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para implementar o Adobe IMS com o Campaign.
+   ?? Saiba mais sobre o Adobe Identity Management Service (IMS) em [esta seção](../start/connect.md#connect-ims).
 
 * **Web Analytics**
 
    Use a conta externa **[!UICONTROL Web Analytics (Adobe Analytics)]** para configurar a transferência de dados do Adobe Analytics para o Adobe Campaign.
 
-   [!DNL :bulb:] Saiba mais sobre a integração Adobe Campaign - Adobe Analytics  [nesta página](../connect/ac-aa.md).
+   ?? Saiba mais sobre a integração Adobe Campaign - Adobe Analytics em [esta página](../connect/ac-aa.md).
 
-   [!DNL :speech_balloon:] Como um usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para integrar o Adobe Analytics ao Campaign.
+   ?? Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para integrar o Adobe Analytics ao Campaign.
 
    * **Adobe Experience Manager**
    A conta externa **[!UICONTROL AEM]** permite gerenciar o conteúdo dos deliveries de email, assim como os formulários diretamente no Adobe Experience Manager.
 
-   [!DNL :bulb:] Saiba mais sobre a integração Adobe Campaign - Adobe Analytics  [nesta página](../connect/ac-aem.md).
+   ?? Saiba mais sobre a integração Adobe Campaign - Adobe Analytics em [esta página](../connect/ac-aem.md).
 
-   [!DNL :speech_balloon:] Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para integrar o Adobe Experience Manager ao Adobe Campaign.
+   ?? Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para integrar o Adobe Experience Manager ao Adobe Campaign.
 
 
 ## Contas Externas do Conector CRM
@@ -99,7 +97,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para habilitar e ex
 
    A conta externa **[!UICONTROL Microsoft Dynamics CRM]** permite importar e exportar os dados do Microsoft Dynamics para o Adobe Campaign.
 
-   [!DNL :bulb:] Saiba mais sobre a integração Adobe Campaign - Microsoft Dynamics CRM  [nesta página](../connect/crm.md).
+   ?? Saiba mais sobre a integração Adobe Campaign - Microsoft Dynamics CRM em [this page](../connect/crm.md).
 
    Com o tipo de implantação **[!UICONTROL Web API]** e autenticação **[!UICONTROL Password credentials]**, é necessário fornecer os seguintes detalhes:
 
@@ -145,7 +143,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para habilitar e ex
 
 Essas contas externas podem ser usadas para importar ou exportar dados para o Adobe Campaign usando uma atividade de workflow **[!UICONTROL Transfer file]** .
 
-[!DNL :arrow_upper_right:] Saiba mais sobre a Transferência de arquivos em workflows na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
+↗️ Saiba mais sobre a transferência de arquivos em workflows na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
 
 * **FTP e SFTP**
 
