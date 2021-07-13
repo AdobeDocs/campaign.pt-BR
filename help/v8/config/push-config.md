@@ -8,14 +8,14 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 43%
 
 ---
 
-# Integre os SDKs do Campaign a seu aplicativo {#integrate-campaign-sdk}
+# Integre os SDKs do Campaign ao seu aplicativo {#integrate-campaign-sdk}
 
 Use SDKs do Campaign para iOS e Android para facilitar a integração de seu aplicativo móvel na plataforma Adobe Campaign.
 
@@ -797,7 +797,7 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
 
 As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo móvel e no console do Adobe Campaign, na guia **[!UICONTROL Variables]** no serviço de aplicativo móvel dedicado.
 
-[!DNL :arrow_upper_right:] Saiba mais na documentação do  **Campaign Classic v7** sobre aplicativos móveis:  [Etapas de configuração para iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} e etapas  [de configuração para Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}.
+↗️ Saiba mais em **documentação do Campaign Classic v7** no aplicativo móvel: [Etapas de configuração para iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} e [Etapas de configuração para Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}.
 
 Abaixo está um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
 
@@ -845,7 +845,7 @@ Abaixo está um exemplo de um código que permite que um aplicativo móvel colet
 >
 >A Adobe recomenda escolher nomes de variáveis curtos, pois o tamanho da notificação é limitado a 4kB para iOS e Android.
 
-## Extensão de serviço de notificação {#notification-service-extension}
+## Extensão de Serviço de Notificação {#notification-service-extension}
 
 **Para iOS**
 
