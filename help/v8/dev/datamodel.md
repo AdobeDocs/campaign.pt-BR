@@ -6,7 +6,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 4%
@@ -21,7 +21,7 @@ A estrutura básica do modelo de dados Adobe Campaign pode ser descrita da segui
 
 * **Tabela** de recipients: O modelo de dados depende de uma tabela principal que é, por padrão, a tabela Recipient (nmsRecipient). Essa tabela permite armazenar todos os perfis de marketing.
 
-   [!DNL :bulb:] Para obter mais informações sobre a tabela Recipient, consulte  [esta seção](#ootb-profiles).
+   ?? Para obter mais informações sobre a tabela Recipient, consulte [esta seção](#ootb-profiles).
 
 * **Tabela** de delivery: O modelo de dados também inclui uma parte dedicada ao armazenamento de todas as atividades de marketing. Geralmente é a tabela Delivery (NmsDelivery). Cada registro nesta tabela representa uma ação de delivery ou um template de delivery. Ele contém todos os parâmetros necessários para executar deliveries, como target, conteúdo, etc.
 
@@ -44,7 +44,7 @@ Você pode usar a tabela Recipient padrão com os campos prontos para uso, como 
 * [Estenda uma ](extend-schema.md) tabela existente com novos campos. Por exemplo, você pode adicionar um novo campo &quot;Fidelidade&quot; à tabela Recipient .
 * [Crie uma nova tabela](create-schema.md), por exemplo, uma tabela &quot;Purchase&quot; que lista todas as compras feitas por cada perfil do banco de dados e a vincula à tabela Recipient .
 
-[!DNL :bulb:] Descubra as práticas recomendadas ao trabalhar com o datamodel do Campaign  [nesta seção](datamodel-best-practices.md).
+?? Descubra as práticas recomendadas ao trabalhar com o datamodel do Campaign em [esta seção](datamodel-best-practices.md).
 
 ## Tabela de perfil integrada {#ootb-profiles}
 
@@ -59,9 +59,9 @@ Os benefícios de usar a tabela de recipients padrão são:
 
 É possível estender a tabela de recipients, mas não para reduzir o número de campos ou links na tabela.
 
-[!DNL :bulb:] Saiba como estender um schema existente  [nesta seção](extend-schema.md).
+?? Saiba como estender um schema existente em [esta seção](extend-schema.md).
 
-[!DNL :arrow_upper_right:] Descubra exemplos de extensões de tabela de recipient incorporadas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)
+↗️ Exemplos do Discover de extensões de tabela de recipient incorporadas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)
 
 Você também pode usar uma tabela de recipients diferente para se adequar melhor às suas necessidades comerciais ou funcionais. Este método vem com limitações e é descrito em [this section](custom-recipient.md).
 
@@ -69,9 +69,9 @@ Você também pode usar uma tabela de recipients diferente para se adequar melho
 
 Para entender melhor o gerenciamento de tabela no Campaign v8, observe que as tabelas são replicadas entre o Campaign e seu banco de dados do Snowflake Cloud.
 
-[!DNL :bulb:] Saiba mais sobre estratégia e mecanismos de replicação  [nesta seção](../config/replication.md).
+?? Saiba mais sobre estratégia e mecanismos de replicação em [esta seção](../config/replication.md).
 
 **Tópicos relacionados**
 
-[!DNL :bulb:] Descubra como importar perfis  [nesta ](../start/import.md)
-[!DNL :bulb:] seçãoSaiba mais sobre Públicos do Campaign  [nesta seção](../start/audiences.md)
+?? Descubra como importar perfis em [esta seção](../start/import.md)
+?? Saiba mais sobre públicos-alvo do Campaign em [esta seção](../start/audiences.md)
