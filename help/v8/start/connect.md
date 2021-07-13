@@ -6,10 +6,10 @@ feature: Públicos
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: a468597714e3974c85e4ada3b6c2ee405717106a
+source-git-commit: 44ddce019de74be96a955eefbc940e41e060a6d3
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 12%
+source-wordcount: '685'
+ht-degree: 13%
 
 ---
 
@@ -29,7 +29,7 @@ Ao usar o Campaign pela primeira vez ou se precisar atualizar para uma versão m
 
 Estão disponíveis duas opções:
 
-1. Como administrador do Campaign, conecte-se ao Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/encampaign.html) e baixe o programa de instalação do Console do Cliente. Em seguida, você pode instalá-lo em sua máquina local.
+1. Como administrador do Campaign, conecte-se ao Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e baixe o programa de instalação do Console do Cliente. Em seguida, você pode instalá-lo em sua máquina local.
 
 1. Como usuário final, o Adobe pode implantar o Console para você: depois que o Console for atualizado, você será solicitado a baixar a versão mais recente do Console do cliente em uma janela pop-up.
 
