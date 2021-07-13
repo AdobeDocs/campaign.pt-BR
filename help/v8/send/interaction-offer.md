@@ -5,10 +5,10 @@ description: Saiba como criar uma oferta
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 67%
+ht-degree: 69%
 
 ---
 
@@ -34,7 +34,7 @@ Agora você pode usar a guia **[!UICONTROL Eligibility]** para definir:
 * Filtros na população do target da oferta. [Saiba mais](#filters-on-the-target)
 * O peso da oferta. [Saiba mais](#offer-weight)
 
-### Período de qualificação de oferta{#eligibility-period}
+### Período de qualificação da oferta{#eligibility-period}
 
 Na guia **[!UICONTROL Eligibility]** da oferta, defina o período de qualificação da oferta. use as listas suspensas para selecionar uma data inicial e final no calendário.
 
@@ -42,7 +42,7 @@ Na guia **[!UICONTROL Eligibility]** da oferta, defina o período de qualificaç
 
 Fora desse período, a oferta não será selecionada. Se também tiver configurado datas de qualificação para a categoria de oferta, o período mais restritivo será aplicado.
 
-### Adicionar filtros no destino {#filters-on-the-target}
+### Adicionar filtros no target {#filters-on-the-target}
 
 Na guia **[!UICONTROL Eligibility]** da oferta, aplique filtros ao target da oferta.
 
@@ -54,7 +54,7 @@ Se os filtros predefinidos já tiverem sido criados, é possível selecioná-los
 
 ![](assets/offer_eligibility_create_004.png)
 
-### Defina o peso da oferta {#offer-weight}
+### Definir o peso da oferta {#offer-weight}
 
 Para permitir que o mecanismo decida entre várias ofertas que o target está qualificado, é necessário atribuir um ou mais pesos à oferta. Também é possível aplicar filtros ao target se necessário ou restringir o espaço de oferta ao qual o peso será aplicado. Uma oferta com um peso mais significativo será preferível sobre uma oferta com menos peso.
 
@@ -108,7 +108,7 @@ Para fazer isso, clique no link **[!UICONTROL Schedule and eligibility rules]**.
 
 ![](assets/offer_eligibility_create_005.png)
 
-## Crie o conteúdo da oferta {#creating-the-offer-content}
+## Criar o conteúdo da oferta {#creating-the-offer-content}
 
 Use a guia **[!UICONTROL Content]** para definir o conteúdo da oferta.
 
@@ -182,13 +182,13 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 Agora você pode aprovar e ativar a oferta para torná-la disponível no ambiente **Live**.
 
-[!DNL :arrow_upper_right:] Para obter mais informações, consulte a documentação do  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
+↗️ Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
 
 ## Gerenciar apresentação de ofertas{#offer-presentation}
 
 O Campaign permite controlar o fluxo de apresentações de oferta usando regras de apresentação. Essas regras, que são específicas à Interação de campanha, são **regras de tipologia**. Elas permitem excluir ofertas com base no histórico de apresentações já feitas a um recipient. Eles são referenciados no ambiente.
 
-[!DNL :arrow_upper_right:] Para obter mais informações, consulte a documentação do  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
+↗️ Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
 
 ## Simulação de oferta
 
@@ -196,4 +196,4 @@ O módulo Simulation permite testar a distribuição de ofertas pertencentes a u
 
 A simulação leva em consideração os contextos e as regras de qualificação aplicadas anteriormente às ofertas e suas regras de apresentação. Isso permite testar e refinar várias versões da apresentação de oferta sem realmente usar uma oferta ou sobrecarregar ou não um destino, já que a simulação não tem impacto nos recipients de destino.
 
-[!DNL :arrow_upper_right:] Para obter mais informações sobre a simulação de oferta, consulte a documentação do  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
+↗️ Para obter mais informações sobre a simulação de oferta, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
