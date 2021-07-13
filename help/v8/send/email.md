@@ -5,10 +5,10 @@ description: Introdução a emails no Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '605'
-ht-degree: 15%
+ht-degree: 20%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 Os deliveries de email permitem enviar emails personalizados para a população do target.
 
-[!DNL :arrow_upper_right:] Saiba mais na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html).
+↗️ Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html).
 
 ## Criar seu primeiro delivery de email
 
@@ -78,22 +78,22 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 Saiba mais nestas seções da documentação do Campaign Classic v7:
 
 * Criar um email no Campaign
-   [!DNL :arrow_upper_right:] [Saiba como criar um email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html)
+↗️ [Saiba como criar um email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html)
 * Importar conteúdo de email
-   [!DNL :arrow_upper_right:] [Caso de uso: Criar um workflow para carregar um conteúdo de delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html)
+↗️ [Caso de uso: Crie um workflow para carregar um conteúdo de delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html)
 * Criar e usar um modelo de email
-   [!DNL :arrow_upper_right:] [Saiba mais sobre templates de email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+↗️ [Saiba mais sobre templates de email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
 * Selecione o público do seu email
-   [!DNL :arrow_upper_right:] [Saiba como definir a população do target](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
+↗️ [Saiba como definir a população do target](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
 * Validar um delivery e enviar provas
-   [!DNL :arrow_upper_right:] [Saiba mais sobre as principais etapas para validar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+↗️ [Conheça as principais etapas para validar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
 * Adicionar [seed addresses](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html)
 
 ## Testar e validar seus emails
 
 O Campaign oferece várias maneiras de testar e validar seus emails antes de enviá-los para seus públicos.
 
-[!DNL :arrow_upper_right:] [Aplicar práticas recomendadas listadas na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html)
+↗️ [Aplicar práticas recomendadas listadas na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html)
 
 Você pode:
 
@@ -103,11 +103,11 @@ Você pode:
 * Usar grupos de controle
 * Verificar renderização de email
 
-[!DNL :arrow_upper_right:] [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+↗️ [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
 
 ## Monitorar emails
 
 Depois de enviado, verifique o status do delivery no Painel de delivery e acesse os logs do delivery e os relatórios para confirmar se as mensagens foram enviadas corretamente.
 
-[!DNL :arrow_upper_right:] [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)
+↗️ [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)
 
