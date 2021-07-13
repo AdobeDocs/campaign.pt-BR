@@ -6,7 +6,7 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 12%
@@ -26,7 +26,7 @@ Você pode configurar:
 * Envio automático de relatórios
 * Eventos acionados
 
-## Projete e use workflows{#gs-ac-wf}
+## Projetar e usar workflows{#gs-ac-wf}
 
 Use os fluxos de trabalho do Adobe Campaign para melhorar a velocidade e a escala de cada aspecto de suas campanhas de marketing, desde a criação de segmentos e a preparação de mensagens até o delivery.
 
@@ -34,41 +34,37 @@ Saiba como criar workflows nesses [casos de uso completos](#end-to-end-uc).
 
 Saiba mais sobre a interface de usuário de workflows e a execução na documentação do Campaign Classic v7:
 
-[!DNL :arrow_upper_right:]  [Introdução a workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
+↗️ [Introdução a workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
 * Atividades de workflow:
    * [Atividades de direcionamento](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html){target=&quot;_blank&quot;}: Consulta, lista de leitura, Enriquecimento, União e muito mais
    * [Atividades de controle de fluxo](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html){target=&quot;_blank&quot;}: Scheduler, Bifurcar, Alerta, Sinal externo e muito mais
    * [Atividades de ação](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;}: Deliveries entre canais, código Javascript, atividades CRM, Atualizar agregação e muito mais
-   * [Atividades de evento](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;}: Transferência de arquivos, download da Web e muito mais
-      [!DNL :arrow_upper_right:]  [Criar um público-alvo em um workflow de campanha de marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}
-      [!DNL :arrow_upper_right:]  [Práticas recomendadas do workflow](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html){target=&quot;_blank&quot;}
-      [!DNL :arrow_upper_right:] [Workflows técnicos incorporados](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html){target=&quot;_blank&quot;}
-      [!DNL :arrow_upper_right:] [Monitorar a execução de workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html){target=&quot;_blank&quot;}
+   * [Atividades de evento](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;}: Transferência de arquivos, download da Web e mais ↗️   [Criar um público em um fluxo de trabalho de campanha de marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;} ↗️ Práticas recomendadas   [do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html){target=&quot;_blank&quot;} ↗️ fluxos de trabalho técnicos  [incorporados](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html){target=&quot;_blank&quot;} ↗️  [Monitorar a execução de fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html){target=&quot;_blank&quot;}
 
 
 ## Configurar campanhas recorrentes
 
 Projete um workflow recorrente e crie uma nova instância de delivery toda vez que o workflow for executado. Por exemplo, se o fluxo de trabalho for projetado para ser executado uma vez por semana, o resultado será 52 deliveries em um ano. Isso também significa que os logs serão separados por cada instância de delivery.
 
-[!DNL :arrow_upper_right:] Saiba como criar uma campanha recorrente na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns){target=&quot;_blank&quot;}
+↗️ Saiba como criar uma campanha recorrente na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns){target=&quot;_blank&quot;}
 
 
 ## Aproveitar eventos de acionador
 
 Use as mensagens transacionais do Campaign para automatizar as mensagens geradas a partir de eventos acionados de sistemas de informações. Essas mensagens transacionais podem ser fatura, confirmação de pedido, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta ou criação de conta de site, por exemplo. Essas mensagens podem ser enviadas individualmente ou em lote por email, SMS ou notificações por push.
 
-[!DNL :bulb:] Saiba mais sobre os recursos de mensagens transacionais  [nesta seção](../send/transactional.md).
+?? Saiba mais sobre os recursos de mensagens transacionais em [esta seção](../send/transactional.md).
 
 Conecte o Adobe Campaign e o Adobe Analytics para recuperar as ações do usuário e enviar mensagens personalizadas em tempo quase real.
 
-[!DNL :bulb:] Saiba como integrar o Campaign com outras soluções  [nesta seção](../start/connect.md)
+?? Saiba como integrar o Campaign com outras soluções em [esta seção](../start/connect.md)
 
 
 ## Casos de uso completos do fluxo de trabalho{#end-to-end-uc}
 
 Nesta seção você encontrará vários casos de uso que usam os recursos dos workflows do Campaign. Esses casos de uso são criados no Adobe Campaign Classic v7 e se aplicam ao Adobe Campaign v8.
 
-### Deliveries {#deliveries}
+### Entregas {#deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
