@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Práticas recomendadas do modelo de dados
 description: Conheça as práticas recomendadas de extensão do modelo de dados do Campaign
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 4%
@@ -17,9 +17,9 @@ O sistema Adobe Campaign é muito flexível e pode ser estendido além da implem
 
 Para obter uma melhor compreensão das tabelas integradas do Campaign e como elas se relacionam entre si, consulte [esta seção](datamodel.md) .
 
-[!DNL :bulb:] Leia  [esta ](schemas.md) seção para começar a usar os esquemas do Campaign.
+?? Leia [esta seção](schemas.md) para começar a usar os esquemas do Campaign.
 
-[!DNL :bulb:] Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign  [nesta página](extend-schema.md).
+?? Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign em [this page](extend-schema.md).
 
 ## Arquitetura do modelo de dados {#data-model-architecture}
 
@@ -36,7 +36,7 @@ Para acessar a descrição de cada tabela, vá para **[!UICONTROL Admin > Config
 >
 >O Adobe Campaign permite criar uma [tabela de recipient personalizada](custom-recipient.md). No entanto, na maioria dos casos, é recomendável aproveitar a [tabela de recipient](datamodel.md#ootb-profiles) que já tem tabelas e recursos adicionais pré-criados.
 
-### Dados para Adobe Campaign {#data-for-campaign}
+### Dados do Adobe Campaign {#data-for-campaign}
 
 Quais dados devem ser enviados para o Adobe Campaign? É importante determinar os dados necessários para suas atividades de marketing.
 
@@ -67,7 +67,7 @@ Para garantir uma boa arquitetura e o desempenho do sistema, siga as práticas r
 
 Um campo precisa ser armazenado em uma tabela se tiver uma finalidade de direcionamento ou personalização. Em outras palavras, se um campo não for usado para enviar um email personalizado ou como um critério em uma query, ele ocupará espaço em disco desnecessariamente.
 
-### Escolha das chaves {#choice-of-keys}
+### Escolha de chaves {#choice-of-keys}
 
 Além dos **autouuid** e **autopk** definidos por padrão na maioria das tabelas, você deve considerar adicionar algumas chaves lógicas ou de negócios (número de conta, número de cliente e assim por diante). Ele pode ser usado posteriormente para importações/reconciliação ou pacotes de dados. Para obter mais informações, consulte [Identificadores](#identifiers).
 
@@ -175,7 +175,7 @@ Existem algumas soluções para minimizar a necessidade de registros no Adobe Ca
 
 Você pode declarar o atributo &quot;deleteStatus&quot; em um schema. É mais eficiente marcar o registro como excluído e, em seguida, adiar a exclusão na tarefa de limpeza.
 
-[!DNL :speech_balloon:] Como usuário do Managed Cloud Services, entre em contato com os consultores de Adobe ou administradores técnicos para saber mais sobre retenção ou se é necessário definir a retenção para tabelas personalizadas.
+?? Como usuário do Managed Cloud Services, entre em contato com os consultores de Adobe ou administradores técnicos para saber mais sobre retenção ou se é necessário definir a retenção para tabelas personalizadas.
 
 ## Desempenho {#performance}
 
@@ -191,7 +191,7 @@ Para garantir melhor desempenho a qualquer momento, siga as práticas recomendad
 * Use uma ou várias tabelas de referência em vez de duplicar um campo em cada linha. Ao usar pares de chave/valor, é preferível escolher uma chave numérica.
 * Uma string curta permanece aceitável. Caso as tabelas de referências já estejam em vigor em um sistema externo, reutilizar a mesma facilitará a integração de dados com o Adobe Campaign.
 
-### Relações de um para muitos {#one-to-many-relationships}
+### Relações um para muitos {#one-to-many-relationships}
 
 * O design de dados afeta a usabilidade e a funcionalidade. Se você projetar seu modelo de dados com muitas relações um para muitos, torna mais difícil para os usuários construir uma lógica significativa no aplicativo. A lógica de filtro one-to-many pode ser difícil para profissionais de marketing não técnicos construírem e compreenderem corretamente.
 * É bom ter todos os campos essenciais em uma tabela, pois facilita a criação de consultas por parte dos usuários. Às vezes, também é bom que o desempenho duplique alguns campos nas tabelas se puder evitar uma junção.
