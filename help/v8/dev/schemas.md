@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Trabalhar com esquemas do Campaign
 description: Introdução a esquemas
-source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 7%
@@ -97,18 +97,18 @@ A chave de identificação de um schema é uma cadeia de caracteres criada usand
 
 Para adicionar um campo ou outro elemento a um dos esquemas de dados principais no Campaign, como a tabela de recipients (nms:recipient), é necessário estender esse schema.
 
-[!DNL :bulb:] Para obter mais informações, consulte  [Estender um schema](extend-schema.md).
+?? Para obter mais informações, consulte [Estender um schema](extend-schema.md).
 
 Para adicionar um tipo de dados totalmente novo que não existe no Adobe Campaign (uma tabela de contratos, por exemplo), é possível criar um schema personalizado diretamente.
 
-[!DNL :bulb:] Para obter mais informações, consulte  [Criar um novo schema](create-schema.md).
+?? Para obter mais informações, consulte [Criar um novo schema](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
 
 Depois de criar ou estender um schema para funcionar, a prática recomendada é definir seus elementos de conteúdo XML na mesma ordem em que aparecem abaixo.
 
-## Listas discriminadas {#enumerations}
+## Enumerações {#enumerations}
 
 As enumerações são definidas primeiro, antes do elemento principal do schema. Eles permitem exibir valores em uma lista para restringir as opções que o usuário tem para um determinado campo.
 
@@ -153,7 +153,7 @@ Neste exemplo, em vez de permitir que o atributo **@autouuid** crie uma chave pr
 >
 >Ao criar um novo schema ou durante uma extensão de schema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o schema.
 
-[!DNL :bulb:] Saiba mais sobre as chaves  [nesta seção](database-mapping.md#management-of-keys).
+?? Saiba mais sobre as chaves em [nesta seção](database-mapping.md#management-of-keys).
 
 ## Atributos (Campos) {#attributes--fields-}
 
@@ -163,7 +163,7 @@ Os atributos permitem definir os campos que compõem o objeto de dados. Você po
 
 A lista completa de atributos está disponível na seção `<attribute>` element em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Estes são alguns dos atributos mais usados: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label a13/>,**@length **,**@name **,**@notNull **,**@required **,**@ref 23/>, **@xml**, **@type**.****
 
-[!DNL :arrow_upper_right:] Para obter mais informações sobre cada atributo, consulte a Descrição de atributo na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
+↗️ Para obter mais informações sobre cada atributo, consulte a descrição do Atributo na documentação do [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
 
 ### Exemplos {#examples}
 
