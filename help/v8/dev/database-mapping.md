@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Mapeamento do banco de dados do Campaign
 description: Mapeamento do banco de dados do Campaign
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 0%
@@ -256,7 +256,7 @@ Para relações de associação usando o Federated Database Access:
 * ![](assets/do-not-localize/join_fda_11.png) : Cardinalidade 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Cardinalidade 1-N
 
-[!DNL :bulb:] Para obter mais informações sobre tabelas FDA, consulte  [Federated Data Access](../connect/fda.md).
+?? Para obter mais informações sobre tabelas FDA, consulte [Federated Data Access](../connect/fda.md).
 
 Um link deve ser declarado no schema que contém a chave externa da tabela vinculada por meio do elemento principal:
 
