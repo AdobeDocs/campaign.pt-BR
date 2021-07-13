@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
-title: Introdução às APIs do Campaign
-description: Introdução às APIs do Campaign
+title: 'Introdução às APIs do Campaign '
+description: 'Introdução às APIs do Campaign '
 feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 7%
+ht-degree: 12%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 7%
 
 Você pode usar APIs do JavaScript para gravar no banco de dados da nuvem do Campaign ou ler a partir do banco de dados:
 
-* APIs específicas de negócios que permitem agir em cada objeto: deliveries, workflows, subscrições e assim por diante. Saiba mais em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html).
-* APIs genéricas de acesso aos dados para consultar os dados do modelo de dados. Saiba mais em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html).
+* APIs específicas de negócios que permitem agir em cada objeto: deliveries, workflows, subscrições e assim por diante. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html).
+* APIs genéricas de acesso aos dados para consultar os dados do modelo de dados. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html).
 
 O Campaign v8 funciona com dois bancos de dados: um banco de dados local para a interface do usuário, mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e um banco de dados da nuvem para execução de campanha, relatórios, assimilação de dados, consultas em lote e execução de workflows.
 
@@ -49,13 +49,13 @@ Para usar APIs e interagir com [!DNL Adobe Campaign], você também deve estar f
 
 Com o [!DNL Campaign] banco de dados da nuvem, as chamadas unitárias de explosão não são recomendadas devido ao desempenho (latência e simultaneidade). A operação em lote é sempre preferida. Para garantir desempenho ideal das APIs, o Campaign continua lidando com chamadas de API no nível do banco de dados local.
 
-[!DNL :bulb:] [O mecanismo de preparo da API é detalhado nesta página](staging.md)
+?? [O mecanismo de preparo da API é detalhado nesta página](staging.md)
 
 ## Novas APIs
 
 Novas APIs estão disponíveis para gerenciar a sincronização de dados entre o banco de dados local [!DNL Campaign] e o banco de dados da nuvem. Um novo mecanismo também foi introduzido para lidar com chamadas de API no nível do banco de dados local, a fim de evitar latência e aumentar o desempenho geral.
 
-[!DNL :bulb:] [As novas APIs são detalhadas nesta página](new-apis.md)
+?? [Novas APIs são detalhadas nesta página](new-apis.md)
 
 **Tópicos relacionados**
 
