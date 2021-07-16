@@ -6,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
-workflow-type: ht
-source-wordcount: '277'
-ht-degree: 100%
+source-git-commit: 610a818c1f5d8a43ea55659a3c5b46676405415d
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 96%
 
 ---
 
@@ -23,39 +23,39 @@ Este documento lista todos os sistemas e componentes compatíveis com o último 
 >* À medida que versões específicas desses sistemas e ferramentas de terceiros atingirem o fim da vida útil (EOL), o Adobe Campaign não será mais compatível com essas versões, e elas serão removidas da matriz de compatibilidade. Verifique se você está usando as versões compatíveis dos sistemas listados na matriz de compatibilidade para evitar problemas.
 
 
-## Sistemas compatíveis
+## Console do cliente{#ClientConsoleoperatingsystems}
 
-### Console do cliente{#ClientConsoleoperatingsystems}
+>[!CAUTION]
+>
+> os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
 
-:warning: os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
-
-**Sistemas operacionais**
+### Sistemas operacionais
 
 * **Microsoft Windows Server** 2016, 2012
 * **Microsoft Windows** 8, 10 (recomendado para instâncias japonesas))
 
-**Navegador**
+### Navegador
 
 **Microsoft Internet Explorer** 11
 
-### Conectores CRM{#CRMconnectors}
+## Conectores CRM{#CRMconnectors}
 
 * **API do conector Salesforce** versão 49
 * **Conector do Microsoft Dynamics**, API da web: Dynamics 365 On-premises e Online
 
-### Federated Data Access (FDA){#FederatedDataAccessFDA}
+## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
 * **Amazon Redshift**
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
 
-### SDK móvel{#MobileSDK}
+## SDK móvel{#MobileSDK}
 
 * **Android** 7.x, 8.x e 9.0 com o SDK Campaign Android build 1.1.1.
 * **Apple iOS** 9 - 14 com o SDK Campaign iOS build 1.0.26, compatível com versões de 32 e 64 bits.
 
-### Navegadores compatíveis {#Browsers}
+## Acesso à Web
 
 Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 
@@ -65,7 +65,7 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 
 ## Como verificar a versão do Campaign e build
 
-Use o menu **Ajuda > Sobre...** para verificar sua versão.
+Acesse o menu **Ajuda > Sobre...** para verificar sua versão.
 
 ![](assets/ac-version.png)
 
