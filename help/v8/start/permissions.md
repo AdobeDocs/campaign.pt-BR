@@ -6,10 +6,10 @@ description: Saiba como conceder permissões ao Campaign v8
 feature: Públicos
 role: Data Engineer
 level: Beginner
-source-git-commit: a57855556751e85e7a1f7751a103ca157f434a8a
+source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 12%
+source-wordcount: '383'
+ht-degree: 13%
 
 ---
 
@@ -37,7 +37,7 @@ Cada operador precisa ser vinculado a uma zona para fazer logon em uma instânci
 
 Os operadores são vinculados a uma zona de segurança a partir do seu perfil no console, acessível no nó **[!UICONTROL Administration > Access management > Operators]**.
 
-?? Como usuário do Managed Cloud Services, o Adobe define as zonas de segurança para você. Para obter mais informações, [entre em contato com o Adobe](support.md#support).
+?? Como usuário do Managed Cloud Services, o Adobe define as zonas de segurança para você. Para obter mais informações, [entre em contato com o Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 **Saiba mais na documentação do Campaign Classic v7**
 
