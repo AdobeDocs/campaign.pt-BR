@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: f51c36ed426d200a4636290eb4fa1be6b077f976
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Este documento lista todos os sistemas e componentes compatíveis com o último 
 
 >[!CAUTION]
 >
-> os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
+> Os sistemas operacionais e navegadores a seguir são necessários para usar o Console do cliente do Campaign.
 
 ### Sistemas operacionais
 
@@ -61,7 +61,7 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 
 ## Como verificar a versão do Campaign e build
 
-Acesse o menu **Ajuda > Sobre...** para verificar sua versão.
+Use o menu **Ajuda > Sobre...** para verificar sua versão.
 
 ![](assets/ac-version.png)
 
