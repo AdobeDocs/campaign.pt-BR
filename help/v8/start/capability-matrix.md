@@ -6,10 +6,10 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: bfd2df90e5e6bee89bdfc7c5da82c755ac5726df
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 94%
+source-wordcount: '916'
+ht-degree: 95%
 
 ---
 
@@ -74,13 +74,21 @@ Usuários do Campaign não precisam ser especialistas em banco de dados: não h�
 
 ## Conexão com o Campaign
 
-Os usuários da campanha se conectam por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos de Adobe associados a uma única conta.
+Os usuários do Campaign se conectam por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos da Adobe associados a uma única conta.
 
-?? Saiba como se conectar a [!DNL Campaign] em [esta página](connect.md).
+?? Saiba como se conectar a [!DNL Campaign] [nesta página](connect.md).
 
 ## Relatórios
 
 Observe que os relatórios do Adobe Campaign são otimizados e oferecem recursos de melhor escala que o Campaign Classic v7. As limitações existentes em cubos não se aplicam.
+
+## Fluxo de trabalho {#workflow}
+
+O Campaign v8 oferece uma atividade adicional de workflow para construção do target: **[!UICONTROL Change data source]**.
+
+A atividade **[!UICONTROL Change data source]** permite alterar a fonte de dados de um workflow **[!UICONTROL Working table]** para gerenciar dados em diferentes fontes de dados, como FDA, FDA e banco de dados local.
+
+?? Saiba mais sobre a atividade **[!UICONTROL Change data source]** em [esta página](../config/workflows.md#change-data-source-activity).
 
 ## Recursos indisponíveis{#gs-unavailable-features}
 
