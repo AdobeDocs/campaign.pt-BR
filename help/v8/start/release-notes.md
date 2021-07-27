@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 5d266b22661be2817e06ea71c1b0bec7f44a152d
+source-git-commit: 328f1bca11f8554def6ad4ccb741a86695481e98
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '312'
 ht-degree: 7%
 
 ---
@@ -50,14 +50,13 @@ _23 de julho de 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>O canal LINE agora está disponível com o Campaign v8. Os seguintes aprimoramentos foram feitos ao usar o LINE com o Message Center:
-</p>
+<td> <p>O <a href="../send/line.md">canal LINE</a> agora está disponível com o Campaign v8, incluindo os seguintes aprimoramentos quando combinado com o módulo <a href="../send/transactional.md">mensagens transacionais</a>:
 <ul> 
 <li><p>Correção de um problema que impedia que visitantes fossem direcionados em um delivery LINE. 
 </p></li>
 <li><p>Correção de um problema que poderia causar erros ao recuperar visitantes da instância de execução para a instância de marketing.
 </p></li>
-<li><p>Correção de problemas durante o processamento de eventos em tempo real no contexto de deliveries LINE usando o Centro de mensagens.</p></li>
+<li><p>Correção de problemas durante o processamento de eventos em tempo real.</p></li>
 </ul>
 </td> 
 </tr> 
