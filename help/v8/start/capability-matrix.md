@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: bfd2df90e5e6bee89bdfc7c5da82c755ac5726df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '916'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -84,11 +84,11 @@ Observe que os relatórios do Adobe Campaign são otimizados e oferecem recursos
 
 ## Fluxo de trabalho {#workflow}
 
-O Campaign v8 oferece uma atividade adicional de workflow para construção do target: **[!UICONTROL Change data source]**.
+O Campaign v8 oferece uma atividade adicional de fluxo de trabalho para direcionamento: **[!UICONTROL Change data source]**.
 
-A atividade **[!UICONTROL Change data source]** permite alterar a fonte de dados de um workflow **[!UICONTROL Working table]** para gerenciar dados em diferentes fontes de dados, como FDA, FDA e banco de dados local.
+A atividade **[!UICONTROL Change data source]** permite alterar a fonte de dados de um fluxo de trabalho **[!UICONTROL Working table]** para gerenciar dados em diferentes fontes de dados, como FDA, FFDA e banco de dados local.
 
-?? Saiba mais sobre a atividade **[!UICONTROL Change data source]** em [esta página](../config/workflows.md#change-data-source-activity).
+?? Saiba mais sobre a atividade **[!UICONTROL Change data source]** em [nesta página](../config/workflows.md#change-data-source-activity).
 
 ## Recursos indisponíveis{#gs-unavailable-features}
 
