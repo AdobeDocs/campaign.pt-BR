@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Essa frequência regular de atualizações tem como objetivo disponibilizar a você o que há de melhor e mais recente, mantendo seu ambiente seguro e melhorando sua experiência com nosso produto. É por isso que acreditamos que é essencial executar a versão mais recente do Adobe Campaign.
 
-   ?? Como usuário do Managed Cloud Services, sua instância é atualizada pela Adobe a cada nova versão.
+   ?? Como usuário do Cloud Services, sua instância é atualizada pela Adobe a cada nova versão.
 
 1. **Como posso me conectar ao Campaign v8?**
 
@@ -61,7 +61,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Um subdomínio é uma divisão do seu domínio que pode ser usada para isolar suas marcas ou vários tipos de tráfego (mensagens transacionais, informações de marketing etc.).
 
-   ?? Como um usuário do Managed Cloud Services, entre em contato com a Adobe para delegar os subdomínios à Adobe.
+   ?? Como um usuário do Managed Cloud Services, entre em contato com a Adobe para delegar seus subdomínios à Adobe.
 
 1. **Como usuário do Campaign Classic v7, posso migrar para o Campaign v8?**
 
