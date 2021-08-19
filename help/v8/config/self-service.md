@@ -5,10 +5,10 @@ description: Introdução ao Painel de controle do Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: 8415bfce30948104840a92d1be0d72e07c8e29ee
+source-git-commit: f35122d5e5f5812d9a3fda9b21f2f7fd88aaaa0f
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 91%
+source-wordcount: '345'
+ht-degree: 82%
 
 ---
 
@@ -38,15 +38,15 @@ Você também pode usar o Painel de controle do Campaign para definir as configu
 
 ## Como acessar o Painel de controle do Campaign?
 
-O Painel de controle do Campaign está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=pt-BR) para obter mais informações.
+O Painel de controle do Campaign está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=pt-BR){target=&quot;_blank&quot;} para obter mais informações.
 
 ## Perguntas frequentes sobre o Painel de controle do Campaign
 
-[Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR) para acessar as Perguntas frequentes sobre o Painel de controle do Campaign.
+[Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=en#control-panel){target=&quot;_blank&quot;} para acessar as perguntas frequentes do Painel de controle do Campaign.
 
 ## Gerenciamento de SFTP
 
-No Painel de controle do Campaign, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. Você pode monitorar a capacidade de armazenamento, gerenciar endereços IP na lista de permissões e chaves SSH públicas. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=pt-BR#sftp-management) para obter mais informações.
+No Painel de controle do Campaign, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. Você pode monitorar a capacidade de armazenamento, gerenciar endereços IP na lista de permissões e chaves SSH públicas. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=pt-BR#sftp-management){target=&quot;_blank&quot;} para obter mais informações.
 
 ## Configurações de instância
 
