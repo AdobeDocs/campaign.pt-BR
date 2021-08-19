@@ -5,9 +5,9 @@ description: Introdução ao Painel de controle do Campaign
 feature: Visão geral
 role: Data Engineer
 level: Beginner
-source-git-commit: d61888a4536d6f37f5956c8fd5404bdcd893ae6c
+source-git-commit: 8415bfce30948104840a92d1be0d72e07c8e29ee
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '337'
 ht-degree: 91%
 
 ---
@@ -24,7 +24,7 @@ Principais benefícios:
 
 Você também pode usar o Painel de controle do Campaign para definir as configurações da instância, como a lista de permissões de IP, as permissões de URL e recuperar informações sobre a instância.
 
-↗️ Saiba mais em [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=pt-BR){target=&quot;_blank&quot;}.
+↗️ Saiba mais em [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
 > Os seguintes recursos ainda não são compatíveis com o Campaign v8:
