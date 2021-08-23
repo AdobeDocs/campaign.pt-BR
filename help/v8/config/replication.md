@@ -6,9 +6,9 @@ feature: Visão geral
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 6334178f6e5d0ad0a33975838be6cf663862d892
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '392'
 ht-degree: 3%
 
 ---
@@ -43,6 +43,13 @@ Se necessário, é possível iniciar a sincronização de dados manualmente. Par
 
 Algumas tabelas integradas são replicadas do banco de dados local do Campaign para o [!DNL Snowflake] banco de dados do Cloud por meio de workflows dedicados descritos acima.
 
+Entenda quais bancos de dados o Adobe Campaign v8 usa, por que os dados estão sendo replicados, quais dados estão sendo replicados e como o processo de replicação funciona.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
+
+
+### Políticas de replicação de dados
+
 As políticas de replicação são baseadas no tamanho das tabelas. Algumas tabelas serão replicadas em tempo real, outras serão replicadas a cada hora. Algumas tabelas terão atualizações incrementais quando outras forem substituídas.
 
 Além do workflow técnico interno **Replicar tabelas de referência**, você pode forçar a replicação de dados em seus workflows.
@@ -65,6 +72,8 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 ```
 
 ![](assets/nlmodule.png)
+
+
 
 **Tópicos relacionados**
 
