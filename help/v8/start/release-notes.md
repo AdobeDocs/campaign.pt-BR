@@ -2,21 +2,59 @@
 product: Adobe Campaign
 title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 328f1bca11f8554def6ad4ccb741a86695481e98
-workflow-type: ht
-source-wordcount: '312'
-ht-degree: 100%
+source-git-commit: 5b81c8e9e391ea1a9ad1825e5102b66c7926c204
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 43%
 
 ---
 
 # Versão mais recente{#latest-release}
 
 Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign v8**.
+
+## Versão 8.1.20 {#release-8-1-20}
+
+_7 de setembro de 2021_
+
+**Melhorias de segurança**
+
+* Correção de um problema de segurança para reforçar a proteção contra ataques de travessia de diretórios. (NEO-28547)
+
+**Melhorias**
+
+* Após o fim da vida útil, o Flash foi removido de todos os recursos e componentes relacionados do Campaign e substituído pelo HTML5. O tipo de gráfico **Gage** foi removido. (NEO30330) [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html)
+* Ao instalar o console do cliente no Windows, o instalador agora verifica se há um nó de registro pai e cria um se estiver ausente. Isso evita possíveis problemas ao iniciar o console. (NEO-34854)
+* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados às ferramentas de terceiros (clientes de email, navegadores de Internet etc.) manipule caracteres especiais. Os parâmetros de URL agora são codificados.
+
+**Outras alterações**
+
+* Os conectores do Microsoft CRM obsoletos anteriormente (implantações do Office 365 e no local) foram removidos da interface. [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
+* Após a migração para o Tomcat 8, o script de configuração do IIS foi atualizado para corrigir problemas de integração do IIS. (NEO-31019)
+* Uma garantia foi adicionada para permitir que o [workflow técnico de faturamento](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html#billing-report) seja executado na instância de marketing.
+* A identificação da fonte de dados foi aprimorada nas guias de dados e schema da janela **View population** das transições do fluxo de trabalho.
+* Os índices de banco de dados ausentes foram adicionados aos seguintes esquemas para evitar problemas de atualização do banco de dados: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
+
+**Correções**
+
+* Correção de um problema que impedia o funcionamento do relatório **Hot clicks** quando as ofertas eram vinculadas ao delivery. (NEO-26295)
+* Correção de um problema com a atividade **Sub-workflow** quando sua execução não gerava uma tabela de saída. (NEO-36242)
+* Correção de vários problemas ao exportar o relatório de **Análise descritiva** para PDF. (NEO-25847)
+* Correção de um problema que poderia resultar em falha de delivery ao usar um delivery de email externo. (NEO-37435)
+* Correção de um erro ao se conectar ao Microsoft CRM usando a API da Web. A mensagem de erro foi removida, pois as funcionalidades não foram afetadas.
+* Correção de um problema de desduplicação de log de rastreamento quando o servidor mid era definido como uma retransmissão entre servidores de rastreamento e de marketing. (NEO-36285)
+* Correção de uma regressão que impedia o Vault de ser usado como um armazenamento de código específico.
+* Correção de um problema que impedia o uso de variáveis em uma atividade de workflow de **Enriquecimento** quando a transição recebida era de uma fonte de dados FDA.
+* Correção de um problema com o FDA que impedia a replicação adequada de grupos e direitos de operadores.
+* Correção de um problema que poderia resultar no envio de um link de unsubscription incorreto por meio do delivery.
+* Correção de um problema no gerenciamento de replicação que afetava a duração da pós-atualização.
+* Correção de um problema que impedia a exibição do **Hot click**.
+* Correção de um problema que poderia resultar em URLs inválidos em mensagens de email.
 
 ## Versão 8.1.14 {#release-8-1-14}
 
