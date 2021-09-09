@@ -2,14 +2,14 @@
 product: Adobe Campaign
 title: Campaign Classic v7 - Matriz de recursos do Campaign v8
 description: Entender as diferenças entre o Campaign Classic v7 e o Campaign v8
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: d61888a4536d6f37f5956c8fd5404bdcd893ae6c
-workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '909'
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,6 @@ Qualquer esquema/tabela interna que precise ser movido ou replicado no banco de 
 >
 > Os dados do cliente não são armazenados no banco de dados local do [!DNL Campaign]. Como consequência, qualquer tabela personalizada precisa ser criada no banco de dados na nuvem.
 
-
 APIs específicas estão disponíveis para gerenciar dados entre o banco de dados local e na nuvem. Saiba como essas novas APIs funcionam e como usá-las [nesta página](../dev/new-apis.md).
 
 ### Replicação de dados
@@ -54,7 +53,6 @@ Um fluxo de trabalho técnico específico trata da replicação de tabelas que p
 >
 > Várias políticas de replicação foram criadas, com base no tamanho da tabela (XS, XL etc.).
 > Algumas tabelas são replicadas em tempo real, outras são replicadas de hora em hora. Algumas tabelas terão atualizações incrementais; outras terão uma atualização completa.
-
 
 [Saiba mais sobre replicação de dados](../config/replication.md)
 
@@ -80,7 +78,7 @@ Os usuários do Campaign se conectam por meio da Adobe ID. A mesma Adobe ID é u
 
 ## Relatórios
 
-Observe que os relatórios do Adobe Campaign são otimizados e oferecem recursos de melhor escala que o Campaign Classic v7. As limitações em cubos não se aplicam.
+Observe que os relatórios do Adobe Campaign são otimizados e oferecem recursos de melhor escala que o Campaign Classic v7. As limitações existentes em cubos não se aplicam.
 
 ## Fluxo de trabalho {#workflow}
 
