@@ -2,13 +2,13 @@
 product: Adobe Campaign
 title: Painel de controle do Campaign
 description: Introdução ao Painel de controle do Campaign
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
 source-git-commit: f35122d5e5f5812d9a3fda9b21f2f7fd88aaaa0f
-workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 82%
+workflow-type: ht
+source-wordcount: '344'
+ht-degree: 100%
 
 ---
 
@@ -24,16 +24,15 @@ Principais benefícios:
 
 Você também pode usar o Painel de controle do Campaign para definir as configurações da instância, como a lista de permissões de IP, as permissões de URL e recuperar informações sobre a instância.
 
-↗️ Saiba mais em [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target=&quot;_blank&quot;}.
+↗️ Saiba mais na [documentação do Painel do controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
 > Os seguintes recursos ainda não são compatíveis com o Campaign v8:
 >
->* Gestão de subdomínio
+>* Gerenciamento de subdomínio
 >* Gerenciamento de certificados
 
 >
-
 
 
 ## Como acessar o Painel de controle do Campaign?
@@ -42,7 +41,7 @@ O Painel de controle do Campaign está disponível diretamente na Adobe Experien
 
 ## Perguntas frequentes sobre o Painel de controle do Campaign
 
-[Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=en#control-panel){target=&quot;_blank&quot;} para acessar as perguntas frequentes do Painel de controle do Campaign.
+[Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR#control-panel){target=&quot;_blank&quot;} para acessar as Perguntas frequentes sobre o Painel de controle do Campaign.
 
 ## Gerenciamento de SFTP
 
