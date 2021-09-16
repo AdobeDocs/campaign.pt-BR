@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Configurações de mensagens transacionais de campanha
 description: Configurações de mensagens transacionais de campanha
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 2899f627-696d-422c-ae49-c1e293b283af
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '326'
 ht-degree: 22%
 
 ---
@@ -75,4 +75,3 @@ Este é um exemplo de um evento que contém essas informações:
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
-

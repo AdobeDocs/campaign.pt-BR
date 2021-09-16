@@ -1,5 +1,4 @@
 ---
-product: Adobe Campaign
 title: Integre os SDKs do Campaign ao seu aplicativo
 description: Saiba como integrar SDKs do Campaign Android e iOS ao seu aplicativo
 version: v8
@@ -8,9 +7,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 43%
 
 ---
@@ -77,9 +77,8 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
 >[!NOTE]
 >
 > * Não se esqueça de baixar e adicionar o arquivo google-services.json ao seu projeto.
-   >
-   > 
-* O `apiKey` deve corresponder ao `projectKey` definido no Aplicativo móvel do Adobe Campaign vinculado a este aplicativo Android.
+>
+> * O `apiKey` deve corresponder ao `projectKey` definido no Aplicativo móvel do Adobe Campaign vinculado a este aplicativo Android.
 
 
 ### Configurar o Android SDK
@@ -845,7 +844,7 @@ Abaixo está um exemplo de um código que permite que um aplicativo móvel colet
 >
 >A Adobe recomenda escolher nomes de variáveis curtos, pois o tamanho da notificação é limitado a 4kB para iOS e Android.
 
-## Extensão de Serviço de Notificação {#notification-service-extension}
+## Extensão de serviço de notificação {#notification-service-extension}
 
 **Para iOS**
 

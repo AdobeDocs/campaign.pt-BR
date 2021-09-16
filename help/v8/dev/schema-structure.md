@@ -1,15 +1,15 @@
 ---
-product: Adobe Campaign
 title: Estrutura do esquema da campanha
 description: Estrutura do schema da campanha
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 12%
 
 ---
 
-# Estrutura de schema{#schema-structure}
+# Estrutura de esquema{#schema-structure}
 
 A estrutura básica de um `<srcschema>` é a seguinte:
 
@@ -218,9 +218,9 @@ Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <
 
 `<sqldefault>` : permite ter um valor adicionado ao criar um campo. Esse valor aparece como um resultado SQL. Durante uma atualização do schema, somente os novos registros serão afetados por esse valor.
 
-### Listas discriminadas {#enumerations}
+### Enumerações {#enumerations}
 
-#### Enumeração livre {#free-enumeration}
+#### Enumeração gratuita {#free-enumeration}
 
 A propriedade **userEnum** permite definir uma enumeração livre para memorizar e exibir os valores inseridos por meio desse campo. A sintaxe é a seguinte:
 
@@ -352,7 +352,6 @@ Os elementos são designados pelo nome e os atributos são designados pelo nome 
 >
 
 
-
 Também é possível definir expressões complexas, como as seguintes operações aritméticas:
 
 * **@gender+1**: adiciona 1 ao conteúdo do atributo  **** gender,
@@ -370,7 +369,7 @@ Você pode acessar a lista de funções disponíveis por meio de qualquer editor
 * **Year(@created)**: retorna o ano da data contida no atributo &quot;criado&quot;.
 * **GetEmailDomain(@email)**: retorna o domínio do endereço de email.
 
-## Criação de uma cadeia de caracteres por meio da cadeia de caracteres de computação {#building-a-string-via-the-compute-string}
+## Criação de uma string por meio da string de computação {#building-a-string-via-the-compute-string}
 
 Um **Compute string** é uma expressão XPath usada para criar uma string representando um registro em uma tabela associada ao schema. **A** cadeia de caracteres de computação é usada principalmente na interface gráfica para exibir o rótulo de um registro selecionado.
 

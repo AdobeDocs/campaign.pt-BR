@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Trabalhar com o Campaign e o Adobe Analytics
 description: Saiba como integrar o Campaign e o Analytics
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1083'
 ht-degree: 76%
 
 ---
@@ -241,7 +240,7 @@ Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois q
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
-1. Agora você pode enviar o delivery e acessar o relatório no Adobe Analytics.
+1. Agora você pode enviar a entrega e acessar o respectivo relatório no Adobe Analytics.
 
 
 **Tópicos relacionados**

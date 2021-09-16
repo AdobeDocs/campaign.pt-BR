@@ -1,14 +1,14 @@
 ---
-product: Adobe Campaign
 title: Interação de campanha Oferta filtros predefinidos
 description: Saiba como criar filtros predefinidos
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 092262c7-768c-4e86-9b2b-c52516f6a030
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 56%
+source-wordcount: '102'
+ht-degree: 55%
 
 ---
 
@@ -41,4 +41,3 @@ Para criar um filtro predefinido, siga as etapas abaixo:
 1. Clique em **[!UICONTROL Preview]** para visualizar o resultado do filtro.
 
    ![](assets/offer_filter_create_006.png)
-

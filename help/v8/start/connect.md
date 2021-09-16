@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Conecte-se ao Campaign v8
 description: Saiba como se conectar ao Campaign v8
-feature: Públicos
+feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 44ddce019de74be96a955eefbc940e41e060a6d3
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '684'
 ht-degree: 13%
 
 ---

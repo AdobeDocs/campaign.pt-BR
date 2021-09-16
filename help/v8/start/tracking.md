@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Introdução aos recursos de rastreamento e monitoramento
 description: Introdução aos recursos de rastreamento e monitoramento
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 95ed0369-7215-496b-8e11-fe264c436488
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '905'
 ht-degree: 50%
 
 ---
@@ -62,7 +61,7 @@ Antes de enviar as mensagens com o rastreamento, você pode testar o rastreament
 
 ↗️ [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/testing-tracking.html?lang=en#sending-messages){target=&quot;_blank&quot;}
 
-### Rastreamento de aplicação web {#web-application-tracking}
+### Rastreamento de aplicativo web {#web-application-tracking}
 
 <img src="assets/do-not-localize/icon-web-app.svg" width="60px">
 

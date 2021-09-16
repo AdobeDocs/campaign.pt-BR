@@ -1,15 +1,14 @@
 ---
-product: Adobe Campaign
 title: Trabalhe com o Campaign e a Plataforma de dados do cliente em tempo real
 description: Saiba como trabalhar com o Campaign e a Plataforma de dados do cliente em tempo real
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 25%
+source-wordcount: '129'
+ht-degree: 24%
 
 ---
 

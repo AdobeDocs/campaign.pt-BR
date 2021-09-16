@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Mecanismo de preparo da API do Campaign
 description: Mecanismo de preparo da API do Campaign
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '311'
 ht-degree: 2%
 
 ---
@@ -29,12 +29,10 @@ As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se bene
 >[!CAUTION]
 >
 >* Com esse novo mecanismo, a sincronização de dados para exclusão de canal, assinaturas, unsubscriptions ou registro móvel agora é **assíncrona**.
-   >
-   >
-* O armazenamento temporário só se aplica a esquemas armazenados no banco de dados da nuvem. Não ative o armazenamento temporário em schemas replicados. Não ative o armazenamento temporário em esquemas locais. Não ativar Preparo em um esquema Preparado
+>
+>* O armazenamento temporário só se aplica a esquemas armazenados no banco de dados da nuvem. Não ative o armazenamento temporário em schemas replicados. Não ative o armazenamento temporário em esquemas locais. Não ativar Preparo em um esquema Preparado
 
 >
-
 
 
 ## Etapas de implementação{#implement-staging}

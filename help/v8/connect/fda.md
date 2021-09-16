@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Trabalhar com o Campaign e bancos de dados externos (FDA)
 description: Saiba como trabalhar com bancos de dados externos e do Campaign
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1843'
 ht-degree: 58%
 
 ---

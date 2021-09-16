@@ -1,11 +1,11 @@
 ---
-product: Adobe Campaign
-title: 'Gerenciamento de chaves no Campaign '
+title: Gerenciamento de chaves no Campaign
 description: Introdução ao gerenciamento de chaves
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -53,7 +53,7 @@ Quando isso ocorre, é possível criar um workflow para identificar as chaves du
 Agora, você pode acessar os recipients duplicados diretamente da lista. Mesmo que a transição contenha apenas uma das linhas duplicadas, todas as duplicatas serão registradas na lista.
 
 
-## Corrija duplicatas{#correct-duplicates}
+## Correção de duplicatas{#correct-duplicates}
 
 A correção das duplicatas requer que os clientes atualizem os dados do Campaign. O tipo de ação está estreitamente vinculado à natureza das duplicatas e da implementação. Podemos enfrentar vários casos que devem exigir uma estratégia de mitigação diferente (remover, mesclar ou atualizar).
 

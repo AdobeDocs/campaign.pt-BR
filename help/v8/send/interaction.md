@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Interação de campanha - Gerenciamento de ofertas
 description: Introdução ao Gerenciamento de ofertas
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1213'
 ht-degree: 35%
 
 ---
@@ -85,4 +85,3 @@ Há dois tipos de ambientes:
 * O **Preview** da oferta mostra a oferta como ela é exibida em sua pasta. É acessível a partir da janela de configurações de oferta ou do perfil de contato.
 * **Os** filtros predefinidos são regras de filtragem que podem considerar os parâmetros de oferta (por exemplo, um código de oferta). Eles podem ser reutilizados após a criação de ofertas.
 * Uma **Representação da oferta** é uma informação usada pelo canal para exibir a oferta. A representação da oferta pode ser construída a partir da função de renderização do espaço em que a oferta é representada ou inserida diretamente na interface (por exemplo, no bloco HTML). Uma oferta pode ser representada por espaço.
-

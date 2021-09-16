@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
 title: Trabalhar com esquemas do Campaign
 description: Introdução a esquemas
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 7%
@@ -250,4 +250,3 @@ Para obter mais informações, consulte [esta seção](update-database-structure
 >[!NOTE]
 >
 >Quando as modificações não afetam a estrutura do banco de dados, basta gerar os schemas novamente. Para fazer isso, selecione os esquemas a serem atualizados, clique com o botão direito do mouse e escolha **[!UICONTROL Actions > Regenerate selected schemas...]** .
-
