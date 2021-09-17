@@ -31,7 +31,6 @@ As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se bene
 >* Com esse novo mecanismo, a sincronização de dados para exclusão de canal, assinaturas, unsubscriptions ou registro móvel agora é **assíncrona**.
 >
 >* O armazenamento temporário só se aplica a esquemas armazenados no banco de dados da nuvem. Não ative o armazenamento temporário em schemas replicados. Não ative o armazenamento temporário em esquemas locais. Não ativar Preparo em um esquema Preparado
-
 >
 
 
