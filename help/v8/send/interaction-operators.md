@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: bda1fc37181396d295ee23a7161053d839d9cfc7
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 38%
+source-wordcount: '363'
+ht-degree: 37%
 
 ---
 
@@ -41,7 +41,7 @@ Observe que se as ofertas forem usadas em um workflow, o operador precisará ser
 
 >[!NOTE]
 >
->Um **Offer manager** só poderá aprovar uma oferta se nenhum revisor for especificado, ou se ele/ela tiver sido declarado como revisor no template de oferta no qual a oferta foi baseada.
+>**Os** gerentes de oferta só aprovam uma oferta se nenhum revisor for especificado, ou se tiverem sido declarados como revisores no template de oferta.
 
 ## Criar um operador Delivery manager {#delivery-manager}
 
@@ -51,15 +51,15 @@ Observe que se as ofertas forem usadas em um workflow, o operador precisará ser
 
 1. Vá para a janela **[!UICONTROL Groups and named rights]**, clique em **[!UICONTROL Add]** e selecione o grupo **[!UICONTROL Delivery manager]**.
 
-Os direitos atribuídos ao Gerente de delivery habilitam ele a realizar as seguintes tarefas:
+Os direitos atribuídos aos Gerentes de delivery permitem que eles executem as seguintes tarefas:
 
 * Exibir ambientes **[!UICONTROL Live]**.
 * Exibir e modificar categorias de ofertas.
-* Aprovar ofertas se for especificado como um de seus revisores.
+* Aprovar ofertas se elas forem revisores.
 
    >[!NOTE]
    >
-   >Um **Delivery manager** só poderá aprovar uma oferta se tiver sido declarado como um revisor durante a configuração da oferta.
+   >**O** gerente de delivery só poderá aprovar uma oferta se ela tiver sido declarada como revisor na configuração da oferta.
 
 ## Matriz de permissões por operador de interação {#recap-of-rights-according-to-operator}
 
