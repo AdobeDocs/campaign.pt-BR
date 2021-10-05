@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: 8668970b0270b990232b78d527d0713efd9d1a4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '929'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ A atividade **[!UICONTROL Change data source]** permite alterar a fonte de dados
 
 ## Recursos indisponíveis{#gs-unavailable-features}
 
-Observe que alguns recursos não estão disponíveis nesta versão do Campaign, como:
+Observe que alguns recursos ainda não estão disponíveis nessa versão do Campaign, como:
 
 * Gerenciamento de recursos de marketing
 * Marketing distribuído
@@ -97,7 +97,7 @@ Observe que alguns recursos não estão disponíveis nesta versão do Campaign, 
 * Otimização de campanha
 * Gestor de Resposta
 * Modelos de implantação híbridos/no local
-* Canal twitter
+* Canal do Twitter
 
 >[!CAUTION]
 >
@@ -108,18 +108,18 @@ Observe que alguns recursos não estão disponíveis nesta versão do Campaign, 
 >* Se não tiver certeza do modelo de implantação ou se tiver dúvidas, entre em contato com a equipe de conta.
 
 
-## Recursos não suportados{#gs-removed}
+## Recursos incompatíveis{#gs-removed}
 
 Para alinhar-se à nova arquitetura e ao novo modelo de implantação do Campaign v8, alguns recursos históricos do Campaign Classic v7 não são mais compatíveis com o Campaign v8, como:
 
 * Cupons
 * Rastreamento web
 * Pesquisas
-* Marketing social com o Facebook
+* Marketing social o Facebook
 * Conector ACS (oferta principal)
 * Integração com o LDAP
 * Logon de usuário/senha
 
 >[!NOTE]
 >
->Alguns recursos não disponíveis ou não compatíveis ainda podem estar visíveis na interface do usuário do .
+>Alguns recursos não disponíveis ou incompatíveis ainda estão visíveis na interface do usuário.
