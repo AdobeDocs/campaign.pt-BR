@@ -27,11 +27,11 @@ Você também pode usar o Painel de controle do Campaign para definir as configu
 ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Painel do controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
+>
 > Os seguintes recursos ainda não são compatíveis com o Campaign v8:
 >
 >* Gerenciamento de subdomínio
 >* Gerenciamento de certificados
-
 >
 
 
