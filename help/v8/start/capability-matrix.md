@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 8668970b0270b990232b78d527d0713efd9d1a4d
-workflow-type: ht
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+workflow-type: tm+mt
 source-wordcount: '929'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Alterações principais:
 
 Como usuário do [!DNL Campaign Classic], observe que a maioria dos recursos do [!DNL Campaign Classic] v7 está disponível com o [!DNL Campaign] v8, exceto um pequeno conjunto listado [nesta seção](#gs-removed). Outros serão lançados em versões futuras. [Saiba mais nesta seção](#gs-unavailable-features)
 
-?? Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../dev/architecture.md).
+![](../assets/do-not-localize/glass.png) Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../dev/architecture.md).
 
 ## Alterações na configuração do produto
 
@@ -73,7 +73,7 @@ Usuários do Campaign não precisam ser especialistas em banco de dados: não h�
 
 Os usuários do Campaign se conectam por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos da Adobe associados a uma única conta.
 
-?? Saiba como se conectar a [!DNL Campaign] [nesta página](connect.md).
+![](../assets/do-not-localize/glass.png) Saiba como se conectar  [!DNL Campaign] a  [nesta página](connect.md).
 
 ## Relatórios
 
@@ -85,7 +85,7 @@ O Campaign v8 oferece uma atividade adicional de fluxo de trabalho para direcion
 
 A atividade **[!UICONTROL Change data source]** permite alterar a fonte de dados de um fluxo de trabalho **[!UICONTROL Working table]** para gerenciar dados em diferentes fontes de dados, como FDA, FFDA e banco de dados local.
 
-?? Saiba mais sobre a atividade **[!UICONTROL Change data source]** em [nesta página](../config/workflows.md#change-data-source-activity).
+![](../assets/do-not-localize/glass.png) Saiba mais sobre a  **[!UICONTROL Change data source]** atividade  [nesta página](../config/workflows.md#change-data-source-activity).
 
 ## Recursos indisponíveis{#gs-unavailable-features}
 

@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 2%
@@ -31,6 +31,7 @@ As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se bene
 >* Com esse novo mecanismo, a sincronização de dados para exclusão de canal, assinaturas, unsubscriptions ou registro móvel agora é **assíncrona**.
 >
 >* O armazenamento temporário só se aplica a esquemas armazenados no banco de dados da nuvem. Não ative o armazenamento temporário em schemas replicados. Não ative o armazenamento temporário em esquemas locais. Não ativar Preparo em um esquema Preparado
+
 >
 
 
@@ -53,7 +54,7 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
    </srcSchema>
    ```
 
-   ?? Saiba mais sobre a criação de esquema personalizado em [this page](create-schema.md).
+   ![](../assets/do-not-localize/glass.png) Saiba mais sobre a criação de esquema personalizado  [nesta página](create-schema.md).
 
 1. Salve e atualize a estrutura do banco de dados.  [Saiba mais](update-database-structure.md)
 

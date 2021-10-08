@@ -2,7 +2,7 @@
 title: Práticas recomendadas do modelo de dados
 description: Conheça as práticas recomendadas de extensão do modelo de dados do Campaign
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 4%
@@ -17,9 +17,9 @@ O sistema Adobe Campaign é muito flexível e pode ser estendido além da implem
 
 Para obter uma melhor compreensão das tabelas integradas do Campaign e como elas se relacionam entre si, consulte [esta seção](datamodel.md) .
 
-?? Leia [esta seção](schemas.md) para começar a usar os esquemas do Campaign.
+![](../assets/do-not-localize/glass.png) Leia  [esta ](schemas.md) seção para começar a usar os esquemas do Campaign.
 
-?? Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign em [this page](extend-schema.md).
+![](../assets/do-not-localize/glass.png) Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign  [nesta página](extend-schema.md).
 
 ## Arquitetura do modelo de dados {#data-model-architecture}
 
@@ -108,7 +108,7 @@ Essa chave personalizada é a chave primária de registro real no sistema extern
 
 Ao criar uma tabela personalizada, você tem duas opções:
 * Uma combinação de chave gerada automaticamente (id) e chave interna (personalizada). Essa opção é interessante se a chave do sistema for uma chave composta ou não um inteiro. Com Snowflake, números inteiros ou chaves baseadas em sequência fornecerão desempenho mais alto em grandes tabelas e unirão a outras tabelas.
-* Usar a chave primária como a chave primária do sistema externo. Essa solução geralmente é preferida, pois simplifica a abordagem para importar e exportar dados, com uma chave consistente entre diferentes sistemas. **** O Autouuid deve ser desativado se a chave for chamada de &quot;id&quot; e se espera que seja preenchida com valores externos (não gerado automaticamente).
+* Usar a chave primária como a chave primária do sistema externo. Essa solução geralmente é preferida, pois simplifica a abordagem para importar e exportar dados, com uma chave consistente entre diferentes sistemas. **** O Autouuidt deve ser desativado se a chave for chamada de &quot;id&quot; e se espera que seja preenchida com valores externos (não gerado automaticamente).
 
 >[!CAUTION]
 >

@@ -1,23 +1,23 @@
 ---
-title: Integre os SDKs do Campaign ao seu aplicativo
+title: Integrar os SDKs do Campaign ao seu aplicativo
 description: Saiba como integrar SDKs do Campaign Android e iOS ao seu aplicativo
 version: v8
 feature: Push
 role: Developer
 level: Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: ea7d540af082782114f4a3e32c9d880b0d14df43
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 43%
 
 ---
 
-# Integre os SDKs do Campaign ao seu aplicativo {#integrate-campaign-sdk}
+# Integrar os SDKs do Campaign ao seu aplicativo {#integrate-campaign-sdk}
 
 Use SDKs do Campaign para iOS e Android para facilitar a integração de seu aplicativo móvel na plataforma Adobe Campaign.
 
-As versões compatíveis com Android e iOS e as versões compatíveis com SDKs do Campaign para o Campaign v8 estão listadas na [Matriz de compatibilidade](../start/compatibility-matrix.md#MobileSDK) .
+As versões compatíveis com Android e iOS e as versões compatíveis com SDKs do Campaign v8 estão listadas na [Matriz de compatibilidade](../start/compatibility-matrix.md#MobileSDK) .
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Para integrar o SDK do Campaign no aplicativo móvel, o administrador funcional 
 
 O Android SDK é uma biblioteca jar gravada em JAVA. Ela permite que desenvolvedores do Android se integrem ao Adobe Campaign: registre um novo dispositivo, vincule o dispositivo a um usuário, rastreie o comportamento e muito mais.
 
-Nesta seção, saiba como usar o Android SDK em um aplicativo Android implementando o [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/).
+Nesta seção, saiba como usar o Android SDK em um aplicativo Android implementando [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/).
 
 >[!CAUTION]
 >
@@ -554,7 +554,7 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    ```
 
 
-## Integrar SDK do iOS
+## Integrar o SDK do iOS
 
 1. **Registre o dispositivo móvel no servidor Adobe Campaign**
 
@@ -794,7 +794,7 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
 
 As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo móvel e no console do Adobe Campaign, na guia **[!UICONTROL Variables]** no serviço de aplicativo móvel dedicado.
 
-↗️ Saiba mais em **documentação do Campaign Classic v7** no aplicativo móvel: [Etapas de configuração para iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} e [Etapas de configuração para Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Saiba mais na documentação do  **Campaign Classic v7** sobre aplicativos móveis:  [Etapas de configuração para iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} e Etapas  [de configuração para Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}.
 
 Abaixo está um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
 

@@ -5,8 +5,8 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Você precisa baixar e instalar o Console do cliente do Campaign para se conectar ao Adobe Campaign.
 
-   ?? [Clique aqui para saber mais](connect.md).
+   ![](../assets/do-not-localize/glass.png) [Clique aqui para saber mais](connect.md).
 
 1. **O Campaign v8 pode ser instalado em um ambiente local ou híbrido?**
 
@@ -38,9 +38,9 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    A capacidade de entrega de email, um componente essencial para o sucesso do programa de marketing de cada remetente, é caracterizada por critérios e regras em constante mudança. Navegar efetivamente neste mundo digital requer o ajuste regular de sua estratégia de email, considerando as principais tendências de capacidade de entrega, para melhor alcançar seus públicos.
 
-   ↗️ Consulte este manual para conhecer as [Práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Consulte este manual para conhecer as [Práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR){target=&quot;_blank&quot;}
 
-   ↗️ Saiba como implementar a capacidade de entrega no Campaign [neste manual](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=pt-BR){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Saiba como implementar a capacidade de entrega no Campaign [neste manual](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 1. **Como posso garantir que minha entrega seja enviada sem erros?**
 
@@ -50,7 +50,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
 1. **Posso monitorar a execução do fluxo de trabalho?**
 
-   ↗️ Entenda como monitorar a execução do fluxo de trabalho do Campaign [na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=pt-BR){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Entenda como monitorar a execução do fluxo de trabalho do Campaign [na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 1. **Com quais sistemas e componentes o Campaign v8 é compatível?**
 
