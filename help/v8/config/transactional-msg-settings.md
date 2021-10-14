@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 22%
@@ -14,7 +14,7 @@ ht-degree: 22%
 
 # Configurações de mensagens transacionais
 
-?? Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
 
 ![](../assets/do-not-localize/glass.png) Os recursos de mensagens transacionais são detalhados  [nesta seção](../send/transactional.md).
 

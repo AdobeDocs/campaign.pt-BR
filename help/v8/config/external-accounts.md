@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 32%
@@ -34,7 +34,7 @@ Você pode acessar contas externas do Adobe Campaign **[!UICONTROL Explorer]**: 
 
 As contas técnicas a seguir são usadas pela Adobe Campaign para habilitar e executar processos específicos.
 
-?? Como usuário do Managed Cloud Services, o Adobe configura todas as contas externas específicas da campanha para você.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, o Adobe configura todas as contas externas específicas da campanha para você.
 
 * **Emails de devolução (POP3)**
 
@@ -80,14 +80,14 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para habilitar e ex
 
    ![](../assets/do-not-localize/glass.png) Saiba mais sobre a integração Adobe Campaign - Adobe Analytics  [nesta página](../connect/ac-aa.md).
 
-   ?? Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para integrar o Adobe Analytics ao Campaign.
+   ![](../assets/do-not-localize/speech.png)  Como um usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para integrar o Adobe Analytics ao Campaign.
 
    * **Adobe Experience Manager**
    A conta externa **[!UICONTROL AEM]** permite gerenciar o conteúdo dos deliveries de email, assim como os formulários diretamente no Adobe Experience Manager.
 
    ![](../assets/do-not-localize/glass.png) Saiba mais sobre a integração Adobe Campaign - Adobe Analytics  [nesta página](../connect/ac-aem.md).
 
-   ?? Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para integrar o Adobe Experience Manager ao Adobe Campaign.
+   ![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para integrar o Adobe Experience Manager ao Adobe Campaign.
 
 
 ## Contas Externas do Conector CRM

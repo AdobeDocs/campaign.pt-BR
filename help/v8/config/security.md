@@ -2,7 +2,7 @@
 title: Práticas recomendadas de segurança do Campaign
 description: Introdução às práticas recomendadas de segurança do Campaign
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 22%
@@ -24,7 +24,7 @@ A configuração e proteção da privacidade é um elemento essencial da otimiza
 * Certifique-se de que as senhas criptografadas sejam restritas
 * Proteja as páginas que podem conter informações pessoais, como mirror pages, aplicativos web, etc.
 
-?? Como usuário do Managed Cloud Services, o Adobe trabalhará com você para implementar essas configurações no ambiente.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, o Adobe trabalhará com você para implementar essas configurações no ambiente.
 
 ## Personalização
 

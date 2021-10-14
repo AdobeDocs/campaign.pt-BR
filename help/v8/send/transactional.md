@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 72%
@@ -16,7 +16,7 @@ ht-degree: 72%
 
 O envio de mensagens transacionais (Centro de mensagens) é um módulo do Campaign criado para gerenciar mensagens por disparo. Essas mensagens são geradas por eventos disparados dos sistemas de informações e podem ser: fatura, confirmação de pedidos, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta ou criação de conta de site, por exemplo.
 
-?? Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
 
 As mensagens transacionais são usadas para enviar:
 

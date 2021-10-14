@@ -4,7 +4,8 @@ description: Saiba como trabalhar com o Campaign e seu CRM
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 37%
@@ -25,7 +26,7 @@ Esses conectores permitem uma integração rápida e fácil de dados: O Adobe Ca
 
 O CRM e as versões compatíveis estão detalhados na [Matriz de compatibilidade](../start/compatibility-matrix.md) do Campaign.
 
-?? Os conectores CRM funcionam somente com uma URL segura (https).
+![](../assets/do-not-localize/speech.png)  Os conectores CRM funcionam somente com uma URL segura (https).
 
 ## Etapas de implementação {#crm-implementation-steps}
 

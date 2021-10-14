@@ -5,7 +5,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: c3ed24e16d5a8bc67b8a8c959bbf485ea0fd919c
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 13%
@@ -36,7 +36,7 @@ Cada operador precisa ser vinculado a uma zona para fazer logon em uma instânci
 
 Os operadores são vinculados a uma zona de segurança a partir do seu perfil no console, acessível no nó **[!UICONTROL Administration > Access management > Operators]**.
 
-?? Como usuário do Managed Cloud Services, o Adobe define as zonas de segurança para você. Para obter mais informações, [entre em contato com o Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, o Adobe define as zonas de segurança para você. Para obter mais informações, [entre em contato com o Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 **Saiba mais na documentação do Campaign Classic v7**
 

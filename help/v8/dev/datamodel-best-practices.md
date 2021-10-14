@@ -2,7 +2,7 @@
 title: Práticas recomendadas do modelo de dados
 description: Conheça as práticas recomendadas de extensão do modelo de dados do Campaign
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 4%
@@ -175,7 +175,7 @@ Existem algumas soluções para minimizar a necessidade de registros no Adobe Ca
 
 Você pode declarar o atributo &quot;deleteStatus&quot; em um schema. É mais eficiente marcar o registro como excluído e, em seguida, adiar a exclusão na tarefa de limpeza.
 
-?? Como usuário do Managed Cloud Services, entre em contato com os consultores de Adobe ou administradores técnicos para saber mais sobre retenção ou se é necessário definir a retenção para tabelas personalizadas.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, entre em contato com os consultores de Adobe ou administradores técnicos para saber mais sobre retenção ou se é necessário definir a retenção para tabelas personalizadas.
 
 ## Desempenho {#performance}
 

@@ -4,7 +4,8 @@ description: Saiba como trabalhar com o Campaign e o Adobe Experience Manager
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 17%
@@ -23,4 +24,4 @@ Isso significa que você pode aproveitar ao máximo os recursos de edição de c
 
 ![](../assets/do-not-localize/book.png) [Descubra essa integração nesta amostra completa](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html?lang=en#integrating-with-adobe-experience-cloud)
 
-?? Como um usuário do Managed Cloud Services, [entre em contato com o Adobe](../start/campaign-faq.md#support) para integrar o Adobe Experience Manager ao Campaign.
+![](../assets/do-not-localize/speech.png)  Como um usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para integrar o Adobe Experience Manager ao Campaign.
