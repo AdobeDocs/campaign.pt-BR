@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 97%
 
 O Campaign ajuda a adicionar contatos ao banco de dados da nuvem. Você pode carregar um arquivo, agendar e automatizar várias atualizações de contato, coletar dados na Web ou inserir informações de perfil diretamente na tabela do recipient.
 
-![](../assets/do-not-localize/glass.png) Introdução a  [públicos](audiences.md)
+![](../assets/do-not-localize/glass.png) Introdução aos [públicos](audiences.md)
 
-![](../assets/do-not-localize/glass.png) Entender o  [datamodel do Campaign](../dev/datamodel.md)
+![](../assets/do-not-localize/glass.png) Entenda o [modelo de dados](../dev/datamodel.md) do Campaign
 
 ## Direcionar perfis em um fluxo de trabalho
 
