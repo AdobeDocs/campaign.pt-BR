@@ -2,12 +2,12 @@
 audience: end-user
 user-guide-title: Campaign v8
 description: Documentação do Campaign v8
-breadcrumb-title: Campanha v8
+breadcrumb-title: Campaign v8
 title: Documentos do Campaign v8
 source-git-commit: e0faeda87d5b84309524a72d9f021c381ac4619e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '208'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 97%
       + [Gerenciamento de chaves e unicidade](dev/keys.md)
       + [Criar esquemas](dev/create-schema.md)
       + [Estender schemas](dev/extend-schema.md)
-      + [Schemas de filtro](dev/filter-schema.md)
+      + [Esquemas de filtro](dev/filter-schema.md)
       + [Estrutura de esquema](dev/schema-structure.md)
       + [Mapeamento de banco de dados](dev/database-mapping.md)
       + [Restringir visualização de IP](dev/restrict-pi-view.md)
