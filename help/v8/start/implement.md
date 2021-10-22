@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1213'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Nesta seção, você aprenderá a ajustar o Adobe Campaign às necessidades da s
 
 >[!CAUTION]
 >
->Com **Campaign Managed Cloud Services**, o ambiente e a configuração inicial foram definidos pelo Adobe, de acordo com os termos do contrato de licença. Você não tem permissão para modificar pacotes incorporados instalados, esquemas ou relatórios incorporados.
+>Com o **Campaign Managed Cloud Services**, o ambiente e a configuração inicial foram definidos pela Adobe, de acordo com os termos do contrato de licença. Você não tem permissão para modificar pacotes incorporados instalados, esquemas ou relatórios incorporados.
 >
 >Se precisar usar um complemento do Campaign ou um recurso específico que não foi fornecido para você, entre em contato com o **Atendimento ao cliente da Adobe**.
 
@@ -69,7 +69,7 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
 
    ![](../assets/do-not-localize/glass.png) [Saiba como importar perfis](import.md).
 
-   Os públicos-alvo são agrupados em listas e podem ser criados por meio de fluxos de trabalho. Eles podem ser direcionados em deliveries entre canais.
+   Os públicos são agrupados em listas e podem ser criados por meio de workflows. Eles podem ser direcionados em deliveries entre canais.
 
    ![](../assets/do-not-localize/glass.png) [Saiba como definir públicos](audiences.md).
 
