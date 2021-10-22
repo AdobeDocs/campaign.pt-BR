@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 83874f4d124d7892f99e973684b1e8ee571f31e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Este documento lista todos os sistemas e componentes compatíveis com o último 
 
 ## Console do cliente{#ClientConsoleoperatingsystems}
 
-Os sistemas operacionais e navegadores a seguir são necessários para usar o Console do cliente do Campaign. [Saiba mais](connect.md).
+Os sistemas operacionais e navegadores a seguir são necessários para usar o Console do Cliente do Campaign. [Saiba mais](connect.md).
 
 ### Sistemas operacionais
 
@@ -33,18 +33,18 @@ Os sistemas operacionais e navegadores a seguir são necessários para usar o Co
 
 >[!NOTE]
 >
->O Adobe Campaign Server e o Client Console devem estar na mesma versão. [Saiba como verificar a versão](#version).
+>O Servidor e o Console do Cliente do Adobe Campaign devem estar na mesma versão. [Saiba como verificar sua versão](#version).
 
-## Conectores CRM{#CRMconnectors}
+## Conectores do CRM{#CRMconnectors}
 
-Os sistemas de gerenciamento de relacionamento com o cliente (CRM) compatíveis com a Adobe Campaign estão listados abaixo. [Saiba mais](../connect/crm.md).
+Os sistemas de gerenciamento de relacionamento com o cliente (CRM) compatíveis com o Adobe Campaign estão listados abaixo. [Saiba mais](../connect/crm.md).
 
 * **API do conector Salesforce** versão 49
 * **Conector do Microsoft Dynamics**, API da web: Dynamics 365 On-premises e Online
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
-Os bancos de dados externos compatíveis com o módulo Adobe Campaign Federated Data Access (FDA) estão listados abaixo. [Saiba mais](../connect/fda.md).
+Os bancos de dados externos compatíveis com o módulo Federated Data Access (FDA) do Adobe Campaign estão listados abaixo. [Saiba mais](../connect/fda.md).
 
 * **Amazon Redshift**
 * **[!DNL Google Big Query]**
@@ -53,14 +53,14 @@ Os bancos de dados externos compatíveis com o módulo Adobe Campaign Federated 
 
 ## SDK móvel{#MobileSDK}
 
-Você pode usar o Campaign para enviar [notificações por push](../send/push.md) nos sistemas operacionais listados abaixo, usando o SDK móvel associado.
+Você pode usar o Campaign para enviar [notificações por push](../send/push.md) nos sistemas operacionais listados abaixo, usando o SDK para dispositivos móveis associado.
 
 * **Android** 7.x, 8.x e 9.0 com o SDK Campaign Android build 1.1.1.
 * **Apple iOS** 9 - 14 com o SDK Campaign iOS build 1.0.26, compatível com versões de 32 e 64 bits.
 
 ## Acesso à Web
 
-Os seguintes navegadores são compatíveis com o Campaign para [Web Access](connect.md#web-access).
+Os seguintes navegadores são compatíveis com o Campaign para [acesso via web](connect.md#web-access).
 
 * **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** (versões mais recentes)
 
