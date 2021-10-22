@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
 ht-degree: 100%
 
@@ -24,14 +24,14 @@ Principais benefícios:
 
 Você também pode usar o Painel de controle do Campaign para definir as configurações da instância, como a lista de permissões de IP, as permissões de URL e recuperar informações sobre a instância.
 
-![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Painel do controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
->
 > Os seguintes recursos ainda não são compatíveis com o Campaign v8:
 >
 >* Gerenciamento de subdomínio
 >* Gerenciamento de certificados
+
 >
 
 
