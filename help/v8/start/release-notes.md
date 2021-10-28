@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 0061c536ff309d86061548b98d2c6e1124e01a0e
+source-git-commit: 4ce21dda9516a881cce39c94454d5ac7b43142a9
 workflow-type: tm+mt
-source-wordcount: '1597'
-ht-degree: 50%
+source-wordcount: '1574'
+ht-degree: 51%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 50%
 
 Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign v8**.
 
-## Versão 8.2.1 {#release-8-2-1}
+## Versão 8.2.8 {#release-8-2-8}
 
 _28 de outubro de 2021_
 
@@ -68,7 +68,6 @@ _28 de outubro de 2021_
 **Aprimoramentos**
 
 * O conector de Snowflake foi aprimorado em termos de desempenho.
-* No arquivo de configuração do servidor (serverConf.xml), agora é possível definir um tempo de espera, por esquema, entre atualizações e replicações de confirmação em tempo real.
 * Para fins de monitoramento e teste, os logs de auditoria do **[!UICONTROL Replicate Staging data]** O fluxo de trabalho agora inclui o número de registros que foram enviados para o banco de dados FDA (Full Federated Data Access).
 * A atividade do código SQL agora permite escolher em qual banco de dados o script SQL será armazenado: a fonte de dados padrão ou uma conta externa FDA ativa escolhida.
 * Um conjunto de depósitos predefinidos agora está disponível e pode ser usado para executar várias consultas em paralelo, como segmentação, ETL ou picos. [Leia mais](../config/workflows.md)
