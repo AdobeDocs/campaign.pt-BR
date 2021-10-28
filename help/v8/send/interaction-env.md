@@ -5,14 +5,16 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: a02d47f172a2c3021a30834adaeb5170a9801b5c
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 43%
+source-wordcount: '393'
+ht-degree: 53%
 
 ---
 
-# Ambientes Live and Design{#live-design-environments}
+# Trabalhar com ambientes{#work-with-environments}
+
+## Ambientes Live and Design{#live-design-environments}
 
 O Interaction opera com dois tipos de ambientes de oferta:
 
@@ -23,7 +25,7 @@ O Interaction opera com dois tipos de ambientes de oferta:
 
 Cada ambiente **[!UICONTROL Design]** está vinculado a um ambiente **[!UICONTROL Live]**. Quando uma oferta é concluída, suas regras de conteúdo e qualificação estão sujeitas a um ciclo de aprovação. Depois que este ciclo for concluído, a oferta relacionada será implantada automaticamente no ambiente **[!UICONTROL Live]**. A partir deste momento, ele estará disponível para delivery.
 
-Por padrão, o Campaign vem com um ambiente **[!UICONTROL Design]** e um ambiente **[!UICONTROL Live]** vinculado a ele. Ambos os ambientes são pré-configurados para direcionar a [tabela de recipient incorporada](../dev/datamodel.md#ootb-profiles).
+Por padrão, o Campaign vem com uma **[!UICONTROL Design]** ambiente e **[!UICONTROL Live]** ambiente vinculado a ele. Ambos os ambientes são pré-configurados para direcionar o [tabela de recipient integrada](../dev/datamodel.md#ootb-profiles).
 
 >[!NOTE]
 >
@@ -31,17 +33,19 @@ Por padrão, o Campaign vem com um ambiente **[!UICONTROL Design]** e um ambient
 
 ![](assets/offer_environments_overview_002.png)
 
-Os gerentes de delivery só podem visualizar o ambiente **[!UICONTROL Live]** e aproveitar as ofertas para entregá-las. Os gerentes de oferta podem visualizar e usar o ambiente **[!UICONTROL Design]** e visualizar o ambiente **[!UICONTROL Live]**. [Saiba mais](interaction-operators.md)
+Os gerentes de delivery só podem visualizar o **[!UICONTROL Live]** ambiente e aproveitar as ofertas para entregá-las. Os gerentes de oferta podem visualizar e usar o **[!UICONTROL Design]** e visualize o **[!UICONTROL Live]** ambiente. [Saiba mais](interaction-operators.md)
 
-## Criar um ambiente de oferta {#creating-an-offer-environment}
+## Criar um ambiente para interações anônimas{#create-an-offer-environment}
 
-Por padrão, o Campaign vem com um ambiente integrado para direcionar à tabela de recipients (ofertas identificadas). Para direcionar outra tabela, siga as etapas abaixo:
+Por padrão, o Campaign vem com um ambiente integrado para direcionar à tabela de recipients (ofertas identificadas). Para direcionar outra tabela, como perfis anônimos que visitam seu site para interações de entrada, é necessário atualizar sua configuração.
+
+Siga as etapas abaixo:
 
 1. Navegue até **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**, clique com o botão direito do mouse no target mapping que deseja usar e selecione **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Clique em **[!UICONTROL Next]**, selecione a opção **[!UICONTROL Generate a storage schema for propositions]** e clique em **[!UICONTROL Save]**.
+1. Clique em **[!UICONTROL Next]**, selecione o **[!UICONTROL Generate a storage schema for propositions]** e clique em **[!UICONTROL Save]**.
 
    ![](assets/offer_env_anonymous_002.png)
 
@@ -50,3 +54,15 @@ Por padrão, o Campaign vem com um ambiente integrado para direcionar à tabela 
    >Se a opção já estiver marcada, desmarque-a e depois a marque novamente.
 
 1. O Adobe Campaign cria dois ambientes - **[!UICONTROL Design]** e **[!UICONTROL Live]** - com informações de direcionamento do target mapping habilitado anteriormente. O ambiente é pré-configurado com as informações de definição de metas.
+
+Se ativado o mapeamento **[!UICONTROL Visitor]**, a caixa **[!UICONTROL Environment dedicated to incoming anonymous interactions]** é automaticamente marcada na guia **[!UICONTROL General]** do ambiente.
+
+Essa opção permite ativar funções específicas de interação anônima, especialmente quando configurar espaços de oferta de ambiente. Também é possível configurar opções que permitem alternar de um ambiente &quot;identificado&quot; para um ambiente &quot;anônimo&quot;.
+
+Por exemplo, é possível vincular um espaço de oferta de ambiente de recipient (contato identificado) com um espaço de oferta que corresponda a um ambiente de visitante (contato não identificado). Dessa forma, diferentes ofertas serão disponibilizadas para o contato, dependendo se esse contato for identificado ou não. Para obter mais informações, consulte [Criação de espaços de oferta](interaction-offer-spaces.md).
+
+![](assets/offer_env_anonymous_003.png)
+
+>[!NOTE]
+>
+>Para obter mais informações sobre interações anônimas em um canal de entrada, consulte [Interações anônimas](anonymous-interactions.md).

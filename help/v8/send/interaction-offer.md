@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 87c3f19cec5a756983def344620a1964b95a20d6
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 69%
+ht-degree: 66%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 69%
 
 Para criar uma oferta, siga as etapas abaixo:
 
-1. Navegue até a guia **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Offers]**.
+1. Navegue até o **[!UICONTROL Campaigns]** e clique na guia **[!UICONTROL Offers]** link .
 
 1. Clique no botão **[!UICONTROL Create]**.
 
@@ -28,7 +28,7 @@ Para criar uma oferta, siga as etapas abaixo:
 
 ## Configurações de elegibilidade
 
-Agora você pode usar a guia **[!UICONTROL Eligibility]** para definir:
+Agora você pode usar o **[!UICONTROL Eligibility]** para definir:
 
 * O período de qualificação da oferta. [Saiba mais](#eligibility-period)
 * Filtros na população do target da oferta. [Saiba mais](#filters-on-the-target)
@@ -36,7 +36,7 @@ Agora você pode usar a guia **[!UICONTROL Eligibility]** para definir:
 
 ### Período de qualificação da oferta{#eligibility-period}
 
-Na guia **[!UICONTROL Eligibility]** da oferta, defina o período de qualificação da oferta. use as listas suspensas para selecionar uma data inicial e final no calendário.
+No **[!UICONTROL Eligibility]** da oferta, defina o período de qualificação da oferta. use as listas suspensas para selecionar uma data inicial e final no calendário.
 
 ![](assets/offer_eligibility_create_002.png)
 
@@ -44,7 +44,7 @@ Fora desse período, a oferta não será selecionada. Se também tiver configura
 
 ### Adicionar filtros no target {#filters-on-the-target}
 
-Na guia **[!UICONTROL Eligibility]** da oferta, aplique filtros ao target da oferta.
+No **[!UICONTROL Eligibility]** da oferta, aplique filtros ao target da oferta.
 
 Para fazer isso, clique no link **[!UICONTROL Edit query]** e selecione o filtro que deseja aplicar.
 
@@ -68,7 +68,7 @@ Por exemplo, uma oferta pode ter um peso de A para contatos com idade entre 18 e
 
 Para criar um peso em uma oferta, aplique as seguintes etapas:
 
-1. Na guia **[!UICONTROL Eligibility]** da oferta, clique em **[!UICONTROL Add]**.
+1. No **[!UICONTROL Eligibility]** da oferta, clique em **[!UICONTROL Add]**.
 
    ![](assets/offer_weight_create_001.png)
 
@@ -98,7 +98,7 @@ Para criar um peso em uma oferta, aplique as seguintes etapas:
 
    >[!NOTE]
    >
-   >Se um target for elegível para vários pesos de uma oferta selecionada, o mecanismo manterá o melhor (mais alto) peso. Ao ligar para o mecanismo de oferta, uma oferta é selecionada no máximo uma vez por contato.
+   >Se um target for elegível para vários pesos de uma oferta selecionada, o mecanismo manterá o melhor (mais alto) peso. Ao chamar o mecanismo Offer , uma oferta é selecionada no máximo uma vez por contato.
 
 ### Resumo das regras de qualificação de oferta {#a-summary-of-offer-eligibility-rules}
 
@@ -110,7 +110,7 @@ Para fazer isso, clique no link **[!UICONTROL Schedule and eligibility rules]**.
 
 ## Criar o conteúdo da oferta {#creating-the-offer-content}
 
-Use a guia **[!UICONTROL Content]** para definir o conteúdo da oferta.
+Use o **[!UICONTROL Content]** para definir o conteúdo da oferta.
 
 ![](assets/offer_content_create_001.png)
 
@@ -180,20 +180,20 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 ## Aprovar e ativar uma oferta{#approve-offers}
 
-Agora você pode aprovar e ativar a oferta para torná-la disponível no ambiente **Live**.
+Agora você pode aprovar e ativar a oferta para torná-la disponível no **Ao vivo** ambiente.
 
 ![](../assets/do-not-localize/book.png) Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
 
 ## Gerenciar apresentação de ofertas{#offer-presentation}
 
-O Campaign permite controlar o fluxo de apresentações de oferta usando regras de apresentação. Essas regras, que são específicas à Interação de campanha, são **regras de tipologia**. Elas permitem excluir ofertas com base no histórico de apresentações já feitas a um recipient. Eles são referenciados no ambiente.
+O Campaign permite controlar o fluxo de apresentações de oferta usando regras de apresentação. Essas regras, que são específicas à interação do Campaign, são **regras de tipologia**. Elas permitem excluir ofertas com base no histórico de apresentações já feitas a um recipient. Eles são referenciados no ambiente.
 
 ![](../assets/do-not-localize/book.png) Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
 
 ## Simulação de oferta
 
-O módulo Simulation permite testar a distribuição de ofertas pertencentes a uma categoria ou um ambiente antes de enviar sua proposta para os recipients.
+O módulo **Simulation** permite testar a distribuição de ofertas pertencentes a uma categoria ou um ambiente antes de enviar sua proposta para os recipients.
 
 A simulação leva em consideração os contextos e as regras de qualificação aplicadas anteriormente às ofertas e suas regras de apresentação. Isso permite testar e refinar várias versões da apresentação de oferta sem realmente usar uma oferta ou sobrecarregar ou não um destino, já que a simulação não tem impacto nos recipients de destino.
 
-![](../assets/do-not-localize/book.png) Para obter mais informações sobre a simulação de oferta, consulte a documentação do  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
+![](../assets/do-not-localize/book.png) Para obter mais informações sobre a Simulação de oferta, consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)

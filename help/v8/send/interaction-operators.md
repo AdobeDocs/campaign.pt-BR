@@ -4,16 +4,17 @@ description: Criar operadores de Gerenciamento de ofertas
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 37%
+source-wordcount: '358'
+ht-degree: 33%
 
 ---
 
 # Perfis de operadores {#operator-profiles}
 
-Dois tipos de operadores podem usar a Interação de campanha: **Gestores de oferta** e **Gestores de entrega**. Cada um deles tem permissões e restrições específicas. Saiba mais sobre operadores e permissões do Campaign em [this page](../start/permissions.md).
+Dois tipos de operadores podem usar a Interação de campanha: **Gerentes de oferta** e **Gerentes de delivery**. Cada um deles tem permissões e restrições específicas. Saiba mais sobre operadores e permissões do Campaign em [esta página](../start/permissions.md).
 
 * O **[!UICONTROL Offer manager]** cria e mantém ofertas.
 * O **[!UICONTROL Delivery manager]** aprova e usa ofertas
@@ -22,7 +23,7 @@ Dois tipos de operadores podem usar a Interação de campanha: **Gestores de ofe
 
 1. Criar um operador.
 
-   ![](../assets/do-not-localize/book.png) As etapas para criar um operador no Campaign são detalhadas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   ![](../assets/do-not-localize/book.png) As etapas para criar um operador no Campaign são detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Vá para a janela **[!UICONTROL Groups and named rights]**, clique em **[!UICONTROL Add]** e selecione o grupo **[!UICONTROL Offer manager]**.
 
@@ -36,17 +37,17 @@ Os direitos atribuídos ao Gerente de ofertas permitem que eles executem as segu
 * Configurar a qualificação para a oferta.
 * Aprovar ofertas.
 
-Se as ofertas forem usadas em um workflow, o operador deverá ser adicionado ao grupo de operadores **[!UICONTROL Administrator]** ou **[!UICONTROL Offer managers]** para executar o workflow.
+Se as ofertas forem usadas em um workflow, o operador deverá ser adicionado ao **[!UICONTROL Administrator]** ou **[!UICONTROL Offer managers]** grupo de operadores para executar o workflow.
 
 >[!NOTE]
 >
->**Os** gerentes de oferta só aprovam uma oferta se nenhum revisor for especificado, ou se tiverem sido declarados como revisores no template de oferta.
+>**Gerentes de oferta** só pode aprovar uma oferta se nenhum revisor for especificado, ou se eles tiverem sido declarados como revisores no template de oferta.
 
 ## Criar um operador Delivery manager {#delivery-manager}
 
 1. Criar um operador.
 
-   ![](../assets/do-not-localize/book.png) As etapas para criar um operador no Campaign são detalhadas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   ![](../assets/do-not-localize/book.png) As etapas para criar um operador no Campaign são detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Vá para a janela **[!UICONTROL Groups and named rights]**, clique em **[!UICONTROL Add]** e selecione o grupo **[!UICONTROL Delivery manager]**.
 
@@ -58,7 +59,7 @@ Os direitos atribuídos aos Gerentes de delivery permitem que eles executem as s
 
    >[!NOTE]
    >
-   >**O** gerente de delivery só poderá aprovar uma oferta se ela tiver sido declarada como revisor na configuração da oferta.
+   >**Gerentes de delivery** só poderá aprovar uma oferta se ela tiver sido declarada como revisores na configuração de oferta.
 
 ## Matriz de permissões por operador de interação {#recap-of-rights-according-to-operator}
 
@@ -95,7 +96,7 @@ Os direitos atribuídos aos Gerentes de delivery permitem que eles executem as s
    <td> Ler<br /> </td> 
   </tr> 
   <tr> 
-   <td> Filtros de oferta predefinidos<br /> </td> 
+   <td> filtros de oferta predefinidos<br /> </td> 
    <td> Ler / Gravar<br /> </td> 
    <td> Ler<br /> </td> 
   </tr> 
@@ -155,7 +156,7 @@ Os direitos atribuídos aos Gerentes de delivery permitem que eles executem as s
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Filtros de oferta predefinidos<br /> </td> 
+   <td> filtros de oferta predefinidos<br /> </td> 
    <td> Ler<br /> </td> 
    <td> Ler<br /> </td> 
   </tr> 
