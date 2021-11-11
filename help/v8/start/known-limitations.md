@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: true
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
 source-git-commit: e41816003958c3373e92d5ea82240fd7ceda5857
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -27,4 +27,4 @@ Para o Adobe Campaign v8, existem as seguintes limitações:
 * Os mecanismos de subscrição (aceitação) e cancelamento de subscrição (recusa) e registro móvel são processos assíncronos. As solicitações são processadas a cada hora por meio de um fluxo de trabalho técnico específico. [Saiba mais](../config/replication.md#tech-wf)
 * As duplicatas precisam ser manipuladas manualmente pelos usuários finais. [Saiba mais](../dev/keys.md)
 * O Adobe Campaign v8 não dá suporte à produtividade estendida em aplicativos API e da Web. Em caso de necessidades específicas, entre em contato com a Adobe para obter orientação.
-* O módulo de otimização do Adobe Campaign Campaign não considera os deliveries agendados nas regras de tipologia de pressão. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=en#setting-the-period).
+* O módulo de otimização de campanha do Adobe Campaign não considera os deliveries agendados nas regras de tipologia de pressão. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=pt-BR#setting-the-period).
