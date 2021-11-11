@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 50e138853b047c27b106401f007043a0fcb45f07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '410'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,13 @@ No Painel de controle do Campaign, é possível interagir com todos os servidore
 
 Saiba como monitorar subdomínios e certificados.
 
-* [Monitorar subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target=&quot;_blank&quot;}
-* [Configurar um novo subdomínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html){target=&quot;_blank&quot;}
-* [Monitorar certificados SSL de subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html){target=&quot;_blank&quot;}
+* [Monitoramento de subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=pt-BR){target=&quot;_blank&quot;}
+* [Configuração de um novo subdomínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR){target=&quot;_blank&quot;}
+* [Monitoramento de certificados SSL de subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 ## Monitoramento de desempenho
 
-O Painel de controle do Campaign fornece várias funcionalidades para ajudá-lo a monitorar suas instâncias e garantir desempenho ideal. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=pt-BR){target=&quot;_blank&quot;}
+O Painel de controle oferece várias funcionalidades para ajudá-lo a monitorar suas instâncias e garantir um ótimo desempenho. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 
 ## Configurações de instância
