@@ -2,12 +2,12 @@
 audience: end-user
 user-guide-title: Campaign v8
 description: Documentação do Campaign v8
-breadcrumb-title: Campanha v8
+breadcrumb-title: Campaign v8
 title: Documentos do Campaign v8
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '236'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 86%
    + [Mensagens LINE](send/line.md)
    + [Correspondência direta](send/direct-mail.md)
    + [Mensagens transacionais](send/transactional.md)
-   + Gerenciar ofertas com a interação do Campaign{#interaction}
+   + Gerenciar ofertas com a Interação do Campaign{#interaction}
       + [Introdução à interação em tempo real](send/interaction.md)
       + [Ambientes e arquitetura](send/interaction-architecture.md)
       + [Práticas recomendadas](send/interaction-best-practices.md)
@@ -62,7 +62,7 @@ ht-degree: 86%
       + [Enviar uma oferta (saída)](send/interaction-send-offers.md)
       + Apresentar uma oferta (entrada){#inbound}
          + [Contexto](send/interaction-present-offers.md)
-         + [Chamar uma oferta em uma página da Web](send/interaction-integration.md)
+         + [Chamar uma oferta em uma página da web](send/interaction-integration.md)
          + [Gerenciar interações anônimas](send/anonymous-interactions.md)
       + [Relatórios e histórico](send/interaction-tracking.md)
       + [Casos de uso](send/interaction-use-cases.md)
