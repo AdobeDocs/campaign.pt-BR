@@ -16,11 +16,11 @@ ht-degree: 34%
 
 Use o Adobe Campaign para criar e monitorar seus serviços de informações, como boletins informativos e gerenciar as assinaturas/unsubscriptions para esses serviços. Vários serviços podem ser definidos em paralelo, por exemplo: boletins informativos especializados para determinadas categorias de produtos, temas ou áreas de um site, subscrições a vários tipos de mensagens de alerta e notificações em tempo real. Consulte Gerenciar assinaturas.
 
-![](../assets/do-not-localize/book.png) Saiba como criar um serviço de informação, enviar boletim informativo e gerenciar aceitações e recusas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba como criar um serviço de informações, enviar boletim informativo e gerenciar participação e não participação [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html){target=&quot;_blank&quot;}
 
 Para assinar (aceitar) um perfil para um serviço, as opções disponíveis são:
 
-* Adicionar manualmente o serviço ao perfil do recipient: para fazer isso, na guia **[!UICONTROL Subscriptions]** do perfil, clique em **[!UICONTROL Add]** e selecione o serviço de informação desejado.
+* Adicionar manualmente o serviço ao perfil do recipient: para fazer isso, na **[!UICONTROL Subscriptions]** do perfil, clique em **[!UICONTROL Add]** e selecione o serviço de informação.
 
    ![](assets/subscribe-to-a-service.png)
 
@@ -52,7 +52,7 @@ Para assinar (aceitar) um perfil para um serviço, as opções disponíveis são
    ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in){target=&quot;_blank&quot;}
 
 
-* Crie um workflow de direcionamento e use uma atividade **[!UICONTROL Subscription service]** .
+* Crie um workflow de direcionamento e use um **[!UICONTROL Subscription service]** atividade .
 
    ![](assets/wf-subscription.png)
 
@@ -76,8 +76,8 @@ Para cancelar a assinatura (recusa) de um perfil de um serviço, as opções dis
 
 >[!CAUTION]
 >
->As assinaturas e unsubscriptions são **processos assíncronos**. As solicitações de aceitação e recusa são processadas a cada hora. [Saiba mais](../dev/new-apis.md#sub-apis)
+>Assinaturas e unsubscriptions são **assíncrono** processos. As solicitações de aceitação e recusa são processadas a cada hora. [Saiba mais](../dev/new-apis.md#sub-apis)
 
 Você também pode permitir que seus recipients de delivery encaminhem mensagens para um amigo. Para fazer isso, insira os links relevantes no seu delivery. Em seguida, você poderá controlar esse processo de compartilhamento, bem como o número de visitas às páginas relacionadas.
 
-![](../assets/do-not-localize/book.png) Para obter mais informações sobre esse recurso, consulte a documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Para obter mais informações sobre esse recurso, consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend){target=&quot;_blank&quot;}

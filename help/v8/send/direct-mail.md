@@ -20,9 +20,9 @@ As etapas para gerar o arquivo são:
 
 1. Criar o delivery
 
-   Crie um delivery de mala direta com base no template . Você pode duplicar e configurar o template incorporado **[!UICONTROL Deliver by direct mail (paper)]**.
+   Crie um delivery de mala direta com base no template . Você pode duplicar e configurar o **[!UICONTROL Deliver by direct mail (paper)]** modelo integrado.
 
-   ![](../assets/do-not-localize/book.png)[ Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html)
+   ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html)
 
 1. Definir o público-alvo
 
@@ -32,30 +32,30 @@ As etapas para gerar o arquivo são:
 
    Um endereço é considerado completo se o nome, campo de CEP e campos do município/cidade não estiverem vazios.
 
-   ![](../assets/do-not-localize/book.png)[ Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
+   ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
 
 1. Definir o conteúdo do arquivo
 
    Use o assistente de extração para definir as informações (colunas) a serem exportadas para o arquivo de saída.
 
-   ![](../assets/do-not-localize/book.png)[ Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/defining-the-direct-mail-content.html)
+   ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/defining-the-direct-mail-content.html)
 
 1. Validar a entrega
 
    Verifique o resultado da análise e o conteúdo do arquivo de saída.
 
-   ![](../assets/do-not-localize/book.png)[ Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html)
+   ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html)
 
    No contexto de uma campanha de marketing, na data da extração, o arquivo de extração é criado. Você pode exibir o conteúdo do arquivo extraído, aprová-lo ou alterar o formato e reiniciar a extração, se necessário. Depois que o arquivo for aprovado, você poderá enviar o e-mail de notificação para o roteador.
 
-   ![](../assets/do-not-localize/book.png)[ Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html#approving-an-extraction-file)
+   ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html#approving-an-extraction-file)
 
 1. Iniciar o delivery
 
-   Depois de validar o arquivo de extração, clique em **Confirm delivery** uma mensagem de confirmação permite iniciar o delivery.
+   Depois de validar o arquivo de extração, clique em **Confirmar delivery** uma mensagem de confirmação permite iniciar o delivery.
 
    A confirmação inicia a extração de dados no arquivo especificado.
 
    No contexto de uma campanha de marketing, quando todas as aprovações tiverem sido concedidas, os arquivos de extração serão criados por meio de um workflow especial, que, em uma configuração padrão, será iniciado automaticamente quando um delivery de correspondência direta estiver com extração pendente.
 
-   ![](../assets/do-not-localize/book.png)[ Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html#starting-an-offline-delivery)
+   ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html#starting-an-offline-delivery)

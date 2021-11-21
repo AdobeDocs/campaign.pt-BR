@@ -8,7 +8,7 @@ exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
 source-git-commit: a02d47f172a2c3021a30834adaeb5170a9801b5c
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 53%
+ht-degree: 58%
 
 ---
 
@@ -37,7 +37,7 @@ Os gerentes de delivery só podem visualizar o **[!UICONTROL Live]** ambiente e 
 
 ## Criar um ambiente para interações anônimas{#create-an-offer-environment}
 
-Por padrão, o Campaign vem com um ambiente integrado para direcionar à tabela de recipients (ofertas identificadas). Para direcionar outra tabela, como perfis anônimos que visitam seu site para interações de entrada, é necessário atualizar sua configuração.
+Por padrão, o Campaign vem com um ambiente integrado para direcionar a tabela de recipients (ofertas identificadas). Para direcionar outra tabela, como perfis anônimos que visitam seu site para interações de entrada, é necessário atualizar sua configuração.
 
 Siga as etapas abaixo:
 
@@ -59,7 +59,7 @@ Se ativado o mapeamento **[!UICONTROL Visitor]**, a caixa **[!UICONTROL Environm
 
 Essa opção permite ativar funções específicas de interação anônima, especialmente quando configurar espaços de oferta de ambiente. Também é possível configurar opções que permitem alternar de um ambiente &quot;identificado&quot; para um ambiente &quot;anônimo&quot;.
 
-Por exemplo, é possível vincular um espaço de oferta de ambiente de recipient (contato identificado) com um espaço de oferta que corresponda a um ambiente de visitante (contato não identificado). Dessa forma, diferentes ofertas serão disponibilizadas para o contato, dependendo se esse contato for identificado ou não. Para obter mais informações, consulte [Criação de espaços de oferta](interaction-offer-spaces.md).
+Por exemplo, é possível vincular um espaço de oferta de ambiente de recipient (contato identificado) com um espaço de oferta que corresponda a um ambiente de visitante (contato não identificado). Dessa forma, as diferentes ofertas serão disponibilizadas para o contato, dependendo se ele for identificado ou não. Para obter mais informações, consulte [Criação de espaços de oferta](interaction-offer-spaces.md).
 
 ![](assets/offer_env_anonymous_003.png)
 

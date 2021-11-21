@@ -11,13 +11,13 @@ ht-degree: 2%
 
 # Gerenciamento de chaves e unicidade {#key-management}
 
-No Campaign v8, a chave primária é um UUID (Universally Unique IDentifier), que é uma sequência de caracteres. Para criar esse UUID, o elemento principal do schema deve conter os atributos **autouuid** e **autopk** definidos como **true**.
+No Campaign v8, a chave primária é um UUID (Universally Unique IDentifier), que é uma sequência de caracteres. Para criar esse UUID, o elemento principal do schema deve conter a variável **autouuid** e **autopk** atributos definidos como **true**.
 
 O Adobe campaign v8 vem com o Snowflake como o banco de dados principal. A arquitetura distribuída do banco de dados do Snowflake não fornece mecanismos para gerenciar a unicidade de uma chave em uma tabela: os usuários finais são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign.
 
-Evitar duplicatas em chaves e, especialmente, em chaves primárias, é obrigatório para preservar a consistência do banco de dados relacional. As duplicatas em chaves primárias levam a problemas com atividades de workflow do gerenciamento de dados, como **Query**, **Reconciliation**, **Update data** e muito mais.
+Evitar duplicatas em chaves e, especialmente, em chaves primárias, é obrigatório para preservar a consistência do banco de dados relacional. Duplicidades em chaves primárias levam a problemas com atividades de fluxo de trabalho de gerenciamento de dados, como **Query**, **Reconciliação**, **Atualizar dados** e muito mais.
 
-Como prática recomendada, o Adobe recomenda a adoção de uma estratégia [Detect](#detect-duplicates) e [Correct](#correct-duplicates) como parte do processo geral de Gerenciamento de dados, caso chaves duplicadas tenham sido carregadas no banco de dados.
+Como prática recomendada, o Adobe recomenda adotar uma [Detectar](#detect-duplicates) e [Correto](#correct-duplicates) como parte de seu processo geral de Gestão de Dados, no caso de chaves duplicadas terem sido carregadas no banco de dados.
 
 ## Detectar duplicatas{#detect-duplicates}
 
@@ -37,12 +37,12 @@ Quando isso ocorre, é possível criar um workflow para identificar as chaves du
 
    ![](assets/new-wf.png)
 
-1. Adicionar uma atividade **Query**
-1. Selecione a tabela **Recipient**
+1. Adicione um **Query** atividade
+1. Selecione o **Recipient** tabela
 
    ![](assets/add-query-on-rcp.png)
 
-1. Adicione uma atividade **Deduplication** e desduplique na chave primária (UUID). Mantenha apenas uma duplicata e marque a opção **Generate Complement** para criar uma transição de saída para a(s) duplicata(s).
+1. Adicione um **Desduplicação** e desduplique na chave primária (UUID). Mantenha apenas uma duplicata e verifique a variável  **Gerar Complement** para criar uma transição de saída para a(s) duplicata(s).
 
    ![](assets/deduplicate.png)
 
@@ -63,11 +63,10 @@ A correção das duplicatas requer que os clientes atualizem os dados do Campaig
 
 Por exemplo:
 
-* **Caso 1**  - Recipientes duplicados com a mesma UUID e as mesmas informações de perfil (mesmo email, nome etc.) : os recipients parecem duplicatas &quot;reais&quot; e a atenuação pode ser apenas remover uma das duplicatas.
+* **Caso 1** - Destinatários duplicados com a mesma UUID e as mesmas informações de perfil (mesmo email, nome etc.) : os recipients parecem duplicatas &quot;reais&quot; e a atenuação pode ser apenas remover uma das duplicatas.
 Outra abordagem poderia ser mesclar informações de um recipient no outro.
 
-* **Caso 2**  - Recipientes duplicados com o mesmo UUID, mas informações de perfil diferentes (email diferente, nome etc.):
-desta vez, parece que há perfis diferentes e você pode manter ambos no banco de dados do Campaign, o que significa que podemos preferir apenas atualizar uma das duplicatas que geram um novo UUID. [Saiba mais neste exemplo](#deduplicate-sample).
+* **Caso 2** - Destinatários duplicados com o mesmo UUID, mas informações de perfil diferentes (email diferente, nome etc.): desta vez, parece que há perfis diferentes e você pode manter ambos no banco de dados do Campaign, o que significa que podemos preferir apenas atualizar uma das duplicatas que geram um novo UUID. [Saiba mais neste exemplo](#deduplicate-sample).
 
 Dependendo de sua estratégia de mitigação, sempre é possível consultar a lista de outro workflow e aplicar a atualização de acordo com sua necessidade. Para obter mais orientações, entre em contato com o Adobe.
 
@@ -75,7 +74,7 @@ Dependendo de sua estratégia de mitigação, sempre é possível consultar a li
 
 No caso de recipients duplicados, você pode manter ambos os registros no banco de dados do Campaign. Nesse caso, você precisa atualizar um deles com um novo UUID.
 
-Para executar uma consulta de atualização SQL no banco de dados da nuvem, você pode usar a atividade de workflow **SQL Data Management** e executar a seguinte atualização SQL:
+Para executar uma consulta de atualização SQL no banco de dados da nuvem, você pode usar o **Gestão de Dados SQL** atividade de workflow e execute a seguinte atualização SQL:
 
 ```sql
 update nmsrecipient set urecipientid = uuid_string()
@@ -85,4 +84,4 @@ and urecipientid = 'c04d93f2-6012-4668-b523-88db1262cd46';
 
 ![](assets/sql-data-management.png)
 
-Depois que a linha selecionada é atualizada com um novo UUID, você pode verificar a linha atualizada da interface e observar que o UUID foi atualizado conforme esperado. Você também pode detectar duplicatas no Banco de Dados executando o workflow **Detectar duplicatas** [conforme explicado aqui](#detect-duplicates).
+Depois que a linha selecionada é atualizada com um novo UUID, você pode verificar a linha atualizada da interface e observar que o UUID foi atualizado conforme esperado. Também é possível detectar duplicatas no Banco de Dados executando o **Detectar duplicatas** workflow [como explicado aqui](#detect-duplicates).

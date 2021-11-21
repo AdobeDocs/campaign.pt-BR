@@ -23,7 +23,7 @@ Para enviar notificações por push no Adobe Campaign, é necessário:
 1. Adicione as versões iOS e Android do aplicativo a este serviço.
 1. Crie um delivery para iOS e Android.
 
-![](../assets/do-not-localize/book.png) Saiba como começar a usar o aplicativo móvel na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba como começar a usar o aplicativo móvel no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target=&quot;_blank&quot;}
 
 ## Integrar ao SDK do Adobe
 
@@ -31,23 +31,23 @@ Para enviar notificações por push no Adobe Campaign, é necessário:
 
 O SDK do Campaign facilita a integração do aplicativo móvel na plataforma Adobe Campaign.
 
-Versões compatíveis do SDK são listadas em [Matriz de compatibilidade do Campaign](../start/compatibility-matrix.md#MobileSDK).
+Versões compatíveis do SDK são listadas em [Matriz de compatibilidade de campanha](../start/compatibility-matrix.md#MobileSDK).
 
-![](../assets/do-not-localize/glass.png) Saiba como integrar SDKs do Campaign Android e iOS ao seu aplicativo nesta  [seção](../config/push-config.md)
+![](../assets/do-not-localize/glass.png) Saiba como integrar SDKs do Campaign Android e iOS ao seu aplicativo em [esta seção](../config/push-config.md)
 
 ### Configurar a extensão do Campaign no Launch
 
 É possível integrar o SDK do Adobe Experience Platform Launch com o Campaign, aproveitando a extensão Campaign Classic.
 
-![](../assets/do-not-localize/book.png) Saiba mais na documentação do SDK do  [Adobe Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do SDK do Adobe Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}
 
 ## Definir as configurações do aplicativo no Campaign
 
 Você deve definir as configurações dos aplicativos iOS e Android no Adobe Campaign.
 
-![](../assets/do-not-localize/book.png) As diretrizes de configuração do iOS são detalhadas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=pt-BR#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) As diretrizes de configuração do iOS estão detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=pt-BR#sending-messages){target=&quot;_blank&quot;}
 
-![](../assets/do-not-localize/book.png) As diretrizes de configuração para Android são detalhadas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) As diretrizes de configuração do Android estão detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages){target=&quot;_blank&quot;}
 
 ## Criar sua primeira notificação por push
 
@@ -57,15 +57,15 @@ Esta seção detalha os elementos específicos para o delivery de notificações
 >
 >Com o Campaign v8, o registro móvel agora é **assíncrono**. [Saiba mais](../dev/staging.md)
 
-Para criar um novo delivery, navegue até a guia **[!UICONTROL Campaigns]** , clique em **[!UICONTROL Deliveries]** e clique no botão **[!UICONTROL Create]** acima da lista de deliveries existentes.
+Para criar um novo delivery, navegue até o **[!UICONTROL Campaigns]** clique em **[!UICONTROL Deliveries]** e clique no botão **[!UICONTROL Create]** acima da lista de deliveries existentes.
 
 ![](assets/delivery_step_1.png)
 
-![](../assets/do-not-localize/book.png) Para obter informações globais sobre como criar um delivery, consulte a documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Para obter informações globais sobre como criar um delivery, consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages){target=&quot;_blank&quot;}
 
 ### Enviar notificações no iOS {#send-notifications-on-ios}
 
-1. Selecione o template do delivery **[!UICONTROL Deliver on iOS]** e clique em **[!UICONTROL Continue]**.
+1. Selecione o **[!UICONTROL Deliver on iOS]** modelo de delivery e clique em **[!UICONTROL Continue]**.
 
    ![](assets/push-template-ios.png)
 
@@ -73,7 +73,7 @@ Para criar um novo delivery, navegue até a guia **[!UICONTROL Campaigns]** , cl
 
    ![](assets/push-ios-select-target.png)
 
-1. Selecione **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, selecione o serviço relevante para o aplicativo móvel e selecione a versão iOS do aplicativo.
+1. Selecionar **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, selecione o serviço relevante para o aplicativo móvel e selecione a versão iOS do aplicativo.
 
    ![](assets/push-ios-subscribers.png)
 
@@ -83,7 +83,7 @@ Para criar um novo delivery, navegue até a guia **[!UICONTROL Campaigns]** , cl
 
 1. No campo **[!UICONTROL Title]**, insira o rótulo do título que deve aparecer na notificação.
 
-1. Insira o **[!UICONTROL Message]** e o **[!UICONTROL Value of the badge]** com base no tipo de notificação escolhido.
+1. Insira o **[!UICONTROL Message]** e **[!UICONTROL Value of the badge]** com base no tipo de notificação escolhido.
 
 1. Você também pode definir os seguintes elementos:
 

@@ -18,4 +18,4 @@ Você pode usar Experience Cloud Triggers para conectar dados entre o Adobe Camp
 
 Saiba mais sobre Adobe Campaign e Experience Cloud Triggers em [esta página](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en).
 
-![](../assets/do-not-localize/speech.png)   Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para implementar acionadores de Experience Cloud com o Campaign.
+![](../assets/do-not-localize/speech.png)   Como um usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para implementar acionadores Experience Cloud com o Campaign.

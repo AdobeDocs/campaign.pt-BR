@@ -16,17 +16,17 @@ ht-degree: 76%
 
 Você pode configurar o Adobe Analytics para integrar o Campaign e o Analytics.
 
-Essa integração permite que o Adobe Campaign e o Adobe Analytics interajam por meio do complemento **Web Analytics connectors**. Essa integração envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para a Adobe Analytics.
+Essa integração permite que o Adobe Campaign e o Adobe Analytics interajam por meio do **Conectores do Web Analytics** complemento. Essa integração envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para a Adobe Analytics.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para conectar o Campaign com os serviços e as soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado no ambiente, por meio do pacote dedicado.
+![](../assets/do-not-localize/speech.png)  Como um usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para conectar o Campaign com os serviços e as soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado no ambiente, por meio do pacote dedicado.
 
 Usando o Adobe Analytics Connector, o Adobe Campaign tem uma forma de medir o público-alvo da Internet (Web Analytics). As ferramentas de análise da Web permitem que o Adobe Campaign encaminhe indicadores e atributos de campanha para o Analytics.
 
 O perímetro de ação de cada ferramenta é o seguinte:
 
-* **O Adobe** Analytics marca as campanhas de email iniciadas com o Adobe Campaign
+* **Adobe Analytics** marca as campanhas de email iniciadas com o Adobe Campaign
 
-* **O Adobe** Campaign envia os indicadores e os atributos da campanha para o conector, que, por sua vez, os encaminha para a ferramenta Web Analytics
+* **Adobe Campaign** envia os indicadores e os atributos da campanha para o conector, que, por sua vez, os encaminha para a ferramenta Web Analytics
 
 
 >[!CAUTION]
@@ -41,7 +41,7 @@ Para configurar a conexão do Campaign com o Analytics, você deve executar as s
 
 ## Criar seu conjunto de relatórios do Analytics {#report-suite-analytics}
 
-Para criar seu **[!UICONTROL Report suite]** em [!DNL Adobe Analytics], siga as etapas abaixo:
+Para criar **[!UICONTROL Report suite]** em [!DNL Adobe Analytics]siga as etapas abaixo:
 
 1. No [!DNL Adobe Analytics], selecione a **[!UICONTROL Admin tab]** e clique em **[!UICONTROL All admin]**.
 
@@ -191,11 +191,11 @@ Para obter mais informações, consulte a página [Perfis de produto do Adobe An
 
 A troca de dados entre o Adobe Campaign e o Adobe Analytics é realizada por um workflow técnico que é executado como uma tarefa em segundo plano.
 
-Esse workflow está disponível na árvore do Campaign Explorer, na pasta **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]**.
+Esse workflow está disponível na árvore do Campaign Explorer, sob a **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]** pasta.
 
 ![](assets/webanalytics_workflows.png)
 
-O workflow **[!UICONTROL Sending of indicators and campaign attributes]** permite enviar indicadores de campanha de email via Adobe Campaign para a Adobe Experience Cloud usando o Adobe Analytics Connector. Esse workflow é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
+O **[!UICONTROL Sending of indicators and campaign attributes]** O workflow permite enviar indicadores de campanha de email via Adobe Campaign para a Adobe Experience Cloud usando o Adobe Analytics Connector. Esse workflow é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
 
 Observe que esse workflow não deve ser reiniciado ou todos os dados anteriores podem distorcer os resultados do Analytics.
 

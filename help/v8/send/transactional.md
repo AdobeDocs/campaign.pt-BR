@@ -16,7 +16,7 @@ ht-degree: 72%
 
 O envio de mensagens transacionais (Centro de mensagens) é um módulo do Campaign criado para gerenciar mensagens por disparo. Essas mensagens são geradas por eventos disparados dos sistemas de informações e podem ser: fatura, confirmação de pedidos, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta ou criação de conta de site, por exemplo.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
+![](../assets/do-not-localize/speech.png)  Como um usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
 
 As mensagens transacionais são usadas para enviar:
 
@@ -24,9 +24,9 @@ As mensagens transacionais são usadas para enviar:
 * uma resposta individual em tempo real a uma ação do cliente
 * conteúdo não promocional
 
-![](../assets/do-not-localize/glass.png) As configurações de mensagens transacionais são detalhadas  [nesta seção](../config/transactional-msg-settings.md).
+![](../assets/do-not-localize/glass.png) As configurações de mensagens transacionais são detalhadas em [esta seção](../config/transactional-msg-settings.md).
 
-![](../assets/do-not-localize/glass.png) Entenda a arquitetura de mensagens transacionais  [nesta página](../dev/architecture.md).
+![](../assets/do-not-localize/glass.png) Entenda a arquitetura de mensagens transacionais no [esta página](../dev/architecture.md).
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ Para criar um template de mensagem, siga as etapas abaixo:
    >
    >Um tipo de evento nunca deve estar vinculado a mais de um template.
 
-1. Insira uma natureza e uma descrição, depois clique em **[!UICONTROL Continue]** para criar o corpo da mensagem. Consulte [Criar o conteúdo da mensagem](#create-message-content).
+1. Insira uma natureza e uma descrição, em seguida, clique em **[!UICONTROL Continue]** para criar o corpo da mensagem. Consulte [Criar o conteúdo da mensagem](#create-message-content).
 
 ### Criar o conteúdo{#create-message-content}
 
@@ -96,7 +96,7 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 
 Um seed address permite exibir uma pré-visualização da mensagem, enviar uma prova e testar a personalização da mensagem antes de enviar a mensagem. Os seed addresses estão vinculados ao delivery e não podem ser usados para outros deliveries.
 
-1. No template de mensagem transacional, clique na guia **[!UICONTROL Seed addresses]** e, em seguida, clique no botão **[!UICONTROL Add]**.
+1. No modelo de mensagem transacional, clique no botão **[!UICONTROL Seed addresses]** e clique no botão **[!UICONTROL Add]** botão.
 
    ![](assets/messagecenter_create_seed_1.png)
 
@@ -120,7 +120,7 @@ Depois que os endereços forem criados, você poderá acessar a visualização e
 
 ### Adicionar dados de personalização{#personalization-data}
 
-Você pode adicionar dados no template de mensagem para testar a personalização da mensagem transacional. Isso permitirá gerar uma pré-visualização ou enviar uma prova. Se instalar o módulo **Deliverability**, esses dados permitirão exibir uma renderização das mensagens para vários clientes de desktop, Web ou dispositivos móveis.
+Você pode adicionar dados no template de mensagem para testar a personalização da mensagem transacional. Isso permitirá gerar uma pré-visualização ou enviar uma prova. Se você instalar o **Capacidade de entrega** , esses dados permitem exibir uma renderização das mensagens para vários clientes de desktop, Web ou dispositivos móveis.
 
 O objetivo desses dados é testar suas mensagens antes do delivery final. Essas mensagens não coincidem com os dados reais para serem processados pelo Centro de Mensagens. Entretanto, a estrutura XML deve ser idêntica à do evento armazenado na instância de execução, conforme mostrado abaixo.
 
@@ -137,7 +137,7 @@ Essas informações permitem personalizar o conteúdo da mensagem usando tags de
 
 Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-visualizar a mensagem e verificar sua personalização.
 
-1. No template de mensagem, clique na guia **[!UICONTROL Preview]** e selecione **[!UICONTROL A seed address]** na lista suspensa.
+1. No modelo de mensagem, clique no botão **[!UICONTROL Preview]** e selecione **[!UICONTROL A seed address]** na lista suspensa.
 
    ![](assets/messagecenter_preview_1.png)
 
@@ -151,7 +151,7 @@ Você pode testar a entrega de mensagens enviando uma prova para um seed address
 
 O envio de uma prova envolve o mesmo processo de qualquer delivery.
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre provas na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba mais sobre provas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 No entanto, para enviar uma prova de uma mensagem transacional, você precisa realizar as seguintes operações:
 
@@ -219,7 +219,7 @@ Depois que um template de mensagem é publicado nas instâncias de execução, v
 
 Para desfazer a publicação de um template de mensagem transacional, siga as etapas abaixo.
 
-1. Na instância de controle, navegue até a pasta **[!UICONTROL Message Center > Transactional message templates]**.
+1. Na instância de controle, navegue até o **[!UICONTROL Message Center > Transactional message templates]** pasta.
 1. Selecione o template para desfazer a publicação.
 1. Clique em **[!UICONTROL Unpublish]**.
 1. Clique em **[!UICONTROL Start]**.

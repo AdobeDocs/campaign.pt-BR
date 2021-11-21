@@ -1,18 +1,19 @@
 ---
 title: Filtrar esquemas de campanha
 description: Saiba como filtrar esquemas do Campaign
-source-git-commit: e0faeda87d5b84309524a72d9f021c381ac4619e
+exl-id: e8ad021c-ce2e-4a74-b9bf-a989d8879fd1
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
-# Schemas de filtro{#filter-schemas}
+# Esquemas de filtro{#filter-schemas}
 
 ## Filtros do sistema {#system-filters}
 
-Você pode filtrar o acesso ao esquema para usuários específicos, dependendo de suas permissões. Os filtros do sistema permitem gerenciar as permissões de leitura e gravação de entidades detalhadas em schemas, usando os parâmetros **readAccess** e **writeAccess** .
+Você pode filtrar o acesso ao esquema para usuários específicos, dependendo de suas permissões. Os filtros do sistema permitem gerenciar as permissões de leitura e gravação de entidades detalhadas em schemas, usando **readAccess** e **writeAccess** parâmetros.
 
 >[!NOTE]
 >
@@ -20,11 +21,11 @@ Você pode filtrar o acesso ao esquema para usuários específicos, dependendo d
 
 * **readAccess**: fornece acesso somente leitura aos dados do esquema.
 
-   **Aviso**  - Todas as tabelas vinculadas devem ser definidas com a mesma restrição. Essa configuração pode afetar o desempenho.
+   **Aviso** - Todas as tabelas vinculadas devem ser definidas com a mesma restrição. Essa configuração pode afetar o desempenho.
 
 * **writeAccess**: fornece acesso de gravação aos dados do esquema.
 
-Esses filtros são inseridos no nível principal **element** dos schemas e, como mostrado nos exemplos a seguir, podem ser formados para restringir o acesso.
+Esses filtros são inseridos no **elemento** dos esquemas e, como mostrado nos exemplos a seguir, podem ser formados para restringir o acesso.
 
 * Restringir permissões de GRAVAÇÃO
 
@@ -38,7 +39,7 @@ Esses filtros são inseridos no nível principal **element** dos schemas e, como
 
 * Restringir permissões de LEITURA e GRAVAÇÃO:
 
-   Aqui, o filtro é usado para não permitir permissões de LEITURA e GRAVAÇÃO no schema para todos os operadores. Somente a conta **interna**, representada pela expressão &quot;$(loginId)!=0&quot;, tem essas permissões.
+   Aqui, o filtro é usado para não permitir permissões de LEITURA e GRAVAÇÃO no schema para todos os operadores. Somente a variável **interno** conta, representada pela expressão &quot;$(loginId)!=0&quot;, tem essas permissões.
 
    ```
    <sysFilter name="readAccess"> 
@@ -50,7 +51,7 @@ Esses filtros são inseridos no nível principal **element** dos schemas e, como
    </sysFilter>
    ```
 
-   Os possíveis valores de atributo **expr** usados para definir a condição são TRUE ou FALSE.
+   Possível **expr** os valores de atributo usados para definir a condição são TRUE ou FALSE.
 
 >[!NOTE]
 >
@@ -93,7 +94,7 @@ Por padrão, os esquemas internos só podem ser acessados com permissões de GRA
 
 >[!CAUTION]
 >
->As permissões READ e WRITE para o schema **xtk:sessionInfo** só podem ser acessadas pela conta interna de uma instância do Adobe Campaign.
+>Permissões de LEITURA e GRAVAÇÃO para o **xtk:sessionInfo** são acessíveis somente pela conta interna de uma instância do Adobe Campaign.
 
 ## Modificar filtros do sistema de esquemas internos
 
@@ -102,5 +103,5 @@ Os esquemas internos são protegidos para evitar problemas de compatibilidade co
 No entanto, em contextos específicos, pode ser necessário modificar os filtros do sistema dos schemas incorporados. Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma extensão para o schema incorporado ou abra uma extensão existente.
-1. Adicione um elemento filho **`<sysfilter name="<filter name>" _operation="delete"/>`** no elemento principal para ignorar o filtro sob o mesmo no schema incorporado.
-1. Você pode adicionar um novo filtro, conforme detalhado na seção [Filtros do sistema](#system-filters).
+1. Adicionar um elemento filho **`<sysfilter name="<filter name>" _operation="delete"/>`** no elemento principal para ignorar o filtro sob o mesmo no schema incorporado.
+1. Você pode adicionar um novo filtro, conforme detalhado na seção [Filtros do sistema](#system-filters) seção.

@@ -17,9 +17,9 @@ O sistema Adobe Campaign é muito flexível e pode ser estendido além da implem
 
 Para obter uma melhor compreensão das tabelas integradas do Campaign e como elas se relacionam entre si, consulte [esta seção](datamodel.md) .
 
-![](../assets/do-not-localize/glass.png) Leia  [esta ](schemas.md) seção para começar a usar os esquemas do Campaign.
+![](../assets/do-not-localize/glass.png) Leia [esta seção](schemas.md) para começar a usar os esquemas do Campaign.
 
-![](../assets/do-not-localize/glass.png) Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign  [nesta página](extend-schema.md).
+![](../assets/do-not-localize/glass.png) Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign em [esta página](extend-schema.md).
 
 ## Arquitetura do modelo de dados {#data-model-architecture}
 
@@ -29,12 +29,12 @@ O Adobe Campaign é um poderoso sistema de gerenciamento de campanhas em vários
 
 Embora a maioria dos provedores de serviços de email esteja se comunicando com os clientes por meio de uma abordagem centrada em listas, o Adobe Campaign depende de um banco de dados relacional para aproveitar uma visão mais ampla dos clientes e seus atributos.
 
-Para acessar a descrição de cada tabela, vá para **[!UICONTROL Admin > Configuration > Data schemas]**, selecione um recurso da lista e clique na guia **[!UICONTROL Documentation]**.
+Para acessar a descrição de cada tabela, acesse **[!UICONTROL Admin > Configuration > Data schemas]**, selecione um recurso na lista e clique no botão **[!UICONTROL Documentation]** guia .
 
 
 >[!NOTE]
 >
->O Adobe Campaign permite criar uma [tabela de recipient personalizada](custom-recipient.md). No entanto, na maioria dos casos, é recomendável aproveitar a [tabela de recipient](datamodel.md#ootb-profiles) que já tem tabelas e recursos adicionais pré-criados.
+>O Adobe Campaign permite criar um [tabela de recipient personalizada](custom-recipient.md). No entanto, na maioria dos casos, é recomendável aproveitar o [Tabela de recipients](datamodel.md#ootb-profiles) que já tem tabelas e recursos adicionais pré-criados.
 
 ### Dados do Adobe Campaign {#data-for-campaign}
 
@@ -57,10 +57,10 @@ Se não estiver caindo em nenhum desses, você provavelmente não precisará des
 Para garantir uma boa arquitetura e o desempenho do sistema, siga as práticas recomendadas abaixo para configurar os dados no Adobe Campaign.
 
 * Em uma tabela grande, é possível inserir campos de sequência ou numéricos e adicionar links a tabelas de referência (ao trabalhar com a lista de valores).
-* O atributo **expr** permite definir um atributo de esquema como um campo calculado em vez de um valor de conjunto físico em uma tabela. Isso pode habilitar o acesso às informações em um formato diferente (como para idade e data de nascimento, por exemplo) sem a necessidade de armazenar ambos os valores. Essa é uma boa maneira de evitar a duplicação de campos. Por exemplo, a tabela Recipient usa uma expressão para o domínio, que já está presente no campo de email.
-* No entanto, quando o cálculo da expressão é complexo, não é recomendável usar o atributo **expr**, pois o cálculo instantâneo pode afetar o desempenho das consultas.
-* O tipo **XML** é uma boa maneira de evitar a criação de muitos campos. Mas também ocupa espaço em disco, pois usa uma coluna CLOB no banco de dados. Também pode levar a queries SQL complexos e afetar o desempenho.
-* O comprimento de um campo **string** deve sempre ser definido com a coluna . Por padrão, o comprimento máximo no Adobe Campaign é de 16K, mas o Adobe recomenda manter o campo mais curto se você já souber que o tamanho não excederá um comprimento menor.
+* O **expr** permite definir um atributo de schema como um campo calculado em vez de um valor de conjunto físico em uma tabela. Isso pode habilitar o acesso às informações em um formato diferente (como para idade e data de nascimento, por exemplo) sem a necessidade de armazenar ambos os valores. Essa é uma boa maneira de evitar a duplicação de campos. Por exemplo, a tabela Recipient usa uma expressão para o domínio, que já está presente no campo de email.
+* No entanto, quando o cálculo da expressão é complexo, não é recomendável usar a variável **expr** como cálculo dinâmico pode afetar o desempenho de suas consultas.
+* O **XML** é uma boa maneira de evitar a criação de muitos campos. Mas também ocupa espaço em disco, pois usa uma coluna CLOB no banco de dados. Também pode levar a queries SQL complexos e afetar o desempenho.
+* O comprimento de um **string** deve ser sempre definido com a coluna . Por padrão, o comprimento máximo no Adobe Campaign é de 16K, mas o Adobe recomenda manter o campo mais curto se você já souber que o tamanho não excederá um comprimento menor.
 * É aceitável ter um campo menor no Adobe Campaign do que no sistema de origem se você tiver certeza de que o tamanho no sistema de origem foi superestimado e não seria atingido. Isso pode significar uma string menor ou um número inteiro menor no Adobe Campaign.
 
 ### Escolha dos campos {#choice-of-fields}
@@ -69,7 +69,7 @@ Um campo precisa ser armazenado em uma tabela se tiver uma finalidade de direcio
 
 ### Escolha de chaves {#choice-of-keys}
 
-Além dos **autouuid** e **autopk** definidos por padrão na maioria das tabelas, você deve considerar adicionar algumas chaves lógicas ou de negócios (número de conta, número de cliente e assim por diante). Ele pode ser usado posteriormente para importações/reconciliação ou pacotes de dados. Para obter mais informações, consulte [Identificadores](#identifiers).
+Além do **autouuid** e **autopk** definido por padrão na maioria das tabelas, você deve considerar adicionar algumas chaves lógicas ou comerciais (número de conta, número de cliente e assim por diante). Ele pode ser usado posteriormente para importações/reconciliação ou pacotes de dados. Para obter mais informações, consulte [Identificadores](#identifiers).
 
 Chaves eficientes são essenciais para o desempenho. Com o Snowflake, é possível inserir tipos de dados numéricos ou baseados em sequência como chaves para tabelas.
 
@@ -108,7 +108,7 @@ Essa chave personalizada é a chave primária de registro real no sistema extern
 
 Ao criar uma tabela personalizada, você tem duas opções:
 * Uma combinação de chave gerada automaticamente (id) e chave interna (personalizada). Essa opção é interessante se a chave do sistema for uma chave composta ou não um inteiro. Com Snowflake, números inteiros ou chaves baseadas em sequência fornecerão desempenho mais alto em grandes tabelas e unirão a outras tabelas.
-* Usar a chave primária como a chave primária do sistema externo. Essa solução geralmente é preferida, pois simplifica a abordagem para importar e exportar dados, com uma chave consistente entre diferentes sistemas. **** O Autouuidt deve ser desativado se a chave for chamada de &quot;id&quot; e se espera que seja preenchida com valores externos (não gerado automaticamente).
+* Usar a chave primária como a chave primária do sistema externo. Essa solução geralmente é preferida, pois simplifica a abordagem para importar e exportar dados, com uma chave consistente entre diferentes sistemas. **Autouuid** deve ser desativado se a chave for chamada de &quot;id&quot; e se espera que seja preenchida com valores externos (não gerados automaticamente).
 
 >[!CAUTION]
 >
@@ -121,7 +121,7 @@ Ao criar uma tabela personalizada, você tem duas opções:
 
 Cuidado com a &quot;própria&quot; integridade em tabelas grandes. Excluir registros que tenham tabelas grandes na integridade &quot;própria&quot; pode potencialmente interromper a instância. A tabela está bloqueada e as exclusões são feitas uma por uma. Portanto, é melhor usar integridade &quot;neutra&quot; em tabelas secundárias que têm grandes volumes.
 
-Declarar um link como uma associação externa não é bom para o desempenho. O registro de id zero emula a funcionalidade de associação externa. Não é necessário declarar associações externas se o link usar **autouuid**.
+Declarar um link como uma associação externa não é bom para o desempenho. O registro de id zero emula a funcionalidade de associação externa. Não é necessário declarar associações externas se o link usar o **autouuid**.
 
 Embora seja possível unir qualquer tabela em um workflow, o Adobe recomenda definir links comuns entre recursos diretamente na definição da estrutura de dados.
 
@@ -141,7 +141,7 @@ Defina um link com uma cardinalidade (1-N) no schema no lado (1). Por exemplo, a
 
 Observe que uma cardinalidade reversa de um link é (N) por padrão. É possível definir um link (1-1) adicionando o atributo revCardinality=&#39;single&#39; à definição do link.
 
-Se o link reverso não deve estar visível para o usuário, você pode ocultá-lo com a definição de link revLink=&#39;_NONE_&#39;. Um bom caso de uso para isso é definir um link do recipient para a última transação concluída, por exemplo. Você só precisa ver o link do recipient para a última transação e nenhum link reverso é necessário para ficar visível da tabela de transações.
+Se o link reverso não deve estar visível para o usuário, você pode ocultá-lo com a definição do link revLink=&#39;_NENHUM_&quot;. Um bom caso de uso para isso é definir um link do recipient para a última transação concluída, por exemplo. Você só precisa ver o link do recipient para a última transação e nenhum link reverso é necessário para ficar visível da tabela de transações.
 
 Os links que executam uma associação externa (1-0.1) devem ser usados com cuidado, pois afetarão o desempenho do sistema.
 
@@ -213,9 +213,9 @@ Abaixo estão algumas práticas recomendadas comuns que devem ser seguidas ao pr
 
 O tamanho da tabela é uma combinação do número de registros e do número de colunas por registro. Ambos podem afetar o desempenho das consultas.
 
-* Uma tabela **small-size** é semelhante à tabela Delivery.
-* Uma tabela **medium size** é igual ao tamanho da tabela Recipient. Ele tem um registro por cliente.
-* Uma tabela **large-size** é semelhante à tabela Broad log . Ele tem muitos registros por cliente.
+* A **tamanho pequeno** é semelhante à tabela Delivery .
+* A **tamanho médio** tabela é igual ao tamanho da tabela Recipient . Ele tem um registro por cliente.
+* A **tamanho grande** é semelhante à tabela Broad log . Ele tem muitos registros por cliente.
 Por exemplo, se seu banco de dados contém 10 milhões de recipients, a tabela Broad log contém cerca de 100 a 200 milhões de mensagens e a tabela Delivery contém alguns milhares de registros.
 
 O número de linhas também afeta o desempenho. O banco de dados do Adobe Campaign não foi projetado para armazenar dados históricos que não são usados ativamente para fins de direcionamento ou personalização - esse é um banco de dados operacional.

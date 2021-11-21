@@ -28,13 +28,13 @@ Um fluxo de trabalho interno dedicado sincronizará os dados no banco de dados d
 
 ## Inserir dados{#data-insert-api}
 
-A API **xtk.session.ingest** é dedicada somente à inserção de dados. Nenhuma atualização/exclusão.
+O **xtk.session.ingest** A API é dedicada somente à inserção de dados. Nenhuma atualização/exclusão.
 
 ### Inserir sem reconciliação
 
 **Em um fluxo de trabalho**
 
-Use o seguinte código em uma atividade **Javascript code** para inserir dados no banco de dados do Cloud sem reconciliação:
+Use o seguinte código em um **Código JavaScript** atividade para inserir dados no banco de dados do Cloud sem reconciliação:
 
 ```
 var xmlStagingSampleTable = <sampleTableStg
@@ -91,7 +91,7 @@ Como resultado, a tabela de preparo é alimentada conforme esperado.
 
 **Em um fluxo de trabalho**
 
-Use o seguinte código em uma atividade **Javascript code** para inserir dados no banco de dados do Cloud com reconciliação:
+Use o seguinte código em um **Código JavaScript** atividade para inserir dados no banco de dados do Cloud com reconciliação:
 
 ```
 var xmlStagingSampleTable = <sampleTableStg  _key="@id" id="ABC12345"
@@ -147,13 +147,13 @@ Como resultado, a tabela de preparo é alimentada conforme esperado.
 
 ## Atualizar ou excluir dados{#data-update-api}
 
-A API **xtk.session.IngestExt** é otimizada para atualização/exclusão de dados. Apenas para inserir, prefira **xtk.session.ingest**. Inserir está funcionando se a chave de registro não está na tabela de preparo.
+O **xtk.session.IngestExt** A API é otimizada para atualização/exclusão de dados. Apenas para inserir, preferir **xtk.session.ingest**. Inserir está funcionando se a chave de registro não está na tabela de preparo.
 
 ### Inserir / atualizar
 
 **Em um fluxo de trabalho**
 
-Use o seguinte código em uma atividade **Javascript code** para atualizar dados no banco de dados do Cloud:
+Use o seguinte código em um **Código JavaScript** atividade para atualizar dados no banco de dados do Cloud:
 
 ```
 var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
@@ -206,9 +206,9 @@ Como resultado, a tabela de preparo é atualizada conforme esperado.
 
 ## Gestão de assinaturas {#sub-apis}
 
-O gerenciamento de assinaturas no Campaign é descrito em [this page](../start/subscriptions.md).
+O gerenciamento de assinaturas no Campaign é descrito em [esta página](../start/subscriptions.md).
 
-A inserção de dados de assinatura e unsubscription depende do [Mecanismo de preparo](staging.md) no banco de dados local do Campaign. As informações do assinante são armazenadas temporariamente em tabelas de preparo no banco de dados local, e o workflow de sincronização envia esses dados do banco de dados local para o banco de dados do Cloud. Como consequência, os processos de assinatura e unsubscription são **assíncronos**. As solicitações de aceitação e recusa são processadas a cada hora por meio de um workflow técnico específico. [Saiba mais](../config/replication.md#tech-wf)
+A inserção de dados de assinatura e unsubscription depende do [Mecanismo de armazenamento temporário](staging.md) no banco de dados local do Campaign. As informações do assinante são armazenadas temporariamente em tabelas de preparo no banco de dados local, e o workflow de sincronização envia esses dados do banco de dados local para o banco de dados do Cloud. Como consequência, os processos de assinatura e unsubscription são **assíncrono**. As solicitações de aceitação e recusa são processadas a cada hora por meio de um workflow técnico específico. [Saiba mais](../config/replication.md#tech-wf)
 
 
 **Tópicos relacionados**

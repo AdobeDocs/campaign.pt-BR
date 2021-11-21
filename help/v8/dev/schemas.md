@@ -39,13 +39,13 @@ Para obter uma melhor compreensão das tabelas integradas do Campaign e sua inte
 
 >[!CAUTION]
 >
->Alguns esquemas internos do Campaign têm um schema associado no banco de dados do Cloud. Esses esquemas são identificados pelo namespace **Xxl** e não devem ser modificados ou estendidos.
+>Alguns esquemas internos do Campaign têm um schema associado no banco de dados do Cloud. Esses esquemas são identificados pela variável **Xxl** namespace e não devem ser modificados ou estendidos.
 
 ## Sintaxe de schemas {#syntax-of-schemas}
 
-O elemento raiz do schema é **`<srcschema>`**. Ele contém os subelementos **`<element>`** e **`<attribute>`**.
+O elemento raiz do schema é **`<srcschema>`**. Ele contém a variável **`<element>`** e **`<attribute>`** subelementos.
 
-O primeiro subelemento **`<element>`** coincide com a raiz da entidade.
+O primeiro **`<element>`** O subelemento coincide com a raiz da entidade.
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -65,13 +65,13 @@ O primeiro subelemento **`<element>`** coincide com a raiz da entidade.
 
 ![](assets/schema_and_entity.png)
 
-As tags **`<element>`** definem os nomes dos elementos da entidade. **`<attribute>`** as tags do schema definem os nomes dos atributos nas  **`<element>`** tags às quais foram vinculadas.
+O **`<element>`** as tags definem os nomes dos elementos da entidade. **`<attribute>`** as tags do schema definem os nomes dos atributos no **`<element>`** tags às quais foram vinculadas.
 
 ## Identificação de um schema {#identification-of-a-schema}
 
 Um schema de dados é identificado por seu nome e namespace.
 
-Um namespace permite agrupar um conjunto de schemas por área de interesse. Por exemplo, o namespace **cus** é usado para configuração específica do cliente (**customers**).
+Um namespace permite agrupar um conjunto de schemas por área de interesse. Por exemplo, a variável **cus** o namespace é usado para configuração específica do cliente (**clientes**).
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Um namespace permite agrupar um conjunto de schemas por área de interesse. Por 
 
 ## Namespaces reservados {#reserved-namespaces}
 
-Determinados namespaces são reservados para descrições das entidades do sistema necessárias para a operação do aplicativo Adobe Campaign. O namespace a seguir **não deve ser usado** para identificar um novo schema, em qualquer combinação de maiúsculas/minúsculas:
+Determinados namespaces são reservados para descrições das entidades do sistema necessárias para a operação do aplicativo Adobe Campaign. O namespace a seguir **não deve ser usada** para identificar um novo schema, em qualquer combinação de maiúsculas/minúsculas:
 
 * **xxl**: reservado para esquemas de banco de dados do Cloud
 * **xtk**: reservado para dados do sistema da plataforma
@@ -97,11 +97,11 @@ A chave de identificação de um schema é uma cadeia de caracteres criada usand
 
 Para adicionar um campo ou outro elemento a um dos esquemas de dados principais no Campaign, como a tabela de recipients (nms:recipient), é necessário estender esse schema.
 
-![](../assets/do-not-localize/glass.png) Para obter mais informações, consulte  [Estender um schema](extend-schema.md).
+![](../assets/do-not-localize/glass.png) Para obter mais informações, consulte [Estender um esquema](extend-schema.md).
 
 Para adicionar um tipo de dados totalmente novo que não existe no Adobe Campaign (uma tabela de contratos, por exemplo), é possível criar um schema personalizado diretamente.
 
-![](../assets/do-not-localize/glass.png) Para obter mais informações, consulte  [Criar um novo schema](create-schema.md).
+![](../assets/do-not-localize/glass.png) Para obter mais informações, consulte [Criar um novo schema](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -131,13 +131,13 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->Você também pode empregar enumerações gerenciadas pelo usuário (normalmente em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** ) para especificar os valores para um determinado campo. Essas são enumerações globais efetivamente e uma melhor opção se a enumeração puder ser usada fora do schema específico em que você está trabalhando.
+>Também é possível empregar enumerações gerenciadas pelo usuário (normalmente em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** ) para especificar os valores de um determinado campo. Essas são enumerações globais efetivamente e uma melhor opção se a enumeração puder ser usada fora do schema específico em que você está trabalhando.
 
 ## Teclas {#keys}
 
-Cada tabela deve ter pelo menos uma chave, e geralmente é automaticamente estabelecida no elemento principal do schema usando os atributos **@autouuid** e **autopk** definidos como **true**.
+Cada tabela deve ter pelo menos uma chave e geralmente é automaticamente estabelecida no elemento principal do schema usando o **@autouuid** e **autopk** atributos definidos como **true**.
 
-A chave primária também pode ser definida usando o atributo **internal** .
+A chave primária também pode ser definida usando o **interno** atributo.
 
 Exemplo:
 
@@ -147,23 +147,23 @@ Exemplo:
 </key>
 ```
 
-Neste exemplo, em vez de permitir que o atributo **@autouuid** crie uma chave primária padrão chamada &quot;id&quot;, estamos especificando nossa própria chave primária &quot;householdId&quot;.
+Neste exemplo, em vez de deixar a variável **@autouuid** criar uma chave primária padrão chamada &quot;id&quot; estamos especificando nossa própria chave primária &quot;householdId&quot;.
 
 >[!CAUTION]
 >
 >Ao criar um novo schema ou durante uma extensão de schema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o schema.
 
-![](../assets/do-not-localize/glass.png) Saiba mais sobre as chaves  [nesta seção](database-mapping.md#management-of-keys).
+![](../assets/do-not-localize/glass.png) Saiba mais sobre as teclas em [esta seção](database-mapping.md#management-of-keys).
 
 ## Atributos (Campos) {#attributes--fields-}
 
-Os atributos permitem definir os campos que compõem o objeto de dados. Você pode usar o botão **[!UICONTROL Insert]** na barra de ferramentas da edição do schema para soltar modelos de atributos vazios em seu XML, onde o cursor está. Saiba mais [nesta seção](create-schema.md).
+Os atributos permitem definir os campos que compõem o objeto de dados. Você pode usar o **[!UICONTROL Insert]** na barra de ferramentas da edição do schema para soltar modelos de atributos vazios em seu XML, onde está o cursor. Saiba mais [nesta seção](create-schema.md).
 
 ![](assets/schemaextension_2.png)
 
-A lista completa de atributos está disponível na seção `<attribute>` element em [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Estes são alguns dos atributos mais usados: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label a13/>,**@length **,**@name **,**@notNull **,**@required **,**@ref 23/>, **@xml**, **@type**.****
+A lista completa de atributos está disponível na seção `<attribute>` seção de elemento em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). Estes são alguns dos atributos mais usados: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-![](../assets/do-not-localize/book.png) Para obter mais informações sobre cada atributo, consulte a Descrição de atributo na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
+![](../assets/do-not-localize/book.png) Para obter mais informações sobre cada atributo, consulte a Descrição do atributo em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
 
 ### Exemplos {#examples}
 
@@ -179,13 +179,13 @@ Exemplo de uso de um atributo comum como modelo para um campo também marcado co
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
-Exemplo de um campo calculado que está oculto usando o atributo **@advanced**:
+Exemplo de um campo calculado que está oculto usando o **@advanced** atributo:
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
-Exemplo de um campo XML também armazenado em um campo SQL e que tem um atributo **@dataPolicy**.
+Exemplo de um campo XML também armazenado em um campo SQL e que tem um **@dataPolicy** atributo.
 
 ```
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
@@ -201,7 +201,7 @@ Exemplo de um campo XML também armazenado em um campo SQL e que tem um atributo
 
 Os links são alguns dos últimos elementos no elemento principal do schema. Eles definem como todos os diferentes esquemas em sua instância estão relacionados uns com os outros.
 
-Os links são declarados no schema que contém a **chave estrangeira** da tabela à qual estão vinculados.
+Os links são declarados no schema que contém a variável **chave externa** da tabela à qual está vinculada.
 
 Existem três tipos de cardinalidade: 1-1, 1-N e N-N. É o tipo 1-N usado por padrão.
 

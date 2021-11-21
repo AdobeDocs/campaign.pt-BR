@@ -44,7 +44,7 @@ As regras de nomenclatura SQL são as seguintes:
 
 * tabela: concatenação do namespace e do nome do schema
 
-   No nosso exemplo, o nome da tabela é inserido por meio do elemento principal do schema no atributo **sqltable**:
+   No nosso exemplo, o nome da tabela é inserido por meio do elemento principal do schema no **sqltable** atributo:
 
    ```
    <element name="recipient" sqltable="CusRecipient">
@@ -52,7 +52,7 @@ As regras de nomenclatura SQL são as seguintes:
 
 * campo : nome do elemento precedido por um prefixo definido de acordo com o tipo (&#39;i&#39; para integer, &#39;d&#39; para double, &#39;s&#39; para string, &#39;ts&#39; para datas, etc.)
 
-   O nome do campo é inserido por meio do atributo **sqlname** para cada **`<attribute>`** digitado e **`<element>`**:
+   O nome do campo é inserido por meio da variável **sqlname** atributo para cada tipo **`<attribute>`** e **`<element>`**:
 
    ```
    <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -79,9 +79,9 @@ As restrições do campo SQL são as seguintes:
 
 ## Campos XML {#xml-fields}
 
-Por padrão, qualquer elemento digitado **`<attribute>`** e **`<element>`** é mapeado em um campo SQL da tabela de schema de dados. No entanto, você pode fazer referência a esse campo em XML em vez de SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do schema.
+Por padrão, qualquer arquivo digitado **`<attribute>`** e **`<element>`** é mapeado em um campo SQL da tabela de schema de dados. No entanto, você pode fazer referência a esse campo em XML em vez de SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do schema.
 
-Para preencher um campo em XML, você deve adicionar o atributo **xml** com o valor &quot;true&quot; ao elemento relacionado.
+Para preencher um campo em XML, é necessário adicionar o **xml** com o valor &quot;true&quot; para o elemento relacionado.
 
 **Exemplo**: há dois exemplos de uso de campo XML.
 
@@ -118,7 +118,7 @@ Uma chave é declarada do elemento principal do schema de dados.
 As chaves obedecem às seguintes regras:
 
 * Uma chave pode fazer referência a um ou mais campos na tabela.
-* Uma chave é conhecida como &quot;primária&quot; (ou &quot;prioridade&quot;) quando é a primeira no schema a ser preenchida ou se contém o atributo **internal** com o valor &quot;true&quot;.
+* Uma chave é conhecida como &quot;primária&quot; (ou &quot;prioridade&quot;) quando é a primeira no schema a ser preenchida ou se contém a variável **interno** com o valor &quot;true&quot;.
 
 **Exemplo**:
 
@@ -198,7 +198,7 @@ As chaves obedecem às seguintes regras:
 
 ### Chave primária - Identificador
 
-A chave primária das tabelas do Adobe Campaign é uma **ID universal exclusiva (UUID)** gerada automaticamente pelo mecanismo de banco de dados. O valor da chave é exclusivo em todo o banco de dados. O conteúdo da chave é gerado automaticamente na inserção do registro.
+A chave primária das tabelas do Adobe Campaign é uma **ID universal exclusiva (UUID)** gerado automaticamente pelo mecanismo de banco de dados. O valor da chave é exclusivo em todo o banco de dados. O conteúdo da chave é gerado automaticamente na inserção do registro.
 
 **Exemplo**
 
@@ -256,7 +256,7 @@ Para relações de associação usando o Federated Database Access:
 * ![](assets/do-not-localize/join_fda_11.png) : Cardinalidade 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Cardinalidade 1-N
 
-![](../assets/do-not-localize/glass.png) Para obter mais informações sobre tabelas FDA, consulte  [Federated Data Access](../connect/fda.md).
+![](../assets/do-not-localize/glass.png) Para obter mais informações sobre tabelas FDA, consulte [Federated Data Access](../connect/fda.md).
 
 Um link deve ser declarado no schema que contém a chave externa da tabela vinculada por meio do elemento principal:
 
@@ -270,28 +270,28 @@ Um link deve ser declarado no schema que contém a chave externa da tabela vincu
 
 Os links obedecem às seguintes regras:
 
-* A definição de um link é inserida em um link **tipo** com os seguintes atributos:**`<element>`**
+* A definição de um link é inserida em um **link**-type **`<element>`** com os seguintes atributos:
 
    * **name**: nome do link da tabela de origem,
    * **target**: nome do schema do target,
-   * **rótulo**: rótulo do link,
-   * **revLink**  (opcional): nome do link reverso do schema do target (deduzido automaticamente por padrão),
-   * **integridade**  (opcional): integridade referencial da ocorrência da tabela de origem para a ocorrência da tabela de destino. Os valores possíveis são os seguintes:
+   * **label**: rótulo do link,
+   * **revLink** (opcional): nome do link reverso do schema do target (deduzido automaticamente por padrão),
+   * **integridade** (opcional): integridade referencial da ocorrência da tabela de origem para a ocorrência da tabela de destino. Os valores possíveis são os seguintes:
 
-      * **definir**: é possível excluir a ocorrência de origem se ela não for mais referenciada por uma ocorrência de destino,
+      * **define**: é possível excluir a ocorrência de origem se ela não for mais referenciada por uma ocorrência de destino,
       * **normal**: a exclusão da ocorrência de origem inicializa as chaves do link para a ocorrência de destino (modo padrão), esse tipo de integridade inicializa todas as chaves estrangeiras,
-      * **Próprio**: a exclusão da ocorrência de origem leva à exclusão da ocorrência de destino,
-      * **owncopy**: o mesmo que  **own**  (no caso de exclusão) ou duplica as ocorrências (no caso de duplicação),
+      * **own**: a exclusão da ocorrência de origem leva à exclusão da ocorrência de destino,
+      * **owncopy**: o mesmo que **own** (em caso de exclusão) ou duplica as ocorrências (em caso de duplicação),
       * **neutro**: não faz nada.
-   * **revIntegrity**  (opcional): integridade no schema do target (opcional, &quot;normal&quot; por padrão),
-   * **revCardinalidade**  (opcional): com o valor &quot;único&quot; preenche a cardinalidade com o tipo 1-1 (1-N por padrão).
-   * **externalJoin**  (opcional): força a união externa
-   * **revExternalJoin**  (opcional): força a junção externa no link inverso
+   * **revIntegrity** (opcional): integridade no schema do target (opcional, &quot;normal&quot; por padrão),
+   * **revCardinalidade** (opcional): com o valor &quot;único&quot; preenche a cardinalidade com o tipo 1-1 (1-N por padrão).
+   * **externalJoin** (opcional): força a união externa
+   * **revExternalJoin** (opcional): força a junção externa no link inverso
 
 
-* Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a associação (elemento `<join>` ) não precisam ser preenchidos porque são automaticamente deduzidos por padrão usando a chave interna do schema de destino.
+* Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a associação ( `<join>`  (elemento ) não precisa ser preenchido porque eles são automaticamente deduzidos por padrão usando a chave interna do schema do target.
 * Um link consiste em dois links médios, onde o primeiro é declarado do schema de origem e o segundo é criado automaticamente no schema estendido do schema de destino.
-* Uma associação pode ser uma associação externa se o atributo **externalJoin** for adicionado, com o valor &quot;true&quot; (compatível no PostgreSQL).
+* Uma associação pode ser uma associação externa se a variável **externalJoin** é adicionado, com o valor &quot;true&quot; (compatível com PostgreSQL).
 
 >[!NOTE]
 >
@@ -389,7 +389,7 @@ O valor padrão retorna o identificador do primeiro arquivo de tipo de parâmetr
 
 ### Exemplo 5 {#example-5}
 
-Neste exemplo, queremos criar uma chave em um link (&quot;empresa&quot; para &quot;cus:empresa&quot; schema) com o atributo **xlink** e um campo da tabela (&quot;email&quot;):
+Neste exemplo, queremos criar uma chave em um link (schema &quot;company&quot; to &quot;cus:company&quot;) com a variável **xlink** e um campo da tabela (&quot;email&quot;):
 
 ```
 <srcSchema name="recipient" namespace="cus">

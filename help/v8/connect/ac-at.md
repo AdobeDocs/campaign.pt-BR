@@ -21,7 +21,7 @@ Essa integração ajuda a implementar casos de uso da seguinte maneira: quando u
 >[!NOTE]
 >A integração só oferece suporte a imagens estáticas. Os outros tipos de conteúdo não podem ser personalizados.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services,  [entre em contato com a ](../start/campaign-faq.md#support) Adobe para implementar acionadores de Experience Cloud com o Campaign.
+![](../assets/do-not-localize/speech.png)  Como um usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para implementar acionadores Experience Cloud com o Campaign.
 
 Os seguintes tipos de dados podem ser usados pelo Adobe Target:
 
@@ -31,7 +31,7 @@ Os seguintes tipos de dados podem ser usados pelo Adobe Target:
 
 ## Inserir um conteúdo dinâmico
 
-No exemplo abaixo, você aprenderá a integrar **uma oferta dinâmica** do Adobe Target em um email do Adobe Campaign.
+No exemplo abaixo, você aprenderá a integrar **uma oferta dinâmica** do Adobe Target para um email do Adobe Campaign.
 
 Queremos criar uma mensagem com uma imagem que será alterada dinamicamente de acordo com o país do recipient. Os dados são enviados com cada solicitação mbox e dependem do endereço IP do visitante.
 
@@ -69,10 +69,10 @@ No Adobe Campaign, há duas maneiras de inserir uma imagem dinâmica do Target e
 
 Você pode definir os parâmetros da imagem:
 
-* O URL de **[!UICONTROL Default image]** é a imagem que será exibida quando nenhuma das condições for satisfeita. Você também pode selecionar uma imagem da biblioteca de recursos.
+* O **[!UICONTROL Default image]** O URL de é a imagem que será exibida quando nenhuma das condições for satisfeita. Você também pode selecionar uma imagem da biblioteca de recursos.
 * O **[!UICONTROL Target location]** é o nome da localização da oferta dinâmica. Será necessário selecionar esse local na atividade do Adobe Target.
 * O **[!UICONTROL Landing Page]** permite redirecionar a imagem padrão para uma página de aterrissagem padrão. Esse URL se aplica somente quando a imagem padrão é exibida no email final. É opcional.
-* O **[!UICONTROL Additional decision parameters]** define o mapeamento entre os campos definidos nos segmentos do Adobe Target e os campos do Adobe Campaign. Os campos do Adobe Campaign usados devem ter sido especificados no rawbox. No nosso exemplo, adicionamos o campo País.
+* O **[!UICONTROL Additional decision parameters]**  define o mapeamento entre os campos definidos nos segmentos do Adobe Target e os campos do Adobe Campaign. Os campos do Adobe Campaign usados devem ter sido especificados no rawbox. No nosso exemplo, adicionamos o campo País.
 
 Se você usar permissões do Enterprise em suas configurações no Adobe Target, adicione a propriedade correspondente nesse campo. Saiba mais sobre as permissões do Target Enterprise [nesta página](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=en#administer).
 

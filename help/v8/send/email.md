@@ -16,7 +16,7 @@ ht-degree: 21%
 
 Os deliveries de email permitem enviar emails personalizados para a população do target.
 
-![](../assets/do-not-localize/book.png)[ Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html).
+![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html).
 
 ## Criar seu primeiro delivery de email
 
@@ -29,7 +29,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 1. **Criar o delivery**
 
-   Para criar um novo delivery, navegue até a guia **Campaigns**, clique em **Deliveries** e clique no botão **Create** acima da lista de deliveries existentes.
+   Para criar um novo delivery, navegue até o **Campanhas** clique em **Deliveries** e clique no botão **Criar** acima da lista de deliveries existentes.
 
    ![](assets/delivery_step_1.png)
 
@@ -41,7 +41,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 1. **Importe seu conteúdo**
 
-   Clique na guia **Source** para colar o conteúdo do HTML.
+   Clique no botão **Origem** para colar o conteúdo do HTML.
 
    ![](assets/paste-content.png)
 
@@ -51,7 +51,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
    * Adicione o nome e o sobrenome dos recipients
 
-      Para inserir o nome e o sobrenome dos perfis segmentados no conteúdo da mensagem, coloque o cursor onde deseja inseri-los, clique no último ícone na barra de ferramentas, em seguida, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL Greetings]**.
+      Para inserir o nome e o sobrenome dos perfis segmentados no conteúdo da mensagem, coloque o cursor onde deseja inseri-los e clique no último ícone na barra de ferramentas, em seguida, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL Greetings]**.
 
       ![](assets/include-greetings.png)
 
@@ -61,7 +61,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
    * Inserir um link rastreado
 
-      Para levar os recipients do delivery para um endereço externo por meio de uma imagem ou um texto, selecione-o e clique no ícone **[!UICONTROL Add a link]** na barra de ferramentas.
+      Para levar os recipients do delivery para um endereço externo por meio de uma imagem ou um texto, selecione-o e clique no botão **[!UICONTROL Add a link]** na barra de ferramentas.
 
       Insira a URL do link no campo **URL** usando o seguinte formato **https://www.myURL.com** e, em seguida, confirme.
 
@@ -71,8 +71,8 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
       Para permitir que seus recipients visualizem o conteúdo do delivery em um navegador da Web, adicione um link à mirror page da mensagem.
 
-      Coloque o cursor onde deseja inserir este link, clique no último ícone na barra de ferramentas, em seguida, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL link to mirror page]**.
-   Quando o conteúdo estiver pronto, clique em **Salvar**: agora ele será exibido na lista de deliveries, na guia **[!UICONTROL Campaigns > Deliveries]**. Seu primeiro delivery de email está pronto. Agora é necessário definir o público-alvo, validar o delivery e enviá-lo.
+      Coloque o cursor onde deseja inserir este link, clique no último ícone na barra de ferramentas e clique em **[!UICONTROL Include]** e selecione **[!UICONTROL link to mirror page]**.
+   Quando o conteúdo estiver pronto, clique em **Salvar**: agora ele será exibido na lista de deliveries, no **[!UICONTROL Campaigns > Deliveries]** guia . Seu primeiro delivery de email está pronto. Agora é necessário definir o público-alvo, validar o delivery e enviá-lo.
 
 
 Saiba mais nestas seções da documentação do Campaign Classic v7:

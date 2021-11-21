@@ -4,14 +4,15 @@ description: 'Introdução às APIs do Campaign '
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
+source-git-commit: 94fc2739c538f3aa8b11e0ea69d08f1bfffb5d32
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 12%
 
 ---
 
-# Introdução às APIs [!DNL Campaign]{#gs-ac-api}
+# Introdução ao [!DNL Campaign] APIs{#gs-ac-api}
 
 [!DNL Adobe Campaign] O vem com um conjunto de funções Javascript que você pode usar:
 
@@ -37,20 +38,20 @@ Antes de usar [!DNL Adobe Campaign] APIs, é necessário conhecer os seguintes t
 * Protocolo SOAP
 * [!DNL Adobe Campaign] datamodel
 
-Para usar APIs e interagir com [!DNL Adobe Campaign], você também deve estar familiarizado com o modelo de dados.
+Para usar APIs e interagir com o [!DNL Adobe Campaign], você também deve estar familiarizado com o modelo de dados do .
 
 >[!NOTE]
 >Você pode gerar uma descrição completa do seu modelo de dados. Saiba mais [nesta página](datamodel.md).
 
 ## [!DNL Campaign] Mecanismo de preparo da API
 
-Com o [!DNL Campaign] banco de dados da nuvem, as chamadas unitárias de explosão não são recomendadas devido ao desempenho (latência e simultaneidade). A operação em lote é sempre preferida. Para garantir desempenho ideal das APIs, o Campaign continua lidando com chamadas de API no nível do banco de dados local.
+Com [!DNL Campaign] O banco de dados da nuvem, as chamadas unitárias de explosão não são recomendadas devido ao desempenho (latência e simultaneidade). A operação em lote é sempre preferida. Para garantir desempenho ideal das APIs, o Campaign continua lidando com chamadas de API no nível do banco de dados local.
 
 ![](../assets/do-not-localize/glass.png) [O mecanismo de preparo da API é detalhado nesta página](staging.md)
 
 ## Novas APIs
 
-Novas APIs estão disponíveis para gerenciar a sincronização de dados entre o banco de dados local [!DNL Campaign] e o banco de dados da nuvem. Um novo mecanismo também foi introduzido para lidar com chamadas de API no nível do banco de dados local, a fim de evitar latência e aumentar o desempenho geral.
+Novas APIs estão disponíveis para gerenciar a sincronização de dados entre [!DNL Campaign] banco de dados local e banco de dados do Cloud. Um novo mecanismo também foi introduzido para lidar com chamadas de API no nível do banco de dados local, a fim de evitar latência e aumentar o desempenho geral.
 
 ![](../assets/do-not-localize/glass.png) [As novas APIs são detalhadas nesta página](new-apis.md)
 

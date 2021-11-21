@@ -28,9 +28,10 @@ As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se bene
 
 >[!CAUTION]
 >
->* Com esse novo mecanismo, a sincronização de dados para exclusão de canal, assinaturas, unsubscriptions ou registro móvel agora é **assíncrona**.
+>* Com esse novo mecanismo, a sincronização de dados para opção de canal, assinaturas, unsubscriptions ou registro móvel agora é **assíncrono**.
 >
 >* O armazenamento temporário só se aplica a esquemas armazenados no banco de dados da nuvem. Não ative o armazenamento temporário em schemas replicados. Não ative o armazenamento temporário em esquemas locais. Não ativar Preparo em um esquema Preparado
+
 >
 
 
@@ -53,11 +54,11 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
    </srcSchema>
    ```
 
-   ![](../assets/do-not-localize/glass.png) Saiba mais sobre a criação de esquema personalizado  [nesta página](create-schema.md).
+   ![](../assets/do-not-localize/glass.png) Saiba mais sobre a criação de esquema personalizado em [esta página](create-schema.md).
 
 1. Salve e atualize a estrutura do banco de dados.  [Saiba mais](update-database-structure.md)
 
-1. Ative o mecanismo de preparo na definição do schema adicionando o parâmetro **autoStg=&quot;true&quot;**.
+1. Ative o mecanismo de preparo na definição do schema adicionando o **autoStg=&quot;true&quot;** parâmetro.
 
    ```
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"

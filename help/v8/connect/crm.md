@@ -30,11 +30,11 @@ O CRM e as versões compatíveis estão detalhados na [Matriz de compatibilidade
 
 ## Etapas de implementação {#crm-implementation-steps}
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Microsoft Dynamics na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)
+![](../assets/do-not-localize/book.png) Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Microsoft Dynamics no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Salesforce na documentação do  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)
+![](../assets/do-not-localize/book.png) Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Salesforce no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)
 
 
 A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de workflow. Crie seus workflows para automatizar a sincronização entre o Campaign e seu CRM. Você pode criar um workflow que importa contatos por meio do Microsoft Dynamics, sincroniza com os dados existentes do Adobe Campaign, exclui os contatos duplicados e atualiza o banco de dados do Adobe Campaign.
 
-![](../assets/do-not-localize/book.png)[ Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)
+![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)

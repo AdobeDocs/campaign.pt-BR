@@ -17,7 +17,7 @@ Se você precisar que os usuários de marketing acessem registros de dados, mas 
 
 ## Implementação {#implementation}
 
-Um atributo específico que pode ser aplicado a qualquer elemento ou atributo foi adicionado aos esquemas, ele complementa o atributo existente **[!UICONTROL visibleIf]** . Este atributo é: **[!UICONTROL accessibleIf]** . Ao conter uma expressão XTK relacionada ao contexto do usuário atual, ela pode aproveitar **[!UICONTROL HasNamedRight]** ou **[!UICONTROL $(login)]** , por exemplo.
+Um atributo específico que pode ser aplicado a qualquer elemento ou atributo foi adicionado aos esquemas, complementa o atributo existente **[!UICONTROL visibleIf]** . Este atributo é: **[!UICONTROL accessibleIf]** . Ao conter uma expressão XTK relacionada ao contexto do usuário atual, ela pode aproveitar **[!UICONTROL HasNamedRight]** ou **[!UICONTROL $(login)]** , por exemplo.
 
 Você pode encontrar uma amostra de uma extensão de schema de recipient que mostra este uso abaixo:
 
@@ -52,7 +52,7 @@ Estas são as consequências do uso desse atributo no Campaign:
 
 ## Recomendações {#recommendations}
 
-Em cada delivery, os endereços de email são copiados nas tabelas **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]**: consequentemente, esses campos também precisam ser protegidos.
+Em cada delivery, os endereços de email são copiados para o **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]** tabelas: consequentemente, esses campos também precisam ser protegidos.
 
 Abaixo está uma amostra da extensão da tabela de log para implementar isso:
 

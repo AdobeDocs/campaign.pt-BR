@@ -22,12 +22,12 @@ As principais etapas para personalizar o datamodel do Campaign são:
 >[!CAUTION]
 >O esquema incorporado não deve ser modificado diretamente. Se precisar adaptar um schema incorporado, é necessário estendê-lo.
 
-![](../assets/do-not-localize/glass.png) Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte  [esta página](datamodel.md). Consulte também recomendações ao criar um novo schema em [esta página](create-schema.md).
+![](../assets/do-not-localize/glass.png) Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta página](datamodel.md). Consulte também recomendações ao criar um novo schema em [esta página](create-schema.md).
 
 Para estender um schema, siga as etapas abaixo:
 
-1. Navegue até a pasta **[!UICONTROL Administration > Configuration > Data schemas]** no Explorer.
-1. Clique no botão **New** e selecione **[!UICONTROL Extend the data in a table using an extension schema]**.
+1. Navegue até o **[!UICONTROL Administration > Configuration > Data schemas]** no Explorer.
+1. Clique no botão **Novo** e selecione **[!UICONTROL Extend the data in a table using an extension schema]**.
 
    ![](assets/extend-schema-option.png)
 
@@ -43,7 +43,7 @@ Para estender um schema, siga as etapas abaixo:
 
    ![](assets/extend-schema-edit.png)
 
-   No exemplo abaixo, adicionamos o atributo **MembershipYear**, colocamos um limite de comprimento para sobrenome (esse limite substituirá o padrão) e removemos a data de nascimento do schema incorporado.
+   No exemplo abaixo, adicionamos a variável **MembershipYear** , coloque um limite de comprimento para sobrenome (esse limite substituirá o padrão) e remova a data de nascimento do schema incorporado.
 
    ![](assets/extend-schema-sample.png)
 
@@ -59,7 +59,7 @@ Para estender um schema, siga as etapas abaixo:
    </srcSchema>
    ```
 
-1. Desconecte e reconecte ao Campaign para verificar a atualização da estrutura do schema na guia **[!UICONTROL Structure]**.
+1. Desconecte e reconecte ao Campaign para verificar a atualização da estrutura do schema no **[!UICONTROL Structure]** guia .
 
    ![](assets/extend-schema-structure.png)
 

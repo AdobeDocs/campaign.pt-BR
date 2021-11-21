@@ -20,7 +20,7 @@ Além disso, nosso trabalho colaborativo com parceiros, pesquisadores líderes, 
 A configuração e proteção da privacidade é um elemento essencial da otimização da segurança. Estas são algumas das práticas recomendadas relacionadas à privacidade:
 
 * Protect suas informações pessoais (PI) do cliente usando HTTPS em vez de HTTP
-* Use [Restrição de exibição PI](../dev/restrict-pi-view.md) para proteger a privacidade e impedir que os dados sejam utilizados incorretamente
+* Use [Restrição de visualização de IP](../dev/restrict-pi-view.md) para proteger a privacidade e evitar que os dados sejam utilizados indevidamente
 * Certifique-se de que as senhas criptografadas sejam restritas
 * Proteja as páginas que podem conter informações pessoais, como mirror pages, aplicativos web, etc.
 
@@ -42,11 +42,11 @@ Você precisa ter certeza que as senhas criptografadas não estarão acessíveis
 
 Essa restrição permite remover campos de senhas, mas deixa a conta externa acessível a partir da interface para todos os usuários. Saiba mais [nesta página](../dev/restrict-pi-view.md).
 
-1. Vá em **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
+1. Entrar **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
 
 1. Crie um novo **[!UICONTROL Extension of a schema]**.
 
-1. Escolha **[!UICONTROL External Account]** (extAccount).
+1. Choose **[!UICONTROL External Account]** (extAccount).
 
 1. Na última tela, você pode editar seu novo srcSchema para restringir o acesso a todos os campos de senha:
 
@@ -96,7 +96,7 @@ Essa restrição permite remover campos de senhas, mas deixa a conta externa ace
 
    >[!NOTE]
    >
-   >Você pode substituir `$(loginId) = 0 or $(login) = 'admin'` por `hasNamedRight('admin')` para permitir que todos os usuários administradores vejam essas senhas.
+   >Você pode substituir `$(loginId) = 0 or $(login) = 'admin'` por `hasNamedRight('admin')` para permitir que todos os usuários com o administrador vejam essas senhas.
 
 
 ## Gerenciamento de acesso
@@ -107,7 +107,7 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 * Verifique se cada operador tem os direitos de acesso apropriados
 * Evite usar o operador administrador e evite ter muitos operadores no grupo de administradores
 
-![](../assets/do-not-localize/book.png) Saiba mais na documentação do  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
 
 ## Diretrizes de codificação
 
@@ -115,8 +115,8 @@ Ao desenvolver no Adobe Campaign (fluxos de trabalho, Javascript, JSSP etc.), se
 
 * **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL colocando as funções SQL a serem utilizadas na lista de permissões.
 
-* **Proteger o modelo** de dados: use direitos nomeados para limitar as ações do operador, adicione filtros do sistema (sysFilter)
+* **Proteger o modelo de dados**: use direitos nomeados para limitar as ações do operador, adicione filtros do sistema (sysFilter)
 
-* **Adicionar captchas em aplicações** web: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
+* **Adicionar captchas em aplicações Web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
-![](../assets/do-not-localize/book.png) Saiba mais na documentação do  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
