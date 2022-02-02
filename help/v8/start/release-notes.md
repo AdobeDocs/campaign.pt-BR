@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: acb3b60c8b390bf91acdfd568a57899594659c7e
+source-git-commit: 89d3ffc7928e1416744f3c54a306b3d39008f2af
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +23,11 @@ _2 de fevereiro de 2021_
 
 **Correções**
 
-* Correção de um problema que resultava em falha na preparação do delivery se o número máximo de mensagens, definido na regra de tipologia, fosse atingido. (NEO-40062)
-* Correção de um problema durante a configuração do conector do Adobe Analytics quando o endereço de email continha um caractere &quot;s&quot;. (NEO-39082)
-* Correção de um problema durante a pós-atualização, que poderia resultar na perda de dados da tabela deliveryMapping de um mapeamento de delivery personalizado. (NEO-40133)
+* Correção de um problema que causava a falha da preparação do delivery se o número máximo de mensagens, definido na regra de tipologia, fosse atingido.
+* Correção de um problema durante a configuração do conector do Adobe Analytics quando o endereço de email continha um caractere &quot;s&quot;.
+* Correção de um problema durante a pós-atualização que poderia resultar na perda de dados da tabela deliveryMapping de um mapeamento de delivery personalizado.
 * Correção de um problema que poderia resultar em recipients recebendo a mesma mensagem várias vezes para o mesmo delivery quando o endereço de email continha um caractere de aspas simples (&#39;). Esse caractere agora é escapado. (NEO-41198)
-* Correção de um problema de geração de ID ao enviar provas com seeds ou endereços de substituição. (NEO-42670)
+* Correção de um problema de geração de ID ao enviar provas com seeds ou endereços de substituição. (NEO-42637)
 * Correção de um problema que impedia o envio de provas usando o método de substituição de endereço . (NEO-40417)
 * Correção de um problema que impedia a instalação do pacote LINE. (NEO-42503)
 
