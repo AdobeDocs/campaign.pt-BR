@@ -9,7 +9,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396
 source-git-commit: b7db9597aa6b4ca4fb2e1e13f8b7b718f4840031
 workflow-type: tm+mt
 source-wordcount: '1714'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ _2 de fevereiro de 2022_
 
 **Correções**
 
-* Correção de um problema que causava a falha da preparação do delivery se o número máximo de mensagens, definido na regra de tipologia, fosse atingido.
-* Correção de um problema durante a configuração do conector do Adobe Analytics quando o endereço de email continha um caractere &quot;s&quot;.
-* Correção de um problema durante a pós-atualização que poderia resultar na perda de dados da tabela deliveryMapping de um mapeamento de delivery personalizado.
-* Correção de um problema que poderia resultar em recipients recebendo a mesma mensagem várias vezes para o mesmo delivery quando o endereço de email continha um caractere de aspas simples (&#39;). Esse caractere agora é escapado. (NEO-41198)
-* Correção de um problema de geração de ID ao enviar provas com seeds ou endereços de substituição. (NEO-42637)
-* Correção de um problema que impedia o envio de provas usando o método de substituição de endereço . (NEO-40417)
+* Correção de um problema que causava falha na preparação do delivery se o número máximo de mensagens, definido na regra de tipologia, fosse atingido.
+* Correção de um problema que ocorria durante a configuração do conector do Adobe Analytics quando o endereço de email continha um caractere “s”.
+* Correção de um problema durante a pós-atualização que poderia fazer com que a tabela deliveryMapping perdesse dados de um mapeamento de delivery personalizado.
+* Correção de um problema que poderia fazer com que recipients recebessem a mesma mensagem várias vezes para o mesmo delivery quando o endereço de email continha um caractere de aspas simples (&#39;). Esse caractere agora é escapado. (NEO-41198)
+* Correção de um problema na geração de ID ao enviar provas com seeds ou endereços de substituição. (NEO-42637)
+* Correção de um problema que impedia o envio de provas usando o método de substituição de endereço. (NEO-40417)
 * Correção de um problema que impedia a instalação do pacote LINE. (NEO-42503)
 
 ## Versão 8.2.8 {#release-8-2-8}
