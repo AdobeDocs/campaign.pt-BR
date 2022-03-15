@@ -5,8 +5,8 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 hidefromtoc: false
-exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: b7db9597aa6b4ca4fb2e1e13f8b7b718f4840031
+exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
+source-git-commit: 9283f1e857706455c169eb1da93cd0d04df80da0
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 100%
@@ -45,7 +45,7 @@ _28 de outubro de 2021_
 <tr>
 <td>
 <p>O gerenciamento de interação em tempo real agora está disponível para canais de entrada. Use o módulo de Interação de entrada do Campaign para apresentar a melhor oferta para seus clientes quando eles visitarem seu site ou procurarem sua central de atendimento. Esse recurso vem como opção no Campaign v8 e exige uma configuração específica na sua instância. Procure seu representante da Adobe para ter acesso ao módulo de Interação de entrada.</p>
-<p>Para obter mais informações, consulte a <a href="../send/interaction-architecture.md">documentação detalhada</a>.</p>
+<p>Para obter mais informações, consulte a <a href="../interaction/interaction-architecture.md">documentação detalhada</a>.</p>
 </td>
 </tr>
 </tbody>
