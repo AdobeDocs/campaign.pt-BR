@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: d21dc1adc46121e5c015deed7ddb84ec6a4ec76f
+source-git-commit: 8417b1b4b7370e2a2eed76e9f1ac395eccf0ac66
 workflow-type: tm+mt
 source-wordcount: '1680'
 ht-degree: 22%
@@ -43,7 +43,7 @@ Saiba mais sobre a interface de usuário de workflows e a execução na document
 
 * [Criar um público-alvo em um workflow de campanha de marketing](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}
 
-## Atividades de workflow {#wf-activities}
+## Atividades de fluxos de trabalho {#wf-activities}
 
 ![](../assets/do-not-localize/book.png) Saiba mais sobre as atividades de workflow disponíveis [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-activities.html){target=&quot;_blank&quot;}
 
@@ -92,7 +92,7 @@ Para usar a atividade **[!UICONTROL Change Data Source]**:
 
 Após criar o fluxo de trabalho, é possível acessar opções adicionais com a variável **[!UICONTROL Properties]** para obter mais configurações.
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre **Propriedades do workflow** em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=en){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba mais sobre **Propriedades do workflow** em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 No **[!UICONTROL Execution]** da guia do fluxo de trabalho **[!UICONTROL Properties]**, é possível vincular seu workflow a diferentes depósitos e otimizar o gerenciamento da carga de trabalho. Para obter mais informações sobre **Depósito**, consulte o [Documentação do Snowflake](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
 
