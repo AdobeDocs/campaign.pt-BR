@@ -1,18 +1,18 @@
 ---
-title: Catálogo de oferta de interação de campanha
-description: Saiba como criar um catálogo de ofertas
+title: Envio de uma oferta com a interação do Campaign
+description: Saiba como enviar uma oferta
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: c19ac91fe7b4b825f75ec096320efabc3e78328c
+source-git-commit: 213a10fea36b3b08c1dd8525084d212e191b2fc7
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1276'
 ht-degree: 62%
 
 ---
 
-# Enviar uma oferta
+# Enviar uma oferta{#send}
 
 Para que uma oferta seja selecionada pelo mecanismo Offer, ela deve ser aprovada e estar disponível em uma **Ao vivo** ambiente. [Saiba mais](interaction-offer.md#approve-offers)
 

@@ -32,7 +32,7 @@ Em seguida, as regras de qualificação são aplicadas: as melhores ofertas são
 
 O histórico da apresentação do perfil é atualizado uma vez feita a seleção, para evitar a duplicação das ofertas apresentadas. (4)
 
-Finalmente, a melhor oferta é proposta para o target. (5)
+Por último, a melhor oferta é proposta para o objetivo. (5)
 
 ## Introdução a ofertas
 
