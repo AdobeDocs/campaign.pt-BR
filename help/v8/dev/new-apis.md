@@ -8,7 +8,7 @@ exl-id: dd822f88-b27d-4944-879c-087f68e79825
 source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -213,4 +213,4 @@ A inserção de dados de assinatura e unsubscription depende do [Mecanismo de ar
 
 **Tópicos relacionados**
 
-* [JSAPI do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html)
+* [JSAPI do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR)

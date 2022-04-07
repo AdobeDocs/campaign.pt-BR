@@ -1,6 +1,6 @@
 ---
 title: Enviar emails com o Adobe Campaign
-description: Introdução a emails no Campaign
+description: Introdução aos emails no Campaign
 feature: Overview
 role: Data Engineer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 21%
+ht-degree: 23%
 
 ---
 
@@ -84,7 +84,7 @@ Saiba mais nestas seções da documentação do Campaign Classic v7:
 * Criar e usar um modelo de email
    ![](../assets/do-not-localize/book.png) [Saiba mais sobre modelos de email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
 * Selecione o público do seu email
-   ![](../assets/do-not-localize/book.png) [Saiba como definir a população do target](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
+   ![](../assets/do-not-localize/book.png) [Saiba como definir a população alvo](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
 * Validar um delivery e enviar provas
    ![](../assets/do-not-localize/book.png) [Saiba mais sobre as principais etapas para validar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
 * Adicionar [seed addresses](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html)

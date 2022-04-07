@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 8417b1b4b7370e2a2eed76e9f1ac395eccf0ac66
+source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
-source-wordcount: '1680'
-ht-degree: 22%
+source-wordcount: '1678'
+ht-degree: 20%
 
 ---
 
@@ -181,7 +181,7 @@ Nesta seção você encontrará vários casos de uso que usam os recursos dos wo
 
 * [Coordenar atualizações de dados](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/coordinating-data-updates.html){target=&quot;_blank&quot;}
 
-   Saiba como verificar se o processo de atualização terminou antes de executar outra operação de atualização. Para fazer isso, vamos configurar uma variável de instância e permitir que o workflow teste, se a instância estiver em execução, decidir se continua ou não a execução do workflow e realizar a atualização.
+   Saiba como verificar se o processo de atualização terminou antes de executar outra operação de atualização. Para fazer isso, vamos configurar uma variável de instância e permitir que o workflow teste, se a instância estiver em execução, decidir se continua a execução do workflow e executar a atualização.
 
 * [Criar uma lista de resumo](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/creating-a-summary-list.html){target=&quot;_blank&quot;}
 

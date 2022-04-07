@@ -2,10 +2,10 @@
 title: Gerenciamento de chaves no Campaign
 description: Introdução ao gerenciamento de chaves
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 No Campaign v8, a chave primária é um UUID (Universally Unique IDentifier), que é uma sequência de caracteres. Para criar esse UUID, o elemento principal do schema deve conter a variável **autouuid** e **autopk** atributos definidos como **true**.
 
-O Adobe campaign v8 vem com o Snowflake como o banco de dados principal. A arquitetura distribuída do banco de dados do Snowflake não fornece mecanismos para gerenciar a unicidade de uma chave em uma tabela: os usuários finais são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign.
+O Adobe Campaign v8 vem com o Snowflake como o banco de dados principal. A arquitetura distribuída do banco de dados do Snowflake não fornece mecanismos para gerenciar a unicidade de uma chave em uma tabela: os usuários finais são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign.
 
 Evitar duplicatas em chaves e, especialmente, em chaves primárias, é obrigatório para preservar a consistência do banco de dados relacional. Duplicidades em chaves primárias levam a problemas com atividades de fluxo de trabalho de gerenciamento de dados, como **Query**, **Reconciliação**, **Atualizar dados** e muito mais.
 
@@ -33,7 +33,7 @@ Como usuário final, você pode verificar essas informações nos logs do delive
 
 Quando isso ocorre, é possível criar um workflow para identificar as chaves duplicadas. Você poderá corrigir essas chaves. Para fazer isso, siga as etapas abaixo:
 
-1. Crie um novo workflow.
+1. Criar um novo fluxo de trabalho.
 
    ![](assets/new-wf.png)
 

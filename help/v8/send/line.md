@@ -12,7 +12,7 @@ ht-degree: 31%
 
 ---
 
-# Criar entregas LINE
+# Criar deliveries LINE
 
 LINE é um aplicativo para mensagens instantâneas, chamadas de voz e vídeo gratuitos, disponível em todos os dispositivos móveis e no PC. O Adobe Campaign permite enviar mensagens do LINE.
 

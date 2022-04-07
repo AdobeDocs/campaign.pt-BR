@@ -32,9 +32,9 @@ Todas as extensões de schema feitas nos schemas usados por **Workflows técnico
 
 ## Enviar notificações transacionais por push
 
-Quando combinadas com o módulo Canal de aplicativo móvel, as mensagens transacionais permitem que você envie mensagens transacionais por meio de notificações em dispositivos móveis.
+Quando combinadas com o módulo de canal de aplicativo Mobile, as mensagens transacionais permitem que você envie mensagens transacionais por meio de notificações em dispositivos móveis.
 
-![](../assets/do-not-localize/book.png) O canal de aplicativo móvel é detalhado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
+![](../assets/do-not-localize/book.png) O canal de aplicativo Mobile é detalhado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
 
 Para enviar notificações transacionais por push, é necessário executar as seguintes configurações:
 
@@ -44,7 +44,7 @@ Para enviar notificações transacionais por push, é necessário executar as se
    >
    >Verifique o contrato de licença antes de instalar um novo pacote integrado do Campaign.
 
-1. Replicar o **Aplicativo móvel** e os aplicativos móveis associados nas instâncias de execução.
+1. Replicar o **aplicativo Mobile** e os aplicativos móveis associados nas instâncias de execução.
 
 Para que o Campaign envie notificações transacionais por push, o evento deve conter os seguintes elementos:
 

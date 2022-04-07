@@ -34,7 +34,7 @@ Cada operador precisa ser vinculado a uma zona para fazer logon em uma instânci
 
 Os operadores são vinculados a uma zona de segurança a partir do seu perfil no console, acessível na **[!UICONTROL Administration > Access management > Operators]** nó .
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, o Adobe define as zonas de segurança para você. Para obter mais informações, [Adobe de contato](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, o Adobe define as zonas de segurança para você. Para obter mais informações, [Adobe de contato](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 **Saiba mais na documentação do Campaign Classic v7**
 

@@ -2,10 +2,10 @@
 title: Arquitetura geral
 description: Saiba mais sobre a arquitetura e os componentes do Campaign
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+source-git-commit: 9f375f8349140885cd4b6bcc206669a264cdbc9d
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 8%
+source-wordcount: '1066'
+ht-degree: 6%
 
 ---
 
@@ -23,23 +23,13 @@ A implantação típica da solução Adobe Campaign consiste nos seguintes compo
 
 * **Contêineres de Banco de Dados**
 
-   Com base na tecnologia de banco de dados relacional, o Adobe Campaign Cloud Database armazena todas as informações dos clientes, componentes da campanha, ofertas e workflows, bem como os resultados da campanha em contêineres de banco de dados do cliente.
+   Com base na tecnologia de banco de dados relacional, o Adobe Campaign Cloud Database armazena todas as informações, componentes de campanha, ofertas, workflows e resultados de campanha em contêineres de banco de dados.
 
 ## Ambiente de cliente personalizado {#client-env}
 
 O aplicativo pode ser acessado de diferentes maneiras: Integração avançada de cliente, cliente thin ou API.
 
-* **Console do cliente**: A principal interface de usuário do aplicativo é um aplicativo nativo (no Windows) que se comunica com o servidor de aplicativos Adobe Campaign com protocolos padrão de Internet (SOAP, HTTP etc.). O console do cliente Adobe Campaign oferece excelente facilidade de uso para produtividade, usa pouca largura de banda (por meio do uso de um cache local) e foi projetado para facilitar a implantação. Esse Console pode ser implantado a partir de um navegador da Internet, pode ser atualizado automaticamente e não requer nenhuma configuração de rede específica, pois gera apenas tráfego HTTP(S).
-
-   ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o Console do Cliente do Campaign](../start/connect.md).
-
-* **Acesso à Web**: partes do aplicativo podem ser acessadas por um navegador da Web simples usando uma interface de usuário do HTML, incluindo o módulo de relatórios, estágios de aprovação de delivery, monitoramento de instância etc.
-
-   ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o Campaign Web Access](../start/connect.md).
-
-* **APIs do Campaign**: Em certos casos, o sistema pode ser chamado de aplicativo externo usando as APIs de serviços da Web expostas por meio do protocolo SOAP.
-
-   ![](../assets/do-not-localize/glass.png) [Saiba mais sobre APIs do Campaign](../dev/api.md).
+![](../assets/do-not-localize/glass.png) [Saiba mais sobre a camada de apresentação do Campaign](../start/ac-components.md).
 
 ## Ambiente de desenvolvimento {#dev-env}
 
@@ -65,9 +55,9 @@ Ele executa os processos de workflow definidos no aplicativo.
 
 Também lida com workflows técnicos executados periodicamente, incluindo:
 
-* **Rastreamento**: Recuperação e consolidação de logs de rastreamento. Ele permite recuperar os logs do servidor de redirecionamento e criar os indicadores agregados usados pelo módulo de relatórios.
-* **Limpeza**: Limpeza do banco de dados. Usado para limpar registros antigos e evitar o crescimento exponencial do banco de dados.
-* **Faturamento**: Envio automático de um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações de marketing etc.).
+* **Rastreamento**: Recupera e consolida logs de rastreamento, de modo que você possa recuperar os logs do servidor de redirecionamento e criar os indicadores agregados usados pelo módulo de relatórios.
+* **Limpeza**: Limpa o banco de dados e elimina registros antigos e evita que o banco de dados cresça exponencialmente.
+* **Faturamento**: Envia um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações de marketing etc.).
 
 **Servidor de entrega** (mta nlserver)
 
@@ -79,7 +69,7 @@ Esse processo pode lidar com a personalização e o envio automático para um ro
 
 Para email, o Adobe Campaign trata automaticamente o rastreamento de cliques e aberturas (o rastreamento transacional no nível do site é uma outra possibilidade). Para isso, os URLs incorporados nas mensagens de email são reescritos para apontar para esse módulo, que registra a passagem do usuário da Internet antes de redirecioná-los para o URL necessário.
 
-Para garantir a maior disponibilidade, esse processo é totalmente independente do banco de dados: os outros processos de servidor se comunicam com ele usando chamadas SOAP (HTTP, HTTP(S) e XML) somente. Tecnicamente, essa funcionalidade é implementada em um módulo de extensão de um servidor HTTP (extensão ISAPI no IIS, um módulo DSO Apache etc.) e está disponível somente no Windows.
+Para garantir a maior disponibilidade, esse processo é totalmente independente do banco de dados: os outros processos de servidor se comunicam com ele usando chamadas SOAP (HTTP, HTTP(S) e XML) somente. Tecnicamente, essa funcionalidade é implementada em um módulo de extensão de um servidor HTTP (extensão ISAPI no IIS ou um módulo DSO Apache etc.) e está disponível somente no Windows.
 
 Outros processos mais técnicos também estão disponíveis:
 
@@ -117,7 +107,7 @@ Esse processo mantém estatísticas sobre o número de conexões, as mensagens e
 
 O banco de dados da Adobe Campaign Cloud depende do [!DNL Snowflake] que contém os dados funcionais (perfis, assinaturas, conteúdo etc.), os dados técnicos (tarefas e logs do delivery, logs de rastreamento etc.) e os dados de trabalho (compras, clientes em potencial) da solução, e todos os componentes do Adobe Campaign se comunicam com o banco de dados para executar suas tarefas específicas.
 
-Os clientes podem implantar o Adobe Campaign usando o banco de dados e os esquemas predefinidos e, se necessário, esse ambiente predefinido pode ser estendido. Todos os dados no data mart são acessados pela Adobe Campaign através de chamadas SQL. A Adobe Campaign também fornece um complemento completo das ferramentas Extrair transformação e carregamento (ETL) para executar a importação e exportação de dados para dentro e para fora do sistema.
+Você pode implantar o Adobe Campaign usando o banco de dados e os esquemas predefinidos e, se necessário, esse ambiente predefinido pode ser estendido. Todos os dados no data mart são acessados pela Adobe Campaign através de chamadas SQL. A Adobe Campaign também fornece um complemento completo das ferramentas Extrair transformação e carregamento (ETL) para executar a importação e exportação de dados para dentro e para fora do sistema.
 
 ![](assets/data-flow-diagram.png)
 

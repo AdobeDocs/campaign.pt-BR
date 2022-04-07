@@ -8,7 +8,7 @@ exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 53%
+ht-degree: 57%
 
 ---
 
@@ -45,13 +45,13 @@ Neste e-mail, queremos que uma das imagens varie dinamicamente de acordo com as 
 
 As etapas a seguir precisam ser realizadas no Adobe Campaign e no Adobe Target:
 
-1. [Insira a oferta dinâmica em um email](#inserting-dynamic-offer)
+1. [Inserir a oferta dinâmica em um email](#inserting-dynamic-offer)
 1. [Criar ofertas de redirecionamento](#create-redirect-offers)
 1. [Criar públicos](#audiences-target)
 1. [Criar uma atividade de direcionamento de experiência](#creating-targeting-activity)
 1. [Visualizar e enviar a mensagem](#preview-send-email)
 
-### Insira a oferta dinâmica em um email {#inserting-dynamic-offer}
+### Inserir a oferta dinâmica em um email {#inserting-dynamic-offer}
 
 No Adobe Campaign, defina o público-alvo e o conteúdo do seu email. Você pode inserir uma imagem dinâmica do Adobe Target.
 

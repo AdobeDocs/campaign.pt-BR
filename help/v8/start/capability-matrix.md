@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 9283f1e857706455c169eb1da93cd0d04df80da0
+source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 100%
+source-wordcount: '920'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ Observe que essa ID é baseada em uma sequência e não é sequencial. A chave p
 
 No Campaign Classic v7 e em versões anteriores, a unicidade de uma chave em um esquema (ou seja, tabela) é manipulada no nível do mecanismo de banco de dados. Em geral, os mecanismos do banco de dados do Classic como PostgreSQL, Oracle ou SQL Server incluem um mecanismo nativo para impedir a inserção de linhas duplicadas com base em uma coluna ou um conjunto de colunas por meio de chaves principais e/ou índices únicos. A ID duplicada não existe nessas versões quando o índice adequado e as chaves principais são definidos no nível do banco de dados.
 
-O Adobe campaign v8 vem com o Snowflake como o banco de dados principal. Como aumenta drasticamente a escala de consultas, a arquitetura distribuída do banco de dados do Snowflake não fornece esses mecanismos para gerenciar e impor a unicidade de uma chave dentro de uma tabela. Como consequência, com o Adobe Campaign v8, nada impede a assimilação de chaves duplicadas em uma tabela. Os usuários finais agora são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign. [Saiba mais](../dev/keys.md)
+O Adobe Campaign v8 vem com o Snowflake como o banco de dados principal. Como aumenta drasticamente a escala de consultas, a arquitetura distribuída do banco de dados do Snowflake não fornece esses mecanismos para gerenciar e impor a unicidade de uma chave dentro de uma tabela. Como consequência, com o Adobe Campaign v8, nada impede a assimilação de chaves duplicadas em uma tabela. Os usuários finais agora são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign. [Saiba mais](../dev/keys.md)
 
 ### Manutenção simplificada
 
@@ -95,7 +95,6 @@ Observe que alguns recursos ainda não estão disponíveis nessa versão do Camp
 * Marketing distribuído
 * Gestor de Resposta
 * Modelos de implantação híbridos/no local
-* Canal do Twitter
 
 >[!CAUTION]
 >

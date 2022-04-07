@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -22,7 +22,7 @@ Antes de começar, é necessário:
 * Obter o URL do servidor do Campaign
 * Crie sua Adobe ID ou obtenha suas credenciais de usuário de sua empresa
 
-## Baixe e instale o Console do cliente
+## Baixe e instale o Console do cliente{#download-ac-console}
 
 Ao usar o Campaign pela primeira vez ou se precisar atualizar para uma versão mais recente, é necessário baixar o Console do cliente e instalá-lo.
 
@@ -36,7 +36,7 @@ Estão disponíveis duas opções:
 >
 >O Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** não selecionado para garantir que todos os usuários sejam alertados quando uma nova versão do Console estiver disponível.  Se essa opção for selecionada, o usuário não será informado sobre novas versões disponíveis.
 
-## Criar a conexão
+## Criar a conexão{#create-your-connection}
 
 Depois que o Console do cliente for recém-instalado, siga as etapas abaixo para criar a conexão com o servidor de aplicativos:
 
@@ -60,7 +60,7 @@ Você pode adicionar quantas conexões forem necessárias para se conectar aos a
 >
 >O **[!UICONTROL Add]** permite criar **[!UICONTROL folders]** para organizar todas as suas conexões. Basta arrastar e soltar cada conexão em uma pasta.
 
-## Faça logon no Adobe Campaign
+## Faça logon no Adobe Campaign {#logon-to-ac}
 
 Para fazer logon em uma instância existente, siga as etapas abaixo:
 
@@ -78,7 +78,7 @@ Para fazer logon em uma instância existente, siga as etapas abaixo:
 
    ![](assets/adobeID.png)
 
-## Conceder acesso aos usuários
+## Conceder acesso aos usuários{#grant-access}
 
 O Adobe Campaign permite definir e gerenciar os direitos atribuídos aos diversos operadores. Veja um conjunto de direitos e restrições que autorizam ou negam:
 

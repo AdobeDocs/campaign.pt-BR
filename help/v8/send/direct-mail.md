@@ -8,7 +8,7 @@ exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 35%
+ht-degree: 36%
 
 ---
 
@@ -24,7 +24,7 @@ As etapas para gerar o arquivo são:
 
    ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html)
 
-1. Definir o público-alvo
+1. Definir a audiência
 
    Os perfis de recipients devem conter pelo menos seus nomes e endereços postais.
 
@@ -40,7 +40,7 @@ As etapas para gerar o arquivo são:
 
    ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/defining-the-direct-mail-content.html)
 
-1. Validar a entrega
+1. Validar o delivery
 
    Verifique o resultado da análise e o conteúdo do arquivo de saída.
 
