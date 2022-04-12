@@ -8,13 +8,13 @@ exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
 source-git-commit: c316da3c431e42860c46b5a23c73a7c129abf3ac
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 26%
+ht-degree: 36%
 
 ---
 
 # Introdução a perfis e públicos no Campaign{#gs-profiles-and-audiences}
 
-Perfis são contatos armazenados no banco de dados do Campaign, como clientes, assinantes de um serviço ou prospetos. Há muitos mecanismos possíveis para adquirir perfis e criar esse banco de dados: coleta on-line via formulários web, importação manual ou automática de arquivos de texto, replicação com bancos de dados da empresa ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados de PI relevantes em uma exibição consolidada para analisar e tomar decisões. Os perfis contêm todas as informações necessárias para direcionamento, qualificação e rastreamento de indivíduos.
+Perfis são contatos armazenados no banco de dados do Campaign, como clientes, assinantes de um serviço ou prospetos. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta online via formulários web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados de PI relevantes em uma exibição consolidada para analisar e tomar decisões. Os perfis contêm todas as informações necessárias para direcionamento, qualificação e rastreamento de indivíduos.
 
 Um perfil é um registro no **nmsRecipient** tabela ou tabela externa que armazena todos os atributos do perfil, como nome, sobrenome, endereço de email, uma ID de cookie, ID do cliente, identificador móvel ou outras informações relevantes para um canal específico. Outras tabelas vinculadas à tabela de recipients contêm dados relacionados ao perfil, por exemplo, a tabela de logs do delivery que contém registros de todos os deliveries enviados aos recipients. Saiba mais sobre perfis integrados e tabelas de destinatários na [esta seção](../dev/datamodel.md#ootb-profiles).
 

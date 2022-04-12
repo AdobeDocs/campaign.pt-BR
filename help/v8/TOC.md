@@ -7,7 +7,7 @@ title: Documentos do Campaign v8
 source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 81%
 + Iniciar {#start}
    + [Introdução](start/get-started.md)
    + [Componentes e processos](start/ac-components.md)
-   + Interface do usuário do Campaign {#ac-ui}
-      + [Interface do Discover Campaign](start/campaign-ui.md)
+   + Interface do Campaign {#ac-ui}
+      + [Conheça a interface do Campaign](start/campaign-ui.md)
       + [Personalizar a interface do Campaign](start/customize-ui.md)
-   + [Trabalhar com públicos-alvo](start/audiences.md)
+   + [Trabalhar com públicos](start/audiences.md)
    + [Importar dados](start/import.md)
    + [Criar campanhas](start/campaigns.md)
    + [Enviar mensagens](start/create-message.md)
@@ -66,9 +66,9 @@ ht-degree: 81%
    + [Correspondência direta](send/direct-mail.md)
    + [Marketing social](send/twitter.md)
    + [Mensagens transacionais](send/transactional.md)
-   + Falhas, devoluções e quarentenas{#failures}
+   + Falhas, rejeições e quarentenas{#failures}
       + [Quarentenas](send/quarantines.md)
-      + [Falhas no delivery](send/delivery-failures.md)
+      + [Falhas de delivery](send/delivery-failures.md)
 + Interação em tempo real{#interaction}
    + [Introdução à interação em tempo real](interaction/interaction.md)
    + [Ambientes e arquitetura](interaction/interaction-architecture.md)

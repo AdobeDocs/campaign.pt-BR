@@ -8,7 +8,7 @@ exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: def9714448ef5fdde39cee070088615e8f50e522
 workflow-type: tm+mt
 source-wordcount: '568'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -44,13 +44,13 @@ O Campaign v8 traz uma escala completa em qualquer etapa do processo, desde o di
 * Dimensione o desempenho das consultas para segmentação e direcionamento, mas também a assimilação e a saída de dados
 * Dimensionar a preparação da entrega (de horas a minutos)
 
-## Interface de administração de autoatendimento{#self-service-admin}
+## Interface de administrador do autoatendimento{#self-service-admin}
 
-Como administrador de produto, você pode gerenciar as configurações e rastrear o uso de cada uma das instâncias do Campaign v8 com **Painel de controle do Campaign**.
+Como administrador de produto, você pode gerenciar as configurações e rastrear o uso de cada uma das instâncias do Campaign v8 com o **Painel de controle do Campaign**.
 
-Por meio de uma interface de usuário intuitiva, os administradores podem monitorar o uso dos principais ativos, realizar tarefas avançadas, como listagem de endereços IP, monitoramento de armazenamento SFTP, gerenciamento de chaves e muito mais. Essa interface de autoatendimento oferece mais flexibilidade e ajuda a:
+Por meio de uma interface intuitiva, os administradores podem monitorar o uso dos principais ativos e realizar tarefas avançadas, como listar permissões de endereços IP, monitorar o armazenamento SFTP, gerenciar chaves e muito mais. Essa interface de autoatendimento oferece mais flexibilidade e ajuda a:
 
-* Faça rapidamente alterações nas configurações por conta própria sem acessar o Suporte ao Adobe
+* Fazer alterações rápidas nas configurações por conta própria sem precisar entrar em contato com o Suporte da Adobe
 * Defina as configurações de acordo com as diferentes necessidades da sua empresa em momentos diferentes
 * Aumente a segurança controlando as configurações de acesso conforme a necessidade
 
