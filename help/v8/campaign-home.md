@@ -18,15 +18,15 @@ ht-degree: 100%
 
 * **[O que é o [!DNL Adobe Campaign]](start/get-started.md)** - Principais recursos e casos de uso
 
-* **[Novidades na v8](start/whats-new.md)** — descubra os recursos do Campaign v8
+* **[Novidades na v8](start/whats-new.md)** - Descubra os recursos do Campaign v8
 
-* **[Diretrizes de implementação](start/implement.md)** — saiba como iniciar a implementação
+* **[Diretrizes de implementação](start/implement.md)** - Saiba como iniciar a implementação
 
-* **[Da v7 para v8](start/capability-matrix.md)** — transição do Campaign Classic v7 para v8? Conheça as principais diferenças
+* **[Da v7 para v8](start/capability-matrix.md)** - Transição do Campaign Classic v7 para v8? Conheça as principais diferenças
 
-* **[Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target=&quot;_blank&quot;}** — Execute as principais tarefas de administrador por conta própria com o Painel de controle do Campaign
+* **[Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target=&quot;_blank&quot;}** - Execute as principais tarefas de administrador por conta própria com o Painel de controle do Campaign
 
-* **[Notas de versão](start/release-notes.md)** — Descubra os recursos e aprimoramentos mais recentes
+* **[Notas de versão](start/release-notes.md)** - Descubra os recursos e aprimoramentos mais recentes
 
 
 ## Introdução
