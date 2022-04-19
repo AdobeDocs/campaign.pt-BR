@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: 9ad8623b48021eab7b53c7fbc69f3baa165afd3f
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 37%
+source-wordcount: '329'
+ht-degree: 27%
 
 ---
 
@@ -18,6 +18,15 @@ O Adobe Campaign fornece vários conectores de CRM para vincular sua plataforma 
 
 Esses conectores permitem uma integração rápida e fácil de dados: O Adobe Campaign fornece um assistente dedicado para coletar e selecionar entre as tabelas disponíveis no CRM. Isso garante a sincronização bidirecional para assegurar que os dados estejam sempre atualizados em todos os sistemas.
 
+Os principais benefícios são:
+
+* Mensagens consistentes entre vendas e marketing: a integração do Adobe Campaign com seu CRM fornece aos dois sistemas acesso ao insight do cliente e ao histórico de marketing por email, permitindo que todas as mensagens do cliente compartilhem as mesmas mensagens consistentes.
+
+* Visualização holística de todos os dados de cliente e prospecto: ao integrar o Adobe Campaign ao seu CRM, é possível compartilhar e acessar o histórico de marketing por email em cada contato a partir do sistema do CRM.
+
+* Ative os dados do CRM em qualquer canal: com dados de contato sincronizados com o Adobe Campaign, as comunicações podem ser enviadas em qualquer canal online ou offline com o Campaign, incluindo push móvel, no aplicativo, email ou mala direta.
+
+
 >[!NOTE]
 >
 >Esse recurso está disponível no Adobe Campaign através dos **conectores dedicados do CRM**.
@@ -26,15 +35,14 @@ Esses conectores permitem uma integração rápida e fácil de dados: O Adobe Ca
 
 O CRM e as versões compatíveis estão detalhados na [Matriz de compatibilidade](../start/compatibility-matrix.md) do Campaign.
 
-![](../assets/do-not-localize/speech.png)  Os conectores CRM funcionam somente com uma URL segura (https).
+>[!CAUTION]
+>
+> Os conectores CRM do Campaign funcionam somente com um URL seguro (https).
 
 ## Etapas de implementação {#crm-implementation-steps}
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Microsoft Dynamics no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)
+Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Microsoft Dynamics no [esta página](ac-ms-dyn.md).
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Salesforce no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)
+Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Salesforce.com em [esta página](ac-sfdc.md).
 
-
-A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de workflow. Crie seus workflows para automatizar a sincronização entre o Campaign e seu CRM. Você pode criar um workflow que importa contatos por meio do Microsoft Dynamics, sincroniza com os dados existentes do Adobe Campaign, exclui os contatos duplicados e atualiza o banco de dados do Adobe Campaign.
-
-![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)
+A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de workflow. Crie seus workflows para automatizar a sincronização entre o Campaign e seu CRM. Você pode criar um workflow que importa contatos por meio do Microsoft Dynamics, sincroniza com os dados existentes do Adobe Campaign, exclui os contatos duplicados e atualiza o banco de dados do Adobe Campaign. Saiba mais [nesta página](crm-data-sync.md).
