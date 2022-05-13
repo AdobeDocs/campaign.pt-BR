@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: a18141274b4934d45ecc82ce5d872c86e141a96f
+source-git-commit: 9457652f62810eb401c4010acd9b5da42d88d796
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 41%
+source-wordcount: '1097'
+ht-degree: 29%
 
 ---
 
@@ -56,7 +56,7 @@ Esta seção detalha os elementos específicos para o delivery de notificações
 
 >[!CAUTION]
 >
->Com o Campaign v8, o registro móvel agora é **assíncrono**. [Saiba mais](../dev/staging.md)
+>No contexto de um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), o registro móvel agora é **assíncrono**. [Saiba mais](../architecture/staging.md)
 
 Para criar um novo delivery, navegue até o **[!UICONTROL Campaigns]** clique em **[!UICONTROL Deliveries]** e clique no botão **[!UICONTROL Create]** acima da lista de deliveries existentes.
 
@@ -66,38 +66,93 @@ Para criar um novo delivery, navegue até o **[!UICONTROL Campaigns]** clique em
 
 ### Enviar notificações no iOS {#send-notifications-on-ios}
 
-1. Selecione o **[!UICONTROL Deliver on iOS]** modelo de delivery e clique em **[!UICONTROL Continue]**.
+>[!NOTE]
+>
+>Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-   ![](assets/push-template-ios.png)
+1. Selecione o modelo de delivery **[!UICONTROL Deliver on iOS]**.
+
+   ![](assets/push_ios_1.png)
 
 1. Para definir o target da notificação, clique no link **[!UICONTROL To]** e, em seguida, clique em **[!UICONTROL Add]**.
 
-   ![](assets/push-ios-select-target.png)
+   ![](assets/push_ios_2.png)
 
 1. Selecionar **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, selecione o serviço relevante para o aplicativo móvel e selecione a versão iOS do aplicativo.
 
-   ![](assets/push-ios-subscribers.png)
+   ![](assets/push_ios_3.png)
 
-1. Selecione o tipo de notificação: **[!UICONTROL Alert]**, **[!UICONTROL Badge]**, **[!UICONTROL Alert and badge]** ou **[!UICONTROL Silent Push]**.
+1. Escolha sua **[!UICONTROL Notification type]** entre **[!UICONTROL General notification (Alert, Sound, Badge)]** ou **[!UICONTROL Silent notification]**.
 
-   ![](assets/push-ios-alert.png)
+   ![](assets/push_ios_4.png)
 
-1. No campo **[!UICONTROL Title]**, insira o rótulo do título que deve aparecer na notificação.
+   >[!NOTE]
+   >
+   >O modo **Push silencioso** permite que uma notificação &quot;silenciosa&quot; seja enviada a um aplicativo móvel. O usuário não está ciente da chegada da notificação. Ele é transferido diretamente para o aplicativo.
 
-1. Insira o **[!UICONTROL Message]** e **[!UICONTROL Value of the badge]** com base no tipo de notificação escolhido.
+1. No **[!UICONTROL Title]** , insira o rótulo do título que deve aparecer na lista de notificações disponíveis no centro de notificações.
 
-1. Você também pode definir os seguintes elementos:
+   Este campo permite a definição do valor do parâmetro **title** da carga de notificação iOS.
 
-   * O **[!UICONTROL Action button]** permite definir um rótulo para o botão de ação que aparece nas notificações de alerta (campo **action_loc_key** da carga).
+1. Você pode adicionar uma **[!UICONTROL Subtitle]**, valor da variável **subtítulo** parâmetro da carga de notificação do iOS.
 
-   * No campo **[!UICONTROL Play a sound]**, selecione o som a ser reproduzido pelo terminal móvel quando a notificação for recebida.
+1. Insira o conteúdo da mensagem na seção **[!UICONTROL Message content]** do assistente.
 
-   * No campo **[!UICONTROL Application variables]**, insira o valor de cada variável. Por exemplo, você pode configurar uma tela de aplicativo específica a ser exibida quando o usuário ativar a notificação.
+1. No **[!UICONTROL Sound and Badge]** , é possível editar as seguintes opções:
+
+   * **[!UICONTROL Clean Badge]**: habilite essas opções para atualizar o valor do selo.
+
+   * **[!UICONTROL Value]**: defina um número que será usado para exibir diretamente no ícone do aplicativo o número de novas informações não lidas.
+
+   * **[!UICONTROL Critical alert mode]**: habilite esta opção para adicionar som à sua notificação, mesmo que o telefone do usuário esteja configurado no modo de foco ou se o iPhone estiver sem áudio.
+
+   * **[!UICONTROL Name]**: selecione o som a ser reproduzido pelo terminal móvel quando a notificação for recebida.
+
+   * **[!UICONTROL Volume]**: volume do seu som de 0 a 100.
+
+      >[!NOTE]
+      > 
+      >Os sons devem ser incluídos no aplicativo e definidos quando o serviço for criado.
+      >
+      >As diretrizes de configuração do iOS estão detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en).
+   ![](assets/push_ios_5.png)
+
+1. No **[!UICONTROL Application variables]** guia , sua **[!UICONTROL Application variables]** são adicionadas automaticamente. Eles permitem definir o comportamento de notificação, por exemplo, você pode configurar uma tela de aplicativo específica a ser exibida quando o usuário ativar a notificação.
+
+   Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en).
+
+1. No **[!UICONTROL Advanced]** , é possível editar as seguintes opções gerais:
+
+   * **[!UICONTROL Mutable content]**: habilite esta opção para permitir que o aplicativo móvel baixe conteúdo de mídia.
+
+   * **[!UICONTROL Thread-id]**: identificador usado para agrupar notificações relacionadas.
+
+   * **[!UICONTROL Category]**: nome da ID da categoria que exibirá botões de ação. Essas notificações fornecem ao usuário uma maneira mais rápida de realizar tarefas diferentes em resposta a uma notificação sem abrir o aplicativo ou navegar até ele.
+
+   ![](assets/push_ios_6.png)
+
+1. Para notificações sensíveis ao tempo, é possível especificar as seguintes opções:
+
+   * **[!UICONTROL Target content ID]**: identificador usado para direcionar qual janela de aplicativo apresentar quando a notificação for aberta.
+
+   * **[!UICONTROL Launch image]**: nome do arquivo de imagem de lançamento a ser exibido. Se o usuário optar por iniciar seu aplicativo, a imagem selecionada será exibida em vez da tela de inicialização do aplicativo.
+
+   * **[!UICONTROL Interruption level]**:
+
+      * **[!UICONTROL Active]**: Definido por padrão, o sistema apresenta a notificação imediatamente, acende a tela e pode reproduzir um som. As notificações não percorrem os modos Foco.
+
+      * **[!UICONTROL Passive]**: O sistema adiciona a notificação à lista de notificação sem acender a tela ou reproduzir um som. As notificações não percorrem os modos Foco.
+
+      * **[!UICONTROL Time sensitive]** O sistema apresenta a notificação imediatamente, acende a tela, pode reproduzir um som e quebrar os modos de foco. Esse nível não requer uma permissão especial da Apple.
+
+      * **[!UICONTROL Critical]** O sistema apresenta a notificação imediatamente, acende a tela e ignora os modos mudo ou foco. Observe que esse nível requer uma permissão especial da Apple.
+   * **[!UICONTROL Relevance score]**: defina uma pontuação de relevância de 0 a 100. O sistema usa essa opção para classificar as notificações no resumo da notificação.
+
+   ![](assets/push_ios_7.png)
 
 1. Quando a notificação estiver configurada, clique na guia **[!UICONTROL Preview]** para visualizar a notificação.
 
    ![](assets/push-ios-preview.png)
-
 
 ### Enviar notificações no Android {#send-notifications-on-android}
 
@@ -111,7 +166,7 @@ Para criar um novo delivery, navegue até o **[!UICONTROL Campaigns]** clique em
 
 1. Selecione **[!UICONTROL Subscribers of an Android mobile application]**, escolha o serviço relevante para seu aplicativo móvel (Neotrips, neste caso) e selecione a versão Android do aplicativo.
 
-   ![](assets/push-ios-subscribers.png)
+   ![](assets/push-android-subscribers.png)
 
 1. Em seguida, insira o conteúdo da notificação.
 

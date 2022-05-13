@@ -4,9 +4,10 @@ description: Saiba como trabalhar com o Campaign e o Microsoft Dynamics
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 59ccee717d857545ed2b3ba6fb850ef8a9d0907b
+exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1366'
 ht-degree: 38%
 
 ---
@@ -48,7 +49,7 @@ Para obter a ID do aplicativo (cliente), você precisa registrar um aplicativo n
 
 Depois de salvar, o Microsoft Azure Diretory atribui um **ID do aplicativo (cliente)** ao seu aplicativo. Mais tarde, você precisará dessa ID na configuração do Dynamics 365 no Adobe Campaign.
 
-Saiba mais em [Documentação do Microsoft Dynamics 365](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
+Saiba mais em [Documentação do Microsoft Dynamics 365](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory){target=&quot;_blank&quot;}.
 
 ### Gerar o identificador de chave de certificado e a ID de chave do Microsoft Dynamics {#config-certificate-key-id}
 

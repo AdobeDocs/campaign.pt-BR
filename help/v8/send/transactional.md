@@ -5,18 +5,18 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: ec044d6176b4d00302d7a7e24520b97669bede49
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 72%
+source-wordcount: '1827'
+ht-degree: 71%
 
 ---
 
 # Introdução a mensagens transacionais{#send-transactional-messages}
 
-O envio de mensagens transacionais (Centro de mensagens) é um módulo do Campaign criado para gerenciar mensagens por disparo. Essas mensagens são geradas por eventos disparados dos sistemas de informações e podem ser: fatura, confirmação de pedidos, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta ou criação de conta de site, por exemplo.
+O envio de mensagens transacionais (Centro de mensagens) é um módulo do Campaign criado para gerenciar mensagens por disparo. Essas notificações são geradas a partir de eventos acionados a partir de sistemas de informações e podem ser: fatura, confirmação de pedido, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta, criação de conta de site, etc.
 
-![](../assets/do-not-localize/speech.png)  Como um usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
+![](../assets/do-not-localize/speech.png)  Como um usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support){target=&quot;_blank&quot;} para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
 
 As mensagens transacionais são usadas para enviar:
 
@@ -26,13 +26,58 @@ As mensagens transacionais são usadas para enviar:
 
 ![](../assets/do-not-localize/glass.png) As configurações de mensagens transacionais são detalhadas em [esta seção](../config/transactional-msg-settings.md).
 
-![](../assets/do-not-localize/glass.png) Entenda a arquitetura de mensagens transacionais no [esta página](../dev/architecture.md).
+![](../assets/do-not-localize/glass.png) Entender a arquitetura de mensagens transacionais no [esta página](../architecture/architecture.md).
 
->[!CAUTION]
+## Princípio operacional das mensagens transacionais {#transactional-messaging-operating-principle}
+
+O módulo de mensagens transacionais do Adobe Campaign é integrado a um sistema de informações que retorna eventos que serão transformados em mensagens transacionais personalizadas. Essas mensagens podem ser enviadas individualmente ou em lotes por email, SMS ou notificações por push.
+
+Por exemplo, imagine que você é uma empresa com um site onde os clientes podem comprar produtos.
+
+O Adobe Campaign permite enviar um email de notificação para clientes que adicionaram produtos ao carrinho. Quando um deles sai do site sem concluir a compra (evento externo que aciona um evento do Campaign), um email de abandono de carrinho é enviado automaticamente a eles (entrega de mensagem transacional).
+
+As principais etapas para colocar isso em prática são detalhadas abaixo:
+
+1. [Crie um tipo de evento](#create-event-types).
+1. [Criar o modelo de mensagem](#create-message-template). Você deve vincular um evento à sua mensagem durante essa etapa.
+1. [Testar a mensagem](#test-message-template).
+1. [Publicar o modelo da mensagem](#publish-message-template).
+
+Depois de projetar e publicar o template de mensagem transacional, se um evento correspondente for acionado, os dados relevantes serão enviados para o Campaign por meio de PushEvent e PushEvents [Métodos SOAP](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html){target=&quot;_blank&quot;} e o delivery é enviado aos recipients alvos.
+
+## Criar tipos de evento {#create-event-types}
+
+Para garantir que cada evento possa ser alterado em uma mensagem personalizada, primeiro é necessário criar **tipos de evento**.
+
+Ao [criar um modelo de mensagem](#create-message-template), você selecionará o tipo de evento que corresponde à mensagem que deseja enviar.
+
+>[!IMPORTANT]
 >
->As mensagens transacionais exigem uma licença específica. Verifique o contrato de licença.
+>Você deve criar tipos de evento antes de poder usá-los em modelos de mensagem.
 
-## Definir templates de mensagem transacional
+Para criar tipos de evento que serão processados pelo Adobe Campaign, siga as etapas abaixo:
+
+1. Faça logon na **instância de controle**.
+
+1. Vá até a pasta **[!UICONTROL Administration > Platform > Enumerations]** da árvore.
+
+1. Selecione **[!UICONTROL Event type]** na lista.
+
+1. Clique em **[!UICONTROL Add]** para criar um valor de lista discriminada. Pode ser uma confirmação de pedido, uma alteração de senha, uma alteração de entrega de pedido etc.
+
+   <!--![](assets/messagecenter_eventtype_enum_001.png)-->
+
+   >[!IMPORTANT]
+   >
+   >Cada tipo de evento deve corresponder a um valor na lista discriminada **[!UICONTROL Event type]**.
+
+1. Após a criação dos valores da lista discriminada, faça logoff e logon novamente na instância para que a criação seja efetivada.
+
+>[!NOTE]
+>
+>Saiba mais sobre listas discriminadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}.
+
+## Definir um template de mensagem transacional {#create-message-template}
 
 Cada evento pode acionar uma mensagem personalizada. Para que isso aconteça, é necessário criar um template de mensagem para corresponder a cada tipo de evento. Os templates contêm as informações necessárias para personalizar a mensagem transacional. Você também pode usar templates para testar a pré-visualização da mensagem e enviar provas usando seed addresses antes de entregar ao target final.
 
@@ -54,9 +99,9 @@ Para criar um template de mensagem, siga as etapas abaixo:
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Os tipos de eventos destinados a serem processados pelo Adobe Campaign devem ser criados na instância de controle pelo Adobe.
+   Os tipos de eventos destinados a serem processados pelo Adobe Campaign devem ser criados antes.
 
-   >[!NOTE]
+   >[!CAUTION]
    >
    >Um tipo de evento nunca deve estar vinculado a mais de um template.
 
@@ -91,6 +136,8 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 1. Preencha a tag usando a seguinte sintaxe: **element name**.@**attribute name** como mostrado abaixo.
 
    ![](assets/messagecenter_create_custo_2.png)
+
+## Testar o template de mensagem transacional {#test-message-template}
 
 ### Adicionar seed addresses{#add-seeds}
 
@@ -174,7 +221,7 @@ Para enviar a prova:
 
 ![](assets/messagecenter_send_proof_003.png)
 
-### Publicar o modelo
+## Publicar o modelo {#publish-message-template}
 
 Quando o modelo de mensagem criado na instância de controle estiver concluído, você poderá publicá-lo. Esse processo também o publicará em todas as instâncias de execução.
 
@@ -206,8 +253,7 @@ Depois que um modelo for publicado, se o evento correspondente for acionado, a i
 >
 >No entanto, se você adicionar um valor não vazio, o campo correspondente será atualizado como normal após a próxima publicação.
 
-
-### Cancelar a publicação de um modelo
+## Cancelar a publicação de um modelo
 
 Depois que um template de mensagem é publicado nas instâncias de execução, você pode desfazer a publicação.
 

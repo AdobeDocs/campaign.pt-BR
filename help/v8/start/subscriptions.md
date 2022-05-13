@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '545'
 ht-degree: 34%
 
 ---
@@ -76,7 +76,7 @@ Para cancelar a assinatura (recusa) de um perfil de um serviço, as opções dis
 
 >[!CAUTION]
 >
->Assinaturas e unsubscriptions são **assíncrono** processos. As solicitações de aceitação e recusa são processadas a cada hora. [Saiba mais](../dev/new-apis.md#sub-apis)
+>No contexto de um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), assinaturas e unsubscriptions são **assíncrono** processos. As solicitações de aceitação e recusa são processadas a cada hora. [Saiba mais](../architecture/new-apis.md#sub-apis)
 
 Você também pode permitir que seus recipients de delivery encaminhem mensagens para um amigo. Para fazer isso, insira os links relevantes no seu delivery. Em seguida, você poderá controlar esse processo de compartilhamento, bem como o número de visitas às páginas relacionadas.
 

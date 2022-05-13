@@ -5,30 +5,30 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: c316da3c431e42860c46b5a23c73a7c129abf3ac
+source-git-commit: 1ff06c69a4118afa228522d580dd5caa36a69275
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 37%
+source-wordcount: '1093'
+ht-degree: 38%
 
 ---
 
-# Quarentenas {#quarantine-management}
+# Quarentena {#quarantine-management}
 
 O Adobe Campaign gerencia uma lista de endereços em quarentena para canais online (email, SMS, notificação por push). Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, evita que você seja adicionado à lista de bloqueios por esses provedores. Além disso, a quarentena ajuda a reduzir os custos de envio de SMS, excluindo números de telefone incorretos dos deliveries.
 
-Quando o endereço ou número de telefone está em quarentena, os recipients são excluídos do target durante a análise de delivery: não será possível enviar mensagens de marketing, incluindo emails de fluxo de trabalho automatizados, para esses contatos. Se esses endereços em quarentena também estiverem presentes em listas, eles serão excluídos ao enviar para essas listas. Um endereço de email pode ser colocado em quarentena, por exemplo, quando a caixa de entrada estiver cheia, se o endereço não existir ou se o servidor de email não estiver disponível, por exemplo.
+Quando o endereço ou número de telefone está em quarentena, os recipients são excluídos do target durante a análise de delivery: não será possível enviar mensagens de marketing, incluindo emails de fluxo de trabalho automatizados, para esses contatos. Se esses endereços em quarentena também estiverem presentes em listas, eles serão excluídos ao enviar para essas listas. Um endereço de email pode ser colocado em quarentena, por exemplo, quando a caixa de correio estiver cheia, se o endereço não existir ou se o servidor de email não estiver disponível.
 
 <!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
 
 **Quarentena** se aplica somente a um **endereço**, a **número de telefone** ou um **token de dispositivo**, mas não para o próprio perfil. Por exemplo, um perfil cujo endereço de email esteja em quarentena pode atualizar seu perfil e inserir um novo endereço, podendo então ser direcionado em ações de delivery novamente. Da mesma forma, se dois perfis tiverem o mesmo número de telefone, ambos serão afetados se o número estiver em quarentena. Os endereços em quarentena ou os números de telefone são exibidos nos [logs de exclusão](#delivery-quarantines) (para um delivery) ou na [lista de quarentena](#non-deliverable-bounces) (para toda a plataforma).
 
-Por outro lado, os perfis podem estar no **lista de bloqueios** como após um cancelamento de subscrição (opt-out), para um determinado canal: isso implica que eles já não são alvo de nenhuma. Como consequência, se um perfil na  de lista de bloqueios para o canal de email tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios para um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md).
+Por outro lado, os perfis podem estar no **lista de bloqueios** como após um cancelamento de subscrição (opt-out), para um determinado canal: isso implica que eles já não são alvo de nenhuma. Como consequência, se um perfil na  de lista de bloqueios para o canal de email tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios para um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
 >Quando os recipients relatam sua mensagem como spam ou respondem a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot;, seu endereço ou número de telefone é colocado em quarentena como **[!UICONTROL Denylisted]**. O perfil é atualizado adequadamente.
->
-> Para o canal de email, os endereços de email são colocados em quarentena. Para o canal de aplicativo móvel, os tokens do dispositivo são colocados em quarentena. Para o canal SMS, os números de telefone estão em quarentena.
+
+<!--For the email channel, email addresses are quarantined. For the mobile app channel, device tokens are quarantined. For the SMS channel, phone numbers are quarantined.?-->
 
 ## Por que um email, telefone ou dispositivo é enviado para quarentena {#quarantine-reason}
 
@@ -37,8 +37,7 @@ O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha do delivery
 Dois tipos ou erros podem ser capturados:
 
 * **Erro grave**: o endereço de email, número de telefone ou dispositivo é enviado imediatamente para quarentena.
-* **Erro suave**: erros suaves aumentam um contador de erros e podem colocar em quarentena um email, número de telefone ou token de dispositivo. Desempenho da campanha [tentativas](delivery-failures.md#retries).: quando o contador de erros atinge o limite, o endereço, o número de telefone ou o token do dispositivo é colocado em quarentena. [Saiba mais](delivery-failures.md#retries).
-
+* **Erro suave**: erros suaves aumentam um contador de erros e podem colocar em quarentena um email, número de telefone ou token de dispositivo. O Campaign executa [tentativas](delivery-failures.md#retries): quando o contador de erros atinge o limite, o endereço, o número de telefone ou o token do dispositivo é colocado em quarentena. [Saiba mais](delivery-failures.md#retries).
 
 Na lista de endereços em quarentena, o campo **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena. [Saiba mais](#identifying-quarantined-addresses-for-the-entire-platform).
 

@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: dafdf471fcaf2b6c6e3e8d5028cd65e35e7df3eb
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
 source-wordcount: '1314'
 ht-degree: 66%
@@ -43,7 +43,7 @@ Assim que uma oferta puder ou deve ser apresentada (de acordo com as configuraç
 
 ## Arquitetura distribuída
 
-Para oferecer suporte à escalabilidade e fornecer serviço 24 horas por dia, 7 dias por semana no canal de entrada, a variável **Interação** é implementado em uma arquitetura distribuída. Esse tipo de arquitetura já é usado com [Centro de mensagens](../dev/architecture.md#transac-msg-archi) e é composto de várias instâncias:
+Para oferecer suporte à escalabilidade e fornecer serviço 24 horas por dia, 7 dias por semana no canal de entrada, a variável **Interação** é implementado em uma arquitetura distribuída. Esse tipo de arquitetura já é usado com [Centro de mensagens](../architecture/architecture.md#transac-msg-archi) e é composto de várias instâncias:
 
 * uma ou várias instâncias de controle dedicadas ao canal de saída e contendo a base de design de marketing e ambiente.
 * uma ou várias instâncias de execução dedicadas ao canal de entrada.

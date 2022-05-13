@@ -2,9 +2,9 @@
 title: Trabalhar com esquemas do Campaign
 description: Introdução a esquemas
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 355b9219ffd9d481d15d2d0982d49923842cc27b
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1266'
 ht-degree: 7%
 
 ---
@@ -133,9 +133,43 @@ type="string" enum="exTransactionTypeEnum"/>
 >
 >Também é possível empregar enumerações gerenciadas pelo usuário (normalmente em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** ) para especificar os valores de um determinado campo. Essas são enumerações globais efetivamente e uma melhor opção se a enumeração puder ser usada fora do schema específico em que você está trabalhando.
 
+<!--
+## Index {#index} 
+
+In the context of a [FDA Snowflake deployment](../architecture/fda-deployment.md), you need to declare indexes. Indexes are the first elements declared in the main element of the schema. 
+
+They can be unique or not, and reference one or more fields.
+
+Examples:
+
+```
+<dbindex name="email" unique="true">
+  <keyfield xpath="@email"/>
+</dbindex>
+```
+
+```
+<dbindex name="lastNameAndZip">
+  <keyfield xpath="@lastName"/>
+  <keyfield xpath="location/@zipCode"/>
+</dbindex>
+```
+
+The **xpath** attribute points to the field in your schema that you wish to index.
+
+>[!IMPORTANT]
+>
+>It is important to remember that the SQL query read performance gains provided by indexes also come with a performance hit on writing records. The indexes should therefore be used with precaution.
+
+For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-fields) section.
+
+-->
+
 ## Teclas {#keys}
 
-Cada tabela deve ter pelo menos uma chave e geralmente é automaticamente estabelecida no elemento principal do schema usando o **@autouuid** e **autopk** atributos definidos como **true**.
+Cada tabela deve ter pelo menos uma chave e geralmente é automaticamente estabelecida no elemento principal do schema usando o **autopk** conjunto de atributos para **true**.
+
+Além disso, no contexto de um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), use o **@autouuid** e defina-o como **true**.
 
 A chave primária também pode ser definida usando o **interno** atributo.
 
@@ -147,7 +181,7 @@ Exemplo:
 </key>
 ```
 
-Neste exemplo, em vez de deixar a variável **@autouuid** criar uma chave primária padrão chamada &quot;id&quot; estamos especificando nossa própria chave primária &quot;householdId&quot;.
+Neste exemplo, em vez de deixar a variável **@autopk** ou **@autouuid** criar uma chave primária padrão chamada &quot;id&quot; estamos especificando nossa própria chave primária &quot;householdId&quot;.
 
 >[!CAUTION]
 >

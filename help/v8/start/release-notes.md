@@ -6,16 +6,108 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
+source-git-commit: d3137e75bfc4986e1d6badf32f21fda4c4353c8b
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 100%
+source-wordcount: '2240'
+ht-degree: 81%
 
 ---
 
 # Versão mais recente{#latest-release}
 
 Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign v8**.
+
+## Versão 8.3.7 {#release-8-3-7}
+
+_16 de maio de 2022_
+
+**Novidades**
+
+<table>
+<thead>
+<tr>
+<th><strong>Gestor de Resposta</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>O Campaign Response Management permite medir o sucesso e o ROI de suas campanhas de marketing ou apresentações de ofertas em todos os canais: email, celular, mala direta etc.</p>
+<p>Para obter mais informações, consulte a <a href="../start/campaigns.md#response-manager-add-on">documentação detalhada</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Marketing distribuído</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>O Campaign Distributed Marketing permite implementar campanhas colaborativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais, etc.). Por meio de um espaço de trabalho compartilhado (pacotes de campanha), você pode criar templates de campanha e propô-los às entidades locais.</p>
+<p>Para obter mais informações, consulte a <a href="../start/campaigns.md#distributed-marketing-add-on">documentação detalhada</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Notificações sensíveis ao tempo</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Com o iOS 15, a Apple adicionou uma noção de notificação confidencial que dá controle ao desenvolvedor do aplicativo para ignorar o modo Foco quando uma notificação é considerada confidencial e precisa alcançar o usuário em tempo real.</p>
+<p>Para obter mais informações, consulte a <a href="../send/push.md#send-notifications-on-ios">documentação detalhada</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Integração do Core Privacy Service</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>O Campaign v8 agora se integra ao Serviço principal de privacidade do Adobe. As solicitações de privacidade transmitidas pelo Privacy Core Service para todas as soluções da Experience Cloud são tratadas automaticamente pelo Campaign, por meio de um fluxo de trabalho específico.</p>
+<p>Para obter mais informações, consulte a <a href="privacy.md">documentação detalhada</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Atualizações de compatibilidade**
+
+* O Campaign v8 SDK agora é compatível com Android 12 e iOS 15 para notificações por push.
+* O Campaign v8 agora é compatível com o Windows 11.
+
+Consulte a [Matriz de compatibilidade do Campaign](capability-matrix.md).
+
+**Aprimoramentos**
+
+* A autenticação OAuth 2.0 do Microsoft Exchange Online para POP3 agora é compatível com o Campaign. [Saiba mais](../config/external-accounts.md#bounce-mails-external-account)
+* Correções críticas foram aplicadas em relação à API da web do Microsoft Dynamics Connector.
+* O novo direito nomeado Operator and group schema write (operatorWrite) foi adicionado para permitir que os usuários insiram, atualizem e excluam os esquemas Operators (xtk:operator) e Operator groups (xtk:group).
+* Agora você pode ativar o recurso Email Cco (cópia cega de carbono) para armazenar emails enviados pelo Campaign no nível de delivery, por meio da opção dedicada nas propriedades de delivery. [Saiba mais](../config/email-settings.md#email-bcc)
+* Para garantir melhor desempenho, uma nova opção &quot;Split&quot; agora é ativada por padrão na conta externa Roteamento . Essa opção permite que as mensagens sejam divididas automaticamente entre as instâncias de mid-sourcing para serem entregues mais rapidamente aos recipients. LINK
+* Para deliveries LINE em configurações de mid-sourcing, várias contas ativas do mesmo tipo agora podem existir em uma instância intermediária.
+* O número de conexões padrão para o processo da Web foi aumentado de 50 para 150.
+* O Campaign vem com um conjunto de novas grades de proteção para impedir a inserção de chaves duplicadas no banco de dados do Snowflake. [Leia mais](../architecture/keys.md)
+
+**Correções**
+
+* Correção de um problema que ocorria ao usar seeds e grupos de controle no mesmo delivery recorrente. (NEO-41197)
+* Correção de um problema no FFDA que resultava no bloqueio do envio de email para todos os recipients pertencentes ao mesmo deliveryPart durante o processo de envio (até 256), quando os blocos de personalização continham um dos seguintes caracteres: `' & < > "`. Esses caracteres agora são compatíveis em blocos de personalização (por exemplo: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
+* Correção de um problema que poderia causar falha no workflow de rastreamento ao usar um schema personalizado como target mapping. Agora, garantimos que o tipo de link externo para um schema de target personalizado esteja correto ao gerar o schema broadLog por meio do assistente de target mapping. (NEO-43506)
+* Correção de um problema que poderia causar falha nos fluxos de trabalho de implantação do FDA para idiomas diferentes do inglês. (NEO-44561)
 
 ## Versão 8.2.10 {#release-8-2-10}
 
@@ -76,7 +168,9 @@ _28 de outubro de 2021_
 <tr> 
 <td> <p>O Unicity Service é um novo componente do Cloud Database Manager. Ele ajuda os usuários a preservar e monitorar a integridade das restrições de chaves únicas dentro de tabelas do Cloud Database. Isso permite reduzir o risco de inserir chaves duplicadas.
 <p>Como o Cloud Database não impõe restrições de unicidade, o Unicity Service introduz, no nível do aplicativo, <b>um novo conjunto de medidas de proteção</b> que reduzem o risco de inserir duplicatas ao gerenciar dados com o Adobe Campaign.</p> 
-<p>O Unicity Service inicia um novo workflow incorporado chamado <b>ffdaUnicity</b> para monitorar restrições de unicidade e alertar quando duplicatas são detectadas.</p></td> </tr> 
+<p>O Unicity Service inicia um novo workflow incorporado chamado <b>ffdaUnicity</b> para monitorar restrições de unicidade e alertar quando duplicatas são detectadas.</p>
+<p>Para obter mais informações, consulte a <a href="../architecture/keys.md">documentação detalhada</a>.</p>
+</td> </tr> 
 </tbody> 
 </table>
 

@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '655'
 ht-degree: 4%
 
 ---
@@ -66,9 +66,9 @@ Você também pode usar uma tabela de recipients diferente para se adequar melho
 
 ## Tabelas do Campaign e banco de dados do Cloud
 
-Para entender melhor o gerenciamento de tabela no Campaign v8, observe que as tabelas são replicadas entre o Campaign e seu banco de dados do Snowflake Cloud.
+Para entender melhor o gerenciamento de tabela no Campaign v8, observe que, no contexto de um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), as tabelas são replicadas entre o Campaign e seu banco de dados do Snowflake Cloud.
 
-![](../assets/do-not-localize/glass.png) Saiba mais sobre a estratégia e os mecanismos de replicação no [esta seção](../config/replication.md).
+![](../assets/do-not-localize/glass.png) Saiba mais sobre a estratégia e os mecanismos de replicação no [esta seção](../architecture/replication.md).
 
 **Tópicos relacionados**
 

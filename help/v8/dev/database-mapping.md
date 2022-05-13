@@ -2,9 +2,9 @@
 title: Mapeamento do banco de dados do Campaign
 description: Mapeamento do banco de dados do Campaign
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1485'
 ht-degree: 0%
 
 ---
@@ -196,9 +196,9 @@ As chaves obedecem às seguintes regras:
    </schema>
    ```
 
-### Chave primária - Identificador
+### Chave primária - Identificador{#primary-key}
 
-A chave primária das tabelas do Adobe Campaign é uma **ID universal exclusiva (UUID)** gerado automaticamente pelo mecanismo de banco de dados. O valor da chave é exclusivo em todo o banco de dados. O conteúdo da chave é gerado automaticamente na inserção do registro.
+No contexto de um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), a chave primária das tabelas do Adobe Campaign é uma **ID universal exclusiva (UUID)** gerado automaticamente pelo mecanismo de banco de dados. O valor da chave é exclusivo em todo o banco de dados. O conteúdo da chave é gerado automaticamente na inserção do registro.
 
 **Exemplo**
 
@@ -353,6 +353,8 @@ Um link reverso para a tabela &quot;cus:recipient&quot; foi adicionado com os se
 * **target**: chave do schema vinculado (schema &quot;cus:recipient&quot;)
 * **unbound**: o link é declarado como um elemento de coleção para uma cardinalidade 1-N (por padrão)
 * **integridade**: &quot;definir&quot; por padrão (pode ser forçado com o atributo &quot;revIntegrity&quot; na definição do link no schema de origem).
+
+Observe que a variável `autouuid="true"`aplica-se no contexto de um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md) somente.
 
 ### Exemplo 2 {#example-2}
 

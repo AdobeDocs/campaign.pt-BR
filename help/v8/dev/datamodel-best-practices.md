@@ -2,9 +2,9 @@
 title: Práticas recomendadas do modelo de dados
 description: Conheça as práticas recomendadas de extensão do modelo de dados do Campaign
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2717'
 ht-degree: 4%
 
 ---
@@ -73,13 +73,9 @@ Além do **autouuid** e **autopk** definido por padrão na maioria das tabelas, 
 
 Chaves eficientes são essenciais para o desempenho. Com o Snowflake, é possível inserir tipos de dados numéricos ou baseados em sequência como chaves para tabelas.
 
-<!-- ### Dedicated tablespaces {#dedicated-tablespaces}
-
-The tablespace attribute in the schema allows you to specify a dedicated tablespace for a table.
-
-The installation wizard allows you to store objects by type (data, temporary).
-
-Dedicated tablespaces are better for partitioning, security rules, and allow fluid and flexible administration, better optimization, and performance. -->
+>[!NOTE]
+>
+>O **autouuid** somente se aplica a [Implantações empresariais (FDA)](../architecture/enterprise-deployment.md).
 
 ## Identificadores {#identifiers}
 
@@ -93,7 +89,7 @@ A tabela a seguir descreve esses identificadores e sua finalidade.
 | Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto for implantado de um ambiente para outro.</li><li>Quando um objeto tem um atributo de namespace (*schema* por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*, etc.  Observe que alguns namespaces são somente internos. [Saiba mais](schemas.md#reserved-namespaces).</li><li>Quando um objeto não tem namespace (*workflow* ou *delivery* por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais, como espaço &quot;&quot;, semircoluna &quot;:&quot; ou hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenadas como &quot;abc_def&quot; e se substituiriam.</li></ul> |
 | Rótulo | <ul><li>O rótulo é o identificador comercial de um objeto ou registro no Adobe Campaign.</li><li>Esse objeto permite espaços e caracteres especiais.</li><li>Não garante a singularidade de um registro.</li></ul> | <ul><li>É recomendável determinar uma estrutura para seus rótulos de objetos.</li><li>Essa é a solução mais fácil de usar para identificar um registro ou objeto para um usuário do Adobe Campaign.</li></ul> |
 
-A chave primária do Adobe Campaign é um UUID gerado automaticamente para todas as tabelas integradas. Uma UUID também pode ser usada para tabelas personalizadas. [Saiba mais](keys.md)
+No contexto de um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), a chave primária do Adobe Campaign é um UUID gerado automaticamente para todas as tabelas incorporadas. Uma UUID também pode ser usada para tabelas personalizadas. [Saiba mais](../architecture/keys.md)
 
 Mesmo que o número de IDs seja infinito, é necessário tomar cuidado com o tamanho do banco de dados para garantir desempenho ideal. Para evitar qualquer problema, ajuste as configurações de limpeza de instância. Para obter mais informações, consulte [esta seção](#data-retention).
 
@@ -112,7 +108,9 @@ Ao criar uma tabela personalizada, você tem duas opções:
 
 >[!CAUTION]
 >
->Uma autouuid não deve ser usada como referência em workflows.
+>* Uma autouuid não deve ser usada como referência em workflows.
+> * O **autouuid** somente se aplica a [Implantações empresariais (FDA)](../architecture/enterprise-deployment.md).
+>
 
 
 ## Links e cardinalidade {#links-and-cardinality}
@@ -121,7 +119,7 @@ Ao criar uma tabela personalizada, você tem duas opções:
 
 Cuidado com a &quot;própria&quot; integridade em tabelas grandes. Excluir registros que tenham tabelas grandes na integridade &quot;própria&quot; pode potencialmente interromper a instância. A tabela está bloqueada e as exclusões são feitas uma por uma. Portanto, é melhor usar integridade &quot;neutra&quot; em tabelas secundárias que têm grandes volumes.
 
-Declarar um link como uma associação externa não é bom para o desempenho. O registro de id zero emula a funcionalidade de associação externa. Não é necessário declarar associações externas se o link usar o **autouuid**.
+Declarar um link como uma associação externa não é bom para o desempenho. O registro de id zero emula a funcionalidade de associação externa. No contexto de um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), não é necessário declarar associações externas se o link usar o **autouuid**.
 
 Embora seja possível unir qualquer tabela em um workflow, o Adobe recomenda definir links comuns entre recursos diretamente na definição da estrutura de dados.
 
