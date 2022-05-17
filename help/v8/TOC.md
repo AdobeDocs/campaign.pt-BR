@@ -7,7 +7,7 @@ title: Documentos do Campaign v8
 source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
