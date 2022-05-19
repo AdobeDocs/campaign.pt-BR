@@ -13,14 +13,14 @@ ht-degree: 3%
 
 No contexto de um [Implantação empresarial (FDA)](enterprise-deployment.md), a chave primária é um UUID (Universally Unique IDentifier), que é uma string em caracteres. Para criar esse UUID, o elemento principal do schema deve conter a variável **autouuid** e **autopk** atributos definidos como **true**.
 
-O Adobe Campaign v8 usa [!DNL Snowflake] como o banco de dados principal. A arquitetura distribuída da [!DNL Snowflake] O banco de dados não fornece mecanismo para garantir a unicidade de uma chave dentro de uma tabela: os usuários finais são responsáveis pela consistência das chaves no banco de dados do Adobe Campaign.
+Adobe Campaign v8 uses [!DNL Snowflake] as the core Database. The distributed architecture of the [!DNL Snowflake] database does not provide mechanism to ensure the unicity of a key within a table: end-users are responsible for key consistency within the Adobe Campaign database.
 
-Evitar duplicatas em chaves e, especialmente, em chaves primárias, é obrigatório para preservar a consistência do banco de dados relacional. Duplicidades em chaves primárias levam a problemas com atividades de fluxo de trabalho de gerenciamento de dados, como **Query**, **Reconciliação**, **Atualizar dados** e muito mais. Isso é essencial para definir os critérios de reconciliação adequados ao atualizar [!DNL Snowflake] tabelas.
+Evitar duplicatas em chaves e, especialmente, em chaves primárias, é obrigatório para preservar a consistência do banco de dados relacional. Duplicates on primary keys lead to issues with data management workflow activities such as **Query**, **Reconciliation**, **Update data**, and more. This critical to define proper reconciliation criteria when updating [!DNL Snowflake] tables.
 
 
 >[!CAUTION]
 >
->Chaves duplicadas não são restritas a UUIDs. Isso pode ocorrer no com IDs, incluindo chaves personalizadas criadas em tabelas personalizadas.
+>Duplicated keys is not restricted to UUIDs. It can happen in with IDs, including custom keys created in custom tables.
 
 
 ## Unicity Service{#unicity-service}
@@ -33,13 +33,13 @@ Como o Banco de Dados da Nuvem não impõe restrições de unicidade, o Unicity 
 
 O Unicity Service vem com um **[!UICONTROL Unicity alerting]** fluxo de trabalho integrado, para monitorar as restrições de unicidade e alertar quando duplicatas são detectadas.
 
-Esse workflow técnico está disponível no **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Unicity]** nó do explorador do Campaign. **Ele não deve ser modificado**.
+Esse workflow técnico está disponível no **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Unicity]** nó do explorador do Campaign. **It must not be modified**.
 
 Esse workflow verifica todos os esquemas personalizados e incorporados para detectar linhas duplicadas.
 
 ![](assets/unicity-alerting-wf.png)
 
-Se a variável **[!UICONTROL Unicity alerting]** O workflow (ffdaUnicity) detecta algumas chaves duplicadas, elas são adicionadas a um **Unicidade de auditoria** tabela, que inclui o nome do schema, o tipo de chave, o número de linhas afetadas e a data. Você pode acessar chaves duplicadas da variável **[!UICONTROL Administration > Audit > Key Unicity]** nó .
+Se a variável **[!UICONTROL Unicity alerting]** O workflow (ffdaUnicity) detecta algumas chaves duplicadas, elas são adicionadas a um **Unicidade de auditoria** tabela, que inclui o nome do schema, o tipo de chave, o número de linhas afetadas e a data. You can access duplicated keys from the **[!UICONTROL Administration > Audit > Key Unicity]** node.
 
 ![](assets/unicity-table.png)
 
@@ -62,7 +62,7 @@ O Campaign vem com um conjunto de novas grades de proteção para evitar a inser
 
 ### Preparação do delivery{#remove-duplicates-delivery-preparation}
 
-O Adobe Campaign remove automaticamente qualquer UUID duplicada de um público-alvo durante a preparação do delivery. Esse mecanismo impede que qualquer erro ocorra ao preparar um delivery. Como usuário final, você pode verificar essas informações nos logs do delivery: alguns recipients podem ser excluídos do target principal devido à chave duplicada. Nesse caso, o seguinte aviso é exibido: `Exclusion of duplicates (based on the primary key or targeted records)`.
+Adobe Campaign removes automatically any duplicated UUID from an audience during delivery preparation. This mechanism prevents any error from happening while preparing a delivery. Como usuário final, você pode verificar essas informações nos logs do delivery: alguns recipients podem ser excluídos do target principal devido à chave duplicada. In that case, the following warning is displayed: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
 ![](assets/exclusion-duplicates-log.png)
 
@@ -94,5 +94,5 @@ Quando um workflow inicia a execução da query em um schema, o Adobe Campaign v
 Essa verificação é realizada nas seguintes atividades de workflow:
 
 * Consulta
-* Query incremental
+* Incremental Query
 * Lista de leitura
