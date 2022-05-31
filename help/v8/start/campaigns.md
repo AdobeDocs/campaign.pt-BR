@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 source-git-commit: fc0be5fe82ba11e54851a8f612ece0b310447cdd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '905'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -92,23 +92,23 @@ As principais etapas para criar uma campanha de marketing entre canais são:
    ![](../assets/do-not-localize/book.png) Saiba como configurar e gerenciar aprovações na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=pt-BR#orchestrating-campaigns){target=&quot;_blank&quot;}
 
 
-## Complemento de Marketing distribuído{#distributed-marketing-add-on}
+## Complemento de marketing distribuído{#distributed-marketing-add-on}
 
-A Adobe Campaign oferece uma **Marketing distribuído** complemento para a implementação de campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (lojas, agências regionais, etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **[!UICONTROL List of campaign packages]**, em que os templates de campanha projetados por entidades centrais são oferecidos a entidades locais.
-
->[!NOTE]
->
->Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
-
-[](../assets/do-not-localize/book.png) Saiba como configurar e usar os recursos de Marketing distribuído do Campaign em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html){target=&quot;_blank&quot;}
-
-## Complemento do Gestor de Resposta{#response-manager-add-on}
-
-A Adobe Campaign oferece uma **Gerenciamento de resposta** complemento que permite medir o sucesso e a lucratividade de campanhas de marketing ou apresentações de oferta em canais de comunicação: email, celular, mala direta etc.
+O Adobe Campaign oferece um complemento de **Marketing distribuído** para a implementação de campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (lojas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado, conhecido como **[!UICONTROL List of campaign packages]**, no qual modelos de campanha criados centralmente são oferecidos a entidades locais.
 
 >[!NOTE]
 >
 >Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) Saiba como configurar e usar o Gestor de Resposta do Campaign no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target=&quot;_blank&quot;}
+[](../assets/do-not-localize/book.png) Saiba como configurar e usar os recursos de marketing distribuído do Campaign na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html?lang=pt-BR){target=&quot;_blank&quot;}
+
+## Complemento de gerenciamento de resposta{#response-manager-add-on}
+
+O Adobe Campaign oferece um complemento de **Gerenciamento de resposta** que permite medir o sucesso e a lucratividade de campanhas de marketing ou propostas de oferta em canais de comunicação: email, celular, correspondência direta etc.
+
+>[!NOTE]
+>
+>Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+
+[](../assets/do-not-localize/book.png) Saiba como configurar e usar o Gestor de resposta do Campaign na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=pt-BR){target=&quot;_blank&quot;}
 
