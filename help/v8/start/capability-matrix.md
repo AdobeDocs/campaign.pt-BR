@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 0c01b0a597e54ae93dd581ccba6f19b2ff13f956
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '550'
 ht-degree: 40%
 
 ---
@@ -63,8 +63,6 @@ A atividade **[!UICONTROL Change data source]** permite alterar a fonte de dados
 Observe que alguns recursos ainda não estão disponíveis nessa versão do Campaign, como:
 
 * Gerenciamento de recursos de marketing
-* Marketing distribuído
-* Gestor de Resposta
 * Modelos de implantação híbridos/no local
 
 >[!CAUTION]
@@ -83,7 +81,7 @@ Para alinhar-se à nova arquitetura e ao novo modelo de implantação do Campaig
 * Cupons
 * Rastreamento web
 * Pesquisas
-* Marketing social o Facebook
+* Marketing social
 * Conector ACS (oferta principal)
 * Integração com o LDAP
 * Logon de usuário/senha
