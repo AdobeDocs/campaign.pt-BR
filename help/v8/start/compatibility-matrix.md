@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ Os sistemas operacionais e navegadores a seguir são necessários para usar o Co
 ### Sistemas operacionais
 
 * **Microsoft Windows Server** 2019, 2016, 2012
-* **Microsoft Windows** 11 (iniciando o Campaign v8.3), 10, 8,
+* **Microsoft Windows** 11 (a partir do Campaign v8.3), 10, 8,
 
 >[!NOTE]
 >
->O Microsoft Windows 10 é recomendado para instâncias japonesas.
+>O Microsoft Windows 10 é recomendado para instâncias em japonês.
 
 ### Navegador
 
@@ -59,7 +59,7 @@ Os bancos de dados externos compatíveis com o módulo Federated Data Access (FD
 
 Você pode usar o Campaign para enviar [notificações por push](../send/push.md) nos sistemas operacionais listados abaixo, usando o SDK para dispositivos móveis associado.
 
-* **Android** 12 (a partir do Campaign v8.3), 9.0, 8.x, 7.x, com o Campaign Android SDK build 1.1.1.
+* **Android** 12 (a partir do Campaign v8.3), 9.0, 8.x e 7.x com o SDK Campaign Android build 1.1.1.
 * **Apple iOS** 9 - 15 com o SDK Campaign iOS build 1.0.26, compatível com versões de 32 e 64 bits. O iOS 15 é compatível a partir do Campaign v8.
 
 ## Acesso à Web
@@ -68,7 +68,7 @@ Os seguintes navegadores são compatíveis com o Campaign para [acesso via web](
 
 * **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** (versões mais recentes)
 
-## Como verificar a versão e a criação do Campaign{#version}
+## Como verificar a versão e build do Campaign{#version}
 
 Use o menu **Ajuda > Sobre...** para verificar sua versão.
 
