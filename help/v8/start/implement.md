@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1188'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ O Adobe Campaign vem com processos e configurações que permitem usar o Campaig
 
 * **Aquisição de dados**: o Adobe Campaign permite que você colete dados, incluindo informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus recipients. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#data-acquisition){target=&quot;_blank&quot;}
 
-* **Consentimento do usuário e retenção de dados**: Saiba como obter o consentimento do usuário, configurar mecanismos de assinatura de aceitação dupla, facilitar a recusa e configurar a retenção de dados no [Documentação de privacidade do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#consent){target=&quot;_blank&quot;}
+* **Consentimento do usuário e retenção de dados**: saiba como obter consentimento do usuário, configurar mecanismos de subscrição de participação dupla, facilitar a opção de não participação e configurar a retenção de dados na [documentação de privacidade do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#consent){target=&quot;_blank&quot;}
 
-* **Privacidade e regulamentos sobre proteção de dados**: consulte [esta seção](privacy.md) para obter informações sobre os requisitos de privacidade e como esses regulamentos afetam sua organização e a Adobe Campaign.
+* **Regulamentos de proteção de dados e privacidade**: consulte [esta seção](privacy.md) para obter mais informações sobre os requisitos de privacidade e como esses regulamentos afetam sua organização e o Adobe Campaign.
 
 ### Segurança
 
