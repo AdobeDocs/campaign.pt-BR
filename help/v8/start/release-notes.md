@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2161'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ _18 de maio de 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Com o iOS 15, a Apple adicionou uma noção de notificação confidencial que dá controle ao desenvolvedor do aplicativo para ignorar o modo Foco quando uma notificação é considerada confidencial e precisa alcançar o usuário em tempo real.</p>
+<td> <p>Com o iOS 15, a Apple adicionou uma noção de notificação confidencial, que dá controle ao desenvolvedor do aplicativo para ignorar o modo de Foco quando uma notificação é considerada importante e precisa ser entregue ao usuário em tempo real.</p>
 <p>Para obter mais informações, consulte a <a href="../send/push.md#send-notifications-on-ios">documentação detalhada</a>.</p>
 </td> 
 </tr> 
@@ -42,12 +42,12 @@ _18 de maio de 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Integração do Core Privacy Service</strong><br /> </th> 
+<th> <strong>Integração do Privacy Core Service</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>O Campaign v8 agora se integra ao Serviço principal de privacidade do Adobe. As solicitações de privacidade transmitidas pelo Privacy Core Service para todas as soluções da Experience Cloud são tratadas automaticamente pelo Campaign, por meio de um fluxo de trabalho específico.</p>
+<td> <p>O Campaign v8 agora se integra ao Adobe Privacy Core Service. As solicitações de privacidade transmitidas pelo Privacy Core Service para todas as soluções da Experience Cloud são tratadas automaticamente pelo Campaign, por meio de um fluxo de trabalho específico.</p>
 <p>Para obter mais informações, consulte a <a href="privacy.md">documentação detalhada</a>.</p>
 </td> 
 </tr> 
@@ -64,7 +64,7 @@ _18 de maio de 2022_
 <tbody>
 <tr>
 <td>
-<p>O Campaign Response Management permite medir o sucesso e o ROI de suas campanhas de marketing ou apresentações de ofertas em todos os canais: email, celular, mala direta etc.</p>
+<p>O gestor de resposta do Campaign permite medir o sucesso e o ROI de suas campanhas de marketing ou apresentações de ofertas em todos os canais: email, celular, correspondência direta, etc.</p>
 <p>Para obter mais informações, consulte a <a href="../start/campaigns.md#response-manager-add-on">documentação detalhada</a>.</p>
 </td>
 </tr>
@@ -79,7 +79,7 @@ _18 de maio de 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>O Campaign Distributed Marketing permite implementar campanhas colaborativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais, etc.). Por meio de um espaço de trabalho compartilhado (pacotes de campanha), você pode criar templates de campanha e propô-los às entidades locais.</p>
+<td> <p>O marketing distribuído do Campaign permite implementar campanhas colaborativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Por meio de um espaço de trabalho compartilhado (pacotes de campanha), você pode criar modelos de campanha e propô-los às entidades locais.</p>
 <p>Para obter mais informações, consulte a <a href="../start/campaigns.md#distributed-marketing-add-on">documentação detalhada</a>.</p>
 </td> 
 </tr> 
@@ -88,29 +88,29 @@ _18 de maio de 2022_
 
 **Atualizações de compatibilidade**
 
-* O Campaign v8 SDK agora é compatível com Android 12 e iOS 15 para notificações por push.
+* O SDK do Campaign v8 agora é compatível com notificações por push no Android 12 e iOS 15.
 * O Campaign v8 agora é compatível com o Windows 11.
 
 Consulte a [Matriz de compatibilidade do Campaign](compatibility-matrix.md).
 
 **Aprimoramentos**
 
-* A autenticação OAuth 2.0 do Microsoft Exchange Online para POP3 agora é compatível com o Campaign. [Saiba mais](../config/external-accounts.md#bounce-mails-external-account)
+* A autenticação OAuth 2.0 do Microsoft Exchange Online para POP3 agora é compatível com o Campaign. [Leia mais](../config/external-accounts.md#bounce-mails-external-account)
 * Correções críticas foram aplicadas em relação à API da web do Microsoft Dynamics Connector.
-* O novo direito nomeado Operator and group schema write (operatorWrite) foi adicionado para permitir que os usuários insiram, atualizem e excluam os esquemas Operators (xtk:operator) e Operator groups (xtk:group).
+* O novo direito nomeado de operador e gravação de esquema de grupo (operatorWrite) foi adicionado para permitir que os usuários insiram, atualizem e excluam os esquemas de operadores (xtk:operator) e de grupos de operadores (xtk:group).
 
 <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
 <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
-* Várias contas ativas do LINE agora podem ser configuradas em um único mid-sourcing.
-* O número de conexões padrão para o processo da Web foi aumentado de 50 para 150.
-* O Campaign vem com um conjunto de novas grades de proteção para impedir a inserção de chaves duplicadas no banco de dados do Snowflake. [Leia mais](../architecture/keys.md)
+* Agora, várias contas LINE ativas podem ser configuradas em um único mid-sourcing.
+* O número de conexões padrão para o processo da web foi aumentado de 50 para 150.
+* O Campaign vem com um conjunto de novas medidas de proteção para impedir a inserção de chaves duplicadas no banco de dados do Snowflake. [Leia mais](../architecture/keys.md)
 
 **Correções**
 
-* Correção de um problema que ocorria ao usar seeds e grupos de controle no mesmo delivery recorrente. (NEO-41197)
-* Correção de um problema no FFDA que resultava no bloqueio do envio de email para todos os recipients pertencentes ao mesmo deliveryPart durante o processo de envio (até 256), quando os blocos de personalização continham um dos seguintes caracteres: `' & < > "`. Esses caracteres agora são compatíveis em blocos de personalização (por exemplo: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
-* Correção de um problema que poderia causar falha no workflow de rastreamento ao usar um schema personalizado como target mapping. Agora, garantimos que o tipo de link externo para um schema de target personalizado esteja correto ao gerar o schema broadLog por meio do assistente de target mapping. (NEO-43506)
-* Correção de um problema que poderia causar falha nos fluxos de trabalho de implantação do FDA para idiomas diferentes do inglês. (NEO-44561)
+* Correção de um problema que ocorria ao usar seeds e grupos de controle na mesma entrega recorrente. (NEO-41197)
+* Correção de um problema no FFDA que resultava no bloqueio do envio de email para todos os destinatários pertencentes ao mesmo deliveryPart durante o processo de envio (até 256) quando os blocos de personalização continham um dos seguintes caracteres: `' & < > "`. Esses caracteres agora são permitidos em blocos de personalização (por exemplo: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
+* Correção de um problema que poderia causar falha no fluxo de trabalho de rastreamento ao usar um esquema personalizado como target mapping. Agora, garantimos que o tipo de link externo para um esquema de direcionamento personalizado esteja correto ao gerar o esquema broadLog por meio do assistente de target mapping. (NEO-43506)
+* Correção de um problema que poderia causar falha nos fluxos de trabalho de implantação do FFDA ao usar idiomas diferentes do inglês. (NEO-44561)
 
 ## Versão 8.2.10 {#release-8-2-10}
 
