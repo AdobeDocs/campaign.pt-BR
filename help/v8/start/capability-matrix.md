@@ -8,47 +8,47 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 0c01b0a597e54ae93dd581ccba6f19b2ff13f956
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 # [!DNL Campaign Classic] v7 - recursos do [!DNL Campaign] v8{#gs-matrix}
 
-Como um ex [!DNL Campaign Classic] Usuário do v7, você não deve esperar nenhuma grande interrupção na maneira com a qual você normalmente interage [!DNL Adobe Campaign]. A maioria das alterações na v8 não é visível, exceto pequenas alterações que surgiram na interface e nas etapas de configuração.
+Como usuário do [!DNL Campaign Classic] v7, você não deve esperar nenhuma grande mudança na maneira como costuma interagir com o [!DNL Adobe Campaign]. A maioria das alterações na v8 não é visível, exceto pequenas alterações que surgiram na interface e nas etapas de configuração.
 
-Adobe Campaign v8 está disponível como um **Cloud Service gerenciado**. A nova oferta combina os melhores serviços do setor com supervisão pró-ativa e alerta em tempo hábil, concentrando-se em três áreas:
+O Adobe Campaign v8 está disponível como um **Managed Cloud Service**. A nova oferta combina os melhores serviços do setor com uma supervisão proativa e alertas oportunos, concentrando-se em três áreas:
 
-* **Agilidade da nuvem** — automação por Adobe, com implantações em nuvem otimizadas e padronizadas para proporcionar desempenho mais previsível, maior agilidade e produtividade de autoatendimento aprimorada.
-* **Experiência de serviço** — disponibilidade proativa, capacidade e monitoramento e resposta de desempenho para evitar interrupções, resolver incidentes mais rápido e analisar o serviço regularmente para melhorar continuamente.
-* **Profundo conhecimento sobre o Campaign** — serviço de alta afinidade de equipes especializadas de engenharia de clientes para atender às necessidades funcionais, técnicas ou de deliverability, reduzir o risco de implantação e melhorar o gerenciamento de alterações.
+* **Agilidade na nuvem** — automação da Adobe, com implantações em nuvem otimizadas e padronizadas para proporcionar um desempenho mais previsível, maior agilidade e melhorias na produtividade de autoatendimento.
+* **Experiência do serviço** — monitoramento e resposta proativa a respeito de disponibilidade, capacidade e desempenho, evitando interrupções, solucionando incidentes mais rapidamente e melhorando o serviço de maneira contínua, através de análises regulares.
+* **Profundo conhecimento sobre o Campaign** — serviço de alta afinidade realizado por equipes especializadas em engenharia de clientes para atender às necessidades funcionais, técnicas ou relacionadas à capacidade de entrega, reduzir o risco de implantação e melhorar o gerenciamento de alterações.
 
-Como um ex [!DNL Campaign Classic] usuário, observe que a maioria das [!DNL Campaign Classic] Os recursos do v7 estão disponíveis com [!DNL Campaign] v8, exceto um pequeno conjunto, listado em [esta seção](#gs-removed). Outros serão lançados em versões futuras. [Saiba mais nesta seção](#gs-unavailable-features)
+Como usuário do [!DNL Campaign Classic], observe que a maioria dos recursos do [!DNL Campaign Classic] v7 está disponível no [!DNL Campaign] v8, com exceção de um pequeno conjunto listado [nesta seção](#gs-removed). Outros serão lançados em versões futuras. [Saiba mais nesta seção](#gs-unavailable-features)
 
 >[!NOTE]
 >
-> O Campaign v8 depende de uma arquitetura híbrida. Se estiver fazendo a transição do Campaign Classic v7, observe que todos os deliveries passam pelo servidor mid-sourcing. [Saiba mais](../architecture/architecture.md)
+> O Campaign v8 depende de uma arquitetura híbrida. Se estiver fazendo a transição do Campaign Classic v7, observe que todas as entregas passam pelo servidor mid-sourcing. [Saiba mais](../architecture/architecture.md)
 >
-> Como consequência, o roteamento interno é **não é possível** no Campaign v8 e a conta externa foi desativada adequadamente.
+> Como consequência, **não é possível** fazer o roteamento interno no Campaign v8 e a conta externa foi desativada de acordo.
 
 
 ## [!DNL Campaign] e [!DNL Snowflake] {#ac-gs-snowflake}
 
-O Campaign v8 funciona com [!DNL Snowflake]. Dois modelos de implantação estão disponíveis.
+O Campaign v8 funciona com o [!DNL Snowflake]. Dois modelos de implantação estão disponíveis.
 
 ![](../assets/do-not-localize/glass.png) Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../architecture/architecture.md).
 
 
 ## Usar sua Adobe ID para se conectar ao Campaign{#adobe-id}
 
-Os usuários do Campaign se conectam por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos de Adobe e produtos associados a uma única conta, para todas as soluções da Adobe Experience Cloud.
+Os usuários do Campaign se conectam por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos da Adobe associados a uma única conta, para todas as soluções da Adobe Experience Cloud.
 
 ![](../assets/do-not-localize/glass.png)Saiba como se conectar ao [!DNL Campaign] [nesta página](connect.md).
 
 ## Analisar dados com cubos{#adobe-reporting}
 
-Use o módulo Marketing Analytics para analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo do relatório. Além disso, crie relatórios e crie populações do target: uma vez identificados, eles são armazenados em listas que podem ser usadas no Adobe Campaign (direcionamento, segmentação etc.).
+Use o módulo Marketing Analytics para analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo de relatórios. Além disso, crie relatórios e populações de destino: uma vez identificados, eles são armazenados em listas que podem ser usadas no Adobe Campaign (direcionamento, segmentação etc.).
 
-Os relatórios de cubo do Adobe Campaign são otimizados e proporcionam recursos de melhor escala que o Campaign Classic v7. Antigas limitações em cubos não se aplicam ao Campaign v8.
+Os relatórios de cubo do Adobe Campaign estão otimizados e oferecem melhores recursos de escala do que o Campaign Classic v7. Antigas limitações em cubos não se aplicam ao Campaign v8.
 
 ## Alterar fonte de dados {#change-data-source}
 
@@ -71,7 +71,7 @@ Observe que alguns recursos ainda não estão disponíveis nessa versão do Camp
 >
 >* A migração de um ambiente do Campaign Classic v7 existente ainda não está disponível.
 >
->* Se não tiver certeza do modelo de implantação ou se tiver dúvidas, entre em contato com o executivo da sua conta Adobe.
+>* Se não tiver certeza do modelo de implantação ou se tiver dúvidas, entre em contato com o seu executivo de conta da Adobe.
 
 
 ## Recursos incompatíveis{#gs-removed}
@@ -88,4 +88,4 @@ Para alinhar-se à nova arquitetura e ao novo modelo de implantação do Campaig
 
 >[!NOTE]
 >
->Alguns recursos não disponíveis ou não compatíveis ainda podem estar visíveis na interface do usuário do .
+>Alguns recursos não disponíveis ou incompatíveis ainda podem estar visíveis na interface.
