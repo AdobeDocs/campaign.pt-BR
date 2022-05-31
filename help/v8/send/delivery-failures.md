@@ -1,32 +1,32 @@
 ---
 title: Falhas de delivery no Campaign
-description: Understand possible failures when sending messages with Adobe Campaign
+description: Entender possíveis falhas ao enviar mensagens com o Adobe Campaign
 feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
-source-wordcount: '2849'
-ht-degree: 68%
+source-wordcount: '3009'
+ht-degree: 65%
 
 ---
 
 # Entender as falhas de delivery {#delivery-failures}
 
-Rejeições são o resultado de uma tentativa de entrega e falha em que o ISP fornece avisos de falha. Bounce handling processing is a critical part of list hygiene. Depois que um determinado email tiver retornado várias vezes consecutivas, esse processo o sinaliza para supressão.
+Rejeições são o resultado de uma tentativa de entrega e falha em que o ISP fornece avisos de falha. O processamento do tratamento de rejeição é uma parte essencial da higiene das listas. Depois que um determinado email tiver retornado várias vezes consecutivas, esse processo o sinaliza para supressão.
 
-Esse processo impede que os sistemas continuem enviando endereços de email inválidos. Bounces are one of the key pieces of data that ISPs use to determine IP reputation. É importante manter um olho nessa métrica. &quot;Entregue&quot; versus &quot;devolvido&quot; é provavelmente a maneira mais comum de medir a entrega de mensagens de marketing: quanto maior a porcentagem entregue, melhor.
+Esse processo impede que os sistemas continuem enviando endereços de email inválidos. As rejeições são um dos dados principais que os ISPs usam para determinar a reputação do IP. É importante manter um olho nessa métrica. &quot;Entregue&quot; versus &quot;devolvido&quot; é provavelmente a maneira mais comum de medir a entrega de mensagens de marketing: quanto maior a porcentagem entregue, melhor.
 
-If a message cannot be sent to a profile, the remote server automatically sends an error message to Adobe Campaign. Esse erro está qualificado para determinar se o endereço de email, o número de telefone ou o dispositivo devem ser colocados em quarentena. Consulte [Gerenciamento de emails de devolução](#bounce-mail-qualification).
+Se uma mensagem não puder ser enviada a um perfil, o servidor remoto enviará automaticamente uma mensagem de erro para a Adobe Campaign. Esse erro está qualificado para determinar se o endereço de email, o número de telefone ou o dispositivo devem ser colocados em quarentena. Consulte [Gerenciamento de emails de devolução](#bounce-mail-qualification).
 
-Once a message is sent, you can view the delivery status for each profile and the associated failure type and reason in the delivery logs.
+Depois que uma mensagem é enviada, você pode visualizar o status do delivery para cada perfil e o tipo e motivo da falha associados nos logs do delivery.
 
-When an email address is quarantined, or if a profile is on denylist, the recipient is excluded at the delivery preparation step. As mensagens excluídas são listadas no painel de delivery.
+Quando um endereço de email é colocado em quarentena, ou se um perfil está em lista de bloqueios, o recipient é excluído na etapa de preparação do delivery. As mensagens excluídas são listadas no painel de delivery.
 
 ## Por que o delivery de mensagem falhou {#delivery-failure-reasons}
 
-Há dois tipos de erros quando uma mensagem falha. Each delivery failure type determines if an address is sent to [quarantine](quarantines.md#quarantine-reason) or not.
+Há dois tipos de erros quando uma mensagem falha. Cada tipo de falha de delivery determina se um endereço é enviado para [quarentena](quarantines.md#quarantine-reason) ou não.
 
 * **Devoluções permanentes**
 As rejeições permanentes são falhas permanentes geradas depois que um ISP determina uma tentativa de envio por e-mail para um endereço de assinante como não entregável. No Adobe Campaign, as devoluções permanentes categorizadas como não entregues são adicionadas à lista de quarentena, o que significa que elas não seriam tentadas novamente. Há alguns casos em que uma devolução permanente seria ignorada se a causa da falha fosse desconhecida.
@@ -34,27 +34,27 @@ As rejeições permanentes são falhas permanentes geradas depois que um ISP det
    Estes são alguns exemplos comuns de devoluções permanentes: Endereço não existe, Conta desabilitada, Sintaxe incorreta, Domínio incorreto
 
 * **Rejeições suaves**
-As devoluções temporárias são falhas temporárias que os ISPs geram quando têm dificuldade em entregar emails. Soft failures will [retry](#retries) multiple times (with variance depending on use of custom or out-of-box delivery settings) in order to attempt a successful delivery. Addresses that continually soft bounce will not be added to quarantine until the maximum number of retries has been attempted (which again vary depending on settings).
+As devoluções temporárias são falhas temporárias que os ISPs geram quando têm dificuldade em entregar emails. Falhas leves resultarão [tentar novamente](#retries) várias vezes (com variação dependendo do uso de configurações de delivery personalizadas ou predefinidas) para tentar um delivery bem-sucedido. Os endereços que repetidamente emitem rejeição não serão adicionados à quarentena até que o número máximo de tentativas tenha sido atingido (o que novamente varia dependendo das configurações).
 
    Algumas causas comuns de devoluções temporárias incluem o seguinte: Caixa de entrada cheia, servidor de email de recebimento desativado, problemas de reputação do remetente
 
-The  **Ignored** type of error is known to be temporary, such as &quot;Out of office&quot;, or a technical error, for example if the sender type is &quot;postmaster&quot;.
+O  **Ignorado** o tipo de erro é conhecido como temporário, como &quot;Ausência temporária&quot;, ou um erro técnico, por exemplo, se o tipo de remetente for &quot;postmaster&quot;.
 
-O loop de comentários funciona como emails de devolução: quando um usuário qualifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. The addresses of these users are denylisted even though they did not click the unsubscription link. Os endereços são adicionados ao (**NmsAddress**) e não para a (**NmsRecipient**) tabela de recipients com o **[!UICONTROL Denylisted]** status. Saiba mais sobre o mecanismo de loop de comentários na [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops).
+O loop de comentários funciona como emails de devolução: quando um usuário qualifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Os endereços desses usuários são incluir na lista de bloqueios mesmo que não cliquem no link de cancelamento de subscrição. Os endereços são adicionados ao (**NmsAddress**) e não para a (**NmsRecipient**) tabela de recipients com o **[!UICONTROL Denylisted]** status. Saiba mais sobre o mecanismo de loop de comentários na [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops).
 
 ## Erros síncronos e assíncronos {#synchronous-and-asynchronous-errors}
 
-A message delivery can fail immediately, in that case we qualify this as a synchronous error. Se o envio da mensagem falhar ou for posterior, após o envio, o erro será assíncrono.
+Um delivery de mensagem pode falhar imediatamente, nesse caso, qualificamos isso como um erro síncrono. Se o envio da mensagem falhar ou for posterior, após o envio, o erro será assíncrono.
 
 Esses tipos de erros são gerenciados da seguinte maneira:
 
-* **Erro síncrono**: o servidor remoto contatado pelo servidor de entrega da Adobe Campaign retorna imediatamente uma mensagem de erro. O delivery não tem permissão para ser enviado ao servidor do perfil. The Enhanced MTA determines the bounce type and qualifies the error, and sends back that information to Campaign in order to determine whether the email addresses concerned should be quarantined. Consulte [Qualificação de email de devolução](#bounce-mail-qualification).
+* **Erro síncrono**: o servidor remoto contatado pelo servidor de entrega da Adobe Campaign retorna imediatamente uma mensagem de erro. O delivery não tem permissão para ser enviado ao servidor do perfil. O Mail Transfer Agent (MTA) determina o tipo de rejeição e qualifica o erro e envia essas informações para o Campaign para determinar se os endereços de email em questão devem ser colocados em quarentena. Consulte [Qualificação de email de devolução](#bounce-mail-qualification).
 
-* **Asynchronous error**: a bounce mail or a SR is resent later by the receiving server. Esse erro é qualificado com um rótulo relacionado ao erro. Podem ocorrer erros assíncronos até uma semana depois do envio.
+* **Erro assíncrono**: um email de devolução ou um Relatório de Status é reenviado posteriormente pelo servidor receptor. Esse erro é qualificado com um rótulo relacionado ao erro. Podem ocorrer erros assíncronos até uma semana depois do envio.
 
 >[!NOTE]
 >
->As a Managed Services user, configuration of the bounce mailbox is performed by Adobe.
+>Como usuário do Managed Services, a configuração da caixa de entrada de devolução é executada pelo Adobe.
 
 ## Qualificação de email de rejeição {#bounce-mail-qualification}
 
@@ -64,7 +64,7 @@ Esses tipos de erros são gerenciados da seguinte maneira:
 
 Atualmente, a maneira como a qualificação de email de devolução é tratada no Adobe Campaign depende do tipo de erro:
 
-* **Synchronous errors**: The Enhanced MTA determines the bounce type and qualification, and sends back that information to Campaign. The bounce qualifications in the **[!UICONTROL Delivery log qualification]** table are not used for **synchronous** delivery failure error messages.
+* **Erros síncronos**: O MTA determina o tipo de devolução e a qualificação e envia essas informações para o Campaign. As qualificações de rejeição na variável **[!UICONTROL Delivery log qualification]** tabela não é usada para **síncrono** mensagens de erro de falha de delivery.
 
 * **Erros assíncronos**: As regras usadas pelo Campaign para qualificar falhas de delivery assíncronas são listadas na variável **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** nó . As rejeições assíncronas são qualificadas pelo processo do InMail por meio do **[!UICONTROL Inbound email]** regras. Para obter mais informações, consulte [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}.
 
@@ -93,17 +93,30 @@ Bounce mails can have the following qualification status:
 >In case of an outage of an ISP, emails sent through Campaign will be wrongly marked as bounces. To correct this, you need to update bounce qualification.-->
 
 
-## Retry management {#retries}
+## Gerenciamento de tentativas {#retries}
 
-If message delivery fails following a temporary error (**Soft** or **Ignored**), Campaign retries sending. Essas tentativas podem ser executadas até o fim da duração do delivery.
+Se o delivery de mensagem falhar após um erro temporário (**Suave** ou **Ignorado**), o Campaign tenta enviar novamente. Essas tentativas podem ser executadas até o fim da duração do delivery.
 
-O número e a frequência de tentativas são configurados pelo MTA aprimorado, com base no tipo e na gravidade das respostas de rejeição provenientes do ISP da mensagem.
+As tentativas de rejeição em modo suave e o tempo entre elas são determinados pelo MTA com base no tipo e na gravidade das respostas de rejeição provenientes do domínio de email da mensagem.
 
-<!--NO LONGER WITH MOMENTUM - The default configuration defines five retries at one-hour intervals, followed by one retry per day for four days. The number of retries can be changed globally or for each delivery or delivery template. If you need to adapt delivery duration and retries, contact Adobe Support.-->
+>[!NOTE]
+>
+>As configurações de nova tentativa nas propriedades de delivery não são usadas pelo Campaign.
 
-## Email error types {#email-error-types}
+## Período de validade
 
-For the email channel, possible reasons for a delivery failure are listed below.
+A configuração do período de validade nos deliveries do Campaign está limitada a **3,5 dias ou menos**. Para um delivery, se você definir um valor superior a 3,5 dias no Campaign, ele não será considerado.
+
+Por exemplo, se o período de validade estiver definido com o valor padrão de 5 dias no Campaign, as mensagens de rejeição temporária entrarão na fila de tentativas do MTA e serão repetidas por até 3,5 dias a partir do momento em que a mensagem chegou ao MTA. Nesse caso, o valor definido no Campaign não será usado.
+
+Quando uma mensagem estiver na fila do MTA por 3,5 dias e não for entregue, o tempo limite expirará, e seu status será atualizado de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** nos logs do delivery.
+
+Para obter mais informações sobre o período de validade, consulte [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}.
+
+
+## Tipos de erro de email {#email-error-types}
+
+Para o canal de email, os possíveis motivos para uma falha de delivery são listados abaixo.
 
 <table> 
  <tbody> 
@@ -199,7 +212,7 @@ For the email channel, possible reasons for a delivery failure are listed below.
   </tr> 
   <tr> 
    <td> Não se qualifica para as ofertas </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 16 </td> 
    <td> O recipient não foi qualificado para as ofertas no delivery.<br /> </td> 
   </tr> 
