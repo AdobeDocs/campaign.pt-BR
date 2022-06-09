@@ -2,12 +2,12 @@
 audience: end-user
 user-guide-title: Campaign v8
 description: Documentação do Campaign v8
-breadcrumb-title: Campanha v8
+breadcrumb-title: Campaign v8
 title: Documentos do Campaign v8
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '351'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,10 +38,10 @@ ht-degree: 92%
 + Arquitetura {#architecture}
    + [Princípios globais](architecture/general-architecture.md)
    + [Arquitetura](architecture/architecture.md)
-   + Implantação do Snowflake FDA {#fda}
+   + Implantação do FDA no Snowflake{#fda}
       + [O que é o FDA-Snowflake?](architecture/fda-deployment.md)
-   + Implantação empresarial (FDA) {#ffda}
-      + [O que é o FDA do Campaign?](architecture/enterprise-deployment.md)
+   + Implantação corporativa (FFDA) {#ffda}
+      + [O que é o FFDA do Campaign?](architecture/enterprise-deployment.md)
       + Características {#ffda-characteristics}
          + [Gerenciamento de chaves e unicidade](architecture/keys.md)
          + [Novas APIs](architecture/new-apis.md)
