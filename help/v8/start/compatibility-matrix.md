@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: ht
-source-wordcount: '356'
-ht-degree: 100%
+source-git-commit: d7621adc0f4bd4eaad1b2ff8f270943e91f4edde
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -60,7 +60,7 @@ Os bancos de dados externos compatíveis com o módulo Federated Data Access (FD
 Você pode usar o Campaign para enviar [notificações por push](../send/push.md) nos sistemas operacionais listados abaixo, usando o SDK para dispositivos móveis associado.
 
 * **Android** 12 (a partir do Campaign v8.3), 9.0, 8.x e 7.x com o SDK Campaign Android build 1.1.1.
-* **Apple iOS** 9 - 15 com o SDK Campaign iOS build 1.0.26, compatível com versões de 32 e 64 bits. O iOS 15 é compatível a partir do Campaign v8.
+* **Apple iOS** 9 - 15 com o SDK Campaign iOS build 1.0.26, compatível com versões de 32 e 64 bits. O iOS 15 é compatível a partir do Campaign v8.3.
 
 ## Acesso à Web
 
