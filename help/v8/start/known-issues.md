@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 2705e9b23f9f8a61f799381434f7e94a226de1b9
+source-git-commit: 1b88ca57858efbfec6467452677620d59e9c9e32
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 3%
+source-wordcount: '437'
+ht-degree: 2%
 
 ---
 
@@ -57,11 +57,11 @@ Referência: NEO45549
 
 
 
-## Falha na atividade de carregamento de dados (arquivo) devido a uma barra invertida {#issue-2}
+## Falha ao alterar a atividade da Fonte de Dados devido a uma barra invertida {#issue-2}
 
 ### Descrição{#issue-2-desc}
 
-Ao injetar dados no banco de dados da nuvem do Snowflake com uma atividade de carregamento do Campaign, o processo falha quando um caractere de barra invertida está presente no arquivo de origem. A sequência de caracteres não é removida e os dados não são processados corretamente no Snowflake.
+Ao injetar dados no banco de dados da nuvem do Snowflake com uma campanha **Query** e **Alterar fonte de dados** atividade , o processo falha quando um caractere de barra invertida está presente nos dados. A cadeia de caracteres de origem não é removida e os dados não são processados corretamente no Snowflake.
 
 Esse problema só acontece se os caracteres de barra invertida estiverem no final da string, por exemplo: `Barker\`.
 
@@ -69,8 +69,9 @@ Esse problema só acontece se os caracteres de barra invertida estiverem no fina
 ### Etapas de reprodução{#issue-2-repro}
 
 1. Conecte-se ao console do cliente e crie um workflow.
-1. Adicione um **Carregamento de dados (arquivo)** e configure-a.
-1. Selecione um arquivo local com as características descritas acima.
+1. Adicione um **Query** e configure-a.
+1. Selecione os dados com as características descritas acima.
+1. Adicione um **Alterar fonte de dados** e configure-a para selecionar o banco de dados da nuvem do Snowflake.
 1. Execute o workflow e verifique os logs do workflow para ver o erro.
 
 
