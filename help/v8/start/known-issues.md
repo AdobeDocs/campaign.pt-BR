@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 1b88ca57858efbfec6467452677620d59e9c9e32
+source-git-commit: fe425f9309af31a13b52695b103d530a6b89e3b1
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 2%
+source-wordcount: '433'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ Esta página lista os problemas conhecidos identificados na variável **Versão 
 >
 >O Adobe publica essa lista de problemas conhecidos a seu critério. Tem como base o número de relatórios do cliente, a gravidade e a disponibilidade alternativa. Se um problema que você está encontrando não estiver listado, ele pode não ter se encaixado nos critérios para publicação nesta página.
 
-## Alterar problema de atividade da Fonte de Dados {#issue-1}
+## Alterar problema da atividade da Fonte de Dados nº 1 {#issue-1}
 
 ### Descrição{#issue-1-desc}
 
@@ -57,7 +57,7 @@ Referência: NEO45549
 
 
 
-## Falha ao alterar a atividade da Fonte de Dados devido a uma barra invertida {#issue-2}
+## Alterar problema da atividade da Fonte de Dados nº 2 {#issue-2}
 
 ### Descrição{#issue-2-desc}
 
