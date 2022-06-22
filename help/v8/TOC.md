@@ -2,12 +2,12 @@
 audience: end-user
 user-guide-title: Campaign v8
 description: Documentação do Campaign v8
-breadcrumb-title: Campaign v8
+breadcrumb-title: Campanha v8
 title: Documentos do Campaign v8
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
-workflow-type: ht
-source-wordcount: '351'
-ht-degree: 100%
+source-git-commit: 099d14ace04df1b98e03be283a6436f49f535958
+workflow-type: tm+mt
+source-wordcount: '353'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 100%
    + [Principais recursos](start/whats-new.md)
    + [Notas de versão](start/release-notes.md)
    + [Limitações conhecidas](start/known-limitations.md)
+   + [Problemas conhecidos](start/known-issues.md)
    + [Classic v7 para v8](start/capability-matrix.md)
 + Iniciar {#start}
    + [Introdução](start/get-started.md)
