@@ -7,7 +7,7 @@ level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ _18 de maio de 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Com o iOS 15, a Apple adicionou uma noção de notificação confidencial, que dá controle ao desenvolvedor do aplicativo para ignorar o modo de Foco quando uma notificação é considerada importante e precisa ser entregue ao usuário em tempo real.</p>
+<td> <p>Com o iOS 15, a Apple adicionou uma noção de notificação relevante, que dá controle ao desenvolvedor do aplicativo para ignorar o modo de Foco quando uma notificação é considerada relevante e precisa ser entregue ao usuário em tempo real.</p>
 <p>Para obter mais informações, consulte a <a href="../send/push.md#send-notifications-on-ios">documentação detalhada</a>.</p>
 </td> 
 </tr> 
