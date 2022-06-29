@@ -1,14 +1,14 @@
 ---
 title: Configurações de mensagens transacionais de campanha
 description: Configurações de mensagens transacionais de campanha
-feature: Overview
+feature: Transactional Messaging
 role: Data Engineer
 level: Beginner
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ Para enviar notificações transacionais por push, é necessário executar as se
    >
    >Verifique o contrato de licença antes de instalar um novo pacote integrado do Campaign.
 
-1. Replicar o **aplicativo Mobile** e os aplicativos móveis associados nas instâncias de execução.
+1. Replicar o **Aplicativo móvel** e os aplicativos móveis associados nas instâncias de execução.
 
 Para que o Campaign envie notificações transacionais por push, o evento deve conter os seguintes elementos:
 

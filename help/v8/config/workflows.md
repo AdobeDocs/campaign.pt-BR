@@ -1,14 +1,14 @@
 ---
 title: Gerenciar e automatizar processos com fluxos de trabalho do Adobe Campaign
 description: Introdução a workflows
-feature: Overview
+feature: Workflows
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '1678'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: Interação de campanha - Gerenciamento de ofertas
 description: Introdução ao Gerenciamento de ofertas
-feature: Overview
+feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 50%
@@ -32,7 +32,7 @@ Em seguida, as regras de qualificação são aplicadas: as melhores ofertas são
 
 O histórico da apresentação do perfil é atualizado uma vez feita a seleção, para evitar a duplicação das ofertas apresentadas. (4)
 
-Por último, a melhor oferta é proposta para o objetivo. (5)
+Finalmente, a melhor oferta é proposta para o target. (5)
 
 ## Introdução a ofertas
 

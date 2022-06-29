@@ -1,14 +1,14 @@
 ---
 title: Enviar emails com o Adobe Campaign
 description: Introdução aos emails no Campaign
-feature: Overview
+feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 23%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Os deliveries de email permitem enviar emails personalizados para a população 
 
 ## Criar seu primeiro delivery de email
 
-Crie emails personalizados e relevantes contextualmente que sejam consistentes com o resto da experiência do cliente.
+Crie emails personalizados e contextualmente relevantes que sejam consistentes com o restante da experiência do cliente.
 
 ![](assets/new-email-content.png)
 
@@ -82,7 +82,7 @@ Saiba mais nestas seções da documentação do Campaign Classic v7:
 * Importar conteúdo de email
    ![](../assets/do-not-localize/book.png) [Caso de uso: Criar um workflow para carregar um conteúdo de delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html){target=&quot;_blank&quot;}
 * Criar e usar um modelo de email
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre modelos de e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Saiba mais sobre modelos de e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR){target=&quot;_blank&quot;}
 * Selecione o público do seu email
    ![](../assets/do-not-localize/book.png) [Saiba como definir a população do target](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target=&quot;_blank&quot;}
 * Validar um delivery e enviar provas

@@ -1,14 +1,14 @@
 ---
 title: Introdução a mensagens
 description: Introdução a mensagens
-feature: Overview
+feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: ht
-source-wordcount: '643'
-ht-degree: 100%
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -100,6 +100,6 @@ O monitoramento de entregas após serem enviados é uma etapa essencial para gar
 
 * [Práticas recomendadas do delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=pt-BR){target=&quot;_blank&quot;}
 
-* [Testar e enviar um email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=pt-BR){target=&quot;_blank&quot;}
+* [Testar e enviar um email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
 
 * [Enviar provas](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target=&quot;_blank&quot;}
