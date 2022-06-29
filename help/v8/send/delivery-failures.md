@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3008'
 ht-degree: 65%
 
 ---
@@ -62,7 +62,7 @@ Esses tipos de erros são gerenciados da seguinte maneira:
 
 ![](assets/delivery-log-qualification.png)-->
 
-Atualmente, a maneira como a qualificação de email de devolução é tratada no Adobe Campaign depende do tipo de erro:
+A maneira como a qualificação de email de devolução é tratada no Adobe Campaign depende do tipo de erro:
 
 * **Erros síncronos**: O MTA determina o tipo de devolução e a qualificação e envia essas informações para o Campaign. As qualificações de rejeição na variável **[!UICONTROL Delivery log qualification]** tabela não é usada para **síncrono** mensagens de erro de falha de delivery.
 

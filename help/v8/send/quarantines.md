@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 38%
+source-wordcount: '1097'
+ht-degree: 37%
 
 ---
 
@@ -42,7 +42,7 @@ Dois tipos ou erros podem ser capturados:
 Na lista de endereços em quarentena, o campo **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena. [Saiba mais](#identifying-quarantined-addresses-for-the-entire-platform).
 
 
-Se um usuário qualificar um email como spam, a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pelo Adobe. Em seguida, o endereço de email do usuário será enviado automaticamente para quarentena com o status **[!UICONTROL Denylisted]**. Esse status se refere apenas ao endereço. O perfil não é incluído na lista de bloqueio para que o usuário continue recebendo mensagens SMS e notificações por push. Saiba mais sobre os loops de comentários no [Guia de práticas recomendadas do delivery](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops).
+Se um usuário qualificar um email como spam, a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pelo Adobe. Em seguida, o endereço de email do usuário será enviado automaticamente para quarentena com o status **[!UICONTROL Denylisted]**. Esse status se refere apenas ao endereço. O perfil não é incluído na lista de bloqueio para que o usuário continue recebendo mensagens SMS e notificações por push. Saiba mais sobre os loops de comentários no [Guia de práticas recomendadas do delivery](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops){target=&quot;_blank&quot;}.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 
 Além disso, a variável **[!UICONTROL Non-deliverables and bounces]** relatório integrado, disponível na **Relatórios** nesta página inicial, o exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar dados para um delivery específico ou personalizar esse relatório conforme necessário.
 
-Saiba mais sobre endereços de devolução no [Guia de práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR)
+Saiba mais sobre endereços de devolução no [Guia de práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 ### Endereço de email na quarentena {#quarantined-recipient}
 

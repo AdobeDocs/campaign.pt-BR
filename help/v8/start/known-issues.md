@@ -6,7 +6,8 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: c803c13c6d433d2c6730f32f43209c8effab1fde
+exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
+source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Problemas conhecidos{#known-issues}
 
-Esta página lista os problemas conhecidos identificados na variável **Versão mais recente do Campaign v8**. Além disso, as limitações provenientes do Campaign v8 são listadas [nesta página](known-limitations.md).
+Esta página lista os problemas conhecidos identificados na variável **Versão mais recente do Campaign v8**. Além disso, as limitações provenientes do Campaign v8 são listadas [nesta página](ac-guardrails.md).
 
 
 >[!NOTE]

@@ -1,20 +1,20 @@
 ---
-title: Novas APIs do Campaign v8
-description: Novas APIs do Campaign v8
+title: APIs de implantação do FDA
+description: APIs específicas do FDA
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '437'
 ht-degree: 3%
 
 ---
 
-# Novas APIs do Campaign{#gs-new-api}
+# APIs de campanha FDA específicas{#gs-new-api}
 
-No contexto de um [Implantação empresarial (FDA)](enterprise-deployment.md), o Campaign v8 vem com duas novas APIs para gerenciar dados entre o banco de dados local do Campaign e o banco de dados do Cloud. Os pré-requisitos para usá-los é ativar o mecanismo de preparo no schema. [Saiba mais](staging.md)
+No contexto de um [Implantação empresarial (FDA)](enterprise-deployment.md), o Campaign v8 vem com duas APIs específicas para gerenciar dados entre o banco de dados local do Campaign e o banco de dados do Cloud. Os pré-requisitos para usá-los é ativar o mecanismo de preparo no schema. [Saiba mais](staging.md)
 
 * API de assimilação: **xtk.session.ingest**
 
@@ -30,7 +30,7 @@ Um fluxo de trabalho interno dedicado sincronizará os dados no banco de dados d
 
 O **xtk.session.ingest** A API é dedicada somente à inserção de dados. Nenhuma atualização/exclusão.
 
-### Inserir sem reconciliação
+### Inserir sem reconciliação{#insert-no-reconciliation}
 
 **Em um fluxo de trabalho**
 
@@ -170,7 +170,6 @@ Depois que o workflow é executado, a tabela de preparo é atualizada conforme e
 
 **De uma chamada SOAP**
 
-
 1. Obtenha o token de autenticação.
 1. Acione a API. A carga é:
 
@@ -213,4 +212,4 @@ A inserção de dados de assinatura e unsubscription depende do [Mecanismo de ar
 
 **Tópicos relacionados**
 
-* [JSAPI do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR)
+* [JSAPI do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR){target=&quot;_blank&quot;}

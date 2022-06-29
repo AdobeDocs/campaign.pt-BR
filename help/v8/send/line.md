@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '87'
 ht-degree: 31%
 
 ---
@@ -19,4 +19,4 @@ LINE é um aplicativo para mensagens instantâneas, chamadas de voz e vídeo gra
 
 ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
-![](../assets/do-not-localize/book.png) Consulte esta [Amostra completa](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message) na documentação do Campaign Classic v7 para criar e enviar o primeiro delivery LINE.
+![](../assets/do-not-localize/book.png) Consulte esta [Amostra completa](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message){target=&quot;_blank&quot;} na documentação do Campaign Classic v7 para criar e enviar seu primeiro delivery LINE.

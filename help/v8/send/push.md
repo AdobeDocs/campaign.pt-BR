@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 110cf2ff705ecbc0b3a1690e9dfc2791f5744b97
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 29%
+source-wordcount: '1093'
+ht-degree: 31%
 
 ---
 
@@ -114,12 +114,12 @@ Para criar um novo delivery, navegue até o **[!UICONTROL Campaigns]** clique em
       > 
       >Os sons devem ser incluídos no aplicativo e definidos quando o serviço for criado.
       >
-      >As diretrizes de configuração do iOS estão detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en).
+      >As diretrizes de configuração do iOS estão detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}.
    ![](assets/push_ios_5.png)
 
 1. No **[!UICONTROL Application variables]** guia , sua **[!UICONTROL Application variables]** são adicionadas automaticamente. Eles permitem definir o comportamento de notificação, por exemplo, você pode configurar uma tela de aplicativo específica a ser exibida quando o usuário ativar a notificação.
 
-   Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en).
+   Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}.
 
 1. No **[!UICONTROL Advanced]** , é possível editar as seguintes opções gerais:
 
@@ -188,12 +188,12 @@ Para enviar uma prova e o delivery final, use o mesmo processo que os deliveries
    ![](../assets/do-not-localize/book.png) [Saiba mais sobre as principais etapas para validar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 * Confirmar e enviar o delivery
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre as principais etapas para enviar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Saiba mais sobre as principais etapas para enviar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html){target=&quot;_blank&quot;}
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Saiba mais na documentação do Campaign Classic v7:
 
 * Quarentenas de notificação por push
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre a quarentena de notificações por push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Saiba mais sobre a quarentena de notificações por push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#push-notification-quarantines){target=&quot;_blank&quot;}
 
 * Solução de problemas
-   ![](../assets/do-not-localize/book.png) [Saiba como solucionar problemas de notificações por push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Saiba como solucionar problemas de notificações por push](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html){target=&quot;_blank&quot;}

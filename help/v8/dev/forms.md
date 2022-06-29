@@ -2,9 +2,9 @@
 title: Formulários de entrada de campanha
 description: Saiba como personalizar formulários de entrada
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2554'
 ht-degree: 3%
 
 ---
@@ -84,7 +84,7 @@ O controle de edição se adapta automaticamente ao tipo de dados correspondente
 
 Por padrão, cada campo é exibido em uma única linha e ocupa todo o espaço disponível, dependendo do tipo de dados.
 
-![](../assets/do-not-localize/book.png) Todos os atributos de formulário estão listados em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html).
+![](../assets/do-not-localize/book.png) Todos os atributos de formulário estão listados em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target=&quot;_blank&quot;}.
 
 ## Formatação {#formatting}
 

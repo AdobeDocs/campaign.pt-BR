@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 15%
+source-wordcount: '245'
+ht-degree: 16%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 15%
 
 Você pode usar APIs do JavaScript para gravar no banco de dados da nuvem do Campaign ou ler a partir do banco de dados:
 
-* APIs específicas de negócios que permitem agir em cada objeto: deliveries, workflows, subscrições e assim por diante. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html).
-* APIs genéricas de acesso aos dados para consultar os dados do modelo de dados. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html).
+* APIs específicas de negócios que permitem agir em cada objeto: deliveries, workflows, subscrições e assim por diante. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target=&quot;_blank&quot;}.
+* APIs genéricas de acesso aos dados para consultar os dados do modelo de dados. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target=&quot;_blank&quot;}.
 
-O Campaign v8 funciona com dois bancos de dados: um banco de dados local para a interface do usuário, mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e um banco de dados da nuvem para execução de campanha, relatórios, assimilação de dados, consultas em lote e execução de workflows.
+Observe que [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), o Campaign funciona com dois bancos de dados: um banco de dados local para a interface do usuário, mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e um banco de dados da nuvem para execução de campanha, relatórios, assimilação de dados, consultas em lote e execução de workflows.
 
 >[!CAUTION]
 >

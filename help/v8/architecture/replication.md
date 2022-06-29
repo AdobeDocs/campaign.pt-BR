@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 3%
@@ -46,7 +46,7 @@ Entenda quais bancos de dados o Adobe Campaign v8 usa, por que os dados estão s
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
 
-### Políticas de replicação de dados
+### Políticas de replicação de dados{#data-replication-policies}
 
 As políticas de replicação são baseadas no tamanho das tabelas. Algumas tabelas serão replicadas em tempo real, outras serão replicadas a cada hora. Algumas tabelas terão atualizações incrementais quando outras forem substituídas.
 
