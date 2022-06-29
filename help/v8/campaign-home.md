@@ -3,8 +3,8 @@ keywords: Campaign Classic;página inicial;tópicos populares
 description: Central de ajuda do Campaign v8
 title: Documentação do produto Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: ht
+source-git-commit: 40f13fd93ff620a743fd8c826b0b914a9e89ee7a
+workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 * **[Diretrizes de implementação](start/implement.md)** - Saiba como iniciar a implementação
 
-* **[Da v7 para v8](start/capability-matrix.md)** - Transição do Campaign Classic v7 para v8? Conheça as principais diferenças
+* **[Da v7 para v8](start/v7-to-v8.md)** - Transição do Campaign Classic v7 para v8? Conheça as principais diferenças
 
 * **[Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target=&quot;_blank&quot;}** - Execute as principais tarefas de administrador por conta própria com o Painel de controle do Campaign
 
