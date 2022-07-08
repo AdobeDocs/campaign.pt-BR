@@ -6,21 +6,21 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 6f9f3ed4d2eef28b6683bf04b81431fd6a3e3dba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# Transição de [!DNL Campaign Classic] v7 para [!DNL Campaign] v8{#gs-matrix}
+# Transição do [!DNL Campaign Classic] v7 para o [!DNL Campaign] v8{#gs-matrix}
 
 Como usuário do [!DNL Campaign Classic] v7, você não deve esperar nenhuma grande mudança na maneira como costuma interagir com o [!DNL Adobe Campaign]. A maioria das alterações na v8 não é visível, exceto pequenas alterações que surgiram na interface e nas etapas de configuração.
 
 >[!AVAILABILITY]
 >
->* Por enquanto, o Campaign v8 está disponível **apenas** como um serviço na nuvem gerenciado e não pode ser implantado em um ambiente local ou híbrido. [Saiba mais](#cloud-services)
+>* Por enquanto, o Campaign v8 está disponível **apenas** como um Managed Cloud Service e não pode ser implantado em um ambiente local ou híbrido. [Saiba mais](#cloud-services)
 >
->* A migração automatizada de um ambiente Campaign Classic v7 existente ainda não está disponível.
+>* A migração automatizada de um ambiente existente do Campaign Classic v7 ainda não está disponível.
 
 
 
@@ -28,7 +28,7 @@ Como usuário do [!DNL Campaign Classic] v7, você não deve esperar nenhuma gra
 
 O Adobe Campaign v8 está disponível como um **Managed Cloud Service**.
 
-O Adobe Campaign Managed Cloud Services oferece uma plataforma Managed Services para projetar experiências de clientes entre canais e fornece um ambiente para a orquestração visual de campanhas, o gerenciamento de interação em tempo real e a execução entre canais. Saiba mais sobre o Campaign Managed Cloud Services no [página de descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
+O Adobe Campaign Managed Cloud Services fornece uma plataforma de Managed Services para criação de experiências para clientes entre canais, além de um ambiente para orquestração visual de campanhas, gestão de interações em tempo real e execução entre canais. Saiba mais sobre o Campaign Managed Cloud Services na [página de descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
 
 A nova oferta combina os melhores serviços do setor com uma supervisão proativa e alertas oportunos, concentrando-se em três áreas:
 
@@ -49,16 +49,16 @@ Como usuário do [!DNL Campaign Classic], observe que a maioria dos recursos do 
 
 O Campaign v8 funciona com o [!DNL Snowflake].
 
-Na [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um local [!DNL Campaign] banco de dados para a interface do usuário, mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e uma nuvem [!DNL Snowflake] banco de dados para execução da campanha, consultas em lote e execução do workflow.
+Em sua [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o [!DNL Adobe Campaign] v8 funciona com dois bancos de dados: um banco de dados local do [!DNL Campaign] para a interface de mensagens em tempo real, consultas unitárias e gravações por meio de APIs, e um banco de dados em nuvem do [!DNL Snowflake] para execução de campanhas, consultas em lote e execução de fluxos de trabalho.
 
-O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova arquitetura, a implantação do Campaign v8 Enterprise (FDA) simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Você só precisa criar as tabelas, copiar os dados e iniciar. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
+O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova arquitetura, a implantação corporativa (FFDA) do Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 
 ![](../assets/do-not-localize/glass.png) Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../architecture/architecture.md).
 
 
 ## Usar sua Adobe ID para se conectar ao Campaign{#adobe-id}
 
-Os usuários da campanha se conectam somente por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos da Adobe associados a uma única conta, para todas as soluções da Adobe Experience Cloud.
+Os usuários do Campaign se conectam apenas por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos da Adobe associados a uma única conta, para todas as soluções da Adobe Experience Cloud.
 
 ![](../assets/do-not-localize/glass.png)Saiba como se conectar ao [!DNL Campaign] [nesta página](connect.md).
 
