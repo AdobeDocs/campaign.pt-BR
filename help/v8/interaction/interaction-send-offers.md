@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1265'
+ht-degree: 63%
 
 ---
 
@@ -76,9 +76,7 @@ Várias atividades de workflow permitem definir a forma como as ofertas são apr
 
 ### Enriquecimento {#enrichment}
 
-O **Enriquecimento** permite adicionar ofertas ou links para ofertas de recipients de delivery.
-
-![](../assets/do-not-localize/book.png) Para obter mais informações sobre a atividade Enrichment , consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
+O **Enriquecimento** permite adicionar ofertas ou links para ofertas de recipients de delivery.[Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html)
 
 Por exemplo, é possível enriquecer os dados de uma query de recipient antes de um delivery.
 
@@ -165,7 +163,7 @@ O delivery armazena automaticamente a classificação e o peso das ofertas. Essa
 
 O **[!UICONTROL Offer engine]** A atividade também permite especificar uma chamada para o mecanismo Offer antes do delivery.
 
-![](../assets/do-not-localize/book.png) Para obter mais informações sobre o **Mecanismo de oferta** atividade , consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
+Para obter mais informações sobre o **Mecanismo de oferta** atividade , consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html)
 
 Esta atividade funciona de acordo com o mesmo princípio do **Enriquecimento** com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de um delivery.
 
@@ -188,7 +186,7 @@ Após configurar o **Query** atividade :
 
 A atividade **[!UICONTROL Offers by cell]** permite distribuir a população de entrada (de uma consulta, por exemplo) em vários segmentos e especificar uma oferta a ser apresentada para cada um desses segmentos.
 
-![](../assets/do-not-localize/book.png) Para obter mais informações sobre o **Oferta por célula** atividade , consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
+Para obter mais informações sobre o **Oferta por célula** atividade , consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html)
 
 Para fazer isso, realize o seguinte processo:
 
