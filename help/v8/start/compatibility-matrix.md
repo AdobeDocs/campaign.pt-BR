@@ -5,16 +5,16 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 39edd6c60c220118f34cd476b887194e1e7763e4
-workflow-type: ht
-source-wordcount: '356'
-ht-degree: 100%
+source-git-commit: 50b6c9c8f55bb870e95c91bd1de22e3392e732dd
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 91%
 
 ---
 
 # Matriz de compatibilidade do Campaign v8
 
-Este documento lista todos os sistemas e componentes compatíveis com o último build do **Adobe Campaign v8**. Salvo indicação em contrário, todas as versões secundárias são compatíveis. Os produtos e as versões que não estão nessa lista não são compatíveis com o Adobe Campaign.
+Este documento lista todos os sistemas e componentes compatíveis com o **última build do Adobe Campaign v8**. Salvo indicação em contrário, todas as versões secundárias são compatíveis. Os produtos e as versões que não estão nessa lista não são compatíveis com o Adobe Campaign.
 
 À medida que versões específicas desses sistemas e ferramentas de terceiros atingirem o fim da vida útil (EOL), o Adobe Campaign não será mais compatível com essas versões, e elas serão removidas da matriz de compatibilidade. Verifique se você está usando as versões compatíveis dos sistemas listados na matriz de compatibilidade para evitar problemas.
 
@@ -24,20 +24,14 @@ Este documento lista todos os sistemas e componentes compatíveis com o último 
 
 ## Console do cliente{#ClientConsoleoperatingsystems}
 
-Os sistemas operacionais e navegadores a seguir são necessários para usar o Console do Cliente do Campaign. [Saiba mais](connect.md).
-
-### Sistemas operacionais
+Um dos seguintes sistemas operacionais é necessário para usar o Console do Cliente do Campaign. [Saiba mais](connect.md).
 
 * **Microsoft Windows Server** 2019, 2016, 2012
-* **Microsoft Windows** 11 (a partir do Campaign v8.3), 10, 8,
+* **Microsoft Windows** 11 (a partir do Campaign v8.3), 10, 8
 
 >[!NOTE]
 >
 >O Microsoft Windows 10 é recomendado para instâncias em japonês.
-
-### Navegador
-
-**Microsoft Internet Explorer** 11
 
 ## Conectores CRM{#CRMconnectors}
 
