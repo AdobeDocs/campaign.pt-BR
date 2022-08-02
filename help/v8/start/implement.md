@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1170'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -78,18 +78,18 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
    Campanhas, entregas, tarefas ou workflows são todos baseados em um modelo, que armazena configurações e recursos principais. Um modelo integrado é fornecido para cada componente, para o qual nenhuma configuração específica foi definida. Você precisa configurar e adaptar modelos às suas necessidades e disponibilizá-los aos usuários finais.
 
 
-   ![](../assets/do-not-localize/glass.png) Saiba como trabalhar com modelos de campanha [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html)
+   ![](../assets/do-not-localize/glass.png) Saiba como trabalhar com modelos de campanha [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=pt-BR)
 
-   ![](../assets/do-not-localize/glass.png) Saiba como configurar um modelo de fluxo de trabalho [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html)
+   ![](../assets/do-not-localize/glass.png) Saiba como configurar um modelo de fluxo de trabalho [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR)
 
-   ![](../assets/do-not-localize/book.png) Saiba mais sobre modelos de email em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Saiba mais sobre modelos de email na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 
 1. Configurar regras de tipologia
 
    Aproveite as regras de tipologias do Campaign para filtrar, controlar e monitorar a entrega. Por exemplo, as regras de fadiga controlam a frequência e a quantidade de mensagens para evitar a solicitação excessiva de recipients. Depois de implementadas, as regras de tipologia são referenciadas nas entregas.
 
-   Saiba mais sobre tipologias e gerenciamento de fadiga no [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html).
+   Saiba mais sobre tipologias e gerenciamento de fadiga [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=pt-BR).
 
 1. Conheça o modelo de dados integrado do Campaign
 
