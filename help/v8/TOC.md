@@ -5,9 +5,9 @@ description: Documentação do Campaign v8
 breadcrumb-title: Visão geral da campanha
 title: Documentos do Campaign v8
 source-git-commit: ca52da16933f57181a0c4228bda9a2d33ebcedef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -138,4 +138,4 @@ ht-degree: 96%
       + [Formulários de entrada](dev/forms.md)
    + [APIs do Campaign](dev/api.md)
 + [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
-+ [Guia de automação de campanha](https://experienceleague.adobe.com/docs/campaign/automation/home.html)
++ [Guia de automação de campanha](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR)
