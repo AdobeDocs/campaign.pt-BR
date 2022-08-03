@@ -82,7 +82,7 @@ Saiba mais nestas seções de **Documentação do Campaign Classic v7**:
 * Criar um email no Campaign
    ![](../assets/do-not-localize/book.png) [Saiba como criar um email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html){target=&quot;_blank&quot;}
 * Criar e usar um modelo de email
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre modelos de e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Saiba mais sobre modelos de e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html){target=&quot;_blank&quot;}
 * Selecione o público do seu email
    ![](../assets/do-not-localize/book.png) [Saiba como definir a população do target](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target=&quot;_blank&quot;}
 * Validar um delivery e enviar provas
