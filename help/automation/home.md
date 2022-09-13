@@ -2,9 +2,12 @@
 keywords: Automação de campanha, página inicial, tópicos populares
 product: campaign
 title: Página inicial da automação do Adobe Campaign
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+feature: Overview
+description: Visão geral
+exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '187'
 ht-degree: 39%
 
 ---
@@ -76,4 +79,3 @@ Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
   </td>
 </tr>
 </table>
-
