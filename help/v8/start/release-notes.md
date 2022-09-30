@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d0cabf4d5b8d177f1ff0a1be6163e9abe65c57d6
+source-git-commit: c1a5dd3fcad5d377acb2f9df3a090897ed3b533e
 workflow-type: tm+mt
-source-wordcount: '2758'
-ht-degree: 80%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,9 +65,9 @@ _30 de setembro de 2022_
 
 **Aprimoramentos**
 
-* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML no console agora está usando **Microsoft Edge Chromium**. Além disso, a instalação de **Microsoft Edge WebView 2** o tempo de execução agora é necessário para qualquer instalação do console do cliente. Leia mais
+* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML no console agora está usando **Microsoft Edge Chromium**. Além disso, a instalação de **Microsoft Edge WebView 2** o tempo de execução agora é necessário para qualquer instalação do console do cliente.
 * Melhoria na execução do workflow com alta disponibilidade do Workflow, o que permite executar workflows simultâneos em diferentes contêineres para evitar a perda do serviço de workflow e erros de execução relacionados. **Observação**: Esse novo recurso é lançado com Disponibilidade limitada somente para um conjunto de clientes.
-* As solicitações de privacidade agora são executadas em lote para um determinado namespace de privacidade. Essa melhoria aumenta o tempo de execução das solicitações de exclusão de GDPR/privacidade. Leia mais
+* As solicitações de privacidade agora são executadas em lote para um determinado namespace de privacidade. Essa melhoria aumenta o tempo de execução das solicitações de exclusão de GDPR/privacidade.
 
 **Atualizações de compatibilidade**
 
