@@ -2,12 +2,12 @@
 title: Matriz de compatibilidade do Campaign v8
 description: Conheça os sistemas e as versões compatíveis com o Campaign v8
 feature: Overview
-role: Data Engineer
-level: Beginner
+role: Admin
+level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 93d990509af2f7c917775217e95ba40dd407d0c1
+source-git-commit: 0fd798fd21d781f7c0bf75ecb1838f891350bff6
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ Os sistemas operacionais e navegadores a seguir são necessários para usar o Co
 ### Sistemas operacionais
 
 * **Microsoft Windows Server** 2019, 2016, 2012
-* **Microsoft Windows** 11 (a partir do Campaign v8.3), 10, 8,
+* **Microsoft Windows** 11 (a partir do Campaign v8.3), 10, 8
 
 >[!NOTE]
 >
@@ -37,7 +37,26 @@ Os sistemas operacionais e navegadores a seguir são necessários para usar o Co
 
 ### Navegador
 
-**Microsoft Internet Explorer** 11
+**Microsoft Edge**
+
+### Microsoft WebView2 Runtime
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>WebView2 Runtime do Microsoft Edge
+</p>
+</td>
+<td>
+<p>Versão mais recente</p>
+</td>
+<td>
+<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_br">Baixar do site Desenvolvedor Microsoft</a></p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Conectores CRM{#CRMconnectors}
 
@@ -60,7 +79,7 @@ Os bancos de dados externos compatíveis com o módulo Federated Data Access (FD
 Você pode usar o Campaign para enviar [notificações por push](../send/push.md) nos sistemas operacionais listados abaixo, usando o SDK para dispositivos móveis associado.
 
 * **Android** 12 (a partir do Campaign v8.3), 9.0, 8.x e 7.x com o SDK Campaign Android build 1.1.1.
-* **Apple iOS** 9 - 15 com o SDK Campaign iOS build 1.0.26, compatível com versões de 32 e 64 bits. O iOS 15 é compatível a partir do Campaign v8.3.
+* **Apple iOS** 9 - 16 com o SDK Campaign iOS build 1.0.26, compatível com versões de 32 e 64 bits. O iOS 16 é compatível a partir do Campaign v8.4.
 
 ## Acesso à Web
 
