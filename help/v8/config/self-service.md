@@ -2,10 +2,10 @@
 title: Painel de controle do Campaign
 description: Introdução ao Painel de controle do Campaign
 feature: Control Panel
-role: Data Engineer
-level: Beginner
+role: User, Admin
+level: Beginner, Intermediate
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: ht
 source-wordcount: '0'
 ht-degree: 100%
