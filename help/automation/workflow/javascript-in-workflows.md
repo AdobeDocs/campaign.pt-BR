@@ -3,7 +3,8 @@ product: campaign
 title: Exemplos de código JavaScript em workflows
 description: Estes exemplos mostram como é possível usar o código JavaScript em um workflow
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1756'
 ht-degree: 100%
@@ -11,8 +12,6 @@ ht-degree: 100%
 ---
 
 # Exemplos de código JavaScript em workflows{#javascript-in-workflows}
-
-
 
 Estes exemplos mostram como é possível usar o código JavaScript em um workflow:
 

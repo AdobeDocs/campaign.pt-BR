@@ -2,10 +2,10 @@
 title: Visualizar perfis existentes no Campaign
 description: Saiba como acessar dados de contato no Campaign
 feature: Audiences, Profiles
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 32%
@@ -14,7 +14,7 @@ ht-degree: 32%
 
 # Visualizar perfis existentes{#view-profiles}
 
-Browse to **[!UICONTROL Profiles and targets]** to access recipients stored in Adobe Campaign database.
+Navegue até **[!UICONTROL Profiles and targets]** para acessar destinatários armazenados no banco de dados do Adobe Campaign.
 
 Nessa página, é possível [criar novo destinatário](create-profiles.md), edite um recipient existente e acesse os detalhes do perfil.
 
@@ -41,7 +41,7 @@ Para um recipient integrado típico, você pode acessar as seguintes guias:
 
 * **[!UICONTROL General]**, para todos os dados de perfil gerais. Em particular, ele contém o sobrenome, o nome, o endereço de email, o formato do email, etc.
 
-   This tab also stores the **opt-out** flag for the profile: when the **[!UICONTROL No longer contact (by any channel)]** option is selected, the profile is on denylist. Essas informações são adicionadas aos dados do contato se o recipient clicou em um link de unsubscription em um boletim informativo, por exemplo. Esse recipient não será mais direcionado para qualquer canal (email, mala direta etc.). Para obter mais informações, consulte [esta página](../send/quarantines.md).
+   Essa guia também armazena o **opt out** sinalizador para o perfil: quando a variável **[!UICONTROL No longer contact (by any channel)]** estiver selecionada, o perfil está em lista de bloqueios. Essas informações são adicionadas aos dados do contato se o recipient clicou em um link de unsubscription em um boletim informativo, por exemplo. Esse recipient não será mais direcionado para qualquer canal (email, mala direta etc.). Para obter mais informações, consulte [esta página](../send/quarantines.md).
 
 * **Informações de contato**, que contém o endereço de correspondência direta do perfil selecionado.
 

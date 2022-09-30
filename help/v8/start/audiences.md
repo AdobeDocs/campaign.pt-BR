@@ -2,13 +2,13 @@
 title: Trabalhar com públicos no Campaign
 description: Trabalhar com públicos no Campaign
 feature: Audiences
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 26%
+ht-degree: 29%
 
 ---
 
@@ -36,7 +36,7 @@ A configuração de filtro permite selecionar dados de uma lista **[!UICONTROL d
 
 O direcionamento pode ser criado por meio de uma combinação de consultas em uma sequência gráfica em um workflow. Você pode criar públicos-alvo que serão direcionados de acordo com suas necessidades. Para exibir o editor de workflow, clique na guia **[!UICONTROL Targeting and workflows]** no painel de campanha.
 
-Saiba como criar um público-alvo em um fluxo de trabalho da campanha no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
+Saiba como criar um público-alvo em um fluxo de trabalho da campanha no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR)
 
 
 ## Perfis ativos{#active-profiles}

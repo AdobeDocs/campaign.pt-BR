@@ -1,18 +1,18 @@
 ---
-title: Introdução a campanhas de marketing
-description: Introdução a campanhas de marketing
+title: Introdução a campanhas
+description: Introdução a campanhas
 feature: Audiences
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: ht
-source-wordcount: '840'
-ht-degree: 100%
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+workflow-type: tm+mt
+source-wordcount: '837'
+ht-degree: 98%
 
 ---
 
-# Introdução a campanhas de marketing{#gs-ac-campaigns}
+# Introdução às campanhas{#gs-ac-campaigns}
 
 O Adobe Campaign oferece um conjunto de soluções que ajudam você a personalizar e entregar campanhas em todos os seus canais online e offline. Você pode criar, configurar, executar e analisar campanhas de marketing. Todas as campanhas de marketing podem ser gerenciadas em um centro de controle unificado. Descubra como navegar e criar campanhas de marketing nesta seção.
 

@@ -1,14 +1,14 @@
 ---
 title: Conecte-se ao Campaign v8
 description: Saiba como se conectar ao Campaign v8
-feature: Audiences
-role: Data Engineer
+feature: Client Console
+role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '832'
+ht-degree: 12%
 
 ---
 
@@ -21,6 +21,13 @@ Antes de começar, é necessário:
 * Verifique a compatibilidade do sistema e das ferramentas com o Adobe Campaign no [Matriz de compatibilidade](compatibility-matrix.md)
 * Obter o URL do servidor do Campaign
 * Crie sua Adobe ID ou obtenha suas credenciais de usuário de sua empresa
+* Instale o tempo de execução do Microsoft Edge Webview2 em seu sistema (a partir da versão de build do Campaign Classic 8.4). [Saiba mais](#webview)
+
+## Instalação do tempo de execução do Microsoft Edge Webview2 {#webview}
+
+A partir da versão de build do Campaign Classic 8.4, a instalação do tempo de execução do Microsoft Edge Webview 2 é necessária para qualquer instalação do console.
+
+O Web View é instalado por padrão como parte do sistema operacional Windows 11. Se ele ainda não estiver presente em seu sistema, o Campaign Console Installer solicitará que você o baixe de [Site do desenvolvedor do Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br). Observe que o link de download não funciona no navegador Internet Explorer 11, pois o Microsoft substituiu o suporte. Use um navegador diferente para acessar o link.
 
 ## Baixe e instale o Console do cliente{#download-ac-console}
 
@@ -77,6 +84,10 @@ Para fazer logon em uma instância existente, siga as etapas abaixo:
 1. Você pode fazer logon no Campaign com [seu Adobe ID](#connect-ims).
 
    ![](assets/adobeID.png)
+
+>[!NOTE]
+>
+>Para versões de build do campaign classic 8.4, o console do cliente Adobe Campaign pode solicitar credenciais de proxy duas vezes durante a autenticação de proxy. Isso ocorre porque o Microsoft Edge Webview2 não salva as credenciais de proxy no armazenamento de cache/senha, ao contrário do Internet Explorer.
 
 ## Conceder acesso aos usuários{#grant-access}
 

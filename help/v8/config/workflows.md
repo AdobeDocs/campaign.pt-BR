@@ -2,13 +2,13 @@
 title: Gerenciar e automatizar processos com fluxos de trabalho do Adobe Campaign
 description: Introdução a workflows
 feature: Workflows
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1574'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
 
@@ -41,7 +41,7 @@ Saiba mais sobre a interface de usuário e a execução de workflows nessas pág
 
 * [Monitorar a execução de workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html)
 
-* [Criar um público-alvo em um workflow de campanha de marketing](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
+* [Criar um público-alvo em um workflow de campanha de marketing](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR)
 
 ## Atividades de fluxos de trabalho {#wf-activities}
 
@@ -114,7 +114,7 @@ Dependendo da finalidade do seu fluxo de trabalho, você pode escolher entre os 
 
 Projete um workflow recorrente e crie uma nova instância de delivery toda vez que o workflow for executado. Por exemplo, se o fluxo de trabalho for projetado para ser executado uma vez por semana, o resultado será 52 deliveries em um ano. Isso também significa que os logs serão separados por cada instância de delivery.
 
-Saiba como criar uma campanha recorrente no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html)
+Saiba como criar uma campanha recorrente no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=pt-BR)
 
 
 ## Aproveitar eventos de acionador
@@ -137,7 +137,7 @@ Nesta seção você encontrará vários casos de uso que usam os recursos dos wo
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 
-* [Enviar email de aniversário](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html)
+* [Enviar email de aniversário](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR)
 
    Este caso de uso apresenta como planejar o envio de um e-mail recorrente para uma lista de recipients no dia de seus aniversários.
 

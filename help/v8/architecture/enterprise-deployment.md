@@ -1,14 +1,14 @@
 ---
 title: Introdução à implantação do Campaign FDA
 description: Introdução à implantação do Campaign FDA
-feature: Overview
-role: Data Engineer
-level: Beginner
+feature: Architecture, FFDA
+role: Admin, Developer, User
+level: Beginner, Intermediate, Experienced
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1019'
-ht-degree: 53%
+ht-degree: 55%
 
 ---
 
@@ -38,7 +38,7 @@ Qualquer esquema/tabela interna que precise ser movido ou replicado no banco de 
 
 Em um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um local [!DNL Campaign] banco de dados para a interface do usuário, mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e uma nuvem [!DNL Snowflake] banco de dados para execução da campanha, consultas em lote e execução do workflow.
 
-O Campaign v8 Enterprise traz o conceito de **Acesso completo a dados federados** (FFDA): todos os dados agora são remotos no banco de dados da nuvem.
+O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem.
 
 APIs específicas estão disponíveis para gerenciar dados entre o banco de dados local e na nuvem. Saiba como essas novas APIs funcionam e como usá-las [nesta página](new-apis.md).
 
