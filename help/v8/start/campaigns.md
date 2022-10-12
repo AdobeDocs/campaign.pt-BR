@@ -1,14 +1,14 @@
 ---
-title: Introdução a campanhas
-description: Introdução a campanhas
+title: Introdução às campanhas
+description: Introdução às campanhas
 feature: Audiences
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 98%
 
 O Adobe Campaign oferece um conjunto de soluções que ajudam você a personalizar e entregar campanhas em todos os seus canais online e offline. Você pode criar, configurar, executar e analisar campanhas de marketing. Todas as campanhas de marketing podem ser gerenciadas em um centro de controle unificado. Descubra como navegar e criar campanhas de marketing nesta seção.
 
-As campanhas incluem ações (deliveries) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e delivery outlines). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
+As campanhas incluem ações (entregas) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e outlines de entrega). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
 
-## Organização de campanha entre canais{#cross-channel-orchestration}
+## Orquestração de campanha entre canais{#cross-channel-orchestration}
 
 O Adobe Campaign permite criar e organizar campanhas direcionadas e personalizadas em vários canais: email, correspondência direta, SMS e notificação por push. Uma única interface fornece todas as funções necessárias para agendar, organizar, configurar, personalizar, automatizar, executar e medir todas as suas campanhas e comunicações.
 
@@ -86,7 +86,7 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
 1. **Configurar o processo de aprovação**
 
-   O Adobe Campaign permite configurar processos de aprovação colaborativos para as principais etapas da campanha de marketing. Para cada campanha você pode aprovar o target, o conteúdo e os custos da entrega. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a web.
+   O Adobe Campaign permite configurar processos de aprovação colaborativos para as principais etapas da campanha de marketing. Para cada campanha você pode aprovar o público-alvo, o conteúdo e os custos da entrega. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a web.
 
     Saiba como configurar e gerenciar aprovações [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=pt-BR#campaign-orchestration).
 
