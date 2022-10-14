@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: ht
-source-wordcount: '0'
+source-wordcount: '853'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ A funcionalidade avançada de Gerenciamento de dados amplia os recursos de proce
 
 ![](../assets/do-not-localize/glass.png) Saiba mais sobre segmentação, criação de público e personalização [nesta seção](audiences.md).
 
-## Organização de campanha entre canais {#cross-channel-campaign-orchestration}
+## Orquestração de campanha entre canais {#cross-channel-campaign-orchestration}
 
 O Adobe Campaign permite criar e organizar campanhas direcionadas e personalizadas em vários canais: email, correspondência direta, SMS e notificação por push. Uma única interface fornece todas as funções necessárias para agendar, organizar, configurar, personalizar, automatizar, executar e medir todas as suas campanhas e comunicações.
 
