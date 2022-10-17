@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 1e84fdd61bb2591bf69f5efaf8f8fc01a0d3d93f
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -66,27 +66,28 @@ Os usuários do Campaign se conectam apenas por meio da Adobe ID. A mesma Adobe 
 
 Use o módulo Marketing Analytics para analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo de relatórios. Além disso, crie relatórios e populações de destino: uma vez identificados, eles são armazenados em listas que podem ser usadas no Adobe Campaign (direcionamento, segmentação etc.).
 
-Os relatórios de cubo do Adobe Campaign estão otimizados e oferecem melhores recursos de escala do que o Campaign Classic v7. Antigas limitações em cubos não se aplicam ao Campaign v8.
+Com [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), os relatórios de cubo do Adobe Campaign são otimizados e proporcionam recursos de melhor escala do que o Campaign Classic v7. Nesse modelo de implantação específico, as antigas limitações dos cubos não se aplicam ao Campaign v8.
 
 ## Recursos indisponíveis{#gs-unavailable-features}
 
 Observe que alguns recursos ainda não estão disponíveis nessa versão do Campaign, como:
 
 * Gerenciamento de recursos de marketing
-* Modelos de implantação híbridos/no local
+* Cupons
+* Rastreamento web
+* Pesquisas
 
 
 ## Recursos incompatíveis{#gs-removed}
 
-Para alinhar-se à nova arquitetura e ao novo modelo de implantação do Campaign v8, alguns recursos históricos do Campaign Classic v7 não são mais compatíveis com o Campaign v8, como:
+Alguns recursos históricos do Campaign Classic v7 não são mais compatíveis com o Campaign v8, como:
 
-* Cupons
-* Rastreamento web
-* Pesquisas
-* Marketing social
+* Marketing social com o Facebook
 * Conector ACS (oferta principal)
 * Integração com o LDAP
 * Logon de usuário/senha
+* Modelos de implantação híbridos/no local
+
 
 >[!NOTE]
 >
