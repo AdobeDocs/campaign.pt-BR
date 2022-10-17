@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 6986f4eb017602632d11ce6e9ca9e156d94380ff
+source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
 workflow-type: tm+mt
-source-wordcount: '3368'
-ht-degree: 66%
+source-wordcount: '2835'
+ht-degree: 98%
 
 ---
 
@@ -17,21 +17,23 @@ ht-degree: 66%
 
 Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign v8**.
 
+
 ## Versão 8.4.1 {#release-8-4-1}
 
 _30 de setembro de 2022_
+
 
 **Novidades**
 
 <table> 
 <thead>
 <tr> 
-<th> <strong>Integração do Adobe Campaign com o Adobe Experience Platform</strong><br /> </th> 
+<th> <strong>Integração do Adobe Campaign com a Adobe Experience Platform</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td><p>Agora novos conectores de destino e de origem estão disponíveis para permitir uma integração perfeita entre o Adobe Campaign e o Adobe Experience Platform:</p>
+<td><p>Agora novos conectores de destino e de origem estão disponíveis para permitir uma integração perfeita entre o Adobe Campaign e a Adobe Experience Platform:</p>
 <ul><li>Use o conector de destino do Adobe Campaign Managed Cloud Services para enviar segmentos de Experience Platform para o Adobe Campaign para ativação,</li>
 <li>Use o conector de origem Cloud Service gerenciado do Adobe Campaign para enviar o delivery do Adobe Campaign e os logs de rastreamento para o Adobe Experience Platform.</li>
 </ul>
@@ -44,20 +46,20 @@ _30 de setembro de 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Disponibilidade do canal twitter</strong><br /> </th> 
+<th> <strong>Disponibilidade do canal do Twitter</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>O <a href="../send/twitter.md">Canal social twitter</a> O agora está disponível com o Campaign v8. Você pode:</p>
+<td> <p>O <a href="../send/twitter.md">Canal de rede social do Twitter</a> agora está disponível com o Campaign v8. Você pode:</p>
 <ul> 
-<li><p>Enviar mensagens no Twitter: O Adobe Campaign permite postar mensagens diretamente na sua conta do twitter. Você também pode enviar mensagens diretas a todos os seus seguidores do 
+<li><p>Enviar mensagens no Twitter: o Adobe Campaign permite postar mensagens diretamente na sua conta do Twitter. Você também pode enviar mensagens diretas a todos os seus seguidores.
 </p></li>
-<li><p>Coletar novos contatos: O Adobe Campaign pode recuperar automaticamente os dados do perfil, o que permite realizar campanhas de definição de metas e implementar estratégias entre canais.
+<li><p>Coletar novos contatos: o Adobe Campaign pode recuperar automaticamente os dados do perfil, o que permite realizar campanhas de direcionamento e implementar estratégias entre canais.
 </p></li>
 </ul>
 <p>Saiba como conectar o Campaign e o Twitter na <a href="../connect/ac-tw.md">documentação detalhada</a>.</p>
-<p>Saiba como publicar tweets e enviar mensagens diretas com o Campaign em <a href="../connect/ac-tw.md">esta página</a>.</p>
+<p>Saiba como publicar tweets e enviar mensagens diretas com o Campaign <a href="../connect/ac-tw.md">nesta página</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -67,8 +69,8 @@ _30 de setembro de 2022_
 
 Para otimizar a segurança, os tokens de segurança foram removidos dos URLs gerados pelo Campaign:
 
-* Essa alteração se aplica somente aos URLs do GET. Outros tipos, incluindo URLs POST, não são afetados.
-* Se você usa código personalizado, os tokens de segurança não são mais recuperados do parâmetro de token de segurança do URL do GET. Você precisa gerar um novo token de segurança usando o seguinte código JSSP:
+* Essa alteração se aplica somente aos URLs GET. Outros tipos, incluindo URLs POST, não são afetados.
+* Se você usa código personalizado, os tokens de segurança não são mais recuperados do parâmetro securitytoken do URL GET. Você precisa gerar um novo token de segurança usando o seguinte código JSSP:
 
    ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
 
@@ -77,68 +79,34 @@ Para otimizar a segurança, os tokens de segurança foram removidos dos URLs ger
 
 **Aprimoramentos**
 
-* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML no console agora está usando **Microsoft Edge Chromium**. Além disso, a instalação de **Microsoft Edge WebView 2** o tempo de execução agora é necessário para qualquer instalação do console do cliente.
-* Melhoria na execução do workflow com alta disponibilidade do Workflow, o que permite executar workflows simultâneos em diferentes contêineres para evitar a perda do serviço de workflow e erros de execução relacionados. **Observação**: Esse novo recurso é lançado com Disponibilidade limitada somente para um conjunto de clientes.
+* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML no console passou a usar o **Microsoft Edge Chromium**. Além disso, a instalação do **Webview 2 runtime do Microsoft Edge** agora é necessária para qualquer instalação do console do cliente.
+* Melhoria na execução do fluxo de trabalho com alta disponibilidade do fluxo de trabalho, o que permite executar fluxos de trabalho simultâneos em diferentes contêineres para evitar a perda do serviço de fluxo de trabalho e erros de execução relacionados. **Observação**: esse novo recurso foi lançado com disponibilidade limitada somente para um conjunto de clientes.
 * As solicitações de privacidade agora são executadas em lote para um determinado namespace de privacidade. Essa melhoria aumenta o tempo de execução das solicitações de exclusão de GDPR/privacidade.
 
 **Atualizações de compatibilidade**
 
-* O Campaign v8 SDK agora é compatível com iOS 16 para notificações por push.
+* O SDK do Campaign v8 agora é compatível com notificações por push no iOS 16.
 
 Consulte a [Matriz de compatibilidade do Campaign](compatibility-matrix.md).
 
 **Correções**
 
-* Correção de um problema que afetava as atualizações de status do log de delivery na instância MID, quando a opção FeatureFlag_GZIP_Compression era habilitada. (NEO-49183)
-* Correção de um problema que poderia resultar na permanência dos deliveries em **Pending** mesmo que a data de contato tenha sido alcançada. (NEO-48079)
-* Correção de um problema em workflows que poderia impedir a atualização de arquivos no servidor ao usar o **Carregamento de dados (arquivo)** atividade . O processo parou em 100%, mas nunca terminou. (NEO-47269)
-* Correção de um problema durante o pós-atualização em ambientes japoneses. (NEO-46640)
-* Correção de um problema que poderia ocorrer se um delivery atingisse um tamanho preciso durante o processo MTA. (NEO-46097)
-* Correção de um problema que impedia o rastreamento de logs de retornar dados relacionados ao navegador do recipient. (NEO-46612)
-* Correção de um problema que resultava em problemas de personalização ao enviar mensagens SMS usando um modo de delivery externo. (NEO-46415)
+* Correção de um problema que afetava as atualizações de status do log de entrega na instância MID quando a opção FeatureFlag_GZIP_Compression era habilitada. (NEO-49183)
+* Correção de um problema que poderia fazer com que as entregas ficassem no status **Pendente** mesmo que a data de contato tivesse sido alcançada. (NEO-48079)
+* Correção de um problema em fluxos de trabalho que poderia impedir a atualização de arquivos no servidor ao usar a atividade **Carregamento de dados (arquivo)**. O processo parou em 100%, mas nunca terminou. (NEO-47269)
+* Correção de um problema durante a pós-atualização em ambientes japoneses. (NEO-46640)
+* Correção de um problema que poderia ocorrer se uma entrega atingisse um tamanho específico durante o processo de MTA. (NEO-46097)
+* Correção de um problema que impedia que os logs de rastreamento retornassem dados relacionados ao navegador do destinatário. (NEO-46612)
+* Correção de um problema que resultava em problemas de personalização ao enviar mensagens SMS usando um modo de entrega externo. (NEO-46415)
 * Correção de um problema que poderia gerar duplicatas em logs de rastreamento. (NEO-46409)
-* Correção de um problema que impedia o **[!UICONTROL Replicate Staging data]** O workflow técnico (ffdaReplicateStagingData) não é interrompido mesmo quando um erro ocorreu durante sua execução. (NEO-46280)
-* Para evitar a lentidão ao enviar prova para seed addresses, todas as replicações consecutivas de membros seed agora são agrupadas em uma solicitação de replicação. (NEO-44844)
-* Correção de um problema que exibia um erro ao tentar visualizar um delivery em qualquer evento arquivado do Centro de mensagens. (NEO-43620)
-* Correção de um problema ao injetar dados no banco de dados da nuvem do Snowflake com uma Campanha **Query** e uma **Alterar fonte de dados** atividade : o processo falhava quando um caractere de barra invertida estava presente nos dados. A cadeia de caracteres de origem não foi removida e os dados não foram processados corretamente no Snowflake. (NEO-45549)
-* Correção de um problema ao usar o **Query** atividade e filtragem de uma tabela. Quando um nome de coluna continha a palavra &quot;Atualizar&quot;, ocorria um erro de compilação com um identificador inválido e a seguinte mensagem: &quot;número de linhas atualizadas&quot;. (NEO-46485)
-* O **Limpeza do banco de dados** o fluxo de trabalho técnico agora também lida com esquemas de preparo personalizados. (NEO-48974)
-* Correção de um problema que poderia retardar a análise de delivery, durante a etapa de exclusão de incluir na lista de bloqueios recipients, ao direcionar grandes volumes de recipients. (NEO-48019)
-* Estabilidade aprimorada ao manipular strings XML inválidas durante chamadas SOAP. (NEO-48027)
-* Correção de um problema que resultava na criação de DeliveryParts desnecessárias quando o delivery usava os modos de calendário e divisão. (NEO-48634)
-* Correção de um problema de desempenho ao usar ondas baseadas em calendário. (NEO-48451)
-* Correção de um problema que poderia resultar em uma mensagem de erro na tela da lista de delivery após criar um novo target mapping em um schema personalizado. (NEO-49237)
-* Correção de um problema que poderia causar perda de dados se o workflow de preparo estivesse com erro e o período de retenção fosse totalmente passado. (NEO-48975)
+* Correção de um problema que impedia que o fluxo de trabalho técnico do **[!UICONTROL Replicate Staging data]** (ffdaReplicateStagingData) fosse interrompido mesmo quando um erro ocorresse durante sua execução. (NEO-46280)
+* Correção de um problema que poderia ocorrer se uma entrega atingisse um tamanho preciso durante o processo de MTA. (NEO46097)
+* Para evitar a lentidão ao enviar provas para os seed addresses, todas as replicações consecutivas de membros de seed agora são agrupadas em uma solicitação de replicação. (NEO-44844)
+* Correção de um problema que exibia um erro ao tentar visualizar uma entrega em qualquer evento arquivado do Centro de mensagens. (NEO-43620)
+* Correção de um problema ao inserir dados no banco de dados de nuvem do Snowflake com uma atividade de **Consulta** do Campaign e uma atividade **Alterar fonte de dados**: o processo falhava quando um caractere de barra invertida estava presente nos dados. A cadeia de caracteres de origem não tinha escape e os dados não eram processados corretamente no Snowflake. (NEO-45549)
+* Correção de um problema ao usar a atividade de **Consulta** e filtrar uma tabela. Quando um nome de coluna continha a palavra “Atualizar”, ocorria um erro de compilação com um identificador inválido e a seguinte mensagem: “número de linhas atualizado”. (NEO-46485)
 
-## Versão 8.3.9 {#release-8-3-9}
 
->[!CAUTION]
->
-> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente neste [página](../start/connect.md#download-ac-console).
-
-_7 de outubro de 2022_
-
-**Aprimoramentos**
-
-* Correção de um problema que afetava as atualizações de status do log de delivery na instância MID, quando a opção FeatureFlag_GZIP_Compression era habilitada. (NEO49183)
-* O **Limpeza do banco de dados** o fluxo de trabalho técnico agora também lida com esquemas de preparo personalizados. (NEO48974)
-* Correção de um problema que poderia resultar na permanência dos deliveries em **Pending** mesmo que a data de contato tenha sido alcançada. (NEO-48079, NEO-48251)
-* Estabilidade aprimorada ao manipular strings XML inválidas durante chamadas SOAP. (NEO48027)
-* Correção de um problema que poderia retardar a análise de delivery, durante a etapa de exclusão de incluir na lista de bloqueios recipients, ao direcionar grandes volumes de recipients. (NEO48019)
-* Para evitar a lentidão ao enviar prova para seed addresses, todas as replicações consecutivas de membros seed agora são agrupadas em uma solicitação de replicação. (NEO44844)
-* Correção de um problema que resultava em problemas de personalização ao enviar mensagens SMS usando um modo de delivery externo. (NEO46415)
-* Correção de um problema que exibia um erro ao tentar visualizar um delivery em qualquer evento arquivado do Centro de mensagens. (NEO43620)
-* Correção de um problema em workflows que poderia impedir a atualização de arquivos no servidor ao usar o **Carregamento de dados (arquivo)** atividade . O processo parou em 100%, mas nunca terminou. (NEO47269)
-* Correção de um problema que resultava na criação de DeliveryParts desnecessárias quando o delivery usava os modos de calendário e divisão. (NEO48634)
-* Correção de um problema de desempenho ao usar ondas baseadas em calendário. (NEO48451)
-* Correção de um problema que poderia resultar em uma mensagem de erro na tela da lista de delivery após criar um novo target mapping em um schema personalizado. (NEO49237)
-* Correção de um problema que poderia ocorrer se um delivery atingisse um tamanho específico durante o processo MTA. (NEO46097)
-* Correção de um problema que impedia o rastreamento de logs de retornar dados relacionados ao navegador do recipient. (NEO46612)
-* Correção de um problema durante o pós-atualização em ambientes japoneses. (NEO46640)
-* Correção de um problema ao usar o **Query** atividade e filtragem de uma tabela. Quando um nome de coluna continha a palavra &quot;Atualizar&quot;, ocorria um erro de compilação com um identificador inválido e a seguinte mensagem: &quot;número de linhas atualizadas&quot;. (NEO46485)
-* Correção de um problema que impedia o **[!UICONTROL Replicate Staging data]** O workflow técnico (ffdaReplicateStagingData) não é interrompido mesmo quando um erro ocorreu durante sua execução. (NEO46280)
-* Correção de um problema que poderia causar perda de dados se o workflow de preparo estivesse com erro e o período de retenção fosse totalmente passado. (NEO48975)
-* Correção de um problema ao injetar dados no banco de dados da nuvem do Snowflake com uma Campanha **Query** e uma **Alterar fonte de dados** atividade : o processo falhava quando um caractere de barra invertida estava presente nos dados. A cadeia de caracteres de origem não foi removida e os dados não foram processados corretamente no Snowflake. (NEO45549)
 
 ## Versão 8.3.8 {#release-8-3-8}
 
@@ -239,10 +207,10 @@ _2 de fevereiro de 2022_
 
 **Correções**
 
-* Correção de um problema que causava falha na preparação do delivery se o número máximo de mensagens, definido na regra de tipologia, fosse atingido.
+* Correção de um problema que causava falha na preparação da entrega se o número máximo de mensagens, definido na regra de tipologia, fosse atingido.
 * Correção de um problema que ocorria durante a configuração do conector do Adobe Analytics quando o endereço de email continha um caractere “s”.
-* Correção de um problema durante a pós-atualização que poderia fazer com que a tabela deliveryMapping perdesse dados de um mapeamento de delivery personalizado.
-* Correção de um problema que poderia fazer com que recipients recebessem a mesma mensagem várias vezes para o mesmo delivery quando o endereço de email continha um caractere de aspas simples (&#39;). Esse caractere agora é escapado. (NEO-41198)
+* Correção de um problema durante a pós-atualização que poderia fazer com que a tabela deliveryMapping perdesse dados de um mapeamento de entrega personalizada.
+* Correção de um problema que poderia fazer com que destinatários recebessem a mesma mensagem várias vezes para a mesma entrega quando o endereço de email continha um caractere de aspas simples (&#39;). Esse caractere agora é escapado. (NEO-41198)
 * Correção de um problema na geração de ID ao enviar provas com seeds ou endereços de substituição. (NEO-42637)
 * Correção de um problema que impedia o envio de provas usando o método de substituição de endereço. (NEO-40417)
 * Correção de um problema que impedia a instalação do pacote LINE. (NEO-42503)
@@ -309,14 +277,14 @@ _28 de outubro de 2021_
 **Outras alterações**
 
 * O campo **[!UICONTROL Encrypted identifier]** foi adicionado ao esquema de visitante (`nms:visitor`). Esse campo é calculado e deve ser usado para aplicativos web.
-* Correção de um problema que causava a falha da análise de delivery quando algumas afinidades de IP existiam em certos contêineres mid-sourcing, mas não em todos eles. Agora as afinidades de IP são armazenadas na base de dados para que qualquer container possa acessar as afinidades presentes em todos os outros contêineres. (NEO-37564)
+* Correção de um problema que causava a falha da análise da entrega quando algumas afinidades de IP existiam em certos contêineres mid-sourcing, mas não em todos eles. Agora as afinidades de IP são armazenadas na base de dados para que qualquer container possa acessar as afinidades presentes em todos os outros contêineres. (NEO-37564)
 * Agora você pode importar um pacote com vários esquemas e nós da árvore de navegação.
 
 **Correções**
 
 * Após um usuário ter removido, de um esquema de dados, o atributo `<autoStg>` de um elemento de definição de uma tabela, ou após ter alterado seu valor de `true` para `false`, a tabela de preparo relacionada não foi excluída. Esse problema foi corrigido.
 * Correção de um problema que causava um erro ao criar registros com um formulário dedicado devido ao gerenciamento de ID com uma fonte de dados FFDA.
-* Correção de um problema que poderia impedir a inserção de ofertas em um delivery caso tais ofertas fossem gerenciadas por uma atividade de enriquecimento em um workflow.
+* Correção de um problema que poderia impedir a inserção de ofertas em uma entrega caso tais ofertas fossem gerenciadas por uma atividade de enriquecimento em um workflow.
 * Correção de um problema que poderia retardar a importação de pacotes.
 * Correção de um problema que poderia impedir que deliveries de email com seed addresses fossem enviados.
 * Correção de um problema que poderia impedir que apresentações fossem salvas na tabela de apresentação de ofertas.

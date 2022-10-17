@@ -5,9 +5,9 @@ feature: Privacy, PI
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 864f2179384d3e3cfcf310fcd04fe02240bfbefa
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '664'
 ht-degree: 22%
 
 ---
@@ -28,6 +28,30 @@ A configuração e proteção da privacidade é um elemento essencial da otimiza
 * Proteja as páginas que podem conter informações pessoais, como mirror pages, aplicativos web, etc.
 
 ![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, o Adobe trabalhará com você para implementar essas configurações no ambiente.
+
+
+## Gerenciamento de acesso
+
+O gerenciamento de acesso é uma parte importante do fortalecimento da segurança. Estas são algumas das principais práticas recomendadas:
+
+* Criar grupos de segurança suficientes
+* Verifique se cada operador tem os direitos de acesso apropriados
+* Evite usar o operador administrador e evite ter muitos operadores no grupo de administradores
+
+![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+
+## Diretrizes de codificação
+
+Ao desenvolver no Adobe Campaign (fluxos de trabalho, Javascript, JSSP etc.), sempre siga estas diretrizes:
+
+* **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL colocando as funções SQL a serem utilizadas na lista de permissões.
+
+* **Proteger o modelo de dados**: use direitos nomeados para limitar as ações do operador, adicione filtros do sistema (sysFilter)
+
+* **Adicionar captchas em aplicações Web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
+
+![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+
 
 ## Personalização
 

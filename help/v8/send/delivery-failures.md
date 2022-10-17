@@ -5,14 +5,14 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3009'
 ht-degree: 65%
 
 ---
 
-# Entender as falhas de delivery {#delivery-failures}
+# Entender as falhas de entrega {#delivery-failures}
 
 Rejeições são o resultado de uma tentativa de entrega e falha em que o ISP fornece avisos de falha. O processamento do tratamento de rejeição é uma parte essencial da higiene das listas. Depois que um determinado email tiver retornado várias vezes consecutivas, esse processo o sinaliza para supressão.
 
@@ -54,7 +54,7 @@ Esses tipos de erros são gerenciados da seguinte maneira:
 
 >[!NOTE]
 >
->Como usuário do Managed Services, a configuração da caixa de entrada de devolução é executada pelo Adobe.
+>Como um usuário do Managed Cloud Services, a configuração da caixa de entrada de devolução é executada pelo Adobe.
 
 ## Qualificação de email de rejeição {#bounce-mail-qualification}
 

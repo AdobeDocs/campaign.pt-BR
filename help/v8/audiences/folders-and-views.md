@@ -5,7 +5,7 @@ feature: Audiences, Profiles, Application Settings
 role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 7%
@@ -24,7 +24,7 @@ Uma exibição é uma pasta específica que não contém dados, mas exibe dados 
 
 Observe que é possível atribuir permissões a pastas para restringir o acesso a determinados dados. [Saiba mais](#restrict-access-to-a-folder)
 
-## Práticas recomendadas para trabalhar com pastas
+## Práticas recomendadas para trabalhar com pastas{#best-practices-folders}
 
 * **Usar pastas incorporadas** para facilitar o uso, a manutenção e a solução de problemas do aplicativo para todas as pessoas envolvidas no projeto. Evite criar estruturas de pastas personalizadas para recipients, listas, deliveries etc., mas use as pastas padrão, como **Administração**, **Perfis e metas**, **Gerenciamento de campanhas**.
 
