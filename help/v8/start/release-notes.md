@@ -7,9 +7,9 @@ level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2835'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,8 +34,8 @@ _30 de setembro de 2022_
 <tbody> 
 <tr> 
 <td><p>Agora novos conectores de destino e de origem estão disponíveis para permitir uma integração perfeita entre o Adobe Campaign e a Adobe Experience Platform:</p>
-<ul><li>Use o conector de destino do Adobe Campaign Managed Cloud Services para enviar segmentos de Experience Platform para o Adobe Campaign para ativação,</li>
-<li>Use o conector de origem Cloud Service gerenciado do Adobe Campaign para enviar o delivery do Adobe Campaign e os logs de rastreamento para o Adobe Experience Platform.</li>
+<ul><li>Use o conector de destinos do Adobe Campaign Managed Cloud Services para enviar segmentos da Experience Platform para ativação no Adobe Campaign,</li>
+<li>Use o conector de origem do Adobe Campaign Managed Cloud Service para entregas e envios de logs de rastreamento do Adobe Campaign para a Adobe Experience Platform.</li>
 </ul>
 <p>Para obter mais informações, consulte a <a href="../connect/ac-aep.md">documentação detalhada</a>.</p>
 </td> 
@@ -100,7 +100,7 @@ Consulte a [Matriz de compatibilidade do Campaign](compatibility-matrix.md).
 * Correção de um problema que resultava em problemas de personalização ao enviar mensagens SMS usando um modo de entrega externo. (NEO-46415)
 * Correção de um problema que poderia gerar duplicatas em logs de rastreamento. (NEO-46409)
 * Correção de um problema que impedia que o fluxo de trabalho técnico do **[!UICONTROL Replicate Staging data]** (ffdaReplicateStagingData) fosse interrompido mesmo quando um erro ocorresse durante sua execução. (NEO-46280)
-* Correção de um problema que poderia ocorrer se uma entrega atingisse um tamanho preciso durante o processo de MTA. (NEO46097)
+* Correção de um problema que poderia ocorrer se uma entrega atingisse um tamanho preciso durante o processo de MTA. (NEO-46097)
 * Para evitar a lentidão ao enviar provas para os seed addresses, todas as replicações consecutivas de membros de seed agora são agrupadas em uma solicitação de replicação. (NEO-44844)
 * Correção de um problema que exibia um erro ao tentar visualizar uma entrega em qualquer evento arquivado do Centro de mensagens. (NEO-43620)
 * Correção de um problema ao inserir dados no banco de dados de nuvem do Snowflake com uma atividade de **Consulta** do Campaign e uma atividade **Alterar fonte de dados**: o processo falhava quando um caractere de barra invertida estava presente nos dados. A cadeia de caracteres de origem não tinha escape e os dados não eram processados corretamente no Snowflake. (NEO-45549)
