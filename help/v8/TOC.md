@@ -7,7 +7,7 @@ title: Documentos do Campaign v8
 source-git-commit: f3090d1da1aaec1a50452bcfbf89e65e2669fc5c
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 87%
       + [Conheça a interface do Campaign](start/campaign-ui.md)
       + [Personalizar a interface do Campaign](start/customize-ui.md)
       + [Gerenciar pastas e visualizações](audiences/folders-and-views.md)
-   + [Do Classic v7 para v8](start/v7-to-v8.md)
+   + [Do Classic v7 para o v8](start/v7-to-v8.md)
    + [Perguntas frequentes](start/campaign-faq.md)
-+ Campaign Management {#campaigns}
++ Gerenciamento de campanhas {#campaigns}
    + [Introdução às campanhas](start/campaigns.md)
    + [Documentação da orquestração de campanha](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR)
    + Enviar mensagens{#send}
@@ -71,7 +71,7 @@ ht-degree: 87%
 + Gerenciamento de privacidade e segurança {#privacy}
    + [Gerenciar solicitações de privacidade](start/privacy.md)
    + [Diretrizes de segurança](config/security.md)
-+ Gerenciamento de decisões {#offers}
++ Gestão de decisões {#offers}
    + [Introdução à interação em tempo real](interaction/interaction.md)
    + [Ambientes e arquitetura](interaction/interaction-architecture.md)
    + [Práticas recomendadas](interaction/interaction-best-practices.md)
@@ -95,11 +95,11 @@ ht-degree: 87%
 + Gerenciamento de dados {#data}
    + [Introdução a workflows](config/workflows.md)
    + [Importar dados](start/import.md)
-   + [Documentação do workflow](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
+   + [Documentação do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
 + Integrações {#connect}
-   + [Conectar o Campaign com outras soluções](connect/integration.md)
-   + [Campanha + Experience Platform](connect/ac-aep.md)
-   + [Campanha + Journey Optimizer](connect/ac-ajo.md)
+   + [Conectar o Campaign a outras soluções](connect/integration.md)
+   + [Campaign + Experience Platform](connect/ac-aep.md)
+   + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
