@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Tópico da interface do usuário da web1
+title: Tópico1 da webUI
 description: webUI
 hide: true
 source-git-commit: 07010d0253637bce4df62f7bfa1fd37fb9fb8e7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '19'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# WebUI Conceito 1 Tópico 1 {#c1t1}
+# Conceito 1, Tópico 1 da webUI {#c1t1}
 
 ## Sobre o tópico 1
 
-Saiba mais sobre o tópico 2 em [esta página](../concept2/topic2.md).
-Aprenda este outro tópico [here](../../automation/workflow/about-workflows.md)
+Saiba mais sobre o conceito2, tópico 2 [nesta página](../concept2/topic2.md).
+Saiba mais sobre esse outro tópico [aqui](../../automation/workflow/about-workflows.md)
