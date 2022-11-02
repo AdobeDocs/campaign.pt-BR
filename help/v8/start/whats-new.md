@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 0d9acc431efddc500701996996f846132eeafcdb
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '877'
 ht-degree: 100%
 
 ---
@@ -73,7 +73,7 @@ Os principais recursos incluem:
 >
 >* O Campaign v8 está disponível **somente** como um Managed Cloud Service e não pode ser implantado em ambientes locais ou híbridos.
 >
->* A migração de um ambiente do Campaign Classic v7 existente ainda não está disponível.
+>* A migração automatizada de um ambiente existente do Campaign Classic v7 ainda não está disponível.
 
 
 
