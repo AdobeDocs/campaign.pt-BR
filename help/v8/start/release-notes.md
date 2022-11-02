@@ -6,16 +6,24 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: f215d10c2b8deffc73407bfc39628e2f7958650c
+source-git-commit: ad5444284a3886f02c97e94952898e1836c6b7c3
 workflow-type: tm+mt
-source-wordcount: '3368'
-ht-degree: 100%
+source-wordcount: '3391'
+ht-degree: 99%
 
 ---
 
 # Versão mais recente{#latest-release}
 
 Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign v8**.
+
+## Versão 8.4.2 {#release-8-4-2}
+
+_28 de outubro de 2022_
+
+**Aprimoramentos**
+
+* Correção de um problema que impedia que o indicador de entrega Bem-sucedido fosse atualizado corretamente ao usar o MTA aprimorado do Adobe Campaign. (NEO-50462)
 
 ## Versão 8.4.1 {#release-8-4-1}
 
