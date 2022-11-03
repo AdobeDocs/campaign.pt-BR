@@ -4,7 +4,7 @@ description: Saiba como criar cubos
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 38%
@@ -58,7 +58,7 @@ Para criar um cubo, aplique as seguintes etapas:
 1. Selecione a tabela de trabalho. [Saiba mais](#select-the-work-table).
 1. Definir dimensões. [Saiba mais](#define-dimensions).
 1. Definir medidas. [Saiba mais](#build-indicators).
-1. Criar agregados (opcional). [Saiba mais](cube-best-practices.md#calculate-and-use-aggregates).
+1. Criar agregados (opcional). [Saiba mais](customize-cubes.md#calculate-and-use-aggregates).
 
 No exemplo abaixo, saiba como criar rapidamente um cubo simples em um relatório para exportar suas medidas.
 
@@ -90,7 +90,7 @@ Para criar dimensões, siga as etapas abaixo:
 
 1. Neste exemplo, estamos selecionando o recipient **Idade**. Para esse campo, você pode definir uma compartimentalização para agrupar idades e facilitar a leitura das informações. Recomendamos o uso de compartimentalização quando houver a probabilidade de vários valores separados.
 
-Para fazer isso, marque a opção **[!UICONTROL Enable binning]**. [Saiba mais](cube-best-practices.md#data-binning).
+Para fazer isso, marque a opção **[!UICONTROL Enable binning]**. [Saiba mais](customize-cubes.md#data-binning).
 
 1. Adicione uma dimensão do tipo **Data.** Aqui, queremos exibir as datas de criação do perfil de recipient.. Para fazer isso, clique em **[!UICONTROL Add]** e selecione o campo **[!UICONTROL Creation date]** na tabela de recipients.
 Você pode personalizar o modo de exibição de data. Para fazer isso, selecione a hierarquia a ser usada e os níveis para gerar:
@@ -109,7 +109,7 @@ Selecione a enumeração na lista suspensa.. Observe que essa enumeração deve 
 
 Somente os valores na enumeração serão exibidos. Os outros serão agrupados pelo rótulo indicado no campo **[!UICONTROL Label of the other values]**.
 
-Para obter mais informações, consulte [esta seção](cube-best-practices.md#dynamically-manage-bins).
+Para obter mais informações, consulte [esta seção](customize-cubes.md#dynamically-manage-bins).
 
 ### Criar indicadores {#build-indicators}
 
@@ -124,7 +124,7 @@ Para criar indicadores, siga as etapas abaixo:
 
    ![](assets/cube-new-measure.png)
 
-   Use o **[!UICONTROL Filter the measure data...]** link para selecionar somente mulheres. [Saiba mais](cube-best-practices.md#define-measures).
+   Use o **[!UICONTROL Filter the measure data...]** link para selecionar somente mulheres. [Saiba mais](customize-cubes.md#define-measures).
 
    ![](assets/cube-filter-measure-data.png)
 
