@@ -3,10 +3,11 @@ product: campaign
 title: Templates de campanha de marketing
 description: Templates de campanha de marketing
 feature: Campaigns, Templates
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
+source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 55%
+source-wordcount: '999'
+ht-degree: 54%
 
 ---
 
@@ -165,10 +166,9 @@ Ao criar um template de campanha, você precisa inserir as seguintes informaçõ
 
 * Insira o **label** do modelo: o rótulo é obrigatório e é o rótulo padrão para todas as campanhas com base nesse template.
 * Selecione a **natureza** da campanha na lista suspensa. Os valores disponíveis nesta lista são os que foram salvos na lista discriminada **[!UICONTROL natureOp]**.
-   <!--
-  >[!NOTE]
-  >
-  >For more information on enumerations, refer to the [Getting Started](../../platform/using/managing-enumerations.md) section.-->
+
+Saiba como acessar e configurar suas enumerações em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}.
+
 
 * Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os templates de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas [nesta seção](recurring-periodic-campaigns.md).
 * Especifique a duração da campanha, ou seja, o número de dias em que a campanha ocorrerá. Ao criar uma campanha com base nesse template, as datas de início e término da campanha serão preenchidas automaticamente.

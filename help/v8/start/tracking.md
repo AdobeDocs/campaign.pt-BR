@@ -5,9 +5,9 @@ feature: Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '880'
 ht-degree: 50%
 
 ---
@@ -109,7 +109,7 @@ Este relatório combina os principais indicadores para rastrear o comportamento 
 
 As diferentes tabelas fornecem a lista de indicadores usados nos diferentes relatórios e suas fórmulas de cálculo, dependendo do tipo de delivery.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/indicator-calculation.html?lang=en#reporting){target=&quot;_blank&quot;}
+[Saiba mais](../reporting/metrics-calculation.md)
 
 ## Diretrizes de monitoramento
 

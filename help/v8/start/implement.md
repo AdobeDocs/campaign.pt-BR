@@ -5,10 +5,10 @@ feature: Overview
 role: User, Admin, Developer
 level: Beginner, Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1170'
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Você pode personalizar diversas áreas e recursos do Campaign. A maioria de nos
 
    Além dos relatórios integrados, o Adobe Campaign permite gerar relatórios em vários contextos para atender a diferentes necessidades. Os princípios de uso e dos modos de implementação são detalhados neste documento.
 
-   ![](../assets/do-not-localize/glass.png) Saiba mais sobre os recursos de relatórios no Campaign [nesta página](reporting.md).
+   ![](../assets/do-not-localize/glass.png) Saiba mais sobre os recursos de relatórios no Campaign [nesta página](../reporting/gs-reporting.md).
 
 
 ## Configurar automação de campanha
