@@ -4,10 +4,10 @@ description: Saiba como criar cubos
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: bd39a18178edec2730707f0323a19c9d1c80cd76
+source-git-commit: bead34ec59f6f3dca0fbec8460d58ec7da2ed76f
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 75%
+source-wordcount: '525'
+ht-degree: 77%
 
 ---
 
@@ -20,11 +20,6 @@ Use os recursos de análise de marketing para analisar e medir dados, calcular e
 É possível ampliar o recursos de exploração e análise do banco de dados e, ao mesmo tempo, facilitar para os usuários finais a configuração de relatórios e tabelas: basta selecionar um cubo existente (totalmente configurado) ao criar os relatórios ou as tabelas para processar cálculos, medidas e estatísticas.
 
 Os cubos são usados para gerar determinados relatórios internos, incluindo [relatórios do delivery](delivery-reports.md) (rastreamento de delivery, cliques, aberturas etc.).
-
->[!CAUTION]
->
->Em um [[!DNL Snowflake] Implantação FDA (padrão)](../architecture/fda-deployment.md), os relatórios baseados em cubos só podem ser usados para volumes de dados em 5 milhões de linhas de fatos.
-
 
 Depois que tiverem sido criados e configurados, os cubos serão usados em caixas de query de relatório e aplicação web. Eles podem ser utilizados e manipulados dentro de tabelas dinâmicas.
 
