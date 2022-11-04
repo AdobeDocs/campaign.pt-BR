@@ -3,9 +3,9 @@ product: campaign
 title: Consulta
 description: Saiba mais sobre a atividade do workflow de query
 feature: Workflows, Targeting Activity, Query Editor
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1568'
 ht-degree: 98%
 
 ---
@@ -176,12 +176,6 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
    Um erro comum é: `iBlacklist='3'` where `iBlacklist` é um campo numérico e `3` significa um valor de texto.
 
    Verifique se você sabe qual será o plano de execução da consulta. Evite varreduras completas de tabelas, especialmente para consultas em tempo real ou consultas quase em tempo real em execução a cada minuto.
-
-   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
-
-   !
-
-   ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
 
 ### Funções {#functions}
 

@@ -3,9 +3,9 @@ product: campaign
 title: Centro de Mensagens (Execução)
 description: Centro de Mensagens (Execução)
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '203'
 ht-degree: 100%
 
 ---
@@ -13,15 +13,7 @@ ht-degree: 100%
 
 # Centro de Mensagens (Execução){#message-center-execution}
 
-
-
 Os workflows detalhados abaixo são instalados com o complemento **Centro de Mensagens – Execução** por padrão.
-
-Para mais informações, dependendo da versão do Campaign, consulte estas seções:
-
-!
-
-![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=pt-BR)
 
 <table> 
  <tbody> 
