@@ -5,14 +5,14 @@ description: Saiba como criar e usar templates de delivery no Campaign
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 822d1bee472330b6195ad9527a7e23e90c7650b4
+source-git-commit: 1c0015a02ff950d9bf9d33aacebf899db9e580fa
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '699'
 ht-degree: 50%
 
 ---
 
-# Trabalhar com o template de delivery{#creating-a-delivery-template}
+# Trabalhar com o template de delivery{#work-with-delivery-template}
 
 Use templates do delivery para padronizar a aparência criativa, a fim de ser mais rápido na execução e na inicialização de campanhas.
 
@@ -27,9 +27,12 @@ Um modelo pode incluir sistematicamente:
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#delivery-template-video)
 
+
+## Criar um modelo{#create-a-delivery-template}
+
 Para criar um template de delivery, você pode duplicar um template incorporado, converter um delivery existente em um template ou criar um template de delivery do zero.
 
-## Copiar um modelo existente{#copy-an-existing-template}
+### Duplicação de um template existente{#copy-an-existing-template}
 
 O Campaign vem com um conjunto de modelos incorporados para cada canal: email, push, SMS, mala direta e muito mais.
 
@@ -51,7 +54,7 @@ O template é adicionado à lista de templates do delivery. Agora é possível s
 
 ![](assets/select-the-new-template.png)
 
-## Converter um delivery existente em um template {#convert-an-existing-delivery}
+### Converter um delivery existente em um template {#convert-an-existing-delivery}
 
 Uma entrega pode ser convertida em um modelo para novas ações de entrega repetidas.
 
@@ -67,7 +70,7 @@ Para converter um delivery em um template, siga as etapas abaixo:
 
    ![](assets/template-select-folders.png)
 
-## Criar um novo modelo {#create-a-new-template}
+### Criar um novo modelo {#create-a-new-template}
 
 >[!NOTE]
 >
@@ -87,7 +90,9 @@ Para configurar um template de delivery do zero, siga as etapas abaixo:
 1. Clique em **Save**. Seu template está pronto para ser usado em um delivery.
 
 
-## Criar um delivery a partir de um modelo{#create-a-delivery-from-a-template}
+## Usar modelos{#use-a-delivery-template}
+
+### Criar um delivery a partir de um modelo{#create-a-delivery-from-a-template}
 
 Para criar uma entrega com base em um modelo existente, selecione um modelo disponível na lista..
 
