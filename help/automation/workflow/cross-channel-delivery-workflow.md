@@ -3,16 +3,15 @@ product: campaign
 title: Workflow de delivery entre canais
 description: Saiba mais sobre os workflows de delivery entre canais
 feature: Workflows, Channels Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
+source-git-commit: 5b4d569a6e96c93828f63fb8376eb81301829854
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 93%
+source-wordcount: '626'
+ht-degree: 90%
 
 ---
 
 # Workflow de delivery entre canais{#cross-channel-delivery-workflow}
-
-
 
 Esse caso de uso apresenta um exemplo envolvendo um workflow de delivery entre canais. O conceito geral de deliveries entre canais é apresentado [nesta seção](cross-channel-deliveries.md).
 
@@ -30,7 +29,7 @@ As principais etapas de implementação para este caso de uso são as seguintes:
 
 ![](assets/wkf_cross-channel_7.png)
 
-## Etapa 1: Direcionamento de público {#step-1--targeting-the-audience}
+## Etapa 1: Criar o público-alvo {#step-1--build-the-audience}
 
 Para definir seu target, crie uma query para identificar os recipients.
 
@@ -43,9 +42,9 @@ Para definir seu target, crie uma query para identificar os recipients.
 
 1. Salve as alterações.
 
-## Etapa 2: Criação de um email incluindo uma oferta {#step-2--creating-an-email-including-an-offer}
+## Etapa 2: Criar um email incluindo uma oferta {#step-2--create-an-email-including-an-offer}
 
-1. Crie um ** .
+1. Crie um delivery de email
 1. Crie a mensagem e insira um link incluindo uma oferta no conteúdo.
 
    ![](assets/wkf_cross-channel_1.png)
@@ -64,7 +63,7 @@ Para definir seu target, crie uma query para identificar os recipients.
 
    ![](assets/wkf_cross-channel_4.png)
 
-## Etapa 3: Segmentação do público resultante {#step-3--segmenting-the-resulting-audience}
+## Etapa 3: Segmentar o público resultante {#step-3--segment-the-resulting-audience}
 
 Depois que seu target for identificado e seu primeiro fornecimento for criado, será necessário segmentar o target em diferentes populações usando condições de filtro.
 
@@ -100,7 +99,7 @@ Depois que seu target for identificado e seu primeiro fornecimento for criado, s
 
 1. Clique em **[!UICONTROL Finish]** para salvar as alterações.
 
-## Etapa 4: Finalização do workflow {#step-4--finalizing-the-workflow}
+## Etapa 4: Finalizar o workflow {#step-4--finalize-the-workflow}
 
 1. Adicione as atividades relevantes ao workflow após os três subconjuntos resultantes da atividade **[!UICONTROL Split]**:
 

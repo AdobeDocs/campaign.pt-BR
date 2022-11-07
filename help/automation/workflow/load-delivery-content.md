@@ -3,16 +3,15 @@ product: campaign
 title: Carregar conteúdo do delivery
 description: Carregamento de conteúdo do delivery
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 08febcbc-1703-4d36-89e1-32c903618084
+source-git-commit: 9dfb1acd97e529a8b60119154b3728c883dd9c97
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 96%
+source-wordcount: '304'
+ht-degree: 100%
 
 ---
 
 # Carregar conteúdo do delivery{#loading-delivery-content}
-
-
 
 Se o conteúdo de delivery estiver disponível em um arquivo HTML localizado em servidores Amazon S3, FTP ou SFTP, é possível carregar facilmente esse conteúdo nos deliveries do Adobe Campaign.
 
@@ -51,6 +50,3 @@ Para fazer isso:
 
 1. Salve e execute o workflow. Um novo delivery com o conteúdo carregado é criado em **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
->[!NOTE]
->
->As práticas recomendadas e a solução de problemas no uso do servidor SFTP são detalhadas .
