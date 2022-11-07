@@ -3,7 +3,7 @@ product: campaign
 title: Enviar um relatório a uma lista
 description: Saiba como enviar um relatório para uma lista com um fluxo de trabalho
 feature: Workflows
-source-git-commit: e211c0f01a4813ad29f47652fffac2b44bc0f867
+source-git-commit: 4c3caa8e31c2076d32a03a8778a28edce50cde63
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 40%
@@ -67,7 +67,7 @@ Para criar o template do delivery, siga as etapas abaixo:
 
    * Selecione a guia **[!UICONTROL Advanced]** e marque **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Na zona de texto, digite o nome do anexo no delivery final.
 
-      ![](assets/use_case_report_6bis.png)
+      ![](assets/use_case_report_6b.png)
 
 ## Etapa 3: Criar o workflow {#step-3--creating-the-workflow}
 
