@@ -3,16 +3,17 @@ product: campaign
 title: Configurar regras de filtragem
 description: Saiba como configurar regras de filtragem
 feature: Typology Rules
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
+source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 98%
+source-wordcount: '523'
+ht-degree: 77%
 
 ---
 
 # Regras de filtro{#filtering-rules}
 
-Regras de filtragem permitem definir as mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma targeting dimension.
+Use as regras de filtragem para selecionar mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma targeting dimension.
 
 As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtragem** dedicada. [Saiba mais](#create-and-use-a-filtering-typology).
 
@@ -22,11 +23,12 @@ Por exemplo, você pode filtrar os assinantes do boletim informativo para evitar
 
 Para definir esse filtro, aplique as seguintes etapas:
 
-1. Crie uma regra de tipologia **[!UICONTROL Filtering]** aplicável a todos os canais de comunicação.
+1. Navegue até o **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** pasta do Campaign Explorer e clique no link **Novo** ícone para criar uma regra de tipologia.
+1. Crie um **[!UICONTROL Filtering]** regra de tipologia aplicável a todos os canais.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Altere a targeting dimension padrão e selecione as assinaturas (**nms:subscription**).
+1. No **Filtro** altere o targeting dimension padrão para **Subscrições** (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -34,11 +36,15 @@ Para definir esse filtro, aplique as seguintes etapas:
 
    ![](assets/campaign_opt_create_filter_03.png)
 
-1. Vincule essa regra a uma tipologias de campanha e salve-a.
+1. Filtre a idade do recipient e salve a condição de filtragem.
+
+   ![](assets/campaign_opt_create_filter_03b.png)
+
+1. No **Tipologias** , vincule essa regra a uma tipologia de campanha e salve-a.
 
    ![](assets/campaign_opt_create_filter_04.png)
 
-Quando essa regra for usada em um delivery, os assinantes menores de idade serão excluídos automaticamente. Uma mensagem específica indica a regra do aplicativo:
+Quando essa regra for usada em um delivery, os assinantes menores de idade serão excluídos automaticamente. Uma mensagem específica indica quando a regra é aplicada:
 
 ![](assets/campaign_opt_create_filter_05.png)
 
@@ -46,9 +52,11 @@ Quando essa regra for usada em um delivery, os assinantes menores de idade serã
 
 Você poderá restringir o campo da aplicação na regra de filtragem com base na entrega ou na estrutura de entrega vinculada.
 
-Para fazer isso, vá para a guia **[!UICONTROL General]** da regra de tipologia, selecione o tipo de restrição a ser aplicado e crie o filtro, conforme mostrado abaixo:
-
+Para fazer isso, acesse o **[!UICONTROL General]** da regra de tipologia, selecione o tipo de restrição a ser aplicado e crie o filtro.
+<!--
 ![](assets/campaign_opt_create_filter_06.png)
+-->
+
 
 Nesse caso, mesmo que a regra esteja vinculada a todos os deliveries, ela só será aplicada àqueles que correspondam aos critérios do filtro definido.
 

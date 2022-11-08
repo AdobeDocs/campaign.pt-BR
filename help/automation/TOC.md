@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Guia de automação de campanha
 user-guide-description: Guia de automação de campanha
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -40,11 +40,11 @@ ht-degree: 85%
          + [Mudar dimensão](workflow/change-dimension.md)
          + [Conector CRM](workflow/crm-connector.md)
          + [Desduplicação](workflow/deduplication.md)
-         + [Delivery outline](workflow/delivery-outline.md)
+         + [Outline de entrega](workflow/delivery-outline.md)
          + [Editar esquema](workflow/edit-schema.md)
          + [Enriquecimento](workflow/enrichment.md)
          + [Exclusão](workflow/exclusion.md)
-         + [Query incremental](workflow/incremental-query.md)
+         + [Consulta incremental](workflow/incremental-query.md)
          + [Intersecção](workflow/intersection.md)
          + [Atualização de lista](workflow/list-update.md)
          + [Ofertas por célula](workflow/offers-by-cell.md)
@@ -113,7 +113,7 @@ ht-degree: 85%
          + [Usar a funcionalidade de mesclagem da atividade de desduplicação](workflow/deduplication-merge.md)
          + [Configurar um fluxo de trabalho de importação recorrente](workflow/recurring-import-workflow.md)
       + Criar consultas {#designing-queries}
-         + [Atualização da lista trimestral usando um query incremental](workflow/quarterly-list-update.md)
+         + [Atualização da lista trimestral usando uma consulta incremental](workflow/quarterly-list-update.md)
       + Consulta e filtro {#designing-queries}
          + [Consultar a tabela de recipients](workflow/querying-recipient-table.md)
          + [Consultar informações da entrega](workflow/query-delivery-info.md)
@@ -138,17 +138,17 @@ ht-degree: 85%
    + [Criar e configurar modelos](campaigns/marketing-campaign-templates.md)
    + [Adicionar entregas](campaigns/marketing-campaign-deliveries.md)
    + [Selecionar o público](campaigns/marketing-campaign-target.md)
-   + [Gerenciar documentos e assets](campaigns/marketing-campaign-assets.md)
+   + [Gerenciar documentos e ativos](campaigns/marketing-campaign-assets.md)
    + [Configurar e gerenciar aprovações](campaigns/marketing-campaign-approval.md)
    + [Campanhas recorrentes e periódicas](campaigns/recurring-periodic-campaigns.md)
    + [Monitorar suas campanhas](campaigns/marketing-campaign-monitoring.md)
    + [Provedores, estoques e orçamentos](campaigns/providers--stocks-and-budgets.md)
 + Otimização de campanha (complemento){#campaign-optimization}
    + [Introdução às tipologias de campanha](campaign-opt/campaign-typologies.md)
+   + [Regras de filtro](campaign-opt/filtering-rules.md)
+   + [Regras de controle](campaign-opt/control-rules.md)
    + [Regras de pressão](campaign-opt/pressure-rules.md)
    + [Regras de consistência](campaign-opt/consistency-rules.md)
-   + [Regras de controle](campaign-opt/control-rules.md)
-   + [Regras de filtragem](campaign-opt/filtering-rules.md)
    + [Aplicar regras](campaign-opt/apply-rules.md)
    + [Simulações de campanha](campaign-opt/campaign-simulations.md)
 + Marketing distribuído (complemento) {#distributed-marketing}
