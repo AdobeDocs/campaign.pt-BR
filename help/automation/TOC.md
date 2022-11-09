@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Guia de automação de campanha
 user-guide-description: Guia de automação de campanha
-source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
+source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 87%
+source-wordcount: '447'
+ht-degree: 86%
 
 ---
 
@@ -151,8 +151,14 @@ ht-degree: 87%
    + [Regras de consistência](campaign-opt/consistency-rules.md)
    + [Aplicar regras](campaign-opt/apply-rules.md)
    + [Simulações de campanha](campaign-opt/campaign-simulations.md)
++ Gerenciamento de recursos de marketing {#mrm}
+   + [Introdução ao gerenciamento de recursos de marketing (MRM)](mrm/about-marketing-resource-management.md)
+   + [Criar e gerenciar tarefas](mrm/creating-and-managing-tasks.md)
+   + [Controlar custos](mrm/controlling-costs.md)
+   + [Gerenciar recursos de marketing](mrm/managing-marketing-resources.md)
+   + [Fóruns de discussão](mrm/discussion-forums.md)
 + Marketing distribuído (complemento) {#distributed-marketing}
-   + [Sobre marketing distribuído](distributed-marketing/about-distributed-marketing.md)
+   + [Introdução ao marketing distribuído](distributed-marketing/about-distributed-marketing.md)
    + [Criar uma campanha local](distributed-marketing/creating-a-local-campaign.md)
    + [Criar uma campanha colaborativa](distributed-marketing/creating-a-collaborative-campaign.md)
    + [Publicar o pacote da campanha](distributed-marketing/publishing-the-campaign-package.md)
