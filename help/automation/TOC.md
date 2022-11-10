@@ -2,7 +2,7 @@
 audience: user
 user-guide-title: Guia de automação de campanha
 user-guide-description: Guia de automação de campanha
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 86%
@@ -30,7 +30,7 @@ ht-degree: 86%
    + Monitorar workflows {#monitoring-workflows}
       + [Monitorar a execução do fluxo de trabalho](workflow/monitor-workflow-execution.md)
       + [Monitorar workflows técnicos](workflow/monitor-technical-workflows.md)
-      + [Workflow HeatMap](workflow/heatmap.md)
+      + [HeatMap de fluxo de trabalho](workflow/heatmap.md)
    + Atividades de fluxos de trabalho {#wf-activities}
       + [Introdução a atividades](workflow/activities.md)
       + Atividades de direcionamento {#targeting-activities}
@@ -65,7 +65,7 @@ ht-degree: 86%
          + [Jump (ponto inicial e ponto final)](workflow/jump--start-point-and-end-point-.md)
          + [Início e término](workflow/start-and-end.md)
          + [Scheduler](workflow/scheduler.md)
-         + [Sub-workflow](workflow/sub-workflow.md)
+         + [Subfluxo de trabalho](workflow/sub-workflow.md)
          + [Teste](workflow/test.md)
          + [Restrição de tempo](workflow/time-constraint.md)
          + [Aguardar](workflow/wait.md)
@@ -77,8 +77,8 @@ ht-degree: 86%
          + [Extração de dados (arquivo)](workflow/extraction--file-.md)
          + [Carregamento de dados (arquivo)](workflow/data-loading--file-.md)
          + [Carregamento de dados (RDBMS)](workflow/data-loading--rdbms-.md)
-         + [Delivery](workflow/delivery.md)
-         + [Controle de Delivery](workflow/delivery-control.md)
+         + [Entrega](workflow/delivery.md)
+         + [Controle de entrega](workflow/delivery-control.md)
          + [Aprovação local](workflow/local-approval.md)
          + [Carregamento (SOAP)](workflow/loading-soap.md)
          + [Módulo nlserver](workflow/nlserver-module.md)
@@ -151,8 +151,8 @@ ht-degree: 86%
    + [Regras de consistência](campaign-opt/consistency-rules.md)
    + [Aplicar regras](campaign-opt/apply-rules.md)
    + [Simulações de campanha](campaign-opt/campaign-simulations.md)
-+ Gerenciamento de recursos de marketing {#mrm}
-   + [Introdução ao gerenciamento de recursos de marketing (MRM)](mrm/about-marketing-resource-management.md)
++ Gerenciamento de recursos de marketing (add-on){#mrm}
+   + [Introdução ao gerenciamento de recursos de marketing](mrm/about-marketing-resource-management.md)
    + [Criar e gerenciar tarefas](mrm/creating-and-managing-tasks.md)
    + [Controlar custos](mrm/controlling-costs.md)
    + [Gerenciar recursos de marketing](mrm/managing-marketing-resources.md)
