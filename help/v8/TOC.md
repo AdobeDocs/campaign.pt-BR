@@ -5,9 +5,9 @@ description: Documentação do Campaign v8
 breadcrumb-title: Visão geral da campanha
 title: Documentos do Campaign v8
 source-git-commit: 43e515339a2483e82910603daf6009cad63eeeae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 93%
    + [Documentação da orquestração de campanha](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR)
    + Enviar mensagens{#send}
       + [Introdução a mensagens](start/create-message.md)
-      + [Trabalhar com templates de delivery](send/create-templates.md)
+      + [Trabalho com modelos de entrega](send/create-templates.md)
       + Emails {#emails}
          + [Criar e validar emails](send/email.md)
          + [Enviar e monitorar emails](send/send.md)
@@ -92,15 +92,15 @@ ht-degree: 93%
    + [Casos de uso](interaction/interaction-use-cases.md)
 + Relatórios e análises {#analytics}
    + [Rastrear e monitorar](start/tracking.md)
-   + Trabalhar com relatórios{#reports}
-      + [Introdução a relatórios](reporting/gs-reporting.md)
-      + Criar cubos, {#cubes}
+   + Trabalho com relatórios{#reports}
+      + [Introdução aos relatórios](reporting/gs-reporting.md)
+      + Criar cubos{#cubes}
          + [Introdução aos cubos](reporting/gs-cubes.md)
          + [Criar um cubo](reporting/cube-indicators.md)
          + [Usar cubos para criar relatórios](reporting/cube-tables.md)
-         + [Personalizar os cubos](reporting/customize-cubes.md)
+         + [Personalizar os seus cubos](reporting/customize-cubes.md)
       + Relatórios incorporados{#ac-reports}
-         + [Lista de relatórios internos](reporting/built-in-reports.md)
+         + [Lista de relatórios incorporados](reporting/built-in-reports.md)
          + [Relatórios globais](reporting/global-reports.md)
          + [Relatórios de entrega](reporting/delivery-reports.md)
          + [Cálculo de métricas incorporadas](reporting/metrics-calculation.md)
