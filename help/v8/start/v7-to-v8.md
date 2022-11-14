@@ -8,7 +8,7 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: c267bf2db7dfd524bf2b56c9ae48b42da37c0376
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -66,7 +66,7 @@ Os usuários do Campaign se conectam apenas por meio da Adobe ID. A mesma Adobe 
 
 Use o módulo Marketing Analytics para analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo de relatórios. Além disso, crie relatórios e populações de públicos-alvo: uma vez identificados, eles são armazenados em listas que podem ser usadas no Adobe Campaign (direcionamento, segmentação etc.).
 
-Com o Adobe Campaign v8, os relatórios de cubo são otimizados e proporcionam recursos de melhor escala que o Campaign Classic v7. Nesse modelo de implantação específico, as antigas limitações dos cubos não se aplicam ao Campaign v8. Saiba mais sobre cubos em [esta seção](../../v8/reporting/gs-cubes.md).
+Os relatórios de cubo do Adobe Campaign v8 estão otimizados e oferecem melhores recursos de escala do que o Campaign Classic v7. Nesse modelo de implantação específico, as antigas limitações dos cubos não se aplicam ao Campaign v8. Saiba mais sobre cubos [nesta seção](../../v8/reporting/gs-cubes.md).
 
 ## Recursos indisponíveis{#gs-unavailable-features}
 
