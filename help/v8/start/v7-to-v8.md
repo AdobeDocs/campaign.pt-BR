@@ -1,14 +1,14 @@
 ---
 title: Transição do Campaign Classic v7 para o Campaign v8
-description: Entender as diferenças entre o Campaign Classic v7 e o Campaign v8
+description: Saiba mais sobre as diferenças entre o Campaign Classic v7 e o Campaign v8.
 feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: c267bf2db7dfd524bf2b56c9ae48b42da37c0376
+source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 96%
+source-wordcount: '650'
+ht-degree: 95%
 
 ---
 
