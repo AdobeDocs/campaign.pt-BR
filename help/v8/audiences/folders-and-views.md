@@ -5,10 +5,10 @@ feature: Audiences, Profiles, Application Settings
 role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
-source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
+source-git-commit: 515520bb5b7131fc2ed2d1b2a843373f01af306a
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 7%
+source-wordcount: '672'
+ht-degree: 5%
 
 ---
 
@@ -106,31 +106,4 @@ Por exemplo, a pasta abaixo conterá somente contatos com um endereço de email 
 
 ## Restringir acesso a uma pasta{#restrict-access-to-a-folder}
 
-Use permissões em pastas para organizar e controlar o acesso aos dados do Campaign.
-
-Para editar permissões em uma pasta específica do Campaign, siga as etapas abaixo:
-
-1. Clique com o botão direito do mouse na pasta e selecione **[!UICONTROL Properties...]**.
-1. Navegue até o **[!UICONTROL Security]** para visualizar as autorizações nessa pasta.
-
-   ![](assets/folder-permissions.png)
-
-* Para **autorizar um grupo ou um operador**, clique no botão **[!UICONTROL Add]** e selecione o grupo ou operador para atribuir autorizações para essa pasta.
-* Para **proibir um grupo ou operador**, clique em **[!UICONTROL Delete]** e selecione o grupo ou operador para remover a autorização para essa pasta.
-* Para **selecione os direitos atribuídos a um grupo ou a um operador**, selecione o grupo ou operador, selecione os direitos de acesso que deseja conceder e desmarque os outros.
-
-### Propagar permissões {#propagate-permissions}
-
-Para propagar autorizações e direitos de acesso, selecione o **[!UICONTROL Propagate]** nas propriedades da pasta.
-
-As autorizações definidas nessa janela serão aplicadas a todas as subpastas do nó atual. É sempre possível sobrecarregar essas autorizações para cada uma das subpastas.
-
->[!NOTE]
->
->Desmarcando o **[!UICONTROL Propagate]** A opção para uma pasta não a limpa para as subpastas: você deve limpá-la explicitamente para cada uma das subpastas.
-
-### Conceder acesso a todos os operadores {#grant-access-to-all-operators}
-
-No **[!UICONTROL Security]** selecione a guia **[!UICONTROL System folder]** para permitir acesso a todos os operadores, independentemente de suas permissões.
-
-Se essa opção estiver desmarcada, você deverá adicionar explicitamente o operador (ou seu grupo) de volta à lista de autorizações para que ele tenha acesso.
+Use permissões em pastas para organizar e controlar o acesso aos dados do Campaign. Saiba mais sobre permissões em pastas do [esta seção](../start/folder-permissions.md).

@@ -3,7 +3,7 @@ product: campaign
 title: Workflows de Regulamento de proteção de dados de privacidade
 description: Saiba mais sobre os workflows do Regulamento de proteção de dados de privacidade
 feature: Workflows, Privacy
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: ac4d0d0c16f429ca0948a3c3257558c46700baeb
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
@@ -12,7 +12,6 @@ ht-degree: 100%
 
 
 # Regulamento de proteção de dados de privacidade{#general-data-protection-regulation-gdpr}
-
 
 
 Os workflows detalhados abaixo são instalados com o módulo de **Regulamento de proteção de dados de privacidade** por padrão. Para obter mais informações sobre esse módulo, consulte esta [seção](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html).

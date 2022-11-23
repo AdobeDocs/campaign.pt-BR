@@ -3,7 +3,7 @@ product: campaign
 title: Criar e gerenciar tarefas
 description: Criar e gerenciar tarefas
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 399c81276d29622a2161c8c90395df1a38954763
+source-git-commit: 094743fef69e137f80b670f0bf31dce56c282c34
 workflow-type: tm+mt
 source-wordcount: '3740'
 ht-degree: 87%
@@ -86,7 +86,7 @@ Você pode selecionar um operador diferente da variável **[!UICONTROL Assigned 
 
 >[!NOTE]
 >
->A gestão de operador é apresentada em [esta seção](../../v8/start/permissions.md).
+>A gestão de operador é apresentada em [esta seção](../../v8/start/gs-permissions.md).
 >
 >Somente o operador encarregado de uma tarefa tem permissão para fechá-la.
 

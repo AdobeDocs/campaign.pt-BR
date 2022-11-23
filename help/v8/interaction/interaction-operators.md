@@ -5,51 +5,31 @@ feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 33%
+source-wordcount: '243'
+ht-degree: 37%
 
 ---
 
 # Perfis de operadores {#operator-profiles}
 
-Dois tipos de operadores podem usar a Interação de campanha: **Gerentes de oferta** e **Gerentes de delivery**. Cada um deles tem permissões e restrições específicas. Saiba mais sobre operadores e permissões do Campaign em [esta página](../start/permissions.md).
+Dois tipos de operadores podem usar a Interação de campanha: **Gerentes de oferta** e **Gerentes de delivery**. Cada um deles tem permissões e restrições específicas. Saiba mais sobre operadores e permissões do Campaign em [esta página](../start/gs-permissions.md).
 
 * O **[!UICONTROL Offer manager]** cria e mantém ofertas.
 * O **[!UICONTROL Delivery manager]** aprova e usa ofertas
 
 ## Criar um operador do Offer manager{#offer-manager}
 
-1. Criar um operador.
+1. Criar um operador. [Saiba mais](../start/manage-permissions.md#add-users)
+1. Navegue até o **[!UICONTROL Groups and named rights]** , clique em **[!UICONTROL Add]** e selecione o **[!UICONTROL Offer manager]** grupo.
 
-   ![](../assets/do-not-localize/book.png) As etapas para criar um operador no Campaign são detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
-
-1. Vá para a janela **[!UICONTROL Groups and named rights]**, clique em **[!UICONTROL Add]** e selecione o grupo **[!UICONTROL Offer manager]**.
-
-Os direitos atribuídos ao Gerente de ofertas permitem que eles executem as seguintes tarefas:
-
-* Modificar ambientes **[!UICONTROL Design]**.
-* Visualizar ambientes **[!UICONTROL Live]**.
-* Configurar funções de administração (espaços e filtros predefinidos).
-* Criar e alterar categorias.
-* Criar ofertas.
-* Configurar a qualificação para a oferta.
-* Aprovar ofertas.
-
-Se as ofertas forem usadas em um workflow, o operador deverá ser adicionado ao **[!UICONTROL Administrator]** ou **[!UICONTROL Offer managers]** grupo de operadores para executar o workflow.
-
->[!NOTE]
->
->**Gerentes de oferta** só pode aprovar uma oferta se nenhum revisor for especificado, ou se eles tiverem sido declarados como revisores no template de oferta.
+As permissões associadas aos gerentes de oferta são descritas [here](../start/manage-permissions.md#ootb-productprofiles)
 
 ## Criar um operador Delivery manager {#delivery-manager}
 
-1. Criar um operador.
-
-   ![](../assets/do-not-localize/book.png) As etapas para criar um operador no Campaign são detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
-
-1. Vá para a janela **[!UICONTROL Groups and named rights]**, clique em **[!UICONTROL Add]** e selecione o grupo **[!UICONTROL Delivery manager]**.
+1. Criar um operador. [Saiba mais](../start/manage-permissions.md#add-users)
+1. Navegue até o **[!UICONTROL Groups and named rights]** clique em **[!UICONTROL Add]** e selecione o **[!UICONTROL Delivery manager]** grupo.
 
 Os direitos atribuídos aos Gerentes de delivery permitem que eles executem as seguintes tarefas:
 

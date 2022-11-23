@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 32%
@@ -14,7 +14,7 @@ ht-degree: 32%
 
 # Interface do usuário do Discover Campaign
 
-## Acessar a interface do usuário do Campaign
+## Acessar a interface do usuário do Campaign{#ui-access}
 
 O espaço de trabalho do Campaign está disponível por meio do [Console do cliente](../architecture/general-architecture.md).
 
@@ -24,7 +24,7 @@ Saiba como instalar e configurar o Console do cliente do Campaign em [esta seç�
 
 Você também pode usar um navegador da Web para acessar o Campaign. Nesse contexto, somente um subconjunto de recursos do Campaign está disponível. [Saiba mais](#web-browser)
 
-## Procurar a interface do usuário
+## Procurar a interface do usuário{#ui-browse}
 
 Depois de se conectar ao Campaign, você acessa a página inicial. Navegue pelos links para acessar os recursos. O conjunto de recursos disponíveis na interface do usuário depende de suas opções e permissões.
 
@@ -79,7 +79,7 @@ A seção superior mostra a lista de registros na pasta atual. Essas listas são
 A seção inferior mostra os detalhes do registro selecionado.
 
 
-## Idiomas
+## Idiomas{#languages}
 
 A interface do usuário do Campaign v8 está disponível nos seguintes idiomas:
 
