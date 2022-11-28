@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
 1. **Como configurar a capacidade de entrega de emails?**
 
-   A capacidade de fornecimento de email, um componente essencial para o sucesso do programa de marketing de cada remetente, é caracterizada por critérios e regras em constante mudança. Navegar efetivamente neste mundo digital requer o ajuste regular de sua estratégia de email, considerando as principais tendências de capacidade de entrega, para melhor alcançar seus públicos.
+   A capacidade de entrega de email, um componente crítico para o sucesso do programa de marketing dos remetentes, é caracterizada por critérios e regras em constante mudança. Navegar efetivamente neste mundo digital requer o ajuste regular de sua estratégia de email, considerando as principais tendências de capacidade de entrega, para melhor alcançar seus públicos.
 
    ![](../assets/do-not-localize/book.png) Consulte este manual para conhecer as [Práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR){target=&quot;_blank&quot;}
 
@@ -85,4 +85,4 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;}.
 
-   Esse sistema exige contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso via Experience League e a equipe de Atendimento ao cliente fará com que você configure o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
+   Esse sistema exige contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá seu problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
