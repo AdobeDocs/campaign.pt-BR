@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '650'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Os relatórios de cubo do Adobe Campaign v8 estão otimizados e oferecem melhore
 
 ## Recursos indisponíveis{#gs-unavailable-features}
 
-Observe que alguns recursos não estão disponíveis no contexto de um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md) do Campaign, como:
+Observe que alguns recursos não estão disponíveis no contexto de uma [implantação Corporativa (FFDA)](../architecture/enterprise-deployment.md) do Campaign, como:
 
 * Gerenciamento de recursos de marketing
 * Cupons
