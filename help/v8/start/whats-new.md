@@ -6,15 +6,15 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '889'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Quais são as novidades do Adobe Campaign v8? {#ac-gs-what-is-new}
 
-O Adobe Campaign v8 foi projetado para profissionais de marketing de vários canais que precisam da melhor solução em nuvem do setor para o gerenciamento de campanhas em vários canais com escala corporativa. Ele oferece recursos avançados de ETL e gerenciamento de dados para ajudar a criar e preparar a campanha perfeita. Seu mecanismo de orquestração fornece programas de marketing multitoque avançados com foco principal em jornadas orientadas por lote. Ele também vem junto com um servidor de mensagens em tempo real escalável que permite que as equipes de marketing enviem mensagens predefinidas com base em uma carga abrangente de qualquer sistema de TI para coisas como redefinição de senha, confirmação de pedido, e-receipt&#39;s e muito mais.
+O Adobe Campaign v8 foi projetado para profissionais de marketing de vários canais que precisam da melhor solução em nuvem do setor para o gerenciamento de campanhas em vários canais com escala corporativa. Ele oferece recursos avançados de ETL e gerenciamento de dados para ajudar a criar e preparar a campanha perfeita. Seu mecanismo de orquestração fornece programas de marketing multitoque avançados com foco principal em jornadas orientadas por lote. Ele também vem com um servidor de mensagens escalável em tempo real que permite que as equipes de marketing enviem mensagens predefinidas com base em um conteúdo abrangente a partir de qualquer sistema de TI para realizar tarefas como redefinição de senha, confirmação de pedido, geração de recibos eletrônicos e muito mais.
 
 O Adobe Campaign v8 oferece aprimoramentos significativos em infraestrutura, segurança, capacidade de entrega e monitoramento.
 
