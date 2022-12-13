@@ -5,10 +5,10 @@ type: Event
 description: Notas técnicas da campanha
 breadcrumb-title: Notas técnicas do Campaign
 title: Notas técnicas da campanha
-source-git-commit: 6dceac03868db1aa43f02f4807569d9c16801ec7
+source-git-commit: 99b8b36deba39323f59755a3ed1f935a831f93d9
 workflow-type: tm+mt
-source-wordcount: '31'
-ht-degree: 29%
+source-wordcount: '33'
+ht-degree: 33%
 
 ---
 
@@ -19,4 +19,5 @@ ht-degree: 29%
 + Atualizações{#tn-new}
    + [Atualizar a versão do Apache](upgrades/apache.md)
    + [Navegadores da Internet](upgrades/browsers.md)
+   + [Atualizações de sistema de 2023](upgrades/tech-stack-upgrade.md)
 + [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
