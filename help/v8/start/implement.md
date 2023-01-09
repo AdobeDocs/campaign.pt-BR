@@ -5,39 +5,44 @@ feature: Overview
 role: User, Admin, Developer
 level: Beginner, Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 504b67ef9f20466e0d426b6a96f1dc4c6748d303
+source-git-commit: a2c30979be786ce8374857eb270ba71ec0e1b2a3
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 100%
+source-wordcount: '1197'
+ht-degree: 89%
 
 ---
 
-# Diretrizes de implementação do Campaign
+# Diretrizes de implementação do Campaign{#gs-implementation}
 
-Nesta seção, você aprenderá a ajustar o Adobe Campaign às necessidades da sua empresa. Use as diretrizes a seguir para estruturar e organizar sua implementação.
+Nesta seção, saiba como ajustar o Adobe Campaign às necessidades de sua empresa. Use as diretrizes a seguir para estruturar e organizar sua implementação.
 
-1. **Definir configurações**: conceder acesso, compartilhar o console do cliente, configurar canais (email, push, sms)
-1. **Preparar seu ambiente**: importar perfis, criar públicos, criar fluxo de trabalho e modelos de campanha, criar regras de tipologia
-1. **Personalizar sua instância**: criar novos campos de dados, adicionar tabelas/esquemas
-1. **Estender sua implantação**: conectar-se a soluções Adobe, outros produtos e sistemas — conectores, configurações de várias soluções
+1. **Definir configurações**: conceder acesso, compartilhar o console do cliente, configurar canais (email, push, sms). [Saiba mais](#implementation-ac-settings)
+1. **Preparar seu ambiente**: importar perfis, criar públicos, criar fluxo de trabalho e modelos de campanha, criar regras de tipologia. [Saiba mais](#implementation-prepare-your-env)
+1. **Personalizar sua instância**: criar novos campos de dados, adicionar tabelas/esquemas. [Saiba mais](#implementation-custom-your-instance)
+1. **Automatizar seus processos**: configure os recursos de automação do Adobe Campaign. [Saiba mais](#implementation-automation)
+1. **Estender sua implantação**: conectar-se a soluções Adobe, outros produtos e sistemas — conectores, configurações de várias soluções. [Saiba mais](#implementation-extend)
 
 >[!CAUTION]
 >
->Com o **Campaign Managed Cloud Services**, o ambiente e a configuração inicial foram definidos pela Adobe, de acordo com os termos do contrato de licença. Você não tem permissão para modificar pacotes incorporados instalados, esquemas ou relatórios incorporados.
+>Com **Cloud Services gerenciados da campanha**, seu ambiente e configuração inicial são definidos pelo Adobe, de acordo com os termos do contrato de licença. Você não tem permissão para modificar pacotes incorporados instalados, esquemas integrados ou relatórios.
 >
 >Se precisar usar um complemento do Campaign ou um recurso específico que não foi fornecido para você, entre em contato com o **Atendimento ao cliente da Adobe**.
 
-## Antes de começar
+## Antes de começar{#before-starting}
 
 Esta seção contém informações críticas sobre privacidade e segurança que precisam ser examinadas e consideradas antes mesmo de iniciar a implementação real.
 
-### Privacidade
+### Privacidade{#implementation-privacy}
 
 O Adobe Campaign vem com processos e configurações que permitem usar o Campaign em conformidade com as leis de privacidade de dados aplicáveis e as preferências do recipient. Você pode gerenciar:
 
-* **Aquisição de dados**: o Adobe Campaign permite que você colete dados, incluindo informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus recipients. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#data-acquisition){target=&quot;_blank&quot;}
+* **Aquisição de dados**: o Adobe Campaign permite que você colete dados, incluindo informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus recipients.
 
-* **Consentimento do usuário e retenção de dados**: saiba como obter consentimento do usuário, configurar mecanismos de subscrição de participação dupla, facilitar a opção de não participação e configurar a retenção de dados na [documentação de privacidade do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#consent){target=&quot;_blank&quot;}
+   Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#data-acquisition){target=&quot;_blank&quot;}
+
+* **Consentimento do usuário e retenção de dados**: você deve obter o consentimento do usuário, configurar mecanismos de participação dupla, facilitar a recusa e configurar a retenção de dados.
+
+   Saiba mais em [Documentação de privacidade do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#consent){target=&quot;_blank&quot;}
 
 * **Regulamentos de proteção de dados e privacidade**: consulte [esta seção](privacy.md) para obter mais informações sobre os requisitos de privacidade e como esses regulamentos afetam sua organização e o Adobe Campaign.
 
@@ -45,25 +50,25 @@ O Adobe Campaign vem com processos e configurações que permitem usar o Campaig
 
 Saiba mais sobre as diretrizes e princípios de segurança com o Adobe Campaign na [Lista de verificação de segurança do Campaign](../config/security.md).
 
-## Definir configurações do Campaign
+## Definir configurações do Campaign{#implementation-ac-settings}
 
-### Adicionar usuários e conceder permissões
+### Adicionar usuários e conceder permissões{#implementation-add-users}
 
 Você pode adicionar usuários manualmente ao Campaign e associá-los a grupos, alinhados à sua hierarquia de funções. Os usuários poderão fazer logon e acessar os dados e permissões apropriados para eles.
 
 ![](../assets/do-not-localize/glass.png) Saiba como adicionar usuários ao Adobe Campaign [nesta seção](../start/gs-permissions.md).
 
-### Instalar o console do cliente do Campaign
+### Instalar o console do cliente do Campaign{#implementation-install-console}
 
 A principal interface de usuário do aplicativo é um cliente avançado, em outras palavras, um aplicativo nativo (Windows) que se comunica com o servidor de aplicativos do Adobe Campaign exclusivamente com protocolos padrão de Internet (SOAP, HTTP etc.). O console do cliente Adobe Campaign oferece excelente facilidade de uso para produtividade, usa pouca largura de banda (por meio do uso de um cache local) e foi projetado para facilitar a implantação. Esse Console pode ser implantado a partir de um navegador da Internet, pode ser atualizado automaticamente e não requer nenhuma configuração de rede específica porque gera apenas tráfego HTTP(S).
 
 ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o Console do Cliente do Campaign](connect.md).
 
-## Preparar seu ambiente
+## Preparar seu ambiente{#implementation-prepare-your-env}
 
 Antes de começar a enviar mensagens e criar campanhas de marketing, é necessário:
 
-1. Importar perfis e criar públicos
+1. **Importar perfis e criar públicos**
 
    O Campaign ajuda a adicionar contatos ao banco de dados da nuvem. Você pode carregar um arquivo, agendar e automatizar várias atualizações de contato, coletar dados na Web ou inserir informações de perfil diretamente na tabela do recipient.
 
@@ -73,7 +78,7 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
 
    ![](../assets/do-not-localize/glass.png) [Saiba como definir públicos](audiences.md).
 
-1. Criar modelos
+1. **Usar modelos**
 
    Campanhas, entregas, tarefas ou workflows são todos baseados em um modelo, que armazena configurações e recursos principais. Um modelo integrado é fornecido para cada componente, para o qual nenhuma configuração específica foi definida. Você precisa configurar e adaptar modelos às suas necessidades e disponibilizá-los aos usuários finais.
 
@@ -85,19 +90,19 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
    ![](../assets/do-not-localize/book.png) Saiba mais sobre modelos de email na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR){target=&quot;_blank&quot;}
 
 
-1. Configurar regras de tipologia
+1. **Configurar regras de tipologia**
 
    Aproveite as regras de tipologias do Campaign para filtrar, controlar e monitorar a entrega. Por exemplo, as regras de fadiga controlam a frequência e a quantidade de mensagens para evitar a solicitação excessiva de recipients. Depois de implementadas, as regras de tipologia são referenciadas nas entregas.
 
    Saiba mais sobre tipologias e gerenciamento de fadiga [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=pt-BR).
 
-1. Conheça o modelo de dados integrado do Campaign
+1. **Conheça o modelo de dados integrado do Campaign**
 
    O Adobe Campaign vem com um modelo de dados predefinido. Para implementar e personalizar seu ambiente, você precisa conhecer as tabelas integradas do modelo de dados do Adobe Campaign e saber como elas se relacionam entre si.
 
    ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o modelo de dados do Campaign](../dev/datamodel.md).
 
-## Personalizar sua instância
+## Personalizar sua instância{#implementation-custom-your-instance}
 
 Você pode personalizar diversas áreas e recursos do Campaign. A maioria de nossos clientes personaliza três itens:
 
@@ -128,19 +133,20 @@ Você pode personalizar diversas áreas e recursos do Campaign. A maioria de nos
    ![](../assets/do-not-localize/glass.png) Saiba mais sobre os recursos de relatórios no Campaign [nesta página](../reporting/gs-reporting.md).
 
 
-## Configurar automação de campanha
+## Configurar automação de campanha{#implementation-automation}
 
 Para orquestrar campanhas de marketing complexas em públicos diferentes em vários canais, aproveite os recursos de automação do Campaign.
 
-* Workflows: gerenciar processos e dados
+* Use **workflows** para gerenciar processos e dados. Saiba mais em [esta documentação](../../automation/workflow/about-workflows.md)
 
-* Subscrições e páginas de aterrissagem
+* Configurar **assinatura** processos e **páginas de aterrissagem**.  Saiba mais [nesta página](../start/subscriptions.md)
 
-* Regras de tipologia: gerenciamento de fadiga e controle
+* Configurar **regras de tipologia** para definir a fadiga e o gerenciamento de controle.  Saiba mais em [esta documentação](../../automation/campaign-opt/campaign-typologies.md)
 
-## Estender sua implantação
 
-### Implementação de várias soluções
+## Estender sua implantação{#implementation-extend}
+
+### Implementação de várias soluções{#implementation-multi-solutions}
 
 Se estiver usando outras soluções da Adobe, você poderá conectá-las ao ambiente do Campaign e combinar recursos.
 
@@ -158,7 +164,7 @@ Você também pode usar o Logon único (SSO) para se conectar ao Campaign. Saiba
 
 ![](../assets/do-not-localize/glass.png) Conheça a lista completa de soluções da Adobe que podem ser integradas ao Adobe Campaign [nesta página](../connect/integration.md).
 
-### Conectores
+### Conectores{#implementation-connectors}
 
 Conecte o Campaign com sistemas de terceiros para combinar uma grande variedade de recursos e automatizar processos.
 
