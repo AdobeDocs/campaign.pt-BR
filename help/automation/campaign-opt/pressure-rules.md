@@ -3,10 +3,11 @@ product: campaign
 title: Configurar regras de pressão
 description: Saiba como configurar regras de pressão
 feature: Fatigue Management, Typology Rules
-source-git-commit: 86c37772eca9e3fffbeaa0e1d4d7de5590d8d277
+exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
+source-git-commit: 6a1e2e0a872ce5886e7374d266c71975941e87b8
 workflow-type: tm+mt
-source-wordcount: '3040'
-ht-degree: 94%
+source-wordcount: '3027'
+ht-degree: 95%
 
 ---
 
@@ -106,7 +107,7 @@ Você pode indexar o número de mensagens autorizadas de acordo com o segmento a
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Para definir o limite, você pode usar uma dimensão vinculada ao targeting dimension: por exemplo, para incluir mensagens enviadas aos perfis de recipients armazenados na tabela de visitantes (para saber mais sobre a tabela de visitantes, consulte (esta seção) (pesquisas/uso/caso de uso — criação-a-consulte-um-friend-form.md)) ou para evitar o envio de mais de uma mensagem por semana para a mesma família de recipients, (o que pode significar vários endereços de email) identificada em uma dimensão vinculada aos recipients.
+Para definir o limite, você pode usar uma dimensão vinculada ao targeting dimension: por exemplo, para incluir mensagens enviadas aos perfis de recipient armazenados no [tabela de visitantes](../../v8/audiences/target-mappings.md) ou para evitar o envio de mais de uma mensagem por semana para a mesma família, (que pode se referir a vários endereços de email) identificada em uma dimensão vinculada à dos recipients.
 
 Para fazer isso, selecione a opção **[!UICONTROL Count messages on a linked dimension]** e selecione a tabela de visitantes ou de contatos.
 
