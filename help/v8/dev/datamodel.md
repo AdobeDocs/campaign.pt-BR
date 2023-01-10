@@ -1,6 +1,6 @@
 ---
 title: Introdução ao modelo de dados do Campaign
-description: Comece a usar o modelo de dados do Campaign e aproveite os dados de suas fontes para beneficiar suas comunicações e saídas de marketing.
+description: Comece a usar o modelo de dados do Campaign e aproveite os dados de suas fontes para beneficiar as comunicações e saídas de marketing.
 feature: Data Model
 role: Data Engineer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 

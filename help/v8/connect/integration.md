@@ -1,6 +1,6 @@
 ---
 title: Conecte o Campaign com suas soluções
-description: Saiba como conectar sua instância do Adobe Campaign com soluções do Experience Cloud.
+description: Saiba como conectar sua instância do Adobe Campaign com as soluções da Experience Cloud.
 feature: Overview
 role: Admin, User
 level: Beginner, Intermediate
@@ -8,7 +8,7 @@ exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
