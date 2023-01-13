@@ -3,7 +3,8 @@ product: campaign
 title: Criar campanhas de marketing
 description: Saiba como criar e executar campanhas de marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
+source-git-commit: 38c300555b847c9d1fd210d2fe60e4ffa1e314d2
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 58%
@@ -102,7 +103,7 @@ Para cada campanha, os seguintes recursos estão disponíveis:
 * Documentos e recursos de referência: você pode associar documentos à campanha (resumo, relatório, imagens etc.). Todos os formatos de documento são suportados. [Saiba mais](marketing-campaign-deliveries.md#manage-associated-documents).
 * Definir custos: para cada campanha, o Adobe Campaign permite definir entradas de custo e estruturas de cálculo de custo que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala etc. [Saiba mais](providers--stocks-and-budgets.md#defining-cost-categories).
 * Defina os objetivos: é possível definir objetivos quantificáveis para uma campanha, por exemplo, número de assinantes, volume de negócios etc. Essas informações são usadas posteriormente nos relatórios de campanha.
-* Gerenciar seed addresses e grupos de controle. [Saiba mais](marketing-campaign-deliveries.md#defining-a-control-group)).
+* Gerenciar seed addresses e grupos de controle. [Saiba mais](marketing-campaign-deliveries.md#defining-a-control-group).
 * Gerenciar aprovações: é possível selecionar os tratamentos a serem aprovados e, se necessário, selecionar os operadores de revisão ou grupos de operadores. [Saiba mais](marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 >[!NOTE]
@@ -206,4 +207,3 @@ Você também pode usar o link contido nas mensagens de notificação. Para obte
 Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)
-
