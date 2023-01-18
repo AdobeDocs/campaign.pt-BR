@@ -6,15 +6,15 @@ role: User
 level: Beginner, Intermediate, Experienced
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
 source-git-commit: 58fff46ba12f5c6221bbcd88a40fa0806a6c98b9
-workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '245'
+ht-degree: 100%
 
 ---
 
 # Medidas de proteção do produto{#guardrails}
 
-Os direitos, as limitações de produto e as medidas de proteção de desempenho estão listados na [página de descrição do produto Adobe Campaign Managed Cloud Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
+Os direitos, as limitações de produto e as medidas de proteção de desempenho estão listados na [página de descrição do produto Adobe Campaign Managed Cloud Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Abaixo você encontrará medidas de proteção e limitações adicionais para uso do [!DNL Adobe Campaign].
 
