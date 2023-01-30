@@ -4,10 +4,10 @@ title: Workflow de delivery entre canais
 description: Saiba mais sobre os workflows de delivery entre canais
 feature: Workflows, Channels Activity
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
-source-git-commit: 5b4d569a6e96c93828f63fb8376eb81301829854
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 90%
+source-wordcount: '588'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ As principais etapas de implementação para este caso de uso são as seguintes:
 
 Para definir seu target, crie uma query para identificar os recipients.
 
-1. Crie uma campanha. Para obter mais informações, consulte  .
+1. Crie uma campanha. Saiba mais [nesta página](../campaigns/marketing-campaign-create.md).
 1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao workflow. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](query.md).
 1. Defina os recipients que receberão suas deliveries. Por exemplo, selecione os membros &quot;Ouro&quot; como a target dimension.
 1. Adicione as condições do filtro à sua query. Neste exemplo, selecione recipients que tenham um endereço de e-mail e um número de celular.
@@ -49,7 +49,7 @@ Para definir seu target, crie uma query para identificar os recipients.
 
    ![](assets/wkf_cross-channel_1.png)
 
-   Para obter mais informações sobre como integrar uma oferta ao corpo de uma mensagem, consulte .
+   Para obter mais informações sobre como integrar uma oferta ao corpo de uma mensagem, consulte [esta página](../../v8/send/email.md).
 
 1. Salve as alterações.
 1. Clique com o botão direito do mouse na atividade **[!UICONTROL Email delivery]** para abri-la.
@@ -107,11 +107,8 @@ Depois que seu target for identificado e seu primeiro fornecimento for criado, s
    * Adicione uma atividade **[!UICONTROL Mobile delivery]** para enviar uma mensagem SMS ao segundo subconjunto.
    * Adicione uma atividade **[!UICONTROL List update]** para adicionar os recipients correspondentes ao banco de dados.
 
-1. Clique duas vezes nas atividades de delivery no seu workflow para editá-las. Para obter mais informações sobre como criar um email e um SMS, consulte .
+1. Clique duas vezes nas atividades de delivery no seu workflow para editá-las.
 1. Clique duas vezes na atividade **[!UICONTROL List update]** e selecione a opção **[!UICONTROL Generate an outbound transition]**.
-
-   É possível exportar os recipients resultantes do Adobe Campaign para o Adobe Experience Cloud. Por exemplo, é possível usar o público no Adobe Target adicionando um ** .
-
 1. Clique no botão **Start** na barra de ações para executar o workflow.
 
 A população direcionada pela atividade **Consulta** será segmentada para receber um e-mail ou uma delivery SMS de acordo com os comportamentos dos recipients. A população restante será adicionada ao banco de dados usando a atividade **[!UICONTROL List update]**.
