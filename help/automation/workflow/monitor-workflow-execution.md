@@ -3,24 +3,21 @@ product: campaign
 title: Monitorar a execução do fluxo de trabalho
 description: Monitorar a execução do fluxo de trabalho
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: bc13d706-7888-42eb-9116-5538e68cd515
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1936'
 ht-degree: 95%
 
 ---
 
 # Monitorar a execução do fluxo de trabalho {#monitoring-workflow-execution}
 
-
-
 Esta seção apresenta informações sobre como monitorar a execução de workflows.
 
 Também está disponível [nesta sessão](workflow-supervision.md#supervising-workflows), um caso de uso que detalha a criação de workflows que permite monitorar o status de um conjunto de workflows &quot;pausados&quot;, &quot;interrompidos&quot; ou &quot;com erros&quot;.
 
-Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades, as últimas modificações feitas e o status dos fluxos de trabalho. Para obter mais informações, consulte  .
-
-Outras maneiras de monitorar os diferentes processos do Campaign são apresentadas em .
+Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades, as últimas modificações feitas e o status dos fluxos de trabalho. Saiba mais sobre a Trilha de auditoria em  [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=en#accessing-audit-trail){target="_blank"}.
 
 ## Exibição do progresso {#displaying-progress}
 
@@ -138,8 +135,6 @@ Nesse caso, a tarefa com erro é anulada. Esse modo é particularmente adequado 
 >
 >Você pode aplicar essa configuração individualmente para cada atividade. Para fazer isso, edite as propriedades da atividade e selecione o modo de gerenciamento de erro na guia **[!UICONTROL Advanced]**.
 
-Para obter mais informações sobre a solução de problemas de execução de workflows, consulte .
-
 ## Processamento de erros {#processing-errors}
 
 Com relação às atividades, a opção **[!UICONTROL Process errors]** exibe uma transição específica que é habilitada ao gerar um erro. Nesse caso, o workflow não entra no modo de erro e a execução continua.
@@ -229,9 +224,9 @@ Nesta seção é apresentado um caso de uso: [Coordenação de atualizações de
 
 ## Manutenção do banco de dados {#database-maintenance}
 
-Os workflows usam muitas tabelas de trabalho que consomem espaço e acabam reduzindo o desempenho da plataforma inteira se não houver manutenção. Para obter mais informações sobre a manutenção de banco de dados, consulte esta seção .
+Os workflows usam muitas tabelas de trabalho que consomem espaço e acabam reduzindo o desempenho da plataforma inteira se não houver manutenção.
 
-O workflow de **limpeza do banco de dados** pode ser acessado por meio do nó **Administração > Produção > Workflows técnicos**, permite excluir dados obsoletos para evitar o crescimento exponencial do banco de dados. O workflow é acionado automaticamente sem a intervenção do usuário. Consulte  .
+O workflow de **limpeza do banco de dados** pode ser acessado por meio do nó **Administração > Produção > Workflows técnicos**, permite excluir dados obsoletos para evitar o crescimento exponencial do banco de dados. O fluxo de trabalho é acionado automaticamente sem a intervenção do usuário.
 
 Você também pode criar workflows técnicos específicos para limpar o consumo de espaço desnecessário de dados. Consulte e este [seção](#purging-the-logs).
 
@@ -266,7 +261,7 @@ Para fazer isso:
 
 1. Clique com o botão direito do mouse na pasta onde deseja adicionar a exibição.
 1. Em **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**, selecione a exibição que deseja adicionar.
-1. Depois que a pasta for adicionada à árvore, certifique-se de configurá-la como uma exibição, para que ela exiba todos os workflows, qualquer que seja a pasta de origem. Para obter mais informações sobre como configurar as exibições, consulte .
+1. Depois que a pasta for adicionada à árvore, certifique-se de configurá-la como uma visualização, para que ela exiba todos os workflows, qualquer que seja a pasta de origem. Para obter mais informações sobre como configurar exibições, consulte [esta página](../../v8/audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
 Além dessas exibições, é possível configurar as pastas de filtros que permitem filtrar a lista de workflows de acordo com o status de execução. Para fazer isso:
 
