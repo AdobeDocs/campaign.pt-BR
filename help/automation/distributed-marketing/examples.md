@@ -3,9 +3,10 @@ product: campaign
 title: Amostras de marketing distribuído
 description: Amostras de marketing distribuído
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1284'
 ht-degree: 100%
 
 ---
@@ -13,14 +14,11 @@ ht-degree: 100%
 # Amostras de marketing distribuído{#distributed-marketing-samples}
 
 
-
 ## Criar uma campanha local (por formulário) {#creating-a-local-campaign--by-form-}
 
 A interface web tipo **By form** envolve o uso de um **aplicativo web**. Dependendo da configuração, essa aplicação web pode conter qualquer tipo de elementos personalizados definidos. Por exemplo, você pode sugerir links para avaliar o target, o orçamento, o conteúdo, etc. por meio de APIs dedicadas.
 
 >[!NOTE]
->
->As APIs são detalhadas em um documento dedicado.  .
 >
 >O aplicativo web usado neste exemplo não é fornecido com o Adobe Campaign. Para usar um formulário em uma campanha, você deve criar o aplicativo web dedicado.
 
