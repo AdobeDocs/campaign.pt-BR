@@ -3,19 +3,17 @@ product: campaign
 title: Transferência para mid-sourcing
 description: Saiba mais sobre workflows de transferência para mid-sourcing
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 93%
+source-wordcount: '95'
+ht-degree: 100%
 
 ---
 
 
 # Transferência para mid-sourcing{#transfer-to-mid-sourcing}
 
-
-
-Os workflows detalhados abaixo são instalados com módulo de **Transferência para o mid-sourcing** por padrão. Para obter mais informações sobre esse módulo, consulte .
+Os workflows detalhados abaixo são instalados com módulo de **Transferência para o mid-sourcing** por padrão.
 
 <table> 
  <tbody> 
