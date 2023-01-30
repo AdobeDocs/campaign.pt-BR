@@ -3,20 +3,17 @@ product: campaign
 title: Delivery outline
 description: Saiba mais sobre a atividade do workflow do Delivery outline
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 3c06b329-b2d8-4ac8-ab9b-3ab3e525d109
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 91%
+source-wordcount: '243'
+ht-degree: 100%
 
 ---
 
 # Delivery outline{#delivery-outline}
 
-
-
 O **delivery outline** permite usar um outline em um workflow de campanha. O outline deve ter sido criado antecipadamente na campanha.
-
-Para obter mais informações sobre delivery outlines no Adobe Campaign, consulte esta .
 
 Para configurar a atividade, basta marcar outline desejado e a data de contato planejada. É possível adicionar regras do filtro adicionando tipologias ou regras de tipologia.
 
@@ -30,9 +27,6 @@ A atividade de **delivery outline**, disponível nos workflows da campanha, perm
 
 1. Em um workflow, adicione uma atividade de delivery outline antes de adicionar uma atividade de delivery.
 1. Na atividade de delivery outline, especifique o outline que deseja usar.
-
-   Para obter mais informações sobre especificar delivery outlines, consulte esta .
-
 1. Preencha os campos disponíveis de acordo com seu delivery.
 1. Há dois casos possíveis:
 
