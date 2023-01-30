@@ -5,7 +5,7 @@ feature: PI, Privacy
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Se você precisar que os usuários de marketing acessem registros de dados, mas 
 
 ## Implementação {#implementation}
 
-Um atributo específico que pode ser aplicado a qualquer elemento ou atributo foi adicionado aos esquemas, complementa o atributo existente **[!UICONTROL visibleIf]** . Este atributo é: **[!UICONTROL accessibleIf]** . Ao conter uma expressão XTK relacionada ao contexto do usuário atual, ela pode aproveitar **[!UICONTROL HasNamedRight]** ou **[!UICONTROL $(login)]** , por exemplo.
+Um atributo específico que pode ser aplicado a qualquer elemento ou atributo foi adicionado aos esquemas, complementa o atributo existente **[!UICONTROL visibleIf]**. Este atributo é: **[!UICONTROL accessibleIf]**. Ao conter uma expressão XTK relacionada ao contexto do usuário atual, ela pode aproveitar **[!UICONTROL HasNamedRight]** ou **[!UICONTROL $(login)]**, por exemplo.
 
 Você pode encontrar uma amostra de uma extensão de schema de recipient que mostra este uso abaixo:
 
@@ -40,7 +40,7 @@ Você pode encontrar uma amostra de uma extensão de schema de recipient que mos
 As principais propriedades são:
 
 * **[!UICONTROL visibleIf]** : oculta os campos dos metadados, portanto, eles não podem ser acessados em uma visualização de esquema, ou seleção de coluna, ou em um construtor de expressões. Mas isso não oculta dados. Se o nome do campo for inserido manualmente em uma expressão, o valor será exibido.
-* **[!UICONTROL accessibleIf]** : oculta os dados (substituindo-os por valores vazios) da consulta resultante. Se visibleIf estiver vazio, ele terá a mesma expressão que **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL accessibleIf]** : oculta os dados (substituindo-os por valores vazios) da consulta resultante. Se visibleIf estiver vazio, ele terá a mesma expressão que **[!UICONTROL accessibleIf]**.
 
 Estas são as consequências do uso desse atributo no Campaign:
 
