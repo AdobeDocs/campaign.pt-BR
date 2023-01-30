@@ -3,10 +3,11 @@ product: campaign
 title: Parâmetros avançados
 description: Parâmetros avançados
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: aafd977e-c8af-426b-904c-8388c9d8e595
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 98%
+source-wordcount: '492'
+ht-degree: 100%
 
 ---
 
@@ -47,8 +48,6 @@ Geralmente, essas opções são selecionadas no carrinho clicando com o botão d
 ## Afinidade {#affinity}
 
 É possível optar forçar a execução de um workflow ou uma atividade de workflow em uma máquina específica. Para fazer isso, é necessário definir uma ou mais tendências no nível do workflow ou da atividade relacionada.
-
-A configuração de workflow de alta disponibilidade é detalhada neste link .
 
 
 ## Limite do período de execução {#max--execution-period}
