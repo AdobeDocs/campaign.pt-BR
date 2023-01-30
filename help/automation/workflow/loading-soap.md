@@ -3,10 +3,11 @@ product: campaign
 title: Carregamento (SOAP)
 description: Carregamento (SOAP)
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 21c42a36-9a50-49b8-8a07-b041ba8b2026
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 95%
+source-wordcount: '229'
+ht-degree: 100%
 
 ---
 
@@ -39,8 +40,6 @@ A operação é como descrita a seguir:
    ![](assets/soap_load_001.png)
 
    Se desejar atualizar o exemplo, selecione **[!UICONTROL Re-analyze the example]**.
-
-   Também é possível personalizar o formato dos dados da coluna por meio do ** .
 
 1. Você pode usar o número de linha como um identificador e/ou especificar que a chamada SOAP retorna vários elementos.
 1. Insira os seguintes scripts de guia de acordo com sua função:
