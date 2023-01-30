@@ -4,9 +4,9 @@ title: Exemplos de código JavaScript em workflows
 description: Estes exemplos mostram como é possível usar o código JavaScript em um workflow
 feature: Workflows
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1752'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Para gravar no banco de dados, é possível usar o método estático `Write` no 
    1. Chame o método `Write` no schema `xtk:session`.
 
       >[!IMPORTANT]
-      > Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de **Assimilação** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target=&quot;_blank&quot;}.
+      > Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de **Assimilação** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
 
    1. Transmita o código XML como argumento para a solicitação de gravação.
 
@@ -78,7 +78,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Atualizar um registro
 
-Use a operação `_update`.  .
+Use a operação `_update`. 
 
 Especifique essas informações como atributos XML:
 
@@ -560,7 +560,7 @@ for each (var w in res.recipient)
 * A operação `delete` 
 
 >[!IMPORTANT]
-> Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de **Assimilação** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+> Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de **Assimilação** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
 
 #### Exemplo 1: inserir ou atualizar um registro
 
@@ -610,11 +610,11 @@ Este vídeo mostra um exemplo de uso de um método de API não estático em um w
 
 ### Documentação da API
 
-* [Exemplos de chamadas SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
+* [Exemplos de chamadas SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR)
 * Métodos:
-   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)
+   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=pt-BR)
+   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=pt-BR)
+   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=pt-BR)
+   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=pt-BR)
    * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=pt-BR)
-* [função logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)
+* [função logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR)
