@@ -5,19 +5,17 @@ description: Gestão dos Recursos de Marketing (MRM)
 feature: Workflows, Targeting Activity
 hide: true
 hidefromtoc: true
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 91%
+source-wordcount: '83'
+ht-degree: 100%
 
 ---
 
 
 # Gestão dos Recursos de Marketing (MRM){#marketing-resources-mrm}
 
-
-
-Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Recursos de Marketing (MRM)** por padrão. Para obter mais informações sobre esse módulo, consulte esta seção .
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Recursos de Marketing (MRM)** por padrão.
 
 <table> 
  <tbody> 
