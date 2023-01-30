@@ -3,10 +3,11 @@ product: campaign
 title: Ciclo de vida do workflow
 description: Saiba mais sobre o ciclo de vida de um workflow
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 4356b90c-9d7c-49ef-88cd-716b2ccdb7f0
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 97%
+source-wordcount: '260'
+ht-degree: 100%
 
 ---
 
@@ -37,7 +38,5 @@ Isso significa que as duas primeiras atividades foram executadas com êxito e qu
 Os caracteres **574 -Ok** exibidos acima da transição após a atividade de **Delivery** significam que a preparação do delivery teve 574 recipients como alvo e que a operação foi concluída com êxito. Essas informações, que são adicionadas às transições quando são executadas, são calculadas pelas atividades que processam dados.
 
 O workflow é iniciado e aguarda um operador pertencente ao grupo especificado na atividade de **Aprovação** para tomar uma decisão. Os operadores pertencentes ao grupo e que têm um endereço de email ou número de telefone celular são notificados.
-
-A gestão de operador é apresentada nesta seção .
 
 Para obter mais informações sobre como monitorar o workflow, consulte [esta seção](monitor-workflow-execution.md).
