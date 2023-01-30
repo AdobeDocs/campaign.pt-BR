@@ -3,10 +3,11 @@ product: campaign
 title: Consulta
 description: Saiba mais sobre a atividade do workflow de query
 feature: Workflows, Targeting Activity, Query Editor
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 98%
+source-wordcount: '1545'
+ht-degree: 100%
 
 ---
 
@@ -41,15 +42,13 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
 1. Defina os públicos usando o assistente. Os campos a serem inseridos podem variar de acordo com o tipo de target. Você pode visualizar o público-alvo com seus critérios atuais usando a guia **[!UICONTROL Preview]**.
 
-   Para obter mais informações sobre como criar e usar filtros ou queries, consulte esta página .
-
    ![](assets/query-sample.png)
 
 1. Se você selecionou **[!UICONTROL Filtering conditions]** na etapa 1 ou usou a opção **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**, será necessário adicionar manualmente os critérios de filtragem posteriormente.
 
    Você também pode adicionar condições de agrupamento de dados marcando a caixa correspondente. Para fazer isso, a dimensão de filtro deve ser diferente do targeting dimension do query. Para obter mais informações sobre agrupamento, consulte esta [seção](query-grouping-management.md).
 
-   Você também pode adicionar mais critérios usando o Construtor de Expressões e combinando com as opções lógicas AND, OR e EXCEPT. Em seguida, é possível visualizar o ** .
+   Você também pode adicionar mais critérios usando o Construtor de Expressões e combinando com as opções lógicas AND, OR e EXCEPT.
 
    Salve seu filtro se quiser reutilizá-lo posteriormente.
 
@@ -181,8 +180,6 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
 
 * Cuidado com funções como `Lower(...)`. Quando a função Lower é usada, o Index não é usado.
 * Verifique cuidadosamente as consultas usando a instrução &quot;like&quot; ou as instruções &quot;upper&quot; ou &quot;lower&quot;. Aplique &quot;Upper&quot; na entrada do usuário, não no campo do banco de dados.
-
-   Para obter mais informações sobre funções, consulte .
 
 ### Dimensões de filtro {#filtering-dimensions}
 
