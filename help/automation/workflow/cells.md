@@ -3,10 +3,11 @@ product: campaign
 title: Células
 description: Células
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: d85645a6-fc15-4c3a-9d67-d4230224e1f7
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 32%
+source-wordcount: '116'
+ht-degree: 28%
 
 ---
 
@@ -49,4 +50,4 @@ Para essa configuração, as seguintes informações foram adicionadas ao formul
                 </container>
 ```
 
-A personalização do formulário de entrada no Adobe Campaign é reservada para usuários especialistas. Para obter mais informações, consulte  .
+A personalização do formulário de entrada no Adobe Campaign é reservada para usuários especialistas.
