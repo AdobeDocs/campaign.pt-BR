@@ -3,10 +3,11 @@ product: campaign
 title: Deliveries entre canais
 description: Saiba mais sobre deliveries entre canais
 feature: Workflows, Channels Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 76%
+source-wordcount: '249'
+ht-degree: 78%
 
 ---
 
@@ -37,14 +38,14 @@ No exemplo abaixo, saiba como criar um workflow para enviar um email ou SMS para
 1. Adicione uma atividade **[!UICONTROL Split]** ao workflow para dividir recipients com um número de celular e aqueles com um endereço de email.
 1. Na guia **[!UICONTROL Delivery]**, selecione um workflow para cada target.
 
-   Crie seu delivery da mesma forma que com um assistente de delivery comum clicando duas vezes na atividade de delivery no seu workflow. Para obter mais informações, consulte  .
+   Crie seu delivery da mesma forma que com um assistente de delivery comum clicando duas vezes na atividade de delivery no seu workflow.
 
    ![](assets/cross_channel_delivery_3.png)
 
 1. Adicione e configure uma atividade **[!UICONTROL Wait]** para os recipients não receberem muitos deliveries de uma vez.
 1. Adicione uma atividade **[!UICONTROL Split]** para dividir os assinantes de aplicativos móveis iOS ou Android.
 
-   Selecione um serviço para cada um dos sistemas operacionais. Para obter mais informações sobre criação de serviços, consulte esta seção .
+   Selecione um serviço para cada um dos sistemas operacionais.
 
    ![](assets/cross_channel_delivery_4.png)
 
