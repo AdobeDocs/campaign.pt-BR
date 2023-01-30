@@ -3,10 +3,11 @@ product: campaign
 title: Propriedades do workflow
 description: Saiba mais sobre as propriedades do workflow do Campaign
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 99%
+source-wordcount: '543'
+ht-degree: 100%
 
 ---
 
@@ -37,8 +38,6 @@ Esta seção só é exibida nos workflows da campanha.
 * **[!UICONTROL Default affinity]**
 
    Se a sua instalação incluir vários servidores de workflow, utilize este campo para escolher a máquina em que o workflow será executado. Se o valor definido nesse campo não existir em nenhum servidor, o workflow permanecerá pendente.
-
-   Consulte isso .
 
 * **[!UICONTROL History in days]**
 
