@@ -3,20 +3,17 @@ product: campaign
 title: Gerenciar fusos horários
 description: Gerenciar fusos horários
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 04b7638d-55dd-4317-b605-5d618ef014ba
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 96%
+source-wordcount: '266'
+ht-degree: 100%
 
 ---
 
-# Gerenciamento de fusos horários{#managing-time-zones}
-
-
+# Gerenciar fusos horários{#managing-time-zones}
 
 O Adobe Campaign permite a gestão do intervalo entre vários países relacionados à mesma instância. A configuração aplicada é aplicada durante a criação da instância.
-
-Para obter mais informações sobre a configuração de fusos horários no Adobe Campaign, consulte .
 
 Em um workflow, é possível adaptar os agendamentos de execução de atividades e vincular um fuso horário específico a uma atividade ou ao workflow inteiro. Essa configuração é útil ao importar o arquivo ou dentro da estrutura de agendamento de delivery.
 
