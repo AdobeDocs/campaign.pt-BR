@@ -5,7 +5,7 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '2717'
 ht-degree: 4%
@@ -18,7 +18,7 @@ Este documento descreve as principais recomendações ao projetar o modelo de da
 
 O sistema Adobe Campaign é muito flexível e pode ser estendido além da implementação inicial. No entanto, embora as possibilidades sejam infinitas, é fundamental tomar decisões sábias e criar bases fortes para começar a projetar seu modelo de dados.
 
-Para obter uma melhor compreensão das tabelas integradas do Campaign e como elas se relacionam entre si, consulte [esta seção](datamodel.md) .
+Para obter uma melhor compreensão das tabelas integradas do Campaign e como elas se relacionam entre si, consulte [esta seção](datamodel.md).
 
 ![](../assets/do-not-localize/glass.png) Leia [esta seção](schemas.md) para começar a usar os esquemas do Campaign.
 
