@@ -3,10 +3,11 @@ product: campaign
 title: Definir aprovações
 description: As aprovações permitem que os operadores tomem decisões que regem um fluxo de trabalho ou confirmem sua execução contínua
 feature: Approvals
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 98%
+source-wordcount: '826'
+ht-degree: 100%
 
 ---
 
@@ -26,8 +27,6 @@ Em operações, todos os estágios que exigem aprovação se baseiam no mesmo pr
 
 ![](assets/validation-1-in-op.png)
 
-Exemplos de aprovação podem ser encontrados em .
-
 Um operador pode responder de uma das duas formas seguintes: validação usando a página da Web vinculada na mensagem de email ou através do console.
 
 >[!NOTE]
@@ -36,9 +35,7 @@ Um operador pode responder de uma das duas formas seguintes: validação usando 
 
 ## Aprovações por email {#sending-emails}
 
-É possível receber uma mensagem de aprovação contendo um link para uma página da Web pela qual é possível responder. Para que o operador de target receba um email de aprovação, o endereço de email do operador deve ser completo. Se esse não for o caso, o operador deve usar o console para responder
-
-A gestão de operador é apresentada nesta seção .
+É possível receber uma mensagem de aprovação contendo um link para uma página da Web pela qual é possível responder. Para que o operador de target receba um email de aprovação, o endereço de email do operador deve ser completo. Se esse não for o caso, o operador deve usar o console para responder.
 
 Emails de aprovação são enviados continuamente. O template do delivery padrão é **[!UICONTROL notifyAssignee]**: ele é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar templates para cada atividade.
 
