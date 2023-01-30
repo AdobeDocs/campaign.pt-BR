@@ -3,9 +3,10 @@ product: campaign
 title: Serviços de assinatura
 description: Saiba mais sobre a atividade do workflow de serviços de assinatura
 feature: Workflows, Targeting Activity, Subscription Services Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 919630ed-b39f-40e5-b893-f3a203713b15
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '399'
 ht-degree: 100%
 
 ---
@@ -28,7 +29,7 @@ Para configurá-la, edite a atividade e insira seu rótulo, então selecione a a
 1. Clique em **[!UICONTROL Subscription]** ou em **[!UICONTROL Unsubscription]** para assinar ou cancelar a subscrição da população especificada para ou a partir do serviço de informações selecionado.
 1. Selecione **[!UICONTROL Send a confirmation message]** para notificar os destinatários que a subscrição de um serviço foi realizada ou cancelada.
 
-   O conteúdo dessa mensagem é definido no template de delivery associado ao serviço de assinatura. Para obter mais informações, consulte  .
+   O conteúdo dessa mensagem é definido no template de delivery associado ao serviço de assinatura.
 
 ## Exemplo: inscrever uma lista de recipients em um boletim informativo {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
