@@ -3,10 +3,11 @@ product: campaign
 title: Consultar usando gerenciamento de agrupamento
 description: Saiba como executar consultas usando o gerenciamento de agrupamento
 feature: Query Editor
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 96%
+source-wordcount: '241'
+ht-degree: 100%
 
 ---
 
@@ -35,8 +36,6 @@ Para criar este exemplo, aplique as seguintes etapas:
    ![](assets/query_editor_02.png)
 
 1. Na janela **[!UICONTROL Data to extract]**, selecione os campos **[!UICONTROL Email domain]** e **[!UICONTROL Primary key]**. Execute uma contagem no campo **[!UICONTROL Primary key]**.
-
-   Para obter mais informações sobre a contagem da chave primária, consulte .
 
 1. Marque a caixa **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**.
 
