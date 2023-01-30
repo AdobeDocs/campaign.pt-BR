@@ -3,9 +3,10 @@ product: campaign
 title: Gerenciar permissões de fluxo de trabalho
 description: Saiba como gerenciar permissões de fluxo de trabalho
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 3cb8aeec-e758-4b71-adef-67942cf9ded7
+source-git-commit: bff7d1d51b9847c515670e5594eed513fefbe816
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '321'
 ht-degree: 96%
 
 ---
@@ -20,7 +21,7 @@ Em geral, os operadores que atuam com workflows precisam acessar os arquivos que
 
 Eles também devem ser mapeados com os direitos nomeados que coincidam com as ações executadas pelos workflows que eles afetarão (importação do recipient, acesso à arquivos, fusão, execução de script SQL, etc.).
 
-Para obter mais informações sobre gerenciamento de operadores e permissões, consulte esta seção .
+Para obter mais informações sobre gerenciamento de operadores e permissões, consulte [esta seção](../../v8/start/gs-permissions.md).
 
 ## Grupos de operadores {#operator-groups-wf}
 
