@@ -3,10 +3,11 @@ product: campaign
 title: Iniciar um fluxo de trabalho
 description: Saiba como iniciar um fluxo de trabalho e descubra a barra de ferramentas de ações e o menu de clique com o botão direito do mouse do fluxo de trabalho
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 98%
+source-wordcount: '742'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +27,7 @@ A lista de opções disponíveis no menu **[!UICONTROL Actions]** e no menu de c
 
 ## Barra de ferramentas Ações {#actions-toolbar}
 
-Os botões da barra de ferramentas são detalhados nesta seção . O botão **[!UICONTROL Actions]** dá acesso às opções de execução adicionais para atuar em fluxos de trabalho selecionados. Você também pode usar o menu **[!UICONTROL File > Actions]** ou clicar com o botão direito do mouse em um fluxo de trabalho e selecionar **[!UICONTROL Actions]**.
+O **[!UICONTROL Actions]** na barra de ferramentas permite acessar opções de execução adicionais em fluxos de trabalho selecionados. Você também pode usar o menu **[!UICONTROL File > Actions]** ou clicar com o botão direito do mouse em um fluxo de trabalho e selecionar **[!UICONTROL Actions]**.
 
 ![](assets/purge_historique.png)
 
@@ -52,8 +53,6 @@ Os botões da barra de ferramentas são detalhados nesta seção . O botão **[!
 
    Essa ação interrompe e depois retoma o workflow. Na maioria dos casos, é possível reiniciar mais rápido. Também é útil automatizar a reinicialização quando a interrupção leva um determinado tempo: isso ocorre porque o comando &#39;Parar&#39; não está disponível quando o workflow está sendo interrompido.
 
-   Os ** .
-
 * **[!UICONTROL Purge history]**
 
    Essa ação permite limpar o histórico do workflow. Para obter mais informações, consulte [Limpeza de logs](monitor-workflow-execution.md#purging-the-logs).
@@ -77,8 +76,6 @@ Os botões da barra de ferramentas são detalhados nesta seção . O botão **[!
 * **[!UICONTROL Save as template]**
 
    Essa ação cria um novo modelo de fluxo de trabalho com base no fluxo de trabalho selecionado. Você precisa especificar a pasta onde ele será salvo (no campo **[!UICONTROL Folder]**).
-
-   Os ** .
 
 ## Menu de contexto {#right-click-menu}
 
@@ -108,4 +105,3 @@ As seguintes opções estão disponíveis no menu de contexto:
 >
 >Você pode selecionar um grupo de atividades e aplicar um desses comandos a eles.
 
-O menu de contexto também é detalhado neste .
