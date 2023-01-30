@@ -3,9 +3,10 @@ product: campaign
 title: Atualizar dados
 description: Saiba mais sobre a atividade de workflow Atualizar dados
 feature: Workflows, Targeting Activity, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '841'
 ht-degree: 100%
 
 ---
@@ -99,7 +100,7 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 
 1. Selecione as coleções a serem movidas para o registro primário e os campos a serem atualizados.
 
-   Insira as regras que se aplicam a eles assim que um ou vários registros secundários são identificados. Para fazer isso, é possível usar o Construtor de expressões. Para obter mais informações, consulte  . Por exemplo, ao especificar que é o valor atualizado mais recentemente de todos os registros diferentes que devem ser mantidos.
+   Insira as regras que se aplicam a eles assim que um ou vários registros secundários são identificados. Para fazer isso, é possível usar o Construtor de expressões. Por exemplo, ao especificar que é o valor atualizado mais recentemente de todos os registros diferentes que devem ser mantidos.
 
    Em seguida, insira as condições a serem consideradas na regra.
 
