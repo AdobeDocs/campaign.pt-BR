@@ -3,7 +3,8 @@ product: campaign
 title: Split
 description: Saiba mais sobre a atividade de workflow Split
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 91%
@@ -145,7 +146,6 @@ O template de distribuição de dados permite limitar o número de registros de 
    * **[!UICONTROL Targeting dimension]**: digite a targeting dimension à qual a distribuição de dados será aplicada, **[!UICONTROL Recipient]** por exemplo. Esse schema deve sempre ser compatível com os dados usados no workflow para construção do target.
    * **[!UICONTROL Distribution field]**: selecione um campo por meio da targeting dimension. Por exemplo, se selecionar o campo **[!UICONTROL Email domain]**, a lista de recipients será dividida por domínio.
    * **[!UICONTROL Distribution type]**: selecione a forma como o valor de limitação do target será detalhado na guia **[!UICONTROL Distribution]**: **[!UICONTROL Percentage]** ou **[!UICONTROL Set]**.
-   * ** .
    * **[!UICONTROL Approval storage]**: se você usar um [Aprovação local](local-approval.md) no workflow para construção do target, insira o schema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se usar o schema de target **[!UICONTROL Recipients]**, insira o schema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
 
       No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Approvals storage]**.
