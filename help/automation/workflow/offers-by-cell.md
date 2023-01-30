@@ -3,10 +3,11 @@ product: campaign
 title: Ofertas por célula
 description: Ofertas por célula
 feature: Workflows, Targeting Activity, Interaction
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: e2216dfd-1ef8-4747-b716-576fd6498fa6
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 100%
+source-wordcount: '151'
+ht-degree: 94%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 100%
 
 A atividade **[!UICONTROL Offers by cell]** permite distribuir a população de entrada (de uma consulta, por exemplo) em vários segmentos e especificar uma oferta a ser apresentada para cada um desses segmentos.
 
-Essa atividade só pode ser usada com **Interaction**. Para obter mais informações, consulte esta  .
+Essa atividade só pode ser usada com **Interaction**. Saiba mais sobre o Gerenciamento de ofertas no [esta seção](../../v8/interaction/interaction.md).
 
 Para fazer isso:
 
