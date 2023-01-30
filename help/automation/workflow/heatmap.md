@@ -3,20 +3,17 @@ product: campaign
 title: Workflow HeatMap do Campaign
 description: Monitore seus workflows do com o Workflow HeatMap
 feature: Workflows, Heatmap
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 97%
+source-wordcount: '1094'
+ht-degree: 99%
 
 ---
 
 # Workflow HeatMap {#workflow-heatmap}
 
-
-
 O Workflow HeatMap do Campaign consiste em uma representação gráfica colorida de todos os workflows que estão sendo executados no momento. Ele só está disponível para **Administradores do Campaign**.
-
-Descubra outras maneiras de monitorar os processos do Campaign no .
 
 ## Introdução ao Workflow HeatMap {#about-the-workflow-heatmap}
 
@@ -52,8 +49,7 @@ O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [
    Por padrão, a página mostra a atividade do workflow do dia atual. Você pode alterá-la e selecionar qualquer dia no passado.
 
    >[!NOTE]
-   >
-   >Somente os workflows que não foram excluídos pelo ** .\
+   > 
    >Por padrão, o fuso horário do Workflow HeatMap é aquele definido para o usuário administrador atual. Por exemplo, talvez você queira alterá-la se não estiver na mesma área dos usuários de marketing com os quais você está trabalhando.
 
 1. Clique no botão **[!UICONTROL Filters]**.
