@@ -3,20 +3,17 @@ product: campaign
 title: Monitorar fluxos de trabalho técnicos
 description: Monitorar fluxos de trabalho técnicos
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 97%
+source-wordcount: '472'
+ht-degree: 95%
 
 ---
 
 # Monitorar fluxos de trabalho técnicos {#monitoring-technical-workflows}
 
-
-
 Os workflows técnicos precisam ser monitorados e ações precisam ser realizas quando falharem.
-
-Outras maneiras de monitorar os diferentes processos do Campaign são apresentadas em .
 
 ## Painel de monitoramento de instância {#instance-monitoring-dashboard}
 
@@ -40,8 +37,7 @@ Para entender melhor o que cada workflow técnico deve realizar, consulte esta [
 
 Para **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Verifique se ** ..
-1. Examine o journal para verificar se o tempo decorrido é relativamente constante ao longo do tempo e não interfere em outros workflows.
+Verifique o journal para verificar se o tempo decorrido é relativamente constante ao longo do tempo e não interfere em outros workflows.
 
 Para **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
