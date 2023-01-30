@@ -3,10 +3,10 @@ product: campaign
 title: Workflow técnico de renderização da caixa de entrada
 description: Esta seção descreve o workflow técnico instalado com o pacote de renderização da caixa de entrada
 feature: Workflows, Inbox Rendering
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 88%
+source-wordcount: '64'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 
 
-O fluxo de trabalho detalhado abaixo é instalado com o módulo **Renderização da Caixa de entrada** por padrão. Para obter mais informações sobre renderização da Caixa de entrada, consulte esta seção .
+O fluxo de trabalho detalhado abaixo é instalado com o módulo **Renderização da Caixa de entrada** por padrão.
 
 <table> 
  <tbody> 
