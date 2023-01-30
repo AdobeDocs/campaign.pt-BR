@@ -3,16 +3,15 @@ product: campaign
 title: Gestão de conteúdo
 description: Gestão de conteúdo
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 95%
+source-wordcount: '395'
+ht-degree: 100%
 
 ---
 
 # Gestão de conteúdo{#content-management}
-
-
 
 Uma atividade de **Gestão de conteúdo** permite criar e manipular um conteúdo e gerar arquivos com base nesse conteúdo. Esse conteúdo pode ser entregue por meio de uma atividade de &#39;Delivery&#39;.
 
@@ -27,8 +26,6 @@ As propriedades da atividade são divididas em três etapas:
 * **Ação**: o conteúdo resultante pode ser salvo ou gerado.
 
    ![](assets/content_mgmt_edit.png)
-
-   Para obter mais informações sobre como configurar e usar a gestão de conteúdo no Adobe Campaign, consulte esta seção .
 
 1. **Conteúdo**
 
@@ -97,7 +94,3 @@ Identificador do conteúdo a ser usado se a opção **[!UICONTROL Specified in t
 * filename
 
    Nome completo do arquivo gerado se a ação selecionada for **[!UICONTROL Generate]**.
-
-## Exemplos {#examples}
-
-Os exemplos são fornecidos nesta .
