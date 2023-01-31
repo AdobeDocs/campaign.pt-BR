@@ -1,14 +1,14 @@
 ---
 title: Matriz de compatibilidade do Campaign v8
-description: Conheça os sistemas e as versões compatíveis com o Campaign v8
+description: Sistemas e versões do Discover compatíveis com o Campaign v8
 feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
-workflow-type: ht
-source-wordcount: '374'
-ht-degree: 100%
+source-git-commit: 00d95425ca9438cd03b27bbec171aa7c57d25d6f
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 93%
 
 ---
 
@@ -26,37 +26,20 @@ Este documento lista todos os sistemas e componentes compatíveis com o último 
 
 Os sistemas operacionais e navegadores a seguir são necessários para usar o Console do Cliente do Campaign. [Saiba mais](connect.md).
 
-### Sistemas operacionais
+### Sistemas operacionais{#op-systems}
 
 * **Microsoft Windows Server** 2019, 2016, 2012
-* **Microsoft Windows** 11 (a partir do Campaign v8.3), 10, 8
+* **Microsoft Windows** 11, 10, 8
 
 >[!NOTE]
 >
 >O Microsoft Windows 10 é recomendado para instâncias em japonês.
 
-### Navegador
+### Navegador da Web{#web-browsers}
 
-**Microsoft Edge**
+* Microsoft Edge
 
-### Microsoft WebView2 Runtime
-
-<table>
-<tbody>
-<tr>
-<td>
-<p>WebView2 Runtime do Microsoft Edge
-</p>
-</td>
-<td>
-<p>Versão mais recente</p>
-</td>
-<td>
-<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_br">Baixar do site Desenvolvedor Microsoft</a></p>
-</td>
-</tr>
-</tbody>
-</table>
+* Microsoft Edge WebView2 runtime, versão mais recente. Baixe a partir de [Site do desenvolvedor do Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br){target="_blank"}.
 
 ## Conectores CRM{#CRMconnectors}
 
@@ -82,7 +65,7 @@ Você pode usar o Campaign para enviar [notificações por push](../send/push.md
 * **Apple iOS** 9 - 16 com o SDK Campaign iOS build 1.0.26, compatível com versões de 32 e 64 bits. O iOS 16 é compatível a partir do Campaign v8.4.
 
 
-## Acesso à Web
+## Acesso à Web{#web-access}
 
 Os seguintes navegadores são compatíveis com o Campaign para [acesso via web](connect.md#web-access).
 
