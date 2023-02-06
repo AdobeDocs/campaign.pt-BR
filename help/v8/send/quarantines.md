@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b783b1444457b3204fea35b613582642499acf65
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 38%
+source-wordcount: '1181'
+ht-degree: 35%
 
 ---
 
@@ -42,7 +42,7 @@ Dois tipos ou erros podem ser capturados:
 Na lista de endereços em quarentena, o campo **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena. [Saiba mais](#identifying-quarantined-addresses-for-the-entire-platform).
 
 
-Se um usuário qualificar um email como spam, a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pelo Adobe. Em seguida, o endereço de email do usuário será enviado automaticamente para quarentena com o status **[!UICONTROL Denylisted]**. Esse status se refere apenas ao endereço. O perfil não é incluído na lista de bloqueio para que o usuário continue recebendo mensagens SMS e notificações por push. Saiba mais sobre os loops de comentários no [Guia de práticas recomendadas do delivery](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops){target=&quot;_blank&quot;}.
+Se um usuário qualificar um email como spam, a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pelo Adobe. Em seguida, o endereço de email do usuário será enviado automaticamente para quarentena com o status **[!UICONTROL Denylisted]**. Esse status se refere apenas ao endereço. O perfil não é incluído na lista de bloqueio para que o usuário continue recebendo mensagens SMS e notificações por push. Saiba mais sobre os loops de comentários no [Guia de práticas recomendadas do delivery](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops){target="_blank"}.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 
 Além disso, a variável **[!UICONTROL Non-deliverables and bounces]** relatório integrado, disponível na **Relatórios** nesta página inicial, o exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar dados para um delivery específico ou personalizar esse relatório conforme necessário.
 
-Saiba mais sobre endereços de devolução no [Guia de práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR){target=&quot;_blank&quot;}.
+Saiba mais sobre endereços de devolução no [Guia de práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR){target="_blank"}.
 
 ### Endereço de email na quarentena {#quarantined-recipient}
 
@@ -112,8 +112,16 @@ Você também pode remover manualmente um endereço da lista da quarentena. Para
 
    ![](assets/tech-quarantine-status.png)
 
-* Alterar o status para **[!UICONTROL Allowlisted]**: nesse caso, o endereço permanece na lista da quarentena, mas será direcionado sistematicamente, mesmo que um erro seja encontrado.
+Talvez seja necessário executar atualizações em massa na lista de quarentena, por exemplo, no caso de uma interrupção de ISP durante a qual os emails são marcados incorretamente como rejeições porque não podem ser entregues com êxito ao recipient.
 
->[!CAUTION]
->
->Se remover um endereço da lista de quarentena, você começará novamente a enviar para esse endereço novamente. Isso pode ter graves impactos na capacidade de entrega e reputação do IP, o que pode eventualmente levar ao bloqueio do endereço IP ou do domínio de envio. Continue com muito cuidado ao considerar a remoção de qualquer endereço da quarentena. Se precisar de assistência, entre em contato com o Suporte do Adobe.
+Para executar isso, crie um workflow e adicione uma query à tabela de quarentena para filtrar todos os recipients afetados, para que possam ser removidos da lista de quarentena e incluídos em deliveries de email futuros do Campaign.
+
+Abaixo estão as diretrizes recomendadas para esta consulta:
+
+* **O texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
+* **Domínio de email (@domain)** igual a domain1.com OR **Domínio de email (@domain)** igual a domain2.com OR **Domínio de email (@domain)** igual a domain3.com
+* **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
+* **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:PM SS
+
+Depois de ter a lista de recipients afetados, adicione um **[!UICONTROL Update data]** atividade para definir seu status como **[!UICONTROL Valid]** assim, eles serão removidos da lista de quarentena pelo **[!UICONTROL Database cleanup]** fluxo de trabalho, Também é possível excluí-los da tabela de quarentena.
+
