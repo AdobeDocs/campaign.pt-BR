@@ -5,10 +5,10 @@ title: Página inicial da automação do Adobe Campaign
 feature: Overview
 description: Visão geral
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: d6ea8bef9c62d4afbc919110775ee99052eeed7a
+source-git-commit: d8a009b1d6ea4f6921cef203d61c78032951f3ee
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 38%
+ht-degree: 40%
 
 ---
 
@@ -22,14 +22,14 @@ O Adobe Campaign facilita a sincronização dos canais, com uma interface de orq
 Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
 
 >[!NOTE]
+>
 >Algumas telas podem diferir do seu ambiente.
 
-
 <table>
-<tr>
+<tr style="border: 0;">
   <td valign="top">
-    <div>
-    <b>Fluxos de trabalho</b>
+    <div><img src="assets/do-not-localize/workflow.jpeg">
+    <b>Workflows</b>
     </div>
     <br>
     <div>
@@ -46,7 +46,7 @@ Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
     <br>
   </td>
   <td valign="top">
-    <div>
+    <div><img src="assets/do-not-localize/campaign.jpeg">
     <b>Automação de campanha</b>
     </div>
     <br>
@@ -64,7 +64,7 @@ Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
     <br>
   </td>
   <td valign="top">
-    <div>
+    <div><img src="assets/do-not-localize/add-on.jpeg">
     <b>Complementos</b>
     </div>
     <br>
@@ -77,7 +77,7 @@ Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
     </div>
     <br>
     <div>
-    <a href="mrm/about-marketing-resource-management.md">Gestão dos Recursos de Marketing (MRM)</a>
+    <a href="mrm/about-marketing-resource-management.md">Gerenciamento dos recursos de marketing (MRM)</a>
     </div>
     <br>
   </td>
