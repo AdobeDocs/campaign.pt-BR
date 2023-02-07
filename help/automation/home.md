@@ -5,10 +5,10 @@ title: Página inicial da automação do Adobe Campaign
 feature: Overview
 description: Visão geral
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: d8a009b1d6ea4f6921cef203d61c78032951f3ee
+source-git-commit: 143e90ef63fac4058008bc6864daf950c11ab2d1
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
@@ -47,7 +47,7 @@ Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
   </td>
   <td valign="top">
     <div><img src="assets/do-not-localize/campaign.jpeg">
-    <b>Automação de campanha</b>
+    <b>Orquestração de campanha</b>
     </div>
     <br>
     <div>
