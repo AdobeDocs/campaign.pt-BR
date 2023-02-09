@@ -229,13 +229,13 @@ Os atributos enviados são os seguintes:
 
 ## Rastrear deliveries {#tracking-deliveries-in-adobe-campaign}
 
-Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois que o Adobe Campaign enviou o delivery, é necessário fazer referência ao conector correspondente nas propriedades de delivery. Para fazer isso, siga as etapas abaixo:
+Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois que o Adobe Campaign enviou a entrega, é necessário fazer referência ao conector correspondente nas propriedades de entrega. Para fazer isso, siga as etapas abaixo:
 
-1. Abra o delivery da campanha a ser rastreado.
+1. Abra a entrega da campanha a ser rastreada.
 
    ![](assets/webanalytics_delivery_properties_003.png)
 
-1. Abra as propriedades de delivery.
+1. Abra as propriedades da entrega.
 1. Acesse a guia **[!UICONTROL Web Analytics]** e selecione a conta externa criada anteriormente. Consulte [Configurar a conta externa no Adobe Campaign](#external-account-ac).
 
    ![](assets/webanalytics_delivery_properties_002.png)

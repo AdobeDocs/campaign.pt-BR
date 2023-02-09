@@ -3,10 +3,11 @@ product: campaign
 title: Ativos, documentos e delivery de campanhas de marketing
 description: Saiba mais sobre documentos de campanha de marketing e delivery outlines
 feature: Campaigns
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -56,7 +57,7 @@ Eles também podem ser editados e modificados nessa visualização.
 
 ## Usar delivery outlines {#delivery-outlines}
 
-Um delivery outline é um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criado pela empresa e para uma campanha específica. Ele é usado no contexto de deliveries de correspondência direta.
+Um delivery outline é um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criado pela empresa e para uma campanha específica. Ela é usada no contexto de entregas de correspondência direta.
 
 Esses elementos são agrupados em delivery outlines, e cada delivery outline será associado a um delivery; ele será referenciado no arquivo de extração enviado para o **provedor de serviço** para ser anexado ao delivery. Por exemplo, você pode criar um delivery outline que se refere a uma unidade e aos folhetos de marketing que ela usa.
 

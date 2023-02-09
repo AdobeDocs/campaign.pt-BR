@@ -22,7 +22,7 @@ Um perfil é um registro no **nmsRecipient** tabela ou tabela externa que armaze
 
 ![](assets/recipients-in-explorer.png)
 
-No Adobe Campaign, **recipients** são os perfis padrão direcionados para envio de deliveries (emails, SMS, etc.). Os dados do recipient armazenados no banco de dados permitem filtrar o target que receberá qualquer delivery e adicionar dados de personalização ao conteúdo de delivery. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar seus deliveries antes que sejam enviados ao público-alvo final.
+No Adobe Campaign, **recipients** são os perfis padrão direcionados para envio de deliveries (emails, SMS, etc.). Os dados do recipient armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar seus deliveries antes que sejam enviados ao público-alvo final.
 
 Para preencher o Adobe Campaign com dados de perfil, é possível:
 

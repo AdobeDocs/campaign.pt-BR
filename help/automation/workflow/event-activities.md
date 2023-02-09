@@ -3,7 +3,8 @@ product: campaign
 title: Atividades de evento em workflows
 description: Lista de atividades de evento em workflows
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 0e8ab370-06bc-431e-a685-310ac54a1246
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 19%
@@ -22,5 +23,3 @@ Essas atividades não estão disponíveis em [workflows específicos da campanha
 * **[Emails de entrada](inbound-emails.md)**: recupera e processa emails.
 * **[SMS de entrada](inbound-sms.md)**: recupera e processa o SMS.
 * **[Download da Web](web-download.md)**: baixa um arquivo da Web.
-
-

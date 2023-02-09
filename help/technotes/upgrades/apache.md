@@ -2,9 +2,10 @@
 product: campaign
 title: Nota técnica - Adobe Campaign - Atualização de segurança da versão do Apache
 description: Adobe Campaign - Atualização de segurança da versão do Apache
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+exl-id: 68e42fe4-7fb6-4b53-9f39-e77374e3753d
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 4%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 O Adobe Campaign trabalha com ferramentas de terceiros e a compatibilidade é atualizada regularmente, a fim de implementar somente as versões compatíveis e se beneficiar das correções e melhorias mais recentes.
 
-O Adobe Campaign inclui o Apache Tomcat, que atua como ponto de entrada no servidor de aplicativos via HTTP e é integrado ao servidor da Web Apache. A Apache Software Foundation lançou o Apache HTTP Server 2.4.53. Esta versão aborda vulnerabilidades que podem permitir que um invasor remoto assuma o controle de um sistema afetado. Saiba mais em [Anúncio do Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
+O Adobe Campaign inclui o Apache Tomcat, que atua como ponto de entrada no servidor de aplicativos via HTTP e é integrado ao servidor da Web Apache. A Apache Software Foundation lançou o Apache HTTP Server 2.4.53. Esta versão aborda vulnerabilidades que podem permitir que um invasor remoto assuma o controle de um sistema afetado. Saiba mais em [Anúncio do Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
 A equipe da Adobe Campaign realizará a atividade de atualização de segurança da versão do Apache ao **15 de junho de 2022** para mitigar essa vulnerabilidade do Apache e tornar seu ambiente de instância mais seguro. Essa atualização se aplica a todos os clientes do Campaign Classic v7 Managed Cloud Services, clientes do Campaign v8 e do Campaign Standard em execução em uma versão vulnerável do Apache HTTP Server. Se você for afetado, o Adobe já entrou em contato para informá-lo sobre essa atualização.
 

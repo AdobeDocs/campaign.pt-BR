@@ -3,7 +3,8 @@ product: campaign
 title: Aplicar regras de tipologia
 description: Saiba como aplicar regras de tipologia
 feature: Typology Rules
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 98%

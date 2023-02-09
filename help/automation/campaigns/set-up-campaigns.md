@@ -25,7 +25,7 @@ O Adobe Campaign permite que você defina, otimize, execute e analise campanhas 
 
 ## Etapas principais para criar suas campanhas {#key-steps-campaign}
 
-As campanhas incluem ações (deliveries) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e delivery outlines). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
+As campanhas incluem ações (entregas) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e outlines de entrega). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
 
 As principais etapas para criar e executar uma campanha de marketing no Adobe Campaign estão listadas abaixo:
 

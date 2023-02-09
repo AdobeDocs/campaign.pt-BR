@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '702'
 ht-degree: 17%
 
 ---
@@ -26,7 +26,7 @@ Dois tipos de ambientes estão disponíveis:
 
 É possível exportar e importar pacotes de um ambiente para outro.
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre pacotes em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba mais sobre pacotes em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
 ## Modelos de implantação{#ac-deployment}
 
@@ -74,4 +74,4 @@ Em seguida, com o sessionToken fornecido pela instância de execução em respos
 
 * Várias instâncias de execução Em uma arquitetura de execução de várias células com várias instâncias de execução atrás de um balanceador de carga, o método de logon chamado pelo aplicativo externo está passando pelo balanceador de carga: por esse motivo, não é possível usar uma autenticação baseada em token. É necessária uma autenticação baseada em usuário/senha.
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre eventos de mensagens transacionais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba mais sobre eventos de mensagens transacionais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel){target="_blank"}

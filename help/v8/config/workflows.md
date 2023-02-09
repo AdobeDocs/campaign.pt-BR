@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1570'
 ht-degree: 22%
 
 ---
@@ -33,7 +33,7 @@ Saiba como criar fluxos de trabalho nesses [casos de uso completos](#end-to-end-
 
 Saiba mais sobre a interface de usuário e a execução de workflows nessas páginas:
 
-* [Introdução a workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
+* [Introdução a workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
 
 * [Práticas recomendadas para fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html)
 
@@ -152,9 +152,11 @@ Saiba como enviar um email com campos de dados personalizados para perfis que ce
 
 E essas páginas na documentação do Campaign v7:
 
-* [Criação, edição e publicação automatizadas de conteúdo](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html){target=&quot;_blank&quot;} Saiba como automatizar a criação e o delivery de um bloco de conteúdo com o complemento Campaign Content Management.
+* [Criação, edição e publicação automatizadas de conteúdo](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html){target="_blank"}
+Saiba como automatizar a criação e o delivery de um bloco de conteúdo com o complemento Campaign Content Management.
 
-* [Teste A/B](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target=&quot;_blank&quot;} Saiba como comparar dois conteúdos de delivery de email por meio de um workflow de direcionamento. A mensagem e o texto são idênticos nas duas remessas: apenas o layout é alterado. A população direcionada é dividida em três grupos: dois grupos de teste e a população restante. Uma versão diferente do delivery é enviado para cada grupo de teste.
+* [Teste A/B](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target="_blank"}
+Saiba como comparar dois conteúdos de delivery de email por meio de um workflow para construção do target. A mensagem e o texto são idênticos nas duas remessas: apenas o layout é alterado. A população direcionada é dividida em três grupos: dois grupos de teste e a população restante. Uma versão diferente do delivery é enviado para cada grupo de teste.
 
 ### Monitoramento {#monitoring}
 
@@ -179,7 +181,7 @@ Saiba como verificar se o processo de atualização terminou antes de executar o
 * [Criar uma lista de resumo](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/create-a-summary-list.html)
 Saiba como criar um workflow que, após coletar arquivos e após vários enriquecimentos, permite criar uma lista de resumo. O exemplo é baseado em uma lista de contatos que compraram em uma loja.
 
-* [Enriquecer dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html)
+* [Enriquecer dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=pt-BR)
 Saiba como enviar deliveries personalizados a perfis que faziam parte da competição mais recente dependendo de sua pontuação.
 
 * [Usar agregações](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html)

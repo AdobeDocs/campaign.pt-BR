@@ -6,7 +6,7 @@ feature: Campaigns, Templates
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '997'
 ht-degree: 54%
 
 ---
@@ -129,7 +129,7 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
    ![](assets/template-activate-3.png)
 
-* **Delivery outline**
+* **Outline de entrega**
 
    Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir os delivery outlines da campanha. Saiba mais sobre delivery outlines [nesta seção](marketing-campaign-assets.md#delivery-outlines).
 
@@ -167,7 +167,7 @@ Ao criar um template de campanha, você precisa inserir as seguintes informaçõ
 * Insira o **label** do modelo: o rótulo é obrigatório e é o rótulo padrão para todas as campanhas com base nesse template.
 * Selecione a **natureza** da campanha na lista suspensa. Os valores disponíveis nesta lista são os que foram salvos na lista discriminada **[!UICONTROL natureOp]**.
 
-Saiba como acessar e configurar suas enumerações em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}.
+Saiba como acessar e configurar suas enumerações em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
 
 
 * Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os templates de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas [nesta seção](recurring-periodic-campaigns.md).

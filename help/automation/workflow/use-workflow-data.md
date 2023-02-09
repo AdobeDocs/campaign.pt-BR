@@ -2,9 +2,10 @@
 title: Usar dados de fluxo de trabalho
 description: Saiba como usar os dados de workflow
 feature: Workflows, Data Management
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '707'
 ht-degree: 75%
 
 ---
@@ -43,7 +44,7 @@ Para fazer isso, selecione o menu relevante:
 
    Esse menu permite acessar o assistente de análise descritiva que produz estatísticas e relatórios sobre os dados de transição.
 
-   Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target=&quot;_blank&quot;}.
+   Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
 
 Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
 
@@ -138,6 +139,3 @@ Os dados do banco de dados do Adobe Campaign e as listas existentes podem ser at
 ### Gerenciar subscrições {#subscription-management}
 
 Para saber mais sobre assinatura e cancelamento de assinatura de recipients em um serviço de informação por meio de um workflow, consulte [Serviços de assinatura](subscription-services.md).
-
-
-

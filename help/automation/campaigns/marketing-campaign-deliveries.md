@@ -3,7 +3,8 @@ product: campaign
 title: Deliveries de campanha de marketing
 description: Saiba mais sobre deliveries de campanha de marketing
 feature: Campaigns, Resource Management, Cross Channel Orchestration
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 48%

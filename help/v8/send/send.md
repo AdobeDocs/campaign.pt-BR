@@ -7,7 +7,7 @@ level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '869'
 ht-degree: 31%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 31%
 
 Depois que o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a análise do delivery.
 
-![](../assets/do-not-localize/book.png) [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#confirming-delivery){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#confirming-delivery){target="_blank"}
 
 Depois de concluído, confirme o delivery para iniciar o delivery de mensagens.
 
 Você também pode:
 
-* agende o delivery para mais tarde usando [a opção adiar o delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#scheduling-the-delivery-sending){target=&quot;_blank&quot;},
-* envie para vários lotes usando [várias ondas](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target=&quot;_blank&quot;}.
+* agende o delivery para mais tarde usando [a opção adiar o delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#scheduling-the-delivery-sending){target="_blank"},
+* envie para vários lotes usando [várias ondas](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}.
 
 Rastrear a execução do delivery a partir do **Delivery** , acessível por meio do detalhe deste delivery ou pela lista de deliveries.
 
@@ -32,7 +32,7 @@ Rastrear a execução do delivery a partir do **Delivery** , acessível por meio
 
 Depois de enviado, verifique o status do delivery no Painel de delivery e acesse os logs do delivery e os relatórios para confirmar se as mensagens foram enviadas corretamente.
 
-![](../assets/do-not-localize/book.png) [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
 
 
 ## MTA da campanha {#mta}
@@ -59,7 +59,7 @@ O MTA qualifica a rejeição SMTP e envia essa qualificação de volta ao Campai
 
 >[!NOTE]
 >
->Atualmente **assíncrono** as rejeições são qualificadas pelo processo inMail por meio do **[!UICONTROL Inbound email]** regras. Para obter mais informações, consulte [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
+>Atualmente **assíncrono** as rejeições são qualificadas pelo processo inMail por meio do **[!UICONTROL Inbound email]** regras. Para obter mais informações, consulte [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target="_blank"}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
 
 Saiba mais sobre falhas de delivery em [esta seção](delivery-failures.md).
 
@@ -76,7 +76,7 @@ O Domain Keys Identified Mail (DKIM) é um método de autenticação usado para 
 
 No Adobe Campaign, a assinatura de autenticação de email do DKIM é executada pelo MTA.
 
-Saiba mais sobre o DKIM no [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication){target=&quot;_blank&quot;}.
+Saiba mais sobre o DKIM no [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication){target="_blank"}.
 
 ## Serviço de feedback por email {#email-feedback-service}
 
@@ -90,7 +90,7 @@ Quando a mensagem é realmente entregue aos perfis segmentados e, uma vez que es
 
 Quando mensagens de rejeição permanente são relatadas pelo MTA, o status do log muda de **[!UICONTROL Taken into account by the service provider]** para **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Quando mensagens de rejeição temporária são relatadas novamente pelo MTA, o status do log permanece inalterado (**[!UICONTROL Taken into account by the service provider]**): somente a variável [motivo do erro](delivery-failures.md#delivery-failure-reasons) é atualizado<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. A porcentagem de **[!UICONTROL Success]** permanece inalterada. Mensagens de rejeição automática são repetidas em todo o delivery [período de validade](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}:
+Quando mensagens de rejeição temporária são relatadas novamente pelo MTA, o status do log permanece inalterado (**[!UICONTROL Taken into account by the service provider]**): somente a variável [motivo do erro](delivery-failures.md#delivery-failure-reasons) é atualizado<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. A porcentagem de **[!UICONTROL Success]** permanece inalterada. Mensagens de rejeição automática são repetidas em todo o delivery [período de validade](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}:
 
 * Se uma nova tentativa for bem-sucedida antes do fim do período de validade, o status da mensagem mudará para **[!UICONTROL Sent]** e a porcentagem **[!UICONTROL Success]** será aumentada de maneira apropriada.
 

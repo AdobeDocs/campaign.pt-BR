@@ -4,13 +4,13 @@ description: Meça o sucesso de suas campanhas e analise o comportamento do usu�
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: 8fb1f57b82ce3b99dabf584a6434d9111dc8b5af
+exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 21%
+source-wordcount: '322'
+ht-degree: 23%
 
 ---
-
 
 # Introdução aos relatórios{#gs-ac-reports}
 
@@ -46,10 +46,10 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
    ![](assets/desc-analysis-report.png)
 
-   ![](../assets/do-not-localize/book.png) O relatório de análise descritiva da campanha é apresentado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) O relatório de análise descritiva da campanha é apresentado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}
 
 * **Relatórios personalizados**
 
    Use o Adobe Campaign para criar relatórios sobre os dados no banco de dados. Depois que eles tiverem sido criados, torne-os acessíveis nos contextos apropriados.
 
-   ![](../assets/do-not-localize/book.png) As etapas para criar um relatório são detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target=&quot;_blank&quot;}. A criação de relatórios personalizados é reservada para usuários avançados.
+   ![](../assets/do-not-localize/book.png) As etapas para criar um relatório são detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. A criação de relatórios personalizados é reservada para usuários avançados.

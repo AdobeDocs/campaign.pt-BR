@@ -3,7 +3,8 @@ product: campaign
 title: Casos de uso de fluxos de trabalho
 description: Saiba mais sobre casos de uso que você pode executar usando workflows do Campaign
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 6e899937-5ca0-4ca5-bb14-f914e41559ab
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 59%
@@ -42,7 +43,7 @@ Saiba mais sobre os diferentes contextos nos quais os workflows podem ser usados
 * [Enriquecer dados](enrich-data.md)
 * [Usar agregações](using-aggregates.md)
 * [Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign](use-workflow-data.md#use-case-gpg-encrypt)
-* [Atualização da lista trimestral usando um query incremental](quarterly-list-update.md)
+* [Atualização da lista trimestral usando uma consulta incremental](quarterly-list-update.md)
 * [Usar a funcionalidade de mesclagem da atividade de desduplicação](deduplication-merge.md)
 * [Configurar um fluxo de trabalho de importação recorrente](recurring-import-workflow.md)
 

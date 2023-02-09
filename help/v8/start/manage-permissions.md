@@ -4,10 +4,11 @@ description: Saiba como conceder permissões a usuários do Campaign v8
 feature: Permissions
 role: User, Admin
 level: Beginner
-source-git-commit: b63dc1616bc7ce1387a7bd0590c289b59f11b33f
+exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
+source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
 workflow-type: tm+mt
-source-wordcount: '1640'
-ht-degree: 40%
+source-wordcount: '1632'
+ht-degree: 41%
 
 ---
 
@@ -19,7 +20,7 @@ Como administrador de produtos, você pode adicionar usuários e conceder acesso
 
 Para adicionar um usuário, siga as etapas abaixo:
 
-1. No [Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;} página inicial, selecione **Adicionar usuários**.
+1. No [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} página inicial, selecione **Adicionar usuários**.
 
    ![](assets/add-a-user.png)
 
@@ -34,7 +35,7 @@ Para adicionar um usuário, siga as etapas abaixo:
 
 1. Clique em **Save**. O usuário é adicionado e exibido na lista Usuários. Se você atribuir uma função de administrador ou um Perfil de produto aos usuários, eles receberão uma notificação por email. Os usuários devem seguir o link para concluir o perfil.
 
-Saiba mais sobre a criação de usuários no Admin Console [esta página](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target=&quot;_blank&quot;}.
+Saiba mais sobre a criação de usuários no Admin Console [esta página](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
 
 Quando novos usuários [fazer logon no Campaign](connect.md) com a Adobe ID, eles são adicionados à lista Operadores do Campaign no console do cliente. Os operadores de campanha são armazenados no **[!UICONTROL Administration > Access management > Operators]** pasta do explorador do Campaign.
 
@@ -74,7 +75,7 @@ Por exemplo, para criar um perfil de produto &quot;revisores&quot;, siga as etap
 
 #### Crie o perfil de produto no Admin Console{#create-profile-in-admin-console}
 
-1. Conecte-se ao [Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;}.
+1. Conecte-se ao [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
 1. No **Produtos e serviços** da página inicial, abra o Campaign product.
 1. Clique em **Novo perfil** e insira o nome do perfil de produto a ser criado, com a sintaxe exata correta, como explicado [here](#product-profiles). Para nosso exemplo, inserimos: campaign - `<your-instance-name>` - revisores
 
@@ -174,7 +175,7 @@ Esses perfis de produto correspondem ao Campaign **grupos de operadores**. Os gr
 
 Você pode usar o Admin Console para criar grupos de usuários e atribuir usuários a eles.
 
-Um grupo de usuários é uma coleção de usuários diferentes que precisam receber um conjunto compartilhado de permissões. Saiba como criar grupos de usuários no [esta seção](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target=&quot;_blank&quot;}.
+Um grupo de usuários é uma coleção de usuários diferentes que precisam receber um conjunto compartilhado de permissões. Saiba como criar grupos de usuários no [esta seção](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}.
 
 Você pode atribuir perfis de produtos a grupos de usuários. Assim, todos os usuários desse grupo receberão o mesmo conjunto de permissões de produto.
 

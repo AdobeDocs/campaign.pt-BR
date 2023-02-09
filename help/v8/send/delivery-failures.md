@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3005'
 ht-degree: 65%
 
 ---
@@ -66,7 +66,7 @@ A maneira como a qualificação de email de devolução é tratada no Adobe Camp
 
 * **Erros síncronos**: O MTA determina o tipo de devolução e a qualificação e envia essas informações para o Campaign. As qualificações de rejeição na variável **[!UICONTROL Delivery log qualification]** tabela não é usada para **síncrono** mensagens de erro de falha de delivery.
 
-* **Erros assíncronos**: As regras usadas pelo Campaign para qualificar falhas de delivery assíncronas são listadas na variável **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** nó . As rejeições assíncronas são qualificadas pelo processo do InMail por meio do **[!UICONTROL Inbound email]** regras. Para obter mais informações, consulte [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}.
+* **Erros assíncronos**: As regras usadas pelo Campaign para qualificar falhas de delivery assíncronas são listadas na variável **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** nó . As rejeições assíncronas são qualificadas pelo processo do InMail por meio do **[!UICONTROL Inbound email]** regras. Para obter mais informações, consulte [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target="_blank"}.
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -111,7 +111,7 @@ Por exemplo, se o período de validade estiver definido com o valor padrão de 5
 
 Quando uma mensagem estiver na fila do MTA por 3,5 dias e não for entregue, o tempo limite expirará, e seu status será atualizado de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** nos logs do delivery.
 
-Para obter mais informações sobre o período de validade, consulte [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}.
+Para obter mais informações sobre o período de validade, consulte [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.
 
 
 ## Tipos de erro de email {#email-error-types}
@@ -158,31 +158,31 @@ Para o canal de email, os possíveis motivos para uma falha de delivery são lis
   </tr> 
   <tr> 
    <td> Endereço de controle </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 127 </td> 
    <td> O endereço do recipient faz parte do grupo de controle.<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplo </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 10 </td> 
    <td> O endereço do recipient já estava nesse delivery.<br /> </td> 
   </tr> 
   <tr> 
    <td> Erro ignorado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 25 </td> 
    <td> O endereço está na lista de permissões. O erro é então ignorado e um email será enviado.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído após arbitragem </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 12 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de 'arbitragem' de campanha.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído por uma regra SQL </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 11 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de campanha do tipo "SQL".<br /> </td> 
   </tr> 
@@ -200,7 +200,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery são lis
   </tr> 
   <tr> 
    <td> Não conectado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 6 </td> 
    <td> O telefone celular do recipient está desligado ou não conectado à rede quando a mensagem é enviada.<br /> </td> 
   </tr> 
@@ -212,7 +212,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery são lis
   </tr> 
   <tr> 
    <td> Não se qualifica para as ofertas </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 16 </td> 
    <td> O recipient não foi qualificado para as ofertas no delivery.<br /> </td> 
   </tr> 
@@ -224,13 +224,13 @@ Para o canal de email, os possíveis motivos para uma falha de delivery são lis
   </tr> 
   <tr> 
    <td> Target limitado em tamanho </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 17 </td> 
    <td> O tamanho máximo de delivery foi atingido para o recipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço não qualificado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 15 </td> 
    <td> O endereço postal não foi qualificado.<br /> </td> 
   </tr> 

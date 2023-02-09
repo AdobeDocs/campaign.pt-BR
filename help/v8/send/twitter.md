@@ -6,7 +6,7 @@ level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '806'
 ht-degree: 37%
 
 ---
@@ -140,7 +140,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
    Antes de enviar a mensagem, valide-a enviando uma prova para uma conta de teste: você pode obter uma renderização exata da mensagem em uma conta privada do Twitter e verificar o conteúdo e a personalização.
 
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre as principais etapas para validar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Saiba mais sobre as principais etapas para validar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target="_blank"}
 
 1. Enviar a mensagem direta
 
@@ -151,7 +151,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
 >[!CAUTION]
 >
->Não é possível enviar mais de 250 mensagens diretas por dia. Para evitar exceder esse limite, é possível entregar em ondas. Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en#sending-using-multiple-waves){target=&quot;_blank&quot;}.
+>Não é possível enviar mais de 250 mensagens diretas por dia. Para evitar exceder esse limite, é possível entregar em ondas. Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en#sending-using-multiple-waves){target="_blank"}.
 
 
 ## Acessar dados de rastreamento {#tw-tracking}
@@ -160,5 +160,5 @@ No **[!UICONTROL Tweet]** do delivery, o rastreamento é ativado por padrão.
 
 Os dados de rastreamento podem ser exibidos nos relatórios do delivery e no **[!UICONTROL Edit > Tracking]** do delivery e do serviço.
 
-A configuração de rastreamento é a mesma de um delivery de email. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR){target=&quot;_blank&quot;}.
+A configuração de rastreamento é a mesma de um delivery de email. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR){target="_blank"}.
 

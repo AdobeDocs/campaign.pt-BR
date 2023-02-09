@@ -7,8 +7,8 @@ level: Beginner, Intermediate, Experienced
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 3%
+source-wordcount: '435'
+ht-degree: 4%
 
 ---
 
@@ -212,4 +212,4 @@ A inserção de dados de assinatura e unsubscription depende do [Mecanismo de ar
 
 **Tópicos relacionados**
 
-* [JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR){target=&quot;_blank&quot;}
+* [JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR){target="_blank"}

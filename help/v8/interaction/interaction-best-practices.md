@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Práticas recomendadas de interação do Adobe Campaign '
+title: Práticas recomendadas de interação do Adobe Campaign
 description: Abordagem de práticas recomendadas para gerenciar o módulo de interação no Adobe Campaign
 exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c

@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '667'
 ht-degree: 6%
 
 ---
@@ -60,7 +60,7 @@ Os benefícios de usar a tabela de recipients padrão são:
 
 ![](../assets/do-not-localize/glass.png) Saiba como estender um esquema existente no [esta seção](extend-schema.md).
 
-![](../assets/do-not-localize/book.png) Descubra exemplos de extensões internas da tabela de destinatários em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Descubra exemplos de extensões internas da tabela de destinatários em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table){target="_blank"}
 
 Você também pode usar uma tabela de recipients diferente para se adequar melhor às suas necessidades comerciais ou funcionais. Este método vem com limitações e é descrito em [esta seção](custom-recipient.md).
 

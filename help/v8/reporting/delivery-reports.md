@@ -2,13 +2,13 @@
 title: Relatórios do delivery integrados da Adobe Campaign
 description: Relatórios do delivery integrados da Adobe Campaign
 feature: Reporting
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1031'
 ht-degree: 92%
 
 ---
-
 
 # Relatórios de entrega {#delivery-reports}
 
@@ -83,7 +83,7 @@ Esta tabela de valores mostra o detalhamento dos deliveries, aberturas, cliques 
 >
 >Os nomes de domínio exibidos neste relatório são definidos na lista discriminada usada no nível de cubo. Para alterar, adicionar ou remover domínios padrão, edite a lista discriminada **[!UICONTROL Domains]** e modifique valores e aliases. A categoria **[!UICONTROL Others]** inclui nomes de domínio que não pertencem a nenhum valor da lista discriminada.
 >
->Saiba como acessar e configurar suas enumerações em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}.
+>Saiba como acessar e configurar suas enumerações em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
 
 
 **[!UICONTROL 4. Generated click streams]**
@@ -203,5 +203,3 @@ Você pode exibir relatórios acumulados sobre deliveries. Para fazer isso, sele
 Para selecionar deliveries não adjacentes na lista, mantenha a tecla CTRL pressionada ao fazer a seleção.
 
 Para selecionar deliveries salvos em uma pasta diferente, clique no botão **[!UICONTROL Display sub-levels]** , acessível na barra de ferramentas. Eles serão exibidos na mesma lista.
-
-

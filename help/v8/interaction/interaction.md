@@ -104,15 +104,15 @@ Descubra termos específicos da oferta e orientações relacionadas antes de com
 
    >[!NOTE]
    >
-   >As categorias secundárias herdam os temas identificados na categoria principal.
+   >As categorias derivadas herdam os temas identificados na categoria principal.
 
 * **Regras de elegibilidade**: restrições aplicadas a um ambiente, categoria ou oferta sobre o período de validade, target e peso. Eles permitem garantir que uma oferta esteja alinhada com o contato alvo.
 
-   Nos ambientes, as regras de elegibilidade incluem regras de apresentação aplicadas às ofertas e às pessoas a serem alvos.
+   Nos ambientes, as regras de elegibilidade incluem regras de apresentação aplicadas às ofertas e às pessoas a serem públicos-alvo.
 
    Nas categorias, as regras de elegibilidade permitem: limite a validade da categoria no tempo, defina temas de aplicação e determine as pessoas a serem alvos. Eles também podem receber um peso multiplicador para um determinado tempo. Isso permite compartilhar as regras para ofertas em outras categorias e simplifica sua administração.
 
-   Nas ofertas, as regras de elegibilidade permitem limitar a validade de ofertas no tempo e determinar as pessoas a serem alvos.
+   Nas ofertas, as regras de elegibilidade permitem limitar a validade de ofertas no tempo e determinar as pessoas a serem públicos-alvo.
 
 * **Arbitragem**: selecionar ofertas para exibir em um ambiente (ofertas elegíveis). O princípio de arbitragem classifica as ofertas por prioridade de acordo com os critérios definidos nas categorias, ofertas e ofertas de contexto.
 * **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a um targeting dimension. Há dois tipos de contatos:
@@ -134,7 +134,7 @@ Descubra termos específicos da oferta e orientações relacionadas antes de com
    * **[!UICONTROL implicit]** : são identificados por um cookie (permanente ou de sessão). Ele pode ser processado como um contato anônimo ou identificado.
    * **[!UICONTROL anonymous]** : não é possível identificar contatos.
 
-* **Oferta elegível**: a oferta se encontra com as restrições definidas upstream que podem ser oferecidas de forma consistente a um target.
+* **Oferta elegível**: a oferta se encontra com as restrições definidas upstream que podem ser oferecidas de forma consistente a um público-alvo.
 * **Regras de apresentação**: regras de tipologia mencionadas no ambiente de oferta, que permitem excluir algumas ofertas levando em conta o histórico de apresentações.
 * **Peso**: fórmulas que permitem calcular precisamente a relevância de uma oferta para selecionar a mais relevante. Os pesos são definidos nas ofertas. Ofertas elegíveis são consideradas em ordem decrescente de peso.
 * **Função de renderização**: definida no espaço de oferta para construir sua representação de oferta com base nos atributos definidos na oferta. Há três modos diferentes de função de renderização: HTML, XML e texto.

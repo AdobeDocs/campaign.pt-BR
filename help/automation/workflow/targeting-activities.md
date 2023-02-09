@@ -3,7 +3,8 @@ product: campaign
 title: Sobre as atividades de direcionamento
 description: Sobre as atividades de direcionamento
 feature: Workflows, Audiences, Targeting Activity
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: e89c9f20-fc10-421f-9c14-2e33be562a8d
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 81%
@@ -34,4 +35,3 @@ Essas atividades permitem construir um ou mais targets definindo conjuntos e div
 * **[Serviços de assinatura](subscription-services.md)**: permite gerenciar assinaturas de target e unsubscriptions para um serviço de informações.
 * **[União](union.md)**: permite agrupar o resultado de várias atividades em um único target.
 * **[Dados de atualização](update-data.md)**: permite que você atualize os dados em grande escala no banco de dados.
-

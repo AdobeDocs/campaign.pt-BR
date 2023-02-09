@@ -2,7 +2,8 @@
 title: Cálculo das métricas de relatório integradas
 description: Cálculo das métricas de relatório integradas
 feature: Reporting
-source-git-commit: 80e5efc5998c67ce576e9f8208fab9543fc70d29
+exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '2978'
 ht-degree: 99%
@@ -55,7 +56,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -138,7 +139,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -171,7 +172,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -206,7 +207,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -275,7 +276,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -308,7 +309,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -343,7 +344,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -380,7 +381,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -413,7 +414,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -448,7 +449,7 @@ Este relatório é baseado na tabela **[!UICONTROL Services]** (nms:service).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -495,7 +496,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -692,7 +693,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -739,7 +740,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -798,7 +799,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -833,7 +834,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -892,7 +893,7 @@ Este relatório baseia-se nas tabelas de **Deliveries** (nms:delivery) e **Logs 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 

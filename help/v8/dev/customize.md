@@ -6,8 +6,8 @@ level: Beginner, Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 21%
+source-wordcount: '545'
+ht-degree: 22%
 
 ---
 
@@ -33,7 +33,7 @@ Dois modos de extensão de tabela estão disponíveis:
 
 * Por meio da interface, usando o **Novo campo** assistente
 
-   ![](../assets/do-not-localize/book.png) Saiba como adicionar rapidamente um novo campo no Campaign em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Saiba como adicionar rapidamente um novo campo no Campaign em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic){target="_blank"}
 
 * Programaticamente, estendendo o esquema
 
@@ -46,9 +46,9 @@ Para adicionar um tipo de dados totalmente novo que não existe pronto para uso 
 
 **Tópicos relacionados**
 
-![](../assets/do-not-localize/book.png) Exemplo de edição de schema em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Exemplo de edição de schema em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic){target="_blank"}
 
-![](../assets/do-not-localize/book.png) Caso de uso: vincular um campo a uma tabela de referência existente em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Caso de uso: vincular um campo a uma tabela de referência existente em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link){target="_blank"}
 
 
 ## Modificar os formulários de entrada
@@ -63,7 +63,7 @@ A interface do Adobe Campaign usa muitas aplicações web para acessar, gerencia
 
 Os aplicativos web prontos para uso são armazenadas no nó Administration > Configuration > Web applications.
 
-![](../assets/do-not-localize/book.png) Saiba como criar uma página de visão geral no Campaign em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba como criar uma página de visão geral no Campaign em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application){target="_blank"}
 
 
 ## Personalizar listas e criar filtros {#gs-lists-and-filters}
@@ -72,16 +72,16 @@ Os aplicativos web prontos para uso são armazenadas no nó Administration > Con
 
 As listas de campanha são fornecidas com filtros predefinidos para facilitar a navegação e a virtualização de dados.
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre as opções de filtragem em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba mais sobre as opções de filtragem em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering){target="_blank"}
 
 
 ### Acessar dados do Explorer
 
 Ao navegar na árvore do Adobe Campaign Explorer, os dados no banco de dados são exibidos em listas. Você pode filtrar essas listas, executar pesquisas, adicionar informações, filtrar e classificar dados.
 
-![](../assets/do-not-localize/book.png) Saiba como configurar listas e salvar uma configuração de lista em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba como configurar listas e salvar uma configuração de lista em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started){target="_blank"}
 
 
 É possível aplicar filtros nessas listas para exibir apenas os dados necessários para o operador. Em seguida, as ações podem ser executadas nos dados filtrados. A configuração de filtro permite selecionar dados de uma lista dynamically. Se os dados forem modificados, os dados filtrados serão atualizados.
 
-![](../assets/do-not-localize/book.png) Saiba como filtrar dados no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Saiba como filtrar dados no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters){target="_blank"}

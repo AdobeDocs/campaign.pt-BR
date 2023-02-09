@@ -6,7 +6,7 @@ level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1071'
 ht-degree: 18%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 O **Gerenciamento de redes sociais (Marketing Social)** permite interagir com seus clientes por meio da Twitter. Use este recurso para:
 
-* Postar mensagens e enviar DMs - Use o Adobe Campaign Social Marketing para postar mensagens no Twitter. Você também pode enviar mensagens diretas a todos os seus seguidores do 
+* Postar mensagens e enviar DMs - Use o Adobe Campaign Social Marketing para postar mensagens no Twitter. Você também pode enviar mensagens diretas a todos os seus seguidores.
 
 * Colete novos contatos - O Adobe Campaign Social Marketing também facilita a aquisição de novos contatos: entre em contato com os usuários e pergunte se eles desejam compartilhar suas informações de perfil. Se eles aceitarem, o Adobe Campaign recuperará automaticamente os dados, o que permite realizar campanhas de direcionamento e, quando possível, implementar estratégias entre canais.
 
@@ -32,9 +32,9 @@ Para configurar o Adobe Campaign para publicar tweets em suas contas do Twitter,
 
 ## Conta de desenvolvedor do twitter {#dev-account}
 
-Para começar com essa integração, você deve se inscrever em um [Conta de desenvolvedor do twitter](https://developer.twitter.com){target=&quot;_blank&quot;}.
+Para começar com essa integração, você deve se inscrever em um [Conta de desenvolvedor do twitter](https://developer.twitter.com){target="_blank"}.
 
-O Campaign usa a versão 1.1 da API do Twitter. Para usá-lo, você precisa solicitar acesso Elevado por meio do Portal do desenvolvedor. Saiba mais sobre o Twitter Elevated Access [nesta página](https://developer.twitter.com/en/portal/products/elevated){target=&quot;_blank&quot;}.
+O Campaign usa a versão 1.1 da API do Twitter. Para usá-lo, você precisa solicitar acesso Elevado por meio do Portal do desenvolvedor. Saiba mais sobre o Twitter Elevated Access [nesta página](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
 
 ## Criar um aplicativo no Twitter {#create-an-app-on-twitter}
 
@@ -111,7 +111,7 @@ Eles são interrompidos por padrão: você deve iniciá-los manualmente ao come�
 
 O **[!UICONTROL Synchronization of Twitter accounts]** o workflow técnico sincroniza contas do Twitter no Adobe Campaign. Esse workflow recupera a lista de seguidores do Twitter para que você possa enviar mensagens diretas a eles. [Saiba mais](../send/twitter.md#direct-tw-messages)
 
-Por padrão, esse fluxo de trabalho é acionado todas as quintas-feiras às 7h30. Você pode usar o **[!UICONTROL Execute pending task(s) now]** para iniciar o workflow a qualquer momento enquanto estiver implementando essa integração.  Também é possível editar o scheduler para alterar a frequência de acionamento do workflow. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html){target=&quot;_blank&quot;}.
+Por padrão, esse fluxo de trabalho é acionado todas as quintas-feiras às 7h30. Você pode usar o **[!UICONTROL Execute pending task(s) now]** para iniciar o workflow a qualquer momento enquanto estiver implementando essa integração.  Também é possível editar o scheduler para alterar a frequência de acionamento do workflow. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html){target="_blank"}.
 
 >[!CAUTION]
 >

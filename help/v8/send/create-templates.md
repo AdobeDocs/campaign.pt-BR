@@ -1,14 +1,15 @@
 ---
 product: campaign
-title: Trabalhar com templates de delivery
+title: Trabalho com modelos de entrega
 description: Saiba como criar e usar templates de delivery no Campaign
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 1c0015a02ff950d9bf9d33aacebf899db9e580fa
+exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 50%
+ht-degree: 51%
 
 ---
 
@@ -87,7 +88,7 @@ Para configurar um template de delivery do zero, siga as etapas abaixo:
 1. Complete a categoria **Email parameters** com o assunto do email e o público alvo.
 1. Adicione seu **HTML** content para personalizar seu template, você pode exibir um link de mirror page e um link de unsubscription.
 1. Selecione a guia **Preview.** No menu suspenso **Test personalization**, selecione **Recipient** para visualizar seu template como o perfil escolhido.
-1. Clique em **Save**. Seu template está pronto para ser usado em um delivery.
+1. Clique em **Save**. Seu template está pronto para ser usado em uma entrega.
 
 
 ## Usar modelos{#use-a-delivery-template}
@@ -123,21 +124,21 @@ Essa ação gera um delivery na pasta associada ao template. O nome desse delive
 
 ## Tutoriais em vídeo {#delivery-template-video}
 
-### Como configurar um template do delivery
+### Como configurar um template de entrega
 
-O vídeo a seguir mostra como configurar um modelo para um delivery ad hoc.
+O vídeo a seguir mostra como configurar um modelo para uma entrega ad hoc.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
 
-### Como configurar propriedades de templates do delivery
+### Como configurar propriedades de templates de entrega
 
-O vídeo a seguir mostra como definir as propriedades do template do delivery e explica em detalhes cada propriedade.
+O vídeo a seguir mostra como definir as propriedades do template de entrega e explica em detalhes cada propriedade.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
-### Como implantar um template do delivery ad-hoc
+### Como implantar um template de entrega ad-hoc
 
-Este vídeo explica como implantar um template do delivery de email ad-hoc, bem como a diferença entre um delivery de email e um workflow de delivery.
+Este vídeo explica como implantar um template de entrega de email ad-hoc, bem como a diferença entre uma entrega de email e um workflow de entrega.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 

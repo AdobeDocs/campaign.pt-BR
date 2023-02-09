@@ -330,7 +330,7 @@ Saiba como criar consultas avançadas nessas amostras completas:
 * Saiba como direcionar em atributos de recipients simples no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
 * Saiba como filtrar recipients não contatados nos últimos 7 dias em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html).
 * Saiba como recuperar a lista de operadores que pode ser filtrada por contas ativas em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html).
-* Saiba como criar um público-alvo de e-mail de aniversário no  [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html).
+* Saiba como criar um público-alvo de e-mail de aniversário no  [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR).
 
 
 ### Parâmetros avançados para filtros predefinidos {#param-for-data-filters}
