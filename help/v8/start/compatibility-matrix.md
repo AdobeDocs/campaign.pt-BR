@@ -1,14 +1,14 @@
 ---
 title: Matriz de compatibilidade do Campaign v8
-description: Sistemas e versões do Discover compatíveis com o Campaign v8
+description: Conheça os sistemas e as versões compatíveis com o Campaign v8
 feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 90dde8bb3bde4893971a2f364aa636ade6fff10f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Os sistemas operacionais e navegadores a seguir são necessários para usar o Co
 
 * **Microsoft Edge**
 
-* **Microsoft Edge WebView2**, versão mais recente. Baixe a partir de [Site do desenvolvedor do Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br){target="_blank"}.
+* **Microsoft Edge WebView2**, versão mais recente. Baixe do [Site do desenvolvedor da Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br){target="_blank"}.
 
 ## Conectores CRM{#CRMconnectors}
 
