@@ -5,15 +5,15 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 source-git-commit: e7f4982a9b13fe5413b6cce0a1cc58e2b3a6afa4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1585'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Notas de versão de 2021{#2021-release}
 
-Esta página lista novos recursos, melhorias e correções que vêm com o **Versões de 2021 do Campaign v8**.
+Esta página lista novos recursos, melhorias e correções que vêm com as **versões mais recentes do Campaign v8 2021**.
 
 ## Versão 8.2.8 {#release-8-2-8}
 
