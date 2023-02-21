@@ -8,7 +8,7 @@ exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: b783b1444457b3204fea35b613582642499acf65
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 35%
+ht-degree: 41%
 
 ---
 
@@ -71,9 +71,9 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 >
 >O número de quarentenas aumenta com o tempo. Por exemplo, se o tempo de vida de um endereço de email for considerado três anos e a tabela de recipients aumentar em 50% todo ano, o aumento da quarentena poderá ser calculado da seguinte maneira:
 >
->Fim do Ano 1: (1)&#42;0,33)/(1+0,5)=22%.
+>Fim do Ano 1: (1&#42;0,33)/(1+0,5)=22%.
 >
->Fim do Ano 2: (1.22)&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
+>Fim do ano 2: ((1,22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
 
 Além disso, a variável **[!UICONTROL Non-deliverables and bounces]** relatório integrado, disponível na **Relatórios** nesta página inicial, o exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar dados para um delivery específico ou personalizar esse relatório conforme necessário.
 
@@ -119,9 +119,9 @@ Para executar isso, crie um workflow e adicione uma query à tabela de quarenten
 Abaixo estão as diretrizes recomendadas para esta consulta:
 
 * **O texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
-* **Domínio de email (@domain)** igual a domain1.com OR **Domínio de email (@domain)** igual a domain2.com OR **Domínio de email (@domain)** igual a domain3.com
+* **Domínio de email (@domain)** igual a domain1.com OU **Domínio de email (@domain)** igual a domain2.com OU **Domínio de email (@domain)** igual a domain3.com
 * **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
-* **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:PM SS
+* **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:SS PM
 
 Depois de ter a lista de recipients afetados, adicione um **[!UICONTROL Update data]** atividade para definir seu status como **[!UICONTROL Valid]** assim, eles serão removidos da lista de quarentena pelo **[!UICONTROL Database cleanup]** fluxo de trabalho, Também é possível excluí-los da tabela de quarentena.
 
