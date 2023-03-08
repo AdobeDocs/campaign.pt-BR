@@ -6,16 +6,33 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: e7f4982a9b13fe5413b6cce0a1cc58e2b3a6afa4
+source-git-commit: 55711ea42b9cc0be70e875e1544780b6983af98b
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 100%
+source-wordcount: '519'
+ht-degree: 91%
 
 ---
 
 # Versão mais recente{#latest-release}
 
 Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign v8**.
+
+## Versão 8.4.4 {#release-8-4-4}
+
+>[!CAUTION]
+>
+> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#download-ac-console).
+
+_8 de março de 2023_
+
+**Aprimoramento de segurança**
+
+* Para melhorar a segurança, o Tomcat foi atualizado da versão 8.5.81 para 8.5.85. (NEO-50530)
+
+**Correções**
+
+* Correção de um problema que impedia a rolagem na variável **Editar** do Editor de conteúdo digital (DCE). (NEO-54474)
+* Correção de um problema durante a replicação que poderia resultar em falha do servidor Web. (NEO-53670)
 
 ## Versão 8.4.3 {#release-8-4-3}
 
