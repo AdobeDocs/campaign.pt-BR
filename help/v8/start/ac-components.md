@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '660'
 ht-degree: 1%
 
 ---
@@ -30,23 +30,15 @@ Você pode acessar o Adobe Campaign por meio de um cliente avançado, um cliente
 
 * Cliente avançado
 
-   O Campaign Rich client é um aplicativo nativo que se comunica com o servidor de aplicativos do Adobe Campaign, por meio de protocolos padrão de Internet, como SOAP e HTTP.
-
-   O console do Campaign Client centraliza todos os recursos e configurações, e requer largura de banda mínima, pois depende de um cache local. Projetado para fácil implantação, o console do Campaign Client pode ser implantado a partir de um navegador da Internet, atualizado automaticamente e não requer nenhuma configuração de rede específica, pois gera apenas tráfego HTTP(S).
-
-   ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o Console do Cliente do Campaign](../start/connect.md).
+   O Campaign Rich client é um aplicativo nativo que se comunica com o servidor de aplicativos do Adobe Campaign, por meio de protocolos padrão de Internet, como SOAP e HTTP. [Saiba mais sobre o Console do Cliente do Campaign](../start/connect.md).
 
 * Cliente fino
 
-   Os recursos de acesso à Web do Adobe Campaign permitem acessar um subconjunto de recursos do Campaign com um navegador da Web, usando uma interface de usuário do HTML. Use essa interface da Web para acessar relatórios, controlar e validar mensagens, acessar painéis de monitoramento e muito mais.
-
-   ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o Campaign Web Access](../start/connect.md).
+   Os recursos de acesso à Web do Adobe Campaign permitem acessar um subconjunto de recursos do Campaign com um navegador da Web, usando uma interface de usuário do HTML. Use essa interface da Web para acessar relatórios, controlar e validar mensagens, acessar painéis de monitoramento e muito mais.  [Saiba mais sobre o Campaign Web Access](../start/connect.md).
 
 * Aplicativos externos com APIs
 
-   Em certos casos, o sistema pode ser chamado de aplicativos externos usando as APIs de serviços da Web expostas por meio do protocolo SOAP.
-
-   ![](../assets/do-not-localize/glass.png) [Saiba mais sobre APIs do Campaign](../dev/api.md).
+   Em certos casos, o sistema pode ser chamado de aplicativos externos usando as APIs de serviços da Web expostas por meio do protocolo SOAP. [Saiba mais sobre APIs do Campaign](../dev/api.md).
 
 ### Camada de persistência{#persistance-layer}
 

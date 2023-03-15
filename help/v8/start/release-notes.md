@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 55711ea42b9cc0be70e875e1544780b6983af98b
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 91%
+source-wordcount: '522'
+ht-degree: 88%
 
 ---
 
@@ -19,26 +19,25 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 
 ## Versão 8.4.4 {#release-8-4-4}
 
->[!CAUTION]
->
-> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#download-ac-console).
-
 _8 de março de 2023_
 
 **Aprimoramento de segurança**
 
-* Para melhorar a segurança, o Tomcat foi atualizado da versão 8.5.81 para 8.5.85. (NEO-50530)
+* Para melhorar a segurança, o Tomcat foi atualizado da versão 8.5.81 para a 8.5.85. (NEO-50530)
 
 **Correções**
 
-* Correção de um problema que impedia a rolagem na variável **Editar** do Editor de conteúdo digital (DCE). (NEO-54474)
-* Correção de um problema durante a replicação que poderia resultar em falha do servidor Web. (NEO-53670)
+* Correção de um problema que poderia impedir a rolagem no **Editar** do Editor de conteúdo digital (DCE). (NEO-54474)
+* Correção de um problema durante a replicação que poderia causar falha no servidor da Web. (NEO-53670)
 
-## Versão 8.4.3 {#release-8-4-3}
 
 >[!CAUTION]
 >
-> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#download-ac-console).
+> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
+
+
+## Versão 8.4.3 {#release-8-4-3}
+
 
 _27 de janeiro de 2023_
 
@@ -67,3 +66,6 @@ _27 de janeiro de 2023_
 * O gerenciamento de URLs de rastreamento foi aprimorado em workflows com várias entregas para melhorar o desempenho. (NEO-50894) <!--OKKKK-->
 * Correção de um problema que poderia causar falha na replicação de esquemas que usam a pasta Xtkfolder. (NEO-46787) <!--OKKKK-->
 * Correção de uma causa de problema que poderia fazer com que a coluna personalizada “lastModified” fosse descartada na tabela NmsSubscription. (NEO-48402)
+
+
+**A atualização do Console do Cliente é obrigatória para esta versão** - Saiba como atualizar seu console do cliente neste [página](../start/connect.md#upgrade-ac-console).

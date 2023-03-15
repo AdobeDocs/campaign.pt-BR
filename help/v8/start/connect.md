@@ -5,43 +5,47 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: f381a2ec91b7179a51d91f9b7414ea39db03cd71
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 11%
+source-wordcount: '954'
+ht-degree: 9%
 
 ---
 
 # Conectar-se ao Adobe Campaign v8{#gs-ac-connect}
 
-O Console do Cliente do Campaign é um cliente avançado que permite a conexão com o(s) servidor(es) de aplicativos do Campaign. Saiba mais sobre o Console do cliente do Campaign [nesta página](ac-components.md#presentation-layer).
+Você deve instalar o Console do Cliente do Campaign para se conectar ao(s) servidor(es) de aplicativos do Campaign.
+
+O console do cliente é um aplicativo nativo que se comunica com o servidor de aplicativos Adobe Campaign, por meio de protocolos padrão de Internet, como SOAP e HTTP. O console do Campaign Client centraliza todos os recursos e configurações, e requer largura de banda mínima, pois depende de um cache local. Projetado para fácil implantação, o console do Campaign Client pode ser implantado a partir de um navegador da Internet, atualizado automaticamente e não requer nenhuma configuração de rede específica, pois gera apenas tráfego HTTP(S).
 
 Antes de começar, é necessário:
 
 * Verifique a compatibilidade do sistema e das ferramentas com o Adobe Campaign no [Matriz de compatibilidade](compatibility-matrix.md)
 * Obter o URL do servidor do Campaign
 * Crie sua Adobe ID ou obtenha suas credenciais de usuário de sua empresa
-* Instale o tempo de execução do Microsoft Edge Webview2 em seu sistema (a partir da versão de build do Campaign Classic 8.4). [Saiba mais](#webview)
+* Instale o tempo de execução do Microsoft Edge Webview2 em seu sistema. [Saiba mais](#webview)
 
-## Instalação do tempo de execução do Microsoft Edge Webview2 {#webview}
+## Instale o Console do cliente{#download-ac-console}
 
-A partir da versão de build do Campaign Classic 8.4, a instalação do tempo de execução do Microsoft Edge Webview 2 é necessária para qualquer instalação do console.
+### Tempo de execução do Microsoft Edge Webview2 {#webview}
+
+A partir da versão de build do Campaign Classic 8.4, a instalação do tempo de execução do Microsoft Edge Webview 2 é necessária para qualquer instalação do Console do cliente.
 
 O Web View é instalado por padrão como parte do sistema operacional Windows 11. Se ele ainda não estiver presente em seu sistema, o Campaign Console Installer solicitará que você o baixe de [Site do desenvolvedor do Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br){target="_blank"}. Observe que o link de download não funciona no navegador Internet Explorer 11, pois o Microsoft substituiu o suporte. Use um navegador diferente para acessar o link.
 
-## Baixe e instale o Console do cliente{#download-ac-console}
+### Baixar o Console{#install-ac-console}
 
-Ao usar o Campaign pela primeira vez ou se precisar atualizar para uma versão mais recente, é necessário baixar o Console do cliente e instalá-lo.
+Ao usar o Campaign pela primeira vez, é necessário baixar o Console do cliente e instalá-lo.
 
-Estão disponíveis duas opções:
+Duas opções estão disponíveis para baixar o Console do cliente:
 
-1. Como administrador do Campaign, conecte-se ao Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html){target="_blank"} e faça o download do programa de instalação do Console do cliente. Em seguida, você pode instalá-lo em sua máquina local.
+1. Como administrador do Campaign, conecte-se ao Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html){target="_blank"}.
 
-1. Como usuário final, o Adobe pode implantar o Console para você: depois que o Console for atualizado, você será solicitado a baixar a versão mais recente do Console do cliente em uma janela pop-up.
+1. Como usuário final, o administrador do Campaign implanta o Console do cliente para você e o disponibiliza por meio de um URL dedicado.
 
->[!CAUTION]
->
->O Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** não selecionado para garantir que todos os usuários sejam alertados quando uma nova versão do Console estiver disponível.  Se essa opção for selecionada, o usuário não será informado sobre novas versões disponíveis.
+Depois que o programa de instalação do Console do cliente for baixado, instale-o no computador local.
+
+Observe que não é possível alterar o idioma do Console do cliente depois que ele for instalado.
 
 ## Criar a conexão{#create-your-connection}
 
@@ -69,7 +73,9 @@ Você pode adicionar quantas conexões forem necessárias para se conectar aos a
 
 ## Faça logon no Adobe Campaign {#logon-to-ac}
 
-Para fazer logon em uma instância existente, siga as etapas abaixo:
+Os usuários do Campaign se conectam ao console do Adobe Campaign usando a Adobe ID, por meio do Adobe Identity Management System (IMS). Eles podem usar a mesma ID para todas as soluções do Adobe. A conexão é salva ao usar o Adobe Campaign com outras soluções. Saiba mais sobre o Adobe IMS na [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}.
+
+Para fazer logon em uma instância, siga as etapas abaixo:
 
 1. Inicie o Console a partir do Windows **[!UICONTROL Start]** no menu **Adobe Campaign** grupo de programas.
 
@@ -89,6 +95,17 @@ Para fazer logon em uma instância existente, siga as etapas abaixo:
 >
 >Para versões de build do campaign classic 8.4, o console do cliente Adobe Campaign pode solicitar credenciais de proxy duas vezes durante a autenticação de proxy. Isso ocorre porque o Microsoft Edge Webview2 não salva as credenciais de proxy no armazenamento de cache/senha, ao contrário do Internet Explorer.
 
+## Atualizar seu console do cliente{#upgrade-ac-console}
+
+Quando seu sistema é atualizado para uma versão mais recente, você deve atualizar seu Console do cliente para essa mesma versão. Essa é uma prática recomendada e, para algumas versões, essa atualização é obrigatória. Nesse caso, é mencionado no [Notas de versão](release-notes.md).
+
+Como usuário do Managed Cloud Services, o Adobe implanta o Console do cliente para você. Ao se conectar ao ambiente atualizado, você será solicitado a baixar a versão mais recente do Console do cliente em uma janela pop-up. Você deve aceitar esta atualização e atualizar o Console do Cliente, conforme solicitado.
+
+>[!CAUTION]
+>
+>O Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** não selecionado para garantir que todos os usuários sejam alertados quando uma nova versão do Console estiver disponível. Se essa opção for selecionada, o usuário não será informado sobre novas versões disponíveis.
+
+
 ## Conceder acesso aos usuários{#grant-access}
 
 O Adobe Campaign permite definir e gerenciar os direitos atribuídos aos diversos operadores.
@@ -97,12 +114,6 @@ Como administrador do Campaign, você é responsável por criar os operadores e 
 
 Saiba mais sobre os usuários e como definir suas permissões em [esta seção](gs-permissions.md).
 
-
-## Conecte-se ao Campaign com sua Adobe ID{#connect-ims}
-
-Os usuários do Campaign se conectam ao console do Adobe Campaign usando a Adobe ID, por meio do Adobe Identity Management System (IMS). Eles podem usar a mesma ID para todas as soluções do Adobe. A conexão é salva ao usar o Adobe Campaign com outras soluções.
-
-Saiba mais sobre o Adobe IMS na [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}.
 
 ## Acesso à Web{#web-access}
 
