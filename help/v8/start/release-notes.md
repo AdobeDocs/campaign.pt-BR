@@ -8,8 +8,8 @@ hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,8 +27,8 @@ _8 de março de 2023_
 
 **Correções**
 
-* Correção de um problema que poderia impedir a rolagem no **Editar** do Editor de conteúdo digital (DCE). (NEO-54474)
-* Correção de um problema durante a replicação que poderia causar falha no servidor da Web. (NEO-53670)
+* Correção de um problema que impedia a rolagem na guia **Editar** do editor de conteúdo digital (DCE). (NEO-54474)
+* Correção de um problema durante a replicação que poderia resultar em uma falha do servidor da web. (NEO-53670)
 
 
 >[!CAUTION]
