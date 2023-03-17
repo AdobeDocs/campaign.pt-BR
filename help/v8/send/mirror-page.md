@@ -4,9 +4,9 @@ description: Saiba como adicionar e gerenciar o link para a mirror page
 feature: Email
 role: User
 level: Beginner
-source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
+source-git-commit: 9ebcfee199a2ba355b7b504c7f24732d30542a36
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,14 @@ A mirror page gerada pelo Adobe Campaign contém todos os dados de personalizaç
 
 ![](assets/mirror-page-link.png)
 
-
 ## Adicionar um link à mirror page{#link-to-mirror-page}
 
 Inserir um link para a mirror page é uma boa prática. Esse link pode ser, por exemplo, &quot;Exibir este email em seu navegador&quot; ou &quot;Leia online&quot;. Geralmente, ela está localizada no cabeçalho ou no rodapé do email.
 
 No Adobe Campaign, você pode inserir um link para a mirror page no conteúdo do email usando o **bloco de personalização**. O **Link para mirror page** o bloco de personalização insere o seguinte código no conteúdo do email: `<%@ include view='MirrorPage' %>`.
+
+![](assets/mirror-page-insert.png)
+
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
 
@@ -47,5 +49,19 @@ Além do modo padrão, as seguintes opções estão disponíveis:
 
 * **[!UICONTROL Force the generation of the mirror page]**: use esse modo para gerar a mirror page, mesmo se nenhum link para a mirror page for inserido no delivery.
 * **[!UICONTROL Do not generate the mirror page]**: use esse modo para evitar a geração de uma mirror page, mesmo se o link estiver presente no delivery.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: use essa opção para habilitar o acesso ao conteúdo da mirror page, com dados de personalização, na janela de log do delivery. Para acessar essa mirror page: depois que o delivery for enviado, abra-o e navegue até sua **[!UICONTROL Delivery]** guia . Selecione um recipient e clique no botão **[!UICONTROL Display the mirror page for this message...]** link . A mirror page é exibida em uma nova guia.
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: quando o link da mirror page não estiver presente no conteúdo do email, use essa opção para habilitar o acesso ao conteúdo da mirror page, na janela de log do delivery, conforme detalhado abaixo.
+
+## Verificar a mirror page de um recipient{#mirror-page-access}
+
+Você pode acessar o conteúdo da mirror page de um recipient específico de um delivery, com dados de personalização.
+
+Para acessar essa mirror page:
+
+1. Depois que o delivery for enviado, abra-o e navegue até sua **[!UICONTROL Delivery]** guia .
+
+1. Selecione um recipient e clique no botão **[!UICONTROL Display the mirror page for this message...]** link .
+
+   ![](assets/mirror-page-display.png)
+
+   A mirror page é exibida em uma tela dedicada, com dados de personalização do recipient selecionado.
 
