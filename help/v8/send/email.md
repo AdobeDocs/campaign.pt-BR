@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: bd109f9d320b3009ab0d9414291d397b331373de
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 29%
@@ -69,7 +69,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
    * Adicionar uma mirror page
 
-      Para permitir que seus recipients visualizem o conteúdo do delivery em um navegador da Web, adicione um link à mirror page da mensagem.
+      Para permitir que seus recipients visualizem o conteúdo do delivery em um navegador da Web, adicione um link para a [mirror page](../send/mirror-page.md) da sua mensagem.
 
       Coloque o cursor onde deseja inserir este link, clique no último ícone na barra de ferramentas e clique em **[!UICONTROL Include]** e selecione **[!UICONTROL link to mirror page]**.
    Quando o conteúdo estiver pronto, clique em **Salvar**: agora ele será exibido na lista de deliveries, no **[!UICONTROL Campaigns > Deliveries]** guia . Seu primeiro delivery de email está pronto. Agora é necessário definir o público-alvo, validar o delivery e enviá-lo.
