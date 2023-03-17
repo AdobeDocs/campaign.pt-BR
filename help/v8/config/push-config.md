@@ -6,16 +6,20 @@ feature: Push
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: ea660ce993c2529d81e625e687c8a8254f1e9904
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 44%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Integrar os SDKs do Campaign ao seu aplicativo {#integrate-campaign-sdk}
 
-Use SDKs do Campaign para iOS e Android para facilitar a integração de seu aplicativo móvel na plataforma Adobe Campaign.
+Você pode usar SDKs do Campaign para iOS e Android para facilitar a integração de seu aplicativo móvel na plataforma Adobe Campaign.
+
+>[!NOTE]
+>
+>Você também pode usar o Adobe Experience Platform Mobile SDK configurando a extensão Adobe Campaign na interface do usuário da coleta de dados. [Saiba mais na documentação do desenvolvedor](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 As versões compatíveis com Android e iOS e as versões compatíveis com SDKs do Campaign para o Campaign v8 são listadas na variável [Matriz de compatibilidade](../start/compatibility-matrix.md#MobileSDK).
 
@@ -651,7 +655,7 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    | ACCRegisterDeviceStatusFailureUnknownUUID | O UUID fornecido (chave de integração) é desconhecido. | EMPTY |
    | ACCRegisterDeviceStatusFailureUnexpectedError | Erro inesperado retornado ao servidor ACC. | A mensagem de erro retornou para o ACC. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
    A definição do protocolo **Neolane_SDKDelegate** e do delegado **registerDeviceStatus** e a seguinte:
 
