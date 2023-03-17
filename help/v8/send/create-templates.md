@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 51%
+ht-degree: 49%
 
 ---
 
@@ -22,7 +22,7 @@ Um modelo pode incluir sistematicamente:
 * Tipologias
 * Endereços de remetente e de resposta
 * Blocos de personalização básicos
-* Links para mirror pages e unsubscription links
+* Links para [mirror pages](../send/mirror-page.md) e links de unsubscription
 * Conteúdo, logotipo da empresa ou assinatura
 * Outras propriedades de delivery, como validade de recursos, parâmetros de nova tentativa ou configurações de quarentena.
 
@@ -86,7 +86,7 @@ Para configurar um template de delivery do zero, siga as etapas abaixo:
 1. No **Propriedades** , adapte as configurações.
 1. Na guia **General**, confirme ou altere os locais selecionados nos menus suspensos **Execution folder**, **Folder**, e **Routing.**
 1. Complete a categoria **Email parameters** com o assunto do email e o público alvo.
-1. Adicione seu **HTML** content para personalizar seu template, você pode exibir um link de mirror page e um link de unsubscription.
+1. Adicione seu **HTML** content para personalizar seu template, você pode exibir um link de mirror page e um link de unsubscription.[](../send/mirror-page.md)
 1. Selecione a guia **Preview.** No menu suspenso **Test personalization**, selecione **Recipient** para visualizar seu template como o perfil escolhido.
 1. Clique em **Save**. Seu template está pronto para ser usado em uma entrega.
 
@@ -142,4 +142,4 @@ Este vídeo explica como implantar um template de entrega de email ad-hoc, bem c
 
 >[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

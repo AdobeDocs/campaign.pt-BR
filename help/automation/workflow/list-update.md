@@ -4,10 +4,10 @@ title: Atualizar lista
 description: Atualizar lista
 feature: Workflows, Targeting Activity
 exl-id: abb7f777-0b4a-4bf2-bcb6-32264f340a58
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -73,4 +73,4 @@ Este vídeo mostra como criar uma lista de recipients pelo Explorer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

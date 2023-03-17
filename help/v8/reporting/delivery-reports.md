@@ -3,7 +3,7 @@ title: Relatórios do delivery integrados da Adobe Campaign
 description: Relatórios do delivery integrados da Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 92%
@@ -62,7 +62,7 @@ Este relatório combina os indicadores principais para rastrear o comportamento 
 * **[!UICONTROL Distinct opens for the population reached]** : Estimativa do número de recipients alvos que abriram uma mensagem pelo menos uma vez. Cliques em URLs rastreados são considerados, pois os emails precisam ser abertos para se clicar em um link.
 * **[!UICONTROL Sum of opens for the population reached]** : Estimativa do número total de aberturas por recipients alvos.
 * **[!UICONTROL Clicks on opt-out link]** : Número de cliques no link unsubscription.
-* **[!UICONTROL Clicks on the mirror page link]** : Número de cliques no link para a mirror page. Para ser considerado, o link deve ser definido como tal no assistente do delivery (URLs rastreadas). <!--Refer to this [page](../../delivery/using/about-delivery-monitoring.md).-->
+* **[!UICONTROL Clicks on the mirror page link]**[ : Número de cliques no link para a mirror page](../send/mirror-page.md). Para ser considerado, o link deve ser definido como tal no assistente do delivery (URLs rastreadas).
 * **[!UICONTROL Estimation of forwards]** : Estimativa do número de emails encaminhados pelos recipients alvos. Esse valor é calculado subtraindo o número de pessoas distintas e o número de recipients distintos que clicaram no email.
 
    >[!NOTE]

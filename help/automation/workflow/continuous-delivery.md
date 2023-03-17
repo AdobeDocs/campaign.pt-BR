@@ -4,10 +4,10 @@ title: Delivery contínuo
 description: Delivery contínuo
 feature: Workflows, Channels Activity
 exl-id: e3ad6d92-8d53-4098-90fd-cfed29f2e56e
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -60,8 +60,8 @@ Um delivery contínuo criará um ÚNICO delivery. Logs do delivery (broadLog) e 
 
 ## Tutorial em vídeo {#continuous-delivery-video}
 
-Este vídeo mostra como configurar um delivery contínuo com um query incremental.
+Este vídeo mostra como configurar uma entrega contínua com um query incremental.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
