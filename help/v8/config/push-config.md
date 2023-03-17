@@ -6,10 +6,10 @@ feature: Push
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: ea660ce993c2529d81e625e687c8a8254f1e9904
+source-git-commit: 4a017eabf1330b04939aa4bd0602c371a0ee3208
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1311'
+ht-degree: 43%
 
 ---
 
@@ -17,16 +17,14 @@ ht-degree: 0%
 
 Você pode usar SDKs do Campaign para iOS e Android para facilitar a integração de seu aplicativo móvel na plataforma Adobe Campaign.
 
+As versões compatíveis com Android e iOS e as versões compatíveis com SDKs do Campaign para o Campaign v8 são listadas na variável [Matriz de compatibilidade](../start/compatibility-matrix.md#MobileSDK).
+
+Como administrador do Campaign, você pode baixar os SDKs do Campaign na [Distribuição de software Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html). Para obter mais informações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
+
 >[!NOTE]
 >
 >Você também pode usar o Adobe Experience Platform Mobile SDK configurando a extensão Adobe Campaign na interface do usuário da coleta de dados. [Saiba mais na documentação do desenvolvedor](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
-
-As versões compatíveis com Android e iOS e as versões compatíveis com SDKs do Campaign para o Campaign v8 são listadas na variável [Matriz de compatibilidade](../start/compatibility-matrix.md#MobileSDK).
-
->[!NOTE]
->
->Como administrador do Campaign, você pode baixar os SDKs do Campaign na [Distribuição de software Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html). Para obter mais informações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
-
 
 ## Declarar configurações de integração {#declaring-integration-settings}
 
