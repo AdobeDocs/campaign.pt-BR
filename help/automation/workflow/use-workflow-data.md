@@ -3,7 +3,7 @@ title: Usar dados de fluxo de trabalho
 description: Saiba como usar os dados de workflow
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 75%
@@ -57,7 +57,7 @@ Os dados do target são descartados na execução do workflow Somente a última 
 
 ### Aproveitar os dados do target {#target-data}
 
-Os dados armazenados na tabela de trabalho temporário do workflow estão disponíveis para tarefas de personalização. Os dados podem ser usados nos campos de personalização.
+Os dados armazenados na tabela de trabalho temporário do workflow estão disponíveis para tarefas de personalização. Os dados podem ser usados na variável [campos de personalização](../../v8/send/personalization-fields.md).
 
 Isso permite usar dados coletados por uma lista em um delivery, por exemplo. Para fazer isso, use a seguinte sintaxe:
 

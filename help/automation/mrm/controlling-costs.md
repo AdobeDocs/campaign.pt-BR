@@ -3,7 +3,7 @@ product: campaign
 title: Controlar custos
 description: Saiba como controlar custos
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
-source-git-commit: e6b1790832be6331f4b27cc50b5d034ad738a822
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 93%
@@ -34,7 +34,7 @@ As etapas a seguir devem ser aplicadas para implementar o gerenciamento de orça
 
 Para criar um orçamento, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Campaign management > Budgets]** nó do explorador do Campaign.
+1. Navegue até o **[!UICONTROL Campaign management > Budgets]** pasta do explorador do Campaign.
 1. Clique no ícone **[!UICONTROL New]**, nomeie o orçamento e o salve.
 1. Informe a quantia inicial: indicar o montante atribuído no campo relevante. Os outros montantes são inseridos automaticamente. [Saiba mais](#calculating-amounts).
 1. Defina o período de validade inserindo as datas inicial e final. Estas informações são apenas indicativas.

@@ -4,10 +4,10 @@ title: Introdução às simulações de campanha
 description: Saiba como configurar simulações de campanha
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 93%
+source-wordcount: '1210'
+ht-degree: 92%
 
 ---
 
@@ -197,7 +197,7 @@ A guia **[!UICONTROL Calculations]** permite definir eixos de relatórios no tar
 >[!NOTE]
 >
 >Recomendamos definir eixos de cálculo nos templates de simulação, em vez de individualmente para cada simulação.\
->Os modelos de simulação são salvos no nó **[!UICONTROL Resources > Templates > Simulation templates]** da árvore do Adobe Campaign.
+>Os modelos de simulação são salvos na variável **[!UICONTROL Resources > Templates > Simulation templates]** pasta do explorador do Campaign.
 
 **Exemplo:**
 

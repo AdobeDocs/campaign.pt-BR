@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 49%
+source-wordcount: '698'
+ht-degree: 48%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 49%
 
 Use templates do delivery para padronizar a aparência criativa, a fim de ser mais rápido na execução e na inicialização de campanhas.
 
-Um modelo pode incluir sistematicamente:
+Um modelo pode incluir:
 
 * Tipologias
 * Endereços de remetente e de resposta
-* Blocos de personalização básicos
+* Básico [blocos de personalização](../send/personalization-blocks.md)
 * Links para [mirror pages](../send/mirror-page.md) e links de unsubscription
 * Conteúdo, logotipo da empresa ou assinatura
 * Outras propriedades de delivery, como validade de recursos, parâmetros de nova tentativa ou configurações de quarentena.

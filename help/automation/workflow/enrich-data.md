@@ -4,10 +4,10 @@ title: Enriquecer dados
 description: Saiba mais sobre a atividade do fluxo de trabalho de enriquecimento
 feature: Workflows, Enrichment Activity
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 100%
+source-wordcount: '744'
+ht-degree: 83%
 
 ---
 
@@ -42,17 +42,17 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 Para criar o workflow, aplique as seguintes etapas:
 
 1. Duas atividades **[!UICONTROL Query]** e uma atividade **[!UICONTROL Intersection]** são adicionadas para direcionar novos assinantes que entraram por último na competição.
-1. A atividade **[!UICONTROL Enrichment]** permite adicionar dados armazenados na tabela **[!UICONTROL Competition results]**. O campo **[!UICONTROL Score]**, onde a personalização de delivery ocorrerá, é adicionado à tabela de trabalho do fluxo de trabalho.
-1. A atividade do tipo **[!UICONTROL Split]** permite criar subconjuntos de recipients com base em pontuações.
-1. Para cada subconjunto, uma atividade tipo **[!UICONTROL Delivery]** é adicionada.
+1. O **[!UICONTROL Enrichment]** é usada para adicionar dados armazenados no **[!UICONTROL Competition results]** tabela. O **[!UICONTROL Score]** o campo que nossa personalização de delivery ocorrerá é adicionado à tabela de trabalho do workflow.
+1. O **[!UICONTROL Split]** A atividade do tipo é usada para criar subconjuntos de recipients com base em pontuações.
+1. Para cada subconjunto, uma **[!UICONTROL Delivery]** atividade é adicionada.
 
 ## Etapa 1: Direcionamento {#step-1--targeting}
 
-A primeira query nos permite selecionar recipients que foram adicionados ao banco de dados nos últimos seis meses.
+A primeira query é usada para direcionar recipients que foram adicionados ao banco de dados nos últimos seis meses.
 
 ![](assets/uc1_enrich_4.png)
 
-A segunda query nos permite selecionar os recipients que faziam parte da última competição.
+A segunda query é usada para direcionar os recipients que faziam parte da última competição.
 
 ![](assets/uc1_enrich_5.png)
 
@@ -60,7 +60,7 @@ Em seguida, uma atividade tipo **[!UICONTROL Intersection]** é adicionada para 
 
 ## Etapa 2: Enriquecimento {#step-2--enrichment}
 
-Neste exemplo, queremos personalizar os deliveries de acordo com o campo **[!UICONTROL Score]** armazenado na tabela **[!UICONTROL Competition results]**. Esta tabela tem um relacionamento de tipo 1-n com a tabela de recipients. A atividade **[!UICONTROL Enrichment]** permite adicionar dados de uma tabela vinculada à dimensão do filtro à tabela de trabalho do fluxo de trabalho.
+Neste exemplo, saiba como personalizar deliveries de acordo com a variável **[!UICONTROL Score]** armazenado no campo **[!UICONTROL Competition results]** tabela. Esta tabela tem um relacionamento de tipo 1-n com a tabela de recipients. O **[!UICONTROL Enrichment]** é usada para adicionar dados de uma tabela vinculada à dimensão do filtro à tabela de trabalho do workflow.
 
 1. Na tela de edição da atividade de enriquecimento, selecione **[!UICONTROL Add data]**, então **[!UICONTROL Data linked to the filtering dimension]** e clique em **[!UICONTROL Next]**.
 

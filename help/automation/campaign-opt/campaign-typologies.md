@@ -4,7 +4,7 @@ title: Introdução às tipologias de campanha
 description: Saiba como configurar e implementar tipologias de campanha
 feature: Typology Rules
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
-source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 55%
@@ -29,7 +29,7 @@ Uma tipologia é um conjunto de regras de verificação aplicadas em todas as me
 
 Uma tipologia de campanha pode conter várias regras de tipologia, mas uma entrega só pode fazer referência a uma tipologia.
 
-As regras de tipologia e tipologias incorporadas estão disponíveis na variável **[!UICONTROL Administration > Campaign management > Typology management]** nó do explorador do Campaign.
+As regras de tipologia e tipologias incorporadas estão disponíveis na variável **[!UICONTROL Administration > Campaign management > Typology management]** pasta do explorador do Campaign.
 
 Para cada tipologia, a variável **[!UICONTROL Rules]** permite adicionar, excluir ou exibir as regras de tipologia a serem aplicadas.
 

@@ -4,10 +4,10 @@ title: Provedores, estoques e orçamentos
 description: Provedores, estoques e orçamentos
 feature: Budget Management, Campaigns
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '1816'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ O Adobe Campaign permite que você defina provedores de serviços que estarão e
 
 Cada provedor de serviços é salvo em um arquivo com detalhes de contato, modelos de serviço e tarefas relacionadas.
 
-Os provedores de serviços são configurados no nó **[!UICONTROL Administration > Campaign management]** da árvore.
+Os provedores de serviços são configurados na variável **[!UICONTROL Administration > Campaign management]** pasta do explorador do Campaign.
 
 As tarefas realizadas durante as entregas são realizadas por provedores de serviços, especialmente para mala direta e canais móveis. Esses provedores de serviços podem, por exemplo, estar envolvidos na impressão ou distribuição de mensagens. Essas tarefas envolvem configurações e custos que são específicos para cada provedor de serviços. A configuração dos provedores de serviços envolve quatro estágios:
 
@@ -129,7 +129,7 @@ Você pode associar informações nos processos associados ao provedor de servi�
 
 * A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de recipients.
 
-   Por padrão, os modelos de delivery para mensagens de notificação são salvos no nó **[!UICONTROL Administration > Campaign management > Technical delivery templates]**, que é acessível na visualização geral.
+   Por padrão, os modelos de delivery para mensagens de notificação são salvos na variável **[!UICONTROL Administration > Campaign management > Technical delivery templates]** , que é acessível na visualização geral.
 
 * A seção **[!UICONTROL Post-processing]** permite que você selecione o workflow a ser iniciado após a aprovação do delivery. Se um template de workflow for inserido, uma instância de workflow será criada automaticamente e será iniciada assim que a aprovação entrar em vigor. Esse workflow pode enviar o arquivo de extração para um provedor de serviços externos para processamento, por exemplo.
 

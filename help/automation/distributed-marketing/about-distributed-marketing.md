@@ -4,10 +4,10 @@ title: Introdução ao marketing distribuído
 description: Introdução ao marketing distribuído
 feature: Distributed Marketing
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -103,7 +103,7 @@ Os operadores locais devem pertencer ao grupo de operadores **[!UICONTROL Local 
 
 ### Entidades organizacionais {#organizational-entities}
 
-Para criar uma entidade organizacional, clique no nó **[!UICONTROL Administration > Access management > Organizational entities]** e clique no ícone **[!UICONTROL New]**, acima da lista de entidades.
+Para criar uma entidade organizacional, clique no botão **[!UICONTROL Administration > Access management > Organizational entities]** e clique no botão **[!UICONTROL New]** acima da lista de entidades.
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 

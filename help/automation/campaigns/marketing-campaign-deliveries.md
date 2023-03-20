@@ -4,10 +4,10 @@ title: Deliveries de campanha de marketing
 description: Saiba mais sobre deliveries de campanha de marketing
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 48%
+source-wordcount: '706'
+ht-degree: 46%
 
 ---
 
@@ -57,7 +57,7 @@ A confirmação do delivery é restrita a Administradores e ao operador ou grupo
 
 ![](assets/select-delivery-reviewers.png)
 
-No entanto, também é possível permitir que o proprietário da campanha confirme o envio, mesmo se revisores específicos tiverem sido definidos nas propriedades de delivery ou campanha. Para fazer isso, como Administrador, crie a **NmsCampaign_Ativate_OwnerConfirmation** e defina-a como **1**. As opções são gerenciadas no nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** no explorador do Adobe Campaign.
+No entanto, também é possível permitir que o proprietário da campanha confirme o envio, mesmo se revisores específicos tiverem sido definidos nas propriedades de delivery ou campanha. Para fazer isso, como Administrador, crie a **NmsCampaign_Ativate_OwnerConfirmation** e defina-a como **1**. As opções são gerenciadas na variável **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** pasta do explorador do Campaign.
 
 
 ### Iniciar um delivery de mala direta {#start-an-offline-delivery}

@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: bd109f9d320b3009ab0d9414291d397b331373de
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 29%
+source-wordcount: '576'
+ht-degree: 28%
 
 ---
 
@@ -48,7 +48,6 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 1. **Personalizar sua mensagem**
 
-
    * Adicione o nome e o sobrenome dos recipients
 
       Para inserir o nome e o sobrenome dos perfis segmentados no conteúdo da mensagem, coloque o cursor onde deseja inseri-los e clique no último ícone na barra de ferramentas, em seguida, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL Greetings]**.
@@ -58,6 +57,8 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
       Navegue até a guia Preview para verificar a personalização selecionando um recipient.
 
       ![](assets/perso-check.png)
+
+      Saiba mais sobre as opções de personalização no [esta seção](personalize.md).
 
    * Inserir um link rastreado
 

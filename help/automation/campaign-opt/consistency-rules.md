@@ -4,10 +4,10 @@ title: Regras de consistência
 description: Regras de consistência
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ No exemplo a seguir, criamos uma regra de tipologia para uma campanha de fidelid
 
 Para projetar uma nova regra de capacidade, siga as etapas abaixo:
 
-1. No nó **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]**, clique em **[!UICONTROL New]**.
+1. Em **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** pasta, clique em **[!UICONTROL New]**.
 1. Selecione um tipo de regra **[!UICONTROL Capacity]**.
 
    ![](assets/campaign_opt_create_capacity_01.png)

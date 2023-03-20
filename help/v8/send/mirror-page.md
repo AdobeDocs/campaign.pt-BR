@@ -4,9 +4,9 @@ description: Saiba como adicionar e gerenciar o link para a mirror page
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 2a2887fcd476566d2105edd9824feba4c1caca8a
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ No Adobe Campaign, você pode inserir um link para a mirror page no conteúdo do
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-<!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
+Para obter mais informações sobre a inserção de blocos de conteúdo personalizados, consulte [Blocos de personalização](personalization-blocks.md).
 
 ## Geração de mirror page{#mirror-page-generation}
 

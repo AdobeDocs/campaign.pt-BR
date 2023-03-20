@@ -4,9 +4,9 @@ title: Aplicar regras de tipologia
 description: Saiba como aplicar regras de tipologia
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '956'
 ht-degree: 98%
 
 ---
@@ -19,7 +19,7 @@ Para aplicar as regras de tipologia criadas, é necessário associá-las a uma t
 
 1. Crie uma tipologia de campanha.
 
-   As tipologias são acessadas pelo nó **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]**.
+   As tipologias são acessadas por meio do **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** pasta do explorador do Campaign.
 
 1. Vá para a guia **[!UICONTROL Rules]**, clique no botão **[!UICONTROL Add]** e selecione as regras a serem aplicadas com esta tipologia.
 
