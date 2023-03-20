@@ -4,10 +4,10 @@ title: Aplicar regras de tipologia
 description: Saiba como aplicar regras de tipologia
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 98%
+source-wordcount: '951'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,9 @@ ht-degree: 98%
 
 ## Aplicar uma tipologia a um delivery {#apply-a-typology-to-a-delivery}
 
-Para aplicar as regras de tipologia criadas, é necessário associá-las a uma tipologia e depois fazer referência a essa tipologia no delivery. Para fazer isso:
+Para aplicar as regras de tipologia criadas, associe-as a uma tipologia e, em seguida, faça referência a essa tipologia em seu delivery.
+
+Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma tipologia de campanha.
 
@@ -26,8 +28,8 @@ Para aplicar as regras de tipologia criadas, é necessário associá-las a uma t
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. Salve a tipologia: ela será adicionada à lista de tipologias existentes.
-1. Abra o delivery para o qual deseja aplicar as regras.
-1. Abra as propriedades do delivery e acesse a guia **[!UICONTROL Typology]**.
+1. Abra o delivery ao qual deseja aplicar as regras.
+1. Navegue até as propriedades de delivery e abra o **[!UICONTROL Typology]** guia .
 1. Selecione a tipologia na lista suspensa.
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
@@ -82,7 +84,7 @@ No modo de operação padrão, as regras são aplicadas na seguinte sequência:
 1. Regras de pressão.
 1. Regras de capacidade.
 1. Regras de controle, se elas forem aplicadas no final do direcionamento.
-1. Regras de controle, se elas forem aplicadas ao início da personalização. Se as regras dos usuários (filtragem/pressão/capacitive) expiram e precisam de recálculo, elas serão aplicadas durante esta etapa.
+1. Regras de controle, se elas forem aplicadas ao início da personalização. Se as regras dos usuários (filtragem / pressão / capacitive) expiraram e precisam de recálculo, elas são aplicadas durante esta etapa.
 1. Regras de controle, se elas forem aplicadas ao final da personalização.
 
 >[!NOTE]
@@ -95,7 +97,7 @@ Por exemplo, uma regra de pressão com uma ordem de execução de 20 é executad
 
 ### Regras de controle {#control-rules}
 
-Para regras de **[!UICONTROL Control]**, é possível decidir em qual ponto do ciclo de vida do delivery ela será aplicada (antes ou depois do direcionamento, no início da personalização, no final da análise). Na guia **[!UICONTROL Phase]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL General]**.
+Para **[!UICONTROL Control]** , é possível decidir em qual ponto do ciclo de vida do delivery a regra será aplicada: antes ou depois do direcionamento, no início da personalização, no final da análise. Na guia **[!UICONTROL Phase]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL General]**.
 
 ![](assets/campaign_opt_define_control_phase.png)
 

@@ -1,17 +1,17 @@
 ---
-title: Personalizar conteúdo
+title: Introdução à personalização
 description: Saiba como personalizar o conteúdo da mensagem
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 4885f15c71d2be27dc32a239fb22abc3a96503c7
+source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 29%
+source-wordcount: '471'
+ht-degree: 30%
 
 ---
 
-# Personalizar conteúdo {#personalize-content}
+# Introdução à personalização {#personalize-content}
 
 Para aproveitar ao máximo cada campanha de marketing, o Adobe Campaign oferece uma maneira de fornecer conteúdo personalizado que fala para os clientes em seu nível. Com base nos dados do perfil, os recursos de personalização para criar uma experiência personalizada para diferentes grupos e indivíduos: é possível adaptar suas mensagens a cada recipient específico aproveitando os dados e as informações que você tem sobre elas. Pode ser seu primeiro nome, interesses, onde eles vivem, o que compraram, e muito mais.
 
