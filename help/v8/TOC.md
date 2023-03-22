@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Visão geral da campanha
 title: Documentos do Campaign v8
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 97%
+source-wordcount: '520'
+ht-degree: 96%
 
 ---
 
@@ -62,6 +62,9 @@ ht-degree: 97%
       + [Adicionar campos de personalização](send/personalization-fields.md)
       + [Usar blocos de personalização](send/personalization-blocks.md)
       + [Criar condições](send/conditions.md)
+   + Validar o delivery {#validate}
+      + [Visualização e provas](send/preview-and-proof.md)
+      + [Análise de entrega](send/delivery-analysis.md)
 + Gerenciamento de perfil e público-alvo {#audience}
    + [Introdução a perfis e públicos](audiences/gs-audiences.md)
    + [Trabalhar com públicos](start/audiences.md)

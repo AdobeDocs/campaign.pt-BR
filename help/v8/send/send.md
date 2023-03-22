@@ -5,26 +5,19 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 31%
+source-wordcount: '795'
+ht-degree: 33%
 
 ---
 
 
 # Enviar e monitorar seus emails
 
-Depois que o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a análise do delivery.
-
-![](../assets/do-not-localize/book.png) [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#confirming-delivery){target="_blank"}
+Depois que o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a análise do delivery. [Saiba mais](delivery-analysis.md)
 
 Depois de concluído, confirme o delivery para iniciar o delivery de mensagens.
-
-Você também pode:
-
-* agende o delivery para mais tarde usando [a opção adiar o delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#scheduling-the-delivery-sending){target="_blank"},
-* envie para vários lotes usando [várias ondas](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}.
 
 Rastrear a execução do delivery a partir do **Delivery** , acessível por meio do detalhe deste delivery ou pela lista de deliveries.
 
@@ -59,7 +52,7 @@ O MTA qualifica a rejeição SMTP e envia essa qualificação de volta ao Campai
 
 >[!NOTE]
 >
->Atualmente **assíncrono** as rejeições são qualificadas pelo processo inMail por meio do **[!UICONTROL Inbound email]** regras. Para obter mais informações, consulte [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target="_blank"}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
+>Atualmente **assíncrono** as rejeições são qualificadas pelo processo inMail por meio do **[!UICONTROL Inbound email]** regras.
 
 Saiba mais sobre falhas de delivery em [esta seção](delivery-failures.md).
 

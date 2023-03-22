@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 28%
+source-wordcount: '567'
+ht-degree: 29%
 
 ---
 
@@ -92,9 +92,7 @@ Saiba mais nestas seções de **Documentação do Campaign Classic v7**:
 
 ## Testar e validar seus emails
 
-O Campaign oferece várias maneiras de testar e validar seus emails antes de enviá-los para seus públicos.
-
-![](../assets/do-not-localize/book.png) [Aplicar práticas recomendadas listadas na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html){target="_blank"}
+O Campaign oferece várias maneiras de testar e validar seus emails antes de enviá-los para seus públicos. Saiba como visualizar e testar o conteúdo de email no [esta página](../send/preview-and-proof.md).
 
 Você pode:
 
@@ -102,6 +100,5 @@ Você pode:
 * Enviar provas
 * Adicionar seed addresses
 * Usar grupos de controle
-* Verificar renderização de email
 
 ![](../assets/do-not-localize/book.png) [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target="_blank"}
