@@ -4,7 +4,7 @@ description: Saiba como preparar e verificar seu delivery
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 8f04981e38da79e69afc890311c559f9ffa136f4
+source-git-commit: 51b333492ad50849751208c7549dc00f66140b82
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 62%
@@ -47,11 +47,11 @@ Para preparar o delivery, verifique se o conteúdo e o target do delivery foram 
    >
    >Durante a execução, a análise congela o delivery (ou a prova). Qualquer modificação no delivery (ou na prova) deve ser seguida de outra análise antes de se tornar aplicável.
 
-Ao concluir a análise, a seção superior da janela indica se o preparo do delivery está concluído ou se ocorreram erros. Todas as etapas de validação, avisos e erros são listados. Os ícones coloridos mostram o tipo de mensagem:
+   Ao concluir a análise, a seção superior da janela indica se o preparo do delivery está concluído ou se ocorreram erros. Todas as etapas de validação, avisos e erros são listados. Os ícones coloridos mostram o tipo de mensagem:
 
-* Um ícone azul indica uma mensagem informativa.
-* Um ícone amarelo indica um erro de processamento não crítico.
-* Um ícone vermelho indica um erro crítico que impede o envio do delivery.
+   * Um ícone azul indica uma mensagem informativa.
+   * Um ícone amarelo indica um erro de processamento não crítico.
+   * Um ícone vermelho indica um erro crítico que impede o envio do delivery.
 
    ![](assets/delivery-analysis-results.png){width="800" align="left"}
 
