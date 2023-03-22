@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Visão geral da campanha
 title: Documentos do Campaign v8
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 23f30dee861250532490da8598e6e0e18f72c1b0
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '521'
 ht-degree: 96%
 
 ---
@@ -56,15 +56,15 @@ ht-degree: 96%
          + [Falhas de entrega](send/delivery-failures.md)
       + [Otimização da hora de envio](send/predictive.md)
       + [Gerenciar subscrições](start/subscriptions.md)
-   + Personalizar conteúdo {#personalize}
-      + [Introdução à personalização](send/personalize.md)
-      + [Dados de personalização](send/personalization-data.md)
-      + [Adicionar campos de personalização](send/personalization-fields.md)
-      + [Usar blocos de personalização](send/personalization-blocks.md)
-      + [Criar condições](send/conditions.md)
-   + Validar o delivery {#validate}
-      + [Visualização e provas](send/preview-and-proof.md)
-      + [Análise de entrega](send/delivery-analysis.md)
+      + Personalizar conteúdo {#personalize}
+         + [Introdução à personalização](send/personalize.md)
+         + [Dados de personalização](send/personalization-data.md)
+         + [Adicionar campos de personalização](send/personalization-fields.md)
+         + [Usar blocos de personalização](send/personalization-blocks.md)
+         + [Criar condições](send/conditions.md)
+      + Validar o delivery {#validate}
+         + [Visualizar e enviar provas por email](send/preview-and-proof.md)
+         + [Análise de entrega](send/delivery-analysis.md)
 + Gerenciamento de perfil e público-alvo {#audience}
    + [Introdução a perfis e públicos](audiences/gs-audiences.md)
    + [Trabalhar com públicos](start/audiences.md)
