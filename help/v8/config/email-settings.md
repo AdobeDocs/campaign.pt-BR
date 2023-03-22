@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Intermediate, Experienced
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 16%
+source-wordcount: '411'
+ht-degree: 13%
 
 ---
 
@@ -66,7 +66,16 @@ Observe as seguintes especificidades e recomendações:
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->
 
-**Saiba mais na documentação do Campaign Classic v7**
+**Saiba mais**
+
+Nestas seções:
+
+* [Usar templates de delivery de email](../send/create-templates.md)
+
+* [Entender as falhas de entrega](../send/delivery-failures.md)
+
+
+E na documentação do Campaign Classic v7:
 
 * [Selecionar formato do email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats){target="_blank"}
 
@@ -74,6 +83,3 @@ Observe as seguintes especificidades e recomendações:
 
 * [Definir o endereço de email de devolução](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails){target="_blank"}
 
-* [Usar templates de delivery de email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR){target="_blank"}
-
-* [Entender as falhas de entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html){target="_blank"}

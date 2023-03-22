@@ -5,18 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 29%
+source-wordcount: '466'
+ht-degree: 23%
 
 ---
 
 # Criar e enviar emails
 
-Os deliveries de email permitem enviar emails personalizados para a população do target.
-
-![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html){target="_blank"}
+Os deliveries de email permitem enviar emails personalizados para a população do target. [Saiba mais](../send/send.md).
 
 ## Criar seu primeiro delivery de email
 
@@ -78,17 +76,12 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 Saiba como importar conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
 
-Saiba mais nestas seções de **Documentação do Campaign Classic v7**:
+Saiba mais nas seguintes seções:
 
-* Criar um email no Campaign
-   ![](../assets/do-not-localize/book.png) [Saiba como criar um email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=pt-BR){target="_blank"}
-* Criar e usar um modelo de email
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre modelos de email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR){target="_blank"}
-* Selecione o público do seu email
-   ![](../assets/do-not-localize/book.png) [Saiba como definir a população alvo](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
-* Validar um delivery e enviar provas
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre as principais etapas para validar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target="_blank"}
-* Adicionar [seed addresses](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}
+* [Criar um email no Campaign](../send/email.md)
+* [Criar e usar um modelo de email](../send/create-templates.md)
+* [Selecione o público do seu email](../audiences/gs-audiences.md)
+* [Validar um delivery e enviar provas](../send/preview-and-proof.md)
 
 ## Testar e validar seus emails
 
@@ -99,6 +92,5 @@ Você pode:
 * Verificar logs de análise do delivery
 * Enviar provas
 * Adicionar seed addresses
-* Usar grupos de controle
 
-![](../assets/do-not-localize/book.png) [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target="_blank"}
+[Saiba mais](../send/delivery-analysis.md)
