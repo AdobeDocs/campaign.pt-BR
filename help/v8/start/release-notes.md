@@ -6,16 +6,33 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
+source-git-commit: 44743e585119e8cd81a8fcc9b4d667c25c0d438e
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 100%
+source-wordcount: '678'
+ht-degree: 79%
 
 ---
 
 # Versão mais recente{#latest-release}
 
 Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign v8**.
+
+## Versão 8.4.5 {#release-8-4-5}
+
+_3 de abril de 2023_
+
+**Correções**
+
+* Correção de um problema que poderia resultar em um erro de restrição de chave duplicada se vários workflows de aprovação estivessem definidos para a mesma programação. (NEO-48968)
+* Correção de um problema de regressão introduzido pelo NEO54474 (8.4.4) que fazia com que o atributo de estilo da tag body fosse alterado durante o upload de uma imagem no Editor de conteúdo digital (DCE). (NEO-57697)
+* Correção de um problema que poderia resultar em erro ao exportar dados usando um conector CRM se a tabela temporária tivesse uma chave primária definida como longa em vez de uuid. (NEO-54153)
+* Correção de um problema de regressão introduzido no 8.4.1 que poderia levar a erros na exportação do pacote, FDA sobre HTTP e relatórios. (NEO-57731)
+* Correção de um problema de regressão introduzido na versão 8.3.8, que poderia impedir que o status do delivery fosse atualizado corretamente para deliveries com IDs negativas. (NEO-54675)
+* Correção de um problema com campos booleanos ao importar dados usando o conector Big Query (NEO49181)
+
+>[!CAUTION]
+>
+> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
 
 ## Versão 8.4.4 {#release-8-4-4}
 
