@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '866'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ O Adobe Campaign tem recursos avançados de segmentação e direcionamento que s
 
 A funcionalidade avançada de Gerenciamento de dados amplia os recursos de processamento de dados. Ela simplifica e otimiza o processo de direcionamento ao incluir dados não modelados no datamart.
 
-![](../assets/do-not-localize/glass.png) Saiba mais sobre a segmentação e a criação de público-alvo no [esta seção](audiences.md).
+![](../assets/do-not-localize/glass.png) Saiba mais sobre segmentação e criação de público [nesta seção](audiences.md).
 
 ## Orquestração de campanha entre canais {#cross-channel-campaign-orchestration}
 
