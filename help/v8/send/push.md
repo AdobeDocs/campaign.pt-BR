@@ -8,7 +8,7 @@ exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
 workflow-type: tm+mt
 source-wordcount: '1168'
-ht-degree: 63%
+ht-degree: 66%
 
 ---
 
@@ -27,7 +27,7 @@ Para enviar notificações por push no Adobe Campaign, é necessário:
 
 ## Integrar o SDK {#push-sdk}
 
-Você pode usar o SDK do Adobe Experience Platform Mobile configurando a extensão do Adobe Campaign na interface do usuário da coleta de dados. O SDK do Adobe Experience Platform Mobile ajuda a potencializar as soluções e os serviços do Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é gerenciada por meio da interface do usuário da coleta de dados para obter configuração flexível e integrações extensíveis e baseadas em regras. [Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+Você pode usar o SDK do Adobe Experience Platform Mobile configurando a extensão do Adobe Campaign na interface do usuário da coleta de dados. O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras. [Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}
 
 Saiba como configurar e instalar o SDK móvel da Adobe Experience Platform [neste vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=pt-BR){target="_blank"}.
 

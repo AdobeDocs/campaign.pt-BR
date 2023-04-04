@@ -9,7 +9,7 @@ exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 4a017eabf1330b04939aa4bd0602c371a0ee3208
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 43%
+ht-degree: 45%
 
 ---
 
@@ -24,7 +24,7 @@ Como administrador do Campaign, você pode baixar os SDKs do Campaign na [Distri
 
 >[!NOTE]
 >
->Você também pode usar o Adobe Experience Platform Mobile SDK configurando a extensão Adobe Campaign na interface do usuário da coleta de dados. [Saiba mais na documentação do desenvolvedor](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Você também pode usar o SDK móvel da Adobe Experience Platform configurando a extensão do Adobe Campaign na interface da coleção de dados. [Saiba mais na documentação do Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}
 
 ## Declarar configurações de integração {#declaring-integration-settings}
 

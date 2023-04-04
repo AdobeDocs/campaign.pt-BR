@@ -24,7 +24,7 @@ As etapas para gerar o arquivo são:
 
    ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html){target="_blank"}
 
-1. Definir a audiência
+1. Definir o público
 
    Os perfis de recipients devem conter pelo menos seus nomes e endereços postais.
 

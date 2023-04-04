@@ -20,7 +20,7 @@ Regras de **pressão** para gerenciar a fadiga da marca, por exemplo: para restr
 As campanhas são selecionadas com base nos limites definidos e no peso da mensagem.
 
 * Um limite é o número mais alto de deliveries autorizado para um determinado recipient dentro de um determinado período. Ele pode ser definido ou variável. Ele é definido ou calculado nas configurações da regra de tipologia. [Saiba mais](#maximum-number-of-messages).
-* Os pesos do delivery permitem identificar deliveries de alta prioridade dentro da estrutura do gerenciamento de pressão. As mensagens com o peso mais alto têm prioridade. [Saiba mais](#message-weight).
+* Os pesos das entregas permitem identificar entregas de alta prioridade dentro da estrutura do gerenciamento de pressão. As mensagens com o peso mais alto têm prioridade. [Saiba mais](#message-weight).
 
 A arbitragem consiste em garantir que campanhas agendadas com peso maior do que a campanha em andamento não gerem solicitações de perfil excessivas: se esse for o caso, o perfil será excluído do delivery.
 

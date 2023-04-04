@@ -18,4 +18,4 @@ Use o Campaign para criar formulários web e coletar e gerenciar dados de perfil
 
 ![](assets/web-form-page.png)
 
-![](../assets/do-not-localize/book.png) Saiba como criar formulários Web na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=pt-BR){target="_blank"}.
+![](../assets/do-not-localize/book.png) Saiba como criar formulários web na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=pt-BR){target="_blank"}.

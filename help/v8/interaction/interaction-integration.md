@@ -341,7 +341,7 @@ Em resposta à query, o serviço SOAP retorna os seguintes parâmetros:
 
 Adicione o comando **nms:interação#UpdateStatus** à URL, seguido desses parâmetros:
 
-* **proposition**: cadeia de caracteres, ele contém o ID de proposta fornecida como uma saída durante uma apresentação de oferta. Consulte [Apresentação da oferta](#offer-proposition).
+* **proposition**: string de caracteres, contém o ID de proposta fornecida como uma saída durante uma apresentação de oferta. Consulte [Apresentação da oferta](#offer-proposition).
 * **status**: tipo string, ele especifica o novo status da oferta. Os valores possíveis são listados na enumeração **propositionStatus** , no schema **nms:common.** Por exemplo, inicialmente, o número 3 corresponde ao status **Accepted**.
 * **context**: o elemento XML permite adicionar informações de contexto no schema de espaço. Se o schema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
 

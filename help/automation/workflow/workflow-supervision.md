@@ -91,7 +91,7 @@ A segunda parte do código JavaScript permite **exibir uma mensagem para cada wo
 
 >[!NOTE]
 >
->As cadeias de caracteres criadas devem ser carregadas nas variáveis de evento do workflow.
+>As strings criadas devem ser carregadas nas variáveis de evento do workflow.
 
 ```
 for each ( var wkf in ndWkfError.workflow ) 

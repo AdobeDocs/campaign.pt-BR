@@ -106,7 +106,7 @@ Consulte a [Matriz de compatibilidade do Campaign](compatibility-matrix.md).
 * Correção de um problema que impedia que o fluxo de trabalho técnico do **[!UICONTROL Replicate Staging data]** (ffdaReplicateStagingData) fosse interrompido mesmo quando um erro ocorresse durante sua execução. (NEO-46280)
 * Para evitar a lentidão ao enviar provas para os seed addresses, todas as replicações consecutivas de membros de seed agora são agrupadas em uma solicitação de replicação. (NEO-44844)
 * Correção de um problema que exibia um erro ao tentar visualizar uma entrega em qualquer evento arquivado do Centro de mensagens. (NEO-43620)
-* Correção de um problema ao inserir dados no banco de dados de nuvem do Snowflake com uma atividade de **Consulta** do Campaign e uma atividade **Alterar fonte de dados**: o processo falhava quando um caractere de barra invertida estava presente nos dados. A cadeia de caracteres de origem não tinha escape e os dados não eram processados corretamente no Snowflake. (NEO-45549)
+* Correção de um problema ao inserir dados no banco de dados de nuvem do Snowflake com uma atividade de **Consulta** do Campaign e uma atividade **Alterar fonte de dados**: o processo falhava quando um caractere de barra invertida estava presente nos dados. A string de origem não tinha escape e os dados não eram processados corretamente no Snowflake. (NEO-45549)
 * Correção de um problema ao usar a atividade de **Consulta** e filtrar uma tabela. Quando um nome de coluna continha a palavra “Atualizar”, ocorria um erro de compilação com um identificador inválido e a seguinte mensagem: “número de linhas atualizado”. (NEO-46485)
 * O fluxo de trabalho técnico de **Limpeza do banco de dados** agora também lida com esquemas de preparo personalizados. (NEO-48974)
 * Correção de um problema que poderia retardar a análise de entrega, durante a etapa de exclusão de incluir na lista de bloqueios de recipients, ao direcionar grandes volumes de recipients. (NEO-48019)
@@ -144,7 +144,7 @@ _7 de outubro de 2022_
 * Correção de um problema ao usar a atividade de **Consulta** e filtrar uma tabela. Quando um nome de coluna continha a palavra “Atualizar”, ocorria um erro de compilação com um identificador inválido e a seguinte mensagem: “número de linhas atualizado”. (NEO-46485)
 * Correção de um problema que impedia que o fluxo de trabalho técnico do **[!UICONTROL Replicate Staging data]** (ffdaReplicateStagingData) fosse interrompido mesmo quando um erro ocorresse durante sua execução. (NEO-46280)
 * Correção de um problema que poderia causar perda de dados se o fluxo de trabalho de preparo estivesse com erro e o período de retenção fosse totalmente passado. (NEO-48975)
-* Correção de um problema ao inserir dados no banco de dados de nuvem do Snowflake com uma atividade de **Consulta** do Campaign e uma atividade **Alterar fonte de dados**: o processo falhava quando um caractere de barra invertida estava presente nos dados. A cadeia de caracteres de origem não tinha escape e os dados não eram processados corretamente no Snowflake. (NEO-45549)
+* Correção de um problema ao inserir dados no banco de dados de nuvem do Snowflake com uma atividade de **Consulta** do Campaign e uma atividade **Alterar fonte de dados**: o processo falhava quando um caractere de barra invertida estava presente nos dados. A string de origem não tinha escape e os dados não eram processados corretamente no Snowflake. (NEO-45549)
 
 ## Versão 8.3.8 {#release-8-3-8}
 
@@ -225,9 +225,9 @@ Consulte a [Matriz de compatibilidade do Campaign](compatibility-matrix.md).
 * A autenticação OAuth 2.0 do Microsoft Exchange Online para POP3 agora é compatível com o Campaign. [Leia mais](../config/external-accounts.md#bounce-mails-external-account)
 * Correções críticas foram aplicadas em relação à API da web do Microsoft Dynamics Connector.
 * O novo direito nomeado de operador e gravação de esquema de grupo (operatorWrite) foi adicionado para permitir que os usuários insiram, atualizem e excluam os esquemas de operadores (xtk:operator) e de grupos de operadores (xtk:group).
+   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
 
-<!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
-<!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
+   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
 * Agora, várias contas LINE ativas podem ser configuradas em um único mid-sourcing.
 * O número de conexões padrão para o processo da web foi aumentado de 50 para 150.
 * O Campaign vem com um conjunto de novas medidas de proteção para impedir a inserção de chaves duplicadas no banco de dados do Snowflake. [Leia mais](../architecture/keys.md)

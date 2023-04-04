@@ -164,7 +164,7 @@ O template de distribuição de dados permite limitar o número de registros de 
 
       ![](assets/local_validation_notification.png)
 
-   * **[!UICONTROL Delivery label]**: permite definir uma expressão para exibir o rótulo de delivery na notificação de retorno. A expressão padrão fornece informações sobre o rótulo padrão da distribuição (cadeia de caracteres de computação). É possível modificar essa expressão.
+   * **[!UICONTROL Delivery label]**: permite definir uma expressão para exibir o rótulo de delivery na notificação de retorno. A expressão padrão fornece informações sobre o rótulo padrão da distribuição (string de computação). É possível modificar essa expressão.
 
       ![](assets/local_validation_notification_3.png)
 

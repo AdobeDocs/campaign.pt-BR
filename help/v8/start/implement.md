@@ -139,7 +139,7 @@ Para orquestrar campanhas de marketing complexas em públicos diferentes em vár
 
 * Use **fluxos de trabalho** para gerenciar processos e dados. Saiba mais [nesta documentação](../../automation/workflow/about-workflows.md)
 
-* Configurar processos de **assinatura** e **páginas de destino**.  Saiba mais [nesta página](../start/subscriptions.md)
+* Configurar processos de **assinatura** e **landing pages**.  Saiba mais [nesta página](../start/subscriptions.md)
 
 * Configurar **regras de tipologia** para definir a fadiga e o gerenciamento de controle.  Saiba mais [nesta documentação](../../automation/campaign-opt/campaign-typologies.md)
 

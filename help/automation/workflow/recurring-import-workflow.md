@@ -32,7 +32,7 @@ Esse exemplo mostra como predefinir um workflow que pode ser reutilizado para im
 
 1. Configure a atividade **[!UICONTROL Data Loading (file)]**:
 
-   * Defina a estrutura esperada carregando um arquivo de amostra. O arquivo de amostra deve conter apenas algumas linhas, mas todas as colunas necessárias para a importação. Verifique e edite o formato de arquivo para verificar se o tipo de cada coluna está definido corretamente: texto, data, inteiro, etc. Por exemplo:
+   * Definir a estrutura esperada fazendo upload de um arquivo de amostra. O arquivo de amostra deve conter apenas algumas linhas, mas todas as colunas necessárias para a importação. Verifique e edite o formato de arquivo para verificar se o tipo de cada coluna está definido corretamente: texto, data, inteiro, etc. Por exemplo:
 
       ```
       lastname;firstname;birthdate;email;crmID

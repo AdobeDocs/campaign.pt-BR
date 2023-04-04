@@ -55,16 +55,16 @@ A formatação de coluna permite definir o processamento de valor de cada coluna
    * **[!UICONTROL Empty value allowed]**: autoriza valores vazios. O valor NULL é então inserido.
    * **[!UICONTROL Always populated]**: gera um erro se um valor estiver vazio.
 
-* **[!UICONTROL Length]**: especifica o número máximo de caracteres para o tipo de dados da **cadeia de caracteres**.
+* **[!UICONTROL Length]**: especifica o número máximo de caracteres para o tipo de dados da **string**.
 * **[!UICONTROL Format]**: define o formato de data e hora.
-* **[!UICONTROL Data transformation]**: define se um processo de ocorrência de caractere precisa ser aplicado em uma **cadeia de caracteres**.
+* **[!UICONTROL Data transformation]**: define se um processo de ocorrência de caractere precisa ser aplicado em uma **string**.
 
-   * **[!UICONTROL None]**: a cadeia de caracteres importada não é modificada.
-   * **[!UICONTROL First letter in upper case]**: a primeira letra de cada palavra da cadeia de caracteres começa com maiúscula.
-   * **[!UICONTROL Upper case]**: todos os caracteres na cadeia de caracteres estão em maiúsculas.
-   * **[!UICONTROL Lower case]**: todos os caracteres na cadeia de caracteres estão em minúsculas.
+   * **[!UICONTROL None]**: a string importada não é modificada.
+   * **[!UICONTROL First letter in upper case]**: a primeira letra de cada palavra da string começa com maiúscula.
+   * **[!UICONTROL Upper case]**: todos os caracteres na string estão em maiúsculas.
+   * **[!UICONTROL Lower case]**: todos os caracteres na string estão em minúsculas.
 
-* **[!UICONTROL White space management]**: especifica se determinados espaços precisam ser ignorados em uma cadeia de caracteres. O valor **[!UICONTROL Ignore spaces]** permite somente espaços no início e no final de uma cadeia de caracteres a ser ignorada.
+* **[!UICONTROL White space management]**: especifica se determinados espaços precisam ser ignorados em uma string. O valor **[!UICONTROL Ignore spaces]** permite somente espaços no início e no final de uma string a ser ignorada.
 * **[!UICONTROL Error processings]**: define o comportamento se um erro for encontrado.
 
    * **[!UICONTROL Ignore the value]**: o valor é ignorado. Um aviso é gerado no log de execução do fluxo de trabalho.
