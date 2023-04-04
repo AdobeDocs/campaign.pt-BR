@@ -5,9 +5,9 @@ description: Documentação do Campaign v8
 breadcrumb-title: Visão geral da campanha
 title: Documentos do Campaign v8
 source-git-commit: 464898df7a362c137d20ebaf2b96bfef71131ae6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 96%
          + [Adicionar campos de personalização](send/personalization-fields.md)
          + [Usar blocos de personalização](send/personalization-blocks.md)
          + [Criar condições](send/conditions.md)
-      + Validar o delivery {#validate}
+      + Validar a entrega {#validate}
          + [Visualização e provas](send/preview-and-proof.md)
          + [Análise de entrega](send/delivery-analysis.md)
 + Gerenciamento de perfil e público-alvo {#audience}
