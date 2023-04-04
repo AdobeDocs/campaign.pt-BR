@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Depois que a mensagem for criada e o conteúdo testado, você poderá escolher c
 
    ![](assets/send-email.png)
 
-   Saiba como enviar mensagens em [esta seção](../send/send.md)
+   Saiba como enviar mensagens [nesta seção](../send/send.md)
 
 * Enviar mensagens associadas a uma [campanha de marketing](campaigns.md)
 
@@ -56,7 +56,7 @@ Depois que a mensagem for criada e o conteúdo testado, você poderá escolher c
 
    Saiba como automatizar entregas de email [nesta página](../../automation/workflow/delivery.md)
 
-* [Acionar mensagens ](../send/transactional.md) de um evento
+* [Acionar mensagens](../send/transactional.md) de um evento
 
 * Agendar suas mensagens
 
