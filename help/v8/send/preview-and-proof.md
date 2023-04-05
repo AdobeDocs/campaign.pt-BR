@@ -4,7 +4,7 @@ description: Saiba como validar seu delivery antes de enviar
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: e0129524a051827a52de478c3fdc45b963d6c4bb
+source-git-commit: a6d2cb72968fe489a73f92f00f6a50be8ed3e997
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 12%
@@ -63,7 +63,7 @@ Por padrão, a substituição é executada aleatoriamente, mas você pode seleci
    >
    >Os seed addresses não pertencem à tabela de recipient padrão (nms:recipient), eles são criados em uma tabela separada. Se a tabela de recipients é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados.
 
-   Saiba mais sobre seed addresses em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.htmll){target="_blank"}.
+   Saiba mais sobre seed addresses em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}.
 
 * Use o **[!UICONTROL Specific target and Seed addresses]** para combinar seed addresses e endereços de email específicos. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 
