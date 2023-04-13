@@ -7,9 +7,9 @@ level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 44743e585119e8cd81a8fcc9b4d667c25c0d438e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '678'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ _3 de abril de 2023_
 
 **Correções**
 
-* Correção de um problema que poderia resultar em um erro de restrição de chave duplicada se vários workflows de aprovação estivessem definidos para a mesma programação. (NEO-48968)
-* Correção de um problema de regressão introduzido pelo NEO54474 (8.4.4) que fazia com que o atributo de estilo da tag body fosse alterado durante o upload de uma imagem no Editor de conteúdo digital (DCE). (NEO-57697)
-* Correção de um problema que poderia resultar em erro ao exportar dados usando um conector CRM se a tabela temporária tivesse uma chave primária definida como longa em vez de uuid. (NEO-54153)
-* Correção de um problema de regressão introduzido no 8.4.1 que poderia levar a erros na exportação do pacote, FDA sobre HTTP e relatórios. (NEO-57731)
-* Correção de um problema de regressão introduzido na versão 8.3.8, que poderia impedir que o status do delivery fosse atualizado corretamente para deliveries com IDs negativas. (NEO-54675)
-* Correção de um problema com campos booleanos ao importar dados usando o conector Big Query (NEO49181)
+* Correção de um problema que poderia resultar em um erro de restrição de chave duplicada se vários fluxos de trabalho de aprovação fossem definidos com a mesma programação. (NEO-48968)
+* Correção de um problema de regressão introduzido pelo código NEO-54474 (8.4.4) que fazia com que o atributo de estilo da tag do corpo fosse alterado ao fazer upload de uma imagem no editor de conteúdo digital (DCE). (NEO-57697)
+* Correção de um problema que poderia resultar em um erro ao exportar dados usando um conector CRM se a tabela temporária tivesse uma chave primária definida como “long” em vez de “uuid”. (NEO-54153)
+* Correção de um problema de regressão introduzido na versão 8.4.1 que poderia causar erros na exportação de pacotes, no FDA sobre HTTP e nos relatórios. (NEO-57731)
+* Correção de um problema de regressão introduzido na versão 8.3.8 que poderia impedir que o status da entrega fosse atualizado corretamente em entregas com IDs negativas. (NEO-54675)
+* Correção de um problema com campos booleanos ao importar dados usando o conector Big Query (NEO-49181)
 
 >[!CAUTION]
 >
