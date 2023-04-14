@@ -5,10 +5,10 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 1bcb1b3d1e6062a8b5c0368725248edfc7e3d1b4
+source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 55%
+source-wordcount: '1671'
+ht-degree: 57%
 
 ---
 
@@ -24,11 +24,12 @@ Para enviar notificações por push no Adobe Campaign, é necessário:
 
 ## Integrar o SDK {#push-sdk}
 
-Você pode usar o SDK do Adobe Experience Platform Mobile configurando a extensão do Adobe Campaign na interface do usuário da coleta de dados. O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras. [Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}
+Para enviar notificações por push com o Adobe Campaign, você deve configurar a extensão Adobe Campaign na interface do usuário da coleta de dados do SDK do Adobe Experience Platform Mobile.
 
-Você também pode integrar o SDK do Campaign para facilitar a integração de seu aplicativo móvel na plataforma Adobe Campaign. Versões compatíveis do SDK são listadas em [Matriz de compatibilidade de campanha](../start/compatibility-matrix.md#MobileSDK).
+O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras.
 
-Saiba como integrar SDKs do Campaign Android e iOS ao seu aplicativo em [esta página](../config/push-config.md)
+[Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}
+
 
 ## Definir as configurações do aplicativo no Campaign{#push-config}
 
@@ -77,10 +78,7 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
    Certifique-se de que o mesmo **[!UICONTROL Integration key]** é definida no Adobe Campaign e no código do aplicativo por meio do SDK.
 
-   Se você estiver usando o SDK do Campaign, saiba mais em[esta página](../config/push-config.md).
-
-
-   Se você estiver usando o SDK do Adobe Experience Platform (Coleta de dados), saiba mais em [esta página](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Saiba mais em [a documentação do desenvolvedor](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
@@ -119,9 +117,7 @@ Para criar um aplicativo para dispositivos Android, siga estas etapas:
 
    Certifique-se de que o mesmo **[!UICONTROL Integration key]** é definida no Adobe Campaign e no código do aplicativo por meio do SDK.
 
-   Se você estiver usando o SDK do Campaign, saiba mais em [esta página](../config/push-config.md).
-
-   Se você estiver usando o SDK do Adobe Experience Platform (Coleta de dados), saiba mais em [esta página](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Saiba mais em [a documentação do desenvolvedor](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
@@ -176,7 +172,7 @@ Para criar um novo delivery, navegue até o **[!UICONTROL Campaigns]** clique em
 
 Para enviar notificações em dispositivos iOS, siga estas etapas:
 
-1. Selecione o modelo de delivery **[!UICONTROL Deliver on iOS]**.
+1. Selecione o modelo de entrega **[!UICONTROL Deliver on iOS]**.
 
    ![](assets/push_ios_1.png)
 
@@ -261,7 +257,7 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
 Para enviar notificações em dispositivos Android, siga estas etapas:
 
-1. Selecione o modelo de delivery **[!UICONTROL Deliver on Android (android)]**.
+1. Selecione o modelo de entrega **[!UICONTROL Deliver on Android (android)]**.
 
    ![](assets/push-template-android.png)
 
@@ -296,5 +292,5 @@ Saiba como validar um delivery em [esta página](preview-and-proof.md).
 
 Saiba como confirmar e enviar o delivery em [esta página](send.md)
 
-Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Saiba mais sobre os motivos de falha de delivery de notificação por push em [esta página](delivery-failures.md#push-error-types).
+Após enviar as mensagens, você pode monitorar e rastrear suas entregas. Saiba mais sobre os motivos de falha de delivery de notificação por push em [esta página](delivery-failures.md#push-error-types).
 

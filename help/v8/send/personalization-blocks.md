@@ -4,13 +4,13 @@ description: Saiba como usar blocos de personalização integrados no conteúdo 
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
+exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 31%
 
 ---
-
 
 # Usar blocos de personalização{#personalization-blocks}
 
@@ -80,5 +80,3 @@ Depois de salvo, o novo bloco de personalização está disponível no editor de
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo do delivery de email no vídeo a seguir.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)
-
-

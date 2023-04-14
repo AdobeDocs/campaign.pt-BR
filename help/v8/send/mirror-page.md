@@ -4,7 +4,8 @@ description: Saiba como adicionar e gerenciar o link para a mirror page
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 1%
@@ -64,4 +65,3 @@ Para acessar essa mirror page:
    ![](assets/mirror-page-display.png){width="800" align="left"}
 
    A mirror page é exibida em uma tela dedicada, com dados de personalização do recipient selecionado.
-

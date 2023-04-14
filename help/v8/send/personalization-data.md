@@ -4,13 +4,13 @@ description: Saiba quais fontes podem ser usadas para personalização
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+exl-id: 711256e2-ab77-404a-b052-6793a85da193
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 46%
 
 ---
-
 
 # Fontes de dados de personalização{#personalization-data}
 
@@ -71,7 +71,3 @@ Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do workf
 Quando um delivery é criado no contexto de um workflow, você pode usar os dados da tabela de workflow temporário. Os dados armazenados na tabela de trabalho temporário do workflow estão disponíveis para tarefas de personalização. Os dados podem ser usados nos campos de personalização.
 
 Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [esta seção](../../automation/workflow/use-workflow-data.md#target-data).
-
-
-
-
