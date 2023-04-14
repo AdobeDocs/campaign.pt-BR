@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Visão geral da campanha
 title: Documentos do Campaign v8
-source-git-commit: 464898df7a362c137d20ebaf2b96bfef71131ae6
+source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 100%
+source-wordcount: '541'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,13 @@ ht-degree: 100%
       + [Mensagens LINE](send/line.md)
       + [Correspondência direta](send/direct-mail.md)
       + [Twitter](send/twitter.md)
-      + [Mensagens transacionais](send/transactional.md)
+      + Mensagens transacionais {#real-time}
+         + [Introdução a mensagens transacionais](send/transactional.md)
+         + [Criar e publicar seu modelo](send/transactional-template.md)
+         + Gerenciamento de eventos {#event}
+         + [Coletar e processar eventos](send/event-processing.md)
+         + [Entender a descrição do evento](send/event-description.md)
+         + [Enviar mensagens](send/delivery-execution.md)
       + Falhas, rejeições e quarentenas{#failures}
          + [Quarentenas](send/quarantines.md)
          + [Falhas de entrega](send/delivery-failures.md)

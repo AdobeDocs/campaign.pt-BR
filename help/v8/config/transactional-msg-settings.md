@@ -5,20 +5,20 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 22%
+source-wordcount: '682'
+ht-degree: 42%
 
 ---
 
 # Configurações de mensagens transacionais
 
-![](../assets/do-not-localize/speech.png)  Como um usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
+![](../assets/do-not-localize/speech.png) Como um usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
 
 ![](../assets/do-not-localize/glass.png) Os recursos de mensagens transacionais são detalhados em [esta seção](../send/transactional.md).
 
-![](../assets/do-not-localize/glass.png) Entenda a arquitetura de mensagens transacionais no [esta página](../architecture/architecture.md).
+![](../assets/do-not-localize/glass.png) Entenda a arquitetura de mensagens transacionais no [esta página](../architecture/architecture.md#transac-msg-archi).
 
 ## Definir permissões
 
@@ -34,7 +34,7 @@ Todas as extensões de schema feitas nos schemas usados por **Workflows técnico
 
 Quando combinadas com o módulo Canal de aplicativo móvel, as mensagens transacionais permitem que você envie mensagens transacionais por meio de notificações em dispositivos móveis.
 
-![](../assets/do-not-localize/book.png) O canal de aplicativo móvel é detalhado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
+![](../assets/do-not-localize/book.png) O canal de aplicativo móvel é detalhado em [esta seção](../send/push.md).
 
 Para enviar notificações transacionais por push, é necessário executar as seguintes configurações:
 
@@ -75,3 +75,49 @@ Este é um exemplo de um evento que contém essas informações:
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
+
+## Monitorar limites {#monitor-thresholds}
+
+Você pode configurar os limites de aviso (laranja) e os limites de alerta (vermelho) dos indicadores que aparecem no **Nível de serviço do Centro de mensagens** e **Tempo de processamento do Centro de mensagens** relatórios.
+
+Para fazer isso, siga as etapas abaixo:
+
+1. Abra o assistente de implantação no **instância de execução** e navegue até o **[!UICONTROL Message Center]** página.
+1. Use as setas para modificar os limites.
+
+
+## Limpar eventos {#purge-events}
+
+Você pode adaptar as configurações do assistente de implantação para definir por quanto tempo os dados devem ser armazenados no banco de dados.
+
+A limpeza de eventos é executada automaticamente pelo **Limpeza do banco de dados** fluxo de trabalho técnico. Esse workflow limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
+
+Use as setas conforme o caso para alterar as configurações de limpeza do **Eventos** (em uma instância de execução) e **Eventos arquivados** (em uma instância de controle).
+
+
+## Workflows técnicos {#technical-workflows}
+
+Você deve garantir que os workflows técnicos nas instâncias de controle e de execução tenham sido iniciados antes de implantar qualquer template de mensagem transacional.
+
+Os workflows de arquivamento podem ser acessados na pasta **Administration > Production > Message Center.**
+
+### Workflows da instância de controle {#control-instance-workflows}
+
+Na instância de controle, é necessário criar um workflow de arquivamento para cada **[!UICONTROL Message Center execution instance]** conta externa. Clique no botão **[!UICONTROL Create the archiving workflow]** para criar e iniciar o workflow.
+
+### Workflows da instância de execução {#execution-instance-workflows}
+
+Na(s) instância(s) de execução, você deve iniciar os seguintes workflows técnicos:
+
+* **[!UICONTROL Processing batch events]** (internal name: **[!UICONTROL batchEventsProcessing]** ): esse fluxo de trabalho permite dividir eventos em lote em uma fila antes que eles sejam vinculados a um template de mensagem.
+* **[!UICONTROL Processing real time events]** (internal name: **[!UICONTROL rtEventsProcessing]** ): esse workflow permite dividir eventos em tempo real em uma fila antes que eles sejam vinculados a um template de mensagem.
+* **[!UICONTROL Update event status]** (internal name: **[!UICONTROL updateEventStatus]** ): esse workflow permite que você atribua um status ao evento.
+
+   Os status possíveis do evento são:
+
+   * **[!UICONTROL Pending]**: o evento está na fila. Nenhum template de mensagem foi atribuído a ele.
+   * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pelo delivery.
+   * **[!UICONTROL Sent]**: esse status é copiado dos logs do delivery. Significa que o delivery foi enviado.
+   * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs do delivery. Ele significa que o delivery foi ignorado.
+   * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs do delivery. Ele significa que o delivery falhou.
+   * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um template de mensagem. O evento não será processado.
