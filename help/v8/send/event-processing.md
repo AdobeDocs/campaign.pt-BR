@@ -4,13 +4,13 @@ description: Saiba como as mensagens transacionais do Campaign coletam e process
 feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
+source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 55%
 
 ---
-
 
 # Processamento de evento {#event-processing}
 
@@ -102,6 +102,3 @@ Para fazer isso, é necessário configurar um workflow que recrie todos os event
 >[!CAUTION]
 >
 >Essa etapa só poderá ser executada usando um workflow e, portanto, é reservada a usuários experts. Para obter mais informações, entre em contato com o executivo da sua conta da Adobe.
-
-
-
