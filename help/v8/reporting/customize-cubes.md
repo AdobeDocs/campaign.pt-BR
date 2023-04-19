@@ -6,10 +6,10 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 94%
+source-wordcount: '1431'
+ht-degree: 93%
 
 ---
 
@@ -64,6 +64,8 @@ Para criar esse tipo de compartimentalização de valor, siga as etapas abaixo:
 
    Sempre que os valores de enumeração forem atualizados, os compartimentos correspondentes serão adaptados automaticamente.
 
+Saiba mais sobre enumerações em [esta página](../../v8/config/ui-settings.md#enumerations).
+
 ### Criar intervalos de valor {#create-value-ranges}
 
 Você pode agrupar os valores em intervalos com base em um intervalo desejado.
@@ -111,6 +113,8 @@ Você só precisa modificar a enumeração para atualizar o relatório relaciona
 A lista discriminada **[!UICONTROL Domains]** é usada para gerar relatórios internos que exibem a lista de domínios. Para adaptar o conteúdo desses relatórios, você pode editar essa lista.
 
 Você pode criar outras enumerações reservadas para compartimentalização e usá-las em outros Cubos: todos os valores de alias serão reagrupados nas posições especificadas na primeira guia de enumeração.
+
+Saiba mais sobre enumerações em [esta página](../../v8/config/ui-settings.md#enumerations).
 
 ## Agregados em cubos {#calculate-and-use-aggregates}
 
