@@ -4,9 +4,9 @@ title: Descontinuação do console do cliente de 32 bits
 description: Descontinuação do console do cliente de 32 bits
 hide: true
 hidefromtoc: true
-source-git-commit: 52fd89d9b8b19e096173e1660982382215dad5dc
+source-git-commit: dd3490f43016cb7f6e0ccc5c171d78b8ee3ca234
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -39,13 +39,15 @@ Sim. A partir da versão 8.6, o Console do Cliente do Campaign v8 não estará m
 
 +++Que versões do Campaign v8 não suportarão mais sistemas operacionais de 32 bits?
 
-A partir do 8.5, todas as versões do Campaign v8 não serão mais compatíveis com sistemas operacionais de 32 bits.
+A partir da versão 8.6, todas as versões do Campaign v8 não serão mais compatíveis com sistemas operacionais de 32 bits.
 
 +++
 
 +++Como fazer a atualização do sistema operacional Windows (32 bits) para Windows (64 bits)?
 
 Verifique se o processador do computador suporta a instalação de um sistema operacional de 64 bits. A atualização da versão de 32 bits para a versão de 64 bits do Windows requer que você reformate o disco rígido, instale a versão de 64 bits do Windows e reinstale tudo o resto que tinha no dispositivo. Para obter mais informações, consulte [Windows de 32 e 64 bits: Perguntas frequentes](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+
++++
 
 +++ Como faço para verificar se estou em um computador de 32 bits ou 64 bits?
 
