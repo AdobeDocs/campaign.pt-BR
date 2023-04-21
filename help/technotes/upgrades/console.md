@@ -4,9 +4,9 @@ title: Descontinuação do console do cliente de 32 bits
 description: Descontinuação do console do cliente de 32 bits
 hide: true
 hidefromtoc: true
-source-git-commit: dd3490f43016cb7f6e0ccc5c171d78b8ee3ca234
+source-git-commit: 87e8ef65a2fea2f0d019babc69ed8a8a74017aa6
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
@@ -53,8 +53,8 @@ Verifique se o processador do computador suporta a instalação de um sistema op
 
 **WINDOWS 10 E WINDOWS 8.1**
 
-1. Selecione o botão Iniciar e selecione **Configurações** > **Sistema** > **Sobre**.
-1. À direita, debaixo de **Especificações do dispositivo**, consulte **Tipo de sistema**.
+1. Clique no botão **Iniciar** e selecione **Configurações** > **Sistema** > **Sobre**.
+1. Em **Especificações do dispositivo**, consulte **Tipo de sistema**.
 
 **WINDOWS 7**
 1. Selecione o **Iniciar** , clique com o botão direito do mouse **Computador** e selecione **Propriedades**.
