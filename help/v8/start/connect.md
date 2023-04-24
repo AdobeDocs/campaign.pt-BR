@@ -5,7 +5,7 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 445e62c290466003886f2dc49386d0c1edb80eeb
+source-git-commit: 7f27dbdd0ff53cd7437f956ccfef3d792020893b
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 10%
@@ -83,7 +83,7 @@ Para fazer logon em uma instância, siga as etapas abaixo:
 
 1. Clique em **[!UICONTROL Ok]**.
 
-Você pode fazer logon no Campaign com [seu Adobe ID](#connect-ims).
+Em seguida, você pode fazer logon no Campaign com sua Adobe ID.
 
 ![](assets/adobeID.png)
 
