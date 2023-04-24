@@ -7,7 +7,7 @@ title: Documentos do Campaign v8
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 94%
       + [Twitter](send/twitter.md)
       + Mensagens transacionais {#real-time}
          + [Introdução a mensagens transacionais](send/transactional.md)
-         + [Criar e publicar seu modelo](send/transactional-template.md)
+         + [Criação e publicação do seu modelo](send/transactional-template.md)
          + Gerenciamento de eventos {#event}
          + [Coletar e processar eventos](send/event-processing.md)
          + [Entender a descrição do evento](send/event-description.md)

@@ -8,7 +8,7 @@ exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6e
 source-git-commit: dcb12339d891c61f308cf7b7e518784f3ba1ff31
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 81%
+ht-degree: 88%
 
 ---
 
@@ -59,7 +59,7 @@ Os bancos de dados externos compatíveis com o módulo Federated Data Access (FD
 
 ## SDK móvel{#MobileSDK}
 
-Para enviar [notificações por push](../send/push.md) com o Campaign, use o SDK do Adobe Experience Platform Mobile configurando a extensão do Adobe Campaign Classic na interface do usuário da coleta de dados.
+Para enviar [notificações por push](../send/push.md) com o Campaign, use o SDK móvel da Adobe Experience Platform configurando a extensão do Adobe Campaign Classic na interface da coleção de dados.
 
 
 ## Acesso à Web{#web-access}
