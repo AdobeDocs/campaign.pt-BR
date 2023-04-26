@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
+source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 32%
@@ -74,10 +74,9 @@ Este espaço de trabalho permite acessar a árvore do Explorer para procurar tod
 
 A seção à esquerda mostra a árvore do explorador do Campaign e permite navegar em todos os componentes e configurações da sua instância, com base em suas permissões.
 
-A seção superior mostra a lista de registros na pasta atual. Essas listas são totalmente personalizáveis. [Saiba mais](customize-ui.md)
+A seção superior mostra a lista de registros na pasta atual. Essas listas são totalmente personalizáveis. [Saiba mais](../config/ui-settings.md)
 
 A seção inferior mostra os detalhes do registro selecionado.
-
 
 ## Idiomas{#languages}
 
@@ -96,7 +95,6 @@ O idioma é selecionado durante o processo de instalação.
 >O idioma não pode ser alterado após a criação da instância.
 
 O idioma afeta os formatos de data e hora.
-
 
 As principais diferenças entre inglês americano e inglês do Reino Unido são:
 
