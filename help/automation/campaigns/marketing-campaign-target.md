@@ -4,10 +4,10 @@ title: Audiência da campanha de marketing
 description: Saiba como definir a audiência das campanhas de marketing
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: a2518ea0c0ab23f50b3132b750a14e98b4ffad7d
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 83%
+source-wordcount: '1457'
+ht-degree: 82%
 
 ---
 
@@ -236,10 +236,10 @@ Clique em **[!UICONTROL Next]** para definir a ordem de classificação (se nece
 Essa configuração é equivalente a um **[!UICONTROL Split]** no workflow, que permite dividir o target em subconjuntos. O grupo de controle é um desses subconjuntos.
 
 
-#### Tutorial em vídeo {#create-email-video}
+### Tutorial em vídeo {#create-email-video}
 
-Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
+Este vídeo explica como adicionar um grupo de controle a uma campanha.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
 Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
