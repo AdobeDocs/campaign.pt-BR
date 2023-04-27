@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 62%
+source-wordcount: '1491'
+ht-degree: 63%
 
 ---
 
@@ -43,7 +43,7 @@ As principais etapas para colocar isso em prática são detalhadas abaixo:
 1. [Testar a mensagem](#test-message-template).
 1. [Publicar o modelo da mensagem](#publish-message-template).
 
-Depois de projetar e publicar o template de mensagem transacional, se um evento correspondente for acionado, os dados relevantes serão enviados para o Campaign por meio de PushEvent e PushEvents [Métodos SOAP](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html){target="_blank"}e o delivery é enviado aos recipients alvos.
+Depois de projetar e publicar o template de mensagem transacional, se um evento correspondente for acionado, os dados relevantes serão enviados para o Campaign por meio de PushEvent e PushEvents [Métodos SOAP](../send/event-description.md)e o delivery é enviado aos recipients alvos.
 
 ## Criar tipos de evento {#create-event-types}
 
@@ -196,9 +196,7 @@ Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-v
 
 Você pode testar a entrega de mensagens enviando uma prova para um seed address criado anteriormente.
 
-O envio de uma prova envolve o mesmo processo de qualquer delivery.
-
-![](../assets/do-not-localize/book.png) Saiba mais sobre provas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html#sending-a-proof){target="_blank"}
+O envio de uma prova envolve o mesmo processo de qualquer delivery. Saiba mais sobre provas em [esta seção](../send/preview-and-proof.md).
 
 No entanto, para enviar uma prova de uma mensagem transacional, você precisa realizar as seguintes operações:
 

@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '524'
 ht-degree: 32%
 
 ---
@@ -72,11 +72,11 @@ Navegue pelo explorador do Campaign para acessar todos os recursos e configuraç
 
 Este espaço de trabalho permite acessar a árvore do Explorer para procurar todos os recursos e opções.
 
-A seção à esquerda mostra a árvore do explorador do Campaign e permite navegar em todos os componentes e configurações da sua instância, com base em suas permissões.
+* A seção à esquerda mostra a árvore do explorador do Campaign e permite navegar em todos os componentes e configurações da sua instância, com base em suas permissões. Você pode adicionar e personalizar pastas conforme explicado em [esta página](../audiences/folders-and-views.md).
 
-A seção superior mostra a lista de registros na pasta atual. Essas listas são totalmente personalizáveis. [Saiba mais](../config/ui-settings.md)
+* A seção superior mostra a lista de registros na pasta atual. Essas listas são totalmente personalizáveis. [Saiba mais](../config/ui-settings.md)
 
-A seção inferior mostra os detalhes do registro selecionado.
+* A seção inferior mostra os detalhes do registro selecionado.
 
 ## Idiomas{#languages}
 
