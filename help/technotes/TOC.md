@@ -2,13 +2,13 @@
 audience: end-user
 user-guide-title: Notas técnicas da campanha
 type: Event
+title: Notas técnicas do Adobe Campaign
 description: Notas técnicas da campanha
 breadcrumb-title: Notas técnicas do Campaign
-title: Notas técnicas da campanha
-source-git-commit: dcb12339d891c61f308cf7b7e518784f3ba1ff31
+source-git-commit: 67368286cb04d97cbf4564846eab91d64b8f90f1
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 35%
+source-wordcount: '35'
+ht-degree: 37%
 
 ---
 
