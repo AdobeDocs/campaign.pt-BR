@@ -5,9 +5,9 @@ title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Visão geral da campanha
 source-git-commit: 67368286cb04d97cbf4564846eab91d64b8f90f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -163,8 +163,8 @@ ht-degree: 98%
       + [Etapas de implementação](start/implement.md)
       + [Personalizar sua instância](dev/customize.md)
       + [Práticas recomendadas do Modelo de dados](dev/datamodel-best-practices.md)
-   + Configurações e configuração {#configuration}
-      + [Configurações da interface do usuário](config/ui-settings.md)
+   + Definições e configuração {#configuration}
+      + [Configurações da interface](config/ui-settings.md)
       + [Gerenciar pastas e visualizações](audiences/folders-and-views.md)
       + [Configurações de email](config/email-settings.md)
       + [Configurações de mensagens transacionais](config/transactional-msg-settings.md)
