@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 251ce05310f158b0f9ebccc94b42686f892338b1
+source-git-commit: 093204ca69cc0925bc1be5581e518995b50b3fc1
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '958'
 ht-degree: 3%
 
 ---
@@ -23,16 +23,15 @@ O Adobe Experience Platform Mobile SDK fornece APIs de integração do lado do c
 
 Para configurar seu aplicativo com SDKs do Adobe Experience Platform Mobile, siga estas etapas:
 
-1. Verificar [pré-requisitos](#before-starting)
-1. Configure um [propriedade de tag móvel](#launch-property) na coleta de dados do Adobe Experience Platform
-1. Obtenha o SDK do Adobe Experience Platform Mobile como detalhado [nesta página](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}
-1. (opcional) Ative o registro e as medições de ciclo de vida, conforme detalhado [nesta página](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}
-1. (opcional) Adicionar [Adobe Experience Platform Assurance para o seu aplicativo](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} para validar sua implementação
+1. Verificar [pré-requisitos](#before-starting).
+1. Configure um [propriedade de tag móvel](#launch-property) na Coleta de dados do Adobe Experience Platform.
+1. Obtenha o SDK do Adobe Experience Platform Mobile como detalhado [nesta página](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
+1. (opcional) Ative o registro e as medições de ciclo de vida, conforme detalhado [nesta página](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}.
+1. (opcional) Adicionar [Adobe Experience Platform Assurance para o seu aplicativo](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} para validar sua implementação do .
 1. Seguir [Documentação do SDK do Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} para obter a configuração com os SDKs do Adobe Experience Platform Mobile em seu aplicativo.
-1. Instalar e configurar [Extensão do Adobe Campaign](#configure-extension) na sua propriedade móvel
+1. Instalar e configurar [Extensão do Adobe Campaign](#configure-extension) na propriedade móvel.
 1. Configure seus serviços móveis iOS e Android no Adobe Campaign, conforme detalhado [nesta página](../send/push.md#push-config).
 
-Ao final disso, você também deve ter criado e configurado uma propriedade móvel no [!DNL Adobe Experience Platform Data Collection]. Normalmente, você cria uma propriedade móvel para cada aplicativo móvel que deseja gerenciar. Saiba como criar e configurar uma propriedade móvel no [Documentação do SDK do Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
 ## Pré-requisitos {#before-starting}
 
@@ -132,9 +131,7 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 ## Configurar uma propriedade de tag móvel na Coleta de dados do Adobe Experience Platform {#launch-property}
 
-A configuração de uma propriedade móvel permite que o desenvolvedor do aplicativo móvel ou profissional de marketing configure os atributos de SDKs móveis, como Tempo limite da sessão, o [!DNL Adobe Experience Platform] sandbox a ser direcionada e a variável **[!UICONTROL Adobe Experience Platform Datasets]** a ser usado para o SDK móvel para enviar dados ao .
-
-Para mais detalhes e procedimentos sobre como configurar um **propriedade móvel** , consulte as etapas detalhadas em [Documentação do SDK do Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+A configuração de uma propriedade móvel permite que o desenvolvedor do aplicativo móvel ou profissional de marketing configure os SDKs móveis. Normalmente, você cria uma propriedade móvel para cada aplicativo móvel que deseja gerenciar. Saiba como criar e configurar uma propriedade móvel no [Documentação do SDK do Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
 Para obter os SDKs necessários para que a notificação por push funcione, você precisará das seguintes extensões do SDK, tanto para Android quanto para iOS:
 
