@@ -1,6 +1,6 @@
 ---
 title: Introdução à arquitetura do Campaign
-description: Descubra ambientes e noções básicas de implantação, incluindo como criar relatórios sobre um ambiente de campanha.
+description: Conheça as noções básicas sobre ambientes e implantações, incluindo como criar relatórios sobre um ambiente de campanha.
 feature: Overview
 role: Data Engineer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
