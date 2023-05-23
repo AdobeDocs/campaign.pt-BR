@@ -1,5 +1,5 @@
 ---
-title: Casos de uso de interação da campanha
+title: Casos de uso de interação de campanha
 description: Casos de uso de interação
 feature: Interaction, Offers
 role: Data Engineer
@@ -14,11 +14,11 @@ ht-degree: 7%
 
 # Casos de uso
 
-Aproveite os recursos de interação do Campaign por meio desses casos de uso passo a passo disponíveis na documentação do Campaign Classic v7:
+Aproveite os recursos de Interação do Campaign por meio desses casos de uso passo a passo, disponíveis na documentação do Campaign Classic v7:
 
 ![](../assets/do-not-localize/book.png) [Criar e aplicar uma regra de apresentação](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html){target="_blank"}
 
-![](../assets/do-not-localize/book.png) [Enviar um delivery de oferta de email](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
+![](../assets/do-not-localize/book.png) [Enviar uma entrega de oferta por email](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
 
 ![](../assets/do-not-localize/book.png) [Apresentar uma oferta a um visitante anônimo](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
 

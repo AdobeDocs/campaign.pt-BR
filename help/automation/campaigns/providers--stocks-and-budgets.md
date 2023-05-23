@@ -37,7 +37,7 @@ As tarefas realizadas durante as entregas são realizadas por provedores de serv
 
 Você pode criar quantos provedores de serviços forem necessários para suas remessas. O procedimento para adicionar um provedor de serviços é o seguinte:
 
-1. Clique no botão **[!UICONTROL New]** acima da lista de provedores de serviços.
+1. Clique em **[!UICONTROL New]** acima da lista de provedores de serviços.
 1. Na seção inferior da janela, especifique o nome e os detalhes de contato do provedor de serviços.
 
    ![](assets/add-a-supplier.png)
@@ -46,13 +46,13 @@ Você pode criar quantos provedores de serviços forem necessários para suas re
 
 #### Definir categorias de custo {#define-cost-categories}
 
-Agora você pode associar templates de serviço a cada provedor de serviços. Nesses templates, você deve primeiro identificar as categorias de custo e se necessário o estoque em questão. Em seguida, é possível criar as regras de cálculo de custo para cada categoria, por meio das estruturas de custo. [Saiba mais](#define-the-cost-structure).
+Agora você pode associar templates de serviço a cada provedor de serviços. Nesses templates, você deve primeiro identificar as categorias de custo e se necessário o estoque em questão. Em seguida, você pode criar as regras de cálculo de custo para cada categoria, por meio das estruturas de custo. [Saiba mais](#define-the-cost-structure).
 
-Uma categoria de custo é uma entidade que contém um conjunto de custos qualificados para um tipo de delivery (email, mala direta, SMS, etc.). As categorias de custo são agrupadas nos templates de serviços associados aos provedores de serviço. Cada provedor de serviço pode referenciar um ou mais templates de serviço.
+Uma categoria de custo é uma entidade que contém um conjunto de custos qualificados para um tipo de delivery (email, correspondência direta, SMS, etc.). As categorias de custo são agrupadas nos templates de serviços associados aos provedores de serviço. Cada provedor de serviço pode referenciar um ou mais templates de serviço.
 
 Para criar um template de serviço e definir seu conteúdo, siga as etapas abaixo:
 
-1. No **[!UICONTROL Services]** do provedor de serviços, clique no botão **[!UICONTROL Add]** e insira o nome do template de serviço.
+1. No **[!UICONTROL Services]** do provedor de serviços, clique na guia **[!UICONTROL Add]** e informe o nome do template de serviço.
 
    ![](assets/supplier-new-template.png)
 
@@ -68,7 +68,7 @@ Para criar um template de serviço e definir seu conteúdo, siga as etapas abaix
       >
       >As linhas de estoque são definidas no nó **[!UICONTROL Stock management]**. [Saiba mais](#stock-and-order-management).
 
-1. Você pode pré-selecionar um valor para essa categoria de custo, que é o padrão nas categorias de custo do provedor de serviços (em vez de vazia). Para fazer isso, ative a **Sim** na **[!UICONTROL Selected]** coluna para o tipo de categoria em causa:
+1. Você pode pré-selecionar um valor para essa categoria de custo, que é o padrão nas categorias de custo do provedor de serviços (em vez de uma vazia). Para fazer isso, ative a variável **Sim** opção no **[!UICONTROL Selected]** coluna para o tipo de categoria em causa:
 
    ![](assets/default-cost-type.png)
 
@@ -119,9 +119,9 @@ Por fim, você pode configurar um cálculo de custo de acordo com o número tota
 
 ![](assets/supplier-cost-structure-constant.png)
 
-### Configurar tarefas associadas a um serviço {#configure-processes-associated-with-a-service}
+### Configurar trabalhos associados a um serviço {#configure-processes-associated-with-a-service}
 
-Você pode associar informações nos processos associados ao provedor de serviços através do **[!UICONTROL Jobs]** guia . Esta seção permite configurar o envio de informações para o roteador.
+Você pode associar informações nos processos associados ao provedor de serviços por meio da **[!UICONTROL Jobs]** guia. Esta seção permite configurar o envio de informações para o roteador.
 
 ![](assets/cost-supplier-jobs.png)
 
@@ -129,13 +129,13 @@ Você pode associar informações nos processos associados ao provedor de servi�
 
 * A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de recipients.
 
-   Por padrão, os modelos de delivery para mensagens de notificação são salvos na variável **[!UICONTROL Administration > Campaign management > Technical delivery templates]** , que é acessível na visualização geral.
+   Por padrão, os modelos de delivery para mensagens de notificação são salvos na variável **[!UICONTROL Administration > Campaign management > Technical delivery templates]** pasta, que pode ser acessada na visualização geral.
 
 * A seção **[!UICONTROL Post-processing]** permite que você selecione o workflow a ser iniciado após a aprovação do delivery. Se um template de workflow for inserido, uma instância de workflow será criada automaticamente e será iniciada assim que a aprovação entrar em vigor. Esse workflow pode enviar o arquivo de extração para um provedor de serviços externos para processamento, por exemplo.
 
 ### Associar um serviço a uma campanha {#associate-a-service-with-a-campaign}
 
-Os provedores de serviços estão associados a deliveries de campanhas. Eles são referenciados em templates de delivery para oferecer seus serviços nos deliveries criados por meio desse template.
+Os provedores de serviços estão associados às entregas de campanhas. Eles são referenciados em templates de delivery para oferecer seus serviços nos deliveries criados por meio desse template.
 
 Quando um serviço é selecionado, as categorias de custo correspondentes ao tipo de delivery (mala direta, email, etc.) são automaticamente indicadas na tabela central juntamente com as opções de processamento definidas.
 
@@ -193,9 +193,9 @@ Ao criar um estoque, clique na guia **[!UICONTROL Stock lines]** para adicionar 
 
 ![](assets/stock-new-lines.png)
 
-Depois que o estoque for criado, use o painel para criar e monitorar linhas de estoque.
+Depois que o estoque for criado, use seu painel para criar e monitorar linhas de estoque.
 
-Clique no botão **[!UICONTROL Create]** para adicionar novas linhas de estoque.
+Clique em **[!UICONTROL Create]** botão para adicionar novas linhas de estoque.
 
 ![](assets/add-stock-lines.png)
 

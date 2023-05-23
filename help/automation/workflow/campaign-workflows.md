@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Tipo de workflows
+title: Tipos de fluxos de trabalho
 description: Descubra diferentes tipos de workflows no Campaign
 feature: Workflows
 exl-id: f511332c-1fcc-444f-851b-e8b470b719b4
@@ -25,4 +25,4 @@ Todos os fluxos de trabalho da campanha são centralizados no nó **[!UICONTROL 
 
 ![](assets/campaigns_wf.png)
 
-Workflows da campanha e exemplos de implementação são detalhados em [esta seção](../campaigns/marketing-campaign-target.md).
+Os workflows da campanha e exemplos de implementação são detalhados em [nesta seção](../campaigns/marketing-campaign-target.md).

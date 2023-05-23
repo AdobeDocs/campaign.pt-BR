@@ -12,29 +12,29 @@ ht-degree: 4%
 
 ---
 
-# APIs de campanha FDA específicas{#gs-new-api}
+# APIs específicas do Campaign FFDA{#gs-new-api}
 
-No contexto de um [Implantação empresarial (FDA)](enterprise-deployment.md), o Campaign v8 vem com duas APIs específicas para gerenciar dados entre o banco de dados local do Campaign e o banco de dados do Cloud. Os pré-requisitos para usá-los é ativar o mecanismo de preparo no schema. [Saiba mais](staging.md)
+No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), o Campaign v8 vem com duas APIs específicas para gerenciar dados entre o banco de dados local do Campaign e o banco de dados da nuvem. Os pré-requisitos para usá-los é ativar o mecanismo de preparo no esquema. [Saiba mais](staging.md)
 
 * API de assimilação: **xtk.session.ingest**
 
-   Essa API é dedicada somente à inserção de dados. [Saiba mais](#data-insert-api)
+   Essa API é dedicada somente à Inserção de dados. [Saiba mais](#data-insert-api)
 
 * API de atualização/exclusão de dados: **xtk.session.ingestExt**
 
    Essa API é usada para atualizar ou excluir dados. [Saiba mais](#data-update-api)
 
-Um fluxo de trabalho interno dedicado sincronizará os dados no banco de dados da nuvem.
+Um fluxo de trabalho integrado dedicado sincronizará os dados no banco de dados da nuvem.
 
 ## Inserir dados{#data-insert-api}
 
-O **xtk.session.ingest** A API é dedicada somente à inserção de dados. Nenhuma atualização/exclusão.
+A variável **xtk.session.ingest** A API é dedicada somente à Inserção de dados. Nenhuma atualização/exclusão.
 
 ### Inserir sem reconciliação{#insert-no-reconciliation}
 
-**Em um fluxo de trabalho**
+**Em um workflow**
 
-Use o seguinte código em um **Código JavaScript** atividade para inserir dados no banco de dados do Cloud sem reconciliação:
+Use o código a seguir em uma **Código Javascript** Atividade para inserir dados no banco de dados em nuvem sem reconciliação:
 
 ```
 var xmlStagingSampleTable = <sampleTableStg
@@ -46,7 +46,7 @@ strUuid = xtk.session.Ingest(xmlStagingSampleTable);
 logInfo(strUuid);
 ```
 
-Depois que o workflow é executado, a tabela de preparo é alimentada conforme esperado.
+Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada conforme esperado.
 
 **De uma chamada SOAP**
 
@@ -71,7 +71,7 @@ Depois que o workflow é executado, a tabela de preparo é alimentada conforme e
    </soapenv:Envelope>
    ```
 
-1. O UUID é enviado de volta para a resposta SOAP:
+1. A UUID é enviada de volta para a resposta SOAP:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -89,9 +89,9 @@ Como resultado, a tabela de preparo é alimentada conforme esperado.
 
 ### Inserir com reconciliação
 
-**Em um fluxo de trabalho**
+**Em um workflow**
 
-Use o seguinte código em um **Código JavaScript** atividade para inserir dados no banco de dados do Cloud com reconciliação:
+Use o código a seguir em uma **Código Javascript** Atividade para inserir dados no banco de dados em nuvem com reconciliação:
 
 ```
 var xmlStagingSampleTable = <sampleTableStg  _key="@id" id="ABC12345"
@@ -103,7 +103,7 @@ strUuid = xtk.session.Ingest(xmlStagingSampleTable);
 logInfo(strUuid);
 ```
 
-Depois que o workflow é executado, a tabela de preparo é alimentada conforme esperado.
+Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada conforme esperado.
 
 ![](assets/with-reconciliation.png)
 
@@ -131,7 +131,7 @@ Depois que o workflow é executado, a tabela de preparo é alimentada conforme e
    </soapenv:Envelope>
    ```
 
-1. Nesse caso, o UUID não é fornecido de volta à resposta porque foi fornecido na carga. A resposta é:
+1. Nesse caso, a UUID não é fornecida de volta para a resposta porque foi fornecida na carga. A resposta é:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -147,13 +147,13 @@ Como resultado, a tabela de preparo é alimentada conforme esperado.
 
 ## Atualizar ou excluir dados{#data-update-api}
 
-O **xtk.session.IngestExt** A API é otimizada para atualização/exclusão de dados. Apenas para inserir, preferir **xtk.session.ingest**. Inserir está funcionando se a chave de registro não está na tabela de preparo.
+A variável **xtk.session.IngestExt** A API está otimizada para atualização/exclusão de dados. Somente para inserção, prefira **xtk.session.ingest**. Insert está funcionando se a chave do registro não estiver na tabela de preparo.
 
-### Inserir / atualizar
+### Inserir/atualizar
 
-**Em um fluxo de trabalho**
+**Em um workflow**
 
-Use o seguinte código em um **Código JavaScript** atividade para atualizar dados no banco de dados do Cloud:
+Use o código a seguir em uma **Código Javascript** Atividade para atualizar dados no banco de dados em nuvem:
 
 ```
 var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
@@ -164,7 +164,7 @@ var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
 xtk.session.IngestExt(xmlStagingRecipient);
 ```
 
-Depois que o workflow é executado, a tabela de preparo é atualizada conforme esperado.
+Depois que o fluxo de trabalho é executado, a tabela de preparo é atualizada conforme esperado.
 
 ![](assets/updated-data.png)
 
@@ -203,11 +203,11 @@ Depois que o workflow é executado, a tabela de preparo é atualizada conforme e
 
 Como resultado, a tabela de preparo é atualizada conforme esperado.
 
-## Gestão de assinaturas {#sub-apis}
+## Gerenciamento de assinaturas {#sub-apis}
 
-O gerenciamento de assinaturas no Campaign é descrito em [esta página](../start/subscriptions.md).
+O gerenciamento de assinaturas do Campaign está descrito em [esta página](../start/subscriptions.md).
 
-A inserção de dados de assinatura e unsubscription depende do [Mecanismo de armazenamento temporário](staging.md) no banco de dados local do Campaign. As informações do assinante são armazenadas temporariamente em tabelas de preparo no banco de dados local, e o workflow de sincronização envia esses dados do banco de dados local para o banco de dados do Cloud. Como consequência, os processos de assinatura e unsubscription são **assíncrono**. As solicitações de aceitação e recusa são processadas a cada hora por meio de um workflow técnico específico. [Saiba mais](replication.md#tech-wf)
+A inserção de dados de subscrição e unsubscription depende da [Mecanismo de preparo](staging.md) no banco de dados local do Campaign. As informações do assinante são armazenadas temporariamente em tabelas intermediárias no banco de dados local, e o workflow de sincronização envia esses dados do banco de dados local para o banco de dados da nuvem. Como consequência, os processos de subscrição e unsubscription são **assíncrono**. As solicitações de aceitação e recusa são processadas a cada hora por meio de um fluxo de trabalho técnico específico. [Saiba mais](replication.md#tech-wf)
 
 
 **Tópicos relacionados**

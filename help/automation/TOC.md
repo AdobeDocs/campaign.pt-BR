@@ -56,7 +56,7 @@ ht-degree: 86%
          + [União](workflow/union.md)
          + [Atualizar dados](workflow/update-data.md)
       + Atividades de controle de fluxo {#flow-control-activities}
-         + [Lista de atividades de controlo de fluxo](workflow/flow-control-activities.md)
+         + [Lista de atividades de controle de fluxo](workflow/flow-control-activities.md)
          + [Alerta](workflow/alert.md)
          + [AND-join](workflow/and-join.md)
          + [Aprovação](workflow/approval.md)
@@ -70,7 +70,7 @@ ht-degree: 86%
          + [Restrição de tempo](workflow/time-constraint.md)
          + [Aguardar](workflow/wait.md)
       + Atividades de ação {#action-activities}
-         + [Lista de atividades](workflow/action-activities.md)
+         + [Lista de atividades de ação](workflow/action-activities.md)
          + [Gerenciamento de conteúdo](workflow/content-management.md)
          + [Entrega contínua](workflow/continuous-delivery.md)
          + [Entregas entre canais](workflow/cross-channel-deliveries.md)
@@ -151,7 +151,7 @@ ht-degree: 86%
    + [Regras de consistência](campaign-opt/consistency-rules.md)
    + [Aplicar regras](campaign-opt/apply-rules.md)
    + [Simulações de campanha](campaign-opt/campaign-simulations.md)
-+ Gerenciamento de recursos de marketing (add-on){#mrm}
++ Gerenciamento de recursos de marketing (complemento){#mrm}
    + [Introdução ao gerenciamento de recursos de marketing](mrm/about-marketing-resource-management.md)
    + [Criar e gerenciar tarefas](mrm/creating-and-managing-tasks.md)
    + [Controlar custos](mrm/controlling-costs.md)

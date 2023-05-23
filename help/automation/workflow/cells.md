@@ -13,7 +13,7 @@ ht-degree: 28%
 
 # Células{#cells}
 
-O **[!UICONTROL Cells]** A atividade fornece uma visualização dos vários subconjuntos como colunas de dados. Ele facilita a manipulação do subconjunto e também foi projetado para aproveitar os recursos de personalização.
+A variável **[!UICONTROL Cells]** A atividade fornece uma visualização dos vários subconjuntos como colunas de dados. Ele facilita a manipulação de subconjunto e também foi projetado para aproveitar os recursos de personalização.
 
 ![](assets/wf_split_cells.png)
 
@@ -21,11 +21,11 @@ Essa atividade pode ser configurada para inserir parâmetros específicos com ba
 
 ![](assets/wf_split_cells_with_customization.png)
 
-No exemplo abaixo, o formulário de entrada foi modificado: a **[!UICONTROL Data]** foi adicionada para habilitar a associação de uma oferta e um nível de prioridade para cada subconjunto.
+No exemplo abaixo, o formulário de entrada foi modificado: a **[!UICONTROL Data]** A guia foi adicionada para habilitar a associação de uma oferta e um nível de prioridade para cada subconjunto.
 
 ![](assets/cells-activity-sample.png)
 
-Para essa configuração, as seguintes informações foram adicionadas ao formulário do fluxo de trabalho, na **[!UICONTROL Administration > Configurations > Input forms]** nó do explorador do Adobe Campaign:
+Para essa configuração, as seguintes informações foram adicionadas ao formulário do fluxo de trabalho, no **[!UICONTROL Administration > Configurations > Input forms]** nó do explorador do Adobe Campaign:
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">

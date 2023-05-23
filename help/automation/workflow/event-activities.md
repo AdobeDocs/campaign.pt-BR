@@ -13,13 +13,13 @@ ht-degree: 19%
 
 # Atividades de evento em workflows{#about-event-activities}
 
-A principal tarefa dessas atividades consiste em aguardar um evento. Pode ser, por exemplo, o recebimento de um arquivo, um email ou um sinal enviado por um sistema de terceiros.
+A principal tarefa dessas atividades consiste em aguardar um evento. Pode ser, por exemplo, receber um arquivo, um email ou um sinal enviado por um sistema de terceiros.
 
-Essas atividades não estão disponíveis em [workflows específicos da campanha](campaign-workflows.md).
+Essas atividades não estão disponíveis no [workflows específicos de campanha](campaign-workflows.md).
 
 
 * **[File collector](file-collector.md)**: monitora a chegada de um ou mais arquivos em um diretório e permite a transição para cada arquivo recebido.
-* **[Transferência de arquivos](file-transfer.md)**: O transfere um arquivo para um servidor.
+* **[Transferência de arquivo](file-transfer.md)**: transfere um arquivo para um servidor.
 * **[Emails de entrada](inbound-emails.md)**: recupera e processa emails.
-* **[SMS de entrada](inbound-sms.md)**: recupera e processa o SMS.
+* **[SMS de entrada](inbound-sms.md)**: recupera e processa SMS.
 * **[Download da Web](web-download.md)**: baixa um arquivo da Web.

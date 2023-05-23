@@ -7,7 +7,7 @@ exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '1664'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -92,7 +92,7 @@ Para facilitar a identificação do fluxo de trabalho, recomendamos usar traços
 
 Na maior parte do tempo, você não saberá de onde o sinal é chamado. Para evitar esse problema, use o campo **[!UICONTROL Comment]** dentro da guia **[!UICONTROL Advanced]** da atividade do sinal para documentar a origem esperada de um sinal para essa atividade.
 
-## Atualizações do workflow {#workflow-update}
+## Atualizações do fluxo de trabalho {#workflow-update}
 
 Um workflow de produção não deve ser atualizado diretamente. A menos que o processo consista na criação de uma campanha com templates de workflows, os processos devem ser testados primeiro em um ambiente de desenvolvimento. Após essa validação, o workflow pode ser implantado e iniciado na produção.
 
@@ -104,11 +104,11 @@ Os workflows arquivados podem ser mantidos em plataformas de desenvolvimento ou 
 
 ### Logs {#logs}
 
-O método JavaScript **[!UICONTROL logInfo()]** é uma solução para depurar um workflow. No entanto, ele deve ser usado com cuidado, especialmente para atividades executadas com frequência: ele pode sobrecarregar os logs e aumentar significativamente o tamanho da tabela de log.
+O método JavaScript **[!UICONTROL logInfo()]** O é uma solução para depurar um workflow. No entanto, ele deve ser usado com cuidado, especialmente para atividades executadas com frequência: pode sobrecarregar os logs e aumentar significativamente o tamanho da tabela de log.
 
-### Manter populações intermédias
+### Manter populações interinas
 
-O **Manter o resultado de públicos provisórios entre duas execuções** mantém tabelas temporárias entre duas execuções de um workflow.
+A variável **Manter o resultado de públicos provisórios entre duas execuções** A opção mantém tabelas temporárias entre duas execuções de um workflow.
 
 Está disponível na guia **[!UICONTROL General]** das propriedades do fluxo de trabalho e pode ser usado para desenvolvimento e testes para monitorar dados e verificar resultados. Você pode usar essa opção em ambientes de desenvolvimento, mas nunca usá-la em ambientes de produção. Manter tabelas temporárias pode resultar no aumento significativo do tamanho de banco de dados e, por fim, atingir o limite de tamanho. Além disso, o backup ficará lento.
 
@@ -116,25 +116,25 @@ Somente as tabelas de trabalho da última execução do workflow são mantidas. 
 
 >[!CAUTION]
 >
->Essa opção deve **never** seja verificado em um **produção** fluxo de trabalho. Essa opção é usada para analisar os resultados e é projetada apenas para fins de teste e, portanto, deve ser usada apenas em ambientes de desenvolvimento ou de preparo.
+>Essa opção **nunca** deve ser selecionada em um fluxo de trabalho de **produção**. Essa opção é usada para analisar os resultados e é projetada apenas para fins de teste e, portanto, deve ser usada apenas em ambientes de desenvolvimento ou de preparo.
 
 
-### Log SQL queries
+### Registrar consultas SQL
 
-O **Logs de queries SQL no journal** está disponível na variável **[!UICONTROL Execution]** guia das propriedades do fluxo de trabalho. Essa opção registra todas as consultas SQL das diferentes atividades e fornece uma maneira de ver o que é realmente executado pela plataforma. No entanto, essa opção só deve ser usada **temporariamente** durante o desenvolvimento e **não ativada na produção**.
+A variável **Registrar consultas SQL no journal** está disponível na **[!UICONTROL Execution]** das propriedades do fluxo de trabalho. Essa opção registra todas as consultas SQL das diferentes atividades e fornece uma maneira de ver o que é realmente executado pela plataforma. No entanto, essa opção só deve ser usada **temporariamente** durante o desenvolvimento e **não ativado na produção**.
 
 A prática recomendada é limpar os logs quando eles não forem mais necessários. O histórico do fluxo de trabalho não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão Actions localizado na barra de ferramentas acima da lista. Selecione Purge history.
 Para saber como limpar seus registros, consulte esta [documentação](start-a-workflow.md).
 
 ### Planejamento de workflow {#workflow-planning}
 
-Práticas recomendadas adicionais devem ser aplicadas ao planejamento de execução de workflows para evitar problemas:
+Práticas recomendadas adicionais devem ser aplicadas ao planejamento de execução dos workflows para evitar problemas:
 
-* Mantenha um nível estável de atividade ao longo do dia e evite picos para evitar a sobrecarga da instância. Para fazer isso, distribua os horários de início do workflow uniformemente ao longo do dia.
+* Mantenha um nível estável de atividade ao longo do dia e evite picos para evitar que a instância fique sobrecarregada. Para fazer isso, distribua os horários de início do workflow uniformemente ao longo do dia.
 * Agende a carga de dados durante a noite para reduzir o a contenção de recurso.
 * Workflows longos podem ter impacto no servidor e nos recursos do banco de dados. Divida os workflows mais longos para reduzir o tempo de processamento.
 * Para reduzir os tempos de execução gerais, substitua atividades demoradas por atividades simplificadas e mais rápidas.
-* Evite executar mais de 20 workflows simultaneamente. Quando muitos workflows são executados ao mesmo tempo, sua plataforma pode ser sobrecarregada e se tornar instável.
+* Evite executar mais de 20 workflows simultaneamente. Quando muitos workflows são executados ao mesmo tempo, sua plataforma pode ficar sobrecarregada e se tornar instável.
 
 ### Execução do workflow {#workflow-execution}
 
@@ -158,6 +158,6 @@ Melhore a estabilidade da instância implementando as seguintes práticas recome
 
 ### Opção de Executar no mecanismo {#execute-in-the-engine-option}
 
-Em um ambiente de produção, evite executar workflows no mecanismo. Quando a variável **[!UICONTROL Execute in the engine]** está marcada na opção **[!UICONTROL Workflow properties]**, o workflow tem prioridade e todos os outros workflows são interrompidos pelo mecanismo de workflow até que este seja concluído.
+Em um ambiente de produção, evite executar workflows no mecanismo. Quando a variável **[!UICONTROL Execute in the engine]** estiver marcada na caixa **[!UICONTROL Workflow properties]**, o workflow tem prioridade e todos os outros workflows são interrompidos pelo mecanismo do workflow até que este seja concluído.
 
 ![](assets/wf-execute-in-engine.png)

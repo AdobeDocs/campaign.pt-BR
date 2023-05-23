@@ -36,7 +36,7 @@ Os seguintes casos de uso detalham as possíveis opções para integrar ofertas 
 1. Crie um espaço de oferta vinculado ao ambiente anônimo.
 1. Crie uma oferta e sua representação vinculada ao espaço de oferta.
 
-**Etapa 2: Atualize o conteúdo da página do HTML**
+**Etapa 2: atualizar o conteúdo da página de HTML**
 
 A página HTML deve incluir um elemento com um atributo @id com o valor do nome interno do espaço de oferta criado (&quot;i_internal name space&quot;). A oferta será inserida neste 
 elemento pelo Interaction.
@@ -57,13 +57,13 @@ No nosso exemplo, a URL para chamar o script é a seguinte (&quot;OE3&quot; é o
 >
 >A tag `<script>` não deve fechar automaticamente.
 
-Essa chamada estática gerará automaticamente uma chamada dinâmica contendo todos os parâmetros necessários do mecanismo Offer.
+Essa chamada estática gerará automaticamente uma chamada dinâmica contendo todos os parâmetros necessários do mecanismo de oferta.
 
-Esse comportamento permite usar vários espaços de oferta na mesma página, para ser gerenciado por uma única chamada do mecanismo Offer .
+Esse comportamento permite usar vários espaços de ofertas na mesma página, gerenciados por uma única chamada do mecanismo de oferta.
 
-**Etapa 3: Exibir os resultados na página HTML**
+**Etapa 3: exibir os resultados na página de HTML**
 
-O conteúdo da representação da oferta é retornado à página HTML pelo mecanismo Offer :
+O conteúdo da representação da oferta é retornado para a página HTML pelo Mecanismo de oferta:
 
 ```
 <div id="banner_header">
@@ -105,9 +105,9 @@ No conteúdo da página da Web, é necessário adicionar o script a seguir para 
 
    Neste exemplo, a chave de identificação é composta por ser baseada no e-mail e no nome do recipient.
 
-1. Durante a exibição da página da Web, a avaliação do script permite passar a ID do recipient no mecanismo de oferta. Se a ID for composta, as chaves serão exibidas na mesma sequência usada nas configurações avançadas e separadas por um |.
+1. Durante a exibição da página da Web, a avaliação do script permite passar a ID do recipient para o mecanismo de oferta. Se a ID for composta, as chaves serão exibidas na mesma sequência usada nas configurações avançadas e separadas por um |.
 
-   No exemplo a seguir, o contato fez logon no site e foi reconhecido durante a chamada do mecanismo de oferta graças ao email e ao nome.
+   No exemplo a seguir, o contato fez logon no site e foi reconhecido durante a chamada para o mecanismo de oferta graças ao email e ao nome.
 
    ```
    <script type="text/javascript">
@@ -127,13 +127,13 @@ Para gerar a representação de oferta HTML automaticamente, é possível usar u
 
    Neste exemplo, a oferta é exibida no formato de um banner na página da Web e é composta de uma imagem clicável e um título que corresponde aos campos definidos no conteúdo da oferta.
 
-## Opção 2: Modo XML {#xml-mode}
+## Opção 2: modo XML {#xml-mode}
 
 ### Apresentar uma oferta {#presenting-an-offer}
 
-Campanha **Interação** permite retornar um nó XML para a HTML que chama o mecanismo Offer . Este nó XML pode ser processado por funções a serem desenvolvidas no lado do cliente.
+Campaign **Interação** permite retornar um nó XML para a página HTML que chama o mecanismo de oferta. Este nó XML pode ser processado por funções a serem desenvolvidas no lado do cliente.
 
-A chamada para o mecanismo Offer tem esta aparência:
+A chamada para o mecanismo de oferta tem esta aparência:
 
 ```
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
@@ -162,15 +162,15 @@ O nó XML retornado tem esta aparência:
 </propositions>
 ```
 
-O caso de uso abaixo detalha as configurações a serem executadas no Adobe Campaign para ativar o modo XML e, em seguida, mostra o resultado da chamada para o mecanismo na página HTML.
+O caso de uso abaixo detalha as configurações a serem executadas no Adobe Campaign para habilitar o modo XML e, em seguida, mostrar o resultado da chamada para o mecanismo na página de HTML.
 
 1. **Criar um ambiente e um espaço de oferta**
 
-   Para obter mais informações sobre a criação de um ambiente, consulte [esta página](interaction-env.md).
+   Para obter mais informações sobre criação de ambiente, consulte [esta página](interaction-env.md).
 
-   Para obter mais informações sobre criação de um espaço de oferta, consulte [esta página](interaction-offer-spaces.md).
+   Para obter mais informações sobre a criação de um espaço de ofertas, consulte [esta página](interaction-offer-spaces.md).
 
-1. **Estender o schema de ofertas para adicionar novos campos**
+1. **Extensão do schema de ofertas para adicionar novos campos**
 
    Esse esquema definirá os seguintes campos: Title number 2 e price.
 
@@ -264,7 +264,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
 1. **O mecanismo chama e mostra o resultado na página HTML.**
 
-   A chamada para o mecanismo Offer na página HTML tem a seguinte aparência:
+   A chamada para o mecanismo de oferta na página de HTML tem esta aparência:
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
@@ -274,7 +274,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
    O valor do parâmetro &quot;**cb**&quot; é o nome da função que precisa interpretar o nó XML retornado pelo mecanismo. No nosso exemplo, a função chamada abre uma janela modal (alert() função).
 
-   O nó XML retornado pelo mecanismo Offer tem esta aparência:
+   O nó XML retornado pelo mecanismo de oferta tem esta aparência:
 
    ```
    <propositions>
@@ -294,7 +294,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
 ### Usar uma função de renderização {#using-a-rendering-function-}
 
-É possível usar uma função de renderização XML para criar uma apresentação de ofertas. Essa função modificará o nó XML retornado à página HTML durante a chamada para o mecanismo Offer .
+É possível usar uma função de renderização XML para criar uma apresentação de ofertas. Essa função modificará o nó XML retornado à página de HTML durante a chamada para o mecanismo de oferta.
 
 1. Vá para o espaço da oferta e clique no link **[!UICONTROL Edit functions]**.
 1. Selecione **[!UICONTROL Overload the XML rendering function]**.

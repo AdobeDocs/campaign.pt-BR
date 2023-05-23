@@ -32,7 +32,7 @@ Os workflows detalhados abaixo são instalados com o módulo dos **conectores We
   <tr> 
    <td> <span class="uicontrol">Identificação de contatos convertidos</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por esse workflow podem ser acessados na função <span class="uicontrol">Relatório de eficiência de re-marketing</span> (Consulte isso ). <br /> </td> 
+   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por esse workflow podem ser acessados no <span class="uicontrol">Relatório de eficiência de re-marketing</span> (Consulte esta seção ). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Limpeza de eventos</span> <br /> </td> 

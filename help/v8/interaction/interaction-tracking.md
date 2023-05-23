@@ -1,6 +1,6 @@
 ---
-title: Histórico e relatórios de interação em tempo real
-description: Saiba como rastrear e medir suas ofertas com a interação do Campaign
+title: Histórico e relatórios da interação em tempo real
+description: Saiba como rastrear e medir suas ofertas com a Interação do Campaign
 feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
@@ -12,11 +12,11 @@ ht-degree: 75%
 
 ---
 
-# Histórico e relatórios de interação em tempo real
+# Histórico e relatórios da interação em tempo real
 
 >[!NOTE]
 >
->Essas funcionalidades são visíveis somente online e somente para a variável **Gerentes de delivery**.
+>Estas funcionalidades só são visíveis em linha e apenas para os **Gerentes de delivery**.
 
 ## Histórico da apresentação da oferta{#offer-proposition-history}
 

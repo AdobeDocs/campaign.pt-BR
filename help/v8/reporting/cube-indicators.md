@@ -16,25 +16,25 @@ ht-degree: 38%
 
 ## Espaço de trabalho do cubo {#cube-workspace}
 
-Para acessar cubos, navegue até **[!UICONTROL Administration > Configuration > Cubes]** do explorador do Campaign.
+Para acessar cubos, navegue até **[!UICONTROL Administration > Configuration > Cubes]** no explorador do Campaign.
 
 ![](assets/cube-node.png)
 
 Com cubos, você pode:
 
-* Exportar dados diretamente em um relatório, projetado na variável **[!UICONTROL Reports]** da plataforma Adobe Campaign.
+* Exportar dados diretamente em um relatório, projetado na **[!UICONTROL Reports]** da plataforma Adobe Campaign.
 
    Para fazer isso, crie um novo relatório e selecione o cubo que deseja usar.
 
    ![](assets/create-new-cube.png)
 
-   Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um template, clique em **[!UICONTROL Create]** para configurar e exibir o novo relatório.
+   Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um modelo, clique em **[!UICONTROL Create]** para configurar e visualizar o novo relatório.
 
    Você pode adaptar medidas, alterar o modo de exibição ou configurar a tabela e exibir o relatório usando o botão principal.
 
    ![](assets/display-cube-table.png)
 
-* Faça referência a um cubo na **[!UICONTROL Query]** caixa de um relatório para usar seus indicadores, conforme mostrado abaixo:
+* Fazer referência a um cubo no **[!UICONTROL Query]** caixa de um relatório para usar seus indicadores, conforme mostrado abaixo:
 
    ![](assets/cube-report-query.png)
 
@@ -47,13 +47,13 @@ Com cubos, você pode:
 
 >[!CAUTION]
 >
->Permissões de administrador são necessárias para criar cubos.
+>São necessárias permissões de administrador para criar cubos.
 
 ## Criar um cubo{#cube-create}
 
 Antes de começar a criar um relatório de cubo, identifique as dimensões e medidas relevantes e crie-as no cubo.
 
-Para criar um cubo, aplique as seguintes etapas:
+Para criar um cubo, siga as etapas abaixo:
 
 1. Selecione a tabela de trabalho. [Saiba mais](#select-the-work-table).
 1. Definir dimensões. [Saiba mais](#define-dimensions).
@@ -66,25 +66,25 @@ No exemplo abaixo, saiba como criar rapidamente um cubo simples em um relatório
 
 Para criar um cubo, siga as etapas abaixo:
 
-1. Clique no botão **[!UICONTROL New]** acima da lista de cubos.
+1. Clique em **[!UICONTROL New]** acima da lista de cubos.
 
    ![](assets/create-a-cube.png)
 
-1. Selecione o schema que contém os elementos que você deseja explorar (também conhecido como &quot;schema de fatos&quot;). Neste exemplo, selecione o padrão **Recipient** tabela.
-1. Clique em **[!UICONTROL Save]** para criar o cubo: é adicionado à lista de cubos. Agora é possível usar as guias para configurá-la.
+1. Selecione o schema que contém os elementos que deseja explorar (também conhecido como &quot;schema de fatos&quot;). Neste exemplo, selecione o padrão **Recipient** tabela.
+1. Clique em **[!UICONTROL Save]** para criar o cubo: ele é adicionado à lista de cubos. Agora você pode usar as guias para configurá-lo.
 
-1. Clique no botão **[!UICONTROL Filter the source data...]** link para aplicar os cálculos desse cubo aos dados no banco de dados.
+1. Clique em **[!UICONTROL Filter the source data...]** link para aplicar os cálculos desse cubo aos dados no banco de dados.
 
    ![](assets/cube-filter-source.png)
 
 ### Definir dimensões {#define-dimensions}
 
-Depois que o cubo é criado, defina suas dimensões. Dimension são os eixos de análise definidos para cada cubo com base em seu schema de fato relacionado. Essas são as dimensões exploradas na análise, como tempo (ano, mês, data), uma classificação de produtos ou contratos (família, referência, etc.), um segmento de população (por cidade, faixa etária, status, etc.).
+Depois que o cubo for criado, defina suas dimensões. Dimension são os eixos de análise definidos para cada cubo com base em seu schema de fatos relacionado. Essas são as dimensões exploradas na análise, como tempo (ano, mês, data), uma classificação de produtos ou contratos (família, referência, etc.), um segmento de população (por cidade, faixa etária, status, etc.).
 
 Para criar dimensões, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Dimension]** do cubo e clique na guia **[!UICONTROL Add]** para criar uma nova dimensão.
-1. No **[!UICONTROL Expression field]**, clique no botão **[!UICONTROL Edit expression]** ícone para selecionar o campo que contém os dados relacionados.
+1. Navegue até o **[!UICONTROL Dimension]** do cubo e clique na guia **[!UICONTROL Add]** botão para criar uma nova dimensão.
+1. No **[!UICONTROL Expression field]**, clique no link **[!UICONTROL Edit expression]** para selecionar o campo que contém os dados relacionados.
 
    ![](assets/cube-add-dimension.png)
 
@@ -97,7 +97,7 @@ Você pode personalizar o modo de exibição de data. Para fazer isso, selecione
 
 ![](assets/cube-date-dimension.png)
 
-Em nosso exemplo, queremos apenas exibir anos, meses e dias. Observe que não é possível trabalhar com semanas e semestres/meses ao mesmo tempo: esses níveis não são compatíveis.
+No nosso exemplo, queremos exibir apenas anos, meses e dias. Observe que você não pode trabalhar com semanas e semestres/meses ao mesmo tempo: esses níveis não são compatíveis.
 
 1. Crie outra dimensão para analisar dados relativos à cidade do recipient. Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do schema do recipient.
 
@@ -115,7 +115,7 @@ Para obter mais informações, consulte [esta seção](customize-cubes.md#dynami
 
 Depois que as dimensões forem definidas, especifique um modo de cálculo para os valores a serem exibidos nas células.
 
-Para fazer isso, crie os indicadores na **[!UICONTROL Measures]** guia . Crie quantas medidas houver colunas para exibir nos relatórios com base neste cubo.
+Para fazer isso, crie os indicadores no **[!UICONTROL Measures]** guia. Crie quantas medidas houver colunas para exibir nos relatórios com base nesse cubo.
 
 Para criar indicadores, siga as etapas abaixo:
 
@@ -124,7 +124,7 @@ Para criar indicadores, siga as etapas abaixo:
 
    ![](assets/cube-new-measure.png)
 
-   Use o **[!UICONTROL Filter the measure data...]** link para selecionar somente mulheres. [Saiba mais](customize-cubes.md#define-measures).
+   Use o **[!UICONTROL Filter the measure data...]** para selecionar somente mulheres. [Saiba mais](customize-cubes.md#define-measures).
 
    ![](assets/cube-filter-measure-data.png)
 
@@ -135,4 +135,4 @@ Para criar indicadores, siga as etapas abaixo:
 1. Salve o cubo.
 
 
-Agora é possível criar um relatório com base nesse cubo. [Saiba mais](cube-tables.md).
+Agora você pode criar um relatório com base nesse cubo. [Saiba mais](cube-tables.md).

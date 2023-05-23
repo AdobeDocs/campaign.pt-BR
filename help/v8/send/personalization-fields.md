@@ -14,17 +14,17 @@ ht-degree: 41%
 
 # Adicionar campos de personalização{#personalization-fields}
 
-Use campos de personalização para fornecer conteúdo personalizado de um para um, com base nas regras definidas para cada recipient.
+Use campos de personalização para fornecer conteúdo personalizado individualmente, com base nas regras definidas para cada recipient.
 
 Um campo de personalização é uma única referência de campo de dados usada ao personalizar uma entrega para um recipient específico. O valor de dados real é inserido durante a fase de análise da entrega.
 
-![amostra de personalização de mensagem](assets/perso-name-sample.png)
+![amostra de personalização de mensagens](assets/perso-name-sample.png)
 
 ## Sintaxe
 
 Uma tag de personalização sempre usa a seguinte sintaxe: `<%=table.field%>`.
 
-Por exemplo, para inserir o nome do recipient, armazenado na tabela de recipients, o campo de personalização usa o `<%= recipient.lastName %>` sintaxe.
+Por exemplo, para inserir o nome do recipient, armazenado na tabela de recipients, o campo de personalização usa a variável `<%= recipient.lastName %>` sintaxe.
 
 >[!CAUTION]
 >
@@ -32,24 +32,24 @@ Por exemplo, para inserir o nome do recipient, armazenado na tabela de recipient
 
 ## Inserir um campo de personalização {#insert-a-personalization-field}
 
-Para inserir campos de personalização, clique no ícone suspenso que está acessível a partir de qualquer campo de cabeçalho, assunto ou corpo de mensagem.
+Para inserir campos de personalização, clique no ícone suspenso que está acessível a partir de qualquer campo de cabeçalho, assunto ou corpo da mensagem.
 
 ![inserir um campo de personalização](assets/perso-field-insert.png)
 
-Os campos de personalização são inseridos e prontos para serem interpretados pelo Adobe Campaign: durante a preparação da mensagem, os campos são substituídos pelo valor para um determinado recipient.
+Os campos de personalização são inseridos e prontos para serem interpretados pelo Adobe Campaign: durante a preparação da mensagem, os campos são substituídos por seu valor para um determinado recipient.
 
 ![campos de personalização em um email](assets/perso-fields-in-msg.png)
 
-Essa substituição pode ser testada no **[!UICONTROL Preview]** guia .
+Essa substituição pode ser testada no **[!UICONTROL Preview]** guia.
 
 <!--Learn more about message preview in [this page]().-->
 
-## Caso de uso: personalizar assunto de email {#personalization-fields-uc}
+## Caso de uso: personalizar assunto do email {#personalization-fields-uc}
 
-No caso de uso abaixo, saiba como personalizar um assunto e corpo de email com dados do recipient:
+No caso de uso abaixo, saiba como personalizar um assunto e um corpo de email com dados do recipient:
 
-1. Crie um novo delivery ou abra um delivery de email existente.
-1. Navegue até o **[!UICONTROL Subject]** para editar o assunto da mensagem.
+1. Criar um novo delivery ou abrir um delivery de email existente.
+1. Navegue até o **[!UICONTROL Subject]** link para editar o assunto da mensagem.
 1. Insira &quot;**Special offer for**&quot; e use o botão na barra de ferramentas para inserir um campo de personalização. Selecione **[!UICONTROL Recipients>Title]**.
 1. Repita a operação para inserir o nome do recipient. Insira espaços entre todos os campos de personalização.
 1. Clique em **[!UICONTROL OK]** para validar.

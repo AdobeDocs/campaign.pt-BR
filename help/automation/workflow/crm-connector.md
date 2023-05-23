@@ -1,5 +1,5 @@
 ---
-title: Atividade do conector CRM
+title: Atividade do Conector CRM
 description: Saiba mais sobre o Conector CRM e configure a sincronização de dados
 feature: Workflows, Data Management
 exl-id: 9da636a7-ed57-440f-8166-6982dce0213c
@@ -27,4 +27,4 @@ Selecione a conta externa que corresponde ao CRM que deseja configurar a sincron
 
 ![](assets/crm_task_select_obj.png)
 
-Para obter mais informações sobre conectores CRM no Adobe Campaign, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html){target="_blank"}.
+Para obter mais informações sobre conectores CRM no Adobe Campaign, consulte [nesta seção](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html){target="_blank"}.

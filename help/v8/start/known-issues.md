@@ -16,12 +16,12 @@ ht-degree: 4%
 
 # Problemas conhecidos{#known-issues}
 
-Esta página lista os problemas conhecidos identificados na variável **Versões mais recentes do Campaign v8**. Além disso, as limitações provenientes do Campaign v8 são listadas [nesta página](ac-guardrails.md).
+Esta página lista os problemas conhecidos identificados na **Versões mais recentes do Campaign v8**. Além disso, as limitações incluídas no Campaign v8 estão listadas [nesta página](ac-guardrails.md).
 
 
 >[!NOTE]
 >
->O Adobe publica essa lista de problemas conhecidos a seu critério. Tem como base o número de relatórios do cliente, a gravidade e a disponibilidade alternativa. Se um problema que você está encontrando não estiver listado, ele pode não ter se encaixado nos critérios para publicação nesta página.
+>O Adobe publica essa lista de problemas conhecidos a seu critério. Tem como base o número de relatórios de clientes, a gravidade e a disponibilidade temporária. Se um problema encontrado não estiver listado, talvez ele não tenha os critérios de publicação nesta página.
 
 ## Campaign v8.3.8{#8.3-issues}
 
@@ -29,18 +29,18 @@ Esta página lista os problemas conhecidos identificados na variável **Versões
 
 #### Descrição{#issue-2-desc}
 
-Ao injetar dados no banco de dados da nuvem do Snowflake com uma campanha **Query** e **Alterar fonte de dados** atividade , o processo falha quando um caractere de barra invertida está presente nos dados. A cadeia de caracteres de origem não é removida e os dados não são processados corretamente no Snowflake.
+Ao inserir dados no banco de dados na nuvem do Snowflake com um Campaign **Query** e uma **Alterar fonte de dados** atividade, o processo falha quando um caractere de barra invertida está presente nos dados. A cadeia de caracteres de origem não tem escape e os dados não são processados corretamente no Snowflake.
 
-Esse problema só acontece se o caractere de barra invertida estiver no final da string, por exemplo: `Barker\`.
+Esse problema acontece somente se o caractere de barra invertida estiver no final da string, por exemplo: `Barker\`.
 
 
 #### Etapas de reprodução{#issue-2-repro}
 
 1. Conecte-se ao console do cliente e crie um workflow.
-1. Adicione um **Query** e configure-a.
-1. Selecione os dados com as características descritas acima.
-1. Adicione um **Alterar fonte de dados** e configure-a para selecionar o banco de dados da nuvem do Snowflake.
-1. Execute o workflow e verifique os logs do workflow para ver o erro.
+1. Adicionar um **Query** atividade e a configure.
+1. Selecione dados com as características descritas acima.
+1. Adicionar um **Alterar fonte de dados** atividade e configure-a para selecionar o banco de dados na nuvem do Snowflake.
+1. Execute o workflow e verifique os logs de workflow para ver o erro.
 
 
 #### Mensagem de erro{#issue-2-error}
@@ -53,7 +53,7 @@ Error:
 
 #### Solução alternativa{#issue-2-workaround}
 
-A solução alternativa é excluir dados que contenham um caractere de barra invertida no final da string, ou removê-lo do arquivo de origem.
+A solução alternativa é excluir dados que contenham o caractere de barra invertida no final da string ou removê-los do arquivo de origem.
 
 
 #### Referência interna{#issue-2-ref}
@@ -61,19 +61,19 @@ A solução alternativa é excluir dados que contenham um caractere de barra inv
 Referência: NEO45549
 
 
-### Falha na atividade de carregamento de dados (arquivo) Upload de arquivo no servidor {#issue-3}
+### A atividade de carregamento de dados (arquivo) falhou ao fazer upload do arquivo no servidor {#issue-3}
 
 #### Descrição{#issue-3-desc}
 
-Ao fazer upload de um arquivo no servidor do Campaign com um **Carregamento de dados (arquivo)** , o processo é interrompido em 100%, mas nunca termina.
+Ao fazer upload de um arquivo no servidor do Campaign com uma **Carregamento de dados (arquivo)** atividade, o processo pára em 100%, mas nunca termina.
 
 #### Etapas de reprodução{#issue-3-repro}
 
 1. Conecte-se ao console do cliente e crie um workflow.
-1. Adicione um **Carregamento de dados (arquivo)** e configure-a.
-1. Selecione o **Fazer upload no servidor** opção.
+1. Adicionar um **Carregamento de dados (arquivo)** atividade e a configure.
+1. Selecione o **Carregar no servidor** opção.
 1. Selecione o arquivo no computador local,
-1. Clique em **Upload**
+1. Clique em **Carregar**
 
 
 #### Mensagem de erro{#issue-3-error}
@@ -82,11 +82,11 @@ O processo nunca termina.
 
 #### Solução alternativa{#issue-3-workaround}
 
-A solução é usar um console de cliente mais antigo. Você poderá fazer upload do arquivo no servidor.
+A solução alternativa é usar um console do cliente mais antigo. Você poderá fazer upload do arquivo no servidor.
 
-Como administrador do Campaign, você pode baixar o console do cliente Campaign v8.3.1 em [Distribuição de software Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
+Como administrador do Campaign, você pode baixar o console do cliente do Campaign v8.3.1 em [Distribuição de software Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
 
-Saiba como acessar a Distribuição de software do Adobe [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR){target="_blank"}.
+Saiba como acessar o Adobe Software Distribution [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR){target="_blank"}.
 
 Saiba como atualizar seu console do cliente [nesta página](connect.md)
 

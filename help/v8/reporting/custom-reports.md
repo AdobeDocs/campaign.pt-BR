@@ -16,7 +16,7 @@ Para produzir estatísticas com os dados do banco de dados do Campaign, é poss�
 
 >[!NOTE]
 >
->Os relatórios personalizados estão restritos a usuários avançados. As etapas detalhadas de criação e configuração são descritas na documentação do Adobe Campaign Classic v7.
+>Os relatórios personalizados estão restritos a usuários avançados. As etapas detalhadas de criação e configuração estão descritas na documentação do Adobe Campaign Classic v7.
 
 Para criar, publicar e entregar um relatório de análise com seus dados, siga as etapas abaixo:
 

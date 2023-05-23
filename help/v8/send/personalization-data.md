@@ -14,35 +14,35 @@ ht-degree: 46%
 
 # Fontes de dados de personalização{#personalization-data}
 
-Os dados de personalização podem ser recuperados de vários tipos de fontes: Fonte de dados do banco de dados do Campaign, fonte de dados do arquivo externo ou fonte de dados do banco de dados externo.
+Os dados de personalização podem ser recuperados de vários tipos de fontes: fonte de dados do banco de dados do Campaign, fonte de dados do arquivo externo ou fonte de dados do banco de dados externo.
 
 ## Fonte de dados do banco de dados do Campaign
 
-No caso mais comum, os dados de personalização são armazenados no banco de dados. Por exemplo, &quot;campos de personalização de recipients&quot; são todos os campos definidos na tabela de recipients, campos padrão (normalmente: sobrenome, nome, endereço, cidade, data de nascimento, etc.) ou campos personalizados.
+No caso mais comum, os dados de personalização são armazenados no banco de dados. Por exemplo, &quot;campos de personalização de recipient&quot; são todos os campos definidos na tabela de recipients, campos padrão (normalmente: sobrenome, nome, endereço, cidade, data de nascimento etc.) ou campos personalizados.
 
 ![Campos de personalização de campanha em um email](assets/perso-campaign-datasource.png)
 
 
-## Fonte de dados do arquivo externo
+## Fonte de dados de arquivo externo
 
 Você pode usar um arquivo externo contendo todos os campos definidos em colunas. Esse arquivo é usado como entrada durante uma definição de delivery de mensagem. Você pode optar por inserir esses perfis no banco de dados ou não.
 
-Para selecionar o arquivo a ser usado como fonte de dados, navegue até o link To na janela de criação de mensagens e selecione o **Definido em um arquivo externo** opção. Depois que o arquivo for carregado, acesse os dados do recipient nas opções de personalização, da **Campos do arquivo** entrada.
+Para selecionar o arquivo a ser usado como fonte de dados, navegue até o link To na janela de criação da mensagem e selecione o **Definido em um arquivo externo** opção. Depois que o arquivo for carregado, acesse os dados do recipient nas opções de personalização, no **Campos do arquivo** entrada.
 
 ![Dados de personalização de um arquivo](assets/perso-from-file.png)
 
 
 ## Fonte de dados FDA
 
-Os dados de personalização podem ser obtidos de uma tabela externa por meio de [Federated Data Access](../connect/fda.md).  Se você quiser realizar a personalização de deliveries usando dados do banco de dados externo, colete os dados para usar em um workflow para torná-lo disponível em uma tabela temporária.
+Os dados de personalização podem ser extraídos de uma tabela externa por meio de [Federated Data Access](../connect/fda.md).  Se você quiser realizar a personalização de deliveries usando dados do banco de dados externo, colete os dados para usar em um workflow para torná-lo disponível em uma tabela temporária.
 
-Para fazer isso, adicione uma **Query** no workflow para construção do target e use a variável **Adicionar dados...** link para selecionar o banco de dados externo. O processo detalhado está disponível em [esta seção](../../automation/workflow/query.md#adding-data).
+Para fazer isso, adicione um **Query** atividade no workflow para construção do target e use o **Adicionar dados...** para selecionar o banco de dados externo. O processo detalhado está disponível em [nesta seção](../../automation/workflow/query.md#adding-data).
 
-Em seguida, use os dados da tabela temporária para personalizar seu delivery. Após configurar a atividade de query, acesse os dados externos nas opções de personalização, na **Extensão do Target** entrada.
+Em seguida, use os dados da tabela temporária para personalizar seu delivery. Após configurar a atividade de query, acesse os dados externos nas opções de personalização, no **Extensão do Target** entrada.
 
 ![Dados de personalização de um banco de dados externo](assets/perso-external-db.png)
 
-Ao usar dados externos acessados no FDA, é recomendável pré-processar a personalização de mensagens em um workflow dedicado usando o **Preparar os dados de personalização com um workflow** conforme detalhado abaixo.
+Ao usar dados externos acessados na FDA, é recomendável pré-processar a personalização da mensagem em um fluxo de trabalho dedicado usando o **Preparar os dados de personalização com um fluxo de trabalho** conforme detalhado abaixo.
 
 ### Otimizar personalização {#optimize-personalization}
 
@@ -68,6 +68,6 @@ Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do workf
 
 ## Dados de personalização em um workflow
 
-Quando um delivery é criado no contexto de um workflow, você pode usar os dados da tabela de workflow temporário. Os dados armazenados na tabela de trabalho temporário do workflow estão disponíveis para tarefas de personalização. Os dados podem ser usados nos campos de personalização.
+Quando um delivery é criado no contexto de um workflow, você pode usar os dados da tabela de workflow temporário. Os dados armazenados na tabela de trabalho temporária do workflow estão disponíveis para tarefas de personalização. Os dados podem ser usados nos campos de personalização.
 
 Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [esta seção](../../automation/workflow/use-workflow-data.md#target-data).

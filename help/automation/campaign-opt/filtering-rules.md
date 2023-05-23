@@ -13,7 +13,7 @@ ht-degree: 77%
 
 # Regras de filtro{#filtering-rules}
 
-Use as regras de filtragem para selecionar mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma targeting dimension.
+Use as regras de filtragem para selecionar as mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma targeting dimension.
 
 As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtragem** dedicada. [Saiba mais](#create-and-use-a-filtering-typology).
 
@@ -23,12 +23,12 @@ Por exemplo, você pode filtrar os assinantes do boletim informativo para evitar
 
 Para definir esse filtro, aplique as seguintes etapas:
 
-1. Navegue até o **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** pasta do Campaign Explorer e clique no link **Novo** ícone para criar uma regra de tipologia.
-1. Crie um **[!UICONTROL Filtering]** regra de tipologia aplicável a todos os canais.
+1. Navegue até o **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** do explorador do Campaign e clique no link **Novo** ícone para criar uma regra de tipologia.
+1. Criar um **[!UICONTROL Filtering]** regra de tipologia aplicável a todos os canais.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. No **Filtro** altere o targeting dimension padrão para **Subscrições** (**nms:subscription**).
+1. No **Filtro** Alterar a targeting dimension padrão para **Assinaturas** (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -36,7 +36,7 @@ Para definir esse filtro, aplique as seguintes etapas:
 
    ![](assets/campaign_opt_create_filter_03.png)
 
-1. Filtre a idade do recipient e salve a condição de filtragem.
+1. Filtre a página do recipient e salve a condição de filtragem.
 
    ![](assets/campaign_opt_create_filter_03b.png)
 

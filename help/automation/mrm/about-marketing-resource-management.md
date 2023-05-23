@@ -25,7 +25,7 @@ Por fim, a capacidade de gerenciamento de orçamento é estendida para direciona
 
 >[!AVAILABILITY]
 >
->O Gestão de Recursos de Marketing (MRM) não está disponível no contexto de um [Implantação empresarial (FDA)](../../v8/architecture/enterprise-deployment.md) do Campaign.
+>Gestão dos Recursos de Marketing (MRM) não está disponível no contexto de uma [Implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md) da campanha.
 
 ## Conceitos e terminologia {#core-concepts}
 

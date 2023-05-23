@@ -17,11 +17,11 @@ ht-degree: 47%
 
 # Integrar os SDKs do Campaign ao seu aplicativo {#integrate-campaign-sdk}
 
-Você pode usar SDKs do Campaign para iOS e Android para facilitar a integração de seu aplicativo móvel na plataforma Adobe Campaign.
+Você pode usar os SDKs do Campaign para iOS e Android a fim de facilitar a integração do aplicativo móvel na plataforma do Adobe Campaign.
 
-As versões compatíveis com Android e iOS e as versões compatíveis com SDKs do Campaign para o Campaign v8 são listadas na variável [Matriz de compatibilidade](../start/compatibility-matrix.md#MobileSDK).
+As versões compatíveis com Android e iOS e as versões compatíveis dos SDKs do Campaign para o Campaign v8 estão listadas na [Matriz de compatibilidade](../start/compatibility-matrix.md#MobileSDK).
 
-Como administrador do Campaign, você pode baixar os SDKs do Campaign na [Distribuição de software Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html). Para obter mais informações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Como administrador do Campaign, você pode baixar os SDKs do Campaign na [Distribuição de software Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html). Para obter mais informações, entre em contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 >[!NOTE]
@@ -60,13 +60,13 @@ Para integrar o SDK do Campaign no aplicativo móvel, o administrador funcional 
 
 ## Integrar SDK do Android
 
-O Android SDK é uma biblioteca jar gravada em JAVA. Ela permite que desenvolvedores do Android se integrem ao Adobe Campaign: registre um novo dispositivo, vincule o dispositivo a um usuário, rastreie o comportamento e muito mais.
+O Android SDK é uma biblioteca jar escrita em JAVA. Ele permite que os desenvolvedores do Android se integrem ao Adobe Campaign: registre um novo dispositivo, vincule o dispositivo a um usuário, rastreie o comportamento e muito mais.
 
-Nesta seção, saiba como usar o Android SDK em um aplicativo Android que está implementando [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/).
+Nesta seção, saiba como usar o Android SDK em um aplicativo Android que implementa [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/).
 
 >[!CAUTION]
 >
-> Para o Campaign v8, use o Campaign Android SDK v1.1.1.
+> Para o Campaign v8, use o SDK do Campaign Android v1.1.1.
 
 ### Configurar FCM
 
@@ -74,20 +74,20 @@ Para usar a notificação por push no Android, você deve ter uma conta FCM, con
 
 Consulte [Documentação do Google](https://firebase.google.com/docs/android/setup) para adicionar o Firebase ao projeto do Android.
 
-Saiba como implementar o FCM no aplicativo em [Documentação do Google](https://firebase.google.com/docs/android/setup).
+Saiba como implementar o FCM em seu aplicativo no [Documentação do Google](https://firebase.google.com/docs/android/setup).
 
 >[!NOTE]
 >
-> * Não se esqueça de baixar e adicionar o arquivo google-services.json ao seu projeto.
+> * Não se esqueça de baixar e adicionar o google-services.json ao seu projeto.
 >
-> * O `apiKey` deve corresponder ao `projectKey` definido no Aplicativo móvel do Adobe Campaign vinculado a este aplicativo Android.
+> * A variável `apiKey` deve corresponder ao `projectKey` definido no Aplicativo móvel do Adobe Campaign vinculado a este aplicativo Android.
 
 
-### Configurar o Android SDK
+### Configurar Android SDK
 
 1. **Inicializar o SDK**
 
-   Antes de usar o Android SDK, é necessário inicializá-lo. A inicialização do SDK pode ser feita na variável `onCreate` de uma atividade.
+   Antes de usar o Android SDK, é necessário inicializá-lo. A inicialização do SDK pode ser feita no `onCreate` função de uma atividade.
 
    ```sql
    /** Called when the activity is first created. */
@@ -106,16 +106,16 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    }
    ```
 
-   O `IntegrationKey` deve corresponder ao &quot;IntegrationKey&quot; definido no Adobe Campaign Mobile Application vinculado a este aplicativo Android.
+   A variável `IntegrationKey` deve corresponder à &quot;IntegrationKey&quot; definida no Aplicativo para dispositivos móveis da Adobe Campaign vinculado a este aplicativo Android.
 
-1. **Registre o dispositivo móvel no servidor Adobe Campaign**
+1. **Registrar o dispositivo móvel no servidor do Adobe Campaign**
 
    A função de registro permite:
 
    * enviar o ID de notificação ou o ID de envio (deviceToken para iOS e registrationID para Android) para o Adobe Campaign.
    * recuperar a chave de conciliação ou o userKey (email ou número de conta, por exemplo)
 
-   Você deve registrar seu dispositivo no Adobe Campaign, na inicialização do aplicativo ou na ação do usuário. Isso pode ser feito facilmente usando o `registerDevice` método .
+   Registre seu dispositivo no Adobe Campaign, na inicialização do aplicativo ou na ação do usuário. Isso pode ser feito facilmente usando o `registerDevice` método.
 
    ```sql
    public void onClick(View v)
@@ -185,9 +185,9 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    }
    ```
 
-1. **Notificar Campanha quando o token do dispositivo móvel do usuário mudar**
+1. **Notificar o Campaign quando o token do dispositivo móvel do usuário for alterado**
 
-   Recomendamos que você use o `registerDevice` ao chamar a função `onTokenRefresh` para notificar a Adobe Campaign sobre a alteração no token do dispositivo móvel do usuário.
+   Recomendamos que você use o `registerDevice` ao chamar a variável `onTokenRefresh` função para notificar a Adobe Campaign sobre a alteração no token do dispositivo móvel do usuário.
 
    Por exemplo:
 
@@ -224,9 +224,9 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    }
    ```
 
-1. **Configurar o Firebase Messaging Service**
+1. **Configurar o serviço Firebase Messaging**
 
-   Estender o `FirebaseMessagingService` no `onMessageReceived` retorno de chamada para receber mensagens. Recomendamos que você chame a função `notifyReceive` quando a função `onMessageReceived` O retorno de chamada é chamado para habilitar o rastreamento do recebimento de notificações no dispositivo móvel. No Adobe Campaign, esse nome é **print** notificação: essa função deve ser chamada antes de solicitar que o sistema operacional exiba a notificação.
+   Estenda o `FirebaseMessagingService` no `onMessageReceived` retorno de chamada para receber mensagens. Recomendamos que você chame o `notifyReceive` quando a variável `onMessageReceived` O retorno de chamada é chamado para ativar o rastreamento da recepção de notificação no dispositivo móvel. No Adobe Campaign, esse campo é denominado **imprimir** notificação: essa função deve ser chamada antes de solicitar que o SO exiba a notificação.
 
    YourApplicationMessagingService.java
 
@@ -330,7 +330,7 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
 
 1. **Rastrear aberturas de mensagens de dados**
 
-   Para mensagens de dados, é possível rastrear quando um usuário clica em uma notificação para abri-la, usando o `notifyOpening` . A atividade de notificação será criada quando o usuário clicar na notificação (criada durante `onMessageReceived`chamada de função)
+   Para mensagens de dados, você pode rastrear quando um usuário clica em uma notificação para abri-la, usando o `notifyOpening` função. A atividade de notificação será criada quando o usuário clicar na notificação (criada durante `onMessageReceived`chamada de função)
 
    ```sql
    public class NotificationActivity extends Activity {
@@ -363,9 +363,9 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    }
    ```
 
-1. **Rastrear aberturas e cliques nas mensagens de notificação**
+1. **Rastrear aberturas e cliques em mensagens de notificação**
 
-   Para mensagens de notificação, o rastreamento de abertura/clique precisa ser feito com a variável `notifyOpening` dentro da atividade de inicialização do aplicativo, conforme abaixo:
+   Para mensagens de notificação, o rastreamento de abertura/cliques precisa ser feito com o `notifyOpening` função na atividade de inicialização do aplicativo, conforme abaixo:
 
    ```sql
    /** Called when the activity is first created. */
@@ -426,9 +426,9 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    > É necessário fazer um gerenciamento semelhante se o usuário estiver usando `click_action` dentro da atividade de target.
 
 
-1. **Receber rastreamento de mensagens de dados**
+1. **Rastreamento de recepção para mensagens de dados**
 
-   Para mensagens de dados, o rastreamento é recebido na `onMessageReceived` nível de chamada. A função &#39;notifyReceive&#39; precisa ser chamada.
+   Para mensagens de dados, o rastreamento é recebido no `onMessageReceived` nível de chamada. A função &#39;notifyReceive&#39; precisa ser chamada.
 
    YourApplicationMessagingService.java
 
@@ -494,14 +494,14 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    }
    ```
 
-1. **Receber rastreamento de mensagens de notificação**
+1. **Rastreamento de recepção para mensagens de notificação**
 
-   Para mensagens de notificação, o recebimento de rastreamento deve ser configurado em dois níveis:
+   Para mensagens de notificação, a recepção de rastreamento deve ser configurada em dois níveis:
 
-   * `onMessageReceived` (pedido não apresentado em segundo plano): a implementação foi feita na seção anterior
-   * `onCreate` da atividade de lançamento (ou da atividade direcionada, se `click_action`é usada.) (Aplicativo não em segundo plano).
+   * `onMessageReceived` (aplicativo não em segundo plano): a implementação foi feita na seção anterior
+   * `onCreate` da atividade de lançamento (ou da atividade direcionada se `click_action`é usada.) (Aplicativo fora do plano de fundo).
 
-   Isso precisa ser feito ao mesmo tempo que o rastreamento de abertura/clique.
+   Isso precisa ser feito ao mesmo tempo que o rastreamento de abertura/cliques.
 
    ```sql
    /** Called when the activity is first created. */
@@ -558,9 +558,9 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    ```
 
 
-## Integrar o SDK do iOS
+## Integrar SDK do iOS
 
-1. **Registre o dispositivo móvel no servidor Adobe Campaign**
+1. **Registrar o dispositivo móvel no servidor do Adobe Campaign**
 
    A função de registro permite:
 
@@ -577,7 +577,7 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    }
    ```
 
-1. **Habilitar função de rastreamento**
+1. **Ativar a função de rastreamento**
 
    A função de rastreamento permite rastrear quando as notificações são ativadas (abertas).
 
@@ -632,9 +632,9 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
    }
    ```
 
-1. **Configurar o status de registro**
+1. **Configurar status do registro**
 
-   O protocolo delegado permite obter o resultado do **registerDevice** e pode ser usado para saber se ocorreu um erro durante o registro.
+   O protocolo delegado permite obter o resultado da **registerDevice** ligue e poderá ser usado para saber se ocorreu um erro durante o registro.
 
    O protótipo **registerDeviceStatus** é:
 
@@ -796,10 +796,10 @@ Saiba como implementar o FCM no aplicativo em [Documentação do Google](https:/
 
 ## Variáveis {#variables}
 
-As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo móvel e no console do Adobe Campaign, no **[!UICONTROL Variables]** no serviço de aplicativo móvel dedicado.
+As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo para dispositivos móveis e no console do Adobe Campaign, na **[!UICONTROL Variables]** no serviço de aplicativos móveis dedicado.
 
 
-Abaixo está um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
+Veja abaixo um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
 
 * **No Android**:
 

@@ -14,13 +14,13 @@ ht-degree: 38%
 
 # Criar entregas de correspondência direta
 
-Os deliveries de correspondência direta permitem gerar um arquivo de extração que contém dados sobre a população do target. Em seguida, você pode compartilhar esse arquivo com o provedor que enviará mensagens para as populações do target.
+Os deliveries de correspondência direta permitem gerar um arquivo de extração que contém dados sobre a população do target. Você pode compartilhar esse arquivo com o provedor que fornecerá mensagens para as populações do target.
 
 As etapas para gerar o arquivo são:
 
 1. Criar o delivery
 
-   Crie um delivery de mala direta com base no template . Você pode duplicar e configurar o **[!UICONTROL Deliver by direct mail (paper)]** modelo integrado.
+   Crie um delivery de correspondência direta com base no template. É possível duplicar e configurar o **[!UICONTROL Deliver by direct mail (paper)]** modelo incorporado.
 
    ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html){target="_blank"}
 
@@ -42,16 +42,16 @@ As etapas para gerar o arquivo são:
 
 1. Validar a entrega
 
-   Verifique o resultado da análise e o conteúdo do arquivo de saída.
+   Verifique o resultado da análise e o conteúdo do arquivo de output.
 
    ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html){target="_blank"}
 
-   No contexto de uma campanha de marketing, na data da extração, o arquivo de extração é criado. Você pode exibir o conteúdo do arquivo extraído, aprová-lo ou alterar o formato e reiniciar a extração, se necessário. Depois que o arquivo for aprovado, você poderá enviar o e-mail de notificação para o roteador. Saiba mais [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html)
+   No contexto de uma campanha de marketing, na data de extração, o arquivo de extração é criado. Você pode visualizar o conteúdo do arquivo extraído, aprová-lo ou alterar o formato e reiniciar a extração, se necessário. Depois que o arquivo for aprovado, você poderá enviar o e-mail de notificação para o roteador. Saiba mais [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html)
 
-1. Iniciar o delivery
+1. Iniciar a entrega
 
    Depois de validar o arquivo de extração, clique em **Confirmar delivery** uma mensagem de confirmação permite iniciar o delivery.
 
    A confirmação inicia a extração de dados no arquivo especificado.
 
-   No contexto de uma campanha de marketing, quando todas as aprovações tiverem sido concedidas, os arquivos de extração serão criados por meio de um workflow especial, que, em uma configuração padrão, será iniciado automaticamente quando um delivery de correspondência direta estiver com extração pendente. Saiba mais [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR)
+   No contexto de uma campanha de marketing, quando todas as aprovações foram concedidas, os arquivos de extração são criados por um workflow especial que, em uma configuração padrão, começa automaticamente quando um delivery de correspondência direta está com extração pendente. Saiba mais [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR)

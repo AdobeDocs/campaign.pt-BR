@@ -12,7 +12,7 @@ ht-degree: 93%
 
 # Controlar custos{#controlling-costs}
 
-O Adobe Campaign permite controlar os custos de marketing programados, confirmados e faturados e separá-los por categorias usando o módulo Gerenciamento de Recursos de Marketing.
+O Adobe Campaign permite controlar os custos de marketing programados, confirmados e faturados e separá-los por categoria usando o módulo Gerenciamento de recursos de marketing.
 
 Os custos comprometidos com os vários processos de uma campanha são cobrados de um orçamento definido antecipadamente pelo departamento de marketing. Os valores podem ser divididos em várias categorias para tornar as informações mais legíveis e fornecer relatórios mais detalhados dos investimentos em marketing.
 
@@ -24,9 +24,9 @@ As etapas a seguir devem ser aplicadas para implementar o gerenciamento de orça
 
 1. Defina o orçamento. [Saiba mais](#creating-a-budget).
 
-1. Defina o método de cálculo de custo: estruturas de custo são definidas para os provedores de serviços. [Saiba mais](../campaigns/providers--stocks-and-budgets.md).
+1. Defina o método de cálculo de custo: as estruturas de custo são definidas para os provedores de serviços. [Saiba mais](../campaigns/providers--stocks-and-budgets.md).
 
-1. Defina os custos da campanha (remessas/tarefas) : os custos incorridos pelas entregas e tarefas são alimentados individualmente ou globalmente para o template de campanha. [Saiba mais](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
+1. Definir custos de campanha (entregas/tarefas) : os custos incorridos pelas entregas e tarefas são inseridos individualmente ou globalmente para o template de campanha. [Saiba mais](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
 
 1. Consolidar: de acordo com o status do progresso das tarefas, remessas e campanhas, os custos serão calculados e passados para o orçamento correspondente. Quando a criação da campanha está suficientemente avançada, o status do progresso do orçamento pode ser alterado para **[!UICONTROL Specified]**. O custo calculado do programa é então inserido automaticamente com os custos calculados na campanha. [Saiba mais](#cost-commitment--calculation-and-charging).
 
@@ -36,7 +36,7 @@ Para criar um orçamento, siga as etapas abaixo:
 
 1. Navegue até o **[!UICONTROL Campaign management > Budgets]** pasta do explorador do Campaign.
 1. Clique no ícone **[!UICONTROL New]**, nomeie o orçamento e o salve.
-1. Informe a quantia inicial: indicar o montante atribuído no campo relevante. Os outros montantes são inseridos automaticamente. [Saiba mais](#calculating-amounts).
+1. Informe a quantia inicial: indique a quantia alocada no campo relevante. Os outros montantes são inseridos automaticamente. [Saiba mais](#calculating-amounts).
 1. Defina o período de validade inserindo as datas inicial e final. Estas informações são apenas indicativas.
 1. Crie as categorias de despesas às quais os custos atribuídos a esse orçamento para campanhas, tarefas etc. podem ser vinculados. [Saiba mais](#expense-categories).
 
@@ -141,7 +141,7 @@ De acordo com as categorias de custo selecionadas, as estruturas de custo corres
 
 >[!NOTE]
 >
->As categorias e estruturas de custo são apresentadas em [esta página](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
+>As categorias e estruturas de custo são apresentadas [esta página](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
 
 ## Compromisso de custo, cálculo e cobrança {#cost-commitment--calculation-and-charging}
 
@@ -274,7 +274,7 @@ Ao editar o custo calculado, é possível verificar a divisão de custo e o stat
 
 #### Etapa 5 - Criar tarefas {#step-5---creating-tasks}
 
-Nesta campanha, adicionaremos as duas tarefas para as quais as estruturas de custo foram [criado anteriormente](#step-2---configuring-the-service-provider-and-defining-the-cost-structures).
+Nessa campanha são adicionadas duas tarefas para as quais as estruturas de custo foram [criado anteriormente](#step-2---configuring-the-service-provider-and-defining-the-cost-structures).
 
 Para fazer isso, no painel de campanha, clique no botão **[!UICONTROL Add a task]**. Nomeie a tarefa e clique em **[!UICONTROL Save]**.
 

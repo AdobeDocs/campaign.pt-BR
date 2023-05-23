@@ -29,7 +29,7 @@ As principais etapas de implementação para este caso de uso são as seguintes:
 
 ![](assets/wkf_cross-channel_7.png)
 
-## Etapa 1: Criar o público-alvo {#step-1--build-the-audience}
+## Etapa 1: criar o público {#step-1--build-the-audience}
 
 Para definir seu target, crie uma query para identificar os recipients.
 
@@ -99,7 +99,7 @@ Depois que seu target for identificado e seu primeiro fornecimento for criado, s
 
 1. Clique em **[!UICONTROL Finish]** para salvar as alterações.
 
-## Etapa 4: Finalizar o workflow {#step-4--finalize-the-workflow}
+## Etapa 4: Finalizar o fluxo de trabalho {#step-4--finalize-the-workflow}
 
 1. Adicione as atividades relevantes ao workflow após os três subconjuntos resultantes da atividade **[!UICONTROL Split]**:
 

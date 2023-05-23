@@ -1,5 +1,5 @@
 ---
-title: Introdução às ferramentas de relatório do Adobe Campaign
+title: Introdução às ferramentas de relatórios do Adobe Campaign
 description: Meça o sucesso de suas campanhas e analise o comportamento do usuário
 feature: Reporting
 role: Data Engineer
@@ -20,7 +20,7 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
    O Adobe Campaign vem com uma ferramenta intuitiva de exploração de dados para criar relatórios dinâmicos.
 
-   Use os recursos de análise de marketing para analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo do relatório. Você pode criar relatórios e populações do target e armazená-los em listas que podem ser usadas no Adobe Campaign para tarefas de direcionamento ou segmentação.
+   Use os recursos de análise de marketing para analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo de relatórios. Você pode criar relatórios e populações de públicos-alvo e armazená-los em listas que podem ser usadas no Adobe Campaign para tarefas de direcionamento ou segmentação.
 
    ![](assets/create-a-report.png)
 
@@ -30,7 +30,7 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
 * **Relatórios incorporados**
 
-   O Adobe Campaign vem com relatórios sobre entregas, campanhas, atividades da plataforma, recursos opcionais etc. Estes relatórios estão disponíveis através das várias funcionalidades a que se referem. Eles podem ser adaptados para atender às necessidades específicas.
+   O Adobe Campaign vem com relatórios sobre entregas, campanhas, atividades da plataforma, recursos opcionais, etc. Estes relatórios estão disponíveis através das várias funcionalidades a que se referem. Eles podem ser adaptados para atender às necessidades específicas.
 
    Use o **Relatórios** para acessar esses relatórios.
 
@@ -40,13 +40,13 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
 * **Análise de dados descritiva**
 
-   O Adobe Campaign fornece uma ferramenta visual para produzir estatísticas dos dados do banco de dados. Você pode criar relatórios de análise descritiva usando um assistente dedicado e adaptar seu conteúdo e layout dependendo das suas necessidades.
+   O Adobe Campaign fornece uma ferramenta visual para produzir estatísticas dos dados do banco de dados. É possível criar relatórios de análise descritiva usando um assistente dedicado e adaptar seu conteúdo e layout dependendo das necessidades.
 
    Use o **[!UICONTROL Tools > Descriptive analysis...]** para criar um novo relatório.
 
    ![](assets/desc-analysis-report.png)
 
-   ![](../assets/do-not-localize/book.png) O relatório de análise descritiva da campanha é apresentado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}
+   ![](../assets/do-not-localize/book.png) O relatório de Análise descritiva de campanha é apresentado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}
 
 * **Relatórios personalizados**
 

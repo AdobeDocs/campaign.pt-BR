@@ -19,11 +19,11 @@ Selecionar o modelo no qual deseja basear a entrega e definir seu conteúdo.
 
 Você pode especificar um target para o upstream de entrega de fluxo de trabalho usando as diferentes atividades de direcionamento.
 
-No exemplo abaixo, saiba como criar um workflow para enviar um email ou SMS para assinantes de notificação por push e, em seguida, uma notificação por push uma semana depois. Para fazer isso:
+No exemplo abaixo, saiba como criar um fluxo de trabalho para enviar um email ou SMS a assinantes de notificação por push e, em seguida, uma notificação por push uma semana depois. Para fazer isso:
 
 1. Crie uma campanha.
-1. No **[!UICONTROL Targeting and workflows]** da campanha, adicione uma **[!UICONTROL Query]** atividade .
-1. Configure seu query: selecione os recipients que assinaram notificações por push como o target dimension.
+1. No **[!UICONTROL Targeting and workflows]** da sua campanha, adicione uma **[!UICONTROL Query]** atividade.
+1. Configurar sua query: selecione os recipients que assinaram notificações por push como o target dimension.
 
    >[!NOTE]
    >

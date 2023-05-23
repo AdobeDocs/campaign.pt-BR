@@ -1,6 +1,6 @@
 ---
-title: Configurações de mensagens transacionais de campanha
-description: Configurações de mensagens transacionais de campanha
+title: Configurações de mensagens transacionais do Campaign
+description: Configurações de mensagens transacionais do Campaign
 feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
@@ -14,33 +14,33 @@ ht-degree: 42%
 
 # Configurações de mensagens transacionais
 
-As mensagens transacionais (Centro de mensagens) são um módulo do Campaign criado para gerenciar mensagens acionadas. Saiba mais sobre mensagens transacionais no [esta seção](../send/transactional.md).
+As mensagens transacionais (Centro de mensagens) são um módulo do Campaign criado para gerenciar mensagens acionadas. Saiba mais sobre Mensagens transacionais no [nesta seção](../send/transactional.md).
 
-Entenda a arquitetura de mensagens transacionais no [esta página](../architecture/architecture.md#transac-msg-archi).
+Entender a arquitetura de mensagens transacionais no [esta página](../architecture/architecture.md#transac-msg-archi).
 
-![](../assets/do-not-localize/speech.png) Como um usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para instalar e configurar mensagens transacionais do Campaign no seu ambiente.
+![](../assets/do-not-localize/speech.png) Como usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para instalar e configurar as mensagens transacionais do Campaign em seu ambiente.
 
 ## Definir permissões
 
-Para criar novos usuários para as instâncias de execução do Centro de mensagens hospedadas na Adobe Cloud, você precisará entrar em contato com o Atendimento ao cliente da Adobe. Os usuários do Centro de mensagens são operadores específicos que exigem permissões dedicadas para acessar pastas de &quot;eventos em tempo real&quot; (nmsRtEvent).
+Para criar novos usuários para as instâncias de execução do Centro de mensagens hospedadas na Adobe Cloud, você precisará entrar em contato com o Atendimento ao cliente da Adobe. Os usuários do Centro de mensagens são operadores específicos que exigem permissões dedicadas para acessar pastas de ‘eventos em tempo real’ (nmsRtEvent).
 
-## Extensões de schema
+## Extensões do esquema
 
-Todas as extensões de schema feitas nos schemas usados por [Workflows técnicos do Centro de mensagens](#technical-workflows) em instâncias de controle ou de execução precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais do Adobe Campaign.
+Todas as extensões de esquema feitas nos esquemas usados por [Workflows técnicos do Centro de mensagens](#technical-workflows) nas instâncias de controle ou de execução precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais do Adobe Campaign.
 
 ## Enviar notificações transacionais por push
 
 Quando combinado com [Módulo de canal de aplicativo móvel](../send/push.md), as mensagens transacionais permitem que você envie mensagens transacionais por meio de notificações em dispositivos móveis.
 
-Para enviar notificações transacionais por push, é necessário executar as seguintes configurações:
+Para enviar notificações por push transacionais, você precisa executar as seguintes configurações:
 
 1. Instale o pacote **Canal de aplicativo móvel** nas instâncias de controle e de execução.
 
    >[!CAUTION]
    >
-   >Verifique o contrato de licença antes de instalar um novo pacote integrado do Campaign.
+   >Verifique seu contrato de licença antes de instalar um novo pacote integrado do Campaign.
 
-1. Replicar o **Aplicativo móvel** e os aplicativos móveis associados nas instâncias de execução.
+1. Replique o **Aplicativo móvel** e os aplicativos móveis associados nas instâncias de execução.
 
 Além disso, o evento deve conter os seguintes elementos:
 
@@ -76,11 +76,11 @@ Veja abaixo um exemplo de uma configuração de evento para enviar notificaçõe
 
 ## Limpar eventos {#purge-events}
 
-Você pode adaptar as configurações do assistente de implantação para definir por quanto tempo os dados devem ser armazenados no banco de dados.
+É possível adaptar as configurações do assistente de implantação para definir por quanto tempo os dados devem ser armazenados no banco de dados.
 
 A limpeza de eventos é executada automaticamente pelo **Limpeza do banco de dados** fluxo de trabalho técnico. Esse workflow limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
 
-Use as setas conforme o caso para alterar as configurações de limpeza do **Eventos** (em uma instância de execução) e **Eventos arquivados** (em uma instância de controle).
+Use as setas conforme apropriado para alterar as configurações de limpeza do **Eventos** (em uma instância de execução) e **Eventos arquivados** (em uma instância de controle).
 
 
 ## Workflows técnicos {#technical-workflows}
@@ -91,7 +91,7 @@ Os workflows de arquivamento podem ser acessados na pasta **Administration > Pro
 
 ### Workflows da instância de controle {#control-instance-workflows}
 
-Na instância de controle, é necessário criar um workflow de arquivamento para cada **[!UICONTROL Message Center execution instance]** conta externa. Clique no botão **[!UICONTROL Create the archiving workflow]** para criar e iniciar o workflow.
+Na instância de controle, deve ser criado um workflow de arquivamento para cada **[!UICONTROL Message Center execution instance]** conta externa. Clique no botão **[!UICONTROL Create the archiving workflow]** para criar e iniciar o workflow.
 
 ### Workflows da instância de execução {#execution-instance-workflows}
 
@@ -101,7 +101,7 @@ Na(s) instância(s) de execução, você deve iniciar os seguintes workflows té
 * **[!UICONTROL Processing real time events]** (internal name: **[!UICONTROL rtEventsProcessing]** ): esse workflow permite dividir eventos em tempo real em uma fila antes que eles sejam vinculados a um template de mensagem.
 * **[!UICONTROL Update event status]** (internal name: **[!UICONTROL updateEventStatus]** ): esse workflow permite que você atribua um status ao evento.
 
-   Os status possíveis do evento são:
+   Os possíveis status do evento são:
 
    * **[!UICONTROL Pending]**: o evento está na fila. Nenhum template de mensagem foi atribuído a ele.
    * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pelo delivery.

@@ -1,6 +1,6 @@
 ---
-title: Relatórios do delivery integrados da Adobe Campaign
-description: Relatórios do delivery integrados da Adobe Campaign
+title: Relatórios de entrega integrados do Adobe Campaign
+description: Relatórios de entrega integrados do Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
@@ -17,7 +17,7 @@ Você pode acompanhar a execução de deliveries por meio de vários relatórios
 Para acessar os relatórios, siga as etapas abaixo:
 
 1. Navegue até o **[!UICONTROL Campaigns]** e clique na guia **[!UICONTROL Delivery]** para exibir a lista de deliveries.
-1. Clique no nome do delivery que os relatórios deseja acessar.
+1. Clique no nome do delivery que os relatórios que deseja acessar.
 1. Selecione a guia **[!UICONTROL Summary]** e clique em **[!UICONTROL Reports]** para acessar os relatórios específicos do delivery.
 
    ![](assets/detailed-report-2.png)
@@ -83,7 +83,7 @@ Esta tabela de valores mostra o detalhamento dos deliveries, aberturas, cliques 
 >
 >Os nomes de domínio exibidos neste relatório são definidos na lista discriminada usada no nível de cubo. Para alterar, adicionar ou remover domínios padrão, edite a lista discriminada **[!UICONTROL Domains]** e modifique valores e aliases. A categoria **[!UICONTROL Others]** inclui nomes de domínio que não pertencem a nenhum valor da lista discriminada.
 >
->Saiba como acessar e configurar suas enumerações em [esta página](../config/ui-settings.md).
+>Saiba como acessar e configurar suas listas discriminadas no [esta página](../config/ui-settings.md).
 
 
 **[!UICONTROL 4. Generated click streams]**
@@ -202,4 +202,4 @@ Você pode exibir relatórios acumulados sobre deliveries. Para fazer isso, sele
 
 Para selecionar deliveries não adjacentes na lista, mantenha a tecla CTRL pressionada ao fazer a seleção.
 
-Para selecionar deliveries salvos em uma pasta diferente, clique no botão **[!UICONTROL Display sub-levels]** , acessível na barra de ferramentas. Eles serão exibidos na mesma lista.
+Para selecionar deliveries salvos em uma pasta diferente, clique no **[!UICONTROL Display sub-levels]** ícone, acessível na barra de ferramentas. Eles serão exibidos na mesma lista.

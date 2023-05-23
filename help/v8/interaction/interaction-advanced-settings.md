@@ -1,6 +1,6 @@
 ---
-title: Configurações avançadas da interação de campanha
-description: Configurações avançadas da interação de campanha
+title: Configurações avançadas de Interação do Campaign
+description: Configurações avançadas de Interação do Campaign
 role: Data Engineer
 level: Beginner
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Configurações avançadas do módulo de interação
 
-A configuração do módulo Campaign Interaction é reservada para usuários especialistas. As configurações avançadas são detalhadas em **Documentação do Campaign Classic v7**:
+A configuração do módulo de interação do Campaign é reservada para usuários especialistas. As configurações avançadas são detalhadas em **Documentação do Campaign Classic v7**:
 
-![](../assets/do-not-localize/book.png) Saiba como usar dados contextuais adicionais nas ofertas [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html){target="_blank"}.
+![](../assets/do-not-localize/book.png) Saiba como usar dados contextuais adicionais em ofertas [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html){target="_blank"}.
 
 ![](../assets/do-not-localize/book.png) Saiba como enriquecer os critérios de qualificação de suas ofertas [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.
 

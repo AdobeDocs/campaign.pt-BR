@@ -1,6 +1,6 @@
 ---
-title: Cálculo das métricas de relatório integradas
-description: Cálculo das métricas de relatório integradas
+title: Cálculo de métricas de relatório integradas
+description: Cálculo de métricas de relatório integradas
 feature: Reporting
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -10,7 +10,7 @@ ht-degree: 99%
 
 ---
 
-# Cálculo das métricas de relatório integradas {#metrics-calculation}
+# Cálculo de métricas de relatório integradas {#metrics-calculation}
 
 ## Atividades do usuário {#user-activities-1}
 

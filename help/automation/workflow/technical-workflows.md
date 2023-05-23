@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # Workflows técnicos{#about-technical-workflows}
 
-O Adobe Campaign vem com um conjunto de fluxos de trabalho técnicos incorporados. Eles gerenciam operações e tarefas programadas para execução periódica no servidor. Eles permitem realizar a manutenção no banco de dados, encaminhar as informações de rastreamento sobre os deliveries ou configurar processos provisionais nos deliveries. Os workflows técnicos são configurados por meio do nó **[!UICONTROL Administration > Production > Technical workflows]**.
+O Adobe Campaign vem com um conjunto de workflows técnicos incorporados. Eles gerenciam operações e tarefas agendadas para execução periódica no servidor. Eles permitem realizar a manutenção no banco de dados, encaminhar as informações de rastreamento sobre os deliveries ou configurar processos provisionais nos deliveries. Os workflows técnicos são configurados por meio do nó **[!UICONTROL Administration > Production > Technical workflows]**.
 
 ![](assets/navtree.png)
 
@@ -40,9 +40,9 @@ Observe que os workflows técnicos só podem ser iniciados e modificados por ope
 
 >[!NOTE]
 >
->Os workflows técnicos relacionados ao complemento Message Center estão disponíveis por padrão no **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** nó .
+>Os workflows técnicos relacionados ao complemento Centro de Mensagens estão disponíveis por padrão no **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** nó.
 
-Saiba como monitorar workflows técnicos nesta seção [seção dedicada](monitor-technical-workflows.md).
+Saiba como monitorar workflows técnicos neste [seção dedicada](monitor-technical-workflows.md).
 
 
 ## Lista de workflows técnicos {#list-technical-workflows}

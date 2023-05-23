@@ -14,34 +14,34 @@ ht-degree: 15%
 
 # Introdução ao [!DNL Campaign] APIs{#gs-ac-api}
 
-[!DNL Adobe Campaign] O vem com um conjunto de funções Javascript que você pode usar:
+[!DNL Adobe Campaign] O vem com um conjunto de funções JavaScript que podem ser usadas:
 
 * em Scripts - em [!DNL Adobe Campaign] workflows
 * por APIs - de sistemas externos
 
-Você pode usar APIs do JavaScript para gravar no banco de dados da nuvem do Campaign ou ler a partir do banco de dados:
+Você pode usar APIs JavaScript para gravar no banco de dados na nuvem do Campaign ou ler a partir do banco de dados:
 
-* APIs específicas de negócios que permitem agir em cada objeto: deliveries, workflows, subscrições e assim por diante. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
-* APIs genéricas de acesso aos dados para consultar os dados do modelo de dados. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}.
+* APIs específicas de negócios que permitem que você atue em cada objeto: entregas, fluxos de trabalho, assinaturas e assim por diante. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
+* APIs de acesso a dados genéricos para consultar os dados do modelo de dados. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}.
 
-Observe que [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), o Campaign funciona com dois bancos de dados: um banco de dados local para a interface do usuário, mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e um banco de dados da nuvem para execução de campanha, relatórios, assimilação de dados, consultas em lote e execução de workflows.
+Observe que, em seu [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o Campaign funciona com dois bancos de dados: um banco de dados local para a interface do usuário de mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e um banco de dados em nuvem para execução de campanha, relatórios, assimilação de dados, consultas em lote e execução de fluxo de trabalho.
 
 >[!CAUTION]
 >
->[!DNL Adobe Campaign] O v8 vem com um limite na taxa de transferência (TPS) da nossa camada de API. Quebrar o limite leva a um erro HTTP padrão (429). Como usuário do Managed Cloud Services, você pode entrar em contato com o Adobe para adaptar o controle de cada API.
+>[!DNL Adobe Campaign] O v8 vem com um limite na taxa de transferência (TPS) da nossa camada de API. Quebrar o limite leva ao erro HTTP padrão (429). Como usuário do Managed Cloud Services, você pode entrar em contato com o Adobe para adaptar a limitação de cada API.
 
 ## Pré-requisitos
 
-Antes de usar [!DNL Adobe Campaign] APIs, é necessário conhecer os seguintes tópicos:
+Antes de usar [!DNL Adobe Campaign] APIs, você precisa conhecer os seguintes tópicos:
 
 * JavaScript
 * Protocolo SOAP
 * [!DNL Adobe Campaign] datamodel
 
-Para usar APIs e interagir com o [!DNL Adobe Campaign], você também deve estar familiarizado com o modelo de dados do .
+Para usar APIs e interagir com [!DNL Adobe Campaign], você também deve estar familiarizado com seu modelo de dados.
 
 >[!NOTE]
->Você pode gerar uma descrição completa do seu modelo de dados. Saiba mais [nesta página](datamodel.md).
+>É possível gerar uma descrição completa do modelo de dados. Saiba mais [nesta página](datamodel.md).
 
 
 **Tópicos relacionados**

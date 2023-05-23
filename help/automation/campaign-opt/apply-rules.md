@@ -15,13 +15,13 @@ ht-degree: 85%
 
 ## Aplicar uma tipologia a um delivery {#apply-a-typology-to-a-delivery}
 
-Para aplicar as regras de tipologia criadas, associe-as a uma tipologia e, em seguida, faça referência a essa tipologia em seu delivery.
+Para aplicar as regras de tipologia criadas, associe-as a uma tipologia e, em seguida, faça referência a essa tipologia no seu delivery.
 
 Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma tipologia de campanha.
 
-   As tipologias são acessadas por meio do **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** pasta do explorador do Campaign.
+   As tipologias são acessadas pelo **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** pasta do explorador do Campaign.
 
 1. Vá para a guia **[!UICONTROL Rules]**, clique no botão **[!UICONTROL Add]** e selecione as regras a serem aplicadas com esta tipologia.
 
@@ -29,7 +29,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Salve a tipologia: ela será adicionada à lista de tipologias existentes.
 1. Abra o delivery ao qual deseja aplicar as regras.
-1. Navegue até as propriedades de delivery e abra o **[!UICONTROL Typology]** guia .
+1. Navegue até as propriedades do delivery e abra a **[!UICONTROL Typology]** guia.
 1. Selecione a tipologia na lista suspensa.
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
@@ -84,7 +84,7 @@ No modo de operação padrão, as regras são aplicadas na seguinte sequência:
 1. Regras de pressão.
 1. Regras de capacidade.
 1. Regras de controle, se elas forem aplicadas no final do direcionamento.
-1. Regras de controle, se elas forem aplicadas ao início da personalização. Se as regras dos usuários (filtragem / pressão / capacitive) expiraram e precisam de recálculo, elas são aplicadas durante esta etapa.
+1. Regras de controle, se elas forem aplicadas ao início da personalização. Se as regras dos usuários (filtragem/pressão/capacitive) expiraram e precisam de recálculo, elas são aplicadas durante esta etapa.
 1. Regras de controle, se elas forem aplicadas ao final da personalização.
 
 >[!NOTE]
@@ -93,11 +93,11 @@ No modo de operação padrão, as regras são aplicadas na seguinte sequência:
 
 É possível adaptar a sequência da execução das regras que têm o mesmo tipo ao usar o campo apropriado na guia **[!UICONTROL General]** da regra. Quando várias regras são executadas durante a mesma fase de processamento de mensagens, é possível configurar a sequência de execução no campo **[!UICONTROL Execution sequence]**.
 
-Por exemplo, uma regra de pressão com uma ordem de execução de 20 é executada antes de uma regra de pressão com uma ordem de execução de 30.
+Por exemplo, uma regra de pressão com ordem de execução de 20 é executada antes de uma regra de pressão com ordem de execução de 30.
 
 ### Regras de controle {#control-rules}
 
-Para **[!UICONTROL Control]** , é possível decidir em qual ponto do ciclo de vida do delivery a regra será aplicada: antes ou depois do direcionamento, no início da personalização, no final da análise. Na guia **[!UICONTROL Phase]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL General]**.
+Para **[!UICONTROL Control]** regras, é possível decidir em qual ponto do ciclo de vida do delivery ela é aplicada: antes ou depois do direcionamento, no início da personalização, no final da análise. Na guia **[!UICONTROL Phase]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL General]**.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -145,4 +145,4 @@ A guia **[!UICONTROL Distributed Marketing]** permite definir o remapeamento de 
 >[!NOTE]
 >
 >Em tipologias e regras de tipologia, a guia **[!UICONTROL Distributed Marketing]** será adicionada caso a licença inclua essa opção: verifique o contrato de licença.\
->Para obter mais informações sobre Marketing distribuído, consulte [esta seção](../distributed-marketing/about-distributed-marketing.md).
+>Para obter mais informações sobre Marketing distribuído, consulte [nesta seção](../distributed-marketing/about-distributed-marketing.md).

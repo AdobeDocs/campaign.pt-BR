@@ -23,27 +23,27 @@ ht-degree: 55%
 
 ## Regras de tipologia e tipologias {#typology-rules}
 
-Por padrão, o Campaign vem com tipologias e regras de tipologia incorporadas.
+Por padrão, o Campaign vem com tipologias e regras de tipologia integradas.
 
-Uma tipologia é um conjunto de regras de verificação aplicadas em todas as mensagens durante a análise do delivery.
+Uma tipologia é um conjunto de regras de verificação aplicadas a todas as mensagens durante a análise da entrega.
 
 Uma tipologia de campanha pode conter várias regras de tipologia, mas uma entrega só pode fazer referência a uma tipologia.
 
-As regras de tipologia e tipologias incorporadas estão disponíveis na variável **[!UICONTROL Administration > Campaign management > Typology management]** pasta do explorador do Campaign.
+As regras de tipologia e tipologias integradas estão disponíveis no **[!UICONTROL Administration > Campaign management > Typology management]** pasta do explorador do Campaign.
 
 Para cada tipologia, a variável **[!UICONTROL Rules]** permite adicionar, excluir ou exibir as regras de tipologia a serem aplicadas.
 
 ![](assets/campaign_opt_rules_tab.png)
 
-Depois de criadas, as regras de tipologia são agrupadas na campanha **tipologias** referenciadas em deliveries. [Saiba mais](#apply-typologies).
+Depois de criadas, as regras de tipologia são agrupadas em campanhas **tipologias** que são referenciados nas entregas. [Saiba mais](#apply-typologies).
 
 
 O Campaign vem com um conjunto de **Filtragem** e **Controle** regras:
 
-* **Filtragem** são usadas para excluir parte do target com base em critérios. [Saiba mais](filtering-rules.md).
-* **Controle** As regras permitem verificar a validade das mensagens antes de serem enviadas. [Saiba mais](control-rules.md).
+* **Filtragem** as regras são usadas para excluir parte do público alvo com base em critérios. [Saiba mais](filtering-rules.md).
+* **Controle** as regras permitem verificar a validade das mensagens antes de serem enviadas. [Saiba mais](control-rules.md).
 
-O complemento Campaign Otimization fornece dois tipos adicionais de **regras de tipologia**:
+O complemento Otimização de campanha fornece dois tipos adicionais de **regras de tipologia**:
 
 * Regras de **Pressão**, que permitem controlar a fadiga da marca. [Saiba mais](pressure-rules.md).
 * Regras de **Capacidade**, que permitem limitar cargas para garantir condições de processamento ideais. [Saiba mais](consistency-rules.md#controlling-capacity).
@@ -51,14 +51,14 @@ O complemento Campaign Otimization fornece dois tipos adicionais de **regras de 
 
 >[!NOTE]
 >
->Se estiver usando o **Interação** para gerenciar ofertas, você também pode criar **Apresentação da oferta** regras de tipologia para controlar o fluxo de apresentações de oferta usando regras de apresentação. [Saiba mais](../../v8/interaction/interaction-offer.md#offer-presentation).
+>Se você estiver usando o **Interação** para gerenciar ofertas, você também pode criar **Apresentação da oferta** regras de tipologia para controlar o fluxo de apresentações de oferta usando regras de apresentação. [Saiba mais](../../v8/interaction/interaction-offer.md#offer-presentation).
 
 
 ## Etapas principais para criar e usar tipologias {#apply-typologies}
 
 Para criar e usar uma tipologia para seus deliveries, siga as etapas abaixo:
 
-1. Crie regras de tipologia e crie uma tipologia para referenciá-las.
+1. Crie regras de tipologia e crie uma tipologia para referenciá-las nela.
 As etapas detalhadas estão listadas na seguinte seção:
 
    * [Regras de filtro](filtering-rules.md)

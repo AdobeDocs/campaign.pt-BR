@@ -25,7 +25,7 @@ Para fazer isso, crie uma campanha e adicione uma [workflow da campanha](campaig
 
 Siga as etapas detalhadas abaixo.
 
-## Identifique recipients que fazem aniversário {#identifying-recipients-whose-birthday-it-is}
+## Identificar destinatários cujo aniversário é {#identifying-recipients-whose-birthday-it-is}
 
 Após configurar a atividade **[!UICONTROL Scheduler]** para que o workflow inicie todos os dias, identifique todos os recipients cuja data de nascimento for igual à data atual.
 
@@ -99,7 +99,7 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 
 Se o ano atual **não for um ano bissexto** e o workflow for executado em 1º de março, precisamos selecionar todos os recipients que teriam seu aniversário no dia anterior (29 de fevereiro) e adicioná-los à lista de recipients. Em qualquer outro caso, nenhuma ação adicional é necessária.
 
-### Etapa 1: Selecione os recipients {#step-1--selecting-the-recipients}
+### Etapa 1: Selecionar os recipients {#step-1--selecting-the-recipients}
 
 Após configurar a atividade **[!UICONTROL Scheduler]** para que o workflow inicie todos os dias, identifique todos os recipients cujos aniversários são no dia atual.
 
@@ -183,7 +183,7 @@ Combine os resultados com uma atividade **[!UICONTROL Union]**.
 
 Vincule os resultados das duas ramificações de atividade **[!UICONTROL Test]** a uma atividade **[!UICONTROL Email delivery]** para enviar um email para a lista de todos os seus recipients aniversariantes, até mesmo àqueles que nasceram em 29 de fevereiro durante um ano não bissexto.
 
-## Criar um delivery recorrente {#creating-a-recurring-delivery-in-a-targeting-workflow}
+## Criar uma entrega recorrente {#creating-a-recurring-delivery-in-a-targeting-workflow}
 
 Adicione uma atividade de **Entrega recorrente** com base no modelo de email de aniversário que você deseja enviar.
 

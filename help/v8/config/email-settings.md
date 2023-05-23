@@ -23,27 +23,27 @@ ht-degree: 13%
 
 Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma.
 
-A Adobe Campaign em si não gerencia arquivos arquivados. Ele permite enviar as mensagens de sua escolha para um endereço de email CCO (cópia cega de carbono) dedicado, de onde podem ser processadas e arquivadas usando um sistema externo. Os arquivos .eml correspondentes aos emails enviados podem ser transferidos para um servidor remoto, como um servidor de email SMTP.
+O próprio Adobe Campaign não gerencia arquivos arquivados. Ela permite enviar as mensagens de sua escolha para um endereço de email CCO dedicado (cópia oculta), de onde elas podem ser processadas e arquivadas usando um sistema externo. Os arquivos .eml correspondentes aos emails enviados podem ser transferidos para um servidor remoto, como um servidor de email SMTP.
 
 >[!CAUTION]
 >
->Por motivos de privacidade, os emails CCO devem ser processados por um sistema de arquivamento capaz de armazenar informações de identificação pessoal (PII) seguras.
+>Por motivos de privacidade, os emails com CCO devem ser processados por um sistema de arquivamento capaz de armazenar informações de identificação pessoal (PII) seguras.
 
-O destino de arquivamento é o endereço de email CCO de sua escolha, que permanecerá invisível para os recipients do delivery.
+O destino do arquivamento é o endereço de email CCO de sua escolha, que permanecerá invisível para os recipients do delivery.
 
-![](../assets/do-not-localize/speech.png)  Como um usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support){target="_blank"} para comunicar o endereço de email CCO a ser usado para arquivamento.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support){target="_blank"} para comunicar o endereço de email CCO que será usado para arquivamento.
 
-Depois que o endereço de email CCO for definido, você deverá ativar a opção dedicada no nível de delivery.
+Depois que o endereço de email de CCO for definido, você deverá ativar a opção dedicada no nível do delivery.
 
 >[!CAUTION]
 >
->Ao criar um novo delivery ou template do delivery, **[!UICONTROL Email BCC]** não está habilitado por padrão. Você precisa ativá-lo manualmente no delivery de email ou no template do delivery.
+>Ao criar um novo delivery ou template do delivery, **[!UICONTROL Email BCC]** não está ativado por padrão. Você precisa ativá-lo manualmente no delivery de email ou no template do delivery.
 
 
 Para fazer isso, siga as etapas abaixo:
 
 1. Ir para **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** ou **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. Selecione o delivery de sua escolha ou duplique os **[!UICONTROL Email delivery]** e, em seguida, selecione o modelo duplicado.
+1. Selecione o delivery de sua escolha ou duplique o predefinido **[!UICONTROL Email delivery]** e selecione o template duplicado.
 1. Clique no botão **[!UICONTROL Properties]**.
 1. Selecione a guia **[!UICONTROL Delivery]**.
 1. Marque a opção **[!UICONTROL Email BCC]**.
@@ -52,15 +52,15 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Selecione **[!UICONTROL Ok]**.
 
-Uma cópia de todas as mensagens enviadas para cada delivery com base nesse template será enviada para o endereço Cco de email que foi configurado.
+Uma cópia de todas as mensagens enviadas para cada delivery com base neste modelo será enviada para o endereço Cco de email que foi configurado.
 
 Observe as seguintes especificidades e recomendações:
 
 * Você só pode usar um endereço de email CCO.
 
-* Verifique se o endereço CCO tem capacidade de recepção suficiente para arquivar todos os emails enviados.
+* Verifique se o endereço CCo tem capacidade de recepção suficiente para arquivar todos os emails enviados.
 
-* Email Cco <!--with Enhanced MTA--> O entrega para o endereço de email CCO antes do delivery aos recipients, o que pode resultar no envio de mensagens CCO mesmo que os deliveries originais tenham retornado. Para obter mais informações sobre devoluções, consulte [Entender as falhas do delivery](../send/delivery-failures.md).
+* Email Cco <!--with Enhanced MTA--> O envia para o endereço de email CCO antes de entregar aos recipients, o que pode resultar no envio de mensagens com CCO, mesmo que os deliveries originais possam ter sido rejeitados. Para obter mais informações sobre rejeições, consulte [Entender as falhas de delivery](../send/delivery-failures.md).
 
 * Se os emails enviados para o endereço CCo forem abertos e clicados, isso será considerado no **[!UICONTROL Total opens]** e **[!UICONTROL Clicks]** da análise de envio, o que poderá causar alguns erros de cálculo.
 
@@ -70,7 +70,7 @@ Observe as seguintes especificidades e recomendações:
 
 Nestas seções:
 
-* [Usar templates de delivery de email](../send/create-templates.md)
+* [Usar modelos de entrega de email](../send/create-templates.md)
 
 * [Entender as falhas de entrega](../send/delivery-failures.md)
 
@@ -79,7 +79,7 @@ E na documentação do Campaign Classic v7:
 
 * [Selecionar formato do email](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats){target="_blank"}
 
-* [Selecionar codificação de caractere](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#character-encoding){target="_blank"}
+* [Selecionar codificação de caracteres](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#character-encoding){target="_blank"}
 
 * [Definir o endereço de email de devolução](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails){target="_blank"}
 

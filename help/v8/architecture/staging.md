@@ -14,23 +14,23 @@ ht-degree: 2%
 
 # Mecanismo de preparo da API do Campaign
 
-No contexto de um [Implantação empresarial (FDA)](enterprise-deployment.md), chamadas unitárias de explosão não são recomendadas em relação a desempenhos (latência e simultaneidade). A operação de lote é sempre preferida. Para melhorar o desempenho, as APIs de assimilação são redirecionadas para o banco de dados local.
+No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), chamadas unitárias com explosão não são recomendadas em relação a desempenhos (latência e simultaneidade). A operação em lote é sempre preferível. Para melhorar o desempenho, as APIs de assimilação são redirecionadas para o banco de dados local.
 
-O recurso de preparo da campanha é ativado por padrão em alguns schemas incorporados. Também podemos ativá-lo em qualquer schema personalizado. Mecanismo de armazenamento temporário em poucas palavras:
+O recurso de preparo do Campaign está habilitado por padrão em alguns esquemas integrados. Também podemos ativá-la em qualquer esquema personalizado. Mecanismo de preparo em poucas palavras:
 
-* A estrutura do schema de dados é duplicada na tabela de preparo local
-* Novas APIs dedicadas à assimilação de dados fluem diretamente na tabela de preparo local. [Saiba mais](new-apis.md)
-* Um workflow agendado dispara a cada hora e sincroniza dados de volta ao banco de dados da nuvem. [Saiba mais](replication.md)
+* A estrutura do esquema de dados é duplicada na tabela de preparo local
+* Novas APIs dedicadas para assimilação de dados fluem diretamente para a tabela de preparo local. [Saiba mais](new-apis.md)
+* Um fluxo de trabalho agendado é acionado a cada hora e sincroniza os dados de volta ao banco de dados da nuvem. [Saiba mais](replication.md)
 
 Alguns esquemas internos são Preparados por padrão, como nmsSubscriptionRcp, nmsAppSubscriptionRcp, nmsRecipient.
 
-As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se beneficiar desse novo mecanismo de preparo: As chamadas de API fluem diretamente para o banco de dados do Cloud. O Adobe recomenda usar o novo mecanismo de preparo o máximo possível para reduzir a pressão e a latência gerais no banco de dados do Campaign Cloud.
+As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se beneficiar desse novo mecanismo de preparo: as chamadas de API fluem para diretamente para o banco de dados da nuvem. A Adobe recomenda usar o novo mecanismo de preparo o máximo possível para reduzir a pressão e a latência gerais no banco de dados da nuvem do Campaign.
 
 >[!CAUTION]
 >
->* Com esse novo mecanismo, a sincronização de dados para opção de canal, assinaturas, unsubscriptions ou registro móvel agora é **assíncrono**.
+>* Com esse novo mecanismo, a sincronização de dados para recusa de canal, assinaturas, cancelamentos de assinaturas ou registro móvel agora é **assíncrono**.
 >
->* O armazenamento temporário só se aplica a esquemas armazenados no banco de dados da nuvem. Não ative o armazenamento temporário em schemas replicados. Não ative o armazenamento temporário em esquemas locais. Não ativar Preparo em um esquema Preparado
+>* O preparo se aplica somente a esquemas armazenados no banco de dados da nuvem. Não ative o preparo em esquemas replicados. Não ative a Preparação em esquemas locais. Não ativar a Preparação em um esquema em etapas
 >
 
 
@@ -38,7 +38,7 @@ As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se bene
 
 Para implementar o mecanismo de preparo do Campaign em uma tabela específica, siga as etapas abaixo:
 
-1. Crie uma amostra de esquema personalizado no banco de dados da Campaign Cloud. Nenhuma preparação habilitada nesta etapa.
+1. Crie um exemplo de esquema personalizado no banco de dados da Campaign Cloud. Nenhum preparo ativado nesta etapa.
 
    ```
    <srcSchema _cs="Sample Table (dem)" created="YYYY-DD-MM"
@@ -53,11 +53,11 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
    </srcSchema>
    ```
 
-   ![](../assets/do-not-localize/glass.png) Saiba mais sobre a criação de esquema personalizado em [esta página](../dev/create-schema.md).
+   ![](../assets/do-not-localize/glass.png) Saiba mais sobre a criação de esquema personalizado no [esta página](../dev/create-schema.md).
 
-1. Salve e atualize a estrutura do banco de dados.  [Saiba mais](../dev/update-database-structure.md)
+1. Salvar e atualizar a estrutura do banco de dados.  [Saiba mais](../dev/update-database-structure.md)
 
-1. Ative o mecanismo de preparo na definição do schema adicionando o **autoStg=&quot;true&quot;** parâmetro.
+1. Ative o mecanismo de preparo na definição do esquema adicionando o **autoStg=&quot;true&quot;** parâmetro.
 
    ```
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"
@@ -72,7 +72,7 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
    </srcSchema>
    ```
 
-1. Salve a modificação. Um novo schema de preparo está disponível, que é uma cópia local do schema inicial.
+1. Salve a modificação. Um novo esquema de preparo está disponível, que é uma cópia local do esquema inicial.
 
    ![](assets/staging-mechanism.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Introdução à implantação do Campaign FDA
-description: Introdução à implantação do Campaign FDA
+title: Introdução à implantação do FFDA do Campaign
+description: Introdução à implantação do FFDA do Campaign
 feature: Architecture, FFDA
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
@@ -12,13 +12,13 @@ ht-degree: 54%
 
 ---
 
-# [!DNL Campaign] Implantação FFDA{#gs-ac-ffda}
+# [!DNL Campaign] Implantação do FFDA{#gs-ac-ffda}
 
-Por alavancagem [[!DNL Snowflake]](https://www.snowflake.com/), uma tecnologia de banco de dados em nuvem, a implantação do Adobe Campaign Enterprise Full Federated Access (FDA) melhora consideravelmente sua escala e velocidade, com a capacidade de gerenciar um número mais significativo de perfis de clientes, bem como taxas de delivery e transações por hora mais altas.
+Ao aproveitar [[!DNL Snowflake]](https://www.snowflake.com/), uma tecnologia de banco de dados em nuvem, a implantação do Adobe Campaign Enterprise Full Federated Access (FFDA) melhora consideravelmente sua escala e velocidade, com a capacidade de gerenciar um número muito maior de perfis de clientes, bem como taxas de entrega e transações por hora muito mais altas.
 
 ## Benefícios {#ffda-benefits}
 
-O Campaign v8 Enterprise (FDA) oferece escala completa em qualquer etapa do processo, desde o direcionamento até o relatório final:
+O Campaign v8 Enterprise (FFDA) traz uma escala completa em qualquer etapa do processo, desde o direcionamento até os relatórios finais:
 
 * Dimensione o volume de dados que você pode manipular (até 8 TB)
 * Dimensione o desempenho das consultas para segmentação e direcionamento, mas também a assimilação e a saída de dados
@@ -34,46 +34,46 @@ Qualquer esquema/tabela interna que precise ser movido ou replicado no banco de 
 >
 > Os dados do cliente não são armazenados no banco de dados local do [!DNL Campaign]. Como consequência, qualquer tabela personalizada precisa ser criada no banco de dados na nuvem.
 
-## Arquitetura do Campaign Enterprise (FDA){#ffda-archi}
+## Arquitetura corporativa (FFDA) do Campaign{#ffda-archi}
 
-Em um [Implantação empresarial (FDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um local [!DNL Campaign] banco de dados para a interface do usuário, mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e uma nuvem [!DNL Snowflake] banco de dados para execução da campanha, consultas em lote e execução do workflow.
+Em um [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um local [!DNL Campaign] para a interface do usuário de mensagens em tempo real e consultas unitárias e gravação por meio de APIs, além de uma [!DNL Snowflake] banco de dados para execução de campanha, consultas em lote e execução de workflow.
 
 O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem.
 
 APIs específicas estão disponíveis para gerenciar dados entre o banco de dados local e na nuvem. Saiba como essas novas APIs funcionam e como usá-las [nesta página](new-apis.md).
 
-A comunicação geral entre servidores e processos é realizada de acordo com o seguinte schema:
+A comunicação geral entre servidores e processos é realizada de acordo com o seguinte esquema:
 
 ![](assets/architecture.png)
 
-* Os módulos de gerenciamento de execução e rejeição estão desabilitados na instância.
-* O aplicativo é configurado para executar a execução de mensagens em um servidor remoto &quot;mid-sourcing&quot;, que é orientado por chamadas SOAP (via HTTP ou HTTPS).
+* Os módulos de gerenciamento de execução e rejeição estão desativados na instância.
+* O aplicativo é configurado para executar mensagens em um servidor remoto de &quot;origem intermediária&quot; orientado por chamadas SOAP (por HTTP ou HTTPS).
 
-O [!DNL Snowflake] o banco de dados do lado do marketing é usado para:
+A variável [!DNL Snowflake] A base de dados no lado da comercialização é utilizada para:
 
-* Armazenar todos os dados do cliente: perfis, dados personalizados, como transações, produtos, locais etc.
+* Armazene todos os dados do cliente: perfis, dados personalizados, como transações, produtos, locais etc.
 * Armazene todos os eventos e dados de comportamento gerados ou coletados pelo Campaign, como logs do delivery, logs de rastreamento, registros de push etc.
 * Armazene todos os agregados de dados do acima.
-* Armazene uma cópia (h+1) das tabelas de referência (como deliveries, enumerações, países etc.) que são usadas em workflows, campanhas e relatórios.
-* Executar todos os processos e cargas de trabalho em lote
+* Armazenar uma cópia (h+1) de tabelas de referência (como deliveries, enumerações, países etc.) que são usados em workflows, campanhas e relatórios.
+* Executar todos os processos em lote e cargas de trabalho
 
 
 O banco de dados PostgreSQL na instância de marketing é usado para:
 
 * Execute determinadas cargas de trabalho, como APIs de baixo volume.
-* Armazene todos os dados do Campaign, incluindo configurações de delivery e campanha, definições de workflow e de serviço.
-* Armazene todas as tabelas de referência integradas (enumerações, países etc.) que sejam replicados para [!DNL Snowflake].
+* Armazene todos os dados do Campaign, incluindo configurações de entrega e campanha, fluxo de trabalho e definições de serviço.
+* Armazenar todas as tabelas de referência integradas (listas discriminadas, países etc.) que são replicados para [!DNL Snowflake].
 
    No entanto, não é possível:
-   * criar personalizações para dados de clientes, por exemplo, não crie uma tabela de família no PostgreSQL, mas somente no Snowflake
-   * armazene todos os logs do delivery, logs de rastreamento etc. no targeting dimension FDA.
-   * armazene um grande volume de dados.
+   * criar personalizações para dados do cliente, por exemplo, não crie uma tabela de família no PostgreSQL, mas somente no Snowflake
+   * armazenar logs do delivery, logs de rastreamento etc. na targeting dimension FFDA.
+   * armazenar grande volume de dados.
 
 
 O banco de dados PostgreSQL na instância mid-sourcing é usado para:
 
 * Execute deliveries em lote e em tempo real (RT).
-* Enviar logs de delivery e rastreamento - observe que as IDs de log de delivery e rastreamento são UUIDs e não IDs de 32 bits.
+* Enviar logs de entrega e rastreamento - observe que as IDs de log de entrega e rastreamento são UUIDs e não IDs de 32 bits.
 * Colete e armazene dados de rastreamento.
 
 
@@ -81,15 +81,15 @@ O banco de dados PostgreSQL na instância mid-sourcing é usado para:
 
 ### [!DNL Campaign] Mecanismo de preparo da API{#staging-api}
 
-Com [!DNL Campaign] O banco de dados da nuvem, as chamadas unitárias de explosão não são recomendadas devido ao desempenho (latência e simultaneidade). A operação em lote é sempre preferida. Para garantir desempenho ideal das APIs, o Campaign continua lidando com chamadas de API no nível do banco de dados local.
+Com [!DNL Campaign] O banco de dados em nuvem e as chamadas unitárias de explosão não são recomendados devido ao desempenho (latência e simultaneidade). A operação em lote é sempre preferida. Para garantir o melhor desempenho das APIs, o Campaign continua lidando com chamadas de API no nível do banco de dados local.
 
 ![](../assets/do-not-localize/glass.png) [O mecanismo de preparo da API é detalhado nesta página](staging.md)
 
 ### Novas APIs{#new-apis}
 
-Novas APIs estão disponíveis para gerenciar a sincronização de dados entre [!DNL Campaign] banco de dados local e banco de dados do Cloud. Um novo mecanismo também foi introduzido para lidar com chamadas de API no nível do banco de dados local, a fim de evitar latência e aumentar o desempenho geral.
+Novas APIs estão disponíveis para gerenciar a sincronização de dados entre [!DNL Campaign] banco de dados local e banco de dados na nuvem. Um novo mecanismo também foi introduzido para lidar com chamadas de API no nível do banco de dados local para evitar latência e aumentar o desempenho geral.
 
-![](../assets/do-not-localize/glass.png) [As novas APIs são detalhadas nesta página](new-apis.md)
+![](../assets/do-not-localize/glass.png) [As novas APIs estão detalhadas nesta página](new-apis.md)
 
 
 ### Replicação de dados{#data-replication}
@@ -115,7 +115,7 @@ O Adobe Campaign v8 vem com o Snowflake como o banco de dados principal. Como au
 
 ### Disponibilidade de recursos {#feature-availability}
 
-Alguns recursos não estão disponíveis no contexto de uma implantação Enterprise (FDA) do Campaign, como:
+Alguns recursos não estão disponíveis no contexto de uma implantação Corporativa (FFDA) do Campaign, como:
 
 * Gerenciamento de recursos de marketing
 * Cupons

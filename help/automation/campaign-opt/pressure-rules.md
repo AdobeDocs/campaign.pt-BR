@@ -39,7 +39,7 @@ Para configurar arbitragem entre campanhas usando o Adobe Campaign, comece crian
 
 Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga estas etapas:
 
-1. Na lista de regras de tipologia de campanha, selecione o **[!UICONTROL New]** acima da lista.
+1. Na lista de regras de tipologia de campanha, selecione a **[!UICONTROL New]** ícone acima da lista.
 
    ![](assets/campaign_opt_create_a_rule_01.png)
 
@@ -107,15 +107,15 @@ Você pode indexar o número de mensagens autorizadas de acordo com o segmento a
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Para definir o limite, você pode usar uma dimensão vinculada ao targeting dimension: por exemplo, para incluir mensagens enviadas aos perfis de recipient armazenados no [tabela de visitantes](../../v8/audiences/target-mappings.md) ou para evitar o envio de mais de uma mensagem por semana para a mesma família, (que pode se referir a vários endereços de email) identificada em uma dimensão vinculada à dos recipients.
+Para definir o limite, é possível usar uma dimensão vinculada à targeting dimension: por exemplo, para incluir mensagens enviadas aos perfis de recipients armazenados no [tabela de visitantes](../../v8/audiences/target-mappings.md) ou para evitar o envio de mais de uma mensagem por semana para a mesma família (o que pode se referir a vários endereços de email) identificada em uma dimensão vinculada à dos recipients.
 
 Para fazer isso, selecione a opção **[!UICONTROL Count messages on a linked dimension]** e selecione a tabela de visitantes ou de contatos.
 
 ### Peso da mensagem {#message-weight}
 
-Cada delivery tem um peso que representa seu nível de prioridade. Por padrão, o peso de um delivery é definido como 5. As regras de pressão permitem definir o peso dos deliveries aos quais serão aplicados.
+Cada entrega tem um peso que representa seu nível de prioridade. Por padrão, o peso de um delivery é definido como 5. As regras de pressão permitem definir o peso dos deliveries aos quais serão aplicados.
 
-Os pesos podem ser definidos ou calculados por meio de uma fórmula para se adequar aos recipients. Por exemplo, você pode definir o peso de um delivery com base nos interesses do recipient.
+Os pesos podem ser definidos ou calculados por meio de uma fórmula para se adequar aos recipients. Por exemplo, você pode definir o peso de uma entrega com base nos interesses do recipient.
 
 >[!CAUTION]
 >
@@ -147,7 +147,7 @@ Por exemplo, uma regra de pressão que define um limite de 2 mensagens por seman
 >
 >Somente os deliveries já enviados são considerados ao calcular o limite.
 
-Para restringir os deliveries considerados para um período de 2 semanas, insira **15.º-D** no **[!UICONTROL Concerned period]** campo : os deliveries enviados até duas semanas antes da data do delivery no qual a regra é aplicada serão considerados no cálculo
+Para restringir os deliveries considerados para um período de 2 semanas, informe **15d** no **[!UICONTROL Concerned period]** field: no cálculo são considerados os deliveries realizados em até duas semanas antes da data do delivery no qual a regra é aplicada
 
 A data de início do período depende de como o banco de dados está configurado.
 

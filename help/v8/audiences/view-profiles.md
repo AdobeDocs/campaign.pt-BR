@@ -1,5 +1,5 @@
 ---
-title: Visualizar perfis existentes no Campaign
+title: Exibir perfis existentes no Campaign
 description: Saiba como acessar dados de contato no Campaign
 feature: Audiences, Profiles
 role: User
@@ -12,7 +12,7 @@ ht-degree: 32%
 
 ---
 
-# Visualizar perfis existentes{#view-profiles}
+# Exibir perfis existentes{#view-profiles}
 
 Navegue até **[!UICONTROL Profiles and targets]** para acessar destinatários armazenados no banco de dados do Adobe Campaign.
 
@@ -20,7 +20,7 @@ Nessa página, é possível [criar novo destinatário](create-profiles.md), edit
 
 ![](assets/profiles-and-targets.png)
 
-Para manipulações de perfil mais avançadas, acesse a árvore do Campaign no **[!UICONTROL Explorer]** link na página inicial do Adobe Campaign.
+Para manipulações de perfil mais avançadas, acesse a árvore do Campaign pelo **[!UICONTROL Explorer]** na página inicial do Adobe Campaign.
 
 ![](assets/recipients-in-explorer.png)
 
@@ -37,17 +37,17 @@ Selecione um perfil para exibir detalhes em uma nova guia.
 
 Os dados relativos aos perfis são agrupados em guias. Essas guias e seu conteúdo dependem das configurações específicas e dos pacotes instalados.
 
-Para um recipient integrado típico, você pode acessar as seguintes guias:
+Para um recipient incorporado típico, você pode acessar as seguintes guias:
 
-* **[!UICONTROL General]**, para todos os dados de perfil gerais. Em particular, ele contém o sobrenome, o nome, o endereço de email, o formato do email, etc.
+* **[!UICONTROL General]**, para todos os dados gerais do perfil. Em particular, contém o sobrenome, nome, endereço de email, formato do email, etc.
 
-   Essa guia também armazena o **opt out** sinalizador para o perfil: quando a variável **[!UICONTROL No longer contact (by any channel)]** estiver selecionada, o perfil está em lista de bloqueios. Essas informações são adicionadas aos dados do contato se o recipient clicou em um link de unsubscription em um boletim informativo, por exemplo. Esse recipient não será mais direcionado para qualquer canal (email, mala direta etc.). Para obter mais informações, consulte [esta página](../send/quarantines.md).
+   Essa guia também armazena as **recusar** sinalizador do perfil: quando a variável **[!UICONTROL No longer contact (by any channel)]** for selecionada, o perfil estará em incluir na lista de bloqueios. Essas informações serão adicionadas aos dados de contato se o recipient clicar em um link de cancelamento de subscrição em um boletim informativo, por exemplo. Esse recipient não será mais direcionado em nenhum canal (email, correspondência direta etc.). Para obter mais informações, consulte [esta página](../send/quarantines.md).
 
 * **Informações de contato**, que contém o endereço de correspondência direta do perfil selecionado.
 
    Você pode verificar nesta tela o índice de qualidade do endereço e quantos erros o endereço contém. Essas informações são usadas diretamente pelo provedor de correspondência direta, com base no número de erros encontrados durante deliveries anteriores, e não podem ser alteradas manualmente.
 
-* **Outras**, para campos específicos que podem ser personalizados e preenchidos dependendo de suas necessidades.
+* **Outro**, para campos específicos que podem ser personalizados e preenchidos dependendo das suas necessidades.
 
    Use o **[!UICONTROL Field properties…]** menu contextual para alterar os nomes dos campos e definir seu formato.
 
@@ -57,22 +57,22 @@ Para um recipient integrado típico, você pode acessar as seguintes guias:
 
    ![](assets/change-field-properties.png)
 
-   Verifique a atualização na interface do usuário do :
+   Verifique a atualização na interface do usuário:
 
    ![](assets/other-tab-updated.png)
 
 
    >[!CAUTION]
-   >As alterações se aplicam a todos os recipients.
+   >As alterações se aplicam a todos os destinatários.
 
 
-* **Subscrições**, para todas as subscrições ativas de serviços. Use o **Histórico** para acessar detalhes de subscrições e unsibscriptions para este contato.
+* **Assinaturas**, para todas as assinaturas ativas para serviços. Use o **Histórico** para acessar detalhes de assinaturas e cancelamentos de assinaturas deste contato.
 
    ![](assets/subscription-tab.png)
 
-   Saiba mais sobre assinaturas [nesta seção](../start/subscriptions.md).
+   Saiba mais sobre Assinaturas [nesta seção](../start/subscriptions.md).
 
-* **Deliveries**, para todos os logs de delivery do perfil selecionado. Use esta guia para acessar o histórico de marketing do contato: rótulos, datas e status de todas as ações de delivery endereçadas ao perfil por todos os canais.
+* **Entregas**, para todos os logs de delivery do perfil selecionado. Use esta guia para acessar o histórico de marketing do contato: rótulos, datas e status de todas as ações de entrega endereçadas ao perfil por todos os canais.
 
 
 * **Rastreamento**, para todos os logs de rastreamento do perfil selecionado. Essas informações são usadas para rastrear o comportamento do perfil após as entregas. Esta guia mostra o total cumulativo de todas as URLs rastreadas nas entregas. A lista é configurável e normalmente contém: a URL clicada, a data e hora do clique e o documento que continha a URL

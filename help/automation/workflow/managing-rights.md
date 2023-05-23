@@ -21,7 +21,7 @@ Em geral, os operadores que atuam com workflows precisam acessar os arquivos que
 
 Eles também devem ser mapeados com os direitos nomeados que coincidam com as ações executadas pelos workflows que eles afetarão (importação do recipient, acesso à arquivos, fusão, execução de script SQL, etc.).
 
-Para obter mais informações sobre gerenciamento de operadores e permissões, consulte [esta seção](../../v8/start/gs-permissions.md).
+Para obter mais informações sobre gerenciamento de operadores e permissões, consulte [nesta seção](../../v8/start/gs-permissions.md).
 
 ## Grupos de operadores {#operator-groups-wf}
 

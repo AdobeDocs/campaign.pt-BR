@@ -1,5 +1,5 @@
 ---
-title: Interação de campanha Oferta filtros predefinidos
+title: Filtros predefinidos da oferta de interação de campanha
 description: Saiba como criar filtros predefinidos
 feature: Interaction, Offers
 role: Data Engineer
@@ -14,9 +14,9 @@ ht-degree: 55%
 
 # Criar filtros predefinidos{#creating-pre-defined-filters}
 
-Crie filtros predefinidos para definir regras de qualificação para a população do target que podem ser facilmente reutilizados durante a criação da oferta. Eles são específicos para cada ambiente e consideram os parâmetros de oferta.
+Crie filtros predefinidos para definir regras de qualificação para o público-alvo que podem ser facilmente reutilizados durante a criação da oferta. Eles são específicos para cada ambiente e consideram os parâmetros de oferta.
 
-Para criar um filtro predefinido, siga as etapas abaixo:
+Para criar um filtro predefinido, siga o seguinte processo:
 
 1. Navegue até o **[!UICONTROL Administration]** e selecione **[!UICONTROL Pre-defined offer filters]**.
 

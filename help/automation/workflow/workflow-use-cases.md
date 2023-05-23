@@ -13,7 +13,7 @@ ht-degree: 59%
 
 # Casos de uso de fluxos de trabalho {#about-workflow-use-cases}
 
-Saiba mais sobre os diferentes contextos nos quais os workflows podem ser usados e como implementá-los por meio de casos de uso completos.
+Saiba mais sobre os diferentes contextos em que os workflows podem ser usados e como implementá-los por meio de casos de uso completos.
 
 ## Entregas {#deliveries}
 

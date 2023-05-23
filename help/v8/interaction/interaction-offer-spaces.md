@@ -1,5 +1,5 @@
 ---
-title: Espaços de oferta da interação da campanha
+title: Espaços de oferta de interação de campanha
 description: Saiba como criar Espaços de oferta
 feature: Interaction, Offers
 role: Data Engineer
@@ -14,15 +14,15 @@ ht-degree: 47%
 
 # Criar espaços de oferta{#creating-offer-spaces}
 
-O conteúdo do catálogo de ofertas é configurado em espaços de ofertas. Por padrão, o conteúdo pode incluir os seguintes campos: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** e **[!UICONTROL Text content]**. A sequência de campos é configurada no espaço de oferta.
+O conteúdo do catálogo de ofertas é configurado em espaços de oferta. Por padrão, o conteúdo pode incluir os seguintes campos: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** e **[!UICONTROL Text content]**. A sequência de campos é configurada no espaço de oferta.
 
-Como um **administrador técnico**, é possível criar espaços de ofertas no ambiente Design . Você precisa ter acesso à subpasta de espaço de oferta. Depois de criados, esses espaços de oferta são duplicados automaticamente no ambiente Live durante a aprovação da oferta.
+Como um **administrador técnico**, é possível criar espaços de oferta no ambiente Design. É necessário ter acesso à subpasta de espaço de ofertas. Depois de criados, esses espaços de ofertas são duplicados automaticamente no ambiente Live durante a aprovação da oferta.
 
 A renderização de HTML é criada por meio de uma função de renderização. A seqüência dos campos definidos na função de renderização deve ser idêntica à sequência configurada no conteúdo.
 
 ![](assets/offer_space_create_009.png)
 
-Para criar um novo espaço de oferta, siga as etapas abaixo:
+Para criar um novo espaço de ofertas, siga as etapas abaixo:
 
 1. Na lista de espaços de oferta, clique em **[!UICONTROL New]**.
 
@@ -42,11 +42,11 @@ Para criar um novo espaço de oferta, siga as etapas abaixo:
 
    ![](assets/offer_space_create_004.png)
 
-1. Verifique a **[!UICONTROL Required]** para tornar cada campo obrigatório.
+1. Verifique a **[!UICONTROL Required]** opção para tornar cada campo obrigatório.
 
    >[!NOTE]
    >
-   >Essa opção é usada na pré-visualização e oferece espaços de oferta inválidos ao publicar se um dos campos obrigatórios estiver ausente na oferta. No entanto, se uma oferta já estiver disponível em um espaço de oferta, esses critérios não serão levados em consideração.
+   >Essa opção é usada na pré-visualização e oferece espaços de oferta inválidos ao publicar se um dos campos obrigatórios não estiver presente na oferta. No entanto, se uma oferta já estiver disponível em um espaço de oferta, esses critérios não serão levados em consideração.
 
    ![](assets/offer_space_create_005.png)
 
@@ -54,7 +54,7 @@ Para criar um novo espaço de oferta, siga as etapas abaixo:
 
    Essas funções são usadas para gerar representações de ofertas em um espaço de oferta. Há vários formatos possíveis: HTML ou texto.
 
-   **Observação** - O formato XML está restrito a interações de entrada que não estão disponíveis nesta versão do produto. [Saiba mais](../start/v7-to-v8.md#gs-unavailable-features)
+   **Nota** - O formato XML é restrito a interações de entrada que não estão disponíveis nesta versão do produto. [Saiba mais](../start/v7-to-v8.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
@@ -65,15 +65,15 @@ Para criar um novo espaço de oferta, siga as etapas abaixo:
 
 ## Status da apresentação de oferta {#offer-proposition-statuses}
 
-O status da apresentação da oferta varia dependendo das interações com a população direcionada. O módulo Campaign Interaction vem com um conjunto de valores que podem ser aplicados à apresentação de oferta durante todo o ciclo de vida. Você precisa configurar a plataforma para que o status seja alterado quando a apresentação da oferta for criada e aceita.
+O status da apresentação da oferta varia dependendo das interações com a população direcionada. O módulo de Interação do Campaign vem com um conjunto de valores que podem ser aplicados à apresentação de oferta durante todo o ciclo de vida. É necessário configurar a plataforma para que o status seja alterado quando a apresentação de oferta for criada e aceita.
 
 >[!NOTE]
 >
->A atualização de status é uma **assíncrono** processo. Ele é realizado pelo workflow de rastreamento que é acionado a cada hora.
+>A atualização de status é um **assíncrono** processo. Ele é realizado pelo workflow de rastreamento que é acionado a cada hora.
 
 ### Lista de status da oferta {#status-list}
 
-Os status da oferta disponível são:
+Os status de oferta disponíveis são:
 
 * **[!UICONTROL Accepted]**
 * **[!UICONTROL Scheduled]**
@@ -82,7 +82,7 @@ Os status da oferta disponível são:
 * **[!UICONTROL Presented]**
 * **[!UICONTROL Rejected]**
 
-Esses valores não são aplicados por padrão: eles devem ser configurados.
+Esses valores não são aplicados por padrão: eles precisam ser configurados.
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Esses valores não são aplicados por padrão: eles devem ser configurados.
 
 Quando uma apresentação de oferta é **criado**, seu status é atualizado.
 
-No **[!UICONTROL Design]** para cada espaço de oferta, configure o status a ser aplicado quando uma proposta for criada, dependendo das informações que deseja exibir nos relatórios de oferta.
+No **[!UICONTROL Design]** ambiente, para cada espaço de oferta, configure o status para ser aplicado quando uma proposta for criada, dependendo das informações que deseja exibir nos relatórios de oferta.
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -101,9 +101,9 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/offer_update_status_001.png)
 
-### Status da oferta quando a proposta é aceita {#configuring-the-status-when-the-proposition-is-accepted}
+### Status da oferta quando a proposta for aceita {#configuring-the-status-when-the-proposition-is-accepted}
 
-Uma vez que uma apresentação de oferta foi **aceito**, use um dos valores fornecidos por padrão para configurar o novo status da proposta. A atualização é aplicada quando um recipient clica em um link na oferta.
+Depois que uma apresentação de oferta é **aceito**, use um dos valores fornecidos por padrão para configurar o novo status da proposta. A atualização é aplicada quando um recipient clica em um link na oferta.
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -115,7 +115,7 @@ Para fazer isso, siga as etapas abaixo:
 
 **Interação de entrada**
 
-A guia **[!UICONTROL Storage]** permite definir os status somente para propostas de ofertas **proposed** e **accepted**. Para interação de entrada, o status das apresentações de oferta deve ser especificado diretamente na URL para chamar o mecanismo de oferta, em vez da interface. Dessa forma, é possível especificar qual status aplicar em outros casos, por exemplo, se uma apresentação de oferta for rejeitada.
+A guia **[!UICONTROL Storage]** permite definir os status somente para propostas de ofertas **proposed** e **accepted**. Para interação de entrada, o status das apresentações de oferta deve ser especificado diretamente na URL para chamar o Mecanismo de oferta, em vez da interface. Dessa forma, é possível especificar qual status aplicar em outros casos, por exemplo, se uma apresentação de oferta for rejeitada.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
@@ -137,7 +137,7 @@ Assim que um visitante clica na oferta, e portanto na URL, o status **[!UICONTRO
 
 **Interação de saída**
 
-Você pode aplicar automaticamente a variável **[!UICONTROL Interested]** status para uma apresentação de oferta quando o delivery contiver um link. Basta adicionar o valor **_urlType=&quot;11&quot;** ao link:
+É possível aplicar automaticamente a variável **[!UICONTROL Interested]** Status de uma apresentação de oferta quando o delivery contém um link. Basta adicionar o valor **_urlType=&quot;11&quot;** ao link:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
@@ -154,6 +154,6 @@ Se um recipient não estiver qualificado para ofertas, isso será mostrado na vi
 ![](assets/offer_space_overview_001.png)
 
 
-A visualização pode ignorar contextos quando eles são restritos a um espaço. Este é o caso quando o schema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada.
+A visualização pode ignorar contextos quando eles são restritos a um espaço. Esse é o caso quando o schema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada.
 
-![](../assets/do-not-localize/book.png)  Para obter mais informações, consulte esta amostra em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.
+![](../assets/do-not-localize/book.png)  Para obter mais informações, consulte esta amostra no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.

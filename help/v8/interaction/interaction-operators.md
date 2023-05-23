@@ -14,32 +14,32 @@ ht-degree: 37%
 
 # Perfis de operadores {#operator-profiles}
 
-Dois tipos de operadores podem usar a Interação de campanha: **Gerentes de oferta** e **Gerentes de delivery**. Cada um deles tem permissões e restrições específicas. Saiba mais sobre operadores e permissões do Campaign em [esta página](../start/gs-permissions.md).
+Dois tipos de operadores podem usar a Interação de campanha: **Gerentes de oferta** e **Gerentes de delivery**. Cada um deles tem permissões e restrições específicas. Saiba mais sobre operadores e permissões do Campaign no [esta página](../start/gs-permissions.md).
 
-* O **[!UICONTROL Offer manager]** cria e mantém ofertas.
-* O **[!UICONTROL Delivery manager]** aprova e usa ofertas
+* A variável **[!UICONTROL Offer manager]** cria e mantém ofertas.
+* A variável **[!UICONTROL Delivery manager]** aprova e usa ofertas
 
 ## Criar um operador do Offer manager{#offer-manager}
 
 1. Criar um operador. [Saiba mais](../start/manage-permissions.md#add-users)
-1. Navegue até o **[!UICONTROL Groups and named rights]** , clique em **[!UICONTROL Add]** e selecione o **[!UICONTROL Offer manager]** grupo.
+1. Navegue até o **[!UICONTROL Groups and named rights]** clique em **[!UICONTROL Add]** e selecione o **[!UICONTROL Offer manager]** grupo.
 
-As permissões associadas aos gerentes de oferta são descritas [here](../start/manage-permissions.md#ootb-productprofiles)
+As permissões associadas aos gerentes de oferta são descritas [aqui](../start/manage-permissions.md#ootb-productprofiles)
 
-## Criar um operador Delivery manager {#delivery-manager}
+## Criar um operador de Gerente de delivery {#delivery-manager}
 
 1. Criar um operador. [Saiba mais](../start/manage-permissions.md#add-users)
 1. Navegue até o **[!UICONTROL Groups and named rights]** clique em **[!UICONTROL Add]** e selecione o **[!UICONTROL Delivery manager]** grupo.
 
-Os direitos atribuídos aos Gerentes de delivery permitem que eles executem as seguintes tarefas:
+Os direitos atribuídos aos Gerentes de delivery os habilitam a realizar as seguintes tarefas:
 
 * Exibir ambientes **[!UICONTROL Live]**.
 * Exibir e modificar categorias de ofertas.
-* Aprovar ofertas se elas forem revisores.
+* Aprove ofertas se elas forem revisores.
 
    >[!NOTE]
    >
-   >**Gerentes de delivery** só poderá aprovar uma oferta se ela tiver sido declarada como revisores na configuração de oferta.
+   >**Gerentes de delivery** O só pode aprovar uma oferta se tiver sido declarado como revisor na configuração da oferta.
 
 ## Matriz de permissões por operador de interação {#recap-of-rights-according-to-operator}
 
@@ -47,8 +47,8 @@ Os direitos atribuídos aos Gerentes de delivery permitem que eles executem as s
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Gerente de ofertas (ambiente Design)</strong><br /> </td> 
-   <td> <strong>Gerente de ofertas (Ambiente dinâmico)</strong><br /> </td> 
+   <td> <strong>Gerente de ofertas (Ambiente de design)</strong><br /> </td> 
+   <td> <strong>Gerente de ofertas (ambiente Live)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Nível de estrutura de árvore</strong><br /> </td> 
@@ -107,8 +107,8 @@ Os direitos atribuídos aos Gerentes de delivery permitem que eles executem as s
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Gerente de delivery (Design env.)</strong><br /> </td> 
-   <td> <strong>Gerente de delivery (Live env.)</strong><br /> </td> 
+   <td> <strong>Gerente de delivery (Ambiente de design)</strong><br /> </td> 
+   <td> <strong>Gerente de delivery (ambiente ativo)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Nível de estrutura de árvore</strong><br /> </td> 

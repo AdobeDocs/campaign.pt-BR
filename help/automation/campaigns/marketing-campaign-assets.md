@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Ativos, documentos e delivery de campanhas de marketing
+title: Ativos, documentos e delivery outlines da campanha de marketing
 description: Saiba mais sobre documentos de campanha de marketing e delivery outlines
 feature: Campaigns
 exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
@@ -41,7 +41,7 @@ Os documentos são vinculados ao programa ou à campanha através da guia **[!UI
 
 ![](assets/op_add_document.png)
 
-Você também pode adicionar um documento a uma campanha a partir do link dedicado no painel.
+Você também pode adicionar um documento a uma campanha no link dedicado no painel.
 
 ![](assets/add_a_document_in_op.png)
 
@@ -65,18 +65,18 @@ Para uma campanha, delivery outlines permitem que você estruture elementos exte
 
 >[!CAUTION]
 >
->Delivery outlines são restritos a campanhas de mala direta.
+>Delivery outlines são restritos a campanhas de correspondência direta.
 
 ### Criar um delivery outline {#create-an-outline}
 
-Para criar um delivery outline, clique em **[!UICONTROL Delivery outlines]** subguia no **[!UICONTROL Edit > Documents]** da campanha relacionada.
+Para criar um delivery outline, clique no **[!UICONTROL Delivery outlines]** subguia na guia **[!UICONTROL Edit > Documents]** da campanha relacionada.
 
 ![](assets/add-a-delivery-outline.png)
 
 
 >[!NOTE]
 >
->Se não for possível ver essa guia, esse recurso não estará disponível para essa campanha ou o delivery de mala direta não estará ativado em sua instância. Consulte a [configuração do template de campanha](marketing-campaign-templates.md#campaign-templates) ou ao seu contrato de licença.
+>Se não for possível ver essa guia, significa que esse recurso não está disponível para essa campanha ou que o delivery de correspondência direta não está ativado em sua instância. Consulte a [configuração do template de campanha](marketing-campaign-templates.md#campaign-templates) ou ao contrato de licença.
 
 Em seguida, clique em **[!UICONTROL Add a delivery outline]** e crie a hierarquia de outlines para a campanha:
 

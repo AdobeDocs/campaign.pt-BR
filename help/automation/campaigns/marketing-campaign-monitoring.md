@@ -19,19 +19,19 @@ Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todas as
 
 As seguintes informações podem ser acessadas por meio desta subguia:
 
-* O **[!UICONTROL Audit]** a subguia mostra o diário de atividades. Ele contém as tarefas executadas na campanha: criação ou início, aprovação, extração, gerenciamento de estoque etc. do fluxo de trabalho
+* A variável **[!UICONTROL Audit]** A subguia mostra o diário de atividades. Ele contém as tarefas executadas na campanha: criação ou início, aprovação, extração, gerenciamento de estoque etc. do workflow.
 
    ![](assets/campaign-audit-tab.png)
 
-* O **[!UICONTROL Deliveries]** A subguia contém todos os deliveries da campanha. Eles podem ser editados nessa visualização. Para fazer isso, selecione o delivery e clique no ícone **[!UICONTROL Detail]**.
+* A variável **[!UICONTROL Deliveries]** A subguia contém todos os deliveries da campanha. Eles podem ser editados nessa visualização. Para fazer isso, selecione o delivery e clique no ícone **[!UICONTROL Detail]**.
 
    ![](assets/campaign-delivery-tab.png)
 
-* O **[!UICONTROL Approvals]** A subguia contém todo o processo de aprovação da campanha. Você pode verificar detalhes e comentários
+* A variável **[!UICONTROL Approvals]** A subguia contém todo o processo de aprovação da campanha. Você pode verificar detalhes e comentários
 
 * Os workflows criados para gerar mensagens para provedores de serviços são exibidos na subguia **[!UICONTROL Jobs on service providers]**. Clique no ícone **[!UICONTROL Detail]** para exibir o workflow selecionado.
 
-## Rastrear deliveries {#delivery-tracking}
+## Rastrear entregas {#delivery-tracking}
 
 A lista de está disponível através do link **[!UICONTROL Deliveries]** Deliveries do nó do Campaign.
 
@@ -49,6 +49,6 @@ Para verificar o status de um delivery, edite-o e exiba seu painel e guias.
 
 ## Rastrear a execução {#execution-tracking}
 
-Você pode verificar o status dos deliveries clicando no botão **[!UICONTROL Deliveries]**, que é acessível por meio da página inicial do Adobe Campaign.
+Você pode verificar o status dos deliveries clicando em **[!UICONTROL Deliveries]**, que pode ser acessada por meio da página inicial do Adobe Campaign.
 
-Os detalhes sobre os processos executados em uma campanha são coletados na variável **[!UICONTROL Edit > Audit]** da campanha. Você pode exibir a lista de deliveries na campanha. [Saiba mais](#tracking-a-campaign).
+Detalhes sobre processos executados em uma campanha são coletados no **[!UICONTROL Edit > Audit]** da campanha. Você pode visualizar a lista de deliveries na campanha. [Saiba mais](#tracking-a-campaign).

@@ -15,13 +15,13 @@ ht-degree: 84%
 
 ## Criar um novo fluxo de trabalho {#create-a-new-workflow}
 
-O fluxo de criação de workflow depende do tipo de workflows. Você pode:
+O fluxo de criação do workflow depende do tipo de workflow. Você pode:
 
-* Criar [Workflows para construção do target](#targeting-workflows) do **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]** do Explorer ou da **[!UICONTROL Profiles and Targets]** da página inicial, por meio da **[!UICONTROL Targeting workflows]** subguia .
+* Criar [Workflows para construção do target](#targeting-workflows) do **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]** do Explorer ou do **[!UICONTROL Profiles and Targets]** da página inicial, por meio da guia **[!UICONTROL Targeting workflows]** subguia.
 
    ![](assets/create-targeting-wf.png)
 
-* Criar [Workflows da campanha](#campaign-workflows) do **[!UICONTROL Targeting and workflows]** guia de uma campanha
+* Criar [Fluxos de trabalho de campanha](#campaign-workflows) do **[!UICONTROL Targeting and workflows]** guia de uma campanha
 
 * Criar [Fluxos de trabalho técnicos](#technical-workflows) do **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** do Explorer. A prática recomendada é criar uma pasta de workflow específica para salvar seus workflows técnicos.
 
@@ -84,8 +84,8 @@ Você pode alterar a exibição e o layout do gráfico usando os seguintes eleme
 
    Os ícones relacionados ao progresso e à exibição de logs são detalhados nestas seções:
 
-   * [Exibição do progresso](monitor-workflow-execution.md#displaying-progress)
-   * [Logs de exibição](monitor-workflow-execution.md#displaying-logs)
+   * [Exibir progresso](monitor-workflow-execution.md#displaying-progress)
+   * [Exibir logs](monitor-workflow-execution.md#displaying-logs)
 
 * **Alinhamento de objeto**
 
@@ -107,11 +107,11 @@ Clique duas vezes em uma atividade para configurá-la ou clique com o botão dir
 
 As primeiras guias contêm a configuração básica. A guia **[!UICONTROL Advanced]** contém os parâmetros adicionais, que são usados principalmente para definir o comportamento em caso de erro, especificando a duração da execução para uma atividade e para inserir um script de inicialização.
 
-Para entender melhor as atividades e melhorar a legibilidade do workflow, você pode inserir comentários nas atividades.
+Para entender melhor as atividades e melhorar a legibilidade do fluxo de trabalho, você pode inserir comentários nas atividades.
 
 ![](assets/example1-comment.png)
 
-Esses comentários são exibidos automaticamente quando os operadores rolam pela atividade.
+Esses comentários são exibidos automaticamente quando os operadores navegam pela atividade.
 
 ![](assets/example2-comment.png)
 
@@ -158,7 +158,7 @@ No entanto, é possível criar uma visualização para exibir todos os workflows
 A nova pasta **Workflows** é criada.
 
 1. Clique com o botão direito do mouse e selecione **Properties**.
-1. No **Restrição** , ative a **Esta pasta é uma visualização** e clique em **Salvar**.
+1. No **Restrição** , ative a opção **Esta pasta é uma exibição** e clique em **Salvar**.
 
    ![](assets/folder-is-a-view.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Espaço de trabalho do Discover Campaign
-description: Saiba como navegar e usar a área de trabalho do Campaign
+title: Conheça o espaço de trabalho do Campaign
+description: Saiba como navegar e usar o espaço de trabalho do Campaign
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
@@ -12,45 +12,45 @@ ht-degree: 32%
 
 ---
 
-# Interface do usuário do Discover Campaign
+# Conheça a interface do usuário do Campaign
 
-## Acessar a interface do usuário do Campaign{#ui-access}
+## Acessar a interface do Campaign{#ui-access}
 
 O espaço de trabalho do Campaign está disponível por meio do [Console do cliente](../architecture/general-architecture.md).
 
-Saiba como instalar e configurar o Console do cliente do Campaign em [esta seção](../start/connect.md).
+Saiba como instalar e configurar o Console do cliente do Campaign no [nesta seção](../start/connect.md).
 
 ![](assets/home-page.png)
 
 Você também pode usar um navegador da Web para acessar o Campaign. Nesse contexto, somente um subconjunto de recursos do Campaign está disponível. [Saiba mais](#web-browser)
 
-## Procurar a interface do usuário{#ui-browse}
+## Navegar na interface{#ui-browse}
 
-Depois de se conectar ao Campaign, você acessa a página inicial. Navegue pelos links para acessar os recursos. O conjunto de recursos disponíveis na interface do usuário depende de suas opções e permissões.
+Depois de se conectar ao Campaign, você acessa a home page. Navegue pelos links para acessar recursos do. O conjunto de recursos disponíveis na interface do usuário depende de suas opções e permissões.
 
 Na seção central da página inicial, use links para acessar os materiais de ajuda do Campaign, a comunidade e o site de suporte.
 
-Use as guias na seção superior para navegar pelos principais recursos do Campaign:
+Use as guias na seção superior para procurar recursos principais do Campaign:
 
 ![](assets/overview-home.png)
 
 >[!NOTE]
 >
->A lista de recursos principais que você pode acessar depende de suas permissões e da implementação.
+>A lista de recursos principais que você pode acessar depende das suas permissões e da sua implementação.
 
-Para cada recurso, você pode acessar o conjunto de recursos principais na variável **[!UICONTROL Browsing]** seção. O **[!UICONTROL More]** permite acessar todos os outros componentes.
+Para cada recurso, você pode acessar o conjunto de recursos principais na **[!UICONTROL Browsing]** seção. A variável **[!UICONTROL More]** link permite acessar todos os outros componentes.
 
-Por exemplo, ao navegar para a variável **[!UICONTROL Profiles and targets]** , é possível acessar as listas de recipients, os serviços de assinatura, os workflows para construção do target existentes e os atalhos para criar todos esses componentes.
+Por exemplo, ao navegar até o **[!UICONTROL Profiles and targets]** , você poderá acessar listas de recipients, serviços de assinatura, workflows para construção do target existentes e atalhos para criar todos esses componentes.
 
 ![](assets/overview-list.png)
 
-Ao selecionar um elemento na tela, ele é carregado em uma nova guia, para que você possa navegar facilmente pelo conteúdo.
+Quando você seleciona um elemento na tela, ele é carregado em uma nova guia para que você possa navegar facilmente pelo conteúdo.
 
 ![](assets/new-tab.png)
 
 ## Criar um elemento {#create-an-element}
 
-Use atalhos no **[!UICONTROL Create]** à esquerda da tela para adicionar novos elementos. Também é possível usar a variável **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
+Use atalhos na **[!UICONTROL Create]** à esquerda da tela para adicionar novos elementos. Você também pode usar a variável **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
 
 Por exemplo, na página de delivery, use o botão **[!UICONTROL Create]** para criar um novo delivery.
 
@@ -58,21 +58,21 @@ Por exemplo, na página de delivery, use o botão **[!UICONTROL Create]** para c
 
 ## Usar um navegador da Web {#web-browser}
 
-Você também pode acessar um subconjunto de recursos do Campaign por meio de um navegador da Web.
+Também é possível acessar um subconjunto de recursos do Campaign por meio de um navegador da Web.
 
 A interface de acesso da web é semelhante à interface do console. Em um navegador, você pode usar os mesmos recursos de navegação e exibição do console, mas é possível executar apenas um conjunto reduzido de ações em campanhas. Por exemplo, é possível visualizar e cancelar campanhas, mas não modificar campanhas.
 
-![](../assets/do-not-localize/glass.png) [Saiba mais sobre o acesso à Web do Campaign](../start/connect.md#web-access).
+![](../assets/do-not-localize/glass.png) [Saiba mais sobre o Campaign Web Access](../start/connect.md#web-access).
 
-## Acessar o explorador da campanha {#ac-explorer-ui}
+## Acessar o explorador do Campaign {#ac-explorer-ui}
 
-Navegue pelo explorador do Campaign para acessar todos os recursos e configurações do Adobe Campaign.
+Navegue pelo Campaign Explorer para acessar todos os recursos e configurações do Adobe Campaign.
 
 ![](assets/explorer.png)
 
-Este espaço de trabalho permite acessar a árvore do Explorer para procurar todos os recursos e opções.
+Esse espaço de trabalho permite que você acesse a árvore do Explorer para procurar todos os recursos e opções.
 
-* A seção à esquerda mostra a árvore do explorador do Campaign e permite navegar em todos os componentes e configurações da sua instância, com base em suas permissões. Você pode adicionar e personalizar pastas conforme explicado em [esta página](../audiences/folders-and-views.md).
+* A seção à esquerda mostra a árvore do explorador do Campaign e permite navegar por todos os componentes e configurações da sua instância com base em suas permissões. Você pode adicionar e personalizar pastas conforme explicado em [esta página](../audiences/folders-and-views.md).
 
 * A seção superior mostra a lista de registros na pasta atual. Essas listas são totalmente personalizáveis. [Saiba mais](../config/ui-settings.md)
 
@@ -94,7 +94,7 @@ O idioma é selecionado durante o processo de instalação.
 >
 >O idioma não pode ser alterado após a criação da instância.
 
-O idioma afeta os formatos de data e hora.
+O idioma afeta datas e formatos de hora.
 
 As principais diferenças entre inglês americano e inglês do Reino Unido são:
 

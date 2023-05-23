@@ -15,7 +15,7 @@ ht-degree: 81%
 
 * **[Gestão de conteúdo](content-management.md)**: permite criar ou personalizar o conteúdo.
 * **[Delivery contínuo](continuous-delivery.md)**: permite iniciar um delivery partir do cenário especificado na atividade.
-* **[Deliveries entre canais](cross-channel-deliveries.md)** (somente workflows da campanha): permite configurar um delivery no canal correspondente: Email, Push, Móvel, Correspondência direta.
+* **[Cross-channel deliveries](cross-channel-deliveries.md)** (somente workflows da campanha): permite configurar um delivery no canal correspondente: Email, Push, Mobile, Direct mail.
 * **[Carregamento de dados (arquivo)](data-loading--rdbms-.md)**: permite acessar uma fonte de dados externa para usar seus dados.
 * **[Carregamento de dados (RDBMS)](data-loading--rdbms-.md)**: permite acessar um banco de dados externo para obter dados.
 * **[Delivery](delivery.md)**: permite configurar uma ação de delivery.
@@ -23,7 +23,7 @@ ht-degree: 81%
 * **[Extração (arquivo)](extraction--file-.md)**: permite extrair dados de uma tabela em um arquivo.
 * **[Carregamento (SOAP)](loading-soap.md)**: permite coletar dados por uma chamada SOAP.
 * **[Aprovação local](local-approval.md)**: permite realizar aprovações e notificações de target em um contexto de marketing distribuído (módulo opcional).
-* **[Módulo nlserver](nlserver-module.md)**: inicia um módulo nlserver com seus argumentos.
+* **[Módulo Nlserver](nlserver-module.md)**: inicia um módulo nlserver com seus argumentos.
 * **[Delivery recorrente](recurring-delivery.md)**: permite configurar uma ocorrência do template do delivery em uma campanha.
 * **[Código SQL e código JavaScript](sql-code-and-javascript-code.md)**: executa o script SQL ou o JavaScript especificado na atividade.
 * **[Gestão de Dados SQL](sql-data-management.md)**: permite escrever seus próprios queries SQL para criar e preencher tabelas de trabalho.

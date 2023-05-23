@@ -1,5 +1,5 @@
 ---
-title: Relatórios internos do Adobe Campaign
+title: Relatórios integrados do Adobe Campaign
 description: Relatórios incorporados
 feature: Reporting
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
@@ -10,20 +10,20 @@ ht-degree: 89%
 
 ---
 
-# Relatórios internos do Adobe Campaign{#ootb-reports}
+# Relatórios integrados do Adobe Campaign{#ootb-reports}
 
-Esta página fornece a lista de relatórios internos do Adobe Campaign, seu conteúdo e seu contexto. O Adobe Campaign fornece uma variedade de relatórios internos, acessíveis com o console do cliente ou um navegador da Internet.
+Esta página fornece a lista de relatórios internos do Adobe Campaign, seu conteúdo e seu contexto. O Adobe Campaign fornece uma variedade de relatórios internos, acessíveis com o console do cliente ou com um navegador da Internet.
 
 Os seguintes tipos de relatório estão disponíveis:
 
 * Relatórios sobre toda a plataforma. [Saiba mais](global-reports.md).
 * Relatórios de entrega. [Saiba mais](delivery-reports.md).
 
-Você pode acessar relatórios internos da página inicial do Campaign, do painel de relatórios dedicados ou da lista de delivery. A maneira como o relatório é exibido na interface do usuário depende de seu contexto.
+Você pode acessar relatórios internos na página inicial do Campaign, no painel de relatórios dedicado ou na lista de delivery. A forma como o relatório é exibido na interface depende do contexto.
 
-Uma lista de relatórios principais está disponível na home page e permite acessar os dados de delivery rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Você também pode aprender a adicionar seus próprios relatórios à guia **[!UICONTROL Reports]**.
+Uma lista dos principais relatórios está disponível na home page e permite acessar os dados de delivery rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Você também pode aprender a adicionar seus próprios relatórios à guia **[!UICONTROL Reports]**.
 
-Para obter mais informações sobre essas configurações personalizadas, consulte esta seção [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
+Para obter mais informações sobre essas configurações personalizadas, consulte esta [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
 
 
 ## Acessar relatórios integrados {#access-ootb-reports}

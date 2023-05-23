@@ -12,18 +12,18 @@ ht-degree: 21%
 
 # Alterar fonte de dados {#change-data-source}
 
-Use o **[!UICONTROL Change data source]** atividade para alterar a fonte de dados de um [tabela de trabalho do fluxo de trabalho](use-workflow-data.md#workflow-temporary-work-table). Essa atividade oferece mais flexibilidade para gerenciar dados em diferentes fontes de dados, como o Federated Data Access (FDA), o banco de dados do Campaign Cloud (FDA) e o banco de dados local do Campaign.
+Use o **[!UICONTROL Change data source]** atividade para alterar a fonte de dados de uma [tabela de trabalho do workflow](use-workflow-data.md#workflow-temporary-work-table). Essa atividade oferece mais flexibilidade para gerenciar dados em diferentes fontes de dados, como o Federated Data Access (FDA), o banco de dados da Campaign Cloud (FFDA) e o banco de dados local do Campaign.
 
-O fluxo de trabalho **[!UICONTROL Working table]** é usada para manipular e compartilhar dados com as atividades do workflow.
+O fluxo de trabalho **[!UICONTROL Working table]** é usado para manipular e compartilhar dados com as atividades do workflow.
 
-Por padrão, a variável **[!UICONTROL Working table]** é criado no mesmo banco de dados que a fonte dos dados que você precisa consultar.
-Por exemplo, ao consultar o **[!UICONTROL Recipients]** , armazenado no banco de dados do Cloud, o workflow cria um **[!UICONTROL Working table]** no mesmo banco de dados do Cloud.
+Por padrão, a variável **[!UICONTROL Working table]** é criado no mesmo banco de dados da fonte de dados que você precisa consultar.
+Por exemplo, ao consultar a variável **[!UICONTROL Recipients]** armazenada no banco de dados em nuvem, o workflow cria um **[!UICONTROL Working table]** no mesmo banco de dados em nuvem.
 
-Use um **[!UICONTROL Change Data Source]** para usar uma fonte de dados diferente para sua **[!UICONTROL Working table]**.
+Use um **[!UICONTROL Change Data Source]** atividade para usar uma fonte de dados diferente para sua **[!UICONTROL Working table]**.
 
-Observe que ao usar a variável **[!UICONTROL Change Data Source]** , é necessário alternar de volta para o banco de dados do Cloud para continuar a execução do workflow.
+Observe que ao usar o **[!UICONTROL Change Data Source]** atividade, é necessário alternar de volta para o banco de dados em nuvem para continuar a execução do workflow.
 
-Para usar o **[!UICONTROL Change Data Source]** atividade , é necessário:
+Para usar o **[!UICONTROL Change Data Source]** atividade, você deve:
 
 1. Criar um workflow.
 
@@ -31,23 +31,23 @@ Para usar o **[!UICONTROL Change Data Source]** atividade , é necessário:
 
    Para mais informações sobre a atividade **[!UICONTROL Query]**, consulte esta [página](query.md#create-a-query).
 
-1. Adicione um **[!UICONTROL Change data source]** atividade .
+1. Adicionar um **[!UICONTROL Change data source]** atividade.
 
    ![](assets/change-data-source.png)
 
-1. Edite as **[!UICONTROL Change data source]** atividade para selecionar **[!UICONTROL Default data source]**.
+1. Editar seu **[!UICONTROL Change data source]** atividade a ser selecionada **[!UICONTROL Default data source]**.
 
    A tabela de trabalho, que contém o resultado do query, é então movida para o banco de dados local padrão do Campaign.
 
    ![](assets/change-data-source_2.png)
 
-1. Adicione um **[!UICONTROL JavaScript code]** para executar operações unitárias na tabela de trabalho.
+1. Adicionar um **[!UICONTROL JavaScript code]** atividade para executar operações unitárias na tabela de trabalho.
 
-   Para obter mais informações sobre o **[!UICONTROL JavaScript code]** , consulte a [esta página](sql-code-and-javascript-code.md#javascript-code).
+   Para obter mais informações sobre o **[!UICONTROL JavaScript code]** consulte a seção [esta página](sql-code-and-javascript-code.md#javascript-code).
 
 1. Adicione outra atividade **[!UICONTROL Change data source]** para alternar de volta para o banco de dados em nuvem.
 
-1. Editar esta atividade e selecionar **[!UICONTROL Active FDA external account]** e o correspondente **[!UICONTROL External database]** conta externa.
+1. Editar esta atividade e selecionar **[!UICONTROL Active FDA external account]** e as correspondentes **[!UICONTROL External database]** conta externa.
 
    ![](assets/change-data-source_3.png)
 

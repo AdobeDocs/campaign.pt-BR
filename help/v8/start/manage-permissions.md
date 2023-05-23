@@ -1,5 +1,5 @@
 ---
-title: Conceder permissões ao Campaign v8
+title: Conceder permissões para o Campaign v8
 description: Saiba como conceder permissões a usuários do Campaign v8
 feature: Permissions
 role: User, Admin
@@ -16,44 +16,44 @@ ht-degree: 41%
 
 ## Adicionar usuários {#add-users}
 
-Como administrador de produtos, você pode adicionar usuários e conceder acesso ao Campaign.
+Como administrador de produto, você pode adicionar usuários e conceder acesso ao Campaign.
 
 Para adicionar um usuário, siga as etapas abaixo:
 
-1. No [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} página inicial, selecione **Adicionar usuários**.
+1. No [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} home page, selecione **Adicionar usuários**.
 
    ![](assets/add-a-user.png)
 
 1. Insira o endereço de email do usuário.
-1. Use o sinal de &quot;+&quot; para selecionar os perfis de produto ou grupos de usuários a serem atribuídos ao usuário.
+1. Use o sinal &quot;+&quot; para selecionar os perfis de produto ou grupos de usuários a serem atribuídos ao usuário.
 
    ![](assets/add-a-product-profile.png)
 
-   Os perfis de produto integrados do Campaign são listados em [esta seção](#ootb-productprofiles).
+   Os perfis de produto integrados do Campaign estão listados em [nesta seção](#ootb-productprofiles).
 
-   Saiba como criar grupos de usuários no [esta seção](#user-groups)
+   Saiba como criar grupos de usuários no [nesta seção](#user-groups)
 
-1. Clique em **Save**. O usuário é adicionado e exibido na lista Usuários. Se você atribuir uma função de administrador ou um Perfil de produto aos usuários, eles receberão uma notificação por email. Os usuários devem seguir o link para concluir o perfil.
+1. Clique em **Save**. O usuário é adicionado e é exibido na lista Usuários. Se você atribuir uma função de administrador ou um Perfil de produto aos usuários, eles receberão uma notificação por email. Os usuários devem seguir o link para concluir seu perfil.
 
-Saiba mais sobre a criação de usuários no Admin Console [esta página](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
+Saiba mais sobre a criação de usuários no Admin Console em [esta página](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
 
-Quando novos usuários [fazer logon no Campaign](connect.md) com a Adobe ID, eles são adicionados à lista Operadores do Campaign no console do cliente. Os operadores de campanha são armazenados no **[!UICONTROL Administration > Access management > Operators]** pasta do explorador do Campaign.
+Quando novos usuários [fazer logon no Campaign](connect.md) com o Adobe ID, eles são adicionados à lista de operadores do Campaign no console do cliente. Os operadores de campanha são armazenados no **[!UICONTROL Administration > Access management > Operators]** pasta do explorador do Campaign.
 
 ## Trabalhar com perfis de produto{#product-profiles}
 
-Use perfis de produto para dar aos usuários os recursos incluídos no produto.
+Use perfis de produto para habilitar os usuários com os recursos incluídos no produto.
 
 * Para cada produto no Admin Console, é possível criar um ou mais perfis de produto.
-* Em cada perfil de produto, você atribui usuários e grupos de usuários (na organização).
-* Quando um usuário faz logon com as credenciais especificadas no perfil do produto, ele recebe acesso aos aplicativos e serviços do produto no qual o perfil do produto é baseado.
+* Em cada perfil de produto, você atribui usuários e grupos de usuários (em sua organização).
+* Quando um usuário faz logon com suas credenciais, conforme especificado no perfil do produto, ele recebe acesso aos aplicativos e serviços do produto no qual o perfil do produto se baseia.
 
-Esses perfis de produto correspondem aos grupos de operadores que são armazenados no **[!UICONTROL Administration > Access management > Operator groups]** pasta do explorador do Campaign.
+Esses perfis de produtos correspondem aos grupos de operadores armazenados no **[!UICONTROL Administration > Access management > Operator groups]** pasta do explorador do Campaign.
 
-No Admin Console, os perfis de produtos usam a seguinte sintaxe:
+No Admin Console, os perfis de produto usam a seguinte sintaxe:
 
-campaign - `<your instance>` - nome interno do grupo de operadores
+campanha - `<your instance>` - nome interno do grupo de operadores
 
-Por exemplo, para a variável **Operador Delivery** na instância &#39;test&#39;, o perfil de produto no Admin Console é:
+Por exemplo, para o **Operador de entrega** grupo na instância &quot;test&quot;, o perfil de produto no Admin Console é:
 
 campaign - test - delivery
 
@@ -61,36 +61,36 @@ Você pode usar perfis de produto padrão ou criar novos.
 
 ### Criar um perfil de produto{#create-product-profile}
 
-Para adicionar um novo perfil de produto ao Adobe, primeiro você deve criá-lo no console do cliente do Campaign e depois adicioná-lo no Admin Console.
+Para adicionar um novo perfil de produto ao Adobe, primeiro você deve criá-lo no console do cliente do Campaign e, em seguida, adicioná-lo ao Admin Console.
 
 Por exemplo, para criar um perfil de produto &quot;revisores&quot;, siga as etapas abaixo.
 
 #### Criar o grupo de operadores no Campaign{#create-op-group}
 
 1. Conecte-se ao Campaign, abra o Explorer e navegue até **[!UICONTROL Administration > Access management > Operator groups]**.
-1. Clique em **[!UICONTROL New]**e defina o nome do grupo de operadores e defina seu nome interno (&#39;revisores&#39;).
+1. Clique em **[!UICONTROL New]**e definir o nome do grupo de operadores e definir seu nome interno (&quot;revisores&quot;).
    ![](assets/new-op-group.png)
-1. Defina as permissões associadas selecionando direitos nomeados. Os direitos nomeados são detalhados em [esta seção](#use-named-rights)
+1. Defina as permissões associadas selecionando direitos nomeados. Os direitos nomeados são detalhados em [nesta seção](#use-named-rights)
 1. Salve o novo grupo de operadores.
 
-#### Crie o perfil de produto no Admin Console{#create-profile-in-admin-console}
+#### Criar o perfil de produto no Admin Console{#create-profile-in-admin-console}
 
-1. Conecte-se ao [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
-1. No **Produtos e serviços** da página inicial, abra o Campaign product.
-1. Clique em **Novo perfil** e insira o nome do perfil de produto a ser criado, com a sintaxe exata correta, como explicado [here](#product-profiles). Para nosso exemplo, inserimos: campaign - `<your-instance-name>` - revisores
+1. Conecte-se à [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
+1. No **Produtos e serviços** da página inicial, abra o produto Campaign.
+1. Clique em **Novo perfil** e insira o nome do perfil de produto a ser criado, com a sintaxe exata correta, conforme explicado [aqui](#product-profiles). Para o nosso exemplo, inserimos: campanha - `<your-instance-name>` - revisores
 
    ![](assets/new-product-profile-ui.png)
 
 1. Salve as alterações.
 
-Agora você pode adicionar usuários a esse novo perfil de produto, como explicado em [esta seção](#add-users).
+Agora você pode adicionar usuários a esse novo perfil de produto, conforme explicado em [nesta seção](#add-users).
 
-A prática recomendada é atribuir perfis de produtos a grupos de usuários. O gerenciamento de permissões por usuário não é um modelo sustentável.
+A prática recomendada é atribuir perfis de produto a grupos de usuários. O gerenciamento de permissões por usuário não é um modelo sustentável.
 
 
 ### Perfis de produto e grupos de operadores padrão {#ootb-productprofiles}
 
-O Adobe Campaign vem com **perfis de produto** que são definidas quando o Adobe ativa seu ambiente.
+O Adobe Campaign vem com **perfis de produto** que são definidos quando o Adobe habilita seu ambiente.
 
 ![](assets/ootb-product-profiles.png)
 
@@ -128,23 +128,23 @@ Esses perfis de produto correspondem ao Campaign **grupos de operadores**. Os gr
 
 1. **[!UICONTROL Content contributors]** (conteúdo)
 
-   Os usuários desse grupo podem acessar as pastas Conteúdo, no contexto da variável **[!UICONTROL Content management]** complemento. Este grupo não concede permissões adicionais.
+   Os usuários neste grupo podem acessar as pastas Conteúdo, no contexto do **[!UICONTROL Content management]** complementar. Este grupo não concede permissões adicionais.
 
 1. **[!UICONTROL Access to reports]** (relatório)
 
    Esse grupo é reservado para operadores externos, para acessar os relatórios do delivery por meio de um [Acesso à Web](../start/campaign-ui.md#web-browser).
 
-1. **[!UICONTROL Workflow execution]** (workflow)
+1. **[!UICONTROL Workflow execution]** (fluxo de trabalho)
 
    O grupo **[!UICONTROL Workflow execution]** permite controlar a execução e a aprovação de workflows para construção de target: o direito nomeado WORKFLOW é mapeado para os operadores deste grupo. É necessário para todas as ações em workflows, além de direitos de acesso aos arquivos de dados. Por padrão, o grupo **[!UICONTROL Workflow execution]** tem acesso somente leitura de arquivos padrão de workflows para construção de target e templates de workflow. Os operadores neste grupo também têm acesso de leitura e gravação para o arquivo de aprovação pendente.
 
 1. **[!UICONTROL Workflow supervisors]** (workflowSupervisor)
 
-   Os usuários desse grupo gerenciam aprovações de workflow e recebem uma notificação por email no caso de alertas relativos aos workflows da campanha.
+   Os usuários neste grupo gerenciam aprovações de workflow e recebem uma notificação por email no caso de alertas relativos aos workflows da campanha.
 
-1. **Gerenciamento local / central** (central/local)
+1. **Gerenciamento local/central** (central/local)
 
-   Os usuários deste grupo podem usar **[!UICONTROL Distributed marketing]** complemento.
+   Os usuários neste grupo podem usar **[!UICONTROL Distributed marketing]** complementar.
 
 1. **[!UICONTROL Offer managers]** (oferta)
 
@@ -167,27 +167,27 @@ Esses perfis de produto correspondem ao Campaign **grupos de operadores**. Os gr
 
    >[!NOTE]
    >
-   >**Gerentes de oferta** só pode aprovar uma oferta se nenhum revisor for especificado, ou se tiverem sido definidos como revisores no template de oferta.
+   >**Gerentes de oferta** O só pode aprovar uma oferta se nenhum revisor for especificado, ou se eles tiverem sido definidos como revisores no modelo de oferta.
 
-   A matriz de permissões do gerente de ofertas por ambiente está disponível em [esta página](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
+   A matriz de permissões do Offer Manager por ambiente está disponível em [esta página](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
 
 ## Trabalhar com grupos de usuários{#user-groups}
 
 Você pode usar o Admin Console para criar grupos de usuários e atribuir usuários a eles.
 
-Um grupo de usuários é uma coleção de usuários diferentes que precisam receber um conjunto compartilhado de permissões. Saiba como criar grupos de usuários no [esta seção](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}.
+Um grupo de usuários é uma coleção de usuários diferentes que precisam receber um conjunto compartilhado de permissões. Saiba como criar grupos de usuários no [nesta seção](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}.
 
-Você pode atribuir perfis de produtos a grupos de usuários. Assim, todos os usuários desse grupo receberão o mesmo conjunto de permissões de produto.
+É possível atribuir perfis de produto a grupos de usuários. Assim, todos os usuários nesse grupo receberão o mesmo conjunto de permissões do produto.
 
 ## Direitos nomeados{#use-named-rights}
 
-O Adobe Campaign vem com um conjunto de direitos nomeados que permitem definir as permissões atribuídas a usuários e grupos de usuários. Esses direitos podem ser editados no **[!UICONTROL Administration > Access management > Named rights]** pasta do explorador do Campaign.
+O Adobe Campaign vem com um conjunto de direitos nomeados que permitem definir as permissões atribuídas a usuários e grupos de usuários. Esses direitos podem ser editados no campo **[!UICONTROL Administration > Access management > Named rights]** pasta do explorador do Campaign.
 
-Permissões de concessão de direitos nomeados para:
+Os direitos nomeados concedem permissões a:
 
-* Executar operações Por exemplo, a variável **Analisar** no Editor de delivery é ativado para membros do **Operador Delivery** grupo que tem o **Preparar entrega** Nomeado à direita
+* Executar operações Por exemplo, a variável **Analisar** no Editor de entrega é ativado para membros da **Operador de Entrega** grupo que tem o **Preparar entrega** Nomeado à direita
 
-* Acesso a pastas A associação de grupos de operadores pode conceder ou restringir direitos de acesso a pastas, alterando as configurações de segurança em pastas. [Saiba mais](folder-permissions.md#restrict-access-to-a-folder).
+* O acesso a pastas Associação de grupos de operadores pode conceder ou restringir direitos de acesso a pastas, alterando as configurações de segurança nas pastas. [Saiba mais](folder-permissions.md#restrict-access-to-a-folder).
 
    Por exemplo, pode afetar: **Acesso de gravação** para criar novas entidades (como deliveries, perfis etc.), **Acesso de leitura** para usar entidades, **Excluir acesso** para excluir entidades.
 
@@ -227,16 +227,16 @@ Os direitos nomeados padrão no Adobe Campaign são:
 
 * **[!UICONTROL START DELIVERIES]**: Direito de aprovar deliveries anteriormente analisados. Após a análise, o delivery pausará em várias etapas de aprovação e precisará ser aprovado para retomar. Os usuários com o direito **[!UICONTROL START DELIVERIES]** podem aprovar deliveries.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Direito de escrever seus próprios scripts SQL usando a atividade de Gestão de Dados SQL, para criar e preencher tabelas de trabalho. [Saiba mais](../../automation/workflow/sql-data-management.md).
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: direito de escrever seus próprios scripts SQL usando a atividade de gerenciamento de dados SQL, para criar e preencher tabelas de trabalho. [Saiba mais](../../automation/workflow/sql-data-management.md).
 
-* **[!UICONTROL WORKFLOW]**: Esse direito nomeado é específico para workflows: ele permite criar, iniciar e parar workflows. Os direitos de leitura no arquivo de workflow são necessários para que o direito nomeado seja aplicável. Para workflows para construção do target, a leitura no campo **[!UICONTROL Profiles and Targets]** é necessária.
+* **[!UICONTROL WORKFLOW]**: esse direito nomeado é específico para workflows: permite criar, iniciar e parar workflows. Os direitos de leitura no arquivo de workflow são necessários para que o direito nomeado seja aplicável. Para workflows para construção do target, a leitura no **[!UICONTROL Profiles and Targets]** é necessária.
 
 
 * **[!UICONTROL WEBAPP]**: direito de usar aplicações web.
 
 >[!NOTE]
 >
->Essa lista pode ser diferente dependendo dos complementos instalados no seu ambiente.
+>Essa lista pode variar dependendo dos complementos instalados no ambiente.
 
 
 

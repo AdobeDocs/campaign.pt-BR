@@ -6,19 +6,19 @@ exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
 source-wordcount: '707'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
 # Usar dados de fluxo de trabalho{#how-to-use-workflow-data}
 
-Você pode usar atividades de fluxo de trabalho para executar várias tarefas. Encontre abaixo exemplos de uso para atualizar o banco de dados criando listas, gerenciando assinaturas, enviando mensagens por meio de um workflow ou enriquecendo seus deliveries e seus públicos-alvo.
+Você pode usar atividades de workflow para executar várias tarefas. Encontre abaixo exemplos de uso para atualizar o banco de dados criando listas, gerenciar assinaturas, enviar mensagens por meio de um fluxo de trabalho ou enriquecer seus deliveries e seus públicos.
 
-Um conjunto de casos de uso de workflow está disponível em [esta seção](workflow-use-cases.md).
+Um conjunto de casos de uso de fluxo de trabalho está disponível em [nesta seção](workflow-use-cases.md).
 
 ## Ciclo de vida dos dados {#data-life-cycle}
 
-### Tabela de trabalho temporário de workflow {#work-table}
+### Tabela de trabalho temporário do fluxo de trabalho {#work-table}
 
 Nos workflows, os dados transportados de uma atividade para outra são armazenados em uma tabela de trabalho temporária.
 
@@ -30,11 +30,11 @@ Para fazer isso, selecione o menu relevante:
 
 * **[!UICONTROL Display the target...]**
 
-   Esse menu exibe os dados disponíveis sobre a população do target.
+   Esse menu exibe os dados disponíveis sobre o público-alvo.
 
    ![](assets/wf-right-click-display.png)
 
-   É possível acessar a estrutura da tabela de trabalho na **[!UICONTROL Schema]** guia .
+   É possível acessar a estrutura da tabela de trabalho no **[!UICONTROL Schema]** guia.
 
    ![](assets/wf-right-click-schema.png)
 
@@ -52,12 +52,12 @@ Os dados do target são descartados na execução do workflow Somente a última 
 
 >[!CAUTION]
 >
->Essa opção deve **never** seja verificado em um **produção** fluxo de trabalho. Essa opção é usada para analisar os resultados e é projetada apenas para fins de teste e, portanto, deve ser usada apenas em ambientes de desenvolvimento ou de preparo.
+>Essa opção **nunca** deve ser selecionada em um fluxo de trabalho de **produção**. Essa opção é usada para analisar os resultados e é projetada apenas para fins de teste e, portanto, deve ser usada apenas em ambientes de desenvolvimento ou de preparo.
 
 
-### Aproveitar os dados do target {#target-data}
+### Aproveitar os dados de destino {#target-data}
 
-Os dados armazenados na tabela de trabalho temporário do workflow estão disponíveis para tarefas de personalização. Os dados podem ser usados na variável [campos de personalização](../../v8/send/personalization-fields.md).
+Os dados armazenados na tabela de trabalho temporária do workflow estão disponíveis para tarefas de personalização. Os dados podem ser utilizados na [campos de personalização](../../v8/send/personalization-fields.md).
 
 Isso permite usar dados coletados por uma lista em um delivery, por exemplo. Para fazer isso, use a seguinte sintaxe:
 
@@ -67,7 +67,7 @@ Isso permite usar dados coletados por uma lista em um delivery, por exemplo. Par
 
 Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para fluxos de trabalho para construção do target. O target do delivery deve ser construído no fluxo de trabalho e especificado na transição de entrada do delivery.
 
-No exemplo a seguir, você está coletando uma lista de informações sobre clientes, para ser usada em um email personalizado. Siga as etapas abaixo:
+No exemplo a seguir, você está coletando uma lista de informações sobre clientes, para serem usadas em um email personalizado. Siga as etapas abaixo:
 
 1. Crie um workflow para coletar informações, reconcilie com os dados já existentes no banco de dados, e depois inicie um delivery.
 
@@ -85,11 +85,11 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
    [...]
    ```
 
-   Para carregar o arquivo, configure a variável **[!UICONTROL Data loading (file)]** atividade conforme abaixo:
+   Para carregar o arquivo, configure o **[!UICONTROL Data loading (file)]** atividade conforme abaixo:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Configure o **[!UICONTROL Enrichment]** para reconciliar os dados coletados com os existentes no banco de dados do Adobe Campaign. Aqui, a chave de conciliação é o número da conta:
+1. Configure o **[!UICONTROL Enrichment]** atividade para reconciliar os dados coletados com os existentes no banco de dados do Adobe Campaign. Aqui, a chave de conciliação é o número da conta:
 
    ![](assets/wf-targetdata-sample-3.png)
 

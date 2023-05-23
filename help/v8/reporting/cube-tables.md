@@ -23,7 +23,7 @@ Use cubos para criar relatórios e identificar e selecionar dados do banco de da
 
 ### Etapa 1 - Criar um relatório com base em um cubo {#step-1---create-a-report-based-on-a-cube}
 
-Uma vez [cubo está configurado](cube-indicators.md), ele pode ser usado como um template para criar um novo relatório.
+Quando a variável [o cubo está configurado](cube-indicators.md), ele pode ser usado como um template para criar um novo relatório.
 
 Para criar um relatório com base em um cubo existente, siga as etapas abaixo:
 
@@ -91,7 +91,7 @@ Para adicionar e configurar medidas, siga as etapas abaixo:
 
    ![](assets/cube-measure-button.png)
 
-1. Com o **[!UICONTROL Use a measure]** , selecione uma das medidas existentes.
+1. Com o **[!UICONTROL Use a measure]** selecione uma das medidas existentes.
 
    ![](assets/cube-add-measure.png)
 
@@ -123,7 +123,7 @@ Para adicionar e configurar medidas, siga as etapas abaixo:
 
    ![](assets/cube-display-new-measure.png)
 
-   Depois de criar uma medida, você pode editá-la e alterar sua configuração. Para fazer isso, clique no botão **[!UICONTROL Measures]** , em seguida, navegue até a guia da medida a ser editada.
+   Depois de criar uma medida, você pode editá-la e alterar sua configuração. Para fazer isso, clique no link **[!UICONTROL Measures]** e navegue até a guia da medida a ser editada.
 
    Em seguida, clique em **[!UICONTROL Edit the dynamic measure]** para acessar o menu de configurações.
 
@@ -143,7 +143,7 @@ Para agrupar uma população em uma lista, siga as etapas abaixo:
 
    ![](assets/cube-show-cart.png)
 
-1. Use o **[!UICONTROL Export]** para agrupar os itens do carrinho em uma lista.
+1. Use o **[!UICONTROL Export]** botão para agrupar os itens do carrinho em uma lista.
 
    Insira o nome da lista e selecione o tipo de exportação a ser executada.
 
@@ -157,7 +157,7 @@ Para agrupar uma população em uma lista, siga as etapas abaixo:
 
    Você pode salvar o conteúdo do carrinho ou esvaziá-lo.
 
-   A nova lista está disponível através do **[!UICONTROL Profiles and targets]** guia .
+   A nova lista está disponível por meio da **[!UICONTROL Profiles and targets]** guia.
 
    ![](assets/cube-list-available.png)
 

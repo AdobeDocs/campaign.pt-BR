@@ -156,7 +156,7 @@ Salve seu template de campanha. Agora você pode usá-lo na visualização **[!U
 
 >[!NOTE]
 >
->Os templates de campanha e sua configuração geral estão detalhados em [esta página](../campaigns/marketing-campaign-templates.md).
+>Os templates de campanha e suas configurações gerais estão detalhados em [esta página](../campaigns/marketing-campaign-templates.md).
 
 ## Criação do pacote de campanha {#creating-the-campaign-package}
 

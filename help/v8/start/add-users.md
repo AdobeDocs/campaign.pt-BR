@@ -1,6 +1,6 @@
 ---
-title: Conceder permissões ao Campaign v8
-description: Saiba como conceder permissões ao Campaign v8
+title: Conceder permissões para o Campaign v8
+description: Saiba como conceder permissões para o Campaign v8
 feature: Permissions
 role: User, Admin
 level: Beginner
@@ -18,23 +18,23 @@ No Adobe Campaign, os usuários são **operadores** e **grupos de operadores** r
 
 Um operador é um usuário do Adobe Campaign que tem permissões para fazer logon e executar ações. Por padrão, os operadores são armazenados no nó **[!UICONTROL Administration > Access management > Operators]**.
 
-O Adobe Campaign é fornecido com grupos de operadores integrados, como Gerentes de Campanha ou Supervisores de Workflow. Saiba mais sobre permissões em [esta seção](../start/gs-permissions.md)
+O Adobe Campaign vem com grupos de operadores integrados, como Gerentes de campanha ou Supervisores de fluxo de trabalho. Saiba mais sobre permissões no [nesta seção](../start/gs-permissions.md)
 
-Como membro de um grupo de operadores, um usuário tem direitos para executar operações, chamadas de &quot;Direitos nomeados&quot;, e tem acesso aos dados, que estão contidos nas pastas na **Explorer** exibir. Um operador pode ser membro de vários grupos de operadores: direitos e permissões de acesso são aditivos.
+Como membro de um grupo de operadores, um usuário tem direitos para executar operações, chamadas de &quot;Direitos nomeados&quot;, e acesso aos dados, que estão contidos nas pastas na **Explorer** exibição. Um operador pode ser membro de vários grupos de operadores: direitos e permissões de acesso são aditivos.
 
-Permissões de concessão de direitos nomeados para:
+Os direitos nomeados concedem permissões a:
 
-* Executar operações Por exemplo, a variável **Analisar** no Editor de delivery é ativado para membros do **Operador Delivery** grupo que tem o **Preparar entrega** Nomeado à direita
+* Executar operações Por exemplo, a variável **Analisar** no Editor de entrega é ativado para membros da **Operador de Entrega** grupo que tem o **Preparar entrega** Nomeado à direita
 
-* Acesso a pastas A associação de grupos de operadores pode conceder ou restringir direitos de acesso a pastas, alterando as configurações de segurança em pastas. Saiba mais [nesta página](../start/folder-permissions.md). Por exemplo, pode afetar: **Acesso de gravação** para criar novas entidades (como deliveries, perfis etc.), **Acesso de leitura** para usar entidades, **Excluir acesso** para excluir entidades.
+* O acesso a pastas Associação de grupos de operadores pode conceder ou restringir direitos de acesso a pastas, alterando as configurações de segurança nas pastas. Saiba mais [nesta página](../start/folder-permissions.md). Por exemplo, pode afetar: **Acesso de gravação** para criar novas entidades (como deliveries, perfis etc.), **Acesso de leitura** para usar entidades, **Excluir acesso** para excluir entidades.
 
 ## Zonas de segurança
 
-Cada operador precisa ser vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona de segurança é realizada no arquivo de configuração do servidor do Adobe Campaign.
+Cada operador precisa ser vinculado a uma zona para fazer logon em uma instância e o operador IP deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona de segurança é realizada no arquivo de configuração do servidor do Adobe Campaign.
 
-Os operadores são vinculados a uma zona de segurança a partir do seu perfil no console, acessível na **[!UICONTROL Administration > Access management > Operators]** nó .
+Os operadores são vinculados a uma zona de segurança a partir de seu perfil no console, acessível no **[!UICONTROL Administration > Access management > Operators]** nó.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, o Adobe define as zonas de segurança para você. Para obter mais informações, [Adobe de contato](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+![](../assets/do-not-localize/speech.png)  Como um usuário Cloud Services gerenciado, o Adobe define as zonas de segurança para você. Para obter mais informações, [Adobe de contato](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 **Saiba mais**
 

@@ -8,7 +8,7 @@ exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 ## Modelo de dados de mensagens transacionais {#about-mc-datamodel}
 
-As mensagens transacionais dependem do modelo de dados do Adobe Campaign e usam duas tabelas separadas adicionais. Estas tabelas, **NmsRtEvent** e **NmsBatchEvent**, contêm os mesmos campos e permitem gerenciar eventos em tempo real, por um lado, e eventos batch, por outro.
+As mensagens transacionais dependem do modelo de dados do Adobe Campaign e usam duas tabelas separadas adicionais. Esses quadros, **NmsRtEvent** e **NmsBatchEvent**, contêm os mesmos campos e permitem gerenciar eventos em tempo real, por um lado, e eventos em lote, por outro.
 
 ## Métodos SOAP {#soap-methods}
 

@@ -16,7 +16,7 @@ ht-degree: 5%
 
 ## Workflows técnicos{#tech-wf}
 
-No contexto de um [Implantação empresarial (FDA)](enterprise-deployment.md), o Adobe Campaign vem com um conjunto de fluxos de trabalho técnicos incorporados. Os workflows técnicos executam processos ou tarefas agendados regularmente no servidor.
+No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), o Adobe Campaign vem com um conjunto de fluxos de trabalho técnicos incorporados. Os workflows técnicos executam processos ou trabalhos, agendados regularmente no servidor.
 
 Esses workflows executam operações de manutenção no banco de dados, aproveitam as informações de rastreamento nos logs do delivery, criam campanhas recorrentes e muito mais.
 
@@ -25,21 +25,21 @@ Esses workflows executam operações de manutenção no banco de dados, aproveit
 Além desses workflows técnicos, o Campaign v8 depende de workflows técnicos específicos para gerenciar [replicação de dados](#data-replication).
 
 * **[!UICONTROL Replicate Reference tables]**
-Esse workflow executa a replicação automática de tabelas incorporadas que precisam estar presentes no banco de dados local do Campaign (Postgres) e no banco de dados do Cloud ([!DNL Snowflake]). Ele é agendado para ser executado a cada hora, diariamente. If **lastModified** existe, a replicação acontece de forma incremental, caso contrário, toda a tabela é replicada. A ordem das tabelas na matriz abaixo é a ordem usada pelo workflow de replicação.
+Esse workflow executa a replicação automática de tabelas integradas que precisam estar presentes no banco de dados local do Campaign (Postgres) e no banco de dados da nuvem ([!DNL Snowflake]). Ele é programado para ser executado a cada hora, diariamente. Se **lastModified** existir, a replicação ocorrerá de forma incremental, caso contrário, a tabela inteira será replicada. A ordem das tabelas no array abaixo é a ordem usada pelo workflow de replicação.
 * **[!UICONTROL Replicate Staging data]**
-Esse workflow replica dados de preparo para chamadas unitárias. Ele é agendado para ser executado a cada hora, diariamente.
+Esse fluxo de trabalho replica dados de preparo para chamadas unitárias. Ele é programado para ser executado a cada hora, diariamente.
 * **[!UICONTROL Deploy FFDA immediately]**\
-   Esse workflow executa uma implantação imediata no banco de dados do Cloud.
+   Este fluxo de trabalho executa uma implantação imediata no banco de dados em nuvem.
 * **[!UICONTROL Replicate FFDA data immediately]**
 Esse workflow replica os dados XS para uma determinada conta externa.
 
-Esses workflows técnicos estão disponíveis na **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** nó do explorador do Campaign. **Eles não devem ser modificados.**
+Esses workflows técnicos estão disponíveis no **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** nó do Campaign Explorer. **Eles não devem ser modificados.**
 
-Se necessário, é possível iniciar a sincronização de dados manualmente. Para fazer isso, clique com o botão direito do mouse no botão **Scheduler** e selecione **Execute pending task(s) now**.
+Se necessário, é possível iniciar a sincronização de dados manualmente. Para fazer isso, clique com o botão direito do mouse na **Scheduler** atividade e selecione **Executar tarefas pendentes agora**.
 
 ## Replicação de dados{#data-replication}
 
-Algumas tabelas incorporadas são replicadas do banco de dados local do Campaign para [!DNL Snowflake] Banco de dados da nuvem por meio de workflows dedicados descritos acima.
+Algumas tabelas integradas são replicadas do banco de dados local do Campaign para [!DNL Snowflake] banco de dados em nuvem por meio de fluxos de trabalho dedicados descritos acima.
 
 Entenda quais bancos de dados o Adobe Campaign v8 usa, por que os dados estão sendo replicados, quais dados estão sendo replicados e como o processo de replicação funciona.
 
@@ -48,13 +48,13 @@ Entenda quais bancos de dados o Adobe Campaign v8 usa, por que os dados estão s
 
 ### Políticas de replicação de dados{#data-replication-policies}
 
-As políticas de replicação são baseadas no tamanho das tabelas. Algumas tabelas serão replicadas em tempo real, outras serão replicadas a cada hora. Algumas tabelas terão atualizações incrementais quando outras forem substituídas.
+As políticas de replicação são baseadas no tamanho das tabelas. Algumas tabelas serão replicadas em tempo real, outras serão replicadas de hora em hora. Algumas tabelas terão atualizações incrementais quando outras serão substituídas.
 
-Além do **Replicar tabelas de referência** do workflow técnico, você pode forçar a replicação de dados em seus workflows.
+Além do incorporado **Replicar tabelas de referência** fluxo de trabalho técnico, é possível forçar a replicação de dados em seus fluxos de trabalho.
 
 Você pode:
 
-* adicione um **Código JavaScript** atividade com o seguinte código:
+* adicionar um **Código Javascript** atividade com o seguinte código:
 
 ```
 nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
@@ -63,7 +63,7 @@ nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
 ![](assets/jscode.png)
 
 
-* adicione um **nlmodule** atividade com o seguinte comando:
+* adicionar um **nlmodule** atividade com o seguinte comando:
 
 ```
 nlserver ffdaReplicateStaging -stagingSchema -instance:acc1

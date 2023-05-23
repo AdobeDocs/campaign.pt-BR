@@ -7,7 +7,7 @@ exl-id: 297aa4e3-b672-46b5-9016-5accee8568b8
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -25,11 +25,11 @@ Os workflows ocorrem em vários contextos e estágios do processo de gestão de 
 
 O Adobe Campaign usa workflows para:
 
-* Projetar workflows para construção do target. [Saiba mais](#targeting-workflows)
-* Organize campanhas em vários canais. [Saiba mais](#campaign-workflows)
+* Criar workflows para construção do target. [Saiba mais](#targeting-workflows)
+* Orquestrar campanhas em vários canais. [Saiba mais](#campaign-workflows)
 * Execute processos técnicos, como limpeza, coleta de rastreamento de dados, cálculos e muito mais. [Saiba mais](#technical-workflows)
 
-Um workflow é uma definição de processo: o diagrama do workflow, que é uma representação do que deveria acontecer. Um workflow também é uma instância desse processo: uma instância de workflow, que é uma representação do que está realmente acontecendo.
+Um fluxo de trabalho é uma definição de processo: o diagrama do fulxo de trabalho, que é uma representação do que deveria acontecer. Um fluxo de trabalho também é uma instância desse processo: uma instância de fluxo de trabalho, que é uma representação do que está realmente acontecendo.
 
 O template de workflow descreve as várias tarefas a serem executadas e como elas são vinculadas. Os templates de tarefa são chamados de atividades e são representados por ícones. Eles são vinculados por transições.
 

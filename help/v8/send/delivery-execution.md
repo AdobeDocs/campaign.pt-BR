@@ -8,7 +8,7 @@ exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 72%
+ht-degree: 73%
 
 ---
 
@@ -20,7 +20,7 @@ Quando o enriquecimento estiver concluído e um template do delivery estiver vin
 
 >[!NOTE]
 >
->As mensagens transacionais são priorizadas em relação a qualquer outro delivery.
+>As mensagens transacionais são priorizadas sobre qualquer outro delivery.
 
 Todos os deliveries são agrupados na pasta **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**.
 
@@ -49,7 +49,7 @@ O Adobe Campaign oferece vários relatórios que permitem controlar a atividade 
 
 ### Histórico de eventos do Centro de mensagens {#history-events}
 
-O **[!UICONTROL Message Center event history]** O relatório exibe uma visão geral da atividade do módulo do Centro de mensagens, ou seja, o número de eventos processados e entregues como mensagens transacionais.
+A variável **[!UICONTROL Message Center event history]** O relatório de exibe uma visão geral da atividade do módulo Centro de Mensagens, ou seja, o número de eventos processados e entregues como mensagens transacionais.
 
 Quando o relatório é aberto, as informações exibidas por padrão coincidem com a taxa de mensagens transacionais enviadas com êxito. Para exibir mais níveis, abra os vários nós e coloque o cursor no nível apropriado para selecioná-lo.
 
@@ -58,11 +58,11 @@ Você pode exibir os dados específicos para cada tipo de evento, por período d
 
 ### Tempo de processamento do Centro de mensagens {#processing-time}
 
-O **[!UICONTROL Message Center processing time]** exibe os indicadores principais relacionados à fila em tempo real. Esse relatório também pode ser acessado por meio do **[!UICONTROL Monitoring]** na instância de controle.
+A variável **[!UICONTROL Message Center processing time]** exibe os indicadores principais relacionados à fila em tempo real. Esse relatório também pode ser acessado por meio da **[!UICONTROL Monitoring]** na instância de controle.
 
 ![](assets/mc-processing-time-report.png)
 
-Você pode optar por exibir estatísticas globais ou relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico.
+Você pode exibir estatísticas globais ou aquelas relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico.
 
 Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** são calculados sobre o período selecionado:
 
@@ -81,11 +81,11 @@ Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** s
 
 ### Nível de serviço do Centro de mensagens {#service-level}
 
-O **[!UICONTROL Message Center service level]** exibe as estatísticas de delivery relacionadas às mensagens transacionais, bem como o detalhamento dos erros. Você pode clicar em um tipo de erro para exibir os detalhes.
+A variável **[!UICONTROL Message Center service level]** O relatório de exibe as estatísticas de delivery relacionadas às mensagens transacionais, bem como o detalhamento dos erros. Você pode clicar em um tipo de erro para exibir os detalhes.
 
-Esse relatório também pode ser acessado por meio do **[!UICONTROL Monitoring]** na instância de controle.
+Esse relatório também pode ser acessado por meio da **[!UICONTROL Monitoring]** na instância de controle.
 
-Você pode optar por exibir estatísticas globais ou relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico.
+Você pode exibir estatísticas globais ou aquelas relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico.
 
 Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** são calculados sobre o período selecionado:
 
@@ -106,7 +106,7 @@ Você pode configurar os limites de aviso (laranja) e de alerta (vermelho) dos i
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Abra o assistente de implantação no **instância de execução** e navegue até o **[!UICONTROL Message Center]** página.
+1. Abra o assistente de implantação no **instância de execução** e navegue até a página **[!UICONTROL Message Center]** página.
 1. Use as setas para modificar os limites.
 
    ![](assets/mc-thresholds.png)

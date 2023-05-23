@@ -17,7 +17,7 @@ Uma atividade do tipo **Split** permite dividir um target em vários subconjunto
 
 Essa atividade não aciona uma união de públicos de entrada. Se várias transições acabarem em uma atividade de Split, é recomendado inserir uma atividade de **[!UICONTROL Union]** na frente.
 
-Para obter um exemplo da atividade de Split que está sendo usada, consulte [esta seção](targeting-workflows.md#create-subsets-using-the-split-activity).
+Para obter um exemplo da atividade de split que está sendo usada, consulte [nesta seção](targeting-workflows.md#create-subsets-using-the-split-activity).
 
 Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
 
@@ -62,7 +62,7 @@ Para criar um subconjunto:
 
    Se estiver concluído, o código do segmento de cada subconjunto será armazenado automaticamente em uma coluna adicional. Essa coluna estará acessível nos campos de personalização no nível de delivery.
 
-## Limite o número de registros do subconjunto {#limit-the-number-of-subset-records}
+## Limitar o número de registros do subconjunto {#limit-the-number-of-subset-records}
 
 Se não quiser usar toda a população contida em um subconjunto, é possível limitar o número de registros que ele conterá.
 
@@ -98,7 +98,7 @@ Se não quiser usar toda a população contida em um subconjunto, é possível l
 
 1. Clique em **[!UICONTROL Finish]** para aprovar o critério de seleção de registro. A configuração selecionada é então exibida na janela do meio do editor.
 
-## Limite o número de registros de subconjunto por agrupamento de dados {#limit-the-number-of-subset-records-by-data-grouping}
+## Limitar o número de registros de subconjunto por agrupamento de dados {#limit-the-number-of-subset-records-by-data-grouping}
 
 É possível limitar o número de registros por agrupamento de dados. Esse limite pode ser executado usando um valor fixo ou uma porcentagem.
 
@@ -118,17 +118,17 @@ Por exemplo, se você selecionar o campo **[!UICONTROL Language]** como um campo
 
 1. Clique em **[!UICONTROL Finish]** para aprovar a limitação e retornar à edição da atividade de split.
 
-## Limite o número de registros de subconjunto por distribuição de dados {#limit-the-number-of-subset-records-per-data-distribution}
+## Limitar o número de registros de subconjunto por distribuição de dados {#limit-the-number-of-subset-records-per-data-distribution}
 
-Se os campos de agrupamento contiverem um número muito grande de valores ou se quiser evitar redefinir os valores para cada nova atividade dividida, o Adobe Campaign permitirá criar uma limitação por distribuição de dados. Ao selecionar [valores de limitação de dados](#create-subsets) ), selecione o **[!UICONTROL By data distribution]** e selecione um modelo no menu suspenso. A criação de um template de distribuição de dados é demonstrada abaixo.
+Se os campos de agrupamento contiverem um número muito grande de valores ou se quiser evitar redefinir os valores para cada nova atividade dividida, o Adobe Campaign permitirá criar uma limitação por distribuição de dados. Ao selecionar [valores de limitação de dados](#create-subsets) ), selecione o **[!UICONTROL By data distribution]** e selecione um template no menu suspenso. A criação de um template de distribuição de dados é demonstrada abaixo.
 
-Para obter um exemplo da variável **[!UICONTROL Local approval]** com um template de distribuição, consulte [esta página](local-approval-activity.md).
+Para obter um exemplo do **[!UICONTROL Local approval]** atividade com um template de distribuição, consulte [esta página](local-approval-activity.md).
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
 >[!CAUTION]
 >
->Essa função só está disponível com a variável [Complemento de Marketing distribuído](../distributed-marketing/about-distributed-marketing.md). Verifique o contrato de licença.
+>Essa função só está disponível com o [Complemento de marketing distribuído](../distributed-marketing/about-distributed-marketing.md). Verifique o contrato de licença.
 
 O template de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Aplique as seguintes etapas para criar um template de distribuição de dados:
 
@@ -146,11 +146,11 @@ O template de distribuição de dados permite limitar o número de registros de 
    * **[!UICONTROL Targeting dimension]**: digite a targeting dimension à qual a distribuição de dados será aplicada, **[!UICONTROL Recipient]** por exemplo. Esse schema deve sempre ser compatível com os dados usados no workflow para construção do target.
    * **[!UICONTROL Distribution field]**: selecione um campo por meio da targeting dimension. Por exemplo, se selecionar o campo **[!UICONTROL Email domain]**, a lista de recipients será dividida por domínio.
    * **[!UICONTROL Distribution type]**: selecione a forma como o valor de limitação do target será detalhado na guia **[!UICONTROL Distribution]**: **[!UICONTROL Percentage]** ou **[!UICONTROL Set]**.
-   * **[!UICONTROL Approval storage]**: se você usar um [Aprovação local](local-approval.md) no workflow para construção do target, insira o schema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se usar o schema de target **[!UICONTROL Recipients]**, insira o schema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
+   * **[!UICONTROL Approval storage]**: se você usar um [Aprovação local](local-approval.md) atividade no workflow para construção do target, insira o schema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se usar o schema de target **[!UICONTROL Recipients]**, insira o schema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
 
       No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Approvals storage]**.
 
-1. Se estiver usando um [Aprovação local](local-approval.md) insira a variável **[!UICONTROL Advanced settings]** para o template de distribuição:
+1. Se você estiver usando um [Aprovação local](local-approval.md) atividade, insira o **[!UICONTROL Advanced settings]** para o template de distribuição:
 
    ![](assets/local_validation_data_distribution_3.png)
 
@@ -184,13 +184,13 @@ O template de distribuição de dados permite limitar o número de registros de 
       Essa coluna é definida pelo campo **[!UICONTROL Distribution type]** dentro da guia **[!UICONTROL General]**.
 
    * **[!UICONTROL Label]**: digite o rótulo vinculado a cada valor.
-   * **[!UICONTROL Group or operator]**: se estiver usando um[Aprovação local](local-approval.md) , selecione o operador ou grupo de operadores atribuídos a cada valor de distribuição.
+   * **[!UICONTROL Group or operator]**: se estiver usando um[Aprovação local](local-approval.md) selecione o operador ou grupo de operadores atribuídos a cada valor de distribuição.
 
       No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Group or operator]**.
 
       >[!CAUTION]
       >
-      >Verifique se as permissões apropriadas foram atribuídas aos operadores.
+      >Verifique se os operadores receberam as permissões apropriadas.
 
 ## Filtragem de parâmetros {#filtering-parameters}
 

@@ -16,7 +16,7 @@ ht-degree: 23%
 
 Os deliveries de email permitem enviar emails personalizados para a população do target. [Saiba mais](../send/send.md).
 
-## Criar seu primeiro delivery de email
+## Criar o primeiro delivery de email
 
 Crie emails personalizados e contextualmente relevantes que sejam consistentes com o restante da experiência do cliente.
 
@@ -27,7 +27,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 1. **Criar o delivery**
 
-   Para criar um novo delivery, navegue até o **Campanhas** clique em **Deliveries** e clique no botão **Criar** acima da lista de deliveries existentes.
+   Para criar um novo delivery, navegue até o **Campanhas** clique em **Entregas** e clique no link **Criar** acima da lista de deliveries existentes.
 
    ![](assets/delivery_step_1.png)
 
@@ -37,9 +37,9 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
    ![](assets/dce_delivery_model.png)
 
-1. **Importe seu conteúdo**
+1. **Importar seu conteúdo**
 
-   Clique no botão **Origem** para colar o conteúdo do HTML.
+   Clique em **Origem** para colar o conteúdo do HTML.
 
    ![](assets/paste-content.png)
 
@@ -48,7 +48,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
    * Adicione o nome e o sobrenome dos recipients
 
-      Para inserir o nome e o sobrenome dos perfis segmentados no conteúdo da mensagem, coloque o cursor onde deseja inseri-los e clique no último ícone na barra de ferramentas, em seguida, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL Greetings]**.
+      Para inserir o nome e o sobrenome dos perfis direcionados no conteúdo da mensagem, coloque o cursor onde deseja inseri-los e clique no último ícone na barra de ferramentas e, em seguida, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL Greetings]**.
 
       ![](assets/include-greetings.png)
 
@@ -56,11 +56,11 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
       ![](assets/perso-check.png)
 
-      Saiba mais sobre as opções de personalização no [esta seção](personalize.md).
+      Saiba mais sobre as opções de personalização no [nesta seção](personalize.md).
 
    * Inserir um link rastreado
 
-      Para levar os recipients do delivery para um endereço externo por meio de uma imagem ou um texto, selecione-o e clique no botão **[!UICONTROL Add a link]** na barra de ferramentas.
+      Para levar os recipients do delivery para um endereço externo por meio de uma imagem ou um texto, selecione-o e clique no link **[!UICONTROL Add a link]** na barra de ferramentas.
 
       Insira a URL do link no campo **URL** usando o seguinte formato **https://www.myURL.com** e, em seguida, confirme.
 
@@ -68,28 +68,28 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
    * Adicionar uma mirror page
 
-      Para permitir que seus recipients visualizem o conteúdo do delivery em um navegador da Web, adicione um link para a [mirror page](../send/mirror-page.md) da sua mensagem.
+      Para permitir que seus destinatários visualizem o conteúdo do delivery em um navegador da Web, adicione um link à [mirror page](../send/mirror-page.md) da sua mensagem.
 
-      Coloque o cursor onde deseja inserir este link, clique no último ícone na barra de ferramentas e clique em **[!UICONTROL Include]** e selecione **[!UICONTROL link to mirror page]**.
-   Quando o conteúdo estiver pronto, clique em **Salvar**: agora ele será exibido na lista de deliveries, no **[!UICONTROL Campaigns > Deliveries]** guia . Seu primeiro delivery de email está pronto. Agora é necessário definir o público-alvo, validar o delivery e enviá-lo.
+      Coloque o cursor onde deseja inserir esse link, clique no último ícone na barra de ferramentas e clique em **[!UICONTROL Include]** e selecione **[!UICONTROL link to mirror page]**.
+   Quando o conteúdo estiver pronto, clique em **Salvar**: agora ele será exibido na lista de deliveries, no **[!UICONTROL Campaigns > Deliveries]** guia. Seu primeiro delivery de email está pronto. Agora é necessário definir o público-alvo, validar o delivery e enviá-lo.
 
 
-Saiba como importar conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
+Saiba como importar um conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
 
 Saiba mais nas seguintes seções:
 
 * [Criar um email no Campaign](../send/email.md)
 * [Criar e usar um modelo de email](../send/create-templates.md)
-* [Selecione o público do seu email](../audiences/gs-audiences.md)
+* [Selecionar a audiência do seu email](../audiences/gs-audiences.md)
 * [Validar um delivery e enviar provas](../send/preview-and-proof.md)
 
 ## Testar e validar seus emails
 
-O Campaign oferece várias maneiras de testar e validar seus emails antes de enviá-los para seus públicos. Saiba como visualizar e testar o conteúdo de email no [esta página](../send/preview-and-proof.md).
+O Campaign oferece várias maneiras de testar e validar seus emails antes de enviá-los para seus públicos. Saiba como pré-visualizar e testar seu conteúdo de email no [esta página](../send/preview-and-proof.md).
 
 Você pode:
 
-* Verificar logs de análise do delivery
+* Verificar logs de análise de entrega
 * Enviar provas
 * Adicionar seed addresses
 

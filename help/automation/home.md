@@ -1,29 +1,29 @@
 ---
-keywords: Automação de campanha, página inicial, tópicos populares
+keywords: Automação de Campanha;página inicial;tópicos populares
 product: campaign
-title: Página inicial da automação do Adobe Campaign
+title: Página inicial de automação do Adobe Campaign
 feature: Overview
 description: Visão geral
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
 source-git-commit: 143e90ef63fac4058008bc6864daf950c11ab2d1
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 41%
+ht-degree: 46%
 
 ---
 
 # Automação do Adobe Campaign {#automation-home}
 
-A comunicação com seus clientes por meio de vários canais de marketing pode funcionar para você ou contra você. Quando os diferentes canais não estão funcionando juntos, há apenas ruído e confusão. Quando são sincronizados, eles se combinam para proporcionar aos clientes uma experiência poderosa e complementar com sua marca.
+A comunicação com seus clientes por meio de vários canais de marketing pode ajudar você ou você. Quando os diferentes canais não estão funcionando juntos, há apenas ruído e confusão. Quando são sincronizados, eles se combinam para proporcionar aos clientes uma experiência poderosa e complementar com a sua marca.
 
-O Adobe Campaign facilita a sincronização dos canais, com uma interface de orquestração de campanhas única e de fácil utilização. Assim, seus canais online — como email, web, celular e redes sociais — correspondem aos canais offline, incluindo a correspondência direta, a central de atendimento, a loja e assim por diante. Ele permite que você forneça aos clientes uma experiência consistente e contextual nos canais digitais e tradicionais. Resumindo, a Adobe Campaign simplifica o fornecimento de conteúdo a todos os caminhos que seus clientes podem tomar — em qualquer canal.
+O Adobe Campaign facilita a sincronização dos canais, com uma interface de orquestração de campanhas única e de fácil utilização. Assim, seus canais online — como email, web, celular e redes sociais — correspondem aos canais offline, incluindo a correspondência direta, a central de atendimento, a loja e assim por diante. Ele permite que você forneça aos clientes uma experiência consistente e contextual nos canais digitais e tradicionais. Em resumo, o Adobe Campaign facilita o fornecimento de conteúdo para todos os caminhos que seus clientes venham a seguir — em qualquer canal.
 
 
 Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
 
 >[!NOTE]
 >
->Algumas telas podem diferir do seu ambiente.
+>Algumas telas podem ser diferentes do seu ambiente.
 
 <table>
 <tr style="border: 0;">
@@ -37,7 +37,7 @@ Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
     </div>
     <br>     
     <div>
-    <a href="workflow/build-a-workflow.md">Criar seu primeiro workflow</a>
+    <a href="workflow/build-a-workflow.md">Crie seu primeiro fluxo de trabalho</a>
     </div>
     <br>
     <div>

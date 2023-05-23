@@ -41,7 +41,7 @@ As principais etapas do ciclo de aprovação de conteúdo são:
 
 1. Alguns dias depois, a segunda atividade do tipo **[!UICONTROL Local approval]** envia um email de notificação para cada supervisor local com um resumo das ações executadas pelos contatos (cliques, aberturas etc.).
 
-## Etapa 1: Criar o template de distribuição de dados {#step-1--creating-the-data-distribution-template-}
+## Etapa 1: criar o modelo de distribuição de dados {#step-1--creating-the-data-distribution-template-}
 
 O modelo de distribuição de dados permite limitar o público resultante do direcionamento com base no agrupamento de dados, permitindo atribuir cada valor a um supervisor local. Neste exemplo, definimos o campo **[!UICONTROL Email address domain]** como um campo de distribuição e atribuímos um domínio a cada supervisor local
 
@@ -79,7 +79,7 @@ Para obter mais informações sobre como criar um template de distribuição de 
       >
       >Verifique se os operadores receberam os direitos apropriados.
 
-## Etapa 2: Criar o workflow para construção do target {#step-2--creating-the-targeting-workflow}
+## Etapa 2: criar o fluxo de trabalho de direcionamento {#step-2--creating-the-targeting-workflow}
 
 Para configurar esse caso de uso, criamos o seguinte workflow para construção do target:
 
@@ -142,7 +142,7 @@ Os seguintes campos precisam ser inseridos:
 1. Na seção **[!UICONTROL Notification]**, selecione o template do delivery e o assunto a ser usado para o email de notificação. Aqui, escolhemos o template padrão: **[!UICONTROL Local approval notification]**.
 1. Na seção **[!UICONTROL Approval schedule]**, mantivemos o prazo de aprovação padrão (3 dias) e adicionamos um lembrete. O delivery será enviado 3 dias após o início da aprovação. Ao atingir o prazo final de aprovação, os recipients que não foram aprovados não serão considerados.
 
-Um email de notificação é enviado pelo **[!UICONTROL Local approval]** para supervisores locais.
+Um email de notificação é enviado pelo **[!UICONTROL Local approval]** atividade para supervisores locais.
 
 ### Aguardar {#wait}
 

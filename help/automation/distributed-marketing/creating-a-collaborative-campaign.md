@@ -19,7 +19,7 @@ A entidade central cria campanhas colaborativas de templates de campanha de **Ma
 
 ## Criar uma campanha colaborativa {#creating-a-collaborative-campaign}
 
-Para configurar uma campanha colaborativa, clique no botão **[!UICONTROL Campaign management > Campaigns]** , em seguida, a **[!UICONTROL New]** ícone .
+Para configurar uma campanha colaborativa, clique no link **[!UICONTROL Campaign management > Campaigns]** , depois a variável **[!UICONTROL New]** ícone.
 
 >[!NOTE]
 >

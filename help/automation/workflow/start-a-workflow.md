@@ -27,7 +27,7 @@ A lista de opções disponíveis no menu **[!UICONTROL Actions]** e no menu de c
 
 ## Barra de ferramentas Ações {#actions-toolbar}
 
-O **[!UICONTROL Actions]** na barra de ferramentas permite acessar opções de execução adicionais em fluxos de trabalho selecionados. Você também pode usar o menu **[!UICONTROL File > Actions]** ou clicar com o botão direito do mouse em um fluxo de trabalho e selecionar **[!UICONTROL Actions]**.
+A variável **[!UICONTROL Actions]** O botão da barra de ferramentas permite acessar opções de execução adicionais em workflows selecionados. Você também pode usar o menu **[!UICONTROL File > Actions]** ou clicar com o botão direito do mouse em um fluxo de trabalho e selecionar **[!UICONTROL Actions]**.
 
 ![](assets/purge_historique.png)
 

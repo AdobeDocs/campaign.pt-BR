@@ -82,11 +82,11 @@ Também é possível gerar compartimentos automaticamente. Para fazer isso, cliq
 
 * **[!UICONTROL Recover the most frequently used values]**
 
-   Se você gerar 4 compartimentos, os 4 valores mais usados serão exibidos, enquanto os outros serão contados e agrupados na categoria &quot;Outros&quot;.
+   Se você gerar 4 compartimentos, os 4 valores usados com mais frequência serão exibidos, enquanto os outros serão contados e agrupados na categoria &quot;Outros&quot;.
 
 * **[!UICONTROL Generate bins in the form of slots]**
 
-   Para a mesma amostra, o Adobe Campaign cria automaticamente 4 slots de valor do mesmo tamanho para exibir os valores no banco de dados.
+   Para a mesma amostra, o Adobe Campaign cria automaticamente quatro slots de valor do mesmo tamanho para exibir os valores no banco de dados.
 
 Nesse caso, o filtro selecionado no schema de fatos é ignorado.
 
@@ -169,7 +169,7 @@ Para definir uma nova medida, siga as etapas abaixo:
 É possível configurar a exibição de medidas na tabela dependendo das necessidades:
 
 * a sequência de exibição de medidas. [Saiba mais](#display-sequence)
-* as informações para mostrar/ocultar no relatório. [Saiba mais](#configuring-the-display)
+* as informações mostradas/ocultadas no relatório. [Saiba mais](#configuring-the-display)
 * e as medidas a serem exibidas: porcentagem, total, número de decimais, etc. [Saiba mais](#changing-the-type-of-measure-displayed)
 
 ### Sequência de exibição {#display-sequence}

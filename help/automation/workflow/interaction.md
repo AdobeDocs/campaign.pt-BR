@@ -36,5 +36,5 @@ Os workflows detalhados abaixo são instalados com o complemento **Mecanismo de 
  </tbody> 
 </table>
 
-Saiba mais sobre cubos e agregados em [esta seção](../../v8/reporting/gs-cubes.md).
+Saiba mais sobre cubos e agregados em [nesta seção](../../v8/reporting/gs-cubes.md).
 

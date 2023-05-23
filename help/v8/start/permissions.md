@@ -1,6 +1,6 @@
 ---
-title: Conceder permissões ao Campaign v8
-description: Saiba como conceder permissões ao Campaign v8
+title: Conceder permissões para o Campaign v8
+description: Saiba como conceder permissões para o Campaign v8
 feature: Permissions
 role: User, Admin
 level: Beginner
