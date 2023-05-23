@@ -1,35 +1,35 @@
 ---
-title: Postar mensagens no Twitter com o Adobe Campaign
-description: Saiba como usar o módulo Marketing do Adobe Campaign Social para postar mensagens no Twitter e enviar mensagens diretas para seus seguidores
+title: Publicar mensagens no Twitter com o Adobe Campaign
+description: Saiba como usar o módulo Adobe Campaign Social Marketing para postar mensagens no Twitter e enviar mensagens diretas aos seus seguidores
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 37%
 
 ---
 
 
-# Postar mensagens no Twitter com o Adobe Campaign {#post-tw-messages}
+# Publicar mensagens no Twitter com o Adobe Campaign {#post-tw-messages}
 
-O Adobe Campaign vem com um **Marketing social** que permite interagir com seus clientes e clientes potenciais via Twitter.
+O Adobe Campaign vem com uma **Marketing social** módulo que permite interagir com seus clientes atuais e potenciais via Twitter.
 
 Após configurar a integração, é possível:
 
 * Enviar mensagens diretas aos seus seguidores
-* Postar tweets em sua conta do Twitter
-* Colete novos contatos recuperando os dados do perfil, o que permite realizar campanhas de definição de metas e, quando possível, implementar estratégias entre canais. Esta ação requer o consentimento do usuário.
+* Postar tweets na sua conta do Twitter
+* Colete novos contatos recuperando os dados do perfil, o que permite realizar campanhas de direcionamento e, quando possível, implementar estratégias entre canais. Esta ação requer o consentimento do usuário.
 
 
 As etapas de configuração para integrar sua conta do Twitter com o Adobe Campaign estão descritas em [esta página](../connect/ac-tw.md).
 
-## Criar e publicar uma postagem do Twitter {#publish-on-tw}
+## Criar e publicar uma publicação do Twitter {#publish-on-tw}
 
-Siga as etapas abaixo para postar uma mensagem em sua conta do Twitter:
+Siga as etapas abaixo para postar uma mensagem em sua conta da Twitter:
 
-1. Criar um delivery de Twitter
+1. Criar uma entrega do Twitter
 
    Crie um novo delivery com base no template de delivery **[!UICONTROL Tweet (twitter)]**.
 
@@ -50,7 +50,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta do Twitter:
 
    A guia **[!UICONTROL Target of the proofs]** permite definir a conta do Twitter a ser usada para deliveries de teste antes do delivery final.
 
-   Conforme detalhado na [etapas de configuração](../connect/ac-tw.md#tw-test-account), você deve criar uma conta Twitter de teste privada dedicada ao envio de provas.
+   Conforme detalhado no [etapas de configuração](../connect/ac-tw.md#tw-test-account), você deve criar uma conta privada de teste do Twitter dedicada ao envio de provas.
 
    >[!NOTE]
    >
@@ -58,7 +58,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta do Twitter:
 
 1. Definir o conteúdo da publicação
 
-   Insira o conteúdo da publicação no **[!UICONTROL Content]** guia .
+   Insira o conteúdo da sua publicação no **[!UICONTROL Content]** guia.
 
    ![](assets/tw-delivery-content.png)
 
@@ -67,7 +67,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta do Twitter:
    >Ao postar no Twitter, as limitações se aplicam:
    >
    >* A mensagem não pode exceder 140 caracteres.
-   >* Não há suporte para o formato HTML.
+   >* Formato HTML não suportado.
 
 
 1. Visualizar sua publicação
@@ -82,7 +82,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta do Twitter:
 
 1. Enviar uma prova
 
-   Antes de postar seu tweet, valide-o enviando uma prova de sua publicação: você pode obter uma renderização exata da publicação em uma página de teste privada do Twitter.
+   Antes de publicar seu tweet, valide-o enviando uma prova de sua publicação: você pode obter uma renderização exata da publicação em uma página de teste privada do Twitter.
 
 1. Postar a mensagem
 
@@ -93,34 +93,34 @@ Siga as etapas abaixo para postar uma mensagem em sua conta do Twitter:
 
 ## Enviar mensagens diretas aos seguidores {#direct-tw-messages}
 
-O **[!UICONTROL Synchronize Twitter accounts]** o workflow técnico recupera a lista de seguidores do Twitter para que você possa enviar mensagens diretas a eles. [Saiba mais](../connect/ac-tw.md#synchro-tw-accounts)
+A variável **[!UICONTROL Synchronize Twitter accounts]** o workflow técnico recupera a lista de seguidores do Twitter para que você possa enviar mensagens diretas a eles. [Saiba mais](../connect/ac-tw.md#synchro-tw-accounts)
 
 Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
-1. Crie um delivery de Twitter com base na variável **[!UICONTROL Tweet (Direct Message)]** template do delivery incorporado.
+1. Crie um delivery do Twitter com base na **[!UICONTROL Tweet (Direct Message)]** modelo de entrega integrado.
 
 1. Seleção do público alvo principal
 
    ![](assets/tw-dm-define-target.png)
 
-   1. Selecione o **[!UICONTROL To]** e o **[!UICONTROL Add]** botão.
+   1. Selecione o **[!UICONTROL To]** e o link **[!UICONTROL Add]** botão.
 
    1. Escolha um tipo de direcionamento
 
       * Selecionar **[!UICONTROL Twitter subscribers]** para enviar uma mensagem direta a todos os seus seguidores.
 
-      * Selecione **[!UICONTROL Filter conditions]** para definir uma consulta e visualizar seu resultado. Saiba como criar um filtro em [esta seção](../audiences/create-filters.md#advanced-filters).
+      * Selecione **[!UICONTROL Filter conditions]** para definir uma consulta e visualizar seu resultado. Saiba como criar um filtro no [nesta seção](../audiences/create-filters.md#advanced-filters).
 
-1. Selecione o target da prova no **[!UICONTROL Target of the proofs]** guia : esta conta receberá a prova da sua mensagem direta.
+1. Selecione o público alvo da prova na **[!UICONTROL Target of the proofs]** guia: essa conta receberá a prova da mensagem direta.
 
-   Conforme detalhado na [etapas de configuração](../connect/ac-tw.md#tw-test-account), você deve criar uma conta Twitter de teste privada dedicada ao envio de provas.
+   Conforme detalhado no [etapas de configuração](../connect/ac-tw.md#tw-test-account), você deve criar uma conta privada de teste do Twitter dedicada ao envio de provas.
 
 
    >[!NOTE]
    >
-   >Se desejar enviar todas as provas de mensagem direta para a mesma conta do Twitter, você pode salvar o target de prova no **[!UICONTROL Tweet (Direct Message)]** template do delivery , acessível pelo **[!UICONTROL Resources > Templates > Delivery templates]** nó .
+   >Se desejar enviar todas as provas de mensagem direta para a mesma conta do Twitter, você pode salvar o target de prova na variável **[!UICONTROL Tweet (Direct Message)]** template do delivery, acessado pelo **[!UICONTROL Resources > Templates > Delivery templates]** nó.
 
-1. Insira o conteúdo da mensagem no **[!UICONTROL Content]** guia .
+1. Insira o conteúdo da mensagem nas **[!UICONTROL Content]** guia.
 
    ![](assets/tw-dm-content.png)
 
@@ -138,7 +138,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
 1. Enviar uma prova
 
-   Antes de enviar a mensagem, valide-a por [envio de uma prova para uma conta de teste](../send/preview-and-proof.md): você pode obter uma renderização exata da mensagem em uma conta privada do Twitter e verificar o conteúdo e a personalização.
+   Antes de enviar a mensagem, valide-a enviando [envio de uma prova para uma conta de teste](../send/preview-and-proof.md): você pode obter uma renderização exata da mensagem em uma conta privada do Twitter e verificar o conteúdo e a personalização.
 
 1. Enviar a mensagem direta
 
@@ -149,14 +149,14 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
 >[!CAUTION]
 >
->Não é possível enviar mais de 250 mensagens diretas por dia. Para evitar exceder esse limite, é possível entregar em ondas. Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en#sending-using-multiple-waves){target="_blank"}.
+>Não é possível enviar mais de 250 mensagens diretas por dia. Para não exceder esse limite, é possível entregar em ondas. Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}.
 
 
 ## Acessar dados de rastreamento {#tw-tracking}
 
-No **[!UICONTROL Tweet]** do delivery, o rastreamento é ativado por padrão.
+No incorporado **[!UICONTROL Tweet]** template do delivery, o rastreamento é ativado por padrão.
 
-Os dados de rastreamento podem ser exibidos nos relatórios do delivery e no **[!UICONTROL Edit > Tracking]** do delivery e do serviço.
+Os dados de rastreamento podem ser exibidos nos relatórios do delivery e na **[!UICONTROL Edit > Tracking]** do delivery e do serviço.
 
 A configuração de rastreamento é a mesma de um delivery de email. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR){target="_blank"}.
 

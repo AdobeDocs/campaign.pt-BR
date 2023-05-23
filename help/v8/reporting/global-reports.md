@@ -3,9 +3,9 @@ title: Relatórios globais do Adobe Campaign
 description: Saiba como acessar e usar relatórios globais
 feature: Reporting, Monitoring
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1763'
 ht-degree: 96%
 
 ---
@@ -50,7 +50,7 @@ Você pode configurar os valores exibidos alterando a escala de tempo: visualiza
 >
 >Você também pode monitorar o número de deliveries enviados por hora usando o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=pt-BR).
 >
->O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=br#discover-control-panel).
+>O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 
 ## Atividades do usuário {#user-activities}
 
@@ -96,7 +96,7 @@ Os seguintes indicadores são usados:
 
    >[!NOTE]
    >
-   >Este indicador está relacionado a deliveries em [canais móveis](../send/send.md) somente.
+   >Este indicador está relacionado aos deliveries no [canais móveis](../send/send.md) somente.
 
    Você pode abrir cada linha da tabela de valores clicando no símbolo `[+]`. Para cada tipo de erro, é possível exibir o detalhamento das mensagens de erro por domínio.
 
@@ -296,7 +296,7 @@ Os seguintes indicadores são usados:
 
 Este relatório mostra o detalhamento de aberturas por sistema operacional, dispositivo e navegador para o período relacionado. Para cada categoria, dois gráficos são usados. O primeiro exibe estatísticas referentes a aberturas em um computador e dispositivos móveis. O segundo exibe estatísticas relacionadas apenas a aberturas em dispositivos móveis.
 
-O número de aberturas corresponde ao número total de mensagens abertas. Os emails em formato de texto não são contados. Para obter mais informações sobre rastreamento de aberturas, consulte [esta seção](metrics-calculation.md#tracking-opens-).
+O número de aberturas corresponde ao número total de mensagens abertas. Os emails em formato de texto não são contados. Para obter mais informações sobre rastreamento de aberturas, consulte [nesta seção](metrics-calculation.md#tracking-opens-).
 
 ![](assets/user-agent-report.png)
 

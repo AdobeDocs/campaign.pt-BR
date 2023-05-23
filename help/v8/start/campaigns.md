@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 100%
+source-wordcount: '833'
+ht-degree: 99%
 
 ---
 
@@ -88,7 +88,7 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    O Adobe Campaign permite configurar processos de aprovação colaborativos para as principais etapas da campanha de marketing. Para cada campanha você pode aprovar o público-alvo, o conteúdo e os custos da entrega. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a web.
 
-    Saiba como configurar e gerenciar aprovações [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=pt-BR#campaign-orchestration).
+    Saiba como configurar e gerenciar aprovações [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#campaign-orchestration).
 
 
 ## Complemento de marketing distribuído{#distributed-marketing-add-on}

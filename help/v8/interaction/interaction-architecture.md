@@ -1,56 +1,56 @@
 ---
 title: Entender a arquitetura de interação do Campaign
-description: Noções básicas da arquitetura de interação do Campaign
+description: Noções básicas sobre a arquitetura de interação do Campaign
 feature: Interaction
 role: Data Engineer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 66%
+source-wordcount: '1310'
+ht-degree: 67%
 
 ---
 
-# Entender os ambientes e a arquitetura do Campaign Interaction
+# Entender os ambientes e a arquitetura da interação do Campaign
 
 ## Ambientes {#environments}
 
 Há dois ambientes para cada targeting dimension usada ao gerenciar ofertas:
 
-* A **projeto** ambiente no qual o gerente de ofertas cuida da criação e categorização de ofertas, edição delas e início do processo de aprovação para que possam ser usadas. As regras para cada categoria, os espaços de oferta nos quais as ofertas podem ser apresentadas, e os filtros predefinidos usados para definir a qualificação de uma oferta também são definidos neste ambiente.
+* A **design** ambiente no qual o gerente de ofertas cuida da criação e categorização de ofertas, edição e início do processo de aprovação para que elas possam ser usadas. As regras para cada categoria, os espaços de oferta nos quais as ofertas podem ser apresentadas e os filtros predefinidos usados para definir a elegibilidade de uma oferta também são definidos neste ambiente.
 
    As categorias também podem ser publicadas manualmente no ambiente online.
 
    O processo de aprovação de ofertas é detalhado [nesta seção](interaction-offer.md#approve-offers).
 
-* A **live** ambiente no qual podem ser encontradas ofertas aprovadas do ambiente de design, bem como os vários espaços de ofertas, filtros, categorias e regras configurados no ambiente de design. Durante uma chamada para o mecanismo Offer , o mecanismo sempre usará ofertas do ambiente live.
+* A **live** ambiente no qual podem ser encontradas ofertas aprovadas do ambiente de design, bem como os vários espaços de oferta, filtros, categorias e regras configurados no ambiente de design. Durante uma chamada para o mecanismo de Oferta, o mecanismo sempre usará ofertas do ambiente ativo.
 
 Uma oferta só é implantada nos espaços de oferta selecionados durante o processo de aprovação. Portanto, uma oferta pode estar ativa, mas inutilizável em um espaço de oferta que também está ativo.
 
 ## Interações de entrada e saída {#interaction-types}
 
-O módulo Adobe Campaign Interaction propõe dois tipos de interações:
+O módulo de Interação do Adobe Campaign propõe dois tipos de interações:
 
 * **entrada** interações, iniciadas por um contato. [Saiba mais](interaction-present-offers.md)
-* **saída** interações, iniciadas por um Gerente de delivery de campanha. [Saiba mais](interaction-send-offers.md)
+* **saída** interações, iniciadas por um Gerente de delivery do Campaign. [Saiba mais](interaction-send-offers.md)
 
-Esses dois tipos de interações podem ser realizadas em **modo unitário** (a oferta é calculada para um único contato) ou em **modo de lote** (a oferta é calculada para um conjunto de contatos). Geralmente, as interações de entrada são realizadas no modo unitário e as interações de saída são executadas em modo de lote. No entanto, pode haver certas exceções, como [mensagens transacionais](../send/transactional.md) por exemplo, em que a interação de saída é executada no modo unitário.
+Esses dois tipos de interações podem ser realizadas em **modo unitário** (a oferta é calculada para um único contato) ou em **modo de lote** (a oferta é calculada para um conjunto de contatos). Geralmente, as interações de entrada são realizadas no modo unitário e as interações de saída são executadas em modo de lote. No entanto, podem existir certas exceções, [mensagens transacionais](../send/transactional.md) por exemplo, onde a interação de saída é executada no modo unitário.
 
-Assim que uma oferta puder ou deve ser apresentada (de acordo com as configurações realizadas), o Motor de oferta reproduzirá a função intermediária: ele calcula automaticamente a melhor oferta possível para um contato entre as disponíveis combinando dados recebidos sobre o contato e as diferentes regras que podem ser aplicadas conforme especificado no aplicativo.
+Assim que uma oferta puder ou deve ser apresentada (de acordo com as configurações realizadas), o mecanismo de Oferta reproduzirá a função intermediária: ele calcula automaticamente a melhor oferta possível para um contato entre as disponíveis ao combinar dados recebidos sobre o contato e as diferentes regras que podem ser aplicadas conforme especificado na aplicação.
 
 ![](assets/architecture_interaction2.png)
 
 ## Arquitetura distribuída
 
-Para oferecer suporte à escalabilidade e fornecer serviço 24 horas por dia, 7 dias por semana no canal de entrada, a variável **Interação** é implementado em uma arquitetura distribuída. Esse tipo de arquitetura já é usado com [Centro de mensagens](../architecture/architecture.md#transac-msg-archi) e é composto de várias instâncias:
+Para oferecer suporte à escalabilidade e fornecer serviço 24 horas por dia, 7 dias por semana no canal de entrada, a variável **Interação** O módulo é implementado em uma arquitetura distribuída. Esse tipo de arquitetura já é usado com o [Centro de mensagens](../architecture/architecture.md#transac-msg-archi) e é composto por várias instâncias:
 
 * uma ou várias instâncias de controle dedicadas ao canal de saída e contendo a base de design de marketing e ambiente.
 * uma ou várias instâncias de execução dedicadas ao canal de entrada.
 
 ![](assets/interaction_powerbooster_schema.png)
 
-As instâncias de controle são dedicadas ao canal de entrada e contêm a versão online do catálogo. Cada instância de execução é independente e dedicada a um segmento de contato (por exemplo, uma instância de execução por país). As chamadas para o mecanismo Offer devem ser executadas diretamente na execução (uma URL específica por instância de execução). Como a sincronização entre instâncias não é automática, as interações do mesmo contato devem ser enviadas pela mesma instância.
+As instâncias de controle são dedicadas ao canal de entrada e contêm a versão online do catálogo. Cada instância de execução é independente e dedicada a um segmento de contato (por exemplo, uma instância de execução por país). As chamadas para o mecanismo de oferta devem ser executadas diretamente na execução (uma URL específica por instância de execução). Como a sincronização entre instâncias não é automática, as interações do mesmo contato devem ser enviadas pela mesma instância.
 
 ### Sincronização {#synchronization}
 
@@ -80,11 +80,11 @@ Você deve estar ciente dos seguintes mecanismos de sincronização:
 
 Quaisquer extensões de schema diretamente vinculadas à **Interação** (ofertas, propostas, recipients, etc.) devem ser implantadas nas instâncias de execução.
 
-O **Interação** O pacote é instalado em todas as instâncias (controle e execução). Dois pacotes adicionais estão disponíveis: um pacote para as instâncias de controle e o outro para cada instância de execução.
+A variável **Interação** O pacote de é instalado em todas as instâncias (controle e execução). Dois pacotes adicionais estão disponíveis: um pacote para as instâncias de controle e outro para cada instância de execução.
 
 >[!NOTE]
 >
->Ao instalar o pacote, os campos do tipo **longo** da tabela **nms:proposition**, como ID da proposta, tornam-se campos de tipo **int64.** Esse tipo de dado é detalhado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=en#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
+>Ao instalar o pacote, os campos do tipo **longo** da tabela **nms:proposition**, como ID da proposta, tornam-se campos de tipo **int64.** Esse tipo de dado é detalhado no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
 A duração da retenção de dados é configurada em cada instância (por meio da variável **[!UICONTROL Data purge]** no assistente de implantação). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de qualificação serem calculadas.
 
@@ -143,7 +143,7 @@ A seguinte opção está disponível nas instâncias de execução:
 
 ### Instalação de pacotes {#packages-installation}
 
-Se a instância não tiver a variável **Interação** , nenhuma migração é necessária. Por padrão, a tabela de propostas estará em 64 bits após a instalação dos pacotes.
+Se a instância não tiver o plug-in **Interação** pacote, nenhuma migração é necessária. Por padrão, a tabela de propostas estará em 64 bits após a instalação dos pacotes.
 
 >[!CAUTION]
 >
