@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ A Adobe oferece ferramentas aos controladores de dados para criar e processar so
 
 Para gerenciar a solicitação de privacidade no Campaign, primeiro você deve [definir um namespace](#namespaces). Em seguida, será possível criar e gerenciar solicitações de privacidade. Para executar solicitações de privacidade, use a integração do **Adobe Privacy Service**. As solicitações de privacidade transmitidas pelo Privacy Service para todas as soluções da Adobe Experience Cloud são tratadas automaticamente pelo Campaign, por meio de um fluxo de trabalho dedicado. [Saiba mais](#create-privacy-request)
 
-![](../assets/do-not-localize/speech.png) Saiba mais sobre **Direito de acesso** e **Direito ao esquecimento** (solicitação de exclusão) na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#right-access-forgotten){target="_blank"}.
+![](../assets/do-not-localize/speech.png) Saiba mais sobre **Direito de acesso** e **Direito ao esquecimento** (solicitação DELETE) na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#right-access-forgotten){target="_blank"}.
 
 
 >[!NOTE]
@@ -46,9 +46,9 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 >For optimal performance, it is recommended to use out-of-the-box namespaces.
 -->
 
-1. Criar um namespace no [serviço de namespace de identidade](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
+1. Criar um namespace no [Serviço de namespace de identidade](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
 
-1. Quando [listando os namespaces de identidade](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} disponível para sua organização, você obterá o namespace seguido dos detalhes; por exemplo:
+1. Ao [listar os namespaces de identidade](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} disponíveis para sua organização, você obterá o namespace seguido dos detalhes, por exemplo:
 
    ```
    {
@@ -95,7 +95,7 @@ Agora você pode criar solicitações de privacidade com base em seu novo namesp
 
 A integração do **[!DNL Adobe Experience Platform Privacy Service]** permite automatizar suas solicitações de privacidade em um contexto com várias soluções por meio de uma única chamada de API JSON. O Adobe Campaign manipula automaticamente as solicitações enviadas pelo Privacy Service por meio de um fluxo de trabalho dedicado.
 
-Consulte a documentação do [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) para saber como criar solicitações de acesso a dados pessoais pelo Privacy Core Service.{target="_blank"}
+Consulte a documentação do [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR) para saber como criar solicitações de privacidade pelo Serviço principal de privacidade.{target="_blank"}
 
 Cada processo do **[!DNL Privacy Service]** é dividido em várias solicitações de privacidade no Adobe Campaign com base no número de namespaces utilizados, onde cada solicitação corresponde a um namespace.
 
@@ -109,9 +109,9 @@ O padrão para um nome de arquivo é: `<InstanceName>-<NamespaceId>-<Reconciliat
 
 >[!CAUTION]
 >
->Para enviar uma solicitação usando o tipo de namespace personalizado, utilize o [Método JSON](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html#json){target="_blank"} and add the namespaceId to the request, or use the [API call](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html#access-delete){target="_blank"} para fazer a solicitação.
+>Para enviar uma solicitação usando o tipo de namespace personalizado, utilize o [Método JSON](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=pt-BR#json){target="_blank"} and add the namespaceId to the request, or use the [API call](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=pt-BR#access-delete){target="_blank"} para fazer a solicitação.
 >
->Use somente o [Interface do usuário de privacidade](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html#request-builder){target="_blank"} para enviar solicitações usando o tipo de namespace padrão.
+>Use somente a [Interface de privacidade](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=pt-BR#request-builder){target="_blank"} para enviar solicitações usando o tipo de namespace padrão.
 
 ### Tabelas pesquisadas ao processar solicitações {#list-of-tables}
 
@@ -156,6 +156,6 @@ Você pode encontrar abaixo os diferentes status das solicitações de privacida
 
 * [Introdução ao gerenciamento de privacidade](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR){target="_blank"}
 
-* [Regulamentos sobre a gestão da privacidade](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#privacy-management-regulations){target="_blank"} (GDPR, CCPA, PDPA e LGPD)
+* [Regulamentos sobre gerenciamento de privacidade](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#privacy-management-regulations){target="_blank"} (GDPR, CCPA, PDPA e LGPD)
 
-* [Recusar a venda de informações pessoais](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html?lang=pt-BR){target="_blank"} (específico da CCPA)
+* [Opção de não participação na venda de informações pessoais](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html?lang=pt-BR){target="_blank"} (específico da CCPA)
