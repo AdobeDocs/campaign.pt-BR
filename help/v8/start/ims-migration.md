@@ -3,14 +3,14 @@ title: Migração de usuários de tecnologia para a conta técnica no Console do
 description: Migração de usuários de tecnologia para a conta técnica no Console do desenvolvedor
 hide: true
 hidefromtoc: true
-source-git-commit: 7b4942b5334826adf27c8a31dbdb9a5bfb5d50eb
+source-git-commit: a598c37dac999c93fa50c9a243e7b9cbfbed3cda
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
 
-# Migração de usuários de tecnologia para a conta técnica no Console do desenvolvedor {#migrate-tech-users-to-ims}
+# Migração de operadores técnicos do Campaign para o Console do Adobe Developer {#migrate-tech-users-to-ims}
 
 A partir do Campaign v8.5, o processo de autenticação para o Campaign v8 está sendo aprimorado. Os operadores técnicos devem [Sistema Adobe Identity Management (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectar ao Campaign. Um operador técnico é um perfil de usuário do Campaign que foi explicitamente criado para integração com a API. Este artigo detalha as etapas necessárias para migrar um operador técnico para uma conta técnica no console do Adobe Developer.
 
@@ -23,9 +23,9 @@ Saiba mais sobre o novo processo de autenticação de servidor para servidor [na
 Essa alteração é aplicável a partir do Campaign v8.5 e será **obrigatório** a partir do Campaign v8.6.
 
 
-## Fui afetado?{#ims-imacts}
+## Você será afetado?{#ims-impacts}
 
-Se estiver usando APIs do Campaign, você precisará migrar seu operador técnico para o Console do Adobe Developer, conforme detalhado abaixo.
+Se estiver usando APIs do Campaign, você precisará migrar o(s) operador(es) técnico(s) para o Adobe Developer Console, conforme detalhado abaixo.
 
 ## Como migrar?{#ims-migration-procedure}
 
@@ -33,7 +33,7 @@ Se estiver usando APIs do Campaign, você precisará migrar seu operador técnic
 
 Antes de iniciar o processo de migração, entre em contato com o representante da Adobe para que as equipes técnicas da Adobe possam migrar seus grupos de operadores e direitos nomeados existentes para o Adobe Identity Management System (IMS).
 
-### Etapa 1 - Criar um projeto no Console do Adobe Developer{#ims-migration-step-1}
+### Etapa 1 — criar/atualizar o projeto do Campaign no console do Adobe Developer{#ims-migration-step-1}
 
 As integrações são criadas como parte de um **Projeto** no console do Adobe Developer. Saiba mais sobre Projetos em [Documentação do console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
@@ -68,7 +68,7 @@ A última etapa é atualizar o operador técnico no console do cliente do Adobe 
 
 >[!CAUTION]
 >
->Depois de atualizar o tipo de autenticação para o operador técnico, todas as integrações de API com esse operador técnico deixarão de funcionar
+>Depois de atualizar o tipo de autenticação para o operador técnico, todas as integrações de API com esse operador técnico deixarão de funcionar. Você deve [atualizar suas integrações de API](#ims-migration-step-6).
 
 Para atualizar o modo de autenticação do operador técnico para IMS, siga estas etapas:
 
@@ -89,7 +89,6 @@ Para atualizar o modo de autenticação do operador técnico para IMS, siga esta
    ```
 
 1. Salve as alterações.
-
 
 Você também pode atualizar o operador técnico de forma programática, usando scripts SQL ou APIs do Campaign. Esses modos ajudam a automatizar as etapas que atualizam o nome do operador com o endereço de email da conta técnica associada e/ou o tipo de autenticação.
 
@@ -148,8 +147,12 @@ Você também pode atualizar o operador técnico de forma programática, usando 
 
 Para experimentar a conexão, siga as etapas detalhadas na [Guia de credenciais do console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#generate-access-tokens){target="_blank"} para gerar um token de acesso e copiar o comando cURL de amostra fornecido.
 
-Para obter mais detalhes sobre as etapas de integração da API, consulte [Documentação de autenticação do console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
+### Etapa 6 - Atualizar as integrações de API de terceiros {#ims-migration-step-6}
+
+Você deve atualizar as integrações da API com seus sistemas de terceiros.
+
+Para obter mais detalhes sobre as etapas de integração da API, incluindo um código de amostra para uma integração suave, consulte [Documentação de autenticação do console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 
 ### Exemplos de chamadas SOAP{#ims-migration-samples}
