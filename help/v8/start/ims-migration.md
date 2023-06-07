@@ -3,9 +3,9 @@ title: Migração de usuários de tecnologia para a conta técnica no Console do
 description: Migração de usuários de tecnologia para a conta técnica no Console do desenvolvedor
 hide: true
 hidefromtoc: true
-source-git-commit: 8842404511bd6166d920ebdeee942007b33a1bab
+source-git-commit: 1f9efc0744792c1173e77965ff81eaee0ed2c618
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '807'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ A partir do Campaign v8.5, o processo de autenticação para o Campaign v8 está
 
 Os usuários regulares do Campaign já se conectam ao console do Adobe Campaign usando a Adobe ID, por meio do Adobe Identity Management System (IMS). Como parte do esforço para reforçar a segurança e o processo de autenticação, o aplicativo cliente do Adobe Campaign agora chama as APIs do Campaign diretamente usando o token de conta técnica IMS.
 
-Saiba mais sobre o novo processo de autenticação de servidor para servidor [na documentação do Console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Saiba mais sobre o novo processo de autenticação de servidor para servidor no [Documentação do console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 Essa alteração é aplicável a partir do Campaign v8.5 e será **obrigatório** a partir do Campaign v8.6.
 
@@ -46,7 +46,7 @@ Depois de ter acesso ao projeto do Campaign, você pode adicionar serviços, inc
 
 ### Etapa 2 - Adicionar uma API ao projeto usando a autenticação de Servidor para Servidor{#ims-migration-step-2}
 
-Depois que o projeto for criado no Console do Adobe Developer, adicione uma API que usa a autenticação de servidor para servidor. Saiba como configurar a credencial de servidor para servidor do OAuth no [na documentação do Console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
+Depois que o projeto for criado no Console do Adobe Developer, adicione uma API que usa a autenticação de servidor para servidor. Saiba como configurar a credencial de servidor para servidor do OAuth no [Documentação do console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
 
 Quando a API tiver sido conectada com êxito, você poderá acessar as credenciais recém-geradas, incluindo a ID do cliente e o Segredo do cliente, bem como gerar um token de acesso.
 
