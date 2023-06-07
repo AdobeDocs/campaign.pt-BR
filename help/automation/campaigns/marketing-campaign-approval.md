@@ -4,10 +4,10 @@ title: Configurar e gerenciar o processo de aprovação
 description: Saiba como gerenciar aprovações de campanhas de marketing
 feature: Approvals, Campaigns
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 382f0b1c4ee014f6ae5d62eaf93f5ae8c72c06b1
 workflow-type: tm+mt
-source-wordcount: '2272'
-ht-degree: 64%
+source-wordcount: '2280'
+ht-degree: 58%
 
 ---
 
@@ -89,7 +89,7 @@ Se uma lista de revisores for definida, uma tarefa será aprovada quando um revi
 
 ## Revisar e aprovar deliveries {#review-and-approve-deliveries}
 
-Para cada campanha que você puder aprovar o target do delivery, [conteúdo do delivery](#approving-content) e custos. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a Web. [Saiba mais](#approving-processes).
+Para cada campanha que você puder aprovar o target do delivery, [conteúdo do delivery](#approving-content) e custos. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do Console do cliente ou por meio de uma conexão com a web. [Saiba mais](#approving-processes).
 
 Para remessas diretas de mala direta, os operadores do Adobe Campaign podem exibir o arquivo de extração antes que ele seja enviado ao roteador e, se necessário, podem alterar o formato e reenviar a extração. [Saiba mais](#approve-an-extraction-file).
 
@@ -101,7 +101,7 @@ Quando essas fases de validação estiverem concluídas, o delivery poderá ser 
 
 ### Etapas para aprovar um delivery {#approving-processes}
 
-Os estágios que exigem aprovação aparecem no painel de campanha (por meio do console ou da interface da Web). Eles também aparecem na tabela de rastreamento de delivery e no painel do delivery.
+Os estágios que exigem aprovação aparecem no painel de campanha (por meio do Console do cliente ou da interface da Web). Eles também aparecem na tabela de rastreamento de delivery e no painel do delivery.
 
 ![](assets/delivery-approval-actions.png)
 
@@ -163,7 +163,7 @@ Para cada delivery na campanha, você pode aprovar os seguintes processos:
 
    * pelo e-mail de notificação: o e-mail de notificação contém um link para as provas já enviadas e possivelmente a renderização da mensagem para os vários webmails se o **Capacidade de entrega** o complemento está habilitado para esta instância.
 
-   * por console ou interface da Web, controle de delivery, painel de delivery ou painel de campanha. Este painel da campanha permite exibir a lista de provas que foram enviadas, clicando no link **[!UICONTROL Inbox rendering...]**. Para exibir o conteúdo, clique no ícone **[!UICONTROL Detail]** à direita da lista.
+   * por meio do console do cliente ou da interface da Web, do rastreamento de delivery, do painel de delivery ou do painel de campanha. Este painel da campanha permite exibir a lista de provas que foram enviadas, clicando no link **[!UICONTROL Inbox rendering...]**. Para exibir o conteúdo, clique no ícone **[!UICONTROL Detail]** à direita da lista.
 
 1. Um email de notificação é enviado para a pessoa responsável pela campanha informando se o conteúdo foi aprovado ou não. A pessoa responsável pela campanha pode reiniciar o ciclo de aprovação de conteúdo a qualquer momento. Para fazer isso, clique no link da linha **[!UICONTROL Content status]** do painel da campanha (no nível de delivery) e, em seguida, clique em **[!UICONTROL Reset content approval to submit it again]**.
 
@@ -175,7 +175,7 @@ Essa opção permite que você defina uma pessoa encarregada da edição de cont
 
 1. A pessoa responsável pela edição de conteúdo receberá um e-mail informando que o conteúdo está disponível.
 
-1. Eles podem fazer logon no console, abrir o delivery e editá-lo usando um assistente simplificado para alterar o assunto, o conteúdo HTML e o conteúdo de texto e enviar provas.
+1. Em seguida, eles podem fazer logon no console do cliente, abrir o delivery e editá-lo usando um assistente simplificado para alterar o assunto, o conteúdo de HTML e de texto e enviar provas.
 
    >[!NOTE]
    >
@@ -185,7 +185,7 @@ Essa opção permite que você defina uma pessoa encarregada da edição de cont
 
    Para fazer isso, é possível usar:
 
-   * o **[!UICONTROL Available content]** no console Adobe Campaign.
+   * o **[!UICONTROL Available content]** no Console do cliente do Adobe Campaign.
    * o link na mensagem de notificação.
 O operador pode adicionar um comentário antes de enviar o conteúdo para a pessoa responsável pela campanha.
 A mensagem de notificação permite que o revisor aprove ou rejeite o conteúdo.
@@ -197,7 +197,7 @@ Essa opção permite que você defina um operador externo responsável por aprov
 1. O gerente de conteúdo externo recebe um e-mail de notificação informando que o conteúdo foi aprovado e solicitando aprovação externa.
 1. O e-mail de notificação contém links para as provas enviadas, o que permite visualizar a renderização de delivery e um botão para aprovação ou rejeição do conteúdo do delivery.
 
-Esses links só estarão disponíveis se uma ou mais provas tiverem sido enviadas. Caso contrário, a renderização do delivery só estará disponível através do console ou da interface da Web.
+Esses links só estarão disponíveis se uma ou mais provas tiverem sido enviadas. Caso contrário, a renderização do delivery só estará disponível através do Console do cliente ou da interface da Web.
 
 ### Aprovar um arquivo de extração {#approve-an-extraction-file}
 
@@ -217,7 +217,7 @@ As tarefas podem ser aprovadas no painel de campanha, na guia de rastreamento de
 
 ### Aprovar no painel {#approval-via-the-dashboard}
 
-Para aprovar uma tarefa através do console ou da interface da Web, clique no link apropriado no painel de campanha.
+Para aprovar uma tarefa através do Console do cliente ou da interface da Web, clique no link apropriado no painel de campanha.
 
 Por exemplo, após a execução da análise de delivery:
 
@@ -305,7 +305,7 @@ O conteúdo dos e-mails de notificação pode ser personalizado. Consulte [Conte
 
 ### Ativar/desativar notificação {#enabling-disabling-notification}
 
-Por padrão, as mensagens de notificação são enviadas se a aprovação da tarefa relacionada estiver habilitada no template de campanha, da campanha ou do delivery. As notificações podem, porém, estar desabilitadas para autorizar aprovações somente do console.
+Por padrão, as mensagens de notificação são enviadas se a aprovação da tarefa relacionada estiver habilitada no template de campanha, da campanha ou do delivery. As notificações podem, no entanto, estar desativadas para autorizar aprovações somente do Console do cliente.
 
 Para fazer isso, edite a janela de aprovação da campanha ou do template da campanha (guias **[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign parameters...]** > **[!UICONTROL Approvals]**) e selecione **[!UICONTROL Do not enable notification sending]**.
 
