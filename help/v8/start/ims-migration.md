@@ -3,7 +3,7 @@ title: Migração de usuários de tecnologia para a conta técnica no Console do
 description: Migração de usuários de tecnologia para a conta técnica no Console do desenvolvedor
 hide: true
 hidefromtoc: true
-source-git-commit: a598c37dac999c93fa50c9a243e7b9cbfbed3cda
+source-git-commit: 8842404511bd6166d920ebdeee942007b33a1bab
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 1%
@@ -175,7 +175,7 @@ Depois que o processo de migração é alcançado e validado, as chamadas Soap s
            <urn:sessiontoken>SESSION_TOKEN</urn:sessiontoken>
            <urn:domEvent>
                <!--You may enter ANY elements at this point-->
-               <rtEvent type="melon" email="dchavan@adobe.com"/>
+               <rtEvent type="type" email="name@domain.com"/>
            </urn:domEvent>
        </urn:PushEvent>
    </soapenv:Body>
@@ -184,7 +184,7 @@ Depois que o processo de migração é alcançado e validado, as chamadas Soap s
 
 * Após a migração
 
-   ```
+   ```sql
    POST /nl/jsp/soaprouter.jsp HTTP/1.1
    Host: localhost:8080
    Content-Type: application/soap+xml;
@@ -199,7 +199,7 @@ Depois que o processo de migração é alcançado e validado, as chamadas Soap s
            <urn:sessiontoken></urn:sessiontoken>
            <urn:domEvent>
                <!--You may enter ANY elements at this point-->
-               <rtEvent type="melon" email="dchavan@adobe.com"/>
+               <rtEvent type="type" email="name@domain.com"/>
            </urn:domEvent>
        </urn:PushEvent>
    </soapenv:Body>
