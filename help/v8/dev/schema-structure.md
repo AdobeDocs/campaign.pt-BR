@@ -5,7 +5,7 @@ feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 12%
@@ -180,13 +180,13 @@ A variável **`<elements>`** e **`<attributes>`** os elementos do schema de dado
    <attribute name="email" type="string" length="80" label="Email"/>
    ```
 
-   O rótulo pode ser visto no formulário de entrada do console do cliente Adobe Campaign:
+   O rótulo pode ser visto no formulário de entrada do Console do cliente do Adobe Campaign:
 
    ![](assets/schema_label.png)
 
 * A variável **desc** permite inserir uma descrição longa.
 
-   A descrição pode ser vista do formulário de entrada na barra de status da janela principal do console do cliente Adobe Campaign.
+   A descrição pode ser vista do formulário de entrada na barra de status da janela principal do Console do cliente do Adobe Campaign.
 
    >[!NOTE]
    >
@@ -213,7 +213,7 @@ O valor deve ser uma expressão compatível com a linguagem XPath. Para obter ma
 
    >[!NOTE]
    >
-   >No console do cliente Adobe Campaign, a variável **[!UICONTROL Administration>Counters]** nó é usado para gerenciar contadores.
+   >No Console do cliente do Adobe Campaign, a variável **[!UICONTROL Administration>Counters]** nó é usado para gerenciar contadores.
 
 Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -237,7 +237,7 @@ Esses valores são mostrados em uma lista suspensa no formulário de entrada:
 
 >[!NOTE]
 >
->No console do cliente Adobe Campaign, a variável **[!UICONTROL Administration > Enumerations]** é usado para gerenciar enumerações.
+>No Console do cliente do Adobe Campaign, a variável **[!UICONTROL Administration > Enumerations]** é usado para gerenciar enumerações.
 
 #### Definir enumeração {#set-enumeration}
 
@@ -361,7 +361,7 @@ Também é possível definir expressões complexas, como as seguintes operaçõe
 
 Foram adicionadas funções de alto nível às expressões, a fim de enriquecer o potencial dessa linguagem.
 
-Você pode acessar a lista de funções disponíveis por meio de qualquer editor de expressão no console do cliente do Adobe Campaign:
+Você pode acessar a lista de funções disponíveis por meio de qualquer editor de expressão no Console do cliente do Adobe Campaign:
 
 ![](assets/schema_function.png)
 

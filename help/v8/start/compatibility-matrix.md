@@ -4,11 +4,11 @@ description: Conheça os sistemas e as versões compatíveis com o Campaign v8
 feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
-exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 61222c2b05f1346bd2560ff17b225153edf9e91e
+exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -76,7 +76,7 @@ Use o menu **Ajuda > Sobre...** para verificar sua versão.
 
 Você acessa as seguintes informações:
 
-* O número da **versão** do console do cliente e do servidor de aplicativos. Na amostra acima, a versão é 8.1.5 para o console do cliente e para o servidor de aplicativos.
+* A variável **version** número do console do cliente e do servidor de aplicativos. No exemplo acima, a versão é 8.1.5 para o Console do cliente e para o servidor de aplicativos.
 * O número SHA, entre parênteses.
 * Um link para entrar em contato com o Atendimento ao cliente da Adobe.
 * Links para Política de privacidade da Adobe, Termos de uso e Política de cookies.

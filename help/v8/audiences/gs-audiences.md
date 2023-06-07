@@ -5,7 +5,7 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 36%
@@ -31,7 +31,7 @@ Para preencher o Adobe Campaign com dados de perfil, você pode:
 * [importar arquivos de dados](../start/import.md) de uma fonte de dados externa, como um sistema CRM ou um arquivo simples
 * [criar formulários web](../dev/webapps.md) para permitir que os clientes insiram suas próprias informações e criem seus próprios perfis
 * [mapear para um banco de dados externo](../connect/fda.md) onde os perfis são armazenados
-* insira perfis manualmente no console do cliente, conforme abaixo:
+* insira os perfis manualmente no Console do cliente, conforme abaixo:
 
 ![](assets/create-profile.png)
 

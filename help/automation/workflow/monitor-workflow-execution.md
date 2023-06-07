@@ -4,10 +4,10 @@ title: Monitorar a execução do fluxo de trabalho
 description: Monitorar a execução do fluxo de trabalho
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1934'
-ht-degree: 95%
+source-wordcount: '1935'
+ht-degree: 94%
 
 ---
 
@@ -121,11 +121,11 @@ Exemplo de notificação:
 
 ![](assets/wf-notification_error-msg.png)
 
-O link permite acessar o console do Adobe Campaign no modo da Web e trabalhar no workflow com erro após fazer logon.
+O link permite acessar o Console do cliente do Adobe Campaign no modo da Web e trabalhar no workflow com erro após fazer logon.
 
 ![](assets/wf-notification_error-console.png)
 
-Você pode configurar o workflow para que ele não pause e continue a execução em caso de erros. Para fazer isso, edite as **[!UICONTROL Properties]** do workflow e, na seção **[!UICONTROL Error management]**, selecione a opção **[!UICONTROL Ignore]** no campo **[!UICONTROL In case of error]**. Você pode então especificar o número de erros consecutivos que podem ser ignorados antes que o processo seja pausado.
+Você pode configurar o fluxo de trabalho para que ele não seja pausado e continue a execução em caso de erros. Para fazer isso, edite as **[!UICONTROL Properties]** do workflow e, na seção **[!UICONTROL Error management]**, selecione a opção **[!UICONTROL Ignore]** no campo **[!UICONTROL In case of error]**. Você pode então especificar o número de erros consecutivos que podem ser ignorados antes que o processo seja pausado.
 
 Nesse caso, a tarefa com erro é anulada. Esse modo é particularmente adequado para workflows projetados para tentar novamente a campanha mais tarde (ações periódicas).
 

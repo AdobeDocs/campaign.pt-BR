@@ -4,10 +4,10 @@ title: Criar campanhas de marketing
 description: Saiba como criar e executar campanhas de marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: ad286059a9f4b63d7de4fa5130760f36d0976431
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 58%
+source-wordcount: '1298'
+ht-degree: 56%
 
 ---
 
@@ -51,7 +51,7 @@ Antes de começar a criar suas campanhas e deliveries, configure a hierarquia de
 
 ### Configurar um programa {#edit-a-program}
 
-Ao editar um programa, use as guias descritas abaixo para procurar e configurá-la.
+Ao editar um programa, use as guias descritas abaixo para procurar e configurar.
 
 * A guia **Agenda** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você clicar no cabeçalho do calendário. Você pode criar uma campanha, um programa ou uma tarefa nesta página. [Saiba mais](#campaign-calendar)
 
@@ -140,7 +140,7 @@ Você pode filtrar as informações exibidas no calendário da campanha. Para fa
 
 >[!NOTE]
 >
->Quando você filtrar em uma data, todas as campanhas com uma data de início posterior à data especificada e/ou à data final anterior à data especificada serão exibidas. As datas são selecionadas usando os calendários à direita de cada campo.
+>Quando você filtrar em uma data, todas as campanhas com uma data de início posterior à data especificada e/ou com uma data final anterior à data especificada serão exibidas. As datas são selecionadas usando os calendários à direita de cada campo.
 
 Também é possível usar o campo **[!UICONTROL Search]** para filtrar os itens exibidos.
 
@@ -159,7 +159,7 @@ Ao criar uma campanha por meio da guia **[!UICONTROL Schedule]** de um programa,
 
 ## Usar a interface da Web {#use-the-web-interface-}
 
-Você pode acessar as telas do console do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e remessas, bem como relatórios e informações dos perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar um delivery etc.
+Você pode acessar as telas do Console do cliente do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e deliveries, bem como relatórios e informações sobre os perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar um delivery etc.
 
 1. Faça logon como de costume via https://`<your instance>:<port>/view/home`.
 1. Use os menus para acessar as exibições.

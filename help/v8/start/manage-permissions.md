@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1632'
 ht-degree: 41%
@@ -37,7 +37,7 @@ Para adicionar um usuário, siga as etapas abaixo:
 
 Saiba mais sobre a criação de usuários no Admin Console em [esta página](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
 
-Quando novos usuários [fazer logon no Campaign](connect.md) com o Adobe ID, eles são adicionados à lista de operadores do Campaign no console do cliente. Os operadores de campanha são armazenados no **[!UICONTROL Administration > Access management > Operators]** pasta do explorador do Campaign.
+Quando novos usuários [fazer logon no Campaign](connect.md) com o Adobe ID, eles são adicionados à lista de operadores do Campaign no Console do cliente. Os operadores de campanha são armazenados no **[!UICONTROL Administration > Access management > Operators]** pasta do explorador do Campaign.
 
 ## Trabalhar com perfis de produto{#product-profiles}
 
@@ -61,7 +61,7 @@ Você pode usar perfis de produto padrão ou criar novos.
 
 ### Criar um perfil de produto{#create-product-profile}
 
-Para adicionar um novo perfil de produto ao Adobe, primeiro você deve criá-lo no console do cliente do Campaign e, em seguida, adicioná-lo ao Admin Console.
+Para adicionar um novo perfil de produto ao Adobe, primeiro você deve criá-lo no Console do cliente do Campaign e, em seguida, adicioná-lo no Admin Console.
 
 Por exemplo, para criar um perfil de produto &quot;revisores&quot;, siga as etapas abaixo.
 

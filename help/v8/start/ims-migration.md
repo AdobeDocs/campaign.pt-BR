@@ -3,7 +3,7 @@ title: Migração de usuários de tecnologia para a conta técnica no Console do
 description: Migração de usuários de tecnologia para a conta técnica no Console do desenvolvedor
 hide: true
 hidefromtoc: true
-source-git-commit: 1f9efc0744792c1173e77965ff81eaee0ed2c618
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 1%
@@ -62,9 +62,9 @@ Agora é possível adicionar o perfil de produto do Campaign ao projeto, conform
 1. Atribua todos os perfis de produto relevantes à API, por exemplo, &quot;messagecenter&quot;, e salve as alterações.
 1. Navegue até o **Detalhes da credencial** do seu projeto e copie a guia **Email da conta técnica** valor.
 
-### Etapa 4 - Atualizar o operador técnico no console do cliente {#ims-migration-step-4}
+### Etapa 4 - Atualizar o operador técnico no Console do cliente {#ims-migration-step-4}
 
-A última etapa é atualizar o operador técnico no console do cliente do Adobe Campaign.
+A última etapa é atualizar o operador técnico no Console do cliente do Adobe Campaign.
 
 >[!CAUTION]
 >
@@ -72,7 +72,7 @@ A última etapa é atualizar o operador técnico no console do cliente do Adobe 
 
 Para atualizar o modo de autenticação do operador técnico para IMS, siga estas etapas:
 
-1. No explorador do console do cliente do Campaign, navegue até o **Administração > Gerenciamento de acesso > Operadores**.
+1. No explorador do Console do cliente do Campaign, navegue até o **Administração > Gerenciamento de acesso > Operadores**.
 1. Edite o operador técnico existente usado para APIs do Fir.
 1. Substitua o **Nome (logon)** deste operador técnico pelo e-mail da conta técnica recuperado anteriormente.
 1. Navegue até o **Editar** botão na parte superior esquerda ao lado **Arquivo** e selecione **Editar a origem XML**.

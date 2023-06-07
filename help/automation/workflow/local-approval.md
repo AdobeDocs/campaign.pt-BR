@@ -4,10 +4,10 @@ title: Aprovação local
 description: Aprovação local
 feature: Workflows
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 100%
+source-wordcount: '645'
+ht-degree: 92%
 
 ---
 
@@ -81,13 +81,13 @@ No caso de um relatório de feedback de delivery, os seguintes campos devem ser 
 
 Este exemplo mostra como configurar um processo de aprovação para um delivery de workflow. Para obter mais informações sobre como criar workflows de delivery, consulte a seção [Exemplo: workflow de delivery](delivery.md#example--delivery-workflow).
 
-Um operador pode aprovar um delivery de duas formas: usando a página da Web vinculada na mensagem de email ou através do console.
+Um operador pode aprovar um delivery de duas maneiras: usando a página da Web vinculada na mensagem de email ou por meio do Console do cliente.
 
 * Aprovação da Web
 
    O email enviado para operadores do grupo Administrador permite aprovar o target do delivery. A mensagem usa o texto definido e a expressão JavaScript é substituída pelo valor calculado (neste caso, &#39;574&#39;)
 
-   Para aprovar o delivery, clique no link relevante e entre no console do Adobe Campaign.
+   Para aprovar o delivery, clique no link relevante e faça logon no Console do cliente do Adobe Campaign.
 
    ![](assets/new-workflow-valid-webaccess.png)
 
@@ -95,7 +95,7 @@ Um operador pode aprovar um delivery de duas formas: usando a página da Web vin
 
    ![](assets/new-workflow-valid-webaccess-confirm.png)
 
-* Aprovação através do console
+* Aprovação através do console do cliente
 
    Na estrutura de árvore, o nó **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** contém a lista de tarefas a serem aprovadas pelo operador conectado atualmente. A lista deve exibir uma linha. Clique duas vezes na linha para responder. A janela a seguir é exibida:
 

@@ -4,10 +4,10 @@ title: Criar uma campanha local
 description: Criar uma campanha local
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 7e5ffbec959785971280c394c416cebe83590897
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 99%
+source-wordcount: '1555'
+ht-degree: 96%
 
 ---
 
@@ -295,9 +295,9 @@ Quando uma campanha é solicitada por uma entidade local, seus revisores são no
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Aprovar via console do Adobe Campaign {#approving-via-the-adobe-campaign-console}
+#### Aprovar via console do cliente {#approving-via-the-adobe-campaign-console}
 
-O pedido também pode ser aprovado por meio do console, na visão geral do pedido de campanha. Para aprovar um pedido, selecione-o e clique em **[!UICONTROL Approve the order]**.
+O pedido também pode ser aprovado por meio do Console do cliente, na visão geral do pedido de campanha. Para aprovar um pedido, selecione-o e clique em **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -321,7 +321,7 @@ O operador encarregado da aprovação pode rejeitar um pedido ou um pacote de ca
 
 Se o revisor rejeitar um pedido, a notificação relevante será automaticamente enviada às entidades locais relacionadas: ela exibirá o comentário inserido pelo operador que rejeitou a aprovação.
 
-As informações são exibidas na lista da página de pacotes de campanha ou na página do pedido da campanha.. Se tiverem acesso ao console do Adobe Campaign, entidades locais serão informadas dessa rejeição.
+As informações são exibidas na lista da página de pacotes de campanha ou na página do pedido da campanha.. Se tiverem acesso ao Console do cliente do Adobe Campaign, entidades locais serão informadas dessa rejeição.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

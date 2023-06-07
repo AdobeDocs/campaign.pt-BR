@@ -5,7 +5,7 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 34%
@@ -193,7 +193,7 @@ Usar e combinar **Filtros rápidos** para definir filtros em campos específicos
 
 Depois de adicionados, os campos de filtro rápido são exibidos acima da lista de dados, um após o outro. Eles podem ser excluídos de maneira independente.
 
-Os filtros rápidos são específicos para cada operador e são reinicializados cada vez que o operador limpa o cache do console do cliente.
+Os filtros rápidos são específicos para cada operador e são reiniciados sempre que o operador limpa o cache do console do cliente.
 
 Se precisar reutilizar um filtro, crie um **filtro avançado** e salve-o. [Saiba mais](#advanced-filters).
 

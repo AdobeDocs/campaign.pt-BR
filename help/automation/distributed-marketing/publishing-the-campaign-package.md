@@ -4,16 +4,14 @@ title: Publicar o pacote da campanha
 description: Publicar o pacote da campanha
 feature: Distributed Marketing
 exl-id: 2cd1981d-f192-41dc-b2f2-4fcd60493079
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 100%
+source-wordcount: '455'
+ht-degree: 97%
 
 ---
 
 # Publicar o pacote da campanha{#publishing-the-campaign-package}
-
-
 
 Operadores de entidades centrais publicam campanhas que desejam oferecer às entidades locais na **[!UICONTROL list of campaign packages]**.
 
@@ -43,19 +41,19 @@ Uma mensagem de notificação é enviada ao revisor para confirmar a disponibili
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
-## Períodos de aprovação {#approval-periods}
+## Cronograma de aprovação {#approval-periods}
 
 Por padrão, os revisores recebem três dias a partir da data de envio para processar a aprovação.
 
 Na janela dos revisores de edição, é possível definir lembretes para enviar uma ou várias mensagens se um pacote de campanha não tiver sido aprovado. Para fazer isso, clique no link **[!UICONTROL Add reminder]** e, em seguida, no botão **[!UICONTROL Add]**.
 
-Os lembretes podem ser enviados em uma determinada data e/ou **x** dias após a data de envio. O tipo de lembrete pode ser configurado na primeira coluna da tabela de lembretes. No exemplo abaixo, os revisores receberão uma mensagem de lembrete em 29/01/2014, ou seja, dois dias antes da data selecionada na coluna **[!UICONTROL Date]**, e um segundo lembrete um dia antes do final do período de aprovação, ou seja, dois dias após a data de envio para aprovação.
+Os lembretes podem ser enviados em uma determinada data e/ou **x** dias após a data de envio. O tipo de lembrete pode ser configurado na primeira coluna da tabela de lembretes. No exemplo abaixo, os revisores receberão uma mensagem de lembrete em 01/11/2023, ou seja, dois dias antes da data selecionada na coluna **[!UICONTROL Date]**, e um segundo lembrete um dia antes do final do período de aprovação, ou seja, dois dias após a data de envio para aprovação.
 
 ![](assets/s_advuser_mkg_dist_reminder_planning.png)
 
 Depois que estiver definido e o pacote for enviado para aprovação, o cronograma de execução é exibido na guia **[!UICONTROL Audit]**. Ele mostra o prazo de processamento calculado com base na configuração anterior, bem como nas datas de todos os lembretes configurados.
 
-## Aprovar via console do Adobe Campaign {#approving-via-the-adobe-campaign-console}
+## Aprovar via console do cliente {#approving-via-the-adobe-campaign-console}
 
 Se nenhum revisor tiver sido especificado ou se nenhum dos operadores notificados tiver aprovado o pacote, o botão **[!UICONTROL Approve the package]** permitirá prosseguir diretamente para a aprovação no **[!UICONTROL Dashboard]** do pacote da campanha ou da visão geral dos pacotes.
 

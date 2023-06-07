@@ -3,10 +3,10 @@ product: campaign
 title: Criar e gerenciar tarefas
 description: Criar e gerenciar tarefas
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 094743fef69e137f80b670f0bf31dce56c282c34
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '3740'
-ht-degree: 87%
+source-wordcount: '3743'
+ht-degree: 85%
 
 ---
 
@@ -466,7 +466,7 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
 1. Depois de concluir a seção atribuída a eles, os participantes podem aprovar a tarefa através:
 
    * do e-mail de notificação.
-   * do console ou da interface da Web, no painel de tarefas.
+   * por meio do Console do cliente ou da interface da Web, no painel de tarefas.
 
       ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -480,7 +480,7 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. Assim que a pessoa encarregada da tarefa decidir que ela terminou, ela pode fechá-la, usando o link no e-mail de notificação enviado quando a tarefa foi iniciada, o console ou a interface.
+1. Assim que a pessoa encarregada da tarefa decidir que ela terminou, ela pode fechá-la, usando o link no e-mail de notificação enviado quando a tarefa foi iniciada, o Console do cliente ou a interface.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -490,7 +490,7 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
 
 1. O status da tarefa é alterado para **[!UICONTROL To approve]**, e uma notificação é enviada ao revisor.
 
-   Eles aprovam a tarefa através do e-mail de notificação, do console ou da interface da Web.
+   Eles aprovam a tarefa por meio do e-mail de notificação, do Console do cliente ou da interface da Web.
 
    Eles podem agir através do painel de campanha:
 

@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1839'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Para otimizar a segurança, os tokens de segurança foram removidos dos URLs ger
 
 **Aprimoramentos**
 
-* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML no console passou a usar o **Microsoft Edge Chromium**. Além disso, a instalação do **Webview 2 runtime do Microsoft Edge** agora é necessária para qualquer instalação do console do cliente.
+* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML no console passou a usar o **Microsoft Edge Chromium**. Além disso, a instalação de **WebView 2 do Microsoft Edge** O tempo de execução agora é necessário para qualquer instalação do Console do cliente.
 * Melhoria na execução do fluxo de trabalho com alta disponibilidade do fluxo de trabalho, o que permite executar fluxos de trabalho simultâneos em diferentes contêineres para evitar a perda do serviço de fluxo de trabalho e erros de execução relacionados. **Observação**: esse novo recurso foi lançado com disponibilidade limitada somente para um conjunto de clientes.
 * As solicitações de privacidade agora são executadas em lote para um determinado namespace de privacidade. Essa melhoria aumenta o tempo de execução das solicitações de exclusão de GDPR/privacidade.
 

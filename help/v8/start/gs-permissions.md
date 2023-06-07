@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: b63dc1616bc7ce1387a7bd0590c289b59f11b33f
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 15%
@@ -29,11 +29,11 @@ No Adobe Campaign, os usuários são **operadores** e **grupos de operadores** r
 
 ## Etapas principais para conceder permissões{#key-steps-permissions}
 
-Como administrador de produto, você pode conceder permissões aos usuários da organização. As permissões são concedidas por meio do console do cliente Adobe Admin Console e Campaign. Os usuários fazem logon no Adobe Campaign com a Adobe ID. Saiba como se conectar ao Adobe Campaign no [esta página](connect.md).
+Como administrador de produto, você pode conceder permissões aos usuários da organização. As permissões são concedidas por meio do Adobe Admin Console e do Console do cliente do Campaign. Os usuários fazem logon no Adobe Campaign com a Adobe ID. Saiba como se conectar ao Adobe Campaign no [esta página](connect.md).
 
 As principais etapas são:
 
-* **Etapa 1**: defina os grupos de operadores e atribua a eles permissões no console do cliente do Campaign. [Saiba mais](manage-permissions.md#create-product-profile).
+* **Etapa 1**: defina os grupos de operadores e atribua a eles permissões no Console do cliente do Campaign. [Saiba mais](manage-permissions.md#create-product-profile).
 Observe que você também pode usar grupos de operadores integrados para começar. Esses grupos padrão e suas permissões são listados em [nesta seção](manage-permissions.md#ootb-productprofiles).
 * **Etapa 2**: crie perfis de produto no Admin Console que correspondam a esses grupos. [Saiba mais](manage-permissions.md#create-product-profile).
 Você pode usar perfis de produto integrados para começar. [Saiba mais](manage-permissions.md#ootb-productprofiles).
