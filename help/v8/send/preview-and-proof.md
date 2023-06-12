@@ -5,10 +5,10 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 17%
+source-wordcount: '703'
+ht-degree: 18%
 
 ---
 
@@ -51,20 +51,20 @@ O tipo de público alvo de prova é selecionado no **[!UICONTROL Targeting mode]
 * Use o **[!UICONTROL Substitution of the address]** opção para inserir endereços de email e usar os dados do recipient de destino para validar o conteúdo. Os endereços de substituição podem ser inseridos manualmente ou selecionados na lista suspensa. A enumeração associada é Substitution address (rcpAddress).
 Por padrão, a substituição é executada aleatoriamente, mas você pode selecionar um recipient específico do target principal, por meio do  **[!UICONTROL Detail]** ícone.
 
-   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
-   Escolha o **[!UICONTROL Select a profile (must be included in the target)]** e selecione um recipient.
+  Escolha o **[!UICONTROL Select a profile (must be included in the target)]** e selecione um recipient.
 
-   ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
 
 
 * Use o **[!UICONTROL Seed addresses]**  opção para usar seed addresses como target de prova. Esses endereços podem ser importados de um arquivo ou inseridos manualmente.
 
-   >[!NOTE]
-   >
-   >Os seed addresses não pertencem à tabela de recipient padrão (nms:recipient), pois são criados em uma tabela separada. Se a tabela de recipients é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados.
+  >[!NOTE]
+  >
+  >Os seed addresses não pertencem à tabela de recipient padrão (nms:recipient), pois são criados em uma tabela separada. Se a tabela de recipients é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados.
 
-   Saiba mais sobre seed addresses em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}.
+  Saiba mais sobre seed addresses [nesta seção](../audiences/test-profiles.md).
 
 * Use o **[!UICONTROL Specific target and Seed addresses]** opção para combinar seed addresses e endereços de email específicos. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 

@@ -4,9 +4,9 @@ title: Audiência da campanha de marketing
 description: Saiba como definir a audiência das campanhas de marketing
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: a2518ea0c0ab23f50b3132b750a14e98b4ffad7d
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1464'
 ht-degree: 82%
 
 ---
@@ -17,8 +17,7 @@ Em uma campanha de marketing, para cada delivery, é possível definir:
 
 * O público-alvo. Você pode enviar mensagens para um [lista de recipients](#send-to-a-group) ou criar um [público-alvo em um fluxo de trabalho](#build-the-main-target-in-a-workflow)
 * Um grupo de controle. Você pode [adicionar um grupo de controle](#add-a-control-group) para monitorar o comportamento dos recipients após a entrega de mensagens
-<!--
-* Seed addresses - Learn more in [this section](../../delivery/using/about-seed-addresses.md).-->
+* Seed addresses – saiba mais [nesta seção](../../v8/audiences/test-profiles.md).-->
 
 Algumas dessas informações podem ser herdadas do [template de campanha](marketing-campaign-templates.md#campaign-templates).
 
@@ -109,9 +108,9 @@ Os ícones da barra de ferramentas permitem tomar medidas referentes à execuç�
 
    * O ícone **[!UICONTROL Start]** permite iniciar o workflow para construção do target. Quando você clica nesse ícone, todas as atividades sem uma transição de entrada são ativadas (exceto saltos de ponto de extremidade).
 
-      ![](assets/start.png)
+     ![](assets/start.png)
 
-      O servidor considera a solicitação, conforme mostrado pelo status: **[!UICONTROL Start as soon as possible]**.
+     O servidor considera a solicitação, conforme mostrado pelo status: **[!UICONTROL Start as soon as possible]**.
 
    * Você pode reiniciar o workflow de definição de metas por meio do ícone de barra de ferramentas apropriado. Esse comando pode ser útil se o ícone **[!UICONTROL Start]** não estiver disponível, por exemplo, quando a interrupção do workflow para construção do target estiver em andamento. Nesse caso, clique no ícone **[!UICONTROL Restart]** para antecipar a reinicialização. O servidor considera a solicitação, como mostra o status: **[!UICONTROL Restart requested]**.
 
@@ -119,51 +118,52 @@ Os ícones da barra de ferramentas permitem tomar medidas referentes à execuç�
 
    * Os ícones da barra de ferramentas permitem interromper ou pausar um workflow de direcionamento em andamento.
 
-      Ao clicar em **[!UICONTROL Pause]**, as operações em andamento **[!UICONTROL are not]** são pausadas, mas nenhuma outra atividade é iniciada até a próxima reinicialização.
+     Ao clicar em **[!UICONTROL Pause]**, as operações em andamento **[!UICONTROL are not]** são pausadas, mas nenhuma outra atividade é iniciada até a próxima reinicialização.
 
-      ![](assets/pause.png)
+     ![](assets/pause.png)
 
-      O servidor considera o comando, como mostra o status: **[!UICONTROL Pause requested]**.
+     O servidor considera o comando, como mostra o status: **[!UICONTROL Pause requested]**.
 
-      Você também pode pausar um workflow de direcionamento automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
+     Você também pode pausar um workflow de direcionamento automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
 
-      ![](assets/donotexecute.png)
+     ![](assets/donotexecute.png)
 
-      Essa configuração é exibida por um ícone especial.
+     Essa configuração é exibida por um ícone especial.
 
-      ![](assets/pause_activity.png)
+     ![](assets/pause_activity.png)
 
-      >[!NOTE]
-      >
-      >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de definição de metas.
+     >[!NOTE]
+     >
+     >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de definição de metas.
 
-      Clique em **[!UICONTROL Start]** para retomar a execução.
+     Clique em **[!UICONTROL Start]** para retomar a execução.
 
    * Clique no ícone **[!UICONTROL Stop]** para interromper a execução em andamento.
 
-      ![](assets/stop.png)
+     ![](assets/stop.png)
 
-      O servidor considera o comando, como mostra o status: **[!UICONTROL Stop requested]**.
-   Você também pode interromper um workflow de definição de metas automaticamente quando a execução atinge uma atividade. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target será interrompido e selecione **[!UICONTROL Do not activate]**.
+     O servidor considera o comando, como mostra o status: **[!UICONTROL Stop requested]**.
 
-   ![](assets/donotactivate.png)
+  Você também pode interromper um workflow de definição de metas automaticamente quando a execução atinge uma atividade. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target será interrompido e selecione **[!UICONTROL Do not activate]**.
 
-   Essa configuração é exibida por um ícone especial.
+  ![](assets/donotactivate.png)
 
-   ![](assets/unactivation.png)
+  Essa configuração é exibida por um ícone especial.
+
+  ![](assets/unactivation.png)
 
 
-   >[!NOTE]
-   >
-   >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de definição de metas.
+  >[!NOTE]
+  >
+  >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de definição de metas.
 
 * Interrupção incondicional
 
-   No Explorer, selecione **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** para acessar e atuar em todos os workflows da campanha.
+  No Explorer, selecione **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** para acessar e atuar em todos os workflows da campanha.
 
-   Você pode interromper o workflow definitivamente clicando no ícone **[!UICONTROL Actions]** e selecionando a interrupção **[!UICONTROL Unconditional]**. Esta ação encerra o fluxo de trabalho da campanha.
+  Você pode interromper o workflow definitivamente clicando no ícone **[!UICONTROL Actions]** e selecionando a interrupção **[!UICONTROL Unconditional]**. Esta ação encerra o fluxo de trabalho da campanha.
 
-   ![](assets/stop_unconditional.png)
+  ![](assets/stop_unconditional.png)
 
 ## Adicionar um grupo de controle {#add-a-control-group}
 
