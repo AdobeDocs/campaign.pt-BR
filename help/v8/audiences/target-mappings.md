@@ -5,16 +5,18 @@ feature: Audiences, Profiles
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: db27abf860b0744a4120166c68e2cc2ae8a3d172
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 43%
+source-wordcount: '366'
+ht-degree: 39%
 
 ---
 
 # Trabalhar com target mappings{#gs-target-mappings}
 
-Por padrão, templates de delivery têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient.**
+Por padrão, templates de delivery de email e SMS têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient.**
+
+Para notificações por push, o target mapping padrão é **Aplicativos de assinante (nms:appSubscriptionRcp)**, que está vinculado à tabela de recipients.
 
 Você pode usar outros target mappings para seus deliveries ou criar um novo.
 
