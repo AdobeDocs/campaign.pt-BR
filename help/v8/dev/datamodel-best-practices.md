@@ -5,9 +5,9 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: df08cdb90271f4d18fd37b8ae528ebd872d0ea63
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2718'
 ht-degree: 4%
 
 ---
@@ -115,7 +115,6 @@ Ao criar uma tabela personalizada, você tem duas opções:
 > * A variável **autouuid** atributo se aplica somente a [Implantações corporativas (FFDA)](../architecture/enterprise-deployment.md).
 >
 
-
 ## Links e cardinalidade {#links-and-cardinality}
 
 ### Links {#links}
@@ -138,7 +137,7 @@ Por padrão, o Adobe Campaign criará um link usando a chave primária da tabela
 
 Ao projetar um link, verifique se o registro do target é exclusivo quando uma relação 1-1 for declarada. Caso contrário, a associação poderá retornar vários registros quando somente um for esperado. Isso resulta em erros durante a preparação do delivery quando &quot;a consulta retorna mais linhas do que o esperado&quot;. Defina o nome do link com o mesmo nome do schema de destino.
 
-Defina um link com uma cardinalidade (1-N) no esquema no lado (1). Por exemplo, a relação Destinatário (1) - (N) Transação deve ser definida no schema da transação.
+Defina um link com uma cardinalidade (1-N) no esquema no lado (N). Por exemplo, a relação Destinatário (1) - (N) Transação deve ser definida no schema da transação.
 
 Observe que uma cardinalidade reversa de um link é (N) por padrão. É possível definir um link (1-1) adicionando o atributo revCardinality=&#39;single&#39; à definição do link.
 
