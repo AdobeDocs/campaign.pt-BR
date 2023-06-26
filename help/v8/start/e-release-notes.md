@@ -7,10 +7,10 @@ level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 100%
+source-wordcount: '586'
+ht-degree: 20%
 
 ---
 
@@ -18,32 +18,55 @@ ht-degree: 100%
 
 Esta página descreve as melhorias e correções incluídas no próximo lançamento do Campaign v8. Esse conteúdo está sujeito a alterações sem aviso prévio até a data de lançamento. As notas de versão oficiais estão disponíveis nesta [página](../start/release-notes.md).
 
-## Versão 8.3.9 {#release-8-3-9}
+## Versão 8.5 {#release-8-5}
 
->[!CAUTION]
->
-> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#download-ac-console).
+_30 de junho de 2023_
 
-_7 de outubro de 2022_
+**Novidades**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Serviço aprimorado de notificação por push</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td><p>O Campaign 8.5 está apresentando nosso mais recente serviço de notificação por push no v8, viabilizado por uma estrutura robusta criada em uma tecnologia de ponta moderna. Este serviço foi projetado para desbloquear novos níveis de escalabilidade, garantindo que suas notificações possam alcançar um público maior com eficiência contínua. Com nossa infraestrutura aprimorada e nossos processos otimizados, você pode esperar maior escala e confiabilidade, permitindo que você interaja e se conecte com seus usuários de aplicativos móveis como nunca. Esse recurso só está disponível para um grupo selecionado de clientes (disponibilidade limitada).</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Atualizações de compatibilidade**
+
+* A versão de 32 bits do console do cliente agora está obsoleta. A partir da versão 8.6, o Console do cliente só estará disponível em 64 bits. A atualização para a versão de 64 bits do console do cliente é perfeita. Para obter mais informações sobre como atualizar seu sistema operacional, consulte esta [nota técnica](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=pt-BR).
+* Agora você pode conectar a instância do Campaign v8 ao banco de dados externo do Azure synapse. Essa conexão é gerenciada por meio de uma nova conta externa.
 
 **Aprimoramentos**
 
-* Correção de um problema que afetava as atualizações de status do log de entrega na instância MID quando a opção FeatureFlag_GZIP_Compression era habilitada. (NEO-49183)
-* O fluxo de trabalho técnico de **Limpeza do banco de dados** agora também lida com esquemas de preparo personalizados. (NEO-48974)
-* Correção de um problema que poderia fazer com que as entregas ficassem no status **Pendente** mesmo que a data de contato tivesse sido alcançada. (NEO-48079, NEO-48251)
-* Estabilidade aprimorada ao manipular strings XML inválidas durante chamadas SOAP. (NEO-48027)
-* Correção de um problema que poderia retardar a análise de entrega, durante a etapa de exclusão de incluir na lista de bloqueios de recipients, ao direcionar grandes volumes de recipients. (NEO-48019)
-* Para evitar a lentidão ao enviar provas para os seed addresses, todas as replicações consecutivas de membros de seed agora são agrupadas em uma solicitação de replicação. (NEO-44844)
-* Correção de um problema que resultava em problemas de personalização ao enviar mensagens SMS usando um modo de entrega externo. (NEO-46415)
-* Correção de um problema que exibia um erro ao tentar visualizar uma entrega em qualquer evento arquivado do Centro de mensagens. (NEO-43620)
-* Correção de um problema em fluxos de trabalho que poderia impedir a atualização de arquivos no servidor ao usar a atividade **Carregamento de dados (arquivo)**. O processo parou em 100%, mas nunca terminou. (NEO-47269)
-* Correção de um problema que resultava na criação de DeliveryParts desnecessárias quando a entrega usava os modos de calendário e divisão. (NEO-48634)
-* Correção de um problema de desempenho ao usar ondas baseadas em calendário. (NEO-48451)
-* Correção de um problema que poderia resultar em uma mensagem de erro na tela da lista de entrega após criar um novo target mapping em um esquema personalizado. (NEO-49237)
-* Correção de um problema que poderia ocorrer se uma entrega atingisse um tamanho específico durante o processo de MTA. (NEO-46097)
-* Correção de um problema que impedia que os logs de rastreamento retornassem dados relacionados ao navegador do destinatário. (NEO-46612)
-* Correção de um problema durante a pós-atualização em ambientes japoneses. (NEO-46640)
-* Correção de um problema ao usar a atividade de **Consulta** e filtrar uma tabela. Quando um nome de coluna continha a palavra “Atualizar”, ocorria um erro de compilação com um identificador inválido e a seguinte mensagem: “número de linhas atualizado”. (NEO-46485)
-* Correção de um problema que impedia que o fluxo de trabalho técnico do **[!UICONTROL Replicate Staging data]** (ffdaReplicateStagingData) fosse interrompido mesmo quando um erro ocorresse durante sua execução. (NEO-46280)
-* Correção de um problema que poderia causar perda de dados se o fluxo de trabalho de preparo estivesse com erro e o período de retenção fosse totalmente passado. (NEO-48975)
-* Correção de um problema ao inserir dados no banco de dados de nuvem do Snowflake com uma atividade de **Consulta** do Campaign e uma atividade **Alterar fonte de dados**: o processo falhava quando um caractere de barra invertida estava presente nos dados. A string de origem não tinha escape e os dados não eram processados corretamente no Snowflake. (NEO-45549)
+* A taxa de transferência do SMS foi significativamente aprimorada com a implementação de uma variedade de otimizações, resultando em maior velocidade e eficiência para a comunicação por SMS.
+* A partir do Campaign v8.5, o processo de autenticação para o Campaign v8 foi aprimorado. Os operadores técnicos devem usar o Adobe Identity Management System (IMS) para se conectarem ao Campaign.
+* Agora você pode aproveitar as conexões de Destino e Origem para sincronizar atributos de perfil, como dados de recusa entre o Adobe Experience Platform e o banco de dados do Campaign v8
+* A preparação da entrega foi otimizada.
+* Uma nova opção de autenticação baseada em chave foi adicionada para a conta externa SFTP, junto com o método de autenticação de usuário/senha existente. Agora os usuários podem se autenticar com segurança usando uma chave privada, melhorando a segurança e fornecendo um mecanismo de autenticação alternativo para o acesso SFTP.
+
+**Melhorias de segurança**
+
+* Não é mais possível criar operadores no Console do cliente. Agora você precisa usar o Admin Console. [Saiba mais](../start/gs-permissions.md).
+* Várias ferramentas de terceiros foram atualizadas para otimizar a segurança.
+
+**Correções**
+
+* Correção de um problema que poderia resultar na codificação incorreta de caracteres especiais no conteúdo HTML de um delivery em vários navegadores. (NEO-60081)
+* Correção de um problema que impedia o usuário de salvar um relatório em uma implantação corporativa (FFDA) do Campaign v8. (NEO-56836)
+* Correção de um problema ao inserir ou atualizar dados em um esquema FFDA personalizado por meio de uma atividade de fluxo de trabalho Atualizar dados. (NEO-54708)
+* Correção de um problema que impedia que o workflow de limpeza do banco de dados removesse endereços na tabela nms:address no FFDA. (NEO-54460)
+* Correção de um problema com o fluxo de trabalho de faturamento que poderia falhar com um erro &quot;Compilação de memória esgotada&quot;. (NEO-51137)
+* Correção de um problema que impedia que a descriptografia GPG funcionasse corretamente na atividade de workflow Carregamento de dados (arquivo). (NEO-50257)
+* Corrigido um problema que impedia o funcionamento da função `JSPContext.sqlExecWithOneParam`. (NEO-50066)
+* Correção de um problema que resultava em falhas de delivery ao usar caracteres não imprimíveis em campos de personalização. (NEO-48588)
+* Correção de um problema que poderia causar erros de entrega ao inserir imagens dinâmicas do Adobe Target. (NEO-62689)
+* Correção de um problema para impedir que os navegadores adicionassem espaços extras ao usar conteúdo condicional em uma entrega. (NEO-62132)
+* Correção de um problema que fazia com que uma janela pop-up fosse aberta ao clicar em uma imagem no editor de conteúdo de email. (NEO-60752)
+* Correção de um problema que poderia resultar em erro e impedir a rolagem ao editar o conteúdo de um delivery. (NEO-61364)

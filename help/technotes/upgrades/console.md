@@ -5,9 +5,9 @@ description: Descontinuação de 32 bits do Console do cliente
 hide: true
 hidefromtoc: true
 exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,12 @@ O fim do suporte significa que o Adobe não fornece mais suporte técnico, inclu
 Para aproveitar os últimos recursos e maior segurança, a Adobe recomenda atualizar seu computador para um sistema operacional de 64 bits.
 
 ## Perguntas frequentes
+
++++Como atualizo do Campaign v8 de 32 bits para o Campaign v8 de 64 bits?
+
+A atualização é perfeita. Você só precisa instalar a nova versão por meio da configuração, como uma atualização regular.
+
++++
 
 +++A versão de 64 bits do Console do cliente do Campaign v8 é compatível com computadores de 32 bits?
 
