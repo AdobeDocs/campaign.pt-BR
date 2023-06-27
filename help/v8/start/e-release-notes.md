@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
+source-git-commit: 9736ebb3d2a60bfe23b135318b899acb657a580c
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 20%
@@ -49,7 +49,7 @@ _30 de junho de 2023_
 * A partir do Campaign v8.5, o processo de autenticação para o Campaign v8 foi aprimorado. Os operadores técnicos devem usar o Adobe Identity Management System (IMS) para se conectarem ao Campaign.
 * Agora você pode aproveitar as conexões de Destino e Origem para sincronizar atributos de perfil, como dados de recusa entre o Adobe Experience Platform e o banco de dados do Campaign v8
 * A preparação da entrega foi otimizada.
-* Uma nova opção de autenticação baseada em chave foi adicionada para a conta externa SFTP, junto com o método de autenticação de usuário/senha existente. Agora os usuários podem se autenticar com segurança usando uma chave privada, melhorando a segurança e fornecendo um mecanismo de autenticação alternativo para o acesso SFTP.
+* Uma nova opção de autenticação baseada em chave foi adicionada para a conta externa SFTP, juntamente com o método de autenticação de usuário/senha existente. Agora os usuários podem se autenticar com segurança usando uma chave privada, melhorando a segurança e fornecendo um mecanismo de autenticação alternativo para o acesso SFTP.
 
 **Melhorias de segurança**
 
@@ -59,7 +59,7 @@ _30 de junho de 2023_
 **Correções**
 
 * Correção de um problema que poderia resultar na codificação incorreta de caracteres especiais no conteúdo HTML de um delivery em vários navegadores. (NEO-60081)
-* Correção de um problema que impedia o usuário de salvar um relatório em uma implantação corporativa (FFDA) do Campaign v8. (NEO-56836)
+* Correção de um problema que impedia salvar um relatório em uma implantação corporativa (FFDA) do Campaign v8. (NEO-56836)
 * Correção de um problema ao inserir ou atualizar dados em um esquema FFDA personalizado por meio de uma atividade de fluxo de trabalho Atualizar dados. (NEO-54708)
 * Correção de um problema que impedia que o workflow de limpeza do banco de dados removesse endereços na tabela nms:address no FFDA. (NEO-54460)
 * Correção de um problema com o fluxo de trabalho de faturamento que poderia falhar com um erro &quot;Compilação de memória esgotada&quot;. (NEO-51137)
