@@ -5,9 +5,9 @@ feature: Application Settings
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: c46eaa73deed643a4e92928b6ce2b1beb1596d73
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1085'
 ht-degree: 19%
 
 ---
@@ -31,7 +31,6 @@ Você pode acessar contas externas do Adobe Campaign **[!UICONTROL Explorer]**: 
 >* No contexto de um [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), um **[!UICONTROL Full FDA]** A conta externa do (ffda) gerencia a conexão entre o banco de dados local do Campaign e o banco de dados da nuvem ([!DNL Snowflake]).
 >
 
-
 ## Contas externas específicas de campanha
 
 As contas técnicas a seguir são usadas pela Adobe Campaign para ativar e executar processos específicos.
@@ -41,6 +40,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para ativar e execu
 >[!NOTE]
 >
 >A autenticação OAuth 2.0 do Microsoft Exchange Online para o recurso POP3 está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [nesta seção](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+>
 
 A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
@@ -60,7 +60,7 @@ Para configurar a conta externa do **[!UICONTROL Bounce mails (defaultPopAccount
 
 * **[!UICONTROL Encryption]** - Tipo de criptografia escolhida entre **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** ou **[!UICONTROL POP3S]**.
 
-   A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
+  A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
 * **[!UICONTROL Function]** - Email de entrada ou roteador SOAP
 
@@ -69,6 +69,7 @@ Para configurar a conta externa do **[!UICONTROL Bounce mails (defaultPopAccount
 >[!CAUTION]
 >
 >Antes de configurar sua conta externa POP3 usando o Microsoft OAuth 2.0, primeiro é necessário registrar seu aplicativo no portal do Azure. Para obter mais informações, consulte esta [página](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
+>
 
 Para configurar um POP3 externo usando o Microsoft OAuth 2.0, verifique o **[!UICONTROL Microsoft OAuth 2.0]** e preencha os seguintes campos:
 
@@ -80,15 +81,11 @@ Para configurar um POP3 externo usando o Microsoft OAuth 2.0, verifique o **[!UI
 
 * **[!UICONTROL Azure Redirect URL]** - O URL de redirecionamento pode ser encontrado no **Autenticação** do aplicativo no portal do Azure. Ela deve terminar com a seguinte sintaxe `nl/jsp/oauth.jsp`, por exemplo, `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
-   Depois de inserir suas credenciais diferentes, você pode clicar em **[!UICONTROL Setup the connection]** para concluir a configuração da conta externa.
+  Depois de inserir suas credenciais diferentes, você pode clicar em **[!UICONTROL Setup the connection]** para concluir a configuração da conta externa.
 
 ### Roteamento {#routing}
 
 A conta externa **[!UICONTROL Routing]** permite configurar cada canal disponível no Adobe Campaign, dependendo dos pacotes instalados.
-
->[!CAUTION]
->
->A variável **[!UICONTROL Internal email delivery routing]** (defaultEmailBulk) conta externa **não deve** estar ativado no Adobe Campaign v8.
 
 ### Instância de execução {#execution-instance}
 
@@ -98,7 +95,7 @@ No contexto de mensagens transacionais, as instâncias de execução são vincul
 
 * **Banco de dados externo (FDA)** - A **Banco de dados externo** A conta externa do tipo é usada para se conectar a um banco de dados externo por meio do FDA (Federated Data Access — Acesso a Dados Federados). Saiba mais sobre a opção Federated Data Access (FDA) no [nesta seção](../connect/fda.md).
 
-   Os bancos de dados externos compatíveis com o Adobe Campaign v8 estão listados na [Matriz de compatibilidade](../start/compatibility-matrix.md)
+  Os bancos de dados externos compatíveis com o Adobe Campaign v8 estão listados na [Matriz de compatibilidade](../start/compatibility-matrix.md)
 
 * **Twitter** - A **Twitter** A conta externa do tipo é usada para conectar o Campaign à sua conta da twitter, para postar mensagens em seu nome. Saiba mais sobre a integração do Twitter no [nesta seção](../connect/ac-tw.md).
 
@@ -123,7 +120,11 @@ Essas contas externas podem ser usadas para importar ou exportar dados para o Ad
 
 * **FTP e SFTP** - A **FTP** a conta externa do permite configurar e testar o acesso a um servidor fora do Adobe Campaign. Para configurar conexões com sistemas externos, como servidores SFTP ou FTP 898 usados para transferências de arquivos, você pode criar suas próprias contas externas.
 
-   Para fazer isso, especifique nesta conta externa o endereço e as credenciais usadas para estabelecer a conexão com o servidor SFTP ou FTP.
+  Para fazer isso, especifique nesta conta externa o endereço e as credenciais usadas para estabelecer a conexão com o servidor SFTP ou FTP.
+
+  >[!NOTE]
+  >
+  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html)
 
 * **Serviço de armazenamento simples Amazon (S3)** - A **AWS S3** conector pode ser usado para importar ou exportar dados para o Adobe Campaign usando um **[!UICONTROL Transfer file]** atividade de workflow. Como você está configurando essa nova conta externa, é necessário fornecer os seguintes detalhes:
 

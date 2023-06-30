@@ -4,10 +4,10 @@ title: Workflows técnicos
 description: Saiba mais sobre os workflows técnicos disponíveis com o Campaign
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 93%
+source-wordcount: '1667'
+ht-degree: 92%
 
 ---
 
@@ -84,6 +84,7 @@ Saiba como monitorar workflows técnicos neste [seção dedicada](monitor-techni
 | **Agregados de relatórios** (reportingAggregates) | Delivery | Esse fluxo de trabalho atualiza agregados usados em relatórios. É acionado todos os dias às 2h por padrão. |
 | **Envio de indicadores e atributos de campanha** (webAnalyticsSendMetrics) | Conectores de análise da Web | Esse fluxo de trabalho permite enviar indicadores de campanha de email do Adobe Campaign para o Adobe Experience Cloud Suite por meio do conector do Adobe® Analytics. Os indicadores relacionados são: Enviado (iSent), Contagem total de aberturas (iTotalRecipientOpen), Número total de destinatários que clicaram (iTotalRecipientClick), Erros (iError), Recusa (opt-out) (iOptOut). |
 | **Estoque: pedidos e alertas** (stockMgt) | Instalado por padrão | Esse fluxo de trabalho inicia o cálculo de estoque nas linhas de pedido e gerencia os limites de aviso. |
-| **Rastreamento** (tracking) | Instalado por padrão | Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de delivery, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. |
+| **Sincronizar aplicativos móveis da Coleção de dados da Adobe Experience Platform** (syncWithLaunch) | Instalado por padrão, a partir da v8.5 | Este fluxo de trabalho sincronizará automaticamente as propriedades móveis com o Adobe Campaign a partir da Coleção de dados. |
+| **Rastreamento** (rastreamento) | Instalado por padrão | Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de delivery, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. |
 | **Atualizar status do evento** (updateEventsStatus) | Execução de mensagens transacionais (Centro de Mensagens - Execução) | Esse fluxo de trabalho permite atribuir um status a um evento. Os status do evento são descritos a seguir:<ul><li>Pendente: o evento está em uma fila. Nenhum modelo de mensagem foi associado a ele.</li><li>Delivery pendente: o evento está em uma fila, um modelo de mensagem foi associado a ele e está sendo processado no momento pelo delivery.</li><li>Enviado: esse status é copiado dos logs do delivery. Significa que o delivery foi enviado.</li><li>Ignorado pelo delivery: esse status é copiado dos logs do delivery. Significa que o delivery foi ignorado.</li><li>Erro de delivery: esse status é copiado dos logs do delivery. Significa que o delivery falhou.</li><li>Evento não coberto: o evento falhou ao ser associado a um modelo de mensagem. O evento não será reprocessado.</li></ul> |
 | **Atualização para delivery** (deliverabilityUpdate) | Instalado por padrão | Depois que o pacote de monitoramento de capacidade de entrega (capacidade de entrega por email) é instalado, esse fluxo de trabalho é executado durante à noite e gerencia as regras de qualificação de emails rejeitados, bem como a lista de domínios e MXs. Isso requer que a porta HTTPS esteja aberta na plataforma. |

@@ -2,29 +2,31 @@
 product: campaign
 title: Descontinuação de 32 bits do Console do cliente
 description: Descontinuação de 32 bits do Console do cliente
-hide: true
-hidefromtoc: true
 exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
-source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '344'
 ht-degree: 1%
 
 ---
 
-# Encerramento do suporte em sistemas operacionais de 32 bits | Adobe Campaign v8 {#console-eol}
+# Encerramento do suporte em sistemas operacionais de 32 bits {#console-eol}
 
-A versão de 32 bits do console do cliente será substituída na versão 8.5. A partir da versão 8.6, o Campaign v8 não será mais compatível com sistemas operacionais de 32 bits, incluindo atualizações de produtos e segurança. A Adobe recomenda que você mantenha suas atualizações de segurança atualizadas.
+A versão de 32 bits do console do cliente está obsoleta na versão 8.5. Uma nova versão de 64 bits do console do cliente está disponível para uma atualização contínua.
 
-## Fim do suporte
+A partir da versão 8.6, o Campaign v8 deixará de oferecer suporte a sistemas operacionais de 32 bits, incluindo atualizações de produtos e segurança. A Adobe recomenda que você mantenha suas atualizações de segurança atualizadas.
+
+Você só será afetado por essa alteração se tiver a versão de 32 bits do Windows 8 ou 10.
+
+## Fim do suporte{#eol}
 
 O fim do suporte significa que o Adobe não fornece mais suporte técnico, incluindo atualizações de produtos e/ou segurança, para todos os derivados de um produto ou versão do produto (versões localizadas, atualizações secundárias, sistemas operacionais, versões com pontos e pontos duplos e produtos com conectores).
 
-## Recomendações
+## Recomendações{#console-eol-recommendations}
 
-Para aproveitar os últimos recursos e maior segurança, a Adobe recomenda atualizar seu computador para um sistema operacional de 64 bits.
+Para aproveitar os recursos mais recentes e a segurança aprimorada, é necessário atualizar seu computador para um sistema operacional de 64 bits.
 
-## Perguntas frequentes
+## Perguntas frequentes{#console-eol-faq}
 
 +++Como atualizo do Campaign v8 de 32 bits para o Campaign v8 de 64 bits?
 
@@ -52,21 +54,23 @@ A partir da versão 8.6, todas as versões do Campaign v8 não serão mais compa
 
 +++Como atualizar do sistema operacional Windows (32 bits) para o Windows (64 bits)?
 
-Verifique se o processador do seu computador suporta a instalação de um sistema operacional de 64 bits. A atualização da versão de 32 bits para a versão de 64 bits do Windows requer a reformatação do disco rígido, a instalação da versão de 64 bits do Windows e a reinstalação de tudo o mais que você tinha em seu dispositivo. Para obter mais informações, consulte [Windows de 32 e 64 bits: perguntas frequentes](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+Verifique se o processador do seu computador suporta a instalação de um sistema operacional de 64 bits. A atualização da versão de 32 bits para a versão de 64 bits do Windows requer a reformatação do disco rígido, a instalação da versão de 64 bits do Windows e a reinstalação de tudo o mais que você tinha em seu dispositivo. Para obter mais informações, consulte [Windows de 32 e 64 bits: perguntas frequentes](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
 
 +++
 
-+++ Como verificar se estou em um computador de 32 bits ou de 64 bits?
+<!--
++++ How do I check if I am on a 32-bit computer or 64-bit?
 
-**WINDOWS 10 E WINDOWS 8.1**
+**WINDOWS 10 AND WINDOWS 8.1**
 
-1. Clique em **Início** e selecione **Configurações** > **Sistema** > **Sobre**.
-1. Em **Especificações do dispositivo**, consulte **Tipo de sistema**.
+1. Click the **Start** button, then select **Settings** > **System** > **About**.
+1. Under **Device specifications**, see **System type**.
 
 **WINDOWS 7**
-1. Selecione o **Início** clique com o botão direito do mouse **Computador** e selecione **Propriedades**.
-1. Em **Sistema**, consulte o tipo de sistema.
+1. Select the **Start** button, right-click **Computer** and select **Properties**.
+1. Under **System**, see the system type.
 
-Para obter mais informações, consulte [Windows de 32 e 64 bits: perguntas frequentes](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+For more information, see [32-bit and 64-bit Windows: Frequently asked questions](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
 
 +++
+-->

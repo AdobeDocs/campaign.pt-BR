@@ -5,9 +5,9 @@ feature: FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '549'
 ht-degree: 3%
 
 ---
@@ -74,19 +74,6 @@ O Adobe Campaign remove automaticamente qualquer UUID duplicado de um público-a
 No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), não é possível selecionar uma chave interna (UUID) como campo para atualizar dados em um fluxo de trabalho.
 
 ![](assets/update-data-no-internal-key.png)
-
-Ao usar a chave de reconciliação explícita, a variável **Atualizar dados** A atividade de garante automaticamente a unicidade do schema de destino com base nessa chave ao:
-
-1. Desduplicação de dados de entrada (da transição)
-1. Desduplicação de dados com tabela de destino (mesclagem)
-
-
-![](assets/update-data-deduplicate.png)
-
->[!CAUTION]
->
->Esta garantia só se aplica com a opção **[!UICONTROL Using reconciliation keys]**.
-
 
 ### Consultar um esquema com duplicatas{#query-with-duplicates}
 
