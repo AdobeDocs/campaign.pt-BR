@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Visão geral da campanha
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 4f3e6227193fc607a968f9170484017e551fa560
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 97%
+source-wordcount: '569'
+ht-degree: 96%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 97%
       + Emails {#emails}
          + [Criar e validar emails](send/email.md)
          + [Link para a mirror page](send/mirror-page.md)
+         + [Definir parâmetros de email adicionais](send/email-parameters.md)
          + [Enviar e monitorar emails](send/send.md)
       + [SMS](send/sms.md)
       + Notificações por push {#push}
@@ -71,6 +72,7 @@ ht-degree: 97%
       + Validar a entrega {#validate}
          + [Visualização e provas](send/preview-and-proof.md)
          + [Análise de entrega](send/delivery-analysis.md)
+      + [Configurar e enviar o delivery](send/configure-and-send.md)
 + Gerenciamento de perfil e público-alvo {#audience}
    + [Introdução a perfis e públicos](audiences/gs-audiences.md)
    + [Trabalhar com públicos](start/audiences.md)

@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: b333db04dd10cc28956959a446f6567e2a89b2d4
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 57%
+source-wordcount: '434'
+ht-degree: 56%
 
 ---
 
-# Link para a mirror page{#mirror-page}
+# Link para a mirror page {#mirror-page}
 
-## Sobre a mirror page{#about-mirror-page}
+## Sobre a mirror page {#about-mirror-page}
 
 A mirror page é uma versão online do seu email.
 
@@ -24,7 +24,7 @@ A mirror page gerada pelo Adobe Campaign contém todos os dados de personalizaç
 
 ![amostra de mirror link](assets/mirror-page-link.png){width="600" align="left"}
 
-## Adicionar um link para a mirror page{#link-to-mirror-page}
+## Adicionar um link para a mirror page {#link-to-mirror-page}
 
 Inserir um link para a mirror page é uma boa prática. Esse link pode ser, por exemplo, &quot;Exibir este email em seu navegador&quot; ou &quot;Leia online&quot;. Geralmente, ele está localizado no cabeçalho ou no rodapé do email.
 
@@ -33,9 +33,9 @@ No Adobe Campaign, você pode inserir um link para a mirror page no conteúdo do
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-Para obter mais informações sobre a inserção de blocos de conteúdo personalizados, consulte [Blocos de personalização](personalization-blocks.md).
+Para obter mais informações sobre como inserir blocos de conteúdo de personalização, consulte [Blocos de personalização](personalization-blocks.md).
 
-## Geração de mirror page{#mirror-page-generation}
+## Gerenciar a geração da mirror page {#mirror-page-generation}
 
 Por padrão, a mirror page é gerada automaticamente pelo Adobe Campaign se o conteúdo do email não estiver vazio e se contiver um link para a mirror page (também conhecida como Mirror link).
 
@@ -52,7 +52,7 @@ Além do modo padrão, as seguintes opções estão disponíveis:
 * **[!UICONTROL Do not generate the mirror page]**: use esse modo para evitar gerar uma mirror page, mesmo se o link estiver presente no delivery.
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: quando o link da mirror page não estiver presente no conteúdo do email, use essa opção para ativar o acesso ao conteúdo da mirror page, na janela de log do delivery, conforme detalhado abaixo.
 
-## Verificar se há um destinatário na mirror page{#mirror-page-access}
+## Verificar se há um destinatário na mirror page {#mirror-page-access}
 
 É possível acessar o conteúdo da mirror page para um recipient específico de um delivery, com dados de personalização.
 
