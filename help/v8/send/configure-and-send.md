@@ -4,9 +4,9 @@ description: Saiba como configurar emails no Adobe Campaign.
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 21e251acd76f2bbb751f8e295934d597af336559
+source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1128'
 ht-degree: 83%
 
 ---
@@ -113,7 +113,7 @@ Para fazer isso, siga as etapas abaixo.
    * Para enviar o delivery imediatamente, selecione [**Entregar o mais rápido possível**].
    * Para agendar o envio para uma data posterior, selecione **[!UICONTROL Postpone the delivery]**. [Saiba mais](#schedule-delivery-sending)
 
-1. Clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [Iniciar a análise](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+1. Clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [esta seção](delivery-analysis.md).
 
    ![](assets/delivery-send-analyze.png)
 
