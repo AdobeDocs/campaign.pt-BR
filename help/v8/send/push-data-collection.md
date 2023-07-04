@@ -5,20 +5,22 @@ feature: Push
 role: Data Engineer
 level: Beginner
 badge: label="Disponibilidade limitada" type="Informativo"
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 23%
+source-wordcount: '1392'
+ht-degree: 21%
 
 ---
 
 # Configuração de notificação por push revisada {#push-notifications-config}
 
+O Campaign v8.5 está apresentando nosso serviço de notificação por push mais recente, alimentado por uma estrutura robusta criada em uma tecnologia de ponta moderna. Este serviço foi projetado para desbloquear novos níveis de escalabilidade, garantindo que suas notificações possam alcançar um público maior com eficiência contínua. Com nossa infraestrutura aprimorada e nossos processos otimizados, você pode esperar maior escala e confiabilidade, permitindo que você interaja e se conecte com seus usuários de aplicativos móveis como nunca.
+
 >[!AVAILABILITY]
 >
-> Esse recurso é acessível exclusivamente a novos clientes a partir da versão 8.5 e implantado progressivamente para um conjunto de clientes selecionados. Se seu ambiente foi provisionado antes de junho de 2023, você deve seguir os procedimentos detalhados [nesta página](push-settings.md).
+> Esse recurso é acessível exclusivamente a novos clientes a partir do Campaign v8.5 e implantado progressivamente para um conjunto de clientes selecionados. Se seu ambiente foi provisionado antes de junho de 2023, esta página não se aplica a você e você deve seguir os procedimentos detalhados [nesta página](push-settings.md).
 
-Para enviar notificações por push no Adobe Campaign, é necessário:
+No contexto desta implementação atualizada, para enviar notificações por push no Adobe Campaign, siga estas etapas:
 
 1. [Criar uma superfície de aplicativo na coleção de dados do Adobe Experience Platform](#create-app-surface)
 
