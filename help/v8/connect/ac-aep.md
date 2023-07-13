@@ -5,7 +5,7 @@ feature: Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: 8f7c723b8ef7ab6c8449eaec8ff6c87b9ee5deec
+source-git-commit: d9a91fddbdcfae0f59fe780f8b6962238b89c886
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
