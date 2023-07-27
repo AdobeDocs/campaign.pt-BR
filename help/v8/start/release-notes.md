@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 70171ecfb39116f4db4c05ab03b55502e3faed43
+source-git-commit: 32d0264c03eb4ec6ab1959d0a66be78c06a0dccb
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 56%
+source-wordcount: '1453'
+ht-degree: 51%
 
 ---
 
@@ -24,32 +24,57 @@ Além disso, como cliente, verifique se você está usando as versões mais rece
 
 _30 de junho de 2023_
 
-**Novidades**
 
-<table> 
-<thead>
-<tr> 
-<th> <strong>Serviço aprimorado de notificação por push</strong><br /> </th> 
-</tr> 
-</thead> 
-<tbody> 
-<tr> 
-<td><p>O Campaign v8.5.1 está apresentando nosso serviço de notificação por push mais recente, viabilizado por uma estrutura robusta criada em uma tecnologia de ponta moderna. Este serviço foi projetado para desbloquear novos níveis de escalabilidade, garantindo que suas notificações possam alcançar um público maior com eficiência contínua. Com nossa infraestrutura aprimorada e nossos processos otimizados, você pode esperar maior escala e confiabilidade, permitindo que você interaja e se conecte com seus usuários de aplicativos móveis como nunca. Esse recurso só está disponível para um grupo selecionado de clientes (disponibilidade limitada).</p>
-<p>Para obter mais informações, consulte a <a href="../send/push-data-collection.md">documentação detalhada</a>.</p>
+**Serviço aprimorado de notificação por push**
 
-</td> 
-</tr> 
-</tbody> 
-</table>
+O Campaign v8.5.1 está apresentando nosso serviço de notificação por push mais recente, viabilizado por uma estrutura robusta criada em uma tecnologia de ponta moderna. Este serviço foi projetado para desbloquear novos níveis de escalabilidade, garantindo que suas notificações possam alcançar um público maior com eficiência contínua. Com nossa infraestrutura aprimorada e nossos processos otimizados, você pode esperar maior escala e confiabilidade, permitindo que você interaja e se conecte com seus usuários de aplicativos móveis como nunca. Esse recurso só está disponível para um grupo selecionado de clientes (disponibilidade limitada).
 
-**Aprimoramentos**
+Para obter mais informações, consulte a [documentação detalhada](../send/push-data-collection.md).
 
 
+**Maior taxa de transferência do canal móvel**
+
+<!--
+The newly introduced Push notification service showcases significant improvements in throughput for both Push Android and Push iOS compared to our previous version (v8.4). Users will experience notably enhanced performance with the upgraded service in the latest version (v8.5).
+
+* Push Notifications (Android): up to **5x** faster
+* Push Notifications (iOS): up to **2.2x** faster
+
+SMS throughput has undergone substantial enhancements through a series of optimizations, resulting in notable improvements in speed and efficiency for SMS communication. These upgrades have led to increased throughput from the previous version (v8.4) to the latest version (v8.5), encompassing both sending and feedback updates. Users can now experience the benefits of this enhanced SMS service.</p>
+
+* SMS throughput: up to **5x** faster
+
+These max throughput performances have been measured by Adobe testing teams, in lab conditions.
+-->
+
+<table style="table-layout:fixed" text-align="bottom"><tr style="border: 0;">
+<td>
+<img alt="Melhorias na taxa de transferência" src="../start/assets/do-not-localize/improvements.jpeg">
+<p>
+</td>
+<td>
+<div>
+
+<p>O serviço de notificação por push recém-introduzido mostra melhorias significativas na taxa de transferência do Push Android e do Push iOS em comparação à versão anterior (v8.4). Os usuários terão um desempenho notavelmente aprimorado com o serviço atualizado na versão mais recente (v8.5). </p>
+<ul>
+<li>Notificações por push (Android): até <strong>5x</strong> mais rápido </li>
+<li>Notificações por push (iOS): até <strong>2,2x</strong> mais rápido</li>
+</ul>
+<p>A taxa de transferência do SMS passou por melhorias substanciais por meio de uma série de otimizações, resultando em melhorias notáveis na velocidade e na eficiência da comunicação por SMS. Essas atualizações resultaram em maior taxa de transferência da versão anterior (v8.4) para a versão mais recente (v8.5), abrangendo atualizações de envio e de feedback. Agora os usuários podem experimentar os benefícios desse serviço SMS aprimorado.</p>
+<ul>
+<li>Taxa de transferência de SMS: até <strong>5x</strong> mais rápido</li>
+</ul>
+<p><em>Esses desempenhos máximos de throughput foram medidos por equipes de testes de Adobe, em condições de laboratório.</em></p>
+</div>
+<p></p>
+</td>
+</tr></table>
 
 
-* A taxa de transferência do SMS foi significativamente aprimorada com a implementação de uma variedade de otimizações, resultando em maior velocidade e eficiência para a comunicação por SMS.
+**Melhorias gerais**
+
 * Agora você pode aproveitar a conexão de Destino do Adobe Experience Platform para sincronizar atributos de perfil, como dados de recusa entre o Adobe Experience Platform e o banco de dados do Campaign v8.
-* A preparação da entrega foi otimizada.
+* A preparação da entrega foi otimizada em todos os canais.
 * Uma nova opção de autenticação baseada em chave foi adicionada para a conta externa SFTP, juntamente com o método de autenticação de usuário/senha existente. Agora os usuários podem se autenticar com segurança usando uma chave privada, melhorando a segurança e fornecendo um mecanismo de autenticação alternativo para o acesso SFTP. Saiba mais [nesta seção](../config/external-accounts.md).
 
 **Melhorias de segurança**
@@ -62,7 +87,6 @@ _30 de junho de 2023_
 
 * A versão de 32 bits do console do cliente agora está obsoleta. A partir da versão 8.6, o Console do cliente só estará disponível em 64 bits. A atualização para a versão de 64 bits do console do cliente é perfeita. Para obter mais informações sobre como atualizar seu sistema operacional, consulte esta [nota técnica](../../technotes/upgrades/console.md).
 * Agora você pode conectar a instância do Campaign v8 ao banco de dados externo do Azure synapse. Essa conexão é gerenciada por meio de uma nova conta externa. Saiba mais em [Matriz de compatibilidade do Campaign](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
-
 
 
 **Correções**
