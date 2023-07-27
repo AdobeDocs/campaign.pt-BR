@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner, Intermediate, Experienced
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: 58fff46ba12f5c6221bbcd88a40fa0806a6c98b9
+source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 100%
+source-wordcount: '254'
+ht-degree: 84%
 
 ---
 
@@ -26,6 +26,7 @@ As medidas de proteção e limitações identificam recursos, arquiteturas ou pr
 * Os recursos listados [nesta seção](v7-to-v8.md#gs-unavailable-features) não estão disponíveis na build atual do Campaign v8
 * Alguns recursos não disponíveis ou removidos ainda estão visíveis na interface do usuário
 * No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), os mecanismos de assinatura (aceitação) e cancelamento de assinatura (recusa) e o registro em dispositivos móveis são processos assíncronos. As solicitações são processadas a cada hora por meio de um fluxo de trabalho técnico específico. [Saiba mais](../architecture/replication.md#tech-wf)
-* As duplicatas precisam ser manipuladas manualmente pelos usuários finais. [Saiba mais](../architecture/keys.md)
+* 
+   * No contexto de um [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), as duplicatas precisam ser tratadas manualmente pelos usuários finais. [Saiba mais](../architecture/keys.md)
 * O Adobe Campaign v8 não é compatível com a produtividade estendida em aplicativos da API e da Web; no caso de necessidades específicas, entre em contato com a Adobe para obter orientação
-* O módulo de otimização de campanha do Adobe Campaign não considera os deliveries agendados nas regras de tipologia de pressão. Saiba mais [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=pt-BR)
+* No contexto de um [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o módulo de otimização de campanha do Adobe Campaign não considera os deliveries agendados nas regras de tipologia de pressão. Saiba mais [nesta página](../../automation/campaign-opt/pressure-rules.md)
