@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 80be7684aa11c0b169c69292b2c8749aa6e23a7b
+source-git-commit: f72cd296e49a22b2ee8878084c7d9f252b98d29e
 workflow-type: tm+mt
 source-wordcount: '1453'
 ht-degree: 51%
@@ -31,7 +31,6 @@ O Campaign v8.5.1 está apresentando nosso serviço de notificação por push ma
 
 Para obter mais informações, consulte a [documentação detalhada](../send/push-data-collection.md).
 
-<br/>
 
 **Maior taxa de transferência do canal móvel**
 
@@ -48,9 +47,9 @@ SMS throughput has undergone substantial enhancements through a series of optimi
 These max throughput performances have been measured by Adobe testing teams, in lab conditions.
 -->
 
-<table style="table-layout:auto"><tr style="border: 0;">
+<table style="table-layout:fixed" text-align="bottom"><tr style="border: 0;">
 <td>
-<br/><img alt="Melhorias na taxa de transferência" src="../start/assets/do-not-localize/improvements.jpeg">
+<img alt="Melhorias na taxa de transferência" src="../start/assets/do-not-localize/improvements.jpeg">
 <p>
 </td>
 <td>
