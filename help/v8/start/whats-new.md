@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 5d307e0fcafdc4d25402c62c6869ecc07c1a47e4
+source-git-commit: 1297d5a602d125cb80ca6efb490b12174bcea8d6
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '923'
 ht-degree: 95%
 
 ---
@@ -22,61 +22,75 @@ O Adobe Campaign v8 oferece aprimoramentos significativos em infraestrutura, seg
 
 ## Principais recursos{#key-capabilities}
 
-Os principais recursos incluem:
+Os principais recursos estão listados abaixo.
 
-* **Gerenciamento de fluxo de trabalho central**. Melhore a velocidade e a escala de cada aspecto de suas campanhas de marketing, desde a criação de segmentos e a preparação de mensagens até a entrega.
+### Gerenciamento de fluxo de trabalho central{#central-wf-mgt}
 
-  O Adobe Campaign facilita a sincronização dos canais, com uma interface de orquestração de campanhas única e de fácil utilização. Assim, seus canais online — como email, web, celular e redes sociais — correspondem aos canais offline, incluindo a correspondência direta, a central de atendimento, a loja e assim por diante. Ele permite que você forneça aos clientes uma experiência consistente e contextual nos canais digitais e tradicionais. O Adobe Campaign facilita o fornecimento de conteúdo para todos os caminhos que seus clientes venham a seguir — em qualquer canal.
+Melhore a velocidade e a escala de cada aspecto de suas campanhas de marketing, desde a criação de segmentos e a preparação de mensagens até a entrega.
 
-  ![](../assets/do-not-localize/glass.png)[Saiba mais sobre os fluxos de trabalho do Campaign](../config/workflows.md)
+O Adobe Campaign facilita a sincronização dos canais, com uma interface de orquestração de campanhas única e de fácil utilização. Assim, seus canais online — como email, web, celular e redes sociais — correspondem aos canais offline, incluindo a correspondência direta, a central de atendimento, a loja e assim por diante. Ele permite que você forneça aos clientes uma experiência consistente e contextual nos canais digitais e tradicionais. O Adobe Campaign facilita o fornecimento de conteúdo para todos os caminhos que seus clientes venham a seguir — em qualquer canal.
 
-* **Marketing por email personalizado**. Crie emails personalizados e contextualmente relevantes que sejam consistentes com o restante da experiência do cliente.
+![](../assets/do-not-localize/glass.png)[Saiba mais sobre os fluxos de trabalho do Campaign](../config/workflows.md)
 
-  Com o Adobe Campaign, você pode melhorar seus emails, tornando-os mais personalizados e lucrativos. Emails são simples de criar e fáceis de entregar. O Campaign v8 oferece flexibilidade para criar, personalizar, testar, refinar e melhorar todas as mensagens enviadas.
+## Marketing por email personalizado {#perso-email-mkt}
 
-  ![](../assets/do-not-localize/glass.png) [Saiba mais sobre os recursos de personalização](create-message.md)
+Crie emails personalizados e contextualmente relevantes que sejam consistentes com o restante da experiência do cliente.
 
-* **Gerenciamento de dados do cliente**. Obtenha um panorama completo dos clientes para criar campanhas personalizadas rapidamente e em escala corporativa.
+Com o Adobe Campaign, você pode melhorar seus emails, tornando-os mais personalizados e lucrativos. Emails são simples de criar e fáceis de entregar. O Campaign v8 oferece flexibilidade para criar, personalizar, testar, refinar e melhorar todas as mensagens enviadas.
 
-  O Adobe Campaign ajuda você a criar perfis de clientes a partir de dados coletados em todos os canais. Com esse perfil, você pode orquestrar campanhas em vários canais. Ao conectar todos os seus canais de marketing, você pode personalizar as diferentes jornadas que cada cliente realizará da maneira que fizer sentido para eles.
+![](../assets/do-not-localize/glass.png) [Saiba mais sobre os recursos de personalização](create-message.md)
 
-  ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o gerenciamento de dados do cliente](audiences.md)
+### Gerenciamento de dados do cliente {#customer-data-mgt}
 
-* **Melhor gerenciamento de campanha do setor**. O Adobe Campaign v8 fornece aos profissionais de marketing os melhores recursos do setor para planejar, lançar e medir campanhas em todos os canais.
+Obtenha um panorama completo dos clientes para criar campanhas personalizadas rapidamente e em escala corporativa.
 
-  Os recursos incluem um perfil integrado que fornece uma visão única do cliente. Gerenciamento e segmentação de dados para a criação de público-alvo de campanha em escala. Gerenciamento de fluxos de trabalho entre canais para automatizar campanhas multicanal e de várias ondas. Email integrado, reduzindo a dependência de ESPs dispendiosos. Relatórios e análises para entender o comportamento do cliente e o desempenho da campanha.
+O Adobe Campaign ajuda você a criar perfis de clientes a partir de dados coletados em todos os canais. Com esse perfil, você pode orquestrar campanhas em vários canais. Ao conectar todos os seus canais de marketing, você pode personalizar as diferentes jornadas que cada cliente realizará da maneira que fizer sentido para eles.
 
-  ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o gerenciamento de campanhas](campaigns.md)
+![](../assets/do-not-localize/glass.png) [Saiba mais sobre o gerenciamento de dados do cliente](audiences.md)
+
+### Melhor gerenciamento de campanha do setor {#best-in-campaign-mgt}
+
+O Adobe Campaign v8 fornece aos profissionais de marketing os melhores recursos do setor para planejar, lançar e medir campanhas em todos os canais.
+
+Os recursos incluem um perfil integrado que fornece uma visão única do cliente. Gerenciamento e segmentação de dados para a criação de público-alvo de campanha em escala. Gerenciamento de fluxos de trabalho entre canais para automatizar campanhas multicanal e de várias ondas. Email integrado, reduzindo a dependência de ESPs dispendiosos. Relatórios e análises para entender o comportamento do cliente e o desempenho da campanha.
+
+![](../assets/do-not-localize/glass.png) [Saiba mais sobre o gerenciamento de campanhas](campaigns.md)
 
 
-* **Conexões com a Adobe Experience Platform**. O Adobe Campaign v8 oferece compatibilidade a conectores de dados com a Real-Time CDP e a Adobe Experience Platform, para que as organizações possam aproveitar o perfil de cliente unificado em tempo real.
+### Conexões com a Adobe Experience Platform {#connection-to-aep}
 
-  Além disso, o Adobe Campaign v8 é integrado nativamente aos recursos de orquestração de jornadas em tempo real, para que os profissionais de marketing possam reutilizar os mesmos modelos e recursos de entrega no Adobe Campaign para interagir com os clientes em tempo real. Esses investimentos otimizarão a experiência do cliente do Adobe Campaign e desbloquearão novos casos de uso, como a capacidade de adicionar jornadas do cliente individualizadas em tempo real às campanhas.
+O Adobe Campaign v8 oferece compatibilidade a conectores de dados com a Real-Time CDP e a Adobe Experience Platform, para que as organizações possam aproveitar o perfil de cliente unificado em tempo real.
 
-  Também é possível configurar a otimização preditiva do tempo de envio e a pontuação preditiva do envolvimento com a IA de jornada, além de aumentar as taxas de abertura, cliques e receitas.
+Além disso, o Adobe Campaign v8 é integrado nativamente aos recursos de orquestração de jornadas em tempo real, para que os profissionais de marketing possam reutilizar os mesmos modelos e recursos de entrega no Adobe Campaign para interagir com os clientes em tempo real. Esses investimentos otimizarão a experiência do cliente do Adobe Campaign e desbloquearão novos casos de uso, como a capacidade de adicionar jornadas do cliente individualizadas em tempo real às campanhas.
 
-  ![](../assets/do-not-localize/glass.png) [Saiba mais sobre integrações do Campaign](../connect/integration.md)
+Também é possível configurar a otimização preditiva do tempo de envio e a pontuação preditiva do envolvimento com a IA de jornada, além de aumentar as taxas de abertura, cliques e receitas.
+
+![](../assets/do-not-localize/glass.png) [Saiba mais sobre integrações do Campaign](../connect/integration.md)
 
 
-* **Managed Cloud Services**. O Adobe Campaign v8 está disponível como um Managed Cloud Service, fornecendo supervisão proativa, alertas oportunos e governança de serviços.
+### Managed Cloud Services {#acms-desc}
 
-  O Adobe Managed Cloud Service oferece aos profissionais de marketing uma solução mais ágil, segura e escalável para o gerenciamento de campanha em vários canais, com baixo custo total de propriedade. A nova oferta combina os serviços com uma supervisão proativa e alertas oportunos.
+O Adobe Campaign v8 está disponível como um Managed Cloud Service, fornecendo supervisão proativa, alertas oportunos e governança de serviços.
 
-  A nova arquitetura em nuvem permite que o Campaign simplifique processos, reduza custos, gerencie riscos e melhore a segurança dos dados. Seu ambiente do Campaign v8 vem com uma Nuvem privada virtual (VPC) dedicada pré-configurada para você.
+O Adobe Managed Cloud Service oferece aos profissionais de marketing uma solução mais ágil, segura e escalável para o gerenciamento de campanha em vários canais, com baixo custo total de propriedade. A nova oferta combina os serviços com uma supervisão proativa e alertas oportunos.
 
-* **Velocidade e escala**. Agora, o Adobe Campaign pode aproveitar as tecnologias de banco de dados em escala de nuvem para melhorar consideravelmente sua escala e velocidade.
+>[!NOTE]
+>
+>A nova arquitetura em nuvem permite que o Campaign simplifique processos, reduza custos, gerencie riscos e melhore a segurança dos dados. Seu ambiente do Campaign v8 vem com uma Nuvem privada virtual (VPC) dedicada pré-configurada para você.
 
-  O [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova oferta, o Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. [!DNL Snowflake] é o banco de dados na nuvem do Campaign e trará velocidade e resistência: não há pico de sobrecarga da atividade do sistema. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
+### Velocidade e escala {#speed-scale}
 
-  ![](../assets/do-not-localize/glass.png) [Saiba mais sobre a implantação corporativa (FFDA)](../architecture/enterprise-deployment.md)
+Agora, o Adobe Campaign pode aproveitar as tecnologias de banco de dados em escala de nuvem para melhorar consideravelmente sua escala e velocidade.
 
+O [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova oferta, o Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. [!DNL Snowflake] é o banco de dados na nuvem do Campaign e trará velocidade e resistência: não há pico de sobrecarga da atividade do sistema. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
+
+![](../assets/do-not-localize/glass.png) [Saiba mais sobre a implantação corporativa (FFDA)](../architecture/enterprise-deployment.md)
 
 >[!CAUTION]
 >
 >* O Campaign v8 está disponível **somente** como um Managed Cloud Service e não pode ser implantado em ambientes locais ou híbridos.
 >
 >* A migração automatizada de um ambiente existente do Campaign Classic v7 ainda não está disponível.
-
 
 
 ## Interface de administrador do autoatendimento{#self-service-admin}
