@@ -19,15 +19,15 @@ Neste exemplo, devemos executar uma query para localizar todos os domínios de e
 
 * Qual tabela precisa ser selecionada?
 
-   A tabela de recipient (nms:recipient)
+  A tabela de recipient (nms:recipient)
 
 * Campos a serem selecionados nas colunas de saída?
 
-   Email domain e primary key (with count).
+  Email domain e primary key (with count).
 
 * Agrupamento de dados?
 
-   Com base no domínio de e-mail com uma contagem de chaves primárias acima de 30. Esta operação é executada com a opção **[!UICONTROL Group by + Having]**. O **[!UICONTROL Group by + Having]** permite agrupar dados (&quot;agrupar por&quot;) e criar uma seleção do que foi agrupado (&quot;ter&quot;).
+  Com base no domínio de e-mail com uma contagem de chaves primárias acima de 30. Esta operação é executada com a opção **[!UICONTROL Group by + Having]**. O **[!UICONTROL Group by + Having]** permite agrupar dados (&quot;agrupar por&quot;) e criar uma seleção do que foi agrupado (&quot;ter&quot;).
 
 Para criar este exemplo, aplique as seguintes etapas:
 

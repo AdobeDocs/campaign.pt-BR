@@ -29,19 +29,19 @@ Os valores possíveis são:
 
 * Fuso horário do servidor
 
-   Usa o fuso horário do servidor de aplicativos Adobe Campaign.
+  Usa o fuso horário do servidor de aplicativos Adobe Campaign.
 
 * Fuso horário do usuário
 
-   Usa o fuso horário do operador do Adobe Campaign que executa o workflow.
+  Usa o fuso horário do operador do Adobe Campaign que executa o workflow.
 
 * Fuso horário do banco de dados
 
-   Usa o fuso horário do servidor de banco de dados usado.
+  Usa o fuso horário do servidor de banco de dados usado.
 
 * Fusos horários específicos
 
-   Usa o fuso horário selecionado.
+  Usa o fuso horário selecionado.
 
 Se o valor **[!UICONTROL By default]** for selecionado, o fuso horário do workflow será aplicado, caso contrário, será usado o do servidor de aplicativos.
 

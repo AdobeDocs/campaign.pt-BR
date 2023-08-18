@@ -51,6 +51,7 @@ Você pode configurar os valores exibidos alterando a escala de tempo: visualiza
 >Você também pode monitorar o número de deliveries enviados por hora usando o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=pt-BR).
 >
 >O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
+>
 
 ## Atividades do usuário {#user-activities}
 
@@ -94,11 +95,11 @@ Os seguintes indicadores são usados:
 * **[!UICONTROL Unreachable]** : Tipo de erro que ocorre na string de distribuição de mensagens: incidente na retransmissão SMTP, domínio temporariamente inacessível, etc
 * **[!UICONTROL Not connected]** : Tipo de erro para indicar que o celular do recipient está desligado ou sem rede no momento do envio.
 
-   >[!NOTE]
-   >
-   >Este indicador está relacionado aos deliveries no [canais móveis](../send/send.md) somente.
+  >[!NOTE]
+  >
+  >Este indicador está relacionado aos deliveries no [canais móveis](../send/send.md) somente.
 
-   Você pode abrir cada linha da tabela de valores clicando no símbolo `[+]`. Para cada tipo de erro, é possível exibir o detalhamento das mensagens de erro por domínio.
+  Você pode abrir cada linha da tabela de valores clicando no símbolo `[+]`. Para cada tipo de erro, é possível exibir o detalhamento das mensagens de erro por domínio.
 
 **[!UICONTROL Breakdown of errors per domain]**
 
@@ -284,9 +285,9 @@ Os seguintes indicadores são usados:
 * **[!UICONTROL Hard bounces]**: porcentagem do número de devoluções permanentes em comparação ao número total de mensagens processadas.
 * **[!UICONTROL Soft bounces]**: porcentagem do número de devoluções temporárias em comparação ao número total de mensagens processadas.
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre devoluções permanentes e temporárias, consulte [esta página](../send/quarantines.md).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre devoluções permanentes e temporárias, consulte [esta página](../send/quarantines.md).
 
 * **[!UICONTROL Opens]**: porcentagem do número de recipients alvos que abriram uma mensagem pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
 * **[!UICONTROL Clicks]**: porcentagem do número de pessoas que clicaram em um delivery pelo menos uma vez em comparação ao número de mensagens processadas com êxito.

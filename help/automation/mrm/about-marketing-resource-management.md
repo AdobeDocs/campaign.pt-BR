@@ -33,15 +33,15 @@ No contexto do Gerenciamento de recursos de marketing do Adobe Campaign, os segu
 
 * **Tarefa**
 
-   Uma tarefa corresponde a uma ação a ser executada no contexto de uma campanha. Uma tarefa é atribuída a um grupo ou pessoa. Uma tarefa filho pode ser dependente de uma tarefa pai, significando que a tarefa pai não será executada até que todas as tarefas filho sejam concluídas. Exemplos de tarefas incluem: referenciar um site, uma análise de orçamento, um sumário, etc.
+  Uma tarefa corresponde a uma ação a ser executada no contexto de uma campanha. Uma tarefa é atribuída a um grupo ou pessoa. Uma tarefa filho pode ser dependente de uma tarefa pai, significando que a tarefa pai não será executada até que todas as tarefas filho sejam concluídas. Exemplos de tarefas incluem: referenciar um site, uma análise de orçamento, um sumário, etc.
 
-   Para obter mais informações, consulte [Criar e gerenciar tarefas](creating-and-managing-tasks.md).
+  Para obter mais informações, consulte [Criar e gerenciar tarefas](creating-and-managing-tasks.md).
 
 * **Recursos de marketing**
 
-   O Adobe Campaign permite acompanhar o progresso de projetos de marketing colaborativo, como mídia de comunicação, planos de ação, boletins informativos etc. O ciclo de criação e aprovação desses recursos de marketing pode ser monitorado pelo painel de recursos até sua publicação.
+  O Adobe Campaign permite acompanhar o progresso de projetos de marketing colaborativo, como mídia de comunicação, planos de ação, boletins informativos etc. O ciclo de criação e aprovação desses recursos de marketing pode ser monitorado pelo painel de recursos até sua publicação.
 
-   Para obter mais informações, consulte [Gerenciamento de recursos de marketing](managing-marketing-resources.md).
+  Para obter mais informações, consulte [Gerenciamento de recursos de marketing](managing-marketing-resources.md).
 
 <!--
 >[!NOTE]

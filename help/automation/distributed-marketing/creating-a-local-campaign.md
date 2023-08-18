@@ -59,24 +59,24 @@ Há quatro tipos de interfaces da web disponíveis:
 
 * **[!UICONTROL By brief]** : a entidade local deve fornecer uma descrição onde descreve as configurações da campanha. Uma vez aprovado o pedido, a entidade central configura e executa a campanha como um todo.
 
-   ![](assets/mkt_distr_6.png)
+  ![](assets/mkt_distr_6.png)
 
 * **[!UICONTROL By form]** : a entidade local tem acesso a um formulário web onde, dependendo do template usado, podem editar o conteúdo, o público-alvo e o tamanho máximo, bem como datas de criação e extração usando campos de personalização. A entidade local pode avaliar o público-alvo e pré-visualizar o conteúdo desse formulário web.
 
-   ![](assets/mkt_distr_8.png)
+  ![](assets/mkt_distr_8.png)
 
-   O formulário oferecido é especificado em um aplicativo web que deve ser selecionado em uma lista suspensa no campo **[!UICONTROL web Interface]** no link do template **[!UICONTROL Advanced campaign parameters...]**. Consulte [Criar uma campanha local (por formulário)](examples.md#creating-a-local-campaign--by-form-).
+  O formulário oferecido é especificado em um aplicativo web que deve ser selecionado em uma lista suspensa no campo **[!UICONTROL web Interface]** no link do template **[!UICONTROL Advanced campaign parameters...]**. Consulte [Criar uma campanha local (por formulário)](examples.md#creating-a-local-campaign--by-form-).
 
-   >[!NOTE]
-   >
-   >A aplicação web utilizada é um exemplo. É necessário criar um aplicativo web específico para poder usar um formulário.
+  >[!NOTE]
+  >
+  >A aplicação web utilizada é um exemplo. É necessário criar um aplicativo web específico para poder usar um formulário.
 
-   ![](assets/mkt_distr_7.png)
+  ![](assets/mkt_distr_7.png)
 
 * **[!UICONTROL By external form]** : a entidade local tem acesso aos parâmetros da campanha em sua extranet (não do Adobe Campaign). Esses parâmetros são idênticos aos de uma **campanha local (por formulário)**.
 * **[!UICONTROL Pre-set]** : entidade local solicita uma campanha usando o formulário padrão, sem localizá-lo.
 
-   ![](assets/mkt_distr_5.png)
+  ![](assets/mkt_distr_5.png)
 
 ### Valores padrão {#default-values}
 

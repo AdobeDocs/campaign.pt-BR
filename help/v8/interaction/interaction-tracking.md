@@ -24,15 +24,15 @@ Depois que as apresentações da oferta são feitas, é possível visualizar o h
 
 * No nível da oferta, clique em **[!UICONTROL Edit]** na guia **[!UICONTROL Propositions]**.
 
-   ![](assets/offer_followup_006.png)
+  ![](assets/offer_followup_006.png)
 
 * A partir do perfil de um destinatário, clique na guia **[!UICONTROL Propositions]**.
 
-   ![](assets/offer_followup_002.png)
+  ![](assets/offer_followup_002.png)
 
 * No nível de espaço de oferta, clique na guia **[!UICONTROL Propositions]**.
 
-   ![](assets/offer_space_prop_001_b.png)
+  ![](assets/offer_space_prop_001_b.png)
 
 ## Relatório da análise da oferta{#offer-analysis-report}
 
@@ -42,14 +42,14 @@ As estatísticas são classificadas com base em três critérios:
 
 * Por data:
 
-   ![](assets/offer_report_perdate.png)
+  ![](assets/offer_report_perdate.png)
 
 * Por espaço:
 
-   ![](assets/offer_report_perspaces.png)
+  ![](assets/offer_report_perspaces.png)
 
 * Por deliveries:
 
-   ![](assets/offer_report_perdeliveries.png)
+  ![](assets/offer_report_perdeliveries.png)
 
 Os dados podem ser filtrados com base em vários critérios disponíveis na seção superior do relatório. Após selecionar os critérios desejados, clique no link **[!UICONTROL Refresh]** para aplicá-los ao relatório.

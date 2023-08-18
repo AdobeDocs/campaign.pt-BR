@@ -24,30 +24,31 @@ Com cubos, você pode:
 
 * Exportar dados diretamente em um relatório, projetado na **[!UICONTROL Reports]** da plataforma Adobe Campaign.
 
-   Para fazer isso, crie um novo relatório e selecione o cubo que deseja usar.
+  Para fazer isso, crie um novo relatório e selecione o cubo que deseja usar.
 
-   ![](assets/create-new-cube.png)
+  ![](assets/create-new-cube.png)
 
-   Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um modelo, clique em **[!UICONTROL Create]** para configurar e visualizar o novo relatório.
+  Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um modelo, clique em **[!UICONTROL Create]** para configurar e visualizar o novo relatório.
 
-   Você pode adaptar medidas, alterar o modo de exibição ou configurar a tabela e exibir o relatório usando o botão principal.
+  Você pode adaptar medidas, alterar o modo de exibição ou configurar a tabela e exibir o relatório usando o botão principal.
 
-   ![](assets/display-cube-table.png)
+  ![](assets/display-cube-table.png)
 
 * Fazer referência a um cubo no **[!UICONTROL Query]** caixa de um relatório para usar seus indicadores, conforme mostrado abaixo:
 
-   ![](assets/cube-report-query.png)
+  ![](assets/cube-report-query.png)
 
 * Insira uma tabela dinâmica com base em um cubo em qualquer página de um relatório. Para fazer isso, faça referência ao cubo a ser usado na guia **[!UICONTROL Data]** da tabela dinâmica na página relacionada.
 
-   ![](assets/cube-in-a-report.png)
+  ![](assets/cube-in-a-report.png)
 
-   Para saber mais, consulte [Explorar os dados em um relatório](cube-tables.md#explore-the-data-in-a-report).
+  Para saber mais, consulte [Explorar os dados em um relatório](cube-tables.md#explore-the-data-in-a-report).
 
 
 >[!CAUTION]
 >
 >São necessárias permissões de administrador para criar cubos.
+>
 
 ## Criar um cubo{#cube-create}
 

@@ -25,15 +25,15 @@ Se necessário, é possível atribuir a tarefa de aprovação a um único operad
 
 * Para selecionar um único operador, selecione o valor **[!UICONTROL Operator]** e depois o campo **[!UICONTROL Assignment type]**, então selecione o operador relevante na lista suspensa do campo **[!UICONTROL Assignee]**.
 
-   ![](assets/s_advuser_validation_box_assign.png)
+  ![](assets/s_advuser_validation_box_assign.png)
 
-   >[!CAUTION]
-   >
-   >Somente o operador escolhido será autorizado a aprovar a tarefa.
+  >[!CAUTION]
+  >
+  >Somente o operador escolhido será autorizado a aprovar a tarefa.
 
 * É possível definir uma query para filtrar operadores de aprovação. Para fazer isso, selecione o valor **[!UICONTROL Filter]** no campo **[!UICONTROL Assignment type]** e clique no link **[!UICONTROL Advanced parameters...]** para definir as condições do filtro, conforme mostrado no exemplo a seguir:
 
-   ![](assets/s_advuser_validation_box_filter.png)
+  ![](assets/s_advuser_validation_box_filter.png)
 
 No caso de aprovação única, a transição correspondente à escolha do operador é ativada e a tarefa é concluída: os outros operadores não podem mais responder.
 
@@ -69,8 +69,8 @@ Um exemplo de aprovação é exibido em [Defining approvals](define-approvals.md
 
 * **[!UICONTROL response]**
 
-   Comentário relacionado à resposta
+  Comentário relacionado à resposta
 
 * **[!UICONTROL responseOperator]**
 
-   Identificador do operador que respondeu. Este campo é um valor numérico, mas um campo **[!UICONTROL String]**.
+  Identificador do operador que respondeu. Este campo é um valor numérico, mas um campo **[!UICONTROL String]**.

@@ -20,13 +20,13 @@ A estrutura básica do modelo de dados do Adobe Campaign pode ser descrita da se
 
 * **Tabela de destinatários**: o modelo de dados depende de uma tabela principal que é, por padrão, a tabela Recipient (nmsRecipient). Esta tabela armazena todos os perfis de marketing.
 
-   ![](../assets/do-not-localize/glass.png) Para obter mais informações sobre a tabela Recipient, consulte [nesta seção](#ootb-profiles).
+  ![](../assets/do-not-localize/glass.png) Para obter mais informações sobre a tabela Recipient, consulte [nesta seção](#ootb-profiles).
 
 * **Tabela de entrega**: o modelo de dados também inclui uma parte dedicada ao armazenamento de todas as atividades de marketing. Normalmente, é a tabela Delivery (NmsDelivery). Cada registro nessa tabela representa uma ação de entrega ou um modelo de entrega. Ele contém todos os parâmetros necessários para executar deliveries, como target, conteúdo etc.
 
 * **Registra tabelas**: essas tabelas armazenam todos os logs associados à execução das campanhas.
 
-   Os logs do delivery são todas as mensagens enviadas aos recipients ou dispositivos em todos os canais. A tabela principal Delivery logs (NmsBroadLogRcp) contém os logs do delivery para todos os recipients.
+  Os logs do delivery são todas as mensagens enviadas aos recipients ou dispositivos em todos os canais. A tabela principal Delivery logs (NmsBroadLogRcp) contém os logs do delivery para todos os recipients.
 A tabela principal de Logs de rastreamento (NmsTrackingLogRcp) armazena os logs de rastreamento para todos os destinatários. Os logs de rastreamento se referem às reações dos recipients, como aberturas e cliques de email. Cada reação corresponde a um log de rastreamento.
 Os logs do delivery e os logs de rastreamento são excluídos após um determinado período, que é especificado no Adobe Campaign e pode ser modificado. Portanto, é altamente recomendável exportar os logs regularmente.
 

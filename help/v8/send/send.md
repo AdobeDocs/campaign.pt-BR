@@ -40,7 +40,7 @@ O Adobe Campaign usa um Mail Transfer Agent (MTA) que executa o MTA de email com
 
 O Momentum representa uma tecnologia MTA inovadora e de alto desempenho, que inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançarem e manterem as taxas ideais de delivery da caixa de entrada.
 
-* O MTA permite um grande aumento na velocidade geral de taxa de transferência e uma redução significativa nas rejeições temporárias.
+* O MTA permite um aumento maciço na velocidade geral de taxa de transferência e uma redução significativa em rejeições temporárias.
 * Ele usa a mais recente tecnologia MTA para fornecer a você as velocidades de taxa de transferência ideais para seu delivery de email.
 * Adaptando-se instantânea e automaticamente ao feedback que recebe, ele também garante um delivery de email mais preciso e inteligente com dados de delivery em tempo real.
 

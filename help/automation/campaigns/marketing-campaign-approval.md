@@ -23,13 +23,13 @@ As mensagens de notificação são enviadas aos operadores do Adobe Campaign des
 Os operadores podem aprovar de várias maneiras:
 
 * Na mensagem de notificação. O link no email leva o operador para o Campaign por meio de um navegador da Web. Após a conexão, o revisor pode optar por aprovar ou não o conteúdo.
-   ![](assets/approval-content-email.png)
+  ![](assets/approval-content-email.png)
 
 * No painel de campanha.
-   ![](assets/approval-from-dashboard.png)
+  ![](assets/approval-from-dashboard.png)
 
 * No painel de delivery.
-   ![](assets/approval-from-delivery-dashboard.png)
+  ![](assets/approval-from-delivery-dashboard.png)
 
 Os operadores podem acessar a campanha e o delivery a partir da janela de aprovação. Eles também podem inserir um comentário.
 
@@ -98,6 +98,7 @@ Quando essas fases de validação estiverem concluídas, o delivery poderá ser 
 >[!NOTE]
 >
 >Os processos que exigem uma aprovação são selecionados no template de campanha. [Saiba mais](marketing-campaign-templates.md).
+>
 
 ### Etapas para aprovar um delivery {#approving-processes}
 
@@ -109,33 +110,33 @@ Para cada delivery na campanha, você pode aprovar os seguintes processos:
 
 * **Definição de metas, conteúdo e orçamento**
 
-   Quando a variável **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** ou **[!UICONTROL Enable budget approval]** forem selecionadas na janela de configurações de aprovação, os links relacionados serão exibidos nos painéis campanha e delivery.
+  Quando a variável **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** ou **[!UICONTROL Enable budget approval]** forem selecionadas na janela de configurações de aprovação, os links relacionados serão exibidos nos painéis campanha e delivery.
 
-   ![](assets/template-activate-6.png)
+  ![](assets/template-activate-6.png)
 
-   >[!NOTE]
-   >
-   >A aprovação de orçamento só estará disponível se a aprovação de target estiver habilitada na janela de configurações de aprovação. O link para aprovação do orçamento é exibido somente após o target ter sido analisado.
+  >[!NOTE]
+  >
+  >A aprovação de orçamento só estará disponível se a aprovação de target estiver habilitada na janela de configurações de aprovação. O link para aprovação do orçamento é exibido somente após o target ter sido analisado.
 
-   Se as opções **[!UICONTROL Assign content editing]** ou **[!UICONTROL External content approval]** forem selecionadas na janela de configurações de aprovação, o painel exibirá os links **[!UICONTROL Available content]** e **[!UICONTROL External content approval]**.
+  Se as opções **[!UICONTROL Assign content editing]** ou **[!UICONTROL External content approval]** forem selecionadas na janela de configurações de aprovação, o painel exibirá os links **[!UICONTROL Available content]** e **[!UICONTROL External content approval]**.
 
-   A aprovação de conteúdo permite que você acesse as provas enviadas.
+  A aprovação de conteúdo permite que você acesse as provas enviadas.
 
 * **Aprovação de extração (delivery de mala direta)**
 
-   Quando a opção **[!UICONTROL Enable extraction approval]** está selecionada na janela de configurações de aprovação, o arquivo extraído deve ser aprovado antes que o roteador possa ser notificado.
+  Quando a opção **[!UICONTROL Enable extraction approval]** está selecionada na janela de configurações de aprovação, o arquivo extraído deve ser aprovado antes que o roteador possa ser notificado.
 
-   A variável **[!UICONTROL Approve file]** está disponível nos painéis campanha e delivery.
+  A variável **[!UICONTROL Approve file]** está disponível nos painéis campanha e delivery.
 
-   ![](assets/approve-file-preview.png)
+  ![](assets/approve-file-preview.png)
 
-   Você pode visualizar o arquivo de saída antes da validação. A pré-visualização do arquivo de extração mostra apenas uma amostra de dados. O arquivo inteiro não está carregado.
+  Você pode visualizar o arquivo de saída antes da validação. A pré-visualização do arquivo de extração mostra apenas uma amostra de dados. O arquivo inteiro não está carregado.
 
 * **Aprovar remessas associadas**
 
-   A variável **[!UICONTROL Enable individual approval of each associated delivery]** for usada para uma entrega principal associada a entregas secundárias. Por padrão, essa opção não está selecionada, para que uma aprovação geral do delivery principal possa ser realizada. Se essa opção estiver selecionada, cada delivery deverá ser aprovado individualmente.
+  A variável **[!UICONTROL Enable individual approval of each associated delivery]** for usada para uma entrega principal associada a entregas secundárias. Por padrão, essa opção não está selecionada, para que uma aprovação geral do delivery principal possa ser realizada. Se essa opção estiver selecionada, cada delivery deverá ser aprovado individualmente.
 
-   ![](assets/enable-ind-approval.png)
+  ![](assets/enable-ind-approval.png)
 
 
 >[!NOTE]
@@ -259,19 +260,19 @@ Os logs de aprovação estão disponíveis na interface do usuário:
 
 * No log de aprovação da campanha, na subguia **[!UICONTROL Approvals]** da guia **[!UICONTROL Edit > Audit]**:
 
-   ![](assets/approval-tracking-from-campaign.png)
+  ![](assets/approval-tracking-from-campaign.png)
 
 * No log de delivery da campanha, na subguia **[!UICONTROL Deliveries]** da guia **[!UICONTROL Edit > Audit]**:
 
-   ![](assets/approval-tracking-from-campaign-deliveries.png)
+  ![](assets/approval-tracking-from-campaign-deliveries.png)
 
 * Para aprovar o status de aprovação de cada delivery, clique na opção **[!UICONTROL Hide/display logs]** da guia **[!UICONTROL Summary]**.
 
-   ![](assets/approval-tracking-delivery-dashboard.png)
+  ![](assets/approval-tracking-delivery-dashboard.png)
 
 * Essas informações também podem ser acessadas através da guia **[!UICONTROL Audit > Approvals]** de cada delivery:
 
-   ![](assets/approval-tracking-delivery-tab.png)
+  ![](assets/approval-tracking-delivery-tab.png)
 
 >[!NOTE]
 >

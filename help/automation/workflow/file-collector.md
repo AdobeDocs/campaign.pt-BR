@@ -31,21 +31,21 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
    * **[!UICONTROL Directory]**
 
-      Diretório contendo os arquivos a serem baixados. Esse diretório deve ser criado antes do servidor: se ele não existir, um erro será gerado.
+     Diretório contendo os arquivos a serem baixados. Esse diretório deve ser criado antes do servidor: se ele não existir, um erro será gerado.
 
    * **[!UICONTROL Filter]**
 
-      Somente os arquivos correspondentes a este filtro são considerados. Os outros arquivos no diretório são ignorados. Se o filtro estiver vazio, todos os arquivos no diretório serão considerados. Exemplos de filtro: **&#42;.zip**, **import-&#42;.txt**.
+     Somente os arquivos correspondentes a este filtro são considerados. Os outros arquivos no diretório são ignorados. Se o filtro estiver vazio, todos os arquivos no diretório serão considerados. Exemplos de filtro: **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 
-      Se essa opção estiver habilitada, a tarefa terminará após a recepção do primeiro arquivo. Se vários arquivos correspondentes ao filtro estiverem presentes no diretório, somente um será considerado. Essa opção garante que somente um evento será enviado. O arquivo considerado é o primeiro na lista em ordem alfabética.
+     Se essa opção estiver habilitada, a tarefa terminará após a recepção do primeiro arquivo. Se vários arquivos correspondentes ao filtro estiverem presentes no diretório, somente um será considerado. Essa opção garante que somente um evento será enviado. O arquivo considerado é o primeiro na lista em ordem alfabética.
 
-      Para uma atividade não agendada, se nenhum arquivo correspondente ao filtro for encontrado no diretório especificado, e se a opção **[!UICONTROL Process file nonexistence]** não estiver habilitada, será gerado um erro.
+     Para uma atividade não agendada, se nenhum arquivo correspondente ao filtro for encontrado no diretório especificado, e se a opção **[!UICONTROL Process file nonexistence]** não estiver habilitada, será gerado um erro.
 
    * **[!UICONTROL Execution schedule]**
 
-      Determina a frequência da verificação de presença do arquivo por meio dos parâmetros da guia **[!UICONTROL Schedule]**.
+     Determina a frequência da verificação de presença do arquivo por meio dos parâmetros da guia **[!UICONTROL Schedule]**.
 
 1. **Tratamento de erros**
 
@@ -53,17 +53,17 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
    * **[!UICONTROL Process file nonexistence]**
 
-      Essa opção inicia uma transição especial sempre que nenhum arquivo correspondente ao filtro é encontrado no diretório especificado.
+     Essa opção inicia uma transição especial sempre que nenhum arquivo correspondente ao filtro é encontrado no diretório especificado.
 
-      Se a tarefa não estiver agendada, essa transição será ativada apenas uma vez.
+     Se a tarefa não estiver agendada, essa transição será ativada apenas uma vez.
 
    * **[!UICONTROL Processing errors]**
 
-      Essa opção faz surgir uma transição especial, para ser ativada se um erro for gerado. Nesse caso, o workflow não muda para o status de erro e continua a execução
+     Essa opção faz surgir uma transição especial, para ser ativada se um erro for gerado. Nesse caso, o workflow não muda para o status de erro e continua a execução
 
-      Os erros considerados são erros do sistema de arquivos (o arquivo não pôde ser movido, o diretório não pôde ser acessado etc.).
+     Os erros considerados são erros do sistema de arquivos (o arquivo não pôde ser movido, o diretório não pôde ser acessado etc.).
 
-      Essa opção não processa erros relacionados à configuração de atividade, ou seja, valores inválidos.
+     Essa opção não processa erros relacionados à configuração de atividade, ou seja, valores inválidos.
 
 1. **Historização**
 

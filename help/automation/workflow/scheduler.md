@@ -27,7 +27,7 @@ A atividade **[!UICONTROL Scheduler]** deve ser considerada como um início agen
 
 * O uso de uma atividade do scheduler pode gerar várias execuções ao mesmo tempo de um workflow em andamento. Por exemplo, você pode ter um scheduler acionando a execução do workflow a cada hora, mas, às vezes, a execução do workflow inteiro demora mais de uma hora.
 
-   Talvez você queira ignorar a execução se o workflow já estiver em execução. Para obter mais informações sobre como evitar execuções simultâneas de um workflow, consulte [esta página](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
+  Talvez você queira ignorar a execução se o workflow já estiver em execução. Para obter mais informações sobre como evitar execuções simultâneas de um workflow, consulte [esta página](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 * Observe que a transição pode ser ativada várias horas depois caso o workflow esteja executando uma tarefa de longo prazo, como uma importação, ou se o módulo wfserver for interrompido por um momento. Nesse caso, pode ser necessário restringir a execução da tarefa ativada pelo scheduler para um determinado intervalo de tempo.
 

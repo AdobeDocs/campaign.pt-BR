@@ -13,37 +13,37 @@ ht-degree: 17%
 
 # Trabalhar com o Campaign e o Twitter{#tw-ac-ovv}
 
-A variável **Gerenciamento de redes sociais (Marketing social)** permite interagir com os clientes por meio do Twitter. Use esse recurso para:
+A variável **Gerenciamento de redes sociais (Marketing social)** O módulo permite interagir com os clientes via Twitter. Use esse recurso para:
 
 * Publicar mensagens e enviar DMs - Use o Adobe Campaign Social Marketing para publicar mensagens no Twitter. Você também pode enviar mensagens diretas a todos os seus seguidores.
 
 * Coletar novos contatos - O Adobe Campaign Social Marketing também facilita a aquisição de novos contatos: entre em contato com os usuários e pergunte se desejam compartilhar suas informações de perfil. Se eles aceitarem, o Adobe Campaign recuperará automaticamente os dados, o que permite realizar campanhas de direcionamento e, quando possível, implementar estratégias entre canais.
 
-![](../assets/do-not-localize/speech.png) Como usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para conectar o Campaign com o Twitter. A variável  **Gerenciamento de redes sociais (Marketing social)** O complemento do deve ser instalado no ambiente, por meio do pacote dedicado, e a Conta externa do Twitter deve ser configurada.
+![](../assets/do-not-localize/speech.png) Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para conectar o Campaign com o Twitter. A variável  **Gerenciamento de redes sociais (Marketing social)** o complemento deve ser instalado no ambiente, por meio do pacote dedicado, e a Conta externa do Twitter deve ser configurada.
 
 
 Para configurar o Adobe Campaign para publicar tweets em suas contas do Twitter, delegue acesso de gravação ao Adobe Campaign para essas contas. Para fazer isso, você deve:
 
 1. Crie uma conta do Twitter e cadastre-se em uma conta de desenvolvedor. [Saiba mais](#dev-account)
-1. (opcional) Crie uma conta do Twitter de teste para enviar provas. [Saiba mais](#tw-test-account)
-1. Crie um aplicativo do Twitter (um aplicativo por conta do Twitter). [Saiba mais](#create-an-app-on-twitter)
-1. Criar um novo serviço para **[!UICONTROL Twitter]** (um serviço por conta da Twitter). [Saiba mais](#create-tw-service)
-1. Sincronize sua conta da Twitter com o Campaign. [Saiba mais](#synchro-tw-accounts)
+1. (opcional) Crie uma conta de Twitter de teste para enviar provas. [Saiba mais](#tw-test-account)
+1. Crie um aplicativo Twitter (um aplicativo por conta Twitter). [Saiba mais](#create-an-app-on-twitter)
+1. Criar um novo serviço para **[!UICONTROL Twitter]** (um serviço por conta do Twitter). [Saiba mais](#create-tw-service)
+1. Sincronize sua conta do Twitter com o Campaign. [Saiba mais](#synchro-tw-accounts)
 
-## Conta de desenvolvedor do twitter {#dev-account}
+## Conta de desenvolvedor do Twitter {#dev-account}
 
-Para começar com essa integração, você deve se inscrever para uma [Conta de desenvolvedor do twitter](https://developer.twitter.com){target="_blank"}.
+Para começar com essa integração, você deve se inscrever para uma [Conta de desenvolvedor do Twitter](https://developer.twitter.com){target="_blank"}.
 
-O Campaign usa a versão 1.1 da API do Twitter. Para usá-lo, você precisa solicitar acesso elevado por meio do Portal do desenvolvedor. Saiba mais sobre o Acesso elevado ao Twitter [nesta página](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
+O Campaign usa a versão 1.1 da API do Twitter. Para usá-lo, você precisa solicitar acesso elevado por meio do Portal do desenvolvedor. Saiba mais sobre Acesso elevado ao Twitter [nesta página](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
 
 ## Criar um aplicativo no Twitter {#create-an-app-on-twitter}
 
-Depois de ter sido aprovado com Acesso elevado, crie um aplicativo do Twitter para permitir que o Adobe Campaign publique tweets em sua conta do Twitter. Para fazer isso, siga as etapas abaixo:
+Depois de ter sido aprovado com Acesso elevado, crie um aplicativo do Twitter para permitir que o Adobe Campaign publique tweets na sua conta do Twitter. Para fazer isso, siga as etapas abaixo:
 
 1. Faça logon em sua conta do Twitter.
-1. Conectar a [portal do desenvolvedor do twitter](https://developer.twitter.com/en/apps).
+1. Conectar a [portal do desenvolvedor do Twitter](https://developer.twitter.com/en/apps).
 1. Selecionar **Criar um aplicativo**.
-1. Deixe o assistente do Twitter orientá-lo pelo processo.
+1. Permita que o assistente do Twitter o oriente pelo processo.
 1. Para permitir que o Adobe Campaign publique tweets em sua conta, edite em **Permissões do aplicativo** na seção Configuração de autenticação de usuário do aplicativo. Selecionar **Mensagens de leitura, gravação e diretas**.
 
    ![](assets/tw-permissions.png)
@@ -52,7 +52,7 @@ Depois de ter sido aprovado com Acesso elevado, crie um aplicativo do Twitter pa
 
    ![](assets/tw-app-type.png)
 
-1. De volta ao painel do aplicativo, selecione seu aplicativo e navegue até o **Chaves e tokens** guia. Em **Token de acesso e segredo**, se a variável **Mensagens de leitura, gravação e diretas** não for mencionada, você deverá regenerar o token e o segredo do aplicativo. Observe que todas as chaves e tokens devem ser salvas após a criação. Você precisará deles para configurar o serviço Campaign Twitter.
+1. De volta ao painel do aplicativo, selecione seu aplicativo e navegue até o **Chaves e tokens** guia. Em **Token de acesso e segredo**, se a variável **Mensagens de leitura, gravação e diretas** não for mencionada, você deverá regenerar o token e o segredo do aplicativo. Observe que todas as chaves e tokens devem ser salvas após a criação. Você precisará deles para configurar o serviço do Campaign Twitter.
 
    ![](assets/tw-permissions-check.png)
 
@@ -60,16 +60,18 @@ Depois de ter sido aprovado com Acesso elevado, crie um aplicativo do Twitter pa
 >[!NOTE]
 >
 >Você precisa de um aplicativo por conta do Twitter. Como consequência, você deve criar outra aplicação de teste para enviar provas para sua conta de teste.
+>
 
-## Criar um serviço Twitter no Campaign {#create-tw-service}
+## Criar um serviço do Twitter no Campaign {#create-tw-service}
 
-Para vincular a instância do Campaign à conta da Twitter, crie um **Twitter** serviço e delegar acesso de gravação ao Campaign.
+Para vincular a instância do Campaign à conta do Twitter, crie um **Twitter** serviço e delegar acesso de gravação ao Campaign.
 
 >[!CAUTION]
 >
->Criar um **Twitter** por conta da Twitter. Como consequência, você deve criar outro serviço de teste para enviar provas para o [testar conta](#tw-test-account).
+>Criar um **Twitter** serviço por conta de Twitter. Como consequência, você deve criar outro serviço de teste para enviar provas para o [testar conta](#tw-test-account).
 >
 >Each **Twitter** O serviço também deve ser criado pelo Adobe na instância MID. Entre em contato com o representante da Adobe para configurar seu ambiente.
+>
 
 Para inserir as configurações, você deve acessar o Console do cliente do Adobe Campaign e as permissões do aplicativo Twitter.
 
@@ -80,7 +82,8 @@ Para inserir as configurações, você deve acessar o Console do cliente do Adob
 
    >[!CAUTION]
    >
-   >A variável **[!UICONTROL Internal name]** do serviço deve ser exatamente o mesmo nome da sua conta da Twitter.
+   >A variável **[!UICONTROL Internal name]** do serviço deve ser exatamente o mesmo nome da conta do Twitter.
+   >
 
 1. Por padrão, os seguidores são salvos na pasta **[!UICONTROL Visitors]**. Você pode selecionar outro local no **[!UICONTROL Visitor folder]** campo. [Saiba mais](../send/twitter.md#direct-tw-messages)
 
@@ -88,7 +91,7 @@ Para inserir as configurações, você deve acessar o Console do cliente do Adob
 
    >[!NOTE]
    >
-   >A variável **[!UICONTROL Synchronize subscriptions]** estiver ativada por padrão: essa opção recupera automaticamente a lista de seguidores do Twitter para que você possa [enviar mensagens diretas a eles](../send/twitter.md#direct-tw-messages). A sincronização é executada por um [fluxo de trabalho técnico dedicado](#synchro-tw-accounts).
+   >A variável **[!UICONTROL Synchronize subscriptions]** estiver habilitada por padrão: essa opção recupera automaticamente a lista de seguidores do Twitter para que você possa [enviar mensagens diretas a eles](../send/twitter.md#direct-tw-messages). A sincronização é executada por um [fluxo de trabalho técnico dedicado](#synchro-tw-accounts).
 
 1. No aplicativo Twitter, copie o conteúdo do **Chave de API** e **[Segredo da chave de API]** campos e os cole na **[!UICONTROL Consumer key]** e **[!UICONTROL Consumer secret]** campos da sua campanha **Twitter** serviço.
 
@@ -100,7 +103,7 @@ Para verificar as configurações, é possível:
 
 * Edite o **Twitter** serviço que acabou de criar.
 * Navegue pelo **[!UICONTROL Twitter page]** guia: a conta do Twitter deve ser exibida.
-   ![](assets/tw-page.png)
+  ![](assets/tw-page.png)
 
 
 ## Sincronizar a conta do Twitter {#synchro-tw-accounts}
@@ -132,7 +135,7 @@ Quando essa configuração estiver concluída, você poderá postar tweets em su
 
 ## Criar uma conta de teste no Twitter {#tw-test-account}
 
-Além da conta do Twitter, crie uma conta privada do Twitter que possa ser usada para enviar [provas de tweet](../send/twitter.md#send-tw-proofs). Para fazer isso, siga as etapas abaixo:
+Além da conta do Twitter, crie uma conta de Twitter privado que possa ser usada para enviar [provas de tweet](../send/twitter.md#send-tw-proofs). Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma nova conta do Twitter.
 1. Acessar a conta  **Configurações**.

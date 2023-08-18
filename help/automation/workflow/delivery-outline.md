@@ -32,7 +32,7 @@ A atividade de **delivery outline**, disponível nos workflows da campanha, perm
 
    * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
 
-      Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
+     Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
 
    * Se não marcar a caixa, todas as ofertas no delivery outline serão apresentadas sem chamar o mecanismo de oferta.
 

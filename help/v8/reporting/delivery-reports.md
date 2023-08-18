@@ -65,9 +65,9 @@ Este relatório combina os indicadores principais para rastrear o comportamento 
 * **[!UICONTROL Clicks on the mirror page link]**[ : Número de cliques no link para a mirror page](../send/mirror-page.md). Para ser considerado, o link deve ser definido como tal no assistente do delivery (URLs rastreadas).
 * **[!UICONTROL Estimation of forwards]** : Estimativa do número de emails encaminhados pelos recipients alvos. Esse valor é calculado subtraindo o número de pessoas distintas e o número de recipients distintos que clicaram no email.
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre a diferença entre pessoas distintas e recipients alvos, consulte [Pessoas/recipients direcionados](metrics-calculation.md#targeted-persons---recipients).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre a diferença entre pessoas distintas e recipients alvos, consulte [Pessoas/recipients direcionados](metrics-calculation.md#targeted-persons---recipients).
 
 **[!UICONTROL 3. Open and click-through rate]**
 

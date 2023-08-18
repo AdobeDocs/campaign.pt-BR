@@ -33,6 +33,7 @@ Qualquer esquema/tabela interna que precise ser movido ou replicado no banco de 
 >[!CAUTION]
 >
 > Os dados do cliente não são armazenados no banco de dados local do [!DNL Campaign]. Como consequência, qualquer tabela personalizada precisa ser criada no banco de dados na nuvem.
+>
 
 ## Arquitetura corporativa (FFDA) do Campaign{#ffda-archi}
 
@@ -64,7 +65,7 @@ O banco de dados PostgreSQL na instância de marketing é usado para:
 * Armazene todos os dados do Campaign, incluindo configurações de entrega e campanha, fluxo de trabalho e definições de serviço.
 * Armazenar todas as tabelas de referência integradas (listas discriminadas, países etc.) que são replicados para [!DNL Snowflake].
 
-   No entanto, não é possível:
+  No entanto, não é possível:
    * criar personalizações para dados do cliente, por exemplo, não crie uma tabela de família no PostgreSQL, mas somente no Snowflake
    * armazenar logs do delivery, logs de rastreamento etc. na targeting dimension FFDA.
    * armazenar grande volume de dados.
@@ -100,6 +101,7 @@ Um fluxo de trabalho técnico específico trata da replicação de tabelas que p
 >
 > Várias políticas de replicação foram criadas, com base no tamanho da tabela (XS, XL etc.).
 > Algumas tabelas são replicadas em tempo real, outras são replicadas de hora em hora. Algumas tabelas terão atualizações incrementais; outras terão uma atualização completa.
+>
 
 [Saiba mais sobre replicação de dados](replication.md)
 
@@ -107,7 +109,7 @@ Um fluxo de trabalho técnico específico trata da replicação de tabelas que p
 
 Os objetos do Campaign v8 agora usam um **Identificador exclusivo universal (UUID)**, que permite que valores exclusivos ilimitados identifiquem dados.
 
-Observe que essa ID é baseada em uma sequência e não é sequencial. A chave primária não é um valor numérico no Campaign v8 e você precisa usar os atributos **autouuid** e **autopk** em seus esquemas.
+Observe que essa ID é baseada em uma string e não é sequencial. A chave primária não é um valor numérico no Campaign v8 e você precisa usar os atributos **autouuid** e **autopk** em seus esquemas.
 
 No Campaign Classic v7 e em versões anteriores, a unicidade de uma chave em um esquema (ou seja, tabela) é manipulada no nível do mecanismo de banco de dados. Em geral, os mecanismos do banco de dados do Classic como PostgreSQL, Oracle ou SQL Server incluem um mecanismo nativo para impedir a inserção de linhas duplicadas com base em uma coluna ou um conjunto de colunas por meio de chaves principais e/ou índices únicos. A ID duplicada não existe nessas versões quando o índice adequado e as chaves principais são definidos no nível do banco de dados.
 

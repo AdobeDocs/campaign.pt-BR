@@ -21,6 +21,7 @@ Uma exibição é uma pasta específica que não contém dados, mas exibe dados 
 
 >[!NOTE]
 >Para distinguir visualizações de pastas padrão, seu nome é exibido em azul claro em vez de preto.
+>
 
 Observe que é possível atribuir permissões a pastas para restringir o acesso a determinados dados. [Saiba mais](#restrict-access-to-a-folder)
 
@@ -32,7 +33,7 @@ Observe que é possível atribuir permissões a pastas para restringir o acesso 
 
 * **Definir e aplicar uma convenção de nomenclatura**, por exemplo, é possível nomear os workflows em ordem alfabética, para que apareçam classificados na ordem de execução, como:
 
-   A1 - importar recipients, começa às 10h; A2 - importar tíquetes, começa às 11h.
+  A1 - importar recipients, começa às 10h; A2 - importar tíquetes, começa às 11h.
 
 ## Criar uma pasta{#create-a-folder}
 
@@ -50,6 +51,7 @@ Para criar outro tipo de pasta, clique com o botão direito em uma pasta existen
 
 >[!CAUTION]
 >Essas alterações se aplicam a todos os usuários do Campaign.
+>
 
 ## Transformar uma pasta em um modo de exibição{#turn-a-folder-to-a-view}
 

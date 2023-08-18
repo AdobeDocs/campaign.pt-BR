@@ -85,7 +85,7 @@ Para adicionar dados do banco de dados do Adobe Campaign:
    * Um campo calculado com base nos dados obtidos do público alvo ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Selecionar dados](targeting-workflows.md#selecting-data).
    * Um novo campo, criado por meio do botão **[!UICONTROL Add]** à direita da lista de colunas de output.
 
-      Também é possível adicionar uma coleção de informações, por exemplo, uma lista de contratos, os últimos 5 deliveries etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Editar dados adicionais](targeting-workflows.md#editing-additional-data).
+     Também é possível adicionar uma coleção de informações, por exemplo, uma lista de contratos, os últimos 5 deliveries etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Editar dados adicionais](targeting-workflows.md#editing-additional-data).
 
 Para adicionar uma coleção de informações vinculadas a uma população direcionada:
 
@@ -98,11 +98,11 @@ Para adicionar uma coleção de informações vinculadas a uma população direc
 
    * Se um único elemento da coleção coincide com as condições de filtragem desta coleção, selecione **[!UICONTROL Single row]** no campo **[!UICONTROL Data collected]**.
 
-      >[!IMPORTANT]
-      >
-      >Esse modo otimiza o query SQL gerada graças a uma junção direta dos elementos de coleção.
-      >
-      >Se a condição inicial não for respeitada, o resultado pode ser falho (linhas ausentes ou sobrepostas).
+     >[!IMPORTANT]
+     >
+     >Esse modo otimiza o query SQL gerada graças a uma junção direta dos elementos de coleção.
+     >
+     >Se a condição inicial não for respeitada, o resultado pode ser falho (linhas ausentes ou sobrepostas).
 
    * Se você optar por recuperar várias linhas (**[!UICONTROL Limit the line count]**), será possível especificar o número de linhas a serem coletadas.
    * Se as colunas coletadas contiverem agregados, por exemplo, o número de falhas declaradas, a despesa média em um site, etc. você poderá usar o valor **[!UICONTROL Aggregates]**.
@@ -166,15 +166,15 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
 * Consultas eficientes dependem de índices.
 * Use um índice para todas as associações.
 * A definição de links no esquema determinará as condições da associação. A tabela vinculada deve ter um índice exclusivo na chave primária e a associação deve estar nesse campo.
-* Realize associações definindo chaves em campos numéricos em vez de campos de sequência.
+* Realize associações definindo chaves em campos numéricos em vez de campos de string.
 * Evite realizar associações externas. Sempre que possível, use o registro Zero ID para obter a funcionalidade de associação externa.
 * Use o tipo de dados correto para associações.
 
-   Certifique-se de que a `where` cláusula tenha o mesmo tipo do campo.
+  Certifique-se de que a `where` cláusula tenha o mesmo tipo do campo.
 
-   Um erro comum é: `iBlacklist='3'` where `iBlacklist` é um campo numérico e `3` significa um valor de texto.
+  Um erro comum é: `iBlacklist='3'` where `iBlacklist` é um campo numérico e `3` significa um valor de texto.
 
-   Verifique se você sabe qual será o plano de execução da consulta. Evite varreduras completas de tabelas, especialmente para consultas em tempo real ou consultas quase em tempo real em execução a cada minuto.
+  Verifique se você sabe qual será o plano de execução da consulta. Evite varreduras completas de tabelas, especialmente para consultas em tempo real ou consultas quase em tempo real em execução a cada minuto.
 
 ### Funções {#functions}
 
@@ -212,10 +212,10 @@ Para saber mais sobre as dimensões do filtro, consulte [esta seção](build-a-w
    * aplicação,
    * volumes.
 
-   >[!NOTE]
-   >
-   >Um recurso que funciona em um ambiente de desenvolvimento pode não funcionar em um ambiente de produção onde os dados podem ser diferentes. Tente identificar as principais diferenças para antecipar os riscos e preparar soluções.
+  >[!NOTE]
+  >
+  >Um recurso que funciona em um ambiente de desenvolvimento pode não funcionar em um ambiente de produção onde os dados podem ser diferentes. Tente identificar as principais diferenças para antecipar os riscos e preparar soluções.
 
 * Faça configurações que correspondam aos volumes de target. Grandes volumes exigem configurações específicas. Uma configuração que funcionou para 100.000 recipients pode não funcionar para 10.000.000 recipients.
 
-   Considere como o sistema será dimensionado quando ele for acionado. Só porque algo funciona em pequena escala não significa que seja adequado com volumes maiores. Os testes devem ser feitos com volumes semelhantes aos da produção. Você também deve avaliar o efeito das alterações nos volumes (número de chamadas, tamanho do banco de dados) nas horas de pico, dias de pico e ao longo da vida útil do projeto.
+  Considere como o sistema será dimensionado quando ele for acionado. Só porque algo funciona em pequena escala não significa que seja adequado com volumes maiores. Os testes devem ser feitos com volumes semelhantes aos da produção. Você também deve avaliar o efeito das alterações nos volumes (número de chamadas, tamanho do banco de dados) nas horas de pico, dias de pico e ao longo da vida útil do projeto.

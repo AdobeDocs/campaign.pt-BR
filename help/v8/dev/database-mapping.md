@@ -46,19 +46,19 @@ As regras de nomenclatura SQL são as seguintes:
 
 * tabela: concatenação do namespace e do nome do schema
 
-   No nosso exemplo, o nome da tabela é inserido por meio do elemento principal do schema na **sqltable** atributo:
+  No nosso exemplo, o nome da tabela é inserido por meio do elemento principal do schema na **sqltable** atributo:
 
-   ```
-   <element name="recipient" sqltable="CusRecipient">
-   ```
+  ```
+  <element name="recipient" sqltable="CusRecipient">
+  ```
 
 * field: nome do elemento precedido por um prefixo definido de acordo com o tipo (&#39;i&#39; para inteiro, &#39;d&#39; para duplo, &#39;s&#39; para string, &#39;ts&#39; para datas etc.)
 
-   O nome do campo é inserido por meio da variável **sqlname** atributo para cada tipo **`<attribute>`** e **`<element>`**:
+  O nome do campo é inserido por meio da variável **sqlname** atributo para cada tipo **`<attribute>`** e **`<element>`**:
 
-   ```
-   <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-   ```
+  ```
+  <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
+  ```
 
 >[!NOTE]
 >
@@ -89,17 +89,17 @@ Para preencher um campo em XML, é necessário adicionar o **xml** com o valor &
 
 * Campo de comentário multilinha:
 
-   ```
-   <element name="comment" xml="true" type="memo" label="Comment"/>
-   ```
+  ```
+  <element name="comment" xml="true" type="memo" label="Comment"/>
+  ```
 
 * Descrição dos dados em formato HTML:
 
-   ```
-   <element name="description" xml="true" type="html" label="Description"/>
-   ```
+  ```
+  <element name="description" xml="true" type="html" label="Description"/>
+  ```
 
-   O tipo &quot;html&quot; permite armazenar o conteúdo do HTML em uma tag CDATA e exibir uma verificação de edição de HTML especial na interface do cliente do Adobe Campaign.
+  O tipo &quot;html&quot; permite armazenar o conteúdo do HTML em uma tag CDATA e exibir uma verificação de edição de HTML especial na interface do cliente do Adobe Campaign.
 
 O uso de campos XML permite adicionar campos sem a necessidade de modificar a estrutura física do banco de dados. Outra vantagem é que você usa menos recursos (tamanho alocado para campos SQL, limite do número de campos por tabela etc.).
 
@@ -126,77 +126,77 @@ As chaves obedecem às seguintes regras:
 
 * Adicionando uma chave ao endereço de e-mail e à cidade:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <key name="email">
-         <keyfield xpath="@email"/> 
-         <keyfield xpath="location/@city"/> 
-       </key>
-   
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
-       <element name="location" label="Location">
-         <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-       </element>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <key name="email">
+        <keyfield xpath="@email"/> 
+        <keyfield xpath="location/@city"/> 
+      </key>
+  
+      <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+      <element name="location" label="Location">
+        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
+      </element>
+    </element>
+  </srcSchema>
+  ```
 
-   O schema gerado:
+  O schema gerado:
 
-   ```
-   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-     <element name="recipient" sqltable="CusRecipient">    
-      <key name="email">      
-       <keyfield xpath="@email"/>      
-       <keyfield xpath="location/@city"/>    
-      </key>    
-   
-      <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-      <element label="Location" name="location">      
-        <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-      </element>  
-     </element>
-   </schema>
-   ```
+  ```
+  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
+    <element name="recipient" sqltable="CusRecipient">    
+     <key name="email">      
+      <keyfield xpath="@email"/>      
+      <keyfield xpath="location/@city"/>    
+     </key>    
+  
+     <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+     <element label="Location" name="location">      
+       <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
+     </element>  
+    </element>
+  </schema>
+  ```
 
 * Adicionar uma chave primária ou interna no campo de nome &quot;id&quot;:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <key name="id" internal="true">
-         <keyfield xpath="@id"/> 
-       </key>
-   
-       <key name="email">
-         <keyfield xpath="@email"/> 
-       </key>
-   
-       <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <key name="id" internal="true">
+        <keyfield xpath="@id"/> 
+      </key>
+  
+      <key name="email">
+        <keyfield xpath="@email"/> 
+      </key>
+  
+      <attribute name="id" type="long" label="Identifier"/>
+      <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+    </element>
+  </srcSchema>
+  ```
 
-   O schema gerado:
+  O schema gerado:
 
-   ```
-   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-     <element name="recipient" sqltable="CusRecipient">    
-       <key name="email">      
-         <keyfield xpath="@email"/>    
-       </key>  
-   
-       <key internal="true" name="id">      
-        <keyfield xpath="@id"/>    
-       </key>    
-   
-       <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
-       <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
-     </element>
-   </schema>
-   ```
+  ```
+  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
+    <element name="recipient" sqltable="CusRecipient">    
+      <key name="email">      
+        <keyfield xpath="@email"/>    
+      </key>  
+  
+      <key internal="true" name="id">      
+       <keyfield xpath="@id"/>    
+      </key>    
+  
+      <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
+      <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
+    </element>
+  </schema>
+  ```
 
 ### Chave primária - Identificador{#primary-key}
 
@@ -285,11 +285,11 @@ Os links obedecem às seguintes regras:
       * **próprio**: a exclusão da ocorrência de origem leva à exclusão da ocorrência de destino,
       * **owncopy**: o mesmo que **próprio** (em caso de exclusão) ou duplica as ocorrências (em caso de duplicação),
       * **neutro**: não faz nada.
+
    * **revIntegrity** (opcional): integridade no schema do target (opcional, &quot;normal&quot; por padrão),
    * **revCardinality** (opcional): com o valor &quot;single&quot;, preenche cardinalidade com tipo 1-1 (1-N por padrão).
    * **externalJoin** (opcional): força a junção externa
    * **revExternalJoin** (opcional): força a junção externa no link reverso
-
 
 * Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a associação ( `<join>`  element) não precisam ser preenchidos porque são automaticamente deduzidos por padrão usando a chave interna do schema de público-alvo.
 * Um link consiste em dois semilinks, em que o primeiro é declarado do esquema de origem e o segundo é criado automaticamente no esquema estendido do esquema de destino.

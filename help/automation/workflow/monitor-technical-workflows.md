@@ -55,7 +55,7 @@ Para **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
 ## Supervisão de fluxo de trabalho {#workflow-supervision}
 
-O grupo **[!UICONTROL Workflow supervisors]** deve conter operadores que precisam ser informados sobre falhas e quem pode agir a tempo.
+O grupo **[!UICONTROL Workflow supervisors]** deve conter operadores que precisam ser informados sobre falhas e quem pode realizar uma ação a tempo.
 
 ![](assets/monitoring_technical_workflows3.png)
 

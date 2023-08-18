@@ -26,7 +26,7 @@ Você pode acessar contas externas do Adobe Campaign **[!UICONTROL Explorer]**: 
 
 >[!CAUTION]
 >
->* Como um usuário Cloud Services gerenciado, as contas externas são configuradas para sua instância pelo Adobe e não devem ser modificadas.
+>* Como um usuário Cloud Service gerenciado, as contas externas são configuradas para sua instância pelo Adobe e não devem ser modificadas.
 >
 >* No contexto de um [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), um **[!UICONTROL Full FDA]** A conta externa do (ffda) gerencia a conexão entre o banco de dados local do Campaign e o banco de dados da nuvem ([!DNL Snowflake]).
 >
@@ -97,7 +97,7 @@ No contexto de mensagens transacionais, as instâncias de execução são vincul
 
   Os bancos de dados externos compatíveis com o Adobe Campaign v8 estão listados na [Matriz de compatibilidade](../start/compatibility-matrix.md)
 
-* **Twitter** - A **Twitter** A conta externa do tipo é usada para conectar o Campaign à sua conta da twitter, para postar mensagens em seu nome. Saiba mais sobre a integração do Twitter no [nesta seção](../connect/ac-tw.md).
+* **Twitter** - A **Twitter** A conta externa do tipo é usada para conectar o Campaign à sua conta do twitter, para postar mensagens em seu nome. Saiba mais sobre a integração do Twitter no [nesta seção](../connect/ac-tw.md).
 
 ## Contas externas de Integração de soluções Adobe
 

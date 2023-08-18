@@ -30,15 +30,15 @@ Você pode acessar o Adobe Campaign por meio de um cliente avançado, um cliente
 
 * Cliente avançado
 
-   O Campaign Rich Client é um aplicativo nativo que se comunica com o servidor de aplicativos do Adobe Campaign, por meio de protocolos padrão de Internet, como SOAP e HTTP. [Saiba mais sobre o Console do Cliente do Campaign](../start/connect.md).
+  O Campaign Rich Client é um aplicativo nativo que se comunica com o servidor de aplicativos do Adobe Campaign, por meio de protocolos padrão de Internet, como SOAP e HTTP. [Saiba mais sobre o Console do Cliente do Campaign](../start/connect.md).
 
 * Thin client
 
-   Os recursos de acesso à web do Adobe Campaign permitem acessar um subconjunto de recursos do Campaign com um navegador da web, usando uma interface de usuário HTML. Use essa interface da Web para acessar relatórios, controlar e validar mensagens, acessar painéis de monitoramento e muito mais.  [Saiba mais sobre o Campaign Web Access](../start/connect.md).
+  Os recursos de acesso à web do Adobe Campaign permitem acessar um subconjunto de recursos do Campaign com um navegador da web, usando uma interface de usuário HTML. Use essa interface da Web para acessar relatórios, controlar e validar mensagens, acessar painéis de monitoramento e muito mais.  [Saiba mais sobre o Campaign Web Access](../start/connect.md).
 
 * Aplicativos externos com APIs
 
-   Em certos casos, o sistema pode ser chamado de aplicativos externos usando as APIs de serviços da Web expostas por meio do protocolo SOAP. [Saiba mais sobre as APIs do Campaign](../dev/api.md).
+  Em certos casos, o sistema pode ser chamado de aplicativos externos usando as APIs de serviços da Web expostas por meio do protocolo SOAP. [Saiba mais sobre as APIs do Campaign](../dev/api.md).
 
 ### Camada de persistência{#persistance-layer}
 
@@ -50,7 +50,7 @@ A confiabilidade do banco de dados é de extrema importância porque a maioria d
 
 A camada de aplicativo lógico do Campaign é facilmente configurável para atender a necessidades complexas dos negócios. Você pode usar o Campaign como uma única plataforma com diferentes aplicativos que se combinam para criar uma arquitetura aberta e escalável. Cada instância do Campaign é uma coleção de processos na camada de aplicativo, alguns dos quais são compartilhados e outros são dedicados.
 
-## Cloud Services gerenciados por campanha{#ac-managed-services}
+## Cloud Service gerenciados por campanha{#ac-managed-services}
 
 O Adobe Campaign v8 é implantado de forma as a Managed Service: todos os componentes do Adobe Campaign, incluindo a interface do usuário, o mecanismo de gerenciamento de execução e os bancos de dados do Campaign, são totalmente hospedados pelo Adobe, incluindo execução de email, mirror pages, servidor de rastreamento e componentes da Web voltados para o exterior, como página de cancelamento de inscrição/centro de preferências e páginas de aterrissagem.
 

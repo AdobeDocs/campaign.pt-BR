@@ -24,7 +24,7 @@ Os scripts são universais em um diagrama de workflow:
 * A atividade de &#39;Teste&#39; avalia expressões JavaScript para ativar a transição apropriada.
 * A maioria dos campos de texto são templates do JavaScript: expressões JavaScript podem ser incluídas entre &lt;%= and %>. Estes campos oferecem um botão que abre uma lista suspensa para ajudá-lo a inserir expressões.
 
-   ![](assets/script-button.png)
+  ![](assets/script-button.png)
 
 ## Objetos expostos {#objects-exposed}
 

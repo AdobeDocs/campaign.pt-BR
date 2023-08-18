@@ -75,9 +75,9 @@ Para obter mais informações sobre como criar um template de distribuição de 
    * **[!UICONTROL Label]**: digite o rótulo do domínio a ser exibido nas notificações de aprovação e de feedback.
    * **[!UICONTROL Group or operator]**: selecione o operador ou grupo de operadores atribuídos ao domínio.
 
-      >[!CAUTION]
-      >
-      >Verifique se os operadores receberam os direitos apropriados.
+     >[!CAUTION]
+     >
+     >Verifique se os operadores receberam os direitos apropriados.
 
 ## Etapa 2: criar o fluxo de trabalho de direcionamento {#step-2--creating-the-targeting-workflow}
 

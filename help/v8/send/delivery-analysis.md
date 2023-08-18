@@ -61,6 +61,7 @@ Para preparar o delivery, verifique se o conteúdo e o target do delivery foram 
    >[!NOTE]
    >
    >Clique em **[!UICONTROL Change the main delivery target]** se o número de mensagens a serem enviadas não corresponder às suas expectativas. Essa opção permite alterar a definição da população do target e reiniciar a análise.
+   >
 
 1. Após verificar o resultado da análise, clique em **[!UICONTROL Confirm delivery]** para enviar a mensagem para o target principal.
 
@@ -77,11 +78,11 @@ Essa guia fornece acesso às seguintes opções:
 
 * **[!UICONTROL Approval mode]** : esse campo permite a definição do delivery manual ou automática quando a análise é concluída.
 
-   Se os avisos forem gerados durante a análise (ex.: se certos caracteres estiverem acentuados no assunto do delivery etc.), você poderá configurar o delivery para definir se ele ainda deverá ou não ser executado. Por padrão, o usuário deverá confirmar o envio de mensagens no final da fase de análise: essa é a validação **manual**.
+  Se os avisos forem gerados durante a análise (ex.: se certos caracteres estiverem acentuados no assunto do delivery etc.), você poderá configurar o delivery para definir se ele ainda deverá ou não ser executado. Por padrão, o usuário deverá confirmar o envio de mensagens no final da fase de análise: essa é a validação **manual**.
 
-   Selecione outro modo de aprovação na lista suspensa no campo apropriado.
+  Selecione outro modo de aprovação na lista suspensa no campo apropriado.
 
-   Os seguintes modos de aprovação estão disponíveis:
+  Os seguintes modos de aprovação estão disponíveis:
 
    * **[!UICONTROL Manual]**: no final da fase de análise, o usuário deverá confirmar o delivery para começar a enviar. Para fazer isso, clique no botão **[!UICONTROL Start]** para iniciar o delivery.
    * **[!UICONTROL Semi-automatic]**: o envio começa automaticamente se a fase de análise não gerar mensagens de advertência.

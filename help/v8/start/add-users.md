@@ -34,7 +34,7 @@ Cada operador precisa ser vinculado a uma zona para fazer logon em uma instânci
 
 Os operadores são vinculados a uma zona de segurança a partir de seu perfil no console, acessível no **[!UICONTROL Administration > Access management > Operators]** nó.
 
-![](../assets/do-not-localize/speech.png)  Como um usuário Cloud Services gerenciado, o Adobe define as zonas de segurança para você. Para obter mais informações, [Adobe de contato](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+![](../assets/do-not-localize/speech.png)  Como um usuário Cloud Service gerenciado, o Adobe define as zonas de segurança para você. Para obter mais informações, [Adobe de contato](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 **Saiba mais**
 

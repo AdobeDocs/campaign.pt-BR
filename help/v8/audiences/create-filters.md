@@ -339,7 +339,7 @@ Parâmetros avançados estão disponíveis para filtros predefinidos. Para acess
 
 * Para exibir o filtro por padrão para todas as listas com base nesse tipo de Documento, selecione o **[!UICONTROL Default filter for the associated document type]** opção.
 
-   Por exemplo, a variável **[!UICONTROL By name or login]** filtro é aplicado aos operadores. Essa opção é selecionada, de modo que o filtro é sempre exibido em todas as listas de operadores.
+  Por exemplo, a variável **[!UICONTROL By name or login]** filtro é aplicado aos operadores. Essa opção é selecionada, de modo que o filtro é sempre exibido em todas as listas de operadores.
 
 * Para disponibilizar um filtro para todos os operadores do Campaign, selecione o  **[!UICONTROL Filter shared with other operators]** opção.
 

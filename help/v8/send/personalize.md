@@ -8,7 +8,7 @@ exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 59%
+ht-degree: 70%
 
 ---
 
@@ -27,17 +27,17 @@ Você pode personalizar o conteúdo da mensagem ao:
 
 * Inserir **campos de personalização** dinâmicos
 
-   Os campos de personalização são usados na personalização de primeiro nível das mensagens. Você pode selecionar qualquer campo disponível no banco de dados no editor de personalização. Para uma entrega, é possível selecionar qualquer campo relacionado ao recipient, à mensagem ou à entrega. Esses atributos de personalização podem ser inseridos na linha de assunto ou no corpo de suas mensagens. [Saiba mais](personalization-fields.md).
+  Os campos de personalização são usados na personalização de primeiro nível das mensagens. Você pode selecionar qualquer campo disponível no banco de dados no editor de personalização. Para uma entrega, é possível selecionar qualquer campo relacionado ao recipient, à mensagem ou à entrega. Esses atributos de personalização podem ser inseridos na linha de assunto ou no corpo das mensagens. [Saiba mais](personalization-fields.md).
 
-   A sintaxe a seguir insere a cidade do recipient no conteúdo: &lt;%= recipient.location.city %>.
+  A sintaxe a seguir insere a cidade do recipient no conteúdo: &lt;%= recipient.location.city %>.
 
 * Inserção de **blocos de conteúdo** predefinidos
 
-   O Campaign vem com um conjunto de blocos de personalização contendo uma renderização específica que você pode inserir nas entregas. Por exemplo, você pode adicionar um logotipo, uma mensagem de saudação ou um link para a mirror page da mensagem. Os blocos de conteúdo estão disponíveis em uma entrada dedicada no editor de personalização. [Saiba mais](personalization-blocks.md).
+  O Campaign vem com um conjunto de blocos de personalização contendo uma renderização específica que você pode inserir nas entregas. Por exemplo, você pode adicionar um logotipo, uma mensagem de saudação ou um link para a mirror page da mensagem. Os blocos de conteúdo estão disponíveis em uma entrada dedicada no editor de personalização. [Saiba mais](personalization-blocks.md).
 
-* Criar **conteúdo condicional**
+* Criação de **conteúdo condicional**
 
-   Configure o conteúdo condicional para adicionar personalização dinâmica com base no perfil do recipient, por exemplo. Blocos de texto e/ou imagens são inseridos quando uma determinada condição é verdadeira. [Saiba mais](conditions.md).
+  Configure o conteúdo condicional para adicionar personalização dinâmica com base no perfil do destinatário, por exemplo. Blocos de texto e/ou imagens são inseridos quando uma determinada condição for satisfeita. [Saiba mais](conditions.md).
 
 <!--* Add **personalized offers**
     

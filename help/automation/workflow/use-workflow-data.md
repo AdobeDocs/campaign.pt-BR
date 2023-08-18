@@ -30,21 +30,21 @@ Para fazer isso, selecione o menu relevante:
 
 * **[!UICONTROL Display the target...]**
 
-   Esse menu exibe os dados disponíveis sobre o público-alvo.
+  Esse menu exibe os dados disponíveis sobre o público-alvo.
 
-   ![](assets/wf-right-click-display.png)
+  ![](assets/wf-right-click-display.png)
 
-   É possível acessar a estrutura da tabela de trabalho no **[!UICONTROL Schema]** guia.
+  É possível acessar a estrutura da tabela de trabalho no **[!UICONTROL Schema]** guia.
 
-   ![](assets/wf-right-click-schema.png)
+  ![](assets/wf-right-click-schema.png)
 
-   Para obter mais informações, consulte [esta seção](monitor-workflow-execution.md#worktables-and-workflow-schema).
+  Para obter mais informações, consulte [esta seção](monitor-workflow-execution.md#worktables-and-workflow-schema).
 
 * **[!UICONTROL Analyze target...]**
 
-   Esse menu permite acessar o assistente de análise descritiva que produz estatísticas e relatórios sobre os dados de transição.
+  Esse menu permite acessar o assistente de análise descritiva que produz estatísticas e relatórios sobre os dados de transição.
 
-   Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
+  Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
 
 Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
 
@@ -126,15 +126,15 @@ Os dados do banco de dados do Adobe Campaign e as listas existentes podem ser at
 
 * A atividade de **[!UICONTROL List update]** permite armazenar worktables em um DataList.
 
-   Você pode selecionar uma lista existente ou criar uma. Nesse caso, o nome e possivelmente a pasta de registro são calculados.
+  Você pode selecionar uma lista existente ou criar uma. Nesse caso, o nome e possivelmente a pasta de registro são calculados.
 
-   ![](assets/s_user_create_list.png)
+  ![](assets/s_user_create_list.png)
 
-   Consulte [Atualização da lista](list-update.md).
+  Consulte [Atualização da lista](list-update.md).
 
 * A atividade **[!UICONTROL Update data]** realiza uma atualização em massa dos campos no banco de dados.
 
-   Para mais informações, consulte [Atualização de dados](update-data.md).
+  Para mais informações, consulte [Atualização de dados](update-data.md).
 
 ### Gerenciar subscrições {#subscription-management}
 

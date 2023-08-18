@@ -47,6 +47,6 @@ A operação é como descrita a seguir:
    * **[!UICONTROL Initialization]**: estabelece uma conexão SOAP.
    * **[!UICONTROL Iteration]**: executa a chamada para o serviço SOAP. O retorno dessa função deve ser um objeto XML compatível com a descrição do exemplo ou do WSDL.
 
-      O código dessa guia será chamado em um loop pelo Adobe Campaign até que um objeto XML nulo seja retornado.
+     O código dessa guia será chamado em um loop pelo Adobe Campaign até que um objeto XML nulo seja retornado.
 
    * **[!UICONTROL Finalization]**: fecha a conexão e/ou libera outros recursos criados durante o processamento.

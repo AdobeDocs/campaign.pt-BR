@@ -48,7 +48,7 @@ Para criar uma nova categoria, siga as etapas abaixo:
 
    * Atribuir datas de qualificação pela guia **[!UICONTROL Eligibility]**.
 
-      ![](assets/offer_cat_create_004.png)
+     ![](assets/offer_cat_create_004.png)
 
    * **[!UICONTROL Edit query]** para aplicar filtros ao target da oferta.
 

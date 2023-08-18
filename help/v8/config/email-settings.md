@@ -31,7 +31,7 @@ O próprio Adobe Campaign não gerencia arquivos arquivados. Ela permite enviar 
 
 O destino do arquivamento é o endereço de email CCO de sua escolha, que permanecerá invisível para os recipients do delivery.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support){target="_blank"} para comunicar o endereço de email CCO que será usado para arquivamento.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support){target="_blank"} para comunicar o endereço de email CCO que será usado para arquivamento.
 
 Depois que o endereço de email de CCO for definido, você deverá ativar a opção dedicada no nível do delivery.
 

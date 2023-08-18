@@ -84,15 +84,15 @@ Você pode criar quatro tipos de expirações:
 * **Delay before a given date**: a expiração é calculada subtraindo-se um período de uma data especificada. 
 * **Expiration calculated by script**: a expiração é calculada usando o JavaScript.
 
-   O exemplo a seguir calcula uma expiração 24 horas antes da data em que um delivery é iniciado (identificada por **vars.deliveryId**):
+  O exemplo a seguir calcula uma expiração 24 horas antes da data em que um delivery é iniciado (identificada por **vars.deliveryId**):
 
-   ```
-   var delivery = nms.delivery.get(vars.deliveryId)
-   var expiration = delivery.scheduling.contactDate
-   var oneDay = 1000*60*60*24
-   expiration.setTime(expiration.getTime() - oneDay)
-   return expiration
-   ```
+  ```
+  var delivery = nms.delivery.get(vars.deliveryId)
+  var expiration = delivery.scheduling.contactDate
+  var oneDay = 1000*60*60*24
+  expiration.setTime(expiration.getTime() - oneDay)
+  return expiration
+  ```
 
 ## Aprovação múltipla {#multiple-approval}
 

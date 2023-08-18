@@ -39,7 +39,7 @@ Neste exemplo, diferentes emails são enviados para diferentes grupos de popula�
 * Salve o resultado da query
 * Segmente o resultado para enviar vários deliveries
 
-   ![A atividade Fork segue a interseção de dois queries e precede uma atividade de atualização de lista e uma atividade de Split.](assets/wkf_fork_example.png)
+  ![A atividade Fork segue a interseção de dois queries e precede uma atividade de atualização de lista e uma atividade de Split.](assets/wkf_fork_example.png)
 
 O fluxo de trabalho inclui estas atividades:
 

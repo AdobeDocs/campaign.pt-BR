@@ -49,15 +49,15 @@ Para fazer isso:
 
    * **[!UICONTROL History in days]**
 
-      Os recipients já alvos podem ser registrados em um número máximo de dias a partir do dia de envio do target. Se esse valor for zero, os recipients nunca serão removidos do log.
+     Os recipients já alvos podem ser registrados em um número máximo de dias a partir do dia de envio do target. Se esse valor for zero, os recipients nunca serão removidos do log.
 
    * **[!UICONTROL Keep history when starting]**
 
-      Essa opção não permite limpar o log quando a atividade estiver habilitada.
+     Essa opção não permite limpar o log quando a atividade estiver habilitada.
 
    * **[!UICONTROL SQL table name]**
 
-      Esse parâmetro permite sobrecarregar a tabela SQL padrão que contém os dados do histórico.
+     Esse parâmetro permite sobrecarregar a tabela SQL padrão que contém os dados do histórico.
 
 ## Parâmetros de saída {#output-parameters}
 

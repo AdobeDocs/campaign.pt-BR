@@ -17,15 +17,15 @@ Neste exemplo, devemos contar o número de recipients que vivem em Londres, de a
 
 * Qual tabela precisa ser selecionada?
 
-   A tabela de recipient (**nms:recipient**)
+  A tabela de recipient (**nms:recipient**)
 
 * Quais campos devem ser selecionados na coluna de saída?
 
-   Primary key (with count) e Gender
+  Primary key (with count) e Gender
 
 * Quais condições são usadas para filtrar as informações?
 
-   Com base nos recipients que vivem em Londres.
+  Com base nos recipients que vivem em Londres.
 
 Para criar este exemplo, aplique as seguintes etapas:
 

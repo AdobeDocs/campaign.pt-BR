@@ -60,11 +60,11 @@ A etapa de roteamento consiste em vincular um evento ao modelo de mensagem aprop
 
 * O tipo de evento especificado nas propriedades do próprio evento:
 
-   ![](assets/event-type-sample.png)
+  ![](assets/event-type-sample.png)
 
 * O tipo de evento especificado nas propriedades do modelo de mensagem:
 
-   ![](assets/event-type-select.png)
+  ![](assets/event-type-select.png)
 
 Por padrão, o roteamento é baseado nas seguintes informações:
 
@@ -86,8 +86,7 @@ Os possíveis status são:
 * **Entrega pendente**
 O evento foi processado e o template do delivery está vinculado. A entrega do email está pendente e o processo de entrega clássico é aplicado. Para obter mais informações, é possível abrir a entrega.
 * **Enviado**, **Ignorado** e **Erro de entrega**
-Esses status de delivery são recuperados por meio da variável 
-**updateEventsStatus** fluxo de trabalho. Para obter mais informações, você poderá abrir a entrega relevante.
+Esses status de delivery são recuperados por meio da variável **updateEventsStatus** fluxo de trabalho. Para obter mais informações, você poderá abrir a entrega relevante.
 * **Evento não coberto**
 Falha na fase de roteamento de mensagens transacionais. Por exemplo, o Adobe Campaign não encontrou o email que atua como modelo para o evento.
 * **Evento expirado**

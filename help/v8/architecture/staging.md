@@ -33,7 +33,6 @@ As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se bene
 >* O preparo se aplica somente a esquemas armazenados no banco de dados da nuvem. Não ative o preparo em esquemas replicados. Não ative a Preparação em esquemas locais. Não ativar a Preparação em um esquema em etapas
 >
 
-
 ## Etapas de implementação{#implement-staging}
 
 Para implementar o mecanismo de preparo do Campaign em uma tabela específica, siga as etapas abaixo:

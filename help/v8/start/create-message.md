@@ -38,27 +38,27 @@ Depois que a mensagem for criada e o conteúdo testado, você poderá escolher c
 
 * Enviar mensagens manualmente para o target principal
 
-   ![](assets/send-email.png)
+  ![](assets/send-email.png)
 
-   Saiba como enviar mensagens [nesta seção](../send/send.md)
+  Saiba como enviar mensagens [nesta seção](../send/send.md)
 
 * Enviar mensagens associadas a uma [campanha de marketing](campaigns.md)
 
-   ![](assets/deliveries-in-a-campaign.png)
+  ![](assets/deliveries-in-a-campaign.png)
 
-   Saiba como enviar mensagens no contexto de uma campanha [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR)
+  Saiba como enviar mensagens no contexto de uma campanha [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR)
 
 * Enviar mensagens por meio de um [fluxo de trabalho](../config/workflows.md)
 
-   ![](assets/send-in-a-wf.png)
+  ![](assets/send-in-a-wf.png)
 
-   Saiba como automatizar entregas de email [nesta página](../../automation/workflow/delivery.md)
+  Saiba como automatizar entregas de email [nesta página](../../automation/workflow/delivery.md)
 
 * [Acionar mensagens](../send/transactional.md) de um evento
 
 * Agendar suas mensagens
 
-   ![](assets/schedule-send.png)
+  ![](assets/schedule-send.png)
 
 [Caso de uso: saiba como agendar e enviar um email de aniversário](../../automation/workflow/send-a-birthday-email.md)
 

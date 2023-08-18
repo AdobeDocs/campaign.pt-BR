@@ -66,96 +66,96 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
 * Por exemplo, com as seguintes configurações:
 
-   ![](assets/campaign-template-select-functionalities.png)
+  ![](assets/campaign-template-select-functionalities.png)
 
-   O painel de campanha mostra:
+  O painel de campanha mostra:
 
-   ![](assets/campaign-template-dashboard-sample-1.png)
+  ![](assets/campaign-template-dashboard-sample-1.png)
 
-   Observe que **[!UICONTROL Targeting and workflows]** guia ausente.
+  Observe que **[!UICONTROL Targeting and workflows]** guia ausente.
 
-   As seguintes funcionalidades estão disponíveis:
+  As seguintes funcionalidades estão disponíveis:
 
-   ![](assets/campaign-template-edit-sample-1.png)
+  ![](assets/campaign-template-edit-sample-1.png)
 
-   Observe que **[!UICONTROL Budget]** guia ausente.
+  Observe que **[!UICONTROL Budget]** guia ausente.
 
-   As configurações avançadas do Campaign também refletem essa configuração.
+  As configurações avançadas do Campaign também refletem essa configuração.
 
-   ![](assets/campaign-template-parameters-sample-1.png)
+  ![](assets/campaign-template-parameters-sample-1.png)
 
-   Observe que **[!UICONTROL Approvals]** não está disponível.
+  Observe que **[!UICONTROL Approvals]** não está disponível.
 
 * Com esta configuração:
-   ![](assets/campaign-template-dashboard-sample-2.png)
+  ![](assets/campaign-template-dashboard-sample-2.png)
 
-   O painel de campanha mostra:
+  O painel de campanha mostra:
 
-   ![](assets/campaign-template-select-functionalities-2.png)
+  ![](assets/campaign-template-select-functionalities-2.png)
 
-   Observe que **[!UICONTROL Targeting and workflows]** está disponível, mas a guia **Adicionar um documento** link ausente.
+  Observe que **[!UICONTROL Targeting and workflows]** está disponível, mas a guia **Adicionar um documento** link ausente.
 
-   As seguintes funcionalidades estão disponíveis:
+  As seguintes funcionalidades estão disponíveis:
 
-   ![](assets/campaign-template-edit-sample-2.png)
+  ![](assets/campaign-template-edit-sample-2.png)
 
-   Observe que **[!UICONTROL Budget]** está disponível.
+  Observe que **[!UICONTROL Budget]** está disponível.
 
-   As configurações avançadas do Campaign também refletem essa configuração.
+  As configurações avançadas do Campaign também refletem essa configuração.
 
-   ![](assets/campaign-template-parameters-sample-2.png)
+  ![](assets/campaign-template-parameters-sample-2.png)
 
-   Observe que **[!UICONTROL Approvals]** está disponível, mas a guia **[!UICONTROL Control population]** e **[!UICONTROL Seed addresses]** As guias do não estão habilitadas.
+  Observe que **[!UICONTROL Approvals]** está disponível, mas a guia **[!UICONTROL Control population]** e **[!UICONTROL Seed addresses]** As guias do não estão habilitadas.
 
 
 ## Tipologia de módulos {#typology-of-enabled-modules}
 
 * **Grupo de controle**
 
-   Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre grupos de controle [nesta seção](marketing-campaign-deliveries.md#defining-a-control-group).
+  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre grupos de controle [nesta seção](marketing-campaign-deliveries.md#defining-a-control-group).
 
-   ![](assets/template-activate-1.png)
+  ![](assets/template-activate-1.png)
 
 
 * **Seed addresses**
 
-   Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do template ou individualmente para cada campanha.
+  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do template ou individualmente para cada campanha.
 
-   ![](assets/template-activate-2.png)
+  ![](assets/template-activate-2.png)
 
 * **Documentos**
 
-   Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edit]** do template e às campanhas com base nesse template. Os documentos anexados podem ser adicionados do modelo ou individualmente para cada campanha. Saiba mais sobre documentos [nesta seção](marketing-campaign-deliveries.md#manage-associated-documents).
+  Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edit]** do template e às campanhas com base nesse template. Os documentos anexados podem ser adicionados do modelo ou individualmente para cada campanha. Saiba mais sobre documentos [nesta seção](marketing-campaign-deliveries.md#manage-associated-documents).
 
-   ![](assets/template-activate-3.png)
+  ![](assets/template-activate-3.png)
 
 * **Outline de entrega**
 
-   Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir os delivery outlines da campanha. Saiba mais sobre delivery outlines [nesta seção](marketing-campaign-assets.md#delivery-outlines).
+  Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir os delivery outlines da campanha. Saiba mais sobre delivery outlines [nesta seção](marketing-campaign-assets.md#delivery-outlines).
 
-   ![](assets/template-activate-4.png)
+  ![](assets/template-activate-4.png)
 
 * **Direcionamento e workflows**
 
-   Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais workflows para campanhas com base nesse template. Os workflows também podem ser configurados individualmente para cada campanha com base neste modelo. Saiba mais sobre workflows da campanha [nesta seção](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+  Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais workflows para campanhas com base nesse template. Os workflows também podem ser configurados individualmente para cada campanha com base neste modelo. Saiba mais sobre workflows da campanha [nesta seção](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
 
-   ![](assets/template-activate-5.png)
+  ![](assets/template-activate-5.png)
 
-   Quando esse módulo estiver ativado, uma variável **[!UICONTROL Jobs]** é adicionada uma guia às configurações avançadas da campanha para definir a sequência de execução do processo.
+  Quando esse módulo estiver ativado, uma variável **[!UICONTROL Jobs]** é adicionada uma guia às configurações avançadas da campanha para definir a sequência de execução do processo.
 
 * **Aprovações**
 
-   Se você habilitar a opção **[!UICONTROL Approvals]**, é possível selecionar os processos que serão aprovados e os operadores de aprovação. Saiba mais sobre aprovações [nesta seção](marketing-campaign-approval.md#select-reviewers).
+  Se você habilitar a opção **[!UICONTROL Approvals]**, é possível selecionar os processos que serão aprovados e os operadores de aprovação. Saiba mais sobre aprovações [nesta seção](marketing-campaign-approval.md#select-reviewers).
 
-   ![](assets/template-activate-6.png)
+  ![](assets/template-activate-6.png)
 
-   Você pode optar por habilitar ou não a aprovação do processo por meio da **[!UICONTROL Approvals]** da seção de configurações avançadas dos templates.
+  Você pode optar por habilitar ou não a aprovação do processo por meio da **[!UICONTROL Approvals]** da seção de configurações avançadas dos templates.
 
 * **Despesas e objetivos**
 
-   Quando esse módulo for selecionado, uma guia **[!UICONTROL Budget]** é adicionada aos detalhes do modelo e às campanhas com base nesse modelo para que o orçamento associado possa ser selecionado.
+  Quando esse módulo for selecionado, uma guia **[!UICONTROL Budget]** é adicionada aos detalhes do modelo e às campanhas com base nesse modelo para que o orçamento associado possa ser selecionado.
 
-   ![](assets/template-activate-7.png)
+  ![](assets/template-activate-7.png)
 
 
 ## Propriedades do template {#template-properties}
@@ -173,7 +173,7 @@ Saiba como acessar e configurar suas listas discriminadas no [esta página](../.
 * Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os templates de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas [nesta seção](recurring-periodic-campaigns.md).
 * Especifique a duração da campanha, ou seja, o número de dias em que a campanha ocorrerá. Ao criar uma campanha com base nesse template, as datas de início e término da campanha serão preenchidas automaticamente.
 
-   Se a campanha for recorrente, você deverá especificar as datas de início e término da campanha diretamente no template.
+  Se a campanha for recorrente, você deverá especificar as datas de início e término da campanha diretamente no template.
 
 * Especifique a **programa relacionado** do template: campanhas baseadas nesse template são vinculadas ao programa selecionado.
 

@@ -27,11 +27,11 @@ As seguintes opções estão disponíveis:
 
 * **[!UICONTROL Generate an outbound transition]**
 
-   Cria uma transição de saída que será ativada no final da execução. Você pode escolher se quer recuperar ou não o target do delivery.
+  Cria uma transição de saída que será ativada no final da execução. Você pode escolher se quer recuperar ou não o target do delivery.
 
 * **[!UICONTROL Processing errors]**
 
-   Consulte [Processamento de erros](monitor-workflow-execution.md#processing-errors).
+  Consulte [Processamento de erros](monitor-workflow-execution.md#processing-errors).
 
 ## Parâmetros de entrada {#input-parameters}
 

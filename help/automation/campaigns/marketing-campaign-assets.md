@@ -90,11 +90,11 @@ Uma estrutura pode conter itens, campos de personalização e ofertas:
 * Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados ao delivery.
 * Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de recipients. Assim, é possível criar valores que serão usados em deliveries para um target específico (oferta de boas-vindas, desconto, etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do link **[!UICONTROL Import personalization fields...]**.
 
-   ![](assets/del-outline-perso-field.png)
+  ![](assets/del-outline-perso-field.png)
 
-   Eles também podem ser criados diretamente no outline clicando no ícone **[!UICONTROL Add]** à direita da zona de lista.
+  Eles também podem ser criados diretamente no outline clicando no ícone **[!UICONTROL Add]** à direita da zona de lista.
 
-   ![](assets/add-del-outline-button.png)
+  ![](assets/add-del-outline-button.png)
 
 
 ### Selecionar um outline {#select-an-outline}

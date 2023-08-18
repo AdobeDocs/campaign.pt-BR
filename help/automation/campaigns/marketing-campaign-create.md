@@ -57,7 +57,7 @@ Ao editar um programa, use as guias descritas abaixo para procurar e configurar.
 
 * A guia **Editar** permite personalizar o programa: nome, datas de início e término, orçamento, documentos vinculados etc.
 
-   ![](assets/new-program-edit-tab.png)
+  ![](assets/new-program-edit-tab.png)
 
 ## Trabalhar com campanhas{#work-with-campaigns}
 

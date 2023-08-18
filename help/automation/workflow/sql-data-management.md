@@ -49,9 +49,9 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
    * **activity.tableName**: nome SQL da tabela de trabalho de saída
    * **task.incomingTransitionByName(&#39;name&#39;).tableName**: nome SQL da tabela de trabalho transmitida pela transição recebida a ser utilizada (a transição é identificada pelo próprio nome).
 
-      >[!NOTE]
-      >
-      >O valor (&#39;name&#39;) corresponde ao **[!UICONTROL Name]** campo das propriedades de transição.
+     >[!NOTE]
+     >
+     >O valor (&#39;name&#39;) corresponde ao **[!UICONTROL Name]** campo das propriedades de transição.
 
 1. Se o script SQL já tiver comandos para criar uma tabela de trabalho de saída, desmarque a opção **[!UICONTROL Automatically create work table]**. Caso contrário, uma tabela de trabalho será criada automaticamente quando o workflow for executado.
 1. Clique em **[!UICONTROL Ok]** para confirmar a configuração da atividade.

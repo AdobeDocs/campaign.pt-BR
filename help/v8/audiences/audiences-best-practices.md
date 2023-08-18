@@ -1,5 +1,5 @@
 ---
-title: Práticas recomendadas para públicos
+title: Práticas recomendadas para públicos-alvo
 description: Saiba mais sobre as práticas recomendadas do Audiences
 feature: Audiences, Profiles
 role: Data Engineer
@@ -14,4 +14,4 @@ ht-degree: 0%
 
 ---
 
-# Práticas recomendadas para públicos
+# Práticas recomendadas para públicos-alvo

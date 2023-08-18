@@ -27,7 +27,7 @@ A configuração e a proteção da privacidade são um elemento essencial da oti
 * Verifique se as senhas criptografadas são restritas
 * Proteja as páginas que podem conter informações pessoais, como mirror pages, aplicativos web, etc.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, o Adobe trabalhará com você para implementar essas configurações no seu ambiente.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, o Adobe trabalhará com você para implementar essas configurações no seu ambiente.
 
 
 ## Gerenciamento de acesso

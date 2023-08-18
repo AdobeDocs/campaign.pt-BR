@@ -4,10 +4,10 @@ description: Introdução à notificação por push no Campaign
 feature: Push
 role: Data Engineer
 level: Beginner
-badge: label="Disponibilidade limitada" type="Informativo"
+badge: label="Disponibilidade limitada" type="Informative"
 source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1389'
 ht-degree: 21%
 
 ---
@@ -18,7 +18,7 @@ O Campaign v8.5 está apresentando nosso serviço de notificação por push mais
 
 >[!AVAILABILITY]
 >
-> Esse recurso é acessível exclusivamente a novos clientes a partir do Campaign v8.5 e implantado progressivamente para um conjunto de clientes selecionados. Se seu ambiente foi provisionado antes de junho de 2023, esta página não se aplica a você e você deve seguir os procedimentos detalhados [nesta página](push-settings.md).
+> Esse recurso é acessível exclusivamente a novos clientes a partir do Campaign v8.5 e implantado progressivamente em um conjunto de clientes selecionados. Se seu ambiente foi provisionado antes de junho de 2023, esta página não se aplica a você e você deve seguir os procedimentos detalhados [nesta página](push-settings.md).
 
 No contexto desta implementação atualizada, para enviar notificações por push no Adobe Campaign, siga estas etapas:
 
@@ -149,7 +149,7 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
    >[!NOTE]
    >
-   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da sequência de caracteres, mas precisa ser exatamente a mesma especificada no SDK.
+   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da string, mas precisa ser exatamente a mesma especificada no SDK.
    >
    > Não é possível usar o mesmo certificado para a versão de desenvolvimento (sandbox) e a versão de produção do aplicativo.
 
@@ -183,7 +183,7 @@ Para criar um aplicativo para dispositivos Android, siga estas etapas:
 
    >[!NOTE]
    >
-   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da sequência de caracteres, mas precisa ser exatamente a mesma especificada no SDK.
+   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da string, mas precisa ser exatamente a mesma especificada no SDK.
 
    ![](assets/push-config-12.png)
 

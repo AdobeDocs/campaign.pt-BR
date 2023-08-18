@@ -21,7 +21,7 @@ Essa integração ajuda a implementar os casos de uso da seguinte maneira: quand
 >[!NOTE]
 >A integração só oferece suporte a imagens estáticas. Os outros tipos de conteúdo não podem ser personalizados.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para implementar acionadores de Experience Cloud com o Campaign.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para implementar acionadores de Experience Cloud com o Campaign.
 
 Os seguintes tipos de dados podem ser usados pelo Adobe Target:
 
@@ -61,11 +61,11 @@ No Adobe Campaign, há duas maneiras de inserir uma imagem dinâmica do Target e
 
 * Se o editor de conteúdo digital estiver em uso, escolha uma imagem existente e selecione **[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]** na barra de ferramentas.
 
-   ![](assets/target_5.png)
+  ![](assets/target_5.png)
 
 * Se o editor padrão estiver em uso, coloque o cursor onde deseja inserir a imagem e selecione **[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]** no menu suspenso de personalização.
 
-   ![](assets/target_12.png)
+  ![](assets/target_12.png)
 
 Em seguida, você pode definir os parâmetros de imagem:
 

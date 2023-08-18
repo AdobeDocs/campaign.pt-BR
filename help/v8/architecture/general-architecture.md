@@ -18,15 +18,15 @@ A implantação típica da solução Adobe Campaign consiste nos seguintes compo
 
 * **Ambiente personalizado do cliente**
 
-   Interface gráfica intuitiva na qual os usuários podem se comunicar e rastrear ofertas de marketing, criar campanhas, revisar e gerenciar todas as atividades de marketing, programas e planos, incluindo emails, fluxos de trabalho e páginas de aterrissagem, criar e gerenciar perfis de clientes e criar públicos.
+  Interface gráfica intuitiva na qual os usuários podem se comunicar e rastrear ofertas de marketing, criar campanhas, revisar e gerenciar todas as atividades de marketing, programas e planos, incluindo emails, fluxos de trabalho e páginas de aterrissagem, criar e gerenciar perfis de clientes e criar públicos.
 
 * **Ambiente de desenvolvimento**
 
-   Software do lado do servidor que executa as campanhas de marketing por meio de canais de comunicação escolhidos, incluindo emails, SMS, notificações por push, correspondência direta, Web ou redes sociais, com base nas regras e fluxos de trabalho definidos na interface do usuário.
+  Software do lado do servidor que executa as campanhas de marketing por meio de canais de comunicação escolhidos, incluindo emails, SMS, notificações por push, correspondência direta, Web ou redes sociais, com base nas regras e fluxos de trabalho definidos na interface do usuário.
 
 * **Contêineres do Banco de Dados**
 
-   Com base na tecnologia de banco de dados relacional, o banco de dados do Adobe Campaign Cloud armazena todas as informações, componentes de campanha, ofertas, fluxos de trabalho e resultados de campanha em containers de banco de dados.
+  Com base na tecnologia de banco de dados relacional, o banco de dados do Adobe Campaign Cloud armazena todas as informações, componentes de campanha, ofertas, fluxos de trabalho e resultados de campanha em containers de banco de dados.
 
 ## Ambiente personalizado do cliente {#client-env}
 
@@ -60,7 +60,7 @@ Os principais processos são:
 
 * **Servidor de redirecionamento** (nlserver webmdl) - Para email, o Adobe Campaign lida automaticamente com o rastreamento de cliques e aberturas (o rastreamento transacional no nível do site é uma outra possibilidade). Para isso, os URLs incorporados nas mensagens de email são reescritos para apontar para esse módulo, que registra a passagem do usuário da Internet antes de redirecioná-lo para o URL necessário.
 
-   Para garantir a maior disponibilidade, esse processo é totalmente independente do banco de dados: os outros processos do servidor se comunicam com ele usando chamadas SOAP (HTTP, HTTP(S) e XML) apenas. Tecnicamente, essa funcionalidade é implementada em um módulo de extensão de um servidor HTTP (extensão ISAPI no IIS, ou um módulo DSO Apache etc.) e está disponível somente no Windows.
+  Para garantir a maior disponibilidade, esse processo é totalmente independente do banco de dados: os outros processos do servidor se comunicam com ele usando chamadas SOAP (HTTP, HTTP(S) e XML) apenas. Tecnicamente, essa funcionalidade é implementada em um módulo de extensão de um servidor HTTP (extensão ISAPI no IIS, ou um módulo DSO Apache etc.) e está disponível somente no Windows.
 
 Outros processos mais técnicos também estão disponíveis:
 

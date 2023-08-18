@@ -19,11 +19,11 @@ A janela das propriedades de uma atividade tem uma guia **[!UICONTROL Advanced]*
 
 * uma versão simplificada (para atividades de **[!UICONTROL Start]** e **[!UICONTROL End]**, por exemplo)
 
-   ![](assets/wf-advanced-basic.png)
+  ![](assets/wf-advanced-basic.png)
 
 * uma versão mais detalhada (para a atividade de **[!UICONTROL Query]**, por exemplo)
 
-   ![](assets/wf-advanced-full.png)
+  ![](assets/wf-advanced-full.png)
 
 Os campos a serem inseridos na guia **[!UICONTROL Advanced]** estão detalhados nas seções a seguir.
 

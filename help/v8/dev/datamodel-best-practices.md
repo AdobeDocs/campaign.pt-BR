@@ -175,7 +175,7 @@ Existem algumas soluções para minimizar a necessidade de registros no Adobe Ca
 
 Você pode declarar o atributo &quot;deleteStatus&quot; em um esquema. É mais eficiente marcar o registro como excluído e, em seguida, adiar a exclusão na tarefa de limpeza.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, entre em contato com os consultores de Adobe ou administradores técnicos para saber mais sobre retenção ou se é necessário definir a retenção para tabelas personalizadas.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, entre em contato com os consultores de Adobe ou administradores técnicos para saber mais sobre retenção ou se é necessário definir a retenção para tabelas personalizadas.
 
 ## Desempenho {#performance}
 

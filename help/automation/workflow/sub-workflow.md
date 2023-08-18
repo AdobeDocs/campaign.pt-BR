@@ -53,7 +53,7 @@ Uma vez executado, o workflow chamado como um subworkflow ainda estará com o st
 * A contagem de públicos intermediários não pode ser exibida.
 * Os registros do subworkflow são exibidos no workflow principal.
 
-   ![](assets/subworkflow_logs.png)
+  ![](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >

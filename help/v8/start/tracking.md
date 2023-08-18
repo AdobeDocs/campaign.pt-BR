@@ -117,7 +117,7 @@ O Adobe Campaign oferece um conjunto de recursos para monitorar seus processos e
 
 ### Monitore seus deliveries
 
-O monitoramento de deliveries após serem enviados é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes.
+O monitoramento de entregas após o envio é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes.
 
 Saiba mais sobre as informações que você pode monitorar após enviar um delivery, entenda como as falhas de delivery e as quarentenas são gerenciadas no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR#sending-messages){target="_blank"}
 

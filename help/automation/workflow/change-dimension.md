@@ -45,27 +45,27 @@ Para configurar o **[!UICONTROL Change dimension]** siga as etapas abaixo:
 
    * Clique no link **[!UICONTROL Add data...]** e selecione **[!UICONTROL Data linked to the filtering dimension]**.
 
-      ![](assets/wf_change-dimension_sample_01.png)
+     ![](assets/wf_change-dimension_sample_01.png)
 
-      >[!NOTE]
-      >
-      >Para obter informações sobre como criar e gerenciar colunas adicionais, consulte [Adicionar dados](query.md#add-data).
+     >[!NOTE]
+     >
+     >Para obter informações sobre como criar e gerenciar colunas adicionais, consulte [Adicionar dados](query.md#add-data).
 
    * Selecione a dimensão do target anterior (antes da troca de eixo) e selecione **[!UICONTROL Zip Code]** na árvore secundária **[!UICONTROL Location]** do recipient e clique em **[!UICONTROL Edit expression]**.
 
-      ![](assets/wf_change-dimension_sample_02.png)
+     ![](assets/wf_change-dimension_sample_02.png)
 
    * Clique em **[!UICONTROL Advanced selection]** e escolha **[!UICONTROL Edit the formula using an expression]**.
 
-      ![](assets/wf_change-dimension_sample_03.png)
+     ![](assets/wf_change-dimension_sample_03.png)
 
    * Use as funções oferecidas na lista e especifique o cálculo a ser executado.
 
-      ![](assets/wf_change-dimension_sample_04.png)
+     ![](assets/wf_change-dimension_sample_04.png)
 
    * Finalmente, insira o rótulo da coluna que acabou de criar.
 
-      ![](assets/wf_change-dimension_sample_05.png)
+     ![](assets/wf_change-dimension_sample_05.png)
 
 1. Execute o workflow para exibir o resultado dessa configuração. Compare os dados nas tabelas antes e depois da atividade de alteração de dimensão e compare a estrutura das tabelas do workflow, conforme mostrado nos exemplos a seguir:
 

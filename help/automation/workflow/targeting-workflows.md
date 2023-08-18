@@ -137,33 +137,33 @@ As seguintes opções de reconciliação de dados estão disponíveis:
 
 * **[!UICONTROL Keys only]**
 
-   Essa opção pode ser usada se os públicos de entrada forem homogêneos.
+  Essa opção pode ser usada se os públicos de entrada forem homogêneos.
 
 * **[!UICONTROL All columns in common]**
 
-   Esta opção permite reconciliar dados baseado em todas as colunas comuns para os vários públicos do target.
+  Esta opção permite reconciliar dados baseado em todas as colunas comuns para os vários públicos do target.
 
-   O Adobe Campaign identifica colunas com base em seu nome. Um limite de tolerância é aceito: uma coluna &#39;Email&#39; pode ser reconhecida como idêntica a uma coluna &#39;@email&#39;, por exemplo.
+  O Adobe Campaign identifica colunas com base em seu nome. Um limite de tolerância é aceito: uma coluna &#39;Email&#39; pode ser reconhecida como idêntica a uma coluna &#39;@email&#39;, por exemplo.
 
 * **[!UICONTROL A selection of columns]**
 
-   Selecione essa opção para definir a lista de colunas na qual a reconciliação de dados será aplicada.
+  Selecione essa opção para definir a lista de colunas na qual a reconciliação de dados será aplicada.
 
-   Comece selecionando o conjunto principal (aquele que contém os dados de origem) e as colunas a serem usadas na associação.
+  Comece selecionando o conjunto principal (aquele que contém os dados de origem) e as colunas a serem usadas na associação.
 
-   ![](assets/join-reconciliation-options.png)
+  ![](assets/join-reconciliation-options.png)
 
-   >[!CAUTION]
-   >
-   >Durante a reconciliação de dados, não haverá a eliminação da duplicação dos públicos.
+  >[!CAUTION]
+  >
+  >Durante a reconciliação de dados, não haverá a eliminação da duplicação dos públicos.
 
-   Você pode restringir o tamanho do público a um determinado número de registros. Para fazer isso, clique na opção adequada e especifique o número de registros a serem mantidos.
+  Você pode restringir o tamanho do público a um determinado número de registros. Para fazer isso, clique na opção adequada e especifique o número de registros a serem mantidos.
 
-   Além disso, especifique a prioridade dos públicos de entrada: a seção inferior da janela lista as transições de entrada da atividade de união e permite organizá-las com as setas azuis à direita da janela.
+  Além disso, especifique a prioridade dos públicos de entrada: a seção inferior da janela lista as transições de entrada da atividade de união e permite organizá-las com as setas azuis à direita da janela.
 
-   Os registros serão retirados primeiro do público da primeira transição de entrada na lista, e, se o máximo não tiver sido atingido, eles serão retirados do público da segunda transição de entrada e etc.
+  Os registros serão retirados primeiro do público da primeira transição de entrada na lista, e, se o máximo não tiver sido atingido, eles serão retirados do público da segunda transição de entrada e etc.
 
-   ![](assets/join_limit_nb_priority.png)
+  ![](assets/join_limit_nb_priority.png)
 
 ### Extrair dados conjuntos (Intersecção) {#extract-joint-data--intersection-}
 
@@ -250,15 +250,15 @@ Depois que os dados forem identificados e preparados, eles poderão ser usados n
 
 * Você pode atualizar os dados no banco de dados após a manipulação de dados nos vários estágios do workflow.
 
-   Para obter mais informações, consulte [Atualizar dados](update-data.md).
+  Para obter mais informações, consulte [Atualizar dados](update-data.md).
 
 * Você também pode atualizar o conteúdo de listas existentes.
 
-   Para obter mais informações, consulte [Atualizar lista](list-update.md).
+  Para obter mais informações, consulte [Atualizar lista](list-update.md).
 
 * Você pode preparar ou iniciar deliveries no workflow diretamente.
 
-   Para obter mais informações, consulte [Delivery](delivery.md), [Controle de delivery](delivery-control.md) e [Delivery contínuo](continuous-delivery.md).
+  Para obter mais informações, consulte [Delivery](delivery.md), [Controle de delivery](delivery-control.md) e [Delivery contínuo](continuous-delivery.md).
 
 ## Gerenciamento de dados {#data-management}
 

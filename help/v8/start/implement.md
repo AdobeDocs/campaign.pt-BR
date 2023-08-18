@@ -6,7 +6,7 @@ role: User, Admin, Developer
 level: Beginner, Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 100%
 
@@ -38,11 +38,11 @@ O Adobe Campaign vem com processos e configurações que permitem usar o Campaig
 
 * **Aquisição de dados**: o Adobe Campaign permite que você colete dados, incluindo informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus destinatários.
 
-   Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#data-acquisition){target="_blank"}
+  Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#data-acquisition){target="_blank"}
 
 * **Consentimento do usuário e retenção de dados**: você deve obter o consentimento do usuário, configurar mecanismos de assinatura de participação dupla, facilitar a recusa e configurar a retenção de dados.
 
-   Saiba mais na [documentação de privacidade do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#consent){target="_blank"}
+  Saiba mais na [documentação de privacidade do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#consent){target="_blank"}
 
 * **Regulamentos de proteção de dados e privacidade**: consulte [esta seção](privacy.md) para obter mais informações sobre os requisitos de privacidade e como esses regulamentos afetam sua organização e o Adobe Campaign.
 

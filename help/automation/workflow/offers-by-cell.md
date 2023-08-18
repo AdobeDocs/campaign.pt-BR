@@ -28,6 +28,6 @@ Para fazer isso:
    * Especifique a população de subconjunto usando o filtro disponível e as regras de limitação.
    * Em seguida, selecione a oferta que deseja apresentar ao subconjunto. As ofertas disponíveis são aquelas qualificadas no espaço de oferta que foi selecionado na etapa anterior.
 
-      ![](assets/int_offer_per_cell1.png)
+     ![](assets/int_offer_per_cell1.png)
 
 1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](cross-channel-deliveries.md).

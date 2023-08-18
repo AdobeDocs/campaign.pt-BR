@@ -114,9 +114,9 @@ Uma vez concluída a execução, abra a simulação e clique na guia **[!UICONTR
    * **[!UICONTROL Initial count]** é o target como foi calculado durante a estimativa no delivery.
    * **[!UICONTROL Final count]** é o número de recipients contados após a simulação.
 
-      A diferença entre as contagens inicial e final reflete a aplicação de várias regras ou filtros configurados antes da simulação.
+     A diferença entre as contagens inicial e final reflete a aplicação de várias regras ou filtros configurados antes da simulação.
 
-      Para saber mais sobre esse cálculo, edite a subguia **[!UICONTROL Exclusions]**.
+     Para saber mais sobre esse cálculo, edite a subguia **[!UICONTROL Exclusions]**.
 
 1. A subguia **[!UICONTROL Exclusions]** permite visualizar a interrupção da exclusão.
 
@@ -212,15 +212,15 @@ No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no s
 
    * **[!UICONTROL Generate target overlap statistics]** permite recuperar todas as estatísticas de sobreposição no relatório de simulação. As sobreposições são recipients a quem são direcionadas, no mínimo, dois deliveires em uma simulação.
 
-      >[!CAUTION]
-      >
-      >A seleção dessa opção aumenta consideravelmente o tempo de execução da simulação.
+     >[!CAUTION]
+     >
+     >A seleção dessa opção aumenta consideravelmente o tempo de execução da simulação.
 
    * **[!UICONTROL Keep the simulation work table]** permite que você mantenha os rastreamentos de simulação.
 
-      >[!CAUTION]
-      >
-      >O salvamento automático dessas tabelas requer uma capacidade de armazenamento significativa: verifique se o banco de dados é grande o suficiente.
+     >[!CAUTION]
+     >
+     >O salvamento automático dessas tabelas requer uma capacidade de armazenamento significativa: verifique se o banco de dados é grande o suficiente.
 
 Quando os resultados da simulação forem exibidos, as informações sobre a expressão selecionada serão exibidas na subguia **[!UICONTROL Overlaps]**.
 

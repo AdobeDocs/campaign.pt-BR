@@ -115,9 +115,9 @@ Ao expandir o esquema nms:offer, siga a estrutura predefinida já configurada:
 * Defina qualquer novo campo para armazenamento de conteúdo em `<element name="view">`.
 * Cada novo campo precisa ser definido duas vezes. Uma vez como um campo XML regular e outra como um campo XML CDATA com &quot;_jst&quot; anexado ao nome. Por exemplo:
 
-   ```
-   <element label="Price" name="price" type="long" xml="true"/>
-   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
-   ```
+  ```
+  <element label="Price" name="price" type="long" xml="true"/>
+  <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
+  ```
 
 * Todos os campos que contêm URLs a serem rastreados devem ser posicionados em `<element name="trackedUrls">`which is found under`<element name="view" >`.

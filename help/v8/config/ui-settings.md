@@ -53,6 +53,7 @@ Para carregar todos os registros, clique com o botão direito do mouse na lista 
 >[!CAUTION]
 >
 >Quando uma lista contém um alto volume de registros, o carregamento completo pode levar algum tempo.
+>
 
 ### Adicionar e remover colunas {#add-columns}
 
@@ -79,6 +80,7 @@ Você também pode usar a tela de configuração da lista para adicionar e remov
    >Por padrão, campos avançados não são exibidos. Para exibi-los, clique no link **Exibir campos avançados** na seção inferior direita da lista de campos disponíveis.
    >
    >Os campos são identificados por ícones específicos: SQL fields, linked tables, calculated fields, etc. Para cada campo selecionado, a descrição é exibida abaixo da lista de campos disponíveis.
+   >
 
 1. Use as setas para cima/para baixo para modificar a **ordem de exibição**.
 
@@ -211,7 +213,7 @@ Para criar um alias, siga estas etapas:
 
 1. Salve as alterações. A substituição de valores é executada pela variável **Limpeza de alias** fluxo de trabalho que é executado todas as noites. Consulte [Executar limpeza de dados](#running-data-cleansing).
 
-Para todos os campos baseados nesta enumeração, quando um usuário insere o valor **Adobe** em um campo &quot;company&quot; (no console do cliente do Adobe Campaign, em um formulário web), ele é substituído automaticamente pelo valor **Adobe**.
+Para todos os campos baseados nesta lista discriminada, quando um usuário insere o valor **Adobe** em um campo &quot;company&quot; (no console do cliente do Adobe Campaign, em um formulário web), ele é substituído automaticamente pelo valor **Adobe**.
 
 #### Converter um valor incorreto em um alias{#convert-to-alias}
 
@@ -254,6 +256,7 @@ A variável **[!UICONTROL Alias]** subguia de uma enumeração pode exibir o nú
 >[!CAUTION]
 >
 >O cálculo das ocorrências de entrada de alias pode demorar muito.
+>
 
 Você pode executar o cálculo de ocorrências manualmente pelo link **[!UICONTROL Cleanse values...]**. Para fazer isso, clique no link **[!UICONTROL Advanced parameters...]** vincule e selecione opções.
 

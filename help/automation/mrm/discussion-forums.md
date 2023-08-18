@@ -56,13 +56,13 @@ Para responder a uma mensagem, clique no corpo do e-mail e, em seguida, faça lo
 
 * Para se inscrever em um fórum, clique no botão **[!UICONTROL Follow discussions]** na seção superior direita acima da lista de mensagens.
 
-   A seção fica azul e mostra que está inscrito no fórum.
+  A seção fica azul e mostra que está inscrito no fórum.
 
 * Para cancelar a inscrição de um fórum, clique no botão **[!UICONTROL Unsubscribe]**.
 
 * O painel pessoal lista os fóruns inscritos. Clique no link **[!UICONTROL Subscription to discussion forums]** para exibir a lista e, em seguida, clique no item que lhe interessa para acessar seu fórum.
 
-   ![](assets/forum-subscribed.png)
+  ![](assets/forum-subscribed.png)
 
 
 ## Solução de problemas de entrega de notificação {#checking-notification-delivery}
@@ -75,4 +75,5 @@ Se os operadores inscritos em um fórum não receberem notificações conforme e
 
    * Na página inicial do Adobe Campaign, navegue até **[!UICONTROL Campaigns > Navigation > Deliveries]**, em seguida, abra a **[!UICONTROL Discussion forum notification]** entrega.
    * No explorador do Campaign, navegue até **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** e, em seguida, clique em **[!UICONTROL Discussion forum notifications]**.
-   Na caixa **[!UICONTROL Discussion forum notifications]**, os logs do delivery são encontrados na guia **[!UICONTROL Edit > Delivery]**. Também é possível visualizá-los nas guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]**.
+
+  Na caixa **[!UICONTROL Discussion forum notifications]**, os logs do delivery são encontrados na guia **[!UICONTROL Edit > Delivery]**. Também é possível visualizá-los nas guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]**.

@@ -8,7 +8,7 @@ exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ Você pode configurar o Adobe Analytics para integrar o Campaign e o Analytics.
 
 Essa integração permite que o Adobe Campaign e o Adobe Analytics interajam por meio da **Conectores do Web Analytics** complementar. Essa integração envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign à Adobe Analytics.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para conectar o Campaign com serviços e soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para conectar o Campaign com serviços e soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
 
 Usando o Adobe Analytics Connector, o Adobe Campaign tem uma forma de medir o público-alvo da Internet (Web Analytics). As ferramentas do Web Analytics permitem que o Adobe Campaign encaminhe indicadores e atributos de campanha para o Analytics.
 
@@ -83,7 +83,7 @@ Depois de criar o **[!UICONTROL Report suite]**, você precisa configurar as **[
 
 1. Clique em **[!UICONTROL Add new]** para criar os identificadores necessários para medir o impacto da campanha de email, ou seja, o nome da campanha interna (cid) e o ID da tabela iNmsBroadlog (lance).
 
-   Para saber como editar as **[!UICONTROL Conversion variables]**, consulte esta [seção](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools).
+   Para saber como editar as **[!UICONTROL Conversion variables]**, consulte esta [seção](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=pt-BR#admin-tools).
 
    ![](assets/analytics_connnector_6.png)
 
@@ -106,7 +106,7 @@ Depois de criar o **[!UICONTROL Report suite]**, você precisa configurar as **[
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Para saber como configurar **[!UICONTROL Success events]**, consulte esta [seção](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools)
+   Para saber como configurar **[!UICONTROL Success events]**, consulte esta [seção](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=pt-BR#admin-tools)
 
    ![](assets/analytics_connnector_8.png)
 
@@ -120,7 +120,7 @@ Agora é necessário configurar a conta externa do **[!UICONTROL Web Analytics]*
 
 Observe que se um dos **[!UICONTROL Report suite]**, **[!UICONTROL Conversion variables]** ou **[!UICONTROL Success events]** não estiver visível ao configurar a conta externa, significa que você não tem uma permissão para esse componente recém-criado no **[!UICONTROL Product profile]** associado ao usuário.
 
-Para obter mais informações, consulte a página [Perfis de produto do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins).
+Para obter mais informações, consulte a página [Perfis de produto do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=pt-BR#product-profile-admins).
 
 1. Vá até a pasta **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** da árvore do Adobe Campaign e clique em **[!UICONTROL New]**.
 

@@ -23,11 +23,11 @@ Uma atividade **[!UICONTROL SQL code]** executa um script SQL. O script é um te
 
 * **[!UICONTROL Script]**
 
-   A área central do editor contém o script a ser executado. Este script é um template JST e, portanto, pode ser configurado de acordo com o contexto do workflow.
+  A área central do editor contém o script a ser executado. Este script é um template JST e, portanto, pode ser configurado de acordo com o contexto do workflow.
 
 * **[!UICONTROL Processing errors]**
 
-   Consulte [Processamento de erros](monitor-workflow-execution.md#processing-errors).
+  Consulte [Processamento de erros](monitor-workflow-execution.md#processing-errors).
 
 ## Código JavaScript e código JavaScript avançado {#javascript-code}
 

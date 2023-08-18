@@ -78,7 +78,7 @@ O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não 
 * Sempre inicie o fluxo de trabalho com uma atividade **[!UICONTROL Start]** ou atividade **[!UICONTROL Scheduler]** . Quando pertinente, também é possível usar uma atividade **[!UICONTROL External signal]**.
 * Ao criar o fluxo de trabalho, use apenas uma atividade **[!UICONTROL Scheduler]** por ramificação. Se a mesma ramificação de um fluxo de trabalho tiver vários schedulers (vinculados uns aos outros), o número de tarefas a serem executadas será multiplicado exponencialmente, o que irá sobrecarregar consideravelmente o banco de dados. Essa regra também se aplica a todas as atividades com uma guia **[!UICONTROL Scheduling & History]**. Saiba mais em [Agendamento](scheduler.md).
 
-   ![](assets/wf-scheduler.png)
+  ![](assets/wf-scheduler.png)
 
 * Use atividades **[!UICONTROL End]** para cada fluxo de trabalho. Isso permite que o Adobe Campaign libere espaço temporário usado para cálculos dentro de workflows. Para obter mais informações, consulte [início e fim](start-and-end.md).
 
@@ -123,7 +123,7 @@ Somente as tabelas de trabalho da última execução do workflow são mantidas. 
 
 A variável **Registrar consultas SQL no journal** está disponível na **[!UICONTROL Execution]** das propriedades do fluxo de trabalho. Essa opção registra todas as consultas SQL das diferentes atividades e fornece uma maneira de ver o que é realmente executado pela plataforma. No entanto, essa opção só deve ser usada **temporariamente** durante o desenvolvimento e **não ativado na produção**.
 
-A prática recomendada é limpar os logs quando eles não forem mais necessários. O histórico do fluxo de trabalho não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão Actions localizado na barra de ferramentas acima da lista. Selecione Purge history.
+A prática recomendada é limpar os logs quando eles não forem mais necessários. O histórico do fluxo de trabalho não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão Ações localizado na barra de ferramentas acima da lista. Selecione Purge history.
 Para saber como limpar seus registros, consulte esta [documentação](start-a-workflow.md).
 
 ### Planejamento de workflow {#workflow-planning}
@@ -144,7 +144,7 @@ Melhore a estabilidade da instância implementando as seguintes práticas recome
 
 * **Evite deixar os fluxos de trabalho no estado pausado.** Se criar um fluxo de trabalho temporário, certifique-se de que ele será concluído corretamente e não permanecerá no estado **[!UICONTROL paused]**. Se estiver pausado, isso significa que é preciso manter as tabelas temporárias e, portanto, aumentar o tamanho do banco de dados. Atribua supervisores de workflow nas propriedades do workflow para enviar um alerta quando um workflow falhar ou for pausado pelo sistema.
 
-   Para evitar workflows no estado pausado:
+  Para evitar workflows no estado pausado:
 
    * Verifique seus workflows regularmente para garantir que não haja erros inesperados.
    * Mantenha seus workflows o mais simples possível, por exemplo, dividindo grandes workflows em vários workflows diferentes. É possível usar as atividades **[!UICONTROL External signal]** para acionar a execução com base na execução de outros fluxos de trabalho.

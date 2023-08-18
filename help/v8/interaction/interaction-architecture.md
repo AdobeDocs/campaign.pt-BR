@@ -20,9 +20,9 @@ Há dois ambientes para cada targeting dimension usada ao gerenciar ofertas:
 
 * A **design** ambiente no qual o gerente de ofertas cuida da criação e categorização de ofertas, edição e início do processo de aprovação para que elas possam ser usadas. As regras para cada categoria, os espaços de oferta nos quais as ofertas podem ser apresentadas e os filtros predefinidos usados para definir a elegibilidade de uma oferta também são definidos neste ambiente.
 
-   As categorias também podem ser publicadas manualmente no ambiente online.
+  As categorias também podem ser publicadas manualmente no ambiente online.
 
-   O processo de aprovação de ofertas é detalhado [nesta seção](interaction-offer.md#approve-offers).
+  O processo de aprovação de ofertas é detalhado [nesta seção](interaction-offer.md#approve-offers).
 
 * A **live** ambiente no qual podem ser encontradas ofertas aprovadas do ambiente de design, bem como os vários espaços de oferta, filtros, categorias e regras configurados no ambiente de design. Durante uma chamada para o mecanismo de Oferta, o mecanismo sempre usará ofertas do ambiente ativo.
 
@@ -102,10 +102,11 @@ Nas instâncias de controle:
    * Verifique o tipo de aplicativo usado:**[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** ou ambos.
    * Insira a conta da FDA utilizada. Um operador deve ser criado nas instâncias de execução e deve ter os seguintes direitos de leitura e gravação no banco de dados da instância em questão:
 
-      ```
-      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
-      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
-      ```
+     ```
+     grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
+     grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
+     ```
+
    >[!NOTE]
    >
    >O endereço IP da instância de controle deve ser autorizado nas instâncias de execução.
@@ -117,9 +118,9 @@ Nas instâncias de controle:
    * Adicione a lista de instâncias de execução.
    * Para cada um, especifique o período de sincronização e os critérios do filtro (por exemplo, por país).
 
-      >[!NOTE]
-      >
-      >Se encontrar um erro, poderá consultar os workflows de sincronização e oferecer notificações. Eles podem ser encontrados nos workflows técnicos do aplicativo.
+     >[!NOTE]
+     >
+     >Se encontrar um erro, poderá consultar os workflows de sincronização e oferecer notificações. Eles podem ser encontrados nos workflows técnicos do aplicativo.
 
 Se, por motivos de otimização, apenas parte do banco de dados de marketing for duplicado nas instâncias de execução, é possível especificar um schema restrito vinculado ao ambiente para permitir que os usuários usem apenas dados que estejam disponíveis nas instâncias de execução. É possível criar uma oferta usando dados que não estão disponíveis em instâncias de execução. Para fazer isso, é necessário desativar a regra nos outros canais limitando essa regra no canal de saída (campo **[!UICONTROL Taken into account if]**).
 

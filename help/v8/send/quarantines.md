@@ -22,7 +22,7 @@ Quando o endereço ou número de telefone está em quarentena, os recipients sã
 
 **Quarentena** aplica-se apenas a um **endereço**, um **número de telefone**, ou um **token do dispositivo**, mas não ao próprio perfil. Por exemplo, um perfil cujo endereço de email esteja em quarentena pode atualizar seu perfil e inserir um novo endereço, podendo então ser direcionado em ações de delivery novamente. Da mesma forma, se dois perfis tiverem o mesmo número de telefone, ambos serão afetados se o número estiver em quarentena. Os endereços em quarentena ou os números de telefone são exibidos nos [logs de exclusão](#delivery-quarantines) (para um delivery) ou na [lista de quarentena](#non-deliverable-bounces) (para toda a plataforma).
 
-Por outro lado, os perfis podem estar no estado **➡ incluir na lista de bloqueios** como após um cancelamento de subscrição (opt-out), para um determinado canal: isso implica que eles não estão mais sendo direcionados por nenhum. Lista de bloqueios Como consequência, se um perfil no canal tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios para um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
+Por outro lado, os perfis podem estar no estado **➡ incluir na lista de bloqueios** como após um cancelamento de subscrição (opt-out), para um determinado canal: isso implica que eles não estão mais sendo direcionados por nenhum. Incluir na lista de bloqueios Como consequência, se um perfil no canal tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios para um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Você também pode remover manualmente um endereço da lista da quarentena. Para
 
 * Alterar seu status para **[!UICONTROL Valid]** do **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nó.
 
-   ![](assets/tech-quarantine-status.png)
+  ![](assets/tech-quarantine-status.png)
 
 Talvez seja necessário executar atualizações em massa na lista de quarentena, por exemplo, no caso de uma interrupção do ISP durante a qual os emails são marcados incorretamente como rejeições porque não podem ser entregues com êxito ao recipient.
 

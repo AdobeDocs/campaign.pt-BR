@@ -74,7 +74,7 @@ Várias atividades de workflow permitem definir a forma como as ofertas são apr
 * Mecanismo de oferta
 * Ofertas por célula
 
-### Enriquecimento {#enrichment}
+### Atividade de  {#enrichment}
 
 A variável **Enriquecimento** A atividade permite adicionar ofertas ou links para ofertas de recipients de delivery.[Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html)
 
@@ -102,11 +102,11 @@ Depois de configurar o **Query** atividade:
 
    * **[!UICONTROL Search for the best offer in a category]** : marque esta opção e especifique os parâmetros de chamada do Offer engine (espaços de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros. Recomendamos completar o campo **[!UICONTROL Category]** ou o campo **[!UICONTROL Theme]**, em vez de ambos ao mesmo tempo.
 
-      ![](assets/int_enrichment_offer3.png)
+     ![](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A pre-defined offer]** : marque esta opção e especifique um espaço de ofertas, uma oferta específica e uma data de contato para configurar diretamente a oferta que deseja adicionar, sem chamar o mecanismo de Oferta.
 
-      ![](assets/int_enrichment_offer4.png)
+     ![](assets/int_enrichment_offer4.png)
 
 1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
 
@@ -197,7 +197,7 @@ Para fazer isso, realize o seguinte processo:
    * Especifique a população de subconjunto usando o filtro disponível e as regras de limitação.
    * Em seguida, selecione a oferta que deseja apresentar ao subconjunto. As ofertas disponíveis são aquelas elegíveis no ambiente de oferta que foi selecionado na etapa anterior.
 
-      ![](assets/int_offer_per_cell1.png)
+     ![](assets/int_offer_per_cell1.png)
 
 1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido.
 

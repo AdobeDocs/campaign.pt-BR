@@ -199,7 +199,7 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
    >[!NOTE]
    >
-   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da sequência de caracteres, mas precisa ser exatamente a mesma especificada no SDK.
+   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da string, mas precisa ser exatamente a mesma especificada no SDK.
    >
    > Não é possível usar o mesmo certificado para a versão de desenvolvimento (sandbox) e a versão de produção do aplicativo.
 
@@ -239,7 +239,7 @@ Para criar um aplicativo para dispositivos Android, siga estas etapas:
 
    >[!NOTE]
    >
-   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da sequência de caracteres, mas precisa ser exatamente a mesma especificada no SDK.
+   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da string, mas precisa ser exatamente a mesma especificada no SDK.
    >
 
 1. Selecione o ícone na lista suspensa **[!UICONTROL Application icon]** para personalizar o aplicativo para dispositivos móveis em seu serviço.

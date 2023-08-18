@@ -69,15 +69,15 @@ As principais etapas para criar e projetar um SMS estão detalhadas na documenta
 
 * Criar um SMS
 
-   ![](../assets/do-not-localize/book.png) [Saiba como criar uma entrega de SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html#sending-messages){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [Saiba como criar uma entrega de SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html#sending-messages){target="_blank"}
 
 * Criar o conteúdo do SMS
 
-   ![](../assets/do-not-localize/book.png) [Saiba como definir o conteúdo de SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html#defining-the-sms-content){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [Saiba como definir o conteúdo de SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html#defining-the-sms-content){target="_blank"}
 
 * Selecionar a audiência do seu email
 
-   ![](../assets/do-not-localize/book.png) [Saiba como definir a população alvo](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [Saiba como definir a população alvo](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
 
 ![](../assets/do-not-localize/glass.png) As etapas para definir um público são detalhadas em [esta página](../start/audiences.md).
 
@@ -90,9 +90,9 @@ Para exibir a renderização da mensagem com sua personalização, clique em **[
 Para enviar uma prova, consulte estas seções da documentação do Campaign Classic v7:
 
 * Validar um delivery e enviar provas
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre as principais etapas para validar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [Saiba mais sobre as principais etapas para validar um delivery](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=pt-BR){target="_blank"}
 * Adicionar seed addresses
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre seed addresses](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [Saiba mais sobre seed addresses](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}
 
 ## Enviar e monitorar deliveries de SMS
 
@@ -100,8 +100,8 @@ As principais etapas para enviar e monitorar um SMS estão detalhadas na documen
 
 * Enviar, monitorar e rastrear entregas de SMS
 
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre as ferramentas para enviar, monitorar e rastrear SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html#sending-messages){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [Saiba mais sobre as ferramentas para enviar, monitorar e rastrear SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html#sending-messages){target="_blank"}
 
 * Solução de problemas de deliveries de SMS
 
-   ![](../assets/do-not-localize/book.png) [Saiba mais sobre solução de problemas de SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html#sending-messages){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [Saiba mais sobre solução de problemas de SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html#sending-messages){target="_blank"}

@@ -18,38 +18,38 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
 * **Cubos**
 
-   O Adobe Campaign vem com uma ferramenta intuitiva de exploração de dados para criar relatórios dinâmicos.
+  O Adobe Campaign vem com uma ferramenta intuitiva de exploração de dados para criar relatórios dinâmicos.
 
-   Use os recursos de análise de marketing para analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo de relatórios. Você pode criar relatórios e populações de públicos-alvo e armazená-los em listas que podem ser usadas no Adobe Campaign para tarefas de direcionamento ou segmentação.
+  Use os recursos de análise de marketing para analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo de relatórios. Você pode criar relatórios e populações de públicos-alvo e armazená-los em listas que podem ser usadas no Adobe Campaign para tarefas de direcionamento ou segmentação.
 
-   ![](assets/create-a-report.png)
+  ![](assets/create-a-report.png)
 
-   Dependendo da complexidade das queries, cálculos e volumes, os dados analisados nesses relatórios podem ser coletados por meio de uma query e pré-agregados em uma lista (workflow do tipo gestão de dados) ou em um Cubo (usando Marketing Analytics). Ele será exibido na forma de uma tabela dinâmica ou uma lista de grupos.
+  Dependendo da complexidade das queries, cálculos e volumes, os dados analisados nesses relatórios podem ser coletados por meio de uma query e pré-agregados em uma lista (workflow do tipo gestão de dados) ou em um Cubo (usando Marketing Analytics). Ele será exibido na forma de uma tabela dinâmica ou uma lista de grupos.
 
-   Para obter mais informações, consulte [esta seção](gs-cubes.md).
+  Para obter mais informações, consulte [esta seção](gs-cubes.md).
 
 * **Relatórios incorporados**
 
-   O Adobe Campaign vem com relatórios sobre entregas, campanhas, atividades da plataforma, recursos opcionais, etc. Estes relatórios estão disponíveis através das várias funcionalidades a que se referem. Eles podem ser adaptados para atender às necessidades específicas.
+  O Adobe Campaign vem com relatórios sobre entregas, campanhas, atividades da plataforma, recursos opcionais, etc. Estes relatórios estão disponíveis através das várias funcionalidades a que se referem. Eles podem ser adaptados para atender às necessidades específicas.
 
-   Use o **Relatórios** para acessar esses relatórios.
+  Use o **Relatórios** para acessar esses relatórios.
 
-   ![](assets/built-in-reports.png)
+  ![](assets/built-in-reports.png)
 
-   Para obter mais informações, consulte [esta seção](built-in-reports.md).
+  Para obter mais informações, consulte [esta seção](built-in-reports.md).
 
 * **Análise de dados descritiva**
 
-   O Adobe Campaign fornece uma ferramenta visual para produzir estatísticas dos dados do banco de dados. É possível criar relatórios de análise descritiva usando um assistente dedicado e adaptar seu conteúdo e layout dependendo das necessidades.
+  O Adobe Campaign fornece uma ferramenta visual para produzir estatísticas dos dados do banco de dados. É possível criar relatórios de análise descritiva usando um assistente dedicado e adaptar seu conteúdo e layout dependendo das necessidades.
 
-   Use o **[!UICONTROL Tools > Descriptive analysis...]** para criar um novo relatório.
+  Use o **[!UICONTROL Tools > Descriptive analysis...]** para criar um novo relatório.
 
-   ![](assets/desc-analysis-report.png)
+  ![](assets/desc-analysis-report.png)
 
-   ![](../assets/do-not-localize/book.png) O relatório de Análise descritiva de campanha é apresentado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}
+  ![](../assets/do-not-localize/book.png) O relatório de Análise descritiva de campanha é apresentado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}
 
 * **Relatórios personalizados**
 
-   Use o Adobe Campaign para criar relatórios sobre os dados no banco de dados. Depois que eles tiverem sido criados, torne-os acessíveis nos contextos apropriados.
+  Use o Adobe Campaign para criar relatórios sobre os dados no banco de dados. Depois que eles tiverem sido criados, torne-os acessíveis nos contextos apropriados.
 
-   ![](../assets/do-not-localize/book.png) As etapas para criar um relatório são detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. A criação de relatórios personalizados é reservada para usuários avançados.
+  ![](../assets/do-not-localize/book.png) As etapas para criar um relatório são detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. A criação de relatórios personalizados é reservada para usuários avançados.

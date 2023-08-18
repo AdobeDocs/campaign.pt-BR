@@ -95,7 +95,7 @@ Em seguida, você pode fazer logon no Campaign com sua Adobe ID.
 
 Quando seu sistema é atualizado para uma versão mais recente, você deve atualizar seu console do cliente para essa mesma versão. Essa é uma prática recomendada e, para algumas versões, essa atualização é obrigatória. Nesse caso, é mencionado no [Notas de versão](release-notes.md).
 
-Como usuário do Managed Cloud Services, o Adobe implanta o console do cliente para você. Ao se conectar ao ambiente atualizado, você será solicitado a baixar a versão mais recente do Console do cliente em uma janela pop-up. Você deve aceitar essa atualização e atualizar o Console do cliente conforme solicitado.
+Como usuário do Managed Cloud Service, o Adobe implanta o console do cliente para você. Ao se conectar ao ambiente atualizado, você será solicitado a baixar a versão mais recente do Console do cliente em uma janela pop-up. Você deve aceitar essa atualização e atualizar o Console do cliente conforme solicitado.
 
 >[!CAUTION]
 >

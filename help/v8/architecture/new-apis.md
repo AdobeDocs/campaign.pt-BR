@@ -18,11 +18,11 @@ No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), 
 
 * API de assimilação: **xtk.session.ingest**
 
-   Essa API é dedicada somente à Inserção de dados. [Saiba mais](#data-insert-api)
+  Essa API é dedicada somente à Inserção de dados. [Saiba mais](#data-insert-api)
 
 * API de atualização/exclusão de dados: **xtk.session.ingestExt**
 
-   Essa API é usada para atualizar ou excluir dados. [Saiba mais](#data-update-api)
+  Essa API é usada para atualizar ou excluir dados. [Saiba mais](#data-update-api)
 
 Um fluxo de trabalho integrado dedicado sincronizará os dados no banco de dados da nuvem.
 

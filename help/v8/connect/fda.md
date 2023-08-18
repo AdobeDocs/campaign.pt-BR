@@ -16,7 +16,7 @@ ht-degree: 40%
 
 Use o conector FDA (Federated Data Access) para conectar o Campaign a um ou mais **bancos de dados externos** e processar as informações armazenadas neles sem afetar os dados do banco de dados da nuvem do Campaign. Em seguida, é possível acessar dados externos sem alterar a estrutura dos dados do Adobe Campaign.
 
-![](../assets/do-not-localize/speech.png) Como usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para conectar seu(s) banco(s) de dados externo(s) ao Campaign.
+![](../assets/do-not-localize/speech.png) Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para conectar seu(s) banco(s) de dados externo(s) ao Campaign.
 
 
 >[!NOTE]

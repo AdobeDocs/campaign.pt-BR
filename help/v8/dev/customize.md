@@ -33,7 +33,7 @@ Dois modos de extensão de tabela estão disponíveis:
 
 * Por meio da interface, usando o **Novo campo** assistente
 
-   Saiba como adicionar rapidamente um novo campo no Campaign no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}
+  Saiba como adicionar rapidamente um novo campo no Campaign no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}
 
 * Programaticamente, estendendo o schema. Saiba como estender um esquema existente no [nesta seção](../dev/extend-schema.md).
 

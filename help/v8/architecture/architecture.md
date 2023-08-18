@@ -34,13 +34,13 @@ Dois modelos de implantação estão disponíveis:
 
 * **FDA do Campaign [!DNL Snowflake] implantação**
 
-   No seu [[!DNL Snowflake] Implantação do FDA](fda-deployment.md), [!DNL Adobe Campaign] O v8 está conectado ao [!DNL Snowflake] para acessar dados por meio do recurso Federated Data Access: você pode acessar e processar dados externos e informações armazenadas em seu [!DNL Snowflake] banco de dados sem alterar a estrutura dos dados do Adobe Campaign. O PostgreSQL é o banco de dados principal e o Snowflake é o banco de dados secundário. Você pode estender seu modelo de dados e armazenar seus dados no Snowflake. Posteriormente, é possível executar ETL, segmentação e relatórios em um grande conjunto de dados com desempenhos excelentes.
+  No seu [[!DNL Snowflake] Implantação do FDA](fda-deployment.md), [!DNL Adobe Campaign] O v8 está conectado ao [!DNL Snowflake] para acessar dados por meio do recurso Federated Data Access: você pode acessar e processar dados externos e informações armazenadas em seu [!DNL Snowflake] banco de dados sem alterar a estrutura dos dados do Adobe Campaign. O PostgreSQL é o banco de dados principal e o Snowflake é o banco de dados secundário. Você pode estender seu modelo de dados e armazenar seus dados no Snowflake. Posteriormente, é possível executar ETL, segmentação e relatórios em um grande conjunto de dados com desempenhos excelentes.
 
 * **Implantação do Campaign Enterprise (FFDA)**
 
-   No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), [!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um local [!DNL Campaign] para a interface do usuário de mensagens em tempo real e consultas unitárias e gravação por meio de APIs, além de uma [!DNL Snowflake] banco de dados para execução de campanha, consultas em lote e execução de workflow.
+  No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), [!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um local [!DNL Campaign] para a interface do usuário de mensagens em tempo real e consultas unitárias e gravação por meio de APIs, além de uma [!DNL Snowflake] banco de dados para execução de campanha, consultas em lote e execução de workflow.
 
-   O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova arquitetura, a implantação corporativa (FFDA) do Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
+  O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova arquitetura, a implantação corporativa (FFDA) do Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 
 ## Dividir execução de entrega {#split}
 
@@ -97,7 +97,7 @@ Nessa arquitetura específica, a célula de execução é separada da instância
 
 * A variável **Instância de controle** (ou instância de marketing) é usada por profissionais de marketing e equipes de TI para criar, configurar e publicar modelos de mensagem. Essa instância também centraliza o monitoramento e o histórico de eventos.
 
-   ![](../assets/do-not-localize/glass.png) Saiba como criar e publicar modelos de mensagem no [nesta seção](../send/transactional.md).
+  ![](../assets/do-not-localize/glass.png) Saiba como criar e publicar modelos de mensagem no [nesta seção](../send/transactional.md).
 
 * A variável **Instância de execução** recupera eventos de entrada (redefinição de senha ou pedidos de um site, por exemplo) e envia mensagens personalizadas. Pode haver mais de uma instância de execução para processar mensagens por meio do balanceador de carga e dimensionar o número de eventos a serem continuados para disponibilidade máxima.
 

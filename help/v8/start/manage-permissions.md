@@ -189,7 +189,7 @@ Os direitos nomeados concedem permissões a:
 
 * O acesso a pastas Associação de grupos de operadores pode conceder ou restringir direitos de acesso a pastas, alterando as configurações de segurança nas pastas. [Saiba mais](folder-permissions.md#restrict-access-to-a-folder).
 
-   Por exemplo, pode afetar: **Acesso de gravação** para criar novas entidades (como deliveries, perfis etc.), **Acesso de leitura** para usar entidades, **Excluir acesso** para excluir entidades.
+  Por exemplo, pode afetar: **Acesso de gravação** para criar novas entidades (como deliveries, perfis etc.), **Acesso de leitura** para usar entidades, **Excluir acesso** para excluir entidades.
 
 Os direitos nomeados padrão no Adobe Campaign são:
 

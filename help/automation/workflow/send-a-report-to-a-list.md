@@ -49,25 +49,25 @@ Para criar o template do delivery, siga as etapas abaixo:
 
    * Clique em **[!UICONTROL Attachments]** e clique na seta ao lado do link **[!UICONTROL Add]** botão. Selecione **[!UICONTROL Calculated attachment...]**.
 
-      ![](assets/use_case_report_4.png)
+     ![](assets/use_case_report_4.png)
 
    * No **[!UICONTROL Type]** selecione a opção mais recente: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
-      ![](assets/use_case_report_5.png)
+     ![](assets/use_case_report_5.png)
 
-      O valor inserido no campo **[!UICONTROL Label]** não aparecerá no delivery final.
+     O valor inserido no campo **[!UICONTROL Label]** não aparecerá no delivery final.
 
    * Na zona de texto, digite o caminho de acesso e o nome do arquivo.
 
-      ![](assets/use_case_report_6.png)
+     ![](assets/use_case_report_6.png)
 
-      >[!CAUTION]
-      >
-      >O caminho e o nome devem ser idênticos aos inseridos no **[!UICONTROL JavaScript code]** tipo de atividade do workflow, conforme explicado em [Etapa 3: criar o fluxo de trabalho](#step-3--creating-the-workflow).
+     >[!CAUTION]
+     >
+     >O caminho e o nome devem ser idênticos aos inseridos no **[!UICONTROL JavaScript code]** tipo de atividade do workflow, conforme explicado em [Etapa 3: criar o fluxo de trabalho](#step-3--creating-the-workflow).
 
    * Selecione a guia **[!UICONTROL Advanced]** e marque **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Na zona de texto, digite o nome do anexo no delivery final.
 
-      ![](assets/use_case_report_6b.png)
+     ![](assets/use_case_report_6b.png)
 
 ## Etapa 3: criar o fluxo de trabalho {#step-3--creating-the-workflow}
 
@@ -117,9 +117,9 @@ Para criar esse workflow, siga as etapas abaixo:
    * **var reportName**: insira o nome interno do relatório em aspas duplas. Nesse caso, o nome interno do relatório **Tracking indicator** é &quot;deliveryFeedback&quot;.
    * **caminho var**: digite o caminho de salvamento do arquivo (&quot;tmp&quot;), o nome que deseja dar ao arquivo (&quot;deliveryFeedback&quot;) e a extensão de arquivo (&quot;.pdf&quot;). Nesse caso, usamos o nome interno como o nome do arquivo. Os valores precisam estar entre aspas duplas e separados pelo caractere &quot;+&quot;.
 
-      >[!CAUTION]
-      >
-      >O arquivo deve ser salvo no servidor. Você deve inserir o mesmo caminho e o mesmo nome da variável **[!UICONTROL General]** guia da janela de edição do anexo calculado, conforme detalhado [aqui](#step-2--create-the-delivery-template)).
+     >[!CAUTION]
+     >
+     >O arquivo deve ser salvo no servidor. Você deve inserir o mesmo caminho e o mesmo nome da variável **[!UICONTROL General]** guia da janela de edição do anexo calculado, conforme detalhado [aqui](#step-2--create-the-delivery-template)).
 
    * **var exportFormat**: insira o formato de exportação do arquivo (&quot;PDF&quot;).
    * **var _ctx** (contexto): neste caso, estamos usando o relatório **[!UICONTROL Tracking indicators]** em seu contexto global.

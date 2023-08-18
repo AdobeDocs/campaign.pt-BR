@@ -12,7 +12,7 @@ ht-degree: 56%
 
 ---
 
-# Criar conteúdo condicional{#conditional-content}
+# Criação de conteúdo condicional{#conditional-content}
 
 Ao configurar campos de conteúdo condicional, você pode criar personalização avançada. Quando uma determinada condição é atendida, blocos de texto e/ou imagens completas são substituídas.
 

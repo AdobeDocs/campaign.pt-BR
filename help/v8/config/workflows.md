@@ -139,7 +139,7 @@ Nesta seção você encontrará vários casos de uso que usam os recursos dos wo
 
 * [Enviar email de aniversário](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR)
 
-   Este caso de uso apresenta como planejar o envio de um e-mail recorrente para uma lista de recipients no dia de seus aniversários.
+  Este caso de uso apresenta como planejar o envio de um e-mail recorrente para uma lista de recipients no dia de seus aniversários.
 
 * [Carregar conteúdo de delivery](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html)
 Quando o conteúdo do delivery estiver disponível em um arquivo HTML localizado em um servidor remoto, é possível carregá-lo facilmente nos deliveries do Adobe Campaign.

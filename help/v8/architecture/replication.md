@@ -29,7 +29,7 @@ Esse workflow executa a replicação automática de tabelas integradas que preci
 * **[!UICONTROL Replicate Staging data]**
 Esse fluxo de trabalho replica dados de preparo para chamadas unitárias. Ele é programado para ser executado a cada hora, diariamente.
 * **[!UICONTROL Deploy FFDA immediately]**\
-   Este fluxo de trabalho executa uma implantação imediata no banco de dados em nuvem.
+  Este fluxo de trabalho executa uma implantação imediata no banco de dados em nuvem.
 * **[!UICONTROL Replicate FFDA data immediately]**
 Esse workflow replica os dados XS para uma determinada conta externa.
 

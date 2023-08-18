@@ -31,12 +31,12 @@ Há dois tipos de erros quando uma mensagem falha. Cada tipo de falha de deliver
 * **Devoluções permanentes**
 As rejeições permanentes são falhas permanentes geradas depois que um ISP determina uma tentativa de envio por email para um endereço de assinante como não entregue. No Adobe Campaign, as rejeições permanentes categorizadas como não entregues são adicionadas à lista de quarentena, o que significa que elas não terão nova tentativa. Há alguns casos em que uma rejeição permanente é ignorada se a causa da falha for desconhecida.
 
-   Estes são alguns exemplos comuns de rejeições permanentes: Endereço não existe, Conta desativada, Sintaxe incorreta, Domínio inválido
+  Estes são alguns exemplos comuns de rejeições permanentes: Endereço não existe, Conta desativada, Sintaxe incorreta, Domínio inválido
 
 * **Rejeições temporárias**
 As rejeições temporárias são falhas temporárias que os ISPs geram quando têm dificuldade em entregar emails. As falhas leves [tentar novamente](#retries) várias vezes (com variação dependendo do uso de configurações de entrega personalizadas ou predefinidas) para tentar um delivery bem-sucedido. Os endereços que continuamente emitem rejeição não serão adicionados à quarentena até que o número máximo de tentativas tenha sido atingido (o que novamente varia de acordo com as configurações).
 
-   Algumas causas comuns de rejeições temporárias incluem: Caixa de entrada cheia, Servidor de email de recebimento inativo, Problemas de reputação do remetente
+  Algumas causas comuns de rejeições temporárias incluem: Caixa de entrada cheia, Servidor de email de recebimento inativo, Problemas de reputação do remetente
 
 A variável  **Ignorado** O tipo de erro é conhecido como temporário, como &quot;Ausente&quot;, ou um erro técnico, por exemplo, se o tipo de remetente for &quot;postmaster&quot;.
 
@@ -54,7 +54,7 @@ Esses tipos de erros são gerenciados da seguinte maneira:
 
 >[!NOTE]
 >
->Como um usuário Cloud Services gerenciado, a configuração da caixa de entrada de devolução é executada pelo Adobe.
+>Como um usuário Cloud Service gerenciado, a configuração da caixa de entrada de devolução é executada pelo Adobe.
 
 ## Qualificação de email de rejeição {#bounce-mail-qualification}
 
@@ -659,18 +659,18 @@ SR Generic DELIVRD 000|#MESSAGE#
 * Todas as mensagens de erro começam com **SR** para distinguir códigos de erro de SMS de códigos de erro de email.
 * A segunda parte (**Generic** neste exemplo) da mensagem de erro refere-se ao nome da implementação SMSC, como definido no campo **[!UICONTROL SMSC implementation name]** da conta externa do SMS.
 
-   Como o mesmo código de erro pode ter um significado diferente para cada provedor, esse campo permite que você saiba qual provedor gerou o código de erro. Você pode então encontrar o erro na documentação do provedor relevante.
+  Como o mesmo código de erro pode ter um significado diferente para cada provedor, esse campo permite que você saiba qual provedor gerou o código de erro. Você pode então encontrar o erro na documentação do provedor relevante.
 
 * A terceira parte (**DELIVRD** neste exemplo) da mensagem de erro corresponde ao código de status recuperado do SR usando a extração de status regex definido na conta externa do SMS.
 
-   Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa.
+  Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa.
 Por padrão, o regex extrai o campo **stat:** conforme definido pela seção **Apêndice B** da **especificação 3.4 SMPP**.
 
 * A quarta parte (**000** neste exemplo) da mensagem de erro corresponde ao código de erro extraído do SR usando a extração de código de erro regex definida na conta externa do SMS.
 
-   Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa.
+  Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa.
 
-   Por padrão, o regex extrai o campo **err:** conforme definido pela seção **Apêndice B** da **especificação 3.4 SMPP**.
+  Por padrão, o regex extrai o campo **err:** conforme definido pela seção **Apêndice B** da **especificação 3.4 SMPP**.
 
 * Tudo que vem após o símbolo da barra vertical (|) é exibido somente na coluna **[!UICONTROL First text]** da tabela **[!UICONTROL Delivery log qualification]**. Este conteúdo é sempre substituído por **#MESSAGE#** após a mensagem ser normalizada. Esse processo evita ter várias entradas para erros semelhantes e é igual ao dos emails.
 

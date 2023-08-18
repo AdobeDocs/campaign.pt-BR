@@ -45,6 +45,7 @@ Para criar um orçamento, siga as etapas abaixo:
 >[!NOTE]
 >
 >Você pode selecionar um orçamento relacionado. Para obter mais informações, consulte [esta seção](#linking-a-budget-to-another).
+>
 
 ### Calcular valores {#calculating-amounts}
 

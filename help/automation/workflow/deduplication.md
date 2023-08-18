@@ -82,15 +82,16 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
    * **[!UICONTROL Choose for me]**: seleciona aleatoriamente o registro a ser mantido fora das duplicatas.
    * **[!UICONTROL Following a list of values]**: permite definir uma prioridade de valor para um ou mais campos. Para definir os valores, selecione um campo ou crie uma expressão e adicione o(s) valor(es) à tabela apropriada. Para definir um novo campo, clique no botão **[!UICONTROL Add]** localizado acima da lista de valores.
 
-      ![](assets/s_user_segmentation_dedup_param5.png)
+     ![](assets/s_user_segmentation_dedup_param5.png)
 
    * **[!UICONTROL Non-empty value]**: permite manter registros para os quais o valor da expressão selecionada não está vazio como uma prioridade.
 
-      ![](assets/s_user_segmentation_dedup_param6.png)
+     ![](assets/s_user_segmentation_dedup_param6.png)
 
    * **[!UICONTROL Using an expression]**: permite manter registros com o valor mais baixo (ou mais alto) da expressão fornecida.
 
-      ![](assets/s_user_segmentation_dedup_param7.png)
+     ![](assets/s_user_segmentation_dedup_param7.png)
+
    >[!NOTE]
    >
    >A funcionalidade **[!UICONTROL Merge]**, acessível por meio do link **[!UICONTROL Advanced parameters]**, permite configurar um conjunto de regras para mesclar um campo ou grupo de campos em um único registro de dados resultante. Para obter mais informações, consulte [Mesclar campos em um único registro](#merging-fields-into-single-record).

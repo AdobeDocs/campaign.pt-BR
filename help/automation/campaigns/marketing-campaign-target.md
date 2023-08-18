@@ -102,7 +102,7 @@ O direcionamento pode ser programado para execução automática de acordo com u
 
 As ações relacionadas à execução do workflow de definição de metas (inicialização, parada, pausa etc.) são processos **assíncronos** : o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
-Os ícones da barra de ferramentas permitem tomar medidas referentes à execução do workflow de direcionamento.
+Os ícones da barra de ferramentas permitem realizar a ação referente à execução do workflow de direcionamento.
 
 * Iniciar ou reiniciar
 

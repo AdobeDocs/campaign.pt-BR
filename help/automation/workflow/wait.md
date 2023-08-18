@@ -25,8 +25,8 @@ No campo **[!UICONTROL Duration]**, o valor pode ser expresso na unidade de sua 
 
 * Se as configurações regionais não forem especificadas: **s** para segundos, **m** para minutos, **h** para horas, **d** para dias e **y** para anos. No momento da aprovação, o valor é convertido automaticamente para a unidade mais legível.
 
-   A unidade padrão é dia (**d**).
+  A unidade padrão é dia (**d**).
 
 * Enquanto que, por exemplo, se as configurações regionais forem definidas como &quot;Français&quot;: **s** para segundos, **mn** para minutos, **h** para horas, **j** para dias, **m** para meses e **a** para anos. No momento da aprovação, o valor é convertido automaticamente na unidade mais legível, como no exemplo acima, **90s** foi convertido para **1mn 30s**.
 
-   A unidade padrão é dia (**d**).
+  A unidade padrão é dia (**d**).

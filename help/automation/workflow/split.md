@@ -73,7 +73,8 @@ Se não quiser usar toda a população contida em um subconjunto, é possível l
    * **[!UICONTROL Keep only the first records after sorting]**: esta opção permite definir uma limitação baseada em uma ou mais ordens de classificação. Ao selecionar o campo **[!UICONTROL Age]** como um critério de classificação e 100 como o limite, somente os 100 recipients mais jovens serão mantidos.
    * **[!UICONTROL Keep the first ones after sorting (criteria, random)]**: esta opção combina as duas opções anteriores. Ele permite definir uma limitação com base em uma ou mais ordens de classificação e, então, aplicar uma seleção aleatória nos primeiros registros se alguns dos registros tiverem os mesmos valores que os critérios definidos.
 
-      Por exemplo, ao selecionar o campo **[!UICONTROL Age]** como critério de classificação e definir um limite de 100, mas os 2000 recipients mais jovens no banco de dados todos têm 18, então 100 recipients serão aleatoriamente selecionados desses 2000.
+     Por exemplo, ao selecionar o campo **[!UICONTROL Age]** como critério de classificação e definir um limite de 100, mas os 2000 recipients mais jovens no banco de dados todos têm 18, então 100 recipients serão aleatoriamente selecionados desses 2000.
+
    ![](assets/s_user_segmentation_partage_wz1.png)
 
 1. Se desejar definir critérios de classificação, uma etapa adicional permite definir as colunas e a ordem de classificação.
@@ -88,7 +89,7 @@ Se não quiser usar toda a população contida em um subconjunto, é possível l
 
    * **[!UICONTROL Size (in %)]**: uma porcentagem de registros. Por exemplo, a configuração abaixo extrai 10% da população total.
 
-      A porcentagem se aplica à população inicial, não ao resultado da atividade.
+     A porcentagem se aplica à população inicial, não ao resultado da atividade.
 
    * **[!UICONTROL Size (as a % of the segment)]**: uma porcentagem dos registros relacionados somente aos subconjuntos e não à população inicial.
    * **[!UICONTROL Maximum size]**: um número máximo de registros.
@@ -148,7 +149,7 @@ O template de distribuição de dados permite limitar o número de registros de 
    * **[!UICONTROL Distribution type]**: selecione a forma como o valor de limitação do target será detalhado na guia **[!UICONTROL Distribution]**: **[!UICONTROL Percentage]** ou **[!UICONTROL Set]**.
    * **[!UICONTROL Approval storage]**: se você usar um [Aprovação local](local-approval.md) atividade no workflow para construção do target, insira o schema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se usar o schema de target **[!UICONTROL Recipients]**, insira o schema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
 
-      No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Approvals storage]**.
+     No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Approvals storage]**.
 
 1. Se você estiver usando um [Aprovação local](local-approval.md) atividade, insira o **[!UICONTROL Advanced settings]** para o template de distribuição:
 
@@ -158,19 +159,19 @@ O template de distribuição de dados permite limitar o número de registros de 
 
    * **[!UICONTROL Approve targeted messages]**: marque esta opção se quiser que todos os recipients sejam pré-selecionados da lista de recipients a serem aprovados. Se esta opção estiver desmarcada, nenhum recipient será pré-selecionado.
 
-      >[!NOTE]
-      >
-      >Essa opção é selecionada por padrão.
+     >[!NOTE]
+     >
+     >Essa opção é selecionada por padrão.
 
-      ![](assets/local_validation_notification.png)
+     ![](assets/local_validation_notification.png)
 
    * **[!UICONTROL Delivery label]**: permite definir uma expressão para exibir o rótulo de delivery na notificação de retorno. A expressão padrão fornece informações sobre o rótulo padrão da distribuição (string de computação). É possível modificar essa expressão.
 
-      ![](assets/local_validation_notification_3.png)
+     ![](assets/local_validation_notification_3.png)
 
    * **[!UICONTROL Grouping field]**: este campo permite definir o agrupamento usado para exibir recipients na aprovação e notificações de retorno.
 
-      ![](assets/local_validation_notification_4.png)
+     ![](assets/local_validation_notification_4.png)
 
    * **[!UICONTROL Web Interface]**: permite vincular um aplicação web à lista de recipients. Na notificação de aprovação e retorno, cada recipient é clicável e é vinculado ao aplicativo da Web selecionado. O campo **[!UICONTROL Parameters]** (por exemplo **[!UICONTROL recipientId]**) permite configurar o parâmetro adicional a ser utilizado no URL e no aplicativo da web.
 
@@ -181,16 +182,16 @@ O template de distribuição de dados permite limitar o número de registros de 
    * **[!UICONTROL Value]**: digite os valores de distribuição.
    * **[!UICONTROL Percentage / Set]**: digite o limite de registro (fixo ou porcentagem) vinculado a cada valor.
 
-      Essa coluna é definida pelo campo **[!UICONTROL Distribution type]** dentro da guia **[!UICONTROL General]**.
+     Essa coluna é definida pelo campo **[!UICONTROL Distribution type]** dentro da guia **[!UICONTROL General]**.
 
    * **[!UICONTROL Label]**: digite o rótulo vinculado a cada valor.
    * **[!UICONTROL Group or operator]**: se estiver usando um[Aprovação local](local-approval.md) selecione o operador ou grupo de operadores atribuídos a cada valor de distribuição.
 
-      No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Group or operator]**.
+     No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Group or operator]**.
 
-      >[!CAUTION]
-      >
-      >Verifique se os operadores receberam as permissões apropriadas.
+     >[!CAUTION]
+     >
+     >Verifique se os operadores receberam as permissões apropriadas.
 
 ## Filtragem de parâmetros {#filtering-parameters}
 

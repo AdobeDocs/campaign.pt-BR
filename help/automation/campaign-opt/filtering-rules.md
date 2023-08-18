@@ -85,6 +85,7 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 >Somente as regras de filtragem e de tipologia estarão disponíveis na janela de seleção.
 >
 >Essas configurações podem ser definidas no template de delivery a ser aplicado automaticamente a todos os novos deliveries criados usando o template.
+>
 
 ## Regras padrão de exclusão de entrega {#default-deliverability-exclusion-rules}
 

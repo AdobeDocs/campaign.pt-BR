@@ -20,15 +20,15 @@ Aqui queremos criar uma consulta com um campo calculado do tipo **[!UICONTROL En
 
 * Qual tabela precisa ser selecionada?
 
-   A tabela de recipient (nms:recipient)
+  A tabela de recipient (nms:recipient)
 
 * Campos a serem selecionados na coluna de saída?
 
-   Last name, First name, Gender
+  Last name, First name, Gender
 
 * Critérios que serão usados para filtrar a informação?
 
-   O idioma  do recipient.
+  O idioma  do recipient.
 
 Siga as etapas abaixo:
 

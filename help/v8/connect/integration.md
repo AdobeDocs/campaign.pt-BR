@@ -22,7 +22,7 @@ O Adobe Campaign vem com vários conectores que permitem a comunicação com apl
 
 Combine soluções da Adobe Experience Cloud para modernizar sua implementação.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para conectar o Campaign com serviços e soluções da Adobe Experience Cloud.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para conectar o Campaign com serviços e soluções da Adobe Experience Cloud.
 
 O Campaign v8 pode se conectar com:
 

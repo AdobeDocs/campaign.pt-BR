@@ -37,9 +37,9 @@ Os direitos atribuídos aos Gerentes de delivery os habilitam a realizar as segu
 * Exibir e modificar categorias de ofertas.
 * Aprove ofertas se elas forem revisores.
 
-   >[!NOTE]
-   >
-   >**Gerentes de delivery** O só pode aprovar uma oferta se tiver sido declarado como revisor na configuração da oferta.
+  >[!NOTE]
+  >
+  >**Gerentes de delivery** O só pode aprovar uma oferta se tiver sido declarado como revisor na configuração da oferta.
 
 ## Matriz de permissões por operador de interação {#recap-of-rights-according-to-operator}
 

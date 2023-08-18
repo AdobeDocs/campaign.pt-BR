@@ -21,11 +21,11 @@ As seguintes informações podem ser acessadas por meio desta subguia:
 
 * A variável **[!UICONTROL Audit]** A subguia mostra o diário de atividades. Ele contém as tarefas executadas na campanha: criação ou início, aprovação, extração, gerenciamento de estoque etc. do workflow.
 
-   ![](assets/campaign-audit-tab.png)
+  ![](assets/campaign-audit-tab.png)
 
 * A variável **[!UICONTROL Deliveries]** A subguia contém todos os deliveries da campanha. Eles podem ser editados nessa visualização. Para fazer isso, selecione o delivery e clique no ícone **[!UICONTROL Detail]**.
 
-   ![](assets/campaign-delivery-tab.png)
+  ![](assets/campaign-delivery-tab.png)
 
 * A variável **[!UICONTROL Approvals]** A subguia contém todo o processo de aprovação da campanha. Você pode verificar detalhes e comentários
 

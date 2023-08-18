@@ -14,7 +14,7 @@ ht-degree: 37%
 
 # Publicar mensagens no Twitter com o Adobe Campaign {#post-tw-messages}
 
-O Adobe Campaign vem com uma **Marketing social** módulo que permite interagir com seus clientes atuais e potenciais via Twitter.
+O Adobe Campaign vem com uma **Marketing social** módulo que permite interagir com seus clientes e clientes potenciais via Twitter.
 
 Após configurar a integração, é possível:
 
@@ -27,9 +27,9 @@ As etapas de configuração para integrar sua conta do Twitter com o Adobe Campa
 
 ## Criar e publicar uma publicação do Twitter {#publish-on-tw}
 
-Siga as etapas abaixo para postar uma mensagem em sua conta da Twitter:
+Siga as etapas abaixo para postar uma mensagem em sua conta do Twitter:
 
-1. Criar uma entrega do Twitter
+1. Criar um delivery de Twitter
 
    Crie um novo delivery com base no template de delivery **[!UICONTROL Tweet (twitter)]**.
 
@@ -50,7 +50,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta da Twitter:
 
    A guia **[!UICONTROL Target of the proofs]** permite definir a conta do Twitter a ser usada para deliveries de teste antes do delivery final.
 
-   Conforme detalhado no [etapas de configuração](../connect/ac-tw.md#tw-test-account), você deve criar uma conta privada de teste do Twitter dedicada ao envio de provas.
+   Conforme detalhado no [etapas de configuração](../connect/ac-tw.md#tw-test-account), você deve criar uma conta privada de Twitter de teste dedicada ao envio de provas.
 
    >[!NOTE]
    >
@@ -64,11 +64,11 @@ Siga as etapas abaixo para postar uma mensagem em sua conta da Twitter:
 
    >[!CAUTION]
    >
-   >Ao postar no Twitter, as limitações se aplicam:
+   >Ao publicar no Twitter, as limitações se aplicam:
    >
    >* A mensagem não pode exceder 140 caracteres.
    >* Formato HTML não suportado.
-
+   >
 
 1. Visualizar sua publicação
 
@@ -82,7 +82,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta da Twitter:
 
 1. Enviar uma prova
 
-   Antes de publicar seu tweet, valide-o enviando uma prova de sua publicação: você pode obter uma renderização exata da publicação em uma página de teste privada do Twitter.
+   Antes de publicar seu tweet, valide-o enviando uma prova de sua publicação: você pode obter uma renderização exata da publicação em uma página de teste de Twitter privado.
 
 1. Postar a mensagem
 
@@ -97,7 +97,7 @@ A variável **[!UICONTROL Synchronize Twitter accounts]** o workflow técnico re
 
 Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
-1. Crie um delivery do Twitter com base na **[!UICONTROL Tweet (Direct Message)]** modelo de entrega integrado.
+1. Crie um delivery de Twitter com base no **[!UICONTROL Tweet (Direct Message)]** modelo de entrega integrado.
 
 1. Seleção do público alvo principal
 
@@ -113,12 +113,12 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
 1. Selecione o público alvo da prova na **[!UICONTROL Target of the proofs]** guia: essa conta receberá a prova da mensagem direta.
 
-   Conforme detalhado no [etapas de configuração](../connect/ac-tw.md#tw-test-account), você deve criar uma conta privada de teste do Twitter dedicada ao envio de provas.
+   Conforme detalhado no [etapas de configuração](../connect/ac-tw.md#tw-test-account), você deve criar uma conta privada de Twitter de teste dedicada ao envio de provas.
 
 
    >[!NOTE]
    >
-   >Se desejar enviar todas as provas de mensagem direta para a mesma conta do Twitter, você pode salvar o target de prova na variável **[!UICONTROL Tweet (Direct Message)]** template do delivery, acessado pelo **[!UICONTROL Resources > Templates > Delivery templates]** nó.
+   >Se desejar enviar todas as provas de mensagem direta para a mesma conta do Twitter, você pode salvar o target de prova na **[!UICONTROL Tweet (Direct Message)]** template do delivery, acessado pelo **[!UICONTROL Resources > Templates > Delivery templates]** nó.
 
 1. Insira o conteúdo da mensagem nas **[!UICONTROL Content]** guia.
 
@@ -138,7 +138,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
 1. Enviar uma prova
 
-   Antes de enviar a mensagem, valide-a enviando [envio de uma prova para uma conta de teste](../send/preview-and-proof.md): você pode obter uma renderização exata da mensagem em uma conta privada do Twitter e verificar o conteúdo e a personalização.
+   Antes de enviar a mensagem, valide-a enviando [envio de uma prova para uma conta de teste](../send/preview-and-proof.md): você pode obter uma renderização exata da mensagem em uma conta de Twitter privado e verificar o conteúdo e a personalização.
 
 1. Enviar a mensagem direta
 

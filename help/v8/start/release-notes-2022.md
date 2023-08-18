@@ -77,9 +77,9 @@ Para otimizar a segurança, os tokens de segurança foram removidos dos URLs ger
 * Essa alteração se aplica somente aos URLs GET. Outros tipos, incluindo URLs POST, não são afetados.
 * Se você usa código personalizado, os tokens de segurança não são mais recuperados do parâmetro securitytoken do URL GET. Você precisa gerar um novo token de segurança usando o seguinte código JSSP:
 
-   ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
+  ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
 
-   Você também pode usar a API de logon para buscar tokens de segurança.
+  Você também pode usar a API de logon para buscar tokens de segurança.
 * Não há alterações no gerenciamento de token de sessão.
 
 **Aprimoramentos**
@@ -226,9 +226,8 @@ Consulte a [Matriz de compatibilidade do Campaign](compatibility-matrix.md).
 * A autenticação OAuth 2.0 do Microsoft Exchange Online para POP3 agora é compatível com o Campaign. [Leia mais](../config/external-accounts.md#bounce-mails-external-account)
 * Correções críticas foram aplicadas em relação à API da web do Microsoft Dynamics Connector.
 * O novo direito nomeado de operador e gravação de esquema de grupo (operatorWrite) foi adicionado para permitir que os usuários insiram, atualizem e excluam os esquemas de operadores (xtk:operator) e de grupos de operadores (xtk:group).
-   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
-
-   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
+  <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
+  <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
 * Agora, várias contas LINE ativas podem ser configuradas em um único mid-sourcing.
 * O número de conexões padrão para o processo da web foi aumentado de 50 para 150.
 * O Campaign vem com um conjunto de novas medidas de proteção para impedir a inserção de chaves duplicadas no banco de dados do Snowflake. [Leia mais](../architecture/keys.md)

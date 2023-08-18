@@ -182,47 +182,47 @@ Insira as cláusulas `select`, `where` e `orderBy` como elementos XML:
 
 * Cláusula `select`
 
-   Especifique as colunas a serem retornadas. Por exemplo, para selecionar o nome e sobrenome da pessoa, insira este código:
+  Especifique as colunas a serem retornadas. Por exemplo, para selecionar o nome e sobrenome da pessoa, insira este código:
 
-   ```xml
-   <select>
-       <node expr="@firstName"/>
-       <node expr="@lastName"/>
-   </select>
-   ```
+  ```xml
+  <select>
+      <node expr="@firstName"/>
+      <node expr="@lastName"/>
+  </select>
+  ```
 
-   Com o schema `nms:recipient`, os elementos são retornados desta forma:
+  Com o schema `nms:recipient`, os elementos são retornados desta forma:
 
-   ```xml
-   <recipient firstName="Bo" lastName="Didley"/>
-   ```
+  ```xml
+  <recipient firstName="Bo" lastName="Didley"/>
+  ```
 
 * Cláusula `where`
 
-   Para especificar condições, use uma cláusula `where`. Por exemplo, para selecionar os registros localizados na pasta **Treinamento**, é possível inserir este código:
+  Para especificar condições, use uma cláusula `where`. Por exemplo, para selecionar os registros localizados na pasta **Treinamento**, é possível inserir este código:
 
-   ```xml
-   <where>
-       <condition expr="[folder/@label]='Training'"/>
-   </where>
-   ```
+  ```xml
+  <where>
+      <condition expr="[folder/@label]='Training'"/>
+  </where>
+  ```
 
-   Ao combinar várias expressões, use o operador booleano na primeira expressão. Por exemplo, para selecionar todas as pessoas chamadas Isabel Garcia, é possível inserir este código:
+  Ao combinar várias expressões, use o operador booleano na primeira expressão. Por exemplo, para selecionar todas as pessoas chamadas Isabel Garcia, é possível inserir este código:
 
-   ```xml
-   <condition boolOperator="AND" expr="@firstName='Isabel'"/>
-   <condition expr="@lastName='Garcia'"/>
-   ```
+  ```xml
+  <condition boolOperator="AND" expr="@firstName='Isabel'"/>
+  <condition expr="@lastName='Garcia'"/>
+  ```
 
 * Cláusula `orderBy`
 
-   Para classificar o conjunto de resultados, especifique a cláusula `orderBy` como um elemento XML com o atributo `sortDesc`. Por exemplo, para classificar os sobrenomes em ordem crescente, é possível inserir este código:
+  Para classificar o conjunto de resultados, especifique a cláusula `orderBy` como um elemento XML com o atributo `sortDesc`. Por exemplo, para classificar os sobrenomes em ordem crescente, é possível inserir este código:
 
-   ```xml
-   <orderBy>
-       <node expr="@lastName> sortDesc="false"/>
-   </orderBy>
-   ```
+  ```xml
+  <orderBy>
+      <node expr="@lastName> sortDesc="false"/>
+  </orderBy>
+  ```
 
 ### Etapa 2: criar um objeto de consulta
 
@@ -237,7 +237,7 @@ var query = xtk.queryDef.create(
 
 Prefixe o método `create(`*`content`*`)` com o schema da entidade a ser criada.
 
-O argumento *`content`* é um argumento de sequência, e é opcional. Esse argumento contém o código XML que descreve a entidade.
+O argumento *`content`* é um argumento de string, e é opcional. Esse argumento contém o código XML que descreve a entidade.
 
 ### Etapa 3: executar a consulta
 
@@ -368,11 +368,11 @@ O acionamento do workflow funciona por meio do uso de eventos. É possível usar
    * Adicione um script de inicialização à atividade **[!UICONTROL End]** do workflow inicial.
    * Adicione a atividade **[!UICONTROL External signal]** no início do workflow desejado.
 
-      Após a conclusão do workflow inicial, um evento é postado. A transição de saída é ativada e as variáveis do evento são preenchidas. Em seguida, o evento é recebido pelo workflow desejado.
+     Após a conclusão do workflow inicial, um evento é postado. A transição de saída é ativada e as variáveis do evento são preenchidas. Em seguida, o evento é recebido pelo workflow desejado.
 
-      >[!TIP]
-      >
-      >Como prática recomendada, ao adicionar um script a uma atividade, coloque o nome da atividade entre hifens duplos. Por exemplo: `-- end --`. [Saiba mais](workflow-best-practices.md) sobre as práticas recomendadas de workflow.
+     >[!TIP]
+     >
+     >Como prática recomendada, ao adicionar um script a uma atividade, coloque o nome da atividade entre hifens duplos. Por exemplo: `-- end --`. [Saiba mais](workflow-best-practices.md) sobre as práticas recomendadas de workflow.
 
 Sintaxe do método `PostEvent`:
 
@@ -555,7 +555,7 @@ for each (var w in res.recipient)
 * A operação `update` 
 * A operação `insertOrUpdate`, com o argumento `_key` para identificar o registro a ser atualizado
 
-   Se não especificar a pasta **Recipients**, e houver uma correspondência, o registro será atualizado em qualquer subpasta. Caso contrário, o registro será criado na pasta raiz de **Recipients**.
+  Se não especificar a pasta **Recipients**, e houver uma correspondência, o registro será atualizado em qualquer subpasta. Caso contrário, o registro será criado na pasta raiz de **Recipients**.
 
 * A operação `delete` 
 

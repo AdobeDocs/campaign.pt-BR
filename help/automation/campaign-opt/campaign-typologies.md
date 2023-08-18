@@ -51,7 +51,7 @@ O complemento Otimização de campanha fornece dois tipos adicionais de **regras
 
 >[!NOTE]
 >
->Se você estiver usando o **Interação** para gerenciar ofertas, você também pode criar **Apresentação da oferta** regras de tipologia para controlar o fluxo de apresentações de oferta usando regras de apresentação. [Saiba mais](../../v8/interaction/interaction-offer.md#offer-presentation).
+>Se você estiver usando a variável **Interação** para gerenciar ofertas, você também pode criar **Apresentação da oferta** regras de tipologia para controlar o fluxo de apresentações de oferta usando regras de apresentação. [Saiba mais](../../v8/interaction/interaction-offer.md#offer-presentation).
 
 
 ## Etapas principais para criar e usar tipologias {#apply-typologies}

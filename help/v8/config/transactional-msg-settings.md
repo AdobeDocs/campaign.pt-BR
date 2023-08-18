@@ -18,7 +18,7 @@ As mensagens transacionais (Centro de mensagens) são um módulo do Campaign cri
 
 Entender a arquitetura de mensagens transacionais no [esta página](../architecture/architecture.md#transac-msg-archi).
 
-![](../assets/do-not-localize/speech.png) Como usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para instalar e configurar as mensagens transacionais do Campaign em seu ambiente.
+![](../assets/do-not-localize/speech.png) Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para instalar e configurar as mensagens transacionais do Campaign em seu ambiente.
 
 ## Definir permissões
 
@@ -101,7 +101,7 @@ Na(s) instância(s) de execução, você deve iniciar os seguintes workflows té
 * **[!UICONTROL Processing real time events]** (internal name: **[!UICONTROL rtEventsProcessing]** ): esse workflow permite dividir eventos em tempo real em uma fila antes que eles sejam vinculados a um template de mensagem.
 * **[!UICONTROL Update event status]** (internal name: **[!UICONTROL updateEventStatus]** ): esse workflow permite que você atribua um status ao evento.
 
-   Os possíveis status do evento são:
+  Os possíveis status do evento são:
 
    * **[!UICONTROL Pending]**: o evento está na fila. Nenhum template de mensagem foi atribuído a ele.
    * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pelo delivery.

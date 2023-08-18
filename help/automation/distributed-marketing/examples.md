@@ -38,35 +38,35 @@ Neste exemplo, a atividade da **Campaign order** inclui:
 
 * campos a serem inseridos pela entidade local durante o pedido,
 
-   ![](assets/mkg_dist_web_app2.png)
+  ![](assets/mkg_dist_web_app2.png)
 
 * links que permitirão à entidade local avaliar a campanha (por exemplo, o target, o orçamento, o conteúdo, etc.),
 
-   ![](assets/mkg_dist_web_app3.png)
+  ![](assets/mkg_dist_web_app3.png)
 
 * scripts que permitem calcular e exibir o resultado destas avaliações.
 
-   ![](assets/mkg_dist_web_app4.png)
+  ![](assets/mkg_dist_web_app4.png)
 
 Neste exemplo, as seguintes APIs são usadas:
 
 * Para a avaliação de target,
 
-   ```
-   var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
+  ```
 
 * Para a avaliação do orçamento,
 
-   ```
-   var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
-   ```
+  ```
+  var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
+  ```
 
 * Para a avaliação de conteúdo,
 
-   ```
-   var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
+  ```
 
 ## Criar uma campanha colaborativa (por aprovação de target) {#creating-a-collaborative-campaign--by-target-approval-}
 
@@ -215,7 +215,7 @@ As etapas são as seguintes:
    * pré-visualizam o conteúdo do delivery,
    * aprovam sua participação.
 
-      ![](assets/mkg_dist_use_case_form_8.png)
+     ![](assets/mkg_dist_use_case_form_8.png)
 
 1. O operador encarregado de validar pedidos aprova a participação.
 

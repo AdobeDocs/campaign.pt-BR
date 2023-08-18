@@ -29,9 +29,9 @@ Depois de salvo, o delivery é adicionado ao painel de campanha.
 
 * A partir de um workflow da campanha, na variável **[!UICONTROL Targeting and workflows]** adicionando o delivery.
 
-   ![](assets/campaign-wf-delivery.png)
+  ![](assets/campaign-wf-delivery.png)
 
-   Depois que o workflow é iniciado, o delivery é adicionado ao painel de campanha.
+  Depois que o workflow é iniciado, o delivery é adicionado ao painel de campanha.
 
 Saiba como configurar e executar o fluxo de aprovação de entrega [nesta página](marketing-campaign-approval.md).
 
@@ -94,21 +94,21 @@ A extração de arquivo inicia dois processos: cálculo de orçamento e cálculo
 
 * A guia **[!UICONTROL Budget]** permite gerenciar os orçamentos da campanha. O total das entradas de custo é exibido no campo **[!UICONTROL Calculated cost]** da guia principal da campanha e o programa ao qual ele pertence. Os montantes também são refletidos no orçamento da campanha.
 
-   ![](assets/campaign-budget-tab.png)
+  ![](assets/campaign-budget-tab.png)
 
-   O custo real será calculado de acordo com as informações fornecidas pelo roteador. Apenas mensagens enviadas são faturadas.
+  O custo real será calculado de acordo com as informações fornecidas pelo roteador. Apenas mensagens enviadas são faturadas.
 
 * As existências são definidas no **[!UICONTROL Administration > Campaign management > Stocks]** nó da árvore.
 
-   ![](assets/campaign-stocks.png)
+  ![](assets/campaign-stocks.png)
 
-   Estruturas de custo na **[!UICONTROL Administration > Campaign management > Service providers]** nó.
+  Estruturas de custo na **[!UICONTROL Administration > Campaign management > Service providers]** nó.
 
-   ![](assets/campaign-service-providers.png)
+  ![](assets/campaign-service-providers.png)
 
-   As linhas de estoque estão visíveis na seção de estoque. Para definir o estoque inicial, abra uma linha de estoque. O estoque é reduzido sempre que um delivery ocorre. Você pode definir um nível de alerta e notificações.
+  As linhas de estoque estão visíveis na seção de estoque. Para definir o estoque inicial, abra uma linha de estoque. O estoque é reduzido sempre que um delivery ocorre. Você pode definir um nível de alerta e notificações.
 
 
-   >[!NOTE]
-   >
-   >Saiba mais sobre orçamentos [nesta seção](providers--stocks-and-budgets.md).
+  >[!NOTE]
+  >
+  >Saiba mais sobre orçamentos [nesta seção](providers--stocks-and-budgets.md).

@@ -59,6 +59,7 @@ Se o espaço for definido por um canal unitário no modo identificado, você dev
    >[!NOTE]
    >
    >Quando um espaço de ofertas é criado no canal de entrada da Web, é necessário configurar o site para exibir essa oferta.
+   >
 
 ### Criar e publicar o catálogo de ofertas {#managing-the-offer-catalog-}
 
@@ -77,7 +78,7 @@ Como um **Gerente de delivery**  você deve:
 
 ## Glossário
 
-Descubra os termos específicos da oferta e as orientações relacionadas antes de começar.
+Descubra os termos específicos da oferta e as orientações relacionadas antes de iniciar.
 
 * **Ambiente**: conjunto que inclui um catálogo de oferta e ganchos (espaços de ofertas). Crie um ambiente por targeting dimension. Há dois tipos de ambientes:
 
@@ -90,29 +91,29 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
    * criar o conteúdo da oferta usando funções de renderização
    * especificar as ofertas a serem apresentadas
 
-   Um espaço é uma interface entre o canal e o mecanismo de oferta.
+  Um espaço é uma interface entre o canal e o mecanismo de oferta.
 
-   >[!CAUTION]
-   >
-   >Um espaço de ofertas não é um canal de comunicação, ele coincide com um local específico de exposição no canal. Por exemplo, as ofertas expostas em um site pode ocupar dois espaços na mesma página. Nesse caso, você tem dois espaços para o mesmo canal.
-   >
-   >Os espaços devem ser definidos nas especificações e não devem ser modificados durante o projeto.
+  >[!CAUTION]
+  >
+  >Um espaço de ofertas não é um canal de comunicação, ele coincide com um local específico de exposição no canal. Por exemplo, as ofertas expostas em um site pode ocupar dois espaços na mesma página. Nesse caso, você tem dois espaços para o mesmo canal.
+  >
+  >Os espaços devem ser definidos nas especificações e não devem ser modificados durante o projeto.
 
 * **Catálogo de oferta**: conjunto de ofertas definido no Adobe Campaign que pode ser selecionado durante uma interação. O catálogo é organizado hierarquicamente com cada nó correspondente a uma categoria.
 * **Categoria**: uma pasta vinculada ao catálogo de oferta em um ambiente, que organiza ofertas com base na natureza, na data de elegibilidade e no tema da aplicação. Uma categoria pode conter subcategorias, que herdam todas as características da categoria principal. As regras de elegibilidade podem ser definidas para uma categoria como compartilhada para várias ofertas.
 * **Temas da aplicação**: palavras-chave definidas na categoria, que permitem filtrar ofertas quando são apresentadas a um canal de entrada ou saída, restringindo a seleção de ofertas a uma ou duas categorias.
 
-   >[!NOTE]
-   >
-   >As categorias derivadas herdam os temas identificados na categoria principal.
+  >[!NOTE]
+  >
+  >As categorias derivadas herdam os temas identificados na categoria principal.
 
 * **Regras de elegibilidade**: restrições aplicadas a um ambiente, categoria ou oferta sobre o período de validade, público-alvo e peso. Eles permitem garantir que uma oferta esteja alinhada com o contato alvo.
 
-   Nos ambientes, as regras de elegibilidade incluem regras de apresentação aplicadas às ofertas e às pessoas a serem públicos-alvo.
+  Nos ambientes, as regras de elegibilidade incluem regras de apresentação aplicadas às ofertas e às pessoas a serem públicos-alvo.
 
-   Nas categorias, as regras de elegibilidade permitem: limitar a validade da categoria no tempo, definir temas de aplicação e determinar as pessoas a serem públicos-alvo. Eles também podem receber um peso multiplicador por um determinado tempo. Isso permite compartilhar as regras para ofertas em outras categorias e simplifica sua administração.
+  Nas categorias, as regras de elegibilidade permitem: limitar a validade da categoria no tempo, definir temas de aplicação e determinar as pessoas a serem públicos-alvo. Eles também podem receber um peso multiplicador por um determinado tempo. Isso permite compartilhar as regras para ofertas em outras categorias e simplifica sua administração.
 
-   Nas ofertas, as regras de elegibilidade permitem limitar a validade de ofertas no tempo e determinar as pessoas a serem públicos-alvo.
+  Nas ofertas, as regras de elegibilidade permitem limitar a validade de ofertas no tempo e determinar as pessoas a serem públicos-alvo.
 
 * **Arbitragem**: seleção de ofertas para exibição em um ambiente (ofertas elegíveis). O princípio de arbitragem classifica as ofertas por prioridade de acordo com os critérios definidos nas categorias, ofertas e ofertas de contexto.
 * **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a um targeting dimension. Há dois tipos de contatos:
@@ -120,9 +121,9 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
    * **[!UICONTROL Identified contact]** : um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
    * **[!UICONTROL Anonymous contact]** : um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
 
-      >[!NOTE]
-      >
-      >Contatos anônimos e não identificados são atribuídos ao targeting dimension do visitante.
+     >[!NOTE]
+     >
+     >Contatos anônimos e não identificados são atribuídos ao targeting dimension do visitante.
 
 * **Interação de saída**: chamada para o mecanismo de oferta de uma lista de contatos (usada para delivery de emails, mala direta etc.). As mesmas regras e processos são aplicados a cada contato. Normalmente, esse tipo de interação é processado em modo de lote.
 * **Interação de entrada**: interação seguindo uma chamada recebida gerada pela ação de um contato no canal. Esse tipo de interação geralmente é processado no modo unitário.

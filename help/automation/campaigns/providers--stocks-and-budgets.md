@@ -64,9 +64,9 @@ Para criar um template de serviço e definir seu conteúdo, siga as etapas abaix
    * Clique no botão **[!UICONTROL Add]** para definir os tipos de custo associados a esta categoria.
    * Se necessário, associada a uma linha de estoque com cada tipo de custo para que as quantidades usadas sejam relacionadas automaticamente aos estoques existentes.
 
-      >[!NOTE]
-      >
-      >As linhas de estoque são definidas no nó **[!UICONTROL Stock management]**. [Saiba mais](#stock-and-order-management).
+     >[!NOTE]
+     >
+     >As linhas de estoque são definidas no nó **[!UICONTROL Stock management]**. [Saiba mais](#stock-and-order-management).
 
 1. Você pode pré-selecionar um valor para essa categoria de custo, que é o padrão nas categorias de custo do provedor de serviços (em vez de uma vazia). Para fazer isso, ative a variável **Sim** opção no **[!UICONTROL Selected]** coluna para o tipo de categoria em causa:
 
@@ -84,15 +84,15 @@ Clique na guia **[!UICONTROL Cost structure]** para configurar o cálculo de cus
 
 * Para criar a estrutura de custos, selecione o tipo de mensagem e a categoria de custo relacionada às listas suspensas, bem como o tipo de custo ao qual a regra de cálculo será aplicada. O conteúdo dessas listas suspensas é proveniente das informações inseridas por meio da guia **[!UICONTROL Cost categories]**.
 
-   Você deve atribuir um rótulo à estrutura de custos. Por padrão, ela tem o seguinte delivery outline: **Cost category - Type of cost**.
+  Você deve atribuir um rótulo à estrutura de custos. Por padrão, ela tem o seguinte delivery outline: **Cost category - Type of cost**.
 
-   No entanto, você pode renomeá-la: digite o valor desejado diretamente no campo **[!UICONTROL Label]**.
+  No entanto, você pode renomeá-la: digite o valor desejado diretamente no campo **[!UICONTROL Label]**.
 
 * A fórmula de cálculo de custo é definida na seção inferior da janela.
 
-   Essa fórmula pode ser corrigida (para qualquer número de mensagens) ou calculadas de acordo com o número de mensagens.
+  Essa fórmula pode ser corrigida (para qualquer número de mensagens) ou calculadas de acordo com o número de mensagens.
 
-   Quando depender do número de mensagens, a estrutura de cálculo de custos pode ser **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]** ou **[!UICONTROL Constant by threshold]**.
+  Quando depender do número de mensagens, a estrutura de cálculo de custos pode ser **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]** ou **[!UICONTROL Constant by threshold]**.
 
 #### Estrutura linear {#linear-structure}
 
@@ -129,7 +129,7 @@ Você pode associar informações nos processos associados ao provedor de servi�
 
 * A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de recipients.
 
-   Por padrão, os modelos de delivery para mensagens de notificação são salvos na variável **[!UICONTROL Administration > Campaign management > Technical delivery templates]** pasta, que pode ser acessada na visualização geral.
+  Por padrão, os modelos de delivery para mensagens de notificação são salvos na variável **[!UICONTROL Administration > Campaign management > Technical delivery templates]** pasta, que pode ser acessada na visualização geral.
 
 * A seção **[!UICONTROL Post-processing]** permite que você selecione o workflow a ser iniciado após a aprovação do delivery. Se um template de workflow for inserido, uma instância de workflow será criada automaticamente e será iniciada assim que a aprovação entrar em vigor. Esse workflow pode enviar o arquivo de extração para um provedor de serviços externos para processamento, por exemplo.
 
@@ -145,12 +145,12 @@ Quando um serviço é selecionado, as categorias de custo correspondentes ao tip
 
 * Para um delivery de mala direta, você pode selecionar o serviço na janela de configuração.
 
-   ![](assets/supplier-mail-delivery-select.png)
+  ![](assets/supplier-mail-delivery-select.png)
 
 * Para uma entrega em canais móveis ou telefone, é possível aplicar o mesmo modo de seleção.
 * Para um delivery de email, o serviço é selecionado na guia **[!UICONTROL Advanced]** nas propriedades do delivery, como no exemplo a seguir:
 
-   ![](assets/supplier-email-delivery-select.png)
+  ![](assets/supplier-email-delivery-select.png)
 
 A coluna **[!UICONTROL Amount to surcharge]** permite que você adicione um custo para essa categoria no contexto do delivery ou tarefa relacionada.
 
@@ -201,7 +201,7 @@ Clique em **[!UICONTROL Create]** botão para adicionar novas linhas de estoque.
 
 * Indique a quantidade inicialmente em estoque no campo **[!UICONTROL Initial stock]**. Os campos **[!UICONTROL Consumed]** e **[!UICONTROL In stock]** são calculados automaticamente e atualizados conforme as campanhas avançam.
 
-   ![](assets/create-new-stock-line.png)
+  ![](assets/create-new-stock-line.png)
 
 * Indique o limite do qual os operadores devem ser avisados no estoque de pedidos no campo **[!UICONTROL Alert level]**. Quando o nível de alerta for atingido, uma mensagem de aviso será exibida na janela de aprovação de entregas usando esse estoque.
 

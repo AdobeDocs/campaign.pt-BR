@@ -19,19 +19,19 @@ Neste exemplo, queremos recuperar os nomes e e-mails dos recipients cujos domín
 
 * Qual tabela devemos selecionar?
 
-   A tabela de recipient (nms:recipient)
+  A tabela de recipient (nms:recipient)
 
 * Campos a serem selecionados como colunas de saída
 
-   E-mail, nome, cidade e número da conta
+  E-mail, nome, cidade e número da conta
 
 * Quais são as condições do filtro dos recipients?
 
-   domínio de e-mail e cidade
+  domínio de e-mail e cidade
 
 * É configurada uma classificação?
 
-   Sim, com base em **[!UICONTROL Account number]** e **[!UICONTROL Last name]**.
+  Sim, com base em **[!UICONTROL Account number]** e **[!UICONTROL Last name]**.
 
 Para criar este exemplo, aplique as seguintes etapas:
 

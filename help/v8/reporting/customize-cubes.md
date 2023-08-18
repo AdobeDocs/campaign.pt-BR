@@ -82,11 +82,11 @@ Também é possível gerar compartimentos automaticamente. Para fazer isso, cliq
 
 * **[!UICONTROL Recover the most frequently used values]**
 
-   Se você gerar 4 compartimentos, os 4 valores usados com mais frequência serão exibidos, enquanto os outros serão contados e agrupados na categoria &quot;Outros&quot;.
+  Se você gerar 4 compartimentos, os 4 valores usados com mais frequência serão exibidos, enquanto os outros serão contados e agrupados na categoria &quot;Outros&quot;.
 
 * **[!UICONTROL Generate bins in the form of slots]**
 
-   Para a mesma amostra, o Adobe Campaign cria automaticamente quatro slots de valor do mesmo tamanho para exibir os valores no banco de dados.
+  Para a mesma amostra, o Adobe Campaign cria automaticamente quatro slots de valor do mesmo tamanho para exibir os valores no banco de dados.
 
 Nesse caso, o filtro selecionado no schema de fatos é ignorado.
 
@@ -140,7 +140,7 @@ Para criar uma nova agregação, siga as etapas abaixo:
    * A atividade **[!UICONTROL Scheduler]** permite definir a frequência das atualizações de cálculo. O programador é detalhado [nesta seção](../../automation/workflow/scheduler.md).
    * A atividade **[!UICONTROL Aggregate update]** permite selecionar o modo de atualização que deseja aplicar: completo ou parcial.
 
-      Por padrão, uma atualização completa é realizada durante cada cálculo. Para habilitar uma atualização parcial, selecione a opção relevante e defina as condições de atualização.
+     Por padrão, uma atualização completa é realizada durante cada cálculo. Para habilitar uma atualização parcial, selecione a opção relevante e defina as condições de atualização.
 
 ## Definir medidas {#define-measures}
 
@@ -186,7 +186,7 @@ A configuração de medidas, linhas e colunas pode ser executada individualmente
 
 * Clique no ícone **[!UICONTROL Edit the configuration of the pivot table]** para acessar a janela de configuração.
 
-   É possível escolher se exibe ou não os rótulos das medidas, bem como configurar o layout (linhas ou colunas).
+  É possível escolher se exibe ou não os rótulos das medidas, bem como configurar o layout (linhas ou colunas).
 
 ![](assets/cube-pivot-table-config-details.png)
 

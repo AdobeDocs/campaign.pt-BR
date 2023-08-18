@@ -24,4 +24,4 @@ Isso significa que você pode aproveitar ao máximo os recursos de edição de c
 
 ![](../assets/do-not-localize/book.png) [Descubra esta integração nesta amostra completa](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, [Adobe de contato](../start/campaign-faq.md#support) para integrar o Adobe Experience Manager ao Campaign.
+![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para integrar o Adobe Experience Manager ao Campaign.
