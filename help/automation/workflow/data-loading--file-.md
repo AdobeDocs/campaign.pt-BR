@@ -4,10 +4,10 @@ title: Carregamento de dados (arquivo)
 description: Saiba mais sobre a atividade de workflow de carregamento de dados (arquivo)
 feature: Workflows, Data Management Activity
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: cf88140d1e8b71203729732163f66060423965a0
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 100%
+source-wordcount: '1037'
+ht-degree: 99%
 
 ---
 
@@ -32,6 +32,10 @@ A seção superior da janela de configuração dessa atividade permite definir o
 Você pode definir um pré-processamento a ser executado durante a importação do arquivo, por exemplo, para não precisar descompactar o arquivo no servidor (e, portanto, economizar espaço para o arquivo descompactado), e incluir a descompactação no processamento de arquivo. Selecione a opção **[!UICONTROL Pre-process the file]** e escolha uma das três opções: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) ou **[!UICONTROL Decrypt]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
+
+>[!IMPORTANT]
+>
+>Não é possível descompactar arquivos compactados com mais de 4 Gb.
 
 ## Definição do formato de arquivo {#defining-the-file-format}
 
