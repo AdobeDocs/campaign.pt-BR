@@ -59,7 +59,7 @@ ht-degree: 94%
    + Validar e enviar o delivery {#validate}
    + [Visualização e provas](send/preview-and-proof.md)
    + [Análise de entrega](send/delivery-analysis.md)
-   + [Configurar e enviar o delivery](send/configure-and-send.md)
+   + [Configurar e enviar a entrega](send/configure-and-send.md)
    + [Otimização da hora de envio](send/predictive.md)
    + Falhas, rejeições e quarentenas{#failures}
       + [Quarentenas](send/quarantines.md)
@@ -88,7 +88,7 @@ ht-degree: 94%
       + [Criar e gerenciar filtros](audiences/create-filters.md)
       + [Compartilhar públicos-alvo com soluções Adobe](start/shared-audiences.md)
    + [Práticas recomendadas](audiences/audiences-best-practices.md)
-   + [Gerenciar subscrições](start/subscriptions.md)
+   + [Gerenciar assinaturas](start/subscriptions.md)
 + Gestão de conteúdo {#content}
    + [Criar aplicativos e formulários Web](dev/webapps.md)
 + Gerenciamento de privacidade e segurança {#privacy}
