@@ -3,9 +3,9 @@ title: Migrar operadores do Campaign para o Adobe Identity Management System (IM
 description: Saiba como migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 hide: true
 hidefromtoc: true
-source-git-commit: 11128dcb26119383b86aa62561ec0ce1a3c138ad
+source-git-commit: a141ba08b9c40fb89cfdf63c3078082d32afd861
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '951'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ As principais etapas dessa migração estão listadas abaixo:
 Agora é possível planejar a migração de usuários técnicos para o IMS de acordo com [esta nota técnica](ims-migration.md)e confirme para o Gerenciador de transição do Adobe quando concluído.
 O Adobe marcará a migração como concluída e ativará os sinalizadores para bloquear a criação de novos usuários nativos e o logon de usuários nativos.
 
-## Perguntas frequentes? {#ims-migration-faq}
+## Perguntas frequentes {#ims-migration-faq}
 
 ### Quando você pode iniciar a migração? {#ims-migration-start}
 
@@ -58,7 +58,7 @@ Um pré-requisito para a migração para o Adobe Identity Management System (IMS
 
 Você pode iniciar a migração do IMS no ambiente de preparo depois que ele for atualizado para o Campaign v8.5.2 e planejar adequadamente o ambiente de produção.
 
-### O que acontece após a atualização da build 8.5.2? {#ims-migration-after-upgrade}
+### O que acontece após a atualização de build para o Campaign v8.5.2? {#ims-migration-after-upgrade}
 
 Depois que seus ambientes forem atualizados para o Campaign v8.5.2, você poderá executar a migração do Adobe Identity Management System (IMS).
 
@@ -90,3 +90,20 @@ Como administrador do Campaign, você deve adicionar IDs de email para todos os 
 ### Como fazer logon no Campaign via IMS? {#ims-migration-log}
 
 Saiba como se conectar ao Campaign com sua Adobe ID no [nesta seção](../../v8/start/connect.md).
+
+### Haverá um tempo de inatividade durante essa migração? {#ims-migration-downtime}
+
+Para finalizar a migração (migrar usuários e perfis de produtos), o Adobe requer uma janela de uma hora sem tempo de inatividade para nenhuma de suas instâncias (workflows etc.).
+
+Durante esse período, todos os usuários do Campaign precisam fazer logoff e fazer logon novamente com sua Adobe ID após a conclusão da migração para o IMS.
+
+
+### O que acontece com os usuários conectados durante a migração de usuário do IMS? {#ims-migration-log-off}
+
+A Adobe recomenda que todos os usuários sejam desconectados durante a janela de migração.
+
+### Os usuários em minha organização já estão usando o IMS. Ainda preciso executar a Migração do IMS?
+
+Há dois aspectos nesta migração: Migração de usuários não técnicos &quot;humanos&quot; e Migração de usuários técnicos (usada em APIs do seu código personalizado).
+
+Se todos os usuários (operadores do Campaign) estiverem no IMS, não será necessário executar essa migração. No entanto, ainda é necessário migrar Usuários técnicos que podem ter sido usados no código personalizado. Saiba mais [nesta página](ims-migration.md).
