@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 758d542b353a2d784407954089586e761825d740
+source-git-commit: c4a1539f140e85e1e8c97f743f9c6c0bba52e4de
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 51%
+source-wordcount: '1489'
+ht-degree: 55%
 
 ---
 
@@ -38,7 +38,6 @@ O Campaign v8.5.1 está apresentando nosso serviço de notificação por push ma
 Para obter mais informações, consulte a [documentação detalhada](../send/push-data-collection.md).
 
 
-**Maior taxa de transferência do canal móvel**
 
 <!--
 The newly introduced Push notification service showcases significant improvements in throughput for both Push Android and Push iOS compared to our previous version (v8.4). Users will experience notably enhanced performance with the upgraded service in the latest version (v8.5).
@@ -60,7 +59,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 </td>
 <td>
 <div>
-
+<p><strong>Maior taxa de transferência do canal móvel</strong></p>
 <p>O serviço de notificação por push recém-introduzido mostra melhorias significativas na taxa de transferência do Push Android e do Push iOS em comparação à versão anterior (v8.4). Os usuários terão um desempenho notavelmente aprimorado com o serviço atualizado na versão mais recente (v8.5). </p>
 <ul>
 <li>Notificações por push (Android): até <strong>5x</strong> mais rápido </li>
@@ -85,8 +84,8 @@ These max throughput performances have been measured by Adobe testing teams, in 
 
 **Melhorias de segurança**
 
-* A partir do Campaign v8.5.1, o processo de autenticação para o Campaign v8 foi aprimorado. Os operadores técnicos devem usar o Adobe Identity Management System (IMS) para se conectarem ao Campaign. Saiba como migrar as contas técnicas existentes no [esta nota técnica](../../technotes/upgrades/ims-migration.md).
-* Não é possível mais criar operadores no Console do cliente do Campaign. A interface do usuário do foi atualizada adequadamente. Agora você deve usar o Adobe Admin Console. [Saiba mais](../start/gs-permissions.md).
+* Com o Campaign v8.5.1, o processo de autenticação para o Campaign v8 foi aprimorado e protegido. Os operadores técnicos agora devem usar o Adobe Identity Management System (IMS) para se conectarem ao Campaign. Saiba como migrar as contas técnicas existentes no [esta nota técnica](../../technotes/upgrades/ims-migration.md).
+* A partir da próxima versão 8.6, você não poderá mais criar operadores no Console do cliente do Campaign. Se você estiver usando a autenticação nativa de logon/senha, migre seus operadores para o Adobe Identity Management System (IMS). Saiba como migrar seus operadores no [esta nota técnica](../../technotes/upgrades/migrate-users-to-ims.md).
 * Várias ferramentas de terceiros foram atualizadas para otimizar a segurança.
 
 **Atualizações de compatibilidade**
@@ -97,7 +96,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 
 **Correções**
 
-* Correção de um problema que poderia resultar na codificação incorreta de caracteres especiais no conteúdo HTML de um delivery em vários navegadores. (NEO-60081)
+* Correção de um problema que poderia resultar na codificação incorreta de caracteres especiais no conteúdo HTML de uma entrega em vários navegadores. (NEO-60081)
 * Correção de um problema que impedia salvar um relatório em uma implantação corporativa (FFDA) do Campaign v8. (NEO-56836)
 * Correção de um problema ao inserir ou atualizar dados em um esquema FFDA personalizado por meio de uma atividade de fluxo de trabalho Atualizar dados. (NEO-54708)
 * Correção de um problema que impedia que o workflow de limpeza do banco de dados removesse endereços na tabela nms:address no FFDA. (NEO-54460)
@@ -106,9 +105,9 @@ These max throughput performances have been measured by Adobe testing teams, in 
 * Corrigido um problema que impedia o funcionamento da função `JSPContext.sqlExecWithOneParam`. (NEO-50066)
 * Correção de um problema que resultava em falhas de delivery ao usar caracteres não imprimíveis em campos de personalização. (NEO-48588)
 * Correção de um problema que poderia causar erros de entrega ao inserir imagens dinâmicas do Adobe Target. (NEO-62689)
-* Correção de um problema para impedir que os navegadores adicionassem espaços extras ao usar conteúdo condicional em uma entrega. (NEO-62132)
+* Correção de um problema para impedir que os navegadores adicionem espaços extras ao usar conteúdo condicional em uma entrega. (NEO-62132)
 * Correção de um problema que fazia com que uma janela pop-up fosse aberta ao clicar em uma imagem no editor de conteúdo de email. (NEO-60752)
-* Correção de um problema que poderia resultar em erro e impedir a rolagem ao editar o conteúdo de um delivery. (NEO-61364)
+* Correção de um problema que poderia resultar em um erro e impedir a rolagem da tela ao editar o conteúdo de uma entrega. (NEO-61364)
 * O Adobe Analytics Connector agora exporta as métricas com o tipo de canal correto. Anteriormente, ele sempre era definido como canal de &quot;email&quot;. (NEO-26340)
 * Correção de um problema que poderia resultar em erros ao usar o conector Big Query com campos de data e hora. (NEO-49768)
 
