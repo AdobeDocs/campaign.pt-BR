@@ -5,10 +5,10 @@ type: Event
 title: Notas técnicas do Adobe Campaign
 description: Notas técnicas do Campaign
 breadcrumb-title: Notas técnicas do Campaign
-source-git-commit: 7430387df278644a1bc3b82ba193b37a76fa99a2
+source-git-commit: d0935df57d8a25fa023dd93e7923c2728d889577
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 28%
+source-wordcount: '51'
+ht-degree: 25%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 28%
 + Atualizações{#tn-new}
    + [Migrar usuários para o IMS](upgrades/migrate-users-to-ims.md)
    + [Migrar operador técnico para o Console do desenvolvedor](upgrades/ims-migration.md)
+   + [Campanha enviando migração de infraestrutura para o AWS](upgrades/migrate-to-aws.md)
    + [Atualizar versão do Apache](upgrades/apache.md)
    + [Navegadores da Internet](upgrades/browsers.md)
    + [Atualizações de sistema de 2023](upgrades/tech-stack-upgrade.md)
