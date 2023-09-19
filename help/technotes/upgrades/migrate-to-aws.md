@@ -3,9 +3,9 @@ title: Migrar a infraestrutura de envio do Campaign para o Amazon Web Services (
 description: Migrar a infraestrutura de envio do Campaign para o Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 3a8fd0a0c721d03f1818dce45b58a841284bbb00
+source-git-commit: f1b4002063c8b94eb7251a9bcde9fe11791d0be3
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '401'
 ht-degree: 6%
 
 ---
