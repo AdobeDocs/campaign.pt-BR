@@ -3,10 +3,10 @@ title: Migrar a infraestrutura de envio do Campaign para o Amazon Web Services (
 description: Migrar a infraestrutura de envio do Campaign para o Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 53080e3641e0070b0b6e47d1ec8b55b4c7aa2b1a
+source-git-commit: 557d61e0e015fa955b70858d614e476febd467cb
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 5%
+source-wordcount: '401'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,11 @@ Essa mudança garantirá alta disponibilidade, throughput ideal e capacidade de 
 
 ## Você será afetado?{#aws-impact}
 
-Você será afetado como cliente do v8 ou como cliente do Managed Services Campaign, híbrido ou hospedado no v7.
+Essa alteração afeta:
+
+* Clientes hospedados e híbridos do Campaign Classic v7
+* Clientes do Campaign Managed Services
+* Todos os clientes do Campaign v8
 
 ## Quando ocorrerá essa migração?{#aws-timeline}
 
@@ -29,21 +33,43 @@ A migração de ambientes de desenvolvimento e de preparo ocorrerá em **Outubro
 
 A migração de ambientes de produção está programada para começar em **Janeiro de 2024**. Mais detalhes serão fornecidos à medida que a data se aproximar.
 
-Como cliente do Campaign, você receberá uma notificação adicional, pois as ondas de migração estão programadas. As notificações serão enviadas pelo menos sete dias antes da migração.
+Como cliente do Campaign, você receberá uma notificação adicional, pois as ondas de migração estão programadas. As notificações serão enviadas pelo menos 7 dias antes da migração para ambientes de preparo e pelo menos 30 dias antes da migração para ambientes de produção.
 
 ## Qual é o impacto?{#impact}
 
 Essa mudança será transparente para os clientes:
 
-* O envio de IPs e a versão de build do Campaign permanecerão os mesmos anteriores à movimentação.
+* A migração deve demorar entre 30 min e 60 min
 
-* Durante a janela de migração, as instâncias do Campaign não poderão enviar emails. Nenhuma outra função do Campaign será afetada.
-
-* Qualquer email enfileirado para entrega antes da janela de manutenção deve ser reenviado.
-
->[!NOTE]
->
->Em caso de dúvidas sobre essa migração, entre em contato com o representante da Adobe ou [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
->
+* As instâncias do Campaign não poderão enviar emails durante a janela de migração. Nenhuma outra função do Campaign será afetada.
 
 
+## Perguntas frequentes {#aws-faq}
+
+* **Por que esta é uma atualização obrigatória?**
+
+  A nova infraestrutura de envio do Campaign hospedada pela Adobe Web Services (AWS) oferece melhor qualidade e confiabilidade para nossos clientes. Ele também fornece uma infraestrutura forte e moderna para garantir melhor disponibilidade e throughput ideal.
+
+* **Quais clientes são direcionados para essa migração?**
+
+  Todos os clientes do Campaign v8 e o Campaign Classic v7 híbrido, hospedado e o Campaign Managed Services terão seus ambientes migrados.
+
+* **Qual é o tempo de inatividade esperado?**
+
+  O tempo de inatividade esperado é de 30 a 60 minutos.
+
+* **O cliente precisa realizar alguma ação para a migração?**
+
+  Nenhuma ação é necessária, pois a migração será executada automaticamente pelo Adobe.
+
+* **Quais validações precisam ser executadas pelos clientes?**
+
+  Nenhum teste específico é necessário para esta atualização de segurança. Caso algum problema seja observado, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+
+
+* **Posso solicitar uma alteração na Data/Hora para o slot de atualização de segurança programado?**
+
+  Como essa é uma migração obrigatória, recomendamos que você se adapte à programação existente.
+
+
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
