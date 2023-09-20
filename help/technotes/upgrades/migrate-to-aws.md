@@ -3,10 +3,10 @@ title: Migrar a infraestrutura de envio do Campaign para o Amazon Web Services (
 description: Migrar a infraestrutura de envio do Campaign para o Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: f1b4002063c8b94eb7251a9bcde9fe11791d0be3
+source-git-commit: 15beb6e4aae7a00b245277bcb4c6c60c13b22884
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 6%
+source-wordcount: '430'
+ht-degree: 7%
 
 ---
 
@@ -26,6 +26,7 @@ Essa alteração afeta:
 * Clientes hospedados e híbridos do Campaign Classic v7
 * Clientes do Campaign Managed Services
 * Todos os clientes do Campaign v8
+* clientes do Campaign Standard
 
 ## Quando ocorrerá essa migração?{#aws-timeline}
 
@@ -48,11 +49,13 @@ Essa mudança será transparente para os clientes:
 
 * **Por que esta é uma atualização obrigatória?**
 
-  A nova infraestrutura de envio do Campaign hospedada pela Adobe Web Services (AWS) oferece melhor qualidade e confiabilidade para nossos clientes. Ele também fornece uma infraestrutura forte e moderna para garantir melhor disponibilidade e throughput ideal.
+  O Adobe planeja desativar o data center herdado, as instâncias do Adobe Campaign em execução devem ser transferidas para o novo data center de referência, o Amazon Web Services (AWS).
+
+  A nuvem do Adobe Managed Services é hospedada no Amazon Web Services (AWS), um ambiente moderno, seguro e otimizado. [Saiba mais sobre o Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
 
 * **Quais clientes são direcionados para essa migração?**
 
-  Todos os clientes do Campaign v8 e o Campaign Classic v7 híbrido, hospedado e o Campaign Managed Services terão seus ambientes migrados.
+  Todos os clientes do Campaign v8 e o Campaign Classic v7 híbrido, hospedado e o Campaign Managed Services terão seus ambientes migrados. Os clientes do Campaign Standard também são afetados.
 
 * **Qual é o tempo de inatividade esperado?**
 
@@ -64,7 +67,7 @@ Essa mudança será transparente para os clientes:
 
 * **Quais validações precisam ser executadas pelos clientes?**
 
-  Nenhum teste específico é necessário para essa migração. Caso algum problema seja observado, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+  Nenhum teste específico é necessário para essa migração. Caso algum problema seja observado, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **Posso solicitar uma alteração na Data/Hora para o slot de atualização de segurança programado?**
@@ -72,4 +75,4 @@ Essa mudança será transparente para os clientes:
   Como essa é uma migração obrigatória, recomendamos que você se adapte à programação existente.
 
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
