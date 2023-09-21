@@ -3,10 +3,10 @@ title: Migrar a infraestrutura de envio do Campaign para o Amazon Web Services (
 description: Migrar a infraestrutura de envio do Campaign para o Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 15beb6e4aae7a00b245277bcb4c6c60c13b22884
+source-git-commit: 9401e3564b53b920dd6a640ca6d00531992a2f21
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 7%
+source-wordcount: '481'
+ht-degree: 6%
 
 ---
 
@@ -40,7 +40,7 @@ Como cliente do Campaign, você receberá uma notificação adicional, pois as o
 
 Essa mudança será transparente para os clientes:
 
-* A migração deve demorar entre 30 min e 60 min
+* A duração de cada onda de migração pode variar dependendo do número de instâncias do Campaign afetadas. Quando uma onda de migração é programada, a notificação incluirá a duração esperada.
 
 * As instâncias do Campaign não poderão enviar emails durante a janela de migração. Nenhuma outra função do Campaign será afetada.
 
@@ -59,7 +59,7 @@ Essa mudança será transparente para os clientes:
 
 * **Qual é o tempo de inatividade esperado?**
 
-  O tempo de inatividade esperado é de 30 a 60 minutos.
+  A migração deve levar entre 30 min e 60 min, mas a duração de cada onda de migração pode variar dependendo do número de instâncias do Campaign afetadas. Quando uma onda de migração é programada, a notificação incluirá a duração esperada.
 
 * **O cliente precisa realizar alguma ação para a migração?**
 
@@ -72,7 +72,6 @@ Essa mudança será transparente para os clientes:
 
 * **Posso solicitar uma alteração na Data/Hora para o slot de atualização de segurança programado?**
 
-  Como essa é uma migração obrigatória, recomendamos que você se adapte à programação existente.
-
+  Como essa é uma migração obrigatória, não podemos acomodar modificações na programação existente.
 
 Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
