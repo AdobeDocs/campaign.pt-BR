@@ -1,9 +1,9 @@
 ---
 title: Migração de usuários técnicos para o console do Adobe Developer
 description: Saiba como migrar operadores técnicos do Campaign para a conta técnica no console do Adobe Developer
-source-git-commit: 43a124dd64532ffe84ca2b300113cacc545a811a
+source-git-commit: 35263dc042642a6ba2f162461364b9399c30ad18
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -39,15 +39,15 @@ As principais etapas são:
 
 ### Pré-requisitos{#ims-migration-prerequisites}
 
-Antes de iniciar o processo de migração, entre em contato com o representante da Adobe para que as equipes técnicas da Adobe possam migrar seus grupos de operadores e direitos nomeados existentes para o Adobe Identity Management System (IMS).
+Antes de iniciar o processo de migração, entre em contato com o Gerenciador de transição do Adobe para que as equipes técnicas do Adobe possam migrar seus grupos de operadores e direitos nomeados existentes para o Adobe Identity Management System (IMS).
 
 ### Etapa 1 — criar/atualizar o projeto do Campaign no console do Adobe Developer{#ims-migration-step-1}
 
 As integrações são criadas como parte de um **Projeto** no console do Adobe Developer. Saiba mais sobre Projetos em [Documentação do console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-Como usuário do Campaign v8, você já deve ter um projeto no Console do Adobe Developer. Caso contrário, você deve criar um projeto. As etapas para criar um projeto são detalhadas [na documentação do Console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
+Você pode usar qualquer projeto criado anteriormente por você ou criar um novo projeto. As etapas para criar um projeto estão detalhadas na [Documentação do console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
 
-Depois de ter acesso ao projeto do Campaign, você pode adicionar serviços, incluindo APIs, Adobe Campaign e API de gerenciamento de E/S. Para esta migração, você deve adicionar as APIs abaixo no seu projeto: **API de gerenciamento de E/S** e **Adobe Campaign**.
+Para esta migração, você deve adicionar as APIs abaixo no seu projeto: **API de gerenciamento de E/S** e **Adobe Campaign**.
 
 ![](assets/do-not-localize/ims-products-and-services.png)
 
