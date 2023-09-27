@@ -3,9 +3,9 @@ title: Atualização da infraestrutura de envio de email do Campaign
 description: Atualização da infraestrutura de envio de email do Campaign
 hide: true
 hidefromtoc: true
-source-git-commit: 45ef2b46f2612bdb814270d8ef9e257fcaf98e5b
+source-git-commit: aa3ec8e96d3bda80d5cbd4b4d98cad07b4560b14
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '366'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,6 @@ Essa alteração afeta:
 * Clientes do Adobe Campaign Classic Managed Services
 * Clientes do Adobe Campaign Managed Cloud Services
 * Clientes do Adobe Campaign Standard On-demand
-* Clientes sob demanda do Adobe Campaign Cloud Messaging
 
 ## Quando ocorrerá essa migração?{#aws-timeline}
 
