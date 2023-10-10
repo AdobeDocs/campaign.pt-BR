@@ -2,9 +2,9 @@
 product: campaign
 title: Introdução ao gerenciamento de recursos de marketing
 description: Sobre o gerenciamento de recursos de marketing
-role: Admin, Developer, User
+role: Admin, User
 exl-id: 6fa4f4e3-c5a5-4d7f-8e71-826dee4e926a
-source-git-commit: e6b1790832be6331f4b27cc50b5d034ad738a822
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 95%

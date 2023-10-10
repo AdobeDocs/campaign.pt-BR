@@ -3,7 +3,8 @@ product: campaign
 title: Workflow técnico de renderização da caixa de entrada
 description: Esta seção descreve o workflow técnico instalado com o pacote de renderização da caixa de entrada
 feature: Workflows, Inbox Rendering
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+role: User, Admin
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 100%

@@ -3,11 +3,12 @@ product: campaign
 title: Monitorar fluxos de trabalho técnicos
 description: Monitorar fluxos de trabalho técnicos
 feature: Workflows
+role: Admin
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 95%
+ht-degree: 89%
 
 ---
 
@@ -35,15 +36,15 @@ Dependendo do workflow técnico, siga as etapas detalhadas abaixo para garantir 
 
 Para entender melhor o que cada workflow técnico deve realizar, consulte esta [seção](technical-workflows.md).
 
-Para **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
+Para **[!UICONTROL Database Cleanup workflow ('cleanup')]**:
 
 Verifique o journal para verificar se o tempo decorrido é relativamente constante ao longo do tempo e não interfere em outros workflows.
 
-Para **[!UICONTROL Tracking workflow (‘tracking’)]**:
+Para **[!UICONTROL Tracking workflow ('tracking')]**:
 
 Verifique se o workflow de rastreamento é executado como agendado (a cada hora por padrão) e se o journal não realça erros recorrentes. Para obter mais informações, consulte esta [seção](delivery.md).
 
-Para **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+Para **[!UICONTROL Deliverability update ('deliverabilityUpdate')]**:
 
 1. Verifique se o workflow **[!UICONTROL Deliverability update]** é executado e finalizado com êxito todos os dias.
 1. Verifique no journal se as regras estão sendo atualizadas regularmente.
@@ -63,7 +64,7 @@ Um alerta deve ser gerado e enviado ao grupo correto no caso de problema.
 
 Verifique se cada operador tem um endereço de email válido.
 
-Qualquer workflow que deve ser executado para manter o funcionamento da plataforma, como importações diárias de dados, deve ser declarado como “Produção” (caixa de seleção) e aparecer em negrito.
+Qualquer workflow que deve ser executado para manter o funcionamento da plataforma, como importações diárias de dados, deve ser declarado como &quot;Produção&quot; (caixa de seleção) e aparecer em negrito.
 
 ## Lista de manutenção de fluxo de trabalho {#workflow-maintenance-list}
 

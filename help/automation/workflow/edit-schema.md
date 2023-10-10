@@ -3,8 +3,9 @@ product: campaign
 title: Editar esquema
 description: Saiba mais sobre a atividade de workflow editar esquema
 feature: Workflows, Targeting Activity
+role: User, Developer
 exl-id: 16fb1aa5-cf99-4461-a1a4-7a68d97e2a74
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 100%

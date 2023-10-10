@@ -3,11 +3,12 @@ product: campaign
 title: Carregamento de dados (arquivo)
 description: Saiba mais sobre a atividade de workflow de carregamento de dados (arquivo)
 feature: Workflows, Data Management Activity
+role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: cf88140d1e8b71203729732163f66060423965a0
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1037'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +36,7 @@ Você pode definir um pré-processamento a ser executado durante a importação 
 
 >[!IMPORTANT]
 >
->Não é possível descompactar arquivos compactados com mais de 4 Gb.
+>Não é possível descompactar arquivos com mais de 4 GB.
 
 ## Definição do formato de arquivo {#defining-the-file-format}
 

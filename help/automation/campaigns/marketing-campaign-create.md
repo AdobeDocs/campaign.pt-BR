@@ -3,8 +3,9 @@ product: campaign
 title: Criar campanhas de marketing
 description: Saiba como criar e executar campanhas de marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
+role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 56%
@@ -180,7 +181,7 @@ Esta tabela resume as ações que você pode realizar nas campanhas a partir de 
 | --- | --- |
 | Lista de campanhas, deliveries, ofertas, etc. | Excluir um item da lista |
 | Campanha | Cancelar uma campanha |
-| Delivery | Aprovar o conteúdo e o target do delivery<br/>Enviar o conteúdo do delivery<br/>Confirmar um delivery<br/>Pausar e parar um delivery |
+| Entrega | Aprovar o conteúdo e o target do delivery<br/>Enviar o conteúdo do delivery<br/>Confirmar um delivery<br/>Pausar e parar um delivery |
 | Aplicativo web | Criar um aplicativo web<br/>Editar o conteúdo e as propriedades do aplicativo<br/>Salvar o conteúdo do aplicativo como um modelo<br/>Publicar o aplicativo |
 | Oferta | Aprovar o conteúdo e a elegibilidade da oferta<br/>Desativar uma oferta online |
 | Tarefa | Concluir uma tarefa<br/>Cancelar uma tarefa |

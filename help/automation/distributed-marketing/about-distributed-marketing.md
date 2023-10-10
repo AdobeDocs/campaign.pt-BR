@@ -3,8 +3,9 @@ product: campaign
 title: Introdução ao marketing distribuído
 description: Introdução ao marketing distribuído
 feature: Distributed Marketing
+role: User
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 98%

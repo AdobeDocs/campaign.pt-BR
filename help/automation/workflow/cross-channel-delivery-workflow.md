@@ -3,8 +3,9 @@ product: campaign
 title: Workflow de delivery entre canais
 description: Saiba mais sobre os workflows de delivery entre canais
 feature: Workflows, Channels Activity
+role: User
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 93%
