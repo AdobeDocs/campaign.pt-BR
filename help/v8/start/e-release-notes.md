@@ -1,16 +1,16 @@
 ---
 title: Notas de versão anteriores do Campaign v8
 description: Lançamento antecipado do Campaign v8
-feature: Overview
+feature: Release Notes
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 958d2e8acdb9edee74f55bc3ea808f5072bf8f4d
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 20%
+ht-degree: 33%
 
 ---
 
@@ -58,7 +58,7 @@ _30 de junho de 2023_
 
 **Correções**
 
-* Correção de um problema que poderia resultar na codificação incorreta de caracteres especiais no conteúdo HTML de um delivery em vários navegadores. (NEO-60081)
+* Correção de um problema que poderia resultar na codificação incorreta de caracteres especiais no conteúdo HTML de uma entrega em vários navegadores. (NEO-60081)
 * Correção de um problema que impedia salvar um relatório em uma implantação corporativa (FFDA) do Campaign v8. (NEO-56836)
 * Correção de um problema ao inserir ou atualizar dados em um esquema FFDA personalizado por meio de uma atividade de fluxo de trabalho Atualizar dados. (NEO-54708)
 * Correção de um problema que impedia que o workflow de limpeza do banco de dados removesse endereços na tabela nms:address no FFDA. (NEO-54460)
@@ -67,6 +67,6 @@ _30 de junho de 2023_
 * Corrigido um problema que impedia o funcionamento da função `JSPContext.sqlExecWithOneParam`. (NEO-50066)
 * Correção de um problema que resultava em falhas de delivery ao usar caracteres não imprimíveis em campos de personalização. (NEO-48588)
 * Correção de um problema que poderia causar erros de entrega ao inserir imagens dinâmicas do Adobe Target. (NEO-62689)
-* Correção de um problema para impedir que os navegadores adicionassem espaços extras ao usar conteúdo condicional em uma entrega. (NEO-62132)
+* Correção de um problema para impedir que os navegadores adicionem espaços extras ao usar conteúdo condicional em uma entrega. (NEO-62132)
 * Correção de um problema que fazia com que uma janela pop-up fosse aberta ao clicar em uma imagem no editor de conteúdo de email. (NEO-60752)
-* Correção de um problema que poderia resultar em erro e impedir a rolagem ao editar o conteúdo de um delivery. (NEO-61364)
+* Correção de um problema que poderia resultar em um erro e impedir a rolagem da tela ao editar o conteúdo de uma entrega. (NEO-61364)

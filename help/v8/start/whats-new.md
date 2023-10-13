@@ -1,11 +1,11 @@
 ---
 title: Novidades do Campaign v8
 description: Descubra os principais recursos do Adobe Campaign v8, as novidades e o que você pode esperar da versão mais recente.
-feature: Overview
+feature: Overview, Release Notes
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: f16fe79b8417a3fa146baf432f829c73fb839953
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 95%

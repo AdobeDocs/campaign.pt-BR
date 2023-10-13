@@ -1,20 +1,20 @@
 ---
 title: Gerenciar solicitações de privacidade no Campaign
 description: Saiba como gerenciar solicitações de privacidade no Campaign
-feature: Audiences
+feature: Privacy
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Gerenciar solicitações de privacidade no Campaign {#privacy}
 
-Dependendo da natureza da sua empresa e das jurisdições sob as quais ela opera, suas operações de dados podem estar sujeitas a regulamentos legais de privacidade. Esses regulamentos geralmente oferecem aos clientes o direito de solicitar acesso aos dados coletados deles e o direito de solicitar a exclusão desses dados armazenados. Essas solicitações de dados pessoais realizadas pelos clientes são chamadas de “Solicitações de privacidade” em toda a documentação.
+Dependendo da natureza da sua empresa e das jurisdições sob as quais ela opera, suas operações de dados podem estar sujeitas a regulamentos legais de privacidade. Esses regulamentos geralmente oferecem aos clientes o direito de solicitar acesso aos dados coletados deles e o direito de solicitar a exclusão desses dados armazenados. Essas solicitações de dados pessoais feitas pelos clientes são chamadas de &quot;Solicitações de privacidade&quot; em toda a documentação.
 
 A Adobe oferece ferramentas aos controladores de dados para criar e processar solicitações de privacidade de dados armazenados no Campaign. No entanto, é sua responsabilidade, como controlador de dados, verificar a identidade do titular dos dados que faz a solicitação e confirmar que os dados retornados ao solicitante pertencem ao titular dos dados. Saiba mais sobre dados pessoais e as diferentes entidades que gerenciam dados na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#personal-data){target="_blank"}.
 

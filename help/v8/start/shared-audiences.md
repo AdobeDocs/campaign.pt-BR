@@ -1,16 +1,16 @@
 ---
 title: Compartilhar públicos-alvo com soluções da Adobe Experience Cloud
 description: Saiba como compartilhar públicos-alvo com soluções da Adobe Experience Cloud
-feature: Subscriptions
+feature: Audiences
 role: User
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: c4d30771-db5e-40be-8af6-50f0fab9f9af
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -36,7 +36,7 @@ A integração oferece suporte a dois tipos de Adobe Experience Cloud IDs:
   >
   > A fonte de dados de ID declarada agora também pode ser usada com a integração do serviço principal Pessoas.
   >
-  >Se você estiver usando a integração do serviço principal Pessoas e quiser adicionar a integração do Audience Manager, será necessária a ajuda de um consultor do Adobe Audience Manager para evitar a perda de todas as sincronizações de ID coletadas durante a transição para o uso dessa fonte de dados de ID declarada em um contexto do Adobe Audience Manager.
+  >Se você estiver usando a integração do serviço principal Pessoas e quiser adicionar a integração Audience Manager, será necessária a ajuda de um consultor da Adobe Audience Manager para evitar a perda de todas as sincronizações de ID coletadas durante a transição para o uso dessa fonte de dados de ID declarada em um contexto do Adobe Audience Manager.
 
 Consulte:
 
