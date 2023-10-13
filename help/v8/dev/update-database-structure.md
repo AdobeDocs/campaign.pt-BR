@@ -1,17 +1,18 @@
 ---
 title: Atualizar a estrutura do banco de dados
 description: Atualizar a estrutura do banco de dados
+feature: Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: fc64f3ca-67f1-47b7-b154-9c9dd044192c
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
 
 ---
 
-# Atualizar a estrutura do banco de dados{#updating-the-database-structure}
+# Atualizar a estrutura do banco de dados {#updating-the-database-structure}
 
 Para aplicar as modificações feitas nos esquemas, inicie o assistente de atualização do banco de dados. Esse assistente pode ser acessado via **[!UICONTROL Tools > Advanced > Update database structure]**. Ele verifica se a estrutura física do banco de dados corresponde à sua descrição lógica e executa os scripts de atualização SQL.
 

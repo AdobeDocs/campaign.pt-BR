@@ -1,18 +1,18 @@
 ---
 title: Painel de controle do Campaign
 description: Introdução ao Painel de controle do Campaign
-feature: Control Panel
+feature: Control Panel, Monitoring
 role: User, Admin
 level: Beginner, Intermediate
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 95%
 
 ---
 
-# Painel de controle do Campaign
+# Painel de controle do Campaign {#ac-control-panel}
 
 O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho como administrador de produtos do Adobe Campaign, permitindo que você gerencie configurações e rastreie os usos de cada uma de suas instâncias. Sua interface intuitiva permite monitorar facilmente o uso dos principais ativos, além de realizar tarefas administrativas, como adicionar lista de permissão de endereços IP, monitoramento de armazenamentos SFTP, gerenciamento de chaves e muito mais.
 
@@ -26,19 +26,19 @@ Você também pode usar o Painel de controle do Campaign para definir as configu
 
 ![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target="_blank"}.
 
-## Como acessar o Painel de controle?
+## Como acessar o Painel de controle? {#ac-control-panel-access}
 
 O Painel de controle está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=pt-BR){target="_blank"} para obter mais informações.
 
-## Perguntas frequentes sobre o Painel de controle
+## Perguntas frequentes sobre o Painel de controle {#ac-control-faq}
 
 [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"} para acessar as Perguntas frequentes sobre o Painel de controle do Campaign.
 
-## Gerenciamento de SFTP
+## Gerenciamento de SFTP {#ac-control-sftp}
 
 No Painel de controle, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. Você pode monitorar a capacidade de armazenamento, gerenciar endereços IP na lista de permissões e chaves SSH públicas. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=pt-BR#sftp-management){target="_blank"} para obter mais informações.
 
-## Subdomínios e certificados
+## Subdomínios e certificados {#ac-control-subdomain}
 
 Saiba como monitorar subdomínios e certificados.
 

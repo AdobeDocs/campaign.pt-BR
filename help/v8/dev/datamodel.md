@@ -5,14 +5,14 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 5%
 
 ---
 
-# Introdução ao modelo de dados do Campaign {#gs-ac-datamodel}
+# Introdução ao modelo de dados do Campaign  {#gs-ac-datamodel}
 
 O Adobe Campaign vem com um modelo de dados predefinido. Esta seção fornece alguns detalhes sobre as tabelas integradas do modelo de dados do Adobe Campaign e suas interações. O Adobe Campaign depende de um banco de dados na nuvem que contém tabelas vinculadas.
 

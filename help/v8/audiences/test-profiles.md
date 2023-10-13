@@ -1,10 +1,11 @@
 ---
 title: Criar perfis de teste no Campaign
 description: Saiba como criar e gerenciar perfis de teste no Adobe Campaign
-feature: Audiences, Profiles
+feature: Audiences, Profiles, Seed Address, Proofs
 role: User
 level: Beginner
-source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 59%
@@ -103,4 +104,3 @@ Se a tabela do delivery for uma tabela externa, você precisará fazer configura
 Nesse caso, para adicionar seed addresses ao delivery, insira os campos adequados diretamente na guia correspondente ou importe os templates de endereços.
 
 <!--The **nms:seedMember** schema extension is [this section](../../configuration/using/seed-addresses.md).-->
-

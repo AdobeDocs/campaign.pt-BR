@@ -2,16 +2,17 @@
 title: Trabalhar com o Campaign e o Twitter
 description: Saiba como integrar seu ambiente do Campaign ao Twitter
 role: User, Admin
+feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 17%
 
 ---
 
-# Trabalhar com o Campaign e o Twitter{#tw-ac-ovv}
+# Trabalhar com o Campaign e o Twitter {#tw-ac-ovv}
 
 A variável **Gerenciamento de redes sociais (Marketing social)** O módulo permite interagir com os clientes via Twitter. Use esse recurso para:
 

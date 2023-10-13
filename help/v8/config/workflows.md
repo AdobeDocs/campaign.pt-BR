@@ -5,7 +5,7 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 22%
@@ -18,14 +18,14 @@ Configure o Campaign para aproveitar os poderosos recursos de automação de cam
 
 Você pode configurar:
 
-* Fluxos de trabalho
+* Workflows
 * Campanhas recorrentes
 * Ciclo de validação completo
 * Alertas
 * Envio automático de relatório
 * Eventos acionados
 
-## Projetar e usar fluxos de trabalho{#gs-ac-wf}
+## Projetar e usar fluxos de trabalho {#gs-ac-wf}
 
 Use os workflows do Adobe Campaign para melhorar a velocidade e a escala de cada aspecto de suas campanhas de marketing, desde a criação de segmentos e a preparação de mensagens até a entrega.
 

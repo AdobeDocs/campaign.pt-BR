@@ -5,16 +5,16 @@ feature: Workflows, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 5%
 
 ---
 
-# Workflows técnicos e replicação de dados
+# Workflows técnicos e replicação de dados {#wf-data-replication}
 
-## Workflows técnicos{#tech-wf}
+## Workflows técnicos {#tech-wf}
 
 No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), o Adobe Campaign vem com um conjunto de fluxos de trabalho técnicos incorporados. Os workflows técnicos executam processos ou trabalhos, agendados regularmente no servidor.
 
@@ -37,7 +37,7 @@ Esses workflows técnicos estão disponíveis no **[!UICONTROL Administration > 
 
 Se necessário, é possível iniciar a sincronização de dados manualmente. Para fazer isso, clique com o botão direito do mouse na **Scheduler** atividade e selecione **Executar tarefas pendentes agora**.
 
-## Replicação de dados{#data-replication}
+## Replicação de dados {#data-replication}
 
 Algumas tabelas integradas são replicadas do banco de dados local do Campaign para [!DNL Snowflake] banco de dados em nuvem por meio de fluxos de trabalho dedicados descritos acima.
 
@@ -46,7 +46,7 @@ Entenda quais bancos de dados o Adobe Campaign v8 usa, por que os dados estão s
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
 
-### Políticas de replicação de dados{#data-replication-policies}
+### Políticas de replicação de dados {#data-replication-policies}
 
 As políticas de replicação são baseadas no tamanho das tabelas. Algumas tabelas serão replicadas em tempo real, outras serão replicadas de hora em hora. Algumas tabelas terão atualizações incrementais quando outras serão substituídas.
 

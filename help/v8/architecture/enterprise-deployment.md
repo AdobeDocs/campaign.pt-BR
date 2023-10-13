@@ -1,18 +1,18 @@
 ---
 title: Introdução à implantação do FFDA do Campaign
 description: Introdução à implantação do FFDA do Campaign
-feature: Architecture, FFDA
+feature: Architecture, FFDA, Deployment
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 51bba0a2b4be03577f508d352fc7c2b514ba28e5
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 54%
 
 ---
 
-# [!DNL Campaign] Implantação do FFDA{#gs-ac-ffda}
+# [!DNL Campaign] Implantação do FFDA {#gs-ac-ffda}
 
 Ao aproveitar [[!DNL Snowflake]](https://www.snowflake.com/), uma tecnologia de banco de dados em nuvem, a implantação do Adobe Campaign Enterprise Full Federated Access (FFDA) melhora consideravelmente sua escala e velocidade, com a capacidade de gerenciar um número muito maior de perfis de clientes, bem como taxas de entrega e transações por hora muito mais altas.
 
