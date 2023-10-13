@@ -5,14 +5,14 @@ feature: API
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 9c7a4f7d4e84fde4b74bf6f8e0432681aa7e42d3
+source-git-commit: 4c2d3bba282f629a9f5cadcda9ab79a810ac9832
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 13%
 
 ---
 
-# Introdução ao [!DNL Campaign] APIs{#gs-ac-api}
+# Introdução ao [!DNL Campaign] APIs {#gs-ac-api}
 
 [!DNL Adobe Campaign] O vem com um conjunto de funções JavaScript que podem ser usadas:
 
@@ -33,7 +33,7 @@ Observe que, em seu [Implantação corporativa (FFDA)](../architecture/enterpris
 >* [!DNL Adobe Campaign] O v8 vem com um limite na taxa de transferência (TPS) da nossa camada de API. Quebrar o limite leva ao erro HTTP padrão (429). Como usuário do Managed Cloud Service, você pode entrar em contato com o Adobe para adaptar a limitação de cada API.
 > 
 
-## Pré-requisitos
+## Pré-requisitos {#ac-api-prerequisites}
 
 Antes de usar [!DNL Adobe Campaign] APIs, você precisa conhecer os seguintes tópicos:
 
