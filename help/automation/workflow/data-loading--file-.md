@@ -5,10 +5,10 @@ description: Saiba mais sobre a atividade de workflow de carregamento de dados (
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d946d4a50a4fc13e848b22ee87b02a10b7dfd2ad
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 100%
+source-wordcount: '1060'
+ht-degree: 97%
 
 ---
 
@@ -51,6 +51,10 @@ Em seguida, você pode modificar a formatação geral do arquivo, bem como a for
 A formatação geral do arquivo permite definir a maneira como as colunas serão reconhecidas (codificação do arquivo, separadores usados, etc.).
 
 A formatação de coluna permite definir o processamento de valor de cada coluna:
+
+>[!NOTE]
+>
+>Você pode adicionar quantas colunas desejar. O comprimento máximo dos valores em cada coluna é determinado pelo tipo de dados escolhido.
 
 * **[!UICONTROL Ignore column]**: não processa essa coluna durante o carregamento de dados.
 * **[!UICONTROL Data type]**: especifica o tipo de dados esperado para cada coluna.
