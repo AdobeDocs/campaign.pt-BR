@@ -3,9 +3,9 @@ title: Gerenciar solicitações de privacidade no Campaign
 description: Saiba como gerenciar solicitações de privacidade no Campaign
 feature: Privacy
 role: Admin
-level: Beginner, Intermediate, Experienced
+level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 98%
@@ -120,9 +120,9 @@ Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Cam
 As tabelas incorporadas consideradas ao executar solicitações de privacidade são:
 
 * Recipients (recipient)
-* Log de delivery de recipient (broadLogRcp)
+* Log de entrega de recipient (broadLogRcp)
 * Log de rastreamento de recipient (trackingLogRcp)
-* Log de delivery de evento arquivado (broadLogEventHisto)
+* Log de entrega de evento arquivado (broadLogEventHisto)
 * Conteúdo da lista de recipient (rcpGrpRel)
 * Apresentação da oferta do visitante (propositionVisitor)
 * Visitantes (visitante)

@@ -3,9 +3,9 @@ title: Configurações de mensagens transacionais do Campaign
 description: Configurações de mensagens transacionais do Campaign
 feature: Transactional Messaging
 role: Admin, Developer
-level: Intermediate, Experienced
+level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 45%
@@ -102,8 +102,8 @@ Na(s) instância(s) de execução, você deve iniciar os seguintes workflows té
   Os possíveis status do evento são:
 
    * **[!UICONTROL Pending]**: o evento está na fila. Nenhum template de mensagem foi atribuído a ele.
-   * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pelo delivery.
-   * **[!UICONTROL Sent]**: esse status é copiado dos logs do delivery. Significa que o delivery foi enviado.
-   * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs do delivery. Ele significa que o delivery foi ignorado.
-   * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs do delivery. Ele significa que o delivery falhou.
+   * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pela entrega.
+   * **[!UICONTROL Sent]**: esse status é copiado dos logs da entrega. Significa que a entrega foi enviada.
+   * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs da entrega. Ele significa que a entrega foi ignorada.
+   * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs da entrega. Ele significa que a entrega falhou.
    * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um template de mensagem. O evento não será processado.

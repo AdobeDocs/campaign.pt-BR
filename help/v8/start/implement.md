@@ -2,10 +2,10 @@
 title: Diretrizes de implementação
 description: Saiba como implementar o Campaign v8
 feature: Overview
-role: User, Admin, Developer
-level: Beginner, Intermediate
+role: User
+level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 100%
@@ -74,7 +74,7 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
 
    ![](../assets/do-not-localize/glass.png) [Saiba como importar perfis](import.md).
 
-   Os públicos são agrupados em listas e podem ser criados por meio de workflows. Eles podem ser direcionados em deliveries entre canais.
+   Os públicos são agrupados em listas e podem ser criados por meio de workflows. Eles podem ser direcionados em entregas entre canais.
 
    ![](../assets/do-not-localize/glass.png) [Saiba como definir públicos](audiences.md).
 

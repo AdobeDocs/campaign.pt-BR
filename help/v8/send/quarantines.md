@@ -2,10 +2,10 @@
 title: Gerenciamento de quarentenas no Campaign
 description: Entender o gerenciamento de quarentenas no Adobe Campaign
 feature: Profiles, Monitoring
-role: User, Developer
-level: Beginner, Intermediate
+role: User, Data Engineer
+level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: b783b1444457b3204fea35b613582642499acf65
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 41%
@@ -14,15 +14,15 @@ ht-degree: 41%
 
 # Quarentena {#quarantine-management}
 
-O Adobe Campaign gerencia uma lista de endereços em quarentena para canais online (email, SMS, notificação por push). Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, evita que você seja adicionado à lista de bloqueios por esses provedores. Além disso, a quarentena ajuda a reduzir os custos de envio de SMS, excluindo números de telefone incorretos dos deliveries.
+O Adobe Campaign gerencia uma lista de endereços em quarentena para canais online (email, SMS, notificação por push). Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, evita que você seja adicionado à lista de bloqueios por esses provedores. Além disso, a quarentena ajuda a reduzir os custos de envio de SMS, excluindo números de telefone incorretos das entregas.
 
 Quando o endereço ou número de telefone está em quarentena, os recipients são excluídos do target durante a análise de delivery: você não poderá enviar mensagens de marketing, incluindo emails de fluxo de trabalho automatizado, para esses contatos. Se esses endereços em quarentena também estiverem presentes em listas, eles serão excluídos ao enviar para essas listas. Um endereço de email pode ser colocado em quarentena, por exemplo, quando a caixa de entrada estiver cheia, se o endereço não existir ou se o servidor de email não estiver disponível.
 
 <!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
 
-**Quarentena** aplica-se apenas a um **endereço**, um **número de telefone**, ou um **token do dispositivo**, mas não ao próprio perfil. Por exemplo, um perfil cujo endereço de email esteja em quarentena pode atualizar seu perfil e inserir um novo endereço, podendo então ser direcionado em ações de delivery novamente. Da mesma forma, se dois perfis tiverem o mesmo número de telefone, ambos serão afetados se o número estiver em quarentena. Os endereços em quarentena ou os números de telefone são exibidos nos [logs de exclusão](#delivery-quarantines) (para um delivery) ou na [lista de quarentena](#non-deliverable-bounces) (para toda a plataforma).
+**Quarentena** aplica-se apenas a um **endereço**, um **número de telefone**, ou um **token do dispositivo**, mas não ao próprio perfil. Por exemplo, um perfil cujo endereço de email esteja em quarentena pode atualizar seu perfil e inserir um novo endereço, podendo então ser direcionado em ações de entrega novamente. Da mesma forma, se dois perfis tiverem o mesmo número de telefone, ambos serão afetados se o número estiver em quarentena. Os endereços em quarentena ou os números de telefone são exibidos nos [logs de exclusão](#delivery-quarantines) (para uma entrega) ou na [lista de quarentena](#non-deliverable-bounces) (para toda a plataforma).
 
-Por outro lado, os perfis podem estar no estado **➡ incluir na lista de bloqueios** como após um cancelamento de subscrição (opt-out), para um determinado canal: isso implica que eles não estão mais sendo direcionados por nenhum. Incluir na lista de bloqueios Como consequência, se um perfil no canal tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios para um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
+Por outro lado, os perfis podem estar no estado **➡ incluir na lista de bloqueios** como após um cancelamento de subscrição (opt-out), para um determinado canal: isso implica que eles não estão mais sendo direcionados por nenhum. Incluir na lista de bloqueios Como consequência, se um perfil no canal tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios de um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
@@ -58,8 +58,8 @@ Os endereços de quarentena são listados durante a fase de preparação do deli
 
 Para cada delivery, você também pode verificar o **[!UICONTROL Delivery summary]** relatório: mostra o número de endereços em quarentena no target do delivery e exibe:
 
-* O número de endereços colocados em quarentena durante a análise de delivery,
-* O número de endereços colocados em quarentena após a ação de delivery.
+* O número de endereços colocados em quarentena durante a análise de entrega,
+* O número de endereços colocados em quarentena após a ação de entrega.
 
 ### Endereços não entregues e rejeitados{#non-deliverable-bounces}
 
@@ -96,7 +96,7 @@ Os endereços que correspondem a condições específicas são automaticamente e
 
 Os endereços são removidos automaticamente da lista de quarentena nos seguintes casos:
 
-* Os endereços em um status **[!UICONTROL With errors]** serão removidos da lista de quarentena após um delivery bem-sucedido.
+* Os endereços em um status **[!UICONTROL With errors]** serão removidos da lista de quarentena após uma entrega bem-sucedida.
 * Os endereços em um status **[!UICONTROL With errors]** serão removidos da lista de quarentena se o último retorno de erro tiver ocorrido há mais de 10 dias. Para obter mais informações sobre o gerenciamento de erros de software, consulte [esta seção](#soft-error-management).
 * Os endereços em um status **[!UICONTROL With errors]** que tiverem retornado com o erro **[!UICONTROL Mailbox full]** serão removidos da lista de quarentena após 30 dias.
 
@@ -118,7 +118,7 @@ Para fazer isso, crie um workflow e adicione uma query à tabela de quarentena p
 
 Abaixo estão as diretrizes recomendadas para esta consulta:
 
-* **O texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
+* **O texto de erro (texto de quarentena)** contém “Momen_Code10_InvalidRecipient”
 * **Domínio de email (@domain)** igual a domain1.com OU **Domínio de email (@domain)** igual a domain2.com OU **Domínio de email (@domain)** igual a domain3.com
 * **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
 * **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:SS PM

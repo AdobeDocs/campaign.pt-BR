@@ -3,9 +3,9 @@ title: Personalizar sua instância
 description: Saiba como personalizar sua instância
 feature: Configuration, Application Settings
 role: Developer
-level: Beginner, Intermediate, Experienced
+level: Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 22%
@@ -57,7 +57,7 @@ Saiba como modificar um formulário de entrada existente ou criar um novo formul
 
 ## Personalizar painéis{#gs-custom-dashboards}
 
-A interface do Adobe Campaign usa muitas aplicações web para acessar, gerenciar e interagir com recipients, deliveries, campanhas, estoques, etc. Elas são vistas na interface do formulário de painéis com apenas uma página.
+A interface do Adobe Campaign usa muitas aplicações web para acessar, gerenciar e interagir com recipients, entregas, campanhas, estoques, etc. Elas são vistas na interface do formulário de painéis com apenas uma página.
 
 Os aplicativos web integrados são armazenados no **Administração > Configuração > Aplicações web** pasta do Explorer.
 

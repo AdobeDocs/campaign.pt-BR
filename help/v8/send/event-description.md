@@ -3,9 +3,9 @@ title: Entender a descrição do evento
 description: Saiba como os eventos de mensagens transacionais são gerenciados no Adobe Campaign Classic usando os métodos SOAP
 feature: Transactional Messaging
 role: User
-level: Beginner, Intermediate
+level: Intermediate
 exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
-source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 96%
@@ -106,7 +106,7 @@ Os elementos **`<rtevent>`** e **`<batchevent>`** têm um conjunto de atributos,
 >
 >O elemento **`<batchevent>`** permite adicionar o evento à fila &quot;batch&quot;. O **`<rtevent>`** adiciona o evento à fila em &quot;tempo real&quot;.
 
-Os atributos obrigatórios dos elementos **`<rtevent>`** e **`<batchevent>`** são @type and @email. O valor de @type deve ser igual ao valor da lista discriminada definido ao configurar a instância de execução. Esse valor permite definir o template a ser vinculado ao conteúdo do evento durante o delivery.
+Os atributos obrigatórios dos elementos **`<rtevent>`** e **`<batchevent>`** são @type and @email. O valor de @type deve ser igual ao valor da lista discriminada definido ao configurar a instância de execução. Esse valor permite definir o template a ser vinculado ao conteúdo do evento durante a entrega.
 
 `<rtevent> configuration example:`
 
@@ -116,7 +116,7 @@ Os atributos obrigatórios dos elementos **`<rtevent>`** e **`<batchevent>`** s�
 
 Neste exemplo, dois canais são fornecidos: o endereço de email e o número do celular. O **wishedChannel** permite selecionar o canal que deseja usar ao transformar o evento em uma mensagem. O valor &quot;0&quot; corresponde ao canal de email, o valor &quot;1&quot; ao canal móvel e etc.
 
-Se quiser adiar um delivery de evento, adicione o campo **[!UICONTROL scheduled]** seguido da data preferida. O evento será transformado em uma mensagem nessa data.
+Se quiser adiar uma entrega de evento, adicione o campo **[!UICONTROL scheduled]** seguido da data preferida. O evento será transformado em uma mensagem nessa data.
 
 É recomendável preencher os atributos @wishedChannel e @emailFormat com valores numéricos. A tabela de função que vincula valores numéricos e rótulos é encontrada na descrição do schema de dados.
 
@@ -128,7 +128,7 @@ O elemento **`<ctx>`** contém os dados da mensagem. Seu conteúdo XML está abe
 
 >[!NOTE]
 >
->É importante otimizar o número e o tamanho dos nós XML contidos na mensagem para evitar sobrecarga dos servidores durante o delivery.
+>É importante otimizar o número e o tamanho dos nós XML contidos na mensagem para evitar sobrecarga dos servidores durante a entrega.
 
 Exemplo de dados:
 

@@ -3,9 +3,9 @@ title: Coletar e processar eventos
 description: Saiba como as mensagens transacionais do Campaign coletam e processam eventos
 feature: Transactional Messaging
 role: User
-level: Beginner, Intermediate
+level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
-source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 56%
@@ -70,7 +70,7 @@ Por padrão, o roteamento é baseado nas seguintes informações:
 
 * O tipo de evento
 * O canal a ser usado (por padrão: email)
-* O template do delivery mais recente, com base na data da publicação
+* O template da entrega mais recente, com base na data da publicação
 
 ## Verificar status do evento {#event-statuses}
 
@@ -94,7 +94,7 @@ O número máximo de tentativas de envio foi atingido. O evento é considerado n
 
 ## Reciclar eventos {#event-recycling}
 
-Se o delivery de uma mensagem em um canal específico falhar, o Adobe Campaign poderá reenviar a mensagem usando um canal diferente. Por exemplo, se um delivery no canal SMS falhar, a mensagem será reenviada usando o canal de email.
+Se a entrega de uma mensagem em um canal específico falhar, o Adobe Campaign poderá reenviar a mensagem usando um canal diferente. Por exemplo, se uma entrega no canal SMS falhar, a mensagem será reenviada usando o canal de email.
 
 Para fazer isso, é necessário configurar um workflow que recrie todos os eventos com o status **Delivery error** e atribuir um canal diferente a eles.
 

@@ -3,8 +3,9 @@ title: Relatórios integrados do Adobe Campaign
 description: Relatórios incorporados
 feature: Reporting
 role: User
+level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 89%
@@ -45,7 +46,7 @@ Para acessar os relatórios internos do Campaign:
 
    ![](assets/back-button.png)
 
-Os relatórios específicos a uma campanha ou um delivery são acessíveis por meio de seus respectivos painéis.
+Os relatórios específicos a uma campanha ou uma entrega são acessíveis por meio de seus respectivos painéis.
 
 ![](assets/reporting-on-delivery.png)
 
@@ -54,7 +55,7 @@ O princípio é o mesmo para listas, serviços, ofertas, etc., conforme mostrado
 ![](assets/reporting-on-offer.png)
 
 
-## Relatórios sobre deliveries {#reports-on-deliveries}
+## Relatórios de entregas {#reports-on-deliveries}
 
 Os relatórios internos fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
@@ -73,8 +74,8 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Taxa de transferência de delivery (produtividade)<br /> </td> 
-   <td> Gráficos de taxa de transferência de delivery, em mensagens/hora e Mbits/s.<br /> </td> 
+   <td> Taxa de transferência de entrega (produtividade)<br /> </td> 
+   <td> Gráficos de taxa de transferência de entrega, em mensagens/hora e Mbits/s.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -89,7 +90,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Indicadores de rastreamento (mobileAppDeliveryFeedback)<br /> </td> 
-   <td> Indicadores de rastreamento de um delivery para um aplicativo móvel.<br /> </td> 
+   <td> Indicadores de rastreamento de uma entrega para um aplicativo móvel.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -109,12 +110,12 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Relatório Hipótese (deliveryHypothesis)<br /> </td> 
-   <td> Exibe o resumo das medidas na hipótese de delivery.<br /> </td> 
+   <td> Exibe o resumo das medidas na hipótese de entrega.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Estatísticas de delivery (statisticsPerDelivery)<br /> </td> 
-   <td> Estatísticas (mensagens processadas, mensagens enviadas, devoluções permanentes, devoluções temporárias, cliques, unsubscriptions) por domínio de email.<br /> </td> 
+   <td> Estatísticas de entrega (statisticsPerDelivery)<br /> </td> 
+   <td> Estatísticas (mensagens processadas, mensagens entregues, devoluções permanentes, devoluções temporárias, cliques, unsubscriptions) por domínio de email.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -128,13 +129,13 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Resumo do delivery (deliverySending)<br /> </td> 
-   <td> Resumo dos indicadores de delivery: target, exclusão e mensagens enviadas.<br /> </td> 
+   <td> Resumo da entrega (deliverySending)<br /> </td> 
+   <td> Resumo dos indicadores de entrega: target, exclusão e mensagens enviadas.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Resumo do delivery (deliveryStatistics)<br /> </td> 
-   <td> Tabela de resumo para deliveries selecionados: targets, exclusões e mensagens enviadas.<br /> </td> 
+   <td> Resumo da entrega (deliveryStatistics)<br /> </td> 
+   <td> Tabela de resumo para entregas selecionadas: targets, exclusões e mensagens enviadas.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -144,7 +145,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Taxa de reatividade (deliveryFeedbackSocial)<br /> </td> 
-   <td> Detalhamento da reação e da taxa de reatividade de delivery.<br /> </td> 
+   <td> Detalhamento da reação e da taxa de reatividade de entrega.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -170,8 +171,8 @@ Os relatórios sobre campanhas se relacionam aos dados na tabela de **nms:operat
    <td> O detalhamento de aberturas, cliques e transações por período de tempo depende do Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Taxa de transferência de delivery (operationThroughput)<br /> </td> 
-   <td> Os gráficos de taxa de transferência de delivery, em emails/hora e Mbits/s, dependem do Campaign.<br /> </td> 
+   <td> Taxa de transferência de entrega (operationThroughput)<br /> </td> 
+   <td> Os gráficos de taxa de transferência de entrega, em emails/hora e Mbits/s, dependem do Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Despesas de campanha (budgetOperationExpenses)<br /> </td> 
@@ -195,15 +196,15 @@ Os relatórios sobre campanhas se relacionam aos dados na tabela de **nms:operat
   </tr> 
   <tr> 
    <td> Relatório Hipótese (operationHypothesis)<br /> </td> 
-   <td> Exibe o resumo das medidas da hipótese para as deliveries da campanha, depende do Campaign.<br /> </td> 
+   <td> Exibe o resumo das medidas da hipótese para as entregas da campanha, depende do Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Estatísticas de atividades de compartilhamento (forwardActivityOpt)<br /> </td> 
    <td> A análise de atividades de compartilhamento, abertura e subscrições por período de tempo depende do Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Resumo do delivery (operationStatistics)<br /> </td> 
-   <td> Gráfico de resumo dos deliveries da campanha: targets, exclusões e mensagens enviadas.<br /> </td> 
+   <td> Resumo da entrega (operationStatistics)<br /> </td> 
+   <td> Gráfico de resumo das entregas da campanha: targets, exclusões e mensagens enviadas.<br /> </td> 
   </tr> 
   <tr> 
    <td> Taxa de transferência de clique e URLs (operationTopUrlDelivery)<br /> </td> 
@@ -236,11 +237,11 @@ Os relatórios sobre serviços diz respeito aos dados na tabela de **nms:service
   </tr> 
   <tr> 
    <td> Taxa de Reatividade (socialReactionRate)<br /> </td> 
-   <td> Quais são as taxas de reatividade para os deliveries mais recentes? Depende de add-on de marketing social.<br /> </td> 
+   <td> Quais são as taxas de reatividade para as entregas mais recentes? Depende de add-on de marketing social.<br /> </td> 
   </tr> 
   <tr> 
    <td> Taxa de Reatividade (mobileAppReactivityRate)<br /> </td> 
-   <td> A taxa de reatividade para os deliveries mais recentes depende do add-on de canal de aplicativo móvel.<br /> </td> 
+   <td> A taxa de reatividade para as entregas mais recentes depende do add-on de canal de aplicativo móvel.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -323,7 +324,7 @@ Os relatórios sobre simulações dizem respeito aos dados na tabela de **nms:si
   </tr> 
   <tr> 
    <td> Estatística de sobreposição (dlvSimuOverlapping)<br /> </td> 
-   <td> Volumes de sobreposição de target de delivery.<br /> </td> 
+   <td> Volumes de sobreposição de target de entrega.<br /> </td> 
   </tr> 
   <tr> 
    <td> Resumo das exclusões devido à simulação (dlvSimuLossesSimu)<br /> </td> 

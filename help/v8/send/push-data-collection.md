@@ -3,9 +3,10 @@ title: Enviar notificação por push com o Adobe Campaign
 description: Introdução à notificação por push no Campaign
 feature: Push
 role: Data Engineer
-level: Beginner
+level: Intermediate
 badge: label="Disponibilidade limitada" type="Informative"
-source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
+exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 21%
@@ -32,7 +33,7 @@ No contexto desta implementação atualizada, para enviar notificações por pus
 
 1. [Adicionar o Campaign Classic ao seu aplicativo para dispositivos móveis](#campaign-mobile-ap)
 
-1. [Criar um delivery para iOS e Android](##push-create)
+1. [Criar uma entrega para iOS e Android](##push-create)
 
 >[!NOTE]
 >

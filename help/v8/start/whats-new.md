@@ -2,10 +2,10 @@
 title: Novidades do Campaign v8
 description: Descubra os principais recursos do Adobe Campaign v8, as novidades e o que você pode esperar da versão mais recente.
 feature: Overview, Release Notes
-role: Admin, Developer, User
-level: Beginner, Intermediate, Experienced
+role: User
+level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 95%
@@ -28,7 +28,7 @@ Os principais recursos estão listados abaixo.
 
 Melhore a velocidade e a escala de cada aspecto de suas campanhas de marketing, desde a criação de segmentos e a preparação de mensagens até a entrega.
 
-O Adobe Campaign facilita a sincronização dos canais, com uma interface de orquestração de campanhas única e de fácil utilização. Assim, seus canais online — como email, web, celular e redes sociais — correspondem aos canais offline, incluindo a correspondência direta, a central de atendimento, a loja e assim por diante. Ele permite que você forneça aos clientes uma experiência consistente e contextual nos canais digitais e tradicionais. O Adobe Campaign facilita o fornecimento de conteúdo para todos os caminhos que seus clientes venham a seguir — em qualquer canal.
+O Adobe Campaign facilita a sincronização dos canais, com uma interface de orquestração de campanhas única e de fácil utilização. Assim, seus canais online — como email, web, celular e redes sociais — correspondem aos canais offline, incluindo a correspondência direta, a central de atendimento, a loja e assim por diante. Ele permite que você forneça aos clientes uma experiência consistente e contextual nos canais digitais e tradicionais. O Adobe Campaign facilita a entrega de conteúdo para todos os caminhos que seus clientes venham a seguir — em qualquer canal.
 
 ![](../assets/do-not-localize/glass.png)[Saiba mais sobre os fluxos de trabalho do Campaign](../config/workflows.md)
 

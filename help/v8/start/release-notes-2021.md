@@ -2,10 +2,10 @@
 title: Notas de versão do Campaign v8 2021
 description: Lista de recursos e melhorias disponíveis com as versões do Campaign v8 de 2021
 feature: Release Notes
-role: Admin, Developer, User
-level: Beginner, Intermediate, Experienced
+role: User
+level: Beginner
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 98%
@@ -44,7 +44,7 @@ _28 de outubro de 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>O módulo de otimização de campanha agora está disponível. Esse módulo permite controlar, filtrar e monitorar o envio de deliveries. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.</p>
+<td> <p>O módulo de otimização de campanha agora está disponível. Esse módulo permite controlar, filtrar e monitorar o envio de entregas. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.</p>
 <p>Para obter mais informações, consulte a <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=pt-BR#campaign-optimization">documentação detalhada</a>.</p>
 </td> 
 </tr> 
@@ -87,7 +87,7 @@ _28 de outubro de 2021_
 * Correção de um problema que causava um erro ao criar registros com um formulário dedicado devido ao gerenciamento de ID com uma fonte de dados FFDA.
 * Correção de um problema que poderia impedir a inserção de ofertas em uma entrega caso tais ofertas fossem gerenciadas por uma atividade de enriquecimento em um workflow.
 * Correção de um problema que poderia retardar a importação de pacotes.
-* Correção de um problema que poderia impedir que deliveries de email com seed addresses fossem enviados.
+* Correção de um problema que poderia impedir que entregas de email com seed addresses fossem enviados.
 * Correção de um problema que poderia impedir que apresentações fossem salvas na tabela de apresentação de ofertas.
 * Correção de um problema que ocasionava o registro incorreto de complicações de tempo limite como interrupções de script, em vez de erros de rede. Esse problema ocorria no caso de solicitações HTTP que eram incluídas em atividades JavaScript.
 * Correção de um problema que evitava que as ofertas fossem replicadas para o ambiente de ofertas em tempo real no Snowflake.
@@ -102,7 +102,7 @@ _28 de outubro de 2021_
 * Correção de um problema que retornava resultados incorretos ao executar as funções HoursDiff e MinutesDiff do Amazon Redshift para tentar extrair o componente de tempo.(NEO-31673)
 * Correção de um problema que podia impedir os usuários de fazerem logon no console em função de um problema de configuração de proxy. (NEO-38388)
 * Correção de um problema de regressão que impedia o funcionamento correto da funcionalidade **Limpar pasta**. (NEO-37459)
-* Correção de um problema que podia impedir a pré-visualização de deliveries de dispositivos móveis que foram anexados a um fluxo de trabalho.
+* Correção de um problema que podia impedir a pré-visualização de entregas de dispositivos móveis que foram anexadas a um fluxo de trabalho.
 * Correção de um problema que podia impedir o funcionamento da atividade de fluxo de trabalho **Lista de leitura** quando a lista era identificada com uma ID negativa na base de dados. (NEO-39607)
 
 ## Versão 8.1.20 {#release-8-1-20}

@@ -2,10 +2,10 @@
 title: Introdução ao Campaign v8
 description: É novo no Adobe Campaign? Encontre documentações sobre como colocar seu software em funcionamento e onde começar com a interface.
 feature: Overview, Cross Channel Orchestration
-role: Admin, Developer, User
+role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Use o Campaign para:
 
 Os perfis são centralizados em um banco de dados de nuvem eficiente. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta online via formulários web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados PII relevantes em uma exibição consolidada para analisar e tomar decisões.
 
-No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (e-mails, SMS etc.). Graças aos dados dos recipients que são armazenados no banco de dados, você poderá filtrar o recipient que receberá qualquer delivery e adicionar dados de personalização ao seu conteúdo de delivery. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar seus deliveries antes que sejam enviados ao público-alvo final.
+No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (e-mails, SMS etc.). Graças aos dados dos recipients que são armazenados no banco de dados, você poderá filtrar o recipient que receberá qualquer entrega e adicionar dados de personalização ao seu conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
 
 ![](../assets/do-not-localize/glass.png) As noções básicas de gerenciamento de perfil são explicadas [nesta seção](audiences.md).
 
@@ -67,7 +67,7 @@ Os workflows podem ser usados em contextos diferentes, por exemplo:
 
 O Adobe Campaign permite monitorar e interpretar o comportamento dos clientes por meio do aprimoramento gradual de seus dados e perfis. As ferramentas de análise e geração de relatórios permitem capitalizar cada nova campanha, melhorar o direcionamento das suas iniciativas de marketing e otimizar seu impacto e o retorno do investimento.
 
-Além de modelos de relatórios avançados e prontos para uso, o Adobe Campaign permite criar relatórios personalizados em nível de delivery, campanha, usuário ou segmento. Faça análises descritivas, um resumo do ROI ou exporte dados para o Adobe Analytics e outras soluções para uma melhor visualização e análise dos dados.
+Além de modelos de relatórios avançados e prontos para uso, o Adobe Campaign permite criar relatórios personalizados em nível de entrega, campanha, usuário ou segmento. Faça análises descritivas, um resumo do ROI ou exporte dados para o Adobe Analytics e outras soluções para uma melhor visualização e análise dos dados.
 
 O recurso de relatório de campanha facilita a criação de relatórios dinâmicos. Você pode usar variáveis do tipo arrastar e soltar para personalizar seus relatórios e analisar o sucesso de suas campanhas. Dependendo da complexidade de suas consultas e cálculos, os dados podem ser agregados em uma visualização de lista ou acessados em um formato que facilita a geração de relatórios de análise de marketing.
 

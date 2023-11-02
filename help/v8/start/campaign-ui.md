@@ -2,10 +2,10 @@
 title: Conheça o espaço de trabalho do Campaign
 description: Saiba como navegar e usar o espaço de trabalho do Campaign
 feature: Overview
-role: Admin, Developer, User
+role: User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 32%
@@ -52,7 +52,7 @@ Quando você seleciona um elemento na tela, ele é carregado em uma nova guia pa
 
 Use atalhos na **[!UICONTROL Create]** à esquerda da tela para adicionar novos elementos. Você também pode usar a variável **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
 
-Por exemplo, na página de delivery, use o botão **[!UICONTROL Create]** para criar um novo delivery.
+Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para criar uma nova entrega.
 
 ![](assets/new-recipient.png)
 

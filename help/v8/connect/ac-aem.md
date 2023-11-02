@@ -3,9 +3,9 @@ title: Trabalhar com o Campaign e o Adobe Experience Manager
 description: Saiba como trabalhar com o Campaign e o Adobe Experience Manager
 feature: Experience Manager Integration
 role: Admin, User
-level: Beginner, Intermediate
+level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 17%
@@ -14,7 +14,7 @@ ht-degree: 17%
 
 # Trabalhar com o Campaign e o Adobe Experience Manager {#ac-aem}
 
-A integração entre o Adobe Campaign e o Adobe Experience Manager (AEM) permite gerenciar o conteúdo dos deliveries de email, bem como seus formulários diretamente no Adobe Experience Manager.
+A integração entre o Adobe Campaign e o Adobe Experience Manager (AEM) permite gerenciar o conteúdo das entregas de email, bem como seus formulários diretamente no Adobe Experience Manager.
 
 Você também pode inserir ativos diretamente da Biblioteca de ativos da Adobe Experience Manager ao editar um email ou uma landing page no Adobe Campaign. Essa funcionalidade é detalhada no Adobe Experience Manager Assets [capítulo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html).
 

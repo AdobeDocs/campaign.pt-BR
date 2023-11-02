@@ -3,8 +3,9 @@ title: Parâmetros de email no Adobe Campaign
 description: Saiba mais sobre as opções e configurações específicas do delivery de email no Adobe Campaign.
 feature: Email
 role: User
-level: Beginner, Intermediate, Experienced
-source-git-commit: 44f30f753e3ed75b7e56caf7bd8cdfa7cbee5c35
+level: Beginner
+exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 50%
@@ -68,7 +69,7 @@ Observe as seguintes especificidades e recomendações:
 
 ## Selecionar formatos de mensagem {#selecting-message-formats}
 
-Você pode alterar o formato das mensagens de email enviadas. Para fazer isso, edite as propriedades do delivery e clique na guia **[!UICONTROL Delivery]**.
+Você pode alterar o formato das mensagens de email enviadas. Para fazer isso, edite as propriedades da entrega e clique na guia **[!UICONTROL Delivery]**.
 
 ![](assets/email-message-format.png)
 
@@ -97,7 +98,7 @@ Selecione o formato do email na seção inferior da janela:
 
 ## Definir codificação de caracteres {#character-encoding}
 
-Na guia **[!UICONTROL SMTP]** dos parâmetros do delivery, a seção **[!UICONTROL Character encoding]** permite definir uma codificação específica.
+Na guia **[!UICONTROL SMTP]** dos parâmetros da entrega, a seção **[!UICONTROL Character encoding]** permite definir uma codificação específica.
 
 A codificação padrão é UTF-8. Se alguns dos provedores de email de seus recipients não oferecerem suporte à codificação padrão UTF-8, você pode definir uma codificação específica para exibir corretamente os caracteres especiais aos recipients dos seus emails.
 
@@ -123,7 +124,7 @@ Para obter mais informações sobre gerenciamento de rejeição de emails, consu
 
 ## Adicionar cabeçalhos SMTP {#adding-smtp-headers}
 
-É possível adicionar cabeçalhos SMTP às entregas Para fazer isso, use a seção relevante da guia **[!UICONTROL SMTP]** no delivery.
+É possível adicionar cabeçalhos SMTP às entregas Para fazer isso, use a seção relevante da guia **[!UICONTROL SMTP]** na entrega.
 
 O script inserido nessa janela deve referenciar um cabeçalho por linha no seguinte formulário: **name:value**.
 

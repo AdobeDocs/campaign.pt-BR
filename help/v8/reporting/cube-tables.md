@@ -4,8 +4,9 @@ title: Usar cubos para criar relatórios sobre dados
 description: Saiba como usar cubos para criar relatórios
 feature: Reporting
 role: User, Data Engineer
+level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 70%
@@ -17,7 +18,7 @@ ht-degree: 70%
 Use cubos para criar relatórios e identificar e selecionar dados do banco de dados. Você pode:
 
 * Criar relatórios com base em cubos. [Saiba mais](#explore-the-data-in-a-report).
-* Coletar os dados no banco de dados e agrupá-los em listas, por exemplo, para identificar e criar públicos alvos e deliveries. [Saiba mais](#build-a-target-population).
+* Coletar os dados no banco de dados e agrupá-los em listas, por exemplo, para identificar e criar targets e entregas. [Saiba mais](#build-a-target-population).
 * Insira uma tabela dinâmica em um relatório, faça referência a um cubo existente nele. [Saiba mais](#insert-a-pivot-table-into-a-report).
 
 ## Explorar os dados em um relatório {#explore-the-data-in-a-report}

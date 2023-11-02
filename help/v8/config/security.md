@@ -3,12 +3,12 @@ title: Práticas recomendadas de segurança do Campaign
 description: Introdução às práticas recomendadas de segurança do Campaign
 feature: Privacy, PI
 role: Developer
-level: Beginner, Intermediate, Experienced
+level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -37,7 +37,7 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 * Criar grupos de segurança suficientes
 * Verifique se cada operador tem os direitos de acesso apropriados
 
-Saiba mais sobre permissões no [nesta seção](../start/gs-permissions.md)
+Saiba mais sobre permissões [nesta seção](../start/gs-permissions.md)
 
 ## Diretrizes de codificação
 
