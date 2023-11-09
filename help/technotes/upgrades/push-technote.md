@@ -4,24 +4,22 @@ title: Alterações futuras no Canal de notificação por push
 description: Alterações futuras no Canal de notificação por push
 hide: true
 hidefromtoc: true
-source-git-commit: 11330ed8e79ec256b158747914f178b8b6857a33
+source-git-commit: 70d1e7336cce7660890b13def5efcb614c0dc12e
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '699'
 ht-degree: 3%
 
 ---
 
 # Alterações futuras no Canal de notificação por push {#push-upgrade}
 
-Esta página descreve as próximas Alterações no canal de notificação por push por meio do Firebase Cloud Messaging no Adobe Campaign Classic.
+Há alterações importantes no serviço Firebase Cloud Messaging (FCM) que podem afetar sua implementação do Adobe Campaign Classic.
 
-Onde há alterações importantes no serviço Firebase Cloud Messaging (FCM) que podem afetar sua implementação do Adobe Campaign Classic.
-
-Como parte do esforço contínuo da Google em melhorar seus serviços, as APIs herdadas do FCM serão descontinuadas em junho de 2024 (protocolo HTTP Firebase Cloud Messaging: https://firebase.google.com/docs/cloud-messaging/http-server-ref)
+Como parte do esforço contínuo da Google para melhorar seus serviços, as APIs herdadas do FCM serão descontinuadas em junho de 2024 ([Protocolo HTTP do Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/http-server-ref))
 
 Essas APIs estão atualmente integradas ao Adobe Campaign Classic para enviar mensagens de notificação por push. Entendemos que muitos de nossos clientes, como você, dependem desses serviços para suas campanhas de marketing e necessidades de comunicação e, especialmente, para dispositivos Android.
 
-## Como Isso Afeta Você?
+## Você será afetado?
 
 * **Usuários da API HTTP (herdada)**: se qualquer uma de suas campanhas de notificação por push ativas utilizar a API HTTP (herdada), sua configuração será diretamente afetada por essa alteração. Recomendamos que você analise suas configurações atuais e se prepare para a migração para as APIs mais recentes.
 
@@ -35,7 +33,7 @@ Essas APIs estão atualmente integradas ao Adobe Campaign Classic para enviar me
 
 * **Suporte**: nossa Equipe de suporte ao cliente estará disponível para ajudá-lo durante essa transição. Também podemos realizar webinários e sessões de capacitação para abordar os aspectos técnicos e as práticas recomendadas para a transição.
 
-## Como Isso Afeta Você?
+## O que esperamos de você?
 
 * **Mantenha-se informado**: Fique de olho na sua caixa de entrada para obter mais comunicações conosco, incluindo o plano de transição detalhado.
 
@@ -53,7 +51,7 @@ Para que você possa antecipar a alteração, estas são as etapas gerais que se
 
 ### Atualização da build
 
-* Campaign Classic: o suporte de HTTPv1 foi adicionado na versão AC7 20.3.1. Se você estiver usando uma versão anterior, é necessário primeiro atualizar para a build de Campaign Classic mais recente.
+* Campaign Classic: o suporte a HTTPv1 foi adicionado à versão 20.3.1. Se você estiver usando uma versão anterior, é necessário primeiro atualizar para a build de Campaign Classic mais recente.
 
 * Campaign v8: HTTPv1 é compatível com todas as versões do Campaign v8. Nenhuma atualização necessária.
 
