@@ -4,90 +4,98 @@ title: Alterações futuras no Canal de notificação por push
 description: Alterações futuras no Canal de notificação por push
 hide: true
 hidefromtoc: true
-source-git-commit: 70d1e7336cce7660890b13def5efcb614c0dc12e
+source-git-commit: 4072421cd8f0f3ab3b15c4a475428a59503aa955
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 3%
+source-wordcount: '753'
+ht-degree: 22%
 
 ---
 
 # Alterações futuras no Canal de notificação por push {#push-upgrade}
 
-Há alterações importantes no serviço Firebase Cloud Messaging (FCM) que podem afetar sua implementação do Adobe Campaign Classic.
+Você pode usar o Campaign para enviar notificações por push em dispositivos Android. Para fazer isso, o Campaign depende de contas externas e serviços de assinatura específicos do Android. Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign.
 
-Como parte do esforço contínuo da Google para melhorar seus serviços, as APIs herdadas do FCM serão descontinuadas em junho de 2024 ([Protocolo HTTP do Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/http-server-ref))
+## O que mudou? {#fcm-changes}
 
-Essas APIs estão atualmente integradas ao Adobe Campaign Classic para enviar mensagens de notificação por push. Entendemos que muitos de nossos clientes, como você, dependem desses serviços para suas campanhas de marketing e necessidades de comunicação e, especialmente, para dispositivos Android.
+Como parte do esforço contínuo da Google para melhorar seus serviços, as APIs herdadas do FCM serão descontinuadas em **20 de junho de 2024**. Saiba mais sobre o protocolo HTTP do Firebase Cloud Messaging em [Documentação do Google](https://firebase.google.com/docs/cloud-messaging/http-server-ref){target="_blank"}.
 
-## Você será afetado?
+O Adobe Campaign Classic v7 e o Adobe Campaign v8 já oferecem suporte às APIs mais recentes para enviar mensagens de notificação por push. No entanto, algumas implementações antigas ainda dependem das APIs herdadas. Essas implementações devem ser atualizadas.
 
-* **Usuários da API HTTP (herdada)**: se qualquer uma de suas campanhas de notificação por push ativas utilizar a API HTTP (herdada), sua configuração será diretamente afetada por essa alteração. Recomendamos que você analise suas configurações atuais e se prepare para a migração para as APIs mais recentes.
+## Você será afetado? {#fcm-impact}
 
-* **Boas notícias para usuários da API HTTP v1**: se a configuração usar exclusivamente a API HTTP v1 para notificações por push do Android, você já estará em conformidade e nenhuma outra ação será necessária da sua parte.
+Se sua implementação atual suportar serviços de assinatura conectados ao FCM usando as APIs herdadas, você será afetado. A migração para as APIs mais recentes é obrigatória para evitar qualquer perturbação do serviço. Nesse caso, as equipes do Adobe entrarão em contato com você.
 
-## O Que Estamos Fazendo?
+Para verificar se você foi afetado, é possível filtrar o **Serviços e assinaturas** de acordo com o filtro abaixo:
 
-* **Plano de transição**: Nossa equipe está trabalhando ativamente no desenvolvimento de um plano de transição abrangente. Isso garantirá que, quando necessário, você possa atualizar sua implementação para as APIs do FCM mais recentes já disponíveis nas versões recentes do Adobe Campaign e com o mínimo de interrupção nas campanhas.
+![](assets/filter-services-fcm.png)
 
-* **Instruções detalhadas**: forneceremos um guia passo a passo e outros recursos para facilitar um processo de transição suave.
 
-* **Suporte**: nossa Equipe de suporte ao cliente estará disponível para ajudá-lo durante essa transição. Também podemos realizar webinários e sessões de capacitação para abordar os aspectos técnicos e as práticas recomendadas para a transição.
+* Se qualquer uma de suas campanhas de notificação por push ativas utilizar o **HTTP (herdado)** , sua configuração será afetada diretamente por essa alteração. Você deve revisar suas configurações atuais e migrar para as APIs mais recentes conforme descrito abaixo.
 
-## O que esperamos de você?
+* Se a configuração usar exclusivamente o **HTTP v1** API para notificações por push do Android, você já está em conformidade e nenhuma ação adicional será necessária da sua parte.
 
-* **Mantenha-se informado**: Fique de olho na sua caixa de entrada para obter mais comunicações conosco, incluindo o plano de transição detalhado.
+## Como migrar?{#fcm-migration-procedure}
 
-* **Revisar configuração atual**: dedique este tempo para revisar sua configuração e personalização atuais no Adobe Campaign Classic, de modo que você esteja preparado para fazer as alterações necessárias, se necessário.
+### Pré-requisitos{#fcm-migration-prerequisites}
 
-* **Entre em contato**: Se você tiver dúvidas ou preocupações imediatas, entre em contato com nossa equipe de suporte.
+* Para o Campaign Classic v7, o suporte de HTTP v1 foi adicionado na versão 20.3.1. Se o ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a migração para HTTP v1 é atualizar o ambiente para o [build de Campaign Classic mais recente](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões. Nenhuma atualização é necessária.
 
-## Etapas de implementação
+* Para executar a migração, o arquivo JSON da conta do serviço Android Firebase Admin SDK é necessário para mover o aplicativo móvel para HTTPv1. Consulte esta [página](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-Nas próximas semanas, compartilharemos mais detalhes sobre o plano de transição para APIs herdadas do FCM, incluindo linhas do tempo e itens de ação. Tenha certeza de que nosso objetivo principal é tornar essa transição o mais simples possível para você e sua equipe.
+* Para implantações híbridas, hospedadas e Managed Services, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT).
 
-Agradecemos sua atenção e sua compreensão à medida que nos adaptamos a essas mudanças. Seu sucesso é nossa principal prioridade e temos o compromisso de apoiá-lo em todas as etapas do caminho.
+### Procedimento de migração {#fcm-migration-steps}
 
-Para que você possa antecipar a alteração, estas são as etapas gerais que serão necessárias para migrar sua configuração de push da API HTTP (herdada) para a API HTTPv1 do FCM.
-
-### Atualização da build
-
-* Campaign Classic: o suporte a HTTPv1 foi adicionado à versão 20.3.1. Se você estiver usando uma versão anterior, é necessário primeiro atualizar para a build de Campaign Classic mais recente.
-
-* Campaign v8: HTTPv1 é compatível com todas as versões do Campaign v8. Nenhuma atualização necessária.
-
-### Servidor de marketing
-
-As alterações de configuração podem ser realizadas pelo cliente/parceiro.
-
-1. Primeiro, você precisa extrair o arquivo JSON. O arquivo JSON da conta do serviço do SDK de administrador do Firebase é necessário para mover o aplicativo móvel para HTTPv1. Consulte esta [página](https://firebase.google.com/docs/admin/setup#initialize-sdk).
+Para migrar seu ambiente para HTTP v1, siga estas etapas nos servidores de Marketing e Execução em tempo real:
 
 1. Navegue até a lista de **Serviços e assinaturas**.
 
-1. Localize todos os aplicativos móveis usando a versão da API HTTP (herdada).
+1. Localize todos os aplicativos móveis usando o **HTTP (herdado)** Versão da API.
 
-1. Para cada um desses aplicativos móveis, defina o **Versão da API** para HTTPv1 e siga as instruções de configuração detalhadas na [documentação](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html).
+1. Para cada um desses aplicativos móveis, defina o **Versão da API** para **HTTP v1**.
+
+1. Clique em **[!UICONTROL Load project json file to extract project details...]** para carregar diretamente seu arquivo de chave JSON.
+
+   Você também pode inserir manualmente os seguintes detalhes:
+   * **[!UICONTROL Project Id]**
+   * **[!UICONTROL Private Key]**
+   * **[!UICONTROL Client Email]**
+
+   ![](assets/android-http-v1-config.png)
+
+1. Clique em **[!UICONTROL Test the connection]** para verificar se a configuração está correta e se o servidor de marketing tem acesso ao FCM. Observe que para implantações de Mid-Sourcing, a variável **[!UICONTROL Test connection]** O botão não pode verificar se o servidor tem acesso ao serviço Android Firebase Cloud Messaging (FCM).
+
+1. Como opção, você pode enriquecer um conteúdo de mensagem de push com alguns **[!UICONTROL Application variables]** se necessário. Eles são totalmente personalizáveis e uma parte da carga da mensagem é enviada para o dispositivo móvel.
+
+1. Clique em **[!UICONTROL Finish]** e em **[!UICONTROL Save]**.
+
+Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notificação por push:
+
+| Tipo de mensagem | Elemento de mensagem configurável (nome da carga FCM) | Opções configuráveis (nome da carga do FCM) |
+|:-:|:-:|:-:|
+| mensagem de dados | N/D | validate_only |
+| mensagem de notificação | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
+
 
 >[!NOTE]
 >
->A mudança para a API HTTPv1 será considerada para novos deliveries. Os deliveries em repetição, em andamento e em uso ainda usarão a API HTTP (herdada).
+>A alternância para a API HTTP v1 é aplicada a todos os novos deliveries. Os deliveries em repetição, em andamento e em uso ainda usam a API HTTP (herdada).
 
-### Servidor Mid-Sourcing
-
-Não há alterações necessárias.
-
-### Servidor de execução em tempo real
-
-Você precisa entrar em contato com o suporte da Adobe Campaign para isso. O procedimento de migração é o mesmo do servidor de marketing.
-
-### Sistema operacional Android e aplicativo móvel Android
+### Qual é o impacto para meus aplicativos Android? {#fcm-apps}
 
 Não há alterações específicas necessárias no código dos aplicativos móveis do Android e o comportamento da notificação não deve ser alterado.
 
-No entanto, HTTPv1 está introduzindo três novos elementos de carga:
+No entanto, com HTTP v1, você pode personalizar ainda mais sua notificação por push com **[!UICONTROL HTTPV1 additional options]**.
 
-| Nome | Valor padrão |
-|---|---|
-| adesivo | Falso |
-| prioridade | Padrão |
-| visibilidade | Falso |
-| adesivo | Privado |
+![](assets/android-push-additional-options.png)
+
+
+* Use o **[!UICONTROL Ticker]** para definir o texto do ticker da sua notificação.
+* Use o **[!UICONTROL Image]** para definir o URL da imagem que será exibido na sua notificação.
+* Use o **[!UICONTROL Notification Count]** para definir o número de novas informações não lidas a serem exibidas diretamente no ícone do aplicativo.
+* Defina o **[!UICONTROL Sticky]** para que a notificação seja automaticamente descartada quando o usuário clicar nela. Se definida como verdadeiro, a notificação ainda será exibida mesmo quando o usuário clicar nela.
+* Defina o **[!UICONTROL Notification Priority]** nível da sua notificação para padrão, mínimo, baixo ou alto.
+* Defina o **[!UICONTROL Visibility]** nível da sua notificação para público, privado ou secreto.
+
+Para obter mais informações sobre **[!UICONTROL HTTP v1 additional options]** e como preencher esses campos, consulte a [documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
+
