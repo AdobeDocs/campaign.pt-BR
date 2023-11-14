@@ -4,20 +4,20 @@ title: Alterações futuras no Canal de notificação por push
 description: Alterações futuras no Canal de notificação por push
 hide: true
 hidefromtoc: true
-source-git-commit: fc274e1266d37611c8781a007ccb6a293a683c21
+source-git-commit: 5ed6a5c9c458381ef701428aeab146afe4788d58
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 21%
+source-wordcount: '819'
+ht-degree: 20%
 
 ---
 
 # Alterações futuras no Canal de notificação por push {#push-upgrade}
 
-Você pode usar o Campaign para enviar notificações por push em dispositivos Android. Para fazer isso, o Campaign depende de contas externas e serviços de assinatura específicos do Android. Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign.
+Você pode usar o Campaign para enviar notificações por push em dispositivos Android. Para fazer isso, o Campaign depende de serviços de assinatura específicos. Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push do Android pode precisar ser atualizada para dar suporte a essa alteração.
 
 ## O que mudou? {#fcm-changes}
 
-Como parte do esforço contínuo da Google para melhorar seus serviços, as APIs herdadas do FCM serão descontinuadas em **20 de junho de 2024**. Saiba mais sobre o protocolo HTTP do Firebase Cloud Messaging em [Documentação do Google](https://firebase.google.com/docs/cloud-messaging/http-server-ref){target="_blank"}.
+Como parte do esforço contínuo da Google para melhorar seus serviços, as APIs herdadas do FCM serão descontinuadas em **20 de junho de 2024**. Saiba mais sobre o protocolo HTTP do Firebase Cloud Messaging em [Documentação do Google Firebase](https://firebase.google.com/docs/cloud-messaging/http-server-ref){target="_blank"}.
 
 O Adobe Campaign Classic v7 e o Adobe Campaign v8 já oferecem suporte às APIs mais recentes para enviar mensagens de notificação por push. No entanto, algumas implementações antigas ainda dependem das APIs herdadas. Essas implementações devem ser atualizadas.
 
@@ -30,30 +30,33 @@ Para verificar se você foi afetado, é possível filtrar o **Serviços e assina
 ![](assets/filter-services-fcm.png)
 
 
-* Se qualquer uma de suas campanhas de notificação por push ativas utilizar o **HTTP (herdado)** , sua configuração será afetada diretamente por essa alteração. Você deve revisar suas configurações atuais e migrar para as APIs mais recentes conforme descrito abaixo.
+* Se qualquer um dos serviços de notificação por push ativos usar o **HTTP (herdado)** , sua configuração será afetada diretamente por essa alteração. Você deve revisar suas configurações atuais e migrar para as APIs mais recentes conforme descrito abaixo.
 
-* Se a configuração usar exclusivamente o **HTTP v1** API para notificações por push do Android, você já está em conformidade e nenhuma ação adicional será necessária da sua parte.
+* Se a configuração usar exclusivamente o **HTTP v1** API para notificações por push do Android, você já está em conformidade e nenhuma outra ação será necessária da sua parte.
 
-## Como migrar?{#fcm-migration-procedure}
+## Como migrar? {#fcm-migration-procedure}
 
-### Pré-requisitos{#fcm-migration-prerequisites}
+### Pré-requisitos {#fcm-migration-prerequisites}
 
-* Para o Campaign Classic v7, o suporte de HTTP v1 foi adicionado na versão 20.3.1. Se o ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a migração para HTTP v1 é atualizar o ambiente para o [build de Campaign Classic mais recente](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões. Nenhuma atualização é necessária.
+* Para o Campaign Classic v7, o suporte de HTTP v1 foi adicionado na versão 20.3.1. Se o ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a migração para HTTP v1 é atualizar o ambiente para o [build de Campaign Classic mais recente](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
 
-* Para executar a migração, o arquivo JSON da conta do serviço Android Firebase Admin SDK é necessário para mover o aplicativo móvel para HTTPv1. Consulte esta [página](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+* O arquivo JSON da conta do serviço SDK de administrador do Firebase do Android é necessário para mover o aplicativo móvel para HTTP v1. Saiba como obter este arquivo no [Documentação do Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* Para implantações híbridas, hospedadas e Managed Services, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT).
+* Para implantações híbridas, hospedadas e Managed Services, além do procedimento de migração abaixo, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT). O servidor Mid-Sourcing não é afetado.
+
+* Como usuário local do Campaign Classic v7, você deve atualizar os servidores de execução Marketing e Tempo real. O servidor Mid-Sourcing não é afetado.
 
 ### Procedimento de migração {#fcm-migration-steps}
 
-Para migrar seu ambiente para HTTP v1, siga estas etapas nos servidores de Marketing e Execução em tempo real:
+Para migrar seu ambiente para HTTP v1, siga estas etapas:
 
 1. Navegue até a lista de **Serviços e assinaturas**.
-1. Localize todos os aplicativos móveis usando o **HTTP (herdado)** Versão da API.
+1. Listar todos os aplicativos móveis usando o **HTTP (herdado)** Versão da API.
 1. Para cada um desses aplicativos móveis, defina o **Versão da API** para **HTTP v1**.
 1. Clique em **[!UICONTROL Load project json file to extract project details...]** para carregar diretamente seu arquivo de chave JSON.
 
    Você também pode inserir manualmente os seguintes detalhes:
+
    * **[!UICONTROL Project Id]**
    * **[!UICONTROL Private Key]**
    * **[!UICONTROL Client Email]**
