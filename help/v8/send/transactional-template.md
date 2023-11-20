@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 555e1d64ada12dc145fbba9124611e30d7746ba5
+source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 57%
@@ -130,7 +130,7 @@ Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-v
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### Enviar uma prova
+### Enviar uma prova {#send-proof}
 
 Você pode testar a entrega de mensagens enviando uma prova para um seed address criado anteriormente.
 
@@ -159,7 +159,7 @@ Para enviar a prova:
 
 ![](assets/messagecenter_send_proof_003.png)
 
-#### Transição de [!DNL Campaign Classic] v7
+#### Transição de [!DNL Campaign Classic] v7 {#transition-from-v7}
 
 Se você estiver [transição do Campaign Classic v7](../start/v7-to-v8.md), todos os deliveries passam pelo servidor mid-sourcing.
 
