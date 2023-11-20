@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 555e1d64ada12dc145fbba9124611e30d7746ba5
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 63%
+source-wordcount: '1170'
+ht-degree: 57%
 
 ---
 
@@ -25,7 +25,7 @@ Para criar um template de mensagem, siga as etapas abaixo:
 
    ![](assets/messagecenter_create_model_001.png)
 
-1. Na janela do delivery, selecione o template do delivery apropriado para o canal que deseja usar.
+1. Na janela da entrega, selecione o template da entrega apropriado para o canal que deseja usar.
 
    ![](assets/messagecenter_create_model_002.png)
 
@@ -42,12 +42,12 @@ Para criar um template de mensagem, siga as etapas abaixo:
 
 ## Criar o conteúdo{#create-message-content}
 
-A definição do conteúdo da mensagem transacional é a mesma de todos os deliveries no Adobe Campaign. Por exemplo, para um delivery de email, você pode criar conteúdo em formato HTML ou texto, adicionar anexos ou personalizar o objeto do delivery. [Saiba mais](../start/create-message.md).
+A definição do conteúdo da mensagem transacional é a mesma de todos os deliveries no Adobe Campaign. Por exemplo, para uma entrega de email, você pode criar conteúdo em formato HTML ou texto, adicionar anexos ou personalizar o objeto da entrega. [Saiba mais](../start/create-message.md).
 
 >[!CAUTION]
 >
 >As imagens incluídas na mensagem devem ser acessíveis publicamente. O Adobe Campaign não fornece nenhum mecanismo de carregamento de imagem para mensagens transacionais.\
->Ao contrário do JSSP ou webApp, `<%=`não tem nenhum escape padrão.
+>Ao contrário do JSSP ou webApp, `<%=` não tem nenhum escape padrão.
 >
 >Você precisa escapar cada dado que vem do evento corretamente. Este escape depende da forma como esse campo é usado. Por exemplo, dentro de uma URL, use encodeURIComponent. Para ser exibido no HTML, você pode usar escapeXMLString.
 
@@ -74,7 +74,7 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 
 ### Adicionar seed addresses{#add-seeds}
 
-Um seed address permite exibir uma pré-visualização da mensagem, enviar uma prova e testar a personalização da mensagem antes de enviar a mensagem. Os seed addresses estão vinculados ao delivery e não podem ser usados para outros deliveries.
+Um seed address permite exibir uma pré-visualização da mensagem, enviar uma prova e testar a personalização da mensagem antes de enviar a mensagem. Os seed addresses estão vinculados à entrega e não podem ser usados para outras entregas.
 
 1. No modelo de mensagem transacional, clique no botão **[!UICONTROL Seed addresses]** e clique na guia **[!UICONTROL Add]** botão.
 
@@ -145,9 +145,9 @@ No entanto, para enviar uma prova de mensagem transacional, é necessário reali
 
 Para enviar a prova:
 
-1. Clique no botão **[!UICONTROL Send a proof]** na janela do delivery.
-1. Analise o delivery.
-1. Corrija qualquer erro e confirme o delivery.
+1. Clique no botão **[!UICONTROL Send a proof]** na janela da entrega.
+1. Analise a entrega.
+1. Corrija qualquer erro e confirme a entrega.
 
    ![](assets/messagecenter_send_proof_001.png)
 
@@ -158,6 +158,18 @@ Para enviar a prova:
 É possível acessar as provas em cada template através da guia **[!UICONTROL Audit]**.
 
 ![](assets/messagecenter_send_proof_003.png)
+
+#### Transição de [!DNL Campaign Classic] v7
+
+Se você estiver [transição do Campaign Classic v7](../start/v7-to-v8.md), todos os deliveries passam pelo servidor mid-sourcing.
+
+No entanto, ao criar um template de mensagem transacional, o roteamento necessário para que o template seja usado com êxito é **delivery de email interno**. Esse roteamento impede que você envie provas.
+
+Consequentemente, para enviar uma prova para seu template de mensagem transacional, você deve alterar o roteamento do delivery de email interno para o **conta de roteamento de mid-sourcing**.
+
+![](assets/messagecenter_send_proof_004.png)
+
+Depois que as provas forem enviadas, você deverá alterar o roteamento de volta para o delivery de email interno antes de publicar o template de mensagem transacional.
 
 ## Publicar o modelo {#publish-message-template}
 
