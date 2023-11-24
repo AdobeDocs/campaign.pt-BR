@@ -1,18 +1,18 @@
 ---
 title: Novidades do Campaign v8
-description: Descubra os principais recursos do Adobe Campaign v8, as novidades e o que você pode esperar da versão mais recente.
-feature: Overview, Release Notes
+description: Descubra os principais recursos no Adobe Campaign v8
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 5c4bbbd06eb7bf6dc9ada1d08c3fc696e88ee760
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 95%
+source-wordcount: '911'
+ht-degree: 93%
 
 ---
 
-# Quais são as novidades do Adobe Campaign v8? {#ac-gs-what-is-new}
+# Principais recursos do Adobe Campaign v8 {#ac-gs-what-is-new}
 
 O Adobe Campaign v8 foi projetado para profissionais de marketing de vários canais que precisam da melhor solução em nuvem do setor para o gerenciamento de campanhas em vários canais com escala corporativa. Ele oferece recursos avançados de ETL e gerenciamento de dados para ajudar a criar e preparar a campanha perfeita. Seu mecanismo de orquestração fornece programas de marketing multitoque avançados com foco principal em jornadas orientadas por lote. Ele também vem com um servidor de mensagens escalável em tempo real que permite que as equipes de marketing enviem mensagens predefinidas com base em um conteúdo abrangente a partir de qualquer sistema de TI para realizar tarefas como redefinição de senha, confirmação de pedido, geração de recibos eletrônicos e muito mais.
 
