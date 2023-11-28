@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 14%
@@ -38,7 +38,7 @@ Dois modelos de implantação estão disponíveis:
 
   >[!NOTE]
   >
-  >Neste modelo de implantação, a variável [!DNL Snowflake] o banco de dados secundário está disponível somente mediante solicitação. Para atualizar sua implantação com [!DNL Snowflake], entre em contato com o Gerente técnico de conta do Adobe.
+  >Neste modelo de implantação, a variável [!DNL Snowflake] o banco de dados secundário está disponível somente mediante solicitação. Para atualizar sua implantação com [!DNL Snowflake], entre em contato com o Gerente de transição de Adobe.
   >
 
 * **Implantação do Campaign Enterprise (FFDA)**
@@ -70,7 +70,7 @@ Para fazer isso, contas externas adicionais com a **[!UICONTROL Split]** modo de
 
 >[!IMPORTANT]
 >
->O modo de roteamento dividido é ativado por padrão para a conta &quot;Split Delivery - Email&quot;. Para todas as outras contas externas de canais, entre em contato com o Atendimento ao cliente para ativar a opção.
+>O modo de roteamento dividido é ativado por padrão para a conta &quot;Split Delivery - Email&quot;. Para todas as outras contas externas de canais, entre em contato com o Gerenciador de transição do Adobe para ativar a opção.
 >
 >Por padrão, o valor de tamanho limite para dividir um delivery entre várias mids é de 100K. Você pode alterar esse valor na opção &quot;NmsDelivery_MultiMidSplitThreshold&quot; na **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Options]** menu.
 

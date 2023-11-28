@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 95%
+source-wordcount: '379'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho 
 
 Principais benefícios:
 
-* Faça rapidamente alterações nas configurações por conta própria sem entrar em contato com o Atendimento ao cliente.
+* Faça rapidamente alterações nas configurações por conta própria sem precisar acessar o Adobe.
 * Defina as configurações de acordo com as diferentes necessidades da sua empresa em momentos diferentes.
 * Aumente a segurança controlando as configurações de acesso conforme a necessidade.
 
