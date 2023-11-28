@@ -5,10 +5,10 @@ feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 89%
+source-wordcount: '1115'
+ht-degree: 88%
 
 ---
 
@@ -381,7 +381,7 @@ Os relatórios a seguir também são fornecidos internamente. Para obter mais in
   </tr> 
   <tr> 
    <td> Histórico de aquisições de prospecto social (socialVisitorStatistics)<br /> </td> 
-   <td> O histórico de aquisições de prospecto do Twitter e do Facebook depende do add-on de marketing social.<br /> </td> 
+   <td> O histórico de aquisições de prospecto do X (conhecido anteriormente como Twitter) e do Facebook depende do add-on de marketing social.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 

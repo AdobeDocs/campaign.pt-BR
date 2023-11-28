@@ -3,10 +3,10 @@ product: campaign
 title: Marketing social
 description: Saiba mais sobre workflows técnicos de marketing social
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 100%
+source-wordcount: '120'
+ht-degree: 77%
 
 ---
 
@@ -46,12 +46,12 @@ Os workflows detalhados abaixo são instalados com o módulo **Marketing Social*
   <tr> 
    <td> <span class="uicontrol">Cálculo das estatísticas do Twitter</span> <br /> </td> 
    <td> <span class="uicontrol">statsTwitter</span> <br /> </td> 
-   <td> Esse workflow calcula estatísticas vinculadas a retweets e visitas no Twitter.<br /> </td> 
+   <td> Esse workflow calcula estatísticas vinculadas a retweets e visitas em X (anteriormente conhecido como Twitter).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Sincronizar páginas do Twitter</span> <br /> </td> 
    <td> <span class="uicontrol">syncTwitter</span> <br /> </td> 
-   <td> Esse workflow importa seguidores do Twitter para o Adobe Campaign todos os dias às 7:00 AM.<br /> </td> 
+   <td> Esse workflow importa X seguidores para o Adobe Campaign todos os dias às 7:00 AM.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

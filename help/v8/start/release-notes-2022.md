@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '1839'
-ht-degree: 94%
+source-wordcount: '1847'
+ht-degree: 91%
 
 ---
 
@@ -51,20 +51,20 @@ _30 de setembro de 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Disponibilidade do canal do Twitter</strong><br /> </th> 
+<th> <strong>Disponibilidade do canal X (anteriormente conhecido como Twitter)</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>O <a href="../send/twitter.md">Canal de rede social do Twitter</a> agora está disponível com o Campaign v8. Você pode:</p>
+<td> <p>A variável <a href="../send/twitter.md">Canal social X</a> O agora está disponível com o Campaign v8. Você pode:</p>
 <ul> 
-<li><p>Enviar mensagens no Twitter: o Adobe Campaign permite postar mensagens diretamente na sua conta do Twitter. Você também pode enviar mensagens diretas a todos os seus seguidores.
+<li><p>Enviar mensagens no X (antigo Twitter): o Adobe Campaign permite postar mensagens diretamente na sua conta do X. Você também pode enviar mensagens diretas a todos os seus seguidores.
 </p></li>
 <li><p>Coletar novos contatos: o Adobe Campaign pode recuperar automaticamente os dados do perfil, o que permite realizar campanhas de direcionamento e implementar estratégias entre canais.
 </p></li>
 </ul>
-<p>Saiba como conectar o Campaign e o Twitter na <a href="../connect/ac-tw.md">documentação detalhada</a>.</p>
-<p>Saiba como publicar tweets e enviar mensagens diretas com o Campaign <a href="../connect/ac-tw.md">nesta página</a>.</p>
+<p>Saiba como conectar o Campaign e o X no <a href="../connect/ac-tw.md">documentação detalhada</a>.</p>
+<p>Saiba como criar publicações e enviar mensagens diretas com o Campaign no <a href="../connect/ac-tw.md">esta página</a>.</p>
 </td> 
 </tr> 
 </tbody> 
