@@ -5,7 +5,7 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 22%
@@ -94,7 +94,7 @@ Após criar o workflow, você poderá acessar opções adicionais com o **[!UICO
 
 Saiba mais sobre **Propriedades do fluxo de trabalho** in [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html).
 
-No **[!UICONTROL Execution]** do fluxo de trabalho **[!UICONTROL Properties]**, é possível vincular o workflow a depósitos diferentes e otimizar o gerenciamento da carga de trabalho. Para obter mais informações sobre **Warehouses**, consulte o [Documentação do Snowflake](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
+No **[!UICONTROL Execution]** do fluxo de trabalho **[!UICONTROL Properties]**, é possível vincular o workflow a depósitos diferentes e otimizar o gerenciamento da carga de trabalho. Para obter mais informações sobre **Warehouses**, consulte o [Documentação do Snowflake](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
 
 ![](assets/warehouse.png)
 
@@ -156,7 +156,7 @@ E estas páginas na documentação do Campaign v7:
 Saiba como automatizar a criação e o delivery de um bloco de conteúdo com o complemento de gerenciamento de conteúdo do Campaign.
 
 * [Teste A/B](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target="_blank"}
-Saiba como comparar dois conteúdos de delivery de email por meio de um workflow para construção do target. A mensagem e o texto são idênticos nas duas remessas: apenas o layout é alterado. A população direcionada é dividida em três grupos: dois grupos de teste e a população restante. Uma versão diferente do delivery é enviado para cada grupo de teste.
+Saiba como comparar dois conteúdos de delivery de email por meio de um workflow para construção do target. A mensagem e o texto são idênticos nas duas entregas: apenas o layout é alterado. A população direcionada é dividida em três grupos: dois grupos de teste e a população restante. Uma versão diferente da entrega é enviada para cada grupo de teste.
 
 ### Monitoramento {#monitoring}
 

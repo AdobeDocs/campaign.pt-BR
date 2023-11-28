@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 92%
+source-wordcount: '690'
+ht-degree: 86%
 
 ---
 
@@ -47,9 +47,7 @@ O Campaign v8 depende de um **arquitetura híbrida**. Se estiver fazendo a trans
 
 ## [!DNL Campaign] e [!DNL Snowflake] {#ac-gs-snowflake}
 
-O Campaign v8 funciona com o [!DNL Snowflake].
-
-Em sua [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o [!DNL Adobe Campaign] v8 funciona com dois bancos de dados: um banco de dados local do [!DNL Campaign] para a interface de mensagens em tempo real, consultas unitárias e gravações por meio de APIs, e um banco de dados em nuvem do [!DNL Snowflake] para execução de campanhas, consultas em lote e execução de fluxos de trabalho.
+No seu [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um local [!DNL Campaign] para a interface do usuário de mensagens em tempo real e consultas unitárias e gravação por meio de APIs, além de uma nuvem [!DNL Snowflake] banco de dados para execução de campanha, consultas em lote e execução de workflow.
 
 O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova arquitetura, a implantação corporativa (FFDA) do Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 

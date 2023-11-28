@@ -5,9 +5,9 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1032'
 ht-degree: 14%
 
 ---
@@ -32,9 +32,14 @@ Dois tipos de ambientes estão disponíveis:
 
 Dois modelos de implantação estão disponíveis:
 
-* **FDA do Campaign [!DNL Snowflake] implantação**
+* **Implantação do FDA no Campaign**
 
-  No seu [[!DNL Snowflake] Implantação do FDA](fda-deployment.md), [!DNL Adobe Campaign] O v8 está conectado ao [!DNL Snowflake] para acessar dados por meio do recurso Federated Data Access: você pode acessar e processar dados externos e informações armazenadas em seu [!DNL Snowflake] banco de dados sem alterar a estrutura dos dados do Adobe Campaign. O PostgreSQL é o banco de dados principal e o Snowflake é o banco de dados secundário. Você pode estender seu modelo de dados e armazenar seus dados no Snowflake. Posteriormente, é possível executar ETL, segmentação e relatórios em um grande conjunto de dados com desempenhos excelentes.
+  No seu [Implantação do FDA](fda-deployment.md), [!DNL Adobe Campaign] O v8 pode ser conectado ao [!DNL Snowflake] para acessar dados por meio do recurso Federated Data Access: você pode acessar e processar dados externos e informações armazenadas em seu [!DNL Snowflake] banco de dados sem alterar a estrutura dos dados do Adobe Campaign. O PostgreSQL é o banco de dados principal e você pode usar o Snowflake como o banco de dados secundário para estender e armazenar seus dados no Snowflake. Posteriormente, é possível executar ETL, segmentação e relatórios em um grande conjunto de dados com desempenhos excelentes.
+
+  >[!NOTE]
+  >
+  >Neste modelo de implantação, a variável [!DNL Snowflake] o banco de dados secundário está disponível somente mediante solicitação. Para atualizar sua implantação com [!DNL Snowflake], entre em contato com o Gerente técnico de conta do Adobe.
+  >
 
 * **Implantação do Campaign Enterprise (FFDA)**
 

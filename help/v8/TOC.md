@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Visão geral da campanha
-source-git-commit: cb5bec3107872d4d6da83b4ddbc7cad3e9276b00
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -73,8 +73,8 @@ ht-degree: 93%
          + [Entender a descrição do evento](send/event-description.md)
          + [Enviar e monitorar mensagens](send/delivery-execution.md)
 + Gerenciamento de perfil e público-alvo {#audience}
-   + [Introdução a perfis e públicos](audiences/gs-audiences.md)
-   + [Trabalhar com públicos](start/audiences.md)
+   + [Introdução a perfis e públicos-alvo](audiences/gs-audiences.md)
+   + [Trabalhar com públicos-alvo](start/audiences.md)
    + [Acessar perfis](audiences/view-profiles.md)
    + Adicionar perfis {#add-profiles}
       + [Criar perfis manualmente](audiences/create-profiles.md)
@@ -83,7 +83,7 @@ ht-degree: 93%
       + [Coletar dados de perfil em formulários web](audiences/collect-profiles.md)
       + [Trabalhar com target mappings](audiences/target-mappings.md)
       + [Criar perfis de teste](audiences/test-profiles.md)
-   + Criar públicos {#create-audiences}
+   + Criar públicos-alvo {#create-audiences}
       + [Criar uma lista de contatos](audiences/create-audiences.md)
       + [Criar e gerenciar filtros](audiences/create-filters.md)
       + [Compartilhar públicos-alvo com soluções Adobe](start/shared-audiences.md)
@@ -155,11 +155,10 @@ ht-degree: 93%
       + [Adicionar permissões em pastas](start/folder-permissions.md)
    + [Painel de controle](config/self-service.md)
 + Arquitetura e configuração {#config}
-   + Arquitetura {#architecture}
+   + Arquitetura do Campaign v8 {#architecture}
       + [Princípios globais](architecture/general-architecture.md)
-      + [Arquitetura](architecture/architecture.md)
-      + Implantação do FDA no Snowflake{#fda}
-         + [O que é o FDA-Snowflake?](architecture/fda-deployment.md)
+      + [Arquitetura modelos](architecture/architecture.md)
+      + [Implantação do FDA no Campaign](architecture/fda-deployment.md)
       + Implantação corporativa (FFDA) {#ffda}
          + [O que é o FFDA do Campaign?](architecture/enterprise-deployment.md)
          + Características {#ffda-characteristics}

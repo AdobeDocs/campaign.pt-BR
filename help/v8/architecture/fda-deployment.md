@@ -1,20 +1,20 @@
 ---
-title: Introdução à implantação do FDA-Snowflake do Campaign
-description: Introdução à implantação do FDA-Snowflake do Campaign
+title: Introdução à implantação do FDA do Campaign
+description: Introdução à implantação do FDA do Campaign
 feature: Architecture, Federated Data Access, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: b3df0336-f40e-4ac1-b6a4-068b8827dca2
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
-# [!DNL Campaign] FDA [!DNL Snowflake] implantação{#gs-fda-snowflake}
+# [!DNL Campaign] Implantação do FDA{#gs-fda}
 
-Em um [!DNL Snowflake] Implantação FDA (padrão), [!DNL Adobe Campaign] O v8 está conectado ao [!DNL Snowflake] para acessar os dados por meio de [Federated Data Access](../connect/fda.md) recurso: você pode acessar e processar dados externos e informações armazenadas em seu [!DNL Snowflake] banco de dados sem alterar a estrutura dos dados do Adobe Campaign.
+Na implantação do FDA do Campaign (padrão), [!DNL Adobe Campaign] O v8 pode ser conectado ao [!DNL Snowflake] para acessar os dados por meio de [Federated Data Access](../connect/fda.md) recurso: você pode acessar e processar dados e informações externos armazenados em seu [!DNL Snowflake] banco de dados sem alterar a estrutura dos dados do Adobe Campaign.
 
 ## Benefícios{#fda-benefits}
 
@@ -37,4 +37,4 @@ A comunicação geral entre servidores e processos é realizada de acordo com o 
 
 ![](assets/fda-architecture.png)
 
-O PostgreSQL é o banco de dados principal e o Snowflake é o banco de dados secundário. Você pode estender seu modelo de dados e armazenar seus dados no Snowflake. Posteriormente, é possível executar ETL, segmentação e relatórios em um grande conjunto de dados com desempenhos excelentes.
+O PostgreSQL é o banco de dados principal e o Snowflake pode ser usado como o banco de dados secundário. Você pode estender seu modelo de dados e armazenar seus dados no Snowflake. Posteriormente, é possível executar ETL, segmentação e relatórios em um grande conjunto de dados com desempenhos excelentes.

@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 5c4bbbd06eb7bf6dc9ada1d08c3fc696e88ee760
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 93%
+source-wordcount: '910'
+ht-degree: 91%
 
 ---
 
@@ -82,7 +82,7 @@ O Adobe Managed Cloud Service oferece aos profissionais de marketing uma soluç�
 
 Agora, o Adobe Campaign pode aproveitar as tecnologias de banco de dados em escala de nuvem para melhorar consideravelmente sua escala e velocidade.
 
-O [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova oferta, o Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. [!DNL Snowflake] é o banco de dados na nuvem do Campaign e trará velocidade e resistência: não há pico de sobrecarga da atividade do sistema. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
+O [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova oferta, o Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. [!DNL Snowflake] é o banco de dados na nuvem do Campaign e oferece velocidade e resistência: não há pico de sobrecarga da atividade do sistema. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 
 ![](../assets/do-not-localize/glass.png) [Saiba mais sobre a implantação corporativa (FFDA)](../architecture/enterprise-deployment.md)
 
