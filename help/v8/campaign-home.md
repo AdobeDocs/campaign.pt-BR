@@ -3,16 +3,14 @@ keywords: Campaign Classic;página inicial;tópicos populares
 description: Central de ajuda do Campaign v8
 title: Documentação do produto Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: b0f5f5b4871752651c43c6f582d0f543be7bb5bd
+source-git-commit: 30141c6ac5bafdd0cb46b4725c063aedee2a9386
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 10%
+source-wordcount: '429'
+ht-degree: 5%
 
 ---
 
 # Documentação do Adobe Campaign v8 {#campaign-documentation}
-
-<!--![](assets/banner-documentationv8.png) -->
 
 ## Novidades
 
@@ -46,7 +44,7 @@ Esses desempenhos máximos de throughput foram medidos por equipes de testes de 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
-    <a href="start/whats-new.md"><img src="assets/do-not-localize/start-capabilities.png"></a></a>
+    <a href="start/whats-new.md"><img src="assets/do-not-localize/start-capabilities.png"></a>
     <div><strong>Principais recursos</strong><br/>Explore os principais recursos do Adobe Campaign v8 para gerenciamento de campanhas em vários canais.</div>
     </td>
     <td>
@@ -62,6 +60,12 @@ Esses desempenhos máximos de throughput foram medidos por equipes de testes de 
     <div><strong>Importar perfis</strong><br/>Explore a criação de perfis no banco de dados do Adobe Campaign v8 com facilidade. Adicione perfis manualmente ou por meio de importações, refinando os dados do cliente e personalizando campanhas facilmente.</div>
     </td>
   </tr>
+  <tr style="border: 0;">
+    <td align="center"><a href="start/whats-new.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="start/connect.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="create-message.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="audiences/create-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    </tr>
 </table>
 
 ## Explorar a documentação
@@ -69,40 +73,35 @@ Esses desempenhos máximos de throughput foram medidos por equipes de testes de 
 <table style="table-layout:auto">
   <tr style="border: 0;">
     <td>
-      <img src="assets/do-not-localize/icon-start.svg" width="70px">
-    <td>
+      <img src="assets/do-not-localize/icon-start.svg" width="35px">
+    <br/>
       <strong>Comece já</strong><br/><a href="start/campaign-ui.md">Interface do usuário</a> - <a href="start/ac-components.md">Componentes e processos</a> - <a href="start/v7-to-v8.md">Do Classic v7 para o v8</a> - <a href="start/campaign-faq.md">Perguntas frequentes</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-experience.svg" width="70px">
-    </td>
-    <td>
+      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
+    <br/>
       <strong>Experiência do cliente</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatizar com workflows</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Orquestração de campanha</a> - <a href="interaction/interaction.md">Gerenciamento de decisão</a> - <a href="send/personalize.md">Personalização</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-send.svg" width="70px">
-    </td>
-    <td>
+      <img src="assets/do-not-localize/icon-send.svg" width="35px">
+    <br/>
       <strong>Enviar mensagens</strong><br/><a href="start/create-message.md">Comece já</a> - <a href="send/preview-and-proof.md">Visualização e provas</a> - <a href="send/predictive.md">Otimização de hora de envio</a> - <a href="reporting/gs-reporting.md">Relatórios e análises</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
-      <img src="assets/do-not-localize/icon_profile-audience.svg" width="70px">
-    </td>
-    <td>
+      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
+    <br/>
       <strong>Perfis e públicos</strong><br/><a href="audiences/create-profiles.md">Adicionar perfis</a> - <a href="audiences/create-audiences.md">Criar públicos</a> - <a href="start/subscriptions.md">Gerenciar assinaturas</a> - <a href="start/privacy.md">Privacidade</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-configure.svg" width="70px">
-    </td>
-    <td>
+      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
+    <br/>
       <strong>Arquitetura e configuração</strong><br/><a href="architecture/architecture.md">Arquitetura</a> - <a href="start/implement.md">Implementação do Campaign v8</a> - <a href="connect/integration.md">Conectar-se a outras soluções</a> - <a href="start/gs-permissions.md">Usuários e permissões</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-dev.svg" width="70px">
-    </td>
-    <td>
+      <img src="assets/do-not-localize/icon-dev.svg" width="35px">
+    <br/>
       <strong>Recursos do desenvolvedor</strong><br/><a href="dev/datamodel.md">Modelo de dados do Campaign v8</a> - <a href="dev/schemas.md">Esquemas</a> - <a href="dev/api.md">APIs</a>
     </td>
   </tr>
@@ -110,8 +109,5 @@ Esses desempenhos máximos de throughput foram medidos por equipes de testes de 
 
 ## Recursos adicionais
 
-* [Descrição de produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}
-* Tutoriais do [](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"}
-* [[!DNL Adobe Campaign] guia de automação](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"}
-* [Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+[Descrição de produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
 
