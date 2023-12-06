@@ -5,9 +5,9 @@ description: Componentes Web do Campaign e versão 100 em navegadores Chrome, Fi
 hide: true
 hidefromtoc: true
 exl-id: 912ad71e-2b23-4b16-b5f9-47d547fc83d5
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Para testar suas páginas da Web com o Mozilla Firefox 100, você pode simular a
 1. Pesquisar por `general.useragent.override`.
 1. Selecione &#39;String&#39; e clique no sinal de mais (+).
 
-   ![](assets/force-user-agent-firefox.png)
+   ![](assets/do-not-localize/force-user-agent-firefox.png)
 
 1. Insira o seguinte texto no campo:
 
@@ -68,7 +68,7 @@ Para testar o agente de usuário do Google Chrome 100 em seus próprios aplicati
 1. Abra o Chrome, insira `chrome://flags` na barra de endereços e pressione enter.
 1. Pesquisar `Force major version to 100 in User-Agent` no campo de pesquisa e ative-o conforme mostrado abaixo.
 
-   ![](assets/force-user-agent-chrome.png)
+   ![](assets/do-not-localize/force-user-agent-chrome.png)
 
 1. Reinicie o navegador.
 1. Feche o `chrome://flags` guia.
@@ -83,7 +83,7 @@ A partir da v97, os proprietários de sites podem emular esta versão ativando o
 1. Abra o Microsoft Edge, insira `edge://flags` na barra de endereços e pressione enter.
 1. Pesquisar por `force-major-version-to-100` e ative-o conforme mostrado abaixo.
 
-   ![](assets/force-user-agent-edge.png)
+   ![](assets/do-not-localize/force-user-agent-edge.png)
 
 1. Reinicie o navegador.
 1. Feche o `edge://flags` guia.

@@ -5,10 +5,10 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 7deb5e8f646b086adec2e0652538a187e68adbee
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Saiba mais sobre os principais recursos do Campaign em [esta página](../start/g
 
 Os componentes do Adobe Campaign e a arquitetura global estão descritos abaixo.
 
-![](assets/ac-components.png)
+![](assets/do-not-localize//ac-components.png)
 
 ### Camada de apresentação{#presentation-layer}
 
@@ -30,7 +30,7 @@ Você pode acessar o Adobe Campaign por meio de um cliente avançado, um cliente
 
 * Cliente avançado
 
-  O Campaign Rich Client é um aplicativo nativo que se comunica com o servidor de aplicativos do Adobe Campaign, por meio de protocolos padrão de Internet, como SOAP e HTTP. [Saiba mais sobre o Console do Cliente do Campaign](../start/connect.md).
+  O Campaign Rich Client é um aplicativo nativo que se comunica com o servidor de aplicativos do Adobe Campaign, por meio de protocolos padrão de Internet, como SOAP e HTTP. [Saiba mais sobre o Console do cliente do Campaign](../start/connect.md).
 
 * Thin client
 
@@ -58,13 +58,13 @@ O Adobe Campaign v8 é implantado de forma as a Managed Service: todos os compon
 
 O servidor Web do Campaign controla o acesso aos processos da Web do Campaign. Javascript é a linguagem do lado do servidor usada para personalização e recursos de produtos principais. O Tomcat é o mecanismo de back-end e está incorporado ao produto do Campaign como parte do processo da Web. O Javascript é usado, por exemplo, em páginas JSP ou JSSP para renderizar conteúdo dinâmico.
 
-![](assets/ac-processes.png)
+![](assets/do-not-localize/ac-processes.png)
 
 O console do cliente do Campaign se conecta ao servidor Web usando XML SOAP por HTTP. O servidor Web fornece a camada de segurança, transmite as solicitações para a camada do Aplicativo usando Javascript e os processos internos do Campaign acessam o banco de dados usando SQL.
 
 A comunicação geral entre os processos do Campaign é descrita no seguinte diagrama de implantação independente: todos os componentes do Campaign são instalados na mesma máquina.
 
-![](assets/ac-standalone.png)
+![](assets/do-not-localize//ac-standalone.png)
 
 O usuário se conecta ao servidor de aplicativos do Campaign usando o HTTP. Todos os dados e informações são gerenciados no banco de dados do Campaign. Se um desenvolvedor do Campaign executar qualquer alteração de configuração, ela será capturada no banco de dados. Se um profissional de marketing criar uma nova campanha, todas as informações e dados relacionados a essa nova campanha também serão gerenciados no banco de dados. Quando um profissional de marketing executa uma campanha, os deliveries de email são enviados aos perfis do servidor do Campaign por meio do servidor SMTP. Conforme os perfis interagem com deliveries de email, como a abertura do email, esses dados de rastreamento são enviados de volta ao servidor de rastreamento.
 

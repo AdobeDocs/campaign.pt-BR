@@ -5,9 +5,9 @@ feature: Overview, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '862'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Use o Campaign para:
 * **Integrar canais de email, móveis, online e offline à jornada do cliente**
 * **Automatizar a entrega de mensagens e ofertas relevantes e oportunas**
 
-![](assets/ac-capabilities.png)
+![](assets/do-not-localize/ac-capabilities.png)
 
 ## Perfil de cliente integrado {#integrated-customer-profile}
 
@@ -40,7 +40,7 @@ O Adobe Campaign tem recursos avançados de segmentação e direcionamento que s
 
 A funcionalidade avançada de Gerenciamento de dados amplia os recursos de processamento de dados. Ela simplifica e otimiza o processo de direcionamento ao incluir dados não modelados no datamart.
 
-![](../assets/do-not-localize/glass.png) Saiba mais sobre segmentação e criação de público [nesta seção](audiences.md).
+![](../assets/do-not-localize/glass.png) Saiba mais sobre segmentação e criação de público-alvo [nesta seção](audiences.md).
 
 ## Orquestração de campanha entre canais {#cross-channel-campaign-orchestration}
 
@@ -56,7 +56,7 @@ Um fluxo de trabalho também pode envolver usuários atribuindo tarefas ou fazen
 
 Os workflows podem ser usados em contextos diferentes, por exemplo:
 
-* Direcionamento para gerenciar públicos ou enviar mensagens.
+* Direcionamento para gerenciar públicos-alvo ou enviar mensagens.
 * Gerenciamento de dados (ETL) para manipular dados.
 * Importação de dados para o banco de dados do Campaign.
 * Processos técnicos, como limpeza do banco de dados, recuperação de informações de rastreamento etc.

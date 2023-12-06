@@ -3,9 +3,10 @@ title: Migração de usuários técnicos para o console do Adobe Developer
 description: Saiba como migrar operadores técnicos do Campaign para a conta técnica no console do Adobe Developer
 feature: Technote
 role: Admin
-source-git-commit: 9f93057d2d729d4251d914426488f46b6ef24bbb
+exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1507'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Uma visão geral das etapas são:
 
 ### Pré-requisitos para a migração{#ims-migration-prerequisites}
 
-Para criar as contas técnicas que substituem os operadores técnicos, o pré-requisito de que os Perfis de produto do Campaign adequados existam no Admin Console para todas as instâncias do Campaign precisa ser validado. Você pode saber mais sobre Perfis de produtos no Console do Adobe em [Documentação do console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
+<!--To be able to create the technical accounts which replace the technical operators, the prerequisite that the proper Campaign Product Profiles exist within the Admin Console for all Campaign instances need to be validated. You can learn more about Product Profiles within the Adobe Console in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.-->
 
 Para chamadas de API nas instâncias do Centro de mensagens, um perfil de produto deve ter sido criado durante a atualização para o Campaign v8.5 ou durante o provisionamento da instância. Este perfil de produto é nomeado como:
 

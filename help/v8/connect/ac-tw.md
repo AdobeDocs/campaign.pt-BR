@@ -5,10 +5,10 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 13%
+source-wordcount: '1065'
+ht-degree: 11%
 
 ---
 
@@ -86,7 +86,7 @@ Para inserir as configurações, você deve acessar o Console do cliente do Adob
    >A variável **[!UICONTROL Internal name]** do serviço deve ter exatamente o mesmo nome da conta X.
    >
 
-1. Por padrão, os seguidores são salvos na pasta **[!UICONTROL Visitors]**. Você pode selecionar outro local no **[!UICONTROL Visitor folder]** campo. [Saiba mais](../send/twitter.md#direct-tw-messages)
+1. Por padrão, os seguidores são salvos na variável **[!UICONTROL Visitors]** pasta. Você pode selecionar outro local no **[!UICONTROL Visitor folder]** campo. [Saiba mais](../send/twitter.md#direct-tw-messages)
 
    ![](assets/tw-service-in-ac.png)
 
@@ -114,7 +114,7 @@ Elas são interrompidas por padrão: você deve iniciá-las manualmente ao come�
 
 A variável **[!UICONTROL Synchronization of Twitter accounts]** o workflow técnico sincroniza as contas X no Adobe Campaign. Esse workflow recupera a lista de seguidores X para que você possa enviar mensagens diretas a eles. [Saiba mais](../send/twitter.md#direct-tw-messages)
 
-Por padrão, esse fluxo de trabalho é acionado todas as quintas-feiras às 7h30. Você pode usar o **[!UICONTROL Execute pending task(s) now]** opção para iniciar o workflow a qualquer momento enquanto estiver implementando essa integração.  Também é possível editar o scheduler para alterar a frequência de acionamento do workflow. Saiba mais [nesta página](../../automation/workflow/scheduler.md).
+Por padrão, esse workflow é acionado todas as quintas-feiras às 7h30. Você pode usar o **[!UICONTROL Execute pending task(s) now]** opção para iniciar o workflow a qualquer momento enquanto estiver implementando essa integração.  Também é possível editar o scheduler para alterar a frequência de acionamento do workflow. Saiba mais [nesta página](../../automation/workflow/scheduler.md).
 
 >[!CAUTION]
 >
@@ -124,7 +124,7 @@ Os seguidores são armazenados em uma tabela específica: a tabela de visitantes
 
 Para cada seguidor, o Adobe Campaign armazena as seguintes informações:
 
-* **[!UICONTROL Origin]**: Twitter
+* **[!UICONTROL Origin]**: TWITTER
 * **[!UICONTROL External ID]**: identificador do usuário
 * **[!UICONTROL Username]**: nome da conta do usuário
 * **[!UICONTROL Full name]**: nome do usuário
@@ -141,6 +141,6 @@ Além da conta X, crie uma conta X privada que possa ser usada para enviar [prov
 1. Acessar a conta  **Configurações**.
 1. Navegue até **Privacidade e segurança** e **Público-alvo e marcação** e verifique a **Protect suas publicações** opção. Suas publicações e outras informações da conta só estarão visíveis para as pessoas que seguem você.
 
-![](assets/social_tw_test_page.png)
+![](assets/do-not-localize/social_tw_test_page.png)
 
 Configure seu aplicativo X e o serviço do Campaign para funcionar com essa conta de teste, conforme descrito acima.
