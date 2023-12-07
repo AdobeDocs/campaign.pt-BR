@@ -1,14 +1,14 @@
 ---
 title: Novidades do Campaign v8
-description: Descubra os principais recursos no Adobe Campaign v8
+description: Conheça os principais recursos do Adobe Campaign v8
 feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 91%
+source-wordcount: '904'
+ht-degree: 90%
 
 ---
 
@@ -32,7 +32,7 @@ O Adobe Campaign facilita a sincronização dos canais, com uma interface de orq
 
 ![](../assets/do-not-localize/glass.png)[Saiba mais sobre os fluxos de trabalho do Campaign](../config/workflows.md)
 
-### Marketing por email personalizado {#perso-email-mkt}
+### Marketing personalizado por email {#perso-email-mkt}
 
 Crie emails personalizados e contextualmente relevantes que sejam consistentes com o restante da experiência do cliente.
 
@@ -57,7 +57,7 @@ Os recursos incluem um perfil integrado que fornece uma visão única do cliente
 ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o gerenciamento de campanhas](campaigns.md)
 
 
-### Conexões com a Adobe Experience Platform {#connection-to-aep}
+### Conexões com o Adobe Experience Platform {#connection-to-aep}
 
 O Adobe Campaign v8 oferece compatibilidade a conectores de dados com a Real-Time CDP e a Adobe Experience Platform, para que as organizações possam aproveitar o perfil de cliente unificado em tempo real.
 
