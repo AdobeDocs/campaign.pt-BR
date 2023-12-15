@@ -5,10 +5,10 @@ feature: Push
 role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 73%
+source-wordcount: '866'
+ht-degree: 61%
 
 ---
 
@@ -18,9 +18,14 @@ Os deliveries por aplicativos móveis permitem enviar notificações para dispos
 
 Antes de começar a enviar notificações por push com o Adobe Campaign, é necessário garantir que as configurações e integrações estejam em vigor no aplicativo móvel e para tags na Adobe Experience Platform. [Saiba mais sobre configuração de push.](push-settings.md)
 
+>[!CAUTION]
+>
+>Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push do Android pode precisar ser atualizada para dar suporte a essa alteração. Você já pode verificar e executar ações. [Saiba mais](../../technotes/upgrades/push-technote.md).
+
+
 ## Criar sua primeira notificação por push{#push-create}
 
-Esta seção detalha os elementos específicos para a entrega de notificações iOS e Android.
+Esta seção detalha os elementos específicos para o delivery de notificações iOS e Android.
 
 >[!CAUTION]
 >
@@ -60,9 +65,9 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
    Este campo permite a definição do valor do parâmetro **title** do conteúdo de notificação do iOS.
 
-1. Você pode adicionar um **[!UICONTROL Subtitle]**, que é o valor do parâmetro de subtítulo do conteúdo de notificação do iOS.****
+1. Você pode adicionar um **[!UICONTROL Subtitle]**, valor de **subtítulo** parâmetro da carga de notificação do iOS.
 
-1. Insira o conteúdo da mensagem na seção **[!UICONTROL Message content]** do assistente.
+1. Insira o conteúdo da mensagem nas **[!UICONTROL Message content]** seção do assistente.
 
 1. Na guia **[!UICONTROL Sound and Badge]**, é possível editar as seguintes opções:
 
@@ -78,7 +83,7 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
      >[!NOTE]
      > 
-     >Os sons devem ser incluídos no aplicativo e definidos quando o serviço for criado.
+     >Os sons devem ser incluídos no aplicativo e definidos quando o serviço é criado.
      >
 
    ![](assets/push_ios_5.png)
@@ -107,9 +112,9 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
       * **[!UICONTROL Passive]**: o sistema adiciona a notificação à lista de notificações sem ativar a tela ou reproduzir um som. As notificações não interrompem os modos de foco.
 
-      * **[!UICONTROL Time sensitive]** o sistema apresenta a notificação imediatamente, ativa a tela, pode reproduzir um som e interrompe os modos de foco. Esse nível não requer uma permissão especial da Apple.
+      * **[!UICONTROL Time sensitive]** O sistema apresenta a notificação imediatamente, ativa a tela, pode reproduzir um som e interrompe os modos de foco. Esse nível não requer uma permissão especial da Apple.
 
-      * **[!UICONTROL Critical]** o sistema apresenta a notificação imediatamente, ativa a tela e ignora os modos de foco e a opção de mudo. Observe que esse nível requer uma permissão especial da Apple.
+      * **[!UICONTROL Critical]** O sistema apresenta a notificação imediatamente, ativa a tela e ignora os modos de foco e a opção de mudo. Observe que esse nível requer uma permissão especial da Apple.
 
    * **[!UICONTROL Relevance score]**: defina uma pontuação de relevância de 0 a 100. O sistema usa essa opção para classificar as notificações no resumo de notificações.
 
@@ -140,7 +145,7 @@ Para enviar notificações em dispositivos Android, siga estas etapas:
 
    ![](assets/push-android-content.png)
 
-1. Clique no ícone **[!UICONTROL Insert emoticon]** para inserir emoticons à notificação via push.
+1. Clique em **[!UICONTROL Insert emoticon]** ícone para inserir emoticons à notificação via push.
 
 1. No campo **[!UICONTROL Application variables]**, insira o valor de cada variável. Por exemplo, você pode configurar uma tela de aplicativo específica para ser exibida quando o usuário ativar a notificação.
 

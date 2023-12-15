@@ -6,18 +6,22 @@ feature: Push
 role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 19%
+source-wordcount: '1631'
+ht-degree: 16%
 
 ---
 
 # Configurar canal de notificação por push {#push-notification-configuration}
 
-Antes de começar a enviar notificações por push com o Adobe Campaign, é necessário garantir que as configurações e integrações estejam em vigor no aplicativo móvel e para tags na Adobe Experience Platform.
+Para enviar notificações por push com o Adobe Campaign, primeiro você deve configurar o ambiente e o aplicativo conforme detalhado nesta página. No Adobe Campaign, o canal para enviar notificações por push é o canal de aplicativo móvel.
 
-O SDK móvel da Adobe Experience Platform fornece APIs de integração do lado do cliente para seus dispositivos móveis por meio de SDKs compatíveis com Android e iOS.
+>[!CAUTION]
+>
+>Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push do Android pode precisar ser atualizada para dar suporte a essa alteração. Você já pode verificar e executar ações. [Saiba mais](../../technotes/upgrades/push-technote.md).
+
+Antes de começar a enviar notificações por push com o Adobe Campaign, é necessário garantir que as configurações e integrações estejam em vigor no aplicativo móvel e para tags na Adobe Experience Platform. O SDK móvel da Adobe Experience Platform fornece APIs de integração do lado do cliente para seus dispositivos móveis por meio de SDKs compatíveis com Android e iOS.
 
 Para configurar seu aplicativo com SDKs do Adobe Experience Platform Mobile, siga estas etapas:
 
@@ -207,7 +211,7 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
 1. Selecione **[!UICONTROL Authentication mode]**. Dois modos estão disponíveis:
 
-   * (Recomendado) **[!UICONTROL Token-based authentication]**: Preencha as configurações de conexão APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]** em seguida, selecione o certificado p8 clicando em **[!UICONTROL Enter the private key...]**. Para obter mais informações sobre **[!UICONTROL Token-based authentication]**, consulte a [documentação da Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * (Recomendado) **[!UICONTROL Token-based authentication]**: Preencha as configurações de conexão APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]** em seguida, selecione o certificado p8 clicando em **[!UICONTROL Enter the private key...]**. Para obter mais informações, **[!UICONTROL Token-based authentication]**, consulte [Documentação do Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
    * **[!UICONTROL Certificate-based authentication]**: Clique em **[!UICONTROL Enter the certificate...]** e selecione em seguida a chave p12, inserindo a senha fornecida pelo desenvolvedor de aplicativos para dispositivos móveis.
 
@@ -219,7 +223,7 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
 1. Clique em **[!UICONTROL Finish]**.
 
-Seu aplicativo iOS está pronto para ser usado no Campaign.
+Seu aplicativo do iOS agora está pronto para ser usado no Campaign.
 
 >[!TAB Android]
 

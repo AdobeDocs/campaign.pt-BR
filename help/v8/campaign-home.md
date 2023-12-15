@@ -3,10 +3,10 @@ keywords: Campaign Classic;página inicial;tópicos populares
 description: Central de ajuda do Campaign v8
 title: Documentação do produto Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 0f86b6303bd380f5079b38de88ee3d097e415695
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 5%
+source-wordcount: '348'
+ht-degree: 13%
 
 ---
 
@@ -18,24 +18,17 @@ Dê uma olhada nos mais recentes aprimoramentos e na documentação do produto A
 
 >[!BEGINTABS]
 
+>[!TAB Alterações futuras do canal por push]
+
+Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push do Android pode precisar ser atualizada para dar suporte a essa alteração. Você já pode verificar e executar ações.
+
+[![imagem](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
+
 >[!TAB Serviço aprimorado de notificação por push]
 
 O Campaign v8.5.1 está apresentando nosso serviço de notificação por push mais recente, viabilizado por uma estrutura robusta criada em uma tecnologia de ponta moderna. Este serviço foi projetado para desbloquear novos níveis de escalabilidade, garantindo que suas notificações possam alcançar um público maior com eficiência contínua. Com nossa infraestrutura aprimorada e nossos processos otimizados, você pode esperar maior escala e confiabilidade, permitindo que você interaja e se conecte com seus usuários de aplicativos móveis como nunca. Esse recurso só está disponível para um grupo selecionado de clientes (disponibilidade limitada).
 
 [![imagem](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
-
->[!TAB Maior taxa de transferência do canal móvel]
-
-O serviço de notificação por push recém-introduzido mostra melhorias significativas na taxa de transferência do Push Android e do Push iOS em comparação à versão anterior (v8.4). Os usuários terão um desempenho notavelmente aprimorado com o serviço atualizado na versão mais recente (v8.5).
-
-* Notificações por push (Android): até **5x** mais rápido
-* Notificações por push (iOS): até **2,2x** mais rápido
-
-A taxa de transferência do SMS passou por melhorias substanciais por meio de uma série de otimizações, resultando em melhorias notáveis na velocidade e na eficiência da comunicação por SMS. Essas atualizações resultaram em maior taxa de transferência da versão anterior (v8.4) para a versão mais recente (v8.5), abrangendo atualizações de envio e de feedback. Agora os usuários podem experimentar os benefícios desse serviço SMS aprimorado.
-
-* Taxa de transferência de SMS: até <strong>5x</strong> mais rápido</li>
-
-Esses desempenhos máximos de throughput foram medidos por equipes de testes de Adobe, em condições de laboratório.
 
 >[!ENDTABS]
 
@@ -57,7 +50,7 @@ Esses desempenhos máximos de throughput foram medidos por equipes de testes de 
     </div></td>
     <td>
     <a href="audiences/create-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>Importar perfis</strong><br/>Explore a criação de perfis no banco de dados do Adobe Campaign v8 com facilidade. Adicione perfis manualmente ou por meio de importações, refinando os dados do cliente e personalizando campanhas facilmente.</div>
+    <div><strong>Importar perfis</strong><br/>Explore a criação de perfis no banco de dados do Adobe Campaign v8 com facilidade. Adicione perfis manualmente ou por meio de importações, refinando os dados de clientes e personalizando campanhas facilmente.</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -68,7 +61,7 @@ Esses desempenhos máximos de throughput foram medidos por equipes de testes de 
     </tr>
 </table>
 
-## Explorar a documentação
+## Conheça a documentação
 
 <table style="table-layout:auto">
   <tr style="border: 0;">

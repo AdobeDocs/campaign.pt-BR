@@ -1,22 +1,21 @@
 ---
 product: campaign
-title: Alterações futuras no Canal de notificação por push
-description: Alterações futuras no Canal de notificação por push
+title: Próximas alterações no Canal de notificação por push
+description: Próximas alterações no Canal de notificação por push
 feature: Push
 role: Admin
 level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Também se aplica ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Aplicável ao Campaign v8"
-hide: true
-hidefromtoc: true
-source-git-commit: 65b8d84e600e1814484fa81fb814475c0a8b9296
+exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 19%
+source-wordcount: '804'
+ht-degree: 13%
 
 ---
 
-# Alterações futuras no Canal de notificação por push {#push-upgrade}
+# Próximas alterações no Canal de notificação por push {#push-upgrade}
 
 Você pode usar o Campaign para enviar notificações por push em dispositivos Android. Para fazer isso, o Campaign depende de serviços de assinatura específicos. Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push do Android pode precisar ser atualizada para dar suporte a essa alteração.
 
@@ -101,5 +100,4 @@ Você pode:
 * Defina o **[!UICONTROL Notification Priority]** nível da sua notificação para padrão, mínimo, baixo ou alto.
 * Defina o **[!UICONTROL Visibility]** nível da sua notificação para público, privado ou secreto.
 
-Para obter mais informações sobre **[!UICONTROL HTTP v1 additional options]** e como preencher esses campos, consulte a [documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
-
+Para obter mais informações sobre o **[!UICONTROL HTTP v1 additional options]** e como preencher esses campos, consulte [Documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
