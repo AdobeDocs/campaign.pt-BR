@@ -6,10 +6,10 @@ role: Data Engineer
 level: Intermediate
 badge: label="Disponibilidade limitada" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 21%
+source-wordcount: '1349'
+ht-degree: 17%
 
 ---
 
@@ -33,7 +33,7 @@ No contexto desta implementação atualizada, para enviar notificações por pus
 
 1. [Adicionar o Campaign Classic ao seu aplicativo para dispositivos móveis](#campaign-mobile-ap)
 
-1. [Criar uma entrega para iOS e Android](##push-create)
+1. [Criar um delivery para iOS e Android](##push-create)
 
 >[!NOTE]
 >
@@ -158,11 +158,11 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
 1. Selecione o ícone na lista suspensa **[!UICONTROL Application icon]** para personalizar o aplicativo para dispositivos móveis em seu serviço.
 
-1. Clique em **[!UICONTROL Next]** para configurar o aplicativo de produção e siga as mesmas etapas descritas acima. Observe que você não pode usar o mesmo **[!UICONTROL Integration key]** para a versão de desenvolvimento (sandbox) e a versão de produção do aplicativo.
+1. Clique em **[!UICONTROL Next]** para configurar o aplicativo de produção e seguir as mesmas etapas descritas acima. Observe que você não pode usar o mesmo **[!UICONTROL Integration key]** para a versão de desenvolvimento (sandbox) e a versão de produção do aplicativo.
 
 1. Clique em **[!UICONTROL Finish]**.
 
-Seu aplicativo iOS está pronto para ser usado no Campaign.
+Seu aplicativo do iOS agora está pronto para ser usado no Campaign.
 
 >[!TAB Android]
 
@@ -246,7 +246,7 @@ Sua propriedade móvel agora será sincronizada automaticamente com o **[!UICONT
 
 ## Adicionar o Campaign Classic ao seu aplicativo para dispositivos móveis {#campaign-mobile-app}
 
-O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras.
+O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é gerenciada por meio da interface da Coleção de dados, para oferecer configuração flexível e integrações extensíveis baseadas em regras.
 
 [Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}
 
