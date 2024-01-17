@@ -5,10 +5,10 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 70%
+source-wordcount: '473'
+ht-degree: 71%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 70%
 
 Para aproveitar ao máximo cada campanha de marketing, o Adobe Campaign oferece uma maneira de fornecer conteúdo personalizado que fala com os clientes em seu nível. Com base nos dados do perfil, recursos de personalização para criar uma experiência personalizada para diferentes grupos e indivíduos: você pode adaptar suas mensagens a cada recipient específico, aproveitando os dados e as informações que tem sobre eles. Pode ser seu nome, interesses, onde vivem, o que compraram e muito mais.
 
-O Adobe Campaign simplifica a personalização: é possível exibir diferentes tipos de conteúdo personalizado para cada recipient usando um único [modelo de email](create-templates.md). Em suas mensagens transacionais, como emails de confirmação de compra ou abandono de carrinho, inclua informações de listagens de produtos para cada indivíduo em um único modelo de email.
+O Adobe Campaign simplifica a personalização: é possível exibir diferentes tipos de conteúdo personalizado para cada recipient usando um único [template de mensagem](create-templates.md). Em suas mensagens transacionais, como emails de confirmação de compra ou abandono de carrinho, inclua informações de listagens de produtos para cada indivíduo em um único modelo de email.
 
 
 ## Estratégias de personalização {#personalization-strategy}
@@ -53,7 +53,7 @@ Para aumentar a proteção da entrega, é possível definir um período de tempo
 
 Na guia **[!UICONTROL Delivery]** de **[!UICONTROL Delivery properties]**, selecione um valor máximo em segundos na opção **[!UICONTROL Maximum personalization run time]**.
 
-Durante a visualização ou envio, se a fase de personalização exceder o tempo máximo definido neste campo, o processo será anulado com uma mensagem de erro e o delivery falhará.
+Durante a visualização ou envio, se a fase de personalização exceder o tempo máximo definido neste campo, o processo será anulado com uma mensagem de erro e a entrega falhará.
 
 O valor padrão é de 5 segundos.
 
@@ -67,7 +67,7 @@ As variáveis a seguir são variáveis internas que podem ser usadas para person
 
 ## Tutorial em vídeo {#personalization-video}
 
-Entenda os diferentes tipos de conteúdo dinâmico e saiba como criar e aplicar blocos de personalização e declarações condicionais a um delivery.
+Entenda os diferentes tipos de conteúdo dinâmico e saiba como criar e aplicar blocos de personalização e declarações condicionais a uma entrega.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)
