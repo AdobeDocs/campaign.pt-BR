@@ -5,10 +5,10 @@ feature: Direct Mail
 role: User
 level: Beginner
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 38%
+source-wordcount: '387'
+ht-degree: 13%
 
 ---
 
@@ -18,33 +18,33 @@ Os deliveries de correspondência direta permitem gerar um arquivo de extração
 
 As etapas para gerar o arquivo são:
 
-1. Criar o delivery
+1. Criar a entrega
 
    Crie um delivery de correspondência direta com base no template. É possível duplicar e configurar o **[!UICONTROL Deliver by direct mail (paper)]** modelo incorporado.
 
-   ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html){target="_blank"}
+   ![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html){target="_blank"}
 
-1. Definir o público
+1. Definir o público-alvo
 
    Os perfis de recipients devem conter pelo menos seus nomes e endereços postais.
 
-   Os endereços postais são campos calculados. Um endereço pode conter até seis linhas por padrão: a primeira contém o nome e sobrenome, as próximas linhas contêm o endereço postal (rua, etc), e a última linha contém o CEP e a cidade.
+   Os endereços postais são campos calculados. Um endereço pode conter até seis linhas por padrão: a primeira contém o nome e sobrenome, as próximas linhas contêm o endereço postal (rua etc.) e a última linha contém o CEP e a cidade. A definição do campo postalAddress calculado padrão pode ser revisada no esquema nms:recipient.
 
-   Um endereço é considerado completo se o nome, campo de CEP e campos do município/cidade não estiverem vazios.
+   Um endereço é considerado completo se o nome, o campo CEP e os campos do município/cidade não estiverem vazios. Quaisquer recipients com endereços incompletos serão excluídos dos deliveries de correspondência direta.
 
-   ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
+   ![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
 
 1. Definir o conteúdo do arquivo
 
    Use o assistente de extração para definir as informações (colunas) a serem exportadas para o arquivo de saída.
 
-   ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/defining-the-direct-mail-content.html){target="_blank"}
+   ![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/defining-the-direct-mail-content.html){target="_blank"}
 
 1. Validar a entrega
 
    Verifique o resultado da análise e o conteúdo do arquivo de output.
 
-   ![](../assets/do-not-localize/book.png) Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html){target="_blank"}
+   ![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html){target="_blank"}
 
    No contexto de uma campanha de marketing, na data de extração, o arquivo de extração é criado. Você pode visualizar o conteúdo do arquivo extraído, aprová-lo ou alterar o formato e reiniciar a extração, se necessário. Depois que o arquivo for aprovado, você poderá enviar o e-mail de notificação para o roteador. Saiba mais [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html)
 
@@ -54,4 +54,4 @@ As etapas para gerar o arquivo são:
 
    A confirmação inicia a extração de dados no arquivo especificado.
 
-   No contexto de uma campanha de marketing, quando todas as aprovações foram concedidas, os arquivos de extração são criados por um workflow especial que, em uma configuração padrão, começa automaticamente quando um delivery de correspondência direta está com extração pendente. Saiba mais [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR)
+   No contexto de uma campanha de marketing, quando todas as aprovações foram concedidas, os arquivos de extração são criados por um workflow especial que, em uma configuração padrão, começa automaticamente quando um delivery de correspondência direta está com extração pendente. Saiba mais em [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR)

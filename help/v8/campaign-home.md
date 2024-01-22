@@ -3,10 +3,10 @@ keywords: Campaign Classic;página inicial;tópicos populares
 description: Central de ajuda do Campaign v8
 title: Documentação do produto Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
+source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 13%
+source-wordcount: '363'
+ht-degree: 30%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 13%
 
 ## Novidades
 
-Dê uma olhada nos mais recentes aprimoramentos e na documentação do produto Adobe Campaign v8! Para obter uma lista abrangente de recursos, melhorias e correções, consulte a seção [Notas de versão](start/release-notes.md).
+Dê uma olhada nos mais recentes aprimoramentos e na documentação do produto Adobe Campaign v8! Para obter uma lista de todos os recursos, melhorias e correções, confira as [Notas de versão](start/release-notes.md) detalhadas. Mantenha-se atualizado com as alterações mais recentes em nossa documentação, acessando o [atualizações de documentação](start/documentation-updates.md) página.
 
 >[!BEGINTABS]
 
 >[!TAB Alterações futuras do canal por push]
 
-Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push do Android pode precisar ser atualizada para dar suporte a essa alteração. Você já pode verificar e executar ações.
+Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para Android serão lançadas em 2024 e poderão afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push no Android pode precisar ser atualizada para oferecer suporte a essa alteração. É recomendado verificar isso antecipadamente e tomar as devidas ações.
 
 [![imagem](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
 
