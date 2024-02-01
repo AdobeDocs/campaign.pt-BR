@@ -2,10 +2,10 @@
 title: Atualização da infraestrutura de envio de email do Campaign
 description: Atualização da infraestrutura de envio de email do Campaign
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 557a74dbfbd0af385cc5104801ce3ab91dd33a95
+source-git-commit: 68252db5ad53e2a37c76765cd35650f824101289
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 6%
+source-wordcount: '331'
+ht-degree: 1%
 
 ---
 
@@ -25,11 +25,9 @@ Essa alteração afeta:
 
 ## Quando essa atualização ocorrerá?{#aws-timeline}
 
-Espera-se que as atualizações dos ambientes de desenvolvimento e de preparo ocorram em **Outubro de 2023**.
+As atualizações de ambientes de desenvolvimento e de preparo começaram em **Outubro de 2023**.
 
-Estamos planejando agendar atualizações do ambiente de produção começando em **Janeiro de 2024**.
-
-Como cliente do Campaign, você receberá uma notificação adicional sobre a atualização da produção com pelo menos trinta (30) dias de antecedência.
+As atualizações de ambientes de produção começaram em **Janeiro de 2024**.
 
 ## O que esperar?{#impact}
 
@@ -64,4 +62,4 @@ Como cliente do Campaign, você receberá uma notificação adicional sobre a at
 
   Não. Não é possível acomodar as modificações solicitadas à programação existente, pois isso provavelmente interromperá o evento de atualização atribuído para outro cliente.
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}..
+Para qualquer outra pergunta, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}..
