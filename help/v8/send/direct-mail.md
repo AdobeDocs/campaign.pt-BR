@@ -8,7 +8,7 @@ exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
 source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 13%
+ht-degree: 36%
 
 ---
 
@@ -28,9 +28,9 @@ As etapas para gerar o arquivo são:
 
    Os perfis de recipients devem conter pelo menos seus nomes e endereços postais.
 
-   Os endereços postais são campos calculados. Um endereço pode conter até seis linhas por padrão: a primeira contém o nome e sobrenome, as próximas linhas contêm o endereço postal (rua etc.) e a última linha contém o CEP e a cidade. A definição do campo postalAddress calculado padrão pode ser revisada no esquema nms:recipient.
+   Os endereços postais são campos calculados. Um endereço pode conter até seis linhas por padrão: a primeira contém o nome e o sobrenome, as próximas linhas contêm o endereço postal (rua etc.), e a última linha contém o CEP/código postal e a cidade. A definição do campo postalAddress calculado padrão pode ser revisada no esquema nms:recipient.
 
-   Um endereço é considerado completo se o nome, o campo CEP e os campos do município/cidade não estiverem vazios. Quaisquer recipients com endereços incompletos serão excluídos dos deliveries de correspondência direta.
+   Um endereço será considerado completo se o nome, o CEP/código postal e a cidade não estiverem em branco. Quaisquer destinatários com endereços incompletos serão excluídos das entregas de correspondência direta.
 
    ![](../assets/do-not-localize/book.png) Saiba mais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
 
