@@ -4,7 +4,8 @@ description: Saiba mais sobre as atualizações mais recentes na documentação 
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 1f9e679a922db2739e2f4931e2f0da8ba35fcdea
+hidefromtoc: true
+source-git-commit: 6a77b472a09e19d569bb0e9a778a3a7819068033
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 36%
