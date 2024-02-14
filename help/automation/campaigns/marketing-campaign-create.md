@@ -5,10 +5,10 @@ description: Saiba como criar e executar campanhas de marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d7750add8d71bb51ea1c099a45a7bce05da3b4d7
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 56%
+source-wordcount: '1327'
+ht-degree: 48%
 
 ---
 
@@ -54,7 +54,7 @@ Antes de começar a criar suas campanhas e deliveries, configure a hierarquia de
 
 Ao editar um programa, use as guias descritas abaixo para procurar e configurar.
 
-* A guia **Agenda** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você clicar no cabeçalho do calendário. Você pode criar uma campanha, um programa ou uma tarefa nesta página. [Saiba mais](#campaign-calendar)
+* A variável **Agendar** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você clicar no cabeçalho do calendário. Você pode criar uma campanha, um programa ou uma tarefa nesta página. [Saiba mais](#campaign-calendar)
 
 * A guia **Editar** permite personalizar o programa: nome, datas de início e término, orçamento, documentos vinculados etc.
 
@@ -76,7 +76,7 @@ Na janela de criação da campanha, selecione o modelo da campanha e adicione um
 
 Clique em **[!UICONTROL OK]** para criar a campanha. Ele é adicionado à programação e à lista de campanhas.
 
-Você pode editar a campanha que acabou de criar e definir seus parâmetros. Para abrir e configurar essa campanha, você pode:
+Você pode editar a campanha recém-criada e definir seus parâmetros. Para abrir e configurar essa campanha, você pode:
 
 1. Navegue pelo calendário da campanha, selecione a campanha que deseja exibir e clique no link **[!UICONTROL Open]** link.
 1. Navegue pelo **[!UICONTROL Schedule]** selecione a campanha e abra-a.
@@ -158,9 +158,14 @@ Como navegar pelo calendário, você também pode criar um programa ou uma campa
 Ao criar uma campanha por meio da guia **[!UICONTROL Schedule]** de um programa, a campanha é vinculada automaticamente ao programa relacionado. O campo **[!UICONTROL Program]** está oculto nesse caso.
 
 
-## Usar a interface da Web {#use-the-web-interface-}
+## Acessar o Campaign com um navegador da Web {#use-the-web-interface}
 
-Você pode acessar as telas do Console do cliente do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e deliveries, bem como relatórios e informações sobre os perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar um delivery etc.
+
+>[!AVAILABILITY]
+>
+>A partir do Campaign v8.6, o Campaign estará disponível em uma interface da Web. A maioria das ações de marketing pode ser executada nessa nova interface. [Saiba mais](../../v8/start/campaign-ui.md#discover-the-user-interface).
+
+Você pode acessar algumas das telas do console do cliente Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e deliveries, bem como relatórios e informações sobre os perfis em seu banco de dados. Não é possível criar componentes a partir desse acesso à web, mas, dependendo dos direitos de acesso, você pode visualizar e/ou agir nos dados no banco de dados. Normalmente, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar um delivery etc.
 
 1. Faça logon como de costume via https://`<your instance>:<port>/view/home`.
 1. Use os menus para acessar as exibições.
@@ -170,7 +175,7 @@ Você pode acessar as telas do Console do cliente do Adobe Campaign por meio de 
 Além de navegar entre campanhas e visualizá-las, é possível executar esses tipos de tarefas:
 
 * Monitorar atividade em uma instância
-* Participar de processos de validação como, por exemplo, aprovar ou rejeitar o conteúdo de um delivery
+* Participar de processos de validação como, por exemplo, aprovar ou rejeitar o conteúdo de uma entrega
 * Executar outras ações rápidas como, por exemplo, pausar um fluxo de trabalho
 * Acessar todos os recursos de relatório
 * Participar das discussões do fórum
@@ -179,11 +184,11 @@ Esta tabela resume as ações que você pode realizar nas campanhas a partir de 
 
 | Página  | Ação |
 | --- | --- |
-| Lista de campanhas, deliveries, ofertas, etc. | Excluir um item da lista |
+| Lista de campanhas, entregas, ofertas, etc. | Excluir um item da lista |
 | Campanha | Cancelar uma campanha |
-| Entrega | Aprovar o conteúdo e o target do delivery<br/>Enviar o conteúdo do delivery<br/>Confirmar um delivery<br/>Pausar e parar um delivery |
+| Entrega | Aprovar o conteúdo e o target da entrega<br/>Enviar o conteúdo da entrega<br/>Confirmar uma entrega<br/>Pausar e parar uma entrega |
 | Aplicativo web | Criar um aplicativo web<br/>Editar o conteúdo e as propriedades do aplicativo<br/>Salvar o conteúdo do aplicativo como um modelo<br/>Publicar o aplicativo |
-| Oferta | Aprovar o conteúdo e a elegibilidade da oferta<br/>Desativar uma oferta online |
+| Oferta | Aprovar o conteúdo e a elegibilidade da oferta<br/>Desabilitar uma oferta online |
 | Tarefa | Concluir uma tarefa<br/>Cancelar uma tarefa |
 | Recursos de marketing | Aprovar um recurso<br/>Bloquear e desbloquear um recurso |
 | Pacotes da campanha | Enviar um pacote para aprovação<br/>Aprovar ou rejeitar um pacote<br/>Cancelar um pacote |

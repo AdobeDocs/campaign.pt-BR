@@ -5,9 +5,9 @@ description: Criar e gerenciar tarefas
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '3743'
+source-wordcount: '3758'
 ht-degree: 85%
 
 ---
@@ -214,7 +214,7 @@ Quando selecionado, o provedor de serviços é exibido no painel de tarefas:
 
 ### Tarefas atrasadas {#late-tasks}
 
-Uma tarefa está atrasada se tiver atingido sua data final sem seu status mudar para **[!UICONTROL Finished]**. Por padrão, nenhum operador é avisado quando uma tarefa está atrasada. É possível configurar o delivery de um e-mail de notificação: todos os operadores podem ser notificados mesmo se não estiverem envolvidos na tarefa.
+Uma tarefa está atrasada se tiver atingido sua data final sem seu status mudar para **[!UICONTROL Finished]**. Por padrão, nenhum operador é avisado quando uma tarefa está atrasada. É possível configurar a entrega de um e-mail de notificação: todos os operadores podem ser notificados mesmo se não estiverem envolvidos na tarefa.
 
 Vá para a caixa **[!UICONTROL Resources]** e adicione o operador ao campo **[!UICONTROL Assignation]**. Para notificar várias pessoas, selecione um grupo de operadores.
 
@@ -284,7 +284,7 @@ As seguintes tarefas podem ser agendadas:
 
 ### Controlar tarefas {#control-tasks}
 
-Uma **[!UICONTROL Control task]** é vinculada à aprovação de delivery: aprovação de direcionamento, conteúdo, arquivo de extração, orçamento ou prova.
+Uma **[!UICONTROL Control task]** é vinculada à aprovação de entrega: aprovação de direcionamento, conteúdo, arquivo de extração, orçamento ou prova.
 
 ![](assets/s_ncs_user_task_new_control.png)
 
@@ -467,7 +467,7 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
 1. Depois de concluir a seção atribuída a eles, os participantes podem aprovar a tarefa através:
 
    * do e-mail de notificação.
-   * por meio do Console do cliente ou da interface da Web, no painel de tarefas.
+   * pelo console do cliente ou pelo acesso via web, no painel de tarefas.
 
      ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -481,7 +481,7 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. Assim que a pessoa encarregada da tarefa decidir que ela terminou, ela pode fechá-la, usando o link no e-mail de notificação enviado quando a tarefa foi iniciada, o Console do cliente ou a interface.
+1. Assim que a pessoa encarregada da tarefa decidir que ela terminou, ela pode fechá-la, usando o link no e-mail de notificação enviado quando a tarefa foi iniciada, o console do cliente ou a interface.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -491,7 +491,7 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
 
 1. O status da tarefa é alterado para **[!UICONTROL To approve]**, e uma notificação é enviada ao revisor.
 
-   Eles aprovam a tarefa por meio do e-mail de notificação, do Console do cliente ou da interface da Web.
+   Eles aprovam a tarefa através do e-mail de notificação, do console do cliente ou com um navegador da web.
 
    Eles podem agir através do painel de campanha:
 

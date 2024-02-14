@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 98%
+source-wordcount: '1581'
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ _7 de setembro de 2021_
 **Aprimoramentos**
 
 * Após o fim da vida útil, o Flash foi removido de todos os recursos e componentes relacionados do Campaign e substituído pelo HTML5. O tipo de gráfico **Medição** foi removido. (NEO-30330) [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=pt-BR)
-* Ao instalar o Console do cliente no Windows, o instalador agora verifica se há um nó de registro pai e cria um se estiver ausente. Isso evita possíveis problemas ao iniciar o console. (NEO-34854)
+* Ao instalar o console do cliente no Windows, o instalador agora verifica se há um nó de registro pai e cria um se estiver ausente. Isso evita possíveis problemas ao iniciar o console. (NEO-34854)
 * O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados à forma como as ferramentas de terceiros (clientes de email, navegadores de Internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
 
 **Outras alterações**

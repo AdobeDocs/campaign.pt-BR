@@ -1,14 +1,14 @@
 ---
 title: Arquitetura geral
-description: Saiba mais sobre a arquitetura e os componentes do Adobe Campaign. Saiba mais sobre como personalizar o Console do cliente e o ambiente.
+description: Saiba mais sobre a arquitetura e os componentes do Adobe Campaign. Saiba mais sobre como personalizar o console e o ambiente do cliente.
 feature: Architecture, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -30,9 +30,9 @@ A implantação típica da solução Adobe Campaign consiste nos seguintes compo
 
 ## Ambiente personalizado do cliente {#client-env}
 
-O aplicativo pode ser acessado de maneiras diferentes: cliente avançado, cliente thin ou integração de API.
+O aplicativo pode ser acessado de diferentes maneiras: interface de usuário da Web, console do cliente (cliente avançado), acesso à Web (cliente thin) ou integração de API.
 
-![](../assets/do-not-localize/glass.png) [Saiba mais sobre a camada de apresentação do Campaign](../start/ac-components.md).
+![](../assets/do-not-localize/glass.png) [Saiba mais sobre a interface do usuário do Campaign](../start/campaign-ui.md).
 
 ## Ambiente de desenvolvimento {#dev-env}
 

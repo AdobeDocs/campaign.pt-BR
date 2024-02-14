@@ -6,10 +6,10 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 41%
+source-wordcount: '1848'
+ht-degree: 40%
 
 ---
 
@@ -32,7 +32,7 @@ Saiba como gerenciar pastas e visualizações no [esta página](../audiences/fol
 
 ## Gerenciar e personalizar listas{#customize-lists}
 
-No Console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, você pode adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
+No console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, você pode adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
 
 Além disso, é possível criar e salvar filtros.  Saiba mais sobre filtros em [esta página](../audiences/create-filters.md).
 

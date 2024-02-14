@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 97%
+source-wordcount: '1146'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Nesta seção, você aprenderá a ajustar o Adobe Campaign de acordo com as necessidades da sua empresa. Use as diretrizes a seguir para estruturar e organizar sua implementação.
 
-1. **Definir configurações**: conceder acesso, compartilhar o console do cliente, configurar canais (email, push, sms). [Saiba mais](#implementation-ac-settings)
+1. **Definir configurações**: conceder acesso, compartilhar o console do cliente e configurar canais (email, push, sms). [Saiba mais](#implementation-ac-settings)
 1. **Preparar seu ambiente**: importar perfis, criar públicos-alvo, criar fluxo de trabalho e modelos de campanha, criar regras de tipologia. [Saiba mais](#implementation-prepare-your-env)
 1. **Personalizar sua instância**: criar novos campos de dados, adicionar tabelas/esquemas. [Saiba mais](#implementation-custom-your-instance)
 1. **Automatizar seus processos**: configurar os recursos de automação do Adobe Campaign. [Saiba mais](#implementation-automation)
@@ -62,7 +62,7 @@ Você pode adicionar usuários manualmente ao Campaign e associá-los a grupos, 
 
 A principal interface de usuário do aplicativo é um cliente avançado, em outras palavras, um aplicativo nativo (Windows) que se comunica com o servidor de aplicativos do Adobe Campaign exclusivamente com protocolos padrão de Internet (SOAP, HTTP etc.). O console do cliente Adobe Campaign oferece excelente facilidade de uso para produtividade, usa pouca largura de banda (por meio do uso de um cache local) e foi projetado para facilitar a implantação. Esse Console pode ser implantado a partir de um navegador da Internet, pode ser atualizado automaticamente e não requer nenhuma configuração de rede específica porque gera apenas tráfego HTTP(S).
 
-![](../assets/do-not-localize/glass.png) [Saiba mais sobre o Console do Cliente do Campaign](connect.md).
+![](../assets/do-not-localize/glass.png) [Saiba mais sobre o console do cliente do Campaign](connect.md).
 
 ## Preparar seu ambiente{#implementation-prepare-your-env}
 
@@ -160,7 +160,7 @@ Se estiver usando outras soluções da Adobe, você poderá conectá-las ao ambi
 * Campaign — conectores de dados do Analytics
 
 
-Você também pode usar o Logon único (SSO) para se conectar ao Campaign. Saiba mais [nesta página](connect.md).
+Você só pode usar o Logon único (SSO) para se conectar ao Campaign. Saiba mais [nesta página](connect.md).
 
 ![](../assets/do-not-localize/glass.png) Conheça a lista completa de soluções da Adobe que podem ser integradas ao Adobe Campaign [nesta página](../connect/integration.md).
 

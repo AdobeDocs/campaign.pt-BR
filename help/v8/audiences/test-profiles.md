@@ -5,10 +5,10 @@ feature: Audiences, Profiles, Seed Address, Proofs
 role: User
 level: Beginner
 exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 59%
+source-wordcount: '928'
+ht-degree: 54%
 
 ---
 
@@ -20,11 +20,11 @@ Os perfis de teste são criados como seed addresses. Eles são usados para direc
 
 Os seed addresses têm os seguintes benefícios:
 
-* Substituição aleatória de campos com dados obtidos de perfis de recipients: permite inserir somente o endereço de email, por exemplo, na seção seed address e permite que o Campaign preencha automaticamente os outros campos no formulário do perfil. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html?lang=en){target="_blank"}.
-* Ao usar um fluxo de trabalho com funcionalidades de gestão de dados, os dados adicionais processados nos deliveries podem ser inseridos no nível do seed address para forçar valores, evitando assim a substituição de valores aleatórios.
-* Os seed addresses são excluídos automaticamente dos relatórios nas seguintes estatísticas do delivery: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
+* Substituição aleatória de campos com dados obtidos de perfis de recipients: permite inserir somente o endereço de email, por exemplo, na seção seed address e permite que o Campaign preencha automaticamente os outros campos no formulário do perfil. Saiba mais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
+* Ao usar um fluxo de trabalho com funcionalidades de gestão de dados, os dados adicionais processados nas entregas podem ser inseridos no nível do seed address para forçar valores, evitando assim a substituição de valores aleatórios.
+* Os seed addresses são excluídos automaticamente dos relatórios nas seguintes estatísticas da entrega: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
-Esses seed addresses são adicionados ao target dos deliveries ao serem importados ou criados diretamente no delivery ou na campanha.
+Esses seed addresses são adicionados ao target das entregas ao serem importados ou criados diretamente na entrega ou na campanha.
 
 >[!NOTE]
 >
@@ -67,15 +67,15 @@ Você pode criar templates de endereço que podem ser importados e modificados p
 
 Para [entregas de correspondência direta](../send/direct-mail.md), os seed addresses são adicionados durante a extração e combinados no documento de saída.
 
-Para deliveries de mala direta, o formato do arquivo de extração deve estar em conformidade com as seguintes limitações:
+Para entregas de mala direta, o formato do arquivo de extração deve estar em conformidade com as seguintes limitações:
 
 * Não deve usar a opção **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 
-* Se as coleções de elemento forem extraídas, esses campos têm um valor vazio para os seed addresses, a menos que a opção **[!UICONTROL Single row (expert user)]** esteja selecionada.
+* Se as coleções de elemento forem extraídas, esses campos têm um valor vazio para os seed addresses, a menos que o **[!UICONTROL Single row (expert user)]** for selecionada.
 
 ## Adicionar seed addresses em um delivery{#seed-addresses-in-a-delivery}
 
-Para adicionar seed addresses específicos em um delivery, clique no link **[!UICONTROL To]** e selecione a guia **[!UICONTROL Seed addresses]** Seed addresses.
+Para adicionar seed addresses específicos em uma entrega, clique no link **[!UICONTROL To]** e selecione a guia **[!UICONTROL Seed addresses]** Seed addresses.
 
 Há três modos de inserção possíveis:
 
@@ -89,7 +89,7 @@ Há três modos de inserção possíveis:
 
    Um exemplo disso é apresentado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
 
-Para deliveries, você também pode personalizar a maneira como os endereços são inseridos no arquivo de extração. Por padrão, eles são inseridos na ordem de classificação do arquivo de saída, mas você pode optar por inseri-los no final ou no início do arquivo, ou aleatoriamente entre os recipients do target principal.
+Para entregas, você também pode personalizar a maneira como os endereços são inseridos no arquivo de extração. Por padrão, eles são inseridos na ordem de classificação do arquivo de saída, mas você pode optar por inseri-los no final ou no início do arquivo, ou aleatoriamente entre os recipients do target principal.
 
 ## Adicionar seed addresses em uma campanha {#seed-addresses-in-a-campaign}
 
@@ -99,7 +99,7 @@ Clique em **[!UICONTROL Advanced campaign settings...]** e, em seguida, o **[!UI
 
 ## Seed addresses e tabela personalizada {#using-an-external-recipient-table}
 
-Se a tabela do delivery for uma tabela externa, você precisará fazer configurações adicionais. O schema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados
+Se a tabela da entrega for uma tabela externa, você precisará fazer configurações adicionais. O schema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados
 
 Nesse caso, para adicionar seed addresses ao delivery, insira os campos adequados diretamente na guia correspondente ou importe os templates de endereços.
 

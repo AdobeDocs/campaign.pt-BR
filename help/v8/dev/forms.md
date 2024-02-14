@@ -5,10 +5,10 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '2552'
-ht-degree: 3%
+source-wordcount: '2551'
+ht-degree: 4%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 3%
 
 Ao criar ou estender um esquema, é necessário criar ou modificar os formulários de entrada associados para tornar essas alterações visíveis para os usuários finais.
 
-Um formulário de entrada permite editar uma instância associada a um esquema de dados no Console do cliente do Adobe Campaign. O formulário é identificado por seu nome e namespace.
+Um formulário de entrada permite editar uma instância associada a um schema de dados do console do cliente do Adobe Campaign. O formulário é identificado por seu nome e namespace.
 
 A chave de identificação de um formulário é uma cadeia de caracteres formada pelo namespace e pelo nome separados por dois pontos, por exemplo: &quot;cus:contact&quot;.
 
 ## Editar formulários de entrada
 
-Crie e configure formulários de entrada do **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** pasta do Console do cliente:
+Crie e configure formulários de entrada do **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** pasta do console do cliente:
 
 ![](assets/form_arbo.png)
 

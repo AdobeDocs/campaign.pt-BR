@@ -5,7 +5,7 @@ description: Aprovação
 feature: Workflows, Approvals
 role: User
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 97%
@@ -42,7 +42,7 @@ No caso de várias aprovações, as transições correspondentes à escolha de c
 
 Essa atividade não bloqueia o processamento e o workflow pode executar outras tarefas enquanto aguarda uma resposta.
 
-Um operador pode aprovar as tarefas atribuídas a esse operador no Console do cliente. Um operador com direitos de administrador pode exibir e excluir as tarefas atribuídas a qualquer operador, mas não pode responder a elas.
+Um operador pode aprovar as tarefas atribuídas a esse operador no console do cliente. Um operador com direitos de administrador pode exibir e excluir as tarefas atribuídas a qualquer operador, mas não pode responder a elas.
 
 A modificação do título ou do corpo da mensagem da atividade não afeta as tarefas atuais, mas, por outro lado, modificando as escolhas possíveis afeta diretamente as tarefas atuais, que herdam automaticamente a nova lista de opções.
 
@@ -60,7 +60,7 @@ O campo **[!UICONTROL Title]** contém o título da mensagem: é o assunto da me
 
 A seção inferior do editor permite definir a lista de respostas possíveis. Há uma transição correspondente a cada resposta. O nome é o identificador interno e o rótulo é o texto que será exibido na lista de opções.
 
-Clique no link **[!UICONTROL Advanced parameters...]** para selecionar o template do delivery a ser usado para notificar os operadores. O template padrão (nome interno &quot;notifyAssignee&quot;) pega o título e a mensagem e adiciona um link à página da Web usada para responder.
+Clique no link **[!UICONTROL Advanced parameters...]** para selecionar o template da entrega a ser usado para notificar os operadores. O template padrão (nome interno &quot;notifyAssignee&quot;) pega o título e a mensagem e adiciona um link à página da Web usada para responder.
 
 Esse template pode ser modificado para personalizar o layout de mensagens, mas é preferível fazer uma cópia. O mecanismo do target (arquivo externo, mapeamento do target) não deve ser modificado porque é necessário para que as notificações funcionem corretamente.
 

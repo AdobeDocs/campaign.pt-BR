@@ -5,9 +5,9 @@ feature: Privacy
 role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '930'
 ht-degree: 98%
 
 ---
@@ -23,10 +23,10 @@ Para gerenciar a solicitação de privacidade no Campaign, primeiro você deve [
 
 ![](../assets/do-not-localize/speech.png) Saiba mais sobre **Direito de acesso** e **Direito ao esquecimento** (solicitação DELETE) na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#right-access-forgotten){target="_blank"}.
 
-
+<!--
 >[!NOTE]
 >
->Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>This capability is available starting Campaign v8.3. To check your version, refer to [this section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
 
 ## Definir um namespace {#namespaces}
 

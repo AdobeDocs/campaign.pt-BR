@@ -1,20 +1,20 @@
 ---
 title: Relatórios integrados do Adobe Campaign
-description: Relatórios incorporados
+description: Relatórios integrados
 feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1108'
 ht-degree: 88%
 
 ---
 
 # Relatórios integrados do Adobe Campaign {#ootb-reports}
 
-Esta página fornece a lista de relatórios internos do Adobe Campaign, seu conteúdo e seu contexto. O Adobe Campaign fornece uma variedade de relatórios internos, acessíveis com o Console do cliente ou com um navegador da Internet.
+Esta página fornece a lista de relatórios internos do Adobe Campaign, seu conteúdo e seu contexto. O Adobe Campaign fornece uma variedade de relatórios internos, acessíveis com o console do cliente ou com um navegador da Internet.
 
 Os seguintes tipos de relatório estão disponíveis:
 
@@ -23,7 +23,7 @@ Os seguintes tipos de relatório estão disponíveis:
 
 Você pode acessar relatórios internos na página inicial do Campaign, no painel de relatórios dedicado ou na lista de delivery. A forma como o relatório é exibido na interface depende do contexto.
 
-Uma lista dos principais relatórios está disponível na home page e permite acessar os dados de delivery rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Você também pode aprender a adicionar seus próprios relatórios à guia **[!UICONTROL Reports]**.
+Uma lista dos principais relatórios está disponível na home page e permite acessar os dados de delivery rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Você também pode aprender a adicionar seus próprios relatórios à **[!UICONTROL Reports]** guia.
 
 Para obter mais informações sobre essas configurações personalizadas, consulte esta [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
 
@@ -381,7 +381,7 @@ Os relatórios a seguir também são fornecidos internamente. Para obter mais in
   </tr> 
   <tr> 
    <td> Histórico de aquisições de prospecto social (socialVisitorStatistics)<br /> </td> 
-   <td> O histórico de aquisições de prospecto do X (conhecido anteriormente como Twitter) e do Facebook depende do add-on de marketing social.<br /> </td> 
+   <td> O histórico de aquisições de clientes em potencial do X (anteriormente conhecido como Twitter) e do Facebook depende do complemento de marketing social.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 

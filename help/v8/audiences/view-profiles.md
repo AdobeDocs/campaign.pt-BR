@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b5574ba2d9fa520b701f7af4e34862304b825a66
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 32%
+source-wordcount: '552'
+ht-degree: 6%
 
 ---
 
@@ -77,21 +77,19 @@ Para um recipient incorporado típico, você pode acessar as seguintes guias:
 * **Entregas**, para todos os logs de delivery do perfil selecionado. Use esta guia para acessar o histórico de marketing do contato: rótulos, datas e status de todas as ações de entrega endereçadas ao perfil por todos os canais.
 
 
-* **Rastreamento**, para todos os logs de rastreamento do perfil selecionado. Essas informações são usadas para rastrear o comportamento do perfil após as entregas. Esta guia mostra o total cumulativo de todas as URLs rastreadas nas entregas. A lista é configurável e normalmente contém: a URL clicada, a data e hora do clique e o documento que continha a URL
+* **Rastreamento**, para todos os logs de rastreamento do perfil selecionado. Essas informações são usadas para rastrear o comportamento do perfil após os deliveries. Esta guia mostra o total cumulativo de todas as URLs rastreadas nas entregas. A lista é configurável e geralmente contém: o URL clicado, a data e hora do clique e o documento que continha o URL
 
   Saiba mais sobre rastreamento [nesta seção](../start/tracking.md).
 
 
 ## Perfis ativos {#active-profiles}
 
-Os perfis ativos são aqueles que são contados para fins de faturamento.
+Um perfil ativo é aquele com o qual o cliente tentou se comunicar nos últimos 12 meses por meio de qualquer canal. As métricas de licença são baseadas em perfis ativos. Saiba mais em [Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ativo quando ele é visado ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.
-
-Um perfil que se tornou alvo de vários deliveries é contado apenas uma vez.
-
-A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
-
->[!NOTE]
+>[!CAUTION]
 >
->Você também pode monitorar o número de perfis ativos em sua instância diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR).
+>* Um perfil que se tornou alvo de várias entregas é contado apenas uma vez.
+>
+>* Perfis direcionados no contexto de Marketing social no X (anteriormente conhecido como Twitter) não são considerados como perfis ativos.
+
+Você pode monitorar o número de perfis ativos em sua instância diretamente do Painel de controle do Campaign. Para obter mais informações, consulte [Documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR){target="_blank"}.

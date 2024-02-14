@@ -5,44 +5,50 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 33%
+source-wordcount: '808'
+ht-degree: 25%
 
 ---
 
 
-# Enviar e monitorar emails
+# Enviar e monitorar emails  {#send-and-monitor-emails}
 
-Depois que o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a análise do delivery. [Saiba mais](delivery-analysis.md)
+Quando o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a análise do delivery. [Saiba mais](delivery-analysis.md)
 
 Depois de concluído, confirme o delivery para iniciar o delivery de mensagens.
 
 Rastrear a execução da entrega a partir de **Entrega** , acessível por meio do detalhe deste delivery ou pela lista de deliveries.
 
-## Monitorar emails
+## Monitorar emails {#email-monitoring}
 
-Depois de enviado, verifique o status do delivery no Painel do delivery e acesse os logs e relatórios do delivery para confirmar se as mensagens foram enviadas corretamente.
+Depois de enviado, verifique o status do delivery na caixa **Painel de entrega** e acesse os logs e relatórios do delivery para confirmar se as mensagens foram enviadas corretamente.
 
-![](../assets/do-not-localize/book.png) [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
+No painel de delivery, é possível verificar as mensagens processadas e os logs de auditoria do delivery. Você também pode controlar o status das mensagens nos logs do delivery.
 
+>[!NOTE]
+>
+>Os status da entrega não são exibidos em tempo real. Saiba mais sobre o Serviço de feedback por email [nesta seção](#email-feedback-service).
+
+
+![](../assets/do-not-localize/book.png) [Saiba mais sobre o monitoramento de entrega na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
 
 ## MTA da campanha {#mta}
 
 O Mail Transfer Agent (MTA) do Campaign v8 fornece a melhor infraestrutura de envio do setor, permitindo entrega, reputação, taxa de transferência, relatórios, tratamento de rejeição, aumento do IP e gerenciamento da configuração de conexão ideais.
 
-Disponível para todos os clientes do Campaign v8, garante escalabilidade, alta taxa de transferência de delivery e ajuda a enviar mais emails mais rapidamente. Isso é feito com novas técnicas de delivery adaptáveis que alteram as configurações de envio de email em tempo real, com base no feedback dos Provedores de serviço da Internet.
+Disponível para todos os clientes do Campaign v8, garante escalabilidade, alta taxa de transferência de delivery e ajuda a enviar mais emails mais rapidamente. Isso é feito com novas técnicas de entrega adaptáveis que alteram as configurações de envio de email em tempo real, com base no feedback dos Provedores de serviço da Internet.
 
 ### Benefícios
 
 O Adobe Campaign usa um Mail Transfer Agent (MTA) que executa o MTA de email comercial do SparkPost chamado **Momento**.
 
-O Momentum representa uma tecnologia MTA inovadora e de alto desempenho, que inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançarem e manterem as taxas ideais de delivery da caixa de entrada.
+O Momentum representa uma tecnologia MTA inovadora e de alto desempenho, que inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançar e manter as taxas ideais de delivery da caixa de entrada.
 
 * O MTA permite um aumento maciço na velocidade geral de taxa de transferência e uma redução significativa em rejeições temporárias.
 * Ele usa a mais recente tecnologia MTA para fornecer a você as velocidades de taxa de transferência ideais para seu delivery de email.
-* Adaptando-se instantânea e automaticamente ao feedback que recebe, ele também garante um delivery de email mais preciso e inteligente com dados de delivery em tempo real.
+* Adaptando-se instantânea e automaticamente ao feedback que recebe, ele também garante uma entrega de email mais preciso e inteligente com dados de entrega em tempo real.
 
 ### Qualificação de rejeição
 
@@ -73,13 +79,11 @@ Saiba mais sobre o DKIM no [Guia de práticas recomendadas de capacidade de deli
 
 ## Serviço de feedback por email {#email-feedback-service}
 
-Com o recurso Serviço de feedback por email (EFS), o status de cada email é relatado com precisão, pois o feedback é capturado diretamente do MTA.
+O EFS (Campaign Email Feedback Service, Serviço de feedback por email) relata o status de cada delivery de email enviado com o Adobe Campaign.
 
-Depois que o delivery é iniciado, não há alteração no **[!UICONTROL Success]** porcentagem quando a mensagem é transmitida com êxito do Campaign para o MTA.
+Depois que o delivery é iniciado, não há alteração no **[!UICONTROL Success]** porcentagem quando a mensagem é transmitida com êxito do Campaign para o MTA. Os logs da entrega mostram o status **[!UICONTROL Taken into account by the service provider]** para cada endereço direcionado.
 
-Os logs do delivery mostram o status **[!UICONTROL Taken into account by the service provider]** para cada endereço direcionado.
-
-Quando a mensagem é realmente entregue aos perfis direcionados e uma vez que essas informações são relatadas em tempo real do MTA, os logs do delivery mostram as **[!UICONTROL Sent]** status para cada endereço que recebeu a mensagem com êxito. A porcentagem de **[!UICONTROL Success]** aumenta de acordo com cada delivery bem-sucedido.
+Quando a mensagem é realmente entregue aos perfis direcionados e uma vez que essas informações são relatadas em tempo real do MTA, os logs do delivery mostram as **[!UICONTROL Sent]** status para cada endereço que recebeu a mensagem com êxito. A porcentagem de **[!UICONTROL Success]** aumenta de acordo com cada entrega bem-sucedida.
 
 Quando mensagens com rejeição permanente são relatadas do MTA, o status do log muda de **[!UICONTROL Taken into account by the service provider]** para **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
@@ -93,9 +97,9 @@ Quando mensagens com rejeição temporária são relatadas do MTA, o status do l
 >
 >Para obter mais informações sobre rejeições permanentes e temporárias, consulte [esta seção](delivery-failures.md#delivery-failure-reasons).
 >
->Para obter mais informações sobre tentativas após uma falha temporária de delivery, consulte [esta seção](delivery-failures.md#retries).
+>Para obter mais informações sobre tentativas após uma falha temporária de entrega, consulte [esta seção](delivery-failures.md#retries).
 
-A tabela abaixo mostra como os KPIs e os status dos logs de envio são atualizados em cada etapa do processo de envio com o recurso EFS.
+A tabela abaixo mostra como os KPIs e os status dos logs de envio são atualizados em cada etapa do processo de envio.
 
 | Etapa do processo de envio | Resumo do KPI | Envio de status de logs |
 |--- |--- |--- |

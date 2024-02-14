@@ -5,10 +5,10 @@ description: Monitorar a execução do fluxo de trabalho
 feature: Workflows
 role: Admin
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 94%
+source-wordcount: '1929'
+ht-degree: 95%
 
 ---
 
@@ -122,7 +122,7 @@ Exemplo de notificação:
 
 ![](assets/wf-notification_error-msg.png)
 
-O link permite acessar o Console do cliente do Adobe Campaign no modo da Web e trabalhar no workflow com erro após fazer logon.
+O link permite acessar o console do cliente Adobe Campaign no modo da Web e trabalhar no workflow com erro após fazer logon.
 
 ![](assets/wf-notification_error-console.png)
 

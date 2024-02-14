@@ -4,7 +4,7 @@ description: Saiba como migrar operadores técnicos do Campaign para a conta té
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 0%
@@ -204,13 +204,13 @@ Depois que o processo de migração é alcançado e validado, as chamadas Soap s
 
 
 
-### Etapa 9 - (opcional) Atualizar o operador da conta técnica no Console do cliente do Campaign {#ims-migration-step-9}
+### Etapa 9 - (opcional) Atualizar o operador de conta técnica no console do cliente do Campaign {#ims-migration-step-9}
 
 Esta etapa é opcional e só está disponível nas Instâncias de marketing, não em nenhuma instância do Centro de mensagens. Se permissões específicas de pasta ou direitos nomeados tiverem sido definidos para o Operador técnico, não por meio dos Grupos de operadores atribuídos. Agora, seria necessário atualizar o usuário recém-criado da Conta técnica no Admin Console para conceder as permissões da pasta ou os direitos nomeados necessários.
 
 Observe que o usuário da conta técnica NÃO existirá no Adobe Campaign até que pelo menos uma chamada à API seja feita para a instância do Campaign, momento em que o IMS criará o usuário no Campaign. Se não conseguir localizar os usuários técnicos no Campaign, certifique-se de enviar uma chamada à API como descrito [na Etapa 7](#ims-migration-step-7).
 
-1. Para aplicar as alterações necessárias ao novo usuário da conta técnica, localize-as no Console do cliente do Campaign por endereço de email. Esse endereço de email foi criado durante as etapas de Criação e autenticação de projeto acima.
+1. Para aplicar as alterações necessárias para o novo Usuário da conta técnica, localize-as no console do cliente do Campaign por endereço de email. Esse endereço de email foi criado durante as etapas de Criação e autenticação de projeto acima.
 
    Você pode localizar esse endereço de email clicando no link **Servidor OAuth para servidor** no cabeçalho **Credenciais** seção do Projeto.
 
@@ -220,11 +220,11 @@ Observe que o usuário da conta técnica NÃO existirá no Adobe Campaign até q
 
    ![](assets/do-not-localize/ims-updates-08.png)
 
-1. Agora é necessário atualizar o operador técnico recém-criado no Console do cliente do Adobe Campaign. Você deve aplicar as permissões existentes da pasta do operador técnico ao novo operador técnico.
+1. Agora é necessário atualizar o operador técnico recém-criado no console do cliente do Adobe Campaign. Você deve aplicar as permissões existentes da pasta do operador técnico ao novo operador técnico.
 
    Para atualizar esse operador, siga estas etapas:
 
-   1. No explorador do Console do cliente do Campaign, navegue até o **Administração > Gerenciamento de acesso > Operadores**.
+   1. No explorador do console do cliente do Campaign, navegue até o **Administração > Gerenciamento de acesso > Operadores**.
    1. Acesse o operador técnico existente usado para APIs.
    1. Navegue até as permissões da pasta e verifique os direitos.
    1. Aplique as mesmas permissões ao operador técnico recém-criado. O email deste operador é o **Email da conta técnica** valor copiado anteriormente.
@@ -233,11 +233,11 @@ Observe que o usuário da conta técnica NÃO existirá no Adobe Campaign até q
 
 >[!CAUTION]
 >
->O novo operador técnico deve ter feito pelo menos uma chamada à API para ser adicionada ao Console do cliente do Campaign.
+>O novo operador técnico deve ter feito pelo menos uma chamada à API para ser adicionada ao console do cliente do Campaign.
 >
 
 ### Etapa 10 - Remover o operador técnico antigo do Adobe Campaign {#ims-migration-step-10}
 
-Depois de migrar todos os sistemas de terceiros para usar a nova conta técnica com autenticação IMS, você pode excluir o operador técnico antigo do console do cliente do Campaign.
+Depois de migrar todos os sistemas de terceiros para usar a nova conta técnica com autenticação IMS, é possível excluir o operador técnico antigo do console do cliente do Campaign.
 
 Para fazer isso, faça logon no console do cliente do Campaign, navegue até **Administração > Gerenciamento de acesso > Operadores** e localizar os usuários técnicos antigos e excluí-los.

@@ -5,7 +5,7 @@ description: Saiba como gerenciar recursos de marketing
 feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 46%
@@ -101,7 +101,7 @@ Para aprovar um recurso, clique no link **[!UICONTROL Approve the resource]** no
 
 ![](assets/mkt-resouce-approve.png)
 
-Os operadores autorizados podem aceitar ou rejeitar aprovações. Essa ação é possível: por meio da mensagem de email enviada (clicando no link da mensagem de notificação) ou pelo Console do cliente (clicando no link **[!UICONTROL Approve]** ) botão.
+Os operadores autorizados podem aceitar ou rejeitar aprovações. Essa ação é possível: por meio da mensagem de email enviada (clicando no link da mensagem de notificação) ou pelo console do cliente (clicando no link **[!UICONTROL Approve]** ) botão.
 
 A janela de aprovação permite inserir um comentário.
 
@@ -152,9 +152,9 @@ Use o **[!UICONTROL Details]** botão para editar e visualizar o recurso.
 
 ### Adicionar um recurso de marketing a um delivery outline {#adding-a-marketing-resource-to-a-delivery-outline}
 
-Os recursos de marketing podem ser associados a deliveries por meio de delivery outlines.
+Os recursos de marketing podem ser associados a entregas por meio de descrições da entrega.
 
-Saiba mais sobre delivery outlines [nesta seção](../campaigns/marketing-campaign-deliveries.md).
+Saiba mais sobre descrições das entregas [nesta seção](../campaigns/marketing-campaign-deliveries.md).
 
 Para fazer isso, clique com o botão direito em um delivery outline e selecione **Novo > Recurso**.
 

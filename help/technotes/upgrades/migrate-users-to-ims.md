@@ -2,10 +2,10 @@
 title: Migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 description: Saiba como migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: 1cdb21533138623fc603424503063cf3dbc2d94c
+source-git-commit: b539b84907c7232f236b96ae8dfd11c8998a06b9
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 2%
+source-wordcount: '1345'
+ht-degree: 1%
 
 ---
 
@@ -76,7 +76,7 @@ Quando a migração completa do IMS for concluída, o Adobe aplicará as restri�
 
 Para novos clientes - a criação de novos usuários nativos não é permitida desde o início.
 
-Como administrador do Campaign, você pode conceder permissões aos usuários da organização por meio do Adobe Admin Console e do Console do cliente do Campaign. Os usuários fazem logon no Adobe Campaign com a Adobe ID. Saiba mais em [esta documentação](../../v8/start/gs-permissions.md).
+Como administrador do Campaign, você pode conceder permissões aos usuários da organização por meio do console do cliente do Adobe Admin Console e do Campaign. Os usuários fazem logon no Adobe Campaign com a Adobe ID. Saiba mais em [esta documentação](../../v8/start/gs-permissions.md).
 
 ### Como adicionar emails para usuários nativos atuais? {#ims-migration-id}
 
@@ -87,7 +87,41 @@ Como administrador do Campaign, você deve adicionar IDs de email para todos os 
 1. Insira o email do operador nas **Pontos de contato** seção do formulário do operador.
 1. Salve as alterações.
 
-<!--You can also import a CSV file to update all your operator profiles with their email.-->
+Como supervisor do fluxo de trabalho ou administrador do Campaign, também é possível executar uma atualização em massa dos operadores com um fluxo de trabalho.
+
++++Etapas principais para atualizar seus operadores com um fluxo de trabalho
+
+Para executar uma atualização em massa dos operadores nativos, siga estas etapas:
+
+1. Crie um fluxo de trabalho para extrair em um arquivo CSV todos os operadores que estão se conectando ao Campaign com o modo de autenticação nativo. Use um **Query** atividade e um **Extração de dados (arquivo)** atividade para criar o arquivo CSV. Para cada operador, com base nos dados de perfil, você pode exportar as seguintes colunas: `Name, Label`.
+
+   Saiba mais sobre o **Query** atividade no [esta página](../../automation/workflow/query.md)
+
+   Saiba mais sobre o **Extração de dados (arquivo)** atividade no [esta página](../../automation/workflow/extraction--file-.md)
+
+1. Atualize o arquivo CSV com uma nova coluna que contém os emails dos operadores.
+
+1. Crie um workflow para importar dados atualizados, com um **Carregamento de dados (arquivo)** atividade e um **Atualizar dados** atividade no fluxo de trabalho.
+
+   ![](assets/update-operators-wf.png){width="70%"}
+
+1. Edite o **Carregamento de dados (arquivo)** e defina as configurações para carregar o arquivo CSV atualizado, de acordo com a amostra abaixo.
+
+   ![](assets/data-loading-activity.png){width="70%"}
+
+   Saiba mais sobre o **Carregamento de dados (arquivo)** atividade no [esta página](../../automation/workflow/data-loading--file-.md)
+
+1. Edite o **Atualizar dados** atividade e defina as configurações de acordo com a amostra abaixo. Observe que **Dimensão atualizada** foi alterado para `Operators (xtk)`.
+
+   ![](assets/update-data-activity.png){width="70%"}
+
+   Saiba mais sobre o **Atualizar dados** atividade no [esta página](../../automation/workflow/update-data.md)
+
+1. Execute o workflow e verifique os resultados. O endereço de email foi adicionado ao perfil do operador.
+
+   ![](assets/updated-operator.png){width="70%"}
+
++++
 
 
 ### Como fazer logon no Campaign via IMS? {#ims-migration-log}

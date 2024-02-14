@@ -7,10 +7,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 4%
+source-wordcount: '375'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ Esse problema acontece somente se o caractere de barra invertida estiver no fina
 
 #### Etapas de reprodução{#issue-2-repro}
 
-1. Conecte-se ao Console do cliente e crie um workflow.
+1. Conecte-se ao console do cliente e crie um workflow.
 1. Adicionar um **Query** atividade e a configure.
 1. Selecione dados com as características descritas acima.
 1. Adicionar um **Alterar fonte de dados** atividade e configure-a para selecionar o banco de dados na nuvem do Snowflake.
@@ -69,7 +69,7 @@ Ao fazer upload de um arquivo no servidor do Campaign com uma **Carregamento de 
 
 #### Etapas de reprodução{#issue-3-repro}
 
-1. Conecte-se ao Console do cliente e crie um workflow.
+1. Conecte-se ao console do cliente e crie um workflow.
 1. Adicionar um **Carregamento de dados (arquivo)** atividade e a configure.
 1. Selecione o **Carregar no servidor** opção.
 1. Selecione o arquivo no computador local,
@@ -82,9 +82,9 @@ O processo nunca termina.
 
 #### Solução alternativa{#issue-3-workaround}
 
-A solução alternativa é usar um Console do cliente mais antigo. Você poderá fazer upload do arquivo no servidor.
+A solução alternativa é usar um console do cliente mais antigo. Você poderá fazer upload do arquivo no servidor.
 
-Como administrador do Campaign, você pode baixar o Console do cliente do Campaign v8.3.1 em [Distribuição de software Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
+Como administrador do Campaign, você pode baixar o console do cliente do Campaign v8.3.1 em [Distribuição de software Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
 
 Saiba como acessar o Adobe Software Distribution [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR){target="_blank"}.
 

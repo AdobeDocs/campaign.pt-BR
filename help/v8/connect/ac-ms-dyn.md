@@ -5,10 +5,10 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 39%
+source-wordcount: '1376'
+ht-degree: 36%
 
 ---
 
@@ -36,8 +36,8 @@ Para conectar o Microsoft Dynamics 365 para trabalhar com o Adobe Campaign via *
 1. Obtenha sua ID de Aplicativo (cliente) do Dynamics 365. [Saiba mais](#get-client-id-microsoft)
 1. Gerar o identificador de chave de certificado e a ID de chave do Microsoft Dynamics. [Saiba mais](#config-certificate-key-id)
 1. Configurar permissões. [Saiba mais](#config-permissions-microsoft)
-1. Criar um usuário do aplicativo. [Saiba mais](#create-app-user-microsoft)
-1. Codificar a chave privada. [Saiba mais](#configure-acc-for-microsoftt)
+1. Crie um usuário do aplicativo. [Saiba mais](#create-app-user-microsoft)
+1. Codifique a chave privada. [Saiba mais](#configure-acc-for-microsoftt)
 
 
 ### Obter ID do cliente do Dynamics 365 {#get-client-id-microsoft}
@@ -128,7 +128,7 @@ O usuário do aplicativo é o usuário que o aplicativo registrado acima usará.
 
 1. No [Microsoft Azure](https://portal.azure.com), navegue até **Configurações > Segurança > Usuários**.
 1. Clique na lista suspensa, selecione **Usuários do aplicativo** e clique em **Novo**.
-1. Use o mesmo nome de usuário que o usuário criado no active directory acima.
+1. Use o mesmo nome de usuário que o usuário criado no ative diretory acima.
 1. Atribua o **ID da aplicação** para [o aplicativo criado anteriormente](#get-client-id-microsoft).
 1. Clique em **Gerenciar funções** e escolha a função **Administrador do sistema** para o usuário.
 
@@ -165,7 +165,7 @@ Primeiro, você deve criar a conta externa do Microsoft Dynamics 365.
 
 >[!NOTE]
 >
->Para aprovar a configuração, faça logoff e logon novamente no Console do cliente do Adobe Campaign.
+>Para aprovar a configuração, faça logoff e logon novamente no console do cliente do Adobe Campaign.
 
 ### Selecionar tabelas para sincronizar{#ms-dyn-create-tables}
 

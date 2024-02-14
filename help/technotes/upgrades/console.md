@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Descontinuação de 32 bits do Console do cliente
-description: Descontinuação de 32 bits do Console do cliente
-exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+title: descontinuação de 32 bits do console do cliente
+description: descontinuação de 32 bits do console do cliente
+exl-id: 9411e38a-5783-439c-ad54-f33bd374f2b8
+source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 A versão de 32 bits do console do cliente está obsoleta na versão 8.5. Uma nova versão de 64 bits do console do cliente está disponível para uma atualização contínua.
 
-A partir da versão 8.6, o Campaign v8 deixará de oferecer suporte a sistemas operacionais de 32 bits, incluindo atualizações de produtos e segurança. A Adobe recomenda que você mantenha suas atualizações de segurança atualizadas.
+A partir da versão 8.6, o Campaign parará de oferecer suporte a sistemas operacionais de 32 bits, incluindo atualizações de produtos e segurança. A Adobe recomenda que você mantenha suas atualizações de segurança atualizadas.
 
 Você só será afetado por essa alteração se tiver a versão de 32 bits do Windows 8 ou 10.
 
@@ -34,15 +34,15 @@ A atualização é perfeita. Você só precisa instalar a nova versão por meio 
 
 +++
 
-+++A versão de 64 bits do Console do cliente do Campaign v8 é compatível com computadores de 32 bits?
++++A versão de 64 bits do console do cliente Campaign v8 é compatível com computadores de 32 bits?
 
-Não. A versão de 64 bits do Console do cliente do Campaign v8 é compatível somente com computadores de 64 bits.
+Não. A versão de 64 bits do console do cliente Campaign v8 é compatível somente com computadores de 64 bits.
 
 +++
 
-+++Há um plano para interromper novas instalações do Console do cliente de 32 bits do Campaign v8?
++++Há um plano para interromper as novas instalações do console do cliente de 32 bits do Campaign v8?
 
-Sim. A partir da versão 8.6, o Console do cliente do Campaign v8 não estará mais disponível em 32 bits. Somente a versão de 64 bits estará disponível.
+Sim. A partir da versão 8.6, o console do cliente Campaign v8 não estará mais disponível em 32 bits. Somente a versão de 64 bits estará disponível.
 
 +++
 

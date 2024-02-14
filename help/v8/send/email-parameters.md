@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 50%
+source-wordcount: '594'
+ht-degree: 63%
 
 ---
 
@@ -18,54 +18,7 @@ Esta seção apresenta as opções e os parâmetros disponíveis nas propriedade
 
 ## Usar Email Cco {#email-bcc}
 
-<!--
->[!NOTE]
->
->This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
-
-Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma.
-
-O próprio Adobe Campaign não gerencia arquivos arquivados. Ele permite enviar as mensagens de sua escolha para um endereço de email CCO dedicado (cópia oculta), de onde elas podem ser processadas e arquivadas usando um sistema externo. Os arquivos .eml correspondentes aos emails enviados podem ser transferidos para um servidor remoto, como um servidor de email SMTP.
-
->[!CAUTION]
->
->Por motivos de privacidade, os emails com CCO devem ser processados por um sistema de arquivamento capaz de armazenar informações de identificação pessoal (PII) seguras.
-
-O destino do arquivamento é o endereço de email CCO de sua escolha, que permanecerá invisível para os recipients do delivery.
-
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support){target="_blank"} para comunicar o endereço de email CCO que será usado para arquivamento.
-
-Depois que o endereço de email de CCO for definido, você deverá ativar a opção dedicada no nível do delivery.
-
->[!CAUTION]
->
->**[!UICONTROL Email BCC]** não está ativado por padrão. Você precisa ativá-lo manualmente no delivery de email ou no template do delivery.
-
-Para fazer isso, siga as etapas abaixo:
-
-1. Ir para **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** ou **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. Selecione o delivery de sua escolha ou duplique o predefinido **[!UICONTROL Email delivery]** e selecione o template duplicado.
-1. Clique no botão **[!UICONTROL Properties]**.
-1. Selecione a guia **[!UICONTROL Delivery]**.
-1. Marque a opção **[!UICONTROL Email BCC]**.
-
-   ![](assets/email-bcc.png)
-
-1. Selecione **[!UICONTROL Ok]**.
-
-Uma cópia de todas as mensagens enviadas para cada delivery com base neste modelo será enviada para o endereço Cco de email que foi configurado.
-
-Observe as seguintes especificidades e recomendações:
-
-* Você só pode usar um endereço de email CCO.
-
-* Verifique se o endereço CCo tem capacidade de recepção suficiente para arquivar todos os emails enviados.
-
-* Email Cco <!--with Enhanced MTA--> O envia para o endereço de email CCO antes de entregar aos recipients, o que pode resultar no envio de mensagens com CCO, mesmo que os deliveries originais possam ter sido rejeitados. Para obter mais informações sobre rejeições, consulte [Entender as falhas de delivery](delivery-failures.md).
-
-* Se os emails enviados para o endereço CCo forem abertos e clicados, isso será considerado no **[!UICONTROL Total opens]** e **[!UICONTROL Clicks]** da análise de envio, o que poderá causar alguns erros de cálculo.
-
-<!--Only successfully sent emails are taken in account, bounces are not.-->
+Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma. Essa opção está detalhada em [esta página](email-bcc.md).
 
 ## Selecionar formatos de mensagem {#selecting-message-formats}
 
@@ -112,7 +65,7 @@ Para fazer isso, selecione a opção **[!UICONTROL Force the encoding used for m
 
 A variável **[!UICONTROL SMTP]** A guia das propriedades do delivery permite também configurar a gestão de emails devolvidos.
 
-* **[!UICONTROL Errors-to-address]**: Por padrão, os emails devolvidos são recebidos na caixa de erro padrão da plataforma, mas é possível definir um endereço de erros específico para uma entrega.
+* **[!UICONTROL Errors-to-address]**: por padrão, os emails devolvidos são recebidos na caixa de erro padrão da plataforma, mas você pode definir um endereço de erro específico para um delivery.
 
 * **[!UICONTROL Bounce address]**: também é possível definir outro endereço para o qual os emails devolvidos não processados são encaminhados. Esse endereço permite investigar os motivos para a rejeição quando os emails não puderam ser qualificados automaticamente pelo aplicativo.
 
@@ -138,9 +91,9 @@ Os valores são codificados automaticamente se necessário.
 
 ![](assets/email-smtp-headers.png)
 
-<!--
-## Generate mirror page {#generating-mirror-page}
 
-The mirror page is an HTML page accessible online via a web browser. Its content is identical to the email. It can be useful if your recipients are experiencing rendering issues or broken images when trying to view your email in their inbox.
+## Gerar mirror page {#generating-mirror-page}
 
-Learn how to insert a link to the mirror page in [this section](mirror-page.md).-->
+A mirror page é uma página HTML acessível online através de um navegador da Web. Seu conteúdo é idêntico ao email. Pode ser útil se seus recipients estiverem enfrentando problemas de renderização ou imagens com falha ao tentar exibir seu email na caixa de entrada.
+
+Saiba como inserir um link para a mirror page em [nesta seção](mirror-page.md)

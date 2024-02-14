@@ -4,10 +4,10 @@ description: Saiba como migrar operadores técnicos do Campaign para a conta té
 exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
 hidefromtoc: true
-source-git-commit: 9f93057d2d729d4251d914426488f46b6ef24bbb
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 1%
+source-wordcount: '861'
+ht-degree: 0%
 
 ---
 
@@ -73,14 +73,14 @@ Agora é possível adicionar o perfil de produto do Campaign ao projeto, conform
 1. Atribua todos os perfis de produto relevantes à API, por exemplo, &quot;messagecenter&quot;, e salve as alterações.
 1. Navegue até o **Detalhes da credencial** do seu projeto e copie a guia **Email da conta técnica** valor.
 
-### Etapa 4 - Atualizar o operador técnico no Console do cliente {#ims-migration-step-4}
+### Etapa 4 - Atualizar o operador técnico no console do cliente {#ims-migration-step-4}
 
 Essa etapa só será necessária se permissões de pasta específicas ou direitos nomeados tiverem sido definidos para esse operador (não por meio do grupo do operador).
 
-Agora é necessário atualizar o operador técnico recém-criado no Console do cliente do Adobe Campaign. Você deve aplicar as permissões existentes da pasta do operador técnico ao novo operador técnico.
+Agora é necessário atualizar o operador técnico recém-criado no console do cliente do Adobe Campaign. Você deve aplicar as permissões existentes da pasta do operador técnico ao novo operador técnico.
 Para atualizar esse operador, siga estas etapas:
 
-1. No explorador do Console do cliente do Campaign, navegue até o **Administração > Gerenciamento de acesso > Operadores**.
+1. No explorador do console do cliente do Campaign, navegue até o **Administração > Gerenciamento de acesso > Operadores**.
 1. Acesse o operador técnico existente usado para APIs.
 1. Navegue até as permissões da pasta e verifique os direitos.
 1. Aplique as mesmas permissões ao operador técnico recém-criado. O email deste operador é o **Email da conta técnica** valor copiado anteriormente.
@@ -89,7 +89,7 @@ Para atualizar esse operador, siga estas etapas:
 
 >[!CAUTION]
 >
->O novo operador técnico deve ter feito pelo menos uma chamada à API para ser adicionada ao Console do cliente do Campaign.
+>O novo operador técnico deve ter feito pelo menos uma chamada à API para ser adicionada ao console do cliente do Campaign.
 >
 
 <!--
@@ -100,7 +100,7 @@ Para atualizar esse operador, siga estas etapas:
 
 To update the technical operator authentication mode to IMS, follow these steps:
 
-1. From Campaign Client Console explorer, browse to the **Administration > Access Management > Operators**.
+1. From Campaign client console explorer, browse to the **Administration > Access Management > Operators**.
 1. Edit the existing technical operator used for APIs.
 1. Replace the **Name (login)** of this technical operator by the technical account email retrieved earlier.
 1. Browse to the **Edit** button on the top left beside **File**, and select **Edit the XML source**.

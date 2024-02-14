@@ -5,10 +5,10 @@ description: Criar uma campanha local
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 96%
+source-wordcount: '1553'
+ht-degree: 91%
 
 ---
 
@@ -46,17 +46,17 @@ Na janela da campanha, clique na guia **[!UICONTROL Edit]** e clique no link **[
 
 ![](assets/mkt_distr_4.png)
 
-### Interface da Web {#web-interface}
+### Tipo de interface {#web-interface}
 
-Na guia **Marketing distribuído**, você pode escolher o tipo de interface da Web e especificar os valores e parâmetros padrões a serem inseridos quando uma entidade local enviar um pedido.
+No **Marketing distribuído** você pode escolher o tipo de interface e especificar os valores e parâmetros padrão a serem inseridos quando uma entidade local colocar um pedido.
 
-A interface da web corresponde a um formulário a ser preenchido pela entidade local ao solicitar a campanha.
+A interface corresponde a um formulário a ser preenchido pela entidade local ao solicitar a campanha.
 
-Selecione o tipo de interface da web a ser aplicada às campanhas criadas a partir do template:
+Selecione o tipo de interface a ser aplicada às campanhas criadas a partir do template:
 
 ![](assets/mkt_distr_1.png)
 
-Há quatro tipos de interfaces da web disponíveis:
+Há quatro tipos de interfaces disponíveis:
 
 * **[!UICONTROL By brief]** : a entidade local deve fornecer uma descrição onde descreve as configurações da campanha. Uma vez aprovado o pedido, a entidade central configura e executa a campanha como um todo.
 
@@ -70,7 +70,7 @@ Há quatro tipos de interfaces da web disponíveis:
 
   >[!NOTE]
   >
-  >A aplicação web utilizada é um exemplo. É necessário criar um aplicativo web específico para poder usar um formulário.
+  >A aplicação web utilizada é um exemplo. É necessário criar um aplicativo Web específico para poder usar um formulário.
 
   ![](assets/mkt_distr_7.png)
 
@@ -125,7 +125,7 @@ Para não exibir um campo para fazer upload de documento, digite **[!UICONTROL 0
 
 ### Fluxo de trabalho {#workflow}
 
-Na guia **[!UICONTROL Targeting and workflows]**, crie o fluxo de trabalho que coleta os **[!UICONTROL Default values]** especificados nas **[!UICONTROL Advanced campaign parameters...]** e cria os deliveries.
+Na guia **[!UICONTROL Targeting and workflows]**, crie o fluxo de trabalho que coleta os **[!UICONTROL Default values]** especificados nas **[!UICONTROL Advanced campaign parameters...]** e cria as entregas.
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
@@ -135,19 +135,19 @@ Clique duas vezes na atividade **[!UICONTROL Query]** para configurá-la de acor
 
 ### Entrega {#delivery}
 
-Na guia **[!UICONTROL Audit]**, clique no ícone **[!UICONTROL Detail...]** para visualizar o **[!UICONTROL Scheduling]** do delivery selecionado.
+Na guia **[!UICONTROL Audit]**, clique no ícone **[!UICONTROL Detail...]** para visualizar o **[!UICONTROL Scheduling]** da entrega selecionada.
 
 ![](assets/mkg_dist_local_op_creation4c.png)
 
-O ícone **[!UICONTROL Scheduling]** permite configurar o contato do delivery e a data de execução.
+O ícone **[!UICONTROL Scheduling]** permite configurar o contato da entrega e a data de execução.
 
 ![](assets/mkg_dist_local_op_creation4d.png)
 
-Se necessário, configure o tamanho máximo do delivery:
+Se necessário, configure o tamanho máximo da entrega:
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-Localize o HTML do seu delivery. Por exemplo, no campo **[!UICONTROL Delivery > Current order > Additional fields]**, use o campo **[!UICONTROL Age segment]** para localizar o delivery de acordo com a idade do público-alvo.
+Localize o HTML da sua entrega. Por exemplo, no campo **[!UICONTROL Delivery > Current order > Additional fields]**, use o campo **[!UICONTROL Age segment]** para localizar a entrega de acordo com a idade do público-alvo.
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
@@ -298,7 +298,7 @@ Quando uma campanha é solicitada por uma entidade local, seus revisores são no
 
 #### Aprovar via console do cliente {#approving-via-the-adobe-campaign-console}
 
-O pedido também pode ser aprovado por meio do Console do cliente, na visão geral do pedido de campanha. Para aprovar um pedido, selecione-o e clique em **[!UICONTROL Approve the order]**.
+O pedido também pode ser aprovado por meio do console do cliente, na visão geral do pedido de campanha. Para aprovar um pedido, selecione-o e clique em **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -322,7 +322,7 @@ O operador encarregado da aprovação pode rejeitar um pedido ou um pacote de ca
 
 Se o revisor rejeitar um pedido, a notificação relevante será automaticamente enviada às entidades locais relacionadas: ela exibirá o comentário inserido pelo operador que rejeitou a aprovação.
 
-As informações são exibidas na lista da página de pacotes de campanha ou na página do pedido da campanha.. Se tiverem acesso ao Console do cliente do Adobe Campaign, entidades locais serão informadas dessa rejeição.
+As informações são exibidas na lista da página de pacotes de campanha ou na página do pedido da campanha.. Se tiverem acesso ao console do cliente Adobe Campaign, entidades locais serão informadas dessa rejeição.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

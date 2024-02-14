@@ -4,9 +4,9 @@ title: Propriedades do workflow
 description: Saiba mais sobre as propriedades do workflow do Campaign
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '546'
 ht-degree: 94%
 
 ---
@@ -76,6 +76,6 @@ Esta seção só é exibida nos workflows da campanha.
 
   ![](assets/wf-properties_select-supervisors.png)
 
-  A variável **[!UICONTROL Notification to a workflow supervisor]** o template padrão inclui um link para acessar o Console do cliente do Adobe Campaign pela Web para que o recipient possa trabalhar no problema quando estiver conectado.
+  A variável **[!UICONTROL Notification to a workflow supervisor]** o template padrão inclui um link para acessar o console do cliente Adobe Campaign pela Web para que o recipient possa trabalhar no problema quando estiver conectado.
 
   Para criar um template personalizado, vá para **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.

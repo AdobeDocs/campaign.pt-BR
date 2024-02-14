@@ -5,7 +5,7 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 11%
@@ -74,7 +74,7 @@ Para vincular a instância do Campaign à conta X, crie uma **Twitter** serviço
 >Each **Twitter** O serviço também deve ser criado pelo Adobe na instância MID. Entre em contato com o representante da Adobe para configurar seu ambiente.
 >
 
-Para inserir as configurações, você deve acessar o Console do cliente do Adobe Campaign e suas permissões do aplicativo X.
+Para inserir as configurações, você deve acessar o console do cliente do Adobe Campaign e as permissões do aplicativo X.
 
 1. Entrada **Adobe Campaign**, navegue até o **[!UICONTROL Profiles and targets]** e selecione a guia **[!UICONTROL Services and Subscriptions]** link
 1. Crie um novo serviço.
@@ -98,7 +98,7 @@ Para inserir as configurações, você deve acessar o Console do cliente do Adob
 
 1. No aplicativo X, copie o conteúdo do **Token de acesso** e **Senha do token de acesso** campos e os cole na **[!UICONTROL Access token]** e **[!UICONTROL Access token secret]** campos da sua campanha **Twitter** serviço.
 
-1. No Console do cliente do Campaign, clique em **[!UICONTROL Save]**. Agora você delegou acesso de gravação ao Adobe Campaign.
+1. No console do cliente do Campaign, clique em **[!UICONTROL Save]**. Agora você delegou acesso de gravação ao Adobe Campaign.
 
 Para verificar as configurações, é possível:
 

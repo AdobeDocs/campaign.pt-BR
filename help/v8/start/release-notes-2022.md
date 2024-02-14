@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1919'
 ht-degree: 91%
 
 ---
@@ -20,7 +20,7 @@ Esta página lista novos recursos, melhorias e correções que vêm com as **ver
 
 _28 de outubro de 2022_
 
-**Aprimoramentos**
+**Correções**
 
 * Correção de um problema que impedia que o indicador de Entrega bem-sucedida fosse atualizado corretamente ao usar o MTA aprimorado do Adobe Campaign. (NEO-50462)
 
@@ -84,7 +84,7 @@ Para otimizar a segurança, os tokens de segurança foram removidos dos URLs ger
 
 **Aprimoramentos**
 
-* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML no console passou a usar o **Microsoft Edge Chromium**. Além disso, a instalação de **WebView 2 do Microsoft Edge** O tempo de execução agora é necessário para qualquer instalação do Console do cliente.
+* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML no console passou a usar o **Microsoft Edge Chromium**. Além disso, a instalação do **Webview 2 runtime do Microsoft Edge** agora é necessária para qualquer instalação do console do cliente.
 * Melhoria na execução do fluxo de trabalho com alta disponibilidade do fluxo de trabalho, o que permite executar fluxos de trabalho simultâneos em diferentes contêineres para evitar a perda do serviço de fluxo de trabalho e erros de execução relacionados. **Observação**: esse novo recurso foi lançado com disponibilidade limitada somente para um conjunto de clientes.
 * As solicitações de privacidade agora são executadas em lote para um determinado namespace de privacidade. Essa melhoria aumenta o tempo de execução das solicitações de exclusão de GDPR/privacidade.
 
@@ -121,11 +121,11 @@ Consulte a [Matriz de compatibilidade do Campaign](compatibility-matrix.md).
 
 >[!CAUTION]
 >
-> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#download-ac-console).
+> a atualização do console do cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#download-ac-console).
 
 _7 de outubro de 2022_
 
-**Aprimoramentos**
+**Correções**
 
 * Correção de um problema que afetava as atualizações de status do log de entrega na instância MID quando a opção FeatureFlag_GZIP_Compression era habilitada. (NEO-49183)
 * O fluxo de trabalho técnico de **Limpeza do banco de dados** agora também lida com esquemas de preparo personalizados. (NEO-48974)

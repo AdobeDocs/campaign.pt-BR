@@ -8,10 +8,10 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 47%
+source-wordcount: '1231'
+ht-degree: 42%
 
 ---
 
@@ -26,7 +26,7 @@ Como administrador do Campaign, você pode baixar os SDKs do Campaign na [Distri
 
 >[!NOTE]
 >
->Você também pode usar o SDK móvel da Adobe Experience Platform configurando a extensão do Adobe Campaign na interface da coleção de dados. [Saiba mais na documentação do Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}
+>Você também pode usar o SDK do Adobe Experience Platform Mobile configurando a extensão do Adobe Campaign na interface da Coleção de dados. [Saiba mais na Documentação do desenvolvedor](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 >
 
 ## Declarar configurações de integração {#declaring-integration-settings}
@@ -37,7 +37,7 @@ Para integrar o SDK do Campaign no aplicativo móvel, o administrador funcional 
 
   >[!NOTE]
   >
-  >Essa chave de integração é inserida no console do Adobe Campaign, na guia **[!UICONTROL Information]** do serviço dedicado ao aplicativo móvel.
+  >Essa chave de integração é inserida no console Adobe Campaign, no **[!UICONTROL Information]** guia do serviço dedicado ao aplicativo móvel.
 
 * **Um URL de rastreamento**: que corresponde ao endereço do servidor de rastreamento do Adobe Campaign.
 * **Um URL de marketing**: para ativar a coleta de assinaturas.
@@ -113,7 +113,7 @@ Saiba como implementar o FCM em seu aplicativo no [Documentação do Google](htt
    A função de registro permite:
 
    * enviar o ID de notificação ou o ID de envio (deviceToken para iOS e registrationID para Android) para o Adobe Campaign.
-   * recuperar a chave de conciliação ou o userKey (email ou número de conta, por exemplo)
+   * recuperar a chave de reconciliação ou o userKey (email ou número de conta, por exemplo)
 
    Registre seu dispositivo no Adobe Campaign, na inicialização do aplicativo ou na ação do usuário. Isso pode ser feito facilmente usando o `registerDevice` método.
 
@@ -565,7 +565,7 @@ Saiba como implementar o FCM em seu aplicativo no [Documentação do Google](htt
    A função de registro permite:
 
    * enviar o ID de notificação ou o ID de envio (deviceToken para iOS e registrationID para Android) para o Adobe Campaign.
-   * recuperar a chave de conciliação ou o userKey (email ou número de conta, por exemplo)
+   * recuperar a chave de reconciliação ou o userKey (email ou número de conta, por exemplo)
 
 
    ```sql
@@ -796,7 +796,7 @@ Saiba como implementar o FCM em seu aplicativo no [Documentação do Google](htt
 
 ## Variáveis {#variables}
 
-As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo para dispositivos móveis e no Console do cliente do Adobe Campaign, na **[!UICONTROL Variables]** no serviço de aplicativos móveis dedicado.
+As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo para dispositivos móveis e no console do cliente do Adobe Campaign, na **[!UICONTROL Variables]** no serviço de aplicativos móveis dedicado.
 
 
 Veja abaixo um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.

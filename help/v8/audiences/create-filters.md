@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 34%
+source-wordcount: '1607'
+ht-degree: 33%
 
 ---
 
@@ -61,23 +61,23 @@ Os filtros predefinidos incorporados são:
   </tr> 
   <tr> 
    <td> Aberto<br /> </td> 
-   <td> Seleciona destinatários que abriram um delivery.<br /> </td> 
+   <td> Seleciona destinatários que abriram uma entrega.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aberto, mas não clicado<br /> </td> 
-   <td> Seleciona destinatários que abriram um delivery, mas não clicaram em um link.<br /> </td> 
+   <td> Seleciona destinatários que abriram uma entrega, mas não clicaram em um link.<br /> </td> 
   </tr> 
   <tr> 
    <td> Destinatários inativos<br /> </td> 
-   <td> Seleciona destinatários que não abriram um delivery em X meses.<br /> </td> 
+   <td> Seleciona destinatários que não abriram uma entrega em X meses.<br /> </td> 
   </tr> 
   <tr> 
    <td> Última atividade por tipo de dispositivo<br /> </td> 
-   <td> Seleciona destinatários que clicaram em ou abriram delivery Y usando o dispositivo X nos últimos Z dias.<br /> </td> 
+   <td> Seleciona destinatários que clicaram em ou abriram a entrega Y usando o dispositivo X nos últimos Z dias.<br /> </td> 
   </tr> 
   <tr> 
    <td> Última atividade por tipo de dispositivo (rastreamento)<br /> </td> 
-   <td> Seleciona destinatários que clicaram em ou abriram delivery Y usando o dispositivo X nos últimos Z dias.<br /> </td> 
+   <td> Seleciona destinatários que clicaram em ou abriram a entrega Y usando o dispositivo X nos últimos Z dias.<br /> </td> 
   </tr> 
   <tr> 
    <td> Destinatários não direcionados<br /> </td> 
@@ -85,7 +85,7 @@ Os filtros predefinidos incorporados são:
   </tr> 
   <tr> 
    <td> Destinatários muito ativos<br /> </td> 
-   <td> Seleciona destinatários que clicaram em um delivery pelo menos X vezes nos últimos Y meses.<br /> </td> 
+   <td> Seleciona destinatários que clicaram em uma entrega pelo menos X vezes nos últimos Y meses.<br /> </td> 
   </tr> 
   <tr> 
  <td> Incluir endereço de email na lista de bloqueios<br /> </td> 
@@ -101,7 +101,7 @@ Os filtros predefinidos incorporados são:
   </tr> 
   <tr> 
    <td> Não aberto nem clicado<br /> </td> 
-   <td> Seleciona destinatários que não abriram ou não clicaram em um delivery.<br /> </td> 
+   <td> Seleciona destinatários que não abriram ou não clicaram em uma entrega.<br /> </td> 
   </tr> 
   <tr> 
    <td> Novos destinatários (dias)<br /> </td> 
@@ -121,11 +121,11 @@ Os filtros predefinidos incorporados são:
   </tr> 
   <tr> 
    <td> Ao clicar em um link específico<br /> </td> 
-   <td> Seleciona destinatários que clicaram em um determinado URL em um delivery.<br /> </td> 
+   <td> Seleciona destinatários que clicaram em um determinado URL em uma entrega.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Por comportamento pós-delivery<br /> </td> 
-   <td> Seleciona destinatários de acordo com seu comportamento após receber um delivery.<br /> </td> 
+   <td> Por comportamento pós-entrega<br /> </td> 
+   <td> Seleciona destinatários de acordo com seu comportamento após receber uma entrega.<br /> </td> 
   </tr> 
   <tr> 
    <td> Por data de criação<br /> </td> 
@@ -137,7 +137,7 @@ Os filtros predefinidos incorporados são:
   </tr> 
   <tr> 
    <td> Por número de cliques<br /> </td> 
-   <td> Seleciona destinatários que clicaram em um delivery nos últimos X meses.<br /> </td> 
+   <td> Seleciona destinatários que clicaram em uma entrega nos últimos X meses.<br /> </td> 
   </tr> 
   <tr> 
    <td> Por número de mensagens recebidas<br /> </td> 
@@ -145,7 +145,7 @@ Os filtros predefinidos incorporados são:
   </tr> 
   <tr> 
    <td> Por número de aberturas<br /> </td> 
-   <td> Seleciona destinatários que abriram deliveries entre X e Y ao longo da quantidade Z de tempo.<br /> </td> 
+   <td> Seleciona destinatários que abriram entregas entre X e Y ao longo da quantidade Z de tempo.<br /> </td> 
   </tr> 
   <tr> 
    <td> Por nome ou email<br /> </td> 
@@ -168,7 +168,7 @@ Os campos acima de cada lista permitem usar o **filtro padrão predefinido** par
 
 >[!NOTE]
 >
->O caractere **%** substitui qualquer cadeia de caracteres. Por exemplo, insira `%@gmail.com` no campo Email para exibir todos os perfis com um endereço do Gmail. Enter `%@L` no campo Last name para exibir todos os perfis com um L no sobrenome.
+>A variável **%** O caractere substitui qualquer cadeia de caracteres. Por exemplo, insira `%@gmail.com` no campo Email para exibir todos os perfis com um endereço do Gmail. Enter `%@L` no campo Last name para exibir todos os perfis com um L no sobrenome.
 
 Para alterar o filtro padrão de uma lista de destinatários, navegue até o **[!UICONTROL Profiles and Targets > Predefined filters]** nó.
 
@@ -193,7 +193,7 @@ Usar e combinar **Filtros rápidos** para definir filtros em campos específicos
 
 Depois de adicionados, os campos de filtro rápido são exibidos acima da lista de dados, um após o outro. Eles podem ser excluídos de maneira independente.
 
-Os filtros rápidos são específicos para cada operador e são reiniciados sempre que o operador limpa o cache do console do cliente.
+Os filtros rápidos são específicos para cada operador e são reinicializados cada vez que o operador limpa o cache do console do cliente.
 
 Se precisar reutilizar um filtro, crie um **filtro avançado** e salve-o. [Saiba mais](#advanced-filters).
 
@@ -348,7 +348,7 @@ Parâmetros avançados estão disponíveis para filtros predefinidos. Para acess
 ![](assets/predefined-filters-parameters.png)
 
 
-* O link **[!UICONTROL Advanced parameters]** permite definir configurações adicionais.
+* A variável **[!UICONTROL Advanced parameters]** permite definir configurações adicionais.
 
    * Você pode associar uma tabela SQL ao filtro para torná-la comum a todos os editores que a compartilham.
    * Para impedir que qualquer usuário substitua o filtro, selecione o **[!UICONTROL Do not restrict the filter]** opção. Por exemplo, essa opção está ativa para os filtros &quot;Destinatários de um delivery&quot; e &quot;Destinatários de deliveries pertencentes a uma pasta&quot; que estão disponíveis no assistente de delivery. Esses filtros não podem ser sobrecarregados.

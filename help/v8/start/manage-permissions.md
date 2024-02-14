@@ -5,9 +5,9 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1618'
 ht-degree: 41%
 
 ---
@@ -37,7 +37,7 @@ Para adicionar um usuário, siga as etapas abaixo:
 
 Saiba mais sobre a criação de usuários no Admin Console em [esta página](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
 
-Quando novos usuários [fazer logon no Campaign](connect.md) com o Adobe ID, eles são adicionados à lista de operadores do Campaign no Console do cliente. Os operadores de campanha são armazenados no **[!UICONTROL Administration > Access management > Operators]** pasta do explorador do Campaign.
+Quando novos usuários [fazer logon no Campaign](connect.md) com o Adobe ID, eles são adicionados à lista de operadores do Campaign no console do cliente. Os operadores de campanha são armazenados no **[!UICONTROL Administration > Access management > Operators]** pasta do explorador do Campaign.
 
 ## Trabalhar com perfis de produto{#product-profiles}
 
@@ -61,7 +61,7 @@ Você pode usar perfis de produto padrão ou criar novos.
 
 ### Criar um perfil de produto{#create-product-profile}
 
-Para adicionar um novo perfil de produto ao Adobe, primeiro você deve criá-lo no Console do cliente do Campaign e, em seguida, adicioná-lo no Admin Console.
+Para adicionar um novo perfil de produto ao Adobe, primeiro você deve criá-lo no console do cliente do Campaign e, em seguida, adicioná-lo ao Admin Console.
 
 Por exemplo, para criar um perfil de produto &quot;revisores&quot;, siga as etapas abaixo.
 
@@ -102,16 +102,16 @@ Esses perfis de produto correspondem ao Campaign **grupos de operadores**. Os gr
 
    Esse grupo contém os seguintes direitos nomeados:
 
-   * **[!UICONTROL ADMINISTRATION]**: direito a executar/criar/editar/excluir qualquer objeto, como workflow, delivery, scripts, etc.
+   * **[!UICONTROL ADMINISTRATION]**: direito a executar/criar/editar/excluir qualquer objeto, como workflow, entrega, scripts, etc.
 
-1. **[!UICONTROL Delivery operators]** (entrega)
+1. **[!UICONTROL Delivery operators]** (delivery)
 
-   Os operadores nesse grupo são responsáveis pelo gerenciamento de deliveries: eles permitem o acesso aos principais recursos necessários para a criação e preparação de deliveries (tipologias de campanha, mapeamentos de delivery, templates padrão, blocos de personalização, etc.).
+   Os operadores nesse grupo são responsáveis pelo gerenciamento de entregas: eles permitem o acesso aos principais recursos necessários para a criação e preparação de entregas (tipologias de campanha, mapeamentos de entrega, templates padrão, blocos de personalização, etc.).
 
    Esse grupo contém os seguintes direitos nomeados:
 
-   * **[!UICONTROL PREPARE DELIVERIES]**: Direito de criar, editar e iniciar a análise de delivery,
-   * **[!UICONTROL START DELIVERIES]**: Direito de aprovar deliveries anteriormente analisados.
+   * **[!UICONTROL PREPARE DELIVERIES]**: Direito de criar, editar e iniciar a análise de entrega,
+   * **[!UICONTROL START DELIVERIES]**: Direito de aprovar entregas anteriormente analisadas.
 
 1. **[!UICONTROL Campaign managers]** (operação)
 
@@ -124,7 +124,7 @@ Esses perfis de produto correspondem ao Campaign **grupos de operadores**. Os gr
 
    >[!NOTE]
    >
-   >Esse grupo não permite que os operadores iniciem deliveries.
+   >Esse grupo não permite que os operadores iniciem entregas.
 
 1. **[!UICONTROL Content contributors]** (conteúdo)
 
@@ -193,13 +193,13 @@ Os direitos nomeados concedem permissões a:
 
 Os direitos nomeados padrão no Adobe Campaign são:
 
-* **[!UICONTROL ADMINISTRATION]**: operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como workflow, delivery, scripts etc.
+* **[!UICONTROL ADMINISTRATION]**: operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como workflow, entrega, scripts etc.
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em workflows e deliveries para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em workflows e entregas para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
 
 * **[!UICONTROL CENTRAL]**: direito de gerenciamento central (marketing distribuído).
 
-* **[!UICONTROL DELETE FOLDER]**: direito de excluir pastas. Com esse direito, os usuários podem excluir pastas da visualização do explorador.
+* **[!UICONTROL DELETE FOLDER]**: direito de excluir pastas. Com esse direito, os usuários podem excluir pastas da visualização do explorer.
 
 * **[!UICONTROL EDIT FOLDERS]**: direito de alterar as propriedades da pasta, como nome interno, rótulo, imagem associada, pedido de subpastas etc.
 
@@ -209,13 +209,13 @@ Os direitos nomeados padrão no Adobe Campaign são:
 
 * **[!UICONTROL IMPORT]**: direito de importação de dados genéricos. **[!UICONTROL IMPORT]** permite importar dados para qualquer outra tabela, enquanto o direito **[!UICONTROL RECIPIENT IMPORT]** permite importar somente para a tabela do recipient.
 
-* **[!UICONTROL INSERT FOLDERS]**: direito de inserir pastas. Os usuários com o direito **[!UICONTROL INSERT FOLDERS]** podem criar novas pastas na árvore de pastas na visualização do explorador.
+* **[!UICONTROL INSERT FOLDERS]**: direito de inserir pastas. Os usuários com o direito **[!UICONTROL INSERT FOLDERS]** podem criar novas pastas na árvore de pastas na visualização do explorer.
 
 * **[!UICONTROL LOCAL]**: direito para gerenciamento local (marketing distribuído).
 
 * **[!UICONTROL MERGE]**: direito de unir os registros selecionados em um. Se houver recipients duplicados, o direito **[!UICONTROL MERGE]** permitirá que o usuário selecione os duplicados e os mescle em um recipient primário.
 
-* **[!UICONTROL PREPARE DELIVERIES]**: direito de criar, editar e salvar um delivery. Os usuários com o direito **[!UICONTROL PREPARE DELIVERIES]** também podem iniciar o processo de análise do delivery.
+* **[!UICONTROL PREPARE DELIVERIES]**: direito de criar, editar e salvar uma entrega. Os usuários com o direito **[!UICONTROL PREPARE DELIVERIES]** também podem iniciar o processo de análise da entrega.
 
 * **[!UICONTROL PRIVACY DATA RIGHT]**: direito de coletar e excluir dados de privacidade. [Saiba mais](privacy.md).
 
@@ -225,7 +225,7 @@ Os direitos nomeados padrão no Adobe Campaign são:
 
 * **[!UICONTROL SQL SCRIPT EXECUTION]** Direito de executar qualquer comando SQL diretamente no banco de dados.
 
-* **[!UICONTROL START DELIVERIES]**: Direito de aprovar deliveries anteriormente analisados. Após a análise, o delivery pausará em várias etapas de aprovação e precisará ser aprovado para retomar. Os usuários com o direito **[!UICONTROL START DELIVERIES]** podem aprovar deliveries.
+* **[!UICONTROL START DELIVERIES]**: Direito de aprovar entregas anteriormente analisadas. Após a análise, a entrega pausará em várias etapas de aprovação e precisará ser aprovada para retomar. Os usuários com o direito **[!UICONTROL START DELIVERIES]** podem aprovar entregas.
 
 * **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: direito de escrever seus próprios scripts SQL usando a atividade de gerenciamento de dados SQL, para criar e preencher tabelas de trabalho. [Saiba mais](../../automation/workflow/sql-data-management.md).
 
