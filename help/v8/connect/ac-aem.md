@@ -5,10 +5,10 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: b267cb37a94bd389232ccfb9b8df69c9c2caa990
+source-git-commit: 92fe7c41047aafd26cca70a547025a3eff73e398
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 21%
+source-wordcount: '543'
+ht-degree: 16%
 
 ---
 
@@ -80,12 +80,30 @@ Seu boletim informativo agora está pronto e sincronizado no Adobe Campaign.
 
 1. Selecione o delivery de AEM criado anteriormente no [!DNL Adobe Experience Manager] e confirme clicando em **[!UICONTROL Ok]**.
 
-1. Você pode inserir ativos diretamente da sua [!DNL Adobe Experience Manager Assets] ou [!DNL Adobe Experience Manager Assets Library] ao editar um email no Adobe Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html).
-
-   Para usar o **Biblioteca do Adobe Experience Manager Assets**, acesse o **[!UICONTROL Properties]** do seu delivery de AEM e selecione o **[!UICONTROL Advanced]** guia. Ativar o **[!UICONTROL Use above AEM instance as shared asset library]** opção.
-
-   ![](assets/aem_authoring_9.png)
-
 1. Clique no link **[!UICONTROL Refresh content]** sempre que modificações forem feitas no delivery de AEM.
 
 O email agora está pronto para ser enviado ao seu público-alvo.
+
+## Importar ativos da biblioteca do Adobe Experience Manager Assets {#assets-library}
+
+Você também pode inserir ativos diretamente da sua [!DNL Adobe Experience Manager Assets Library] ao editar um email ou uma landing page no Adobe Campaign. Essa funcionalidade é detalhada em [Documentação do Adobe Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en).
+
+1. Faça upload dos seus ativos no **Biblioteca da Adobe Experience Manager Assets**. [Saiba mais](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en#uploading-assets)
+
+1. No Adobe Campaign, crie um novo delivery navegando até o **Campanhas** clique em **Entregas** e clique no link **Criar** acima da lista de deliveries existentes.
+
+1. Selecione um **Modelo de entrega**, nomeie o delivery.
+
+1. Defina e personalize o conteúdo da mensagem. [Saiba mais](../send/email.md)
+
+1. Para usar o **Biblioteca do Adobe Experience Manager Assets**, acesse o **[!UICONTROL Properties]** do seu delivery de AEM e selecione o **[!UICONTROL Advanced]** guia. Ativar o **[!UICONTROL Use above AEM instance as shared asset library]** opção.
+
+   ![](assets/aem_authoring_9.png)
+
+1. No **Imagem** ícone, acesse o **[!UICONTROL Select a shared asset]** menu.
+
+   ![](assets/aem_authoring_10.png)
+
+1. Na janela de seleção, selecione uma imagem da sua **Biblioteca do Adobe Experience Manager Assets**, depois confirme.
+
+Sua entrega de email está pronta. Agora você pode especificar o público-alvo, confirmar o delivery e continuar com o envio.
