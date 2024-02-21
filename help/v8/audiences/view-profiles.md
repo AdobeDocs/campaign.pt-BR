@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
-source-git-commit: b5574ba2d9fa520b701f7af4e34862304b825a66
+source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 6%
+source-wordcount: '452'
+ht-degree: 4%
 
 ---
 
@@ -80,16 +80,3 @@ Para um recipient incorporado típico, você pode acessar as seguintes guias:
 * **Rastreamento**, para todos os logs de rastreamento do perfil selecionado. Essas informações são usadas para rastrear o comportamento do perfil após os deliveries. Esta guia mostra o total cumulativo de todas as URLs rastreadas nas entregas. A lista é configurável e geralmente contém: o URL clicado, a data e hora do clique e o documento que continha o URL
 
   Saiba mais sobre rastreamento [nesta seção](../start/tracking.md).
-
-
-## Perfis ativos {#active-profiles}
-
-Um perfil ativo é aquele com o qual o cliente tentou se comunicar nos últimos 12 meses por meio de qualquer canal. As métricas de licença são baseadas em perfis ativos. Saiba mais em [Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
-
->[!CAUTION]
->
->* Um perfil que se tornou alvo de várias entregas é contado apenas uma vez.
->
->* Perfis direcionados no contexto de Marketing social no X (anteriormente conhecido como Twitter) não são considerados como perfis ativos.
-
-Você pode monitorar o número de perfis ativos em sua instância diretamente do Painel de controle do Campaign. Para obter mais informações, consulte [Documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR){target="_blank"}.
