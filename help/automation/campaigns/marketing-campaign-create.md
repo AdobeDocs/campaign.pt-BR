@@ -5,7 +5,7 @@ description: Saiba como criar e executar campanhas de marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: d7750add8d71bb51ea1c099a45a7bce05da3b4d7
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 48%
@@ -92,7 +92,7 @@ Acesse as seguintes seções para saber como configurar a campanha:
 * [Gerenciar ativos e documentos](marketing-campaign-assets.md)
 * [Criar o público-alvo](marketing-campaign-target.md)
 * [Configurar o processo de aprovação](marketing-campaign-approval.md)
-* [Gerenciar estoques e orçamentos](providers--stocks-and-budgets.md)
+* [Gerenciar estoques e orçamentos](providers-stocks-and-budgets.md)
 
 
 ### Editar configurações da campanha {#campaign-settings}
@@ -102,7 +102,7 @@ As campanhas são criadas por meio de templates de campanha. É possível config
 Para cada campanha, os seguintes recursos estão disponíveis:
 
 * Documentos e recursos de referência: é possível associar documentos à campanha (resumo, relatório, imagens etc.). Todos os formatos de documento são suportados. [Saiba mais](marketing-campaign-deliveries.md#manage-associated-documents).
-* Definir custos: para cada campanha, o Adobe Campaign permite definir entradas de custo e estruturas de cálculo de custo que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala etc. [Saiba mais](providers--stocks-and-budgets.md#defining-cost-categories).
+* Definir custos: para cada campanha, o Adobe Campaign permite definir entradas de custo e estruturas de cálculo de custo que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala etc. [Saiba mais](providers-stocks-and-budgets.md#defining-cost-categories).
 * Definir objetivos: é possível definir objetivos quantificáveis para uma campanha, por exemplo, número de assinantes, volume de negócios etc. Essas informações são usadas posteriormente nos relatórios de campanha.
 * Gerenciar seed addresses e grupos de controle. [Saiba mais](marketing-campaign-deliveries.md#defining-a-control-group).
 * Gerenciar aprovações: é possível selecionar os tratamentos a serem aprovados e, se necessário, selecionar os operadores de revisão ou grupos de operadores. [Saiba mais](marketing-campaign-approval.md#checking-and-approving-deliveries).

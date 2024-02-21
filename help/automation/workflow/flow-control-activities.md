@@ -5,7 +5,7 @@ description: Lista de atividades de controle de fluxo
 feature: Workflows
 role: User
 exl-id: 904f2d94-bd3e-4c46-aeab-2ef77a7bdeee
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 63%
@@ -20,8 +20,8 @@ As seguintes atividades são atividades de banco de dados: elas são usadas para
 * **[AND-join](and-join.md)**: permite aguardar várias tarefas iniciadas ao mesmo tempo até serem concluídas antes de continuar.
 * **[Approval](approval.md)**: permite enviar um e-mail para um operador ou grupo de operadores e esperar a aprovação para continuar a execução.
 * **[External signal](external-signal.md)**: permite habilitar a transição de saída após receber um sinal externo.
-* **[Bifurcação](fork.md)**: permite ativar todas as transições de saída.
-* **[Jump (ponto inicial e ponto final)](jump--start-point-and-end-point-.md)**: permite implementar transições sem links.
+* **[Fork](fork.md)**: permite ativar todas as transições de saída.
+* **[Jump (ponto inicial e ponto final)](jump-start-point-and-end-point.md)**: permite implementar transições sem links.
 * **[Iniciar e finalizar](start-and-end.md)**: permite mostrar os pontos inicial e final de um workflow.
 * **[Scheduler](scheduler.md)**: permite definir um agendamento de execução de workflow.
 * **[Sub-workflow](sub-workflow.md)**: permite executar outro workflow.

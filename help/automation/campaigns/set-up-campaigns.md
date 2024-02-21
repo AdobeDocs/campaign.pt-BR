@@ -5,10 +5,10 @@ description: Saiba como começar a usar campanhas de marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 26%
+ht-degree: 21%
 
 ---
 
@@ -44,11 +44,11 @@ Orquestrar suas entregas entre canais em suas campanhas. Simplifique suas comuni
 1. **Configurar o fluxo de aprovação**
 Defina os revisores e configure o fluxo de aprovação para monitorar e controlar os processos da campanha: direcionamento, conteúdo, orçamento, extração e envio de prova. Saiba como configurar aprovações [nesta seção](marketing-campaign-approval.md).
 
-1. **Monitorar entregas**.
+1. **Monitorar deliveries**.
 Acompanhe suas campanhas no painel, verifique os status do delivery e a execução na interface do Campaign. [Saiba mais](marketing-campaign-monitoring.md).
 
 1. **Rastrear orçamentos, estoques e custos associados**.
-Use o Adobe Campaign para controlar a alocação de orçamento, gerenciar seus fornecedores, estoques e custos. [Saiba mais](providers--stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
+Use o Adobe Campaign para controlar a alocação de orçamento, gerenciar seus fornecedores, estoques e custos. [Saiba mais](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
 
 Quando essas etapas forem concluídas, você poderá [iniciar os deliveries](marketing-campaign-deliveries.md#start-a-delivery), verificar os dados, processos e informações relativos aos envios e, se necessário, [gerenciar os documentos associados](marketing-campaign-deliveries.md#manage-associated-documents). Também é possível [rastrear e monitorar a execução](marketing-campaign-monitoring.md) de suas campanhas e deliveries.
 

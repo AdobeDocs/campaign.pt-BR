@@ -4,9 +4,9 @@ title: Sub-workflow
 description: Saiba mais sobre a atividade de sub-workflow
 feature: Workflows
 exl-id: c530fb4e-d21e-4059-88e1-77a8d33a7832
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '419'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ A atividade **[!UICONTROL Sub-workflow]** permite acionar a execução de outro 
 
 Você pode chamar vários sub-workflows em um único workflow. Os Sub-workflows são executados de forma síncrona.
 
-No exemplo abaixo, um workflow chama um subworkflow por meio de saltos. Para obter mais informações sobre objetos gráficos do tipo salto, consulte [esta seção](jump--start-point-and-end-point-.md).
+No exemplo abaixo, um workflow chama um subworkflow por meio de saltos. Para obter mais informações sobre objetos gráficos do tipo salto, consulte [esta seção](jump-start-point-and-end-point.md).
 
 1. Crie um workflow que será usado como um subworkflow em outro workflow.
 1. Insira uma atividade **[!UICONTROL Jump (end point)]** com prioridade 1 no início do workflow. Se você tiver vários saltos do tipo &quot;ponto final&quot;, o Adobe Campaign usará o salto &quot;ponto final&quot; com o número mais baixo.

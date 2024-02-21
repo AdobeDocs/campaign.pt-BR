@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Guia de automação de campanha
 user-guide-description: Guia de automação de campanha
-source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 86%
+source-wordcount: '442'
+ht-degree: 83%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 86%
       + [Monitorar a execução do fluxo de trabalho](workflow/monitor-workflow-execution.md)
       + [Monitorar workflows técnicos](workflow/monitor-technical-workflows.md)
       + [HeatMap de fluxo de trabalho](workflow/heatmap.md)
-   + Atividades de fluxos de trabalho {#wf-activities}
+   + Atividades de workflow {#wf-activities}
       + [Introdução a atividades](workflow/activities.md)
       + Atividades de direcionamento {#targeting-activities}
          + [Lista de atividades de direcionamento](workflow/targeting-activities.md)
@@ -62,7 +62,7 @@ ht-degree: 86%
          + [Aprovação](workflow/approval.md)
          + [Sinal externo](workflow/external-signal.md)
          + [Bifurcação](workflow/fork.md)
-         + [Jump (ponto inicial e ponto final)](workflow/jump--start-point-and-end-point-.md)
+         + [Jump (ponto inicial e ponto final)](workflow/jump-start-point-and-end-point.md)
          + [Início e término](workflow/start-and-end.md)
          + [Scheduler](workflow/scheduler.md)
          + [Subfluxo de trabalho](workflow/sub-workflow.md)
@@ -74,9 +74,9 @@ ht-degree: 86%
          + [Gerenciamento de conteúdo](workflow/content-management.md)
          + [Entrega contínua](workflow/continuous-delivery.md)
          + [Entregas entre canais](workflow/cross-channel-deliveries.md)
-         + [Extração de dados (arquivo)](workflow/extraction--file-.md)
-         + [Carregamento de dados (arquivo)](workflow/data-loading--file-.md)
-         + [Carregamento de dados (RDBMS)](workflow/data-loading--rdbms-.md)
+         + [Extração de dados (arquivo)](workflow/extraction-file.md)
+         + [Carregamento de dados (arquivo)](workflow/data-loading-file.md)
+         + [Carregamento de dados (RDBMS)](workflow/data-loading-rdbms.md)
          + [Entrega](workflow/delivery.md)
          + [Controle de entrega](workflow/delivery-control.md)
          + [Aprovação local](workflow/local-approval.md)
@@ -128,7 +128,7 @@ ht-degree: 86%
       + [Parâmetros avançados](workflow/advanced-parameters.md)
       + [Modelos e scripts JavaScript](workflow/javascript-scripts-and-templates.md)
       + [Exemplos de código JavaScript em workflows](workflow/javascript-in-workflows.md)
-      + [Acessar um banco de dados externo](workflow/accessing-an-external-database--fda-.md)
+      + [Acessar um banco de dados externo](workflow/accessing-an-external-database-fda.md)
       + [Gerenciar permissões](workflow/managing-rights.md)
       + [Alterar imagens de atividade](workflow/change-activity-images.md)
       + [Gerenciar fusos horários](workflow/managing-time-zones.md)
@@ -137,12 +137,12 @@ ht-degree: 86%
    + [Criar programas e campanhas](campaigns/marketing-campaign-create.md)
    + [Criar e configurar modelos](campaigns/marketing-campaign-templates.md)
    + [Adicionar entregas](campaigns/marketing-campaign-deliveries.md)
-   + [Selecionar o público](campaigns/marketing-campaign-target.md)
+   + [Selecionar o público-alvo](campaigns/marketing-campaign-target.md)
    + [Gerenciar documentos e ativos](campaigns/marketing-campaign-assets.md)
    + [Configurar e gerenciar aprovações](campaigns/marketing-campaign-approval.md)
    + [Campanhas recorrentes e periódicas](campaigns/recurring-periodic-campaigns.md)
    + [Monitorar suas campanhas](campaigns/marketing-campaign-monitoring.md)
-   + [Provedores, estoques e orçamentos](campaigns/providers--stocks-and-budgets.md)
+   + [Provedores, estoques e orçamentos](campaigns/providers-stocks-and-budgets.md)
 + Otimização de campanha (complemento){#campaign-optimization}
    + [Introdução às tipologias de campanha](campaign-opt/campaign-typologies.md)
    + [Regras de filtro](campaign-opt/filtering-rules.md)

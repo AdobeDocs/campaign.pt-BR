@@ -5,10 +5,10 @@ description: Criar uma lista de resumo
 feature: Workflows, Data Management
 role: User
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 99%
+source-wordcount: '975'
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ Esses dados estão contidos em um arquivo de texto &quot;Purchases.txt&quot;.
 
    A atividade **File collector** permite coletar e enviar arquivos de e para o servidor do Adobe Campaign.
 
-   A atividade **Data loading (file)** permite enriquecer a tabela de trabalho do workflow com os dados coletados. Para obter mais informações sobre essa atividade, consulte [esta página](data-loading--file-.md).
+   A variável **Carregamento de dados (arquivo)** A atividade permite enriquecer a tabela de trabalho do workflow com os dados coletados. Para obter mais informações sobre essa atividade, consulte [esta página](data-loading-file.md).
 
 1. Configure a atividade **File collector** para coletar arquivos de texto (*&#42;txt) do diretório selecionado.
 

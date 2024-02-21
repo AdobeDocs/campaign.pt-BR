@@ -5,7 +5,7 @@ description: Sobre atividades de ação
 feature: Workflows, Data Management
 role: User
 exl-id: feed4cc1-d654-45e7-a3b2-2bc46418a90b
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 81%
@@ -17,11 +17,11 @@ ht-degree: 81%
 * **[Gestão de conteúdo](content-management.md)**: permite criar ou personalizar o conteúdo.
 * **[Delivery contínuo](continuous-delivery.md)**: permite iniciar um delivery partir do cenário especificado na atividade.
 * **[Cross-channel deliveries](cross-channel-deliveries.md)** (somente workflows da campanha): permite configurar um delivery no canal correspondente: Email, Push, Mobile, Direct mail.
-* **[Carregamento de dados (arquivo)](data-loading--rdbms-.md)**: permite acessar uma fonte de dados externa para usar seus dados.
-* **[Carregamento de dados (RDBMS)](data-loading--rdbms-.md)**: permite acessar um banco de dados externo para obter dados.
+* **[Carregamento de dados (arquivo)](data-loading-rdbms.md)**: permite acessar uma fonte de dados externa para usar seus dados.
+* **[Carregamento de dados (RDBMS)](data-loading-rdbms.md)**: permite acessar um banco de dados externo para obter dados.
 * **[Delivery](delivery.md)**: permite configurar uma ação de delivery.
 * **[Delivery control](delivery-control.md)**: permite iniciar, pausar ou parar uma delivery.
-* **[Extração (arquivo)](extraction--file-.md)**: permite extrair dados de uma tabela em um arquivo.
+* **[Extração (arquivo)](extraction-file.md)**: permite extrair dados de uma tabela em um arquivo.
 * **[Carregamento (SOAP)](loading-soap.md)**: permite coletar dados por uma chamada SOAP.
 * **[Aprovação local](local-approval.md)**: permite realizar aprovações e notificações de target em um contexto de marketing distribuído (módulo opcional).
 * **[Módulo Nlserver](nlserver-module.md)**: inicia um módulo nlserver com seus argumentos.

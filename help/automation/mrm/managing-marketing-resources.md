@@ -5,7 +5,7 @@ description: Saiba como gerenciar recursos de marketing
 feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 46%
@@ -172,7 +172,7 @@ Você pode associar um recurso de marketing a um ou mais estoques para gerenciar
 
 Para associar um recurso de marketing a um estoque, siga as etapas abaixo:
 
-1. Editar um estoque ou criar um novo estoque. Saiba mais sobre estoques em [nesta seção](../campaigns/providers--stocks-and-budgets.md#stock-management).
+1. Editar um estoque ou criar um novo estoque. Saiba mais sobre estoques em [nesta seção](../campaigns/providers-stocks-and-budgets.md#stock-management).
 
 1. Adicione uma linha de estoque e selecione o recurso de marketing correspondente.
 

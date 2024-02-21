@@ -5,7 +5,7 @@ description: Criar e gerenciar tarefas
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '3758'
 ht-degree: 85%
@@ -190,7 +190,7 @@ Por padrão, o orçamento cobrado é o orçamento da campanha à qual a tarefa e
 
 >[!NOTE]
 >
->Para obter mais informações sobre despesas e orçamentos, consulte [nesta seção](../campaigns/providers--stocks-and-budgets.md#cost-commitment--calculation-and-charging).
+>Para obter mais informações sobre despesas e orçamentos, consulte [nesta seção](../campaigns/providers-stocks-and-budgets.md#cost-commitment--calculation-and-charging).
 
 Nessa janela, você também pode definir os objetivos a serem atingidos. Os objetivos são expressos em termos de previsão de receita para a tarefa.
 

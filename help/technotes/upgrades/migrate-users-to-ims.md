@@ -2,7 +2,7 @@
 title: Migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 description: Saiba como migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: b539b84907c7232f236b96ae8dfd11c8998a06b9
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 1%
@@ -97,7 +97,7 @@ Para executar uma atualização em massa dos operadores nativos, siga estas etap
 
    Saiba mais sobre o **Query** atividade no [esta página](../../automation/workflow/query.md)
 
-   Saiba mais sobre o **Extração de dados (arquivo)** atividade no [esta página](../../automation/workflow/extraction--file-.md)
+   Saiba mais sobre o **Extração de dados (arquivo)** atividade no [esta página](../../automation/workflow/extraction-file.md)
 
 1. Atualize o arquivo CSV com uma nova coluna que contém os emails dos operadores.
 
@@ -109,7 +109,7 @@ Para executar uma atualização em massa dos operadores nativos, siga estas etap
 
    ![](assets/data-loading-activity.png){width="70%"}
 
-   Saiba mais sobre o **Carregamento de dados (arquivo)** atividade no [esta página](../../automation/workflow/data-loading--file-.md)
+   Saiba mais sobre o **Carregamento de dados (arquivo)** atividade no [esta página](../../automation/workflow/data-loading-file.md)
 
 1. Edite o **Atualizar dados** atividade e defina as configurações de acordo com a amostra abaixo. Observe que **Dimensão atualizada** foi alterado para `Operators (xtk)`.
 

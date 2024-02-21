@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Deliveries de campanha de marketing
-description: Saiba mais sobre deliveries de campanha de marketing
+title: Entregas de campanha de marketing
+description: Saiba mais sobre entregas de campanha de marketing
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 46%
+source-wordcount: '705'
+ht-degree: 40%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 46%
 
 Orquestrar suas entregas entre canais em suas campanhas: eles simplificam suas comunicações com o Adobe Campaign por meio de emails personalizados, SMS, notificações por push e mensagens no aplicativo. Você pode usar mídia avançada como vídeos, emojis ou GIF e integrá-los diretamente.
 
-As entregas podem ser criadas por meio do painel da campanha, de um fluxo de trabalho de campanha ou diretamente na visão geral das entregas. Quando criados a partir de uma campanha, os deliveries serão vinculados a essa campanha e consolidados em seu nível.
+Os deliveries podem ser criados através do painel da campanha, de um fluxo de trabalho de campanha ou diretamente através da visão geral dos deliveries. Quando criados a partir de uma campanha, as entregas serão vinculadas a essa campanha e consolidadas em seu nível.
 
 ## Criar entregas {#create-deliveries}
 
@@ -36,7 +36,7 @@ Depois de salvo, o delivery é adicionado ao painel de campanha.
 
 Saiba como configurar e executar o fluxo de aprovação de entrega [nesta página](marketing-campaign-approval.md).
 
-## Iniciar um delivery {#start-a-delivery}
+## Iniciar uma entrega {#start-a-delivery}
 
 Um delivery pode ser enviado assim que todas as aprovações forem concedidas. O processo de execução do delivery depende do canal.
 
@@ -50,7 +50,7 @@ Depois que todas as solicitações de aprovação tiverem sido concedidas, o sta
 
 ![](assets/confirm-delivery.png)
 
-As informações também aparecem no painel de campanha. O link **[!UICONTROL Confirm delivery]** permite iniciar o delivery.
+As informações também aparecem no painel de campanha. O link **[!UICONTROL Confirm delivery]** permite iniciar a entrega.
 
 ![](assets/confirm-delivery-from-dashboard.png)
 
@@ -63,13 +63,13 @@ No entanto, também é possível permitir que o proprietário da campanha confir
 
 ### Iniciar um delivery de correspondência direta {#start-an-offline-delivery}
 
-Após todas as aprovações serem concedidas, o status do delivery será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por meio de uma [fluxo de trabalho técnico](../workflow/technical-workflows.md) que, em uma configuração padrão, é iniciada automaticamente quando um delivery de mala direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
+Após todas as aprovações serem concedidas, o status da entrega será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por meio de uma [fluxo de trabalho técnico](../workflow/technical-workflows.md) que, em uma configuração padrão, é iniciada automaticamente quando um delivery de mala direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
 
-Após executar o workflow de extração com sucesso, o arquivo de extração deve ser aprovado (fornecido de forma que a aprovação do arquivo de extração tenha sido selecionada nas configurações do delivery). [Saiba mais](marketing-campaign-approval.md#approving-an-extraction-file).
+Depois que o workflow de extração for executado com sucesso, o arquivo de extração deverá ser aprovado (desde que a aprovação do arquivo de extração tenha sido selecionada nas configurações do delivery). [Saiba mais](marketing-campaign-approval.md#approving-an-extraction-file).
 
 Siga as etapas abaixo para validar o conteúdo e enviar o arquivo para o provedor:
 
-1. Depois que o arquivo de extração for aprovado, é possível gerar a prova do email de notificação do roteador. Esta mensagem de email é construída com base em um template de delivery. Deve ser aprovado.
+1. Depois que o arquivo de extração for aprovado, é possível gerar a prova do email de notificação do roteador. Esta mensagem de email é construída com base em um template de entrega. Deve ser aprovado.
 
    Esta etapa só estará disponível se a variável **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** a opção foi ativada em **[!UICONTROL Approvals]** dos parâmetros avançados da campanha.
 
@@ -79,11 +79,11 @@ Siga as etapas abaixo para validar o conteúdo e enviar o arquivo para o provedo
 
    O target da prova deve ser definido com antecedência.
 
-   Você pode criar quantas provas forem necessárias. Elas são acessadas por meio do link **[!UICONTROL Direct mail...]** dos detalhes de delivery.
+   Você pode criar quantas provas forem necessárias. Elas são acessadas por meio do link **[!UICONTROL Direct mail...]** dos detalhes de entrega.
 
-1. O status do delivery é alterado para **[!UICONTROL To submit]**. Clique no botão **[!UICONTROL Submit proofs]** para iniciar o processo de aprovação.
+1. O status da entrega é alterado para **[!UICONTROL To submit]**. Clique no botão **[!UICONTROL Submit proofs]** para iniciar o processo de aprovação.
 
-1. O status do delivery muda para **[!UICONTROL Proof to validate]**, e um botão permite aceitar ou rejeitar a aprovação.
+1. O status da entrega muda para **[!UICONTROL Proof to validate]**, e um botão permite aceitar ou rejeitar a aprovação.
 
    Você pode aceitar ou rejeitar esta aprovação ou retornar à etapa de extração.
 
@@ -107,9 +107,9 @@ A extração de arquivo inicia dois processos: cálculo de orçamento e cálculo
 
   ![](assets/campaign-service-providers.png)
 
-  As linhas de estoque estão visíveis na seção de estoque. Para definir o estoque inicial, abra uma linha de estoque. O estoque é reduzido sempre que um delivery ocorre. Você pode definir um nível de alerta e notificações.
+  As linhas de estoque estão visíveis na seção de estoque. Para definir o estoque inicial, abra uma linha de estoque. O estoque é reduzido sempre que uma entrega ocorre. Você pode definir um nível de alerta e notificações.
 
 
   >[!NOTE]
   >
-  >Saiba mais sobre orçamentos [nesta seção](providers--stocks-and-budgets.md).
+  >Saiba mais sobre orçamentos [nesta seção](providers-stocks-and-budgets.md).

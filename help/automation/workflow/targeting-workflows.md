@@ -3,10 +3,10 @@ title: Criar workflows para construção do target
 description: Saiba como criar públicos-alvo em um fluxo de trabalho
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 94%
+source-wordcount: '2252'
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 94%
 
 O fluxo de trabalho pode ser usado para consultar o banco de dados e segmentar seus dados. O módulo de fluxo de trabalho do Campaign é uma ferramenta poderosa para executar atividades de gerenciamento de dados, extrair, enriquecer e transformar dados, gerenciar públicos e refinar populações.
 
-Os workflows para construção do target permitem que você crie vários targets de delivery. Você pode criar queries, definir uniões ou exclusões com base em critérios específicos, adicionar agendamento, graças às atividades do workflow. O resultado desse target pode ser transferido automaticamente para uma lista que pode servir como target das ações de delivery
+Os workflows para construção do target permitem que você crie vários targets de entrega. Você pode criar queries, definir uniões ou exclusões com base em critérios específicos, adicionar agendamento, graças às atividades do workflow. O resultado desse target pode ser transferido automaticamente para uma lista que pode servir como target das ações de entrega
 
 Além dessas atividades, as opções de Gestão de Dados permitem manipular dados e acessar funções avançadas para solucionar problemas complexos de target. Para obter mais informações, consulte [Gerenciamento de dados](targeting-workflows.md#data-management).
 
@@ -35,10 +35,10 @@ Os workflows para construção do target dentro da estrutura de uma campanha sã
 As etapas para a criação de um fluxo de trabalho de direcionamento estão detalhadas nestas seções:
 
 1. **Identificar** dados no banco de dados – Consulte [Criar consultas](#create-queries)
-1. **Preparar** dados para atender às necessidades do delivery – Consulte [Enriquecer e modificar dados](#enrich-and-modify-data)
-1. **Usar** dados para executar atualizações ou dentro de um delivery – Consulte [Atualizar o banco de dados](use-workflow-data.md#update-the-database)
+1. **Preparar** dados para atender às necessidades da entrega – Consulte [Enriquecer e modificar dados](#enrich-and-modify-data)
+1. **Usar** dados para executar atualizações ou dentro de uma entrega – Consulte [Atualizar o banco de dados](use-workflow-data.md#update-the-database)
 
-Os resultados de todos os enriquecimentos e todos tratamentos realizados no target são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados do target](use-workflow-data.md#target-data).
+Os resultados de todos os enriquecimentos e todos tratamentos realizados no target são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados de target](use-workflow-data.md#target-data).
 
 ## Dimensões de filtragem e direcionamento {#targeting-and-filtering-dimensions}
 
@@ -256,13 +256,13 @@ Depois que os dados forem identificados e preparados, eles poderão ser usados n
 
   Para obter mais informações, consulte [Atualizar lista](list-update.md).
 
-* Você pode preparar ou iniciar deliveries no workflow diretamente.
+* Você pode preparar ou iniciar entregas no workflow diretamente.
 
-  Para obter mais informações, consulte [Delivery](delivery.md), [Controle de delivery](delivery-control.md) e [Delivery contínuo](continuous-delivery.md).
+  Para obter mais informações, consulte [Entrega](delivery.md), [Controle de entrega](delivery-control.md) e [Entrega contínua](continuous-delivery.md).
 
 ## Gerenciamento de dados {#data-management}
 
-No Adobe Campaign, a Gestão de Dados combina um conjunto de atividades para resolver problemas complexos de target oferecendo ferramentas mais eficientes e flexíveis. Isso permite implementar uma gestão consistente de todas as comunicações com um contato usando informações relacionadas a seus contratos, assinaturas, reatividade aos deliveries, etc. A Gestão de Dados permite acompanhar o ciclo de vida dos dados durante as operações de segmentação, especificamente:
+No Adobe Campaign, a Gestão de Dados combina um conjunto de atividades para resolver problemas complexos de target oferecendo ferramentas mais eficientes e flexíveis. Isso permite implementar uma gestão consistente de todas as comunicações com um contato usando informações relacionadas a seus contratos, assinaturas, reatividade a entregas, etc. A Gestão de Dados permite acompanhar o ciclo de vida dos dados durante as operações de segmentação, especificamente:
 
 * Simplificação e otimização de processos de target, ao incluir dados que não são modelados no datamart (criando novas tabelas: extensão local para todo workflow para construção do target, dependendo da configuração).
 * Manutenção e transmissão de cálculos de buffer, especialmente durante as fases de construção do target ou para administração de banco de dados.
@@ -270,7 +270,7 @@ No Adobe Campaign, a Gestão de Dados combina um conjunto de atividades para res
 
 Para implementar essas operações, o Adobe Campaign oferece:
 
-* Atividades de coleção de dados: [File transfer](file-transfer.md), [Data loading (file)](data-loading--file-.md), [Data loading (RDBMS)](data-loading--rdbms-.md) e [Update data](update-data.md). Essa primeira etapa de coleta de dados prepara os dados para que ele seja processado em outras atividades. Vários parâmetros precisam ser monitorados para garantir que o workflow seja executado corretamente e forneça os resultados esperados. Por exemplo, ao importar os dados, a chave primária (Pkey) para esses dados deve ser única para cada registro.
+* Atividades de coleção de dados: [File transfer](file-transfer.md), [Data loading (file)](data-loading-file.md), [Data loading (RDBMS)](data-loading-rdbms.md) e [Update data](update-data.md). Essa primeira etapa de coleta de dados prepara os dados para que ele seja processado em outras atividades. Vários parâmetros precisam ser monitorados para garantir que o workflow seja executado corretamente e forneça os resultados esperados. Por exemplo, ao importar os dados, a chave primária (Pkey) para esses dados deve ser única para cada registro.
 * As atividades de direcionamento foram aprimoradas com as opções de gerenciamento de dados: [Query](query.md), [Union](union.md), [Intersection](intersection.md) e [Split](split.md). Isso permite configurar uma união ou uma intersecção entre dados de diferentes targeting dimensions, desde que a reconciliação dos dados seja possível.
 * Atividades de transformação de dados: [Enrichment](enrichment.md) e [Change dimension](change-dimension.md).
 
@@ -278,7 +278,7 @@ Para implementar essas operações, o Adobe Campaign oferece:
 >
 >Quando dois workflows são vinculados, a exclusão de um elemento de tabela de origem não significa que todos os dados vinculados a ele serão excluídos.
 >  
->Por exemplo, excluir um recipient por meio de um workflow não resultará na exclusão de todo o histórico de delivery. No entanto, excluir um recipient diretamente na pasta &#39;Recipients&#39; resultará na exclusão de todos os dados vinculados a este recipient.
+>Por exemplo, excluir um recipient por meio de um workflow não resultará na exclusão de todo o histórico de entrega. No entanto, excluir um recipient diretamente na pasta &#39;Recipients&#39; resultará na exclusão de todos os dados vinculados a este recipient.
 
 ### Enriquecer e modificar dados {#enrich-and-modify-data}
 
