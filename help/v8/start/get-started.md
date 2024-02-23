@@ -5,10 +5,10 @@ feature: Overview, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
-source-git-commit: c7bedcffeff59a5c3b631cde6c7df67057d4a483
+source-git-commit: 86a6979b8258bbe3136ed9e4de6ce44a8164d5d9
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 100%
+source-wordcount: '994'
+ht-degree: 97%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 100%
 O Adobe Campaign fornece uma plataforma para criar experiências de clientes entre canais, além de um ambiente para a orquestração visual de campanhas, o Real-time Interaction Management e a execução entre canais.
 
 O Adobe Campaign v8 é uma ferramenta de campanha de última geração criada para vários canais de marketing, como email, notificações por push, SMS e correspondência direta. Ele oferece recursos avançados de ETL e gerenciamento de dados para ajudar a criar e preparar a campanha perfeita. Seu mecanismo de orquestração fornece programas de marketing multitoque avançados com foco principal em jornadas orientadas por lote. Ele também conta com um servidor de mensagens escalável em tempo real que permite que as equipes de marketing enviem mensagens predefinidas com base em um conteúdo abrangente a partir de qualquer sistema de TI, a fim de fornecer informações sobre redefinição de senha, confirmação de pedido, recibos eletrônicos e muito mais.
+
+O Adobe Campaign v8 oferece aprimoramentos significativos em infraestrutura, segurança, capacidade de entrega e monitoramento. Ele está disponível como um **Cloud Service gerenciado** que combina serviços com uma supervisão proativa e alterações oportunas. Saiba mais sobre Cloud Service gerenciados pelo Campaign [nesta página](whats-new.md#acms-desc).
 
 Use o Campaign para:
 
@@ -50,7 +52,7 @@ O Adobe Campaign permite criar e organizar campanhas direcionadas e personalizad
 
 ![](../assets/do-not-localize/glass.png) Saiba como projetar, agendar e executar uma campanha [nesta seção](campaigns.md).
 
-## Workflows
+## Workflows {#wf-gsv8}
 
 O Adobe Campaign oferece um ambiente gráfico abrangente que permite projetar processos complexos, incluindo segmentação, execução de campanha, processamento de arquivos etc. Você pode usar um fluxo de trabalho, por exemplo, para baixar um arquivo de um servidor, descompactá-lo e importar seus registros no banco de dados do Adobe Campaign.
 
