@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 2f8cee4522efb59782a568334fc1300fc39d559f
+source-git-commit: 3b790305984436f1168f9c73aa09df509b2217f0
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '478'
 ht-degree: 16%
 
 ---
@@ -21,10 +21,19 @@ Como usuário do Managed Cloud Service, sua instância é atualizada pelo Adobe 
 Além disso, como cliente, verifique se você está usando as versões mais recentes compatíveis dos sistemas listados na [Matriz de compatibilidade](compatibility-matrix.md).
 
 
+## Versão 8.6.2 {#release-8-6-2}
+
+_23 de fevereiro de 2024_
+
+### Correções {#fixes-8-6-2}
+
+Esta versão corrige o seguinte problema:
+
+* Correção de um problema de desempenho que poderia ocorrer na instância mid-sourcing (NEO72595).
+
 ## Versão 8.6.1 {#release-8-6-1}
 
 _14 de fevereiro de 2024_
-
 
 ### Novos recursos {#new-8-6-1}
 
