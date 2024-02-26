@@ -5,9 +5,9 @@ user-guide-description: Documentação de produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: 05b911d0675fa69fb8041bbc6d5c465266d9f806
+source-git-commit: acec0a14fb9267d4c7c60b8056c5367742cc37bd
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '577'
 ht-degree: 84%
 
 ---
@@ -146,6 +146,7 @@ ht-degree: 84%
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
    + [Campaign + Experience Cloud Triggers](connect/ac-triggers.md)
+   + [Campaign + Workfront](connect/ac-workfont.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + Banco de dados externo](connect/fda.md)
    + Campaign + seu CRM {#ac-crm}
