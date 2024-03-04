@@ -4,7 +4,7 @@ description: Entender o gerenciamento de links em esquemas do Adobe Campaign
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: c7171a121f03eff0d945e64758e3ba1842e5436f
+source-git-commit: 6db351c8b5d30f722ddc4b0261af93cd8e3b72cd
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Para relações de join usando o Federated Database Access (FDA):
 * ![](assets/do-not-localize/join_fda_11.png) : Cardinalidade 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Cardinalidade 1-N
 
-Para obter mais informações sobre tabelas FDA, consulte [Acesso a um banco de dados externo](../../installation/using/about-fda.md).
+Para obter mais informações sobre tabelas FDA, consulte [Acesso a um banco de dados externo](../connect/fda.md).
 
 Um link deve ser declarado no schema que contém a chave externa da tabela vinculada por meio do elemento principal:
 
