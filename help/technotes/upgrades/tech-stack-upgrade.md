@@ -4,11 +4,10 @@ title: Nota técnica - Atualizações de sistema da Adobe Campaign
 description: Atualização do sistema Adobe Campaign
 hide: true
 hidefromtoc: true
-exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: f1e963a880e8499dbbb16c44831a4ce1b537601f
+source-git-commit: c362e6ff932f5017530434c4b458070ec1a97abc
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 11%
+source-wordcount: '313'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +21,7 @@ Por motivos de segurança, o Adobe deve [instalar a build mais recente do Campai
 
 >[!NOTE]
 >
->Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 >
 
 ## Atualização de build do Campaign {#ac-upgrade}
