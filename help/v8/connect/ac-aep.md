@@ -1,18 +1,18 @@
 ---
-title: Públicos-alvo e atributos de perfil
+title: Compartilhar e sincronizar públicos-alvo e atributos de perfil com a Adobe Experience Platform
 description: Saiba como sincronizar públicos-alvo e atributos de perfil do Adobe Experience Platform com o Campaign
 feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: 6ebbdf2ab57577594a4f964e2cfcba46fcb7b4ca
+source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
-# Trabalhar com o Campaign e o Adobe Experience Platform
+# Compartilhar e sincronizar públicos-alvo com a Adobe Experience Platform {#gs-ac-aep}
 
 Os conectores de Destino e Origem do Cloud Service gerenciado da Adobe Campaign permitem uma integração perfeita entre o Adobe Campaign e o Adobe Experience Platform. Com essa integração, você pode:
 
