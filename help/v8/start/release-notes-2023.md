@@ -4,7 +4,8 @@ description: Lista de recursos e melhorias disponíveis com as versões do Campa
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
+exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
+source-git-commit: 3a63539bc6bb20fa79bdac76dd60efe7b232458b
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 57%
@@ -13,7 +14,7 @@ ht-degree: 57%
 
 # Notas de versão de 2023 {#2023-rn}
 
-Esta página lista novos recursos, melhorias e correções que vêm com as **versões do Campaign v8 2022**.
+Esta página lista novos recursos, melhorias e correções que vêm com as **versões mais recentes do Campaign v8 2023**.
 
 ## Versão 8.5.2 {#release-8-5-2}
 
@@ -151,5 +152,3 @@ _27 de janeiro de 2023_
 * O gerenciamento de URLs de rastreamento foi aprimorado em workflows com várias entregas para melhorar o desempenho. (NEO-50894) <!--OKKKK-->
 * Correção de um problema que poderia causar falha na replicação de esquemas que usam a pasta Xtkfolder. (NEO-46787) <!--OKKKK-->
 * Correção de uma causa de problema que poderia fazer com que a coluna personalizada “lastModified” fosse descartada na tabela NmsSubscription. (NEO-48402)
-
-
