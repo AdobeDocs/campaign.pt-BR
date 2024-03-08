@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 032c11f794956d5bdd4a6540ee5dd5b2f92c94dc
+source-git-commit: f6ccec05d63c397d0a286c18f4114eb414156d45
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '410'
 ht-degree: 11%
 
 ---
@@ -24,15 +24,15 @@ Combine soluções da Adobe Experience Cloud para modernizar sua implementação
 
 ![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para conectar o Campaign com serviços e soluções da Adobe Experience Cloud.
 
-O Campaign v8 pode se conectar com:
+O Campaign v8 pode se conectar com as seguintes soluções de Adobe. Navegue pelos links para saber mais sobre casos de uso, configuração e diretrizes:
 
-* [Adobe Analytics](../connect/ac-aa.md)
-* [Adobe Experience Cloud Triggers](../connect/ac-triggers.md)
-* [Adobe Experience Manager](../connect/ac-aem.md)
-* [Adobe Experience Platform](../connect/ac-aep.md)
-* [Adobe Journey Optimizer](../connect/ac-ajo.md)
-* [Adobe Target](../connect/ac-at.md)
-* [Adobe Workfront](../connect/ac-workfront.md)
+* Adobe Analytics.[Saiba mais](../connect/ac-aa.md)
+* Adobe Experience Cloud Triggers. [Saiba mais](../connect/ac-triggers.md)
+* Adobe Experience Manager. [Saiba mais](../connect/ac-aem.md)
+* Adobe Experience Platform. [Saiba mais](../connect/ac-aep.md)
+* Adobe Journey Optimizer. [Saiba mais](../connect/ac-ajo.md)
+* Adobe Target. [Saiba mais](../connect/ac-at.md)
+* Adobe Workfront. [Saiba mais](../connect/ac-workfront.md)
 
 Você também pode combinar seus **públicos** e **ativos** em soluções Experience Cloud com recursos de compartilhamento de ativos e de público-alvo.
 
