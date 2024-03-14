@@ -5,10 +5,10 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
+source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 84%
+source-wordcount: '588'
+ht-degree: 83%
 
 ---
 
@@ -16,18 +16,18 @@ ht-degree: 84%
 # Documentação do Adobe Campaign v8 {#campaign-v8}
 
 + [Documentação do Campaign v8](campaign-home.md)
-+ Versões e atualizações mais recentes {#releases}
-   + [Atualizações da documentação](start/documentation-updates.md)
++ Notas de versão {#releases}
    + [Notas de versão anteriores](start/e-release-notes.md)
    + [Versões e atualizações](start/upgrades.md)
-   + [Notas de versão](start/release-notes.md)
+   + [Versão mais recente](start/release-notes.md)
    + Notas de versão anteriores {#previous-rn}
-      + [2023](start/release-notes-2023.md)
-      + [2022](start/release-notes-2022.md)
-      + [2021](start/release-notes-2021.md)
+      + [Versões de 2023](start/release-notes-2023.md)
+      + [Versões de 2022](start/release-notes-2022.md)
+      + [Versões de 2021](start/release-notes-2021.md)
    + [Medidas de proteção](start/ac-guardrails.md)
    + [Problemas conhecidos](start/known-issues.md)
    + [Matriz de compatibilidade](start/compatibility-matrix.md)
+   + [Atualizações da documentação](start/documentation-updates.md)
 + Introdução {#new}
    + [Introdução ao Adobe Campaign](start/get-started.md)
    + [Principais recursos](start/whats-new.md)

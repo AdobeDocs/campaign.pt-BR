@@ -5,10 +5,10 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
+source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 7%
+source-wordcount: '937'
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ Antes de começar, é necessário:
 
 >[!NOTE]
 >
->Você também pode se conectar à interface da Web do Campaign usando um navegador da Web. Saiba mais sobre a nova interface do usuário na Web do Campaign em [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
+>Você também pode se conectar à interface da Web do Campaign usando um navegador da Web. Saiba mais sobre a nova interface do usuário na Web do Campaign em [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"}.
 
 
 ## Instalar o console do cliente{#download-ac-console}
@@ -117,7 +117,17 @@ Como administrador do Campaign, você é responsável por criar os operadores e 
 Saiba mais sobre usuários e como definir suas permissões no [nesta seção](gs-permissions.md).
 
 
-## Acesso à Web{#web-access}
+## Acessar o Campaign com um navegador da Web {#connect-web-ac}
+
+### Interface do usuário da Web {#connect-web-ui}
+
+A partir da versão v8.6 do Campaign, você terá acesso ao novo **Interface do usuário da Web do Campaign**, disponível por meio do ambiente central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com a interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, os recursos do produto e os serviços.
+
+Saiba como se conectar ao Adobe Experience Cloud e acessar a interface da Web do Adobe Campaign [nesta página](campaign-ui.md#ac-web-ui).
+
+Saiba mais na [Documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+
+### acesso à web {#web-access}
 
 Certas partes do aplicativo podem ser acessadas por meio de um navegador da Web usando uma interface do usuário HTML: relatórios, aprovação de entrega, monitoramento de instâncias e muito mais.
 
