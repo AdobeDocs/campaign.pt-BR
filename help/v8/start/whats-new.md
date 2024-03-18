@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 55324243c70f2bbdace4acac233d1dd470562414
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 77%
 
 O Adobe Campaign v8 foi projetado para profissionais de marketing de vários canais que precisam da melhor solução em nuvem do setor para o gerenciamento de campanhas em vários canais com escala corporativa. Ele oferece recursos avançados de ETL e gerenciamento de dados para ajudar a criar e preparar a campanha perfeita. Seu mecanismo de orquestração fornece programas de marketing multitoque avançados com foco principal em jornadas orientadas por lote. Ele também vem com um servidor de mensagens escalável em tempo real que permite que as equipes de marketing enviem mensagens predefinidas com base em um conteúdo abrangente a partir de qualquer sistema de TI para realizar tarefas como redefinição de senha, confirmação de pedido, geração de recibos eletrônicos e muito mais.
 
-O Adobe Campaign v8 oferece aprimoramentos significativos em infraestrutura, segurança, capacidade de entrega e monitoramento. Ele está disponível como um **Cloud Service gerenciado** que combina serviços com uma supervisão proativa e alterações oportunas. Saiba mais sobre Cloud Service gerenciados pelo Campaign [nesta seção](#acms-desc).
+O Adobe Campaign v8 oferece melhorias significativas de infraestrutura, segurança, capacidade de entrega e monitoramento. Ele está disponível como um **Managed Cloud Services** que combina serviços com uma supervisão proativa e alterações oportunas. Saiba mais sobre Managed Cloud Services do Campaign [nesta seção](#acms-desc).
 
 ![](assets/home-page.png)
 
@@ -30,7 +30,7 @@ O Adobe Campaign facilita a sincronização dos canais, com uma interface de orq
 
 ![](../assets/do-not-localize/glass.png)[Saiba mais sobre os fluxos de trabalho do Campaign](../config/workflows.md)
 
-### Marketing personalizado por email {#perso-email-mkt}
+### Marketing por email personalizado {#perso-email-mkt}
 
 Crie emails personalizados e contextualmente relevantes que sejam consistentes com o restante da experiência do cliente.
 
@@ -46,7 +46,7 @@ O Adobe Campaign ajuda você a criar perfis de clientes a partir de dados coleta
 
 ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o gerenciamento de dados do cliente](audiences.md)
 
-### Melhor gerenciamento de campanha do setor {#best-in-campaign-mgt}
+### Melhor gerenciamento de campanhas do setor {#best-in-campaign-mgt}
 
 O Adobe Campaign v8 fornece aos profissionais de marketing os melhores recursos do setor para planejar, lançar e medir campanhas em todos os canais.
 
@@ -55,7 +55,7 @@ Os recursos incluem um perfil integrado que fornece uma visão única do cliente
 ![](../assets/do-not-localize/glass.png) [Saiba mais sobre o gerenciamento de campanhas](campaigns.md)
 
 
-### Conexões com o Adobe Experience Platform {#connection-to-aep}
+### Conexões com a Adobe Experience Platform {#connection-to-aep}
 
 O Adobe Campaign v8 oferece compatibilidade a conectores de dados com a Real-Time CDP e a Adobe Experience Platform, para que as organizações possam aproveitar o perfil de cliente unificado em tempo real.
 
@@ -68,13 +68,13 @@ Também é possível configurar a otimização preditiva do tempo de envio e a p
 
 ### Managed Cloud Services {#acms-desc}
 
-O Adobe Campaign v8 está disponível como um Cloud Service gerenciado, fornecendo supervisão proativa, alertas oportunos e governança de serviços. O Adobe Managed Cloud Service oferece aos profissionais de marketing uma solução mais ágil, segura e escalável para o gerenciamento de campanha em vários canais, com baixo custo total de propriedade. A nova oferta combina os serviços com uma supervisão proativa e alertas oportunos.
+O Adobe Campaign v8 está disponível como um Managed Cloud Services, fornecendo supervisão proativa, alertas oportunos e governança de serviços. O Adobe Managed Cloud Service oferece aos profissionais de marketing uma solução mais ágil, segura e escalável para o gerenciamento de campanha em vários canais, com baixo custo total de propriedade. A nova oferta combina os serviços com uma supervisão proativa e alertas oportunos.
 
-A abordagem de serviços gerenciados permite que os profissionais de marketing aproveitem a escala operacional e a economia da infraestrutura em nuvem, sem a necessidade de suporte pesado dos recursos internos de TI. As equipes de consultoria e implementação do Adobe trabalham com você para avaliar seus planos de marketing, práticas existentes, requisitos de dados e volume de mensagens e, em seguida, recomendam os pacotes mais apropriados de serviço, suporte e capacidade de entrega. A equipe do Adobe Campaign Managed Cloud Services pode monitorar e relatar o desempenho da campanha, a reputação da marca, as métricas de experiência do cliente e muito mais.
+A abordagem de managed services permite que os profissionais de marketing aproveitem a escala operacional e a economia da infraestrutura em nuvem, sem a necessidade de um suporte pesado de recursos internos da TI. As equipes de consultoria e implementação da Adobe trabalham com você para avaliar seus planos de marketing, práticas, requisitos de dados e volume de mensagens e, em seguida, recomendam os pacotes mais apropriados de serviços, suporte e capacidade de entrega. A equipe do Adobe Campaign Managed Cloud Services pode monitorar e relatar o desempenho da campanha, a reputação da marca, as métricas de experiência do cliente e muito mais.
 
-[!BADGE PDF]{type=Informative}[Leia este informe oficial](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} para saber mais sobre o valor comercial do Adobe Campaign Managed Cloud Services.
+[!BADGE PDF]{type=Informative}[Leia este whitepaper](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} para saber mais sobre o valor comercial do Adobe Campaign Managed Cloud Services.
 
-Observe que a nova arquitetura de nuvem permite que o Campaign simplifique processos, reduza custos, gerencie riscos e melhore a segurança dos dados. Seu ambiente do Campaign v8 vem com uma Nuvem privada virtual (VPC) dedicada pré-configurada para você.
+Observe que a nova arquitetura de nuvem permite que o Campaign simplifique processos, reduza custos, gerencie riscos e melhore a segurança dos dados. Seu ambiente do Campaign v8 vem com uma nuvem privada virtual (VPC) dedicada pré-configurada para você.
 
 
 >[!AVAILABILITY]
@@ -88,7 +88,7 @@ Observe que a nova arquitetura de nuvem permite que o Campaign simplifique proce
 
 Agora, o Adobe Campaign pode aproveitar as tecnologias de banco de dados em escala de nuvem para melhorar consideravelmente sua escala e velocidade.
 
-O [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova oferta, o Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. [!DNL Snowflake] é o banco de dados na nuvem do Campaign e oferece velocidade e resistência: não há pico de sobrecarga da atividade do sistema. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
+O [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova oferta, o Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. O [!DNL Snowflake] é o banco de dados na nuvem do Campaign que oferece velocidade e resistência: sem sobrecarga dos picos de atividade do sistema. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 
 ![](../assets/do-not-localize/glass.png) [Saiba mais sobre a implantação corporativa (FFDA)](../architecture/enterprise-deployment.md)
 
@@ -105,6 +105,6 @@ Por meio de uma interface intuitiva, os administradores podem monitorar o uso do
 
 ![](assets/subdomain1.png)
 
-![](../assets/do-not-localize/glass.png) [Saiba mais sobre o Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+![](../assets/do-not-localize/glass.png) [Saiba mais sobre o Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
 
 

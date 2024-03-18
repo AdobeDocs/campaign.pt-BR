@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 source-git-commit: 86a6979b8258bbe3136ed9e4de6ce44a8164d5d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '994'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ O Adobe Campaign fornece uma plataforma para criar experiências de clientes ent
 
 O Adobe Campaign v8 é uma ferramenta de campanha de última geração criada para vários canais de marketing, como email, notificações por push, SMS e correspondência direta. Ele oferece recursos avançados de ETL e gerenciamento de dados para ajudar a criar e preparar a campanha perfeita. Seu mecanismo de orquestração fornece programas de marketing multitoque avançados com foco principal em jornadas orientadas por lote. Ele também conta com um servidor de mensagens escalável em tempo real que permite que as equipes de marketing enviem mensagens predefinidas com base em um conteúdo abrangente a partir de qualquer sistema de TI, a fim de fornecer informações sobre redefinição de senha, confirmação de pedido, recibos eletrônicos e muito mais.
 
-O Adobe Campaign v8 oferece aprimoramentos significativos em infraestrutura, segurança, capacidade de entrega e monitoramento. Ele está disponível como um **Cloud Service gerenciado** que combina serviços com uma supervisão proativa e alterações oportunas. Saiba mais sobre Cloud Service gerenciados pelo Campaign [nesta página](whats-new.md#acms-desc).
+O Adobe Campaign v8 oferece melhorias significativas de infraestrutura, segurança, capacidade de entrega e monitoramento. Ele está disponível como um **Managed Cloud Services** que combina serviços com uma supervisão proativa e alterações oportunas. Saiba mais sobre Campaign Managed Cloud Services [nesta página](whats-new.md#acms-desc).
 
 Use o Campaign para:
 
@@ -94,5 +94,5 @@ O Adobe Campaign oferece um conjunto de recursos para ajudá-lo a implementar e 
 
 * [Espaço de trabalho do Campaign](campaign-ui.md)
 * [Matriz de compatibilidade do Campaign v8](compatibility-matrix.md)
-* [Conectar-se ao Campaign](connect.md)
+* [Conectar ao Campaign](connect.md)
 * [Perguntas frequentes](campaign-faq.md)
