@@ -8,7 +8,7 @@ breadcrumb-title: Documentação do Campaign v8
 source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 83%
 
 + [Documentação do Campaign v8](campaign-home.md)
 + Notas de versão {#releases}
-   + [Notas de versão anteriores](start/e-release-notes.md)
+   + [Notas de versão antecipadas](start/e-release-notes.md)
    + [Versões e atualizações](start/upgrades.md)
    + [Versão mais recente](start/release-notes.md)
    + Notas de versão anteriores {#previous-rn}
@@ -31,8 +31,8 @@ ht-degree: 83%
 + Introdução {#new}
    + [Introdução ao Adobe Campaign](start/get-started.md)
    + [Principais recursos](start/whats-new.md)
-   + [Conheça a interface do usuário](start/campaign-ui.md)
-   + [Conexão com o Campaign](start/connect.md)
+   + [Conheça a interface](start/campaign-ui.md)
+   + [Conectar ao Campaign](start/connect.md)
    + [Componentes e processos](start/ac-components.md)
    + [Do Classic v7 para o v8](start/v7-to-v8.md)
    + [Perguntas frequentes](start/campaign-faq.md)
@@ -61,7 +61,7 @@ ht-degree: 83%
       + [Adicionar campos de personalização](send/personalization-fields.md)
       + [Usar blocos de personalização](send/personalization-blocks.md)
       + [Criar condições](send/conditions.md)
-   + Validar e enviar o delivery {#validate}
+   + Validar e enviar a entrega {#validate}
    + [Visualização e provas](send/preview-and-proof.md)
    + [Análise de entrega](send/delivery-analysis.md)
    + [Configurar e enviar a entrega](send/configure-and-send.md)
@@ -91,7 +91,7 @@ ht-degree: 83%
    + Criar públicos-alvo {#create-audiences}
       + [Criar uma lista de contatos](audiences/create-audiences.md)
       + [Criar e gerenciar filtros](audiences/create-filters.md)
-      + [Compartilhar públicos-alvo com soluções Adobe](start/shared-audiences.md)
+      + [Compartilhar públicos-alvo com soluções da Adobe](start/shared-audiences.md)
    + [Práticas recomendadas](audiences/audiences-best-practices.md)
    + [Gerenciar assinaturas](start/subscriptions.md)
 + Gestão de conteúdo {#content}
@@ -140,7 +140,7 @@ ht-degree: 83%
    + [Conectar o Campaign a outras soluções](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
       + [Compartilhar e sincronizar públicos-alvo e atributos de perfil](connect/ac-aep.md)
-      + [Atualizar perfis AEP a partir das páginas de aterrissagem do Campaign](connect/ac-aep-landing-pages.md)
+      + [Atualizar perfis da AEP a partir de landing pages do Campaign](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
@@ -161,10 +161,10 @@ ht-degree: 83%
       + [Adicionar permissões em pastas](start/folder-permissions.md)
    + [Painel de controle](config/self-service.md)
 + Arquitetura e configuração {#config}
-   + Arquitetura do Campaign v8 {#architecture}
+   + Arquitetura do Campaign v8 {#architecture}
       + [Princípios globais](architecture/general-architecture.md)
       + [Modelos de arquitetura](architecture/architecture.md)
-      + [Implantação do FDA no Campaign](architecture/fda-deployment.md)
+      + [Implantação de FDA no Campaign](architecture/fda-deployment.md)
       + Implantação corporativa (FFDA) {#ffda}
          + [O que é o FFDA do Campaign?](architecture/enterprise-deployment.md)
          + [Gerenciamento de chaves e unicidade](architecture/keys.md)
@@ -179,7 +179,7 @@ ht-degree: 83%
       + [Configurações da interface](config/ui-settings.md)
       + [Gerenciar pastas e visualizações](audiences/folders-and-views.md)
       + [Configurações de mensagens transacionais](config/transactional-msg-settings.md)
-      + [Integrar SDKs do Campaign ao seu aplicativo - PÁGINA OBSOLETA](config/push-config.md)
+      + [Integrar os SDKs do Campaign ao seu aplicativo – PÁGINA DESCONTINUADA](config/push-config.md)
       + [Contas externas](config/external-accounts.md)
 + Recursos do desenvolvedor {#developer}
    + [Modelo de dados do Campaign](dev/datamodel.md)
@@ -191,9 +191,9 @@ ht-degree: 83%
       + [Estrutura de esquema](dev/schema-structure.md)
       + [Mapeamento de banco de dados](dev/database-mapping.md)
       + [Principais gerenciamentos](dev/database-keys.md)
-      + [Gerenciamento de links](dev/database-links.md)
+      + [Gerenciamento de link](dev/database-links.md)
       + [Restringir visualização de IP](dev/restrict-pi-view.md)
-      + [Usar tabela de recipient personalizada](dev/custom-recipient.md)
+      + [Usar tabela de destinatário personalizada](dev/custom-recipient.md)
       + [Atualizar o banco de dados](dev/update-database-structure.md)
       + [Formulários de entrada](dev/forms.md)
    + [APIs do Campaign](dev/api.md)
