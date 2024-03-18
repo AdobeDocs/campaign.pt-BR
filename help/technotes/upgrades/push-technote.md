@@ -8,14 +8,14 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Também se aplica ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Aplicável ao Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
+source-git-commit: c81744fdf4a4fc47820c077f69288a0ea66fa5e4
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 12%
+source-wordcount: '1352'
+ht-degree: 11%
 
 ---
 
-# Próximas alterações no Canal de notificação por push {#push-upgrade}
+# Alterações no canal de notificação por push {#push-upgrade}
 
 Você pode usar o Campaign para enviar notificações por push em dispositivos iOs e Android. Para fazer isso, o Campaign depende dos serviços de assinatura de aplicativo móvel.
 
