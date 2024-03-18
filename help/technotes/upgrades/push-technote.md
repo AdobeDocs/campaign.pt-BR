@@ -8,7 +8,7 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Também se aplica ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Aplicável ao Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: c81744fdf4a4fc47820c077f69288a0ea66fa5e4
+source-git-commit: a494ac834b1febcafe04f4bb05eb74834df7b024
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 11%
@@ -33,7 +33,7 @@ O Adobe Campaign Classic v7 e o Adobe Campaign v8 já oferecem suporte às APIs 
 
 ### Você será afetado? {#fcm-impact}
 
-Se sua implementação atual suportar serviços de assinatura conectados ao FCM usando as APIs herdadas, você será afetado. A migração para as APIs mais recentes é obrigatória para evitar qualquer perturbação do serviço. Nesse caso, as equipes do Adobe entrarão em contato com você.
+Se sua implementação atual suportar serviços de assinatura conectados ao FCM usando as APIs herdadas, você será afetado. A transição para as APIs mais recentes é obrigatória para evitar qualquer perturbação do serviço. Nesse caso, as equipes do Adobe entrarão em contato com você.
 
 Para verificar se você foi afetado, é possível filtrar o **Serviços e assinaturas** de acordo com o filtro abaixo:
 
@@ -44,21 +44,21 @@ Para verificar se você foi afetado, é possível filtrar o **Serviços e assina
 
 * Se a configuração usar exclusivamente o **HTTP v1** API para notificações por push do Android, você já está em conformidade e nenhuma outra ação será necessária da sua parte.
 
-### Como migrar? {#fcm-migration-procedure}
+### Como atualizar? {#fcm-transition-procedure}
 
-#### Pré-requisitos {#fcm-migration-prerequisites}
+#### Pré-requisitos {#fcm-transition-prerequisites}
 
-* Para o Campaign Classic v7, o suporte de HTTP v1 foi adicionado na versão 20.3.1. Se o ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a migração para HTTP v1 é atualizar o ambiente para o [build de Campaign Classic mais recente](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
+* Para o Campaign Classic v7, o suporte de HTTP v1 foi adicionado na versão 20.3.1. Se o ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar o ambiente para o [build de Campaign Classic mais recente](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
 
 * O arquivo JSON da conta do serviço SDK de administrador do Firebase do Android é necessário para mover o aplicativo móvel para HTTP v1. Saiba como obter este arquivo no [Documentação do Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* Para implantações híbridas, hospedadas e Managed Services, além do procedimento de migração abaixo, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT). O servidor Mid-Sourcing não é afetado.
+* Para implantações híbridas, hospedadas e Managed Services, além do procedimento de transição abaixo, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT). O servidor Mid-Sourcing não é afetado.
 
 * Como usuário local do Campaign Classic v7, você deve atualizar os servidores de execução Marketing e Tempo real. O servidor Mid-Sourcing não é afetado.
 
-#### Procedimento de migração {#fcm-migration-steps}
+#### Procedimento de transição {#fcm-transition-steps}
 
-Para migrar seu ambiente para HTTP v1, siga estas etapas:
+Para mover seu ambiente para HTTP v1, siga estas etapas:
 
 1. Navegue até a lista de **Serviços e assinaturas**.
 1. Listar todos os aplicativos móveis usando o **HTTP (herdado)** Versão da API.
@@ -129,7 +129,7 @@ O Adobe Campaign Classic v7 e o Adobe Campaign v8 oferecem suporte a conexões b
 
 ### Você será afetado? {#ios-impact}
 
-Se sua implementação atual depender de solicitações baseadas em certificado para se conectar a APNs, você será afetado. Recomenda-se a migração para uma conexão baseada em token.
+Se sua implementação atual depender de solicitações baseadas em certificado para se conectar a APNs, você será afetado. Recomenda-se a transição para uma conexão baseada em token.
 
 Para verificar se você foi afetado, é possível filtrar o **Serviços e assinaturas** de acordo com o filtro abaixo:
 
@@ -140,21 +140,21 @@ Para verificar se você foi afetado, é possível filtrar o **Serviços e assina
 
 * Se a configuração usar exclusivamente o **Autenticação baseada em token** para notificações por push do iOS, sua implementação já está atualizada e nenhuma ação adicional será necessária da sua parte.
 
-### Como migrar? {#ios-migration-procedure}
+### Como atualizar? {#ios-transition-procedure}
 
-#### Pré-requisitos {#ios-migration-prerequisites}
+#### Pré-requisitos {#ios-transition-prerequisites}
 
 * Para o Campaign Classic v7, o suporte do **Autenticação baseada em token** O modo foi adicionado na versão 20.2. Se o ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para essa alteração será atualizar o ambiente para o [build de Campaign Classic mais recente](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, **Autenticação baseada em token** O modo é compatível com todas as versões e nenhuma atualização é necessária.
 
 * Você precisa de uma chave de assinatura de token de autenticação APNs para gerar os tokens que seu servidor usa. Essa chave é solicitada na sua conta de desenvolvedor do Apple, conforme explicado em [Documentação do desenvolvedor do Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 
-* Para implantações híbridas, hospedadas e Managed Services, além do procedimento de migração abaixo, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT). O servidor Mid-Sourcing não é afetado.
+* Para implantações híbridas, hospedadas e Managed Services, além do procedimento de transição abaixo, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT). O servidor Mid-Sourcing não é afetado.
 
 * Como usuário local do Campaign Classic v7, você deve atualizar os servidores de execução Marketing e Tempo real. O servidor Mid-Sourcing não é afetado.
 
-#### Procedimento de migração {#ios-migration-steps}
+#### Procedimento de transição {#ios-transition-steps}
 
-Para migrar seus aplicativos móveis da iOS para o modo de autenticação baseado em token, siga estas etapas:
+Para mover seus aplicativos móveis da iOS para o modo de autenticação baseada em token, siga estas etapas:
 
 1. Navegue até a lista de **Serviços e assinaturas**.
 1. Listar todos os aplicativos móveis usando o **Autenticação baseada em certificado** modo.
