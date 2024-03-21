@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 7%
@@ -32,7 +32,7 @@ A implantação típica da solução Adobe Campaign consiste nos seguintes compo
 
 O aplicativo pode ser acessado de diferentes maneiras: interface de usuário da Web, console do cliente (cliente avançado), acesso à Web (cliente thin) ou integração de API.
 
-![](../assets/do-not-localize/glass.png) [Saiba mais sobre a interface do usuário do Campaign](../start/campaign-ui.md).
+[Saiba mais sobre a interface do usuário do Campaign](../start/campaign-ui.md).
 
 ## Ambiente de desenvolvimento {#dev-env}
 

@@ -5,20 +5,20 @@ feature: Profiles, Data Management
 role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '213'
+ht-degree: 84%
 
 ---
 
 # Importar dados para o Campaign {#ootb-profiles}
 
-O Campaign ajuda a adicionar contatos ao banco de dados da nuvem. Você pode carregar um arquivo, agendar e automatizar várias atualizações de contato, coletar dados na Web ou inserir informações de perfil diretamente na tabela do recipient.
+O Campaign ajuda a adicionar contatos ao banco de dados da nuvem. Você pode carregar um arquivo, agendar e automatizar várias atualizações de contato, coletar dados na Web ou inserir informações de perfil diretamente na tabela do destinatário.
 
-![](../assets/do-not-localize/glass.png) Introdução aos [públicos](audiences.md)
+Introdução a [públicos](audiences.md)
 
-![](../assets/do-not-localize/glass.png) Entenda o [modelo de dados](../dev/datamodel.md) do Campaign
+Entender a campanha [datamodel](../dev/datamodel.md)
 
 ## Direcionar perfis em um fluxo de trabalho
 
@@ -33,7 +33,7 @@ Crie e execute um trabalho de importação de dados genérico para carregar cont
 
 ![](assets/new-import.png)
 
-![](../assets/do-not-localize/book.png) Saiba como executar processos de importação unitários para alimentar seu banco de dados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=pt-BR){target="_blank"}.
+Saiba como executar tarefas de importação unitárias para alimentar seu banco de dados no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=pt-BR){target="_blank"}.
 
 ## Coletar perfis por meio de aplicativos da Web
 
@@ -41,10 +41,10 @@ Use o Campaign para criar formulários web e coletar e gerenciar informações d
 
 ![](assets/web-form-page.png)
 
-![](../assets/do-not-localize/book.png) Saiba como criar formulários web na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=pt-BR){target="_blank"}.
+Saiba como criar formulários web no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=pt-BR){target="_blank"}.
 
 **Tópicos relacionados**
 
-* [Criar públicos](audiences.md)
+* [Criar públicos-alvo](audiences.md)
 * [Desduplicar perfis](../../automation/workflow/deduplication-merge.md)
 * [Enriquecer dados de perfil](../../automation/workflow/enrich-data.md)

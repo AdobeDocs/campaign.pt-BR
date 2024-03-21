@@ -5,10 +5,10 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 100%
+source-wordcount: '772'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ Antes de começar a implementar campanhas de marketing, você precisa conhecer o
 
 * **Plano**: o plano de marketing pode conter vários programas. Ele está vinculado a um período de calendário, tem um orçamento alocado e também pode ser vinculado a documentos e objetivos.
 
-* **Fluxo de trabalho de campanha**: um fluxo de trabalho de campanha contém atividades para criar a lógica da campanha. Use workflows da campanha para definir públicos e criar entregas para todos os canais disponíveis.
+* **Fluxo de trabalho de campanha**: um fluxo de trabalho de campanha contém atividades para criar a lógica da campanha. Use workflows da campanha para definir públicos-alvo e criar entregas para todos os canais disponíveis.
 
 * **Campanhas recorrentes**: campanhas recorrentes são criadas a partir de um modelo específico que define o modelo de fluxo de trabalho que será executado e a programação de execução.
 
@@ -46,7 +46,7 @@ O Adobe Campaign permite criar, configurar, executar e analisar todas as campanh
 
 ![](assets/calendar.png)
 
-![](../assets/do-not-localize/book.png) Descubra como acessar e implementar campanhas de marketing [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR).
+Saiba como acessar e implementar campanhas de marketing no [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR).
 
 ## Etapas principais para iniciar{#gs-ac-start}
 
@@ -56,7 +56,7 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    Defina a hierarquia e a programação, defina o orçamento, adicione recursos e selecione operadores.
 
-   ![](../assets/do-not-localize/book.png) Saiba como criar um plano de marketing e configurar campanhas [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=pt-BR).
+   Saiba como criar um plano de marketing e configurar campanhas no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=pt-BR).
 
    Todas as campanhas de marketing se baseiam em um modelo, que armazena as principais configurações e recursos. Um modelo integrado é fornecido para criar uma campanha para a qual nenhuma configuração específica foi definida. Você pode criar e configurar seus modelos de campanha e, em seguida, criar campanhas com base nesses modelos.
 
@@ -64,9 +64,9 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    Descubra campanhas recorrentes e como configurá-las [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=pt-BR).
 
-1. **Definir públicos**
+1. **Definir públicos-alvo**
 
-   Você pode criar o público em um fluxo de trabalho ou selecionar um grupo existente, como uma lista de recipients, assinantes de um boletim informativo, recipients de uma entrega anterior ou qualquer condição de filtragem.
+   Você pode criar o público-alvo em um fluxo de trabalho ou selecionar um grupo existente, como uma lista de destinatários, assinantes de um boletim informativo, destinatários de uma entrega anterior ou qualquer condição de filtragem.
 
    ![](assets/campaign-wf.png)
 
@@ -78,11 +78,11 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    ![](assets/campaign-dashboard.png)
 
-   ![](../assets/do-not-localize/book.png) Aprenda a criar e iniciar entregas de campanhas de marketing [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR).
+   Saiba como criar e iniciar entregas de campanha de marketing no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR).
 
    Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama etc.
 
-   ![](../assets/do-not-localize/book.png) Saiba mais sobre documentos associados [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=pt-BR).
+   Saiba mais sobre documentos associados em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=pt-BR).
 
 1. **Configurar o processo de aprovação**
 

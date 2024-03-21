@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 86fa52c445b89227cfabb65e74627c5da7d3db1f
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -26,18 +26,18 @@ Dois tipos de ambientes estão disponíveis:
 
 É possível exportar e importar pacotes de um ambiente para outro.
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre pacotes em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
+Saiba mais sobre pacotes em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
 ## Modelos de implantação {#ac-deployment}
 
 Dois modelos de implantação estão disponíveis: **Implantação do FDA no Campaign** (P1-P3) e **Implantação do Campaign Enterprise (FFDA)** (P4).
 
-### Implantação do FDA no Campaign {#ac-deployment-fda}
+### Implantação de FDA no Campaign {#ac-deployment-fda}
 
 No seu [Implantação do FDA](fda-deployment.md), [!DNL Adobe Campaign] O v8 pode ser conectado ao [!DNL Snowflake] para acessar dados por meio do recurso Federated Data Access: você pode acessar e processar dados externos e informações armazenadas em seu [!DNL Snowflake] banco de dados sem alterar a estrutura dos dados do Adobe Campaign. O PostgreSQL é o banco de dados principal e você pode usar o Snowflake como o banco de dados secundário para estender e armazenar seus dados no Snowflake. Posteriormente, é possível executar ETL, segmentação e relatórios em um grande conjunto de dados com desempenhos excelentes.
 
 
-![](assets/P1-P3-architecture.png){zoom=&quot;yes&quot;}
+![](assets/P1-P3-architecture.png){zoomable=&quot;yes&quot;}
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), 
 
 O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova arquitetura, a implantação corporativa (FFDA) do Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 
-![](assets/P4-architecture.png){zoom=&quot;yes&quot;}
+![](assets/P4-architecture.png){zoomable=&quot;yes&quot;}
 
 
 ## Dividir execução de entrega {#split}
@@ -100,7 +100,7 @@ Para dividir contas externas como a conta padrão para enviar deliveries, é nec
 
 O envio de mensagens transacionais (Centro de mensagens) é o módulo do Campaign criado para gerenciar mensagens de acionador.
 
-![](../assets/do-not-localize/glass.png) Saiba como enviar mensagens transacionais no [nesta seção](../send/transactional.md).
+Saiba como enviar mensagens transacionais no [nesta seção](../send/transactional.md).
 
 Em resposta a uma ação de um cliente em um site, um evento é enviado ao Campaign por meio de uma API REST e o modelo de mensagem é preenchido com as informações ou os dados fornecidos por meio da chamada de API, e uma mensagem transacional é enviada em tempo real ao cliente. Essas mensagens podem ser enviadas individualmente ou em lotes por email, SMS ou notificações por push.
 
@@ -108,7 +108,7 @@ Nessa arquitetura específica, a célula de execução é separada da instância
 
 * A variável **Instância de controle** (ou instância de marketing) é usada por profissionais de marketing e equipes de TI para criar, configurar e publicar modelos de mensagem. Essa instância também centraliza o monitoramento e o histórico de eventos.
 
-  ![](../assets/do-not-localize/glass.png) Saiba como criar e publicar modelos de mensagem no [nesta seção](../send/transactional.md).
+  Saiba como criar e publicar modelos de mensagem no [nesta seção](../send/transactional.md).
 
 * A variável **Instância de execução** recupera eventos de entrada (redefinição de senha ou pedidos de um site, por exemplo) e envia mensagens personalizadas. Pode haver mais de uma instância de execução para processar mensagens por meio do balanceador de carga e dimensionar o número de eventos a serem continuados para disponibilidade máxima.
 

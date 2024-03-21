@@ -5,10 +5,10 @@ feature: Configuration, Application Settings
 role: Developer
 level: Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 22%
+source-wordcount: '451'
+ht-degree: 10%
 
 ---
 
@@ -44,9 +44,9 @@ Para adicionar um tipo de dados totalmente novo que não existe pronto para uso 
 
 **Tópicos relacionados**
 
-![](../assets/do-not-localize/book.png) Exemplo de edição de esquema em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
+Exemplo de edição de esquema em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
 
-![](../assets/do-not-localize/book.png) Caso de uso: vincular um campo a uma tabela de referência existente no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
+Caso de uso: vincular um campo a uma tabela de referência existente no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
 
 
 ## Modificar os formulários de entrada
@@ -57,7 +57,7 @@ Saiba como modificar um formulário de entrada existente ou criar um novo formul
 
 ## Personalizar painéis{#gs-custom-dashboards}
 
-A interface do Adobe Campaign usa muitas aplicações web para acessar, gerenciar e interagir com recipients, entregas, campanhas, estoques, etc. Elas são vistas na interface do formulário de painéis com apenas uma página.
+A interface do Adobe Campaign usa muitas aplicações web para acessar, gerenciar e interagir com recipients, deliveries, campanhas, estoques, etc. Elas são vistas na interface do formulário de painéis com apenas uma página.
 
 Os aplicativos web integrados são armazenados no **Administração > Configuração > Aplicações web** pasta do Explorer.
 
@@ -72,6 +72,6 @@ Ao navegar na árvore do Adobe Campaign Explorer, os dados contidos no banco de 
 
 Saiba como configurar listas e salvar uma configuração de lista no [esta página](../start/campaign-ui.md).
 
-Aplique filtros nessas listas para exibir apenas os dados necessários ao operador. Em seguida, as ações podem ser executadas nos dados filtrados. A configuração de filtro permite selecionar dados de uma lista dynamically. Se os dados forem modificados, os dados filtrados serão atualizados.
+Aplique filtros nessas listas para exibir apenas os dados necessários ao operador. Em seguida, as ações podem ser executadas nos dados filtrados. A configuração de filtro permite selecionar dados de uma lista dinamicamente. Se os dados forem modificados, os dados filtrados serão atualizados.
 
 Saiba mais sobre as opções de filtragem em [esta página](../audiences/create-filters.md).

@@ -5,10 +5,10 @@ feature: Architecture, FFDA, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 54%
+ht-degree: 50%
 
 ---
 
@@ -39,7 +39,7 @@ Qualquer esquema/tabela interna que precise ser movido ou replicado no banco de 
 
 Em um [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um local [!DNL Campaign] para a interface do usuário de mensagens em tempo real e consultas unitárias e gravação por meio de APIs, além de uma [!DNL Snowflake] banco de dados para execução de campanha, consultas em lote e execução de workflow.
 
-O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem.
+O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados são disponíveis remotamente no banco de dados da nuvem.
 
 APIs específicas estão disponíveis para gerenciar dados entre o banco de dados local e na nuvem. Saiba como essas novas APIs funcionam e como usá-las [nesta página](new-apis.md).
 
@@ -84,13 +84,13 @@ O banco de dados PostgreSQL na instância mid-sourcing é usado para:
 
 Com [!DNL Campaign] O banco de dados em nuvem e as chamadas unitárias de explosão não são recomendados devido ao desempenho (latência e simultaneidade). A operação em lote é sempre preferida. Para garantir o melhor desempenho das APIs, o Campaign continua lidando com chamadas de API no nível do banco de dados local.
 
-![](../assets/do-not-localize/glass.png) [O mecanismo de preparo da API é detalhado nesta página](staging.md)
+[O mecanismo de preparo da API é detalhado nesta página](staging.md)
 
 ### Novas APIs{#new-apis}
 
 Novas APIs estão disponíveis para gerenciar a sincronização de dados entre [!DNL Campaign] banco de dados local e banco de dados na nuvem. Um novo mecanismo também foi introduzido para lidar com chamadas de API no nível do banco de dados local para evitar latência e aumentar o desempenho geral.
 
-![](../assets/do-not-localize/glass.png) [As novas APIs estão detalhadas nesta página](new-apis.md)
+[As novas APIs estão detalhadas nesta página](new-apis.md)
 
 
 ### Replicação de dados{#data-replication}
@@ -107,7 +107,7 @@ Um fluxo de trabalho técnico específico trata da replicação de tabelas que p
 
 ### Gerenciamento de ID{#id-mgt-ffda}
 
-Os objetos do Campaign v8 agora usam um **Identificador exclusivo universal (UUID)**, que permite que valores exclusivos ilimitados identifiquem dados.
+Os objetos do Campaign v8 agora usam um **ID exclusiva universal (UUID)**, que permite que valores únicos ilimitados identifiquem dados.
 
 Observe que essa ID é baseada em uma string e não é sequencial. A chave primária não é um valor numérico no Campaign v8 e você precisa usar os atributos **autouuid** e **autopk** em seus esquemas.
 

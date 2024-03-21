@@ -5,7 +5,7 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -54,4 +54,4 @@ A comunicação geral entre os processos do Campaign é descrita no seguinte dia
 
 O usuário se conecta ao servidor de aplicativos do Campaign usando o HTTP. Todos os dados e informações são gerenciados no banco de dados do Campaign. Se um desenvolvedor do Campaign executar qualquer alteração de configuração, ela será capturada no banco de dados. Se um profissional de marketing criar uma nova campanha, todas as informações e dados relacionados a essa nova campanha também serão gerenciados no banco de dados. Quando um profissional de marketing executa uma campanha, os deliveries de email são enviados aos perfis do servidor do Campaign por meio do servidor SMTP. Conforme os perfis interagem com deliveries de email, como a abertura do email, esses dados de rastreamento são enviados de volta ao servidor de rastreamento.
 
-![](../assets/do-not-localize/glass.png) [Saiba mais sobre os processos do Campaign](../architecture/general-architecture.md#dev-env).
+[Saiba mais sobre os processos do Campaign](../architecture/general-architecture.md#dev-env).

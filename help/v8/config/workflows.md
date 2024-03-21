@@ -5,10 +5,10 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 22%
+source-wordcount: '1307'
+ht-degree: 21%
 
 ---
 
@@ -18,7 +18,7 @@ Configure o Campaign para aproveitar os poderosos recursos de automação de cam
 
 Você pode configurar:
 
-* Workflows
+* Fluxos de trabalho
 * Campanhas recorrentes
 * Ciclo de validação completo
 * Alertas
@@ -45,7 +45,7 @@ Saiba mais sobre a interface e a execução do usuário de workflows nestas pág
 
 ## Atividades de fluxos de trabalho {#wf-activities}
 
-Saiba mais sobre as atividades de workflow disponíveis em [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html)
+Saiba mais sobre as atividades de workflow disponíveis em [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=pt-BR)
 
 As atividades do workflow são agrupadas por categoria. As quatro categorias de atividade estão disponíveis:
 
@@ -58,7 +58,7 @@ As atividades do workflow são agrupadas por categoria. As quatro categorias de 
 
 A atividade **[!UICONTROL Change data source]** permite alterar a fonte de dados de um workflow **[!UICONTROL Working table]**. Isso oferece mais flexibilidade para gerenciar dados em diferentes fontes de dados, como FDA, FFDA e o banco de dados local.
 
-O **[!UICONTROL Working table]** permite que o workflow do Adobe Campaign manipule dados e compartilhe dados com as atividades do workflow.
+A variável **[!UICONTROL Working table]** O permite que o workflow do Adobe Campaign manipule dados e compartilhe dados com as atividades do workflow.
 Por padrão, a **[!UICONTROL Working table]** é criada no mesmo banco de dados da fonte de dados que consultamos.
 
 Por exemplo, ao consultar a tabela **[!UICONTROL Profiles]**, armazenada no banco de dados em nuvem, você criará um **[!UICONTROL Working table]** no mesmo banco de dados em nuvem.
@@ -70,7 +70,7 @@ Para usar a atividade **[!UICONTROL Change Data Source]**:
 
 1. Criar um workflow.
 
-1. Consulte seus recipients alvos com uma atividade de **[!UICONTROL Query]**.
+1. Consulte seus destinatários alvos com uma atividade de **[!UICONTROL Query]**.
 
    Para obter mais informações sobre o **[!UICONTROL Query]** atividade, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
 
@@ -84,7 +84,7 @@ Para usar a atividade **[!UICONTROL Change Data Source]**:
 
 1. Adicione outra atividade **[!UICONTROL Change data source]** para alternar de volta para o banco de dados em nuvem.
 
-   Clique duas vezes na atividade e selecione **[!UICONTROL Active FDA external account]**. Em seguida, selecione a conta externa  correspondente.
+   Clique duas vezes na atividade e selecione **[!UICONTROL Active FDA external account]** em seguida, a conta externa correspondente.
 
 1. Agora, você pode iniciar o seu workflow.
 
@@ -121,11 +121,11 @@ Saiba como criar uma campanha recorrente no [esta página](https://experiencelea
 
 Usar mensagens transacionais do Campaign para automatizar mensagens geradas por eventos acionados de sistemas de informações. Essas mensagens transacionais podem ser fatura, confirmação de pedido, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta ou criação de conta de site, por exemplo. Essas mensagens podem ser enviadas individualmente ou em lote por email, SMS ou notificações por push.
 
-![](../assets/do-not-localize/glass.png) Saiba mais sobre os recursos de mensagens transacionais no no [nesta seção](../send/transactional.md).
+Saiba mais sobre os recursos de mensagens transacionais no no [nesta seção](../send/transactional.md).
 
 Conecte o Adobe Campaign e o Adobe Analytics para recuperar ações do usuário e enviar mensagens personalizadas quase em tempo real.
 
-![](../assets/do-not-localize/glass.png) Saiba como integrar o Campaign a outras soluções na [nesta seção](../start/connect.md)
+Saiba como integrar o Campaign a outras soluções na [nesta seção](../start/connect.md)
 
 
 ## Casos de uso completos de fluxos de trabalho{#end-to-end-uc}
@@ -139,7 +139,7 @@ Nesta seção você encontrará vários casos de uso que usam os recursos dos wo
 
 * [Enviar email de aniversário](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR)
 
-  Este caso de uso apresenta como planejar o envio de um e-mail recorrente para uma lista de recipients no dia de seus aniversários.
+  Este caso de uso apresenta como planejar o envio de um e-mail recorrente para uma lista de destinatários no dia de seus aniversários.
 
 * [Carregar conteúdo de delivery](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html)
 Quando o conteúdo do delivery estiver disponível em um arquivo HTML localizado em um servidor remoto, é possível carregá-lo facilmente nos deliveries do Adobe Campaign.
@@ -156,7 +156,7 @@ E estas páginas na documentação do Campaign v7:
 Saiba como automatizar a criação e o delivery de um bloco de conteúdo com o complemento de gerenciamento de conteúdo do Campaign.
 
 * [Teste A/B](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target="_blank"}
-Saiba como comparar dois conteúdos de delivery de email por meio de um workflow para construção do target. A mensagem e o texto são idênticos nas duas entregas: apenas o layout é alterado. A população direcionada é dividida em três grupos: dois grupos de teste e a população restante. Uma versão diferente da entrega é enviada para cada grupo de teste.
+Saiba como comparar dois conteúdos de delivery de email por meio de um workflow para construção do target. A mensagem e o texto são idênticos nos dois deliveries: somente o layout é alterado. A população direcionada é dividida em três grupos: dois grupos de teste e a população restante. Uma versão diferente da entrega é enviada para cada grupo de teste.
 
 ### Monitoramento {#monitoring}
 

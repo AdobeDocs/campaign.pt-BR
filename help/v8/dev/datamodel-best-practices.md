@@ -5,9 +5,9 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2740'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,9 @@ O sistema Adobe Campaign é muito flexível e pode ser estendido além da implem
 
 Para obter uma melhor compreensão das tabelas integradas do Campaign e como elas se relacionam, consulte [nesta seção](datamodel.md).
 
-![](../assets/do-not-localize/glass.png) Ler [nesta seção](schemas.md) para começar a usar esquemas do Campaign.
+Ler [nesta seção](schemas.md) para começar a usar esquemas do Campaign.
 
-![](../assets/do-not-localize/glass.png) Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign no [esta página](extend-schema.md).
+Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign no [esta página](extend-schema.md).
 
 ## Arquitetura do modelo de dados {#data-model-architecture}
 
@@ -86,7 +86,7 @@ Os recursos do Adobe Campaign têm três identificadores e é possível adiciona
 
 A tabela a seguir descreve esses identificadores e sua finalidade.
 
-| Identifier | Descrição | Práticas recomendadas |
+| Identificador | Descrição | Práticas recomendadas |
 |--- |--- |--- |
 | ID | <ul><li>A id é a chave primária física de uma tabela do Adobe Campaign. Para tabelas integradas, é um identificador exclusivo universal (UUID)</li><li>Esse identificador deve ser exclusivo. </li><li>Uma UUID pode ser visível em uma definição de esquema.</li></ul> | <ul><li>Identificadores gerados automaticamente não devem ser usados como referência em um fluxo de trabalho ou em uma definição de pacote.</li><li>A ID em uma tabela é um UUID e esse tipo não deve ser alterado.</li></ul> |
 | Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto deve ser implantado de um ambiente para outro.</li><li>Quando um objeto tem um atributo de namespace (*schema* por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*, etc.  Observe que alguns namespaces são somente internos. [Saiba mais](schemas.md#reserved-namespaces).</li><li>Quando um objeto não tem namespace (*fluxo de trabalho* ou *delivery* por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais como espaço &quot; &quot;, semicuna &quot;:&quot; ou hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenados como &quot;abc_def&quot; e se substituiriam.</li></ul> |
@@ -156,7 +156,7 @@ A seguir estão os valores de retenção padrão para tabelas integradas. Esteja
 * **Rastreamento consolidado**: 1 ano
 * **Registros de entrega**: 6 meses
 * **Logs de rastreamento**: 1 ano
-* **Deliveries excluídos**: 1 semana
+* **Entregas excluídas**: 1 semana
 * **Importação de rejeitos**: 6 meses
 * **Perfis do visitante**: 1 mês
 * **Apresentações da oferta**: 1 ano

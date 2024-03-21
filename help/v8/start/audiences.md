@@ -5,7 +5,7 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 27%
@@ -16,7 +16,7 @@ ht-degree: 27%
 
 Perfis são contatos armazenados no banco de dados do Campaign.
 
-No Adobe Campaign, **recipients** são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.). Os dados do recipient armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
+No Adobe Campaign, **recipients** são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.). Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
 
 Saiba como importar, atualizar e gerenciar perfis e públicos [nesta seção](../audiences/gs-audiences.md).
 
@@ -24,13 +24,13 @@ Saiba como importar, atualizar e gerenciar perfis e públicos [nesta seção](..
 
 Uma lista é um conjunto estático de contatos que pode ser direcionado em ações de entrega ou atualizado durante uma importação ou outra ação de fluxo de trabalho. Por exemplo, uma população extraída do banco de dados por meio de uma consulta pode ser armazenada como uma lista.
 
-![](../assets/do-not-localize/glass.png) Saiba como criar e gerenciar listas no [esta página](../audiences/create-audiences.md).
+Saiba como criar e gerenciar listas no [esta página](../audiences/create-audiences.md).
 
 ## Filtrar o banco de dados{#filter-the-database}
 
 A configuração de filtro permite selecionar dados de uma lista **[!UICONTROL dynamically]**: quando os dados são modificados, os dados filtrados são atualizados. Você pode criar seus próprios filtros ou usar os filtros integrados para definir um público-alvo.
 
-![](../assets/do-not-localize/glass.png) Saiba como criar e gerenciar filtros no [esta página](../audiences/create-filters.md).
+Saiba como criar e gerenciar filtros no [esta página](../audiences/create-filters.md).
 
 ## Criar um público-alvo em um fluxo de trabalho
 
@@ -53,9 +53,9 @@ Você pode monitorar o número de perfis ativos em sua instância diretamente do
 
 ## Privacidade e consentimento{#privacy-and-consent}
 
-O Adobe Campaign é uma ferramenta poderosa para coletar e processar grandes volumes de dados, incluindo informações pessoais e dados confidenciais. O Adobe Campaign permite coletar dados, inclusive informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus recipients.
+O Adobe Campaign é uma ferramenta poderosa para coletar e processar grandes volumes de dados, incluindo informações pessoais e dados confidenciais. O Adobe Campaign permite coletar dados, inclusive informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus destinatários.
 
-![](../assets/do-not-localize/book.png) Saiba como gerenciar a privacidade e o consentimento no [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR){target="_blank"}.
+Saiba como gerenciar a privacidade e o consentimento no [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR){target="_blank"}.
 
 **Tópicos relacionados**
 

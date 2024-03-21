@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 47%
+source-wordcount: '837'
+ht-degree: 48%
 
 ---
 
@@ -86,7 +86,7 @@ Esses valores não são aplicados por padrão: eles precisam ser configurados.
 
 >[!NOTE]
 >
->O status de uma apresentação de oferta será alterado automaticamente para &quot;Presented&quot; se a oferta estiver vinculada a uma delivery com o status &quot;Sent&quot;.
+>O status de uma apresentação de oferta será alterado automaticamente para &quot;Presented&quot; se a oferta estiver vinculada a uma entrega com o status &quot;Sent&quot;.
 
 ### Status da oferta quando a proposta é criada {#configuring-the-status-when-the-proposition-is-created}
 
@@ -145,7 +145,7 @@ Assim que um visitante clica na oferta, e portanto na URL, o status **[!UICONTRO
 
 ## Visualização de oferta por espaço {#offer-preview-per-space}
 
-No **[!UICONTROL Preview]** , é possível exibir as ofertas para as quais o recipient está qualificado por meio de um método escolhido. No exemplo abaixo, o recipient está qualificado para três propostas de ofertas por e-mail.
+No **[!UICONTROL Preview]** , é possível exibir as ofertas para as quais o recipient está qualificado por meio de um método escolhido. No exemplo abaixo, o destinatário está qualificado para três propostas de ofertas por e-mail.
 
 ![](assets/offer_space_overview_002.png)
 
@@ -156,4 +156,4 @@ Se um recipient não estiver qualificado para ofertas, isso será mostrado na vi
 
 A visualização pode ignorar contextos quando eles são restritos a um espaço. Esse é o caso quando o schema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada.
 
-![](../assets/do-not-localize/book.png)  Para obter mais informações, consulte esta amostra no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.
+Para obter mais informações, consulte esta amostra no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.

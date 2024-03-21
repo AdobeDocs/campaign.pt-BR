@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: f6ccec05d63c397d0a286c18f4114eb414156d45
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -36,9 +36,9 @@ O Campaign v8 pode se conectar com as seguintes soluções de Adobe. Navegue pel
 
 Você também pode combinar seus **públicos** e **ativos** em soluções Experience Cloud com recursos de compartilhamento de ativos e de público-alvo.
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre **Compartilhamento de público** entre soluções do Campaign e do Experience Cloud no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
+Saiba mais sobre **Compartilhamento de público** entre soluções do Campaign e do Experience Cloud no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/book.png) Saiba mais sobre **Compartilhamento de ativos** entre soluções do Campaign e do Experience Cloud no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
+Saiba mais sobre **Compartilhamento de ativos** entre soluções do Campaign e do Experience Cloud no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
 
 ## Integrar ao seu Conector CRM{#gs-crm-connectors}
 
@@ -53,7 +53,7 @@ Saiba como integrar o Campaign com o Microsoft Dynamics 365 e Salesforce.com em 
 
 Use o conector FDA (Federated Data Access) para conectar o Campaign a um ou mais **bancos de dados externos** e processar as informações armazenadas neles sem afetar os dados do banco de dados da nuvem do Campaign.
 
-![](../assets/do-not-localize/glass.png) Saiba mais em [esta página](fda.md)
+Saiba mais [nesta página](fda.md)
 
 ## Trabalhar com redes sociais{#gs-social}
 
