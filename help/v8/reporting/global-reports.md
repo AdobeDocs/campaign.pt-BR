@@ -4,10 +4,10 @@ description: Saiba como acessar e usar relatórios globais
 feature: Reporting, Monitoring
 role: User, Data Engineer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 96%
+source-wordcount: '1750'
+ht-degree: 95%
 
 ---
 
@@ -23,9 +23,9 @@ Para exibir relatórios, clique em seus nomes. Os seguintes relatórios estão d
 
 >[!NOTE]
 >
->Esta seção mostra apenas os relatórios vinculados aos deliveries.
+>Esta seção mostra apenas os relatórios vinculados a entregas.
 
-* **[!UICONTROL Delivery throughput]**: consulte [Taxa de transferência de delivery](#delivery-throughput).
+* **[!UICONTROL Delivery throughput]**: consulte [Taxa de transferência de entrega](#delivery-throughput).
 * **[!UICONTROL Browsers]** : consulte [Navegadores](#browsers).
 * **[!UICONTROL Sharing to social networks]** : consulte [Compartilhamento em redes sociais](#sharing-to-social-networks).
 * **[!UICONTROL Statistics on sharing activities]** : consulte [Estatísticas de atividades de compartilhamento](#statistics-on-sharing-activities).
@@ -35,13 +35,13 @@ Para exibir relatórios, clique em seus nomes. Os seguintes relatórios estão d
 * **[!UICONTROL Non-deliverables and bounces]** : consulte [Não entregues e devoluções](#non-deliverables-and-bounces).
 * **[!UICONTROL User activities]** : consulte [Atividades do usuário](#user-activities).
 * **[!UICONTROL Subscription tracking]** : consulte [Rastreamento de subscrição](#subscription-tracking).
-* **[!UICONTROL Delivery summary]** : consulte [Resumo do delivery](delivery-reports.md#delivery-summary).
-* **[!UICONTROL Delivery statistics]** : consulte [Estatísticas de delivery](#delivery-statistics).
+* **[!UICONTROL Delivery summary]** : consulte [Resumo da entrega](delivery-reports.md#delivery-summary).
+* **[!UICONTROL Delivery statistics]** : consulte [Estatísticas de entrega](#delivery-statistics).
 * **[!UICONTROL Breakdown of opens]** : consulte [Detalhamento das aberturas](#breakdown-of-opens).
 
-## Taxa de transferência de delivery {#delivery-throughput}
+## Taxa de transferência de entrega {#delivery-throughput}
 
-Este relatório contém informações sobre a taxa de transferência de delivery da plataforma inteira por um determinado período. Para medir a velocidade em que as mensagens são entregues, os critérios são o número de mensagens enviadas por hora e o tamanho das mensagens (em bits por segundo). No exemplo abaixo, o primeiro gráfico mostra as entregas bem-sucedidas em azul e o número de deliveires incorretos em laranja.
+Este relatório contém informações sobre a taxa de transferência de entrega da plataforma inteira por um determinado período. Para medir a velocidade em que as mensagens são entregues, os critérios são o número de mensagens enviadas por hora e o tamanho das mensagens (em bits por segundo). No exemplo abaixo, o primeiro gráfico mostra as entregas bem-sucedidas em azul e o número de deliveires incorretos em laranja.
 
 ![](assets/report-toolbar.png)
 
@@ -49,9 +49,9 @@ Você pode configurar os valores exibidos alterando a escala de tempo: visualiza
 
 >[!NOTE]
 >
->Você também pode monitorar o número de deliveries enviados por hora usando o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=pt-BR).
+>Você também pode monitorar o número de deliveries enviados por hora usando o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=pt-BR){target="_blank"}.
 >
->O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
+>O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas em [esta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel){target="_blank"}.
 >
 
 ## Atividades do usuário {#user-activities}
@@ -61,7 +61,7 @@ Este relatório mostra o detalhamento de aberturas, cliques e transações por m
 As seguintes opções estão disponíveis:
 
 * **[!UICONTROL Opens]** : Número total de mensagens abertas. Os emails no formato de texto não são considerados. [Saiba mais](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Clicks]** : Número total de cliques nos links nos deliveries. Cliques em links de unsubscription e mirror pages não são considerados.
+* **[!UICONTROL Clicks]** : Número total de cliques nos links nas entregas. Cliques em links de unsubscription e mirror pages não são considerados.
 <!--
 * **[!UICONTROL Transactions]** : Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -70,7 +70,7 @@ As seguintes opções estão disponíveis:
 
 Este relatório mostra o detalhamento de não entregues, bem como uma análise de devoluções por domínio de Internet.
 
-**[!UICONTROL Number of messages processed]** representa o número total de mensagens processadas pelo servidor de delivery. Esse valor é menor do que o número de mensagens a serem entregues quando alguns deliveries tiverem sido interrompidos ou pausados (antes de serem processados pelo servidor).
+**[!UICONTROL Number of messages processed]** representa o número total de mensagens processadas pelo servidor de entrega. Esse valor é menor do que o número de mensagens a serem entregues quando alguns deliveries tiverem sido interrompidos ou pausados (antes de serem processados pelo servidor).
 
 **[!UICONTROL Breakdown of errors by type]**
 
@@ -88,13 +88,13 @@ Para cada tipo de erro, temos:
 
 Os seguintes indicadores são usados:
 
-* **[!UICONTROL User unknown]** : Tipo de erro gerado durante o delivery para indicar que o endereço de email é inválido.
-* **[!UICONTROL Invalid domain]** : Tipo de erro gerado ao enviar um delivery para indicar que o domínio do endereço de email está errado ou não existe.
-* **[!UICONTROL Inbox full]** : Tipo de erro gerado após cinco tentativas de delivery para indicar que a caixa de entrada dos recipients contém muitas mensagens.
-* **[!UICONTROL Account disabled]** : Tipo de erro gerado ao enviar um delivery para indicar que o endereço não existe mais.
+* **[!UICONTROL User unknown]** : Tipo de erro gerado durante a entrega para indicar que o endereço de email é inválido.
+* **[!UICONTROL Invalid domain]** : Tipo de erro gerado ao enviar uma entrega para indicar que o domínio do endereço de email está errado ou não existe.
+* **[!UICONTROL Inbox full]** : Tipo de erro gerado após cinco tentativas de entrega para indicar que a caixa de entrada dos destinatários contém muitas mensagens.
+* **[!UICONTROL Account disabled]** : Tipo de erro gerado ao enviar uma entrega para indicar que o endereço não existe mais.
 * **[!UICONTROL Rejected]** : Tipo de erro gerado quando um endereço é rejeitado pelo IAP (Provedor de Acesso à Internet), por exemplo, ao seguir uma regra de segurança da aplicação (software antispam).
 * **[!UICONTROL Unreachable]** : Tipo de erro que ocorre na string de distribuição de mensagens: incidente na retransmissão SMTP, domínio temporariamente inacessível, etc
-* **[!UICONTROL Not connected]** : Tipo de erro para indicar que o celular do recipient está desligado ou sem rede no momento do envio.
+* **[!UICONTROL Not connected]** : Tipo de erro para indicar que o celular do destinatário está desligado ou sem rede no momento do envio.
 
   >[!NOTE]
   >
@@ -122,11 +122,11 @@ Você pode abrir cada linha da tabela de valores clicando no símbolo [[+]]. Par
 
 ## Navegadores {#browsers}
 
-Este relatório mostra o detalhamento dos navegadores da Internet usados pelos recipients do delivery para o período relacionado.
+Este relatório mostra o detalhamento dos navegadores da Internet usados pelos destinatários da entrega para o período relacionado.
 
 >[!NOTE]
 >
->Os valores mostrados nesse relatório são estimativas: apenas recipients que clicaram em um delivery serão considerados.
+>Os valores mostrados nesse relatório são estimativas: apenas destinatários que clicaram em uma entrega serão considerados.
 
 **Estatísticas globais**
 
@@ -136,8 +136,8 @@ As estatísticas globais no uso do navegador são apresentadas na forma de uma t
 
 Os seguintes indicadores são usados:
 
-* **[!UICONTROL Visitors]** : número total de recipients alvos (por navegador de Internet) e que clicaram em um delivery pelo menos uma vez.
-* **[!UICONTROL Pages viewed]** : número total de cliques nos links em um delivery (por navegador de Internet) para todos os deliveries.
+* **[!UICONTROL Visitors]** : número total de destinatários alvos (por navegador de Internet) e que clicaram em uma entrega pelo menos uma vez.
+* **[!UICONTROL Pages viewed]** : número total de cliques nos links em uma entrega (por navegador de Internet) para todas as entregas.
 * **[!UICONTROL Usage rate]** : essa taxa representa o detalhamento dos visitantes (por navegador de Internet) em relação ao número total de visitantes.
 
 **Estatísticas por navegador**
@@ -212,11 +212,11 @@ The following indicators are used:
 
 ## Sistemas operacionais {#operating-systems}
 
-Este relatório exibe o detalhamento dos sistemas operacionais usados pelos recipients de delivery do período relacionado.
+Este relatório exibe o detalhamento dos sistemas operacionais usados pelos destinatários de entrega do período relacionado.
 
 >[!NOTE]
 >
->Os valores mostrados nesse relatório são estimativas: apenas recipients que clicaram em um delivery serão considerados.
+>Os valores mostrados nesse relatório são estimativas: apenas destinatários que clicaram em uma entrega serão considerados.
 
 **Estatísticas globais**
 
@@ -226,8 +226,8 @@ As estatísticas de uso global dos sistemas operacionais são apresentadas no fo
 
 Os seguintes indicadores são usados:
 
-* **[!UICONTROL Visitors]** : média diária do número total de recipients alvos (por sistema operacional) que clicaram em um delivery pelo menos uma vez.
-* **[!UICONTROL Pages viewed]** : média diária do número total de cliques nos links de delivery (por sistema operacional) para todos os deliveries.
+* **[!UICONTROL Visitors]** : média diária do número total de destinatários alvos (por sistema operacional) que clicaram em uma entrega pelo menos uma vez.
+* **[!UICONTROL Pages viewed]** : média diária do número total de cliques nos links de entrega (por sistema operacional) para todas as entregas.
 * **[!UICONTROL Rate of use]** : essa taxa representa o detalhamento dos visitantes (por sistema operacional) em relação ao número total de visitantes.
 
 **Estatísticas por sistema operacional**
@@ -281,7 +281,7 @@ Este relatório mostra o detalhamento por domínio de Internet, de todas as mens
 
 Os seguintes indicadores são usados:
 
-* **[!UICONTROL Emails processed]**: número total de mensagens processadas pelo servidor de delivery.
+* **[!UICONTROL Emails processed]**: número total de mensagens processadas pelo servidor de entrega.
 * **[!UICONTROL Delivered]**: porcentagem do número de mensagens processadas com êxito em comparação ao número total de mensagens processadas.
 * **[!UICONTROL Hard bounces]**: porcentagem do número de devoluções permanentes em comparação ao número total de mensagens processadas.
 * **[!UICONTROL Soft bounces]**: porcentagem do número de devoluções temporárias em comparação ao número total de mensagens processadas.
@@ -290,8 +290,8 @@ Os seguintes indicadores são usados:
   >
   >Para obter mais informações sobre devoluções permanentes e temporárias, consulte [esta página](../send/quarantines.md).
 
-* **[!UICONTROL Opens]**: porcentagem do número de recipients alvos que abriram uma mensagem pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
-* **[!UICONTROL Clicks]**: porcentagem do número de pessoas que clicaram em um delivery pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
+* **[!UICONTROL Opens]**: porcentagem do número de destinatários alvos que abriram uma mensagem pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
+* **[!UICONTROL Clicks]**: porcentagem do número de pessoas que clicaram em uma entrega pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
 * **[!UICONTROL Unsubscription]**: porcentagem do número de cliques em um link de cancelamento de subscrição em comparação ao número de mensagens processadas com êxito.
 
 ## Detalhamento de aberturas {#breakdown-of-opens}

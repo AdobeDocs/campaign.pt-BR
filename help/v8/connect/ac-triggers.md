@@ -5,10 +5,10 @@ feature: Triggers
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: a2ab85c3-ef5f-49fd-a6c4-2fd397c8d21b
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 37%
+source-wordcount: '120'
+ht-degree: 24%
 
 ---
 
@@ -22,5 +22,5 @@ Você pode usar Experience Cloud Triggers para conectar dados entre o Adobe Camp
 
 Saiba mais sobre o Adobe Campaign e o Experience Cloud Triggers em [esta página](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html){target="_blank"}.
 
-![](../assets/do-not-localize/speech.png) Saiba como [criar um acionador da Experience Cloud](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=pt-BR) e identificar, definir e monitorar comportamentos críticos de consumidores.
+Saiba como [criar um acionador Experience Cloud](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=pt-BR){target="_blank"} e identificar, definir e monitorar comportamentos de consumidores críticos.
 

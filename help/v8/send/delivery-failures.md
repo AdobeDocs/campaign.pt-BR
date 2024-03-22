@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '3005'
-ht-degree: 65%
+source-wordcount: '2990'
+ht-degree: 64%
 
 ---
 
@@ -22,7 +22,7 @@ Se uma mensagem não puder ser enviada a um perfil, o servidor remoto enviará a
 
 Depois que uma mensagem for enviada, você poderá visualizar o status do delivery para cada perfil, o tipo de falha e o motivo associados nos logs do delivery.
 
-Quando um endereço de email está em quarentena ou se um perfil está na inclui na lista de bloqueios, o recipient é excluído na etapa de preparação do delivery. As mensagens excluídas são listadas no painel de delivery.
+Quando um endereço de email está em quarentena ou se um perfil está na inclui na lista de bloqueios, o recipient é excluído na etapa de preparação do delivery. As mensagens excluídas são listadas no painel de entrega.
 
 ## Por que a entrega da mensagem falhou? {#delivery-failure-reasons}
 
@@ -31,7 +31,7 @@ Há dois tipos de erros quando uma mensagem falha. Cada tipo de falha de deliver
 * **Devoluções permanentes**
 As rejeições permanentes são falhas permanentes geradas depois que um ISP determina uma tentativa de envio por email para um endereço de assinante como não entregue. No Adobe Campaign, as rejeições permanentes categorizadas como não entregues são adicionadas à lista de quarentena, o que significa que elas não terão nova tentativa. Há alguns casos em que uma rejeição permanente é ignorada se a causa da falha for desconhecida.
 
-  Estes são alguns exemplos comuns de rejeições permanentes: Endereço não existe, Conta desativada, Sintaxe incorreta, Domínio inválido
+  Estes são alguns exemplos comuns de rejeições permanentes: Endereço não existe, Conta desabilitada, Sintaxe incorreta, Domínio inválido
 
 * **Rejeições temporárias**
 As rejeições temporárias são falhas temporárias que os ISPs geram quando têm dificuldade em entregar emails. As falhas leves [tentar novamente](#retries) várias vezes (com variação dependendo do uso de configurações de entrega personalizadas ou predefinidas) para tentar um delivery bem-sucedido. Os endereços que continuamente emitem rejeição não serão adicionados à quarentena até que o número máximo de tentativas tenha sido atingido (o que novamente varia de acordo com as configurações).
@@ -40,7 +40,7 @@ As rejeições temporárias são falhas temporárias que os ISPs geram quando t�
 
 A variável  **Ignorado** O tipo de erro é conhecido como temporário, como &quot;Ausente&quot;, ou um erro técnico, por exemplo, se o tipo de remetente for &quot;postmaster&quot;.
 
-O loop de feedback funciona como emails de devolução: quando um usuário qualifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Incluir na lista de bloqueios Os endereços desses usuários são classificados mesmo que não tenham clicado no link de cancelamento de subscrição. Os endereços são adicionados ao (**NmsAddress**) e não à tabela de quarentena (**NmsRecipient**) tabela de recipients com a variável **[!UICONTROL Denylisted]** status. Saiba mais sobre o mecanismo de loop de comentários na [Guia de práticas recomendadas de capacidade de delivery do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops).
+O loop de feedback funciona como emails de devolução: quando um usuário qualifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Incluir na lista de bloqueios Os endereços desses usuários são classificados mesmo que não tenham clicado no link de cancelamento de subscrição. Os endereços são adicionados ao (**NmsAddress**) e não à tabela de quarentena (**NmsRecipient**) tabela de recipients com a variável **[!UICONTROL Denylisted]** status. Saiba mais sobre o mecanismo de loop de comentários na [Guia de práticas recomendadas de capacidade de delivery do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops){target="_blank"}.
 
 ## Erros síncronos e assíncronos {#synchronous-and-asynchronous-errors}
 
@@ -50,7 +50,7 @@ Esses tipos de erros são gerenciados da seguinte maneira:
 
 * **Erro síncrono**: o servidor remoto contatado pelo servidor de entrega do Adobe Campaign retorna imediatamente uma mensagem de erro. O delivery não tem permissão para ser enviado ao servidor do perfil. O Mail Transfer Agent (MTA) determina o tipo de rejeição e qualifica o erro e envia essas informações para o Campaign para determinar se os endereços de email devem ser colocados em quarentena. Consulte [Qualificação de email de devolução](#bounce-mail-qualification).
 
-* **Erro assíncrono**: um email de devolução ou um Relatório de Status é reenviado posteriormente pelo servidor receptor. Esse erro é qualificado com um rótulo relacionado ao erro. Podem ocorrer erros assíncronos até uma semana depois do envio.
+* **Erro assíncrono**: um email de devolução ou um Relatório de Status é reenviado posteriormente pelo servidor receptor. Esse erro é qualificado com um rótulo relacionado ao erro. Podem ocorrer erros assíncronos até uma semana depois da entrega.
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
    <td> Conta desabilitada </td> 
    <td> Suave/Grave </td> 
    <td> 4 </td> 
-   <td> A conta vinculada ao endereço não está mais ativa. Quando o Fornecedor de Acesso à Internet (IAP) detecta um longo período de inatividade, ele pode fechar a conta do usuário. Os deliveries ao endereço do usuário serão impossíveis. Se a conta estiver temporariamente desabilitada devido a seis meses de inatividade e ainda puder ser ativada, o status Com erros será atribuído e a conta terá nova tentativa até que o contador de erro atinja 5. Se o erro indicar que a conta está desativada permanentemente, ela será enviada diretamente à quarentena.<br /> </td> 
+   <td> A conta vinculada ao endereço não está mais ativa. Quando o Fornecedor de Acesso à Internet (IAP) detecta um longo período de inatividade, ele pode fechar a conta do usuário. As entregas ao endereço do usuário serão impossíveis. Se a conta estiver temporariamente desabilitada devido a seis meses de inatividade e ainda puder ser ativada, o status Com erros será atribuído e a conta terá nova tentativa até que o contador de erro atinja 5. Se o erro indicar que a conta está desativada permanentemente, ela será enviada diretamente à quarentena.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço em quarentena </td> 
@@ -142,7 +142,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
    <td> Endereço não especificado </td> 
    <td> Grave </td> 
    <td> 7 </td> 
-   <td> Nenhum endereço é fornecido para o recipient.<br /> </td> 
+   <td> Nenhum endereço é fornecido para o destinatário.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço Bad-quality </td> 
@@ -160,13 +160,13 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
    <td> Endereço de controle </td> 
    <td> Ignored </td> 
    <td> 127 </td> 
-   <td> O endereço do recipient faz parte do grupo de controle.<br /> </td> 
+   <td> O endereço do destinatário faz parte do grupo de controle.<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplo </td> 
    <td> Ignored </td> 
    <td> 10 </td> 
-   <td> O endereço do recipient já estava nesse delivery.<br /> </td> 
+   <td> O endereço do destinatário já estava nessa entrega.<br /> </td> 
   </tr> 
   <tr> 
    <td> Erro ignorado </td> 
@@ -178,13 +178,13 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
    <td> Excluído após arbitragem </td> 
    <td> Ignored </td> 
    <td> 12 </td> 
-   <td> O recipient foi excluído por uma regra de tipologia de 'arbitragem' de campanha.<br /> </td> 
+   <td> O destinatário foi excluído por uma regra de tipologia de 'arbitragem' de campanha.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído por uma regra SQL </td> 
    <td> Ignored </td> 
    <td> 11 </td> 
-   <td> O recipient foi excluído por uma regra de tipologia de campanha do tipo "SQL".<br /> </td> 
+   <td> O destinatário foi excluído por uma regra de tipologia de campanha do tipo "SQL".<br /> </td> 
   </tr> 
   <tr> 
    <td> Domínio inválido </td> 
@@ -202,7 +202,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
    <td> Não conectado </td> 
    <td> Ignored </td> 
    <td> 6 </td> 
-   <td> O telefone celular do recipient está desligado ou não conectado à rede quando a mensagem é enviada.<br /> </td> 
+   <td> O telefone celular do destinatário está desligado ou não conectado à rede quando a mensagem é enviada.<br /> </td> 
   </tr> 
   <tr> 
    <td> Não definido </td> 
@@ -214,7 +214,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
    <td> Não se qualifica para as ofertas </td> 
    <td> Ignored </td> 
    <td> 16 </td> 
-   <td> O recipient não foi qualificado para as ofertas no delivery.<br /> </td> 
+   <td> O destinatário não foi qualificado para as ofertas na entrega.<br /> </td> 
   </tr> 
   <tr> 
    <td> Recusado </td> 
@@ -226,7 +226,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
    <td> Target limitado em tamanho </td> 
    <td> Ignored </td> 
    <td> 17 </td> 
-   <td> O tamanho máximo de delivery foi atingido para o recipient.<br /> </td> 
+   <td> O tamanho máximo de entrega foi atingido para o destinatário.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço não qualificado </td> 
@@ -238,13 +238,13 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
    <td> Inacessível </td> 
    <td> Suave/Grave </td> 
    <td> 3 </td> 
-   <td> Ocorreu um erro na cadeia de delivery de mensagens. Pode ser um incidente na retransmissão SMTP, um domínio que está temporariamente inacessível, etc. De acordo com o erro, haverá nova tentativa ao endereço até que o contador de erros atinja 5, ou ele será enviado diretamente para a quarentena.<br /> </td> 
+   <td> Ocorreu um erro na cadeia de entrega de mensagens. Pode ser um incidente na retransmissão SMTP, um domínio que está temporariamente inacessível, etc. De acordo com o erro, haverá nova tentativa ao endereço até que o contador de erros atinja 5, ou ele será enviado diretamente para a quarentena.<br /> </td> 
   </tr> 
   <tr> 
    <td> Usuário desconhecido </td> 
    <td> Grave </td> 
    <td> 1 </td> 
-   <td> O endereço não existe. Não haverá mais tentativas de delivery para este perfil.<br /> </td> 
+   <td> O endereço não existe. Não haverá mais tentativas de entrega para este perfil.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -257,7 +257,7 @@ Para o canal de aplicativo móvel, os possíveis motivos para uma falha de deliv
 
 ### Quarentena do iOS {#ios-quarantine}
 
-O protocolo HTTP/V2 permite um feedback e status direto para cada delivery por push. Se o conector do protocolo HTTP/V2 for usado, o serviço de feedback não será mais chamado pelo workflow **[!UICONTROL mobileAppOptOutMgt]**. Um token é considerado não registrado quando um aplicativo móvel é desinstalado ou reinstalado.
+O protocolo HTTP/V2 permite um feedback e status direto para cada entrega por push. Se o conector do protocolo HTTP/V2 for usado, o serviço de feedback não será mais chamado pelo workflow **[!UICONTROL mobileAppOptOutMgt]**. Um token é considerado não registrado quando um aplicativo móvel é desinstalado ou reinstalado.
 
 Em sincronia, se o APNs retornar um status &quot;não registrado&quot; para uma mensagem, o token do público alvo será colocado imediatamente em quarentena.
 
@@ -312,7 +312,7 @@ Em sincronia, se o APNs retornar um status &quot;não registrado&quot; para uma 
    <td> Não<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problema de certificado (senha, corrupção, etc.) e teste de conexão para problema APNs<br /> </td> 
+   <td> Problema de certificado (senha, corrupção etc.) e conexão de teste com problema de APNs<br /> </td> 
    <td> Falha<br /> </td> 
    <td> Várias mensagens de erro de acordo com o erro<br /> </td> 
    <td> Suave<br /> </td> 
@@ -356,16 +356,16 @@ A cada notificação, o Adobe Campaign recebe os erros síncronos diretamente do
 * Cota de dispositivo excedida: sem tentativa, erro leve, o motivo da falha é **[!UICONTROL Refused]**.
 * Token inválido ou não registrado, erro inesperado, problema da conta do remetente: sem tentativa, erro grave, o motivo de falha é **[!UICONTROL Refused]**.
 
-O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para atualizar a tabela **AppSubscriptionRcp**. Para os tokens declarados não registrados ou não mais válidos, o campo **Desativado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente dos deliveries futuros.
+O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para atualizar a tabela **AppSubscriptionRcp**. Para os tokens declarados não registrados ou inválidos, o campo **Desabilitado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente das entregas futuras.
 
-Durante a análise de delivery, todos os dispositivos excluídos do target são automaticamente adicionados à tabela **excludeLogAppSubRcp** .
+Durante a análise de entrega, todos os dispositivos excluídos do target são automaticamente adicionados à tabela **excludeLogAppSubRcp** .
 
 >[!NOTE]
 >
 >Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
 >
->* Problema de conexão no início do delivery: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
->* Perda de conexão durante um delivery: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
+>* Problema de conexão no início da entrega: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
+>* Perda de conexão durante uma entrega: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
 >* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
 >
 >O Adobe Campaign contata o servidor Baidu a cada 10 minutos para recuperar o status da mensagem enviada e atualiza os broadlogs. Se uma mensagem for declarada como enviada, o status da mensagem nos broadlogs será definido como **[!UICONTROL Received]**. Se o Baidu declarar um erro, o status será definido como **[!UICONTROL Failed]**.
@@ -648,7 +648,7 @@ Antes de um novo tipo de erro ser qualificado, o motivo da falha é sempre defin
 >
 >Os tipos de falha e os motivos para falha são os mesmos dos emails.
 >
->Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de delivery.
+>Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de entrega.
 
 Exemplo de uma mensagem gerada:
 
@@ -657,18 +657,18 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Todas as mensagens de erro começam com **SR** para distinguir códigos de erro de SMS de códigos de erro de email.
-* A segunda parte (**Generic** neste exemplo) da mensagem de erro refere-se ao nome da implementação SMSC, como definido no campo **[!UICONTROL SMSC implementation name]** da conta externa do SMS.
+* A segunda parte (**Genérico** neste exemplo) da mensagem de erro refere-se ao nome da implementação SMSC, como definido na variável **[!UICONTROL SMSC implementation name]** da conta externa do SMS.
 
   Como o mesmo código de erro pode ter um significado diferente para cada provedor, esse campo permite que você saiba qual provedor gerou o código de erro. Você pode então encontrar o erro na documentação do provedor relevante.
 
 * A terceira parte (**DELIVRD** neste exemplo) da mensagem de erro corresponde ao código de status recuperado do SR usando a extração de status regex definido na conta externa do SMS.
 
-  Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa.
+  Esse regex é especificado na variável **[!UICONTROL SMSC specificities]** da conta externa.
 Por padrão, o regex extrai o campo **stat:** conforme definido pela seção **Apêndice B** da **especificação 3.4 SMPP**.
 
 * A quarta parte (**000** neste exemplo) da mensagem de erro corresponde ao código de erro extraído do SR usando a extração de código de erro regex definida na conta externa do SMS.
 
-  Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa.
+  Esse regex é especificado na variável **[!UICONTROL SMSC specificities]** da conta externa.
 
   Por padrão, o regex extrai o campo **err:** conforme definido pela seção **Apêndice B** da **especificação 3.4 SMPP**.
 

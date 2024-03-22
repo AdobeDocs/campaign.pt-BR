@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 41%
+source-wordcount: '600'
+ht-degree: 26%
 
 ---
 
@@ -18,7 +18,10 @@ As mensagens transacionais (Centro de mensagens) são um módulo do Campaign cri
 
 Entender a arquitetura de mensagens transacionais no [esta página](../architecture/architecture.md#transac-msg-archi).
 
-![](../assets/do-not-localize/speech.png) Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para instalar e configurar as mensagens transacionais do Campaign em seu ambiente.
+
+>[!NOTE]
+>
+>Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para instalar e configurar as mensagens transacionais do Campaign em seu ambiente.
 
 ## Definir permissões {#mc-permissions}
 
@@ -46,12 +49,12 @@ Além disso, o evento deve conter os seguintes elementos:
 
 * A ID do dispositivo móvel: **registrationId** para Android e **deviceToken** para iOS. Essa ID representa o &quot;endereço&quot; para o qual a notificação é enviada.
 * O link para o aplicativo móvel ou a chave de integração (**uuid**) que permite recuperar informações de conexão específicas do aplicativo.
-* O canal para onde a notificação é enviada (**wishedChannel**): 41 para iOS e 42 para Android.
+* O canal para o qual a notificação será enviada (**wishedChannel**): 41 para iOS e 42 para Android.
 * Quaisquer outros dados de personalização.
 
 Veja abaixo um exemplo de uma configuração de evento para enviar notificações transacionais por push:
 
-```
+```xml
 <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
      <urn:PushEvent>
@@ -85,7 +88,7 @@ Use as setas conforme apropriado para alterar as configurações de limpeza do *
 
 Você deve garantir que os workflows técnicos nas instâncias de controle e de execução tenham sido iniciados antes de implantar qualquer template de mensagem transacional.
 
-Os workflows de arquivamento podem ser acessados na pasta **Administration > Production > Message Center.**
+Esses workflows podem ser acessados no **Administração > Produção > Centro de Mensagens** pasta.
 
 ### Workflows da instância de controle {#control-instance-workflows}
 
@@ -102,8 +105,8 @@ Na(s) instância(s) de execução, você deve iniciar os seguintes workflows té
   Os possíveis status do evento são:
 
    * **[!UICONTROL Pending]**: o evento está na fila. Nenhum template de mensagem foi atribuído a ele.
-   * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pela entrega.
-   * **[!UICONTROL Sent]**: esse status é copiado dos logs da entrega. Significa que a entrega foi enviada.
-   * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs da entrega. Ele significa que a entrega foi ignorada.
-   * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs da entrega. Ele significa que a entrega falhou.
+   * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pelo delivery.
+   * **[!UICONTROL Sent]**: esse status é copiado dos logs do delivery. Significa que a entrega foi enviada.
+   * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs do delivery. Ele significa que a entrega foi ignorada.
+   * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs do delivery. Ele significa que a entrega falhou.
    * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um template de mensagem. O evento não será processado.

@@ -3,10 +3,10 @@ product: campaign
 title: Nota técnica - Adobe Campaign - Atualização de segurança da versão Apache
 description: Adobe Campaign - Atualização de segurança da versão do Apache
 exl-id: 68e42fe4-7fb6-4b53-9f39-e77374e3753d
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 4%
+source-wordcount: '466'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ A equipe do Adobe Campaign conduzirá a atividade de atualização de segurança
 
 Espera-se que essa atualização seja executada automaticamente fora do horário comercial normal para que você continue usando o serviço do Campaign sem interrupções.
 
-Suas instâncias de não produção serão atualizadas por nossas equipes primeiro antes de atualizarmos suas instâncias de produção. Como esse é um processo de atualização automático de propriedade do Adobe, nenhuma ação é necessária da sua parte. No entanto, se você tiver algum problema, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Suas instâncias de não produção serão atualizadas por nossas equipes primeiro antes de atualizarmos suas instâncias de produção. Como esse é um processo de atualização automático de propriedade do Adobe, nenhuma ação é necessária da sua parte. No entanto, se você tiver algum problema, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 >[!NOTE]
@@ -51,7 +51,7 @@ Suas instâncias de não produção serão atualizadas por nossas equipes primei
 
 * **Quais validações precisam ser executadas pelos clientes?**
 
-  Nenhum teste específico é necessário para esta atualização de segurança. Caso algum problema seja observado, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+  Nenhum teste específico é necessário para esta atualização de segurança. Caso algum problema seja observado, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **Posso solicitar uma alteração na Data/Hora para o slot de atualização de segurança programado?**
@@ -59,4 +59,4 @@ Suas instâncias de não produção serão atualizadas por nossas equipes primei
   Como essa é uma correção de segurança, recomendamos que você se adapte à programação existente.
 
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Para qualquer outra pergunta, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

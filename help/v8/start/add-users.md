@@ -5,10 +5,10 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 13%
+source-wordcount: '302'
+ht-degree: 10%
 
 ---
 
@@ -26,7 +26,7 @@ Os direitos nomeados concedem permissões a:
 
 * Executar operações Por exemplo, a variável **Analisar** no Editor de entrega é ativado para membros da **Operador de Entrega** grupo que tem o **Preparar entrega** Nomeado à direita
 
-* O acesso a pastas Associação de grupos de operadores pode conceder ou restringir direitos de acesso a pastas, alterando as configurações de segurança nas pastas. Saiba mais [nesta página](../start/folder-permissions.md). Por exemplo, pode afetar: **Acesso de gravação** para criar novas entidades (como deliveries, perfis etc.), **Acesso de leitura** para usar entidades, **Excluir acesso** para excluir entidades.
+* O acesso a pastas Associação de grupos de operadores pode conceder ou restringir direitos de acesso a pastas, alterando as configurações de segurança nas pastas. Saiba mais em [esta página](../start/folder-permissions.md). Por exemplo, pode afetar: **Acesso de gravação** para criar novas entidades (como deliveries, perfis etc.), **Acesso de leitura** para usar entidades, **Excluir acesso** para excluir entidades.
 
 ## Zonas de segurança
 
@@ -34,7 +34,9 @@ Cada operador precisa ser vinculado a uma zona para fazer logon em uma instânci
 
 Os operadores são vinculados a uma zona de segurança a partir de seu perfil no console, acessível no **[!UICONTROL Administration > Access management > Operators]** nó.
 
-![](../assets/do-not-localize/speech.png)  Como um usuário Cloud Service gerenciado, o Adobe define as zonas de segurança para você. Para obter mais informações, [Adobe de contato](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+>[!NOTE]
+>
+>Como um usuário Cloud Service gerenciado, o Adobe define as zonas de segurança para você. Para obter mais informações, [Adobe de contato](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html){target="_blank"}.
 
 **Saiba mais**
 

@@ -4,13 +4,13 @@ description: Saiba como ativar o email Cco no Adobe Campaign
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
+exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
 
 ---
-
 
 # Enviar uma cópia de suas mensagens para um endereço CCo {#bcc}
 
@@ -26,7 +26,9 @@ O próprio Adobe Campaign não gerencia arquivos arquivados. Os arquivos .eml co
 
 O destino do arquivamento é o endereço de email CCO de sua escolha, que permanecerá invisível para os recipients do delivery. Depois que o endereço de email de CCO for definido, você deverá ativar a opção dedicada no [template do delivery](create-templates.md) nível.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support){target="_blank"} para comunicar o endereço de email CCO que será usado para arquivamento.
+>[!NOTE]
+>
+>Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support){target="_blank"} para comunicar o endereço de email CCO que será usado para arquivamento.
 
 >[!CAUTION]
 >

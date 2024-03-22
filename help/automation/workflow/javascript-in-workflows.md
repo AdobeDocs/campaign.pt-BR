@@ -5,10 +5,10 @@ description: Estes exemplos mostram como é possível usar o código JavaScript 
 feature: Workflows
 role: Developer
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 100%
+source-wordcount: '1683'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Estes exemplos mostram como é possível usar o código JavaScript em um workflo
 * [Acionar um workflow usando um método SOAP estático](#trigger-example)
 * [Interagir com o banco de dados usando um método SOAP não estático](#interact-example)
 
-[Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR) sobre métodos SOAP estáticos e não estáticos.
+[Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR){target="_blank"} sobre métodos SOAP estáticos e não estáticos.
 
 Nesses exemplos, a extensão ECMAScript for XML (E4X) é usada. Com esta extensão, é possível combinar chamadas de JavaScript e primitivos de XML no mesmo script.
 
@@ -79,7 +79,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Atualizar um registro
 
-Use a operação `_update`. 
+Use o `_update` operação.
 
 Especifique essas informações como atributos XML:
 
@@ -99,7 +99,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Excluir um registro
 
-Use o método `DeleteCollection`. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=pt-BR).
+Use o método `DeleteCollection`. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=pt-BR){target="_blank"}.
 
 Especifique estas informações:
 
@@ -273,7 +273,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-O loop inclui uma variável de recipient local. Para cada recipient que é retornado na coleção de recipients, o email do recipient é impresso. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR) sobre a função `logInfo`.
+O loop inclui uma variável de destinatário local. Para cada destinatário que é retornado na coleção de destinatários, o email do destinatário é impresso. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR){target="_blank"} sobre o `logInfo` função.
 
 #### Resultados de uma operação `getIfExists` 
 
@@ -359,7 +359,7 @@ Este vídeo mostra como ler a partir do banco de dados:
 
 O acionamento do workflow funciona por meio do uso de eventos. É possível usar estes recursos para eventos:
 
-* Para publicar um evento, é possível usar o método estático `PostEvent`. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=pt-BR).
+* Para publicar um evento, é possível usar o método estático `PostEvent`. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=pt-BR){target="_blank"}.
 * Para receber um evento, é possível usar a atividade **[!UICONTROL External signal]**. [Saiba mais](external-signal.md).
 
 É possível acionar workflows de diferentes maneiras:
@@ -426,10 +426,10 @@ Siga estas etapas:
 
 1. Defina a consulta:
 
-   * Recupere uma entidade usando o método `create` no schema correspondente, como por exemplo, o schema `xtk:workflow`. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=pt-BR).
+   * Recupere uma entidade usando o método `create` no schema correspondente, como por exemplo, o schema `xtk:workflow`. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=pt-BR){target="_blank"}.
    * Use o método `queryDef` para emitir uma consulta SQL.
 
-1. Execute a consulta usando o método `ExecuteQuery`. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=pt-BR).
+1. Execute a consulta usando o método `ExecuteQuery`. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=pt-BR){target="_blank"}.
 
    Use o loop `for each` para recuperar os resultados.
 
@@ -488,7 +488,7 @@ for each (var w in res.workflow)
 
 #### Exemplo 2: excluir registros
 
-O nome, sobrenome, email e a ID de todos os recipients que se chamam Chris Smith são selecionados. Os resultados são classificados por email, em ordem crescente, e gravados no journal. A operação `delete` é usada para excluir os registros selecionados.
+O nome, sobrenome, email e a ID de todos os destinatários que se chamam Chris Smith são selecionados. Os resultados são classificados por email, em ordem crescente, e gravados no journal. A operação `delete` é usada para excluir os registros selecionados.
 
 ```javascript
 // Build the query, create a query object and hold the object in a variable
@@ -524,7 +524,7 @@ for each (var rec in res.recipient)
 
 #### Exemplo 3: selecionar registros e gravar no journal
 
-Neste exemplo, um método não estático é usado. O email e o ano de nascimento de todos os recipients cujas informações estão armazenadas na pasta **1234** e cujo nome de domínio de email começe com “adobe” são selecionados. Os resultados são classificados por data de nascimento, em ordem decrescente. O email dos recipients é gravado no journal.
+Neste exemplo, um método não estático é usado. O email e o ano de nascimento de todos os destinatários cujas informações estão armazenadas na pasta **1234** e cujo nome de domínio de email começe com “adobe” são selecionados. Os resultados são classificados por data de nascimento, em ordem decrescente. O email dos destinatários é gravado no journal.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -556,7 +556,7 @@ for each (var w in res.recipient)
 * A operação `update` 
 * A operação `insertOrUpdate`, com o argumento `_key` para identificar o registro a ser atualizado
 
-  Se não especificar a pasta **Recipients**, e houver uma correspondência, o registro será atualizado em qualquer subpasta. Caso contrário, o registro será criado na pasta raiz de **Recipients**.
+  Se não especificar a pasta **Destinatários**, e houver uma correspondência, o registro será atualizado em qualquer subpasta. Caso contrário, o registro será criado na pasta raiz de **Destinatários**.
 
 * A operação `delete` 
 
@@ -611,11 +611,11 @@ Este vídeo mostra um exemplo de uso de um método de API não estático em um w
 
 ### Documentação da API
 
-* [Exemplos de chamadas SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR)
+* [Exemplos de chamadas SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR){target="_blank"}
 * Métodos:
-   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=pt-BR)
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=pt-BR)
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=pt-BR)
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=pt-BR)
-   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=pt-BR)
-* [função logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR)
+   * [Criar](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=pt-BR){target="_blank"}
+   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=pt-BR){target="_blank"}
+   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=pt-BR){target="_blank"}
+   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=pt-BR){target="_blank"}
+   * [Gravar](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=pt-BR){target="_blank"}
+* [função logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR){target="_blank"}

@@ -5,7 +5,7 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1607'
 ht-degree: 33%
@@ -89,7 +89,7 @@ Os filtros predefinidos incorporados são:
   </tr> 
   <tr> 
  <td> Incluir endereço de email na lista de bloqueios<br /> </td> 
-    <td> Seleciona os recipients cujo endereço de email está na lista de bloqueios.<br/> </td>
+    <td> Seleciona os destinatários cujo endereço de email está na lista de bloqueios.<br/> </td>
   </tr> 
   <tr> 
    <td> Endereço de email na quarentena<br /> </td> 
@@ -327,10 +327,10 @@ Para executar recursos avançados de filtragem, use funções para definir o con
 
 Saiba como criar consultas avançadas nestes exemplos completos:
 
-* Saiba como segmentar em atributos de recipients simples no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
-* Saiba como filtrar por recipients não contatados durante os últimos 7 dias no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html).
-* Saiba como recuperar a lista de operadores que podem ser filtrados por Contas ativas no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html).
-* Saiba como criar um público-alvo de email de aniversário no  [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR).
+* Saiba como segmentar em atributos de recipients simples no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+* Saiba como filtrar por recipients não contatados durante os últimos 7 dias no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}.
+* Saiba como recuperar a lista de operadores que podem ser filtrados por Contas ativas no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
+* Saiba como criar um público-alvo de email de aniversário no  [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR){target="_blank"}.
 
 
 ### Parâmetros avançados para filtros predefinidos {#param-for-data-filters}

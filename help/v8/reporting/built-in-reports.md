@@ -5,7 +5,7 @@ feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 88%
@@ -25,7 +25,7 @@ Você pode acessar relatórios internos na página inicial do Campaign, no paine
 
 Uma lista dos principais relatórios está disponível na home page e permite acessar os dados de delivery rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Você também pode aprender a adicionar seus próprios relatórios à **[!UICONTROL Reports]** guia.
 
-Para obter mais informações sobre essas configurações personalizadas, consulte esta [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
+Para obter mais informações sobre essas configurações personalizadas, consulte esta [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=pt-BR){target="_blank"}.
 
 
 ## Acessar relatórios integrados {#access-ootb-reports}
@@ -85,7 +85,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Indicadores de rastreamento (deliveryFeedback)<br /> </td> 
-   <td> Resumo dos principais indicadores para rastrear o comportamento do recipient.<br /> </td> 
+   <td> Resumo dos principais indicadores para rastrear o comportamento do destinatário.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -95,7 +95,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Navegadores (browserStatistics)<br /> </td> 
-   <td> Estatísticas em navegadores usados por recipients que clicaram em mensagens.<br /> </td> 
+   <td> Estatísticas em navegadores usados por destinatários que clicaram em mensagens.<br /> </td> 
    <td> xtk:none<br /> </td> 
   </tr> 
   <tr> 
@@ -140,7 +140,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Sistemas operacionais (osStatistics)<br /> </td> 
-   <td> Estatísticas dos sistemas operacionais usados por recipients que clicaram em uma mensagem.<br /> </td> 
+   <td> Estatísticas dos sistemas operacionais usados por destinatários que clicaram em uma mensagem.<br /> </td> 
    <td> xtk:none<br /> </td> 
   </tr> 
   <tr> 

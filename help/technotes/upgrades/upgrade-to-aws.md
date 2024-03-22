@@ -2,7 +2,7 @@
 title: Atualização da infraestrutura de envio de email do Campaign
 description: Atualização da infraestrutura de envio de email do Campaign
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 4c41e5d1fef1dcb3279a26f6025338e41525e6b3
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 1%
@@ -62,4 +62,4 @@ As atualizações de ambientes de produção iniciaram em **Janeiro de 2024**.
 
   Não. Não é possível acomodar as modificações solicitadas à programação existente, pois isso provavelmente interromperá o evento de atualização atribuído para outro cliente.
 
-Para qualquer outra pergunta, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}..
+Para qualquer outra pergunta, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

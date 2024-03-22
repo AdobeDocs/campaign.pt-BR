@@ -5,10 +5,10 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 19%
+source-wordcount: '1037'
+ht-degree: 13%
 
 ---
 
@@ -35,7 +35,7 @@ Você pode acessar contas externas do Adobe Campaign **[!UICONTROL Explorer]**: 
 
 As contas técnicas a seguir são usadas pela Adobe Campaign para ativar e executar processos específicos.
 
-### Mensagens de rejeição {#bounce-mails-external-account}
+### Emails rejeitados {#bounce-mails-external-account}
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para ativar e execu
 
 A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
-Saiba mais sobre emails de entrada no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html).
+Saiba mais sobre emails de entrada no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -54,7 +54,7 @@ Para configurar a conta externa do **[!UICONTROL Bounce mails (defaultPopAccount
 
 * **[!UICONTROL Port]** - Número da porta de conexão POP3. A porta padrão é 110.
 
-* **[!UICONTROL Account]** -  Nome do usuário.
+* **[!UICONTROL Account]** - Nome do usuário.
 
 * **[!UICONTROL Password]** - Senha da conta do usuário.
 
@@ -68,7 +68,7 @@ Para configurar a conta externa do **[!UICONTROL Bounce mails (defaultPopAccount
 
 >[!CAUTION]
 >
->Antes de configurar sua conta externa POP3 usando o Microsoft OAuth 2.0, primeiro é necessário registrar seu aplicativo no portal do Azure. Para obter mais informações, consulte esta [página](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
+>Antes de configurar sua conta externa POP3 usando o Microsoft OAuth 2.0, primeiro é necessário registrar seu aplicativo no portal do Azure. Para obter mais informações, consulte [página](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
 >
 
 Para configurar um POP3 externo usando o Microsoft OAuth 2.0, verifique o **[!UICONTROL Microsoft OAuth 2.0]** e preencha os seguintes campos:
@@ -89,7 +89,7 @@ A conta externa **[!UICONTROL Routing]** permite configurar cada canal disponív
 
 ### Instância de execução {#execution-instance}
 
-No contexto de mensagens transacionais, as instâncias de execução são vinculadas à instância de controle e as conectam. Os templates de mensagem transacional são implantados nas instâncias de execução. Saiba mais sobre a arquitetura do Centro de mensagens em [esta página](../architecture/architecture.md#transac-msg-archi).
+No contexto de mensagens transacionais, as instâncias de execução são vinculadas à instância de controle e as conectam. Os templates de mensagem transacional são implantados na instância de execução. Saiba mais sobre a arquitetura do Centro de mensagens em [esta página](../architecture/architecture.md#transac-msg-archi).
 
 ## Acesso a contas externas de Sistemas Externos {#external-syst-external-accounts}
 
@@ -116,7 +116,7 @@ No contexto de mensagens transacionais, as instâncias de execução são vincul
 
 ## Contas externas de Dados de Transferência {#transfer-data-external-accounts}
 
-Essas contas externas podem ser usadas para importar ou exportar dados para o Adobe Campaign usando um **[!UICONTROL Transfer file]** atividade de workflow. Saiba mais sobre **Transferência de arquivo** em fluxos de trabalho no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html).
+Essas contas externas podem ser usadas para importar ou exportar dados para o Adobe Campaign usando um **[!UICONTROL Transfer file]** atividade de workflow. Saiba mais sobre **Transferência de arquivo** em fluxos de trabalho no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 * **FTP e SFTP** - A **FTP** a conta externa do permite configurar e testar o acesso a um servidor fora do Adobe Campaign. Para configurar conexões com sistemas externos, como servidores SFTP ou FTP 898 usados para transferências de arquivos, você pode criar suas próprias contas externas.
 
@@ -124,7 +124,7 @@ Essas contas externas podem ser usadas para importar ou exportar dados para o Ad
 
   >[!NOTE]
   >
-  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html)
+  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
 
 * **Serviço de armazenamento simples Amazon (S3)** - A **AWS S3** conector pode ser usado para importar ou exportar dados para o Adobe Campaign usando um **[!UICONTROL Transfer file]** atividade de workflow. Como você está configurando essa nova conta externa, é necessário fornecer os seguintes detalhes:
 
@@ -136,7 +136,7 @@ Essas contas externas podem ser usadas para importar ou exportar dados para o Ad
 
    * **[!UICONTROL AWS Region]**: saiba mais sobre regiões do AWS em [Documentação do Amazon](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
 
-   * A caixa de seleção **[!UICONTROL Use server side encryption]** permite armazenar o arquivo no modo criptografado S3. Saiba como encontrar a ID da chave de acesso e a chave de acesso secreta no [Documentação do Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
+   * A variável **[!UICONTROL Use server side encryption]** permite armazenar o arquivo no modo criptografado S3. Saiba como encontrar a ID da chave de acesso e a chave de acesso secreta no [Documentação do Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
 * **Armazenamento Azure Blob** - A **Azure** conta externa pode ser usada para importar ou exportar dados para o Adobe Campaign usando uma **[!UICONTROL Transfer file]** atividade de workflow. Para configurar o **Azure** para trabalhar com a Adobe Campaign, é necessário fornecer os seguintes detalhes:
 

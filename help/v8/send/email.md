@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: a08dd72a2be703e5e9cd3cdc20dbb3064b06b35d
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 24%
+source-wordcount: '510'
+ht-degree: 21%
 
 ---
 
@@ -33,7 +33,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 1. **Selecionar o modelo**
 
-   Selecione um template do delivery e nomeie o delivery. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus recipients, no entanto, esse título será exibido na lista de deliveries. Clique em **[!UICONTROL Continue]**.
+   Selecione um template da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus destinatários, no entanto, esse título será exibido na lista de entregas. Clique em **[!UICONTROL Continue]**.
 
    ![](assets/dce_delivery_model.png)
 
@@ -83,7 +83,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 Seu primeiro delivery de email está pronto. Agora é necessário definir o público-alvo, validar o delivery e enviá-lo.
 
-Saiba como importar um conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
+Saiba como importar um conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
 
 Saiba mais nas seguintes seções:
 
@@ -91,7 +91,7 @@ Saiba mais nas seguintes seções:
 * [Criar e usar um modelo de email](../send/create-templates.md)
 * [Selecionar a audiência do seu email](../audiences/gs-audiences.md)
 * [Validar um delivery e enviar provas](preview-and-proof.md)
-* [Configurar e enviar o delivery](configure-and-send.md)
+* [Configurar e enviar a entrega](configure-and-send.md)
 
 ## Testar e validar seus emails
 

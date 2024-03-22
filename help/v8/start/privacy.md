@@ -5,10 +5,10 @@ feature: Privacy
 role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '930'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ A Adobe oferece ferramentas aos controladores de dados para criar e processar so
 
 Para gerenciar a solicitação de privacidade no Campaign, primeiro você deve [definir um namespace](#namespaces). Em seguida, será possível criar e gerenciar solicitações de privacidade. Para executar solicitações de privacidade, use a integração do **Adobe Privacy Service**. As solicitações de privacidade transmitidas pelo Privacy Service para todas as soluções da Adobe Experience Cloud são tratadas automaticamente pelo Campaign, por meio de um fluxo de trabalho dedicado. [Saiba mais](#create-privacy-request)
 
-![](../assets/do-not-localize/speech.png) Saiba mais sobre **Direito de acesso** e **Direito ao esquecimento** (solicitação DELETE) na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#right-access-forgotten){target="_blank"}.
+Saiba mais sobre o **Direito de acesso** e a variável **Direito ao esquecimento** (solicitação de exclusão) em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#right-access-forgotten){target="_blank"}.
 
 <!--
 >[!NOTE]
@@ -115,22 +115,22 @@ O padrão para um nome de arquivo é: `<InstanceName>-<NamespaceId>-<Reconciliat
 
 ### Tabelas pesquisadas ao processar solicitações {#list-of-tables}
 
-Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Campaign pesquisa todos os dados do Titular dos dados com base em **[!UICONTROL Reconciliation value]** em todas as tabelas que tenham um link para a tabela do recipient (tipo próprio). 
+Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Campaign pesquisa todos os dados do Titular dos dados com base em **[!UICONTROL Reconciliation value]** em todas as tabelas que tenham um link para a tabela do destinatário (tipo próprio). 
 
 As tabelas incorporadas consideradas ao executar solicitações de privacidade são:
 
-* Recipients (recipient)
-* Log de entrega de recipient (broadLogRcp)
-* Log de rastreamento de recipient (trackingLogRcp)
+* Recipients (destinatário)
+* Log de entrega de destinatário (broadLogRcp)
+* Log de rastreamento de destinatário (trackingLogRcp)
 * Log de entrega de evento arquivado (broadLogEventHisto)
-* Conteúdo da lista de recipient (rcpGrpRel)
+* Conteúdo da lista de destinatário (rcpGrpRel)
 * Apresentação da oferta do visitante (propositionVisitor)
 * Visitantes (visitante)
 * Histórico de inscrições (subHisto)
 * Inscrições (inscrição)
-* Apresentação da oferta do recipient (propositionRcp)
+* Apresentação da oferta do destinatário (propositionRcp)
 
-Se você criou tabelas personalizadas que tenham um link para a tabela do recipient (tipo próprio), elas também serão consideradas. Por exemplo, se você tiver uma tabela de transações vinculada à tabela do recipient e uma tabela de detalhes da transação vinculada à tabela de transações, ambas serão consideradas.
+Se você criou tabelas personalizadas que tenham um link para a tabela do destinatário (tipo próprio), elas também serão consideradas. Por exemplo, se você tiver uma tabela de transações vinculada à tabela do destinatário e uma tabela de detalhes da transação vinculada à tabela de transações, ambas serão consideradas.
 <!--
 >[!CAUTION]
 >
@@ -145,10 +145,10 @@ Você pode encontrar abaixo os diferentes status das solicitações de privacida
 
 * **[!UICONTROL New]** / **[!UICONTROL Retry pending]**: em andamento, o workflow ainda não processou a solicitação.
 * **[!UICONTROL Processing]** / **[!UICONTROL Retry in progress]**: o workflow está processando a solicitação.
-* **[!UICONTROL Delete pending]**: o workflow identificou todos os dados do recipient que serão excluídos.
+* **[!UICONTROL Delete pending]**: o workflow identificou todos os dados do destinatário que serão excluídos.
 * **[!UICONTROL Delete in progress]**: workflow está processando a exclusão.
 * **[!UICONTROL Complete]**: o processamento da solicitação foi concluído sem erros.
-* **[!UICONTROL Error]**: o workflow encontrou um erro. O motivo é exibido na lista de solicitações de acesso a dados pessoais na coluna **[!UICONTROL Request status]**. Por exemplo, **[!UICONTROL Error data not found]** significa que nenhum dado de recipient correspondente ao **[!UICONTROL Reconciliation value]** do titular dos dados foi encontrado no banco de dados.
+* **[!UICONTROL Error]**: o workflow encontrou um erro. O motivo é exibido na lista de solicitações de acesso a dados pessoais na coluna **[!UICONTROL Request status]**. Por exemplo, **[!UICONTROL Error data not found]** significa que nenhum dado de destinatário correspondente ao **[!UICONTROL Reconciliation value]** do titular dos dados foi encontrado no banco de dados.
 
 **Tópicos relacionados na documentação do Campaign Classic v7:**
 

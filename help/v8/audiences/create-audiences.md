@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '773'
 ht-degree: 33%
 
 ---
@@ -18,7 +18,7 @@ Use listas do Campaign para criar e organizar seus públicos.
 
 Uma lista é um conjunto estático de contatos que pode ser direcionado em ações de entrega ou atualizado durante uma importação ou outra ação de fluxo de trabalho. Por exemplo, uma população extraída do banco de dados por meio de uma consulta pode ser armazenada como uma lista.
 
-As listas são criadas e gerenciadas pelo link **[!UICONTROL Lists]** na guia **[!UICONTROL Profiles and targets]**. Essas listas são baseadas na tabela de perfil padrão do Adobe Campaign (nms:recipient). [Saiba mais](../dev/datamodel.md#ootb-profiles.md)
+As listas são criadas e gerenciadas pelo **[!UICONTROL Lists]** no **[!UICONTROL Profiles and targets]** guia. Essas listas são baseadas na tabela de perfil padrão do Adobe Campaign (nms:recipient). [Saiba mais](../dev/datamodel.md#ootb-profiles.md)
 
 ![](assets/list-dashboard.png)
 
@@ -103,7 +103,7 @@ No exemplo abaixo, você cria uma lista de todos os recipients entre 25 e 40.
 
    ![](assets/targeting-wf-age-filter.png)
 
-   Saiba como criar uma consulta em um fluxo de trabalho no [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
+   Saiba como criar uma consulta em um fluxo de trabalho no [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 1. Adicione um rótulo para esta consulta e salve as alterações.
 1. Adicionar um **[!UICONTROL List update]** atividade e editá-la.
@@ -124,7 +124,7 @@ No exemplo abaixo, você cria uma lista de todos os recipients entre 25 e 40.
 
    ![](assets/access-new-list.png)
 
-   Você pode tornar esse workflow recorrente adicionando um scheduler ao workflow. [Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html).
+   Você pode tornar esse workflow recorrente adicionando um scheduler ao workflow. [Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 ## Remover um perfil de uma lista {#remove-a-profile-from-a-list}
 
@@ -132,7 +132,7 @@ Para remover um perfil de uma lista, edite a lista, selecione o perfil no campo 
 
 ## Excluir uma lista de perfis {#delete-a-list-of-profiles}
 
-Para excluir uma lista, navegue até ela no Campaign Explorer, selecione-a e clique com o botão direito do mouse. Escolha **[!UICONTROL Delete]**. Uma mensagem de aviso solicita que você confirme a exclusão.
+Para excluir uma lista, navegue até ela no Campaign Explorer, selecione-a e clique com o botão direito do mouse. Escolher **[!UICONTROL Delete]**. Uma mensagem de aviso solicita que você confirme a exclusão.
 
 >[!NOTE]
 >

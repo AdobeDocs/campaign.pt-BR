@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 63%
+source-wordcount: '1241'
+ht-degree: 64%
 
 ---
 
@@ -36,7 +36,7 @@ Para inserir apresentações de oferta em um delivery, siga as etapas abaixo:
 
    ![](assets/offer_delivery_004.png)
 
-1. Especifique o número de ofertas que deseja inserir no corpo do delivery.
+1. Especifique o número de ofertas que deseja inserir no corpo da entrega.
 
    ![](assets/offer_delivery_005.png)
 
@@ -62,9 +62,9 @@ Para inserir apresentações de oferta em um delivery, siga as etapas abaixo:
 * **[!UICONTROL Space]** : espaço do ambiente de oferta que deve ser selecionado para ativar o mecanismo de Oferta.
 * **[!UICONTROL Category]**: pasta específica na qual as ofertas são classificadas. Se nenhuma categoria for especificada, todas as ofertas contidas no ambiente serão consideradas pelo Mecanismo de oferta, a menos que um tema seja selecionado.
 * **[!UICONTROL Themes]**: palavras-chave definidas upstream nas categorias. Isso funciona como um filtro e permite refinar o número de ofertas que serão apresentadas ao selecioná-las em um conjunto de categorias.
-* **[!UICONTROL Number of propositions]**: número de ofertas retornadas pelo mecanismo que podem ser inseridas no corpo do delivery. Se não forem inseridas na mensagem, as ofertas ainda serão geradas, mas não serão apresentadas.
-* **[!UICONTROL Exclude non-eligible recipients]**: essa opção permite ativar ou desativar a exclusão de recipients para os quais não há ofertas elegíveis suficientes. O número de propostas elegíveis pode ser menor do que o número solicitado de apresentações. Se esta caixa estiver marcada, os recipients que não têm apresentações suficientes serão excluídos do delivery. Se você não selecionar essa opção, esses recipients não serão excluídos, mas não terão o número solicitado de apresentações.
-* **[!UICONTROL Do not display anything if no offer is selected]**: essa opção permite escolher como a mensagem será processada caso uma das proposições não exista. Quando esta caixa é marcada, a representação da proposta ausente não é exibida e nenhum conteúdo aparecerá na mensagem para essa apresentação. Se a caixa não estiver marcada, a mensagem propriamente dita será cancelada durante o envio e os recipients não receberão mais mensagens.
+* **[!UICONTROL Number of propositions]**: número de ofertas retornadas pelo mecanismo que podem ser inseridas no corpo da entrega. Se não forem inseridas na mensagem, as ofertas ainda serão geradas, mas não serão apresentadas.
+* **[!UICONTROL Exclude non-eligible recipients]**: essa opção permite ativar ou desativar a exclusão de destinatários para os quais não há ofertas elegíveis suficientes. O número de propostas elegíveis pode ser menor do que o número solicitado de apresentações. Se esta caixa estiver marcada, os destinatários que não têm apresentações suficientes serão excluídos da entrega. Se você não selecionar essa opção, esses destinatários não serão excluídos, mas não terão o número solicitado de apresentações.
+* **[!UICONTROL Do not display anything if no offer is selected]**: essa opção permite escolher como a mensagem será processada caso uma das proposições não exista. Quando esta caixa é marcada, a representação da proposta ausente não é exibida e nenhum conteúdo aparecerá na mensagem para essa apresentação. Se a caixa não estiver marcada, a mensagem propriamente dita será cancelada durante o envio e os destinatários não receberão mais mensagens.
 
 ## Enviar ofertas em workflows{#offer-via-wf}
 
@@ -76,9 +76,9 @@ Várias atividades de workflow permitem definir a forma como as ofertas são apr
 
 ### Atividade de  {#enrichment}
 
-A variável **Enriquecimento** A atividade permite adicionar ofertas ou links para ofertas de recipients de delivery.[Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html)
+A variável **Enriquecimento** A atividade permite adicionar ofertas ou links para ofertas de recipients de delivery.[Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
-Por exemplo, é possível enriquecer os dados de uma query de recipient antes de um delivery.
+Por exemplo, é possível enriquecer os dados de uma query de destinatário antes de uma entrega.
 
 ![](assets/int_enrichment_offer1.png)
 
@@ -108,11 +108,11 @@ Depois de configurar o **Query** atividade:
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
 
    >[!NOTE]
    >
-   >O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente no delivery.
+   >O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente na entrega.
 
 #### Referência a um link para uma oferta {#referencing-a-link-to-an-offer}
 
@@ -126,15 +126,15 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/int_enrichment_link1.png)
 
-1. Especifique a ligação entre os dados da tabela de entrada na atividade de enriquecimento (aqui a tabela de recipients) e a tabela de ofertas. Por exemplo, é possível vincular um código de oferta a um recipient.
+1. Especifique a ligação entre os dados da tabela de entrada na atividade de enriquecimento (aqui a tabela de destinatários) e a tabela de ofertas. Por exemplo, é possível vincular um código de oferta a um destinatário.
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
 
    >[!NOTE]
    >
-   >O número de propostas disponíveis para a pré-visualização depende da configuração realizada no delivery.
+   >O número de propostas disponíveis para a pré-visualização depende da configuração realizada na entrega.
 
 #### Classificações e pesos de ofertas da loja {#storing-offer-rankings-and-weights}
 
@@ -157,13 +157,13 @@ No entanto, é possível armazenar essas informações da seguinte maneira:
 
 1. Confirme sua adição e salve seu workflow.
 
-O delivery armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** do delivery.
+A entrega armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** da entrega.
 
 ### Mecanismo de oferta {#offer-engine}
 
 A variável **[!UICONTROL Offer engine]** A atividade de também permite especificar uma chamada para o mecanismo de oferta antes da entrega.
 
-Para obter mais informações sobre o **Mecanismo de oferta** atividade, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html)
+Para obter mais informações sobre o **Mecanismo de oferta** atividade, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}.
 
 Essa atividade funciona de acordo com o mesmo princípio que a **Enriquecimento** atividade com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de um delivery.
 
@@ -176,17 +176,17 @@ Depois de configurar o **Query** atividade:
 
    >[!CAUTION]
    >
-   >Se usar essa atividade, somente as propostas de oferta usadas no fornecimento serão armazenadas.
+   >Se usar essa atividade, somente as propostas de oferta usadas na entrega serão armazenadas.
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#inserting-an-offer-proposition-into-a-delivery)
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#inserting-an-offer-proposition-into-a-delivery)
 
 ### Ofertas por célula {#offers-by-cell}
 
 A atividade **[!UICONTROL Offers by cell]** permite distribuir a população de entrada (de uma consulta, por exemplo) em vários segmentos e especificar uma oferta a ser apresentada para cada um desses segmentos.
 
-Para obter mais informações sobre o **Oferta por célula** atividade, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html)
+Para obter mais informações sobre o **Oferta por célula** atividade, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}.
 
 Para fazer isso, realize o seguinte processo:
 

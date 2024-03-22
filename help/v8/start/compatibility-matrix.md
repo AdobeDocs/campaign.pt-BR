@@ -5,7 +5,7 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 52%
@@ -80,6 +80,6 @@ Os seguintes navegadores são compatíveis com o Campaign para acesso via web. S
 * [Atualizações de versão do Campaign](upgrades.md)
 * [Verifique a versão do Campaign](upgrades.md#version)
 * [Instalar o console do cliente do Campaign](connect.md)
-* [Versões do Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR){target="_blank"}.
+* [Versões do Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR){target="_blank"}
 
 Para ser informado sobre novos lançamentos de soluções Experience Cloud, inscreva-se na [Atualização de produtos prioritários para o Adobe](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.

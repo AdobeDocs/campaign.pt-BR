@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 73%
+ht-degree: 70%
 
 ---
 
@@ -22,7 +22,9 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Essa frequência regular de atualizações tem como objetivo disponibilizar a você o que há de melhor e mais recente, mantendo seu ambiente seguro e melhorando sua experiência com nosso produto. É por isso que acreditamos que é essencial executar a versão mais recente do Adobe Campaign.
 
-   ![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Services, sua instância é atualizada pela Adobe a cada nova versão.
+   >[!NOTE]
+   >
+   >Como usuário do Managed Cloud Service, sua instância é atualizada pelo Adobe a cada nova versão.
 
 1. **Como posso me conectar ao Campaign v8?**
 
@@ -65,7 +67,9 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Um subdomínio é uma divisão do seu domínio que pode ser usada para isolar suas marcas ou vários tipos de tráfego (mensagens transacionais, informações de marketing etc.).
 
-   ![](../assets/do-not-localize/speech.png) Como um usuário Cloud Service gerenciado, entre em contato com o Adobe para delegar os subdomínios ao Adobe.
+   >[!NOTE]
+   >
+   >Como um usuário Cloud Service gerenciado, entre em contato com o Adobe para delegar os subdomínios ao Adobe.
 
 1. **Como usuário do Campaign Classic v7, posso migrar para o Campaign v8?**
 
@@ -73,7 +77,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    O Campaign v8 está disponível **somente** como um Managed Cloud Service e não pode ser implantado em ambientes locais ou híbridos.
 
-   ![](../assets/do-not-localize/speech.png) Para obter mais informações sobre o processo de migração, entre em contato com o representante da Adobe.
+   Para obter mais informações sobre o processo de migração, entre em contato com o representante da Adobe.
 
 1. **Como posso baixar o Campaign?**
 

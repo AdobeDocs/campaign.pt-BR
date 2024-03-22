@@ -5,7 +5,7 @@ feature: Privacy, PI
 role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 25%
@@ -27,7 +27,10 @@ A configuração e a proteção da privacidade são um elemento essencial da oti
 * Verifique se as senhas criptografadas são restritas
 * Proteja as páginas que podem conter informações pessoais, como mirror pages, aplicativos web, etc.
 
-![](../assets/do-not-localize/speech.png)  Como usuário do Managed Cloud Service, o Adobe trabalhará com você para implementar essas configurações no seu ambiente.
+
+>[!NOTE]
+>
+>Como usuário do Managed Cloud Service, o Adobe trabalhará com você para implementar essas configurações no seu ambiente.
 
 
 ## Gerenciamento de acesso
@@ -49,7 +52,7 @@ Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga
 
 * **Adicionar captchas em aplicações web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
-Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}
+Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
 
 
 ## Personalização
@@ -144,4 +147,4 @@ Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga
 
 * **Adicionar captchas em aplicações web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
-Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}
+Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
