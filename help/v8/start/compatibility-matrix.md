@@ -8,19 +8,19 @@ exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 52%
+ht-degree: 99%
 
 ---
 
 # Matriz de compatibilidade do Campaign v8 {#compat-matrix}
 
-Este documento lista todos os sistemas e componentes compatíveis com a última build do **Adobe Campaign v8** console do cliente. Salvo indicação em contrário, todas as versões secundárias são compatíveis. Os produtos e as versões que não estão nessa lista não são compatíveis com o Adobe Campaign.
+Este documento lista todos os sistemas e componentes compatíveis com a última build do console do cliente do **Adobe Campaign v8**. Salvo indicação em contrário, todas as versões secundárias são compatíveis. Os produtos e as versões que não estão nessa lista não são compatíveis com o Adobe Campaign.
 
 À medida que versões específicas desses sistemas e ferramentas de terceiros atingirem o fim da vida útil (EOL), o Adobe Campaign não será mais compatível com essas versões, e elas serão removidas da matriz de compatibilidade. Verifique se você está usando as versões compatíveis dos sistemas listados na matriz de compatibilidade para evitar problemas.
 
 >[!NOTE]
 >
->O servidor do Adobe Campaign e o console do cliente do Campaign devem estar na mesma versão. [Saiba como verificar sua versão](upgrades.md#version).
+>Os consoles do servidor e do cliente do Adobe Campaign devem ter a mesma versão. [Saiba como verificar sua versão](upgrades.md#version).
 
 ## Console do cliente {#ClientConsoleoperatingsystems}
 
@@ -32,7 +32,7 @@ Os sistemas operacionais e navegadores a seguir são necessários para usar o co
 * **Microsoft Windows** 11, 10
 
 >[!NOTE]
->A versão de 32 bits do console do cliente está obsoleta desde a versão 8.5. A partir da versão 8.6, o console do cliente estará disponível somente em 64 bits. Para obter mais informações sobre como atualizar seu sistema, consulte esta [nota técnica](../../technotes/upgrades/console.md).
+>A versão de 32 bits do console do cliente está obsoleta desde a versão 8.5. A partir da versão 8.6, o console do cliente só estará disponível em 64 bits. Para mais informações sobre como atualizar o seu sistema operacional, consulte esta [nota técnica](../../technotes/upgrades/console.md).
 
 ### Navegador da Web {#web-browsers}
 
@@ -61,25 +61,25 @@ Os bancos de dados externos compatíveis com o módulo Federated Data Access (FD
 
 Para enviar [notificações por push](../send/push.md) com o Campaign, use o SDK móvel da Adobe Experience Platform configurando a extensão do Adobe Campaign Classic na interface da coleção de dados.
 
-As versões compatíveis com iOS e Android estão detalhadas na seção [Documentação do Adobe Developer](https://developer.adobe.com/client-sdks/home/){target="_blank"}.
+As versões compatíveis com iOS e Android estão detalhadas na [documentação do Adobe Developer](https://developer.adobe.com/client-sdks/home/){target="_blank"}.
 
-## Interface do usuário da Web {#web-ui}
+## Interface da Web {#web-ui}
 
-Os seguintes navegadores são compatíveis com a interface da Web do Campaign. Saiba mais sobre a interface do Campaign Web [nesta página](campaign-ui.md#ac-web-ui).
+Os seguintes navegadores são compatíveis com a interface do Campaign Web. Saiba mais sobre a interface do Campaign Web [nesta página](campaign-ui.md#ac-web-ui).
 
 * **Microsoft Edge**, **Google Chrome**, **Safari** (versões mais recentes)
 
 ## Acesso à Web {#web-access}
 
-Os seguintes navegadores são compatíveis com o Campaign para acesso via web. Saiba mais sobre o Campaign Web Access [nesta página](connect.md#web-access).
+Os seguintes navegadores são compatíveis com Campaign para o acesso a partir da Web. Saiba mais sobre o acesso ao Campaign Web [nesta página](connect.md#web-access).
 
 * **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** (versões mais recentes)
 
 ## Recursos adicionais {#support}
 
-* [Atualizações de versão do Campaign](upgrades.md)
-* [Verifique a versão do Campaign](upgrades.md#version)
-* [Instalar o console do cliente do Campaign](connect.md)
+* [Atualizações da versão do Campaign](upgrades.md)
+* [Confira a sua versão do Campaign](upgrades.md#version)
+* [Instalar console do cliente do Campaign](connect.md)
 * [Versões do Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR){target="_blank"}
 
-Para ser informado sobre novos lançamentos de soluções Experience Cloud, inscreva-se na [Atualização de produtos prioritários para o Adobe](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.
+Para manter-se em dia sobre novas versões de soluções da Experience Cloud, inscreva-se na [Atualização prioritária de produtos da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.
