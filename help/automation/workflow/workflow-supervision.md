@@ -6,7 +6,7 @@ feature: Workflows
 exl-id: 362b347b-f914-4ebf-84d7-9989aef28a82
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '649'
 ht-degree: 97%
 
 ---
@@ -18,14 +18,14 @@ Esse caso de uso detalha a criação de um workflow que permite monitorar o stat
 Seu objetivo é:
 
 * Usar um workflow para monitorar um grupo de workflows de negócios.
-* Enviar uma mensagem para um supervisor por meio de uma atividade &quot;delivery&quot;.
+* Enviar uma mensagem para um supervisor por meio de uma atividade &quot;entrega&quot;.
 
 Para monitorar o status de um conjunto de workflows, siga estas etapas:
 
 1. Crie o workflow de sincronização.
 1. Escreva o JavaScript para determinar se os workflows estão pausados, interrompidos ou com erros.
 1. Crie a atividade **[!UICONTROL Test]**.
-1. Prepare o template de delivery.
+1. Prepare o template de entrega.
 
 >[!NOTE]
 >
@@ -47,8 +47,8 @@ Este workflow é composto por:
 
 * uma atividade **&quot;Start&quot;** .
 * uma atividade **&quot;JavaScript code&quot;** responsável pela análise da pasta de workflows corporativos.
-* uma atividade **&quot;Test&quot;** para enviar uma delivery ao supervisor ou reiniciar o workflow.
-* uma atividade **&quot;Delivery&quot;** responsável pelo layout da mensagem.
+* uma atividade **&quot;Test&quot;** para enviar uma entrega ao supervisor ou reiniciar o workflow.
+* uma atividade **&quot;Entrega&quot;** responsável pelo layout da mensagem.
 * uma atividade **&quot;Wait&quot;** que controla os tempos de lead entre as iterações do workflow.
 
 ## Etapa 2: Gravação do JavaScript {#step-2--writing-the-javascript}
@@ -115,9 +115,9 @@ vars.strWorkflowStop = strStop;
 
 ## Etapa 3: Criação da atividade &quot;Test&quot; {#step-3--creating-the--test--activity}
 
-A atividade &quot;Test&quot; permite determinar se um fornecimento precisa ser enviado ou se o workflow de monitoramento precisa executar outro ciclo com base na atividade &quot;Wait&quot;.
+A atividade &quot;Test&quot; permite determinar se uma entrega precisa ser enviada ou se o workflow de monitoramento precisa executar outro ciclo com base na atividade &quot;Wait&quot;.
 
-Uma delivery é realizada ao supervisor **se pelo menos uma das três variáveis de evento &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot; ou &quot;vars.strWorkflowStop&quot; for não nulas.**
+Uma entrega é realizada ao supervisor **se pelo menos uma das três variáveis de evento &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot; ou &quot;vars.strWorkflowStop&quot; for não nulas.**
 
 ![](assets/uc_monitoring_workflow_test.png)
 
@@ -125,9 +125,9 @@ A atividade &quot;Wait&quot; pode ser configurada para reiniciar o workflow de m
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## Etapa 4: Preparação do delivery {#step-4--preparing-the-delivery}
+## Etapa 4: Preparação da entrega {#step-4--preparing-the-delivery}
 
-A atividade &quot;Delivery&quot; baseia-se em um **template de delivery** armazenado no nó **Resources > Templates >Delivery templates**.
+A atividade &quot;Entrega&quot; baseia-se em um **template de entrega** armazenado no nó **Resources > Templates > Templates de entrega**.
 
 Este template deve incluir:
 
@@ -138,23 +138,23 @@ Este template deve incluir:
 
   As três variáveis declaradas (WF_Stop, WF_Paused, WF_Error) correspondem às três variáveis de evento do workflow.
 
-  Essas variáveis devem ser declaradas na guia **Variables** das propriedades do template de delivery.
+  Essas variáveis devem ser declaradas na guia **Variables** das propriedades do template de entrega.
 
-  Para recuperar **o conteúdo das variáveis de evento do workflow**, é preciso declarar as variáveis específicas para a delivery que será inicializada com valores retornados pelo código JavaScript.
+  Para recuperar **o conteúdo das variáveis de evento do workflow**, é preciso declarar as variáveis específicas para a entrega que será inicializada com valores retornados pelo código JavaScript.
 
-  O template de delivery tem o seguinte conteúdo:
+  O template de entrega tem o seguinte conteúdo:
 
   ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
-Depois que o template tiver sido criado e aprovado, é necessário configurar a atividade **Delivery** para:
+Depois que o template tiver sido criado e aprovado, é necessário configurar a atividade **Entrega** para:
 
-* vincular a atividade &quot;Delivery&quot; ao template de delivery criado anteriormente.
-* vincular as variáveis de evento do workflow àquelas específicas do template de delivery.
+* vincular a atividade &quot;Entrega&quot; ao template de entrega criado anteriormente.
+* vincular as variáveis de evento do workflow àquelas específicas do template de entrega.
 
-Clique duas vezes na atividade **Delivery** e selecione as seguintes opções:
+Clique duas vezes na atividade **Entrega** e selecione as seguintes opções:
 
-* Delivery: selecione **New, created from a template** e selecione o template de delivery criado anteriormente.
-* Para os campos **Recipientes e Content** , selecione **Specified in the delivery**.
+* Entrega: selecione **New, created from a template** e selecione o template de entrega criado anteriormente.
+* Para os campos **Destinatários e Conteúdo**, selecione **Especificado na entrega**.
 * Ação para executar: selecione **Prepare and start**.
 * Desmarque a opção **Process errors**.
 

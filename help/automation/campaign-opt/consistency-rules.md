@@ -6,14 +6,14 @@ feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
 source-git-commit: 8247bed87deb3fb19a01447dab180ed9c97ea96c
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 93%
+source-wordcount: '740'
+ht-degree: 90%
 
 ---
 
 # Regras de consistência{#consistency-rules}
 
-O Adobe Campaign garante comunicações consistentes graças a um conjunto de regras contidas nas tipologias de campanha. Seu objetivo é controlar as entregas enviadas aos recipients, como volume, natureza, relevância etc.
+O Adobe Campaign garante comunicações consistentes graças a um conjunto de regras contidas nas tipologias de campanha. Seu objetivo é controlar as entregas enviadas aos destinatários, como volume, natureza, relevância etc.
 
 As regras de **Capacidade** podem evitar sobrecarga na plataforma relacionada com a entrega de mensagens. Como exemplo, as ofertas especiais que contêm um link de download não devem ser enviadas para muitas pessoas de uma só vez, para evitar a saturação do servidor; as campanhas por telefone não devem exceder a capacidade de processamento das centrais de atendimento etc.
 
@@ -97,7 +97,7 @@ As linhas de disponibilidade são somente para fins de informação. Para exclui
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-O número máximo de mensagens que podem ser processadas é dividido uniformemente no intervalo de disponibilidade definido. Isso é particularmente relevante para centrais de chamadas, pois seu número máximo de chamadas por dias é limitado. No caso de entregas de email, a opção **[!UICONTROL Do not limit instantaneous delivery capacity]** permite ignorar esse intervalo de disponibilidade e enviar seus emails ao mesmo tempo.
+O número máximo de mensagens que podem ser processadas é dividido uniformemente no intervalo de disponibilidade definido. Isso é particularmente relevante para centrais de atendimento, pois seu número máximo de chamadas por dia é limitado. No caso de entregas de email, a opção **[!UICONTROL Do not limit instantaneous delivery capacity]** permite ignorar esse intervalo de disponibilidade e enviar seus emails ao mesmo tempo.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 

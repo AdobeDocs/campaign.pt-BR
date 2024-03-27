@@ -8,7 +8,7 @@ exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
 source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
 workflow-type: tm+mt
 source-wordcount: '1170'
-ht-degree: 57%
+ht-degree: 55%
 
 ---
 
@@ -30,7 +30,7 @@ Para criar um template de mensagem, siga as etapas abaixo:
    ![](assets/messagecenter_create_model_002.png)
 
 1. Altere seu rótulo se necessário.
-1. Selecione o tipo de evento que corresponda à mensagem a ser enviada. Os tipos de evento destinados a serem processados pelo Adobe Campaign devem ser criados previamente. [Saiba mais](#create-event-types)
+1. Selecione o tipo de evento que corresponda à mensagem que deseja enviar. Os tipos de evento destinados a serem processados pelo Adobe Campaign devem ser criados previamente. [Saiba mais](#create-event-types)
 
    ![](assets/messagecenter_create_model_003.png)
 

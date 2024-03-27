@@ -7,7 +7,7 @@ role: User, Data Engineer
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '246'
 ht-degree: 100%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 
 
-Neste exemplo, devemos executar uma query para localizar todos os domínios de e-mail selecionados mais de 30 vezes durante as deliveries anteriores.
+Neste exemplo, devemos executar uma query para localizar todos os domínios de e-mail selecionados mais de 30 vezes durante as entregas anteriores.
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de recipient (nms:recipient)
+  A tabela de destinatário (nms:recipient)
 
 * Campos a serem selecionados nas colunas de saída?
 

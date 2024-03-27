@@ -22,7 +22,7 @@ Para criar um recipient manualmente, siga as etapas abaixo:
 
    ![](assets/profiles-and-targets.png)
 
-   Por padrão, os recipients são armazenados no nó **[!UICONTROL Profiles and Targets > Recipients]** da árvore. Você também pode criar recipients nesta visualização.
+   Por padrão, os destinatários são armazenados no nó **[!UICONTROL Profiles and Targets > Recipients]** da árvore. Você também pode criar recipients nesta visualização.
 
 1. Clique em **[!UICONTROL Create button]**.
 1. Insira os dados do perfil.

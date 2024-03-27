@@ -8,8 +8,8 @@ role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 96%
+source-wordcount: '1066'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 Um workflow é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](scheduler.md)) ou de um agendamento de atividade. 
 
-As ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
+Ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são **assíncrono** processes: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-la.
 
 A barra de ferramentas permite iniciar e controlar a execução do workflow.
 
@@ -25,7 +25,7 @@ A lista de opções disponíveis no menu **[!UICONTROL Actions]** e no menu de c
 
 >[!IMPORTANT]
 >
->Saiba que, quando um operador executa uma ação em um workflow (iniciar, parar, pausar, etc.), a ação não é imediatamente executada, mas colocada em uma fila para ser processada pelo módulo de workflow.
+>Lembre-se que, quando um operador executa uma ação em um workflow (iniciar, parar, pausar, etc.), a ação não é imediatamente executada, mas colocada em uma fila para ser processada pelo módulo de workflow.
 
 ## Barra de ferramentas Ações {#actions-toolbar}
 
@@ -81,7 +81,7 @@ A variável **[!UICONTROL Actions]** O botão da barra de ferramentas permite ac
   Essa ação cria um novo modelo de fluxo de trabalho com base no fluxo de trabalho selecionado. Você precisa especificar a pasta onde ele será salvo (no campo **[!UICONTROL Folder]**).
 
 
-## Práticas recomendadas de execução de workflow {#workflow-execution-best-practices}
+## Práticas recomendadas de execução de workflows {#workflow-execution-best-practices}
 
 Melhore a estabilidade da instância implementando as seguintes práticas recomendadas:
 
@@ -99,7 +99,7 @@ Melhore a estabilidade da instância implementando as seguintes práticas recome
 
 * **Use a interrupção incondicional apenas nos casos mais raros**. Não utilize esta ação regularmente. Não executar um encerramento limpo nas conexões geradas pelos workflows com o banco de dados afeta o desempenho.
 
-* **Não execute várias solicitações de interrupção no mesmo fluxo de trabalho**. A interrupção de um fluxo de trabalho é um processo assíncrono: a solicitação é registrada e, em seguida, o servidor ou servidores de fluxo de trabalho cancelam as operações em andamento. A interrupção de uma instância de fluxo de trabalho pode demorar, especialmente se o fluxo de trabalho estiver em execução em vários servidores, em que cada um deles deve assumir o controle para cancelar as tarefas em andamento. Para evitar problemas, aguarde a conclusão da operação de interrupção e evite interromper um fluxo de trabalho várias vezes.
+* **Não execute várias solicitações de interrupção no mesmo fluxo de trabalho**. A interrupção de um workflow é um processo assíncrono: a solicitação é registrada e, em seguida, o servidor ou servidores de workflow cancelam as operações em andamento. A interrupção de uma instância de fluxo de trabalho pode demorar, especialmente se o fluxo de trabalho estiver em execução em vários servidores, em que cada um deles deve assumir o controle para cancelar as tarefas em andamento. Para evitar problemas, aguarde a conclusão da operação de interrupção e evite interromper um fluxo de trabalho várias vezes.
 
 ## Menu de contexto {#right-click-menu}
 

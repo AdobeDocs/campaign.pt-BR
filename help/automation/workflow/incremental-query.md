@@ -7,7 +7,7 @@ role: User
 exl-id: 3e9f92c3-080f-441b-a15a-2ec9d056d1f9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '356'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Para fazer isso:
 
    * **[!UICONTROL History in days]**
 
-     Os recipients já alvos podem ser registrados em um número máximo de dias a partir do dia de envio do target. Se esse valor for zero, os recipients nunca serão removidos do log.
+     Os destinatários já alvos podem ser registrados em um número máximo de dias a partir do dia de envio do target. Se esse valor for zero, os destinatários nunca serão removidos do log.
 
    * **[!UICONTROL Keep history when starting]**
 

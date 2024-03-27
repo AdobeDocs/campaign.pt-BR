@@ -48,7 +48,7 @@ As estatísticas são classificadas com base em três critérios:
 
   ![](assets/offer_report_perspaces.png)
 
-* Por deliveries:
+* Por entregas:
 
   ![](assets/offer_report_perdeliveries.png)
 

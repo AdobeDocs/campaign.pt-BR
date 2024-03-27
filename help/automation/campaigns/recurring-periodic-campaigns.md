@@ -7,8 +7,8 @@ role: User
 exl-id: 68c5b903-5043-4e74-b3f6-90a7f2fb3b9a
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 63%
+source-wordcount: '804'
+ht-degree: 57%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 63%
 
 A **campanha recorrente** é uma campanha baseada em um template específico, cujos workflows são configurados para serem executados de acordo com um agendamento associado. O direcionamento é duplicado em cada execução e os vários processos e populações do target são rastreados.  Depois de configuradas, as campanhas recorrentes criam automaticamente um novo fluxo de trabalho (duplicando o modelo de fluxo de trabalho) e o executam. Por exemplo, se você precisar enviar um lembrete mensal para um segmento de público-alvo, configure uma campanha recorrente para que, no início de cada ano, ela crie 12 fluxos de trabalho, um para cada mês. [Saiba mais](#create-a-recurring-campaign)
 
-A **campanha periódica** é uma campanha baseada em um template específico que permite criar instâncias de campanha com base em um agendamento de execução. As instâncias de campanha são criadas automaticamente com base em um template de campanha periódico, dependendo da frequência definida no cronograma do template. [Saiba mais](#create-a-periodic-campaign)
+A **campanha periódica** é uma campanha baseada em um template específico que permite criar instâncias de campanha com base em um agendamento de execução. As instâncias de campanha são criadas automaticamente com base em um template de campanha periódico, dependendo da frequência definida no agendamento do template. [Saiba mais](#create-a-periodic-campaign)
 
 ## Criar uma campanha recorrente {#create-a-recurring-campaign}
 
@@ -30,7 +30,7 @@ Para criar um template para campanhas recorrentes, siga as etapas abaixo:
 1. Duplicar o incorporado **[!UICONTROL Recurring campaign]** modelo.
    ![](assets/recurring-campaign-duplicate.png)
 1. Insira o nome do template e a duração da campanha.
-1. Para esse tipo de campanha, uma guia **[!UICONTROL Schedule]** é adicionada para criar o agendamento de execução do template. Use essa guia para definir as datas de execução das campanhas com base nesse template.
+1. Para esse tipo de campanha, uma **[!UICONTROL Schedule]** é adicionada para criar o agendamento de execução do template. Use essa guia para definir as datas de execução das campanhas com base nesse template.
    ![](assets/recurring-campaign-schedule.png)
 
    O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do workflow. [Saiba mais](../workflow/scheduler.md).

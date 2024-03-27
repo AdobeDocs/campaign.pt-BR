@@ -23,7 +23,7 @@ O Interaction opera com dois tipos de ambientes de oferta:
 
 ![](assets/offer_environments_overview_001.png)
 
-Cada ambiente **[!UICONTROL Design]** está vinculado a um ambiente **[!UICONTROL Live]**. Quando uma oferta é concluída, suas regras de conteúdo e qualificação estão sujeitas a um ciclo de aprovação. Depois que este ciclo for concluído, a oferta relacionada será implantada automaticamente no ambiente **[!UICONTROL Live]**. A partir deste momento, ele estará disponível para delivery.
+Cada ambiente **[!UICONTROL Design]** está vinculado a um ambiente **[!UICONTROL Live]**. Quando uma oferta é concluída, suas regras de conteúdo e qualificação estão sujeitas a um ciclo de aprovação. Depois que este ciclo for concluído, a oferta relacionada será implantada automaticamente no ambiente **[!UICONTROL Live]**. A partir deste momento, ele estará disponível para entrega.
 
 Por padrão, o Campaign vem com uma **[!UICONTROL Design]** ambiente e uma **[!UICONTROL Live]** ambiente vinculado a ele. Ambos os ambientes são pré-configurados para direcionar a [tabela interna de recipient](../dev/datamodel.md#ootb-profiles).
 
@@ -59,7 +59,7 @@ Se ativado o mapeamento **[!UICONTROL Visitor]**, a caixa **[!UICONTROL Environm
 
 Essa opção permite ativar funções específicas de interação anônima, especialmente quando configurar espaços de oferta de ambiente. Também é possível configurar opções que permitem alternar de um ambiente &quot;identificado&quot; para um ambiente &quot;anônimo&quot;.
 
-Por exemplo, é possível vincular um espaço de oferta de ambiente de recipient (contato identificado) com um espaço de oferta que corresponda a um ambiente de visitante (contato não identificado). Dessa forma, as diferentes ofertas serão disponibilizadas para o contato, dependendo se ele for identificado ou não. Para obter mais informações, consulte [Criação de espaços de oferta](interaction-offer-spaces.md).
+Por exemplo, é possível vincular um espaço de oferta de ambiente de destinatário (contato identificado) com um espaço de oferta que corresponda a um ambiente de visitante (contato não identificado). Dessa forma, as diferentes ofertas serão disponibilizadas para o contato, dependendo se ele for identificado ou não. Para obter mais informações, consulte [Criação de espaços de oferta](interaction-offer-spaces.md).
 
 ![](assets/offer_env_anonymous_003.png)
 

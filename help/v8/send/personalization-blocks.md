@@ -8,7 +8,7 @@ exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 45%
+ht-degree: 34%
 
 ---
 
@@ -29,17 +29,17 @@ Para inserir um bloco de personalização em uma mensagem, siga as etapas abaixo
 
    ![](assets/perso-content-block.png)
 
-1. O bloco de personalização é então inserido como um script. Ele é adaptado automaticamente ao perfil do recipient quando a personalização é gerada.
+1. O bloco de personalização é então inserido como um script. Ele é adaptado automaticamente ao perfil do destinatário quando a personalização é gerada.
 1. Navegue até o **[!UICONTROL Preview]** e selecione um recipient para exibir o conteúdo deste bloco para um recipient específico.
 
-Você pode incluir o código-fonte de um bloco de personalização no conteúdo do delivery. Para fazer isso, selecione **[!UICONTROL Include the HTML source code of the block]** ao selecioná-lo.
+Você pode incluir o código-fonte de um bloco de personalização no conteúdo da entrega. Para fazer isso, selecione **[!UICONTROL Include the HTML source code of the block]** ao selecioná-lo.
 
 ## Blocos de personalização incorporados {#ootb-personalization-blocks}
 
 Os blocos de personalização incorporados são:
 
 * **[!UICONTROL Enabled by Adobe Campaign]**: insere o logotipo &quot;Ativado pelo Adobe Campaign&quot;.
-* **[!UICONTROL Formatting function for proper nouns]**: gera a função JavaScript **[!UICONTROL toSmartCase]**, que coloca a primeira letra de cada palavra em maiúscula.
+* **[!UICONTROL Formatting function for proper nouns]**: gera o **[!UICONTROL toSmartCase]** Função JavaScript, que coloca a primeira letra de cada palavra em maiúscula.
 * **[!UICONTROL Greetings]**: insere saudações com o nome completo do destinatário, seguido por uma vírgula. Exemplo: “Olá, fulano,”.
 * **[!UICONTROL Insert logo]**: insere um logotipo definido nas configurações de instância.
 * **[!UICONTROL Link to mirror page]**: insere um link para o [mirror page](mirror-page.md). O formato padrão é: &quot;Caso não consiga visualizar esta mensagem corretamente, clique aqui.&quot;
@@ -47,12 +47,12 @@ Os blocos de personalização incorporados são:
 * **[!UICONTROL Offer acceptance URL in unitary mode]**: insere um URL que permite definir uma oferta para **[!UICONTROL Accepted]**. (Este bloco estará disponível se o módulo Interação estiver habilitado)
 * **[!UICONTROL Registration confirmation]**: insere um link que permite confirmar a subscrição.
 * **[!UICONTROL Registration link]**: insere um link de subscrição. Esse link é definido nas configurações da instância. O conteúdo padrão é: &quot;Para se registrar, clique aqui&quot;.
-* **[!UICONTROL Registration link (with referrer)]** : insere um link de subscrição, permitindo identificar o visitante e o delivery. Esse link é definido nas configurações da instância.
+* **[!UICONTROL Registration link (with referrer)]**: insere um link de subscrição, permitindo identificar o visitante e o delivery. Esse link é definido nas configurações da instância.
 * **[!UICONTROL Registration page URL]**: insere um URL de subscrição
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]**: gerar um código que formata um email com estilos de HTML predefinidos.
-* **[!UICONTROL Unsubscription link]**: insere um link que permite cancelar a inscrição de todos os deliveries (lista de bloqueios). O conteúdo padrão associado é: &quot;Você está recebendo esta mensagem porque esteve em contato com ***nome da organização*** ou um afiliado. Para não receber mais mensagens de ***nome da organização*** clique aqui.&quot;
+* **[!UICONTROL Unsubscription link]**: insere um link que permite cancelar a inscrição de todos os deliveries (incluir na lista de bloqueios). O conteúdo padrão associado é: &quot;Você está recebendo esta mensagem porque esteve em contato com ***nome da organização*** ou um afiliado. Para não receber mais mensagens de ***nome da organização*** clique aqui.&quot;
 
-## Criar blocos de personalização customizados {#create-custom-personalization-blocks}
+## Criar blocos de personalização personalizados {#create-custom-personalization-blocks}
 
 Você pode definir novos blocos de conteúdo personalizado a serem inseridos no ícone de personalização.
 

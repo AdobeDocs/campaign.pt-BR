@@ -7,8 +7,8 @@ role: User
 exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 100%
+source-wordcount: '827'
+ht-degree: 98%
 
 ---
 
@@ -36,11 +36,11 @@ Um operador pode responder de uma das duas formas seguintes: validação usando 
 
 ## Aprovações por email {#sending-emails}
 
-É possível receber uma mensagem de aprovação contendo um link para uma página da Web pela qual é possível responder. Para que o operador de target receba um email de aprovação, o endereço de email do operador deve ser completo. Se esse não for o caso, o operador deve usar o console para responder.
+É possível receber uma mensagem de aprovação contendo um link para uma página da Web pela qual é possível responder. Para que o operador de target receba um email de aprovação, o endereço de email do operador deve ser completo. Se esse não for o caso, o operador deverá usar o console para responder.
 
-Emails de aprovação são enviados continuamente. O template do delivery padrão é **[!UICONTROL notifyAssignee]**: ele é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar templates para cada atividade.
+Emails de aprovação são enviados continuamente. O template da entrega padrão é **[!UICONTROL notifyAssignee]**: ele é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar templates para cada atividade.
 
-Os deliveries criados por meio desse template são armazenados na pasta **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
+As entregas criadas por meio desse template são armazenadas na pasta **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
 ## Aprovações pelo console {#approval-via-the-console}
 
@@ -85,7 +85,7 @@ Você pode criar quatro tipos de expirações:
 * **Delay before a given date**: a expiração é calculada subtraindo-se um período de uma data especificada. 
 * **Expiration calculated by script**: a expiração é calculada usando o JavaScript.
 
-  O exemplo a seguir calcula uma expiração 24 horas antes da data em que um delivery é iniciado (identificada por **vars.deliveryId**):
+  O exemplo a seguir calcula uma expiração 24 horas antes da data em que uma entrega é iniciada (identificada por **vars.deliveryId**):
 
   ```
   var delivery = nms.delivery.get(vars.deliveryId)

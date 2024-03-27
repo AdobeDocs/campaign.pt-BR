@@ -78,4 +78,4 @@ Se os operadores inscritos em um fórum não receberem notificações conforme e
    * Na página inicial do Adobe Campaign, navegue até **[!UICONTROL Campaigns > Navigation > Deliveries]**, em seguida, abra a **[!UICONTROL Discussion forum notification]** entrega.
    * No explorador do Campaign, navegue até **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** e, em seguida, clique em **[!UICONTROL Discussion forum notifications]**.
 
-  Na caixa **[!UICONTROL Discussion forum notifications]**, os logs do delivery são encontrados na guia **[!UICONTROL Edit > Delivery]**. Também é possível visualizá-los nas guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]**.
+  Na caixa **[!UICONTROL Discussion forum notifications]**, os logs da entrega são encontrados na guia **[!UICONTROL Edit > Delivery]**. Também é possível visualizá-los nas guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]**.

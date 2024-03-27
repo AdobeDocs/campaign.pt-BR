@@ -7,7 +7,7 @@ role: User
 exl-id: 7b94776c-2478-4e12-82a6-c94be12e7e22
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '354'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,7 @@ Para configurar uma atividade **[!UICONTROL Fork]** e suas atividades relacionad
 Neste exemplo, diferentes emails são enviados para diferentes grupos de população. Uma atividade **[!UICONTROL Fork]** é usada após um query, para executar duas ações simultaneamente:
 
 * Salve o resultado da query
-* Segmente o resultado para enviar vários deliveries
+* Segmente o resultado para enviar várias entregas
 
   ![A atividade Fork segue a interseção de dois queries e precede uma atividade de atualização de lista e uma atividade de Split.](assets/wkf_fork_example.png)
 
@@ -65,7 +65,7 @@ O fluxo de trabalho inclui estas atividades:
 
 ## Caso de uso: enviar um email de aniversário
 
-Um email recorrente é enviado para uma lista de recipients em seus aniversários. Uma atividade **[!UICONTROL Fork]** é usada para incluir recipients que nasceram em 29 de fevereiro em um ano bissexto. [Saiba mais](send-a-birthday-email.md) sobre esse caso de uso.
+Um email recorrente é enviado para uma lista de destinatários em seus aniversários. Uma atividade **[!UICONTROL Fork]** é usada para incluir destinatários que nasceram em 29 de fevereiro em um ano bissexto. [Saiba mais](send-a-birthday-email.md) sobre esse caso de uso.
 
 ![A atividade fork segue uma atividade de teste e precede duas atividades de query.](assets/birthday-workflow_usecase_1.png)
 

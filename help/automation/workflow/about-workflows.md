@@ -8,7 +8,7 @@ exl-id: 297aa4e3-b672-46b5-9016-5accee8568b8
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ O Adobe Campaign inclui um módulo de workflow que possibilita orquestrar a gama
 
 Você pode usar um workflow, por exemplo, para baixar um arquivo de um servidor, descompactar e importar registros contidos no banco de dados do Adobe Campaign.
 
-Um workflow também pode envolver um ou mais operadores a serem notificados ou que podem fazer escolhas e aprovar processos. Dessa forma, é possível criar uma ação de delivery, atribuir uma tarefa a um ou mais operadores para trabalhar no conteúdo, especificar alvos e aprovar testes antes de iniciar a delivery.
+Um workflow também pode envolver um ou mais operadores a serem notificados ou que podem fazer escolhas e aprovar processos. Dessa forma, é possível criar uma ação de entrega, atribuir uma tarefa a um ou mais operadores para trabalhar no conteúdo, especificar alvos e aprovar testes antes de iniciar a entrega.
 
 Os workflows ocorrem em vários contextos e estágios do processo de gestão de campanha.
 
@@ -38,7 +38,7 @@ O template de workflow descreve as várias tarefas a serem executadas e como ela
 
 ## Principais princípios
 
-Cada workflow contém:
+Cada fluxo de trabalho contém:
 
 * **[!UICONTROL Activities]**
 
@@ -72,7 +72,7 @@ Consulte estas seções para obter orientação e práticas recomendadas para au
 
 * Saiba mais sobre atividades de workflow [nesta página](use-workflow-data.md).
 * Saiba como criar um workflow [nesta seção](build-a-workflow.md).
-* Descubra como usar workflows para importar dados no Campaign [nesta seção](campaign-workflows.md)..
+* Saiba como usar workflows para importar dados no Campaign no [nesta seção](campaign-workflows.md)..
 * As práticas recomendadas de workflow são detalhadas [nesta página](workflow-best-practices.md).
 * Encontre orientações sobre a execução do workflow [nesta seção](start-a-workflow.md).
 * Saiba como monitorar workflows [nesta página](monitor-workflow-execution.md).

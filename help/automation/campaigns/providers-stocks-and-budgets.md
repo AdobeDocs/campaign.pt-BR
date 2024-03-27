@@ -128,7 +128,7 @@ Você pode associar informações nos processos associados ao provedor de servi�
 
 * A seção **[!UICONTROL File extraction]** indica o modelo de exportação usado para a entrega quando esse serviço é selecionado. Você pode indicar o nome do arquivo de saída no campo **[!UICONTROL Extraction file]**. O botão à direita do campo permite inserir variáveis.
 
-* A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de recipients.
+* A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de destinatários.
 
   Por padrão, os modelos de delivery para mensagens de notificação são salvos na variável **[!UICONTROL Administration > Campaign management > Technical delivery templates]** pasta, que pode ser acessada na visualização geral.
 

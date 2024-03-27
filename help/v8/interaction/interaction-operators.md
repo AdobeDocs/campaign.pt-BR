@@ -8,7 +8,7 @@ exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 37%
+ht-degree: 35%
 
 ---
 
@@ -21,14 +21,14 @@ Dois tipos de operadores podem usar a Interação de campanha: **Gerentes de ofe
 
 ## Criar um operador do Offer manager{#offer-manager}
 
-1. Criar um operador. [Saiba mais](../start/manage-permissions.md#add-users)
+1. Crie um operador. [Saiba mais](../start/manage-permissions.md#add-users)
 1. Navegue até o **[!UICONTROL Groups and named rights]** clique em **[!UICONTROL Add]** e selecione o **[!UICONTROL Offer manager]** grupo.
 
 As permissões associadas aos gerentes de oferta são descritas [aqui](../start/manage-permissions.md#ootb-productprofiles)
 
 ## Criar um operador de Gerente de delivery {#delivery-manager}
 
-1. Criar um operador. [Saiba mais](../start/manage-permissions.md#add-users)
+1. Crie um operador. [Saiba mais](../start/manage-permissions.md#add-users)
 1. Navegue até o **[!UICONTROL Groups and named rights]** clique em **[!UICONTROL Add]** e selecione o **[!UICONTROL Delivery manager]** grupo.
 
 Os direitos atribuídos aos Gerentes de delivery os habilitam a realizar as seguintes tarefas:
@@ -61,7 +61,7 @@ Os direitos atribuídos aos Gerentes de delivery os habilitam a realizar as segu
    <td> Ler<br /> </td> 
   </tr> 
   <tr> 
-   <td> Recipiente - Ambiente<br /> </td> 
+   <td> Destinatário - Ambiente<br /> </td> 
    <td> Ler / Gravar<br /> </td> 
    <td> Ler<br /> </td> 
   </tr> 
@@ -121,7 +121,7 @@ Os direitos atribuídos aos Gerentes de delivery os habilitam a realizar as segu
    <td> Ler<br /> </td> 
   </tr> 
   <tr> 
-   <td> Recipiente - Ambiente<br /> </td> 
+   <td> Destinatário - Ambiente<br /> </td> 
    <td> </td> 
    <td> Ler<br /> </td> 
   </tr> 

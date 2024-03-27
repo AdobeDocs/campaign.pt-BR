@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Práticas recomendadas de interação do Adobe Campaign
+title: Práticas recomendadas de interação com o Adobe Campaign
 description: Abordagem de práticas recomendadas para gerenciar o módulo de interação no Adobe Campaign
 feature: Interaction, Offers
 role: User, Admin
 exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 70%
+source-wordcount: '1166'
+ht-degree: 67%
 
 ---
 
@@ -24,7 +24,7 @@ Esta seção apresenta as práticas recomendadas para gerenciar o **Interação*
 
    * Para o motor em lote (normalmente usado em comunicações de saída como email), a taxa de transferência é a principal preocupação, pois vários contatos podem ser manipulados ao mesmo tempo. O afunilamento típico é o desempenho do banco de dados.
    * A restrição principal do motor unitário (normalmente usado em comunicações de entrada como um banner em um site) é latência, pois alguém espera uma resposta. O afunilamento típico é o desempenho da CPU.
-   * O design do catálogo de ofertas tem um enorme impacto no desempenho do Adobe Campaign 
+   * O design do catálogo de ofertas tem um enorme impacto no desempenho do Adobe Campaign.
    * Ao trabalhar com muitas ofertas, a prática recomendada é dividi-las em vários catálogos de ofertas.
 
 * Abaixo estão listadas algumas práticas recomendadas para trabalhar com o **regras de elegibilidade**:
@@ -55,15 +55,15 @@ Esta seção contém recomendações mais detalhadas sobre como gerenciar oferta
 
 Ao incluir ofertas em deliveries, elas são geralmente selecionadas em upstream no fluxo de trabalho do Campaign por meio de uma **Enriquecimento** atividade de workflow (ou outra atividade semelhante).
 
-Ao selecionar ofertas em uma **Enriquecimento** atividade, você pode escolher qual espaço de ofertas usar. No entanto, independentemente do espaço de ofertas selecionado, o menu de personalização do delivery depende do espaço de ofertas configurado no delivery.
+Ao selecionar ofertas em uma **Enriquecimento** atividade, você pode escolher qual espaço de ofertas usar. No entanto, independentemente do espaço de ofertas selecionado, o menu de personalização da entrega depende do espaço de ofertas configurado na entrega.
 
-No exemplo abaixo, o espaço de ofertas selecionado no delivery é **[!UICONTROL Email (Environment - Recipient)]**:
+No exemplo abaixo, o espaço de ofertas selecionado na entrega é **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Se o espaço de ofertas selecionado no delivery não tiver uma função de renderização HTML configurada, você não o verá no menu do delivery e ele não estará disponível para seleção. Isso é independente do espaço de ofertas selecionado no **Enriquecimento** atividade.
+Se o espaço de ofertas selecionado na entrega não tiver uma função de renderização HTML configurada, você não o verá no menu da entrega e ele não estará disponível para seleção. Isso é independente do espaço de ofertas selecionado no **Enriquecimento** atividade.
 
-No exemplo abaixo, a função de renderização HTML está disponível na lista suspensa porque o espaço de ofertas selecionado no delivery tem uma função de renderização:
+No exemplo abaixo, a função de renderização HTML está disponível na lista suspensa porque o espaço de ofertas selecionado na entrega tem uma função de renderização:
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
@@ -73,7 +73,7 @@ Quando você seleciona a proposta, o valor do atributo **[!UICONTROL view]** é 
 * &quot;rendering/html&quot;: html rendering. Ele usa a função de renderização HTML.
 * &quot;offer/view/html&quot;: html content. Ela não usa a função de renderização HTML. Inclui apenas o campo HTML.
 
-Ao incluir vários espaços de ofertas em um único delivery de email e se alguns deles tiverem funções de renderização e outros não, lembre-se de quais ofertas usam quais espaços e quais espaços de ofertas têm funções de renderização.
+Ao incluir vários espaços de ofertas em uma única entrega de email e se alguns deles tiverem funções de renderização e outros não, lembre-se de quais ofertas usam quais espaços e quais espaços de ofertas têm funções de renderização.
 
 Consequentemente, para evitar qualquer problema, recomenda-se que todos os espaços de ofertas tenham uma função de renderização HTML definida, mesmo se ele exigir apenas conteúdo HTML.
 

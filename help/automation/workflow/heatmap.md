@@ -7,8 +7,8 @@ role: Admin
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 99%
+source-wordcount: '1104'
+ht-degree: 98%
 
 ---
 
@@ -149,7 +149,7 @@ Nesse caso, muitos usuários estão reclamando do desempenho do workflow. Você 
 
 1. Vá para **[!UICONTROL Monitoring]** e clique no link **[!UICONTROL Workflows]** para exibir a página **[!UICONTROL Campaign Workflow HeatMap]**.
 1. Defina o filtro **[!UICONTROL Min duration]** como 5 minutos.
-1. Defina o filtro **[!UICONTROL Workflow type]** como **[!UICONTROL Marketing]**.
+1. Defina o **[!UICONTROL Workflow type]** filtrar para **[!UICONTROL Marketing]**.
 1. Na grade do HeatMap, observe o seguinte:
 
    ![](assets/wkf_monitoring_without.png)

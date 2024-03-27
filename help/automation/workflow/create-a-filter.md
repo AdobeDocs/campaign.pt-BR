@@ -7,8 +7,8 @@ role: User
 exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 100%
+source-wordcount: '204'
+ht-degree: 93%
 
 ---
 
@@ -50,4 +50,4 @@ A coluna **[!UICONTROL Taken into account if]** permite definir os critérios do
 
 Aqui, **$(/tmp/@text)=&#39;agency&#39;**
 
-A expressão **$(/tmp/@text)!=&#39;&#39;** aplica cada condição quando o campo de entrada não está vazio.
+A variável **$(/tmp/@text)!=&#39;&#39;** A expressão aplica cada condição quando o campo de entrada não está vazio.

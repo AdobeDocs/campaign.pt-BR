@@ -14,7 +14,7 @@ ht-degree: 92%
 
 # Aprovação local{#local-approval}
 
-Quando integrado em um workflow para construção do target, a atividade **[!UICONTROL Local approval]** permite configurar um processo de aprovação de recipient antes do envio da entrega.
+Quando integrado em um workflow para construção do target, a atividade **[!UICONTROL Local approval]** permite configurar um processo de aprovação de destinatário antes do envio da entrega.
 
 ![](assets/local_validation_0.png)
 
@@ -28,7 +28,7 @@ Comece inserindo um rótulo para a atividade e o campo **[!UICONTROL Action to e
 
 ![](assets/local_validation_1.png)
 
-* Selecione a opção **[!UICONTROL Target approval notification]** para enviar um email de notificação para supervisores locais antes da entrega, pedindo sua aprovação dos recipients atribuídos a eles.
+* Selecione a opção **[!UICONTROL Target approval notification]** para enviar um email de notificação para supervisores locais antes da entrega, pedindo sua aprovação dos destinatários atribuídos a eles.
 
 * **Query incremental**: permite executar um query e planejar sua execução. Consulte a seção [Query incremental](incremental-query.md).
 
@@ -50,8 +50,8 @@ Os campos a serem inseridos no caso de uma notificação para aprovação de tar
 
 * **[!UICONTROL Approval management]**
 
-   * Selecione o template de entrega e o assunto que será usado para a notificação por email. Um template padrão está disponível: **[!UICONTROL Local approval notification]**. Você também pode adicionar uma descrição que aparecerá acima das listas de recipients nas notificações de aprovação e de feedback.
-   * Especifique o **[!UICONTROL Approval type]** que corresponda ao prazo final de aprovação (data ou prazo final do início da aprovação). Nesta data, o workflow começa novamente e os recipients que não foram aprovados não serão considerados no target. Depois que as notificações forem enviadas, a atividade será colocada em fila para que os supervisores locais possam aprovar seus contatos.
+   * Selecione o template de entrega e o assunto que será usado para a notificação por email. Um template padrão está disponível: **[!UICONTROL Local approval notification]**. Você também pode adicionar uma descrição que aparecerá acima das listas de destinatários nas notificações de aprovação e de feedback.
+   * Especifique o **[!UICONTROL Approval type]** que corresponda ao prazo final de aprovação (data ou prazo final do início da aprovação). Nesta data, o workflow começa novamente e os destinatários que não foram aprovados não serão considerados no target. Depois que as notificações forem enviadas, a atividade será colocada em fila para que os supervisores locais possam aprovar seus contatos.
 
      >[!NOTE]
      >

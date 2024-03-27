@@ -8,7 +8,7 @@ exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
 source-wordcount: '1167'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
@@ -69,7 +69,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 
 >[!NOTE]
 >
->O número de quarentenas aumenta com o tempo. Por exemplo, se o tempo de vida de um endereço de email for considerado três anos e a tabela de recipients aumentar em 50% todo ano, o aumento da quarentena poderá ser calculado da seguinte maneira:
+>O número de quarentenas aumenta com o tempo. Por exemplo, se o tempo de vida de um endereço de email for considerado três anos e a tabela de destinatários aumentar em 50% todo ano, o aumento da quarentena poderá ser calculado da seguinte maneira:
 >
 >Fim do Ano 1: (1&#42;0,33)/(1+0,5)=22%.
 >
@@ -83,7 +83,7 @@ Saiba mais sobre endereços rejeitados na [Guia de práticas recomendadas de cap
 
 Você pode consultar o status do endereço de email de qualquer recipient.
 
-Para fazer isso, selecione o perfil do recipient e clique na guia **[!UICONTROL Deliveries]**. Para todos os deliveries para esse recipient, você pode descobrir se o endereço falhou, estava em quarentena durante a análise etc.
+Para fazer isso, selecione o perfil do destinatário e clique na guia **[!UICONTROL Deliveries]**. Para todos os deliveries para esse recipient, você pode descobrir se o endereço falhou, estava em quarentena durante a análise etc.
 
 Para cada pasta, é possível exibir apenas os recipients cujo endereço de email está em quarentena, com a variável **[!UICONTROL Quarantined email address]** filtro incorporado, como abaixo:
 
@@ -104,7 +104,7 @@ O status muda então para **[!UICONTROL Valid]**.
 
 >[!CAUTION]
 >
-Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** nunca serão removidos, mesmo se receberem um email.
+Os destinatários com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** nunca serão removidos, mesmo se receberem um email.
 
 Você também pode remover manualmente um endereço da lista da quarentena. Para remover um endereço da quarentena, você pode:
 
@@ -120,8 +120,8 @@ Abaixo estão as diretrizes recomendadas para esta consulta:
 
 * **O texto de erro (texto de quarentena)** contém “Momen_Code10_InvalidRecipient”
 * **Domínio de email (@domain)** igual a domain1.com OU **Domínio de email (@domain)** igual a domain2.com OU **Domínio de email (@domain)** igual a domain3.com
-* **Atualizar status (@lastModified)** em ou depois de `MM/DD/YYYY HH:MM:SS AM`
-* **Atualizar status (@lastModified)** em ou antes de `MM/DD/YYYY HH:MM:SS PM`
+* **Atualizar status (@lastModified)** em ou depois de `MM/DD/YYYY HH:MM:SS AM`
+* **Atualizar status (@lastModified)** em ou antes de `MM/DD/YYYY HH:MM:SS PM`
 
 Depois de ter a lista de recipients afetados, adicione um **[!UICONTROL Update data]** atividade para definir seu status como **[!UICONTROL Valid]** portanto, eles serão removidos da lista de quarentena pelo **[!UICONTROL Database cleanup]** workflow,. Também é possível excluí-los da tabela de quarentena.
 

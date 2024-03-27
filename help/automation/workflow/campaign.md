@@ -8,14 +8,14 @@ topic-tags: technical-workflows
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '155'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 
 # Campanha{#campaign}
 
-Os workflows detalhados abaixo são instalados com o módulo **Campaign** por padrão.
+Os workflows detalhados abaixo são instalados com o **Campaign** por padrão.
 
 >[!CAUTION]
 >
@@ -31,7 +31,7 @@ Os workflows detalhados abaixo são instalados com o módulo **Campaign** por pa
   <tr> 
    <td> <span class="uicontrol">Cost calculation</span> <br /> </td> 
    <td> <span class="uicontrol">budgetMgt</span><br /> </td> 
-   <td> Esse workflow inicia o cálculo das linhas de despesas e custos nos orçamentos, planos, programas, campanhas, deliveries e tarefas.<br /> </td> 
+   <td> Esse workflow inicia o cálculo das linhas de despesas e custos nos orçamentos, planos, programas, campanhas, entregas e tarefas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Stock: Orders and alerts</span> <br /> </td> 
@@ -41,7 +41,7 @@ Os workflows detalhados abaixo são instalados com o módulo **Campaign** por pa
   <tr> 
    <td> <span class="uicontrol">Empregos em deliveries em campanhas</span><br /> </td> 
    <td> <span class="uicontrol">deliveryMgt</span><br /> </td> 
-   <td> Esse workflow aciona os deliveries aprovados e inicia o pós-processamento no provedor de serviços para um delivery externo. Também envia notificações e lembretes de aprovação.<br /> </td> 
+   <td> Esse fluxo de trabalho aciona as entregas aprovadas e inicia o pós-processamento no provedor de serviços para uma entrega externa. Também envia notificações e lembretes de aprovação.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Campaign jobs</span> <br /> </td> 
@@ -51,7 +51,7 @@ Os workflows detalhados abaixo são instalados com o módulo **Campaign** por pa
   <tr> 
    <td> <span class="uicontrol">Empregos em prestadores de serviços</span> <br /> </td> 
    <td> <span class="uicontrol">vendorMgt</span><br /> </td> 
-   <td> Esse workflow inicia processos do provedor de serviços (email para o roteador e o pós-processamento) após a aprovação de deliveries. <br /> </td> 
+   <td> Esse workflow inicia processos do provedor de serviços (email para o roteador e o pós-processamento) após a aprovação de entregas. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

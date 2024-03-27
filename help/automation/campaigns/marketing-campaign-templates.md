@@ -132,7 +132,7 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
 * **Outline de entrega**
 
-  Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir os delivery outlines da campanha. Saiba mais sobre delivery outlines [nesta seção](marketing-campaign-assets.md#delivery-outlines).
+  Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir as descrições das entregas da campanha. Saiba mais sobre descrições das entregas [nesta seção](marketing-campaign-assets.md#delivery-outlines).
 
   ![](assets/template-activate-4.png)
 

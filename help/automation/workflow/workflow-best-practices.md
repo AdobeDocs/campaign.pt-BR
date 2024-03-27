@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
 source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 81%
+source-wordcount: '1353'
+ht-degree: 82%
 
 ---
 
@@ -30,7 +30,7 @@ Se o workflow fizer parte de um processo envolvendo vários workflows, você pod
 
 Por exemplo:
 
-* 001 – Importar – Importação de recipientes
+* 001 – Importar – Importação de destinatárioes
 * 002 – Importar – Importação de vendas
 * 003 – Importar – Importação de detalhes de vendas
 * 010 – Exportar – Exportação de logs de entregas
@@ -72,7 +72,7 @@ O Workflow HeatMap permite aos administradores da plataforma Adobe Campaign moni
 
 Ao desenvolver seu workflow, todas as atividades terão um nome, como todos os objetos do Adobe Campaign. Embora o nome seja gerado pela ferramenta, recomendamos que você renomeie com um nome explícito ao configurá-lo. O risco de fazer isso depois é que pode interromper o workflow com atividades usando o nome de outra atividade anterior. Portanto, seria um trabalho difícil atualizar os nomes depois.
 
-O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não os deixe nomeados **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, mas forneça nomes explícitos como **[!UICONTROL querySubscribedRecipients]**. Esse nome aparecerá no diário e, se aplicável, nos logs SQL, e isso ajudará a depurar o fluxo de trabalho ao configurá-lo.
+O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não use nomes como **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, mas sim nomes explícitos como **[!UICONTROL querySubscribedRecipients]**.  Esse nome aparecerá no diário e, se aplicável, nos logs SQL, e isso ajudará a depurar o fluxo de trabalho ao configurá-lo.
 
 ### Primeira e última atividades {#first-and-last-activities}
 

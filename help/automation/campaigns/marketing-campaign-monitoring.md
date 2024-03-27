@@ -8,7 +8,7 @@ exl-id: 13a7432e-6216-4a5c-84fc-bc374b5af5ee
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 52%
+ht-degree: 46%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 52%
 
 ## Rastrear uma campanha {#tracking-a-campaign}
 
-Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todas as tarefas e os status.
+Para cada campanha, a variável **[!UICONTROL Tracking]** permite visualizar todas as tarefas e os status.
 
 As seguintes informações podem ser acessadas por meio desta subguia:
 
@@ -24,7 +24,7 @@ As seguintes informações podem ser acessadas por meio desta subguia:
 
   ![](assets/campaign-audit-tab.png)
 
-* A variável **[!UICONTROL Deliveries]** A subguia contém todos os deliveries da campanha. Eles podem ser editados nessa visualização. Para fazer isso, selecione o delivery e clique no ícone **[!UICONTROL Detail]**.
+* A variável **[!UICONTROL Deliveries]** A subguia contém todos os deliveries da campanha. Eles podem ser editados nessa visualização. Para fazer isso, selecione a entrega e clique no ícone **[!UICONTROL Detail]**.
 
   ![](assets/campaign-delivery-tab.png)
 
@@ -34,13 +34,13 @@ As seguintes informações podem ser acessadas por meio desta subguia:
 
 ## Rastrear entregas {#delivery-tracking}
 
-A lista de está disponível através do link **[!UICONTROL Deliveries]** Deliveries do nó do Campaign.
+A lista de entregas está disponível através do link **[!UICONTROL Deliveries]** do nó do Campaign.
 
 ![](assets/filter-deliveries-from-homepage.png)
 
-Para cada delivery, essa lista permite acessar os indicadores-chave: status, número de recipients direcionados, campanhas vinculadas, etc.
+Para cada entrega, essa lista permite acessar os indicadores-chave: status, número de destinatários direcionados, campanhas vinculadas, etc.
 
-Para verificar o status de um delivery, edite-o e exiba seu painel e guias.
+Para verificar o status de uma entrega, edite-a e exiba seu painel e guias.
 
 <!--
 >[!NOTE]

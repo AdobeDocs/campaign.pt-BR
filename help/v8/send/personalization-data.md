@@ -8,7 +8,7 @@ exl-id: 711256e2-ab77-404a-b052-6793a85da193
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 46%
+ht-degree: 38%
 
 ---
 
@@ -46,19 +46,19 @@ Ao usar dados externos acessados na FDA, é recomendável pré-processar a perso
 
 ### Otimizar personalização {#optimize-personalization}
 
-Você pode otimizar a personalização usando uma opção dedicada: **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de delivery.
+Você pode otimizar a personalização usando uma opção dedicada: **[!UICONTROL Prepare the personalization data with a workflow]**, disponível no **[!UICONTROL Analysis]** das propriedades de delivery.
 
-Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao público-alvo em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
+Durante a análise de entrega, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao público-alvo em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
 
-Marcar essa opção pode melhorar muito o desempenho da análise de delivery quando muitos dados estão sendo processados, especialmente se os dados de personalização vêm de uma tabela externa por meio do FDA. [Saiba mais](../connect/fda.md).
+Marcar essa opção pode melhorar muito o desempenho da análise de entrega quando muitos dados estão sendo processados, especialmente se os dados de personalização vêm de uma tabela externa por meio do FDA. [Saiba mais](../connect/fda.md).
 
 Para usar essa opção, siga as etapas abaixo:
 
 1. Crie uma campanha.
-1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao workflow.
-1. Adicione uma atividade **[!UICONTROL Email delivery]** ao workflow e depois a abra.
+1. No **[!UICONTROL Targeting and workflows]** da sua campanha, adicione uma **Query** atividade ao seu fluxo de trabalho.
+1. Adicionar um **[!UICONTROL Email delivery]** ao workflow e abra-a.
 1. Vá até a guia **[!UICONTROL Analysis]** do **[!UICONTROL Delivery properties]** e selecione a opção **[!UICONTROL Prepare the personalization data with a workflow]**.
-1. Configure o delivery e comece o workflow para iniciar a análise.
+1. Configure a entrega e comece o workflow para iniciar a análise.
 
 Depois que a análise é feita, os dados da personalização são armazenados em uma tabela temporária por meio de um workflow temporário criado em tempo real durante a análise.
 

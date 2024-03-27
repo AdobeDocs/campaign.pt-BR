@@ -53,11 +53,11 @@ Criação do diagrama
 
 1. Adicione uma atividade ao selecioná-la na paleta e move-la para o diagrama usando uma operação de arrastar e soltar.
 
-   Adicione uma atividade de **Start** e, em seguida, uma atividade **Delivery** no diagrama.
+   Adicione uma atividade de **Iniciar** e, em seguida, uma atividade **Entrega** no diagrama.
 
    ![](assets/new-workflow-3.png)
 
-1. Vincule as atividades ao arrastar a atividade de transição **Start** e soltar na atividade de **Delivery**.
+1. Vincule as atividades ao arrastar a atividade de transição **Iniciar** e soltar na atividade de **Entrega**.
 
    ![](assets/new-workflow-4.png)
 
@@ -135,7 +135,7 @@ Além das propriedades usuais do workflow, as propriedades do template permitem 
 
 >[!CAUTION]
 >
->O comando copiar-colar está disponível em workflows, mas recomendamos que você use o **Duplicate**. Depois que uma atividade é copiada, toda a sua configuração é mantida. Para atividades de delivery (Email, SMS, Notificação por push...), o objeto de delivery anexado à atividade também é copiado, o que pode resultar em falha.
+>O comando copiar-colar está disponível em workflows, mas recomendamos que você use o **Duplicate**. Depois que uma atividade é copiada, toda a sua configuração é mantida. Para atividades de entrega (Email, SMS, Notificação por push...), o objeto da entrega anexado à atividade também é copiado, o que pode resultar em falha.
 
 1. Clique com o botão direito do mouse em um workflow.
 1. Clique em **Duplicate**.

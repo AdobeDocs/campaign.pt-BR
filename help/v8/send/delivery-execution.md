@@ -8,7 +8,7 @@ exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 73%
+ht-degree: 54%
 
 ---
 
@@ -22,19 +22,19 @@ Quando o enriquecimento estiver concluído e um template do delivery estiver vin
 >
 >As mensagens transacionais são priorizadas sobre qualquer outro delivery.
 
-Todos os deliveries são agrupados na pasta **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**.
+Todas as entregas são agrupadas na pasta **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**.
 
-Por padrão, eles são classificados em subpastas por mês de delivery. Isso pode ser alterado nas propriedades do template de mensagem.
+Por padrão, elas são classificadas em subpastas por mês de entrega. Isso pode ser alterado nas propriedades do template de mensagem.
 
 ## Monitorar mensagens {#monitor-transactional-msg}
 
-Para monitorar as mensagens transacionais, verifique os [logs do delivery](send.md).
+Para monitorar as mensagens transacionais, verifique os [logs da entrega](send.md).
 
-Os deliveries transacionais enviados da instância de execução são sincronizados de volta à instância de controle por meio de um fluxo de trabalho técnico (**[!UICONTROL Message Center execution instance]**) que é executado a cada hora.
+As entregas transacionais enviadas da instância de execução são sincronizadas de volta à instância de controle por meio de um fluxo de trabalho técnico (**[!UICONTROL Message Center execution instance]**) que é executado a cada hora.
 
 >[!NOTE]
 >
->Os deliveries acumulam semanalmente os eventos com base na atualização mais recente do evento, e não na data de criação do evento. Portanto, ao extrair logs do delivery de mensagens transacionais da instância de controle, a ID do delivery associada a cada ID de log do delivery pode mudar com o tempo, conforme o log é atualizado (por exemplo, quando uma rejeição de entrada é recebida para o evento).
+>As entregas acumulam semanalmente os eventos com base na atualização mais recente do evento, e não na data de criação do evento. Portanto, ao extrair logs da entrega de mensagens transacionais da instância de controle, a ID da entrega associada a cada ID de log da entrega pode mudar com o tempo, conforme o log é atualizado (por exemplo, quando uma rejeição de entrada é recebida para o evento).
 
 <!--
 To monitor the activity and running of the execution instance(s), see [Transactional messaging reports](transactional-messaging-reports.md).-->
@@ -67,7 +67,7 @@ Você pode exibir estatísticas globais ou aquelas relativas a uma instância de
 Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** são calculados sobre o período selecionado:
 
 * **[!UICONTROL Average queuing time]**: o tempo médio que processou eventos com êxito no Centro de mensagens. Somente o tempo de processamento é levado em conta.
-* **[!UICONTROL Average message sending time (s)]**: o tempo médio que processou eventos com êxito no Centro de mensagens. Somente o tempo de delivery mta é levado em conta.
+* **[!UICONTROL Average message sending time (s)]**: o tempo médio que processou eventos com êxito no Centro de mensagens. Somente o tempo de entrega mta é levado em conta.
 * **[!UICONTROL Average processing time (s)]**: o tempo médio que processou eventos com êxito no Centro de mensagens. O cálculo leva em conta o tempo do processamento e o tempo de envio mta.
 * **[!UICONTROL Maximum number of queued events]**: número máximo de eventos presentes na fila do Centro de mensagens em um determinado momento.
 * **[!UICONTROL Minimum number of queued events]**: número mínimo de eventos presentes na fila do Centro de mensagens em um determinado momento.
@@ -93,8 +93,8 @@ Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** s
 * **[!UICONTROL Incoming (event vol)]**: número de eventos inseridos na fila do Centro de mensagens.
 * **[!UICONTROL Outgoing (throughput msg/h)]**: número médio de horas de eventos de saída bem-sucedidos do Centro de mensagens (enviados por um delivery).
 * **[!UICONTROL Outgoing (msg vol)]**: número de eventos de saída bem-sucedidos do Centro de mensagens (enviados por um delivery).
-* **[!UICONTROL Average sending time (seconds)]** : tempo médio gasto no Centro de mensagens para eventos processados com êxito. O cálculo leva em conta o tempo do processamento e o tempo de envio mta.
-* **[!UICONTROL Error rate]**: número de eventos com erros comparados ao número de eventos que entraram na fila do Centro de mensagens. Os erros a seguir são levados em conta: erro de roteamento, evento expirado (evento que está na fila por muito tempo), erro de delivery, ignorado pelo delivery (quarentena, etc.).
+* **[!UICONTROL Average sending time (seconds)]**: tempo médio gasto no Centro de mensagens para eventos processados com êxito. O cálculo leva em conta o tempo do processamento e o tempo de envio mta.
+* **[!UICONTROL Error rate]**: número de eventos com erros comparados ao número de eventos que entraram na fila do Centro de mensagens. Os erros a seguir são levados em conta: erro de roteamento, evento expirado (evento que está na fila por muito tempo), erro de entrega, ignorado pela entrega (quarentena, etc.).
 
 >[!NOTE]
 >

@@ -7,7 +7,7 @@ role: User
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1135'
 ht-degree: 98%
 
 ---
@@ -127,7 +127,7 @@ O procedimento de implementação depende do tipo de pacote de campanha usado e 
 ### Tarefas do integrador {#integrator-side}
 
 1. Criar entidades locais.
-1. Vincule recipients com os operadores que gerenciam entidades locais.
+1. Vincule destinatários com os operadores que gerenciam entidades locais.
 
    ![](assets/mkg_dist_local_entity_association.png)
 

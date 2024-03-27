@@ -8,7 +8,7 @@ exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 38%
+ht-degree: 34%
 
 ---
 
@@ -93,18 +93,18 @@ Para criar dimensões, siga as etapas abaixo:
 
 Para fazer isso, marque a opção **[!UICONTROL Enable binning]**. [Saiba mais](customize-cubes.md#data-binning).
 
-1. Adicione uma dimensão do tipo **Data.** Aqui, queremos exibir as datas de criação do perfil de recipient.. Para fazer isso, clique em **[!UICONTROL Add]** e selecione o campo **[!UICONTROL Creation date]** na tabela de recipients.
+1. Adicione uma dimensão do tipo **Data.** Aqui, queremos exibir as datas de criação do perfil de recipient. Para fazer isso, clique em **[!UICONTROL Add]** e selecione o **[!UICONTROL Creation date]** na tabela de recipients.
 Você pode personalizar o modo de exibição de data. Para fazer isso, selecione a hierarquia a ser usada e os níveis para gerar:
 
 ![](assets/cube-date-dimension.png)
 
 No nosso exemplo, queremos exibir apenas anos, meses e dias. Observe que você não pode trabalhar com semanas e semestres/meses ao mesmo tempo: esses níveis não são compatíveis.
 
-1. Crie outra dimensão para analisar dados relativos à cidade do recipient. Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do schema do recipient.
+1. Crie outra dimensão para analisar dados relativos à cidade do recipient. Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do schema do destinatário.
 
 Você pode habilitar a compartimentalização para facilitar a leitura das informações e vincular os valores a uma enumeração.
 
-Selecione a enumeração na lista suspensa.. Observe que essa enumeração deve ser definida como **[!UICONTROL Reserved for binning]**.
+Selecione a enumeração na lista suspensa. Observe que essa enumeração deve ser definida como **[!UICONTROL Reserved for binning]**.
 
 ![](assets/cube-dimension-with-enum.png)
 

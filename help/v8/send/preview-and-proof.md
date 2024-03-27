@@ -1,5 +1,5 @@
 ---
-title: Visualizar e testar o email
+title: Pré-visualizar e testar o email
 description: Saiba como validar seu delivery antes de enviar
 feature: Personalization
 role: User
@@ -8,13 +8,13 @@ exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
 source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
 source-wordcount: '703'
-ht-degree: 18%
+ht-degree: 14%
 
 ---
 
-# Visualizar e testar o email {#preview-test}
+# Pré-visualizar e testar o email {#preview-test}
 
-Após definir o conteúdo da mensagem, é possível usar perfis de teste para visualizar e testar o conteúdo. Se você inseriu [conteúdo personalizado](personalize.md), é possível verificar como esse conteúdo é exibido na mensagem, usando os dados do perfil de teste. Além disso, para detectar possíveis erros no conteúdo da mensagem ou nas configurações de personalização, envie provas para perfis de teste. Uma prova deve ser enviada sempre que uma alteração for feita, para validar o conteúdo mais recente.
+Depois que o conteúdo da mensagem for definido, você poderá usar perfis de teste para pré-visualizá-la e testá-la. Se você inseriu [conteúdo personalizado](personalize.md), é possível verificar como esse conteúdo é exibido na mensagem, usando os dados do perfil de teste. Além disso, para detectar possíveis erros no conteúdo da mensagem ou nas configurações de personalização, envie provas para perfis de teste. Uma prova deve ser enviada sempre que uma alteração for feita, para validar o conteúdo mais recente.
 
 ## Visualização de conteúdo{#preview-content}
 
@@ -64,7 +64,7 @@ Por padrão, a substituição é executada aleatoriamente, mas você pode seleci
   >
   >Os seed addresses não pertencem à tabela de recipient padrão (nms:recipient), pois são criados em uma tabela separada. Se a tabela de recipients é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados.
 
-  Saiba mais sobre seed addresses [nesta seção](../audiences/test-profiles.md).
+  Saiba mais sobre seed addresses em [nesta seção](../audiences/test-profiles.md).
 
 * Use o **[!UICONTROL Specific target and Seed addresses]** opção para combinar seed addresses e endereços de email específicos. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 
@@ -101,7 +101,7 @@ Por padrão, as mensagens de prova são identificadas pela variável `Proof #N` 
 ![](assets/proof-parameters.png){width="800" align="left"}
 
 
-## Vídeo explicativo {#video-proof}
+## Vídeo tutorial {#video-proof}
 
 Saiba como enviar e validar uma prova para uma entrega de email.
 

@@ -7,7 +7,7 @@ role: User
 exl-id: 8ea831e2-8e6e-4ef0-ac05-f27ebf89ccb9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '359'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Uma atividade do tipo **Exclusão** cria um target com base em um target principal do qual um ou mais target são extraídos.
 
-Para configurar essa atividade, insira seu rótulo e selecione o conjunto principal de recipients: o público do conjunto principal permite construir o resultado. Os perfis compartilhados pelo conjunto principal e pelo menos uma das atividades de entrada serão excluídos.
+Para configurar essa atividade, insira seu rótulo e selecione o conjunto principal de destinatários: o público do conjunto principal permite construir o resultado. Os perfis compartilhados pelo conjunto principal e pelo menos uma das atividades de entrada serão excluídos.
 
 ![](assets/s_user_segmentation_exclu.png)
 
@@ -32,13 +32,13 @@ Marque a opção **[!UICONTROL Generate complement]** se desejar explorar a popu
 
 ## Exemplos de exclusão {#exclusion-examples}
 
-O exemplo a seguir busca compilar uma lista de recipients com idade entre 18 e 30 anos e excluir os moradores de Paris.
+O exemplo a seguir busca compilar uma lista de destinatários com idade entre 18 e 30 anos e excluir os moradores de Paris.
 
-1. Insira e abra uma atividade do tipo **[!UICONTROL Exclusion]** seguida de dois queries. O primeiro query destina-se aos recipients que moram em Paris. O segundo query destina-se aos com idade de 18 a 30 anos.
+1. Insira e abra uma atividade do tipo **[!UICONTROL Exclusion]** seguida de dois queries. O primeiro query destina-se aos destinatários que moram em Paris. O segundo query destina-se aos com idade de 18 a 30 anos.
 1. Insira o conjunto principal. Aqui, o conjunto principal é o query de **18-30 anos.** Os elementos pertencentes ao segundo conjunto serão excluídos do resultado final.
-1. Marque a opção **[!UICONTROL Generate complement]** se quiser explorar os dados restantes após a exclusão. Nesse caso, o complemento é composto por recipients com idade entre 18 e 30 anos que vivem em Paris.
+1. Marque a opção **[!UICONTROL Generate complement]** se quiser explorar os dados restantes após a exclusão. Nesse caso, o complemento é composto por destinatários com idade entre 18 e 30 anos que vivem em Paris.
 1. Aprove a configuração de exclusão e depois insira uma atividade de lista de atualização no resultado. Você também pode inserir uma atualização de lista adicional no complemento onde for necessário.
-1. Execute o workflow Neste exemplo, o resultado é composto por recipients com idade entre 18 e 30 anos, mas esses que moram em Paris são excluídos e enviados ao complemento.
+1. Execute o workflow Neste exemplo, o resultado é composto por destinatários com idade entre 18 e 30 anos, mas esses que moram em Paris são excluídos e enviados ao complemento.
 
    ![](assets/exclusion_example.png)
 

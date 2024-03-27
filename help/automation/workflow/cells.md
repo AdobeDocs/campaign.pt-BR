@@ -8,7 +8,7 @@ exl-id: d85645a6-fc15-4c3a-9d67-d4230224e1f7
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 28%
+ht-degree: 13%
 
 ---
 
@@ -18,7 +18,7 @@ A variável **[!UICONTROL Cells]** A atividade fornece uma visualização dos v�
 
 ![](assets/wf_split_cells.png)
 
-Essa atividade pode ser configurada para inserir parâmetros específicos com base nas necessidades do usuário. Por padrão, os detalhes de cada subconjunto são detalhados em uma janela dedicada por meio das guias **[!UICONTROL Cells]** e **[!UICONTROL Advanced]**.
+Essa atividade pode ser configurada para inserir parâmetros específicos com base nas necessidades do usuário. Por padrão, os detalhes de cada subconjunto são detalhados em uma janela dedicada por meio do **[!UICONTROL Cells]** e **[!UICONTROL Advanced]** guias.
 
 ![](assets/wf_split_cells_with_customization.png)
 

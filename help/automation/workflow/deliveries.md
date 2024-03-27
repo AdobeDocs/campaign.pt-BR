@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Deliveries
-description: Saiba mais sobre os workflows de delivery padrão
+title: Entregas
+description: Saiba mais sobre os workflows de entrega padrão
 feature: Workflows
 role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 100%
+source-wordcount: '317'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Deliveries** por padrão.
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Entregas** por padrão.
 
 <table> 
  <tbody> 
@@ -63,12 +63,12 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Deliveri
   <tr> 
    <td> <span class="uicontrol">Previsão</span> <br /> </td> 
    <td> <span class="uicontrol">previsão</span> <br /> </td> 
-   <td> Esse fluxo de trabalho analisa os deliveries salvos no calendário provisional (cria logs provisionais). É acionado todos os dias às 1:00 AM por padrão.<br /> </td> 
+   <td> Esse fluxo de trabalho analisa as entregas salvas no calendário provisional (cria logs provisionais). É acionado todos os dias às 1:00 AM por padrão.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Rastreamento</span> <br /> </td> 
    <td> <span class="uicontrol">tracking</span> <br /> </td> 
-   <td> Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de delivery, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. <br /> </td> 
+   <td> Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de entrega, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -27,9 +27,9 @@ Você pode personalizar o conteúdo da mensagem ao:
 
 * Inserir **campos de personalização** dinâmicos
 
-  Os campos de personalização são usados na personalização de primeiro nível das mensagens. Você pode selecionar qualquer campo disponível no banco de dados no editor de personalização. Para uma entrega, é possível selecionar qualquer campo relacionado ao recipient, à mensagem ou à entrega. Esses atributos de personalização podem ser inseridos na linha de assunto ou no corpo das mensagens. [Saiba mais](personalization-fields.md).
+  Os campos de personalização são usados na personalização de primeiro nível das mensagens. Você pode selecionar qualquer campo disponível no banco de dados no editor de personalização. Para uma entrega, é possível selecionar qualquer campo relacionado ao destinatário, à mensagem ou à entrega. Esses atributos de personalização podem ser inseridos na linha de assunto ou no corpo das mensagens. [Saiba mais](personalization-fields.md).
 
-  A sintaxe a seguir insere a cidade do recipient no conteúdo: &lt;%= recipient.location.city %>.
+  A sintaxe a seguir insere a cidade do destinatário no conteúdo: &lt;%= recipient.location.city %>.
 
 * Inserção de **blocos de conteúdo** predefinidos
 

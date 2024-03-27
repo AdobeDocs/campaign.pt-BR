@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 76%
+source-wordcount: '692'
+ht-degree: 72%
 
 ---
 
@@ -26,7 +26,7 @@ Um modelo pode incluir:
 * Conteúdo, logotipo da empresa ou assinatura
 * Outras propriedades de entrega, como validade de recurso, parâmetros de nova tentativa ou configurações de quarentena.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#delivery-template-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#delivery-template-video)
 
 
 ## Criar um modelo{#create-a-delivery-template}
@@ -57,7 +57,7 @@ O modelo será adicionado à lista de modelos de entrega. Agora você pode selec
 
 ### Conversão de uma entrega já existente em um modelo {#convert-an-existing-delivery}
 
-Uma entrega pode ser convertida em um modelo para novas ações de entrega repetidas.
+Um delivery pode ser convertido em um template para novas ações de delivery repetidas.
 
 Para converter uma entrega em um modelo, siga as etapas abaixo:
 
@@ -80,20 +80,20 @@ Para converter uma entrega em um modelo, siga as etapas abaixo:
 Para configurar um modelo de entrega do zero, siga as etapas abaixo:
 
 1. Navegue até o **Recursos** no explorador do Campaign e selecione **Modelos** depois **Modelos de entrega**.
-1. Clique em **New** na barra de ferramentas para criar um novo template de delivery.
+1. Clique em **New** na barra de ferramentas para criar um novo template de entrega.
 1. Defina o **Rótulo** e a variável **Nome interno** da pasta.
 1. Salve seu template e abra-o novamente.
 1. No **Propriedades** adapte as configurações.
 1. Na guia **General**, confirme ou altere os locais selecionados nos menus suspensos **Execution folder**, **Folder**, e **Routing.**
 1. Complete a categoria **Email parameters** com o assunto do email e o público alvo.
-1. Adicione seu **HTML** content para personalizar seu template, você pode exibir um link de mirror page e um link de unsubscription.[](../send/mirror-page.md)
-1. Selecione a guia **Preview.** No menu suspenso **Test personalization**, selecione **Recipient** para visualizar seu template como o perfil escolhido.
+1. Adicione **conteúdo do HTML** para personalizar o template, é possível exibir um [link de mirror page](../send/mirror-page.md) e um link de unsubscription.
+1. Selecione a guia **Preview.** No menu suspenso **Test personalization**, selecione **Destinatário** para visualizar seu template como o perfil escolhido.
 1. Clique em **Save**. Seu template está pronto para ser usado em uma entrega.
 
 
 ## Usar modelos{#use-a-delivery-template}
 
-### Criar um delivery a partir de um modelo{#create-a-delivery-from-a-template}
+### Criar uma entrega a partir de um modelo{#create-a-delivery-from-a-template}
 
 Para criar uma entrega com base em um modelo existente, selecione um modelo disponível na lista..
 
@@ -105,7 +105,7 @@ Se não conseguir ver o modelo, clique no link **[!UICONTROL Select link]** à d
 
 Selecione o diretório desejado no campo **[!UICONTROL Folder]** ou clique no ícone **[!UICONTROL Display sub-levels]** para exibir o conteúdo dos diretórios nas subárvores do diretório atual.
 
-Selecione o template de delivery a ser usado e clique em **[!UICONTROL Ok]**.
+Selecione o template de entrega a ser usado e clique em **[!UICONTROL Ok]**.
 
 ### Executar um modelo {#execute-a-template}
 
@@ -117,9 +117,9 @@ Você também pode usar **[!UICONTROL File>Actions>Execute the delivery template
 
 ![](assets/execute-delivery-template.png)
 
-Insira os parâmetros de delivery e clique em **[!UICONTROL Send]**.
+Insira os parâmetros de entrega e clique em **[!UICONTROL Send]**.
 
-Essa ação gera um delivery na pasta associada ao template. O nome desse delivery é o nome do template de delivery do qual foi criado.
+Essa ação gera um delivery na pasta associada ao template. O nome dessa entrega é o nome do template de entrega do qual foi criado.
 
 
 ## Tutoriais em vídeo {#delivery-template-video}
@@ -142,4 +142,4 @@ Este vídeo explica como implantar um template de entrega de email ad-hoc, bem c
 
 >[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

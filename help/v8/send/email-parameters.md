@@ -30,11 +30,11 @@ Selecione o formato do email na seção inferior da janela:
 
 * **[!UICONTROL Use recipient preferences]** (modo padrão)
 
-  O formato da mensagem é definido de acordo com os dados armazenados no perfil do recipient e armazenado por padrão no campo **[!UICONTROL email format]** (@emailFormat). Se um recipient deseja receber mensagens em determinado formato, esse será o formato enviado. Se o campo não estiver preenchido, uma mensagem multipart-alternative será enviada (veja abaixo).
+  O formato da mensagem é definido de acordo com os dados armazenados no perfil do destinatário e armazenado por padrão no campo **[!UICONTROL email format]** (@emailFormat). Se um destinatário deseja receber mensagens em determinado formato, esse será o formato enviado. Se o campo não estiver preenchido, uma mensagem multipart-alternative será enviada (veja abaixo).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-  A mensagem contém os dois formatos: texto e HTML. O formato exibido no recebimento depende da configuração do software de email do recipient (multipart-alternative).
+  A mensagem contém os dois formatos: texto e HTML. O formato exibido no recebimento depende da configuração do software de email do destinatário (multipart-alternative).
 
   >[!IMPORTANT]
   >
@@ -42,7 +42,7 @@ Selecione o formato do email na seção inferior da janela:
 
 * **[!UICONTROL Send all messages in text format]**
 
-  A mensagem é enviada em formato de texto. O formato HTML não será enviado, mas usado somente para a mirror page quando o recipient clicar na mensagem.
+  A mensagem é enviada em formato de texto. O formato HTML não será enviado, mas usado somente para a mirror page quando o destinatário clicar na mensagem.
 
 <!--
 >[!NOTE]
@@ -53,9 +53,9 @@ Selecione o formato do email na seção inferior da janela:
 
 Na guia **[!UICONTROL SMTP]** dos parâmetros da entrega, a seção **[!UICONTROL Character encoding]** permite definir uma codificação específica.
 
-A codificação padrão é UTF-8. Se alguns dos provedores de email de seus recipients não oferecerem suporte à codificação padrão UTF-8, você pode definir uma codificação específica para exibir corretamente os caracteres especiais aos recipients dos seus emails.
+A codificação padrão é UTF-8. Se alguns dos provedores de email de seus destinatários não oferecerem suporte à codificação padrão UTF-8, você pode definir uma codificação específica para exibir corretamente os caracteres especiais aos destinatários dos seus emails.
 
-Por exemplo, você deseja enviar um email contendo caracteres japoneses. Para garantir que todos os caracteres sejam exibidos corretamente para seus recipients no Japão, é possível usar uma codificação que ofereça suporte aos caracteres japoneses em vez do padrão UTF-8.
+Por exemplo, você deseja enviar um email contendo caracteres japoneses. Para garantir que todos os caracteres sejam exibidos corretamente para seus destinatários no Japão, é possível usar uma codificação que ofereça suporte aos caracteres japoneses em vez do padrão UTF-8.
 
 Para fazer isso, selecione a opção **[!UICONTROL Force the encoding used for messages]** na seção **[!UICONTROL Character encoding]** e escolha uma codificação na lista suspensa que é exibida.
 

@@ -4,13 +4,13 @@ description: Entender o gerenciamento de chaves em esquemas do Adobe Campaign
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
+exl-id: cf1f5cfc-172f-44ec-ac97-804d15f9d628
+source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
 
 ---
-
 
 # Gerenciamento de chaves {#management-of-keys}
 
@@ -142,4 +142,3 @@ Além da definição da chave, um campo numérico chamado &quot;id&quot; foi adi
 >[!CAUTION]
 >
 >Um registro com uma chave primária definida como 0 é inserido automaticamente ao criar a tabela. Esse registro é usado para evitar associações externas, que não são eficazes em tabelas de volume. Por padrão, todas as chaves estrangeiras são inicializadas com o valor 0 para que um resultado sempre possa ser retornado na associação quando o item de dados não for preenchido.
-

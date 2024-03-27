@@ -8,7 +8,7 @@ exl-id: 04bda36f-051f-41a3-84b3-6af3c5e34ab2
 source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 14%
+ht-degree: 18%
 
 ---
 
@@ -52,7 +52,7 @@ Você acessa as seguintes informações:
 
 As novas versões e as alterações que elas trazem são listadas na [Notas de versão](release-notes.md). Quando uma nova versão estiver disponível, o Adobe entrará em contato com você e atualizará seus ambientes.
 
-Para ser informado sobre novos lançamentos de soluções Experience Cloud, inscreva-se na [Atualização de produtos prioritários para o Adobe](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.
+Para manter-se em dia sobre novas versões de soluções da Experience Cloud, inscreva-se na [Atualização prioritária de produtos da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.
 
 Você também pode visitar [Comunidade do Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} para ser informado sobre atualizações de lançamentos.
 

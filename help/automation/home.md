@@ -8,7 +8,7 @@ exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
 source-git-commit: 143e90ef63fac4058008bc6864daf950c11ab2d1
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 46%
+ht-degree: 38%
 
 ---
 
@@ -29,7 +29,7 @@ Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
 <tr style="border: 0;">
   <td valign="top">
     <div><img src="assets/do-not-localize/workflow.jpeg">
-    <b>Workflows</b>
+    <b>Fluxos de trabalho</b>
     </div>
     <br>
     <div>
@@ -37,7 +37,7 @@ Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
     </div>
     <br>     
     <div>
-    <a href="workflow/build-a-workflow.md">Crie seu primeiro fluxo de trabalho</a>
+    <a href="workflow/build-a-workflow.md">Criar o primeiro fluxo de trabalho</a>
     </div>
     <br>
     <div>

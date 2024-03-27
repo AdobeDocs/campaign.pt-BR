@@ -28,7 +28,7 @@ Para usar o **[!UICONTROL Change Data Source]** atividade, você deve:
 
 1. Criar um workflow.
 
-1. Consulte seus recipients alvos com uma atividade de **[!UICONTROL Query]**.
+1. Consulte seus destinatários alvos com uma atividade de **[!UICONTROL Query]**.
 
    Para mais informações sobre a atividade **[!UICONTROL Query]**, consulte esta [página](query.md#create-a-query).
 

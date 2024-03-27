@@ -115,14 +115,14 @@ ht-degree: 83%
       + Criar consultas {#designing-queries}
          + [Atualização da lista trimestral usando uma consulta incremental](workflow/quarterly-list-update.md)
       + Consulta e filtro {#designing-queries}
-         + [Consultar a tabela de recipients](workflow/querying-recipient-table.md)
+         + [Consultar a tabela de destinatários](workflow/querying-recipient-table.md)
          + [Consultar informações da entrega](workflow/query-delivery-info.md)
          + [Calcular agregados](workflow/compute-aggregates.md)
          + [Consultar usando gerenciamento de agrupamento](workflow/query-grouping-management.md)
          + [Consultar usando um relacionamento muitos para muitos](workflow/query-many-to-many-relationship.md)
          + [Adicionar um campo calculado do tipo lista discriminada](workflow/adding-enumeration-type-calculated-field.md)
          + [Criar um filtro](workflow/create-a-filter.md)
-         + [Filtrar recipients duplicados](workflow/filter-duplicated-recipients.md)
+         + [Filtrar destinatários duplicados](workflow/filter-duplicated-recipients.md)
    + Configurações avançadas {#advanced-management}
       + [Propriedades do fluxo de trabalho](workflow/workflow-properties.md)
       + [Parâmetros avançados](workflow/advanced-parameters.md)

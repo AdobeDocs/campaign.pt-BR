@@ -8,7 +8,7 @@ exl-id: bcbf3101-d43c-4ed3-ab02-a9936ec55b71
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 56%
+ht-degree: 52%
 
 ---
 
@@ -41,7 +41,7 @@ Para criar conteúdo condicional de acordo com o valor de um campo, siga as segu
 
    ![Condição em um email](assets/condition-in-email.png)
 
-1. Clique na guia **[!UICONTROL Preview]** para exibir o conteúdo da mensagem de acordo com o recipient do delivery. Selecione um recipient para o qual a condição seja verdadeira para verificar o conteúdo. Em seguida, selecione outro recipient para o qual ele é falso e verifique novamente.
+1. Clique em **[!UICONTROL Preview]** para exibir o conteúdo da mensagem de acordo com o recipient do delivery. Selecione um recipient para o qual a condição seja verdadeira para verificar o conteúdo. Em seguida, selecione outro recipient para o qual ele é falso e verifique novamente.
 
 Você pode adicionar outros casos e definir outro conteúdo de acordo com os valores de um ou mais campos. Para fazer isso, use **[!UICONTROL Conditional content > Else]** e **[!UICONTROL Conditional content > Else if]**. Essas expressões são configuradas da mesma maneira que a expressão **se**.
 
@@ -54,7 +54,7 @@ Você pode adicionar outros casos e definir outro conteúdo de acordo com os val
 
 No exemplo abaixo, saiba como criar um email multilíngue. O conteúdo é exibido em um idioma ou em outro, dependendo da preferência de idioma do recipient.
 
-1. Crie um email e selecione o público alvo. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do recipient. Esses valores são definidos como **EN**, **FR**, **ES**.
+1. Crie um email e selecione o público alvo. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do destinatário. Esses valores são definidos como **EN**, **FR**, **ES**.
 1. No conteúdo HTML de email, clique na guia **[!UICONTROL Source]** e cole o seguinte código:
 
    ```
@@ -76,7 +76,7 @@ No exemplo abaixo, saiba como criar um email multilíngue. O conteúdo é exibid
    <% } %>
    ```
 
-1. Teste o conteúdo do email na guia **[!UICONTROL Preview]** selecionando os recipients com as diferentes preferências de idioma.
+1. Teste o conteúdo do email na guia **[!UICONTROL Preview]** selecionando os destinatários com as diferentes preferências de idioma.
 
    >[!NOTE]
    >

@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '64'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-O fluxo de trabalho detalhado abaixo é instalado com o módulo **Renderização da Caixa de entrada** por padrão.
+Os workflows detalhados abaixo são instalados com o **Renderização da Caixa de entrada (IR)** por padrão.
 
 <table> 
  <tbody> 

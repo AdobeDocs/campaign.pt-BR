@@ -8,13 +8,13 @@ exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 62%
+ht-degree: 59%
 
 ---
 
 # Análise de entrega {#analyze-delivery}
 
-A análise é a etapa de preparação do delivery. Ele pode ser iniciado assim que o público-alvo for definido e o conteúdo da mensagem estiver pronto e testado. Durante a análise de delivery, a população do target é calculada e o conteúdo do delivery é preparado. Uma vez concluído, o delivery estará pronto para ser enviado.
+A análise é a etapa de preparação do delivery. Ele pode ser iniciado assim que o público-alvo for definido e o conteúdo da mensagem estiver pronto e testado. Durante a análise de delivery, a população do target é calculada e o conteúdo do delivery é preparado. Uma vez concluído, a entrega estará pronta para ser enviada.
 
 ## Iniciar a análise {#start-the-analysis}
 
@@ -46,9 +46,9 @@ Para preparar o delivery, verifique se o conteúdo e o target do delivery foram 
 
    >[!IMPORTANT]
    >
-   >Durante a execução, a análise congela o delivery (ou a prova). Qualquer modificação no delivery (ou na prova) deve ser seguida de outra análise antes de se tornar aplicável.
+   >Durante a execução, a análise congela a entrega (ou a prova). Qualquer modificação na entrega (ou na prova) deve ser seguida de outra análise antes de se tornar aplicável.
 
-   Ao concluir a análise, a seção superior da janela indica se o preparo do delivery está concluído ou se ocorreram erros. Todas as etapas de validação, avisos e erros são listados. Os ícones coloridos mostram o tipo de mensagem:
+   Ao concluir a análise, a seção superior da janela indica se o preparo da entrega está concluído ou se ocorreram erros. Todas as etapas de validação, avisos e erros são listados. Os ícones coloridos mostram o tipo de mensagem:
 
    * Um ícone azul indica uma mensagem informativa.
    * Um ícone amarelo indica um erro de processamento não crítico.
@@ -74,20 +74,20 @@ Navegue até o **[!UICONTROL Analysis]** das propriedades de delivery para defin
 
 Essa guia fornece acesso às seguintes opções:
 
-* **[!UICONTROL Label and code of the delivery]**: as opções referentes a esta seção são usadas para calcular os valores desses campos durante a fase de análise do delivery. O campo **[!UICONTROL Compute the execution folder during the delivery analysis]** calcula o nome da pasta que conterá essa ação de delivery durante a fase de análise.
+* **[!UICONTROL Label and code of the delivery]**: as opções referentes a esta seção são usadas para calcular os valores desses campos durante a fase de análise da entrega. O campo **[!UICONTROL Compute the execution folder during the delivery analysis]** calcula o nome da pasta que conterá essa ação de entrega durante a fase de análise.
 
 * **[!UICONTROL Approval mode]** : esse campo permite a definição do delivery manual ou automática quando a análise é concluída.
 
-  Se os avisos forem gerados durante a análise (ex.: se certos caracteres estiverem acentuados no assunto do delivery etc.), você poderá configurar o delivery para definir se ele ainda deverá ou não ser executado. Por padrão, o usuário deverá confirmar o envio de mensagens no final da fase de análise: essa é a validação **manual**.
+  Se os avisos forem gerados durante a análise (ex.: se certos caracteres estiverem acentuados no assunto da entrega etc.), você poderá configurar a entrega para definir se ela ainda deverá ou não ser executada. Por padrão, o usuário deverá confirmar o envio de mensagens no final da fase de análise: essa é a validação **manual**.
 
   Selecione outro modo de aprovação na lista suspensa no campo apropriado.
 
   Os seguintes modos de aprovação estão disponíveis:
 
-   * **[!UICONTROL Manual]**: no final da fase de análise, o usuário deverá confirmar o delivery para começar a enviar. Para fazer isso, clique no botão **[!UICONTROL Start]** para iniciar o delivery.
+   * **[!UICONTROL Manual]**: no final da fase de análise, o usuário deverá confirmar a entrega para começar a enviar. Para fazer isso, clique no botão **[!UICONTROL Start]** para iniciar a entrega.
    * **[!UICONTROL Semi-automatic]**: o envio começa automaticamente se a fase de análise não gerar mensagens de advertência.
    * **[!UICONTROL Automatic]**: o envio começa automaticamente no fim da fase de análise, independentemente do resultado.
 
-* **[!UICONTROL Start job in a detached process]** : essa opção permite iniciar a análise do delivery em um processo separado. A função de análise usa o processo do servidor de aplicativos Adobe Campaign (Web nlserver) por padrão. Ao selecionar essa opção, você garante que a análise será concluída mesmo no caso de falha do servidor de aplicativos.
-* **[!UICONTROL Log SQL queries generated during the analysis in the journal]**: essa opção adiciona os logs de consulta SQL ao journal de delivery durante a fase de análise.
+* **[!UICONTROL Start job in a detached process]** : essa opção permite iniciar a análise da entrega em um processo separado. A função de análise usa o processo do servidor de aplicativos Adobe Campaign (Web nlserver) por padrão. Ao selecionar essa opção, você garante que a análise será concluída mesmo no caso de falha do servidor de aplicativos.
+* **[!UICONTROL Log SQL queries generated during the analysis in the journal]**: essa opção adiciona os logs de consulta SQL ao journal de entrega durante a fase de análise.
 * **[!UICONTROL Ignore personalization scripts during sending]**: essa opção permite ignorar a interpretação das diretivas JavaScript encontradas no conteúdo HTML. Eles serão exibidos como nos conteúdos entregues. Estas diretivas são introduzidas com a `<%=` tag.

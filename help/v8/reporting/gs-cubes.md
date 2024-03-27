@@ -8,7 +8,7 @@ exl-id: f57f3074-981f-4bcf-9274-7908cd00a4a2
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '525'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -26,7 +26,7 @@ Depois que tiverem sido criados e configurados, os cubos serão usados em caixas
 
 Use o módulo Marketing Analytics do Campaign para:
 
-1. Criar cubos,  e indicadores
+1. Criar cubos e indicadores
 
    * agregar e armazenar dados em uma tabela de trabalho para pré-calcular indicadores com base nas necessidades do usuário, 
    * reduzir o volume de dados envolvidos nos vários cálculos usados para relatórios e consultas, otimizando significativamente os tempos de cálculo do indicador, 
@@ -34,7 +34,7 @@ Use o módulo Marketing Analytics do Campaign para:
 
    Para obter mais informações, consulte [Criar indicadores](cube-indicators.md).
 
-1. Criar tabelas dinâmicas,  e explorar dados
+1. Criar tabelas dinâmicas e explorar dados
 
    * explorar dados calculados e medidas configuradas, 
    * selecionar os dados a serem exibidos, bem como o seu modo de exibição, 

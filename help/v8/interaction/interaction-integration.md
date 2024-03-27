@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 69%
+source-wordcount: '1458'
+ht-degree: 68%
 
 ---
 
@@ -40,8 +40,7 @@ Os seguintes casos de uso detalham as possíveis opções para integrar ofertas 
 
 **Etapa 2: atualizar o conteúdo da página de HTML**
 
-A página HTML deve incluir um elemento com um atributo @id com o valor do nome interno do espaço de oferta criado (&quot;i_internal name space&quot;). A oferta será inserida neste 
-elemento pelo Interaction.
+A página HTML deve incluir um elemento com um atributo @id com o valor do nome interno do espaço de oferta criado (&quot;i_internal name space&quot;). A oferta será inserida neste elemento pelo Interaction.
 
 No nosso exemplo, o atributo @id recebe o valor &quot;i_SPC12&quot;, onde &quot;SPC12&quot; é o nome interno do espaço de oferta criado anteriormente:
 
@@ -105,7 +104,7 @@ No conteúdo da página da Web, é necessário adicionar o script a seguir para 
 
    ![](assets/interaction_htmlmode_001.png)
 
-   Neste exemplo, a chave de identificação é composta por ser baseada no e-mail e no nome do recipient.
+   Neste exemplo, a chave de identificação é composta por ser baseada no e-mail e no nome do destinatário.
 
 1. Durante a exibição da página da Web, a avaliação do script permite passar a ID do recipient para o mecanismo de oferta. Se a ID for composta, as chaves serão exibidas na mesma sequência usada nas configurações avançadas e separadas por um |.
 
@@ -321,7 +320,7 @@ Os serviços da Web SOAP fornecidos para o gerenciamento de ofertas são diferen
 
 Para uma apresentação de oferta via SOAP, adicione o comando **nms:proposta#Propose** seguido pelos seguintes parâmetros:
 
-* **targetId**: chave primária do recipient (pode ser uma chave composta).
+* **targetId**: chave primária do destinatário (pode ser uma chave composta).
 * **maxCount**: especifica o número de apresentações de oferta para o contato.
 * **contexto**: permite adicionar informações de contexto no schema de espaço. Se o schema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
 * **categories**: especifica a(s) categoria(s) que as ofertas devem pertencer.

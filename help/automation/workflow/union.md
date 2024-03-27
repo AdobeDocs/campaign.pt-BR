@@ -23,7 +23,7 @@ A **[!UICONTROL Union]** agrupa o resultado de várias atividades de entrada em 
 
 ## Exemplo de união {#union-example}
 
-No exemplo a seguir, os resultados de dois queries foram combinados para atualizar a lista. Os dois queries têm os recipients como alvo. Os resultados são então baseados na mesma tabela.
+No exemplo a seguir, os resultados de dois queries foram combinados para atualizar a lista. Os dois queries têm os destinatários como alvo. Os resultados são então baseados na mesma tabela.
 
 1. Insira uma atividade do tipo **[!UICONTROL Union]** diretamente após os dois queries e antes de uma atividade do tipo atualização da lista, e depois a abra.
 1. Você pode inserir um rótulo.
@@ -31,10 +31,10 @@ No exemplo a seguir, os resultados de dois queries foram combinados para atualiz
 1. Se você tiver inserido dados adicionais para os queries, pode manter apenas os dados compartilhados.
 1. Se quiser limitar o tamanho do público final, marque a opção **[!UICONTROL Limit size of generated population]** opção.
 
-   Especifique este número final inserindo o número máximo de recipients e selecionando o query cujo público terá prioridade.
+   Especifique este número final inserindo o número máximo de destinatários e selecionando o query cujo público terá prioridade.
 
 1. Aprovar o **[!UICONTROL Union]** atividade e configure o [Atualização da lista](list-update.md) atividade.
-1. Inicie o workflow. O número de resultados é exibido e a lista definida na atividade de atualização da lista é criada ou atualizada. Esta lista contém o conjunto de recipients para queries ou, onde aplicável, o número definido na etapa anterior.
+1. Inicie o workflow. O número de resultados é exibido e a lista definida na atividade de atualização da lista é criada ou atualizada. Esta lista contém o conjunto de destinatários para queries ou, onde aplicável, o número definido na etapa anterior.
 
    ![](assets/union_example.png)
 

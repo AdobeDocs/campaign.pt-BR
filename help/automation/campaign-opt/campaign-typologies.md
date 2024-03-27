@@ -7,13 +7,13 @@ exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 55%
+ht-degree: 41%
 
 ---
 
 # Introdução às tipologias de campanha{#about-campaign-typologies}
 
-**Otimização de Campanha é o módulo do Adobe Campaign que permite controlar, filtrar e monitorar o envio de deliveries.** Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
+**Otimização de campanha** é o módulo do Adobe Campaign que permite controlar, filtrar e monitorar o envio de deliveries. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#typologies-video)
 
@@ -66,10 +66,10 @@ As etapas detalhadas estão listadas na seguinte seção:
    * [Regras de pressão](pressure-rules.md)
    * [Regras de capacidade](consistency-rules.md)
 
-1. Configure seu delivery para usar a tipologia que você criou. [Saiba mais](apply-rules.md#apply-a-typology-to-a-delivery).
+1. Configure sua entrega para usar a tipologia que você criou. [Saiba mais](apply-rules.md#apply-a-typology-to-a-delivery).
 1. Teste e controle o comportamento por meio de simulações de campanha. [Saiba mais](campaign-simulations.md).
 
-Durante a preparação do delivery, os recipients são excluídos quando o critério é atingido. Você pode verificar os logs para monitorar exclusões.
+Durante a preparação da entrega, os destinatários são excluídos quando o critério é atingido. Você pode verificar os logs para monitorar exclusões.
 
 Casos de uso de exemplo das regras de tipologia de pressão estão disponíveis [nesta página](pressure-rules.md#use-cases-on-pressure-rules).
 
@@ -83,7 +83,6 @@ Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign
 
 ### Configurar o gerenciamento de fadiga usando filtros predefinidos
 
-O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de recipients. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que irá filtrar a população do público-alvo pelo número de mensagens recebidas
-Este vídeo ensina a implementar o gerenciamento de fadiga no Adobe Campaign usando filtros.
+O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de destinatários. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que filtrará a população do público-alvo pelo número de mensagens recebidas Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign usando filtros.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

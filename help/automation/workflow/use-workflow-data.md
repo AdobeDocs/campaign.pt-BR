@@ -5,7 +5,7 @@ feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '702'
 ht-degree: 76%
 
 ---
@@ -44,7 +44,7 @@ Para fazer isso, selecione o menu relevante:
 
   Esse menu permite acessar o assistente de análise descritiva que produz estatísticas e relatórios sobre os dados de transição.
 
-  Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
+  Para obter mais informações, consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=pt-BR){target="_blank"}.
 
 Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
 
@@ -65,11 +65,11 @@ Isso permite usar dados coletados por uma lista em um delivery, por exemplo. Par
 %= targetData.FIELD %
 ```
 
-Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para fluxos de trabalho para construção do target. O target do delivery deve ser construído no fluxo de trabalho e especificado na transição de entrada do delivery.
+Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para fluxos de trabalho para construção do target. O target da entrega deve ser construído no fluxo de trabalho e especificado na transição de entrada da entrega.
 
 No exemplo a seguir, você está coletando uma lista de informações sobre clientes, para serem usadas em um email personalizado. Siga as etapas abaixo:
 
-1. Crie um workflow para coletar informações, reconcilie com os dados já existentes no banco de dados, e depois inicie um delivery.
+1. Crie um workflow para coletar informações, reconcilie com os dados já existentes no banco de dados, e depois inicie uma entrega.
 
    ![](assets/wf-targetdata-sample-1.png)
 
@@ -89,19 +89,19 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Configure o **[!UICONTROL Enrichment]** atividade para reconciliar os dados coletados com os existentes no banco de dados do Adobe Campaign. Aqui, a chave de conciliação é o número da conta:
+1. Configure o **[!UICONTROL Enrichment]** atividade para reconciliar os dados coletados com os existentes no banco de dados do Adobe Campaign. Aqui, a chave de reconciliação é o número da conta:
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Em seguida, configure o **[!UICONTROL Delivery]**: ele é criado com base em um template e os recipients são especificados pela transição de entrada.
+1. Em seguida, configure o **[!UICONTROL Delivery]**: ele é criado com base em um template e os destinatários são especificados pela transição de entrada.
 
    ![](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
-   >Somente os dados contidos na transição podem ser usados para personalizar o delivery. Os campos de personalização do tipo **targetData** só estão disponíveis para a população de entrada da atividade de **[!UICONTROL Delivery]**.
+   >Somente os dados contidos na transição podem ser usados para personalizar a entrega. Os campos de personalização do tipo **targetData** só estão disponíveis para a população de entrada da atividade de **[!UICONTROL Delivery]**.
 
-1. No template de delivery, use os campos coletados no fluxo de trabalho.
+1. No template de entrega, use os campos coletados no fluxo de trabalho.
 
    Para fazer isso, insira os campos de personalização do tipo **[!UICONTROL Target extension]**.
 
@@ -109,16 +109,16 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
 
    Nesse exemplo, queremos inserir o gênero de música e o tipo de mídia favoritos do cliente (CD ou DVD), conforme declarado no arquivo coletado pelo workflow.
 
-   Como um diferencial, vamos adicionar um cupom para os titulares de cartões de fidelidade, ou seja, recipients para os quais o valor &#39;Cartão&#39; for igual a 1.
+   Como um diferencial, vamos adicionar um cupom para os titulares de cartões de fidelidade, ou seja, destinatários para os quais o valor &#39;Cartão&#39; for igual a 1.
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   Os dados do tipo **[!UICONTROL Target extension]** (targetData) são inseridos em deliveries usando as mesmas características de todos os campos de personalização. Eles também podem ser usados no assunto, rótulos de link ou nos próprios links.
+   Os dados do tipo **[!UICONTROL Target extension]** (targetData) são inseridos em entregas usando as mesmas características de todos os campos de personalização. Eles também podem ser usados no assunto, rótulos de link ou nos próprios links.
 
 
 ## Atualizar o banco de dados {#update-the-database}
 
-Todos os dados coletados podem ser usados para atualizar o banco de dados ou nos deliveries. Por exemplo, você pode enriquecer as possibilidades de personalização do conteúdo da mensagem (incluir o número de contratos na mensagem, especificar o carrinho de compras comum do ano passado, etc.) ou detalhar o público alvo (enviar uma mensagem aos cotitulares do contrato, ter como target os mil melhores assinantes dos serviços online e etc.). Esses dados também podem ser exportados ou arquivados em uma lista.
+Todos os dados coletados podem ser usados para atualizar o banco de dados ou nas entregas. Por exemplo, você pode enriquecer as possibilidades de personalização do conteúdo da mensagem (incluir o número de contratos na mensagem, especificar o carrinho de compras comum do ano passado, etc.) ou detalhar o público alvo (enviar uma mensagem aos cotitulares do contrato, ter como target os mil melhores assinantes dos serviços online e etc.). Esses dados também podem ser exportados ou arquivados em uma lista.
 
 ### Atualizar listas  {#list-updates}
 
@@ -136,6 +136,6 @@ Os dados do banco de dados do Adobe Campaign e as listas existentes podem ser at
 
   Para mais informações, consulte [Atualização de dados](update-data.md).
 
-### Gerenciar subscrições {#subscription-management}
+### Gerenciar assinaturas {#subscription-management}
 
-Para saber mais sobre assinatura e cancelamento de assinatura de recipients em um serviço de informação por meio de um workflow, consulte [Serviços de assinatura](subscription-services.md).
+Para saber mais sobre assinatura e cancelamento de assinatura de destinatários em um serviço de informação por meio de um workflow, consulte [Serviços de assinatura](subscription-services.md).

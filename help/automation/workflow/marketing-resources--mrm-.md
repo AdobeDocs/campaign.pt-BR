@@ -8,14 +8,14 @@ hidefromtoc: true
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '83'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
 
 # Gestão dos Recursos de Marketing (MRM){#marketing-resources-mrm}
 
-Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Recursos de Marketing (MRM)** por padrão.
+Os workflows detalhados abaixo são instalados com o **Gestão dos Recursos de Marketing (MRM)** por padrão.
 
 <table> 
  <tbody> 
@@ -37,7 +37,7 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Recursos
   <tr> 
    <td> <span class="uicontrol">Discussion forum processes</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> Este workflow gerencia o delivery de notificações dos fóruns de discussão. É acionado ao receber um sinal de aprovação.<br /> </td> 
+   <td> Este workflow gerencia a entrega de notificações dos fóruns de discussão. É acionado ao receber um sinal de aprovação.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

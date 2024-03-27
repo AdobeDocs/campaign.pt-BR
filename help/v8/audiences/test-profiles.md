@@ -28,7 +28,7 @@ Esses seed addresses são adicionados ao target das entregas ao serem importados
 
 >[!NOTE]
 >
->Os seed addresses não são criados na tabela de recipients, mas em uma tabela separada. Se a tabela de recipients é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados. Caso contrário, os campos estendidos não são considerados para seed addresses.
+>Os seed addresses não são criados na tabela de recipients, mas em uma tabela separada. Se a tabela de destinatários é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados. Caso contrário, os campos estendidos não são considerados para seed addresses.
 >
 >Um exemplo de como estender a tabela de seed addresses é apresentado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
 
@@ -45,7 +45,7 @@ O Adobe Campaign também permite criar modelos de seed addresses que são import
 Para criar seed addresses, siga estas etapas:
 
 1. Clique no botão **[!UICONTROL New]** acima da lista de seed addresses.
-1. Insira os dados vinculados ao endereço nos campos correspondentes da guia **[!UICONTROL Recipient]**. Os campos disponíveis correspondem aos campos padrão nos perfis dos recipients da entrega (tabela nms:recipient): sobrenome, nome, email, etc.
+1. Insira os dados vinculados ao endereço nos campos correspondentes da guia **[!UICONTROL Recipient]**. Os campos disponíveis correspondem aos campos padrão nos perfis dos destinatários da entrega (tabela nms:recipient): sobrenome, nome, email, etc.
 
    >[!NOTE]
    >
@@ -89,7 +89,7 @@ Há três modos de inserção possíveis:
 
    Um exemplo disso é apresentado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
 
-Para entregas, você também pode personalizar a maneira como os endereços são inseridos no arquivo de extração. Por padrão, eles são inseridos na ordem de classificação do arquivo de saída, mas você pode optar por inseri-los no final ou no início do arquivo, ou aleatoriamente entre os recipients do target principal.
+Para entregas, você também pode personalizar a maneira como os endereços são inseridos no arquivo de extração. Por padrão, eles são inseridos na ordem de classificação do arquivo de saída, mas você pode optar por inseri-los no final ou no início do arquivo, ou aleatoriamente entre os destinatários do target principal.
 
 ## Adicionar seed addresses em uma campanha {#seed-addresses-in-a-campaign}
 

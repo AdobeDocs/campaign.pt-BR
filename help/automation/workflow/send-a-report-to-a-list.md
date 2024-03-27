@@ -6,14 +6,14 @@ feature: Workflows
 exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '637'
 ht-degree: 40%
 
 ---
 
 # Enviar um relatório a uma lista{#send-a-report-to-a-list}
 
-Esse caso de uso detalha como gerar um relatório mensal imediato **[!UICONTROL Tracking indicators]** em formato PDF e como enviá-lo para uma lista de recipients.
+Esse caso de uso detalha como gerar um relatório mensal imediato **[!UICONTROL Tracking indicators]** em formato PDF e como enviá-lo para uma lista de destinatários.
 
 ![](assets/use_case_report_intro.png)
 
@@ -29,7 +29,7 @@ Para criar a lista de recipients alvos, siga as etapas abaixo:
 
 1. Navegue até o **[!UICONTROL Profiles and targets]** clique na guia **[!UICONTROL Lists]** link.
 1. Clique no botão **[!UICONTROL Create]**.
-1. Selecione **[!UICONTROL New list]** e crie uma nova lista de recipients para a qual o relatório será enviado.
+1. Selecione **[!UICONTROL New list]** e crie uma nova lista de destinatários para a qual o relatório será enviado.
 
 Para obter mais informações sobre criação de listas, consulte [nesta seção](../../v8/audiences/create-audiences.md).
 
@@ -45,7 +45,7 @@ Para criar o template do delivery, siga as etapas abaixo:
 
    Cada vez que o workflow é executado, a variável **[!UICONTROL Tracking indicators]** O relatório é atualizado conforme explicado em [Etapa 3: criar o fluxo de trabalho](#step-3--creating-the-workflow)).
 
-1. Para incluir a versão mais recente do relatório no delivery é necessário adicionar um **[!UICONTROL Calculated attachment]**:
+1. Para incluir a versão mais recente do relatório na entrega é necessário adicionar um **[!UICONTROL Calculated attachment]**:
 
    * Clique em **[!UICONTROL Attachments]** e clique na seta ao lado do link **[!UICONTROL Add]** botão. Selecione **[!UICONTROL Calculated attachment...]**.
 
@@ -55,7 +55,7 @@ Para criar o template do delivery, siga as etapas abaixo:
 
      ![](assets/use_case_report_5.png)
 
-     O valor inserido no campo **[!UICONTROL Label]** não aparecerá no delivery final.
+     O valor inserido no campo **[!UICONTROL Label]** não aparecerá na entrega final.
 
    * Na zona de texto, digite o caminho de acesso e o nome do arquivo.
 
@@ -84,7 +84,7 @@ Ele usa três atividades:
 Para criar esse workflow, siga as etapas abaixo:
 
 1. Navegue até o **[!UICONTROL Administration > Production > Technical workflows]** nó do Campaign explore e crie uma nova pasta para armazenar os workflows.
-1. Criar um novo fluxo de trabalho.
+1. Crie um novo workflow.
 
    ![](assets/use_case_report_7.png)
 
@@ -128,7 +128,7 @@ Para criar esse workflow, siga as etapas abaixo:
 
    ![](assets/use_case_report_11.png)
 
-   * **[!UICONTROL Delivery]**: selecione **[!UICONTROL New, created from a template]** e selecione o template de delivery criado anteriormente.
+   * **[!UICONTROL Delivery]**: selecione **[!UICONTROL New, created from a template]** e selecione o template de entrega criado anteriormente.
    * Para os campos **[!UICONTROL Recipients]** e **[!UICONTROL Content]**, selecione **[!UICONTROL Specified in the delivery]**.
    * **[!UICONTROL Action to perform]** : selecione **[!UICONTROL Prepare and start]**.
    * Desmarque a opção **[!UICONTROL Generate an outbound transition]** e **[!UICONTROL Process errors]** opções.

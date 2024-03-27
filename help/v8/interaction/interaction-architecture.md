@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1305'
 ht-degree: 67%
 
 ---
@@ -78,7 +78,7 @@ Você deve estar ciente dos seguintes mecanismos de sincronização:
 
 ### Configuração de pacotes {#packages-configuration}
 
-Quaisquer extensões de schema diretamente vinculadas à **Interação** (ofertas, propostas, recipients, etc.) devem ser implantadas nas instâncias de execução.
+Quaisquer extensões de schema diretamente vinculadas à **Interação** (ofertas, propostas, destinatários, etc.) devem ser implantadas nas instâncias de execução.
 
 A variável **Interação** O pacote de é instalado em todas as instâncias (controle e execução). Dois pacotes adicionais estão disponíveis: um pacote para as instâncias de controle e outro para cada instância de execução.
 

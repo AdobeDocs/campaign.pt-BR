@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 53%
+source-wordcount: '680'
+ht-degree: 31%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 53%
 
 Os recursos de rastreamento de campanha rastreiam as mensagens enviadas e ajudam a analisar o comportamento dos recipients: abrir, clicar em links, assinar/cancelar assinatura e muito mais. Você pode acessar logs dedicados, relatórios e métricas, consultar o banco de dados para revisar dados coletados e muito mais.
 
-Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#tracking-tab){target="_blank"}.
+Para obter mais informações, consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#tracking-tab){target="_blank"}.
 
 O painel de delivery é uma ferramenta essencial para monitorar seus deliveries e possíveis problemas durante o envio de mensagens.
 
@@ -45,13 +45,13 @@ As opções de rastreamento podem ser configuradas por meio da ativação ou des
 
 **Personalização do link rastreado**
 
-Os recursos de rastreamento de Campaign permitem que você adicione links em emails que podem ser personalizados e que oferecem suporte ao rastreamento.
+Os recursos de rastreamento de campanha permitem adicionar links em emails que podem ser personalizados e que oferecem suporte ao rastreamento.
 
 [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/tracking-personalized-links/tracking-personalized-links.html#sending-messages){target="_blank"}
 
 **Logs de rastreamento**
 
-A variável **Rastreamento** o workflow técnico recupera os dados de rastreamento depois que o delivery é enviado e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento da entrega.
+A variável **Rastreamento** o workflow técnico recupera os dados de rastreamento depois que o delivery é enviado e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento do seu delivery.
 
 [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/accessing-the-tracking-logs.html#sending-messages){target="_blank"}
 
@@ -73,7 +73,7 @@ Também é possível rastrear e medir visitas em páginas de aplicação web com
 
 **Recusar rastreamento da aplicação web**
 
-A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou landing pages para permitir que os usuários recusem.
+A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou páginas de aterrissagem para permitir que os usuários recusem.
 
 [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/web-application-tracking-opt-out.html#designing-content){target="_blank"}
 
@@ -93,7 +93,7 @@ Este relatório mostra a lista de páginas visitadas após uma entrega.
 
 [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html#urls-and-click-streams){target="_blank"}
 
-**Pessoa/pessoas e recipients**
+**Pessoa/pessoas e destinatários**
 
 Entenda melhor a diferença de rastreamento entre uma pessoa/pessoas e um recipient no Adobe Campaign com este exemplo.
 

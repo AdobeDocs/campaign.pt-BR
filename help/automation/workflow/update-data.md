@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Data Management
 exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '844'
 ht-degree: 100%
 
 ---
@@ -88,7 +88,7 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 
 >[!NOTE]
 >
->Essa opção também permite processar referências a registros secundários de tabelas de trabalho do workflow (targetWorkflow), deliverys (targetDelivery) e listas (targetList). Se precisar, esses links aparecem na lista onde os campos e coleções são selecionados.
+>Essa opção também permite processar referências a registros secundários de tabelas de trabalho do workflow (targetWorkflow), entregas (targetDelivery) e listas (targetList). Se precisar, esses links aparecem na lista onde os campos e coleções são selecionados.
 
 1. Selecione a operação **[!UICONTROL Update and merge collections]**.
 
@@ -106,7 +106,7 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 
    Finalmente, especifique o tipo de atualização para realizar. Por exemplo, é possível optar por excluir os registros secundários após atualizar os dados.
 
-   É possível, por exemplo, configurar a mesclagem de coleções contendo dados heterogêneos como a lista de assinaturas de um recipient. Usando regras, também é possível criar novos históricos de subscrições de registros secundários ou até mover a lista de subscrições de um registro secundário para um registro primário.
+   É possível, por exemplo, configurar a mesclagem de coleções contendo dados heterogêneos como a lista de assinaturas de um destinatário. Usando regras, também é possível criar novos históricos de subscrições de registros secundários ou até mover a lista de subscrições de um registro secundário para um registro primário.
 
 1. Especifique a ordem que os registros secundários precisam ser processados selecionando **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
 

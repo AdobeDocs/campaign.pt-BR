@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Casos de uso de fluxos de trabalho
-description: Saiba mais sobre os casos de uso que você pode executar usando workflows do Campaign
+description: Saiba mais sobre casos de uso que você pode executar usando workflows do Campaign
 feature: Workflows, Data Management
 exl-id: 6e899937-5ca0-4ca5-bb14-f914e41559ab
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 66%
+ht-degree: 59%
 
 ---
 
@@ -51,13 +51,13 @@ Saiba mais sobre os diferentes contextos em que os workflows podem ser usados e 
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
-* [Consultar a tabela de recipients](querying-recipient-table.md)
+* [Consultar a tabela de destinatários](querying-recipient-table.md)
 * [Consultar informações da entrega](query-delivery-info.md)
 * [Executar cálculo de agregação](compute-aggregates.md)
 * [Consultar usando gerenciamento de agrupamento](query-grouping-management.md)
 * [Consultar usando um relacionamento muitos para muitos](query-many-to-many-relationship.md)
 * [Adicionar um campo calculado do tipo lista discriminada](adding-enumeration-type-calculated-field.md)
 * [Criar um filtro](create-a-filter.md)
-* [Filtrar recipients duplicados](filter-duplicated-recipients.md)
+* [Filtrar destinatários duplicados](filter-duplicated-recipients.md)
 * [Chamar uma variável de instância em uma query](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
 * [Aplicar uma porcentagem dividida em uma população](javascript-scripts-and-templates.md#example)

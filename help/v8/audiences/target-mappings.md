@@ -14,7 +14,7 @@ ht-degree: 38%
 
 # Trabalhar com target mappings{#gs-target-mappings}
 
-Por padrão, templates de delivery de email e SMS têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient.**
+Por padrão, templates de delivery de email e SMS têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient**.
 
 Para notificações por push, o target mapping padrão é **Aplicativos de assinante (nms:appSubscriptionRcp)**, que está vinculado à tabela de recipients.
 
@@ -24,11 +24,11 @@ Você pode usar outros target mappings para seus deliveries ou criar um novo.
 
 O Adobe Campaign vem com os seguintes target mappings incorporados:
 
-| Nome | Uso para | Schema |
+| Nome | Use para | Esquema |
 |---|---|---|
-| Recipients | Entregar aos destinatários (tabela de destinatários integrada) | nms:recipient |
+| Destinatários | Entregar aos destinatários (tabela de destinatários integrada) | nms:recipient |
 | Visitantes | Enviar delivery aos visitantes cujos perfis foram coletados por meio de referência (marketing viral), por exemplo. | mns:visitor |
-| Subscrições | Entregar aos recipients que assinam um serviço de informações, como um boletim informativo | nms:subscription |
+| Subscrições | Entregar aos destinatários que assinam um serviço de informações, como um boletim informativo | nms:subscription |
 | Assinaturas do visitante | Entregar aos visitantes que são inscritos em um serviço de informações | nms:visitorSub |
 | Operadores | Entregar aos operadores do Adobe Campaign | nms:operator |
 | Arquivo externo | Entregar por meio de um arquivo que contenha todas as informações necessárias para a entrega | Nenhum schema vinculado, nenhum target inserido |

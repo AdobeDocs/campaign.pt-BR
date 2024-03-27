@@ -7,7 +7,7 @@ role: User
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '373'
 ht-degree: 75%
 
 ---
@@ -38,7 +38,7 @@ Para configurar o **[!UICONTROL Change dimension]** siga as etapas abaixo:
 
    As setas azuis permitem definir a prioridade de processamento duplicatas.
 
-   No exemplo acima, os recipient serão desduplicados em seu endereço de e-mail primeiro e, em seguida, em seu número de conta, se necessário.
+   No exemplo acima, os destinatário serão desduplicados em seu endereço de e-mail primeiro e, em seguida, em seu número de conta, se necessário.
 
 1. A guia **[!UICONTROL Result]** permite adicionar mais informações.
 
@@ -52,7 +52,7 @@ Para configurar o **[!UICONTROL Change dimension]** siga as etapas abaixo:
      >
      >Para obter informações sobre como criar e gerenciar colunas adicionais, consulte [Adicionar dados](query.md#add-data).
 
-   * Selecione a dimensão do target anterior (antes da troca de eixo) e selecione **[!UICONTROL Zip Code]** na árvore secundária **[!UICONTROL Location]** do recipient e clique em **[!UICONTROL Edit expression]**.
+   * Selecione a dimensão do target anterior (antes da troca de eixo) e selecione **[!UICONTROL Zip Code]** na árvore secundária **[!UICONTROL Location]** do destinatário e clique em **[!UICONTROL Edit expression]**.
 
      ![](assets/wf_change-dimension_sample_02.png)
 

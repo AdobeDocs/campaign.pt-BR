@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 14a741dd-794e-4760-bfa3-bafbe993a3f7
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '326'
 ht-degree: 41%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 41%
 
 Use campos de personalização para fornecer conteúdo personalizado individualmente, com base nas regras definidas para cada recipient.
 
-Um campo de personalização é uma única referência de campo de dados usada ao personalizar uma entrega para um recipient específico. O valor de dados real é inserido durante a fase de análise da entrega.
+Um campo de personalização é uma única referência de campo de dados usada ao personalizar uma entrega para um destinatário específico. O valor de dados real é inserido durante a fase de análise da entrega.
 
 ![amostra de personalização de mensagens](assets/perso-name-sample.png)
 
@@ -51,12 +51,12 @@ No caso de uso abaixo, saiba como personalizar um assunto e um corpo de email co
 1. Criar um novo delivery ou abrir um delivery de email existente.
 1. Navegue até o **[!UICONTROL Subject]** link para editar o assunto da mensagem.
 1. Insira &quot;**Special offer for**&quot; e use o botão na barra de ferramentas para inserir um campo de personalização. Selecione **[!UICONTROL Recipients>Title]**.
-1. Repita a operação para inserir o nome do recipient. Insira espaços entre todos os campos de personalização.
+1. Repita a operação para inserir o nome do destinatário. Insira espaços entre todos os campos de personalização.
 1. Clique em **[!UICONTROL OK]** para validar.
 1. Insira a personalização no corpo da mensagem. Para fazer isso, clique no conteúdo da mensagem e clique no botão de inserção de campo.
 1. Selecione **[!UICONTROL Recipient>Other...]**.
 1. Selecione o campo com as informações que serão exibidas e clique em **[!UICONTROL OK]**.
-1. Clique na guia **[!UICONTROL Preview]** para exibir o resultado personalizado. Você deve selecionar um recipient para exibir a mensagem dele.
+1. Clique na guia **[!UICONTROL Preview]** para exibir o resultado personalizado. Você deve selecionar um destinatário para exibir a mensagem dele.
 
 
 

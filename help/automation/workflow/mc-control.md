@@ -6,7 +6,7 @@ feature: Workflows
 role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '125'
 ht-degree: 100%
 
 ---
@@ -30,11 +30,11 @@ O workflow detalhado abaixo é agendado para ser executado a cada hora. Ele é i
    <td> Esse workflow:<br /> 
     <ul> 
      <li> <p>recupera a lista de eventos processados pela(s) operação(s).</p> </li> 
-     <li> <p>sincroniza com a tabela NmsBroadLogMsg para recuperar as qualificações da mensagem de delivery.</p> </li> 
-     <li> <p>recupera logs de delivery de eventos assim que a sincronização com a tabela NmsBroadLogMsg for concluída.</p> </li> 
-     <li> <p>sincroniza com a tabela NmsTrackingUrl para recuperar o rastreamento para as URLs de delivery.</p> </li> 
+     <li> <p>sincroniza com a tabela NmsBroadLogMsg para recuperar as qualificações da mensagem de entrega.</p> </li> 
+     <li> <p>recupera logs de entrega de eventos assim que a sincronização com a tabela NmsBroadLogMsg for concluída.</p> </li> 
+     <li> <p>sincroniza com a tabela NmsTrackingUrl para recuperar o rastreamento para as URLs de entrega.</p> </li> 
      <li> <p>recupera as URLs de rastreamento de eventos assim que a sincronização com a tabela NmsTrackingUrl for concluída.</p> </li> 
-     <li> <p>permite recuperar todos os endereços de email colocados em quarentena a cada três horas após o envio de um delivery.</p> </li> 
+     <li> <p>permite recuperar todos os endereços de email colocados em quarentena a cada três horas após o envio de uma entrega.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

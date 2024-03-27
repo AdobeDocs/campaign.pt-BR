@@ -7,7 +7,7 @@ role: Developer
 exl-id: 14160de5-23d2-4f53-84c6-0f9e3b1dcf21
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1247'
 ht-degree: 100%
 
 ---
@@ -164,17 +164,17 @@ Assim, para chamar uma variável **instance.vars.xxx = &quot;yyy&quot;** em um f
 
 Por exemplo:
 
-1. Crie uma variável de instância que define o nome interno de um delivery através do **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
+1. Crie uma variável de instância que define o nome interno de uma entrega através do **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
 
    ![](assets/wkf_js_activity_1.png)
 
-1. Criar uma query cujo direcionamento e dimensões de filtro são os recipients. Nas condições, especifique que deseja localizar todos os recipients que receberam a delivery especificada pela variável .
+1. Criar uma query cujo direcionamento e dimensões de filtro são os destinatários. Nas condições, especifique que deseja localizar todos os destinatários que receberam a entrega especificada pela variável .
 
-   Como lembrete, essas informações são armazenadas nos logs de delivery.
+   Como lembrete, essas informações são armazenadas nos logs de entrega.
 
    Para fazer referência à variável da instância na coluna **[!UICONTROL Value]**, digite **$(instance/vars/@deliveryIN)**.
 
-   O fluxo de trabalho retornará os recipients da entrega DM42.
+   O fluxo de trabalho retornará os destinatários da entrega DM42.
 
    ![](assets/wkf_var_in_query.png)
 
