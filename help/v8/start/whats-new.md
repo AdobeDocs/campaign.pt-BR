@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Melhore a velocidade e a escala de cada aspecto de suas campanhas de marketing, 
 
 O Adobe Campaign facilita a sincronização dos canais, com uma interface de orquestração de campanhas única e de fácil utilização. Assim, seus canais online — como email, web, celular e redes sociais — correspondem aos canais offline, incluindo a correspondência direta, a central de atendimento, a loja e assim por diante. Ele permite que você forneça aos clientes uma experiência consistente e contextual nos canais digitais e tradicionais. O Adobe Campaign facilita a entrega de conteúdo para todos os caminhos que seus clientes venham a seguir — em qualquer canal.
 
-[Saiba mais sobre os workflows do Campaign](../config/workflows.md)
+[Saiba mais sobre fluxos de trabalho do Campaign](../config/workflows.md)
 
 ### Marketing por email personalizado {#perso-email-mkt}
 
@@ -52,7 +52,7 @@ O Adobe Campaign v8 fornece aos profissionais de marketing os melhores recursos 
 
 Os recursos incluem um perfil integrado que fornece uma visão única do cliente. Gerenciamento e segmentação de dados para a criação de público-alvo de campanha em escala. Gerenciamento de fluxos de trabalho entre canais para automatizar campanhas multicanal e de várias ondas. Email integrado, reduzindo a dependência de ESPs dispendiosos. Relatórios e análises para entender o comportamento do cliente e o desempenho da campanha.
 
-[Saiba mais sobre o gerenciamento de campanhas](campaigns.md)
+[Saiba mais sobre o gestão de campanha](campaigns.md)
 
 
 ### Conexões com a Adobe Experience Platform {#connection-to-aep}
@@ -61,7 +61,7 @@ O Adobe Campaign v8 oferece compatibilidade a conectores de dados com a Real-Tim
 
 Além disso, o Adobe Campaign v8 é integrado nativamente aos recursos de orquestração de jornadas em tempo real, para que os profissionais de marketing possam reutilizar os mesmos modelos e recursos de entrega no Adobe Campaign para interagir com os clientes em tempo real. Esses investimentos otimizarão a experiência do cliente do Adobe Campaign e desbloquearão novos casos de uso, como a capacidade de adicionar jornadas do cliente individualizadas em tempo real às campanhas.
 
-Também é possível configurar a otimização preditiva do tempo de envio e a pontuação preditiva do envolvimento com a IA de jornada, além de aumentar as taxas de abertura, cliques e receitas.
+Também é possível configurar a otimização preditiva do tempo de envio e a pontuação preditiva do engajamento com a IA de jornada, além de aumentar as taxas de abertura, cliques e receitas.
 
 [Saiba mais sobre integrações do Campaign](../connect/integration.md)
 
@@ -81,7 +81,7 @@ Observe que a nova arquitetura de nuvem permite que o Campaign simplifique proce
 >
 >* O Campaign v8 está disponível **somente** como um Managed Cloud Service e não pode ser implantado em ambientes locais ou híbridos.
 >
->* A migração automatizada de um ambiente existente do Campaign Classic v7 ainda não está disponível.
+>* A migração automatizada de um ambiente do Campaign Classic v7 ainda não está disponível.
 
 
 ### Velocidade e escala {#speed-scale}
@@ -90,7 +90,7 @@ Agora, o Adobe Campaign pode aproveitar as tecnologias de banco de dados em esca
 
 O [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova oferta, o Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. O [!DNL Snowflake] é o banco de dados na nuvem do Campaign que oferece velocidade e resistência: sem sobrecarga dos picos de atividade do sistema. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 
-[Saiba mais sobre a implantação corporativa (FFDA)](../architecture/enterprise-deployment.md)
+[Saiba mais sobre implantação corporativa (FFDA)](../architecture/enterprise-deployment.md)
 
 
 ## Interface de administrador do autoatendimento{#self-service-admin}
