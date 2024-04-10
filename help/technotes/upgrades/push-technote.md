@@ -15,7 +15,7 @@ ht-degree: 11%
 
 ---
 
-# Alterações no canal de notificação por push {#push-upgrade}
+# Alterações no Canal de notificação por push {#push-upgrade}
 
 Você pode usar o Campaign para enviar notificações por push em dispositivos iOs e Android. Para fazer isso, o Campaign depende dos serviços de assinatura de aplicativo móvel.
 

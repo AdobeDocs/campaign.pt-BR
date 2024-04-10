@@ -95,7 +95,7 @@ Agora você pode criar solicitações de privacidade com base em seu novo namesp
 
 A integração do **[!DNL Adobe Experience Platform Privacy Service]** permite automatizar suas solicitações de privacidade em um contexto com várias soluções por meio de uma única chamada de API JSON. O Adobe Campaign manipula automaticamente as solicitações enviadas pelo Privacy Service por meio de um fluxo de trabalho dedicado.
 
-Consulte a documentação do [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR) para saber como criar solicitações de privacidade pelo Serviço principal de privacidade.{target="_blank"}
+Consulte a documentação do [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR){target="_blank"} para saber como criar solicitações de privacidade pelo Serviço principal de privacidade.
 
 Cada processo do **[!DNL Privacy Service]** é dividido em várias solicitações de privacidade no Adobe Campaign com base no número de namespaces utilizados, onde cada solicitação corresponde a um namespace.
 
