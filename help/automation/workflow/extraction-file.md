@@ -5,9 +5,9 @@ description: Saiba mais sobre a atividade de workflow de extração de dados (ar
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 8510e879-2862-491f-bc52-ca8f56105932
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 014743172e09d46cb83b2fe2befaa8f3c54669b1
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '312'
 ht-degree: 100%
 
 ---
@@ -46,8 +46,6 @@ Para configurar a extração de dados, siga as seguintes etapas:
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
 Você pode definir um pós-processo que será executado durante a extração de dados, permitindo a compactação ou criptografia dos arquivos. Para fazer isso, o comando desejado deve ser adicionado na guia da atividade **[!UICONTROL Script]**.
-
-Para obter mais informações, consulte esta seção: [Compactar ou criptografar um arquivo](use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 
