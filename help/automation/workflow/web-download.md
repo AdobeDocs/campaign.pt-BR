@@ -4,10 +4,10 @@ title: Download da Web
 description: Saiba mais sobre a atividade de workflow de Download da web
 feature: Workflows
 exl-id: 73bacf61-ac03-4a5c-b03b-6dfbe3fb9538
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 76a5737e2326e9691113957d1c7bf390ea969695
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 100%
+source-wordcount: '483'
+ht-degree: 84%
 
 ---
 
@@ -58,6 +58,10 @@ A atividade de **download da Web** inicia o download de um arquivo em uma URL ex
 1. **Parâmetros avançados**
 
    O link **[!UICONTROL Advanced parameters...]** possibilita especificar as opções adicionais exibidas abaixo:
+
+   * **[!UICONTROL Follow redirections]**: o redirecionamento de arquivo permite que você use substituições para direcionar a entrada ou saída de dados para um dispositivo de um tipo diferente.
+   * **[!UICONTROL Add the HTTP headers to the file]**: em alguns casos, talvez você queira adicionar outros cabeçalhos HTTP a um arquivo. Normalmente, esses cabeçalhos serão usados para fornecer informações adicionais para fins de solução de problemas, para [Compartilhamento de recursos entre origens (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS)ou para definir diretivas específicas de armazenamento em cache.
+   * **[!UICONTROL Ignore the HTTP return code]**: os códigos de retorno HTTP, também conhecidos como códigos de status HTTP, indicam o resultado de uma solicitação HTTP.
 
    ![](assets/download_web_edit_advanced.png)
 
