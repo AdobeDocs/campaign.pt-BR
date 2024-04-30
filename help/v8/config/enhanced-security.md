@@ -6,55 +6,59 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: cec935c2c73e3df4d2e03d54305004df9bd2655e
+exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
+source-git-commit: f9b064dffa0f8792e8653760cb2ac44cfdf43848
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '696'
 ht-degree: 1%
 
 ---
-
 
 # Complemento de segurança aprimorado {#enhanced-security}
 
 Para tornar sua conexão de rede mais segura e oferecer maior segurança para seus recursos, [!DNL Adobe Campaign] oferece um novo **Segurança aprimorada** complementar.
 
-Atualmente, esse complemento inclui dois recursos de ecossistema:
+Esse complemento inclui dois recursos do ecossistema:
 
 * [Integração segura do CMK](#secure-cmk-integration)
 
 * [Encapsulamento de VPN seguro](#secure-vpn-tunneling)
 
+Esses recursos estão detalhados abaixo.
+
 ## Integração segura do CMK {#secure-cmk-integration}
 
-**Integração segura de Chave gerenciada pelo cliente (CMK)** O permite criptografar sua instância e dados usando sua própria chave por meio da conta da AWS<!--instead of Adobe-owned keys-->. Ao torná-lo responsável pela geração e gerenciamento de chaves de criptografia, essa capacidade permite que você tenha mais controle sobre elas, incluindo a revogação de uma chave.
+A variável **Integração segura de Chave gerenciada pelo cliente (CMK)** O permite criptografar sua instância e dados usando sua própria chave por meio da conta do Amazon Web Services (AWS).
+
+As chaves gerenciadas pelo cliente são chaves do Serviço de gerenciamento de chaves (KMS) na conta da AWS que você cria, possui e gerencia. Você tem controle total sobre essas chaves KMS e as usa para criptografar e descriptografar dados. Ao torná-lo responsável pela geração e gerenciamento de chaves de criptografia, essa capacidade permite que você tenha mais controle sobre elas, incluindo a revogação de uma chave.
 
 >[!CAUTION]
 >
 >Caso revogue uma chave, você deve estar ciente dos impactos. [Saiba mais](#cmk-callouts)
 
-Para ativar esse recurso, siga as etapas abaixo:
+Para habilitar a integração CMK com o Campaign, siga as etapas abaixo:
 
-1. Verifique se você tem um [AWS](https://aws.amazon.com/){target="_blank"} conta.
+1. Conecte-se ao seu [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} conta.
 
-1. Gere uma chave com rotação automática ao usar o Serviço de Gerenciamento de Chaves (KMS) da AWS. [Saiba como](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}
+1. Gere uma chave com rotação automática ao usar o Serviço de Gerenciamento de Chaves (KMS) da AWS. [Saiba como](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
-1. Aplique a política fornecida pelo Adobe à sua conta do AWS para conceder acesso aos seus recursos. [Saiba mais](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"} <!--link TBC-->
+1. Aplique a política fornecida pelo Adobe à sua conta do AWS para conceder acesso aos seus recursos. [Saiba mais](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. Compartilhe o nome do recurso da Amazon (ARN de chave) com [!DNL Adobe Campaign]. Para fazer isso, entre em contato com o representante da Adobe. <!--or Adobe transition manager?-->
+1. Compartilhe seu [Nome do recurso Amazon (chave ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} com [!DNL Adobe Campaign]. Para fazer isso, entre em contato com o representante da Adobe. <!--or Adobe transition manager?-->
 
-1. Crie e teste as regras do Amazon EventBridge para habilitar o monitoramento das chaves por Adobe&#x200B; [Saiba mais](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}
+1. Crie e teste as regras do Amazon EventBridge para habilitar o monitoramento das chaves por Adobe&#x200B; [Saiba mais](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
 ## Encapsulamento de VPN seguro {#secure-vpn-tunneling}
 
-**Encapsulamento de VPN (Virtual Private Network) seguro** O é uma VPN site a site que fornece acesso seguro aos seus dados em trânsito por uma rede privada, das suas instalações à [!DNL Adobe Campaign] instância.
+A variável **Encapsulamento de VPN (Virtual Private Network) seguro** O é uma VPN site a site que fornece acesso seguro aos seus dados em trânsito por uma rede privada, das suas instalações à [!DNL Adobe Campaign] instância.
 
 <!--As it connects two networks together, it is a site-to-site VPN.-->
 
-Para garantir alta disponibilidade (HA), ele usa dois túneis para evitar qualquer interrupção caso ocorra um problema em um túnel
+Para garantir alta disponibilidade (HA), ele usa dois túneis para evitar qualquer interrupção caso ocorra um problema em um túnel.
 
 Há suporte para três casos de uso:
 
-* FDA sobre VPN<!--to access your on-premise database from the Campaign instance over VPN-->
+* Federated Data Access (FDA) via VPN<!--to access your on-premise database from the Campaign instance over VPN-->
 
 * Logon de instância via VPN de um cliente thick
 
@@ -68,7 +72,7 @@ Para garantir o uso correto desse recurso, siga as diretrizes abaixo:
 
 * Configure sua VPN lateral com base na configuração da VPN do lado do Adobe.
 
-* Mantenha ambos os túneis ativos para HA.
+* Mantenha os dois túneis ativos para alta disponibilidade.
 
 * Monitore o túnel lateral.
 
