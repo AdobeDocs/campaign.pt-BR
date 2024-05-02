@@ -5,9 +5,9 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 07e85c2933194a24b4275519dd7da9c3226f6a3c
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '282'
 ht-degree: 9%
 
 ---
@@ -27,6 +27,8 @@ Você pode usar APIs JavaScript para gravar no banco de dados na nuvem do Campai
 Observe que, em seu [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o Campaign funciona com dois bancos de dados: um banco de dados local para a interface do usuário de mensagens em tempo real e consultas unitárias e gravação por meio de APIs, e um banco de dados em nuvem para execução de campanha, relatórios, assimilação de dados, consultas em lote e execução de fluxo de trabalho.
 
 >[!CAUTION]
+>
+>* Como usuário do Campaign em transição do Campaign Standard, você pode usar as APIs REST com o Campaign v8. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/get-started-apis){target="_blank"}.
 >
 >* A partir do Campaign v8.5.1, o processo de autenticação para o Campaign v8 foi alterado. Os operadores técnicos devem usar o Adobe Identity Management System (IMS) para se conectarem ao Campaign. Saiba como migrar as contas técnicas já existentes nesta [nota técnica](../../technotes/upgrades/ims-migration.md).
 >
