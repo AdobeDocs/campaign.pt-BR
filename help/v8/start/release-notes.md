@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 520a7798cd1969e7c29519cbc918b66a44ff2a71
+source-git-commit: c4a289e713d01297a7d38158b3cd4450ceef5276
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '907'
 ht-degree: 51%
 
 ---
@@ -46,7 +46,7 @@ _sexta-feira, 2 de maio de 2024_
 
 ### Atualizações de compatibilidade {#comp-8-7-1}
 
-Os databricks agora são compatíveis como um banco de dados externo com o FDA (Federated Data Access — Acesso a Dados Federados) do Adobe Campaign. Saiba mais sobre FDA [nesta página](../connect/fda.md).
+Os databricks agora são compatíveis como um banco de dados externo com o FDA (Federated Data Access — Acesso a Dados Federados) do Adobe Campaign. Saiba mais [nesta página](compatibility-matrix.md#FederatedDataAccessFDA).
 
 ### Melhorias gerais {#improvements-8-7-1}
 
