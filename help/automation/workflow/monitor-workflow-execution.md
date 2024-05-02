@@ -5,9 +5,9 @@ description: Monitorar a execução do fluxo de trabalho
 feature: Workflows
 role: Admin
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: a78019d11a0a2acbd8c0d9ba7c2082c09f90356c
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1926'
 ht-degree: 95%
 
 ---
@@ -18,7 +18,7 @@ Esta seção apresenta informações sobre como monitorar a execução de workfl
 
 Também está disponível [nesta sessão](workflow-supervision.md#supervising-workflows), um caso de uso que detalha a criação de workflows que permite monitorar o status de um conjunto de workflows &quot;pausados&quot;, &quot;interrompidos&quot; ou &quot;com erros&quot;.
 
-Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades, as últimas modificações feitas e o status dos fluxos de trabalho. Saiba mais sobre Trilha de auditoria em  [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html#accessing-audit-trail){target="_blank"}.
+Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades, as últimas modificações feitas e o status dos fluxos de trabalho. Saiba mais sobre Trilha de auditoria nesta seção [página](../../v8/reporting/audit-trail.md){target="_blank"}.
 
 ## Exibição do progresso {#displaying-progress}
 
