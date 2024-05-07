@@ -1,5 +1,5 @@
 ---
-title: Complemento de segurança aprimorado
+title: Complemento de segurança aprimorada do Campaign
 description: Introdução ao complemento de segurança aprimorada do Campaign
 feature: Configuration
 role: Developer
@@ -7,26 +7,35 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: f9b064dffa0f8792e8653760cb2ac44cfdf43848
+source-git-commit: 042a1cc96b819a1a77442e274defbadeb393eafc
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 1%
+source-wordcount: '745'
+ht-degree: 3%
 
 ---
 
-# Complemento de segurança aprimorado {#enhanced-security}
+
+# Complemento de segurança aprimorada do Campaign {#enhanced-security}
 
 Para tornar sua conexão de rede mais segura e oferecer maior segurança para seus recursos, [!DNL Adobe Campaign] oferece um novo **Segurança aprimorada** complementar.
 
 Esse complemento inclui dois recursos do ecossistema:
 
-* [Integração segura do CMK](#secure-cmk-integration)
+* [Integração segura de Chave gerenciada pelo cliente (CMK)](#secure-cmk-integration)
 
-* [Encapsulamento de VPN seguro](#secure-vpn-tunneling)
+* [Encapsulamento de VPN (Virtual Private Network) seguro](#secure-vpn-tunneling)
 
 Esses recursos estão detalhados abaixo.
 
-## Integração segura do CMK {#secure-cmk-integration}
+Algumas medidas de proteção e limitações relacionadas aos recursos de segurança aprimorados estão listadas nesta página. Além disso, verifique se todos os casos de uso de integração de Secure CMK / encapsulamento Secure VPN estão funcionando.
+
+Depois que esses recursos forem implementados, os monitores de Adobe:
+
+* A disponibilidade da instância e continue com o alerta se a chave não estiver disponível.
+
+* Os túneis VPN são usados e continue com os alertas caso surja algum problema.
+
+## Proteger Integração segura de chave gerenciada pelo cliente {#secure-cmk-integration}
 
 A variável **Integração segura de Chave gerenciada pelo cliente (CMK)** O permite criptografar sua instância e dados usando sua própria chave por meio da conta do Amazon Web Services (AWS).
 
@@ -48,7 +57,30 @@ Para habilitar a integração CMK com o Campaign, siga as etapas abaixo:
 
 1. Crie e teste as regras do Amazon EventBridge para habilitar o monitoramento das chaves por Adobe&#x200B; [Saiba mais](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
-## Encapsulamento de VPN seguro {#secure-vpn-tunneling}
+
+### Medidas de proteção e limitações {#cmk-callouts}
+
+As seguintes medidas de proteção e limitações se aplicam à integração do CMK com o Adobe Campaign v8:
+
+* Adobe não fornece um [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} conta. Você deve ter sua própria conta da AWS e configurá-la para gerar e compartilhar sua chave com o Adobe.
+
+* Somente [Serviço de Gerenciamento de Chaves da AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS) são compatíveis. Nenhuma chave gerada pelo cliente fora do KMS pode ser usada.&#x200B;
+
+* O tempo de inatividade é esperado durante a primeira configuração. &#x200B;A duração do tempo de inatividade depende do tamanho do banco de dados.
+
+* Como cliente do, você é o proprietário e mantém a chave do. Você deve entrar em contato com o Adobe em caso de alteração na chave&#x200B;
+
+* Você pode auditar sua chave usando [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} e revogá-la, se necessário&#x200B;
+
+* Caso revogue, desative ou exclua a chave, os recursos e a instância criptografados ficarão inacessíveis até que você reverta a ação correspondente.
+
+  >[!CAUTION]
+  >
+  >Se você desabilitar a chave e não reverter esta ação em 7 dias, o banco de dados só poderá ser recuperado do backup.
+  >
+  >Se você excluir a chave e não reverter essa ação em 30 dias, todos os seus dados serão excluídos permanentemente e serão perdidos.&#x200B;
+
+## Túnel de Rede Virtual Privada Segura {#secure-vpn-tunneling}
 
 A variável **Encapsulamento de VPN (Virtual Private Network) seguro** O é uma VPN site a site que fornece acesso seguro aos seus dados em trânsito por uma rede privada, das suas instalações à [!DNL Adobe Campaign] instância.
 
@@ -80,53 +112,20 @@ Para garantir o uso correto desse recurso, siga as diretrizes abaixo:
 
 * Configure um mecanismo de repetição na sua extremidade caso ocorram falhas de conexão.
 
-## Medidas de proteção {#callouts}
 
-Algumas medidas de proteção e limitações relacionadas aos recursos de segurança aprimorados estão listadas abaixo.
+### Medidas de proteção e limitações {#vpn-callouts}
 
-* Certifique-se de que todos os casos de uso de integração de Secure CMK / encapsulamento Secure VPN estejam funcionando.
-
-<!--* Adobe shall reach out to you or your technical team if any issue is found on your side.
-
-* Currently, when using Enhanced security features, any communication with Adobe must be performed manually via email.-->
-
-* O Adobe monitorará:
-
-   * A disponibilidade da instância e continue com o alerta se a chave não estiver disponível.
-
-   * Os túneis VPN são usados e continue com os alertas caso surja algum problema.
-
-### Proteções de integração CMK segura {#cmk-callouts}
-
-* O Adobe não fornece uma conta AWS. Você deve ter sua própria conta da AWS e configurá-la para gerar e compartilhar sua chave com o Adobe.
-
-* Somente [Serviço de Gerenciamento de Chaves da AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS) são compatíveis. Nenhuma chave gerada pelo cliente fora do KMS pode ser usada.&#x200B;
-
-* Algum tempo de inatividade será envolvido na primeira configuração. &#x200B;A duração do tempo de inatividade dependerá do tamanho do banco de dados.
-
-* Como você é o proprietário e mantém a chave, entre em contato com o Adobe em caso de alteração na chave&#x200B;
-
-* Você pode auditar sua chave usando [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} e revogá-la, se necessário&#x200B;
-
-* Caso revogue, desative ou exclua a chave, os recursos e a instância criptografados ficarão inacessíveis até que você reverta a ação correspondente.
-
-  >[!CAUTION]
-  >
-  >Se você desabilitar a chave e não reverter esta ação em 7 dias, o banco de dados só poderá ser recuperado do backup.
-  >
-  >Se você excluir a chave e não reverter essa ação em 30 dias, todos os seus dados serão excluídos permanentemente e serão perdidos.&#x200B;
-
-### Proteções de encapsulamento VPN seguro {#vpn-callouts}
+As seguintes medidas de proteção e limitações se aplicam à integração do tunelamento VPN com o Adobe Campaign v8:
 
 * Atualmente, somente os bancos de dados locais são compatíveis, como<!--Richa to check the list with PM-->:
 
    * MySQL
-   * Netezza 
-   * Oracle 
-   * SAP HANA 
-   * SQL Server 
-   * Sybase 
-   * Teradata 
+   * Netezza
+   * Oracle
+   * SAP HANA
+   * SQL Server
+   * Sybase
+   * Teradata
    * Hadoop via HiveSQL
 
 * Somente dispositivos VPN compatíveis com o AWS são suportados. Uma lista de dispositivos compatíveis está disponível em [esta página](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}<!--check which list should be communicated-->.
