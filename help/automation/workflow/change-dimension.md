@@ -5,10 +5,10 @@ description: Saiba como usar a atividade Change dimension
 feature: Workflows, Targeting Activity
 role: User
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 75%
+source-wordcount: '414'
+ht-degree: 67%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 75%
 Use o **[!UICONTROL Change dimension]** atividade para alterar o targeting dimension enquanto você constrói um público-alvo. Essa atividade altera o eixo dependendo do template de dados e da dimensão de entrada. Por exemplo, você pode alternar da dimensão &quot;contratos&quot; para a dimensão &quot;clientes&quot;.
 
 Você também pode usar essa atividade para definir as colunas adicionais do novo target e os critérios de desduplicação de dados.
+
+>[!IMPORTANT]
+>
+>Observe que a variável **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** as atividades não devem ser adicionadas em uma linha. Se precisar usar ambas as atividades consecutivamente, inclua uma **[!UICONTROOL Enriquecimento]** atividade entre eles. Isso garante a execução adequada e evita possíveis conflitos ou erros.
 
 Para configurar o **[!UICONTROL Change dimension]** siga as etapas abaixo:
 
