@@ -5,9 +5,9 @@ description: Saiba como criar um fluxo de trabalho
 feature: Workflows
 role: User
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: b7fa3dfb1e596d2ea41674278cbe315199264611
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '838'
 ht-degree: 84%
 
 ---
@@ -145,31 +145,3 @@ Além das propriedades usuais do workflow, as propriedades do template permitem 
 1. Na janela do workflow, altere o rótulo do workflow.
 1. Clique em **Save**.
 
-O recurso de duplicação não está diretamente disponível na visualização de uma campanha.
-
-No entanto, é possível criar uma visualização para exibir todos os workflows na sua instância. Nesta visualização, é possível duplicar workflows usando **Duplicate to**.
-
-**Criar uma visualização**
-
-1. No **Explorer**, vá para a pasta na qual você precisa criar sua visualização.
-1. Clique com o botão direito do mouse, vá para **Add a new folder** > **Process** e selecione **Workflows**.
-
-   ![](assets/add-new-folder-workflows.png)
-
-A nova pasta **Workflows** é criada.
-
-1. Clique com o botão direito do mouse e selecione **Properties**.
-1. No **Restrição** , ative a opção **Esta pasta é uma exibição** e clique em **Salvar**.
-
-   ![](assets/folder-is-a-view.png)
-
-A pasta agora é preenchida com todos os workflows da sua instância.
-
-**Duplicar um fluxo de trabalho de campanha**
-
-1. Selecione um workflow de campanha na visualização do workflow.
-1. Clique com o botão direito do mouse em **Duplicate to**.
-1. Altere o rótulo.
-1. Clique em **Save**.
-
-Você pode ver o workflow duplicado na visualização workflow.
