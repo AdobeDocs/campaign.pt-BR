@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
+source-git-commit: 91d19874dfb313a1a470ac4f39cf5af7ca7dfa19
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 26%
+source-wordcount: '151'
+ht-degree: 27%
 
 ---
 
@@ -19,7 +19,7 @@ Esta página lista todas as atualizações mais recentes no [!DNL Campaign] Docu
 
 ## Maio de 2024 {#may-2024}
 
-Uma nota foi adicionada para especificar que **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** atividades não devem ser adicionadas em uma linha e precisam ter uma **[!UICONTROOL Enriquecimento]** atividade entre eles. Leia mais na seção [Alterar dimensão](../../automation/workflow/change-dimension.md) e [Alterar fonte de dados](../../automation/workflow/change-data-source.md) seções.
+Uma nota foi adicionada para especificar que **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** atividades não devem ser adicionadas em uma linha e precisam ter uma **[!UICONTROL Enrichement]** atividade entre eles. Leia mais na seção [Alterar dimensão](../../automation/workflow/change-dimension.md) e [Alterar fonte de dados](../../automation/workflow/change-data-source.md) seções.
 
 ## Fevereiro de 2024 {#feb-2024}
 
