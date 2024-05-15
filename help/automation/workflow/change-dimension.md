@@ -5,9 +5,9 @@ description: Saiba como usar a atividade Change dimension
 feature: Workflows, Targeting Activity
 role: User
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
-source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
+source-git-commit: b77c37ab9ba9556fdefc563deac6b55ab0d91dc8
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '413'
 ht-degree: 67%
 
 ---
@@ -20,7 +20,7 @@ Você também pode usar essa atividade para definir as colunas adicionais do nov
 
 >[!IMPORTANT]
 >
->Observe que a variável **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** as atividades não devem ser adicionadas em uma linha. Se precisar usar ambas as atividades consecutivamente, inclua uma **[!UICONTROOL Enriquecimento]** atividade entre eles. Isso garante a execução adequada e evita possíveis conflitos ou erros.
+>Observe que a variável **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** as atividades não devem ser adicionadas em uma linha. Se precisar usar ambas as atividades consecutivamente, inclua uma **[!UICONTROL Enrichement]** atividade entre eles. Isso garante a execução adequada e evita possíveis conflitos ou erros.
 
 Para configurar o **[!UICONTROL Change dimension]** siga as etapas abaixo:
 
