@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
+source-git-commit: 1f113f63089395269c494a9328d633684977912a
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 97%
+source-wordcount: '898'
+ht-degree: 90%
 
 ---
 
@@ -52,7 +52,7 @@ Os databricks agora são compatíveis como um banco de dados externo com o Feder
 
 * Vários esquemas foram alterados de 32 para 64 bits. Isso se aplica somente aos clientes que estão migrando do Campaign Standard. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=pt-BR).
 
-* Nas tabelas do Campaign, um novo sinalizador permite manipular modificações nos atributos lastModified, created e createdBy-id. Quando o sinalizador está ativado, os valores fornecidos pelos usuários para esses atributos são ignorados. Somente a hora e a ID do servidor do contexto do usuário são usadas. Quando o sinalizador está desativado, os valores fornecidos pelo usuário para esses atributos são usados. O sinalizador ignoreTimestampsID está localizado em serverConf.xml no nó “compartilhado”.
+* Nas tabelas do Campaign, os seguintes atributos agora são preenchidos por padrão pela data e hora do servidor: lastModified, created, createdBy-id. Os valores fornecidos pelos usuários em chamadas de API são ignorados. Essa configuração pode ser alterada no arquivo de configuração do servidor do Campaign. Como cliente do Managed Cloud Service, você deve entrar em contato com o Adobe para alterar essa configuração padrão.
 
 ### Correções {#fixes-8-7-1}
 
