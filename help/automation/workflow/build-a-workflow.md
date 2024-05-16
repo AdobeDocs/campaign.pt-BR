@@ -5,10 +5,10 @@ description: Saiba como criar um fluxo de trabalho
 feature: Workflows
 role: User
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: b7fa3dfb1e596d2ea41674278cbe315199264611
+source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 84%
+ht-degree: 78%
 
 ---
 
@@ -133,9 +133,7 @@ Além das propriedades usuais do workflow, as propriedades do template permitem 
 
 É possível duplicar diferentes tipos de workflows: Após a duplicação, as modificações do workflow não são transferidas para a cópia do workflow.
 
->[!CAUTION]
->
->O comando copiar-colar está disponível em workflows, mas recomendamos que você use o **Duplicate**. Depois que uma atividade é copiada, toda a sua configuração é mantida. Para atividades de entrega (Email, SMS, Notificação por push...), o objeto da entrega anexado à atividade também é copiado, o que pode resultar em falha.
+A Adobe recomenda duplicar um fluxo de trabalho em vez de executar uma cópia/colagem das atividades. Quando uma atividade é copiada, todas as suas configurações são mantidas. Para atividades de canal, o objeto de delivery associado à atividade também é copiado, o que pode levar a grandes problemas.
 
 1. Clique com o botão direito do mouse em um workflow.
 1. Clique em **Duplicate**.

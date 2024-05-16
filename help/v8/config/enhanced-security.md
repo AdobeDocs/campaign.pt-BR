@@ -7,9 +7,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 042a1cc96b819a1a77442e274defbadeb393eafc
+source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '743'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ Depois que esses recursos forem implementados, os monitores de Adobe:
 
 ## Proteger Integração segura de chave gerenciada pelo cliente {#secure-cmk-integration}
 
-A variável **Integração segura de Chave gerenciada pelo cliente (CMK)** O permite criptografar sua instância e dados usando sua própria chave por meio da conta do Amazon Web Services (AWS).
+A variável **Integração segura de Chave gerenciada pelo cliente (CMK)** O permite criptografar dados em repouso usando sua própria chave por meio da conta do Amazon Web Services (AWS).
 
 As chaves gerenciadas pelo cliente são chaves do Serviço de gerenciamento de chaves (KMS) na conta da AWS que você cria, possui e gerencia. Você tem controle total sobre essas chaves KMS e as usa para criptografar e descriptografar dados. Ao torná-lo responsável pela geração e gerenciamento de chaves de criptografia, essa capacidade permite que você tenha mais controle sobre elas, incluindo a revogação de uma chave.
 
