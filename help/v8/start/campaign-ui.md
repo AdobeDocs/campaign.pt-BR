@@ -8,7 +8,7 @@ exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
@@ -103,7 +103,7 @@ Esse espaço de trabalho permite que você acesse a árvore do Explorer para pro
 
 ## Interface do usuário da Web do Campaign {#ac-web-ui}
 
-Como usuário do console do cliente do Campaign v8, a partir da versão v8.6.1, você agora tem acesso a um ambiente da Web, disponível por meio da interface do usuário central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com a interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, os recursos do produto e os serviços.
+Como usuário do console do cliente do Campaign v8, a partir da versão v8.6.1, você agora tem acesso a um ambiente da Web, disponível por meio da interface do usuário central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços. 
 
 ![Home Page da Interface do Usuário da Web do Adobe Campaign](assets/ac-web-home.png)
 

@@ -8,7 +8,7 @@ exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
 source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
 workflow-type: tm+mt
 source-wordcount: '1663'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -86,6 +86,6 @@ Saiba como monitorar workflows técnicos neste [seção dedicada](monitor-techni
 | **Envio de indicadores e atributos de campanha** (webAnalyticsSendMetrics) | Conectores de análise da Web | Esse fluxo de trabalho permite enviar indicadores de campanha de email do Adobe Campaign para o Adobe Experience Cloud Suite por meio do conector do Adobe® Analytics. Os indicadores relacionados são: Enviado (iSent), Contagem total de aberturas (iTotalRecipientOpen), Número total de destinatários que clicaram (iTotalRecipientClick), Erros (iError), Recusa (opt-out) (iOptOut). |
 | **Estoque: pedidos e alertas** (stockMgt) | Instalado por padrão | Esse fluxo de trabalho inicia o cálculo de estoque nas linhas de pedido e gerencia os limites de aviso. |
 | **Sincronizar aplicativos móveis da Coleção de dados da Adobe Experience Platform** (syncWithLaunch) | Instalado por padrão, a partir da v8.5 | Este fluxo de trabalho sincronizará automaticamente as propriedades móveis com o Adobe Campaign a partir da Coleção de dados. |
-| **Rastreamento** (rastreamento) | Instalado por padrão | Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de entrega, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. |
+| **Rastreamento** (rastreamento) | Instalado por padrão | Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de entrega, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. |
 | **Atualizar status do evento** (updateEventsStatus) | Execução de mensagens transacionais (Centro de Mensagens - Execução) | Esse fluxo de trabalho permite atribuir um status a um evento. Os status do evento são descritos a seguir:<ul><li>Pendente: o evento está em uma fila. Nenhum modelo de mensagem foi associado a ele.</li><li>Entrega pendente: o evento está em uma fila, um modelo de mensagem foi associado a ele e está sendo processado no momento pela entrega.</li><li>Enviada: esse status é copiado dos logs da entrega. Significa que a entrega foi enviada.</li><li>Ignorado pela entrega: esse status é copiado dos logs da entrega. Significa que a entrega foi ignorada.</li><li>Erro de entrega: esse status é copiado dos logs da entrega. Significa que a entrega falhou.</li><li>Evento não coberto: o evento falhou ao ser associado a um modelo de mensagem. O evento não será reprocessado.</li></ul> |
 | **Atualização para capacidade de entrega** (deliverabilityUpdate) | Instalado por padrão | Depois que o pacote de monitoramento de capacidade de entrega (capacidade de entrega por email) é instalado, esse fluxo de trabalho é executado durante à noite e gerencia as regras de qualificação de emails rejeitados, bem como a lista de domínios e MXs. Isso requer que a porta HTTPS esteja aberta na plataforma. |

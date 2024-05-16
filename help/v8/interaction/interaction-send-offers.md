@@ -74,7 +74,7 @@ Várias atividades de workflow permitem definir a forma como as ofertas são apr
 * Mecanismo de oferta
 * Ofertas por célula
 
-### Atividade de  {#enrichment}
+### Enriquecimento {#enrichment}
 
 A variável **Enriquecimento** A atividade permite adicionar ofertas ou links para ofertas de recipients de delivery.[Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 

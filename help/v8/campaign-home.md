@@ -6,7 +6,7 @@ exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74
 source-git-commit: 574206bd243a2492e512ee62f057da940d29da6e
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
@@ -14,25 +14,25 @@ ht-degree: 33%
 
 ## Novidades
 
-Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Adobe Campaign v8 (console do cliente)! Para obter uma lista de todos os recursos, melhorias e correções, confira as [Notas de versão](start/release-notes.md) detalhadas. Mantenha-se atualizado com as alterações mais recentes em nossa documentação, acessando o [atualizações de documentação](start/documentation-updates.md) página.
+Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Adobe Campaign v8 (console do cliente). Para obter uma lista de todos os recursos, melhorias e correções, confira as [Notas de versão](start/release-notes.md) detalhadas. Mantenha-se atualizado com as alterações mais recentes em nossa documentação, acessando a [página de atualizações da documentação](start/documentation-updates.md).
 
 >[!BEGINTABS]
 
->[!TAB A versão v8.7 do Campaign está disponível]
+>[!TAB A versão do Campaign v8.7 está disponível.]
 
-A versão mais recente do Adobe Campaign agora está disponível. Ele foi lançado em **Disponibilidade limitada** (L-A). Leia as notas de versão para obter mais detalhes.
+A versão mais recente do Adobe Campaign agora está disponível. Ela foi lançada em **Disponibilidade limitada**(LA). Leia as notas de versão para obter mais detalhes.
 
 [![imagem](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
 
 
->[!TAB Nova interface da Web do Campaign]
+>[!TAB Nova interface de usuário do Adobe Campaign Web]
 
-Experimente a nova interface do Adobe Campaign. Mais moderno, intuitivo e dinâmico!
+Explore a nova interface de usuário do Adobe Campaign. Mais moderna, intuitiva e dinâmica.
 
 [![imagem](assets/do-not-localize/learn-more-button.svg)](start/campaign-ui.md#ac-web-ui)
 
 
->[!TAB Alterações futuras do canal por push]
+>[!TAB Próximas alterações no canal de push]
 
 Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para Android serão lançadas em 2024 e poderão afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push no Android pode precisar ser atualizada para oferecer suporte a essa alteração. É recomendado verificar isso antecipadamente e tomar as devidas ações.
 
@@ -56,7 +56,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     </td>
     <td>
     <a href="start/create-message.md"><img src="assets/do-not-localize/start-send.jpeg"></a>
-    <div><strong>Enviar mensagens</strong><br/>Saiba como enviar mensagens em vários canais, como email, SMS, notificações por push, entre outros.
+    <div><strong>Enviar mensagens</strong><br/>Aprenda a enviar mensagens através de vários canais, como email, SMS, notificações por push, entre outros.
     </div></td>
     <td>
     <a href="audiences/create-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
@@ -78,39 +78,39 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Comece já</strong><br/><a href="start/campaign-ui.md">Interface do usuário</a> - <a href="start/ac-components.md">Componentes e processos</a> - <a href="start/v7-to-v8.md">Do Classic v7 para o v8</a> - <a href="start/campaign-faq.md">Perguntas frequentes</a>
+      <strong>Introdução</strong><br/><a href="start/campaign-ui.md">Interface do usuário</a> – <a href="start/ac-components.md">Componentes e processos</a> – <a href="start/v7-to-v8.md">Do Classic v7 para o v8</a> – <a href="start/campaign-faq.md">Perguntas frequentes</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Experiência do cliente</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatizar com workflows</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Orquestração de campanha</a> - <a href="interaction/interaction.md">Gerenciamento de decisão</a> - <a href="send/personalize.md">Personalização</a>
+      <strong>Experiência do cliente</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatizar com fluxos de trabalho</a> – <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Orquestração de campanha</a> – <a href="interaction/interaction.md">Gestão de decisões</a> – <a href="send/personalize.md">Personalização</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Enviar mensagens</strong><br/><a href="start/create-message.md">Comece já</a> - <a href="send/preview-and-proof.md">Visualização e provas</a> - <a href="send/predictive.md">Otimização de hora de envio</a> - <a href="reporting/gs-reporting.md">Relatórios e análises</a>
+      <strong>Enviar mensagens</strong><br/><a href="start/create-message.md">Introdução</a> – <a href="send/preview-and-proof.md">Visualização e provas</a> – <a href="send/predictive.md">Otimização da hora de envio</a> – <a href="reporting/gs-reporting.md">Relatórios e análises</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>Perfis e públicos</strong><br/><a href="audiences/create-profiles.md">Adicionar perfis</a> - <a href="audiences/create-audiences.md">Criar públicos</a> - <a href="start/subscriptions.md">Gerenciar assinaturas</a> - <a href="start/privacy.md">Privacidade</a>
+     <strong>Perfis e públicos-alvo</strong><br/><a href="audiences/create-profiles.md">Adicionar perfis</a> – <a href="audiences/create-audiences.md">Criar públicos-alvo</a> – <a href="start/subscriptions.md">Gerenciar assinaturas</a> – <a href="start/privacy.md">Privacidade</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
     <br/>
-      <strong>Arquitetura e configuração</strong><br/><a href="architecture/architecture.md">Arquitetura</a> - <a href="start/implement.md">Implementação do Campaign v8</a> - <a href="connect/integration.md">Conectar-se a outras soluções</a> - <a href="start/gs-permissions.md">Usuários e permissões</a>
+      <strong>Arquitetura e configuração</strong><br/><a href="architecture/architecture.md">Arquitetura</a> – <a href="start/implement.md">Implementação do Campaign v8</a> – <a href="connect/integration.md">Conectar-se a outras soluções</a> – <a href="start/gs-permissions.md">Usuários e permissões</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
     <br/>
-      <strong>Recursos do desenvolvedor</strong><br/><a href="dev/datamodel.md">Modelo de dados do Campaign v8</a> - <a href="dev/schemas.md">Esquemas</a> - <a href="dev/api.md">APIs</a>
+      <strong>Recursos do desenvolvedor</strong><br/><a href="dev/datamodel.md">Modelo de dados do Campaign v8</a> – <a href="dev/schemas.md">Esquemas</a> – <a href="dev/api.md">APIs</a>
     </td>
   </tr>
 </table>
 
 ## Recursos adicionais
 
-[Descrição de produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Adobe Campaign Web user interface documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+[Descrição do produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Adobe Campaign Web user interface documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
 

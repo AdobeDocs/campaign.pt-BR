@@ -8,7 +8,7 @@ exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: 99cb937a475997aae714a67b1f9f91c6bae932f4
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 28%
+ht-degree: 48%
 
 ---
 
@@ -46,14 +46,14 @@ Um perfil ativo é aquele com o qual o cliente tentou se comunicar nos últimos 
 
 De acordo com seu contrato, cada uma das instâncias do Campaign é provisionada com uma quantidade específica de perfis ativos que são contados para fins de faturamento. Consulte seu contrato mais recente para obter uma referência sobre o número de perfis ativos adquiridos. Saiba mais em [Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Você pode monitorar o número de perfis ativos em sua instância diretamente do Painel de controle do Campaign. Para obter mais informações, consulte [Documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR){target="_blank"}.
+Também é possível monitorar o número de perfis ativos em sua instância diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR){target="_blank"}.
 
 
-São aplicáveis as seguintes medidas de proteção e limitações:
+As seguintes medidas de proteção e limitações se aplicam:
 
-* Um perfil que se tornou alvo de várias entregas é contado apenas uma vez.
+* Um perfil que foi direcionado em várias entregas é contado apenas uma vez.
 * Perfis direcionados no contexto de Marketing social em X (Twitter) não são considerados como perfis ativos.
-* A contagem se baseia na chave primária do recipient. Como consequência, se um perfil estiver presente em duas tabelas de recipients diferentes, ele poderá ser contado duas vezes como um perfil ativo.
+* A contagem se baseia na chave primária do destinatário. Como consequência, se um perfil estiver presente em duas tabelas de destinatários diferentes, ele poderá ser contado duas vezes como um perfil ativo.
 
 
 ## Privacidade e consentimento{#privacy-and-consent}

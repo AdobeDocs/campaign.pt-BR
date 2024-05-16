@@ -238,7 +238,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
    <td> Inacessível </td> 
    <td> Suave/Grave </td> 
    <td> 3 </td> 
-   <td> Ocorreu um erro na cadeia de entrega de mensagens. Pode ser um incidente na retransmissão SMTP, um domínio que está temporariamente inacessível, etc. De acordo com o erro, haverá nova tentativa ao endereço até que o contador de erros atinja 5, ou ele será enviado diretamente para a quarentena.<br /> </td> 
+   <td> Ocorreu um erro na cadeia de entrega de mensagens. Pode ser um incidente na retransmissão SMTP, um domínio que está temporariamente inacessível, etc. De acordo com o erro, haverá uma nova tentativa ao endereço até que o contador de erros atinja 5, ou ele será enviado diretamente para a quarentena.<br /> </td> 
   </tr> 
   <tr> 
    <td> Usuário desconhecido </td> 

@@ -11,7 +11,7 @@ ht-degree: 77%
 
 ---
 
-# Regras de filtro{#filtering-rules}
+# Regras de filtragem{#filtering-rules}
 
 Use as regras de filtragem para selecionar as mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma targeting dimension.
 

@@ -42,7 +42,7 @@ ht-degree: 83%
          + [Desduplicação](workflow/deduplication.md)
          + [Outline de entrega](workflow/delivery-outline.md)
          + [Editar esquema](workflow/edit-schema.md)
-         + [Atividade de ](workflow/enrichment.md)
+         + [Enriquecimento](workflow/enrichment.md)
          + [Regras de ](workflow/exclusion.md)
          + [Consulta incremental](workflow/incremental-query.md)
          + [Interseção](workflow/intersection.md)
@@ -145,7 +145,7 @@ ht-degree: 83%
    + [Provedores, estoques e orçamentos](campaigns/providers-stocks-and-budgets.md)
 + Otimização de campanha (complemento){#campaign-optimization}
    + [Introdução às tipologias de campanha](campaign-opt/campaign-typologies.md)
-   + [Regras de filtro](campaign-opt/filtering-rules.md)
+   + [Regras de filtragem](campaign-opt/filtering-rules.md)
    + [Regras de controle](campaign-opt/control-rules.md)
    + [Regras de pressão](campaign-opt/pressure-rules.md)
    + [Regras de consistência](campaign-opt/consistency-rules.md)

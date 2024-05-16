@@ -61,7 +61,7 @@ Para criar e usar uma tipologia para seus deliveries, siga as etapas abaixo:
 1. Crie regras de tipologia e crie uma tipologia para referenciá-las nela.
 As etapas detalhadas estão listadas na seguinte seção:
 
-   * [Regras de filtro](filtering-rules.md)
+   * [Regras de filtragem](filtering-rules.md)
    * [Regras de controle](control-rules.md)
    * [Regras de pressão](pressure-rules.md)
    * [Regras de capacidade](consistency-rules.md)

@@ -8,7 +8,7 @@ exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1463'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -99,9 +99,9 @@ Você pode criar vários workflows para construção do target para uma única c
 
 Os workflows para construção do target podem ser iniciados manualmente por meio do botão **[!UICONTROL Start]** na barra de ferramentas, desde que você tenha os direitos apropriados.
 
-O direcionamento pode ser programado para execução automática de acordo com um agendamento (agendador) ou um evento (sinal externo, importação de arquivo, etc.).
+O direcionamento pode ser programado para execução automática de acordo com um agendamento (scheduler) ou um evento (sinal externo, importação de arquivo, etc.).
 
-As ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são **assíncrono** processes: o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
+As ações relacionadas à execução do fluxo de trabalho de direcionamento (iniciar, parar, pausar etc.) são processos **assíncronos**: o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
 Os ícones da barra de ferramentas permitem realizar a ação referente à execução do workflow de direcionamento.
 

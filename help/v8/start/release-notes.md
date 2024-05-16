@@ -8,7 +8,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: b4f54deaf35c852012a88d1445268bce9be4e8c1
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -18,27 +18,27 @@ O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualiz
 
 Como usuário do Managed Cloud Services, sua instância é atualizada pela Adobe a cada nova versão. A Adobe entrará em contato com você e atualizará seus ambientes. O console do cliente do Campaign **precisa ser atualizado para a mesma versão** dos servidores do Campaign. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
 
-Além disso, como cliente, verifique se você está usando as versões mais recentes compatíveis dos sistemas listados na [Matriz de compatibilidade](compatibility-matrix.md).
+Além disso, como cliente, verifique se você está usando a versão compatível mais recente dos sistemas listados na [Matriz de compatibilidade](compatibility-matrix.md).
 
 ## Versão 8.7.1 {#release-8-7-1}
 
-_sexta-feira, 2 de maio de 2024_
+_2 de maio de 2024_
 
 >[!AVAILABILITY]
 >
->Esta versão está em **Disponibilidade limitada** (L-A). É restrito aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não podem ser implantados em nenhum outro ambiente.
+>Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
->Como um usuário Campaign Standard em transição para o Campaign v8, consulte [Transição de Campaign Standard para o Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/release-notes/acs-migration) e [Recursos para usuários do Campaign Standard](https://experienceleague.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html).
+>Como um usuário Campaign Standard em transição para o Campaign v8, consulte [Transição do Campaign Standard para o Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/release-notes/acs-migration) e os [Recursos para usuários do Campaign Standard](https://experienceleague.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html?lang=pt-BR).
 
 ### Novos recursos {#new-8-7-1}
 
-* **Modelos avançados de notificação por push** - Agora você pode enviar notificações por push avançadas via Android. A notificação por push avançada é uma forma aprimorada de notificação por dispositivos móveis que vai além das mensagens de texto simples, incorporando elementos multimídia, como imagens, botões interativos ou outro conteúdo de mídia avançada. [Leia mais](../send/rich-push.md)
+* **Modelos avançados de notificação por push**: agora você pode enviar notificações por push avançadas via Android. A notificação por push avançada é uma forma aprimorada de notificação em dispositivos móveis que vai além das mensagens de texto simples, incorporando elementos multimídia, como imagens, botões interativos ou outros conteúdos de mídia avançada. [Leia mais](../send/rich-push.md)
 
-* **Marcas** - Como usuário migrado do Campaign Standard, os administradores técnicos agora podem definir uma ou várias marcas para centralizar os parâmetros que afetam a identidade de uma marca. Isso inclui o logotipo da marca, o domínio do URL de acesso da landing page ou as configurações de rastreamento de mensagens. Você pode criar essas marcas e vinculá-las a mensagens ou páginas de aterrissagem. Essa configuração é gerenciada em modelos. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html)
+* **Identidade visual**: como um usuário migrado do Campaign Standard, os administradores técnicos podem agora definir uma ou várias marcas para centralizar os parâmetros que afetam a identidade de uma marca. Isso inclui o logotipo da marca, o domínio do URL de acesso da página de destino ou as configurações de rastreamento de mensagens. Você pode criar essas marcas e vinculá-las a mensagens ou páginas de destino. Essa configuração é gerenciada em modelos. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=pt-BR)
 
-* **Rest APIs** - Como usuário migrado do Campaign Standard, você pode usar as APIs Rest para criar integrações com o Adobe Campaign e criar seu próprio ecossistema, conectando o Adobe Campaign ao painel de tecnologias que você usa. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html)
+* **APIs REST**: como um usuário migrado do Campaign Standard, você pode usar as APIs REST para criar integrações com o Adobe Campaign e criar seu próprio ecossistema, conectando o Adobe Campaign ao painel de tecnologias que você usa. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html?lang=pt-BR)
 
-* **Relatórios dinâmicos** - Como um usuário migrado de Campaign Standard, você pode acessar o Dynamic Reporting, que fornece relatórios totalmente personalizáveis e em tempo real para medir o impacto de suas atividades de marketing. Ele adiciona acesso aos dados do perfil, permitindo a análise demográfica por dimensões de perfil, como gênero, cidade e idade, além de dados funcionais de campanha de email, como aberturas e cliques. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html)
+* **Relatórios dinâmicos**: como um usuário migrado do Campaign Standard, você pode acessar os relatórios dinâmicos, que fornecem relatórios totalmente personalizáveis e em tempo real para medir o impacto de suas atividades de marketing. Eles adicionam acesso aos dados do perfil, permitindo análises demográficas por dimensões do perfil, como gênero, cidade e idade, além de dados funcionais de campanha de email, como aberturas e cliques. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=pt-BR)
 
 <!--
 * **New Enhanced security add-on**: To make your network connection more secure and provide improved security for your resources, Adobe Campaign offers a new Enhanced security add-on, which includes two features: Secure CMK integration and Secure VPN tunneling.
@@ -46,17 +46,18 @@ _sexta-feira, 2 de maio de 2024_
 
 ### Atualizações de compatibilidade {#comp-8-7-1}
 
-Os databricks agora são compatíveis como um banco de dados externo com o FDA (Federated Data Access — Acesso a Dados Federados) do Adobe Campaign. Saiba mais [nesta página](compatibility-matrix.md#FederatedDataAccessFDA).
+Os databricks agora são compatíveis como um banco de dados externo com o Federated Data Access (FDA) do Adobe Campaign. Saiba mais [nesta página](compatibility-matrix.md#FederatedDataAccessFDA).
 
 ### Melhorias gerais {#improvements-8-7-1}
 
-* Vários esquemas foram alterados de 32 para 64 bits. Isso se aplica somente aos clientes que estão migrando do Campaign Standard. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html).
+* Vários esquemas foram alterados de 32 para 64 bits. Isso se aplica somente aos clientes que estão migrando do Campaign Standard. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=pt-BR).
 
-* Nas tabelas do Campaign, um novo sinalizador permite manipular modificações nos atributos lastModified, created e createdBy-id. Quando o sinalizador está ativado, os valores fornecidos pelos usuários para esses atributos são ignorados. Somente a hora e a ID do servidor do contexto de usuário são usadas. Quando o sinalizador está desativado, os valores fornecidos pelo usuário para esses atributos são usados. O sinalizador ignoreTimestampsID está localizado em serverConf.xml no nó &quot;compartilhado&quot;.
+* Nas tabelas do Campaign, um novo sinalizador permite manipular modificações nos atributos lastModified, created e createdBy-id. Quando o sinalizador está ativado, os valores fornecidos pelos usuários para esses atributos são ignorados. Somente a hora e a ID do servidor do contexto do usuário são usadas. Quando o sinalizador está desativado, os valores fornecidos pelo usuário para esses atributos são usados. O sinalizador ignoreTimestampsID está localizado em serverConf.xml no nó “compartilhado”.
 
 ### Correções {#fixes-8-7-1}
 
-Os seguintes problemas foram corrigidos nessa versão: NEO72648, NEO71534, NEO71473, NEO70263, NEO70195, NEO69651, NEO68704, NEO68192, NEO67814, NEO67702, O-67620, NEO66022, NEO65774, NEO65633, NEO64199, NEO63706, NEO63705, NEO63287, NEO63197, NEO62575, NEO6025 0, NEO60192, NEO58596, NEO58314, NEO58004, NEO40054
+Os seguintes problemas foram corrigidos nessa versão:
+NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-68192, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-63706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, NEO-58314, NEO-58004, NEO-40054
 
 ## Versão 8.6.2 {#release-8-6-2}
 

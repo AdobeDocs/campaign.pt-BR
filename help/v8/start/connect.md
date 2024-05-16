@@ -8,7 +8,7 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 10b1113a20c11e0b97804f597cb0a48568fcae3d
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 12%
+ht-degree: 17%
 
 ---
 
@@ -121,11 +121,11 @@ Saiba mais sobre usuários e como definir suas permissões no [nesta seção](gs
 
 ### Interface da Web {#connect-web-ui}
 
-A partir da versão v8.6 do Campaign, você terá acesso ao novo **Interface do usuário da Web do Campaign**, disponível por meio do ambiente central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com a interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, os recursos do produto e os serviços.
+A partir da versão 8.6 do Campaign, você terá acesso à nova **interface de usuário do Campaign Web**, disponível por meio do ambiente central da Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços. 
 
 Saiba como se conectar à Adobe Experience Cloud e acessar a interface do Adobe Campaign Web [nesta página](campaign-ui.md#ac-web-ui).
 
-Saiba mais na [Documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Saiba mais na [Documentação da interface do Adobe Campaign Web](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 ### Acesso à Web {#web-access}
 

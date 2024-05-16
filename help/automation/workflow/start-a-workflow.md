@@ -9,7 +9,7 @@ exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1066'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 90%
 
 Um workflow é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](scheduler.md)) ou de um agendamento de atividade. 
 
-Ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são **assíncrono** processes: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-la.
+Ações relacionadas à execução do fluxo de trabalho de direcionamento (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-la.
 
 A barra de ferramentas permite iniciar e controlar a execução do workflow.
 

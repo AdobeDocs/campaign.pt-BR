@@ -94,7 +94,7 @@ Esta tabela de valores mostra o detalhamento das entregas, aberturas, cliques e 
 
 * **[!UICONTROL Distinct clicks for the population reached]** : Número de pessoas distintas que clicaram em uma entrega pelo menos uma vez.
 * **[!UICONTROL Cumulated clicks]**: Número total de cliques por destinatários alvos, excluindo links de unsubscription e mirror pages.
-* : Número de destinatários alvos distintos que clicaram na mesma entrega pelo menos uma vez.**[!UICONTROL Recipient clicks]**
+* **[!UICONTROL Recipient clicks]**: número de destinatários direcionados distintos que clicaram na mesma entrega pelo menos uma vez.
 * **[!UICONTROL Estimated recipient reactivity]**: Taxa do número de destinatários que clicaram pelo menos uma vez em uma entrega em comparação ao número estimado de destinatários que abriram uma entrega pelo menos uma vez. Os cliques nos links de opt out e mirror pages não são considerados.
 <!--
 **[!UICONTROL 5. Web tracking]**

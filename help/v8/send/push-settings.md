@@ -9,7 +9,7 @@ exl-id: 1a75f411-3f71-4114-b738-277820dc6138
 source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
 workflow-type: tm+mt
 source-wordcount: '1664'
-ht-degree: 17%
+ht-degree: 20%
 
 ---
 
@@ -211,11 +211,11 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
 1. Selecione **[!UICONTROL Authentication mode]**. Dois modos estão disponíveis:
 
-   * (Recomendado) **[!UICONTROL Token-based authentication]**: Preencha as configurações de conexão APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]** em seguida, selecione o certificado p8 clicando em **[!UICONTROL Enter the private key...]**. Para obter mais informações, **[!UICONTROL Token-based authentication]**, consulte [Documentação do Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * (Recomendado) **[!UICONTROL Token-based authentication]**: preencha as configurações de conexão de APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]** e selecione seu certificado p8 clicando em **[!UICONTROL Enter the private key...]**. Para saber mais sobre **[!UICONTROL Token-based authentication]**, consulte a [documentação da Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
    * **[!UICONTROL Certificate-based authentication]**: Clique **[!UICONTROL Enter the certificate...]**  em seguida, selecione a chave p12 e insira a senha fornecida pelo desenvolvedor de aplicativos para dispositivos móveis. Observe que este certificado vem com uma data de expiração e deve ser renovado anualmente. Para evitar uma interrupção no serviço para seus usuários, atualize seus certificados antes que expirem. Os certificados são válidos por um ano e você deve atualizá-los para continuar a se comunicar com APNs.
 
-1. Use o **[!UICONTROL Test the connection]** botão para validar a configuração.
+1. Use o botão **[!UICONTROL Test the connection]** para validar a configuração.
 
 1. Clique em **[!UICONTROL Next]** para configurar o aplicativo de produção e siga as mesmas etapas descritas acima.
 
@@ -253,7 +253,7 @@ Para criar um aplicativo para dispositivos Android, siga estas etapas:
    * **[!UICONTROL Private Key]**
    * **[!UICONTROL Client Email]**
 
-1. Use o **[!UICONTROL Test the connection]** botão para validar a configuração.
+1. Use o botão **[!UICONTROL Test the connection]** para validar a configuração.
 
    >[!CAUTION]
    >

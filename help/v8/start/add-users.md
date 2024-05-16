@@ -36,7 +36,7 @@ Os operadores são vinculados a uma zona de segurança a partir de seu perfil no
 
 >[!NOTE]
 >
->Como um usuário Cloud Service gerenciado, o Adobe define as zonas de segurança para você. Para obter mais informações, [Adobe de contato](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html){target="_blank"}.
+>Como um usuário Cloud Service gerenciado, o Adobe define as zonas de segurança para você. Para obter mais informações, [Adobe de contato](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 **Saiba mais**
 
