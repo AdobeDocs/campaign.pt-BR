@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: b364b557bdf060e022196786a970517056eb2bf7
+source-git-commit: 1a5eac3301732eab0b6d12874b7e8539076ed369
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '868'
 ht-degree: 93%
 
 ---
@@ -52,7 +52,7 @@ Os databricks agora são compatíveis como um banco de dados externo com o Feder
 
 * Vários esquemas foram alterados de 32 para 64 bits. Isso se aplica somente aos clientes que estão migrando do Campaign Standard. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=pt-BR){target="_blank"}
 
-* Nas tabelas do Campaign, os seguintes atributos agora são preenchidos por padrão pela data e hora do servidor: lastModified, created, createdBy-id. Os valores fornecidos pelos usuários em chamadas de API são ignorados. <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
+* Nas tabelas do Campaign, os seguintes atributos agora são preenchidos por padrão pela data e hora do servidor: `lastModified` ou `created`. Os valores fornecidos pelos usuários em chamadas de API são ignorados. <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
 ### Correções {#fixes-8-7-1}
 
