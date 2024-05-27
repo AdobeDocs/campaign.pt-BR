@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: 91d19874dfb313a1a470ac4f39cf5af7ca7dfa19
+source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 27%
+source-wordcount: '165'
+ht-degree: 24%
 
 ---
 
@@ -17,9 +17,11 @@ ht-degree: 27%
 
 Esta página lista todas as atualizações mais recentes no [!DNL Campaign] Documentação da v8 (console).
 
+
 ## Maio de 2024 {#may-2024}
 
-Uma nota foi adicionada para especificar que **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** atividades não devem ser adicionadas em uma linha e precisam ter uma **[!UICONTROL Enrichement]** atividade entre eles. Leia mais na seção [Alterar dimensão](../../automation/workflow/change-dimension.md) e [Alterar fonte de dados](../../automation/workflow/change-data-source.md) seções.
+* A lista de canais e tipos de deliveries agora está listada em [esta página](create-message.md).
+* Uma nota foi adicionada para especificar que **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** atividades não devem ser adicionadas em uma linha e precisam ter uma **[!UICONTROL Enrichement]** atividade entre eles. Leia mais na seção [Alterar dimensão](../../automation/workflow/change-dimension.md) e [Alterar fonte de dados](../../automation/workflow/change-data-source.md) seções.
 
 ## Fevereiro de 2024 {#feb-2024}
 
