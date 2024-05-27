@@ -5,9 +5,9 @@ description: Provedores, estoques e orçamentos
 feature: Budget Management, Campaigns
 role: User
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1830'
 ht-degree: 76%
 
 ---
@@ -148,7 +148,7 @@ Quando um serviço é selecionado, as categorias de custo correspondentes ao tip
 
   ![](assets/supplier-mail-delivery-select.png)
 
-* Para uma entrega em canais móveis ou telefone, é possível aplicar o mesmo modo de seleção.
+* Para um delivery em canais móveis, o mesmo modo de seleção se aplica.
 * Para uma entrega de email, o serviço é selecionado na guia **[!UICONTROL Advanced]** nas propriedades da entrega, como no exemplo a seguir:
 
   ![](assets/supplier-email-delivery-select.png)

@@ -5,10 +5,10 @@ description: Saiba mais sobre a atividade de workflow de desduplicação
 feature: Workflows, Targeting Activity
 role: User
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
 source-wordcount: '1115'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-A desduplicação exclui duplicatas dos resultados das atividades de entrada. A desduplicação pode ser executada no endereço de e-mail, número de telefone ou outro campo.
+A desduplicação exclui duplicatas dos resultados das atividades de entrada. A desduplicação pode ser executada no endereço de email, número de telefone ou outro campo.
 
 A atividade **[!UICONTROL Deduplication]** é usada para remover linhas duplicadas de um conjunto de dados. Por exemplo, os registros abaixo podem ser considerados duplicados, pois têm o mesmo endereço de email e o mesmo celular e/ou telefone residencial.
 

@@ -4,10 +4,10 @@ title: Regras de consistência
 description: Regras de consistência
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 8247bed87deb3fb19a01447dab180ed9c97ea96c
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 90%
+source-wordcount: '738'
+ht-degree: 81%
 
 ---
 
@@ -19,11 +19,11 @@ As regras de **Capacidade** podem evitar sobrecarga na plataforma relacionada co
 
 ## Controlar capacidade {#control-capacity}
 
-Antes de enviar mensagens, você precisa garantir que sua organização tem a capacidade de processar a entrega (infraestrutura física), as respostas que a entrega pode gerar (mensagens de entrada) e o número de chamadas a serem feitas para entrar em contato com assinantes (capacidade de processamento da central de chamadas), por exemplo.
+Antes de enviar mensagens, você precisa garantir que sua organização tenha a capacidade (infraestrutura física) para processar o delivery, as respostas que o delivery pode gerar (mensagens de entrada) e o número de chamadas a serem feitas para entrar em contato com assinantes (capacidade de processamento da central de chamadas), por exemplo.
 
-Para fazer isso, você precisa criar regras de tipologia **[!UICONTROL Capacity]**.
+Para fazer isso, crie **[!UICONTROL Capacity]** regras de tipologia.
 
-No exemplo a seguir, criamos uma regra de tipologia para uma campanha de fidelidade de telefone. Restringimos o número de mensagens a 20 por dia, ou seja, a capacidade diária de processamento de uma central de chamadas. Uma vez que a regra tenha sido aplicada a duas entregas, poderemos monitorar o consumo por meio de logs.
+No exemplo a seguir, criamos uma regra de tipologia para uma campanha de fidelidade por telefone. Restringimos o número de mensagens a 20 por dia, ou seja, a capacidade diária de processamento de uma central de chamadas. Uma vez que a regra tenha sido aplicada a duas entregas, poderemos monitorar o consumo por meio de logs.
 
 Para projetar uma nova regra de capacidade, siga as etapas abaixo:
 

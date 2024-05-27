@@ -5,7 +5,7 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
 source-wordcount: '2990'
 ht-degree: 64%
@@ -103,7 +103,7 @@ As tentativas de rejeição temporária e o tempo entre elas são determinados p
 >
 >As configurações de nova tentativa nas propriedades de entrega não são usadas pelo Campaign.
 
-## Período de validade
+## Período de validade {#valid-period}
 
 A configuração do período de validade em seus deliveries do Campaign é limitada a **3,5 dias ou menos**. Para um delivery, se você definir um valor superior a 3,5 dias no Campaign, ele não será considerado.
 

@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 83%
+source-wordcount: '1160'
+ht-degree: 61%
 
 ---
 
@@ -44,42 +44,45 @@ Antes de enviar a entrega, você poderá definir os parâmetros de envio nas pro
 
 Para balancear a carga, você pode dividir entregas em vários lotes. Configure o número de lotes e sua proporção com relação à entrega inteira.
 
->[!NOTE]
->
->Você só poderá definir o tamanho e o atraso entre duas ondas consecutivas. Os critérios de seleção de destinatário para cada onda não podem ser configurados.
+Para definir ondas, siga estas etapas:
 
-1. Abra a janela de propriedades do e clique na guia **[!UICONTROL Delivery]** Entrega.
-1. Selecione a opção **[!UICONTROL Send using multiple waves]** e clique no link **[!UICONTROL Define waves...]**.
+1. Abra as propriedades do delivery e navegue até o **[!UICONTROL Delivery]** guia.
+1. Ativar o **[!UICONTROL Send using multiple waves]** e clique no botão **[!UICONTROL Define waves...]** link.
 
    ![](assets/delivery-define-waves.png)
 
-1. Para configurar ondas, você pode:
 
-   * Definir o tamanho de cada onda. Por exemplo, se você inserir **[!UICONTROL 30%]** no campo correspondente, cada onda representará 30% das mensagens incluídas na entrega, exceto a última, que representará 10% das mensagens.
+1. Configure as ondas conforme detalhado abaixo.
 
-     No campo **[!UICONTROL Period]**, especifique o atraso entre o início de duas ondas consecutivas. Por exemplo, se você inserir **[!UICONTROL 2d]**, a primeira onda começará imediatamente, a segunda onda começará em dois dias, a terceira onda em quatro dias e assim por diante.
-
-     ![](assets/delivery-waves-size.png)
-
-   * Defina um calendário para enviar cada onda.
-
-     Na coluna **[!UICONTROL Start]**, especifique o atraso entre o início de duas ondas consecutivas. Na coluna **[!UICONTROL Size]**, insira um número fixo ou uma porcentagem.
-
-     No exemplo abaixo, a primeira onda representa 25% do número total de mensagens incluídas na entrega e iniciará imediatamente. As próximas duas ondas completam a entrega e são definidas para começar em intervalos de seis horas.
-
-     ![](assets/delivery-waves-calendar.png)
-
-   Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, garante que a última onda seja planejada antes do limite da validade da entrega. Tipologias de campanha e suas regras, configuradas na variável **[!UICONTROL Typology]** das propriedades de delivery, são apresentadas em [nesta seção](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
-
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >Certifique-se de que as últimas ondas não excedam o prazo da entrega, que é definido na guia **[!UICONTROL Validity]**. Caso contrário, algumas mensagens podem não ser enviadas.
-   >
-   >Você também deve permitir tempo suficiente para tentativas ao configurar as últimas ondas. <!--See [this section]().-->
+   >Você só poderá definir o tamanho e o atraso entre duas ondas consecutivas. Os critérios de seleção de destinatário para cada onda não podem ser configurados.
 
-1. Para monitorar seus envios, vá para os logs de entrega. Consulte [esta página](send.md)<!--ref TBC-->.
+Você pode definir:
 
-   Você pode ver as entregas que já foram enviadas nas ondas processadas (status **[!UICONTROL Sent]**) e as entregas a serem enviadas nas ondas restantes (status **[!UICONTROL Pending]**).
+    * **O tamanho de cada onda**. Por exemplo, se você inserir **[!UICONTROL 30%]** no campo correspondente, cada onda representará 30% das mensagens incluídas no delivery, exceto a última, que representará 10% das mensagens.
+    
+    Na caixa de diálogo **[!UICONTROL Period]**, especifique o atraso entre o início de duas ondas consecutivas. Por exemplo, se você inserir **[!UICONTROL 2d]**, a primeira onda começará imediatamente, a segunda onda começará em dois dias, a terceira onda em quatro dias e assim por diante.
+    
+    ![](assets/delivery-waves-size.png)
+    
+    * **Um calendário para enviar cada onda**.  Por exemplo, a primeira onda representa 25% do número total de mensagens incluídas no delivery e iniciará imediatamente. As próximas duas ondas completam a entrega e são definidas para começar em intervalos de seis horas.
+    
+    Na caixa de diálogo **[!UICONTROL Start]**, especifique o atraso entre o início de duas ondas consecutivas. Na caixa de diálogo **[!UICONTROL Size]**, insira um número fixo ou uma porcentagem.
+    
+    ![](assets/delivery-waves-calendar.png)
+
+Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, garante que a última onda seja planejada antes do limite da validade da entrega. Tipologias de campanha e suas regras, configuradas na variável **[!UICONTROL Typology]** das propriedades de delivery, são apresentadas em [nesta seção](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
+
+>[!IMPORTANT]
+>
+>Certifique-se de que as últimas ondas não excedam o prazo da entrega, que é definido na guia **[!UICONTROL Validity]**. Caso contrário, algumas mensagens podem não ser enviadas. Saiba mais sobre o período de validade de um delivery em [nesta seção](delivery-failures.md#valid-period).
+>
+>Você também deve definir tempo suficiente para tentativas ao configurar as últimas ondas. Saiba mais sobre tentativas no [nesta seção](delivery-failures.md#retries).
+
+Para monitorar seus envios, navegue até os logs do delivery. Consulte [esta página](send.md)
+
+Você pode ver as entregas que já foram enviadas nas ondas processadas (status **[!UICONTROL Sent]**) e as entregas a serem enviadas nas ondas restantes (status **[!UICONTROL Pending]**).
 
 Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas.
 
@@ -93,11 +96,11 @@ Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
-* **Campanhas envolvendo uma central de atendimento**
+* **Campanhas com uma central de atendimento**
 
   Ao gerenciar uma campanha de fidelidade por telefone, sua organização tem uma capacidade limitada para processar o número de chamadas para contatar os assinantes.
 
-  Usando ondas, você poderá restringir o número de mensagens a 20 por dia, que é a capacidade diária de processamento de uma central de atendimento.
+  Usando ondas, você pode restringir o número de mensagens a 20 por dia, por exemplo, considerando a capacidade diária de processamento de uma central de atendimento.
 
   Para fazer isso, selecione a opção **[!UICONTROL Schedule multiple waves of the same size]**. Insira **[!UICONTROL 20]** como o tamanho da onda e **[!UICONTROL 1d]** no campo **[!UICONTROL Period]**.
 
