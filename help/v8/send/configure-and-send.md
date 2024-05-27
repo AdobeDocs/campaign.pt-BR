@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 52863e9cb3b9ccf03c8e2b838827af862b30e3b9
+source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 55%
+source-wordcount: '1193'
+ht-degree: 62%
 
 ---
 
@@ -48,6 +48,8 @@ Use o  **[!UICONTROL Test SMTP delivery]** opção para testar o envio via SMTP.
 
 Para balancear a carga, você pode dividir entregas em vários lotes. Configure o número de lotes e sua proporção com relação à entrega inteira.
 
+### Ativar ondas {#enable-waves}
+
 Para definir ondas, siga estas etapas:
 
 1. Abra as propriedades do delivery e navegue até o **[!UICONTROL Delivery]** guia.
@@ -55,26 +57,27 @@ Para definir ondas, siga estas etapas:
 
    ![](assets/delivery-define-waves.png)
 
+### Configurar ondas {#config-waves}
 
-1. Configure as ondas conforme detalhado abaixo.
+>[!NOTE]
+>
+>Você só poderá definir o tamanho e o atraso entre duas ondas consecutivas. Os critérios de seleção de destinatário para cada onda não podem ser configurados.
 
-   >[!NOTE]
-   >
-   >Você só poderá definir o tamanho e o atraso entre duas ondas consecutivas. Os critérios de seleção de destinatário para cada onda não podem ser configurados.
+Você pode definir o tamanho de cada onda ou adicioná-las a um calendário.
 
-Você pode definir:
+* **Definir o tamanho de cada onda**. Por exemplo, se você inserir **[!UICONTROL 30%]** no campo correspondente, cada onda representará 30% das mensagens incluídas na entrega, exceto a última, que representará 10% das mensagens.
 
-    * **O tamanho de cada onda**. Por exemplo, se você inserir **[!UICONTROL 30%]** no campo correspondente, cada onda representará 30% das mensagens incluídas no delivery, exceto a última, que representará 10% das mensagens.
-    
-    Na caixa de diálogo **[!UICONTROL Period]**, especifique o atraso entre o início de duas ondas consecutivas. Por exemplo, se você inserir **[!UICONTROL 2d]**, a primeira onda começará imediatamente, a segunda onda começará em dois dias, a terceira onda em quatro dias e assim por diante.
-    
-    ![](assets/delivery-waves-size.png)
-    
-    * **Um calendário para enviar cada onda**.  Por exemplo, a primeira onda representa 25% do número total de mensagens incluídas no delivery e iniciará imediatamente. As próximas duas ondas completam a entrega e são definidas para começar em intervalos de seis horas.
-    
-    Na caixa de diálogo **[!UICONTROL Start]**, especifique o atraso entre o início de duas ondas consecutivas. Na caixa de diálogo **[!UICONTROL Size]**, insira um número fixo ou uma porcentagem.
-    
-    ![](assets/delivery-waves-calendar.png)
+  No campo **[!UICONTROL Period]**, especifique o atraso entre o início de duas ondas consecutivas. Por exemplo, se você inserir **[!UICONTROL 2d]**, a primeira onda começará imediatamente, a segunda onda começará em dois dias, a terceira onda em quatro dias e assim por diante.
+
+  ![](assets/delivery-waves-size.png)
+
+* **Definir um calendário para enviar cada onda**.  Por exemplo, a primeira onda representa 25% do número total de mensagens incluídas no delivery e iniciará imediatamente. As próximas duas ondas completam a entrega e são definidas para começar em intervalos de seis horas.
+
+  Na coluna **[!UICONTROL Start]**, especifique o atraso entre o início de duas ondas consecutivas. Na coluna **[!UICONTROL Size]**, insira um número fixo ou uma porcentagem.
+
+  ![](assets/delivery-waves-calendar.png)
+
+### Verificação de agendamento de onda {#check-waves}
 
 Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, garante que a última onda seja planejada antes do limite da validade da entrega. Tipologias de campanha e suas regras, configuradas na variável **[!UICONTROL Typology]** das propriedades de delivery, são apresentadas em [nesta seção](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
@@ -84,9 +87,14 @@ Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, gara
 >
 >Você também deve definir tempo suficiente para tentativas ao configurar as últimas ondas. Saiba mais sobre tentativas no [nesta seção](delivery-failures.md#retries).
 
+### Monitorar ondas {#monitor-waves}
+
 Para monitorar seus envios, navegue até os logs do delivery. Consulte [esta página](send.md)
 
 Você pode ver as entregas que já foram enviadas nas ondas processadas (status **[!UICONTROL Sent]**) e as entregas a serem enviadas nas ondas restantes (status **[!UICONTROL Pending]**).
+
+
+### Amostras de ondas {#samples-waves}
 
 Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas.
 
