@@ -5,14 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
+source-git-commit: 52863e9cb3b9ccf03c8e2b838827af862b30e3b9
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 61%
+source-wordcount: '1178'
+ht-degree: 55%
 
 ---
 
 # Configurar e enviar a entrega {#configure-delivery}
+
+Acesse os parâmetros de delivery para definir mais configurações e definir como enviar suas mensagens. Você pode definir o delivery [prioridade](#delivery-priority), configurar [ondas](#sending-using-multiple-waves)e testar o envio do delivery. Quando essa configuração estiver concluída, você poderá confirmar o envio conforme descrito em [nesta seção](#confirm-delivery). As mensagens são enviadas imediatamente ou com base no delivery [programação](#schedule-delivery-sending).
 
 ## Definir parâmetros adicionais {#delivery-additional-parameters}
 
@@ -20,25 +22,27 @@ Antes de enviar a entrega, você poderá definir os parâmetros de envio nas pro
 
 ![](assets/delivery-properties-delivery.png)
 
-* **[!UICONTROL Delivery priority]**: use essa opção para alterar a ordem de envio dos deliveries, definindo o nível de prioridade em **[!UICONTROL Very low]** para **[!UICONTROL Very high]** (o valor padrão é **[!UICONTROL Normal]**).
+### Prioridade de entrega {#delivery-priority}
 
-* **[!UICONTROL Message batch quantity]**: use essa opção para definir o número de mensagens agrupadas no mesmo pacote de entrega XML. Se o parâmetro for definido como 0, as mensagens serão automaticamente agrupadas. O tamanho do pacote é definido pelo cálculo `<delivery size>/1024`, com no mínimo 8 e no máximo 256 mensagens por pacote.
+Use o **[!UICONTROL Delivery priority]** opção para alterar a ordem de envio dos deliveries definindo o nível de prioridade, em **[!UICONTROL Very low]** para **[!UICONTROL Very high]** (o valor padrão é **[!UICONTROL Normal]**).
 
-  >[!IMPORTANT]
-  >
-  >Quando a entrega é criada duplicando uma existente, esse parâmetro é redefinido.
+### Quantidade em lotes
 
-* **[!UICONTROL Send using multiple waves]**: use essa opção para enviar suas mensagens em lotes, em vez de enviá-las para todo o público-alvo de uma só vez. [Saiba mais](#sending-using-multiple-waves).
+Use o  **[!UICONTROL Message batch quantity]** opção para definir o número de mensagens agrupadas no mesmo pacote do delivery XML. Se o parâmetro for definido como 0, as mensagens serão automaticamente agrupadas. O tamanho do pacote é definido pelo cálculo `<delivery size>/1024`, com no mínimo 8 e no máximo 256 mensagens por pacote.
 
-* **[!UICONTROL Test SMTP delivery]**: use essa opção para testar o envio via SMTP. A entrega é processada até a conexão com o servidor SMTP, mas não é enviada: para cada destinatário do delivery, o Campaign se conecta ao servidor do provedor SMTP, executa o comando SMTP RCPT TO e encerra a conexão antes do comando SMTP DATA.
+>[!IMPORTANT]
+>
+>Quando a entrega é criada duplicando uma existente, esse parâmetro é redefinido.
 
-  >[!NOTE]
-  >
-  >* Essa opção não deve ser definida no mid-sourcing.
-  >
-  >* Saiba mais sobre a configuração do servidor SMTP em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
+### Testar o envio do delivery
 
-* **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO. Para isso, basta adicionar um endereço de email de CCO ao destinatário da mensagem. [Saiba mais](email-parameters.md).
+Use o  **[!UICONTROL Test SMTP delivery]** opção para testar o envio via SMTP. A entrega é processada até a conexão com o servidor SMTP, mas não é enviada: para cada destinatário do delivery, o Campaign se conecta ao servidor do provedor SMTP, executa o comando SMTP RCPT TO e encerra a conexão antes do comando SMTP DATA.
+
+>[!NOTE]
+>
+>* Essa opção não deve ser definida no mid-sourcing.
+>
+>* Saiba mais sobre a configuração do servidor SMTP em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
 
 ## Enviar usando várias ondas {#sending-using-multiple-waves}
 
