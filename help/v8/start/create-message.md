@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
+source-git-commit: fb0b7dbeae1d083935da91bbe50a711ce5f47b7e
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 72%
@@ -114,7 +114,7 @@ Se uma informação na entrega for alterado (conteúdo, nome, etc.), um novo obj
 
 Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabará com uma única entrega após um ano (desde que não tenha feito nenhuma alteração na entrega).
 
-As entregas contínuas são criadas em workflows através da [atividade Entrega contínua](../../automation/workflow/contin).
+As entregas contínuas são criadas em workflows através da [atividade Entrega contínua](../../automation/workflow/continuous-delivery.md).
 
 
 ## Escolha como enviar suas mensagens{#gs-send-msg}
