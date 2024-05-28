@@ -2,17 +2,15 @@
 title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
-role: User
-level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 8621ad138d90fed92788d1b9753adeb2fe772a71
+source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 79%
+source-wordcount: '758'
+ht-degree: 69%
 
 ---
 
-# Versão mais recente{#latest-release}
+# Versões mais recentes {#latest-release}
 
 O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualizações tem como objetivo disponibilizar a você o que há de melhor e mais recente, mantendo seu ambiente seguro e melhorando sua experiência com nosso produto. A Adobe recomenda que todos os clientes atualizem para a versão mais recente.
 
@@ -29,6 +27,8 @@ _quarta-feira, 28 de maio de 2024_
 A partir desta versão, com a credencial Conta de serviço (JWT) sendo descontinuada pelo Adobe, as integrações de saída do Campaign com soluções e aplicativos Adobe agora dependem da credencial servidor para servidor do OAuth. [Saiba mais](#change-8-7-1)
 
 ### Correções {#fixes-8-5-3}
+
+Os seguintes problemas foram corrigidos nesta versão:
 
 NEO70263, NEO64984, NEO63657, NEO63387, NEO62964, NEO62750, NEO62686, NEO59544, NEO52542
 
@@ -76,43 +76,3 @@ Se você implementou integrações de entrada com o Campaign, é necessário mig
 
 Os seguintes problemas foram corrigidos nessa versão:
 NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-68192, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-63706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, NEO-58314, NEO-58004, NEO-40054
-
-## Versão 8.6.2 {#release-8-6-2}
-
-_23 de fevereiro de 2024_
-
-### Correções {#fixes-8-6-2}
-
-Esta versão corrige o seguinte problema:
-
-* Correção de um problema de desempenho que poderia ocorrer na instância mid-sourcing (NEO-72595).
-
-## Versão 8.6.1 {#release-8-6-1}
-
-_14 de fevereiro de 2024_
-
-### Novos recursos {#new-8-6-1}
-
-* A partir desta versão, você terá acesso à nova **Interface do Campaign Web**, disponível por meio do ambiente central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços. Saiba como se conectar à Adobe Experience Cloud e acessar a interface do Adobe Campaign Web [nesta página](campaign-ui.md#ac-web-ui).
-
-
-* O Adobe Campaign v8 agora se integra ao **Adobe Experience Manager as a Cloud Service**, com criação disponível exclusivamente por meio da interface do Adobe Campaign Web. [Saiba mais](../connect/ac-aem.md)
-
-* Agora é possível usar a **Biblioteca do Adobe Experience Manager Assets** junto com o Experience Cloud Assets, mesmo se o pacote de Integração com o Adobe Experience Cloud estiver instalado em sua instância do Adobe Campaign. [Saiba mais](../connect/ac-aem.md#assets-library)
-
-### Melhorias gerais {#improvements-8-6-1}
-
-* O Campaign v8.6 oferece taxa de transferência aprimorada para **indicadores de rastreamento de entregas de email**. Com nossos processos otimizados, o rastreamento da ingestão e do tempo de computação é reduzido, e você pode verificar os indicadores-chave da entrega muito mais rápido.
-
-
-### Atualizações sobre capacidade de entrega {#deliverability-8-6-1}
-
-* Até fevereiro de 2024, qualquer empresa que envie mais de 5.000 mensagens de email através do Google ou do Yahoo! terá que começar a usar uma tecnologia de autenticação conhecida como DMARC (Domain-based Message Authentication Reporting and Conformance). Certifique-se de que o registro DMARC esteja configurado para todos os subdomínios usados com o Adobe Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=pt-BR){target="_blank"}
-
-* A partir de 1º de junho de 2024, o Google e o Yahoo! exigirão que os remetentes cumpram o Cancelamento de inscrição na lista com um clique. O Adobe Campaign agora é compatível com essa opção. [Saiba mais](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=pt-BR#one-click-list-unsubscribe){target="_blank"}
-
-
-### Correções {#fixes-8-6-1}
-
-Os seguintes problemas foram corrigidos nessa versão:
-NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984, NEO-64680, NEO-63973, NEO-63879, NEO-63815, NEO-63657, NEO-63539, NEO-63387, NEO-63294, NEO-63174, NEO-62964, NEO-62750, NEO-62686, NEO-62455, NEO-62406, NEO-61580, NEO-61199, NEO-60786, NEO-59544, NEO-59198, NEO-59059, NEO-58637, NEO-55197, NEO-52542, NEO-50488, NEO-47789
