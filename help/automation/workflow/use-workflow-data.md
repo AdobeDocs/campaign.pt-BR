@@ -3,10 +3,10 @@ title: Usar dados de fluxo de trabalho
 description: Saiba como usar os dados de workflow
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 76%
+source-wordcount: '705'
+ht-degree: 72%
 
 ---
 
@@ -42,9 +42,9 @@ Para fazer isso, selecione o menu relevante:
 
 * **[!UICONTROL Analyze target...]**
 
-  Esse menu permite acessar o assistente de análise descritiva que produz estatísticas e relatórios sobre os dados de transição.
+  Use esse menu para acessar o assistente de análise descritiva que permite gerar estatísticas e relatórios sobre os dados de transição.
 
-  Para obter mais informações, consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=pt-BR){target="_blank"}.
+  Saiba como usar o assistente de análise descritiva no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=pt-BR){target="_blank"}.
 
 Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
 

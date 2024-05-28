@@ -5,9 +5,9 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: 338432b41276317f1f07a92f0106e20177b5becd
+source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '613'
 ht-degree: 99%
 
 ---
@@ -201,6 +201,7 @@ ht-degree: 99%
       + [Usar tabela de destinatário personalizada](dev/custom-recipient.md)
       + [Atualizar o banco de dados](dev/update-database-structure.md)
       + [Formulários de entrada](dev/forms.md)
+   + [Trabalhar com pacotes de dados](dev/packages.md)
    + [APIs do Campaign](dev/api.md)
 + [Painel de controle do Campaign >](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/control-panel-home)
 + [Guia de automação de campanha >](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/home)
