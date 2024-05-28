@@ -3,18 +3,18 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
+source-git-commit: 338432b41276317f1f07a92f0106e20177b5becd
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 69%
+source-wordcount: '783'
+ht-degree: 66%
 
 ---
 
 # Versões mais recentes {#latest-release}
 
-O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualizações tem como objetivo disponibilizar a você o que há de melhor e mais recente, mantendo seu ambiente seguro e melhorando sua experiência com nosso produto. A Adobe recomenda que todos os clientes atualizem para a versão mais recente.
+O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualizações tem como objetivo disponibilizar a você o que há de melhor e mais recente, mantendo seu ambiente seguro e melhorando sua experiência com nosso produto. A Adobe recomenda que todos os clientes atualizem para a versão mais recente. Esta página lista novos recursos, melhorias e correções que vêm com as versões mais recentes do Campaign v8 (console). Saiba mais sobre versões e atualizações do Campaign no [esta página](upgrades.md).
 
-Como usuário do Managed Cloud Services, sua instância é atualizada pela Adobe a cada nova versão. A Adobe entrará em contato com você e atualizará seus ambientes. O console do cliente do Campaign **precisa ser atualizado para a mesma versão** dos servidores do Campaign. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
+Como usuário do Managed Cloud Services, sua instância é atualizada pela Adobe a cada nova versão. A Adobe entrará em contato com você e atualizará seus ambientes. O console do cliente do Campaign **precisa ser atualizado para a mesma versão** dos servidores do Campaign. Saiba como atualizar seu console do cliente no [esta página](../start/connect.md#upgrade-ac-console).
 
 Além disso, como cliente, verifique se você está usando a versão compatível mais recente dos sistemas listados na [Matriz de compatibilidade](compatibility-matrix.md).
 
