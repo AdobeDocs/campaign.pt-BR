@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: b280be52621890c9bd840182d3ad0389912568d4
+source-git-commit: 306d827883a0c3a15fd52b8c9fb566d028f22360
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 84%
+source-wordcount: '1183'
+ht-degree: 73%
 
 ---
 
@@ -19,6 +19,21 @@ O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualiz
 Como usuário do Managed Cloud Services, sua instância é atualizada pela Adobe a cada nova versão. A Adobe entrará em contato com você e atualizará seus ambientes. O console do cliente do Campaign **precisa ser atualizado para a mesma versão** dos servidores do Campaign. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
 
 Além disso, como cliente, verifique se você está usando a versão compatível mais recente dos sistemas listados na [Matriz de compatibilidade](compatibility-matrix.md).
+
+## Versão 8.5.3 {#release-8-5-3}
+
+_quarta-feira, 28 de maio de 2024_
+
+### Migração da credencial de conta de serviço (JWT) para a credencial de servidor para servidor do OAuth  {#change-8-5-3}
+
+* A partir desta versão, com a credencial Conta de serviço (JWT) sendo descontinuada pelo Adobe, as integrações de saída do Campaign com soluções e aplicativos Adobe agora dependem da credencial servidor para servidor do OAuth. O Adobe executará a migração JWT para OAuth para suas integrações de saída, como a integração do Campaign-Analytics ou a integração do Experience Cloud Triggers.
+
+  Se você implementou integrações de entrada com o Campaign, é necessário migrar a Conta técnica conforme detalhada em [esta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. As credenciais da Conta de serviço (JWT) existentes continuarão a funcionar até **27 de janeiro de 2025**. Além disso, o Console do desenvolvedor continuará a oferecer suporte à criação de novas credenciais de Conta de serviço (JWT) até **3 de junho de 2024**. Uma nova credencial de conta de serviço (JWT) não pode ser criada ou adicionada a um projeto após essa data.
+
+
+### Correções {#fixes-8-5-3}
+
+NEO70263, NEO64984, NEO63657, NEO63387, NEO62964, NEO62750, NEO62686, NEO59544, NEO52542
 
 ## Versão 8.7.1 {#release-8-7-1}
 
