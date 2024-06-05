@@ -8,9 +8,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 99e3643dc8628c5bbf938aac0e32036f4043432b
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1230'
 ht-degree: 42%
 
 ---
@@ -796,7 +796,7 @@ Saiba como implementar o FCM em seu aplicativo no [Documentação do Google](htt
 
 ## Variáveis {#variables}
 
-As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo para dispositivos móveis e no console do cliente do Adobe Campaign, na **[!UICONTROL Variables]** no serviço de aplicativos móveis dedicado.
+As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo para dispositivos móveis e no console do cliente do Adobe Campaign, na **[!UICONTROL Variables]** no aplicativo móvel dedicado.
 
 
 Veja abaixo um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
