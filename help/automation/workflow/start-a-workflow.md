@@ -6,10 +6,10 @@ feature: Workflows
 level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 93%
+source-wordcount: '1129'
+ht-degree: 88%
 
 ---
 
@@ -62,6 +62,16 @@ A variável **[!UICONTROL Actions]** O botão da barra de ferramentas permite ac
 * **[!UICONTROL Restart]**
 
   Essa ação interrompe e depois retoma o workflow. Na maioria dos casos, é possível reiniciar mais rápido. Também é útil automatizar a reinicialização quando a interrupção leva um determinado tempo: isso ocorre porque o comando &#39;Parar&#39; não está disponível quando o workflow está sendo interrompido.
+
+  Observe que **Restart** A ação não limpa as variáveis de instância do fluxo de trabalho em comparação com **Execução**, **Parar**, e **Início** ações (a limpeza das variáveis de instância ocorre na ação Start ). Ao reiniciar um workflow, as variáveis de instância ainda estão disponíveis para uso com valores preservados. Para limpá-los, você pode:
+   * Executar **Parar** e **Início** ações.
+   * Adicione o código javascript abaixo no final da execução do workflow:
+
+     ```
+     var wkf = xtk.workflow.load(instance.id)
+     wkf.variables='<variables/>'
+     wkf.save()
+     ```
 
 * **[!UICONTROL Purge history]**
 
