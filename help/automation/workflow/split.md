@@ -4,10 +4,10 @@ title: Split
 description: Saiba mais sobre a atividade de workflow Split
 feature: Workflows, Targeting Activity
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: a5d44321c3d68b9370cfb6e9b1df62435de0dbda
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 92%
+source-wordcount: '1832'
+ht-degree: 90%
 
 ---
 
@@ -17,11 +17,13 @@ Uma atividade do tipo **Split** permite dividir um target em vários subconjunto
 
 Essa atividade não aciona uma união de públicos de entrada. Se várias transições acabarem em uma atividade de Split, é recomendado inserir uma atividade de **[!UICONTROL Union]** na frente.
 
-Para obter um exemplo da atividade de split que está sendo usada, consulte [nesta seção](targeting-workflows.md#create-subsets-using-the-split-activity).
+>[!NOTE]
+>
+>As operações de divisão não podem ser executadas para tabelas com origens diferentes. Para essa finalidade, é necessário adicionar um **Enriquecimento** atividade antes de **Split** atividade.
 
-Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
-
-Um exemplo mostrando como usar uma variável de instância em uma atividade de Split está disponível [nesta seção](javascript-scripts-and-templates.md).
+* Para obter um exemplo da atividade de split que está sendo usada, consulte [nesta seção](targeting-workflows.md#create-subsets-using-the-split-activity).
+* Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
+* Um exemplo mostrando como usar uma variável de instância em uma atividade de Split está disponível [nesta seção](javascript-scripts-and-templates.md).
 
 Para configurar essa atividade, defina o conteúdo do subconjunto e o rótulo na guia **[!UICONTROL Subsets]** e escolha o targeting dimension na guia **[!UICONTROL General]**.
 
