@@ -8,7 +8,7 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Também se aplica ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Aplicável ao Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 9eb8521a1cc264d4d0137c68654ca45ccade81bd
+source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 11%
@@ -84,7 +84,7 @@ Para mover seu ambiente para HTTP v1, siga estas etapas:
    | mensagem de dados | N/D | validate_only |
    | mensagem de notificação | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-1. Quando a transição HTTP v1 estiver concluída, você deverá atualizar seu **templates do delivery** para que as notificações por push do Android aumentem o número de mensagens em lote. Para fazer isso, navegue até as propriedades do template do delivery do Android e, na guia **Entrega** , defina o **Quantidade do lote de mensagens** para **256**. Aplique essa alteração a todos os templates de delivery do Android usados para seus deliveries do Android e a todos os deliveries existentes do Android.
+1. Quando a transição HTTP v1 estiver concluída, você deverá atualizar seu **templates do delivery** para que as notificações por push do Android aumentem o número de mensagens em lote. Para fazer isso, navegue até as propriedades do template do delivery do Android e, na guia **Entrega** , defina o [Quantidade do lote de mensagens](../../v8/send/configure-and-send.md#delivery-batch-quantity) para **256**. Aplique essa alteração a todos os templates de delivery do Android usados para seus deliveries do Android e a todos os deliveries existentes do Android.
 
 
 >[!NOTE]

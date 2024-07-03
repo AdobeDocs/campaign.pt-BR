@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
+source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
 workflow-type: tm+mt
 source-wordcount: '1193'
-ht-degree: 62%
+ht-degree: 66%
 
 ---
 
@@ -26,7 +26,7 @@ Antes de enviar a entrega, você poderá definir os parâmetros de envio nas pro
 
 Use o **[!UICONTROL Delivery priority]** opção para alterar a ordem de envio dos deliveries definindo o nível de prioridade, em **[!UICONTROL Very low]** para **[!UICONTROL Very high]** (o valor padrão é **[!UICONTROL Normal]**).
 
-### Quantidade em lotes
+### Quantidade em lotes {#delivery-batch-quantity}
 
 Use o  **[!UICONTROL Message batch quantity]** opção para definir o número de mensagens agrupadas no mesmo pacote do delivery XML. Se o parâmetro for definido como 0, as mensagens serão automaticamente agrupadas. O tamanho do pacote é definido pelo cálculo `<delivery size>/1024`, com no mínimo 8 e no máximo 256 mensagens por pacote.
 
@@ -110,9 +110,9 @@ Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas
 
 * **Campanhas com uma central de atendimento**
 
-  Ao gerenciar uma campanha de fidelidade por telefone, sua organização tem uma capacidade limitada para processar o número de chamadas para contatar os assinantes.
+  Ao gerenciar uma campanha de fidelidade por telefone, sua organização tem uma capacidade limitada de processamento do número de chamadas para contatar assinantes.
 
-  Usando ondas, você pode restringir o número de mensagens a 20 por dia, por exemplo, considerando a capacidade diária de processamento de uma central de atendimento.
+  Usando ondas, você poderá restringir o número de mensagens a 20 por dia, por exemplo, considerando a capacidade diária de processamento de uma central de atendimento.
 
   Para fazer isso, selecione a opção **[!UICONTROL Schedule multiple waves of the same size]**. Insira **[!UICONTROL 20]** como o tamanho da onda e **[!UICONTROL 1d]** no campo **[!UICONTROL Period]**.
 
