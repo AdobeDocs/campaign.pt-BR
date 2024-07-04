@@ -5,7 +5,7 @@ type: Event
 title: Notas técnicas do Adobe Campaign
 description: Notas técnicas do Campaign
 breadcrumb-title: Notas técnicas do Campaign
-source-git-commit: 29665df166a12a4928c6e356e1ff1a3bb47e30e5
+source-git-commit: c5e804db7deaa6b9511858d088eb6da5d16e8abf
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 25%
@@ -27,4 +27,4 @@ ht-degree: 25%
    + [Navegadores da Internet](upgrades/browsers.md)
    + [Atualizações de sistema de 2023](upgrades/tech-stack-upgrade.md)
    + [descontinuação de 32 bits do console do cliente](upgrades/console.md)
-+ [&lt; Voltar à documentação do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
++ [&lt; Voltar à documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/campaign-home)
