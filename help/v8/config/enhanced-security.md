@@ -5,17 +5,17 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
+source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 3%
+source-wordcount: '738'
+ht-degree: 2%
 
 ---
 
 
 # Complemento de segurança aprimorada do Campaign {#enhanced-security}
 
-Para tornar sua conexão de rede mais segura e oferecer maior segurança para seus recursos, [!DNL Adobe Campaign] oferece um novo **Segurança aprimorada** complementar.
+Para tornar sua conexão de rede mais segura e melhorar a segurança de seus recursos, o [!DNL Adobe Campaign] oferece um novo complemento **Segurança aprimorada**.
 
 Esse complemento inclui dois recursos do ecossistema:
 
@@ -35,7 +35,7 @@ Depois que esses recursos forem implementados, os monitores de Adobe:
 
 ## Proteger Integração segura de chave gerenciada pelo cliente {#secure-cmk-integration}
 
-A variável **Integração segura de Chave gerenciada pelo cliente (CMK)** O permite criptografar dados em repouso usando sua própria chave por meio da conta do Amazon Web Services (AWS).
+A **integração CMK (Secure Customer-Managed Key)** permite criptografar dados em repouso usando sua própria chave por meio da conta do Amazon Web Services (AWS).
 
 As chaves gerenciadas pelo cliente são chaves do Serviço de gerenciamento de chaves (KMS) na conta da AWS que você cria, possui e gerencia. Você tem controle total sobre essas chaves KMS e as usa para criptografar e descriptografar dados. Ao torná-lo responsável pela geração e gerenciamento de chaves de criptografia, essa capacidade permite que você tenha mais controle sobre elas, incluindo a revogação de uma chave.
 
@@ -45,13 +45,13 @@ As chaves gerenciadas pelo cliente são chaves do Serviço de gerenciamento de c
 
 Para habilitar a integração CMK com o Campaign, siga as etapas abaixo:
 
-1. Conecte-se ao seu [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} conta.
+1. Conecte-se à sua conta do [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}.
 
 1. Gere uma chave com rotação automática ao usar o Serviço de Gerenciamento de Chaves (KMS) da AWS. [Saiba como](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
 1. Aplique a política fornecida pelo Adobe à sua conta do AWS para conceder acesso aos seus recursos. [Saiba mais](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. Compartilhe seu [Nome do recurso Amazon (chave ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} com [!DNL Adobe Campaign]. Para fazer isso, entre em contato com o representante da Adobe. <!--or Adobe transition manager?-->
+1. Compartilhe seu [Nome do Recurso da Amazon (chave ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} com [!DNL Adobe Campaign]. Para fazer isso, entre em contato com o representante da Adobe. <!--or Adobe transition manager?-->
 
 1. Crie e teste as regras do Amazon EventBridge para habilitar o monitoramento das chaves por Adobe&#x200B; [Saiba mais](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
@@ -60,15 +60,15 @@ Para habilitar a integração CMK com o Campaign, siga as etapas abaixo:
 
 As seguintes medidas de proteção e limitações se aplicam à integração do CMK com o Adobe Campaign v8:
 
-* Adobe não fornece um [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} conta. Você deve ter sua própria conta da AWS e configurá-la para gerar e compartilhar sua chave com o Adobe.
+* O Adobe não fornece uma conta do [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}. Você deve ter sua própria conta da AWS e configurá-la para gerar e compartilhar sua chave com o Adobe.
 
-* Somente [Serviço de Gerenciamento de Chaves da AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS) são compatíveis. Nenhuma chave gerada pelo cliente fora do KMS pode ser usada.&#x200B;
+* Somente [há suporte para chaves do KMS (Serviço de Gerenciamento de Chaves da AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"}). Nenhuma chave gerada pelo cliente fora do KMS pode ser usada.&#x200B;
 
 * O tempo de inatividade é esperado durante a primeira configuração. &#x200B;A duração do tempo de inatividade depende do tamanho do banco de dados.
 
 * Como cliente do, você é o proprietário e mantém a chave do. Você deve entrar em contato com o Adobe em caso de alteração na chave&#x200B;
 
-* Você pode auditar sua chave usando [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} e revogá-la, se necessário&#x200B;
+* Você pode auditar sua chave usando a [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} e revogá-la se necessário.&#x200B;
 
 * Caso revogue, desative ou exclua a chave, os recursos e a instância criptografados ficarão inacessíveis até que você reverta a ação correspondente.
 
@@ -80,7 +80,7 @@ As seguintes medidas de proteção e limitações se aplicam à integração do 
 
 ## Túnel de Rede Virtual Privada Segura {#secure-vpn-tunneling}
 
-A variável **Encapsulamento de VPN (Virtual Private Network) seguro** O é uma VPN site a site que fornece acesso seguro aos seus dados em trânsito por uma rede privada, das suas instalações à [!DNL Adobe Campaign] instância.
+O **encapsulamento de VPN (Rede Virtual Privada Segura)** é uma VPN site a site que fornece acesso seguro aos seus dados em trânsito por uma rede privada, das suas instalações à instância [!DNL Adobe Campaign].
 
 <!--As it connects two networks together, it is a site-to-site VPN.-->
 
@@ -96,7 +96,7 @@ Há suporte para três casos de uso:
 
 >[!CAUTION]
 >
->Somente bancos de dados locais e dispositivos VPN compatíveis com o AWS são suportados. [Saiba mais](#vpn-callouts)
+>Somente bancos de dados locais e dispositivos VPN compatíveis com o AWS são suportados. [Saiba mais](#vpn-databases)
 
 Para garantir o uso correto desse recurso, siga as diretrizes abaixo:
 
@@ -110,24 +110,23 @@ Para garantir o uso correto desse recurso, siga as diretrizes abaixo:
 
 * Configure um mecanismo de repetição na sua extremidade caso ocorram falhas de conexão.
 
+### Bancos de dados e dispositivos compatíveis {#vpn-databases}
 
-### Medidas de proteção e limitações {#vpn-callouts}
+Os seguintes bancos de dados locais são compatíveis:
 
-As seguintes medidas de proteção e limitações se aplicam à integração do tunelamento VPN com o Adobe Campaign v8:
+* MySQL
+* Netezza
+* Oracle
+* SAP HANA
+* SQL Server
+* Sybase
+* Teradata
+* Hadoop via HiveSQL
 
-* Somente bancos de dados locais são compatíveis, como<!--Richa to check the list with PM-->:
+Somente dispositivos VPN compatíveis com o AWS são suportados. Uma lista de dispositivos compatíveis está disponível em [esta página](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}.
 
-   * MySQL
-   * Netezza
-   * Oracle
-   * SAP HANA
-   * SQL Server
-   * Sybase
-   * Teradata
-   * Hadoop via HiveSQL
-
-* Somente dispositivos VPN compatíveis com o AWS são suportados. Uma lista de dispositivos compatíveis está disponível em [esta página](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}<!--check which list should be communicated-->.
-
-* Não há suporte para conectividade VPN com terceiros ou fornecedores externos.
-
-* VPNs adicionais gerenciadas por Adobe para bancos de dados privados na nuvem não estão incluídas.
+>[!NOTE]
+>
+>* Não há suporte para conectividade VPN com terceiros ou fornecedores externos.
+>
+>* VPNs adicionais gerenciadas por Adobe para bancos de dados privados na nuvem não estão incluídas.

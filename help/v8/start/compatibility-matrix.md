@@ -5,8 +5,8 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
-workflow-type: ht
+source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
+workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Os bancos de dados externos compatíveis com o módulo Federated Data Access (FD
 
 
 >[!AVAILABILITY]
->Além disso, com o [Complemento de segurança aprimorado](../config/enhanced-security.md), você pode acessar os seus bancos de dados locais por meio dos túneis seguros de VPN. [Saiba mais](../config/enhanced-security.md#vpn-callouts)
+>Além disso, com o [Complemento de segurança aprimorado](../config/enhanced-security.md#secure-vpn-tunneling), você pode acessar os seus bancos de dados locais por meio dos túneis seguros de VPN. [Saiba mais](../config/enhanced-security.md#vpn-callouts)
 
 ## SDK móvel {#MobileSDK}
 
