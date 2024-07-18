@@ -5,9 +5,9 @@ feature: PI, Privacy, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: b6f7b8a6652034145602d9949fa196eae929fb95
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Se você precisar que os usuários de marketing acessem registros de dados, mas 
 
 ## Implementação {#implementation}
 
-Um atributo específico que pode ser aplicado a qualquer elemento ou atributo foi adicionado aos esquemas, ele complementa o atributo existente **[!UICONTROL visibleIf]**. Este atributo é: **[!UICONTROL accessibleIf]**. Ao conter uma expressão XTK relacionada ao contexto do usuário atual, ela pode aproveitar **[!UICONTROL HasNamedRight]** ou **[!UICONTROL $(login)]**, por exemplo.
+Um atributo específico que pode ser aplicado a qualquer elemento ou atributo foi adicionado aos esquemas, ele complementa o atributo existente **[!UICONTROL visibleIf]**. Este atributo é: **[!UICONTROL accessibleIf]**. Ao conter uma expressão XTK relacionada ao contexto de usuário atual, ela pode aproveitar **[!UICONTROL HasNamedRight]** ou **[!UICONTROL $(login)]**, por exemplo.
 
 Você pode encontrar abaixo um exemplo de extensão de schema de recipient que mostra esse uso:
 
@@ -39,8 +39,8 @@ Você pode encontrar abaixo um exemplo de extensão de schema de recipient que m
 
 As principais propriedades são:
 
-* **[!UICONTROL visibleIf]** : oculta os campos dos metadados, portanto, eles não podem ser acessados em uma exibição de esquema, seleção de colunas ou um construtor de expressões. Mas isso não oculta dados. Se o nome do campo for inserido manualmente em uma expressão, o valor será exibido.
-* **[!UICONTROL accessibleIf]** : oculta os dados (substituindo-os por valores vazios) da query resultante. Se visibleIf estiver vazio, ele terá a mesma expressão que **[!UICONTROL accessibleIf]**.
+* **[!UICONTROL visibleIf]** : oculta os campos dos metadados, portanto, eles não podem ser acessados em uma exibição de esquema, seleção de coluna ou um construtor de expressões. Mas isso não oculta dados. Se o nome do campo for inserido manualmente em uma expressão, o valor será exibido.
+* **[!UICONTROL accessibleIf]** : oculta os dados (substituindo-os por valores vazios) da consulta resultante. Se visibleIf estiver vazio, ele terá a mesma expressão que **[!UICONTROL accessibleIf]**.
 
 Estas são as consequências do uso desse atributo no Campaign:
 
@@ -53,9 +53,13 @@ Estas são as consequências do uso desse atributo no Campaign:
 * Ao armazenar a população direcionada em um grupo (lista), as características dos campos armazenados são as mesmas da fonte de dados.
 * Os dados não estão acessíveis ao código JS por padrão.
 
+>[!IMPORTANT]
+>
+>O uso do atributo **accessibleIf** em parâmetros críticos (como aqueles em chaves compostas) pode resultar em erros para usuários que não têm permissão para ler os dados devido a dados ocultos. Isso pode levar a falhas de consulta ou comportamento inesperado. Garantir que os parâmetros essenciais estejam acessíveis para evitar interrupções.
+
 ## Recomendações {#recommendations}
 
-Em cada delivery, os endereços de email são copiados para o **[!UICONTROL broadLog]** e a variável **[!UICONTROL forecastLog]** tabelas: como consequência, esses campos também precisam ser protegidos.
+Em cada delivery, endereços de email são copiados nas tabelas **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]**: como consequência, esses campos também precisam ser protegidos.
 
 Abaixo está uma amostra da extensão da tabela de log para implementar isso:
 
