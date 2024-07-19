@@ -38,6 +38,6 @@ A integração oferece suporte a dois tipos de Adobe Experience Cloud IDs:
 
 Consulte:
 
-[Base de conhecimento Adobe Audience Manager](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=pt-BR){target="_blank"}.
+[Base de Dados de Conhecimento Adobe Audience Manager](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=pt-BR){target="_blank"}.
 
-[Guia de componentes da interface central do Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=pt-BR){target="_blank"}.
+[Guia de Componentes da Interface Central do Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=pt-BR){target="_blank"}.

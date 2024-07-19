@@ -18,13 +18,13 @@ ht-degree: 67%
 
 Há dois ambientes para cada targeting dimension usada ao gerenciar ofertas:
 
-* A **design** ambiente no qual o gerente de ofertas cuida da criação e categorização de ofertas, edição e início do processo de aprovação para que elas possam ser usadas. As regras para cada categoria, os espaços de oferta nos quais as ofertas podem ser apresentadas e os filtros predefinidos usados para definir a elegibilidade de uma oferta também são definidos neste ambiente.
+* Um ambiente **design** no qual o gerente de ofertas cuida da criação e categorização de ofertas, da edição e do início do processo de aprovação para que elas possam ser usadas. As regras para cada categoria, os espaços de oferta nos quais as ofertas podem ser apresentadas e os filtros predefinidos usados para definir a elegibilidade de uma oferta também são definidos neste ambiente.
 
   As categorias também podem ser publicadas manualmente no ambiente online.
 
-  O processo de aprovação de ofertas é detalhado [nesta seção](interaction-offer.md#approve-offers).
+  O processo de aprovação de ofertas está detalhado [nesta seção](interaction-offer.md#approve-offers).
 
-* A **live** ambiente no qual podem ser encontradas ofertas aprovadas do ambiente de design, bem como os vários espaços de oferta, filtros, categorias e regras configurados no ambiente de design. Durante uma chamada para o mecanismo de Oferta, o mecanismo sempre usará ofertas do ambiente ativo.
+* Um ambiente **live** no qual podem ser encontradas ofertas aprovadas do ambiente de design, bem como os vários espaços de oferta, filtros, categorias e regras configurados no ambiente de design. Durante uma chamada para o mecanismo de Oferta, o mecanismo sempre usará ofertas do ambiente ativo.
 
 Uma oferta só é implantada nos espaços de oferta selecionados durante o processo de aprovação. Portanto, uma oferta pode estar ativa, mas inutilizável em um espaço de oferta que também está ativo.
 
@@ -32,10 +32,10 @@ Uma oferta só é implantada nos espaços de oferta selecionados durante o proce
 
 O módulo de Interação do Adobe Campaign propõe dois tipos de interações:
 
-* **entrada** interações, iniciadas por um contato. [Saiba mais](interaction-present-offers.md)
-* **saída** interações, iniciadas por um Gerente de delivery do Campaign. [Saiba mais](interaction-send-offers.md)
+* **interações de entrada**, iniciadas por um contato. [Saiba mais](interaction-present-offers.md)
+* **interações de saída**, iniciadas por um Gerente de entrega de campanha. [Saiba mais](interaction-send-offers.md)
 
-Esses dois tipos de interações podem ser realizadas em **modo unitário** (a oferta é calculada para um único contato) ou em **modo de lote** (a oferta é calculada para um conjunto de contatos). Geralmente, as interações de entrada são realizadas no modo unitário e as interações de saída são executadas em modo de lote. No entanto, podem existir certas exceções, [mensagens transacionais](../send/transactional.md) por exemplo, onde a interação de saída é executada no modo unitário.
+Esses dois tipos de interações podem ser realizadas no **modo unitário** (a oferta é calculada para um único contato) ou no **modo de lote** (a oferta é calculada para um conjunto de contatos). Geralmente, as interações de entrada são realizadas no modo unitário e as interações de saída são executadas em modo de lote. No entanto, pode haver certas exceções, para [mensagens transacionais](../send/transactional.md) por exemplo, pois a interação de saída é executada no modo unitário.
 
 Assim que uma oferta puder ou deve ser apresentada (de acordo com as configurações realizadas), o mecanismo de Oferta reproduzirá a função intermediária: ele calcula automaticamente a melhor oferta possível para um contato entre as disponíveis ao combinar dados recebidos sobre o contato e as diferentes regras que podem ser aplicadas conforme especificado na aplicação.
 
@@ -43,7 +43,7 @@ Assim que uma oferta puder ou deve ser apresentada (de acordo com as configuraç
 
 ## Arquitetura distribuída
 
-Para oferecer suporte à escalabilidade e fornecer serviço 24 horas por dia, 7 dias por semana no canal de entrada, a variável **Interação** O módulo é implementado em uma arquitetura distribuída. Esse tipo de arquitetura já é usado com o [Centro de mensagens](../architecture/architecture.md#transac-msg-archi) e é composto por várias instâncias:
+Para oferecer suporte à escalabilidade e fornecer serviço 24 horas por dia, 7 dias por semana no canal de entrada, o módulo **Interação** é implementado em uma arquitetura distribuída. Este tipo de arquitetura já é usado com o [Centro de Mensagens](../architecture/architecture.md#transac-msg-archi) e é composto por várias instâncias:
 
 * uma ou várias instâncias de controle dedicadas ao canal de saída e contendo a base de design de marketing e ambiente.
 * uma ou várias instâncias de execução dedicadas ao canal de entrada.
@@ -80,13 +80,13 @@ Você deve estar ciente dos seguintes mecanismos de sincronização:
 
 Quaisquer extensões de schema diretamente vinculadas à **Interação** (ofertas, propostas, destinatários, etc.) devem ser implantadas nas instâncias de execução.
 
-A variável **Interação** O pacote de é instalado em todas as instâncias (controle e execução). Dois pacotes adicionais estão disponíveis: um pacote para as instâncias de controle e outro para cada instância de execução.
+O pacote **Interaction** está instalado em todas as instâncias (controle e execução). Dois pacotes adicionais estão disponíveis: um pacote para as instâncias de controle e outro para cada instância de execução.
 
 >[!NOTE]
 >
->Ao instalar o pacote, os campos do tipo **longo** da tabela **nms:proposition**, como ID da proposta, tornam-se campos de tipo **int64.** Esse tipo de dado é detalhado no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
+>Ao instalar o pacote, os campos do tipo **longo** da tabela **nms:proposition**, como ID da proposta, tornam-se campos de tipo **int64.** Esse tipo de dado é detalhado na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
-A duração da retenção de dados é configurada em cada instância (por meio da variável **[!UICONTROL Data purge]** no assistente de implantação). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de qualificação serem calculadas.
+A duração da retenção de dados é configurada em cada instância (por meio da janela **[!UICONTROL Data purge]** no assistente de implantação). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de qualificação serem calculadas.
 
 Nas instâncias de controle:
 
@@ -144,7 +144,7 @@ A seguinte opção está disponível nas instâncias de execução:
 
 ### Instalação de pacotes {#packages-installation}
 
-Se a instância não tiver o plug-in **Interação** pacote, nenhuma migração é necessária. Por padrão, a tabela de propostas estará em 64 bits após a instalação dos pacotes.
+Se a instância não tiver o pacote **Interaction**, nenhuma migração será necessária. Por padrão, a tabela de propostas estará em 64 bits após a instalação dos pacotes.
 
 >[!CAUTION]
 >

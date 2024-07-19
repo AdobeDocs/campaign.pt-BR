@@ -33,7 +33,7 @@ Em uma campanha, você também pode consultar outros itens, como cupons promocio
 
 Os documentos podem ser associados no nível da campanha (documentos contextuais) ou no nível do programa (documentos gerais).
 
-Para uma campanha, a variável **[!UICONTROL Documents]** contém:
+Para uma campanha, a guia **[!UICONTROL Documents]** contém:
 
 * A lista de todos os documentos necessários para o conteúdo (template, imagens etc.) que pode ser baixado localmente pelos operadores do Adobe Campaign com direitos adequados,
 * Documentos contendo informações para o roteador, se houver.
@@ -70,14 +70,14 @@ Para uma campanha, delivery outlines permitem que você estruture elementos exte
 
 ### Criar um delivery outline {#create-an-outline}
 
-Para criar um delivery outline, clique no **[!UICONTROL Delivery outlines]** subguia na guia **[!UICONTROL Edit > Documents]** da campanha relacionada.
+Para criar um delivery outline, clique na guia **[!UICONTROL Edit > Documents]** da campanha relacionada e depois clique na subguia **[!UICONTROL Delivery outlines]**.
 
 ![](assets/add-a-delivery-outline.png)
 
 
 >[!NOTE]
 >
->Se não for possível ver essa guia, significa que esse recurso não está disponível para essa campanha ou que o delivery de correspondência direta não está ativado em sua instância. Consulte a [configuração do template de campanha](marketing-campaign-templates.md#campaign-templates) ou ao contrato de licença.
+>Se não for possível ver essa guia, significa que esse recurso não está disponível para essa campanha ou que o delivery de correspondência direta não está ativado em sua instância. Consulte a [configuração do modelo de campanha](marketing-campaign-templates.md#campaign-templates) ou o contrato de licença.
 
 Em seguida, clique em **[!UICONTROL Add a delivery outline]** e crie a hierarquia de outlines para a campanha:
 

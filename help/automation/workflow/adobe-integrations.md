@@ -14,7 +14,7 @@ ht-degree: 91%
 
 # Integrações com as soluções da Adobe Experience Cloud{#integrations-with-adobe-experience-cloud-solutions}
 
-Os workflows detalhados abaixo são instalados com o módulo de **Integração do Adobe Experience Cloud** por padrão. Para obter mais informações sobre esse módulo, consulte [esta página](../../v8/connect/integration.md).
+Os workflows detalhados abaixo são instalados com o módulo de **Integração do Adobe Experience Cloud** por padrão. Para obter mais informações sobre este módulo, consulte [esta página](../../v8/connect/integration.md).
 
 <table> 
  <tbody> 

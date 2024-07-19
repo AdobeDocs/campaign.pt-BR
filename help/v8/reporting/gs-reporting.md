@@ -28,11 +28,11 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
   Para obter mais informações, consulte [esta seção](gs-cubes.md).
 
-* **Relatórios integrados**
+* **Relatórios internos**
 
   O Adobe Campaign vem com relatórios sobre entregas, campanhas, atividades da plataforma, recursos opcionais, etc. Estes relatórios estão disponíveis através das várias funcionalidades a que se referem. Eles podem ser adaptados para atender às necessidades específicas.
 
-  Use o **Relatórios** para acessar esses relatórios.
+  Use a guia **Relatórios** para acessar esses relatórios.
 
   ![](assets/built-in-reports.png)
 
@@ -42,14 +42,14 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
   O Adobe Campaign fornece uma ferramenta visual para produzir estatísticas sobre os dados no banco de dados. É possível criar relatórios de análise descritiva usando um assistente dedicado e adaptar seu conteúdo e layout dependendo das necessidades.
 
-  Use o **[!UICONTROL Tools > Descriptive analysis...]** para criar um novo relatório.
+  Use o menu **[!UICONTROL Tools > Descriptive analysis...]** para criar um novo relatório.
 
   ![](assets/desc-analysis-report.png)
 
-  O relatório de Análise descritiva de campanha é apresentado em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=pt-BR){target="_blank"}.
+  O relatório de Análise descritiva de campanha é apresentado na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=pt-BR){target="_blank"}.
 
 * **Relatórios personalizados**
 
   Use o Adobe Campaign para criar relatórios sobre os dados no banco de dados. Depois que eles tiverem sido criados, torne-os acessíveis nos contextos apropriados.
 
-  As etapas para criar um relatório são detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. A criação de relatórios personalizados é reservada para usuários avançados.
+  As etapas para criar um relatório estão detalhadas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. A criação de relatórios personalizados é reservada para usuários avançados.

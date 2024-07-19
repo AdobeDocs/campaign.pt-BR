@@ -16,7 +16,7 @@ ht-degree: 96%
 
 ## Modelo de dados de mensagens transacionais {#about-mc-datamodel}
 
-As mensagens transacionais dependem do modelo de dados do Adobe Campaign e usam duas tabelas separadas adicionais. Esses quadros, **NmsRtEvent** e **NmsBatchEvent**, contêm os mesmos campos e permitem gerenciar eventos em tempo real, por um lado, e eventos em lote, por outro.
+As mensagens transacionais dependem do modelo de dados do Adobe Campaign e usam duas tabelas separadas adicionais. Essas tabelas, **NmsRtEvent** e **NmsBatchEvent**, contêm os mesmos campos e permitem gerenciar eventos em tempo real, por um lado, e eventos em lote, por outro.
 
 ## Métodos SOAP {#soap-methods}
 

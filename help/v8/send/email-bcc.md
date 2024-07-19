@@ -24,11 +24,11 @@ ht-degree: 1%
 Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma. Essa opção permite enviar mensagens para um endereço de email CCO dedicado (Cópia oculta), de onde elas podem ser processadas e arquivadas usando um sistema externo.
 O próprio Adobe Campaign não gerencia arquivos arquivados. Os arquivos .eml correspondentes aos emails enviados podem ser transferidos para um servidor remoto, como um servidor de email SMTP.
 
-O destino do arquivamento é o endereço de email CCO de sua escolha, que permanecerá invisível para os recipients do delivery. Depois que o endereço de email de CCO for definido, você deverá ativar a opção dedicada no [template do delivery](create-templates.md) nível.
+O destino do arquivamento é o endereço de email CCO de sua escolha, que permanecerá invisível para os recipients do delivery. Depois que o endereço de email de CCO for definido, você deverá habilitar a opção dedicada no nível do [modelo de entrega](create-templates.md).
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support){target="_blank"} para comunicar o endereço de email CCO que será usado para arquivamento.
+>Como usuário do Managed Cloud Service, [contate o Adobe](../start/campaign-faq.md#support){target="_blank"} para informar o endereço de email CCO a ser usado para arquivamento.
 
 >[!CAUTION]
 >
@@ -37,12 +37,12 @@ O destino do arquivamento é o endereço de email CCO de sua escolha, que perman
 
 ## Habilitar email Cco {#enable-bcc}
 
-Para ativar o CCO para um [template do delivery](create-templates.md), siga as etapas abaixo:
+Para habilitar o CCO para um [modelo de entrega](create-templates.md) específico, siga as etapas abaixo:
 
-1. No explorador do Campaign, navegue até a pasta de templates do delivery. Por padrão, os templates do delivery são armazenados no **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** pasta.
+1. No explorador do Campaign, navegue até a pasta de templates do delivery. Por padrão, os modelos de entrega são armazenados na pasta **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Edite o template do delivery a ser atualizado com Cco.
 1. Clique no botão **[!UICONTROL Properties]**.
-1. No **[!UICONTROL Delivery]** , marque a **[!UICONTROL Email BCC]** opção.
+1. Na guia **[!UICONTROL Delivery]**, marque a opção **[!UICONTROL Email BCC]**.
 
    ![](assets/email-bcc.png)
 
@@ -58,8 +58,8 @@ Ao usar o Cco de email com o Adobe Campaign, as seguintes medidas de proteção 
 
 * Verifique se o endereço CCo tem capacidade de recepção suficiente para arquivar todos os emails enviados.
 
-* Email Cco <!--with Enhanced MTA--> O envia para o endereço de email CCO antes de entregar aos recipients, o que pode resultar no envio de mensagens com CCO, mesmo que os deliveries originais possam ter sido rejeitados. Para obter mais informações sobre rejeições, consulte [Entender as falhas de delivery](delivery-failures.md).
+* A Cco de email <!--with Enhanced MTA--> é entregue ao endereço de email de CCO antes de ser entregue aos destinatários, o que pode resultar no envio de mensagens de CCO, mesmo que as entregas originais possam ter sido rejeitadas. Para obter mais informações sobre rejeições, consulte [Entender as falhas de entrega](delivery-failures.md).
 
-* Emails enviados para o endereço CCo não devem ser abertos nem clicados, pois essas atividades são consideradas no **[!UICONTROL Total opens]** e **[!UICONTROL Clicks]** na análise de envio, pode causar erros de cálculo.
+* Emails enviados para o endereço CCo não devem ser abertos nem clicados, pois essas atividades são consideradas no **[!UICONTROL Total opens]** e **[!UICONTROL Clicks]** da análise de envio, o que pode causar erros de cálculo.
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->

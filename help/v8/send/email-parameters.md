@@ -18,7 +18,7 @@ Esta seção apresenta as opções e os parâmetros disponíveis nas propriedade
 
 ## Usar Email Cco {#email-bcc}
 
-Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma. Essa opção está detalhada em [esta página](email-bcc.md).
+Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma. Esta opção está detalhada em [esta página](email-bcc.md).
 
 ## Selecionar formatos de mensagem {#selecting-message-formats}
 
@@ -63,13 +63,13 @@ Para fazer isso, selecione a opção **[!UICONTROL Force the encoding used for m
 
 ## Gerenciar emails rejeitados {#managing-bounce-emails}
 
-A variável **[!UICONTROL SMTP]** A guia das propriedades do delivery permite também configurar a gestão de emails devolvidos.
+A guia **[!UICONTROL SMTP]** das propriedades de entrega também permite configurar a gestão de emails devolvidos.
 
-* **[!UICONTROL Errors-to-address]**: por padrão, os emails devolvidos são recebidos na caixa de erro padrão da plataforma, mas você pode definir um endereço de erro específico para um delivery.
+* **[!UICONTROL Errors-to-address]**: por padrão, os emails devolvidos são recebidos na caixa de erro padrão da plataforma, mas você pode definir um endereço de erro específico para uma entrega.
 
-* **[!UICONTROL Bounce address]**: também é possível definir outro endereço para o qual os emails devolvidos não processados são encaminhados. Esse endereço permite investigar os motivos para a rejeição quando os emails não puderam ser qualificados automaticamente pelo aplicativo.
+* **[!UICONTROL Bounce address]**: você também pode definir outro endereço para o qual os emails devolvidos não processados são encaminhados. Esse endereço permite investigar os motivos para a rejeição quando os emails não puderam ser qualificados automaticamente pelo aplicativo.
 
-Cada um desses campos pode ser personalizado usando o ícone dedicado. Saiba mais sobre campos de personalização em [nesta seção](personalization-fields.md).
+Cada um desses campos pode ser personalizado usando o ícone dedicado. Saiba mais sobre campos de personalização em [esta seção](personalization-fields.md).
 
 ![](assets/email-smtp-bounce.png)
 
@@ -96,4 +96,4 @@ Os valores são codificados automaticamente se necessário.
 
 A mirror page é uma página HTML acessível online através de um navegador da Web. Seu conteúdo é idêntico ao email. Pode ser útil se seus recipients estiverem enfrentando problemas de renderização ou imagens com falha ao tentar exibir seu email na caixa de entrada.
 
-Saiba como inserir um link para a mirror page em [nesta seção](mirror-page.md)
+Saiba como inserir um link para a mirror page em [esta seção](mirror-page.md)

@@ -16,10 +16,10 @@ ht-degree: 19%
 
 A principal tarefa dessas atividades consiste em aguardar um evento. Pode ser, por exemplo, receber um arquivo, um email ou um sinal enviado por um sistema de terceiros.
 
-Essas atividades não estão disponíveis no [workflows específicos de campanha](campaign-workflows.md).
+Estas atividades não estão disponíveis nos [fluxos de trabalho específicos da campanha](campaign-workflows.md).
 
 
-* **[File collector](file-collector.md)**: monitora a chegada de um ou mais arquivos em um diretório e permite a transição para cada arquivo recebido.
+* **[File collector](file-collector.md)**: monitora a chegada de um ou mais arquivos em um diretório e habilita a transição para cada arquivo recebido.
 * **[Transferência de arquivo](file-transfer.md)**: transfere um arquivo para um servidor.
 * **[Emails de entrada](inbound-emails.md)**: recupera e processa emails.
 * **[SMS de entrada](inbound-sms.md)**: recupera e processa SMS.

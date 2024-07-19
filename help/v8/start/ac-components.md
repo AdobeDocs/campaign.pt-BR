@@ -38,7 +38,7 @@ A camada de aplicativo lógico do Campaign é facilmente configurável para aten
 
 ## Cloud Service gerenciados por campanha{#ac-managed-services}
 
-O Adobe Campaign v8 é implantado de forma as a Managed Service: todos os componentes do Adobe Campaign, incluindo a interface do usuário, o mecanismo de gerenciamento de execução e os bancos de dados do Campaign, são totalmente hospedados pelo Adobe, incluindo execução de email, mirror pages, servidor de rastreamento e componentes da Web voltados para o exterior, como página de cancelamento de inscrição/centro de preferências e páginas de aterrissagem.
+O Adobe Campaign v8 é implantado na parte as a Managed Service: todos os componentes do Adobe Campaign, incluindo a interface do usuário, o mecanismo de gerenciamento de execução e os bancos de dados do Campaign, são totalmente hospedados pelo Adobe, incluindo execução de email, mirror pages, servidor de rastreamento e componentes da Web voltados para o exterior, como página de cancelamento de inscrição/centro de preferências e páginas de aterrissagem.
 
 ## Processos de campanha
 

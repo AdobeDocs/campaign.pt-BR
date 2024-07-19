@@ -14,9 +14,9 @@ ht-degree: 81%
 
 # Atividades de ação em workflows{#about-action-activities}
 
-* **[Gestão de conteúdo](content-management.md)**: permite criar ou personalizar o conteúdo.
+* **[Gerenciamento de conteúdo](content-management.md)**: permite criar ou personalizar o conteúdo.
 * **[Delivery contínuo](continuous-delivery.md)**: permite iniciar um delivery partir do cenário especificado na atividade.
-* **[Cross-channel deliveries](cross-channel-deliveries.md)** (somente workflows da campanha): permite configurar um delivery no canal correspondente: Email, Push, Mobile, Direct mail.
+* **[Cross-channel deliveries](cross-channel-deliveries.md)** (somente workflows da campanha): permite configurar uma entrega no canal correspondente: Email, Push, Mobile, Direct mail.
 * **[Carregamento de dados (arquivo)](data-loading-rdbms.md)**: permite acessar uma fonte de dados externa para usar seus dados.
 * **[Carregamento de dados (RDBMS)](data-loading-rdbms.md)**: permite acessar um banco de dados externo para obter dados.
 * **[Delivery](delivery.md)**: permite configurar uma ação de delivery.

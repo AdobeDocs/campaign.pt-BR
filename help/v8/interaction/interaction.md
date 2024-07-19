@@ -14,7 +14,7 @@ ht-degree: 50%
 
 # Gerenciar interações em tempo real
 
-O Campaign vem com uma **Interação** módulo que permite responder em tempo real durante uma interação com um determinado contato, propondo a ele uma ou várias ofertas específicas. Essas ofertas podem ser mensagens de comunicação simples, ofertas especiais de um ou vários produtos ou um serviço.
+O Campaign vem com um módulo **Interaction** que permite responder em tempo real durante uma interação com um determinado contato, propondo a ele uma única ou várias ofertas específicas. Essas ofertas podem ser mensagens de comunicação simples, ofertas especiais de um ou vários produtos ou um serviço.
 
 Você pode criar um catálogo de ofertas que faça interface com seus canais de saída (email, correspondência direta, SMS) para selecionar a melhor oferta para enviar a um contato em um determinado contexto. A melhor seleção de oferta para um recipient é baseada em **regras de elegibilidade**. A seleção de uma oferta de um conjunto de ofertas relevantes é determinada usando regras de prioridade. As regras de apresentação de ofertas consideram o histórico do contato e ajudam a evitar que elas recebam a mesma oferta várias vezes.
 
@@ -40,7 +40,7 @@ As principais etapas para iniciar estão listadas abaixo.
 
 ### Configurar sua plataforma
 
-Antes de começar, como uma campanha **Administrador**, certifique-se de ter realizado as seguintes tarefas em ambientes de design:
+Antes de iniciar, como **Administrador** do Campaign, verifique se você executou as seguintes tarefas em ambientes de design:
 
 1. Criar perfis de usuário. [Saiba mais](interaction-operators.md)
 1. (opcional) Crie um ambiente de oferta para cada targeting dimension. [Saiba mais](interaction-env.md)
@@ -54,7 +54,7 @@ Se o espaço for definido por um canal unitário no modo identificado, você dev
 
 1. Configure o Mecanismo de oferta para interações de entrada para apresentar e atualizar uma ou várias ofertas.
 
-   Os vários modos de integração são detalhados em [nesta seção](interaction-present-offers.md).
+   Os vários modos de integração estão detalhados em [esta seção](interaction-present-offers.md).
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Se o espaço for definido por um canal unitário no modo identificado, você dev
 
 ### Criar e publicar o catálogo de ofertas {#managing-the-offer-catalog-}
 
-Como um **Gerente de ofertas** você deve:
+Como um **Gerente de ofertas**, você deve:
 
 1. Crie categorias de ofertas em ambientes de design. [Saiba mais](interaction-offer-catalog.md#creating-offer-categories)
 1. Crie ofertas em ambientes de design. [Saiba mais](interaction-offer.md)
@@ -71,7 +71,7 @@ Como um **Gerente de ofertas** você deve:
 
 ### Usar o catálogo de ofertas {#using-the-offer-catalog-}
 
-Como um **Gerente de delivery**  você deve:
+Como um **Gerente de entrega**, você deve:
 
 1. Crie uma campanha.
 1. Faça referência a uma oferta na campanha ou no delivery. [Saiba mais](interaction-send-offers.md).
@@ -82,7 +82,7 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
 
 * **Ambiente**: conjunto que inclui um catálogo de oferta e ganchos (espaços de ofertas). Crie um ambiente por targeting dimension. Há dois tipos de ambientes:
 
-   * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de indivíduos a serem alvos das ofertas e a tabela para armazenar todas as apresentações de oferta também são definidas aqui. A variável **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** existe um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
+   * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de indivíduos a serem alvos das ofertas e a tabela para armazenar todas as apresentações de oferta também são definidas aqui. O nó **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** existe um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
    * **Ambiente dinâmico**: ambiente vinculado a um **[!UICONTROL Design environment]**. Ele contém ofertas somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **[!UICONTROL Design environment]**. Eles estão disponíveis para serem exibidos em um site ou inseridos em uma mensagem.
 
 * **Espaço de ofertas**: pasta que define o local onde a oferta é exposta. Ao definir um espaço, você pode:
@@ -115,7 +115,7 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
 
   Nas ofertas, as regras de elegibilidade permitem limitar a validade de ofertas no tempo e determinar as pessoas a serem públicos-alvo.
 
-* **Arbitragem**: seleção de ofertas para exibição em um ambiente (ofertas elegíveis). O princípio de arbitragem classifica as ofertas por prioridade de acordo com os critérios definidos nas categorias, ofertas e ofertas de contexto.
+* **Arbitragem**: selecionar ofertas para exibir em um ambiente (ofertas qualificadas). O princípio de arbitragem classifica as ofertas por prioridade de acordo com os critérios definidos nas categorias, ofertas e ofertas de contexto.
 * **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a um targeting dimension. Há dois tipos de contatos:
 
    * **[!UICONTROL Identified contact]** : um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
@@ -125,7 +125,7 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
      >
      >Contatos anônimos e não identificados são atribuídos ao targeting dimension do visitante.
 
-* **Interação de saída**: chamada para o mecanismo de oferta de uma lista de contatos (usada para delivery de emails, mala direta etc.). As mesmas regras e processos são aplicados a cada contato. Normalmente, esse tipo de interação é processado em modo de lote.
+* **Interação de saída**: chamada para o mecanismo de oferta de uma lista de contatos (usada para entrega de emails, correspondência direta etc.). As mesmas regras e processos são aplicados a cada contato. Normalmente, esse tipo de interação é processado em modo de lote.
 * **Interação de entrada**: interação seguindo uma chamada recebida gerada pela ação de um contato no canal. Esse tipo de interação geralmente é processado no modo unitário.
 * **Modo de lote**: o modo de lote permite selecionar a melhor oferta para um conjunto de contatos. As regras de elegibilidade/priorização são aplicadas a todos os contatos do conjunto. Normalmente, esse modo é aplicado para interações de saída.
 * **Modo Unitário**: um único contato é processado de cada vez. Normalmente, esse modo é aplicado para interações de entrada e mensagens transacionais.
@@ -138,7 +138,7 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
 * **Oferta elegível**: a oferta se encontra com as restrições definidas upstream que podem ser oferecidas de forma consistente a um público-alvo.
 * **Regras de apresentação**: regras de tipologia mencionadas no ambiente de oferta, que permitem excluir algumas ofertas levando em conta o histórico de apresentações.
 * **Peso**: fórmulas que permitem calcular precisamente a relevância de uma oferta para selecionar a mais relevante. Os pesos são definidos nas ofertas. Ofertas elegíveis são consideradas em ordem decrescente de peso.
-* **Função de renderização**: função definida no espaço de ofertas para construir sua representação de oferta com base nos atributos definidos na oferta. Há três modos diferentes de função de renderização: HTML, XML e texto.
+* **Função de renderização**: função definida no espaço de oferta para construir sua representação de oferta com base nos atributos definidos na oferta. Há três modos diferentes de função de renderização: HTML, XML e texto.
 * **Apresentação de oferta**: resultado da ação que consiste em apresentar uma ou várias ofertas a um contato em um determinado espaço (banner em um site, email ou SMS, por exemplo). Esse resultado é armazenado na tabela de apresentações de oferta. No entanto, não é obrigatório salvar as apresentações.
 * **Simulação**: módulo que permite testar a apresentação de ofertas nos destinatários alvos antes de realmente enviar as ofertas.
 * **Pré-visualização**: pré-visualização da oferta como ela é exibida em sua pasta. É acessível a partir da janela de configurações de oferta ou do perfil de contato.

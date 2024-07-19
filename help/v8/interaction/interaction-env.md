@@ -25,7 +25,7 @@ O Interaction opera com dois tipos de ambientes de oferta:
 
 Cada ambiente **[!UICONTROL Design]** está vinculado a um ambiente **[!UICONTROL Live]**. Quando uma oferta é concluída, suas regras de conteúdo e qualificação estão sujeitas a um ciclo de aprovação. Depois que este ciclo for concluído, a oferta relacionada será implantada automaticamente no ambiente **[!UICONTROL Live]**. A partir deste momento, ele estará disponível para entrega.
 
-Por padrão, o Campaign vem com uma **[!UICONTROL Design]** ambiente e uma **[!UICONTROL Live]** ambiente vinculado a ele. Ambos os ambientes são pré-configurados para direcionar a [tabela interna de recipient](../dev/datamodel.md#ootb-profiles).
+Por padrão, o Campaign vem com um ambiente **[!UICONTROL Design]** e um ambiente **[!UICONTROL Live]** vinculado a ele. Ambos os ambientes são pré-configurados para ter como alvo a [tabela interna de destinatários](../dev/datamodel.md#ootb-profiles).
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Por padrão, o Campaign vem com uma **[!UICONTROL Design]** ambiente e uma **[!U
 
 ![](assets/offer_environments_overview_002.png)
 
-Os gerentes de delivery só podem visualizar as **[!UICONTROL Live]** e aproveitar as ofertas para entregá-los. Os gerentes de oferta podem visualizar e usar a variável **[!UICONTROL Design]** e visualize o **[!UICONTROL Live]** ambiente. [Saiba mais](interaction-operators.md)
+Os gerentes de delivery só podem visualizar o ambiente **[!UICONTROL Live]** e aproveitar as ofertas para entregá-los. Os gerentes de oferta podem visualizar e usar o ambiente **[!UICONTROL Design]** e visualizar o ambiente **[!UICONTROL Live]**. [Saiba mais](interaction-operators.md)
 
 ## Criar um ambiente para interações anônimas{#create-an-offer-environment}
 
@@ -45,7 +45,7 @@ Siga as etapas abaixo:
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Clique em **[!UICONTROL Next]**, selecione o **[!UICONTROL Generate a storage schema for propositions]** e clique em **[!UICONTROL Save]**.
+1. Clique em **[!UICONTROL Next]**, selecione a opção **[!UICONTROL Generate a storage schema for propositions]** e clique em **[!UICONTROL Save]**.
 
    ![](assets/offer_env_anonymous_002.png)
 

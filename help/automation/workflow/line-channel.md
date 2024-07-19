@@ -14,7 +14,7 @@ ht-degree: 90%
 
 # Canal LINE{#line-channel}
 
-Os workflows detalhados abaixo são instalados com o módulo do **canal LINE** por padrão. Para obter mais informações sobre esse módulo, consulte [esta página](../../v8/send/line.md).
+Os workflows detalhados abaixo são instalados com o módulo do **canal LINE** por padrão. Para obter mais informações sobre este módulo, consulte [esta página](../../v8/send/line.md).
 
 <table> 
  <tbody> 

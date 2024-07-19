@@ -16,7 +16,7 @@ ht-degree: 48%
 
 O conteúdo do catálogo de ofertas é configurado em espaços de oferta. Por padrão, o conteúdo pode incluir os seguintes campos: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** e **[!UICONTROL Text content]**. A sequência de campos é configurada no espaço de oferta.
 
-Como um **administrador técnico**, é possível criar espaços de oferta no ambiente Design. É necessário ter acesso à subpasta de espaço de ofertas. Depois de criados, esses espaços de ofertas são duplicados automaticamente no ambiente Live durante a aprovação da oferta.
+Como **administrador técnico**, você pode criar espaços de oferta no ambiente Design. É necessário ter acesso à subpasta de espaço de ofertas. Depois de criados, esses espaços de ofertas são duplicados automaticamente no ambiente Live durante a aprovação da oferta.
 
 A renderização de HTML é criada por meio de uma função de renderização. A seqüência dos campos definidos na função de renderização deve ser idêntica à sequência configurada no conteúdo.
 
@@ -32,7 +32,7 @@ Para criar um novo espaço de ofertas, siga as etapas abaixo:
 
    ![](assets/offer_space_create_002.png)
 
-1. Verifique a **[!UICONTROL Enable unitary mode]** opção
+1. Marque a opção **[!UICONTROL Enable unitary mode]**
 
 1. Vá para a janela **[!UICONTROL Content field]** e clique em **[!UICONTROL Add]**.
 
@@ -42,7 +42,7 @@ Para criar um novo espaço de ofertas, siga as etapas abaixo:
 
    ![](assets/offer_space_create_004.png)
 
-1. Verifique a **[!UICONTROL Required]** opção para tornar cada campo obrigatório.
+1. Marque a opção **[!UICONTROL Required]** para tornar cada campo obrigatório.
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ Para criar um novo espaço de ofertas, siga as etapas abaixo:
 
    Essas funções são usadas para gerar representações de ofertas em um espaço de oferta. Há vários formatos possíveis: HTML ou texto.
 
-   **Nota** - O formato XML é restrito a interações de entrada que não estão disponíveis nesta versão do produto. [Saiba mais](../start/v7-to-v8.md#gs-unavailable-features)
+   **Observação** - o formato XML está restrito às interações de entrada que não estão disponíveis nesta versão do produto. [Saiba mais](../start/v7-to-v8.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
@@ -69,7 +69,7 @@ O status da apresentação da oferta varia dependendo das interações com a pop
 
 >[!NOTE]
 >
->A atualização de status é um **assíncrono** processo. Ele é realizado pelo workflow de rastreamento que é acionado a cada hora.
+>A atualização de status é um processo **assíncrono**. Ele é realizado pelo workflow de rastreamento que é acionado a cada hora.
 
 ### Lista de status da oferta {#status-list}
 
@@ -90,9 +90,9 @@ Esses valores não são aplicados por padrão: eles precisam ser configurados.
 
 ### Status da oferta quando a proposta é criada {#configuring-the-status-when-the-proposition-is-created}
 
-Quando uma apresentação de oferta é **criado**, seu status é atualizado.
+Quando uma apresentação de oferta é **criada**, seu status é atualizado.
 
-No **[!UICONTROL Design]** ambiente, para cada espaço de oferta, configure o status para ser aplicado quando uma proposta for criada, dependendo das informações que deseja exibir nos relatórios de oferta.
+No ambiente **[!UICONTROL Design]**, para cada espaço de oferta, configure o status para ser aplicado quando uma proposta for criada, dependendo das informações que você deseja exibir nos relatórios de oferta.
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -103,7 +103,7 @@ Para fazer isso, siga as etapas abaixo:
 
 ### Status da oferta quando a proposta for aceita {#configuring-the-status-when-the-proposition-is-accepted}
 
-Depois que uma apresentação de oferta é **aceito**, use um dos valores fornecidos por padrão para configurar o novo status da proposta. A atualização é aplicada quando um recipient clica em um link na oferta.
+Depois que uma apresentação de oferta for **aceita**, use um dos valores fornecidos por padrão para configurar o novo status da apresentação. A atualização é aplicada quando um recipient clica em um link na oferta.
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -137,7 +137,7 @@ Assim que um visitante clica na oferta, e portanto na URL, o status **[!UICONTRO
 
 **Interação de saída**
 
-É possível aplicar automaticamente a variável **[!UICONTROL Interested]** Status de uma apresentação de oferta quando o delivery contém um link. Basta adicionar o valor **_urlType=&quot;11&quot;** ao link:
+Você pode aplicar automaticamente o status **[!UICONTROL Interested]** a uma apresentação de oferta quando a entrega contiver um link. Basta adicionar o valor **_urlType=&quot;11&quot;** ao link:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
@@ -145,7 +145,7 @@ Assim que um visitante clica na oferta, e portanto na URL, o status **[!UICONTRO
 
 ## Visualização de oferta por espaço {#offer-preview-per-space}
 
-No **[!UICONTROL Preview]** , é possível exibir as ofertas para as quais o recipient está qualificado por meio de um método escolhido. No exemplo abaixo, o destinatário está qualificado para três propostas de ofertas por e-mail.
+Na guia **[!UICONTROL Preview]**, é possível exibir as ofertas para as quais o destinatário está qualificado por meio de um método escolhido. No exemplo abaixo, o destinatário está qualificado para três propostas de ofertas por e-mail.
 
 ![](assets/offer_space_overview_002.png)
 
@@ -156,4 +156,4 @@ Se um recipient não estiver qualificado para ofertas, isso será mostrado na vi
 
 A visualização pode ignorar contextos quando eles são restritos a um espaço. Esse é o caso quando o schema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada.
 
-Para obter mais informações, consulte esta amostra no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.
+Para obter mais informações, consulte esta amostra na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.

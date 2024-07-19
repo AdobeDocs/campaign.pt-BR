@@ -14,7 +14,7 @@ ht-degree: 75%
 
 # Canal de aplicativo móvel{#mobile-app-channel}
 
-Os workflows detalhados abaixo são instalados com o módulo **Canal móvel** por padrão. Para obter mais informações sobre esse módulo, consulte [nesta seção](../../v8/send/push.md).
+Os workflows detalhados abaixo são instalados com o módulo **Canal móvel** por padrão. Para obter mais informações sobre este módulo, consulte [esta seção](../../v8/send/push.md).
 
 <table> 
  <tbody> 

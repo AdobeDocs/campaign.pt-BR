@@ -18,11 +18,11 @@ ht-degree: 31%
 
 Os recursos de rastreamento de campanha rastreiam as mensagens enviadas e ajudam a analisar o comportamento dos recipients: abrir, clicar em links, assinar/cancelar assinatura e muito mais. Você pode acessar logs dedicados, relatórios e métricas, consultar o banco de dados para revisar dados coletados e muito mais.
 
-Para obter mais informações, consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#tracking-tab){target="_blank"}.
+Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#tracking-tab){target="_blank"}.
 
 O painel de delivery é uma ferramenta essencial para monitorar seus deliveries e possíveis problemas durante o envio de mensagens.
 
-Para obter mais informações, consulte [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"}.
+Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"}.
 
 Os principais recursos de rastreamento disponíveis no Campaign estão listados abaixo.
 
@@ -51,7 +51,7 @@ Os recursos de rastreamento de campanha permitem adicionar links em emails que p
 
 **Logs de rastreamento**
 
-A variável **Rastreamento** o workflow técnico recupera os dados de rastreamento depois que o delivery é enviado e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento do seu delivery.
+O fluxo de trabalho técnico **Rastreamento** recupera os dados de rastreamento depois que a entrega é enviada e o rastreamento é ativado. Esses dados podem ser encontrados na guia Rastreamento do seu delivery.
 
 [Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/accessing-the-tracking-logs.html#sending-messages){target="_blank"}
 
@@ -119,16 +119,16 @@ O Adobe Campaign oferece um conjunto de recursos para monitorar seus processos e
 
 O monitoramento de entregas após o envio é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes.
 
-Saiba mais sobre as informações que você pode monitorar após enviar um delivery, entenda como as falhas de delivery e as quarentenas são gerenciadas no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR#sending-messages){target="_blank"}
+Saiba mais sobre as informações que você pode monitorar após o envio de uma entrega, entenda como as falhas de entrega e as quarentenas são gerenciadas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR#sending-messages){target="_blank"}
 
 ### Monitorar workflows
 
-Saiba como monitorar a execução do fluxo de trabalho no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html)
+Saiba como monitorar a execução do fluxo de trabalho em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html)
 
 ### Monitorar sua instância
 
-As diretrizes de monitoramento de instâncias estão disponíveis em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html#monitoring-campaign-classic){target="_blank"}
+As diretrizes de monitoramento de instância estão disponíveis na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html#monitoring-campaign-classic){target="_blank"}
 
 Use a interface de autoatendimento da trilha de auditoria para monitorar alterações feitas na instância. A trilha de auditoria captura em tempo real uma lista abrangente de ações e eventos que ocorrem na sua instância do Adobe Campaign. Você pode acessar um histórico de dados para ajudar a responder perguntas como: o que aconteceu com seus workflows e quem os atualizou pela última vez ou o que seus usuários fizeram na instância.
 
-Saiba mais sobre Trilha de auditoria nesta seção [página](../reporting/audit-trail.md){target="_blank"}
+Saiba mais sobre a Trilha de auditoria nesta [página](../reporting/audit-trail.md){target="_blank"}

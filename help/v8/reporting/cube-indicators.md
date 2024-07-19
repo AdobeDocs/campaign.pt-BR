@@ -22,19 +22,19 @@ Para acessar cubos, navegue até **[!UICONTROL Administration > Configuration > 
 
 Com cubos, você pode:
 
-* Exportar dados diretamente em um relatório, projetado na **[!UICONTROL Reports]** da plataforma Adobe Campaign.
+* Exporte dados diretamente em um relatório, projetado na guia **[!UICONTROL Reports]** da plataforma Adobe Campaign.
 
   Para fazer isso, crie um novo relatório e selecione o cubo que deseja usar.
 
   ![](assets/create-new-cube.png)
 
-  Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um modelo, clique em **[!UICONTROL Create]** para configurar e visualizar o novo relatório.
+  Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um modelo, clique em **[!UICONTROL Create]** para configurar e exibir o novo relatório.
 
   Você pode adaptar medidas, alterar o modo de exibição ou configurar a tabela e exibir o relatório usando o botão principal.
 
   ![](assets/display-cube-table.png)
 
-* Fazer referência a um cubo no **[!UICONTROL Query]** caixa de um relatório para usar seus indicadores, conforme mostrado abaixo:
+* Faça referência a um cubo na caixa **[!UICONTROL Query]** de um relatório para usar seus indicadores, conforme mostrado abaixo:
 
   ![](assets/cube-report-query.png)
 
@@ -67,14 +67,14 @@ No exemplo abaixo, saiba como criar rapidamente um cubo simples em um relatório
 
 Para criar um cubo, siga as etapas abaixo:
 
-1. Clique em **[!UICONTROL New]** acima da lista de cubos.
+1. Clique no botão **[!UICONTROL New]** acima da lista de cubos.
 
    ![](assets/create-a-cube.png)
 
-1. Selecione o schema que contém os elementos que deseja explorar (também conhecido como &quot;schema de fatos&quot;). Neste exemplo, selecione o padrão **Recipient** tabela.
+1. Selecione o schema que contém os elementos que deseja explorar (também conhecido como &quot;schema de fatos&quot;). Neste exemplo, selecione a tabela padrão **Recipient**.
 1. Clique em **[!UICONTROL Save]** para criar o cubo: ele é adicionado à lista de cubos. Agora você pode usar as guias para configurá-lo.
 
-1. Clique em **[!UICONTROL Filter the source data...]** link para aplicar os cálculos desse cubo aos dados no banco de dados.
+1. Clique no link **[!UICONTROL Filter the source data...]** para aplicar os cálculos desse cubo aos dados no banco de dados.
 
    ![](assets/cube-filter-source.png)
 
@@ -84,16 +84,16 @@ Depois que o cubo for criado, defina suas dimensões. Dimension são os eixos de
 
 Para criar dimensões, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Dimension]** do cubo e clique na guia **[!UICONTROL Add]** botão para criar uma nova dimensão.
-1. No **[!UICONTROL Expression field]**, clique no link **[!UICONTROL Edit expression]** para selecionar o campo que contém os dados relacionados.
+1. Navegue até a guia **[!UICONTROL Dimension]** do cubo e clique no botão **[!UICONTROL Add]** para criar uma nova dimensão.
+1. No **[!UICONTROL Expression field]**, clique no ícone **[!UICONTROL Edit expression]** para selecionar o campo que contém os dados relacionados.
 
    ![](assets/cube-add-dimension.png)
 
-1. Neste exemplo, estamos selecionando o recipient **Idade**. Para esse campo, você pode definir uma compartimentalização para agrupar idades e facilitar a leitura das informações. Recomendamos o uso de compartimentalização quando houver a probabilidade de vários valores separados.
+1. Neste exemplo, estamos selecionando o recipient **Age**. Para esse campo, você pode definir uma compartimentalização para agrupar idades e facilitar a leitura das informações. Recomendamos o uso de compartimentalização quando houver a probabilidade de vários valores separados.
 
 Para fazer isso, marque a opção **[!UICONTROL Enable binning]**. [Saiba mais](customize-cubes.md#data-binning).
 
-1. Adicione uma dimensão do tipo **Data.** Aqui, queremos exibir as datas de criação do perfil de recipient. Para fazer isso, clique em **[!UICONTROL Add]** e selecione o **[!UICONTROL Creation date]** na tabela de recipients.
+1. Adicione uma dimensão do tipo **Data.** Aqui, queremos exibir as datas de criação do perfil de recipient. Para fazer isso, clique em **[!UICONTROL Add]** e selecione o campo **[!UICONTROL Creation date]** na tabela de destinatários.
 Você pode personalizar o modo de exibição de data. Para fazer isso, selecione a hierarquia a ser usada e os níveis para gerar:
 
 ![](assets/cube-date-dimension.png)
@@ -116,16 +116,16 @@ Para obter mais informações, consulte [esta seção](customize-cubes.md#dynami
 
 Depois que as dimensões forem definidas, especifique um modo de cálculo para os valores a serem exibidos nas células.
 
-Para fazer isso, crie os indicadores no **[!UICONTROL Measures]** guia. Crie quantas medidas houver colunas para exibir nos relatórios com base nesse cubo.
+Para fazer isso, crie os indicadores na guia **[!UICONTROL Measures]**. Crie quantas medidas houver colunas para exibir nos relatórios com base nesse cubo.
 
 Para criar indicadores, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Measures]** e clique na guia **[!UICONTROL Add]** botão.
+1. Navegue até a guia **[!UICONTROL Measures]** e clique no botão **[!UICONTROL Add]**.
 1. Selecione o tipo de medida e a fórmula a ser aplicada. Neste exemplo, estamos contando o número de mulheres entre os recipients. Nossa medida é baseada no schema de fatos e usa o operador **[!UICONTROL Count]**.
 
    ![](assets/cube-new-measure.png)
 
-   Use o **[!UICONTROL Filter the measure data...]** para selecionar somente mulheres. [Saiba mais](customize-cubes.md#define-measures).
+   Use o link **[!UICONTROL Filter the measure data...]** para selecionar apenas mulheres. [Saiba mais](customize-cubes.md#define-measures).
 
    ![](assets/cube-filter-measure-data.png)
 

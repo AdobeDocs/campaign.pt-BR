@@ -14,7 +14,7 @@ ht-degree: 74%
 
 # Entregas entre canais{#cross-channel-deliveries}
 
-Os cross-channel estão disponíveis no **[!UICONTROL Deliveries]** guia de [workflow da campanha](campaign-workflows.md) atividades.
+Entregas entre canais estão disponíveis na guia **[!UICONTROL Deliveries]** de [atividades do fluxo de trabalho da campanha](campaign-workflows.md).
 
 Selecionar o modelo no qual deseja basear a entrega e definir seu conteúdo.
 
@@ -23,7 +23,7 @@ Você pode especificar um target para o upstream de entrega de fluxo de trabalho
 No exemplo abaixo, saiba como criar um fluxo de trabalho para enviar um email ou SMS a assinantes de notificação por push e, em seguida, uma notificação por push uma semana depois. Para fazer isso:
 
 1. Crie uma campanha.
-1. No **[!UICONTROL Targeting and workflows]** da sua campanha, adicione uma **[!UICONTROL Query]** atividade.
+1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade **[!UICONTROL Query]**.
 1. Configurar sua query: selecione os recipients que assinaram notificações por push como o target dimension.
 
    >[!NOTE]

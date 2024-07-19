@@ -72,7 +72,7 @@ Consulte estas seções para obter orientação e práticas recomendadas para au
 
 * Saiba mais sobre atividades de workflow [nesta página](use-workflow-data.md).
 * Saiba como criar um workflow [nesta seção](build-a-workflow.md).
-* Saiba como usar workflows para importar dados no Campaign no [nesta seção](campaign-workflows.md)..
+* Descubra como usar fluxos de trabalho para importar dados no Campaign em [esta seção](campaign-workflows.md).
 * As práticas recomendadas de workflow são detalhadas [nesta página](workflow-best-practices.md).
 * Encontre orientações sobre a execução do workflow [nesta seção](start-a-workflow.md).
 * Saiba como monitorar workflows [nesta página](monitor-workflow-execution.md).

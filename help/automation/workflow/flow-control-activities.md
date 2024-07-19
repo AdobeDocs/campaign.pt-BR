@@ -22,7 +22,7 @@ As seguintes atividades são atividades de banco de dados: elas são usadas para
 * **[External signal](external-signal.md)**: permite habilitar a transição de saída após receber um sinal externo.
 * **[Fork](fork.md)**: permite ativar todas as transições de saída.
 * **[Jump (ponto inicial e ponto final)](jump-start-point-and-end-point.md)**: permite implementar transições sem links.
-* **[Iniciar e finalizar](start-and-end.md)**: permite mostrar os pontos inicial e final de um workflow.
+* **[Início e término](start-and-end.md)**: permite que você mostre os pontos inicial e final de um fluxo de trabalho.
 * **[Scheduler](scheduler.md)**: permite definir um agendamento de execução de workflow.
 * **[Sub-workflow](sub-workflow.md)**: permite executar outro workflow.
 * **[Test](test.md)**: permite uma transição com base em um resultado de teste.

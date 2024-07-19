@@ -15,7 +15,7 @@ ht-degree: 92%
 
 # Campanha{#campaign}
 
-Os workflows detalhados abaixo são instalados com o **Campaign** por padrão.
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Campanha** por padrão.
 
 >[!CAUTION]
 >

@@ -76,6 +76,6 @@ Esta seção só é exibida nos workflows da campanha.
 
   ![](assets/wf-properties_select-supervisors.png)
 
-  A variável **[!UICONTROL Notification to a workflow supervisor]** o template padrão inclui um link para acessar o console do cliente Adobe Campaign pela Web para que o recipient possa trabalhar no problema quando estiver conectado.
+  O modelo padrão **[!UICONTROL Notification to a workflow supervisor]** inclui um link para acessar o console do cliente Adobe Campaign pela Web para que o recipient possa trabalhar no problema quando estiver conectado.
 
   Para criar um template personalizado, vá para **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.

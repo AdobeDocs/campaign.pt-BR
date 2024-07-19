@@ -21,12 +21,12 @@ Antes de começar, é necessário:
 * Verifique a compatibilidade do sistema e das ferramentas com o Adobe Campaign na [Matriz de compatibilidade](compatibility-matrix.md)
 * Obter o URL do servidor do Campaign
 * Crie sua Adobe ID ou obtenha suas credenciais de usuário da empresa
-* Instale o Webview2 Runtime do Microsoft Edge em seu sistema. [Saiba mais](#webview)
+* Instale o tempo de execução do Microsoft Edge Webview2 em seu sistema. [Saiba mais](#webview)
 
 
 >[!NOTE]
 >
->Você também pode se conectar à interface da Web do Campaign usando um navegador da Web. Saiba mais sobre a nova interface do usuário na Web do Campaign em [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"}.
+>Você também pode se conectar à interface da Web do Campaign usando um navegador da Web. Saiba mais sobre a nova interface do usuário da Web do Campaign em [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"}.
 
 
 ## Instalar o console do cliente{#download-ac-console}
@@ -35,7 +35,7 @@ Antes de começar, é necessário:
 
 A partir da versão de build do Campaign Classic 8.4, a instalação do Webview 2 runtime do Microsoft Edge é necessária para qualquer instalação do console do cliente.
 
-O Modo de Exibição da Web é instalado por padrão como parte do sistema operacional Windows 11. Se ainda não estiver presente no sistema, o programa de instalação do console do cliente do Campaign solicitará que você o baixe em [Site do desenvolvedor do Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br){target="_blank"}. Observe que o link de download não funciona no navegador Internet Explorer 11, pois o Microsoft descontinuou seu suporte. Use um navegador diferente para acessar o link.
+O Modo de Exibição da Web é instalado por padrão como parte do sistema operacional Windows 11. Se ainda não estiver presente no sistema, o programa de instalação do console do cliente do Campaign solicitará que você o baixe do [site do Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br){target="_blank"}. Observe que o link de download não funciona no navegador Internet Explorer 11, pois o Microsoft descontinuou seu suporte. Use um navegador diferente para acessar o link.
 
 ### Baixar o console{#install-ac-console}
 
@@ -57,11 +57,11 @@ Depois que o console do cliente estiver instalado, siga as etapas abaixo para cr
 
 1. Inicie o Console do e navegue pelo link no canto direito para acessar a tela de configuração da conexão.
 
-1. Clique em **[!UICONTROL Add > Connection]** e insira o rótulo e o URL do servidor de aplicativos do Adobe Campaign.
+1. Clique em **[!UICONTROL Add > Connection]** e insira o rótulo e a URL do servidor de aplicativos do Adobe Campaign.
 
 1. Especifique uma conexão com o servidor de aplicativos Adobe Campaign por meio de um URL. Use um DNS ou um alias da máquina, ou seu endereço IP.
 
-   Por exemplo, você pode usar a variável [`https://<machine>.<domain>.com`](https://myserver.adobe.com) digite o URL.
+   Por exemplo, você pode usar a URL do tipo [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
 
 1. Marque a opção **[!UICONTROL Connect with an Adobe ID]**.
 
@@ -71,11 +71,11 @@ Você pode adicionar quantas conexões forem necessárias para se conectar aos a
 
 >[!NOTE]
 >
->A variável **[!UICONTROL Add]** permite criar **[!UICONTROL folders]** para organizar todas as suas conexões. Basta arrastar e soltar cada conexão em uma pasta.
+>O botão **[!UICONTROL Add]** permite criar **[!UICONTROL folders]** para organizar todas as suas conexões. Basta arrastar e soltar cada conexão em uma pasta.
 
 ## Fazer logon no Adobe Campaign {#logon-to-ac}
 
-Os usuários do Campaign se conectam ao console do Adobe Campaign usando a Adobe ID, por meio do Adobe Identity Management System (IMS). Eles podem usar a mesma ID em todas as soluções Adobe. A conexão é salva ao usar o Adobe Campaign com outras soluções. Saiba mais sobre o Adobe IMS no [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}.
+Os usuários do Campaign se conectam ao console do Adobe Campaign usando a Adobe ID, por meio do Adobe Identity Management System (IMS). Eles podem usar a mesma ID em todas as soluções Adobe. A conexão é salva ao usar o Adobe Campaign com outras soluções. Saiba mais sobre o Adobe IMS em [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}.
 
 Para fazer logon em uma instância, siga as etapas abaixo:
 
@@ -97,13 +97,13 @@ Em seguida, você pode fazer logon no Campaign com sua Adobe ID.
 
 ## Atualizar o console do cliente{#upgrade-ac-console}
 
-Quando seu sistema é atualizado para uma versão mais recente, você deve atualizar seu console do cliente para essa mesma versão. Essa é uma prática recomendada e, para algumas versões, essa atualização é obrigatória. Nesse caso, é mencionado no [Notas de versão](release-notes.md).
+Quando seu sistema é atualizado para uma versão mais recente, você deve atualizar seu console do cliente para essa mesma versão. Essa é uma prática recomendada e, para algumas versões, essa atualização é obrigatória. Nesse caso, ele é mencionado nas [Notas de versão](release-notes.md).
 
 Como usuário do Managed Cloud Service, o Adobe implanta o console do cliente para você. Ao se conectar ao ambiente atualizado, você será solicitado a baixar a versão mais recente do console do cliente em uma janela pop-up. Você deve aceitar essa atualização e atualizar o console do cliente conforme solicitado.
 
 >[!CAUTION]
 >
->O Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** desmarcada para garantir que você seja alertado quando uma nova versão do Console estiver disponível. Se essa opção for selecionada, o usuário não será informado de que é necessária uma atualização do Console.
+>A Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** desmarcada para garantir que você seja alertado quando uma nova versão do Console estiver disponível. Se essa opção for selecionada, o usuário não será informado de que é necessária uma atualização do Console.
 >
 
 
@@ -114,7 +114,7 @@ O Adobe Campaign permite definir e gerenciar os direitos atribuídos aos diverso
 
 Como administrador do Campaign, você é responsável por criar os operadores e compartilhar suas credenciais com os usuários.
 
-Saiba mais sobre usuários e como definir suas permissões no [nesta seção](gs-permissions.md).
+Saiba mais sobre usuários e como definir suas permissões em [esta seção](gs-permissions.md).
 
 
 ## Acessar o Campaign com um navegador da Web {#connect-web-ac}
@@ -143,4 +143,4 @@ Considerando o acesso via Web, as opções permitirão principalmente a visualiz
 
 O acesso via Web também é usado no processo de validação: os operadores podem clicar no email de solicitação de aprovação e se conectar ao Campaign por meio do navegador da Web para validar ou rejeitar um conteúdo ou orçamento de delivery.
 
-Para acessar sua instância do Campaign pela Web, o URL é:  `https://<your adobe campaign server>:<port number>/view/home`.
+Para acessar sua instância do Campaign pela Web, a URL é: `https://<your adobe campaign server>:<port number>/view/home`.

@@ -16,7 +16,7 @@ ht-degree: 78%
 
 
 
-Os workflows detalhados abaixo são instalados com o **Renderização da Caixa de entrada (IR)** por padrão.
+O fluxo de trabalho detalhado abaixo é instalado com o módulo **Renderização da Caixa de Entrada (IR)** por padrão.
 
 <table> 
  <tbody> 

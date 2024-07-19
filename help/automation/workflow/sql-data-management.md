@@ -49,7 +49,7 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
    A atividade permite usar as seguintes variáveis no script:
 
    * **activity.tableName**: nome SQL da tabela de trabalho de saída
-   * **task.incomingTransitionByName(&#39;name&#39;).tableName**: Nome SQL da tabela de trabalho transmitida pela transição recebida a ser utilizada (a transição é identificada pelo seu nome).
+   * **task.incomingTransitionByName(&#39;name&#39;).tableName**: nome SQL da tabela de trabalho transmitida pela transição recebida a ser utilizada (a transição é identificada pelo próprio nome).
 
      >[!NOTE]
      >

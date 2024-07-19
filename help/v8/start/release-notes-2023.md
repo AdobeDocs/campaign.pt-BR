@@ -14,7 +14,7 @@ ht-degree: 57%
 
 # Notas de versão de 2023 {#2023-rn}
 
-Esta página lista novos recursos, melhorias e correções que vêm com o **Versões do Campaign v8 de 2023**.
+Esta página lista novos recursos, melhorias e correções que vêm com as **Versões do Campaign v8 de 2023**.
 
 
 ## Versão 8.5.2 {#release-8-5-2}
@@ -46,11 +46,11 @@ Para obter mais informações, consulte a [documentação detalhada](../send/pus
 <p>O serviço de notificação por push recém-introduzido mostra melhorias significativas na taxa de transferência do Push Android e do Push iOS em comparação à versão anterior (v8.4). Os usuários terão um desempenho notavelmente aprimorado com o serviço atualizado na versão mais recente (v8.5). </p>
 <ul>
 <li>Notificações por push (Android): até <strong>5x</strong> mais rápido </li>
-<li>Notificações por push (iOS): até <strong>2,2x</strong> mais rápido</li>
+<li>Notificações por push (iOS): até <strong>2.2x</strong> mais rápido</li>
 </ul>
 <p>A taxa de transferência do SMS passou por melhorias substanciais por meio de uma série de otimizações, resultando em melhorias notáveis na velocidade e na eficiência da comunicação por SMS. Essas atualizações resultaram em maior taxa de transferência da versão anterior (v8.4) para a versão mais recente (v8.5), abrangendo atualizações de envio e de feedback. Agora os usuários podem experimentar os benefícios desse serviço SMS aprimorado.</p>
 <ul>
-<li>Taxa de transferência de SMS: até <strong>5x</strong> mais rápido</li>
+<li>Taxa de transferência de SMS: até <strong>5x</strong> mais rápida</li>
 </ul>
 <p><em>Esses desempenhos máximos de throughput foram medidos por equipes de testes de Adobe, em condições de laboratório.</em></p>
 </div>
@@ -74,7 +74,7 @@ Para obter mais informações, consulte a [documentação detalhada](../send/pus
 **Atualizações de compatibilidade**
 
 * A versão de 32 bits do console do cliente agora está obsoleta. A partir da versão 8.6, o console do cliente estará disponível somente em 64 bits. A atualização para a versão de 64 bits do console do cliente é contínua. Para obter mais informações sobre como atualizar seu sistema operacional, consulte esta [nota técnica](../../technotes/upgrades/console.md).
-* Agora você pode conectar a instância do Campaign v8 ao banco de dados externo do Azure synapse. Essa conexão é gerenciada por meio de uma nova conta externa. Saiba mais em [Matriz de compatibilidade do Campaign](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
+* Agora você pode conectar a instância do Campaign v8 ao banco de dados externo do Azure synapse. Essa conexão é gerenciada por meio de uma nova conta externa. Saiba mais na [Matriz de compatibilidade do Campaign](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
 
 
 **Correções**

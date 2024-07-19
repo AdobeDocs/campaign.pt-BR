@@ -25,12 +25,12 @@ As principais etapas para personalizar o modelo de dados do Campaign são:
 >[!CAUTION]
 >O esquema incorporado não deve ser modificado diretamente. Se precisar adaptar um esquema incorporado, é necessário estendê-lo.
 
-Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta página](datamodel.md). Consulte também recomendações ao criar um novo esquema no [esta página](create-schema.md).
+Para entender melhor as tabelas integradas do Campaign e suas interações, consulte [esta página](datamodel.md). Consulte também recomendações ao criar um novo esquema na [esta página](create-schema.md).
 
 Para estender um schema, siga as etapas abaixo:
 
-1. Navegue até a **[!UICONTROL Administration > Configuration > Data schemas]** no Explorer.
-1. Clique em **Novo** e selecione **[!UICONTROL Extend the data in a table using an extension schema]**.
+1. Navegue até a pasta **[!UICONTROL Administration > Configuration > Data schemas]** no Explorer.
+1. Clique no botão **Novo** e selecione **[!UICONTROL Extend the data in a table using an extension schema]**.
 
    ![](assets/extend-schema-option.png)
 
@@ -46,7 +46,7 @@ Para estender um schema, siga as etapas abaixo:
 
    ![](assets/extend-schema-edit.png)
 
-   No exemplo abaixo, adicionamos a variável **MembershipYear** coloque um limite de comprimento para o sobrenome (esse limite substituirá o padrão) e remova a data de nascimento do esquema incorporado.
+   No exemplo abaixo, adicionamos o atributo **MembershipYear**, colocamos um limite de comprimento para o sobrenome (esse limite substituirá o padrão) e removemos a data de nascimento do esquema incorporado.
 
    ![](assets/extend-schema-sample.png)
 
@@ -62,7 +62,7 @@ Para estender um schema, siga as etapas abaixo:
    </srcSchema>
    ```
 
-1. Desconecte e reconecte o Campaign para verificar a atualização da estrutura de esquema no **[!UICONTROL Structure]** guia.
+1. Desconecte e reconecte ao Campaign para verificar a atualização da estrutura de esquema na guia **[!UICONTROL Structure]**.
 
    ![](assets/extend-schema-structure.png)
 

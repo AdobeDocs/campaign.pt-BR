@@ -20,7 +20,7 @@ O Adobe Campaign permite que você defina provedores de serviços que estarão e
 
 Cada provedor de serviços é salvo em um arquivo com detalhes de contato, modelos de serviço e tarefas relacionadas.
 
-Os provedores de serviços são configurados na variável **[!UICONTROL Administration > Campaign management]** pasta do explorador do Campaign.
+Os provedores de serviços estão configurados na pasta **[!UICONTROL Administration > Campaign management]** do explorador do Campaign.
 
 As tarefas realizadas durante as entregas são realizadas por provedores de serviços, especialmente para mala direta e canais móveis. Esses provedores de serviços podem, por exemplo, estar envolvidos na impressão ou distribuição de mensagens. Essas tarefas envolvem configurações e custos que são específicos para cada provedor de serviços. A configuração dos provedores de serviços envolve quatro estágios:
 
@@ -38,7 +38,7 @@ As tarefas realizadas durante as entregas são realizadas por provedores de serv
 
 Você pode criar quantos provedores de serviços forem necessários para suas entregas. O procedimento para adicionar um provedor de serviços é o seguinte:
 
-1. Clique em **[!UICONTROL New]** acima da lista de provedores de serviços.
+1. Clique no botão **[!UICONTROL New]** acima da lista de provedores de serviços.
 1. Na seção inferior da janela, especifique o nome e os detalhes de contato do provedor de serviços.
 
    ![](assets/add-a-supplier.png)
@@ -53,7 +53,7 @@ Uma categoria de custo é uma entidade que contém um conjunto de custos qualifi
 
 Para criar um template de serviço e definir seu conteúdo, siga as etapas abaixo:
 
-1. No **[!UICONTROL Services]** do provedor de serviços, clique na guia **[!UICONTROL Add]** e informe o nome do template de serviço.
+1. Na guia **[!UICONTROL Services]** do provedor de serviço, clique no botão **[!UICONTROL Add]** e insira o nome do modelo de serviço.
 
    ![](assets/supplier-new-template.png)
 
@@ -67,9 +67,9 @@ Para criar um template de serviço e definir seu conteúdo, siga as etapas abaix
 
      >[!NOTE]
      >
-     >As linhas de estoque são definidas no campo **[!UICONTROL Stock management]** nó. [Saiba mais](#stock-and-order-management).
+     >As linhas de estoque são definidas no nó **[!UICONTROL Stock management]**. [Saiba mais](#stock-and-order-management).
 
-1. Você pode pré-selecionar um valor para essa categoria de custo, que é o padrão nas categorias de custo do provedor de serviços (em vez de uma vazia). Para fazer isso, ative a variável **Sim** opção no **[!UICONTROL Selected]** coluna para o tipo de categoria em causa:
+1. Você pode pré-selecionar um valor para essa categoria de custo, que é o padrão nas categorias de custo do provedor de serviços (em vez de uma vazia). Para fazer isso, habilite a opção **Sim** na coluna **[!UICONTROL Selected]** para o tipo de categoria em questão:
 
    ![](assets/default-cost-type.png)
 
@@ -122,7 +122,7 @@ Por fim, você pode configurar um cálculo de custo de acordo com o número tota
 
 ### Configurar trabalhos associados a um serviço {#configure-processes-associated-with-a-service}
 
-Você pode associar informações nos processos associados ao provedor de serviços por meio da **[!UICONTROL Jobs]** guia. Esta seção permite configurar o envio de informações para o roteador.
+Você pode associar informações nos processos associados ao provedor de serviços através da guia **[!UICONTROL Jobs]**. Esta seção permite configurar o envio de informações para o roteador.
 
 ![](assets/cost-supplier-jobs.png)
 
@@ -130,7 +130,7 @@ Você pode associar informações nos processos associados ao provedor de servi�
 
 * A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de destinatários.
 
-  Por padrão, os modelos de delivery para mensagens de notificação são salvos na variável **[!UICONTROL Administration > Campaign management > Technical delivery templates]** pasta, que pode ser acessada na visualização geral.
+  Por padrão, os modelos de entrega para mensagens de notificação são salvos na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]**, que é acessível no modo de exibição geral.
 
 * A seção **[!UICONTROL Post-processing]** permite que você selecione o workflow a ser iniciado após a aprovação da entrega. Se um template de workflow for inserido, uma instância de workflow será criada automaticamente e será iniciada assim que a aprovação entrar em vigor. Esse workflow pode enviar o arquivo de extração para um provedor de serviços externos para processamento, por exemplo.
 
@@ -196,7 +196,7 @@ Ao criar um estoque, clique na guia **[!UICONTROL Stock lines]** para adicionar 
 
 Depois que o estoque for criado, use seu painel para criar e monitorar linhas de estoque.
 
-Clique em **[!UICONTROL Create]** botão para adicionar novas linhas de estoque.
+Clique no botão **[!UICONTROL Create]** para adicionar novas linhas de estoque.
 
 ![](assets/add-stock-lines.png)
 

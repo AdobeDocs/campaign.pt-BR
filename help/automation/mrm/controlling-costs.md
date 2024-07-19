@@ -36,7 +36,7 @@ As etapas a seguir devem ser aplicadas para implementar o gerenciamento de orça
 
 Para criar um orçamento, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Campaign management > Budgets]** pasta do explorador do Campaign.
+1. Navegue até a pasta **[!UICONTROL Campaign management > Budgets]** do explorador do Campaign.
 1. Clique no ícone **[!UICONTROL New]**, nomeie o orçamento e o salve.
 1. Informe a quantia inicial: indique a quantia alocada no campo relevante. Os outros montantes são inseridos automaticamente. [Saiba mais](#calculating-amounts).
 1. Defina o período de validade inserindo as datas inicial e final. Estas informações são apenas indicativas.
@@ -144,7 +144,7 @@ De acordo com as categorias de custo selecionadas, as estruturas de custo corres
 
 >[!NOTE]
 >
->As categorias e estruturas de custo são apresentadas [esta página](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
+>As categorias e estruturas de custo são apresentadas em [esta página](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
 
 ## Compromisso de custo, cálculo e cobrança {#cost-commitment--calculation-and-charging}
 
@@ -277,7 +277,7 @@ Ao editar o custo calculado, é possível verificar a divisão de custo e o stat
 
 #### Etapa 5 - Criar tarefas {#step-5---creating-tasks}
 
-Nessa campanha são adicionadas duas tarefas para as quais as estruturas de custo foram [criado anteriormente](#step-2---configuring-the-service-provider-and-defining-the-cost-structures).
+Vamos adicionar a esta campanha as duas tarefas cujas estruturas de custo foram [criadas anteriormente](#step-2---configuring-the-service-provider-and-defining-the-cost-structures).
 
 Para fazer isso, no painel de campanha, clique no botão **[!UICONTROL Add a task]**. Nomeie a tarefa e clique em **[!UICONTROL Save]**.
 

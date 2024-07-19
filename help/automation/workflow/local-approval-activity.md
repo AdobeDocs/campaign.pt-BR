@@ -143,7 +143,7 @@ Os seguintes campos precisam ser inseridos:
 1. Na seção **[!UICONTROL Notification]**, selecione o template da entrega e o assunto a ser usado para o email de notificação. Aqui, escolhemos o template padrão: **[!UICONTROL Local approval notification]**.
 1. Na seção **[!UICONTROL Approval schedule]**, mantivemos o prazo de aprovação padrão (3 dias) e adicionamos um lembrete. A entrega será enviada 3 dias após o início da aprovação. Ao atingir o prazo final de aprovação, os destinatários que não foram aprovados não serão considerados.
 
-Um email de notificação é enviado pelo **[!UICONTROL Local approval]** atividade para supervisores locais.
+Um email de notificação é enviado pela atividade **[!UICONTROL Local approval]** para supervisores locais.
 
 ### Aguardar {#wait}
 

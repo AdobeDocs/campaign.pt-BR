@@ -17,7 +17,7 @@ ht-degree: 40%
 
 ## Unidades padrão {#default-units}
 
-No Adobe Campaign, para campos que expressam uma duração (por exemplo, período de validade dos recursos, prazo de aprovação para uma tarefa, etc.), os valores podem ser expressos no seguinte **unidades**:
+No Adobe Campaign, para campos que expressam uma duração (por exemplo, período de validade dos recursos, prazo de aprovação para uma tarefa, etc.), os valores podem ser expressos nas seguintes **unidades**:
 
 * **[!UICONTROL s]** para segundos
 * **[!UICONTROL mn]** para minutos
@@ -28,7 +28,7 @@ No Adobe Campaign, para campos que expressam uma duração (por exemplo, períod
 
 Você pode adicionar pastas ao explorador do Campaign, criar visualizações e atribuir permissões.
 
-Saiba como gerenciar pastas e visualizações no [esta página](../audiences/folders-and-views.md)
+Saiba como gerenciar pastas e modos de exibição em [esta página](../audiences/folders-and-views.md)
 
 ## Gerenciar e personalizar listas{#customize-lists}
 
@@ -44,9 +44,9 @@ Na parte inferior direita da tela da lista, um **contador** mostra quantos regis
 
 ![Exibir o número total de registros em uma lista](assets/number-of-records.png)
 
-Se um ponto de interrogação aparecer em vez do número à direita, como `240/?`, clique no contador para iniciar o cálculo.
+Se aparecer um ponto de interrogação em vez do número à direita, como `240/?`, clique no contador para iniciar o cálculo.
 
-Para carregar e exibir registros adicionais, clique em **[!UICONTROL Continue loading]**. Por padrão, 200 registros são carregados. Para alterar o número padrão de registros a serem carregados, use o **[!UICONTROL Configure list]** no canto inferior direito da lista. Na janela de configuração da lista, clique em **[!UICONTROL Advanced parameters]** (canto inferior esquerdo) e altere o número de linhas que serão recuperadas.
+Para carregar e exibir registros adicionais, clique em **[!UICONTROL Continue loading]**. Por padrão, 200 registros são carregados. Para alterar o número padrão de registros a serem carregados, use o ícone **[!UICONTROL Configure list]** no canto inferior direito da lista. Na janela de configuração da lista, clique em **[!UICONTROL Advanced parameters]** (canto inferior esquerdo) e altere o número de linhas que serão recuperadas.
 
 Para carregar todos os registros, clique com o botão direito do mouse na lista e selecione **[!UICONTROL Load all]**.
 
@@ -59,7 +59,7 @@ Para carregar todos os registros, clique com o botão direito do mouse na lista 
 
 Para cada lista, a configuração de coluna interna pode ser adaptada para exibir mais informações ou ocultar colunas não usadas.
 
-Quando os dados estiverem visíveis nos detalhes de um registro, clique com o botão direito do mouse e selecione **[!UICONTROL Add in the list]**.
+Quando os dados estiverem visíveis nos detalhes de um registro, clique com o botão direito do mouse no campo e selecione **[!UICONTROL Add in the list]**.
 
 ![Adicionar um campo à lista](assets/add-in-the-list.png)
 
@@ -69,15 +69,15 @@ A coluna é adicionada à direita das colunas existentes.
 
 Você também pode usar a tela de configuração da lista para adicionar e remover colunas:
 
-1. Em uma lista de registros, clique em **[!UICONTROL Configure list]** ícone na seção inferior direita.
-1. Clique duas vezes nos campos a serem adicionados na **[!UICONTROL Available fields]** lista: elas são adicionadas à **[!UICONTROL Output columns]** lista.
+1. Em uma lista de registros, clique no ícone **[!UICONTROL Configure list]** na seção inferior direita.
+1. Clique duas vezes nos campos a serem adicionados na lista **[!UICONTROL Available fields]**: eles são adicionados à lista **[!UICONTROL Output columns]**.
 
-   ![Tela de configuração de lista](assets/list-config-screen.png)
+   ![Tela de configuração da lista](assets/list-config-screen.png)
 
 
    >[!NOTE]
    >
-   >Por padrão, campos avançados não são exibidos. Para exibi-los, clique no link **Exibir campos avançados** na seção inferior direita da lista de campos disponíveis.
+   >Por padrão, campos avançados não são exibidos. Para exibi-los, clique no ícone **Exibir campos avançados**, na seção inferior direita da lista de campos disponíveis.
    >
    >Os campos são identificados por ícones específicos: SQL fields, linked tables, calculated fields, etc. Para cada campo selecionado, a descrição é exibida abaixo da lista de campos disponíveis.
    >
@@ -86,9 +86,9 @@ Você também pode usar a tela de configuração da lista para adicionar e remov
 
 1. Clique em **[!UICONTROL OK]** para confirmar a configuração e exibir o resultado.
 
-Se precisar remover uma coluna, selecione-a e clique no link **Lixeira** ícone.
+Se precisar remover uma coluna, selecione-a e clique no ícone **Lixeira**.
 
-Você pode usar o **[!UICONTROL Distribution of values]** ícone para exibir a repartição de valores para o campo selecionado na pasta atual.
+Você pode usar o ícone **[!UICONTROL Distribution of values]** para exibir a repartição de valores para o campo selecionado na pasta atual.
 
 ![](assets/value-distribution.png)
 
@@ -99,8 +99,8 @@ Você pode usar o **[!UICONTROL Distribution of values]** ícone para exibir a r
 
 Para criar uma coluna, siga estas etapas:
 
-1. Em uma lista de registros, clique em **[!UICONTROL Configure list]** ícone na seção inferior direita.
-1. Clique em **[!UICONTROL Add]** para exibir um novo campo na lista.
+1. Em uma lista de registros, clique no ícone **[!UICONTROL Configure list]** na seção inferior direita.
+1. Clique no ícone **[!UICONTROL Add]** para exibir um novo campo na lista.
 1. Configure o campo a ser adicionado na coluna.
 
 
@@ -168,68 +168,68 @@ A lista de valores aparece como uma lista suspensa na qual você pode selecionar
 
 Os valores desse tipo de campo são definidos e a administração geral desses campos (adição/exclusão de um valor) é realizada por meio do nó **[!UICONTROL Administration > Platform > Enumerations]** da árvore.
 
-![Listas discriminadas de acesso](assets/enumerations-menu.png)
+![Enumerações de acesso](assets/enumerations-menu.png)
 
 ### Tipos de enumerações {#types-of-enum}
 
-As enumerações são armazenadas no **[!UICONTROL Administration > Platform > Enumerations]** pasta do explorador.
+Enumerações são armazenadas na pasta **[!UICONTROL Administration > Platform > Enumerations]** do explorador.
 
 Eles podem ser: Aberto, Sistema, Emoticon ou Fechado.
 
-* Um **Abertura** a lista discriminada permite que os usuários adicionem novos valores diretamente nos campos com base nessa lista discriminada.
-* A **Fechado** lista discriminada tem uma lista fixa de valores que só podem ser modificados **[!UICONTROL Administration > Platform > Enumerations]** pasta do explorador.
-* Um **Emoticon** a lista discriminada é usada para atualizar a lista de emoticons. Saiba mais
-* A **Sistema** a lista discriminada está associada aos campos do sistema e vem com um nome Interno.
+* Uma lista discriminada **Aberta** permite que os usuários adicionem novos valores diretamente nos campos com base nessa lista discriminada.
+* Uma enumeração **Closed** tem uma lista fixa de valores que só podem ser modificados na pasta **[!UICONTROL Administration > Platform > Enumerations]** do explorador.
+* Uma lista discriminada **Emoticon** é usada para atualizar a lista de emoticons. Saiba mais
+* Uma enumeração **System** está associada a campos do sistema e vem com um nome Interno.
 
-Para **Abertura** e **Fechado** enumerações, opções específicas estão disponíveis:
+Para as enumerações **Abertas** e **Fechadas**, opções específicas estão disponíveis:
 
-* **Lista discriminada simples** é o tipo padrão padrão.
-* **Limpeza de alias** enumeração é usada para harmonizar os valores de enumeração armazenados no banco de dados. [Saiba mais](#alias-cleansing)
-* **Reservado para compartimentalização** é uma opção que permite vincular valores de cubo a essa enumeração. [Saiba mais](../reporting/gs-cubes.md)
+* **Enumeração simples** é o tipo padrão padrão.
+* A enumeração **Limpeza de alias** é usada para harmonizar os valores de enumeração armazenados no banco de dados. [Saiba mais](#alias-cleansing)
+* **Reservado para compartimentalização** é uma opção que permite vincular valores de cubo a esta enumeração. [Saiba mais](../reporting/gs-cubes.md)
 
 
 ### Limpeza de alias {#alias-cleansing}
 
-Nos campos de enumeração, é possível selecionar um valor ou inserir um valor personalizado que não está disponível na lista suspensa. Os valores personalizados podem ser adicionados aos valores de enumerações existentes, como um novo - nesse caso, o **[!UICONTROL Open]** deve ser selecionada. Esses valores personalizados podem ser limpos usando recursos de limpeza de alias. Por exemplo, se um usuário digitar `Adob` em vez de `Adobe`, o processo de limpeza de alias pode substituí-lo automaticamente pelo termo correto.
+Nos campos de enumeração, é possível selecionar um valor ou inserir um valor personalizado que não está disponível na lista suspensa. Valores personalizados podem ser adicionados aos valores de enumerações existentes, como um novo; nesse caso, a opção **[!UICONTROL Open]** deve ser selecionada. Esses valores personalizados podem ser limpos usando recursos de limpeza de alias. Por exemplo, se um usuário inserir `Adob` em vez de `Adobe`, o processo de limpeza de alias poderá substituí-lo automaticamente pelo termo correto.
 
 >[!CAUTION]
 >
 >Limpeza de dados é um processo crítico que afeta os dados no banco de dados. O Adobe Campaign realiza atualizações de dados em massa, que podem levar à exclusão de alguns valores. Portanto, essa operação é reservada para usuários especialistas.
 
-Ativar o **[!UICONTROL Alias cleansing]** opção para usar recursos de limpeza de dados para uma enumeração. Quando essa opção é selecionada, a guia **[!UICONTROL Alias]** é exibida na parte inferior da janela.
+Habilite a opção **[!UICONTROL Alias cleansing]** para usar recursos de limpeza de dados para uma enumeração. Quando essa opção é selecionada, a guia **[!UICONTROL Alias]** é exibida na parte inferior da janela.
 
-Quando um usuário insere um valor que não existe em uma lista discriminada Alias cleansing, ele é adicionado à **Valores** lista. Você pode [criar aliases a partir desses valores](#convert-to-alias)ou [criar novos aliases do zero](#create-alias).
+Quando um usuário insere um valor que não existe em uma lista discriminada Alias cleansing, ele é adicionado à lista **Valores**. Você pode [criar aliases desses valores](#convert-to-alias) ou [criar novos aliases do zero](#create-alias).
 
 #### Criar um alias{#create-alias}
 
 Para criar um alias, siga estas etapas:
 
-1. Clique em **[!UICONTROL Add]** botão do **[!UICONTROL Alias]** guia.
+1. Clique no botão **[!UICONTROL Add]** da guia **[!UICONTROL Alias]**.
 1. Insira o alias que você deseja converter e selecione o valor a ser aplicado na lista suspensa.
 
    ![Criar um novo alias](assets/new-alias.png)
 
 1. Clique em **[!UICONTROL Ok]** e confirme.
 
-1. Salve as alterações. A substituição de valores é executada pela variável **Limpeza de alias** fluxo de trabalho que é executado todas as noites. Consulte [Executar limpeza de dados](#running-data-cleansing).
+1. Salve as alterações. A substituição de valores é executada pelo fluxo de trabalho **Limpeza de alias**, que é executado todas as noites. Consulte [Executar limpeza de dados](#running-data-cleansing).
 
-Para todos os campos baseados nesta lista discriminada, quando um usuário insere o valor **Adobe** em um campo &quot;company&quot; (no console do cliente do Adobe Campaign, em um formulário web), ele é substituído automaticamente pelo valor **Adobe**.
+Para todos os campos baseados nesta enumeração, quando um usuário insere o valor **Adobe** em um campo &quot;empresa&quot; (no console do cliente Adobe Campaign, em um formulário web), ele é substituído automaticamente pelo valor **Adobe**.
 
 #### Converter um valor incorreto em um alias{#convert-to-alias}
 
 Você também pode converter um valor de enumeração existente em um alias. Para fazer isso:
 
-1. Na lista de valores de uma enumeração, clique com o botão direito do mouse e navegue até **[!UICONTROL Actions... > Convert values into aliases...]**.
+1. Na lista de valores de uma enumeração, clique com o botão direito do mouse e procure **[!UICONTROL Actions... > Convert values into aliases...]**.
 
    ![Converter um valor em um alias](assets/convert-into-aliases.png)
 
 1. Selecione os valores a serem convertidos em aliases e clique em **[!UICONTROL Next]**.
 1. Clique em **[!UICONTROL Start]** para executar a conversão.
 
-   Quando a execução for concluída, os aliases serão adicionados à lista, no **Alias** guia. Você pode associar um valor correto para substituir entradas incorretas. Para fazer isso:
+   Quando a execução for concluída, os aliases serão adicionados à lista, na guia **Alias**. Você pode associar um valor correto para substituir entradas incorretas. Para fazer isso:
 
 1. Selecione um valor a ser limpo.
-1. Clique em **Detalhe...** botão.
+1. Clique no botão **Detail...**.
 1. Selecione o novo valor na lista suspensa.
 
    ![Criar um novo alias](assets/define-new-alias.png)
@@ -237,13 +237,13 @@ Você também pode converter um valor de enumeração existente em um alias. Par
 
 >[!NOTE]
 >
->É possível rastrear as ocorrências de um alias no **[!UICONTROL Hits]** na **[!UICONTROL Alias]** subguia. Ele pode exibir o número de vezes que esse valor foi inserido.  [Saiba mais](#calculate-entry-occurrences).
+>Você pode rastrear as ocorrências de um alias na coluna **[!UICONTROL Hits]** na subguia **[!UICONTROL Alias]**. Ele pode exibir o número de vezes que esse valor foi inserido.  [Saiba mais](#calculate-entry-occurrences).
 
 #### Executar limpeza de dados {#running-data-cleansing}
 
 A limpeza de dados é realizada pelo workflow técnico **[!UICONTROL Alias cleansing]**. É executado diariamente por padrão.
 
-A limpeza também pode ser acionada por meio da **[!UICONTROL Cleanse values...]** link.
+A limpeza também pode ser acionada por meio do link **[!UICONTROL Cleanse values...]**.
 
 O link **[!UICONTROL Advanced parameters...]** permite definir a data a partir da qual os valores coletados são considerados.
 
@@ -251,14 +251,14 @@ Clique no botão **[!UICONTROL Start]** para executar a limpeza de dados.
 
 ##### Monitorar ocorrências {#calculate-entry-occurrences}
 
-A variável **[!UICONTROL Alias]** subguia de uma enumeração pode exibir o número de ocorrências de um alias entre todos os valores inseridos. Essas informações são uma estimativa e serão exibidas na coluna **[!UICONTROL Hits]**.
+A subguia **[!UICONTROL Alias]** de uma enumeração pode exibir o número de ocorrências de um alias entre todos os valores inseridos. Essas informações são uma estimativa e serão exibidas na coluna **[!UICONTROL Hits]**.
 
 >[!CAUTION]
 >
 >O cálculo das ocorrências de entrada de alias pode demorar muito.
 >
 
-Você pode executar o cálculo de ocorrências manualmente pelo link **[!UICONTROL Cleanse values...]**. Para fazer isso, clique no link **[!UICONTROL Advanced parameters...]** vincule e selecione opções.
+Você pode executar o cálculo de ocorrências manualmente pelo link **[!UICONTROL Cleanse values...]**. Para fazer isso, clique no link **[!UICONTROL Advanced parameters...]** e selecione a(s) opção(ões).
 
 * **[!UICONTROL Update the number of alias hits]**: permite atualizar as ocorrências já calculadas, com base na data inserida.
 * **[!UICONTROL Recalculate the number of alias hits from the start]**: permite que você execute o cálculo em toda a plataforma do Adobe Campaign.

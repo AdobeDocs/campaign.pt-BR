@@ -99,7 +99,7 @@ ht-degree: 99%
    + [Gerenciar assinaturas](start/subscriptions.md)
 + Gestão de conteúdo {#content}
    + [Criar aplicativos e formulários Web](dev/webapps.md)
-+ Automação e workflows {#automation}
++ Automação e fluxos de trabalho {#automation}
    + [Guia de automação de campanha >](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/home)
 + Gerenciamento de privacidade e segurança {#privacy}
    + [Gerenciar solicitações de privacidade](start/privacy.md)

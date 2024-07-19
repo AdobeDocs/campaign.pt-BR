@@ -16,7 +16,7 @@ ht-degree: 48%
 
 Perfis são contatos armazenados no banco de dados do Campaign.
 
-No Adobe Campaign, **recipients** são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.). Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
+No Adobe Campaign, **recipients** são os perfis padrão direcionados para envio de entregas (emails, SMS etc.). Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
 
 Saiba como importar, atualizar e gerenciar perfis e públicos [nesta seção](../audiences/gs-audiences.md).
 
@@ -24,19 +24,19 @@ Saiba como importar, atualizar e gerenciar perfis e públicos [nesta seção](..
 
 Uma lista é um conjunto estático de contatos que pode ser direcionado em ações de entrega ou atualizado durante uma importação ou outra ação de fluxo de trabalho. Por exemplo, uma população extraída do banco de dados por meio de uma consulta pode ser armazenada como uma lista.
 
-Saiba como criar e gerenciar listas no [esta página](../audiences/create-audiences.md).
+Saiba como criar e gerenciar listas em [esta página](../audiences/create-audiences.md).
 
 ## Filtrar o banco de dados{#filter-the-database}
 
 A configuração de filtro permite selecionar dados de uma lista **[!UICONTROL dynamically]**: quando os dados são modificados, os dados filtrados são atualizados. Você pode criar seus próprios filtros ou usar os filtros integrados para definir um público-alvo.
 
-Saiba como criar e gerenciar filtros no [esta página](../audiences/create-filters.md).
+Saiba como criar e gerenciar filtros em [esta página](../audiences/create-filters.md).
 
 ## Criar um público-alvo em um fluxo de trabalho
 
 O direcionamento pode ser criado por meio de uma combinação de queries em uma sequência gráfica em um workflow. Você pode criar públicos-alvo que serão direcionados de acordo com suas necessidades. Para exibir o editor de workflow, clique na guia **[!UICONTROL Targeting and workflows]** no painel de campanha.
 
-Saiba como criar um público-alvo em um fluxo de trabalho de campanha no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR){target="_blank"}.
+Saiba como criar uma audiência em um fluxo de trabalho de campanha em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR){target="_blank"}.
 
 
 ## Perfis ativos {#active-profiles}
@@ -60,12 +60,12 @@ As seguintes medidas de proteção e limitações se aplicam:
 
 O Adobe Campaign é uma ferramenta poderosa para coletar e processar grandes volumes de dados, incluindo informações pessoais e dados confidenciais. O Adobe Campaign permite coletar dados, inclusive informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus destinatários.
 
-Saiba como gerenciar a privacidade e o consentimento no [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR){target="_blank"}.
+Saiba como gerenciar a privacidade e o consentimento na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR){target="_blank"}.
 
 **Tópicos relacionados**
 
 * [Projetar e executar um fluxo de trabalho específico da campanha](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html){target="_blank"}
 
-* [Saiba como selecionar o público de uma campanha](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR){target="_blank"}
+* [Saiba como selecionar a audiência de uma campanha](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR){target="_blank"}
 
-* [Introdução a workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target="_blank"}
+* [Introdução aos fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target="_blank"}

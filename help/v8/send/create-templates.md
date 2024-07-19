@@ -21,8 +21,8 @@ Um modelo pode incluir:
 
 * Tipologias
 * Endereços de remetente e de resposta
-* Básico [blocos de personalização](../send/personalization-blocks.md)
-* Links para [mirror pages](../send/mirror-page.md) e links de unsubscription
+* [blocos de personalização](../send/personalization-blocks.md) básicos
+* Links para [mirror pages](../send/mirror-page.md) e links para unsubscription
 * Conteúdo, logotipo da empresa ou assinatura
 * Outras propriedades de entrega, como validade de recurso, parâmetros de nova tentativa ou configurações de quarentena.
 
@@ -41,7 +41,7 @@ A maneira mais fácil de criar um modelo de entrega é duplicar e personalizar u
 
 Para duplicar um modelo de entrega, siga as etapas abaixo:
 
-1. Navegue até **[!UICONTROL Resources > Templates > Delivery templates]** no explorador do Adobe Campaign.
+1. Navegue até **[!UICONTROL Resources > Templates > Delivery templates]** no Adobe Campaign Explorer.
 1. Selecione um template do delivery incorporado. Os modelos integrados estão em negrito na lista.
 1. Clique com o botão direito do mouse e selecione **[!UICONTROL Duplicate]**.
 
@@ -61,13 +61,13 @@ Um delivery pode ser convertido em um template para novas ações de delivery re
 
 Para converter uma entrega em um modelo, siga as etapas abaixo:
 
-1. Selecione o delivery na lista de delivery, acessível por meio de **[!UICONTROL Campaign management]** nó do explorador do Campaign.
+1. Selecione a entrega na lista de entrega, acessível por meio do nó **[!UICONTROL Campaign management]** do explorador do Campaign.
 
 1. Clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Save as template...]**.
 
    ![](assets/save-as-template.png)
 
-1. Edite as propriedades do delivery e selecione a pasta onde o novo modelo deve ser salvo (na caixa **[!UICONTROL Folder]** ) e a pasta onde os deliveries criados com base neste template devem ser criados (no campo **[!UICONTROL Execution folder]** campo).
+1. Edite as propriedades do delivery e selecione a pasta onde o novo modelo deve ser salvo (no campo **[!UICONTROL Folder]**), e a pasta onde os deliveries criados com base nesse modelo devem ser criados (no campo **[!UICONTROL Execution folder]**).
 
    ![](assets/template-select-folders.png)
 
@@ -79,14 +79,14 @@ Para converter uma entrega em um modelo, siga as etapas abaixo:
 
 Para configurar um modelo de entrega do zero, siga as etapas abaixo:
 
-1. Navegue até o **Recursos** no explorador do Campaign e selecione **Modelos** depois **Modelos de entrega**.
+1. Navegue até a pasta **Recursos** no explorador do Campaign e selecione **Modelos** e depois **Modelos de entrega**.
 1. Clique em **New** na barra de ferramentas para criar um novo template de entrega.
-1. Defina o **Rótulo** e a variável **Nome interno** da pasta.
+1. Defina o **Rótulo** e o **Nome interno** da pasta.
 1. Salve seu template e abra-o novamente.
-1. No **Propriedades** adapte as configurações.
+1. No botão **Propriedades**, adapte as configurações.
 1. Na guia **General**, confirme ou altere os locais selecionados nos menus suspensos **Execution folder**, **Folder**, e **Routing.**
 1. Complete a categoria **Email parameters** com o assunto do email e o público alvo.
-1. Adicione **conteúdo do HTML** para personalizar o template, é possível exibir um [link de mirror page](../send/mirror-page.md) e um link de unsubscription.
+1. Adicione seu **conteúdo de HTML** para personalizar seu modelo. Você pode exibir um [link de mirror page](../send/mirror-page.md) e um link de unsubscription.
 1. Selecione a guia **Preview.** No menu suspenso **Test personalization**, selecione **Destinatário** para visualizar seu template como o perfil escolhido.
 1. Clique em **Save**. Seu template está pronto para ser usado em uma entrega.
 
@@ -99,7 +99,7 @@ Para criar uma entrega com base em um modelo existente, selecione um modelo disp
 
 ![](assets/select-the-new-template.png)
 
-Se não conseguir ver o modelo, clique no link **[!UICONTROL Select link]** à direita do campo para navegar pelas pastas do Campaign.
+Se não conseguir ver o modelo, clique na pasta **[!UICONTROL Select link]** à direita do campo para procurar pastas do Campaign.
 
 ![](assets/browse-templates.png)
 

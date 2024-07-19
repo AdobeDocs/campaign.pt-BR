@@ -20,7 +20,7 @@ Use os recursos de análise de marketing para analisar e medir dados, calcular e
 
 É possível ampliar o recursos de exploração e análise do banco de dados e, ao mesmo tempo, facilitar para os usuários finais a configuração de relatórios e tabelas: basta selecionar um cubo existente (totalmente configurado) ao criar os relatórios ou as tabelas para processar cálculos, medidas e estatísticas.
 
-Os cubos são usados para gerar determinados relatórios internos, incluindo [relatórios do delivery](delivery-reports.md) (rastreamento de delivery, cliques, aberturas etc.).
+Os cubos são usados para gerar determinados relatórios internos, incluindo [relatórios do delivery](delivery-reports.md) (rastreamento de delivery, cliques, aberturas, etc.).
 
 Depois que tiverem sido criados e configurados, os cubos serão usados em caixas de query de relatório e aplicação web. Eles podem ser utilizados e manipulados dentro de tabelas dinâmicas.
 
@@ -52,7 +52,7 @@ Os termos específicos do trabalho com cubos estão listados abaixo.
 
 * **Cubo** - Um cubo é uma representação de informações multidimensionais: ele fornece estruturas projetadas para análise interativa de dados aos usuários finais.
 
-* **Tabela/esquema de fatos** - A tabela de fatos (ou schema de fatos) contém os dados brutos ou primários nos quais as análises serão baseadas. Trata-se principalmente de tabelas de grandes volumes (possivelmente com tabelas vinculadas) com cálculos potencialmente longos. Por exemplo, uma tabela de fatos pode ser: a tabela de broadlog, a tabela de compras, etc.
+* **Tabela/esquema de fatos** - A tabela de fatos (ou esquema de fatos) contém os dados brutos ou primários nos quais as análises serão baseadas. Trata-se principalmente de tabelas de grandes volumes (possivelmente com tabelas vinculadas) com cálculos potencialmente longos. Por exemplo, uma tabela de fatos pode ser: a tabela de broadlog, a tabela de compras, etc.
 
 * **Dimensão** - As dimensões permitem segmentar dados em grupos: uma vez criadas, as dimensões atuam como eixos de análise. Na maioria dos casos, para determinada dimensão, vários níveis serão definidos. Por exemplo, para uma dimensão temporal, os níveis serão meses, dias, horas, minutos e etc. Esse conjunto de níveis representa a hierarquia de dimensão e permite vários níveis de análise de dados.
 

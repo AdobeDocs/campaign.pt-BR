@@ -47,7 +47,7 @@ As regras de nomenclatura SQL são as seguintes:
 
 * tabela: concatenação do namespace e do nome do schema
 
-  No nosso exemplo, o nome da tabela é inserido por meio do elemento principal do schema na **sqltable** atributo:
+  Em nosso exemplo, o nome da tabela é inserido por meio do elemento principal do esquema no atributo **sqltable**:
 
   ```sql
   <element name="recipient" sqltable="CusRecipient">
@@ -55,7 +55,7 @@ As regras de nomenclatura SQL são as seguintes:
 
 * field: nome do elemento precedido por um prefixo definido de acordo com o tipo (&#39;i&#39; para inteiro, &#39;d&#39; para duplo, &#39;s&#39; para string, &#39;ts&#39; para datas etc.)
 
-  O nome do campo é inserido por meio da variável **sqlname** atributo para cada tipo **`<attribute>`** e **`<element>`**:
+  O nome do campo é inserido por meio do atributo **sqlname** para cada **`<attribute>`** e **`<element>`** digitados:
 
   ```sql
   <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -82,9 +82,9 @@ As restrições do campo SQL são as seguintes:
 
 ## Campos XML {#xml-fields}
 
-Por padrão, qualquer tipo **`<attribute>`** e **`<element>`** O elemento é mapeado em um campo SQL da tabela de esquema de dados. No entanto, você pode fazer referência a esse campo em XML, em vez de SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do schema.
+Por padrão, qualquer elemento **`<attribute>`** e **`<element>`** digitado é mapeado em um campo SQL da tabela de esquema de dados. No entanto, você pode fazer referência a esse campo em XML, em vez de SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do schema.
 
-Para preencher um campo em XML, é necessário adicionar o **xml** com o valor &quot;true&quot; ao elemento em questão.
+Para preencher um campo em XML, você deve adicionar o atributo **xml** com o valor &quot;true&quot; ao elemento relacionado.
 
 **Exemplos**
 

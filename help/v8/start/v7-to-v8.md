@@ -27,7 +27,7 @@ Como usuário do [!DNL Campaign Classic] v7, você não deve esperar nenhuma gra
 
 O Adobe Campaign v8 está disponível como um **Managed Cloud Service**.
 
-O Adobe Campaign Managed Cloud Services fornece uma plataforma de serviços gerenciados na nuvem para criar experiências para clientes entre canais, além de um ambiente para orquestração visual de campanhas, gestão de interações em tempo real e execução entre canais. Saiba mais sobre os Cloud Service gerenciados pelo Campaign no [página de descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+O Adobe Campaign Managed Cloud Services fornece uma plataforma de serviços gerenciados na nuvem para criar experiências para clientes entre canais, além de um ambiente para orquestração visual de campanhas, gestão de interações em tempo real e execução entre canais. Saiba mais sobre os Cloud Service gerenciados pelo Campaign na [página de descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 A nova oferta combina os melhores serviços do setor com uma supervisão proativa e alertas oportunos, concentrando-se em três áreas:
 
@@ -42,31 +42,31 @@ Como usuário do [!DNL Campaign Classic], observe que a maioria dos recursos do 
 
 ## Arquitetura híbrida {#hybrid-archi}
 
-O Campaign v8 depende de um **arquitetura híbrida**. Se estiver fazendo a transição do Campaign Classic v7, observe que todos os deliveries passam pelo servidor mid-sourcing.
+O Campaign v8 depende de uma **arquitetura híbrida**. Se estiver fazendo a transição do Campaign Classic v7, observe que todos os deliveries passam pelo servidor mid-sourcing.
 
 Consequentemente:
 
-* O roteamento interno é **não possível** no Campaign v8 e a conta externa foi desativada de acordo,
+* O roteamento interno **não é possível** no Campaign v8 e a conta externa foi desabilitada de acordo.
 * O status dos deliveries não é atualizado instantaneamente - Um processo técnico é executado na instância de Marketing, o que atualizará os status do delivery em tempo hábil.
 
 
-Saiba mais sobre como enviar provas de mensagem transacional ao fazer a transição do v7 em [esta página](../send/transactional-template.md#transition-from-v7).
+Saiba mais sobre como enviar provas de mensagem transacional ao fazer a transição do v7 nesta [página](../send/transactional-template.md#transition-from-v7).
 
 
 ## [!DNL Campaign] e [!DNL Snowflake] {#ac-gs-snowflake}
 
-No seu [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] O v8 funciona com dois bancos de dados: um local [!DNL Campaign] para a interface do usuário de mensagens em tempo real e consultas unitárias e gravação por meio de APIs, além de uma nuvem [!DNL Snowflake] banco de dados para execução de campanha, consultas em lote e execução de workflow.
+Em sua implantação [Corporativa (FFDA)](../architecture/enterprise-deployment.md), o [!DNL Adobe Campaign] v8 funciona com dois bancos de dados: um banco de dados [!DNL Campaign] local para a interface de mensagens em tempo real, consultas unitárias e gravações por meio de APIs, e um banco de dados [!DNL Snowflake] em nuvem para execução de campanha, consultas em lote e execução de fluxo de trabalho.
 
 O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova arquitetura, a implantação corporativa (FFDA) do Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 
-Saiba mais sobre [!DNL Campaign] Arquitetura do v8 em [esta página](../architecture/architecture.md).
+Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../architecture/architecture.md).
 
 
 ## Usar sua Adobe ID para se conectar ao Campaign{#adobe-id}
 
 Os usuários do Campaign se conectam apenas por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos da Adobe associados a uma única conta, para todas as soluções da Adobe Experience Cloud.
 
-Saiba como se conectar a [!DNL Campaign] in [esta página](connect.md).
+Saiba como se conectar a [!DNL Campaign] em [esta página](connect.md).
 
 ## Analisar dados com cubos{#adobe-reporting}
 

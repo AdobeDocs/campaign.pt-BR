@@ -20,7 +20,7 @@ As etapas para gerar o arquivo são:
 
 1. Criar a entrega
 
-   Crie um delivery de correspondência direta com base no template. É possível duplicar e configurar o **[!UICONTROL Deliver by direct mail (paper)]** modelo incorporado.
+   Crie um delivery de correspondência direta com base no template. Você pode duplicar e configurar o modelo interno **[!UICONTROL Deliver by direct mail (paper)]**.
 
    Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html){target="_blank"}
 
@@ -50,8 +50,8 @@ As etapas para gerar o arquivo são:
 
 1. Iniciar a entrega
 
-   Depois de validar o arquivo de extração, clique em **Confirmar delivery** uma mensagem de confirmação permite iniciar o delivery.
+   Depois de validar o arquivo de extração, clique em **Confirmar entrega**. Uma mensagem de confirmação permitirá iniciar a entrega.
 
    A confirmação inicia a extração de dados no arquivo especificado.
 
-   No contexto de uma campanha de marketing, quando todas as aprovações foram concedidas, os arquivos de extração são criados por um workflow especial que, em uma configuração padrão, começa automaticamente quando um delivery de correspondência direta está com extração pendente. Saiba mais em [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR){target="_blank"}.
+   No contexto de uma campanha de marketing, quando todas as aprovações foram concedidas, os arquivos de extração são criados por um workflow especial que, em uma configuração padrão, começa automaticamente quando um delivery de correspondência direta está com extração pendente. Saiba mais em [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR){target="_blank"}.

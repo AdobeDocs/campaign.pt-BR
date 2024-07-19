@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Mecanismo de preparo da API do Campaign
 
-No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), chamadas unitárias com explosão não são recomendadas em relação a desempenhos (latência e simultaneidade). A operação em lote é sempre preferível. Para melhorar o desempenho, as APIs de assimilação são redirecionadas para o banco de dados local.
+No contexto de uma [implantação corporativa (FFDA)](enterprise-deployment.md), a geração de chamadas unitárias não é recomendada em relação a desempenhos (latência e simultaneidade). A operação em lote é sempre preferível. Para melhorar o desempenho, as APIs de assimilação são redirecionadas para o banco de dados local.
 
 O recurso de preparo do Campaign está habilitado por padrão em alguns esquemas integrados. Também podemos ativá-la em qualquer esquema personalizado. Mecanismo de preparo em poucas palavras:
 
@@ -28,7 +28,7 @@ As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se bene
 
 >[!CAUTION]
 >
->* Com esse novo mecanismo, a sincronização de dados para recusa de canal, assinaturas, cancelamentos de assinaturas ou registro móvel agora é **assíncrono**.
+>* Com esse novo mecanismo, a sincronização de dados para recusa de canal, assinaturas, cancelamento de assinatura ou registro móvel agora é **assíncrona**.
 >
 >* O preparo se aplica somente a esquemas armazenados no banco de dados da nuvem. Não ative o preparo em esquemas replicados. Não ative a Preparação em esquemas locais. Não ativar a Preparação em um esquema em etapas
 >
@@ -52,11 +52,11 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
    </srcSchema>
    ```
 
-   Saiba mais sobre a criação de esquema personalizado no [esta página](../dev/create-schema.md).
+   Saiba mais sobre a criação de esquema personalizado em [esta página](../dev/create-schema.md).
 
 1. Salvar e atualizar a estrutura do banco de dados.  [Saiba mais](../dev/update-database-structure.md)
 
-1. Ative o mecanismo de preparo na definição do esquema adicionando o **autoStg=&quot;true&quot;** parâmetro.
+1. Habilite o mecanismo de preparo na definição do esquema adicionando o parâmetro **autoStg=&quot;true&quot;**.
 
    ```
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"

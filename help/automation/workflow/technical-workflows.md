@@ -41,9 +41,9 @@ Observe que os workflows técnicos só podem ser iniciados e modificados por ope
 
 >[!NOTE]
 >
->Os workflows técnicos relacionados ao complemento Centro de Mensagens estão disponíveis por padrão no **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** nó.
+>Os fluxos de trabalho técnicos relacionados ao complemento Centro de Mensagens estão disponíveis por padrão no nó **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**.
 
-Saiba como monitorar workflows técnicos neste [seção dedicada](monitor-technical-workflows.md).
+Saiba como monitorar workflows técnicos nesta [seção dedicada](monitor-technical-workflows.md).
 
 
 ## Lista de workflows técnicos {#list-technical-workflows}
@@ -64,7 +64,7 @@ Saiba como monitorar workflows técnicos neste [seção dedicada](monitor-techni
 | **Limpeza de evento** (webAnalyticsPurgeWebEvents) | Conectores de análise da Web | Esse fluxo de trabalho permite excluir todos os eventos do campo de banco de dados de acordo com o período configurado no campo Vida útil. |
 | **Exportar audiências para a Adobe Experience Cloud** (exportSharedAudience) | Integração com a Adobe Experience Cloud | Esse fluxo de trabalho exporta públicos-alvo como públicos-alvo/segmentos compartilhados. Esses públicos-alvo podem ser usados nas diferentes soluções da Adobe Experience Cloud que você usa. |
 | **Previsão** (forecasting) | Entrega | Esse fluxo de trabalho analisa as entregas salvas no calendário provisional (cria logs provisionais). É acionado todos os dias à 1h por padrão. |
-| **Cálculo agregado completo (propositionrcp cube)** (agg_nmspropositionrcp_full) | Dispositivo de oferta (interação) | Esse fluxo de trabalho atualiza o agregado completo do cubo de apresentação da oferta. É acionado todos os dias às 6h por padrão. Esse agregado captura as seguintes dimensões: canal, entrega, oferta de marketing e data. O cubo de apresentação da oferta é usado para gerar relatórios com base em ofertas. Saiba mais sobre cubos em  [nesta seção](../../v8/reporting/gs-cubes.md). |
+| **Cálculo agregado completo (propositionrcp cube)** (agg_nmspropositionrcp_full) | Dispositivo de oferta (interação) | Esse fluxo de trabalho atualiza o agregado completo do cubo de apresentação da oferta. É acionado todos os dias às 6h por padrão. Esse agregado captura as seguintes dimensões: canal, entrega, oferta de marketing e data. O cubo de apresentação da oferta é usado para gerar relatórios com base em ofertas. Saiba mais sobre cubos em [esta seção](../../v8/reporting/gs-cubes.md). |
 | **Identificação de contatos convertidos** (webAnalyticsFindConverted) | Conectores de análise da Web | Esse fluxo de trabalho indexa os visitantes do site que concluíram sua compra após uma campanha de remarketing. Os dados recuperados por esse fluxo de trabalho podem ser acessados no relatório de eficiência de remarketing (consulte esta página). |
 | **Importar audiências da Adobe Experience Cloud** (importSharedAudience) | Integração com a Adobe Experience Cloud | Esse fluxo de trabalho permite importar públicos-alvo/segmentos de diferentes soluções da Adobe Experience Cloud para o Adobe Campaign. |
 | **Processos de entregas em campanhas** (deliveryMgt) | Instalado por padrão | Esse fluxo de trabalho aciona as entregas aprovadas e inicia o pós-processamento no provedor de serviços para uma entrega externa. Também envia notificações e lembretes de aprovação. |

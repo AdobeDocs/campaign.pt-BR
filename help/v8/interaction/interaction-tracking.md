@@ -16,7 +16,7 @@ ht-degree: 75%
 
 >[!NOTE]
 >
->Estas funcionalidades só são visíveis em linha e apenas para os **Gerentes de delivery**.
+>Estas funcionalidades só são visíveis online e somente para os **Gerentes de entrega**.
 
 ## Histórico da apresentação da oferta{#offer-proposition-history}
 

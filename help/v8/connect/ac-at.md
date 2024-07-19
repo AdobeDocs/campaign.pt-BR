@@ -21,7 +21,7 @@ Essa integração ajuda a implementar os casos de uso da seguinte maneira: quand
 >[!NOTE]
 >* A integração só oferece suporte a imagens estáticas. Os outros tipos de conteúdo não podem ser personalizados.
 >
->* Como usuário do Managed Cloud Service, [Adobe de contato](../start/campaign-faq.md#support) para implementar acionadores de Experience Cloud com o Campaign.
+>* Como usuário do Managed Cloud Service, [contate o Adobe](../start/campaign-faq.md#support) para implementar os acionadores de Experience Cloud com o Campaign.
 
 Os seguintes tipos de dados podem ser usados pelo Adobe Target:
 
@@ -31,7 +31,7 @@ Os seguintes tipos de dados podem ser usados pelo Adobe Target:
 
 ## Inserir um conteúdo dinâmico
 
-No exemplo abaixo, você aprenderá a integrar **uma oferta dinâmica** do Adobe Target para um email do Adobe Campaign.
+No exemplo abaixo, você aprenderá a integrar **uma oferta dinâmica** do Adobe Target a um email do Adobe Campaign.
 
 Queremos criar uma mensagem com uma imagem que será alterada dinamicamente de acordo com o país do recipient. Os dados são enviados com cada solicitação mbox e dependem do endereço IP do visitante.
 
@@ -69,12 +69,12 @@ No Adobe Campaign, há duas maneiras de inserir uma imagem dinâmica do Target e
 
 Em seguida, você pode definir os parâmetros de imagem:
 
-* A variável **[!UICONTROL Default image]** O URL de é a imagem que será exibida quando nenhuma das condições for satisfeita. Você também pode selecionar uma imagem da biblioteca de recursos.
-* A variável **[!UICONTROL Target location]** é o nome da localização da sua oferta dinâmica. Você terá que selecionar esse local na atividade do Adobe Target.
-* A variável **[!UICONTROL Landing Page]** permite redirecionar a imagem padrão para uma landing page padrão. Esse URL se aplica somente quando a imagem padrão é exibida no email final. É opcional.
-* A variável **[!UICONTROL Additional decision parameters]**  define o mapeamento entre os campos definidos nos segmentos do Adobe Target e os campos do Adobe Campaign. Os campos do Adobe Campaign usados devem ter sido especificados no rawbox. No nosso exemplo, adicionamos o campo País.
+* A URL de **[!UICONTROL Default image]** é a imagem que será exibida quando nenhuma das condições for satisfeita. Você também pode selecionar uma imagem da biblioteca de recursos.
+* O **[!UICONTROL Target location]** é o nome da localização da sua oferta dinâmica. Você terá que selecionar esse local na atividade do Adobe Target.
+* O **[!UICONTROL Landing Page]** permite redirecionar a imagem padrão para uma landing page padrão. Esse URL se aplica somente quando a imagem padrão é exibida no email final. É opcional.
+* O **[!UICONTROL Additional decision parameters]** define o mapeamento entre os campos definidos nos segmentos do Adobe Target e os campos do Adobe Campaign. Os campos do Adobe Campaign usados devem ter sido especificados no rawbox. No nosso exemplo, adicionamos o campo País.
 
-Se você usar permissões do Enterprise em suas configurações no Adobe Target, adicione a propriedade correspondente nesse campo. Saiba mais sobre as permissões do Target Enterprise em [Documentação do Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
+Se você usar permissões do Enterprise em suas configurações no Adobe Target, adicione a propriedade correspondente nesse campo. Saiba mais sobre as permissões do Target Enterprise em [documentação do Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
 ![](assets/target_13.png)
 
@@ -94,7 +94,7 @@ Em nosso caso, precisamos de duas ofertas de redirecionamento, a terceira (a pad
 
    ![](assets/target_6.png)
 
-1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte [Documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences){target="_blank"}.
+1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences){target="_blank"}.
 
 ### Criar públicos-alvo {#audiences-target}
 

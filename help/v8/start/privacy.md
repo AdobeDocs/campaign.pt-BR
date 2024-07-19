@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 96%
+source-wordcount: '942'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ A Adobe oferece ferramentas aos controladores de dados para criar e processar so
 
 Para gerenciar a solicitação de privacidade no Campaign, primeiro você deve [definir um namespace](#namespaces). Em seguida, será possível criar e gerenciar solicitações de privacidade. Para executar solicitações de privacidade, use a integração do **Adobe Privacy Service**. As solicitações de privacidade transmitidas pelo Privacy Service para todas as soluções da Adobe Experience Cloud são tratadas automaticamente pelo Campaign, por meio de um fluxo de trabalho dedicado. [Saiba mais](#create-privacy-request)
 
-Saiba mais sobre o **Direito de acesso** e a variável **Direito ao esquecimento** (solicitação de exclusão) em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#right-access-forgotten){target="_blank"}.
+Saiba mais sobre o **Direito de acesso** e o **Direito ao esquecimento** (solicitação de exclusão) na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#right-access-forgotten){target="_blank"}.
 
 <!--
 >[!NOTE]
@@ -109,7 +109,7 @@ O padrão para um nome de arquivo é: `<InstanceName>-<NamespaceId>-<Reconciliat
 
 >[!CAUTION]
 >
->Para enviar uma solicitação usando o tipo de namespace personalizado, utilize o [Método JSON](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=pt-BR#json){target="_blank"} and add the namespaceId to the request, or use the [API call](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=pt-BR#access-delete){target="_blank"} para fazer a solicitação.
+>Para enviar uma solicitação usando o tipo de namespace personalizado, utilize o [método JSON](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=pt-BR#json){target="_blank"} e adicione o namespaceId à solicitação, ou use a [Chamada de API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=pt-BR#access-delete){target="_blank"} para fazer a solicitação.
 >
 >Use somente a [Interface de privacidade](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=pt-BR#request-builder){target="_blank"} para enviar solicitações usando o tipo de namespace padrão.
 

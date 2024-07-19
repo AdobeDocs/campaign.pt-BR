@@ -18,31 +18,31 @@ ht-degree: 12%
 
 Use permissões em pastas para organizar e controlar o acesso aos dados do Campaign.
 
-O gerenciamento de pastas é detalhado em [esta página](../audiences/folders-and-views.md).
+O gerenciamento de pastas está detalhado em [esta página](../audiences/folders-and-views.md).
 
 Para editar permissões em uma pasta específica do Campaign, siga as etapas abaixo:
 
 1. Clique com o botão direito do mouse na pasta e selecione **[!UICONTROL Properties...]**.
-1. Navegue até o **[!UICONTROL Security]** para visualizar as autorizações nessa pasta.
+1. Navegue até a guia **[!UICONTROL Security]** para visualizar as autorizações nessa pasta.
 
    ![](assets/folder-permissions.png)
 
-* Para **autorizar um grupo ou um operador**, clique no link **[!UICONTROL Add]** e selecione o grupo ou operador para atribuir autorizações para essa pasta.
-* Para **proibir um grupo ou um operador**, clique em **[!UICONTROL Delete]** e selecione o grupo ou operador para remover a autorização para essa pasta.
-* Para **selecionar os direitos atribuídos a um grupo ou operador**, selecione o grupo ou operador, selecione os direitos de acesso que deseja conceder e desmarque os outros.
+* Para **autorizar um grupo ou operador**, clique no botão **[!UICONTROL Add]** e selecione o grupo ou operador para atribuir autorizações para esta pasta.
+* Para **proibir um grupo ou operador**, clique em **[!UICONTROL Delete]** e selecione o grupo ou operador para remover a autorização para esta pasta.
+* Para **selecionar os direitos atribuídos a um grupo ou a um operador**, selecione o grupo ou operador, selecione os direitos de acesso que deseja conceder e desmarque os outros.
 
 ## Propagar permissões {#propagate-permissions}
 
-Para propagar autorizações e direitos de acesso, selecione a **[!UICONTROL Propagate]** nas propriedades da pasta.
+Para propagar autorizações e direitos de acesso, selecione a opção **[!UICONTROL Propagate]** nas propriedades da pasta.
 
 As autorizações definidas nessa janela serão aplicadas a todas as subpastas do nó atual. Você sempre pode sobrecarregar essas autorizações para cada uma das subpastas.
 
 >[!NOTE]
 >
->Desmarcar a **[!UICONTROL Propagate]** A opção de uma pasta não a limpa para as subpastas: é necessário limpá-la explicitamente para cada uma das subpastas.
+>Desmarcar a opção **[!UICONTROL Propagate]** para uma pasta não a limpa para as subpastas: você deve limpá-la explicitamente para cada uma das subpastas.
 
 ## Conceder acesso a todos os operadores {#grant-access-to-all-operators}
 
-No **[!UICONTROL Security]** , selecione a **[!UICONTROL System folder]** para permitir acesso a todos os operadores, independentemente de suas permissões.
+Na guia **[!UICONTROL Security]**, selecione **[!UICONTROL System folder]** para permitir acesso a todos os operadores, independentemente de suas permissões.
 
 Se essa opção for desmarcada, você deverá adicionar explicitamente o operador (ou seu grupo) de volta à lista de autorizações para que ele tenha acesso.

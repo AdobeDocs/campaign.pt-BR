@@ -18,19 +18,19 @@ Perfis são contatos armazenados no banco de dados do Campaign, como clientes, a
 
 
 
-Um perfil é um registro na variável **nmsRecipient** tabela ou tabela externa que armazena todos os atributos do perfil, como nome, sobrenome, endereço de email, uma ID de cookie, ID do cliente, identificador móvel ou outras informações relevantes para um canal específico. Outras tabelas vinculadas à tabela de recipients contêm dados relacionados ao perfil, por exemplo, a tabela de logs do delivery, que contém registros de todos os deliveries enviados aos recipients. Saiba mais sobre perfis incorporados e tabelas de destinatários em [nesta seção](../dev/datamodel.md#ootb-profiles).
+Um perfil é um registro na tabela **nmsRecipient** ou uma tabela externa que armazena todos os atributos do perfil, como nome, sobrenome, endereço de email, uma ID de cookie, ID do cliente, identificador móvel ou outras informações relevantes para um canal específico. Outras tabelas vinculadas à tabela de recipients contêm dados relacionados ao perfil, por exemplo, a tabela de logs do delivery, que contém registros de todos os deliveries enviados aos recipients. Saiba mais sobre perfis e tabelas de destinatários internos em [esta seção](../dev/datamodel.md#ootb-profiles).
 
 ![](assets/recipients-in-explorer.png)
 
-No Adobe Campaign, **recipients** são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.).
+No Adobe Campaign, **recipients** são os perfis padrão direcionados para envio de entregas (emails, SMS etc.).
 
 Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
 
 Para preencher o Adobe Campaign com dados de perfil, você pode:
 
-* [importar arquivos de dados](../start/import.md) de uma fonte de dados externa, como um sistema CRM ou um arquivo simples
+* [importe arquivos de dados](../start/import.md) de uma fonte de dados externa, como um sistema CRM, ou um arquivo simples
 * [criar formulários web](../dev/webapps.md) para permitir que os clientes insiram suas próprias informações e criem seus próprios perfis
-* [mapear para um banco de dados externo](../connect/fda.md) onde os perfis são armazenados
+* [mapear para um banco de dados externo](../connect/fda.md) onde os perfis estão armazenados
 * insira os perfis manualmente no console do cliente, conforme abaixo:
 
 ![](assets/create-profile.png)

@@ -71,7 +71,7 @@ O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [
 
 1. Também é possível filtrar no campo **[!UICONTROL Workflow type]**:
 
-   * **[!UICONTROL Technical]** : Somente [workflows técnicos integrados](technical-workflows.md) e [workflows de gerenciamento de dados](targeting-workflows.md#data-management) são exibidos.
+   * **[!UICONTROL Technical]** : apenas [workflows técnicos internos](technical-workflows.md) e [workflows de gerenciamento de dados](targeting-workflows.md#data-management) são exibidos.
    * **[!UICONTROL Marketing]**: somente os workflows vinculados a uma campanha de marketing, conhecidos como [workflows da campanha](campaign-workflows.md), são exibidos.
 
 1. Para pesquisar um workflow específico por nome, também é possível usar o campo **[!UICONTROL Workflow name filter]**.
@@ -149,7 +149,7 @@ Nesse caso, muitos usuários estão reclamando do desempenho do workflow. Você 
 
 1. Vá para **[!UICONTROL Monitoring]** e clique no link **[!UICONTROL Workflows]** para exibir a página **[!UICONTROL Campaign Workflow HeatMap]**.
 1. Defina o filtro **[!UICONTROL Min duration]** como 5 minutos.
-1. Defina o **[!UICONTROL Workflow type]** filtrar para **[!UICONTROL Marketing]**.
+1. Defina o filtro **[!UICONTROL Workflow type]** como **[!UICONTROL Marketing]**.
 1. Na grade do HeatMap, observe o seguinte:
 
    ![](assets/wkf_monitoring_without.png)

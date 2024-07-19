@@ -33,28 +33,28 @@ Para criar conteúdo condicional de acordo com o valor de um campo, siga as segu
 
    Os elementos de personalização são inseridos no corpo da mensagem. Devem ser configurados agora.
 
-1. Preencha os parâmetros de **se** expressão.
+1. Preencha os parâmetros da expressão **if**.
 
-   * Selecione o primeiro elemento da expressão, **`<FIELD>`** e clique no ícone de personalização para substituí-lo pelo campo de teste.
+   * Selecione o primeiro elemento da expressão, **`<FIELD>`**, e clique no ícone de personalização para substituí-lo pelo campo de teste.
    * Substitua **`<VALUE>`** pelo valor do campo para o qual a condição será atendida. Esse valor deve estar entre aspas.
    * Especifique o conteúdo a ser inserido quando a condição for atendida. Pode ser um texto, uma imagem, um formulário, um link de hipertexto etc.
 
    ![Condição em um email](assets/condition-in-email.png)
 
-1. Clique em **[!UICONTROL Preview]** para exibir o conteúdo da mensagem de acordo com o recipient do delivery. Selecione um recipient para o qual a condição seja verdadeira para verificar o conteúdo. Em seguida, selecione outro recipient para o qual ele é falso e verifique novamente.
+1. Clique na guia **[!UICONTROL Preview]** para exibir o conteúdo da mensagem de acordo com o recipient do delivery. Selecione um recipient para o qual a condição seja verdadeira para verificar o conteúdo. Em seguida, selecione outro recipient para o qual ele é falso e verifique novamente.
 
 Você pode adicionar outros casos e definir outro conteúdo de acordo com os valores de um ou mais campos. Para fazer isso, use **[!UICONTROL Conditional content > Else]** e **[!UICONTROL Conditional content > Else if]**. Essas expressões são configuradas da mesma maneira que a expressão **se**.
 
 >[!CAUTION]
 >
->A variável **%> &lt;%** os caracteres devem ser excluídos após a adição **Mais** e **Senão se** condições.
+>Os caracteres **%> &lt;%** devem ser excluídos após adicionar as condições **Else** e **Else if**.
 
 
 ## Caso de uso: criar um email multilíngue {#creating-multilingual-email}
 
 No exemplo abaixo, saiba como criar um email multilíngue. O conteúdo é exibido em um idioma ou em outro, dependendo da preferência de idioma do recipient.
 
-1. Crie um email e selecione o público alvo. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do destinatário. Esses valores são definidos como **EN**, **FR**, **ES**.
+1. Crie um email e selecione o público alvo. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do destinatário. Estes valores estão definidos como **EN**, **FR**, **ES**.
 1. No conteúdo HTML de email, clique na guia **[!UICONTROL Source]** e cole o seguinte código:
 
    ```

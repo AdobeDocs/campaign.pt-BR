@@ -27,31 +27,31 @@ As principais etapas de implementação para este caso de uso são:
 
 Para criar a lista de recipients alvos, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Profiles and targets]** clique na guia **[!UICONTROL Lists]** link.
+1. Navegue até a guia **[!UICONTROL Profiles and targets]** e clique no link **[!UICONTROL Lists]**.
 1. Clique no botão **[!UICONTROL Create]**.
 1. Selecione **[!UICONTROL New list]** e crie uma nova lista de destinatários para a qual o relatório será enviado.
 
-Para obter mais informações sobre criação de listas, consulte [nesta seção](../../v8/audiences/create-audiences.md).
+Para obter mais informações sobre criação de listas, consulte [esta seção](../../v8/audiences/create-audiences.md).
 
 ## Etapa 2: criar o template do delivery {#step-2--create-the-delivery-template}
 
 Para criar o template do delivery, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Resources > Templates > Delivery templates]** do explorador do Adobe Campaign e duplicar o **[!UICONTROL Email delivery]** modelo incorporado.
+1. Navegue até o nó **[!UICONTROL Resources > Templates > Delivery templates]** do explorador do Adobe Campaign e duplique o modelo interno **[!UICONTROL Email delivery]**.
 
-   Para obter mais informações sobre criação de template de delivery, consulte [nesta seção](../../v8/send/create-templates.md).
+   Para obter mais informações sobre criação de modelo de entrega, consulte [esta seção](../../v8/send/create-templates.md).
 
 1. Insira os parâmetros do template: rótulo, target (a lista de recipients criados anteriormente), assunto e conteúdo.
 
-   Cada vez que o workflow é executado, a variável **[!UICONTROL Tracking indicators]** O relatório é atualizado conforme explicado em [Etapa 3: criar o fluxo de trabalho](#step-3--creating-the-workflow)).
+   Cada vez que o fluxo de trabalho é executado, o relatório **[!UICONTROL Tracking indicators]** é atualizado conforme explicado em [Etapa 3: criar o fluxo de trabalho](#step-3--creating-the-workflow)).
 
 1. Para incluir a versão mais recente do relatório na entrega é necessário adicionar um **[!UICONTROL Calculated attachment]**:
 
-   * Clique em **[!UICONTROL Attachments]** e clique na seta ao lado do link **[!UICONTROL Add]** botão. Selecione **[!UICONTROL Calculated attachment...]**.
+   * Clique no link **[!UICONTROL Attachments]** e clique na seta ao lado do botão **[!UICONTROL Add]**. Selecione **[!UICONTROL Calculated attachment...]**.
 
      ![](assets/use_case_report_4.png)
 
-   * No **[!UICONTROL Type]** selecione a opção mais recente: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
+   * Na lista suspensa **[!UICONTROL Type]**, selecione a opção mais recente: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
      ![](assets/use_case_report_5.png)
 
@@ -63,7 +63,7 @@ Para criar o template do delivery, siga as etapas abaixo:
 
      >[!CAUTION]
      >
-     >O caminho e o nome devem ser idênticos aos inseridos no **[!UICONTROL JavaScript code]** tipo de atividade do workflow, conforme explicado em [Etapa 3: criar o fluxo de trabalho](#step-3--creating-the-workflow).
+     >O caminho e o nome devem ser idênticos aos inseridos na atividade do tipo **[!UICONTROL JavaScript code]** do fluxo de trabalho, conforme explicado em [Etapa 3: crie o fluxo de trabalho](#step-3--creating-the-workflow).
 
    * Selecione a guia **[!UICONTROL Advanced]** e marque **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Na zona de texto, digite o nome do anexo no delivery final.
 
@@ -77,13 +77,13 @@ Crie o fluxo de trabalho a seguir para este caso de uso.
 
 Ele usa três atividades:
 
-* A **[!UICONTROL Scheduler]** atividade que executa o workflow uma vez por mês,
-* A **[!UICONTROL JavaScript code]** atividade que gera o relatório no formato PDF,
-* A **[!UICONTROL Delivery]** atividade que faz referência ao template de delivery criado anteriormente.
+* Uma atividade **[!UICONTROL Scheduler]** que executa o fluxo de trabalho uma vez por mês,
+* Uma atividade **[!UICONTROL JavaScript code]** que gera o relatório no formato PDF,
+* Uma atividade **[!UICONTROL Delivery]** que faz referência ao modelo de entrega criado anteriormente.
 
 Para criar esse workflow, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Administration > Production > Technical workflows]** nó do Campaign explore e crie uma nova pasta para armazenar os workflows.
+1. Navegue até o nó **[!UICONTROL Administration > Production > Technical workflows]** do Campaign Explorer e crie uma nova pasta para armazenar seus fluxos de trabalho.
 1. Crie um novo workflow.
 
    ![](assets/use_case_report_7.png)
@@ -115,22 +115,22 @@ Para criar esse workflow, siga as etapas abaixo:
    com as seguintes variáveis:
 
    * **var reportName**: insira o nome interno do relatório em aspas duplas. Nesse caso, o nome interno do relatório **Tracking indicator** é &quot;deliveryFeedback&quot;.
-   * **caminho var**: digite o caminho de salvamento do arquivo (&quot;tmp&quot;), o nome que deseja dar ao arquivo (&quot;deliveryFeedback&quot;) e a extensão de arquivo (&quot;.pdf&quot;). Nesse caso, usamos o nome interno como o nome do arquivo. Os valores precisam estar entre aspas duplas e separados pelo caractere &quot;+&quot;.
+   * **caminho var**: insira o caminho de salvamento do arquivo (&quot;tmp&quot;), o nome que deseja dar ao arquivo (&quot;deliveryFeedback&quot;) e a extensão de arquivo (&quot;.pdf&quot;). Nesse caso, usamos o nome interno como o nome do arquivo. Os valores precisam estar entre aspas duplas e separados pelo caractere &quot;+&quot;.
 
      >[!CAUTION]
      >
-     >O arquivo deve ser salvo no servidor. Você deve inserir o mesmo caminho e o mesmo nome da variável **[!UICONTROL General]** guia da janela de edição do anexo calculado, conforme detalhado [aqui](#step-2--create-the-delivery-template)).
+     >O arquivo deve ser salvo no servidor. Você deve inserir o mesmo caminho e o mesmo nome da guia **[!UICONTROL General]** da janela de edição do anexo calculado, conforme detalhado [aqui](#step-2--create-the-delivery-template)).
 
    * **var exportFormat**: insira o formato de exportação do arquivo (&quot;PDF&quot;).
    * **var _ctx** (contexto): neste caso, estamos usando o relatório **[!UICONTROL Tracking indicators]** em seu contexto global.
 
-1. Concluir adicionando um **[!UICONTROL Delivery]** atividade com as seguintes opções:
+1. Conclua adicionando uma atividade **[!UICONTROL Delivery]** com as seguintes opções:
 
    ![](assets/use_case_report_11.png)
 
    * **[!UICONTROL Delivery]**: selecione **[!UICONTROL New, created from a template]** e selecione o template de entrega criado anteriormente.
    * Para os campos **[!UICONTROL Recipients]** e **[!UICONTROL Content]**, selecione **[!UICONTROL Specified in the delivery]**.
    * **[!UICONTROL Action to perform]** : selecione **[!UICONTROL Prepare and start]**.
-   * Desmarque a opção **[!UICONTROL Generate an outbound transition]** e **[!UICONTROL Process errors]** opções.
+   * Desmarque as opções **[!UICONTROL Generate an outbound transition]** e **[!UICONTROL Process errors]**.
 
 1. Salve as alterações e inicie o workflow. A mensagem é enviada para a lista de recipients a cada primeira segunda-feira do mês, com o relatório anexado.

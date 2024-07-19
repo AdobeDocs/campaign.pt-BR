@@ -18,7 +18,7 @@ Encontre as notas técnicas mais recentes do Campaign nesta seção. Essas notas
 
 >[!BEGINTABS]
 
->[!TAB Alterações no canal de notificação por push]
+>[!TAB Alterações do canal de notificação por push]
 
 Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) foram lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push do Android pode precisar ser atualizada para dar suporte a essa alteração.
 
@@ -75,5 +75,5 @@ A partir do Campaign v8.6, o processo de autenticação para o Campaign v8 está
 
 ## Recursos adicionais
 
-[Descrição de produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] guia de automação](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+[Descrição de Produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] guia de automação](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Painel de Controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
 

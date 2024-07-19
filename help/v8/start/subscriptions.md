@@ -16,11 +16,11 @@ ht-degree: 28%
 
 Use o Adobe Campaign para criar e monitorar seus serviços de informações, como boletins informativos, e gerenciar as assinaturas/cancelamentos de assinaturas desses serviços. Vários serviços podem ser definidos em paralelo, por exemplo: boletins informativos especializados para determinadas categorias de produtos, temas ou áreas de um site, subscrições a vários tipos de mensagens de alerta e notificações em tempo real.
 
-Saiba como criar um serviço de informação, enviar informativo e gerenciar a aceitação e a recusa no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html){target="_blank"}
+Saiba como criar um serviço de informações, enviar informativo e gerenciar participação e não participação na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html){target="_blank"}
 
 Para assinar (aceitar) um perfil para um serviço, as opções disponíveis são:
 
-* Adicionar manualmente o serviço ao perfil do recipient: para fazer isso, no **[!UICONTROL Subscriptions]** do perfil, clique em **[!UICONTROL Add]** e selecione o serviço de informação desejado.
+* Adicionar manualmente o serviço ao perfil do destinatário: para fazer isso, a partir da guia **[!UICONTROL Subscriptions]** do perfil, clique em **[!UICONTROL Add]** e selecione o serviço de informação desejado.
 
   ![](assets/subscribe-to-a-service.png)
 
@@ -39,7 +39,7 @@ Para assinar (aceitar) um perfil para um serviço, as opções disponíveis são
 
 * Importar destinatários e inscrevê-los automaticamente em um serviço de informação. Para fazer isso, selecione o serviço na última etapa do assistente de importação.
 
-  Saiba mais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html#step-5---additional-step-when-importing-recipients){target="_blank"}.
+  Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html#step-5---additional-step-when-importing-recipients){target="_blank"}.
 
 * Usar um formulário da Web para que os destinatários possam subscrever-se a um serviço.
 
@@ -49,10 +49,10 @@ Para assinar (aceitar) um perfil para um serviço, as opções disponíveis são
 
   ![](assets/web-app.png)
 
-  Saiba mais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html#create-a-subscription--form-with-double-opt-in){target="_blank"}.
+  Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html#create-a-subscription--form-with-double-opt-in){target="_blank"}.
 
 
-* Criar um fluxo de trabalho de direcionamento e usar um **[!UICONTROL Subscription service]** atividade.
+* Crie um fluxo de trabalho de direcionamento e use uma atividade **[!UICONTROL Subscription service]**.
 
   ![](assets/wf-subscription.png)
 
@@ -66,17 +66,17 @@ Para cancelar a subscrição (recusa) de um perfil de um serviço, as opções d
 * Exclusão manual de um serviço de informação
 * Exclusão manual de recipients de um serviço de assinatura específico
 
-**Cancelamento automático de subscrição**
+**Cancelamento de assinatura automático**
 
 * Especifique um limite de duração do serviço de informação: a subscrição dos recipients será cancelada automaticamente quando o período de validade expirar. Este período é especificado na guia Edit das propriedades do serviço. Ele é expresso em dias.
 * Configure um workflow de cancelamento de subscrição para uma população.
 
-Saiba mais em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html#unsubscribing-a-recipient-from-a-service){target="_blank"}.
+Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html#unsubscribing-a-recipient-from-a-service){target="_blank"}.
 
 
 >[!CAUTION]
 >
->No contexto de um [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), assinaturas e unsubscriptions são **assíncrono** processos. As solicitações de aceitação e recusa são processadas a cada hora. [Saiba mais](../architecture/new-apis.md#sub-apis)
+>No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), as assinaturas e os cancelamentos de assinaturas são **processos assíncronos**. As solicitações de aceitação e recusa são processadas a cada hora. [Saiba mais](../architecture/new-apis.md#sub-apis)
 
 <!--
 You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages. 

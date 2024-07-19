@@ -22,13 +22,13 @@ Os deliveries podem ser criados através do painel da campanha, de um fluxo de t
 
 Você tem duas maneiras de adicionar deliveries às suas campanhas de marketing:
 
-* No **[!UICONTROL Add a delivery]** no painel de campanha.
+* No link **[!UICONTROL Add a delivery]** no painel de campanha.
 
 ![](assets/campaign_op_add_delivery.png)
 
 Depois de salvo, o delivery é adicionado ao painel de campanha.
 
-* A partir de um workflow da campanha, na variável **[!UICONTROL Targeting and workflows]** adicionando o delivery.
+* Em um fluxo de trabalho da campanha, na guia **[!UICONTROL Targeting and workflows]**, adicionando a entrega.
 
   ![](assets/campaign-wf-delivery.png)
 
@@ -40,13 +40,13 @@ Saiba como configurar e executar o fluxo de aprovação de entrega [nesta págin
 
 Um delivery pode ser enviado assim que todas as aprovações forem concedidas. O processo de execução do delivery depende do canal.
 
-* Para deliveries de email ou canais móveis, consulte [nesta seção](#start-an-online-delivery)
+* Para deliveries de email ou canais móveis, consulte [esta seção](#start-an-online-delivery)
 
-* Para deliveries de correspondência direta, consulte [nesta seção](#start-an-offline-delivery)
+* Para deliveries de correspondência direta, consulte [esta seção](#start-an-offline-delivery)
 
 ### Iniciar um delivery de email ou móvel {#start-an-online-delivery}
 
-Depois que todas as solicitações de aprovação tiverem sido concedidas, o status do delivery será alterado para **[!UICONTROL Pending confirmation]** e podem ser iniciadas. Os revisores que podem iniciar o delivery são notificados de que um delivery está pronto para ser iniciado.
+Depois que todas as solicitações de aprovação tiverem sido concedidas, o status do delivery será alterado para **[!UICONTROL Pending confirmation]** e ele poderá ser iniciado. Os revisores que podem iniciar o delivery são notificados de que um delivery está pronto para ser iniciado.
 
 ![](assets/confirm-delivery.png)
 
@@ -58,12 +58,12 @@ A confirmação do delivery é restrita aos administradores e ao operador ou gru
 
 ![](assets/select-delivery-reviewers.png)
 
-No entanto, também é possível permitir que o proprietário da campanha confirme o envio, mesmo que revisores específicos tenham sido definidos nas propriedades de entrega ou campanha. Para fazer isso, como Administrador, crie a variável **NmsCampaign_Ativate_OwnerConfirmation** e defina-a como **1**. As opções são gerenciadas no **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** pasta do explorador do Campaign.
+No entanto, também é possível permitir que o proprietário da campanha confirme o envio, mesmo que revisores específicos tenham sido definidos nas propriedades de entrega ou campanha. Para fazer isso, como Administrador, crie a opção **NmsCampaign_Ativate_OwnerConfirmation** e defina-a como **1**. As opções são gerenciadas na pasta **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** do explorador do Campaign.
 
 
 ### Iniciar um delivery de correspondência direta {#start-an-offline-delivery}
 
-Após todas as aprovações serem concedidas, o status da entrega será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por meio de uma [fluxo de trabalho técnico](../workflow/technical-workflows.md) que, em uma configuração padrão, é iniciada automaticamente quando um delivery de mala direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
+Após todas as aprovações serem concedidas, o status da entrega será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por meio de um [fluxo de trabalho técnico](../workflow/technical-workflows.md) dedicado que, em uma configuração padrão, inicia automaticamente quando uma entrega de correspondência direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
 
 Depois que o workflow de extração for executado com sucesso, o arquivo de extração deverá ser aprovado (desde que a aprovação do arquivo de extração tenha sido selecionada nas configurações do delivery). [Saiba mais](marketing-campaign-approval.md#approving-an-extraction-file).
 
@@ -71,7 +71,7 @@ Siga as etapas abaixo para validar o conteúdo e enviar o arquivo para o provedo
 
 1. Depois que o arquivo de extração for aprovado, é possível gerar a prova do email de notificação do roteador. Esta mensagem de email é construída com base em um template de entrega. Deve ser aprovado.
 
-   Esta etapa só estará disponível se a variável **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** a opção foi ativada em **[!UICONTROL Approvals]** dos parâmetros avançados da campanha.
+   Esta etapa só estará disponível se a opção **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** tiver sido habilitada na guia **[!UICONTROL Approvals]** dos parâmetros avançados da campanha.
 
    ![](assets/enable-proof-validation.png)
 
@@ -99,11 +99,11 @@ A extração de arquivo inicia dois processos: cálculo de orçamento e cálculo
 
   O custo real será calculado de acordo com as informações fornecidas pelo roteador. Apenas mensagens enviadas são faturadas.
 
-* As existências são definidas no **[!UICONTROL Administration > Campaign management > Stocks]** nó da árvore.
+* Os estoques são definidos no nó **[!UICONTROL Administration > Campaign management > Stocks]** da árvore.
 
   ![](assets/campaign-stocks.png)
 
-  Estruturas de custo na **[!UICONTROL Administration > Campaign management > Service providers]** nó.
+  Estruturas de custo no nó **[!UICONTROL Administration > Campaign management > Service providers]**.
 
   ![](assets/campaign-service-providers.png)
 

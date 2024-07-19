@@ -16,7 +16,7 @@ ht-degree: 69%
 
 
 
-Os workflows detalhados abaixo são instalados com o **Plataforma Mid-sourcing** por padrão.
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo da **plataforma de Mid-sourcing** por padrão.
 
 <table> 
  <tbody> 

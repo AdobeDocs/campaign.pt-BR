@@ -14,11 +14,11 @@ ht-degree: 56%
 
 # Processamento de evento {#event-processing}
 
-No contexto de mensagens transacionais, um evento é gerado por um sistema de informações externo e enviado para o Adobe Campaign por meio do **[!UICONTROL PushEvent]** e **[!UICONTROL PushEvents]** métodos. Esses métodos estão descritos na seção [nesta seção](event-description.md).
+No contexto de mensagens transacionais, um evento é gerado por um sistema de informações externo e enviado ao Adobe Campaign através dos métodos **[!UICONTROL PushEvent]** e **[!UICONTROL PushEvents]**. Estes métodos estão descritos em [esta seção](event-description.md).
 
 Esse evento contém dados vinculados ao evento, como:
 
-* seus [type](transactional.md#create-event-types): confirmação de pedido, criação de conta em um site etc.,
+* seu [tipo](transactional.md#create-event-types): confirmação de pedido, criação de conta em um site etc.,
 * o endereço de e-mail ou o número de telefone,
 * quaisquer outras informações para enriquecer e personalizar a mensagem transacional antes do delivery: informações de contato do cliente, idioma da mensagem, formato do email, etc.
 
@@ -42,9 +42,9 @@ Eventos gerados pelo sistema de informações podem ser coletados usando dois mo
 
 * Chamadas para métodos SOAP permitem que você envie eventos por push no Adobe Campaign: o método PushEvent permite enviar um evento de cada vez, o método PushEvents permite enviar vários de uma vez. [Saiba mais](event-description.md).
 
-* A criação de um workflow permite recuperar eventos importando arquivos ou por meio de um gateway SQL, com o [Federated Data Access](../connect/fda.md) módulo.
+* A criação de um fluxo de trabalho permite recuperar eventos importando arquivos ou por meio de um gateway SQL, com o módulo [Federated Data Access](../connect/fda.md).
 
-Depois que são coletados, os eventos são divididos por workflows técnicos entre as filas em tempo real e em lote das instâncias de execução enquanto aguardam a vinculação a uma [template de mensagem](transactional-template.md).
+Depois que são coletados, os eventos são divididos por workflows técnicos entre as filas em tempo real e em lote das instâncias de execução enquanto aguardam a vinculação a um [modelo de mensagem](transactional-template.md).
 
 ![](assets/mc-event-queues.png)
 
@@ -74,11 +74,11 @@ Por padrão, o roteamento é baseado nas seguintes informações:
 
 ## Verificar status do evento {#event-statuses}
 
-Todos os eventos processados são agrupados em uma única visualização, no **Histórico de eventos** ou no Explorer. Eles podem ser categorizados por tipo de evento ou por **status**.
+Todos os eventos processados são agrupados em um único modo de exibição, na pasta **Histórico de eventos** ou no Explorer. Eles podem ser categorizados por tipo de evento ou por **status**.
 
 Os possíveis status são:
 
-* **Pending**
+* **Pendente**
 
    * Um evento pendente pode ser um evento que acabou de ser coletado e que ainda não foi processado. A coluna **[!UICONTROL Number of errors]** mostra o valor 0. O modelo de email ainda não foi vinculado.
    * Um evento pendente também pode ser um evento processado, mas cuja confirmação está incorreta. A coluna **[!UICONTROL Number of errors]** mostra um valor que não é 0. Para saber quando esse evento será processado novamente, consulte a coluna **[!UICONTROL Process requested on]**.
@@ -86,7 +86,7 @@ Os possíveis status são:
 * **Entrega pendente**
 O evento foi processado e o template do delivery está vinculado. A entrega do email está pendente e o processo de entrega clássico é aplicado. Para obter mais informações, é possível abrir a entrega.
 * **Enviado**, **Ignorado** e **Erro de entrega**
-Esses status de delivery são recuperados por meio da variável **updateEventsStatus** fluxo de trabalho. Para obter mais informações, você poderá abrir a entrega relevante.
+Esses status de entrega são recuperados por meio do fluxo de trabalho **updateEventsStatus**. Para obter mais informações, você poderá abrir a entrega relevante.
 * **Evento não coberto**
 Falha na fase de roteamento de mensagens transacionais. Por exemplo, o Adobe Campaign não encontrou o email que atua como modelo para o evento.
 * **Evento expirado**

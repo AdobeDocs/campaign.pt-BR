@@ -79,7 +79,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Atualizar um registro
 
-Use o `_update` operação.
+Use a operação `_update`.
 
 Especifique essas informações como atributos XML:
 
@@ -273,7 +273,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-O loop inclui uma variável de destinatário local. Para cada destinatário que é retornado na coleção de destinatários, o email do destinatário é impresso. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR){target="_blank"} sobre o `logInfo` função.
+O loop inclui uma variável de destinatário local. Para cada destinatário que é retornado na coleção de destinatários, o email do destinatário é impresso. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR){target="_blank"} sobre a função `logInfo`.
 
 #### Resultados de uma operação `getIfExists` 
 
@@ -614,8 +614,8 @@ Este vídeo mostra um exemplo de uso de um método de API não estático em um w
 * [Exemplos de chamadas SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR){target="_blank"}
 * Métodos:
    * [Criar](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=pt-BR){target="_blank"}
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=pt-BR){target="_blank"}
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=pt-BR){target="_blank"}
+   * [ExcluirColeção](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=pt-BR){target="_blank"}
+   * [ExecutarConsulta](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=pt-BR){target="_blank"}
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=pt-BR){target="_blank"}
    * [Gravar](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=pt-BR){target="_blank"}
-* [função logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR){target="_blank"}
+* [função de logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR){target="_blank"}

@@ -16,16 +16,16 @@ ht-degree: 2%
 
 ## Workflows técnicos {#tech-wf}
 
-No contexto de um [Implantação corporativa (FFDA)](enterprise-deployment.md), o Adobe Campaign vem com um conjunto de fluxos de trabalho técnicos incorporados. Os workflows técnicos executam processos ou trabalhos, agendados regularmente no servidor.
+No contexto de uma [implantação corporativa (FFDA)](enterprise-deployment.md), o Adobe Campaign vem com um conjunto de fluxos de trabalho técnicos incorporados. Os workflows técnicos executam processos ou trabalhos, agendados regularmente no servidor.
 
 Esses workflows executam operações de manutenção no banco de dados, aproveitam as informações de rastreamento nos logs do delivery, criam campanhas recorrentes e muito mais.
 
-A lista completa de workflows técnicos é detalhada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}.
+A lista completa de fluxos de trabalho técnicos está detalhada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}.
 
-Além desses workflows técnicos, o Campaign v8 depende de workflows técnicos específicos para gerenciar [replicação de dados](#data-replication).
+Além desses fluxos de trabalho técnicos, o Campaign v8 depende de fluxos de trabalho técnicos específicos para gerenciar a [replicação de dados](#data-replication).
 
 * **[!UICONTROL Replicate Reference tables]**
-Esse workflow executa a replicação automática de tabelas integradas que precisam estar presentes no banco de dados local do Campaign (Postgres) e no banco de dados da nuvem ([!DNL Snowflake]). Ele é programado para ser executado a cada hora, diariamente. Se **lastModified** existir, a replicação ocorrerá de forma incremental, caso contrário, a tabela inteira será replicada. A ordem das tabelas no array abaixo é a ordem usada pelo workflow de replicação.
+Este fluxo de trabalho executa a replicação automática de tabelas internas que precisam estar presentes no banco de dados local do Campaign (Postgres) e no banco de dados da nuvem ([!DNL Snowflake]). Ele é programado para ser executado a cada hora, diariamente. Se o campo **lastModified** existir, a replicação ocorrerá de forma incremental, caso contrário, a tabela inteira será replicada. A ordem das tabelas no array abaixo é a ordem usada pelo workflow de replicação.
 * **[!UICONTROL Replicate Staging data]**
 Esse fluxo de trabalho replica dados de preparo para chamadas unitárias. Ele é programado para ser executado a cada hora, diariamente.
 * **[!UICONTROL Deploy FFDA immediately]**\
@@ -33,13 +33,13 @@ Esse fluxo de trabalho replica dados de preparo para chamadas unitárias. Ele é
 * **[!UICONTROL Replicate FFDA data immediately]**
 Esse workflow replica os dados XS para uma determinada conta externa.
 
-Esses workflows técnicos estão disponíveis no **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** nó do Campaign Explorer. **Eles não devem ser modificados.**
+Esses fluxos de trabalho técnicos estão disponíveis no nó **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** do explorador do Campaign. **Eles não devem ser modificados.**
 
-Se necessário, é possível iniciar a sincronização de dados manualmente. Para fazer isso, clique com o botão direito do mouse na **Scheduler** atividade e selecione **Executar tarefas pendentes agora**.
+Se necessário, é possível iniciar a sincronização de dados manualmente. Para fazer isso, clique com o botão direito do mouse na atividade **Scheduler** e selecione **Executar tarefa(s) pendente(s) agora**.
 
 ## Replicação de dados {#data-replication}
 
-Algumas tabelas integradas são replicadas do banco de dados local do Campaign para [!DNL Snowflake] banco de dados em nuvem por meio de fluxos de trabalho dedicados descritos acima.
+Algumas tabelas internas são replicadas do banco de dados local do Campaign para o banco de dados da nuvem [!DNL Snowflake] por meio de fluxos de trabalho dedicados descritos acima.
 
 Entenda quais bancos de dados o Adobe Campaign v8 usa, por que os dados estão sendo replicados, quais dados estão sendo replicados e como o processo de replicação funciona.
 
@@ -50,11 +50,11 @@ Entenda quais bancos de dados o Adobe Campaign v8 usa, por que os dados estão s
 
 As políticas de replicação são baseadas no tamanho das tabelas. Algumas tabelas são replicadas em tempo real, outras são replicadas de hora em hora. Algumas tabelas terão atualizações incrementais quando outras serão substituídas.
 
-Além do incorporado **Replicar tabelas de referência** fluxo de trabalho técnico, é possível forçar a replicação de dados em seus fluxos de trabalho.
+Além do fluxo de trabalho técnico interno **Replicar Tabelas de Referência**, você pode forçar a replicação de dados em seus fluxos de trabalho.
 
 Você pode:
 
-* adicionar um **Código Javascript** atividade com o seguinte código:
+* adicione uma atividade **Javascript code** específica com o seguinte código:
 
 ```
 nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
@@ -63,7 +63,7 @@ nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
 ![](assets/jscode.png)
 
 
-* adicionar um **nlmodule** atividade com o seguinte comando:
+* adicione uma atividade **nlmodule** específica com o seguinte comando:
 
 ```
 nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
@@ -74,6 +74,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Tópicos relacionados**
 
-* [Saiba como começar a usar workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target="_blank"}
+* [Saiba como começar a usar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target="_blank"}
 
 * [Períodos de retenção de dados](../dev/datamodel-best-practices.md#data-retention)

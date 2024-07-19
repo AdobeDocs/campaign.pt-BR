@@ -29,22 +29,22 @@ Um modelo integrado é fornecido para criar uma campanha para a qual nenhuma con
 
 Para criar um template de campanha, siga as etapas abaixo:
 
-1. Campanha aberta **Explorer** e navegue até **Recursos > Modelos > Modelos de campanha**.
-1. Clique em **Novo** na barra de ferramentas acima da lista de templates.
+1. Abra o Campaign **Explorer** e navegue até **Recursos > Modelos > Modelos de campanha**.
+1. Clique em **Novo** na barra de ferramentas acima da lista de modelos.
 
 ![](assets/campaign-template-node.png)
 
-Também é possível **duplicado** o modelo incorporado para reutilizar e adaptar sua configuração. Para fazer isso, clique com o botão direito do mouse no template e selecione **Duplicar**.
+Você também pode **duplicar** o modelo interno para reutilizar e adaptar sua configuração. Para fazer isso, clique com o botão direito do mouse no modelo e selecione **Duplicar**.
 
 1. Insira o rótulo do seu novo template de campanha.
 1. Clique em **Save** e abra seu template novamente.
-1. No **Editar** defina as propriedades do template.
-1. Selecionar **Parâmetros de campanha avançados...** link para adicionar um workflow ao seu template de campanha.
+1. Na guia **Editar**, defina as propriedades do modelo.
+1. Selecione o link **Advanced campaign parameters...** para adicionar um fluxo de trabalho ao seu template de campanha.
 
    ![](assets/campaign-template-parameters.png)
 
-1. Altere o **Direcionamento e workflows** valor para **Sim**. e confirme. Saiba como adicionar funcionalidades no [nesta seção](#typology-of-enabled-modules).
-1. A variável **Direcionamento e workflows** é adicionada ao template. Clique em **Adicionar um fluxo de trabalho...**, insira um **Rótulo** e clique em **Ok**.
+1. Altere o valor de **Targeting and workflows** para **Yes**. e confirme. Saiba como adicionar funcionalidades em [esta seção](#typology-of-enabled-modules).
+1. A guia **Direcionamento e fluxos de trabalho** é adicionada ao modelo. Clique em **Adicionar um fluxo de trabalho...**, digite um **Rótulo** e clique em **Ok**.
 1. Crie o fluxo de trabalho de acordo com suas necessidades.
 
    ![](assets/campaign-template-create-wf.png)
@@ -59,7 +59,7 @@ O link **[!UICONTROL Advanced campaign parameters...]** permite habilitar e desa
 
 ![](assets/campaign-template-select-modules.png)
 
-Se uma funcionalidade não estiver selecionada, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecem na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha e as guias disponíveis coincidem com as funcionalidades selecionadas no template. Por exemplo, a variável **Despesas e objetivos** não estiver ativada, a variável correspondente **[!UICONTROL Budget]** não são exibidas em campanhas baseadas neste template.
+Se uma funcionalidade não estiver selecionada, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecem na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha e as guias disponíveis coincidem com as funcionalidades selecionadas no template. Por exemplo, a funcionalidade **Despesas e objetivos** não está habilitada, a guia **[!UICONTROL Budget]** correspondente não é exibida em campanhas baseadas nesse modelo.
 
 Além disso, os atalhos para as janelas de configuração são adicionados ao painel de campanha. Quando uma funcionalidade é habilitada, um link direto dá acesso a ela a partir do painel de campanha.
 
@@ -73,19 +73,19 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
   ![](assets/campaign-template-dashboard-sample-1.png)
 
-  Observe que **[!UICONTROL Targeting and workflows]** guia ausente.
+  A guia **[!UICONTROL Targeting and workflows]** está ausente.
 
   As seguintes funcionalidades estão disponíveis:
 
   ![](assets/campaign-template-edit-sample-1.png)
 
-  Observe que **[!UICONTROL Budget]** guia ausente.
+  A guia **[!UICONTROL Budget]** está ausente.
 
   As configurações avançadas do Campaign também refletem essa configuração.
 
   ![](assets/campaign-template-parameters-sample-1.png)
 
-  Observe que **[!UICONTROL Approvals]** não está disponível.
+  Observe que a guia **[!UICONTROL Approvals]** não está disponível.
 
 * Com esta configuração:
   ![](assets/campaign-template-dashboard-sample-2.png)
@@ -94,19 +94,19 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
   ![](assets/campaign-template-select-functionalities-2.png)
 
-  Observe que **[!UICONTROL Targeting and workflows]** está disponível, mas a guia **Adicionar um documento** link ausente.
+  A guia **[!UICONTROL Targeting and workflows]** está disponível, mas o link **Adicionar um documento** está ausente.
 
   As seguintes funcionalidades estão disponíveis:
 
   ![](assets/campaign-template-edit-sample-2.png)
 
-  Observe que **[!UICONTROL Budget]** está disponível.
+  Observe que a guia **[!UICONTROL Budget]** está disponível.
 
   As configurações avançadas do Campaign também refletem essa configuração.
 
   ![](assets/campaign-template-parameters-sample-2.png)
 
-  Observe que **[!UICONTROL Approvals]** está disponível, mas a guia **[!UICONTROL Control population]** e **[!UICONTROL Seed addresses]** As guias do não estão habilitadas.
+  Observe que a guia **[!UICONTROL Approvals]** está disponível, mas as guias **[!UICONTROL Control population]** e **[!UICONTROL Seed addresses]** não estão habilitadas.
 
 
 ## Tipologia de módulos {#typology-of-enabled-modules}
@@ -142,15 +142,15 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
   ![](assets/template-activate-5.png)
 
-  Quando esse módulo estiver ativado, uma variável **[!UICONTROL Jobs]** é adicionada uma guia às configurações avançadas da campanha para definir a sequência de execução do processo.
+  Quando este módulo é habilitado, uma guia **[!UICONTROL Jobs]** é adicionada às configurações avançadas da campanha para definir a sequência de execução do processo.
 
 * **Aprovações**
 
-  Se você habilitar a opção **[!UICONTROL Approvals]**, é possível selecionar os processos que serão aprovados e os operadores de aprovação. Saiba mais sobre aprovações [nesta seção](marketing-campaign-approval.md#select-reviewers).
+  Se você habilitar o **[!UICONTROL Approvals]**, poderá selecionar os processos a serem aprovados e os operadores de aprovação. Saiba mais sobre aprovações [nesta seção](marketing-campaign-approval.md#select-reviewers).
 
   ![](assets/template-activate-6.png)
 
-  Você pode optar por habilitar ou não a aprovação do processo por meio da **[!UICONTROL Approvals]** da seção de configurações avançadas dos templates.
+  Você pode optar por habilitar ou não a aprovação do processo por meio da guia **[!UICONTROL Approvals]** da seção de configurações avançadas dos modelos.
 
 * **Despesas e objetivos**
 
@@ -165,10 +165,10 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
 Ao criar um template de campanha, você precisa inserir as seguintes informações:
 
-* Insira o **rótulo** do template: o rótulo é obrigatório e é o rótulo padrão para todas as campanhas com base nesse template.
+* Insira o **rótulo** do modelo: o rótulo é obrigatório e é o rótulo padrão para todas as campanhas baseadas neste modelo.
 * Selecione a **natureza** da campanha na lista suspensa. Os valores disponíveis nesta lista são os que foram salvos na lista discriminada **[!UICONTROL natureOp]**.
 
-Saiba como acessar e configurar suas listas discriminadas no [esta página](../../v8/config/ui-settings.md#enumerations).
+Saiba como acessar e configurar suas enumerações em [esta página](../../v8/config/ui-settings.md#enumerations).
 
 
 * Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os templates de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas [nesta seção](recurring-periodic-campaigns.md).
@@ -176,7 +176,7 @@ Saiba como acessar e configurar suas listas discriminadas no [esta página](../.
 
   Se a campanha for recorrente, você deverá especificar as datas de início e término da campanha diretamente no template.
 
-* Especifique a **programa relacionado** do template: campanhas baseadas nesse template são vinculadas ao programa selecionado.
+* Especifique o **programa relacionado** do modelo: campanhas baseadas neste modelo são vinculadas ao programa selecionado.
 
 <!--
 ## Track campaign execution{#campaign-reverse-scheduling}

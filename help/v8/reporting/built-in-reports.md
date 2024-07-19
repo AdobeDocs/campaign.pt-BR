@@ -23,9 +23,9 @@ Os seguintes tipos de relatório estão disponíveis:
 
 Você pode acessar relatórios internos na página inicial do Campaign, no painel de relatórios dedicado ou na lista de delivery. A forma como o relatório é exibido na interface depende do contexto.
 
-Uma lista dos principais relatórios está disponível na home page e permite acessar os dados de delivery rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Você também pode aprender a adicionar seus próprios relatórios à **[!UICONTROL Reports]** guia.
+Uma lista dos principais relatórios está disponível na home page e permite acessar os dados de delivery rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Você também pode aprender a adicionar seus próprios relatórios à guia **[!UICONTROL Reports]**.
 
-Para obter mais informações sobre essas configurações personalizadas, consulte esta [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre essas configurações personalizadas, consulte esta [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=pt-BR){target="_blank"}.
 
 
 ## Acessar relatórios integrados {#access-ootb-reports}

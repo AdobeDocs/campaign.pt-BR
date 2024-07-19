@@ -16,7 +16,7 @@ ht-degree: 61%
 
 Os deliveries por aplicativos móveis permitem enviar notificações para dispositivos iOS e Android.
 
-Antes de começar a enviar notificações por push com o Adobe Campaign, certifique-se de que as configurações e integrações estejam definidas no aplicativo móvel e nas tags da Adobe Experience Platform. [Saiba mais sobre configuração de push.](push-settings.md).
+Antes de começar a enviar notificações por push com o Adobe Campaign, certifique-se de que as configurações e integrações estejam definidas no aplicativo móvel e nas tags da Adobe Experience Platform. [Saiba mais sobre a configuração de push.](push-settings.md).
 
 >[!CAUTION]
 >
@@ -29,10 +29,10 @@ Esta seção detalha os elementos específicos para o delivery de notificações
 
 >[!IMPORTANT]
 >
->No contexto de um [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o registro móvel agora é **assíncrono**. [Saiba mais](../architecture/staging.md)
+>No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o registro móvel agora é **assíncrono**. [Saiba mais](../architecture/staging.md)
 
 
-Para criar um novo delivery, navegue até o **[!UICONTROL Campaigns]** clique em **[!UICONTROL Deliveries]** e clique no link **[!UICONTROL Create]** acima da lista de deliveries existentes.
+Para criar uma nova entrega, navegue até a guia **[!UICONTROL Campaigns]**, clique em **[!UICONTROL Deliveries]** e no botão **[!UICONTROL Create]** acima da lista de entregas existentes.
 
 ![](assets/delivery_step_1.png)
 
@@ -53,7 +53,7 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
    ![](assets/push_ios_2.png)
 
-1. Selecionar **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, selecione o serviço relevante para seu aplicativo móvel e selecione a versão iOS do aplicativo.
+1. Selecione **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, o serviço relevante para o aplicativo móvel e a versão iOS do aplicativo.
 
    ![](assets/push_ios_3.png)
 
@@ -69,9 +69,9 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
    Este campo permite a definição do valor do parâmetro **title** do conteúdo de notificação do iOS.
 
-1. Você pode adicionar um **[!UICONTROL Subtitle]**, valor de **subtítulo** parâmetro da carga de notificação do iOS.
+1. Você pode adicionar um **[!UICONTROL Subtitle]**, valor do parâmetro **subtitle** da carga de notificação do iOS.
 
-1. Insira o conteúdo da mensagem nas **[!UICONTROL Message content]** seção do assistente.
+1. Insira o conteúdo da mensagem na seção **[!UICONTROL Message content]** do assistente.
 
 1. Na guia **[!UICONTROL Sound and Badge]**, é possível editar as seguintes opções:
 
@@ -139,7 +139,7 @@ Para enviar notificações em dispositivos Android, siga estas etapas:
 
    >[!NOTE]
    > 
-   >Com as APIs do FCM mais recentes (HTTP v1), você deve atualizar o **templates do delivery** para que as notificações por push do Android aumentem o número de mensagens em lote. Para fazer isso, navegue até as propriedades do template do delivery do Android e, na guia **Entrega** , defina o [Quantidade do lote de mensagens](../../v8/send/configure-and-send.md#delivery-batch-quantity) para **256**. Aplique essa alteração a todos os templates de delivery usados para seus deliveries do Android e a todos os deliveries existentes do Android.
+   >Com as APIs do FCM mais recentes (HTTP v1), você deve atualizar os **modelos de entrega** para as notificações por push do Android a fim de aumentar o número de mensagens em lote. Para fazer isso, navegue até as propriedades do modelo de entrega do Android e, na guia **Entrega**, defina a [Quantidade do lote de mensagens](../../v8/send/configure-and-send.md#delivery-batch-quantity) como **256**. Aplique essa alteração a todos os templates de delivery usados para seus deliveries do Android e a todos os deliveries existentes do Android.
 
 
 1. Para definir o target da notificação, clique no link **[!UICONTROL To]** e, em seguida, clique em **[!UICONTROL Add]**.
@@ -154,7 +154,7 @@ Para enviar notificações em dispositivos Android, siga estas etapas:
 
    ![](assets/push-android-content.png)
 
-1. Clique em **[!UICONTROL Insert emoticon]** ícone para inserir emoticons à notificação via push.
+1. Clique no ícone **[!UICONTROL Insert emoticon]** para inserir emoticons à notificação via push.
 
 1. No campo **[!UICONTROL Application variables]**, insira o valor de cada variável. Por exemplo, você pode configurar uma tela de aplicativo específica para ser exibida quando o usuário ativar a notificação.
 
@@ -169,9 +169,9 @@ Para enviar notificações em dispositivos Android, siga estas etapas:
 
 Para enviar uma prova e o delivery final, use o mesmo processo dos outros deliveries.
 
-Saiba como validar um delivery no [esta página](preview-and-proof.md).
+Saiba como validar uma entrega em [esta página](preview-and-proof.md).
 
-Saiba como confirmar e enviar o delivery no [esta página](send.md)
+Saiba como confirmar e enviar a entrega em [esta página](send.md)
 
 Após enviar as mensagens, você pode monitorar e rastrear suas entregas. Saiba mais sobre os motivos de falha na entrega de notificação por push em [esta página](delivery-failures.md#push-error-types).
 

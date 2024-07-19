@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # Problemas conhecidos{#known-issues}
 
-Esta página lista os problemas conhecidos identificados na **Versões mais recentes do Campaign v8**. Além disso, as limitações incluídas no Campaign v8 estão listadas [nesta página](ac-guardrails.md).
+Esta página lista problemas conhecidos identificados nas **versões mais recentes do Campaign v8**. Além disso, as limitações que acompanham o Campaign v8 estão listadas [nesta página](ac-guardrails.md).
 
 
 >[!NOTE]
@@ -25,21 +25,21 @@ Esta página lista os problemas conhecidos identificados na **Versões mais rece
 
 ## Campaign v8.3.8{#8.3-issues}
 
-### Alterar problema de atividade da Fonte de Dados {#issue-2}
+### Alterar problema de atividade do Data Source {#issue-2}
 
 #### Descrição{#issue-2-desc}
 
-Ao inserir dados no banco de dados na nuvem do Snowflake com um Campaign **Query** e uma **Alterar fonte de dados** atividade, o processo falha quando um caractere de barra invertida está presente nos dados. A cadeia de caracteres de origem não tem escape e os dados não são processados corretamente no Snowflake.
+Ao inserir dados no banco de dados de nuvem do Snowflake com uma atividade Campaign **Query** e **Change Data Source**, o processo falhará quando um caractere de barra invertida estiver presente nos dados. A cadeia de caracteres de origem não tem escape e os dados não são processados corretamente no Snowflake.
 
-Esse problema acontece somente se o caractere de barra invertida estiver no final da string, por exemplo: `Barker\`.
+Esse problema ocorre somente se o caractere de barra invertida estiver no final da cadeia de caracteres, por exemplo: `Barker\`.
 
 
 #### Etapas de reprodução{#issue-2-repro}
 
 1. Conecte-se ao console do cliente e crie um workflow.
-1. Adicionar um **Query** atividade e a configure.
+1. Adicione uma atividade **Query** e configure-a.
 1. Selecione dados com as características descritas acima.
-1. Adicionar um **Alterar fonte de dados** atividade e configure-a para selecionar o banco de dados na nuvem do Snowflake.
+1. Adicione uma atividade **Change Data Source** e a configure para selecionar o banco de dados na nuvem Snowflake.
 1. Execute o workflow e verifique os logs de workflow para ver o erro.
 
 
@@ -65,13 +65,13 @@ Referência: NEO45549
 
 #### Descrição{#issue-3-desc}
 
-Ao fazer upload de um arquivo no servidor do Campaign com uma **Carregamento de dados (arquivo)** atividade, o processo pára em 100%, mas nunca termina.
+Ao carregar um arquivo no servidor do Campaign com uma atividade **Data loading (file)**, o processo para em 100%, mas nunca termina.
 
 #### Etapas de reprodução{#issue-3-repro}
 
 1. Conecte-se ao console do cliente e crie um workflow.
-1. Adicionar um **Carregamento de dados (arquivo)** atividade e a configure.
-1. Selecione o **Carregar no servidor** opção.
+1. Adicione uma atividade **Data loading (file)** e configure-a.
+1. Selecione a opção **Carregar no servidor**.
 1. Selecione o arquivo no computador local,
 1. Clique em **Carregar**
 
@@ -84,7 +84,7 @@ O processo nunca termina.
 
 A solução alternativa é usar um console do cliente mais antigo. Você poderá fazer upload do arquivo no servidor.
 
-Como administrador do Campaign, você pode baixar o console do cliente do Campaign v8.3.1 em [Distribuição de software Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
+Como administrador do Campaign, você pode baixar o console do cliente do Campaign v8.3.1 na [Distribuição de software do Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
 
 Saiba como acessar o Adobe Software Distribution [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR){target="_blank"}.
 

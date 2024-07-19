@@ -25,9 +25,9 @@ Essa alteração afeta:
 
 ## Quando essa atualização ocorrerá?{#aws-timeline}
 
-As atualizações de ambientes de desenvolvimento e de preparo começaram em **Outubro de 2023**.
+As atualizações dos ambientes de preparo e desenvolvimento iniciaram em **outubro de 2023**.
 
-As atualizações de ambientes de produção iniciaram em **Janeiro de 2024**.
+As atualizações de ambientes de produção começaram em **janeiro de 2024**.
 
 ## O que esperar?{#impact}
 
@@ -41,7 +41,7 @@ As atualizações de ambientes de produção iniciaram em **Janeiro de 2024**.
 
   Sim. Como cliente do Campaign, sua funcionalidade de envio de email requer o uso de uma infraestrutura de envio de email.
 
-* **Quais clientes são direcionados para essa atualização?**
+* **Quais clientes são direcionados para esta atualização?**
 
   Todos os clientes do Campaign mencionados acima terão seus ambientes atualizados.
 
@@ -49,17 +49,17 @@ As atualizações de ambientes de produção iniciaram em **Janeiro de 2024**.
 
   A duração de cada onda de atualização pode variar dependendo do número de instâncias do Campaign afetadas. Quando uma onda de atualização de produção for agendada, a notificação incluirá uma duração estimada.
 
-* **O cliente precisa realizar alguma ação para fazer a atualização?**
+* **O cliente precisa realizar alguma ação para a atualização?**
 
   Nenhuma ação é necessária. O Adobe gerenciará o processo de atualização, que será executado automaticamente.
 
 * **Quais testes são exigidos pelos clientes?**
 
-  Não esperamos nenhum teste por parte dos clientes em conexão com esse evento de atualização. Caso algum problema seja observado, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  Não esperamos nenhum teste por parte dos clientes em conexão com esse evento de atualização. Caso algum problema seja observado, entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
-* **Posso solicitar uma alteração na Data/Hora para o slot de atualização de segurança programado?**
+* **É possível solicitar uma alteração em Data/Hora no slot de atualização de segurança agendado?**
 
   Não. Não é possível acomodar as modificações solicitadas à programação existente, pois isso provavelmente interromperá o evento de atualização atribuído para outro cliente.
 
-Para qualquer outra pergunta, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Para qualquer outra pergunta, entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

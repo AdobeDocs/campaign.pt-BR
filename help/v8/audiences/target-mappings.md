@@ -14,9 +14,9 @@ ht-degree: 38%
 
 # Trabalhar com target mappings{#gs-target-mappings}
 
-Por padrão, templates de delivery de email e SMS têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient**.
+Por padrão, os modelos de entrega de email e SMS têm como alvo **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient**.
 
-Para notificações por push, o target mapping padrão é **Aplicativos de assinante (nms:appSubscriptionRcp)**, que está vinculado à tabela de recipients.
+Para notificações por push, o target mapping padrão é **Aplicativos do assinante (nms:appSubscriptionRcp)**, que está vinculado à tabela de destinatários.
 
 Você pode usar outros target mappings para seus deliveries ou criar um novo.
 
@@ -42,11 +42,11 @@ Você também pode criar um target mapping. Talvez seja necessário adicionar um
 * usar uma tabela de recipient personalizada,
 * configure uma dimensão de filtro diferente da targeting dimension integrada na tela target mapping.
 
-Saiba mais sobre tabelas de recipients personalizadas em [esta página](../dev/custom-recipient.md).
+Saiba mais sobre tabelas de destinatários personalizadas em [esta página](../dev/custom-recipient.md).
 
 O assistente de criação de target mapping do Adobe Campaign ajuda a criar todos os esquemas necessários para usar seu target mapping personalizado.
 
-1. Navegue até **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** no explorador do Adobe Campaign.
+1. Navegue até **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** no Adobe Campaign Explorer.
 
 1. Crie um novo target mapping e selecione seu esquema personalizado como o targeting dimension.
 

@@ -18,17 +18,17 @@ Você pode acessar o Adobe Campaign por meio do console do cliente ou da interfa
 
 >[!CAUTION]
 >
->Esta documentação se concentra no uso do console do cliente do Campaign. Se estiver usando a interface da Web do Campaign, consulte [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"}.
+>Esta documentação se concentra no uso do console do cliente do Campaign. Se você estiver usando a interface da Web do Campaign, consulte [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"}.
 
 * **Console do cliente** - O console do cliente do Campaign é um aplicativo nativo que se comunica com o servidor de aplicativos do Adobe Campaign por meio de protocolos padrão de Internet, como SOAP e HTTP. O console do cliente do Campaign centraliza todos os recursos e configurações e requer largura de banda mínima, pois depende de um cache local. Projetado para facilitar a implantação, o console do cliente do Campaign pode ser implantado a partir de um navegador da Internet, atualizado automaticamente e não requer nenhuma configuração de rede específica, pois gera apenas tráfego HTTP(S). [Saiba mais](#ui-access)
 
-  Saiba como instalar e configurar o console do cliente do Campaign no [nesta seção](../start/connect.md).
+  Saiba como instalar e configurar o console do cliente do Campaign em [esta seção](../start/connect.md).
 
-* **Interface do usuário da Web** - Como usuário do Campaign v8, a partir da versão v8.6.1, você agora tem acesso a um ambiente da Web, disponível por meio da interface de usuário central do Adobe Experience Cloud. Em seguida, você pode se conectar ao Adobe Campaign por meio de um navegador da Web. Essa nova interface permite criar, gerenciar e executar as principais ações de marketing. No entanto, nem todos os recursos do Campaign estão disponíveis. [Saiba mais](#ac-web-ui).
+* **Interface de usuário da Web** - Como usuário do Campaign v8, a partir da versão v8.6.1, agora você tem acesso a um ambiente da Web, disponível por meio da interface de usuário central do Adobe Experience Cloud. Em seguida, você pode se conectar ao Adobe Campaign por meio de um navegador da Web. Essa nova interface permite criar, gerenciar e executar as principais ações de marketing. No entanto, nem todos os recursos do Campaign estão disponíveis. [Saiba mais](#ac-web-ui).
 
-* **Acesso à Web** - Os recursos de acesso à web do Adobe Campaign permitem acessar um subconjunto de recursos do Campaign com um navegador da web, usando uma interface de usuário HTML. Use essa interface da Web para acessar relatórios, controlar e validar mensagens, acessar painéis de monitoramento e muito mais.  Saiba mais sobre o Campaign Web Access [nesta seção](../start/connect.md#web-access).
+* **Acesso à Web** - Os recursos de acesso à Web do Adobe Campaign permitem acessar um subconjunto de recursos do Campaign com um navegador da Web, usando uma interface de usuário HTML. Use essa interface da Web para acessar relatórios, controlar e validar mensagens, acessar painéis de monitoramento e muito mais.  Saiba mais sobre o Campaign Web Access [nesta seção](../start/connect.md#web-access).
 
-* **APIs** - Para atender a mais casos de uso, o sistema pode ser chamado de aplicativos externos usando as APIs de serviços da Web expostas por meio do protocolo SOAP. Saiba mais sobre as APIs do Campaign [nesta página](../dev/api.md).
+* **APIs** - Para atender a mais casos de uso, o sistema pode ser chamado de aplicativos externos usando as APIs de Serviços da Web expostas pelo protocolo SOAP. Saiba mais sobre as APIs do Campaign [nesta página](../dev/api.md).
 
 
 ## Trabalhar com o console do cliente {#ui-access}
@@ -40,7 +40,7 @@ O console do cliente do Campaign é um aplicativo nativo que se comunica com o s
 
 >[!NOTE]
 >
->Se o novo cartão de acesso não for exibido, verifique se os seguintes campos não estão vazios na conta externa do Adobe Experience Cloud: **Servidor**, **Inquilino**, **Callback server**, e **Marca de associação**.
+>Se o novo cartão de acesso não for exibido, verifique se os seguintes campos não estão vazios na sua conta externa do Adobe Experience Cloud: **Servidor**, **Locatário**, **Servidor de retorno de chamada** e **Marca de associação**.
 
 
 Você também pode usar um navegador da Web para acessar o Campaign. Nesse contexto, somente um subconjunto de recursos do Campaign está disponível. [Saiba mais](#web-browser)
@@ -59,9 +59,9 @@ Navegue pelas guias na seção superior para acessar os recursos principais do C
 >
 >A lista de recursos principais que você pode acessar depende das suas permissões e da sua implementação.
 
-Para cada recurso, você pode acessar o conjunto de recursos principais na **[!UICONTROL Browsing]** seção. A variável **[!UICONTROL More]** link permite acessar todos os outros componentes.
+Para cada recurso, você pode acessar o conjunto de recursos principais na seção **[!UICONTROL Browsing]**. O link **[!UICONTROL More]** permite acessar todos os outros componentes.
 
-Por exemplo, ao navegar até o **[!UICONTROL Profiles and targets]** , você poderá acessar listas de recipients, serviços de assinatura, workflows para construção do target existentes e atalhos para criar todos esses componentes.
+Por exemplo, ao navegar até a guia **[!UICONTROL Profiles and targets]**, você pode acessar listas de destinatários, serviços de assinatura, fluxos de trabalho de direcionamento existentes e atalhos para criar todos esses componentes.
 
 ![](assets/overview-list.png)
 
@@ -71,7 +71,7 @@ Quando você seleciona um elemento na tela, ele é carregado em uma nova guia pa
 
 ### Criar um elemento {#create-an-element}
 
-Use atalhos na **[!UICONTROL Create]** à esquerda da tela para adicionar novos elementos. Você também pode usar a variável **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
+Use atalhos na seção **[!UICONTROL Create]** à esquerda da tela para adicionar novos elementos. Você também pode usar o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
 
 Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para criar uma nova entrega.
 
@@ -105,11 +105,11 @@ Esse espaço de trabalho permite que você acesse a árvore do Explorer para pro
 
 Como usuário do console do cliente do Campaign v8, a partir da versão v8.6.1, você agora tem acesso a um ambiente da Web, disponível por meio da interface do usuário central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços. 
 
-![Home Page da Interface do Usuário da Web do Adobe Campaign](assets/ac-web-home.png)
+![Página Inicial da Interface do Usuário da Web do Adobe Campaign](assets/ac-web-home.png)
 
-Saiba mais sobre a nova interface do usuário na Web do Campaign em [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre a nova interface do usuário da Web do Campaign em [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"}.
 
-Recursos, configurações e definições adicionais e avançados estão disponíveis somente no console do cliente. Saiba mais sobre os recursos disponíveis em ambas as interfaces de usuário [na documentação da interface da Web do Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=pt-BR){target="_blank"}.
+Recursos, configurações e definições adicionais e avançados estão disponíveis somente no console do cliente. Saiba mais sobre os recursos disponíveis em ambas as interfaces de usuário [na documentação da interface de usuário da Web do Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=pt-BR){target="_blank"}.
 
 
 ## Idiomas compatíveis {#languages}
@@ -129,7 +129,7 @@ Os idiomas compatíveis dependem da interface do usuário.
   >
   >O idioma é selecionado durante o processo de instalação e não pode ser alterado posteriormente.
 
-* Para idiomas compatíveis com a interface da Web do Campaign, [consulte esta página](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html#language-pref){target="_blank"}.
+* Para saber quais são os idiomas suportados pela interface da Web do Campaign, [consulte esta página](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html#language-pref){target="_blank"}.
 
 
 O idioma afeta datas e formatos de hora.

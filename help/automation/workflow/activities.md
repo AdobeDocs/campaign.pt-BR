@@ -20,11 +20,11 @@ As atividades de workflow são agrupadas por categoria, em quatro guias diferent
 
 Dependendo das suas permissões, da sua implementação e do contexto em que o fluxo de trabalho é criado, as atividades disponíveis podem ser diferentes.
 
-Por exemplo, os workflows criados em uma campanha têm um **Entregas** com todos os canais. Esta guia não está disponível em [fluxo de trabalho técnico](technical-workflows.md).
+Por exemplo, os fluxos de trabalho criados em uma campanha têm uma guia **Deliveries** específica, com todos os canais. Esta guia não está disponível em [workflow técnico](technical-workflows.md).
 
 ![](assets/campaign-wf-activities.png)
 
-Os fluxos de trabalho técnicos têm um **Eventos** guia que não está disponível em [workflows da campanha](campaign-workflows.md).
+Os fluxos de trabalho técnicos têm uma guia **Eventos** específica que não está disponível nos [fluxos de trabalho da campanha](campaign-workflows.md).
 
 ![](assets/tech-wf-activities.png)
 

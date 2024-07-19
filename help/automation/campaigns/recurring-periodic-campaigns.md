@@ -14,9 +14,9 @@ ht-degree: 57%
 
 # Campanhas recorrentes e periódicas {#recurring-and-periodic-campaigns}
 
-A **campanha recorrente** é uma campanha baseada em um template específico, cujos workflows são configurados para serem executados de acordo com um agendamento associado. O direcionamento é duplicado em cada execução e os vários processos e populações do target são rastreados.  Depois de configuradas, as campanhas recorrentes criam automaticamente um novo fluxo de trabalho (duplicando o modelo de fluxo de trabalho) e o executam. Por exemplo, se você precisar enviar um lembrete mensal para um segmento de público-alvo, configure uma campanha recorrente para que, no início de cada ano, ela crie 12 fluxos de trabalho, um para cada mês. [Saiba mais](#create-a-recurring-campaign)
+Uma **campanha recorrente** é uma campanha baseada em um modelo específico, cujos fluxos de trabalho são configurados para serem executados de acordo com um agendamento associado. O direcionamento é duplicado em cada execução e os vários processos e populações do target são rastreados.  Depois de configuradas, as campanhas recorrentes criam automaticamente um novo fluxo de trabalho (duplicando o modelo de fluxo de trabalho) e o executam. Por exemplo, se você precisar enviar um lembrete mensal para um segmento de público-alvo, configure uma campanha recorrente para que, no início de cada ano, ela crie 12 fluxos de trabalho, um para cada mês. [Saiba mais](#create-a-recurring-campaign)
 
-A **campanha periódica** é uma campanha baseada em um template específico que permite criar instâncias de campanha com base em um agendamento de execução. As instâncias de campanha são criadas automaticamente com base em um template de campanha periódico, dependendo da frequência definida no agendamento do template. [Saiba mais](#create-a-periodic-campaign)
+Uma **campanha periódica** é uma campanha baseada em um modelo específico que permite criar instâncias de campanha com base em um agendamento de execução. As instâncias de campanha são criadas automaticamente com base em um template de campanha periódico, dependendo da frequência definida no agendamento do template. [Saiba mais](#create-a-periodic-campaign)
 
 ## Criar uma campanha recorrente {#create-a-recurring-campaign}
 
@@ -27,10 +27,10 @@ As campanhas recorrentes são criadas com base em um template específico que de
 Para criar um template para campanhas recorrentes, siga as etapas abaixo:
 
 1. Abra o explorador do Campaign e navegue até **[!UICONTROL Resources > Templates > Campaign templates]**.
-1. Duplicar o incorporado **[!UICONTROL Recurring campaign]** modelo.
+1. Duplique o modelo **[!UICONTROL Recurring campaign]** interno.
    ![](assets/recurring-campaign-duplicate.png)
 1. Insira o nome do template e a duração da campanha.
-1. Para esse tipo de campanha, uma **[!UICONTROL Schedule]** é adicionada para criar o agendamento de execução do template. Use essa guia para definir as datas de execução das campanhas com base nesse template.
+1. Para esse tipo de campanha, uma guia **[!UICONTROL Schedule]** é adicionada para criar o agendamento de execução do template. Use essa guia para definir as datas de execução das campanhas com base nesse template.
    ![](assets/recurring-campaign-schedule.png)
 
    O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do workflow. [Saiba mais](../workflow/scheduler.md).
@@ -40,7 +40,7 @@ Para criar um template para campanhas recorrentes, siga as etapas abaixo:
    >A configuração do cronograma de execução deve ser realizada com cuidado. As campanhas recorrentes duplicam o(s) fluxo(s) de trabalho de seu template dependendo do cronograma especificado. Esta operação pode sobrecarregar o banco de dados.
 
 1. Especifique um valor no campo **[!UICONTROL Create in advance for]** para criar os workflows correspondentes ao período indicado.
-1. No **[!UICONTROL Targeting and workflows]** crie o template de workflow a ser usado em campanhas com base nesse template. Normalmente, esse fluxo de trabalho contém os parâmetros de direcionamento e uma ou mais entregas.
+1. Na guia **[!UICONTROL Targeting and workflows]**, crie o modelo de fluxo de trabalho que será usado em campanhas com base nesse modelo. Normalmente, esse fluxo de trabalho contém os parâmetros de direcionamento e uma ou mais entregas.
 
    >[!NOTE]
    >
@@ -53,12 +53,12 @@ Para criar um template para campanhas recorrentes, siga as etapas abaixo:
 Para criar a campanha recorrente e executar os workflows de acordo com o agendamento definido no template, você deve:
 
 1. Crie uma nova campanha com base no seu template de campanha recorrente.
-1. Preencha o agendamento de execução do workflow, na caixa **[!UICONTROL Schedule]** guia. O agendamento da campanha permite que você insira uma data de início ou execução automática de workflow para cada linha.
+1. Preencha o agendamento de execução do fluxo de trabalho, na guia **[!UICONTROL Schedule]**. O agendamento da campanha permite que você insira uma data de início ou execução automática de workflow para cada linha.
 
    Para cada linha, você pode adicionar as seguintes opções adicionais:
 
-   * Ativar o **[!UICONTROL To be approved]** opção para forçar as solicitações de aprovação de delivery no workflow.
-   * Ativar o **[!UICONTROL To be started]** opção para iniciar o workflow quando a data de início for atingida.
+   * Habilite a opção **[!UICONTROL To be approved]** para forçar as solicitações de aprovação de entrega no fluxo de trabalho.
+   * Habilite a opção **[!UICONTROL To be started]** para iniciar o fluxo de trabalho quando a data de início for atingida.
 
    O campo **[!UICONTROL Create in advance for]** permite criar todos os workflows que abrangem o período inserido.
 
@@ -88,7 +88,7 @@ Uma campanha periódica é uma campanha baseada em um template específico que p
 ### Criar o template da campanha {#create-the-campaign-template-1}
 
 1. Abra o explorador do Campaign e navegue até **[!UICONTROL Resources > Templates > Campaign templates]**.
-1. Duplicar o incorporado **[!UICONTROL Periodic campaign]** modelo.
+1. Duplique o modelo **[!UICONTROL Periodic campaign]** interno.
 1. Digite as propriedades do template.
 
    >[!NOTE]

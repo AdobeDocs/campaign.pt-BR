@@ -14,7 +14,7 @@ ht-degree: 49%
 
 # Criar programas e campanhas{#create-programs-and-campaigns}
 
-Os componentes da orquestração de campanha são encontrados no **[!UICONTROL Campaigns]** guia: aqui você pode ter uma visão geral dos programas e campanhas de marketing e seus elementos associados.
+Os componentes da orquestração de campanha são encontrados na guia **[!UICONTROL Campaigns]**: aqui você pode ter uma visão geral dos programas e campanhas de marketing, e seus elementos associados.
 
 Um programa de marketing é composto por campanhas, que são compostas por deliveries, recursos etc. Todas as informações relacionadas aos deliveries, orçamentos, revisores e documentos vinculados são agrupadas na campanha.
 
@@ -26,7 +26,7 @@ Um programa de marketing é composto por campanhas, que são compostas por deliv
 
 ### Criar a hierarquia de planos e programas {#create-plan-and-program}
 
-Cada campanha faz parte de um programa que, por sua vez, pertence a um plano. Todos os planos, programas e campanhas estão disponíveis por meio do **[!UICONTROL Campaign calendar]** no menu **Campanhas** guia.
+Cada campanha faz parte de um programa que, por sua vez, pertence a um plano. Todos os planos, programas e campanhas estão disponíveis através do menu **[!UICONTROL Campaign calendar]** na guia **Campanhas**.
 
 Antes de começar a criar suas campanhas e deliveries, configure a hierarquia de pastas para planos de marketing e programas.
 
@@ -54,7 +54,7 @@ Antes de começar a criar suas campanhas e deliveries, configure a hierarquia de
 
 Ao editar um programa, use as guias descritas abaixo para procurar e configurar.
 
-* A variável **Agendar** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você clicar no cabeçalho do calendário. Você pode criar uma campanha, um programa ou uma tarefa nesta página. [Saiba mais](#campaign-calendar)
+* A guia **Agendar** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você clicar no cabeçalho do calendário. Você pode criar uma campanha, um programa ou uma tarefa nesta página. [Saiba mais](#campaign-calendar)
 
 * A guia **Editar** permite personalizar o programa: nome, datas de início e término, orçamento, documentos vinculados etc.
 
@@ -64,7 +64,7 @@ Ao editar um programa, use as guias descritas abaixo para procurar e configurar.
 
 ### Criar uma campanha {#create-a-campaign}
 
-Você pode criar uma campanha por meio da lista de campanhas. Para exibir essa visualização, selecione o **[!UICONTROL Campaigns]** no menu **[!UICONTROL Campaigns]** e clique em **[!UICONTROL Create]**.
+Você pode criar uma campanha por meio da lista de campanhas. Para exibir esta exibição, selecione o menu **[!UICONTROL Campaigns]** no painel **[!UICONTROL Campaigns]** e clique em **[!UICONTROL Create]**.
 
 O campo **[!UICONTROL Program]** permite selecionar o programa ao qual a campanha será anexada. Essas informações são obrigatórias.
 
@@ -78,8 +78,8 @@ Clique em **[!UICONTROL OK]** para criar a campanha. Ele é adicionado à progra
 
 Você pode editar a campanha recém-criada e definir seus parâmetros. Para abrir e configurar essa campanha, você pode:
 
-1. Navegue pelo calendário da campanha, selecione a campanha que deseja exibir e clique no link **[!UICONTROL Open]** link.
-1. Navegue pelo **[!UICONTROL Schedule]** selecione a campanha e abra-a.
+1. Navegue pelo calendário da campanha, selecione a campanha que deseja exibir e clique no link **[!UICONTROL Open]**.
+1. Navegue pela guia **[!UICONTROL Schedule]** do programa, selecione a campanha e a abra.
 1. Navegue pela lista de campanhas e clique no nome da campanha a ser editada.
 
 Todas essas ações direcionam você ao painel de campanha.
@@ -109,21 +109,21 @@ Para cada campanha, os seguintes recursos estão disponíveis:
 
 >[!NOTE]
 >
->Para acessar e atualizar as configurações da campanha, navegue até a **[!UICONTROL Advanced campaign parameters...]** no **[!UICONTROL Edit]** guia.
+>Para acessar e atualizar as configurações da campanha, navegue até o link **[!UICONTROL Advanced campaign parameters...]** na guia **[!UICONTROL Edit]**.
 
 ### Monitorar uma campanha {#monitor-a-campaign}
 
 Para cada campanha, as tarefas, os recursos e as entregas são centralizados em um painel. Essa interface permite gerenciar e orquestrar ações de marketing.
 
-Com o Adobe Campaign, você pode configurar processos colaborativos para a criação e aprovação das várias etapas de suas campanhas: aprovação do orçamento, destino, conteúdo etc. Essa orquestração é detalhada em [nesta seção](marketing-campaign-approval.md).
+Com o Adobe Campaign, você pode configurar processos colaborativos para a criação e aprovação das várias etapas de suas campanhas: aprovação do orçamento, destino, conteúdo etc. Esta orquestração está detalhada em [esta seção](marketing-campaign-approval.md).
 
 ![](assets/campaigns-dashboard-approval-tab.png)
 
 >[!NOTE]
 >
->Os componentes disponíveis em uma campanha dependem do seu template. A configuração do template de campanha é apresentada em [nesta seção](marketing-campaign-templates.md#campaign-templates).
+>Os componentes disponíveis em uma campanha dependem do seu template. A configuração do modelo de campanha é apresentada em [esta seção](marketing-campaign-templates.md#campaign-templates).
 
-Depois que a campanha for realizada, use o **[!UICONTROL Reports]** link para acessar os relatórios da campanha.
+Depois que a campanha for realizada, use o link **[!UICONTROL Reports]** para acessar os relatórios da campanha.
 
 ![](assets/campaigns-reports-dashboard.png)
 
@@ -131,7 +131,7 @@ Depois que a campanha for realizada, use o **[!UICONTROL Reports]** link para ac
 
 O calendário da campanha mostra todos os programas, planos, campanhas e deliveries.
 
-Para editar um plano, programa, campanha ou delivery, navegue até o nome no calendário e use o **[!UICONTROL Open]** link. Ele é exibido em uma nova guia, conforme mostrado abaixo:
+Para editar um plano, programa, campanha ou entrega, navegue até o nome no calendário e use o link **[!UICONTROL Open]**. Ele é exibido em uma nova guia, conforme mostrado abaixo:
 
 ![](assets/campaign-calendar.png)
 

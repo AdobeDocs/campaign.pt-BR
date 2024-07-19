@@ -18,16 +18,16 @@ ht-degree: 67%
 
 O gerenciamento de ofertas no Adobe Campaign requer um gerenciamento cuidadoso para operar com eficiência. Para evitar problemas, é necessário encontrar um equilíbrio entre o número de contatos e o número de ofertas e categorias de ofertas.
 
-Esta seção apresenta as práticas recomendadas para gerenciar o **Interação** no Adobe Campaign, incluindo regras de elegibilidade, filtros predefinidos, atividades de workflow e opções de banco de dados.
+Esta seção apresenta as práticas recomendadas para gerenciar o módulo **Interação** no Adobe Campaign, incluindo regras de qualificação, filtros predefinidos, atividades de fluxo de trabalho e opções de banco de dados.
 
-* Quando **implementação e configuração de interações**, você deve estar ciente das seguintes recomendações:
+* Ao **implementar e configurar interações**, você deve estar ciente das seguintes recomendações:
 
    * Para o motor em lote (normalmente usado em comunicações de saída como email), a taxa de transferência é a principal preocupação, pois vários contatos podem ser manipulados ao mesmo tempo. O afunilamento típico é o desempenho do banco de dados.
    * A restrição principal do motor unitário (normalmente usado em comunicações de entrada como um banner em um site) é latência, pois alguém espera uma resposta. O afunilamento típico é o desempenho da CPU.
    * O design do catálogo de ofertas tem um enorme impacto no desempenho do Adobe Campaign.
    * Ao trabalhar com muitas ofertas, a prática recomendada é dividi-las em vários catálogos de ofertas.
 
-* Abaixo estão listadas algumas práticas recomendadas para trabalhar com o **regras de elegibilidade**:
+* Abaixo estão listadas algumas práticas recomendadas para trabalhar com **regras de qualificação**:
 
    * Simplifique as regras. A complexidade das regras afeta o desempenho enquanto estende a pesquisa. Uma regra complexa é qualquer regra com mais de cinco condições.
    * Para aumentar o desempenho, as regras podem ser divididas em filtros predefinidos distintos que são compartilhados entre várias ofertas.
@@ -39,7 +39,7 @@ Esta seção apresenta as práticas recomendadas para gerenciar o **Interação*
    * É recomendável ter um número limitado de ofertas por espaço de oferta. Isso garante uma recuperação mais rápida de ofertas em qualquer espaço.
    * Use índices, principalmente em colunas de pesquisa usadas com frequência.
 
-* Abaixo estão listadas algumas práticas recomendadas relacionadas ao **tabela de propostas**:
+* Abaixo estão listadas algumas práticas recomendadas relacionadas à **tabela de propostas**:
 
    * Use um número mínimo de regras para tornar o processamento mais rápido possível.
    * Limite o número de registros na tabela de apresentação: mantenha os registros necessários para rastrear sua atualização de status e o que é necessário para as regras, e arquive em outro sistema.
@@ -53,15 +53,15 @@ Esta seção contém recomendações mais detalhadas sobre como gerenciar oferta
 
 ### Vários espaços de oferta em um email {#multiple-offer-spaces}
 
-Ao incluir ofertas em deliveries, elas são geralmente selecionadas em upstream no fluxo de trabalho do Campaign por meio de uma **Enriquecimento** atividade de workflow (ou outra atividade semelhante).
+Ao incluir ofertas em deliveries, elas geralmente são selecionadas em upstream no fluxo de trabalho do Campaign por meio de uma atividade de fluxo de trabalho **Enriquecimento** (ou outra atividade semelhante).
 
-Ao selecionar ofertas em uma **Enriquecimento** atividade, você pode escolher qual espaço de ofertas usar. No entanto, independentemente do espaço de ofertas selecionado, o menu de personalização da entrega depende do espaço de ofertas configurado na entrega.
+Ao selecionar ofertas em uma atividade de **Enriquecimento**, você pode escolher qual espaço de ofertas usar. No entanto, independentemente do espaço de ofertas selecionado, o menu de personalização da entrega depende do espaço de ofertas configurado na entrega.
 
 No exemplo abaixo, o espaço de ofertas selecionado na entrega é **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Se o espaço de ofertas selecionado na entrega não tiver uma função de renderização HTML configurada, você não o verá no menu da entrega e ele não estará disponível para seleção. Isso é independente do espaço de ofertas selecionado no **Enriquecimento** atividade.
+Se o espaço de ofertas selecionado na entrega não tiver uma função de renderização HTML configurada, você não o verá no menu da entrega e ele não estará disponível para seleção. Isso é independente do espaço de ofertas selecionado na atividade **Enrichment**.
 
 No exemplo abaixo, a função de renderização HTML está disponível na lista suspensa porque o espaço de ofertas selecionado na entrega tem uma função de renderização:
 
@@ -89,25 +89,25 @@ Também é possível armazenar dados adicionais na tabela de proposta ao usar in
 
 Qualquer campo da tabela temporária do fluxo de trabalho cujo nome corresponda a um nome de campo na tabela de proposta é copiado para o mesmo campo na tabela de proposta.
 
-Por exemplo, ao selecionar uma oferta manualmente (sem interação) em uma **Enriquecimento** atividade do workflow, os campos padrão são definidos da seguinte maneira:
+Por exemplo, ao selecionar uma oferta manualmente (sem interação) em uma atividade de fluxo de trabalho **Enriquecimento**, os campos padrão são definidos da seguinte maneira:
 
 ![](assets/Interaction-best-practices-manual-offer-std-fields.png)
 
-Outros campos podem ser adicionados, como um `@rank` campo:
+Campos adicionais podem ser adicionados, como um campo `@rank`:
 
 ![](assets/Interaction-best-practices-manual-offer-add-fields.png)
 
-Porque há um campo na tabela de propostas chamado `@rank`, o valor na tabela temporária do workflow será copiado.
+Como há um campo na tabela de proposta chamado `@rank`, o valor na tabela temporária do fluxo de trabalho será copiado.
 
-Para obter mais informações sobre como armazenar campos adicionais na tabela de propostas, consulte [nesta seção](interaction-send-offers.md#storing-offer-rankings-and-weights).
+Para obter mais informações sobre como armazenar campos adicionais na tabela de propostas, consulte [esta seção](interaction-send-offers.md#storing-offer-rankings-and-weights).
 
 Para ofertas de saída com interação, isso é útil quando várias ofertas são selecionadas e você deseja gravar em qual ordem elas serão exibidas em um email.
 
 Você também pode armazenar metadados adicionais diretamente na tabela de proposta, como o nível de gastos atual, para manter registros históricos sobre a utilização feita no momento em que as ofertas foram geradas.
 
-Ao usar a interação de saída, a variável `@rank` pode ser adicionado, como no exemplo acima, mas seu valor é automaticamente definido com base na ordem retornada pela interação. Por exemplo, se estiver usando o Interaction para selecionar três ofertas, a variável `@rank` terá os valores 1, 2 e 3 retornados.
+Ao usar a interação de saída, o campo `@rank` pode ser adicionado, como no exemplo acima, mas seu valor é automaticamente definido com base na ordem retornada pela interação. Por exemplo, se estiver usando a interação para selecionar três ofertas, o campo `@rank` terá os valores 1, 2 e 3 retornados.
 
-Ao usar a interação e selecionar ofertas manualmente, o usuário pode combinar ambas as abordagens. Por exemplo, o usuário pode definir manualmente a variável `@rank` para ser 1 para a oferta selecionada manualmente e use uma expressão como `"1 + @rank"` para as ofertas retornadas pela Interação. Supondo que a interação selecione três ofertas, as ofertas retornadas por ambas as abordagens serão classificadas de 1 a 4:
+Ao usar a interação e selecionar ofertas manualmente, o usuário pode combinar ambas as abordagens. Por exemplo, o usuário pode definir manualmente o campo `@rank` como 1 para a oferta selecionada manualmente e usar uma expressão como `"1 + @rank"` para as ofertas retornadas pela interação. Supondo que a interação selecione três ofertas, as ofertas retornadas por ambas as abordagens serão classificadas de 1 a 4:
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 

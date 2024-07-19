@@ -19,17 +19,17 @@ Quando o delivery estiver configurado e pronto para ser enviado, certifique-se d
 
 Depois de concluído, confirme o delivery para iniciar o delivery de mensagens.
 
-Rastrear a execução da entrega a partir de **Entrega** , acessível por meio do detalhe deste delivery ou pela lista de deliveries.
+Rastreie a execução da entrega a partir da guia **Entrega**, acessível por meio do detalhe desta entrega ou pela lista de entregas.
 
 ## Monitorar emails {#email-monitoring}
 
-Depois de enviado, verifique o status do delivery na caixa **Painel de entrega** e acesse os logs e relatórios do delivery para confirmar se as mensagens foram enviadas corretamente.
+Depois de enviado, verifique seu status de entrega no **Painel de Entrega** e acesse os logs e relatórios de entrega para confirmar se as mensagens foram enviadas corretamente.
 
 No painel de delivery, é possível verificar as mensagens processadas e os logs de auditoria do delivery. Você também pode controlar o status das mensagens nos logs do delivery.
 
 >[!NOTE]
 >
->Os status da entrega não são exibidos em tempo real. Saiba mais sobre o Serviço de feedback por email [nesta seção](#email-feedback-service).
+>Os status da entrega não são exibidos em tempo real. Saiba mais sobre o Serviço de Comentários por Email [nesta seção](#email-feedback-service).
 
 
 [Saiba mais sobre o monitoramento de entrega na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
@@ -42,7 +42,7 @@ Disponível para todos os clientes do Campaign v8, garante escalabilidade, alta 
 
 ### Benefícios
 
-O Adobe Campaign usa um Mail Transfer Agent (MTA) que executa o MTA de email comercial do SparkPost chamado **Momento**.
+O Adobe Campaign usa um Mail Transfer Agent (MTA) que executa o MTA de email comercial do SparkPost chamado **Momentum**.
 
 O Momentum representa uma tecnologia MTA inovadora e de alto desempenho, que inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançar e manter as taxas ideais de delivery da caixa de entrada.
 
@@ -52,15 +52,15 @@ O Momentum representa uma tecnologia MTA inovadora e de alto desempenho, que inc
 
 ### Qualificação de rejeição
 
-Para **síncrono** mensagens de erro de falha de delivery, o MTA determina o tipo de rejeição e a qualificação e envia essas informações para o Campaign.
+Para mensagens de erro de falha de entrega **síncrona**, o MTA determina o tipo de rejeição e a qualificação e envia essas informações para o Campaign.
 
 O MTA qualifica a rejeição de SMTP e envia essa qualificação de volta ao Campaign no formato de um código de rejeição mapeado para um motivo de rejeição e qualificação do Campaign.
 
 >[!NOTE]
 >
->Atualmente **assíncrono** As rejeições são qualificadas pelo processo inMail por meio da **[!UICONTROL Inbound email]** regras.
+>Atualmente, **as rejeições assíncronas** são qualificadas pelo processo do InMail por meio das **[!UICONTROL Inbound email]** regras.
 
-Saiba mais sobre falhas de delivery em [nesta seção](delivery-failures.md).
+Saiba mais sobre falhas de entrega em [esta seção](delivery-failures.md).
 
 
 ### Regras MX específicas
@@ -75,19 +75,19 @@ O DKIM (Domain Keys Identified Mail) é um método de autenticação usado para 
 
 No Adobe Campaign, a assinatura de autenticação de email do DKIM é executada pelo MTA.
 
-Saiba mais sobre o DKIM no [Guia de práticas recomendadas de capacidade de delivery do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication){target="_blank"}.
+Saiba mais sobre o DKIM no [Manual de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication){target="_blank"}.
 
 ## Serviço de feedback por email {#email-feedback-service}
 
 O EFS (Campaign Email Feedback Service, Serviço de feedback por email) relata o status de cada delivery de email enviado com o Adobe Campaign.
 
-Depois que o delivery é iniciado, não há alteração no **[!UICONTROL Success]** porcentagem quando a mensagem é transmitida com êxito do Campaign para o MTA. Os logs da entrega mostram o status **[!UICONTROL Taken into account by the service provider]** para cada endereço direcionado.
+Depois que a entrega é iniciada, não há alteração na porcentagem de **[!UICONTROL Success]** quando a mensagem é transmitida com êxito do Campaign para o MTA. Os logs da entrega mostram o status **[!UICONTROL Taken into account by the service provider]** para cada endereço direcionado.
 
-Quando a mensagem é realmente entregue aos perfis direcionados e uma vez que essas informações são relatadas em tempo real do MTA, os logs do delivery mostram as **[!UICONTROL Sent]** status para cada endereço que recebeu a mensagem com êxito. A porcentagem de **[!UICONTROL Success]** aumenta de acordo com cada entrega bem-sucedida.
+Quando a mensagem é realmente entregue aos perfis direcionados e uma vez que essas informações são relatadas em tempo real do MTA, os logs de entrega mostram o status **[!UICONTROL Sent]** para cada endereço que recebeu a mensagem com êxito. A porcentagem de **[!UICONTROL Success]** aumenta de acordo com cada entrega bem-sucedida.
 
-Quando mensagens com rejeição permanente são relatadas do MTA, o status do log muda de **[!UICONTROL Taken into account by the service provider]** para **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
+Quando mensagens com rejeição permanente são relatadas do MTA, o status do log muda de **[!UICONTROL Taken into account by the service provider]** para **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Quando mensagens com rejeição temporária são relatadas do MTA, o status do log permanece inalterado (**[!UICONTROL Taken into account by the service provider]**): somente o [motivo do erro](delivery-failures.md#delivery-failure-reasons) está atualizado<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. A porcentagem de **[!UICONTROL Success]** permanece inalterada. As mensagens com rejeição temporária são então repetidas durante todo o delivery [período de validade](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}:
+Quando mensagens com rejeição temporária são relatadas do MTA, o status do log permanece inalterado (**[!UICONTROL Taken into account by the service provider]**): somente o [motivo do erro](delivery-failures.md#delivery-failure-reasons) é atualizado<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. A porcentagem de **[!UICONTROL Success]** permanece inalterada. As mensagens com rejeição temporária são então repetidas durante todo o [período de validade](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"} da entrega:
 
 * Se uma nova tentativa for bem-sucedida antes do fim do período de validade, o status da mensagem mudará para **[!UICONTROL Sent]** e a porcentagem **[!UICONTROL Success]** será aumentada de maneira apropriada.
 

@@ -39,7 +39,7 @@ Para configurar arbitragem entre campanhas usando o Adobe Campaign, comece crian
 
 Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga estas etapas:
 
-1. Na lista de regras de tipologia de campanha, selecione a **[!UICONTROL New]** ícone acima da lista.
+1. Na lista de regras de tipologia de campanha, selecione o ícone **[!UICONTROL New]** acima da lista.
 
    ![](assets/campaign_opt_create_a_rule_01.png)
 
@@ -57,7 +57,7 @@ Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga e
 
    >[!NOTE]
    >
-   >No contexto de um [Implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md) do Campaign, os deliveries agendados não são considerados.
+   >No contexto de uma [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md) do Campaign, as entregas programadas não são consideradas.
 
 1. Defina o método para calcular o número mais alto de mensagens.
 
@@ -108,7 +108,7 @@ Você pode indexar o número de mensagens autorizadas de acordo com o segmento a
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Para definir o limite, é possível usar uma dimensão vinculada à targeting dimension: por exemplo, para incluir mensagens enviadas aos perfis de recipients armazenados no [tabela de visitantes](../../v8/audiences/target-mappings.md) ou para evitar o envio de mais de uma mensagem por semana para a mesma família (o que pode se referir a vários endereços de email) identificada em uma dimensão vinculada à dos recipients.
+Para definir o limite, você pode usar uma dimensão vinculada à targeting dimension: por exemplo, para incluir mensagens enviadas aos perfis de recipients armazenados na [tabela de visitantes](../../v8/audiences/target-mappings.md) ou para evitar o envio de mais de uma mensagem por semana para a mesma família de recipients, (o que pode se referir a vários endereços de email) identificada em uma dimensão vinculada aos recipients.
 
 Para fazer isso, selecione a opção **[!UICONTROL Count messages on a linked dimension]** e selecione a tabela de visitantes ou de contatos.
 
@@ -148,7 +148,7 @@ Por exemplo, uma regra de pressão que define um limite de 2 mensagens por seman
 >
 >Somente os deliveries já enviados são considerados ao calcular o limite.
 
-Para restringir os deliveries considerados para um período de 2 semanas, informe **15d** no **[!UICONTROL Concerned period]** field: no cálculo são considerados os deliveries realizados em até duas semanas antes da data do delivery no qual a regra é aplicada
+Para restringir os deliveries considerados para um período de 2 semanas, insira **15d** no campo **[!UICONTROL Concerned period]**: no cálculo são considerados os deliveries realizados em até duas semanas antes da data do delivery no qual a regra é aplicada
 
 A data de início do período depende de como o banco de dados está configurado.
 

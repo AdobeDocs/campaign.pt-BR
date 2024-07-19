@@ -37,7 +37,7 @@ Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
     </div>
     <br>     
     <div>
-    <a href="workflow/build-a-workflow.md">Criar o primeiro fluxo de trabalho</a>
+    <a href="workflow/build-a-workflow.md">Crie seu primeiro fluxo de trabalho</a>
     </div>
     <br>
     <div>
@@ -55,7 +55,7 @@ Visite os guias abaixo e saiba como criar automação com o Adobe Campaign.
     </div>
     <br>
     <div>
-    <a href="campaigns/marketing-campaign-create.md">Criar sua primeira campanha</a>
+    <a href="campaigns/marketing-campaign-create.md">Crie sua primeira campanha</a>
     </div>
     <br>
     <div>

@@ -27,7 +27,7 @@ No exemplo a seguir, criamos uma regra de tipologia para uma campanha de fidelid
 
 Para projetar uma nova regra de capacidade, siga as etapas abaixo:
 
-1. No **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** , clique em **[!UICONTROL New]**.
+1. Na pasta **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]**, clique em **[!UICONTROL New]**.
 1. Selecione um tipo de regra **[!UICONTROL Capacity]**.
 
    ![](assets/campaign_opt_create_capacity_01.png)
@@ -51,7 +51,7 @@ Para projetar uma nova regra de capacidade, siga as etapas abaixo:
 
 ## Definir a carga máxima {#define-the-maximum-load}
 
-Para definir a carga máxima, você precisa definir linhas de disponibilidade. Para fazer isso, duas opções estão disponíveis: você pode [criar uma ou mais linhas de disponibilidade](#add-availability-lines-one-by-one) ou crie intervalos de disponibilidade. A frequência desses períodos pode ser automatizada. [Saiba mais](#add-a-set-of-availability-lines).
+Para definir a carga máxima, você precisa definir linhas de disponibilidade. Para fazer isso, duas opções estão disponíveis: você pode [criar manualmente uma ou mais linhas de disponibilidade](#add-availability-lines-one-by-one) ou criar intervalos de disponibilidade. A frequência desses períodos pode ser automatizada. [Saiba mais](#add-a-set-of-availability-lines).
 
 ### Adicionar linhas de disponibilidade uma por uma {#add-availability-lines-one-by-one}
 

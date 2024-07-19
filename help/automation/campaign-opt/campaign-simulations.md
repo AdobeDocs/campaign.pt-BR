@@ -22,9 +22,9 @@ A simulação permite monitorar e comparar o impacto das entregas.
 ### Cuidado
 
 
-Entregas preparadas em **Teste** não têm impacto entre si ao avaliar uma campanha no marketing distribuído ou desde que os deliveries não estejam programados no calendário provisional.
+Os deliveries preparados no modo **Test** não têm impacto entre si ao avaliar uma campanha no marketing distribuído ou enquanto os deliveries não estiverem agendados no calendário provisional.
 
-Isso significa que as regras de pressão e capacidade serão aplicadas apenas a entregas no modo **[!UICONTROL Target estimation and message personalization]**. Entregas em **[!UICONTROL Estimation and approval of the provisional target]** e em **[!UICONTROL Target evaluation]** modo não são considerados.
+Isso significa que as regras de pressão e capacidade serão aplicadas apenas a entregas no modo **[!UICONTROL Target estimation and message personalization]**. As entregas no modo **[!UICONTROL Estimation and approval of the provisional target]** e no modo **[!UICONTROL Target evaluation]** não são consideradas.
 
 O modo é escolhido na subguia **[!UICONTROL Typology]** das propriedades da entrega.
 
@@ -125,7 +125,7 @@ Uma vez concluída a execução, abra a simulação e clique na guia **[!UICONTR
 1. A subguia **[!UICONTROL Alerts]** agrupa todas as mensagens de alerta geradas durante a simulação. As mensagens de alerta podem ser enviadas no caso de sobrecarga de capacidade (se o número de destinatários exceder a capacidade definida, por exemplo).
 1. A subguia **[!UICONTROL Exploration of the exclusions]** permite criar uma tabela de análise de resultado. O usuário precisa indicar variáveis nos eixos abscissa/ordenadas.
 
-   Para um exemplo de criação de tabela de análise, consulte o fim de [nesta seção](#explore-results).
+   Para um exemplo de criação de tabela de análise, consulte o fim de [esta seção](#explore-results).
 
 ### Exibir resultados {#view-results}
 
@@ -192,12 +192,12 @@ Sempre que uma simulação é executada, resultados anteriores são substituído
 
 ### Relatórios de eixos {#reporting-axes}
 
-A guia **[!UICONTROL Calculations]** permite definir eixos de relatórios no target. Esses eixos serão usados durante [análise de resultado](#explore-results).
+A guia **[!UICONTROL Calculations]** permite definir eixos de relatórios no target. Estes eixos serão usados durante a [análise de resultado](#explore-results).
 
 >[!NOTE]
 >
 >Recomendamos definir eixos de cálculo nos templates de simulação, em vez de individualmente para cada simulação.\
->Os modelos de simulação são salvos no **[!UICONTROL Resources > Templates > Simulation templates]** pasta do explorador do Campaign.
+>Os modelos de simulação são salvos na pasta **[!UICONTROL Resources > Templates > Simulation templates]** do explorador do Campaign.
 
 **Exemplo:**
 

@@ -26,4 +26,4 @@ Todos os fluxos de trabalho da campanha são centralizados no nó **[!UICONTROL 
 
 ![](assets/campaigns_wf.png)
 
-Os workflows da campanha e exemplos de implementação são detalhados em [nesta seção](../campaigns/marketing-campaign-target.md).
+Workflows da campanha e exemplos de implementação são detalhados em [esta seção](../campaigns/marketing-campaign-target.md).

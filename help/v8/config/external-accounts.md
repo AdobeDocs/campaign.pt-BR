@@ -28,7 +28,7 @@ Você pode acessar contas externas do Adobe Campaign **[!UICONTROL Explorer]**: 
 >
 >* Como um usuário Cloud Service gerenciado, as contas externas são configuradas para sua instância pelo Adobe e não devem ser modificadas.
 >
->* No contexto de um [Implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), um **[!UICONTROL Full FDA]** A conta externa do (ffda) gerencia a conexão entre o banco de dados local do Campaign e o banco de dados da nuvem ([!DNL Snowflake]).
+>* No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), uma conta externa **[!UICONTROL Full FDA]** (FDA) específica gerencia a conexão entre o banco de dados local do Campaign e o banco de dados da nuvem ([!DNL Snowflake]).
 >
 
 ## Contas externas específicas de campanha {#ac-external-accounts}
@@ -39,12 +39,12 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para ativar e execu
 
 >[!NOTE]
 >
->A autenticação OAuth 2.0 do Microsoft Exchange Online para o recurso POP3 está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [nesta seção](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+>A autenticação OAuth 2.0 do Microsoft Exchange Online para o recurso POP3 está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 >
 
 A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
-Saiba mais sobre emails de entrada no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
+Saiba mais sobre emails de entrada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -56,7 +56,7 @@ Para configurar a conta externa do **[!UICONTROL Bounce mails (defaultPopAccount
 
 * **[!UICONTROL Account]** - Nome do usuário.
 
-* **[!UICONTROL Password]** - Senha da conta do usuário.
+* **[!UICONTROL Password]** - Senha da conta de usuário.
 
 * **[!UICONTROL Encryption]** - Tipo de criptografia escolhida entre **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** ou **[!UICONTROL POP3S]**.
 
@@ -68,18 +68,18 @@ Para configurar a conta externa do **[!UICONTROL Bounce mails (defaultPopAccount
 
 >[!CAUTION]
 >
->Antes de configurar sua conta externa POP3 usando o Microsoft OAuth 2.0, primeiro é necessário registrar seu aplicativo no portal do Azure. Para obter mais informações, consulte [página](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
+>Antes de configurar sua conta externa POP3 usando o Microsoft OAuth 2.0, primeiro é necessário registrar seu aplicativo no portal do Azure. Para obter mais informações, consulte esta [página](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
 >
 
-Para configurar um POP3 externo usando o Microsoft OAuth 2.0, verifique o **[!UICONTROL Microsoft OAuth 2.0]** e preencha os seguintes campos:
+Para configurar um POP3 externo usando o Microsoft OAuth 2.0, marque a opção **[!UICONTROL Microsoft OAuth 2.0]** e preencha os seguintes campos:
 
-* **[!UICONTROL Azure tenant]** - A ID do Azure (ou a ID do diretório (locatário)) pode ser encontrada no **Fundamentos** lista suspensa da visão geral do aplicativo no portal do Azure.
+* **[!UICONTROL Azure tenant]** - A ID do Azure (ou a ID do Diretório (locatário)) pode ser encontrada no menu suspenso **Essentials** da visão geral do seu aplicativo no portal do Azure.
 
-* **[!UICONTROL Azure Client ID]** - A ID do cliente (ou a ID do aplicativo (cliente)) pode ser encontrada no **Fundamentos** lista suspensa da visão geral do aplicativo no portal do Azure.
+* **[!UICONTROL Azure Client ID]** - A ID do Cliente (ou a ID do Aplicativo (cliente)) pode ser encontrada no menu suspenso **Essentials** da visão geral do seu aplicativo no portal do Azure.
 
-* **[!UICONTROL Azure Client secret]** - A ID do segredo do cliente pode ser encontrada no **Segredos do cliente** coluna da **Certificados e segredos** do aplicativo no portal do Azure.
+* **[!UICONTROL Azure Client secret]** - A ID do segredo do cliente pode ser encontrada na coluna **Segredos do cliente** do menu **Certificados e segredos** do seu aplicativo no portal do Azure.
 
-* **[!UICONTROL Azure Redirect URL]** - O URL de redirecionamento pode ser encontrado no **Autenticação** do aplicativo no portal do Azure. Ela deve terminar com a seguinte sintaxe `nl/jsp/oauth.jsp`, por exemplo, `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+* **[!UICONTROL Azure Redirect URL]** - A URL de redirecionamento pode ser encontrada no menu **Autenticação** do seu aplicativo no portal do Azure. Ele deve terminar com a seguinte sintaxe `nl/jsp/oauth.jsp`, ex.: `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
   Depois de inserir suas credenciais diferentes, você pode clicar em **[!UICONTROL Setup the connection]** para concluir a configuração da conta externa.
 
@@ -89,36 +89,36 @@ A conta externa **[!UICONTROL Routing]** permite configurar cada canal disponív
 
 ### Instância de execução {#execution-instance}
 
-No contexto de mensagens transacionais, as instâncias de execução são vinculadas à instância de controle e as conectam. Os templates de mensagem transacional são implantados na instância de execução. Saiba mais sobre a arquitetura do Centro de mensagens em [esta página](../architecture/architecture.md#transac-msg-archi).
+No contexto de mensagens transacionais, as instâncias de execução são vinculadas à instância de controle e as conectam. Os templates de mensagem transacional são implantados na instância de execução. Saiba mais sobre a arquitetura do Centro de Mensagens em [esta página](../architecture/architecture.md#transac-msg-archi).
 
 ## Acesso a contas externas de Sistemas Externos {#external-syst-external-accounts}
 
-* **Banco de dados externo (FDA)** - A **Banco de dados externo** A conta externa do tipo é usada para se conectar a um banco de dados externo por meio do FDA (Federated Data Access — Acesso a Dados Federados). Saiba mais sobre a opção Federated Data Access (FDA) no [nesta seção](../connect/fda.md).
+* **Banco de dados externo (FDA)** - A conta externa do tipo **Banco de dados externo** é usada para se conectar a um banco de dados externo por meio do Federated Data Access (FDA). Saiba mais sobre a opção Federated Data Access (FDA) em [esta seção](../connect/fda.md).
 
   Os bancos de dados externos compatíveis com o Adobe Campaign v8 estão listados na [Matriz de compatibilidade](../start/compatibility-matrix.md)
 
-* **X (anteriormente conhecido como Twitter)** - A **Twitter** A conta externa do tipo é usada para conectar o Campaign à sua conta X, para postar mensagens em seu nome. Saiba mais sobre a integração do X no [nesta seção](../connect/ac-tw.md).
+* **X (antigo Twitter)** - A conta externa do tipo **Twitter** é usada para conectar o Campaign à sua conta X e postar mensagens em seu nome. Saiba mais sobre a integração do X em [esta seção](../connect/ac-tw.md).
 
 ## Contas externas de Integração de soluções Adobe {#adobe-integration-external-accounts}
 
-* **Adobe Experience Cloud** - A **[!UICONTROL Adobe Experience Cloud]** a conta externa é usada para implementar o Adobe Identity Management Service (IMS) para se conectar à Adobe Campaign. Saiba mais sobre o Adobe Identity Management Service (IMS) em [nesta seção](../start/connect.md#logon-to-ac).
+* **Adobe Experience Cloud** - A conta externa **[!UICONTROL Adobe Experience Cloud]** é usada para implementar o Adobe Identity Management Service (IMS) para conexão com a Adobe Campaign. Saiba mais sobre o Adobe Identity Management Service (IMS) em [esta seção](../start/connect.md#logon-to-ac).
 
-* **Web Analytics** - A **[!UICONTROL Web Analytics (Adobe Analytics)]** a conta externa do é usada para configurar a transferência de dados do Adobe Analytics para o Adobe Campaign. Saiba mais sobre a integração Adobe Campaign - Adobe Analytics no [esta página](../connect/ac-aa.md).
+* **Web Analytics** - A conta externa **[!UICONTROL Web Analytics (Adobe Analytics)]** é usada para configurar a transferência de dados do Adobe Analytics para o Adobe Campaign. Saiba mais sobre a integração Adobe Campaign - Adobe Analytics em [esta página](../connect/ac-aa.md).
 
-* **Adobe Experience Manager** - A **[!UICONTROL AEM]** a conta externa do permite gerenciar o conteúdo dos deliveries de email, bem como os formulários diretamente no Adobe Experience Manager. Saiba mais sobre a integração Adobe Campaign - Adobe Analytics no [esta página](../connect/ac-aem.md).
+* **Adobe Experience Manager** - A conta externa do **[!UICONTROL AEM]** permite gerenciar o conteúdo dos emails entregues, bem como seus formulários diretamente no Adobe Experience Manager. Saiba mais sobre a integração Adobe Campaign - Adobe Analytics em [esta página](../connect/ac-aem.md).
 
 
 ## Contas externas do Conector CRM {#crm-external-accounts}
 
-* **Microsoft Dynamics CRM** - A **[!UICONTROL Microsoft Dynamics CRM]** conta externa do permite importar e exportar dados do Microsoft Dynamics para o Adobe Campaign. Saiba mais sobre a integração Adobe Campaign - Microsoft Dynamics CRM no [esta página](../connect/ac-ms-dyn.md).
+* **Microsoft Dynamics CRM** - A conta externa **[!UICONTROL Microsoft Dynamics CRM]** permite importar e exportar dados do Microsoft Dynamics para o Adobe Campaign. Saiba mais sobre a integração Adobe Campaign - Microsoft Dynamics CRM em [esta página](../connect/ac-ms-dyn.md).
 
-* **Salesforce.com** - A **[!UICONTROL Salesforce CRM]** conta externa permite importar e exportar dados do Salesforce para o Adobe Campaign. Saiba mais sobre a integração Adobe Campaign - Salesforce.com CRM no [esta página](../connect/ac-sfdc.md).
+* **Salesforce.com** - A conta externa **[!UICONTROL Salesforce CRM]** permite importar e exportar dados do Salesforce para o Adobe Campaign. Saiba mais sobre a integração Adobe Campaign - Salesforce.com CRM em [esta página](../connect/ac-sfdc.md).
 
 ## Contas externas de Dados de Transferência {#transfer-data-external-accounts}
 
-Essas contas externas podem ser usadas para importar ou exportar dados para o Adobe Campaign usando um **[!UICONTROL Transfer file]** atividade de workflow. Saiba mais sobre **Transferência de arquivo** em fluxos de trabalho no [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+Essas contas externas podem ser usadas para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Saiba mais sobre **Transferência de arquivos** em fluxos de trabalho em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
-* **FTP e SFTP** - A **FTP** a conta externa do permite configurar e testar o acesso a um servidor fora do Adobe Campaign. Para configurar conexões com sistemas externos, como servidores SFTP ou FTP 898 usados para transferências de arquivos, você pode criar suas próprias contas externas.
+* **FTP e SFTP** - A conta externa **FTP** permite configurar e testar o acesso a um servidor fora do Adobe Campaign. Para configurar conexões com sistemas externos, como servidores SFTP ou FTP 898 usados para transferências de arquivos, você pode criar suas próprias contas externas.
 
   Para fazer isso, especifique nesta conta externa o endereço e as credenciais usadas para estabelecer a conexão com o servidor SFTP ou FTP.
 
@@ -126,22 +126,22 @@ Essas contas externas podem ser usadas para importar ou exportar dados para o Ad
   >
   >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
 
-* **Serviço de armazenamento simples Amazon (S3)** - A **AWS S3** conector pode ser usado para importar ou exportar dados para o Adobe Campaign usando um **[!UICONTROL Transfer file]** atividade de workflow. Como você está configurando essa nova conta externa, é necessário fornecer os seguintes detalhes:
+* **Serviço de Armazenamento Simples da Amazon (S3)** - O conector do **AWS S3** pode ser usado para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Como você está configurando essa nova conta externa, é necessário fornecer os seguintes detalhes:
 
-   * **[!UICONTROL AWS S3 Account Server]**: o URL do servidor, preenchido da seguinte maneira:   `<S3bucket name>.s3.amazonaws.com/<s3object path>`
+   * **[!UICONTROL AWS S3 Account Server]**: URL do servidor, preenchido da seguinte maneira:   `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
-   * **[!UICONTROL AWS access key ID]**: saiba como encontrar a ID da chave de acesso do AWS no [Documentação do Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
+   * **[!UICONTROL AWS access key ID]**: Saiba como encontrar sua ID da chave de acesso do AWS na [documentação do Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
-   * **[!UICONTROL Secret access key to AWS]**: saiba como encontrar a chave de acesso secreta para o AWS no [Documentação do Amazon](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}.
+   * **[!UICONTROL Secret access key to AWS]**: Saiba como encontrar sua chave de acesso secreta para o AWS na [documentação do Amazon](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}.
 
-   * **[!UICONTROL AWS Region]**: saiba mais sobre regiões do AWS em [Documentação do Amazon](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
+   * **[!UICONTROL AWS Region]**: Saiba mais sobre regiões do AWS em [documentação do Amazon](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
 
-   * A variável **[!UICONTROL Use server side encryption]** permite armazenar o arquivo no modo criptografado S3. Saiba como encontrar a ID da chave de acesso e a chave de acesso secreta no [Documentação do Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
+   * A caixa de seleção **[!UICONTROL Use server side encryption]** permite armazenar o arquivo no modo criptografado S3. Saiba como encontrar a ID da chave de acesso e a chave de acesso secreta na [documentação do Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
-* **Armazenamento Azure Blob** - A **Azure** conta externa pode ser usada para importar ou exportar dados para o Adobe Campaign usando uma **[!UICONTROL Transfer file]** atividade de workflow. Para configurar o **Azure** para trabalhar com a Adobe Campaign, é necessário fornecer os seguintes detalhes:
+* **Armazenamento Azure Blob** - A conta externa do **Azure** pode ser usada para importar ou exportar dados para a Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Para configurar a conta externa do **Azure** para funcionar com a Adobe Campaign, você precisa fornecer os seguintes detalhes:
 
-   * **[!UICONTROL Server]**: a URL do seu servidor de armazenamento Azure Blob.
+   * **[!UICONTROL Server]**: URL do seu servidor de armazenamento Azure Blob.
 
    * **[!UICONTROL Encryption]**: Tipo de criptografia entre **[!UICONTROL None]** ou **[!UICONTROL SSL]**.
 
-   * **[!UICONTROL Access key]**: saiba como encontrar o seu **[!UICONTROL Access key]** in [Documentação do Microsoft](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}.
+   * **[!UICONTROL Access key]**: Saiba como encontrar seu **[!UICONTROL Access key]** na [documentação do Microsoft](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}.

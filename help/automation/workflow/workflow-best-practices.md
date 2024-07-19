@@ -105,11 +105,11 @@ Os workflows arquivados podem ser mantidos em plataformas de desenvolvimento ou 
 
 ### Logs {#logs}
 
-O método JavaScript **[!UICONTROL logInfo()]** O é uma solução para depurar um workflow. No entanto, ele deve ser usado com cuidado, especialmente para atividades executadas com frequência: pode sobrecarregar os logs e aumentar significativamente o tamanho da tabela de log.
+O método do JavaScript **[!UICONTROL logInfo()]** é uma solução para depurar um fluxo de trabalho. No entanto, ele deve ser usado com cuidado, especialmente para atividades executadas com frequência: pode sobrecarregar os logs e aumentar significativamente o tamanho da tabela de log.
 
 ### Manter populações interinas
 
-A variável **Manter o resultado de públicos provisórios entre duas execuções** A opção mantém tabelas temporárias entre duas execuções de um workflow.
+A opção **Keep the result of interim populations between two executions** mantém tabelas temporárias entre duas execuções de um fluxo de trabalho.
 
 Está disponível na guia **[!UICONTROL General]** das propriedades do fluxo de trabalho e pode ser usado para desenvolvimento e testes para monitorar dados e verificar resultados. Você pode usar essa opção em ambientes de desenvolvimento, mas nunca usá-la em ambientes de produção. Manter tabelas temporárias pode resultar no aumento significativo do tamanho de banco de dados e, por fim, atingir o limite de tamanho. Além disso, o backup ficará lento.
 
@@ -122,7 +122,7 @@ Somente as tabelas de trabalho da última execução do workflow são mantidas. 
 
 ### Registrar consultas SQL
 
-A variável **Registrar consultas SQL no journal** está disponível na **[!UICONTROL Execution]** das propriedades do fluxo de trabalho. Essa opção registra todas as consultas SQL das diferentes atividades e fornece uma maneira de ver o que é realmente executado pela plataforma. No entanto, essa opção só deve ser usada **temporariamente** durante o desenvolvimento e **não ativado na produção**.
+A opção **Log SQL queries in the journal** está disponível na guia **[!UICONTROL Execution]** das propriedades do fluxo de trabalho. Essa opção registra todas as consultas SQL das diferentes atividades e fornece uma maneira de ver o que é realmente executado pela plataforma. No entanto, essa opção só deve ser usada **temporariamente** durante o desenvolvimento e **não ativada na produção**.
 
 A prática recomendada é limpar os logs quando eles não forem mais necessários. O histórico do fluxo de trabalho não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão Ações localizado na barra de ferramentas acima da lista. Selecione Purge history.
 Para saber como limpar seus registros, consulte esta [documentação](start-a-workflow.md).
@@ -140,6 +140,6 @@ Práticas recomendadas adicionais devem ser aplicadas ao planejamento de execuç
 
 ### Opção de Executar no mecanismo {#execute-in-the-engine-option}
 
-Em um ambiente de produção, evite executar workflows no mecanismo. Quando a variável **[!UICONTROL Execute in the engine]** estiver marcada na caixa **[!UICONTROL Workflow properties]**, o workflow tem prioridade e todos os outros workflows são interrompidos pelo mecanismo do workflow até que este seja concluído.
+Em um ambiente de produção, evite executar workflows no mecanismo. Quando a opção **[!UICONTROL Execute in the engine]** estiver marcada em **[!UICONTROL Workflow properties]**, o fluxo de trabalho terá prioridade e todos os outros fluxos serão interrompidos pelo mecanismo do fluxo de trabalho até que este seja concluído.
 
 ![](assets/wf-execute-in-engine.png)

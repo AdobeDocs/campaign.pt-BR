@@ -14,7 +14,7 @@ ht-degree: 35%
 
 # Importar perfis de um arquivo{#create-profiles}
 
-Para preencher o banco de dados do Campaign, é possível [adicionar perfis manualmente](create-profiles.md) ou importar perfis conforme detalhado abaixo. Você também pode usar arquivos importados para atualizar dados de contato.
+Para preencher o banco de dados do Campaign, você pode [adicionar perfis manualmente](create-profiles.md) ou importar perfis conforme detalhado abaixo. Você também pode usar arquivos importados para atualizar dados de contato.
 
 ## Importar perfis com um fluxo de trabalho {#import-profiles-with-a-wf}
 
@@ -28,14 +28,14 @@ Prepare e estruture seus dados em um arquivo para importá-lo com um fluxo de tr
 
 Os dados processados em um workflow podem ser extraídos de um arquivo estruturado para serem importados para o Adobe Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html){target="_blank"}.
 
-Depois que os dados forem coletados, você poderá usá-los em seus workflows, por exemplo, para enriquecer uma entrega ou atualizar o banco de dados. Para obter mais informações, consulte [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}.
+Depois que os dados forem coletados, você poderá usá-los em seus workflows, por exemplo, para enriquecer uma entrega ou atualizar o banco de dados. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}.
 
 ## Importações únicas{#import-jobs}
 
 O Adobe Campaign fornece a capacidade de importação genérica que permite, por exemplo, extrair uma lista de clientes ou prospetos que se tornarão parte de uma população de destino ou fornecer dados de arquivos externos ao seu banco de dados.
 
-As importações genéricas são gerenciadas no **[!UICONTROL Profiles and Targets > Jobs]** menu da página inicial do Adobe Campaign.
+As importações genéricas são gerenciadas no menu **[!UICONTROL Profiles and Targets > Jobs]** da página inicial do Adobe Campaign.
 
 ![](assets/new-import-job.png)
 
-As etapas para executar uma importação genérica estão detalhadas em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=pt-BR){target="_blank"}.
+As etapas para executar uma importação genérica estão detalhadas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=pt-BR){target="_blank"}.

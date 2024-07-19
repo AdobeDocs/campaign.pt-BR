@@ -16,7 +16,7 @@ ht-degree: 75%
 
 ## Ambiente para interações anônimas {#environment-for-anonymous-interactions}
 
-Por padrão, Campaign **Interação** O módulo vem com um ambiente pré-configurado para direcionar a tabela de recipients integrada (ofertas identificadas). Se precisar direcionar outra tabela, uma tabela de visitantes para ofertas anônimas ou uma tabela de recipients personalizada, por exemplo, você deve usar o assistente de target mapping para criar o ambiente. [Saiba mais sobre ambientes](interaction-env.md).
+Por padrão, o módulo **Interaction** do Campaign vem com um ambiente pré-configurado para direcionar a tabela de recipients integrada (ofertas identificadas). Se precisar direcionar outra tabela, uma tabela de visitantes para ofertas anônimas ou uma tabela de recipients personalizada, por exemplo, você deve usar o assistente de target mapping para criar o ambiente. [Saiba mais sobre ambientes](interaction-env.md).
 
 Ao criar um ambiente anônimo através do assistente de criação de mapeamento, a caixa **[!UICONTROL Environment dedicated to incoming anonymous interactions]** é automaticamente marcada na guia **[!UICONTROL General]** do ambiente.
 

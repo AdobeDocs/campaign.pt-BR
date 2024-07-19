@@ -18,13 +18,13 @@ ht-degree: 78%
 
 O fluxo de criação do workflow depende do tipo de workflow. Você pode:
 
-* Criar [Workflows para construção do target](#targeting-workflows) do **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]** do Explorer ou do **[!UICONTROL Profiles and Targets]** da página inicial, por meio da guia **[!UICONTROL Targeting workflows]** subguia.
+* Crie [workflows para construção do target](#targeting-workflows) a partir do nó **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]** do Explorer ou a partir da guia **[!UICONTROL Profiles and Targets]** da home page, por meio da subguia **[!UICONTROL Targeting workflows]**.
 
   ![](assets/create-targeting-wf.png)
 
-* Criar [Fluxos de trabalho de campanha](#campaign-workflows) do **[!UICONTROL Targeting and workflows]** guia de uma campanha
+* Criar [Fluxos de trabalho de campanha](#campaign-workflows) a partir da guia **[!UICONTROL Targeting and workflows]** de uma campanha
 
-* Criar [Fluxos de trabalho técnicos](#technical-workflows) do **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** do Explorer. A prática recomendada é criar uma pasta de workflow específica para salvar seus workflows técnicos.
+* Crie [workflows técnicos](#technical-workflows) a partir do nó **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** do Explorer. A prática recomendada é criar uma pasta de workflow específica para salvar seus workflows técnicos.
 
 Clique no botão **[!UICONTROL New]** acima da lista de fluxos de trabalho.
 
@@ -123,7 +123,7 @@ Os templates de workflows possuem a configuração geral das propriedades e poss
 
 Você pode criar novos templates de workflow com base em templates existentes ou alterar um workflow para um template diretamente.
 
-Os modelos de workflow são armazenados no **[!UICONTROL Resources > Templates > Workflow templates]** do Explorer.
+Os modelos de fluxo de trabalho são armazenados no nó **[!UICONTROL Resources > Templates > Workflow templates]** do Explorer.
 
 Além das propriedades usuais do workflow, as propriedades do template permitem especificar o arquivo de execução para workflows criados com base nesse template.
 

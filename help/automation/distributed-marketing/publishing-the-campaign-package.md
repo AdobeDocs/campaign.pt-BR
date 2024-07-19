@@ -48,7 +48,7 @@ Por padrão, os revisores recebem três dias a partir da data de envio para proc
 
 Na janela dos revisores de edição, é possível definir lembretes para enviar uma ou várias mensagens se um pacote de campanha não tiver sido aprovado. Para fazer isso, clique no link **[!UICONTROL Add reminder]** e, em seguida, no botão **[!UICONTROL Add]**.
 
-Os lembretes podem ser enviados em uma determinada data e/ou **x** dias após a data de envio. O tipo de lembrete pode ser configurado na primeira coluna da tabela de lembretes. No exemplo abaixo, os revisores receberão uma mensagem de lembrete em 11/01/2023, ou seja, dois dias antes da data selecionada no **[!UICONTROL Date]** e um segundo lembrete um dia antes do final do período de aprovação, ou seja, dois dias após a data de envio para aprovação.
+Os lembretes podem ser enviados em uma determinada data e/ou **x** dias após a data de envio. O tipo de lembrete pode ser configurado na primeira coluna da tabela de lembretes. No exemplo abaixo, os revisores receberão uma mensagem de lembrete em 11/01/2023, ou seja, dois dias antes da data selecionada na coluna **[!UICONTROL Date]**, e um segundo lembrete um dia antes do final do período de aprovação, ou seja, dois dias após a data de envio para aprovação.
 
 ![](assets/s_advuser_mkg_dist_reminder_planning.png)
 

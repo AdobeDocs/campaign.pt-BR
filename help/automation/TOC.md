@@ -16,7 +16,7 @@ ht-degree: 83%
 + Automatizar com workflows {#workflows}
    + Introdução a workflows {#introduction}
       + [Sobre workflows](workflow/about-workflows.md)
-      + Tipos de workflows {#wf-type}
+      + Tipos de fluxos de trabalho {#wf-type}
          + [Fluxos de trabalho para construção do target](workflow/targeting-workflows.md)
          + [Fluxos de trabalho da campanha](workflow/campaign-workflows.md)
          + [Workflows técnicos](workflow/technical-workflows.md)
@@ -31,7 +31,7 @@ ht-degree: 83%
       + [Monitorar a execução do fluxo de trabalho](workflow/monitor-workflow-execution.md)
       + [Monitorar workflows técnicos](workflow/monitor-technical-workflows.md)
       + [HeatMap de fluxo de trabalho](workflow/heatmap.md)
-   + Atividades de workflow {#wf-activities}
+   + Atividades do fluxo de trabalho {#wf-activities}
       + [Introdução a atividades](workflow/activities.md)
       + Atividades de direcionamento {#targeting-activities}
          + [Lista de atividades de direcionamento](workflow/targeting-activities.md)
@@ -151,7 +151,7 @@ ht-degree: 83%
    + [Regras de consistência](campaign-opt/consistency-rules.md)
    + [Aplicar regras](campaign-opt/apply-rules.md)
    + [Simulações de campanha](campaign-opt/campaign-simulations.md)
-+ Gerenciamento de recursos de marketing (complemento){#mrm}
++ Gerenciamento de Recursos de Marketing (complemento){#mrm}
    + [Introdução ao gerenciamento de recursos de marketing](mrm/about-marketing-resource-management.md)
    + [Criar e gerenciar tarefas](mrm/creating-and-managing-tasks.md)
    + [Controlar custos](mrm/controlling-costs.md)

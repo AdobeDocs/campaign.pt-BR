@@ -16,7 +16,7 @@ ht-degree: 64%
 
 Alimentada por IA e aprendizado de máquina, a Otimização de tempo de envio e a Pontuação preditiva de engajamento da Adobe Campaign podem analisar e prever taxas abertas, tempos de envio ideais e churn provável de acordo com métricas de engajamento histórico.
 
-A Adobe Campaign oferece dois novos modelos de aprendizado de máquina: [Otimização preditiva do tempo de envio](#predictive-send) e [Pontuação preditiva de engajamento](#predictive-scoring). Esses dois modelos são modelos de aprendizado de máquina específicos para projetar e fornecer melhores jornadas ao cliente.
+A Adobe Campaign oferece dois novos modelos de aprendizado de máquina: [Otimização preditiva do tempo de envio](#predictive-send) e [Pontuação preditiva do engajamento](#predictive-scoring). Esses dois modelos são modelos de aprendizado de máquina específicos para projetar e fornecer melhores jornadas ao cliente.
 
 >[!CAUTION]
 >
@@ -37,9 +37,9 @@ No modelo de Otimização preditiva de tempo de envio, há dois submodelos:
 * O tempo preditivo de envio para cliques é o melhor horário para o envio de uma comunicação ao cliente para maximizar os cliques
 
 
-**Entrada do modelo**: Logs do delivery, logs de rastreamento e atributos de perfil (não PII)
+**Entrada do modelo**: logs de entrega, logs de rastreamento e atributos de perfil (não PII)
 
-**Saída do modelo**: Melhor horário para o envio de uma mensagem (para aberturas e cliques)
+**Saída do Modelo**: Melhor horário para o envio de uma mensagem (para aberturas e cliques)
 
 Detalhes da saída:
 

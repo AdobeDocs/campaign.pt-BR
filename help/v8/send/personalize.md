@@ -16,10 +16,10 @@ ht-degree: 71%
 
 Para aproveitar ao máximo cada campanha de marketing, o Adobe Campaign oferece uma maneira de fornecer conteúdo personalizado que fala com os clientes em seu nível. Com base nos dados do perfil, recursos de personalização para criar uma experiência personalizada para diferentes grupos e indivíduos: você pode adaptar suas mensagens a cada recipient específico, aproveitando os dados e as informações que tem sobre eles. Pode ser seu nome, interesses, onde vivem, o que compraram e muito mais.
 
-O Adobe Campaign simplifica a personalização: é possível exibir diferentes tipos de conteúdo personalizado para cada recipient usando um único [template de mensagem](create-templates.md). Em suas mensagens transacionais, como emails de confirmação de compra ou abandono de carrinho, inclua informações de listagens de produtos para cada indivíduo em um único modelo de email.
+O Adobe Campaign simplifica a personalização: você pode exibir diferentes tipos de conteúdo personalizado para cada destinatário usando um único [modelo de mensagem](create-templates.md). Em suas mensagens transacionais, como emails de confirmação de compra ou abandono de carrinho, inclua informações de listagens de produtos para cada indivíduo em um único modelo de email.
 
 
-## Estratégias de personalização {#personalization-strategy}
+## Estratégias do Personalization {#personalization-strategy}
 
 Use o Campaign para criar conteúdo dinâmico e enviar mensagens personalizadas. Os recursos de personalização podem ser combinados para melhorar suas mensagens e criar uma experiência do usuário personalizada.
 
@@ -47,7 +47,7 @@ Você pode personalizar o conteúdo da mensagem ao:
 
 ## Medidas de proteção e recomendações{#perso-guardrails}
 
-### Tempo limite da personalização{#perso-timeout}
+### Tempo limite do Personalization{#perso-timeout}
 
 Para aumentar a proteção da entrega, é possível definir um período de tempo limite para a fase de personalização.
 

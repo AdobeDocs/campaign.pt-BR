@@ -16,7 +16,7 @@ Você pode acompanhar a execução de deliveries por meio de vários relatórios
 
 Para acessar os relatórios, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Campaigns]** e clique na guia **[!UICONTROL Delivery]** para exibir a lista de deliveries.
+1. Navegue até a guia **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Delivery]** para exibir a lista de entregas.
 1. Clique no nome do delivery que os relatórios que deseja acessar.
 1. Selecione a guia **[!UICONTROL Summary]** e clique em **[!UICONTROL Reports]** para acessar os relatórios específicos da entrega.
 
@@ -62,7 +62,7 @@ Este relatório combina os indicadores principais para rastrear o comportamento 
 * **[!UICONTROL Distinct opens for the population reached]** : Estimativa do número de destinatários alvos que abriram uma mensagem pelo menos uma vez. Cliques em URLs rastreados são considerados, pois os emails precisam ser abertos para se clicar em um link.
 * **[!UICONTROL Sum of opens for the population reached]** : Estimativa do número total de aberturas por destinatários alvos.
 * **[!UICONTROL Clicks on opt-out link]** : Número de cliques no link unsubscription.
-* **[!UICONTROL Clicks on the mirror page link]** : Número de cliques no link para o [mirror page](../send/mirror-page.md). Para ser considerado, o link deve ser definido como tal no assistente do delivery (URLs rastreadas).
+* **[!UICONTROL Clicks on the mirror page link]** : Número de cliques no link para a [mirror page](../send/mirror-page.md). Para ser considerado, o link deve ser definido como tal no assistente do delivery (URLs rastreadas).
 * **[!UICONTROL Estimation of forwards]** : Estimativa do número de emails encaminhados pelos destinatários alvos. Esse valor é calculado subtraindo o número de pessoas distintas e o número de destinatários distintos que clicaram no email.
 
   >[!NOTE]
@@ -83,7 +83,7 @@ Esta tabela de valores mostra o detalhamento das entregas, aberturas, cliques e 
 >
 >Os nomes de domínio exibidos neste relatório são definidos na lista discriminada usada no nível de cubo. Para alterar, adicionar ou remover domínios padrão, edite a lista discriminada **[!UICONTROL Domains]** e modifique valores e aliases. A categoria **[!UICONTROL Others]** inclui nomes de domínio que não pertencem a nenhum valor da lista discriminada.
 >
->Saiba como acessar e configurar suas listas discriminadas no [esta página](../config/ui-settings.md).
+>Saiba como acessar e configurar suas enumerações em [esta página](../config/ui-settings.md).
 
 
 **[!UICONTROL 4. Generated click streams]**
@@ -157,7 +157,7 @@ Esse relatório fornece todas as informações principais sobre a entrega.
 Essa seção tem dois indicadores:
 
 * **[!UICONTROL Initial population]** : Número total de destinatários alvos da entrega.
-* **[!UICONTROL Messages rejected by the rule]** : Número de endereços ignorados durante a análise ao aplicar regras de tipologia: endereço em falta, em quarentena, na inclui na lista de bloqueios, etc. <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
+* **[!UICONTROL Messages rejected by the rule]** : Número de endereços ignorados durante a análise ao aplicar regras de tipologia: endereço em falta, em quarentena, no incluo na lista de bloqueios de, etc. <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -202,4 +202,4 @@ Você pode exibir relatórios acumulados sobre entregas. Para fazer isso, seleci
 
 Para selecionar entregas não adjacentes na lista, mantenha a tecla CTRL pressionada ao fazer a seleção.
 
-Para selecionar deliveries salvos em uma pasta diferente, clique no **[!UICONTROL Display sub-levels]** ícone, acessível na barra de ferramentas. Eles serão exibidos na mesma lista.
+Para selecionar deliveries salvos em uma pasta diferente, clique no ícone **[!UICONTROL Display sub-levels]**, acessível na barra de ferramentas. Eles serão exibidos na mesma lista.

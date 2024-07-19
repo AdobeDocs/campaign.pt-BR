@@ -15,7 +15,7 @@ ht-degree: 83%
 
 # Gestão dos Recursos de Marketing (MRM){#marketing-resources-mrm}
 
-Os workflows detalhados abaixo são instalados com o **Gestão dos Recursos de Marketing (MRM)** por padrão.
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Recursos de Marketing (MRM)** por padrão.
 
 <table> 
  <tbody> 

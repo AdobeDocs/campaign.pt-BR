@@ -43,9 +43,9 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 Para criar o workflow, aplique as seguintes etapas:
 
 1. Duas atividades **[!UICONTROL Query]** e uma atividade **[!UICONTROL Intersection]** são adicionadas para direcionar novos assinantes que entraram por último na competição.
-1. A variável **[!UICONTROL Enrichment]** atividade é usada para adicionar dados armazenados no **[!UICONTROL Competition results]** tabela. A variável **[!UICONTROL Score]** O campo que nossa personalização de delivery ocorrerá é adicionado à tabela de trabalho do workflow.
-1. A variável **[!UICONTROL Split]** A atividade do tipo é usada para criar subconjuntos de recipients com base em pontuações.
-1. Para cada subconjunto, um **[!UICONTROL Delivery]** atividade é adicionada.
+1. A atividade **[!UICONTROL Enrichment]** é usada para adicionar dados armazenados na tabela **[!UICONTROL Competition results]**. O campo **[!UICONTROL Score]**, onde ocorrerá a personalização de entrega, é adicionado à tabela de trabalho do fluxo de trabalho.
+1. A atividade do tipo **[!UICONTROL Split]** é usada para criar subconjuntos de destinatários com base em pontuações.
+1. Para cada subconjunto, uma atividade **[!UICONTROL Delivery]** é adicionada.
 
 ## Etapa 1: Direcionamento {#step-1--targeting}
 
@@ -61,7 +61,7 @@ Em seguida, uma atividade tipo **[!UICONTROL Intersection]** é adicionada para 
 
 ## Etapa 2: Enriquecimento {#step-2--enrichment}
 
-Neste exemplo, saiba como personalizar deliveries de acordo com a variável **[!UICONTROL Score]** campo armazenado na variável **[!UICONTROL Competition results]** tabela. Esta tabela tem um relacionamento de tipo 1-n com a tabela de destinatários. A variável **[!UICONTROL Enrichment]** A atividade é usada para adicionar dados de uma tabela vinculada à dimensão do filtro à tabela de trabalho do fluxo de trabalho.
+Neste exemplo, saiba como personalizar entregas de acordo com o campo **[!UICONTROL Score]** armazenado na tabela **[!UICONTROL Competition results]**. Esta tabela tem um relacionamento de tipo 1-n com a tabela de destinatários. A atividade **[!UICONTROL Enrichment]** é usada para adicionar dados de uma tabela vinculada à dimensão do filtro à tabela de trabalho do fluxo de trabalho.
 
 1. Na tela de edição da atividade de enriquecimento, selecione **[!UICONTROL Add data]**, então **[!UICONTROL Data linked to the filtering dimension]** e clique em **[!UICONTROL Next]**.
 

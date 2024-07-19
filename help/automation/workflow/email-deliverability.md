@@ -14,7 +14,7 @@ ht-degree: 85%
 
 # Monitoramento da avaliação da entrega (avaliação da entrega por email){#email-deliverability}
 
-O workflow detalhado abaixo é instalado por padrão em todas as instâncias e permite inicializar a lista de regras de qualificação de email de devolução, a lista de domínios e a lista de MXs. Quando a variável **Monitoramento da entregabilidade (Entregabilidade por email)** estiver instalado, esse fluxo de trabalho será executado à noite.
+O workflow detalhado abaixo é instalado por padrão em todas as instâncias e permite inicializar a lista de regras de qualificação de email de devolução, a lista de domínios e a lista de MXs. Quando o pacote **Deliverability monitoring (Email Deliverability)** estiver instalado, este fluxo de trabalho será executado à noite.
 <table> 
  <tbody> 
   <tr> 

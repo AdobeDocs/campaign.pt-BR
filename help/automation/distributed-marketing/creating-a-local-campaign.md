@@ -48,7 +48,7 @@ Na janela da campanha, clique na guia **[!UICONTROL Edit]** e clique no link **[
 
 ### Tipo de interface {#web-interface}
 
-No **Marketing distribuído** você pode escolher o tipo de interface e especificar os valores e parâmetros padrão a serem inseridos quando uma entidade local colocar um pedido.
+Na guia **Marketing distribuído**, você pode escolher o tipo de interface e especificar os valores e parâmetros padrões a serem inseridos quando uma entidade local enviar um pedido.
 
 A interface corresponde a um formulário a ser preenchido pela entidade local ao solicitar a campanha.
 
@@ -157,7 +157,7 @@ Salve seu template de campanha. Agora você pode usá-lo na visualização **[!U
 
 >[!NOTE]
 >
->Os templates de campanha e suas configurações gerais estão detalhados em [esta página](../campaigns/marketing-campaign-templates.md).
+>Os modelos de campanha e suas configurações gerais estão detalhados em [esta página](../campaigns/marketing-campaign-templates.md).
 
 ## Criação do pacote de campanha {#creating-the-campaign-package}
 

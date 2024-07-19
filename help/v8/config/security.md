@@ -23,7 +23,7 @@ Além disso, nosso trabalho colaborativo com parceiros, pesquisadores líderes, 
 A configuração e a proteção da privacidade são um elemento essencial da otimização da segurança. Estas são algumas das práticas recomendadas a serem seguidas em relação à privacidade:
 
 * Protect as informações pessoais (PI) do cliente usando HTTPS em vez de HTTP
-* Uso [Restrição de visualização de PI](../dev/restrict-pi-view.md) proteger a privacidade e impedir que os dados sejam utilizados indevidamente
+* Use a [restrição de visualização de IP](../dev/restrict-pi-view.md) para proteger a privacidade e impedir que os dados sejam usados incorretamente
 * Verifique se as senhas criptografadas são restritas
 * Proteja as páginas que podem conter informações pessoais, como mirror pages, aplicativos web, etc.
 
@@ -40,7 +40,7 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 * Criar grupos de segurança suficientes
 * Verifique se cada operador tem os direitos de acesso apropriados
 
-Saiba mais sobre permissões no [nesta seção](../start/gs-permissions.md)
+Saiba mais sobre permissões em [esta seção](../start/gs-permissions.md)
 
 ## Diretrizes de codificação
 
@@ -48,11 +48,11 @@ Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga
 
 * **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL colocando as funções SQL a serem utilizadas na lista de permissões.
 
-* **Proteger o modelo de dados**: usar direitos nomeados para limitar as ações do operador, adicionar filtros do sistema (sysFilter)
+* **Proteger o modelo de dados**: use direitos nomeados para limitar ações do operador, adicionar filtros do sistema (sysFilter)
 
-* **Adicionar captchas em aplicações web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
+* **Adicionar captchas em aplicativos da Web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
-Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
+Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
 
 
 ## Personalização
@@ -71,11 +71,11 @@ Você precisa ter certeza que as senhas criptografadas não estarão acessíveis
 
 Essa restrição permite remover campos de senhas, mas deixa a conta externa acessível a partir da interface para todos os usuários. Saiba mais [nesta página](../dev/restrict-pi-view.md).
 
-1. Entrar **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
+1. Vá em **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
 
 1. Criar um novo **[!UICONTROL Extension of a schema]**.
 
-1. Escolher **[!UICONTROL External Account]** (extAccount).
+1. Escolha **[!UICONTROL External Account]** (extAccount).
 
 1. Na última tela, você pode editar o novo srcSchema para restringir o acesso a todos os campos de senha:
 
@@ -135,7 +135,7 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 * Criar grupos de segurança suficientes
 * Verifique se cada operador tem os direitos de acesso apropriados
 
-Saiba mais sobre permissões no [nesta seção](../start/gs-permissions.md).
+Saiba mais sobre permissões em [nesta seção](../start/gs-permissions.md).
 
 ## Diretrizes de codificação
 
@@ -143,8 +143,8 @@ Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga
 
 * **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL colocando as funções SQL a serem utilizadas na lista de permissões.
 
-* **Proteger o modelo de dados**: usar direitos nomeados para limitar as ações do operador, adicionar filtros do sistema (sysFilter)
+* **Proteger o modelo de dados**: use direitos nomeados para limitar ações do operador, adicionar filtros do sistema (sysFilter)
 
-* **Adicionar captchas em aplicações web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
+* **Adicionar captchas em aplicativos da Web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
-Saiba mais em [Documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
+Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.

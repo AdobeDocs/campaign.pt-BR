@@ -14,15 +14,15 @@ ht-degree: 67%
 
 # Mudar dimensão{#change-dimension}
 
-Use o **[!UICONTROL Change dimension]** atividade para alterar o targeting dimension enquanto você constrói um público-alvo. Essa atividade altera o eixo dependendo do template de dados e da dimensão de entrada. Por exemplo, você pode alternar da dimensão &quot;contratos&quot; para a dimensão &quot;clientes&quot;.
+Use a atividade **[!UICONTROL Change dimension]** para alterar o targeting dimension enquanto você cria um público-alvo. Essa atividade altera o eixo dependendo do template de dados e da dimensão de entrada. Por exemplo, você pode alternar da dimensão &quot;contratos&quot; para a dimensão &quot;clientes&quot;.
 
 Você também pode usar essa atividade para definir as colunas adicionais do novo target e os critérios de desduplicação de dados.
 
 >[!IMPORTANT]
 >
->Observe que a variável **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** as atividades não devem ser adicionadas em uma linha. Se precisar usar ambas as atividades consecutivamente, inclua uma **[!UICONTROL Enrichement]** atividade entre eles. Isso garante a execução adequada e evita possíveis conflitos ou erros.
+>Observe que as atividades **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** não devem ser adicionadas em uma linha. Se você precisar usar ambas as atividades consecutivamente, certifique-se de incluir uma atividade **[!UICONTROL Enrichement]** entre elas. Isso garante a execução adequada e evita possíveis conflitos ou erros.
 
-Para configurar o **[!UICONTROL Change dimension]** siga as etapas abaixo:
+Para configurar a atividade **[!UICONTROL Change dimension]**, siga as etapas abaixo:
 
 1. Selecione a nova dimensão do target por meio do campo **[!UICONTROL Change dimension]**.
 

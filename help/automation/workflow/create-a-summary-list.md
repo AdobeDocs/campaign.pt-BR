@@ -56,7 +56,7 @@ Esses dados estão contidos em um arquivo de texto &quot;Purchases.txt&quot;.
 
    A atividade **File collector** permite coletar e enviar arquivos de e para o servidor do Adobe Campaign.
 
-   A variável **Carregamento de dados (arquivo)** A atividade permite enriquecer a tabela de trabalho do workflow com os dados coletados. Para obter mais informações sobre essa atividade, consulte [esta página](data-loading-file.md).
+   A atividade **Data loading(file)** permite enriquecer a tabela de trabalho do fluxo de trabalho com os dados coletados. Para obter mais informações sobre esta atividade, consulte [esta página](data-loading-file.md).
 
 1. Configure a atividade **File collector** para coletar arquivos de texto (*&#42;txt) do diretório selecionado.
 

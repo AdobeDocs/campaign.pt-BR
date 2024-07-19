@@ -52,7 +52,7 @@ Clique em uma tarefa para editá-la.
 
 Para criar uma tarefa, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Tasks]** no **[!UICONTROL Campaigns]** e clique em **[!UICONTROL Create]**.
+1. Navegue até o link **[!UICONTROL Tasks]** na guia **[!UICONTROL Campaigns]** e clique em **[!UICONTROL Create]**.
 
    ![](assets/create-a-task-from-dashboard.png)
 
@@ -74,21 +74,21 @@ Depois de criada, é possível configurar a tarefa definindo:
 * O cronograma de criação. [Saiba mais](#execution-schedule)
 * Os custos comprometidos. [Saiba mais](#expenses-and-revenues)
 
-Também é possível adicionar [revisores](#reviewers) e [documentos de referência](#documents-referenced).
+Você também pode adicionar [revisores](#reviewers) e [documentos de referência](#documents-referenced).
 
-O ciclo de vida da tarefa é apresentado em [nesta seção](#life-cycle).
+O ciclo de vida da tarefa é apresentado em [esta seção](#life-cycle).
 
 ### Gerente e participantes {#manager-and-participants}
 
 Por padrão, a tarefa é atribuída ao operador que a criou. Esse operador é notificado quando uma ação é necessária para essa tarefa.
 
-É possível selecionar um operador diferente do **[!UICONTROL Assigned to]** lista suspensa.
+Você pode selecionar um operador diferente na lista suspensa **[!UICONTROL Assigned to]**.
 
 ![](assets/task-assigned-to.png)
 
 >[!NOTE]
 >
->A gestão do operador é apresentada em [nesta seção](../../v8/start/gs-permissions.md).
+>O gerenciamento de operador está detalhado em [esta seção](../../v8/start/gs-permissions.md).
 >
 >Somente o operador encarregado de uma tarefa tem permissão para fechá-la.
 
@@ -96,7 +96,7 @@ Você pode especificar mais operadores envolvidos na realização da tarefa. Ess
 
 Para adicionar operadores de tarefa, siga as etapas abaixo:
 
-1. Clique em **[!UICONTROL Resources]** ícone na barra de ferramentas de tarefas.
+1. Clique no ícone **[!UICONTROL Resources]** na barra de ferramentas da tarefa.
 
    ![](assets/add-task-resources.png)
 
@@ -109,12 +109,12 @@ Para adicionar operadores de tarefa, siga as etapas abaixo:
 
    Para cada operador, você pode inserir uma carga de trabalho agendada e uma carga de trabalho real. Essas durações também são somente para fins de informação.
 
-1. Você pode configurar um lembrete do **[!UICONTROL Add a reminder...]** link. Uma notificação por e-mail será enviada a todos os operadores envolvidos na tarefa antes de sua data final.
+1. Você pode configurar um lembrete no link **[!UICONTROL Add a reminder...]**. Uma notificação por e-mail será enviada a todos os operadores envolvidos na tarefa antes de sua data final.
 
    ![](assets/task-op-add-a-reminder.png)
 
-1. Você também pode enviar uma notificação antes que a tarefa seja iniciada. Para configurar, selecione a data no campo **[!UICONTROL Initial notification]** campo.
-1. Quando a data de término é atingida e a tarefa não está fechada, uma notificação pode ser enviada ao destinatário ou grupo de destinatários selecionados na **[!UICONTROL Assignee]** lista suspensa.
+1. Você também pode enviar uma notificação antes que a tarefa seja iniciada. Para configurar, selecione a data no campo **[!UICONTROL Initial notification]**.
+1. Quando a data de término é atingida e a tarefa não está fechada, uma notificação pode ser enviada ao destinatário ou grupo de destinatários selecionados na lista suspensa **[!UICONTROL Assignee]**.
 
 
 O painel do operador permite verificar a carga de trabalho (outras tarefas em andamento).
@@ -125,7 +125,7 @@ O painel do operador permite verificar a carga de trabalho (outras tarefas em an
 
 Além dos participantes, você pode definir operadores que revisarão a tarefa assim que ela for fechada.
 
-Para fazer isso, clique no link **[!UICONTROL Enable task approval]** na seção inferior da caixa **[!UICONTROL Resources]** janela. Pode ser um operador individual, um grupo de operadores ou uma lista de operadores.
+Para fazer isso, clique na opção **[!UICONTROL Enable task approval]** na seção inferior da janela **[!UICONTROL Resources]**. Pode ser um operador individual, um grupo de operadores ou uma lista de operadores.
 
 Para especificar uma lista de operadores, clique no link **[!UICONTROL Edit...]** à direita do primeiro revisor e adicione quantos operadores forem necessários, conforme mostrado abaixo:
 
@@ -137,11 +137,11 @@ A pessoa encarregada da tarefa pode atribuir a si mesmo a tarefa de aprovação,
 
 ### Documentos referenciados {#documents-referenced}
 
-Você pode adicionar [documentos e recursos de marketing](managing-marketing-resources.md) para uma tarefa.
+Você pode adicionar [documentos e recursos de marketing](managing-marketing-resources.md) a uma tarefa.
 
 Para fazer isso:
 
-1. Abra a tarefa e clique no link **[!UICONTROL Documents]** ícone na barra de ferramentas de tarefas.
+1. Abra a tarefa e clique no ícone **[!UICONTROL Documents]** na barra de ferramentas da tarefa.
 
    ![](assets/add-documents-to-a-task.png)
 
@@ -190,7 +190,7 @@ Por padrão, o orçamento cobrado é o orçamento da campanha à qual a tarefa e
 
 >[!NOTE]
 >
->Para obter mais informações sobre despesas e orçamentos, consulte [nesta seção](../campaigns/providers-stocks-and-budgets.md#cost-commitment--calculation-and-charging).
+>Para obter mais informações sobre despesas e orçamentos, consulte [esta seção](../campaigns/providers-stocks-and-budgets.md#cost-commitment--calculation-and-charging).
 
 Nessa janela, você também pode definir os objetivos a serem atingidos. Os objetivos são expressos em termos de previsão de receita para a tarefa.
 

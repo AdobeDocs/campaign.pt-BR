@@ -41,16 +41,16 @@ Por padrão, a mirror page é gerada automaticamente pelo Adobe Campaign se o co
 
 Você pode controlar o modo de geração da mirror page de email. As opções estão disponíveis nas propriedades de entrega. Para acessar essas opções:
 
-1. Navegue até o **[!UICONTROL Validity]** das propriedades de email.
-1. No **Gerenciamento de mirror page** , verifique a **[!UICONTROL Mode]** lista suspensa.
+1. Navegue até a guia **[!UICONTROL Validity]** das propriedades de email.
+1. Na seção **Gerenciamento da mirror page**, verifique a lista suspensa **[!UICONTROL Mode]**.
 
 ![](assets/mirror-page-generation.png){width="800" align="left"}
 
 Além do modo padrão, as seguintes opções estão disponíveis:
 
-* **[!UICONTROL Force the generation of the mirror page]**: use esse modo para gerar a mirror page mesmo se nenhum link para a mirror page for inserido no delivery.
-* **[!UICONTROL Do not generate the mirror page]**: use esse modo para evitar gerar uma mirror page, mesmo se o link estiver presente no delivery.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: quando o link da mirror page não estiver presente no conteúdo do email, use essa opção para ativar o acesso ao conteúdo da mirror page, na janela de log do delivery, conforme detalhado abaixo.
+* **[!UICONTROL Force the generation of the mirror page]**: use esse modo para gerar a mirror page mesmo se nenhum link para a mirror page for inserido na entrega.
+* **[!UICONTROL Do not generate the mirror page]**: use esse modo para evitar a geração de uma mirror page, mesmo se o link estiver presente na entrega.
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: quando o link da mirror page não estiver presente no conteúdo do email, use essa opção para habilitar o acesso ao conteúdo da mirror page, na janela de log da entrega, conforme detalhado abaixo.
 
 ## Verificar se há um destinatário na mirror page {#mirror-page-access}
 
@@ -58,9 +58,9 @@ Além do modo padrão, as seguintes opções estão disponíveis:
 
 Para acessar essa mirror page:
 
-1. Depois que o delivery for enviado, abra-o e navegue até seu **[!UICONTROL Delivery]** guia.
+1. Depois que a entrega for enviada, abra-a e navegue até a guia **[!UICONTROL Delivery]**.
 
-1. Selecione um recipient e clique no link **[!UICONTROL Display the mirror page for this message...]** link.
+1. Selecione um destinatário e clique no link **[!UICONTROL Display the mirror page for this message...]**.
 
    ![](assets/mirror-page-display.png){width="800" align="left"}
 

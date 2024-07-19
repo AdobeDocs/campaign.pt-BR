@@ -18,13 +18,13 @@ Use campos de personalização para fornecer conteúdo personalizado individualm
 
 Um campo de personalização é uma única referência de campo de dados usada ao personalizar uma entrega para um destinatário específico. O valor de dados real é inserido durante a fase de análise da entrega.
 
-![amostra de personalização de mensagens](assets/perso-name-sample.png)
+![amostra de personalização da mensagem](assets/perso-name-sample.png)
 
 ## Sintaxe
 
-Uma tag de personalização sempre usa a seguinte sintaxe: `<%=table.field%>`.
+Uma marca de personalização sempre usa a seguinte sintaxe: `<%=table.field%>`.
 
-Por exemplo, para inserir o nome do recipient, armazenado na tabela de recipients, o campo de personalização usa a variável `<%= recipient.lastName %>` sintaxe.
+Por exemplo, para inserir o nome do recipient, armazenado na tabela de recipients, o campo de personalização usa a sintaxe `<%= recipient.lastName %>`.
 
 >[!CAUTION]
 >
@@ -40,7 +40,7 @@ Os campos de personalização são inseridos e prontos para serem interpretados 
 
 ![campos de personalização em um email](assets/perso-fields-in-msg.png)
 
-Essa substituição pode ser testada no **[!UICONTROL Preview]** guia.
+Essa substituição pode ser testada na guia **[!UICONTROL Preview]**.
 
 <!--Learn more about message preview in [this page]().-->
 
@@ -49,7 +49,7 @@ Essa substituição pode ser testada no **[!UICONTROL Preview]** guia.
 No caso de uso abaixo, saiba como personalizar um assunto e um corpo de email com dados do recipient:
 
 1. Criar um novo delivery ou abrir um delivery de email existente.
-1. Navegue até o **[!UICONTROL Subject]** link para editar o assunto da mensagem.
+1. Navegue até o link **[!UICONTROL Subject]** para editar o assunto da mensagem.
 1. Insira &quot;**Special offer for**&quot; e use o botão na barra de ferramentas para inserir um campo de personalização. Selecione **[!UICONTROL Recipients>Title]**.
 1. Repita a operação para inserir o nome do destinatário. Insira espaços entre todos os campos de personalização.
 1. Clique em **[!UICONTROL OK]** para validar.

@@ -18,7 +18,7 @@ Crie filtros predefinidos para definir regras de qualificação para o público-
 
 Para criar um filtro predefinido, siga o seguinte processo:
 
-1. Navegue até o **[!UICONTROL Administration]** e selecione **[!UICONTROL Pre-defined offer filters]**.
+1. Navegue até a pasta **[!UICONTROL Administration]** e selecione **[!UICONTROL Pre-defined offer filters]**.
 
    ![](assets/offer_filter_create_005.png)
 

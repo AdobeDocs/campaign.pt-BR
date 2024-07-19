@@ -14,7 +14,7 @@ ht-degree: 72%
 
 Você pode usar atividades de workflow para executar várias tarefas. Encontre abaixo exemplos de uso para atualizar o banco de dados criando listas, gerenciar assinaturas, enviar mensagens por meio de um fluxo de trabalho ou enriquecer seus deliveries e seus públicos.
 
-Um conjunto de casos de uso de fluxo de trabalho está disponível em [nesta seção](workflow-use-cases.md).
+Um conjunto de casos de uso de fluxo de trabalho está disponível em [esta seção](workflow-use-cases.md).
 
 ## Ciclo de vida dos dados {#data-life-cycle}
 
@@ -34,7 +34,7 @@ Para fazer isso, selecione o menu relevante:
 
   ![](assets/wf-right-click-display.png)
 
-  É possível acessar a estrutura da tabela de trabalho no **[!UICONTROL Schema]** guia.
+  Você pode acessar a estrutura da tabela de trabalho na guia **[!UICONTROL Schema]**.
 
   ![](assets/wf-right-click-schema.png)
 
@@ -44,7 +44,7 @@ Para fazer isso, selecione o menu relevante:
 
   Use esse menu para acessar o assistente de análise descritiva que permite gerar estatísticas e relatórios sobre os dados de transição.
 
-  Saiba como usar o assistente de análise descritiva no [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=pt-BR){target="_blank"}.
+  Saiba como usar o assistente de análise descritiva na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=pt-BR){target="_blank"}.
 
 Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
 
@@ -57,7 +57,7 @@ Os dados do target são descartados na execução do workflow Somente a última 
 
 ### Aproveitar os dados de destino {#target-data}
 
-Os dados armazenados na tabela de trabalho temporária do workflow estão disponíveis para tarefas de personalização. Os dados podem ser utilizados na [campos de personalização](../../v8/send/personalization-fields.md).
+Os dados armazenados na tabela de trabalho temporária do workflow estão disponíveis para tarefas de personalização. Os dados podem ser usados nos [campos de personalização](../../v8/send/personalization-fields.md).
 
 Isso permite usar dados coletados por uma lista em um delivery, por exemplo. Para fazer isso, use a seguinte sintaxe:
 
@@ -85,11 +85,11 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
    [...]
    ```
 
-   Para carregar o arquivo, configure o **[!UICONTROL Data loading (file)]** atividade conforme abaixo:
+   Para carregar o arquivo, configure a atividade **[!UICONTROL Data loading (file)]** conforme abaixo:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Configure o **[!UICONTROL Enrichment]** atividade para reconciliar os dados coletados com os existentes no banco de dados do Adobe Campaign. Aqui, a chave de reconciliação é o número da conta:
+1. Configure a atividade **[!UICONTROL Enrichment]** para reconciliar os dados coletados com os existentes no banco de dados do Adobe Campaign. Aqui, a chave de reconciliação é o número da conta:
 
    ![](assets/wf-targetdata-sample-3.png)
 

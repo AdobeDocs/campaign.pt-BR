@@ -76,7 +76,7 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 
 Um seed address permite exibir uma pré-visualização da mensagem, enviar uma prova e testar a personalização da mensagem antes de enviar a mensagem. Os seed addresses estão vinculados à entrega e não podem ser usados para outras entregas.
 
-1. No modelo de mensagem transacional, clique no botão **[!UICONTROL Seed addresses]** e clique na guia **[!UICONTROL Add]** botão.
+1. No modelo de mensagem transacional, clique na guia **[!UICONTROL Seed addresses]** e no botão **[!UICONTROL Add]**.
 
    ![](assets/messagecenter_create_seed_1.png)
 
@@ -122,7 +122,7 @@ This information enables you to personalize message content using personalizatio
 
 Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-visualizar a mensagem e verificar sua personalização.
 
-1. No modelo de mensagem, clique no botão **[!UICONTROL Preview]** e selecione **[!UICONTROL A seed address]** na lista suspensa.
+1. No modelo de mensagem, clique na guia **[!UICONTROL Preview]** e selecione **[!UICONTROL A seed address]** na lista suspensa.
 
    ![](assets/messagecenter_preview_1.png)
 
@@ -136,11 +136,11 @@ Você pode testar a entrega de mensagens enviando uma prova para um seed address
 
 O envio de uma prova envolve o mesmo processo de qualquer delivery.
 
-Saiba mais sobre provas no [nesta seção](../send/preview-and-proof.md#proofs-send).
+Saiba mais sobre provas em [esta seção](../send/preview-and-proof.md#proofs-send).
 
 No entanto, para enviar uma prova de mensagem transacional, é necessário realizar as seguintes operações:
 
-* Criar um ou mais [seed addresses](#add-seeds) com dados de teste de personalização
+* Crie um ou mais [seed addresses](#add-seeds) com dados de teste de personalização
 * Criar o conteúdo da mensagem
 
 Para enviar a prova:
@@ -159,21 +159,21 @@ Para enviar a prova:
 
 ![](assets/messagecenter_send_proof_003.png)
 
-#### Transição de [!DNL Campaign Classic] v7 {#transition-from-v7}
+#### Transição do [!DNL Campaign Classic] v7 {#transition-from-v7}
 
-Se você estiver [transição do Campaign Classic v7](../start/v7-to-v8.md), todos os deliveries passam pelo servidor mid-sourcing.
+Se você estiver [fazendo a transição do Campaign Classic v7](../start/v7-to-v8.md), todas as entregas serão feitas pelo servidor mid-sourcing.
 
-No entanto, ao criar um template de mensagem transacional, o roteamento necessário para que o template seja usado com êxito é **delivery de email interno**. Esse roteamento impede que você envie provas.
+No entanto, ao criar um modelo de mensagem transacional, o roteamento necessário para que o modelo seja usado com êxito é o **delivery de email interno**. Esse roteamento impede que você envie provas.
 
-Consequentemente, para enviar uma prova para seu template de mensagem transacional, você deve alterar o roteamento do delivery de email interno para o **conta de roteamento de mid-sourcing**.
+Consequentemente, para enviar uma prova para seu modelo de mensagem transacional, você deve alterar o roteamento da entrega de email interna para a **conta de roteamento de mid-sourcing**.
 
 ![](assets/messagecenter_send_proof_004.png)
 
 Depois que as provas forem enviadas, você deverá alterar o roteamento de volta para o delivery de email interno antes de publicar o template de mensagem transacional.
 
-## Publicar o modelo {#publish-message-template}
+## Publish do modelo {#publish-message-template}
 
-Quando o modelo de mensagem foi criado<!-- on the control instance--> estiver concluído, você poderá publicá-lo, o que permitirá enviar mensagens vinculadas a eventos em lote e em tempo real.
+Quando o modelo de mensagem criado <!-- on the control instance--> estiver concluído, você poderá publicá-lo, o que permitirá enviar mensagens vinculadas a eventos em lote e em tempo real.
 
 <!--This process will also publish it on all execution instances.
 
@@ -186,16 +186,16 @@ Publication lets you automatically create two message templates on the execution
 >Sempre que fizer alterações em um modelo, publique-o novamente para que essas alterações estejam em vigor durante a entrega da mensagem transacional.
 
 1. Vá até a pasta **[!UICONTROL Message Center > Transactional message templates]** da árvore.
-1. Selecione o template que deseja publicar<!--on your execution instances-->.
+1. Selecione o modelo que deseja publicar<!--on your execution instances-->.
 1. Clique em **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_template.png)
 
-Quando a publicação estiver concluída, ambos os templates de mensagem que serão aplicados em eventos batch e em tempo real são criados no **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** pasta.
+Uma vez concluída a publicação, ambos os modelos de mensagem a serem aplicados em eventos batch e em tempo real são criados na pasta **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**.
 
 ![](assets/messagecenter_deployed_model.png)
 
-Depois que um modelo for publicado, se o evento correspondente for acionado, o Adobe Campaign<!--execution instance--> O receberá o evento, o vinculará ao template transacional e enviará a mensagem transacional correspondente a cada recipient.
+Depois que um modelo for publicado, se o evento correspondente for acionado, o Adobe Campaign<!--execution instance--> receberá o evento, o vinculará ao modelo transacional e enviará a mensagem transacional correspondente a cada destinatário.
 
 <!--
 >[!NOTE]
@@ -207,7 +207,7 @@ Depois que um modelo for publicado, se o evento correspondente for acionado, o A
 
 ## Cancelar a publicação de um modelo
 
-Depois que um modelo de mensagem é publicado <!--on the execution instances-->, ela pode ter a publicação desfeita.
+Assim que um modelo de mensagem for publicado <!--on the execution instances-->, sua publicação poderá ser desfeita.
 
 * Na verdade, um modelo publicado ainda poderá ser chamado se o evento correspondente for acionado: se você não estiver mais usando um modelo de mensagem, será recomendável desfazer a publicação. Dessa forma, você pode evitar o envio de uma mensagem transacional indesejada por engano.
 
@@ -228,10 +228,10 @@ O status do template de mensagem transacional muda de **[!UICONTROL Published]**
 
 Depois de desfazer a publicação:
 
-* Ambos os modelos de mensagem (aplicados a eventos de tipo em lote e em tempo real) são excluídos<!-- from each execution instance-->.
+* Ambos os modelos de mensagem (aplicados a eventos de tipo em lote e em tempo real) foram excluídos<!-- from each execution instance-->.
 
   Eles não aparecem mais na pasta **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]**.
 
-* Após cancelar a publicação de um modelo, você pode excluí-lo<!-- from the control instance-->.
+* Quando a publicação de um modelo for desfeita, você poderá excluí-lo<!-- from the control instance-->.
 
   Para fazer isso, selecione-o na lista e clique no botão **[!UICONTROL Delete]** na parte superior direita da tela.

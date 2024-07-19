@@ -23,12 +23,12 @@ Por exemplo, você pode filtrar os assinantes do boletim informativo para evitar
 
 Para definir esse filtro, aplique as seguintes etapas:
 
-1. Navegue até o **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** do explorador do Campaign e clique no link **Novo** ícone para criar uma regra de tipologia.
-1. Criar um **[!UICONTROL Filtering]** regra de tipologia aplicável a todos os canais.
+1. Navegue até a pasta **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** do explorador do Campaign e clique no ícone **Novo** para criar uma regra de tipologia.
+1. Crie uma regra de tipologia **[!UICONTROL Filtering]** aplicável a todos os canais.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. No **Filtro** altere a targeting dimension padrão para **Assinaturas** (**nms:subscription**).
+1. Na guia **Filtro**, altere o targeting dimension padrão para **Assinaturas** (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -40,7 +40,7 @@ Para definir esse filtro, aplique as seguintes etapas:
 
    ![](assets/campaign_opt_create_filter_03b.png)
 
-1. No **Tipologias** , vincule essa regra a uma tipologia de campanha e salve-a.
+1. Na guia **Typologies**, vincule esta regra a uma tipologia de campanha e salve-a.
 
    ![](assets/campaign_opt_create_filter_04.png)
 
@@ -52,7 +52,7 @@ Quando essa regra for usada em uma entrega, os assinantes menores de idade serã
 
 Você poderá restringir o campo da aplicação na regra de filtragem com base na entrega ou na estrutura de entrega vinculada.
 
-Para fazer isso, acesse o **[!UICONTROL General]** da regra de tipologia, selecione o tipo de restrição a ser aplicado e crie o filtro.
+Para fazer isso, vá para a guia **[!UICONTROL General]** da regra de tipologia, selecione o tipo de restrição a ser aplicado e crie o filtro.
 <!--
 ![](assets/campaign_opt_create_filter_06.png)
 -->

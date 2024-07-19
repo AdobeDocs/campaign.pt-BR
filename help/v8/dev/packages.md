@@ -4,7 +4,8 @@ description: Trabalho com pacotes de dados
 feature: Data Management, Package Export/Import
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
+exl-id: bf1ae889-9c07-4acf-8fd0-55b57151bc47
+source-git-commit: 69ef7e81d5fc0f5cf0dc74fa16d970ef89607331
 workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 50%
@@ -19,23 +20,23 @@ Você pode usar pacotes de dados para exportar e importar dados e configuraçõe
 
 Em pacotes de dados do Campaign, as entidades do banco de dados do Adobe Campaign podem ser exibidas em arquivos XML. Em um pacote, cada entidade é representada com todos os seus dados.
 
-O princípio da **pacotes de dados** é exportar uma configuração de dados e integrá-la a outro ambiente do Adobe Campaign. Saiba como manter um conjunto consistente de pacotes de dados nesta [seção](#data-package-best-practices).
+O princípio de **pacotes de dados** é exportar uma configuração de dados e integrá-la a outro ambiente do Adobe Campaign. Saiba como manter um conjunto consistente de pacotes de dados nesta [seção](#data-package-best-practices).
 
 ### Tipos de pacotes {#types-of-packages}
 
 Você pode trabalhar com três tipos de pacotes no Adobe Campaign: pacotes de usuário, pacotes de plataforma e pacotes de administrador.
 
-* A **pacote do usuário** permite selecionar a lista de entidades a serem exportadas. Esse tipo de pacote gerencia dependências e verifica erros.
-* A **pacote de plataforma** inclui todos os recursos técnicos adicionados (não padrão): schemas, código JavaScript, etc.
-* Um **pacote de administração** inclui todos os templates e objetos comerciais adicionados (não padrão): templates, bibliotecas, etc.
+* Um **pacote de usuário** permite que você selecione a lista de entidades a serem exportadas. Esse tipo de pacote gerencia dependências e verifica erros.
+* Um **pacote de plataforma** inclui todos os recursos técnicos adicionados (não padrão): esquemas, código JavaScript, etc.
+* Um **pacote de administração** inclui todos os modelos e objetos comerciais adicionados (não padrão): modelos, bibliotecas, etc.
 
 >[!CAUTION]
 >
->A variável **platform** e **administrador** os pacotes contêm uma lista predefinida de entidades a serem exportadas. Cada entidade está vinculada às condições de filtragem que permitem remover os recursos prontos para uso do pacote criado.
+>Os pacotes **platform** e **admin** contêm uma lista predefinida de entidades a serem exportadas. Cada entidade está vinculada às condições de filtragem que permitem remover os recursos prontos para uso do pacote criado.
 
 ## Estrutura de dados {#data-structure}
 
-A descrição de um pacote de dados é um documento XML estruturado que está de acordo com a gramática do **xrk:navtree** schema de dados, como no exemplo abaixo:
+A descrição de um pacote de dados é um documento XML estruturado que está de acordo com a gramática do esquema de dados **xrk:navtree**, como no exemplo abaixo:
 
 ```xml
 <package>
@@ -53,9 +54,9 @@ A descrição de um pacote de dados é um documento XML estruturado que está de
 </package>
 ```
 
-O documento XML deve começar e terminar com o elemento `<package>`. Qualquer `<entities>` os elementos seguintes distribuem os dados por tipo de documento. Um `<entities>` contém os dados do pacote no formato do schema de dados inserido no **schema** atributo. Os dados em um pacote não devem conter chaves internas incompatíveis entre as bases, como chaves geradas automaticamente (opção **autopk**).
+O documento XML deve começar e terminar com o elemento `<package>`. Quaisquer elementos `<entities>` seguintes distribuem os dados por tipo de documento. Um elemento `<entities>` contém os dados do pacote no formato do esquema de dados inserido no atributo **schema**. Os dados em um pacote não devem conter chaves internas incompatíveis entre as bases, como chaves geradas automaticamente (opção **autopk**).
 
-No nosso exemplo, as associações no `folder` e `company` Os links foram substituídos pelas teclas de &quot;alto nível&quot; nas tabelas de destino:
+Em nosso exemplo, as associações nos links `folder` e `company` foram substituídas por teclas de &quot;alto nível&quot; nas tabelas de destino:
 
 ```xml
 <recipient>
@@ -64,17 +65,17 @@ No nosso exemplo, as associações no `folder` e `company` Os links foram substi
 </recipient>
 ```
 
-A variável `operation` atributo com o valor `none` define um link de reconciliação.
+O atributo `operation` com o valor `none` define um link de reconciliação.
 
-Um pacote de dados pode ser criado manualmente a partir de qualquer editor de texto. Você deve garantir que a estrutura do documento XML esteja em conformidade com a `xtk:navtree` esquema de dados. O console do cliente tem um módulo de exportação e importação de pacote de dados.
+Um pacote de dados pode ser criado manualmente a partir de qualquer editor de texto. Você deve garantir que a estrutura do documento XML esteja em conformidade com o esquema de dados `xtk:navtree`. O console do cliente tem um módulo de exportação e importação de pacote de dados.
 
 ## Exportar pacotes {#export-packages}
 
 Os pacotes podem ser exportados de três formas diferentes:
 
-* Use o **[!UICONTROL Package Export]** assistente para exportar um conjunto de objetos em um único pacote. [Saiba mais](#export-a-set-of-objects-in-a-package)
-* Para exportar um **objeto único**, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Export in a package]**.
-* Use o **Definições de pacote** para criar uma estrutura de pacote na qual você adiciona objetos a serem exportados posteriormente em um pacote. [Saiba mais](#manage-package-definitions)
+* Use o assistente **[!UICONTROL Package Export]** para exportar um conjunto de objetos em um único pacote. [Saiba mais](#export-a-set-of-objects-in-a-package)
+* Para exportar um **único objeto**, clique com o botão direito do mouse nele e selecione **[!UICONTROL Actions > Export in a package]**.
+* Use as **Definições de pacote** para criar uma estrutura de pacote na qual você adiciona objetos a serem exportados posteriormente em um pacote. [Saiba mais](#manage-package-definitions)
 
 Depois que um pacote é exportado, você pode importá-lo e todas as entidades adicionadas para outra instância do Campaign.
 
@@ -82,12 +83,12 @@ Depois que um pacote é exportado, você pode importá-lo e todas as entidades a
 
 Para exportar um conjunto de objetos em um pacote de dados, siga estas etapas:
 
-1. Navegue até o assistente de exportação de pacotes por meio da **[!UICONTROL Tools > Advanced > Export package...]** do explorador.
-1. Selecione o [tipos de pacotes](#types-of-packages).
+1. Navegue até o assistente de exportação de pacotes por meio do menu **[!UICONTROL Tools > Advanced > Export package...]** do explorador.
+1. Selecione os [tipos de pacotes](#types-of-packages).
 
    ![](assets/package_type.png)
 
-1. Clique em **Adicionar** para selecionar as entidades a serem exportadas como um pacote.
+1. Clique no botão **Adicionar** para selecionar as entidades a serem exportadas como um pacote.
 
    >[!CAUTION]
    >
@@ -95,7 +96,7 @@ Para exportar um conjunto de objetos em um pacote de dados, siga estas etapas:
 
    O mecanismo de dependência controla a sequência de exportação da entidade. Para obter mais informações, consulte [Gerenciamento de dependências](#manage-dependencies).
 
-1. Clique em **[!UICONTROL Next]** e defina o query de filtro no tipo de documento a ser extraído. Você deve configurar a cláusula de filtragem para extração de dados.
+1. Clique em **[!UICONTROL Next]** e defina a consulta de filtro no tipo de documento a ser extraído. Você deve configurar a cláusula de filtragem para extração de dados.
 
    >[!NOTE]
    >
@@ -111,20 +112,20 @@ Para exportar um conjunto de objetos em um pacote de dados, siga estas etapas:
 
 O processo de exportação rastreia os links entre os vários elementos exportados. Esse mecanismo é definido por duas regras:
 
-* objetos vinculados a um link com um `own` ou `owncopy` são exportados no mesmo pacote que o objeto exportado.
-* objetos vinculados a um link com um `neutral` ou `define` a integridade do tipo (link definido) deve ser exportada separadamente.
+* objetos vinculados a um link com uma integridade do tipo `own` ou `owncopy` são exportados no mesmo pacote que o objeto exportado.
+* objetos vinculados a um link com uma integridade de tipo `neutral` ou `define` (link definido) devem ser exportados separadamente.
 
 >[!NOTE]
 >
->Os tipos de integridade vinculados a elementos do schema são definidos em [esta página](database-links.md).
+>Os tipos de integridade vinculados a elementos do esquema são definidos em [esta página](database-links.md).
 
 #### Exportar uma campanha {#export-a-campaign}
 
 Veja abaixo um exemplo de como exportar uma campanha. A campanha de marketing a ser exportada contém:
-* a `MyTask`tarefa
-* a `campaignWorkflow` fluxo de trabalho na seguinte pasta: **[!UICONTROL Administration > Production > Technical workflows > Campaign processes > MyWorkflow]**.
+* uma tarefa `MyTask`
+* um fluxo de trabalho `campaignWorkflow` na seguinte pasta: **[!UICONTROL Administration > Production > Technical workflows > Campaign processes > MyWorkflow]**.
 
-A tarefa e o workflow são exportados no mesmo pacote que a campanha desde que os schemas correspondentes sejam conectados por links com um `own` integridade do tipo.
+A tarefa e o fluxo de trabalho são exportados no mesmo pacote que a campanha desde que os esquemas correspondentes sejam conectados por links com uma integridade do tipo `own`.
 
 O conteúdo do pacote é:
 
@@ -171,14 +172,14 @@ label="" name="" namespace="" vendor="">
 </package>   
 ```
 
-A afiliação a um tipo de pacote é definida em um schema com o `@pkgAdmin and @pkgPlatform` atributo. Esses atributos recebem uma expressão XTK que define as condições de afiliação ao pacote.
+A afiliação a um tipo de pacote é definida em um esquema com o atributo `@pkgAdmin and @pkgPlatform`. Esses atributos recebem uma expressão XTK que define as condições de afiliação ao pacote.
 
 ```xml
 <element name="offerEnv" img="nms:offerEnv.png" 
 template="xtk:folder" pkgAdmin="@id != 0">
 ```
 
-Por último, a `@pkgStatus` atributo permite definir as regras de exportação para esses elementos ou atributos. Dependendo do valor do atributo, o elemento ou atributo será encontrado no pacote exportado. Os três valores possíveis para este atributo são:
+Finalmente, o atributo `@pkgStatus` permite definir as regras de exportação para esses elementos ou atributos. Dependendo do valor do atributo, o elemento ou atributo será encontrado no pacote exportado. Os três valores possíveis para este atributo são:
 
 * `never`: não exporta o campo/link
 * `always`: força a exportação deste campo
@@ -186,7 +187,7 @@ Por último, a `@pkgStatus` atributo permite definir as regras de exportação p
 
 >[!NOTE]
 >
->A variável `preCreate` o valor só é admitido para eventos do tipo link. Ele permite criar ou apontar para uma entidade que ainda não foi carregada no pacote exportado.
+>O valor `preCreate` é apenas admitido para eventos do tipo link. Ele permite criar ou apontar para uma entidade que ainda não foi carregada no pacote exportado.
 
 ## Gerenciar definições de pacote {#manage-package-definitions}
 
@@ -210,7 +211,7 @@ Você pode então adicionar entidades à definição do pacote e exportá-lo par
 
 ### Adicionar entidades a uma definição de pacote {#add-entities-to-a-package-definition}
 
-Na guia **[!UICONTROL Content]**, clique no botão **[!UICONTROL Add]** para selecionar as entidades que serão exportadas com o pacote. As práticas recomendadas ao selecionar entidades são apresentadas na [nesta seção](#export-a-set-of-objects-in-a-package).
+Na guia **[!UICONTROL Content]**, clique no botão **[!UICONTROL Add]** para selecionar as entidades que serão exportadas com o pacote. As práticas recomendadas ao selecionar entidades são apresentadas em [esta seção](#export-a-set-of-objects-in-a-package).
 
 ![](assets/packagedefinition_addentities.png)
 
@@ -228,9 +229,9 @@ A criação de pacote pode ser configurada na guia **[!UICONTROL Content]** de d
 
 ![](assets/packagedefinition_generationparameters.png)
 
-* Use o **[!UICONTROL Include the definition]** opção para incluir a definição usada atualmente na definição de pacote.
-* Use o **[!UICONTROL Include an installation script]** opção para adicionar um script javascript a ser executado na importação de pacotes. Quando selecionada, uma guia **[!UICONTROL Script]** é adicionada na tela de definição de pacote.
-* Use o **[!UICONTROL Include default values]** opção para adicionar os valores de todos os atributos da entidade ao pacote.
+* Use a opção **[!UICONTROL Include the definition]** para incluir a definição usada atualmente na definição de pacote.
+* Use a opção **[!UICONTROL Include an installation script]** para adicionar um script javascript a ser executado na importação de pacotes. Quando selecionada, uma guia **[!UICONTROL Script]** é adicionada na tela de definição de pacote.
+* Use a opção **[!UICONTROL Include default values]** para adicionar os valores de todos os atributos da entidade ao pacote.
 
   Essa opção não está selecionada por padrão para evitar exportações longas. Isso significa que, por padrão, os atributos das entidades com valores padrão (&#39;string vazia&#39;, &#39;0&#39; e &#39;falso&#39; se não definido de outra forma no schema) não são adicionados ao pacote e, portanto, não são exportados.
 
@@ -242,9 +243,9 @@ A criação de pacote pode ser configurada na guia **[!UICONTROL Content]** de d
 
 Siga as etapas abaixo para exportar um pacote de uma definição de pacote:
 
-1. Selecione a definição de pacote a ser exportada, clique em **[!UICONTROL Actions]** e selecione **[!UICONTROL Export the package]**.
+1. Selecione a definição de pacote para exportar, clique no botão **[!UICONTROL Actions]** e selecione **[!UICONTROL Export the package]**.
 1. Verifique o nome e o local do arquivo exportado.
-1. Clique em **[!UICONTROL Start]** botão para iniciar a exportação.
+1. Clique no botão **[!UICONTROL Start]** para iniciar a exportação.
 
 ## Importar pacotes {#import-packages}
 
@@ -351,4 +352,3 @@ A prática recomendada também é inserir a data da atualização.
 >[!IMPORTANT]
 >
 >O campo de descrição só pode conter até 2.000 caracteres.
-

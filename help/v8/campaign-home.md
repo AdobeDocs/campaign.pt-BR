@@ -5,8 +5,8 @@ title: Documentação do produto Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: 574206bd243a2492e512ee62f057da940d29da6e
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 100%
+source-wordcount: '341'
+ht-degree: 94%
 
 ---
 
@@ -112,5 +112,5 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
 
 ## Recursos adicionais
 
-[Descrição do produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Adobe Campaign Web user interface documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+[Descrição de Produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] guia de automação](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Painel de Controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
 

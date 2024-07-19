@@ -18,17 +18,17 @@ Como um **Gerente de ofertas**, você é responsável pela criação do catálog
 
 Um catálogo de ofertas está associado a um único ambiente pré-existente. As ofertas neste catálogo só podem ser associadas aos espaços especificados neste mesmo ambiente.
 
-Antes de criar as ofertas, primeiro especifique um [ambiente](interaction-env.md) que contém todas as características (qualificação, restrições de target, regras de apresentação) de um conjunto de ofertas, classificadas em categorias, bem como a lista de espaços.
+Antes de criar suas ofertas, você deve primeiro especificar um [ambiente](interaction-env.md) que contenha todas as características (qualificação, restrições no destino, regras de apresentação) de um conjunto de ofertas, classificadas em categorias, bem como a lista de seus espaços.
 
 ## Criar categorias de ofertas{#creating-offer-categories}
 
-As ofertas são organizadas em categorias/subcategorias. As categorias são criadas na variável **[!UICONTROL Design]** e implantado automaticamente no **[!UICONTROL Live]** ambiente (ou seja, disponibilizado) quando as ofertas que eles contêm são aprovadas. A variável **[!UICONTROL Design]** O ambiente contém uma categoria padrão para receber todas as ofertas. Subcategorias pode ser criado para adicionar hierarquia às ofertas de catálogo.
+As ofertas são organizadas em categorias/subcategorias. As categorias são criadas no ambiente **[!UICONTROL Design]** e implantadas automaticamente no ambiente **[!UICONTROL Live]** (ou seja, são disponibilizadas) quando as ofertas que elas contêm são aprovadas. O ambiente **[!UICONTROL Design]** contém uma categoria padrão para receber todas as ofertas. Subcategorias pode ser criado para adicionar hierarquia às ofertas de catálogo.
 
-Para cada categoria, você pode definir **datas de qualificação**, que é o período durante o qual as ofertas contidas na categoria podem ser apresentadas ao target. Você também pode ajustar o peso de uma categoria para priorizar a apresentação de ofertas.
+Para cada categoria, você pode definir **datas de qualificação**, que é o período durante o qual as ofertas contidas na categoria podem ser apresentadas ao público-alvo. Você também pode ajustar o peso de uma categoria para priorizar a apresentação de ofertas.
 
 Para criar uma nova categoria, siga as etapas abaixo:
 
-1. Navegador para o **[!UICONTROL Offer catalog]** pasta.
+1. Navegue até a pasta **[!UICONTROL Offer catalog]**.
 
    ![](assets/offer_cat_create_001.png)
 
@@ -50,9 +50,9 @@ Para criar uma nova categoria, siga as etapas abaixo:
 
      ![](assets/offer_cat_create_004.png)
 
-   * **[!UICONTROL Edit query]** para aplicar filtros ao target da oferta.
+   * **[!UICONTROL Edit query]** para aplicar filtros ao destino da oferta.
 
-   * Um resumo das regras de qualificação.Para visualizá-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]** link.
+   * Um resumo das regras de qualificação.Para exibi-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]**.
 
 ## Adicionar uma categoria substituta
 
@@ -65,7 +65,7 @@ Além disso, não deve haver uma regra de apresentação aplicada a essas oferta
 Para incluir uma categoria de fallback nas recomendações, siga as etapas abaixo:
 
 1. Navegue até o catálogo de ofertas.
-1. Clique em **[!UICONTROL Eligibility]** e selecione a guia **[!UICONTROL Always include this category in the recommendations]** opção.
+1. Clique na guia **[!UICONTROL Eligibility]** e selecione a opção **[!UICONTROL Always include this category in the recommendations]**.
 1. Clique em **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)

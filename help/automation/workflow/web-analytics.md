@@ -15,7 +15,7 @@ ht-degree: 81%
 
 
 
-Os workflows detalhados abaixo são instalados com o **Conectores do Web Analytics** por padrão.
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Web Analytics connectors** por padrão.
 
 <table> 
  <tbody> 
@@ -32,7 +32,7 @@ Os workflows detalhados abaixo são instalados com o **Conectores do Web Analyti
   <tr> 
    <td> <span class="uicontrol">Identificação de contatos convertidos</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por esse workflow podem ser acessados no <span class="uicontrol">Relatório de eficiência de re-marketing</span> (Consulte esta seção ). <br /> </td> 
+   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por este fluxo de trabalho podem ser acessados no <span class="uicontrol">Relatório de eficiência de remarketing</span> (Consulte esta seção ). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Limpeza de eventos</span> <br /> </td> 

@@ -13,7 +13,7 @@ ht-degree: 41%
 
 # Introdução às tipologias de campanha{#about-campaign-typologies}
 
-**Otimização de campanha** é o módulo do Adobe Campaign que permite controlar, filtrar e monitorar o envio de deliveries. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
+**Otimização de Campanha** é o módulo Adobe Campaign que permite controlar, filtrar e monitorar o envio de entregas. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#typologies-video)
 
@@ -29,21 +29,21 @@ Uma tipologia é um conjunto de regras de verificação aplicadas a todas as men
 
 Uma tipologia de campanha pode conter várias regras de tipologia, mas uma entrega só pode fazer referência a uma tipologia.
 
-As regras de tipologia e tipologias integradas estão disponíveis no **[!UICONTROL Administration > Campaign management > Typology management]** pasta do explorador do Campaign.
+As regras de tipologia e tipologias internas estão disponíveis na pasta **[!UICONTROL Administration > Campaign management > Typology management]** do explorador do Campaign.
 
-Para cada tipologia, a variável **[!UICONTROL Rules]** permite adicionar, excluir ou exibir as regras de tipologia a serem aplicadas.
+Para cada tipologia, a guia **[!UICONTROL Rules]** permite adicionar, excluir ou exibir as regras de tipologia a serem aplicadas.
 
 ![](assets/campaign_opt_rules_tab.png)
 
-Depois de criadas, as regras de tipologia são agrupadas em campanhas **tipologias** que são referenciados nas entregas. [Saiba mais](#apply-typologies).
+Depois de criadas, as regras de tipologia são agrupadas nas **tipologias** da campanha, que são mencionadas nas entregas. [Saiba mais](#apply-typologies).
 
 
-O Campaign vem com um conjunto de **Filtragem** e **Controle** regras:
+O Campaign vem com um conjunto de regras padrão de **Filtragem** e **Controle**:
 
-* **Filtragem** as regras são usadas para excluir parte do público alvo com base em critérios. [Saiba mais](filtering-rules.md).
-* **Controle** as regras permitem verificar a validade das mensagens antes de serem enviadas. [Saiba mais](control-rules.md).
+* As regras de **Filtragem** são usadas para excluir parte do destino com base em critérios. [Saiba mais](filtering-rules.md).
+* As regras de **Controle** permitem que você verifique a validade das mensagens antes de serem enviadas. [Saiba mais](control-rules.md).
 
-O complemento Otimização de campanha fornece dois tipos adicionais de **regras de tipologia**:
+O complemento de Otimização de Campanha fornece dois tipos adicionais de **regras de tipologia**:
 
 * Regras de **Pressão**, que permitem controlar a fadiga da marca. [Saiba mais](pressure-rules.md).
 * Regras de **Capacidade**, que permitem limitar cargas para garantir condições de processamento ideais. [Saiba mais](consistency-rules.md#controlling-capacity).
@@ -51,7 +51,7 @@ O complemento Otimização de campanha fornece dois tipos adicionais de **regras
 
 >[!NOTE]
 >
->Se você estiver usando a variável **Interação** para gerenciar ofertas, você também pode criar **Apresentação da oferta** regras de tipologia para controlar o fluxo de apresentações de oferta usando regras de apresentação. [Saiba mais](../../v8/interaction/interaction-offer.md#offer-presentation).
+>Se você estiver usando o módulo **Interação** para gerenciar ofertas, também poderá criar regras de tipologia de **Apresentação de oferta** para controlar o fluxo de apresentações de oferta usando regras de apresentação. [Saiba mais](../../v8/interaction/interaction-offer.md#offer-presentation).
 
 
 ## Etapas principais para criar e usar tipologias {#apply-typologies}
@@ -83,6 +83,7 @@ Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign
 
 ### Configurar o gerenciamento de fadiga usando filtros predefinidos
 
-O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de destinatários. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que filtrará a população do público-alvo pelo número de mensagens recebidas Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign usando filtros.
+O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de destinatários. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que filtrará a população do público-alvo pelo número de mensagens recebidas
+Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign usando filtros.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

@@ -14,7 +14,7 @@ ht-degree: 66%
 
 # Configurar e enviar a entrega {#configure-delivery}
 
-Acesse os parâmetros de delivery para definir mais configurações e definir como enviar suas mensagens. Você pode definir o delivery [prioridade](#delivery-priority), configurar [ondas](#sending-using-multiple-waves)e testar o envio do delivery. Quando essa configuração estiver concluída, você poderá confirmar o envio conforme descrito em [nesta seção](#confirm-delivery). As mensagens são enviadas imediatamente ou com base no delivery [programação](#schedule-delivery-sending).
+Acesse os parâmetros de delivery para definir mais configurações e definir como enviar suas mensagens. Você pode definir a entrega [prioridade](#delivery-priority), configurar [ondas](#sending-using-multiple-waves) e testar o envio da entrega. Quando esta configuração estiver concluída, você poderá confirmar o envio conforme descrito em [esta seção](#confirm-delivery). As mensagens são enviadas imediatamente ou de acordo com a [programação](#schedule-delivery-sending) de entrega.
 
 ## Definir parâmetros adicionais {#delivery-additional-parameters}
 
@@ -24,11 +24,11 @@ Antes de enviar a entrega, você poderá definir os parâmetros de envio nas pro
 
 ### Prioridade de entrega {#delivery-priority}
 
-Use o **[!UICONTROL Delivery priority]** opção para alterar a ordem de envio dos deliveries definindo o nível de prioridade, em **[!UICONTROL Very low]** para **[!UICONTROL Very high]** (o valor padrão é **[!UICONTROL Normal]**).
+Use a opção **[!UICONTROL Delivery priority]** para alterar a ordem de envio dos deliveries, definindo o nível de prioridade (de **[!UICONTROL Very low]** a **[!UICONTROL Very high]**) (o valor padrão é **[!UICONTROL Normal]**).
 
 ### Quantidade em lotes {#delivery-batch-quantity}
 
-Use o  **[!UICONTROL Message batch quantity]** opção para definir o número de mensagens agrupadas no mesmo pacote do delivery XML. Se o parâmetro for definido como 0, as mensagens serão automaticamente agrupadas. O tamanho do pacote é definido pelo cálculo `<delivery size>/1024`, com no mínimo 8 e no máximo 256 mensagens por pacote.
+Use a opção **[!UICONTROL Message batch quantity]** para definir o número de mensagens agrupadas no mesmo pacote de entrega XML. Se o parâmetro for definido como 0, as mensagens serão automaticamente agrupadas. O tamanho do pacote é definido pelo cálculo `<delivery size>/1024`, com no mínimo 8 e no máximo 256 mensagens por pacote.
 
 >[!IMPORTANT]
 >
@@ -36,13 +36,13 @@ Use o  **[!UICONTROL Message batch quantity]** opção para definir o número de
 
 ### Testar o envio do delivery
 
-Use o  **[!UICONTROL Test SMTP delivery]** opção para testar o envio via SMTP. A entrega é processada até a conexão com o servidor SMTP, mas não é enviada: para cada destinatário do delivery, o Campaign se conecta ao servidor do provedor SMTP, executa o comando SMTP RCPT TO e encerra a conexão antes do comando SMTP DATA.
+Use a opção **[!UICONTROL Test SMTP delivery]** para testar o envio via SMTP. A entrega é processada até a conexão com o servidor SMTP, mas não é enviada: para cada destinatário do delivery, o Campaign se conecta ao servidor do provedor SMTP, executa o comando SMTP RCPT TO e encerra a conexão antes do comando SMTP DATA.
 
 >[!NOTE]
 >
 >* Essa opção não deve ser definida no mid-sourcing.
 >
->* Saiba mais sobre a configuração do servidor SMTP em [Documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
+>* Saiba mais sobre a configuração do servidor SMTP na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
 
 ## Enviar usando várias ondas {#sending-using-multiple-waves}
 
@@ -52,8 +52,8 @@ Para balancear a carga, você pode dividir entregas em vários lotes. Configure 
 
 Para definir ondas, siga estas etapas:
 
-1. Abra as propriedades do delivery e navegue até o **[!UICONTROL Delivery]** guia.
-1. Ativar o **[!UICONTROL Send using multiple waves]** e clique no botão **[!UICONTROL Define waves...]** link.
+1. Abra as propriedades de entrega e navegue até a guia **[!UICONTROL Delivery]**.
+1. Ative a opção **[!UICONTROL Send using multiple waves]** e clique no link **[!UICONTROL Define waves...]**.
 
    ![](assets/delivery-define-waves.png)
 
@@ -65,13 +65,13 @@ Para definir ondas, siga estas etapas:
 
 Você pode definir o tamanho de cada onda ou adicioná-las a um calendário.
 
-* **Definir o tamanho de cada onda**. Por exemplo, se você inserir **[!UICONTROL 30%]** no campo correspondente, cada onda representará 30% das mensagens incluídas na entrega, exceto a última, que representará 10% das mensagens.
+* **Defina o tamanho para cada onda**. Por exemplo, se você inserir **[!UICONTROL 30%]** no campo correspondente, cada onda representará 30% das mensagens incluídas na entrega, exceto a última, que representará 10% das mensagens.
 
   No campo **[!UICONTROL Period]**, especifique o atraso entre o início de duas ondas consecutivas. Por exemplo, se você inserir **[!UICONTROL 2d]**, a primeira onda começará imediatamente, a segunda onda começará em dois dias, a terceira onda em quatro dias e assim por diante.
 
   ![](assets/delivery-waves-size.png)
 
-* **Definir um calendário para enviar cada onda**.  Por exemplo, a primeira onda representa 25% do número total de mensagens incluídas no delivery e iniciará imediatamente. As próximas duas ondas completam a entrega e são definidas para começar em intervalos de seis horas.
+* **Defina um calendário para enviar cada onda**.  Por exemplo, a primeira onda representa 25% do número total de mensagens incluídas no delivery e iniciará imediatamente. As próximas duas ondas completam a entrega e são definidas para começar em intervalos de seis horas.
 
   Na coluna **[!UICONTROL Start]**, especifique o atraso entre o início de duas ondas consecutivas. Na coluna **[!UICONTROL Size]**, insira um número fixo ou uma porcentagem.
 
@@ -79,17 +79,17 @@ Você pode definir o tamanho de cada onda ou adicioná-las a um calendário.
 
 ### Verificação de agendamento de onda {#check-waves}
 
-Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, garante que a última onda seja planejada antes do limite da validade da entrega. Tipologias de campanha e suas regras, configuradas na variável **[!UICONTROL Typology]** das propriedades de delivery, são apresentadas em [nesta seção](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
+Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, garante que a última onda seja planejada antes do limite da validade da entrega. As tipologias de campanha e suas regras, configuradas na guia **[!UICONTROL Typology]** das propriedades de entrega, são apresentadas em [esta seção](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
 >[!IMPORTANT]
 >
->Certifique-se de que as últimas ondas não excedam o prazo da entrega, que é definido na guia **[!UICONTROL Validity]**. Caso contrário, algumas mensagens podem não ser enviadas. Saiba mais sobre o período de validade de um delivery em [nesta seção](delivery-failures.md#valid-period).
+>Certifique-se de que as últimas ondas não excedam o prazo da entrega, que é definido na guia **[!UICONTROL Validity]**. Caso contrário, algumas mensagens podem não ser enviadas. Saiba mais sobre o período de validade de uma entrega em [esta seção](delivery-failures.md#valid-period).
 >
->Você também deve definir tempo suficiente para tentativas ao configurar as últimas ondas. Saiba mais sobre tentativas no [nesta seção](delivery-failures.md#retries).
+>Você também deve definir tempo suficiente para tentativas ao configurar as últimas ondas. Saiba mais sobre tentativas em [esta seção](delivery-failures.md#retries).
 
 ### Monitorar ondas {#monitor-waves}
 
-Para monitorar seus envios, navegue até os logs do delivery. Consulte [esta página](send.md)
+Para monitorar seus envios, navegue até os logs do delivery. Ver [esta página](send.md)
 
 Você pode ver as entregas que já foram enviadas nas ondas processadas (status **[!UICONTROL Sent]**) e as entregas a serem enviadas nas ondas restantes (status **[!UICONTROL Pending]**).
 
@@ -124,9 +124,9 @@ Quando o delivery estiver configurado e pronto para ser enviado, certifique-se d
 
 Para fazer isso, siga as etapas abaixo.
 
-1. Clique em **[!UICONTROL Send]**, selecione a ação desejada.
+1. Clique em **[!UICONTROL Send]** e selecione a ação desejada.
 
-   * Para enviar o delivery imediatamente, selecione [**Entregar o mais rápido possível**].
+   * Para enviar a entrega imediatamente, selecione [**Enviar assim que possível**].
    * Para agendar o envio para uma data posterior, selecione **[!UICONTROL Postpone the delivery]**. [Saiba mais](#schedule-delivery-sending)
 
 1. Clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [esta seção](delivery-analysis.md).
@@ -137,7 +137,7 @@ Para fazer isso, siga as etapas abaixo.
 
    ![](assets/delivery-send-confirm.png)
 
-1. Você pode fechar o assistente do delivery e rastrear a execução do delivery a partir do **[!UICONTROL Delivery]** , acessível por meio do detalhe deste delivery ou pela lista de deliveries.
+1. Você pode fechar o assistente de entrega e controlar a execução da entrega a partir da guia **[!UICONTROL Delivery]**, acessível por meio do detalhe desta entrega ou pela lista de entregas.
 
    Para obter mais informações, consulte as seções abaixo:
 
@@ -164,7 +164,7 @@ Para fazer isso, siga as etapas abaixo.
 
    ![](assets/delivery-send-scheduled.png)
 
-Na lista do delivery, a entrega será exibida com a variável **[!UICONTROL Pending]** status.
+Na lista de entrega, a entrega será exibida com o status **[!UICONTROL Pending]**.
 
 O agendamento pode ser configurado de forma ascendente através do botão **[!UICONTROL Scheduling]** da entrega.
 

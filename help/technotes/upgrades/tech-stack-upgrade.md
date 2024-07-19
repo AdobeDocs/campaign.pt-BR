@@ -16,9 +16,9 @@ ht-degree: 9%
 
 A infraestrutura do Campaign depende de sistemas de terceiros que devem ser atualizados regularmente com as versões e correções mais recentes. Essas atualizações são obrigatórias para garantir a continuidade do serviço e proteger os ambientes do Campaign contra riscos de segurança. Além disso, uma atualização do Campaign é necessária para garantir a compatibilidade com alterações no sistema de terceiros.
 
-Como um **Cliente Cloud Service gerenciado**, o Adobe informa sobre essas atualizações quando elas são necessárias. Seus ambientes precisarão ser atualizados de acordo com as recomendações para garantir a conformidade.
+Como um **cliente de Cloud Service gerenciado**, o Adobe informa sobre essas atualizações quando elas são necessárias. Seus ambientes precisarão ser atualizados de acordo com as recomendações para garantir a conformidade.
 
-Por motivos de segurança, o Adobe deve [instalar a build mais recente do Campaign](#ac-upgrade)e, em seguida, atualize seu [sistema operacional](#os-upgrade) e/ou seu [Sistema de gerenciamento de banco de dados relacional (RDBMS)](#pg-upgrade).
+Por motivos de segurança, o Adobe deve [instalar a compilação mais recente do Campaign](#ac-upgrade) e atualizar seu [sistema operacional](#os-upgrade) e/ou seu [Sistema de Gerenciamento de Banco de Dados Relativo (RDBMS)](#pg-upgrade).
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Por motivos de segurança, o Adobe deve [instalar a build mais recente do Campai
 
 **Você será afetado?**
 
-Se você for afetado pelo [atualização do sistema operacional](#os-upgrade) e/ou a [atualização do sistema de banco de dados](#pg-upgrade) detalhado abaixo, o Adobe deve atualizar seus ambientes do Campaign para [a versão 8.4.3 mais recente](../../v8/start/release-notes.md), compatível com esses sistemas.
+Se você for afetado pela [atualização do sistema operacional](#os-upgrade) e/ou pela [atualização do sistema de banco de dados](#pg-upgrade) detalhada abaixo, o Adobe deverá atualizar seus ambientes do Campaign para a [versão 8.4.3 mais recente](../../v8/start/release-notes.md), que é compatível com esses sistemas.
 
 **Como atualizar?**
 
@@ -49,7 +49,7 @@ Como cliente do Managed Cloud Service, o Adobe entrará em contato com você e a
 
 **Você será afetado?**
 
-Se o sistema de banco de dados para o Campaign for PostgreSQL, para se beneficiar das inovações e atualizações de segurança mais recentes do PostgreSQL, o Adobe precisa atualizar para **PostgreSQL 14**. Observe que o PostgreSQL 11 chegará ao fim da vida útil em 9 de novembro de 2023.
+Se o sistema de banco de dados do Campaign for PostgreSQL, para se beneficiar das inovações e atualizações de segurança mais recentes do PostgreSQL, o Adobe precisará atualizar para o **PostgreSQL 14**. Observe que o PostgreSQL 11 chegará ao fim da vida útil em 9 de novembro de 2023.
 
 **Como atualizar?**
 

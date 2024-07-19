@@ -14,7 +14,7 @@ ht-degree: 68%
 
 # Adicionar uma oferta em uma página da Web{#add-an-offer-in-web}
 
-Para chamar o mecanismo de oferta em uma página da Web, insira uma chamada para um código JavaScript diretamente na página. Essa chamada retorna o conteúdo da oferta em um elemento direcionado.
+Para chamar o Mecanismo de oferta em uma página da Web, insira uma chamada para um código JavaScript diretamente na página. Essa chamada retorna o conteúdo da oferta em um elemento direcionado.
 
 O URL de chamada de script tem essa aparência:
 
@@ -62,7 +62,7 @@ Essa chamada estática gerará automaticamente uma chamada dinâmica contendo to
 
 Esse comportamento permite usar vários espaços de ofertas na mesma página, gerenciados por uma única chamada do mecanismo de oferta.
 
-**Etapa 3: exibir os resultados na página de HTML**
+**Etapa 3: exibir os resultados na página HTML**
 
 O conteúdo da representação da oferta é retornado para a página HTML pelo Mecanismo de oferta:
 
@@ -132,7 +132,7 @@ Para gerar a representação de oferta HTML automaticamente, é possível usar u
 
 ### Apresentar uma oferta {#presenting-an-offer}
 
-Campaign **Interação** permite retornar um nó XML para a página HTML que chama o mecanismo de oferta. Este nó XML pode ser processado por funções a serem desenvolvidas no lado do cliente.
+O módulo Campaign **Interaction** permite retornar um nó XML para a página HTML que chama o mecanismo de oferta. Este nó XML pode ser processado por funções a serem desenvolvidas no lado do cliente.
 
 A chamada para o mecanismo de oferta tem esta aparência:
 
@@ -165,13 +165,13 @@ O nó XML retornado tem esta aparência:
 
 O caso de uso abaixo detalha as configurações a serem executadas no Adobe Campaign para habilitar o modo XML e, em seguida, mostrar o resultado da chamada para o mecanismo na página de HTML.
 
-1. **Criar um ambiente e um espaço de oferta**
+1. **Criar um ambiente e um espaço de ofertas**
 
-   Para obter mais informações sobre criação de ambiente, consulte [esta página](interaction-env.md).
+   Para obter mais informações sobre como criar um ambiente, consulte [esta página](interaction-env.md).
 
-   Para obter mais informações sobre a criação de um espaço de ofertas, consulte [esta página](interaction-offer-spaces.md).
+   Para obter mais informações sobre como criar um espaço de ofertas, consulte [esta página](interaction-offer-spaces.md).
 
-1. **Extensão do schema de ofertas para adicionar novos campos**
+1. **Estender o esquema de oferta para adicionar novos campos**
 
    Esse esquema definirá os seguintes campos: Title number 2 e price.
 
@@ -312,7 +312,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
 ![](assets/interaction_xmlmode_001.png)
 
-## Configurar uma integração SOAP
+## Configurar uma integração com o SOAP
 
 Os serviços da Web SOAP fornecidos para o gerenciamento de ofertas são diferentes daqueles normalmente usados no Adobe Campaign. Eles podem ser acessados por meio da URL de interação descrita na seção anterior e permitem apresentar ou atualizar ofertas para um determinado contato.
 

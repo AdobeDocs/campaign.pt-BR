@@ -30,9 +30,9 @@ Essa alteração afeta:
 
 ## Quando ocorrerá essa migração?{#aws-timeline}
 
-A migração de ambientes de desenvolvimento e de preparo ocorrerá em **Outubro de 2023**.
+A migração de ambientes de preparo e desenvolvimento ocorrerá em **outubro de 2023**.
 
-A migração de ambientes de produção está programada para começar em **Janeiro de 2024**. Mais detalhes serão fornecidos à medida que a data se aproximar.
+A migração de ambientes de produção está agendada para começar em **janeiro de 2024**. Mais detalhes serão fornecidos à medida que a data se aproximar.
 
 Como cliente do Campaign, você receberá uma notificação adicional, pois as ondas de migração estão programadas. As notificações serão enviadas pelo menos 7 dias antes da migração para ambientes de preparo e pelo menos 30 dias antes da migração para ambientes de produção.
 
@@ -53,7 +53,7 @@ Essa mudança será transparente para os clientes:
 
   A nuvem do Adobe Managed Services é hospedada no Amazon Web Services (AWS), um ambiente moderno, seguro e otimizado. [Saiba mais sobre o Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
 
-* **Quais clientes são direcionados para essa migração?**
+* **Quais clientes são direcionados para esta migração?**
 
   Todos os clientes do Campaign v8 e o Campaign Classic v7 híbrido, hospedado e o Campaign Managed Services terão seus ambientes migrados. Os clientes do Campaign Standard também são afetados.
 
@@ -65,13 +65,13 @@ Essa mudança será transparente para os clientes:
 
   Nenhuma ação é necessária, pois a migração será executada automaticamente pelo Adobe.
 
-* **Quais validações precisam ser executadas pelos clientes?**
+* **Que validações precisam ser executadas pelos clientes?**
 
-  Nenhum teste específico é necessário para essa migração. Caso algum problema seja observado, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  Nenhum teste específico é necessário para essa migração. Caso algum problema seja observado, entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
-* **Posso solicitar uma alteração na Data/Hora para o slot de atualização de segurança programado?**
+* **É possível solicitar uma alteração em Data/Hora no slot de atualização de segurança agendado?**
 
   Como essa é uma migração obrigatória, não podemos acomodar modificações na programação existente.
 
-Para qualquer outra pergunta, entre em contato com [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Para qualquer outra pergunta, entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

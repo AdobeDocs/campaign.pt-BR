@@ -13,7 +13,7 @@ ht-degree: 85%
 
 # Transferência para mid-sourcing{#transfer-to-mid-sourcing}
 
-Os workflows detalhados abaixo são instalados com o **Transferência para mid-sourcing** por padrão.
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Transferência para o Mid-sourcing** por padrão.
 
 <table> 
  <tbody> 

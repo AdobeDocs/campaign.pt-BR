@@ -21,7 +21,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma tipologia de campanha.
 
-   As tipologias são acessadas pelo **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** pasta do explorador do Campaign.
+   As tipologias são acessadas pela pasta **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** do explorador do Campaign.
 
 1. Vá para a guia **[!UICONTROL Rules]**, clique no botão **[!UICONTROL Add]** e selecione as regras a serem aplicadas com esta tipologia.
 
@@ -29,7 +29,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Salve a tipologia: ela será adicionada à lista de tipologias existentes.
 1. Abra o delivery ao qual deseja aplicar as regras.
-1. Navegue até as propriedades do delivery e abra a **[!UICONTROL Typology]** guia.
+1. Navegue até as propriedades de entrega e abra a guia **[!UICONTROL Typology]**.
 1. Selecione a tipologia na lista suspensa.
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
@@ -97,7 +97,7 @@ Por exemplo, uma regra de pressão com ordem de execução de 20 é executada an
 
 ### Regras de controle {#control-rules}
 
-Para **[!UICONTROL Control]** regras, é possível decidir em qual ponto do ciclo de vida do delivery ela é aplicada: antes ou depois do direcionamento, no início da personalização, no final da análise. Na guia **[!UICONTROL Phase]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL General]**.
+Para regras de **[!UICONTROL Control]**, é possível decidir em qual ponto do ciclo de vida da entrega ela será aplicada: antes ou depois do direcionamento, no início da personalização, no final da análise. Na guia **[!UICONTROL Phase]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL General]**.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -145,4 +145,4 @@ A guia **[!UICONTROL Distributed Marketing]** permite definir o remapeamento de 
 >[!NOTE]
 >
 >Em tipologias e regras de tipologia, a guia **[!UICONTROL Distributed Marketing]** será adicionada caso a licença inclua essa opção: verifique o contrato de licença.\
->Para obter mais informações sobre Marketing distribuído, consulte [nesta seção](../distributed-marketing/about-distributed-marketing.md).
+>Para obter mais informações sobre Marketing distribuído, consulte [esta seção](../distributed-marketing/about-distributed-marketing.md).

@@ -21,7 +21,7 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 
 Esse workflow (execução diária) seleciona todos os destinatários que fazem aniversário na data atual.
 
-Para fazer isso, crie uma campanha e adicione uma [workflow da campanha](campaign-workflows.md).
+Para fazer isso, crie uma campanha e adicione um [fluxo de trabalho de campanha](campaign-workflows.md).
 
 Siga as etapas detalhadas abaixo.
 
@@ -191,6 +191,6 @@ Adicione uma atividade de **Entrega recorrente** com base no modelo de email de 
 >
 >Para que os fluxos de trabalho sejam executados, os fluxos de trabalho técnicos relacionados ao pacote do Campaign devem ser iniciados. Para obter mais informações, consulte a seção [Lista de fluxos de trabalho técnicos](technical-workflows.md).
 >
->Se as etapas de aprovação estiverem habilitadas para a campanha, as remessas serão enviadas apenas quando essas etapas tiverem sido confirmadas. Para obter mais informações, consulte esta seção.
+>Se as etapas de aprovação estiverem habilitadas para a campanha, as remessas serão enviadas apenas quando essas etapas tiverem sido confirmadas. Para obter mais informações, consulte   seção.
 
 ![](assets/birthday-workflow_usecase_1.png)

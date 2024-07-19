@@ -16,7 +16,7 @@ ht-degree: 86%
 
 
 
-Os workflows detalhados são instalados com o módulo **Marketing Distribuído** por padrão. Para obter mais informações sobre esse módulo, consulte [nesta seção](../distributed-marketing/about-distributed-marketing.md).
+Os workflows detalhados são instalados com o módulo **Marketing Distribuído** por padrão. Para obter mais informações sobre este módulo, consulte [esta seção](../distributed-marketing/about-distributed-marketing.md).
 
 <table> 
  <tbody> 

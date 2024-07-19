@@ -22,8 +22,8 @@ Antes de enviar provas, uma prática recomendada é verificar o conteúdo da men
 
 Para visualizar o conteúdo da mensagem, siga as etapas abaixo:
 
-1. Navegue até o **Visualizar** da entrega.
-1. Clique em **[!UICONTROL Test personalization]** para selecionar um perfil e preencher dados de personalização. Você pode escolher um recipient específico no banco de dados, um seed address ou selecionar um perfil do público-alvo, caso ele já tenha sido definido. Você também pode verificar o conteúdo sem personalização.
+1. Navegue até a guia **Visualização** da entrega.
+1. Clique no botão **[!UICONTROL Test personalization]** para selecionar um perfil para preencher os dados de personalização. Você pode escolher um recipient específico no banco de dados, um seed address ou selecionar um perfil do público-alvo, caso ele já tenha sido definido. Você também pode verificar o conteúdo sem personalização.
 
    ![](assets/test-personalization.png)
 
@@ -41,46 +41,46 @@ Uma prova é uma mensagem específica que permite testar uma mensagem antes de e
 
 ### Destinatários de prova {#proofs-recipients}
 
-O target de prova pode ser definido no template de delivery ou específico para um delivery. Em ambos os casos, navegue até a tela de definição de público-alvo na **[!UICONTROL To]** e selecione o **[!UICONTROL Target of the proofs]** guia.
+O target de prova pode ser definido no template de delivery ou específico para um delivery. Em ambos os casos, navegue até a tela de definição de destino no link **[!UICONTROL To]** e selecione a guia **[!UICONTROL Target of the proofs]**.
 
 ![](assets/target-of-proofs.png)
 
-O tipo de público alvo de prova é selecionado no **[!UICONTROL Targeting mode]** lista suspensa.
+O tipo de destino de prova está selecionado na lista suspensa **[!UICONTROL Targeting mode]**.
 
-* Use o **[!UICONTROL Definition of a specific proof target]** opção para selecionar recipients no banco de dados como o target da prova.
-* Use o **[!UICONTROL Substitution of the address]** opção para inserir endereços de email e usar os dados do recipient de destino para validar o conteúdo. Os endereços de substituição podem ser inseridos manualmente ou selecionados na lista suspensa. A enumeração associada é Substitution address (rcpAddress).
-Por padrão, a substituição é executada aleatoriamente, mas você pode selecionar um recipient específico do target principal, por meio do  **[!UICONTROL Detail]** ícone.
+* Use a opção **[!UICONTROL Definition of a specific proof target]** para selecionar recipients no banco de dados como o target da prova.
+* Use a opção **[!UICONTROL Substitution of the address]** para inserir endereços de email e usar os dados do recipient de destino para validar o conteúdo. Os endereços de substituição podem ser inseridos manualmente ou selecionados na lista suspensa. A enumeração associada é Substitution address (rcpAddress).
+Por padrão, a substituição é executada aleatoriamente, mas você pode selecionar um recipient específico do público-alvo principal, por meio do ícone **[!UICONTROL Detail]**.
 
   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
-  Escolha o **[!UICONTROL Select a profile (must be included in the target)]** e selecione um recipient.
+  Escolha a opção **[!UICONTROL Select a profile (must be included in the target)]** e selecione um recipient.
 
   ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
 
 
-* Use o **[!UICONTROL Seed addresses]**  opção para usar seed addresses como target de prova. Esses endereços podem ser importados de um arquivo ou inseridos manualmente.
+* Use a opção **[!UICONTROL Seed addresses]** para usar seed addresses como target de prova. Esses endereços podem ser importados de um arquivo ou inseridos manualmente.
 
   >[!NOTE]
   >
   >Os seed addresses não pertencem à tabela de recipient padrão (nms:recipient), pois são criados em uma tabela separada. Se a tabela de recipients é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados.
 
-  Saiba mais sobre seed addresses em [nesta seção](../audiences/test-profiles.md).
+  Saiba mais sobre seed addresses em [esta seção](../audiences/test-profiles.md).
 
-* Use o **[!UICONTROL Specific target and Seed addresses]** opção para combinar seed addresses e endereços de email específicos. As configurações relacionadas serão então definidas em duas sub-guias separadas.
+* Use a opção **[!UICONTROL Specific target and Seed addresses]** para combinar seed addresses e endereços de email específicos. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 
 ### Enviar uma prova{#proofs-send}
 
 Para enviar provas de mensagem, siga as etapas abaixo:
 
-1. Na tela de definição de mensagem, clique no link **[!UICONTROL Send a proof]** botão.
-1. No **[!UICONTROL Send a proof]** verifique os recipients da prova.
+1. Na tela de definição da mensagem, clique no botão **[!UICONTROL Send a proof]**.
+1. Na janela **[!UICONTROL Send a proof]**, verifique os recipients da prova.
 1. Clique em **[!UICONTROL Analyze]** para iniciar a preparação da mensagem de prova.
 
    ![](assets/send-proof-analyze.png){width="800" align="left"}
 
-1. Quando a preparação do delivery estiver concluída, use o **[!UICONTROL Confirm delivery]** para começar a enviar mensagens de prova.
+1. Quando a preparação da entrega for concluída, use o **[!UICONTROL Confirm delivery]** para começar a enviar mensagens de prova.
 
-Navegue até o **[!UICONTROL Audit]** da entrega para verificar a entrega de cópias de prova.
+Navegue até a guia **[!UICONTROL Audit]** da entrega para verificar a entrega de cópias de prova.
 
 É recomendável enviar provas após cada modificação no conteúdo da mensagem.
 
@@ -90,13 +90,13 @@ Navegue até o **[!UICONTROL Audit]** da entrega para verificar a entrega de có
 
 ### Propriedades da prova{#proofs-properties}
 
-As propriedades da prova são definidas no **[!UICONTROL Advanced]** das janelas de propriedades do delivery. Navegue até o **[!UICONTROL Proof properties...]** para definir os parâmetros e o rótulo das provas. Você pode optar por manter:
+As propriedades de prova são definidas na guia **[!UICONTROL Advanced]** das janelas de propriedades de entrega. Navegue até o link **[!UICONTROL Proof properties...]** para definir os parâmetros e o rótulo das provas. Você pode optar por manter:
 
 * Endereços duplicados na prova
 * endereços ➡ Incluídos na lista de bloqueios na prova
 * Endereços em quarentena na prova
 
-Por padrão, as mensagens de prova são identificadas pela variável `Proof #N` menção no assunto, quando `N` é o número da prova. Esse número é incrementado a cada análise de delivery de prova. Você pode alterar a `proof` prefixo, conforme necessário.
+Por padrão, as mensagens de prova são identificadas pela menção `Proof #N` no assunto, onde `N` é o número de prova. Esse número é incrementado a cada análise de delivery de prova. Você pode alterar o prefixo `proof`, conforme necessário.
 
 ![](assets/proof-parameters.png){width="800" align="left"}
 

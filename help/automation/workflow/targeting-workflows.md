@@ -54,7 +54,7 @@ Por exemplo, para destinatários (**destinatários**), as seguintes dimensões d
 
 ![](assets/query-filter-dimensions.png)
 
-Enquanto para **Visitantes**, a lista conterá as seguintes dimensões de filtro:
+Enquanto para **Visitors**, a lista conterá as seguintes dimensões de filtro:
 
 ![](assets/query-filter-dimension-2.png)
 
@@ -80,7 +80,7 @@ Para adicionar dados às colunas de output definidas anteriormente, selecione-os
 
 ![](assets/query_add_an_output_column.png)
 
-Clique em **Seleção avançada** botão.
+Clique no botão **Seleção avançada**.
 
 ![](assets/query_add_an_output_column_formula.png)
 
@@ -284,7 +284,7 @@ Para implementar essas operações, o Adobe Campaign oferece:
 
 Além do targeting dimension, a dimensão de filtro permite especificar a natureza dos dados coletados. Consulte [esta seção](targeting-workflows.md#targeting-and-filtering-dimensions).
 
-Os dados identificados e coletados podem ser enriquecidos, agregados e manipulados para otimizar a construção de target. Para fazer isso, além das atividades de manipulação de dados detalhadas em [nesta seção](#segmen-data), use o seguinte:
+Os dados identificados e coletados podem ser enriquecidos, agregados e manipulados para otimizar a construção de target. Para fazer isso, além das atividades de manipulação de dados detalhadas em [esta seção](#segmen-data), use o seguinte:
 
 * A atividade **[!UICONTROL Enrichment]** permite adicionar colunas momentaneamente a um schema, bem como adicionar informações a determinados elementos. Ela é detalhada na seção [Enrichment](enrichment.md) do repositório de atividades.
 * A atividade **[!UICONTROL Edit schema]** permite modificar a estrutura de um schema. Ela é detalhada na seção [Edit schema](edit-schema.md) do repositório de atividades.
