@@ -7,10 +7,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 09b8ced170ff28b24713722e0a82852038053201
+source-git-commit: dfc86ebaa2acc0b7777843b2d1d370939b6bfcc2
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 58%
+source-wordcount: '472'
+ht-degree: 49%
 
 ---
 
@@ -37,12 +37,12 @@ _quarta-feira, 30 de julho de 2024_
 
 * **Marcas** - As opções de marcas agora estão disponíveis para todos os canais, incluindo SMS e Correspondência direta. [Saiba mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=pt-BR){target="_blank"}
 
-<!--
-### Fixes {#fixes-8-7-2}
 
-The following issues are fixed in this release:
+### Correções {#fixes-8-7-2}
 
-NEO-76592, NEO-75400, NEO-77406, NEO-77674, NEO-77899, NEO-73989, NEO-76064, NEO-76039, NEO-76040, NEO-76845, NEO-76664, NEO-76682, NEO-76663, NEO-73602, NEO-72915, NEO-78134, NEO-77000, NEO-77002, NEO-76955, NEO-76864, NEO-76926, NEO-76495, NEO-77168, NEO-41058, NEO-75581, NEO-74647, NEO-74585, NEO-74586, NEO-74831, NEO-77319, NEO-78607.-->
+Os seguintes problemas foram corrigidos nesta versão:
+
+NEO76592, NEO75400, NEO77406, NEO77674, NEO77899, NEO73989, NEO76064, NEO76039, NEO76040, NEO76845, NEO76664, NEO76682, NEO7663, NEO73602, NEO72915, NEO78134, NEO77000, NEO77002, NEO76955, NEO76864, NEO76926, NEO766 495, NEO77168, NEO41058, NEO75581, NEO74647, NEO74585, NEO74586, NEO74831, NEO77319, NEO78607.
 
 ## Versão 8.6.3 {#release-8-6-3}
 
@@ -60,8 +60,12 @@ _quarta-feira, 30 de julho de 2024_
 
 * Para aumentar a segurança em toda a comunicação entre aplicativos, o mTLS agora é compatível com chamadas de API externas.
 
-<!--
-### Fixes {#fixes-8-7-2}
+### Correções {#fixes-8-6-3}
 
-The following issues are fixed in this release:
+Os seguintes problemas foram corrigidos nesta versão:
+
+NEO77014, NEO76958, NEO76097, NEO75898, NEO72504, NEO70263, NEO67620, NEO63197, NEO58596, NEO56832.
+
+<!--
+https://jira.corp.adobe.com/issues/?filter=585288&jql=fixVersion%20%3D%208.6.3%20AND%20type%20not%20in%20(epic%2C%20test%2C%20sub-task%2C%20Roadmap)%20AND%20resolution%20!%3D%20unresolved%20AND%20%22Fixed%20in%20Build%22%20is%20not%20EMPTY%20and%20type%20in%20(%22customer%20request%22)
 -->
