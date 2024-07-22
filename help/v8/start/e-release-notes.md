@@ -7,7 +7,7 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: dfc86ebaa2acc0b7777843b2d1d370939b6bfcc2
+source-git-commit: 65efda7469c5ad35e8d03703951c3d1480b015f4
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 49%
@@ -48,13 +48,11 @@ NEO76592, NEO75400, NEO77406, NEO77674, NEO77899, NEO73989, NEO76064, NEO76039, 
 
 _quarta-feira, 30 de julho de 2024_
 
-
 ### Novos recursos {#new-8-6-3}
 
 * **Notificação por push avançada** - Agora você pode enviar notificações por push avançadas. A notificação por push avançada é uma forma aprimorada de notificação em dispositivos móveis que vai além das mensagens de texto simples, incorporando elementos multimídia, como imagens, botões interativos ou outros conteúdos de mídia avançada. Com esta versão, um conjunto de modelos para notificações por push avançadas agora está disponível para seus aplicativos iOS e Android. [Leia mais](../send/rich-push.md).
 
 * A partir desta versão, com a credencial de conta de serviço (JWT) sendo descontinuada pela Adobe, as integrações de saída do Campaign com soluções e aplicativos Adobe agora dependem da credencial de servidor para servidor do OAuth. [Saiba mais](release-notes.md#change-8-7-1)
-
 
 ### Melhorias gerais {#improvements-8-6-3}
 
