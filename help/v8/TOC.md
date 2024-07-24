@@ -6,9 +6,9 @@ title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
 source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -205,6 +205,6 @@ ht-degree: 99%
       + [Formulários de entrada](dev/forms.md)
    + [Trabalhar com pacotes de dados](dev/packages.md)
    + [APIs do Campaign](dev/api.md)
-+ [Notas técnicas do Campaign >](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
-+ [Documentação da interface da web do Campaign >](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/campaign-web-home)
++ [Notas técnicas da campanha >](https://experienceleague.adobe.com/pt-br/docs/campaign/technotes-ac/technotes-home)
++ [Documentação da interface do Campaign Web>](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/campaign-web-home)
 

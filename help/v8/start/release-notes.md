@@ -4,9 +4,9 @@ description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 65efda7469c5ad35e8d03703951c3d1480b015f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ _2 de maio de 2024_
 
 A partir desta versão, com a credencial de conta de serviço (JWT) sendo descontinuada pela Adobe, as integrações de saída do Campaign com soluções e aplicativos Adobe agora dependem da credencial de servidor para servidor do OAuth. A Adobe executará a migração de JWT para OAuth em suas integrações de saída, como a integração do Campaign-Analytics ou a integração dos Acionadores da Experience Cloud.
 
-Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. As credenciais da Conta de Serviço (JWT) existentes continuarão a funcionar até **27 de janeiro de 2025**.
+Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. As credenciais da conta de serviço (JWT) já existentes continuarão a funcionar até **27 de janeiro de 2025**. 
 
 ### Melhorias gerais {#improvements-8-7-1}
 
@@ -76,10 +76,10 @@ Se você implementou integrações de entrada com o Campaign, é necessário mig
 
 * Nas tabelas do Campaign, os seguintes atributos agora são preenchidos por padrão pela data/hora do servidor: `lastModified` e `created`. O valor do atributo `createdBy-id` agora é preenchido com a ID de logon atual por padrão. Os valores fornecidos pelos usuários em chamadas da API são ignorados. <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
-* Para aumentar a segurança em toda a comunicação entre aplicativos, o mTLS agora é compatível com chamadas de API externas.
+* Para aumentar a segurança de todas as comunicações entre aplicativos, o mTLS agora é compatível com chamadas de API externas.
 
 ### Correções {#fixes-8-7-1}
 
 Os seguintes problemas foram corrigidos nesta versão:
 
-NEO72648, NEO71534, NEO71473, NEO70263, NEO70195, NEO69651, NEO68704, NEO68192, NEO67814, NEO67702, NEO67660, NEO66022, NEO65774, NEO65633, NEO64199, NEO63706, NEO63705, NEO63287, NEO63197, NEO62575, NEO60250, NEO600 192, NEO58596, NEO58314, NEO58004, NEO40054
+NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-68192, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-63706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, NEO-58314, NEO-58004, NEO-40054
