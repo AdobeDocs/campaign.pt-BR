@@ -3,10 +3,10 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 65efda7469c5ad35e8d03703951c3d1480b015f4
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: bd53d04791af91afffe683ca92fa78562640170a
+workflow-type: tm+mt
+source-wordcount: '931'
+ht-degree: 93%
 
 ---
 
@@ -17,6 +17,33 @@ O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualiz
 Como usuário do Managed Cloud Services, sua instância é atualizada pela Adobe a cada nova versão. A Adobe entrará em contato com você e atualizará seus ambientes. O console do cliente do Campaign **precisa ser atualizado para a mesma versão** dos servidores do Campaign. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
 
 Além disso, como cliente, verifique se você está usando a versão compatível mais recente dos sistemas listados na [Matriz de compatibilidade](compatibility-matrix.md).
+
+
+
+## Versão 8.6.3 {#release-8-6-3}
+
+_quarta-feira, 30 de julho de 2024_
+
+### Novos recursos {#new-8-6-3}
+
+* **Notificação por push avançada** - Agora você pode enviar notificações por push avançadas. A notificação por push avançada é uma forma aprimorada de notificação em dispositivos móveis que vai além das mensagens de texto simples, incorporando elementos multimídia, como imagens, botões interativos ou outros conteúdos de mídia avançada. Com esta versão, um conjunto de modelos para notificações por push avançadas agora está disponível para seus aplicativos iOS e Android. [Leia mais](../send/rich-push.md).
+
+* A partir desta versão, com a credencial de conta de serviço (JWT) sendo descontinuada pela Adobe, as integrações de saída do Campaign com soluções e aplicativos Adobe agora dependem da credencial de servidor para servidor do OAuth. [Saiba mais](release-notes.md#change-8-7-1)
+
+### Melhorias gerais {#improvements-8-6-3}
+
+* Para aumentar a segurança de todas as comunicações entre aplicativos, o mTLS agora é compatível com chamadas de API externas.
+
+### Correções {#fixes-8-6-3}
+
+Os seguintes problemas foram corrigidos nesta versão:
+
+NEO79328, NEO78843, NEO77795, NEO77014, NEO76958, NEO76097, NEO75898, NEO72504, NEO70263, NEO67620, NEO6311 NEO58596, NEO56832.
+
+<!--
+https://jira.corp.adobe.com/issues/?filter=585288&jql=fixVersion%20%3D%208.6.3%20AND%20type%20not%20in%20(epic%2C%20test%2C%20sub-task%2C%20Roadmap)%20AND%20resolution%20!%3D%20unresolved%20AND%20%22Fixed%20in%20Build%22%20is%20not%20EMPTY%20and%20type%20in%20(%22customer%20request%22)
+-->
+
 
 ## Versão 8.5.3 {#release-8-5-3}
 
