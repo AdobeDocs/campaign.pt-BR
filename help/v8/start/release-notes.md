@@ -4,9 +4,9 @@ description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 4e52e596d4eb2a8e1a1799fcd7104dcd894b6c2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '931'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ Além disso, como cliente, verifique se você está usando a versão compatível
 
 ## Versão 8.6.3 {#release-8-6-3}
 
-_quarta-feira, 30 de julho de 2024_
+_30 de julho de 2024_
 
 ### Novos recursos {#new-8-6-3}
 
-* **Notificação por push avançada** - Agora você pode enviar notificações por push avançadas. A notificação por push avançada é uma forma aprimorada de notificação em dispositivos móveis que vai além das mensagens de texto simples, incorporando elementos multimídia, como imagens, botões interativos ou outros conteúdos de mídia avançada. Com esta versão, um conjunto de modelos para notificações por push avançadas agora está disponível para seus aplicativos iOS e Android. [Leia mais](../send/rich-push-android.md).
+* **Notificação por push avançada**: agora você pode enviar notificações por push avançadas. A notificação por push avançada é uma forma aprimorada de notificação em dispositivos móveis que vai além das mensagens de texto simples, incorporando elementos multimídia, como imagens, botões interativos ou outros conteúdos de mídia avançada. Com esta versão, um conjunto de modelos para notificações por push avançadas agora está disponível para aplicativos iOS e Android. [Leia mais](../send/rich-push-android.md).
 
 * A partir desta versão, com a credencial de conta de serviço (JWT) sendo descontinuada pela Adobe, as integrações de saída do Campaign com soluções e aplicativos Adobe agora dependem da credencial de servidor para servidor do OAuth. [Saiba mais](release-notes.md#change-8-7-1)
 
@@ -36,7 +36,7 @@ _quarta-feira, 30 de julho de 2024_
 
 Os seguintes problemas foram corrigidos nesta versão:
 
-NEO79328, NEO78843, NEO77795, NEO77014, NEO76958, NEO76097, NEO75898, NEO72504, NEO70263, NEO67620, NEO6311 NEO58596, NEO56832.
+NEO-79328, NEO-78843, NEO-77795, NEO-77014, NEO-76958, NEO-76097, NEO-75898, NEO-72504, NEO-70263, NEO-67620, NEO-63197, NEO-58596, NEO-56832.
 
 <!--
 https://jira.corp.adobe.com/issues/?filter=585288&jql=fixVersion%20%3D%208.6.3%20AND%20type%20not%20in%20(epic%2C%20test%2C%20sub-task%2C%20Roadmap)%20AND%20resolution%20!%3D%20unresolved%20AND%20%22Fixed%20in%20Build%22%20is%20not%20EMPTY%20and%20type%20in%20(%22customer%20request%22)
