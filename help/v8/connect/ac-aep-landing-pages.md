@@ -5,9 +5,9 @@ feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: c56f62a2c72598b8779e07de09f3fcfc6f6aade1
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '990'
 ht-degree: 1%
 
 ---
@@ -102,20 +102,20 @@ Para configurar essas opções automaticamente na execução do fluxo de trabalh
 
 Na execução do workflow, as opções são criadas automaticamente no console do Campaign com os valores fornecidos.
 
-    &quot;javascript
-    loadLibrary(&quot;xtk:shared/nl.js&quot;);
-    loadLibrary(&quot;xtk:shared/xtk.js&quot;);
-    loadLibrary(&quot;xtk:shared/json2.js&quot;);
-    loadLibrary(&quot;xtk:common.js&quot;);
-    
-    setAuthCredentials()
-    {
-    setOption(&quot;IMS_CLIENT_ID&quot;, cryptString(&#39;CLIENT ID&#39;));
-    setOption(&quot;IMS_CLIENT&#39;) SECRET&quot;, cryptString(&#39;CLIENT SECRET&#39;));
-    setOption(&quot;IMS_ORG_ID&quot;, cryptString(&#39;ID DA ORGANIZAÇÃO&#39;));
-    setOption(&quot;IMS_CLIENT_API_KEY&quot;, cryptString(&#39;ID DO CLIENTE&#39;));
-    }
-    &quot;
+```javascript
+loadLibrary("xtk:shared/nl.js");
+loadLibrary("xtk:shared/xtk.js");
+loadLibrary("xtk:shared/json2.js");
+loadLibrary("xtk:common.js");
+
+function setAuthCredentials()
+{
+setOption("IMS_CLIENT_ID", cryptString('CLIENT ID'));
+setOption("IMS_CLIENT_SECRET", cryptString('CLIENT SECRET'));
+setOption("IMS_ORG_ID", cryptString('ORGANIZATION ID'));
+setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
+}
+```
 
 >[!ENDTABS]
 
