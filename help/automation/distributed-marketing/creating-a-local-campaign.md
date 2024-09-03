@@ -5,10 +5,10 @@ description: Criar uma campanha local
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1553'
-ht-degree: 91%
+ht-degree: 86%
 
 ---
 
@@ -58,11 +58,11 @@ Selecione o tipo de interface a ser aplicada às campanhas criadas a partir do t
 
 Há quatro tipos de interfaces disponíveis:
 
-* **[!UICONTROL By brief]** : a entidade local deve fornecer uma descrição onde descreve as configurações da campanha. Uma vez aprovado o pedido, a entidade central configura e executa a campanha como um todo.
+* **[!UICONTROL By brief]**: a entidade local deve fornecer uma descrição com as configurações da campanha. Uma vez aprovado o pedido, a entidade central configura e executa a campanha como um todo.
 
   ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** : a entidade local tem acesso a um formulário web onde, dependendo do template usado, podem editar o conteúdo, o público-alvo e o tamanho máximo, bem como datas de criação e extração usando campos de personalização. A entidade local pode avaliar o público-alvo e pré-visualizar o conteúdo desse formulário web.
+* **[!UICONTROL By form]**: a entidade local tem acesso a um formulário web onde, dependendo do modelo usado, podem editar o conteúdo, o direcionamento, o tamanho máximo, bem como datas de criação e extração usando campos de personalização. A entidade local pode avaliar o público-alvo e pré-visualizar o conteúdo desse formulário web.
 
   ![](assets/mkt_distr_8.png)
 
@@ -74,8 +74,8 @@ Há quatro tipos de interfaces disponíveis:
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : a entidade local tem acesso aos parâmetros da campanha em sua extranet (não do Adobe Campaign). Esses parâmetros são idênticos aos de uma **campanha local (por formulário)**.
-* **[!UICONTROL Pre-set]** : entidade local solicita uma campanha usando o formulário padrão, sem localizá-lo.
+* **[!UICONTROL By external form]**: a entidade local tem acesso aos parâmetros da campanha em sua extranet (não Adobe Campaign). Esses parâmetros são idênticos aos de uma **campanha local (por formulário)**.
+* **[!UICONTROL Pre-set]**: entidade local solicita uma campanha usando o formulário padrão, sem localizá-lo.
 
   ![](assets/mkt_distr_5.png)
 

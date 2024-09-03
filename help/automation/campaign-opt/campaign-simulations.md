@@ -4,10 +4,10 @@ title: Introdução às simulações de campanha
 description: Saiba como configurar simulações de campanha
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1210'
-ht-degree: 92%
+ht-degree: 88%
 
 ---
 
@@ -154,7 +154,7 @@ Para analisar o resultado de uma simulação, edite os relatórios: eles mostram
 Os seguintes relatórios são fornecidos como padrão:
 
 * **[!UICONTROL Detail of simulation exclusions]**: esse relatório fornece um gráfico detalhado das causas de exclusão para todas as entregas relacionadas.
-* **[!UICONTROL Simulation summary]**: esse relatório mostra as amostragens excluídas da simulação em todas as entregas.
+* **[!UICONTROL Simulation summary]**: este relatório mostra as amostragens excluídas da simulação em todas as entregas.
 * **[!UICONTROL Summary of exclusions linked to the simulation]**: esse relatório mostra um gráfico das exclusões causadas pela simulação junto com a regra de tipologia aplicada e um gráfico que mostra a taxa de exclusão por regra.
 
 <!--

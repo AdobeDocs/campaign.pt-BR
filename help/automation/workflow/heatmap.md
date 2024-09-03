@@ -5,10 +5,10 @@ description: Monitore seus workflows do com o Workflow HeatMap
 feature: Workflows, Heatmap
 role: Admin
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1104'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -69,10 +69,10 @@ O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [
    >
    >O filtro **[!UICONTROL Min duration]** é aplicado. Se não conseguir encontrar um workflow específico, redefina a duração mínima para 0 para que todos os workflows sejam exibidos na lista.
 
-1. Também é possível filtrar no campo **[!UICONTROL Workflow type]**:
+1. Também é possível filtrar no **[!UICONTROL Workflow type]**:
 
-   * **[!UICONTROL Technical]** : apenas [workflows técnicos internos](technical-workflows.md) e [workflows de gerenciamento de dados](targeting-workflows.md#data-management) são exibidos.
-   * **[!UICONTROL Marketing]**: somente os workflows vinculados a uma campanha de marketing, conhecidos como [workflows da campanha](campaign-workflows.md), são exibidos.
+   * **[!UICONTROL Technical]**: apenas [workflows técnicos internos](technical-workflows.md) e [workflows de gerenciamento de dados](targeting-workflows.md#data-management) são exibidos.
+   * **[!UICONTROL Marketing]**: somente os fluxos de trabalho vinculados a uma campanha de marketing, conhecidos como [fluxos de trabalho de campanha](campaign-workflows.md), são exibidos.
 
 1. Para pesquisar um workflow específico por nome, também é possível usar o campo **[!UICONTROL Workflow name filter]**.
 

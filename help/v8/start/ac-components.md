@@ -5,9 +5,9 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 6926d84576df1810b511ef1a9976593cb99585bb
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ O servidor Web do Campaign controla o acesso aos processos da Web do Campaign. J
 
 O console do cliente do Campaign se conecta ao servidor Web usando XML SOAP por HTTP. O servidor Web fornece a camada de segurança, transmite as solicitações para a camada do Aplicativo usando Javascript e os processos internos do Campaign acessam o banco de dados usando SQL.
 
-A comunicação geral entre os processos do Campaign é descrita no seguinte diagrama de implantação independente: todos os componentes do Campaign são instalados na mesma máquina.
+<!--The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
 
-![](assets/do-not-localize//ac-standalone.png)
+![](assets/do-not-localize//ac-standalone.png) -->
 
 O usuário se conecta ao servidor de aplicativos do Campaign usando o HTTP. Todos os dados e informações são gerenciados no banco de dados do Campaign. Se um desenvolvedor do Campaign executar qualquer alteração de configuração, ela será capturada no banco de dados. Se um profissional de marketing criar uma nova campanha, todas as informações e dados relacionados a essa nova campanha também serão gerenciados no banco de dados. Quando um profissional de marketing executa uma campanha, os deliveries de email são enviados aos perfis do servidor do Campaign por meio do servidor SMTP. Conforme os perfis interagem com deliveries de email, como a abertura do email, esses dados de rastreamento são enviados de volta ao servidor de rastreamento.
 

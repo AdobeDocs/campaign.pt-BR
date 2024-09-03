@@ -6,10 +6,10 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1438'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -70,7 +70,7 @@ Saiba mais sobre enumerações em [esta página](../../v8/config/ui-settings.md#
 
 Você pode agrupar os valores em intervalos com base em um intervalo desejado.
 
-Para fazer isso, clique em **[!UICONTROL Add]** e selecione **[!UICONTROL Define a range]**.
+Para definir intervalos manualmente, clique no botão **[!UICONTROL Add]** e selecione **[!UICONTROL Define a range]**:
 
 Em seguida, especifique os limites inferiores e superiores e clique em **[!UICONTROL Ok]** para confirmar.
 

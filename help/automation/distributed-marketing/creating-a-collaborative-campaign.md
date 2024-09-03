@@ -5,10 +5,10 @@ description: Saiba como criar uma campanha colaborativa
 feature: Distributed Marketing
 role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -76,9 +76,9 @@ Para criar uma campanha colaborativa (por aprovação de público alvo), o model
 
 O workflow da campanha deve integrar a atividade do tipo de **aprovação Local.** Os parâmetros de atividade são os seguintes:
 
-* **[!UICONTROL Action to perform]** : Notificação de aprovação de target.
-* **[!UICONTROL Distribution context]** : Explícito.
-* **[!UICONTROL Data distribution]** : Distribuição de entidade local.
+* **[!UICONTROL Action to perform]**: Notificação de aprovação de público alvo.
+* **[!UICONTROL Distribution context]**: Explícito.
+* **[!UICONTROL Data distribution]**: Distribuição de entidade local.
 
 A distribuição de dados do tipo de **distribuição de entidade local** deve ser criada. O template de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Em **[!UICONTROL Resources > Campaign management > Data distribution]**, clique no ícone **[!UICONTROL New]** para criar uma nova **[!UICONTROL Data distribution]**. Para obter mais informações sobre distribuição de dados,
 

@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 12%
@@ -217,9 +217,9 @@ O valor deve ser uma expressão compatível com a linguagem XPath. Para obter ma
 
 Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
-`<default>` : permite preencher previamente o campo com um valor padrão ao criar entidades. O valor não será um valor SQL padrão.
+`<default>`: permite preencher previamente o campo com um valor padrão ao criar entidades. O valor não será um valor SQL padrão.
 
-`<sqldefault>` : permite que você tenha um valor adicionado ao criar um campo. Esse valor aparece como um resultado SQL. Durante uma atualização de schema, somente os novos registros serão afetados por esse valor.
+`<sqldefault>`: permite que você tenha um valor agregado ao criar um campo. Esse valor aparece como um resultado SQL. Durante uma atualização de schema, somente os novos registros serão afetados por esse valor.
 
 ### Enumerações {#enumerations}
 

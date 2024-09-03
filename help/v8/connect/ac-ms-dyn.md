@@ -5,10 +5,10 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1376'
-ht-degree: 36%
+ht-degree: 35%
 
 ---
 
@@ -146,7 +146,7 @@ Primeiro, você deve criar a conta externa do Microsoft Dynamics 365.
 
    1. Para configurar a conta externa do Microsoft Dynamics CRM para conexão com o Adobe Campaign com **Credenciais de Senha**, forneça os seguintes detalhes:
 
-      * **Servidor**: a URL do servidor Microsoft CRM. Para localizar a URL do Servidor do Microsoft CRM, acesse a conta do Microsoft Dynamics CRM, clique em Dynamics 365 e selecione o aplicativo. Você pode então encontrar o URL do servidor na barra de endereços do navegador, por exemplo, https://myserver.crm.dynamics.com/.
+      * **Servidor**: a URL do servidor Microsoft CRM. Para localizar a URL do Servidor do Microsoft CRM, acesse sua conta do Microsoft Dynamics CRM, clique em Dynamics 365 e selecione seu aplicativo. Você pode então encontrar o URL do servidor na barra de endereços do navegador, por exemplo, https://myserver.crm.dynamics.com/.
       * **Conta**: conta usada para entrar no Microsoft CRM.
       * **Senha**: conta usada para entrar no Microsoft CRM.
       * **Identificador do cliente**: a ID do aplicativo (cliente) que pode ser encontrada no portal de gerenciamento do Microsoft Azure na categoria Update your code, no campo Client ID
@@ -154,7 +154,7 @@ Primeiro, você deve criar a conta externa do Microsoft Dynamics 365.
 
    1. Para configurar a conta externa do Microsoft Dynamics CRM para conexão com o Adobe Campaign com um **Certificado**, forneça os seguintes detalhes:
 
-      * **Servidor**: a URL do servidor Microsoft CRM. Para localizar a URL do Servidor do Microsoft CRM, acesse a conta do Microsoft Dynamics CRM, clique em Dynamics 365 e selecione o aplicativo. Você pode então encontrar o URL do servidor na barra de endereços do navegador, por exemplo, https://myserver.crm.dynamics.com/.
+      * **Servidor**: a URL do servidor Microsoft CRM. Para localizar a URL do Servidor do Microsoft CRM, acesse sua conta do Microsoft Dynamics CRM, clique em Dynamics 365 e selecione seu aplicativo. Você pode então encontrar o URL do servidor na barra de endereços do navegador, por exemplo, https://myserver.crm.dynamics.com/.
       * **Chave privada**: copie/cole a chave privada, codificada em base64 conforme explicado em [esta seção](#config-certificate-key-id).
       * **Key ID**: chave disponível na guia **Manifest** do seu aplicativo, conforme explicado em [esta seção](#config-certificate-key-id).
       * **Identificador de Chave Personalizada**: Identificador disponível na guia **Manifesto** do seu aplicativo, conforme explicado em [esta seção](#config-certificate-key-id).
@@ -202,7 +202,7 @@ Os tipos de atributos suportados/não suportados do Microsoft Dynamics 365 estã
 
 | Tipo de atributo | Suportado |
 | --------------------------------------------------------------------------------- | --------- |
-| Tipos básicos: booleano, datetime, decimal, float, duplo, integer, bigint, string | Sim |
+| Tipos básicos: booleano, datetime, decimal, float, double, integer, bigint , string | Sim |
 | Dinheiro (como duplo) | Sim |
 | memo, entityname, primarykey, uniqueidentifier (como strings) | Sim |
 | Status, lista de opções (armazenamos os valores possíveis na lista discriminada), estado (string) | Sim |

@@ -5,7 +5,7 @@ description: Saiba como controlar custos
 feature: Campaigns, Resource Management
 role: User
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '2428'
 ht-degree: 93%
@@ -28,7 +28,7 @@ As etapas a seguir devem ser aplicadas para implementar o gerenciamento de orça
 
 1. Defina o método de cálculo de custo: as estruturas de custo são definidas para os provedores de serviços. [Saiba mais](../campaigns/providers-stocks-and-budgets.md).
 
-1. Definir custos de campanha (entregas/tarefas) : os custos incorridos pelas entregas e tarefas são inseridos individualmente ou globalmente para o template de campanha. [Saiba mais](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
+1. Definir os custos da campanha (entregas/tarefas): os custos incorridos pelas entregas e tarefas são inseridos individualmente ou globalmente para o template de campanha. [Saiba mais](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
 
 1. Consolidar: de acordo com o status do progresso das tarefas, remessas e campanhas, os custos serão calculados e passados para o orçamento correspondente. Quando a criação da campanha está suficientemente avançada, o status do progresso do orçamento pode ser alterado para **[!UICONTROL Specified]**. O custo calculado do programa é então inserido automaticamente com os custos calculados na campanha. [Saiba mais](#cost-commitment--calculation-and-charging).
 

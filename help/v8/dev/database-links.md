@@ -5,7 +5,7 @@ feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: f7047c6e-f045-4534-b117-311dd90dd92b
-source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -26,14 +26,14 @@ Na interface de uso, as cardinalidades são representadas com um ícone específ
 
 Para relações de join com uma tabela/banco de dados de campanha:
 
-* ![](assets/do-not-localize/join_with_campaign11.png) : Cardinalidade 1-1. Por exemplo, entre um recipient e um pedido atual. Um recipient pode ser relacionado a apenas uma ocorrência da tabela de pedidos atual por vez.
-* ![](assets/do-not-localize/externaljoin11.png) : Cardinalidade 1-1, junção externa. Por exemplo, entre um recipient e seu país. Um recipient pode ser relacionado a apenas uma ocorrência do país da tabela. O conteúdo da tabela do país não será salvo.
-* ![](assets/do-not-localize/join_with_campaign1n.png) : Cardinalidade 1-N. Por exemplo, entre um recipient e a tabela de subscrições. Um recipient pode ser relacionado a várias ocorrências na tabela de assinaturas.
+* ![](assets/do-not-localize/join_with_campaign11.png): Cardinalidade 1-1. Por exemplo, entre um recipient e um pedido atual. Um recipient pode ser relacionado a apenas uma ocorrência da tabela de pedidos atual por vez.
+* ![](assets/do-not-localize/externaljoin11.png): Cardinalidade 1-1, junção externa. Por exemplo, entre um recipient e seu país. Um recipient pode ser relacionado a apenas uma ocorrência do país da tabela. O conteúdo da tabela do país não será salvo.
+* ![](assets/do-not-localize/join_with_campaign1n.png): Cardinalidade 1-N. Por exemplo, entre um recipient e a tabela de subscrições. Um recipient pode ser relacionado a várias ocorrências na tabela de assinaturas.
 
 Para relações de join usando o Federated Database Access (FDA):
 
-* ![](assets/do-not-localize/join_fda_11.png) : Cardinalidade 1-1
-* ![](assets/do-not-localize/join_fda_1m.png) : Cardinalidade 1-N
+* ![](assets/do-not-localize/join_fda_11.png): Cardinalidade 1-1
+* ![](assets/do-not-localize/join_fda_1m.png): Cardinalidade 1-N
 
 Para obter mais informações sobre tabelas FDA, consulte [Acesso a um banco de dados externo](../connect/fda.md).
 

@@ -5,7 +5,7 @@ feature: PI, Privacy, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: b6f7b8a6652034145602d9949fa196eae929fb95
+source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 2%
@@ -39,8 +39,8 @@ Você pode encontrar abaixo um exemplo de extensão de schema de recipient que m
 
 As principais propriedades são:
 
-* **[!UICONTROL visibleIf]** : oculta os campos dos metadados, portanto, eles não podem ser acessados em uma exibição de esquema, seleção de coluna ou um construtor de expressões. Mas isso não oculta dados. Se o nome do campo for inserido manualmente em uma expressão, o valor será exibido.
-* **[!UICONTROL accessibleIf]** : oculta os dados (substituindo-os por valores vazios) da consulta resultante. Se visibleIf estiver vazio, ele terá a mesma expressão que **[!UICONTROL accessibleIf]**.
+* **[!UICONTROL visibleIf]**: oculta os campos dos metadados, portanto, eles não podem ser acessados em uma exibição de esquema, seleção de coluna ou um construtor de expressões. Mas isso não oculta dados. Se o nome do campo for inserido manualmente em uma expressão, o valor será exibido.
+* **[!UICONTROL accessibleIf]**: oculta os dados (substituindo-os por valores vazios) da consulta resultante. Se visibleIf estiver vazio, ele terá a mesma expressão que **[!UICONTROL accessibleIf]**.
 
 Estas são as consequências do uso desse atributo no Campaign:
 

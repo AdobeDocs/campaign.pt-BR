@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 64%
+ht-degree: 59%
 
 ---
 
@@ -116,10 +116,10 @@ Use a guia **[!UICONTROL Content]** para definir o conteúdo da oferta.
 
 1. Defina os vários parâmetros do conteúdo da oferta.
 
-   * **[!UICONTROL Title]** : especifique o título que quer que apareça em sua oferta. Aviso: não se refere ao rótulo da oferta, que é definido na guia **[!UICONTROL General]**.
-   * **[!UICONTROL Destination URL]**: especifique o URL da sua oferta. Deve começar com &quot;http://&quot; ou &quot;https://&quot;.
-   * **[!UICONTROL Image URL]**: especifique um URL ou um caminho de acesso para a imagem da sua oferta.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : digite o corpo da oferta na guia desejada. Para gerar o rastreamento, o **[!UICONTROL HTML content]** deve ser composto de elementos HTML que podem ser colocados em um elemento de tipo `<div>`. Por exemplo, o resultado de um elemento `<table>` na página HTML será o seguinte:
+   * **[!UICONTROL Title]**: especifique o título que quer que apareça em sua oferta. Aviso: não se refere ao rótulo da oferta, que é definido na guia **[!UICONTROL General]**.
+   * **[!UICONTROL Destination URL]**: especifique a URL da sua oferta. Deve começar com &quot;http://&quot; ou &quot;https://&quot;.
+   * **[!UICONTROL Image URL]**: especifique uma URL ou um caminho de acesso para a imagem da sua oferta.
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**: digite o corpo da oferta na guia desejada. Para gerar o rastreamento, o **[!UICONTROL HTML content]** deve ser composto de elementos HTML que podem ser colocados em um elemento de tipo `<div>`. Por exemplo, o resultado de um elemento `<table>` na página HTML será o seguinte:
 
    ```
       <div> 
