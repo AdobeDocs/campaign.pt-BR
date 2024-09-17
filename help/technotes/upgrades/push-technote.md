@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Também se aplica ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Aplicável ao Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 4ef40ff971519c064b980df8235188c717855f27
+source-git-commit: dffe082d5e31eda4ecfba369b92d8a2d441fca04
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 11%
+source-wordcount: '1630'
+ht-degree: 10%
 
 ---
 
@@ -56,6 +56,8 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 * Como usuário local do Campaign Classic v7, você deve atualizar os servidores de execução Marketing e Tempo real. O servidor Mid-Sourcing não é afetado.
 
+* Como usuário local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)
+
 #### Procedimento de transição {#fcm-transition-steps}
 
 Para mover seu ambiente para HTTP v1, siga estas etapas:
@@ -84,12 +86,73 @@ Para mover seu ambiente para HTTP v1, siga estas etapas:
    | mensagem de dados | N/D | validate_only |
    | mensagem de notificação | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-1. Quando a transição HTTP v1 estiver concluída, você deverá atualizar seus **modelos de entrega** para as notificações por push do Android para aumentar o número de mensagens em lote. Para fazer isso, navegue até as propriedades do modelo de entrega do Android e, na guia **Entrega**, defina a [Quantidade do lote de mensagens](../../v8/send/configure-and-send.md#delivery-batch-quantity) como **256**. Aplique essa alteração a todos os templates de delivery usados para seus deliveries do Android e a todos os deliveries existentes do Android.
-
 
 >[!NOTE]
 >
->Depois que essas alterações forem aplicadas em todo o servidor, todos os novos deliveries de notificação por push para dispositivos Android usarão a API HTTP v1. Os deliveries de push existentes em repetição, em andamento e em uso ainda usam a API HTTP (herdada).
+>Depois que essas alterações forem aplicadas em todo o servidor, todos os **novos** deliveries de notificação por push para dispositivos Android usarão a API HTTP v1. Os deliveries de push existentes em repetição, em andamento e em uso ainda usam a API HTTP (herdada). Saiba como atualizá-los na seção abaixo.
+
+### Atualizar modelos existentes {#fcm-transition-update}
+
+Quando a transição HTTP v1 estiver concluída, você deverá atualizar seus **modelos de entrega** para as notificações por push do Android para aumentar o número de mensagens em lote. Para fazer isso, navegue até as propriedades do modelo de entrega do Android e, na guia **Entrega**, defina a [Quantidade do lote de mensagens](../../v8/send/configure-and-send.md#delivery-batch-quantity) como **256**. Aplique essa alteração a todos os templates de delivery usados para seus deliveries do Android e a todos os deliveries existentes do Android.
+
+Você também pode atualizar deliveries e templates de delivery existentes criados antes da atualização para uma versão compatível com HTTP v1. Para fazer isso:
+
+* Cloud Service Como um cliente Gerenciado ou Hospedado, entre em contato com a Adobe para atualizar seus modelos de entrega existentes do Android.
+
+* Para ambientes locais, baixe e execute o script `fcm-httpv1-migration.js` conforme detalhado abaixo.
+
+  Baixar [fcm-httpv1-migration.js](assets/do-not-localize/fcm-httpv1-migration.js)
+
+  >[!CAUTION]
+  >
+  >O script deve ser executado nos ambientes de marketing, mid-sourcing e tempo real.
+
+
+  +++Etapas para atualizar entregas e modelos existentes
+
+  Para corrigir todos os deliveries e templates de deliveries criados antes da atualização para uma versão compatível com HTTP v1, siga estas etapas:
+
+   1. Exporte seus deliveries e templates de delivery existentes em um pacote para poder restaurá-los caso ocorra um problema inesperado durante a aplicação de patches.
+   1. Execute o seguinte comando no Posgresql:
+
+      ```sql
+      pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
+      ```
+
+   1. Por padrão, o script está no modo `dryrun`. Você pode iniciá-lo nesse modo para verificar se alguma entrega precisa ser corrigida.
+
+      Comando
+
+      ```sql
+      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
+      ```
+
+      Output
+
+      ```sql
+      ...
+      HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+      HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+      ...
+      HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
+      HH:MM:SS >>  - X had not patchable androidCheckParams formula!
+      HH:MM:SS >   - Y had androidCheckParams formula patched.
+      HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
+      ```
+
+      >[!NOTE]
+      >
+      >As entregas `not patchable` precisam ser atualizadas manualmente. A ID pode ser encontrada no log de.
+
+   1. Execute o script no modo de execução da seguinte maneira para atualizar deliveries:
+
+      ```sql
+      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
+      ```
+
++++
 
 ### Qual é o impacto para meus aplicativos do Android? {#fcm-apps}
 
