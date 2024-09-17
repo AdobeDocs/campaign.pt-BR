@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Também se aplica ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Aplicável ao Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: dffe082d5e31eda4ecfba369b92d8a2d441fca04
+source-git-commit: a6a1af4e0255a2fec359c415cbbf45da2e4baf67
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1633'
 ht-degree: 10%
 
 ---
@@ -91,7 +91,7 @@ Para mover seu ambiente para HTTP v1, siga estas etapas:
 >
 >Depois que essas alterações forem aplicadas em todo o servidor, todos os **novos** deliveries de notificação por push para dispositivos Android usarão a API HTTP v1. Os deliveries de push existentes em repetição, em andamento e em uso ainda usam a API HTTP (herdada). Saiba como atualizá-los na seção abaixo.
 
-### Atualizar modelos existentes {#fcm-transition-update}
+#### Atualizar modelos existentes {#fcm-transition-update}
 
 Quando a transição HTTP v1 estiver concluída, você deverá atualizar seus **modelos de entrega** para as notificações por push do Android para aumentar o número de mensagens em lote. Para fazer isso, navegue até as propriedades do modelo de entrega do Android e, na guia **Entrega**, defina a [Quantidade do lote de mensagens](../../v8/send/configure-and-send.md#delivery-batch-quantity) como **256**. Aplique essa alteração a todos os templates de delivery usados para seus deliveries do Android e a todos os deliveries existentes do Android.
 
@@ -99,16 +99,16 @@ Você também pode atualizar deliveries e templates de delivery existentes criad
 
 * Cloud Service Como um cliente Gerenciado ou Hospedado, entre em contato com a Adobe para atualizar seus modelos de entrega existentes do Android.
 
-* Para ambientes locais, baixe e execute o script `fcm-httpv1-migration.js` conforme detalhado abaixo.
+* Para ambientes locais, baixe o script `fcm-httpv1-migration.js` e execute-o conforme detalhado abaixo.
 
-  Baixar [fcm-httpv1-migration.js](assets/do-not-localize/fcm-httpv1-migration.js)
+  Baixar [fcm-httpv1-migration.zip](assets/do-not-localize/fcm-httpv1-migration-js.zip)
 
   >[!CAUTION]
   >
   >O script deve ser executado nos ambientes de marketing, mid-sourcing e tempo real.
 
 
-  +++Etapas para atualizar entregas e modelos existentes
+  +++Etapas para atualizar deliveries e modelos existentes (somente no local)
 
   Para corrigir todos os deliveries e templates de deliveries criados antes da atualização para uma versão compatível com HTTP v1, siga estas etapas:
 
