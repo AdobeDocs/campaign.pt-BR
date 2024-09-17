@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="Disponibilidade limitada" type="Informative"
-source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
+exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
+source-git-commit: 8dffc24ff859ded70ea9c5b9ede39512c1543e74
 workflow-type: tm+mt
 source-wordcount: '893'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
-
 
 # Configurações de entrega de SMS {#sms-settings}
 
@@ -55,12 +55,12 @@ Estas são as informações necessárias para preencher este formulário. Cada c
 
 * **[!UICONTROL Transmission mode]**
 
-Esse campo indica o tipo de SMS que você deseja transferir: mensagens normais ou em flash, armazenando no celular ou no cartão SIM. Essa configuração é transmitida no campo opcional dest_addr_subunit na PDU SUBMIT_SM.
+  Esse campo indica o tipo de SMS que você deseja transferir: mensagens normais ou em flash, armazenando no celular ou no cartão SIM. Essa configuração é transmitida no campo opcional dest_addr_subunit na PDU SUBMIT_SM.
 
-* **Flash** define o valor como 1. Ele envia uma mensagem flash que é exibida no dispositivo móvel e não é armazenada na memória.
-* **Normal** define o valor como 0. Envia uma mensagem normal.
-* **Salvar no dispositivo móvel** define o valor como 2. Ele instrui o telefone a armazenar o SMS na memória interna.
-* **Salvar no terminal** define o valor como 3. Ele instrui o telefone a armazenar o SMS no cartão SIM.
+   * **Flash** define o valor como 1. Ele envia uma mensagem flash que é exibida no dispositivo móvel e não é armazenada na memória.
+   * **Normal** define o valor como 0. Envia uma mensagem normal.
+   * **Salvar no dispositivo móvel** define o valor como 2. Ele instrui o telefone a armazenar o SMS na memória interna.
+   * **Salvar no terminal** define o valor como 3. Ele instrui o telefone a armazenar o SMS no cartão SIM.
 
 * **[!UICONTROL Priority, Communication type]**
 
