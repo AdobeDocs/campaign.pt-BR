@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Também se aplica ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Aplicável ao Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a6a1af4e0255a2fec359c415cbbf45da2e4baf67
+source-git-commit: aba0048e5aff1caa2067eb61d26548b08a3deb36
 workflow-type: tm+mt
-source-wordcount: '1633'
-ht-degree: 10%
+source-wordcount: '1664'
+ht-degree: 9%
 
 ---
 
@@ -48,15 +48,19 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 #### Pré-requisitos {#fcm-transition-prerequisites}
 
-* Para o Campaign Classic v7, o suporte de HTTP v1 foi adicionado na versão 20.3.1. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar seu ambiente para a [compilação mais recente de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
-
 * O arquivo JSON da conta do serviço SDK do administrador do Android Firebase é necessário para mover o aplicativo móvel para HTTP v1. Saiba como obter este arquivo na [documentação do Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* Para implantações híbridas, hospedadas e Managed Services, além do procedimento de transição abaixo, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT). O servidor Mid-Sourcing não é afetado.
+* Para o Campaign Classic v7, o suporte de HTTP v1 foi adicionado na versão 20.3.1. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar seu ambiente para a [compilação mais recente de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
 
-* Como usuário local do Campaign Classic v7, você deve atualizar os servidores de execução Marketing e Tempo real. O servidor Mid-Sourcing não é afetado.
+* Como usuário local do Campaign Classic v7, você deve atualizar os servidores de execução Marketing e Tempo real.
 
-* Como usuário local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)
+* Para implantações de Cloud Service híbridas, hospedadas e gerenciadas, além do procedimento de transição abaixo, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT).
+
+* Sobre a conta externa Android routing:
+
+   * Como usuário local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+
+   * Para implantações híbridas, hospedadas e gerenciadas de Cloud Service, você também deve se conectar com a equipe de Atendimento ao cliente do Adobe para validar se o conector `androidPushConnectorV2.js (nms)` está selecionado na conta externa de roteamento Android do seu servidor Mid-sourcing.
 
 #### Procedimento de transição {#fcm-transition-steps}
 
@@ -105,7 +109,7 @@ Você também pode atualizar deliveries e templates de delivery existentes criad
 
   >[!CAUTION]
   >
-  >O script deve ser executado nos ambientes de marketing, mid-sourcing e tempo real.
+  >O script deve ser executado na instância de marketing.
 
 
   +++Etapas para atualizar deliveries e modelos existentes (somente no local)
