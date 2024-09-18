@@ -5,9 +5,9 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '677'
 ht-degree: 94%
 
 ---
@@ -199,7 +199,7 @@ ht-degree: 94%
    + Implementação {#implement}
       + [Etapas de implementação](start/implement.md)
       + [Personalizar sua instância](dev/customize.md)
-      + [Práticas recomendadas do Modelo de dados](dev/datamodel-best-practices.md)
+      + [Práticas recomendadas do modelo de dados](dev/datamodel-best-practices.md)
    + Definições e configuração {#configuration}
       + [Configurações da interface](config/ui-settings.md)
       + [Gerenciar pastas e visualizações](audiences/folders-and-views.md)
