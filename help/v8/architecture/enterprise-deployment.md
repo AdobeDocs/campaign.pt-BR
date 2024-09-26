@@ -5,9 +5,9 @@ feature: Architecture, FFDA, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1050'
 ht-degree: 50%
 
 ---
@@ -82,7 +82,7 @@ O banco de dados PostgreSQL na instância mid-sourcing é usado para:
 
 ### Mecanismo de preparo da API [!DNL Campaign]{#staging-api}
 
-Com o banco de dados de nuvem do [!DNL Campaign], as chamadas unitárias de explosão não são recomendadas devido ao desempenho (latência e simultaneidade). A operação em lote é sempre preferida. Para garantir o melhor desempenho das APIs, o Campaign continua lidando com chamadas de API no nível do banco de dados local.
+Com o banco de dados de nuvem do [!DNL Campaign], as chamadas unitárias de explosão não são recomendadas devido ao desempenho (latência e simultaneidade). A menos que você esteja enviando um volume de envio extremamente grande, a operação em lote deve ser usada para garantir o desempenho ideal das APIs. O Campaign continua lidando com chamadas de API no nível do banco de dados local.
 
 [O mecanismo de preparo da API é detalhado nesta página](staging.md)
 

@@ -5,9 +5,9 @@ feature: Configuration, FFDA
 role: Developer
 level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
+source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '572'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,7 @@ Uma notificação específica é enviada ao grupo de operadores **[!UICONTROL Wo
 ![](assets/wf-alert-activity.png)
 
 
-## Medidas de proteção adicionais{#duplicates-guardrails}
+## Medidas de proteção adicionais {#duplicates-guardrails}
 
 O Campaign vem com um conjunto de novas medidas de proteção para impedir a inserção de chave duplicada no banco de dados [!DNL Snowflake].
 
@@ -63,19 +63,19 @@ O Campaign vem com um conjunto de novas medidas de proteção para impedir a ins
 >
 >Essas medidas de proteção estão disponíveis a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-### Preparação da entrega{#remove-duplicates-delivery-preparation}
+### Preparação da entrega {#remove-duplicates-delivery-preparation}
 
 O Adobe Campaign remove automaticamente qualquer UUID duplicado de um público-alvo durante a preparação do delivery. Esse mecanismo impede que qualquer erro ocorra durante a preparação de um delivery. Como usuário final, você pode verificar essas informações nos logs do delivery: alguns recipients podem ser excluídos do público-alvo principal devido à duplicação de chaves. Nesse caso, o seguinte aviso será exibido: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
 ![](assets/exclusion-duplicates-log.png)
 
-### Atualizar dados em um fluxo de trabalho{#duplicates-update-data}
+### Atualizar dados em um fluxo de trabalho {#duplicates-update-data}
 
 No contexto de uma [implantação corporativa (FFDA)](enterprise-deployment.md), não é possível selecionar uma chave interna (UUID) como campo para atualizar dados em um fluxo de trabalho.
 
 ![](assets/update-data-no-internal-key.png)
 
-### Consultar um esquema com duplicatas{#query-with-duplicates}
+### Consultar um esquema com duplicatas {#query-with-duplicates}
 
 Quando um fluxo de trabalho inicia a execução da consulta em um esquema, o Adobe Campaign verifica se há algum registro duplicado relatado na [tabela Unicidade de auditoria](#unicity-wf). Em caso positivo, o workflow registra um aviso como a operação subsequente nos dados duplicados deve afetar potencialmente o resultado do workflow.
 
@@ -86,3 +86,8 @@ Essa verificação é executada nas seguintes atividades de workflow:
 * Consulta
 * Query incremental
 * Lista de leitura
+
+
+>[!NOTE]
+>
+>Se estiver fazendo a transição de outra versão do Campaign, é fundamental remover duplicatas, solucionar problemas e limpar dados para evitar impacto na transição.
