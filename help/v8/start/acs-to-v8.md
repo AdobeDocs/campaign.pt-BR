@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 98613a0a-7a6d-41a5-9541-e045d4ca318f
-source-git-commit: f0fc5dfdde4fa9a238c0f07aa2bd35da28eead3c
+source-git-commit: fb7abba9009591a2757c07f584c0a7c59c6eb01a
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 8%
+source-wordcount: '210'
+ht-degree: 6%
 
 ---
 
@@ -18,4 +18,11 @@ Como usuário Campaign Standard em transição para o Campaign v8, você pode se
 
 Como usuário do Campaign v8, agora você tem acesso à nova interface de usuário da Web do Campaign e ao console do cliente v8. Os dados e as configurações são sincronizados de um ambiente para outro. Todos os dados e configurações disponíveis no console do cliente estão visíveis na interface da Web do Campaign, a partir da navegação à esquerda do Explorer.
 
-Saiba mais sobre a nova interface da Web do Campaign em [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"}.
+Links úteis para começar:
+
+* Saiba mais sobre as principais diferenças e como começar a usar o [este Guia de Adoção](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/home){target="_blank"}.
+
+* Saiba mais sobre a nova interface da Web do Campaign em [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"}.
+
+* Os recursos de Campaign Standard foram adicionados ao Campaign v8 para facilitar a transição. Esses recursos são restritos aos clientes que estão fazendo a transição do Campaign Standard e estão descritos nesta [esta documentação](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/campaign-standard-migration-home){target="_blank"}.
+
