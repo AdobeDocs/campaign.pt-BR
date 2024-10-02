@@ -3,7 +3,7 @@ title: Criar workflows para construção do target
 description: Saiba como criar públicos-alvo em um fluxo de trabalho
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
 workflow-type: tm+mt
 source-wordcount: '2252'
 ht-degree: 93%
