@@ -5,10 +5,10 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
 source-wordcount: '1581'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,8 @@ _7 de setembro de 2021_
 
 **Outras alterações**
 
-* Os conectores do Microsoft CRM descontinuados anteriormente (implantações do Office 365 e locais) foram removidos da interface. [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=pt-BR#configure-acc-for-microsoft)
+* Os conectores do Microsoft CRM descontinuados anteriormente (implantações do Office 365 e locais) foram removidos da interface. [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
+
 * Após a migração para o Tomcat 8, o script de configuração do IIS foi atualizado para corrigir problemas de integração do IIS. (NEO-31019)
 * Foi adicionada uma medida de proteção para permitir que o [fluxo de trabalho técnico de faturamento](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=pt-BR#billing-report) seja executado na instância de marketing.
 * A identificação da fonte de dados foi aprimorada nas guias de dados e esquema da janela **Exibir população** das transições do fluxo de trabalho.

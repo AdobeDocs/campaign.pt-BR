@@ -5,9 +5,9 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 10b1113a20c11e0b97804f597cb0a48568fcae3d
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '936'
 ht-degree: 17%
 
 ---
@@ -61,7 +61,7 @@ Depois que o console do cliente estiver instalado, siga as etapas abaixo para cr
 
 1. Especifique uma conexão com o servidor de aplicativos Adobe Campaign por meio de um URL. Use um DNS ou um alias da máquina, ou seu endereço IP.
 
-   Por exemplo, você pode usar a URL do tipo [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
+   Por exemplo, você pode usar o URL do tipo `https://<machine>.<domain>.com`.
 
 1. Marque a opção **[!UICONTROL Connect with an Adobe ID]**.
 
