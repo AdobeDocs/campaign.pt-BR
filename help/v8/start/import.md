@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ O Campaign ajuda a adicionar contatos ao banco de dados da nuvem. Você pode car
 
 Introdução a [públicos-alvo](audiences.md)
 
-Entender o [modelo de dados](../dev/datamodel.md) do Campaign
+Noções básicas do [modelo de dados](../dev/datamodel.md) do Campaign
 
 ## Direcionar perfis em um fluxo de trabalho
 

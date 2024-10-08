@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1148'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
 
    O Adobe Campaign vem com um modelo de dados predefinido. Para implementar e personalizar seu ambiente, você precisa conhecer as tabelas integradas do modelo de dados do Adobe Campaign e saber como elas se relacionam entre si.
 
-   [Saiba mais sobre o modelo de dados do Campaign](../dev/datamodel.md).
+   [Saiba mais sobre o modelo de dados do Campaign](../dev/datamodel.md)
 
 ## Personalizar sua instância{#implementation-custom-your-instance}
 
