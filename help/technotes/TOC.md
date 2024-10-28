@@ -5,10 +5,10 @@ type: Event
 title: Notas técnicas do Adobe Campaign
 description: Notas técnicas do Campaign
 breadcrumb-title: Notas técnicas do Campaign
-source-git-commit: ccd60b7ff54bb538ae21693eff41a3943f1c6c88
+source-git-commit: 0fa6767f042eb595b1697d086e5c5cd5fc42625e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '68'
+ht-degree: 23%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 0%
    + [Navegadores da Internet](upgrades/browsers.md)
    + [Atualizações de sistema de 2023](upgrades/tech-stack-upgrade.md)
    + [descontinuação de 32 bits do console do cliente](upgrades/console.md)
-   + [Gerenciamento de acesso do usuário do Campaign Standard para o Campaign V8](upgrades/user-management-acs.md)
    + Segurança {#security}
       + [Rotação de credenciais do cliente](security/credential-rotation-guide.md)
 + [&lt; Voltar à documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/campaign-home)
