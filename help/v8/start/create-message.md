@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
+source-git-commit: 1bf3c4b2d0c8d9b1bdbc82a9047c52c0d80cd997
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 43%
@@ -28,7 +28,7 @@ Em seguida, você pode preparar, testar, enviar e monitorar suas mensagens.
 
 >[!NOTE]
 >
->As etapas descritas nesta seção pressupõem que todos os destinatários de destino e seus perfis estejam armazenados no banco de dados, exceto no caso de entrega externa (consulte [Seleção de destinatários externos](steps-defining-the-target-population.md#selecting-external-recipients)).
+>As etapas descritas nesta seção pressupõem que todos os recipients do target e seus perfis estejam armazenados no banco de dados, exceto no caso de delivery externo. Consulte [Seleção de destinatários externos](#selecting-external-recipients).
 
 ## Criar a entrega {#create-the-delivery}
 
@@ -40,7 +40,7 @@ Para criar um delivery, siga estas etapas:
 
    Um modelo integrado é fornecido para cada canal que você instalou: correspondência direta, email, telefone, canal móvel (SMS), X (Twitter), etc. Os canais disponíveis na lista dependem do contrato de licença.
 
-   Você poderá criar novos modelos de entrega para pré-configurar parâmetros específicos de acordo com suas necessidades. Para obter mais informações, consulte [esta seção](about-templates.md).
+   Você poderá criar novos modelos de entrega para pré-configurar parâmetros específicos de acordo com suas necessidades. Para obter mais informações, consulte [esta seção](../send/create-templates.md).
 
 1. Insira um nome para a entrega no campo **[!UICONTROL Label]**.
 
@@ -74,7 +74,7 @@ Além disso, no contexto de uma campanha de marketing, você pode adicionar:
 
 ### Selecionar os principais destinatários da entrega {#select-the-main-target}
 
-Na maioria dos casos, o público-alvo principal é extraído do banco de dados do Adobe Campaign (modo padrão). No entanto, os destinatários também podem ser armazenados em um [arquivo externo](steps-defining-the-target-population.md#selecting-external-recipients).
+Na maioria dos casos, o público-alvo principal é extraído do banco de dados do Adobe Campaign (modo padrão). No entanto, os destinatários também podem ser armazenados em um [arquivo externo](#selecting-external-recipients).
 
 Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
@@ -157,7 +157,7 @@ As seguintes opções estão disponíveis:
 
 * **[!UICONTROL Exclude duplicate addresses during delivery]**: esta opção está ativa por padrão e remove endereços de email duplicados durante a entrega. A estratégia aplicada pode variar de acordo com a forma como o Adobe Campaign é usado e o tipo de dados no banco de dados. O valor da opção pode ser configurado para cada template de delivery.
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, destinatários cujos endereços de email estão na lista de bloqueios (“opt out”). Essa opção deve permanecer selecionada para observar a ética profissional de marketing eletrônico.
-* **[!UICONTROL Exclude quarantined recipients]**: essa opção permite excluir do público-alvo quaisquer perfis com um endereço que esteja em quarentena. É altamente recomendável manter essa opção selecionada. Saiba mais sobre gerenciamento de quarentena em [esta seção](understanding-quarantine-management.md).
+* **[!UICONTROL Exclude quarantined recipients]**: essa opção permite excluir do público-alvo quaisquer perfis com um endereço que esteja em quarentena. É altamente recomendável manter essa opção selecionada. Saiba mais sobre gerenciamento de quarentena em [esta seção](../send/quarantines.md).
 * **[!UICONTROL Limit delivery]** para um determinado número de mensagens. Essa opção permite que você insira o número máximo de mensagens a serem enviadas. Se o público-alvo exceder o número de mensagens indicadas, uma seleção aleatória será aplicada ao público-alvo. Para enviar todas as mensagens, mantenha esse valor como &#39;0&#39;.
 * **[!UICONTROL Keep duplicate records (same identifier)]**: essa opção permite enviar várias entregas a destinatários que atendem a vários critérios de direcionamento.
 
