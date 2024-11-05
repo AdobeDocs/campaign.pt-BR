@@ -6,20 +6,20 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 72%
+source-wordcount: '714'
+ht-degree: 64%
 
 ---
 
-# Trabalho com modelos de entrega{#work-with-delivery-template}
+# Trabalho com modelos de entrega {#work-with-delivery-template}
 
-Use modelos de entrega para padronizar a aparência criativa e ter maior rapidez na execução e na inicialização de campanhas.
+Cada delivery é criado com base em um template. Os modelos integrados estão disponíveis para cada canal. Você pode personalizá-los para aplicar as mesmas configurações a um conjunto de deliveries.
 
-Um modelo pode incluir:
+Um modelo inclui:
 
-* Tipologias
+* Regras de tipologia
 * Endereços de remetente e de resposta
 * [blocos de personalização](../send/personalization-blocks.md) básicos
 * Links para [mirror pages](../send/mirror-page.md) e links para unsubscription
@@ -28,10 +28,9 @@ Um modelo pode incluir:
 
 ![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#delivery-template-video)
 
+## Criar um modelo {#create-a-delivery-template}
 
-## Criar um modelo{#create-a-delivery-template}
-
-Para criar um modelo de entrega, você pode duplicar um modelo integrado, converter uma entrega já existente em um modelo ou criar um modelo de entrega do zero.
+Para criar um template do delivery, você pode duplicar um template incorporado ou converter um delivery existente em um template. Você também pode criar um template do delivery do zero, mas isso não é recomendado. Esses métodos são detalhados abaixo.
 
 ### Duplicação de um modelo já existente{#copy-an-existing-template}
 
@@ -91,9 +90,9 @@ Para configurar um modelo de entrega do zero, siga as etapas abaixo:
 1. Clique em **Save**. Seu template está pronto para ser usado em uma entrega.
 
 
-## Usar modelos{#use-a-delivery-template}
+## Usar modelos {#use-a-delivery-template}
 
-### Criar uma entrega a partir de um modelo{#create-a-delivery-from-a-template}
+### Criar uma entrega a partir de um modelo {#create-a-delivery-from-a-template}
 
 Para criar uma entrega com base em um modelo existente, selecione um modelo disponível na lista..
 

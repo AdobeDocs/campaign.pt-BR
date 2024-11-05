@@ -5,7 +5,7 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 14%
@@ -16,7 +16,7 @@ ht-degree: 14%
 
 Depois que o conteúdo da mensagem for definido, você poderá usar perfis de teste para pré-visualizá-la e testá-la. Se você inseriu [conteúdo personalizado](personalize.md), é possível verificar como esse conteúdo é exibido na mensagem, usando os dados do perfil de teste. Além disso, para detectar possíveis erros no conteúdo da mensagem ou nas configurações de personalização, envie provas para perfis de teste. Uma prova deve ser enviada sempre que uma alteração for feita, para validar o conteúdo mais recente.
 
-## Visualização de conteúdo{#preview-content}
+## Visualização de conteúdo {#preview-content}
 
 Antes de enviar provas, uma prática recomendada é verificar o conteúdo da mensagem na seção de pré-visualização da janela de delivery.
 
@@ -68,7 +68,7 @@ Por padrão, a substituição é executada aleatoriamente, mas você pode seleci
 
 * Use a opção **[!UICONTROL Specific target and Seed addresses]** para combinar seed addresses e endereços de email específicos. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 
-### Enviar uma prova{#proofs-send}
+### Enviar uma prova {#proofs-send}
 
 Para enviar provas de mensagem, siga as etapas abaixo:
 
@@ -88,7 +88,7 @@ Navegue até a guia **[!UICONTROL Audit]** da entrega para verificar a entrega d
 >
 >Na prova enviada, o link para a mirror page não está ativo. Ele só é ativado nas mensagens finais.
 
-### Propriedades da prova{#proofs-properties}
+### Propriedades da prova {#proofs-properties}
 
 As propriedades de prova são definidas na guia **[!UICONTROL Advanced]** das janelas de propriedades de entrega. Navegue até o link **[!UICONTROL Proof properties...]** para definir os parâmetros e o rótulo das provas. Você pode optar por manter:
 

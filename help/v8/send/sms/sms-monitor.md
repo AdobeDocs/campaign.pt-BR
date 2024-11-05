@@ -4,14 +4,13 @@ description: Sobre o monitoramento e o rastreamento de um delivery de SMS
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="Disponibilidade limitada" type="Informative"
-source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
+exl-id: 42be45db-3a90-4ad0-896d-f082afff1f8e
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
-
 
 # Monitorar e rastrear um SMS
 
@@ -52,4 +51,3 @@ E por último, a guia **[!UICONTROL Audit]** com todos os detalhes durante a ini
 Os tipos de falha e os motivos para falha no SMS são os mesmos dos emails.
 
 Saiba mais sobre [falhas de entrega](../delivery-failures.md) e, especificamente, sobre [quarentenas de SMS](../delivery-failures.md#sms-quarantines).
-

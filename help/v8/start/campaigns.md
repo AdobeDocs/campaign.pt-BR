@@ -5,14 +5,14 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 100%
+source-wordcount: '770'
+ht-degree: 94%
 
 ---
 
-# Introdução às campanhas{#gs-ac-campaigns}
+# Introdução às campanhas {#gs-ac-campaigns}
 
 O Adobe Campaign oferece um conjunto de soluções que ajudam você a personalizar e entregar campanhas em todos os seus canais online e offline. Você pode criar, configurar, executar e analisar campanhas de marketing. Todas as campanhas de marketing podem ser gerenciadas em um centro de controle unificado. Descubra como navegar e criar campanhas de marketing nesta seção.
 
@@ -78,11 +78,9 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    ![](assets/campaign-dashboard.png)
 
-   Aprenda a criar e iniciar entregas de campanha de marketing [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR){target="_blank"}.
+   Saiba como criar e iniciar entregas de campanha de marketing [nesta página](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-   É possível associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama etc.
-
-   Saiba mais sobre documentos associados [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=pt-BR){target="_blank"}.
+   Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama etc. Saiba mais sobre documentos associados em [esta página](../../automation/campaigns/marketing-campaign-assets.md).
 
 1. **Configurar o processo de aprovação**
 
@@ -93,7 +91,7 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
 ## Complemento de marketing distribuído{#distributed-marketing-add-on}
 
-O Adobe Campaign oferece um complemento de **Marketing distribuído** para a implementação de campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (lojas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado, conhecido como **[!UICONTROL List of campaign packages]**, no qual modelos de campanha criados centralmente são oferecidos a entidades locais.
+O Adobe Campaign oferece um complemento de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (lojas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado, conhecido como **[!UICONTROL List of campaign packages]**, no qual modelos de campanha criados centralmente são oferecidos a entidades locais.
 
 >[!NOTE]
 >

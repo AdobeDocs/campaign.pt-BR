@@ -4,11 +4,10 @@ description: Introdução ao SMS no Campaign
 feature: SMS
 role: User, Data Engineer
 level: Beginner
-badge: label="Disponibilidade limitada" type="Informative"
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: af1d453179c2d739eca243b435dec90a4b8e2dd5
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '281'
 ht-degree: 7%
 
 ---
@@ -16,12 +15,6 @@ ht-degree: 7%
 # Introdução a SMS {#gs-sms-channel}
 
 Use o Adobe Campaign para enviar mensagens SMS personalizadas.
-
->[!IMPORTANT]
->
->Esta documentação é para o Adobe Campaign v8.7.2 e posteriores.
->
->Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
 
 >[!NOTE]
 >

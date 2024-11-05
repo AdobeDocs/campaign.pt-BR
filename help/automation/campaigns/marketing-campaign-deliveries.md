@@ -5,7 +5,7 @@ description: Saiba mais sobre entregas de campanha de marketing
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 40%
@@ -24,9 +24,9 @@ Você tem duas maneiras de adicionar deliveries às suas campanhas de marketing:
 
 * No link **[!UICONTROL Add a delivery]** no painel de campanha.
 
-![](assets/campaign_op_add_delivery.png)
+  ![](assets/campaign_op_add_delivery.png)
 
-Depois de salvo, o delivery é adicionado ao painel de campanha.
+  Depois de salvo, o delivery é adicionado ao painel de campanha.
 
 * Em um fluxo de trabalho da campanha, na guia **[!UICONTROL Targeting and workflows]**, adicionando a entrega.
 
