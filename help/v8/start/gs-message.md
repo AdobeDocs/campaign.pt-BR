@@ -4,9 +4,9 @@ description: Introdução a mensagens
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 0ff645a87700c038b78fb4cc45062822d6d97148
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1305'
 ht-degree: 89%
 
 ---
@@ -17,7 +17,7 @@ Com o Adobe Campaign, você pode enviar campanhas entre canais, incluindo e-mail
 
 As funcionalidades principais incluem definição de metas, definição e personalização de mensagens, execução de comunicações e relatórios operacionais associados.
 
-## Criar uma entrega {#gs-ac-delivery}
+## Casos de uso {#gs-ac-delivery}
 
 Para enviar mensagens, você deve criar um delivery. O modo de criação do delivery depende do seu caso de uso.
 
@@ -147,7 +147,7 @@ Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabar�
 
 As entregas contínuas são criadas em workflows através da [atividade Entrega contínua](../../automation/workflow/continuous-delivery.md).
 
-## Adicionar personalização{#personalization}
+## Adicionar personalização {#personalization}
 
 As mensagens entregues pelo Adobe Campaign podem ser personalizadas de várias maneiras. [Saiba mais sobre os recursos de personalização](../send/personalize.md)
 
@@ -158,7 +158,7 @@ Você pode:
 * Criar conteúdo condicional. [Saiba mais](../send/conditions.md)
 
 
-## Logs de rastreamento e entrega{#gs-tracking-logs}
+## Enviar e rastrear {#gs-tracking-logs}
 
 O monitoramento de entregas após serem enviados é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes. Você pode monitorar após enviar uma entrega, bem como entender como as falhas de entrega e as quarentenas são gerenciadas.
 
