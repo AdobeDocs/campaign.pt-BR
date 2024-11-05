@@ -1,177 +1,203 @@
 ---
-title: Introdução a mensagens
-description: Introdução a mensagens
+title: Criar a primeira entrega
+description: Criar a primeira entrega
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: c508c80bea39e4fc32786d92d06651a1f91ca697
-workflow-type: ht
-source-wordcount: '1319'
-ht-degree: 100%
+source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
+workflow-type: tm+mt
+source-wordcount: '1525'
+ht-degree: 43%
 
 ---
 
-# Introdução a mensagens {#gs-ac-audiences}
+# Criar a primeira entrega {#create-a-msg}
 
-## Canais de entrega {#gs-ac-channels}
+Nesta página, você aprenderá a criar uma única entrega de uma só vez. Você pode criar outros tipos de deliveries para atender aos seus casos de uso. Saiba mais sobre os diferentes tipos de entregas e como criá-los em [esta página](gs-message.md).
 
-Com o Adobe Campaign, você pode enviar campanhas entre canais, incluindo e-mails, SMS, notificações push e correspondências diretas e medir a eficiência usando vários relatórios dedicados. Essas mensagens são projetadas e enviadas em entregas, além disso podem ser personalizadas para cada destinatário.
+As principais etapas ao criar um delivery de uma só vez são:
 
-As funcionalidades principais incluem definição de metas, definição e personalização de mensagens, execução de comunicações e relatórios operacionais associados. O principal ponto de acesso funcional é o assistente de entrega. Esse ponto de acesso leva a vários recursos cobertos pelo Adobe Campaign.
+1. **Criar uma nova entrega**. [Leia mais](#create-the-delivery)
 
-O Adobe Campaign v8 vem com os seguintes canais de entrega:
+1. **Defina o conteúdo da entrega**. [Leia mais](#content-of-the-delivery)
 
-* **Canal de email**: entregas de email permitem enviar emails personalizados para a população do target. [Saiba mais](#gs-channel-email)
+1. **Selecione a população alvo**. [Leia mais](#target-population)
 
-* **Canais móveis**: entregas em canais móveis permitem enviar mensagens personalizadas em dispositivos móveis para a população do público-alvo. [Saiba mais](#gs-channel-sms)
-
-* **Canal do aplicativo móvel**: as entregas por aplicativo móvel permitem enviar notificações para dispositivos iOS e Android.  [Saiba mais](#gs-channel-push)
-
-* **Canal de correspondência direta**: entregas de correspondência direta permitem gerar um arquivo de extração que contém dados sobre a população de público-alvo. [Saiba mais](#gs-channel-direct)
-
-
-  Outros canais são descritos [nesta página](#other-channels).
-
-  >[!NOTE]
-  >
-  >O número de canais disponíveis depende do seu contrato. Verifique o contrato de licença.
-
-## Escolha seu canal {#gs-channel}
-
-### Canal de email {#gs-channel-email}
-
-O [Canal de email](../send/direct-mail.md) é um dos canais principais do Adobe Campaign, permitindo agendar e enviar emails personalizados para targets específicos.
-
-Você pode enviar diferentes tipos de emails:
-
-* Emails de envio único: emails que você pode enviar uma vez para um target definido. Normalmente, eles são usados para promover um conteúdo específico que seria preparado e enviado apenas uma vez (boletim informativo, email promocional etc.).
-* Emails recorrentes: em uma campanha, envie o mesmo email regularmente e agregue cada envio e seus relatórios periodicamente. O mesmo email é enviado, mas geralmente para um target diferente, com base no target qualificado do dia do envio. Um exemplo comum é um email de aniversário. Para obter mais informações, consulte [Entregas recorrentes](../../automation/workflow/recurring-delivery.md).
-* Emails transacionais: emails unitários que são acionados com base no comportamento dos clientes. Consulte [Mensagens transacionais](../send/transactional.md).
-
-Para saber mais sobre o uso da entrega e recomendações, consulte [Práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=pt-BR#sending-messages){target="_blank"} do Adobe Campaign Classic
-
-Para obter mais informações sobre os tipos diferentes de entrega, consulte [esta página](#types-of-deliveries).
-
-### Canal móvel {#gs-channel-sms}
-
-O Adobe Campaign permite que você faça entrega de mensagens por [SMS](../send/sms/sms.md) e [LINE](../send/line.md) em celulares.
-
-Para mensagens SMS, você poderá criar, modificar e personalizar mensagens somente no formato de texto. Você também poderá visualizar suas mensagens SMS antes de enviá-las.
-
-Para mensagens por LINE, você poderá enviar texto ou imagens e links.
-
-Para fazer entrega de mensagens SMS ou LINE a um celular, você vai precisar de:
-
-* Uma conta externa configurada no canal **[!UICONTROL Mobile (SMS)]** ou no canal **[!UICONTROL LINE]**.
-* Um modelo de entrega por SMS ou LINE que esteja vinculado corretamente a essa conta externa.
-
-
-### Canal de notificação por push {#gs-channel-push}
-
-É possível usar o Adobe Campaign para enviar [notificações por push](../send/push.md) personalizadas e segmentadas em dispositivos móveis iOS e Android, por meio de aplicativos dedicados. Depois que as etapas de configuração e integração forem executadas, as entregas de iOS e de Android poderão ser criadas e enviadas com o Adobe Campaign. Você também pode projetar e enviar notificações avançadas com imagens ou vídeos para dispositivos Android.
-
-### Canal de correspondência direta {#gs-channel-direct}
-
-A [Correspondência direta](../send/direct-mail.md) é um canal offline que permite criar, personalizar e gerar um arquivo externo para compartilhar com seus provedores de correspondência direta. Use este canal para orquestrar canais online e offline nas jornadas do cliente.
-
-Quando você prepara uma entrega de correspondência direta, o Adobe Campaign gera um arquivo incluindo todos os perfis direcionados e as informações de contato escolhidas (endereço postal por exemplo). Você poderá enviar esse arquivo para seu provedor de correspondência direta que irá cuidar do envio real.
-
-
-### Outros canais {#other-channels}
-
-O Adobe Campaign também vem com um modelo de entrega por telefone, que é usado para criar entregas externas. A utilização desse canal implica que você implemente metodologias específicas para processar arquivos de saída. As etapas de configuração são as mesmas do [Canal de correspondência direta](../send/direct-mail.md).
+Em seguida, você pode preparar, testar, enviar e monitorar suas mensagens.
 
 >[!NOTE]
 >
->O canal de telefone não é um canal integrado. A implementação requer o envolvimento da Adobe Consulting ou de um Parceiro da Adobe. Entre em contato com seu representante da Adobe para obter mais informações.
+>As etapas descritas nesta seção pressupõem que todos os destinatários de destino e seus perfis estejam armazenados no banco de dados, exceto no caso de entrega externa (consulte [Seleção de destinatários externos](steps-defining-the-target-population.md#selecting-external-recipients)).
 
-As entregas do tipo “Outros” usam um modelo técnico específico que não executa um processo: isso permite gerenciar ações de marketing executadas fora da plataforma Adobe Campaign.
+## Criar a entrega {#create-the-delivery}
 
-Este canal não tem nenhum mecanismo específico. É um canal genérico que tem sua própria opção de roteamento de conta externa, tipo de modelo de entrega e atividade de fluxo de trabalho de campanha, como qualquer outro canal de comunicação disponível no Adobe Campaign. Esse canal foi projetado apenas para fins descritivos, por exemplo, para definir entregas para as quais você deseja manter um rastreamento do público-alvo de uma campanha executada em uma ferramenta diferente do Adobe Campaign.
+Para criar um delivery, siga estas etapas:
 
-## Escolha o tipo de entrega {#types-of-deliveries}
+1. Clique em **[!UICONTROL Create]** acima da lista de entregas. Ao criar um novo delivery, você deve selecionar o canal de delivery. Para fazer isso, selecione o template de entrega apropriado na lista suspensa no campo **[!UICONTROL Delivery template]**.
 
-Existem três tipos de objetos de entrega no Campaign:
+   ![](../send/assets/select-the-new-template.png)
 
-### Entrega única {#single-delivery}
+   Um modelo integrado é fornecido para cada canal que você instalou: correspondência direta, email, telefone, canal móvel (SMS), X (Twitter), etc. Os canais disponíveis na lista dependem do contrato de licença.
 
-Uma **entrega** é um objeto de entrega independente executado uma vez. Ele pode ser duplicado, preparado novamente, mas, desde que esteja no seu estado final (cancelado, interrompido, concluído), não poderá ser reutilizado.
+   Você poderá criar novos modelos de entrega para pré-configurar parâmetros específicos de acordo com suas necessidades. Para obter mais informações, consulte [esta seção](about-templates.md).
 
-As entregas podem ser criadas a partir da lista de entregas ou em um fluxo de trabalho através de uma atividade de [Entrega](../../automation/workflow/delivery.md) .
+1. Insira um nome para a entrega no campo **[!UICONTROL Label]**.
 
-Os workflows também fornecem atividades de entrega específicas de acordo com o tipo de canal que você deseja usar. Para obter mais informações sobre essas atividades, consulte [esta seção](../../automation/workflow/cross-channel-deliveries.md).
+   (opcional) Um código de delivery também pode ser atribuído ao delivery. O nome do delivery e seu código estão visíveis na lista de deliveries, mas não estão expostos aos recipients.
 
-### Entrega recorrente {#recurring-delivery}
+1. (opcional) Adicione uma descrição no campo **[!UICONTROL Description]**.
+1. (opcional) Selecione a natureza do delivery no campo relevante. Essas informações são úteis para o rastreamento da entrega: você poderá filtrar com base nesse critério na lista de entrega ou criar consultas usando esse critério de seleção.
+1. Clique em **[!UICONTROL Continue]** para confirmar essas informações e exibir a janela de configuração de mensagem.
 
-Uma **entrega recorrente** está disponível no contexto de um fluxo de trabalho. Ela permite criar uma nova entrega sempre que a atividade é executada. Isso evita que você crie uma nova entrega para tarefas recorrentes. Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabará com 12 entregas após um ano.
+## Definir o conteúdo do delivery {#content-of-the-delivery}
 
-As entregas recorrentes são criadas em workflows através da [atividade Entrega recorrente.](../../automation/workflow/recurring-delivery.md) Um exemplo dessa atividade que está sendo usada é apresentado nesta seção: [Criação de uma entrega recorrente em um workflow de direcionamento](../../automation/workflow/send-a-birthday-email.md).
+O conteúdo da entrega está pronto para ser configurado. A definição do conteúdo da entrega é específica para cada canal. Para obter mais informações, consulte a seção dedicada:
 
-### Entrega contínua {#continuous-delivery}
-
-Uma **entrega contínua** está disponível no contexto de um fluxo de trabalho. Ela permite que você adicione novos destinatários a uma entrega já existente, o que evita a necessidade de criar uma nova entrega a cada execução.
-
-Se uma informação na entrega for alterado (conteúdo, nome, etc.), um novo objeto de entrega será criado na execução da entrega. Se nenhuma informação for alterada, o mesmo objeto da entrega será reutilizado e os logs de entrega e rastreamento serão adicionados no mesmo objeto.
-
-Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabará com uma única entrega após um ano (desde que não tenha feito nenhuma alteração na entrega).
-
-As entregas contínuas são criadas em workflows através da [atividade Entrega contínua](../../automation/workflow/continuous-delivery.md).
+* [Definir o conteúdo do email](../send/email.md)
+* [Definir o conteúdo do SMS](../send/sms/sms-content.md)
+* [Definir o conteúdo da correspondência direta](../send/direct-mail.md)
+* [Desativar o conteúdo da notificação por push](../send/push.md)
 
 
-## Escolha como enviar suas mensagens{#gs-send-msg}
+## Definir o público-alvo {#target-population}
 
-Depois que a mensagem for criada e o conteúdo testado, você poderá escolher como deseja enviá-la. O Campaign oferece um conjunto de recursos para:
+Para cada delivery, você poderá definir vários tipos de públicos-alvo:
 
-* Enviar mensagens manualmente para o target principal
+* **Público principal**: perfis que recebem mensagens. [Saiba mais](#select-the-main-target)
+* **Destino da prova**: perfis que recebem mensagens de prova. Uma prova é uma mensagem especial com a qual é possível testar um delivery antes de enviá-lo ao público alvo principal. [Saiba mais](#select-the-proof-target)
 
-  ![](assets/send-email.png)
+Além disso, no contexto de uma campanha de marketing, você pode adicionar:
 
-  Saiba como enviar mensagens [nesta seção](../send/send.md)
+* **Seed addresses**: destinatários que estão fora do destino da entrega, mas recebem a entrega. [Saiba mais](../audiences/test-profiles.md)
+* **Grupos de controle**: população que não recebe a entrega, usada para rastrear o comportamento e o impacto da campanha. [Saiba mais](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
-* Enviar mensagens associadas a uma [campanha de marketing](campaigns.md)
+### Selecionar os principais destinatários da entrega {#select-the-main-target}
 
-  ![](assets/deliveries-in-a-campaign.png)
+Na maioria dos casos, o público-alvo principal é extraído do banco de dados do Adobe Campaign (modo padrão). No entanto, os destinatários também podem ser armazenados em um [arquivo externo](steps-defining-the-target-population.md#selecting-external-recipients).
 
-  Saiba como enviar mensagens no contexto de uma campanha [nesta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR){target="_blank"}
+Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
-* Enviar mensagens por meio de um [fluxo de trabalho](../config/workflows.md)
+1. No editor de entrega, selecione **[!UICONTROL To]**.
+1. Se os destinatários estiverem armazenados no banco de dados, selecione a primeira opção.
 
-  ![](assets/send-in-a-wf.png)
+   ![](../send/sms/assets/audience_to.png){zoomable="yes"}
 
-  Saiba como automatizar entregas de email [nesta página](../../automation/workflow/delivery.md)
+1. Selecione o [target mapping](../audiences/target-mappings.md) na lista suspensa **[!UICONTROL Target mapping]**.
+1. Clique no botão **[!UICONTROL Add]** para definir os filtros de restrição.
 
-* [Acionar mensagens](../send/transactional.md) de um evento
+   ![](assets/target-type.png){width="60%" align="left" zoomable="yes"}
 
-  O envio de mensagens transacionais (Centro de mensagens) é o módulo do Campaign criado para gerenciar mensagens por acionador.
+   Selecione um tipo de filtro e clique em **[!UICONTROL Next]** para definir as condições. Você pode exibir os destinatários filtrados na guia **[!UICONTROL Preview]**. Dependendo do tipo de target, o botão **[!UICONTROL Refine target]** permite combinar vários critérios de definição do target.
 
-  Saiba mais sobre o recurso de mensagens transacionais [nesta seção](../architecture/architecture.md#transac-msg-archi)
+   Os seguintes tipos de target estão disponíveis:
 
-  As etapas para configurar e enviar mensagens transacionais são detalhadas [nesta página](../send/transactional.md)
+   * **[!UICONTROL Filtering conditions]**: use esta opção para definir uma consulta e exibir o resultado. Saiba como criar uma consulta em [esta seção](../../automation/workflow/query.md).
+   * **[!UICONTROL A list of recipients]**: use essa opção para direcionar a uma lista de perfis. Saiba mais sobre listas em [esta seção](../audiences/create-audiences.md).
+   * **[!UICONTROL A recipient]**: use esta opção para selecionar um perfil específico no banco de dados.
+   * **[!UICONTROL Recipients included in a folder]**: use esta opção para direcionar todos os perfis contidos em uma pasta específica.
+   * **[!UICONTROL Recipients of a delivery]**: use essa opção para criar o público alvo dos recipients de uma entrega. Você deverá selecionar a entrega na lista:
 
-* Agendar suas mensagens
+     ![](assets/target-recipient-delivery.png)
 
-  ![](assets/schedule-send.png)
+   * **[!UICONTROL Delivery recipients belonging to a folder]**: use essa opção para criar o público-alvo a partir das entregas de recipients incluídos em uma pasta específica.
 
-  Saiba como agendar o envio de suas entregas [nesta página](../send/configure-and-send.md)
+     ![](assets/target-delivery-folder.png)
 
-  Consulte também [Caso de uso: saiba como agendar e enviar um email de aniversário](../../automation/workflow/send-a-birthday-email.md)
+     Você poderá filtrar o comportamento dos destinatários ao selecionar na lista suspensa:
+
+     ![](assets/target-filter-behavior.png)
+
+     >[!NOTE]
+     >
+     >A opção **[!UICONTROL Include sub-folders]** também permite direcionar as entregas contidas nas pastas localizadas na estrutura de árvore abaixo do nó selecionado.
+
+   * **[!UICONTROL Subscribers of an information service]**: esta opção permite que você selecione um boletim informativo ao qual os destinatários devem ser inscritos para receberem a entrega que está sendo criada.
+
+     ![](assets/target-service.png)
+
+   * **[!UICONTROL User filters]**: essa opção permite que você acesse os filtros pré-configurados para usá-los como critérios de filtragem para perfis no banco de dados. Os filtros pré-configurados são apresentados [nesta seção](../audiences/create-filters.md#default-filters).
+   * A opção **[!UICONTROL Exclude recipients from this segment]** permite apontar os recipients que não atendem aos critérios de target definidos. Para usar essa opção, selecione a caixa apropriada e, em seguida, aplique o direcionamento, conforme definido anteriormente, para excluir os perfis resultantes.
+
+1. Insira um nome para esse direcionamento no campo **[!UICONTROL Label]**. Por padrão, o rótulo é o do primeiro critério de direcionamento. Ao combinar os critérios de filtragem, é recomendável usar um nome explícito.
+1. Clique em **[!UICONTROL Finish]** para validar as opções de direcionamento.
+
+   Os critérios de definição do target definidos são resumidos na seção central da guia de configuração do target principal. Clique em um critério para exibir seu conteúdo (configuração e visualização). Para excluir um critério, clique na cruz localizada depois de seu rótulo.
+
+   ![](assets/target-remove-criterion.png)
+
+#### Selecionar destinatários externos {#selecting-external-recipients}
+
+Você pode enviar mensagens para perfis que não estão armazenados no banco de dados, mas em um arquivo externo. Por exemplo, para enviar um delivery a recipients importados de um arquivo de texto, siga estas etapas:
+
+1. Clique no link **[!UICONTROL To]** para selecionar os destinatários da sua entrega.
+1. Selecione a opção **[!UICONTROL Defined in an external file]**.
+1. Selecione o arquivo que contém os recipients.
+1. Ao importar os destinatários, clique no link **[!UICONTROL File format definition...]** para selecionar e configurar o arquivo externo.
+
+   Para obter mais informações sobre importação de dados, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
+
+1. Clique em **[!UICONTROL Finish]** e configure sua entrega como uma entrega padrão.
+
+>[!CAUTION]
+>
+>Ao definir o conteúdo da mensagem para delivery de email, não inclua o link para a mirror page: ele não poderá ser gerado nesse modo de delivery.
+
+#### Definir configurações de exclusão {#define-exclusion-settings}
+
+Ao definir o target de uma entrega, a guia **[!UICONTROL Exclusions]** é usada para limitar o número de mensagens. Os parâmetros padrão são recomendados, mas você poderá adaptar as configurações dependendo das suas necessidades. No entanto, essas opções só devem ser alteradas por um usuário expert para evitar qualquer erro ou mau uso.
+
+Você poderá optar por excluir endereços que atingiram um determinado número de erros consecutivos ou cuja classificação de qualidade está abaixo de um limite especificado nessa janela. Você também poderá escolher se autoriza ou não endereços não qualificados para os quais nenhum dado foi retornado.
+
+Clique no link **[!UICONTROL Edit...]** para modificar a configuração padrão.
+
+![](assets/target-exclusion-settings.png)
+
+As seguintes opções estão disponíveis:
+
+* **[!UICONTROL Exclude duplicate addresses during delivery]**: esta opção está ativa por padrão e remove endereços de email duplicados durante a entrega. A estratégia aplicada pode variar de acordo com a forma como o Adobe Campaign é usado e o tipo de dados no banco de dados. O valor da opção pode ser configurado para cada template de delivery.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, destinatários cujos endereços de email estão na lista de bloqueios (“opt out”). Essa opção deve permanecer selecionada para observar a ética profissional de marketing eletrônico.
+* **[!UICONTROL Exclude quarantined recipients]**: essa opção permite excluir do público-alvo quaisquer perfis com um endereço que esteja em quarentena. É altamente recomendável manter essa opção selecionada. Saiba mais sobre gerenciamento de quarentena em [esta seção](understanding-quarantine-management.md).
+* **[!UICONTROL Limit delivery]** para um determinado número de mensagens. Essa opção permite que você insira o número máximo de mensagens a serem enviadas. Se o público-alvo exceder o número de mensagens indicadas, uma seleção aleatória será aplicada ao público-alvo. Para enviar todas as mensagens, mantenha esse valor como &#39;0&#39;.
+* **[!UICONTROL Keep duplicate records (same identifier)]**: essa opção permite enviar várias entregas a destinatários que atendem a vários critérios de direcionamento.
+
+### Selecionar os destinatários das mensagens de prova {#select-the-proof-target}
+
+Para deliveries de email, você pode enviar provas para validar o conteúdo da mensagem. O envio de provas permite a verificação do link de opção de não participação, a mirror page e quaisquer outros links, validação da mensagem, verificação da exibição das imagens, detecção de possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
+
+Uma prova é uma mensagem específica que permite testar uma mensagem antes de enviá-la para o público-alvo principal. Os recipients da prova são responsáveis pela aprovação da mensagem: renderização, conteúdo, configurações de personalização e configuração.
+
+Para obter mais informações sobre recipients de prova e envio, consulte [esta seção](../send/preview-and-proof.md#send-proofs).
+
+![](../send/assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#seeds-and-proofs-video)
 
 
-## Adicionar personalização{#personalization}
+#### Tutorial em vídeo {#seeds-and-proofs-video}
 
-As mensagens entregues pelo Adobe Campaign podem ser personalizadas de várias maneiras. [Saiba mais sobre os recursos de personalização](../send/personalize.md)
+Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
-Você pode:
-
-* Inserir campos de personalização dinâmicos. [Saiba mais](../send/personalization-fields.md)
-* Inserir blocos de personalização predefinidos. [Saiba mais](../send/personalization-blocks.md)
-* Criar conteúdo condicional. [Saiba mais](../send/conditions.md)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 
-## Logs de rastreamento e entrega{#gs-tracking-logs}
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
-O monitoramento de entregas após serem enviados é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes. Você pode monitorar após enviar uma entrega, bem como entender como as falhas de entrega e as quarentenas são gerenciadas.
+## Preparar e validar o delivery {#validate-the-delivery}
 
-Saiba como monitorar suas entregas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR#sending-messages){target="_blank"}
+Quando uma entrega for criada e configurada, você deverá validá-la antes de enviá-la para o target principal.
 
+Para fazer isso:
+
+1. **Analisar o delivery**: esta etapa permite preparar as mensagens para a entrega. [Saiba mais](../send/delivery-analysis.md).
+
+1. **Enviar provas**: esta etapa permite controlar o conteúdo, os URLs, a personalização etc. [Saiba mais](../send/preview-and-proof.md).
+
+>[!IMPORTANT]
+>
+>As duas etapas acima DEVEM SER executadas após cada modificação no conteúdo da mensagem.
+
+
+## Configurar e enviar a entrega {#configuring-and-sending-the-delivery}
+
+Acesse os parâmetros de delivery para definir mais configurações e definir como enviar suas mensagens. Você pode definir a prioridade do delivery, configurar o envio de ondas, definir as configurações de nova tentativa e testar o envio do delivery. Quando essa configuração estiver concluída, você poderá confirmar o envio. As mensagens são enviadas imediatamente ou com base no cronograma de delivery.
+
+Saiba como definir as configurações de entrega em [esta página](../send/configure-and-send.md).

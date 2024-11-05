@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '522'
 ht-degree: 21%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 21%
 # Criar e enviar emails
 
 Os deliveries de email permitem enviar emails personalizados para a população do target. [Saiba mais](../send/send.md)
+
+Saiba mais sobre as principais etapas para criar e configurar uma entrega em [esta página](../start/create-message.md).
 
 ## Criar o primeiro delivery de email
 
