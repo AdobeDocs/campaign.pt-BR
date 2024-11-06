@@ -5,60 +5,63 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: bb77b915f50b31d8d91e25da6fa86aa15b03bba4
+source-git-commit: 19c5a15a0f42285fc3b1a448f3cbf474d741e6e2
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 17%
+source-wordcount: '155'
+ht-degree: 10%
 
 ---
 
 # Introdução a SMS {#gs-sms-channel}
 
-O Adobe Campaign permite fornecer SMS personalizado em celulares.
+Use o Adobe Campaign para enviar mensagens de texto aos seus clientes em seus dispositivos móveis. Você pode criar, personalizar e visualizar mensagens no formato de texto do editor de SMS.
 
-Para mensagens SMS, você poderá criar, modificar e personalizar mensagens somente no formato de texto. Você também poderá visualizar suas mensagens SMS antes de enviá-las.
+Para enviar SMS para dispositivos móveis com o Adobe Campaign, é necessário:
+
+* Uma conta externa configurada no canal **[!UICONTROL Mobile (SMS)]**. Saiba como configurar o canal de SMS na sua [infraestrutura de mid-sourcing](sms-mid-sourcing.md). Para esta configuração, você precisa entender os [parâmetros de conta externa SMPP](smpp-external-account.md) e as [características do canal SMS](sms-channel.md).
+Após essa configuração, verifique a conexão SMPP e saiba como solucionar problemas, se necessário. [Saiba mais](smpp-connection.md).
+
+* Um template do delivery de SMS que esteja vinculado corretamente a essa conta externa.
+
 
 >[!NOTE]
 >
 >Você também pode usar o Adobe Campaign para enviar mensagens de [LINE](../../send/line.md), com texto e/ou imagens e links.
 
-Para enviar SMS para um telefone celular com o Adobe Campaign, é necessário:
 
-* Uma conta externa configurada no canal **[!UICONTROL Mobile (SMS)]** ou no canal **[!UICONTROL LINE]**.
-* Um template do delivery de SMS que esteja vinculado corretamente a essa conta externa.
-
-Você pode ver nesta documentação as etapas para configurar, enviar e monitorar um delivery de SMS:
-
-* **Configurar canal de SMS**
-
-Primeiro, você precisa configurar o canal de SMS na sua [infraestrutura de mid-sourcing](sms-mid-sourcing.md).
-
-<!--The steps depend on the platform: either you have [a standalone instance](sms-standalone-instance.md) or you are in [a mid-sourcing infrastructure](sms-mid-sourcing.md).-->
-
-Para esta configuração, você precisa entender os [parâmetros de conta externa SMPP](smpp-external-account.md) e as [características do canal SMS](sms-channel.md).
-
-Após esta configuração, verifique sua conexão [SMPP e saiba como solucionar problemas, se necessário](smpp-connection.md).
-
-* **Criar sua primeira entrega de SMS**
-
-Para começar a configuração do delivery de SMS:
-
-1. Crie sua entrega e preencha as [configurações de entrega de SMS](sms-delivery-settings.md),
-
-1. [Definir o conteúdo](sms-content.md) da sua entrega,
-
-1. [Selecione a audiência](sms-audience.md).
-
-As etapas para definir um público estão detalhadas em [esta página](../../audiences/create-audiences.md).
-
-* **Validar e enviar SMS**
-
-Após a criação do delivery:
-
-1. [Enviar provas](sms-proofs.md) para validar a renderização e o conteúdo,
-
-1. Em seguida, [envie para o público final](sms-send.md).
-
-* **Monitorar e rastrear SMS**
-
-Após o envio, [saiba como monitorar e rastrear o SMS](sms-monitor.md).
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="create-sms.md">
+<img alt="Criar SMS" src="../../assets/do-not-localize/sms-sending.jpg">
+</a>
+<div><a href="create-sms.md"><strong>Criar uma entrega de SMS</strong>
+</div>
+<p>
+</td>
+<td>
+<a href="sms-content.md">
+<img alt="Conteúdo de SMS" src="../../assets/do-not-localize/sms.jpg">
+</a>
+<div>
+<a href="sms-content.md"><strong>Definir e personalizar conteúdo</strong></a>
+</div>
+<p></td>
+<td>
+<a href="sms-audience.md">
+<img alt="Público-alvo" src="../../assets/do-not-localize/sms-opt-out.jpg">
+</a>
+<div>
+<a href="sms-audience.md"><strong>Gerenciamento de recusa</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="smpp-external-account.md">
+<img alt="Configuração" src="../../assets/do-not-localize/sms-config.jpg">
+</a>
+<div>
+<a href="smpp-external-account.md"><strong>Configurar canal de SMS</strong></a>
+</div>
+<p>
+</td>
+</tr></table>
