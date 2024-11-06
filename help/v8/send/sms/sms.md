@@ -5,27 +5,27 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 7%
+source-wordcount: '248'
+ht-degree: 17%
 
 ---
 
 # Introdução a SMS {#gs-sms-channel}
 
-Use o Adobe Campaign para enviar mensagens SMS personalizadas.
+O Adobe Campaign permite entregar [SMS](../send/sms/sms.md) personalizado em dispositivos móveis.
+
+Para mensagens SMS, você poderá criar, modificar e personalizar mensagens somente no formato de texto. Você também poderá visualizar suas mensagens SMS antes de enviá-las.
 
 >[!NOTE]
 >
->O Adobe Campaign também permite enviar notificações por push em dispositivos móveis, através da sua opção **Adobe Campaign Mobile App Channel (NMAC)**. Saiba mais [nesta seção](../push.md).
+>Você também pode usar o Adobe Campaign para enviar mensagens de [LINE](../send/line.md), com texto e/ou imagens e links.
 
-A simplicidade e a facilidade de uso do SMS fazem dele um canal de comunicação muito valioso, além de sua robustez e compatibilidade incomparável em bilhões de terminais.
+Para enviar SMS para um telefone celular com o Adobe Campaign, é necessário:
 
-Há duas maneiras principais de enviar um SMS:
-
-* Enviá-lo manualmente por telefone. Essa é a maneira usual de se comunicar diretamente entre as pessoas.
-* Enviá-lo pela Internet. É assim que o Adobe Campaign usa o para enviar mensagens. Para isso, você precisa de um provedor de serviço SMS que faça uma ponte da Internet para a rede móvel.
+* Uma conta externa configurada no canal **[!UICONTROL Mobile (SMS)]** ou no canal **[!UICONTROL LINE]**.
+* Um template do delivery de SMS que esteja vinculado corretamente a essa conta externa.
 
 Você pode ver nesta documentação as etapas para configurar, enviar e monitorar um delivery de SMS:
 
