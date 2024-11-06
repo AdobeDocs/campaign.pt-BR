@@ -4,10 +4,10 @@ description: Saiba como criar uma entrega de SMS
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 12%
+source-wordcount: '170'
+ht-degree: 10%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 12%
 
 Para criar uma nova entrega de SMS, siga as etapas abaixo:
 
-1. Crie um novo delivery e selecione o template do delivery de SMS que você criou para seus envios de SMS. [Saiba mais aqui](sms-mid-sourcing.md#sms-delivery-template).
+1. Crie uma nova entrega e selecione o [modelo de entrega de SMS](sms-mid-sourcing.md#sms-delivery-template) criado para seus envios de SMS.
 
    ![](assets/sms_create.png){zoomable="yes"}
 
-   Saiba mais sobre as etapas de criação de entrega em [esta página](../../start/create-message.md).
+   As etapas de criação de entrega estão detalhadas em [esta página](../../start/create-message.md).
 
 <!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
 * For mid-sourcing infrastructure, -->
@@ -31,7 +31,7 @@ Para criar uma nova entrega de SMS, siga as etapas abaixo:
 
 1. Você pode verificar no botão **[!UICONTROL Properties]** se tudo está configurado conforme necessário. [Saiba mais sobre a guia SMS](sms-delivery-settings.md#sms-tab)
 
-![](assets/sms_settings.png){zoomable="yes"}
+   ![](assets/sms_settings.png){zoomable="yes"}
 
 1. [Defina o conteúdo](sms-content.md) da sua entrega.
 
