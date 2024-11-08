@@ -4,7 +4,7 @@ description: Saiba mais sobre as práticas recomendadas ao projetar e enviar del
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: b4fad76b43a77909a4ea2c0877527af80027681a
+source-git-commit: 10af828319569ad9aeeecc809bc213f9608791ac
 workflow-type: tm+mt
 source-wordcount: '2869'
 ht-degree: 74%
@@ -151,7 +151,7 @@ O link de unsubscription é essencial. Deve ser visível e válido e o formulár
 
 **Dica**: como o erro humano é sempre possível, verifique se o link para opção de não participação funciona corretamente antes de cada envio. Por exemplo, ao enviar a prova, verifique se o link é válido, se o formulário está online e se o campo `No longer contact this recipient ` foi alterado para `Yes`.
 
-Veja [nesta seção](personalization-blocks.md#personalization-blocks-example) como inserir um link para opção de não participação.
+Veja [nesta seção](../send/personalization-blocks.md) como inserir um link para opção de não participação.
 
 ### Tamanho do email
 
@@ -328,7 +328,7 @@ Você pode definir um processo de validação completo, envolvendo operadores e 
 
 #### Usar ondas
 
-Você pode aumentar progressivamente o volume enviado usando ondas. Esse aumento evitará que sua mensagem seja marcada como spam ou pode ser usado quando você quiser restringir o número de mensagens diárias. Ao usar ondas, você pode dividir as entregas em vários lotes, em vez de enviar grandes volumes de mensagens ao mesmo tempo. Saiba mais [nesta seção](../send/configure-and-send.mdsending-using-multiple-waves).
+Você pode aumentar progressivamente o volume enviado usando ondas. Esse aumento evitará que sua mensagem seja marcada como spam ou pode ser usado quando você quiser restringir o número de mensagens diárias. Ao usar ondas, você pode dividir as entregas em vários lotes, em vez de enviar grandes volumes de mensagens ao mesmo tempo. Saiba mais [nesta seção](../send/configure-and-send.md#sending-using-multiple-waves).
 
 #### Priorizar mensagens
 
