@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
 source-wordcount: '3650'
 ht-degree: 26%
@@ -71,7 +71,7 @@ Quando ativado, os logs adicionais serão enviados para o arquivo de log. Isso �
 
 ![](assets/smpp_channel_settings.png){zoomable="yes"}
 
-### Autorizar transliteração de caracteres
+### Autorizar transliteração de caracteres {#smpp-transliteration}
 
 A transliteração é o processo de encontrar caracteres equivalentes aos que faltam. Por exemplo, o caractere francês &quot;ê&quot; (e com acento circunflexo) está ausente da codificação GSM, mas pode ser substituído por &quot;e&quot; sem prejudicar muito a leitura.
 

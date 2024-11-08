@@ -5,10 +5,10 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 71%
+source-wordcount: '471'
+ht-degree: 64%
 
 ---
 
@@ -47,13 +47,13 @@ Você pode personalizar o conteúdo da mensagem ao:
 
 ## Medidas de proteção e recomendações{#perso-guardrails}
 
-### Tempo limite do Personalization{#perso-timeout}
+### Tempo limite do Personalization {#perso-timeout}
 
 Para aumentar a proteção da entrega, é possível definir um período de tempo limite para a fase de personalização.
 
 Na guia **[!UICONTROL Delivery]** de **[!UICONTROL Delivery properties]**, selecione um valor máximo em segundos na opção **[!UICONTROL Maximum personalization run time]**.
 
-Durante a visualização ou envio, se a fase de personalização exceder o tempo máximo definido neste campo, o processo será anulado com uma mensagem de erro e a entrega falhará.
+Durante a pré-visualização ou envio, se a fase de personalização exceder o tempo máximo definido nesse campo, o processo será interrompido com uma mensagem de erro e o delivery falhará.
 
 O valor padrão é de 5 segundos.
 
