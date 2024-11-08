@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
+source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 48%
+source-wordcount: '497'
+ht-degree: 49%
 
 ---
 
@@ -41,7 +41,6 @@ Saiba como criar uma audiência em um fluxo de trabalho de campanha em [esta pá
 
 ## Perfis ativos {#active-profiles}
 
-
 Um perfil ativo é aquele com o qual o cliente tentou se comunicar nos últimos 12 meses por meio de qualquer canal.
 
 De acordo com seu contrato, cada uma das instâncias do Campaign é provisionada com uma quantidade específica de perfis ativos que são contados para fins de faturamento. Consulte seu contrato mais recente para obter uma referência sobre o número de perfis ativos adquiridos. Saiba mais em [Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
@@ -55,17 +54,9 @@ As seguintes medidas de proteção e limitações se aplicam:
 * Perfis direcionados no contexto de Marketing social em X (Twitter) não são considerados como perfis ativos.
 * A contagem se baseia na chave primária do destinatário. Como consequência, se um perfil estiver presente em duas tabelas de destinatários diferentes, ele poderá ser contado duas vezes como um perfil ativo.
 
-
 ## Privacidade e consentimento{#privacy-and-consent}
 
 O Adobe Campaign é uma ferramenta poderosa para coletar e processar grandes volumes de dados, incluindo informações pessoais e dados confidenciais. O Adobe Campaign permite coletar dados, inclusive informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus destinatários.
 
 Saiba como gerenciar a privacidade e o consentimento na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR){target="_blank"}.
 
-**Tópicos relacionados**
-
-* [Projetar e executar um fluxo de trabalho específico da campanha](../../automation/workflow/campaign-workflows.md){target="_blank"}
-
-* [Saiba como selecionar a audiência de uma campanha](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR){target="_blank"}
-
-* [Introdução aos fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target="_blank"}

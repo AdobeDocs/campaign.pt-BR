@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 1bf3c4b2d0c8d9b1bdbc82a9047c52c0d80cd997
+source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 43%
+source-wordcount: '1530'
+ht-degree: 37%
 
 ---
 
@@ -24,7 +24,7 @@ As principais etapas ao criar um delivery de uma só vez são:
 
 1. **Selecione a população alvo**. [Leia mais](#target-population)
 
-Em seguida, você pode preparar, testar, enviar e monitorar suas mensagens.
+Em seguida, você pode preparar, testar, enviar e monitorar suas mensagens com o Adobe Campaign.
 
 >[!NOTE]
 >
@@ -34,13 +34,14 @@ Em seguida, você pode preparar, testar, enviar e monitorar suas mensagens.
 
 Para criar um delivery, siga estas etapas:
 
-1. Clique em **[!UICONTROL Create]** acima da lista de entregas. Ao criar um novo delivery, você deve selecionar o canal de delivery. Para fazer isso, selecione o template de entrega apropriado na lista suspensa no campo **[!UICONTROL Delivery template]**.
+1. Navegue até a lista de entregas e clique em **[!UICONTROL Create]**.
+1. Selecione o canal de delivery. Para fazer isso, escolha o template de delivery apropriado na lista suspensa.
 
    ![](../send/assets/select-the-new-template.png)
 
-   Um modelo integrado é fornecido para cada canal que você instalou: correspondência direta, email, telefone, canal móvel (SMS), X (Twitter), etc. Os canais disponíveis na lista dependem do contrato de licença.
+   Um modelo integrado é fornecido para cada canal que você instalou: email, telefone, canais móveis (push/SMS), correspondência direta, X (Twitter) etc. Os canais disponíveis na lista dependem do contrato de licença.
 
-   Você poderá criar novos modelos de entrega para pré-configurar parâmetros específicos de acordo com suas necessidades. Para obter mais informações, consulte [esta seção](../send/create-templates.md).
+   Você pode criar novos templates do delivery para pré-configurar parâmetros específicos de acordo com suas necessidades.  [Saiba mais](../send/create-templates.md).
 
 1. Insira um nome para a entrega no campo **[!UICONTROL Label]**.
 
@@ -48,7 +49,7 @@ Para criar um delivery, siga estas etapas:
 
 1. (opcional) Adicione uma descrição no campo **[!UICONTROL Description]**.
 1. (opcional) Selecione a natureza do delivery no campo relevante. Essas informações são úteis para o rastreamento da entrega: você poderá filtrar com base nesse critério na lista de entrega ou criar consultas usando esse critério de seleção.
-1. Clique em **[!UICONTROL Continue]** para confirmar essas informações e exibir a janela de configuração de mensagem.
+1. Clique em **[!UICONTROL Continue]** para exibir a janela de conteúdo da mensagem.
 
 ## Definir o conteúdo do delivery {#content-of-the-delivery}
 
@@ -126,7 +127,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
    ![](assets/target-remove-criterion.png)
 
-#### Selecionar destinatários externos {#selecting-external-recipients}
+### Selecionar destinatários externos {#selecting-external-recipients}
 
 Você pode enviar mensagens para perfis que não estão armazenados no banco de dados, mas em um arquivo externo. Por exemplo, para enviar um delivery a recipients importados de um arquivo de texto, siga estas etapas:
 
@@ -141,25 +142,31 @@ Você pode enviar mensagens para perfis que não estão armazenados no banco de 
 
 >[!CAUTION]
 >
->Ao definir o conteúdo da mensagem para delivery de email, não inclua o link para a mirror page: ele não poderá ser gerado nesse modo de delivery.
+>Ao definir o conteúdo da mensagem para delivery de email para recipients externos, não inclua o link para a mirror page: ele não poderá ser gerado nesse modo de delivery.
 
-#### Definir configurações de exclusão {#define-exclusion-settings}
+### Configurações de exclusão {#define-exclusion-settings}
 
-Ao definir o target de uma entrega, a guia **[!UICONTROL Exclusions]** é usada para limitar o número de mensagens. Os parâmetros padrão são recomendados, mas você poderá adaptar as configurações dependendo das suas necessidades. No entanto, essas opções só devem ser alteradas por um usuário expert para evitar qualquer erro ou mau uso.
+Ao definir o [público de uma entrega](#target-population), a guia **[!UICONTROL Exclusions]** é usada para limitar o número de mensagens. Os parâmetros padrão são recomendados, mas você poderá adaptar as configurações dependendo das suas necessidades. No entanto, essas opções só devem ser alteradas por um usuário expert para evitar qualquer erro ou mau uso.
 
-Você poderá optar por excluir endereços que atingiram um determinado número de erros consecutivos ou cuja classificação de qualidade está abaixo de um limite especificado nessa janela. Você também poderá escolher se autoriza ou não endereços não qualificados para os quais nenhum dado foi retornado.
+>[!CAUTION]
+>
+>Como usuário especialista, em casos de uso específicos, você pode alterar essas configurações, mas o Adobe recomenda manter a configuração padrão.
 
-Clique no link **[!UICONTROL Edit...]** para modificar a configuração padrão.
+Você pode excluir endereços que atingiram um determinado número de erros consecutivos ou cuja classificação de qualidade está abaixo de um limite especificado nessa janela. Você também poderá escolher se autoriza ou não endereços não qualificados para os quais nenhum dado foi retornado.
+
+Para modificar a configuração padrão, clique no link **[!UICONTROL Edit...]**.
 
 ![](assets/target-exclusion-settings.png)
 
-As seguintes opções estão disponíveis:
++++ Ver opções disponíveis
 
 * **[!UICONTROL Exclude duplicate addresses during delivery]**: esta opção está ativa por padrão e remove endereços de email duplicados durante a entrega. A estratégia aplicada pode variar de acordo com a forma como o Adobe Campaign é usado e o tipo de dados no banco de dados. O valor da opção pode ser configurado para cada template de delivery.
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, destinatários cujos endereços de email estão na lista de bloqueios (“opt out”). Essa opção deve permanecer selecionada para observar a ética profissional de marketing eletrônico.
 * **[!UICONTROL Exclude quarantined recipients]**: essa opção permite excluir do público-alvo quaisquer perfis com um endereço que esteja em quarentena. É altamente recomendável manter essa opção selecionada. Saiba mais sobre gerenciamento de quarentena em [esta seção](../send/quarantines.md).
 * **[!UICONTROL Limit delivery]** para um determinado número de mensagens. Essa opção permite que você insira o número máximo de mensagens a serem enviadas. Se o público-alvo exceder o número de mensagens indicadas, uma seleção aleatória será aplicada ao público-alvo. Para enviar todas as mensagens, mantenha esse valor como &#39;0&#39;.
 * **[!UICONTROL Keep duplicate records (same identifier)]**: essa opção permite enviar várias entregas a destinatários que atendem a vários critérios de direcionamento.
++++
+
 
 ### Selecionar os destinatários das mensagens de prova {#select-the-proof-target}
 
