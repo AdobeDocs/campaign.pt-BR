@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
+source-git-commit: 55b752713a29c035680dd39e42422b1743e15269
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 37%
+source-wordcount: '1525'
+ht-degree: 36%
 
 ---
 
@@ -176,15 +176,12 @@ Uma prova é uma mensagem específica que permite testar uma mensagem antes de e
 
 Para obter mais informações sobre recipients de prova e envio, consulte [esta seção](../send/preview-and-proof.md#send-proofs).
 
-![](../send/assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#seeds-and-proofs-video)
-
 
 #### Tutorial em vídeo {#seeds-and-proofs-video}
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
-
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
@@ -200,7 +197,7 @@ Para fazer isso:
 
 >[!IMPORTANT]
 >
->As duas etapas acima DEVEM SER executadas após cada modificação no conteúdo da mensagem.
+>As duas etapas acima **devem ser** executadas após cada modificação no conteúdo da mensagem.
 
 
 ## Configurar e enviar a entrega {#configuring-and-sending-the-delivery}
