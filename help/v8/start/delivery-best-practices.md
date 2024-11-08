@@ -4,7 +4,7 @@ description: Saiba mais sobre as práticas recomendadas ao projetar e enviar del
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: b4fad76b43a77909a4ea2c0877527af80027681a
 workflow-type: tm+mt
 source-wordcount: '2869'
 ht-degree: 74%
@@ -117,7 +117,7 @@ Para obter mais informações sobre blocos de personalização, consulte [esta s
 
 Você pode preparar dados de personalização em um workflow para melhorar a análise de preparação de entrega. Isso deve ser usado se os dados de personalização vierem de uma tabela através do Federated Data Access (FDA). Esta opção está descrita nesta [seção](../send/personalization-data.md#optimize-personalization)
 
-### Criar conteúdo otimizado {#optimize-content}
+### Criar conteúdo otimizado {#build-optimized-content}
 
 Ao criar e-mails, lembre-se das práticas recomendadas gerais abaixo:
 
