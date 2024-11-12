@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: acb559c74aea3f59c05792b7596d0f85ff05047c
+source-git-commit: 5054dd1352972b402d54c1b51cfee1fb41ff4d1c
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 55%
+source-wordcount: '988'
+ht-degree: 51%
 
 ---
 
@@ -30,7 +30,7 @@ Um modelo pode incluir definições de configuração parciais ou completas, com
 
 ![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#delivery-template-video)
 
-No Adobe Campaign, você pode trabalhar com dois tipos de modelos:
+Os modelos de entrega são armazenados na pasta **[!UICONTROL Resources > Templates > Delivery templates]** do Explorer. No Adobe Campaign, você pode trabalhar com dois tipos de modelos:
 
 1. Modelos de entrega **internos** do Adobe Campaign - Os modelos internos estão disponíveis para cada canal. ELES NÃO DEVEM ser modificados nem excluídos. Eles incluem uma configuração básica para cada canal de delivery. Como Administrador, você pode definir valores padrão ou restringir determinadas funções aos usuários finais, como modificar os parâmetros de rastreamento, endereços de email de remetentes e muito mais. Os modelos incorporados aparecem em negrito na lista de modelos.
 
@@ -121,18 +121,19 @@ Selecione o template de entrega a ser usado e clique em **[!UICONTROL Ok]**.
 
 ### Executar um modelo {#execute-a-template}
 
-Você pode iniciar a execução de um template diretamente da lista de templates sem criar um delivery primeiro.
+Você pode iniciar a execução de um template diretamente da lista de templates sem criar uma entrega primeiro. O modelo de entrega pode ser executado manualmente, conforme detalhado abaixo, ou acionado por um evento (executado em um horário definido, quando um arquivo está disponível no servidor, etc.), conforme explicado em [esta seção](../../automation/workflow/deliveries.md).
 
-Para fazer isso, selecione o template a ser executado e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions>Execute the delivery template...]**.
+Para executar um template manualmente, siga estas etapas:
 
-Você também pode usar **[!UICONTROL File>Actions>Execute the delivery template...]**.
+1. Selecione o template a ser executado e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions>Execute the delivery template...]**.
 
-![](assets/execute-delivery-template.png)
+   Você também pode usar **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
-Insira os parâmetros de entrega e clique em **[!UICONTROL Send]**.
+   ![](assets/execute-delivery-template.png)
+
+1. Insira os parâmetros de entrega e clique em **[!UICONTROL Send]**.
 
 Essa ação gera um delivery na pasta associada ao template. O nome dessa entrega é o nome do template de entrega do qual foi criado.
-
 
 ## Tutoriais em vídeo {#delivery-template-video}
 
