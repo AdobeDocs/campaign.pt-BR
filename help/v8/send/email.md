@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
+source-git-commit: 578f774152afbd42342da0f161b679ba9dd10c78
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 22%
+source-wordcount: '528'
+ht-degree: 21%
 
 ---
 
 # Criar e enviar emails
 
-Os deliveries de email permitem enviar emails personalizados para a população do target. [Saiba mais](../send/send.md)
+Com o Adobe Campaign, crie deliveries de email para enviar emails personalizados para a população do target. [Saiba mais](../send/send.md)
 
 Saiba mais sobre as principais etapas para criar e configurar uma entrega em [esta página](../start/create-message.md).
 
@@ -85,15 +85,16 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 Seu primeiro delivery de email está pronto. Agora é necessário definir o público-alvo, validar o delivery e enviá-lo.
 
-Saiba como importar um conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Saiba como criar um fluxo de trabalho para importar um conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
 
-Saiba mais nas seguintes seções:
-
-<!--[Design an email in Campaign]-->
-* [Criar e usar um modelo de email](../send/create-templates.md)
-* [Selecionar a audiência do seu email](../audiences/gs-audiences.md)
-* [Validar um delivery e enviar provas](preview-and-proof.md)
-* [Configurar e enviar a entrega](configure-and-send.md)
+>[!MORELIKETHIS]
+>
+>* [Criar uma entrega](../start/create-message.md)
+>* [Criar e usar um modelo de email](create-templates.md)
+>* [Selecione a audiência do seu email](../audiences/gs-audiences.md)
+>* [Validar uma entrega e enviar provas](preview-and-proof.md)
+>* [Configurar e enviar a entrega](configure-and-send.md)
+>* [Práticas recomendadas de entrega](../start/delivery-best-practices.md)
 
 ## Testar e validar seus emails
 
