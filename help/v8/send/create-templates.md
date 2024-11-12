@@ -6,9 +6,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 5054dd1352972b402d54c1b51cfee1fb41ff4d1c
+source-git-commit: 9f19d5c9836c21cea7b4b55241f828e295831339
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '989'
 ht-degree: 51%
 
 ---
@@ -121,7 +121,7 @@ Selecione o template de entrega a ser usado e clique em **[!UICONTROL Ok]**.
 
 ### Executar um modelo {#execute-a-template}
 
-Você pode iniciar a execução de um template diretamente da lista de templates sem criar uma entrega primeiro. O modelo de entrega pode ser executado manualmente, conforme detalhado abaixo, ou acionado por um evento (executado em um horário definido, quando um arquivo está disponível no servidor, etc.), conforme explicado em [esta seção](../../automation/workflow/deliveries.md).
+Você pode iniciar a execução de um template diretamente da lista de templates sem criar uma entrega primeiro. O modelo de entrega pode ser executado manualmente, conforme detalhado abaixo, ou acionado por um evento (executado em um horário definido, quando um arquivo está disponível no servidor, etc.), conforme explicado em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
 
 Para executar um template manualmente, siga estas etapas:
 
