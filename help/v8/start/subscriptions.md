@@ -5,14 +5,14 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 28%
 
 ---
 
-# Gerenciar assinaturas e cancelamentos de assinaturas{#optin-optout}
+# Gerenciar assinaturas e cancelamentos de assinaturas {#optin-optout}
 
 Use o Adobe Campaign para criar e monitorar seus serviços de informações, como boletins informativos, e gerenciar as assinaturas/cancelamentos de assinaturas desses serviços. Vários serviços podem ser definidos em paralelo, por exemplo: boletins informativos especializados para determinadas categorias de produtos, temas ou áreas de um site, subscrições a vários tipos de mensagens de alerta e notificações em tempo real.
 

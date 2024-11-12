@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 12de29e15d660cd5a40cda059fc19e45311fe312
+source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 51%
+source-wordcount: '990'
+ht-degree: 50%
 
 ---
 
@@ -38,7 +38,7 @@ Os modelos de entrega são armazenados na pasta **[!UICONTROL Resources > Templa
 
 >[!NOTE]
 >
->Os templates disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de entrega para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Outros modelos não estão visíveis neste contexto. Para obter mais informações, consulte [Selecionar um target mapping](../audiences/target-mappings.md) e [Serviços e subscrições](../start/subscriptions.md).
+>Os templates disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de entrega para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Outros modelos não estão visíveis neste contexto. Para obter mais informações, consulte [Trabalhar com mapeamentos de destino](../audiences/target-mappings.md) e [Gerenciar assinaturas e cancelar assinaturas](../start/subscriptions.md).
 
 
 ## Criar um modelo {#create-a-delivery-template}
