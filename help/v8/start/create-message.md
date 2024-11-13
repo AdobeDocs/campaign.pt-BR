@@ -5,16 +5,16 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 55b752713a29c035680dd39e42422b1743e15269
+source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1523'
 ht-degree: 36%
 
 ---
 
 # Criar a primeira entrega {#create-a-msg}
 
-Nesta página, você aprenderá a criar uma única entrega de uma só vez. Você pode criar outros tipos de deliveries para atender aos seus casos de uso. Saiba mais sobre os diferentes tipos de entregas e como criá-los em [esta página](gs-message.md).
+Nesta página, saiba como criar uma única entrega de uma só vez. Você pode criar outros tipos de deliveries para criar seus casos de uso. Saiba mais sobre os diferentes tipos de entregas e como criá-los em [esta página](gs-message.md).
 
 As principais etapas ao criar um delivery de uma só vez são:
 
