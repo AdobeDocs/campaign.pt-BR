@@ -8,7 +8,7 @@ exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
 source-git-commit: 8d6c3e03f9b7533f7f325b755e3b6d4f74b63a8d
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -78,9 +78,9 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    ![](assets/campaign-dashboard.png)
 
-   Saiba como criar e iniciar entregas de campanha de marketing [nesta página](../../automation/campaigns/marketing-campaign-deliveries.md).
+   Saiba como criar e iniciar entregas de campanhas de marketing [nesta página](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-   Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama etc. Saiba mais sobre documentos associados em [esta página](../../automation/campaigns/marketing-campaign-assets.md).
+   Você pode associar vários documentos a uma campanha: relatório, foto, página da web, diagrama etc. Saiba mais sobre documentos associados [nesta página](../../automation/campaigns/marketing-campaign-assets.md).
 
 1. **Configurar o processo de aprovação**
 
@@ -91,7 +91,7 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
 ## Complemento de marketing distribuído{#distributed-marketing-add-on}
 
-O Adobe Campaign oferece um complemento de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (lojas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado, conhecido como **[!UICONTROL List of campaign packages]**, no qual modelos de campanha criados centralmente são oferecidos a entidades locais.
+O Adobe Campaign oferece um complemento de **marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (lojas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado, conhecido como **[!UICONTROL List of campaign packages]**, no qual modelos de campanha criados centralmente são oferecidos a entidades locais.
 
 >[!NOTE]
 >

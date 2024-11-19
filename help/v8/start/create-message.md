@@ -8,74 +8,74 @@ exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
 workflow-type: tm+mt
 source-wordcount: '1523'
-ht-degree: 36%
+ht-degree: 98%
 
 ---
 
 # Criar a primeira entrega {#create-a-msg}
 
-Nesta página, saiba como criar uma única entrega de uma só vez. Você pode criar outros tipos de deliveries para criar seus casos de uso. Saiba mais sobre os diferentes tipos de entregas e como criá-los em [esta página](gs-message.md).
+Nesta página, saiba como criar uma única entrega de uma só vez. Você pode criar outros tipos de deliveries para criar seus casos de uso. Saiba mais sobre os diferentes tipos de entregas e como criá-las [nesta página](gs-message.md).
 
-As principais etapas ao criar um delivery de uma só vez são:
+Estas são as principais etapas para criar uma entrega única:
 
-1. **Criar uma nova entrega**. [Leia mais](#create-the-delivery)
+1. **Crie uma nova entrega**.  [Leia mais](#create-the-delivery)
 
 1. **Defina o conteúdo da entrega**. [Leia mais](#content-of-the-delivery)
 
-1. **Selecione a população alvo**. [Leia mais](#target-population)
+1. **Selecione a população do público-alvo**. [Leia mais](#target-population)
 
 Em seguida, você pode preparar, testar, enviar e monitorar suas mensagens com o Adobe Campaign.
 
 >[!NOTE]
 >
->As etapas descritas nesta seção pressupõem que todos os recipients do target e seus perfis estejam armazenados no banco de dados, exceto no caso de delivery externo. Consulte [Seleção de destinatários externos](#selecting-external-recipients).
+>As etapas descritas nesta seção pressupõem que todos os destinatários e seus perfis estejam armazenados no banco de dados, exceto no caso de entregas externas. Consulte [Selecionar destinatários externos](#selecting-external-recipients).
 
 ## Criar a entrega {#create-the-delivery}
 
-Para criar um delivery, siga estas etapas:
+Para criar uma entrega, siga estas etapas:
 
 1. Navegue até a lista de entregas e clique em **[!UICONTROL Create]**.
-1. Selecione o canal de delivery. Para fazer isso, escolha o template de delivery apropriado na lista suspensa.
+1. Selecione o canal de entrega. Para fazer isso, selecione o modelo de entrega apropriado na lista suspensa.
 
    ![](../send/assets/select-the-new-template.png)
 
-   Um modelo integrado é fornecido para cada canal que você instalou: email, telefone, canais móveis (push/SMS), correspondência direta, X (Twitter) etc. Os canais disponíveis na lista dependem do contrato de licença.
+   Um modelo integrado é fornecido para cada canal instalado: email, telefone, canais móveis (push/SMS), correspondência direta, X (Twitter) etc. Os canais disponíveis na lista dependem do contrato de licença.
 
-   Você pode criar novos templates do delivery para pré-configurar parâmetros específicos de acordo com suas necessidades.  [Saiba mais](../send/create-templates.md).
+   Você pode criar novos modelos de entrega para pré-configurar parâmetros específicos que atendam às suas necessidades.  [Saiba mais](../send/create-templates.md).
 
 1. Insira um nome para a entrega no campo **[!UICONTROL Label]**.
 
-   (opcional) Um código de delivery também pode ser atribuído ao delivery. O nome do delivery e seu código estão visíveis na lista de deliveries, mas não estão expostos aos recipients.
+   (opcional) Também é possível atribuir um código à entrega. O nome da entrega e seu código ficam visíveis na lista de entregas, mas não aparecem para os destinatários.
 
 1. (opcional) Adicione uma descrição no campo **[!UICONTROL Description]**.
-1. (opcional) Selecione a natureza do delivery no campo relevante. Essas informações são úteis para o rastreamento da entrega: você poderá filtrar com base nesse critério na lista de entrega ou criar consultas usando esse critério de seleção.
+1. (opcional) Selecione a natureza da entrega no campo relevante. Essas informações são úteis para o rastreamento da entrega: você poderá filtrar com base nesse critério na lista de entrega ou criar consultas usando esse critério de seleção.
 1. Clique em **[!UICONTROL Continue]** para exibir a janela de conteúdo da mensagem.
 
-## Definir o conteúdo do delivery {#content-of-the-delivery}
+## Definir o conteúdo da entrega {#content-of-the-delivery}
 
 O conteúdo da entrega está pronto para ser configurado. A definição do conteúdo da entrega é específica para cada canal. Para obter mais informações, consulte a seção dedicada:
 
 * [Definir o conteúdo do email](../send/email.md)
 * [Definir o conteúdo do SMS](../send/sms/sms-content.md)
 * [Definir o conteúdo da correspondência direta](../send/direct-mail.md)
-* [Desativar o conteúdo da notificação por push](../send/push.md)
+* [Definir o conteúdo da notificação por push](../send/push.md)
 
 
 ## Definir o público-alvo {#target-population}
 
-Para cada delivery, você poderá definir vários tipos de públicos-alvo:
+Em cada entrega, é possível definir vários tipos de públicos-alvo:
 
-* **Público principal**: perfis que recebem mensagens. [Saiba mais](#select-the-main-target)
-* **Destino da prova**: perfis que recebem mensagens de prova. Uma prova é uma mensagem especial com a qual é possível testar um delivery antes de enviá-lo ao público alvo principal. [Saiba mais](#select-the-proof-target)
+* **Público-alvo principal**: perfis que recebem mensagens. [Saiba mais](#select-the-main-target)
+* **Público-alvo de prova**: perfis que recebem mensagens de prova. Uma prova é uma mensagem especial que permite testar uma entrega antes de enviá-la ao público alvo principal. [Saiba mais](#select-the-proof-target)
 
 Além disso, no contexto de uma campanha de marketing, você pode adicionar:
 
-* **Seed addresses**: destinatários que estão fora do destino da entrega, mas recebem a entrega. [Saiba mais](../audiences/test-profiles.md)
-* **Grupos de controle**: população que não recebe a entrega, usada para rastrear o comportamento e o impacto da campanha. [Saiba mais](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
+* **Seed addresses**: destinatários não incluídos no público-alvo da entrega, mas que a recebem. [Saiba mais](../audiences/test-profiles.md)
+* **Grupos de controle**: população que não recebe a entrega; usados para monitorar o comportamento e o impacto da campanha. [Saiba mais](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
 ### Selecionar os principais destinatários da entrega {#select-the-main-target}
 
-Na maioria dos casos, o público-alvo principal é extraído do banco de dados do Adobe Campaign (modo padrão). No entanto, os destinatários também podem ser armazenados em um [arquivo externo](#selecting-external-recipients).
+Na maioria dos casos, o público-alvo principal é extraído do banco de dados do Adobe Campaign (modo padrão). No entanto, destinatários também podem ser armazenados em um [arquivo externo](#selecting-external-recipients).
 
 Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
@@ -89,19 +89,19 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
    ![](assets/target-type.png){width="60%" align="left" zoomable="yes"}
 
-   Selecione um tipo de filtro e clique em **[!UICONTROL Next]** para definir as condições. Você pode exibir os destinatários filtrados na guia **[!UICONTROL Preview]**. Dependendo do tipo de target, o botão **[!UICONTROL Refine target]** permite combinar vários critérios de definição do target.
+   Selecione um tipo de filtro e clique em **[!UICONTROL Next]** para definir as condições. Você pode exibir os destinatários filtrados na guia **[!UICONTROL Preview]**. De acordo com o tipo de público-alvo, o botão **[!UICONTROL Refine target]** permite combinar vários critérios de direcionamento.
 
-   Os seguintes tipos de target estão disponíveis:
+   Os seguintes tipos de público-alvo estão disponíveis:
 
-   * **[!UICONTROL Filtering conditions]**: use esta opção para definir uma consulta e exibir o resultado. Saiba como criar uma consulta em [esta seção](../../automation/workflow/query.md).
-   * **[!UICONTROL A list of recipients]**: use essa opção para direcionar a uma lista de perfis. Saiba mais sobre listas em [esta seção](../audiences/create-audiences.md).
+   * **[!UICONTROL Filtering conditions]**: use esta opção para definir uma consulta e exibir o resultado. Saiba como criar uma consulta [nesta seção](../../automation/workflow/query.md).
+   * **[!UICONTROL A list of recipients]**: use essa opção para direcionar uma lista de perfis. Saiba mais sobre listas [nesta seção](../audiences/create-audiences.md).
    * **[!UICONTROL A recipient]**: use esta opção para selecionar um perfil específico no banco de dados.
-   * **[!UICONTROL Recipients included in a folder]**: use esta opção para direcionar todos os perfis contidos em uma pasta específica.
-   * **[!UICONTROL Recipients of a delivery]**: use essa opção para criar o público alvo dos recipients de uma entrega. Você deverá selecionar a entrega na lista:
+   * **[!UICONTROL Recipients included in a folder]**: use esta opção para direcionar todos os perfis de uma pasta específica.
+   * **[!UICONTROL Recipients of a delivery]**: use esta opção para criar o público-alvo a partir dos destinatários de uma entrega. Você deverá selecionar a entrega na lista:
 
      ![](assets/target-recipient-delivery.png)
 
-   * **[!UICONTROL Delivery recipients belonging to a folder]**: use essa opção para criar o público-alvo a partir das entregas de recipients incluídos em uma pasta específica.
+   * **[!UICONTROL Delivery recipients belonging to a folder]**: use esta opção para criar o público-alvo a partir das entregas de destinatários incluídos em uma pasta específica.
 
      ![](assets/target-delivery-folder.png)
 
@@ -113,14 +113,14 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
      >
      >A opção **[!UICONTROL Include sub-folders]** também permite direcionar as entregas contidas nas pastas localizadas na estrutura de árvore abaixo do nó selecionado.
 
-   * **[!UICONTROL Subscribers of an information service]**: esta opção permite que você selecione um boletim informativo ao qual os destinatários devem ser inscritos para receberem a entrega que está sendo criada.
+   * **[!UICONTROL Subscribers of an information service]**: esta opção permite selecionar um boletim informativo no qual os destinatários devem ser inscritos para receberem a entrega que está sendo criada.
 
      ![](assets/target-service.png)
 
-   * **[!UICONTROL User filters]**: essa opção permite que você acesse os filtros pré-configurados para usá-los como critérios de filtragem para perfis no banco de dados. Os filtros pré-configurados são apresentados [nesta seção](../audiences/create-filters.md#default-filters).
-   * A opção **[!UICONTROL Exclude recipients from this segment]** permite apontar os recipients que não atendem aos critérios de target definidos. Para usar essa opção, selecione a caixa apropriada e, em seguida, aplique o direcionamento, conforme definido anteriormente, para excluir os perfis resultantes.
+   * **[!UICONTROL User filters]**: esta opção permite acessar os filtros pré-configurados para usar como critérios de filtragem de perfis no banco de dados. Os filtros pré-configurados são apresentados [nesta seção](../audiences/create-filters.md#default-filters).
+   * A opção **[!UICONTROL Exclude recipients from this segment]** permite direcionar destinatários que não atendem aos critérios definidos. Para usar essa opção, selecione a caixa apropriada e, em seguida, aplique o direcionamento, conforme definido anteriormente, para excluir os perfis resultantes.
 
-1. Insira um nome para esse direcionamento no campo **[!UICONTROL Label]**. Por padrão, o rótulo é o do primeiro critério de direcionamento. Ao combinar os critérios de filtragem, é recomendável usar um nome explícito.
+1. Insira um nome para esse direcionamento no campo **[!UICONTROL Label]**. Por padrão, será utilizado o rótulo do primeiro critério de direcionamento. Ao combinar critérios de filtragem, é recomendável usar um nome explícito.
 1. Clique em **[!UICONTROL Finish]** para validar as opções de direcionamento.
 
    Os critérios de definição do target definidos são resumidos na seção central da guia de configuração do target principal. Clique em um critério para exibir seu conteúdo (configuração e visualização). Para excluir um critério, clique na cruz localizada depois de seu rótulo.
@@ -129,52 +129,52 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
 ### Selecionar destinatários externos {#selecting-external-recipients}
 
-Você pode enviar mensagens para perfis que não estão armazenados no banco de dados, mas em um arquivo externo. Por exemplo, para enviar um delivery a recipients importados de um arquivo de texto, siga estas etapas:
+É possível enviar mensagens para perfis que não estão armazenados no banco de dados, mas que estão em um arquivo externo. Por exemplo, para enviar uma entrega para destinatários importados de um arquivo de texto, siga estas etapas:
 
 1. Clique no link **[!UICONTROL To]** para selecionar os destinatários da sua entrega.
 1. Selecione a opção **[!UICONTROL Defined in an external file]**.
-1. Selecione o arquivo que contém os recipients.
+1. Selecione o arquivo que contém os destinatários.
 1. Ao importar os destinatários, clique no link **[!UICONTROL File format definition...]** para selecionar e configurar o arquivo externo.
 
-   Para obter mais informações sobre importação de dados, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
+   Para obter mais informações sobre importação de dados, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
 
 1. Clique em **[!UICONTROL Finish]** e configure sua entrega como uma entrega padrão.
 
 >[!CAUTION]
 >
->Ao definir o conteúdo da mensagem para delivery de email para recipients externos, não inclua o link para a mirror page: ele não poderá ser gerado nesse modo de delivery.
+>Ao definir o conteúdo da mensagem para enviar por email a destinatários externos, não inclua o link para a mirror page: ele não pode ser gerado neste modo de entrega.
 
 ### Configurações de exclusão {#define-exclusion-settings}
 
-Ao definir o [público de uma entrega](#target-population), a guia **[!UICONTROL Exclusions]** é usada para limitar o número de mensagens. Os parâmetros padrão são recomendados, mas você poderá adaptar as configurações dependendo das suas necessidades. No entanto, essas opções só devem ser alteradas por um usuário expert para evitar qualquer erro ou mau uso.
+Ao definir o [público-alvo de uma entrega](#target-population), utilize a guia **[!UICONTROL Exclusions]** para limitar o número de mensagens. Os parâmetros padrão são recomendados, mas você poderá adaptar as configurações dependendo das suas necessidades. No entanto, essas opções só devem ser alteradas por um usuário expert para evitar qualquer erro ou mau uso.
 
 >[!CAUTION]
 >
->Como usuário especialista, em casos de uso específicos, você pode alterar essas configurações, mas o Adobe recomenda manter a configuração padrão.
+>Em casos de uso específicos, usuários especialistas podem alterar essas configurações, mas a Adobe recomenda manter a configuração padrão.
 
-Você pode excluir endereços que atingiram um determinado número de erros consecutivos ou cuja classificação de qualidade está abaixo de um limite especificado nessa janela. Você também poderá escolher se autoriza ou não endereços não qualificados para os quais nenhum dado foi retornado.
+Você pode excluir endereços que geraram um certo número de erros consecutivos ou cuja classificação de qualidade esteja abaixo de um limite especificado nesta janela. Também é possível escolher se você autoriza ou não endereços não qualificados para os quais nenhum dado foi retornado.
 
 Para modificar a configuração padrão, clique no link **[!UICONTROL Edit...]**.
 
 ![](assets/target-exclusion-settings.png)
 
-+++ Ver opções disponíveis
++++ Veja as opções disponíveis
 
-* **[!UICONTROL Exclude duplicate addresses during delivery]**: esta opção está ativa por padrão e remove endereços de email duplicados durante a entrega. A estratégia aplicada pode variar de acordo com a forma como o Adobe Campaign é usado e o tipo de dados no banco de dados. O valor da opção pode ser configurado para cada template de delivery.
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, destinatários cujos endereços de email estão na lista de bloqueios (“opt out”). Essa opção deve permanecer selecionada para observar a ética profissional de marketing eletrônico.
-* **[!UICONTROL Exclude quarantined recipients]**: essa opção permite excluir do público-alvo quaisquer perfis com um endereço que esteja em quarentena. É altamente recomendável manter essa opção selecionada. Saiba mais sobre gerenciamento de quarentena em [esta seção](../send/quarantines.md).
-* **[!UICONTROL Limit delivery]** para um determinado número de mensagens. Essa opção permite que você insira o número máximo de mensagens a serem enviadas. Se o público-alvo exceder o número de mensagens indicadas, uma seleção aleatória será aplicada ao público-alvo. Para enviar todas as mensagens, mantenha esse valor como &#39;0&#39;.
-* **[!UICONTROL Keep duplicate records (same identifier)]**: essa opção permite enviar várias entregas a destinatários que atendem a vários critérios de direcionamento.
+* **[!UICONTROL Exclude duplicate addresses during delivery]**: esta opção está ativa por padrão e remove endereços de email duplicados durante a entrega. A estratégia aplicada pode variar de acordo com a maneira como o Adobe Campaign é utilizado e o tipo de dados no banco de dados. É possível configurar o valor dessa opção para cada modelo de entrega.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, destinatários cujos endereços de email estão na lista de bloqueios (“opt out”). Esta opção deve permanecer selecionada para cumprir a ética profissional de marketing digital.
+* **[!UICONTROL Exclude quarantined recipients]**: esta opção permite excluir do público-alvo alvo qualquer perfil que contenha um endereço em quarentena. É altamente recomendável manter essa opção selecionada. Saiba mais sobre o gerenciamento de quarentena [nesta seção](../send/quarantines.md).
+* **[!UICONTROL Limit delivery]** para um determinado número de mensagens. Essa opção permite que você insira o número máximo de mensagens a serem enviadas. Se o público-alvo exceder o número de mensagens indicado, uma seleção aleatória será aplicada a ele. Para enviar todas as mensagens, mantenha este valor definido como “0”.
+* **[!UICONTROL Keep duplicate records (same identifier)]**: esta opção permite enviar múltiplas entregas para destinatários que atendem a vários critérios de direcionamento.
 +++
 
 
 ### Selecionar os destinatários das mensagens de prova {#select-the-proof-target}
 
-Para deliveries de email, você pode enviar provas para validar o conteúdo da mensagem. O envio de provas permite a verificação do link de opção de não participação, a mirror page e quaisquer outros links, validação da mensagem, verificação da exibição das imagens, detecção de possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
+Para entregas de email, é possível enviar provas para validar o conteúdo da mensagem. O envio de provas permite a verificação do link de opção de não participação, a mirror page e quaisquer outros links, validação da mensagem, verificação da exibição das imagens, detecção de possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
 
-Uma prova é uma mensagem específica que permite testar uma mensagem antes de enviá-la para o público-alvo principal. Os recipients da prova são responsáveis pela aprovação da mensagem: renderização, conteúdo, configurações de personalização e configuração.
+Uma prova é uma mensagem específica que permite testar uma mensagem antes de enviá-la ao público-alvo principal. Os destinatários da prova são responsáveis pela aprovação da mensagem: renderização, conteúdo, configurações de personalização, configuração.
 
-Para obter mais informações sobre recipients de prova e envio, consulte [esta seção](../send/preview-and-proof.md#send-proofs).
+Para obter mais informações sobre destinatários e envio de provas, consulte [esta seção](../send/preview-and-proof.md#send-proofs).
 
 
 #### Tutorial em vídeo {#seeds-and-proofs-video}
@@ -185,7 +185,7 @@ Este vídeo mostra como adicionar seeds e provas a um email existente e o proced
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
-## Preparar e validar o delivery {#validate-the-delivery}
+## Preparar e validar a entrega {#validate-the-delivery}
 
 Quando uma entrega for criada e configurada, você deverá validá-la antes de enviá-la para o target principal.
 
@@ -197,11 +197,11 @@ Para fazer isso:
 
 >[!IMPORTANT]
 >
->As duas etapas acima **devem ser** executadas após cada modificação no conteúdo da mensagem.
+>As duas etapas acima **devem ser** executadas após cada modificação realizada no conteúdo da mensagem.
 
 
 ## Configurar e enviar a entrega {#configuring-and-sending-the-delivery}
 
-Acesse os parâmetros de delivery para definir mais configurações e definir como enviar suas mensagens. Você pode definir a prioridade do delivery, configurar o envio de ondas, definir as configurações de nova tentativa e testar o envio do delivery. Quando essa configuração estiver concluída, você poderá confirmar o envio. As mensagens são enviadas imediatamente ou com base no cronograma de delivery.
+Acesse os parâmetros de entrega para ajustar mais configurações e definir como enviar as mensagens. Você pode definir a prioridade de entrega, configurar ondas de envio, definir as configurações de novas tentativas e testar o envio da entrega. Após a conclusão dessa configuração, será possível confirmar o envio. As mensagens são enviadas imediatamente ou com base no cronograma da entrega.
 
-Saiba como definir as configurações de entrega em [esta página](../send/configure-and-send.md).
+Saiba como definir as configurações de entrega [nesta página](../send/configure-and-send.md).
