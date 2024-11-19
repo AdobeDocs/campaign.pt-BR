@@ -6,16 +6,20 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
+source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 31%
+source-wordcount: '214'
+ht-degree: 30%
 
 ---
 
 # Atualizações da documentação {#latest-updates}
 
 Esta página lista todas as atualizações mais recentes na documentação do [!DNL Campaign] v8 (console).
+
+## Novembro de 2024 {#october-2024}
+
+O fluxo de trabalho **ffdaUnsubscribe** foi adicionado à lista de fluxos de trabalho técnicos.[Leia mais](../../automation/workflow/technical-workflows.md)
 
 ## Junho de 2024 {#june-2024}
 
