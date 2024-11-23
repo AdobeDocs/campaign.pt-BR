@@ -6,9 +6,9 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '226'
 ht-degree: 30%
 
 ---
@@ -19,7 +19,8 @@ Esta página lista todas as atualizações mais recentes na documentação do [!
 
 ## Novembro de 2024 {#october-2024}
 
-O fluxo de trabalho **ffdaUnsubscribe** foi adicionado à lista de fluxos de trabalho técnicos.[Leia mais](../../automation/workflow/technical-workflows.md)
+* O fluxo de trabalho **ffdaUnsubscribe** foi adicionado à lista de fluxos de trabalho técnicos. [Leia mais](../../automation/workflow/technical-workflows.md)
+* A página sobre versões e atualizações do Campaign foi aprimorada. [Leia mais](upgrades.md)
 
 ## Junho de 2024 {#june-2024}
 

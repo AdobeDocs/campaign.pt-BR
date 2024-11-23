@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 66%
+source-wordcount: '1188'
+ht-degree: 68%
 
 ---
 
 # Configurar e enviar a entrega {#configure-delivery}
 
-Acesse os parâmetros de delivery para definir mais configurações e definir como enviar suas mensagens. Você pode definir a entrega [prioridade](#delivery-priority), configurar [ondas](#sending-using-multiple-waves) e testar o envio da entrega. Quando esta configuração estiver concluída, você poderá confirmar o envio conforme descrito em [esta seção](#confirm-delivery). As mensagens são enviadas imediatamente ou de acordo com a [programação](#schedule-delivery-sending) de entrega.
+Acesse os parâmetros de entrega para ajustar mais configurações e definir como enviar as mensagens. Você pode definir a entrega [prioridade](#delivery-priority), configurar [ondas](#sending-using-multiple-waves) e testar o envio da entrega. Quando esta configuração estiver concluída, você poderá confirmar o envio conforme descrito em [esta seção](#confirm-delivery). As mensagens são enviadas imediatamente ou de acordo com a [programação](#schedule-delivery-sending) de entrega.
 
 ## Definir parâmetros adicionais {#delivery-additional-parameters}
 
@@ -126,7 +126,7 @@ Para fazer isso, siga as etapas abaixo.
 
 1. Clique em **[!UICONTROL Send]** e selecione a ação desejada.
 
-   * Para enviar a entrega imediatamente, selecione [**Enviar assim que possível**].
+   * Para enviar a entrega imediatamente, selecione **[!UICONTROL Deliver as soon as possible]**.
    * Para agendar o envio para uma data posterior, selecione **[!UICONTROL Postpone the delivery]**. [Saiba mais](#schedule-delivery-sending)
 
 1. Clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [esta seção](delivery-analysis.md).

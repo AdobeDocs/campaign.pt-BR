@@ -5,10 +5,10 @@ description: Saiba mais sobre a atividade de workflow de entrega recorrente
 feature: Workflows
 role: User, Data Engineer
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 96%
+source-wordcount: '257'
+ht-degree: 86%
 
 ---
 
@@ -40,7 +40,7 @@ Uma **entrega recorrente** criará uma nova instância de entrega toda vez que f
 
 ![Entrega recorrente](assets/delivery_recurring.jpg)
 
-Se desejar impedir a execução de uma entrega recorrente, cancele completamente a campanha ou interrompa a execução do fluxo de trabalho. Parar a entrega no painel do Campaign só interromperá a ocorrência da entrega: as próximas instâncias da entrega recorrente continuarão sendo criadas em cada execução de fluxo de trabalho.
+Se desejar impedir a execução de uma entrega recorrente, cancele completamente a campanha ou interrompa a execução do fluxo de trabalho. Parar o delivery no painel do Campaign só interrompe a ocorrência do delivery: as próximas instâncias do delivery recorrente continuarão sendo criadas em cada execução de fluxo de trabalho.
 
 >[!NOTE]
 >
