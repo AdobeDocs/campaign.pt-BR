@@ -6,15 +6,15 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Criar a primeira entrega {#create-a-msg}
 
-Nesta página, saiba como criar uma única entrega de uma só vez. Você pode criar outros tipos de deliveries para criar seus casos de uso. Saiba mais sobre os diferentes tipos de entregas e como criá-las [nesta página](gs-message.md).
+Nesta página, aprenda a criar uma entrega única. É possível criar outros tipos de entregas para construir os seus casos de uso. Saiba mais sobre os diferentes tipos de entregas e como criá-las [nesta página](gs-message.md).
 
 Estas são as principais etapas para criar uma entrega única:
 
