@@ -5,48 +5,41 @@ description: Saiba mais sobre os workflows técnicos disponíveis com o Campaign
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
+source-git-commit: 97ab8259c0044b65fec2ad5ddc44d28f0cbf65e5
 workflow-type: tm+mt
-source-wordcount: '1799'
-ht-degree: 84%
+source-wordcount: '1804'
+ht-degree: 80%
 
 ---
 
 # Workflows técnicos{#about-technical-workflows}
 
-O Adobe Campaign vem com um conjunto de workflows técnicos incorporados. Eles gerenciam operações e tarefas agendadas para execução periódica no servidor. Eles permitem realizar a manutenção no banco de dados, encaminhar as informações de rastreamento sobre os deliveries ou configurar processos provisionais nos deliveries. Os workflows técnicos são configurados por meio do nó **[!UICONTROL Administration > Production > Technical workflows]**.
-
-![](assets/navtree.png)
-
-Templates nativos estão disponíveis para criar workflows técnicos. Eles podem ser configurados para atender às suas necessidades.
-
-A subpasta **[!UICONTROL Campaign process]** centraliza os fluxos de trabalho necessários para executar processos nas campanhas: notificação de tarefa, gestão de estoque, cálculo de custos, etc.
-
-![](assets/campaign-processes-wf.png)
-
-
->[!NOTE]
->
->A lista de workflows técnicos instalados com cada módulo está disponível em uma [seção dedicada](technical-workflows.md).
-
-Você pode criar outros workflows técnicos no nó **[!UICONTROL Administration > Production > Technical workflows]** da estrutura da árvore. No entanto, essa função é reservada para usuários avançados.
-
-As atividades oferecidas são as mesmas para os workflows para construção do target. [Saiba mais](targeting-workflows.md)
-
-Os fluxos de trabalho detalhados nesta seção são instalados com os diferentes pacotes integrados do Adobe Campaign. Esses pacotes e os workflows técnicos relacionados dependem do contrato de licença.
+O Adobe Campaign vem com um conjunto de workflows técnicos incorporados. Eles controlam operações e tarefas agendadas para execução periódica no servidor. Os workflows técnicos executam operações de manutenção no banco de dados do Campaign, gerenciam dados de rastreamento em deliveries e também configuram processos provisionais em deliveries.
 
 Por padrão, os fluxos de trabalho técnicos estão disponíveis em uma subpasta do seguinte nó **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-Observe que os workflows técnicos só podem ser iniciados e modificados por operadores com permissões de Administração.
+![](assets/navtree.png){width="50%" align="center" zoomable="yes"}
 
 >[!NOTE]
 >
->Os fluxos de trabalho técnicos relacionados ao complemento Centro de Mensagens estão disponíveis por padrão no nó **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**.
+>* A lista de fluxos de trabalho técnicos instalados com cada módulo está disponível em uma [esta seção](#list-technical-workflows).
+>
+>* Os fluxos de trabalho técnicos relacionados ao complemento do Centro de Mensagens são armazenados por padrão no nó **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**.
 
-Saiba como monitorar workflows técnicos nesta [seção dedicada](monitor-technical-workflows.md).
+A subpasta **[!UICONTROL Campaign process]** centraliza os fluxos de trabalho necessários para executar processos nas campanhas: notificação de tarefa, gestão de estoque, cálculo de custos, etc.
 
+![](assets/campaign-processes-wf.png){width="70%" align="center" zoomable="yes"}
+
+
+## Gerenciar e criar workflows técnicos {#manage-tech-workflows}
+
+Os fluxos de trabalho técnicos do Campaign só podem ser iniciados e modificados por operadores com permissões de **Administração**. Saiba como monitorar workflows técnicos nesta [seção dedicada](monitor-technical-workflows.md).
+
+Você pode criar fluxos de trabalho técnicos personalizados no nó **[!UICONTROL Administration > Production > Technical workflows]** da estrutura da árvore. Templates nativos estão disponíveis para criar workflows técnicos. Eles podem ser configurados para atender às suas necessidades. No entanto, esse processo é reservado para usuários especialistas. As atividades disponíveis em workflows técnicos são as mesmas para workflows para construção do target. [Saiba mais](targeting-workflows.md).
 
 ## Lista de workflows técnicos {#list-technical-workflows}
+
+Os workflows detalhados nesta página são instalados com os pacotes integrados do Adobe Campaign. Esses pacotes e os fluxos de trabalho técnicos associados dependem do contrato de licença e dos complementos.
 
 | Fluxo de trabalho técnico | Pacote | Descrição |
 |------|--------|-----------|
@@ -59,12 +52,12 @@ Saiba como monitorar workflows técnicos nesta [seção dedicada](monitor-techni
 | **Limpeza do banco de dados** (limpeza) | Instalado por padrão | Este é o fluxo de trabalho manutenção do banco de dados: faz diferentes cálculos das estatísticas e dos processos e exclui dados obsoletos do banco de dados de acordo com a configuração definida no assistente de implantação. É acionado todos os dias às 4h por padrão. |
 | **Excluir usuários do LINE bloqueados** (deleteBlockedLineUsersV2) | Canal LINE | Esse fluxo de trabalho garante que os dados dos usuários do LINE V2 sejam excluídos após bloquearem a conta oficial do LINE por 180 dias. |
 | **Excluir dados de solicitação de privacidade** (deletePrivacyRequestsData) | Regulamento de Proteção de Dados de Privacidade | Esse fluxo de trabalho exclui os dados do destinatário armazenados no Adobe Campaign. |
-| **Indicadores de entrega** (deliveryIndicators) | Plataforma Mid-sourcing | Esse fluxo de trabalho atualiza os indicadores de rastreamento de entrega para uma entrega. Esse fluxo de trabalho é acionado a cada hora por padrão. |
+| **Indicadores de entrega** (deliveryIndicators) | Instalado por padrão | Esse fluxo de trabalho atualiza os indicadores de rastreamento de entrega para uma entrega. Esse fluxo de trabalho é acionado a cada hora por padrão. |
 | **Processos de marketing distribuído** (centralLocalMgt) | Marketing central/local (Marketing distribuído) | Este fluxo de trabalho inicia o processamento relacionado ao uso do módulo de marketing distribuído. Ele inicia a criação de campanhas locais e gerencia notificações de pedidos e disponibilidade de pacotes de campanha. |
 | **Limpeza de evento** (webAnalyticsPurgeWebEvents) | Conectores de análise da Web | Esse fluxo de trabalho permite excluir todos os eventos do campo de banco de dados de acordo com o período configurado no campo Vida útil. |
 | **Exportar audiências para a Adobe Experience Cloud** (exportSharedAudience) | Integração com a Adobe Experience Cloud | Esse fluxo de trabalho exporta públicos-alvo como públicos-alvo/segmentos compartilhados. Esses públicos-alvo podem ser usados nas diferentes soluções da Adobe Experience Cloud que você usa. |
 | **ffdaUnsubscribe** | Instalado por padrão | Esse fluxo de trabalho manipula cancelamentos de assinatura recebidos como emails devolvidos (por meio do uso do método List-Unsubscribe `<mailto>`). Ele é executado diariamente, a cada 1h, apenas em instâncias de marketing com uma implantação corporativa (FFDA).<br/><br/>O fluxo de trabalho verifica broadlogs de um determinado intervalo de tempo (hora do último processamento e hora atual) que são marcados como rejeições de unsubscription pelo módulo inMail (marca definida na coluna iFlags da tabela NmsBroadLog) e processa uma unsubscription dependendo se o serviço da broadlog estiver definido ou não:<ul><li>Incluir na lista de bloqueios Se serviceId for 0 (não definido), o recipient será.</li><li>Se a serviceId não for 0 (vinculada a um serviço existente), a subscrição do recipient será cancelada desse serviço.</li></ul><br/>Observação: este fluxo de trabalho trata apenas de cancelamentos de assinatura rejeitados; os cancelamentos de assinatura feitos por meio de link para opção de não participação e cancelamento de assinatura com um clique (método de URL) são tratados separadamente fora deste fluxo de trabalho. |
-| **Previsão** (forecasting) | Entrega | Esse fluxo de trabalho analisa as entregas salvas no calendário provisional (cria logs provisionais). É acionado todos os dias à 1h por padrão. |
+| **Previsão** (forecasting) | Instalado por padrão | Esse fluxo de trabalho analisa as entregas salvas no calendário provisional (cria logs provisionais). É acionado todos os dias à 1h por padrão. |
 | **Cálculo agregado completo (propositionrcp cube)** (agg_nmspropositionrcp_full) | Dispositivo de oferta (interação) | Esse fluxo de trabalho atualiza o agregado completo do cubo de apresentação da oferta. É acionado todos os dias às 6h por padrão. Esse agregado captura as seguintes dimensões: canal, entrega, oferta de marketing e data. O cubo de apresentação da oferta é usado para gerar relatórios com base em ofertas. Saiba mais sobre cubos em [esta seção](../../v8/reporting/gs-cubes.md). |
 | **Identificação de contatos convertidos** (webAnalyticsFindConverted) | Conectores de análise da Web | Esse fluxo de trabalho indexa os visitantes do site que concluíram sua compra após uma campanha de remarketing. Os dados recuperados por esse fluxo de trabalho podem ser acessados no relatório de eficiência de remarketing (consulte esta página). |
 | **Importar audiências da Adobe Experience Cloud** (importSharedAudience) | Integração com a Adobe Experience Cloud | Esse fluxo de trabalho permite importar públicos-alvo/segmentos de diferentes soluções da Adobe Experience Cloud para o Adobe Campaign. |
