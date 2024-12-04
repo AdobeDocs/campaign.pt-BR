@@ -5,10 +5,10 @@ description: Saiba mais sobre os workflows técnicos disponíveis com o Campaign
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 97ab8259c0044b65fec2ad5ddc44d28f0cbf65e5
+source-git-commit: e8546d56232c50dbf4aedf054a7d63838e3fd957
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 80%
+source-wordcount: '1803'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ O Adobe Campaign vem com um conjunto de workflows técnicos incorporados. Eles c
 
 Por padrão, os fluxos de trabalho técnicos estão disponíveis em uma subpasta do seguinte nó **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-![](assets/navtree.png){width="50%" align="center" zoomable="yes"}
+![](assets/navtree.png){width="50%" align="left" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -28,8 +28,7 @@ Por padrão, os fluxos de trabalho técnicos estão disponíveis em uma subpasta
 
 A subpasta **[!UICONTROL Campaign process]** centraliza os fluxos de trabalho necessários para executar processos nas campanhas: notificação de tarefa, gestão de estoque, cálculo de custos, etc.
 
-![](assets/campaign-processes-wf.png){width="70%" align="center" zoomable="yes"}
-
+![](assets/campaign-processes-wf.png)
 
 ## Gerenciar e criar workflows técnicos {#manage-tech-workflows}
 
@@ -37,7 +36,7 @@ Os fluxos de trabalho técnicos do Campaign só podem ser iniciados e modificado
 
 Você pode criar fluxos de trabalho técnicos personalizados no nó **[!UICONTROL Administration > Production > Technical workflows]** da estrutura da árvore. Templates nativos estão disponíveis para criar workflows técnicos. Eles podem ser configurados para atender às suas necessidades. No entanto, esse processo é reservado para usuários especialistas. As atividades disponíveis em workflows técnicos são as mesmas para workflows para construção do target. [Saiba mais](targeting-workflows.md).
 
-## Lista de workflows técnicos {#list-technical-workflows}
+## Fluxos de trabalho técnicos integrados {#list-technical-workflows}
 
 Os workflows detalhados nesta página são instalados com os pacotes integrados do Adobe Campaign. Esses pacotes e os fluxos de trabalho técnicos associados dependem do contrato de licença e dos complementos.
 
