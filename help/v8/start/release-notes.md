@@ -4,15 +4,15 @@ description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Versões mais recentes {#latest-release}
 
-Esta página lista novos recursos, melhorias e correções que acompanham as versões mais recentes do Campaign v8 (console). Saiba mais sobre lançamentos, versões e atualizações do Campaign em [esta página](upgrades.md).
+Esta página lista novos recursos, melhorias e correções que acompanham as versões mais recentes do Campaign v8 (console). Saiba mais sobre lançamentos, versões e atualizações do Campaign [nesta página](upgrades.md).
 
 ## Versão 8.7.2 {#release-8-7-2}
 
