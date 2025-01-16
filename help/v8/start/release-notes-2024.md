@@ -3,10 +3,10 @@ title: Notas de versão do Campaign v8 (console) 2024
 description: Lista de recursos e melhorias disponíveis com as versões do Campaign v8 de 2024
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: 3bf433f3125183001d9f2a02a6a91011de1aa6ad
+source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 90%
+source-wordcount: '1217'
+ht-degree: 88%
 
 ---
 
@@ -121,6 +121,10 @@ _14 de fevereiro de 2024_
 
 * A partir desta versão, você terá acesso à nova **Interface do Campaign Web**, disponível por meio do ambiente central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços. Saiba como se conectar à Adobe Experience Cloud e acessar a interface do Adobe Campaign Web [nesta página](campaign-ui.md#ac-web-ui).
 
+  >[!AVAILABILITY]
+  >
+  >A interface da Web do Campaign só está disponível para usuários que se conectam ao Adobe Campaign com sua Adobe ID. Saiba mais sobre o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}.
+  >
 
 * O Adobe Campaign v8 agora se integra ao **Adobe Experience Manager as a Cloud Service**, com criação disponível exclusivamente por meio da interface do Adobe Campaign Web. [Saiba mais](../connect/ac-aem.md)
 

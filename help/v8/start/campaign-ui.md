@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 87426a5924e1044faf212631ba868753ae43fad6
+source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 13%
+source-wordcount: '1055'
+ht-degree: 12%
 
 ---
 
@@ -25,6 +25,11 @@ Você pode acessar o Adobe Campaign por meio do console do cliente ou da interfa
   Saiba como instalar e configurar o console do cliente do Campaign em [esta seção](../start/connect.md).
 
 * **Interface de usuário da Web** - Como usuário do Campaign v8, a partir da versão v8.6.1, agora você tem acesso a um ambiente da Web, disponível por meio da interface de usuário central do Adobe Experience Cloud. Em seguida, você pode se conectar ao Adobe Campaign por meio de um navegador da Web. Essa nova interface permite criar, gerenciar e executar as principais ações de marketing. No entanto, nem todos os recursos do Campaign estão disponíveis. [Saiba mais](#ac-web-ui).
+
+  >[!AVAILABILITY]
+  >
+  >A interface da Web do Campaign só está disponível para usuários que se conectam ao Adobe Campaign com sua Adobe ID. Saiba mais sobre o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}.
+  >
 
 * **Acesso à Web** - Os recursos de acesso à Web do Adobe Campaign permitem acessar um subconjunto de recursos do Campaign com um navegador da Web, usando uma interface de usuário HTML. Use essa interface da Web para acessar relatórios, controlar e validar mensagens, acessar painéis de monitoramento e muito mais.  Saiba mais sobre o Campaign Web Access [nesta seção](../start/connect.md#web-access).
 
@@ -108,6 +113,7 @@ Como usuário do console do cliente do Campaign v8, a partir da versão v8.6.1, 
 ![Página Inicial da Interface do Usuário da Web do Adobe Campaign](assets/ac-web-home.png)
 
 >[!AVAILABILITY]
+>
 >A interface da Web do Campaign só está disponível para usuários que se conectam ao Adobe Campaign com sua Adobe ID. Saiba mais sobre o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}.
 >
 
