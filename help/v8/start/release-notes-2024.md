@@ -1,12 +1,12 @@
 ---
-title: Notas de versão do Campaign v8 (console) 2023
-description: Lista de recursos e melhorias disponíveis com as versões do Campaign v8 de 2023
+title: Notas de versão do Campaign v8 (console) 2024
+description: Lista de recursos e melhorias disponíveis com as versões do Campaign v8 de 2024
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
+source-git-commit: 3bf433f3125183001d9f2a02a6a91011de1aa6ad
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 92%
+source-wordcount: '1191'
+ht-degree: 90%
 
 ---
 
@@ -18,36 +18,11 @@ Esta página lista novos recursos, melhorias e correções que vêm com as **Ver
 
 **Nesta página**
 
-* Campaign v8.7 - [Versão 8.7.1](#release-8-7-1) | [Versão 8.7.2](#release-8-7-2)
+* Campaign v8.7 - [Versão 8.7.1](#release-8-7-1)
 * Campaign v8.6 - [Versão 8.6.1](#release-8-6-1) | [Versão 8.6.2](#release-8-6-2) | [Versão 8.6.3](#release-8-6-3)
 * Campaign v8.5 - [Versão 8.5.3](#release-8-5-3)
 
 >[!ENDSHADEBOX]
-
-
-## Versão 8.7.2 {#release-8-7-2}
-
-_3 de setembro de 2024_
-
->[!AVAILABILITY]
->
->Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
->
->Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface da web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
-
-### Novos recursos {#new-8-7-2}
-
-* **Novo conector de envio de SMS**: o conector de envio de SMS foi modernizado e aprimorado para permitir conexões SMPP no modo transceptor, permitir conexões SMPP persistentes e garantir uma melhor compatibilidade para ambientes em transição do Adobe Campaign Standard. Uma nova conta externa de SMS agora está disponível para todas as novas implementações de SMS. A implementação atual ainda é compatível, mas é recomendável mudar para esse novo conector moderno e estendido. [Leia mais](../send/sms/sms.md).
-
-* **Notificação por push avançada (GA)**: agora, você pode enviar notificações por push avançadas. A notificação por push avançada é uma forma aprimorada de notificação em dispositivos móveis que vai além das mensagens de texto simples, incorporando elementos multimídia, como imagens, botões interativos ou outros conteúdos de mídia avançada. Com esta versão, um conjunto de modelos para notificações por push avançadas agora está disponível para aplicativos iOS e Android. [Leia mais](../send/rich-push-android.md).
-
-* **Identidade visual**: agora, as opções de identidade visual estão disponíveis para todos os canais, inclusive SMS e correspondência direta. [Saiba mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=pt-BR){target="_blank"}
-
-### Correções {#fixes-8-7-2}
-
-Os seguintes problemas foram corrigidos nesta versão:
-
-NEO-48232, NEO-56832, NEO-72504, NEO-74855, NEO-75898, NEO-76097, NEO-76958, NEO-77014, NEO-77795, NEO-78843, NEO-79328.
 
 
 
