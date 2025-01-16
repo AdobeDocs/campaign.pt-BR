@@ -4,16 +4,14 @@ title: Propriedades do workflow
 description: Saiba mais sobre as propriedades do workflow do Campaign
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 63b7eaba3ea7b580d9b6c3c0e0c015c057539aa8
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 94%
+source-wordcount: '628'
+ht-degree: 82%
 
 ---
 
 # Propriedades do workflow{#workflow-properties}
-
-
 
 ## Guia Execution {#execution-tab}
 
@@ -54,6 +52,16 @@ Esta seção só é exibida nos workflows da campanha.
 * **[!UICONTROL Execute in the engine]**
 
   Essa opção só pode ser usada para depuração e nunca em produção. Quando estiver habilitado, o workflow terá prioridade e todos os outros fluxos serão interrompidos até a conclusão deste.
+
+* **[!UICONTROL Enable watchdog supervisor to keep workflow running permanently]**
+
+  Essa opção força os workflows a serem reiniciados automaticamente após um erro. Quando habilitado, a reinicialização verificará o status do workflow a cada 30 segundos e o reiniciará quando necessário. Para ajustar o intervalo de 30 segundos, você pode criar a opção técnica `XtkWorkflow_WatchdogTimerTimeout` e usar um tipo de dados integer para especificar o atraso desejado.
+
+  >[!NOTE]
+  >
+  >Esta opção destina-se a usuários avançados e deve ser habilitada somente para **workflows técnicos**.
+  >
+  >Ela é habilitada por padrão para os fluxos de trabalho de replicação centralizados disponíveis com o pacote `fullFdaMkt`.
 
 ### Gerenciamento de erros {#error-management}
 
