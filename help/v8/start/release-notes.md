@@ -3,10 +3,10 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: b83222774b026348ae70f41a8193f88856af99a9
+source-git-commit: 0c11cdd3c0b623333e6a7cff66c734f18e3d3985
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 55%
+source-wordcount: '556'
+ht-degree: 51%
 
 ---
 
@@ -42,7 +42,7 @@ Os databricks agora são compatíveis como um banco de dados externo com o Feder
 
 Os seguintes problemas foram corrigidos nesta versão:
 
-NEO77452, NEO81127, NEO81209, NEO80243, NEO80314, NEO81223, NEO81287, NEO81290, NEO81312, NEO81512, NEO81520, NEO81566, NEO81704, NEO83096, NEO83081.
+NEO48232, NEO67814, NEO71388, NEO74855, NEO75643, NEO75962, NEO76132, NEO76958, NEO76986, NEO77162, NEO77452, NEO78946, NEO79373, NEO80243, NEO80314, NEO81127, NEO81209, NEO81223, NEO81287, NEO81290, NEO8133 NEO81512, NEO81520, NEO81566, NEO81704, NEO81908, NEO82195, NEO82591, NEO82592, NEO82640, NEO82665, NEO8277 NEO82920, NEO83081, NEO83096, NEO83137, NEO83143.
 
 ## Versão 8.7.2 {#release-8-7-2}
 
