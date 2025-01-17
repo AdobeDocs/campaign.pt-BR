@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 1cb92c6075e9478b641b11eae52372a909258cd3
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -22,6 +22,11 @@ ht-degree: 1%
 ## Sobre email Cco {#gs-bcc}
 
 Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma. Essa opção permite enviar mensagens para um endereço de email CCO dedicado (Cópia oculta), de onde elas podem ser processadas e arquivadas usando um sistema externo.
+
+>[!CAUTION]
+>
+>Por motivos de privacidade, os emails com CCO devem ser processados por um sistema de arquivamento capaz de armazenar informações de identificação pessoal (PII) seguras.
+
 O próprio Adobe Campaign não gerencia arquivos arquivados. Os arquivos .eml correspondentes aos emails enviados podem ser transferidos para um servidor remoto, como um servidor de email SMTP.
 
 O destino do arquivamento é o endereço de email CCO de sua escolha, que permanecerá invisível para os recipients do delivery. Depois que o endereço de email de CCO for definido, você deverá habilitar a opção dedicada no nível do [modelo de entrega](create-templates.md).
@@ -29,11 +34,6 @@ O destino do arquivamento é o endereço de email CCO de sua escolha, que perman
 >[!NOTE]
 >
 >Como usuário do Managed Cloud Service, [contate o Adobe](../start/campaign-faq.md#support){target="_blank"} para informar o endereço de email CCO a ser usado para arquivamento.
-
->[!CAUTION]
->
->Por motivos de privacidade, os emails com CCO devem ser processados por um sistema de arquivamento capaz de armazenar informações de identificação pessoal (PII) seguras.
-
 
 ## Habilitar email Cco {#enable-bcc}
 
