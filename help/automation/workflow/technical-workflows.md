@@ -5,10 +5,10 @@ description: Saiba mais sobre os workflows técnicos disponíveis com o Campaign
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 0a074b2ef84e89e67363b722372718e4c46d65e5
+source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 79%
+source-wordcount: '2064'
+ht-degree: 69%
 
 ---
 
@@ -52,6 +52,7 @@ Os workflows detalhados nesta página são instalados com os pacotes integrados 
 | **Excluir usuários do LINE bloqueados** (deleteBlockedLineUsersV2) | Canal LINE | Esse fluxo de trabalho garante que os dados dos usuários do LINE V2 sejam excluídos após bloquearem a conta oficial do LINE por 180 dias. |
 | **Excluir dados de solicitação de privacidade** (deletePrivacyRequestsData) | Regulamento de Proteção de Dados de Privacidade | Esse fluxo de trabalho exclui os dados do destinatário armazenados no Adobe Campaign. |
 | **Indicadores de entrega** (deliveryIndicators) | Instalado por padrão | Esse fluxo de trabalho atualiza os indicadores de rastreamento de entrega para uma entrega. Esse fluxo de trabalho é acionado a cada hora por padrão. |
+| **Implantar FFDA imediatamente** (ffdaDeploy) | Instalado por padrão somente em [implantações do Campaign Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md) | Executa uma implantação imediata no banco de dados em nuvem. [Saiba mais sobre replicação de dados](../../v8/architecture/replication.md) |
 | **Processos de marketing distribuído** (centralLocalMgt) | Marketing central/local (Marketing distribuído) | Este fluxo de trabalho inicia o processamento relacionado ao uso do módulo de marketing distribuído. Ele inicia a criação de campanhas locais e gerencia notificações de pedidos e disponibilidade de pacotes de campanha. |
 | **Limpeza de evento** (webAnalyticsPurgeWebEvents) | Conectores de análise da Web | Esse fluxo de trabalho permite excluir todos os eventos do campo de banco de dados de acordo com o período configurado no campo Vida útil. |
 | **Exportar audiências para a Adobe Experience Cloud** (exportSharedAudience) | Integração com a Adobe Experience Cloud | Esse fluxo de trabalho exporta públicos-alvo como públicos-alvo/segmentos compartilhados. Esses públicos-alvo podem ser usados nas diferentes soluções da Adobe Experience Cloud que você usa. |
@@ -74,6 +75,13 @@ Os workflows detalhados nesta página são instalados com os pacotes integrados 
 | **Processamento de eventos em tempo real** (rtEventsProcessing) | Execução de mensagens transacionais (Centro de Mensagens - Execução) | Esse fluxo de trabalho permite colocar eventos em tempo real em uma fila antes de associá-los a um modelo de mensagem. |
 | **Sincronização de apresentação** (propositionSynch) | Controle do mecanismo de oferta com instância de execução | Esse fluxo de trabalho sincroniza as apresentações entre a instância de marketing e a instância de execução usada para interações. |
 | **Recuperação de eventos da Web** (webAnalyticsGetWebEvents) | Conectores de análise da Web | A cada hora, esse fluxo de trabalho baixa segmentos do comportamento do usuário na Internet em um determinado site, os coloca no banco de dados do Adobe Campaign e inicia o fluxo de trabalho de remarketing. |
+| **Replicar dados FFDA imediatamente** (ffdaReplicate) | Instalado por padrão somente em [implantações do Campaign Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md) | Replica os dados XS de uma determinada conta externa. [Saiba mais sobre replicação de dados](../../v8/architecture/replication.md) |
+| **Replicar fila nmsDelivery** (ffdaReplicateQueueDelivery) | Instalado por padrão somente em [implantações do Campaign Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md) | Fila para a tabela `nms:delivery`. [Saiba mais sobre replicação de dados](../../v8/architecture/replication.md) |
+| **Replicar fila nmsDlvExclusion** (ffdaReplicateQueueDlvExclusion) | Instalado por padrão somente em [implantações do Campaign Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md) | Fila para a tabela `nms:dlvExclusion`. [Saiba mais sobre replicação de dados](../../v8/architecture/replication.md) |
+| **Replicar a fila nmsDlvMidRemoteIdRel** (ffdaReplicateQueueDlvMidRemoteIdRel) | Instalado por padrão somente em [implantações do Campaign Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md) | Fila para a tabela `nms:dlvRemoteIdRel`. [Saiba mais sobre replicação de dados](../../v8/architecture/replication.md) |
+| **Replicar fila nmsTrackingUrl** (ffdaReplicateQueueTrackingUrl)<br/>**Replicar fila nmsTrackingUrl em simultaneidade** (ffdaReplicateQueueTrackingUrl_2) | Instalado por padrão somente em [implantações do Campaign Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md) | Filas em simultaneidade para a tabela `nms:trackingUrl`, utilizando dois fluxos de trabalho para melhorar a eficiência, processando solicitações com base em prioridades diferentes. [Saiba mais sobre replicação de dados](../../v8/architecture/replication.md) |
+| **Replicar tabelas de referência** (ffdaReplicateReferenceTables) | Instalado por padrão somente em [implantações do Campaign Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md) | Executa a replicação automática de tabelas internas que precisam estar presentes no banco de dados local do Campaign (PostgreSQL) e no banco de dados da nuvem ([!DNL Snowflake]). Ele é programado para ser executado a cada hora, diariamente. Se o campo **lastModified** existir, a replicação ocorrerá de forma incremental, caso contrário, a tabela inteira será replicada. [Saiba mais sobre replicação de dados](../../v8/architecture/replication.md) |
+| **Replicar dados de preparo** (ffdaReplicateStagingData) | Instalado por padrão somente em [implantações do Campaign Enterprise (FFDA)](../../v8/architecture/enterprise-deployment.md) | Replica dados de preparo para chamadas unitárias. Ele é programado para ser executado a cada hora, diariamente. [Saiba mais sobre replicação de dados](../../v8/architecture/replication.md) |
 | **Agregados de relatórios** (reportingAggregates) | Entrega | Esse fluxo de trabalho atualiza agregados usados em relatórios. É acionado todos os dias às 2h por padrão. |
 | **Envio de indicadores e atributos de campanha** (webAnalyticsSendMetrics) | Conectores de análise da Web | Esse fluxo de trabalho permite enviar indicadores de campanha de email do Adobe Campaign para o Adobe Experience Cloud Suite por meio do conector do Adobe® Analytics. Os indicadores relacionados são: Enviado (iSent), Contagem total de aberturas (iTotalRecipientOpen), Número total de destinatários que clicaram (iTotalRecipientClick), Erros (iError), Recusa (opt-out) (iOptOut). |
 | **Estoque: pedidos e alertas** (stockMgt) | Instalado por padrão | Esse fluxo de trabalho inicia o cálculo de estoque nas linhas de pedido e gerencia os limites de aviso. |
