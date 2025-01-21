@@ -3,9 +3,9 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 0c11cdd3c0b623333e6a7cff66c734f18e3d3985
+source-git-commit: 4a4bcb0b540d6e8a426839e77bf81ad30eb93653
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '558'
 ht-degree: 51%
 
 ---
@@ -22,7 +22,7 @@ _15 de janeiro de 2025_
 
 * A estabilidade do aplicativo do Campaign foi aprimorada durante a análise de entrega no contexto de uma [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md).
 * Essa versão vem com mecanismos de arquitetura FFDA aprimorados e fortalecidos, incluindo gerenciamento de chaves, armazenamento temporário e replicação de dados.
-* Novos fluxos de trabalho técnicos foram introduzidos para a [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md). Esses workflows replicam o delivery e dados relacionados centralizando solicitações de replicação paralela em tabelas correspondentes. Estes fluxos de trabalho começam com `Replicate nms`.
+* Novos fluxos de trabalho técnicos foram introduzidos para a [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md). Esses workflows replicam o delivery e dados relacionados centralizando solicitações de replicação paralela em tabelas correspondentes. Estes fluxos de trabalho começam com `Replicate nms`. [Leia mais](../architecture/replication.md)
 * Uma nova opção **Habilitar supervisor de watchdog para manter o fluxo de trabalho em execução permanentemente** agora está disponível nas propriedades do fluxo de trabalho. Quando essa opção está habilitada, os workflows são reiniciados automaticamente após um erro. A reinicialização ocorre a cada 30 segundos por padrão se o workflow ainda estiver com erro. Para ajustar esse intervalo, você pode criar uma nova opção `XtkWorkflow_WatchdogTimerTimeout` e definir um tipo de dados Integer para especificar o novo atraso. Essa opção só deve ser habilitada em workflows técnicos. [Leia mais](../../automation/workflow/workflow-properties.md#execution)
 
 ### Melhorias de segurança {#security-8-6-4}
