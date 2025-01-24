@@ -4,16 +4,19 @@ description: Introdução às páginas de destino
 feature: Landing Pages
 role: User, Developer
 level: Beginner
-source-git-commit: 45999f56c2d9e4417c6a54987d8395b69cdd2b2f
+exl-id: ad639a39-f011-4f0f-9db6-d06078f2e7a2
+source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 8%
+source-wordcount: '228'
+ht-degree: 24%
 
 ---
 
 # Criar e gerenciar landing pages {#ac-gs-lp}
 
-A [interface da Web do Adobe Campaign v8](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui) vem com uma experiência de usuário recriada para páginas de aterrissagem. O Campaign permite criar, projetar e compartilhar landing pages. As landing pages permitem direcionar os usuários para formulários online, onde eles podem atualizar os dados, aceitar/recusar receber suas comunicações ou assinar um serviço específico, como um boletim informativo. Como usuário do Campaign v8, você tem acesso a essa nova interface do usuário para executar tarefas e simplificar sua experiência enquanto usa o Adobe Campaign. Saiba mais sobre
+As páginas de destino permitem direcionar usuários para formulários online onde é possível atualizar dados, aceitar ou recusar o recebimento de comunicações ou assinar um serviço específico, como um informativo.
+
+Para criar páginas de aterrissagem, navegue até a [interface de usuário da Web](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). O Adobe Campaign vem com uma experiência de usuário recriada para landing pages, disponível somente na interface da Web.
 
 
 >[!AVAILABILITY]

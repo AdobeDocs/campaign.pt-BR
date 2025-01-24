@@ -6,7 +6,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 40%
@@ -30,7 +30,7 @@ Você pode adicionar pastas ao explorador do Campaign, criar visualizações e a
 
 Saiba como gerenciar pastas e modos de exibição em [esta página](../audiences/folders-and-views.md)
 
-## Gerenciar e personalizar listas{#customize-lists}
+## Gerenciar e personalizar listas {#customize-lists}
 
 No console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, você pode adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
 
