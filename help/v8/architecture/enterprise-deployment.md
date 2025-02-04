@@ -5,9 +5,9 @@ feature: Architecture, FFDA, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
+source-git-commit: 3235701e0939466d4275b1e9202f82694ccdb352
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1053'
 ht-degree: 50%
 
 ---
@@ -55,7 +55,7 @@ O banco de dados [!DNL Snowflake] no lado de marketing é usado para:
 * Armazene todos os dados do cliente: perfis, dados personalizados, como transações, produtos, locais etc.
 * Armazene todos os eventos e dados de comportamento gerados ou coletados pelo Campaign, como logs do delivery, logs de rastreamento, registros de push etc.
 * Armazene todos os agregados de dados do acima.
-* Armazenar uma cópia (h+1) de tabelas de referência (como deliveries, enumerações, países etc.) que são usados em workflows, campanhas e relatórios.
+* Armazene uma cópia (h+1) de tabelas de referência (como deliveries, listas discriminadas, países etc.) que são usadas em workflows, campanhas e relatórios.
 * Executar todos os processos em lote e cargas de trabalho
 
 
@@ -63,7 +63,7 @@ O banco de dados PostgreSQL na instância de marketing é usado para:
 
 * Execute determinadas cargas de trabalho, como APIs de baixo volume.
 * Armazene todos os dados do Campaign, incluindo configurações de entrega e campanha, fluxo de trabalho e definições de serviço.
-* Armazenar todas as tabelas de referência integradas (listas discriminadas, países etc.) que são replicados para [!DNL Snowflake].
+* Armazene todas as tabelas de referência internas (enumerações, países, etc.) que são replicadas para [!DNL Snowflake].
 
   No entanto, não é possível:
    * criar personalizações para dados do cliente, por exemplo, não crie uma tabela de família no PostgreSQL, mas somente no Snowflake
@@ -82,9 +82,7 @@ O banco de dados PostgreSQL na instância mid-sourcing é usado para:
 
 ### Mecanismo de preparo da API [!DNL Campaign]{#staging-api}
 
-Com o banco de dados de nuvem do [!DNL Campaign], as chamadas unitárias de explosão não são recomendadas devido ao desempenho (latência e simultaneidade). A menos que você esteja enviando um volume de envio extremamente grande, a operação em lote deve ser usada para garantir o desempenho ideal das APIs. O Campaign continua lidando com chamadas de API no nível do banco de dados local.
-
-[O mecanismo de preparo da API é detalhado nesta página](staging.md)
+Com o banco de dados na nuvem [!DNL Campaign], a explosão de chamadas unitárias não é recomendada no que diz respeito a desempenhos (latência e simultaneidade). A menos que você esteja enviando um volume extremamente baixo, as operações em lote devem ser usadas para garantir o desempenho ideal da API. Para melhorar o desempenho, as APIs de assimilação são redirecionadas para o banco de dados local. [Saiba mais sobre o mecanismo de preparo da API do Campaign](staging.md)
 
 ### Novas APIs{#new-apis}
 
