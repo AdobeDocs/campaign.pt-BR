@@ -2,55 +2,17 @@
 title: Notas de versão do Campaign v8 (console) 2025
 description: Lista de recursos e melhorias disponíveis com as versões do Campaign v8 de 2025
 feature: Release Notes
-source-git-commit: c5452082104432af49a93ecaa96865f19ee89ec2
+exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
+source-git-commit: 82622a4517356eaba1f7eba23d4b3050d8ca37c9
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 52%
+source-wordcount: '277'
+ht-degree: 90%
 
 ---
 
 # Notas de versão de 2025 {#2025-rn}
 
-Esta página lista novos recursos, melhorias e correções que vêm com as **Versões do Campaign v8 de 2025**.
-
->[!BEGINSHADEBOX]
-
-**Nesta página**
-
-* Campaign v8.6 - [Versão 8.6.4](#release-8-6-4)
-* Campaign v8.7 - [Versão 8.7.2](#release-8-7-2)
-
->[!ENDSHADEBOX]
-
-## Versão 8.6.4 {#release-8-6-4}
-
-_15 de janeiro de 2025_
-
-### Melhorias gerais {#improvements-8-6-4}
-
-* A estabilidade do aplicativo do Campaign foi aprimorada durante a análise de entrega no contexto de uma [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md).
-* Essa versão vem com mecanismos de arquitetura FFDA aprimorados e fortalecidos, incluindo gerenciamento de chaves, armazenamento temporário e replicação de dados.
-* Novos fluxos de trabalho técnicos foram introduzidos para a [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md). Esses workflows replicam o delivery e dados relacionados centralizando solicitações de replicação paralela em tabelas correspondentes. Estes fluxos de trabalho começam com `Replicate nms`. [Leia mais](../architecture/replication.md)
-* Uma nova opção **Habilitar supervisor de watchdog para manter o fluxo de trabalho em execução permanentemente** agora está disponível nas propriedades do fluxo de trabalho. Quando essa opção está habilitada, os workflows são reiniciados automaticamente após um erro. A reinicialização ocorre a cada 30 segundos por padrão se o workflow ainda estiver com erro. Para ajustar esse intervalo, você pode criar uma nova opção `XtkWorkflow_WatchdogTimerTimeout` e definir um tipo de dados Integer para especificar o novo atraso. Essa opção só deve ser habilitada em workflows técnicos. [Leia mais](../../automation/workflow/workflow-properties.md#execution)
-
-### Melhorias de segurança {#security-8-6-4}
-
-A conexão com soluções e aplicativos Adobe por meio da conta externa **[!UICONTROL Adobe Experience Cloud]** foi atualizada para reforçar a segurança.
-
-<!--
-### Connection to Campaign {#ims-8-6-4}
-
-**(Limited availability)** For a restricted list of customers, Campaign v8.6.4 can allow native authentication mode instead of Adobe Identity Management System (IMS). Note that if you are using Campaign native authentication, you cannot access to [Campaign Web User Interface](../start/campaign-ui.md#campaign-web-user-interface).-->
-
-### Atualizações de compatibilidade {#comp-8-6-4}
-
-Os databricks agora são compatíveis como um banco de dados externo com o Federated Data Access (FDA) do Adobe Campaign. Saiba mais [nesta página](compatibility-matrix.md#FederatedDataAccessFDA).
-
-### Correções {#fixes-8-6-4}
-
-Os seguintes problemas foram corrigidos nesta versão:
-
-NEO48232, NEO67814, NEO71388, NEO74855, NEO75643, NEO75962, NEO76132, NEO76958, NEO76986, NEO77162, NEO77452, NEO78946, NEO79373, NEO80243, NEO80314, NEO81127, NEO81209, NEO81223, NEO81287, NEO81290, NEO8133 NEO81512, NEO81520, NEO81566, NEO81704, NEO81908, NEO82195, NEO82591, NEO82592, NEO82640, NEO82665, NEO8277 NEO82920, NEO83081, NEO83096, NEO83137, NEO83143.
+Esta página lista novos recursos, melhorias e correções que vêm com as **Versões do Campaign v8 de 2025**. As versões mais recentes estão listadas em [esta página](release-notes.md).
 
 ## Versão 8.7.2 {#release-8-7-2}
 
