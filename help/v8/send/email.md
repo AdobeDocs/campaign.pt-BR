@@ -5,16 +5,21 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 578f774152afbd42342da0f161b679ba9dd10c78
+source-git-commit: a76d2c30d3e1c723bcd4881f28980d346aade3dc
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 21%
+source-wordcount: '565'
+ht-degree: 20%
 
 ---
 
 # Criar e enviar emails
 
 Com o Adobe Campaign, crie deliveries de email para enviar emails personalizados para a população do target. [Saiba mais](../send/send.md)
+
+>[!NOTE]
+>
+>Para criar emails atraentes e personalizados individualmente, navegue até a [interface de usuário da Web](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). O Adobe Campaign vem com o Email Designer, uma interface intuitiva de arrastar e soltar que permite projetar e refinar todo o conteúdo de cada email.
+
 
 Saiba mais sobre as principais etapas para criar e configurar uma entrega em [esta página](../start/create-message.md).
 
@@ -41,7 +46,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 1. **Importar seu conteúdo**
 
-   Clique na guia **Source** para colar o conteúdo em HTML.
+   Clique na guia **Source** para colar o conteúdo do HTML.
 
    ![](assets/paste-content.png)
 
