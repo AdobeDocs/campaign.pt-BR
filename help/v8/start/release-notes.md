@@ -3,9 +3,9 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 15faa6850c035d2d26dd43dc221e0128c33999c2
+source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '560'
 ht-degree: 21%
 
 ---
@@ -75,7 +75,6 @@ A conexão com soluções e aplicativos da Adobe por meio da conta externa **[!U
 
    * O novo conector é baseado na interface ODBC que se alinha aos conectores FDA mais recentes. Isso garante suporte a longo prazo.
    * Ele também introduz um novo mecanismo de carregamento de dados usando buckets s3, melhorando significativamente o desempenho.
-   * O suporte ao Redshift Spectrum foi adicionado.
 
   O conector herdado ainda pode ser usado. Se quiser experimentar o novo, entre em contato com o representante da Adobe.
 

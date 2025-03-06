@@ -5,10 +5,10 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 5b649e17f464d09124064f61712856d9301fc6d6
+source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 99%
+source-wordcount: '437'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,8 @@ Os sistemas de gerenciamento de relacionamento com o cliente (CRM) compatíveis 
 
 Os bancos de dados externos compatíveis com o módulo Federated Data Access (FDA) do Adobe Campaign estão listados abaixo. Saiba mais sobre FDA [nesta página](../connect/fda.md).
 
-* **[!DNL Amazon Redshift]**
+* **[!DNL Amazon Redshift]** Conector ODBC, iniciando Campaign v8.6.4
+* **[!DNL Amazon Redshift]** conector herdado
 * **[!DNL Azure Synapse]**, a partir do Campaign v8.5
 * **[!DNL Databricks]**, iniciando o Campaign v8.6.4 / v8.7
 * **[!DNL Google Big Query]**
