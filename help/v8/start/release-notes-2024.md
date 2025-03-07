@@ -3,10 +3,10 @@ title: Notas de versão do Campaign v8 (console) 2024
 description: Lista de recursos e melhorias disponíveis com as versões do Campaign v8 de 2024
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: 54cc5686cc5187a1ab0514abcaf9fcd69e7a1ede
+source-git-commit: 041df8d2d6128d72a04008affbc9680ba5b640a1
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 88%
+source-wordcount: '1308'
+ht-degree: 81%
 
 ---
 
@@ -48,7 +48,16 @@ _2 de maio de 2024_
 
 ### Atualizações de compatibilidade {#comp-8-7-1}
 
-* Os databricks agora são compatíveis como um banco de dados externo com o Federated Data Access (FDA) do Adobe Campaign. Saiba mais [nesta página](compatibility-matrix.md#FederatedDataAccessFDA).
+Os seguintes conectores FDA foram adicionados. Consulte esta [página](compatibility-matrix.md#FederatedDataAccessFDA).
+
+* Os databricks agora são compatíveis como um banco de dados externo com o FDA (Federated Data Access — Acesso a Dados Federados) do Adobe Campaign.
+
+* Um novo conector ODBC do Amazon Redshift FDA está disponível. Ele oferece conectividade aprimorada, manutenção mais fácil e compatibilidade aprimorada. Essa nova versão traz as seguintes melhorias:
+
+   * O novo conector é baseado na interface ODBC que se alinha aos conectores FDA mais recentes. Isso garante suporte a longo prazo.
+   * Ele também introduz um novo mecanismo de carregamento de dados usando buckets s3, melhorando significativamente o desempenho.
+
+  O conector herdado ainda pode ser usado. Se quiser experimentar o novo, entre em contato com o representante da Adobe.
 
 ### Migração para a credencial OAuth de servidor para servidor {#change-8-7-1}
 
