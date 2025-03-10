@@ -5,9 +5,9 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1049'
 ht-degree: 13%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 13%
 
 O Adobe Campaign vem com um conjunto de contas externas predefinidas. Para configurar conexões com sistemas externos, você pode criar novas contas externas.
 
-As contas externas são usadas por processos técnicos, como workflows técnicos ou workflows da campanha. Por exemplo, ao configurar uma transferência de arquivos em um workflow ou uma troca de dados com qualquer outro aplicativo (Adobe Target, Experience Manager, etc.), você precisa selecionar uma conta externa.
+As contas externas são usadas por processos técnicos, como workflows técnicos ou workflows da campanha. Por exemplo, ao configurar uma transferência de arquivos em um workflow ou uma troca de dados com qualquer outro aplicativo (Adobe Target, Experience Manager etc.), você precisa selecionar uma conta externa.
 
 Você pode acessar contas externas do Adobe Campaign **[!UICONTROL Explorer]**: navegue até **[!UICONTROL Administration]** `>` **[!UICONTROL Platform]** `>` **[!UICONTROL External accounts]**.
 
@@ -26,7 +26,7 @@ Você pode acessar contas externas do Adobe Campaign **[!UICONTROL Explorer]**: 
 
 >[!CAUTION]
 >
->* Como um usuário Cloud Service gerenciado, as contas externas são configuradas para sua instância pelo Adobe e não devem ser modificadas.
+>* Como usuário do Managed Cloud Services, as contas externas são configuradas para sua instância pelo Adobe e não devem ser modificadas.
 >
 >* No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), uma conta externa **[!UICONTROL Full FDA]** (FDA) específica gerencia a conexão entre o banco de dados local do Campaign e o banco de dados da nuvem ([!DNL Snowflake]).
 >
@@ -87,6 +87,8 @@ Para configurar um POP3 externo usando o Microsoft OAuth 2.0, marque a opção *
 
 A conta externa **[!UICONTROL Routing]** permite configurar cada canal disponível no Adobe Campaign, dependendo dos pacotes instalados.
 
+Saiba mais sobre gerenciamento de conta externa e execução de entrega em [esta seção](../architecture/architecture.md#split).
+
 ### Instância de execução {#execution-instance}
 
 No contexto de mensagens transacionais, as instâncias de execução são vinculadas à instância de controle e as conectam. Os templates de mensagem transacional são implantados na instância de execução. Saiba mais sobre a arquitetura do Centro de Mensagens em [esta página](../architecture/architecture.md#transac-msg-archi).
@@ -97,9 +99,9 @@ No contexto de mensagens transacionais, as instâncias de execução são vincul
 
   Os bancos de dados externos compatíveis com o Adobe Campaign v8 estão listados na [Matriz de compatibilidade](../start/compatibility-matrix.md)
 
-* **X (antigo Twitter)** - A conta externa do tipo **Twitter** é usada para conectar o Campaign à sua conta X e postar mensagens em seu nome. Saiba mais sobre a integração do X em [esta seção](../connect/ac-tw.md).
+* **X (anteriormente conhecido como Twitter)** - A conta externa do tipo **Twitter** é usada para conectar o Campaign à sua conta X e postar mensagens em seu nome. Saiba mais sobre a integração do X em [esta seção](../connect/ac-tw.md).
 
-## Contas externas de Integração de soluções Adobe {#adobe-integration-external-accounts}
+## Contas externas da Integração de soluções da Adobe {#adobe-integration-external-accounts}
 
 * **Adobe Experience Cloud** - A conta externa **[!UICONTROL Adobe Experience Cloud]** é usada para implementar o Adobe Identity Management Service (IMS) para conexão com a Adobe Campaign. Saiba mais sobre o Adobe Identity Management Service (IMS) em [esta seção](../start/connect.md#logon-to-ac).
 

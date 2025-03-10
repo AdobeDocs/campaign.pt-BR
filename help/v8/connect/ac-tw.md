@@ -1,13 +1,13 @@
 ---
 title: Trabalhar com o Campaign e o X (Twitter)
-description: Saiba como integrar seu ambiente do Campaign ao X (conhecido anteriormente como Twitter)
+description: Saiba como integrar seu ambiente do Campaign ao X (anteriormente conhecido como Twitter)
 role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1066'
 ht-degree: 11%
 
 ---
@@ -23,7 +23,7 @@ O módulo **Managing social networks (Social Marketing)** permite interagir com 
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Service, [entre em contato com o Adobe](../start/campaign-faq.md#support) para conectar o Campaign com o X. O complemento **Gerenciamento de redes sociais (Marketing Social)** deve ser instalado em seu ambiente por meio do pacote dedicado e a Conta Externa do Twitter deve ser configurada.
+>Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support) para conectar o Campaign com o X. O complemento **Gerenciamento de redes sociais (Marketing Social)** deve ser instalado em seu ambiente por meio do pacote dedicado e a Conta Externa do Twitter deve ser configurada.
 
 
 Para configurar o Adobe Campaign para publicar tweets em suas contas do X, delegue acesso de gravação ao Adobe Campaign para essas contas. Para fazer isso, você deve:
@@ -56,7 +56,7 @@ Depois de ter sido aprovado com Acesso elevado, crie um aplicativo X para permit
 
    ![](assets/tw-app-type.png)
 
-1. De volta ao painel do aplicativo, selecione seu aplicativo e navegue até a guia **Chaves e tokens**. Em **Token de Acesso e Segredo**, se a permissão **Ler, Gravar e Mensagens Diretas** não for mencionada, você deverá regenerar o token e o segredo do seu aplicativo. Observe que todas as chaves e tokens devem ser salvas após a criação. Você precisará deles para configurar o serviço do Campaign Twitter.
+1. De volta ao painel do aplicativo, selecione seu aplicativo e navegue até a guia **Chaves e tokens**. Em **Token de Acesso e Segredo**, se a permissão **Ler, Gravar e Mensagens Diretas** não for mencionada, você deverá regenerar o token e o segredo do seu aplicativo. Observe que todas as chaves e tokens devem ser salvas após a criação. Você precisará deles para configurar o serviço Campaign Twitter.
 
    ![](assets/tw-permissions-check.png)
 
@@ -68,13 +68,13 @@ Depois de ter sido aprovado com Acesso elevado, crie um aplicativo X para permit
 
 ## Criar um serviço do Twitter no Campaign {#create-tw-service}
 
-Para vincular a instância do Campaign à conta X, crie um serviço **Twitter** e delegue acesso de gravação ao Campaign.
+Para vincular a instância do Campaign à conta X, crie um serviço do **Twitter** e delegue acesso de gravação ao Campaign.
 
 >[!CAUTION]
 >
->Criar um serviço **Twitter** por conta X. Como consequência, você deve criar outro serviço de teste para enviar provas para sua [conta de teste](#tw-test-account).
+>Crie um serviço do **Twitter** por conta X. Como consequência, você deve criar outro serviço de teste para enviar provas para sua [conta de teste](#tw-test-account).
 >
->Cada serviço **Twitter** também deve ser criado por Adobe na instância MID. Entre em contato com o representante da Adobe para configurar seu ambiente.
+>Cada serviço do **Twitter** também deve ser criado pela Adobe na sua instância de mid-sourcing (MID). Entre em contato com seu representante da Adobe para configurar seu ambiente.
 >
 
 Para inserir as configurações, você deve acessar o console do cliente do Adobe Campaign e as permissões do aplicativo X.
@@ -106,7 +106,7 @@ Para inserir as configurações, você deve acessar o console do cliente do Adob
 Para verificar as configurações, é possível:
 
 * Edite o serviço **Twitter** que acabou de criar.
-* Navegue pela guia **[!UICONTROL Twitter page]**: a conta do Twitter deve ser exibida.
+* Navegue pela guia **[!UICONTROL Twitter page]**: sua conta do Twitter deve ser exibida.
   ![](assets/tw-page.png)
 
 ## Sincronizar a conta do X {#synchro-tw-accounts}
@@ -142,7 +142,7 @@ Além da conta X, crie uma conta X privada que possa ser usada para enviar [prov
 
 1. Crie uma nova conta X.
 1. Acesse as **Configurações** da conta.
-1. Navegue até **Privacidade e Segurança** e **Público-alvo e Marcação** e verifique a opção **Protect suas postagens**. Suas publicações e outras informações da conta só estarão visíveis para as pessoas que seguem você.
+1. Navegue até **Privacidade e Segurança** e **Público-alvo e Marcação** e marque a opção **Proteger suas postagens**. Suas publicações e outras informações da conta só estarão visíveis para as pessoas que seguem você.
 
 ![](assets/do-not-localize/social_tw_test_page.png)
 

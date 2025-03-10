@@ -5,9 +5,9 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1039'
 ht-degree: 14%
 
 ---
@@ -41,7 +41,7 @@ Em sua [implantação FDA](fda-deployment.md), o [!DNL Adobe Campaign] v8 pode s
 
 >[!NOTE]
 >
->Neste modelo de implantação, o banco de dados secundário [!DNL Snowflake] está disponível somente mediante solicitação. Para atualizar sua implantação com o [!DNL Snowflake], contate o Gerenciador de Transição de Adobe.
+>Neste modelo de implantação, o banco de dados secundário [!DNL Snowflake] está disponível somente mediante solicitação. Para atualizar sua implantação com o [!DNL Snowflake], contate o Adobe Transition Manager.
 >
 
 ### Implantação do Campaign Enterprise (FFDA) {#ac-deployment-ffda}
@@ -57,11 +57,11 @@ O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA
 
 >[!AVAILABILITY]
 >
->Esse recurso está disponível somente para clientes com configurações de várias instâncias MID.
+>Esse recurso está disponível somente para clientes com várias configurações de instâncias mid-sourcing (MID).
 
 Dependendo do pacote do Campaign v8, você recebe um número específico de instâncias de mid-sourcing responsáveis pela execução dos deliveries.
 
-Por padrão, as contas externas de todos os canais usam um modo de roteamento **[!UICONTROL Alternate]**, o que significa que uma entrega é enviada de cada instância intermediária de cada vez de forma alternada.
+Por padrão, as contas externas de todos os canais usam um modo de roteamento **[!UICONTROL Alternate]**, o que significa que uma entrega é enviada de cada instância de mid-sourcing (MID) de cada vez de forma alternada.
 
 Para garantir melhores desempenhos em termos de velocidade e escala, você pode permitir que os deliveries sejam divididos automaticamente em suas instâncias de mid-sourcing para serem entregues mais rapidamente aos recipients. Essa operação é transparente ao executar o delivery da instância de marketing: depois que o delivery é enviado, todos os logs são consolidados antes de serem enviados de volta para a instância de marketing em um único objeto de delivery.
 
@@ -78,7 +78,7 @@ Para fazer isso, contas externas adicionais com o modo de roteamento **[!UICONTR
 >
 >O modo de roteamento dividido é ativado por padrão para a conta &quot;Split Delivery - Email&quot;. Para todas as outras contas externas de canais, entre em contato com o Gerenciador de transição do Adobe para ativar a opção.
 >
->Por padrão, o valor de tamanho limite para dividir um delivery entre várias mids é de 100K. Você pode alterar esse valor na opção &quot;NmsDelivery_MultiMidSplitThreshold&quot; no menu **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Options]**.
+>Por padrão, o valor de tamanho limite para dividir um delivery entre várias instâncias mid-sourcing (MID) é de 100K. Você pode alterar esse valor na opção &quot;NmsDelivery_MultiMidSplitThreshold&quot; no menu **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Options]**.
 
 Para dividir contas externas como a conta padrão para enviar deliveries, é necessário alterar o provedor de roteamento em seus templates de delivery. Para fazer isso, siga estes passos:
 
@@ -123,8 +123,8 @@ Nessa arquitetura específica, a célula de execução é separada da instância
 Para usar esses recursos, os usuários do Adobe Campaign fazem logon na instância de controle para criar templates de mensagem transacional, gerar a pré-visualização da mensagem usando uma lista de propagação, exibir relatórios e monitorar a(s) instância(s) de execução.
 
 * Instância de execução única
-Ao interagir com uma instância de execução do Centro de Mensagens hospedada em Adobe, um sistema externo pode primeiro recuperar um token de sessão (que, por padrão, expira em 24 horas), fazendo uma chamada de api para o método de logon da sessão, usando um logon e uma senha de conta fornecidos.
-Em seguida, com o sessionToken fornecido pela instância de execução em resposta à chamada acima, o aplicativo externo pode fazer invocações de API do SOAP (rtEvents ou batchEvents) para enviar comunicações, sem a necessidade de incluir em cada chamada SOAP o logon e a senha da conta.
+Ao interagir com uma instância de execução do Centro de mensagens hospedada pela Adobe, um sistema externo pode primeiro recuperar um token de sessão (que, por padrão, expira em 24 horas), fazendo uma chamada de api para o método de logon da sessão, usando um logon e uma senha de conta fornecidos.
+Em seguida, com o sessionToken fornecido pela instância de execução em resposta à chamada acima, o aplicativo externo pode fazer invocações da API do SOAP (rtEvents ou batchEvents) para enviar comunicações, sem a necessidade de incluir em cada chamada do SOAP o logon e a senha da conta.
 
 * Várias instâncias de execução
 Em uma arquitetura de execução de várias células com várias instâncias de execução por trás de um balanceador de carga, o método de logon chamado pelo aplicativo externo passa pelo balanceador de carga: por esse motivo, uma autenticação baseada em token não pode ser usada. É necessária uma autenticação baseada em usuário/senha.

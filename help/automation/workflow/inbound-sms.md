@@ -5,10 +5,10 @@ description: Saiba mais sobre a atividade de workflow de SMS de entrada
 feature: Workflows, Channels Activity
 role: User
 exl-id: 2c12c45b-4429-4e60-bc96-ff70a95d4c9e
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 100%
+source-wordcount: '108'
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,7 @@ A atividade de **SMS de Entrada** permite baixar e processar mensagens de texto 
 
 A primeira guia da atividade de **SMS de Entrada** permite inserir os parâmetros de roteamento para mensagens SMS e inserir o script a ser executado no recebimento de cada mensagem. A segunda guia permite atribuir um cronograma à atividade e a terceira guia define as condições de expiração da atividade.
 
-1. **[!UICONTROL SMS routing]**: selecione a conta externa que será usada para recuperação do SMS. As contas externas são configuradas no nó **[!UICONTROL Administration > Platform > External accounts]** da árvore.
+1. **[!UICONTROL SMS routing]**: selecione a conta externa que será usada para recuperação do SMS. Contas externas são configuradas por meio do nó **[!UICONTROL Administration > Platform > External accounts]** da árvore. [Saiba mais](../../v8/config/external-accounts.md)
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
