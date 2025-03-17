@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: 1cb92c6075e9478b641b11eae52372a909258cd3
+source-git-commit: 286af4739c33b79c74b3cb7fa90ad167670a4b4c
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -33,7 +33,7 @@ O destino do arquivamento é o endereço de email CCO de sua escolha, que perman
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Service, [contate o Adobe](../start/campaign-faq.md#support){target="_blank"} para informar o endereço de email CCO a ser usado para arquivamento.
+>Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support){target="_blank"} para informar o endereço de email CCO a ser usado para arquivamento.
 
 ## Habilitar email Cco {#enable-bcc}
 
@@ -42,7 +42,7 @@ Para habilitar o CCO para um [modelo de entrega](create-templates.md) específic
 1. No explorador do Campaign, navegue até a pasta de templates do delivery. Por padrão, os modelos de entrega são armazenados na pasta **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Edite o template do delivery a ser atualizado com Cco.
 1. Clique no botão **[!UICONTROL Properties]**.
-1. Na guia **[!UICONTROL Delivery]**, marque a opção **[!UICONTROL Email BCC]**.
+1. Na guia **[!UICONTROL Delivery]**, marque a opção **[!UICONTROL Email BCC with enhanced Momentum]**.
 
    ![](assets/email-bcc.png)
 
