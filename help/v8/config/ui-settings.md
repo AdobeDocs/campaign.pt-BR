@@ -1,15 +1,14 @@
 ---
 title: Configurações da interface do Campaign
 description: Saiba como personalizar as configurações da interface do Campaign
-version: v8
 feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
+source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
 workflow-type: tm+mt
 source-wordcount: '1848'
-ht-degree: 40%
+ht-degree: 43%
 
 ---
 
@@ -32,7 +31,7 @@ Saiba como gerenciar pastas e modos de exibição em [esta página](../audiences
 
 ## Gerenciar e personalizar listas {#customize-lists}
 
-No console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, você pode adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
+No console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, é possível adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
 
 Além disso, é possível criar e salvar filtros.  Saiba mais sobre filtros em [esta página](../audiences/create-filters.md).
 
@@ -162,7 +161,7 @@ Você também pode configurar a classificação ou combinar critérios de classi
 
 ## Trabalhar com enumerações {#enumerations}
 
-Uma enumeração (também conhecida como &quot;lista discriminada&quot;) é uma lista de valores sugeridos pelo sistema para preencher campos. Use enumerações para padronizar os valores desses campos, ajuda com a entrada de dados ou uso em queries.
+Uma enumeração (também conhecida como &quot;lista discriminada&quot;) é uma lista de valores sugeridos pelo sistema para preencher campos. Enumerações permitem padronizar os valores desses campos, ajudam na entrada de dados ou podem ser usadas em consultas.
 
 A lista de valores aparece como uma lista suspensa na qual você pode selecionar o valor a ser inserido no campo. A lista suspensa também permite entrada preditiva: insira as primeiras letras e o aplicativo preencherá o restante.
 
