@@ -4,7 +4,7 @@ title: Propriedades do workflow
 description: Saiba mais sobre as propriedades do workflow do Campaign
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 63b7eaba3ea7b580d9b6c3c0e0c015c057539aa8
+source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 82%
@@ -55,7 +55,7 @@ Esta seção só é exibida nos workflows da campanha.
 
 * **[!UICONTROL Enable watchdog supervisor to keep workflow running permanently]**
 
-  Essa opção força os workflows a serem reiniciados automaticamente após um erro. Quando habilitado, a reinicialização verificará o status do workflow a cada 30 segundos e o reiniciará quando necessário. Para ajustar o intervalo de 30 segundos, você pode criar a opção técnica `XtkWorkflow_WatchdogTimerTimeout` e usar um tipo de dados integer para especificar o atraso desejado.
+  Essa opção força os workflows a serem reiniciados automaticamente após um erro. Quando habilitado, a reinicialização verificará o status do workflow a cada 30 segundos e o reiniciará quando necessário. Para ajustar o intervalo de 30 segundos, você pode criar a opção técnica `XtkWorkflow_WatchdogRestartTimerTimeout` e usar um tipo de dados integer para especificar o atraso desejado.
 
   >[!NOTE]
   >
