@@ -4,10 +4,10 @@ title: Propriedades do workflow
 description: Saiba mais sobre as propriedades do workflow do Campaign
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
+source-git-commit: 13723ebda8daf57c6885a05a2d583c0c38c86441
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 82%
+source-wordcount: '640'
+ht-degree: 80%
 
 ---
 
@@ -59,9 +59,11 @@ Esta seção só é exibida nos workflows da campanha.
 
   >[!NOTE]
   >
-  >Esta opção destina-se a usuários avançados e deve ser habilitada somente para **workflows técnicos**.
+  >* Esta opção está disponível a partir da v8.6.4.
   >
-  >Ela é habilitada por padrão para os fluxos de trabalho de replicação centralizados disponíveis com o pacote `fullFdaMkt`.
+  >* Esta opção destina-se a usuários avançados e deve ser habilitada somente para **workflows técnicos**.
+  >
+  >* Esta opção é habilitada por padrão para o contexto disponível de fluxos de trabalho de replicação centralizados de uma [implantação corporativa (FFDA)](enterprise-deployment.md). [Saiba mais](../../v8/architecture/replication.md)
 
 ### Gerenciamento de erros {#error-management}
 
