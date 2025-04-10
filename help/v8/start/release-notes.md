@@ -3,10 +3,10 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 49ce7d776eb626d6a927da7630ed7d0e2644fda3
+source-git-commit: ff874a8e06303625b4c96f49fdf4f303b50fb908
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 20%
+source-wordcount: '597'
+ht-degree: 17%
 
 ---
 
@@ -32,7 +32,7 @@ _sexta-feira, 10 de abril de 2025_
 >
 >Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
->Como um usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface do usuário da Web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+>Como um usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface do usuário da Web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration).
 
 ### Novos recursos {#features-8-7-4}
 
@@ -45,29 +45,6 @@ _sexta-feira, 10 de abril de 2025_
 Os seguintes problemas foram corrigidos nesta versão:
 
 NEO80245, NEO83559
-
-## Versão 8.7.3 {#release-8-7-3}
-
-_14 de fevereiro de 2025_
-
->[!AVAILABILITY]
->
->Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
->
->Como um usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface do usuário da Web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
-
-### Novos recursos {#features-8-7-3}
-
-* **Dynamic Reporting para mensagens transacionais** - Agora é possível monitorar as mensagens transacionais na interface do usuário do Dynamic Reporting. Esses relatórios oferecem ao profissional de marketing a capacidade de visualizar em tempo real todas as métricas e dimensões de relatórios das mensagens transacionais e o detalhamento das entregas enviadas por meio de um modelo. [Leia mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
-
-* **REST APIs de mensagens transacionais** - As APIs transacionais baseadas em eventos agora estão disponíveis para emails. [Leia mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
-
-### Correções {#fixes-8-7-3}
-
-Os seguintes problemas foram corrigidos nesta versão:
-
-NEO79373, NEO81908, NEO83081.
-
 
 ## Versão 8.6.4 {#release-8-6-4}
 
