@@ -3,10 +3,10 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
+source-git-commit: 49ce7d776eb626d6a927da7630ed7d0e2644fda3
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 18%
+source-wordcount: '737'
+ht-degree: 20%
 
 ---
 
@@ -18,11 +18,33 @@ Esta página lista novos recursos, melhorias e correções que vêm com o Campai
 
 **Nesta página**
 
-* Campaign v8.6 - [Versão 8.6.4](#release-8-6-4)
-* Campaign v8.7 - [Versão 8.7.3](#release-8-7-3)
+* [Versão 8.7.4](#release-8-7-4)
+* [Versão 8.7.3](#release-8-7-3)
+* [Versão 8.6.4](#release-8-6-4)
 
 >[!ENDSHADEBOX]
 
+## Versão 8.7.4 {#release-8-7-4}
+
+_sexta-feira, 10 de abril de 2025_
+
+>[!AVAILABILITY]
+>
+>Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
+>
+>Como um usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface do usuário da Web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+
+### Novos recursos {#features-8-7-4}
+
+* **Suporte à API REST de SMS** - A API REST de Mensagens Transacionais agora está disponível para o canal de SMS. Quando email e mobilePhone estão presentes na carga, você pode usar o campo &quot;wishedChannel&quot; para especificar o canal. Se não for fornecido, o e-mail será usado por padrão, a menos que wishedChannel solicite explicitamente SMS.
+
+* **Entregas multilíngues** - A partir da versão de abril da interface da Web do Campaign, você poderá enviar vários emails em diferentes idiomas e acessar os relatórios dinâmicos relacionados. Esse recurso só estará disponível na interface da Web do Adobe Campaign no final de abril e exigirá uma atualização do servidor para o Campaign v8.7.4.
+
+### Correções {#fixes-8-7-4}
+
+Os seguintes problemas foram corrigidos nesta versão:
+
+NEO80245, NEO83559
 
 ## Versão 8.7.3 {#release-8-7-3}
 
@@ -32,13 +54,13 @@ _14 de fevereiro de 2025_
 >
 >Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
->Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface da web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+>Como um usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface do usuário da Web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Novos recursos {#features-8-7-3}
 
-* **Dynamic Reporting para mensagens transacionais** - Agora é possível monitorar as mensagens transacionais na interface do usuário do Dynamic Reporting. Esses relatórios oferecem ao profissional de marketing a capacidade de visualizar em tempo real todas as métricas e dimensões de relatórios das mensagens transacionais e o detalhamento das entregas enviadas por meio de um modelo. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
+* **Dynamic Reporting para mensagens transacionais** - Agora é possível monitorar as mensagens transacionais na interface do usuário do Dynamic Reporting. Esses relatórios oferecem ao profissional de marketing a capacidade de visualizar em tempo real todas as métricas e dimensões de relatórios das mensagens transacionais e o detalhamento das entregas enviadas por meio de um modelo. [Leia mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
 
-* **REST APIs de mensagens transacionais** - As APIs transacionais baseadas em eventos agora estão disponíveis para emails. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
+* **REST APIs de mensagens transacionais** - As APIs transacionais baseadas em eventos agora estão disponíveis para emails. [Leia mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
 
 ### Correções {#fixes-8-7-3}
 
@@ -60,7 +82,7 @@ _15 de janeiro de 2025_
 
 ### Melhorias de segurança {#security-8-6-4}
 
-A conexão com soluções e aplicativos da Adobe por meio da conta externa **[!UICONTROL Adobe Experience Cloud]** foi atualizada para reforçar a segurança.
+A conexão com soluções e aplicativos da Adobe por meio da conta externa da **[!UICONTROL Adobe Experience Cloud]** foi atualizada para reforçar a segurança.
 
 <!--
 ### Connection to Campaign {#ims-8-6-4}
