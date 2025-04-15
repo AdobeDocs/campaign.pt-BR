@@ -3,16 +3,26 @@ title: Notas de versão do Campaign v8 (console) 2025
 description: Lista de recursos e melhorias disponíveis com as versões do Campaign v8 de 2025
 feature: Release Notes
 exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
-source-git-commit: ff874a8e06303625b4c96f49fdf4f303b50fb908
+source-git-commit: 66e4b59915eae595b28076622f7bcfb5b5a0ffa4
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 66%
+source-wordcount: '428'
+ht-degree: 64%
 
 ---
 
 # Notas de versão de 2025 {#2025-rn}
 
 Esta página lista novos recursos, melhorias e correções que vêm com as **Versões do Campaign v8 de 2025**. As versões mais recentes estão listadas em [esta página](release-notes.md).
+
+>[!BEGINSHADEBOX]
+
+**Nesta página**
+
+* Campaign v8.7 - [Versão 8.7.2](#release-8-7-2) | [Versão 8.7.3](#release-8-7-3)
+
+
+>[!ENDSHADEBOX]
+
 
 ## Versão 8.7.3 {#release-8-7-3}
 
@@ -22,13 +32,13 @@ _14 de fevereiro de 2025_
 >
 >Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
->Como um usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface do usuário da Web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration).
+>Como um usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface do usuário da Web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Novos recursos {#features-8-7-3}
 
-* **Dynamic Reporting para mensagens transacionais** - Agora é possível monitorar as mensagens transacionais na interface do usuário do Dynamic Reporting. Esses relatórios oferecem ao profissional de marketing a capacidade de visualizar em tempo real todas as métricas e dimensões de relatórios das mensagens transacionais e o detalhamento das entregas enviadas por meio de um modelo. [Leia mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/reporting/get-started-reporting)
+* **Dynamic Reporting para mensagens transacionais** - Agora é possível monitorar as mensagens transacionais na interface do usuário do Dynamic Reporting. Esses relatórios oferecem ao profissional de marketing a capacidade de visualizar em tempo real todas as métricas e dimensões de relatórios das mensagens transacionais e o detalhamento das entregas enviadas por meio de um modelo. [Leia mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
 
-* **REST APIs de mensagens transacionais** - As APIs transacionais baseadas em eventos agora estão disponíveis para emails. [Leia mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages)
+* **REST APIs de mensagens transacionais** - As APIs transacionais baseadas em eventos agora estão disponíveis para emails. [Leia mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
 
 ### Correções {#fixes-8-7-3}
 
@@ -44,7 +54,7 @@ _3 de setembro de 2024_
 >
 >Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
->Como um usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface do usuário da Web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration).
+>Como um usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface do usuário da Web do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Novos recursos {#new-8-7-2}
 
@@ -52,7 +62,7 @@ _3 de setembro de 2024_
 
 * **Notificação por push avançada (GA)**: agora, você pode enviar notificações por push avançadas. A notificação por push avançada é uma forma aprimorada de notificação em dispositivos móveis que vai além das mensagens de texto simples, incorporando elementos multimídia, como imagens, botões interativos ou outros conteúdos de mídia avançada. Com esta versão, um conjunto de modelos para notificações por push avançadas agora está disponível para aplicativos iOS e Android. [Leia mais](../send/rich-push-android.md).
 
-* **Identidade visual**: agora, as opções de identidade visual estão disponíveis para todos os canais, inclusive SMS e correspondência direta. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=pt-BR)
+* **Identidade visual**: agora, as opções de identidade visual estão disponíveis para todos os canais, inclusive SMS e correspondência direta. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=pt-BR){target="_blank"}
 
 ### Correções {#fixes-8-7-2}
 
