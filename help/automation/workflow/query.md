@@ -5,10 +5,10 @@ description: Saiba mais sobre a atividade do workflow de query
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: cc0d1b7f662d39443ef82412d6df671af4ac8d97
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 100%
+source-wordcount: '1606'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,11 @@ ht-degree: 100%
 
 Uma consulta permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado do query e inserir dados adicionais nele.
 Para obter mais informações sobre amostras de query, consulte [esta seção](querying-recipient-table.md).
+
+>[!NOTE]
+>
+>A Interface do usuário da Web do Adobe Campaign apresenta um poderoso modelador de consultas que simplifica o processo de filtragem de bancos de dados para selecionar destinos específicos com base em vários critérios, permitindo que você crie e gerencie sua consulta com mais facilidade. Para saber mais sobre o modelador de consultas para a interface do Web, consulte a [documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
+
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
@@ -41,7 +46,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
    ![](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
 
-1. Defina os públicos usando o assistente. Os campos a serem inseridos podem variar de acordo com o tipo de target. Você pode visualizar o público-alvo com seus critérios atuais usando a guia **[!UICONTROL Preview]**.
+1. Defina os públicos usando o assistente. Os campos a serem inseridos podem variar de acordo com o tipo de público-alvo. Você pode visualizar o público-alvo com seus critérios atuais usando a guia **[!UICONTROL Preview]**.
 
    ![](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
 
