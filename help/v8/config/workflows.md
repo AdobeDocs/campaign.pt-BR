@@ -1,18 +1,18 @@
 ---
 title: Gerenciar e automatizar processos com fluxos de trabalho do Adobe Campaign
-description: Introdução a workflows
+description: Introdução aos fluxos de trabalho
 feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 8e1401ef0aada30d941905936b45c6c1819c83a7
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 20%
+source-wordcount: '1344'
+ht-degree: 21%
 
 ---
 
-# Introdução a workflows{#gs-with-workflows}
+# Introdução aos fluxos de trabalho{#gs-with-workflows}
 
 Configure o Campaign para aproveitar os poderosos recursos de automação de campanha de marketing.
 
@@ -25,6 +25,11 @@ Você pode configurar:
 * Envio automático de relatório
 * Eventos acionados
 
+>[!NOTE]
+>
+>A interface do usuário da Web do Adobe Campaign vem com uma tela recriada para fluxos de trabalho, permitindo criar jornadas do cliente mais dinâmicas e personalizadas. Para saber mais sobre os fluxos de trabalho da interface do usuário da Web, consulte a [documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
+
+
 ## Projetar e usar fluxos de trabalho {#gs-ac-wf}
 
 Use os workflows do Adobe Campaign para melhorar a velocidade e a escala de cada aspecto de suas campanhas de marketing, desde a criação de segmentos e a preparação de mensagens até a entrega.
@@ -33,9 +38,9 @@ Saiba como projetar fluxos de trabalho nestes [casos de uso completos](#end-to-e
 
 Saiba mais sobre a interface e a execução do usuário de workflows nestas páginas:
 
-* [Introdução aos fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target="_blank"}
+* [Introdução a workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target="_blank"}
 
-* [Práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [Práticas recomendadas para fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
 
 * [Fluxos de trabalho técnicos internos](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}
 
@@ -49,8 +54,8 @@ Saiba mais sobre as atividades de fluxo de trabalho disponíveis em [esta seçã
 
 As atividades do workflow são agrupadas por categoria. As quatro categorias de atividade estão disponíveis:
 
-* [Atividades de direcionamento](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"}: consulta, lista de leitura, enriquecimento, união e muito mais
-* [Atividades de controle de fluxo](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"}: Agendador, Bifurcação, Alerta, Sinal externo e muito mais
+* [Atividades de direcionamento](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"}: Consulta, Lista de leitura, Enriquecimento, União e muito mais
+* [Atividades de controle de fluxo](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"}: Scheduler, Fork, Alert, External signal e muito mais
 * [Atividades de ação](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}: entregas entre canais, código Javascript, atividades CRM, Atualização de agregação e muito mais
 * [Atividades de evento](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html){target="_blank"}: transferência de arquivos, download da Web e muito mais
 
@@ -94,7 +99,7 @@ Depois de criar o fluxo de trabalho, você pode acessar opções adicionais com 
 
 Saiba mais sobre **Propriedades do fluxo de trabalho** em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html){target="_blank"}.
 
-Na guia **[!UICONTROL Execution]** do **[!UICONTROL Properties]** do fluxo de trabalho, você pode vincular o fluxo de trabalho a depósitos diferentes e otimizar o gerenciamento da carga de trabalho. Para obter mais informações sobre **Warehouses**, consulte a [documentação sobre Snowflake](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
+Na guia **[!UICONTROL Execution]** do **[!UICONTROL Properties]** do fluxo de trabalho, você pode vincular o fluxo de trabalho a depósitos diferentes e otimizar o gerenciamento da carga de trabalho. Para obter mais informações sobre **Warehouses**, consulte a [documentação do Snowflake](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
 
 ![](assets/warehouse.png)
 
@@ -137,12 +142,12 @@ Nesta seção você encontrará vários casos de uso que usam os recursos dos wo
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 
-* [Enviar um email de aniversário](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR){target="_blank"}
+* [Enviar email de aniversário](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR){target="_blank"}
 
   Este caso de uso apresenta como planejar o envio de um e-mail recorrente para uma lista de destinatários no dia de seus aniversários.
 
 * [Carregar conteúdo de entrega](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}
-Quando o conteúdo do delivery estiver disponível em um arquivo HTML localizado em um servidor remoto, é possível carregá-lo facilmente nos deliveries do Adobe Campaign.
+Quando o conteúdo do delivery estiver disponível em um arquivo do HTML localizado em um servidor remoto, é possível carregá-lo facilmente nos deliveries do Adobe Campaign.
 
 * [Fluxo de trabalho de entrega entre canais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/cross-channel-delivery-workflow.html){target="_blank"}
 Saiba como criar um fluxo de trabalho de delivery entre canais. O objetivo é segmentar um público dos recipients do banco de dados em diferentes grupos e enviar um email para o primeiro grupo e um SMS para o outro.
