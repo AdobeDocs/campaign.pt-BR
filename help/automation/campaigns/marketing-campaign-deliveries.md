@@ -4,8 +4,9 @@ title: Entregas de campanha de marketing
 description: Saiba mais sobre entregas de campanha de marketing
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 40%
@@ -14,7 +15,7 @@ ht-degree: 40%
 
 # Entregas de campanha de marketing {#marketing-campaign-deliveries}
 
-Orquestrar suas entregas entre canais em suas campanhas: eles simplificam suas comunicações com o Adobe Campaign por meio de emails personalizados, SMS, notificações por push e mensagens no aplicativo. Você pode usar mídia avançada como vídeos, emojis ou GIF e integrá-los diretamente.
+Orquestrar suas entregas entre canais em suas campanhas: eles simplificam suas comunicações com o Adobe Campaign por meio de emails personalizados, SMS, notificações por push e mensagens no aplicativo. Você pode usar mídia avançada como vídeos, emojis ou GIFs e integrá-los diretamente.
 
 Os deliveries podem ser criados através do painel da campanha, de um fluxo de trabalho de campanha ou diretamente através da visão geral dos deliveries. Quando criados a partir de uma campanha, as entregas serão vinculadas a essa campanha e consolidadas em seu nível.
 

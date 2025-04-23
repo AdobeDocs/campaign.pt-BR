@@ -4,8 +4,9 @@ title: Templates de campanha de marketing
 description: Templates de campanha de marketing
 feature: Campaigns, Templates
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 55%
@@ -59,7 +60,7 @@ O link **[!UICONTROL Advanced campaign parameters...]** permite habilitar e desa
 
 ![](assets/campaign-template-select-modules.png)
 
-Se uma funcionalidade não estiver selecionada, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecem na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha e as guias disponíveis coincidem com as funcionalidades selecionadas no template. Por exemplo, a funcionalidade **Despesas e objetivos** não está habilitada, a guia **[!UICONTROL Budget]** correspondente não é exibida em campanhas baseadas nesse modelo.
+Se uma funcionalidade não estiver selecionada, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecerão na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha e as guias disponíveis coincidem com as funcionalidades selecionadas no template. Por exemplo, a funcionalidade **Despesas e objetivos** não está habilitada, a guia **[!UICONTROL Budget]** correspondente não é exibida em campanhas baseadas nesse modelo.
 
 Além disso, os atalhos para as janelas de configuração são adicionados ao painel de campanha. Quando uma funcionalidade é habilitada, um link direto dá acesso a ela a partir do painel de campanha.
 

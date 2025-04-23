@@ -4,8 +4,9 @@ title: Configurar e gerenciar o processo de aprovação
 description: Saiba como gerenciar aprovações de campanhas de marketing
 feature: Approvals, Campaigns
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '2281'
 ht-degree: 55%
@@ -175,9 +176,9 @@ Essa opção permite que você defina uma pessoa encarregada da edição de cont
 
 1. Depois de criar uma nova entrega, a pessoa responsável pela campanha clica no link **[!UICONTROL Submit content editing]** no painel de campanha para iniciar o ciclo de edição de conteúdo.
 
-1. A pessoa responsável pela edição de conteúdo receberá um e-mail informando que o conteúdo está disponível.
+1. A pessoa responsável pela edição de conteúdo receberá um email informando que o conteúdo está disponível.
 
-1. Em seguida, eles podem fazer logon no console do cliente, abrir o delivery e editá-lo usando um assistente simplificado para alterar o assunto, o conteúdo de HTML e de texto e enviar provas.
+1. Em seguida, eles podem fazer logon no console do cliente, abrir o delivery e editá-lo usando um assistente simplificado para alterar o assunto, o conteúdo do HTML e do texto e enviar provas.
 
    >[!NOTE]
    >
