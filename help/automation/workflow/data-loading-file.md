@@ -5,10 +5,10 @@ description: Saiba mais sobre a atividade de workflow de carregamento de dados (
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 100%
+source-wordcount: '1097'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ A seção superior da janela de configuração dessa atividade permite definir o
 
 >[!CAUTION]
 >
->Somente os arquivos de estrutura simples são suportados (por exemplo, CSV, TXT e etc.). Não é recomendável usar o formato XML.
+>Somente os arquivos de estrutura simples são suportados (por exemplo, CSV, TXT e etc.). O uso do formato XML não é recomendado. Com o console do cliente, você pode carregar arquivos de até 150 MB. Na Interface do usuário da Web, a atividade Load file tem um limite de 50 MB. [Saiba mais](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 

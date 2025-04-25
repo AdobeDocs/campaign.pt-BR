@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 55%
+source-wordcount: '1177'
+ht-degree: 54%
 
 ---
 
@@ -30,7 +30,7 @@ Para criar um template de mensagem, siga as etapas abaixo:
    ![](assets/messagecenter_create_model_002.png)
 
 1. Altere seu rótulo se necessário.
-1. Selecione o tipo de evento que corresponda à mensagem que deseja enviar. Os tipos de evento destinados a serem processados pelo Adobe Campaign devem ser criados previamente. [Saiba mais](#create-event-types)
+1. Selecione o tipo de evento que corresponda à mensagem que deseja enviar. Os tipos de evento destinados a serem processados pelo Adobe Campaign devem ser criados previamente. [Saiba mais](../send/transactional.md#create-event-types)
 
    ![](assets/messagecenter_create_model_003.png)
 
@@ -86,7 +86,7 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Inserir dados de teste. Consulte [esta seção](#personalization-data).
+1. Inserir dados de teste. [Saiba mais sobre dados de personalização na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-data.html){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
