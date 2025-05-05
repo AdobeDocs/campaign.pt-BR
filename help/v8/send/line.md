@@ -16,7 +16,7 @@ ht-degree: 33%
 
 O LINE é um aplicativo para mensagens instantâneas, chamadas de voz e vídeo gratuitas, disponível em todos os dispositivos móveis e para PC. Você pode usar o Adobe Campaign para enviar mensagens LINE.
 
-Consulte esta [amostra end-to-end](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message){target="_blank"} na documentação do Campaign Classic v7 para criar e enviar sua primeira entrega LINE.
+Consulte esta [amostra end-to-end](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=pt-BR#example--create-and-send-a-personalized-line-message){target="_blank"} na documentação do Campaign Classic v7 para criar e enviar sua primeira entrega LINE.
 
 ![](../assets/do-not-localize/LINE-msg.jpeg){width="50%" align="left"}
 

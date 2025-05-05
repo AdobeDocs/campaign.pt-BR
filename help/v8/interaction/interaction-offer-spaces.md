@@ -156,4 +156,4 @@ Se um recipient não estiver qualificado para ofertas, isso será mostrado na vi
 
 A visualização pode ignorar contextos quando eles são restritos a um espaço. Esse é o caso quando o schema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada.
 
-Para obter mais informações, consulte esta amostra na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.
+Para obter mais informações, consulte esta amostra na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=pt-BR){target="_blank"}.

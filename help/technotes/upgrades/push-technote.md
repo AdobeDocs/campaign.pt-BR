@@ -50,7 +50,7 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 * O arquivo JSON da conta do serviço SDK do administrador do Android Firebase é necessário para mover o aplicativo móvel para HTTP v1. Saiba como obter este arquivo na [documentação do Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* Para o Campaign Classic v7, o suporte de HTTP v1 foi adicionado na versão 20.3.1. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar seu ambiente para a [compilação mais recente de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
+* Para o Campaign Classic v7, o suporte de HTTP v1 foi adicionado na versão 20.3.1. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar seu ambiente para a [compilação mais recente de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=pt-BR){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
 
 * Como usuário local do Campaign Classic v7, você deve atualizar os servidores de execução Marketing e Tempo real.
 
@@ -58,7 +58,7 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 * Sobre a conta externa Android routing:
 
-   * Como usuário local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+   * Como usuário local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
 
    * Para implantações híbridas, hospedadas e gerenciadas de Cloud Service, você também deve se conectar com a equipe de Atendimento ao cliente do Adobe para validar se o conector `androidPushConnectorV2.js (nms)` está selecionado na conta externa de roteamento Android do seu servidor Mid-sourcing.
 
@@ -212,7 +212,7 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 #### Pré-requisitos {#ios-transition-prerequisites}
 
-* Para o Campaign Classic v7, o suporte ao modo **Autenticação baseada em token** foi adicionado na versão 20.2. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para essa alteração é atualizar seu ambiente para a [compilação mais recente de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o modo de **autenticação baseada em token** é compatível com todas as versões, e nenhuma atualização é necessária.
+* Para o Campaign Classic v7, o suporte ao modo **Autenticação baseada em token** foi adicionado na versão 20.2. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para essa alteração é atualizar seu ambiente para a [compilação mais recente de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=pt-BR){target="_blank"}. Para o Campaign v8, o modo de **autenticação baseada em token** é compatível com todas as versões, e nenhuma atualização é necessária.
 
 * Você precisa de uma chave de assinatura de token de autenticação APNs para gerar os tokens que seu servidor usa. Você solicita essa chave da sua conta de desenvolvedor do Apple, conforme explicado na [Documentação do desenvolvedor do Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 

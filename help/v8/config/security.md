@@ -52,7 +52,7 @@ Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga
 
 * **Adicionar captchas em aplicativos da Web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
-Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
+Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=pt-BR#installing-campaign-classic){target="_blank"}.
 
 
 ## Personalização
@@ -147,4 +147,4 @@ Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga
 
 * **Adicionar captchas em aplicativos da Web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
-Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
+Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=pt-BR#installing-campaign-classic){target="_blank"}.

@@ -44,7 +44,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para ativar e execu
 
 A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
-Saiba mais sobre emails de entrada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
+Saiba mais sobre emails de entrada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=pt-BR){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -118,7 +118,7 @@ No contexto de mensagens transacionais, as instâncias de execução são vincul
 
 ## Contas externas de Dados de Transferência {#transfer-data-external-accounts}
 
-Essas contas externas podem ser usadas para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Saiba mais sobre **Transferência de arquivos** em fluxos de trabalho em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+Essas contas externas podem ser usadas para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Saiba mais sobre **Transferência de arquivos** em fluxos de trabalho em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
 
 * **FTP e SFTP** - A conta externa **FTP** permite configurar e testar o acesso a um servidor fora do Adobe Campaign. Para configurar conexões com sistemas externos, como servidores SFTP ou FTP 898 usados para transferências de arquivos, você pode criar suas próprias contas externas.
 
@@ -126,7 +126,7 @@ Essas contas externas podem ser usadas para importar ou exportar dados para o Ad
 
   >[!NOTE]
   >
-  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
+  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=pt-BR){target="_blank"}.
 
 * **Serviço de Armazenamento Simples da Amazon (S3)** - O conector do **AWS S3** pode ser usado para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Como você está configurando essa nova conta externa, é necessário fornecer os seguintes detalhes:
 

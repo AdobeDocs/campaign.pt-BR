@@ -18,11 +18,11 @@ ht-degree: 31%
 
 Os recursos de rastreamento de campanha rastreiam as mensagens enviadas e ajudam a analisar o comportamento dos recipients: abrir, clicar em links, assinar/cancelar assinatura e muito mais. Você pode acessar logs dedicados, relatórios e métricas, consultar o banco de dados para revisar dados coletados e muito mais.
 
-Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#tracking-tab){target="_blank"}.
+Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=pt-BR#tracking-tab){target="_blank"}.
 
 O painel de delivery é uma ferramenta essencial para monitorar seus deliveries e possíveis problemas durante o envio de mensagens.
 
-Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"}.
+Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=pt-BR#sending-messages){target="_blank"}.
 
 Os principais recursos de rastreamento disponíveis no Campaign estão listados abaixo.
 
@@ -34,32 +34,32 @@ Os principais recursos de rastreamento disponíveis no Campaign estão listados 
 
 Você pode rastrear a recepção de mensagens e a ativação dos links inseridos no conteúdo da mensagem para entender melhor o comportamento dos recipients.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html#sending-messages){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=pt-BR#sending-messages){target="_blank"}
 
 **Rastreamento de URL**
 
 As opções de rastreamento podem ser configuradas por meio da ativação ou desativação de URLs rastreados.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/personalizing-url-tracking.html#sending-messages){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/personalizing-url-tracking.html?lang=pt-BR#sending-messages){target="_blank"}
 
 
 **Personalização do link rastreado**
 
 Os recursos de rastreamento de campanha permitem adicionar links em emails que podem ser personalizados e que oferecem suporte ao rastreamento.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/tracking-personalized-links/tracking-personalized-links.html#sending-messages){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/tracking-personalized-links/tracking-personalized-links.html?lang=pt-BR#sending-messages){target="_blank"}
 
 **Logs de rastreamento**
 
 O fluxo de trabalho técnico **Rastreamento** recupera os dados de rastreamento depois que a entrega é enviada e o rastreamento é ativado. Esses dados podem ser encontrados na guia Rastreamento do seu delivery.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/accessing-the-tracking-logs.html#sending-messages){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/accessing-the-tracking-logs.html?lang=pt-BR#sending-messages){target="_blank"}
 
 **Testar o rastreamento**
 
 Antes de enviar as mensagens com o rastreamento, você pode testar o rastreamento na mirror page, em logs de email e em links.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/testing-tracking.html#sending-messages){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/testing-tracking.html?lang=pt-BR#sending-messages){target="_blank"}
 
 ### Rastreamento de aplicativo web {#web-application-tracking}
 
@@ -69,13 +69,13 @@ Antes de enviar as mensagens com o rastreamento, você pode testar o rastreament
 
 Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicação web, como formulários e pesquisas online.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/tracking-a-web-application.html#designing-content){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/tracking-a-web-application.html?lang=pt-BR#designing-content){target="_blank"}
 
 **Recusar rastreamento da aplicação web**
 
 A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou páginas de aterrissagem para permitir que os usuários recusem.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/web-application-tracking-opt-out.html#designing-content){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/web-application-tracking-opt-out.html?lang=pt-BR#designing-content){target="_blank"}
 
 ### Rastreamento de relatórios {#tracking-reports}
 
@@ -85,25 +85,25 @@ A opção de recusar o rastreamento de aplicações web permite que você interr
 
 Este relatório fornece estatísticas sobre aberturas, cliques e transações e permite rastrear o impacto de marketing do delivery.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/about-message-tracking.html#tracking-reports){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/about-message-tracking.html?lang=pt-BR#tracking-reports){target="_blank"}
 
 **Fluxos de clique e URLs**
 
 Este relatório mostra a lista de páginas visitadas após uma entrega.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html#urls-and-click-streams){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=pt-BR#urls-and-click-streams){target="_blank"}
 
 **Pessoa/pessoas e destinatários**
 
 Entenda melhor a diferença de rastreamento entre uma pessoa/pessoas e um recipient no Adobe Campaign com este exemplo.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html#reporting){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html?lang=pt-BR#reporting){target="_blank"}
 
 **Indicadores de rastreamento**
 
 Este relatório combina os principais indicadores para rastrear o comportamento dos recipients ao receber o delivery, como abertura, taxas de click-through e fluxos de cliques.
 
-[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html#reporting){target="_blank"}
+[Saiba mais na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=pt-BR#reporting){target="_blank"}
 
 **Cálculo do indicador**
 
@@ -123,11 +123,11 @@ Saiba mais sobre as informações que você pode monitorar após o envio de uma 
 
 ### Monitorar workflows
 
-Saiba como monitorar a execução do fluxo de trabalho em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html)
+Saiba como monitorar a execução do fluxo de trabalho em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR)
 
 ### Monitorar sua instância
 
-As diretrizes de monitoramento de instância estão disponíveis na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html#monitoring-campaign-classic){target="_blank"}
+As diretrizes de monitoramento de instância estão disponíveis na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=pt-BR#monitoring-campaign-classic){target="_blank"}
 
 Use a interface de autoatendimento da trilha de auditoria para monitorar alterações feitas na instância. A trilha de auditoria captura em tempo real uma lista abrangente de ações e eventos que ocorrem na sua instância do Adobe Campaign. Você pode acessar um histórico de dados para ajudar a responder perguntas como: o que aconteceu com seus workflows e quem os atualizou pela última vez ou o que seus usuários fizeram na instância.
 

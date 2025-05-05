@@ -26,7 +26,7 @@ Dois tipos de ambientes estão disponíveis:
 
 É possível exportar e importar pacotes de um ambiente para outro.
 
-Saiba mais sobre pacotes na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
+Saiba mais sobre pacotes na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=pt-BR){target="_blank"}
 
 ## Modelos de implantação {#ac-deployment}
 

@@ -149,7 +149,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
 >[!CAUTION]
 >
->Não é possível enviar mais de 250 mensagens diretas por dia. Para não exceder esse limite, é possível entregar em ondas. Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}.
+>Não é possível enviar mais de 250 mensagens diretas por dia. Para não exceder esse limite, é possível entregar em ondas. Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=pt-BR#sending-using-multiple-waves){target="_blank"}.
 
 
 ## Acessar dados de rastreamento {#tw-tracking}

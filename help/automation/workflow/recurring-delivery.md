@@ -54,4 +54,4 @@ Este vídeo explica como configurar uma entrega recorrente e uma atividade de sc
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
