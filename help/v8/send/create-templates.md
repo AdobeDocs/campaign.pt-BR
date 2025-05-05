@@ -141,18 +141,18 @@ Essa ação gera um delivery na pasta associada ao template. O nome dessa entreg
 
 O vídeo a seguir mostra como configurar um modelo para uma entrega ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3409250?quality=12&captions=por_br)
 
 ### Como configurar propriedades de templates de entrega
 
 O vídeo a seguir mostra como definir as propriedades do template de entrega e explica em detalhes cada propriedade.
 
->[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3443406?quality=12&captions=por_br)
 
 ### Como implantar um template de entrega ad-hoc
 
 Este vídeo explica como implantar um template de entrega de email ad-hoc, bem como a diferença entre uma entrega de email e um workflow de entrega.
 
->[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3444962?quality=12&captions=por_br)
 
 Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
