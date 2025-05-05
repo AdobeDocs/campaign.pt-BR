@@ -51,7 +51,7 @@ Você pode configurar os valores exibidos alterando a escala de tempo: visualiza
 >
 >Você também pode monitorar o número de deliveries enviados por hora usando o [Painel de Controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/sftp-storage-management){target="_blank"}.
 >
->O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de administrador estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).{target="_blank"}
+>O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de administrador estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel){target="_blank"}.
 >
 
 ## Atividades do usuário {#user-activities}
