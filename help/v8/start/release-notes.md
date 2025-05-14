@@ -3,10 +3,10 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 5ece3ca4ebf9f3973d9cbd1a00ea57b29c1f2e93
+source-git-commit: 6d2425f7e7f35f5461151790fbda2bef2959bff4
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 33%
+ht-degree: 35%
 
 ---
 
@@ -42,7 +42,7 @@ _sábado, 25 de abril de 2025_
 
 * Para aumentar a segurança de todas as comunicações entre aplicativos, o mTLS agora é compatível com chamadas de API externas.
 
-* Agente de transferência de correspondência (MTA): correção do MTA secundário órfão, que ficava preso no status **[!UICONTROL Start pending]**.
+* Agente de transferência de correspondência (MTA): correção do MTA filho órfão, que ficava preso no status **[!UICONTROL Start pending]**.
 
 ### Correções {#fixes-8-6-5}
 
@@ -62,7 +62,7 @@ _sexta-feira, 10 de abril de 2025_
 
 ### Novos recursos {#features-8-7-4}
 
-* **Suporte à API REST de SMS** - A API REST de Mensagens Transacionais agora está disponível para o canal de SMS. Quando email e mobilePhone estão presentes na carga, você pode usar o campo &quot;wishedChannel&quot; para especificar o canal. Se não for fornecido, o e-mail será usado por padrão, a menos que wishedChannel solicite explicitamente SMS.
+* **Suporte à API REST de SMS** - A API REST de Mensagens Transacionais agora está disponível para o canal de SMS. Quando email e mobilePhone estão presentes no conteúdo, você pode usar o campo “wishedChannel” para especificar o canal. Se não for fornecido, o e-mail será usado por padrão, a menos que wishedChannel solicite explicitamente SMS.
 
 * **Entregas multilíngues** - A partir da versão de abril da interface da Web do Campaign, você poderá enviar vários emails em diferentes idiomas e acessar os relatórios dinâmicos relacionados. Esse recurso só estará disponível na interface da Web do Adobe Campaign no final de abril e exigirá uma atualização do servidor para o Campaign v8.7.4.
 
