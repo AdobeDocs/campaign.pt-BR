@@ -5,10 +5,10 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 5bd8dbba-7a06-4737-bc5a-60354f91c709
-source-git-commit: 0513b9f65e9431f5207b384a0e2d8c5aeb8e209f
+source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 12%
+source-wordcount: '310'
+ht-degree: 10%
 
 ---
 
@@ -30,6 +30,12 @@ Para editar permissões em uma pasta específica do Campaign, siga as etapas aba
 * Para **autorizar um grupo ou operador**, clique no botão **[!UICONTROL Add]** e selecione o grupo ou operador para atribuir autorizações para esta pasta.
 * Para **proibir um grupo ou operador**, clique em **[!UICONTROL Delete]** e selecione o grupo ou operador para remover a autorização para esta pasta.
 * Para **selecionar os direitos atribuídos a um grupo ou a um operador**, selecione o grupo ou operador, selecione os direitos de acesso que deseja conceder e desmarque os outros.
+
+>[!NOTE]
+>
+>Você não deve ser capaz de criar um objeto para o qual você não tem pelo menos uma pasta com direitos de gravação.
+>
+>Você não precisa ser um administrador para criar fragmentos, mas deve ter direitos de gravação em pelo menos uma pasta de &quot;Fragmento visual de conteúdo&quot;. Caso contrário, você não poderá criar um fragmento visual.
 
 ## Propagar permissões {#propagate-permissions}
 

@@ -5,10 +5,10 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: d50c746d11b6f1bb0b5af0d5ddab5660b99dc359
+source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 99%
+source-wordcount: '695'
+ht-degree: 90%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 99%
          + [Instância independente](send/sms/sms-standalone-instance.md)
          + [Infraestrutura de mid-sourcing](send/sms/sms-mid-sourcing.md)
          + [Descrição do conector de SMPP](send/sms/smpp-connector-delivery.md)
-      + Criar um SMS {#create-sms}
+      + Criar um SMS  {#create-sms}
          + [Criar uma entrega de SMS](send/sms/create-sms.md)
          + [Definição do conteúdo](send/sms/sms-content.md)
          + [Selecionar o público-alvo](send/sms/sms-audience.md)
@@ -80,18 +80,19 @@ ht-degree: 99%
    + [Mensagens LINE](send/line.md)
    + [Correspondência direta](send/direct-mail.md)
    + [X (Twitter)](send/twitter.md)
+   + [Canal externo personalizado](send/custom-channel.md)
    + Personalizar conteúdo {#personalize}
       + [Introdução à personalização](send/personalize.md)
       + [Dados de personalização](send/personalization-data.md)
       + [Adicionar campos de personalização](send/personalization-fields.md)
       + [Usar blocos de personalização](send/personalization-blocks.md)
       + [Criar condições](send/conditions.md)
-   + Validar e enviar a entrega {#validate}
+   + Validar e enviar o delivery {#validate}
       + [Visualização e provas](send/preview-and-proof.md)
       + [Análise de entrega](send/delivery-analysis.md)
       + [Configurar e enviar a entrega](send/configure-and-send.md)
       + [Otimização da hora de envio](send/predictive.md)
-   + Falhas, rejeições e quarentenas{#failures}
+   + Falhas, devoluções e quarentenas{#failures}
       + [Quarentenas](send/quarantines.md)
       + [Falhas de entrega](send/delivery-failures.md)
    + [Trabalho com modelos de entrega](send/create-templates.md)
@@ -119,10 +120,10 @@ ht-degree: 99%
       + [Compartilhar públicos-alvo com soluções da Adobe](start/shared-audiences.md)
    + [Práticas recomendadas](audiences/audiences-best-practices.md)
    + [Gerenciar assinaturas](start/subscriptions.md)
-+ Gestão de conteúdo {#content}
++ Gerenciamento de conteúdo {#content}
    + [Criar páginas de destino](dev/landing-pages.md)
    + [Criar aplicativos e formulários Web](dev/webapps.md)
-+ Automação e fluxos de trabalho {#automation}
++ Automação e workflows {#automation}
    + [Guia de automação de campanha >](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/home)
 + Gerenciamento de privacidade e segurança {#privacy}
    + [Gerenciar solicitações de privacidade](start/privacy.md)
@@ -149,18 +150,18 @@ ht-degree: 99%
 + Relatórios e análises {#analytics}
    + [Rastrear e monitorar](start/tracking.md)
    + [Trilha de auditoria](reporting/audit-trail.md)
-   + Trabalho com relatórios{#reports}
+   + Trabalhar com relatórios{#reports}
       + [Introdução aos relatórios](reporting/gs-reporting.md)
-      + Criar cubos{#cubes}
+      + Criar cubos, {#cubes}
          + [Introdução aos cubos](reporting/gs-cubes.md)
          + [Criar um cubo](reporting/cube-indicators.md)
          + [Usar cubos para criar relatórios](reporting/cube-tables.md)
          + [Personalizar os seus cubos](reporting/customize-cubes.md)
-      + Relatórios incorporados{#ac-reports}
-         + [Lista de relatórios incorporados](reporting/built-in-reports.md)
+      + Relatórios integrados{#ac-reports}
+         + [Lista de relatórios integrados](reporting/built-in-reports.md)
          + [Relatórios globais](reporting/global-reports.md)
          + [Relatórios de entrega](reporting/delivery-reports.md)
-         + [Cálculo de métricas incorporadas](reporting/metrics-calculation.md)
+         + [Cálculo de métricas integradas](reporting/metrics-calculation.md)
       + [Relatórios personalizados](reporting/custom-reports.md)
 + Gerenciamento de dados {#data}
    + [Introdução a workflows](config/workflows.md)
@@ -191,7 +192,7 @@ ht-degree: 99%
       + [Adicionar permissões em pastas](start/folder-permissions.md)
    + [Painel de controle](config/self-service.md)
 + Arquitetura e configuração {#config}
-   + Arquitetura do Campaign v8 {#architecture}
+   + Arquitetura do Campaign v8 {#architecture}
       + [Princípios globais](architecture/general-architecture.md)
       + [Modelos de arquitetura](architecture/architecture.md)
       + [Implantação de FDA no Campaign](architecture/fda-deployment.md)
@@ -205,7 +206,7 @@ ht-degree: 99%
       + [Etapas de implementação](start/implement.md)
       + [Personalizar sua instância](dev/customize.md)
       + [Práticas recomendadas do modelo de dados](dev/datamodel-best-practices.md)
-   + Definições e configuração {#configuration}
+   + Configurações e configurações {#configuration}
       + [Configurações da interface](config/ui-settings.md)
       + [Gerenciar pastas e visualizações](audiences/folders-and-views.md)
       + [Configurações de mensagens transacionais](config/transactional-msg-settings.md)
