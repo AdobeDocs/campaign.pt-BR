@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 12%
@@ -87,7 +87,7 @@ Com seu schema de dados correspondente:
 
 ## Descrição {#description}
 
-O ponto de entrada do schema é seu elemento principal. É fácil identificar porque ele tem o mesmo nome do schema e deve se originar do elemento raiz. A descrição do conteúdo começa com esse elemento.
+O ponto de entrada do schema é seu elemento principal. É fácil identificar porque ele tem o mesmo nome do schema e deve ser filho do elemento raiz. A descrição do conteúdo começa com esse elemento.
 
 No nosso exemplo, o elemento principal é representado pela seguinte linha:
 
@@ -124,7 +124,7 @@ As seguintes regras devem ser seguidas:
 
 O tipo de dados é inserido pelo atributo **type** nos elementos **`<attribute>`** e **`<element>`**.
 
-Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=pt-BR#configuring-campaign-classic){target="_blank"}.
+Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
 Quando este atributo não é populado, **string** é o tipo de dados padrão, a menos que o elemento contenha elementos filhos. Em caso afirmativo, ele é usado apenas para estruturar os elementos hierarquicamente (**`<location>`** elemento em nosso exemplo).
 
@@ -180,13 +180,13 @@ Os elementos **`<elements>`** e **`<attributes>`** do esquema de dados podem ser
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  O rótulo pode ser visto no formulário de entrada do console do cliente Adobe Campaign:
+  O rótulo pode ser visto no formulário de entrada do Console do cliente do Adobe Campaign:
 
   ![](assets/schema_label.png)
 
 * A propriedade **desc** permite inserir uma descrição longa.
 
-  A descrição pode ser vista do formulário de entrada na barra de status da janela principal do console do cliente Adobe Campaign.
+  A descrição pode ser vista do formulário de entrada na barra de status da janela principal do Console do cliente do Adobe Campaign.
 
   >[!NOTE]
   >
@@ -213,7 +213,7 @@ O valor deve ser uma expressão compatível com a linguagem XPath. Para obter ma
 
   >[!NOTE]
   >
-  >No console do cliente Adobe Campaign, o nó **[!UICONTROL Administration>Counters]** é usado para gerenciar contadores.
+  >No Console do Cliente do Adobe Campaign, o nó **[!UICONTROL Administration>Counters]** é usado para gerenciar contadores.
 
 Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -237,7 +237,7 @@ Esses valores são mostrados em uma lista suspensa no formulário de entrada:
 
 >[!NOTE]
 >
->No console do cliente Adobe Campaign, o nó **[!UICONTROL Administration > Enumerations]** é usado para gerenciar enumerações.
+>No Console do Cliente do Adobe Campaign, o nó **[!UICONTROL Administration > Enumerations]** é usado para gerenciar enumerações.
 
 #### Definir enumeração {#set-enumeration}
 
@@ -360,7 +360,7 @@ Também é possível definir expressões complexas, como as seguintes operaçõe
 
 Foram adicionadas funções de alto nível às expressões, a fim de enriquecer o potencial dessa linguagem.
 
-Você pode acessar a lista de funções disponíveis por meio de qualquer editor de expressão no console do cliente do Adobe Campaign:
+Você pode acessar a lista de funções disponíveis por meio de qualquer editor de expressão no Console do cliente do Adobe Campaign:
 
 ![](assets/schema_function.png)
 

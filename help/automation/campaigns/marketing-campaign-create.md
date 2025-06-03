@@ -6,10 +6,10 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 49%
+source-wordcount: '1298'
+ht-degree: 53%
 
 ---
 
@@ -159,14 +159,9 @@ Como navegar pelo calendário, você também pode criar um programa ou uma campa
 Ao criar uma campanha por meio da guia **[!UICONTROL Schedule]** de um programa, a campanha é vinculada automaticamente ao programa relacionado. O campo **[!UICONTROL Program]** está oculto nesse caso.
 
 
-## Acessar o Campaign com um navegador da Web {#use-the-web-interface}
+## Usar a interface da Web {#use-the-web-interface-}
 
-
->[!AVAILABILITY]
->
->A partir do Campaign v8.6, o Campaign estará disponível em uma interface da Web. A maioria das ações de marketing pode ser executada nessa nova interface. [Saiba mais](../../v8/start/campaign-ui.md#discover-the-user-interface).
-
-Você pode acessar algumas das telas do console do cliente Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e deliveries, bem como relatórios e informações sobre os perfis em seu banco de dados. Não é possível criar componentes a partir desse acesso à web, mas, dependendo dos direitos de acesso, você pode visualizar e/ou agir nos dados no banco de dados. Normalmente, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar um delivery etc.
+Você pode acessar as telas do Console do cliente do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e deliveries, bem como relatórios e informações sobre os perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar uma entrega etc.
 
 1. Faça logon como de costume via https://`<your instance>:<port>/view/home`.
 1. Use os menus para acessar as exibições.
@@ -213,4 +208,4 @@ Você também pode usar o link contido nas mensagens de notificação. Para obte
 
 Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449904?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

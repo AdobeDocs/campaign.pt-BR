@@ -5,7 +5,7 @@ description: Alerta
 feature: Workflows
 role: User
 exl-id: 8fb36117-b126-470a-9c94-eb5c0a4aca1a
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 83%
@@ -20,4 +20,4 @@ Uma atividade **Alert** envia uma mensagem a um grupo de operadores. Ela opera d
 
 ![](assets/edit_alerte.png)
 
-Um alerta não é persistente e, portanto, não é visível no console do cliente. Os operadores do grupo atribuído devem ter um endereço de e-mail completo para receber a notificação. A configuração dessa atividade é semelhante àquela de um **Approval**. O template de entrega padrão usado para alertar os operadores é o &quot;alertAssignee&quot;.
+Um alerta não é persistente e, portanto, não é visível no Console do cliente. Os operadores do grupo atribuído devem ter um endereço de e-mail completo para receber a notificação. A configuração dessa atividade é semelhante àquela de um **Approval**. O template de entrega padrão usado para alertar os operadores é o &quot;alertAssignee&quot;.

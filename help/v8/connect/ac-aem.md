@@ -5,25 +5,25 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 15%
+source-wordcount: '589'
+ht-degree: 20%
 
 ---
 
 # Trabalhar com o Campaign e o Adobe Experience Manager {#ac-aem}
 
-A integração entre o Adobe Campaign e o Adobe Experience Manager permite gerenciar o conteúdo dos deliveries de email, bem como seus formulários diretamente no Adobe Experience Manager. Você tem a opção de importar o conteúdo do **Adobe Experience Manager** para o Campaign ou conectar a conta do **Adobe Experience Manager as a Cloud Service**, permitindo editar o conteúdo diretamente na interface da Web.
+A integração entre o Adobe Campaign e o Adobe Experience Manager (AEM) permite gerenciar o conteúdo das entregas de email, bem como seus formulários diretamente no Adobe Experience Manager.
 
-[Saiba como editar o conteúdo do Adobe Experience Manager como Cloud Service na Interface da Web do Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html?lang=pt-BR){target="_blank"}.
+[Saiba como editar o conteúdo do Adobe Experience Manager as Cloud Service na Interface da Web do Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html){target="_blank"}.
 
-[Saiba mais sobre o Adobe Experience Manager neste documento](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=pt-BR#aem-and-adobe-campaign-integration-workflow){target="_blank"}.
+[Saiba mais sobre o Adobe Experience Manager neste documento](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html#aem-and-adobe-campaign-integration-workflow){target="_blank"}.
 
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Service, [contate o Adobe](../start/campaign-faq.md#support) para integrar o Adobe Experience Manager ao Campaign.
+>Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support) para integrar o Adobe Experience Manager ao Campaign.
 
 ## Importar conteúdo do Adobe Experience Manager {#integrating-with-aem}
 
@@ -31,7 +31,7 @@ Essa integração pode ser usada para criar um boletim informativo no Adobe Expe
 
 **No Adobe Experience Manager:**
 
-1. Navegue até a instância do autor [!DNL Adobe Experience Manager] e clique em Experiência Adobe no canto superior esquerdo da página. Escolha **[!UICONTROL Sites]** no menu.
+1. Navegue até a instância do autor [!DNL Adobe Experience Manager] e clique em Adobe Experience no canto superior esquerdo da página. Escolha **[!UICONTROL Sites]** no menu.
 
    ![](assets/aem_authoring_1.png)
 
@@ -47,7 +47,7 @@ Essa integração pode ser usada para criar um boletim informativo no Adobe Expe
 
    ![](assets/aem_authoring_3.png)
 
-1. Personalize seu conteúdo de email adicionando componentes, como campos de personalização do Adobe Campaign. Saiba mais em [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=pt-BR#editing-email-content){target="_blank"}.
+1. Personalize seu conteúdo de email adicionando componentes, como campos de personalização do Adobe Campaign. Saiba mais em [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html#editing-email-content){target="_blank"}.
 
 1. Quando o email estiver pronto, navegue até o menu **[!UICONTROL Page information]** e clique em **[!UICONTROL Start workflow]**.
 
@@ -75,9 +75,9 @@ Seu boletim informativo agora está pronto e sincronizado no Adobe Campaign.
 
 1. Adicione um **[!UICONTROL Label]** à entrega e clique em **[!UICONTROL Continue]**.
 
-1. Clique em **[!UICONTROL Synchronize]** para acessar suas entregas de AEM.
+1. Clique em **[!UICONTROL Synchronize]** para acessar suas entregas do AEM.
 
-   Se o botão não estiver visível na interface, navegue até o botão **[!UICONTROL Properties]** e acesse a guia **[!UICONTROL Advanced]**. Verifique se o campo **[!UICONTROL Content editing mode]** está configurado como **[!UICONTROL AEM]** e insira os detalhes da instância do AEM no campo **[!UICONTROL AEM account]**.
+   Se o botão não estiver visível na interface, navegue até o botão **[!UICONTROL Properties]** e acesse a guia **[!UICONTROL Advanced]**. Verifique se o campo **[!UICONTROL Content editing mode]** está configurado para **[!UICONTROL AEM]** e insira os detalhes da instância do AEM no campo **[!UICONTROL AEM account]**.
 
    ![](assets/aem_authoring_8.png)
 
@@ -95,15 +95,15 @@ O email agora está pronto para ser enviado ao seu público-alvo.
 
 ## Importar ativos da biblioteca do Adobe Experience Manager Assets {#assets-library}
 
-Você também pode inserir ativos diretamente do [!DNL Adobe Experience Manager Assets Library] ao editar um email ou uma página de aterrissagem no Adobe Campaign. Esta funcionalidade é detalhada na [documentação do Adobe Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=pt-BR){target="_blank"}.
+Você também pode inserir ativos diretamente do [!DNL Adobe Experience Manager Assets Library] ao editar um email ou uma página de aterrissagem no Adobe Campaign. Esta funcionalidade é detalhada na [documentação do Adobe Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html){target="_blank"}.
 
 **No Adobe Experience Manager:**
 
-1. Navegue até a instância do autor [!DNL Adobe Experience Manager] e clique em Experiência Adobe no canto superior esquerdo da página. Escolha **[!UICONTROL Assets]** `>` **[!UICONTROL Files]** no menu.
+1. Navegue até a instância do autor [!DNL Adobe Experience Manager] e clique em Adobe Experience no canto superior esquerdo da página. Escolha **[!UICONTROL Assets]** `>` **[!UICONTROL Files]** no menu.
 
    ![](assets/aem_assets_1.png)
 
-1. Clique em **Criar** e depois em **Arquivos** para importar seu ativo para a **Biblioteca da Adobe Experience Manager Assets**. Saiba mais na [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=pt-BR#uploading-assets){target="_blank"}.
+1. Clique em **Criar** e depois em **Arquivos** para importar seu ativo para a **Biblioteca da Adobe Experience Manager Assets**. Saiba mais em [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html#uploading-assets){target="_blank"}.
 
    ![](assets/aem_assets_2.png)
 
@@ -121,7 +121,7 @@ Seu ativo foi carregado para sua **Biblioteca da Adobe Experience Manager Assets
 
 1. Defina e personalize o conteúdo da mensagem. [Saiba mais](../send/email.md)
 
-1. Para usar sua **biblioteca Adobe Experience Manager Assets**, acesse o **[!UICONTROL Properties]** da entrega AEM e selecione a guia **[!UICONTROL Advanced]**.
+1. Para usar sua **biblioteca Adobe Experience Manager Assets**, acesse o **[!UICONTROL Properties]** da entrega do AEM e selecione a guia **[!UICONTROL Advanced]**.
 
    Escolha sua **conta do AEM** e habilite a opção **[!UICONTROL Use above AEM instance as shared asset library]**.
 

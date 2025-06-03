@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ No contexto de uma [implantação corporativa (FFDA)](enterprise-deployment.md),
 
 O banco de dados na nuvem ([!DNL Snowflake]) é otimizado para manipular grandes lotes de dados, como a atualização de 1 milhão de endereços. Enquanto isso, o banco de dados local do Campaign (PostgreSQL) é mais adequado para operações individuais ou de pequeno volume, como a atualização de um único seed address. A sincronização ocorre de forma automática e transparente em segundo plano, garantindo que os dados no banco de dados local do Campaign (PostgreSQL) sejam duplicados no banco de dados da nuvem ([!DNL Snowflake]) em tempo real, mantendo ambos os bancos de dados sincronizados. A sincronização de dados envolve esquemas e tabelas, e dados.
 
-➡️ [Descubra como a replicação de dados funciona em vídeo](#video)
+➡️ [Descubra como funciona a replicação de dados em vídeo](#video)
 
 ## Modos de replicação {#modes}
 
@@ -42,7 +42,7 @@ As políticas de replicação definem quantos dados são replicados de uma tabel
 
 O Campaign v8 depende de workflows técnicos específicos para gerenciar a replicação de dados agendada. Esses fluxos de trabalho técnicos estão disponíveis no nó **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** do explorador do Campaign. **Eles não devem ser modificados.**
 
-Os workflows técnicos executam processos ou trabalhos, agendados regularmente no servidor. A lista completa de fluxos de trabalho técnicos está detalhada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=pt-BR){target="_blank"}.
+Os workflows técnicos executam processos ou trabalhos, agendados regularmente no servidor. A lista completa de fluxos de trabalho técnicos está detalhada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}.
 
 Os workflows técnicos que garantem a replicação de dados são os seguintes:
 
@@ -117,4 +117,4 @@ Este vídeo apresenta os principais conceitos de quais bancos de dados o Adobe C
 
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-Os tutoriais adicionais do Console do Cliente do Campaign v8 estão disponíveis [aqui](https://experienceleague.adobe.com/pt-br/docs/campaign-learn/tutorials/overview).
+Os tutoriais adicionais do Console do Cliente do Campaign v8 estão disponíveis [aqui](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview).

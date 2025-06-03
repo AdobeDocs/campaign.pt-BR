@@ -5,7 +5,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 43%
@@ -31,7 +31,7 @@ Saiba como gerenciar pastas e modos de exibição em [esta página](../audiences
 
 ## Gerenciar e personalizar listas {#customize-lists}
 
-No console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, é possível adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
+No Console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, é possível adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
 
 Além disso, é possível criar e salvar filtros.  Saiba mais sobre filtros em [esta página](../audiences/create-filters.md).
 
@@ -212,7 +212,7 @@ Para criar um alias, siga estas etapas:
 
 1. Salve as alterações. A substituição de valores é executada pelo fluxo de trabalho **Limpeza de alias**, que é executado todas as noites. Consulte [Executar limpeza de dados](#running-data-cleansing).
 
-Para todos os campos baseados nesta enumeração, quando um usuário insere o valor **Adobe** em um campo &quot;empresa&quot; (no console do cliente Adobe Campaign, em um formulário web), ele é substituído automaticamente pelo valor **Adobe**.
+Para todos os campos baseados nesta enumeração, quando um usuário insere o valor **Adobe** em um campo &quot;empresa&quot; (no Console do Cliente do Adobe Campaign, em um formulário web), ele é substituído automaticamente pelo valor **Adobe**.
 
 #### Converter um valor incorreto em um alias{#convert-to-alias}
 

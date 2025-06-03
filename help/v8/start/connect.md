@@ -1,20 +1,22 @@
 ---
-title: Conectar-se ao Campaign com o console do cliente
-description: Saiba como instalar o console do cliente do Campaign em seu computador e conectar-se ao Adobe Campaign
+title: Conectar-se ao Campaign v8
+description: Saiba como se conectar ao Adobe Campaign v8 e instalar o console em seu computador para facilitar o acesso.
 feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 16%
+source-wordcount: '1006'
+ht-degree: 14%
 
 ---
 
-# Conectar-se ao Campaign com o console do cliente{#gs-ac-connect}
+# Conectar-se ao Adobe Campaign v8{#gs-ac-connect}
 
-Para se conectar ao Campaign com o console do cliente, primeiro você deve instalá-lo e configurá-lo.
+Para começar a trabalhar com o Campaign, você deve instalar e configurar o Console do cliente.
+
+O Console do cliente é um aplicativo nativo que se comunica com o servidor de aplicativos do Adobe Campaign, por meio de protocolos padrão de Internet, como SOAP e HTTP. O console do cliente do Campaign centraliza todos os recursos e configurações e requer largura de banda mínima, pois depende de um cache local. Projetado para facilitar a implantação, o Console do cliente do Campaign pode ser implantado a partir de um navegador da Internet, atualizado automaticamente e não requer nenhuma configuração de rede específica, pois gera apenas tráfego HTTP(S).
 
 Antes de começar, é necessário:
 
@@ -23,33 +25,27 @@ Antes de começar, é necessário:
 * Crie sua Adobe ID ou obtenha suas credenciais de usuário da empresa
 * Instale o tempo de execução do Microsoft Edge Webview2 em seu sistema. [Saiba mais](#webview)
 
-
->[!NOTE]
->
->Você também pode se conectar à interface da Web do Campaign usando um navegador da Web. Saiba mais sobre a nova interface do usuário da Web do Campaign em [esta documentação](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"}.
-
-
 ## Instalar o console do cliente{#download-ac-console}
 
 ### Tempo de execução do Microsoft Edge Webview2 {#webview}
 
-A partir da versão de build do Campaign Classic 8.4, a instalação do Webview 2 runtime do Microsoft Edge é necessária para qualquer instalação do console do cliente.
+A partir da versão de build 8.4 do Campaign Classic, a instalação do Webview 2 runtime do Microsoft Edge é necessária para qualquer instalação do Console do cliente.
 
-O Modo de Exibição da Web é instalado por padrão como parte do sistema operacional Windows 11. Se ainda não estiver presente no sistema, o programa de instalação do console do cliente do Campaign solicitará que você o baixe do [site do Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br){target="_blank"}. Observe que o link de download não funciona no navegador Internet Explorer 11, pois o Microsoft descontinuou seu suporte. Use um navegador diferente para acessar o link.
+O Modo de Exibição da Web é instalado por padrão como parte do sistema operacional Windows 11. Se ainda não estiver presente no sistema, o programa de instalação do Console do Cliente do Campaign solicitará que você o baixe do [site do Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br){target="_blank"}. Observe que o link de download não funciona no navegador Internet Explorer 11, pois o Microsoft descontinuou seu suporte. Use um navegador diferente para acessar o link.
 
 ### Baixar o console{#install-ac-console}
 
-Ao usar o Campaign pela primeira vez, é necessário baixar o console do cliente e instalá-lo.
+Ao usar o Campaign pela primeira vez, é necessário baixar o Console do cliente e instalá-lo.
 
-Duas opções estão disponíveis para baixar o console do cliente:
+Duas opções estão disponíveis para baixar o Console do cliente:
 
-1. Como administrador do Campaign, conecte-se ao Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html){target="_blank"}.
+1. Como administrador do Campaign, conecte-se à [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html){target="_blank"} da Adobe.
 
-1. Como usuário final, o administrador do Campaign implanta o console do cliente para você e o disponibiliza por meio de um URL dedicado.
+1. Como usuário final, o administrador do Campaign implanta o Console do cliente para você e o disponibiliza por meio de um URL dedicado.
 
-Depois que o programa de instalação do console do cliente for baixado, instale-o em seu computador local.
+Depois que o programa de instalação do Console do cliente for baixado, instale-o no computador local.
 
-Observe que não é possível alterar o idioma do console do cliente após sua instalação.
+Observe que não é possível alterar o idioma do Console do cliente após sua instalação.
 
 ## Criar sua conexão{#create-your-connection}
 
@@ -75,7 +71,7 @@ Você pode adicionar quantas conexões forem necessárias para se conectar aos a
 
 ## Fazer logon no Adobe Campaign {#logon-to-ac}
 
-Os usuários do Campaign se conectam ao console do Adobe Campaign usando a Adobe ID, por meio do Adobe Identity Management System (IMS). Eles podem usar a mesma ID em todas as soluções Adobe. A conexão é salva ao usar o Adobe Campaign com outras soluções. Saiba mais sobre o Adobe IMS em [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}.
+Os usuários do Campaign se conectam ao console do Adobe Campaign usando a Adobe ID, por meio do Adobe Identity Management System (IMS). Elas podem usar a mesma ID em todas as soluções da Adobe. A conexão é salva ao usar o Adobe Campaign com outras soluções. Saiba mais sobre o Adobe IMS em [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}.
 
 Para fazer logon em uma instância, siga as etapas abaixo:
 
@@ -99,7 +95,7 @@ Em seguida, você pode fazer logon no Campaign com sua Adobe ID.
 
 Quando seu sistema é atualizado para uma versão mais recente, você deve atualizar seu console do cliente para essa mesma versão. Essa é uma prática recomendada e, para algumas versões, essa atualização é obrigatória. Nesse caso, ele é mencionado nas [Notas de versão](release-notes.md).
 
-Como usuário do Managed Cloud Service, o Adobe implanta o console do cliente para você. Ao se conectar ao ambiente atualizado, você será solicitado a baixar a versão mais recente do console do cliente em uma janela pop-up. Você deve aceitar essa atualização e atualizar o console do cliente conforme solicitado.
+Como usuário do Managed Cloud Services, a Adobe implanta o Console do cliente para você. Ao se conectar ao ambiente atualizado, você será solicitado a baixar a versão mais recente do Console do cliente em uma janela pop-up. Você deve aceitar essa atualização e atualizar o Console do cliente conforme solicitado.
 
 >[!CAUTION]
 >
@@ -130,11 +126,11 @@ A partir da versão 8.6 do Campaign, você terá acesso à nova **interface de 
 
 Saiba como se conectar à Adobe Experience Cloud e acessar a interface do Adobe Campaign Web [nesta página](campaign-ui.md#ac-web-ui).
 
-Saiba mais na [Documentação da interface do Adobe Campaign Web](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Saiba mais na [documentação sobre a interface Web do Adobe Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 ### Acesso à Web {#web-access}
 
-Certas partes do aplicativo podem ser acessadas por meio de um navegador da Web usando uma interface do usuário HTML: relatórios, aprovação de entrega, monitoramento de instâncias e muito mais.
+Determinadas partes do aplicativo podem ser acessadas por meio de um navegador da Web usando uma interface do usuário do HTML: relatórios, aprovação de entrega, monitoramento de instâncias e muito mais.
 
 O acesso via Web fornece uma interface semelhante ao console, mas com um conjunto reduzido de funcionalidades.
 

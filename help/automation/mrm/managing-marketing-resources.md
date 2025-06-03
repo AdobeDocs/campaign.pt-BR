@@ -5,7 +5,7 @@ description: Saiba como gerenciar recursos de marketing
 feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 46%
@@ -101,7 +101,7 @@ Para aprovar um recurso, clique no botão **[!UICONTROL Approve the resource]** 
 
 ![](assets/mkt-resouce-approve.png)
 
-Os operadores autorizados podem aceitar ou rejeitar aprovações. Essa ação é possível: por meio da mensagem de email enviada (clicando no link da mensagem de notificação) ou pelo console do cliente (clicando no botão **[!UICONTROL Approve]** ).
+Os operadores autorizados podem aceitar ou rejeitar aprovações. Essa ação é possível: por meio da mensagem de email enviada (clicando no link da mensagem de notificação) ou pelo Console do Cliente (clicando no botão **[!UICONTROL Approve]** ).
 
 A janela de aprovação permite inserir um comentário.
 
@@ -113,7 +113,7 @@ Navegue até a guia **[!UICONTROL Tracking]** para verificar as aprovações.
 >
 >Além do revisor especificado para cada recurso de marketing, os operadores com direitos de administrador e o gerente de recursos estão autorizados a aprovar um recurso de marketing.
 
-### Publish um recurso {#publishing-a-resource}
+### Publicar um recurso {#publishing-a-resource}
 
 Quando aprovado, o recurso de marketing deve ser publicado. O processo de publicação deve estar sujeito à implementação específica de acordo com os requisitos da empresa. Isso significa que os recursos podem ser publicados em uma extranet ou em qualquer outro servidor, informações específicas podem ser enviadas para um provedor de serviços externo etc.
 

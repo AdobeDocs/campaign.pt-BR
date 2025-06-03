@@ -5,7 +5,7 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 4%
@@ -16,13 +16,13 @@ ht-degree: 4%
 
 Ao criar ou estender um esquema, é necessário criar ou modificar os formulários de entrada associados para tornar essas alterações visíveis para os usuários finais.
 
-Um formulário de entrada permite editar uma instância associada a um schema de dados do console do cliente do Adobe Campaign. O formulário é identificado por seu nome e namespace.
+Um formulário de entrada permite editar uma instância associada a um esquema de dados no Console do cliente do Adobe Campaign. O formulário é identificado por seu nome e namespace.
 
 A chave de identificação de um formulário é uma cadeia de caracteres formada pelo namespace e pelo nome separados por dois pontos, por exemplo: &quot;cus:contact&quot;.
 
 ## Editar formulários de entrada
 
-Crie e configure formulários de entrada da pasta **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** do console do cliente:
+Crie e configure formulários de entrada da pasta **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** do Console do Cliente:
 
 ![](assets/form_arbo.png)
 
@@ -87,11 +87,11 @@ O controle de edição se adapta automaticamente ao tipo de dados correspondente
 
 Por padrão, cada campo é exibido em uma única linha e ocupa todo o espaço disponível, dependendo do tipo de dados.
 
-Todos os atributos de formulário estão listados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=pt-BR){target="_blank"}.
+Todos os atributos de formulário estão listados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target="_blank"}.
 
 ## Formatação {#formatting}
 
-O layout dos controles se parece com o layout usado em tabelas de HTML, com a possibilidade de dividir um controle em várias colunas, entrelaçar elementos ou especificar a ocupação do espaço disponível. No entanto, lembre-se de que a formatação só permite dividir a área por proporções; não é possível especificar dimensões fixas para um objeto.
+O layout dos controles é semelhante ao layout usado nas tabelas do HTML, com a possibilidade de dividir um controle em várias colunas, entrelaçar elementos ou especificar a ocupação do espaço disponível. No entanto, lembre-se de que a formatação só permite dividir a área por proporções; não é possível especificar dimensões fixas para um objeto.
 
 Para exibir os controles do exemplo acima em duas colunas:
 

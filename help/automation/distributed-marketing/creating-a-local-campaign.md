@@ -5,10 +5,10 @@ description: Criar uma campanha local
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 86%
+source-wordcount: '1556'
+ht-degree: 91%
 
 ---
 
@@ -46,17 +46,17 @@ Na janela da campanha, clique na guia **[!UICONTROL Edit]** e clique no link **[
 
 ![](assets/mkt_distr_4.png)
 
-### Tipo de interface {#web-interface}
+### Interface da Web {#web-interface}
 
-Na guia **Marketing distribuído**, você pode escolher o tipo de interface e especificar os valores e parâmetros padrões a serem inseridos quando uma entidade local enviar um pedido.
+Na guia **Marketing distribuído**, você pode escolher o tipo de interface da Web e especificar os valores e parâmetros padrões a serem inseridos quando uma entidade local enviar um pedido.
 
-A interface corresponde a um formulário a ser preenchido pela entidade local ao solicitar a campanha.
+A interface da web corresponde a um formulário a ser preenchido pela entidade local ao solicitar a campanha.
 
-Selecione o tipo de interface a ser aplicada às campanhas criadas a partir do template:
+Selecione o tipo de interface da web a ser aplicada às campanhas criadas a partir do template:
 
 ![](assets/mkt_distr_1.png)
 
-Há quatro tipos de interfaces disponíveis:
+Há quatro tipos de interfaces da web disponíveis:
 
 * **[!UICONTROL By brief]**: a entidade local deve fornecer uma descrição com as configurações da campanha. Uma vez aprovado o pedido, a entidade central configura e executa a campanha como um todo.
 
@@ -298,7 +298,7 @@ Quando uma campanha é solicitada por uma entidade local, seus revisores são no
 
 #### Aprovar via console do cliente {#approving-via-the-adobe-campaign-console}
 
-O pedido também pode ser aprovado por meio do console do cliente, na visão geral do pedido de campanha. Para aprovar um pedido, selecione-o e clique em **[!UICONTROL Approve the order]**.
+O pedido também pode ser aprovado por meio do Console do cliente, na visão geral do pedido de campanha. Para aprovar um pedido, selecione-o e clique em **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -322,7 +322,7 @@ O operador encarregado da aprovação pode rejeitar um pedido ou um pacote de ca
 
 Se o revisor rejeitar um pedido, a notificação relevante será automaticamente enviada às entidades locais relacionadas: ela exibirá o comentário inserido pelo operador que rejeitou a aprovação.
 
-As informações são exibidas na lista da página de pacotes de campanha ou na página do pedido da campanha.. Se tiverem acesso ao console do cliente Adobe Campaign, entidades locais serão informadas dessa rejeição.
+As informações são exibidas na lista da página de pacotes de campanha ou na página do pedido da campanha.. Se tiverem acesso ao Console do cliente do Adobe Campaign, entidades locais serão informadas dessa rejeição.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

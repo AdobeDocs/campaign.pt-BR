@@ -5,7 +5,7 @@ feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 88%
@@ -14,7 +14,7 @@ ht-degree: 88%
 
 # Relatórios integrados do Adobe Campaign {#ootb-reports}
 
-Esta página fornece a lista de relatórios internos do Adobe Campaign, seu conteúdo e seu contexto. O Adobe Campaign fornece uma variedade de relatórios internos, acessíveis com o console do cliente ou com um navegador da Internet.
+Esta página fornece a lista de relatórios internos do Adobe Campaign, seu conteúdo e seu contexto. O Adobe Campaign fornece uma variedade de relatórios internos, acessíveis com o Console do cliente ou com um navegador da Internet.
 
 Os seguintes tipos de relatório estão disponíveis:
 
@@ -80,7 +80,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Falhas e devoluções (erros)<br /> </td> 
-   <td> Devoluções e não entregues por causa e domínio.<br /> </td> 
+   <td> Rejeições e não entregáveis por causa e domínio.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -180,7 +180,7 @@ Os relatórios sobre campanhas se relacionam aos dados na tabela de **nms:operat
   </tr> 
   <tr> 
    <td> Falhas e devoluções (operationErrors)<br /> </td> 
-   <td> Devoluções e não entregues por causa do domínio, depende do Campaign.<br /> </td> 
+   <td> Rejeições e não entregáveis por causa do domínio, depende do Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Exploração de linhas de custo (budgetExplorerOperation)<br /> </td> 
@@ -225,7 +225,7 @@ Os relatórios sobre serviços diz respeito aos dados na tabela de **nms:service
   </tr> 
   <tr> 
    <td> Aquisições de fã (socialAcquisitionsByWebapp)<br /> </td> 
-   <td> Quais aplicativos Web permitiram aquisições de prospecto? Depende de add-on de marketing social.<br /> </td> 
+   <td> Quais aplicativos Web permitiram aquisições de clientes potenciais? Depende de add-on de marketing social.<br /> </td> 
   </tr> 
   <tr> 
    <td> Detalhamento de subscrições (mobileAppDistribution)<br /> </td> 
@@ -380,8 +380,8 @@ Os relatórios a seguir também são fornecidos internamente. Para obter mais in
    <td> nms:webEvent<br /> </td> 
   </tr> 
   <tr> 
-   <td> Histórico de aquisições de prospecto social (socialVisitorStatistics)<br /> </td> 
-   <td> O histórico de aquisições de clientes em potencial do X (anteriormente conhecido como Twitter) e do Facebook depende do complemento de marketing social.<br /> </td> 
+   <td> Histórico de aquisições de clientes potenciais em redes sociais (socialVisitorStatistics)<br /> </td> 
+   <td> O histórico de aquisições de clientes potenciais do X (anteriormente conhecido como Twitter) e do Facebook depende do complemento de marketing social.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 

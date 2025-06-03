@@ -3,7 +3,7 @@ title: Notas de versão do Campaign v8 2022
 description: Lista de recursos e melhorias disponíveis com as versões do Campaign v8 de 2022
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
+source-git-commit: b3ca222fb28c1a5d35190e41cfbbe463c5d1bcad
 workflow-type: tm+mt
 source-wordcount: '1943'
 ht-degree: 89%
@@ -68,7 +68,7 @@ _30 de setembro de 2022_
 <tr> 
 <td> <p>O <a href="../send/twitter.md">X canal de redes sociais</a> agora está disponível com o Campaign v8. Você pode:</p>
 <ul> 
-<li><p>Enviar mensagens no X (antigo Twitter): o Adobe Campaign permite postar mensagens diretamente na sua conta do X. Você também pode enviar mensagens diretas a todos os seus seguidores.
+<li><p>Enviar mensagens no X (anteriormente conhecido como Twitter): o Adobe Campaign permite postar mensagens diretamente na sua conta X. Você também pode enviar mensagens diretas a todos os seus seguidores.
 </p></li>
 <li><p>Coletar novos contatos: o Adobe Campaign pode recuperar automaticamente os dados do perfil, o que permite realizar campanhas de direcionamento e implementar estratégias entre canais.
 </p></li>
@@ -94,9 +94,9 @@ Para otimizar a segurança, os tokens de segurança foram removidos dos URLs ger
 
 **Aprimoramentos**
 
-* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML no console passou a usar o **Microsoft Edge Chromium**. Além disso, a instalação do **Webview 2 runtime do Microsoft Edge** agora é necessária para qualquer instalação do console do cliente.
+* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML no console passou a usar o **Microsoft Edge Chromium**. Além disso, a instalação do **Microsoft Edge WebView 2** runtime agora é necessária para qualquer instalação do Console do Cliente.
 * Melhoria na execução do fluxo de trabalho com alta disponibilidade do fluxo de trabalho, o que permite executar fluxos de trabalho simultâneos em diferentes contêineres para evitar a perda do serviço de fluxo de trabalho e erros de execução relacionados. **Observação**: esse novo recurso foi lançado com disponibilidade limitada somente para um conjunto de clientes.
-* As solicitações de privacidade agora são executadas em lote para um determinado namespace de privacidade. Essa melhoria aumenta o tempo de execução das solicitações de exclusão de GDPR/privacidade.
+* As solicitações de privacidade agora são executadas em lote para um determinado namespace de privacidade. Essa melhoria aumenta o tempo de execução das solicitações de exclusão de RGPD/privacidade.
 
 **Atualizações de compatibilidade**
 
@@ -131,7 +131,7 @@ Consulte a [Matriz de compatibilidade do Campaign](compatibility-matrix.md).
 
 >[!CAUTION]
 >
-> a atualização do console do cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#download-ac-console).
+> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#download-ac-console).
 
 _7 de outubro de 2022_
 

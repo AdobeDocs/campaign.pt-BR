@@ -5,7 +5,7 @@ description: Aprovação local
 feature: Workflows, Approvals
 role: User
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 92%
@@ -44,7 +44,7 @@ Os campos a serem inseridos no caso de uma notificação para aprovação de tar
 
 ![](assets/local_validation_3.png)
 
-* **[!UICONTROL Distribution context]**: selecione a opção **[!UICONTROL Specified in the transition]** se estiver usando uma atividade do tipo **[!UICONTROL Split]** para limitar o público-alvo. Nesse caso, o template de distribuição é inserido na atividade de Split. Se você não estiver limitando o público-alvo, selecione a opção **[!UICONTROL Explicit]** aqui e insira o template de distribuição no campo **[!UICONTROL Data distribution]**.
+* **[!UICONTROL Distribution context]**: selecione a opção **[!UICONTROL Specified in the transition]** se estiver usando uma atividade do tipo **[!UICONTROL Split]** para limitar a população de destino. Nesse caso, o template de distribuição é inserido na atividade de Split. Se você não estiver limitando a população de destino, selecione a opção **[!UICONTROL Explicit]** aqui e insira o template de distribuição no campo **[!UICONTROL Data distribution]**.
 
   Para obter mais informações sobre como criar um template de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
@@ -82,13 +82,13 @@ No caso de um relatório de feedback de entrega, os seguintes campos devem ser i
 
 Este exemplo mostra como configurar um processo de aprovação para uma entrega de workflow. Para obter mais informações sobre como criar workflows de entrega, consulte a seção [Exemplo: workflow de entrega](delivery.md#example--delivery-workflow).
 
-Um operador pode aprovar um delivery de duas maneiras: usando a página da Web vinculada na mensagem de email ou através do console do cliente.
+Um operador pode aprovar um delivery de duas maneiras: usando a página da Web vinculada na mensagem de email ou por meio do Console do cliente.
 
 * Aprovação da Web
 
   O email enviado para operadores do grupo Administrador permite aprovar o target da entrega. A mensagem usa o texto definido e a expressão JavaScript é substituída pelo valor calculado (neste caso, &#39;574&#39;)
 
-  Para aprovar o delivery, clique no link relevante e faça logon no console do cliente do Adobe Campaign.
+  Para aprovar o delivery, clique no link relevante e faça logon no Console do cliente do Adobe Campaign.
 
   ![](assets/new-workflow-valid-webaccess.png)
 

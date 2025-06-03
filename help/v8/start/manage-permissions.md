@@ -5,10 +5,10 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '1618'
-ht-degree: 41%
+ht-degree: 39%
 
 ---
 
@@ -20,7 +20,7 @@ Como administrador de produto, você pode adicionar usuários e conceder acesso 
 
 Para adicionar um usuário, siga as etapas abaixo:
 
-1. Na página inicial [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}, selecione **Adicionar usuários**.
+1. Na página inicial do [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}, selecione **Adicionar usuários**.
 
    ![](assets/add-a-user.png)
 
@@ -35,15 +35,15 @@ Para adicionar um usuário, siga as etapas abaixo:
 
 1. Clique em **Save**. O usuário é adicionado e é exibido na lista Usuários. Se você atribuir uma função de administrador ou um Perfil de produto aos usuários, eles receberão uma notificação por email. Os usuários devem seguir o link para concluir seu perfil.
 
-Saiba mais sobre a criação de usuários no Admin Console em [esta página](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
+Saiba mais sobre a criação de usuários na Admin Console em [esta página](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
 
-Quando novos usuários [fazem logon no Campaign](connect.md) com a Adobe ID, eles são adicionados à lista de operadores do Campaign no console do cliente. Os operadores de campanha são armazenados na pasta **[!UICONTROL Administration > Access management > Operators]** do explorador do Campaign.
+Quando novos usuários [fazem logon no Campaign](connect.md) com a Adobe ID, eles são adicionados à lista de operadores do Campaign no Console do cliente. Os operadores de campanha são armazenados na pasta **[!UICONTROL Administration > Access management > Operators]** do explorador do Campaign.
 
 ## Trabalhar com perfis de produto{#product-profiles}
 
 Use perfis de produto para habilitar os usuários com os recursos incluídos no produto.
 
-* Para cada produto no Admin Console, é possível criar um ou mais perfis de produto.
+* Para cada produto na Admin Console, é possível criar um ou mais perfis de produto.
 * Em cada perfil de produto, você atribui usuários e grupos de usuários (em sua organização).
 * Quando um usuário faz logon com suas credenciais, conforme especificado no perfil do produto, ele recebe acesso aos aplicativos e serviços do produto no qual o perfil do produto se baseia.
 
@@ -53,7 +53,7 @@ No Admin Console, os perfis de produto usam a seguinte sintaxe:
 
 campanha - `<your instance>` - nome interno do grupo de operadores
 
-Por exemplo, para o grupo **Operador de entrega** na instância &#39;teste&#39;, o perfil de produto no Admin Console é:
+Por exemplo, para o grupo **Operador de entrega** na instância &quot;teste&quot;, o perfil de produto no Admin Console é:
 
 campaign - test - delivery
 
@@ -61,7 +61,7 @@ Você pode usar perfis de produto padrão ou criar novos.
 
 ### Criar um perfil de produto{#create-product-profile}
 
-Para adicionar um novo perfil de produto ao Adobe, primeiro você deve criá-lo no console do cliente do Campaign e, em seguida, adicioná-lo ao Admin Console.
+Para adicionar um novo perfil de produto ao Adobe, você deve primeiro criá-lo no Console do cliente do Campaign e, em seguida, adicioná-lo no Admin Console.
 
 Por exemplo, para criar um perfil de produto &quot;revisores&quot;, siga as etapas abaixo.
 
@@ -75,7 +75,7 @@ Por exemplo, para criar um perfil de produto &quot;revisores&quot;, siga as etap
 
 #### Criar o perfil de produto no Admin Console{#create-profile-in-admin-console}
 
-1. Conectar ao [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
+1. Conecte-se ao [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
 1. Na seção **Produtos e serviços** da home page, abra o produto do Campaign.
 1. Clique em **Novo perfil** e digite o nome do perfil de produto a ser criado, com a sintaxe correta exata, conforme explicado [aqui](#product-profiles). Para o nosso exemplo, inserimos: campanha - `<your-instance-name>` - revisores
 
@@ -115,7 +115,7 @@ Esses perfis de produto correspondem com os **grupos de operadores** do Campaign
 
 1. **[!UICONTROL Campaign managers]** (operação)
 
-   Os operadores nesse grupo podem gerenciar campanhas de marketing: permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) no âmbito da estrutura de **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
+   Os operadores nesse grupo podem gerenciar campanhas de marketing: permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) na estrutura de **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
 
    Esse grupo contém os seguintes direitos nomeados:
 
@@ -162,7 +162,7 @@ Esses perfis de produto correspondem com os **grupos de operadores** do Campaign
    * Configurar funções de administração (espaços e filtros predefinidos).
    * Criar e atualizar categorias.
    * Criar ofertas.
-   * Configurar a qualificação para a oferta.
+   * Configurar a elegibilidade para a oferta.
    * Aprovar ofertas.
 
    >[!NOTE]
@@ -215,7 +215,7 @@ Os direitos nomeados padrão no Adobe Campaign são:
 
 * **[!UICONTROL LOCAL]**: direito para gerenciamento local (marketing distribuído).
 
-* **[!UICONTROL MERGE]**: direito de unir os registros selecionados em um. Se houver destinatários duplicados, o direito **[!UICONTROL MERGE]** permitirá que o usuário selecione os duplicados e os mescle em um destinatário primário.
+* **[!UICONTROL MERGE]**: direito de mesclar os registros selecionados em um. Se houver destinatários duplicados, o direito **[!UICONTROL MERGE]** permitirá que o usuário selecione os duplicados e os mescle em um destinatário primário.
 
 * **[!UICONTROL PREPARE DELIVERIES]**: direito de criar, editar e salvar uma entrega. Os usuários com o direito **[!UICONTROL PREPARE DELIVERIES]** também podem iniciar o processo de análise da entrega.
 

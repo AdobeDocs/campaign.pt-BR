@@ -5,7 +5,7 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 29%
@@ -37,16 +37,16 @@ Primeiro, você deve criar a conta externa do Salesforce.
    Para configurar a conta externa do Salesforce CRM para funcionar com o Adobe Campaign, você precisa fornecer os seguintes detalhes:
 
    * Insira seu logon do Salesforce no campo **[!UICONTROL Account]**.
-   * Insira sua senha do Salesforce.
+   * Digite sua senha do Salesforce.
    * Você pode ignorar o campo **[!UICONTROL Client identifier]**.
-   * Copie/cole seu Salesforce **[!UICONTROL Security token]**
-   * Selecione seu **[!UICONTROL API version]**. As versões da API SFDC com suporte estão listadas na [Matriz de compatibilidade](../start/compatibility-matrix.md) do Campaign.
+   * Copiar/colar seu Salesforce **[!UICONTROL Security token]**
+   * Selecione seu **[!UICONTROL API version]**. As versões da API do SFDC com suporte estão listadas na [Matriz de compatibilidade](../start/compatibility-matrix.md) do Campaign.
 
 1. Selecione a opção **Habilitar** para ativar a conta no Campaign.
 
 >[!NOTE]
 >
->Para aprovar a configuração, você precisa fazer logoff e voltar ao console do cliente do Adobe Campaign.
+>Para aprovar a configuração, você precisa fazer logoff e voltar ao Console do cliente do Adobe Campaign.
 
 ## Selecionar tabelas para sincronizar{#sfdc-create-tables}
 
@@ -76,6 +76,6 @@ Após a criação do esquema, você pode sincronizar enumerações automaticamen
 
 O Adobe Campaign e o Salesforce.com agora estão conectados. Você pode configurar a sincronização de dados entre os dois sistemas.
 
-Para sincronizar dados entre o Adobe Campaign e o SFDC, crie um fluxo de trabalho e use a atividade **[!UICONTROL CRM connector]**.
+Para sincronizar dados entre dados do Adobe Campaign e do SFDC, crie um fluxo de trabalho e use a atividade **[!UICONTROL CRM connector]**.
 
 Saiba mais sobre a sincronização de dados [nesta página](crm-data-sync.md).
