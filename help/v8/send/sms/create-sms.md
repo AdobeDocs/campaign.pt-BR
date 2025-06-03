@@ -4,13 +4,14 @@ description: Saiba como criar uma entrega de SMS
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
+version: Campaign v8, Campaign Classic v7
+exl-id: 3b15eb3e-8625-4049-bf0d-327407ae5ea6
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 10%
 
 ---
-
 
 # Criar sua primeira entrega de SMS {#sms-delivery}
 
@@ -50,5 +51,3 @@ Após a criação do delivery, você poderá:
 ## Monitorar e rastrear SMS {#sms-monitor}
 
 Após o envio, [saiba como monitorar e rastrear o SMS](sms-monitor.md).
-
-

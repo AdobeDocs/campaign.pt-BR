@@ -4,11 +4,12 @@ description: Criar a primeira entrega
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
-workflow-type: ht
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+workflow-type: tm+mt
 source-wordcount: '1523'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -136,7 +137,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 1. Selecione o arquivo que contém os destinatários.
 1. Ao importar os destinatários, clique no link **[!UICONTROL File format definition...]** para selecionar e configurar o arquivo externo.
 
-   Para obter mais informações sobre importação de dados, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
+   Para obter mais informações sobre importação de dados, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
 
 1. Clique em **[!UICONTROL Finish]** e configure sua entrega como uma entrega padrão.
 
@@ -181,7 +182,7 @@ Para obter mais informações sobre destinatários e envio de provas, consulte 
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 

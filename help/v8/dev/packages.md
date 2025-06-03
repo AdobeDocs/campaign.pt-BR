@@ -5,10 +5,11 @@ feature: Data Management, Package Export/Import
 role: Developer
 level: Intermediate, Experienced
 exl-id: bf1ae889-9c07-4acf-8fd0-55b57151bc47
-source-git-commit: 69ef7e81d5fc0f5cf0dc74fa16d970ef89607331
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 50%
+ht-degree: 53%
 
 ---
 
@@ -289,8 +290,8 @@ Comece definindo diferentes tipos de pacotes. Somente quatro tipos são usados:
 
 **Entidades**
 
-* Todos os elementos específicos &quot;xtk&quot; e &quot;nms&quot; no Adobe Campaign como schemas, formulários, pastas, templates do delivery etc.
-* Você pode considerar uma entidade como um elemento &quot;admin&quot; e &quot;platform&quot;.
+* Todos os elementos específicos “xtk” e “nms” no Adobe Campaign, como schemas, formulários, pastas, modelos de entrega etc.
+* Você pode considerar uma entidade como um elemento “admin” e “platform”.
 * Não se deve incluir mais de uma entidade ao fazer upload de um pacote em uma instância do Campaign.
 
 Se precisar implantar sua configuração em uma nova instância, você poderá importar todos os pacotes de entidade.
@@ -312,7 +313,7 @@ Depois de configurado, um recurso pode ser exportado para outro ambiente. Por ex
 
 A primeira solução seria exportar todo o recurso novamente. Mas, para evitar qualquer risco (atualizar elementos indesejados), é mais seguro dispor de um pacote que contenha apenas a correção.
 
-É por isso que recomendamos criar um pacote de &quot;atualização&quot;, contendo apenas um tipo de entidade do recurso.
+É por isso que recomendamos criar um pacote de “update”, contendo apenas um tipo de entidade do recurso.
 
 Uma atualização não pode ser apenas uma correção, mas também um novo elemento do seu pacote de entidade/recurso/campanha. Para evitar a implantação de todo o pacote, é possível exportar um pacote de atualização.
 

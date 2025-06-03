@@ -4,10 +4,12 @@ description: Introdução a mensagens
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
+version: Campaign v8, Campaign Classic v7
+exl-id: a523e76d-776c-47d3-9c15-34241cee1092
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -108,4 +110,3 @@ Você pode:
 O monitoramento de entregas após serem enviados é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes. Você pode monitorar após enviar uma entrega, bem como entender como as falhas de entrega e as quarentenas são gerenciadas.
 
 Saiba como monitorar suas entregas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR#sending-messages){target="_blank"}
-

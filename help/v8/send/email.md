@@ -4,8 +4,9 @@ description: Introdução aos emails no Adobe Campaign. Envie emails personaliza
 feature: Email
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 693b9d9d50d5e60061bd952090380382ebaf8df8
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 20%
@@ -90,7 +91,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 Seu primeiro delivery de email está pronto. Agora é necessário definir o público-alvo, validar o delivery e enviá-lo.
 
-Saiba como criar um fluxo de trabalho para importar um conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=pt-BR){target="_blank"}.
+Saiba como criar um fluxo de trabalho para importar um conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
 
 >[!MORELIKETHIS]
 >

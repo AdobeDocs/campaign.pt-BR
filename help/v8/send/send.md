@@ -4,11 +4,12 @@ description: Saiba mais sobre o escopo e as especificidades do envio de emails c
 feature: Email
 role: Data Engineer
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -32,7 +33,7 @@ No painel de delivery, é possível verificar as mensagens processadas e os logs
 >Os status da entrega não são exibidos em tempo real. Saiba mais sobre o Serviço de Comentários por Email [nesta seção](#email-feedback-service).
 
 
-[Saiba mais sobre o monitoramento de entrega na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=pt-BR){target="_blank"}
+[Saiba mais sobre o monitoramento de entrega na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
 
 ## MTA da campanha {#mta}
 
@@ -71,11 +72,11 @@ O MTA tem suas próprias regras de MX, que permitem personalizar a taxa de trans
 
 ### Assinatura DKIM
 
-O DKIM (Domain Keys Identified Mail) é um método de autenticação usado para detectar endereços de remetente falsificados (geralmente chamado de falsificação).
+O Domain Keys Identified Mail (DKIM) é um método de autenticação usado para detectar endereços de remetente forjados (geralmente chamado de falsificação).
 
 No Adobe Campaign, a assinatura de autenticação de email do DKIM é executada pelo MTA.
 
-Saiba mais sobre o DKIM no [Manual de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication){target="_blank"}.
+Saiba mais sobre o DKIM no [Manual de práticas recomendadas de capacidade de delivery do Adobe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure#authentication){target="_blank"}.
 
 ## Serviço de feedback por email {#email-feedback-service}
 
@@ -87,7 +88,7 @@ Quando a mensagem é realmente entregue aos perfis direcionados e uma vez que es
 
 Quando mensagens com rejeição permanente são relatadas do MTA, o status do log muda de **[!UICONTROL Taken into account by the service provider]** para **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Quando mensagens com rejeição temporária são relatadas do MTA, o status do log permanece inalterado (**[!UICONTROL Taken into account by the service provider]**): somente o [motivo do erro](delivery-failures.md#delivery-failure-reasons) é atualizado<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. A porcentagem de **[!UICONTROL Success]** permanece inalterada. As mensagens com rejeição temporária são então repetidas durante todo o [período de validade](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=pt-BR#defining-validity-period){target="_blank"} da entrega:
+Quando mensagens com rejeição temporária são relatadas do MTA, o status do log permanece inalterado (**[!UICONTROL Taken into account by the service provider]**): somente o [motivo do erro](delivery-failures.md#delivery-failure-reasons) é atualizado<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. A porcentagem de **[!UICONTROL Success]** permanece inalterada. As mensagens com rejeição temporária são então repetidas durante todo o [período de validade da entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}
 
 * Se uma nova tentativa for bem-sucedida antes do fim do período de validade, o status da mensagem mudará para **[!UICONTROL Sent]** e a porcentagem **[!UICONTROL Success]** será aumentada de maneira apropriada.
 

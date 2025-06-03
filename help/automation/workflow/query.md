@@ -5,7 +5,8 @@ description: Saiba mais sobre a atividade do workflow de query
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 71bad190894243f8c4dd82792dcc379faa947e04
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '1607'
 ht-degree: 96%
@@ -30,11 +31,11 @@ Para obter mais informações sobre amostras de query, consulte [esta seção](q
 
 Para mais informações sobre como usar e gerenciar dados adicionais, consulte [Adicionar dados](#adding-data).
 
-O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, as restrições e os critérios de seleção do público da seguinte maneira:
+O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, as restrições e os critérios de seleção da população da seguinte maneira:
 
 1. Selecione a targeting dimension e a dimensão de filtro. Por padrão, o target é selecionado dos destinatários. A lista de filtros de restrição é igual àquelas usadas para o target de entrega.
 
-   O targeting dimension coincide com o tipo de elemento que iremos trabalhar, por exemplo, o público alvo da operação.
+   O targeting dimension coincide com o tipo de elemento que iremos trabalhar, por exemplo, a população de destino da operação.
 
    A dimensão do filtro permite coletar esses elementos, por exemplo, informações relacionadas à pessoa alvo (contratos, liquidações completas e finais etc.).
 
@@ -46,7 +47,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
    ![](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
 
-1. Defina os públicos usando o assistente. Os campos a serem inseridos podem variar de acordo com o tipo de público-alvo. Você pode visualizar o público-alvo com seus critérios atuais usando a guia **[!UICONTROL Preview]**.
+1. Defina as populações usando o assistente. Os campos a serem inseridos podem variar de acordo com o tipo de público-alvo. Você pode visualizar a população de destino com seus critérios atuais usando a guia **[!UICONTROL Preview]**.
 
    ![](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
 
@@ -60,7 +61,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
 ## Adicionar dados {#adding-data}
 
-As colunas adicionais permitem coletar informações adicionais sobre o público alvo, como, por exemplo, números de contrato, assinaturas de boletins informativos ou origem. Esses dados podem ser armazenados no banco de dados do Adobe Campaign ou em um banco de dados externo.
+As colunas adicionais permitem coletar informações adicionais sobre a população de destino, como, por exemplo, números de contrato, assinaturas de boletins informativos ou origem. Esses dados podem ser armazenados no banco de dados do Adobe Campaign ou em um banco de dados externo.
 
 O link **[!UICONTROL Add data...]** permite selecionar os dados adicionais a serem coletados.
 
@@ -88,7 +89,7 @@ Para adicionar dados do banco de dados do Adobe Campaign:
 
    Você pode adicionar:
 
-   * Um campo calculado com base nos dados obtidos do público alvo ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Selecionar dados](targeting-workflows.md#selecting-data).
+   * Um campo calculado com base nos dados obtidos da população de destino ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Selecionar dados](targeting-workflows.md#selecting-data).
    * Um novo campo, criado por meio do botão **[!UICONTROL Add]** à direita da lista de colunas de output.
 
      Também é possível adicionar uma coleção de informações, por exemplo, uma lista de contratos, as últimas 5 entregas etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Editar dados adicionais](targeting-workflows.md#editing-additional-data).
@@ -133,7 +134,7 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
 1. Selecione **[!UICONTROL Filtering conditions]** na lista de tipos de filtros disponíveis.
 1. Insira os diferentes critérios para o target proposto. Os critérios são combinados usando a opção AND. Para ser incluído na seleção, os destinatários terão de cumprir as quatro condições seguintes:
 
-   * Destinatários cujo título é &quot;Sr.&quot; (também é possível encontrar pelo campo **Sexo** e selecionar **Masculino** como valor).
+   * Destinatários cujo título é &quot;Sr.&quot; (também é possível encontrar pelo campo **Gênero** e selecionar **Masculino** como valor).
    * Destinatários abaixo de 30 anos.
    * Destinatários acima de 18 anos.
    * Destinatários que vivem na França.
@@ -159,7 +160,7 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o público alvo do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica a população de destino do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema da população (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 Este valor é o schema da tabela de trabalho. Esse parâmetro é válido para todas as transições com **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
 

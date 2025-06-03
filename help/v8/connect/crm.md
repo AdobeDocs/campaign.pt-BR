@@ -5,10 +5,11 @@ feature: Salesforce Integration, Microsoft CRM Integration
 role: Admin, User
 level: Beginner
 exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 27%
+ht-degree: 34%
 
 ---
 
@@ -41,8 +42,8 @@ O CRM e as versões compatíveis estão detalhados na [Matriz de compatibilidade
 
 ## Etapas de implementação {#crm-implementation-steps}
 
-Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Microsoft Dynamics na [esta página](ac-ms-dyn.md).
+Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Microsoft Dynamics nesta [página](ac-ms-dyn.md).
 
 Saiba mais sobre o procedimento passo a passo para conectar Campaign e Salesforce.com nesta [página](ac-sfdc.md).
 
-A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de fluxo de trabalho. Crie seus workflows para automatizar a sincronização entre o Campaign e o CRM. Você pode criar um fluxo de trabalho que importa contatos por meio do Microsoft Dynamics, sincroniza com os dados existentes do Adobe Campaign, exclui os contatos duplicados e atualiza o banco de dados do Adobe Campaign. Saiba mais [nesta página](crm-data-sync.md).
+A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de fluxo de trabalho. Crie seus workflows para automatizar a sincronização entre o Campaign e o CRM. Você pode criar um workflow que importa contatos por meio do Microsoft Dynamics, sincroniza com os dados existentes do Adobe Campaign, exclui os contatos duplicados e atualiza o banco de dados do Adobe Campaign. Saiba mais [nesta página](crm-data-sync.md).
