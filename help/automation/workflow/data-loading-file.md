@@ -27,7 +27,7 @@ A seção superior da janela de configuração dessa atividade permite definir o
 
 >[!CAUTION]
 >
->Somente os arquivos de estrutura simples são suportados (por exemplo, CSV, TXT e etc.). O uso do formato XML não é recomendado. Com o console do cliente, você pode carregar arquivos de até 150 MB. Na Interface do usuário da Web, a atividade Load file tem um limite de 50 MB. [Saiba mais](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=pt-BR){target="_blank"}
+>Somente os arquivos de estrutura simples são suportados (por exemplo, CSV, TXT e etc.). O uso do formato XML não é recomendado. Com o console do cliente, você pode carregar arquivos de até 150 MB. Na Interface do usuário da Web, a atividade Load file tem um limite de 50 MB. [Saiba mais](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 
