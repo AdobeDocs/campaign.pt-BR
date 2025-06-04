@@ -4,8 +4,9 @@ title: Executar cálculo de agregação
 description: Saiba como executar a computação agregada em consultas
 feature: Workflows
 role: User, Developer
+version: Campaign v8, Campaign Classic v7
 exl-id: 00e564b5-3c8e-45d4-b240-c872a8b8ccb6
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 97%
@@ -14,7 +15,7 @@ ht-degree: 97%
 
 # Executar cálculo de agregação {#performing-aggregate-computing}
 
-Neste exemplo, devemos contar o número de destinatários que vivem em Londres, de acordo com o sexo.
+Neste exemplo, devemos contar o número de destinatários que vivem em Londres, de acordo com o gênero.
 
 * Qual tabela precisa ser selecionada?
 
@@ -30,7 +31,7 @@ Neste exemplo, devemos contar o número de destinatários que vivem em Londres, 
 
 Para criar este exemplo, aplique as seguintes etapas:
 
-1. Em **[!UICONTROL Data to extract]**, defina uma contagem para a chave primária (como mostrado no exemplo anterior). Adicione o campo **[!UICONTROL Gender]** na coluna de saída. Marque a opção **[!UICONTROL Group]** na coluna **[!UICONTROL Gender]**. Dessa forma, os destinatários serão agrupados por sexo.
+1. Em **[!UICONTROL Data to extract]**, defina uma contagem para a chave primária (como mostrado no exemplo anterior). Adicione o campo **[!UICONTROL Gender]** na coluna de saída. Marque a opção **[!UICONTROL Group]** na coluna **[!UICONTROL Gender]**. Dessa forma, os destinatários serão agrupados por gênero.
 
    ![](assets/query_editor_nveau_27.png)
 

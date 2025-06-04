@@ -4,8 +4,9 @@ title: Descrição da entrega
 description: Saiba mais sobre a atividade do workflow do Delivery outline
 feature: Workflows, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 3c06b329-b2d8-4ac8-ab9b-3ab3e525d109
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 100%
@@ -33,7 +34,7 @@ A atividade de **descrição da entrega**, disponível nos workflows da campanha
 
    * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas na entrega.
 
-     Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
+     Os pesos da oferta e as regras de elegibilidade serão considerados pelo mecanismo de oferta.
 
    * Se não marcar a caixa, todas as ofertas na descrição da entrega serão apresentadas sem chamar o mecanismo de oferta.
 

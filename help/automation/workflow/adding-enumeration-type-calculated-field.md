@@ -4,8 +4,9 @@ title: Adicionar um campo calculado do tipo lista discriminada
 description: Saiba como adicionar um campo calculado do tipo lista discriminada
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
@@ -51,7 +52,7 @@ Siga as etapas abaixo:
 
    ![](assets/query_editor_nveau_76.png)
 
-   Defina os valores **Source** e **Destination** : o valor de destino facilita a leitura da query. Esta query deve retornar o sexo do destinatário e o resultado será 0, 1 ou 2.
+   Defina os valores **Source** e **Destination** : o valor de destino facilita a leitura da query. Esta query deve retornar o gênero do destinatário e o resultado será 0, 1 ou 2.
 
    Para cada linha &quot;source-destination&quot; a ser inserida, clique em **[!UICONTROL Add]** em **[!UICONTROL List of enumeration values]**:
 
@@ -67,7 +68,7 @@ Siga as etapas abaixo:
 1. Na janela **[!UICONTROL Data formatting]**, clique em **[!UICONTROL Next]**.
 1. Na janela da pré-visualização, **[!UICONTROL start the preview of the data]**.
 
-   A coluna adicional define o sexo de 0, 1 e 2:
+   A coluna adicional define o gênero de 0, 1 e 2:
 
    * 0 para &quot;Não indicado&quot;
    * 1 para &quot;Masculino&quot;
@@ -75,10 +76,10 @@ Siga as etapas abaixo:
 
    ![](assets/query_editor_nveau_78.png)
 
-   Por exemplo, se você não inserir o gênero &quot;2&quot; em **[!UICONTROL List of enumeration values]** e a função **[!UICONTROL Generate a warning and continue]** do campo **[!UICONTROL In other cases]** for selecionada, você receberá um log de aviso. Este log indica que o sexo &quot;2&quot; (Feminino) não foi digitado. Exibido no campo **[!UICONTROL Logs generated during export]** da janela de pré-visualização de dados.
+   Por exemplo, se você não inserir o gênero &quot;2&quot; em **[!UICONTROL List of enumeration values]** e a função **[!UICONTROL Generate a warning and continue]** do campo **[!UICONTROL In other cases]** for selecionada, você receberá um log de aviso. Este log indica que o gênero &quot;2&quot; (Feminino) não foi digitado. Exibido no campo **[!UICONTROL Logs generated during export]** da janela de pré-visualização de dados.
 
    ![](assets/query_editor_nveau_79.png)
 
-   Vamos tomar outro exemplo e dizer que o valor de enumeração &quot;2&quot; não é inserido. Selecione a função **[!UICONTROL Generate an error and reject the line]**: todos os gêneros &quot;2&quot; dos destinatários criarão anomalias e as outras informações na linha (nome e sobrenome etc.) não serão exportadas. Um log de erros é exibido no campo **[!UICONTROL Logs generated during export]** da janela de pré-visualização de dados. Este log indica que o valor de enumeração &quot;2&quot; não foi inserido.
+   Vamos tomar outro exemplo e dizer que o valor de enumeração &quot;2&quot; não é inserido. Selecione a função **[!UICONTROL Generate an error and reject the line]**: todos os destinatários do gênero “2” gerarão anomalias e as outras informações na linha (nome e sobrenome etc.) não serão exportadas. Um log de erros é exibido no campo **[!UICONTROL Logs generated during export]** da janela de pré-visualização de dados. Este log indica que o valor de enumeração &quot;2&quot; não foi inserido.
 
    ![](assets/query_editor_nveau_80.png)

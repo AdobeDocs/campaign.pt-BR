@@ -4,11 +4,12 @@ title: Transferência de arquivos
 description: Saiba mais sobre a atividade de workflow de transferência de arquivos
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 794de398-f35d-4c2b-af29-d6fd38eb9394
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

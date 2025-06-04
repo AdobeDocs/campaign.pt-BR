@@ -2,8 +2,9 @@
 title: Criar workflows para construção do target
 description: Saiba como criar públicos-alvo em um fluxo de trabalho
 feature: Query Editor, Data Management
+version: Campaign v8, Campaign Classic v7
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
-source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '2252'
 ht-degree: 93%
@@ -42,7 +43,7 @@ Os resultados de todos os enriquecimentos e todos tratamentos realizados no targ
 
 ## Dimensões de filtragem e direcionamento {#targeting-and-filtering-dimensions}
 
-Durante as operações de segmentação de dados, a chave de direcionamento é mapeada para uma dimensão de filtro. O targeting dimension permite definir o público alvo da operação: destinatários, beneficiários de contrato, operadores, assinantes etc. A dimensão de filtro permite selecionar o público com base em determinados critérios: titulares de contratos, assinantes de boletins informativos, etc.
+Durante as operações de segmentação de dados, a chave de direcionamento é mapeada para uma dimensão de filtro. O targeting dimension permite definir a população de destino da operação: destinatários, beneficiários de contrato, operadores, assinantes etc. A dimensão de filtro permite selecionar a população com base em determinados critérios: titulares de contratos, assinantes de boletins informativos, etc.
 
 Por exemplo, para selecionar clientes que têm uma apólice de seguro de vida por mais de 5 anos, selecione a seguinte targeting dimension: **Clients** e a seguinte dimensão do filtro: **Contract holder**. Você pode definir as condições de filtragem na atividade de query
 
@@ -62,7 +63,7 @@ Enquanto para **Visitors**, a lista conterá as seguintes dimensões de filtro:
 
 ### Trabalhar com dados adicionais {#select-data}
 
-Uma atividade **[!UICONTROL Query]** permite que você selecione dados básicos para criar o público-alvo. Para obter mais informações, consulte [esta seção](query.md#create-a-query).
+Uma atividade **[!UICONTROL Query]** permite que você selecione dados básicos para criar a população de destino. Para obter mais informações, consulte [esta seção](query.md#create-a-query).
 
 Também é possível usar as seguintes atividades para consultar e refinar dados do banco de dados: [Incremental query](incremental-query.md) e [Read list](read-list.md).
 
@@ -119,7 +120,7 @@ Selecione uma expressão e confirme.
 
 ### Criar subconjuntos {#create-subsets}
 
-A atividade **[!UICONTROL Split]** permite criar subconjuntos em critérios definidos por consultas de extração. Para cada subconjunto, ao editar uma condição de filtro no público, você acessará a atividade de query padrão que permite definir as condições de segmentação de target.
+A atividade **[!UICONTROL Split]** permite criar subconjuntos em critérios definidos por consultas de extração. Para cada subconjunto, ao editar uma condição de filtro na população, você acessará a atividade de query padrão que permite definir as condições de segmentação de target.
 
 Você pode dividir um target em vários subconjuntos usando apenas dados adicionais como condições de filtragem ou como complemento aos dados de target. Você também pode usar dados externos se tiver comprado a opção **Federated Data Access**.
 
@@ -137,11 +138,11 @@ As seguintes opções de reconciliação de dados estão disponíveis:
 
 * **[!UICONTROL Keys only]**
 
-  Essa opção pode ser usada se os públicos de entrada forem homogêneos.
+  Essa opção pode ser usada se as populações de entrada forem homogêneas.
 
 * **[!UICONTROL All columns in common]**
 
-  Esta opção permite reconciliar dados baseado em todas as colunas comuns para os vários públicos do target.
+  Esta opção permite reconciliar dados baseado em todas as colunas comuns para as várias populações do target.
 
   O Adobe Campaign identifica colunas com base em seu nome. Um limite de tolerância é aceito: uma coluna &#39;Email&#39; pode ser reconhecida como idêntica a uma coluna &#39;@email&#39;, por exemplo.
 
@@ -155,13 +156,13 @@ As seguintes opções de reconciliação de dados estão disponíveis:
 
   >[!CAUTION]
   >
-  >Durante a reconciliação de dados, não haverá a eliminação da duplicação dos públicos.
+  >Durante a reconciliação de dados, não haverá a eliminação da duplicação das populações.
 
-  Você pode restringir o tamanho do público a um determinado número de registros. Para fazer isso, clique na opção adequada e especifique o número de registros a serem mantidos.
+  Você pode restringir o tamanho da população a um determinado número de registros. Para fazer isso, clique na opção adequada e especifique o número de registros a serem mantidos.
 
-  Além disso, especifique a prioridade dos públicos de entrada: a seção inferior da janela lista as transições de entrada da atividade de união e permite organizá-las com as setas azuis à direita da janela.
+  Além disso, especifique a prioridade das populações de entrada: a seção inferior da janela lista as transições de entrada da atividade de união e permite organizá-las com as setas azuis à direita da janela.
 
-  Os registros serão retirados primeiro do público da primeira transição de entrada na lista, e, se o máximo não tiver sido atingido, eles serão retirados do público da segunda transição de entrada e etc.
+  Os registros serão retirados primeiro da população da primeira transição de entrada na lista, e, se o máximo não tiver sido atingido, eles serão retirados da população da segunda transição de entrada e etc.
 
   ![](assets/join_limit_nb_priority.png)
 
@@ -169,15 +170,15 @@ As seguintes opções de reconciliação de dados estão disponíveis:
 
 ![](assets/traitements.png)
 
-A intersecção permite recuperar apenas as linhas compartilhadas pelos públicos de transições de entrada. Essa atividade deve ser configurada como a atividade de união.
+A intersecção permite recuperar apenas as linhas compartilhadas pelas populações de transições de entrada. Essa atividade deve ser configurada como a atividade de união.
 
-Além disso, é possível manter apenas uma seleção de colunas ou apenas as colunas compartilhadas pelo público de entrada.
+Além disso, é possível manter apenas uma seleção de colunas ou apenas as colunas compartilhadas pela população de entrada.
 
 A atividade de intersecção é detalhada na seção [Intersection](intersection.md).
 
 ### Excluir uma população (Exclusão) {#exclude-a-population--exclusion-}
 
-A atividade de exclusão permite excluir os elementos de um target de um público alvo diferente. O targeting dimension de output dessa atividade será do conjunto principal.
+A atividade de exclusão permite excluir os elementos de uma população de destino diferente. O targeting dimension de output dessa atividade será do conjunto principal.
 
 Quando necessário, é possível manipular as tabelas de entrada. De fato, para excluir um target de outra dimensão, esse target deve ser devolvido ao mesmo targeting dimension como o target principal. Para fazer isso, clique no botão **[!UICONTROL Add]** e especifique as condições de alteração da dimensão.
 
@@ -205,11 +206,11 @@ Para configurá-lo, primeiro é necessário selecionar os critérios:
 
    ![](assets/split-subset-config-all-data.png)
 
-   Um exemplo de uso das condições de filtragem na atividade **[!UICONTROL Split]** para segmentar o target em diferentes públicos é descrito [nesta seção](cross-channel-delivery-workflow.md).
+   Um exemplo de uso das condições de filtragem na atividade **[!UICONTROL Split]** para segmentar o target em diferentes populações é descrito [nesta seção](cross-channel-delivery-workflow.md).
 
    O campo **[!UICONTROL Label]** permite que você dê um nome ao subconjunto recém-criado, que corresponderá à transição de saída.
 
-   Você também pode atribuir um código de segmento ao subconjunto para identificá-lo e usá-lo para o target do seu público.
+   Você também pode atribuir um código de segmento ao subconjunto para identificá-lo e usá-lo para direcionar a população.
 
    Se necessário, você pode alterar o targeting dimension e a dimensão de filtro individualmente para cada subconjunto que deseja criar. Para fazer isso, edite a condição de filtragem do subconjunto e verifique a opção **[!UICONTROL Use a specific filtering dimension]**.
 

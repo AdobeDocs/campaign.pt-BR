@@ -4,8 +4,9 @@ title: Sinal externo
 description: Saiba mais sobre a atividade de workflow de sinal externo
 feature: Workflows
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 45cb95ec-77bf-4bab-895f-b94f6ce660fd
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 100%
@@ -26,7 +27,7 @@ Consulte a documentação online sobre chamadas SOAP para obter mais informaçõ
 
 ![](assets/edit_signal.png)
 
-A configuração das expirações é apresentada em [Expirations](define-approvals.md).
+A configuração das expirações é apresentada em [Expirações](define-approvals.md).
 
 O campo **Delay** permite especificar um atraso de expiração nas unidades de sua escolha. Consulte [Wait](wait.md).
 

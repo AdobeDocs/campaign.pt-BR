@@ -4,8 +4,9 @@ title: Gestão de conteúdo
 description: Gestão de conteúdo
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-source-git-commit: c73f9f3dc7958152c284dbaf06210d09115e5df8
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 85%
@@ -22,7 +23,7 @@ Uma atividade de **Gestão de conteúdo** permite criar e manipular um conteúdo
 
 >[!NOTE]
 >
->A interface da Web do Adobe Campaign permite usar fragmentos de conteúdo para o seu conteúdo. Ele permite que os usuários de marketing pré-criem vários blocos de conteúdo personalizados, graças a componentes reutilizáveis que podem ser referenciados em uma ou mais mensagens, permitindo reunir rapidamente o conteúdo da mensagem em um processo de design aprimorado. Para saber mais sobre os fragmentos de conteúdo, consulte a [documentação da interface do usuário da Web do Adobe Campaign.](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
+>A interface da Web do Adobe Campaign permite usar fragmentos de conteúdo para o seu conteúdo. Ele permite que os usuários de marketing pré-criem vários blocos de conteúdo personalizados, graças a componentes reutilizáveis que podem ser referenciados em uma ou mais mensagens, permitindo reunir rapidamente o conteúdo da mensagem em um processo de design aprimorado. Para saber mais sobre os fragmentos de conteúdo, consulte a [documentação da interface do usuário da Web do Adobe Campaign.](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 As propriedades da atividade são divididas em três etapas:
 

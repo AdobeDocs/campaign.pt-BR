@@ -3,8 +3,9 @@ product: campaign
 title: Split
 description: Saiba mais sobre a atividade de workflow Split
 feature: Workflows, Targeting Activity
+version: Campaign v8, Campaign Classic v7
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
-source-git-commit: a5d44321c3d68b9370cfb6e9b1df62435de0dbda
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 92%
@@ -15,14 +16,14 @@ ht-degree: 92%
 
 Uma atividade do tipo **Split** permite dividir um target em vários subconjuntos. O target é construído com todos os resultados recebidos: todas as atividades anteriores devem ter sido concluídas para que essa atividade seja executada.
 
-Essa atividade não aciona uma união de públicos de entrada. Se várias transições acabarem em uma atividade de Split, é recomendado inserir uma atividade de **[!UICONTROL Union]** na frente.
+Essa atividade não aciona uma união de populações de entrada. Se várias transições acabarem em uma atividade de Split, é recomendado inserir uma atividade de **[!UICONTROL Union]** na frente.
 
 >[!NOTE]
 >
 >Não é possível executar operações de divisão em tabelas com origens diferentes. Para essa finalidade, adicione uma atividade de **Enriquecimento** antes da atividade de **Divisão**.
 
 * Para obter um exemplo da atividade de split que está sendo usada, consulte [esta seção](targeting-workflows.md#create-subsets-using-the-split-activity).
-* Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
+* Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes populações usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
 * Um exemplo mostrando como usar uma variável de instância em uma atividade de Split está disponível [nesta seção](javascript-scripts-and-templates.md).
 
 Para configurar essa atividade, defina o conteúdo do subconjunto e o rótulo na guia **[!UICONTROL Subsets]** e escolha o targeting dimension na guia **[!UICONTROL General]**.
@@ -32,7 +33,7 @@ Para configurar essa atividade, defina o conteúdo do subconjunto e o rótulo na
 Para criar um subconjunto:
 
 1. Clique no rótulo no campo correspondente e selecione o filtro a ser aplicado.
-1. Para filtrar o público de entrada, selecione a **[!UICONTROL Add a filtering condition]** opção e clique no **[!UICONTROL Edit...]** link.
+1. Para filtrar a população de entrada, selecione a **[!UICONTROL Add a filtering condition]** opção e clique no **[!UICONTROL Edit...]** link.
 
    Selecione o tipo de filtro a ser aplicado aos dados para incluí-lo neste conjunto.
 
@@ -229,6 +230,6 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da exclusão. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da exclusão. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema da população (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.

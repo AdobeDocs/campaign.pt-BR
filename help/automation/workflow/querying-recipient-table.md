@@ -4,8 +4,9 @@ title: Consultar a tabela de destinatários
 description: Saiba como consultar a tabela de destinatários
 feature: Query Editor
 role: User, Data Engineer
+version: Campaign v8, Campaign Classic v7
 exl-id: 7f859ce9-7ab8-46e1-8bd6-43aaffe30da2
-source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 100%
@@ -52,7 +53,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_editor_05.png)
 
-1. Se necessário, clique no botão **[!UICONTROL Distribution of values]** para visualizar uma distribuição baseada no domínio de email de prospectos. Uma porcentagem está disponível para cada domínio de e-mail no banco de dados. Domínios diferentes de &quot;orange.co.uk&quot; são exibidos até o filtro ser aplicado.
+1. Se necessário, clique no botão **[!UICONTROL Distribution of values]** para visualizar uma distribuição baseada no domínio de email de clientes potenciais. Uma porcentagem está disponível para cada domínio de e-mail no banco de dados. Domínios diferentes de &quot;orange.co.uk&quot; são exibidos até o filtro ser aplicado.
 
    Um resumo da consulta é exibido na parte inferior da janela: **Email domain equal to &#39;orange.co.uk&#39;**.
 

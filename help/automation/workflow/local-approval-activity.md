@@ -4,8 +4,9 @@ title: Usar a atividade de aprovação local
 description: Saiba como usar a atividade de aprovação local
 feature: Workflows, Approvals
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 31089026-3fc0-4491-8b70-0fb7fd1e3ac0
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 98%
@@ -26,7 +27,7 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 
 As principais etapas do ciclo de aprovação de conteúdo são:
 
-1. A amostragem resultante do direcionamento pode ser limitada graças a uma atividade tipo **[!UICONTROL Split]** que usa um template de distribuição de dados.
+1. A população resultante do direcionamento pode ser limitada graças a uma atividade tipo **[!UICONTROL Split]** que usa um template de distribuição de dados.
 
    ![](assets/local_validation_intro_1.png)
 
@@ -44,7 +45,7 @@ As principais etapas do ciclo de aprovação de conteúdo são:
 
 ## Etapa 1: criar o modelo de distribuição de dados {#step-1--creating-the-data-distribution-template-}
 
-O modelo de distribuição de dados permite limitar o público resultante do direcionamento com base no agrupamento de dados, permitindo atribuir cada valor a um supervisor local. Neste exemplo, definimos o campo **[!UICONTROL Email address domain]** como um campo de distribuição e atribuímos um domínio a cada supervisor local
+O modelo de distribuição de dados permite limitar a população resultante do direcionamento com base no agrupamento de dados, permitindo atribuir cada valor a um supervisor local. Neste exemplo, definimos o campo **[!UICONTROL Email address domain]** como um campo de distribuição e atribuímos um domínio a cada supervisor local
 
 Para obter mais informações sobre como criar um template de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
@@ -97,13 +98,13 @@ As seguintes atividades foram adicionadas:
 * Uma segunda atividade **[!UICONTROL Local approval]**,
 * Uma atividade **[!UICONTROL End]**.
 
-### Consultas, Intersecção e Split {#queries--intersection-and-split}
+### Consultas, Intersecção e Divisão {#queries--intersection-and-split}
 
-O direcionamento de upstream é composto de duas consultas, uma intersecção e um Split. O público resultante do direcionamento pode ser limitado por meio de uma atividade **[!UICONTROL Split]** usando um template de distribuição de dados.
+O direcionamento de upstream é composto de duas consultas, uma intersecção e um Split. A população resultante do direcionamento pode ser limitado por meio de uma atividade **[!UICONTROL Split]** usando um template de distribuição de dados.
 
 Para obter mais informações sobre como configurar uma atividade Split, consulte [Split](split.md). A criação de um template de distribuição de dados é detalhada em [Limitação do número de registros do subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-Se não quiser limitar o público da query, não utilize as atividades **[!UICONTROL Query]**, **[!UICONTROL Intersection]** e **[!UICONTROL Split]**. Nesse caso, complete o template de distribuição de dados na primeira atividade **[!UICONTROL Local approval]**.
+Se não quiser limitar a população da query, não utilize as atividades **[!UICONTROL Query]**, **[!UICONTROL Intersection]** e **[!UICONTROL Split]**. Nesse caso, complete o template de distribuição de dados na primeira atividade **[!UICONTROL Local approval]**.
 
 1. Na seção **[!UICONTROL Record count limitation]**, selecione a opção **[!UICONTROL Limit the selected records]** e clique no link **[!UICONTROL Edit]**.
 
@@ -121,7 +122,7 @@ Se não quiser limitar o público da query, não utilize as atividades **[!UICON
 
    ![](assets/local_validation_split_3.png)
 
-No template de distribuição, limitamos o público a 10% por valor de agrupamento, o que coincide com os valores exibidos no workflow (340 como entrada e 34 como saída).
+No template de distribuição, limitamos o população a 10% por valor de agrupamento, o que coincide com os valores exibidos no workflow (340 como entrada e 34 como saída).
 
 ![](assets/local_validation_intro_1.png)
 
@@ -138,7 +139,7 @@ Os seguintes campos precisam ser inseridos:
 1. Na seção **[!UICONTROL Action to execute]** selecione a opção **[!UICONTROL Target approval notification]**.
 1. Na seção **[!UICONTROL Distribution context]** selecione a opção **[!UICONTROL Specified in the transition]**.
 
-   Se não quiser limitar o público-alvo, selecione a opção **[!UICONTROL Explicit]** e insira o template de distribuição criado anteriormente no campo **[!UICONTROL Data distribution]**.
+   Se não quiser limitar a população de destino, selecione a opção **[!UICONTROL Explicit]** e insira o template de distribuição criado anteriormente no campo **[!UICONTROL Data distribution]**.
 
 1. Na seção **[!UICONTROL Notification]**, selecione o template da entrega e o assunto a ser usado para o email de notificação. Aqui, escolhemos o template padrão: **[!UICONTROL Local approval notification]**.
 1. Na seção **[!UICONTROL Approval schedule]**, mantivemos o prazo de aprovação padrão (3 dias) e adicionamos um lembrete. A entrega será enviada 3 dias após o início da aprovação. Ao atingir o prazo final de aprovação, os destinatários que não foram aprovados não serão considerados.

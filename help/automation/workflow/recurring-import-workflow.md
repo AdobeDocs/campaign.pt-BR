@@ -4,8 +4,9 @@ title: Configurar uma importação recorrente
 description: Saiba como configurar um modelo de fluxo de trabalho para importações recorrentes.
 feature: Workflows, Data Management
 role: User, Data Engineer
+version: Campaign v8, Campaign Classic v7
 exl-id: 13f0091b-b62c-47df-9658-6631ba1cf03a
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 99%
@@ -63,7 +64,7 @@ Esse exemplo mostra como predefinir um workflow que pode ser reutilizado para im
 
      Marque a opção **[!UICONTROL Generate complement]** para ver se algum registro não pode ser inserido no banco de dados. Se for necessário, você pode aplicar processamento adicional aos dados complementares: exportação de arquivos, atualização de lista etc.
 
-   * No primeiro subconjunto da guia **[!UICONTROL Subsets]**, adicione uma condição de filtragem no público de entrada para selecionar apenas registros para os quais a chave primária do destinatário não for igual a 0. Dessa forma, os dados do arquivo reconciliado com destinatários do banco de dados são selecionados nesse subconjunto.
+   * No primeiro subconjunto da guia **[!UICONTROL Subsets]**, adicione uma condição de filtragem na população de entrada para selecionar apenas registros para os quais a chave primária do destinatário não for igual a 0. Dessa forma, os dados do arquivo reconciliado com destinatários do banco de dados são selecionados nesse subconjunto.
 
      ![](assets/import_template_example3.png)
 

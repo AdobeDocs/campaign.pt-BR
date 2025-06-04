@@ -2,8 +2,9 @@
 title: Usar dados de fluxo de trabalho
 description: Saiba como usar os dados de workflow
 feature: Workflows, Data Management
+version: Campaign v8, Campaign Classic v7
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 72%
@@ -118,7 +119,7 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
 
 ## Atualizar o banco de dados {#update-the-database}
 
-Todos os dados coletados podem ser usados para atualizar o banco de dados ou nas entregas. Por exemplo, você pode enriquecer as possibilidades de personalização do conteúdo da mensagem (incluir o número de contratos na mensagem, especificar o carrinho de compras comum do ano passado, etc.) ou detalhar o público alvo (enviar uma mensagem aos cotitulares do contrato, ter como target os mil melhores assinantes dos serviços online e etc.). Esses dados também podem ser exportados ou arquivados em uma lista.
+Todos os dados coletados podem ser usados para atualizar o banco de dados ou nas entregas. Por exemplo, você pode enriquecer as possibilidades de personalização do conteúdo da mensagem (incluir o número de contratos na mensagem, especificar o carrinho de compras comum do ano passado, etc.) ou detalhar o direcionamento da população (enviar uma mensagem aos cotitulares do contrato, ter como target os mil melhores assinantes dos serviços online e etc.). Esses dados também podem ser exportados ou arquivados em uma lista.
 
 ### Atualizar listas  {#list-updates}
 

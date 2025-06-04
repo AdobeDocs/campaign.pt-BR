@@ -3,11 +3,12 @@ product: campaign
 title: Teste
 description: Saiba mais sobre a atividade do workflow de teste
 feature: Workflows
+version: Campaign v8, Campaign Classic v7
 exl-id: 0d4d13f6-7128-44d3-ad5c-4ed02257ee64
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '187'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +22,7 @@ Uma condição é uma expressão JavaScript que deve ser avaliada como &quot;ver
 
 ![](assets/edit_test.png)
 
-Para obter mais informações sobre todas as funções adicionais do JavaScript e métodos SOAP do servidor do aplicativo acessível via JavaScript de fluxo de trabalho, consulte a [documentação JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre todas as funções adicionais do JavaScript e métodos SOAP do servidor do aplicativo acessível via JavaScript de workflow, consulte a [documentação JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR){target="_blank"}.
 
 Também é possível inserir variáveis diretamente no editor. Para obter mais informações sobre como trabalhar com variáveis, consulte [esta seção](javascript-scripts-and-templates.md#variables).
 

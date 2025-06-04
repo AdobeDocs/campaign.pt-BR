@@ -4,8 +4,9 @@ title: Consulta de informações de entrega
 description: Como consultar informações de entrega
 feature: Query Editor
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: d11a1992-c07b-4133-8f0a-65f1b7552a99
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 100%
@@ -26,7 +27,7 @@ Neste exemplo, estamos procurando coletar o número de cliques de uma entrega es
 
 * Campos a serem selecionados para colunas de saída?
 
-  Primary key (with count) e Email.
+  Chave primária (with count) e Email.
 
 * Quais critérios serão usados para filtrar as informações?
 
@@ -46,7 +47,7 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
      ![](assets/query_editor_tracklog_06.png)
 
-   * Na janela **[!UICONTROL Formula type]**, execute um processo na função agregada. Esse processo será uma contagem de chaves primária.
+   * Na janela **[!UICONTROL Formula type]**, execute um processo na função agregada. Esse processo será uma contagem de chaves primárias.
 
      Selecione **[!UICONTROL Process on an aggregate function]** na seção **[!UICONTROL Aggregate]** e clique em **[!UICONTROL Count]**.
 

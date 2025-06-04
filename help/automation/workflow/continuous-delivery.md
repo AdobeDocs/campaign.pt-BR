@@ -4,11 +4,12 @@ title: Entrega contínua
 description: Entrega contínua
 feature: Workflows, Channels Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: e3ad6d92-8d53-4098-90fd-cfed29f2e56e
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -45,7 +46,7 @@ Apenas quando a opção **[!UICONTROL Specified by the inbound event]** está se
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da entrega em tempo real. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do público-alvo, **[!UICONTROL schema]** é o esquema do público (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da entrega em tempo real. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do público-alvo, **[!UICONTROL schema]** é o esquema da população (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.
 
@@ -63,6 +64,6 @@ Uma entrega contínua criará uma ÚNICA entrega. Logs da entrega (broadLog) e l
 
 Este vídeo mostra como configurar uma entrega contínua com um query incremental.
 
->[!VIDEO](https://video.tv.adobe.com/v/31845?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

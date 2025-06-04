@@ -3,8 +3,9 @@ product: campaign
 title: Enviar um relatório a uma lista
 description: Saiba como enviar um relatório para uma lista com um fluxo de trabalho
 feature: Workflows
+version: Campaign v8, Campaign Classic v7
 exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 40%
@@ -21,7 +22,7 @@ As principais etapas de implementação para este caso de uso são:
 
 * Criar uma lista de destinatários para este relatório. [Saiba mais](#step-1--create-the-recipient-list).
 * Crie um template de delivery que crie um novo delivery toda vez que o workflow for executado. [Saiba mais](#step-2--create-the-delivery-template).
-* Crie um workflow que gera o relatório no formato PDF e o envia para a lista de recipients. [Saiba mais](#step-3--create-the-workflow)).
+* Crie um workflow que gere o relatório no formato PDF e o envie para a lista de recipients. [Saiba mais](#step-3--create-the-workflow)).
 
 ## Etapa 1: criar a lista de recipients {#step-1--create-the-recipient-list}
 

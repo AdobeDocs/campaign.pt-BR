@@ -4,8 +4,9 @@ title: Interseção
 description: Interseção
 feature: Workflows, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 12777107-5ccc-4f19-9dcd-8f6cade3ee98
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 100%
@@ -18,13 +19,13 @@ ht-degree: 100%
 
 Uma atividade do tipo **intersecção** cria um público alvo a partir da intersecção dos targets recebidos.
 
-Uma intersecção permite extrair somente o público que é comum a todos os resultados da atividade de entrada. O target é criado com todos os resultados recebidos: todas as atividades anteriores devem então ser concluídas antes que a intersecção possa ser executada. Para configurar essa atividade, você precisa inserir um rótulo para ela, bem como as opções referentes ao resultado.
+Uma intersecção permite extrair somente a população que é comum a todos os resultados da atividade de entrada. O target é criado com todos os resultados recebidos: todas as atividades anteriores devem então ser concluídas antes que a intersecção possa ser executada. Para configurar essa atividade, você precisa inserir um rótulo para ela, bem como as opções referentes ao resultado.
 
 ![](assets/s_user_segmentation_inter.png)
 
 Para obter mais informações sobre como configurar e usar a atividade de intersecção, consulte [Extraindo dados conjuntos (Intersecção)](targeting-workflows.md#extracting-joint-data--intersection-).
 
-Marque a opção **[!UICONTROL Generate complement]** se desejar processar o público restante. O complemento conterá a união dos resultados de todas as atividades de entrada menos a intersecção. Uma transição de saída adicional será adicionada à atividade, da seguinte maneira:
+Marque a opção **[!UICONTROL Generate complement]** se desejar processar a população restante. O complemento conterá a união dos resultados de todas as atividades de entrada menos a intersecção. Uma transição de saída adicional será adicionada à atividade, da seguinte maneira:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
@@ -59,4 +60,4 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da intersecção. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente **[!UICONTROL nms:recipient]**) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da intersecção. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema da população (normalmente **[!UICONTROL nms:recipient]**) e **[!UICONTROL recCount]** é o número de elementos na tabela.

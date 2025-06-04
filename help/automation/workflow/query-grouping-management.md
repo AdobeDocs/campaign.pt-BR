@@ -4,8 +4,9 @@ title: Consultar usando gerenciamento de agrupamento
 description: Saiba como executar consultas usando o gerenciamento de agrupamento
 feature: Query Editor
 role: User, Data Engineer
+version: Campaign v8, Campaign Classic v7
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 100%
@@ -53,7 +54,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_editor_blocklist_04.png)
 
-1. Na janela **[!UICONTROL Grouping condition]**, indique uma contagem de chaves primária maior que 30, pois desejamos que apenas domínios de e-mail alcançados mais de 30 vezes sejam retornados como resultados.
+1. Na janela **[!UICONTROL Grouping condition]**, indique uma contagem de chaves primárias maior que 30, pois desejamos que apenas domínios de e-mail alcançados mais de 30 vezes sejam retornados como resultados.
 
    Esta janela aparece quando a caixa **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** foi marcada: é aqui que o resultado do agrupamento é filtrado (HAVING).
 

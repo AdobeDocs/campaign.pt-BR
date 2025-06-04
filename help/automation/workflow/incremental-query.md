@@ -4,8 +4,9 @@ title: Query incremental
 description: Saiba mais sobre a atividade do workflow de query incremental
 feature: Workflows, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 3e9f92c3-080f-441b-a15a-2ec9d056d1f9
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 100%
@@ -18,7 +19,7 @@ ht-degree: 100%
 
 Um query incremental permite selecionar periodicamente um target com base em um critério, enquanto exclui as pessoas já alvos desse critério.
 
-O público que já foi alvo é armazenado na memória pela instância de workflow e por atividade, ou seja, dois workflows iniciados do mesmo template não compartilham o mesmo log. Por outro lado, duas tarefas baseadas no mesmo query incremental para a mesma instância de workflow usarão o mesmo log.
+A população que já foi alvo é armazenada na memória pela instância de workflow e por atividade, ou seja, dois workflows iniciados do mesmo template não compartilham o mesmo log. Por outro lado, duas tarefas baseadas no mesmo query incremental para a mesma instância de workflow usarão o mesmo log.
 
 O query é definido da mesma forma que queries padrão, mas sua execução é agendada.
 
@@ -66,4 +67,4 @@ Para fazer isso:
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o público alvo do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica a população de destino do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema da população (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.

@@ -4,8 +4,9 @@ title: Delivery
 description: Saiba mais sobre a atividade de workflow de tipo Delivery
 feature: Workflows, Channels Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 58574983-86c7-46f5-b41b-bae90171048d
-source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 100%
@@ -28,7 +29,7 @@ Para configurá-la, edite a atividade e insira as opções de entrega.
 
      Essa opção pode ser usada quando uma atividade de workflow anterior já criou ou especificou a entrega. Isso pode ter sido feito, como no exemplo abaixo, por uma atividade do mesmo tipo que gerou uma transição de saída.
 
-     No exemplo a seguir, a entrega é criada pela primeira vez. O público e o conteúdo são definidos mais tarde. Em seguida, as informações desses três elementos são inseridas novamente em uma nova atividade de entrega usando a transição de entrada para que isso possa ser enviado.
+     No exemplo a seguir, a entrega é criada pela primeira vez. A população e o conteúdo são definidos mais tarde. Em seguida, as informações desses três elementos são inseridas novamente em uma nova atividade de entrega usando a transição de entrada para que isso possa ser enviado.
 
      ![](assets/specified_transition_option_exemple.png)
 
@@ -159,7 +160,7 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da entrega. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do target,**[!UICONTROL schema]** é o schema do público (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da entrega. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do target,**[!UICONTROL schema]** é o schema da população (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.
 

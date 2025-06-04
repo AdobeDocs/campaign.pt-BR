@@ -5,11 +5,12 @@ description: Saiba como iniciar um fluxo de trabalho e descubra a barra de ferra
 feature: Workflows
 level: Beginner
 role: User, Admin
+version: Campaign v8, Campaign Classic v7
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 92%
 
 Um workflow é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](scheduler.md)) ou de um agendamento de atividade. 
 
-Ações relacionadas à execução do fluxo de trabalho de direcionamento (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-la.
+As ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
 A barra de ferramentas permite iniciar e controlar a execução do workflow.
 
@@ -57,7 +58,7 @@ O botão **[!UICONTROL Actions]** da barra de ferramentas permite acessar opçõ
 
   >[!CAUTION]
   >
-  >A interrupção incondicional está restrita aos usuários administradores.
+  >A interrupção incondicional é restrita aos usuários administradores. 
 
 * **[!UICONTROL Restart]**
 
@@ -79,7 +80,7 @@ O botão **[!UICONTROL Actions]** da barra de ferramentas permite acessar opçõ
 
 * **[!UICONTROL Start in simulation mode]**
 
-  Essa opção permite iniciar o fluxo de trabalho no modo de simulação em vez do modo real. Isso significa que ao habilitar esse modo, somente as atividades que não afetam o banco de dados ou o sistema de arquivos serão executadas (por exemplo, **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Atividades que têm impacto (por exemplo, **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.) assim como as posteriores (na mesma ramificação) não são executadas.
+  Essa opção permite iniciar o fluxo de trabalho no modo de simulação em vez do modo real. Isso significa que ao habilitar esse modo, somente as atividades que não afetam o banco de dados ou o sistema de arquivos serão executadas (por exemplo, **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). As atividades que têm impacto (por exemplo, **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.) e as que estão após elas (na mesma ramificação) não são executadas.
 
 * **[!UICONTROL Execute pending tasks now]**
 
@@ -107,7 +108,7 @@ Melhore a estabilidade da instância implementando as seguintes práticas recome
 
 * **Interromper fluxos de trabalho não utilizados**. Os fluxos de trabalho que continuam em execução mantêm conexões com o banco de dados.
 
-* **Use a interrupção incondicional apenas nos casos mais raros**. Essa opção é restrita aos usuários administradores. Não utilize esta ação regularmente. Não executar um encerramento limpo nas conexões geradas pelos workflows com o banco de dados afeta o desempenho.
+* **Use a interrupção incondicional apenas nos casos mais raros**. Esta opção é restrita aos usuários administradores. Não utilize esta ação regularmente. Não executar um encerramento limpo nas conexões geradas pelos workflows com o banco de dados afeta o desempenho.
 
 * **Não execute várias solicitações de interrupção no mesmo fluxo de trabalho**. A interrupção de um workflow é um processo assíncrono: a solicitação é registrada e, em seguida, o servidor ou servidores de workflow cancelam as operações em andamento. A interrupção de uma instância de fluxo de trabalho pode demorar, especialmente se o fluxo de trabalho estiver em execução em vários servidores, em que cada um deles deve assumir o controle para cancelar as tarefas em andamento. Para evitar problemas, aguarde a conclusão da operação de interrupção e evite interromper um fluxo de trabalho várias vezes.
 
