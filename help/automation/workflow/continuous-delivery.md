@@ -66,4 +66,4 @@ Este vídeo mostra como configurar uma entrega contínua com um query incrementa
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
