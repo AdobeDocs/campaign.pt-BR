@@ -36,7 +36,7 @@ _14 de fevereiro de 2025_
 
 ### Novos recursos {#features-8-7-3}
 
-* **Dynamic Reporting para mensagens transacionais** - Agora é possível monitorar as mensagens transacionais na interface do usuário do Dynamic Reporting. Esses relatórios oferecem ao profissional de marketing a capacidade de visualizar em tempo real todas as métricas e dimensões de relatórios das mensagens transacionais e o detalhamento das entregas enviadas por meio de um modelo. [Leia mais](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
+* **Dynamic Reporting para mensagens transacionais** - Agora é possível monitorar as mensagens transacionais na interface do usuário do Dynamic Reporting. Esses relatórios oferecem ao profissional de marketing a capacidade de visualizar em tempo real todas as métricas e dimensões de relatórios das mensagens transacionais e o detalhamento das entregas enviadas por meio de um modelo. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
 
 * **REST APIs de mensagens transacionais** - As APIs transacionais baseadas em eventos agora estão disponíveis para emails. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
 

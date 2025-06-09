@@ -98,4 +98,4 @@ Você pode implantar o Adobe Campaign usando o banco de dados e os esquemas pred
 
 A permissão de armazenamento total é dividida entre o banco de dados principal e o banco de dados secundário (opcional) do Snowflake. O local onde os dados são armazenados deve ser determinado na implementação ou no momento da atualização, dependendo dos casos de uso específicos do cliente.
 
-Saiba como monitorar o uso do banco de dados na [documentação do Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.
+Saiba como monitorar o uso do banco de dados na [documentação do Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=pt-BR){target="_blank"}.

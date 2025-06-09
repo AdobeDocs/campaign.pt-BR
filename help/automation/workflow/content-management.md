@@ -23,7 +23,7 @@ Uma atividade de **Gestão de conteúdo** permite criar e manipular um conteúdo
 
 >[!NOTE]
 >
->A interface da Web do Adobe Campaign permite usar fragmentos de conteúdo para o seu conteúdo. Ele permite que os usuários de marketing pré-criem vários blocos de conteúdo personalizados, graças a componentes reutilizáveis que podem ser referenciados em uma ou mais mensagens, permitindo reunir rapidamente o conteúdo da mensagem em um processo de design aprimorado. Para saber mais sobre os fragmentos de conteúdo, consulte a [documentação da interface do usuário da Web do Adobe Campaign.](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
+>A interface da Web do Adobe Campaign permite usar fragmentos de conteúdo para o seu conteúdo. Ele permite que os usuários de marketing pré-criem vários blocos de conteúdo personalizados, graças a componentes reutilizáveis que podem ser referenciados em uma ou mais mensagens, permitindo reunir rapidamente o conteúdo da mensagem em um processo de design aprimorado. Para saber mais sobre os fragmentos de conteúdo, consulte a [documentação da interface do usuário da Web do Adobe Campaign.](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 As propriedades da atividade são divididas em três etapas:
 

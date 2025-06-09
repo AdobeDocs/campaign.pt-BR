@@ -34,34 +34,34 @@ Com landing pages, você pode:
 * Forneça aos recipients a capacidade de cancelar a inscrição do recebimento de suas comunicações.
 
 
-Saiba mais sobre landing pages na [documentação da interface do usuário da Web do Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
+Saiba mais sobre landing pages na [documentação da interface do usuário da Web do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
 
 Você também pode navegar pelas seguintes seções:
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/create-lp">
+<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/create-lp">
 <img alt="Lead" src="assets/do-not-localize/lp-subscription.jpeg">
 </a>
-<div><a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/create-lp"><strong>Criar páginas de destino</strong>
+<div><a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/create-lp"><strong>Criar páginas de destino</strong>
 </div>
 <p>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-content">
+<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/lp-content">
 <img alt="Validação" src="assets/do-not-localize//lp-design.jpg">
 </a>
 <div>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-content"><strong>Design de páginas de destino</strong></a>
+<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/lp-content"><strong>Design de páginas de destino</strong></a>
 </div>
 <p>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates">
+<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/lp-templates">
 <img alt="Validação" src="assets/do-not-localize/lp-reporting.jpg">
 </a>
 <div>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates"><strong>Trabalhar com modelos de página de aterrissagem</strong></a>
+<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/lp-templates"><strong>Trabalhar com modelos de página de aterrissagem</strong></a>
 </div>
 <p>
 </td>
