@@ -18,7 +18,7 @@ Os dados do Personalization podem ser recuperados de vários tipos de fontes: fo
 
 ## Fonte de dados do banco de dados do Campaign
 
-No caso mais comum, os dados de personalização são armazenados no banco de dados. Por exemplo, &quot;campos de personalização de recipient&quot; são todos os campos definidos na tabela de recipients, campos padrão (normalmente: sobrenome, nome, endereço, cidade, data de nascimento etc.) ou campos personalizados.
+No caso mais comum, os dados de personalização são armazenados no banco de dados. Por exemplo, &quot;campos de personalização de recipient&quot; são todos os campos definidos na tabela de recipients, campos padrão (normalmente: sobrenome, nome, endereço, cidade, data de nascimento, etc.) ou campos personalizados.
 
 ![Campos de personalização de campanha em um email](assets/perso-campaign-datasource.png)
 

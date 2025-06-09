@@ -18,7 +18,7 @@ Os workflows detalhados abaixo são instalados com o módulo **Marketing Social*
 
 >[!AVAILABILITY]
 >
->O `:warning:` Social Marketing com Facebook só está disponível no Campaign Classic v7.
+>O `:warning:` Social Marketing com Facebook está disponível apenas no Campaign Classic v7.
 
 <table> 
  <tbody> 

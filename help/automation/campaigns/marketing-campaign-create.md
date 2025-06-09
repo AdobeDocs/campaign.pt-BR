@@ -208,4 +208,4 @@ Você também pode usar o link contido nas mensagens de notificação. Para obte
 
 Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449904?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

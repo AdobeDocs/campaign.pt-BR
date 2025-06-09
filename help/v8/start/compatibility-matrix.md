@@ -8,7 +8,7 @@ exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: fb2cf4407750f8cff65ca53f0e87c32e9702de92
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 97%
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Os sistemas operacionais e navegadores a seguir são necessários para usar o co
 
 * **Microsoft Edge**
 
-* **Microsoft Edge WebView2**, versão mais recente. Baixe do [Site do desenvolvedor da Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br){target="_blank"}.
+* **Microsoft Edge WebView2**, versão mais recente. Baixe do [site do Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br){target="_blank"}.
 
 ## Conectores CRM {#CRMconnectors}
 
@@ -67,7 +67,7 @@ Os bancos de dados externos compatíveis com o módulo Federated Data Access (FD
 
 Para enviar [notificações por push](../send/push.md) com o Campaign, use o SDK móvel da Adobe Experience Platform configurando a extensão do Adobe Campaign Classic na interface da coleção de dados.
 
-As versões compatíveis com iOS e Android estão detalhadas na [documentação do Adobe Developer](https://developer.adobe.com/client-sdks/home/){target="_blank"}.
+Versões compatíveis do iOS e do Android estão detalhadas na [documentação do Adobe Developer](https://developer.adobe.com/client-sdks/home/){target="_blank"}.
 
 ## Interface da Web {#web-ui}
 
@@ -86,6 +86,6 @@ Os seguintes navegadores são compatíveis com Campaign para o acesso a partir d
 * [Atualizações da versão do Campaign](upgrades.md)
 * [Confira a sua versão do Campaign](upgrades.md#version)
 * [Instalar o console do cliente do Campaign](connect.md)
-* [Versões do painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR){target="_blank"}.
+* [Versões do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR){target="_blank"}
 
-Para manter-se em dia sobre novas versões de soluções da Experience Cloud, inscreva-se na [Atualização prioritária de produtos da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.
+Para ser informado sobre novos lançamentos de soluções da Experience Cloud, inscreva-se na [Atualização prioritária de produtos da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.

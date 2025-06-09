@@ -23,7 +23,7 @@ Os conectores Adobe Campaign Managed Cloud Service Destination e Source permitem
 
 As principais etapas para enviar públicos-alvo da Adobe Experience Platform para o Adobe Campaign e enviar de volta logs de delivery e rastreamento são as seguintes:
 
-* Use uma **Conexão de destino** do Adobe Campaign Managed Cloud Services para enviar segmentos Experience Platform para a Adobe Campaign:
+* Use uma **Conexão de destino** do Adobe Campaign Managed Cloud Services para enviar segmentos do Experience Platform para o Adobe Campaign:
 
    1. Acesse o catálogo de Destinos do Adobe Experience Platform e crie uma nova conexão **[!UICONTROL Adobe Campaign Managed Cloud Services]**.
    1. Forneça detalhes sobre a instância do Campaign a ser usada e escolha **[!UICONTROL Audience sync]** como o tipo de sincronização.
@@ -40,7 +40,7 @@ As principais etapas para enviar públicos-alvo da Adobe Experience Platform par
 
 * Use uma **conexão Source** do Adobe Campaign Managed Cloud Services para enviar a entrega do Adobe Campaign e os logs de rastreamento para o Adobe Experience Platform:
 
-  Para fazer isso, configure uma nova **conexão Source** do Adobe Campaign Managed Cloud Services para assimilar eventos do Campaign na Adobe Experience Platform. Forneça detalhes sobre a instância do Campaign e o esquema a ser usado, selecione um conjunto de dados onde os dados devem ser assimilados e configure os campos a serem recuperados. [Saiba como criar uma conexão de origem do Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/sources-campaign-ui-en)
+  Adobe Campaign Managed Cloud Services Para fazer isso, configure uma nova **conexão com o Source** para assimilar eventos do Campaign na Adobe Experience Platform. Forneça detalhes sobre a instância do Campaign e o esquema a ser usado, selecione um conjunto de dados onde os dados devem ser assimilados e configure os campos a serem recuperados. [Saiba como criar uma conexão de origem do Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/sources-campaign-ui-en)
 
   ![](assets/aep-logs.png){width="800" align="center"}
 

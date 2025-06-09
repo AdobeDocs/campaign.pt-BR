@@ -11,7 +11,7 @@ exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
 source-git-commit: a9aa9cb508ca1f5cdcd59e61b5be029e3de1a82f
 workflow-type: tm+mt
 source-wordcount: '1665'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -21,7 +21,7 @@ Você pode usar o Campaign para enviar notificações por push em dispositivos i
 
 Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) foram lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push do Android pode precisar ser atualizada para dar suporte a essa alteração.
 
-Além disso, o Adobe recomenda mudar para a conexão baseada em token para APNs em vez de uma conexão baseada em certificado, que é mais segura e escalável.
+Além disso, a Adobe recomenda mudar para a conexão baseada em token para APNs em vez de uma conexão baseada em certificado, que é mais segura e escalável.
 
 ## Serviço Google Android Firebase Cloud Messaging (FCM) {#fcm-push-upgrade}
 
@@ -48,19 +48,19 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 #### Pré-requisitos {#fcm-transition-prerequisites}
 
-* O arquivo JSON da conta do serviço SDK do administrador do Android Firebase é necessário para mover o aplicativo móvel para HTTP v1. Saiba como obter este arquivo na [documentação do Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+* O arquivo JSON da conta do serviço Android Firebase Admin SDK é necessário para mover o aplicativo móvel para HTTP v1. Saiba como obter este arquivo na [documentação do Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* Para o Campaign Classic v7, o suporte de HTTP v1 foi adicionado na versão 20.3.1. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar seu ambiente para a [compilação mais recente de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=pt-BR){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
+* Para o Campaign Classic v7, o suporte do HTTP v1 foi adicionado à versão 20.3.1. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar seu ambiente para a [compilação mais recente do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
 
-* Como usuário local do Campaign Classic v7, você deve atualizar os servidores de execução Marketing e Tempo real.
+* Como usuário no local do Campaign Classic v7, você deve atualizar os servidores Marketing e Execução em tempo real.
 
-* Para implantações de Cloud Service híbridas, hospedadas e gerenciadas, além do procedimento de transição abaixo, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT).
+* Para implantações híbridas, hospedadas e gerenciadas do Cloud Services, além do procedimento de transição abaixo, entre em contato com a Adobe para atualizar o servidor de execução em tempo real (RT).
 
 * Sobre a conta externa Android routing:
 
-   * Como usuário local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+   * Como usuário no local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
 
-   * Para implantações híbridas, hospedadas e gerenciadas de Cloud Service, você também deve se conectar com a equipe de Atendimento ao cliente do Adobe para validar se o conector `androidPushConnectorV2.js (nms)` está selecionado na conta externa de roteamento Android do seu servidor Mid-sourcing.
+   * Para implantações híbridas, hospedadas e gerenciadas do Cloud Services, você também deve se conectar com a equipe de Atendimento ao cliente da Adobe para validar se o conector `androidPushConnectorV2.js (nms)` está selecionado na conta externa de roteamento do Android do seu servidor Mid-sourcing.
 
 #### Procedimento de transição {#fcm-transition-steps}
 
@@ -101,7 +101,7 @@ Quando a transição HTTP v1 estiver concluída, você deverá atualizar seus **
 
 Você também pode atualizar deliveries e templates de delivery existentes criados antes da atualização para uma versão compatível com HTTP v1. Para fazer isso:
 
-* Cloud Service Como um cliente Gerenciado ou Hospedado, entre em contato com a Adobe para atualizar seus modelos de entrega existentes do Android.
+* Como um cliente do Managed Cloud Services ou hospedado, entre em contato com a Adobe para atualizar seus modelos de entrega do Android existentes.
 
 * Para ambientes locais, baixe o script `fcm-httpv1-migration.js` e execute-o conforme detalhado abaixo.
 
@@ -156,7 +156,7 @@ Você também pode atualizar deliveries e templates de delivery existentes criad
       nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
       ```
 
-  +++
++++
 
 ### Qual é o impacto para meus aplicativos do Android? {#fcm-apps}
 
@@ -175,7 +175,7 @@ Você pode:
 * Defina o nível **[!UICONTROL Notification Priority]** da sua notificação como padrão, mínimo, baixo ou alto.
 * Defina o nível **[!UICONTROL Visibility]** da sua notificação como público, privado ou secreto.
 
-Para saber mais sobre **[!UICONTROL HTTP v1 additional options]** e como preencher esses campos, consulte a [documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
+Para obter mais informações sobre **[!UICONTROL HTTP v1 additional options]** e como preencher esses campos, consulte a [documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 
 
 
@@ -193,7 +193,7 @@ A autenticação baseada em token oferece uma maneira sem estado de se comunicar
 
 Saiba mais sobre conexões baseadas em token com APNs em [Documentação para desenvolvedores do Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 
-O Adobe Campaign Classic v7 e o Adobe Campaign v8 oferecem suporte a conexões baseadas em token e em certificado. Se sua implementação depende de uma conexão baseada em certificado, o Adobe recomenda que você atualize-a para uma conexão baseada em token.
+O Adobe Campaign Classic v7 e o Adobe Campaign v8 oferecem suporte a conexões baseadas em token e em certificado. Se sua implementação depende de uma conexão baseada em certificados, a Adobe recomenda que você atualize-a para uma conexão baseada em token.
 
 ### Você será afetado? {#ios-impact}
 
@@ -212,13 +212,13 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 #### Pré-requisitos {#ios-transition-prerequisites}
 
-* Para o Campaign Classic v7, o suporte ao modo **Autenticação baseada em token** foi adicionado na versão 20.2. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para essa alteração é atualizar seu ambiente para a [compilação mais recente de Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=pt-BR){target="_blank"}. Para o Campaign v8, o modo de **autenticação baseada em token** é compatível com todas as versões, e nenhuma atualização é necessária.
+* Para o Campaign Classic v7, o suporte ao modo de **Autenticação baseada em token** foi adicionado na versão 20.2. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para essa alteração é atualizar seu ambiente para a [compilação mais recente do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o modo de **autenticação baseada em token** é compatível com todas as versões, e nenhuma atualização é necessária.
 
 * Você precisa de uma chave de assinatura de token de autenticação APNs para gerar os tokens que seu servidor usa. Você solicita essa chave da sua conta de desenvolvedor do Apple, conforme explicado na [Documentação do desenvolvedor do Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 
-* Para implantações híbridas, hospedadas e Managed Services, além do procedimento de transição abaixo, entre em contato com o Adobe para atualizar o servidor de execução em tempo real (RT). O servidor Mid-Sourcing não é afetado.
+* Para implantações híbridas, hospedadas e Managed Services, além do procedimento de transição abaixo, entre em contato com a Adobe para atualizar o servidor de execução em tempo real (RT). O servidor Mid-Sourcing não é afetado.
 
-* Como usuário local do Campaign Classic v7, você deve atualizar os servidores de execução Marketing e Tempo real. O servidor Mid-Sourcing não é afetado.
+* Como usuário no local do Campaign Classic v7, você deve atualizar os servidores Marketing e Execução em tempo real. O servidor Mid-Sourcing não é afetado.
 
 #### Procedimento de transição {#ios-transition-steps}
 

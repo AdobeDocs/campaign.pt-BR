@@ -5,18 +5,19 @@ description: Saiba como criar uma entrega de notificação por push avançada do
 feature: Push
 role: User
 level: Beginner
-source-git-commit: 4e52e596d4eb2a8e1a1799fcd7104dcd894b6c2d
+exl-id: 75a57ddb-558e-4dd2-a684-e63e51545554
+source-git-commit: fef2c829da637b43067147b51aff7030d25c9744
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
-# Criar uma entrega de push avançada do iOS {#rich-push}
+# Criar uma entrega de push avançada para iOS {#rich-push}
 
 >[!IMPORTANT]
 >
->Antes de criar uma Notificação por push avançada, primeiro é necessário configurar o conector V2. Consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application) para obter o procedimento detalhado.
+>Antes de criar uma Notificação por push avançada, primeiro é necessário configurar o conector V2. Consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application) para obter o procedimento detalhado.
 
 ## Definir o conteúdo de uma notificação do iOS {#push-message}
 
@@ -187,4 +188,3 @@ Depois de definir o conteúdo da mensagem, você pode usar assinantes de teste p
 | **[!UICONTROL Click action]** | Defina a ação associada a um clique do usuário em sua notificação. |
 | **[!UICONTROL Interruption level]** | <ul><li>Ativo: definido por padrão, o sistema apresenta a notificação imediatamente, ativa a tela e pode reproduzir um som. As notificações não interrompem os modos de foco.</li><li>Passivo: o sistema adiciona a notificação à lista de notificações sem ativar a tela ou reproduzir um som. As notificações não interrompem os modos de foco.</li><li> Sensível ao tempo: o sistema apresenta a notificação imediatamente, ativa a tela, pode reproduzir um som e interrompe os modos de foco. Esse nível não requer uma permissão especial da Apple.</li><li>Crítico: o sistema apresenta a notificação imediatamente, ativa a tela e ignora os modos de foco e a opção de mudo. Observe que esse nível requer uma permissão especial da Apple.</li></ul> |
 | **[!UICONTROL Relevance score]** | Defina uma pontuação de relevância de 0 a 100. O sistema usa essa opção para classificar as notificações no resumo de notificações. |
-

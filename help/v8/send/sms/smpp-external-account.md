@@ -8,7 +8,7 @@ exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
 source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
 source-wordcount: '3650'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
 
@@ -233,7 +233,7 @@ Ao ajustar essa configuração, inclua o máximo de contexto possível para evit
 
 Não incluir contexto suficiente no regex pode gerar uma pequena falha de segurança: o conteúdo real da mensagem pode ser incluído no SR, portanto, se você apenas corresponder a um formato de ID específico sem contexto (por exemplo, um UUID), ele poderá analisar o conteúdo de texto real (por exemplo, um UUID incorporado no campo de texto) em vez da ID.
 
-### Regex de extração do status na SR
+### Regex de extração do status no SR
 
 Este regex captura o status do campo de texto das mensagens SR.
 
@@ -270,7 +270,7 @@ Isso indica o formato da ID retornada no campo message_id da PDU SUBMIT_SM_RESP.
 * **Número hexadecimal**: espera-se que a ID seja um número hexadecimal no formato ASCII, sem 0x à esquerda nem h à direita. A ID é convertida em um número decimal antes de ser armazenada no banco de dados.
 * **String hexadecimal**: espera-se que a ID seja um texto codificado em ASCII que seja uma string de bytes codificada como hexadecimal. Por exemplo, na PDU, você encontrará 0x34 0x31 0x34 0x32 0x34 0x33, o que significa ASCII &quot;414243&quot;; em seguida, essa string é decodificada como uma string hexadecimal de bytes, e você obtém &quot;ABC&quot; como resultado: você armazenará a ID &quot;ABC&quot; no banco de dados.
 
-### Formato de ID na SR
+### Formato de ID no SR
 
 Isso indica o formato da ID capturada pelo regex de Extração da ID no SR. Os valores têm o mesmo significado e o mesmo comportamento que o formato no MT acima.
 
@@ -292,7 +292,7 @@ Para capturar esse valor, agora é possível definir o seguinte regex no regex d
 >
 >Você só pode capturar campos opcionais que tenham valores de texto de 8 bits (ASCII/UTF-8). Especificamente, os campos binários não podem ser capturados de forma confiável pelo sistema de regex atual.
 
-### ID da SR ou código de erro no campo de texto
+### ID do SR ou código de erro no campo de texto
 
 Se marcado, o campo Texto: será mantido durante o processamento do texto de status do SR. Isso será útil se o provedor colocar dados importantes nesse campo, como a ID ou o status. Normalmente, esse campo pode ser descartado com segurança, pois pode conter texto com uma codificação não ASCII e prejudicar o processamento de regex.
 
@@ -320,7 +320,7 @@ Se habilitado, todas as conexões com o SMSC serão criptografadas usando TLS.
 * **Ignorar a verificação do nome do host**: verifique o certificado TLS remoto, mas não verifique se o nome do host remoto corresponde. Diminui um pouco a segurança.
 * **Ignorar a verificação de certificado**: não verificar o certificado TLS. A conexão ainda é criptografada, mas é vulnerável a ataques intermediários. Diminui muito a segurança.
 
-## Tráfego recebido {#incoming-traffic}
+## Tráfego de entrada {#incoming-traffic}
 
 ![](assets/incoming_traffic.png){zoomable="yes"}
 

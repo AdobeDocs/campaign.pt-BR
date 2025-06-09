@@ -8,7 +8,7 @@ exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Principais benefícios:
 
 Você também pode usar o Painel de controle do Campaign para definir as configurações da instância, como a lista de permissões de IP, as permissões de URL e recuperar informações sobre a instância.
 
-Saiba mais na [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target="_blank"}.
+Saiba mais em [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target="_blank"}.
 
 ## Como acessar o Painel de controle? {#ac-control-panel-access}
 
@@ -42,8 +42,8 @@ No Painel de controle, é possível interagir com todos os servidores SFTP conec
 
 Saiba como monitorar subdomínios e certificados.
 
-* [Monitoramento de subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=pt-BR){target="_blank"}
-* [Configuração de um novo subdomínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR){target="_blank"}
+* [Monitorar subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=pt-BR){target="_blank"}
+* [Configurar um novo subdomínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR){target="_blank"}
 * [Monitoramento de certificados SSL de subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=pt-BR){target="_blank"}
 
 ## Monitoramento de desempenho

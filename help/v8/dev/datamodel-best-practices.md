@@ -63,7 +63,7 @@ Para garantir uma boa arquitetura e desempenho do sistema, siga as práticas rec
 * O atributo **expr** permite definir um atributo de esquema como um campo calculado em vez de um valor de conjunto físico em uma tabela. Isso pode permitir o acesso às informações em um formato diferente (como idade e data de nascimento, por exemplo), sem a necessidade de armazenar ambos os valores. Essa é uma boa maneira de evitar campos duplicados. Por exemplo, a tabela Recipient usa uma expressão para o domínio, que já está presente no campo email.
 * No entanto, quando o cálculo da expressão é complexo, não é recomendável usar o atributo **expr**, pois o cálculo instantâneo pode afetar o desempenho das suas consultas.
 * O tipo **XML** é uma boa maneira de evitar a criação de muitos campos. Mas também ocupa espaço em disco, pois usa uma coluna CLOB no banco de dados. Ela também pode levar a consultas SQL complexas e afetar o desempenho.
-* O comprimento de um campo **cadeia** deve ser sempre definido com a coluna. Por padrão, o comprimento máximo no Adobe Campaign é de 16K, mas o Adobe recomenda manter o campo mais curto se você já souber que o tamanho não excederá um comprimento mais curto.
+* O comprimento de um campo **cadeia** deve ser sempre definido com a coluna. Por padrão, o comprimento máximo no Adobe Campaign é de 16K, mas a Adobe recomenda manter o campo mais curto se você já souber que o tamanho não excederá um comprimento mais curto.
 * É aceitável ter um campo mais curto no Adobe Campaign do que no sistema de origem se você tiver certeza de que o tamanho no sistema de origem foi superestimado e não seria atingido. Isso pode significar uma string menor ou um inteiro menor no Adobe Campaign.
 
 ### Escolha de campos {#choice-of-fields}
@@ -106,7 +106,7 @@ A maioria das organizações está importando registros de sistemas externos. Em
 Essa chave personalizada é a chave primária de registro real no sistema externo que alimenta o Adobe Campaign.
 
 Ao criar uma tabela personalizada, você tem duas opções:
-* Uma combinação de chave gerada automaticamente (id) e chave interna (personalizada). Essa opção é interessante se a chave do sistema for uma chave composta ou não for um inteiro. Com Snowflake, números inteiros ou chaves baseadas em string fornecerão desempenhos mais altos em tabelas grandes e juntando-se a outras tabelas.
+* Uma combinação de chave gerada automaticamente (id) e chave interna (personalizada). Essa opção é interessante se a chave do sistema for uma chave composta ou não for um inteiro. Com o Snowflake, números inteiros ou chaves baseadas em sequência fornecerão desempenho mais alto em tabelas grandes e se unirão a outras tabelas.
 * Usar a chave primária como a chave primária do sistema externo. Essa solução geralmente é preferida, pois simplifica a abordagem de importar e exportar dados, com uma chave consistente entre sistemas diferentes. **Autouuid** deve ser desabilitado se o nome da chave for &quot;id&quot; e se espera que seja preenchido com valores externos (não gerado automaticamente).
 
 >[!CAUTION]
@@ -123,7 +123,7 @@ Cuidado com a integridade &quot;própria&quot; em tabelas grandes. A exclusão d
 
 Declarar um link como uma associação externa não é bom para o desempenho. O registro de id zero emula a funcionalidade de associação externa. No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), não é necessário declarar junções externas se o link usar a **autouuid**.
 
-Embora seja possível unir qualquer tabela em um fluxo de trabalho, o Adobe recomenda definir links comuns entre os recursos diretamente na definição da estrutura de dados.
+Embora seja possível unir qualquer tabela em um fluxo de trabalho, a Adobe recomenda definir links comuns entre os recursos diretamente na definição da estrutura de dados.
 
 O link deve ser definido em alinhamento com os dados reais nas tabelas. Uma definição incorreta poderia afetar os dados recuperados por meio de links, por exemplo, registros duplicados inesperadamente.
 
@@ -175,7 +175,7 @@ Existem algumas soluções para minimizar a necessidade de registros no Adobe Ca
 
 Você pode declarar o atributo &quot;deleteStatus&quot; em um esquema. É mais eficiente marcar o registro como excluído e, em seguida, adiar a exclusão na tarefa de limpeza.
 
-Como usuário do Managed Cloud Service, entre em contato com os consultores de Adobe ou administradores técnicos para saber mais sobre retenção ou se é necessário definir a retenção para tabelas personalizadas.
+Como usuário do Managed Cloud Services, entre em contato com os consultores da Adobe ou administradores técnicos para saber mais sobre retenção ou se é necessário definir a retenção para tabelas personalizadas.
 
 ## Desempenho {#performance}
 

@@ -16,7 +16,7 @@ ht-degree: 21%
 
 O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualizações tem como objetivo disponibilizar a você o que há de melhor e mais recente, mantendo seu ambiente seguro e melhorando sua experiência com nosso produto. A Adobe recomenda que todos os clientes atualizem para a versão mais recente.
 
-Como usuário do Managed Cloud Services, sua instância é atualizada pela Adobe a cada nova versão. Seu representante do Adobe entra em contato com você para atualizar seus ambientes. O console do cliente do Campaign **precisa ser atualizado para a mesma versão** dos servidores do Campaign. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
+Como usuário do Managed Cloud Services, sua instância é atualizada pela Adobe a cada nova versão. O representante da Adobe entra em contato com você para atualizar seus ambientes. O console do cliente do Campaign **precisa ser atualizado para a mesma versão** dos servidores do Campaign. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
 
 Além disso, como cliente, verifique se você está usando a versão compatível mais recente dos sistemas listados na [Matriz de compatibilidade](compatibility-matrix.md).
 
@@ -37,7 +37,7 @@ Para garantir uma configuração estável, a Adobe recomenda instalar o **exatam
 
 ## Atualizações de campanha {#ac-upgrades}
 
-Como cliente do Campaign Managed Services, quando uma nova versão do Campaign está disponível, sua infraestrutura é atualizada por Adobe sem nenhuma outra ação.
+Como cliente do Campaign Managed Services, quando uma nova versão do Campaign está disponível, sua infraestrutura é atualizada pela Adobe sem nenhuma outra ação.
 
 Observe que, como cliente, você deve garantir que esteja usando as versões mais recentes com suporte dos sistemas listados na [Matriz de compatibilidade](compatibility-matrix.md).
 
@@ -58,11 +58,11 @@ Você acessa as seguintes informações:
 
 ### Como posso ser informado do lançamento de uma nova versão? {#upgrades-0}
 
-As novas versões e as alterações trazidas são listadas nas [Notas de Versão](release-notes.md). Quando uma nova versão estiver disponível, o representante do Adobe entrará em contato com você e atualizará seus ambientes.
+As novas versões e as alterações trazidas são listadas nas [Notas de Versão](release-notes.md). Quando uma nova versão estiver disponível, o representante da Adobe entrará em contato com você e atualizará seus ambientes.
 
-Para ser informado sobre novos lançamentos de soluções Experience Cloud Adobe e seu conteúdo, assine a comunicação [Atualizações de Produtos Prioritárias](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.
+Para ser informado sobre novos lançamentos de soluções da Experience Cloud e seu conteúdo, inscreva-se na comunicação [Atualizações de produtos prioritárias da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.
 
-Você também pode visitar a [Comunidade do Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=pt&style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} para ser informado sobre atualizações de lançamentos.
+Você também pode visitar a [Comunidade do Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} para ser informado sobre atualizações de lançamento.
 
 
 ### Por que minha organização precisa de uma atualização? {#upgrades-1}
@@ -87,6 +87,6 @@ Normalmente, a atualização para a versão mais recente traz:
 
 ### Qual é o processo e o cronograma de uma atualização? {#upgrades-2}
 
-Como cliente do v8, se sua conta tiver sido identificada com a necessidade de atualizar para uma nova versão, o Adobe notificará você diretamente.
+Como cliente do v8, se sua conta tiver sido identificada com a necessidade de atualizar para uma nova versão, a Adobe notificará você diretamente.
 
 A equipe da Adobe está aqui para conduzir e orientar sua organização nessa jornada. Uma equipe dedicada de representantes do Atendimento ao cliente, gerentes de produtos, engenheiros e especialistas em TechOps e consultores de produtos está aqui para ajudar e garantir que a experiência seja tranquila.

@@ -51,7 +51,7 @@ Você pode configurar os valores exibidos alterando a escala de tempo: visualiza
 >
 >Você também pode monitorar o número de deliveries enviados por hora usando o [Painel de Controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/sftp-storage-management){target="_blank"}.
 >
->O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de administrador estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel){target="_blank"}.
+>O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel){target="_blank"}.
 >
 
 ## Atividades do usuário {#user-activities}
@@ -66,9 +66,9 @@ As seguintes opções estão disponíveis:
 * **[!UICONTROL Transactions]**: Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
 
-## Não entregues e devolvidos {#non-deliverables-and-bounces}
+## Não entregáveis e rejeições {#non-deliverables-and-bounces}
 
-Este relatório mostra o detalhamento de não entregues, bem como uma análise de devoluções por domínio de Internet.
+Este relatório mostra o detalhamento de não entregáveis, bem como uma análise de rejeições por domínio de Internet.
 
 **[!UICONTROL Number of messages processed]** representa o número total de mensagens processadas pelo servidor de entrega. Esse valor é menor do que o número de mensagens a serem entregues quando alguns deliveries tiverem sido interrompidos ou pausados (antes de serem processados pelo servidor).
 
@@ -78,7 +78,7 @@ Este relatório mostra o detalhamento de não entregues, bem como uma análise d
 >
 >Os erros exibidos nesse relatório acionam o processo de quarentena. Para obter mais informações sobre a gestão de quarentena, consulte [Gestão de Quarentena](../send/quarantines.md).
 
-A primeira seção desse relatório mostra o detalhamento de não entregues no formulário de uma tabela de valores e um gráfico.
+A primeira seção desse relatório mostra o detalhamento de não entregáveis no formulário de uma tabela de valores e um gráfico.
 
 Para cada tipo de erro, temos:
 

@@ -8,7 +8,7 @@ exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 34%
+ht-degree: 33%
 
 ---
 
@@ -49,7 +49,7 @@ Os blocos de personalização incorporados são:
 * **[!UICONTROL Registration link]**: insere um link de assinatura. Esse link é definido nas configurações da instância. O conteúdo padrão é: &quot;Para se registrar, clique aqui&quot;.
 * **[!UICONTROL Registration link (with referrer)]**: insere um link de assinatura, permitindo identificar o visitante e a entrega. Esse link é definido nas configurações da instância.
 * **[!UICONTROL Registration page URL]**: insere uma URL de assinatura
-* **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]**: geram um código que formata um email com estilos de HTML predefinidos.
+* **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]**: geram um código que formata um email com estilos predefinidos do HTML.
 * **[!UICONTROL Unsubscription link]**: insere um link que permite cancelar a inscrição de todas as entregas (incluir na lista de bloqueios). O conteúdo padrão associado é: &quot;Você está recebendo esta mensagem porque esteve em contato com ***nome da organização*** ou um afiliado. Para não receber mais mensagens de ***nome da organização*** clique aqui.&quot;
 
 ## Criar blocos de personalização personalizados {#create-custom-personalization-blocks}
@@ -79,4 +79,4 @@ Depois de salvo, o novo bloco de personalização fica disponível no editor de 
 
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo de sua entrega de email no vídeo a seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449011?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

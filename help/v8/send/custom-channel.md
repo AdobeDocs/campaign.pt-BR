@@ -3,13 +3,13 @@ title: Introdução a canais externos personalizados
 description: Saiba como criar e enviar entregas de canal externo personalizadas com o Adobe Campaign Web
 role: User
 level: Beginner, Intermediate
-source-git-commit: 4ba419c52d6804e4f25f88990c226081ef0a06e6
+exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
+source-git-commit: f94074d954137c4db39b2ef9f85141b79fe3356b
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 2%
 
 ---
-
 
 # Introdução a canais externos personalizados {#gs-custom-channel}
 
@@ -17,7 +17,7 @@ O Adobe Campaign permite criar canais externos personalizados integrados com ter
 
 A criação e o envio do delivery podem ser executados no Console do cliente e na interface do usuário da Web. No entanto, o canal externo personalizado só é executado no Console do cliente.
 
-Para saber como criar e enviar uma entrega com base em um canal externo personalizado, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=pt-BR).
+Para saber como criar e enviar uma entrega com base em um canal externo personalizado, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html).
 
 Estas são as etapas para criar um novo canal personalizado externo no Console do cliente:
 
@@ -69,5 +69,3 @@ Agora, vamos criar o novo modelo associado ao novo canal.
    ![](assets/cus-template.png){zoomable="yes"}
 
 O novo canal agora está disponível. Você pode criar e executar deliveries com base neste canal.
-
-

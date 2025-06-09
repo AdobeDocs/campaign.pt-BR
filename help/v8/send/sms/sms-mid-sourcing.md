@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="Disponibilidade limitada" type="Informative"
-source-git-commit: 36bb1e2c9e2391065360c3cd2ad97612373ec0c2
+exl-id: b5eb9eaa-0ca8-478c-9ed5-e5006e9b5609
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 12%
 
 ---
-
 
 # SMS em uma infraestrutura de mid-sourcing {#sms-mid}
 
@@ -19,7 +19,7 @@ ht-degree: 12%
 >
 >Esta documentação é para o Adobe Campaign v8.7.2 e posteriores.
 >
->Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
+>Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
 
 O envio de deliveries de SMS com uma infraestrutura de mid-sourcing requer:
 

@@ -18,7 +18,7 @@ Em sua implantação FDA (padrão) do Campaign, o [!DNL Adobe Campaign] v8 pode 
 
 >[!NOTE]
 >
->Neste modelo de implantação, o banco de dados secundário [!DNL Snowflake] está disponível somente mediante solicitação. Para atualizar sua implantação com o [!DNL Snowflake], contate o Gerenciador de Transição de Adobe.
+>Neste modelo de implantação, o banco de dados secundário [!DNL Snowflake] está disponível somente mediante solicitação. Para atualizar sua implantação com o [!DNL Snowflake], contate o Adobe Transition Manager.
 >
 
 ## Benefícios{#fda-benefits}

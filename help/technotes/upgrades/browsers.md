@@ -28,7 +28,7 @@ Possíveis problemas ou perda de funcionalidade no site se originam da sequênci
 
 ## Você será afetado?{#version-100-impact}
 
-A Adobe recomenda testar as aplicações Web do Campaign, incluindo formulários Web e pesquisas, para garantir que elas ainda funcionem bem com essas novas versões do navegador.
+A Adobe recomenda testar as aplicações Web do Campaign, incluindo formulários Web e pesquisas, para garantir que elas ainda funcionarão bem com essas novas versões do navegador.
 
 Essa recomendação se aplica a todas as aplicações web e especialmente se você incluiu o código JavaScript.
 

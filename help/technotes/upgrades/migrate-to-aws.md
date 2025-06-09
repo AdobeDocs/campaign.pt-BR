@@ -7,7 +7,7 @@ exl-id: 50279a2f-0296-43f5-8967-16cc6a0c88f6
 source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## O que mudou?{#aws-changes}
 
-Como parte de nosso esforço contínuo para fornecer o serviço de delivery de email de mais alta qualidade, a infraestrutura de envio de email do Campaign está sendo transferida de data centers hospedados no Adobe para o Amazon Web Services (AWS).
+Como parte de nosso esforço contínuo para fornecer o serviço de delivery de email de mais alta qualidade, a infraestrutura de envio de email do Campaign está sendo transferida de data centers hospedados na Adobe para o Amazon Web Services (AWS).
 
 Essa mudança garantirá alta disponibilidade, throughput ideal e capacidade de expansão para atender às necessidades de nossos clientes.
 
@@ -26,7 +26,7 @@ Essa alteração afeta:
 * Clientes hospedados e híbridos do Campaign Classic v7
 * Clientes do Campaign Managed Services
 * Todos os clientes do Campaign v8
-* clientes do Campaign Standard
+* Clientes do Campaign Standard
 
 ## Quando ocorrerá essa migração?{#aws-timeline}
 
@@ -49,13 +49,13 @@ Essa mudança será transparente para os clientes:
 
 * **Por que esta é uma atualização obrigatória?**
 
-  O Adobe planeja desativar o data center herdado, as instâncias do Adobe Campaign em execução devem ser transferidas para o novo data center de referência, o Amazon Web Services (AWS).
+  A Adobe planeja desativar o data center herdado, as instâncias do Adobe Campaign em execução devem ser transferidas para o novo data center de referência, o Amazon Web Services (AWS).
 
-  A nuvem do Adobe Managed Services é hospedada no Amazon Web Services (AWS), um ambiente moderno, seguro e otimizado. [Saiba mais sobre o Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
+  A nuvem do Adobe Managed Services está hospedada no Amazon Web Services (AWS), um ambiente moderno, seguro e otimizado. [Saiba mais sobre o Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
 
 * **Quais clientes são direcionados para esta migração?**
 
-  Todos os clientes do Campaign v8 e o Campaign Classic v7 híbrido, hospedado e o Campaign Managed Services terão seus ambientes migrados. Os clientes do Campaign Standard também são afetados.
+  Todos os clientes do Campaign v8 e o Campaign Classic v7 híbrido, hospedado e Campaign Managed Services terão seus ambientes migrados. Os clientes da Campaign Standard também são afetados.
 
 * **Qual é o tempo de inatividade esperado?**
 
@@ -67,11 +67,11 @@ Essa mudança será transparente para os clientes:
 
 * **Que validações precisam ser executadas pelos clientes?**
 
-  Nenhum teste específico é necessário para essa migração. Caso algum problema seja observado, entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support){target="_blank"}.
+  Nenhum teste específico é necessário para essa migração. Caso algum problema seja observado, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **É possível solicitar uma alteração em Data/Hora no slot de atualização de segurança agendado?**
 
   Como essa é uma migração obrigatória, não podemos acomodar modificações na programação existente.
 
-Para qualquer outra pergunta, entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support){target="_blank"}.
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

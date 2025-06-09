@@ -201,7 +201,7 @@ A guia **[!UICONTROL Calculations]** permite definir eixos de relatórios no tar
 
 **Exemplo:**
 
-No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no status dos destinatários (&quot;Cliente&quot;, &quot;Prospecto&quot; ou nenhum).
+No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no status dos destinatários (&quot;Cliente&quot;, &quot;Cliente potencial&quot; ou nenhum).
 
 1. Para definir um eixo de relatórios, selecione a tabela que contém as informações a serem processadas no campo **[!UICONTROL Analysis dimension]**. Essas informações são obrigatórias.
 1. Aqui, queremos selecionar o campo Segmento da tabela de destinatários.

@@ -48,7 +48,7 @@ ht-degree: 99%
 
 Este relatório é baseado na tabela **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Essa tabela de agregação é usada por motivos de desempenho ao exibir relatórios em vez da tabela **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp), e não é calculada em tempo real. A tabela é gerada alguns minutos após os logs de rastreamento serem recuperados. Se os indicadores estiverem atualizados, os resultados serão iguais aos indicadores do relatório **Indicadores de rastreamento.** O indicador @totalclicks expressa o número total de cliques em um período de 5 minutos.
 
-## Não entregues e devolvidos {#non-deliverables-and-bounces-1}
+## Não entregáveis e rejeições {#non-deliverables-and-bounces-1}
 
 **Detalhamento por tipo de erro**
 
@@ -517,13 +517,13 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
    <td> sum([indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Aberturas distintas no público alcançado<br /> </td> 
+   <td> Aberturas distintas na população alcançada<br /> </td> 
    <td> @estimatedRecipientOpen<br /> </td> 
    <td> Extrapolação do número de aberturas distintas para todos os emails com base no número de aberturas distintas para emails em formato html.<br /> </td> 
    <td> Iif(([@toDeliver] - [@text]) = 0, 0, round(toDouble(@recipientOpen) * [@toDeliver] / ([@toDeliver] - [@text]), 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Soma de aberturas no público alcançado<br /> </td> 
+   <td> Soma de aberturas na população alcançada<br /> </td> 
    <td> @estimatedTotalRecipientOpen<br /> </td> 
    <td> Extrapolação do número total de aberturas para todos os emails com base no número total de emails em formato html.<br /> </td> 
    <td> Iif(([@toDeliver] - [@text]) = 0, 0, round(toDouble(@totalRecipientOpen) * [@toDeliver] / ([@toDeliver] - [@text]), 0))<br /> </td> 
@@ -577,7 +577,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
    <td> percent(@recipientClick,@recipientOpen)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Cliques distintos no público alcançado<br /> </td> 
+   <td> Cliques distintos na população alcançada<br /> </td> 
    <td> @personClick<br /> </td> 
    <td> Contagem de @source-ids com uma categoria de URL igual a "clique de email".<br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0))<br /> </td> 
@@ -749,7 +749,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
  </thead> 
  <tbody> 
   <tr> 
-   <td> Público inicial<br /> </td> 
+   <td> População inicial<br /> </td> 
    <td> @totalTarget<br /> </td> 
    <td> Número total de destinatários alvos da entrega.<br /> </td> 
    <td> sum([properties/@totalTarget])<br /> </td> 

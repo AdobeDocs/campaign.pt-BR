@@ -80,7 +80,7 @@ Para criar um cubo, siga as etapas abaixo:
 
 ### Definir dimensões {#define-dimensions}
 
-Depois que o cubo for criado, defina suas dimensões. Dimension são os eixos de análise definidos para cada cubo com base em seu schema de fatos relacionado. Essas são as dimensões exploradas na análise, como tempo (ano, mês, data), uma classificação de produtos ou contratos (família, referência, etc.), um segmento de população (por cidade, faixa etária, status, etc.).
+Depois que o cubo for criado, defina suas dimensões. Dimensões são os eixos de análise definidos para cada cubo com base em seu schema de fatos relacionado. Essas são as dimensões exploradas na análise, como tempo (ano, mês, data), uma classificação de produtos ou contratos (família, referência, etc.), um segmento de população (por cidade, faixa etária, status, etc.).
 
 Para criar dimensões, siga as etapas abaixo:
 

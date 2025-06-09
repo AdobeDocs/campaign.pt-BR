@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="Disponibilidade limitada" type="Informative"
-source-git-commit: 36bb1e2c9e2391065360c3cd2ad97612373ec0c2
+exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 5%
 
 ---
-
 
 # Descrição do conector SMPP {#smpp-connector-desc}
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 >
 >Isso se aplica ao Adobe Campaign v8.7.2 e posteriores.
 >
->Para versões mais antigas, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+>Para versões mais antigas, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## Fluxo de dados do conector SMS {#sms-data-flow}
 
@@ -123,7 +123,7 @@ Esta tabela resume todas as configurações. Os valores de sensibilidade mín./m
 | profDeliveryStat | Registra várias estatísticas agregadas sobre internos do processo de SMS | verdadeiro | false: pode aumentar um pouco a taxa de transferência. Desencorajado. | true: log de baixa verbosidade | verdadeiro |
 | profLogPerMessage | Registrar cada etapa de processamento de cada mensagem | falso | false: reduz o detalhamento do log. | true: log de verbosidade muito alta. **Use apenas quando for absolutamente necessário**. Grande impacto no desempenho. **Desabilite esta configuração assim que dados suficientes forem coletados**. | verdadeiro |
 | providerIdScanPeriod | Período em segundos entre as verificações de novas ids de provedor para reconciliar | 10 | 1: Baixa latência | 60: lotes maiores para maior taxa de transferência | 1: Baixa latência ajuda a depurar o processamento de mensagens. |
-| providerIdThreads | Quantidade de threads para a reconciliação do ID do provedor. Um thread por instância é suficiente. Defina como 0 para desabilitar neste container. | 1 | 0: Desabilitar neste contêiner | 1 | 1 |
+| providerIdThreads | Quantidade de threads para a reconciliação da ID do provedor. Um thread por instância é suficiente. Defina como 0 para desabilitar neste container. | 1 | 0: Desabilitar neste contêiner | 1 | 1 |
 | sendingThreads | Número de threads de envio | 1 | 1: Segmento único | Número de CPUs. Muitas threads geralmente prejudicam o desempenho. | 1: Um único thread gera logs mais simples. |
 | updateThreads | Número de threads para atualização do banco de dados | 1 | 1: Segmento único | Número de CPUs. Cada thread cria sua própria conexão DB. | 1: Um único thread gera logs mais simples. |
 | verifyMode | Simular o envio de mensagens. As mensagens não são enviadas de fato. Útil para depuração | falso | falso | verdadeiro | false: executa o sistema normalmente. true: testar somente o acesso ao BD e a preparação de mensagens. |

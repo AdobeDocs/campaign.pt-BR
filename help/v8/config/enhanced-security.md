@@ -51,7 +51,7 @@ Para habilitar a integração CMK com o Campaign, siga as etapas abaixo:
 
 1. Aplique a política fornecida a você pelo Adobe em sua conta do AWS para conceder acesso aos recursos. [Saiba mais](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. Compartilhe seu [Nome do Recurso da Amazon (chave ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} com [!DNL Adobe Campaign]. Para fazer isso, entre em contato com o representante da Adobe. <!--or Adobe transition manager?-->
+1. Compartilhe seu [Nome do Recurso do Amazon (chave ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} com [!DNL Adobe Campaign]. Para fazer isso, entre em contato com o representante da Adobe. <!--or Adobe transition manager?-->
 
 1. Crie e teste as regras do Amazon EventBridge para habilitar o monitoramento das chaves pelo Adobe.&#x200B; [Saiba mais](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
@@ -62,7 +62,7 @@ As seguintes medidas de proteção e limitações se aplicam à integração do 
 
 * A Adobe não fornece uma conta do [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}. Você deve ter sua própria conta da AWS e configurá-la para gerar e compartilhar sua chave com a Adobe.
 
-* Somente [há suporte para chaves do KMS (Serviço de Gerenciamento de Chaves da AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"}). Nenhuma chave gerada pelo cliente fora do KMS pode ser usada.&#x200B;
+* Somente [há suporte para chaves KMS (Serviço de Gerenciamento de Chaves) do AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"}. Nenhuma chave gerada pelo cliente fora do KMS pode ser usada.&#x200B;
 
 * O tempo de inatividade é esperado durante a primeira configuração. &#x200B;A duração do tempo de inatividade depende do tamanho do banco de dados.
 

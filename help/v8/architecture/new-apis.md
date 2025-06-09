@@ -8,7 +8,7 @@ exl-id: dd822f88-b27d-4944-879c-087f68e79825
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ logInfo(strUuid);
 
 Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada conforme esperado.
 
-**De uma chamada SOAP**
+**De uma chamada do SOAP**
 
 1. Obtenha o token de autenticação.
 1. Acione a API. A carga é:
@@ -108,7 +108,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada c
 ![](assets/with-reconciliation.png)
 
 
-**De uma chamada SOAP**
+**De uma chamada do SOAP**
 
 1. Obtenha o token de autenticação.
 1. Acione a API. A carga é:
@@ -168,7 +168,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é atualizada c
 
 ![](assets/updated-data.png)
 
-**De uma chamada SOAP**
+**De uma chamada do SOAP**
 
 1. Obtenha o token de autenticação.
 1. Acione a API. A carga é:
@@ -191,7 +191,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é atualizada c
    </soapenv:Envelope>
    ```
 
-1. A resposta do SOAP é:
+1. A resposta da SOAP é:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -212,4 +212,4 @@ A inserção de dados de assinatura e cancelamento de assinatura depende do [Mec
 
 **Tópicos relacionados**
 
-* [JSAPI da campanha](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR){target="_blank"}
+* [JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR){target="_blank"}

@@ -38,7 +38,7 @@ Os seguintes casos de uso detalham as possíveis opções para integrar ofertas 
 1. Crie um espaço de oferta vinculado ao ambiente anônimo.
 1. Crie uma oferta e sua representação vinculada ao espaço de oferta.
 
-**Etapa 2: atualizar o conteúdo da página de HTML**
+**Etapa 2: atualizar o conteúdo da página do HTML**
 
 A página HTML deve incluir um elemento com um atributo @id com o valor do nome interno do espaço de oferta criado (&quot;i_internal name space&quot;). A oferta será inserida neste elemento pelo Interaction.
 
@@ -62,9 +62,9 @@ Essa chamada estática gerará automaticamente uma chamada dinâmica contendo to
 
 Esse comportamento permite usar vários espaços de ofertas na mesma página, gerenciados por uma única chamada do mecanismo de oferta.
 
-**Etapa 3: exibir os resultados na página HTML**
+**Etapa 3: exibir os resultados na página do HTML**
 
-O conteúdo da representação da oferta é retornado para a página HTML pelo Mecanismo de oferta:
+O conteúdo da representação da oferta é retornado para a página do HTML pelo Mecanismo de oferta:
 
 ```
 <div id="banner_header">
@@ -116,7 +116,7 @@ No conteúdo da página da Web, é necessário adicionar o script a seguir para 
    </script>
    ```
 
-### Usar uma função de renderização de HTML {#using-an-html-rendering-function}
+### Usar uma função de renderização do HTML {#using-an-html-rendering-function}
 
 Para gerar a representação de oferta HTML automaticamente, é possível usar uma função de renderização.
 
@@ -132,7 +132,7 @@ Para gerar a representação de oferta HTML automaticamente, é possível usar u
 
 ### Apresentar uma oferta {#presenting-an-offer}
 
-O módulo Campaign **Interaction** permite retornar um nó XML para a página HTML que chama o mecanismo de oferta. Este nó XML pode ser processado por funções a serem desenvolvidas no lado do cliente.
+O módulo Campaign **Interaction** permite retornar um nó XML para a página do HTML que chama o mecanismo de oferta. Este nó XML pode ser processado por funções a serem desenvolvidas no lado do cliente.
 
 A chamada para o mecanismo de oferta tem esta aparência:
 
@@ -163,7 +163,7 @@ O nó XML retornado tem esta aparência:
 </propositions>
 ```
 
-O caso de uso abaixo detalha as configurações a serem executadas no Adobe Campaign para habilitar o modo XML e, em seguida, mostrar o resultado da chamada para o mecanismo na página de HTML.
+O caso de uso abaixo detalha as configurações a serem executadas no Adobe Campaign para habilitar o modo XML e, em seguida, mostrar o resultado da chamada para o mecanismo na página do HTML.
 
 1. **Criar um ambiente e um espaço de ofertas**
 
@@ -265,7 +265,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
 1. **O mecanismo chama e mostra o resultado na página HTML.**
 
-   A chamada para o mecanismo de oferta na página de HTML tem esta aparência:
+   A chamada para o mecanismo de oferta na página do HTML tem esta aparência:
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
@@ -295,7 +295,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
 ### Usar uma função de renderização {#using-a-rendering-function-}
 
-É possível usar uma função de renderização XML para criar uma apresentação de ofertas. Essa função modificará o nó XML retornado à página de HTML durante a chamada para o mecanismo de oferta.
+É possível usar uma função de renderização XML para criar uma apresentação de ofertas. Essa função modificará o nó XML retornado à página do HTML durante a chamada para o mecanismo de oferta.
 
 1. Vá para o espaço da oferta e clique no link **[!UICONTROL Edit functions]**.
 1. Selecione **[!UICONTROL Overload the XML rendering function]**.
@@ -312,7 +312,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
 ![](assets/interaction_xmlmode_001.png)
 
-## Configurar uma integração com o SOAP
+## Configurar uma integração do SOAP
 
 Os serviços da Web SOAP fornecidos para o gerenciamento de ofertas são diferentes daqueles normalmente usados no Adobe Campaign. Eles podem ser acessados por meio da URL de interação descrita na seção anterior e permitem apresentar ou atualizar ofertas para um determinado contato.
 

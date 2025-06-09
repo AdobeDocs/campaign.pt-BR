@@ -26,7 +26,7 @@ A arbitragem consiste em garantir que campanhas agendadas com peso maior do que 
 
 Os critérios de arbitragem (peso e/ou limite da mensagem) podem variar com base em dois tipos de informações:
 
-* preferência de destinatário, que são informações declarativas: assinaturas de boletim informativo, status do destinatário (cliente ou prospecto),
+* preferência de destinatário, que são informações declarativas: assinaturas de boletim informativo, status do destinatário (cliente ou cliente potencial),
 * comportamento do destinatário: compras, links visitados etc.
 
 A regra de arbitragem para definir mensagens qualificadas é aplicada durante o estágio de análise. Para cada destinatário e para o período em questão, a mensagem será enviada se a seguinte fórmula for verdadeira: **(number of messages sent) + (number of messages with a greater weight) &lt; threshold**.
@@ -104,7 +104,7 @@ Os valores de limite podem ser constantes ou calculados por uma fórmula com var
 
 >[!CAUTION]
 >
->Inserir **0** como limite impede todas as entregas ao público alvo durante o período considerado.
+>Inserir **0** como limite impede todas as entregas à população de destino durante o período considerado.
 
 **Exemplo:**
 
@@ -213,7 +213,7 @@ Se esse número excede o limite, as regras de arbitragem definidas na tipologia 
 
 Criaremos uma regra de tipologia para evitar a entrega de mais de quatro mensagens por semana para clientes e duas mensagens por semana para clientes potenciais.
 
-Para identificar clientes e prospectos, use o campo **[!UICONTROL Status]**, que contém 0 para prospectos e 1 para clientes.
+Para identificar clientes e clientes potenciais, use o campo **[!UICONTROL Status]**, que contém 0 para clientes potenciais e 1 para clientes.
 
 Para criar a regra, aplique as seguintes etapas:
 

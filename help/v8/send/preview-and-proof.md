@@ -8,7 +8,7 @@ exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
 source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
 source-wordcount: '703'
-ht-degree: 14%
+ht-degree: 21%
 
 ---
 
@@ -35,9 +35,9 @@ Para visualizar o conteúdo da mensagem, siga as etapas abaixo:
 
 ## Enviar provas {#send-proofs}
 
-Para deliveries de email, você pode enviar provas para validar o conteúdo da mensagem. O envio de provas permite a verificação do link de opção de não participação, a mirror page e quaisquer outros links, validação da mensagem, verificação da exibição das imagens, detecção de possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
+Para entregas de email, é possível enviar provas para validar o conteúdo da mensagem. O envio de provas permite a verificação do link de opção de não participação, a mirror page e quaisquer outros links, validação da mensagem, verificação da exibição das imagens, detecção de possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
 
-Uma prova é uma mensagem específica que permite testar uma mensagem antes de enviá-la para o público-alvo principal. Os recipients da prova são responsáveis pela aprovação da mensagem: renderização, conteúdo, configurações de personalização e configuração.
+Uma prova é uma mensagem específica que permite testar uma mensagem antes de enviá-la ao público-alvo principal. Os destinatários da prova são responsáveis pela aprovação da mensagem: renderização, conteúdo, configurações de personalização, configuração.
 
 ### Destinatários de prova {#proofs-recipients}
 
@@ -105,4 +105,4 @@ Por padrão, as mensagens de prova são identificadas pela menção `Proof #N` n
 
 Saiba como enviar e validar uma prova para uma entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

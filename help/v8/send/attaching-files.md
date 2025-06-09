@@ -5,7 +5,8 @@ description: Anexo de arquivos
 feature: Email
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+exl-id: 27d13642-2971-466b-818d-39328c198b14
+source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 95%
@@ -20,7 +21,7 @@ Você pode anexar um ou mais arquivos a uma entrega de email.
 
 >[!NOTE]
 >
->Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado na lista de opções do Campaign. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR#delivery).
+>Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado na lista de opções do Campaign. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 Há dois casos possíveis:
 
@@ -37,7 +38,7 @@ Para evitar problemas de desempenho, as imagens incluídas nos emails não podem
 
 A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, só é possível adicionar um arquivo como anexo a um email. Esse limite pode ser configurado na opção `NmsDelivery_MaxRecommendedAttachments`.
 
-Saiba mais na lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR#delivery).
+Saiba mais na lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 ## Anexar um arquivo local {#attaching-a-local-file}
 

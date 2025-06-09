@@ -72,7 +72,7 @@ Você deve estar ciente dos seguintes mecanismos de sincronização:
 
 * Se usar a função de fallback de um ambiente anônimo para um ambiente identificado, esses dois ambientes deverão estar na mesma instância de execução.
 * A sincronização entre várias instâncias de execução não é executada em tempo real. As interações do mesmo contato devem ser enviadas para a mesma instância. A instância de controle deve ser dedicada ao canal de saída (sem tempo real).
-* O banco de dados de marketing não é sincronizado automaticamente. Os dados de marketing usados nos pesos e regras de qualificação devem ser duplicados em instâncias de execução. Esse processo não é fornecido como padrão, é necessário desenvolvê-lo durante o período de integração.
+* O banco de dados de marketing não é sincronizado automaticamente. Os dados de marketing usados nos pesos e regras de elegibilidade devem ser duplicados em instâncias de execução. Esse processo não é fornecido como padrão, é necessário desenvolvê-lo durante o período de integração.
 * A sincronização de propostas é realizada exclusivamente pela conexão FDA.
 * Se usar o Interaction e o Message Center na mesma instância, a sincronização ocorrerá por meio do protocolo FDA nos dois casos.
 
@@ -84,9 +84,9 @@ O pacote **Interaction** está instalado em todas as instâncias (controle e exe
 
 >[!NOTE]
 >
->Ao instalar o pacote, os campos do tipo **longo** da tabela **nms:proposition**, como ID da proposta, tornam-se campos de tipo **int64.** Esse tipo de dado é detalhado na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=pt-BR#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
+>Ao instalar o pacote, os campos do tipo **longo** da tabela **nms:proposition**, como ID da proposta, tornam-se campos de tipo **int64.** Esse tipo de dado é detalhado na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
-A duração da retenção de dados é configurada em cada instância (por meio da janela **[!UICONTROL Data purge]** no assistente de implantação). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de qualificação serem calculadas.
+A duração da retenção de dados é configurada em cada instância (por meio da janela **[!UICONTROL Data purge]** no assistente de implantação). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de elegibilidade serem calculadas.
 
 Nas instâncias de controle:
 

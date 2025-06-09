@@ -64,6 +64,6 @@ Uma entrega contínua criará uma ÚNICA entrega. Logs da entrega (broadLog) e l
 
 Este vídeo mostra como configurar uma entrega contínua com um query incremental.
 
->[!VIDEO](https://video.tv.adobe.com/v/31845?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

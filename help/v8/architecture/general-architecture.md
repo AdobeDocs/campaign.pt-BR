@@ -60,7 +60,7 @@ Os principais processos são:
 
 * **Servidor de redirecionamento** (nlserver webmdl) - Para email, o Adobe Campaign manipula automaticamente o rastreamento de aberturas e cliques (o rastreamento transacional no nível do site é uma outra possibilidade). Para isso, os URLs incorporados nas mensagens de email são reescritos para apontar para esse módulo, que registra a passagem do usuário da Internet antes de redirecioná-lo para o URL necessário.
 
-  Para garantir a maior disponibilidade, esse processo é totalmente independente do banco de dados: os outros processos do servidor se comunicam com ele usando chamadas SOAP (HTTP, HTTP(S) e XML) apenas. Tecnicamente, essa funcionalidade é implementada em um módulo de extensão de um servidor HTTP (extensão ISAPI no IIS, ou um módulo DSO Apache etc.) e está disponível somente no Windows.
+  Para garantir a maior disponibilidade, esse processo é totalmente independente do banco de dados: os outros processos do servidor se comunicam com ele usando chamadas do SOAP (HTTP, HTTP(S) e XML) apenas. Tecnicamente, essa funcionalidade é implementada em um módulo de extensão de um servidor HTTP (extensão ISAPI no IIS, ou um módulo DSO Apache etc.) e está disponível somente no Windows.
 
 Outros processos mais técnicos também estão disponíveis:
 
@@ -81,7 +81,7 @@ Outros processos mais técnicos também estão disponíveis:
 
 ## Contêineres de banco de dados {#db-containers}
 
-Em sua [implantação corporativa (FFDA)](enterprise-deployment.md), o banco de dados da Adobe Campaign Cloud depende de [!DNL Snowflake], que contém os dados funcionais (perfis, assinaturas, conteúdo, etc.), os dados técnicos (trabalhos e logs de entrega, logs de rastreamento etc.) e os dados de trabalho (compras, clientes potenciais) da solução, e todos os componentes do Adobe Campaign se comunicam com o banco de dados para executar suas tarefas específicas.
+Em sua [implantação corporativa (FFDA)](enterprise-deployment.md), o banco de dados da Adobe Campaign Cloud depende de [!DNL Snowflake], que contém os dados funcionais (perfis, assinaturas, conteúdo, etc.), os dados técnicos (trabalhos de entrega e logs, logs de rastreamento etc.) e os dados de trabalho (compras, clientes potenciais) da solução, e todos os componentes da Adobe Campaign se comunicam com o banco de dados para executar suas tarefas específicas.
 
 Você pode implantar o Adobe Campaign usando o banco de dados e os esquemas predefinidos e, se necessário, esse ambiente predefinido pode ser estendido. Todos os dados no data mart são acessados pela Adobe Campaign por meio de chamadas SQL. O Adobe Campaign também fornece um complemento completo de ferramentas de ETL (Extract Transform and Load, Transformação e Carregamento de Extração) para executar a importação e exportação de dados para dentro e para fora do sistema.
 
@@ -90,12 +90,12 @@ Você pode implantar o Adobe Campaign usando o banco de dados e os esquemas pred
 
 >[!CAUTION]
 >
->Com o **Campaign Managed Cloud Services**, o ambiente e a configuração inicial foram definidos pela Adobe, de acordo com os termos do contrato de licença. Você não tem permissão para modificar pacotes incorporados instalados, esquemas ou relatórios incorporados.
+>Com o **Campaign Managed Cloud Services**, o ambiente e a configuração inicial foram definidos pela Adobe, de acordo com os termos do contrato de licença. Você não tem permissão para modificar pacotes integrados instalados, esquemas ou relatórios integrados.
 >
 >Se precisar usar um complemento do Campaign ou um recurso específico que não foi fornecido para você, entre em contato com o **Atendimento ao cliente da Adobe**.
 
 ## Armazenamento de banco de dados {#db-storage}
 
-A permissão de armazenamento total é dividida entre o banco de dados principal e o banco de dados secundário Snowflake (opcional). O local onde os dados são armazenados deve ser determinado na implementação ou no momento da atualização, dependendo dos casos de uso específicos do cliente.
+A permissão de armazenamento total é dividida entre o banco de dados principal e o banco de dados secundário (opcional) do Snowflake. O local onde os dados são armazenados deve ser determinado na implementação ou no momento da atualização, dependendo dos casos de uso específicos do cliente.
 
-Saiba como monitorar o uso do banco de dados na [documentação do Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=pt-BR){target="_blank"}.
+Saiba como monitorar o uso do banco de dados na [documentação do Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.

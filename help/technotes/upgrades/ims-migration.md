@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migração de operadores técnicos do Campaign para o Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Como parte do esforço para reforçar a segurança e o processo de autenticação, a partir do Campaign v8.5, o processo de autenticação para o Campaign v8 está sendo aprimorado. Os operadores técnicos agora podem usar o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectarem ao Campaign. Saiba mais sobre o novo processo de autenticação de servidor para servidor na [documentação do Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+Como parte do esforço para reforçar a segurança e o processo de autenticação, a partir do Campaign v8.5, o processo de autenticação para o Campaign v8 está sendo aprimorado. Os operadores técnicos agora podem usar o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectar ao Campaign. Saiba mais sobre o novo processo de autenticação de servidor para servidor na [documentação do Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 Um operador técnico é um perfil de usuário do Campaign que foi explicitamente criado para integração com a API. Este artigo detalha as etapas necessárias para migrar um operador técnico para uma conta técnica por meio do console do Adobe Developer.
 
@@ -45,9 +45,9 @@ Para chamadas de API nas instâncias do Centro de mensagens, um perfil de produt
 
 `campaign - <your campaign instance> - messagecenter`
 
-Se você já estiver usando a autenticação baseada em IMS para acesso de usuários ao Campaign, os perfis de produto necessários para as chamadas de API já deverão existir no Admin Console. Se você usar um grupo de operadores personalizado no Campaign para as chamadas de API para a instância de marketing, deverá criar esse perfil de produto no Admin Console.
+Se você já estiver usando a autenticação IMS para acesso de usuários ao Campaign, os perfis de produto necessários para as chamadas de API já deverão existir no Admin Console. Se você usar um grupo de operadores personalizado no Campaign para as chamadas de API para a instância de marketing, deverá criar esse perfil de produto no Admin Console.
 
-Para outros casos, entre em contato com o Gerenciador de transição de Adobe para que as equipes técnicas de Adobe possam migrar seus grupos de operadores e direitos nomeados existentes para os Perfis de produto dentro do Admin Console.
+Para outros casos, entre em contato com o Gerenciador de transição do Adobe para que as equipes técnicas da Adobe possam migrar seus grupos de operadores e direitos nomeados existentes para os Perfis de produto no Admin Console.
 
 
 ### Etapa 1 - Criar o projeto do Campaign na Adobe Developer Console {#ims-migration-step-1}
@@ -95,7 +95,7 @@ When the API has been successfully connected, you can access the newly generated
 
 Conforme descrito na seção pré-requisitos, você deve atribuir os perfis de produto apropriados a serem usados pelo projeto. Nesta etapa, você deve selecionar o perfil ou os perfis de produto a serem usados pela conta técnica que está sendo criada.
 
-Se essa conta técnica for usada para fazer chamadas de API para a instância do Centro de Mensagens, certifique-se de selecionar o perfil de produto Adobe create que termina com `messagecenter`.
+Se essa conta técnica for usada para fazer chamadas de API para a instância do Centro de Mensagens, certifique-se de selecionar o perfil de produto Criação de Adobe que termina com `messagecenter`.
 
 Para chamadas de API para as instâncias de Marketing, selecione o perfil de produto correspondente à instância e ao Grupo de operadores.
 
@@ -149,7 +149,7 @@ Agora você deve atualizar todas as integrações de API que fazem chamadas para
 
 Para obter mais detalhes sobre as etapas de integração da API, incluindo um código de exemplo para uma integração suave, consulte a [documentação de autenticação da Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
-Abaixo estão exemplos de chamadas de SOAP que mostram as chamadas de migração anteriores e posteriores para os sistemas de terceiros.
+Abaixo estão exemplos de chamadas do SOAP que mostram as chamadas de migração de antes e depois dos sistemas de terceiros.
 
 Ao usar a autenticação do Adobe Identity Management System (IMS), para gerar um arquivo WSDL, você deve adicionar o `Authorization: Bearer <IMS_Technical_Token_Token>` na chamada do postman:
 
@@ -208,7 +208,7 @@ Depois que o processo de migração é alcançado e validado, as chamadas Soap s
 
 ### Etapa 9 - (opcional) Atualizar o operador de conta técnica no console do cliente do Campaign {#ims-migration-step-9}
 
-Esta etapa é opcional e só está disponível nas Instâncias de marketing, não em nenhuma instância do Centro de mensagens. Se permissões específicas de pasta ou direitos nomeados tiverem sido definidos para o Operador técnico, não por meio dos Grupos de operadores atribuídos. Agora, seria necessário atualizar o usuário recém-criado da Conta técnica no Admin Console para conceder as permissões da pasta ou os direitos nomeados necessários.
+Esta etapa é opcional e só está disponível nas Instâncias de marketing, não em nenhuma instância do Centro de mensagens. Se permissões específicas de pasta ou direitos nomeados tiverem sido definidos para o Operador técnico, não por meio dos Grupos de operadores atribuídos. Agora, seria necessário atualizar o usuário recém-criado da conta técnica no Admin Console para conceder as permissões da pasta ou os direitos nomeados necessários.
 
 Observe que o usuário da conta técnica NÃO existirá no Adobe Campaign até que pelo menos uma chamada à API seja feita para a instância do Campaign, momento em que o IMS criará o usuário no Campaign. Se não conseguir localizar os usuários técnicos no Campaign, verifique se você conseguiu enviar uma chamada de API com êxito, conforme descrito [na Etapa 7](#ims-migration-step-7).
 

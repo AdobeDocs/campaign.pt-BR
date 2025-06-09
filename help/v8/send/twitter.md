@@ -1,13 +1,13 @@
 ---
 title: Postar mensagens no X (Twitter) com o Adobe Campaign
-description: Saiba como usar o módulo Adobe Campaign Social Marketing para postar mensagens no X (anteriormente conhecido como Twitter) e enviar mensagens diretas aos seus seguidores
+description: Saiba como usar o módulo Adobe Campaign Social Marketing para postar mensagens no X (antigo Twitter) e enviar mensagens diretas aos seus seguidores
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -67,7 +67,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta X:
    >Ao fazer uma postagem em X, as limitações se aplicam:
    >
    >* A mensagem não pode exceder 140 caracteres.
-   >* Formato HTML não suportado.
+   >* O formato HTML não é compatível.
    >
 
 1. Visualizar sua publicação
@@ -149,7 +149,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
 >[!CAUTION]
 >
->Não é possível enviar mais de 250 mensagens diretas por dia. Para não exceder esse limite, é possível entregar em ondas. Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=pt-BR#sending-using-multiple-waves){target="_blank"}.
+>Não é possível enviar mais de 250 mensagens diretas por dia. Para não exceder esse limite, é possível entregar em ondas. Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}.
 
 
 ## Acessar dados de rastreamento {#tw-tracking}

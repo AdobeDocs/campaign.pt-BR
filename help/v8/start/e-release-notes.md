@@ -10,7 +10,7 @@ exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
 source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 93%
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ _3 de setembro de 2024_
 >
 >Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
->Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface da web do Campaign v8](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html?lang=pt-BR){target="_blank"}.
+>Como um usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa transição na [documentação da interface do usuário da Web do Campaign v8](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html){target="_blank"}.
 
 ### Novos recursos {#new-8-7-2}
 
@@ -35,7 +35,7 @@ _3 de setembro de 2024_
 
 * **Notificação por push avançada (GA)**: agora, você pode enviar notificações por push avançadas. A notificação por push avançada é uma forma aprimorada de notificação em dispositivos móveis que vai além das mensagens de texto simples, incorporando elementos multimídia, como imagens, botões interativos ou outros conteúdos de mídia avançada. Com esta versão, um conjunto de modelos para notificações por push avançadas agora está disponível para aplicativos iOS e Android. [Leia mais](../send/rich-push-android.md).
 
-* **Identidade visual**: agora, as opções de identidade visual estão disponíveis para todos os canais, inclusive SMS e correspondência direta. [Saiba mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=pt-BR){target="_blank"}
+* **Identidade visual**: agora, as opções de identidade visual estão disponíveis para todos os canais, inclusive SMS e correspondência direta. [Leia mais](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=pt-BR){target="_blank"}
 
 
 ### Correções {#fixes-8-7-2}

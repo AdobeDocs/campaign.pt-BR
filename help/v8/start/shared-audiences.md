@@ -36,7 +36,7 @@ A integração oferece suporte a dois tipos de Adobe Experience Cloud IDs:
   >
   > A fonte de dados de ID declarada agora também pode ser usada com a integração do serviço principal Pessoas.
   >
-  >Se você estiver usando a integração do serviço principal Pessoas e quiser adicionar a integração Audience Manager, será necessária a ajuda de um consultor da Adobe Audience Manager para evitar a perda de todas as sincronizações de ID coletadas durante a transição para o uso dessa fonte de dados de ID declarada em um contexto do Adobe Audience Manager.
+  >Se você estiver usando a integração do serviço principal Pessoas e quiser adicionar a integração do Audience Manager, será necessária a ajuda de um consultor da Adobe Audience Manager para evitar a perda de todas as sincronizações de ID coletadas durante a transição para o uso dessa fonte de dados de ID declarada em um contexto do Adobe Audience Manager.
 
 Consulte:
 

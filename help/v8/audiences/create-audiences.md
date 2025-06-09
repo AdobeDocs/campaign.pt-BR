@@ -26,7 +26,7 @@ Você pode criar uma lista usando a atividade **Atualizar lista** em um fluxo de
 
 Assista a este vídeo para saber mais sobre o Gerenciamento de listas no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426464?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
 ## Criar uma lista de contatos {#create-a-list-of-contacts}
@@ -103,7 +103,7 @@ No exemplo abaixo, você cria uma lista de todos os recipients entre 25 e 40.
 
    ![](assets/targeting-wf-age-filter.png)
 
-   Saiba como criar uma consulta em um fluxo de trabalho em [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=pt-BR){target="_blank"}.
+   Saiba como criar uma consulta em um fluxo de trabalho em [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 1. Adicione um rótulo para esta consulta e salve as alterações.
 1. Adicione uma atividade **[!UICONTROL List update]** e edite-a.
@@ -124,7 +124,7 @@ No exemplo abaixo, você cria uma lista de todos os recipients entre 25 e 40.
 
    ![](assets/access-new-list.png)
 
-   Você pode tornar esse workflow recorrente adicionando um scheduler ao workflow. [Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=pt-BR){target="_blank"}.
+   Você pode tornar esse workflow recorrente adicionando um scheduler ao workflow. [Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 ## Remover um perfil de uma lista {#remove-a-profile-from-a-list}
 

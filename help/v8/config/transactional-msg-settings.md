@@ -21,11 +21,11 @@ Entenda a arquitetura de mensagens transacionais em [esta página](../architectu
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Service, [entre em contato com o Adobe](../start/campaign-faq.md#support) para instalar e configurar as mensagens transacionais do Campaign em seu ambiente.
+>Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support) para instalar e configurar as mensagens transacionais do Campaign em seu ambiente.
 
 ## Definir permissões {#mc-permissions}
 
-Para criar novos usuários para as instâncias de execução do Centro de mensagens hospedadas na Adobe Cloud, entre em contato com o Gerente de transição de Adobe. Os usuários do Centro de mensagens são operadores específicos que exigem permissões dedicadas para acessar pastas de &quot;eventos em tempo real&quot; (nmsRtEvent).
+Para criar novos usuários para as instâncias de execução do Centro de mensagens hospedadas na Adobe Cloud, entre em contato com o Gerente de transição da Adobe. Os usuários do Centro de mensagens são operadores específicos que exigem permissões dedicadas para acessar pastas de &quot;eventos em tempo real&quot; (nmsRtEvent).
 
 ## Extensões do esquema  {#mc-schema-ext}
 

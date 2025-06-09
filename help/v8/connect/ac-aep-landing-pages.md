@@ -32,7 +32,7 @@ As principais etapas para configurar essa integração são as seguintes:
 
 ## Configurar uma conexão Oauth {#oauth}
 
-As APIs do Adobe Cloud Platform usam o protocolo OAuth 2.0 para autenticação e autorização. Para conectar o Adobe Experience Platform ao Adobe Campaign usando chamadas de API, é necessário gerar um token de acesso usando a Integração OAuth criada no Adobe Developer Console.
+As APIs da Adobe Cloud Platform usam o protocolo OAuth 2.0 para autenticação e autorização. Para conectar o Adobe Experience Platform ao Adobe Campaign usando chamadas de API, é necessário gerar um token de acesso usando a Integração OAuth criada no Adobe Developer Console.
 
 Para fazer isso, siga estes passos:
 
@@ -56,7 +56,7 @@ Com a conexão OAuth estabelecida, a próxima etapa é criar uma conexão do Sou
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=pt-BR){target="_blank"}.
+1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
 
    Na etapa **[!UICONTROL Authentication]**, alterne a opção **[!UICONTROL Enable authentication]** para autenticar usando o token de acesso gerado anteriormente pela integração OAuth.
 
@@ -98,7 +98,7 @@ Navegue pelas guias abaixo para descobrir os dois métodos:
 
 >[!TAB Adicionar opções usando uma atividade de código JavaScript]
 
-Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=pt-BR#JavaScript-code){target="_blank"}.
+Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code){target="_blank"}.
 
 Na execução do workflow, as opções são criadas automaticamente no console do Campaign com os valores fornecidos.
 
@@ -157,7 +157,7 @@ Para permitir a sincronização de dados entre landing pages e o Adobe Experienc
 
 +++
 
-+++ Script 2 - Atualizar atributos de perfil de Experience Platform
++++ Script 2 - Atualizar atributos de perfil do Experience Platform
 
    Esse código atualiza os atributos de perfil no Adobe Experience Platform com os valores enviados na landing page.
 
@@ -251,9 +251,9 @@ Com os códigos JavaScript adicionados ao Adobe Campaign, você pode aproveitá-
 
 +++
 
-* Para atualizar atributos de perfil de Experience Platform com os dados enviados na página de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** após a atividade de página de aterrissagem e copie e cole o Script 2.
+* Para atualizar os atributos de perfil do Experience Platform com os dados enviados na página de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** após a atividade de página de aterrissagem e copie e cole o Script 2.
 
-+++ Script 2 - Atualizar atributos de perfil de Experience Platform
++++ Script 2 - Atualizar atributos de perfil do Experience Platform
 
   ```javascript
   // Script code to update profile in AEP and ACC.
@@ -344,5 +344,5 @@ Este é um exemplo de uma página de aterrissagem e uma atividade de código Jav
 ### Mais informações
 
 * [Configurar uma atividade de código JavaScript](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Criar uma página de aterrissagem](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=pt-BR){target="_blank"}
+* [Criar uma landing page](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html){target="_blank"}
 * [Gerenciar assinaturas e cancelamentos de assinaturas](../start/subscriptions.md)

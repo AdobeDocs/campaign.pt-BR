@@ -13,17 +13,17 @@ ht-degree: 9%
 
 ---
 
-# Criar uma entrega de push avançada do Android {#rich-push}
+# Criar uma entrega de push avançada para Android {#rich-push}
 
 >[!IMPORTANT]
 >
->Antes de criar uma Notificação por push avançada, primeiro é necessário configurar o conector V2. Consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) para obter o procedimento detalhado.
+>Antes de criar uma Notificação por push avançada, primeiro é necessário configurar o conector V2. Consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) para obter o procedimento detalhado.
 
 Com o Firebase Cloud Messaging, você pode escolher entre dois tipos de mensagens:
 
 * O **[!UICONTROL Data message]** é manipulado pelo aplicativo cliente. Essas mensagens são enviadas diretamente para o aplicativo móvel, que gera e exibe uma notificação do Android no dispositivo. As mensagens de dados contêm somente as variáveis personalizadas do aplicativo.
 
-* O **[!UICONTROL Notification message]**, manipulado automaticamente pelo SDK do FCM. O FCM exibe automaticamente a mensagem nos dispositivos dos usuários em nome do aplicativo do cliente. As mensagens de notificação contêm um conjunto predefinido de parâmetros e opções, mas ainda podem ser personalizadas com variáveis de aplicativo personalizadas.
+* O **[!UICONTROL Notification message]**, manipulado automaticamente pelo FCM SDK. O FCM exibe automaticamente a mensagem nos dispositivos dos usuários em nome do aplicativo do cliente. As mensagens de notificação contêm um conjunto predefinido de parâmetros e opções, mas ainda podem ser personalizadas com variáveis de aplicativo personalizadas.
 
 Se a barra de rolagem estiver desabilitada na interface, acesse **[!UICONTROL Administration]** `>` **[!UICONTROL Platform]** `>` **[!UICONTROL Options]** e defina a opção **[!UICONTROL XtkUseScrollBar]** como 1.
 

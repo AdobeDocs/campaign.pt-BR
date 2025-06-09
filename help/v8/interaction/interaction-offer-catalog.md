@@ -46,7 +46,7 @@ Para criar uma nova categoria, siga as etapas abaixo:
 
    Logo, conforme necessário:
 
-   * Atribuir datas de qualificação pela guia **[!UICONTROL Eligibility]**.
+   * Atribuir datas de elegibilidade pela guia **[!UICONTROL Eligibility]**.
 
      ![](assets/offer_cat_create_004.png)
 

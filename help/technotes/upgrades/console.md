@@ -22,7 +22,7 @@ Você só será afetado por essa alteração se tiver a versão de 32 bits do Wi
 
 ## Fim do suporte{#eol}
 
-O fim do suporte significa que o Adobe não fornece mais suporte técnico, incluindo atualizações de produtos e/ou segurança, para todos os derivados de um produto ou versão do produto (versões localizadas, atualizações secundárias, sistemas operacionais, versões com pontos e pontos duplos e produtos com conectores).
+O fim do suporte significa que a Adobe não fornece mais suporte técnico, incluindo atualizações de produtos e/ou segurança, para todos os derivados de um produto ou versão do produto (versões localizadas, atualizações secundárias, sistemas operacionais, versões com pontos e pontos duplos e produtos com conectores).
 
 ## Recomendações{#console-eol-recommendations}
 

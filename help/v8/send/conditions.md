@@ -54,7 +54,7 @@ Você pode adicionar outros casos e definir outro conteúdo de acordo com os val
 
 No exemplo abaixo, saiba como criar um email multilíngue. O conteúdo é exibido em um idioma ou em outro, dependendo da preferência de idioma do recipient.
 
-1. Crie um email e selecione o público alvo. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do destinatário. Estes valores estão definidos como **EN**, **FR**, **ES**.
+1. Crie um email e selecione a população de destino. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do destinatário. Estes valores estão definidos como **EN**, **FR**, **ES**.
 1. No conteúdo HTML de email, clique na guia **[!UICONTROL Source]** e cole o seguinte código:
 
    ```
@@ -80,10 +80,10 @@ No exemplo abaixo, saiba como criar um email multilíngue. O conteúdo é exibid
 
    >[!NOTE]
    >
-   >Como nenhuma versão alternativa foi definida no conteúdo do email, filtre o público-alvo antes de enviar o email.
+   >Como nenhuma versão alternativa foi definida no conteúdo do email, filtre a população de destino antes de enviar o email.
 
 ## Tutorial em vídeo {#conditionnal-content-video}
 
 Saiba como adicionar conteúdo condicional a uma entrega no caso de um informativo multilíngue.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446716?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)

@@ -9,7 +9,7 @@ exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
 source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
 workflow-type: tm+mt
 source-wordcount: '1349'
-ht-degree: 17%
+ht-degree: 16%
 
 ---
 
@@ -143,7 +143,7 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
 1. O **[!UICONTROL Integration key]** é específico para cada aplicativo. Ele vincula o aplicativo móvel ao Adobe Campaign e será usado ao configurar a extensão do Campaign.
 
-   Verifique se o mesmo **[!UICONTROL Integration key]** está definido no Adobe Campaign e no código do aplicativo por meio do SDK.
+   Verifique se o mesmo **[!UICONTROL Integration key]** está definido no Adobe Campaign e no código do aplicativo por meio da SDK.
 
    Saiba mais em [a Documentação para desenvolvedores](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
@@ -178,7 +178,7 @@ Para criar um aplicativo para dispositivos Android, siga estas etapas:
 
 1. A chave de integração é específica para cada aplicativo. Ele vincula o aplicativo móvel ao Adobe Campaign e será usado ao configurar a extensão do Campaign.
 
-   Verifique se o mesmo **[!UICONTROL Integration key]** está definido no Adobe Campaign e no código do aplicativo por meio do SDK.
+   Verifique se o mesmo **[!UICONTROL Integration key]** está definido no Adobe Campaign e no código do aplicativo por meio da SDK.
 
    Saiba mais em [a Documentação para desenvolvedores](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
@@ -248,7 +248,7 @@ Sua propriedade móvel agora será sincronizada automaticamente com o fluxo de t
 
 O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é gerenciada por meio da interface da Coleção de dados, para oferecer configuração flexível e integrações extensíveis baseadas em regras.
 
-[Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}
+[Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 
 ## Criar sua notificação por push{#push-create}
 

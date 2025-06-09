@@ -59,4 +59,4 @@ Quando essas etapas forem concluídas, você poderá [iniciar os deliveries](mar
 
 Este vídeo apresenta os principais conceitos das campanhas de marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/326576?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)

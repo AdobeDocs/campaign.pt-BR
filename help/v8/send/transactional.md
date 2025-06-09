@@ -18,7 +18,7 @@ O envio de mensagens transacionais (Centro de mensagens) é um módulo do Campai
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Service, [contate o Adobe](../start/campaign-faq.md#support){target="_blank"} para configurar as mensagens transacionais do Campaign em seu ambiente.
+>Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support){target="_blank"} para configurar as mensagens transacionais do Campaign em seu ambiente.
 
 As mensagens transacionais são usadas para enviar:
 
@@ -45,7 +45,7 @@ As principais etapas para colocar isso em prática são detalhadas abaixo:
 1. [Testar a mensagem](transactional-template.md#test-message-template).
 1. [Publicar o modelo da mensagem](transactional-template.md#publish-message-template).
 
-Depois de criar e publicar o modelo de mensagem transacional, se um evento correspondente for acionado, os dados relevantes serão enviados para o Campaign por meio dos [métodos SOAP](../send/event-description.md) de PushEvent e PushEvents, e o delivery será enviado aos recipients direcionados.
+Depois de criar e publicar o modelo de mensagem transacional, se um evento correspondente for acionado, os dados relevantes serão enviados para o Campaign por meio dos [métodos SOAP](../send/event-description.md) PushEvent e PushEvents, e a entrega será enviada aos recipients direcionados.
 
 ## Criar tipos de evento {#create-event-types}
 

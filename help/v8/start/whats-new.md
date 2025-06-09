@@ -8,7 +8,7 @@ exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -72,7 +72,7 @@ O Adobe Campaign v8 está disponível como um Managed Cloud Services, fornecendo
 
 A abordagem de managed services permite que os profissionais de marketing aproveitem a escala operacional e a economia da infraestrutura em nuvem, sem a necessidade de um suporte pesado de recursos internos da TI. As equipes de consultoria e implementação da Adobe trabalham com você para avaliar seus planos de marketing, práticas, requisitos de dados e volume de mensagens e, em seguida, recomendam os pacotes mais apropriados de serviços, suporte e capacidade de entrega. A equipe do Adobe Campaign Managed Cloud Services pode monitorar e relatar o desempenho da campanha, a reputação da marca, as métricas de experiência do cliente e muito mais.
 
-[!BADGE PDF]{type=Informative}[Leia este whitepaper](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} para saber mais sobre o valor comercial do Adobe Campaign Managed Cloud Services.
+[!BADGE PDF]{type=Informative} [Leia este documento](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} para saber mais sobre o valor comercial do Adobe Campaign Managed Cloud Services.
 
 Observe que a nova arquitetura de nuvem permite que o Campaign simplifique processos, reduza custos, gerencie riscos e melhore a segurança dos dados. Seu ambiente do Campaign v8 vem com uma nuvem privada virtual (VPC) dedicada pré-configurada para você.
 
@@ -105,6 +105,6 @@ Por meio de uma interface intuitiva, os administradores podem monitorar o uso do
 
 ![](assets/subdomain1.png)
 
-[Saiba mais sobre o Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+[Saiba mais sobre o Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
 
 

@@ -6,7 +6,7 @@ feature: Overview
 source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 83%
+ht-degree: 81%
 
 ---
 
@@ -14,17 +14,17 @@ ht-degree: 83%
 # Guias de automação de campanha {#automation}
 
 + [Guia de automação de campanha](home.md)
-+ Automatizar com workflows {#workflows}
++ Automatizar com fluxos de trabalho {#workflows}
    + Introdução a workflows {#introduction}
       + [Sobre workflows](workflow/about-workflows.md)
-      + Tipos de fluxos de trabalho {#wf-type}
+      + Tipos de workflows {#wf-type}
          + [Fluxos de trabalho para construção do target](workflow/targeting-workflows.md)
          + [Fluxos de trabalho da campanha](workflow/campaign-workflows.md)
          + [Workflows técnicos](workflow/technical-workflows.md)
       + [Criar um workflow](workflow/build-a-workflow.md)
       + [Práticas recomendadas](workflow/workflow-best-practices.md)
       + [Usar dados de fluxo de trabalho](workflow/use-workflow-data.md)
-   + Executar um fluxo de trabalho {#executing-a-workflow}
+   + Executar um workflow {#executing-a-workflow}
       + [Iniciar um fluxo de trabalho](workflow/start-a-workflow.md)
       + [Ciclo de vida do fluxo de trabalho](workflow/workflow-life-cycle.md)
       + [Configurar aprovações](workflow/define-approvals.md)
@@ -32,7 +32,7 @@ ht-degree: 83%
       + [Monitorar a execução do fluxo de trabalho](workflow/monitor-workflow-execution.md)
       + [Monitorar workflows técnicos](workflow/monitor-technical-workflows.md)
       + [HeatMap de fluxo de trabalho](workflow/heatmap.md)
-   + Atividades do fluxo de trabalho {#wf-activities}
+   + Atividades de fluxos de trabalho {#wf-activities}
       + [Introdução a atividades](workflow/activities.md)
       + Atividades de direcionamento {#targeting-activities}
          + [Lista de atividades de direcionamento](workflow/targeting-activities.md)
@@ -95,7 +95,7 @@ ht-degree: 83%
          + [SMS de entrada](workflow/inbound-sms.md)
          + [Download da Web](workflow/web-download.md)
    + Casos de uso {#use-cases}
-      + [Sobre casos de uso de fluxo de trabalho](workflow/workflow-use-cases.md)
+      + [Sobre casos de uso de workflows](workflow/workflow-use-cases.md)
       + Entregas {#deliveries}
          + [Usar a atividade de aprovação local](workflow/local-approval-activity.md)
          + [Enviar email de aniversário](workflow/send-a-birthday-email.md)
@@ -114,8 +114,8 @@ ht-degree: 83%
          + [Usar a funcionalidade de mesclagem da atividade de desduplicação](workflow/deduplication-merge.md)
          + [Configurar um fluxo de trabalho de importação recorrente](workflow/recurring-import-workflow.md)
       + Criar consultas {#designing-queries}
-         + [Atualização da lista trimestral usando uma consulta incremental](workflow/quarterly-list-update.md)
-      + Consulta e filtro {#designing-queries}
+         + [Atualização da lista trimestral usando um query incremental](workflow/quarterly-list-update.md)
+      + Query e filtro {#designing-queries}
          + [Consultar a tabela de destinatários](workflow/querying-recipient-table.md)
          + [Consultar informações da entrega](workflow/query-delivery-info.md)
          + [Calcular agregados](workflow/compute-aggregates.md)
@@ -152,7 +152,7 @@ ht-degree: 83%
    + [Regras de consistência](campaign-opt/consistency-rules.md)
    + [Aplicar regras](campaign-opt/apply-rules.md)
    + [Simulações de campanha](campaign-opt/campaign-simulations.md)
-+ Gerenciamento de Recursos de Marketing (complemento){#mrm}
++ Gerenciamento de recursos de marketing (complemento){#mrm}
    + [Introdução ao gerenciamento de recursos de marketing](mrm/about-marketing-resource-management.md)
    + [Criar e gerenciar tarefas](mrm/creating-and-managing-tasks.md)
    + [Controlar custos](mrm/controlling-costs.md)

@@ -105,7 +105,7 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
 
   >[!NOTE]
   >
-  >As categorias derivadas herdam os temas identificados na categoria principal.
+  >As categorias filhas herdam os temas identificados na categoria pai.
 
 * **Regras de elegibilidade**: restrições aplicadas a um ambiente, categoria ou oferta sobre o período de validade, público-alvo e peso. Eles permitem garantir que uma oferta esteja alinhada com o contato alvo.
 

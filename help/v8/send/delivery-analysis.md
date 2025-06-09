@@ -90,4 +90,4 @@ Essa guia fornece acesso às seguintes opções:
 
 * **[!UICONTROL Start job in a detached process]**: essa opção permite iniciar a análise de entrega em um processo separado. A função de análise usa o processo do servidor de aplicativos Adobe Campaign (Web nlserver) por padrão. Ao selecionar essa opção, você garante que a análise será concluída mesmo no caso de falha do servidor de aplicativos.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]**: essa opção adiciona os logs de consulta SQL ao diário de entrega durante a fase de análise.
-* **[!UICONTROL Ignore personalization scripts during sending]**: essa opção permite ignorar a interpretação das diretivas JavaScript encontradas no conteúdo HTML. Eles serão exibidos como nos conteúdos entregues. Essas diretivas são introduzidas com a tag `<%=`.
+* **[!UICONTROL Ignore personalization scripts during sending]**: essa opção permite ignorar a interpretação das diretivas JavaScript encontradas no conteúdo do HTML. Eles serão exibidos como nos conteúdos entregues. Essas diretivas são introduzidas com a tag `<%=`.

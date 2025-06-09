@@ -8,7 +8,7 @@ exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: e465b846b3144a2138bb912b4baa09238f8c5b4c
 workflow-type: tm+mt
 source-wordcount: '1333'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -20,7 +20,7 @@ Essa integração permite que o Adobe Campaign e o Adobe Analytics interajam por
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Service, [entre em contato com o Adobe](../start/campaign-faq.md#support) para conectar o Campaign com os serviços e soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
+>Como usuário do Managed Cloud Services, [entre em contato com a Adobe](../start/campaign-faq.md#support) para conectar o Campaign com os serviços e soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
 
 Usando o Adobe Analytics Connector, o Adobe Campaign tem uma forma de medir o público-alvo da Internet (Web Analytics). As ferramentas do Web Analytics permitem que o Adobe Campaign encaminhe indicadores e atributos de campanha para o Analytics.
 
@@ -55,7 +55,7 @@ Para criar seu **[!UICONTROL Report suite]** em [!DNL Adobe Analytics], siga as 
 
 1. Na página **[!UICONTROL Report suite manager]**, clique em **[!UICONTROL Create new]** e depois em **[!UICONTROL Report suite]**.
 
-   Para obter o procedimento detalhado sobre a criação de **[!UICONTROL Report suite]**, consulte a [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=pt-BR#prerequisites){target="_blank"}.
+   Para obter o procedimento detalhado sobre a criação de **[!UICONTROL Report suite]**, consulte a [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -108,7 +108,7 @@ Depois de criar o **[!UICONTROL Report suite]**, você precisa configurar as **[
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Para saber como configurar o **[!UICONTROL Success events]**, consulte esta [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html?lang=pt-BR)
+   Para saber como configurar o **[!UICONTROL Success events]**, consulte esta [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html)
 
    ![](assets/analytics_connnector_8.png)
 
@@ -122,7 +122,7 @@ Agora é necessário configurar a conta externa do **[!UICONTROL Web Analytics]*
 
 Observe que se um dos **[!UICONTROL Report suite]**, **[!UICONTROL Conversion variables]** ou **[!UICONTROL Success events]** não estiver visível ao configurar a conta externa, significa que você não tem uma permissão para esse componente recém-criado no **[!UICONTROL Product profile]** associado ao usuário.
 
-Para obter mais informações, consulte a página [Perfis de produto para o Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=pt-BR#product-profile-admins){target="_blank"}.
+Para obter mais informações, consulte a página [Perfis de produto do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=pt-BR#product-profile-admins){target="_blank"}.
 
 1. Navegue até a pasta **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** da árvore do gerenciador do Adobe Campaign e clique em **[!UICONTROL New]**.
 
@@ -146,7 +146,7 @@ Para obter mais informações, consulte a página [Perfis de produto para o Adob
 
    >[!NOTE]
    >
-   >Os campos ID da campanha e ID da carga geral são coletados por meio do JavaScript na página de aterrissagem ou por meio de regras de processamento. [Saiba mais sobre as regras de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Os campos ID da campanha e ID da carga geral são coletados por meio do JavaScript na página de aterrissagem ou por meio de regras de processamento. [Saiba mais sobre as regras de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 
@@ -270,4 +270,4 @@ O relatório **[!UICONTROL Re-marketing efficiency]** é acessado por meio da p�
 
 **Tópicos relacionados**
 
-* [Campaign - Integração de acionadores Experience Cloud](ac-triggers.md)
+* [Integração Campaign — Experience Cloud Triggers](ac-triggers.md)

@@ -18,7 +18,7 @@ O conteúdo do catálogo de ofertas é configurado em espaços de oferta. Por pa
 
 Como **administrador técnico**, você pode criar espaços de oferta no ambiente Design. É necessário ter acesso à subpasta de espaço de ofertas. Depois de criados, esses espaços de ofertas são duplicados automaticamente no ambiente Live durante a aprovação da oferta.
 
-A renderização de HTML é criada por meio de uma função de renderização. A seqüência dos campos definidos na função de renderização deve ser idêntica à sequência configurada no conteúdo.
+A renderização do HTML é criada por meio de uma função de renderização. A seqüência dos campos definidos na função de renderização deve ser idêntica à sequência configurada no conteúdo.
 
 ![](assets/offer_space_create_009.png)
 
@@ -156,4 +156,4 @@ Se um recipient não estiver qualificado para ofertas, isso será mostrado na vi
 
 A visualização pode ignorar contextos quando eles são restritos a um espaço. Esse é o caso quando o schema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada.
 
-Para obter mais informações, consulte esta amostra na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações, consulte esta amostra na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.

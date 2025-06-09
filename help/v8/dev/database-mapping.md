@@ -94,12 +94,12 @@ Para preencher um campo em XML, você deve adicionar o atributo **xml** com o va
   <element name="comment" xml="true" type="memo" label="Comment"/>
   ```
 
-* Descrição dos dados em formato HTML:
+* Descrição dos dados no formato HTML:
 
   ```sql
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
-  O tipo &quot;html&quot; permite armazenar o conteúdo do HTML em uma tag CDATA e exibir uma verificação de edição de HTML especial na interface do cliente do Adobe Campaign.
+  O tipo &quot;html&quot; permite armazenar o conteúdo do HTML em uma tag CDATA e exibir uma verificação de edição especial do HTML na interface do cliente do Adobe Campaign.
 
 O uso de campos XML permite adicionar campos sem a necessidade de modificar a estrutura física do banco de dados. Outra vantagem é que você usa menos recursos (tamanho alocado para campos SQL, limite do número de campos por tabela etc.).

@@ -43,7 +43,7 @@ To monitor the activity and running of the execution instance(s), see [Transacti
 
 O Adobe Campaign oferece vários relatórios que permitem controlar a atividade e suavizar a execução das instâncias de execução.
 
-É possível acessar esses relatórios do Message Center na guia **[!UICONTROL Reports]**&#x200B;**da instância de controle**.
+É possível acessar esses relatórios do Message Center na guia **[!UICONTROL Reports]****da instância de controle**.
 
 ![](assets/mc-reports.png)
 

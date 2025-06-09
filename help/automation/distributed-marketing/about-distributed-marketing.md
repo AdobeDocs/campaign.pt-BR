@@ -31,7 +31,7 @@ A entidade central fornece campanhas que entidades locais poderão usar. As camp
   O módulo de marketing distribuído permite à entidade central:
 
    * configurar pacotes de campanha de marketing para entidades locais,
-   * aumentar o grau de autonomia das entidades locais em relação à sua escolha para comunicação com cliente/prospecto, direcionamento, conteúdo etc.
+   * aumentar o grau de autonomia das entidades locais em relação à sua escolha para comunicação com cliente/cliente potencial, direcionamento, conteúdo etc.
    * gerenciar e controlar custos,
    * lidar com uma rede de agências.
 

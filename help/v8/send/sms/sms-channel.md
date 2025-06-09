@@ -1,25 +1,25 @@
 ---
-title: Características do canal SMS
+title: Características do canal de SMS
 description: Saiba mais sobre as características do canal de SMS
 feature: SMS
 role: User
 level: Intermediate
 badge: label="Disponibilidade limitada" type="Informative"
-source-git-commit: 36bb1e2c9e2391065360c3cd2ad97612373ec0c2
+exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 23%
 
 ---
 
-
-# Características do canal SMS {#sms-channel}
+# Características do canal de SMS {#sms-channel}
 
 >[!IMPORTANT]
 >
 >Esta documentação é para o Adobe Campaign v8.7.2 e posteriores.
 >
->Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol).
+>Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol).
 
 
 ## Tipos de SMS {#sms-types}

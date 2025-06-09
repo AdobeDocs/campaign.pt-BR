@@ -5,7 +5,8 @@ description: Saiba como definir o conteúdo de email ao usar o Adobe Campaign
 feature: Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+exl-id: c3e107b5-6d2e-408f-9c7d-a81a4756b4ef
+source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 94%
@@ -67,7 +68,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
 * Para importar um conteúdo HTML, clique no botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
 
-  Se você estiver usando o Editor de Conteúdo Digital (DCE), consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html?lang=pt-BR#step-3---selecting-a-content).
+  Se você estiver usando o Editor de Conteúdo Digital (DCE), consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -139,7 +140,7 @@ Uma guia adicional permite inserir conteúdo que será integrado e formatado aut
 
 1. Clique no botão **[!UICONTROL Close]** quando terminar.
 
-Para personalizar a lista de emoticons, consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list.html?lang=pt-BR).
+Para personalizar a lista de emoticons, consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list.html).
 
 ## Adicionar imagens {#adding-images}
 
@@ -150,7 +151,7 @@ As entregas de email em formato HTML podem conter imagens. No assistente de entr
 
 Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 KB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
 
-Saiba mais sobre a lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR#delivery).
+Saiba mais sobre a lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 ### Tipos de imagens {#img-types}
 
@@ -161,7 +162,7 @@ As imagens podem ser:
 
   Os recursos públicos podem ser acessados por meio do nó **[!UICONTROL Resources > Online]** da hierarquia do Adobe Campaign. Elas são agrupadas em uma biblioteca e podem ser incluídas em mensagens de email, mas também podem ser usadas para campanhas ou tarefas, ou para gestão de conteúdo.
 
-* Um ativo compartilhado com a Adobe Experience Cloud. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=pt-BR).
+* Um ativo compartilhado com a Adobe Experience Cloud. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html).
 
 ### Inserir e gerenciar imagens {#manage-images}
 

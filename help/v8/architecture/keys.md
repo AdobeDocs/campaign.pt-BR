@@ -46,7 +46,7 @@ Se o fluxo de trabalho **[!UICONTROL Unicity alerting]** (ffdaUnicity) detectar 
 
 ![](assets/unicity-table.png)
 
-Como Administrador de Banco de Dados, você pode usar uma atividade SQL para remover as duplicatas ou entrar em contato com o Atendimento ao Cliente do Adobe para obter mais orientações.
+Como Administrador de Banco de Dados, você pode usar uma atividade SQL para remover as duplicatas ou entrar em contato com o Atendimento ao Cliente da Adobe para obter mais orientação.
 
 ### Alertas{#unicity-wf-alerting}
 
