@@ -73,7 +73,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 >
 >Fim do Ano 1: (1&#42;0,33)/(1+0,5)=22%.
 >
-Fim do ano 2: ((1,22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
+>Fim do ano 2: ((1,22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
 
 Além disso, o relatório interno **[!UICONTROL Non-deliverables and bounces]**, disponível na seção **Relatórios** desta home page, exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar os dados de um delivery específico ou personalizar este relatório conforme necessário.
 
@@ -104,7 +104,7 @@ O status muda então para **[!UICONTROL Valid]**.
 
 >[!CAUTION]
 >
-Os destinatários com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** nunca serão removidos, mesmo se receberem um email.
+>Os destinatários com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** nunca serão removidos, mesmo se receberem um email.
 
 Você também pode remover manualmente um endereço da lista da quarentena. Para remover um endereço da quarentena, você pode:
 

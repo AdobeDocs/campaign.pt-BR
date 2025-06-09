@@ -84,7 +84,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Você pode obter o programa de instalação e o console do cliente do Centro de download da Adobe.
 
-   Como usuário administrador, acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) {target="_blank"} da Adobe para baixar o Adobe Campaign.
+   Como usuário administrador, acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target="_blank"}  da Adobe para baixar o Adobe Campaign.
 
    Saiba mais sobre o Centro de distribuição [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR){target="_blank"}.
 

@@ -156,7 +156,7 @@ Você também pode atualizar deliveries e templates de delivery existentes criad
       nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
       ```
 
-+++
+  +++
 
 ### Qual é o impacto para meus aplicativos do Android? {#fcm-apps}
 

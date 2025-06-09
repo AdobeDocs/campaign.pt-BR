@@ -98,7 +98,7 @@ Um fluxo de trabalho técnico específico trata da replicação de tabelas que p
 >[!NOTE]
 >
 > Várias políticas de replicação foram criadas, com base no tamanho da tabela (XS, XL etc.).
-> > Algumas tabelas são replicadas em tempo real, outras são replicadas de hora em hora. Algumas tabelas terão atualizações incrementais; outras terão uma atualização completa.
+> &#x200B;> Algumas tabelas são replicadas em tempo real, outras são replicadas de hora em hora. Algumas tabelas terão atualizações incrementais; outras terão uma atualização completa.
 >
 
 [Saiba mais sobre replicação de dados](replication.md)
