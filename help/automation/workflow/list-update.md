@@ -73,6 +73,6 @@ Identifica a população a ser salva no grupo.
 
 Este vídeo mostra como criar uma lista de destinatários pelo Explorer.
 
->[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31866?captions=por_br)
 
 Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.

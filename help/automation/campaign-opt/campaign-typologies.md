@@ -79,11 +79,11 @@ Casos de uso de exemplo das regras de tipologia de pressão estão disponíveis 
 
 Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign utilizando regras de tipologia.
 
->[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3448336?quality=12&captions=por_br)
 
 ### Configurar o gerenciamento de fadiga usando filtros predefinidos
 
 O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de destinatários. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que filtrará a população do público-alvo pelo número de mensagens recebidas
 Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign usando filtros.
 
->[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3444605?quality=12&captions=por_br)
