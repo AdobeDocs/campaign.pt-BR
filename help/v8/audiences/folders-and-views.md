@@ -6,9 +6,9 @@ role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 567ca1cd8fa6e4f03c8871488152710753ea02f1
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '686'
 ht-degree: 5%
 
 ---
@@ -21,8 +21,8 @@ Uma exibição é uma pasta específica que não contém dados, mas exibe dados 
 
 
 >[!NOTE]
->Para distinguir visualizações de pastas padrão, seu nome é exibido em azul claro em vez de preto.
 >
+>Para distinguir visualizações de pastas padrão, seu nome é exibido em azul claro em vez de preto.
 
 Observe que é possível atribuir permissões a pastas para restringir o acesso a determinados dados. [Saiba mais](#restrict-access-to-a-folder)
 
@@ -52,14 +52,19 @@ Para criar outro tipo de pasta, clique com o botão direito em uma pasta existen
 ![](assets/add-new-folder.png)
 
 >[!CAUTION]
->Essas alterações se aplicam a todos os usuários do Campaign.
 >
+>Essas alterações se aplicam a todos os usuários do Campaign.
 
 ## Transformar uma pasta em um modo de exibição{#turn-a-folder-to-a-view}
 
 Uma exibição é uma pasta específica que não contém dados, mas exibe dados fisicamente armazenados em outras pastas do mesmo tipo.
 
 Você pode transformar qualquer pasta em uma visualização, mas a pasta deve estar vazia. Todos os dados armazenados na pasta são excluídos quando você transforma a pasta em uma visualização.
+
+>[!IMPORTANT]
+>
+>As pastas prontas para uso não devem ser transformadas em uma visualização.
+
 
 >[!CAUTION]
 >
