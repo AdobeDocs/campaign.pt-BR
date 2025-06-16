@@ -3,7 +3,7 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 6d2425f7e7f35f5461151790fbda2bef2959bff4
+source-git-commit: 9187ac7fd0d17a6dc28c3b6564913bcd93e45943
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 35%
@@ -18,7 +18,7 @@ Esta página lista novos recursos, melhorias e correções que vêm com o Campai
 
 **Nesta página**
 
-* [Versão 8.6.5](#release-8-6-4)
+* [Versão 8.6.5](#release-8-6-5)
 * [Versão 8.7.4](#release-8-7-4)
 * [Versão 8.6.4](#release-8-6-4)
 
