@@ -6,9 +6,9 @@ title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -91,12 +91,12 @@ ht-degree: 91%
       + [Adicionar campos de personalização](send/personalization-fields.md)
       + [Usar blocos de personalização](send/personalization-blocks.md)
       + [Criar condições](send/conditions.md)
-   + Validar e enviar o delivery {#validate}
+   + Validar e enviar a entrega {#validate}
       + [Visualização e provas](send/preview-and-proof.md)
       + [Análise de entrega](send/delivery-analysis.md)
       + [Configurar e enviar a entrega](send/configure-and-send.md)
       + [Otimização da hora de envio](send/predictive.md)
-   + Falhas, devoluções e quarentenas{#failures}
+   + Falhas, rejeições e quarentenas{#failures}
       + [Quarentenas](send/quarantines.md)
       + [Falhas de entrega](send/delivery-failures.md)
    + [Trabalho com modelos de entrega](send/create-templates.md)
@@ -107,7 +107,7 @@ ht-degree: 91%
          + [Coletar e processar eventos](send/event-processing.md)
          + [Entender a descrição do evento](send/event-description.md)
          + [Enviar e monitorar mensagens](send/delivery-execution.md)
-+ Gerenciamento de perfil e público-alvo {#audience}
++ Gerenciamento de público-alvo e perfil {#audience}
    + [Introdução a perfis e públicos-alvo](audiences/gs-audiences.md)
    + [Trabalhar com públicos-alvo](start/audiences.md)
    + [Acessar perfis](audiences/view-profiles.md)
@@ -126,8 +126,8 @@ ht-degree: 91%
    + [Gerenciar assinaturas](start/subscriptions.md)
 + Gerenciamento de conteúdo {#content}
    + [Criar páginas de destino](dev/landing-pages.md)
-   + [Criar aplicativos e formulários Web](dev/webapps.md)
-+ Automação e workflows {#automation}
+   + [Criar aplicativos e formulários web](dev/webapps.md)
++ Automação e fluxos de trabalho {#automation}
    + [Guia de automação de campanha >](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/home)
 + Gerenciamento de privacidade e segurança {#privacy}
    + [Gerenciar solicitações de privacidade](start/privacy.md)
@@ -154,9 +154,9 @@ ht-degree: 91%
 + Relatórios e análises {#analytics}
    + [Rastrear e monitorar](start/tracking.md)
    + [Trilha de auditoria](reporting/audit-trail.md)
-   + Trabalhar com relatórios{#reports}
+   + Trabalho com relatórios{#reports}
       + [Introdução aos relatórios](reporting/gs-reporting.md)
-      + Criar cubos, {#cubes}
+      + Criar cubos{#cubes}
          + [Introdução aos cubos](reporting/gs-cubes.md)
          + [Criar um cubo](reporting/cube-indicators.md)
          + [Usar cubos para criar relatórios](reporting/cube-tables.md)
@@ -210,7 +210,7 @@ ht-degree: 91%
       + [Etapas de implementação](start/implement.md)
       + [Personalizar sua instância](dev/customize.md)
       + [Práticas recomendadas do modelo de dados](dev/datamodel-best-practices.md)
-   + Configurações e configurações {#configuration}
+   + Definições e configuração {#configuration}
       + [Configurações da interface](config/ui-settings.md)
       + [Gerenciar pastas e visualizações](audiences/folders-and-views.md)
       + [Configurações de mensagens transacionais](config/transactional-msg-settings.md)
