@@ -5,9 +5,9 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '712'
+source-git-commit: b4947c8c20e123877e24f57d5ad7a15aa3f304a2
+workflow-type: tm+mt
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 100%
 + Enviar mensagens{#send}
    + [Introdução a mensagens](start/gs-message.md)
    + [Criar a primeira entrega](start/create-message.md)
+   + [Trabalho com modelos de entrega](send/create-templates.md)
    + [Práticas recomendadas de entrega](start/delivery-best-practices.md)
    + Emails {#emails}
       + [Criar e validar emails](send/email.md)
@@ -99,7 +100,12 @@ ht-degree: 100%
    + Falhas, rejeições e quarentenas{#failures}
       + [Quarentenas](send/quarantines.md)
       + [Falhas de entrega](send/delivery-failures.md)
-   + [Trabalho com modelos de entrega](send/create-templates.md)
+   + Gerenciamento de capacidade de entrega {#deliverability-management}
+      + [O que é capacidade de entrega](send/about-deliverability.md)
+      + [Controlar conteúdo da mensagem](send/control-message-content.md)
+      + [Monitoramento da capacidade de entrega](send/monitoring-deliverability.md)
+      + [Renderização da caixa de entrada](send/inbox-rendering.md)
+      + [SpamAssassin](send/spamassassin.md)
    + Mensagens transacionais {#real-time}
       + [Introdução a mensagens transacionais](send/transactional.md)
       + [Criação e publicação do seu modelo](send/transactional-template.md)
@@ -221,7 +227,7 @@ ht-degree: 100%
    + Esquemas e formulários {#shemas-forms}
       + [Trabalhar com esquemas](dev/schemas.md)
       + [Criar esquemas](dev/create-schema.md)
-      + [Estender schemas](dev/extend-schema.md)
+      + [Estender esquemas](dev/extend-schema.md)
       + [Esquemas de filtro](dev/filter-schema.md)
       + [Estrutura de esquema](dev/schema-structure.md)
       + [Mapeamento de banco de dados](dev/database-mapping.md)
