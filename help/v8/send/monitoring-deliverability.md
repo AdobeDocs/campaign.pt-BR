@@ -30,7 +30,7 @@ O Adobe Campaign oferece acesso a todas as ferramentas de entrega listadas abaix
 
   <!--For more on this, see the [Delivery statistics](../reporting/global-reports.md#delivery-statistics) section.-->
 
-* Em geral, o [painel de entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"} oferece acesso:
+* Em geral, o [painel de entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=pt-BR#sending-messages){target="_blank"} oferece acesso:
    * ao resumo de delivery, que mostra os detalhes do envio e o número de mensagens a enviar, processadas e enviadas com êxito;
    * aos logs do delivery e o histórico, que mostram qual público-alvo foi excluído e o porquê;
    * aos logs de rastreamento, que mostram informações de rastreamento, como aberturas e cliques.
@@ -42,7 +42,7 @@ Estas são algumas diretrizes adicionais sobre o monitoramento da capacidade de 
 * Verifique regularmente a [taxa de transferência da entrega](../reporting/global-reports.md#delivery-throughput) de toda a plataforma para verificar se ela é consistente com a configuração original.
 * Verifique se as [tentativas](delivery-failures.md#retries) estão configuradas corretamente (30 minutos para o período de nova tentativa e mais de 20 tentativas) nos templates da entrega.
 * Verifique regularmente se a caixa de [rejeição](delivery-failures.md#bounce-mail-qualification) está acessível e se a conta não está prestes a expirar.
-* Verifique a taxa de transferência de cada entrega, que pode ser acessada no [painel de entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"}, para verificar se ela é consistente com a validade do conteúdo da entrega (por exemplo, &quot;vendas rápidas&quot; devem ser entregues em minutos, não em dias). O é uma ferramenta essencial para monitorar suas entregas e possíveis problemas durante o envio de mensagens.
+* Verifique a taxa de transferência de cada entrega, que pode ser acessada no [painel de entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=pt-BR#sending-messages){target="_blank"}, para verificar se ela é consistente com a validade do conteúdo da entrega (por exemplo, &quot;vendas rápidas&quot; devem ser entregues em minutos, não em dias). O é uma ferramenta essencial para monitorar suas entregas e possíveis problemas durante o envio de mensagens.
 * Ao usar as [ondas](configure-and-send.md#sending-using-multiple-waves), verifique se cada onda tem tempo suficiente para terminar antes que a próxima seja acionada.
 * Verifique se o número de erros e as novas [quarentenas](quarantines.md) estão consistentes com outras entregas.
-* Consulte detalhadamente os [logs da entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#delivery-logs-and-history){target="_blank"} para verificar o tipo de erro destacado (lista de bloqueios, problemas de DNS, regras anti-spam, etc.).
+* Consulte detalhadamente os [logs da entrega](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=pt-BR#delivery-logs-and-history){target="_blank"} para verificar o tipo de erro destacado (lista de bloqueios, problemas de DNS, regras anti-spam, etc.).
