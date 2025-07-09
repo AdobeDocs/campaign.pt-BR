@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User, Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
+source-git-commit: cb4cbc9ba14e953d2b3109e87eece4f310bfe838
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 35%
+source-wordcount: '1213'
+ht-degree: 33%
 
 ---
 
@@ -20,15 +20,21 @@ Quando o endereço ou número de telefone está em quarentena, os recipients sã
 
 <!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
 
-A **Quarentena** se aplica somente a um **endereço**, um **número de telefone** ou um **token de dispositivo**, mas não ao próprio perfil. Por exemplo, um perfil cujo endereço de email esteja em quarentena pode atualizar seu perfil e inserir um novo endereço, podendo então ser direcionado em ações de entrega novamente. Da mesma forma, se dois perfis tiverem o mesmo número de telefone, ambos serão afetados se o número estiver em quarentena. Os endereços em quarentena ou os números de telefone são exibidos nos [logs de exclusão](#delivery-quarantines) (para uma entrega) ou na [lista de quarentena](#non-deliverable-bounces) (para toda a plataforma).
+## Quarentena versus inclui na lista de bloqueios
 
-Por outro lado, os perfis podem estar no **incluo na lista de bloqueios** como após um cancelamento de inscrição (recusa) de um determinado canal: isso implica que eles não serão mais direcionados por nenhum. Incluir na lista de bloqueios Como consequência, se um perfil no canal tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios de um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
+A **Quarentena** se aplica somente a um **endereço**, um **número de telefone** ou um **token de dispositivo**, mas não ao próprio perfil. Por exemplo, um perfil cujo endereço de email esteja em quarentena pode atualizar seu perfil e inserir um novo endereço, podendo então ser direcionado em ações de entrega novamente. Da mesma forma, se dois perfis tiverem o mesmo número de telefone, ambos serão afetados se o número estiver em quarentena. Os endereços em quarentena ou os números de telefone são exibidos nos [logs de exclusão](#delivery-quarantines) (para uma entrega) ou na [lista de quarentena](#non-deliverable-bounces) (para toda a plataforma).
 
 >[!NOTE]
 >
 >Quando os destinatários relatam sua mensagem como spam ou respondem a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot;, seu endereço ou número de telefone ficam em quarentena como **[!UICONTROL Denylisted]**. Seu perfil é atualizado adequadamente.
 
-<!--For the email channel, email addresses are quarantined. For the mobile app channel, device tokens are quarantined. For the SMS channel, phone numbers are quarantined.?-->
+Por outro lado, **perfis** podem estar no **inclui na lista de bloqueios** como após um cancelamento de inscrição (recusa) de um determinado canal: isso implica que eles não serão mais direcionados por nenhuma entrega. Incluir na lista de bloqueios Como consequência, se um perfil no canal tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios de um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
+
+>[!NOTE]
+>
+>Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Incluir na lista de bloqueios Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
+
+<!--For the mobile app channel, device tokens are quarantined.-->
 
 ## Por que um email, telefone ou dispositivo é enviado para quarentena? {#quarantine-reason}
 
@@ -77,7 +83,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 
 Além disso, o relatório interno **[!UICONTROL Non-deliverables and bounces]**, disponível na seção **Relatórios** desta home page, exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar os dados de um delivery específico ou personalizar este relatório conforme necessário.
 
-Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### Endereço de email na quarentena {#quarantined-recipient}
 

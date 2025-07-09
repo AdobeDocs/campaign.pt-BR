@@ -5,9 +5,9 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3666'
 ht-degree: 27%
 
 ---
@@ -332,6 +332,10 @@ Para cada campo, é possível definir a tag associada, bem como seu formato. Sol
 
 * Tag: o valor da tag, em formato decimal (por exemplo, 12345) ou hexadecimal com o prefixo 0x (por exemplo, 0x12ab). As tags podem ficar entre 0 e 65535.
 * Format: formato usado para o valor. Os valores binários são todos valores binários com sinal big-endian. Para campos de texto, escolha a codificação usada pelo provedor SMPP.
+
+>[!NOTE]
+>
+>Se o campo **Conta do cliente** ficar vazio, ele será substituído pelo código curto.
 
 ### Resposta automática enviada ao MO
 

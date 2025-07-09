@@ -4,12 +4,11 @@ description: Saiba como configurar uma entrega de SMS em uma infraestrutura de m
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="Disponibilidade limitada" type="Informative"
 exl-id: b5eb9eaa-0ca8-478c-9ed5-e5006e9b5609
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 12%
+source-wordcount: '595'
+ht-degree: 11%
 
 ---
 
@@ -17,9 +16,9 @@ ht-degree: 12%
 
 >[!IMPORTANT]
 >
->Esta documentação é para o Adobe Campaign v8.7.2 e posteriores.
+>Esta documentação se aplica ao Adobe Campaign v8.7.2 e posterior. Para alternar do conector herdado para o novo conector SMS, consulte esta [nota técnica](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
+>Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 O envio de deliveries de SMS com uma infraestrutura de mid-sourcing requer:
 

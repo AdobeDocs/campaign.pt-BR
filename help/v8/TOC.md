@@ -5,10 +5,10 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: b4947c8c20e123877e24f57d5ad7a15aa3f304a2
+source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '790'
+ht-degree: 97%
 
 ---
 
@@ -97,8 +97,8 @@ ht-degree: 100%
       + [Análise de entrega](send/delivery-analysis.md)
       + [Configurar e enviar a entrega](send/configure-and-send.md)
       + [Otimização da hora de envio](send/predictive.md)
-   + Falhas, rejeições e quarentenas{#failures}
-      + [Quarentenas](send/quarantines.md)
+   + Falhas, rejeições e quarentenas {#failures}
+      + [Quarentena](send/quarantines.md)
       + [Falhas de entrega](send/delivery-failures.md)
    + Gerenciamento de capacidade de entrega {#deliverability-management}
       + [O que é capacidade de entrega](send/about-deliverability.md)
@@ -239,6 +239,32 @@ ht-degree: 100%
       + [Formulários de entrada](dev/forms.md)
    + [Trabalhar com pacotes de dados](dev/packages.md)
    + [APIs do Campaign](dev/api.md)
+   + REST APIs {#apis}
+      + [Introdução às REST APIs](dev/api/get-started-apis.md)
+      + [Recomendações e limitações](dev/api/limitations.md)
+      + [Por que usar APIs REST](dev/api/why-using-campaign-standard-apis.md)
+      + [Configuração do acesso à API](dev/api/setting-up-api-access.md)
+      + Conceitos globais {#global-concepts}
+         + [Leitura obrigatória](dev/api/must-read.md)
+         + [Pontos de acesso](dev/api/endpoints.md)
+         + [Mecanismo de metadados](dev/api/metadata-mechanism.md)
+         + [Verbos](dev/api/verbs.md)
+         + [Operações adicionais](dev/api/sorting.md)
+         + [Recursos personalizados](dev/api/custom-resources.md)
+      + [Interação com recursos personalizados](dev/api/interacting-with-custom-resources.md)
+      + Gerenciamento de perfis {#managing-profiles}
+         + [Recuperação de perfis](dev/api/retrieving-profiles.md)
+         + [Atualização de perfis](dev/api/updating-profiles.md)
+         + [Criação de perfis](dev/api/creating-profiles-api.md)
+      + Gerenciamento de serviços e assinaturas {#managing-services-and-subscriptiopns}
+         + [Criação de um serviço](dev/api/creating-a-service.md)
+         + [Recuperação de subscrições](dev/api/retrieving-subscriptions.md)
+         + [Realizar subscrições](dev/api/perform-subscriptions.md)
+         + [Exclusão de subscrições](dev/api/deleting-subscriptions.md)
+      + [Gerenciamento de mensagens transacionais](dev/api/managing-transactional-messages.md)
+      + Gerenciamento de workflows {#managing-workflows}
+         + [Controle de um fluxo de trabalho](dev/api/controlling-a-workflow.md)
+         + [Acionamento de uma atividade de sinal](dev/api/triggering-a-signal-activity.md)
 + [Notas técnicas da campanha >](https://experienceleague.adobe.com/pt-br/docs/campaign/technotes-ac/technotes-home)
 + [Documentação da interface do Campaign Web>](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/campaign-web-home)
 

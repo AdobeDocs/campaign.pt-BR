@@ -6,11 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 level: Beginner, Intermediate
-badge: label="Disponibilidade limitada" type="Informative"
 exl-id: 7cebcde0-c5a8-4b9b-baba-27a62bebde91
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '260'
 ht-degree: 9%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 9%
 >
 >Esta documentação é para o Adobe Campaign v8.7.2 e posteriores.
 >
->Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
+>Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
 
 Em uma instância independente, o envio de um delivery de SMS requer:
 

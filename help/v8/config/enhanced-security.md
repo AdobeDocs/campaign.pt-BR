@@ -5,10 +5,10 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
+source-git-commit: 3f36d7c425dd5a9a13e1de7a77371b29a462dbea
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -96,7 +96,7 @@ Há suporte para três casos de uso:
 
 >[!CAUTION]
 >
->Somente bancos de dados locais e dispositivos VPN compatíveis com o AWS são suportados. [Saiba mais](#vpn-databases)
+>Os bancos de dados no local e na nuvem são compatíveis. [Saiba mais](#vpn-databases)
 
 Para garantir o uso correto desse recurso, siga as diretrizes abaixo:
 
@@ -122,8 +122,9 @@ Os seguintes bancos de dados locais são compatíveis:
 * Sybase
 * Teradata
 * Hadoop via HiveSQL
+* PostgreSQL
 
-Somente dispositivos VPN compatíveis com o AWS são suportados. Uma lista de dispositivos compatíveis está disponível em [esta página](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}.
+Os bancos de dados em nuvem são compatíveis. Consulte a [matriz de compatibilidade](../start/compatibility-matrix.md#FederatedDataAccessFDA).
 
 >[!NOTE]
 >
