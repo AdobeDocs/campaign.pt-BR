@@ -18,7 +18,7 @@ ht-degree: 5%
 >
 >Esta documentação se aplica ao Adobe Campaign v8.7.2 e posterior. Para alternar do antigo para o novo conector SMS, consulte esta [nota técnica](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}.
 >
->Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+>Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## Fluxo de dados do conector SMS {#sms-data-flow}
 

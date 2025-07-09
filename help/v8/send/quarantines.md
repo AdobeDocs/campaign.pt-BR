@@ -32,7 +32,7 @@ Por outro lado, **perfis** podem estar no **inclui na lista de bloqueios** como 
 
 >[!NOTE]
 >
->Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Incluir na lista de bloqueios Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
+>Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Incluir na lista de bloqueios Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -83,7 +83,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 
 Além disso, o relatório interno **[!UICONTROL Non-deliverables and bounces]**, disponível na seção **Relatórios** desta home page, exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar os dados de um delivery específico ou personalizar este relatório conforme necessário.
 
-Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
+Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR){target="_blank"}.
 
 ### Endereço de email na quarentena {#quarantined-recipient}
 

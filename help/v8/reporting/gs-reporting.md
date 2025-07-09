@@ -56,4 +56,4 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
   Use o Adobe Campaign para criar relatórios sobre os dados no banco de dados. Depois que eles tiverem sido criados, torne-os acessíveis nos contextos apropriados.
 
-  As etapas para criar um relatório estão detalhadas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. A criação de relatórios personalizados é reservada para usuários avançados.
+  As etapas para criar um relatório estão detalhadas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=pt-BR){target="_blank"}. A criação de relatórios personalizados é reservada para usuários avançados.
