@@ -18,7 +18,7 @@ O Adobe Campaign fornece um conjunto de ferramentas de relatório listadas nesta
 
 * **Relatórios dinâmicos**
 
-  Disponível com a interface do usuário da Web do Campaign, o Dynamic Reporting fornece relatórios totalmente personalizáveis e em tempo real para medir o impacto de suas atividades de marketing. Eles adicionam acesso aos dados do perfil, permitindo análises demográficas por dimensões do perfil, como gênero, cidade e idade, além de dados funcionais de campanha de email, como aberturas e cliques. Consulte a [documentação da Interface do Usuário da Web v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}.
+  Disponível com a interface do usuário da Web do Campaign, o Dynamic Reporting fornece relatórios totalmente personalizáveis e em tempo real para medir o impacto de suas atividades de marketing. Eles adicionam acesso aos dados do perfil, permitindo análises demográficas por dimensões do perfil, como gênero, cidade e idade, além de dados funcionais de campanha de email, como aberturas e cliques. Consulte a [documentação da Interface do Usuário da Web v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=pt-BR){target="_blank"}.
 
 * **Cubos**
 
