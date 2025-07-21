@@ -18,7 +18,7 @@ ht-degree: 15%
 >
 >Esse recurso está disponível para todos os ambientes FDA do Campaign. **não** disponível para implantações do FFDA do Campaign. Esta documentação se aplica ao Adobe Campaign v8.7.2 e posterior. Para alternar do conector herdado para o novo conector SMS, consulte esta [nota técnica](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+>Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 As configurações técnicas necessárias para um delivery de SMS são:
 
