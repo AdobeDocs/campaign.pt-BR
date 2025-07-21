@@ -5,20 +5,20 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1342'
 ht-degree: 5%
 
 ---
 
 # Descrição do conector SMPP {#smpp-connector-desc}
 
->[!IMPORTANT]
+>[!AVAILABILITY]
 >
->Esta documentação se aplica ao Adobe Campaign v8.7.2 e posterior. Para alternar do antigo para o novo conector SMS, consulte esta [nota técnica](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}.
+>Esse recurso está disponível para todos os ambientes FDA do Campaign. **não** disponível para implantações do FFDA do Campaign. Esta documentação se aplica ao Adobe Campaign v8.7.2 e posterior. Para alternar do conector herdado para o novo conector SMS, consulte esta [nota técnica](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+>Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## Fluxo de dados do conector SMS {#sms-data-flow}
 
@@ -32,13 +32,13 @@ O processo SMS hospeda 2 componentes importantes: o próprio conector SMPP que l
 
 ### Fluxo de dados para contas SMPP {#sms-data-flow-smpp-accounts}
 
-O processo SMS pesquisa nms:extAccount e cria novas conexões em seu conector SMPP, transmitindo as configurações de cada conta. A frequência de sondagem pode ser ajustada em serverConf, na configuração *configRefreshMillis*.
+O processo SMS pesquisa o nms:extAccount e gera novas conexões em seu conector SMPP, transmitindo as configurações de cada conta. A frequência de sondagem pode ser ajustada em serverConf, na configuração *configRefreshMillis*.
 
 Para cada conta SMPP ativa, o conector SMPP tenta manter as conexões ativas o tempo todo. Ele se reconecta caso a conexão seja perdida.
 
 ### Fluxo de dados ao enviar mensagens {#sms-data-flow-sending-msg}
 
-* O processo SMS seleciona deliveries ativos digitalizando nms:delivery. Um delivery fica ativo quando:
+* O processo SMS seleciona entregas ativas examinando nms:delivery. Um delivery fica ativo quando:
    * Seu estado implica que as mensagens podem ser enviadas
    * Seu período de validade não expirou
    * Na verdade, é um delivery (por exemplo, não é um template, não é excluído)
@@ -47,9 +47,9 @@ Para cada conta SMPP ativa, o conector SMPP tenta manter as conexões ativas o t
 * O processo SMS expande o modelo com dados de personalização da parte de entrega.
 * O conector SMPP gera um MT (SUBMIT_SM PDU) correspondente ao conteúdo e outras configurações.
 * O conector SMPP envia o MT por uma conexão de transmissor (ou transceptor).
-* O provedor retorna uma ID para este MT. Ele é inserido em nms:providerMsgId.
+* O provedor retorna uma ID para este MT. Foi inserido em nms:providerMsgId.
 * O processo SMS atualiza o log amplo para o status enviado.
-* No caso de erro final, o processo SMS atualiza o log amplo de acordo e pode criar um novo tipo de erro em nms:broadLogMsg.
+* No caso de erro final, o processo SMS atualiza o log amplo adequadamente e pode criar um novo tipo de erro em nms:broadLogMsg.
 
 ### Fluxo de dados ao receber SR {#sms-data-flow-sr}
 
@@ -68,9 +68,9 @@ Para cada conta SMPP ativa, o conector SMPP tenta manter as conexões ativas o t
 
 ### Fluxo de dados ao reconciliar MT e SR {#sms-reconciling-mt-sr}
 
-* O componente de reconciliação SR lê periodicamente nms:providerMsgId e nms:providerMsgStatus. Os dados de ambas as tabelas são unidos.
+* O componente de reconciliação de SR lê periodicamente nms:providerMsgId e nms:providerMsgStatus. Os dados de ambas as tabelas são unidos.
 * Para todas as mensagens que tenham uma entrada em ambas as tabelas, a entrada nms:broadLog correspondente é atualizada.
-* A tabela nms:broadLogMsg pode ser atualizada no processo se um novo tipo de erro for detectado ou para atualizar contadores de erros que não foram qualificados manualmente.
+* A tabela nms:broadLogMsg pode ser atualizada no processo se um novo tipo de erro for detectado, ou para atualizar contadores para erros que não foram qualificados manualmente.
 
 ## Correspondência de MT, SR e entradas de broadlog {#sms-matching-entries}
 
@@ -95,7 +95,7 @@ Este é um diagrama descrevendo todo o processo:
 
 **Fase 3**
 
-* O componente de reconciliação SR do processo SMS verifica periodicamente as tabelas nms:providerMsgId e nms:providerMsgStatus.
+* O componente de reconciliação SR do processo SMS verifica as tabelas nms:providerMsgId e nms:providerMsgStatus periodicamente.
 * Se qualquer linha tiver IDs de provedor correspondentes em ambas as tabelas, as 2 entradas serão unidas. Isso permite a correspondência da ID de log ampla (armazenada em providerMsgId) com o status (armazenado em providerMsgStatus)
 * O log amplo é atualizado com o status correspondente.
 

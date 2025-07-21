@@ -7,18 +7,22 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: 83524feeb6a5de32a1b32c8d66f97a32d270f62d
+source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 53%
+source-wordcount: '238'
+ht-degree: 47%
 
 ---
 
 # Introdução às REST APIs do Campaign {#get-started-apis}
 
+>[!AVAILABILITY]
+>
+>Esse recurso só está disponível sob demanda para todos os ambientes FDA do Campaign. **não** disponível para implantações do FFDA do Campaign. Para obter acesso, entre em contato com o representante da Adobe.
+
 >[!CAUTION]
 >
->Antes de executar chamadas de API, verifique as limitações de escala correspondentes ao seu contrato de licença. Para obter mais informações, consulte [esta página](https://helpx.adobe.com/br/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers).
+>Antes de executar chamadas de API, verifique as limitações de escala correspondentes ao seu contrato de licença. Para obter mais informações, consulte [esta página](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers).
 
 As APIs REST do Campaign permitem **criar integrações** com o Adobe Campaign e **criar seu próprio ecossistema**, conectando o Adobe Campaign ao painel de tecnologias que você usa.
 
@@ -39,4 +43,4 @@ As APIs que fornecemos usam **conceitos padrão** com uma interface REST e carga
 
 Todos os endpoints são descritos extensivamente nesta documentação com as noções gerais que você deve ter para manipular a API, a referência completa da API, exemplos de código e guias de início rápido. Todos os exemplos funcionam com o Postman, mas podem usar seu cliente REST favoritos.
 
-Se algo estiver incorreto ou ausente, pergunte à [comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community?profile.language=pt).
+Se algo estiver incorreto ou ausente, pergunte à [comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community).
