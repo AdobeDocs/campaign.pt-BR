@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: b24e05f152bc299ea7953856bfa71950b5cc9837
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 28%
@@ -16,8 +16,6 @@ ht-degree: 28%
 # Introdução a perfis e públicos-alvo{#gs-profiles-and-audiences}
 
 Perfis são contatos armazenados no banco de dados do Campaign, como clientes, assinantes de um serviço ou clientes potenciais. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta online via formulários web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados de PI relevantes em uma exibição consolidada para analisar e tomar decisões. Os perfis contêm todas as informações necessárias para direcionamento, qualificação e rastreamento de indivíduos.
-
-
 
 Um perfil é um registro na tabela **nmsRecipient** ou uma tabela externa que armazena todos os atributos do perfil, como nome, sobrenome, endereço de email, uma ID de cookie, ID do cliente, identificador móvel ou outras informações relevantes para um canal específico. Outras tabelas vinculadas à tabela de recipients contêm dados relacionados ao perfil, por exemplo, a tabela de logs do delivery, que contém registros de todos os deliveries enviados aos recipients. Saiba mais sobre perfis e tabelas de destinatários internos em [esta seção](../dev/datamodel.md#ootb-profiles).
 

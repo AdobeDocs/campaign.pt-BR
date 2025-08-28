@@ -5,18 +5,18 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
+version: Campaign v8, Campaign Classic v7
+source-git-commit: b24e05f152bc299ea7953856bfa71950b5cc9837
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 48%
+source-wordcount: '493'
+ht-degree: 36%
 
 ---
 
+
 # Trabalhar com públicos no Campaign{#gs-ac-audiences}
 
-Perfis são contatos armazenados no banco de dados do Campaign.
-
-No Adobe Campaign, **recipients** são os perfis padrão direcionados para envio de entregas (emails, SMS etc.). Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
+Os perfis representam os contatos armazenados no banco de dados do Adobe Campaign. Por padrão, **recipients** são os perfis primários usados ao enviar entregas, como emails, SMS ou correspondência direta. Os dados do recipient armazenados no banco de dados permitem definir e filtrar os públicos-alvo, bem como personalizar o conteúdo do delivery. Além dos recipients, existem outros tipos de perfis para fins específicos. Por exemplo, perfis iniciais permitem testar os deliveries antes que sejam enviados para o público real.
 
 Saiba como importar, atualizar e gerenciar perfis e públicos [nesta seção](../audiences/gs-audiences.md).
 
@@ -34,7 +34,7 @@ Saiba como criar e gerenciar filtros em [esta página](../audiences/create-filte
 
 ## Criar um público-alvo em um fluxo de trabalho
 
-O direcionamento pode ser criado por meio de uma combinação de queries em uma sequência gráfica em um workflow. Você pode criar públicos-alvo que serão direcionados de acordo com suas necessidades. Para exibir o editor de workflow, clique na guia **[!UICONTROL Targeting and workflows]** no painel de campanha.
+O direcionamento pode ser criado por meio de uma combinação de queries em uma sequência gráfica em um workflow. Você pode criar públicos-alvo que serão direcionados de acordo com suas necessidades. Para exibir o editor de fluxo de trabalho, clique na guia **[!UICONTROL Targeting and workflows]** no painel de campanha.
 
 Saiba como criar um público em um fluxo de trabalho de campanha na [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR){target="_blank"}.
 
