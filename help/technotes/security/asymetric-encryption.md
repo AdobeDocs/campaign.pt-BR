@@ -4,10 +4,10 @@ title: Nota técnica - Criptografia e descriptografia assimétrica no Adobe Camp
 description: Nota técnica - Criptografia e descriptografia assimétrica no Adobe Campaign
 hide: true
 hidefromtoc: true
-source-git-commit: d80d81bf8c25c467c909c9ccac7c31e6963409f0
+source-git-commit: 1d9d4111cde1e230220a04c8fd10a126116339ad
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 0%
+source-wordcount: '142'
+ht-degree: 2%
 
 ---
 
@@ -51,3 +51,7 @@ var decrypted = rsaPrivateDecrypt(
 );
 ```
 
+**Recursos adicionais**
+
+* [Introdução às [!DNL Campaign] APIs](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/api){target="_blank"}
+* [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR){target="_blank"}
