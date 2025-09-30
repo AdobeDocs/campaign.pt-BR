@@ -24,7 +24,7 @@ As APIs REST do Campaign permitem **criar integrações** com o Adobe Campaign e
 >
 >* Esse recurso só está disponível sob demanda para todos os [ambientes FDA do Campaign](../../architecture/fda-deployment.md). Ele **não** disponível para [implantações corporativas (FFDA)](../../architecture/enterprise-deployment.md). Para obter acesso, entre em contato com o representante da Adobe.
 >
->* Antes de executar chamadas de API, verifique as limitações de escala correspondentes ao seu contrato de licença. Para obter mais informações, consulte a [página Descrição do produto da campanha](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers){target="_blank"}.
+>* Antes de executar chamadas de API, verifique as limitações de escala correspondentes ao seu contrato de licença. Para obter mais informações, consulte a [página Descrição do produto da campanha](https://helpx.adobe.com/br/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers){target="_blank"}.
 
 
 Com as APIs REST do Adobe Campaign, você obtém acesso às seguintes funcionalidades:
@@ -44,4 +44,4 @@ As APIs que fornecemos usam **conceitos padrão** com uma interface REST e carga
 
 Todos os endpoints são descritos extensivamente nesta documentação com as noções gerais que você deve ter para manipular a API, a referência completa da API, exemplos de código e guias de início rápido. Todos os exemplos funcionam com o Postman, mas podem usar seu cliente REST favoritos.
 
-Se algo estiver incorreto ou ausente, pergunte à [comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community){target="_blank"}.
+Se algo estiver incorreto ou ausente, pergunte à [comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community?profile.language=pt){target="_blank"}.
