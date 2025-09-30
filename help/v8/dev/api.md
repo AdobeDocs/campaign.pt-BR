@@ -5,10 +5,10 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 1d9d4111cde1e230220a04c8fd10a126116339ad
+source-git-commit: 115b7b6824f3736e03f9fb87898f1264f9bab636
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 14%
+source-wordcount: '286'
+ht-degree: 15%
 
 ---
 
@@ -21,13 +21,12 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->* Dependendo do modelo de implantação, também é possível usar as APIs REST com o Campaign v8. [Saiba mais](../dev/api/get-started-apis.md).
+>Dependendo do modelo de implantação, também é possível usar as APIs REST com o Campaign v8. [Saiba mais](../dev/api/get-started-apis.md).
 
+Você pode usar as [APIs do Campaign JavaScript](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR){target="_blank"} para gravar no banco de dados da nuvem do Campaign ou ler a partir do banco de dados:
 
-Você pode usar as APIs do JavaScript para gravar no banco de dados na nuvem do Campaign ou ler a partir do banco de dados:
-
-* APIs específicas de negócios que permitem que você atue em cada objeto: entregas, fluxos de trabalho, assinaturas e assim por diante. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=pt-BR){target="_blank"}.
-* APIs de acesso a dados genéricos para consultar os dados do modelo de dados. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=pt-BR){target="_blank"}.
+* APIs específicas de negócios que permitem que você atue em cada objeto: entregas, fluxos de trabalho, assinaturas e assim por diante. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
+* APIs de acesso a dados genéricos para consultar os dados do modelo de dados. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}.
 
 Observe que em sua [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o Campaign funciona com dois bancos de dados: um banco de dados local para a interface de mensagens em tempo real, consultas unitárias e gravações por meio de APIs, e um banco de dados em nuvem para execução de campanha, relatórios, assimilação de dados, consultas em lote e execução de fluxo de trabalho.
 
@@ -55,3 +54,4 @@ Para usar APIs e interagir com o [!DNL Adobe Campaign], você também deve estar
 **Tópicos relacionados**
 
 * [Práticas recomendadas do modelo de dados](datamodel-best-practices.md)
+* [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR){target="_blank"}
