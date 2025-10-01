@@ -5,9 +5,9 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
+source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '793'
 ht-degree: 97%
 
 ---
@@ -174,7 +174,7 @@ ht-degree: 97%
          + [Cálculo de métricas integradas](reporting/metrics-calculation.md)
       + [Relatórios personalizados](reporting/custom-reports.md)
 + Gerenciamento de dados {#data}
-   + [Introdução a workflows](config/workflows.md)
+   + [Introdução a fluxos de trabalho](config/workflows.md)
    + [Importar dados](start/import.md)
    + [Documentação do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
 + Integrações {#connect}
@@ -215,6 +215,7 @@ ht-degree: 97%
    + Implementação {#implement}
       + [Etapas de implementação](start/implement.md)
       + [Personalizar sua instância](dev/customize.md)
+      + [Trabalhar com enumerações](dev/enumerations.md)
       + [Práticas recomendadas do modelo de dados](dev/datamodel-best-practices.md)
    + Definições e configuração {#configuration}
       + [Configurações da interface](config/ui-settings.md)
@@ -262,7 +263,7 @@ ht-degree: 97%
          + [Realizar subscrições](dev/api/perform-subscriptions.md)
          + [Exclusão de subscrições](dev/api/deleting-subscriptions.md)
       + [Gerenciamento de mensagens transacionais](dev/api/managing-transactional-messages.md)
-      + Gerenciamento de workflows {#managing-workflows}
+      + Gerenciamento de fluxos de trabalho {#managing-workflows}
          + [Controle de um fluxo de trabalho](dev/api/controlling-a-workflow.md)
          + [Acionamento de uma atividade de sinal](dev/api/triggering-a-signal-activity.md)
 + [Notas técnicas da campanha >](https://experienceleague.adobe.com/pt-br/docs/campaign/technotes-ac/technotes-home)

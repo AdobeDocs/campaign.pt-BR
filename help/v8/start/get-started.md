@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '994'
-ht-degree: 100%
+source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 96%
 
 ---
 
@@ -28,6 +28,13 @@ Use o Campaign para:
 * **Automatizar a entrega de mensagens e ofertas relevantes e oportunas**
 
 ![](assets/do-not-localize/ac-capabilities.png)
+
+
+>[!AVAILABILITY]
+>
+>Exceto quando mencionado nas páginas, a documentação do Adobe Campaign (console) se aplica ao Campaign Classic v7 e Campaign v8.
+>
+>Observe que algumas referências contidas na documentação ainda podem se referir a marcas anteriores, mas ainda se aplicam à oferta atual.
 
 ## Perfil de cliente integrado {#integrated-customer-profile}
 
@@ -53,13 +60,13 @@ O Adobe Campaign permite criar e organizar campanhas direcionadas e personalizad
 
 Saiba como projetar, agendar e executar uma campanha [nesta seção](campaigns.md).
 
-## Workflows {#wf-gsv8}
+## Fluxos de trabalho {#wf-gsv8}
 
 O Adobe Campaign oferece um ambiente gráfico abrangente que permite projetar processos complexos, incluindo segmentação, execução de campanha, processamento de arquivos etc. Você pode usar um fluxo de trabalho, por exemplo, para baixar um arquivo de um servidor, descompactá-lo e importar seus registros no banco de dados do Adobe Campaign.
 
 Um fluxo de trabalho também pode envolver usuários atribuindo tarefas ou fazendo com que eles aprovem tarefas realizadas. Isso significa que é possível atribuir uma tarefa a um ou vários usuários para trabalhar no conteúdo ou especificar alvos e aprovar provas antes de enviar a mensagem.
 
-Os workflows podem ser usados em contextos diferentes, por exemplo:
+Os fluxos de trabalho podem ser usados em contextos diferentes, por exemplo:
 
 * Direcionamento para gerenciar públicos-alvo ou enviar mensagens.
 * Gerenciamento de dados (ETL) para manipular dados.
