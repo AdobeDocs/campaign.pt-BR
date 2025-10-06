@@ -5,9 +5,9 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: ed390d5ddd817791dc4f5c2c1c621b594170a836
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '787'
 ht-degree: 97%
 
 ---
@@ -201,25 +201,25 @@ ht-degree: 97%
       + [Gerenciar permissões do usuário](start/manage-permissions.md)
       + [Adicionar permissões em pastas](start/folder-permissions.md)
    + [Painel de controle](config/self-service.md)
-+ Arquitetura e configuração {#config}
-   + Arquitetura do Campaign v8 {#architecture}
-      + [Princípios globais](architecture/general-architecture.md)
-      + [Modelos de arquitetura](architecture/architecture.md)
-      + [Implantação de FDA no Campaign](architecture/fda-deployment.md)
-      + Implantação corporativa (FFDA) {#ffda}
-         + [O que é o FFDA do Campaign?](architecture/enterprise-deployment.md)
-         + [Gerenciamento de chaves e unicidade](architecture/keys.md)
-         + [Novas APIs](architecture/new-apis.md)
-         + [Mecanismo de preparo da API](architecture/staging.md)
-         + [Mecanismo de replicação](architecture/replication.md)
++ Arquitetura {#architecture}
+   + [Princípios globais](architecture/general-architecture.md)
+   + [Modelos de arquitetura](architecture/architecture.md)
+   + [Implantação de FDA no Campaign](architecture/fda-deployment.md)
+   + Implantação corporativa (FFDA) {#ffda}
+      + [O que é o FFDA do Campaign?](architecture/enterprise-deployment.md)
+      + [Gerenciamento de chaves e unicidade](architecture/keys.md)
+      + [Novas APIs](architecture/new-apis.md)
+      + [Mecanismo de preparo da API](architecture/staging.md)
+      + [Mecanismo de replicação](architecture/replication.md)
++ Configuração {#config}
    + Implementação {#implement}
       + [Etapas de implementação](start/implement.md)
       + [Personalizar sua instância](dev/customize.md)
-      + [Trabalhar com enumerações](dev/enumerations.md)
       + [Práticas recomendadas do modelo de dados](dev/datamodel-best-practices.md)
-   + Definições e configuração {#configuration}
+   + Configurações {#settings}
       + [Configurações da interface](config/ui-settings.md)
       + [Gerenciar pastas e visualizações](audiences/folders-and-views.md)
+      + [Trabalhar com enumerações](dev/enumerations.md)
       + [Configurações de mensagens transacionais](config/transactional-msg-settings.md)
       + [Integrar os SDKs do Campaign ao seu aplicativo – PÁGINA DESCONTINUADA](config/push-config.md)
       + [Contas externas](config/external-accounts.md)
