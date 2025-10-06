@@ -5,7 +5,7 @@ feature: Query Editor
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 79cfde18cce2f9f48cbd6d77026350dec1a71536
+source-git-commit: 3a521f7006ca833af96f1ef5d5b369c2c0568635
 workflow-type: tm+mt
 source-wordcount: '3323'
 ht-degree: 98%
@@ -288,7 +288,7 @@ Existem quatro tipos de campos calculados:
 
   É possível usar o valor de origem de uma coluna e fornecer um valor de destino. Esse valor de destino será exibido na nova coluna de saída.
 
-  Há um exemplo de adição do tipo de campo calculado **[!UICONTROL Enumerations]** [nesta seção](../../workflow/using/adding-enumeration-type-calculated-field.md).
+  Há um exemplo de adição do tipo de campo calculado **[!UICONTROL Enumerations]** [nesta seção](../../automation/workflow/adding-enumeration-type-calculated-field.md).
 
   ![](assets/query_editor_nveau_63.png)
 
