@@ -5,10 +5,10 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 29%
+source-wordcount: '359'
+ht-degree: 28%
 
 ---
 
@@ -54,7 +54,7 @@ Agora você pode configurar tabelas para sincronizar.
 
 1. Clique no **[!UICONTROL Salesforce CRM configuration wizard...]**.
 1. Selecione as tabelas para sincronizar e iniciar o processo.
-1. Verifique o schema gerado no Adobe Campaign no nó **[!UICONTROL Administration > Configuration > Data schemas]**.
+1. Verifique o esquema gerado no Adobe Campaign no nó **[!UICONTROL Administration > Configuration > Data schemas]**.
 
    Exemplo de um esquema **Salesforce** importado no Campaign:
 
@@ -66,7 +66,7 @@ Após a criação do esquema, você pode sincronizar enumerações automaticamen
 
 1. Abra o assistente no link **[!UICONTROL Synchronizing enumerations...]**.
 1. Selecione a lista discriminada do Adobe Campaign que corresponde à lista discriminada do Salesforce.
-É possível substituir todos os valores de uma lista discriminada do Adobe Campaign pelos valores do CRM: para fazer isso, selecione **[!UICONTROL Yes]** na coluna **[!UICONTROL Replace]**.
+É possível substituir todos os valores de uma enumeração do Adobe Campaign pelos valores do CRM: para fazer isso, selecione **[!UICONTROL Yes]** na coluna **[!UICONTROL Replace]**.
 
    ![](assets/sfdc-enum.png)
 
@@ -79,3 +79,5 @@ O Adobe Campaign e o Salesforce.com agora estão conectados. Você pode configur
 Para sincronizar dados entre dados do Adobe Campaign e do SFDC, crie um fluxo de trabalho e use a atividade **[!UICONTROL CRM connector]**.
 
 Saiba mais sobre a sincronização de dados [nesta página](crm-data-sync.md).
+
+Saiba mais sobre o gerenciamento de enumeração no Campaign [nesta página](../dev/enumerations.md).

@@ -5,9 +5,9 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1417'
 ht-degree: 12%
 
 ---
@@ -54,7 +54,7 @@ A estrutura básica de um `<srcschema>` é a seguinte:
 </srcSchema>
 ```
 
-O documento XML de um schema de dados deve conter o **`<srcschema>`** elemento raiz com os atributos **name** e **namespace** para preencher o nome e o namespace do schema.
+O documento XML de um esquema de dados deve conter o **`<srcschema>`** elemento raiz com os atributos **name** e **namespace** para preencher o nome e o namespace do esquema.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -87,7 +87,7 @@ Com seu schema de dados correspondente:
 
 ## Descrição {#description}
 
-O ponto de entrada do schema é seu elemento principal. É fácil identificar porque ele tem o mesmo nome do schema e deve ser filho do elemento raiz. A descrição do conteúdo começa com esse elemento.
+O ponto de entrada do esquema é seu elemento principal. É fácil identificar porque ele tem o mesmo nome do esquema e deve ser filho do elemento raiz. A descrição do conteúdo começa com esse elemento.
 
 No nosso exemplo, o elemento principal é representado pela seguinte linha:
 
@@ -124,7 +124,7 @@ As seguintes regras devem ser seguidas:
 
 O tipo de dados é inserido pelo atributo **type** nos elementos **`<attribute>`** e **`<element>`**.
 
-Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=pt-BR#configuring-campaign-classic){target="_blank"}.
+Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
 Quando este atributo não é populado, **string** é o tipo de dados padrão, a menos que o elemento contenha elementos filhos. Em caso afirmativo, ele é usado apenas para estruturar os elementos hierarquicamente (**`<location>`** elemento em nosso exemplo).
 
@@ -223,6 +223,8 @@ Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <
 
 ### Enumerações {#enumerations}
 
+Use [enumerações](../dev/enumerations.md) livres, fixas ou baseadas em banco de dados para controlar valores de campo. Eles fornecem listas suspensas para entrada mais fácil, dados consistentes e design de esquema flexível.
+
 #### Lista discriminada livre {#free-enumeration}
 
 A propriedade **userEnum** permite definir uma enumeração livre para memorizar e exibir os valores inseridos por meio desse campo. A sintaxe é a seguinte:
@@ -287,7 +289,7 @@ Os valores de enumeração são declarados no elemento **`<value>`** com os segu
 
 ### Exemplo {#example}
 
-Este é o nosso exemplo de schema com as propriedades preenchidas:
+Este é o nosso exemplo de esquema com as propriedades preenchidas:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -331,7 +333,7 @@ Com projeção do conteúdo XML:
 
 ## Referência com XPath {#reference-with-xpath}
 
-A linguagem XPath é usada no Adobe Campaign para referenciar um elemento ou atributo que pertence a um schema de dados.
+A linguagem XPath é usada no Adobe Campaign para referenciar um elemento ou atributo que pertence a um esquema de dados.
 
 XPath é uma sintaxe que permite localizar um nó na árvore de um documento XML.
 

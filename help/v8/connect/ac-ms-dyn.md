@@ -5,9 +5,9 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1386'
 ht-degree: 35%
 
 ---
@@ -173,7 +173,7 @@ Agora você pode configurar tabelas para sincronizar.
 
 1. Clique no **[!UICONTROL Microsoft CRM configuration wizard...]**.
 1. Selecione as tabelas para sincronizar e iniciar o processo.
-1. Verifique o schema gerado no Adobe Campaign no nó **[!UICONTROL Administration > Configuration > Data schemas]**.
+1. Verifique o esquema gerado no Adobe Campaign no nó **[!UICONTROL Administration > Configuration > Data schemas]**.
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ Depois que o esquema for criado, você poderá sincronizar enumerações automat
 
 1. Abra o assistente no link **[!UICONTROL Synchronizing enumerations...]**.
 1. Selecione a enumeração do Adobe Campaign que corresponde à enumeração do Dynamics 365.
-É possível substituir todos os valores de uma lista discriminada do Adobe Campaign pelos valores do CRM: para fazer isso, selecione **[!UICONTROL Yes]** na coluna **[!UICONTROL Replace]**.
+É possível substituir todos os valores de uma enumeração do Adobe Campaign pelos valores do CRM: para fazer isso, selecione **[!UICONTROL Yes]** na coluna **[!UICONTROL Replace]**.
 1. Clique em **[!UICONTROL Next]** e depois em **[!UICONTROL Start]** para começar a importar as listas discriminadas.
 1. Navegue pelo nó **[!UICONTROL Administration > Platform > Enumerations]** para verificar os valores importados.
 
@@ -194,6 +194,8 @@ O Adobe Campaign e o Microsoft Dynamics 365 agora estão conectados. Você pode 
 Para sincronizar dados entre o Adobe Campaign e o Microsoft CRM, crie um fluxo de trabalho e use a atividade **[!UICONTROL CRM connector]**.
 
 Saiba mais sobre a sincronização de dados [nesta página](crm-data-sync.md).
+
+Saiba mais sobre o gerenciamento de enumeração no Campaign [nesta página](../dev/enumerations.md).
 
 ### Tipos de dados de campo compatíveis {#ms-dyn-supported-types}
 
@@ -205,7 +207,7 @@ Os tipos de atributos suportados/não suportados do Microsoft Dynamics 365 estã
 | Tipos básicos: booleano, datetime, decimal, float, double, integer, bigint , string | Sim |
 | Dinheiro (como duplo) | Sim |
 | memo, entityname, primarykey, uniqueidentifier (como strings) | Sim |
-| Status, lista de opções (armazenamos os valores possíveis na lista discriminada), estado (string) | Sim |
+| Status, lista de opções (armazenamos os valores possíveis nas enumerações), estado (string) | Sim |
 | proprietário (como string) | Sim |
 | Pesquisa (somente pesquisas de referência de entidade única) | Sim |
 | cliente | Não |

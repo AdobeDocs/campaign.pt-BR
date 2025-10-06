@@ -5,14 +5,14 @@ feature: Configuration, Application Settings
 role: Developer
 version: Campaign v8, Campaign Classic v7
 level: Intermediate, Experienced
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 51%
+source-wordcount: '827'
+ht-degree: 27%
 
 ---
 
-# Gerenciar enumerações {#manage-enumerations}
+# Trabalhar com enumerações {#enumerations}
 
 Uma enumeração (também chamada de lista discriminada) é uma lista predefinida de valores que você pode usar para preencher determinados campos. Enumerações ajudam a padronizar valores de campo, tornando a entrada de dados mais consistente e simplificando consultas.
 
@@ -22,101 +22,97 @@ Quando disponíveis, os valores são exibidos em uma lista suspensa. Você pode 
 
 Alguns campos do console são configurados com enumerações. Se uma enumeração estiver **aberta**, você também poderá adicionar novos valores diretamente no campo.
 
-## Listas discriminadas de acesso
+![Enumerações de acesso](assets/enumerations-menu.png)
 
-Os valores usados nesses campos são gerenciados centralmente. Você pode adicioná-los, editá-los, atualizá-los ou excluí-los da árvore do Explorer em **Administração** `>` **Plataforma** `>` **Enumerações**.
+## Tipos de enumerações {#types-of-enum}
 
-* A seção superior oferece uma lista de campos para os quais uma enumeração foi definida.
-* A seção inferior lista os valores disponíveis.
+Enumerações são armazenadas na pasta **[!UICONTROL Administration > Platform > Enumerations]** do explorador.
 
-Quando uma enumeração é **[!UICONTROL Open]**, os usuários podem inserir um novo valor diretamente no campo correspondente na interface do usuário.
+Eles podem ser: Aberto, Sistema, Emoticon ou Fechado.
 
-Quando uma enumeração é **[!UICONTROL Closed]**, novos valores só podem ser adicionados do menu **Enumeration**.
+* Uma lista discriminada **Aberta** permite que os usuários adicionem novos valores diretamente nos campos com base nessa lista discriminada.
+* Uma enumeração **Closed** tem uma lista fixa de valores que só podem ser modificados na pasta **[!UICONTROL Administration > Platform > Enumerations]** do explorador.
+* Uma lista discriminada **Emoticon** é usada para atualizar a lista de emoticons. Saiba mais
+* Uma enumeração **System** está associada a campos do sistema e vem com um nome Interno.
 
-## Adicionar um novo valor
+Para as enumerações **Abertas** e **Fechadas**, opções específicas estão disponíveis:
 
-Para criar um novo valor de enumeração, clique no botão **[!UICONTROL Add]**.
-
-![](assets/enumeration_screen.png)
-
-Insira o rótulo do valor.
+* **Enumeração simples** é o tipo padrão padrão.
+* A enumeração **Limpeza de alias** é usada para harmonizar os valores de enumeração armazenados no banco de dados. [Saiba mais](#alias-cleansing)
+* **Reservado para compartimentalização** é uma opção que permite vincular valores de cubo a esta enumeração. [Saiba mais](../reporting/gs-cubes.md)
 
 
 ## Limpeza de alias {#alias-cleansing}
 
-Nos campos de enumeração, é possível inserir valores diferentes dos valores de enumeração. Eles podem ser armazenados como são ou serem limpos.
+Nos campos de enumeração, é possível selecionar um valor ou inserir um valor personalizado que não está disponível na lista suspensa. Valores personalizados podem ser adicionados aos valores de enumerações existentes, como um novo; nesse caso, a opção **[!UICONTROL Open]** deve ser selecionada. Esses valores personalizados podem ser limpos usando recursos de limpeza de alias. Por exemplo, se um usuário inserir `Adob` em vez de `Adobe`, o processo de limpeza de alias poderá substituí-lo automaticamente pelo termo correto.
 
 >[!CAUTION]
 >
 >Limpeza de dados é um processo crítico que afeta os dados no banco de dados. O Adobe Campaign realiza atualizações de dados em massa, que podem levar à exclusão de alguns valores. Portanto, essa operação é reservada para usuários especialistas.
 
-O valor inserido é então:
+Habilite a opção **[!UICONTROL Alias cleansing]** para usar recursos de limpeza de dados para uma enumeração. Quando essa opção é selecionada, a guia **[!UICONTROL Alias]** é exibida na parte inferior da janela.
 
-* Adicionado aos valores da lista discriminada: nesse caso, a opção **[!UICONTROL Open]** deve ser selecionada,
-* ou automaticamente substituído pelo seu alias correspondente: nesse caso, este caso deve ser definido na guia **[!UICONTROL Alias]** da lista discriminada,
-* ou armazenado na lista de aliases: um alias será atribuído a ele posteriormente.
+Quando um usuário insere um valor que não existe em uma lista discriminada Alias cleansing, ele é adicionado à lista **Valores**. Você pode [criar aliases desses valores](#convert-to-alias) ou [criar novos aliases do zero](#create-alias).
 
-### Criar um alias {#creating-an-alias}
-
-A opção **[!UICONTROL Alias cleansing]** possibilita o uso de aliases para a lista discriminada selecionada. Quando essa opção é selecionada, a guia **[!UICONTROL Alias]** é exibida na parte inferior da janela.
+### Criar um alias{#create-alias}
 
 Para criar um alias, siga estas etapas:
 
-1. Navegue até a lista discriminada para atualizar o ant e clique em **[!UICONTROL Add]**.
+1. Clique no botão **[!UICONTROL Add]** da guia **[!UICONTROL Alias]**.
+1. Insira o alias que você deseja converter e selecione o valor a ser aplicado na lista suspensa.
 
-   ![](assets/enumeration_alias_create.png)
+   ![Criar um novo alias](assets/new-alias.png)
 
-1. Insira o alias que você deseja converter e o valor a ser aplicado e clique em **[!UICONTROL Ok]**.
+1. Clique em **[!UICONTROL Ok]** e confirme.
 
-1. Verifique os parâmetros antes de confirmar essa operação.
+1. Salve as alterações. A substituição de valores é executada pelo fluxo de trabalho **Limpeza de alias**, que é executado todas as noites. Consulte [Executar limpeza de dados](#running-data-cleansing).
 
->[!CAUTION]
->
->Depois que essa etapa for confirmada, os valores anteriores talvez não sejam recuperados: eles são substituídos.
+Para todos os campos baseados nesta enumeração, quando um usuário insere o valor **Adobe** em um campo &quot;empresa&quot; (no Console do Cliente do Adobe Campaign, em um formulário web), ele é substituído automaticamente pelo valor **Adobe**.
 
-Assim, quando um usuário insere o valor **NEILSEN** em um campo &quot;company&quot; (no console do Adobe Campaign ou em um formulário), ele é automaticamente substituído pelo valor **NIELSEN Ltd**. O valor é substituído pelo fluxo de trabalho **Limpeza de alias**. Consulte [Executar limpeza de dados](#running-data-cleansing).
+### Converter um valor incorreto em um alias{#convert-to-alias}
 
-![](assets/enumeration_alias_use.png)
+Você também pode converter um valor de enumeração existente em um alias. Para fazer isso:
 
-### Converter valores em aliases {#values-into-aliases}
+1. Na lista de valores de uma enumeração, clique com o botão direito do mouse e procure **[!UICONTROL Actions... > Convert values into aliases...]**.
 
-Você pode converter valores existentes em aliases. Para fazer isso, siga estas etapas:
+   ![Converter um valor em um alias](assets/convert-into-aliases.png)
 
-1. Clique com o botão direito na lista de valores e escolha **[!UICONTROL Convert values into aliases...]**.
-
-1. Escolha os valores para converter e clique em **[!UICONTROL Next]**.
-
+1. Selecione os valores a serem convertidos em aliases e clique em **[!UICONTROL Next]**.
 1. Clique em **[!UICONTROL Start]** para executar a conversão.
 
-Quando a execução for concluída, o alias será adicionado à lista de aliases.
+   Quando a execução for concluída, os aliases serão adicionados à lista, na guia **Alias**. Você pode associar um valor correto para substituir entradas incorretas. Para fazer isso:
 
-### Recuperar ocorrências de alias {#alias-hits}
+1. Selecione um valor a ser limpo.
+1. Clique no botão **Detail...**.
+1. Selecione o novo valor na lista suspensa.
 
-Quando os usuários inserem valores que não estão incluídos na enumeração, eles são armazenados na guia **[!UICONTROL Alias]**.
+   ![Criar um novo alias](assets/define-new-alias.png)
 
-O fluxo de trabalho técnico **Limpeza de alias** recupera esses valores todas as noites para atualizar a enumeração. Consulte [Executar limpeza de dados](#running-data-cleansing)
 
-Se necessário, a coluna **[!UICONTROL Hits]** pode exibir o número de vezes que esse valor foi inserido. No entanto, o cálculo desse valor pode demorar e consumir memória. Para obter mais informações, consulte [Calcular ocorrências de entrada](#calculating-entry-occurrences).
+>[!NOTE]
+>
+>Você pode rastrear as ocorrências de um alias na coluna **[!UICONTROL Hits]** na subguia **[!UICONTROL Alias]**. Ele pode exibir o número de vezes que esse valor foi inserido.  [Saiba mais](#calculate-entry-occurrences).
 
-### Executar limpeza de dados {#run-data-cleansing}
+### Executar limpeza de dados {#running-data-cleansing}
 
-A limpeza de dados é realizada pelo fluxo de trabalho técnico **[!UICONTROL Alias cleansing]**. As configurações definidas para enumerações são aplicadas durante a execução. Consulte [Fluxo de trabalho de limpeza de alias](#alias-cleansing-workflow).
+A limpeza de dados é realizada pelo fluxo de trabalho técnico **[!UICONTROL Alias cleansing]**. É executado diariamente por padrão.
 
-A limpeza pode ser acionada por meio do link **[!UICONTROL Cleanse values...]**.
+A limpeza também pode ser acionada por meio do link **[!UICONTROL Cleanse values...]**.
 
 O link **[!UICONTROL Advanced parameters...]** permite definir a data a partir da qual os valores coletados são considerados.
 
 Clique no botão **[!UICONTROL Start]** para executar a limpeza de dados.
 
-### Calcular ocorrências de entrada {#entry-occurrences}
+### Monitorar ocorrências {#calculate-entry-occurrences}
 
-A subguia **[!UICONTROL Alias]** de uma lista discriminada pode exibir o número de ocorrências de um alias entre todos os valores inseridos. Essas informações são uma estimativa e serão exibidas na coluna **[!UICONTROL Hits]**.
+A subguia **[!UICONTROL Alias]** de uma enumeração pode exibir o número de ocorrências de um alias entre todos os valores inseridos. Essas informações são uma estimativa e serão exibidas na coluna **[!UICONTROL Hits]**.
 
 >[!CAUTION]
 >
->O cálculo das ocorrências de entrada de alias pode demorar muito. É por isso que o usuário deve ter cuidado ao usar essa função.
+>O cálculo das ocorrências de entrada de alias pode demorar muito.
+>
 
-Você pode executar o cálculo de ocorrências manualmente pelo link **[!UICONTROL Cleanse values...]**. Para fazer isso, clique no link **[!UICONTROL Advanced parameters...]** e selecione as opções desejadas.
+Você pode executar o cálculo de ocorrências manualmente pelo link **[!UICONTROL Cleanse values...]**. Para fazer isso, clique no link **[!UICONTROL Advanced parameters...]** e selecione a(s) opção(ões).
 
 * **[!UICONTROL Update the number of alias hits]**: permite atualizar as ocorrências já calculadas, com base na data inserida.
 * **[!UICONTROL Recalculate the number of alias hits from the start]**: permite que você execute o cálculo em toda a plataforma do Adobe Campaign.
@@ -127,11 +123,3 @@ Para fazer isso, crie uma cópia do fluxo de trabalho **[!UICONTROL Alias cleans
 
 * **-updateHits** para atualizar o número de ocorrências de alias,
 * **-updateHits:full** para recalcular todas as ocorrências de alias.
-
-### Fluxo de trabalho de limpeza de alias {#alias-cleansing-workflow}
-
-O fluxo de trabalho **Limpeza de alias** executa a limpeza do valor de enumerações. É executado diariamente por padrão.
-
-É acessado pelo nó **[!UICONTROL Administration > Production > Technical workflows]**.
-
-

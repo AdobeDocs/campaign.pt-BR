@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 72%
+source-wordcount: '1121'
+ht-degree: 74%
 
 ---
 
@@ -189,25 +189,7 @@ As principais diferenças entre inglês americano e inglês do Reino Unido são:
 </table>
 
 
+## Recursos adicionais
 
-## Unidades padrão {#default-units}
-
-Nos campos que expressam uma duração (por exemplo, período de validade dos recursos de uma entrega, prazo de aprovação para uma tarefa, etc.), o valor pode ser expresso nas seguintes **unidades**:
-
-* **[!UICONTROL s]** para segundos,
-* **[!UICONTROL mn]** para minutos,
-* **[!UICONTROL h]** para horas,
-* **[!UICONTROL d]** para dias.
-
-
-## Enumeração {#enumeration}
-
-Usando os campos de entrada com uma lista suspensa, você pode inserir um valor de enumeração, que pode ser armazenado e proposto como uma opção na lista.
-
-Por exemplo, no campo **[!UICONTROL City]** da guia **[!UICONTROL General]** de um perfil de destinatário, você pode inserir Londres. Ao pressionar Enter para confirmar esse valor, uma mensagem pergunta se você deseja salvar esse valor para a enumeração associada ao campo.  Se você clicar em **[!UICONTROL Yes]**, esse valor estará disponível na lista suspensa do campo relevante.
-
-As enumerações (também conhecidas como &quot;listas detalhadas&quot;) são gerenciadas pelo administrador através da seção **[!UICONTROL Administration > Platform > Enumerations]**.
-
-Saiba como [Trabalhar com enumerações](../dev/enumerations.md)
-
-Saiba mais sobre [Enumerações em esquemas](../dev/schema-structure.md#enumerations)
+* **[Trabalhar com Listas discriminadas](../dev/enumerations.md)** - Padronizar valores de campo com listas suspensas predefinidas para uma entrada de dados mais rápida e consistente.
+* **[Enumerações em esquemas](../dev/schema-structure.md#enumerations)** - Como desenvolvedor do Campaign, use enumerações livres, fixas ou baseadas em banco de dados em seus esquemas para controlar valores de campo.
