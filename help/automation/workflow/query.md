@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Consulta
-description: Saiba mais sobre a atividade do workflow de query
+description: Saiba mais sobre a atividade do fluxo de trabalho Consulta
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 96%
+source-wordcount: '1603'
+ht-degree: 93%
 
 ---
 
@@ -20,22 +20,19 @@ ht-degree: 96%
 ## Criar uma consulta {#creating-a-query}
 
 Uma consulta permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado do query e inserir dados adicionais nele.
-Para obter mais informações sobre amostras de query, consulte [esta seção](querying-recipient-table.md).
-
->[!NOTE]
->
->A Interface do usuário da Web do Adobe Campaign apresenta um poderoso modelador de consultas que simplifica o processo de filtragem de bancos de dados para selecionar destinos específicos com base em vários critérios, permitindo que você crie e gerencie sua consulta com mais facilidade. Para saber mais sobre o modelador de consultas para a interface do Web, consulte a [documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
-
+Saiba como criar consultas por meio de casos de uso em [esta seção](querying-recipient-table.md). Consulte também a seção sobre o [Editor de consultas](../../v8/start/query-editor.md).
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
-Para mais informações sobre como usar e gerenciar dados adicionais, consulte [Adicionar dados](#adding-data).
+>[!NOTE]
+>
+>A interface de usuário da Web do Adobe Campaign apresenta um poderoso modelador de consultas que simplifica o processo de filtragem de bancos de dados para selecionar destinos específicos com base em vários critérios, permitindo que você crie e gerencie sua consulta com mais facilidade. Para saber mais sobre o modelador de consultas para a interface do Web, consulte a [documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
 
 O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, as restrições e os critérios de seleção da população da seguinte maneira:
 
-1. Selecione a targeting dimension e a dimensão de filtro. Por padrão, o target é selecionado dos destinatários. A lista de filtros de restrição é igual àquelas usadas para o target de entrega.
+1. Selecione a dimensão de direcionamento e filtro. Por padrão, o target é selecionado dos destinatários. A lista de filtros de restrição é igual àquelas usadas para o direcionamento de entrega.
 
-   O targeting dimension coincide com o tipo de elemento que iremos trabalhar, por exemplo, a população de destino da operação.
+   A dimensão de direcionamento coincide com o tipo de elemento que iremos trabalhar, por exemplo, a população de destino da operação.
 
    A dimensão do filtro permite coletar esses elementos, por exemplo, informações relacionadas à pessoa alvo (contratos, liquidações completas e finais etc.).
 
@@ -43,7 +40,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
    ![](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
 
-   Um query pode ser baseado em dados a partir da transição de entrada, se necessário, selecionando **[!UICONTROL Temporary schema]** ao escolher o targeting e a dimensão de filtro.
+   Um query pode ser baseado em dados a partir da transição de entrada, se necessário, selecionando **[!UICONTROL Temporary schema]** ao escolher as dimensões de direcionamento e de filtro.
 
    ![](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
 
@@ -53,7 +50,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
 1. Se você selecionou **[!UICONTROL Filtering conditions]** na etapa 1 ou usou a opção **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**, será necessário adicionar manualmente os critérios de filtragem posteriormente.
 
-   Você também pode adicionar condições de agrupamento de dados marcando a caixa correspondente. Para fazer isso, a dimensão de filtro deve ser diferente do targeting dimension do query. Para obter mais informações sobre agrupamento, consulte esta [seção](query-grouping-management.md).
+   Você também pode adicionar condições de agrupamento de dados marcando a caixa correspondente. Para fazer isso, a dimensão de filtro deve ser diferente da dimensão de direcionamento do query. Para obter mais informações sobre agrupamento, consulte esta [seção](query-grouping-management.md).
 
    Você também pode adicionar mais critérios usando o Construtor de Expressões e combinando com as opções lógicas AND, OR e EXCEPT.
 
@@ -124,7 +121,7 @@ Para adicionar uma coleção de informações vinculadas a uma população direc
 
 ## Exemplo: direcionamento em atributos de destinatários simples {#example--targeting-on-simple-recipient-attributes}
 
-No exemplo a seguir, o query busca identificar homens que moram na França com idades entre 18 e 30. Este query será usado em um workflow que visa fazer uma oferta exclusiva, por exemplo.
+No exemplo a seguir, o query busca identificar homens que moram na França com idades entre 18 e 30. Este query será usado em um fluxo de trabalho que visa fazer uma oferta exclusiva, por exemplo.
 
 >[!NOTE]
 >
@@ -150,19 +147,19 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
    ![](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
 
 1. Salve os filtros para usá-los posteriormente clicando em **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
-1. Continue editando seu workflow adicionando outras atividades a ele. Depois de iniciado e após o término da etapa de query anterior, o número de destinatários encontrados será exibido. Você pode exibir mais detalhes usando o menu pop-up do mouse (clique com o botão direito do mouse na transição > **[!UICONTROL Display the target...]**).
+1. Continue editando seu fluxo de trabalho adicionando outras atividades a ele. Depois de iniciado e após o término da etapa de query anterior, o número de destinatários encontrados será exibido. Você pode exibir mais detalhes usando o menu pop-up do mouse (clique com o botão direito do mouse na transição > **[!UICONTROL Display the target...]**).
 
    ![](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
 
 ## Parâmetros de saída {#output-parameters}
 
 * tableName
-* schema
+* esquema
 * recCount
 
-Esse conjunto de três valores identifica a população de destino do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema da população (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica a população de destino do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de destino, **[!UICONTROL schema]** é o esquema da população (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
-Este valor é o schema da tabela de trabalho. Esse parâmetro é válido para todas as transições com **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
+Este valor é o esquema da tabela de trabalho. Esse parâmetro é válido para todas as transições com **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
 
 ## Otimização das queries {#optimizing-queries}
 

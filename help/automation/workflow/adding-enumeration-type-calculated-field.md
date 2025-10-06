@@ -1,25 +1,25 @@
 ---
 product: campaign
-title: Adicionar um campo calculado do tipo lista discriminada
-description: Saiba como adicionar um campo calculado do tipo lista discriminada
+title: Adicionar um campo calculado do tipo Enumeração
+description: Aprenda a adicionar um campo calculado do tipo Enumeração
 feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 100%
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
-# Adicionar um campo calculado do tipo lista discriminada {#adding-an-enumeration-type-calculated-field}
+# Adicionar um campo calculado do tipo Enumeração {#adding-an-enumeration-type-calculated-field}
 
 Aqui queremos criar uma consulta com um campo calculado do tipo **[!UICONTROL Enumerations]**. Este campo gerará uma coluna adicional na janela de visualização de dados. Essa coluna especificará os valores numéricos retornados como resultado para cada destinatário (0, 1 e 2). Um gênero será atribuído a cada valor na nova coluna: &quot;Male&quot; para &quot;1&quot;, &quot;Female&quot; para &quot;2&quot; ou &quot;Not indicated&quot; se o valor for igual a &quot;0&quot;.
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de destinatário (nms:recipient)
+  A tabela de destinatários (nms:recipient)
 
 * Campos a serem selecionados na coluna de saída?
 
@@ -31,7 +31,7 @@ Aqui queremos criar uma consulta com um campo calculado do tipo **[!UICONTROL En
 
 Siga as etapas abaixo:
 
-1. Abra o editor de query genérico e selecione a tabela Destinatário (**[!UICONTROL nms:recipient]**).
+1. Abra o [editor de consulta genérico](../../v8/start/query-editor.md) e selecione a tabela Recipient (**[!UICONTROL nms:recipient]**).
 1. Na janela **[!UICONTROL Data to extract]**, selecione **[!UICONTROL Last name]**, **[!UICONTROL First name]** e **[!UICONTROL Gender]**.
 
    ![](assets/query_editor_nveau_73.png)

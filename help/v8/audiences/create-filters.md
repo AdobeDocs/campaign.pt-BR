@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
 source-wordcount: '1607'
 ht-degree: 35%
@@ -15,7 +15,7 @@ ht-degree: 35%
 
 # Criar e gerenciar filtros{#create-filters}
 
-A filtragem de dados é o processo de selecionar uma parte menor do conjunto de dados, que contenha somente registros correspondentes a determinados critérios, e usá-la para realizar ações específicas (atualizações, criação de públicos-alvo) ou a análise.
+A filtragem de dados é o processo de selecionar uma parte menor do conjunto de dados, que contenha somente registros correspondentes a determinados critérios, e usar esse subconjunto para realizar ações específicas (atualizações, criação de públicos-alvo) ou a análise.
 
 Ao navegar pelo Campaign a partir de **[!UICONTROL Explorer]**, os dados são exibidos em listas. Você pode usar filtros incorporados existentes para acessar um subconjunto específico desses dados: endereços em quarentena, destinatários não direcionados, um intervalo de idade específico ou data de criação, por exemplo.
 
@@ -52,7 +52,7 @@ Use a última guia para visualizar os dados filtrados.
 ![](assets/built-in-filter-preview.png)
 
 
-Os filtros predefinidos incorporados são:
++++  Filtros predefinidos embutidos
 
 <table> 
  <tbody> 
@@ -159,6 +159,7 @@ Os filtros predefinidos incorporados são:
  </tbody> 
 </table>
 
++++
 
 ### Filtros padrão{#default-filters}
 
@@ -328,9 +329,9 @@ Para executar recursos avançados de filtragem, use funções para definir o con
 
 Saiba como criar consultas avançadas nestes exemplos completos:
 
-* Saiba como segmentar em atributos de destinatários simples [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=pt-BR){target="_blank"}.
-* Saiba como filtrar destinatários não contatados nos últimos 7 dias nesta [página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=pt-BR){target="_blank"}.
-* Saiba como recuperar a lista de operadores que podem ser filtrados por Contas ativas em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=pt-BR){target="_blank"}.
+* Saiba como segmentar em atributos de destinatários simples [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+* Saiba como filtrar destinatários não contatados nos últimos 7 dias nesta [página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}.
+* Saiba como recuperar a lista de operadores que podem ser filtrados por Contas ativas em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
 * Saiba como criar um público-alvo de email de aniversário na [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR){target="_blank"}.
 
 
@@ -353,3 +354,6 @@ Parâmetros avançados estão disponíveis para filtros predefinidos. Para acess
 
    * Você pode associar uma tabela SQL ao filtro para torná-la comum a todos os editores que a compartilham.
    * Para impedir que qualquer usuário substitua o filtro, selecione a opção **[!UICONTROL Do not restrict the filter]**. Por exemplo, essa opção está ativa para os filtros &quot;Destinatários de um delivery&quot; e &quot;Destinatários de deliveries pertencentes a uma pasta&quot; que estão disponíveis no assistente de delivery. Esses filtros não podem ser sobrecarregados.
+
+
+### Operadores
