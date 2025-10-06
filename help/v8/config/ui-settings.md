@@ -5,7 +5,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 47%
@@ -160,4 +160,4 @@ Você também pode configurar a classificação ou combinar critérios de classi
 ## Recursos adicionais
 
 * **[Comece com a interface do usuário do Campaign](../start/campaign-ui.md)** - Descubra como acessar e navegar pela interface do Adobe Campaign.
-* **[Trabalhar com Listas discriminadas](../dev/enumerations.md)** - Padronizar valores de campo com listas suspensas predefinidas para uma entrada de dados mais rápida e consistente.
+* **[Trabalhar com Listas discriminadas](../config/enumerations.md)** - Padronizar valores de campo com listas suspensas predefinidas para uma entrada de dados mais rápida e consistente.

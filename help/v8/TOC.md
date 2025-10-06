@@ -5,7 +5,7 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: ed390d5ddd817791dc4f5c2c1c621b594170a836
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 97%
@@ -219,7 +219,7 @@ ht-degree: 97%
    + Configurações {#settings}
       + [Configurações da interface](config/ui-settings.md)
       + [Gerenciar pastas e visualizações](audiences/folders-and-views.md)
-      + [Trabalhar com enumerações](dev/enumerations.md)
+      + [Trabalhar com enumerações](config/enumerations.md)
       + [Configurações de mensagens transacionais](config/transactional-msg-settings.md)
       + [Integrar os SDKs do Campaign ao seu aplicativo – PÁGINA DESCONTINUADA](config/push-config.md)
       + [Contas externas](config/external-accounts.md)

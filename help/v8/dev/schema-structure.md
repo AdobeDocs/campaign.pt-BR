@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1417'
 ht-degree: 12%
@@ -124,7 +124,7 @@ As seguintes regras devem ser seguidas:
 
 O tipo de dados é inserido pelo atributo **type** nos elementos **`<attribute>`** e **`<element>`**.
 
-Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=pt-BR#configuring-campaign-classic){target="_blank"}.
+Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
 Quando este atributo não é populado, **string** é o tipo de dados padrão, a menos que o elemento contenha elementos filhos. Em caso afirmativo, ele é usado apenas para estruturar os elementos hierarquicamente (**`<location>`** elemento em nosso exemplo).
 
@@ -223,7 +223,7 @@ Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <
 
 ### Enumerações {#enumerations}
 
-Use [enumerações](../dev/enumerations.md) livres, fixas ou baseadas em banco de dados para controlar valores de campo. Eles fornecem listas suspensas para entrada mais fácil, dados consistentes e design de esquema flexível.
+Use [enumerações](../config/enumerations.md) livres, fixas ou baseadas em banco de dados para controlar valores de campo. Eles fornecem listas suspensas para entrada mais fácil, dados consistentes e design de esquema flexível.
 
 #### Lista discriminada livre {#free-enumeration}
 
