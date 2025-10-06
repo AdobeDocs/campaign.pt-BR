@@ -5,10 +5,10 @@ feature: Configuration, Application Settings
 role: Developer
 version: Campaign v8, Campaign Classic v7
 level: Intermediate, Experienced
-source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
+source-git-commit: a1f479538a2d93a2ec13e35cb6813e09c8c4a5f8
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 27%
+source-wordcount: '797'
+ht-degree: 24%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 27%
 
 Uma enumeração (também chamada de lista discriminada) é uma lista predefinida de valores que você pode usar para preencher determinados campos. Enumerações ajudam a padronizar valores de campo, tornando a entrada de dados mais consistente e simplificando consultas.
 
-Quando disponíveis, os valores são exibidos em uma lista suspensa. Você pode selecionar um valor diretamente ou começar a digitar — a entrada preditiva sugere valores correspondentes e os completa automaticamente.
+Quando definidos, os valores são exibidos em uma lista suspensa. Um valor pode ser selecionado diretamente ou inserido usando a entrada preditiva, que sugere e conclui entradas correspondentes. Alguns campos incluem enumerações predefinidas e enumerações adicionais podem ser criadas, se necessário.
 
 ![](assets/enum_values.png)
 
-Alguns campos do console são configurados com enumerações. Se uma enumeração estiver **aberta**, você também poderá adicionar novos valores diretamente no campo.
-
-![Enumerações de acesso](../config/assets/enumerations-menu.png)
 
 ## Tipos de enumerações {#types-of-enum}
 
 Enumerações são armazenadas na pasta **[!UICONTROL Administration > Platform > Enumerations]** do explorador.
 
-Eles podem ser: Aberto, Sistema, Emoticon ou Fechado.
+![Enumerações de acesso](../config/assets/enumerations-menu.png)
+
+
+Uma enumeração pode ser: **Aberta**, **Sistema**, **Emoticon** ou **Fechada**.
 
 * Uma lista discriminada **Aberta** permite que os usuários adicionem novos valores diretamente nos campos com base nessa lista discriminada.
 * Uma enumeração **Closed** tem uma lista fixa de valores que só podem ser modificados na pasta **[!UICONTROL Administration > Platform > Enumerations]** do explorador.
@@ -44,11 +44,12 @@ Para as enumerações **Abertas** e **Fechadas**, opções específicas estão d
 
 ## Limpeza de alias {#alias-cleansing}
 
-Nos campos de enumeração, é possível selecionar um valor ou inserir um valor personalizado que não está disponível na lista suspensa. Valores personalizados podem ser adicionados aos valores de enumerações existentes, como um novo; nesse caso, a opção **[!UICONTROL Open]** deve ser selecionada. Esses valores personalizados podem ser limpos usando recursos de limpeza de alias. Por exemplo, se um usuário inserir `Adob` em vez de `Adobe`, o processo de limpeza de alias poderá substituí-lo automaticamente pelo termo correto.
+Em campos de enumeração, um valor pode ser selecionado na lista suspensa ou inserido manualmente se não estiver disponível na lista. Valores personalizados podem ser adicionados à enumeração quando a opção **[!UICONTROL Open]** está habilitada. Esses valores podem ser padronizados posteriormente por meio da limpeza de alias, que substitui automaticamente as variações pelo termo correto (por exemplo, converter `Adob` em `Adobe`).
+
 
 >[!CAUTION]
 >
->Limpeza de dados é um processo crítico que afeta os dados no banco de dados. O Adobe Campaign realiza atualizações de dados em massa, que podem levar à exclusão de alguns valores. Portanto, essa operação é reservada para usuários especialistas.
+>A limpeza de dados é uma operação crítica que afeta os valores do banco de dados. O Adobe Campaign realiza atualizações de dados em massa, que podem resultar na exclusão de determinados valores. Esta operação destina-se somente a usuários especializados.
 
 Habilite a opção **[!UICONTROL Alias cleansing]** para usar recursos de limpeza de dados para uma enumeração. Quando essa opção é selecionada, a guia **[!UICONTROL Alias]** é exibida na parte inferior da janela.
 
