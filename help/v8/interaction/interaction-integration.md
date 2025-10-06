@@ -5,10 +5,10 @@ description: Saiba como adicionar uma oferta em uma página da Web
 feature: Interaction, Offers
 role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 68%
+source-wordcount: '1454'
+ht-degree: 63%
 
 ---
 
@@ -175,7 +175,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
    Esse esquema definirá os seguintes campos: Title number 2 e price.
 
-   O nome do schema no exemplo é **cus:offer**.
+   O nome do esquema no exemplo é **cus:offer**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -206,7 +206,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
    >
    >Não esqueça de atualizar a estrutura do banco de dados.
 
-   Você pode estender o schema de ofertas para adicionar novos campos em modo de lote e unitário e em qualquer formato (texto, HTML e XML).
+   Você pode estender o esquema de ofertas para adicionar novos campos em modo de lote e unitário e em qualquer formato (texto, HTML e XML).
 
 1. **Estender a fórmula de oferta para editar novos campos e modificar um campo existente**
 
@@ -318,11 +318,11 @@ Os serviços da Web SOAP fornecidos para o gerenciamento de ofertas são diferen
 
 ### Apresentação da oferta {#offer-proposition}
 
-Para uma apresentação de oferta via SOAP, adicione o comando **nms:proposta#Propose** seguido pelos seguintes parâmetros:
+Para uma apresentação de oferta via SOAP, adicione o comando **nms:proposition#Propose** seguido dos seguintes parâmetros:
 
 * **targetId**: chave primária do destinatário (pode ser uma chave composta).
 * **maxCount**: especifica o número de apresentações de oferta para o contato.
-* **contexto**: permite adicionar informações de contexto no schema de espaço. Se o schema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
+* **contexto**: permite adicionar informações de contexto no esquema de espaço. Se o esquema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
 * **categories**: especifica a(s) categoria(s) que as ofertas devem pertencer.
 * **themes**: especifica o(s) tema(s) aos quais a(s) oferta(s) deve pertencer.
 * **uuid**: valor do cookie permanente do Adobe Campaign (&quot;uuid230&quot;).
@@ -340,11 +340,11 @@ Em resposta à query, o serviço SOAP retorna os seguintes parâmetros:
 
 ### Atualização da oferta {#offer-update}
 
-Adicione o comando **nms:interação#UpdateStatus** à URL, seguido desses parâmetros:
+Adicione o comando **nms:interaction#UpdateStatus** à URL, seguido destes parâmetros:
 
 * **proposition**: string de caracteres, contém o ID de proposta fornecida como uma saída durante uma apresentação de oferta. Consulte [Apresentação da oferta](#offer-proposition).
-* **status**: tipo string, ele especifica o novo status da oferta. Os valores possíveis são listados na enumeração **propositionStatus** , no schema **nms:common.** Por exemplo, inicialmente, o número 3 corresponde ao status **Accepted**.
-* **context**: o elemento XML permite adicionar informações de contexto no schema de espaço. Se o schema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
+* **status**: tipo string, ele especifica o novo status da oferta. Os valores possíveis estão listados na **propositionStatus** [enumeration](../config/enumerations.md), no esquema **nms:common**. Por exemplo, inicialmente, o número 3 corresponde ao status **Accepted**.
+* **context**: o elemento XML permite adicionar informações de contexto no esquema de espaço. Se o esquema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
 
 ### Exemplo usando uma chamada SOAP {#example-using-a-soap-call}
 

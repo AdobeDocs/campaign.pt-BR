@@ -6,10 +6,10 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '1438'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -22,14 +22,14 @@ Use compartimentalização de dados para simplificar a exibição de dados agrup
 Em geral, três tipos de compartimentalização estão disponíveis:
 
 1. Uso de intervalos de valor definidos manualmente. Por exemplo, a idade, o carrinho de compras médio, o número de entregas abertos, etc.). Para obter mais informações, consulte [Definição de cada compartimento](#defining-each-bin).
-1. Dinamicamente, dependendo dos valores de uma enumeração: apenas exibe os valores contidos na enumeração, todos os outros valores são agrupados em &#39;Outros&#39;. Para obter mais informações, consulte [Gestão dinâmica de compartimentos](#dynamically-managing-bins).
+1. Dinamicamente, dependendo dos valores de uma [enumeração](../config/enumerations.md): apenas exibe os valores contidos na enumeração, todos os outros valores são agrupados em &#39;Outros&#39;. Para obter mais informações, consulte [Gestão dinâmica de compartimentos](#dynamically-managing-bins).
 1. Uso de intervalos de valor, todos os outros sendo agrupados. Por exemplo, de 18 a 25 anos, 26 a 59 anos e os outros. Para obter mais informações, consulte [Criação de intervalos de valor](#creating-value-ranges).
 
-Para ativar a compartimentalização, marque a caixa apropriada ao criar a dimensão.
+Para habilitar a compartimentalização, marque a caixa apropriada ao criar a dimensão.
 
 ![](assets/cube-class.png)
 
-Você pode criar compartimentos manualmente ou vinculá-los a uma enumeração existente.
+Você pode criar compartimentos manualmente ou vinculá-los a uma [enumeração](../config/enumerations.md) existente.
 
 O Adobe Campaign também fornece um assistente para compartimentalização automática: os valores podem ser divididos em N grupos ou agrupados de acordo com os valores mais frequentes no banco de dados.
 
@@ -58,13 +58,13 @@ Os valores podem ser gerenciados dinamicamente por enumerações. Isso significa
 Para criar esse tipo de compartimentalização de valor, siga as etapas abaixo:
 
 1. Crie uma nova dimensão e habilite a compartimentalização.
-1. Selecione a opção **[!UICONTROL Dynamically link the values to an enumeration]** e selecione a lista discriminada correspondente.
+1. Selecione a opção **[!UICONTROL Dynamically link the values to an enumeration]** e selecione a enumeração correspondente.
 
    ![](assets/cube-link-to-enum.png)
 
    Sempre que os valores de enumeração forem atualizados, os compartimentos correspondentes serão adaptados automaticamente.
 
-Saiba mais sobre enumerações em [esta página](../../v8/config/ui-settings.md#enumerations).
+   Saiba mais sobre enumerações em [esta página](../config/enumerations.md).
 
 ### Criar intervalos de valor {#create-value-ranges}
 
@@ -88,7 +88,7 @@ Também é possível gerar compartimentos automaticamente. Para fazer isso, cliq
 
   Para a mesma amostra, o Adobe Campaign cria automaticamente quatro slots de valor do mesmo tamanho para exibir os valores no banco de dados.
 
-Nesse caso, o filtro selecionado no schema de fatos é ignorado.
+Nesse caso, o filtro selecionado no esquema de fatos é ignorado.
 
 ### Enumerações {#enumerations}
 
@@ -98,11 +98,11 @@ O Adobe Campaign também oferece uma enumeração em domínios que permite exibi
 
 ![](assets/nmx_report_sample.png)
 
-Ele é criado usando o seguinte template:
+Ele é criado usando o seguinte modelo:
 
 ![](assets/nmx_enum_domain.png)
 
-Para criar um relatório usando essa lista discriminada, crie um Cubo usando a dimensão **[!UICONTROL Email domain]**. Escolha a opção **[!UICONTROL Enable binning]** e então **[!UICONTROL Dynamically link the values to an enumeration]**. Em seguida, selecione a enumeração de **Domínios** como mostrado acima. Todos os valores que não têm alias especificado serão reagrupados no rótulo **Outros** .
+Para criar um relatório usando essa enumeração, crie um Cubo usando a dimensão **[!UICONTROL Email domain]**. Escolha a opção **[!UICONTROL Enable binning]** e então **[!UICONTROL Dynamically link the values to an enumeration]**. Em seguida, selecione a enumeração de **Domínios** como mostrado acima. Todos os valores que não têm alias especificado serão reagrupados no rótulo **Outros** .
 
 Em seguida, crie um relatório com base neste Cubo para exibir os valores.
 
@@ -110,7 +110,7 @@ Você só precisa modificar a enumeração para atualizar o relatório relaciona
 
 ![](assets/nmx_add_alias.png)
 
-A lista discriminada **[!UICONTROL Domains]** é usada para gerar relatórios internos que exibem a lista de domínios. Para adaptar o conteúdo desses relatórios, você pode editar essa lista.
+A enumeração **[!UICONTROL Domains]** é usada para gerar relatórios integrados que exibem a lista de domínios. Para adaptar o conteúdo desses relatórios, você pode editar essa lista.
 
 Você pode criar outras enumerações reservadas para compartimentalização e usá-las em outros Cubos: todos os valores de alias serão reagrupados nas posições especificadas na primeira guia de enumeração.
 
@@ -120,7 +120,7 @@ Saiba mais sobre enumerações em [esta página](../../v8/config/ui-settings.md#
 
 Os maiores volumes de dados podem ser calculados em agregações.
 
-Agregações são úteis ao manipular grandes volumes de dados. Eles são atualizados automaticamente com base nas configurações definidas na caixa de workflow dedicada, para integrar os dados a serem coletados mais recentemente nos indicadores
+Agregações são úteis ao manipular grandes volumes de dados. Eles são atualizados automaticamente com base nas configurações definidas na caixa de fluxo de trabalho dedicada, para integrar os dados a serem coletados mais recentemente nos indicadores
 
 As agregações são definidas na guia relevante de cada cubo.
 
@@ -128,7 +128,7 @@ As agregações são definidas na guia relevante de cada cubo.
 
 >[!NOTE]
 >
->O workflow para atualizar cálculos de agregação pode ser configurado na própria agregação ou a agregação pode ser atualizada por meio de um workflow externo vinculado ao cubo relevante.
+>O fluxo de trabalho para atualizar cálculos de agregação pode ser configurado na própria agregação ou a agregação pode ser atualizada por meio de um fluxo de trabalho externo vinculado ao cubo relevante.
 
 Para criar uma nova agregação, siga as etapas abaixo:
 

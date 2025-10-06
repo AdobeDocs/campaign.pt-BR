@@ -5,10 +5,10 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 34%
+ht-degree: 32%
 
 ---
 
@@ -28,7 +28,7 @@ Com cubos, você pode:
 
   ![](assets/create-new-cube.png)
 
-  Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um modelo, clique em **[!UICONTROL Create]** para configurar e exibir o novo relatório.
+  Os cubos aparecem como modelos baseados em quais relatórios são criados. Depois de escolher um modelo, clique em **[!UICONTROL Create]** para configurar e exibir o novo relatório.
 
   Você pode adaptar medidas, alterar o modo de exibição ou configurar a tabela e exibir o relatório usando o botão principal.
 
@@ -100,9 +100,9 @@ Você pode personalizar o modo de exibição de data. Para fazer isso, selecione
 
 No nosso exemplo, queremos exibir apenas anos, meses e dias. Observe que você não pode trabalhar com semanas e semestres/meses ao mesmo tempo: esses níveis não são compatíveis.
 
-1. Crie outra dimensão para analisar dados relativos à cidade do recipient. Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do schema do destinatário.
+1. Crie outra dimensão para analisar dados relativos à cidade do recipient. Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do esquema do destinatário.
 
-Você pode habilitar a compartimentalização para facilitar a leitura das informações e vincular os valores a uma enumeração.
+Você pode habilitar a compartimentalização para facilitar a leitura das informações e vincular os valores a uma [enumeração](../config/enumerations.md).
 
 Selecione a enumeração na lista suspensa. Observe que essa enumeração deve ser definida como **[!UICONTROL Reserved for binning]**.
 
@@ -121,7 +121,7 @@ Para fazer isso, crie os indicadores na guia **[!UICONTROL Measures]**. Crie qua
 Para criar indicadores, siga as etapas abaixo:
 
 1. Navegue até a guia **[!UICONTROL Measures]** e clique no botão **[!UICONTROL Add]**.
-1. Selecione o tipo de medida e a fórmula a ser aplicada. Neste exemplo, estamos contando o número de mulheres entre os recipients. Nossa medida é baseada no schema de fatos e usa o operador **[!UICONTROL Count]**.
+1. Selecione o tipo de medida e a fórmula a ser aplicada. Neste exemplo, estamos contando o número de mulheres entre os recipients. Nossa medida é baseada no esquema de fatos e usa o operador **[!UICONTROL Count]**.
 
    ![](assets/cube-new-measure.png)
 

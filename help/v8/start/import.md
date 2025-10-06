@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '4024'
+source-wordcount: '4027'
 ht-degree: 96%
 
 ---
@@ -23,7 +23,7 @@ Noções básicas do [modelo de dados](../dev/datamodel.md) do Campaign
 
 ## Direcionar perfis em um fluxo de trabalho
 
-As importações de perfil são configuradas em modelos dedicados executados por meio de workflows através da atividade **Importar**. Elas podem ser repetidas automaticamente de acordo com uma programação, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. Saiba mais [nesta seção](../../automation/workflow/recurring-import-workflow.md).
+As importações de perfil são configuradas em modelos dedicados executados por meio de fluxos de trabalho através da atividade **Importar**. Elas podem ser repetidas automaticamente de acordo com um cronograma, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. Saiba mais [nesta seção](../../automation/workflow/recurring-import-workflow.md).
 
 ![](assets/import-wf.png)
 
@@ -40,7 +40,7 @@ O Adobe Campaign permite importar dados para o banco de dados de um ou mais arqu
 
 >[!NOTE]
 >
->É possível importar dados sem mapeá-los com os dados do banco de dados usando a função **[!UICONTROL Import a list]**. Os dados podem ser usados exclusivamente em workflows por meio do objeto **[!UICONTROL Read list]**. Para obter mais informações, consulte [esta página](../../automation/workflow/read-list.md).
+>É possível importar dados sem mapeá-los com os dados do banco de dados usando a função **[!UICONTROL Import a list]**. Os dados podem ser usados exclusivamente em fluxos de trabalho por meio do objeto **[!UICONTROL Read list]**. Para obter mais informações, consulte [esta página](../../automation/workflow/read-list.md).
 
 O assistente de importação permite configurar uma importação, definir suas opções (como transformação de dados) e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de importação (simples ou múltipla) e dos direitos do operador.
 
@@ -54,18 +54,18 @@ O assistente de importação é exibido após a criação de um novo trabalho de
 
 No arquivo de origem, cada linha coincide com um registro. Os dados em registros são separados por delimitadores (espaço, tabulação, caractere etc.). Isso significa que os dados são recuperados no formulário de colunas e cada coluna é associada a um campo do banco de dados.
 
-## Etapa 1 - Escolher o template de importação {#step-1---choosing-the-import-template}
+## Etapa 1 - Escolher o modelo de importação {#step-1---choosing-the-import-template}
 
 Ao iniciar o assistente de importação, primeiro é necessário selecionar um modelo. Como exemplo, para configurar a importação de destinatários que receberam um boletim informativo, siga as etapas abaixo:
 
 1. Selecione a pasta **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
-1. Clique em **New** e em **Import** para criar o template de importação.
+1. Clique em **New** e em **Import** para criar o modelo de importação.
 
    ![](assets/s_ncs_user_import_wizard01_1.png)
 
 1. Clique na seta à direita do campo **[!UICONTROL Import template]** para selecionar o modelo ou clique em **[!UICONTROL Select link]** para navegar na árvore.
 
-   O modelo nativo é **[!UICONTROL New text import]**. Este template não deve ser modificado, mas você pode duplicá-lo para configurar um novo template dependendo de suas necessidades. Por padrão, os modelos de importação são salvos no nó **[!UICONTROL Profiles and targets > Templates > Job templates]**.
+   O modelo nativo é **[!UICONTROL New text import]**. Este modelo não deve ser modificado, mas você pode duplicá-lo para configurar um novo modelo dependendo de suas necessidades. Por padrão, os modelos de importação são salvos no nó **[!UICONTROL Profiles and targets > Templates > Job templates]**.
 
 1. Insira um nome para essa importação no campo **[!UICONTROL Label]**. Você pode adicionar uma descrição.
 1. Selecione o tipo de importação no campo apropriado. Há dois tipos possíveis de importação: **[!UICONTROL Simple import]** para importar apenas um arquivo e **[!UICONTROL Multiple import]** para importar vários arquivos em uma única execução.
@@ -104,7 +104,7 @@ O link **[!UICONTROL Advanced parameters]** permite acessar as seguintes opçõe
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Selecione essa opção para evitar o enriquecimento da lista de valores enumerados no banco de dados.
+     Selecione essa opção para evitar o enriquecimento da lista de valores enumerados no banco de dados. Saiba mais sobre [enumerações](../config/enumerations.md).
 
 * **[!UICONTROL Variables]** Guia
 
@@ -251,7 +251,7 @@ Evite escolher um campo que possa ser modificado durante a importação; se isso
 O campo **[!UICONTROL Management of doubles]** permite a configuração da desduplicação de dados. A desduplicação emite registros que aparecem várias vezes **no arquivo de origem** (ou nos arquivos de origem no caso de uma importação de múltiplos arquivos), ou seja, linhas para as quais os campos da chave de reconciliação são idênticos.
 
 * O gerenciamento de duplicados no modo **[!UICONTROL Update]** (o modo padrão) não executa a desduplicação. Assim, o último registro tem prioridade (porque atualiza os dados dos registros anteriores). A contagem de duplicados não é executada nesse modo.
-* O gerenciamento de duplicados no modo **[!UICONTROL Ignore]** ou **[!UICONTROL Reject entity]** exclui duplicatas da importação. Nesse caso, nenhum registro é importado.
+* O gerenciamento de duplicados no modo **[!UICONTROL Ignore]** ou **[!UICONTROL Reject entity]** exclui duplicados da importação. Nesse caso, nenhum registro é importado.
 * No modo **[!UICONTROL Reject entity]**, o elemento não é importado e um erro é gerado nos logs de importação.
 * No modo **[!UICONTROL Ignore]**, o elemento não é importado, mas não é mantido nenhum registro do erro. Esse modo permite otimizar o desempenho.
 
@@ -300,7 +300,7 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
 >[!NOTE]
 >
->Esta etapa aparece ao importar somente destinatários e ao usar a tabela de destinatários padrão do Adobe Campaign (**nms:recipient**).
+>Esta etapa aparece ao importar destinatários somente e ao usar a tabela de destinatários padrão do Adobe Campaign (**nms:recipient**).
 
 * Clique nos links **[!UICONTROL Edit]** para selecionar a pasta, a lista ou o serviço ao qual deseja associar ou assinar os destinatários.
 
@@ -338,7 +338,7 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
    1. Como assinar um serviço
 
-      Para inscrever todos os destinatários importados para um serviço de informações, clique no link **[!UICONTROL Edit...]** da seção **[!UICONTROL Subscribe recipients to a service]** para selecionar ou criar o serviço de informações ao qual os destinatários serão inscritos. Você pode selecionar a opção **[!UICONTROL Send a confirmation message]**: o conteúdo desta mensagem é definido no template da entrega associado ao serviço de assinatura.
+      Para inscrever todos os destinatários importados para um serviço de informações, clique no link **[!UICONTROL Edit...]** da seção **[!UICONTROL Subscribe recipients to a service]** para selecionar ou criar o serviço de informações ao qual os destinatários serão inscritos. Você pode selecionar a opção **[!UICONTROL Send a confirmation message]**: o conteúdo desta mensagem é definido no modelo da entrega associado ao serviço de assinatura.
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
@@ -371,20 +371,20 @@ O assistente de exportação é exibido após a criação de um novo trabalho de
 Ao iniciar o assistente de exportação, primeiro é necessário selecionar um modelo. Como exemplo, para configurar a exportação de destinatários que se registraram recentemente, siga as etapas abaixo:
 
 1. Selecione a pasta **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
-1. Clique em **Novo** e em **Exportar** para criar o template de exportação.
+1. Clique em **New** e em **Export** para criar o modelo de exportação.
 
    ![](assets/s_ncs_user_export_wizard01.png)
 
 1. Clique na seta à direita do campo **[!UICONTROL Export template]** para selecionar o modelo ou clique em **[!UICONTROL Select link]** para navegar na árvore.
 
-   O modelo nativo é **[!UICONTROL New text export]**. Este template não deve ser modificado, mas você pode duplicá-lo para configurar um novo template. Por padrão, os modelos de exportação são salvos no nó **[!UICONTROL Resources > Templates > Job templates]**.
+   O modelo nativo é **[!UICONTROL New text export]**. Este modelo não deve ser modificado, mas você pode duplicá-lo para configurar um novo modelo. Por padrão, os modelos de exportação são salvos no nó **[!UICONTROL Resources > Templates > Job templates]**.
 
 1. Insira um nome para a exportação no campo **[!UICONTROL Label]**. Você pode adicionar uma descrição.
 1. Selecione o tipo de exportação. Existem dois tipos possíveis de exportação: **[!UICONTROL Simple export]** para exportar apenas um arquivo e **[!UICONTROL Multiple export]** para exportar vários arquivos em uma única execução, de um ou mais tipos de documento de origem.
 
 ## Etapa 2 - Tipo de arquivo a ser exportado {#step-2---type-of-file-to-export}
 
-Selecione o tipo de documento a ser exportado, ou seja, o schema dos dados para exportar.
+Selecione o tipo de documento a ser exportado, ou seja, o esquema dos dados para exportar.
 
 Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Jobs]**, os dados são obtidos a partir da tabela de destinatários. Quando a exportação é iniciada a partir de uma lista de dados (do menu **[!UICONTROL right click > Export]**), a tabela à qual os dados pertencem é automaticamente preenchida no campo **[!UICONTROL Document type]**.
 

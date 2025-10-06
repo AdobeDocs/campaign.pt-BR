@@ -3,7 +3,7 @@ title: Relatórios de entrega integrados do Adobe Campaign
 description: Relatórios de entrega integrados do Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 62%
@@ -83,7 +83,7 @@ Esta tabela de valores mostra o detalhamento das entregas, aberturas, cliques e 
 >
 >Os nomes de domínio exibidos neste relatório são definidos na lista discriminada usada no nível de cubo. Para alterar, adicionar ou remover domínios padrão, edite a lista discriminada **[!UICONTROL Domains]** e modifique valores e aliases. A categoria **[!UICONTROL Others]** inclui nomes de domínio que não pertencem a nenhum valor da lista discriminada.
 >
->Saiba como acessar e configurar suas enumerações em [esta página](../config/ui-settings.md).
+>Saiba como acessar e configurar suas enumerações em [esta página](../config/enumerations.md).
 
 
 **[!UICONTROL 4. Generated click streams]**

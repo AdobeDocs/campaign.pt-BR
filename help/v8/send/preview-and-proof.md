@@ -5,9 +5,9 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 21%
 
 ---
@@ -48,8 +48,9 @@ O target de prova pode ser definido no template de delivery ou específico para 
 O tipo de destino de prova está selecionado na lista suspensa **[!UICONTROL Targeting mode]**.
 
 * Use a opção **[!UICONTROL Definition of a specific proof target]** para selecionar recipients no banco de dados como o target da prova.
-* Use a opção **[!UICONTROL Substitution of the address]** para inserir endereços de email e usar os dados do recipient de destino para validar o conteúdo. Os endereços de substituição podem ser inseridos manualmente ou selecionados na lista suspensa. A enumeração associada é Substitution address (rcpAddress).
-Por padrão, a substituição é executada aleatoriamente, mas você pode selecionar um recipient específico do público-alvo principal, por meio do ícone **[!UICONTROL Detail]**.
+* Use a opção **[!UICONTROL Substitution of the address]** para inserir endereços de email e usar os dados do recipient de destino para validar o conteúdo. Os endereços de substituição podem ser inseridos manualmente ou selecionados na lista suspensa. A [enumeração](../config/enumerations.md) associada é **Endereço de substituição (rcpAddress)**.
+
+  Por padrão, a substituição é executada aleatoriamente, mas você pode selecionar um recipient específico do público-alvo principal, por meio do ícone **[!UICONTROL Detail]**.
 
   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
@@ -105,4 +106,4 @@ Por padrão, as mensagens de prova são identificadas pela menção `Proof #N` n
 
 Saiba como enviar e validar uma prova para uma entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

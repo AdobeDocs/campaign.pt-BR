@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 253f3be945cbfa304fa7342c68f0c73b079e2870
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '447'
 ht-degree: 59%
 
 ---
@@ -61,18 +61,18 @@ Para criar tipos de evento que serão processados pelo Adobe Campaign, siga as e
 
 1. Navegue até a pasta **[!UICONTROL Administration > Platform > Enumerations]** do explorador do Campaign.
 1. Selecione a enumeração **[!UICONTROL Event type]** na lista.
-1. Clique em **[!UICONTROL Add]** para criar um valor de lista discriminada. Pode ser uma confirmação de pedido, uma alteração de senha, uma alteração de entrega de pedido etc.
+1. Clique em **[!UICONTROL Add]** para criar um valor enumeração. Pode ser uma confirmação de pedido, uma alteração de senha, uma alteração de entrega de pedido etc.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
 
    >[!CAUTION]
    >
-   >Cada tipo de evento deve corresponder a um valor na lista discriminada **[!UICONTROL Event type]**.
+   >Cada tipo de evento deve corresponder a um valor na enumeração **[!UICONTROL Event type]**.
 
 1. Após a criação dos valores da lista discriminada, faça logoff e logon novamente na instância para que a criação seja efetivada.
 
 >[!NOTE]
 >
->Saiba mais sobre enumerações em [esta página](../../v8/config/ui-settings.md#enumerations).
+>Saiba mais sobre [enumerações](../config/enumerations.md).
 
 Para a próxima etapa, saiba como [criar e publicar seu modelo para mensagens transacionais](transactional-template.md).

@@ -6,16 +6,16 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: d2ec4d92-7f00-47c8-98e6-0613d6387de0
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 # Enviar uma prova de entrega de SMS {#sms-proof}
 
-A Adobe recomenda configurar um ciclo de validação de delivery. Verifique se o conteúdo está aprovado antes de enviá-lo para o público.
+A Adobe recomenda configurar um ciclo de validação de delivery. Verifique se o conteúdo foi aprovado antes de enviá-lo para o público-alvo.
 
 Você pode enviar uma prova para o delivery de SMS para validá-lo:
 
@@ -26,7 +26,7 @@ Você pode enviar uma prova para o delivery de SMS para validá-lo:
    Há vários modos para enviar uma prova:
 
    * **[!UICONTROL Definition of a specific proof target]**: permite consultar com filtros os endereços no banco de dados como o destino da prova
-   * **[!UICONTROL Substitution of the address]**: permite inserir seus endereços de teste e usar os dados do destinatário de destino para validar o conteúdo. Os endereços de substituição podem ser inseridos manualmente ou selecionados na lista suspensa. A enumeração associada é **[!UICONTROL Substitution address (rcpAddress)]**.
+   * **[!UICONTROL Substitution of the address]**: permite inserir seus endereços de teste e usar os dados do destinatário de destino para validar o conteúdo. Os endereços de substituição podem ser inseridos manualmente ou selecionados na lista suspensa. A [enumeração](../../config/enumerations.md) associada é **[!UICONTROL Substitution address (rcpAddress)]**.
 Por padrão, a substituição é executada aleatoriamente, mas você pode selecionar um recipient específico do público-alvo principal, por meio do ícone **[!UICONTROL Detail]**.
    * **[!UICONTROL Seed addresses]**: permite acesso a seed addresses para ser o destino da prova. Esses endereços podem ser importados de um arquivo ou inseridos manualmente.
    * **[!UICONTROL Specific target and Seed addresses]**: permite combinar seed addresses e endereços de recipients.

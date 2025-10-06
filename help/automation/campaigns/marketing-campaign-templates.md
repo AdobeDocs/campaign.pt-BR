@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Templates de campanha de marketing
-description: Templates de campanha de marketing
+title: Modelos de campanha de marketing
+description: Modelos de campanha de marketing
 feature: Campaigns, Templates
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 55%
@@ -26,9 +26,9 @@ As funcionalidades disponíveis dependem das suas permissões, dos complementos 
 
 Um modelo integrado é fornecido para criar uma campanha para a qual nenhuma configuração específica foi definida. Você pode criar e configurar seus modelos de campanha e, em seguida, criar campanhas com base nesses modelos.
 
-## Criar um template de campanha {#create-a-campaign-template}
+## Criar um modelo de campanha {#create-a-campaign-template}
 
-Para criar um template de campanha, siga as etapas abaixo:
+Para criar um modelo de campanha, siga as etapas abaixo:
 
 1. Abra o Campaign **Explorer** e navegue até **Recursos > Modelos > Modelos de campanha**.
 1. Clique em **Novo** na barra de ferramentas acima da lista de modelos.
@@ -37,8 +37,8 @@ Para criar um template de campanha, siga as etapas abaixo:
 
 Você também pode **duplicar** o modelo interno para reutilizar e adaptar sua configuração. Para fazer isso, clique com o botão direito do mouse no modelo e selecione **Duplicar**.
 
-1. Insira o rótulo do seu novo template de campanha.
-1. Clique em **Save** e abra seu template novamente.
+1. Insira o rótulo do seu novo modelo de campanha.
+1. Clique em **Save** e abra seu modelo novamente.
 1. Na guia **Editar**, defina as propriedades do modelo.
 1. Selecione o link **Advanced campaign parameters...** para adicionar um fluxo de trabalho ao seu template de campanha.
 
@@ -52,7 +52,7 @@ Você também pode **duplicar** o modelo interno para reutilizar e adaptar sua c
 
 1. Clique em **Save**. Seu template está pronto para ser usado para criar uma nova campanha.
 
-As várias guias e subguias do template de campanha permitem que você acesse as configurações, descritas em [Configuração geral](#general-configuration).
+As várias guias e subguias do modelo de campanha permitem que você acesse as configurações, descritas em [Configuração geral](#general-configuration).
 
 ## Selecionar módulos {#select-modules}
 
@@ -114,20 +114,20 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
 * **Grupo de controle**
 
-  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre grupos de controle [nesta seção](marketing-campaign-deliveries.md#defining-a-control-group).
+  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do modelo e às campanhas baseadas nesse modelo. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre grupos de controle [nesta seção](marketing-campaign-deliveries.md#defining-a-control-group).
 
   ![](assets/template-activate-1.png)
 
 
 * **Seed addresses**
 
-  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do template ou individualmente para cada campanha.
+  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do modelo e às campanhas baseadas nesse modelo. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha.
 
   ![](assets/template-activate-2.png)
 
 * **Documentos**
 
-  Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edit]** do template e às campanhas com base nesse template. Os documentos anexados podem ser adicionados do modelo ou individualmente para cada campanha. Saiba mais sobre documentos [nesta seção](marketing-campaign-deliveries.md#manage-associated-documents).
+  Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edit]** do modelo e às campanhas com base nesse modelo. Os documentos anexados podem ser adicionados do modelo ou individualmente para cada campanha. Saiba mais sobre documentos [nesta seção](marketing-campaign-deliveries.md#manage-associated-documents).
 
   ![](assets/template-activate-3.png)
 
@@ -137,9 +137,9 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
   ![](assets/template-activate-4.png)
 
-* **Direcionamento e workflows**
+* **Segmentação e fluxos de trabalho**
 
-  Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais workflows para campanhas com base nesse template. Os workflows também podem ser configurados individualmente para cada campanha com base neste modelo. Saiba mais sobre workflows da campanha [nesta seção](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+  Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais fluxos de trabalho para campanhas com base nesse modelo. Os fluxos de trabalho também podem ser configurados individualmente para cada campanha com base neste modelo. Saiba mais sobre fluxos de trabalho da campanha [nesta seção](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
 
   ![](assets/template-activate-5.png)
 
@@ -160,22 +160,21 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
   ![](assets/template-activate-7.png)
 
 
-## Propriedades do template {#template-properties}
+## Propriedades do modelo {#template-properties}
 
 ![](assets/template-op-type.png)
 
-Ao criar um template de campanha, você precisa inserir as seguintes informações:
+Ao criar um modelo de campanha, você precisa inserir as seguintes informações:
 
 * Insira o **rótulo** do modelo: o rótulo é obrigatório e é o rótulo padrão para todas as campanhas baseadas neste modelo.
-* Selecione a **natureza** da campanha na lista suspensa. Os valores disponíveis nesta lista são os que foram salvos na lista discriminada **[!UICONTROL natureOp]**.
+* Selecione a **natureza** da campanha na lista suspensa. Os valores disponíveis nesta lista são os que foram salvos na enumeração **[!UICONTROL natureOp]**.
 
-Saiba como acessar e configurar suas enumerações em [esta página](../../v8/config/ui-settings.md#enumerations).
+  Saiba como acessar e configurar suas enumerações em [esta página](../../v8/config/enumerations.md).
 
+* Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os modelos de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas [nesta seção](recurring-periodic-campaigns.md).
+* Especifique a duração da campanha, ou seja, o número de dias em que a campanha ocorrerá. Ao criar uma campanha com base nesse modelo, as datas inicial e final da campanha serão preenchidas automaticamente.
 
-* Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os templates de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas [nesta seção](recurring-periodic-campaigns.md).
-* Especifique a duração da campanha, ou seja, o número de dias em que a campanha ocorrerá. Ao criar uma campanha com base nesse template, as datas de início e término da campanha serão preenchidas automaticamente.
-
-  Se a campanha for recorrente, você deverá especificar as datas de início e término da campanha diretamente no template.
+  Se a campanha for recorrente, você deverá especificar as datas inicial e final da campanha diretamente no modelo.
 
 * Especifique o **programa relacionado** do modelo: campanhas baseadas neste modelo são vinculadas ao programa selecionado.
 
