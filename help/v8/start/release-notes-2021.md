@@ -5,10 +5,10 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 98%
+source-wordcount: '1577'
+ht-degree: 97%
 
 ---
 
@@ -60,8 +60,8 @@ _28 de outubro de 2021_
 <tbody> 
 <tr> 
 <td> <p>O Unicity Service é um novo componente do Cloud Database Manager. Ele ajuda os usuários a preservar e monitorar a integridade das restrições de chaves únicas dentro de tabelas do Cloud Database. Isso permite reduzir o risco de inserir chaves duplicadas.
-<p>Como o Cloud Database não impõe restrições de unicidade, o Unicity Service introduz, no nível do aplicativo, <b>um novo conjunto de medidas de proteção</b> que reduzem o risco de inserir duplicatas ao gerenciar dados com o Adobe Campaign.</p> 
-<p>O Unicity Service inicia um novo workflow integrado chamado <b>ffdaUnicity</b> para monitorar restrições de unicidade e alertar quando duplicatas são detectadas.</p>
+<p>Como o Cloud Database não impõe restrições de unicidade, o Unicity Service introduz, no nível do aplicativo, <b>um novo conjunto de medidas de proteção</b> que reduzem o risco de inserir duplicados ao gerenciar dados com o Adobe Campaign.</p> 
+<p>O Unicity Service inicia um novo fluxo de trabalho integrado chamado <b>ffdaUnicity</b> para monitorar restrições de unicidade e alertar quando duplicados são detectados.</p>
 <p>Para obter mais informações, consulte a <a href="../architecture/keys.md">documentação detalhada</a>.</p>
 </td> </tr> 
 </tbody> 
@@ -71,7 +71,7 @@ _28 de outubro de 2021_
 **Aprimoramentos** 
 
 * O conector Snowflake foi aprimorado em termos de desempenho.
-* Para propósitos de monitoramento e teste, os logs de auditoria do workflow **[!UICONTROL Replicate Staging data]** agora incluem o número de registros enviados para a base de dados do FFDA (Full Federated Data Access).
+* Para propósitos de monitoramento e teste, os logs de auditoria do fluxo de trabalho **[!UICONTROL Replicate Staging data]** agora incluem o número de registros enviados para a base de dados do FFDA (Full Federated Data Access).
 * A atividade de código SQL agora permite escolher em qual base de dados o script SQL será armazenado: na fonte de dados padrão ou em uma conta externa de FDA ativo.
 * Um conjunto de warehouses predefinidos está agora disponível e pode ser usado para executar várias consultas em paralelo, tais como segmentação, ETL ou picos. [Leia mais](../config/workflows.md)
 
@@ -85,7 +85,7 @@ _28 de outubro de 2021_
 
 * Após um usuário ter removido, de um esquema de dados, o atributo `<autoStg>` de um elemento de definição de uma tabela, ou após ter alterado seu valor de `true` para `false`, a tabela de preparo relacionada não foi excluída. Esse problema foi corrigido.
 * Correção de um problema que causava um erro ao criar registros com um formulário dedicado devido ao gerenciamento de ID com uma fonte de dados FFDA.
-* Correção de um problema que poderia impedir a inserção de ofertas em uma entrega caso tais ofertas fossem gerenciadas por uma atividade de enriquecimento em um workflow.
+* Correção de um problema que poderia impedir a inserção de ofertas em uma entrega caso tais ofertas fossem gerenciadas por uma atividade de enriquecimento em um fluxo de trabalho.
 * Correção de um problema que poderia retardar a importação de pacotes.
 * Correção de um problema que poderia impedir que entregas de email com seed addresses fossem enviados.
 * Correção de um problema que poderia impedir que apresentações fossem salvas na tabela de apresentação de ofertas.
@@ -121,7 +121,7 @@ _7 de setembro de 2021_
 
 **Outras alterações**
 
-* Os conectores do Microsoft CRM descontinuados anteriormente (implantações do Office 365 e locais) foram removidos da interface. [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html?lang=pt-BR#configure-acc-for-microsoft)
+* Os conectores do Microsoft CRM descontinuados anteriormente (implantações do Office 365 e locais) foram removidos da interface. [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
 
 * Após a migração para o Tomcat 8, o script de configuração do IIS foi atualizado para corrigir problemas de integração do IIS. (NEO-31019)
 * Foi adicionada uma medida de proteção para permitir que o [fluxo de trabalho técnico de faturamento](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=pt-BR#billing-report) seja executado na instância de marketing.
@@ -160,7 +160,7 @@ _23 de julho de 2021_
 <tr>
 <td>
 <p>A nova atividade de fluxo de trabalho <b>Alterar fonte de dados</b> permite alterar a fonte de dados de uma tabela de trabalho do fluxo de trabalho. Isso proporciona mais flexibilidade no gerenciamento de dados em diferentes fontes de dados (FDA, FDA e banco de dados local).</p>
-<p>Nos workflows do Adobe Campaign, os dados são gerenciados usando tabelas de trabalho (ou temporárias). Conforme o fluxo de trabalho é executado, as tabelas de trabalho compartilham dados entre atividades de fluxo de trabalho. Por padrão, as tabelas de trabalho são criadas no mesmo banco de dados da fonte de dados que consultamos.</p>
+<p>Nos fluxos de trabalho do Adobe Campaign, os dados são gerenciados usando tabelas de trabalho (ou temporárias). Conforme o fluxo de trabalho é executado, as tabelas de trabalho compartilham dados entre atividades de fluxo de trabalho. Por padrão, as tabelas de trabalho são criadas no mesmo banco de dados da fonte de dados que consultamos.</p>
 <p>Com o Campaign v8, a tabela de perfis principais é armazenada no banco de dados da nuvem diretamente. Assim, consultar a tabela Perfis também criará uma tabela de trabalho no banco de dados da nuvem. Em certos casos, pode fazer sentido mover a tabela de trabalho para outra fonte de dados para executar operações específicas.</p>
 <p>Para obter mais informações, consulte a <a href="../config/workflows.md#change-data-source-activity">documentação detalhada</a>.</p>
 </td>
@@ -176,7 +176,7 @@ _23 de julho de 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>O <a href="../send/line.md">canal LINE</a> agora está disponível com o Campaign v8, incluindo os seguintes aprimoramentos quando combinado com o módulo <a href="../send/transactional.md">mensagens transacionais</a>:
+<td> <p>O <a href="../send/line/line.md">canal LINE</a> agora está disponível com o Campaign v8, incluindo os seguintes aprimoramentos quando combinado com o módulo <a href="../send/transactional.md">mensagens transacionais</a>:
 <ul> 
 <li><p>Correção de um problema que impedia que visitantes fossem direcionados em uma entrega LINE. 
 </p></li>

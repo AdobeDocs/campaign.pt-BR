@@ -5,16 +5,16 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 95dca48ae0e2ee82b80464cdf9414538776969ad
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 12%
+ht-degree: 30%
 
 ---
 
 # Introdução a SMS {#gs-sms-channel}
 
-Use o Adobe Campaign para enviar mensagens de texto aos seus clientes em seus dispositivos móveis. Você pode criar, personalizar e visualizar mensagens no formato de texto do editor de SMS.
+Use o Adobe Campaign para enviar mensagens de texto aos seus clientes em seus dispositivos móveis. Você pode criar, personalizar e visualizar mensagens em formato de texto no editor de SMS.
 
 Para enviar SMS para dispositivos móveis com o Adobe Campaign, é necessário:
 
@@ -26,7 +26,7 @@ Após essa configuração, verifique a conexão SMPP e saiba como solucionar pro
 
 >[!NOTE]
 >
->Você também pode usar o Adobe Campaign para enviar [notificações por push](../push.md) e [LINE](../line.md) mensagens para dispositivos móveis.
+>Você também pode usar o Adobe Campaign para enviar [notificações por push](../push.md) e [LINE](../line/line.md) mensagens para dispositivos móveis.
 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
@@ -51,7 +51,7 @@ Após essa configuração, verifique a conexão SMPP e saiba como solucionar pro
 <img alt="Público-alvo de SMS" src="../../assets/do-not-localize/sms-opt-out.jpg">
 </a>
 <div>
-<a href="sms-audience.md"><strong>Selecionar a audiência</strong></a>
+<a href="sms-audience.md"><strong>Selecionar o público-alvo</strong></a>
 </div>
 <p>
 </td>

@@ -6,7 +6,7 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a523e76d-776c-47d3-9c15-34241cee1092
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 74%
@@ -15,9 +15,9 @@ ht-degree: 74%
 
 # Introdução a mensagens {#gs-ac-msg}
 
-Com o Adobe Campaign, você pode enviar campanhas entre canais, incluindo e-mails, SMS, notificações push e correspondências diretas e medir a eficiência usando vários relatórios dedicados. Essas mensagens são projetadas e enviadas em entregas, além disso podem ser personalizadas para cada destinatário.
+Com o Adobe Campaign, você pode enviar campanhas entre canais, incluindo e-mails, SMS, notificações push e correspondências diretas e medir a eficiência usando vários relatórios dedicados. Essas mensagens são projetadas e enviadas em entregas, e podem ser personalizadas para cada destinatário.
 
-As funcionalidades principais incluem definição de metas, definição e personalização de mensagens, execução de comunicações e relatórios operacionais associados.
+As funcionalidades principais incluem direcionamento, definição e personalização de mensagens, execução de comunicações e os relatórios operacionais associados.
 
 ## Casos de uso {#gs-ac-delivery}
 
@@ -47,7 +47,7 @@ O Adobe Campaign v8 vem com os canais de entrega listados abaixo. Os canais disp
 
 * **Canal de email**: entregas de email permitem enviar emails personalizados para a população do target. [Saiba mais](../send/email.md)
 
-* **Canais móveis**: entregas em canais móveis permitem enviar mensagens personalizadas em dispositivos móveis para a população do público-alvo. Você pode enviar mensagens de [SMS](../send/sms/sms.md) e [LINE](../send/line.md) em dispositivos móveis.
+* **Canais móveis**: entregas em canais móveis permitem enviar mensagens personalizadas em dispositivos móveis para a população do público-alvo. Você pode enviar mensagens de [SMS](../send/sms/sms.md) e [LINE](../send/line/line.md) em dispositivos móveis.
 
 * **Canal de aplicativo móvel**: você pode usar o Adobe Campaign para enviar [notificações por push](../send/push.md) personalizadas e segmentadas em dispositivos móveis iOS e Android, por meio de aplicativos dedicados. Depois que as etapas de configuração e integração forem executadas, as entregas de iOS e de Android poderão ser criadas e enviadas com o Adobe Campaign. Você também pode projetar e enviar notificações avançadas com imagens ou vídeos para dispositivos Android.
 
@@ -76,13 +76,13 @@ Uma **entrega** é um objeto de entrega independente executado uma vez. Ele pode
 
 As entregas podem ser criadas a partir da lista de entregas ou em um fluxo de trabalho através de uma atividade de [Entrega](../../automation/workflow/delivery.md) .
 
-Os workflows também fornecem atividades de entrega específicas de acordo com o tipo de canal que você deseja usar. Para obter mais informações sobre essas atividades, consulte [esta seção](../../automation/workflow/cross-channel-deliveries.md).
+Os fluxos de trabalho também fornecem atividades de entrega específicas de acordo com o tipo de canal que você deseja usar. Para obter mais informações sobre essas atividades, consulte [esta seção](../../automation/workflow/cross-channel-deliveries.md).
 
 ### Entrega recorrente {#recurring-delivery}
 
 Uma **entrega recorrente** está disponível no contexto de um fluxo de trabalho. Ela permite criar uma nova entrega sempre que a atividade é executada. Isso evita que você crie uma nova entrega para tarefas recorrentes. Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabará com 12 entregas após um ano.
 
-As entregas recorrentes são criadas em workflows através da [atividade Entrega recorrente.](../../automation/workflow/recurring-delivery.md) Um exemplo dessa atividade que está sendo usada é apresentado nesta seção: [Criação de uma entrega recorrente em um workflow de direcionamento](../../automation/workflow/send-a-birthday-email.md).
+As entregas recorrentes são criadas em fluxos de trabalho através da [atividade Entrega recorrente.](../../automation/workflow/recurring-delivery.md) Um exemplo dessa atividade que está sendo usada é apresentado nesta seção: [Criação de uma entrega recorrente em um fluxo de trabalho de segmentação](../../automation/workflow/send-a-birthday-email.md).
 
 ### Entrega contínua {#continuous-delivery}
 
@@ -92,7 +92,7 @@ Se uma informação na entrega for alterado (conteúdo, nome, etc.), um novo obj
 
 Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabará com uma única entrega após um ano (desde que não tenha feito nenhuma alteração na entrega).
 
-As entregas contínuas são criadas em workflows através da [atividade Entrega contínua](../../automation/workflow/continuous-delivery.md).
+As entregas contínuas são criadas em fluxos de trabalho através da [atividade Entrega contínua](../../automation/workflow/continuous-delivery.md).
 
 ## Recursos do Personalization {#personalization}
 

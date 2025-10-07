@@ -4,8 +4,9 @@ description: Introdução à notificação por push no Campaign
 feature: Push
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 61%
@@ -74,11 +75,11 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
 1. Na guia **[!UICONTROL Sound and Badge]**, é possível editar as seguintes opções:
 
-   * **[!UICONTROL Clean Badge]**: ative essas opções para atualizar o valor do selo.
+   * **[!UICONTROL Clean Badge]**: habilite essas opções para atualizar o valor do selo.
 
    * **[!UICONTROL Value]**: defina um número que será usado para exibir o número de novas informações não lidas diretamente no ícone do aplicativo.
 
-   * **[!UICONTROL Critical alert mode]**: ative essa opção para adicionar som à sua notificação, mesmo que o telefone do usuário esteja configurado no modo de foco ou se o iPhone estiver sem áudio.
+   * **[!UICONTROL Critical alert mode]**: habilite essa opção para adicionar som à sua notificação, mesmo que o telefone do usuário esteja configurado no modo de foco ou se o iPhone estiver sem áudio.
 
    * **[!UICONTROL Name]**: selecione o som a ser reproduzido pelo terminal móvel quando a notificação for recebida.
 
