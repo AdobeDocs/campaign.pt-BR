@@ -5,10 +5,10 @@ feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
+source-git-commit: adea4eb54f3d519802119646bc501aae2ef5f831
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 85%
+source-wordcount: '867'
+ht-degree: 29%
 
 ---
 
@@ -18,48 +18,45 @@ As consultas são criadas usando campos da tabela selecionada ou usando uma fór
 
 As etapas para criar um query no Adobe Campaign são as seguintes:
 
-1. Selecione a tabela de trabalho. Consulte a [Etapa 1 - Escolher uma tabela](#step-1---choose-a-table).
-1. Em seguida, selecione os dados a serem extraídos. Consulte a [Etapa 2 - Escolher dados para extrair](#step-2---choose-data-to-extract).
-1. Defina a sequência de classificação de dados. Consulte a [Etapa 3 - Classificar dados](#step-3---sort-data).
-1. Filtre os dados. Consulte a [Etapa 4 - Filtrar dados](#step-4---filter-data).
-1. Formate os dados. Consulte a [Etapa 5 - Formatar dados](#step-5---format-data).
-1. Exiba o resultado. Consulte a [Etapa 6 - Visualizar dados](#step-6---preview-data).
+1. [Selecione a tabela de trabalho](#step-1---choose-a-table).
+1. [Selecione os dados para extrair](#step-2---choose-data-to-extract).
+1. [Definir o modo de classificação de dados](#step-3---sort-data).
+1. [Definir opções de filtragem de dados](#step-4---filter-data).
+1. [Configurar formatação de dados](#step-5---format-data).
+1. [Visualizar os resultados da consulta](#step-6---preview-data).
 
->[!NOTE]
->
->* Todas essas etapas estão disponíveis no [editor de consulta genérico](query-editor.md). Quando um query é criado em outro contexto, algumas etapas podem ser deixadas de fora.
->
->* Para saber mais sobre Consultas e como criá-las, consulte a [documentação sobre o fluxo de trabalho da campanha](../../automation/workflow/query.md).
+Todas essas etapas estão disponíveis no [editor de consulta genérico](query-editor.md). Quando um query é criado em outro contexto, algumas etapas podem estar ausentes. Para saber mais sobre consultas, consulte também a [documentação da atividade de Query do fluxo de trabalho](../../automation/workflow/query.md).
 
-Para consultar o banco de dados do Campaign, abra o **[editor de consulta genérico](query-editor.md)** e siga estas etapas:
 
 ## Etapa 1 - Escolher uma tabela {#step-1---choose-a-table}
 
-Selecione a tabela que contém os dados que você deseja consultar na janela **[!UICONTROL Document type]**. Se necessário, filtre os dados usando o campo de filtragem ou o botão **[!UICONTROL Filters]**.
+Para consultar o banco de dados do Campaign, abra o **[editor de consulta genérico](query-editor.md)** e selecione a tabela que contém os dados que você deseja consultar na janela **[!UICONTROL Document type]**.
 
 ![](assets/query_editor_nveau_21.png)
 
+Se necessário, filtre os dados usando o campo de filtragem ou o botão **[!UICONTROL Filters]**.
+
 ## Etapa 2 - Escolher dados para extrair {#step-2---choose-data-to-extract}
 
-Na janela **[!UICONTROL Data to extract]**, selecione os dados a serem exibidos: esses campos produzirão as colunas de saída.
+Na tela **[!UICONTROL Data to extract]**, escolha os campos que deseja incluir na saída. Esses campos definirão as colunas exibidas nos resultados.
 
-Por exemplo, selecione **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** e **[!UICONTROL City]**. Os resultados serão organizados com base nessa seleção. Use as setas azuis à direita da janela para alterar a ordem da coluna.
+Por exemplo, você pode selecionar **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** e **[!UICONTROL City]**. O resultado será estruturado de acordo com essa seleção. Para ajustar a ordem das colunas, use as setas azuis no lado direito da janela.
 
 ![](assets/query_editor_nveau_01.png)
 
-Você pode editar uma expressão inserindo uma fórmula nela ou executando um processo em uma função agregada. Para fazer isso, clique no campo de coluna **[!UICONTROL Expression]** e selecione **[!UICONTROL Edit expression]**.
+Você pode modificar uma expressão adicionando uma fórmula ou aplicando um processo a uma função agregada. Para editar uma expressão, clique no campo de coluna **[!UICONTROL Expression]** e selecione **[!UICONTROL Edit expression]**.
 
 ![](assets/query_editor_nveau_97.png)
 
-Você pode agrupar dados da coluna de saída: para fazer isso, marque **[!UICONTROL Yes]** na coluna **[!UICONTROL Group]** da janela **[!UICONTROL Data to extract]**. Essa função gera um resultado ao redor do eixo de agrupamento marcado. Um exemplo de query com agrupamento está disponível [nesta seção](../../automation/workflow/query-delivery-info.md).
+Você pode agrupar os dados exibidos nas colunas de saída. Para fazer isso, selecione **[!UICONTROL Yes]** na coluna **[!UICONTROL Group]** da janela **[!UICONTROL Data to extract]**. Os resultados serão agregados com base no eixo de agrupamento selecionado. Para obter um exemplo de uma consulta usando agrupamento, consulte [esta seção](../../automation/workflow/query-delivery-info.md).
 
 ![](assets/query_editor_nveau_56.png)
 
-* A função **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** possibilita ordenar o agrupamento &quot;group by&quot; e selecionar o que foi agrupado (&quot;having&quot;). Essa função se aplica a todos os campos na coluna de saída. Por exemplo, essa opção permite agrupar todas as escolhas de uma coluna de saída e recuperar um tipo específico de informações, como destinatários de idade entre 35 e 50.
+* A opção **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** permite agrupar resultados e aplicar condições a esses grupos. Ela se aplica a todos os campos nas colunas de saída. Por exemplo, você pode usá-la para agrupar valores de uma coluna de saída e filtrar os resultados para recuperar apenas informações específicas, como destinatários com idade entre 35 e 50 anos.
 
   Para obter mais informações, consulte [esta seção](../../automation/workflow/query-grouping-management.md).
 
-* A função **[!UICONTROL Remove duplicate rows (DISTINCT)]** permite corrigir resultados idênticos duplicados na coluna de saída. Por exemplo, se você realizar um censo selecionando os campos de sobrenome, nome e email na coluna de saída, os que tiverem dados idênticos serão eliminados, pois isso significa que o mesmo contato foi inserido várias vezes no banco de dados. Sendo assim, somente um resultado será levado em conta.
+A opção **[!UICONTROL Remove duplicate rows (DISTINCT)]** elimina linhas idênticas da saída (desduplicar). Por exemplo, se você selecionar **Sobrenome**, **Nome** e **Email** como colunas de saída, todos os registros com os mesmos valores em todos os três campos serão considerados duplicados. Somente uma instância será mantida nos resultados, garantindo que cada contato apareça apenas uma vez.
 
 ## Etapa 3 - Classificar dados {#step-3---sort-data}
 
@@ -74,24 +71,23 @@ Neste exemplo, os dados são classificados em ordem crescente com base na idade 
 
 ## Etapa 4 - Filtrar dados {#step-4---filter-data}
 
-O editor de query permite que você filtre os dados para refinar sua pesquisa.
-
-Os filtros oferecidos dependem da tabela à qual o query se refere.
+O Editor de consultas permite filtrar os dados para restringir os resultados. Os filtros disponíveis dependem da tabela que você está consultando.
 
 ![](assets/query_editor_nveau_09.png)
 
-Após selecionar a opção **[!UICONTROL Filtering conditions]**, você acessará a seção **[!UICONTROL Target elements]**, que permite definir como filtrar os dados a coletar.
+Após selecionar **[!UICONTROL Filtering conditions]**, a seção **[!UICONTROL Target elements]** é aberta. Aqui, você pode definir as regras para filtrar os dados a serem coletados.
 
-* Para criar um novo filtro, selecione os campos, operadores e valores necessários para a criação da fórmula a ser verificada para que os dados sejam selecionados. Você também pode combinar várias condições conforme detalhado [nesta página](filter-conditions.md).
-* Para usar os filtros salvos anteriormente, abra a lista suspensa clicando no botão **[!UICONTROL Add]**, clique em **[!UICONTROL Predefined filter]** e selecione o filtro desejado.
+* Para criar um novo filtro, escolha os campos, operadores e valores necessários para criar a condição. Você também pode combinar várias condições, conforme explicado [nesta página](filter-conditions.md).
+
+* Para reutilizar um filtro existente, clique no botão **[!UICONTROL Add]**, selecione **[!UICONTROL Predefined filter]** e escolha o filtro desejado.
 
   ![](assets/query_editor_15.png)
 
-* Os filtros criados no **[!UICONTROL Generic query editor]** estão disponíveis em outros aplicativos de query e vice-versa. Para salvar um filtro, clique no ícone **[!UICONTROL Save]**.
+Os filtros criados no **[!UICONTROL Generic query editor]** podem ser reutilizados em outros aplicativos de consulta, e o inverso também é verdadeiro. Para salvar um filtro para uso posterior, clique no ícone **[!UICONTROL Save]**.
 
-  >[!NOTE]
-  >
-  >Para saber mais sobre como criar e usar filtros, consulte [Opções de filtragem](filter-conditions.md).
+>[!NOTE]
+>
+>Para saber mais sobre como criar e usar filtros, consulte [Opções de filtragem](filter-conditions.md).
 
 Como mostrado no exemplo a seguir, para recuperar todos os destinatários falantes de inglês, selecione: &quot;recipient language **equal to** EN&quot;.
 
@@ -111,13 +107,13 @@ Os usuários familiarizados com a linguagem SQL podem clicar em **[!UICONTROL Ge
 
 ## Etapa 5 - Formatar dados {#step-5---format-data}
 
-Após configurar os filtros de restrição, você acessará a janela **[!UICONTROL Data formatting]**. Essa janela permite que você reorganize as colunas de saída, transforme dados e altere letras maiúsculas e minúsculas dos rótulos de coluna. Ela também permite aplicar uma fórmula ao resultado final usando um campo calculado.
+Após configurar os filtros de restrição, a janela **[!UICONTROL Data formatting]** é aberta. Nesta janela, você pode reorganizar as colunas de saída, transformar dados e ajustar as letras maiúsculas do rótulo da coluna. Também é possível aplicar fórmulas ao resultado final criando um campo calculado.
 
 >[!NOTE]
 >
 >Para obter mais informações sobre os tipos de campos calculados, consulte [Criar campos calculados](filter-conditions.md#creating-calculated-fields).
 
-Colunas não verificadas não serão mostradas na janela de visualização de dados.
+Colunas não verificadas estão ocultas na janela de visualização de dados.
 
 ![](assets/query_editor_nveau_10.png)
 
@@ -131,7 +127,7 @@ A coluna **[!UICONTROL Transformation]** possibilita alterar um rótulo de colun
 
 ## Etapa 6 - Pré-visualizar dados {#step-6---preview-data}
 
-A janela **[!UICONTROL Data preview]** é a última etapa. Clique em **[!UICONTROL Start the preview of the data]** para obter o resultado da query. Ele está disponível em colunas ou no formato XML. Clique na guia **[!UICONTROL Generated SQL queries]** para exibir a query no formato SQL.
+A janela **[!UICONTROL Data preview]** marca o estágio final do processo de consulta. Clique em **[!UICONTROL Start the preview of the data]** para analisar seus resultados, que podem ser exibidos em colunas ou no formato XML. Para examinar a consulta SQL subjacente, abra a guia **[!UICONTROL Generated SQL queries]**. Essa etapa permite verificar se a consulta se comporta conforme esperado antes de usá-la posteriormente.
 
 Neste exemplo, dados são classificados em ordem crescente com base na idade do destinatário.
 
@@ -139,7 +135,7 @@ Neste exemplo, dados são classificados em ordem crescente com base na idade do 
 
 >[!NOTE]
 >
->Por padrão, apenas as primeiras 200 linhas são exibidas na janela **[!UICONTROL Data preview]**. Para alterar isso, digite um número na caixa **[!UICONTROL Lines to display]** e clique em **[!UICONTROL Start the preview of the data]**.
+>Como em para todas as listas disponíveis no console, por padrão, apenas as primeiras 200 linhas são exibidas na janela **[!UICONTROL Data preview]**. Para alterar isso, insira um número na caixa **[!UICONTROL Lines to display]** e clique em **[!UICONTROL Start the preview of the data]**. [Saiba mais](../config/ui-settings.md#manage-and-customize-lists)
 
 
 

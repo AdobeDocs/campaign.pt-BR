@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: adea4eb54f3d519802119646bc501aae2ef5f831
 workflow-type: tm+mt
-source-wordcount: '3832'
-ht-degree: 95%
+source-wordcount: '3845'
+ht-degree: 94%
 
 ---
 
@@ -416,9 +416,13 @@ Se você estiver exportando uma coleção de elementos (por exemplo, assinaturas
 
 ### Etapa 8 - Pré-visualização de dados {#step-8---data-preview}
 
-Clique em **[!UICONTROL Start the preview of the data]** para pré-visualizar o resultado da exportação. Por padrão, as 200 primeiras linhas são exibidas. Para alterar esse valor, clique nas setas à direita do campo **[!UICONTROL Lines to display]**.
+Clique em **[!UICONTROL Start the preview of the data]** para pré-visualizar o resultado da exportação.
 
 ![](assets/s_ncs_user_export_wizard07.png)
+
+>[!NOTE]
+>
+>Como em para todas as listas disponíveis no console, por padrão, apenas as primeiras 200 linhas são exibidas na janela **[!UICONTROL Data preview]**. Para alterar isso, insira um número na caixa **[!UICONTROL Lines to display]** e clique em **[!UICONTROL Start the preview of the data]**. [Saiba mais](../config/ui-settings.md#manage-and-customize-lists)
 
 Clique nas guias localizadas na parte inferior do assistente para alternar da visualização dos resultados nas colunas para os resultados em XML. Você também pode visualizar as consultas SQL geradas.
 
