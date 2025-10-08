@@ -6,14 +6,14 @@ role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 4%
 
 ---
 
-# Exibir perfis existentes{#view-profiles}
+# Exibir perfis existentes {#view-profiles}
 
 Navegue até **[!UICONTROL Profiles and targets]** para acessar destinatários armazenados no banco de dados do Adobe Campaign.
 
@@ -31,7 +31,7 @@ Para manipulações de perfil mais avançadas, acesse a árvore do Campaign pelo
 >A tela Recipient integrada é definida por meio de um esquema XML e seu formulário associado. O esquema XML está armazenado no nó **[!UICONTROL Administration > Configuration > Data schemas]** da árvore do gerenciador do Adobe Campaign. Somente usuários especialistas podem fazer alterações nesses esquemas.
 >
 
-## Editar um perfil{#edit-a-profiles}
+## Editar um perfil {#edit-a-profiles}
 
 Selecione um perfil para exibir detalhes em uma nova guia.
 
