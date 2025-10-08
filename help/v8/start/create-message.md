@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1524'
+ht-degree: 99%
 
 ---
 
@@ -94,7 +94,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
    Os seguintes tipos de público-alvo estão disponíveis:
 
-   * **[!UICONTROL Filtering conditions]**: use esta opção para definir uma consulta e exibir o resultado. Saiba como criar uma consulta [nesta seção](../start/query-editor.md).
+   * **[!UICONTROL Filtering conditions]**: use esta opção para definir uma consulta personalizada para recuperar os destinatários. Saiba como criar uma consulta [nesta seção](../start/query-editor.md).
    * **[!UICONTROL A list of recipients]**: use essa opção para direcionar uma lista de perfis. Saiba mais sobre listas [nesta seção](../audiences/create-audiences.md).
    * **[!UICONTROL A recipient]**: use esta opção para selecionar um perfil específico no banco de dados.
    * **[!UICONTROL Recipients included in a folder]**: use esta opção para direcionar todos os perfis de uma pasta específica.
@@ -182,7 +182,7 @@ Para obter mais informações sobre destinatários e envio de provas, consulte 
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
