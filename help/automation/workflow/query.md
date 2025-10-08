@@ -6,10 +6,10 @@ feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
 workflow-type: tm+mt
 source-wordcount: '1603'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -52,7 +52,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
    Você também pode adicionar condições de agrupamento de dados marcando a caixa correspondente. Para fazer isso, a dimensão de filtro deve ser diferente da dimensão de direcionamento do query. Para obter mais informações sobre agrupamento, consulte esta [seção](query-grouping-management.md).
 
-   Você também pode adicionar mais critérios usando o Construtor de Expressões e combinando com as opções lógicas AND, OR e EXCEPT.
+   Você também pode adicionar mais critérios usando o [Construtor de expressões](../../v8/start/filter-conditions.md#using-and--or--except) e combinando-o com as opções lógicas AND, OR e EXCEPT.
 
    Salve seu filtro se quiser reutilizá-lo posteriormente.
 
