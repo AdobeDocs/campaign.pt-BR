@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 72e3f643d0e53c22c5007aab431689ebeca7403c
+source-git-commit: 24a5c4f1d73ea08e40d271db483da33bf5615fb2
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 37%
+source-wordcount: '1882'
+ht-degree: 36%
 
 ---
 
@@ -41,12 +41,7 @@ Por padrão, o Adobe Campaign exibe todos os registros do banco de dados que o o
 
 ![](assets/filter_web_zone.png)
 
-Há várias maneiras de filtrar os dados a serem exibidos. Se necessário, eles podem ser usados juntos.
-
-* Filtrar em pastas, consulte [Filtrar por pasta](#filter-by-folder),
-* Filtrar por estado, consulte [Filtrar por status](#filter-by-status),
-* Classificação de dados, consulte [Pedido por](#order-by),
-* Pesquisar, consulte [Pesquisa rápida](#quick-search).
+Há várias maneiras de filtrar os dados a serem exibidos. Se necessário, eles podem ser usados juntos. Navegue pelas guias abaixo para saber mais sobre as opções de filtragem.
 
 
 >[!BEGINTABS]
@@ -389,9 +384,9 @@ Para executar recursos avançados de filtragem, use funções para definir o con
 
 Saiba como criar consultas avançadas nestes exemplos completos:
 
-* Saiba como segmentar em atributos de destinatários simples [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=pt-BR){target="_blank"}.
-* Saiba como filtrar destinatários não contatados nos últimos 7 dias nesta [página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=pt-BR){target="_blank"}.
-* Saiba como recuperar a lista de operadores que podem ser filtrados por Contas ativas em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=pt-BR){target="_blank"}.
+* Saiba como segmentar em atributos de destinatários simples [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+* Saiba como filtrar destinatários não contatados nos últimos 7 dias nesta [página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}.
+* Saiba como recuperar a lista de operadores que podem ser filtrados por Contas ativas em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
 * Saiba como criar um público-alvo de email de aniversário na [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR){target="_blank"}.
 
 
