@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
+source-git-commit: a05b1d7d9b35f8d9189046fd4288d0b80f30967a
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 54%
@@ -14,18 +14,18 @@ ht-degree: 54%
 
 # Criar e publicar seu modelo para mensagens transacionais{#template-transactional-messages}
 
-Cada evento pode acionar uma mensagem personalizada. Para que isso aconteça, você precisa criar um template de mensagem para corresponder a cada tipo de evento. Os templates contêm as informações necessárias para personalizar a mensagem transacional. Você também pode usar templates para testar a pré-visualização da mensagem e enviar provas usando seed addresses antes de entregar ao target final.
+Cada evento pode acionar uma mensagem personalizada. Para que isso aconteça, você precisa criar um template de mensagem para corresponder a cada tipo de evento. Os modelos contêm as informações necessárias para personalizar a mensagem transacional. Você também pode usar modelos para testar a pré-visualização da mensagem e enviar provas usando seed addresses antes de entregar ao target final.
 
 ## Criar o modelo{#create-message-template}
 
 Para criar um template de mensagem, siga as etapas abaixo:
 
 1. Acesse a pasta **[!UICONTROL Message Center >Transactional message templates]** da árvore do Adobe Campaign.
-1. Clique com o botão direito do mouse na lista de templates de mensagem transacional e selecione **[!UICONTROL New]** no menu suspenso ou clique no botão **[!UICONTROL New]** acima da lista de templates de mensagem transacional.
+1. Clique com o botão direito do mouse na lista de modelos de mensagem transacional e selecione **[!UICONTROL New]** no menu suspenso ou clique no botão **[!UICONTROL New]** acima da lista de modelos de mensagem transacional.
 
    ![](assets/messagecenter_create_model_001.png)
 
-1. Na janela da entrega, selecione o template da entrega apropriado para o canal que deseja usar.
+1. Na janela da entrega, selecione o modelo da entrega apropriado para o canal que deseja usar.
 
    ![](assets/messagecenter_create_model_002.png)
 
@@ -36,7 +36,7 @@ Para criar um template de mensagem, siga as etapas abaixo:
 
    >[!CAUTION]
    >
-   >Um tipo de evento nunca deve estar vinculado a mais de um template.
+   >Um tipo de evento nunca deve estar vinculado a mais de um modelo.
 
 1. Insira uma natureza e uma descrição, depois clique em **[!UICONTROL Continue]** para criar o corpo da mensagem.
 
@@ -60,7 +60,7 @@ Após definir o conteúdo da mensagem, você pode integrar as informações do e
 
 Para inserir tags de personalização no corpo de uma mensagem de email, siga as etapas abaixo:
 
-1. No template de mensagem, clique na guia que corresponde ao formato do email (HTML ou texto).
+1. No modelo de mensagem, clique na guia que corresponde ao formato do email (HTML ou texto).
 1. Insira o corpo da mensagem.
 1. No corpo do texto, insira a tag usando os menus **[!UICONTROL Real time events>Event XML]**.
 
@@ -86,7 +86,7 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Inserir dados de teste. [Saiba mais sobre dados de personalização na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-data.html){target="_blank"}
+1. Inserir dados de teste. [Saiba mais sobre dados de personalização na documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
@@ -155,7 +155,7 @@ Para enviar a prova:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-É possível acessar as provas em cada template através da guia **[!UICONTROL Audit]**.
+É possível acessar as provas em cada modelo através da guia **[!UICONTROL Audit]**.
 
 ![](assets/messagecenter_send_proof_003.png)
 
@@ -211,11 +211,11 @@ Assim que um modelo de mensagem for publicado <!--on the execution instances-->,
 
 * Na verdade, um modelo publicado ainda poderá ser chamado se o evento correspondente for acionado: se você não estiver mais usando um modelo de mensagem, será recomendável desfazer a publicação. Dessa forma, você pode evitar o envio de uma mensagem transacional indesejada por engano.
 
-  Por exemplo, você publicou um template de mensagem que só usa para campanhas de Natal. Talvez você queira desfazer a publicação depois que o período de Natal acabar e publicá-lo novamente no próximo ano.
+  Por exemplo, você publicou um modelo de mensagem que só usa para campanhas de Natal. Talvez você queira desfazer a publicação depois que o período de Natal acabar e publicá-lo novamente no próximo ano.
 
-* Além disso, não é possível excluir um template de mensagem transacional que tenha o status **[!UICONTROL Published]**. Você deve desfazer a publicação primeiro.
+* Além disso, não é possível excluir um modelo de mensagem transacional que tenha o status **[!UICONTROL Published]**. Você deve desfazer a publicação primeiro.
 
-Para desfazer a publicação de um template de mensagem transacional, siga as etapas abaixo.
+Para desfazer a publicação de um modelo de mensagem transacional, siga as etapas abaixo.
 
 1. Navegue até a pasta **[!UICONTROL Message Center > Transactional message templates]**.
 1. Selecione o modelo para desfazer a publicação.
@@ -224,7 +224,7 @@ Para desfazer a publicação de um template de mensagem transacional, siga as et
 
 ![](assets/message-center-unpublish.png)
 
-O status do template de mensagem transacional muda de **[!UICONTROL Published]** para **[!UICONTROL Being edited]**.
+O status do modelo de mensagem transacional muda de **[!UICONTROL Published]** para **[!UICONTROL Being edited]**.
 
 Depois de desfazer a publicação:
 
