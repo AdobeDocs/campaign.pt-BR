@@ -5,10 +5,10 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: 449f24cb23afa2d6bd7d6f2ad7ff3ba65e0a1d5d
+source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 96%
+source-wordcount: '796'
+ht-degree: 95%
 
 ---
 
@@ -117,6 +117,7 @@ ht-degree: 96%
    + [Introdução a perfis e públicos-alvo](audiences/gs-audiences.md)
    + [Trabalhar com públicos-alvo](start/audiences.md)
    + [Acessar perfis](audiences/view-profiles.md)
+   + [Trabalhar com filtros](audiences/create-filters.md)
    + Adicionar perfis {#add-profiles}
       + [Criar perfis manualmente](audiences/create-profiles.md)
       + [Importar perfis de um arquivo](audiences/import-profiles.md)
@@ -126,7 +127,6 @@ ht-degree: 96%
       + [Criar perfis de teste](audiences/test-profiles.md)
    + Criar públicos-alvo {#create-audiences}
       + [Criar uma lista de contatos](audiences/create-audiences.md)
-      + [Criar e gerenciar filtros](audiences/create-filters.md)
       + [Compartilhar públicos-alvo com soluções da Adobe](start/shared-audiences.md)
    + [Práticas recomendadas](audiences/audiences-best-practices.md)
    + [Gerenciar assinaturas](start/subscriptions.md)

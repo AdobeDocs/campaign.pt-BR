@@ -5,12 +5,10 @@ description: Próximas alterações no Canal de notificação por push
 feature: Push
 role: Admin
 level: Experienced
-badge-v7: label="v7" type="Informative" tooltip="Também se aplica ao Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Aplicável ao Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a9aa9cb508ca1f5cdcd59e61b5be029e3de1a82f
+source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '1653'
 ht-degree: 10%
 
 ---
@@ -50,7 +48,7 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 * O arquivo JSON da conta do serviço Android Firebase Admin SDK é necessário para mover o aplicativo móvel para HTTP v1. Saiba como obter este arquivo na [documentação do Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* Para o Campaign Classic v7, o suporte do HTTP v1 foi adicionado à versão 20.3.1. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar seu ambiente para a [compilação mais recente do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=pt-BR){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
+* Para o Campaign Classic v7, o suporte do HTTP v1 foi adicionado à versão 20.3.1. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar seu ambiente para a [compilação mais recente do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
 
 * Como usuário no local do Campaign Classic v7, você deve atualizar os servidores Marketing e Execução em tempo real.
 
@@ -58,7 +56,7 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 * Sobre a conta externa Android routing:
 
-   * Como usuário no local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+   * Como usuário no local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
 
    * Para implantações híbridas, hospedadas e gerenciadas do Cloud Services, você também deve se conectar com a equipe de Atendimento ao cliente da Adobe para validar se o conector `androidPushConnectorV2.js (nms)` está selecionado na conta externa de roteamento do Android do seu servidor Mid-sourcing.
 
@@ -212,7 +210,7 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 #### Pré-requisitos {#ios-transition-prerequisites}
 
-* Para o Campaign Classic v7, o suporte ao modo de **Autenticação baseada em token** foi adicionado na versão 20.2. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para essa alteração é atualizar seu ambiente para a [compilação mais recente do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=pt-BR){target="_blank"}. Para o Campaign v8, o modo de **autenticação baseada em token** é compatível com todas as versões, e nenhuma atualização é necessária.
+* Para o Campaign Classic v7, o suporte ao modo de **Autenticação baseada em token** foi adicionado na versão 20.2. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para essa alteração é atualizar seu ambiente para a [compilação mais recente do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o modo de **autenticação baseada em token** é compatível com todas as versões, e nenhuma atualização é necessária.
 
 * Você precisa de uma chave de assinatura de token de autenticação APNs para gerar os tokens que seu servidor usa. Você solicita essa chave da sua conta de desenvolvedor do Apple, conforme explicado na [Documentação do desenvolvedor do Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 
