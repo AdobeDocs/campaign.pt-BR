@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1145'
 ht-degree: 97%
 
 ---
@@ -74,20 +74,20 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
 
    [Saiba como importar perfis](import.md).
 
-   Os públicos-alvo são agrupados em listas e podem ser criados por meio de workflows. Eles podem ser direcionados em entregas entre canais.
+   Os públicos-alvo são agrupados em listas e podem ser criados por meio de fluxos de trabalho. Eles podem ser direcionados em entregas entre canais.
 
    [Saiba como definir públicos-alvo](audiences.md).
 
 1. **Usar modelos**
 
-   Campanhas, entregas, tarefas ou workflows são todos baseados em um modelo, que armazena configurações e recursos principais. Um modelo integrado é fornecido para cada componente, para o qual nenhuma configuração específica foi definida. Você precisa configurar e adaptar modelos às suas necessidades e disponibilizá-los aos usuários finais.
+   Campanhas, entregas, tarefas ou fluxos de trabalho são todos baseados em um modelo, que armazena configurações e recursos principais. Um modelo integrado é fornecido para cada componente, para o qual nenhuma configuração específica foi definida. Você precisa configurar e adaptar modelos às suas necessidades e disponibilizá-los aos usuários finais.
 
 
    Saiba como trabalhar com modelos de campanha [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=pt-BR){target="_blank"}.
 
    Saiba como configurar um modelo de fluxo de trabalho em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target="_blank"}.
 
-   Saiba mais sobre modelos de email na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR){target="_blank"}.
+   Saiba mais sobre modelos de email nesta [página](../send/create-templates.md).
 
 
 1. **Configurar regras de tipologia**

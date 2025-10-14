@@ -6,10 +6,10 @@ feature: Email, Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,8 @@ O SpamAssassin aproveita uma variedade de técnicas de detecção de spam, inclu
 
 Após criar sua entrega de email e definir seu conteúdo, siga as etapas abaixo para avaliar os riscos.
 
-Para obter mais informações sobre criar e configurar uma entrega, consulte [esta página](defining-the-email-content.md).
+Para obter mais informações sobre como criar uma entrega, consulte esta [página](defining-the-email-content.md).
+
 
 1. Acesse a guia **[!UICONTROL Preview]**.
 1. Selecione um destinatário para pré-visualizar sua entrega.

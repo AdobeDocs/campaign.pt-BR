@@ -6,10 +6,10 @@ feature: Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 98%
+source-wordcount: '641'
+ht-degree: 99%
 
 ---
 
@@ -65,7 +65,7 @@ Ao configurar, projetar e testar sua mensagem, siga as práticas recomendadas me
 
 Para evitar o envio de mensagens a endereços inválidos, limitar as comunicações inadequadas e melhorar a reputação do remetente, a Adobe recomenda a implementação de um mecanismo de aceitação dupla. Esse método garante que seus destinatários se inscreveram intencionalmente.
 
-Para obter mais informações, consulte [Criar um formulário de assinatura com aceitação dupla](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
+Para obter mais informações, consulte [Criar um formulário de assinatura com aceitação dupla](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
 
 Para obter mais informações sobre as práticas recomendadas ao coletar dados de clientes, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html?lang=pt-BR#data-quality-and-hygiene){target="_blank"}.
 
@@ -92,5 +92,4 @@ O Adobe Campaign permite verificar o desempenho de suas entregas por meio de um 
 Para obter mais informações, consulte estas seções:
 
 * [Monitorar a capacidade de entrega](monitoring-deliverability.md)
-* [Introdução ao monitoramento de entrega na documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=pt-BR){target="_blank"}
 * [Introdução aos relatórios integrados do Campaign](../reporting/built-in-reports.md)

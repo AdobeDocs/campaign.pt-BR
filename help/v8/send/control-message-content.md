@@ -6,10 +6,10 @@ feature: Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 98%
+source-wordcount: '742'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Para obter dicas adicionais para otimizar a capacidade de entrega ao projetar co
 
 >[!NOTE]
 >
->Para obter mais informações sobre a edição de conteúdo de email, consulte [Definir o conteúdo do email](defining-the-email-content.md).
+>Para obter mais informações sobre edição de conteúdo de email, consulte esta [página](defining-the-email-content.md).
 
 ## Endereço do remetente {#sender-address}
 
@@ -37,7 +37,7 @@ Determinados ISPs verificam a validade do endereço do remetente (**[!UICONTROL 
 
 Verifique se um endereço correto é fornecido no nível da instância (menu **[!UICONTROL Tools > Advanced > deployment wizard...]**) ou nos cenários usados com mais frequência.
 
-Para obter mais informações sobre como definir o endereço do remetente, consulte [esta página](defining-the-email-content.md#sender).
+Para obter mais informações sobre como definir o endereço do remetente, consulte esta [página](defining-the-email-content.md#sender).
 
 ## Personalização {#personalization}
 

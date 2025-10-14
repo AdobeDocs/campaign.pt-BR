@@ -6,10 +6,10 @@ feature: Email
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 27d13642-2971-466b-818d-39328c198b14
-source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 95%
+source-wordcount: '977'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Você pode anexar um ou mais arquivos a uma entrega de email.
 
 >[!NOTE]
 >
->Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado na lista de opções do Campaign. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR#delivery).
+>Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado na lista de opções do Campaign. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 Há dois casos possíveis:
 
@@ -30,7 +30,7 @@ Há dois casos possíveis:
 
 >[!NOTE]
 >
->Esse tipo de configuração é geralmente executada nos templates da entrega. Para obter mais informações, consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=pt-BR).
+>Esse tipo de configuração é geralmente executada nos modelos da entrega. Para obter mais informações, consulte esta [página](../send/create-templates.md).
 
 ## Medidas de proteção {#attachments-guardrails}
 
@@ -38,7 +38,7 @@ Para evitar problemas de desempenho, as imagens incluídas nos emails não podem
 
 A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, só é possível adicionar um arquivo como anexo a um email. Esse limite pode ser configurado na opção `NmsDelivery_MaxRecommendedAttachments`.
 
-Saiba mais na lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR#delivery).
+Saiba mais na lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 ## Anexar um arquivo local {#attaching-a-local-file}
 
@@ -78,7 +78,7 @@ Para criar um anexo personalizado, siga estas etapas:
 
 As seguintes opções estão disponíveis:
 
-* **O nome do arquivo é especificado ao criar o template da entrega**
+* **O nome do arquivo é especificado ao criar o modelo da entrega**
 * **O conteúdo do arquivo é personalizado e convertido em PDF durante a entrega de cada mensagem**
 * **O nome do arquivo é computado durante a análise de entrega (não pode depender do perfil do destinatário)**
 * **O nome do arquivo é computado no momento da entrega para cada destinatário (pode depender do destinatário)**
@@ -127,7 +127,7 @@ Você pode calcular o nome do anexo durante a preparação da entrega. Para faze
 
 >[!NOTE]
 >
->Essa opção é usada somente quando a entrega é enviada por um processo externo ou um workflow.
+>Essa opção é usada somente quando a entrega é enviada por um processo externo ou um fluxo de trabalho.
 
 1. Especifique o rótulo que deseja aplicar ao anexo.
 1. Especifique o caminho de acesso do arquivo e seu nome exato na janela de definição.
@@ -150,7 +150,7 @@ Ao selecionar o anexo, você pode escolher a opção **[!UICONTROL The file name
 
 >[!NOTE]
 >
->Essa opção é usada somente quando a entrega é enviada por um processo externo ou um workflow.
+>Essa opção é usada somente quando a entrega é enviada por um processo externo ou um fluxo de trabalho.
 
 1. Especifique o rótulo que deseja aplicar ao anexo.
 1. Especifique o caminho de acesso do arquivo e seu nome exato na janela de definição. Se o nome do arquivo for personalizado, você poderá usar os Campos de personalização para os valores relevantes.

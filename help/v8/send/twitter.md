@@ -4,9 +4,9 @@ description: Saiba como usar o módulo Adobe Campaign Social Marketing para post
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '782'
 ht-degree: 24%
 
 ---
@@ -31,7 +31,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta X:
 
 1. Criar um delivery X
 
-   Crie uma nova entrega com base no template de entrega **[!UICONTROL Tweet (twitter)]**.
+   Crie uma nova entrega com base no modelo de entrega **[!UICONTROL Tweet (twitter)]**.
 
    ![](assets/tw-new-delivery.png)
 
@@ -149,7 +149,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
 >[!CAUTION]
 >
->Não é possível enviar mais de 250 mensagens diretas por dia. Para não exceder esse limite, é possível entregar em ondas. Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=pt-BR#sending-using-multiple-waves){target="_blank"}.
+>Não é possível enviar mais de 250 mensagens diretas por dia. Para não exceder esse limite, é possível entregar em ondas. Para obter mais informações, consulte esta [seção](configure-and-send.md#sending-using-multiple-waves).
 
 
 ## Acessar dados de rastreamento {#tw-tracking}

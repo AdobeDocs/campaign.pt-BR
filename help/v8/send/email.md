@@ -6,9 +6,9 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '566'
 ht-degree: 20%
 
 ---
@@ -41,7 +41,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 1. **Selecione o modelo**
 
-   Selecione um template da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus destinatários, no entanto, esse título será exibido na lista de entregas. Clique em **[!UICONTROL Continue]**.
+   Selecione um modelo da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus destinatários, no entanto, esse título será exibido na lista de entregas. Clique em **[!UICONTROL Continue]**.
 
    ![](assets/dce_delivery_model.png)
 
@@ -91,7 +91,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
 Seu primeiro delivery de email está pronto. Agora é necessário definir o público-alvo, validar o delivery e enviá-lo.
 
-Saiba como criar um fluxo de trabalho para importar um conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=pt-BR){target="_blank"}.
+Saiba como criar um fluxo de trabalho para importar um conteúdo de email neste [caso de uso](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
 
 >[!MORELIKETHIS]
 >
@@ -100,7 +100,7 @@ Saiba como criar um fluxo de trabalho para importar um conteúdo de email neste 
 >* [Selecione a audiência do seu email](../audiences/gs-audiences.md)
 >* [Validar uma entrega e enviar provas](preview-and-proof.md)
 >* [Configurar e enviar a entrega](configure-and-send.md)
->* [Práticas recomendadas de entrega](../start/delivery-best-practices.md)
+>* [Práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=pt-BR){target="_blank"}
 
 ## Testar e validar seus emails
 
