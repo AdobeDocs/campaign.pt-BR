@@ -3,9 +3,9 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 3bc247ba81de3de56c26bdf8fa9b8aa5ea91fb2a
+source-git-commit: d31368428fc7d5b982bb5fc67d0369bb17ea0b2c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 23%
 
 ---
@@ -28,8 +28,8 @@ O **novo conector de envio de SMS** agora está disponível para [implantações
 
 Esta versão também vem com um conjunto de funcionalidades disponíveis com a interface da Web do Campaign:
 
-* [Enriquecimento de Perfil em Mensagens Transacionais](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=pt-BR){target="_blank"}
-* [Recursos Multilíngues para Mensagens Transacionais, Notificações por Push e SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=pt-BR){target="_blank"}
+* [Enriquecimento de Perfil em Mensagens Transacionais](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Recursos Multilíngues para Mensagens Transacionais, Notificações por Push e SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
 
 Consulte as [notas de versão](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=pt-BR){target="_blank"} da interface da Web do Campaign
 
@@ -52,7 +52,7 @@ Consulte as [notas de versão](https://experienceleague.adobe.com/docs/campaign-
 * Correção de um problema em que o Servidor em tempo real retornava um código de resposta incorreto para tokens IMS inválidos. (NEO-87428)
 * Correção de um problema em que as estatísticas de delivery de email e SMS não eram totalmente recalculadas, causando indicadores de sucesso imprecisos. (NEO-88106)
 * Correção de um problema com o novo conector de envio de SMS em que os logs de entrega atribuíam incorretamente o status de entrega a um pequeno subconjunto de mensagens. (NEO-89581)
-* Correção de um problema com o novo conector de envio de SMS em que as métricas de sucesso de deliveries do T-Mobile não eram atualizadas corretamente nos servidores de marketing e mid. (NEO-89850)
+* Correção de um problema com o novo conector de envio de SMS em que os deliveries de métricas de sucesso não eram atualizados corretamente em servidores de marketing e mid. (NEO-89850)
 * Correção de um problema de sincronização entre as instâncias de Tempo real e Marketing que causava a ausência de logs de rastreamento e relatórios incorretos. (NEO-90247)
 * Correção de um problema de enriquecimento do fluxo de trabalho que causava erros ao selecionar campos em dois links 1-N consecutivos em esquemas personalizados. (NEO-87682)
 
