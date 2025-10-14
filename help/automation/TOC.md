@@ -44,7 +44,7 @@ ht-degree: 81%
          + [Outline de entrega](workflow/delivery-outline.md)
          + [Editar esquema](workflow/edit-schema.md)
          + [Enriquecimento](workflow/enrichment.md)
-         + [Regras de ](workflow/exclusion.md)
+         + [Regras de &#x200B;](workflow/exclusion.md)
          + [Consulta incremental](workflow/incremental-query.md)
          + [Interseção](workflow/intersection.md)
          + [Atualização de lista](workflow/list-update.md)
