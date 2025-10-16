@@ -5,11 +5,10 @@ description: Saiba como criar e inserir cupons personalizados
 feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
-exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 33462c1e2af34000131ce81e23ac2360c2cc5a3a
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 98%
+source-wordcount: '888'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +22,7 @@ A adição de cupons a suas entregas pode oferecer aos destinatários valor apri
 
 O gerenciamento de cupons depende de um pacote que deve ser instalado. Para confirmar se há um gerenciamento de cupom, verifique **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
-Os dados de cupom podem ser importados e exportados usando formatos CSV e XML. [Saiba mais](../../platform/using/get-started-data-import-export.md).
+Os dados de cupom podem ser importados e exportados usando formatos CSV e XML. [Saiba mais](../start/import.md).
 
 ## Criar um cupom {#creating-a-coupon}
 
@@ -58,7 +57,7 @@ Antes de seguir as etapas abaixo, verifique se você sabe o tipo de cupom que de
 
    >[!NOTE]
    >
-   >Os cupons individuais podem ser importados em massa. Para obter detalhes sobre a importação e exportação, consulte [esta seção](../../platform/using/get-started-data-import-export.md).
+   >Os cupons individuais podem ser importados em massa. Para obter detalhes sobre a importação e exportação, consulte [esta seção](../start/import.md).
 
 ### Configurar cupons individuais {#configuring-individual-coupons}
 
@@ -75,8 +74,7 @@ Os valores de **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL 
 
 ## Inserir um cupom em uma entrega por email {#inserting-a-coupon-into-an-email-delivery}
 
-No exemplo abaixo, a entrega é criada a partir da Home page. Para obter instruções detalhadas sobre como criar uma entrega, consulte [esta seção](about-email-channel.md). Você também pode adicionar um cupom a uma entrega em um fluxo de trabalho.
-
+No exemplo abaixo, a entrega é criada a partir da Home page. Para obter instruções detalhadas sobre como criar um delivery, consulte [esta seção](email.md)
 1. Acesse **[!UICONTROL Campaigns]** e escolha **[!UICONTROL Deliveries]**.
 1. Clique em **[!UICONTROL Create]**.
 
@@ -150,9 +148,9 @@ Para confirmar que a entrega foi bem-sucedida:
 
 >[!NOTE]
 >
->Por padrão, o módulo de gestão de cupom usa uma tabela **nms:recipient**. [Saiba mais](../../configuration/using/about-data-model.md#default-recipient-table).
+>Por padrão, o módulo de gestão de cupom usa uma tabela **nms:recipient**. [Saiba mais](../dev/datamodel.md#ootb-profiles).
 >
->Aprenda como usar uma tabela de destinatário personalizada [nesta página](../../configuration/using/about-custom-recipient-table.md).
+>Aprenda como usar uma tabela de destinatário personalizada [nesta página](../dev/custom-recipient.md).
 
 ## Gerenciar cupons insuficientes {#managing-insufficient-coupons}
 
