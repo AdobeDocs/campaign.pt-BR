@@ -4,8 +4,9 @@ description: Saiba como inserir dados de personalização no conteúdo da mensag
 feature: Personalization
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 14a741dd-794e-4760-bfa3-bafbe993a3f7
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 41%
@@ -64,4 +65,4 @@ No caso de uso abaixo, saiba como personalizar um assunto e um corpo de email co
 
 Saiba como adicionar um campo de personalização à linha de assunto e ao conteúdo de um delivery de email no vídeo a seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/31843?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)

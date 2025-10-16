@@ -4,8 +4,9 @@ description: Saiba quais fontes podem ser usadas para personalização
 feature: Personalization
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 711256e2-ab77-404a-b052-6793a85da193
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 38%
@@ -48,7 +49,7 @@ Ao usar dados externos acessados na FDA, é recomendável pré-processar a perso
 
 Você pode otimizar a personalização usando uma opção dedicada: **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de entrega.
 
-Durante a análise de entrega, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao público-alvo em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
+Durante a análise de entrega, essa opção cria e executa automaticamente um fluxo de trabalho que armazena todos os dados vinculados ao Target em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
 
 Marcar essa opção pode melhorar muito o desempenho da análise de entrega quando muitos dados estão sendo processados, especialmente se os dados de personalização vêm de uma tabela externa por meio do FDA. [Saiba mais](../connect/fda.md).
 
@@ -58,13 +59,13 @@ Para usar essa opção, siga as etapas abaixo:
 1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Consulta** ao fluxo de trabalho.
 1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra.
 1. Vá até a guia **[!UICONTROL Analysis]** do **[!UICONTROL Delivery properties]** e selecione a opção **[!UICONTROL Prepare the personalization data with a workflow]**.
-1. Configure a entrega e comece o workflow para iniciar a análise.
+1. Configure a entrega e comece o fluxo de trabalho para iniciar a análise.
 
-Depois que a análise é feita, os dados da personalização são armazenados em uma tabela temporária por meio de um workflow temporário criado em tempo real durante a análise.
+Depois que a análise é feita, os dados da personalização são armazenados em uma tabela temporária por meio de um fluxo de trabalho temporário criado em tempo real durante a análise.
 
-Este workflow não está visível na interface do Adobe Campaign. É para ser apenas um meio técnico para armazenar e manipular rapidamente os dados de personalização.
+Este fluxo de trabalho não está visível na interface do Adobe Campaign. É para ser apenas um meio técnico para armazenar e manipular rapidamente os dados de personalização.
 
-Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do workflow e selecione a guia **[!UICONTROL Variables]**. Você pode ver o nome da tabela temporária que pode ser usada para fazer uma chamada SQL para exibir as IDs que ela contém.
+Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do fluxo de trabalho e selecione a guia **[!UICONTROL Variables]**. Você pode ver o nome da tabela temporária que pode ser usada para fazer uma chamada SQL para exibir as IDs que ela contém.
 
 ## Dados do Personalization em um workflow
 

@@ -4,8 +4,9 @@ description: Saiba como personalizar o conteúdo da mensagem
 feature: Personalization
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 64%
@@ -70,4 +71,4 @@ As variáveis a seguir são variáveis internas que podem ser usadas para person
 Entenda os diferentes tipos de conteúdo dinâmico e saiba como criar e aplicar blocos de personalização e declarações condicionais a uma entrega.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452873?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)
