@@ -71,4 +71,4 @@ As variáveis a seguir são variáveis internas que podem ser usadas para person
 Entenda os diferentes tipos de conteúdo dinâmico e saiba como criar e aplicar blocos de personalização e declarações condicionais a uma entrega.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3452873?captions=por_br&quality=12)

@@ -65,4 +65,4 @@ No caso de uso abaixo, saiba como personalizar um assunto e um corpo de email co
 
 Saiba como adicionar um campo de personalização à linha de assunto e ao conteúdo de um delivery de email no vídeo a seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31843?captions=por_br&quality=12)
