@@ -5,10 +5,10 @@ feature: Workflows, Data Management, Federated Data Access
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 17%
+source-wordcount: '304'
+ht-degree: 16%
 
 ---
 
@@ -29,9 +29,13 @@ Observe que, ao usar a atividade **[!UICONTROL Change Data Source]**, é necess�
 >
 >Observe que as atividades **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** não devem ser adicionadas em uma linha. Se você precisar usar ambas as atividades consecutivamente, certifique-se de incluir uma atividade **[!UICONTROL Enrichement]** entre elas. Isso garante a execução adequada e evita possíveis conflitos ou erros.
 
+>[!NOTE]
+>
+>A atividade **Change Data Source** pode processar no máximo um milhão de registros por execução. Entre em contato com seu representante da Adobe se precisar aumentar esse limite.
+
 Para usar a atividade **[!UICONTROL Change Data Source]**, você deve:
 
-1. Criar um workflow.
+1. Criar um fluxo de trabalho.
 
 1. Consulte seus destinatários alvos com uma atividade de **[!UICONTROL Query]**.
 
@@ -57,4 +61,4 @@ Para usar a atividade **[!UICONTROL Change Data Source]**, você deve:
 
    ![](assets/change-data-source_3.png)
 
-1. Agora, você pode iniciar o seu workflow.
+1. Agora, você pode iniciar o seu fluxo de trabalho.

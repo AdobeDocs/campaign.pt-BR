@@ -6,10 +6,10 @@ feature: Campaigns, Audiences
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
-source-wordcount: '1470'
-ht-degree: 79%
+source-wordcount: '1484'
+ht-degree: 78%
 
 ---
 
@@ -19,7 +19,7 @@ Em uma campanha de marketing, para cada entrega, é possível definir:
 
 * O público-alvo. Você pode enviar mensagens para uma [lista de destinatários](#send-to-a-group) ou criar um [público-alvo em um fluxo de trabalho](#build-the-main-target-in-a-workflow)
 * Um grupo de controle. Você pode [adicionar um grupo de controle](#add-a-control-group) para monitorar o comportamento dos destinatários após a entrega da mensagem
-* Seed addresses - saiba mais em [esta seção](../../v8/audiences/test-profiles.md).—>
+* Seed addresses – saiba mais [nesta seção](../../v8/audiences/test-profiles.md).
 
 Algumas dessas informações podem ser herdadas do [modelo de campanha](marketing-campaign-templates.md#campaign-templates).
 
@@ -177,6 +177,10 @@ Um grupo de controle é uma população que não receberá a entrega; ele é usa
 
 O grupo de controle pode ser extraído do target principal e/ou vir de um grupo ou query específica.
 
+>[!CAUTION]
+>
+>Não é possível usar grupos de controle ao carregar a população do público-alvo de um arquivo externo.
+
 ### Ativar o grupo de controle para uma campanha {#activate-the-control-group-for-a-campaign}
 
 Você pode definir um grupo de controle no nível da campanha. Nesse caso, o grupo de controle será aplicado a cada entrega da campanha em questão.
@@ -248,4 +252,4 @@ Este vídeo explica como adicionar um grupo de controle a uma campanha.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
-Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
