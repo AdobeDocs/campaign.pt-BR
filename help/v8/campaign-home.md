@@ -3,10 +3,10 @@ keywords: Campaign Classic;página inicial;tópicos populares
 description: Encontre ajuda na central de ajuda do Adobe Campaign v8. Saiba mais sobre as novidades, melhorias e correções do Campaign v8.
 title: Documentação do produto Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: dc8aef5fe542db06368a2cc0c832b4d43b069fc7
+source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 91%
+source-wordcount: '298'
+ht-degree: 90%
 
 ---
 
@@ -31,13 +31,13 @@ Explore a nova interface de usuário do Adobe Campaign. Mais moderna, intuitiva 
 
 [![imagem](assets/do-not-localize/learn-more-button.svg)](start/campaign-ui.md#ac-web-ui)
 
+<!--
+>[!TAB Push channel upcoming changes] 
 
->[!TAB Próximas alterações no canal de push]
+Some important changes to the Android Firebase Cloud Messaging (FCM) service will be released in 2024, and may impact your Adobe Campaign implementation. Your subscription services configuration for Android push messages may need to be updated to support this change. You can already check and take action.
 
-Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para Android serão lançadas em 2024 e poderão afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push no Android pode precisar ser atualizada para oferecer suporte a essa alteração. É recomendado verificar isso antecipadamente e tomar as devidas ações.
-
-[![imagem](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
-
+[![image](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
+-->
 
 
 >[!ENDTABS]
@@ -112,5 +112,5 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
 
 ## Recursos adicionais
 
-[Descrição do produto Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentação da interface do Adobe Campaign Web](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"} - [Tutoriais](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] Guia de automação](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+[Descrição do produto Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentação da interface do Adobe Campaign Web](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Tutoriais](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] Guia de automação](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
 

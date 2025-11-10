@@ -1,8 +1,10 @@
 ---
 title: Atualização da infraestrutura de envio de email do Campaign
 description: Atualização da infraestrutura de envio de email do Campaign
+hide: true
+hidefromtoc: true
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
+source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 5%
@@ -55,11 +57,11 @@ As atualizações de ambientes de produção começaram em **janeiro de 2024**.
 
 * **Quais testes são exigidos pelos clientes?**
 
-  Não esperamos nenhum teste por parte dos clientes em conexão com esse evento de atualização. Caso algum problema seja observado, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support){target="_blank"}.
+  Não esperamos nenhum teste por parte dos clientes em conexão com esse evento de atualização. Caso algum problema seja observado, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **É possível solicitar uma alteração em Data/Hora no slot de atualização de segurança agendado?**
 
   Não. Não é possível acomodar as modificações solicitadas à programação existente, pois isso provavelmente interromperá o evento de atualização atribuído para outro cliente.
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support){target="_blank"}.
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
