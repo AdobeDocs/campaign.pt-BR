@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 6b70ad987b828dc1c17bc4f0683046be4eff0408
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 63%
+source-wordcount: '862'
+ht-degree: 44%
 
 ---
 
@@ -76,11 +76,55 @@ Cada um desses campos pode ser personalizado usando o ícone dedicado. Saiba mai
 
 Para obter mais informações sobre gerenciamento de rejeição de emails, consulte [esta seção](delivery-failures.md#bounce-mail-management).
 
+## Ativar lista de um clique - cancelar inscrição {#one-click-list-unsubscribe}
+
+O URL de um clique para cancelar a inscrição na lista é um link ou botão exibido ao lado das informações do remetente do email, que permite que os destinatários recusem instantaneamente suas listas de endereçamento com um único clique. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
+
+Ele é exibido como um link **Cancelar inscrição** nas interfaces de email dos ISPs. Por exemplo:
+
+![](assets/email-list-unsubscribe-example.png)
+
+Adicionar um cabeçalho SMTP chamado List-Unsubscribe é obrigatório para garantir o gerenciamento ideal de deliverability e pode ser usado como uma alternativa ao ícone &quot;Relatar como SPAM&quot;. Na verdade, o uso dessa funcionalidade diminui as taxas de reclamação e ajuda a proteger sua reputação.
+
+>[!IMPORTANT]
+>
+>Para exibir o URL de cancelamento de inscrição com um clique no cabeçalho do email, o cliente de email dos destinatários deve ser compatível com esse recurso.
+
+Para habilitar esta funcionalidade, selecione a opção **[!UICONTROL Addition of One-click List-Unsubscription Header]** na guia **[!UICONTROL SMTP]** das propriedades de entrega.
+
+>[!NOTE]
+>
+>Essa opção está habilitada por padrão.
+
+![](assets/email-smtp-list-unsubscribe.png)
+
+<!--
+>[!WARNING]
+>
+>If you uncheck this option in the delivery template, it will still be enabled by default in the deliveries created from this template. You need to enable the option again at the delivery level.-->
+
+Dependendo do cliente de email e do método que estão usando para executar a recusa, clicar no link **Cancelar inscrição** no cabeçalho do email poderá ter o seguinte impacto:
+
+* Se o cliente de email estiver usando o método List-Unsubscribe **de um clique**, o destinatário será recusado diretamente.
+
+  >[!NOTE]
+  >
+  >Principais ISPs, como Google e Yahoo! estão exigindo que os remetentes cumpram o **One-Click List-Unsubscribe**.
+
+* Se o cliente de email não oferecer suporte ao One-Click List-Unsubscribe, ainda será possível usar o método **&quot;mailto&quot;** List-Unsubscribe, que envia um email preenchido previamente para o endereço de cancelamento de inscrição especificado no cabeçalho do email.
+
+  Você pode definir o endereço explicitamente no cabeçalho ou usar um endereço dinâmico (por exemplo, usando &lt;%=errorAddress%> ou a opção &#39;NmsEmail_DefaultErrorAddr&#39;) que pode ser definido por meio do assistente de implantação.
+
+>[!NOTE]
+>
+>Você também pode definir manualmente os métodos [List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} e [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} com um clique. As etapas detalhadas estão descritas no [Manual de práticas recomendadas de capacidade de delivery](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"} do Experience Cloud.
+
+
 ## Adicionar cabeçalhos SMTP {#adding-smtp-headers}
 
 É possível adicionar cabeçalhos SMTP às entregas Para fazer isso, use a seção relevante da guia **[!UICONTROL SMTP]** na entrega.
 
-O script inserido nessa janela deve referenciar um cabeçalho por linha no seguinte formulário: **name:value**.
+O script inserido nessa janela deve referenciar um cabeçalho por linha no seguinte formulário: **nome:value**.
 
 Os valores são codificados automaticamente se necessário.
 
