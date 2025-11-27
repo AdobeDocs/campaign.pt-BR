@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
+source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 74%
+source-wordcount: '1178'
+ht-degree: 69%
 
 ---
 
@@ -82,19 +82,17 @@ Cada recurso concede acesso a um conjunto de ferramentas essenciais na seção *
 
 Por exemplo, ao navegar até a guia **[!UICONTROL Profiles and targets]**, é possível acessar listas de destinatários, serviços de assinatura, fluxos de trabalho de direcionamento existentes e atalhos para criar todos esses componentes.
 
-![](assets/overview-list.png)
+![Interface do usuário do console do Campaign mostrando como acessar as listas na guia Profiles and target](assets/overview-list.png)
 
 Ao selecionar um elemento na tela, ele é carregado em uma nova guia para que você possa navegar facilmente pelo conteúdo.
 
-![](assets/new-tab.png)
+![Interface do usuário do console do Campaign mostrando como editar uma lista em uma nova guia](assets/new-tab.png)
 
 ### Criar um elemento {#create-an-element}
 
 Use atalhos na seção **[!UICONTROL Create]** à esquerda da tela para adicionar novos elementos. Você também pode usar o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos à lista atual.
 
-Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para criar uma nova entrega.
-
-![](assets/new-recipient.png)
+![Interface do usuário do console do Campaign mostrando como criar um destinatário a partir da tela Perfis e destino](assets/new-recipient.png)
 
 <!--
 ## Use a web browser {#web-browser}
@@ -109,7 +107,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
 Navegue pelo Explorer do Campaign para acessar todos os recursos e configurações do Adobe Campaign.
 
-![](assets/explorer.png)
+![Interface do usuário do console do Campaign mostrando o Explorer com foco no menu Campanhas](assets/explorer.png)
 
 Este espaço de trabalho permite acessar a árvore do Explorer para navegar por todos os recursos e opções.
 
@@ -153,7 +151,7 @@ Os idiomas compatíveis dependem da interface.
   >
   >O idioma é selecionado durante o processo de instalação e **não pode ser alterado** posteriormente.
 
-* Para conhecer os idiomas compatíveis com a interface do Campaign Web, [consulte esta página](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=pt-BR#language-pref){target="_blank"}.
+* Para saber os idiomas compatíveis com a interface da Web do Campaign, [consulte a documentação da interface do usuário do Campaign na Web](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=pt-BR#language-pref){target="_blank"}.
 
 ## Formatos
 

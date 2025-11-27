@@ -4,11 +4,12 @@ description: Saiba como conceder permissões a usuários do Campaign v8
 feature: Permissions
 role: User, Admin
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
+source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
 workflow-type: tm+mt
 source-wordcount: '1618'
-ht-degree: 39%
+ht-degree: 42%
 
 ---
 
@@ -102,11 +103,11 @@ Esses perfis de produto correspondem com os **grupos de operadores** do Campaign
 
    Esse grupo contém os seguintes direitos nomeados:
 
-   * **[!UICONTROL ADMINISTRATION]**: direito a executar/criar/editar/excluir qualquer objeto, como workflow, entrega, scripts, etc.
+   * **[!UICONTROL ADMINISTRATION]**: direito a executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, entrega, scripts, etc.
 
 1. **[!UICONTROL Delivery operators]** (entrega)
 
-   Os operadores nesse grupo são responsáveis pelo gerenciamento de entregas: eles permitem o acesso aos principais recursos necessários para a criação e preparação de entregas (tipologias de campanha, mapeamentos de entrega, templates padrão, blocos de personalização, etc.).
+   Os operadores nesse grupo são responsáveis pelo gerenciamento de entregas: eles permitem o acesso aos principais recursos necessários para a criação e preparação de entregas (tipologias de campanha, mapeamentos de entrega, modelos padrão, blocos de personalização, etc.).
 
    Esse grupo contém os seguintes direitos nomeados:
 
@@ -115,12 +116,12 @@ Esses perfis de produto correspondem com os **grupos de operadores** do Campaign
 
 1. **[!UICONTROL Campaign managers]** (operação)
 
-   Os operadores nesse grupo podem gerenciar campanhas de marketing: permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) na estrutura de **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
+   Os operadores neste grupo podem gerenciar campanhas de marketing: isso permite acessar os objetos vinculados às campanhas (planos, programas, fluxos de trabalho, orçamentos etc.) dentro da estrutura do **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
 
    Esse grupo contém os seguintes direitos nomeados:
 
    * **[!UICONTROL INSERT FOLDERS]**: direito de inserir pastas à árvore do Adobe Campaign (se você tiver o direito de editar ramificações),
-   * **[!UICONTROL WORKFLOW]**: direito de usar workflows.
+   * **[!UICONTROL WORKFLOW]**: direito de usar fluxos de trabalho.
 
    >[!NOTE]
    >
@@ -136,7 +137,7 @@ Esses perfis de produto correspondem com os **grupos de operadores** do Campaign
 
 1. **[!UICONTROL Workflow execution]** (fluxo de trabalho)
 
-   O grupo **[!UICONTROL Workflow execution]** permite controlar a execução e a aprovação de workflows para construção de target: o direito nomeado WORKFLOW é mapeado para os operadores deste grupo. É necessário para todas as ações em workflows, além de direitos de acesso aos arquivos de dados. Por padrão, o grupo **[!UICONTROL Workflow execution]** tem acesso somente leitura de arquivos padrão de workflows para construção de target e templates de workflow. Os operadores neste grupo também têm acesso de leitura e gravação para o arquivo de aprovação pendente.
+   O grupo **[!UICONTROL Workflow execution]** permite controlar a execução e a aprovação de fluxo de trabalho de segmentação: o direito nomeado WORKFLOW é mapeado para os operadores deste grupo. É necessário para todas as ações em fluxos de trabalho, além de direitos de acesso aos arquivos de dados. Por padrão, o grupo **[!UICONTROL Workflow execution]** tem acesso somente leitura de arquivos padrão de fluxos de trabalho para construção de target e modelos de fluxo de trabalho. Os operadores neste grupo também têm acesso de leitura e gravação para o arquivo de aprovação pendente.
 
 1. **[!UICONTROL Workflow supervisors]** (workflowSupervisor)
 
@@ -195,9 +196,9 @@ A associação de grupos de operadores pode conceder ou restringir direitos de a
 
 Os direitos nomeados padrão no Adobe Campaign são:
 
-* **[!UICONTROL ADMINISTRATION]**: operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como workflow, entrega, scripts etc.
+* **[!UICONTROL ADMINISTRATION]**: operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, entrega, scripts etc.
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em workflows e entregas para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em fluxos de trabalho e entregas para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
 
 * **[!UICONTROL CENTRAL]**: direito de gerenciamento central (marketing distribuído).
 
@@ -205,9 +206,9 @@ Os direitos nomeados padrão no Adobe Campaign são:
 
 * **[!UICONTROL EDIT FOLDERS]**: direito de alterar as propriedades da pasta, como nome interno, rótulo, imagem associada, pedido de subpastas etc.
 
-* **[!UICONTROL EXPORT]**: os usuários podem exportar dados de suas instâncias do Adobe Campaign para um arquivo no servidor ou computador local usando a atividade de workflow **[!UICONTROL EXPORT]**.
+* **[!UICONTROL EXPORT]**: os usuários podem exportar dados de suas instâncias do Adobe Campaign para um arquivo no servidor ou computador local usando a atividade de fluxo de trabalho **[!UICONTROL EXPORT]**.
 
-* **[!UICONTROL FILES ACCESS]**: direito de ler e gravar o acesso de arquivos por meio de um script que pode ser gravado na atividade de workflow **[!UICONTROL JavaScript]** para arquivos de leitura/gravação em um servidor.
+* **[!UICONTROL FILES ACCESS]**: direito de ler e gravar o acesso de arquivos por meio de um script que pode ser gravado na atividade de fluxo de trabalho **[!UICONTROL JavaScript]** para arquivos de leitura/gravação em um servidor.
 
 * **[!UICONTROL IMPORT]**: direito de importação de dados genéricos. **[!UICONTROL IMPORT]** permite importar dados para qualquer outra tabela, enquanto o direito **[!UICONTROL RECIPIENT IMPORT]** permite importar somente para a tabela do destinatário.
 
@@ -229,9 +230,9 @@ Os direitos nomeados padrão no Adobe Campaign são:
 
 * **[!UICONTROL START DELIVERIES]**: Direito de aprovar entregas anteriormente analisadas. Após a análise, a entrega pausará em várias etapas de aprovação e precisará ser aprovada para retomar. Os usuários com o direito **[!UICONTROL START DELIVERIES]** podem aprovar entregas.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: direito de escrever seus próprios scripts SQL usando a atividade de gerenciamento de dados SQL, para criar e preencher tabelas de trabalho. [Saiba mais](../../automation/workflow/sql-data-management.md).
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: direito de escrever seus próprios scripts SQL com a atividade de gerenciamento de dados SQL para criar e preencher tabelas de trabalho. [Saiba mais](../../automation/workflow/sql-data-management.md).
 
-* **[!UICONTROL WORKFLOW]**: esse direito nomeado é específico para fluxos de trabalho: permite criar, iniciar e parar fluxos de trabalho. Os direitos de leitura no arquivo de workflow são necessários para que o direito nomeado seja aplicável. Para fluxos de trabalho para construção do target, é necessário a leitura na pasta **[!UICONTROL Profiles and Targets]**.
+* **[!UICONTROL WORKFLOW]**: esse direito nomeado é específico para fluxos de trabalho: permite criar, iniciar e parar fluxos de trabalho. Os direitos de leitura no arquivo de fluxo de trabalho são necessários para que o direito nomeado seja aplicável. Para fluxos de trabalho para construção do target, é necessário a leitura na pasta **[!UICONTROL Profiles and Targets]**.
 
 
 * **[!UICONTROL WEBAPP]**: direito de usar aplicações web.
@@ -244,7 +245,7 @@ Os direitos nomeados padrão no Adobe Campaign são:
 
 ## Recursos adicionais{#additional-res}
 
-* [Gerenciar permissões para workflows](../../automation/workflow/managing-rights.md)
+* [Gerenciar permissões para fluxos de trabalho](../../automation/workflow/managing-rights.md)
 * [Gerenciar permissões para marketing distribuído](../../automation/distributed-marketing/about-distributed-marketing.md#operators)
 * [Gerenciar permissões do módulo de interação](../interaction/interaction-operators.md)
 * [Filtrar o acesso a esquemas](../dev/filter-schema.md)
