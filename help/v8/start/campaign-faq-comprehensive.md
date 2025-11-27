@@ -123,7 +123,7 @@ Entenda como monitorar a execução do fluxo de trabalho do Campaign [nesta pág
 
 +++ Com quais sistemas e componentes o Campaign v8 é compatível?
 
-Você pode obter a lista de todos os sistemas e componentes compatíveis com a última build do Campaign na [Matriz de compatibilidade do Adobe Campaign ](compatibility-matrix.md).
+Você pode obter a lista de todos os sistemas e componentes compatíveis com a última build do Campaign na [Matriz de compatibilidade do Adobe Campaign &#x200B;](compatibility-matrix.md).
 
 +++
 
@@ -1021,7 +1021,7 @@ O Campaign gerencia automaticamente uma lista de quarentena para proteger a repu
 * **Limite de rejeição temporária** - Falhas temporárias repetidas (caixa de correio cheia, servidor temporariamente indisponível) excedendo o limite de erro
 * **Reclamações de spam** - Destinatários que marcam seus emails como spam
 * **Endereços inválidos** - Endereços com erros de sintaxe ou que falham na validação
-* incluir na lista de bloqueios **** - Destinatários que optaram por não participar ou solicitaram a exclusão
+* incluir na lista de bloqueios **&#x200B;**&#x200B;- Destinatários que optaram por não participar ou solicitaram a exclusão
 
 **Como funciona a quarentena:**
 
