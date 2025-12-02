@@ -5,9 +5,9 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: 48c6dfc89fec6ad8cff7d17c1892f7c15b497f99
+source-git-commit: 16c9cc60041f41702b4983383954033b06ba1d99
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '816'
 ht-degree: 90%
 
 ---
@@ -121,7 +121,7 @@ ht-degree: 90%
          + [Coletar e processar eventos](send/event-processing.md)
          + [Entender a descrição do evento](send/event-description.md)
          + [Enviar e monitorar mensagens](send/delivery-execution.md)
-+ Gerenciamento de público-alvo e perfil {#audience}
++ Perfil e públicos-alvo {#audience}
    + [Introdução a perfis e públicos-alvo](audiences/gs-audiences.md)
    + [Trabalhar com públicos-alvo](start/audiences.md)
    + [Acessar perfis](audiences/view-profiles.md)
@@ -143,12 +143,12 @@ ht-degree: 90%
    + [Criar aplicativos e formulários web](dev/webapps.md)
 + Fluxos de trabalho {#workflows}
    + [Introdução aos fluxos de trabalho](config/workflows.md)
-   + [Concluir Documentação do Fluxo de Trabalho >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
-+ Gerenciamento de privacidade e segurança {#privacy}
+   + [Documentação do Fluxo de Trabalho >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
++ Privacidade e segurança {#privacy}
    + [Gerenciar solicitações de privacidade](start/privacy.md)
    + [Diretrizes de segurança](config/security.md)
    + [Complemento de segurança aprimorado](config/enhanced-security.md)
-+ Interações e gerenciamento de ofertas {#offers}
++ Gerenciamento de ofertas - Interação {#offers}
    + [Introdução à interação em tempo real](interaction/interaction.md)
    + [Ambientes e arquitetura](interaction/interaction-architecture.md)
    + [Práticas recomendadas](interaction/interaction-best-practices.md)
@@ -187,7 +187,6 @@ ht-degree: 90%
       + [Trabalhar com o editor de consultas](start/query-editor.md)
       + [Criar consultas](start/design-queries.md)
       + [Definir condições de filtro](start/filter-conditions.md)
-      + [Trabalhar com filtros de público](audiences/create-filters.md)
    + [Importar dados](start/import.md)
    + [Documentação do Fluxo de Trabalho >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
 + Integrações {#connect}
