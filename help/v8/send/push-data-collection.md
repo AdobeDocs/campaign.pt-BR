@@ -6,9 +6,9 @@ role: Data Engineer
 level: Intermediate
 badge: label="Disponibilidade limitada" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
+source-git-commit: 11a9f17bc5c1ec8388de294395a6d7b7a5e8a7e6
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1353'
 ht-degree: 16%
 
 ---
@@ -55,37 +55,43 @@ O registro da credencial de push do aplicativo móvel é necessário para autori
 
 1. Em **[!UICONTROL Mobile Application Configuration]**, selecione o Sistema operacional:
 
-   * **Para iOS**
+>[!BEGINTABS]
 
-     ![](assets/push-config-2.png)
+>[!TAB iOS]
 
-      1. Insira a **Id do Pacote** do aplicativo móvel no campo **[!UICONTROL App ID (iOS Bundle ID)]**.
+![](assets/push-config-2.png)
 
-         A ID do Pacote de aplicativos pode ser encontrada na guia **Geral** do destino principal em **XCode** da sua conta de desenvolvedor do Apple.
+1. Insira a **Id do Pacote** do aplicativo móvel no campo **[!UICONTROL App ID (iOS Bundle ID)]**.
 
-      1. Ative **[!UICONTROL Push Credentials]** para adicionar suas credenciais.
+   A ID do Pacote de aplicativos pode ser encontrada na guia **Geral** do destino principal em **XCode** da sua conta de desenvolvedor do Apple.
 
-      1. Arraste e solte seu arquivo .p8 Apple Push Notification Authentication Key.
+1. Ative **[!UICONTROL Push Credentials]** para adicionar suas credenciais.
 
-         Esta chave pode ser adquirida nas páginas **Certificados**, **Identificadores** e **Perfis** da sua conta de desenvolvedor do Apple.
+1. Arraste e solte seu arquivo .p8 Apple Push Notification Authentication Key.
 
-      1. Forneça a **Key ID**. Esta é uma sequência de 10 caracteres atribuída durante a criação da chave de autenticação p8.
+   Esta chave pode ser adquirida nas páginas **Certificados**, **Identificadores** e **Perfis** da sua conta de desenvolvedor do Apple.
 
-         Ele pode ser encontrado na guia **Chaves** da página **Certificados**, **Identificadores** e **Perfis** da sua conta de desenvolvedor do Apple.
+1. Forneça a **Key ID**. Esta é uma sequência de 10 caracteres atribuída durante a criação da chave de autenticação p8.
 
-      1. Forneça a **ID da Equipe**. Este é um valor de cadeia de caracteres que pode ser encontrado na guia **Associação**.
-
-   * **Para Android**
-
-     ![](assets/push-config-3.png)
-
-      1. Forneça o **[!UICONTROL App ID (Android package name)]**. Normalmente, o nome do pacote é a ID do aplicativo no arquivo `build.gradle`.
-
-      1. Alterne **[!UICONTROL Push Credentials]** para adicionar suas credenciais.
-
-      1. Arraste e solte as credenciais de push do FCM. Para obter mais detalhes sobre como obter as credenciais de push, consulte a [Documentação do Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+       Ele pode ser encontrado na guia **Chaves** da página **Certificados**, **Identificadores** e **Perfis** da sua conta de desenvolvedor do Apple.
+   
+1. Forneça a **ID da Equipe**. Este é um valor de cadeia de caracteres que pode ser encontrado na guia **Associação**.
 
 1. Clique em **[!UICONTROL Save]** para criar sua configuração de aplicativo.
+
+>[!TAB Android]
+
+![](assets/push-config-3.png)
+
+1. Forneça o **[!UICONTROL App ID (Android package name)]**. Normalmente, o nome do pacote é a ID do aplicativo no arquivo `build.gradle`.
+
+1. Alterne **[!UICONTROL Push Credentials]** para adicionar suas credenciais.
+
+1. Arraste e solte as credenciais de push do FCM. Para obter mais detalhes sobre como obter as credenciais de push, consulte a [Documentação do Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+
+1. Clique em **[!UICONTROL Save]** para criar sua configuração de aplicativo.
+
+>[!ENDTABS]
 
 ## Definir as configurações do aplicativo no Adobe Campaign{#push-config-campaign}
 
@@ -105,7 +111,7 @@ Para criar um serviço para enviar notificações por push, siga as etapas abaix
 
    >[!NOTE]
    >
-   >O target mapping **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** padrão é vinculado à tabela de destinatários. Para utilizar um mapeamento de alvo diferente, é necessário criar um novo e inseri-lo no campo **[!UICONTROL Target mapping]** do serviço. Saiba mais sobre target mappings em [esta página](../audiences/target-mappings.md).
+   >O target mapping **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** padrão é vinculado à tabela de destinatários. Para utilizar um target mapping diferente, é necessário criar um novo e inseri-lo no campo **[!UICONTROL Target mapping]** do serviço. Saiba mais sobre target mappings em [esta página](../audiences/target-mappings.md).
 
 1. Em seguida, use o ícone **[!UICONTROL Add]** à direita para definir os aplicativos móveis que usam esse serviço.
 
