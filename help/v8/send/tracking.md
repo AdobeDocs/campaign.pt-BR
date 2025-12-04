@@ -5,10 +5,10 @@ feature: Monitoring, Email
 role: User
 level: Beginner
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: 90ed82673b893b62a185227dd8cdfe80cc8f1455
+source-git-commit: 57e177dc6c30502f2ed3bb08b18586fa5399e89c
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 31%
+source-wordcount: '455'
+ht-degree: 32%
 
 ---
 
@@ -78,7 +78,7 @@ Este relatório mostra a lista de páginas visitadas após uma entrega.
 
 Entenda melhor a diferença de rastreamento entre uma pessoa/pessoas e um recipient no Adobe Campaign com este exemplo.
 
-Saiba mais sobre pessoas e recipients na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html?lang=pt-BR#reporting){target="_blank"}
+[Saiba mais sobre pessoas e recipients direcionados](../reporting/metrics-calculation.md#targeted-persons---recipients)
 
 **Indicadores de rastreamento**
 
