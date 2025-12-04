@@ -82,13 +82,13 @@ Saiba mais sobre [Trilha de auditoria](../reporting/audit-trail.md)
 
 O Campaign v8 fornece vários recursos de monitoramento para rastrear o desempenho da sua instância e garantir a operação ideal:
 
-**Monitoramento de banco de dados** - Monitore o uso e a capacidade do banco de dados por meio do Painel de Controle para garantir desempenho e gerenciamento de armazenamento ideais. [Saiba mais sobre o monitoramento de banco de dados](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html?lang=pt-BR){target="_blank"}
+**Monitoramento de banco de dados** - Monitore o uso e a capacidade do banco de dados por meio do Painel de Controle para garantir desempenho e gerenciamento de armazenamento ideais. [Saiba mais sobre o monitoramento de banco de dados](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html){target="_blank"}
 
 **Monitoramento de perfis ativos** - Rastreie o uso do perfil ativo em relação aos limites contratuais para manter a conformidade e otimizar a alocação de recursos. [Saiba mais sobre perfis ativos](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR){target="_blank"}
 
 **Monitoramento do fluxo de trabalho** - Monitore o status de execução do fluxo de trabalho para identificar fluxos de trabalho de longa duração e garantir que todos os fluxos de trabalho técnicos estejam sendo executados corretamente. [Saiba mais sobre fluxos de trabalho técnicos](#technical-workflows)
 
-**Taxa de transferência e latência de entrega** - Rastrear a taxa de transferência de entrega (mensagens enviadas por hora) e a latência de comunicações transacionais por meio do Painel de Controle. [Saiba mais sobre o monitoramento de taxa de transferência](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html?lang=pt-BR){target="_blank"}
+**Taxa de transferência e latência de entrega** - Rastrear a taxa de transferência de entrega (mensagens enviadas por hora) e a latência de comunicações transacionais por meio do Painel de Controle. [Saiba mais sobre o monitoramento de taxa de transferência](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html){target="_blank"}
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Os workflows técnicos são processos essenciais executados em segundo plano par
 | **Atualização de entregabilidade** | Atualiza as regras de capacidade de entrega e os padrões de filtro de spam |
 | **Limpeza do banco de dados** | Limpa logs de entrega e rastreamento antigos |
 
-Saiba mais sobre [workflows técnicos](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=pt-BR){target="_blank"}
+Saiba mais sobre [workflows técnicos](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}
 
 ### Painel de controle do Campaign {#control-panel}
 
