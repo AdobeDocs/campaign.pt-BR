@@ -5,10 +5,10 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: d886072b3a21d5e5b70662c67919223cf9a1b68e
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 90%
+source-wordcount: '841'
+ht-degree: 88%
 
 ---
 
@@ -105,9 +105,11 @@ ht-degree: 90%
       + [Análise de entrega](send/delivery-analysis.md)
       + [Configurar e enviar a entrega](send/configure-and-send.md)
       + [Otimização da hora de envio](send/predictive.md)
-   + Falhas, rejeições e quarentenas {#failures}
-      + [Quarentena](send/quarantines.md)
+   + Monitore seus deliveries {#monitor}
+      + [Monitorar deliveries na interface do Campaign](send/delivery-dashboard.md)
+      + [Status de entrega](send/delivery-statuses.md)
       + [Falhas de entrega](send/delivery-failures.md)
+      + [Quarentena](send/quarantines.md)
    + Gerenciamento de capacidade de entrega {#deliverability-management}
       + [O que é capacidade de entrega](send/about-deliverability.md)
       + [Controlar conteúdo da mensagem](send/control-message-content.md)
@@ -166,8 +168,15 @@ ht-degree: 90%
       + [Gerenciar interações anônimas](interaction/anonymous-interactions.md)
    + [Relatórios e histórico](interaction/interaction-tracking.md)
    + [Casos de uso](interaction/interaction-use-cases.md)
-+ Relatórios e análises {#analytics}
-   + [Rastrear e monitorar](start/tracking.md)
++ Rastreamento e análise {#analytics}
+   + Rastreamento de mensagens {#tracking}
+      + [Introdução ao rastreamento](send/tracking.md)
+      + [Configurar links rastreados](send/tracked-links.md)
+      + [Configurar opções de rastreamento de URL](send/url-tracking.md)
+      + [Rastrear links personalizados](send/personalized-links.md)
+      + [Rastreamento de teste](send/testing-tracking.md)
+      + [Acessar logs de rastreamento](send/tracking-logs.md)
+   + [Visão geral do monitoramento de campanha](start/monitor.md)
    + [Trilha de auditoria](reporting/audit-trail.md)
    + Trabalho com relatórios{#reports}
       + [Introdução aos relatórios](reporting/gs-reporting.md)

@@ -2,13 +2,13 @@
 title: Entender a arquitetura de interação do Campaign
 description: Noções básicas sobre a arquitetura de interação do Campaign
 feature: Interaction, Offers
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 67%
+source-wordcount: '1304'
+ht-degree: 65%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 67%
 
 ## Ambientes {#environments}
 
-Há dois ambientes para cada targeting dimension usada ao gerenciar ofertas:
+Há dois ambientes para cada dimensão de direcionamento usada ao gerenciar ofertas:
 
 * Um ambiente **design** no qual o gerente de ofertas cuida da criação e categorização de ofertas, da edição e do início do processo de aprovação para que elas possam ser usadas. As regras para cada categoria, os espaços de oferta nos quais as ofertas podem ser apresentadas e os filtros predefinidos usados para definir a elegibilidade de uma oferta também são definidos neste ambiente.
 
@@ -66,7 +66,7 @@ Ofertas excluídas no ambiente de design são desabilitadas em todas as instânc
 
 ![](assets/interaction_powerbooster_schema2.png)
 
-Um workflow é criado para cada ambiente e conta externa para a sincronização de propostas. A frequência de sincronização pode ser ajustada para cada ambiente e conta externa.
+Um fluxo de trabalho é criado para cada ambiente e conta externa para a sincronização de propostas. A frequência de sincronização pode ser ajustada para cada ambiente e conta externa.
 
 Você deve estar ciente dos seguintes mecanismos de sincronização:
 
@@ -78,13 +78,13 @@ Você deve estar ciente dos seguintes mecanismos de sincronização:
 
 ### Configuração de pacotes {#packages-configuration}
 
-Quaisquer extensões de schema diretamente vinculadas à **Interação** (ofertas, propostas, destinatários, etc.) devem ser implantadas nas instâncias de execução.
+Quaisquer extensões de esquema diretamente vinculadas à **Interação** (ofertas, propostas, destinatários, etc.) devem ser implantadas nas instâncias de execução.
 
 O pacote **Interaction** está instalado em todas as instâncias (controle e execução). Dois pacotes adicionais estão disponíveis: um pacote para as instâncias de controle e outro para cada instância de execução.
 
 >[!NOTE]
 >
->Ao instalar o pacote, os campos do tipo **longo** da tabela **nms:proposition**, como ID da proposta, tornam-se campos de tipo **int64.** Esse tipo de dado é detalhado na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=pt-BR#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
+>Ao instalar o pacote, os campos do tipo **long** da tabela **nms:proposition**, como a ID da proposta, tornam-se campos de tipo **int64**. Esse tipo de dado é detalhado na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
 A duração da retenção de dados é configurada em cada instância (por meio da janela **[!UICONTROL Data purge]** no assistente de implantação). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de elegibilidade serem calculadas.
 
@@ -120,9 +120,9 @@ Nas instâncias de controle:
 
      >[!NOTE]
      >
-     >Se encontrar um erro, poderá consultar os workflows de sincronização e oferecer notificações. Eles podem ser encontrados nos workflows técnicos do aplicativo.
+     >Se encontrar um erro, poderá consultar os fluxos de trabalho de sincronização e oferecer notificações. Eles podem ser encontrados nos fluxos de trabalho técnicos do aplicativo.
 
-Se, por motivos de otimização, apenas parte do banco de dados de marketing for duplicado nas instâncias de execução, é possível especificar um schema restrito vinculado ao ambiente para permitir que os usuários usem apenas dados que estejam disponíveis nas instâncias de execução. É possível criar uma oferta usando dados que não estão disponíveis em instâncias de execução. Para fazer isso, é necessário desativar a regra nos outros canais limitando essa regra no canal de saída (campo **[!UICONTROL Taken into account if]**).
+Se, por motivos de otimização, apenas parte do banco de dados de marketing for duplicado nas instâncias de execução, é possível especificar um esquema restrito vinculado ao ambiente para permitir que os usuários usem apenas dados que estejam disponíveis nas instâncias de execução. É possível criar uma oferta usando dados que não estão disponíveis em instâncias de execução. Para fazer isso, é necessário desativar a regra nos outros canais limitando essa regra no canal de saída (campo **[!UICONTROL Taken into account if]**).
 
 ![](assets/ita_filtering.png)
 
@@ -135,8 +135,8 @@ Aqui está uma lista de opções de manutenção disponíveis na instância de c
 >Essas opções só devem ser usadas para casos de manutenção específicos.
 
 * **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: última data em que um ambiente foi sincronizado em uma determinada instância.
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: última data em que as propostas de um determinado schema foram sincronizadas de uma instância para outra.
-* **`NmsInteraction_MapWorkflowId`**: uma opção contendo a lista de todos os workflows de sincronização gerados.
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: última data em que as propostas de um determinado esquema foram sincronizadas de uma instância para outra.
+* **`NmsInteraction_MapWorkflowId`**: uma opção contendo a lista de todos os fluxos de trabalho de sincronização gerados.
 
 A seguinte opção está disponível nas instâncias de execução:
 

@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
-source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 4%
@@ -80,4 +80,4 @@ Para um recipient incorporado típico, você pode acessar as seguintes guias:
 
 * **Rastreamento**, para todos os logs de rastreamento do perfil selecionado. Essas informações são usadas para rastrear o comportamento do perfil após os deliveries. Esta guia mostra o total cumulativo de todas as URLs rastreadas nas entregas. A lista é configurável e geralmente contém: o URL clicado, a data e hora do clique e o documento que continha o URL
 
-  Saiba mais sobre o Rastreamento [nesta seção](../start/tracking.md).
+  Saiba mais sobre o Rastreamento [nesta seção](../send/tracking.md).

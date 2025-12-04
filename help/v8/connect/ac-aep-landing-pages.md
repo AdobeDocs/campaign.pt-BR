@@ -2,10 +2,10 @@
 title: Atualizar perfis do Adobe Experience Platform a partir de páginas de aterrissagem do Adobe Campaign
 description: Saiba como sincronizar páginas de aterrissagem do Adobe Campaign e atributos de perfil do Adobe Experience Platform
 feature: Experience Platform Integration
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: 02d7909c409bd25cfa3cc7aad189247ce7b5176e
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Com a conexão OAuth estabelecida, a próxima etapa é criar uma conexão do Sou
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=pt-BR){target="_blank"}.
+1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
 
    Na etapa **[!UICONTROL Authentication]**, alterne a opção **[!UICONTROL Enable authentication]** para autenticar usando o token de acesso gerado anteriormente pela integração OAuth.
 
@@ -98,7 +98,7 @@ Navegue pelas guias abaixo para descobrir os dois métodos:
 
 >[!TAB Adicionar opções usando uma atividade de código JavaScript]
 
-Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=pt-BR#JavaScript-code){target="_blank"}.
+Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code){target="_blank"}.
 
 Na execução do workflow, as opções são criadas automaticamente no console do Campaign com os valores fornecidos.
 
@@ -134,7 +134,7 @@ Para permitir a sincronização de dados entre landing pages e o Adobe Experienc
 
    ![](assets/ac-lp-script.png){width="70%"}
 
-+++  Script 1 - Carregar atributos de perfil do Experience Platform
+   +++  Script 1 - Carregar atributos de perfil do Experience Platform
 
    Esse código verifica se o perfil existe no Adobe Experience Platform antes de carregar a landing page. Ele recupera os atributos do perfil e os exibe nos campos correspondentes da landing page.
 
@@ -155,9 +155,9 @@ Para permitir a sincronização de dados entre landing pages e o Adobe Experienc
    }
    ```
 
-+++
+   +++
 
-+++ Script 2 - Atualizar atributos de perfil do Experience Platform
+   +++ Script 2 - Atualizar atributos de perfil do Experience Platform
 
    Esse código atualiza os atributos de perfil no Adobe Experience Platform com os valores enviados na landing page.
 
@@ -203,7 +203,7 @@ Para permitir a sincronização de dados entre landing pages e o Adobe Experienc
    }
    ```
 
-+++
+   +++
 
 Agora que os códigos personalizados do JavaScript são criados no Adobe Campaign, você pode configurar o fluxo de trabalho que contém sua página de aterrissagem para usar esses códigos JavaScript para sincronização de dados.
 
@@ -213,7 +213,7 @@ Com os códigos JavaScript adicionados ao Adobe Campaign, você pode aproveitá-
 
 * Para carregar dados do Experience Platform antes de carregar a landing page, adicione uma atividade **[!UICONTROL JavaScript code]** antes da atividade da landing page e copie e cole o Script 1.
 
-+++ Script 1 - Carregar atributos de perfil do Experience Platform
+  +++ Script 1 - Carregar atributos de perfil do Experience Platform
 
   ```javascript
   // Script code to read profile from AEP.
@@ -249,11 +249,11 @@ Com os códigos JavaScript adicionados ao Adobe Campaign, você pode aproveitá-
   }
   ```
 
-+++
+  +++
 
 * Para atualizar os atributos de perfil do Experience Platform com os dados enviados na página de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** após a atividade de página de aterrissagem e copie e cole o Script 2.
 
-+++ Script 2 - Atualizar atributos de perfil do Experience Platform
+  +++ Script 2 - Atualizar atributos de perfil do Experience Platform
 
   ```javascript
   // Script code to update profile in AEP and ACC.
@@ -323,7 +323,7 @@ Com os códigos JavaScript adicionados ao Adobe Campaign, você pode aproveitá-
   }
   ```
 
-+++
+  +++
 
 >[!CAUTION]
 >
@@ -344,5 +344,5 @@ Este é um exemplo de uma página de aterrissagem e uma atividade de código Jav
 ### Mais informações
 
 * [Configurar uma atividade de código JavaScript](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Criar uma landing page](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=pt-BR){target="_blank"}
+* [Criar uma landing page](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html){target="_blank"}
 * [Gerenciar assinaturas e cancelamentos de assinaturas](../start/subscriptions.md)

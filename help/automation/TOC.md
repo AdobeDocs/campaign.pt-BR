@@ -3,10 +3,10 @@ audience: user
 user-guide-title: Guia de automação de campanha
 user-guide-description: Guia de automação de campanha
 feature: Overview
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
@@ -15,22 +15,22 @@ ht-degree: 81%
 
 + [Guia de automação de campanha](home.md)
 + Automatizar com fluxos de trabalho {#workflows}
-   + Introdução a workflows {#introduction}
-      + [Sobre workflows](workflow/about-workflows.md)
+   + Introdução aos fluxos de trabalho {#introduction}
+      + [Sobre fluxos de trabalho](workflow/about-workflows.md)
       + Tipos de workflows {#wf-type}
-         + [Fluxos de trabalho para construção do target](workflow/targeting-workflows.md)
+         + [Workflows de direcionamento](workflow/targeting-workflows.md)
          + [Fluxos de trabalho da campanha](workflow/campaign-workflows.md)
-         + [Workflows técnicos](workflow/technical-workflows.md)
-      + [Criar um workflow](workflow/build-a-workflow.md)
+         + [Fluxos de trabalho técnicos](workflow/technical-workflows.md)
+      + [Criar um fluxo de trabalho](workflow/build-a-workflow.md)
       + [Práticas recomendadas](workflow/workflow-best-practices.md)
       + [Usar dados de fluxo de trabalho](workflow/use-workflow-data.md)
-   + Executar um workflow {#executing-a-workflow}
+   + Executar um fluxo de trabalho {#executing-a-workflow}
       + [Iniciar um fluxo de trabalho](workflow/start-a-workflow.md)
       + [Ciclo de vida do fluxo de trabalho](workflow/workflow-life-cycle.md)
       + [Configurar aprovações](workflow/define-approvals.md)
-   + Monitorar workflows {#monitoring-workflows}
+   + Monitorar fluxos de trabalho {#monitoring-workflows}
       + [Monitorar a execução do fluxo de trabalho](workflow/monitor-workflow-execution.md)
-      + [Monitorar workflows técnicos](workflow/monitor-technical-workflows.md)
+      + [Monitorar fluxos de trabalho técnicos](workflow/monitor-technical-workflows.md)
       + [HeatMap de fluxo de trabalho](workflow/heatmap.md)
    + Atividades de fluxos de trabalho {#wf-activities}
       + [Introdução a atividades](workflow/activities.md)
@@ -44,7 +44,7 @@ ht-degree: 81%
          + [Outline de entrega](workflow/delivery-outline.md)
          + [Editar esquema](workflow/edit-schema.md)
          + [Enriquecimento](workflow/enrichment.md)
-         + [Regras de &#x200B;](workflow/exclusion.md)
+         + [Regras de ](workflow/exclusion.md)
          + [Consulta incremental](workflow/incremental-query.md)
          + [Interseção](workflow/intersection.md)
          + [Atualização de lista](workflow/list-update.md)
@@ -95,7 +95,7 @@ ht-degree: 81%
          + [SMS de entrada](workflow/inbound-sms.md)
          + [Download da Web](workflow/web-download.md)
    + Casos de uso {#use-cases}
-      + [Sobre casos de uso de workflows](workflow/workflow-use-cases.md)
+      + [Sobre casos de uso de fluxos de trabalho](workflow/workflow-use-cases.md)
       + Entregas {#deliveries}
          + [Usar a atividade de aprovação local](workflow/local-approval-activity.md)
          + [Enviar email de aniversário](workflow/send-a-birthday-email.md)
@@ -104,7 +104,7 @@ ht-degree: 81%
          + [Enriquecimento de email com campos de data personalizados](workflow/email-enrichment-with-custom-date-fields.md)
       + Monitoramento {#monitoring}
          + [Enviar um relatório a uma lista](workflow/send-a-report-to-a-list.md)
-         + [Supervisionar os workflows](workflow/workflow-supervision.md)
+         + [Supervisionar os fluxos de trabalho](workflow/workflow-supervision.md)
          + [Enviar alertas personalizados aos operadores](workflow/send-alerts-to-operators.md)
       + Gerenciamento de dados {#data-management}
          + [Coordenar atualizações de dados](workflow/coordinate-data-updates.md)
@@ -114,21 +114,21 @@ ht-degree: 81%
          + [Usar a funcionalidade de mesclagem da atividade de desduplicação](workflow/deduplication-merge.md)
          + [Configurar um fluxo de trabalho de importação recorrente](workflow/recurring-import-workflow.md)
       + Criar consultas {#designing-queries}
-         + [Atualização da lista trimestral usando um query incremental](workflow/quarterly-list-update.md)
-      + Query e filtro {#designing-queries}
+         + [Atualização da lista trimestral usando uma consulta incremental](workflow/quarterly-list-update.md)
+      + Consulta e filtro {#designing-queries}
          + [Consultar a tabela de destinatários](workflow/querying-recipient-table.md)
          + [Consultar informações da entrega](workflow/query-delivery-info.md)
          + [Calcular agregados](workflow/compute-aggregates.md)
          + [Consultar usando gerenciamento de agrupamento](workflow/query-grouping-management.md)
          + [Consultar usando um relacionamento muitos para muitos](workflow/query-many-to-many-relationship.md)
-         + [Adicionar um campo calculado do tipo lista discriminada](workflow/adding-enumeration-type-calculated-field.md)
+         + [Adicionar um campo calculado do tipo enumeração](workflow/adding-enumeration-type-calculated-field.md)
          + [Criar um filtro](workflow/create-a-filter.md)
          + [Filtrar destinatários duplicados](workflow/filter-duplicated-recipients.md)
    + Configurações avançadas {#advanced-management}
       + [Propriedades do fluxo de trabalho](workflow/workflow-properties.md)
       + [Parâmetros avançados](workflow/advanced-parameters.md)
       + [Modelos e scripts JavaScript](workflow/javascript-scripts-and-templates.md)
-      + [Exemplos de código JavaScript em workflows](workflow/javascript-in-workflows.md)
+      + [Exemplos de código JavaScript em fluxos de trabalho](workflow/javascript-in-workflows.md)
       + [Acessar um banco de dados externo](workflow/accessing-an-external-database-fda.md)
       + [Gerenciar permissões](workflow/managing-rights.md)
       + [Alterar imagens de atividade](workflow/change-activity-images.md)
@@ -162,7 +162,7 @@ ht-degree: 81%
    + [Introdução ao marketing distribuído](distributed-marketing/about-distributed-marketing.md)
    + [Criar uma campanha local](distributed-marketing/creating-a-local-campaign.md)
    + [Criar uma campanha colaborativa](distributed-marketing/creating-a-collaborative-campaign.md)
-   + [Publicar o pacote da campanha](distributed-marketing/publishing-the-campaign-package.md)
+   + [Publicar o pacote de campanha](distributed-marketing/publishing-the-campaign-package.md)
    + [Acessar campanhas](distributed-marketing/accessing-campaigns.md)
    + [Rastrear uma campanha](distributed-marketing/tracking-a-campaign.md)
    + [Casos de uso](distributed-marketing/examples.md)

@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Lista de leitura
-description: Saiba mais sobre a atividade de workflow de Lista de leitura
+description: Saiba mais sobre a atividade de fluxo de trabalho de Lista de leitura
 feature: Workflows, Targeting Activity
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 91c87f8f-bdd2-4ca1-94c2-ec9e7affc1a0
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
@@ -17,17 +17,17 @@ ht-degree: 100%
 
 Os dados processados em um fluxo de trabalho podem vir de listas em que os dados foram preparados ou estruturados antecipadamente (após uma segmentação ou carregamento de arquivo anterior).
 
-A atividade **[!UICONTROL Read list]** permite copiar os dados de uma lista na tabela de trabalho do workflow, como dados de uma consulta. Ele é então acessível através do workflow.
+A atividade **[!UICONTROL Read list]** permite copiar os dados de uma lista na tabela de trabalho do fluxo de trabalho, como dados de uma consulta. Ele é então acessível através do fluxo de trabalho.
 
 A lista a ser processada pode ser especificada explicitamente, calculada por um script ou localizada dinamicamente de acordo com as opções selecionadas e parâmetros definidos em uma atividade **[!UICONTROL Read list]**.
 
 ![](assets/list_edit_select_option_01.png)
 
-Se a lista não for especificada explicitamente, você deve fornecer uma lista para ser usada como template para descobrir sua estrutura.
+Se a lista não for especificada explicitamente, você deve fornecer uma lista para ser usada como modelo para descobrir sua estrutura.
 
 ![](assets/s_advuser_list_template_select.png)
 
-Após configurar a seleção da lista, é possível adicionar um filtro utilizando a opção **[!UICONTROL Edit query]** para manter uma parte da população para o próximo workflow.
+Após configurar a seleção da lista, é possível adicionar um filtro utilizando a opção **[!UICONTROL Edit query]** para manter uma parte da população para o próximo fluxo de trabalho.
 
 ![](assets/wf_readlist_1.png)
 
@@ -35,7 +35,7 @@ Após configurar a seleção da lista, é possível adicionar um filtro utilizan
 >
 >Para poder criar um filtro em uma atividade de lista de leitura, a lista relevante deve ser um tipo de &quot;arquivo&quot;.
 
-As listas podem ser criadas diretamente no Adobe Campaign através do link **[!UICONTROL Profiles and Targets > Lists]** da página inicial. Também é possível criá-los em um workflow usando a atividade **[!UICONTROL List update]**.
+As listas podem ser criadas diretamente no Adobe Campaign através do link **[!UICONTROL Profiles and Targets > Lists]** da página inicial. Também é possível criá-los em um fluxo de trabalho usando a atividade **[!UICONTROL List update]**.
 
 **Exemplo: exclusão de uma lista de endereços enviados**
 

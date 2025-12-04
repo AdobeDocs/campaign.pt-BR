@@ -2,9 +2,9 @@
 title: Relatórios globais do Adobe Campaign
 description: Saiba como acessar e usar relatórios globais
 feature: Reporting, Monitoring
-role: User, Data Engineer
+role: User, Developer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 65%

@@ -4,13 +4,13 @@ description: Recomendações e limitações ao migrar para as APIs REST do Campa
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 mini-toc-levels: 1
 exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1046'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Por enquanto, as APIs REST listadas abaixo estão disponíveis para uso:
 * **Perfis**
 * **Serviços e assinaturas**
 * **Recursos personalizados**
-* **Workflows**
+* **Fluxos de trabalho**
 * **Mensagens transacionais**
 
 >[!AVAILABILITY]

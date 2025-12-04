@@ -2,13 +2,14 @@
 title: Gerenciamento de quarentenas no Campaign
 description: Entender o gerenciamento de quarentenas no Adobe Campaign
 feature: Profiles, Monitoring
-role: User, Data Engineer
+role: User, Developer
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: cb4cbc9ba14e953d2b3109e87eece4f310bfe838
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 33%
+source-wordcount: '1317'
+ht-degree: 29%
 
 ---
 
@@ -32,7 +33,7 @@ Por outro lado, **perfis** podem estar no **inclui na lista de bloqueios** como 
 
 >[!NOTE]
 >
->Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Incluir na lista de bloqueios Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
+>Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Incluir na lista de bloqueios Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -45,7 +46,7 @@ Dois tipos ou erros podem ser capturados:
 * **Erro grave**: o endereço de email, o número de telefone ou o dispositivo é enviado imediatamente para quarentena.
 * **Erro leve**: erros suaves incrementam um contador de erros e podem colocar em quarentena um email, número de telefone ou token de dispositivo. O Campaign executa [tentativas](delivery-failures.md#retries): quando o contador de erros atinge o limite, o endereço, o número de telefone ou o token do dispositivo são colocados em quarentena. [Saiba mais](delivery-failures.md#retries).
 
-Na lista de endereços em quarentena, o campo **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena. [Saiba mais](#identifying-quarantined-addresses-for-the-entire-platform).
+Na lista de endereços em quarentena, o campo **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena. [Saiba mais](#non-deliverable-bounces).
 
 
 Se um usuário qualificar um email como spam, a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pela Adobe. Em seguida, o endereço de email do usuário será enviado automaticamente para quarentena com o status **[!UICONTROL Denylisted]**. Esse status se refere apenas ao endereço. O perfil não está na inclui na lista de bloqueios, para que o usuário continue recebendo mensagens SMS e notificações por push. Saiba mais sobre loops de comentários no [Guia de práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops){target="_blank"}.
@@ -53,6 +54,12 @@ Se um usuário qualificar um email como spam, a mensagem será automaticamente r
 >[!NOTE]
 >
 >A quarentena no Adobe Campaign diferencia maiúsculas de minúsculas. Certifique-se de importar endereços de email em letras minúsculas, para que não sejam redirecionados posteriormente.
+
+## Gerenciamento de erros leves {#soft-error-management}
+
+Ao contrário de erros graves, os erros suaves não enviam um endereço para quarentena imediatamente, mas incrementam um contador de erros. Quando o contador de erros atinge o limite, o endereço é colocado em quarentena. Saiba mais sobre tentativas e tipos de erro em [Noções básicas sobre falhas de entrega](delivery-failures.md).
+
+O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. O status do endereço é alterado para **[!UICONTROL Valid]** e excluído da lista de quarentenas pelo fluxo de trabalho **[!UICONTROL Database cleanup]**. [Saiba mais sobre fluxos de trabalho técnicos](../config/workflows.md#technical-workflows).
 
 ## Acessar endereços em quarentena {#access-quarantined-addresses}
 
@@ -66,6 +73,8 @@ Para cada entrega, você também pode verificar o relatório **[!UICONTROL Deliv
 
 * O número de endereços colocados em quarentena durante a análise de entrega,
 * O número de endereços colocados em quarentena após a ação de entrega.
+
+Saiba mais sobre relatórios de entrega [nesta seção](../reporting/gs-reporting.md).
 
 ### Endereços não entregues e rejeitados{#non-deliverable-bounces}
 
@@ -83,7 +92,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 
 Além disso, o relatório interno **[!UICONTROL Non-deliverables and bounces]**, disponível na seção **Relatórios** desta home page, exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar os dados de um delivery específico ou personalizar este relatório conforme necessário.
 
-Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### Endereço de email na quarentena {#quarantined-recipient}
 
@@ -98,7 +107,9 @@ Para cada pasta, você pode exibir apenas os recipients cujo endereço de email 
 
 ## Remover um endereço em quarentena {#remove-a-quarantined-address}
 
-Os endereços que correspondem a condições específicas são excluídos automaticamente da lista de quarentena pelo fluxo de trabalho interno **Limpeza do banco de dados**.
+### Atualizações automáticas {#unquarantine-auto}
+
+Os endereços que correspondem a condições específicas são excluídos automaticamente da lista de quarentena pelo fluxo de trabalho interno **[!UICONTROL Database cleanup]**.
 
 Os endereços são removidos automaticamente da lista de quarentena nos seguintes casos:
 
@@ -112,22 +123,30 @@ O status muda então para **[!UICONTROL Valid]**.
 >
 >Os destinatários com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** nunca serão removidos, mesmo se receberem um email.
 
-Você também pode remover manualmente um endereço da lista da quarentena. Para remover um endereço da quarentena, você pode:
+### Atualizações manuais {#unquarantine-manual}
 
-* Altere seu status para **[!UICONTROL Valid]** a partir do nó **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
+Você também pode remover manualmente um endereço da lista da quarentena. Para remover manualmente um endereço da quarentena, você pode alterar seu status para **[!UICONTROL Valid]** no nó **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
 
-  ![](assets/tech-quarantine-status.png)
+![](assets/tech-quarantine-status.png)
 
-Talvez seja necessário executar atualizações em massa na lista de quarentena, por exemplo, no caso de uma interrupção do ISP durante a qual os emails são marcados incorretamente como rejeições porque não podem ser entregues com êxito ao recipient.
+### Atualizações em massa {#unquarantine-bulk}
 
-Para fazer isso, crie um workflow e adicione uma query à tabela de quarentena para filtrar todos os recipients afetados para que eles possam ser removidos da lista de quarentena e incluídos em futuros deliveries de email do Campaign.
+Talvez seja necessário executar atualizações em massa na lista de quarentena em situações específicas, como uma interrupção do ISP durante a qual os emails são marcados incorretamente como rejeições porque não podem ser entregues com êxito ao recipient.
 
-Abaixo estão as diretrizes recomendadas para esta consulta:
+Para executar uma atualização em massa:
 
-* **O texto de erro (texto de quarentena)** contém “Momen_Code10_InvalidRecipient”
-* **Domínio de email (@domain)** igual a domain1.com OU **Domínio de email (@domain)** igual a domain2.com OU **Domínio de email (@domain)** igual a domain3.com
-* **Atualizar status (@lastModified)** em ou depois de `MM/DD/YYYY HH:MM:SS AM`
-* **Atualizar status (@lastModified)** em ou antes de `MM/DD/YYYY HH:MM:SS PM`
+1. Crie um fluxo de trabalho e adicione uma consulta à tabela de quarentena (**[!UICONTROL nms:address]**) para filtrar os destinatários afetados
+2. Use as condições de consulta para identificar endereços que devem ser removidos da quarentena, como:
+   * **Domínio de email (@domain)** é igual ao(s) domínio(s) de ISP afetado(s)
+   * **Atualizar status (@lastModified)** dentro do período de interrupção
+   * **Status (@status)** igual ao status de quarentena
+3. Adicione uma atividade **[!UICONTROL Update data]** para definir o status do endereço como **[!UICONTROL Valid]**
 
-Depois de ter a lista de recipients afetados, adicione uma atividade **[!UICONTROL Update data]** para definir seu status como **[!UICONTROL Valid]** para que eles sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]**,. Também é possível excluí-los da tabela de quarentena.
+Os endereços serão removidos automaticamente da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** e poderão ser incluídos em deliveries futuros.
+
+## Tópicos relacionados
+
+* [Noções básicas sobre falhas de entrega](delivery-failures.md) - Saiba mais sobre os diferentes tipos de falhas de entrega e como o Campaign lida com rejeições
+* [Monitorar entregas](delivery-dashboard.md) - Acesse logs de entrega e monitore o desempenho da entrega
+* [Práticas recomendadas de entrega](../start/delivery-best-practices.md) - Práticas recomendadas para manter uma boa capacidade de entrega e evitar a quarentena
 

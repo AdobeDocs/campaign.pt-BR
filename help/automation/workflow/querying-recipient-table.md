@@ -3,13 +3,13 @@ product: campaign
 title: Consultar a tabela de destinatários
 description: Saiba como consultar a tabela de destinatários
 feature: Query Editor
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 7f859ce9-7ab8-46e1-8bd6-43aaffe30da2
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 100%
+source-wordcount: '390'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Neste exemplo, queremos recuperar os nomes e e-mails dos destinatários cujos do
 
 * Qual tabela devemos selecionar?
 
-  A tabela de destinatário (nms:recipient)
+  A tabela de destinatários (nms:recipient)
 
 * Campos a serem selecionados como colunas de saída
 

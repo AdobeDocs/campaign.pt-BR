@@ -2,12 +2,12 @@
 title: Cálculo de métricas de relatório integradas
 description: Cálculo de métricas de relatório integradas
 feature: Reporting
-role: Data Engineer
+role: Developer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 99%
+source-wordcount: '3025'
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ Este relatório é baseado na tabela **[!UICONTROL Consolidated tracking]** (nms
 
 **Detalhamento por tipo de erro**
 
-Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statistics]**(nms:deliveryLogStats).
+Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -830,7 +830,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 
 ## Estatísticas de entrega {#delivery-statistics-1}
 
-Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statistics]**(nms:deliveryLogStats).
+Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -889,7 +889,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
 
 ## Detalhamento de aberturas {#breakdown-of-opens-1}
 
-Este relatório baseia-se nas tabelas de **Deliveries** (nms:entrega) e **Logs de rastreamento** (nms:trackingLogRcp)
+Este relatório é baseado nas tabelas de **Deliveries** (nms:delivery) e **Logs de rastreamento** (nms:trackingLogRcp).
 
 <table> 
  <thead> 
@@ -912,7 +912,7 @@ Este relatório baseia-se nas tabelas de **Deliveries** (nms:entrega) e **Logs d
 
 ## Outros indicadores {#other-indicators}
 
-O indicador **Enviado** (@sent), acessado pelo nó **Deliveries (nms:delivery) > Indicators** corresponde ao número total de SMS enviado ao provedor de serviços. Esse indicador é usado apenas para entregas de SMS e não deve ser usado para outros tipos de entregas (não deve ser confundido com os indicadores **@success** e **@processed**).
+O indicador **Enviado** (@sent), acessado pelo nó **Entregas (nms:delivery) > Indicadores** corresponde ao número total de SMS enviado ao provedor de serviços. Esse indicador é usado apenas para entregas de SMS e não deve ser usado para outros tipos de entregas (não deve ser confundido com os indicadores **@success** e **@processed**).
 
 ## Sincronização de indicadores {#indicator-synchronization}
 

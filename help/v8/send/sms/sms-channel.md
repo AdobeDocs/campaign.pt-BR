@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
-source-git-commit: 5c5d19c9b9b413bb630a4e5738c6697d2341665a
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 22%
@@ -18,7 +18,7 @@ ht-degree: 22%
 >
 >Esse recurso está disponível para todos os ambientes FDA do Campaign. **não** disponível para implantações do FFDA do Campaign. Esta documentação se aplica ao Adobe Campaign v8.7.2 e posterior. Para alternar do conector herdado para o novo conector SMS, consulte esta [nota técnica](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+>Para versões mais antigas, leia a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## Tipos de SMS {#sms-types}
 
@@ -70,7 +70,7 @@ O campo *data_coding* informa qual codificação é usada. Um grande problema é
 O tamanho máximo de uma mensagem depende de sua codificação. Esta tabela resume todas as informações relevantes:
 
 | Codificação | data_coding comum | Tamanho da mensagem (caracteres) | Tamanho da parte para SMS multiparte | Caracteres disponíveis |
-|:-:|:-:|:-:|:-:|:-:|  
+|:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | Conjunto de caracteres básicos GSM7 + extensão (caracteres estendidos usam dois caracteres) |
 | Latino-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 UTF-16 | 8 | 70 | 67 | Unicode (varia de telefone para telefone) |

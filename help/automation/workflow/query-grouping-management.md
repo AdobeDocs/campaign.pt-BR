@@ -3,12 +3,12 @@ product: campaign
 title: Consultar usando gerenciamento de agrupamento
 description: Saiba como executar consultas usando o gerenciamento de agrupamento
 feature: Query Editor
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Neste exemplo, devemos executar uma query para localizar todos os domínios de e
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de destinatário (nms:recipient)
+  A tabela de destinatários (nms:recipient)
 
 * Campos a serem selecionados nas colunas de saída?
 
@@ -33,7 +33,7 @@ Neste exemplo, devemos executar uma query para localizar todos os domínios de e
 
 Para criar este exemplo, aplique as seguintes etapas:
 
-1. Abra o **[!UICONTROL Generic query editor]** e escolha a tabela &quot;Recipients&quot; (**nms:recipient**).
+1. Abra o **[!UICONTROL Generic query editor]** e escolha a tabela “Destinatários” (**nms:recipient**).
 
    ![](assets/query_editor_02.png)
 

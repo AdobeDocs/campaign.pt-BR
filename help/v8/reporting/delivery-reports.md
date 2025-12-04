@@ -3,10 +3,10 @@ title: Relatórios de entrega integrados do Adobe Campaign
 description: Relatórios de entrega integrados do Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 62%
+source-wordcount: '1019'
+ht-degree: 60%
 
 ---
 
@@ -40,7 +40,7 @@ Para acessar os relatórios, siga as etapas abaixo:
 
 ## Indicadores de rastreamento {#tracking-indicators}
 
-Este relatório combina os indicadores principais para rastrear o comportamento dos destinatários ao receber a entrega. Ele oferece acesso a estatísticas de entrega e recebimento, taxas de abertura e cliques, fluxos de cliques gerados, rastreamento Web e atividades de compartilhamento em redes sociais.
+Este relatório combina os indicadores principais para rastrear o comportamento dos destinatários ao receber a entrega. Ele fornece acesso a estatísticas de delivery e recebimento, taxas de abertura e cliques, fluxos de cliques gerados, bem como atividades de compartilhamento em redes sociais.
 
 >[!NOTE]
 >

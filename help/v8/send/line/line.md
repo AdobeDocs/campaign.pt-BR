@@ -2,11 +2,11 @@
 title: Enviar mensagens LINE diretas com o Adobe Campaign
 description: Introdução a mensagens LINE
 feature: Line App
-role: Data Engineer
+role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 94%
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 O LINE é um aplicativo para mensagens instantâneas, chamadas de voz e vídeo gratuitas, disponível em todos os dispositivos móveis e para PC. Você pode usar o Adobe Campaign para enviar mensagens LINE.
 
-O [!DNL LINE] também pode ser combinado com o módulo de mensagem transacional para enviar mensagens em tempo real no aplicativo [!DNL LINE] instalado nos dispositivos móveis do consumidor. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) na documentação do Campaign Classic v7.
+O [!DNL LINE] também pode ser combinado com o módulo de mensagem transacional para enviar mensagens em tempo real no aplicativo [!DNL LINE] instalado nos dispositivos móveis do consumidor. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) na documentação do Campaign Classic v7.
 
 ![](assets/line_message.png)
 
@@ -157,7 +157,7 @@ A configuração desse tipo de mensagem é semelhante à configuração do **[!U
 
 ### Configuração de uma entrega de imagem e link {#configuring-an-image-and-link-delivery}
 
-Uma entrega **[!UICONTROL Image and link]**&#x200B;[!DNL LINE] é uma mensagem enviada aos recipients no formato de uma imagem que pode conter um ou vários URLs.
+Uma entrega **[!UICONTROL Image and link]**[!DNL LINE] é uma mensagem enviada aos recipients no formato de uma imagem que pode conter um ou vários URLs.
 
 É possível usar:
 

@@ -4,10 +4,10 @@ description: Saiba como usar o módulo Adobe Campaign Social Marketing para post
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 24%
+source-wordcount: '778'
+ht-degree: 23%
 
 ---
 
@@ -158,5 +158,5 @@ No modelo de entrega **[!UICONTROL Tweet]** interno, o rastreamento é habilitad
 
 Os dados de rastreamento podem ser exibidos nos relatórios do delivery e na guia **[!UICONTROL Edit > Tracking]** do delivery e do serviço.
 
-A configuração de rastreamento é a mesma de uma entrega de email. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR){target="_blank"}.
+A configuração de rastreamento é a mesma de uma entrega de email. Saiba mais sobre o [rastreamento](tracking.md).
 

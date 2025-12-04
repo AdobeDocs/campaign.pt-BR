@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
-workflow-type: ht
-source-wordcount: '706'
-ht-degree: 100%
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    O Adobe Campaign vem com um conjunto de painéis e ferramentas para monitorar suas entregas de email.
 
-   [Leia a documentação do Campaign Classic v7 para saber](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=pt-BR){target="_blank"} como verificar se suas mensagens estão sendo enviadas, monitorar a execução e iniciar a ação se ocorrer um erro.
+   Saiba como [rastrear e monitorar suas mensagens](../send/tracking.md) para verificar se suas mensagens estão sendo enviadas, monitorar a execução e iniciar a ação se ocorrer um erro.
 
 1. **Posso monitorar a execução do fluxo de trabalho?**
 
@@ -90,7 +90,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
 1. **Posso me conectar com especialistas do Campaign?**
 
-   Junte-se à Comunidade do Campaign: procure respostas em uma pergunta já existente ou faça uma nova aos especialistas. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){target="_blank"}
+   Junte-se à Comunidade do Campaign: procure respostas em uma pergunta já existente ou faça uma nova aos especialistas. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Como posso registrar um problema?**

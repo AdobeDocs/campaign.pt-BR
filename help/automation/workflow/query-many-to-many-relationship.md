@@ -3,13 +3,13 @@ product: campaign
 title: Consultar usando uma relação muitos para muitos
 description: Saiba como executar consultas usando uma relação muitos para muitos
 feature: Query Editor
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: c320054d-7f67-4b12-aaa7-785945bf0c18
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '389'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Este exemplo também mostra como configurar um filtro relacionado à escolha de 
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de destinatário (**nms:recipient**)
+  A tabela de destinatários (**nms:recipient**)
 
 * Campos a serem selecionados para a coluna de saída
 
@@ -35,7 +35,7 @@ Este exemplo também mostra como configurar um filtro relacionado à escolha de 
 
 Siga as etapas abaixo:
 
-1. Abra o editor de query genérico e selecione a tabela Destinatário **[!UICONTROL (nms:recipient)]**.
+1. Abra o editor de consulta genérico e selecione a tabela Recipient **[!UICONTROL (nms:recipient)]**.
 1. Na janela **[!UICONTROL Data to extract]**, selecione **[!UICONTROL Primary key]**, **[!UICONTROL First name]**, **[!UICONTROL Last name]** e **[!UICONTROL Email]**.
 
    ![](assets/query_editor_nveau_33.png)

@@ -2,12 +2,12 @@
 title: Problemas conhecidos do Campaign v8
 description: Problemas conhecidos na versão mais recente do Campaign
 feature: Overview
-role: Data Engineer
+role: Developer
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 2%
