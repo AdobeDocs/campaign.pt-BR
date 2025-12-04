@@ -157,7 +157,7 @@ A configuração desse tipo de mensagem é semelhante à configuração do **[!U
 
 ### Configuração de uma entrega de imagem e link {#configuring-an-image-and-link-delivery}
 
-Uma entrega **[!UICONTROL Image and link]**[!DNL LINE] é uma mensagem enviada aos recipients no formato de uma imagem que pode conter um ou vários URLs.
+Uma entrega **[!UICONTROL Image and link]**&#x200B;[!DNL LINE] é uma mensagem enviada aos recipients no formato de uma imagem que pode conter um ou vários URLs.
 
 É possível usar:
 
