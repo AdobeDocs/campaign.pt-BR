@@ -78,7 +78,7 @@ Este relatório mostra a lista de páginas visitadas após uma entrega.
 
 Entenda melhor a diferença de rastreamento entre uma pessoa/pessoas e um recipient no Adobe Campaign com este exemplo.
 
-Saiba mais sobre pessoas e recipients na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html#reporting){target="_blank"}
+Saiba mais sobre pessoas e recipients na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html?lang=pt-BR#reporting){target="_blank"}
 
 **Indicadores de rastreamento**
 
