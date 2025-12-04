@@ -94,7 +94,7 @@ Se a entrega não estiver sendo enviada e o status permanecer **[!UICONTROL Pend
 
   O limite de campanhas simultâneas é definido na opção **[!UICONTROL NmsOperation_LimitConcurrency]**. O valor padrão é 10.
 
-  Como usuário do Managed Cloud Services, você pode trabalhar com a Adobe para ajustar esse limite, se necessário. Saiba mais sobre opções na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}.
+  Como usuário do Managed Cloud Services, você pode trabalhar com a Adobe para ajustar esse limite, se necessário. Saiba mais sobre opções na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR){target="_blank"}.
 
 * **Problemas de disponibilidade de recursos**
 
