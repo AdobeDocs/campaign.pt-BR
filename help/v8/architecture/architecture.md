@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Developer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: 7465cacc74b8b7df38c5eb10d2928749c70a87ea
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 14%
@@ -34,7 +34,7 @@ Dois modelos de implantação estão disponíveis: **Implantação FDA do Campai
 
 ### Implantação de FDA no Campaign {#ac-deployment-fda}
 
-Em sua [implantação FDA](fda-deployment.md), o [!DNL Adobe Campaign] v8 pode ser conectado ao [!DNL Snowflake] para acessar dados por meio do recurso Federated Data Access: você pode acessar e processar dados externos e informações armazenados no banco de dados do [!DNL Snowflake] sem alterar a estrutura dos dados do Adobe Campaign. O PostgreSQL é o banco de dados principal e você pode usar o Snowflake como o banco de dados secundário para estender e armazenar seus dados no Snowflake. Posteriormente, é possível executar ETL, segmentação e relatórios em um grande conjunto de dados com desempenhos excelentes.
+Em sua [implantação FDA](fda-deployment.md), o [!DNL Adobe Campaign] v8 pode ser conectado ao [!DNL Snowflake] para acessar dados por meio do recurso Federated Data Access: você pode acessar e processar dados externos e informações armazenados no banco de dados do [!DNL Snowflake] sem alterar a estrutura dos dados do Adobe Campaign. O PostgreSQL é o banco de dados principal e você pode usar o Snowflake como o banco de dados secundário para estender seu modelo de dados e armazenar seus dados no Snowflake. Posteriormente, é possível executar ETL, segmentação e relatórios em um grande conjunto de dados com desempenhos excelentes.
 
 
 ![](assets/P1-P3-architecture.png){zoomable="yes"}
@@ -110,7 +110,7 @@ Nessa arquitetura específica, a célula de execução é separada da instância
 
   Saiba como criar e publicar modelos de mensagem em [esta seção](../send/transactional.md).
 
-* A **Instância de execução** recupera eventos de entrada (redefinição de senha ou pedidos de um site, por exemplo) e envia mensagens personalizadas. Pode haver mais de uma instância de execução para processar mensagens por meio do balanceador de carga e dimensionar o número de eventos a serem continuados para disponibilidade máxima.
+* A **Instância de execução** recupera eventos de entrada (redefinição de senha ou pedidos de um site, por exemplo) e envia mensagens personalizadas. Pode haver mais de uma instância de execução para processar mensagens por meio do balanceador de carga e dimensionar o número de eventos a serem processados para disponibilidade máxima.
 
 >[!CAUTION]
 >
