@@ -64,7 +64,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
 1. **Com quais sistemas e componentes o Campaign v8 é compatível?**
 
-   Você pode obter a lista de todos os sistemas e componentes compatíveis com o último build do Campaign na [Matriz de compatibilidade do Adobe Campaign ](compatibility-matrix.md).
+   Você pode obter a lista de todos os sistemas e componentes compatíveis com o último build do Campaign na [Matriz de compatibilidade do Adobe Campaign &#x200B;](compatibility-matrix.md).
 
 1. **Qual é o procedimento para delegação de domínio?**
 
@@ -86,7 +86,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Você pode obter o programa de instalação e o console do cliente do Centro de download da Adobe.
 
-   Como usuário administrador, acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) {target="_blank"} da Adobe para baixar o Adobe Campaign.
+   Como usuário administrador, acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html){target="_blank"}  da Adobe para baixar o Adobe Campaign.
 
    Saiba mais sobre o Centro de distribuição [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR){target="_blank"}.
 
