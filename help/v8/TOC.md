@@ -5,9 +5,9 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 88%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 88%
       + [Análise de entrega](send/delivery-analysis.md)
       + [Configurar e enviar a entrega](send/configure-and-send.md)
       + [Otimização da hora de envio](send/predictive.md)
-   + Monitore seus deliveries {#monitor}
+   + Monitore entregas {#monitor}
       + [Monitorar deliveries na interface do Campaign](send/delivery-dashboard.md)
       + [Status de entrega](send/delivery-statuses.md)
       + [Falhas de entrega](send/delivery-failures.md)
@@ -131,7 +131,6 @@ ht-degree: 88%
    + Adicionar perfis {#add-profiles}
       + [Criar perfis manualmente](audiences/create-profiles.md)
       + [Importar perfis de um arquivo](audiences/import-profiles.md)
-      + [Trabalhar com perfis externos](audiences/external-profiles.md)
       + [Coletar dados de perfil em formulários web](audiences/collect-profiles.md)
       + [Trabalhar com target mappings](audiences/target-mappings.md)
       + [Criar perfis de teste](audiences/test-profiles.md)
