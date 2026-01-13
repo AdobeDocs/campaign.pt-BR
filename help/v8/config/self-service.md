@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 96%
+source-wordcount: '372'
+ht-degree: 77%
 
 ---
 
@@ -28,7 +28,15 @@ Saiba mais em [documentação do Painel de controle do Campaign](https://experie
 
 ## Como acessar o Painel de controle? {#ac-control-panel-access}
 
-O Painel de controle está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=pt-BR){target="_blank"} para obter mais informações.
+O Painel de controle está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores.
+
+>[!IMPORTANT]
+>
+>Por padrão, o Painel de controle do Campaign é acessível aos usuários administradores que pertencem ao Perfil de produto &quot;Administradores&quot;. De acordo com a configuração da organização, o Perfil do produto pode ser nomeado de forma diferente (&quot;administrador&quot;, &quot;administradores&quot;, &quot;administrador de aprovação&quot; etc.). **Qualquer Perfil de Produto que contenha a palavra &quot;administrador&quot; em seu nome concederá acesso automaticamente ao Painel de Controle.**
+>
+>Analise cuidadosamente o nome do seu Perfil de produto para garantir que somente usuários autorizados tenham acesso ao Painel de controle do Campaign.
+
+[Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=pt-BR){target="_blank"} para obter mais informações.
 
 ## Perguntas frequentes sobre o Painel de controle {#ac-control-faq}
 

@@ -2,9 +2,9 @@
 title: Migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 description: Saiba como migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1433'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,14 @@ Essa alteração é aplicável a partir do Campaign v8.5.2, e é **obrigatória*
 Se os operadores em sua organização estiverem se conectando ao console do cliente do Campaign usando seu logon/senha (também conhecido como. autenticação nativa), você será afetado e deverá migrar esse(s) operador(es) para o Adobe IMS conforme detalhado abaixo.
 
 A migração para o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} é uma obrigação de segurança para tornar seus ambientes seguros e padronizados, pois a maioria das outras soluções e aplicativos da Adobe Experience Cloud já está no IMS.
+
+>[!IMPORTANT]
+>
+>**Impacto do acesso ao Painel de Controle**
+>
+>Depois de migrar os usuários para o IMS, esteja ciente de que qualquer Perfil de produto no Adobe Admin Console que contenha a palavra &quot;administrador&quot; no nome (como &quot;Administradores&quot;, &quot;administrador&quot;, &quot;administradores&quot;, &quot;administrador de aprovação&quot; etc.) concederá acesso automaticamente ao Painel de controle do Campaign. O Painel de controle do Campaign é uma ferramenta de autoatendimento que permite fazer alterações significativas em instâncias do Campaign.
+>
+>Analise cuidadosamente suas convenções de nomenclatura de perfil de produto para garantir que somente usuários autorizados tenham acesso ao Painel de controle do Campaign. Saiba mais sobre como gerenciar permissões do Painel de Controle na [documentação do Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 ## Como migrar?{#ims-migration-procedure}
 
