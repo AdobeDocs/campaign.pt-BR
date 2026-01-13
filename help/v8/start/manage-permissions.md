@@ -107,7 +107,7 @@ Esses perfis de produto correspondem com os **grupos de operadores** do Campaign
 
    >[!IMPORTANT]
    >
-   >A função **[!UICONTROL Administrator]** concede acesso ao Painel de Controle do Campaign. Qualquer Perfil de produto no Adobe Admin Console que contenha a palavra &quot;administrador&quot; em seu nome (como &quot;Administradores&quot;, &quot;administrador&quot;, &quot;administradores&quot;, &quot;administrador de aprovação&quot; etc.) concederá acesso ao Painel de controle do Campaign. Saiba mais sobre [como gerenciar o acesso ao Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+   >A função **[!UICONTROL Administrator]** concede acesso ao Painel de Controle do Campaign. Qualquer Perfil de produto no Adobe Admin Console que contenha a palavra &quot;administrador&quot; em seu nome (como &quot;Administradores&quot;, &quot;administrador&quot;, &quot;administradores&quot;, &quot;administrador de aprovação&quot; etc.) concederá acesso ao Painel de controle do Campaign. Saiba mais sobre [como gerenciar o acesso ao Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR){target="_blank"}.
 
 1. **[!UICONTROL Delivery operators]** (entrega)
 
