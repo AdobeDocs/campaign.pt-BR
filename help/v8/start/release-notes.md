@@ -3,10 +3,10 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d31368428fc7d5b982bb5fc67d0369bb17ea0b2c
+source-git-commit: e5e08dcd1813c8eba608ba3a7b659dcd6d98d985
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 23%
+source-wordcount: '688'
+ht-degree: 21%
 
 ---
 
@@ -14,45 +14,72 @@ ht-degree: 23%
 
 Esta página lista novos recursos, melhorias e correções das **últimas versões** do Campaign v8 (console). Saiba mais sobre lançamentos, versões e atualizações do Campaign [nesta página](upgrades.md). Outras versões estão listadas na seção Versões anteriores desta documentação.
 
-## Versão 8.8.2 {#release-8-8-2}
+## Versão 8.9.1 {#release-8-9-1}
 
-_9 de outubro de 2025_
+_27 de janeiro de 2026_
 
->[!AVAILABILITY]
+>[!CAUTION]
 >
->Esta versão está em **disponibilidade limitada** (LA). 
+> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
 
-### Novos recursos {#features-8-8-2}
+### Novos recursos {#new-8-9-1}
 
-O **novo conector de envio de SMS** agora está disponível para [implantações do FFDA do Campaign](../architecture/enterprise-deployment.md). Consulte a [documentação detalhada](../send/sms/sms.md).
+O **novo conector de envio de SMS** agora está disponível para todos os clientes (GA). Consulte a [documentação detalhada](../send/sms/sms.md).
 
-Esta versão também vem com um conjunto de funcionalidades disponíveis com a interface da Web do Campaign:
+Esta versão é fornecida com um conjunto de funcionalidades disponíveis na interface da Web do Campaign:
 
-* [Enriquecimento de Perfil em Mensagens Transacionais](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=pt-BR){target="_blank"}
-* [Recursos Multilíngues para Mensagens Transacionais, Notificações por Push e SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=pt-BR){target="_blank"}
+* Recursos de entrega multilíngue (GA)
+* Enriquecimento de perfil em mensagens transacionais (GA)
+* Adobe Experience Manager live e cópias de idioma
+* Experimentos de conteúdo - Teste A/B
+* Atividade de delivery contínua
 
 Consulte as [notas de versão](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=pt-BR){target="_blank"} da interface da Web do Campaign
 
-### Correções {#fixes-8-8-2}
+### Melhorias de segurança {#security-8-9-1}
 
-<!--
-* Fixed an issue which prevented dynamic reporting from being available for transactional messages.
--->
-* Correção de um problema que poderia resultar na falha do fluxo de trabalho de limpeza do banco de dados. (NEO-87949)
-* Correção de um problema no Marketing distribuído em que os dados de rastreamento não eram registrados para deliveries de campanha colaborativa. (NEO-86836)
-<!--
-* Issue SMS2.0 with FFDA Continuous Deliveries (NEO-88785)
--->
-* Correção de um problema que impedia o funcionamento correto da personalização em fragmentos. (NEO-88161)
-* Correção de um problema após a migração para o novo conector ODBC do Redshift, que poderia resultar na falha da atividade de fluxo de trabalho Split com erros SQL. (NEO-87466)
-* Correção de um problema que poderia causar contagens de exclusão imprecisas em workflows. (NEO-89207)
-* Correção de um problema que poderia causar indicadores de clique imprecisos para notificações por push. (NEO-89503)
-* Correção de um problema em que os logs do delivery do SMS não eram atualizados corretamente, impedindo a geração de relatórios de status precisos no Adobe Campaign. (NEO-88479)
-* Correção de um problema em que as aspas francesas eram convertidas incorretamente em aspas inglesas no conteúdo de delivery. (NEO-89631)
-* Correção de um problema em que o Servidor em tempo real retornava um código de resposta incorreto para tokens IMS inválidos. (NEO-87428)
-* Correção de um problema em que as estatísticas de delivery de email e SMS não eram totalmente recalculadas, causando indicadores de sucesso imprecisos. (NEO-88106)
-* Correção de um problema com o novo conector de envio de SMS em que os logs de entrega atribuíam incorretamente o status de entrega a um pequeno subconjunto de mensagens. (NEO-89581)
-* Correção de um problema com o novo conector de envio de SMS em que os deliveries de métricas de sucesso não eram atualizados corretamente em servidores de marketing e mid. (NEO-89850)
-* Correção de um problema de sincronização entre as instâncias de Tempo real e Marketing que causava a ausência de logs de rastreamento e relatórios incorretos. (NEO-90247)
-* Correção de um problema de enriquecimento do fluxo de trabalho que causava erros ao selecionar campos em dois links 1-N consecutivos em esquemas personalizados. (NEO-87682)
+* As contas externas do Snowflake agora oferecem suporte à autenticação OAuth2, fornecendo métodos de autenticação modernos e seguros para conexões de acesso a dados federados. (NEO-87013)
+* Correção de vulnerabilidades de acesso a arquivos de workflow restringindo operações a diretórios autorizados, impedindo o acesso não autorizado e a possível execução remota de código. (NEO-88460)
+* Adição do URL FTP, que incluir na lista de permissões os controles às atividades de fluxo de trabalho do código JavaScript, restringindo as conexões de FTP de saída somente aos endereços autorizados. (NEO-89083)
 
+### Outras alterações {#changes-8-9-1}
+
+* Gerenciamento aprimorado da memória do contêiner ao implementar a limitação automática do fluxo de trabalho durante condições de alta memória, com recursos inteligentes de reinicialização do fluxo de trabalho e medidas de proteção de memória para processos não críticos. (NEO-89041)
+* Adição de suporte para funções de criptografia assimétrica e descriptografia em workflows do Campaign. (NEO-80257)
+* Desempenho aprimorado do agente de replicação e resiliência de memória para uploads de dados grandes em implantações FFDA. (NEO-88430)
+
+
+### Correções {#fixes-8-9-1}
+
+* Correção de um problema em que os relatórios dinâmicos exibiam contagens incorretas ao serem agrupados por determinadas colunas. (NEO-86898)
+* Solução de discrepâncias de dados entre relatórios dinâmicos e dados reais da campanha. (NEO-88068)
+* Correção de problemas de concatenação com tipos de campo &quot;char&quot; do PostgreSQL que causavam resultados inesperados em consultas. (NEO-87769)
+* Correção de um problema em que o comando logInfo do JavaScript não tratava corretamente de determinados parâmetros. (NEO-88263)
+* Solução de problemas de travamento de sincronização no processamento de eventos em tempo real do Centro de mensagens. (NEO-88330)
+* Correção de um problema em que o Editor visual reformatava automaticamente o conteúdo do HTML, causando alterações no layout. (NEO-88409)
+* Correção de um problema em que a atividade Desduplicação não funcionava corretamente com esquemas temporários. (NEO-88577)
+* Correção de um problema que impedia que seed addresses fossem gerados ao enviar provas. (NEO-88720)
+* Desempenho de consulta PostgreSQL aprimorado por meio da otimização do tratamento de colunas de partição. (NEO-88771)
+* Correção de um problema em que as atividades de transferência de arquivos não lidavam corretamente com caracteres de continuação de linha. (NEO-88812)
+* Otimização aprimorada de consultas PostgreSQL para melhor desempenho em grandes conjuntos de dados. (NEO-88885)
+* Correção de um erro &quot;Permissão negada&quot; que impedia a abertura de campanhas híbridas. (NEO-88955)
+* Suporte estendido a recursos de código de barras para manipular strings de texto mais longas. (NEO-88958)
+* Correção de um erro nos logs de campanha que ocorria ao usar provas com deliveries recorrentes. (NEO-88976)
+* Correção de um problema que afetava as operações de envio de email em determinados cenários. (NEO-89019)
+* Solução de um problema em que o modo de início do fluxo de trabalho era alterado inesperadamente de Imediato para Normal. (NEO-89025)
+* Correção de erros que ocorriam ao executar a atividade Atualizar dados em condições específicas. (NEO-89031)
+* Correção de um problema em que a atividade Atualizar dados perdia metadados de esquema personalizados. (NEO-89056)
+* Correção de um erro de validação que ocorria durante a preparação do delivery. (NEO-89063)
+* Resolução de geração SQL inválida quando as consultas continham filtros em relações de link 1-1. (NEO-89065)
+* Correção de um problema em que a atividade Consulta incremental não respeitava o limite de tamanho configurado. (NEO-89066)
+* Desempenho de fluxo de trabalho aprimorado em implantações FFDA para operações de grande escala. (NEO-89098)
+* Gerenciamento de memória e estabilidade aprimorados para processos de workflow. (NEO-89105)
+* Ativação da validação de coluna estrita para formulários web para evitar inconsistências de dados. (NEO-89111)
+* Solução de problemas de sincronização do Centro de mensagens que causavam atrasos de processamento. (NEO-89138)
+* Correção de erros no fluxo de trabalho &quot;Atualizar para entregabilidade&quot; que impediam a execução adequada. (NEO-89160)
+* Correção de erros que ocorriam ao executar atividades de código JavaScript em workflows. (NEO-89169)
+* Remoção de configurações de warehouse codificadas do Snowflake para permitir configurações de conta externa apropriadas. (NEO-89201)
+* Correção de 403 erros proibidos que ocorriam durante operações de transferência de arquivos do workflow. (NEO-89226)
+* Consultas lentas otimizadas na tabela de recipients em implantações do FFDA. (NEO-89268)
+* Correção de um problema em que as atividades de query incremental ignoravam os agendamentos configurados. (NEO-89317)
+* Correção de erros de acesso ao abrir campanhas em ambientes híbridos. (NEO-89320)
