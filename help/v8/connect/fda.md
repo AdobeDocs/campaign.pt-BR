@@ -5,7 +5,7 @@ feature: Federated Data Access
 role: Admin
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 631c4986d24daeff870412566318adb170ce040f
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 36%
@@ -20,7 +20,7 @@ Use o conector FDA (Federated Data Access) para conectar o Campaign a um ou mais
 >
 >* Os bancos de dados compatíveis com o Federated Data Access estão listados na [Matriz de Compatibilidade](../start/compatibility-matrix.md).
 >
->* No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), uma conta externa específica está disponível para gerenciar a comunicação entre o banco de dados local do Campaign e o banco de dados da nuvem do Snowflake. Esta conta externa foi configurada para você pela Adobe e **não deve** ser modificado.
+>* No contexto de uma [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md), uma conta externa específica está disponível para gerenciar a comunicação entre o banco de dados local do Campaign e o banco de dados da nuvem do Snowflake. Esta conta externa foi configurada para você pela Adobe e **não deve** ser modificado.
 >
 >* Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support) para conectar o(s) banco(s) de dados externo(s) com o Campaign.
 
@@ -31,7 +31,7 @@ A opção FDA está sujeita às limitações do sistema de banco de dados de ter
 
 Além disso, esteja ciente das seguintes limitações e práticas recomendadas:
 
-* A opção FDA é feita para manipular os dados em bancos de dados externos em modo de lote em workflows. Para evitar problemas de desempenho, não é recomendável usar o módulo FDA no contexto de operações unitárias, como: personalização, interação, mensagens em tempo real etc.
+* A opção FDA é feita para manipular os dados em bancos de dados externos em modo de lote em fluxos de trabalho. Para evitar problemas de desempenho, não é recomendável usar o módulo FDA no contexto de operações unitárias, como: personalização, interação, mensagens em tempo real etc.
 
 * Evite o máximo possível as operações que precisam usar o banco de dados tanto do Adobe Campaign quanto externo. Para fazer isso, é possível:
 
@@ -39,7 +39,7 @@ Além disso, esteja ciente das seguintes limitações e práticas recomendadas:
 
    * Coletar os dados do banco de dados externo do Adobe Campaign e executar as operações no local.
 
-  Se você quiser realizar a personalização de entregas usando dados do banco de dados externo, colete os dados para usar em um workflow para torná-lo disponível em uma tabela temporária. Em seguida, use os dados da tabela temporária para personalizar seu delivery. Para fazer isso, pré-processe a personalização da mensagem em um fluxo de trabalho dedicado usando a opção **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de entrega. Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao target em uma tabela temporária, incluindo dados de tabelas vinculadas em um banco de dados externo.
+  Se você quiser realizar a personalização de entregas usando dados do banco de dados externo, colete os dados para usar em um fluxo de trabalho para torná-lo disponível em uma tabela temporária. Em seguida, use os dados da tabela temporária para personalizar seu delivery. Para fazer isso, pré-processe a personalização da mensagem em um fluxo de trabalho dedicado usando a opção **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de entrega. Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao target em uma tabela temporária, incluindo dados de tabelas vinculadas em um banco de dados externo.
 
   >[!CAUTION]
   >
