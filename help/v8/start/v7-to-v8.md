@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 334b327c7798c78fcfa90e90afe04896959037eb
+source-git-commit: bc787f35c27fbf29740eb39b0d41eee61cc2e754
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '715'
 ht-degree: 76%
 
 ---
@@ -59,7 +59,7 @@ Em sua implantação [Corporativa (FFDA)](../../v8/architecture/enterprise-deplo
 
 O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova arquitetura, a implantação corporativa (FFDA) do Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 
-Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../../v8/architecture/architecture.md).
+Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../../v8/architecture/architecture.md). Teste
 
 
 ## Usar sua Adobe ID para se conectar ao Campaign{#adobe-id}
