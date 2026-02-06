@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 334b327c7798c78fcfa90e90afe04896959037eb
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 76%
@@ -55,11 +55,11 @@ Saiba mais sobre como enviar provas de mensagem transacional ao fazer a transiç
 
 ## [!DNL Campaign] e [!DNL Snowflake] {#ac-gs-snowflake}
 
-Em sua implantação [Corporativa (FFDA)](../architecture/enterprise-deployment.md), o [!DNL Adobe Campaign] v8 funciona com dois bancos de dados: um banco de dados [!DNL Campaign] local para a interface de mensagens em tempo real, consultas unitárias e gravações por meio de APIs, e um banco de dados [!DNL Snowflake] em nuvem para execução de campanha, consultas em lote e execução de fluxo de trabalho.
+Em sua implantação [Corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md), o [!DNL Adobe Campaign] v8 funciona com dois bancos de dados: um banco de dados [!DNL Campaign] local para a interface de mensagens em tempo real, consultas unitárias e gravações por meio de APIs, e um banco de dados [!DNL Snowflake] em nuvem para execução de campanha, consultas em lote e execução de fluxo de trabalho.
 
 O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova arquitetura, a implantação corporativa (FFDA) do Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 
-Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../architecture/architecture.md).
+Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../../v8/architecture/architecture.md).
 
 
 ## Usar sua Adobe ID para se conectar ao Campaign{#adobe-id}
@@ -76,7 +76,7 @@ Os relatórios de cubo do Adobe Campaign v8 estão otimizados e oferecem melhore
 
 ## Recursos indisponíveis{#gs-unavailable-features}
 
-Observe que alguns recursos não estão disponíveis no contexto de uma [implantação Corporativa (FFDA)](../architecture/enterprise-deployment.md) do Campaign, como:
+Observe que alguns recursos não estão disponíveis no contexto de uma [implantação Corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md) do Campaign, como:
 
 * Gerenciamento de recursos de marketing
 * Cupons
