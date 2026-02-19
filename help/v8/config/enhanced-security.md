@@ -1,19 +1,21 @@
 ---
 title: Complemento de segurança aprimorada do Campaign
-description: Introdução ao complemento de segurança aprimorada do Campaign
+description: Orientação de configuração segura para o complemento de segurança aprimorada do Campaign
 feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 3f36d7c425dd5a9a13e1de7a77371b29a462dbea
+source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 3%
+source-wordcount: '743'
+ht-degree: 2%
 
 ---
 
 
 # Complemento de segurança aprimorada do Campaign {#enhanced-security}
+
+Adobe Esta página faz parte das [orientações sobre configuração segura recomendada publicamente disponível](security.md#public-guidance) para o Campaign v8.
 
 Para tornar sua conexão de rede mais segura e melhorar a segurança de seus recursos, o [!DNL Adobe Campaign] oferece um novo complemento **Segurança aprimorada**.
 
