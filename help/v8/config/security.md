@@ -6,10 +6,10 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
+source-git-commit: da2274cfd19bb067fcc1e990360093f161d5638a
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 74%
+source-wordcount: '2810'
+ht-degree: 55%
 
 ---
 
@@ -18,6 +18,22 @@ ht-degree: 74%
 Na Adobe, levamos a segurança da sua experiência digital muito a sério. As práticas de segurança estão profundamente enraizadas em nossos processos e ferramentas internos de desenvolvimento e operações de software e são rigorosamente seguidas por nossas equipes multifuncionais para evitar, detectar e responder a incidentes de maneira adequada.
 
 Além disso, nosso trabalho colaborativo com parceiros, pesquisadores líderes, instituições de pesquisa de segurança e outras organizações do setor nos ajuda a nos manter atualizados com as mais recentes ameaças e vulnerabilidades e regularmente incorporamos técnicas avançadas de segurança aos produtos e serviços que oferecemos.
+
+>[!NOTE]
+>
+>**Serviços gerenciados de nuvem do Campaign v8:** A infraestrutura (rede, servidor, TLS, patches) é gerenciada pela Adobe. Esta página se concentra na configuração no nível do locatário e do aplicativo que você controla: gerenciamento de acesso, autenticação, configurações de instância, proteção de dados, codificação e práticas operacionais.
+
+## Lista de verificação de segurança {#security-checklist}
+
+Use esta lista de verificação para alinhar sua configuração com os padrões seguros recomendados:
+
+* [Gerenciamento de acesso](#access-management): criar grupos de segurança, atribuir direitos apropriados, limitar o uso do administrador, um operador por usuário, revisar periodicamente
+* [Autenticação e sessão](#authentication-and-session): usar o Adobe IMS, política de identidade forte, tempo limite de sessão
+* [Segurança de instância e rede](#instance-and-network-security): incluo na lista de permissões IP, permissões de URL, chaves GPG via Painel de Controle
+* [Proteção de dados e PII](#data-and-pii-protection): HTTPS, restrição de visualização de PII, restrição de senhas, proteção de páginas confidenciais
+* [Diretrizes de codificação](#coding-guidelines): sem segredos codificados, validação de entrada, SQL com parâmetros, captchas
+* [Restrição de dados](#data-restriction): restringir o acesso aos campos de senha e segredo em contas externas
+* [Operacional e de conformidade](#operational-and-compliance): compare com esta linha de base periodicamente, use a trilha de auditoria
 
 ## Privacidade
 
@@ -101,8 +117,8 @@ Este é o fluxo geral para este caso de uso:
 
 O Adobe Campaign permite coletar dados, inclusive informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus destinatários.
 
-* Tenha sempre o consentimento do destinatário para o recebimento de comunicações. Para fazer isso, continue atendendo às solicitações de recusa o mais rápido possível e verifique o consentimento por meio de um duplo processo de aceitação. Para obter mais informações, consulte [Criar um formulário de inscrição com dupla aceitação](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
-* Não importe listas fraudulentas e utilize seed addresses para verificar se o arquivo do cliente não está sendo usado de forma fraudulenta. Para obter mais informações, consulte [Sobre seed addresses](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
+* Tenha sempre o consentimento do destinatário para o recebimento de comunicações. Para fazer isso, continue atendendo às solicitações de recusa o mais rápido possível e verifique o consentimento por meio de um duplo processo de aceitação. Para obter mais informações, consulte [Criar um formulário de inscrição com dupla aceitação](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
+* Não importe listas fraudulentas e utilize seed addresses para verificar se o arquivo do cliente não está sendo usado de forma fraudulenta. Para obter mais informações, consulte [Sobre seed addresses](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
 * Por meio do gerenciamento de consentimento e direitos, você pode rastrear as preferências dos destinatários, bem como gerenciar quem em sua organização pode acessar quais dados. Para obter mais informações, consulte [esta seção](#consent).
 * Facilite e gerencie solicitações de privacidade de seus destinatários. Para obter mais informações, consulte [esta seção](#privacy-requests).
 
@@ -123,7 +139,7 @@ Originalmente, o Adobe Campaign oferece recursos importantes que são essenciais
 
 * **Gerenciamento de consentimento**: por meio do processo de gerenciamento de assinaturas, você pode gerenciar suas preferências de destinatário e rastrear quais destinatários aceitaram e que tipo de assinatura. Para obter mais informações, consulte [Sobre assinaturas](../../automation/workflow/subscription-services.md).
 * **Retenção de dados**: todas as tabelas de registro padrão integradas têm períodos de retenção predefinidos, geralmente limitando seu armazenamento de dados a 6 meses ou menos. Períodos de retenção adicionais podem ser configurados com fluxos de trabalho. Para obter mais informações, entre em contato com os consultores ou administradores técnicos da Adobe.
-* **Gerenciamento de direitos**: o Adobe Campaign oferece a capacidade de gerenciar os direitos atribuídos aos vários operadores do Campaign por meio de diferentes funções pré-concebidas ou personalizadas. Isso permite gerenciar quem em sua empresa pode acessar, modificar ou exportar diferentes tipos de dados. Para obter mais informações, consulte [Sobre o gerenciamento de acesso](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}.
+* **Gerenciamento de direitos**: o Adobe Campaign oferece a capacidade de gerenciar os direitos atribuídos aos vários operadores do Campaign por meio de diferentes funções pré-concebidas ou personalizadas. Isso permite gerenciar quem em sua empresa pode acessar, modificar ou exportar diferentes tipos de dados. Para obter mais informações, consulte [Sobre o gerenciamento de acesso](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}.
 
 ### Solicitações de privacidade {#privacy-requests}
 
@@ -146,7 +162,7 @@ Graças às suas funcionalidades de rastreamento, o Adobe Campaign permite rastr
 * Um cookie de **sessão**: o cookie **nlid** contém o identificador do email enviado ao contato (**broadlogId**) e ao identificador do modelo de mensagem (**deliveryId**). Ele é adicionado quando o contato clica em um URL incluído em um email enviado pelo Adobe Campaign e permite que você acompanhe seu comportamento na Web. Esse cookie de sessão é apagado automaticamente quando o navegador é fechado. O contato pode configurar o navegador para recusar cookies.
 
 * Dois cookies **permanentes**:
-   * O cookie **UUID** (Universal Unique IDentifier) é compartilhado entre as soluções da Adobe Experience Cloud. É definido uma vez até que desapareça do navegador do cliente quando um novo valor é gerado. Este cookie identifica os usuários que interagem com as soluções da Experience Cloud quando visitam um site. Ele pode ser depositado por uma landing page (para associar atividades desconhecidas do cliente a um destinatário) ou por uma entrega. A descrição deste cookie está disponível [nesta página](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=pt-BR#ec-cookies).
+   * O cookie **UUID** (Universal Unique IDentifier) é compartilhado entre as soluções da Adobe Experience Cloud. É definido uma vez até que desapareça do navegador do cliente quando um novo valor é gerado. Este cookie identifica os usuários que interagem com as soluções da Experience Cloud quando visitam um site. Ele pode ser depositado por uma página de destino (para associar atividades desconhecidas do cliente a um destinatário) ou por uma entrega. A descrição deste cookie está disponível [nesta página](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=pt-BR#ec-cookies).
    * O cookie **nllastdelid** (introduzido no Campaign Classic 20.3) é um cookie permanente que contém o **deliveryId** da última entrega do qual o usuário clicou no link. Esse cookie é usado quando o cookie da sessão está ausente, para identificar a tabela de rastreamento que será usada.
 
 Regulamentos como o Regulamento Geral sobre a Proteção de Dados (RGPD) afirmam que as empresas exigem o acordo dos usuários do site antes da instalação de qualquer cookie.
@@ -165,40 +181,60 @@ Para fazer isso, adicione links rastreados às suas mensagens para medir o impac
 >
 >O rastreamento web não está disponível no Campaign v8. Saiba mais sobre recursos indisponíveis em [esta página](../start/v7-to-v8.md#gs-unavailable-features).
 
-<!--
-Privacy configuration and hardening is a key element of security optimization. Here are some best practices to follow regarding privacy:
+## Proteção de dados e PII {#data-and-pii-protection}
 
-* Protect your customer Personal Information (PI) by using HTTPS instead of HTTP
-* Use [PI view restriction](../dev/restrict-pi-view.md) to protect privacy and prevent data from being misused
-* Make sure that encrypted passwords are restricted
-* Protect the pages that might contain personal information such as mirror pages, web applications, etc.
--->
+A configuração e a proteção da privacidade são um elemento essencial da otimização da segurança. Siga estas práticas recomendadas:
+
+* **Usar HTTPS para todos os pontos de extremidade** - Verifique se todos os pontos de extremidade usados pelo Campaign (rastreamento, mirror page, aplicativos da Web, APIs) estão distribuídos por HTTPS.
+* **Restringir a exibição de PII** - Use a [restrição de exibição de PII](../dev/restrict-pi-view.md) para que somente operadores autorizados possam ver campos confidenciais (por exemplo, email, telefone) em esquemas e telas.
+* **Restringir o acesso a senhas criptografadas** - Restringir o acesso a campos de senha e segredo em contas externas e outros esquemas para que somente administradores ou um conjunto mínimo de operadores possam exibi-los. Consulte [Restrição de dados](#data-restriction) abaixo.
+* **Proteger páginas confidenciais** - Restringir o acesso a mirror pages, aplicativos web e páginas de aterrissagem que exibem ou coletam PII; usar permissões de operador e pasta e, quando relevante, captchas e consentimento.
 
 >[!NOTE]
 >
 >Como usuário do Managed Cloud Services, a Adobe trabalhará com você para implementar essas configurações no seu ambiente.
 
+## Gerenciamento de acesso {#access-management}
 
-## Gerenciamento de acesso
+O gerenciamento de acesso é uma parte importante do fortalecimento da segurança. Estas são as principais práticas recomendadas do:
 
-O gerenciamento de acesso é uma parte importante do fortalecimento da segurança. Estas são algumas das principais práticas recomendadas do:
+* **Criar grupos de segurança suficientes** - Defina grupos de operadores que correspondam a funções e atribua apenas os direitos necessários a cada função.
+* **Verifique se cada operador tem os direitos de acesso apropriados** - Aplique o princípio do privilégio mínimo; evite conceder ADMINISTRATION ou outros direitos amplos por padrão.
+* **Evite usar o operador administrador e evite ter muitos operadores no grupo de administradores** - Não compartilhe a conta de administrador interna; crie um operador por usuário físico para responsabilidade e auditoria.
+* **Um operador por usuário físico** - Não compartilhar contas. Crie um operador do Campaign (Adobe ID) por pessoa para que as trilhas de auditoria e os logs sejam atribuíveis.
+* **Limitar direitos nomeados de alto privilégio** - Conceder **ADMINISTRATION**, **PROGRAM EXECUTION** (createProcess) e **SQL** somente a um pequeno número de operadores confiáveis; documente quem os tem e por quê.
+* **Revisar acesso periodicamente** - Revisar operadores, grupos de operadores e permissões de pastas periodicamente; remover ou reduzir o acesso quando as funções forem alteradas ou as pessoas saírem.
+* **Usar perfis de produtos consistentemente** - prefira atribuir usuários a perfis de produtos (grupos de operadores) no Admin Console; mantenha a nomenclatura consistente (por exemplo, `campaign - <instance> - <group>`). Consulte [Introdução a permissões](../start/gs-permissions.md).
+* **Acesso ao Painel de Controle** - No Campaign v8, perfis de produto ou direitos nomeados cujo nome contenha &quot;admin&quot; podem conceder acesso ao Painel de Controle do Campaign. Evite usar &quot;admin&quot; nos nomes de perfil ou grupo, a menos que esses usuários tenham acesso ao Painel de controle do Campaign.
 
-* Criar grupos de segurança suficientes
-* Verifique se cada operador tem os direitos de acesso apropriados
+Saiba mais sobre permissões [nesta seção](../start/gs-permissions.md).
 
-Saiba mais sobre permissões em [esta seção](../start/gs-permissions.md)
+## Autenticação e sessão {#authentication-and-session}
 
-## Diretrizes de codificação
+* **Usar o Adobe IMS** - Todos os usuários devem entrar com seu Adobe ID (IMS); não dependa de logon/senha herdados para operadores diários.
+* **Conte com uma política de identidade e senha forte** - Use a Admin Console ou seu provedor de identidade para MFA e política de senha; verifique se apenas usuários autorizados são atribuídos aos perfis de produto do Campaign.
+* **Configurar tempo limite de sessão** - Quando configurável (por exemplo, console do cliente), defina um tempo limite de sessão razoável e bloqueie a tela ao sair da estação de trabalho.
+
+## Segurança da instância e da rede {#instance-and-network-security}
+
+Como administrador de produto do Campaign v8, use o [Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target="_blank"} para gerenciar a segurança no nível da instância:
+
+* **incluo na lista de permissões de IP** - Gerencie o incluo na lista de permissões de IP para obter acesso à instância; restrinja-se a redes conhecidas (por exemplo, Office, VPN) e evite intervalos muito amplos sempre que possível.
+* **Permissões de URL** - Restrinja as permissões de URL aos domínios que sua instância precisa chamar (APIs, rastreamento, serviços externos) para reduzir o risco de abuso de solicitações do lado do servidor.
+* **Chaves GPG** - Se você usar criptografia para transferências de arquivos ou outros casos de uso, gerencie chaves GPG por meio do Painel de Controle e gire-as de acordo com sua política de segurança.
+
+## Diretrizes de codificação {#coding-guidelines}
 
 Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga estas diretrizes:
 
-* **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL colocando as funções SQL a serem utilizadas na lista de permissões.
+* **Script** - Tente evitar SQL bruto; use funções parametrizadas em vez de concatenação de cadeia de caracteres. Evite a injeção de SQL adicionando somente as funções SQL necessárias à lista de permissões.
+* **Proteger o modelo de dados** - Use direitos nomeados para limitar ações do operador e adicionar filtros do sistema (sysFilter).
+* **Adicionar captchas em aplicativos da Web** - Adicione captchas a páginas de aterrissagem e páginas de assinatura públicas.
+* **Não codificar segredos** - Não codificar senhas, chaves de API ou tokens em fluxos de trabalho, JavaScript ou JSSP; use contas externas ou configuração segura.
+* **Validar e limpar entrada** - Valide e limpe a entrada do usuário em aplicativos Web e parâmetros de fluxo de trabalho para reduzir os riscos de injeção e XSS.
+* **Usar a lista de permissões para SQL** - Quando a execução de SQL ou script for necessária, use a lista de permissões para funções SQL permitidas e evite criar consultas a partir da entrada do usuário através da concatenação de cadeias de caracteres.
 
-* **Proteger o modelo de dados**: use direitos nomeados para limitar ações do operador, adicionar filtros do sistema (sysFilter)
-
-* **Adicionar captchas em aplicativos da Web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
-
-Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=pt-BR#installing-campaign-classic){target="_blank"}.
+Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
 
 
 ## Personalização
@@ -211,7 +247,7 @@ Ao adicionar links personalizados ao seu conteúdo, sempre evite qualquer person
 * `https://<%= sub-domain >.domain.tld/path`
 * `https://sub.domain<%= main domain %>/path`
 
-## Restrição de dados
+## Restrição de dados {#data-restriction}
 
 Você precisa ter certeza que as senhas criptografadas não estarão acessíveis a um usuário autenticado de baixo privilégio. Para fazer isso, há duas formas principais: restringir o acesso aos campos de senha somente ou à entidade inteira.
 
@@ -273,24 +309,7 @@ Essa restrição permite remover campos de senhas, mas deixa a conta externa ace
    >
    >Você pode substituir `$(loginId) = 0 or $(login) = 'admin'` por `hasNamedRight('admin')` para permitir que todos os usuários com direito de administrador vejam essas senhas.
 
+## Operacional e de conformidade {#operational-and-compliance}
 
-## Gerenciamento de acesso
-
-O gerenciamento de acesso é uma parte importante do fortalecimento da segurança. Estas são algumas das principais práticas recomendadas do:
-
-* Criar grupos de segurança suficientes
-* Verifique se cada operador tem os direitos de acesso apropriados
-
-Saiba mais sobre permissões em [nesta seção](../start/gs-permissions.md).
-
-## Diretrizes de codificação
-
-Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga estas diretrizes:
-
-* **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL colocando as funções SQL a serem utilizadas na lista de permissões.
-
-* **Proteger o modelo de dados**: use direitos nomeados para limitar ações do operador, adicionar filtros do sistema (sysFilter)
-
-* **Adicionar captchas em aplicativos da Web**: adicione captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
-
-Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=pt-BR#installing-campaign-classic){target="_blank"}.
+* **Comparar com linha de base segura** - Compare periodicamente seus grupos de operadores, direitos nomeados e permissões de pastas com as recomendações desta página (e, quando aplicável, o [complemento de segurança aprimorada](enhanced-security.md)) para alinhar-se aos padrões seguros recomendados.
+* **Usar a trilha de auditoria** - Conte com a trilha de auditoria do Campaign para fazer alterações importantes (por exemplo, fluxos de trabalho, entregas, configuração de chaves); retenha e revise logs conforme exigido pela sua política de conformidade e retenção.
