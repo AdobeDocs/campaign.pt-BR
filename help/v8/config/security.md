@@ -6,9 +6,9 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 956b2bf5bb8b08654c039b190c020d80ebea223d
+source-git-commit: 04dff810f5a838b2468280519948c88e29acf221
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '2865'
 ht-degree: 53%
 
 ---
@@ -61,7 +61,7 @@ O Adobe Campaign faz parte das soluções da Adobe Experience Cloud. A maneira c
 
   >[!NOTE]
   >
-  >Quanto a todos os produtos da Adobe, o Campaign coleta informações sobre os usuários do aplicativo e do site. Para obter mais informações, consulte a [Política de privacidade da Adobe](https://www.adobe.com/br/privacy/policy.html).
+  >Quanto a todos os produtos da Adobe, o Campaign coleta informações sobre os usuários do aplicativo e do site. Para obter mais informações, consulte a [Política de privacidade da Adobe](https://www.adobe.com/privacy/policy.html).
 
 * **Como a Adobe Experience Cloud é usada para coletar informações**
 
@@ -74,10 +74,6 @@ O Adobe Campaign faz parte das soluções da Adobe Experience Cloud. A maneira c
 
    * Suas práticas de privacidade em conexão com a Adobe Experience Cloud
    * Como os usuários podem definir suas preferências para a coleção ou usar suas informações em conexão com a Adobe Experience Cloud
-
-  >[!NOTE]
-  >
-  >Quanto a todos os produtos da Adobe, os usuários do Campaign podem recusar o compartilhamento das informações coletadas sobre eles por meio de aplicativos e sites. Para obter mais informações, consulte as [Perguntas frequentes sobre o uso de informações com a Adobe Experience Cloud](https://www.adobe.com/br/privacy/experience-cloud-usage-info-faq.html).
 
 Para obter mais detalhes sobre a privacidade da Adobe Experience Cloud, consulte [esta página](https://www.adobe.com/br/privacy/marketing-cloud.html).
 
@@ -129,8 +125,8 @@ Este é o fluxo geral para este caso de uso:
 
 O Adobe Campaign permite coletar dados, inclusive informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus destinatários.
 
-* Tenha sempre o consentimento do destinatário para o recebimento de comunicações. Para fazer isso, continue atendendo às solicitações de recusa o mais rápido possível e verifique o consentimento por meio de um duplo processo de aceitação. Para obter mais informações, consulte [Criar um formulário de inscrição com dupla aceitação](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
-* Não importe listas fraudulentas e utilize seed addresses para verificar se o arquivo do cliente não está sendo usado de forma fraudulenta. Para obter mais informações, consulte [Sobre seed addresses](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
+* Tenha sempre o consentimento do destinatário para o recebimento de comunicações. Para fazer isso, continue atendendo às solicitações de recusa o mais rápido possível e verifique o consentimento por meio de um duplo processo de aceitação. Para obter mais informações, consulte [Criar um formulário de inscrição com dupla aceitação](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
+* Não importe listas fraudulentas e utilize seed addresses para verificar se o arquivo do cliente não está sendo usado de forma fraudulenta. Para obter mais informações, consulte [Sobre seed addresses](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
 * Por meio do gerenciamento de consentimento e direitos, você pode rastrear as preferências dos destinatários, bem como gerenciar quem em sua organização pode acessar quais dados. Para obter mais informações, consulte [esta seção](#consent).
 * Facilite e gerencie solicitações de privacidade de seus destinatários. Para obter mais informações, consulte [esta seção](#privacy-requests).
 
@@ -151,7 +147,7 @@ Originalmente, o Adobe Campaign oferece recursos importantes que são essenciais
 
 * **Gerenciamento de consentimento**: por meio do processo de gerenciamento de assinaturas, você pode gerenciar suas preferências de destinatário e rastrear quais destinatários aceitaram e que tipo de assinatura. Para obter mais informações, consulte [Sobre assinaturas](../../automation/workflow/subscription-services.md).
 * **Retenção de dados**: todas as tabelas de registro padrão integradas têm períodos de retenção predefinidos, geralmente limitando seu armazenamento de dados a 6 meses ou menos. Períodos de retenção adicionais podem ser configurados com fluxos de trabalho. Para obter mais informações, entre em contato com os consultores ou administradores técnicos da Adobe.
-* **Gerenciamento de direitos**: o Adobe Campaign oferece a capacidade de gerenciar os direitos atribuídos aos vários operadores do Campaign por meio de diferentes funções pré-concebidas ou personalizadas. Isso permite gerenciar quem em sua empresa pode acessar, modificar ou exportar diferentes tipos de dados. Para obter mais informações, consulte [Sobre o gerenciamento de acesso](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}.
+* **Gerenciamento de direitos**: o Adobe Campaign oferece a capacidade de gerenciar os direitos atribuídos aos vários operadores do Campaign por meio de diferentes funções pré-concebidas ou personalizadas. Isso permite gerenciar quem em sua empresa pode acessar, modificar ou exportar diferentes tipos de dados. Para obter mais informações, consulte [Sobre o gerenciamento de acesso](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}.
 
 ### Solicitações de privacidade {#privacy-requests}
 
@@ -246,7 +242,7 @@ Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga
 * **Validar e limpar entrada** - Valide e limpe a entrada do usuário em aplicativos Web e parâmetros de fluxo de trabalho para reduzir os riscos de injeção e XSS.
 * **Usar a lista de permissões para SQL** - Quando a execução de SQL ou script for necessária, use a lista de permissões para funções SQL permitidas e evite criar consultas a partir da entrada do usuário através da concatenação de cadeias de caracteres.
 
-Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=pt-BR#installing-campaign-classic){target="_blank"}.
+Saiba mais na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
 
 
 ## Personalização
