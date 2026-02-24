@@ -5,9 +5,9 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
+source-git-commit: 4626d93dea22e0ee458babfd53758c8c63a98ad4
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '840'
 ht-degree: 88%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 88%
    + [Problemas conhecidos](start/known-issues.md)
    + [Matriz de compatibilidade](start/compatibility-matrix.md)
    + [Atualizações da documentação](start/documentation-updates.md)
+   + [Relatório de atualizações mensais](../../monthly-updates-report.md)
 + Introdução {#new}
    + [Introdução ao Adobe Campaign](start/get-started.md)
    + [Principais recursos](start/whats-new.md)
@@ -201,7 +202,7 @@ ht-degree: 88%
    + [Conectar o Campaign a outras soluções](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
       + [Compartilhar e sincronizar públicos-alvo e atributos de perfil](connect/ac-aep.md)
-      + [Atualizar perfis da AEP a partir de landing pages do Campaign](connect/ac-aep-landing-pages.md)
+      + [Atualizar perfis da AEP a partir de páginas de destino do Campaign](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
