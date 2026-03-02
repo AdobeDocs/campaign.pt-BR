@@ -5,10 +5,10 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 776a0e5eead9161b7e2c9d7746c72cba42ea42cb
+source-git-commit: d18c876de44b367c79abb04a65fce0698ff6ff78
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 9%
+source-wordcount: '1533'
+ht-degree: 8%
 
 ---
 
@@ -44,7 +44,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para ativar e execu
 
 A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
-Saiba mais sobre emails de entrada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre emails de entrada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -101,7 +101,7 @@ A conta externa do tipo **Banco de dados externo** é usada para se conectar a u
 >
 >Os bancos de dados externos compatíveis com o Adobe Campaign v8 estão listados na [Matriz de compatibilidade](../start/compatibility-matrix.md). As conexões FDA usam drivers ODBC; com o Adobe Campaign Managed Cloud Services, o driver ODBC e a configuração da conta externa são definidos pela Adobe.
 
-As definições de configuração da conta externa dependem do mecanismo de banco de dados. Com o Adobe Campaign Managed Cloud Services, a configuração de contas externas é executada pelo Adobe. Saiba mais sobre esta configuração na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+As definições de configuração da conta externa dependem do mecanismo de banco de dados. Com o Adobe Campaign Managed Cloud Services, a configuração de contas externas é executada pelo Adobe. Saiba mais sobre esta configuração na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Conta Externa De Databricks {#databricks-external-accounts}
 
@@ -115,6 +115,40 @@ Para configurar a autenticação OAuth2 por meio da entidade de serviço no Camp
 2. No Adobe Campaign, crie ou edite uma conta externa de Databricks e abra a guia **OAuth**.
 3. Cole as credenciais nos campos da guia OAuth da conta externa de Databricks.
 4. Use **[!UICONTROL Test the connection]** para validar a configuração.
+
+#### Conta externa do Snowflake {#snowflake-external-accounts}
+
+A conexão FDA do Snowflake usa o driver ODBC do Snowflake. A partir do Campaign v8.9.1, as contas externas do Snowflake oferecerão suporte à autenticação OAuth2, fornecendo autenticação segura para acesso a dados federados.
+
+Saiba mais sobre o OAuth no Snowflake na [documentação do Snowflake](https://docs.snowflake.com/en/user-guide/oauth-intro){target="_blank"}.
+
+Primeiro, é necessário executar as seguintes etapas no Snowflake:
+
+1. Antes de configurar a conta externa do Snowflake usando o OAuth 2.0, primeiro é necessário criar uma Integração de segurança do OAuth no Snowflake. A função **ACCOUNTADMIN** é necessária para criar a integração de segurança.
+
+   Saiba mais sobre como criar a Integração de segurança do OAuth na [documentação do Snowflake](https://docs.snowflake.com/en/sql-reference/sql/create-security-integration-oauth-snowflake){target="_blank"}.
+
+1. Você pode consultar a ID do cliente e o Segredo do cliente usando:
+
+   ```
+   select system$show_oauth_client_secrets('OAUTH_INTEGRATION_ABC'); // use uppercase letters
+   ```
+
+Para configurar a autenticação OAuth2 no Campaign, siga estas etapas:
+
+1. No Adobe Campaign, crie ou edite uma conta externa do Snowflake e verifique a opção **[!UICONTROL Use OAuth 2.0]**.
+
+1. Defina o servidor, banco de dados e esquema e abra a guia **[!UICONTROL OAuth]**.
+
+1. Defina os parâmetros de integração de segurança **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** e **[!UICONTROL Redirect URL]**. Esses parâmetros são obtidos em sua Integração de segurança do Snowflake OAuth. Consulte a [documentação do Snowflake](https://docs.snowflake.com/en/user-guide/oauth-custom){target="_blank"}.
+
+1. Clique em **[!UICONTROL Proceed to Sign in]** para fazer logon manual. Uma nova janela do navegador será aberta, onde você será solicitado a inserir suas credenciais de usuário do Snowflake.
+
+1. Após a conclusão do processo de autenticação, a conta é autenticada pelo número de dias definido na Integração de Segurança OAuth do Snowflake (usando o parâmetro `OAUTH_REFRESH_TOKEN_VALIDITY`). O token de atualização é armazenado na conta externa.
+
+>[!CAUTION]
+>
+>Observe que a URL de redirecionamento deve sempre direcionar a `oauth.jsp` na máquina do servidor de aplicativos do Campaign por HTTPS (porta 443). Além disso, domínios de servidor com sublinhados não são compatíveis ao usar OAuth. Use domínios de servidor sem sublinhados nos quais a intenção é usar OAuth.
 
 ### X (anteriormente conhecido como Twitter) {#twitter-external-account}
 
@@ -145,7 +179,7 @@ Essas contas externas podem ser usadas para importar ou exportar dados para o Ad
 
   >[!NOTE]
   >
-  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=pt-BR){target="_blank"}.
+  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
 
 * **Serviço de Armazenamento Simples da Amazon (S3)** - O conector do **AWS S3** pode ser usado para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Como você está configurando essa nova conta externa, é necessário fornecer os seguintes detalhes:
 
