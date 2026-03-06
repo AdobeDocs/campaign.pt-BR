@@ -24,7 +24,7 @@ O conector SMS herdado é o conector SMS baseado em MTA usado em versões anteri
 
 Para saber como se beneficiar do conector v2, consulte a seção [Ativação](#activation).
 
-Para obter informações detalhadas sobre a configuração e o uso do conector SMS herdado, consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+Para obter informações detalhadas sobre a configuração e o uso do conector SMS herdado, consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## Conector SMS v2 {#sms-connector-v2}
 
