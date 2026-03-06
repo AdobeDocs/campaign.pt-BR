@@ -5,9 +5,9 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
+source-git-commit: a81ec247d3c44c06aad977c0c58ad7916d6aa2a6
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 88%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 88%
       + [Anexar arquivos a um email](send/attaching-files.md)
    + SMS {#sms}
       + [Introdução a SMS](send/sms/sms.md)
-      + [Conectores SMS](send/sms/sms-connectors.md)
+      + [Sobre tipos de conectores SMS](send/sms/sms-connectors.md)
       + [Características do canal de SMS](send/sms/sms-channel.md)
       + [Criar uma entrega de SMS](send/sms/create-sms.md)
       + [Definição do conteúdo](send/sms/sms-content.md)
