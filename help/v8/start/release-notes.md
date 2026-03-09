@@ -3,16 +3,34 @@ title: Notas de versão do Campaign v8
 description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d18c876de44b367c79abb04a65fce0698ff6ff78
+source-git-commit: 3ce922319646fae03ad7f6757ffdd94804120144
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 17%
+source-wordcount: '1076'
+ht-degree: 18%
 
 ---
 
 # Versões mais recentes {#latest-release}
 
 Esta página lista novos recursos, melhorias e correções das **últimas versões** do Campaign v8 (console). Saiba mais sobre lançamentos, versões e atualizações do Campaign [nesta página](upgrades.md). Outras versões estão listadas na seção Versões anteriores desta documentação.
+
+## Versão 8.9.2 {#release-8-9-2}
+
+_9 de março de 2026_
+
+>[!CAUTION]
+>
+> A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
+
+### Melhorias de segurança {#security-8-9-2}
+
+* Para manter segurança, estabilidade e conformidade ideais, todas as instâncias foram atualizadas para Debian 13 e PostgreSQL 17.
+
+### Correções {#fixes-8-9-2}
+
+* Correção de um problema em que as datas de evento em eventos transacionais eram definidas incorretamente devido a um problema de conversão do tipo de dados, causando datas incorretas em relatórios dinâmicos. (NEO-93923)
+* Correção de um problema em que as notificações por push silenciosas do Android e do iOS falhavam durante a preparação do delivery quando os campos de título e corpo estavam vazios. (NEO-93739)
+* Correção de um problema que impedia que o campo de idioma fosse capturado para tokens de registro de aplicativo do Android devido a chaves de reconciliação incorretas. (NEO-93100)
 
 ## Versão 8.9.1 {#release-8-9-1}
 
@@ -28,12 +46,12 @@ O **novo conector de envio de SMS** agora está disponível para todos os client
 
 Esta versão é fornecida com um conjunto de funcionalidades disponíveis na interface da Web do Campaign:
 
-* [Recursos de entrega multilíngue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=pt-BR){target="_blank"}
-* [Enriquecimento de Perfil em Mensagens Transacionais (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=pt-BR){target="_blank"}
-* [Adobe Experience Manager live e cópias de idioma](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=pt-BR){target="_blank"}
-* [Experimentos de conteúdo - teste A/B](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=pt-BR){target="_blank"}
-* [Atividade de entrega contínua](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=pt-BR){target="_blank"}
-* [Gerenciamento de aprovação de campanha](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=pt-BR){target="_blank"}
+* [Recursos de entrega multilíngue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Enriquecimento de Perfil em Mensagens Transacionais (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager live e cópias de idioma](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Experimentos de conteúdo - teste A/B](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Atividade de entrega contínua](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Gerenciamento de aprovação de campanha](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
 Consulte as [notas de versão](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=pt-BR){target="_blank"} da interface da Web do Campaign
 
