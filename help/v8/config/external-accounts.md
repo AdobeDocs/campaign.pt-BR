@@ -5,10 +5,10 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: d18c876de44b367c79abb04a65fce0698ff6ff78
+source-git-commit: fce4f85386c18d0919a85e938d3c1f2cca8d79b9
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 8%
+source-wordcount: '1758'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para ativar e execu
 
 A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
-Saiba mais sobre emails de entrada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre emails de entrada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -69,7 +69,7 @@ Para configurar a conta externa do **[!UICONTROL Bounce mails (defaultPopAccount
 >Antes de configurar sua conta externa POP3 usando o Microsoft OAuth 2.0, primeiro é necessário registrar seu aplicativo no portal do Azure. Para obter mais informações, consulte esta [página](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
 >
 
-Para configurar um POP3 externo usando o Microsoft OAuth 2.0, marque a opção **[!UICONTROL Microsoft OAuth 2.0]** e preencha os seguintes campos:
+Para configurar uma conta externa POP3 usando o Microsoft OAuth 2.0, marque a opção **[!UICONTROL Microsoft OAuth 2.0]** e preencha os seguintes campos:
 
 * **[!UICONTROL Azure tenant]** - A Azure ID (ou a ID do Diretório (locatário)) pode ser encontrada na lista suspensa **Essentials** da visão geral do seu aplicativo no portal do Azure.
 
@@ -101,9 +101,35 @@ A conta externa do tipo **Banco de dados externo** é usada para se conectar a u
 >
 >Os bancos de dados externos compatíveis com o Adobe Campaign v8 estão listados na [Matriz de compatibilidade](../start/compatibility-matrix.md). As conexões FDA usam drivers ODBC; com o Adobe Campaign Managed Cloud Services, o driver ODBC e a configuração da conta externa são definidos pela Adobe.
 
-As definições de configuração da conta externa dependem do mecanismo de banco de dados. Com o Adobe Campaign Managed Cloud Services, a configuração de contas externas é executada pelo Adobe. Saiba mais sobre esta configuração na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+As definições de configuração da conta externa dependem do mecanismo de banco de dados. Com o Adobe Campaign Managed Cloud Services, a configuração da conta externa é executada pelo Adobe.
 
-#### Conta Externa De Databricks {#databricks-external-accounts}
+Para obter a interface da Web do Campaign (v8), consulte:
+
+* [Criar uma conta externa](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/create-external-account){target="_blank"}
+* [Contas do banco de dados externo](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database){target="_blank"}
+
+A página da interface da Web do Campaign fornece uma lista mais abrangente dos tipos de provedor de **banco de dados externo**, incluindo:
+
+* **[Amazon Redshift](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#amazon-redshift){target="_blank"}** / **[Amazon Redshift (herdado)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#amazon-redshift-legacy){target="_blank"}** - Conecte o Campaign aos ambientes de data warehouse do AWS Redshift.
+* **[Azure Synapse Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#azure-synapse-analytics){target="_blank"}** - Conecte o Campaign aos pools dedicados de SQL do Microsoft Azure Synapse.
+* **[Databricks](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#databricks){target="_blank"}** - Conecte o Campaign às cargas de trabalho de SQL e de lokehouse do Databricks.
+* **[Google BigQuery](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#google-bigquery){target="_blank"}** - Conectar o Campaign aos conjuntos de dados de análise do Google Cloud BigQuery.
+* **[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#microsoft-sql-server){target="_blank"}** - Conecte o Campaign a bancos de dados SQL Server locais ou hospedados.
+* **[MySQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#mysql){target="_blank"}** - Conectar o Campaign aos bancos de dados MySQL para consultas e fluxos de trabalho federados.
+* **[Netezza](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#netezza){target="_blank"}** - Conectar o Campaign aos sistemas IBM Netezza / Performance Server.
+* **[ODBC (Sybase ASE, Sybase IQ)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#odbc-sybase-ase-sybase-iq){target="_blank"}** - Conectar o Campaign por meio do ODBC a mecanismos de banco de dados Sybase.
+* **[Retransmissão HTTP para o banco de dados remoto](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#http-relay-to-remote-database){target="_blank"}** - Conecte-se a um banco de dados remoto por meio de um ponto de extremidade de retransmissão HTTP.
+* **[Oracle](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#oracle){target="_blank"}** - Conecte o Campaign aos bancos de dados Oracle para casos de uso de acesso federado.
+* **[PostgreSQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#postgresql){target="_blank"}** - Conecte o Campaign aos bancos de dados PostgreSQL usando contas externas FDA.
+* **[SAP HANA](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#sap-hana){target="_blank"}** - Conecte o Campaign aos ambientes do banco de dados em memória do SAP HANA.
+* **[Snowflake](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#snowflake){target="_blank"}** - Conecte o Campaign aos ambientes da plataforma de dados na nuvem da Snowflake.
+* **[Teradata](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#teradata){target="_blank"}** - Conecte o Campaign aos sistemas de data warehouse corporativos da Teradata.
+* **[Vertica Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#vertica-analytics){target="_blank"}** - Conecte o Campaign aos bancos de dados de análise OpenText Vertica.
+* **[Microsoft Fabric](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#fabric){target="_blank"}** - Conectar o Campaign aos serviços Microsoft Fabric SQL e de armazenamento.
+
+Para obter detalhes sobre o console do cliente herdado e referências adicionais, consulte a [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+
+#### Conta externa de databricks {#databricks-external-accounts}
 
 A conexão Databricks FDA usa o driver ODBC Databricks. A partir do Campaign v8.9.1, as contas externas do Databricks oferecem suporte à autenticação OAuth2 por meio da entidade de serviço (fluxo de credenciais de cliente não interativo), fornecendo autenticação segura para acesso a dados federados.
 
@@ -148,13 +174,13 @@ Para configurar a autenticação OAuth2 no Campaign, siga estas etapas:
 
 >[!CAUTION]
 >
->Observe que a URL de redirecionamento deve sempre direcionar a `oauth.jsp` na máquina do servidor de aplicativos do Campaign por HTTPS (porta 443). Além disso, domínios de servidor com sublinhados não são compatíveis ao usar OAuth. Use domínios de servidor sem sublinhados nos quais a intenção é usar OAuth.
+>Observe que a URL de redirecionamento deve sempre direcionar a `oauth.jsp` na máquina do servidor de aplicativos do Campaign por HTTPS (porta 443). Além disso, domínios de servidor com sublinhados não são compatíveis ao usar OAuth. Use domínios de servidor sem sublinhados se pretender usar OAuth.
 
 ### X (anteriormente conhecido como Twitter) {#twitter-external-account}
 
 A conta externa do tipo **Twitter** é usada para conectar o Campaign à sua conta X, para postar mensagens em seu nome. Saiba mais sobre a integração do X em [esta seção](../connect/ac-tw.md).
 
-## Contas externas da Integração de soluções da Adobe {#adobe-integration-external-accounts}
+## Contas externas de integração de soluções da Adobe {#adobe-integration-external-accounts}
 
 * **Adobe Experience Cloud** - A conta externa **[!UICONTROL Adobe Experience Cloud]** é usada para implementar o Adobe Identity Management Service (IMS) para conexão com o Adobe Campaign. Saiba mais sobre o Adobe Identity Management Service (IMS) em [esta seção](../start/connect.md#logon-to-ac).
 
@@ -169,7 +195,7 @@ A conta externa do tipo **Twitter** é usada para conectar o Campaign à sua con
 
 * **Salesforce.com** - A conta externa **[!UICONTROL Salesforce CRM]** permite importar e exportar dados do Salesforce para o Adobe Campaign. Saiba mais sobre a integração Adobe Campaign - Salesforce.com CRM em [esta página](../connect/ac-sfdc.md).
 
-## Contas externas de Dados de Transferência {#transfer-data-external-accounts}
+## Transferir dados de contas externas {#transfer-data-external-accounts}
 
 Essas contas externas podem ser usadas para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Saiba mais sobre **Transferência de arquivos** em fluxos de trabalho em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
 
@@ -179,9 +205,9 @@ Essas contas externas podem ser usadas para importar ou exportar dados para o Ad
 
   >[!NOTE]
   >
-  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=pt-BR){target="_blank"}.
+  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
 
-* **Serviço de Armazenamento Simples da Amazon (S3)** - O conector do **AWS S3** pode ser usado para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Como você está configurando essa nova conta externa, é necessário fornecer os seguintes detalhes:
+* **Serviço de Armazenamento Simples da Amazon (S3)** - O conector do **AWS S3** pode ser usado para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Ao configurar essa conta externa, você precisa fornecer os seguintes detalhes:
 
    * **[!UICONTROL AWS S3 Account Server]**: URL do servidor, no formato `<S3bucket name>.s3.amazonaws.com/<s3object path>`.
 
@@ -191,7 +217,7 @@ Essas contas externas podem ser usadas para importar ou exportar dados para o Ad
 
    * **[!UICONTROL AWS Region]**: Saiba mais sobre regiões do AWS em [documentação do Amazon](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
 
-   * A caixa de seleção **[!UICONTROL Use server side encryption]** permite armazenar o arquivo no modo criptografado S3. Saiba como encontrar a ID da chave de acesso e a chave de acesso secreta na [documentação do Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
+   * A caixa de seleção **[!UICONTROL Use server-side encryption]** permite armazenar o arquivo no modo criptografado S3. Saiba como encontrar a ID da chave de acesso e a chave de acesso secreta na [documentação do Amazon](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
 * **Armazenamento de Blob da Azure** - A conta externa **Azure** pode ser usada para importar ou exportar dados para a Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Para configurar a conta externa do **Azure** para funcionar com o Adobe Campaign, forneça os seguintes detalhes:
 
