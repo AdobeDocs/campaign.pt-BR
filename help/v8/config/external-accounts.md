@@ -44,7 +44,7 @@ As contas técnicas a seguir são usadas pela Adobe Campaign para ativar e execu
 
 A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
-Saiba mais sobre emails de entrada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
+Saiba mais sobre emails de entrada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=pt-BR){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -127,7 +127,7 @@ A página da interface da Web do Campaign fornece uma lista mais abrangente dos 
 * **[Vertica Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#vertica-analytics){target="_blank"}** - Conecte o Campaign aos bancos de dados de análise OpenText Vertica.
 * **[Microsoft Fabric](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#fabric){target="_blank"}** - Conectar o Campaign aos serviços Microsoft Fabric SQL e de armazenamento.
 
-Para obter detalhes sobre o console do cliente herdado e referências adicionais, consulte a [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+Para obter detalhes sobre o console do cliente herdado e referências adicionais, consulte a [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Conta externa de databricks {#databricks-external-accounts}
 
@@ -205,7 +205,7 @@ Essas contas externas podem ser usadas para importar ou exportar dados para o Ad
 
   >[!NOTE]
   >
-  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
+  >A partir da versão 8.5, agora é possível autenticar com segurança usando uma chave privada ao configurar a conta externa SFTP. [Saiba mais sobre o gerenciamento de chaves](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=pt-BR){target="_blank"}.
 
 * **Serviço de Armazenamento Simples da Amazon (S3)** - O conector do **AWS S3** pode ser usado para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Ao configurar essa conta externa, você precisa fornecer os seguintes detalhes:
 
