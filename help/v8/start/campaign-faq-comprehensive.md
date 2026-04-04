@@ -1837,7 +1837,7 @@ Obtenha ajuda da equipe de suporte da Adobe e gerencie sua instância.
 * **[Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}** - Registre casos de suporte e gerencie usuários
 * **[Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}** - Contate a equipe de suporte
 * **[Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target="_blank"}** - Gerenciar as configurações da instância do Campaign
-* **[Status do sistema](https://status.adobe.com/){target="_blank"}** - Verificar o status dos serviços da Adobe
+* **[Status do sistema](https://status.adobe.com/pt-br/){target="_blank"}** - Verificar o status dos serviços da Adobe
 
 ### Treinamento e certificação
 
