@@ -10,16 +10,16 @@ type: Documentation
 git-repo: https://github.com/AdobeDocs/campaign.pt-BR
 mini-toc-levels: 2
 index: true
-source-git-commit: 7bfe0ac7ba99ebf26844d2cea14a75f32ecb8b74
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '53'
-ht-degree: 100%
+ht-degree: 71%
 
 ---
 
 
 # Metadados para uso interno
 
-O arquivo metadata.md inclui metadados de nível de acordo de recompra que passam para os arquivos TOC.md do guia do usuário no acordo de recompra. A alteração do conteúdo do arquivo metadata.md para qualquer guia do usuário pode ser realizada em qualquer arquivo TOC.md.
+O arquivo metadata.md inclui metadados de nível de repositório que passam para os arquivos TOC.md do guia do usuário no repositório. Se quiser alterar o conteúdo metadata.md para qualquer guia do usuário, faça isso em qualquer arquivo TOC.md.
 
-Consulte [Metadados](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=pt-BR) para obter uma lista de valores válidos para **solução**, **produto** e **tipo**.
+Consulte [Metadados](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html) para obter uma lista de valores válidos para **solução**, **produto** e **tipo**.

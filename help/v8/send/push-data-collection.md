@@ -6,7 +6,7 @@ role: Developer
 level: Intermediate
 badge: label="Disponibilidade limitada" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: 52ea7f0a7690ef656568cc75925b9982e1f475e9
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 16%
@@ -73,8 +73,8 @@ O registro da credencial de push do aplicativo móvel é necessário para autori
 
 1. Forneça a **Key ID**. Esta é uma sequência de 10 caracteres atribuída durante a criação da chave de autenticação p8.
 
-       Ele pode ser encontrado na guia **Chaves** da página **Certificados**, **Identificadores** e **Perfis** da sua conta de desenvolvedor do Apple.
-   
+   Ele pode ser encontrado na guia **Chaves** da página **Certificados**, **Identificadores** e **Perfis** da sua conta de desenvolvedor do Apple.
+
 1. Forneça a **ID da Equipe**. Este é um valor de cadeia de caracteres que pode ser encontrado na guia **Associação**.
 
 1. Clique em **[!UICONTROL Save]** para criar sua configuração de aplicativo.

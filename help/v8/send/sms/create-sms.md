@@ -6,10 +6,10 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 3b15eb3e-8625-4049-bf0d-327407ae5ea6
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -23,8 +23,10 @@ Para criar uma nova entrega de SMS, siga as etapas abaixo:
 
    As etapas de criação de entrega estão detalhadas em [esta página](../../start/create-message.md).
 
-<!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
-* For mid-sourcing infrastructure, -->
+<!--
+ * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
+* For mid-sourcing infrastructure,
+-->
 
 1. Renomeie sua entrega no campo **[!UICONTROL Label]** e adicione informações no campo **[!UICONTROL Delivery code]** e na lista **[!UICONTROL Nature]**, se necessário, para o rastreamento. Você também pode adicionar um **[!UICONTROL Description]** à sua entrega.
 

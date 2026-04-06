@@ -5,7 +5,7 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 59%
@@ -78,7 +78,7 @@ Várias atividades de workflow permitem definir a forma como as ofertas são apr
 
 A atividade **Enrichment** permite adicionar ofertas ou links para ofertas de recipients de entrega.[Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=pt-BR){target="_blank"}.
 
-Por exemplo, é possível enriquecer os dados de uma query de destinatário antes de uma entrega.
+Por exemplo, é possível enriquecer os dados de uma consulta de destinatário antes de uma entrega.
 
 ![](assets/int_enrichment_offer1.png)
 
@@ -122,7 +122,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Selecione **[!UICONTROL Add data]** na guia **[!UICONTROL Enrichment]** da atividade.
 1. Na janela onde você escolhe o tipo de dados a serem adicionados, selecione **[!UICONTROL A link]**.
-1. Selecione o tipo de link que deseja estabelecer, assim como seu target. Nesse caso, o target é o schema de oferta.
+1. Selecione o tipo de link que deseja estabelecer, assim como seu target. Nesse caso, o target é o esquema de oferta.
 
    ![](assets/int_enrichment_link1.png)
 
@@ -155,7 +155,7 @@ No entanto, é possível armazenar essas informações da seguinte maneira:
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
-1. Confirme sua adição e salve seu workflow.
+1. Confirme sua adição e salve seu fluxo de trabalho.
 
 A entrega armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** da entrega.
 
@@ -163,7 +163,7 @@ A entrega armazena automaticamente a classificação e o peso das ofertas. Essas
 
 A atividade **[!UICONTROL Offer engine]** também permite especificar uma chamada para o mecanismo de oferta antes da entrega.
 
-Para obter mais informações sobre a atividade de **Mecanismo de oferta**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre a atividade de **Mecanismo de oferta**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}.
 
 Esta atividade funciona de acordo com o mesmo princípio que a atividade **Enriquecimento** com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de uma entrega.
 
@@ -186,7 +186,7 @@ Após configurar sua atividade **Query**:
 
 A atividade **[!UICONTROL Offers by cell]** permite distribuir a população de entrada (de uma consulta, por exemplo) em vários segmentos e especificar uma oferta a ser apresentada para cada um desses segmentos.
 
-Para obter mais informações sobre a atividade **Oferecer por célula**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre a atividade **Oferecer por célula**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}.
 
 Para fazer isso, realize o seguinte processo:
 
@@ -202,7 +202,6 @@ Para fazer isso, realize o seguinte processo:
 1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido.
 
 <!--
-
 ## Delivering with delivery outlines {#delivering-with-delivery-outlines}
 
 You can also present offers in a delivery using delivery outlines.

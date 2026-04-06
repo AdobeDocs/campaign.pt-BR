@@ -4,7 +4,7 @@ title: Aplicar regras de tipologia
 description: Saiba como aplicar regras de tipologia
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 84%
@@ -134,7 +134,8 @@ Como opção, é possível usar o campo **[!UICONTROL Managing affinities with I
 >O gerenciamento de afinidade não se aplica às tipologias de **[!UICONTROL Filtering]**.
 
 <!--
->Affinities are defined in the instance configuration file, on the Adobe Campaign server. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).-->
+>Affinities are defined in the instance configuration file, on the Adobe Campaign server. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).
+-->
 
 ### Otimização de campanha e Marketing distribuído {#campaign-optimization-and-distributed-marketing}
 

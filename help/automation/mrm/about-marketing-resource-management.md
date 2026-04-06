@@ -5,7 +5,7 @@ description: Sobre o gerenciamento de recursos de marketing
 feature: Campaigns, Resource Management
 role: Admin, User
 exl-id: 6fa4f4e3-c5a5-4d7f-8e71-826dee4e926a
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 95%
@@ -48,8 +48,8 @@ No contexto do Gerenciamento de recursos de marketing do Adobe Campaign, os segu
 >[!NOTE]
 >
 >For more on Adobe Campaign workspace, refer to [this section](../../platform/using/adobe-campaign-workspace.md).
->  
->Deliveries and communication channels are detailed in [this section](../../delivery/using/steps-about-delivery-creation-steps.md).  
+>
+>Deliveries and communication channels are detailed in [this section](../../delivery/using/steps-about-delivery-creation-steps.md).
 >
 >Marketing campaign functionalities are detailed in [this section](../../campaign/using/accessing-marketing-campaigns.md).
 -->

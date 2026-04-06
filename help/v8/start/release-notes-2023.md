@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
-source-git-commit: b52308bcbe68a7c382918fe28f8166e3bfcb6cde
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 56%
+source-wordcount: '1516'
+ht-degree: 55%
 
 ---
 
@@ -93,7 +93,7 @@ Para obter mais informações, consulte a [documentação detalhada](../send/pus
 * Correção de um problema que poderia resultar na codificação incorreta de caracteres especiais no conteúdo HTML de uma entrega em vários navegadores. (NEO-60081)
 * Correção de um problema que impedia salvar um relatório em uma implantação corporativa (FFDA) do Campaign v8. (NEO-56836)
 * Correção de um problema ao inserir ou atualizar dados em um esquema FFDA personalizado por meio de uma atividade de fluxo de trabalho Atualizar dados. (NEO-54708)
-* Correção de um problema que impedia que o workflow de limpeza do banco de dados removesse endereços na tabela nms:address no FFDA. (NEO-54460)
+* Correção de um problema que impedia que o fluxo de trabalho de limpeza do banco de dados removesse endereços na tabela nms:address no FFDA. (NEO-54460)
 * Correção de um problema com o fluxo de trabalho de faturamento que poderia falhar com um erro &quot;Compilação de memória esgotada&quot;. (NEO-51137)
 * Correção de um problema que impedia que a descriptografia GPG funcionasse corretamente na atividade de workflow Carregamento de dados (arquivo). (NEO-50257)
 * Corrigido um problema que impedia o funcionamento da função `JSPContext.sqlExecWithOneParam`. (NEO-50066)
@@ -148,19 +148,21 @@ _27 de janeiro de 2023_
 * Correção de dois problemas de falha de preparação de entrega. A preparação da entrega pode falhar quando o número de possíveis ofertas que estão sendo manipuladas é muito alto. O segundo problema ocorria quando os URLs de imagem eram definidos como URLs para serem rastreados em uma entrega de formato de texto. (NEO-48807) <!--OKKKK-->
 * Correção de um problema que poderia resultar em uma falha de fluxo de trabalho, em que um fluxo de trabalho substituiria o nome do warehouse definido na conta externa para contas não FFDA. (NEO-43209) <!--OKKKK-->
 * Segurança aprimorada em aplicativos da Web para evitar ataques de DDoS. (NEO-50757) <!--OKKKK-->
-* O gerenciamento de dados de rastreamento consolidados foi aprimorado na Tabela FFDA (nms:trackingStats) do **[!UICONTROL Consolidated tracking]** para evitar duplicatas. (NEO-46409)
+* O gerenciamento de dados de rastreamento consolidados foi aprimorado na tabela FFDA **[!UICONTROL Consolidated tracking]** (nms:trackingStats) para evitar duplicatas. (NEO-46409)
 * Correção de um problema de operador lógico em consultas de fluxo de trabalho ao usar um `enableIf` em uma condição de operador lógico. A condição lógica anterior foi substituída. (NEO-45815)  <!--OKKKK-->
 * A geração de perfis ativos foi otimizada no fluxo de trabalho de faturamento para melhorar o desempenho. (NEO-47658) <!--OKKKK-->
 * Corrigido um problema com a importação de arquivos HTML no qual os nós de imagem (img) continham URLs com campos de personalização. (NEO-48396)
 * Correção de um problema com o Snowflake (todas as implantações) ao usar o parâmetro de classificação em uma atividade de fluxo de trabalho de **Divisão**. (NEO-45899) <!--OKKKK-->
 * Corrigido um problema que resultava em erro quando um usuário com direitos de acesso de leitura para a pasta nmsDeliveryMapping tentava executar uma campanha ou fluxo de trabalho. (NEO-48230)
 * Corrigido um problema de desempenho na guia HTML de uma entrega que poderia ocorrer ao usar um código HTML grande. (NEO-47440)
-<!-- * Fixed an issue which could lead to a "Character set mismatch" error when using certain functions such as `to_nclob` with an Oracle unicode database where NChar was not enabled. (NEO-49361)
-* Fixed an issue which prevented users from inserting a Time datatype in a **Data Update** workflow activity on MSSQL. (NEO-47763)-->
+<!--
+ * Fixed an issue which could lead to a "Character set mismatch" error when using certain functions such as `to_nclob` with an Oracle unicode database where NChar was not enabled. (NEO-49361)
+* Fixed an issue which prevented users from inserting a Time datatype in a **Data Update** workflow activity on MSSQL. (NEO-47763)
+-->
 * Correção de um problema que impedia a utilização da opção de fluxo de trabalho **Mesclar linhas selecionadas**. (NEO-48488)
 * Correção de um problema no conector Snowflake FDA que fazia com que os registros fossem descartados ao usar a opção “Junção simples de cardinalidade 0 ou 1” durante o enriquecimento. (NEO-48737)
 * As referências restantes à biblioteca log4j foram removidas da instalação do Campaign no Windows. (NEO-44851)
 * Corrigido um problema que poderia resultar em erro ao adicionar o indicador **Destinatários que abriram** (estimatedRecipientOpen) nos dados adicionais de uma atividade de fluxo de trabalho de **Consulta**. (NEO-46665)
-* O gerenciamento de URLs de rastreamento foi aprimorado em workflows com várias entregas para melhorar o desempenho. (NEO-50894) <!--OKKKK-->
+* O gerenciamento de URLs de rastreamento foi aprimorado em fluxos de trabalho com várias entregas para melhorar o desempenho. (NEO-50894) <!--OKKKK-->
 * Correção de um problema que poderia causar falha na replicação de esquemas que usam a pasta Xtkfolder. (NEO-46787) <!--OKKKK-->
 * Correção de uma causa de problema que poderia fazer com que a coluna personalizada “lastModified” fosse descartada na tabela NmsSubscription. (NEO-48402)

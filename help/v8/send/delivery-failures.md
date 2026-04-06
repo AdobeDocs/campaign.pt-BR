@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 57e177dc6c30502f2ed3bb08b18586fa5399e89c
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '3410'
 ht-degree: 58%
@@ -41,7 +41,7 @@ As rejeições temporárias são falhas temporárias que os ISPs geram quando t�
 
 O tipo de erro **Ignorado** é conhecido como temporário, como &quot;Ausente&quot;, ou um erro técnico, por exemplo, se o tipo de remetente for &quot;postmaster&quot;.
 
-O loop de feedback funciona como emails de devolução: quando um usuário qualifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Incluir na lista de bloqueios Os endereços desses usuários são classificados mesmo que não tenham clicado no link de cancelamento de subscrição. Os endereços são adicionados à tabela de quarentena (**NmsAddress**) e não à tabela de recipient (**NmsRecipient**) com o status **[!UICONTROL Denylisted]**. Saiba mais sobre o mecanismo de loop de comentários no [Manual de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops){target="_blank"}.
+O loop de feedback funciona como emails de devolução: quando um usuário qualifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Os endereços desses usuários são classificados mesmo que não tenham clicado no link de cancelamento de subscrição. Os endereços são adicionados à tabela de quarentena (**NmsAddress**) e não à tabela de recipient (**NmsRecipient**) com o status **[!UICONTROL Denylisted]**. Saiba mais sobre o mecanismo de loop de comentários no [Manual de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops){target="_blank"}.
 
 ## Erros síncronos e assíncronos {#synchronous-and-asynchronous-errors}
 
@@ -59,9 +59,11 @@ Esses tipos de erros são gerenciados da seguinte maneira:
 
 ## Qualificação de email de rejeição {#bounce-mail-qualification}
 
-<!--NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
+<!--
+NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
 
-![](assets/delivery-log-qualification.png)-->
+![](assets/delivery-log-qualification.png)
+-->
 
 A maneira como a qualificação de emails rejeitados é tratada no Adobe Campaign depende do tipo de erro:
 
@@ -69,14 +71,15 @@ A maneira como a qualificação de emails rejeitados é tratada no Adobe Campaig
 
 * **Erros assíncronos**: as regras usadas pelo Campaign para qualificar falhas de entrega assíncronas estão listadas no nó **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**. As rejeições assíncronas são qualificadas pelo processo do InMail por meio das regras **[!UICONTROL Inbound email]**.
 
-<!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
+<!--
+NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
 ![](assets/delivery-log-first-txt.png)
 
 Adobe Campaign filters this message to delete the variable content (such as IDs, dates, email addresses, phone numbers, etc.) and displays the filtered result in the **[!UICONTROL Text]** column. The variables are replaced with **`#xxx#`**, except addresses that are replaced with **`*`**.
 
 This process allows to bring together all failures of the same type and avoid multiple entries for similar errors in the Delivery log qualification table.
-  
+
 >[!NOTE]
 >
 >The **[!UICONTROL Number of occurrences]** field displays the number of occurrences of the message in the list. It is limited to 100 000 occurrences. You can edit the field, if you want, for example, to reset it.
@@ -91,7 +94,8 @@ Bounce mails can have the following qualification status:
 
 >[!NOTE]
 >
->In case of an outage of an ISP, emails sent through Campaign will be wrongly marked as bounces. To correct this, you need to update bounce qualification.-->
+>In case of an outage of an ISP, emails sent through Campaign will be wrongly marked as bounces. To correct this, you need to update bounce qualification.
+-->
 
 
 ## Gerenciamento de tentativas {#retries}
@@ -112,7 +116,7 @@ Por exemplo, se o período de validade for definido como o valor padrão de 5 di
 
 Quando uma mensagem estiver na fila do MTA por 3,5 dias e não for entregue, o tempo limite expirará, e seu status será atualizado de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** nos logs de entrega.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=pt-BR#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## Tipos de erro de email {#email-error-types}
@@ -635,7 +639,7 @@ As especificidades do canal SMS estão listadas abaixo.
   <tr> 
    <td> Confirmação MT inválida<br /> </td> 
    <td> Falha<br /> </td> 
-   <td> Erro '{1}' ao processar quadro de confirmação para enviar query<br /> </td> 
+   <td> Erro '{1}' ao processar quadro de confirmação para enviar a consulta<br /> </td> 
    <td> Suave<br /> </td> 
    <td> Inacessível<br /> </td> 
   </tr> 

@@ -5,8 +5,8 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
-workflow-type: ht
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Você pode acessar o Adobe Campaign por meio de um cliente avançado, um cliente
 
 ### Camada de persistência{#persistance-layer}
 
-Os bancos de dados do Campaign são usados como camadas de persistência e contêm quase todas as informações e dados gerenciados pelo Adobe Campaign. Isso inclui: dados funcionais, como perfis, assinaturas, conteúdo; dados técnicos, como tarefas de entrega e logs, logs de rastreamento; e dados de trabalho (compras, leads).
+Os bancos de dados do Campaign são usados como camadas de persistência e contêm quase todas as informações e dados gerenciados pelo Adobe Campaign. Isso inclui: dados funcionais, como perfis, assinaturas, conteúdo; dados técnicos, como processos de entrega e logs, logs de rastreamento; e dados de trabalho (compras, leads).
 
 A confiabilidade do banco de dados é de extrema importância porque a maioria dos componentes do Adobe Campaign requer acesso ao banco de dados para executar suas tarefas (com exceção do módulo de redirecionamento).
 
@@ -62,9 +62,11 @@ O servidor do Campaign Web controla o acesso aos processos do Campaign Web. Java
 
 O console do cliente do Campaign se conecta ao servidor web usando o XML SOAP por HTTP. O servidor web fornece a camada de segurança, transmite as solicitações para a camada de aplicação usando Javascript e os processos internos do Campaign acessam o banco de dados usando SQL.
 
-<!--The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
+<!--
+The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
 
-![](assets/do-not-localize//ac-standalone.png) -->
+![](assets/do-not-localize//ac-standalone.png)
+-->
 
 O usuário se conecta ao servidor de aplicativos do Campaign usando o HTTP. Todos os dados e informações são gerenciados no banco de dados do Campaign. Se um desenvolvedor do Campaign executar qualquer alteração de configuração, ela será capturada no banco de dados. Se um(a) profissional de marketing criar uma nova campanha, todas as informações e dados relacionados a essa nova campanha também serão gerenciados no banco de dados. Quando um profissional de marketing executa uma campanha, as entregas de email são enviadas aos perfis do servidor da campanha por meio do servidor SMTP. À medida que os perfis interagem com as entregas de email, como ao abrir o email, esses dados de rastreamento são enviados de volta ao servidor de rastreamento.
 

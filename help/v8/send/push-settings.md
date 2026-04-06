@@ -6,7 +6,7 @@ role: Admin, Developer
 level: Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 21%
@@ -38,7 +38,7 @@ Para configurar seu aplicativo com SDKs do Adobe Experience Platform Mobile, sig
 
 ### Configurar permissões {#setup-permissions}
 
-Antes de criar um aplicativo para dispositivos móveis, primeiro verifique se você tem ou atribui as permissões de usuário corretas para as tags na Adobe Experience Platform. As permissões do usuário para tags na Adobe Experience Platform são atribuídas aos usuários por meio da Adobe Admin Console. Saiba mais em [Documentação de tags](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=pt-BR){target="_blank"}.
+Antes de criar um aplicativo para dispositivos móveis, primeiro verifique se você tem ou atribui as permissões de usuário corretas para as tags na Adobe Experience Platform. As permissões do usuário para tags na Adobe Experience Platform são atribuídas aos usuários por meio da Adobe Admin Console. Saiba mais em [Documentação de tags](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -48,7 +48,7 @@ Para atribuir direitos de **Propriedade** e **Empresa**, siga as etapas abaixo:
 
 1. Acesse o **[!DNL Admin Console]**.
 1. Na guia **[!UICONTROL Products]**, selecione o cartão **[!UICONTROL Adobe Experience Platform Data Collection]**.
-1. Selecione um **[!UICONTROL Product Profile]** existente ou crie um novo com o botão **[!UICONTROL New profile]**. Saiba como criar um novo **[!UICONTROL New profile]** na [documentação do Admin Console](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=pt-BR#ui){target="_blank"}.
+1. Selecione um **[!UICONTROL Product Profile]** existente ou crie um novo com o botão **[!UICONTROL New profile]**. Saiba como criar um novo **[!UICONTROL New profile]** na [documentação do Admin Console](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}.
 1. Na guia **[!UICONTROL Permissions]**, selecione **[!UICONTROL Property Rights]**.
 1. Clique em **[!UICONTROL Add all]**. Isso adicionará o seguinte direito ao perfil de produto:
    * **[!UICONTROL Approve]**
@@ -80,7 +80,7 @@ Para atribuir este **[!UICONTROL Product profile]** a usuários, siga as etapas 
 
    >[!NOTE]
    >
-   >Se o usuário não tiver sido criado anteriormente no Admin Console, consulte a [documentação Adicionar usuários](https://helpx.adobe.com/br/enterprise/using/manage-users-individually.html#add-users){target="_blank"}.
+   >Se o usuário não tiver sido criado anteriormente no Admin Console, consulte a [documentação Adicionar usuários](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#add-users){target="_blank"}.
 
 ### Configurar seu aplicativo {#configure-app}
 
@@ -94,7 +94,7 @@ Siga as etapas de implementação detalhadas nos links abaixo:
 <!--
 ## Add your app push credentials in Adobe Experience Platform Data Collection {#push-credentials}
 
-After granting the correct user permissions, you now need to add your mobile application push credentials in Adobe Experience Platform Data Collection. 
+After granting the correct user permissions, you now need to add your mobile application push credentials in Adobe Experience Platform Data Collection.
 
 The mobile app push credential registration is required to authorize Adobe to send push notifications on your behalf. Refer to the steps detailed below:
 
@@ -109,13 +109,13 @@ The mobile app push credential registration is required to authorize Adobe to se
     * **For iOS**
 
         1. Enter the mobile app **Bundle Id** in the **[!UICONTROL App ID (iOS Bundle ID)]** field. The app Bundle ID can be found in the **General** tab of the primary target in **XCode**.
-        
+
         1. Switched on the **[!UICONTROL Push Credentials]** button to add your credentials.
-        
+
         1. Drag and drop your .p8 Apple Push Notification Authentication Key file. This key can be acquired from the **Certificates**, **Identifiers** and **Profiles** page.
 
         1. Provide the **Key ID**. This is a 10 character string assigned during the creation of p8 auth key. It can be found under **Keys** tab in **Certificates**, **Identifiers** and **Profiles** page.
-        
+
         1. Provide the **Team ID**. This is a string value which can be found under the Membership tab.
 
     * **For Android**
@@ -125,7 +125,7 @@ The mobile app push credential registration is required to authorize Adobe to se
         1. Switched on the **[!UICONTROL Push Credentials]** button to add your credentials.
 
         1. Drag and drop the FCM push credentials. For more details on how to get the push credentials refer to [Google Documentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
-    
+
 
 1. Click **[!UICONTROL Save]** to create your app configuration.
 -->
@@ -142,7 +142,7 @@ To get the SDKs needed for push notification to work you will need the following
 * **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
 -->
 
-Saiba mais sobre [!DNL Adobe Experience Platform Data Collection] tags na [documentação do Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre [!DNL Adobe Experience Platform Data Collection] tags na [documentação do Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html){target="_blank"}.
 
 Depois de criada, abra a nova propriedade de tag e crie uma biblioteca. Para isso:
 
