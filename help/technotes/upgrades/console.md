@@ -3,9 +3,8 @@ product: campaign
 title: descontinuação de 32 bits do console do cliente
 description: descontinuação de 32 bits do console do cliente
 hide: true
-hidefromtoc: true
 exl-id: 9411e38a-5783-439c-ad54-f33bd374f2b8
-source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
@@ -30,7 +29,7 @@ Para aproveitar os recursos mais recentes e a segurança aprimorada, é necessá
 
 ## Perguntas frequentes{#console-eol-faq}
 
-+++Como atualizo do Campaign v8 de 32 bits para o Campaign v8 de 64 bits?
++++Como atualizo de 32 bits do Campaign v8 para 64 bits do Campaign v8?
 
 A atualização é perfeita. Você só precisa instalar a nova versão por meio da configuração, como uma atualização regular.
 
@@ -42,13 +41,13 @@ Não. A versão de 64 bits do console do cliente Campaign v8 é compatível some
 
 +++
 
-+++Há um plano para interromper as novas instalações do console do cliente de 32 bits do Campaign v8?
++++Há algum plano para interromper as novas instalações do console do cliente de 32 bits do Campaign v8?
 
 Sim. A partir da versão 8.6, o console do cliente Campaign v8 não estará mais disponível em 32 bits. Somente a versão de 64 bits estará disponível.
 
 +++
 
-+++Que versões do Campaign v8 não serão mais compatíveis com sistemas operacionais de 32 bits?
++++Quais versões do Campaign v8 não serão mais compatíveis com sistemas operacionais de 32 bits?
 
 A partir da versão 8.6, todas as versões do Campaign v8 não serão mais compatíveis com sistemas operacionais de 32 bits.
 
