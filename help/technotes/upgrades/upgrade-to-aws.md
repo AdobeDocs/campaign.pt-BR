@@ -2,9 +2,8 @@
 title: Atualização da infraestrutura de envio de email do Campaign
 description: Atualização da infraestrutura de envio de email do Campaign
 hide: true
-hidefromtoc: true
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 5%

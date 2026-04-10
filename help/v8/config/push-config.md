@@ -5,9 +5,8 @@ feature: Push
 role: Admin, Developer
 level: Intermediate
 hide: true
-hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 42%
@@ -39,7 +38,7 @@ Para integrar o SDK do Campaign no aplicativo móvel, o administrador funcional 
   >Essa chave de integração é inserida no console do Adobe Campaign, na guia **[!UICONTROL Information]** do serviço dedicado ao aplicativo móvel.
 
 * **Um URL de rastreamento**: que corresponde ao endereço do servidor de rastreamento do Adobe Campaign.
-* **Um URL de marketing**: para ativar a coleta de assinaturas.
+* **Um URL de marketing**: para habilitar a coleta de assinaturas.
 
 * **No Android**:
 
