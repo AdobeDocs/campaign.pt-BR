@@ -1,16 +1,16 @@
 ---
 product: campaign
 title: Gestão de dados SQL
-description: Saiba mais sobre a atividade do workflow de Gestão de dados SQL
+description: Saiba mais sobre a atividade do fluxo de trabalho Gestão de dados SQL
 feature: Workflows
 Role: User
 level: Experienced
 version: Campaign v8, Campaign Classic v7
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 93%
+source-wordcount: '418'
+ht-degree: 82%
 
 ---
 
@@ -25,6 +25,16 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
 * A atividade está disponível somente para fontes de dados remotas.
 * O esquema de saída deve existir no banco de dados e estar vinculado a um banco de dados do FDA.
 
+## Observações importantes {#important-notes}
+
+A partir da versão 8.9.1, as atividades de fluxo de trabalho do **[!UICONTROL SQL code]** e do **[!UICONTROL SQL Data Management]** foram aprimoradas para proteger melhor os bancos de dados PostgreSQL e manter seus fluxos de trabalho em execução sem problemas quando o SQL personalizado for executado do Campaign.
+
+No caso de erros, duas soluções estão disponíveis:
+
+* Solução 1 — `XtkSecurity_FeatureFlag_SqlSensitive`
+* Solução 2 — `XtkSecurity_SqlSensitive_Methods`
+
+Consulte [Código SQL](sql-code-and-javascript-code.md#important-notes) para obter mais detalhes e práticas recomendadas.
 
 ## Configurar a atividade de gestão de dados SQL {#configuring-the-sql-data-management-activity}
 
@@ -33,13 +43,13 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
 
    >[!CAUTION]
    >
-   >O schema de saída está fixo e não pode ser editado.
+   >O esquema de saída está fixo e não pode ser editado.
 
 1. Adicione o script SQL.
 
    >[!CAUTION]
    >
-   >É a responsabilidade do gravador de script SQL garantir que o script SQL esteja funcional e que suas referências (nomes de campos, etc.) estejam de acordo com o schema de saída.
+   >É a responsabilidade do gravador de script SQL garantir que o script SQL esteja funcional e que suas referências (nomes de campos, etc.) estejam de acordo com o esquema de saída.
 
    Para carregar um código SQL existente, selecione a opção **[!UICONTROL The SQL script is contained in an entity stored in the database]**. Os scripts SQL devem ser criados e armazenados no menu **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**.
 
@@ -56,10 +66,10 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
      >
      >O valor (&#39;name&#39;) corresponde ao **[!UICONTROL Name]** campo das propriedades de transição.
 
-1. Se o script SQL já tiver comandos para criar uma tabela de trabalho de saída, desmarque a opção **[!UICONTROL Automatically create work table]**. Caso contrário, uma tabela de trabalho será criada automaticamente quando o workflow for executado.
+1. Se o script SQL já tiver comandos para criar uma tabela de trabalho de saída, desmarque a opção **[!UICONTROL Automatically create work table]**. Caso contrário, uma tabela de trabalho será criada automaticamente quando o fluxo de trabalho for executado.
 1. Clique em **[!UICONTROL Ok]** para confirmar a configuração da atividade.
 
-A atividade está configurada agora. Ela está pronta para ser executada no workflow
+A atividade está configurada agora. Ela está pronta para ser executada no fluxo de trabalho
 
 >[!CAUTION]
 >

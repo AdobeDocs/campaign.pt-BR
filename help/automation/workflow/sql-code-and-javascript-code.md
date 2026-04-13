@@ -1,43 +1,57 @@
 ---
 product: campaign
 title: Código SQL e código JavaScript
-description: Saiba mais sobre atividades de workflow de códigos SQL e JavaScript
+description: Saiba mais sobre atividades de workflow de código SQL e JavaScript
 feature: Workflows
 Role: User
 level: Experienced
 version: Campaign v8, Campaign Classic v7
 exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: aa9413dc794cf1a3683b33ca064ce228c90107f7
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 100%
+source-wordcount: '386'
+ht-degree: 68%
 
 ---
 
 # Código SQL e código JavaScript{#sql-code-and-javascript-code}
 
-
-
 ## Código SQL {#sql-code}
 
-Uma atividade **[!UICONTROL SQL code]** executa um script SQL. O script é um template JST.
+Uma atividade **[!UICONTROL SQL code]** executa um script SQL. O script é um modelo JST.
 
 ![](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
-  A área central do editor contém o script a ser executado. Este script é um template JST e, portanto, pode ser configurado de acordo com o contexto do workflow.
+  A área central do editor contém o script a ser executado. Este script é um modelo JST e, portanto, pode ser configurado de acordo com o contexto do fluxo de trabalho.
 
 * **[!UICONTROL Processing errors]**
 
   Consulte [Processamento de erros](monitor-workflow-execution.md#processing-errors).
 
+### Observações importantes {#important-notes}
+
+A partir da versão 8.9.1, as atividades de fluxo de trabalho do **[!UICONTROL SQL code]** e do **[!UICONTROL SQL Data Management]** foram aprimoradas para proteger melhor os bancos de dados PostgreSQL e manter seus fluxos de trabalho em execução sem problemas quando o SQL personalizado for executado do Campaign. Estas são algumas das práticas recomendadas a serem seguidas em caso de erros.
+
+Opções disponíveis em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Duas soluções estão disponíveis em caso de erros:
+
+**Solução 1**
+
+Defina `XtkSecurity_FeatureFlag_SqlSensitive` como `0`. O recurso está desativado.
+
+**Solução 2**
+
+Modificar `XtkSecurity_SqlSensitive_Methods`. Você pode alterar `<method name="TRUNCATE" action="block"/>` para `<method name="TRUNCATE" action="warn"/>`
+
+Outros métodos, como VACUUM FULL, REINDEX, CREATE INDEX e DROP INDEX também são bloqueados por padrão para proteger a integridade do banco de dados. Tenha cuidado se quiser defini-los como avisar em vez de bloquear. Esses métodos podem ter um impacto grave no desempenho do banco de dados durante a execução.
+
 ## Código JavaScript e código JavaScript avançado {#javascript-code}
 
-As atividades **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** executam um script JavaScript no contexto de um workflow. Para obter mais informações sobre scripts, consulte essas seções:
+As atividades **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** executam um script JavaScript no contexto de um fluxo de trabalho. Para obter mais informações sobre scripts, consulte essas seções:
 
 * [Modelos e scripts JavaScript](javascript-scripts-and-templates.md)
-* [Exemplos de código JavaScript em workflows](javascript-in-workflows.md)
+* [Exemplos de código JavaScript em fluxos de trabalho](javascript-in-workflows.md)
 
 ### Atraso de execução {#exec-delay}
 
@@ -64,7 +78,7 @@ Para ignorar esse limite, é necessário definir o valor como **0**.
 * **[!UICONTROL Transitions]**: Você pode definir várias transições de atividade de output.
 * **[!UICONTROL Schedule]**: A guia **[!UICONTROL Schedule]** permite agendar quando acionar a atividade.
 
-O JavaScript avançado é uma tarefa persistente e será retomado periodicamente se não for marcado como concluído. Para finalizar a tarefa e evitar futuras recuperações, você deve usar o método **task.setCompleted()** na seção **[!UICONTROL Next calls]**:
+O JavaScript avançado é uma tarefa persistente e será retomado periodicamente se não for marcado como concluído. Para encerrar a tarefa e evitar futuras recuperações, você deve usar o método **task.setCompleted()** na seção **[!UICONTROL Next calls]**:
 
 ```
 task.postEvent(task.transitionByName("ok")); // to transition to Ok branch
