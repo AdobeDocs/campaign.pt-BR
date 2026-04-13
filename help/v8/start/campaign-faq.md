@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 hide: true
-source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
+source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 96%
@@ -63,7 +63,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
 1. **Com quais sistemas e componentes o Campaign v8 é compatível?**
 
-   Você pode obter a lista de todos os sistemas e componentes compatíveis com o último build do Campaign na [Matriz de compatibilidade do Adobe Campaign &#x200B;](compatibility-matrix.md).
+   Você pode obter a lista de todos os sistemas e componentes compatíveis com o último build do Campaign na [Matriz de compatibilidade do Adobe Campaign ](compatibility-matrix.md).
 
 1. **Qual é o procedimento para delegação de domínio?**
 
@@ -85,13 +85,13 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Você pode obter o programa de instalação e o console do cliente do Centro de download da Adobe.
 
-   Como usuário administrador, acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html){target="_blank"}  da Adobe para baixar o Adobe Campaign.
+   Como usuário administrador, acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) {target="_blank"} da Adobe para baixar o Adobe Campaign.
 
    Saiba mais sobre o Centro de distribuição [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR){target="_blank"}.
 
 1. **Posso me conectar com especialistas do Campaign?**
 
-   Junte-se à Comunidade do Campaign: procure respostas em uma pergunta já existente ou faça uma nova aos especialistas. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){target="_blank"}
+   Junte-se à Comunidade do Campaign: procure respostas em uma pergunta já existente ou faça uma nova aos especialistas. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Como posso registrar um problema?**
