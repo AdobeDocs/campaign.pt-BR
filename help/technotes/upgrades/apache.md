@@ -4,7 +4,7 @@ title: Nota técnica - Adobe Campaign - Atualização de segurança da versão A
 description: Adobe Campaign - Atualização de segurança da versão do Apache
 hide: true
 exl-id: 68e42fe4-7fb6-4b53-9f39-e77374e3753d
-source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
+source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 3%
