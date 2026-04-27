@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: a523e76d-776c-47d3-9c15-34241cee1092
 source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 74%
+source-wordcount: '1003'
+ht-degree: 76%
 
 ---
 
@@ -39,7 +39,7 @@ Para enviar mensagens, você deve criar um delivery. O modo de criação do deli
 
    ![](assets/send-in-a-wf.png)
 
-1. **Mensagens acionadas** - Você pode [Acionar mensagens](../send/transactional.md) a partir de um evento. As mensagens transacionais (Centro de mensagens) são o módulo do Campaign criado para gerenciar mensagens de acionador. As etapas para configurar e enviar mensagens transacionais são detalhadas [nesta página](../send/transactional.md)
+1. **Mensagens acionadas** - Você pode [Acionar mensagens](../send/transactional.md) a partir de um evento. O envio de mensagens transacionais (Centro de mensagens) é o módulo do Campaign criado para gerenciar mensagens por acionador. As etapas para configurar e enviar mensagens transacionais são detalhadas [nesta página](../send/transactional.md)
 
 ## Canais de comunicação {#gs-channel}
 

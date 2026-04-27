@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 02cca21f-b1ac-4ac2-9761-015f6c7f5567
 source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 97%
+source-wordcount: '746'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Para que o destinatário receba corretamente mensagens em um desses formatos, re
 
 No entanto, se você deixar a opção **[!UICONTROL Email format]** como **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** ou **[!UICONTROL Text]**, o Adobe Campaign detectará automaticamente (ao enviar o email) o formato japonês a ser usado para que a mensagem seja exibida corretamente.
 
-Esse sistema de detecção automática baseia-se na lista de domínios predefinidos no conjunto de regras de email **[!UICONTROL Management of Email Formats]**. Para obter mais informações sobre gerenciamento de formatos de email, consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=pt-BR#managing-email-formats).
+Esse sistema de detecção automática baseia-se na lista de domínios predefinidos no conjunto de regras de email **[!UICONTROL Management of Email Formats]**. Para obter mais informações sobre gerenciamento de formatos de email, consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#managing-email-formats).
 
 ## Limitações e recomendações {#limitations-and-recommendations}
 
@@ -87,9 +87,9 @@ Para enviar um email para destinatários com formatos de email japoneses com o C
 
 ### Criar uma entrega específica para formatos japoneses {#designing-a-specific-delivery-for-japanese-formats}
 
-Você pode criar um workflow que contenha duas entregas: uma para ser lida em um celular japonês e outra para destinatários com formato do email padrão.
+Você pode criar um fluxo de trabalho que contenha duas entregas: uma para ser lida em um celular japonês e outra para destinatários com formato do email padrão.
 
-Para fazer isso, use a atividade **[!UICONTROL Split]** no workflow e defina os formatos de email japonês (Deco-mail, Decoration Mail e Decore Mail) como condições de filtragem.
+Para fazer isso, use a atividade **[!UICONTROL Split]** no fluxo de trabalho e defina os formatos de email japonês (Deco-mail, Decoration Mail e Decore Mail) como condições de filtragem.
 
 ![](assets/deco-mail_08.png)
 

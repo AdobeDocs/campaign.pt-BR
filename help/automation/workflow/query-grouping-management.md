@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Neste exemplo, devemos executar uma query para localizar todos os domínios de e-mail selecionados mais de 30 vezes durante as entregas anteriores.
+Neste exemplo, devemos executar uma consulta para localizar todos os domínios de e-mail selecionados mais de 30 vezes durante as entregas anteriores.
 
 * Qual tabela precisa ser selecionada?
 

@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '254'
 ht-degree: 74%
 
 ---
@@ -33,11 +33,11 @@ No exemplo abaixo, saiba como criar um fluxo de trabalho para enviar um email ou
 
    ![](assets/cross_channel_delivery_1.png)
 
-1. Adicione as condições de filtro ao seu query. Nesse caso, selecionamos destinatários com um número de celular ou endereço de email.
+1. Adicione as condições de filtro à sua consulta. Nesse caso, selecionamos destinatários com um número de celular ou endereço de email.
 
    ![](assets/cross_channel_delivery_2.png)
 
-1. Adicione uma atividade **[!UICONTROL Split]** ao workflow para dividir destinatários com um número de celular e aqueles com um endereço de email.
+1. Adicione uma atividade **[!UICONTROL Split]** ao fluxo de trabalho para dividir destinatários com um número de celular e aqueles com um endereço de email.
 1. Na guia **[!UICONTROL Delivery]**, selecione um workflow para cada target.
 
    Crie seu delivery da mesma forma que com um assistente de delivery comum clicando duas vezes na atividade de delivery no seu workflow.

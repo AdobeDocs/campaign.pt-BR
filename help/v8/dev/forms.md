@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2571'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ O documento XML do formulário de entrada deve conter o elemento raiz `<form>` c
 </form>
 ```
 
-Por padrão, um formulário é associado ao schema de dados com o mesmo nome e namespace. Para associar um formulário a um nome diferente, defina o atributo **entity-schema** do elemento `<form>` como o nome da chave do esquema. Para ilustrar a estrutura de um formulário de entrada, descrevamos uma interface usando o schema de exemplo &quot;cus:recipient&quot;:
+Por padrão, um formulário é associado ao schema de dados com o mesmo nome e namespace. Para associar um formulário a um nome diferente, defina o atributo **entity-schema** do elemento `<form>` como o nome da chave do esquema. Para ilustrar a estrutura de um formulário de entrada, vamos descrever uma interface usando o schema de exemplo &quot;cus:recipient&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -76,9 +76,9 @@ O formulário de entrada com base no schema de exemplo:
 </form>
 ```
 
-A descrição dos controles de edição começa no elemento raiz `<form>`. Um controle de edição é inserido em um elemento **`<input>`** com o atributo **xpath** contendo o caminho do campo do schema.
+A descrição dos controles de edição começa no elemento raiz `<form>`. Um controle de edição é inserido em um elemento **`<input>`** com o atributo **xpath** contendo o caminho do campo do esquema.
 
-O controle de edição se adapta automaticamente ao tipo de dados correspondente e usa o rótulo definido no schema.
+O controle de edição se adapta automaticamente ao tipo de dados correspondente e usa o rótulo definido no esquema.
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ O controle de edição se adapta automaticamente ao tipo de dados correspondente
 
 Por padrão, cada campo é exibido em uma única linha e ocupa todo o espaço disponível, dependendo do tipo de dados.
 
-Todos os atributos de formulário estão listados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=pt-BR){target="_blank"}.
+Todos os atributos de formulário estão listados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target="_blank"}.
 
 ## Formatação {#formatting}
 
@@ -253,7 +253,7 @@ Um contêiner de visibilidade é definido pelo atributo **type=&quot;visibleGrou
 Exemplos de sintaxe de condição:
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: testa a igualdade nos dados do tipo cadeia de caracteres. O valor de comparação deve estar entre aspas.
-* **visibleIf=&quot;@gender >= 1 e @gender != 2&quot;**: condição em um valor numérico.
+* **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;**: condição em um valor numérico.
 * **visibleIf=&quot;@boolean1=true ou @boolean2=false&quot;**: teste em campos booleanos.
 
 ### Exibição condicional (enabledGroup) {#enabling-container}
@@ -392,7 +392,7 @@ Exemplo de uma tabela de relação em um esquema:
 </srcSchema>
 ```
 
-Para nosso exemplo, começamos com o formulário de entrada do schema &quot;cus:recipient&quot;. A lista deve exibir as associações com assinaturas para serviços e permitir que você adicione uma assinatura selecionando um serviço existente.
+Para nosso exemplo, começamos com o formulário de entrada do esquema &quot;cus:recipient&quot;. A lista deve exibir as associações com assinaturas para serviços e permitir que você adicione uma assinatura selecionando um serviço existente.
 
 ![](assets/do-not-localize/form_exemple12.png)
 

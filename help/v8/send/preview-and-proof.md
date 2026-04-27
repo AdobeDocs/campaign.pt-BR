@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
 source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 21%
+source-wordcount: '707'
+ht-degree: 16%
 
 ---
 
@@ -35,7 +35,7 @@ Para visualizar o conteúdo da mensagem, siga as etapas abaixo:
 
 ## Enviar provas {#send-proofs}
 
-Para entregas de email, é possível enviar provas para validar o conteúdo da mensagem. O envio de provas permite a verificação do link de opção de não participação, a mirror page e quaisquer outros links, validação da mensagem, verificação da exibição das imagens, detecção de possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
+Para entregas de email, é possível enviar provas para validar o conteúdo da mensagem. O envio de provas permite verificar o link de opt out, a mirror page e quaisquer outros links, validar a mensagem, verificar se as imagens são exibidas, detectar possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
 
 Uma prova é uma mensagem específica que permite testar uma mensagem antes de enviá-la ao público-alvo principal. Os destinatários da prova são responsáveis pela aprovação da mensagem: renderização, conteúdo, configurações de personalização, configuração.
 
@@ -65,7 +65,7 @@ O tipo de destino de prova está selecionado na lista suspensa **[!UICONTROL Tar
   >
   >Os seed addresses não pertencem à tabela de recipient padrão (nms:recipient), pois são criados em uma tabela separada. Se a tabela de recipients é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados.
 
-  Saiba mais sobre seed addresses em [esta seção](../audiences/test-profiles.md).
+  Saiba mais sobre seed addresses [nesta seção](../audiences/test-profiles.md).
 
 * Use a opção **[!UICONTROL Specific target and Seed addresses]** para combinar seed addresses e endereços de email específicos. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 
@@ -106,4 +106,4 @@ Por padrão, as mensagens de prova são identificadas pela menção `Proof #N` n
 
 Saiba como enviar e validar uma prova para uma entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

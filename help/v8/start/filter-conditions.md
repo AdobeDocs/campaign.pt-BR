@@ -5,17 +5,17 @@ feature: Query Editor
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 3a521f7006ca833af96f1ef5d5b369c2c0568635
+exl-id: 18e49a15-dbb5-42d6-9379-367e769f319a
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '3323'
-ht-degree: 98%
+source-wordcount: '3344'
+ht-degree: 99%
 
 ---
 
-
 # Definir condições de filtro{#filter-conditions}
 
-Para criar sua query, você deve selecionar as condições de filtragem no editor de query. Os recursos e casos de uso disponíveis estão detalhados nesta página.
+Para criar a sua consulta, você precisa selecionar as condições de filtragem no editor de consultas. Os recursos e casos de uso disponíveis estão detalhados nesta página.
 
 ## Escolher o operador {#choose-operator}
 
@@ -177,7 +177,7 @@ O detalhe do campo selecionado é visível na parte inferior da janela. Por exem
 >
 >Use a ferramenta **[!UICONTROL Search]** para localizar um campo disponível.
 
-Clique duas vezes em um campo disponível para adicioná-lo às colunas de saída. No final da query, cada campo selecionado cria uma coluna na janela **[!UICONTROL Data preview]**.
+Clique duas vezes em um campo disponível para adicioná-lo às colunas de saída. No final da consulta, cada campo selecionado cria uma coluna na janela **[!UICONTROL Data preview]**.
 
 ![](assets/query_editor_nveau_01.png)
 
@@ -1015,7 +1015,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>PartitionBy</strong><br /> </td> 
-   <td> Partições do resultado de um query em uma tabela<br /> </td> 
+   <td> Partições do resultado de uma consulta em uma tabela<br /> </td> 
    <td> PartitionBy(&lt;valor 1&gt;)<br /> </td>  
   </tr> 
   <tr> 

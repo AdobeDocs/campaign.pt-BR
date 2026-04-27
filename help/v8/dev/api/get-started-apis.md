@@ -9,8 +9,8 @@ level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 40%
+source-wordcount: '240'
+ht-degree: 58%
 
 ---
 
@@ -20,7 +20,7 @@ As APIs REST do Campaign permitem **criar integrações** com o Adobe Campaign e
 
 >[!AVAILABILITY]
 >
->* Esse recurso só está disponível sob demanda para todos os [ambientes FDA do Campaign](../../architecture/fda-deployment.md). Ele **não** disponível para [implantações corporativas (FFDA)](../../architecture/enterprise-deployment.md). Para obter acesso, entre em contato com o representante da Adobe.
+>* Esse recurso só está disponível sob demanda para todos os [ambientes FDA do Campaign](../../architecture/fda-deployment.md). Ele **não** disponível para [implantações corporativas (FFDA)](../../architecture/enterprise-deployment.md). Para obter acesso, entre em contato com o(a) representante da Adobe.
 >
 >* Antes de executar chamadas de API, verifique as limitações de escala correspondentes ao seu contrato de licença. Para obter mais informações, consulte a [Descrição do produto Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
@@ -40,5 +40,5 @@ Para obter mais informações, consulte [esta seção](setting-up-api-access.md)
 
 As APIs que fornecemos usam **conceitos padrão** com uma interface REST e cargas JSON.
 
-Todos os endpoints são descritos extensivamente nesta documentação com as noções gerais que você deve ter para manipular a API, a referência completa da API, exemplos de código e guias de início rápido. Todos os exemplos funcionam com o Postman, mas podem usar seu cliente REST favoritos.
+Todos os pontos de extremidade são descritos extensivamente nesta documentação com as noções gerais que você deve ter para manipular a API, a referência completa da API, exemplos de código e guias de início rápido. Todos os exemplos funcionam com o Postman, mas podem usar seu cliente REST favoritos.
 

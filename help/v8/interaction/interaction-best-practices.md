@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 67%
+source-wordcount: '1173'
+ht-degree: 65%
 
 ---
 
@@ -111,9 +111,9 @@ Ao usar a interação e selecionar ofertas manualmente, o usuário pode combinar
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### Estenda o schema nms:offer {#extending-nms-offer-schema}
+### Estender o esquema nms:offer {#extending-nms-offer-schema}
 
-Ao expandir o esquema nms:offer, siga a estrutura predefinida já configurada:
+Ao estender o esquema nms:offer, siga a estrutura pronta para uso já configurada:
 * Defina qualquer novo campo para armazenamento de conteúdo em `<element name="view">`.
 * Cada novo campo precisa ser definido duas vezes. Uma vez como um campo XML regular e outra como um campo XML CDATA com &quot;_jst&quot; anexado ao nome. Por exemplo:
 

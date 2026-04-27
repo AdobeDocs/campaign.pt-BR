@@ -7,8 +7,8 @@ role: User
 exl-id: 9904c1c6-c233-4aa2-a237-338ebde15661
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 100%
+source-wordcount: '417'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Isso permite:
 
 ## Pacotes de filtro {#filter-packages}
 
-Na guia **[!UICONTROL Campaigns]**, é possível exibir a lista de **[!UICONTROL Campaign packages]** que reagrupa todas as campanhas de marketing distribuído existentes. É possível filtrar essa lista para exibir somente as campanhas publicadas, atrasadas, pendentes de aprovação etc. Para fazer isso, clique nos links na seção superior desta exibição ou use o link **[!UICONTROL Filter list]** e selecione o status do pacote da campanha a ser exibido.
+Na guia **[!UICONTROL Campaigns]**, é possível exibir a lista de **[!UICONTROL Campaign packages]** que reagrupa todas as campanhas de marketing distribuído existentes. Você pode filtrar essa lista para exibir somente campanhas publicadas, atrasadas, pendentes de aprovação etc. Para fazer isso, clique nos links na seção superior desta exibição ou use o link **[!UICONTROL Filter list]** e selecione o status do pacote da campanha a ser exibido.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
@@ -69,13 +69,13 @@ O campo **[!UICONTROL Comment]** permite justificar o cancelamento.
 
 Para **campanhas locais**, cancelar um pacote o remove da lista de campanhas de marketing disponíveis.
 
-Para **campanhas colaborativas**, cancelar um pacote inicia várias ações:
+Para **campanhas colaborativas**, cancelar um pacote aciona várias ações:
 
 1. Quaisquer pedidos relacionados a este pacote serão cancelados,
 
    ![](assets/mkg_dist_mutual_op_cancelled.png)
 
-1. A campanha de referência é cancelada e todos os processos ativos (workflows, entregas) são interrompidos,
+1. A campanha de referência é cancelada e todos os processos ativos (fluxos de trabalho, entregas) são interrompidos,
 
    ![](assets/mkg_dist_mutual_op_cancelled1.png)
 

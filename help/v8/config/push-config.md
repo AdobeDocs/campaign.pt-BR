@@ -8,8 +8,8 @@ hide: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 42%
+source-wordcount: '1271'
+ht-degree: 45%
 
 ---
 
@@ -497,7 +497,7 @@ Saiba como implementar o FCM em seu aplicativo na [Documentação do Google](htt
    Para mensagens de notificação, a recepção de rastreamento deve ser configurada em dois níveis:
 
    * `onMessageReceived` (aplicativo não em segundo plano): a implementação foi feita na seção anterior
-   * `onCreate` da atividade de inicialização (ou da atividade de direcionamento se a função `click_action` for usada.) (O aplicativo não está em segundo plano).
+   * `onCreate` da atividade de inicialização (ou da atividade direcionada se a função `click_action` for usada.) (Aplicativo fora do plano de fundo).
 
    Isso precisa ser feito ao mesmo tempo que o rastreamento de abertura/cliques.
 

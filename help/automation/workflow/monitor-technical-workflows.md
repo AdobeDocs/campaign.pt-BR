@@ -15,7 +15,7 @@ ht-degree: 89%
 
 # Monitorar fluxos de trabalho técnicos {#monitoring-technical-workflows}
 
-Os workflows técnicos precisam ser monitorados e ações precisam ser realizas quando falharem.
+Os fluxos de trabalho técnicos precisam ser monitorados e ações precisam ser realizas quando falharem.
 
 ## Painel de monitoramento de instância {#instance-monitoring-dashboard}
 
@@ -29,13 +29,13 @@ Em Indicadores do sistema e arquivos principais, verifique se nenhum indicador e
 * Verifique se nenhum dos processos é muito antigo,
 * Verifique se os arquivos de log de diferentes processos não contêm erros recorrentes e alarmantes.
 
-## Workflows técnicos {#technical-workflows}
+## Fluxos de trabalho técnicos {#technical-workflows}
 
-Os workflows técnicos estão disponíveis em **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+Os fluxos de trabalho técnicos estão disponíveis em **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-Dependendo do workflow técnico, siga as etapas detalhadas abaixo para garantir que tudo funcione conforme esperado.
+Dependendo do fluxo de trabalho técnico, siga as etapas detalhadas abaixo para garantir que tudo funcione conforme esperado.
 
-Para entender melhor o que cada workflow técnico deve realizar, consulte esta [seção](technical-workflows.md).
+Para entender melhor o que cada fluxo de trabalho técnico deve realizar, consulte esta [seção](technical-workflows.md).
 
 Para **[!UICONTROL Database Cleanup workflow ('cleanup')]**:
 
@@ -43,17 +43,17 @@ Verifique o journal para verificar se o tempo decorrido é relativamente constan
 
 Para **[!UICONTROL Tracking workflow ('tracking')]**:
 
-Verifique se o workflow de rastreamento é executado como agendado (a cada hora por padrão) e se o journal não realça erros recorrentes. Para obter mais informações, consulte esta [seção](delivery.md).
+Verifique se o fluxo de trabalho de rastreamento é executado como agendado (a cada hora por padrão) e se o journal não realça erros recorrentes. Para obter mais informações, consulte esta [seção](delivery.md).
 
 Para **[!UICONTROL Deliverability update ('deliverabilityUpdate')]**:
 
-1. Verifique se o workflow **[!UICONTROL Deliverability update]** é executado e finalizado com êxito todos os dias.
+1. Verifique se o fluxo de trabalho **[!UICONTROL Deliverability update]** é executado e finalizado com êxito todos os dias.
 1. Verifique no journal se as regras estão sendo atualizadas regularmente.
 
 Para **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Examine todos os workflows localizados na pasta **[!UICONTROL Campaign process]**. Para obter mais informações, consulte esta [página](technical-workflows.md).
-1. Verifique se os workflows são executados como agendados e se o journal não realça erros recorrentes.
+1. Examine todos os fluxos de trabalho localizados na pasta **[!UICONTROL Campaign process]**. Para obter mais informações, consulte esta [página](technical-workflows.md).
+1. Verifique se os fluxos de trabalho são executados como agendados e se o journal não realça erros recorrentes.
 
 ## Supervisão de fluxo de trabalho {#workflow-supervision}
 
@@ -69,9 +69,9 @@ Qualquer workflow que deve ser executado para manter o funcionamento da platafor
 
 ## Lista de manutenção de fluxo de trabalho {#workflow-maintenance-list}
 
-Todos os workflows técnicos personalizados devem ser documentados em uma planilha que contém:
+Todos os fluxos de trabalho técnicos personalizados devem ser documentados em uma planilha que contém:
 
-* Nome e local do workflow.
+* Nome e local do fluxo de trabalho.
 * Finalidade.
 * Agendamento e dependências.
 * Operador responsável pelo monitoramento.
@@ -81,14 +81,14 @@ Todos os workflows técnicos personalizados devem ser documentados em uma planil
 
 ## Planejamento e automação do monitoramento {#planning-and-automation-of-monitoring}
 
-O monitoramento do workflow de planejamento aumenta sua eficiência. Algumas tarefas precisam ocorrer diariamente enquanto outras podem ser realizadas semanalmente ou mensalmente.
+O monitoramento do fluxo de trabalho de planejamento aumenta sua eficiência. Algumas tarefas precisam ocorrer diariamente enquanto outras podem ser realizadas semanalmente ou mensalmente.
 
-A definição de workflows em pastas chamadas por recorrência e classificadas por agendamento de execução melhora a eficiência do monitoramento.
+A definição de fluxos de trabalho em pastas chamadas por recorrência e classificadas por agendamento de execução melhora a eficiência do monitoramento.
 
 A automação do monitoramento reduz a sobrecarga dos recursos e garante que as tarefas sejam agendadas na frequência apropriada.
 
-É possível criar um workflow de monitoramento para enviar um email sempre que determinadas tarefas falharem ou quando uma tabela crítica tornar-se muito grande.
+É possível criar um fluxo de trabalho de monitoramento para enviar um email sempre que determinadas tarefas falharem ou quando uma tabela crítica tornar-se muito grande.
 
-Você pode criar uma exibição para que todos os workflows entre uma área funcional ou todo o sistema sejam monitorados.
+Você pode criar uma exibição para que todos os fluxos de trabalho entre uma área funcional ou todo o sistema sejam monitorados.
 
-Você também pode usar a tarefa do Adobe Campaign ou a funcionalidade do relatório para criar a documentação sob demanda, que está sempre atualizada.
+Você também pode usar o processo do Adobe Campaign ou a funcionalidade do relatório para criar a documentação sob demanda, que está sempre atualizada.

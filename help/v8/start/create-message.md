@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 99%
+source-wordcount: '1565'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Nesta página, aprenda a criar uma entrega única. É possível criar outros tip
 
 Estas são as principais etapas para criar uma entrega única:
 
-1. **Crie uma nova entrega**.  [Leia mais](#create-the-delivery)
+1. **Crie uma nova entrega**. [Leia mais](#create-the-delivery)
 
 1. **Defina o conteúdo da entrega**. [Leia mais](#content-of-the-delivery)
 
@@ -40,7 +40,7 @@ Para criar uma entrega, siga estas etapas:
 
    ![](../send/assets/select-the-new-template.png)
 
-   Um modelo integrado é fornecido para cada canal instalado: email, telefone, canais móveis (push/SMS), correspondência direta, X (Twitter) etc. Os canais disponíveis na lista dependem do contrato de licença.
+   Um modelo integrado é fornecido para cada canal que você instalou: email, telefone, canais móveis (push/SMS), correspondência direta, X (Twitter) etc. Os canais disponíveis na lista dependem do contrato de licença.
 
    Você pode criar novos modelos de entrega para pré-configurar parâmetros específicos que atendam às suas necessidades.  [Saiba mais](../send/create-templates.md).
 
@@ -171,7 +171,7 @@ Para modificar a configuração padrão, clique no link **[!UICONTROL Edit...]**
 
 ### Selecionar os destinatários das mensagens de prova {#select-the-proof-target}
 
-Para entregas de email, é possível enviar provas para validar o conteúdo da mensagem. O envio de provas permite a verificação do link de opção de não participação, a mirror page e quaisquer outros links, validação da mensagem, verificação da exibição das imagens, detecção de possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
+Para entregas de email, é possível enviar provas para validar o conteúdo da mensagem. O envio de provas permite verificar o link de opt out, a mirror page e quaisquer outros links, validar a mensagem, verificar se as imagens são exibidas, detectar possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
 
 Uma prova é uma mensagem específica que permite testar uma mensagem antes de enviá-la ao público-alvo principal. Os destinatários da prova são responsáveis pela aprovação da mensagem: renderização, conteúdo, configurações de personalização, configuração.
 
@@ -182,7 +182,7 @@ Para obter mais informações sobre destinatários e envio de provas, consulte 
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
@@ -194,7 +194,7 @@ Para fazer isso:
 
 1. **Analisar o delivery**: esta etapa permite preparar as mensagens para a entrega. [Saiba mais](../send/delivery-analysis.md).
 
-1. **Enviar provas**: esta etapa permite controlar o conteúdo, os URLs, a personalização etc. [Saiba mais](../send/preview-and-proof.md).
+1. **Enviar provas**: esta etapa permite controlar o conteúdo, as URLs, a personalização, etc. [Saiba mais](../send/preview-and-proof.md).
 
 >[!IMPORTANT]
 >

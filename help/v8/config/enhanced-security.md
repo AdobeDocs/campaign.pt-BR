@@ -7,7 +7,7 @@ level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '801'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Complemento de segurança aprimorada do Campaign {#enhanced-security}
 
-Adobe Esta página faz parte das [orientações sobre configuração segura recomendada publicamente disponível](security.md#public-guidance) para o Campaign v8.
+Esta página faz parte das [orientações sobre configuração segura recomendada publicamente disponível](security.md#public-guidance) para o Campaign v8.
 
 Para tornar sua conexão de rede mais segura e melhorar a segurança de seus recursos, o [!DNL Adobe Campaign] oferece um novo complemento **Segurança aprimorada**.
 
@@ -55,7 +55,7 @@ Para habilitar a integração CMK com o Campaign, siga as etapas abaixo:
 
 1. Compartilhe seu [Nome do Recurso do Amazon (chave ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} com [!DNL Adobe Campaign]. Para fazer isso, entre em contato com o representante da Adobe. <!--or Adobe transition manager?-->
 
-1. Crie e teste as regras do Amazon EventBridge para habilitar o monitoramento das chaves pelo Adobe.&#x200B; [Saiba mais](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
+1. Crie e teste as regras do Amazon EventBridge para habilitar o monitoramento de suas chaves pelo Adobe.&#x200B; [Saiba mais](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
 
 ### Medidas de proteção e limitações {#cmk-callouts}

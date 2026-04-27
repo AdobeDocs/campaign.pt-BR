@@ -5,9 +5,10 @@ feature: Monitoring
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 254765d3-f664-4200-9a70-f8876f2b2933
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1157'
 ht-degree: 70%
 
 ---
@@ -164,4 +165,3 @@ Problemas de sistema podem impedir que os servidores processem deliveries com ef
 >[!NOTE]
 >
 >Como usuário do Campaign v8 Managed Cloud Services, o monitoramento da infraestrutura do servidor é gerenciado pela Adobe. Se você tiver problemas persistentes de desempenho com o envio do delivery, entre em contato com o Atendimento ao cliente da Adobe com seus logs do delivery.
-

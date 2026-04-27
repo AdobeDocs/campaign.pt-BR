@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: eda6934a-e48a-4932-8c88-588f661005d6
 source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '4437'
-ht-degree: 16%
+source-wordcount: '4458'
+ht-degree: 17%
 
 ---
 
@@ -68,7 +68,7 @@ Faça um teste que carregue a conexão a 100% por pelo menos 5 segundos. Você t
 
 O número mínimo de mensagens a enviar pode ser calculado assim:
 
-*Taxa de transferência máxima de MT * Número total de conexões de transmissor/transceptor * 5*
+*Taxa de transferência máxima de MT* Número total de conexões de transmissor/transceptor * 5*
 
 Após a conclusão do delivery, verifique o seguinte:
 
@@ -160,7 +160,7 @@ Para isolar a conta externa que está causando problemas:
 1. Desativar todas as contas externas
 1. Ativar uma conta externa
 1. Tente reproduzir o problema
-1. Se o problema não ocorrer com essa única conta, desative-a e reinicie na etapa 2 na próxima conta. Depois de verificar cada conta individualmente, há dois cenários possíveis:
+1. Se o problema não ocorrer com essa única conta, desabilite-a e reinicie na etapa 2 na próxima conta. Depois de verificar cada conta individualmente, há dois cenários possíveis:
 
 **O problema ocorreu em uma ou em várias contas**
 
@@ -170,7 +170,7 @@ Nesse caso, você pode aplicar outros procedimentos de solução de problemas a 
 
 Você tem um conflito entre contas. O Adobe Campaign trata as contas individualmente, mas o provedor pode tratá-las como uma única conta.
 
-*Você está usando diferentes combinações de logon/senha entre todas as suas contas*
+*Você está usando diferentes combinações de logon/senha em todas as suas contas*
 Você terá que entrar em contato com o provedor para diagnosticar possíveis conflitos referentes a ele.
 
 *Algumas contas externas compartilham a mesma combinação de logon/senha*
@@ -224,7 +224,7 @@ Uma conexão é considerada instável se qualquer uma dessas coisas acontecer:
 **Como corrigir problemas de estabilidade de conexão:**
 
 * Conexões instáveis raramente são a causa principal. Muitas vezes, é o resultado de outro problema que aciona uma desconexão de uma maneira ou outra. Encontrar a causa raiz é a prioridade.
-* Ative rastreamentos SMPP detalhados. Você precisará deles para ver o que está acontecendo quando a conexão for reiniciada.
+* Habilite rastreamentos SMPP detalhados. Você precisará deles para ver o que está acontecendo quando a conexão for reiniciada.
 * Se o provedor enviar PDUs UNBIND, provavelmente fará algo errado. Pergunte a eles por que enviam UNBIND e isso provavelmente levará à causa raiz.
 * Fazer uma captura de rede às vezes é a única maneira de ver como a conexão é fechada.
 * Se o provedor fechar as conexões (enviando um pacote TCP FIN ou TCP RST), pergunte a ele por que fazer isso. Isso deve indicar a causa raiz do problema.
@@ -236,7 +236,7 @@ Uma conexão é considerada instável se qualquer uma dessas coisas acontecer:
 * Verifique se a conexão está estável: uma conexão SMPP deve permanecer ativa por pelo menos 1 hora continuamente. Consulte a seção &quot;Problema com conexões instáveis&quot; acima.
 * Se o reinício do processo SMS fizer com que o envio do MT funcione novamente por um pequeno período, provavelmente você terá uma limitação devido a uma conexão instável. Consulte a seção &quot;Problema com conexões instáveis&quot; acima.
 * Verifique se o log amplo está presente e com o status e as datas corretas. Caso contrário, não é um problema de SMS, mas um problema de delivery ou de preparação de delivery (que está fora do escopo deste documento).
-* Verifique se o conector de SMS está associado ao equipamento do provedor. Solicite feedback ao provedor para garantir que todos os sistemas estejam se comunicando corretamente. Consulte PDUs BIND_TRANSMITTER e BIND_TRANSCEIVER para obter informações sobre o processo de associação. Talvez seja necessário ativar os rastreamentos SMPP para solucionar problemas corretamente.
+* Verifique se o conector de SMS está associado ao equipamento do provedor. Solicite feedback ao provedor para garantir que todos os sistemas estejam se comunicando corretamente. Consulte PDUs BIND_TRANSMITTER e BIND_TRANSCEIVER para obter informações sobre o processo de associação. Talvez seja necessário habilitar os rastreamentos SMPP para solucionar problemas corretamente.
 * Com os rastreamentos SMPP ativados, verifique se a PDU SUBMIT_SM está contendo as informações certas (consulte a documentação acima).
 * Verifique se o provedor responde com uma PDU SUBMIT_SM_RESP com um valor &quot;OK&quot; (código 0). Verifique se a PDU chega com um atraso razoável: qualquer tempo superior a 1 segundo é suspeito e deve ser discutido com o provedor. Geralmente, chega em menos de 100 ms.
 * Se todas essas etapas funcionarem, você poderá ter certeza de que o problema se refere ao provedor. Ele terá que solucionar problemas em sua plataforma.
@@ -244,7 +244,7 @@ Uma conexão é considerada instável se qualquer uma dessas coisas acontecer:
 
 #### Os MTs são duplicados (o mesmo SMS é enviado várias vezes seguidas)
 
-Duplicatas frequentemente são causadas por tentativas. É normal haver duplicatas ao tentar enviar mensagens novamente. Portanto, concentre seus esforços na eliminação da causa raiz das tentativas.
+Duplicados frequentemente são causados por tentativas. É normal haver duplicatas ao tentar enviar mensagens novamente. Portanto, concentre seus esforços na eliminação da causa raiz das tentativas.
 
 * Se duplicatas forem enviadas com um intervalo de exatamente 60 segundos (ou qualquer outro período &quot;regular&quot; suspeito), provavelmente será um problema referente ao provedor, que não envia um SUBMIT_SM_RESP rápido o suficiente.
 * Se você vir muitos BIND/UNBIND, você tem uma conexão instável: consulte a seção [Problemas com conexões instáveis](#unstable-connections) para obter soluções antes de tentar resolver problemas de mensagens duplicadas.
@@ -256,7 +256,7 @@ Redução da quantidade de duplicatas quando há uma nova tentativa:
 
 #### Problema ao processar SR (recibos de entrega)
 
-* Você precisará de rastreamentos SMPP ativados para realizar qualquer tipo de solução de problemas de SR.
+* Você precisará de rastreamentos SMPP habilitados para realizar qualquer tipo de solução de problemas de SR.
 * Verifique se o PDU DELIVER_SM vem do provedor e se está corretamente formado.
 * Verifique se o Campaign responde com uma PDU DELIVER_SM_RESP bem-sucedida em tempo hábil. Isso garante que o SR foi inserido na tabela providerMsgStatus para processamento diferido pelo processo de SMS.
 
@@ -275,7 +275,7 @@ Se apenas alguns SRs forem recebidos, mas não todos, verifique se nenhum outro 
 
 #### Problema ao processar o MO (e quarentena/resposta automática)
 
-* Ativar rastreamentos SMPP durante testes. Se você não ativar o TLS, é sempre melhor fazer uma captura de rede ao solucionar problemas do MO para verificar se as PDUs contêm as informações corretas e estão formatadas corretamente.
+* Habilitar rastreamentos SMPP durante testes. Se você não ativar o TLS, é sempre melhor fazer uma captura de rede ao solucionar problemas do MO para verificar se as PDUs contêm as informações corretas e estão formatadas corretamente.
 * Ao capturar tráfego de rede ou analisar rastreamentos SMPP, capture toda a conversa com o MO e seu MT de resposta (se uma resposta estiver configurada).
 * Se o MO (DELIVER_SM PDU) não aparecer nos rastreamentos, você pode ter certeza de que o problema se refere ao provedor. Ele terá que solucionar problemas em sua plataforma.
 * Se a PDU DELIVER_SM for exibida, verifique se ela é confirmada pelo Campaign com uma PDU DELIVER_SM_RESP bem-sucedida (código 0). Esse RESP garante que toda a lógica de processamento foi aplicada pelo Campaign (resposta automática e quarentena). Se esse não for o caso, procure uma mensagem de erro nos logs de processo do SMS.
@@ -371,7 +371,7 @@ Em todas as outras situações, tente analisar as mensagens SMPP detalhadas prim
 
 Em alguns casos, capturar o tráfego da rede é inútil ou apenas uma perda de tempo. As situações mais comuns são:
 
-* TLS ativado: por definição, o tráfego TLS é criptografado para que não possa ser capturado.
+* TLS habilitado: por definição, o tráfego TLS é criptografado para que não possa ser capturado.
 * Problemas de desempenho: os logs contêm todas as informações necessárias para rastrear problemas de desempenho.
 * Problemas de tempo (tempo de repetição, período inquire_link, limite de rendimento ...)
 * Análise e processamento SR: os registros detalhados dão muito mais contexto e uma apresentação melhor.

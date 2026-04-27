@@ -8,7 +8,7 @@ exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 567ca1cd8fa6e4f03c8871488152710753ea02f1
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '695'
 ht-degree: 5%
 
 ---
@@ -34,8 +34,8 @@ Observe que é possível atribuir permissões a pastas para restringir o acesso 
 
 * **Defina e aplique uma convenção de nomenclatura**. Por exemplo, você pode nomear os fluxos de trabalho em ordem alfabética, para que eles apareçam classificados na ordem de execução, como:
 
-  A1 - importar recipients, começa às 10h;
-A2 - importar tíquetes, começa às 11h.
+  A1 - importar recipients, começa em 10:00;
+A2 - importar tíquetes, começa às 11:00.
 
 ## Criar uma pasta{#create-a-folder}
 
@@ -76,7 +76,7 @@ No exemplo abaixo, criaremos uma nova pasta para exibir apenas deliveries dos EU
 
 1. Crie uma pasta **[!UICONTROL Deliveries]** e nomeie-a como **Entregas nos EUA**.
 1. Clique com o botão direito do mouse nessa pasta e selecione **[!UICONTROL Properties...]**.
-1. Na guia **[!UICONTROL Restriction]**, selecione **[!UICONTROL This folder is a view]**. Todas as entregas no banco de dados serão exibidos.
+1. Na guia **[!UICONTROL Restriction]**, selecione **[!UICONTROL This folder is a view]**. Todas as entregas no banco de dados serão exibidas.
 
    ![](assets/this-folder-is-a-view.png)
 

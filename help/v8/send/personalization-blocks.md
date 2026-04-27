@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 33%
+source-wordcount: '559'
+ht-degree: 32%
 
 ---
 
@@ -72,7 +72,7 @@ Para criar um bloco de personalização, siga as etapas abaixo:
    * Selecione um tipo de conteúdo de **Entrega**.
    * Habilite a opção **[!UICONTROL Visible in the customization menus]** para tornar esse bloco acessível a partir do ícone de inserção do campo de personalização.
    * Se necessário, habilite a opção **[!UICONTROL The content of the personalization block depends upon the format]** para definir dois blocos diferentes para emails de HTML e Texto.
-   * Insira o conteúdo (em HTML, texto, JavaScript, etc.) do bloco de personalização e clique em **[!UICONTROL Save]**.
+   * Insira o conteúdo (em HTML, texto, JavaScript etc.) do bloco de personalização e clique em **[!UICONTROL Save]**.
 
 Depois de salvo, o novo bloco de personalização fica disponível no editor de delivery.
 
@@ -80,4 +80,4 @@ Depois de salvo, o novo bloco de personalização fica disponível no editor de 
 
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo de sua entrega de email no vídeo a seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449011?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

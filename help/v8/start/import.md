@@ -8,8 +8,8 @@ exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
 source-git-commit: adea4eb54f3d519802119646bc501aae2ef5f831
 workflow-type: tm+mt
-source-wordcount: '3845'
-ht-degree: 94%
+source-wordcount: '3864'
+ht-degree: 95%
 
 ---
 
@@ -256,7 +256,7 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
 >[!NOTE]
 >
->Esta etapa aparece ao importar destinatários somente e ao usar a tabela de destinatários padrão do Adobe Campaign (**nms:recipient**).
+>Esta etapa aparece ao importar somente destinatários e ao usar a tabela de destinatários padrão do Adobe Campaign (**nms:recipient**).
 
 * Clique nos links **[!UICONTROL Edit]** para selecionar a pasta, a lista ou o serviço ao qual deseja associar ou assinar os destinatários.
 
@@ -314,9 +314,9 @@ Você pode monitorar a execução do trabalho de importação (consulte [Monitor
 
 ## Exportar dados
 
-Os trabalhos de exportação permitem acessar e extrair dados do banco de dados: contatos, clientes, listas, segmentos etc.
+Os processos de exportação permitem acessar e extrair dados do banco de dados: contatos, clientes, listas, segmentos etc.
 
-Por exemplo, pode ser útil usar dados de rastreamento de campanha (histórico de rastreamento etc.) em uma planilha. Os dados de output podem estar em formato txt, CSV, TAB ou XML.
+Por exemplo, pode ser útil usar dados de rastreamento de campanha (histórico de rastreamento etc.) em uma planilha. Os dados de saída podem estar em formato TXT, CSV, TAB ou XML.
 
 O assistente de exportação permite configurar uma exportação, definir suas opções e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de exportação (simples ou múltipla) e dos direitos do operador.
 
@@ -350,7 +350,7 @@ Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Job
 
   >[!NOTE]
   >
-  >Os trabalhos de importação e exportação automáticos são sempre executados no servidor.
+  >Os processos de importação e exportação automáticos são sempre executados no servidor.
   >
   >Para exportar apenas alguns dados, clique em **[!UICONTROL Advanced parameters]** e insira o número de linhas que devem ser exportadas no campo apropriado.
 
@@ -369,11 +369,11 @@ Selecione um formato de saída para o arquivo de exportação. Os formatos a seg
 * Para o formato **[!UICONTROL Text]**, selecione os delimitadores para separar as colunas (guias, vírgulas, ponto e vírgula ou personalizado) e as strings (aspas simples, duplas ou nenhuma).
 * Para **[!UICONTROL text]** e **[!UICONTROL CSV]**, você pode selecionar a opção **[!UICONTROL Use first lines as column titles]**.
 * Indique o formato de data e o formato do número. Para fazer isso, clique no botão **[!UICONTROL Edit]** do campo correspondente e utilize o editor.
-* Para campos que contém os valores enumerados, é possível selecionar a opção **[!UICONTROL Export labels instead of internal values of enumerations]**. Por exemplo, o título pode ser armazenado no formulário **1=Mr.**, **2=Miss**, **3=Mrs.**. Se essa opção estiver selecionada, **Sr.**, **Srta.**, **Sra.** serão exportados.
+* Para campos que contém os valores enumerados, é possível selecionar a opção **[!UICONTROL Export labels instead of internal values of enumerations]**. Por exemplo, o título pode ser armazenado no formato **1=Sr.**, **2=Srta.**, **3=Sra.**. Se esta opção estiver selecionada, **Sr.**, **Srta.** e **Sra.** serão exportados.
 
 ### Etapa 4 - Seleção de dados {#step-4---data-selection}
 
-Selecione os campos a serem exportados. Para fazer isso:
+Selecione os campos a serem exportados. Para isso:
 
 1. Clique duas vezes nos campos desejados na lista **[!UICONTROL Available fields]** para adicioná-los à seção **[!UICONTROL Output columns]**.
 1. Use as setas à direita da lista para definir a ordem dos campos no arquivo de saída.
@@ -390,7 +390,7 @@ Selecione a ordem de classificação das colunas.
 
 ### Etapa 6 - Condições de filtro {#step-6---filter-conditions-}
 
-Você pode adicionar condições de filtro para evitar a exportação de todos os dados. A configuração dessa filtragem é a mesma do direcionamento do recipient no assistente de delivery.
+Você pode adicionar condições de filtro para evitar a exportação de todos os dados. A configuração dessa filtragem é idêntica ao direcionamento de destinatários no assistente de entrega.
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 

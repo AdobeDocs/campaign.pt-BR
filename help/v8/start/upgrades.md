@@ -7,14 +7,14 @@ level: Beginner
 exl-id: 04bda36f-051f-41a3-84b3-6af3c5e34ab2
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 21%
+source-wordcount: '806'
+ht-degree: 30%
 
 ---
 
 # Versões e atualizações {#upgrades}
 
-O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualizações tem como objetivo disponibilizar a você o que há de melhor e mais recente, mantendo seu ambiente seguro e melhorando sua experiência com nosso produto. A Adobe recomenda que todos os clientes atualizem para a versão mais recente.
+O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualizações tem como objetivo disponibilizar a você as mais recentes e melhores atualizações, além de manter seu ambiente protegido e melhorar sua experiência com nosso produto. A Adobe recomenda que todos os clientes atualizem para a versão mais recente.
 
 Como usuário do Managed Cloud Services, sua instância é atualizada pela Adobe a cada nova versão. O representante da Adobe entra em contato com você para atualizar seus ambientes. O console do cliente do Campaign **precisa ser atualizado para a mesma versão** dos servidores do Campaign. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
 
@@ -62,7 +62,7 @@ As novas versões e as alterações trazidas são listadas nas [Notas de Versão
 
 Para ser informado sobre novos lançamentos de soluções da Experience Cloud e seu conteúdo, inscreva-se na comunicação [Atualizações de produtos prioritárias da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.
 
-Você também pode visitar a [Comunidade do Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=pt&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"} para ser informado sobre atualizações de lançamento.
+Você também pode visitar a [Comunidade do Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"} para ser informado sobre atualizações de lançamento.
 
 
 ### Por que minha organização precisa de uma atualização? {#upgrades-1}
@@ -77,12 +77,12 @@ Normalmente, a atualização para a versão mais recente traz:
 
 * Suporte aprimorado
 
-  A maioria dos problemas críticos é resolvida com atualizações e pode ser evitada. Atualizações regulares ajudam a reduzir os desafios enfrentados e aumentar a eficiência, eliminando esses desafios. O volume de atendimento ao cliente é reduzido, permitindo resoluções mais rápidas e mais atenção aos seus problemas que não estão relacionados a atualizações.
+  A maioria dos problemas críticos é resolvida com atualizações e pode ser evitada. Atualizações regulares ajudam a reduzir os desafios enfrentados e aumentar a eficiência. O volume de atendimento ao cliente é reduzido, permitindo resoluções mais rápidas e mais atenção aos seus problemas que não estão relacionados a atualizações.
 
 
 * Manutenção e estabilidade aprimoradas
 
-  Com o tempo, a equipe da Adobe Campaign identifica maneiras de melhorar a estabilidade e o desempenho do produto, bem como de corrigir problemas conhecidos. A atualização permite que sua instância esteja sempre alinhada a essas melhorias, eliminando desafios comuns enfrentados por organizações que estão enfrentando um rápido crescimento e/ou complexidade em suas instâncias do Campaign.As melhorias na pilha de tecnologia que alimentam o Campaign se refletem nas equipes de marketing e de TI da sua organização.
+  Com o tempo, a equipe do Adobe Campaign identifica maneiras de melhorar a estabilidade e o desempenho do produto, bem como de corrigir problemas conhecidos. A atualização permite que sua instância esteja sempre alinhada a essas melhorias, eliminando desafios comuns enfrentados por organizações que estão enfrentando um rápido crescimento e/ou complexidade em suas instâncias do Campaign.As melhorias na pilha de tecnologia que alimentam o Campaign se refletem nas equipes de marketing e de TI da sua organização.
 
 
 ### Qual é o processo e o cronograma de uma atualização? {#upgrades-2}

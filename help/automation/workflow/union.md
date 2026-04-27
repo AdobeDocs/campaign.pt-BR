@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: União
-description: Saiba mais sobre a atividade do workflow de união
+description: Saiba mais sobre a atividade do fluxo de trabalho de união
 feature: Workflows, Targeting Activity
 version: Campaign v8, Campaign Classic v7
 exl-id: 4109e198-bf9d-4dd2-92a1-16bbadbe30e8
@@ -32,24 +32,24 @@ No exemplo a seguir, os resultados de dois queries foram combinados para atualiz
 1. Se você tiver inserido dados adicionais para os queries, pode manter apenas os dados compartilhados.
 1. Se quiser limitar o tamanho da população final, marque a opção **[!UICONTROL Limit size of generated population]**.
 
-   Especifique este número final inserindo o número máximo de destinatários e selecionando o query cuja população terá prioridade.
+   Especifique este número final inserindo o número máximo de destinatários e selecionando a consulta cuja população terá prioridade.
 
 1. Aprove a atividade **[!UICONTROL Union]** e configure a atividade [List update](list-update.md).
-1. Inicie o workflow. O número de resultados é exibido e a lista definida na atividade de atualização da lista é criada ou atualizada. Esta lista contém o conjunto de destinatários para queries ou, onde aplicável, o número definido na etapa anterior.
+1. Inicie o fluxo de trabalho. O número de resultados é exibido e a lista definida na atividade de atualização da lista é criada ou atualizada. Esta lista contém o conjunto de destinatários para queries ou, onde aplicável, o número definido na etapa anterior.
 
    ![](assets/union_example.png)
 
 ## Parâmetros de entrada {#input-parameters}
 
 * tableName
-* schema
+* esquema
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
 ## Parâmetros de saída {#output-parameters}
 
 * tableName
-* schema
+* esquema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da união. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do população (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da união. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de público-alvo, **[!UICONTROL schema]** é o esquema da população (normalmente, nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.

@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1218'
 ht-degree: 97%
 
 ---
@@ -80,7 +80,7 @@ Antes de começar a enviar mensagens e criar campanhas de marketing, é necessá
 
 1. **Usar modelos**
 
-   Campanhas, entregas, tarefas ou fluxos de trabalho são todos baseados em um modelo, que armazena configurações e recursos principais. Um modelo integrado é fornecido para cada componente, para o qual nenhuma configuração específica foi definida. Você precisa configurar e adaptar modelos às suas necessidades e disponibilizá-los aos usuários finais.
+   Campanhas, entregas, processos ou fluxos de trabalho são todos baseados em um modelo, que armazena configurações e recursos principais. Um modelo integrado é fornecido para cada componente, para o qual nenhuma configuração específica foi definida. Você precisa configurar e adaptar modelos às suas necessidades e disponibilizá-los aos usuários finais.
 
 
    Saiba como trabalhar com modelos de campanha [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=pt-BR){target="_blank"}.
@@ -139,7 +139,7 @@ Para orquestrar campanhas de marketing complexas em públicos-alvo diferentes em
 
 * Use **fluxos de trabalho** para gerenciar processos e dados. Saiba mais [nesta documentação](../../automation/workflow/about-workflows.md)
 
-* Configurar processos de **assinatura** e **landing pages**.  Saiba mais [nesta página](../start/subscriptions.md)
+* Configurar processos de **assinatura** e **páginas de destino**.  Saiba mais [nesta página](../start/subscriptions.md)
 
 * Configurar **regras de tipologia** para definir a fadiga e o gerenciamento de controle.  Saiba mais [nesta documentação](../../automation/campaign-opt/campaign-typologies.md)
 

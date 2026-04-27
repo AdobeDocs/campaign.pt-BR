@@ -4,10 +4,11 @@ description: Saiba como monitorar deliveries, workflows e a instância do Campai
 feature: Monitoring
 role: User
 level: Beginner
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 2ad585f2-19bc-4391-8a19-9e892dbe01a3
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 3%
+source-wordcount: '1141'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +20,7 @@ A Adobe Campaign oferece um conjunto abrangente de recursos para monitorar seus 
 >
 >Como administrador do Campaign, você também pode usar o [Painel de Controle do Campaign](#control-panel) para monitorar suas instâncias, gerenciar o desempenho e definir configurações com recursos de autoatendimento.
 
-## Monitore seus deliveries {#monitor-deliveries}
+## Monitore entregas {#monitor-deliveries}
 
 O monitoramento de deliveries, após serem enviados, é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes. Após enviar um delivery, você poderá monitorar seu status e rastrear as métricas principais no painel do delivery. O painel fornece acesso a logs do delivery, logs de exclusão, logs de rastreamento e outros recursos de monitoramento para ajudar você a analisar o desempenho do delivery em todos os canais.
 
@@ -82,13 +83,13 @@ Saiba mais sobre [Trilha de auditoria](../reporting/audit-trail.md)
 
 O Campaign v8 fornece vários recursos de monitoramento para rastrear o desempenho da sua instância e garantir a operação ideal:
 
-**Monitoramento de banco de dados** - Monitore o uso e a capacidade do banco de dados por meio do Painel de Controle para garantir desempenho e gerenciamento de armazenamento ideais. [Saiba mais sobre o monitoramento de banco de dados](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html?lang=pt-BR){target="_blank"}
+**Monitoramento de banco de dados** - Monitore o uso e a capacidade do banco de dados por meio do Painel de Controle para garantir desempenho e gerenciamento de armazenamento ideais. [Saiba mais sobre o monitoramento de banco de dados](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html){target="_blank"}
 
 **Monitoramento de perfis ativos** - Rastreie o uso do perfil ativo em relação aos limites contratuais para manter a conformidade e otimizar a alocação de recursos. [Saiba mais sobre perfis ativos](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR){target="_blank"}
 
 **Monitoramento do fluxo de trabalho** - Monitore o status de execução do fluxo de trabalho para identificar fluxos de trabalho de longa duração e garantir que todos os fluxos de trabalho técnicos estejam sendo executados corretamente. [Saiba mais sobre fluxos de trabalho técnicos](#technical-workflows)
 
-**Taxa de transferência e latência de entrega** - Rastrear a taxa de transferência de entrega (mensagens enviadas por hora) e a latência de comunicações transacionais por meio do Painel de Controle. [Saiba mais sobre o monitoramento de taxa de transferência](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html?lang=pt-BR){target="_blank"}
+**Taxa de transferência e latência de entrega** - Rastrear a taxa de transferência de entrega (mensagens enviadas por hora) e a latência de comunicações transacionais por meio do Painel de Controle. [Saiba mais sobre o monitoramento de taxa de transferência](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html){target="_blank"}
 
 >[!NOTE]
 >
@@ -113,7 +114,7 @@ Os workflows técnicos são processos essenciais executados em segundo plano par
 | **Atualização de entregabilidade** | Atualiza as regras de capacidade de entrega e os padrões de filtro de spam |
 | **Limpeza do banco de dados** | Limpa logs de entrega e rastreamento antigos |
 
-Saiba mais sobre [workflows técnicos](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=pt-BR){target="_blank"}
+Saiba mais sobre [workflows técnicos](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}
 
 ### Painel de controle do Campaign {#control-panel}
 
@@ -171,4 +172,3 @@ Saiba mais sobre [relatórios globais](../reporting/global-reports.md)
 * [Gerenciamento de quarentena](../send/quarantines.md)
 * [Configurar e enviar deliveries](../send/configure-and-send.md)
 * [Introdução aos relatórios](../reporting/gs-reporting.md)
-

@@ -6,7 +6,7 @@ feature: Typology Rules
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '482'
 ht-degree: 41%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 **Otimização de Campanha** é o módulo Adobe Campaign que permite controlar, filtrar e monitorar o envio de entregas. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#typologies-video)
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ Casos de uso de exemplo das regras de tipologia de pressão estão disponíveis 
 
 Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign utilizando regras de tipologia.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448336?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
 
 ### Configurar o gerenciamento de fadiga usando filtros predefinidos
 
 O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de destinatários. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que filtrará a população do público-alvo pelo número de mensagens recebidas
 Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign usando filtros.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444605?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

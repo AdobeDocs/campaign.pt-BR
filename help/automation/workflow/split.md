@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Split
-description: Saiba mais sobre a atividade de workflow Split
+description: Saiba mais sobre a atividade de fluxo de trabalho de divisão
 feature: Workflows, Targeting Activity
 version: Campaign v8, Campaign Classic v7
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1835'
 ht-degree: 92%
 
 ---
@@ -124,7 +124,7 @@ Por exemplo, se você selecionar o campo **[!UICONTROL Language]** como um campo
 
 ## Limitar o número de registros de subconjunto por distribuição de dados {#limit-the-number-of-subset-records-per-data-distribution}
 
-Se os campos de agrupamento contiverem um número muito grande de valores ou se quiser evitar redefinir os valores para cada nova atividade dividida, o Adobe Campaign permitirá criar uma limitação por distribuição de dados. Ao selecionar [valores de limitação de dados](#create-subsets) (seção ), selecione a opção **[!UICONTROL By data distribution]** e selecione um modelo no menu suspenso. A criação de um template de distribuição de dados é demonstrada abaixo.
+Se os campos de agrupamento contiverem um número muito grande de valores ou se quiser evitar redefinir os valores para cada nova atividade dividida, o Adobe Campaign permitirá criar uma limitação por distribuição de dados. Ao selecionar [valores de limitação de dados](#create-subsets) (seção ), selecione a opção **[!UICONTROL By data distribution]** e selecione um modelo no menu suspenso. A criação de um modelo de distribuição de dados é demonstrada abaixo.
 
 Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um modelo de distribuição, consulte [esta página](local-approval-activity.md).
 
@@ -134,23 +134,23 @@ Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um modelo
 >
 >Esta função só está disponível com o [complemento Marketing Distribuído](../distributed-marketing/about-distributed-marketing.md). Verifique o contrato de licença.
 
-O template de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Aplique as seguintes etapas para criar um template de distribuição de dados:
+O modelo de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Aplique as seguintes etapas para criar um modelo de distribuição de dados:
 
-1. Para criar o template de distribuição de dados, vá para o nó **[!UICONTROL Resources > Campaign management > Data distribution]** e clique em **[!UICONTROL New]**.
+1. Para criar o modelo de distribuição de dados, vá para o nó **[!UICONTROL Resources > Campaign management > Data distribution]** e clique em **[!UICONTROL New]**.
 
    ![](assets/local_validation_data_distribution_1.png)
 
-1. A guia **[!UICONTROL General]** permite inserir o rótulo e o contexto de execução da distribuição (targeting dimension, campo de distribuição).
+1. A guia **[!UICONTROL General]** permite inserir o rótulo e o contexto de execução da distribuição (dimensão de direcionamento, campo de distribuição).
 
    ![](assets/local_validation_data_distribution_2.png)
 
    Os seguintes campos precisam ser inseridos:
 
-   * **[!UICONTROL Label]**: rótulo para o template de distribuição.
-   * **[!UICONTROL Targeting dimension]**: digite a targeting dimension à qual a distribuição de dados será aplicada, **[!UICONTROL Recipient]** por exemplo. Esse schema deve sempre ser compatível com os dados usados no workflow para construção do target.
-   * **[!UICONTROL Distribution field]**: selecione um campo por meio da targeting dimension. Por exemplo, se selecionar o campo **[!UICONTROL Email domain]**, a lista de destinatários será dividida por domínio.
+   * **[!UICONTROL Label]**: rótulo para o modelo de distribuição.
+   * **[!UICONTROL Targeting dimension]**: digite a dimensão de direcionamento à qual a distribuição de dados será aplicada, **[!UICONTROL Recipient]** por exemplo. Esse esquema deve sempre ser compatível com os dados usados no fluxo de trabalho de segmentação.
+   * **[!UICONTROL Distribution field]**: selecione um campo por meio da dimensão de direcionamento. Por exemplo, se selecionar o campo **[!UICONTROL Email domain]**, a lista de destinatários será dividida por domínio.
    * **[!UICONTROL Distribution type]**: selecione a forma como o valor de limitação do target será detalhado na guia **[!UICONTROL Distribution]**: **[!UICONTROL Percentage]** ou **[!UICONTROL Set]**.
-   * **[!UICONTROL Approval storage]**: se você usar uma atividade [Local approval](local-approval.md) no fluxo de trabalho de direcionamento, insira o esquema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se usar o schema de target **[!UICONTROL Recipients]**, insira o schema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
+   * **[!UICONTROL Approval storage]**: se você usar uma atividade [Local approval](local-approval.md) no fluxo de trabalho de direcionamento, insira o esquema no qual os resultados da aprovação serão armazenados. É necessário especificar um esquema de armazenamento por esquema de direcionamento. Se usar o esquema de direcionamento **[!UICONTROL Recipients]**, insira o esquema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
 
      No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Approvals storage]**.
 
@@ -214,22 +214,22 @@ Para evitar isso, é possível arrastar e soltar uma atividade de **[!UICONTROL 
 
 A opção **[!UICONTROL Enable overlapping of output populations]** permite gerenciar populações pertencentes a vários subconjuntos:
 
-* Quando a caixa não estiver marcada, a atividade dividida garante que um destinatário não esteja presente em várias transições de saída, mesmo que ele atenda aos critérios de vários subconjuntos. Eles estarão no target da primeira guia com critérios correspondentes.
+* Quando a caixa não estiver marcada, a atividade dividida garante que um destinatário não esteja presente em várias transições de saída, mesmo que ele atenda aos critérios de vários subconjuntos. Eles estarão no público-alvo da primeira guia com critérios correspondentes.
 * Quando a caixa for marcada, os destinatários poderão ser encontrados em vários subconjuntos se atenderem aos critérios de filtro. O Adobe Campaign recomenda usar critérios exclusivos.
 
 ## Parâmetros de entrada {#input-parameters}
 
 * tableName
-* schema
+* esquema
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
 ## Parâmetros de saída {#output-parameters}
 
 * tableName
-* schema
+* esquema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da exclusão. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema da população (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da exclusão. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de público-alvo, **[!UICONTROL schema]** é o esquema da população (normalmente, nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.

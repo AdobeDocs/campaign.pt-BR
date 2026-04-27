@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
 source-git-commit: edbe7ab49a628436dfb4d27ae17122917d7371e9
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ Você pode testar o rastreamento em páginas de espelhamento, logs de email e li
 
    ![](assets/s_ncs_user_email_del_tracking_param.png)
 
-[Saiba mais sobre as opções de rastreamento de URL](url-tracking.md)
+   [Saiba mais sobre as opções de rastreamento de URL](url-tracking.md)
 
 1. Envie o delivery para o recipient de teste. [Saiba mais sobre o envio de entregas](configure-and-send.md)
 

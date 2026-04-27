@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: Workflow de entrega entre canais
-description: Saiba mais sobre os workflows de entrega entre canais
+title: Fluxo de trabalho de entrega entre canais
+description: Saiba mais sobre os fluxos de trabalho de entrega entre canais
 feature: Workflows, Channels Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '604'
 ht-degree: 93%
 
 ---
 
-# Workflow de entrega entre canais{#cross-channel-delivery-workflow}
+# Fluxo de trabalho de entrega entre canais{#cross-channel-delivery-workflow}
 
-Esse caso de uso apresenta um exemplo envolvendo um workflow de entrega entre canais. O conceito geral de entregas entre canais é apresentado [nesta seção](cross-channel-deliveries.md).
+Esse caso de uso apresenta um exemplo envolvendo um fluxo de trabalho de entrega entre canais. O conceito geral de entregas entre canais é apresentado [nesta seção](cross-channel-deliveries.md).
 
-O objetivo é segmentar um público dos destinatários do banco de dados em diferentes grupos com o objetivo de enviar um e-mail para um grupo e uma mensagem SMS para outro grupo.
+O objetivo é segmentar um público-alvo dos destinatários do banco de dados em diferentes grupos com o objetivo de enviar um e-mail para um grupo e uma mensagem SMS para outro grupo.
 
 As principais etapas de implementação para este caso de uso são as seguintes:
 
-1. Criação de uma atividade **[!UICONTROL Query]** para segmentar seu público.
+1. Criação de uma atividade **[!UICONTROL Query]** para segmentar seu público-alvo.
 1. Criação de uma atividade **[!UICONTROL Email delivery]** contendo um link para uma oferta.
 1. Usar uma atividade **[!UICONTROL Split]** para:
 
@@ -33,12 +33,12 @@ As principais etapas de implementação para este caso de uso são as seguintes:
 
 ## Etapa 1: criar o público {#step-1--build-the-audience}
 
-Para definir seu target, crie uma query para identificar os destinatários.
+Para definir seu target, crie uma consulta para identificar os destinatários.
 
 1. Crie uma campanha. Saiba mais [nesta página](../campaigns/marketing-campaign-create.md).
-1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao workflow. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](query.md).
+1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](query.md).
 1. Defina os destinatários que receberão suas entregas. Por exemplo, selecione os membros &quot;Ouro&quot; como a target dimension.
-1. Adicione as condições do filtro à sua query. Neste exemplo, selecione destinatários que tenham um endereço de e-mail e um número de celular.
+1. Adicione as condições do filtro à sua consulta. Neste exemplo, selecione destinatários que tenham um endereço de e-mail e um número de celular.
 
    ![](assets/wkf_cross-channel_3.png)
 
@@ -69,8 +69,8 @@ Para definir seu target, crie uma query para identificar os destinatários.
 
 Depois que seu target for identificado e sua primeira entrega for criada, será necessário segmentar o target em diferentes populações usando condições de filtro.
 
-1. Adicione uma atividade **Split** ao workflow e abra-a. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](split.md).
-1. Crie três segmentos a partir da população upstream processado na query.
+1. Adicione uma atividade **Split** ao fluxo de trabalho e abra-a. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](split.md).
+1. Crie três segmentos a partir da população upstream processado na consulta.
 
    ![](assets/wkf_cross-channel_6.png)
 
@@ -103,14 +103,14 @@ Depois que seu target for identificado e sua primeira entrega for criada, será 
 
 ## Etapa 4: Finalizar o fluxo de trabalho {#step-4--finalize-the-workflow}
 
-1. Adicione as atividades relevantes ao workflow após os três subconjuntos resultantes da atividade **[!UICONTROL Split]**:
+1. Adicione as atividades relevantes ao fluxo de trabalho após os três subconjuntos resultantes da atividade **[!UICONTROL Split]**:
 
    * Adicione uma atividade **[!UICONTROL Email delivery]** para enviar um email de lembrete para o primeiro subconjunto.
    * Adicione uma atividade **[!UICONTROL Mobile delivery]** para enviar uma mensagem SMS ao segundo subconjunto.
    * Adicione uma atividade **[!UICONTROL List update]** para adicionar os destinatários correspondentes ao banco de dados.
 
-1. Clique duas vezes nas atividades de delivery no seu workflow para editá-las.
+1. Clique duas vezes nas atividades de entrega no seu fluxo de trabalho para editá-las.
 1. Clique duas vezes na atividade **[!UICONTROL List update]** e selecione a opção **[!UICONTROL Generate an outbound transition]**.
-1. Clique no botão **Start** na barra de ações para executar o workflow.
+1. Clique no botão **Start** na barra de ações para executar o fluxo de trabalho.
 
 A população direcionada pela atividade **Consulta** será segmentada para receber um e-mail ou uma entrega SMS de acordo com os comportamentos dos destinatários. A população restante será adicionada ao banco de dados usando a atividade **[!UICONTROL List update]**.

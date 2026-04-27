@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: b5eb9eaa-0ca8-478c-9ed5-e5006e9b5609
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 12%
+source-wordcount: '574'
+ht-degree: 14%
 
 ---
 
@@ -19,7 +19,7 @@ O envio de deliveries de SMS com uma infraestrutura de mid-sourcing requer:
 1. Um Operador SMS no Mid-server. [Saiba como criá-lo aqui](#sms-operator-mid)
 1. Uma conta externa de SMS no servidor de marketing que usará o operador criado anteriormente. [Saiba como criá-lo aqui](#sms-external-account)
 1. Uma conta externa SMPP no servidor Mid, especificando o modo de Entrega Channel e Mid-sourcing. [Saiba como criá-lo aqui](#smpp-external-account-mid)
-1. Um template do delivery que faz referência à conta externa para simplificar o processo de envio. [Saiba como criá-lo aqui](#sms-delivery-template)
+1. Um modelo de entrega que faça referência à conta externa para simplificar o processo de envio. [Saiba como criá-lo aqui](#sms-delivery-template)
 
 ## Criar o operador SMS no Mid-server {#sms-operator-mid}
 

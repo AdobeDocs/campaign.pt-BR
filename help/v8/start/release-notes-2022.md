@@ -5,8 +5,8 @@ feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: b3ca222fb28c1a5d35190e41cfbbe463c5d1bcad
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 89%
+source-wordcount: '1946'
+ht-degree: 88%
 
 ---
 
@@ -113,7 +113,7 @@ Consulte a [Matriz de compatibilidade do Campaign](compatibility-matrix.md).
 * Correção de um problema que poderia ocorrer se uma entrega atingisse um tamanho específico durante o processo de MTA. (NEO-46097)
 * Correção de um problema que impedia que os logs de rastreamento retornassem dados relacionados ao navegador do recipient. (NEO-46612)
 * Correção de um problema que resultava em problemas de personalização ao enviar mensagens SMS usando um modo de entrega externo. (NEO-46415)
-* Correção de um problema que poderia gerar duplicatas em logs de rastreamento. (NEO-46409)
+* Correção de um problema que poderia gerar duplicados em logs de rastreamento. (NEO-46409)
 * Correção de um problema que impedia que o fluxo de trabalho técnico do **[!UICONTROL Replicate Staging data]** (ffdaReplicateStagingData) fosse interrompido mesmo quando um erro ocorresse durante sua execução. (NEO-46280)
 * Para evitar a lentidão ao enviar provas para os seed addresses, todas as replicações consecutivas de membros de seed agora são agrupadas em uma solicitação de replicação. (NEO-44844)
 * Correção de um problema que exibia um erro ao tentar visualizar uma entrega em qualquer evento arquivado do Centro de mensagens. (NEO-43620)

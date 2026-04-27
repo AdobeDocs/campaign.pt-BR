@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 'Scheduler '
-description: Saiba mais sobre a atividade de workflow do Scheduler
+title: Scheduler
+description: Saiba mais sobre a atividade de fluxo de trabalho Agendador
 feature: Workflows
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '396'
 ht-degree: 42%
 
 ---
@@ -29,7 +29,7 @@ A atividade **[!UICONTROL Scheduler]** deve ser considerada como um início agen
 
 **Usar um Agendador por ramificação** - Cada ramificação do fluxo de trabalho deve ter apenas uma atividade **[!UICONTROL Scheduler]**. Para obter mais informações sobre as práticas recomendadas para o uso de atividades em fluxos de trabalho, consulte a [página de práticas recomendadas de fluxo de trabalho](workflow-best-practices.md#using-activities).
 
-**Impedir execuções simultâneas de fluxo de trabalho** - Se um fluxo de trabalho for acionado por um agendador, lembre-se de que várias instâncias do fluxo de trabalho podem estar em execução ao mesmo tempo. Por exemplo, se um scheduler aciona o workflow a cada hora, mas a execução do workflow leva mais de uma hora, você pode acabar com execuções sobrepostas. Para evitar isso, considere configurar verificações para evitar várias execuções simultâneas. [Saiba como evitar várias execuções simultâneas de fluxo de trabalho](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
+**Impedir execuções simultâneas de fluxo de trabalho** - Se um fluxo de trabalho for acionado por um agendador, lembre-se de que várias instâncias do fluxo de trabalho podem estar em execução ao mesmo tempo. Por exemplo, se um scheduler aciona o workflow a cada hora, mas a execução do workflow leva mais de uma hora, você pode acabar com execuções sobrepostas.Para evitar isso, considere configurar verificações para impedir várias execuções simultâneas. [Saiba como evitar várias execuções simultâneas de fluxo de trabalho](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 **Conta para transições atrasadas** - As transições acionadas pelo agendador poderão ser atrasadas se o fluxo de trabalho estiver executando tarefas de longa duração (como importações) ou se o módulo wfserver tiver sido interrompido temporariamente. Para atenuar isso, restrinja os tempos de ativação do scheduler para garantir que as tarefas sejam executadas dentro de uma janela de tempo definida.
 

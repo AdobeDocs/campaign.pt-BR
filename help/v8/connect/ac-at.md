@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 52%
+source-wordcount: '994'
+ht-degree: 54%
 
 ---
 
@@ -74,7 +74,7 @@ Em seguida, você pode definir os parâmetros de imagem:
 * O **[!UICONTROL Landing Page]** permite redirecionar a imagem padrão para uma landing page padrão. Esse URL se aplica somente quando a imagem padrão é exibida no email final. É opcional.
 * O **[!UICONTROL Additional decision parameters]** define o mapeamento entre os campos definidos nos segmentos do Adobe Target e os campos do Adobe Campaign. Os campos do Adobe Campaign usados devem ter sido especificados no rawbox. No nosso exemplo, adicionamos o campo País.
 
-Se você usar permissões do Enterprise em suas configurações no Adobe Target, adicione a propriedade correspondente nesse campo. Saiba mais sobre as permissões do Target Enterprise em [documentação do Adobe Target](https://experienceleague.adobe.com/pt-br/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
+Se você usar permissões do Enterprise em suas configurações no Adobe Target, adicione a propriedade correspondente nesse campo. Saiba mais sobre as permissões do Target Enterprise em [documentação do Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
 ![](assets/target_13.png)
 
@@ -94,23 +94,23 @@ Em nosso caso, precisamos de duas ofertas de redirecionamento, a terceira (a pad
 
    ![](assets/target_6.png)
 
-1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=pt-BR#experiences){target="_blank"}.
+1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences){target="_blank"}.
 
 ### Criar públicos-alvo {#audiences-target}
 
-No Adobe Target, é necessário criar os dois públicos nos quais as pessoas que visitam sua oferta serão categorizadas para os diferentes conteúdos a serem entregues. Para cada público, adicione uma regra para definir quem poderá ver a oferta.
+No Adobe Target, é necessário criar os dois públicos nos quais as pessoas que visitam sua oferta serão categorizadas para os diferentes conteúdos a serem entregues. Para cada público-alvo, adicione uma regra para definir quem poderá ver a oferta.
 
-1. Para criar um novo público no Target, na guia **[!UICONTROL Audiences]**, clique em **[!UICONTROL Create Audience]**.
+1. Para criar um novo público-alvo no Target, na guia **[!UICONTROL Audiences]**, clique em **[!UICONTROL Create Audience]**.
 
    ![](assets/audiences_1.png)
 
-1. Adicione um nome ao público.
+1. Adicione um nome ao público-alvo.
 
    ![](assets/audiences_2.png)
 
 1. Clique **[!UICONTROL Add a rule]** e selecione uma categoria. A regra usa critérios específicos para direcionar os visitantes. É possível refinar as regras adicionando condições ou criando novas regras em outras categorias.
 
-1. Siga o mesmo procedimento para os públicos restantes.
+1. Siga o mesmo procedimento para os públicos-alvos restantes.
 
 ### Criar uma atividade de direcionamento de experiência {#creating-targeting-activity}
 
@@ -124,11 +124,11 @@ Primeiro, é necessário definir o público-alvo:
 
 1. Selecione **[!UICONTROL Form]** como **[!UICONTROL Experience Composer]**.
 
-1. Escolha um público ao clicar no botão **[!UICONTROL Change audience]**.
+1. Escolha um público-alvo ao clicar no botão **[!UICONTROL Change audience]**.
 
    ![](assets/target_10_2.png)
 
-1. Selecione o público criado nas etapas anteriores.
+1. Selecione o público-alvo criado nas etapas anteriores.
 
    ![](assets/target_10_3.png)
 
@@ -162,9 +162,9 @@ A seção **[!UICONTROL Reporting Settings]** permite selecionar uma ação e ed
 
 ## Pré-visualizar e enviar a mensagem {#preview-send-email}
 
-No Adobe Campaign, agora você pode visualizar seu email e testar sua renderização em diferentes recipients.
+No Adobe Campaign, agora você pode visualizar seu e-mail e testar sua renderização em diferentes recipients.
 
-Você observará que a imagem muda de acordo com as diferentes experiências criadas.
+Você notará que a imagem muda de acordo com as diferentes experiências criadas.
 
 Agora você está pronto para enviar seu email, incluindo uma oferta dinâmica do Target.
 

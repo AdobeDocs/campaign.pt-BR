@@ -8,8 +8,8 @@ exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 version: Campaign v8, Campaign Classic v7
 source-git-commit: b24e05f152bc299ea7953856bfa71950b5cc9837
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 36%
+source-wordcount: '533'
+ht-degree: 41%
 
 ---
 

@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 13a7432e-6216-4a5c-84fc-bc374b5af5ee
 source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 46%
+source-wordcount: '222'
+ht-degree: 52%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 46%
 
 ## Rastrear uma campanha {#tracking-a-campaign}
 
-Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todas as tarefas e os status.
+Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todos os processos e os status.
 
 As seguintes informações podem ser acessadas por meio desta subguia:
 
@@ -31,7 +31,7 @@ As seguintes informações podem ser acessadas por meio desta subguia:
 
 * A subguia **[!UICONTROL Approvals]** contém todo o processo de aprovação da campanha. Você pode verificar detalhes e comentários
 
-* Os workflows criados para gerar mensagens para provedores de serviços são exibidos na subguia **[!UICONTROL Jobs on service providers]**. Clique no ícone **[!UICONTROL Detail]** para exibir o workflow selecionado.
+* Os fluxos de trabalho criados para gerar mensagens para provedores de serviços são exibidos na subguia **[!UICONTROL Jobs on service providers]**. Clique no ícone **[!UICONTROL Detail]** para exibir o fluxo de trabalho selecionado.
 
 ## Rastrear entregas {#delivery-tracking}
 

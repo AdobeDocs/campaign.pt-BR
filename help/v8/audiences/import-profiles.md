@@ -7,8 +7,8 @@ level: Beginner
 exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 39%
+source-wordcount: '287'
+ht-degree: 42%
 
 ---
 
@@ -18,7 +18,7 @@ Para preencher o banco de dados do Campaign, você pode [adicionar perfis manual
 
 ## Importar perfis com um fluxo de trabalho {#import-profiles-with-a-wf}
 
-Os workflows podem ser uma maneira útil de automatizar alguns dos processos de importação. Se você importa dados de um arquivo local ou de um SFTP, você pode usar workflows para padronizar os procedimentos de gerenciamento de dados.
+Os fluxos de trabalho podem ser uma maneira útil de automatizar alguns dos processos de importação. Se você importa dados de um arquivo local ou de um SFTP, você pode usar fluxos de trabalho para padronizar os procedimentos de gerenciamento de dados.
 
 ### Usar dados de uma lista: Lista de leitura {#data-from-read-list}
 
@@ -26,9 +26,9 @@ Prepare e estruture seus dados em um arquivo para importá-lo com um fluxo de tr
 
 ### Carregar dados de um arquivo {#data-from-a-file}
 
-Os dados processados em um workflow podem ser extraídos de um arquivo estruturado para serem importados para o Adobe Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html?lang=pt-BR){target="_blank"}.
+Os dados processados em um workflow podem ser extraídos de um arquivo estruturado para serem importados para o Adobe Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html){target="_blank"}.
 
-Depois que os dados forem coletados, você poderá usá-los em seus workflows, por exemplo, para enriquecer uma entrega ou atualizar o banco de dados. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=pt-BR){target="_blank"}.
+Depois que os dados forem coletados, você poderá usá-los em seus fluxos de trabalho, por exemplo, para enriquecer uma entrega ou atualizar o banco de dados. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}.
 
 ## Importações únicas{#import-jobs}
 

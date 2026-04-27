@@ -6,8 +6,8 @@ feature: Workflows
 role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 69%
+source-wordcount: '47'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 69%
 
 
 
-Os fluxos de trabalho detalhados abaixo são instalados com o módulo da **plataforma de Mid-sourcing** por padrão.
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo da **plataforma Mid-sourcing** por padrão.
 
 <table> 
  <tbody> 
@@ -28,7 +28,7 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo da **plata
   <tr> 
    <td> <span class="uicontrol">Indicadores de delivery</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span><br /> </td> 
-   <td> Esse workflow atualiza os indicadores de rastreamento de entrega para uma entrega. Esse workflow é acionado a cada hora por padrão.<br /> </td> 
+   <td> Esse fluxo de trabalho atualiza os indicadores de rastreamento de entrega para uma entrega. Esse fluxo de trabalho é acionado a cada hora por padrão.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

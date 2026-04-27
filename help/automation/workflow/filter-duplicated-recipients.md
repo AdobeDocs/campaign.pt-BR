@@ -21,7 +21,7 @@ Neste exemplo, queremos filtrar os destinatários que aparecem duas vezes ou mai
 
 Para criar este exemplo, aplique as seguintes etapas:
 
-1. Arraste e solte uma atividade **[!UICONTROL Query]** em um workflow e abra a atividade.
+1. Arraste e solte uma atividade **[!UICONTROL Query]** em um fluxo de trabalho e abra a atividade.
 1. Clique em **[!UICONTROL Edit query]** e defina as dimensões do filtro e do direcionamento para **[!UICONTROL Recipients]**.
 
    ![](assets/query_recipients_1.png)

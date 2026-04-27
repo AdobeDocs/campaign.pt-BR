@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Descrição da entrega
-description: Saiba mais sobre a atividade do workflow do Delivery outline
+description: Saiba mais sobre a atividade do fluxo de trabalho Definição de entrega
 feature: Workflows, Targeting Activity
 role: User
 version: Campaign v8, Campaign Classic v7
@@ -15,19 +15,19 @@ ht-degree: 100%
 
 # Delivery outline{#delivery-outline}
 
-A **descrição da entrega** permite usar uma descrição em um workflow de campanha. O outline deve ter sido criado antecipadamente na campanha.
+A **descrição da entrega** permite usar uma descrição em um fluxo de trabalho de campanha. O outline deve ter sido criado antecipadamente na campanha.
 
 Para configurar a atividade, basta marcar outline desejado e a data de contato planejada. É possível adicionar regras do filtro adicionando tipologias ou regras de tipologia.
 
 ## Exemplo: Inserção de uma oferta por meio de uma entrega outline {#example--inserting-an-offer-via-a-delivery-outline}
 
-A atividade de **descrição da entrega**, disponível nos workflows da campanha, permite apresentar ofertas mencionadas em uma descrição da entrega na campanha atual em andamento.
+A atividade de **descrição da entrega**, disponível nos fluxos de trabalho da campanha, permite apresentar ofertas mencionadas em uma descrição da entrega na campanha atual em andamento.
 
 >[!NOTE]
 >
 >O pacote de **Interaction** deve ser instalado.
 
-1. Em um workflow, adicione uma atividade de descrição da entrega antes de adicionar uma atividade de entrega.
+1. Em um fluxo de trabalho, adicione uma atividade de descrição da entrega antes de adicionar uma atividade de entrega.
 1. Na atividade de descrição da entrega, especifique a descrição que deseja usar.
 1. Preencha os campos disponíveis de acordo com sua entrega.
 1. Há dois casos possíveis:
@@ -38,6 +38,6 @@ A atividade de **descrição da entrega**, disponível nos workflows da campanha
 
    * Se não marcar a caixa, todas as ofertas na descrição da entrega serão apresentadas sem chamar o mecanismo de oferta.
 
-   A pré-visualização leva em conta o número de ofertas especificadas na entrega. Ao executar um workflow, é o número especificado na descrição da entrega que é levada em conta.
+   A pré-visualização leva em conta o número de ofertas especificadas na entrega. Ao executar um fluxo de trabalho, é o número especificado na descrição da entrega que é levada em conta.
 
    ![](assets/int_compo_offre_wf1.png)

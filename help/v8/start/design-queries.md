@@ -5,9 +5,10 @@ feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: edd495a377559007dad7158c9ab4a4917d89ae73
+exl-id: d34b6073-a7e7-443a-a6d8-e74ef10a67e8
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '872'
 ht-degree: 29%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 29%
 
 As consultas são criadas usando campos da tabela selecionada ou usando uma fórmula.
 
-As etapas para criar um query no Adobe Campaign são as seguintes:
+As etapas para criar uma consulta no Adobe Campaign são as seguintes:
 
 1. [Selecione a tabela de trabalho](#step-1---choose-a-table).
 1. [Selecione os dados para extrair](#step-2---choose-data-to-extract).
@@ -101,7 +102,7 @@ Clique na guia **[!UICONTROL Preview]** para exibir o resultado da condição de
 
 ![](assets/query_editor_nveau_98.png)
 
-Os usuários familiarizados com a linguagem SQL podem clicar em **[!UICONTROL Generate SQL query]** para exibir a query no SQL.
+Os usuários familiarizados com a linguagem SQL podem clicar em **[!UICONTROL Generate SQL query]** para exibir a consulta no SQL.
 
 ![](assets/query_editor_nveau_99.png)
 

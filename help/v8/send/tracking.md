@@ -7,8 +7,8 @@ level: Beginner
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
 source-git-commit: 57e177dc6c30502f2ed3bb08b18586fa5399e89c
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 32%
+source-wordcount: '456'
+ht-degree: 34%
 
 ---
 
@@ -50,7 +50,7 @@ Os recursos de rastreamento de campanha permitem adicionar links em emails que p
 
 **Logs de rastreamento**
 
-O fluxo de trabalho técnico **Rastreamento** recupera os dados de rastreamento depois que a entrega é enviada e o rastreamento é ativado. Esses dados podem ser encontrados na guia Rastreamento do seu delivery.
+O fluxo de trabalho técnico **Rastreamento** recupera os dados de rastreamento depois que a entrega é enviada e o rastreamento é ativado. Esses dados podem ser encontrados na guia Rastreamento da entrega.
 
 [Saiba mais sobre logs de rastreamento](tracking-logs.md)
 

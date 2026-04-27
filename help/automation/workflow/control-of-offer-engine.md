@@ -18,7 +18,7 @@ ht-degree: 100%
 
 
 
-O workflow detalhado abaixo é instalado com o **controle do motor de oferta com o módulo de instância de execução** por padrão.
+O fluxo de trabalho detalhado abaixo é instalado com o **controle do motor de oferta com o módulo de instância de execução** por padrão.
 
 <table> 
  <tbody> 
@@ -30,7 +30,7 @@ O workflow detalhado abaixo é instalado com o **controle do motor de oferta com
   <tr> 
    <td> <span class="uicontrol">Sincronização de propostas</span> <br /> </td> 
    <td> <span class="uicontrol">propositionSynch</span> <br /> </td> 
-   <td> Esse workflow sincroniza as apresentações entre a instância de marketing e a instância de execução usada para interações.<br /> </td> 
+   <td> Esse fluxo de trabalho sincroniza as apresentações entre a instância de marketing e a instância de execução usada para interações.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

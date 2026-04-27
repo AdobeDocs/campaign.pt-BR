@@ -5,22 +5,23 @@ feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
+exl-id: 071274f1-7c60-445d-ac07-f5f4f229a489
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 5%
+ht-degree: 81%
 
 ---
 
 # Consultar banco de dados do Campaign
 
-A ferramenta de consulta está disponível em vários níveis do aplicativo e pode ser usada para definir populações do target, segmentar clientes, extrair e filtrar logs de rastreamento, criar filtros e muito mais.
+A ferramenta de consulta está disponível em vários níveis do aplicativo e pode ser usada para definir as populações do público-alvo, segmentar clientes, extrair e filtrar logs de rastreamento, criar filtros e muito mais.
 
-Ele fornece um assistente dedicado — o editor de query genérico — acessível pelo menu **[!UICONTROL Tools > Generic query editor...]**. Esse editor permite que as consultas de banco de dados extraiam, organizem, agrupem e classifiquem informações. Por exemplo, ele pode recuperar recipients que clicaram mais de n vezes em um link de boletim informativo durante um determinado período.
+Ela fornece um assistente dedicado, o editor de consulta genérica, acessível pelo menu **[!UICONTROL Tools > Generic query editor...]**. Esse editor permite que as consultas a banco de dados extraiam, organizem, agrupem e ordenem informações. Por exemplo, ele pode recuperar destinatários que clicaram mais de n vezes em um link de boletim informativo durante um determinado período.
 
-O Editor de consultas genérico centraliza todos os recursos de consulta. Ela permite a criação e o armazenamento de filtros de restrição, que podem ser reutilizados em outros contextos, como a caixa Query de um workflow de direcionamento.
+O editor de query genérico centraliza todos os recursos de consulta. Ele permite criar e armazenar filtros de restrição, que podem ser reutilizados em outros contextos, como a caixa de consulta de um fluxo de trabalho de direcionamento.
 
-![Acesse o editor de consultas e selecione uma tabela](assets/query_editor_nveau_21.png)
+![Acessar o editor de consultas e selecionar uma tabela](assets/query_editor_nveau_21.png)
 
 
 As etapas para criar uma consulta estão detalhadas [nesta página](design-queries.md).

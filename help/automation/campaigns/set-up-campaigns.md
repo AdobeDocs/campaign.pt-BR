@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 21%
+source-wordcount: '449'
+ht-degree: 23%
 
 ---
 
@@ -36,7 +36,7 @@ As principais etapas para criar e executar uma campanha de marketing no Adobe Ca
 1. **Configure seus planos e programas** agendamento, configure a lógica para orquestrar suas campanhas
 Um programa é um conjunto de atividades de marketing definidas para um período. Cada programa contém campanhas vinculadas a um calendário, que fornece uma visualização geral. O plano de marketing pode conter vários programas. Ele define objetivos estratégicos por um período de tempo, com um orçamento alocado, metas mensuráveis e documentos associados. Saiba como criar planos e programas [nesta seção](marketing-campaign-create.md#create-plan-and-program).
 
-1. **Crie sua primeira campanha**
+1. **Criar sua primeira campanha**
 Uma campanha centraliza todos os elementos relacionados a uma campanha de marketing: entregas, regras de direcionamento, custos, arquivos de exportação, documentos relacionados etc. Cada campanha é anexada a um programa. Saiba como criar uma campanha [nesta seção](marketing-campaign-create.md#create-a-campaign).
 
 1. **Selecionar a audiência**
@@ -61,4 +61,4 @@ Quando essas etapas forem concluídas, você poderá [iniciar os deliveries](mar
 
 Este vídeo apresenta os principais conceitos das campanhas de marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/326576?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)

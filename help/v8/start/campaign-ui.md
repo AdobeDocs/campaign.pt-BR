@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 69%
+source-wordcount: '1234'
+ht-degree: 70%
 
 ---
 
@@ -121,7 +121,7 @@ Este espaço de trabalho permite acessar a árvore do Explorer para navegar por 
 
 ## Interface do Campaign Web {#ac-web-ui}
 
-Como usuário do Campaign v8, a partir da versão v8.6.1, você tem acesso a um ambiente da Web, disponível por meio da interface de usuário central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços. 
+Como usuário do Campaign v8, a partir da versão v8.6.1, você tem acesso a um ambiente da Web, disponível por meio da interface de usuário central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços.
 
 ![Página inicial da interface do Adobe Campaign Web](assets/ac-web-home.png)
 
@@ -156,7 +156,7 @@ Os idiomas compatíveis dependem da interface.
 
 ## Formatos
 
-O idioma afeta os formatos de data e hora. 
+O idioma afeta os formatos de data e hora.
 
 As principais diferenças entre inglês americano e inglês do Reino Unido são:
 

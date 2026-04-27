@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
 source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 64%
+source-wordcount: '885'
+ht-degree: 63%
 
 ---
 
@@ -71,17 +71,17 @@ Este link permite que você acesse o assistente de extração e defina as inform
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Você pode inserir um URL personalizado no arquivo de extração. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html?lang=pt-BR){target="_blank"} do Adobe Campaign Classic.
+Você pode inserir um URL personalizado no arquivo de extração. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"} do Adobe Campaign Classic.
 
 >[!NOTE]
 >
->Este assistente inclui as etapas do assistente de exportação detalhado na [documentação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=pt-BR){target="_blank"} do Adobe Campaign Classic.
+>Este assistente inclui as etapas do assistente de exportação detalhado na [documentação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"} do Adobe Campaign Classic.
 
 ## Validar a entrega{#validating}
 
 Verifique o resultado da análise e o conteúdo do arquivo de output.
 
-No contexto de uma campanha de marketing, na data de extração, o arquivo de extração é criado. Você pode visualizar o conteúdo do arquivo extraído, aprová-lo ou alterar o formato e reiniciar a extração, se necessário. Depois que o arquivo for aprovado, você poderá enviar o e-mail de notificação para o roteador. Saiba mais [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=pt-BR){target="_blank"}.
+No contexto de uma campanha de marketing, na data de extração, o arquivo de extração é criado. Você pode visualizar o conteúdo do arquivo extraído, aprová-lo ou alterar o formato e reiniciar a extração, se necessário. Depois que o arquivo for aprovado, você poderá enviar o e-mail de notificação para o roteador. Saiba mais [nesta página](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"}.
 
 Os conceitos globais ao validar uma entrega são apresentados [nesta seção](../start/create-message.md#validate-the-delivery).
 
@@ -91,7 +91,7 @@ O arquivo de output de uma entrega de correspondência direta é gerado durante 
 >
 >A fase de análise está detalhada nesta [seção](delivery-analysis.md).
 
-Durante a fase de análise, o arquivo é gerado, mas as informações relativas aos destinatários (ou seja, logs da entrega) não são atualizadas. Assim, você pode cancelar esse trabalho sem correr nenhum risco.
+Durante a fase de análise, o arquivo é gerado, mas as informações relativas aos destinatários (ou seja, logs da entrega) não são atualizadas. Assim, você pode cancelar esse processo sem correr nenhum risco.
 
 Verifique o resultado da análise e o conteúdo do arquivo de output antes de clicar em **[!UICONTROL Confirm delivery]**. Uma mensagem de confirmação permite iniciar a entrega.
 

@@ -5,10 +5,11 @@ feature: Monitoring, Deliverability
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 90f2b7b2-db9e-42aa-aef2-e90aee5d208e
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 69%
+source-wordcount: '557'
+ht-degree: 66%
 
 ---
 
@@ -62,15 +63,15 @@ Para obter mais detalhes sobre as diferentes falhas de entrega que podem ser enc
   </tr> 
   <tr> 
    <td> Levado em consideração pelo provedor de serviço<br /> </td> 
-   <td> Para deliveries de SMS, o provedor de serviço SMS recebeu o delivery.<br /> Para entregas de email, a mensagem foi repassada com êxito do Campaign para o MTA (Agente de Transferência de Correspondência).</td> 
+   <td> Para entregas por SMS, o provedor de serviços SMS recebeu a entrega.<br /> Para deliveries de email, a mensagem foi repassada com êxito do Campaign para o MTA (Mail Transfer Agent, agente de transferência de correspondência).</td> 
   </tr> 
   <tr> 
-   <td> Received on mobile<br /> </td> 
+   <td> Recebido no dispositivo móvel<br /> </td> 
    <td> O destinatário recebeu o SMS em seu dispositivo móvel.<br /> </td> 
   </tr>
   <tr> 
    <td> Sent to the service provider<br /> </td> 
-   <td> A entrega foi enviada para o provedor de serviços SMS, mas ainda não foi recebida.<br />
+   <td> O delivery foi enviado para o provedor de serviços SMS, mas ainda não foi recebido.<br />
    </td> 
   </tr> 
   <tr> 
@@ -94,7 +95,7 @@ Se a entrega não estiver sendo enviada e o status permanecer **[!UICONTROL Pend
 
   O limite de campanhas simultâneas é definido na opção **[!UICONTROL NmsOperation_LimitConcurrency]**. O valor padrão é 10.
 
-  Como usuário do Managed Cloud Services, você pode trabalhar com a Adobe para ajustar esse limite, se necessário. Saiba mais sobre opções na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR){target="_blank"}.
+  Como usuário do Managed Cloud Services, você pode trabalhar com a Adobe para ajustar esse limite, se necessário. Saiba mais sobre opções na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}.
 
 * **Problemas de disponibilidade de recursos**
 
@@ -109,4 +110,3 @@ Se a entrega não estiver sendo enviada e o status permanecer **[!UICONTROL Pend
 * [Enviar e monitorar emails](send.md#email-monitoring)
 * [Entender as falhas de entrega](delivery-failures.md)
 * [Monitorar o ambiente do Campaign](../start/monitor.md#monitor-deliveries)
-

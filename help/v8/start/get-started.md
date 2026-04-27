@@ -8,8 +8,8 @@ exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 92%
+source-wordcount: '1058'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ O Adobe Campaign v8 oferece melhorias significativas de infraestrutura, seguran�
 
 Use o Campaign para:
 
-* **Impulsionar a personalização e o envolvimento por meio de uma única visualização acessível do cliente**
+* **Impulsionar** a personalização e o engajamento por meio de uma única visualização acessível do cliente
 * **Integrar canais de email, móveis, online e offline à jornada do cliente**
 * **Automatizar a entrega de mensagens e ofertas relevantes e oportunas**
 
@@ -62,7 +62,7 @@ Saiba como projetar, agendar e executar uma campanha [nesta seção](campaigns.m
 
 ## Fluxos de trabalho {#wf-gsv8}
 
-O Adobe Campaign oferece um ambiente gráfico abrangente que permite projetar processos complexos, incluindo segmentação, execução de campanha, processamento de arquivos etc. Você pode usar um fluxo de trabalho, por exemplo, para baixar um arquivo de um servidor, descompactá-lo e importar seus registros no banco de dados do Adobe Campaign.
+O Adobe Campaign oferece um ambiente gráfico abrangente que permite projetar processos complexos, incluindo segmentação, execução de campanha, processamento de arquivos etc. Por exemplo, você pode usar um fluxo de trabalho para baixar um arquivo de um servidor, descompactá-lo e importar seus registros no banco de dados do Adobe Campaign.
 
 Um fluxo de trabalho também pode envolver usuários atribuindo tarefas ou fazendo com que eles aprovem tarefas realizadas. Isso significa que é possível atribuir uma tarefa a um ou vários usuários para trabalhar no conteúdo ou especificar alvos e aprovar provas antes de enviar a mensagem.
 

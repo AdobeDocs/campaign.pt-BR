@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: aafd977e-c8af-426b-904c-8388c9d8e595
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '495'
 ht-degree: 100%
 
 ---
@@ -49,12 +49,12 @@ Geralmente, essas opções são selecionadas no carrinho clicando com o botão d
 
 ## Afinidade {#affinity}
 
-É possível optar forçar a execução de um workflow ou uma atividade de workflow em uma máquina específica. Para fazer isso, é necessário definir uma ou mais tendências no nível do workflow ou da atividade relacionada.
+É possível optar forçar a execução de um fluxo de trabalho ou uma atividade de fluxo de trabalho em uma máquina específica. Para fazer isso, é necessário definir uma ou mais tendências no nível do fluxo de trabalho ou da atividade relacionada.
 
 
 ## Limite do período de execução {#max--execution-period}
 
-Este campo permite que você defina um aviso para quando a tarefa demorar muito. Ele não afetará a operação do workflow. Se a tarefa não for concluída até o final do **[!UICONTROL Max. execution period]**, a página **[!UICONTROL Instance monitoring]** exibirá um aviso para esse workflow. Esta página é acessada pela guia **[!UICONTROL Monitoring]** da página inicial.
+Este campo permite que você defina um aviso para quando a tarefa demorar muito. Ele não afetará a operação do fluxo de trabalho. Se a tarefa não for concluída até o final do **[!UICONTROL Max. execution period]**, a página **[!UICONTROL Instance monitoring]** exibirá um aviso para esse fluxo de trabalho. Esta página é acessada pela guia **[!UICONTROL Monitoring]** da página inicial.
 
 ## Comportamento {#behavior}
 
@@ -71,7 +71,7 @@ Este campo permite selecionar o fuso horário da atividade. Para obter mais info
 
 Este campo permite que você defina a ação a ser executada quando a atividade tiver erros. Há duas opções possíveis:
 
-* **[!UICONTROL Suspend the process]**: o workflow é interrompido automaticamente. Seu status muda para **[!UICONTROL Failed]**. Depois que o problema for resolvido, reinicie o workflow.
+* **[!UICONTROL Suspend the process]**: o fluxo de trabalho é interrompido automaticamente. Seu status muda para **[!UICONTROL Failed]**. Depois que o problema for resolvido, reinicie o fluxo de trabalho.
 * **[!UICONTROL Ignore]**: esta tarefa e todas as tarefas a seguir (na mesma ramificação) não serão executadas. Pode ser útil para tarefas recorrentes. Se a ramificação tiver um programador a montante, ele será iniciado como de costume na próxima data de execução.
 * **[!UICONTROL Abort on error]**: o fluxo de trabalho é interrompido automaticamente e não pode ser reiniciado. Seu status muda para **[!UICONTROL Failed]**.
 

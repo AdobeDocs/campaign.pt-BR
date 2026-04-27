@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Carregamento de dados (arquivo)
-description: Saiba mais sobre a atividade de workflow de carregamento de dados (arquivo)
+description: Saiba mais sobre a atividade de fluxo de trabalho Carregamento de dados (arquivo)
 feature: Workflows, Data Management Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1110'
 ht-degree: 96%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 96%
 
 ## Uso {#use}
 
-A atividade **[!UICONTROL Data loading (File)]** permite acessar uma fonte de dados externos diretamente e usá-la no Adobe Campaign. De fato, todos os dados necessários para operações de target nem sempre são encontrados no banco de dados do Adobe Campaign: ele pode ser disponibilizado em arquivos externos.
+A atividade **[!UICONTROL Data loading (File)]** permite acessar uma fonte de dados externos diretamente e usá-la no Adobe Campaign. De fato, todos os dados necessários para operações de direcionamento nem sempre são encontrados no banco de dados do Adobe Campaign: ele pode ser disponibilizado em arquivos externos.
 
 O arquivo a ser carregado pode ser especificado pela transição ou calculado durante a execução dessa atividade. Por exemplo, pode ser a lista de 10 produtos favoritos de um cliente cujas compras são gerenciadas em um banco de dados externo.
 
@@ -27,7 +27,7 @@ A seção superior da janela de configuração dessa atividade permite definir o
 
 >[!CAUTION]
 >
->Somente os arquivos de estrutura simples são suportados (por exemplo, CSV, TXT e etc.). O uso do formato XML não é recomendado. Com o console do cliente, você pode carregar arquivos de até 150 MB. Na Interface do usuário da Web, a atividade Load file tem um limite de 50 MB. [Saiba mais](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=pt-BR){target="_blank"}
+>Somente os arquivos de estrutura simples são suportados (por exemplo, CSV, TXT e etc.). Não é recomendável usar o formato XML. Com o console do cliente, você pode carregar arquivos de até 150 MB. Na Interface do usuário da Web, a atividade Load file tem um limite de 50 MB. [Saiba mais](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 
@@ -106,7 +106,7 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 
    ![](assets/s_advuser_load_file_sample_2.png)
 
-   Para fazer isso, clique no botão **[!UICONTROL Change...]** localizado na seção inferior direita da ferramenta de edição e configure a programação.
+   Para fazer isso, clique no botão **[!UICONTROL Change...]** localizado na seção inferior direita da ferramenta de edição e configure o cronograma.
 
    Para obter mais informações, consulte [Scheduler](scheduler.md).
 

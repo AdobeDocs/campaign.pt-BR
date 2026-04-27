@@ -6,16 +6,16 @@ feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
 source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 77%
+source-wordcount: '522'
+ht-degree: 73%
 
 ---
 
 # Regras de filtragem{#filtering-rules}
 
-Use as regras de filtragem para selecionar as mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma targeting dimension.
+Use as regras de filtragem para selecionar as mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma dimensão de direcionamento.
 
-As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtragem** dedicada. [Saiba mais](#create-and-use-a-filtering-typology).
+As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtering** dedicada. [Saiba mais](#create-and-use-a-filtering-typology).
 
 ## Criar uma regra de filtro {#create-a-filtering-rule}
 
@@ -84,7 +84,7 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 >
 >Somente as regras de filtragem e de tipologia estarão disponíveis na janela de seleção.
 >
->Essas configurações podem ser definidas no template de entrega a ser aplicado automaticamente a todas as novas entregas criadas usando o template.
+>Essas configurações podem ser definidas no modelo de entrega a ser aplicado automaticamente a todas as novas entregas criadas usando o modelo.
 >
 
 ## Regras padrão de exclusão de entrega {#default-deliverability-exclusion-rules}

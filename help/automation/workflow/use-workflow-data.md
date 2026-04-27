@@ -1,13 +1,13 @@
 ---
 title: Usar dados de fluxo de trabalho
-description: Saiba como usar os dados de workflow
+description: Saiba como usar os dados de fluxo de trabalho
 feature: Workflows, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 72%
+source-wordcount: '718'
+ht-degree: 66%
 
 ---
 
@@ -21,7 +21,7 @@ Um conjunto de casos de uso de fluxo de trabalho está disponível em [esta seç
 
 ### Tabela de trabalho temporário do fluxo de trabalho {#work-table}
 
-Nos workflows, os dados transportados de uma atividade para outra são armazenados em uma tabela de trabalho temporária.
+Nos fluxos de trabalho, os dados transportados de uma atividade para outra são armazenados em uma tabela de trabalho temporária.
 
 Esses dados podem ser exibidos e analisados clicando com o botão direito do mouse na transição apropriada.
 
@@ -47,7 +47,7 @@ Para fazer isso, selecione o menu relevante:
 
   Saiba como usar o assistente de análise descritiva na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=pt-BR){target="_blank"}.
 
-Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
+Os dados do target são descartados na execução do fluxo de trabalho Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
 
 ![](assets/wf-purge-data-option.png)
 
@@ -66,11 +66,11 @@ Isso permite usar dados coletados por uma lista em um delivery, por exemplo. Par
 %= targetData.FIELD %
 ```
 
-Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para fluxos de trabalho para construção do target. O target da entrega deve ser construído no fluxo de trabalho e especificado na transição de entrada da entrega.
+Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para fluxos de trabalho de direcionamento. O target da entrega deve ser construído no fluxo de trabalho e especificado na transição de entrada da entrega.
 
 No exemplo a seguir, você está coletando uma lista de informações sobre clientes, para serem usadas em um email personalizado. Siga as etapas abaixo:
 
-1. Crie um workflow para coletar informações, reconcilie com os dados já existentes no banco de dados, e depois inicie uma entrega.
+1. Crie um fluxo de trabalho para coletar informações, reconcilie com os dados já existentes no banco de dados, e depois inicie uma entrega.
 
    ![](assets/wf-targetdata-sample-1.png)
 
@@ -94,7 +94,7 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Em seguida, configure o **[!UICONTROL Delivery]**: ele é criado com base em um template e os destinatários são especificados pela transição de entrada.
+1. Em seguida, configure o **[!UICONTROL Delivery]**: ele é criado com base em um modelo e os destinatários são especificados pela transição de entrada.
 
    ![](assets/wf-targetdata-sample-4.png)
 
@@ -102,13 +102,13 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
    >
    >Somente os dados contidos na transição podem ser usados para personalizar a entrega. Os campos de personalização do tipo **targetData** só estão disponíveis para a população de entrada da atividade de **[!UICONTROL Delivery]**.
 
-1. No template de entrega, use os campos coletados no fluxo de trabalho.
+1. No modelo de entrega, use os campos coletados no fluxo de trabalho.
 
    Para fazer isso, insira os campos de personalização do tipo **[!UICONTROL Target extension]**.
 
    ![](assets/wf-targetdata-sample-5.png)
 
-   Nesse exemplo, queremos inserir o gênero de música e o tipo de mídia favoritos do cliente (CD ou DVD), conforme declarado no arquivo coletado pelo workflow.
+   Nesse exemplo, queremos inserir o gênero de música e o tipo de mídia favoritos do cliente (CD ou DVD), conforme declarado no arquivo coletado pelo fluxo de trabalho.
 
    Como um diferencial, vamos adicionar um cupom para os titulares de cartões de fidelidade, ou seja, destinatários para os quais o valor &#39;Cartão&#39; for igual a 1.
 
@@ -119,13 +119,13 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
 
 ## Atualizar o banco de dados {#update-the-database}
 
-Todos os dados coletados podem ser usados para atualizar o banco de dados ou nas entregas. Por exemplo, você pode enriquecer as possibilidades de personalização do conteúdo da mensagem (incluir o número de contratos na mensagem, especificar o carrinho de compras comum do ano passado, etc.) ou detalhar o direcionamento da população (enviar uma mensagem aos cotitulares do contrato, ter como target os mil melhores assinantes dos serviços online e etc.). Esses dados também podem ser exportados ou arquivados em uma lista.
+Todos os dados coletados podem ser usados para atualizar o banco de dados ou nas entregas. Por exemplo, você pode enriquecer as possibilidades de personalização do conteúdo da mensagem (incluir o número de contratos na mensagem, especificar o carrinho de compras médio do ano passado etc.) ou detalhar a segmentação de população (enviar uma mensagem aos cotitulares do contrato, direcionar os mil melhores assinantes para serviços online e etc.). Esses dados também podem ser exportados ou arquivados em uma lista.
 
 ### Atualizar listas  {#list-updates}
 
 Os dados do banco de dados do Adobe Campaign e as listas existentes podem ser atualizados usando duas atividades dedicadas:
 
-* A atividade de **[!UICONTROL List update]** permite armazenar worktables em um DataList.
+* A atividade de **[!UICONTROL List update]** permite armazenar tabelas de trabalho num DataList.
 
   Você pode selecionar uma lista existente ou criar uma. Nesse caso, o nome e possivelmente a pasta de registro são calculados.
 
@@ -139,4 +139,4 @@ Os dados do banco de dados do Adobe Campaign e as listas existentes podem ser at
 
 ### Gerenciar assinaturas {#subscription-management}
 
-Para saber mais sobre assinatura e cancelamento de assinatura de destinatários em um serviço de informação por meio de um workflow, consulte [Serviços de assinatura](subscription-services.md).
+Para saber mais sobre subscrição e cancelamento de subscrição de destinatários de um serviço de informações via fluxo de trabalho, consulte [Serviços de subscrição](subscription-services.md).

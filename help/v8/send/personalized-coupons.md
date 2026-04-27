@@ -5,10 +5,11 @@ description: Saiba como criar e inserir cupons personalizados
 feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 33462c1e2af34000131ce81e23ac2360c2cc5a3a
+exl-id: d5af1f98-42e8-4909-b2e6-be65c50c9874
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 96%
+source-wordcount: '889'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +19,7 @@ A adição de cupons a suas entregas pode oferecer aos destinatários valor apri
 
 >[!AVAILABILITY]
 >
->O gerenciamento de cupons não está disponível no Campaign v8 no contexto de uma Implantação corporativa (FFDA). Saiba mais em [documentação do Campaign v8](../architecture/enterprise-deployment.md).
+>O gerenciamento de cupons não está disponível no Campaign v8 no contexto de uma Implantação corporativa (FFDA). Saiba mais na [documentação do Campaign v8](../architecture/enterprise-deployment.md).
 
 O gerenciamento de cupons depende de um pacote que deve ser instalado. Para confirmar se há um gerenciamento de cupom, verifique **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
@@ -47,7 +48,7 @@ Antes de seguir as etapas abaixo, verifique se você sabe o tipo de cupom que de
 
    **[!UICONTROL Anonymous coupons]** : Um cupom anônimo é idêntico para todos os destinatários. Confirme se Anônimo está selecionado no menu **Tipo de cupom** e clique em **Salvar** para gerar o cupom.
 
-   **[!UICONTROL Individual coupons]** : Um cupom individual pode ser personalizado ainda mais com códigos de cupom adicionais. Por exemplo, um cupom individual é criado para uma venda em uma loja de equipamentos esportivos. No entanto, a lista de destinatários é longa e não compartilham a mesma paixão por um único esporte. Você pode adicionar nomes de código para o cupom individual com base em um esporte (por exemplo, futebol, futebol americano, beisebol etc.) e enviar cada código para os destinatários aplicáveis.
+   **[!UICONTROL Individual coupons]** : Um cupom individual pode ser personalizado ainda mais com códigos de cupom adicionais. Por exemplo, um cupom individual é criado para uma venda em uma loja de equipamentos esportivos. No entanto, a lista de destinatários é longa e não compartilham a mesma paixão por um único esporte. Você pode adicionar nomes de código para o cupom individual com base em um esporte (por exemplo, futebol americano, beisebol etc.) e enviar cada código para os recipients aplicáveis.
 
    1. Ao escolher Indivíduo, Cupons abre como uma nova guia na parte inferior esquerda. Acesse a guia **[!UICONTROL Coupons]** e clique em **[!UICONTROL Add]**.
    1. Insira um código exclusivo para o cupom individual quando solicitado pela janela pop-up.
@@ -81,7 +82,7 @@ No exemplo abaixo, a entrega é criada a partir da Home page. Para obter instru�
    ![](assets/deliv_coup_04.png)
 
 1. Insira um nome em **[!UICONTROL Label]** e clique em **[!UICONTROL Continue]**.
-1. Clique em **[!UICONTROL To]** para adicionar destinatários. 
+1. Clique em **[!UICONTROL To]** para adicionar destinatários.
 1. Clique em **[!UICONTROL Add]** para escolher os destinatários da entrega Depois de selecionar seus destinatários, clique em **[!UICONTROL Ok]** para retornar para a entrega.
 
    ![](assets/deliv_coup_05.png)

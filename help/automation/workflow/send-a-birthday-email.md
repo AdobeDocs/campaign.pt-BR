@@ -7,7 +7,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '814'
 ht-degree: 94%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 94%
 
 Este caso de uso apresenta como planejar o envio de um e-mail recorrente para uma lista de destinatários no dia de seus aniversários.
 
-Para configurar esse caso de uso, criamos o seguinte workflow para construção do target:
+Para configurar esse caso de uso, criamos o seguinte fluxo de trabalho de segmentação:
 
 ![](assets/birthday-workflow_usecase_1.png)
 
-Esse workflow (execução diária) seleciona todos os destinatários que fazem aniversário na data atual.
+Esse fluxo de trabalho (execução diária) seleciona todos os destinatários que fazem aniversário na data atual.
 
 Para fazer isso, crie uma campanha e adicione um [fluxo de trabalho de campanha](campaign-workflows.md).
 
@@ -28,12 +28,12 @@ Siga as etapas detalhadas abaixo.
 
 ## Identificar destinatários cujo aniversário é {#identifying-recipients-whose-birthday-it-is}
 
-Após configurar a atividade **[!UICONTROL Scheduler]** para que o workflow inicie todos os dias, identifique todos os destinatários cuja data de nascimento for igual à data atual.
+Após configurar a atividade **[!UICONTROL Scheduler]** para que o fluxo de trabalho inicie todos os dias, identifique todos os destinatários cuja data de nascimento for igual à data atual.
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Arraste e solte uma atividade **[!UICONTROL Query]** no workflow e clique duas vezes nela.
-1. Clique no link **Editar query** e selecione **[!UICONTROL Filtering conditions]**.
+1. Arraste e solte uma atividade **[!UICONTROL Query]** no fluxo de trabalho e clique duas vezes nela.
+1. Clique no link **Editar consulta** e selecione **[!UICONTROL Filtering conditions]**.
 
    ![](assets/s_ncs_user_create_exp_exple00.png)
 
@@ -78,7 +78,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Repita este procedimento para recuperar o mês de nascimento correspondendo ao mês atual. Para fazer isso, clique no botão **[!UICONTROL Add]** e repita as etapas de 3 a 10, substituindo **[!UICONTROL Day]** por **[!UICONTROL Month]**.
 
-   A query completa é a seguinte:
+   A consulta completa é a seguinte:
 
    ![](assets/s_ncs_user_create_exp_exple03.png)
 
@@ -94,15 +94,15 @@ As principais etapas de implementação para este caso de uso são:
 * Seleção se é um ano bissexto ou não
 * Seleção de todos os destinatários nascidos em 29 de fevereiro
 
-Para configurar esse caso de uso, criamos o seguinte workflow para construção do target:
+Para configurar esse caso de uso, criamos o seguinte fluxo de trabalho de segmentação:
 
 
 
-Se o ano atual **não for um ano bissexto** e o workflow for executado em 1º de março, precisamos selecionar todos os destinatários que teriam seu aniversário no dia anterior (29 de fevereiro) e adicioná-los à lista de destinatários. Em qualquer outro caso, nenhuma ação adicional é necessária.
+Se o ano atual **não for um ano bissexto** e o fluxo de trabalho for executado em 1º de março, precisamos selecionar todos os destinatários que teriam seu aniversário no dia anterior (29 de fevereiro) e adicioná-los à lista de destinatários. Em qualquer outro caso, nenhuma ação adicional é necessária.
 
 ### Etapa 1: Selecionar os recipients {#step-1--selecting-the-recipients}
 
-Após configurar a atividade **[!UICONTROL Scheduler]** para que o workflow inicie todos os dias, identifique todos os destinatários cujos aniversários são no dia atual.
+Após configurar a atividade **[!UICONTROL Scheduler]** para que o fluxo de trabalho inicie todos os dias, identifique todos os destinatários cujos aniversários são no dia atual.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Selecionar destinatários cujo aniversário corresponde à data atual é apresen
 
 A atividade **[!UICONTROL Test]** permite verificar se é um ano bissexto e se a data atual é 1º de março.
 
-Se o teste for verificado (o ano não é um ano bissexto, não há 29 de fevereiro e a data atual é de fato 1º de março), a transição **[!UICONTROL True]** é habilitada e os destinatários nascidos em 29 de fevereiro serão adicionados à entrega de 1º de março. Caso contrário, a transição **[!UICONTROL False]** será ativada e somente os destinatários nascidos na data atual receberão a entrega.
+Se o teste for verificado (o ano não é um ano bissexto, não há 29 de fevereiro e a data atual é de fato 1º de março), a transição **[!UICONTROL True]** é habilitada e os destinatários nascidos em 29 de fevereiro serão adicionados à entrega de 1º de março. Caso contrário, a transição **[!UICONTROL False]** será habilitada e somente os destinatários nascidos na data atual receberão a entrega.
 
 Copie e cole o código abaixo na seção **[!UICONTROL Initialization script]** da guia **[!UICONTROL Advanced]**.
 
@@ -176,7 +176,7 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 Crie uma atividade **[!UICONTROL Fork]** e vincule uma das transições de saída a uma atividade **[!UICONTROL Query]**.
 
-Nesta query, selecione todos os destinatários cujas datas de nascimento são 29 de fevereiro.
+Nesta consulta, selecione todos os destinatários cuja data de nascimento é 29 de fevereiro.
 
 ![](assets/birthday-workflow_usecase_5.png)
 
@@ -190,7 +190,7 @@ Adicione uma atividade de **Entrega recorrente** com base no modelo de email de 
 
 >[!CAUTION]
 >
->Para que os fluxos de trabalho sejam executados, os fluxos de trabalho técnicos relacionados ao pacote do Campaign devem ser iniciados. Para obter mais informações, consulte a seção [Lista de fluxos de trabalho técnicos](technical-workflows.md).
+>Para que os fluxos de trabalho sejam executados, os fluxos de trabalho técnicos relacionados ao pacote de campanha devem ser iniciados. Para obter mais informações, consulte a seção [Lista de fluxos de trabalho técnicos](technical-workflows.md).
 >
 >Se as etapas de aprovação estiverem habilitadas para a campanha, as remessas serão enviadas apenas quando essas etapas tiverem sido confirmadas. Para obter mais informações, consulte   seção.
 

@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 23%
+source-wordcount: '1353'
+ht-degree: 24%
 
 ---
 
@@ -46,14 +46,14 @@ Um SMS transporta mais informações do que texto. Aqui está uma lista do que v
 
 A primeira regra é **sempre contatar o provedor SMPP em caso de problemas de codificação**. Somente eles têm um conhecimento preciso da codificação à qual dão suporte e das regras especiais que podem ser aplicáveis devido a limitações na plataforma técnica. Faça com que eles verifiquem o que você envia a eles e o que eles enviam de volta, esse é o único caminho para uma interconexão bem-sucedida e estável.
 
-As mensagens SMS usam uma codificação especial de 7 bits, geralmente chamada de codificação GSM7.  A Wikipédia tem [um bom artigo sobre ela (GSM 03.38 em inglês)](https://en.wikipedia.org/wiki/GSM_03.38).
+As mensagens SMS usam uma codificação especial de sete bits, geralmente chamada de codificação GSM7.  A Wikipédia tem [um bom artigo sobre ela (GSM 03.38 em inglês)](https://en.wikipedia.org/wiki/GSM_03.38).
 
 No protocolo SMPP, o texto GSM7 será expandido para oito bits por caractere para facilitar a solução de problemas. O SMSC o compactará em sete bits por caractere antes que seja enviado ao dispositivo móvel. Isso significa que o campo short_message do SMS pode ter até 160 bytes de comprimento no quadro SMPP, enquanto está limitado a 140 bytes quando enviado na rede móvel (o bit mais significativo é simplesmente descartado).
 
 Em caso de problemas de codificação, veja alguns itens importantes a serem verificados:
 * Primeiro, saiba quais caracteres pertencem a qual codificação. O GSM7 é famoso por seu apoio parcial a marcas diacríticas (acentos). Especialmente em francês, em que &quot;é&quot; e &quot;è&quot; fazem parte do GSM7, mas &quot;ê&quot;, &quot;â&quot; ou &quot;ï&quot; não fazem parte. O mesmo se aplica ao espanhol.
 * O C com cedilha (ç) está presente apenas em maiúsculas no alfabeto GSM7, mas alguns telefones o renderizam em minúsculas ou em letras maiúsculas &quot;inteligentes&quot;: a recomendação geral é evitá-lo completamente e remover o cedilha (ainda é bem legível em francês) ou alternar para UCS-2.
-* **Não use ASCII em SMS!** a menos que solicitado explicitamente pelo provedor SMPP: essa codificação desperdiça espaço porque tem caracteres de 8 bits e menos cobertura do que o GSM7. Essa codificação pode ser necessária para redes CDMA (usadas na América do Norte).
+* **Não usar ASCII em SMS!** a menos que seja explicitamente solicitado pelo provedor SMPP: essa codificação desperdiça espaço porque tem caracteres de 8 bits e menos cobertura do que o GSM7. Essa codificação pode ser necessária para redes CDMA (usadas na América do Norte).
 * O Latin-1 nem sempre é compatível. Verifique a compatibilidade com seu provedor SMPP antes de tentar usar o Latin-1.
 * As tabelas de correspondência de idiomas nacionais não são compatíveis com o conector do Adobe Campaign. Em vez disso, você deve usar UCS-2 ou outro data_coding.
 * UCS-2 e UTF-16 são frequentemente misturados por telefones. Esse é um problema para as pessoas que enviam emojis e outros caracteres raramente usados que não estão presentes no UCS-2.

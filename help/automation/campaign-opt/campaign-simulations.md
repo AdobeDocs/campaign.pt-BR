@@ -6,7 +6,7 @@ feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1226'
 ht-degree: 88%
 
 ---
@@ -39,7 +39,7 @@ Para criar uma simulação, aplique as seguintes etapas:
 
    ![](assets/simu_campaign_opti_01.png)
 
-1. Insira o template e o nome da simulação. Clique em **[!UICONTROL Save]** para criar a simulação.
+1. Insira o modelo e o nome da simulação. Clique em **[!UICONTROL Save]** para criar a simulação.
 
    ![](assets/simu_campaign_opti_02.png)
 
@@ -79,7 +79,7 @@ Para criar uma simulação, aplique as seguintes etapas:
    >
    >Somente as entregas cujo objetivo tenha sido calculado são levadas em conta no cálculo das simulações (status: **Target ready** ou **Ready to deliver**).
 
-1. Na guia **[!UICONTROL Calculations]**, selecione uma dimensão de análise como, por exemplo, o schema de destinatários.
+1. Na guia **[!UICONTROL Calculations]**, selecione uma dimensão de análise como, por exemplo, o esquema de destinatários.
 
    ![](assets/simu_campaign_opti_dimension.png)
 
@@ -196,7 +196,7 @@ A guia **[!UICONTROL Calculations]** permite definir eixos de relatórios no tar
 
 >[!NOTE]
 >
->Recomendamos definir eixos de cálculo nos templates de simulação, em vez de individualmente para cada simulação.\
+>Recomendamos definir eixos de cálculo nos modelos de simulação, em vez de individualmente para cada simulação.\
 >Os modelos de simulação são salvos na pasta **[!UICONTROL Resources > Templates > Simulation templates]** do explorador do Campaign.
 
 **Exemplo:**

@@ -32,8 +32,8 @@ A campanha permanece acessível na visão geral do Campaign, localizada no link 
 
 ## Configurações disponíveis {#available-settings}
 
-As entidades locais podem adaptar o conteúdo da campanha de acordo com suas necessidades, usando todos os elementos do painel de campanha. Sua principal tarefa será adaptar o workflow de definição de alvos e possivelmente personalizar o conteúdo da entrega.
+As entidades locais podem adaptar o conteúdo da campanha de acordo com suas necessidades, usando todos os elementos do painel de campanha. Sua principal tarefa será adaptar o fluxo de trabalho de segmentação e possivelmente personalizar o conteúdo da entrega.
 
 ## Execução da campanha {#campaign-execution}
 
-Cada entidade local pode executar o workflow da campanha e realizar as aprovações necessárias com base no processo definido no template da campanha.
+Cada entidade local pode executar o fluxo de trabalho da campanha e executar as aprovações necessárias com base no processo definido no modelo da campanha.

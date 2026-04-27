@@ -6,8 +6,8 @@ feature: Workflows, Analytics Integration
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 81%
+source-wordcount: '177'
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 81%
 
 
 
-Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Web Analytics connectors** por padrão.
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo dos **conectores Web Analytics** por padrão.
 
 <table> 
  <tbody> 
@@ -33,7 +33,7 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Web Anal
   <tr> 
    <td> <span class="uicontrol">Identificação de contatos convertidos</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por este fluxo de trabalho podem ser acessados no <span class="uicontrol">Relatório de eficiência de remarketing</span> (Consulte esta seção ). <br /> </td> 
+   <td> Este fluxo de trabalho indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por este fluxo de trabalho podem ser acessados no <span class="uicontrol">Relatório de eficiência de remarketing</span> (Consulte esta seção ). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Limpeza de eventos</span> <br /> </td> 
@@ -43,7 +43,7 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Web Anal
   <tr> 
    <td> <span class="uicontrol">Recuperação de eventos da Web</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsGetWebEvents</span> <br /> </td> 
-   <td> A cada hora, este workflow baixa segmentos do comportamento do usuário na Internet em um determinado site, os coloca no banco de dados do Adobe Campaign e inicia o workflow de re-marketing. <br /> </td> 
+   <td> A cada hora, este fluxo de trabalho baixa segmentos do comportamento do usuário na Internet em um determinado site, os coloca no banco de dados do Adobe Campaign e inicia o fluxo de trabalho de re-marketing. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

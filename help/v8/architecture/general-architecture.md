@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1163'
 ht-degree: 7%
 
 ---
@@ -81,7 +81,7 @@ Outros processos mais técnicos também estão disponíveis:
 
 ## Contêineres de banco de dados {#db-containers}
 
-Em sua [implantação corporativa (FFDA)](enterprise-deployment.md), o banco de dados da Adobe Campaign Cloud depende de [!DNL Snowflake], que contém os dados funcionais (perfis, assinaturas, conteúdo, etc.), os dados técnicos (trabalhos de entrega e logs, logs de rastreamento etc.) e os dados de trabalho (compras, clientes potenciais) da solução, e todos os componentes da Adobe Campaign se comunicam com o banco de dados para executar suas tarefas específicas.
+Em sua [implantação corporativa (FFDA)](enterprise-deployment.md), o banco de dados da Adobe Campaign Cloud depende de [!DNL Snowflake], que contém os dados funcionais (perfis, assinaturas, conteúdo, etc.), os dados técnicos (trabalhos e logs de entrega, logs de rastreamento etc.) e os dados de trabalho (compras, clientes potenciais) da solução, e todos os componentes do Adobe Campaign se comunicam com o banco de dados para executar suas tarefas específicas.
 
 Você pode implantar o Adobe Campaign usando o banco de dados e os esquemas predefinidos e, se necessário, esse ambiente predefinido pode ser estendido. Todos os dados no data mart são acessados pela Adobe Campaign por meio de chamadas SQL. O Adobe Campaign também fornece um complemento completo de ferramentas de ETL (Extract Transform and Load, Transformação e Carregamento de Extração) para executar a importação e exportação de dados para dentro e para fora do sistema.
 
@@ -98,4 +98,4 @@ Você pode implantar o Adobe Campaign usando o banco de dados e os esquemas pred
 
 A permissão de armazenamento total é dividida entre o banco de dados principal e o banco de dados secundário (opcional) do Snowflake. O local onde os dados são armazenados deve ser determinado na implementação ou no momento da atualização, dependendo dos casos de uso específicos do cliente.
 
-Saiba como monitorar o uso do banco de dados na [documentação do Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=pt-BR){target="_blank"}.
+Saiba como monitorar o uso do banco de dados na [documentação do Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.

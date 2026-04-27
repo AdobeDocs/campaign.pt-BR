@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
 source-git-commit: f616f92e31abd51e3544f848ce272e80389aef73
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 96%
+source-wordcount: '1134'
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Complemento:
 
 ## Práticas recomendadas {#best-practices}
 
-Durante a desduplicação, os fluxos de entrada são processados separadamente. Se por exemplo, o destinatário A for encontrado no resultado da query 1, bem como no resultado da query 2, eles não serão desduplicados.
+Durante a desduplicação, os fluxos de entrada são processados separadamente. Se por exemplo, o destinatário A for encontrado no resultado da consulta 1, bem como no resultado da consulta 2, eles não serão desduplicados.
 
 Esse problema precisa ser resolvido da seguinte maneira:
 
@@ -122,12 +122,12 @@ Os duplicados identificados também serão integrados em uma lista de duplicados
 
 1. Adicione e vincule as várias atividades necessárias para que o fluxo de trabalho funcione conforme mostrado acima.
 
-   A atividade União é usada aqui para &quot;unificar&quot; as três consultas em uma única transição. Assim, a desduplicação não funcionará para cada query individualmente, mas para toda a query. Para obter mais informações sobre este assunto, consulte [Melhores práticas](#best-practices).
+   A atividade União é usada aqui para &quot;unificar&quot; as três consultas em uma única transição. Assim, a desduplicação não funcionará para cada consulta individualmente, mas para toda a consulta. Para obter mais informações sobre este assunto, consulte [Melhores práticas](#best-practices).
 
 1. Abra a atividade de desduplicação e clique no link **[!UICONTROL Edit configuration...]** para definir o modo de desduplicação.
 1. Na nova janela, selecione **[!UICONTROL Database schema]**.
 1. Selecione **Recipients** como dimensões de filtragem e direcionamento.
-1. Selecione o campo de ID para os duplicados de **[!UICONTROL Email]** a fim de enviar a entrega somente uma vez para cada endereço de email, depois clique em **[!UICONTROL Next]**. 
+1. Selecione o campo de ID para os duplicados de **[!UICONTROL Email]** a fim de enviar a entrega somente uma vez para cada endereço de email, depois clique em **[!UICONTROL Next]**.
 
    Se desejar basear as IDs duplicadas em um campo específico, selecione **[!UICONTROL Other]** para acessar a lista de campos disponíveis.
 
@@ -173,6 +173,6 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 * esquema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da desduplicação. **[!UICONTROL tableName]** é o nome da tabela que salva os identificadores de destino, **[!UICONTROL schema]** é o esquema da população (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da desduplicação. **[!UICONTROL tableName]** é o nome da tabela que salva os identificadores de destino, **[!UICONTROL schema]**&#x200B;é o schema da população (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.

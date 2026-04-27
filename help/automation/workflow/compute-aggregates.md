@@ -9,7 +9,7 @@ exl-id: 00e564b5-3c8e-45d4-b240-c872a8b8ccb6
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Neste exemplo, devemos contar o número de destinatários que vivem em Londres, 
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de destinatário (**nms:recipient**)
+  A tabela de destinatários (**nms:recipient**)
 
 * Quais campos devem ser selecionados na coluna de saída?
 
@@ -42,7 +42,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    >[!NOTE]
    >
-   >Os valores diferenciam maiúsculas de minúsculas. Se o valor &quot;Londres&quot; é inserido na condição sem uma letra maiúscula e a lista de destinatários contiver a palavra &quot;Londres&quot; com uma letra maiúscula, então a query falha.
+   >Os valores diferenciam maiúsculas de minúsculas. Se o valor &quot;Londres&quot; é inserido na condição sem uma letra maiúscula e a lista de destinatários contiver a palavra &quot;Londres&quot; com uma letra maiúscula, então a consulta falha.
 
 1. Na janela **[!UICONTROL Data formatting]**, clique em **[!UICONTROL Next]**: nenhuma formatação é necessária para este exemplo.
 1. Na janela de pré-visualização, clique em **[!UICONTROL Launch data preview]**.

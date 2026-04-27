@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
 source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 35%
+source-wordcount: '1425'
+ht-degree: 36%
 
 ---
 
@@ -31,7 +31,7 @@ Para cada sistema, essas etapas precisam ser executadas por um administrador.
 
 ## Configurar o Microsoft Dynamics 365 {#config-crm-microsoft}
 
-Para conectar o Microsoft Dynamics 365 para trabalhar com o Adobe Campaign via **API da Web**, faça logon no [Diretório do Microsoft Azure](https://portal.azure.com) usando uma credencial de **Administrador global** e siga as etapas abaixo:
+Para conectar o Microsoft Dynamics 365 para trabalhar com o Adobe Campaign via **API da Web**, faça logon no [Microsoft Azure Diretory](https://portal.azure.com) usando uma credencial de **Administrador global** e siga as etapas abaixo:
 
 1. Obtenha sua ID de Aplicativo (cliente) do Dynamics 365. [Saiba mais](#get-client-id-microsoft)
 1. Gerar o identificador de chave de certificado e a ID de chave do Microsoft Dynamics. [Saiba mais](#config-certificate-key-id)
@@ -47,7 +47,7 @@ Para obter a ID do aplicativo (cliente), é necessário registrar um aplicativo 
 1. Navegue até **Azure Ative Diretory > Registros de Aplicativo** e selecione **Novo Registro**.
 1. Insira um nome exclusivo que possa ajudar a identificar uma instância, como **adobecampaign`<instance identifier>`**.
 
-Depois de salvar, o Microsoft Azure Diretory atribui uma **ID do Aplicativo (cliente)** exclusiva ao seu aplicativo. Essa ID será necessária posteriormente na configuração do Dynamics 365 no Adobe Campaign.
+Depois de salvar, o Microsoft Azure Diretory atribui uma **ID do aplicativo (cliente)** exclusiva ao seu aplicativo. Essa ID será necessária posteriormente na configuração do Dynamics 365 no Adobe Campaign.
 
 Saiba mais na [documentação do Microsoft Dynamics 365](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory){target="_blank"}.
 
@@ -121,7 +121,7 @@ O usuário do aplicativo é o usuário que o aplicativo registrado acima usará.
 
 1. No [Microsoft Azure](https://portal.azure.com), clique em **Aplicativo admin**.
 1. Vá para **Usuários > Usuários ativos** e clique no usuário recém-criado.
-1. Clique em **Editar licenças de produto** e selecione o **Plano de Envolvimento do Cliente do Dynamics 365**.
+1. Clique em **Editar licenças de produto** e selecione o **Plano de Engajamento do Cliente do Dynamics 365**.
 1. Clique em **Fechar**.
 
 **Etapa 3**: criar um usuário do aplicativo no Dynamics CRM
@@ -177,7 +177,7 @@ Agora você pode configurar tabelas para sincronizar.
 
 >[!NOTE]
 >
->Certifique-se de adicionar ao incluo na lista de permissões dois URLs: o URL do servidor e `login.microsoftonline.com`. Para fazer isso, entre em contato com o representante da Adobe.
+>Certifique-se de adicionar ao incluo na lista de permissões duas URLs: a URL do servidor e `login.microsoftonline.com`. Para fazer isso, entre em contato com o representante da Adobe.
 
 ## Sincronize as enumerações{#sfdc-enum-sync}
 

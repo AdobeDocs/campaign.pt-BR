@@ -5,8 +5,8 @@ user-guide-description: Guia de automação de campanha
 feature: Overview
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 84%
+source-wordcount: '462'
+ht-degree: 83%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 84%
          + [Outline de entrega](workflow/delivery-outline.md)
          + [Editar esquema](workflow/edit-schema.md)
          + [Enriquecimento](workflow/enrichment.md)
-         + [Regras de &#x200B;](workflow/exclusion.md)
+         + [Regras de](workflow/exclusion.md)
          + [Consulta incremental](workflow/incremental-query.md)
          + [Interseção](workflow/intersection.md)
          + [Atualização de lista](workflow/list-update.md)

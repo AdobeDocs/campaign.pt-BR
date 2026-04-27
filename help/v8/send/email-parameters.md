@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 44%
+source-wordcount: '940'
+ht-degree: 41%
 
 ---
 
@@ -79,7 +79,7 @@ Para obter mais informações sobre gerenciamento de rejeição de emails, consu
 
 ## Ativar lista de um clique - cancelar inscrição {#one-click-list-unsubscribe}
 
-O URL de um clique para cancelar a inscrição na lista é um link ou botão exibido ao lado das informações do remetente do email, que permite que os destinatários recusem instantaneamente suas listas de endereçamento com um único clique. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=pt-BR#list-unsubscribe){target="_blank"}-->
+O URL de um clique para cancelar a inscrição na lista é um link ou botão exibido ao lado das informações do remetente do email, que permite que os destinatários recusem instantaneamente suas listas de endereçamento com um único clique. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Ele é exibido como um link **Cancelar inscrição** nas interfaces de email dos ISPs. Por exemplo:
 
@@ -119,7 +119,7 @@ Dependendo do cliente de email e do método que estão usando para executar a re
 
 >[!NOTE]
 >
->Você também pode definir manualmente os métodos [List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} e [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} com um clique. As etapas detalhadas estão descritas no [Manual de práticas recomendadas de capacidade de delivery](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=pt-BR#list-unsubscribe){target="_blank"} do Experience Cloud.
+>Você também pode definir manualmente os métodos [List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} e [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} com um clique. As etapas detalhadas estão descritas no [Manual de práticas recomendadas de capacidade de delivery](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"} do Experience Cloud.
 
 
 ## Adicionar cabeçalhos SMTP {#adding-smtp-headers}

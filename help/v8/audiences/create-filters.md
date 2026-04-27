@@ -8,16 +8,16 @@ exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
 source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 36%
+source-wordcount: '1943'
+ht-degree: 40%
 
 ---
 
 # Trabalhar com filtros{#create-filters}
 
-A filtragem de dados é o processo de restringir um conjunto de dados somente aos registros que correspondem a critérios específicos. Esse subconjunto pode ser usado para ações direcionadas (como atualizações ou criação de público-alvo) ou para análise.
+A filtragem de dados é o processo de restringir um conjunto de dados somente aos registros que correspondam a critérios específicos. Esse subconjunto pode ser usado para ações direcionadas (como atualizações ou criação de públicos-alvo) ou para análise.
 
-Ao navegar pela Campanha, os dados são exibidos em listas. Aplique filtros incorporados para acessar rapidamente um subconjunto definido, como endereços em quarentena, destinatários não direcionados ou registros em um intervalo de idade ou data de criação específico.
+Ao navegar pelo Campaign, os dados são exibidos em listas. Aplique filtros integrados para acessar rapidamente um subconjunto definido, como endereços em quarentena, destinatários não direcionados ou registros dentro de uma faixa etária ou com uma data de criação específica.
 
 Além disso, você pode criar filtros personalizados, salvá-los para uso futuro e compartilhá-los com outros usuários do Campaign.
 
@@ -56,7 +56,7 @@ Somente os perfis na pasta são exibidos:
 
 ![](assets/filter_web_folder_display.png)
 
-Utilize o xis à direita do campo de seleção da pasta para retornar ao modo de visualização padrão.
+Utilize o xis à direita do campo de seleção da pasta para retornar ao modo de exibição padrão.
 
 >[!TAB Filtrar por status]
 
@@ -113,7 +113,7 @@ Use a última guia para visualizar os dados filtrados.
  <tbody> 
   <tr> 
    <td> <strong>Rótulo</strong><br /> </td> 
-   <td> <strong>Query</strong><br /> </td> 
+   <td> <strong>Consulta</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Aberto<br /> </td> 
@@ -312,7 +312,7 @@ Defina as condições de filtragem. No exemplo abaixo, você filtrará por recip
 
    ![](assets/select-operator.png)
 
-1. Selecione um valor esperado na coluna **[!UICONTROL Value]**. Você pode combinar vários filtros para refinar seu query. Para adicionar uma condição de filtro, clique em **[!UICONTROL Add]**.
+1. Selecione um valor esperado na coluna **[!UICONTROL Value]**. Você pode combinar vários filtros para refinar a consulta. Para adicionar uma condição de filtro, clique em **[!UICONTROL Add]**.
 
    ![](assets/add-an-exp.png)
 
@@ -385,8 +385,8 @@ Para executar recursos avançados de filtragem, use funções para definir o con
 Saiba como criar consultas avançadas nestes exemplos completos:
 
 * Saiba como segmentar em atributos de destinatários simples [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=pt-BR){target="_blank"}.
-* Saiba como filtrar destinatários não contatados nos últimos 7 dias nesta [página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=pt-BR){target="_blank"}.
-* Saiba como recuperar a lista de operadores que podem ser filtrados por Contas ativas em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=pt-BR){target="_blank"}.
+* Saiba como filtrar destinatários não contatados nos últimos 7 dias nesta [página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}.
+* Saiba como recuperar a lista de operadores que podem ser filtrados por Contas ativas em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
 * Saiba como criar um público-alvo de email de aniversário na [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=pt-BR){target="_blank"}.
 
 

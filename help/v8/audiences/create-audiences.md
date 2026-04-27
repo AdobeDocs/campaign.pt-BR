@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
 source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 33%
+source-wordcount: '796'
+ht-degree: 36%
 
 ---
 
@@ -18,15 +18,15 @@ Use listas do Campaign para criar e organizar seus públicos.
 
 Uma lista é um conjunto estático de contatos que pode ser direcionado em ações de entrega ou atualizado durante uma importação ou outra ação de fluxo de trabalho. Por exemplo, uma população extraída do banco de dados por meio de uma consulta pode ser armazenada como uma lista.
 
-As listas são criadas e gerenciadas pelo link **[!UICONTROL Lists]** na guia **[!UICONTROL Profiles and targets]**. Essas listas são baseadas na tabela de perfil padrão do Adobe Campaign (nms:recipient). [Saiba mais](../dev/datamodel.md#ootb-profiles.md)
+As listas são criadas e gerenciadas pelo link **[!UICONTROL Lists]** na guia **[!UICONTROL Profiles and targets]**. Estas listas são baseadas na tabela de perfil padrão do Adobe Campaign (nms:recipient). [Saiba mais](../dev/datamodel.md#ootb-profiles.md)
 
 ![](assets/list-dashboard.png)
 
-Você pode criar uma lista usando a atividade **Atualizar lista** em um fluxo de trabalho. Esta atividade armazena a população resultante em uma lista. Use-a para criar uma nova lista ou atualizar uma lista existente. Para criar listas contendo outros tipos de dados além da tabela de perfil integrada, você deve executar um workflow. Por exemplo, consulte a tabela visitante e atualize a lista para criar uma lista de visitantes. [Saiba mais](#create-a-list-wf).
+Você pode criar uma lista usando a atividade **Atualizar lista** em um fluxo de trabalho. Esta atividade armazena a população resultante em uma lista. Use-a para criar uma nova lista ou atualizar uma lista existente. Para criar listas contendo outros tipos de dados além da tabela de perfil integrada, você deve executar um workflow. Por exemplo, usando uma consulta na tabela de visitantes e atualizando a lista, é possível criar uma lista de visitantes. [Saiba mais](#create-a-list-wf).
 
 Assista a este vídeo para saber mais sobre o Gerenciamento de listas no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426464?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
 ## Criar uma lista de contatos {#create-a-list-of-contacts}
@@ -111,7 +111,7 @@ No exemplo abaixo, você cria uma lista de todos os recipients entre 25 e 40.
    ![](assets/list-update-activity.png)
 
 1. Insira um rótulo para a atividade.
-1. Selecione a opção **[!UICONTROL Create the list if necessary (Computed name)]** para mostrar que a lista é criada quando o primeiro workflow é executado e, em seguida, atualizada com as execuções seguintes.
+1. Selecione a opção **[!UICONTROL Create the list if necessary (Computed name)]** para mostrar que a lista é criada quando o primeiro fluxo de trabalho é executado e, em seguida, atualizada com as execuções seguintes.
 1. Selecione uma pasta e insira um rótulo para a lista.
 1. Selecione o **[!UICONTROL Database of the targeting dimension]** para armazenar a tabela.
 1. Deixe a opção **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** marcada para excluir os recipients que não correspondem aos critérios de direcionamento e para inserir os novos na lista.

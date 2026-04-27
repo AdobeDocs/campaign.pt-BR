@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: f5580401-3305-4915-88a2-3400a32aa7aa
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '159'
 ht-degree: 100%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 
 
-As imagens usadas nos diagramas dos vários workflows podem ser alteradas. No entanto, elas devem estar em conformidade com determinadas restrições. Estes são os estágios de implementação:
+As imagens usadas nos diagramas dos vários fluxos de trabalho podem ser alteradas. No entanto, elas devem estar em conformidade com determinadas restrições. Estes são os estágios de implementação:
 
-* Para alterar a imagem de fundo, selecione o workflow de direcionamento desejado e clique na guia **[!UICONTROL Properties]**.
+* Para alterar a imagem de fundo, selecione o fluxo de trabalho de segmentação desejado e clique na guia **[!UICONTROL Properties]**.
 
   ![](assets/s_user_segmentation_properties_tab.png)
 

@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: e2216dfd-1ef8-4747-b716-576fd6498fa6
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '154'
 ht-degree: 94%
 
 ---
@@ -32,4 +32,4 @@ Para fazer isso:
 
      ![](assets/int_offer_per_cell1.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas em vários canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).

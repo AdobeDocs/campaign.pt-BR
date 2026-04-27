@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1699'
-ht-degree: 38%
+source-wordcount: '1734'
+ht-degree: 37%
 
 ---
 
@@ -107,7 +107,7 @@ Esses perfis de produto correspondem com os **grupos de operadores** do Campaign
 
    >[!IMPORTANT]
    >
-   >A função **[!UICONTROL Administrator]** concede acesso ao Painel de Controle do Campaign. Qualquer Perfil de produto no Adobe Admin Console que contenha a palavra &quot;administrador&quot; em seu nome (como &quot;Administradores&quot;, &quot;administrador&quot;, &quot;administradores&quot;, &quot;administrador de aprovação&quot; etc.) concederá acesso ao Painel de controle do Campaign. Saiba mais sobre [como gerenciar o acesso ao Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR){target="_blank"}.
+   >A função **[!UICONTROL Administrator]** concede acesso ao Painel de Controle do Campaign. Qualquer Perfil de produto na Adobe Admin Console que contenha a palavra &quot;administrador&quot; em seu nome (como &quot;Administradores&quot;, &quot;administrador&quot;, &quot;administradores&quot;, &quot;administrador de aprovação&quot; etc.) concederá acesso ao Painel de controle do Campaign. Saiba mais sobre [como gerenciar o acesso ao Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 1. **[!UICONTROL Delivery operators]** (entrega)
 
@@ -120,7 +120,7 @@ Esses perfis de produto correspondem com os **grupos de operadores** do Campaign
 
 1. **[!UICONTROL Campaign managers]** (operação)
 
-   Os operadores neste grupo podem gerenciar campanhas de marketing: isso permite acessar os objetos vinculados às campanhas (planos, programas, fluxos de trabalho, orçamentos etc.) dentro da estrutura do **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
+   Os operadores nesse grupo podem gerenciar campanhas de marketing: permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) dentro da estrutura de **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
 
    Esse grupo contém os seguintes direitos nomeados:
 
@@ -200,7 +200,7 @@ A associação de grupos de operadores pode conceder ou restringir direitos de a
 
 Os direitos nomeados padrão no Adobe Campaign são:
 
-* **[!UICONTROL ADMINISTRATION]**: operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como workflow, delivery, scripts, etc. **Observação:** perfis de produto no Adobe Admin Console que contêm a palavra &quot;administrador&quot; concedem acesso ao Painel de Controle do Campaign.
+* **[!UICONTROL ADMINISTRATION]**: operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, entrega, scripts, etc. **Observação:** Perfis de produto na Adobe Admin Console que contêm a palavra &quot;administrador&quot; concedem acesso ao Painel de Controle do Campaign.
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em fluxos de trabalho e entregas para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas. **Observação:** perfis de produto que contêm a palavra &quot;administrador&quot; (como &quot;administrador de aprovação&quot;) concedem acesso ao Painel de Controle do Campaign.
 

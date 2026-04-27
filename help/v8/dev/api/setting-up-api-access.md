@@ -9,8 +9,8 @@ level: Experienced
 exl-id: efbbd0cd-9c56-4ad0-8bcb-efba4b63c28b
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 6%
+source-wordcount: '448'
+ht-degree: 8%
 
 ---
 
@@ -43,7 +43,7 @@ Para estabelecer uma sessão segura de API do Adobe I/O de serviço para serviç
 -H 'X-Api-Key: <API_KEY>'
 ```
 
-* **&lt;ORGANIZAÇÃO>**: esta é a sua ID de ORGANIZAÇÃO pessoal, uma ID de ORGANIZAÇÃO é fornecida pela Adobe para cada uma das suas instâncias:
+* **&lt;ORGANIZATION>**: esta é a sua ID de ORGANIZAÇÃO pessoal, uma ID de ORGANIZAÇÃO é fornecida pela Adobe para cada uma das suas instâncias :
 
    * &lt;ORGANIZATION> : sua instância de produção,
    * &lt;ORGANIZATION-mkt-stage>: sua instância de estágio.

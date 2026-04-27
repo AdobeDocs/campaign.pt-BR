@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: File collector
-description: Saiba mais sobre a atividade de workflow de file collector
+description: Saiba mais sobre a atividade de fluxo de trabalho Coletor de arquivos
 feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
@@ -21,7 +21,7 @@ O **File collector** monitora a chegada de um ou mais arquivos em um diretório 
 
 Por padrão, o coletor de arquivos é uma tarefa persistente que testa a presença de arquivos nos horários especificados pelo agendamento.
 
-Os arquivos devem estar no servidor no qual o módulo wfserver desse workflow é executado. Se vários módulos wfserver forem implantados em uma única instância, a afinidade das atividades usando esses arquivos ou a afinidade geral do workflow deverá ser especificada.
+Os arquivos devem estar no servidor no qual o módulo wfserver desse fluxo de trabalho é executado. Se vários módulos wfserver forem implantados em uma única instância, a afinidade das atividades usando esses arquivos ou a afinidade geral do fluxo de trabalho deverá ser especificada.
 
 ## Propriedades {#properties}
 
@@ -61,7 +61,7 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
    * **[!UICONTROL Processing errors]**
 
-     Essa opção faz surgir uma transição especial, para ser ativada se um erro for gerado. Nesse caso, o workflow não muda para o status de erro e continua a execução
+     Essa opção faz surgir uma transição especial, para ser ativada se um erro for gerado. Nesse caso, o fluxo de trabalho não muda para o status de erro e continua a execução
 
      Os erros considerados são erros do sistema de arquivos (o arquivo não pôde ser movido, o diretório não pôde ser acessado etc.).
 

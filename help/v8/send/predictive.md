@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 648fefcc-6476-4af8-9f0d-c9a87a7a3019
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 64%
+source-wordcount: '796'
+ht-degree: 58%
 
 ---
 
@@ -43,7 +43,7 @@ No modelo de Otimização preditiva de tempo de envio, há dois submodelos:
 
 Detalhes da saída:
 
-* Calcule o melhor horário do dia para enviar um email nos 7 dias da semana com intervalos de 1 hora (por exemplo: 9h, 10h, 11h)
+* Calcule o melhor horário do dia para enviar um email nos 7 dias da semana com intervalos de 1 hora (por exemplo: 9h, 10h:00, 11h:00):00
 * O modelo indicará o melhor dia da semana e o melhor horário do dia
 * Cada horário ideal é calculado duas vezes: uma vez para maximizar a taxa de abertura e outra para maximizar a taxa de cliques
 * São administrados 16 campos (14 para os dias da semana e 2 para a semana inteira):
@@ -68,14 +68,14 @@ A Otimização preditiva do tempo de envio é armazenada no nível do perfil:
 >
 
 
-## Pontuação de envolvimento preditivo {#predictive-scoring}
+## Pontuação preditiva de engajamento {#predictive-scoring}
 
 A Pontuação preditiva de engajamento prevê a probabilidade de engajamento de um recipient em uma mensagem, bem como a probabilidade de opt out (cancelamento de inscrição) nos próximos 7 dias após o próximo envio de email. As probabilidades são divididas em grupos de acordo com o nível previsto de engajamento com seu conteúdo: alto, médio ou baixo. Esses modelos também fornecem a classificação do percentil de risco de cancelamento de subscrição para que os clientes entendam onde está a classificação de um determinado cliente em relação a outros.
 
 A pontuação preditiva de engajamento permite:
 
-* **Selecionar um público**: ao usar a atividade de query, você pode selecionar o público que vai se engajar com uma mensagem específica
-* **Excluir um público**: usando a atividade de query, você pode remover o público para cancelar a inscrição
+* **Selecionar um público-alvo**: ao usar a atividade de consulta, você pode selecionar o público-alvo que vai se engajar com uma mensagem específica
+* **Excluir um público-alvo**: usando a atividade de consulta, você pode remover o público-alvo para cancelar a inscrição
 * **Personalizar**: personalizar mensagem de acordo com o nível de engajamento (usuários altamente engajados receberão uma mensagem diferente daqueles não engajados)
 
 Este modelo usa várias pontuações para indicar:
@@ -83,7 +83,7 @@ Este modelo usa várias pontuações para indicar:
 * **Pontuação de engajamento ao abrir/Pontuação de engajamento ao clicar**: esse valor corresponde à probabilidade de um assinante se engajar com uma mensagem específica (abrir ou clicar). Os valores variam de 0,0 a 1,0.
 * **Probabilidade de cancelamento de inscrição**: esse valor corresponde à probabilidade do destinatário cancelar a inscrição do canal de email considerando um email aberto. Os valores variam de 0,0 a 1,0.
 * **Nível de retenção**: esse valor classifica os usuários em três níveis: baixo, médio e alto. O alto tem mais probabilidade de adesão à marca, enquanto o baixo provavelmente cancelará a assinatura.
-* **Classificação de percentual de retenção**: Classificação do perfil em termos de probabilidade de cancelamento de assinatura. Os valores variam de 0,0 a 1,0. Por exemplo, se a classificação de porcentagem de retenção for de 0,953, esse destinatário terá maior probabilidade de permanecer com a marca e menos probabilidade de cancelar a assinatura do que 95,3% de todos os destinatário.
+* **Classificação de percentil de retenção**: Classificação do perfil em termos de probabilidade de cancelamento de assinatura. Os valores variam de 0,0 a 1,0. Por exemplo, se a classificação de porcentagem de retenção for de 0,953, esse recipient terá mais probabilidade de permanecer com a marca e menos probabilidade de cancelar a inscrição do que 95,3% de todos os recipients.
 
 >[!NOTE]
 >

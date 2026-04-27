@@ -8,14 +8,14 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 20%
+source-wordcount: '588'
+ht-degree: 26%
 
 ---
 
 # Criar e enviar emails
 
-Com o Adobe Campaign, crie deliveries de email para enviar emails personalizados para a população do target. [Saiba mais](../send/send.md)
+Com o Adobe Campaign, é possível criar entregas de email para enviar emails personalizados para a população do público-alvo. [Saiba mais](../send/send.md)
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
      Saiba mais sobre como gerenciar a mirror page em [esta seção](mirror-page.md#link-to-mirror-page).
 
-1. Você pode definir parâmetros adicionais para o email, como enviar uma cópia das mensagens para um endereço BBC, alterar o formato da mensagem, definir uma codificação específica etc. Saiba mais [nesta seção](email-parameters.md).
+1. Você pode definir parâmetros adicionais para o email, como enviar uma cópia das mensagens para um endereço BBC, alterar o formato da mensagem, definir uma codificação específica etc. Saiba mais em [esta seção](email-parameters.md).
 
 1. Quando o conteúdo estiver pronto, clique em **Salvar**: ele será exibido na lista de entregas, na guia **[!UICONTROL Campaigns > Deliveries]**.
 

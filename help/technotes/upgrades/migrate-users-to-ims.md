@@ -4,8 +4,8 @@ description: Saiba como migrar operadores do Campaign para o Adobe Identity Mana
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
 source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 1%
+source-wordcount: '1469'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ A migração para o [Adobe Identity Management System (IMS)](https://helpx.adobe
 >
 >Depois de migrar os usuários para o IMS, esteja ciente de que qualquer Perfil de produto no Adobe Admin Console que contenha a palavra &quot;administrador&quot; no nome (como &quot;Administradores&quot;, &quot;administrador&quot;, &quot;administradores&quot;, &quot;administrador de aprovação&quot; etc.) concederá acesso automaticamente ao Painel de controle do Campaign. O Painel de controle do Campaign é uma ferramenta de autoatendimento que permite fazer alterações significativas em instâncias do Campaign.
 >
->Analise cuidadosamente suas convenções de nomenclatura de perfil de produto para garantir que somente usuários autorizados tenham acesso ao Painel de controle do Campaign. Saiba mais sobre como gerenciar permissões do Painel de Controle na [documentação do Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR){target="_blank"}.
+>Analise cuidadosamente suas convenções de nomenclatura de perfil de produto para garantir que somente usuários autorizados tenham acesso ao Painel de controle do Campaign. Saiba mais sobre como gerenciar permissões do Painel de Controle na [documentação do Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 ## Como migrar?{#ims-migration-procedure}
 

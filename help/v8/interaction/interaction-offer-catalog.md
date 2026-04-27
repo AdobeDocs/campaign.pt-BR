@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 28%
+source-wordcount: '387'
+ht-degree: 29%
 
 ---
 
@@ -52,7 +52,7 @@ Para criar uma nova categoria, siga as etapas abaixo:
 
    * **[!UICONTROL Edit query]** para aplicar filtros ao destino da oferta.
 
-   * Um resumo das regras de qualificação.Para exibi-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]**.
+   * Um resumo das regras de qualificação.Para visualizá-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]**.
 
 ## Adicionar uma categoria substituta
 

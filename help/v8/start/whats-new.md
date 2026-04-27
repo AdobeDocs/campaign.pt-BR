@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 4b67d5f5427b1be8217f141a97c4de413f5e1f2e
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 69%
+source-wordcount: '1504'
+ht-degree: 70%
 
 ---
 
@@ -178,6 +178,6 @@ Por meio de uma interface intuitiva, os administradores podem monitorar o uso do
 
 ![](assets/subdomain1.png)
 
-[Saiba mais sobre o Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+[Saiba mais sobre o Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
 
 

@@ -61,7 +61,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_editor_nveau_17.png)
 
-1. Agora, vamos alterar a query para localizar os contatos que não moram em Londres.
+1. Agora, vamos alterar a consulta para localizar os contatos que não moram em Londres.
 
    Selecione **[!UICONTROL City (location/@city)]** na coluna **[!UICONTROL Expression]**, **[!UICONTROL different from]** como operador e insira **[!UICONTROL London]** na coluna **[!UICONTROL Value]**.
 
@@ -73,7 +73,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_editor_nveau_15.png)
 
-1. Na janela **[!UICONTROL Data preview]**, clique em **[!UICONTROL Start the preview of the data]**. Essa função calcula o resultado da query.
+1. Na janela **[!UICONTROL Data preview]**, clique em **[!UICONTROL Start the preview of the data]**. Essa função calcula o resultado da consulta.
 
    A guia **[!UICONTROL Column results]** mostra o resultado da consulta em colunas.
 
