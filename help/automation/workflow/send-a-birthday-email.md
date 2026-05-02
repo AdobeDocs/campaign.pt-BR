@@ -192,6 +192,6 @@ Adicione uma atividade de **Entrega recorrente** com base no modelo de email de 
 >
 >Para que os fluxos de trabalho sejam executados, os fluxos de trabalho técnicos relacionados ao pacote de campanha devem ser iniciados. Para obter mais informações, consulte a seção [Lista de fluxos de trabalho técnicos](technical-workflows.md).
 >
->Se as etapas de aprovação estiverem habilitadas para a campanha, as remessas serão enviadas apenas quando essas etapas tiverem sido confirmadas. Para obter mais informações, consulte   seção.
+>Se as etapas de aprovação estiverem habilitadas para a campanha, as remessas serão enviadas apenas quando essas etapas tiverem sido confirmadas. Para obter mais informações, consulte esta seção.
 
 ![](assets/birthday-workflow_usecase_1.png)

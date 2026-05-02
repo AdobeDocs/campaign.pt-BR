@@ -17,7 +17,7 @@ O Adobe Campaign permite criar canais externos ou de API personalizados integrad
 
 A criação e o envio do delivery podem ser executados no Console do cliente e na interface do usuário da Web. No entanto, a configuração do canal personalizado só é executada no Console do cliente.
 
-Para saber como criar e enviar uma entrega com base em um canal personalizado, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=pt-BR){target="_blank"}.
+Para saber como criar e enviar uma entrega com base em um canal personalizado, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html){target="_blank"}.
 
 Estas são as etapas para configurar um novo canal personalizado no Console do cliente. Essas etapas são comuns aos canais externos e de API personalizados:
 

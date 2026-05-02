@@ -87,7 +87,7 @@ O controle de edição se adapta automaticamente ao tipo de dados correspondente
 
 Por padrão, cada campo é exibido em uma única linha e ocupa todo o espaço disponível, dependendo do tipo de dados.
 
-Todos os atributos de formulário estão listados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=pt-BR){target="_blank"}.
+Todos os atributos de formulário estão listados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target="_blank"}.
 
 ## Formatação {#formatting}
 
@@ -589,7 +589,7 @@ O contexto do formulário pode ser atualizado ao inicializar e fechar o formulá
 
 >[!NOTE]
 >
->Os `<enter>` e `<leave>`   as marcas podem ser usadas no `<container>` de páginas (tipos de &quot;bloco de anotações&quot; e &quot;caixa de ícones&quot;).
+>As marcas `<enter>` e `<leave>` podem ser usadas na `<container>` de páginas (tipos de &quot;bloco de anotações&quot; e &quot;caixa de ícones&quot;).
 
 ### Linguagem de expressão {#expression-language-}
 

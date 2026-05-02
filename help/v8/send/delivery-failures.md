@@ -116,7 +116,7 @@ Por exemplo, se o período de validade for definido como o valor padrão de 5 di
 
 Quando uma mensagem estiver na fila do MTA por 3,5 dias e não for entregue, o tempo limite expirará, e seu status será atualizado de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** nos logs de entrega.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=pt-BR#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## Tipos de erro de email {#email-error-types}
@@ -473,7 +473,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Rejeição da mensagem FCM: erro de autenticação de terceiros<br /> </td> 
    <td> Falha<br /> </td> 
    <td> THIRD_PARTY_AUTH_ERROR </td> 
-   <td> Ignorado</td>
+   <td> Ignored</td>
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
@@ -497,7 +497,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Rejeição da mensagem FCM: interno<br /> </td> 
    <td> Falha<br /> </td> 
    <td> INTERNO </td> 
-   <td> Ignored</td> 
+   <td> Ignorado</td> 
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
@@ -505,7 +505,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Rejeição da mensagem FCM: indisponível<br /> </td> 
    <td> Falha<br /> </td> 
    <td> INDISPONÍVEL</td> 
-   <td> Ignorado</td> 
+   <td> Ignored</td> 
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
@@ -513,7 +513,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Rejeição da mensagem FCM: código de erro inesperado<br /> </td> 
    <td> Falha<br /> </td> 
    <td> código de erro inesperado</td> 
-   <td> Ignorado</td> 
+   <td> Ignored</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
@@ -521,7 +521,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Autenticação: problema de conexão<br /> </td> 
    <td> Falha<br /> </td> 
    <td> Impossível conectar-se ao servidor de autenticação </td> 
-   <td> Ignorado</td>
+   <td> Ignored</td>
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
@@ -537,7 +537,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Autenticação: o cliente não está autorizado a recuperar tokens de acesso usando este método ou o cliente não está autorizado para nenhum dos escopos solicitados.<br /> </td> 
    <td> Falha<br /> </td> 
    <td> unauthorized_client </td> 
-   <td> Ignored</td>
+   <td> Ignorado</td>
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>

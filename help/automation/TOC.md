@@ -15,7 +15,7 @@ ht-degree: 83%
 
 + [Guia de automação de campanha](home.md)
 + Automatizar com fluxos de trabalho {#workflows}
-   + Introdução aos fluxos de trabalho {#introduction}
+   + Introdução a fluxos de trabalho {#introduction}
       + [Sobre fluxos de trabalho](workflow/about-workflows.md)
       + Tipos de workflows {#wf-type}
          + [Workflows de direcionamento](workflow/targeting-workflows.md)

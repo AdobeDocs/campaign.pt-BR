@@ -35,7 +35,7 @@ O evento transacional é enviado por uma solicitação POST com a seguinte estru
 POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 ```
 
-* **&lt;ORGANIZATION>**: sua ID da ORGANIZAÇÃO pessoal. Consulte [esta seção](must-read.md).
+* **&lt;ORGANIZATION>**: sua ID de ORGANIZAÇÃO pessoal. Consulte [esta seção](must-read.md).
 
 * **&lt;transactionalAPI>**: os endPoints da API de Mensagens Transacionais.
 

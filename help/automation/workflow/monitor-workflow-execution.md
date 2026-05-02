@@ -230,7 +230,7 @@ Os fluxos de trabalho usam muitas tabelas de trabalho que consomem espaço e aca
 
 O fluxo de trabalho de **limpeza do banco de dados** pode ser acessado por meio do nó **Administração > Produção > Fluxos de trabalho técnicos**, permite excluir dados obsoletos para evitar o crescimento exponencial do banco de dados. O fluxo de trabalho é acionado automaticamente sem a intervenção do usuário.
 
-Você também pode criar fluxos de trabalho técnicos específicos para limpar o consumo de espaço desnecessário de dados. Consulte   e esta [seção](#purging-the-logs).
+Você também pode criar fluxos de trabalho técnicos específicos para limpar o consumo de espaço desnecessário de dados. Consulte e esta [seção](#purging-the-logs).
 
 ## Manuseio de fluxos de trabalho pausados {#handling-of-paused-workflows}
 

@@ -43,7 +43,7 @@ A funcionalidade **[!UICONTROL Audit trail]** no Adobe Campaign oferece um regis
 
 * **A opção trilha de auditoria** permite que você verifique as atividades e as últimas modificações feitas em suas opções.
 
-  Para obter mais informações sobre opções, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
+  Para obter mais informações sobre opções, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
 
 * **Trilha de auditoria de entrega** permite que você verifique as atividades e as últimas modificações feitas em suas entregas.
 

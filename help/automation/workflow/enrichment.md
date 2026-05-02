@@ -178,7 +178,7 @@ Após configurar sua consulta (consulte esta [seção](query.md)):
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
 
    O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente na entrega.
 
@@ -200,7 +200,7 @@ Para fazer isso:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
 
    >[!NOTE]
    >

@@ -24,9 +24,9 @@ _3 de setembro de 2024_
 
 >[!AVAILABILITY]
 >
->Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
+>Esta versão está em **disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
->Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa migração na [documentação da interface do Campaign Web v8](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html?lang=pt-BR){target="_blank"}.
+>Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa migração na [documentação da interface do Campaign Web v8](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html){target="_blank"}.
 
 ### Novos recursos {#new-8-7-2}
 

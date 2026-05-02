@@ -108,7 +108,7 @@ Após configurar sua atividade **Query**:
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -130,7 +130,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -163,7 +163,7 @@ A entrega armazena automaticamente a classificação e o peso das ofertas. Essas
 
 A atividade **[!UICONTROL Offer engine]** também permite especificar uma chamada para o mecanismo de oferta antes da entrega.
 
-Para obter mais informações sobre a atividade de **Mecanismo de oferta**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre a atividade de **Mecanismo de oferta**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}.
 
 Esta atividade funciona de acordo com o mesmo princípio que a atividade **Enriquecimento** com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de uma entrega.
 
@@ -180,13 +180,13 @@ Após configurar sua atividade **Query**:
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#inserting-an-offer-proposition-into-a-delivery)
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#inserting-an-offer-proposition-into-a-delivery)
 
 ### Ofertas por célula {#offers-by-cell}
 
 A atividade **[!UICONTROL Offers by cell]** permite distribuir a população de entrada (de uma consulta, por exemplo) em vários segmentos e especificar uma oferta a ser apresentada para cada um desses segmentos.
 
-Para obter mais informações sobre a atividade **Oferecer por célula**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre a atividade **Oferecer por célula**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}.
 
 Para fazer isso, realize o seguinte processo:
 

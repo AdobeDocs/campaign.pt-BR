@@ -121,7 +121,7 @@ Selecione o modelo de entrega a ser usado e clique em **[!UICONTROL Ok]**.
 
 ### Executar um modelo {#execute-a-template}
 
-Você pode iniciar a execução de um modelo diretamente da lista de modelos sem criar uma entrega primeiro. O modelo de entrega pode ser executado manualmente, conforme detalhado abaixo, ou acionado por um evento (executado em um horário definido, quando um arquivo está disponível no servidor, etc.), conforme explicado em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
+Você pode iniciar a execução de um modelo diretamente da lista de modelos sem criar uma entrega primeiro. O modelo de entrega pode ser executado manualmente, conforme detalhado abaixo, ou acionado por um evento (executado em um horário definido, quando um arquivo está disponível no servidor, etc.), conforme explicado em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
 
 Para executar um template manualmente, siga estas etapas:
 
@@ -141,18 +141,18 @@ Essa ação gera um delivery na pasta associada ao template. O nome dessa entreg
 
 O vídeo a seguir mostra como configurar um modelo para uma entrega ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409250?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
 
 ### Como configurar propriedades de modelos de entrega
 
 O vídeo a seguir mostra como definir as propriedades do modelo de entrega e explica em detalhes cada propriedade.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443406?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
 ### Como implantar um modelo de entrega ad-hoc
 
 Este vídeo explica como implantar um modelo de entrega de email ad-hoc, bem como a diferença entre uma entrega de email e um fluxo de trabalho de entrega.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444962?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
+Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

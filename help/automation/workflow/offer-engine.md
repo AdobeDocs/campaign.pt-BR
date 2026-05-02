@@ -32,4 +32,4 @@ Após configurar sua consulta (consulte esta [seção](query.md)):
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).

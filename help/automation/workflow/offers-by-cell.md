@@ -32,4 +32,4 @@ Para fazer isso:
 
      ![](assets/int_offer_per_cell1.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
