@@ -29,4 +29,4 @@ Selecione a conta externa que corresponde ao CRM que deseja configurar a sincron
 
 ![](assets/crm_task_select_obj.png)
 
-Para obter mais informações sobre conectores CRM no Adobe Campaign, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html){target="_blank"}.
+Para obter mais informações sobre conectores CRM no Adobe Campaign, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html?lang=pt-BR){target="_blank"}.
