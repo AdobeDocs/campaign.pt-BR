@@ -130,11 +130,11 @@ Para personalizar suas mensagens, você pode usar os dados dos recipients armaze
 
 * Verifique as configurações de personalização - verifique se o conteúdo da sua mensagem foi projetado corretamente para evitar erros que possam estar relacionados à personalização. Uma tag de personalização do Adobe Campaign sempre tem o seguinte formato: `<%=table.field%>`. O uso incorreto de parâmetros em blocos de personalização pode ser um problema. Por exemplo, as variáveis em JavaScript devem ser usadas da seguinte forma:
 
-  ``
+  &grave;&grave;
   <%
   var brand = "xxx"
   %>
-  ``
+  &grave;&grave;
 
   Para obter mais informações sobre blocos de personalização, consulte [esta seção](../send/personalization-blocks.md).
 
