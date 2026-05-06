@@ -5,18 +5,19 @@ feature: Configuration, Application Settings
 role: Developer
 version: Campaign v8, Campaign Classic v7
 level: Intermediate, Experienced
-source-git-commit: a1f479538a2d93a2ec13e35cb6813e09c8c4a5f8
+exl-id: 799978e7-025d-4ab0-b198-0e568e4f8ea9
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 24%
+source-wordcount: '804'
+ht-degree: 33%
 
 ---
 
 # Trabalhar com enumerações {#enumerations}
 
-Uma enumeração (também chamada de lista discriminada) é uma lista predefinida de valores que você pode usar para preencher determinados campos. Enumerações ajudam a padronizar valores de campo, tornando a entrada de dados mais consistente e simplificando consultas.
+Uma enumeração (também chamada de lista discriminada) é uma lista predefinida de valores que você pode usar para preencher determinados campos. As enumerações ajudam a padronizar valores de campos, tornando a inserção de dados mais consistente e simplificando as consultas.
 
-Quando definidos, os valores são exibidos em uma lista suspensa. Um valor pode ser selecionado diretamente ou inserido usando a entrada preditiva, que sugere e conclui entradas correspondentes. Alguns campos incluem enumerações predefinidas e enumerações adicionais podem ser criadas, se necessário.
+Quando definidos, os valores são exibidos em uma lista suspensa. Um valor pode ser selecionado diretamente ou inserido por meio da inserção preditiva, que sugere e conclui as inserções correspondentes. Alguns campos incluem enumerações predefinidas, e enumerações adicionais podem ser criadas, se necessário.
 
 ![](assets/enum_values.png)
 

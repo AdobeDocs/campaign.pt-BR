@@ -7,7 +7,7 @@ role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1113'
 ht-degree: 46%
 
 ---
@@ -121,11 +121,11 @@ Para publicar um recurso, clique no botão **[!UICONTROL Publish]** na zona de e
 
 ![](assets/mkt-resource-publish.png)
 
-É possível também automatizar a publicação de um recurso por meio de um workflow.
+É possível também automatizar a publicação de um recurso por meio de um fluxo de trabalho.
 
 Publicar um recurso significa torná-lo disponível para uso (por outra tarefa, por exemplo). Publicações como tal variam dependendo da natureza do seu recurso: para um panfleto, publicar pode significar enviar o arquivo para uma impressora, para uma agência da Web, pode significar publicá-lo em um site etc.
 
-Para que o Adobe Campaign publique, você precisa criar um workflow adequado e vinculá-lo ao recurso. Para fazer isso, abra a caixa do recurso **[!UICONTROL Advanced settings...]** e selecione o fluxo de trabalho desejado no campo **[!UICONTROL Post-processing]**.
+Para que o Adobe Campaign publique, você precisa criar um fluxo de trabalho adequado e vinculá-lo ao recurso. Para fazer isso, abra a caixa do recurso **[!UICONTROL Advanced settings...]** e selecione o fluxo de trabalho desejado no campo **[!UICONTROL Post-processing]**.
 
 ![](assets/mkt-resource-post-processing-wf.png)
 
@@ -134,7 +134,7 @@ O fluxo de trabalho é executado:
 * Quando o revisor clicar no link **[!UICONTROL Publish resource]** (ou, se nenhum revisor foi definido, a pessoa encarregada do recurso).
 * Se o recurso for gerenciado por meio de uma tarefa de criação de recurso de marketing, ele será executado quando a tarefa for definida como **[!UICONTROL Finished]**, desde que a caixa **[!UICONTROL Publish the marketing resource]** esteja marcada na tarefa. [Saiba mais](creating-and-managing-tasks.md#marketing-resource-creation-task))
 
-Se um fluxo de trabalho não for iniciado imediatamente (se ele for interrompido, por exemplo), o status do recurso será alterado para **[!UICONTROL Pending publication]**. Quando o fluxo de trabalho for iniciado, o status do recurso será alterado para **[!UICONTROL Published]**. Este status não leva em conta os possíveis erros no processo de publicação. Verifique o status do seu workflow para verificar se ele foi executado corretamente.
+Se um fluxo de trabalho não for iniciado imediatamente (se ele for interrompido, por exemplo), o status do recurso será alterado para **[!UICONTROL Pending publication]**. Quando o fluxo de trabalho for iniciado, o status do recurso será alterado para **[!UICONTROL Published]**. Este status não leva em conta os possíveis erros no processo de publicação. Verifique o status do seu fluxo de trabalho para verificar se ele foi executado corretamente.
 
 ## Vincular um recurso a uma campanha {#linking-a-resource-to-a-campaign}
 

@@ -4,10 +4,11 @@ description: Saiba como monitorar deliveries, workflows e a instância do Campai
 feature: Monitoring
 role: User
 level: Beginner
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 2ad585f2-19bc-4391-8a19-9e892dbe01a3
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 3%
+source-wordcount: '1141'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +20,7 @@ A Adobe Campaign oferece um conjunto abrangente de recursos para monitorar seus 
 >
 >Como administrador do Campaign, você também pode usar o [Painel de Controle do Campaign](#control-panel) para monitorar suas instâncias, gerenciar o desempenho e definir configurações com recursos de autoatendimento.
 
-## Monitore seus deliveries {#monitor-deliveries}
+## Monitore entregas {#monitor-deliveries}
 
 O monitoramento de deliveries, após serem enviados, é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes. Após enviar um delivery, você poderá monitorar seu status e rastrear as métricas principais no painel do delivery. O painel fornece acesso a logs do delivery, logs de exclusão, logs de rastreamento e outros recursos de monitoramento para ajudar você a analisar o desempenho do delivery em todos os canais.
 
@@ -171,4 +172,3 @@ Saiba mais sobre [relatórios globais](../reporting/global-reports.md)
 * [Gerenciamento de quarentena](../send/quarantines.md)
 * [Configurar e enviar deliveries](../send/configure-and-send.md)
 * [Introdução aos relatórios](../reporting/gs-reporting.md)
-

@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Download da Web
-description: Saiba mais sobre a atividade de workflow de Download da web
+description: Saiba mais sobre a atividade de fluxo de trabalho de Download da web
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 73bacf61-ac03-4a5c-b03b-6dfbe3fb9538
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '491'
 ht-degree: 100%
 
 ---
@@ -50,9 +50,9 @@ A atividade de **download da Web** inicia o download de um arquivo em uma URL ex
    * **[!UICONTROL Number of files]**: digite o número máximo de arquivos a serem mantidos no diretório de armazenamento.
    * **[!UICONTROL Maximum size (in Mb)]**: digite a capacidade máxima do diretório de armazenamento (em megabytes).
 
-   Todo arquivo é mantido por 24 horas antes de ser sujeito às regras de limpeza definidas. A limpeza ocorre antes do início da atividade e, portanto, não leva em consideração o arquivo do workflow em andamento.
+   Todo arquivo é mantido por 24 horas antes de ser sujeito às regras de limpeza definidas. A limpeza ocorre antes do início da atividade e, portanto, não leva em consideração o arquivo do fluxo de trabalho em andamento.
 
-   Os arquivos são excluídos em função de sua data de criação (mais antiga a mais recente). Os arquivos mais antigos são limpos até que ambas as regras de limpeza sejam verificadas. Portanto, se um limite 100 arquivos for definido, isso significa que o diretório de armazenamento sempre conterá os 100 arquivos mais recentes antes do início do workflow, bem como aqueles que estão sendo processados no workflow em andamento.
+   Os arquivos são excluídos em função de sua data de criação (mais antiga a mais recente). Os arquivos mais antigos são limpos até que ambas as regras de limpeza sejam verificadas. Portanto, se um limite 100 arquivos for definido, isso significa que o diretório de armazenamento sempre conterá os 100 arquivos mais recentes antes do início do fluxo de trabalho, bem como aqueles que estão sendo processados no fluxo de trabalho em andamento.
 
    Se você não quiser mais definir um limite para as opções **[!UICONTROL Number of files]** e **[!UICONTROL Maximum size (in Mb)]**, digite 0 como um valor.
 

@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
 source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 51%
+source-wordcount: '1033'
+ht-degree: 49%
 
 ---
 
@@ -38,7 +38,7 @@ Os modelos de entrega são armazenados na pasta **[!UICONTROL Resources > Templa
 
 >[!NOTE]
 >
->Os templates disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de entrega para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Outros modelos não estão visíveis neste contexto. Para obter mais informações, consulte [Trabalhar com mapeamentos de destino](../audiences/target-mappings.md) e [Gerenciar assinaturas e cancelar assinaturas](../start/subscriptions.md).
+>Os modelos disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de entrega para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Outros modelos não estão visíveis neste contexto. Para obter mais informações, consulte [Trabalhar com mapeamentos de destino](../audiences/target-mappings.md) e [Gerenciar assinaturas e cancelar assinaturas](../start/subscriptions.md).
 
 
 ## Criar um modelo {#create-a-delivery-template}
@@ -92,15 +92,15 @@ Para converter uma entrega em um modelo, siga as etapas abaixo:
 Para configurar um modelo de entrega do zero, siga as etapas abaixo:
 
 1. Navegue até a pasta **Recursos** no explorador do Campaign e selecione **Modelos** e depois **Modelos de entrega**.
-1. Clique em **New** na barra de ferramentas para criar um novo template de entrega.
+1. Clique em **New** na barra de ferramentas para criar um novo modelo de entrega.
 1. Defina o **Rótulo** e o **Nome interno** da pasta.
-1. Salve seu template e abra-o novamente.
+1. Salve seu modelo e abra-o novamente.
 1. No botão **Propriedades**, adapte as configurações.
 1. Na guia **General**, confirme ou altere os locais selecionados nos menus suspensos **Execution folder**, **Folder**, e **Routing.**
 1. Complete a categoria **Email parameters** com o assunto do email e a população de destino.
 1. Adicione seu **conteúdo do HTML** para personalizar seu modelo. Você pode exibir um [link de mirror page](../send/mirror-page.md) e um link de unsubscription.
-1. Selecione a guia **Preview.** No menu suspenso **Test personalization**, selecione **Destinatário** para visualizar seu template como o perfil escolhido.
-1. Clique em **Save**. Seu template está pronto para ser usado em uma entrega.
+1. Selecione a guia **Preview.** No menu suspenso **Test personalization**, selecione **Destinatário** para visualizar seu modelo como o perfil escolhido.
+1. Clique em **Save**. Seu modelo está pronto para ser usado em uma entrega.
 
 
 ## Usar modelos {#use-a-delivery-template}
@@ -117,11 +117,11 @@ Se não conseguir ver o modelo, clique na pasta **[!UICONTROL Select link]** à 
 
 Selecione o diretório desejado no campo **[!UICONTROL Folder]** ou clique no ícone **[!UICONTROL Display sub-levels]** para exibir o conteúdo dos diretórios nas subárvores do diretório atual.
 
-Selecione o template de entrega a ser usado e clique em **[!UICONTROL Ok]**.
+Selecione o modelo de entrega a ser usado e clique em **[!UICONTROL Ok]**.
 
 ### Executar um modelo {#execute-a-template}
 
-Você pode iniciar a execução de um template diretamente da lista de templates sem criar uma entrega primeiro. O modelo de entrega pode ser executado manualmente, conforme detalhado abaixo, ou acionado por um evento (executado em um horário definido, quando um arquivo está disponível no servidor, etc.), conforme explicado em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
+Você pode iniciar a execução de um modelo diretamente da lista de modelos sem criar uma entrega primeiro. O modelo de entrega pode ser executado manualmente, conforme detalhado abaixo, ou acionado por um evento (executado em um horário definido, quando um arquivo está disponível no servidor, etc.), conforme explicado em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
 
 Para executar um template manualmente, siga estas etapas:
 
@@ -133,26 +133,26 @@ Para executar um template manualmente, siga estas etapas:
 
 1. Insira os parâmetros de entrega e clique em **[!UICONTROL Send]**.
 
-Essa ação gera um delivery na pasta associada ao template. O nome dessa entrega é o nome do template de entrega do qual foi criado.
+Essa ação gera um delivery na pasta associada ao template. O nome dessa entrega é o nome do modelo de entrega do qual foi criado.
 
 ## Tutoriais em vídeo {#delivery-template-video}
 
-### Como configurar um template de entrega
+### Como configurar um modelo de entrega
 
 O vídeo a seguir mostra como configurar um modelo para uma entrega ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409250?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3409250?captions=por_br&quality=12)
 
-### Como configurar propriedades de templates de entrega
+### Como configurar propriedades de modelos de entrega
 
-O vídeo a seguir mostra como definir as propriedades do template de entrega e explica em detalhes cada propriedade.
+O vídeo a seguir mostra como definir as propriedades do modelo de entrega e explica em detalhes cada propriedade.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443406?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3443406?captions=por_br&quality=12)
 
-### Como implantar um template de entrega ad-hoc
+### Como implantar um modelo de entrega ad-hoc
 
-Este vídeo explica como implantar um template de entrega de email ad-hoc, bem como a diferença entre uma entrega de email e um workflow de entrega.
+Este vídeo explica como implantar um modelo de entrega de email ad-hoc, bem como a diferença entre uma entrega de email e um fluxo de trabalho de entrega.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444962?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3444962?captions=por_br&quality=12)
 
-Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
+Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.

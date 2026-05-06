@@ -7,14 +7,14 @@ role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '92'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
 # Monitoramento da avaliação da entrega (avaliação da entrega por email){#email-deliverability}
 
-O workflow detalhado abaixo é instalado por padrão em todas as instâncias e permite inicializar a lista de regras de qualificação de email de devolução, a lista de domínios e a lista de MXs. Quando o pacote **Deliverability monitoring (Email Deliverability)** estiver instalado, este fluxo de trabalho será executado à noite.
+O fluxo de trabalho detalhado abaixo é instalado por padrão em todas as instâncias e permite inicializar a lista de regras de qualificação de email de devolução, a lista de domínios e a lista de MXs. Quando o pacote **Deliverability monitoring (Email Deliverability)** está instalado, esse fluxo de trabalho é executado à noite.
 <table> 
  <tbody> 
   <tr> 
@@ -25,7 +25,7 @@ O workflow detalhado abaixo é instalado por padrão em todas as instâncias e p
   <tr> 
    <td> <strong>Atualizar para entregabilidade</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  Quando o pacote <strong>Deliverability monitoring (Email Deliverability)</strong> estiver instalado, este workflow será executado à noite para atualizar regularmente a lista de regras e permitir o gerenciamento ativo da entregabilidade da plataforma.<br /> </td> 
+   <td>  Quando o pacote <strong>Deliverability monitoring (Email Deliverability)</strong> estiver instalado, este fluxo de trabalho será executado à noite para atualizar regularmente a lista de regras e permitir o gerenciamento ativo da entregabilidade da plataforma.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -6,7 +6,7 @@ feature: Audit Trail, Monitoring, Workflows
 exl-id: 6a937575-42d4-4dc5-8168-43c25bb2cde6
 source-git-commit: b4b361a4aabd1b33554166c2638989b99a02baec
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
@@ -30,12 +30,12 @@ A funcionalidade **[!UICONTROL Audit trail]** no Adobe Campaign oferece um regis
 
    * Start
    * Pause
-   * Stop
+   * Parar
    * Restart
    * Limpeza que é igual ao histórico de Expurgação da ação
    * Simular qual é igual ao Início da ação no modo de simulação
    * Ativar que é igual à ação Executar tarefas pendentes agora
-   * Unconditional Stop
+   * Interrupção incondicional
 
   Para obter mais informações sobre fluxos de trabalho, consulte esta [página](../../automation/workflow/about-workflows.md).
 

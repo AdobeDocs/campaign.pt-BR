@@ -7,8 +7,8 @@ description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
 source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 85%
+source-wordcount: '893'
+ht-degree: 86%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 85%
    + [Painel de controle](config/self-service.md)
 + Gerenciamento de campanhas {#campaigns}
    + [Introdução às campanhas](start/campaigns.md)
-   + [Documentação da Orquestração de Campanha >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR)
+   + [Documentação do Campaign Orchestration >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR)
 + Enviar mensagens {#send}
    + [Introdução a mensagens](start/gs-message.md)
    + [Criar a primeira entrega](start/create-message.md)
@@ -146,7 +146,7 @@ ht-degree: 85%
    + [Criar aplicativos e formulários web](dev/webapps.md)
 + Fluxos de trabalho {#workflows}
    + [Introdução aos fluxos de trabalho](config/workflows.md)
-   + [Documentação do Fluxo de Trabalho >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
+   + [Documentação do fluxo de trabalho >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
 + Privacidade e segurança {#privacy}
    + [Gerenciar solicitações de privacidade](start/privacy.md)
    + [Diretrizes de segurança](config/security.md)
@@ -198,7 +198,7 @@ ht-degree: 85%
       + [Criar consultas](start/design-queries.md)
       + [Definir condições de filtro](start/filter-conditions.md)
    + [Importar dados](start/import.md)
-   + [Documentação do Fluxo de Trabalho >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
+   + [Documentação do fluxo de trabalho >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
 + Integrações {#connect}
    + [Conectar o Campaign a outras soluções](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}

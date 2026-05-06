@@ -6,7 +6,7 @@ feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '3126'
+source-wordcount: '3145'
 ht-degree: 94%
 
 ---
@@ -52,7 +52,7 @@ Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga e
    ![](assets/campaign_opt_create_a_rule_02.png)
 
 1. Altere a ordem de execução se necessário. Quando várias regras de tipologia são aplicadas como um conjunto **[!UICONTROL Typology]**, as regras de menor posição são aplicadas primeiro. [Saiba mais](apply-rules.md#execution-order).
-1. Na seção **[!UICONTROL Calculation parameters]**, defina uma frequência se quiser salvar o targeting para além da próxima execução diária de nova arbitragem. [Saiba mais](apply-rules.md#adjust-calculation-frequency).
+1. Na seção **[!UICONTROL Calculation parameters]**, defina uma frequência se quiser salvar o direcionamento para além da próxima execução diária de nova arbitragem. [Saiba mais](apply-rules.md#adjust-calculation-frequency).
 1. Clique na guia **[!UICONTROL Pressure]** e escolha o período do calendário durante o qual a regra de tipologia se aplica.
 
    ![](assets/campaign_opt_create_a_rule_03.png)
@@ -154,9 +154,9 @@ Por exemplo, uma regra de pressão que define um limite de 2 mensagens por seman
 
 Para restringir os deliveries considerados para um período de 2 semanas, insira **15d** no campo **[!UICONTROL Concerned period]**: no cálculo são considerados os deliveries realizados em até duas semanas antes da data do delivery no qual a regra é aplicada
 
-A data de início do período depende de como o banco de dados está configurado.
+A data inicial do período depende de como o banco de dados está configurado.
 
-Por exemplo, ao aplicar uma regra de pressão de 15 dias sem agrupar a uma entrega com data 11/12, serão consideradas as entregas entre 27/11 e 12/12. Se a regra de pressão considerar os envios do calendário provisional, todas as programações entre 27/11 e 27/12 são consideradas. Por fim, ao configurar na regra um agrupamento por mês, todas as entregas em novembro e dezembro são consideradas para calcular o limite (de 01/11 a 31/12).
+Por exemplo, ao aplicar uma regra de pressão de 15 dias sem agrupar a uma entrega com data 11/12, serão consideradas as entregas entre 27/11 e 12/12. Se a regra de pressão considerar os envios do calendário provisional, todas as entregas agendadas entre 27/11 e 27/12 são consideradas. Por fim, ao configurar na regra um agrupamento por mês, todas as entregas em novembro e dezembro são consideradas para calcular o limite (de 01/11 a 31/12).
 
 
 **Casos frequentes**
@@ -195,7 +195,7 @@ Finalmente, se nenhum agrupamento for selecionado, somente o **newsletter no.4**
 
 A arbitragem é reaplicada todas as noites através do fluxo de trabalho técnico **[!UICONTROL Forecasting]** e do fluxo de trabalho **[!UICONTROL Campaign jobs]**.
 
-O fluxo de trabalho **[!UICONTROL Forecasting]** pré-calcula os dados do período em andamento (da data de início para a data atual), que permite a aplicação das regras de tipologia durante a análise. Também recalcula os contadores de exclusão para arbitragem a cada noite.
+O fluxo de trabalho **[!UICONTROL Forecasting]** pré-calcula os dados do período em andamento (da data inicial para a data atual), que permite a aplicação das regras de tipologia durante a análise. Também recalcula os contadores de exclusão para arbitragem a cada noite.
 
 Assim, para cada destinatário, o Adobe Campaign verifica se o número de mensagens que devem ser enviadas não excede o limite e assim considera todas as que já foram enviadas no período relacionado. Estas informações são um **indicador**, já que todos os cálculos são atualizados no momento da entrega.
 
@@ -314,7 +314,7 @@ Para fazer isso, é necessário agendar várias entregas com pesos diferentes pa
 Primeiro, configure a regra de pressão.
 
 1. Criar uma regra de pressão. [Saiba mais](#create-a-pressure-rule).
-1. Na guia **[!UICONTROL General]**, selecione a opção **[!UICONTROL Re-apply the rule at the start of personalization]**. 
+1. Na guia **[!UICONTROL General]**, selecione a opção **[!UICONTROL Re-apply the rule at the start of personalization]**.
 
    ![](assets/campaign_opt_pressure_example_5.png)
 
@@ -324,11 +324,11 @@ Primeiro, configure a regra de pressão.
 1. Na guia **[!UICONTROL Typologies]**, vincule a regra a uma tipologia de campanha.
 1. Salve as alterações.
 
-Agora, crie e configure um workflow para cada entrega em que a regra de pressão é aplicada.
+Agora, crie e configure um fluxo de trabalho para cada entrega em que a regra de pressão é aplicada.
 
 1. Crie uma campanha. [Saiba mais](../campaigns/marketing-campaign-create.md#create-a-campaign).
-1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao workflow. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../workflow/query.md).
-1. Adicione uma atividade **[!UICONTROL Email delivery]** ao workflow e depois a abra. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../workflow/delivery.md).
+1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../workflow/query.md).
+1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../workflow/delivery.md).
 1. Acesse a guia **[!UICONTROL Approvals]** das **[!UICONTROL Delivery properties]** e desabilite todas as aprovações.
 
    ![](assets/campaign_opt_pressure_example_2.png)
@@ -347,7 +347,7 @@ Agora, crie e configure um workflow para cada entrega em que a regra de pressão
 
 1. Desmarque a opção **[!UICONTROL Confirm the delivery before sending]** e salve as alterações.
 1. Continue de forma semelhante para cada entrega que deve ser enviada. Certifique-se de definir o peso desejado para cada entrega.
-1. Execute os workflows relevantes para preparar e realizar as entregas.
+1. Execute os fluxos de trabalho relevantes para preparar e realizar as entregas.
 
 Quando a arbitragem noturna for aplicada, as entregas com os pesos menores para o mesmo destinatário serão excluídas. Somente as entregas com o peso mais alto serão consideradas para envio. [Saiba mais](#message-weight).
 
@@ -362,7 +362,7 @@ Considerando que um email já tenha sido enviado aos destinatários relacionados
    <th> Data/hora de Extração<br /> </th> 
    <th> Data de contato<br /> </th> 
    <th> Data/hora de início da entrega<br /> </th> 
-   <th> Data/hora de execução do workflow de arbitragem<br /> </th> 
+   <th> Data/hora de execução do fluxo de trabalho de arbitragem<br /> </th> 
    <th> Status da entrega<br /> </th> 
    <th> Entrega enviada (data/hora)<br /> </th> 
   </tr> 

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Aguardar
-description: Saiba mais sobre a atividade de workflow Aguardar
+description: Saiba mais sobre a atividade de fluxo de trabalho Aguardar
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: a9bcb214-5c87-4b26-804a-22b868905022
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Uma atividade **Wait** ativa sua transição após um atraso de tempo de qualquer valor entre alguns segundos até vários meses. Uma tarefa de espera não bloqueia a execução de outras tarefas; o workflow pode executar tarefas em paralelo enquanto esta tarefa está pendente.
+Uma atividade **Wait** ativa sua transição após um atraso de tempo de qualquer valor entre alguns segundos até vários meses. Uma tarefa de espera não bloqueia a execução de outras tarefas; o fluxo de trabalho pode executar tarefas em paralelo enquanto esta tarefa está pendente.
 
 É possível inserir o rótulo e o tempo de espera usando o editor, como no exemplo abaixo:
 

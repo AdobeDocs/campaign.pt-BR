@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 5%
+source-wordcount: '1291'
+ht-degree: 2%
 
 ---
 
@@ -108,7 +108,7 @@ Esta tabela resume todas as configurações. Os valores de sensibilidade mín./m
 | batchUpdateSize | Tamanho dos microlotes de atualização | 5000 | 100: Latência muito baixa | maxWaitingMessages/updateThreads: Ultrapassar este valor é inútil porque maxWaitingMessages limitará o buffer mesmo assim | 1: Desativar microbatching, atualizar mensagens uma por uma |
 | configRefreshMillis | Período de recarregamento da configuração em milissegundos | 10000 | pollPeriodMillis: baixa latência | 600000: Não recarregue muito rápido para salvar recursos | 500: baixa latência permite testar novas configurações mais rapidamente |
 | deliveryPartRetryCount | Número máximo de vezes que um deliveryPart é repetido ou adiado. Cuidado: a reinicialização do processo de envio conta como uma tentativa, as falhas também podem contar como uma tentativa. | 20 | 1: Desativar tentativas | 50: Tornar as mensagens mais persistentes para contornar provedores instáveis | 1: Desativar tentativas. 1000: Evitar a liberação de mensagens com falha. |
-| deliveryPartRetryDelaySeconds | Atraso mínimo antes de tentar novamente uma deliveryPart. Isso ocorre entre processos e entre containers. O atraso está em segundos. | 60 | 0: Tentativas imediatas | 3600: tentativas muito lentas (1 hora entre cada tentativa) | 1: Facilita o acompanhamento de tentativas em logs ocupados. |
+| deliveryPartRetryDelaySeconds | Atraso mínimo antes de tentar novamente um deliveryPart. Isso é entre processo e entre contêineres. O atraso é em segundos. | 60 | 0: Tentativas imediatas | 3600: tentativas muito lentas (1 hora entre cada tentativa) | 1: Facilita o acompanhamento de tentativas em logs ocupados. |
 | logOutput | Enviar dados de monitoramento e criação de perfil na saída do log principal. | verdadeiro | false: pode aumentar um pouco a taxa de transferência. Desencorajado. | true: ativar o registro em log. | verdadeiro |
 | maxWaitingMessages | Número máximo de mensagens processadas a qualquer momento | 50000 | 256: Suficiente para uma única deliveryPart | 200000: Limitado pela duração da consulta SQL (64k) | 1: Processar mensagens uma por uma |
 | pollPeriodMillis | Frequência de sondagem do banco de dados (em milissegundos) para verificar se há novas mensagens | 2000 | 500: latência muito baixa | 10000: Lotes maiores | 500: A baixa latência facilita a depuração. |
@@ -116,7 +116,7 @@ Esta tabela resume todas as configurações. Os valores de sensibilidade mín./m
 | profDeliveryStat | Registra várias estatísticas agregadas sobre internos do processo de SMS | verdadeiro | false: pode aumentar um pouco a taxa de transferência. Desencorajado. | true: log de baixa verbosidade | verdadeiro |
 | profLogPerMessage | Registrar cada etapa de processamento de cada mensagem | falso | false: reduz o detalhamento do log. | true: log de verbosidade muito alta. **Use apenas quando for absolutamente necessário**. Grande impacto no desempenho. **Desabilite esta configuração assim que dados suficientes forem coletados**. | verdadeiro |
 | providerIdScanPeriod | Período em segundos entre as verificações de novas ids de provedor para reconciliar | 10 | 1: Baixa latência | 60: lotes maiores para maior taxa de transferência | 1: Baixa latência ajuda a depurar o processamento de mensagens. |
-| providerIdThreads | Quantidade de threads para a reconciliação da ID do provedor. Um thread por instância é suficiente. Defina como 0 para desabilitar neste container. | 1 | 0: Desabilitar neste contêiner | 1 | 1 |
+| providerIdThreads | Número de threads para reconciliação da ID do provedor. Um thread por instância é suficiente. Defina como 0 para desativar neste contêiner. | 1 | 0: Desabilitar neste contêiner | 1 | 1 |
 | sendingThreads | Número de threads de envio | 1 | 1: Segmento único | Número de CPUs. Muitas threads geralmente prejudicam o desempenho. | 1: Um único thread gera logs mais simples. |
 | updateThreads | Número de threads para atualização do banco de dados | 1 | 1: Segmento único | Número de CPUs. Cada thread cria sua própria conexão DB. | 1: Um único thread gera logs mais simples. |
 | verifyMode | Simular o envio de mensagens. As mensagens não são enviadas de fato. Útil para depuração | falso | falso | verdadeiro | false: executa o sistema normalmente. true: testar somente o acesso ao BD e a preparação de mensagens. |

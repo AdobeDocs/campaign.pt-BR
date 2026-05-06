@@ -7,7 +7,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '643'
 ht-degree: 40%
 
 ---
@@ -89,7 +89,7 @@ Para criar esse workflow, siga as etapas abaixo:
 
    ![](assets/use_case_report_7.png)
 
-1. Comece adicionando uma atividade do tipo **[!UICONTROL Scheduler]** e a configure para que o workflow seja executado na primeira segunda-feira do mês.
+1. Comece adicionando uma atividade do tipo **[!UICONTROL Scheduler]** e a configure para que o fluxo de trabalho seja executado na primeira segunda-feira do mês.
 
    ![](assets/use_case_report_9.png)
 
@@ -129,7 +129,7 @@ Para criar esse workflow, siga as etapas abaixo:
 
    ![](assets/use_case_report_11.png)
 
-   * **[!UICONTROL Delivery]**: selecione **[!UICONTROL New, created from a template]** e selecione o template de entrega criado anteriormente.
+   * **[!UICONTROL Delivery]**: selecione **[!UICONTROL New, created from a template]** e selecione o modelo de entrega criado anteriormente.
    * Para os campos **[!UICONTROL Recipients]** e **[!UICONTROL Content]**, selecione **[!UICONTROL Specified in the delivery]**.
    * **[!UICONTROL Action to perform]** : selecione **[!UICONTROL Prepare and start]**.
    * Desmarque as opções **[!UICONTROL Generate an outbound transition]** e **[!UICONTROL Process errors]**.

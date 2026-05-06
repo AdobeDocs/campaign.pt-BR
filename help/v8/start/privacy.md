@@ -8,8 +8,8 @@ exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 82%
+source-wordcount: '1093'
+ht-degree: 83%
 
 ---
 
@@ -117,7 +117,7 @@ O padrão para um nome de arquivo é: `<InstanceName>-<NamespaceId>-<Reconciliat
 
 ### Tabelas pesquisadas ao processar solicitações {#list-of-tables}
 
-Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Campaign pesquisa todos os dados do Titular dos dados com base em **[!UICONTROL Reconciliation value]** em todas as tabelas que tenham um link para a tabela do destinatário (tipo próprio). 
+Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Campaign pesquisa todos os dados do Titular dos dados com base em **[!UICONTROL Reconciliation value]** em todas as tabelas que tenham um link para a tabela do destinatário (tipo próprio).
 
 As tabelas integradas consideradas ao executar solicitações de privacidade são:
 
@@ -157,7 +157,7 @@ Você pode encontrar abaixo os diferentes status das solicitações de privacida
 
 * [Privacidade e consentimento](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR){target="_blank"}
 
-* [Introdução ao Gerenciamento de privacidade](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR){target="_blank"}
+* [Introdução ao gerenciamento de privacidade](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR){target="_blank"}
 
 * [Regulamentos sobre gestão de privacidade](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#privacy-management-regulations){target="_blank"} (GDPR, CCPA, PDPA e LGPD)
 

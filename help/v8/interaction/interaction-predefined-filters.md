@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 092262c7-768c-4e86-9b2b-c52516f6a030
 source-git-commit: c748654c76c6b6ce8ad4d4886a1f73004a41e7ac
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 42%
+source-wordcount: '166'
+ht-degree: 39%
 
 ---
 
@@ -39,7 +39,7 @@ Para criar um filtro predefinido, siga o seguinte processo:
 
    ![](assets/offer_filter_create_003.png)
 
-1. Selecione um operador e um valor se necessário, então salve a query.
+1. Selecione um operador e um valor se necessário, então salve a consulta.
 
    ![](assets/offer_filter_create_004.png)
 

@@ -5,14 +5,14 @@ feature: Release Notes
 exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '3472'
+source-wordcount: '3608'
 ht-degree: 33%
 
 ---
 
 # Notas de versão de 2025 {#2025-rn}
 
-Esta página lista novos recursos, melhorias e correções incluídos nas **versões do Campaign v8 de 2025**.  Para obter a versão mais recente, consulte [esta página](release-notes.md).
+Esta página lista novos recursos, melhorias e correções incluídos nas **versões do Campaign v8 de 2025**. Para obter a versão mais recente, consulte [esta página](release-notes.md).
 
 Para qualquer nova implementação ou atualização para um ambiente existente, instale a [versão mais recente](release-notes.md).
 
@@ -35,7 +35,7 @@ _9 de outubro de 2025_
 
 >[!AVAILABILITY]
 >
->Esta versão está em **disponibilidade limitada** (LA). 
+>Esta versão está em **disponibilidade limitada** (LA).
 
 ### Novos recursos {#features-8-8-2}
 
@@ -44,7 +44,7 @@ O **novo conector de envio de SMS** agora está disponível para [implantações
 Esta versão também vem com um conjunto de funcionalidades disponíveis com a interface da Web do Campaign:
 
 * [Enriquecimento de Perfil em Mensagens Transacionais](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=pt-BR){target="_blank"}
-* [Recursos Multilíngues para Mensagens Transacionais, Notificações por Push e SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=pt-BR){target="_blank"}
+* [Recursos multilíngues para mensagens transacionais, notificações por push e SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=pt-BR){target="_blank"}
 
 Consulte as [notas de versão](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=pt-BR){target="_blank"} da interface da Web do Campaign
 
@@ -142,7 +142,7 @@ ACC - Dynamic Reporting - As a Campaign Standard migrated user, you can access D
   >
   >Este recurso **não** está disponível para [implantações do FFDA do Campaign](../architecture/enterprise-deployment.md).
 
-* **Lista de Cancelamento de Assinatura com Um Clique** - Com os principais ISPs que exigem que os remetentes permitam que os destinatários recusem instantaneamente com um único clique, agora é possível habilitar o cabeçalho Lista de Cancelamento de Assinatura com Um Clique na interface do usuário, diretamente do modelo de email ou das propriedades de entrega. Essa opção está ativada por padrão. [Leia mais](../send/email-parameters.md#one-click-list-unsubscribe)
+* **Lista de Cancelamento de Assinatura com Um Clique** - Com os principais ISPs que exigem que os remetentes permitam que os destinatários recusem instantaneamente com um único clique, agora é possível habilitar o cabeçalho Lista de Cancelamento de Assinatura com Um Clique na interface do usuário, diretamente do modelo de email ou das propriedades de entrega. Essa opção está habilitada por padrão. [Leia mais](../send/email-parameters.md#one-click-list-unsubscribe)
 
 <!--
 ACC - Rest APIs - As a Campaign Standard migrated user, you can use Rest APIs to create integrations for Adobe Campaign and build your own ecosystem by interfacing Adobe Campaign with the panel of technologies that you use. Read more
@@ -153,9 +153,9 @@ ACC * **Transactional messaging REST APIs** - Event-based Transactional APIs are
 
 Além dos recursos listados acima, esta versão também vem com um conjunto de funcionalidades disponíveis com a interface do usuário da Web do Campaign:
 
-* [Criação de entrega multilíngue](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/edit-content.html?lang=pt-BR#multilingual-delivery){target="_blank"}
+* [Criação de delivery multilíngue](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/edit-content.html?lang=pt-BR#multilingual-delivery){target="_blank"}
 * [Alerta de entrega](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/delivery-alerting/delivery-alerting.html?lang=pt-BR){target="_blank"}
-* [Melhorias nas páginas de aterrissagem](https://experienceleague.adobe.com/docs/campaign-web/v8/landing-pages/get-started-lp.html?lang=pt-BR){target="_blank"}
+* [Melhorias nas landing pages](https://experienceleague.adobe.com/docs/campaign-web/v8/landing-pages/get-started-lp.html?lang=pt-BR){target="_blank"}
 * [Relatórios dinâmicos](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=pt-BR){target="_blank"} (por demanda)
 * [Marcas centralizadas](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=pt-BR){target="_blank"} (sob demanda, novas implementações)
 
@@ -275,7 +275,7 @@ _25 de abril de 2025_
 
 >[!AVAILABILITY]
 >
->Esta versão está em **disponibilidade limitada** (LA). 
+>Esta versão está em **disponibilidade limitada** (LA).
 
 ### Novos recursos {#features-8-6-5}
 
@@ -301,13 +301,13 @@ _10 de abril de 2025_
 
 >[!AVAILABILITY]
 >
->Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
+>Esta versão está em **disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
 >Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa migração na [documentação da interface do Campaign Web v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 ### Novos recursos {#features-8-7-4}
 
-* **Suporte à API REST de SMS**: a API REST de mensagens transacionais agora está disponível para o canal de SMS. Quando email e mobilePhone estão presentes no conteúdo, você pode usar o campo “wishedChannel” para especificar o canal. Se não for fornecido, o email será usado por padrão, a menos que wishedChannel solicite o SMS explicitamente. 
+* **Suporte à API REST de SMS**: a API REST de mensagens transacionais agora está disponível para o canal de SMS. Quando email e mobilePhone estão presentes no conteúdo, você pode usar o campo “wishedChannel” para especificar o canal. Se não for fornecido, o email será usado por padrão, a menos que wishedChannel solicite explicitamente SMS.
 
 * **Entregas multilíngues**: a partir da versão de abril da interface do Campaign Web, você poderá enviar vários emails em diferentes idiomas e acessar os relatórios dinâmicos relacionados. Esse recurso só estará disponível na interface do Adobe Campaign Web no final de abril e exigirá uma atualização do servidor para o Campaign v8.7.4.
 
@@ -323,7 +323,7 @@ _14 de fevereiro de 2025_
 
 >[!AVAILABILITY]
 >
->Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
+>Esta versão está em **disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
 >Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa migração na [documentação da interface do Campaign Web v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
@@ -366,7 +366,7 @@ A conexão com soluções e aplicativos da Adobe por meio da conta externa da **
 
 Os seguintes conectores FDA foram adicionados. Consulte esta [página](compatibility-matrix.md#FederatedDataAccessFDA).
 
-* Os databricks agora são compatíveis como um banco de dados externo no Federated Data Access (FDA) do Adobe Campaign. 
+* Os databricks agora são compatíveis como um banco de dados externo no Federated Data Access (FDA) do Adobe Campaign.
 
 * Agora há um novo conector ODBC de FDA do Amazon Redshift disponível. Ele oferece conectividade aprimorada, manutenção mais fácil e compatibilidade aprimorada. Essa nova versão traz as seguintes melhorias:
 

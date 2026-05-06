@@ -7,8 +7,8 @@ level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 77%
+source-wordcount: '496'
+ht-degree: 96%
 
 ---
 
@@ -28,17 +28,17 @@ Saiba mais em [documentação do Painel de controle do Campaign](https://experie
 
 ## Como acessar o Painel de controle? {#ac-control-panel-access}
 
-O Painel de controle está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores.
+O Painel de controle está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores.
 
 >[!IMPORTANT]
 >
->Por padrão, o Painel de controle do Campaign é acessível aos usuários administradores que pertencem ao Perfil de produto &quot;Administradores&quot;. De acordo com a configuração da organização, o Perfil do produto pode ser nomeado de forma diferente (&quot;administrador&quot;, &quot;administradores&quot;, &quot;administrador de aprovação&quot; etc.). **Qualquer Perfil de Produto que contenha a palavra &quot;administrador&quot; em seu nome concederá acesso automaticamente ao Painel de Controle.**
+>Por padrão, o Painel de controle do Campaign é acessível aos usuários administradores que pertencem ao Perfil de produto “Administradores”. De acordo com a configuração da sua organização, o Perfil de produto pode ter um nome diferente (“admin”, “admins”, “administrador de aprovação” etc.). **Qualquer Perfil de produto que contenha a palavra “administrador” em seu nome concederá acesso automaticamente ao Painel de controle do Campaign.**
 >
 >Analise cuidadosamente o nome do seu Perfil de produto para garantir que somente usuários autorizados tenham acesso ao Painel de controle do Campaign.
 
 [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=pt-BR){target="_blank"} para obter mais informações.
 
-## Perguntas frequentes sobre o Painel de controle {#ac-control-faq}
+## Perguntas frequentes do Painel de Controle do Campaign {#ac-control-faq}
 
 [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR#control-panel){target="_blank"} para acessar as Perguntas frequentes sobre o Painel de controle do Campaign.
 
@@ -50,9 +50,9 @@ No Painel de controle, é possível interagir com todos os servidores SFTP conec
 
 Saiba como monitorar subdomínios e certificados.
 
-* [Monitorar subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=pt-BR){target="_blank"}
+* [Monitoramento de subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=pt-BR){target="_blank"}
 * [Configurar um novo subdomínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR){target="_blank"}
-* [Monitoramento de certificados SSL de subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=pt-BR){target="_blank"}
+* [Monitorar certificados SSL de subdomínios](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=pt-BR){target="_blank"}
 
 ## Monitoramento de desempenho
 

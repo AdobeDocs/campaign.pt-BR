@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Editar esquema
-description: Saiba mais sobre a atividade de workflow editar esquema
+description: Saiba mais sobre a atividade de fluxo de trabalho editar esquema
 feature: Workflows, Targeting Activity
 role: User, Developer
 version: Campaign v8, Campaign Classic v7
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 
 
-Os dados podem ser transformados, normalizados e, se necessário, enriquecidos no workflow utilizando a atividade **[!UICONTROL Edit schema]**. Geralmente é usado para normalizar a estrutura de dados: é possível renomear as colunas de saída ou modificar o conteúdo, calculando os valores médios de um campo ou agregado.
+Os dados podem ser transformados, normalizados e, se necessário, enriquecidos no fluxo de trabalho utilizando a atividade **[!UICONTROL Edit schema]**. Geralmente é usado para normalizar a estrutura de dados: é possível renomear as colunas de saída ou modificar o conteúdo, calculando os valores médios de um campo ou agregado.
 
-Essa atividade não altera os dados na tabela de trabalho, altera apenas seu schema, ou seja, o modo de exibição lógico dos dados.
+Essa atividade não altera os dados na tabela de trabalho, altera apenas seu esquema, ou seja, o modo de exibição lógico dos dados.
 
 ![](assets/wf_manipulation_box.png)
 

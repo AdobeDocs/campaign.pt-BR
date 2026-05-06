@@ -9,7 +9,7 @@ level: Experienced
 exl-id: 00d39438-a232-49f1-ae5e-1e98c73397e3
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '744'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ O evento transacional é enviado por uma solicitação POST com a seguinte estru
 POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 ```
 
-* **&lt;ORGANIZAÇÃO>**: sua ID de ORGANIZAÇÃO pessoal. Consulte [esta seção](must-read.md).
+* **&lt;ORGANIZATION>**: sua ID de ORGANIZAÇÃO pessoal. Consulte [esta seção](must-read.md).
 
 * **&lt;transactionalAPI>**: os endPoints da API de Mensagens Transacionais.
 

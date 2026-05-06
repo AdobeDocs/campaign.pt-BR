@@ -6,8 +6,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 93%
+source-wordcount: '2258'
+ht-degree: 92%
 
 ---
 
@@ -15,23 +15,23 @@ ht-degree: 93%
 
 O fluxo de trabalho pode ser usado para consultar o banco de dados e segmentar seus dados. O módulo de fluxo de trabalho do Campaign é uma ferramenta poderosa para executar atividades de gerenciamento de dados, extrair, enriquecer e transformar dados, gerenciar públicos e refinar populações.
 
-Os workflows para construção do target permitem que você crie vários targets de entrega. Você pode criar queries, definir uniões ou exclusões com base em critérios específicos, adicionar agendamento, graças às atividades do workflow. O resultado desse target pode ser transferido automaticamente para uma lista que pode servir como target das ações de entrega
+Os fluxos de trabalho de segmentação permitem que você crie vários targets de entrega. Você pode criar queries, definir uniões ou exclusões com base em critérios específicos, adicionar agendamento, graças às atividades do fluxo de trabalho. O resultado desse target pode ser transferido automaticamente para uma lista que pode servir como direcioncimento das ações de entrega
 
-Além dessas atividades, as opções de Gestão de Dados permitem manipular dados e acessar funções avançadas para solucionar problemas complexos de target. Para obter mais informações, consulte [Gerenciamento de dados](targeting-workflows.md#data-management).
+Além dessas atividades, as opções de Gestão de Dados permitem manipular dados e acessar funções avançadas para solucionar problemas complexos de direcionamento. Para obter mais informações, consulte [Gerenciamento de dados](targeting-workflows.md#data-management).
 
-Todas essas atividades podem ser encontradas na primeira guia do workflow.
+Todas essas atividades podem ser encontradas na primeira guia do fluxo de trabalho.
 
 >[!NOTE]
 >
->As atividades de target são detalhadas [nesta seção](activities.md).
+>As atividades de direcionamento são detalhadas [nesta seção](activities.md).
 
-Os fluxos de trabalho para construção do target podem ser criados e editados por meio do nó **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** da árvore do Adobe Campaign ou através do menu **[!UICONTROL Profiles and Targets > Targeting workflows]** da página inicial.
+Os workflows de direcionamento podem ser criados e editados por meio do nó **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** da árvore do Adobe Campaign ou através do menu **[!UICONTROL Profiles and Targets > Targeting workflows]** da página inicial.
 
 ![](assets/target_wf.png)
 
-Os workflows para construção do target dentro da estrutura de uma campanha são armazenados com todos os workflows da campanha.
+Os fluxos de trabalho de segmentação dentro da estrutura de uma campanha são armazenados com todos os fluxos de trabalho da campanha.
 
-## Etapas principais para criar um fluxo de trabalho para construção do target {#implementation-steps-}
+## Etapas principais para criar um workflow de direcionamento {#implementation-steps-}
 
 As etapas para a criação de um fluxo de trabalho de direcionamento estão detalhadas nestas seções:
 
@@ -39,17 +39,17 @@ As etapas para a criação de um fluxo de trabalho de direcionamento estão deta
 1. **Preparar** dados para atender às necessidades da entrega – Consulte [Enriquecer e modificar dados](#enrich-and-modify-data)
 1. **Usar** dados para executar atualizações ou dentro de uma entrega – Consulte [Atualizar o banco de dados](use-workflow-data.md#update-the-database)
 
-Os resultados de todos os enriquecimentos e todos tratamentos realizados no target são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados de target](use-workflow-data.md#target-data).
+Os resultados de todos os enriquecimentos e todos tratamentos realizados no direcionamento são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados de target](use-workflow-data.md#target-data).
 
 ## Dimensões de filtragem e direcionamento {#targeting-and-filtering-dimensions}
 
-Durante as operações de segmentação de dados, a chave de direcionamento é mapeada para uma dimensão de filtro. O targeting dimension permite definir a população de destino da operação: destinatários, beneficiários de contrato, operadores, assinantes etc. A dimensão de filtro permite selecionar a população com base em determinados critérios: titulares de contratos, assinantes de boletins informativos, etc.
+Durante as operações de segmentação de dados, a chave de direcionamento é mapeada para uma dimensão de filtro. A dimensão de direcionamento permite definir a população de destino da operação: destinatários, beneficiários de contrato, operadores, assinantes etc. A dimensão de filtro permite selecionar a população com base em determinados critérios: titulares de contratos, assinantes de boletins informativos, etc.
 
-Por exemplo, para selecionar clientes que têm uma apólice de seguro de vida por mais de 5 anos, selecione a seguinte targeting dimension: **Clients** e a seguinte dimensão do filtro: **Contract holder**. Você pode definir as condições de filtragem na atividade de query
+Por exemplo, para selecionar clientes que têm uma apólice de seguro de vida por mais de 5 anos, selecione a seguinte dimensão de direcionamento: **Clients** e a seguinte dimensão do filtro: **Contract holder**. Você pode definir as condições de filtragem na atividade de consulta
 
-Durante o estágio de seleção de targeting dimensioning dimension, somente as dimensões de filtro compatíveis são apresentadas na interface.
+Durante o estágio de seleção da dimensão de direcionamento, somente as dimensões de filtro compatíveis são apresentadas na interface.
 
-Essas duas dimensões devem estar relacionadas. Assim, o conteúdo da lista **[!UICONTROL Filtering dimension]** depende do target dimension especificado no primeiro campo.
+Essas duas dimensões devem estar relacionadas. Assim, o conteúdo da lista **[!UICONTROL Filtering dimension]** depende da dimensão de direcionamento especificada no primeiro campo.
 
 Por exemplo, para destinatários (**destinatários**), as seguintes dimensões de filtro estarão disponíveis:
 
@@ -67,11 +67,11 @@ Uma atividade **[!UICONTROL Query]** permite que você selecione dados básicos 
 
 Também é possível usar as seguintes atividades para consultar e refinar dados do banco de dados: [Incremental query](incremental-query.md) e [Read list](read-list.md).
 
-É possível coletar dados adicionais para serem encaminhados e processados durante o ciclo de vida do workflow. Para obter mais informações, consulte [Adicionar dados](query.md#add-data) e [Editar dados adicionais](#edit-additional-data).
+É possível coletar dados adicionais para serem encaminhados e processados durante o ciclo de vida do fluxo de trabalho. Para obter mais informações, consulte [Adicionar dados](query.md#add-data) e [Editar dados adicionais](#edit-additional-data).
 
 ### Editar dados adicionais {#edit-additional-data}
 
-Após adicionar os dados adicionais, você pode editá-los ou utilizá-los para refinar o target definido na atividade de query.
+Após adicionar os dados adicionais, você pode editá-los ou utilizá-los para refinar o target definido na atividade de consulta.
 
 O link **[!UICONTROL Edit additional data...]** permite visualizar os dados adicionados e modificá-los ou adicioná-los.
 
@@ -103,13 +103,13 @@ Os dados adicionais coletados podem capacitá-lo a refinar a filtragem de dados 
 
 ### Uniformizar dados {#homogenize-data}
 
-Em **[!UICONTROL Union]** ou **[!UICONTROL Intersection]** digite atividades, é possível escolher manter apenas os dados adicionais compartilhados para manter a consistência dos dados. Nesse caso, a mesa de trabalho de saída temporária dessa atividade conterá apenas os dados adicionais encontrados em todos os conjuntos de entradas.
+Em **[!UICONTROL Union]** ou **[!UICONTROL Intersection]** digite atividades, é possível escolher manter apenas os dados adicionais compartilhados para manter a consistência dos dados. Nesse caso, a tabela de trabalho de saída temporária dessa atividade conterá apenas os dados adicionais encontrados em todos os conjuntos de entradas.
 
 ![](assets/use-common-add-data-only.png)
 
 ### Reconciliar com dados adicionais {#reconciliation-with-additional-data}
 
-Durante as fases de reconciliação de dados (**[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc. você pode selecionar as colunas a serem usadas para reconciliação de dados das colunas adicionais. Para fazer isso, configure uma reconciliação em uma seleção de colunas e especifique o conjunto principal. Em seguida, selecione as colunas na coluna inferior da janela, como mostrado no exemplo a seguir:
+Durante as fases de reconciliação de dados (atividades **[!UICONTROL Union]**, **[!UICONTROL Intersection]** etc.), você pode selecionar as colunas a serem usadas para reconciliação de dados nas colunas adicionais. Para fazer isso, configure uma reconciliação em uma seleção de colunas e especifique o conjunto principal. Em seguida, selecione as colunas na coluna inferior da janela, como mostrado no exemplo a seguir:
 
 ![](assets/select-column-and-join.png)
 
@@ -120,7 +120,7 @@ Selecione uma expressão e confirme.
 
 ### Criar subconjuntos {#create-subsets}
 
-A atividade **[!UICONTROL Split]** permite criar subconjuntos em critérios definidos por consultas de extração. Para cada subconjunto, ao editar uma condição de filtro na população, você acessará a atividade de query padrão que permite definir as condições de segmentação de target.
+A atividade **[!UICONTROL Split]** permite criar subconjuntos em critérios definidos por consultas de extração. Para cada subconjunto, ao editar uma condição de filtro na população, você acessará a atividade de consulta padrão que permite definir as condições de segmentação de target.
 
 Você pode dividir um target em vários subconjuntos usando apenas dados adicionais como condições de filtragem ou como complemento aos dados de target. Você também pode usar dados externos se tiver comprado a opção **Federated Data Access**.
 
@@ -178,9 +178,9 @@ A atividade de intersecção é detalhada na seção [Intersection](intersection
 
 ### Excluir uma população (Exclusão) {#exclude-a-population--exclusion-}
 
-A atividade de exclusão permite excluir os elementos de uma população de destino diferente. O targeting dimension de output dessa atividade será do conjunto principal.
+A atividade de exclusão permite excluir os elementos de uma população de destino diferente. A dimensão de direcionamento de output dessa atividade será do conjunto principal.
 
-Quando necessário, é possível manipular as tabelas de entrada. De fato, para excluir um target de outra dimensão, esse target deve ser devolvido ao mesmo targeting dimension como o target principal. Para fazer isso, clique no botão **[!UICONTROL Add]** e especifique as condições de alteração da dimensão.
+Quando necessário, é possível manipular as tabelas de entrada. De fato, para excluir um target de outra dimensão, esse target deve ser devolvido à mesma dimensão de direcionamento como o target principal. Para fazer isso, clique no botão **[!UICONTROL Add]** e especifique as condições de alteração da dimensão.
 
 A reconciliação de dados é realizada por meio de um identificador, alterando o eixo ou uma junção.
 
@@ -194,9 +194,9 @@ Os dados adicionais transmitidos pela transição de entrada podem ser usados no
 
 Para configurá-lo, primeiro é necessário selecionar os critérios:
 
-1. No workflow, arraste e solte uma atividade **[!UICONTROL Split]**.
+1. No fluxo de trabalho, arraste e solte uma atividade **[!UICONTROL Split]**.
 1. Na guia **[!UICONTROL General]**, selecione a opção desejada: **[!UICONTROL Use data from the target and additional data]**, **[!UICONTROL Use the additional data only]** ou **[!UICONTROL Use external data]**.
-1. Se a opção **[!UICONTROL Use data from the target and additional data]** for selecionada, o targeting dimension permitirá o uso de todos os dados transmitidos pela transição de entrada.
+1. Se a opção **[!UICONTROL Use data from the target and additional data]** for selecionada, a dimensão de direcionamento permitirá o uso de todos os dados transmitidos pela transição de entrada.
 
    ![](assets/split-general-tab-options.png)
 
@@ -212,7 +212,7 @@ Para configurá-lo, primeiro é necessário selecionar os critérios:
 
    Você também pode atribuir um código de segmento ao subconjunto para identificá-lo e usá-lo para direcionar a população.
 
-   Se necessário, você pode alterar o targeting dimension e a dimensão de filtro individualmente para cada subconjunto que deseja criar. Para fazer isso, edite a condição de filtragem do subconjunto e verifique a opção **[!UICONTROL Use a specific filtering dimension]**.
+   Se necessário, você pode alterar as dimensões de direcionamento e de filtro individualmente para cada subconjunto que deseja criar. Para fazer isso, edite a condição de filtragem do subconjunto e verifique a opção **[!UICONTROL Use a specific filtering dimension]**.
 
    ![](assets/split-subset-config-specific-filtering.png)
 
@@ -249,7 +249,7 @@ Subconjuntos também podem ser criados usando a atividade **[!UICONTROL Cells]**
 
 Depois que os dados forem identificados e preparados, eles poderão ser usados nos seguintes contextos:
 
-* Você pode atualizar os dados no banco de dados após a manipulação de dados nos vários estágios do workflow.
+* Você pode atualizar os dados no banco de dados após a manipulação de dados nos vários estágios do fluxo de trabalho.
 
   Para obter mais informações, consulte [Atualizar dados](update-data.md).
 
@@ -257,36 +257,36 @@ Depois que os dados forem identificados e preparados, eles poderão ser usados n
 
   Para obter mais informações, consulte [Atualizar lista](list-update.md).
 
-* Você pode preparar ou iniciar entregas no workflow diretamente.
+* Você pode preparar ou iniciar entregas no fluxo de trabalho diretamente.
 
   Para obter mais informações, consulte [Entrega](delivery.md), [Controle de entrega](delivery-control.md) e [Entrega contínua](continuous-delivery.md).
 
 ## Gerenciamento de dados {#data-management}
 
-No Adobe Campaign, a Gestão de Dados combina um conjunto de atividades para resolver problemas complexos de target oferecendo ferramentas mais eficientes e flexíveis. Isso permite implementar uma gestão consistente de todas as comunicações com um contato usando informações relacionadas a seus contratos, assinaturas, reatividade a entregas, etc. A Gestão de Dados permite acompanhar o ciclo de vida dos dados durante as operações de segmentação, especificamente:
+No Adobe Campaign, a Gestão de Dados combina um conjunto de atividades para resolver problemas complexos de direcionamento oferecendo ferramentas mais eficientes e flexíveis. Isso permite implementar uma gestão consistente de todas as comunicações com um contato usando informações relacionadas a seus contratos, assinaturas, reatividade a entregas, etc. A Gestão de Dados permite acompanhar o ciclo de vida dos dados durante as operações de segmentação, especificamente:
 
-* Simplificação e otimização de processos de target, ao incluir dados que não são modelados no datamart (criando novas tabelas: extensão local para todo workflow para construção do target, dependendo da configuração).
+* Simplificação e otimização de processos de segmentação, ao incluir dados que não são modelados no datamart (criando novas tabelas: extensão local para todo fluxo de trabalho de segmentação, dependendo da configuração).
 * Manutenção e transmissão de cálculos de buffer, especialmente durante as fases de construção do target ou para administração de banco de dados.
-* Acesso a bases externas (opcional): bancos de dados heterogêneos considerados durante o processo de segmentação.
+* Acesso a bases externas (opcional): bancos de dados heterogêneos considerados durante o processo de direcionamento.
 
 Para implementar essas operações, o Adobe Campaign oferece:
 
-* Atividades de coleção de dados: [File transfer](file-transfer.md), [Data loading (file)](data-loading-file.md), [Data loading (RDBMS)](data-loading-rdbms.md) e [Update data](update-data.md). Essa primeira etapa de coleta de dados prepara os dados para que ele seja processado em outras atividades. Vários parâmetros precisam ser monitorados para garantir que o workflow seja executado corretamente e forneça os resultados esperados. Por exemplo, ao importar os dados, a chave primária (Pkey) para esses dados deve ser única para cada registro.
-* As atividades de direcionamento foram aprimoradas com as opções de gerenciamento de dados: [Query](query.md), [Union](union.md), [Intersection](intersection.md) e [Split](split.md). Isso permite configurar uma união ou uma intersecção entre dados de diferentes targeting dimensions, desde que a reconciliação dos dados seja possível.
+* Atividades de coleção de dados: [File transfer](file-transfer.md), [Data loading (file)](data-loading-file.md), [Data loading (RDBMS)](data-loading-rdbms.md) e [Update data](update-data.md). Essa primeira etapa de coleta de dados prepara os dados para que ele seja processado em outras atividades. Vários parâmetros precisam ser monitorados para garantir que o fluxo de trabalho seja executado corretamente e forneça os resultados esperados. Por exemplo, ao importar os dados, a chave primária (Pkey) para esses dados deve ser única para cada registro.
+* As atividades de direcionamento foram aprimoradas com as opções de gerenciamento de dados: [Consulta](query.md), [União](union.md), [Interseção](intersection.md) e [Divisão](split.md). Isso permite configurar uma união ou uma intersecção entre dados de diferentes dimensões de direcionamento, desde que a reconciliação dos dados seja possível.
 * Atividades de transformação de dados: [Enrichment](enrichment.md) e [Change dimension](change-dimension.md).
 
 >[!CAUTION]
 >
->Quando dois workflows são vinculados, a exclusão de um elemento de tabela de origem não significa que todos os dados vinculados a ele serão excluídos.
+>Quando dois fluxos de trabalho são vinculados, a exclusão de um elemento de tabela de origem não significa que todos os dados vinculados a ele serão excluídos.
 >  
->Por exemplo, excluir um destinatário por meio de um workflow não resultará na exclusão de todo o histórico de entrega. No entanto, excluir um destinatário diretamente na pasta &#39;Recipients&#39; resultará na exclusão de todos os dados vinculados a este destinatário.
+>Por exemplo, excluir um destinatário por meio de um fluxo de trabalho não resultará na exclusão de todo o histórico de entrega. No entanto, excluir um destinatário diretamente na pasta &#39;Recipients&#39; resultará na exclusão de todos os dados vinculados a este destinatário.
 
 ### Enriquecer e modificar dados {#enrich-and-modify-data}
 
-Além do targeting dimension, a dimensão de filtro permite especificar a natureza dos dados coletados. Consulte [esta seção](targeting-workflows.md#targeting-and-filtering-dimensions).
+Além da dimensão de direcionamento, a dimensão de filtro permite especificar a natureza dos dados coletados. Consulte [esta seção](targeting-workflows.md#targeting-and-filtering-dimensions).
 
 Os dados identificados e coletados podem ser enriquecidos, agregados e manipulados para otimizar a construção de target. Para fazer isso, além das atividades de manipulação de dados detalhadas em [esta seção](#segmen-data), use o seguinte:
 
-* A atividade **[!UICONTROL Enrichment]** permite adicionar colunas momentaneamente a um schema, bem como adicionar informações a determinados elementos. Ela é detalhada na seção [Enrichment](enrichment.md) do repositório de atividades.
-* A atividade **[!UICONTROL Edit schema]** permite modificar a estrutura de um schema. Ela é detalhada na seção [Edit schema](edit-schema.md) do repositório de atividades.
-* A atividade **[!UICONTROL Change dimension]** permite alterar o targeting dimension durante o ciclo de construção do target. Ela é detalhada na seção [Change dimension](change-dimension.md).
+* A atividade **[!UICONTROL Enrichment]** permite adicionar colunas momentaneamente a um esquema, bem como adicionar informações a determinados elementos. Ela é detalhada na seção [Enrichment](enrichment.md) do repositório de atividades.
+* A atividade **[!UICONTROL Edit schema]** permite modificar a estrutura de um esquema. Ela é detalhada na seção [Edit schema](edit-schema.md) do repositório de atividades.
+* A atividade **[!UICONTROL Change dimension]** permite alterar a dimensão de direcionamento durante o ciclo de construção do target. Ela é detalhada na seção [Change dimension](change-dimension.md).

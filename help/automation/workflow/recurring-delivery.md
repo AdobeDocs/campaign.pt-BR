@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 89%
+source-wordcount: '271'
+ht-degree: 85%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 89%
 
 Uma atividade **[!UICONTROL Recurring delivery]** permite configurar uma ocorrência de modelo de entrega específico para uma campanha.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#recurring-delivery-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#recurring-delivery-video)
 
 Essa atividade só está disponível na guia **[!UICONTROL Targeting and workflows]** localizada em uma campanha.
 
@@ -31,7 +31,7 @@ Para fazer isso:
 
 1. Configure o modelo de entrega.
 
-O processo de configuração dessa atividade é semelhante ao da criação de um template de delivery em termos das opções disponíveis.
+O processo de configuração dessa atividade é semelhante ao da criação de um modelo de entrega em termos das opções disponíveis.
 
 Para obter um exemplo de uso dessa atividade, consulte esta [seção](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
@@ -55,4 +55,4 @@ Este vídeo explica como configurar uma entrega recorrente e uma atividade de sc
 
 >[!VIDEO](https://video.tv.adobe.com/v/31846?captions=por_br&quality=12)
 
-Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
+Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.

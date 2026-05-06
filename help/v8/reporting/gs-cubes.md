@@ -7,8 +7,8 @@ level: Beginner
 exl-id: f57f3074-981f-4bcf-9274-7908cd00a4a2
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 76%
+source-wordcount: '529'
+ht-degree: 68%
 
 ---
 
@@ -22,28 +22,28 @@ Use os recursos de análise de marketing para analisar e medir dados, calcular e
 
 Os cubos são usados para gerar determinados relatórios internos, incluindo [relatórios do delivery](delivery-reports.md) (rastreamento de delivery, cliques, aberturas, etc.).
 
-Depois que tiverem sido criados e configurados, os cubos serão usados em caixas de query de relatório e aplicação web. Eles podem ser utilizados e manipulados dentro de tabelas dinâmicas.
+Depois que tiverem sido criados e configurados, os cubos serão usados em caixas de consulta de relatório e aplicação web. Eles podem ser utilizados e manipulados dentro de tabelas dinâmicas.
 
 Use o módulo Marketing Analytics do Campaign para:
 
 1. Criar cubos e indicadores
 
-   * agregar e armazenar dados em uma tabela de trabalho para pré-calcular indicadores com base nas necessidades do usuário, 
-   * reduzir o volume de dados envolvidos nos vários cálculos usados para relatórios e consultas, otimizando significativamente os tempos de cálculo do indicador, 
+   * agregar e armazenar dados em uma tabela de trabalho para pré-calcular indicadores com base nas necessidades do usuário,
+   * reduzir o volume de dados envolvidos nos vários cálculos usados para relatórios e consultas, otimizando significativamente os tempos de cálculo do indicador,
    * simplificar o acesso aos dados e permitir que os usuários manipulem dados (sejam pré-agregados ou não) que dependem de várias dimensões.
 
    Para obter mais informações, consulte [Criar indicadores](cube-indicators.md).
 
 1. Criar tabelas dinâmicas e explorar dados
 
-   * explorar dados calculados e medidas configuradas, 
-   * selecionar os dados a serem exibidos, bem como o seu modo de exibição, 
-   * personalizar as medidas e os indicadores usados, 
+   * explorar dados calculados e medidas configuradas,
+   * selecionar os dados a serem exibidos, bem como o seu modo de exibição,
+   * personalizar as medidas e os indicadores usados,
    * e oferecer ferramentas de análise interativa a usuários sem conhecimento técnico.
 
    Para saber mais, consulte [Usar cubos para explorar dados](cube-tables.md).
 
-1. Criar um query usando dados calculados e agregados em um cubo.
+1. Criar uma consulta usando dados calculados e agregados em um cubo.
 1. Identificar populações e referenciá-las em listas.
 
 ## Terminologia {#terminology}
@@ -58,4 +58,4 @@ Os termos específicos do trabalho com cubos estão listados abaixo.
 
 * **Compartimentalização** - Em alguns campos, é possível definir a compartimentalização para agrupar valores e facilitar a leitura das informações. A compartimentalização é aplicada aos níveis. Recomendamos que você defina a compartimentalização quando houver a possibilidade de muitos valores diferentes.
 
-* **Medida** - As medidas mais frequentes são: soma, média, máximo, mínimo, desvio padrão, etc. As medidas podem ser calculadas: por exemplo, a taxa de aceitação de uma oferta é a razão do número de vezes que foi apresentada em comparação ao número de vezes que foi aceita.
+* **Medida** - As medidas mais frequentes são: soma, média, máximo, mínimo, desvio padrão, etc. As medidas podem ser calculadas: por exemplo, a taxa de aceitação de uma oferta é a relação do número de vezes que foi apresentada em comparação ao número de vezes que foi aceita.

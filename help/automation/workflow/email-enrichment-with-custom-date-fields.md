@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '540'
 ht-degree: 100%
 
 ---
@@ -95,7 +95,7 @@ Após a atividade **[!UICONTROL Enrichment]**, você pode adicionar uma entrega.
 1. Clique em **[!UICONTROL Save]** para criar a entrega de email.
 1. Verifique na **[!UICONTROL Approval]** guia da entrega de e-mail **[!UICONTROL Properties]** se a opção **[!UICONTROL Confirm delivery before sending option]** está marcada.
 
-   Em seguida, inicie o workflow para enriquecer a transição de saída com as informações de direcionamento.
+   Em seguida, inicie o fluxo de trabalho para enriquecer a transição de saída com as informações de direcionamento.
 
    ![](assets/uc_enrichment_18.png)
 

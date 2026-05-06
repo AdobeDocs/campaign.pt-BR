@@ -12,9 +12,9 @@ ht-degree: 81%
 
 ---
 
-# Atividades de direcionamento em workflows{#about-targeting-activities}
+# Atividades de segmentação em fluxos de trabalho{#about-targeting-activities}
 
-Essas atividades permitem construir um ou mais públicos alvos definindo conjuntos e dividindo ou combinando esses conjuntos usando operações de intersecção, união ou exclusão.
+Essas atividades permitem construir um ou mais targets definindo conjuntos e dividindo ou combinando esses conjuntos usando operações de intersecção, união ou exclusão.
 
 * **[Células](cells.md)**: fornece um modo de exibição dos vários subconjuntos de colunas de dados e facilita a manipulação desses subconjuntos quando há muitos deles.
 * **[Conector do CRM](crm-connector.md)**: permite configurar a sincronização entre o Adobe Campaign e um CRM.

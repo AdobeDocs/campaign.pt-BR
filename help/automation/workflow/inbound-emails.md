@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Emails de entrada
-description: Saiba mais sobre a atividade de workflow de emails de entrada
+description: Saiba mais sobre a atividade de fluxo de trabalho de emails de entrada
 feature: Workflows, Channels Activity
 role: User
 version: Campaign v8, Campaign Classic v7

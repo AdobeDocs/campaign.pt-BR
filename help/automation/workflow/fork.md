@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Bifurcação
-description: Saiba mais sobre a atividade de workflow de bifurcação
+description: Saiba mais sobre a atividade de fluxo de trabalho Bifurcação
 feature: Workflows
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 7b94776c-2478-4e12-82a6-c94be12e7e22
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '357'
 ht-degree: 100%
 
 ---
@@ -36,9 +36,9 @@ Para configurar uma atividade **[!UICONTROL Fork]** e suas atividades relacionad
 
 ## Exemplo: segmentação
 
-Neste exemplo, diferentes emails são enviados para diferentes grupos de população. Uma atividade **[!UICONTROL Fork]** é usada após um query, para executar duas ações simultaneamente:
+Neste exemplo, diferentes emails são enviados para diferentes grupos de população. Uma atividade **[!UICONTROL Fork]** é usada após uma consulta, para executar duas ações simultaneamente:
 
-* Salve o resultado da query
+* Salve o resultado da consulta
 * Segmente o resultado para enviar várias entregas
 
   ![A atividade Fork segue a interseção de dois queries e precede uma atividade de atualização de lista e uma atividade de Split.](assets/wkf_fork_example.png)
@@ -51,7 +51,7 @@ O fluxo de trabalho inclui estas atividades:
 
 1. Atividade de **[!UICONTROL Intersection]**
 
-   A interseção dos resultados da query, ou seja, mulheres parisienses, é selecionada.
+   A interseção dos resultados da consulta, ou seja, mulheres parisienses, é selecionada.
 
 1. Atividade de **[!UICONTROL Fork]**
 
@@ -68,7 +68,7 @@ O fluxo de trabalho inclui estas atividades:
 
 Um email recorrente é enviado para uma lista de destinatários em seus aniversários. Uma atividade **[!UICONTROL Fork]** é usada para incluir destinatários que nasceram em 29 de fevereiro em um ano bissexto. [Saiba mais](send-a-birthday-email.md) sobre esse caso de uso.
 
-![A atividade fork segue uma atividade de teste e precede duas atividades de query.](assets/birthday-workflow_usecase_1.png)
+![A atividade fork segue uma atividade de teste e precede duas atividades de consulta.](assets/birthday-workflow_usecase_1.png)
 
 ## Caso de uso: automatizar o conteúdo com um fluxo de trabalho
 

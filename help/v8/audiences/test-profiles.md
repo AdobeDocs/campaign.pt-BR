@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
 source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 55%
+source-wordcount: '982'
+ht-degree: 56%
 
 ---
 
@@ -53,19 +53,19 @@ Para criar seed addresses, siga estas etapas:
 
 1. Na guia **[!UICONTROL Address fields]**, insira os valores a serem inseridos nos logs de entrega durante a fase de análise, na tabela **[!UICONTROL nms:broadLog]**.
 
-1. Na guia **[!UICONTROL Additional data]**, insira os dados de personalização usados para as entregas criadas nos workflows de gestão de dados, aos quais você deseja atribuir um valor específico.
+1. Na guia **[!UICONTROL Additional data]**, insira os dados de personalização usados para as entregas criadas nos fluxos de trabalho de gestão de dados, aos quais você deseja atribuir um valor específico.
 
    Verifique se os dados adicionais de destino foram definidos com um alias que comece com &#39;@&#39; na atividade de fluxo de trabalho **[!UICONTROL Enrichment]**. Caso contrário, você não poderá usá-los corretamente com seus seeds addresses na atividade de entrega.
 
 ### Criar modelos de seed address {#creating-seed-address-templates}
 
-Você pode criar templates de endereço que podem ser importados e modificados para cada delivery. O processo é o mesmo que ao definir um novo seed address. A única diferença é que os templates de seed address devem ser armazenados em uma pasta do tipo &#39;template&#39;.
+Você pode criar templates de endereço que podem ser importados e modificados para cada delivery. O processo é o mesmo que ao definir um novo seed address. A única diferença é que os modelos de seed address devem ser armazenados em uma pasta do tipo &#39;modelo&#39;.
 
 ### Seed addresses para deliveries de correspondência direta {#direct-mail-seed-addresses}
 
 Para [entregas de correspondência direta](../send/direct-mail.md), os seed addresses são adicionados durante a extração e combinados no documento de saída.
 
-Para entregas de mala direta, o formato do arquivo de extração deve estar em conformidade com as seguintes limitações:
+Para entregas de correspondência direta, o formato do arquivo de extração deve estar em conformidade com as seguintes limitações:
 
 * Não deve usar a opção **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 
@@ -97,7 +97,7 @@ Clique no link **[!UICONTROL Advanced campaign settings...]** e depois na guia *
 
 ## Seed addresses e tabela personalizada {#using-an-external-recipient-table}
 
-Se a tabela da entrega for uma tabela externa, você precisará fazer configurações adicionais. O schema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados
+Se a tabela da entrega for uma tabela externa, você precisará fazer configurações adicionais. O esquema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados
 
 Nesse caso, para adicionar seed addresses ao delivery, insira os campos adequados diretamente na guia correspondente ou importe os templates de endereços.
 

@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
 source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 96%
+source-wordcount: '437'
+ht-degree: 91%
 
 ---
 
@@ -52,7 +52,7 @@ Siga as etapas abaixo:
 
    ![](assets/query_editor_nveau_76.png)
 
-   Defina os valores **Source** e **Destination** : o valor de destino facilita a leitura da query. Esta query deve retornar o gênero do destinatário e o resultado será 0, 1 ou 2.
+   Defina os valores **Source** e **Destination** : o valor de destino facilita a leitura da consulta. Esta consulta deve retornar o gênero do destinatário e o resultado será 0, 1 ou 2.
 
    Para cada linha &quot;source-destination&quot; a ser inserida, clique em **[!UICONTROL Add]** em **[!UICONTROL List of enumeration values]**:
 
@@ -80,6 +80,6 @@ Siga as etapas abaixo:
 
    ![](assets/query_editor_nveau_79.png)
 
-   Vamos tomar outro exemplo e dizer que o valor de enumeração &quot;2&quot; não é inserido. Selecione a função **[!UICONTROL Generate an error and reject the line]**: todos os destinatários do gênero “2” gerarão anomalias e as outras informações na linha (nome e sobrenome etc.) não serão exportadas. Um log de erros é exibido no campo **[!UICONTROL Logs generated during export]** da janela de pré-visualização de dados. Este log indica que o valor de enumeração &quot;2&quot; não foi inserido.
+   Vamos tomar outro exemplo e dizer que o valor de enumeração &quot;2&quot; não é inserido. Selecione a função **[!UICONTROL Generate an error and reject the line]**: todos os gêneros &quot;2&quot; dos recipients criarão anomalias e as outras informações na linha (nome e sobrenome etc.) não serão exportadas. Um log de erros é exibido no campo **[!UICONTROL Logs generated during export]** da janela de pré-visualização de dados. Este log indica que o valor de enumeração &quot;2&quot; não foi inserido.
 
    ![](assets/query_editor_nveau_80.png)

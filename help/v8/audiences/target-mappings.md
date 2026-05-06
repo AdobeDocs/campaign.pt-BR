@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
 source-git-commit: 4c787abbf9b13c08263e602930bc532d73e08a5a
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 39%
+source-wordcount: '376'
+ht-degree: 38%
 
 ---
 
@@ -31,7 +31,7 @@ O Adobe Campaign vem com os seguintes target mappings incorporados:
 | Subscrições | Entregar aos destinatários que assinam um serviço de informações, como um boletim informativo | nms:subscription |
 | Assinaturas do visitante | Entregar aos visitantes que são inscritos em um serviço de informações | nms:visitorSub |
 | Operadores | Entregar aos operadores do Adobe Campaign | nms:operator |
-| Arquivo externo | Entregar por meio de um arquivo que contenha todas as informações necessárias para a entrega | Nenhum schema vinculado, nenhum target inserido |
+| Arquivo externo | Entregar por meio de um arquivo que contenha todas as informações necessárias para a entrega | Nenhum esquema vinculado, nenhum target inserido |
 | Aplicativos de assinante | Enviar delivery aos recipients que assinaram um aplicativo | nms:appSubscriptionRcp |
 
 

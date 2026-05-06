@@ -7,8 +7,8 @@ level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 59%
+source-wordcount: '1276'
+ht-degree: 58%
 
 ---
 
@@ -108,7 +108,7 @@ Após configurar sua atividade **Query**:
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -130,7 +130,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ Após configurar sua atividade **Query**:
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#inserting-an-offer-proposition-into-a-delivery)
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#inserting-an-offer-proposition-into-a-delivery)
 
 ### Ofertas por célula {#offers-by-cell}
 

@@ -8,8 +8,8 @@ badge: label="Disponibilidade limitada" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
 source-git-commit: 52ea7f0a7690ef656568cc75925b9982e1f475e9
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 16%
+source-wordcount: '1424'
+ht-degree: 18%
 
 ---
 
@@ -252,7 +252,7 @@ Sua propriedade móvel agora será sincronizada automaticamente com o fluxo de t
 
 ## Adicionar o Campaign Classic ao seu aplicativo para dispositivos móveis {#campaign-mobile-app}
 
-O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é gerenciada por meio da interface da Coleção de dados, para oferecer configuração flexível e integrações extensíveis baseadas em regras.
+O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras.
 
 [Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 

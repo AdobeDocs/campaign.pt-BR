@@ -8,7 +8,7 @@ level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1443'
 ht-degree: 88%
 
 ---
@@ -170,7 +170,7 @@ Para definir uma nova medida, siga as etapas abaixo:
 
 * a sequência de exibição de medidas. [Saiba mais](#display-sequence)
 * as informações mostradas/ocultadas no relatório. [Saiba mais](#configuring-the-display)
-* e as medidas a serem exibidas: porcentagem, total, número de decimais, etc. [Saiba mais](#changing-the-type-of-measure-displayed)
+* quais medidas exibir: porcentagem, total, número de decimais, etc. [Saiba mais](#changing-the-type-of-measure-displayed)
 
 ### Sequência de exibição {#display-sequence}
 

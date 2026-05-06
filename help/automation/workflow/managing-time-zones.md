@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 04b7638d-55dd-4317-b605-5d618ef014ba
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '267'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 O Adobe Campaign permite a gestão do intervalo entre vários países relacionados à mesma instância. A configuração aplicada é aplicada durante a criação da instância.
 
-Em um workflow, é possível adaptar os agendamentos de execução de atividades e vincular um fuso horário específico a uma atividade ou ao workflow inteiro. Essa configuração é útil ao importar o arquivo ou dentro da estrutura de agendamento de entrega.
+Em um fluxo de trabalho, é possível adaptar os agendamentos de execução de atividades e vincular um fuso horário específico a uma atividade ou ao fluxo de trabalho inteiro. Essa configuração é útil ao importar o arquivo ou dentro da estrutura de agendamento de entrega.
 
 ## Agendamento de execução {#execution-scheduling}
 
@@ -35,7 +35,7 @@ Os valores possíveis são:
 
 * Fuso horário do usuário
 
-  Usa o fuso horário do operador do Adobe Campaign que executa o workflow.
+  Usa o fuso horário do operador do Adobe Campaign que executa o fluxo de trabalho.
 
 * Fuso horário do banco de dados
 
@@ -45,8 +45,8 @@ Os valores possíveis são:
 
   Usa o fuso horário selecionado.
 
-Se o valor **[!UICONTROL By default]** for selecionado, o fuso horário do workflow será aplicado, caso contrário, será usado o do servidor de aplicativos.
+Se o valor **[!UICONTROL By default]** for selecionado, o fuso horário do fluxo de trabalho será aplicado, caso contrário, será usado o do servidor de aplicativos.
 
 ## Vincular um fuso horário a uma atividade {#linking-a-time-zone-to-an-activity}
 
-A guia **[!UICONTROL Advanced]** das atividades do workflow permite selecionar o fuso horário. Embora a maior parte do tempo, o fuso horário dos workflows seja suficiente, pode ser necessário sobrescrever ele agora e novamente em uma atividade específica, como importação de dados, para vincular datas aos seus fusos horários corretos.
+A guia **[!UICONTROL Advanced]** das atividades do fluxo de trabalho permite selecionar o fuso horário. Embora a maior parte do tempo, o fuso horário dos fluxos de trabalho seja suficiente, pode ser necessário sobrescrever ele agora e novamente em uma atividade específica, como importação de dados, para vincular datas aos seus fusos horários corretos.

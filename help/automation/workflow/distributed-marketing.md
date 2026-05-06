@@ -17,7 +17,7 @@ ht-degree: 86%
 
 
 
-Os workflows detalhados são instalados com o módulo **Marketing Distribuído** por padrão. Para obter mais informações sobre este módulo, consulte [esta seção](../distributed-marketing/about-distributed-marketing.md).
+Os fluxos de trabalho detalhados são instalados com o módulo **Marketing Distribuído** por padrão. Para obter mais informações sobre este módulo, consulte [esta seção](../distributed-marketing/about-distributed-marketing.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ Os workflows detalhados são instalados com o módulo **Marketing Distribuído**
   <tr> 
    <td> <span class="uicontrol">Processos de marketing distribuído</span> <br /> </td> 
    <td> <span class="uicontrol">centralLocalMgt</span> <br /> </td> 
-   <td> Esse workflow executa processos vinculados ao uso do módulo de marketing distribuído. Ele inicia a criação de campanha local e gerencia notificações vinculadas a pedidos e à disponibilidade do pacote de campanha.<br /> </td> 
+   <td> Este fluxo de trabalho inicia o processamento relacionado ao uso do módulo de marketing distribuído. Ele inicia a criação de campanha local e gerencia notificações vinculadas a pedidos e à disponibilidade do pacote de campanha.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

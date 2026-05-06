@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 53%
+source-wordcount: '1288'
+ht-degree: 52%
 
 ---
 
@@ -57,7 +57,7 @@ Ao editar um programa, use as guias descritas abaixo para procurar e configurar.
 
 * A guia **Agendar** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você clicar no cabeçalho do calendário. Você pode criar uma campanha, um programa ou uma tarefa nesta página. [Saiba mais](#campaign-calendar)
 
-* A guia **Editar** permite personalizar o programa: nome, datas de início e término, orçamento, documentos vinculados etc.
+* A guia **Editar** permite personalizar o programa: nome, datas inicial e final, orçamento, documentos vinculados etc.
 
   ![](assets/new-program-edit-tab.png)
 
@@ -73,11 +73,11 @@ O campo **[!UICONTROL Program]** permite selecionar o programa ao qual a campanh
 
 As campanhas também podem ser criadas por meio do calendário da campanha ou do programa. [Saiba mais](#campaign-calendar)
 
-Na janela de criação da campanha, selecione o modelo da campanha e adicione um nome e uma descrição da campanha. Você também pode especificar as datas de início e término da campanha.
+Na janela de criação da campanha, selecione o modelo da campanha e adicione um nome e uma descrição da campanha. Você também pode especificar as datas inicial e final da campanha.
 
 Clique em **[!UICONTROL OK]** para criar a campanha. Ele é adicionado à programação e à lista de campanhas.
 
-Você pode editar a campanha recém-criada e definir seus parâmetros. Para abrir e configurar essa campanha, você pode:
+Você pode editar a campanha que acabou de criar e definir seus parâmetros. Para abrir e configurar essa campanha, você pode:
 
 1. Navegue pelo calendário da campanha, selecione a campanha que deseja exibir e clique no link **[!UICONTROL Open]**.
 1. Navegue pela guia **[!UICONTROL Schedule]** do programa, selecione a campanha e a abra.
@@ -98,7 +98,7 @@ Acesse as seguintes seções para saber como configurar a campanha:
 
 ### Editar configurações da campanha {#campaign-settings}
 
-As campanhas são criadas por meio de templates de campanha. É possível configurar templates reutilizáveis para os quais algumas opções estão selecionadas e outras configurações já estão salvas.
+As campanhas são criadas por meio de modelos de campanha. É possível configurar modelos reutilizáveis para os quais algumas opções estão selecionadas e outras configurações já estão salvas.
 
 Para cada campanha, os seguintes recursos estão disponíveis:
 
@@ -142,7 +142,7 @@ Você pode filtrar as informações exibidas no calendário da campanha. Para fa
 
 >[!NOTE]
 >
->Quando você filtrar em uma data, todas as campanhas com uma data de início posterior à data especificada e/ou com uma data final anterior à data especificada serão exibidas. As datas são selecionadas usando os calendários à direita de cada campo.
+>Quando você filtrar em uma data, todas as campanhas com uma data inicial posterior à data especificada e/ou com uma data final anterior à data especificada serão exibidas. As datas são selecionadas usando os calendários à direita de cada campo.
 
 Também é possível usar o campo **[!UICONTROL Search]** para filtrar os itens exibidos.
 
@@ -161,7 +161,7 @@ Ao criar uma campanha por meio da guia **[!UICONTROL Schedule]** de um programa,
 
 ## Usar a interface da Web {#use-the-web-interface-}
 
-Você pode acessar as telas do Console do cliente do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e deliveries, bem como relatórios e informações sobre os perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar uma entrega etc.
+Você pode acessar as telas do Console do cliente do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e deliveries, bem como relatórios e informações sobre os perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e direcionamento, reiniciar ou parar uma entrega etc.
 
 1. Faça logon como de costume via https://`<your instance>:<port>/view/home`.
 1. Use os menus para acessar as exibições.
@@ -187,7 +187,7 @@ Esta tabela resume as ações que você pode realizar nas campanhas a partir de 
 | Oferta | Aprovar o conteúdo e a elegibilidade da oferta<br/>Desabilitar uma oferta online |
 | Tarefa | Concluir uma tarefa<br/>Cancelar uma tarefa |
 | Recursos de marketing | Aprovar um recurso<br/>Bloquear e desbloquear um recurso |
-| Pacotes da campanha | Enviar um pacote para aprovação<br/>Aprovar ou rejeitar um pacote<br/>Cancelar um pacote |
+| Pacote de campanha | Enviar um pacote para aprovação<br/>Aprovar ou rejeitar um pacote<br/>Cancelar um pacote |
 | Pedidos da campanha | Criar um pedido<br/>Aceitar ou rejeitar um pedido |
 | Estoque | Excluir uma linha do estoque |
 | Simulação de oferta | Iniciar e parar uma simulação |
@@ -208,4 +208,4 @@ Você também pode usar o link contido nas mensagens de notificação. Para obte
 
 Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449904?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3449904?captions=por_br&quality=12)

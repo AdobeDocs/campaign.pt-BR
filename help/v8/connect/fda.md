@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
 source-git-commit: 631c4986d24daeff870412566318adb170ce040f
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 36%
+source-wordcount: '734'
+ht-degree: 40%
 
 ---
 
@@ -39,7 +39,7 @@ Além disso, esteja ciente das seguintes limitações e práticas recomendadas:
 
    * Coletar os dados do banco de dados externo do Adobe Campaign e executar as operações no local.
 
-  Se você quiser realizar a personalização de entregas usando dados do banco de dados externo, colete os dados para usar em um fluxo de trabalho para torná-lo disponível em uma tabela temporária. Em seguida, use os dados da tabela temporária para personalizar seu delivery. Para fazer isso, pré-processe a personalização da mensagem em um fluxo de trabalho dedicado usando a opção **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de entrega. Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao target em uma tabela temporária, incluindo dados de tabelas vinculadas em um banco de dados externo.
+  Se você quiser realizar a personalização de entregas usando dados do banco de dados externo, colete os dados para usar em um fluxo de trabalho para torná-lo disponível em uma tabela temporária. Em seguida, use os dados da tabela temporária para personalizar sua entrega. Para fazer isso, pré-processe a personalização da mensagem em um fluxo de trabalho dedicado usando a opção **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de entrega. Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao target em uma tabela temporária, incluindo dados de tabelas vinculadas em um banco de dados externo.
 
   >[!CAUTION]
   >

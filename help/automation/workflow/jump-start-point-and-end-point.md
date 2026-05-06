@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: b96ebf8c-9846-44c3-bd9b-9d617e389b1c
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Elas vão de uma atividade para outra, como no exemplo a seguir:
 
 Para cada transição de tipo &quot;ponto inicial&quot;, uma transição de tipo &quot;ponto final&quot; deve ser posicionada.
 
-É possível inserir vários pontos iniciais e pontos finais no mesmo workflow. Eles são identificados por um número que deve ser inserido nos parâmetros:
+É possível inserir vários pontos iniciais e pontos finais no mesmo fluxo de trabalho. Eles são identificados por um número que deve ser inserido nos parâmetros:
 
 ![](assets/s_user_segmentation_jump_in.png)
 

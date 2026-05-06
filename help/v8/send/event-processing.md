@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '681'
 ht-degree: 56%
 
 ---
@@ -70,7 +70,7 @@ Por padrão, o roteamento é baseado nas seguintes informações:
 
 * O tipo de evento
 * O canal a ser usado (por padrão: email)
-* O template da entrega mais recente, com base na data da publicação
+* O modelo da entrega mais recente, com base na data da publicação
 
 ## Verificar status do evento {#event-statuses}
 
@@ -96,8 +96,8 @@ O número máximo de tentativas de envio foi atingido. O evento é considerado n
 
 Se a entrega de uma mensagem em um canal específico falhar, o Adobe Campaign poderá reenviar a mensagem usando um canal diferente. Por exemplo, se uma entrega no canal SMS falhar, a mensagem será reenviada usando o canal de email.
 
-Para fazer isso, é necessário configurar um workflow que recrie todos os eventos com o status **Delivery error** e atribuir um canal diferente a eles.
+Para fazer isso, é necessário configurar um fluxo de trabalho que recrie todos os eventos com o status **Delivery error** e atribuir um canal diferente a eles.
 
 >[!CAUTION]
 >
->Essa etapa só poderá ser executada usando um workflow e, portanto, é reservada a usuários experts. Para obter mais informações, entre em contato com o executivo da sua conta da Adobe.
+>Essa etapa só poderá ser executada usando um fluxo de trabalho e, portanto, é reservada a usuários experts. Para obter mais informações, entre em contato com o executivo da sua conta da Adobe.

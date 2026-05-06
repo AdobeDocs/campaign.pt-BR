@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Publicar o pacote da campanha
-description: Publicar o pacote da campanha
+title: Publicar o pacote de campanha
+description: Publicar o pacote de campanha
 feature: Distributed Marketing
 role: User
 exl-id: 2cd1981d-f192-41dc-b2f2-4fcd60493079
 source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 86%
 
 ---
 
-# Publicar o pacote da campanha{#publishing-the-campaign-package}
+# Publicar o pacote de campanha{#publishing-the-campaign-package}
 
 Operadores de entidades centrais publicam campanhas que desejam oferecer às entidades locais na **[!UICONTROL list of campaign packages]**.
 
@@ -38,7 +38,7 @@ Uma mensagem de notificação é enviada ao revisor para confirmar a disponibili
 
 ## Adicionar outros revisores {#adding-other-reviewers}
 
-É possível adicionar outros revisores a partir do link **[!UICONTROL Edit...]**, localizado na guia **[!UICONTROL Approval parameters...]** do pacote da campanha.
+É possível adicionar outros revisores a partir do link **[!UICONTROL Edit...]**, localizado na guia **[!UICONTROL Approval parameters...]** do pacote de campanha.
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
@@ -56,7 +56,7 @@ Depois que estiver definido e o pacote for enviado para aprovação, o cronogram
 
 ## Aprovar via console do cliente {#approving-via-the-adobe-campaign-console}
 
-Se nenhum revisor tiver sido especificado ou se nenhum dos operadores notificados tiver aprovado o pacote, o botão **[!UICONTROL Approve the package]** permitirá prosseguir diretamente para a aprovação no **[!UICONTROL Dashboard]** do pacote da campanha ou da visão geral dos pacotes.
+Se nenhum revisor tiver sido especificado ou se nenhum dos operadores notificados tiver aprovado o pacote, o botão **[!UICONTROL Approve the package]** permitirá prosseguir diretamente para a aprovação no **[!UICONTROL Dashboard]** do pacote de campanha ou da visão geral dos pacotes.
 
 ![](assets/s_advuser_mkg_dist_valid_button.png)
 

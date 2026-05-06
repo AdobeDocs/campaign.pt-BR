@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '3410'
-ht-degree: 58%
+source-wordcount: '3442'
+ht-degree: 55%
 
 ---
 
@@ -171,7 +171,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
   </tr> 
   <tr> 
    <td> Duplo </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 10 </td> 
    <td> O endereço do destinatário já estava nessa entrega.<br /> </td> 
   </tr> 
@@ -183,13 +183,13 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
   </tr> 
   <tr> 
    <td> Excluído após arbitragem </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 12 </td> 
    <td> O destinatário foi excluído por uma regra de tipologia de 'arbitragem' de campanha.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído por uma regra SQL </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 11 </td> 
    <td> O destinatário foi excluído por uma regra de tipologia de campanha do tipo "SQL".<br /> </td> 
   </tr> 
@@ -203,7 +203,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
    <td> Caixa de entrada cheia </td> 
    <td> Suave </td> 
    <td> 5 </td> 
-   <td> A caixa de entrada deste usuário está cheia e não pode receber mais mensagens. Este perfil será alvo novamente até que a contagem de erros chegue a 5. Após isso, o registro será definido como Status de Quarentena e não haverá nenhuma tentativa nova.<br /> Esse tipo de erro é gerenciado por um processo de limpeza, o endereço é definido como um status válido após 30 dias.<br /> Aviso: para que o endereço seja removido automaticamente da lista de endereços em quarentena, o fluxo de trabalho técnico de Limpeza do banco de dados deve ser iniciado.<br /> </td> 
+   <td> A caixa de entrada deste usuário está cheia e não pode receber mais mensagens. Este perfil será alvo novamente até que a contagem de erros chegue a 5. Após isso, o registro será definido como Status de Quarentena e não haverá nenhuma tentativa nova.<br /> Esse tipo de erro é gerenciado por um processo de limpeza, o endereço é definido como um status válido após 30 dias.<br /> Aviso: para que o endereço seja removido automaticamente da lista de endereços em quarentena, o fluxo de trabalho técnico de Limpeza de banco de dados deve ser iniciado.<br /> </td> 
   </tr> 
   <tr> 
    <td> Não conectado </td> 
@@ -219,7 +219,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
   </tr> 
   <tr> 
    <td> Não se qualifica para as ofertas </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 16 </td> 
    <td> O destinatário não foi qualificado para as ofertas na entrega.<br /> </td> 
   </tr> 
@@ -231,7 +231,7 @@ Para o canal de email, os possíveis motivos para uma falha de delivery estão l
   </tr> 
   <tr> 
    <td> Target limitado em tamanho </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 17 </td> 
    <td> O tamanho máximo de entrega foi atingido para o destinatário.<br /> </td> 
   </tr> 
@@ -321,7 +321,7 @@ Em sincronia, se o APNs retornar um status &quot;não registrado&quot; para uma 
    <td> Não<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problema de certificado (senha, corrupção, etc.) e teste de conexão para problema APNs<br /> </td> 
+   <td> Problema de certificado (senha, corrupção, etc.) e testar conexão com problema de APNs<br /> </td> 
    <td> Falha<br /> </td> 
    <td> Várias mensagens de erro de acordo com o erro<br /> </td> 
    <td> Suave<br /> </td> 
@@ -456,7 +456,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
   <tr> 
    <td> Rejeição da mensagem FCM: todos os outros erros<br /> </td> 
    <td> Falha<br /> </td> 
-   <td> O servidor Firebase Cloud Messaging retornou um código de erro inesperado: {1} </td> 
+   <td> O servidor do Firebase Cloud Messaging retornou um código de erro inesperado: {1} </td> 
    <td> </td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
@@ -473,7 +473,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Rejeição da mensagem FCM: erro de autenticação de terceiros<br /> </td> 
    <td> Falha<br /> </td> 
    <td> THIRD_PARTY_AUTH_ERROR </td> 
-   <td> Ignorado</td>
+   <td> Ignored</td>
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
@@ -505,7 +505,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Rejeição da mensagem FCM: indisponível<br /> </td> 
    <td> Falha<br /> </td> 
    <td> INDISPONÍVEL</td> 
-   <td> Ignorado</td> 
+   <td> Ignored</td> 
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
@@ -513,7 +513,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Rejeição da mensagem FCM: código de erro inesperado<br /> </td> 
    <td> Falha<br /> </td> 
    <td> código de erro inesperado</td> 
-   <td> Ignorado</td> 
+   <td> Ignored</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
@@ -521,7 +521,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Autenticação: problema de conexão<br /> </td> 
    <td> Falha<br /> </td> 
    <td> Impossível conectar-se ao servidor de autenticação </td> 
-   <td> Ignorado</td>
+   <td> Ignored</td>
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
@@ -545,7 +545,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Autenticação: acesso negado<br /> </td> 
    <td> Falha<br /> </td>
    <td> access_denied</td> 
-   <td> Ignorado</td>
+   <td> Ignored</td>
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
@@ -561,7 +561,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Autenticação: JWT inválido<br /> </td> 
    <td> Falha<br /> </td> 
    <td> invalid_grant </td> 
-   <td> Ignorado</td> 
+   <td> Ignored</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
@@ -569,7 +569,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Autenticação: assinatura JWT inválida<br /> </td> 
    <td> Falha<br /> </td> 
    <td> invalid_grant </td> 
-   <td> Ignorado</td> 
+   <td> Ignored</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
@@ -585,7 +585,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Autenticação: cliente OAuth desabilitado<br /> </td> 
    <td> Falha<br /> </td> 
    <td> disabled_client</td> 
-   <td> Ignorado</td> 
+   <td> Ignored</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
@@ -639,7 +639,7 @@ As especificidades do canal SMS estão listadas abaixo.
   <tr> 
    <td> Confirmação MT inválida<br /> </td> 
    <td> Falha<br /> </td> 
-   <td> Erro '{1}' ao processar quadro de confirmação para enviar a consulta<br /> </td> 
+   <td> Erro '{1}' ao processar quadro de confirmação para enviar query<br /> </td> 
    <td> Suave<br /> </td> 
    <td> Inacessível<br /> </td> 
   </tr> 

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: e465b846b3144a2138bb912b4baa09238f8c5b4c
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 67%
+source-wordcount: '1429'
+ht-degree: 65%
 
 ---
 
@@ -55,7 +55,7 @@ Para criar seu **[!UICONTROL Report suite]** em [!DNL Adobe Analytics], siga as 
 
 1. Na página **[!UICONTROL Report suite manager]**, clique em **[!UICONTROL Create new]** e depois em **[!UICONTROL Report suite]**.
 
-   Para obter o procedimento detalhado sobre a criação de **[!UICONTROL Report suite]**, consulte a [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=pt-BR#prerequisites){target="_blank"}.
+   Para obter o procedimento detalhado sobre a criação de **[!UICONTROL Report suite]**, consulte a [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -191,7 +191,7 @@ Para obter mais informações, consulte a página [Perfis de produto do Adobe An
 
 >[!NOTE]
 >
->Se estiver usando várias ferramentas de medição de público, você pode selecionar **[!UICONTROL Other]** na lista suspensa **[!UICONTROL Partners]** ao criar a conta externa. Você só pode fazer referência a uma conta externa nas propriedades de entrega: será necessário adaptar a fórmula de URLs rastreadas adicionando os parâmetros esperados pela Adobe e todas as outras ferramentas de medição usadas.
+>Se estiver usando várias ferramentas de medição de público-alvo, você pode selecionar **[!UICONTROL Other]** na lista suspensa **[!UICONTROL Partners]** ao criar a conta externa. Você só pode fazer referência a uma conta externa nas propriedades de entrega: será necessário adaptar a fórmula de URLs rastreadas adicionando os parâmetros esperados pela Adobe e todas as outras ferramentas de medição usadas.
 
 ## Fluxo de trabalho técnico de processos de análise da web {#technical-workflows-of-web-analytics-processes}
 
@@ -201,9 +201,9 @@ Este fluxo de trabalho está disponível na árvore do Campaign Explorer, na pas
 
 ![](assets/webanalytics_workflows.png)
 
-O fluxo de trabalho **[!UICONTROL Sending of indicators and campaign attributes]** permite enviar indicadores de campanha de email via Adobe Campaign para a Adobe Experience Cloud usando o Adobe Analytics Connector. Esse workflow é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
+O fluxo de trabalho **[!UICONTROL Sending of indicators and campaign attributes]** permite enviar indicadores de campanha de email via Adobe Campaign para a Adobe Experience Cloud usando o Adobe Analytics Connector. Esse fluxo de trabalho é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
 
-Observe que esse workflow não deve ser reiniciado ou todos os dados anteriores podem distorcer os resultados do Analytics.
+Observe que esse fluxo de trabalho não deve ser reiniciado ou todos os dados anteriores podem distorcer os resultados do Analytics.
 
 Os indicadores envolvidos são:
 
@@ -251,19 +251,19 @@ Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois q
 
 ## Criar uma campanha de re-marketing {#create-a-re-marketing-campaign}
 
-Para preparar sua campanha de re-marketing, basta criar templates de entrega para campanhas do tipo re-marketing. Em seguida, configure sua campanha de re-marketing e a vincule a um segmento. Cada segmento deve ter uma campanha de re-marketing diferente.
+Para preparar sua campanha de re-marketing, basta criar modelos de entrega para campanhas do tipo re-marketing. Em seguida, configure sua campanha de re-marketing e a vincule a um segmento. Cada segmento deve ter uma campanha de re-marketing diferente.
 
 As campanhas re-marketing são iniciadas automaticamente quando o Adobe Campaign conclui a recuperação dos segmentos que analisam o comportamento das pessoas direcionadas pela campanha inicial. No caso de abandono do carrinho ou visualização do produto sem uma compra, um delivery é enviado aos recipients relacionados para que o site navegue para finalizar a compra.
 
-O Adobe Campaign fornece templates de entrega personalizados que você pode usar ou o banco de dados para preparar campanhas.
+O Adobe Campaign fornece modelos de entrega personalizados que você pode usar ou o banco de dados para preparar campanhas.
 
 1. No **[!UICONTROL Explorer]**, acesse a pasta **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** da árvore do Adobe Campaign.
-1. Duplique o template **[!UICONTROL Email delivery (re-marketing)]** ou os exemplos de template de re-marketing oferecidos pelo Adobe Campaign.
-1. Personalize o template para atender às suas necessidades e salve.
-1. Crie uma nova campanha e selecione o template **[!UICONTROL Re-marketing campaign]** na lista suspensa.
-1. Clique no link **[!UICONTROL Configure...]** para especificar o segmento e o template de entrega vinculados à campanha.
+1. Duplique o modelo **[!UICONTROL Email delivery (re-marketing)]** ou os exemplos de modelo de re-marketing oferecidos pelo Adobe Campaign.
+1. Personalize o modelo para atender às suas necessidades e salve.
+1. Crie uma nova campanha e selecione o modelo **[!UICONTROL Re-marketing campaign]** na lista suspensa.
+1. Clique no link **[!UICONTROL Configure...]** para especificar o segmento e o modelo de entrega vinculados à campanha.
 1. Selecione a [conta externa](#external-account-ac) do Analytics e o segmento relacionado.
-1. Selecione o template de entrega a ser usado para essa campanha de re-marketing e clique em **[!UICONTROL Finish]** para fechar a janela.
+1. Selecione o modelo de entrega a ser usado para essa campanha de re-marketing e clique em **[!UICONTROL Finish]** para fechar a janela.
 1. Clique em **[!UICONTROL OK]** para fechar a janela do Campaign.
 
 O relatório **[!UICONTROL Re-marketing efficiency]** é acessado por meio da página de relatórios globais. Ele permite que você visualize o número de contatos convertidos (isto é, quem comprou algo) em relação ao número de abandonos do carrinho após a campanha de re-marketing do Adobe Campaign. A taxa de conversão é calculada por semana, mês ou desde o início da sincronização entre o Adobe Campaign e o Adobe Analytics.

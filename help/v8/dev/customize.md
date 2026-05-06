@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 10%
+source-wordcount: '525'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +28,7 @@ A Adobe Campaign usa esquemas de dados para:
 * Definir links entre os diferentes objetos de dados no aplicativo Campaign
 * Definir e descrever os campos individuais incluídos em cada objeto
 
-Por exemplo, para adicionar um campo a uma tabela existente, como a tabela do recipient (nms:recipient), é necessário estender esse esquema.
+Por exemplo, para adicionar um campo a uma tabela existente, como a tabela de recipients (nms:recipient), é necessário estender esse esquema.
 
 Dois modos de extensão de tabela estão disponíveis:
 
@@ -57,7 +57,7 @@ Saiba como modificar um formulário de entrada existente ou criar um novo formul
 
 ## Personalizar painéis{#gs-custom-dashboards}
 
-A interface do Adobe Campaign usa muitas aplicações web para acessar, gerenciar e interagir com recipients, deliveries, campanhas, estoques, etc. Elas são vistas na interface do formulário de painéis com apenas uma página.
+A interface do Adobe Campaign usa muitas aplicações web para acessar, gerenciar e interagir com recipients, deliveries, campanhas, estoques, etc. Eles são vistos na interface do formulário de painéis com apenas uma página.
 
 Os aplicativos Web internos são armazenados na pasta **Administration > Configuration > Web applications** do Explorer.
 

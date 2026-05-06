@@ -10,7 +10,7 @@ exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
 source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 82%
+ht-degree: 75%
 
 ---
 
@@ -49,7 +49,7 @@ Consulte [Código SQL](sql-code-and-javascript-code.md#important-notes) para obt
 
    >[!CAUTION]
    >
-   >É a responsabilidade do gravador de script SQL garantir que o script SQL esteja funcional e que suas referências (nomes de campos, etc.) estejam de acordo com o esquema de saída.
+   >É a responsabilidade do gravador de script SQL garantir que o script SQL esteja funcional e que suas referências (nomes de campos etc.) estão de acordo com o schema de saída.
 
    Para carregar um código SQL existente, selecione a opção **[!UICONTROL The SQL script is contained in an entity stored in the database]**. Os scripts SQL devem ser criados e armazenados no menu **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**.
 

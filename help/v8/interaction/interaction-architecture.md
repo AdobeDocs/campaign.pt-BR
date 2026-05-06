@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 65%
+source-wordcount: '1326'
+ht-degree: 63%
 
 ---
 
@@ -78,7 +78,7 @@ Você deve estar ciente dos seguintes mecanismos de sincronização:
 
 ### Configuração de pacotes {#packages-configuration}
 
-Quaisquer extensões de esquema diretamente vinculadas à **Interação** (ofertas, propostas, destinatários, etc.) devem ser implantadas nas instâncias de execução.
+Quaisquer extensões de esquema diretamente vinculadas à **Interação** (ofertas, propostas, recipients, etc.) deve ser implantado nas instâncias de execução.
 
 O pacote **Interaction** está instalado em todas as instâncias (controle e execução). Dois pacotes adicionais estão disponíveis: um pacote para as instâncias de controle e outro para cada instância de execução.
 

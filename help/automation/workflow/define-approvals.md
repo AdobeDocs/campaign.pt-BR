@@ -17,11 +17,11 @@ ht-degree: 98%
 
 
 
-As aprovações permitem que os operadores tomem decisões que regem um workflow ou confirmem sua execução contínua.
+As aprovações permitem que os operadores tomem decisões que regem um fluxo de trabalho ou confirmem sua execução contínua.
 
-Uma mensagem é enviada a um grupo de operadores e o workflow aguarda uma resposta antes de continuar. O workflow não é interrompido e outras operações podem ocorrer. Por exemplo, pode haver várias aprovações simultâneas pendentes.
+Uma mensagem é enviada a um grupo de operadores e o fluxo de trabalho aguarda uma resposta antes de continuar. O fluxo de trabalho não é interrompido e outras operações podem ocorrer. Por exemplo, pode haver várias aprovações simultâneas pendentes.
 
-Uma aprovação pode conter várias opções para o operador escolher. No entanto, é possível restringir o número de escolhas a um para enviar uma tarefa a ser executada por um operador, como, por exemplo, a execução de target. O operador pode responder depois que a tarefa for executada (o processo então reinicia). O exemplo a seguir ilustra esses tipos de aprovações:
+Uma aprovação pode conter várias opções para o operador escolher. No entanto, é possível restringir o número de escolhas a um para enviar uma tarefa a ser executada por um operador, como, por exemplo, a execução de direcionamento. O operador pode responder depois que a tarefa for executada (o processo então reinicia). O exemplo a seguir ilustra esses tipos de aprovações:
 
 ![](assets/validation-1.png)
 
@@ -39,15 +39,15 @@ Um operador pode responder de uma das duas formas seguintes: validação usando 
 
 É possível receber uma mensagem de aprovação contendo um link para uma página da Web pela qual é possível responder. Para que o operador de target receba um email de aprovação, o endereço de email do operador deve ser completo. Se esse não for o caso, o operador deverá usar o console para responder.
 
-Emails de aprovação são enviados continuamente. O template da entrega padrão é **[!UICONTROL notifyAssignee]**: ele é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar templates para cada atividade.
+Emails de aprovação são enviados continuamente. O modelo da entrega padrão é **[!UICONTROL notifyAssignee]**: ele é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar modelos para cada atividade.
 
-As entregas criadas por meio desse template são armazenadas na pasta **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
+As entregas criadas por meio desse modelo são armazenadas na pasta **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
 ## Aprovações pelo console {#approval-via-the-console}
 
 Em operações, os elementos a serem aprovados são exibidos no painel da campanha.
 
-Para workflows técnicos, as tarefas que o usuário pode aprovar podem ser acessadas a partir da estrutura de árvore na pasta **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**.
+Para fluxos de trabalho técnicos, as tarefas que o usuário pode aprovar podem ser acessadas a partir da estrutura de árvore na pasta **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**.
 
 ![](assets/validation-node.png)
 
@@ -62,7 +62,7 @@ Os grupos de operadores para aprovações devem ser designados como atribuiçõe
 
 ## Expirações {#expirations}
 
-Expirações são transições específicas usadas em diferentes tipos de atividade e, particularmente, em aprovações. Você pode usar uma expiração para acionar uma ação após um determinado tempo sem resposta. Ela também pode ser usada para perseguir o workflow e atribuir uma aprovação a um grupo diferente.
+Expirações são transições específicas usadas em diferentes tipos de atividade e, particularmente, em aprovações. Você pode usar uma expiração para acionar uma ação após um determinado tempo sem resposta. Ela também pode ser usada para perseguir o fluxo de trabalho e atribuir uma aprovação a um grupo diferente.
 
 A segunda guia nas propriedades da atividade de aprovação permite definir uma ou mais expirações. Na verdade, você pode definir vários tipos de expiração.
 
@@ -82,8 +82,8 @@ A opção **[!UICONTROL Do not terminate the task]** deixa a aprovação ativa q
 Você pode criar quatro tipos de expirações:
 
 * **Delay after task start**: a expiração é calculada adicionando-se um período de tempo especificado à data em que a aprovação é ativada.
-* **Delay after a given date**: a expiração é calculada adicionando um período a uma data especificada. 
-* **Delay before a given date**: a expiração é calculada subtraindo-se um período de uma data especificada. 
+* **Delay after a given date**: a expiração é calculada adicionando um período a uma data especificada.
+* **Delay before a given date**: a expiração é calculada subtraindo-se um período de uma data especificada.
 * **Expiration calculated by script**: a expiração é calculada usando o JavaScript.
 
   O exemplo a seguir calcula uma expiração 24 horas antes da data em que uma entrega é iniciada (identificada por **vars.deliveryId**):
@@ -106,7 +106,7 @@ A aprovação múltipla é útil para mecanismos de voto ou pesquisa. Você pode
 
 Os operadores em um grupo devem ter pelo menos os seguintes direitos para poder responder a uma solicitação de aprovação:
 
-* Permissões de gravação para workflow.
+* Permissões de gravação para fluxo de trabalho.
 * Permissões de leitura e gravação para a pasta que contém as tarefas a serem aprovadas.
 
-O grupo &#39;Execução de workflow&#39; tem esses direitos. Um operador adicionado a esse grupo tem os direitos de responder a uma solicitação de aprovação.
+O grupo &#39;Execução de fluxo de trabalho&#39; tem esses direitos. Um operador adicionado a esse grupo tem os direitos de responder a uma solicitação de aprovação.

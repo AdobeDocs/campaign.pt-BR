@@ -7,8 +7,8 @@ level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 20%
+source-wordcount: '651'
+ht-degree: 19%
 
 ---
 
@@ -53,7 +53,7 @@ Essa integração pode ser usada para criar um boletim informativo no Adobe Expe
 
    ![](assets/aem_authoring_4.png)
 
-1. Na primeira lista suspensa, selecione **[!UICONTROL Approve Adobe Campaign]** como modelo de workflow e clique em **[!UICONTROL Start workflow]**.
+1. Na primeira lista suspensa, selecione **[!UICONTROL Approve Adobe Campaign]** como modelo de fluxo de trabalho e clique em **[!UICONTROL Start workflow]**.
 
    ![](assets/aem_authoring_5.png)
 

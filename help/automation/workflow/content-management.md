@@ -1,25 +1,25 @@
 ---
 product: campaign
-title: Gestão de conteúdo
-description: Gestão de conteúdo
+title: Gerenciamento de conteúdo
+description: Gerenciamento de conteúdo
 feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 85%
+source-wordcount: '472'
+ht-degree: 83%
 
 ---
 
-# Gestão de conteúdo{#content-management}
+# Gerenciamento de conteúdo{#content-management}
 
-Uma atividade de **Gestão de conteúdo** permite criar e manipular um conteúdo e gerar arquivos com base nesse conteúdo. Esse conteúdo pode ser entregue por meio de uma atividade de &#39;Delivery&#39;.
+Uma atividade de **Gerenciamento de conteúdo** permite criar e manipular um conteúdo e gerar arquivos com base nesse conteúdo. Esse conteúdo pode ser entregue por meio de uma atividade de &#39;Delivery&#39;.
 
 >[!CAUTION]
 >
->A gestão de conteúdo é um módulo opcional do Adobe Campaign. Verifique o contrato de licença.
+>O gerenciamento de conteúdo é um módulo opcional do Adobe Campaign. Verifique o contrato de licença.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ As propriedades da atividade são divididas em três etapas:
 
    * **[!UICONTROL Specified in the transition]**
 
-     Essa opção permite usar o conteúdo especificado na transição, ou seja, o evento que ativa o gerenciamento de conteúdo deve conter uma variável **[!UICONTROL contentId]**. Essa variável pode ter sido definida por uma gestão de conteúdo anterior ou por qualquer script.
+     Essa opção permite usar o conteúdo especificado na transição, ou seja, o evento que ativa o gerenciamento de conteúdo deve conter uma variável **[!UICONTROL contentId]**. Essa variável pode ter sido definida por uma gerenciamento de conteúdo anterior ou por qualquer script.
 
    * **[!UICONTROL Explicit]**
 
@@ -47,13 +47,13 @@ As propriedades da atividade são divididas em três etapas:
 
    * **[!UICONTROL Calculated by a script]**
 
-     O identificador de conteúdo é calculado por um script. O campo **[!UICONTROL Script]** permite definir um template JavaScript avaliando o identificador (chave primária) do conteúdo. Este campo fica visível somente quando a opção **[!UICONTROL Calculated by a script]** é selecionada.
+     O identificador de conteúdo é calculado por um script. O campo **[!UICONTROL Script]** permite definir um modelo JavaScript avaliando o identificador (chave primária) do conteúdo. Este campo fica visível somente quando a opção **[!UICONTROL Calculated by a script]** é selecionada.
 
      ![](assets/content_mgmt_script.png)
 
    * **[!UICONTROL New, created from a publication template]**
 
-     Cria um novo conteúdo a partir de um template de publicação. Esse novo conteúdo será salvo no arquivo especificado no campo **[!UICONTROL String]**. O campo **[!UICONTROL Template]** especifica o template de publicação a ser usado para criar o conteúdo.
+     Cria um novo conteúdo a partir de um modelo de publicação. Esse novo conteúdo será salvo no arquivo especificado no campo **[!UICONTROL String]**. O campo **[!UICONTROL Template]** especifica o modelo de publicação a ser usado para criar o conteúdo.
 
      ![](assets/content_mgmt_new.png)
 
@@ -79,7 +79,7 @@ As propriedades da atividade são divididas em três etapas:
 
    * **[!UICONTROL Generate]**
 
-     Essa opção salva o conteúdo e gera os arquivos de output para cada template de transformação com uma publicação de tipo &#39;Arquivo&#39;.
+     Essa opção salva o conteúdo e gera os arquivos de output para cada modelo de transformação com uma publicação de tipo &#39;Arquivo&#39;.
 
      ![](assets/content_mgmt_generate.png)
 

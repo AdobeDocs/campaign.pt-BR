@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1209'
 ht-degree: 68%
 
 ---
@@ -152,7 +152,7 @@ Para fazer isso, siga as etapas abaixo.
 
 1. Clique no botão **[!UICONTROL Send]** e selecione a opção **[!UICONTROL Postpone delivery]**.
 
-1. Especifique uma data de início no campo **[!UICONTROL Contact date]**.
+1. Especifique uma data inicial no campo **[!UICONTROL Contact date]**.
 
    ![](assets/delivery-send-postpone.png)
 

@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Centro de Mensagens (Controle){#message-center-control}
 
-O workflow detalhado abaixo é agendado para ser executado a cada hora. Ele é instalado por padrão com o módulo do **Centro de Mensagens – Controle**.
+O fluxo de trabalho detalhado abaixo é agendado para ser executado a cada hora. Ele é instalado por padrão com o módulo do **Centro de Mensagens – Controle**.
 
 
 <table> 
@@ -28,7 +28,7 @@ O workflow detalhado abaixo é agendado para ser executado a cada hora. Ele é i
   <tr> 
    <td> Message Center &lt;external_account_name&gt;<br /> </td> 
    <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
-   <td> Esse workflow:<br /> 
+   <td> Esse fluxo de trabalho:<br /> 
     <ul> 
      <li> <p>recupera a lista de eventos processados pela(s) operação(s).</p> </li> 
      <li> <p>sincroniza com a tabela NmsBroadLogMsg para recuperar as qualificações da mensagem de entrega.</p> </li> 

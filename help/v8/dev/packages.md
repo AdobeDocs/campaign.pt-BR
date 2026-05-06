@@ -8,8 +8,8 @@ exl-id: bf1ae889-9c07-4acf-8fd0-55b57151bc47
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 53%
+source-wordcount: '1944'
+ht-degree: 51%
 
 ---
 
@@ -93,7 +93,7 @@ Para exportar um conjunto de objetos em um pacote de dados, siga estas etapas:
 
    >[!CAUTION]
    >
-   >Se exportar um tipo de pasta **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** ou **[!UICONTROL Plan]**, nunca selecione a **xtk:folder**, já que alguns dados podem ser perdidos. Selecione a entidade que corresponde à pasta: **nms:offerCategory** para categorias de ofertas, **nms:offerEnv** para ambientes de ofertas, **nms:program** para programas e **nms:plan** para planos.
+   >Se exportar um **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** ou **[!UICONTROL Plan]** tipo de pasta, nunca selecione o **xtk:folder**, pois alguns dados poderão ser perdidos. Selecione a entidade que corresponde à pasta: **nms:offerCategory** para categorias de ofertas, **nms:offerEnv** para ambientes de ofertas, **nms:program** para programas e **nms:plan** para planos.
 
    O mecanismo de dependência controla a sequência de exportação da entidade. Para obter mais informações, consulte [Gerenciamento de dependências](#manage-dependencies).
 
@@ -101,7 +101,7 @@ Para exportar um conjunto de objetos em um pacote de dados, siga estas etapas:
 
    >[!NOTE]
    >
-   >O editor de query é apresentado [nesta seção](../../automation/workflow/query.md).
+   >O editor de consultas é apresentado [nesta seção](../../automation/workflow/query.md).
 
 1. Clique em **[!UICONTROL Next]** e selecione a ordem de classificação dos dados exportados.
 
@@ -282,7 +282,7 @@ Você sempre deve importar dentro da mesma versão da plataforma. Você deve ver
 >
 >A Adobe não oferece suporte à importação entre diferentes versões.
 
-Preste atenção ao schema e à estrutura do banco de dados. A importação de um pacote com schema deve ser seguida pela geração do schema.
+Preste atenção ao esquema e à estrutura do banco de dados. A importação de um pacote com schema deve ser seguida pela geração do schema.
 
 ### Tipos de pacotes {#package-types}
 
@@ -290,7 +290,7 @@ Comece definindo diferentes tipos de pacotes. Somente quatro tipos são usados:
 
 **Entidades**
 
-* Todos os elementos específicos “xtk” e “nms” no Adobe Campaign, como schemas, formulários, pastas, modelos de entrega etc.
+* Todos os elementos específicos “xtk” e “nms” no Adobe Campaign, como esquemas, formulários, pastas, modelos de entrega etc.
 * Você pode considerar uma entidade como um elemento “admin” e “platform”.
 * Não se deve incluir mais de uma entidade ao fazer upload de um pacote em uma instância do Campaign.
 
@@ -334,7 +334,7 @@ Para ajudar na importação, os pacotes de entidade devem ser ordenados, pois de
 
 Por exemplo:
 
-* 001 - Schema
+* 001 - Esquema
 * 002 - Formulário
 * 003 - Imagens
 * etc.
@@ -346,7 +346,7 @@ Por exemplo:
 
 #### Documentação do pacote {#package-documentation}
 
-Ao atualizar um pacote, você deve sempre colocar um comentário no campo de descrição para detalhar quaisquer modificações e motivos (por exemplo, &quot;adicionar um novo schema&quot; ou &quot;corrigir um defeito&quot;).
+Ao atualizar um pacote, você deve sempre colocar um comentário no campo de descrição para detalhar quaisquer modificações e motivos (por exemplo, &quot;adicionar um novo esquema&quot; ou &quot;corrigir um defeito&quot;).
 
 A prática recomendada também é inserir a data da atualização.
 

@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 94%
+source-wordcount: '1196'
+ht-degree: 93%
 
 ---
 
@@ -71,8 +71,8 @@ Depois de criar o serviço [!DNL LINE], é necessário configurar a conta extern
    ![](assets/line_config_2.png)
 
    * **[!UICONTROL Channel Alias]**: é fornecido por meio da conta [!DNL LINE] na guia **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]**.
-   * **[!UICONTROL Channel ID]**: é fornecida por meio da conta [!DNL LINE] na guia **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]**.
-   * **[!UICONTROL Channel secret key]**: é fornecida por meio da conta [!DNL LINE] na guia **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]**.
+   * **[!UICONTROL Channel ID]**: é fornecido por meio da conta [!DNL LINE] na guia **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]**.
+   * **[!UICONTROL Channel secret key]**: é fornecido por meio da conta [!DNL LINE] na guia **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]**.
    * **[!UICONTROL Access token]**: é fornecido por meio da conta [!DNL LINE] no portal do desenvolvedor ou clicando no botão **[!UICONTROL Get access token]**.
    * **[!UICONTROL Access token expiration date]**: permite especificar a data de expiração do token de acesso.
    * **[!UICONTROL LINE subscription service]**: permite especificar os serviços aos quais os usuários serão inscritos.
@@ -101,7 +101,7 @@ Para criar uma entrega [!DNL LINE], é necessário seguir estas etapas:
 
 1. Identifique a entrega com um **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** e **[!UICONTROL Description]**. Para obter mais informações, consulte [esta seção](../../start/create-message.md#create-the-delivery).
 
-1. Clique em **[!UICONTROL Continue]** para criar a entrega de 
+1. Clique em **[!UICONTROL Continue]** para criar a entrega de
 
 1. No editor de entrega, selecione **[!UICONTROL To]** para direcionar os destinatários da entrega [!DNL LINE]. O direcionamento foi realizado em **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
 

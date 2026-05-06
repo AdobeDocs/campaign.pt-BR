@@ -7,14 +7,14 @@ level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1518'
 ht-degree: 55%
 
 ---
 
 # Notas de versão de 2023 {#2023-rn}
 
-Esta página lista novos recursos, melhorias e correções incluídos nas **versões do Campaign v8 de 2023**.  Para obter a versão mais recente, consulte [esta página](release-notes.md).
+Esta página lista novos recursos, melhorias e correções incluídos nas **versões do Campaign v8 de 2023**. Para obter a versão mais recente, consulte [esta página](release-notes.md).
 
 Para qualquer nova implementação ou atualização para um ambiente existente, instale a [versão mais recente](release-notes.md).
 

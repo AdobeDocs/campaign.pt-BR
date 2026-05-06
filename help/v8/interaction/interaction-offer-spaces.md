@@ -7,8 +7,8 @@ level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 48%
+source-wordcount: '848'
+ht-degree: 47%
 
 ---
 
@@ -69,7 +69,7 @@ O status da apresentação da oferta varia dependendo das interações com a pop
 
 >[!NOTE]
 >
->A atualização de status é um processo **assíncrono**. Ele é realizado pelo workflow de rastreamento que é acionado a cada hora.
+>A atualização de status é um processo **assíncrono**. Ele é realizado pelo fluxo de trabalho de rastreamento que é acionado a cada hora.
 
 ### Lista de status da oferta {#status-list}
 

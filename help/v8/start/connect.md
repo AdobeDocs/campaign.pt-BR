@@ -5,10 +5,10 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: ht
-source-wordcount: '1006'
-ht-degree: 100%
+source-git-commit: 5319391ca0f76292e57fafae540b7edb7925892b
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 94%
 
 ---
 
@@ -91,6 +91,19 @@ Em seguida, você pode fazer logon no Campaign com sua Adobe ID.
 >
 >Como o Microsoft Edge Webview2 não salva as credenciais de proxy, o Console pode solicitar que você se autentique duas vezes na primeira conexão.
 
+## Solução de problemas de logon do Adobe ID {#troubleshoot-ims-login}
+
+Se tiver problemas ao entrar no **[!UICONTROL Client Console]** com sua Adobe ID, tente limpar o cache local do WebView2. Na maioria dos casos, isso resolve o problema. Siga as etapas abaixo:
+
+1. Feche o **[!UICONTROL Client Console]** e pare qualquer processo `nlclient` em execução.
+
+1. Exclua todas as pastas `webview2` e `webview2Cache` dos locais a seguir.
+
+   * `C:\ProgramData\Neolane\NL_5\nlclient\`
+   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
+
+1. Reinicie o **[!UICONTROL Client Console]** e entre com sua Adobe ID. As pastas de cache serão automaticamente recriadas na próxima inicialização.
+
 ## Atualizar o Console do cliente{#upgrade-ac-console}
 
 Após atualizar o sistema para uma versão mais recente, você deve atualizar o Console do cliente para a mesma versão. Essa é uma prática recomendada e a atualização é obrigatória para algumas versões. Nesses casos, isso é mencionado nas [Notas de versão](release-notes.md).
@@ -117,7 +130,7 @@ Saiba mais sobre usuários e como definir suas permissões [nesta seção](gs-pe
 
 ### Interface da web {#connect-web-ui}
 
-A partir da versão 8.6 do Campaign, você terá acesso à nova **interface de usuário do Campaign Web**, disponível por meio do ambiente central da Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços. 
+A partir da versão 8.6 do Campaign, você terá acesso à nova **interface de usuário do Campaign Web**, disponível por meio do ambiente central da Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços.
 
 >[!AVAILABILITY]
 >

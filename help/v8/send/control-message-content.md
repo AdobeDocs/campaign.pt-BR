@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '769'
 ht-degree: 97%
 
 ---
@@ -22,10 +22,10 @@ Siga os princípios listados abaixo ao criar o conteúdo da mensagem:
 * [Endereço do remetente](#sender-address): o endereço deve identificar explicitamente o remetente. O domínio deve ser de propriedade do remetente e registrado por ele. O registro de domínio não deve ser privatizado.
 * [Personalização](#personalization): personalizar o conteúdo e definir um tempo de envio por destinatário aumenta as chances de sua mensagem ser aberta.
 * Imagens e texto: respeitar uma proporção adequada de texto/imagem (por exemplo, 60% de texto e 40% de imagens).
-* [Link de unsubscription &#x200B;](#opt-out) e landing page: o link de unsubscription é essencial. Deve ser visível e válido e o formulário deve ser funcional.
+* [Link de unsubscription &#x200B;](#opt-out) e página de destino: o link de unsubscription é essencial. Deve ser visível e válido e o formulário deve ser funcional.
 * Pré-visualização: use as ferramentas oferecidas pelo Adobe Campaign para verificar e otimizar o conteúdo do seu email ([renderização de caixa de entrada](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
-Para obter dicas adicionais para otimizar a capacidade de entrega ao projetar conteúdo, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=pt-BR){target="_blank"}.
+Para obter dicas adicionais para otimizar a capacidade de entrega ao projetar conteúdo, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery){target="_blank"}.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Para obter mais informações sobre o uso de campos de personalização no Adobe
 
 Por padrão, quando a mensagem é analisada, uma [regra de tipologia](../../automation/campaign-opt/apply-rules.md) verifica se um link para opção de não participação foi incluído e gera um aviso caso ele esteja ausente. É possível alterar essa regra para gerar um erro ao invés de um simples aviso e, assim, impedir que uma entrega saia sem esse link.
 
-Você deve verificar se o link de opt-out funciona corretamente antes de cada vez que enviar. Por exemplo, ao enviar a prova, verifique se o link é válido, se o formulário está online e se a validação altera o valor do campo **[!UICONTROL No longer contact this recipient]** para **[!UICONTROL Yes]**. Você deve fazer essa verificação sistematicamente, pois sempre é possível que ocorra um erro humano ao inserir o link ou ao alterar o formulário.
+Você deve verificar se o link para opção de não participação funciona corretamente antes de cada vez que enviar. Por exemplo, ao enviar a prova, verifique se o link é válido, se o formulário está online e se a validação altera o valor do campo **[!UICONTROL No longer contact this recipient]** para **[!UICONTROL Yes]**. Você deve fazer essa verificação sistematicamente, pois sempre é possível que ocorra um erro humano ao inserir o link ou ao alterar o formulário.
 
 Saiba como inserir um link para opção de não participação [nesta seção](personalization-blocks.md#ootb-personalization-blocks)
 

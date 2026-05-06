@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: c7f139dd7f139ba421eb034f4d8911671b3b3332
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 27%
+source-wordcount: '838'
+ht-degree: 28%
 
 ---
 
@@ -106,5 +106,5 @@ A tabela abaixo mostra como os KPIs e os status dos logs de envio são atualizad
 | A mensagem foi transmitida com êxito do Campaign para o MTA | A porcentagem de **[!UICONTROL Success]** não é exibida (começa em 0%) | Levado em consideração pelo provedor de serviço |
 | Mensagens com rejeição permanente são relatadas de volta do MTA | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Com falha |
 | Mensagens com rejeição temporária são relatadas de volta do MTA | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Levado em consideração pelo provedor de serviço |
-| Tentativas de mensagens com rejeição temporária são bem-sucedidas | A porcentagem de **[!UICONTROL Success]** é aumentada de maneira apropriada | Enviada |
+| Tentativas de mensagens com rejeição temporária são bem-sucedidas | A porcentagem de **[!UICONTROL Success]** é aumentada de maneira apropriada | Enviado |
 | Falha nas tentativas de mensagens com rejeição temporária | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Com falha |

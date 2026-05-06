@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 83%
+source-wordcount: '753'
+ht-degree: 84%
 
 ---
 
@@ -37,11 +37,11 @@ Um contato encontrado na tabela **[!UICONTROL Recipients]** pode ser vinculado a
 
 O objetivo desse caso de uso é enviar entregas personalizadas às pessoas que faziam parte da competição mais recente, dependendo de suas pontuações mais altas. O destinatário com a pontuação mais alta obtém o primeiro prêmio, o destinatário com a segunda pontuação mais alta recebe um prêmio de consolação e todos os outros obtêm uma mensagem desejando uma sorte melhor da próxima vez.
 
-Para configurar esse caso de uso, criamos o seguinte workflow para construção do target:
+Para configurar esse caso de uso, criamos o seguinte fluxo de trabalho de segmentação:
 
 ![](assets/uc1_enrich_3.png)
 
-Para criar o workflow, aplique as seguintes etapas:
+Para criar o fluxo de trabalho, aplique as seguintes etapas:
 
 1. Duas atividades **[!UICONTROL Query]** e uma atividade **[!UICONTROL Intersection]** são adicionadas para direcionar novos assinantes que entraram por último na competição.
 1. A atividade **[!UICONTROL Enrichment]** é usada para adicionar dados armazenados na tabela **[!UICONTROL Competition results]**. O campo **[!UICONTROL Score]**, onde ocorrerá a personalização de entrega, é adicionado à tabela de trabalho do fluxo de trabalho.
@@ -92,7 +92,7 @@ Clique com o botão direito do mouse na transição de entrada da atividade de e
 
 ![](assets/uc1_enrich_13.png)
 
-O schema vinculado é:
+O esquema vinculado é:
 
 ![](assets/uc1_enrich_15.png)
 
@@ -100,7 +100,7 @@ Renovar esta operação na transição de saída da atividade de enriquecimento.
 
 ![](assets/uc1_enrich_12.png)
 
-O schema correspondente também foi enriquecido.
+O esquema correspondente também foi enriquecido.
 
 ![](assets/uc1_enrich_14.png)
 
@@ -122,6 +122,6 @@ Para classificar os destinatários com base em suas pontuações, uma atividade 
 
    ![](assets/uc1_enrich_19.png)
 
-1. Adicione uma atividade do tipo **[!UICONTROL Delivery]** para cada subconjunto, usando um template de entrega diferente para cada um.
+1. Adicione uma atividade do tipo **[!UICONTROL Delivery]** para cada subconjunto, usando um modelo de entrega diferente para cada um.
 
    ![](assets/uc1_enrich_20.png)

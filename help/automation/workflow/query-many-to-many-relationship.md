@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: c320054d-7f67-4b12-aaa7-785945bf0c18
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '399'
 ht-degree: 96%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 
 
-Neste exemplo, queremos recuperar destinatários não foram contatados durante os últimos 7 dias. Esta query aborda todas as entregas.
+Neste exemplo, queremos recuperar destinatários não foram contatados durante os últimos 7 dias. Esta consulta aborda todas as entregas.
 
 Este exemplo também mostra como configurar um filtro relacionado à escolha de um elemento de coleção (ou nó laranja). Os elementos de coleção estão disponíveis na janela **[!UICONTROL Field to select]**.
 

@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 78%
+source-wordcount: '1504'
+ht-degree: 76%
 
 ---
 
@@ -102,7 +102,7 @@ Os fluxos de trabalho de segmentação podem ser iniciados manualmente por meio 
 
 O direcionamento pode ser programado para execução automática de acordo com um agendamento (scheduler) ou um evento (sinal externo, importação de arquivo, etc.).
 
-As ações relacionadas à execução do fluxo de trabalho de definição de metas (inicialização, parada, pausa etc.) são processos **assíncronos** : o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
+As ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são processos **assíncronos**: o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
 Os ícones da barra de ferramentas permitem realizar a ação referente à execução do fluxo de trabalho de segmentação.
 
@@ -169,13 +169,13 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
   >[!CAUTION]
   >
-  >A interrupção incondicional é restrita aos usuários administradores. 
+  >A interrupção incondicional é restrita aos usuários administradores.
 
 ## Adicionar um grupo de controle {#add-a-control-group}
 
 Um grupo de controle é uma população que não receberá a entrega; ele é usado para rastrear o comportamento após a entrega e o impacto da campanha fazendo uma comparação com o comportamento da população do target, que recebeu a entrega.
 
-O grupo de controle pode ser extraído do target principal e/ou vir de um grupo ou query específica.
+O grupo de controle pode ser extraído do target principal e/ou vir de um grupo ou consulta específica.
 
 >[!CAUTION]
 >
@@ -226,7 +226,7 @@ Essa população pode vir de uma lista de recipients ou você pode defini-la por
 
 >[!NOTE]
 >
->O editor de query do Adobe Campaign é apresentado [nesta seção](../../v8/start/query-editor.md).
+>O editor de consultas do Adobe Campaign é apresentado [nesta seção](../../v8/start/query-editor.md).
 
 ### Extração do grupo de controle do target principal {#extract-the-control-group-from-the-main-target}
 
@@ -252,4 +252,4 @@ Este vídeo explica como adicionar um grupo de controle a uma campanha.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
-Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
+Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.

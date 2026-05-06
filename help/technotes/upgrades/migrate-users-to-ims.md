@@ -4,8 +4,8 @@ description: Saiba como migrar operadores do Campaign para o Adobe Identity Mana
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
 source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 1%
+source-wordcount: '1469'
+ht-degree: 3%
 
 ---
 

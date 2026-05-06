@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1620'
 ht-degree: 48%
 
 ---
@@ -116,14 +116,14 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
   Nas ofertas, as regras de elegibilidade permitem limitar a validade de ofertas no tempo e determinar as pessoas a serem públicos-alvo.
 
 * **Arbitragem**: selecionar ofertas para exibir em um ambiente (ofertas qualificadas). O princípio de arbitragem classifica as ofertas por prioridade de acordo com os critérios definidos nas categorias, ofertas e ofertas de contexto.
-* **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a um targeting dimension. Há dois tipos de contatos:
+* **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a uma dimensão de direcionamento. Há dois tipos de contatos:
 
    * **[!UICONTROL Identified contact]**: um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
    * **[!UICONTROL Anonymous contact]**: um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
 
      >[!NOTE]
      >
-     >Contatos anônimos e não identificados são atribuídos ao targeting dimension do visitante.
+     >Contatos anônimos e não identificados são atribuídos à dimensão de direcionamento do visitante.
 
 * **Interação de saída**: chamada para o mecanismo de oferta de uma lista de contatos (usada para entrega de emails, correspondência direta etc.). As mesmas regras e processos são aplicados a cada contato. Normalmente, esse tipo de interação é processado em modo de lote.
 * **Interação de entrada**: interação seguindo uma chamada recebida gerada pela ação de um contato no canal. Esse tipo de interação geralmente é processado no modo unitário.

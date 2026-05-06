@@ -6,8 +6,8 @@ feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
 source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 81%
+source-wordcount: '739'
+ht-degree: 86%
 
 ---
 

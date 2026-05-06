@@ -27,7 +27,7 @@ A operação é como descrita a seguir:
 
 1. Escolha usar um exemplo XML ou WSDL.
 
-   O exemplo a seguir é de um workflow técnico do módulo do Centro de Mensagens.
+   O exemplo a seguir é de um fluxo de trabalho técnico do módulo do Centro de Mensagens.
 
    ![](assets/load_soap_002.png)
 

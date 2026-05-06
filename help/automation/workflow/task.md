@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Tarefa
-description: Saiba mais sobre a atividade do workflow de Tarefa
+description: Saiba mais sobre a atividade do fluxo de trabalho de Tarefa
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Tarefa{#task}
 
-Em um workflow de campanha, a atividade **[!UICONTROL Task]** permite especificar dois cenários: o primeiro se a tarefa for concluída e um segundo se a tarefa não for concluída (se estiver marcada manualmente como incompleta ou se ela expirar).
+Em um fluxo de trabalho de campanha, a atividade **[!UICONTROL Task]** permite especificar dois cenários: o primeiro se a tarefa for concluída e um segundo se a tarefa não for concluída (se estiver marcada manualmente como incompleta ou se ela expirar).
 
 ![](assets/mrm_task_in_workflow.png)
 

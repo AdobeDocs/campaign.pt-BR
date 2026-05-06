@@ -7,8 +7,8 @@ level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 88%
+source-wordcount: '1112'
+ht-degree: 87%
 
 ---
 
@@ -30,7 +30,7 @@ Para obter mais informações sobre essas configurações personalizadas, consul
 
 ## Acessar relatórios integrados {#access-ootb-reports}
 
-Para acessar os relatórios internos do Campaign:
+Para acessar os relatórios integrados do Campaign:
 
 1. Selecione a guia **[!UICONTROL Reports]** da interface do Adobe Campaign.
 
@@ -57,7 +57,7 @@ O princípio é o mesmo para listas, serviços, ofertas, etc., conforme mostrado
 
 ## Relatórios de entregas {#reports-on-deliveries}
 
-Os relatórios internos fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
+Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
 Para obter mais informações sobre o conteúdo desses relatórios, consulte [esta seção](delivery-reports.md).
 
@@ -66,7 +66,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   <tr> 
    <td> <strong>Rótulo e nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
-   <td> <strong>Schema</strong><br /> </td> 
+   <td> <strong>Esquema</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Atividades do usuário (recipientActivity)<br /> </td> 
@@ -158,7 +158,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
 
 ## Relatórios sobre campanhas {#reports-on-campaigns}
 
-Os relatórios sobre campanhas se relacionam aos dados na tabela de **nms:operation** .
+Os relatórios sobre campanhas referem-se aos dados na tabela **nms:operation** .
 
 <table> 
  <tbody> 
@@ -215,7 +215,7 @@ Os relatórios sobre campanhas se relacionam aos dados na tabela de **nms:operat
 
 ## Relatórios sobre serviços {#reports-on-services}
 
-Os relatórios sobre serviços diz respeito aos dados na tabela de **nms:service** .
+Os relatórios sobre serviços referem-se aos dados na tabela **nms:service**.
 
 <table> 
  <tbody> 
@@ -248,14 +248,14 @@ Os relatórios sobre serviços diz respeito aos dados na tabela de **nms:service
 
 ## Relatórios de orçamento {#budget-reports}
 
-Os relatórios internos fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
+Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>Rótulo e nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
-   <td> <strong>Schema</strong><br /> </td> 
+   <td> <strong>Esquema</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Custos vinculados ao(s) programa(s) (budgetProgramCost)<br /> </td> 
@@ -302,7 +302,7 @@ Os relatórios internos fornecidos pelo Adobe Campaign podem ser encontrados na 
 
 ## Relatórios sobre simulações {#reports-on-simulations}
 
-Os relatórios sobre simulações dizem respeito aos dados na tabela de **nms:simulation**.
+Os relatórios sobre simulações referem-se aos dados na tabela **nms:simulation**.
 
 <table> 
  <tbody> 
@@ -335,7 +335,7 @@ Os relatórios sobre simulações dizem respeito aos dados na tabela de **nms:si
 
 ## Relatórios sobre aplicativos web {#reports-on-web-applications}
 
-Os relatórios em aplicativos Web dizem respeito aos dados na tabela de **nms:WebApp** .
+Os relatórios sobre aplicativos web referem-se aos dados na tabela **nms:WebApp**.
 
 <table> 
  <tbody> 
@@ -360,14 +360,14 @@ Os relatórios em aplicativos Web dizem respeito aos dados na tabela de **nms:We
 
 ## Outros relatórios OOTB {#other-ootb-reports}
 
-Os relatórios a seguir também são fornecidos internamente. Para obter mais informações, consulte o documento na funcionalidade relacionada a eles.
+Os relatórios a seguir também são fornecidos internamente. Para obter mais informações, consulte o documento na funcionalidade relacionada a elas.
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>Rótulo e nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
-   <td> <strong>Schema</strong><br /> </td> 
+   <td> <strong>Esquema</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Análise de oferta (offerAnalysis)<br /> </td> 

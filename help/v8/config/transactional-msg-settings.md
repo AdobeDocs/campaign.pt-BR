@@ -7,8 +7,8 @@ level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 26%
+source-wordcount: '601'
+ht-degree: 28%
 
 ---
 
@@ -79,32 +79,32 @@ Veja abaixo um exemplo de uma configuração de evento para enviar notificaçõe
 
 É possível adaptar as configurações do assistente de implantação para definir por quanto tempo os dados devem ser armazenados no banco de dados.
 
-A limpeza de eventos é executada automaticamente pelo fluxo de trabalho técnico **Limpeza de banco de dados**. Esse workflow limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
+A limpeza de eventos é executada automaticamente pelo fluxo de trabalho técnico **Limpeza de banco de dados**. Esse fluxo de trabalho limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
 
 Use as setas conforme apropriado para alterar as configurações de limpeza dos **Eventos** (em uma instância de execução) e dos **Eventos arquivados** (em uma instância de controle).
 
 
-## Workflows técnicos {#technical-workflows}
+## Fluxos de trabalho técnicos {#technical-workflows}
 
 Você deve garantir que os workflows técnicos nas instâncias de controle e de execução tenham sido iniciados antes de implantar qualquer template de mensagem transacional.
 
-Os fluxos de trabalho podem ser acessados na pasta **Administration > Production > Message Center**.
+Os fluxos de trabalho de arquivamento podem ser acessados na pasta **Administration > Production > Message Center**.
 
-### Workflows da instância de controle {#control-instance-workflows}
+### Fluxos de trabalho da instância de controle {#control-instance-workflows}
 
-Na instância de controle, você deve criar um fluxo de trabalho de arquivamento para cada conta externa **[!UICONTROL Message Center execution instance]**. Clique no botão **[!UICONTROL Create the archiving workflow]** para criar e iniciar o workflow.
+Na instância de controle, você deve criar um fluxo de trabalho de arquivamento para cada conta externa **[!UICONTROL Message Center execution instance]**. Clique no botão **[!UICONTROL Create the archiving workflow]** para criar e iniciar o fluxo de trabalho.
 
-### Workflows da instância de execução {#execution-instance-workflows}
+### Fluxo de trabalho da instância de execução {#execution-instance-workflows}
 
 Na(s) instância(s) de execução, você deve iniciar os seguintes workflows técnicos:
 
-* **[!UICONTROL Processing batch events]** (internal name: **[!UICONTROL batchEventsProcessing]** ): esse fluxo de trabalho permite dividir eventos em lote em uma fila antes que eles sejam vinculados a um template de mensagem.
-* **[!UICONTROL Processing real time events]** (internal name: **[!UICONTROL rtEventsProcessing]** ): esse workflow permite dividir eventos em tempo real em uma fila antes que eles sejam vinculados a um template de mensagem.
-* **[!UICONTROL Update event status]** (internal name: **[!UICONTROL updateEventStatus]** ): esse workflow permite que você atribua um status ao evento.
+* **[!UICONTROL Processing batch events]** (internal name: **[!UICONTROL batchEventsProcessing]** ): esse fluxo de trabalho permite dividir eventos em lote em uma fila antes que eles sejam vinculados a um modelo de mensagem.
+* **[!UICONTROL Processing real time events]** (internal name: **[!UICONTROL rtEventsProcessing]** ): esse fluxo de trabalho permite dividir eventos em tempo real em uma fila antes que eles sejam vinculados a um modelo de mensagem.
+* **[!UICONTROL Update event status]** (internal name: **[!UICONTROL updateEventStatus]** ): esse fluxo de trabalho permite que você atribua um status ao evento.
 
   Os possíveis status do evento são:
 
-   * **[!UICONTROL Pending]**: evento na fila. Nenhum template de mensagem foi atribuído a ele.
+   * **[!UICONTROL Pending]**: evento na fila. Nenhum modelo de mensagem foi atribuído a ele.
    * **[!UICONTROL Pending delivery]**: o evento está na fila, um modelo de mensagem foi atribuído a ele e está sendo processado pela entrega.
    * **[!UICONTROL Sent]**: este status é copiado dos logs de entrega. Significa que a entrega foi enviada.
    * **[!UICONTROL Ignored by the delivery]**: este status é copiado dos logs de entrega. Ele significa que a entrega foi ignorada.

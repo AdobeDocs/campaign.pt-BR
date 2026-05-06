@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: 3235701e0939466d4275b1e9202f82694ccdb352
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 50%
+source-wordcount: '1073'
+ht-degree: 52%
 
 ---
 
@@ -55,7 +55,7 @@ O banco de dados [!DNL Snowflake] no lado de marketing é usado para:
 * Armazene todos os dados do cliente: perfis, dados personalizados, como transações, produtos, locais etc.
 * Armazene todos os eventos e dados de comportamento gerados ou coletados pelo Campaign, como logs do delivery, logs de rastreamento, registros de push etc.
 * Armazene todos os agregados de dados do acima.
-* Armazene uma cópia (h+1) de tabelas de referência (como deliveries, listas discriminadas, países etc.) que são usadas em workflows, campanhas e relatórios.
+* Armazenar uma cópia (h+1) de tabelas de referência (como deliveries, enumerações, países etc.) que são usados em workflows, campanhas e relatórios.
 * Executar todos os processos em lote e cargas de trabalho
 
 
@@ -63,11 +63,11 @@ O banco de dados PostgreSQL na instância de marketing é usado para:
 
 * Execute determinadas cargas de trabalho, como APIs de baixo volume.
 * Armazene todos os dados do Campaign, incluindo configurações de entrega e campanha, fluxo de trabalho e definições de serviço.
-* Armazene todas as tabelas de referência internas (enumerações, países, etc.) que são replicadas para [!DNL Snowflake].
+* Armazenar todas as tabelas de referência integradas (listas discriminadas, países etc.) que são replicados para [!DNL Snowflake].
 
   No entanto, não é possível:
    * criar personalizações para dados do cliente, por exemplo, não crie uma tabela de família no PostgreSQL, mas somente no Snowflake
-   * armazenar logs do delivery, logs de rastreamento etc. na targeting dimension FFDA.
+   * armazene logs do delivery, logs de rastreamento etc. na targeting dimension FFDA.
    * armazenar grande volume de dados.
 
 
@@ -98,7 +98,7 @@ Um fluxo de trabalho técnico específico trata da replicação de tabelas que p
 >[!NOTE]
 >
 > Várias políticas de replicação foram criadas, com base no tamanho da tabela (XS, XL etc.).
-> &#x200B;> Algumas tabelas são replicadas em tempo real, outras são replicadas de hora em hora. Algumas tabelas terão atualizações incrementais; outras terão uma atualização completa.
+> Algumas tabelas são replicadas em tempo real, outras são replicadas de hora em hora. Algumas tabelas terão atualizações incrementais; outras terão uma atualização completa.
 >
 
 [Saiba mais sobre replicação de dados](replication.md)

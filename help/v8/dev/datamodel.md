@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '737'
 ht-degree: 5%
 
 ---
@@ -72,5 +72,5 @@ Saiba mais sobre estratégia e mecanismos de replicação [nesta seção](../arc
 
 **Tópicos relacionados**
 
-Descubra como importar perfis em [esta seção](../start/import.md)
+Descubra como importar perfis no [nesta seção](../start/import.md)
 Saiba mais sobre os públicos do Campaign em [esta seção](../start/audiences.md)

@@ -6,8 +6,8 @@ hide: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 97%
+source-wordcount: '1644'
+ht-degree: 93%
 
 ---
 
@@ -67,7 +67,7 @@ _28 de outubro de 2021_
 </table>
 
 
-**Aprimoramentos** 
+**Aprimoramentos**
 
 * O conector Snowflake foi aprimorado em termos de desempenho.
 * Para propósitos de monitoramento e teste, os logs de auditoria do fluxo de trabalho **[!UICONTROL Replicate Staging data]** agora incluem o número de registros enviados para a base de dados do FFDA (Full Federated Data Access).
@@ -116,7 +116,7 @@ _7 de setembro de 2021_
 
 * Após o fim da vida útil, o Flash foi removido de todos os recursos e componentes relacionados do Campaign e substituído pelo HTML5. O tipo de gráfico **Medição** foi removido. (NEO-30330) [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=pt-BR)
 * Ao instalar o Console do cliente no Windows, o instalador agora verifica se há um nó de registro pai e cria um se estiver ausente. Isso evita possíveis problemas ao iniciar o console. (NEO-34854)
-* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados às formas com que ferramentas de terceiros (clientes de email, navegadores de internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
+* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados à forma como as ferramentas de terceiros (clientes de email, navegadores de Internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
 
 **Outras alterações**
 

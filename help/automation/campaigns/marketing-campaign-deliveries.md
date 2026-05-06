@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 40%
+source-wordcount: '706'
+ht-degree: 46%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 40%
 
 Orquestrar suas entregas entre canais em suas campanhas: eles simplificam suas comunicações com o Adobe Campaign por meio de emails personalizados, SMS, notificações por push e mensagens no aplicativo. Você pode usar mídia avançada como vídeos, emojis ou GIFs e integrá-los diretamente.
 
-Os deliveries podem ser criados através do painel da campanha, de um fluxo de trabalho de campanha ou diretamente através da visão geral dos deliveries. Quando criados a partir de uma campanha, as entregas serão vinculadas a essa campanha e consolidadas em seu nível.
+As entregas podem ser criadas por meio do painel da campanha, de um fluxo de trabalho de campanha ou diretamente na visão geral das entregas. Quando criados a partir de uma campanha, as entregas serão vinculadas a essa campanha e consolidadas em seu nível.
 
 ## Criar entregas {#create-deliveries}
 
@@ -66,11 +66,11 @@ No entanto, também é possível permitir que o proprietário da campanha confir
 
 Após todas as aprovações serem concedidas, o status da entrega será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por meio de um [fluxo de trabalho técnico](../workflow/technical-workflows.md) dedicado que, em uma configuração padrão, inicia automaticamente quando uma entrega de correspondência direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
 
-Depois que o workflow de extração for executado com sucesso, o arquivo de extração deverá ser aprovado (desde que a aprovação do arquivo de extração tenha sido selecionada nas configurações do delivery). [Saiba mais](marketing-campaign-approval.md#approving-an-extraction-file).
+Após executar o fluxo de trabalho de extração com sucesso, o arquivo de extração deve ser aprovado (fornecido de forma que a aprovação do arquivo de extração tenha sido selecionada nas configurações da entrega). [Saiba mais](marketing-campaign-approval.md#approving-an-extraction-file).
 
 Siga as etapas abaixo para validar o conteúdo e enviar o arquivo para o provedor:
 
-1. Depois que o arquivo de extração for aprovado, é possível gerar a prova do email de notificação do roteador. Esta mensagem de email é construída com base em um template de entrega. Deve ser aprovado.
+1. Depois que o arquivo de extração for aprovado, é possível gerar a prova do email de notificação do roteador. Esta mensagem de email é construída com base em um modelo de entrega. Deve ser aprovado.
 
    Esta etapa só estará disponível se a opção **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** tiver sido habilitada na guia **[!UICONTROL Approvals]** dos parâmetros avançados da campanha.
 

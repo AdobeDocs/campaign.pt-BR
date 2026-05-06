@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '1038'
 ht-degree: 1%
 
 ---
@@ -344,5 +344,5 @@ Este é um exemplo de uma página de aterrissagem e uma atividade de código Jav
 ### Mais informações
 
 * [Configurar uma atividade de código JavaScript](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Criar uma landing page](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=pt-BR){target="_blank"}
+* [Criar uma página de destino](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=pt-BR){target="_blank"}
 * [Gerenciar assinaturas e cancelamentos de assinaturas](../start/subscriptions.md)

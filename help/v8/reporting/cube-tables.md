@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 70%
+source-wordcount: '953'
+ht-degree: 68%
 
 ---
 
@@ -39,7 +39,7 @@ Para criar um relatório com base em um cubo existente, siga as etapas abaixo:
 
    ![](assets/cube-report-config.png)
 
-1. É possível alternar os eixos da dimensão, excluí-los, adicionar novas medidas etc. Para fazer isso, use os ícones apropriados:
+1. É possível alternar os eixos da dimensão, excluí-los, adicionar novas medidas etc. Para fazer isso, use os ícones apropriados.
 
    ![](assets/cube-switch-axis.png)
 

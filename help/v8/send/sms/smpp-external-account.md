@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
 source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '3666'
-ht-degree: 27%
+source-wordcount: '3682'
+ht-degree: 26%
 
 ---
 
@@ -40,7 +40,7 @@ Estes são os parâmetros e suas funções necessárias para configurar a conex�
 * **Tipo de sistema**: valor passado no campo system_type da PDU BIND. Alguns provedores precisam de um valor específico aqui.
 * **Número de conexões filho do MTA**: isso define quantas conexões estão abertas por thread de envio.
 O número total de conexões pode ser calculado usando esta fórmula:
-  *Total de conexões = Número de processos de SMS * número de threads de envio * número de conexões filho do MTA*
+  *Total de conexões = Número de processos de SMS* número de threads de envio * número de conexões filho do MTA*
 
    * O número de processos de SMS normalmente é 1. Em algumas instâncias de desempenho muito alto, vários processos de SMS podem ser iniciados em paralelo.
    * O número de threads de envio está definido em serverConf (configuração sendingThreads ). O padrão é 1.
@@ -83,7 +83,7 @@ Consulte [Definir um mapeamento específico das configurações de codificaçõe
 
 ### Número de origem
 
-Define o endereço de origem padrão das mensagens. Essa configuração só será aplicada se o número de origem for deixado vazio no delivery. Por padrão, o campo de número de origem não é transmitido. Portanto, o provedor o substituirá pelo código curto.
+Define o endereço de origem padrão das mensagens. Essa configuração só será aplicada se o número de origem for deixado vazio na entrega. Por padrão, o campo de número de origem não é transmitido. Portanto, o provedor o substituirá pelo código curto.
 
 Isso habilita o recurso de substituição de endereço/oADC do remetente.
 
@@ -141,7 +141,7 @@ Quando a conexão TCP for perdida, o conector aguardará esse número de segundo
 
 Este é o tempo limite entre SUBMIT_SM e o SUBMIT_SM_RESP correspondente. Se o RESP não for recebido a tempo, a mensagem será considerada como tendo sofrido falha, e a política global de novas tentativas do MTA será aplicada.
 
-### Tempo limite da associação
+### Tempo-limite da associação
 
 Tempo limite entre a tentativa de conexão TCP e a resposta BIND_*_RESP. Quando o tempo limite for atingido, a conexão será fechada pelo conector do Campaign e aguardará pelo tempo antes da reconexão antes de tentar novamente.
 
@@ -267,7 +267,7 @@ Isso indica o formato da ID retornada no campo message_id da PDU SUBMIT_SM_RESP.
 
 * **Não modificar**: a ID é armazenada como está no banco de dados, como texto codificado em ASCII. Não ocorre pré-processamento nem filtragem.
 * **Número decimal**: espera-se que a ID seja um número decimal no formato ASCII. Espaços à esquerda e à direita e zeros à esquerda são removidos quando essa configuração é usada.
-* **Número hexadecimal**: espera-se que a ID seja um número hexadecimal no formato ASCII, sem 0x à esquerda nem h à direita. A ID é convertida em um número decimal antes de ser armazenada no banco de dados.
+* **Número hexadecimal**: espera-se que a identificação seja um número hexadecimal no formato ASCII, sem 0x à esquerda nem h à direita. A ID é convertida em um número decimal antes de ser armazenada no banco de dados.
 * **String hexadecimal**: espera-se que a ID seja um texto codificado em ASCII que seja uma string de bytes codificada como hexadecimal. Por exemplo, na PDU, você encontrará 0x34 0x31 0x34 0x32 0x34 0x33, o que significa ASCII &quot;414243&quot;; em seguida, essa string é decodificada como uma string hexadecimal de bytes, e você obtém &quot;ABC&quot; como resultado: você armazenará a ID &quot;ABC&quot; no banco de dados.
 
 ### Formato de ID no SR
@@ -276,9 +276,9 @@ Isso indica o formato da ID capturada pelo regex de Extração da ID no SR. Os v
 
 ### ID de SR ou código de erro no campo opcional
 
-Se marcado, o conteúdo dos campos opcionais será anexado ao texto processado pelos regex acima. O texto terá o formato &quot; 0xTAG:VALUE&quot;, 0xTAG sendo o valor hexadecimal de quatro dígitos da tag em maiúsculas (por exemplo, 0x002E).
+Se marcado, o conteúdo dos campos opcionais será anexado ao texto processado pelos regex acima. O texto terá o formato &quot; 0xTAG:VALUE&quot;, 0xTAG sendo o valor hexadecimal de quatro dígitos da marca em maiúsculas (por exemplo, 0x002E).
 
-Por exemplo, convém capturar a ID no campo receipted_message_id. Para isso, ative essa caixa de seleção. O seguinte texto será adicionado ao status:
+Por exemplo, convém capturar a ID no campo receipted_message_id. Para isso, habilite essa caixa de seleção. O seguinte texto será adicionado ao status:
 
 0x001E:05e3299e-8d37-49d0-97c6-8e4fe60c7739
 

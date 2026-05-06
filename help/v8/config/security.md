@@ -8,8 +8,8 @@ exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 04dff810f5a838b2468280519948c88e29acf221
 workflow-type: tm+mt
-source-wordcount: '2865'
-ht-degree: 53%
+source-wordcount: '2977'
+ht-degree: 52%
 
 ---
 
@@ -61,7 +61,7 @@ O Adobe Campaign faz parte das soluções da Adobe Experience Cloud. A maneira c
 
   >[!NOTE]
   >
-  >Quanto a todos os produtos da Adobe, o Campaign coleta informações sobre os usuários do aplicativo e do site. Para obter mais informações, consulte a [Política de privacidade da Adobe](https://www.adobe.com/privacy/policy.html).
+  >Quanto a todos os produtos da Adobe, o Campaign coleta informações sobre os usuários do aplicativo e do site. Para obter mais informações, consulte a [Política de privacidade da Adobe](https://www.adobe.com/br/privacy/policy.html).
 
 * **Como a Adobe Experience Cloud é usada para coletar informações**
 
@@ -132,7 +132,7 @@ O Adobe Campaign permite coletar dados, inclusive informações pessoais e confi
 
 ## Gerenciamento de privacidade {#privacy-management}
 
-O gerenciamento de privacidade está relacionado a todos os processos e ferramentas que podem ajudar você a cumprir as regras de privacidade (RGPD, CCPA etc.).
+O gerenciamento de privacidade está relacionado a todos os processos e ferramentas que podem ajudar você a cumprir as regras de privacidade (RGPD, CCPA, etc.).
 
 O Adobe Campaign oferece vários conjuntos de recursos dedicados ao gerenciamento de privacidade:
 * Gerenciamento de consentimento, retenção de dados e funções de usuário. Consulte [esta seção](#consent).
@@ -179,7 +179,7 @@ Regulamentos como o Regulamento Geral sobre a Proteção de Dados (RGPD) afirmam
 
 ### Rastreamento de mensagens {#message-tracking}
 
-O Adobe Campaign permite rastrear os emails enviados e o comportamento dos destinatário da entrega: abrir, clicar em links, cancelamento de assinatura, etc. Para obter mais informações, consulte [Sobre mensagens](../start/gs-message.md).
+O Adobe Campaign permite rastrear os emails enviados e o comportamento dos recipients do delivery: abrir, clicar em links, cancelar assinaturas etc. Para obter mais informações, consulte [Sobre mensagens](../start/gs-message.md).
 
 Para fazer isso, adicione links rastreados às suas mensagens para medir o impacto do comportamento do delivery e do recipient na guia Rastreamento do painel do delivery. Os dados de rastreamento são interpretados no relatório de Indicadores de rastreamento. Para saber mais sobre rastreamento, consulte [esta página](../send/tracking.md).
 

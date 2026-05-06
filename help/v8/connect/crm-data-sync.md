@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
 source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1323'
 ht-degree: 58%
 
 ---
@@ -170,7 +170,7 @@ Para exportar dados para seu CRM, crie o seguinte tipo de fluxo de trabalho:
 
    >[!NOTE]
    >
-   >A lista de registros a serem exportados e o resultado da exportação são salvas em um arquivo temporário que permanece acessível até que o workflow seja concluído ou reiniciado. Isso permite que você inicie o processo com segurança em caso de erros.
+   >A lista de registros a serem exportados e o resultado da exportação são salvas em um arquivo temporário que permanece acessível até que o fluxo de trabalho seja concluído ou reiniciado. Isso permite que você inicie o processo com segurança em caso de erros.
 
 ## Configurações adicionais {#additional-configurations}
 
@@ -202,7 +202,7 @@ Essas opções adicionam as transições de saída relacionadas.
 
 Em seguida, insira as atividades relevantes para processar dados. Por exemplo, adicione uma atividade **Wait** e agende novas tentativas para erros.
 
-A transição **[!UICONTROL Reject]** de saída permite que você acesse o schema de saída que contém as colunas específicas relevantes para mensagens e códigos de erro. Para o Salesforce.com, essa coluna é **errorSymbol** (símbolo de erro, diferente do código de erro), **errorMessage** (descrição do contexto de erro).
+A transição **[!UICONTROL Reject]** de saída permite que você acesse o esquema de saída que contém as colunas específicas relevantes para mensagens e códigos de erro. Para o Salesforce.com, essa coluna é **errorSymbol** (símbolo de erro, diferente do código de erro), **errorMessage** (descrição do contexto de erro).
 
 ## Importar objetos excluídos no CRM {#importing-objects-deleted-in-the-crm}
 

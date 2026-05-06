@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Workflow técnico de renderização da caixa de entrada
-description: Esta seção descreve o workflow técnico instalado com o pacote de renderização da caixa de entrada
+title: Fluxo de trabalho técnico de renderização da caixa de entrada
+description: Esta seção descreve o fluxo de trabalho técnico instalado com o pacote de renderização da caixa de entrada
 feature: Workflows, Inbox Rendering
 role: User, Admin
 version: Campaign v8, Campaign Classic v7

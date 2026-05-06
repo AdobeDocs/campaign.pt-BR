@@ -7,8 +7,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 6e899937-5ca0-4ca5-bb14-f914e41559ab
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 59%
+source-wordcount: '178'
+ht-degree: 60%
 
 ---
 
@@ -31,7 +31,7 @@ Saiba mais sobre os diferentes contextos em que os workflows podem ser usados e 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
 * [Enviar um relatório a uma lista](send-a-report-to-a-list.md)
-* [Supervisionar os workflows](workflow-supervision.md)
+* [Supervisionar os fluxos de trabalho](workflow-supervision.md)
 * [Enviar alertas personalizados aos operadores](send-alerts-to-operators.md)
 * [Configurar um processo de aprovação de recipient antes do envio de um delivery](local-approval-activity.md)
 
@@ -44,7 +44,7 @@ Saiba mais sobre os diferentes contextos em que os workflows podem ser usados e 
 * [Enriquecer dados](enrich-data.md)
 * [Usar agregações](using-aggregates.md)
 * [Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign](use-workflow-data.md#use-case-gpg-encrypt)
-* [Atualização da lista trimestral usando um query incremental](quarterly-list-update.md)
+* [Atualização da lista trimestral usando uma consulta incremental](quarterly-list-update.md)
 * [Usar a funcionalidade de mesclagem da atividade de desduplicação](deduplication-merge.md)
 * [Configurar um fluxo de trabalho de importação recorrente](recurring-import-workflow.md)
 
@@ -57,7 +57,7 @@ Saiba mais sobre os diferentes contextos em que os workflows podem ser usados e 
 * [Executar cálculo de agregação](compute-aggregates.md)
 * [Consultar usando gerenciamento de agrupamento](query-grouping-management.md)
 * [Consultar usando um relacionamento muitos para muitos](query-many-to-many-relationship.md)
-* [Adicionar um campo calculado do tipo lista discriminada](adding-enumeration-type-calculated-field.md)
+* [Adicionar um campo calculado do tipo enumeração](adding-enumeration-type-calculated-field.md)
 * [Criar um filtro](create-a-filter.md)
 * [Filtrar destinatários duplicados](filter-duplicated-recipients.md)
 * [Chamar uma variável de instância em uma query](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)

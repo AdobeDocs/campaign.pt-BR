@@ -7,14 +7,14 @@ level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
 source-git-commit: 8d6c3e03f9b7533f7f325b755e3b6d4f74b63a8d
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 93%
+source-wordcount: '852'
+ht-degree: 78%
 
 ---
 
 # Introdução às campanhas {#gs-ac-campaigns}
 
-O Adobe Campaign oferece um conjunto de soluções que ajudam você a personalizar e entregar campanhas em todos os seus canais online e offline. Você pode criar, configurar, executar e analisar campanhas de marketing. Todas as campanhas de marketing podem ser gerenciadas em um centro de controle unificado. Descubra como navegar e criar campanhas de marketing nesta seção.
+O Adobe Campaign oferece um conjunto de soluções que ajudam você a personalizar e entregar campanhas em todos os seus canais online e offline. Você pode criar, configurar, executar e analisar campanhas de marketing. Todas as campanhas de marketing podem ser gerenciadas a partir de um centro de controle unificado. Descubra como navegar e criar campanhas de marketing nesta seção.
 
 As campanhas incluem ações (entregas) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e outlines de entrega). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
 
@@ -30,15 +30,15 @@ Antes de começar a implementar campanhas de marketing, você precisa conhecer o
 
 * **Campanha de marketing**: uma campanha centraliza todos os elementos relacionados a uma campanha de marketing: entregas, regras de direcionamento, custos, arquivos de exportação, documentos relacionados etc. Cada campanha é anexada a um programa.
 
-* **Programa**: um programa permite definir ações de marketing para um período de calendário: inicialização, prospecção, fidelização etc. Cada programa contém campanhas vinculadas a um calendário, que fornece uma visualização geral.
+* **Programa**: um programa permite definir ações de marketing para um período de calendário: iniciar, prospecção, fidelização etc. Cada programa contém campanhas vinculadas a um calendário, que fornece uma visualização geral.
 
 * **Plano**: o plano de marketing pode conter vários programas. Ele está vinculado a um período de calendário, tem um orçamento alocado e também pode ser vinculado a documentos e objetivos.
 
-* **Fluxo de trabalho de campanha**: um fluxo de trabalho de campanha contém atividades para criar a lógica da campanha. Use workflows da campanha para definir públicos-alvo e criar entregas para todos os canais disponíveis.
+* **Fluxo de trabalho de campanha**: um fluxo de trabalho de campanha contém atividades para criar a lógica da campanha. Use fluxos de trabalho da campanha para definir públicos-alvo e criar entregas para todos os canais disponíveis.
 
-* **Campanhas recorrentes**: campanhas recorrentes são criadas a partir de um modelo específico que define o modelo de fluxo de trabalho que será executado e a programação de execução.
+* **Campanhas recorrentes**: campanhas recorrentes são criadas a partir de um modelo específico que define o modelo de fluxo de trabalho que será executado e o cronograma de execução.
 
-* **Campanhas periódicas**: uma campanha periódica é uma campanha criada automaticamente de acordo com a programação de execução de seu modelo.
+* **Campanhas periódicas**: uma campanha periódica é uma campanha criada automaticamente de acordo com o cronograma de execução de seu modelo.
 
 ## Área de trabalho da campanha de marketing{#ac-workspace}
 
@@ -54,7 +54,7 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
 1. **Planejar e projetar programas e campanhas de marketing**
 
-   Defina a hierarquia e a programação, defina o orçamento, adicione recursos e selecione operadores.
+   Defina a hierarquia e o cronograma, defina o orçamento, adicione recursos e selecione operadores.
 
    Saiba como criar um plano de marketing e configurar campanhas em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=pt-BR){target="_blank"}.
 
@@ -80,18 +80,18 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    Saiba como criar e iniciar entregas de campanhas de marketing [nesta página](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-   Você pode associar vários documentos a uma campanha: relatório, foto, página da web, diagrama etc. Saiba mais sobre documentos associados [nesta página](../../automation/campaigns/marketing-campaign-assets.md).
+   Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama etc. Saiba mais sobre documentos associados em [esta página](../../automation/campaigns/marketing-campaign-assets.md).
 
 1. **Configurar o processo de aprovação**
 
    O Adobe Campaign permite configurar processos de aprovação colaborativos para as principais etapas da campanha de marketing. Para cada campanha você pode aprovar o público-alvo, o conteúdo e os custos da entrega. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a web.
 
-    Saiba como configurar e gerenciar aprovações [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=pt-BR#campaign-orchestration){target="_blank"}.
+   Saiba como configurar e gerenciar aprovações [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=pt-BR#campaign-orchestration){target="_blank"}.
 
 
 ## Complemento de marketing distribuído{#distributed-marketing-add-on}
 
-O Adobe Campaign oferece um complemento de **marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (lojas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado, conhecido como **[!UICONTROL List of campaign packages]**, no qual modelos de campanha criados centralmente são oferecidos a entidades locais.
+O Adobe Campaign oferece um complemento de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (lojas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado, conhecido como **[!UICONTROL List of campaign packages]**, no qual modelos de campanha criados centralmente são oferecidos a entidades locais.
 
 >[!NOTE]
 >

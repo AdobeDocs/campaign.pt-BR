@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ As principais etapas para enviar públicos-alvo da Adobe Experience Platform par
 
 * Use uma **conexão Source** do Adobe Campaign Managed Cloud Services para enviar a entrega do Adobe Campaign e os logs de rastreamento para o Adobe Experience Platform:
 
-  Adobe Campaign Managed Cloud Services Para fazer isso, configure uma nova **conexão com o Source** para assimilar eventos do Campaign na Adobe Experience Platform. Forneça detalhes sobre a instância do Campaign e o esquema a ser usado, selecione um conjunto de dados onde os dados devem ser assimilados e configure os campos a serem recuperados. [Saiba como criar uma conexão de origem do Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/sources-campaign-ui-en)
+  Para fazer isso, configure uma nova **conexão com o Source** para assimilar eventos do Campaign na Adobe Experience Platform. Forneça detalhes sobre a instância do Campaign e o esquema a ser usado, selecione um conjunto de dados onde os dados devem ser assimilados e configure os campos a serem recuperados. [Saiba como criar uma conexão de origem do Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/sources-campaign-ui-en)
 
   ![](assets/aep-logs.png){width="800" align="center"}
 

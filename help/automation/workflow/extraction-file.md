@@ -1,21 +1,21 @@
 ---
 product: campaign
 title: Extração de dados (arquivo)
-description: Saiba mais sobre a atividade de workflow de extração de dados (arquivo)
+description: Saiba mais sobre a atividade de fluxo de trabalho de extração de dados (arquivo)
 feature: Workflows, Data Management Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8510e879-2862-491f-bc52-ca8f56105932
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 100%
 
 ---
 
 # Extração de dados (arquivo){#extraction-file}
 
-Você pode extrair dados de uma tabela de workflow em um arquivo externo usando a atividade **[!UICONTROL Data extraction (file)]**.
+Você pode extrair dados de uma tabela de fluxo de trabalho em um arquivo externo usando a atividade **[!UICONTROL Data extraction (file)]**.
 
 >[!CAUTION]
 >

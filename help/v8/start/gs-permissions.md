@@ -8,12 +8,12 @@ exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '517'
 ht-degree: 17%
 
 ---
 
-# Introdução a permissões{#gs-permissions}
+# Introdução às permissões{#gs-permissions}
 
 O Adobe Campaign permite definir e gerenciar os direitos atribuídos aos usuários. Veja um conjunto de direitos e restrições que autorizam ou negam:
 

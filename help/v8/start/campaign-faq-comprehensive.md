@@ -9,8 +9,8 @@ version: Campaign v8
 exl-id: 8b4f6343-5dc5-4401-ad6f-9c1ddbb23168
 source-git-commit: da2274cfd19bb067fcc1e990360093f161d5638a
 workflow-type: tm+mt
-source-wordcount: '10485'
-ht-degree: 11%
+source-wordcount: '11573'
+ht-degree: 15%
 
 ---
 
@@ -20,9 +20,9 @@ Obtenha respostas rápidas para as perguntas mais comuns sobre o Adobe Campaign 
 
 **Novo no Campaign?** Comece com [Introdução](#getting-started) para saber mais sobre o básico.\
 **Precisa de ajuda com as versões?** Verifique [Atualizações](#upgrades) para obter informações de versão e processos de atualização.\
-**Migrando do v7 ou do Standard?** Consulte [Campaign v8 vs Versões Anteriores](#v7-differences) para obter diretrizes sobre diferenças e transição.\
+**Migrando do v7 ou do Standard?** Consulte [Campaign v8 vs Versões anteriores](#v7-differences) para obter diretrizes sobre diferenças e transição.\
 **Precisa de ajuda técnica?** Verifique [Desenvolvedores](#developers) e [Configurações do Campaign](#settings).\
-**Não encontrou sua resposta?** Visite nossos [Fóruns da Comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){target="_blank"} ou [contate o suporte](#get-help).
+**Não encontrou sua resposta?** Visite os nossos [Fóruns da Comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){target="_blank"} ou [contate o suporte](#get-help).
 
 **Dica:** Use Ctrl+F (Cmd+F no Mac) para procurar palavras-chave específicas nesta página. Clique em qualquer pergunta para expandir a resposta.
 
@@ -59,11 +59,11 @@ Saiba mais sobre o Centro de Distribuição [nesta página](https://experiencele
 
 +++ Como posso me conectar ao Campaign v8?
 
-Você precisa baixar e instalar o console do cliente do Campaign para se conectar ao Adobe Campaign. [Saiba mais](connect.md).
+É necessário baixar e instalar o console do cliente do Campaign para se conectar ao Adobe Campaign. [Saiba mais](connect.md).
 
-A partir da versão v8.6 do Campaign, você terá acesso à **interface de usuário da Web do Campaign**, disponível por meio do ambiente central do Adobe Experience Cloud. O Experience Cloud é a família integrada de aplicativos de marketing digital, produtos e serviços da Adobe.
+A partir da versão v8.6 do Campaign, você terá acesso à **interface de usuário da Web do Campaign**, disponível por meio do ambiente central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe.
 
-Saiba como se conectar ao Adobe Experience Cloud e acessar a interface da Web do Adobe Campaign [nesta página](campaign-ui.md#ac-web-ui). Saiba mais na [documentação da interface do Adobe Campaign Web](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Saiba como se conectar à Adobe Experience Cloud e acessar a interface do Adobe Campaign Web [nesta página](campaign-ui.md#ac-web-ui). Saiba mais na [documentação da interface do Adobe Campaign Web](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 
 **Tópicos relacionados:**
@@ -128,7 +128,7 @@ Você pode combinar vários critérios (local, histórico de compras, envolvimen
 
 **Tópicos relacionados:**
 
-[Definir públicos no Campaign v8](../audiences/gs-audiences.md) | [Editor de consultas](query-editor.md) | [Mapeamentos do Target](../audiences/target-mappings.md)
+[Definir públicos no Campaign v8](../audiences/gs-audiences.md) | [Editor de consultas](query-editor.md) | [Mapeamentos de público alvo](../audiences/target-mappings.md)
 
 +++
 
@@ -395,7 +395,7 @@ O Campaign v8 oferece a maioria dos recursos v7/Standard com melhorias, mas a te
 
 **Principais alterações de terminologia (Campaign Standard → v8):**
 
-* Recursos personalizados → **Esquemas** | Mensagens → **Entregas** | Usuários do produto → **Operadores**
+* Recursos personalizados → **Esquemas** | Mensagens → **Entregas** | Usuários de produto → **Operadores**
 * Grupos de Segurança → **Grupos de Operadores** | Unidades organizacionais → **Permissões de pasta**
 
 **Atualizações na interface da Web do Campaign:**
@@ -621,7 +621,7 @@ Saiba mais sobre a [localização de aplicativos Web](../dev/webapps.md)
 
 +++ Posso usar conteúdo alimentado por IA em meus emails?
 
-Sim, mas **somente por meio da interface da Web do Campaign**. O Assistente de IA, desenvolvido pelo Microsoft Azure OpenAI e Adobe Firefly, ajuda a criar conteúdo profissional e consistente com a marca por email, SMS e notificações por push.
+Sim, mas **somente por meio da interface da Web do Campaign**. O AI Assistant, viabilizado pelo Microsoft Azure OpenAI e Adobe Firefly, ajuda a criar conteúdo profissional e consistente com a marca em emails, SMS e notificações por push.
 
 **Principais recursos:**
 
@@ -757,7 +757,7 @@ As regras de tipologia são uma lógica de negócios automatizada aplicada duran
 
 **Principais tipos de regras:**
 
-* incluir na lista de bloqueios **Regras de filtragem** - Excluir destinatários (, cancelado, em quarentena)
+* **Regras de filtragem** - Excluir destinatários (, cancelado, em quarentena)
 * **Regras de pressão** - Controle a frequência da mensagem para evitar sobrecarga dos destinatários
 * **Regras de capacidade** - Limitar volume de mensagens para capacidade de processamento ou limites ISP
 * **Regras de controle** - Verifique a validade da mensagem (linha de assunto, link de cancelamento de inscrição, formato do remetente)
@@ -882,7 +882,7 @@ O Campaign gerencia automaticamente uma lista de quarentena para proteger a repu
 * **Limite de rejeição temporária** - Falhas temporárias repetidas (caixa de correio cheia, servidor temporariamente indisponível) excedendo o limite de erro
 * **Reclamações de spam** - Destinatários que marcam seus emails como spam
 * **Endereços inválidos** - Endereços com erros de sintaxe ou que falham na validação
-* incluir na lista de bloqueios **&#x200B;**&#x200B;- Destinatários que optaram por não participar ou solicitaram a exclusão
+* **&#x200B;**&#x200B;- Destinatários que optaram por não participar ou solicitaram a exclusão
 
 **Como funciona a quarentena:**
 
@@ -1045,7 +1045,7 @@ Configure as chaves de reconciliação para uma correspondência precisa e escol
 
 **Tópicos relacionados:**
 
-[Atualizar atividade de dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=pt-BR){target="_blank"} | [Atividades de gerenciamento de dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
+[Atualizar atividade de dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=pt-BR){target="_blank"} | [Atividades de gestão de dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
 
 +++
 
@@ -1194,7 +1194,7 @@ O Painel de controle do Campaign é uma interface administrativa baseada na Web 
 
 **Recursos adicionais:**
 
-[Documentação do Painel de Controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/control-panel-home){target="_blank"} | [Vídeos tutoriais sobre o Painel de Controle do Campaign](https://experienceleague.adobe.com/pt-br/docs/control-panel-learn/tutorials/control-panel-overview){target="_blank"}
+[Documentação do Painel de Controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/control-panel-home){target="_blank"} | [Vídeos tutoriais sobre o Painel de Controle](https://experienceleague.adobe.com/pt-br/docs/control-panel-learn/tutorials/control-panel-overview){target="_blank"}
 
 +++
 
@@ -1352,13 +1352,13 @@ Saiba mais em [Instalar e configurar o console do cliente](connect.md)
 
 +++
 
-+++ O Adobe Campaign pode ser integrado ao LDAP?
++++ O Adobe Campaign pode se integrar ao LDAP?
 
 Não. O Campaign v8 não oferece suporte à integração de LDAP. A autenticação usa o Adobe IMS (Adobe ID ou Federated ID). Se você estiver migrando do Campaign Classic v7, revise os recursos não compatíveis e as alterações de autenticação.
 
 **Tópicos relacionados:**
 
-[Conectar-se ao Campaign v8](connect.md) | [Recursos sem suporte na v8](v7-to-v8.md#gs-removed)
+[Conectar-se ao Campaign v8](connect.md) | [Recursos não suportados na v8](v7-to-v8.md#gs-removed)
 
 +++
 
@@ -1612,7 +1612,7 @@ Use uma tabela de recipient personalizada ao direcionar contas B2B, dados de ass
 
 **Tópicos relacionados:**
 
-[Tabela de destinatários personalizada](../dev/custom-recipient.md) | [Mapeamentos do Target](../audiences/target-mappings.md)
+[Tabela de destinatários personalizada](../dev/custom-recipient.md) | [Mapeamentos de público alvo](../audiences/target-mappings.md)
 
 +++
 

@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 711256e2-ab77-404a-b052-6793a85da193
 source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 38%
+source-wordcount: '626'
+ht-degree: 46%
 
 ---
 
@@ -19,7 +19,7 @@ Os dados do Personalization podem ser recuperados de vários tipos de fontes: fo
 
 ## Fonte de dados do banco de dados do Campaign
 
-No caso mais comum, os dados de personalização são armazenados no banco de dados. Por exemplo, &quot;campos de personalização de recipient&quot; são todos os campos definidos na tabela de recipients, campos padrão (normalmente: sobrenome, nome, endereço, cidade, data de nascimento, etc.) ou campos personalizados.
+No caso mais comum, os dados de personalização são armazenados no banco de dados. Por exemplo, &quot;campos de personalização de recipient&quot; são todos os campos definidos na tabela de recipients, campos padrão (normalmente: sobrenome, nome, endereço, cidade, data de nascimento etc.) ou campos personalizados.
 
 ![Campos de personalização de campanha em um email](assets/perso-campaign-datasource.png)
 
@@ -39,7 +39,7 @@ Os dados do Personalization podem ser extraídos de uma tabela externa por meio 
 
 Para fazer isso, adicione uma atividade **Query** no fluxo de trabalho de direcionamento e use o link **Add data...** para selecionar o banco de dados externo. O processo detalhado está disponível em [esta seção](../../automation/workflow/query.md#adding-data).
 
-Em seguida, use os dados da tabela temporária para personalizar seu delivery. Após configurar a atividade de consulta, acesse os dados externos nas opções de personalização, a partir da entrada **Target extension**.
+Em seguida, use os dados da tabela temporária para personalizar sua entrega. Após configurar a atividade de consulta, acesse os dados externos nas opções de personalização, a partir da entrada **Target extension**.
 
 ![Dados do Personalization de um banco de dados externo](assets/perso-external-db.png)
 
@@ -56,7 +56,7 @@ Marcar essa opção pode melhorar muito o desempenho da análise de entrega quan
 Para usar essa opção, siga as etapas abaixo:
 
 1. Crie uma campanha.
-1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Consulta** ao fluxo de trabalho.
+1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho.
 1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra.
 1. Vá até a guia **[!UICONTROL Analysis]** do **[!UICONTROL Delivery properties]** e selecione a opção **[!UICONTROL Prepare the personalization data with a workflow]**.
 1. Configure a entrega e comece o fluxo de trabalho para iniciar a análise.
