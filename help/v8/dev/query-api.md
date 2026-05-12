@@ -6,9 +6,16 @@ role: Developer
 level: Intermediate, Experienced
 hide: true
 exl-id: c2862f94-7d15-4a49-a74e-df90d0ea7bc9
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+TQID: https://experienceleague.adobe.com/Kyg3a2wvNCe2sebfG01-qMnFurvDBYS7uQfGPfVmuGE
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: b5852c32-876b-41ae-92a7-9f588865ae52id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: e739ee2b-6228-412e-878f-45de0791417d
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: 1421
 ht-degree: 3%
 
 ---
@@ -39,7 +46,7 @@ NLWS.<namespace><SchemaName>.<method>()
 
 Os métodos comuns de API incluem:
 
-* `load(id)` - Carregar uma entidade pela respectiva ID. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-load.html?lang=pt-BR){target="_blank"}
+* `load(id)` - Carregar uma entidade pela respectiva ID. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-load.html){target="_blank"}
 * `create(data)` - Criar uma nova entidade
 * `save()` - Salvar alterações em uma entidade
 
@@ -137,7 +144,7 @@ O esquema `xtk:queryDef` fornece métodos para compilar e executar consultas ao 
 * `getIfExists` - Recuperar um único registro, retornar nulo se não for encontrado
 * `count` - Contar registros que correspondem aos critérios
 
-Saiba mais sobre os métodos queryDef na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre os métodos queryDef na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}.
 
 ## Consulta com JSON {#query-json}
 
@@ -309,7 +316,7 @@ for each(var record in records.getElements()) {
 
 >[!CAUTION]
 >
->Sempre use consultas parametrizadas com `$(sz)` para cadeias de caracteres e `$(l)` para números inteiros a fim de evitar vulnerabilidades de injeção de SQL. Saiba mais na [documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html?lang=pt-BR){target="_blank"}.
+>Sempre use consultas parametrizadas com `$(sz)` para cadeias de caracteres e `$(l)` para números inteiros a fim de evitar vulnerabilidades de injeção de SQL. Saiba mais na [documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html){target="_blank"}.
 
 ## Contar registros {#count-records}
 
@@ -560,7 +567,7 @@ logInfo("Generated SQL: " + sql);
 // Output: "SELECT iRecipientId, sEmail FROM NmsRecipient WHERE sEmail IS NOT NULL"
 ```
 
-Saiba mais sobre [BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre [BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html){target="_blank"}.
 
 ### BuildQueryEx - Obter SQL com cadeia de caracteres de formato {#build-query-ex}
 
@@ -585,7 +592,7 @@ logInfo("Format: " + format);
 var results = sqlSelect(format, sql);
 ```
 
-Saiba mais sobre [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html){target="_blank"}.
 
 ### Selecionar tudo - Adicione todos os campos para selecionar {#select-all}
 
@@ -608,7 +615,7 @@ var result = query.ExecuteQuery();
 // Result contains all recipient fields
 ```
 
-Saiba mais sobre [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html){target="_blank"}.
 
 ### Atualizar - Registros de atualização em massa {#mass-update}
 
@@ -638,7 +645,7 @@ logInfo("Mass update completed");
 >
 >As atualizações em massa afetam todos os registros correspondentes à cláusula where. Sempre teste as condições where com uma consulta select primeiro para verificar quais registros serão afetados.
 
-Saiba mais sobre [Atualização](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre [Atualização](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html){target="_blank"}.
 
 ### GetInstanceFromModel - instâncias de modelo de consulta {#get-instance-from-model}
 
@@ -661,7 +668,7 @@ var query = NLWS.xtkQueryDef.create(
 var instance = query.GetInstanceFromModel("nms:delivery");
 ```
 
-Saiba mais sobre [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html){target="_blank"}.
 
 ## Operações em lote {#batch-operations}
 
@@ -900,7 +907,7 @@ Estrutura completa do objeto `queryDef`:
 
 * [Introdução às APIs do Campaign](api.md)
 * [Campaign JavaScript SDK - API de consulta](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
-* [Referência da API queryDef](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=pt-BR){target="_blank"}
+* [Referência da API queryDef](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}
 * [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR){target="_blank"}
 * [Trabalhar com esquemas](schemas.md)
 * [Trabalhar com o editor de consultas](../start/query-editor.md)
