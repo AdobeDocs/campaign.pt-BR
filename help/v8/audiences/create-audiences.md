@@ -33,7 +33,7 @@ Você pode criar uma lista usando a atividade **Atualizar lista** em um fluxo de
 
 Assista a este vídeo para saber mais sobre o Gerenciamento de listas no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3426464?captions=por_br&quality=12)
 
 
 ## Criar uma lista de contatos {#create-a-list-of-contacts}
