@@ -4,10 +4,22 @@ description: Lista de recursos e melhorias disponíveis com as versões do Campa
 feature: Release Notes
 hide: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+TQID: https://experienceleague.adobe.com/o497R5a6OnWWHLy-QJUic5Mps5OlRGrW7JvQCQJKhC0
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2:
+  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 93%
+source-wordcount: 1644
+ht-degree: 97%
 
 ---
 
@@ -98,7 +110,7 @@ _28 de outubro de 2021_
 * Correção de um problema que podia fazer com que o fluxo de trabalho de faturamento falhasse em instâncias de marketing.
 * Correção de um problema que poderia causar a duplicação de chaves em tabelas prontas para uso no FFDA do Snowflake. (NEO-38583)
 * Correção de um problema que podia causar a perda de esquemas temporários de fluxos de trabalho ao editar duas atividades de desduplicação em sequência. (NEO-34063)
-* Correção de um problema que retornava resultados incorretos ao executar as funções HoursDiff e MinutesDiff do Amazon Redshift para tentar extrair o componente de tempo.(NEO-31673)
+* Corrigimos um problema que gerava resultados incorretos ao executar as funções HoursDiff e MinutesDiff do Amazon Redshift ao tentar extrair o componente de hora.(NEO-31673)
 * Correção de um problema que podia impedir os usuários de fazerem logon no console em função de um problema de configuração de proxy. (NEO-38388)
 * Correção de um problema de regressão que impedia o funcionamento correto da funcionalidade **Limpar pasta**. (NEO-37459)
 * Correção de um problema que podia impedir a pré-visualização de entregas de dispositivos móveis que foram anexadas a um fluxo de trabalho.
@@ -116,7 +128,7 @@ _7 de setembro de 2021_
 
 * Após o fim da vida útil, o Flash foi removido de todos os recursos e componentes relacionados do Campaign e substituído pelo HTML5. O tipo de gráfico **Medição** foi removido. (NEO-30330) [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=pt-BR)
 * Ao instalar o Console do cliente no Windows, o instalador agora verifica se há um nó de registro pai e cria um se estiver ausente. Isso evita possíveis problemas ao iniciar o console. (NEO-34854)
-* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados à forma como as ferramentas de terceiros (clientes de email, navegadores de Internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
+* O recurso de assinatura de rastreamento foi aprimorado para evitar erros relacionados à forma como ferramentas de terceiros (clientes de email, navegadores da Internet, etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
 
 **Outras alterações**
 
