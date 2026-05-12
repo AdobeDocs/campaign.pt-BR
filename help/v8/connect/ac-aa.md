@@ -121,7 +121,7 @@ Depois de criar o **[!UICONTROL Report suite]**, você precisa configurar as **[
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Para saber como configurar o **[!UICONTROL Success events]**, consulte esta [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html)
+   Para saber como configurar o **[!UICONTROL Success events]**, consulte esta [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html?lang=pt-BR)
 
    ![](assets/analytics_connnector_8.png)
 
@@ -159,7 +159,7 @@ Para obter mais informações, consulte a página [Perfis de produto do Adobe An
 
    >[!NOTE]
    >
-   >Os campos ID da campanha e ID da carga geral são coletados por meio do JavaScript na página de aterrissagem ou por meio de regras de processamento. [Saiba mais sobre as regras de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Os campos ID da campanha e ID da carga geral são coletados por meio do JavaScript na página de aterrissagem ou por meio de regras de processamento. [Saiba mais sobre as regras de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 

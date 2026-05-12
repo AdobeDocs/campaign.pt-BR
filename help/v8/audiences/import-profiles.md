@@ -39,9 +39,9 @@ Prepare e estruture seus dados em um arquivo para importá-lo com um fluxo de tr
 
 ### Carregar dados de um arquivo {#data-from-a-file}
 
-Os dados processados em um workflow podem ser extraídos de um arquivo estruturado para serem importados para o Adobe Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html){target="_blank"}.
+Os dados processados em um workflow podem ser extraídos de um arquivo estruturado para serem importados para o Adobe Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html?lang=pt-BR){target="_blank"}.
 
-Depois que os dados forem coletados, você poderá usá-los em seus fluxos de trabalho, por exemplo, para enriquecer uma entrega ou atualizar o banco de dados. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}.
+Depois que os dados forem coletados, você poderá usá-los em seus fluxos de trabalho, por exemplo, para enriquecer uma entrega ou atualizar o banco de dados. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=pt-BR){target="_blank"}.
 
 ## Importações únicas{#import-jobs}
 
