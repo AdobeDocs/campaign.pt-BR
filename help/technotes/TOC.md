@@ -5,10 +5,10 @@ type: Event
 title: Notas técnicas do Adobe Campaign
 description: Notas técnicas do Campaign
 breadcrumb-title: Notas técnicas do Campaign
-source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
+source-git-commit: 25ce962e7c8b6a62fc2c1edb08a78afa839d264e
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 24%
+source-wordcount: '88'
+ht-degree: 27%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 24%
    + {hide-from-toc}[Navegadores da Internet](upgrades/browsers.md)
    + {hide-from-toc}[Atualizações de sistema de 2023](upgrades/tech-stack-upgrade.md)
    + {hide-from-toc}[substituição de 32 bits do console do cliente](upgrades/console.md)
+   + [Esquemas de 64 bits](upgrades/64-bit-tables.md)
    + Segurança {#security}
       + {hide-from-toc}[Rotação de credenciais do cliente](security/credential-rotation-guide.md)
       + {hide-from-toc}[Criptografia assimétrica](security/asymetric-encryption.md)
