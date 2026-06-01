@@ -7,15 +7,11 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 TQID: https://experienceleague.adobe.com/CSbxLgXnmrLFiEVEHHNM4rYDBn870UTuhcr1w6FOuRQ
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 1565
 ht-degree: 93%
@@ -97,7 +93,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 1. Selecione o [target mapping](../audiences/target-mappings.md) na lista suspensa **[!UICONTROL Target mapping]**.
 1. Clique no botão **[!UICONTROL Add]** para definir os filtros de restrição.
 
-   ![](assets/target-type.png){width="60%" align="left" zoomable="yes"}
+   ![](assets/target-type.png){width="60%" zoomable="yes"}
 
    Selecione um tipo de filtro e clique em **[!UICONTROL Next]** para definir as condições. Você pode exibir os destinatários filtrados na guia **[!UICONTROL Preview]**. De acordo com o tipo de público-alvo, o botão **[!UICONTROL Refine target]** permite combinar vários critérios de direcionamento.
 
@@ -191,7 +187,7 @@ Para obter mais informações sobre destinatários e envio de provas, consulte 
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 

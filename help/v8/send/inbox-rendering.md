@@ -6,7 +6,7 @@ feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 98%
@@ -89,7 +89,7 @@ Este relatório exibe as renderizações da caixa de entrada como são exibidas 
 
 A seção superior apresenta a repartição do número de mensagens recebidas, indesejadas (spam), não recebidas ou com recebimentos pendentes por meio de uma representação gráfica colorida.
 
-![](assets/s_tn_inbox_rendering_summary.png){width="40%" align="left"}
+![](assets/s_tn_inbox_rendering_summary.png){width="40%"}
 
 Passe o mouse sobre o gráfico para exibir os detalhes de cada cor. Clique em um item na lista para ocultar ou exibir a categoria correspondente no gráfico.
 

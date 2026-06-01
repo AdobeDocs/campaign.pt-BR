@@ -6,16 +6,11 @@ role: User
 level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
 TQID: https://experienceleague.adobe.com/A1EyDmVc2Y7okJFeFT7lsckZm8-IFDD-XFIqpb-Q7v8
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 693
 ht-degree: 52%
@@ -64,7 +59,7 @@ Para preparar o delivery, verifique se o conteúdo e o target do delivery foram 
    * Um ícone amarelo indica um erro de processamento não crítico.
    * Um ícone vermelho indica um erro crítico que impede o envio do delivery.
 
-   ![](assets/delivery-analysis-results.png){width="800" align="left"}
+   ![](assets/delivery-analysis-results.png){width="800"}
 
 1. Clique em **[!UICONTROL Close]** para corrigir os erros, se houver. Depois de fazer as alterações, reinicie a análise clicando em **[!UICONTROL Analyze]**.
 
@@ -80,7 +75,7 @@ Para preparar o delivery, verifique se o conteúdo e o target do delivery foram 
 
 Navegue até a guia **[!UICONTROL Analysis]** das propriedades de entrega para definir configurações para a preparação da mensagem durante a fase de análise.
 
-![](assets/delivery-properties-analysis-tab.png){width="800" align="left"}
+![](assets/delivery-properties-analysis-tab.png){width="800"}
 
 Essa guia fornece acesso às seguintes opções:
 

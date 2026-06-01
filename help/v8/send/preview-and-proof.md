@@ -6,15 +6,11 @@ role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
 TQID: https://experienceleague.adobe.com/uVVmB-6U7nTrC0ypEHAINNtp5tcE0gr8ambKwDK56ls
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 707
 ht-degree: 16%
@@ -61,11 +57,11 @@ O tipo de destino de prova está selecionado na lista suspensa **[!UICONTROL Tar
 
   Por padrão, a substituição é executada aleatoriamente, mas você pode selecionar um recipient específico do público-alvo principal, por meio do ícone **[!UICONTROL Detail]**.
 
-  ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution-details.png){width="800"}
 
   Escolha a opção **[!UICONTROL Select a profile (must be included in the target)]** e selecione um recipient.
 
-  ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution.png){width="800"}
 
 
 * Use a opção **[!UICONTROL Seed addresses]** para usar seed addresses como target de prova. Esses endereços podem ser importados de um arquivo ou inseridos manualmente.
@@ -86,7 +82,7 @@ Para enviar provas de mensagem, siga as etapas abaixo:
 1. Na janela **[!UICONTROL Send a proof]**, verifique os recipients da prova.
 1. Clique em **[!UICONTROL Analyze]** para iniciar a preparação da mensagem de prova.
 
-   ![](assets/send-proof-analyze.png){width="800" align="left"}
+   ![](assets/send-proof-analyze.png){width="800"}
 
 1. Quando a preparação da entrega for concluída, use o **[!UICONTROL Confirm delivery]** para começar a enviar mensagens de prova.
 
@@ -108,11 +104,11 @@ As propriedades de prova são definidas na guia **[!UICONTROL Advanced]** das ja
 
 Por padrão, as mensagens de prova são identificadas pela menção `Proof #N` no assunto, onde `N` é o número de prova. Esse número é incrementado a cada análise de delivery de prova. Você pode alterar o prefixo `proof`, conforme necessário.
 
-![](assets/proof-parameters.png){width="800" align="left"}
+![](assets/proof-parameters.png){width="800"}
 
 
 ## Vídeo tutorial {#video-proof}
 
 Saiba como enviar e validar uma prova para uma entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)
