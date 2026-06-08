@@ -16,9 +16,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 62f279d8b36160ff56f4fdc1f7fba0099bdbc8ad
 workflow-type: tm+mt
-source-wordcount: 838
+source-wordcount: 832
 ht-degree: 28%
 
 ---
@@ -51,9 +51,9 @@ Disponível para todos os clientes do Campaign v8, garante escalabilidade, alta 
 
 ### Benefícios
 
-O Adobe Campaign usa um Mail Transfer Agent (MTA) que executa o MTA de email comercial do SparkPost chamado **Momentum**.
+O Adobe Campaign usa o **MTA aprimorado** (Agente de Transferência de Email), um mecanismo de entrega de email de alto desempenho.
 
-O Momentum representa uma tecnologia MTA inovadora e de alto desempenho, que inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançar e manter as taxas ideais de delivery da caixa de entrada.
+O MTA aprimorado inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançarem e manterem as taxas ideais de delivery da caixa de entrada.
 
 * O MTA permite um aumento maciço na velocidade geral de taxa de transferência e uma redução significativa em rejeições temporárias.
 * Ele usa a mais recente tecnologia MTA para fornecer a você as velocidades de taxa de transferência ideais para seu delivery de email.
