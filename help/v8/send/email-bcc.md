@@ -7,15 +7,11 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
 TQID: https://experienceleague.adobe.com/gBiPYIxSPqG0ks8b680AjfJK4eY1uCovk61e3ORbKug
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 62f279d8b36160ff56f4fdc1f7fba0099bdbc8ad
 workflow-type: tm+mt
 source-wordcount: 370
 ht-degree: 1%
@@ -53,7 +49,7 @@ Para habilitar o CCO para um [modelo de entrega](create-templates.md) específic
 1. No explorador do Campaign, navegue até a pasta de templates do delivery. Por padrão, os modelos de entrega são armazenados na pasta **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Edite o template do delivery a ser atualizado com Cco.
 1. Clique no botão **[!UICONTROL Properties]**.
-1. Na guia **[!UICONTROL Delivery]**, marque a opção **[!UICONTROL Email BCC with enhanced Momentum]**.
+1. Na guia **[!UICONTROL Delivery]**, marque a opção **[!UICONTROL Email BCC with Enhanced MTA]**.
 
    ![](assets/email-bcc.png)
 
