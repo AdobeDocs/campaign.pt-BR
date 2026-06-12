@@ -5,21 +5,14 @@ feature: Release Notes
 hide: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
 TQID: https://experienceleague.adobe.com/o497R5a6OnWWHLy-QJUic5Mps5OlRGrW7JvQCQJKhC0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
-source-wordcount: 1644
-ht-degree: 97%
+source-wordcount: 1617
+ht-degree: 96%
 
 ---
 
@@ -70,7 +63,7 @@ _28 de outubro de 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>O Unicity Service é um novo componente do Cloud Database Manager. Ele ajuda os usuários a preservar e monitorar a integridade das restrições de chaves únicas dentro de tabelas do Cloud Database. Isso permite reduzir o risco de inserir chaves duplicadas.
+<td> <p>O Unicity Service é um novo componente do Cloud Database Manager. Ele ajuda os usuários a preservar e monitorar a integridade das restrições de chaves exclusivas nas tabelas do Cloud Database. Isso permite reduzir o risco de inserir chaves duplicadas.
 <p>Como o Cloud Database não impõe restrições de unicidade, o Unicity Service introduz, no nível do aplicativo, <b>um novo conjunto de medidas de proteção</b> que reduzem o risco de inserir duplicados ao gerenciar dados com o Adobe Campaign.</p> 
 <p>O Unicity Service inicia um novo fluxo de trabalho integrado chamado <b>ffdaUnicity</b> para monitorar restrições de unicidade e alertar quando duplicados são detectados.</p>
 <p>Para obter mais informações, consulte a <a href="../architecture/keys.md">documentação detalhada</a>.</p>
@@ -132,7 +125,7 @@ _7 de setembro de 2021_
 
 **Outras alterações**
 
-* Os conectores do Microsoft CRM descontinuados anteriormente (implantações do Office 365 e locais) foram removidos da interface. [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html?lang=pt-BR#configure-acc-for-microsoft)
+* Os conectores do Microsoft CRM descontinuados anteriormente (implantações do Office 365 e locais) foram removidos da interface. [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
 
 * Após a migração para o Tomcat 8, o script de configuração do IIS foi atualizado para corrigir problemas de integração do IIS. (NEO-31019)
 * Foi adicionada uma medida de proteção para permitir que o [fluxo de trabalho técnico de faturamento](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=pt-BR#billing-report) seja executado na instância de marketing.
@@ -207,3 +200,4 @@ _23 de julho de 2021_
 * Correção de um problema com a atividade de fluxo de trabalho **Desduplicação** que podia resultar em uma contagem duplicada imprecisa.
 * Correção de um problema ao ser usada uma consulta de fluxo de trabalho com o filtro &quot;ID não está vazia&quot; que podia resultar na exibição de um item vazio na população de transição.
 * Correção de um problema que impedia a criação de campos adicionais em um novo target mapping.
+

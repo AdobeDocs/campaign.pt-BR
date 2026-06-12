@@ -7,13 +7,10 @@ level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 hide: true
 TQID: https://experienceleague.adobe.com/Cpc-97Lab93SQhsFloibdhpvCDFockj6afFSZUTgKoM
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
 source-wordcount: 785
 ht-degree: 96%
@@ -70,7 +67,7 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
 1. **Com quais sistemas e componentes o Campaign v8 é compatível?**
 
-   Você pode obter a lista de todos os sistemas e componentes compatíveis com o último build do Campaign na [Matriz de compatibilidade do Adobe Campaign &#x200B;](compatibility-matrix.md).
+   Você pode obter a lista de todos os sistemas e componentes compatíveis com o último build do Campaign na [Matriz de compatibilidade do Adobe Campaign ](compatibility-matrix.md).
 
 1. **Qual é o procedimento para delegação de domínio?**
 
@@ -92,13 +89,13 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
 
    Você pode obter o programa de instalação e o console do cliente do Centro de download da Adobe.
 
-   Como usuário administrador, acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html){target="_blank"}  da Adobe para baixar o Adobe Campaign.
+   Como usuário administrador, acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) {target="_blank"} da Adobe para baixar o Adobe Campaign.
 
    Saiba mais sobre o Centro de distribuição [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR){target="_blank"}.
 
 1. **Posso me conectar com especialistas do Campaign?**
 
-   Junte-se à Comunidade do Campaign: procure respostas em uma pergunta já existente ou faça uma nova aos especialistas. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){target="_blank"}
+   Junte-se à Comunidade do Campaign: procure respostas em uma pergunta já existente ou faça uma nova aos especialistas. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Como posso registrar um problema?**
@@ -108,3 +105,4 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
    Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminConsole.adobe.com/overview){target="_blank"}.
 
    Esse sistema exige contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá seu problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
+
