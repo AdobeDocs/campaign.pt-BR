@@ -16,10 +16,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
-source-wordcount: 1644
-ht-degree: 97%
+source-wordcount: 1617
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ _28 de outubro de 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>O Unicity Service é um novo componente do Cloud Database Manager. Ele ajuda os usuários a preservar e monitorar a integridade das restrições de chaves únicas dentro de tabelas do Cloud Database. Isso permite reduzir o risco de inserir chaves duplicadas.
+<td> <p>O Unicity Service é um novo componente do Cloud Database Manager. Ele ajuda os usuários a preservar e monitorar a integridade das restrições de chaves exclusivas nas tabelas do Cloud Database. Isso permite reduzir o risco de inserir chaves duplicadas.
 <p>Como o Cloud Database não impõe restrições de unicidade, o Unicity Service introduz, no nível do aplicativo, <b>um novo conjunto de medidas de proteção</b> que reduzem o risco de inserir duplicados ao gerenciar dados com o Adobe Campaign.</p> 
 <p>O Unicity Service inicia um novo fluxo de trabalho integrado chamado <b>ffdaUnicity</b> para monitorar restrições de unicidade e alertar quando duplicados são detectados.</p>
 <p>Para obter mais informações, consulte a <a href="../architecture/keys.md">documentação detalhada</a>.</p>
@@ -207,3 +207,4 @@ _23 de julho de 2021_
 * Correção de um problema com a atividade de fluxo de trabalho **Desduplicação** que podia resultar em uma contagem duplicada imprecisa.
 * Correção de um problema ao ser usada uma consulta de fluxo de trabalho com o filtro &quot;ID não está vazia&quot; que podia resultar na exibição de um item vazio na população de transição.
 * Correção de um problema que impedia a criação de campos adicionais em um novo target mapping.
+

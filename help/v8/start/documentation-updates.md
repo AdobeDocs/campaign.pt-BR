@@ -12,7 +12,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
 source-wordcount: 275
 ht-degree: 100%
@@ -56,3 +56,4 @@ Adição de uma nota para especificar como limpar variáveis de instância ao re
 
 * Foram adicionadas informações sobre como o campo postalAddress padrão para correspondência direta é definido e por que é importante garantir que os endereços estejam completos. [Leia mais](../send/direct-mail.md)
 * A [página inicial da documentação](../campaign-home.md) do Adobe Campaign v8 foi reprojetada.
+

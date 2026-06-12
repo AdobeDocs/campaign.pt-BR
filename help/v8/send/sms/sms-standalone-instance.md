@@ -17,9 +17,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
-source-wordcount: 279
+source-wordcount: 273
 ht-degree: 8%
 
 ---
@@ -55,7 +55,7 @@ Estas são as etapas para criar sua conta externa SMPP:
    ![](assets/sms_extaccount_new.png){zoomable="yes"}
 
 1. Na guia **[!UICONTROL Mobile]**, mantenha **[!UICONTROL Extended generic SMPP]** na lista suspensa **[!UICONTROL Connector]**.
-A caixa **[!UICONTROL Send messages through a dedicated process]** está marcada por padrão.
+A caixa **[!UICONTROL Send messages through a dedicated process]** é marcada por padrão.
 
    ![](assets/sms_extaccount_connector.png){zoomable="yes"}
 
@@ -83,3 +83,4 @@ Na guia **[!UICONTROL SMS]**, é possível adicionar parâmetros opcionais ao mo
 ![](assets/sms_template_properties.png){zoomable="yes"}
 
 [Saiba mais sobre esta configuração da guia SMS](sms-delivery-settings.md).
+

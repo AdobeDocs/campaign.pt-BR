@@ -13,7 +13,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
 source-wordcount: 785
 ht-degree: 96%
@@ -108,3 +108,4 @@ Precisa de ajuda para trabalhar no Campaign? Leia as principais perguntas/respos
    Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminConsole.adobe.com/overview){target="_blank"}.
 
    Esse sistema exige contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá seu problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
+
