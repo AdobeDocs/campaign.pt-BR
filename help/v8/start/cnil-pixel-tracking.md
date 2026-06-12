@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 hide: true
-source-git-commit: 5c27d45ebac8ad300d35ef0ff858fbdaef6ec9fb
+source-git-commit: c56ec544361983d75851660e739d02aadeb65dcd
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '849'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Esta publicação é apenas para fins informativos. Não é um aconselhamento ju
 
 ## Visão geral
 
-Em 14 de abril de 2026, a Commission nationale de l&#39;informatique et des libertés (CNIL), autoridade de proteção de dados da França, publicou uma [recomendação sobre o uso de pixels de rastreamento em emails](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf). As orientações esclarecem quando o consentimento é necessário e destacam a importância de práticas de consentimento adequadas para o rastreamento de pixels de email. Essa política pode afetar as práticas de envio para qualquer entidade que entregue emails a assinantes com sede na França.
+Em 14 de abril de 2026, a _Commission nationale de l&#39;informatique et des libertés_ (CNIL), autoridade de proteção de dados da França, publicou uma [recomendação sobre o uso de pixels de rastreamento em emails](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf). As orientações esclarecem quando o consentimento é necessário e destacam a importância de práticas de consentimento adequadas para o rastreamento de pixels de email. Essa política pode afetar as práticas de envio para qualquer entidade que entregue emails a assinantes com sede na França.
 
 A CNIL forneceu um período de três meses a partir da data da recomendação para que as empresas informassem seus destinatários de email (&quot;usuários&quot;) sobre a presença dos pixels de rastreamento, sua finalidade e o direito dos usuários de recusarem. Durante esse período de transição, espera-se que os clientes notifiquem os usuários sobre o rastreamento de pixels e forneçam uma opção de não participação, se necessário. A CNIL deve iniciar as atividades de fiscalização após 14 de julho de 2026.
 
@@ -38,12 +38,12 @@ Os clientes que buscam assistência para implementar as alterações descritas a
 
 Os clientes podem usar o rastreamento nativo, o esquema e os mecanismos de personalização da Adobe Campaign para abordar determinados elementos ao configurar a arquitetura para abordar a orientação da CNIL:
 
-* **Classificação da entrega.** Estenda o nms:delivery com um atributo emailType (autenticação, somente entrega, transacional, marketing, serviço público, prospecção B2B). A classificação direciona quais pixels são permitidos sem consentimento.
-* **Captura de consentimento.** Estenda o nms:recipient com uma estrutura de consentimento por finalidade contendo versão de texto, carimbo de data/hora, fonte de captura e expiração. Estenda os formulários de inscrição e os centros de preferências para coletar o consentimento em pixels separadamente da aceitação de email.
-* **Emissão de pixels.** Defina um NmsTracking_OpenFormula por finalidade de pixel (autenticação, entregabilidade, desempenho, criação de perfil, detecção de fraude). Uma regra de tipologia de delivery seleciona quais fórmulas emitir com base no emailType e no consentimento por finalidade do recipient. Os blocos de personalização encapsulam a lógica de modo que ela não conste de criações individuais.
-* **Retirada.** Adicione um link Gerenciar preferências do rastreador a cada rodapé de email, diferente do link de cancelamento de inscrição. O link aponta para uma página de aterrissagem nms:webApp autenticada por idTracking; o recipient retira o consentimento em um clique, sem inserir novamente seu endereço de email. Uma etapa de filtro adicionada ao workflow de Rastreamento padrão impede que reaberturas de emails entregues anteriormente sejam exploradas após a retirada.
-* **Prova de consentimento.** Capture cada evento de consentimento em um log somente acréscimo (um namespace de extensão pix:consentLog, por exemplo), com a versão do texto armazenada separadamente para recuperação após alterações de texto. Exiba o log por meio do explorador do Adobe Campaign e como uma exportação periódica.
-* **Governança de solicitação novamente.** Um campo lastPixelRefusalDate e uma regra de tipologia de filtragem impedem a solicitação de nova solicitação por pelo menos seis meses após uma recusa. Um fluxo de trabalho periódico pode ajudar a gerenciar a expiração do consentimento.
+* **Classificação da entrega.** Estenda `nms:delivery` com um atributo `emailType` (autenticação, somente entregabilidade, transacional, marketing, serviço público, prospecção B2B). A classificação direciona quais pixels são permitidos sem consentimento.
+* **Captura de consentimento.** Estenda o `nms:recipient` com uma estrutura de consentimento por finalidade contendo versão de texto, carimbo de data/hora, fonte de captura e expiração. Estenda os formulários de inscrição e os centros de preferências para coletar o consentimento em pixels separadamente da aceitação de email.
+* **Emissão de pixels.** Defina uma finalidade de `NmsTracking_OpenFormula` por pixel (autenticação, capacidade de entrega, desempenho, criação de perfil, detecção de fraudes). Uma regra de tipologia de delivery seleciona quais fórmulas emitir com base no emailType e no consentimento por finalidade do recipient. Os blocos de personalização encapsulam a lógica de modo que ela não conste de criações individuais.
+* **Retirada.** Adicione um link **Gerenciar preferências do rastreador** a cada rodapé de email, diferente do link de cancelamento de inscrição. O link aponta para uma página de aterrissagem do `nms:webApp` autenticada por meio do `idTracking`; o destinatário retira o consentimento com um clique, sem digitar novamente seu endereço de email. Uma etapa de filtro adicionada ao fluxo de trabalho padrão **Rastreamento** impede que reaberturas de emails entregues anteriormente sejam exploradas após a retirada.
+* **Prova de consentimento.** Capture cada evento de consentimento em um log somente de acréscimo (um namespace de extensão `pix:consentLog`, por exemplo), com a versão do texto armazenada separadamente para recuperação após alterações no texto. Exiba o log por meio do explorador do Adobe Campaign e como uma exportação periódica.
+* **Governança de solicitação novamente.** Um campo `lastPixelRefusalDate` e uma regra de tipologia de filtragem impedem uma nova solicitação por pelo menos seis meses após uma recusa. Um fluxo de trabalho periódico pode ajudar a gerenciar a expiração do consentimento.
 * **Relatórios.** Os relatórios existentes do Adobe Campaign continuam a operar em relação aos novos campos (urlCategory, emailType, os sinalizadores de consentimento) sem alterações de código.
 
 Para obter mais informações sobre o rastreamento de email nos aplicativos de execução de marketing por email do Adobe, consulte a documentação aqui:
