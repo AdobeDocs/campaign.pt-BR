@@ -5,9 +5,9 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: 22b8f9904eb2ce99780de60d9946d5304301af8e
+source-git-commit: eacbd4a625626dcad724b2f74721256548baf850
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '896'
 ht-degree: 86%
 
 ---
@@ -40,6 +40,7 @@ ht-degree: 86%
    + [Do Campaign Standard ao v8](start/acs-to-v8.md)
    + [Perguntas frequentes](start/campaign-faq-comprehensive.md)
    + {hide-from-toc}[Perguntas frequentes](start/campaign-faq.md)
+   + {hide-from-toc}[Pixels de rastreamento de email e Orientação da CNIL](start/cnil-pixel-tracking.md)
 + Administração e permissões {#permissions}
    + [Introdução a permissões](start/gs-permissions.md)
    + [Gerenciar permissões do usuário](start/manage-permissions.md)
