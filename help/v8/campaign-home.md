@@ -4,21 +4,13 @@ description: Encontre ajuda na central de ajuda do Adobe Campaign v8. Saiba mais
 title: Documentação do produto Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 TQID: https://experienceleague.adobe.com/btc-anKUgS2PFCv86Pi7QRw8nrWMV4gZXvFwnWQvQVM
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b12f6872-9271-4369-85e5-86969a0b99a2
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 94d9f6725b0bfb458707c9900f5b6cb553d72daf
 workflow-type: tm+mt
-source-wordcount: 331
-ht-degree: 74%
+source-wordcount: 281
+ht-degree: 80%
 
 ---
 
@@ -90,39 +82,39 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Introdução</strong><br/><a href="start/campaign-ui.md">Interface do usuário</a> - <a href="start/ac-components.md">Componentes e processos</a> - <a href="start/v7-to-v8.md">Do Classic v7 para o v8</a> - <a href="start/campaign-faq.md">Perguntas frequentes</a>
+      <strong>Introdução</strong><br/><a href="start/campaign-ui.md">Interface do usuário</a> – <a href="start/ac-components.md">Componentes e processos</a> – <a href="start/v7-to-v8.md">Do Classic v7 para o v8</a> – <a href="start/campaign-faq.md">Perguntas frequentes</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Experiência do cliente</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatizar com fluxos de trabalho</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Orquestração de campanhas</a> - <a href="interaction/interaction.md">Gerenciamento de decisões</a> - <a href="send/personalize.md">Personalization</a>
+      <strong>Experiência do cliente</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatizar com fluxos de trabalho</a> – <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Orquestração de campanha</a> – <a href="interaction/interaction.md">Gestão de decisões</a> – <a href="send/personalize.md">Personalização</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Enviar mensagens</strong><br/><a href="start/create-message.md">Introdução</a> - <a href="send/preview-and-proof.md">Visualização e provas</a> - <a href="send/predictive.md">Otimização de hora de envio</a> - <a href="reporting/gs-reporting.md">Relatórios e análises</a>
+      <strong>Enviar mensagens</strong><br/><a href="start/create-message.md">Introdução</a> – <a href="send/preview-and-proof.md">Visualização e provas</a> – <a href="send/predictive.md">Otimização da hora de envio</a> – <a href="reporting/gs-reporting.md">Relatórios e análises</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>Perfis e públicos-alvo</strong><br/><a href="audiences/create-profiles.md">Adicionar perfis</a> - <a href="audiences/create-audiences.md">Criar públicos-alvo</a> - <a href="start/subscriptions.md">Gerenciar assinaturas</a> - <a href="start/privacy.md">Privacidade</a>
+     <strong>Perfis e públicos-alvo</strong><br/><a href="audiences/create-profiles.md">Adicionar perfis</a> – <a href="audiences/create-audiences.md">Criar públicos-alvo</a> – <a href="start/subscriptions.md">Gerenciar assinaturas</a> – <a href="start/privacy.md">Privacidade</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
     <br/>
-      <strong>Arquitetura e configuração</strong><br/><a href="architecture/architecture.md">Arquitetura</a> - <a href="start/implement.md">Implementação do Campaign v8</a> - <a href="connect/integration.md">Conexão com outras soluções</a> - <a href="start/gs-permissions.md">Usuários e permissões</a>
+      <strong>Arquitetura e configuração</strong><br/><a href="architecture/architecture.md">Arquitetura</a> – <a href="start/implement.md">Implementação do Campaign v8</a> – <a href="connect/integration.md">Conectar-se a outras soluções</a> – <a href="start/gs-permissions.md">Usuários e permissões</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
-    <br/>
-      <strong>Recursos do desenvolvedor</strong><br/><a href="dev/datamodel.md">Modelo de dados do Campaign v8</a> - <a href="dev/schemas.md">Esquemas</a> - <a href="dev/api.md">APIs</a>
+    <br/>
+      <strong>Recursos do desenvolvedor</strong><br/><a href="dev/datamodel.md">Modelo de dados do Campaign v8</a> – <a href="dev/schemas.md">Esquemas</a> – <a href="dev/api.md">APIs</a>
     </td>
   </tr>
 </table>
 
 ## Recursos adicionais
 
-[Descrição do produto Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentação da interface do Adobe Campaign Web](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"} - [Tutoriais](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] Guia de automação](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+[Descrição de produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentação da interface da Web do Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Tutoriais](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] guia de automação](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"} - [Pixels de rastreamento de email e Orientação da CNIL](../v8/start/cnil-pixel-tracking.md)
 
