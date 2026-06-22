@@ -49,13 +49,13 @@ O monitoramento de deliveries, após serem enviados, é uma etapa essencial para
 >
 >**Novo no Campaign?** O painel de delivery é sua tela principal do dia a dia. Abra qualquer entrega enviada, clique na guia **Logs** e você verá quais destinatários receberam a mensagem, quais foram excluídos e o motivo, e quem clicou ou abriu.
 
-**Entregas de email** - Monitore o status da entrega de email, rastreie as métricas principais e acesse os logs detalhados. Saiba mais sobre o [monitoramento de entregas na interface do usuário do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard), [status de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-statuses) e [monitoramento de entrega de email](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/send#email-monitoring).
+**Entregas de email** - Monitore o status da entrega de email, rastreie as métricas principais e acesse os logs detalhados. Saiba mais sobre o [monitoramento de entregas na interface do usuário do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard), [status de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-statuses) e [monitoramento de entrega de email](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/send#email-monitoring).
 
-**Entregas de SMS** - Rastreie o status da entrega de SMS e monitore as métricas principais no painel de entrega de SMS. Saiba mais sobre o [monitoramento de SMS](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms-monitor).
+**Entregas de SMS** - Rastreie o status da entrega de SMS e monitore as métricas principais no painel de entrega de SMS. Saiba mais sobre o [monitoramento de SMS](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/sms-monitor).
 
-**Notificações por push** - Monitore entregas de notificações por push para garantir que elas cheguem aos usuários do aplicativo móvel de maneira eficaz. Saiba mais sobre o [monitoramento de notificação por push](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push#push-test).
+**Notificações por push** - Monitore entregas de notificações por push para garantir que elas cheguem aos usuários do aplicativo móvel de maneira eficaz. Saiba mais sobre o [monitoramento de notificação por push](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/push/push#push-test).
 
-**Mensagens transacionais** - Para mensagens acionadas por eventos, monitore o status do processamento do evento, a execução da mensagem e o status da entrega. Saiba mais sobre [monitoramento de mensagens transacionais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution#monitor-messages).
+**Mensagens transacionais** - Para mensagens acionadas por eventos, monitore o status do processamento do evento, a execução da mensagem e o status da entrega. Saiba mais sobre [monitoramento de mensagens transacionais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/delivery-execution#monitor-messages).
 
 **Falhas de entrega** - Entender por que uma entrega falhou é essencial para manter um banco de dados limpo e garantir boas taxas de entrega. As falhas de delivery são classificadas em três tipos: entender a diferença ajuda a decidir que ação tomar:
 
@@ -75,7 +75,7 @@ Saiba mais sobre [falhas de entrega e quarentenas](https://experienceleague.adob
 
 A monitoração da capacidade de entrega ajuda a garantir que as mensagens cheguem às caixas de entrada dos destinatários e evite filtros de spam. O Adobe Campaign fornece várias ferramentas integradas para monitorar e melhorar a capacidade de entrega, incluindo relatórios de entrega, renderização da caixa de entrada, testes do SpamAssassin e estatísticas de transmissão. Seguir as práticas recomendadas de capacidade de entrega, como manter uma lista de email limpa, monitorar a reputação do remetente e autenticar domínios de envio, é essencial para manter boas taxas de capacidade de entrega.
 
-Saiba mais sobre as [ferramentas de monitoramento da capacidade de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/monitoring-deliverability) e as [práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability).
+Saiba mais sobre as [ferramentas de monitoramento da capacidade de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/deliverability-management/monitoring-deliverability) e as [práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability).
 
 ## Monitorar fluxos de trabalho {#monitor-workflows}
 
@@ -93,11 +93,11 @@ Os workflows são essenciais para automatizar suas campanhas de marketing e o pr
 
 **Monitorar os seguintes elementos de fluxo de trabalho:**
 
-**Status de execução do fluxo de trabalho** - Rastreie se os fluxos de trabalho estão em execução, pausados, com falha ou concluídos. [Saiba mais sobre a execução do fluxo de trabalho](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#_blank)
+**Status de execução do fluxo de trabalho** - Rastreie se os fluxos de trabalho estão em execução, pausados, com falha ou concluídos. [Saiba mais sobre a execução do fluxo de trabalho](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#_blank)
 
 **Logs de execução de atividade** - Acesse logs detalhados para cada atividade de fluxo de trabalho para solucionar problemas e otimizar o desempenho.
 
-**Workflow HeatMap** - Uma visão geral visual de todos os fluxos de trabalho que estão sendo executados simultaneamente em sua instância. Use-o para identificar períodos de carga máxima, fluxos de trabalho ocasionais que consomem recursos desproporcionados e planejar o agendamento para evitar conflitos de execução. Disponível somente para administradores do Campaign. [Saiba mais sobre o mapa de calor do fluxo de trabalho](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/heatmap#_blank)
+**Workflow HeatMap** - Uma visão geral visual de todos os fluxos de trabalho que estão sendo executados simultaneamente em sua instância. Use-o para identificar períodos de carga máxima, fluxos de trabalho ocasionais que consomem recursos desproporcionados e planejar o agendamento para evitar conflitos de execução. Disponível somente para administradores do Campaign. [Saiba mais sobre o mapa de calor do fluxo de trabalho](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/monitoring-workflows/heatmap#_blank)
 
 **Histórico do fluxo de trabalho** - Rastreie todas as execuções e modificações do fluxo de trabalho ao longo do tempo para entender o comportamento e o desempenho do fluxo de trabalho.
 
@@ -118,19 +118,19 @@ A interface de autoatendimento da trilha de auditoria permite monitorar alteraç
 
 A Trilha de auditoria pode ser acessada por meio do console do cliente do Campaign e fornece informações detalhadas sobre as ações executadas pelos usuários.
 
-Saiba mais sobre [Trilha de auditoria](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail)
+Saiba mais sobre [Trilha de auditoria](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/audit-trail)
 
 ### Monitoramento de desempenho {#performance-monitoring}
 
 O Campaign v8 fornece vários recursos de monitoramento para rastrear o desempenho da sua instância e garantir a operação ideal:
 
-**Monitoramento de banco de dados** - Monitore o uso e a capacidade do banco de dados por meio do Painel de Controle para garantir desempenho e gerenciamento de armazenamento ideais. [Saiba mais sobre o monitoramento de banco de dados](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring#_blank)
+**Monitoramento de banco de dados** - Monitore o uso e a capacidade do banco de dados por meio do Painel de Controle para garantir desempenho e gerenciamento de armazenamento ideais. [Saiba mais sobre o monitoramento de banco de dados](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring#_blank)
 
-**Monitoramento de perfis ativos** - Rastreie o uso do perfil ativo em relação aos limites contratuais para manter a conformidade e otimizar a alocação de recursos. [Saiba mais sobre perfis ativos](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/active-profiles-monitoring#_blank)
+**Monitoramento de perfis ativos** - Rastreie o uso do perfil ativo em relação aos limites contratuais para manter a conformidade e otimizar a alocação de recursos. [Saiba mais sobre perfis ativos](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/performance-monitoring/active-profiles-monitoring#_blank)
 
 **Monitoramento do fluxo de trabalho** - Monitore o status de execução do fluxo de trabalho para identificar fluxos de trabalho de longa duração e garantir que todos os fluxos de trabalho técnicos estejam sendo executados corretamente. [Saiba mais sobre fluxos de trabalho técnicos](#technical-workflows)
 
-**Taxa de transferência e latência de entrega** - Rastrear a taxa de transferência de entrega (mensagens enviadas por hora) e a latência de comunicações transacionais por meio do Painel de Controle. [Saiba mais sobre o monitoramento de taxa de transferência](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/throughputs-latencies#_blank)
+**Taxa de transferência e latência de entrega** - Rastrear a taxa de transferência de entrega (mensagens enviadas por hora) e a latência de comunicações transacionais por meio do Painel de Controle. [Saiba mais sobre o monitoramento de taxa de transferência](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/performance-monitoring/throughputs-latencies#_blank)
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ O Adobe monitora todos os equipamentos de rede críticos na rede do Campaign 24 
 >
 >Algumas ações de monitoramento executadas pela Adobe aparecem nos logs do Campaign sob o usuário **campaign-loginmonitor**.
 
-Além do monitoramento interno da Adobe, você pode acessar recursos de monitoramento diretamente pelo console do cliente do Campaign ou pelo [Painel de Controle do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service). Com o Painel de controle do Campaign, você pode assinar alertas em tempo real sobre suas instâncias e receber etapas de correção recomendadas para incidentes identificados (por exemplo, certificados SSL próximos à expiração).
+Além do monitoramento interno da Adobe, você pode acessar recursos de monitoramento diretamente pelo console do cliente do Campaign ou pelo [Painel de Controle do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/permissions/self-service). Com o Painel de controle do Campaign, você pode assinar alertas em tempo real sobre suas instâncias e receber etapas de correção recomendadas para incidentes identificados (por exemplo, certificados SSL próximos à expiração).
 
 **Taxonomia de monitoramento**
 
@@ -198,7 +198,7 @@ Os workflows técnicos são processos essenciais executados em segundo plano par
 | **Atualização de entregabilidade** | Atualiza as regras de capacidade de entrega e os padrões de filtro de spam | As regras se tornam obsoletas; a precisão da filtragem pode degradar |
 | **Limpeza do banco de dados** | Limpa logs de entrega e rastreamento antigos | O acúmulo de logs torna as consultas e os relatórios mais lentos ao longo do tempo |
 
-Saiba mais sobre [workflows técnicos](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows#_blank)
+Saiba mais sobre [workflows técnicos](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows#_blank)
 
 ### Painel de controle do Campaign {#control-panel}
 
@@ -210,7 +210,7 @@ O Painel de controle do Campaign fornece aos administradores recursos de autoate
 | **Infraestrutura** | Monitorar a capacidade de armazenamento SFTP, rastrear a configuração de subdomínio, monitorar a expiração do certificado SSL, gerenciar a lista de permissões de IP |
 | **Instância** | Exibir a versão de compilação e os pacotes instalados, monitorar a configuração do sistema, gerenciar domínios externos autorizados |
 
-Saiba mais sobre o [Painel de Controle](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service) e o [monitoramento do desempenho do Painel de Controle](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)
+Saiba mais sobre o [Painel de Controle](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/permissions/self-service) e o [monitoramento do desempenho do Painel de Controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)
 
 >[!NOTE]
 >
@@ -238,7 +238,7 @@ O Adobe Campaign fornece um conjunto abrangente de relatórios para analisar o d
 - **Fluxos de clique e URLs**: links mais populares em suas entregas
 - **Hot clicks**: representação visual de onde os recipients clicaram no seu email
 
-Saiba mais sobre [relatórios de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)
+Saiba mais sobre [relatórios de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)
 
 ### Relatórios globais {#global-reports}
 
@@ -248,11 +248,11 @@ Acesse relatórios globais para analisar o desempenho em todas as campanhas e de
 - **Não entregues e rejeitados**: análise de entregas com falha
 - **Atividades do usuário**: aberturas, cliques e cancelamentos de assinatura em todas as campanhas
 
-Saiba mais sobre [relatórios globais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)
+Saiba mais sobre [relatórios globais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)
 
 ## Tópicos relacionados {#related-topics}
 
 - [Práticas recomendadas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/delivery-best-practices)
 - [Gerenciamento de quarentena](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/quarantines)
-- [Configurar e enviar deliveries](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/validate/configure-and-send)
-- [Introdução aos relatórios](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/gs-reporting)
+- [Configurar e enviar deliveries](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/validate/configure-and-send)
+- [Introdução aos relatórios](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/gs-reporting)
