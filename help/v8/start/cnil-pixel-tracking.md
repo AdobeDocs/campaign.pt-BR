@@ -1,12 +1,12 @@
 ---
 title: Pixels de rastreamento de email e orientação da CNIL
 description: Noções básicas sobre a orientação atualizada da CNIL sobre pixels de rastreamento de email e os recursos do Adobe Campaign que podem dar suporte aos esforços de conformidade.
-version: Campaign v8, Campaign Classic v7, Campaign Standard
+version: Campaign v8, Campaign Classic v7
 hide: true
-source-git-commit: fc92f46a1df96412cc86b9a8c0946132f79a2da8
+source-git-commit: 6466434e6d91445dd12a81effde68d8ab6ba8960
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
