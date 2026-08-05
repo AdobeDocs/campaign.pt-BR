@@ -19,7 +19,7 @@ topic_v2:
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1504
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -112,49 +112,49 @@ Os fluxos de trabalho de segmentação podem ser iniciados manualmente por meio 
 
 O direcionamento pode ser programado para execução automática de acordo com um agendamento (scheduler) ou um evento (sinal externo, importação de arquivo, etc.).
 
-As ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são processos **assíncronos**: o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
+As ações relacionadas à execução do fluxo de trabalho de direcionamento (iniciar, parar, pausar etc.) são processos **assíncronos**: o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
 Os ícones da barra de ferramentas permitem realizar a ação referente à execução do fluxo de trabalho de segmentação.
 
 * Iniciar ou reiniciar
 
-   * O ícone **[!UICONTROL Start]** permite iniciar o fluxo de trabalho de segmentação. Quando você clica nesse ícone, todas as atividades sem uma transição de entrada são ativadas (exceto saltos de ponto de extremidade).
+  * O ícone **[!UICONTROL Start]** permite iniciar o fluxo de trabalho de segmentação. Quando você clica nesse ícone, todas as atividades sem uma transição de entrada são ativadas (exceto saltos de ponto de extremidade).
 
-     ![](assets/start.png)
+    ![](assets/start.png)
 
-     O servidor considera a solicitação, conforme mostrado pelo status: **[!UICONTROL Start as soon as possible]**.
+    O servidor considera a solicitação, conforme mostrado pelo status: **[!UICONTROL Start as soon as possible]**.
 
-   * Você pode reiniciar o fluxo de trabalho de segmentação por meio do ícone de barra de ferramentas apropriado. Esse comando pode ser útil se o ícone **[!UICONTROL Start]** não estiver disponível, por exemplo, quando a interrupção do fluxo de trabalho para construção do target estiver em andamento. Nesse caso, clique no ícone **[!UICONTROL Restart]** para antecipar a reinicialização. O servidor considera a solicitação, como mostra o status: **[!UICONTROL Restart requested]**.
+  * Você pode reiniciar o fluxo de trabalho de segmentação por meio do ícone de barra de ferramentas apropriado. Esse comando pode ser útil se o ícone **[!UICONTROL Start]** não estiver disponível, por exemplo, quando a interrupção do fluxo de trabalho para construção do target estiver em andamento. Nesse caso, clique no ícone **[!UICONTROL Restart]** para antecipar a reinicialização. O servidor considera a solicitação, como mostra o status: **[!UICONTROL Restart requested]**.
 
 * Parar ou pausar
 
-   * Os ícones da barra de ferramentas permitem interromper ou pausar um fluxo de trabalho de direcionamento em andamento.
+  * Os ícones da barra de ferramentas permitem interromper ou pausar um fluxo de trabalho de direcionamento em andamento.
 
-     Ao clicar em **[!UICONTROL Pause]**, as operações em andamento **[!UICONTROL are not]** são pausadas, mas nenhuma outra atividade é iniciada até a próxima reinicialização.
+    Ao clicar em **[!UICONTROL Pause]**, as operações em andamento **[!UICONTROL are not]** são pausadas, mas nenhuma outra atividade é iniciada até a próxima reinicialização.
 
-     ![](assets/pause.png)
+    ![](assets/pause.png)
 
-     O servidor considera o comando, como mostra seu status: **[!UICONTROL Pause requested]**.
+    O servidor considera o comando, como mostra seu status: **[!UICONTROL Pause requested]**.
 
-     Você também pode pausar um fluxo de trabalho de segmentação automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o fluxo de trabalho de segmentação deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
+    Você também pode pausar um fluxo de trabalho de segmentação automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o fluxo de trabalho de segmentação deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
 
-     ![](assets/donotexecute.png)
+    ![](assets/donotexecute.png)
 
-     Essa configuração é exibida por um ícone especial.
+    Essa configuração é exibida por um ícone especial.
 
-     ![](assets/pause_activity.png)
+    ![](assets/pause_activity.png)
 
-     >[!NOTE]
-     >
-     >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de direcionamento.
+    >[!NOTE]
+    >
+    >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de direcionamento.
 
-     Clique em **[!UICONTROL Start]** para retomar a execução.
+    Clique em **[!UICONTROL Start]** para retomar a execução.
 
-   * Clique no ícone **[!UICONTROL Stop]** para interromper a execução em andamento.
+  * Clique no ícone **[!UICONTROL Stop]** para interromper a execução em andamento.
 
-     ![](assets/stop.png)
+    ![](assets/stop.png)
 
-     O servidor considera o comando, como mostra seu status: **[!UICONTROL Stop requested]**.
+    O servidor considera o comando, como mostra seu status: **[!UICONTROL Stop requested]**.
 
   Você também pode interromper um fluxo de trabalho de definição de metas automaticamente quando a execução atinge uma atividade. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o fluxo de trabalho para construção do target será interrompido e selecione **[!UICONTROL Do not activate]**.
 
@@ -262,4 +262,4 @@ Este vídeo explica como adicionar um grupo de controle a uma campanha.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3446923?captions=por_br&quality=12)
 
-Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
