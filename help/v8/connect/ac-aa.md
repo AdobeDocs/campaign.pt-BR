@@ -18,10 +18,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
-source-wordcount: 1429
-ht-degree: 65%
+source-wordcount: 1595
+ht-degree: 58%
 
 ---
 
@@ -33,7 +33,7 @@ Essa integração permite que o Adobe Campaign e o Adobe Analytics interajam por
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Services, [entre em contato com a Adobe](../start/campaign-faq.md#support) para conectar o Campaign com os serviços e soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
+>Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support) para conectar o Campaign aos serviços e soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
 
 Usando o Adobe Analytics Connector, o Adobe Campaign tem uma forma de medir o público-alvo da Internet (Web Analytics). As ferramentas do Web Analytics permitem que o Adobe Campaign encaminhe indicadores e atributos de campanha para o Analytics.
 
@@ -52,6 +52,7 @@ Para configurar a conexão do Campaign com o Analytics, você deve executar as s
 
 1. [Criar conjunto de relatórios no Adobe Analytics](#report-suite-analytics)
 1. [Configurar as variáveis de conversão e os eventos bem-sucedidos](#configure-conversion-success)
+1. [Criar um conjunto de classificações](#create-classification-set)
 1. [Configurar a conta externa no Adobe Campaign](#external-account-ac)
 
 ## Criar conjunto de relatórios do Analytics {#report-suite-analytics}
@@ -127,7 +128,30 @@ Depois de criar o **[!UICONTROL Report suite]**, você precisa configurar as **[
 
 1. Clique em **[!UICONTROL Save]** ao concluir.
 
-Quando o conjunto de relatórios for configurado, será necessário configurar o **[!UICONTROL External accounts]** no Adobe Campaign.
+## Criar um conjunto de classificações {#create-classification-set}
+
+Desde a migração para a API do Adobe Analytics 2.0, também é necessário criar um **[!UICONTROL Classification set]** no Adobe Analytics antes de configurar a conta externa no Campaign. Esse conjunto de classificações vincula a variável de conversão que você acabou de criar (o nome da campanha interna) ao conjunto de relatórios, de modo que o Campaign pode detectá-la e usá-la automaticamente ao configurar a conta externa na próxima etapa.
+
+Para criar seu conjunto de classificações:
+
+1. Na barra de menu superior do [!DNL Adobe Analytics], selecione **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** e clique em **[!UICONTROL New]**.
+
+   ![](assets/analytics_connnector_16.png)
+
+1. No diálogo **[!UICONTROL Add New Classification Set]**:
+
+   ![](assets/analytics_connnector_17.png)
+
+   * Insira um **[!UICONTROL Name]** para o conjunto de classificações.
+   * Defina o **[!UICONTROL Type]** como **[!UICONTROL Primary]**.
+   * Em **[!UICONTROL Job notifications]**, escolha quem deve ser notificado sobre o sucesso ou falha dos trabalhos do conjunto de classificações e forneça os endereços de email correspondentes.
+   * No **[!UICONTROL Subscriptions]**, selecione seu conjunto de relatórios e a variável de conversão criada para o nome da campanha interna na etapa anterior.
+
+1. Clique em **[!UICONTROL Save]**.
+
+Para obter mais informações sobre conjuntos de classificações, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
+
+Quando o conjunto de relatórios, as variáveis de conversão, os eventos bem-sucedidos e o conjunto de classificações estiverem configurados, será necessário configurar o **[!UICONTROL External accounts]** no Adobe Campaign.
 
 ## Configurar a conta externa do Campaign {#external-account-ac}
 

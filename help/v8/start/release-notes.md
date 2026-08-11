@@ -13,16 +13,30 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: ffeb9430b382b598af412555b1b0a6ff42bc68d0
+source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
-source-wordcount: 1747
-ht-degree: 6%
+source-wordcount: 1984
+ht-degree: 5%
 
 ---
 
 # Versões mais recentes {#latest-release}
 
 Esta página lista novos recursos, melhorias e correções das **últimas versões** do Campaign v8 (console). Saiba mais sobre lançamentos, versões e atualizações do Campaign [nesta página](upgrades.md). Outras versões estão listadas na seção Versões anteriores desta documentação.
+
+## Versão 8.9.3 {#release-8-9-3}
+
+_11 de agosto de 2026_
+
+Esta versão inclui várias melhorias de produto e correções de segurança, incluindo a atualização do conector do Adobe Analytics para a API do Analytics 2.0.
+
+>[!NOTE]
+>
+> Navegue até o **[!UICONTROL Help > About...]** [menu](upgrades.md#version) para verificar se você tem a compilação 9835 ou posterior.
+
+### O conector do Adobe Analytics foi atualizado para a API do Analytics 2.0 {#analytics-2-0-8-9-3}
+
+As APIs do Adobe Analytics 1.4 estão [atingindo o fim da vida útil](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}, portanto, o [conector do Web Analytics](../connect/ac-aa.md) — que envia os indicadores de campanha e os dados de classificação para a Adobe Analytics, oferece suporte ao fluxo de remarketing e é usado para configurar novos conjuntos de relatórios — foi atualizado para a API do Analytics 2.0 como parte desta versão. Como cliente hospedado, a Adobe cuida dessa migração para você — nenhuma configuração é necessária da sua parte. A atualização reimporta os fluxos de trabalho técnicos internos que alimentam o conector (**[!UICONTROL webAnalyticsSendMetrics]** e **[!UICONTROL webAnalyticsGetWebEvents]**) e atualiza os arquivos internos do Analytics JavaScript. Portanto, se você tiver personalizado um desses fluxos de trabalho ou criar fluxos de trabalho personalizados que façam referência a esses arquivos, reaplique e adapte essa personalização após a atualização, pois de outra forma ela será substituída ou interrompida. Como prática recomendada, evite modificar diretamente os fluxos de trabalho internos — crie sua personalização em um fluxo de trabalho personalizado separado; portanto, as atualizações futuras não a substituirão. Quando a atualização estiver concluída, valide os casos de uso do Adobe Analytics dos quais você depende (exportação de métricas, exportação de classificação e remarketing, se aplicável) para confirmar se os dados continuam fluindo conforme esperado.
 
 ## Versão 8.9.2 {#release-8-9-2}
 
