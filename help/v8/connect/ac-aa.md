@@ -122,7 +122,7 @@ Depois de criar o **[!UICONTROL Report suite]**, você precisa configurar as **[
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Para saber como configurar o **[!UICONTROL Success events]**, consulte esta [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html)
+   Para saber como configurar o **[!UICONTROL Success events]**, consulte esta [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html?lang=pt-BR)
 
    ![](assets/analytics_connnector_8.png)
 
@@ -149,7 +149,7 @@ Para criar seu conjunto de classificações:
 
 1. Clique em **[!UICONTROL Save]**.
 
-Para obter mais informações sobre conjuntos de classificações, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
+Para obter mais informações sobre conjuntos de classificações, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
 
 Quando o conjunto de relatórios, as variáveis de conversão, os eventos bem-sucedidos e o conjunto de classificações estiverem configurados, será necessário configurar o **[!UICONTROL External accounts]** no Adobe Campaign.
 
@@ -183,7 +183,7 @@ Para obter mais informações, consulte a página [Perfis de produto do Adobe An
 
    >[!NOTE]
    >
-   >Os campos ID da campanha e ID da carga geral são coletados por meio do JavaScript na página de aterrissagem ou por meio de regras de processamento. [Saiba mais sobre as regras de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Os campos ID da campanha e ID da carga geral são coletados por meio do JavaScript na página de aterrissagem ou por meio de regras de processamento. [Saiba mais sobre as regras de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 
