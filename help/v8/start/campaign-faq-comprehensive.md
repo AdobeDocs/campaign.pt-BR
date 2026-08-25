@@ -7,9 +7,9 @@ level: Beginner
 keywords: Perguntas frequentes, Campaign v8, perguntas, respostas, ajuda, suporte, solução de problemas
 version: Campaign v8
 exl-id: 8b4f6343-5dc5-4401-ad6f-9c1ddbb23168
-source-git-commit: da2274cfd19bb067fcc1e990360093f161d5638a
+source-git-commit: d25c5a40af9ac0594301f46f09a4cc07a8e1945e
 workflow-type: tm+mt
-source-wordcount: '11573'
+source-wordcount: '11541'
 ht-degree: 15%
 
 ---
@@ -147,12 +147,6 @@ Criar seu primeiro e-mail no Campaign v8 é simples. Você começa com um modelo
 **Tópicos relacionados:**
 
 [Design e validação de email](../send/email.md) | [Criar primeira entrega](create-message.md) | [Modelos de entrega](../send/create-templates.md) | [Personalizar conteúdo](../send/personalize.md)
-
-+++
-
-+++ Como traduzir uma mensagem de erro?
-
-Há uma mensagem de erro exibida em outro idioma? Todas as mensagens de erro com suas devidas traduções estão listadas [nesta página](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR){target="_blank"}.
 
 +++
 
