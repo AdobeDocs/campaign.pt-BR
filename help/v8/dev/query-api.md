@@ -43,7 +43,7 @@ ht-degree: 1%
 
 `NLWS` (Neolane Web Services) é o objeto global do JavaScript usado para acessar os métodos de API baseados em SOAP de [!DNL Adobe Campaign]. Os esquemas são propriedades do objeto `NLWS`, permitindo que você interaja com entidades do Campaign de forma programática.
 
-De acordo com a [documentação JSAPI do Campaign](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}, &quot;os esquemas são objetos globais &#39;NLWS&#39;.&quot; A sintaxe para acessar métodos de esquema segue este padrão:
+De acordo com a [documentação JSAPI do Campaign](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}, &quot;os esquemas são objetos globais &#39;NLWS&#39;.&quot; A sintaxe para acessar métodos de esquema segue este padrão:
 
 ```javascript
 NLWS.<namespace><SchemaName>.<method>()
@@ -57,7 +57,7 @@ NLWS.<namespace><SchemaName>.<method>()
 
 Os métodos comuns de API incluem:
 
-* `load(id)` - Carregar uma entidade pela respectiva ID. [Saiba mais](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+* `load(id)` - Carregar uma entidade pela respectiva ID. [Saiba mais](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}
 * `create(data)` - Criar uma nova entidade
 * `save()` - Salvar alterações em uma entidade
 
@@ -102,7 +102,7 @@ Os métodos estáticos do SOAP são acessados chamando um método no objeto que 
 
 ### Métodos não estáticos {#non-static-methods}
 
-Para usar métodos SOAP não estáticos, você deve primeiro recuperar uma entidade usando os métodos `load` ou `create` nos esquemas correspondentes. Saiba mais na [documentação JSAPI do Campaign](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+Para usar métodos SOAP não estáticos, você deve primeiro recuperar uma entidade usando os métodos `load` ou `create` nos esquemas correspondentes. Saiba mais na [documentação JSAPI do Campaign](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
 ### Carregar, salvar e criar entidades {#load-save-create}
 
@@ -155,7 +155,7 @@ O esquema `xtk:queryDef` fornece métodos para compilar e executar consultas ao 
 * `getIfExists` - Recuperar um único registro, retornar nulo se não for encontrado
 * `count` - Contar registros que correspondem aos critérios
 
-Saiba mais sobre os métodos queryDef na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+Saiba mais sobre os métodos queryDef na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
 ## Consulta com JSON {#query-json}
 
@@ -282,7 +282,7 @@ for each(var delivery in deliveries.delivery) {
 >* Use `lineCount` para definir explicitamente o número máximo de resultados
 >* Para conjuntos de dados grandes (>1000 registros), use workflows em vez de queryDef. Os workflows foram projetados para processar milhões de linhas com eficiência.
 
-Saiba mais sobre [ExecuteQuery](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"} e [práticas recomendadas de consulta](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
+Saiba mais sobre [ExecuteQuery](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"} e [práticas recomendadas de consulta](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}.
 
 ## Consultar dados de transição do fluxo de trabalho {#workflow-transition-data}
 
@@ -327,7 +327,7 @@ for each(var record in records.getElements()) {
 
 >[!CAUTION]
 >
->Sempre use consultas parametrizadas com `$(sz)` para cadeias de caracteres e `$(l)` para números inteiros a fim de evitar vulnerabilidades de injeção de SQL. Saiba mais na [documentação JSAPI do Campaign](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+>Sempre use consultas parametrizadas com `$(sz)` para cadeias de caracteres e `$(l)` para números inteiros a fim de evitar vulnerabilidades de injeção de SQL. Saiba mais na [documentação JSAPI do Campaign](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
 ## Contar registros {#count-records}
 
@@ -578,7 +578,7 @@ logInfo("Generated SQL: " + sql);
 // Output: "SELECT iRecipientId, sEmail FROM NmsRecipient WHERE sEmail IS NOT NULL"
 ```
 
-Saiba mais sobre [BuildQuery](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+Saiba mais sobre [BuildQuery](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
 ### BuildQueryEx - Obter SQL com cadeia de caracteres de formato {#build-query-ex}
 
@@ -603,7 +603,7 @@ logInfo("Format: " + format);
 var results = sqlSelect(format, sql);
 ```
 
-Saiba mais sobre [BuildQueryEx](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+Saiba mais sobre [BuildQueryEx](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
 ### Selecionar tudo - Adicione todos os campos para selecionar {#select-all}
 
@@ -626,7 +626,7 @@ var result = query.ExecuteQuery();
 // Result contains all recipient fields
 ```
 
-Saiba mais sobre [SelectAll](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+Saiba mais sobre [SelectAll](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
 ### Atualizar - Registros de atualização em massa {#mass-update}
 
@@ -656,7 +656,7 @@ logInfo("Mass update completed");
 >
 >As atualizações em massa afetam todos os registros correspondentes à cláusula where. Sempre teste as condições where com uma consulta select primeiro para verificar quais registros serão afetados.
 
-Saiba mais sobre [Atualização](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+Saiba mais sobre [Atualização](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
 ### GetInstanceFromModel - instâncias de modelo de consulta {#get-instance-from-model}
 
@@ -679,7 +679,7 @@ var query = NLWS.xtkQueryDef.create(
 var instance = query.GetInstanceFromModel("nms:delivery");
 ```
 
-Saiba mais sobre [GetInstanceFromModel](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+Saiba mais sobre [GetInstanceFromModel](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
 ## Operações em lote {#batch-operations}
 
@@ -918,8 +918,8 @@ Estrutura completa do objeto `queryDef`:
 
 * [Introdução às APIs do Campaign](api.md)
 * [Campaign JavaScript SDK - API de consulta](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
-* [Referência da API queryDef](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
-* [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+* [Referência da API queryDef](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}
+* [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}
 * [Trabalhar com esquemas](schemas.md)
 * [Trabalhar com o editor de consultas](../start/query-editor.md)
 

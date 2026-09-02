@@ -100,7 +100,7 @@ O controle de edição se adapta automaticamente ao tipo de dados correspondente
 
 Por padrão, cada campo é exibido em uma única linha e ocupa todo o espaço disponível, dependendo do tipo de dados.
 
-Todos os atributos de formulário estão listados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}.
+Todos os atributos de formulário estão listados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
 ## Formatação {#formatting}
 

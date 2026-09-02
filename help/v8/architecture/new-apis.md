@@ -221,4 +221,4 @@ A inserção de dados de assinatura e cancelamento de assinatura depende do [Mec
 
 **Tópicos relacionados**
 
-* [JSAPI do Campaign](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+* [JSAPI do Campaign](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}
