@@ -7,18 +7,14 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 TQID: https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 559
-ht-degree: 32%
+source-wordcount: 638
+ht-degree: 30%
 
 ---
 
@@ -64,6 +60,10 @@ Os blocos de personalização incorporados são:
 
 ## Criar blocos de personalização personalizados {#create-custom-personalization-blocks}
 
+>[!IMPORTANT]
+>
+>A versão 8.9.3 inclui uma atualização da lista de permissões de URL externa. Se um bloco de personalização personalizado referenciar uma URL externa (por exemplo, uma imagem hospedada externamente), verifique se o domínio foi adicionado à lista de permissões aprovada da instância para que o recurso continue a ser carregado sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
+
 Você pode definir novos blocos de conteúdo personalizado a serem inseridos no ícone de personalização.
 
 Para criar um bloco de personalização, siga as etapas abaixo:
@@ -89,4 +89,4 @@ Depois de salvo, o novo bloco de personalização fica disponível no editor de 
 
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo de sua entrega de email no vídeo a seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449011?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

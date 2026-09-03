@@ -4,18 +4,12 @@ description: Versão mais recente do Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 TQID: https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7e14d410aba444e792a24c99a843f122a8fcedc6
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: d5ef99fa-df0c-4153-bf94-105ad0724167
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 1998
+source-wordcount: 2098
 ht-degree: 6%
 
 ---
@@ -33,6 +27,12 @@ _11 de agosto de 2026_
 ### Melhorias de segurança {#security-8-9-3}
 
 Esta versão inclui correções de segurança que fortalecem a postura geral de segurança do ambiente do Campaign. Como cliente hospedado, essas correções são aplicadas pela Adobe como parte da atualização, sem nenhuma ação necessária da sua parte.
+
+### Atualização da lista de permissões do URL externo {#url-allow-list-update-8-9-3}
+
+Esta versão inclui uma atualização da lista de permissões de URL externa usada para conteúdo de entrega e anexos. Verifique se todos os domínios que você atualmente referencia foram adicionados à lista de permissões aprovada da instância.
+
+Como administrador do Campaign, use o Painel de controle do Campaign para adicionar URLs externos usados atualmente em seus deliveries à lista de permissões e siga o mesmo processo para qualquer novo URL externo a partir de agora. Conclua essa atividade até 5 de setembro de 2026 para evitar impacto nos deliveries afetados. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
 
 ### O conector do Adobe Analytics foi atualizado para a API do Analytics 2.0 {#analytics-2-0-8-9-3}
 
@@ -113,12 +113,12 @@ O **novo conector de envio de SMS** agora está disponível para todos os client
 
 Esta versão é fornecida com um conjunto de funcionalidades disponíveis na interface da Web do Campaign:
 
-* [Recursos de entrega multilíngue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=pt-BR){target="_blank"}
-* [Enriquecimento de perfil em mensagens transacionais (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=pt-BR){target="_blank"}
-* [Adobe Experience Manager live e cópias de idioma](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=pt-BR){target="_blank"}
-* [Experimentos de conteúdo - Teste A/B](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=pt-BR){target="_blank"}
-* [Atividade de entrega contínua](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=pt-BR){target="_blank"}
-* [Gerenciamento de aprovação da campanha](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=pt-BR){target="_blank"}
+* [Recursos de entrega multilíngue (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Enriquecimento de perfil em mensagens transacionais (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager live e cópias de idioma](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Experimentos de conteúdo - Teste A/B](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Atividade de entrega contínua](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Gerenciamento de aprovação da campanha](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
 Consulte as [notas de versão](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=pt-BR){target="_blank"} da interface da Web do Campaign
 
