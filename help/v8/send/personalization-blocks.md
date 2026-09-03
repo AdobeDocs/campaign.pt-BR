@@ -66,7 +66,7 @@ Os blocos de personalização incorporados são:
 
 >[!IMPORTANT]
 >
->A versão 8.9.3 inclui uma atualização da lista de permissões de URL externa. Se um bloco de personalização personalizado referenciar uma URL externa (por exemplo, uma imagem hospedada externamente), verifique se o domínio foi adicionado à lista de permissões aprovada da instância para que o recurso continue a ser carregado sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
+>A versão 8.9.3 inclui uma atualização da lista de permissões de URL externa. Se um bloco de personalização personalizado referenciar uma URL externa (por exemplo, uma imagem hospedada externamente), verifique se o domínio foi adicionado à lista de permissões aprovada da instância para que o recurso continue a ser carregado sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
 
 Você pode definir novos blocos de conteúdo personalizado a serem inseridos no ícone de personalização.
 

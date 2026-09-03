@@ -74,7 +74,7 @@ Também é possível inserir emoticons na linha do assunto com a janela pop-up *
 
 >[!IMPORTANT]
 >
->A versão 8.9.3 inclui uma atualização da lista de permissões de URL externa. Verifique se os domínios usados no conteúdo da mensagem foram adicionados à lista de permissões aprovada da instância para que os recursos continuem a ser carregados sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
+>A versão 8.9.3 inclui uma atualização da lista de permissões de URL externa. Verifique se os domínios usados no conteúdo da mensagem foram adicionados à lista de permissões aprovada da instância para que os recursos continuem a ser carregados sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
 
 O conteúdo da mensagem é definido na seção inferior da janela de configuração de entrega.
 
@@ -82,7 +82,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
 * Para importar um conteúdo HTML, clique no botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
 
-  Se você estiver usando o Editor de Conteúdo Digital (DCE), consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html#step-3---selecting-a-content).
+  Se você estiver usando o Editor de Conteúdo Digital (DCE), consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html?lang=pt-BR#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -165,7 +165,7 @@ As entregas de email em formato HTML podem conter imagens. No assistente de entr
 
 Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 KB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
 
-Saiba mais sobre a lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
+Saiba mais sobre a lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR#delivery).
 
 ### Tipos de imagens {#img-types}
 
@@ -176,7 +176,7 @@ As imagens podem ser:
 
   Os recursos públicos podem ser acessados por meio do nó **[!UICONTROL Resources > Online]** da hierarquia do Adobe Campaign. Elas são agrupadas em uma biblioteca e podem ser incluídas em mensagens de email, mas também podem ser usadas para campanhas ou tarefas, ou para gerenciamento de conteúdo.
 
-* Um ativo compartilhado com a Adobe Experience Cloud. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html).
+* Um ativo compartilhado com a Adobe Experience Cloud. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=pt-BR).
 
 ### Inserir e gerenciar imagens {#manage-images}
 
