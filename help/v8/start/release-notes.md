@@ -13,9 +13,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7e14d410aba444e792a24c99a843f122a8fcedc6
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 1998
+source-wordcount: 2098
 ht-degree: 6%
 
 ---
@@ -33,6 +33,12 @@ _11 de agosto de 2026_
 ### Melhorias de segurança {#security-8-9-3}
 
 Esta versão inclui correções de segurança que fortalecem a postura geral de segurança do ambiente do Campaign. Como cliente hospedado, essas correções são aplicadas pela Adobe como parte da atualização, sem nenhuma ação necessária da sua parte.
+
+### Atualização da lista de permissões do URL externo {#url-allow-list-update-8-9-3}
+
+Esta versão inclui uma atualização da lista de permissões de URL externa usada para conteúdo de entrega e anexos. Verifique se todos os domínios que você atualmente referencia foram adicionados à lista de permissões aprovada da instância.
+
+Como administrador do Campaign, use o Painel de controle do Campaign para adicionar URLs externos usados atualmente em seus deliveries à lista de permissões e siga o mesmo processo para qualquer novo URL externo a partir de agora. Conclua essa atividade até 5 de setembro de 2026 para evitar impacto nos deliveries afetados. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
 
 ### O conector do Adobe Analytics foi atualizado para a API do Analytics 2.0 {#analytics-2-0-8-9-3}
 
