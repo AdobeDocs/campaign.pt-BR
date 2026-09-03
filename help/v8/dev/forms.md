@@ -18,9 +18,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
 workflow-type: tm+mt
-source-wordcount: 2571
+source-wordcount: 2569
 ht-degree: 4%
 
 ---
@@ -100,7 +100,7 @@ O controle de edição se adapta automaticamente ao tipo de dados correspondente
 
 Por padrão, cada campo é exibido em uma única linha e ocupa todo o espaço disponível, dependendo do tipo de dados.
 
-Todos os atributos de formulário estão listados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=pt-BR){target="_blank"}.
+Todos os atributos de formulário estão listados na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
 ## Formatação {#formatting}
 
@@ -333,9 +333,9 @@ Você também pode classificar a lista com o elemento **`<orderby>`**:
 * **noAutoComplete**: desabilita a digitação antecipada (com o valor &quot;true&quot;)
 * **createMode**: cria o link imediatamente se ele não existir. Os valores possíveis são:
 
-   * **nenhum**: desabilita a criação. Uma mensagem de erro será exibida se o link não existir
-   * **inline**: cria o link com o conteúdo no campo de edição
-   * **edição**: exibe o formulário de edição no link. Quando o formulário for validado, os dados serão salvos (modo padrão)
+  * **nenhum**: desabilita a criação. Uma mensagem de erro será exibida se o link não existir
+  * **inline**: cria o link com o conteúdo no campo de edição
+  * **edição**: exibe o formulário de edição no link. Quando o formulário for validado, os dados serão salvos (modo padrão)
 
 * **noZoom**: nenhum formulário de edição no link (com o valor &quot;true&quot;)
 * **formulário**: sobrecarrega o formulário de edição do elemento direcionado

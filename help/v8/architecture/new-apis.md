@@ -14,10 +14,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
 workflow-type: tm+mt
-source-wordcount: 440
-ht-degree: 4%
+source-wordcount: 437
+ht-degree: 2%
 
 ---
 
@@ -221,4 +221,4 @@ A inserção de dados de assinatura e cancelamento de assinatura depende do [Mec
 
 **Tópicos relacionados**
 
-* [JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR){target="_blank"}
+* [JSAPI do Campaign](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}
