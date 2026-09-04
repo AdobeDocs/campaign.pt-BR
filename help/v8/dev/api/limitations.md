@@ -22,9 +22,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 66ed59f89f7e58ce0a04d1fe3e4bf34c81ce94cb
 workflow-type: tm+mt
-source-wordcount: 1052
+source-wordcount: 1053
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ No Campaign Standard, você recebeu acesso elevado à função de administrador 
 
 Com a migração, dois perfis de produto são adicionados às suas contas técnicas existentes ou pré-criadas: Administrador e Centro de mensagens (para acessar APIs transacionais). Revise o mapeamento do perfil de produto e atribua o perfil de produto necessário se não quiser que o perfil de produto do administrador seja mapeado com sua conta técnica.
 
-### ID do inquilino
+### ID do locatário
 
 Após a migração, para qualquer integração futura, é recomendável usar sua **ID de locatário do Campaign v8** em URLs REST, substituindo sua ID de locatário anterior do Campaign Standard.
 
@@ -111,7 +111,7 @@ No Campaign v8, quando a mesma estrutura de corpo de solicitação é usada e o 
 
 A seção abaixo lista pequenas diferenças entre as respostas REST do Campaign Standard e do v8.
 
-* Para registros únicos do GET, a resposta inclui o href na resposta.
+* Para registros GET únicos, a resposta inclui o href na resposta.
 * Quando consultado com o atributo, o Campaign v8 fornece Count e Pagination na resposta.
 * Após as operações POST, os valores dos recursos vinculados são retornados na resposta.
 
@@ -138,9 +138,9 @@ Com o Campaign v8, o fuso horário é exibido somente para o usuário como parte
 
 ## Fluxos de trabalho - Acionamento de sinal externo
 
-A API do GET do Campaign Standard Workflow retorna nomes de parâmetros como as variáveis de instância do workflow e seus tipos de dados (booleano, string etc.). Isso é usado para criar o corpo da solicitação JSON formatado corretamente ao acionar o sinal por meio de uma chamada de API POST.
+A API GET do Campaign Standard Workflow retorna nomes de parâmetros, como as variáveis de instância do workflow e seus tipos de dados (booleano, string etc.). Isso é usado para criar o corpo da solicitação JSON formatado corretamente ao acionar o sinal por meio de uma chamada de API POST.
 
-O Campaign v8 não é compatível com variáveis de instância de fluxo de trabalho de publicidade, mas espera que os desenvolvedores saibam o que são. Dessa forma, após a migração, as informações de parâmetros no corpo da solicitação POST precisarão ser construídas sem a disponibilidade de informações de parâmetros na resposta da API do GET.
+O Campaign v8 não é compatível com variáveis de instância de fluxo de trabalho de publicidade, mas espera que os desenvolvedores saibam o que são. Dessa forma, após a migração, as informações de parâmetros no corpo da solicitação POST precisarão ser construídas sem a disponibilidade de informações de parâmetros na resposta da API GET.
 
 <!--
 ## Transactional messages
