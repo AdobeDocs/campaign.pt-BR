@@ -9,28 +9,33 @@ exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
 TQID: https://experienceleague.adobe.com/urm8-2koO46hRe8XeCDoKYVU-WDqxM7tq0TwqDC8Sc0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Privacy
+source-git-commit: 422d18b36d63bd04922adb3bb4e06a49ed7cdfd7
 workflow-type: tm+mt
-source-wordcount: 1196
+source-wordcount: '1196'
 ht-degree: 93%
-
 ---
-
 # Criar entregas LINE
 
 O LINE é um aplicativo para mensagens instantâneas, chamadas de voz e vídeo gratuitas, disponível em todos os dispositivos móveis e para PC. Você pode usar o Adobe Campaign para enviar mensagens LINE.
 
-O [!DNL LINE] também pode ser combinado com o módulo de mensagem transacional para enviar mensagens em tempo real no aplicativo [!DNL LINE] instalado nos dispositivos móveis do consumidor. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) na documentação do Campaign Classic v7.
+O [!DNL LINE] também pode ser combinado com o módulo de mensagem transacional para enviar mensagens em tempo real no aplicativo [!DNL LINE] instalado nos dispositivos móveis do consumidor. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) na documentação do Campaign Classic v7.
 
 ![](assets/line_message.png)
 
@@ -170,7 +175,7 @@ A configuração desse tipo de mensagem é semelhante à configuração do **[!U
 
 ### Configuração de uma entrega de imagem e link {#configuring-an-image-and-link-delivery}
 
-Uma entrega **[!UICONTROL Image and link]**&#x200B;[!DNL LINE] é uma mensagem enviada aos recipients no formato de uma imagem que pode conter um ou vários URLs.
+Uma entrega **[!UICONTROL Image and link]**[!DNL LINE] é uma mensagem enviada aos recipients no formato de uma imagem que pode conter um ou vários URLs.
 
 É possível usar:
 
@@ -190,11 +195,11 @@ Uma entrega **[!UICONTROL Image and link]**&#x200B;[!DNL LINE] é uma mensagem e
 
   As imagens podem ser definidas de acordo com o tamanho da tela:
 
-   * 1040px
-   * 700px
-   * 460px
-   * 300px
-   * 240px
+  * 1040px
+  * 700px
+  * 460px
+  * 300px
+  * 240px
 
   >[!CAUTION]
   >
