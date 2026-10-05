@@ -3,13 +3,16 @@ title: Pixels de rastreamento de email e orientação da CNIL
 description: Noções básicas sobre a orientação atualizada da CNIL sobre pixels de rastreamento de email e os recursos do Adobe Campaign que podem dar suporte aos esforços de conformidade.
 version: Campaign v8, Campaign Classic v7
 hide: true
-source-git-commit: 124f23f384d0eb974a22e40eed3904ed43f8f9db
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 3%
-
 ---
-
 
 # Noções básicas sobre a orientação atualizada da CNIL sobre pixels de rastreamento de email
 
@@ -55,9 +58,9 @@ Para obter mais informações sobre o rastreamento de email nos aplicativos de e
 | Produto | Referência da documentação |
 |---|---|
 | Campaign v8 | [Acompanhamento de Mensagens](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"} |
-| Campaign Classic | [Introdução ao rastreamento de mensagens](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-message-tracking){target="_blank"} |
-| Journey Optimizer | [Documentação de rastreamento de mensagens](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channels/email/design-email/add-content/message-tracking){target="_blank"} |
-| Marketo Engage | [Desabilitar rastreamento para um link de email](https://experienceleague.adobe.com/pt-br/docs/marketo/using/product-docs/email-marketing/general/functions-in-the-editor/disable-tracking-for-an-email-link){target="_blank"} |
-| Journey Optimizer B2B | [Documentação de configurações de email](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer-b2b/user/journey-content/email-channel/add-email){target="_blank"} |
+| Campaign Classic | [Introdução ao rastreamento de mensagens](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-message-tracking){target="_blank"} |
+| Journey Optimizer | [Documentação de rastreamento de mensagens](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/message-tracking){target="_blank"} |
+| Marketo Engage | [Desabilitar rastreamento para um link de email](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/email-marketing/general/functions-in-the-editor/disable-tracking-for-an-email-link){target="_blank"} |
+| Journey Optimizer B2B | [Documentação de configurações de email](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/journey-content/email-channel/add-email){target="_blank"} |
 
 

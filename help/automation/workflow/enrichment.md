@@ -6,18 +6,30 @@ feature: Workflows, Enrichment Activity, Targeting Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 23bfabac-62cc-4f86-a739-a34a0e183c31
-TQID: https://experienceleague.adobe.com/f5zQLS5AXT8OcK4BVB0oH6qShvjmZfTgUS6uchiEsZ8
+TQID: 'https://experienceleague.adobe.com/f5zQLS5AXT8OcK4BVB0oH6qShvjmZfTgUS6uchiEsZ8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: a643fca8-db7d-5178-8513-7b8f51dfd239
+    internal-label: Enrichment Activity
+  - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
+    internal-label: Targeting Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1301
-ht-degree: 98%
-
+source-wordcount: '1301'
+ht-degree: 100%
 ---
-
 # Enriquecimento{#enrichment}
 
 
@@ -47,7 +59,7 @@ Existem quatro tipos de vinculações:
 
 * **[!UICONTROL Define a collection]**: permite definir um vínculo com uma cardinalidade 1-N entre as tabelas.
 * **[!UICONTROL Define a link whose target is still available]**: possibilita definir um vínculo com uma cardinalidade 1-1 entre as tabelas. As condições de associação devem ser definidas por um único registro na tabela do target.
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: possibilita definir um vínculo com uma cardinalidade 0-1 entre as tabelas. A condição de associação deve ser definida por 0 ou 1 (máx.) registro na tabela do target.
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: possibilita definir um vínculo com uma cardinalidade 0-1 entre as tabelas. A condição de unificação deve corresponder a 0 ou 1 (máx.) registro na tabela de destino.
 
   Essa opção é configurada na guia **[!UICONTROL Simple Join]** que pode ser acessada por meio do link **[!UICONTROL Edit additional data]** da atividade **[!UICONTROL Enrichment]**.
 
@@ -183,7 +195,7 @@ Após configurar sua consulta (consulte esta [seção](query.md)):
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
 
    O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente na entrega.
 
@@ -205,7 +217,7 @@ Para fazer isso:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
 
    >[!NOTE]
    >

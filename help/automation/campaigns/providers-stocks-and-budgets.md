@@ -6,25 +6,37 @@ feature: Budget Management, Campaigns
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
-TQID: https://experienceleague.adobe.com/-9-67l8H1X7fXH708FbQc0Tu37mWAxpuFFvHfT9hQoo
+TQID: 'https://experienceleague.adobe.com/-9-67l8H1X7fXH708FbQc0Tu37mWAxpuFFvHfT9hQoo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: 8d5d4b17-44c6-5e7b-891c-b4277613013d
+    internal-label: Resource Management
+subfeature_v2:
+  - id: f4694696-6278-5131-97cc-3f6c23e232a2
+    internal-label: Budget Management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1835
-ht-degree: 75%
-
+source-wordcount: '1835'
+ht-degree: 77%
 ---
-
 # Provedores, estoques e orçamentos{#providers-stocks-and-budgets}
 
 O Adobe Campaign permite que você defina provedores de serviços que estarão envolvidos nos processos realizados nas campanhas. As informações relacionadas aos provedores de serviços e as estruturas de custo relacionadas são definidas pelo administrador do Adobe Campaign a partir da visualização principal. O provedor de serviços é referenciado a partir da entrega e suas estruturas de custo permitem o cálculo de custos associados a essa entrega, bem como o gerenciamento do estoque.
@@ -151,7 +163,7 @@ Você pode associar informações nos processos associados ao provedor de servi�
 
 Os provedores de serviços estão associados às entregas de campanhas. Eles são referenciados em templates de delivery para oferecer seus serviços nos deliveries criados por meio desse template.
 
-Quando um serviço é selecionado, as categorias de custo correspondentes ao tipo de delivery (mala direta, email, etc.) são automaticamente indicadas na tabela central juntamente com as opções de processamento que foram definidas.
+Quando um serviço é selecionado, as categorias de custo correspondentes ao tipo de entrega (correspondência direta, email etc.) são automaticamente indicadas na tabela central juntamente com as opções de processamento definidas.
 
 >[!NOTE]
 >

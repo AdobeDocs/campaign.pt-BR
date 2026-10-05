@@ -4,13 +4,22 @@ description: Saiba como migrar operadores técnicos do Campaign para a conta té
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1598'
 ht-degree: 0%
-
 ---
-
 # Migração de operadores técnicos do Campaign para o Adobe Developer Console {#migrate-tech-users-to-ims}
 
 Como parte do esforço para reforçar a segurança e o processo de autenticação, a partir do Campaign v8.5, o processo de autenticação para o Campaign v8 está sendo aprimorado. Os operadores técnicos agora podem usar o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectar ao Campaign. Saiba mais sobre o novo processo de autenticação de servidor para servidor na [documentação do Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.

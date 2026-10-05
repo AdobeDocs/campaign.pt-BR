@@ -6,27 +6,31 @@ feature: Campaigns
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
-TQID: https://experienceleague.adobe.com/snshYvtbT3wG1N5-A4VHjl1bylxlXObi-97yVwuKAXk
+TQID: 'https://experienceleague.adobe.com/snshYvtbT3wG1N5-A4VHjl1bylxlXObi-97yVwuKAXk'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 690
-ht-degree: 48%
-
+source-wordcount: '690'
+ht-degree: 70%
 ---
-
 # Gerenciar ativos e documentos {#manage-assets-documents}
 
 Você pode associar vários documentos a uma campanha: relatórios, fotos, páginas da Web, diagramas etc. Esses documentos podem estar em qualquer formato.
 
-Em uma campanha, você também pode consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma marca ou loja específica etc. Quando esses elementos são incluídos em um outline, eles podem ser associados a um delivery de correspondência direta. [Saiba mais](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Em uma campanha também é possível consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma marca específica, uma loja etc. Quando esses elementos estão incluídos em uma descrição, é possível associá-los a uma entrega de correspondência direta. [Saiba mais](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 
 >[!CAUTION]
@@ -68,7 +72,7 @@ Eles também podem ser editados e modificados nessa visualização.
 
 ## Usar delivery outlines {#delivery-outlines}
 
-Um delivery outline é um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criado pela empresa e para uma campanha específica. Ela é usada no contexto de entregas de correspondência direta.
+Um delivery outline é um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criados pela empresa e para uma campanha específica. Ela é usada no contexto de entregas de correspondência direta.
 
 Esses elementos são agrupados em descrições da entrega, e cada descrição da entrega será associada a uma entrega; ela será referenciada no arquivo de extração enviado para o **provedor de serviço** para ser anexada à entrega. Por exemplo, você pode criar um delivery outline que se refere a uma unidade e aos folhetos de marketing que ela usa.
 
@@ -99,7 +103,7 @@ Em seguida, clique em **[!UICONTROL Add a delivery outline]** e crie a hierarqui
 Uma estrutura pode conter itens, campos de personalização e ofertas:
 
 * Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados à entrega.
-* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores que serão usados em deliveries para um target específico (oferta de boas-vindas, desconto etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do link **[!UICONTROL Import personalization fields...]**.
+* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores a serem utilizados em entregas para um público-alvo específico (oferta de boas-vindas, desconto etc.) Elas são criadas no Adobe Campaign e importadas para a estrutura por meio do link **[!UICONTROL Import personalization fields...]**.
 
   ![](assets/del-outline-perso-field.png)
 
@@ -124,7 +128,7 @@ A guia **[!UICONTROL Summary]** da entrega também exibe essas informações:
 
 ### Resultado da extração {#extraction-result}
 
-No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no template de exportação associado ao provedor de serviços.
+No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no modelo de exportação associado ao provedor de serviços.
 
 No seguinte exemplo, o rótulo, custo estimado e descrição do outline associado à entrega serão adicionados no arquivo de extração.
 

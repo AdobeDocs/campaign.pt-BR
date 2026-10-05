@@ -6,24 +6,32 @@ feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: d5af1f98-42e8-4909-b2e6-be65c50c9874
-TQID: https://experienceleague.adobe.com/RTn-nTK3YjtekmBU9BcSIK05n0eJX2EImRsJlHAUG48
+TQID: 'https://experienceleague.adobe.com/RTn-nTK3YjtekmBU9BcSIK05n0eJX2EImRsJlHAUG48'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 889
-ht-degree: 95%
-
+source-wordcount: '889'
+ht-degree: 98%
 ---
-
 # Cupons personalizados{#personalized-coupons}
 
 A adição de cupons a suas entregas pode oferecer aos destinatários valor aprimorado para produtos e serviços. Você pode usar o módulo de cupom do Campaign para criar um conjunto de cupons que você planeja adicionar às futuras ofertas de marketing. Quando estiver pronto para criar uma entrega, atribua os cupons aplicáveis. Como os cupons são válidos para um período de seleção, um cupom atribuído é vinculado exclusivamente à sua mensagem de entrega. Além disso, o Campaign confirma que há cupons suficientes para o número de mensagens antes do envio da entrega.
@@ -59,7 +67,7 @@ Antes de seguir as etapas abaixo, verifique se você sabe o tipo de cupom que de
 
    **[!UICONTROL Anonymous coupons]** : Um cupom anônimo é idêntico para todos os destinatários. Confirme se Anônimo está selecionado no menu **Tipo de cupom** e clique em **Salvar** para gerar o cupom.
 
-   **[!UICONTROL Individual coupons]** : Um cupom individual pode ser personalizado ainda mais com códigos de cupom adicionais. Por exemplo, um cupom individual é criado para uma venda em uma loja de equipamentos esportivos. No entanto, a lista de destinatários é longa e não compartilham a mesma paixão por um único esporte. Você pode adicionar nomes de código para o cupom individual com base em um esporte (por exemplo, futebol americano, beisebol etc.) e enviar cada código para os recipients aplicáveis.
+   **[!UICONTROL Individual coupons]** : Um cupom individual pode ser personalizado ainda mais com códigos de cupom adicionais. Por exemplo, um cupom individual é criado para uma venda em uma loja de equipamentos esportivos. No entanto, a lista de destinatários é longa e não compartilham a mesma paixão por um único esporte. Você pode adicionar nomes personalizados para o cupom individual com base em um esporte (por exemplo, futebol, futebol americano, beisebol etc.) e enviar cada nome para os destinatários aplicáveis.
 
    1. Ao escolher Indivíduo, Cupons abre como uma nova guia na parte inferior esquerda. Acesse a guia **[!UICONTROL Coupons]** e clique em **[!UICONTROL Add]**.
    1. Insira um código exclusivo para o cupom individual quando solicitado pela janela pop-up.

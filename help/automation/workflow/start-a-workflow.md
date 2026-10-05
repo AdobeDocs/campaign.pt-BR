@@ -7,26 +7,36 @@ level: Beginner
 role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-TQID: https://experienceleague.adobe.com/VHBQEKUthZcW2WrbNjmlIC7FzJFDqX0PykJg95sM-WI
+TQID: 'https://experienceleague.adobe.com/VHBQEKUthZcW2WrbNjmlIC7FzJFDqX0PykJg95sM-WI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1143
-ht-degree: 89%
-
+source-wordcount: '1143'
+ht-degree: 94%
 ---
-
 # Iniciar, pausar, parar um fluxo de trabalho {#starting-a-workflow}
 
 Um fluxo de trabalho é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](scheduler.md)) ou de um agendamento de atividade.
 
-Ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-la.
+Ações relacionadas à execução do fluxo de trabalho de direcionamento (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-la.
 
 A barra de ferramentas permite iniciar e controlar a execução do fluxo de trabalho.
 
@@ -73,14 +83,14 @@ O botão **[!UICONTROL Actions]** da barra de ferramentas permite acessar opçõ
   Essa ação para e depois retoma o fluxo de trabalho. Na maioria dos casos, é possível reiniciar mais rápido. Também é útil automatizar a reinicialização quando a interrupção leva um determinado tempo: isso ocorre porque o comando &#39;Parar&#39; não está disponível quando o fluxo de trabalho está sendo interrompido.
 
   Observe que a ação **Reiniciar** não limpa as variáveis da instância do fluxo de trabalho como as ações **Execução**, **Parar** e **Iniciar** (a limpeza das variáveis da instância ocorre a partir da ação Iniciar). Ao reiniciar um fluxo de trabalho, as variáveis da instância ainda estão disponíveis para uso com valores preservados. Para configurá-las, você pode:
-   * Executar as ações **Parar** e **Iniciar**.
-   * Adicionar o código Javascript abaixo no final da execução do fluxo de trabalho:
+  * Executar as ações **Parar** e **Iniciar**.
+  * Adicionar o código Javascript abaixo no final da execução do fluxo de trabalho:
 
-     ```
-     var wkf = xtk.workflow.load(instance.id)
-     wkf.variables='<variables/>'
-     wkf.save()
-     ```
+    ```
+    var wkf = xtk.workflow.load(instance.id)
+    wkf.variables='<variables/>'
+    wkf.save()
+    ```
 
 * **[!UICONTROL Purge history]**
 
@@ -88,7 +98,7 @@ O botão **[!UICONTROL Actions]** da barra de ferramentas permite acessar opçõ
 
 * **[!UICONTROL Start in simulation mode]**
 
-  Essa opção permite iniciar o fluxo de trabalho no modo de simulação em vez do modo real. Isso significa que ao habilitar esse modo, somente as atividades que não afetam o banco de dados ou o sistema de arquivos serão executadas (por exemplo, **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Atividades que têm impacto (por exemplo, **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.) assim como as posteriores (na mesma ramificação) não são executadas.
+  Essa opção permite iniciar o fluxo de trabalho no modo de simulação em vez do modo real. Isso significa que ao habilitar esse modo, somente as atividades que não afetam o banco de dados ou o sistema de arquivos serão executadas (por exemplo, **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Atividades de impacto (por exemplo: **[!UICONTROL Export]**, **[!UICONTROL Import]** etc.) e as que ocorrem após elas (na mesma ramificação) não são executadas.
 
 * **[!UICONTROL Execute pending tasks now]**
 
@@ -110,9 +120,9 @@ Melhore a estabilidade da instância implementando as seguintes práticas recome
 
   Para evitar fluxos de trabalho no estado pausado:
 
-   * Verifique seus fluxos de trabalho regularmente para garantir que não haja erros inesperados.
-   * Mantenha seus fluxos de trabalho o mais simples possível, por exemplo, dividindo grandes fluxos de trabalho em vários fluxos de trabalho diferentes. É possível usar as atividades **[!UICONTROL External signal]** para acionar a execução com base na execução de outros fluxos de trabalho.
-   * Evite desabilitar atividades com fluxos nos fluxos de trabalho, deixando threads abertos e levando a muitas tabelas temporárias que podem consumir muito espaço. Não mantenha as atividades nos estados **[!UICONTROL Do not enable]** ou **[!UICONTROL Enable but do not execute]** em seus fluxos de trabalho.
+  * Verifique seus fluxos de trabalho regularmente para garantir que não haja erros inesperados.
+  * Mantenha seus fluxos de trabalho o mais simples possível, por exemplo, dividindo grandes fluxos de trabalho em vários fluxos de trabalho diferentes. É possível usar as atividades **[!UICONTROL External signal]** para acionar a execução com base na execução de outros fluxos de trabalho.
+  * Evite desabilitar atividades com fluxos nos fluxos de trabalho, deixando threads abertos e levando a muitas tabelas temporárias que podem consumir muito espaço. Não mantenha as atividades nos estados **[!UICONTROL Do not enable]** ou **[!UICONTROL Enable but do not execute]** em seus fluxos de trabalho.
 
 * **Interromper fluxos de trabalho não utilizados**. Os fluxos de trabalho que continuam em execução mantêm conexões com o banco de dados.
 

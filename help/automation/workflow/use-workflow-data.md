@@ -4,20 +4,30 @@ description: Saiba como usar os dados de fluxo de trabalho
 feature: Workflows, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-TQID: https://experienceleague.adobe.com/MeXrY93e-BFOK0OdPAXrnv8baT15WZWwYhXMdFjf1vw
+TQID: 'https://experienceleague.adobe.com/MeXrY93e-BFOK0OdPAXrnv8baT15WZWwYhXMdFjf1vw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Data management
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 718
-ht-degree: 66%
-
+source-wordcount: '718'
+ht-degree: 73%
 ---
-
 # Usar dados de fluxo de trabalho{#how-to-use-workflow-data}
 
 Você pode usar atividades de workflow para executar várias tarefas. Encontre abaixo exemplos de uso para atualizar o banco de dados criando listas, gerenciar assinaturas, enviar mensagens por meio de um fluxo de trabalho ou enriquecer seus deliveries e seus públicos.
@@ -126,7 +136,7 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
 
 ## Atualizar o banco de dados {#update-the-database}
 
-Todos os dados coletados podem ser usados para atualizar o banco de dados ou nas entregas. Por exemplo, você pode enriquecer as possibilidades de personalização do conteúdo da mensagem (incluir o número de contratos na mensagem, especificar o carrinho de compras médio do ano passado etc.) ou detalhar a segmentação de população (enviar uma mensagem aos cotitulares do contrato, direcionar os mil melhores assinantes para serviços online e etc.). Esses dados também podem ser exportados ou arquivados em uma lista.
+Todos os dados coletados podem ser usados para atualizar o banco de dados ou nas entregas. Por exemplo, você pode enriquecer as possibilidades de personalização do conteúdo da mensagem (incluir o número de contratos na mensagem, especificar o valor médio das compras no ano passado etc.) ou detalhar a segmentação de população (enviar uma mensagem aos cotitulares do contrato, direcionar os 1.000 principais assinantes para serviços online etc.). Esses dados também podem ser exportados ou arquivados em uma lista.
 
 ### Atualizar listas  {#list-updates}
 

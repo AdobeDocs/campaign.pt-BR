@@ -5,25 +5,35 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-TQID: https://experienceleague.adobe.com/RcdMeKFZIeitseKyZb72sz6O1y7lhtwajxwAr5V9vLo
+TQID: 'https://experienceleague.adobe.com/RcdMeKFZIeitseKyZb72sz6O1y7lhtwajxwAr5V9vLo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 945
+source-wordcount: '945'
 ht-degree: 60%
-
 ---
-
 # Criar uma oferta
 
 Para criar uma oferta, siga as etapas abaixo:
@@ -192,13 +202,13 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 Agora você pode aprovar e ativar a oferta para disponibilizá-la no ambiente **Live**.
 
-Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=pt-BR#approving-offer-content){target="_blank"}.
+Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content){target="_blank"}.
 
 ## Gerenciar apresentação de ofertas{#offer-presentation}
 
 O Campaign permite controlar o fluxo de apresentações de oferta usando regras de apresentação. Essas regras, que são específicas à Interação do Campaign, são **regras de tipologia**. Elas permitem excluir ofertas com base no histórico de apresentações já feitas a um destinatário. Eles são referenciados no ambiente.
 
-Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=pt-BR#managing-offers){target="_blank"}.
+Para obter mais informações, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html#managing-offers){target="_blank"}.
 
 ## Simulação de oferta
 
@@ -206,4 +216,4 @@ O módulo **Simulation** permite testar a distribuição de ofertas pertencentes
 
 A simulação leva em consideração os contextos e as regras de qualificação aplicadas anteriormente às ofertas e suas regras de apresentação. Isso permite testar e refinar várias versões da apresentação de oferta sem realmente usar uma oferta ou sobrecarregar ou não um destino, já que a simulação não tem impacto nos destinatários de destino.
 
-Para obter mais informações sobre a Simulação de oferta, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre a Simulação de oferta, consulte a [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html){target="_blank"}.

@@ -5,22 +5,29 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-TQID: https://experienceleague.adobe.com/uVVmB-6U7nTrC0ypEHAINNtp5tcE0gr8ambKwDK56ls
+TQID: 'https://experienceleague.adobe.com/uVVmB-6U7nTrC0ypEHAINNtp5tcE0gr8ambKwDK56ls'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 707
-ht-degree: 16%
-
+source-wordcount: '707'
+ht-degree: 22%
 ---
-
 # Pré-visualizar e testar o email {#preview-test}
 
 Depois que o conteúdo da mensagem for definido, você poderá usar perfis de teste para pré-visualizá-la e testá-la. Se você inseriu [conteúdo personalizado](personalize.md), é possível verificar como esse conteúdo é exibido na mensagem, usando os dados do perfil de teste. Além disso, para detectar possíveis erros no conteúdo da mensagem ou nas configurações de personalização, envie provas para perfis de teste. Uma prova deve ser enviada sempre que uma alteração for feita, para validar o conteúdo mais recente.
@@ -44,7 +51,7 @@ Para visualizar o conteúdo da mensagem, siga as etapas abaixo:
 
 ## Enviar provas {#send-proofs}
 
-Para entregas de email, é possível enviar provas para validar o conteúdo da mensagem. O envio de provas permite verificar o link de opt out, a mirror page e quaisquer outros links, validar a mensagem, verificar se as imagens são exibidas, detectar possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
+Para entregas de email, é possível enviar provas para validar o conteúdo da mensagem. O envio de provas permite verificar o link de opção de não participação, a mirror page e quaisquer outros links, validar a mensagem, verificar a exibição das imagens, detectar possíveis erros etc. Você também pode verificar o seu design e a renderização em diferentes dispositivos.
 
 Uma prova é uma mensagem específica que permite testar uma mensagem antes de enviá-la ao público-alvo principal. Os destinatários da prova são responsáveis pela aprovação da mensagem: renderização, conteúdo, configurações de personalização, configuração.
 
@@ -115,4 +122,4 @@ Por padrão, as mensagens de prova são identificadas pela menção `Proof #N` n
 
 Saiba como enviar e validar uma prova para uma entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

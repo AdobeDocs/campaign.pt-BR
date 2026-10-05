@@ -6,22 +6,40 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-TQID: https://experienceleague.adobe.com/CSbxLgXnmrLFiEVEHHNM4rYDBn870UTuhcr1w6FOuRQ
+TQID: 'https://experienceleague.adobe.com/CSbxLgXnmrLFiEVEHHNM4rYDBn870UTuhcr1w6FOuRQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+  - id: 237333ba-90fa-554c-bc8d-2047e6173477
+    internal-label: Cross Channel Orchestration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
+  - id: ede6e1ec-9279-415e-b828-a09735018d48
+    internal-label: Direct mail
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1565
-ht-degree: 93%
-
+source-wordcount: '1565'
+ht-degree: 96%
 ---
-
 # Criar a primeira entrega {#create-a-msg}
 
 Nesta página, aprenda a criar uma entrega única. É possível criar outros tipos de entregas para construir os seus casos de uso. Saiba mais sobre os diferentes tipos de entregas e como criá-las [nesta página](gs-message.md).
@@ -180,7 +198,7 @@ Para modificar a configuração padrão, clique no link **[!UICONTROL Edit...]**
 
 ### Selecionar os destinatários das mensagens de prova {#select-the-proof-target}
 
-Para entregas de email, é possível enviar provas para validar o conteúdo da mensagem. O envio de provas permite verificar o link de opt out, a mirror page e quaisquer outros links, validar a mensagem, verificar se as imagens são exibidas, detectar possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
+Para entregas de email, é possível enviar provas para validar o conteúdo da mensagem. O envio de provas permite verificar o link de opção de não participação, a mirror page e quaisquer outros links, validar a mensagem, verificar a exibição das imagens, detectar possíveis erros etc. Você também pode verificar o seu design e a renderização em diferentes dispositivos.
 
 Uma prova é uma mensagem específica que permite testar uma mensagem antes de enviá-la ao público-alvo principal. Os destinatários da prova são responsáveis pela aprovação da mensagem: renderização, conteúdo, configurações de personalização, configuração.
 
@@ -191,7 +209,7 @@ Para obter mais informações sobre destinatários e envio de provas, consulte 
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 

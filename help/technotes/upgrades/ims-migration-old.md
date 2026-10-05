@@ -3,13 +3,16 @@ title: Migração de usuários técnicos para o console do Adobe Developer
 description: Saiba como migrar operadores técnicos do Campaign para a conta técnica no console do Adobe Developer
 exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 1%
-
 ---
-
 # Migração de operadores técnicos do Campaign para o Adobe Developer Console {#migrate-tech-users-to-ims}
 
 A partir do Campaign v8.5, o processo de autenticação para o Campaign v8 está sendo aprimorado. Os operadores técnicos devem usar o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectarem ao Campaign. Um operador técnico é um perfil de usuário do Campaign que foi explicitamente criado para integração com a API. Este artigo detalha as etapas necessárias para migrar um operador técnico para uma conta técnica no console do Adobe Developer.

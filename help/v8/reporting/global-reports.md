@@ -4,22 +4,37 @@ description: Saiba como acessar e usar relatórios globais
 feature: Reporting, Monitoring
 role: User, Developer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-TQID: https://experienceleague.adobe.com/4BSV9uMb9AfI4Su-UcDOwcvT7LN0HDNsW4s9PC8Bx90
+TQID: 'https://experienceleague.adobe.com/4BSV9uMb9AfI4Su-UcDOwcvT7LN0HDNsW4s9PC8Bx90'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Security
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1783
-ht-degree: 64%
-
+source-wordcount: '1783'
+ht-degree: 66%
 ---
-
 # Relatórios globais {#global-reports}
 
 Esses relatórios dizem respeito à atividade dos dados no banco de dados inteiro. Para exibir o painel de relatórios, vá para a guia **[!UICONTROL Reports]**.
@@ -54,7 +69,7 @@ Este relatório contém informações sobre a taxa de transferência de entrega 
 
 ![](assets/report-toolbar.png)
 
-Você pode configurar os valores exibidos alterando a escala de tempo: visualização de 1 hora, 3 horas, 24 horas, etc. Clique em **[!UICONTROL Refresh]** para confirmar a seleção.
+Você pode configurar os valores exibidos alterando a escala de tempo: visualização de 1 hora, de 3 horas, de 24 horas etc. Clique em **[!UICONTROL Refresh]** para confirmar sua seleção.
 
 >[!NOTE]
 >

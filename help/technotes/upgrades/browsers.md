@@ -4,13 +4,16 @@ title: Componentes Web do Campaign e versão 100 nos navegadores Chrome Firefox 
 description: Componentes Web do Campaign e versão 100 em navegadores Chrome, Firefox e Edge
 hide: true
 exl-id: 912ad71e-2b23-4b16-b5f9-47d547fc83d5
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
-
 ---
-
 # Impactos na versão de 3 dígitos do navegador nos componentes Web do Campaign {#version-100}
 
 A Google e a Mozilla estão avisando que o Chrome e o Firefox podem interromper alguns sites devido às próximas versões de 3 dígitos.

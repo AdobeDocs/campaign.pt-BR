@@ -6,22 +6,34 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
-TQID: https://experienceleague.adobe.com/lOHi9m2uufIl3Qk5z-vJUVMkBJE3hHOmGjiebKKiZqo
+TQID: 'https://experienceleague.adobe.com/lOHi9m2uufIl3Qk5z-vJUVMkBJE3hHOmGjiebKKiZqo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
+subfeature_v2:
+  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Data management
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3864
-ht-degree: 95%
-
+source-wordcount: '3864'
+ht-degree: 96%
 ---
-
 # Importar dados para o Campaign {#ootb-profiles}
 
 O Campaign ajuda a adicionar contatos ao banco de dados. Você pode carregar um arquivo, agendar e automatizar várias atualizações de contato, coletar dados na Web ou inserir informações de perfil diretamente na tabela do destinatário.
@@ -269,45 +281,45 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
 * Clique nos links **[!UICONTROL Edit]** para selecionar a pasta, a lista ou o serviço ao qual deseja associar ou assinar os destinatários.
 
-   1. Importação para uma pasta
+  1. Importação para uma pasta
 
-      O link **[!UICONTROL Edit...]** da seção **[!UICONTROL Import into a folder]** permite selecionar ou criar a pasta para onde os destinatários serão importados. Por padrão, se nenhuma partição for definida, os dados serão importados para a pasta padrão do operador.
+     O link **[!UICONTROL Edit...]** da seção **[!UICONTROL Import into a folder]** permite selecionar ou criar a pasta para onde os destinatários serão importados. Por padrão, se nenhuma partição for definida, os dados serão importados para a pasta padrão do operador.
 
-      >[!NOTE]
-      >
-      >A pasta padrão de um operador é a primeira pasta que o operador tem acesso de gravação. Saiba mais em [Gerenciar pastas e exibições](../audiences/folders-and-views.md).
+     >[!NOTE]
+     >
+     >A pasta padrão de um operador é a primeira pasta que o operador tem acesso de gravação. Saiba mais em [Gerenciar pastas e exibições](../audiences/folders-and-views.md).
 
-      Para selecionar a pasta de importação, clique na seta à direita do campo **[!UICONTROL Folder]** e selecione a pasta correspondente. Você também pode usar o ícone **[!UICONTROL Select link]** para exibir a árvore em uma nova janela ou criar uma nova pasta.
+     Para selecionar a pasta de importação, clique na seta à direita do campo **[!UICONTROL Folder]** e selecione a pasta correspondente. Você também pode usar o ícone **[!UICONTROL Select link]** para exibir a árvore em uma nova janela ou criar uma nova pasta.
 
-      ![](assets/s_ncs_user_import_wizard05_2.png)
+     ![](assets/s_ncs_user_import_wizard05_2.png)
 
-      Para criar uma nova pasta, selecione o nó no qual deseja adicionar uma pasta e clique com o botão direito do mouse. Selecione **[!UICONTROL Create a new 'Recipients' folder]**.
+     Para criar uma nova pasta, selecione o nó no qual deseja adicionar uma pasta e clique com o botão direito do mouse. Selecione **[!UICONTROL Create a new 'Recipients' folder]**.
 
-      ![](assets/s_ncs_user_import_wizard05_3.png)
+     ![](assets/s_ncs_user_import_wizard05_3.png)
 
-      A pasta é adicionada abaixo do nó atual. Insira o nome da nova pasta, pressione Enter para confirmar, e depois clique em **[!UICONTROL OK]**.
+     A pasta é adicionada abaixo do nó atual. Insira o nome da nova pasta, pressione Enter para confirmar, e depois clique em **[!UICONTROL OK]**.
 
-      ![](assets/s_ncs_user_import_wizard05_4.png)
+     ![](assets/s_ncs_user_import_wizard05_4.png)
 
-   1. Associar com uma lista
+  1. Associar com uma lista
 
-      O link **[!UICONTROL Edit...]** na seção **[!UICONTROL Add recipients to a list]** permite selecionar ou criar uma lista para onde os destinatários serão importados.
+     O link **[!UICONTROL Edit...]** na seção **[!UICONTROL Add recipients to a list]** permite selecionar ou criar uma lista para onde os destinatários serão importados.
 
-      ![](assets/s_ncs_user_import_wizard05_5.png)
+     ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Você pode criar uma nova lista para esses destinatários clicando em **[!UICONTROL Select link]** e depois em **[!UICONTROL Create]**.
+     Você pode criar uma nova lista para esses destinatários clicando em **[!UICONTROL Select link]** e depois em **[!UICONTROL Create]**.
 
-      ![](assets/s_ncs_user_import_wizard05_6.png)
+     ![](assets/s_ncs_user_import_wizard05_6.png)
 
-      Você pode decidir adicionar os destinatários aos já presentes em uma lista ou para recriar a lista com os novos destinatários. Nesse caso, se a lista já continha destinatários, eles serão excluídos e substituídos pelos destinatários importados.
+     Você pode decidir adicionar os destinatários aos já presentes em uma lista ou para recriar a lista com os novos destinatários. Nesse caso, se a lista já continha destinatários, eles serão excluídos e substituídos pelos destinatários importados.
 
-   1. Como assinar um serviço
+  1. Como assinar um serviço
 
-      Para inscrever todos os destinatários importados para um serviço de informações, clique no link **[!UICONTROL Edit...]** da seção **[!UICONTROL Subscribe recipients to a service]** para selecionar ou criar o serviço de informações ao qual os destinatários serão inscritos. Você pode selecionar a opção **[!UICONTROL Send a confirmation message]**: o conteúdo desta mensagem é definido no modelo da entrega associado ao serviço de assinatura.
+     Para inscrever todos os destinatários importados para um serviço de informações, clique no link **[!UICONTROL Edit...]** da seção **[!UICONTROL Subscribe recipients to a service]** para selecionar ou criar o serviço de informações ao qual os destinatários serão inscritos. Você pode selecionar a opção **[!UICONTROL Send a confirmation message]**: o conteúdo desta mensagem é definido no modelo da entrega associado ao serviço de assinatura.
 
-      ![](assets/s_ncs_user_import_wizard05_7.png)
+     ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      É possível criar um novo serviço para esses destinatários clicando em **[!UICONTROL Select link]** e depois no ícone **[!UICONTROL Create]**. O gerenciamento dos serviços de informação é apresentado [nesta seção](../start/subscriptions.md).
+     É possível criar um novo serviço para esses destinatários clicando em **[!UICONTROL Select link]** e depois no ícone **[!UICONTROL Create]**. O gerenciamento dos serviços de informação é apresentado [nesta seção](../start/subscriptions.md).
 
 * Use o campo **[!UICONTROL Origin]** para adicionar informações sobre a origem dos destinatários aos perfis. Essas informações são particularmente úteis na estrutura de uma importação múltipla.
 
@@ -325,7 +337,7 @@ Você pode monitorar a execução do trabalho de importação (consulte [Monitor
 
 Os processos de exportação permitem acessar e extrair dados do banco de dados: contatos, clientes, listas, segmentos etc.
 
-Por exemplo, pode ser útil usar dados de rastreamento de campanha (histórico de rastreamento etc.) em uma planilha. Os dados de saída podem estar em formato TXT, CSV, TAB ou XML.
+Por exemplo, pode ser útil usar dados de rastreamento de campanhas (histórico de rastreamento etc.) em uma planilha. Os dados de saída podem estar em formato TXT, CSV, TAB ou XML.
 
 O assistente de exportação permite configurar uma exportação, definir suas opções e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de exportação (simples ou múltipla) e dos direitos do operador.
 
@@ -378,7 +390,7 @@ Selecione um formato de saída para o arquivo de exportação. Os formatos a seg
 * Para o formato **[!UICONTROL Text]**, selecione os delimitadores para separar as colunas (guias, vírgulas, ponto e vírgula ou personalizado) e as strings (aspas simples, duplas ou nenhuma).
 * Para **[!UICONTROL text]** e **[!UICONTROL CSV]**, você pode selecionar a opção **[!UICONTROL Use first lines as column titles]**.
 * Indique o formato de data e o formato do número. Para fazer isso, clique no botão **[!UICONTROL Edit]** do campo correspondente e utilize o editor.
-* Para campos que contém os valores enumerados, é possível selecionar a opção **[!UICONTROL Export labels instead of internal values of enumerations]**. Por exemplo, o título pode ser armazenado no formato **1=Sr.**, **2=Srta.**, **3=Sra.**. Se esta opção estiver selecionada, **Sr.**, **Srta.** e **Sra.** serão exportados.
+* Para campos que contém os valores enumerados, é possível selecionar a opção **[!UICONTROL Export labels instead of internal values of enumerations]**. Por exemplo, o pronome de tratamento pode ser armazenado na forma **1=Sr.**, **2=Srta.**, **3=Sra.**. Se esta opção estiver selecionada, **Sr.**, **Srta.** e **Sra.** serão exportados.
 
 ### Etapa 4 - Seleção de dados {#step-4---data-selection}
 
@@ -411,9 +423,9 @@ Você pode modificar a ordem e o rótulo dos campos do arquivo de saída e aplic
 * Para alterar o rótulo de um campo, clique na célula da coluna **[!UICONTROL Label]** que corresponde ao campo que deve ser modificado e insira o novo rótulo. Pressione Enter no teclado para confirmar.
 * Para aplicar uma transformação de caso ao conteúdo, selecione o respectivo campo na coluna **[!UICONTROL Transformation]**. É possível selecionar:
 
-   * Alterar para minúsculas
-   * Alterar para maiúsculas
-   * Primeira letra em maiúscula
+  * Alterar para minúsculas
+  * Alterar para maiúsculas
+  * Primeira letra em maiúscula
 
   ![](assets/s_ncs_user_export_wizard06.png)
 

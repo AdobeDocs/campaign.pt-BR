@@ -3,13 +3,16 @@ title: Atualização da infraestrutura de envio de email do Campaign
 description: Atualização da infraestrutura de envio de email do Campaign
 hide: true
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 4%
-
 ---
-
 # Atualização da infraestrutura de envio de email do Campaign {#migrate-infra-to-aws}
 
 ## O que será atualizado?{#aws-changes}
@@ -56,11 +59,11 @@ As atualizações de ambientes de produção começaram em **janeiro de 2024**.
 
 * **Quais testes são exigidos pelos clientes?**
 
-  Não esperamos nenhum teste por parte dos clientes em conexão com esse evento de atualização. Caso algum problema seja observado, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support){target="_blank"}.
+  Não esperamos nenhum teste por parte dos clientes em conexão com esse evento de atualização. Caso algum problema seja observado, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **É possível solicitar uma alteração em Data/Hora no slot de atualização de segurança agendado?**
 
   Não. Não é possível acomodar as modificações solicitadas à programação existente, pois isso provavelmente interromperá o evento de atualização atribuído para outro cliente.
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support){target="_blank"}.
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

@@ -6,13 +6,22 @@ feature: Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 97%
-
 ---
-
 # Controlar conteúdo da mensagem{#control-message-content}
 
 Para garantir que seus emails cheguem aos destinatários e melhorem a taxa de capacidade de entrega de email, eles devem respeitar várias regras. Caso contrário, o conteúdo de determinadas mensagens pode ser detectado como spam. O Adobe Campaign fornece várias ferramentas para fazer com que o conteúdo esteja em conformidade com essas regras.
@@ -22,7 +31,7 @@ Siga os princípios listados abaixo ao criar o conteúdo da mensagem:
 * [Endereço do remetente](#sender-address): o endereço deve identificar explicitamente o remetente. O domínio deve ser de propriedade do remetente e registrado por ele. O registro de domínio não deve ser privatizado.
 * [Personalização](#personalization): personalizar o conteúdo e definir um tempo de envio por destinatário aumenta as chances de sua mensagem ser aberta.
 * Imagens e texto: respeitar uma proporção adequada de texto/imagem (por exemplo, 60% de texto e 40% de imagens).
-* [Link de unsubscription &#x200B;](#opt-out) e página de destino: o link de unsubscription é essencial. Deve ser visível e válido e o formulário deve ser funcional.
+* [Link de unsubscription ](#opt-out) e página de destino: o link de unsubscription é essencial. Deve ser visível e válido e o formulário deve ser funcional.
 * Pré-visualização: use as ferramentas oferecidas pelo Adobe Campaign para verificar e otimizar o conteúdo do seu email ([renderização de caixa de entrada](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
 Para obter dicas adicionais para otimizar a capacidade de entrega ao projetar conteúdo, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery){target="_blank"}.

@@ -4,13 +4,22 @@ description: Saiba como migrar para o novo conector SMS v2
 feature: Technote
 role: Admin
 exl-id: 61a5a3e8-59f8-47ea-afc9-66ec243b8265
-source-git-commit: 30ab5a10f17baddfc455dc406a4f31f058ea05ba
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
-
 ---
-
 # Migração para o novo conector SMS v2
 
 O Adobe Campaign v8 apresenta um novo **conector de processo de SMS dedicado** (v2), que oferece desempenho e confiabilidade aprimorados em comparação ao conector de SMS baseado em MTA herdado.

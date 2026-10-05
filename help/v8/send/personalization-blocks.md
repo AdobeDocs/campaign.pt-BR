@@ -6,22 +6,29 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
-TQID: https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8
+TQID: 'https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 638
-ht-degree: 30%
-
+source-wordcount: '638'
+ht-degree: 40%
 ---
-
 # Usar blocos de personalização{#personalization-blocks}
 
 Os blocos de personalização são conteúdos dinâmicos que contêm uma renderização específica que pode ser inserida em seus deliveries. Por exemplo, você pode adicionar um logotipo, uma mensagem de saudação ou um link para uma mirror page.
@@ -66,7 +73,7 @@ Os blocos de personalização incorporados são:
 
 >[!IMPORTANT]
 >
->A versão 8.9.3 inclui uma atualização da lista de permissões de URL externa. Se um bloco de personalização personalizado referenciar uma URL externa (por exemplo, uma imagem hospedada externamente), verifique se o domínio foi adicionado à lista de permissões aprovada da instância para que o recurso continue a ser carregado sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
+>A versão 8.9.3 inclui uma atualização da lista de permissões de URL externa. Se um bloco de personalização personalizado referenciar um URL externo (por exemplo, uma imagem hospedada externamente), verifique se o domínio foi adicionado à lista de permissões aprovada da instância para que o recurso continue sendo carregado sem interrupção. Como administrador do Campaign, use o Painel de controle para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
 
 Você pode definir novos blocos de conteúdo personalizado a serem inseridos no ícone de personalização.
 
@@ -93,4 +100,4 @@ Depois de salvo, o novo bloco de personalização fica disponível no editor de 
 
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo de sua entrega de email no vídeo a seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449011?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

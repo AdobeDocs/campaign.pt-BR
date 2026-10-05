@@ -5,26 +5,38 @@ feature: Experience Platform Integration
 role: Developer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-TQID: https://experienceleague.adobe.com/LWOsfmxhIhhcbbXp6SXq2MLpejPdfipyOllm0SBmVAo
+TQID: 'https://experienceleague.adobe.com/LWOsfmxhIhhcbbXp6SXq2MLpejPdfipyOllm0SBmVAo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Experience Platform integration
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1038
+source-wordcount: '1038'
 ht-degree: 1%
-
 ---
-
 # Atualizar perfis do Adobe Experience Platform a partir de páginas de aterrissagem do Adobe Campaign {#ac-aep-lp}
 
 A integração entre o Adobe Campaign e o Adobe Experience Platform permite sincronizar facilmente os dados do perfil entre as páginas de aterrissagem do Adobe Campaign e o Adobe Experience Platform. Com essa integração, você pode:
@@ -69,7 +81,7 @@ Com a conexão OAuth estabelecida, a próxima etapa é criar uma conexão do Sou
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=pt-BR){target="_blank"}.
+1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
 
    Na etapa **[!UICONTROL Authentication]**, alterne a opção **[!UICONTROL Enable authentication]** para autenticar usando o token de acesso gerado anteriormente pela integração OAuth.
 
@@ -111,7 +123,7 @@ Navegue pelas guias abaixo para descobrir os dois métodos:
 
 >[!TAB Adicionar opções usando uma atividade de código JavaScript]
 
-Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=pt-BR#JavaScript-code){target="_blank"}.
+Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code){target="_blank"}.
 
 Na execução do workflow, as opções são criadas automaticamente no console do Campaign com os valores fornecidos.
 
@@ -357,5 +369,5 @@ Este é um exemplo de uma página de aterrissagem e uma atividade de código Jav
 ### Mais informações
 
 * [Configurar uma atividade de código JavaScript](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Criar uma página de destino](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=pt-BR){target="_blank"}
+* [Criar uma página de destino](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html){target="_blank"}
 * [Gerenciar assinaturas e cancelamentos de assinaturas](../start/subscriptions.md)

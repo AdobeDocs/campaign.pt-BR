@@ -5,27 +5,40 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-TQID: https://experienceleague.adobe.com/uHf2o7h-iEwuPhNgjT-sAOES0A-uzpye9UGgZkgxdOA
+TQID: 'https://experienceleague.adobe.com/uHf2o7h-iEwuPhNgjT-sAOES0A-uzpye9UGgZkgxdOA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+    internal-label: Transactional messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1200
-ht-degree: 50%
-
+source-wordcount: '1200'
+ht-degree: 54%
 ---
-
 # Criar e publicar seu modelo para mensagens transacionais{#template-transactional-messages}
 
 Cada evento pode acionar uma mensagem personalizada. Para que isso aconteça, você precisa criar um template de mensagem para corresponder a cada tipo de evento. Os modelos contêm as informações necessárias para personalizar a mensagem transacional. Você também pode usar modelos para testar a pré-visualização da mensagem e enviar provas usando seed addresses antes de entregar ao target final.
@@ -80,7 +93,7 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. Preencha a marca usando a seguinte sintaxe: **nome do elemento**.@**nome do atributo** conforme mostrado abaixo.
+1. Preencha a tag usando a seguinte sintaxe: **nome do elemento**.@**nome do atributo**, conforme mostrado abaixo.
 
    ![](assets/messagecenter_create_custo_2.png)
 
@@ -96,11 +109,11 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
 
 1. Atribua um rótulo a ele para facilitar a seleção posteriormente e, em seguida, insira o seed address (email ou celular, dependendo do canal de comunicação).
 
-1. Insira o identificador externo: esse campo opcional permite inserir uma chave de negócios (ID exclusiva, nome + email etc.) que é comum a todos os aplicativos em seu site, usado para identificar seus perfis. Se esse campo também estiver presente no banco de dados de marketing do Adobe Campaign, você poderá reconciliar um evento com um perfil no banco de dados.
+1. Insira o identificador externo: este campo opcional permite inserir uma chave de negócio (identificador exclusivo, nome + email etc.) que é comum a todas as aplicações do seu site e é usada para identificar seus perfis. Se esse campo também estiver presente no banco de dados de marketing do Adobe Campaign, você poderá reconciliar um evento com um perfil no banco de dados.
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Inserir dados de teste. [Saiba mais sobre dados de personalização na documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. Inserir dados de teste. [Saiba mais sobre dados de personalização na documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 

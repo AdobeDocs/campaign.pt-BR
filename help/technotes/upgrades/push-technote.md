@@ -7,13 +7,28 @@ role: Admin
 level: Experienced
 hide: true
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 12%
-
 ---
-
 # Alterações no Canal de notificação por push {#push-upgrade}
 
 Você pode usar o Campaign para enviar notificações por push em dispositivos iOs e Android. Para fazer isso, o Campaign depende dos serviços de assinatura de aplicativo móvel.
@@ -49,7 +64,7 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 * O arquivo JSON da conta do serviço Android Firebase Admin SDK é necessário para mover o aplicativo móvel para HTTP v1. Saiba como obter este arquivo na [documentação do Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* Para o Campaign Classic v7, o suporte do HTTP v1 foi adicionado à versão 20.3.1. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar seu ambiente para a [compilação mais recente do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=pt-BR){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
+* Para o Campaign Classic v7, o suporte do HTTP v1 foi adicionado à versão 20.3.1. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para a transição para HTTP v1 é atualizar seu ambiente para a [compilação mais recente do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o HTTP v1 é compatível com todas as versões, e nenhuma atualização é necessária.
 
 * Como usuário no local do Campaign Classic v7, você deve atualizar os servidores Marketing e Execução em tempo real.
 
@@ -57,9 +72,9 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 * Sobre a conta externa Android routing:
 
-   * Como usuário no local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+  * Como usuário no local ou híbrido do Campaign Classic v7, verifique se a conta externa do Android Routing está configurada com `androidPushConnectorV2.js`. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
 
-   * Para implantações híbridas, hospedadas e gerenciadas do Cloud Services, você também deve se conectar com a equipe de Atendimento ao cliente da Adobe para validar se o conector `androidPushConnectorV2.js (nms)` está selecionado na conta externa de roteamento do Android do seu servidor Mid-sourcing.
+  * Para implantações híbridas, hospedadas e gerenciadas do Cloud Services, você também deve se conectar com a equipe de Atendimento ao cliente da Adobe para validar se o conector `androidPushConnectorV2.js (nms)` está selecionado na conta externa de roteamento do Android do seu servidor Mid-sourcing.
 
 #### Procedimento de transição {#fcm-transition-steps}
 
@@ -115,45 +130,45 @@ Você também pode atualizar deliveries e templates de delivery existentes criad
 
   Para corrigir todos os deliveries e templates de deliveries criados antes da atualização para uma versão compatível com HTTP v1, siga estas etapas:
 
-   1. Exporte seus deliveries e templates de delivery existentes em um pacote para poder restaurá-los caso ocorra um problema inesperado durante a aplicação de patches.
-   1. Execute o seguinte comando no Posgresql:
+  1. Exporte seus deliveries e templates de delivery existentes em um pacote para poder restaurá-los caso ocorra um problema inesperado durante a aplicação de patches.
+  1. Execute o seguinte comando no Posgresql:
 
-      ```sql
-      pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
-      ```
+     ```sql
+     pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
+     ```
 
-   1. Por padrão, o script está no modo `dryrun`. Você pode iniciá-lo nesse modo para verificar se alguma entrega precisa ser corrigida.
+  1. Por padrão, o script está no modo `dryrun`. Você pode iniciá-lo nesse modo para verificar se alguma entrega precisa ser corrigida.
 
-      Comando
+     Comando
 
-      ```sql
-      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
-      ```
+     ```sql
+     nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
+     ```
 
-      Output
+     Output
 
-      ```sql
-      ...
-      HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
-      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
-      HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
-      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
-      ...
-      HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
-      HH:MM:SS >>  - X had not patchable androidCheckParams formula!
-      HH:MM:SS >   - Y had androidCheckParams formula patched.
-      HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
-      ```
+     ```sql
+     ...
+     HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+     HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+     HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+     HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+     ...
+     HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
+     HH:MM:SS >>  - X had not patchable androidCheckParams formula!
+     HH:MM:SS >   - Y had androidCheckParams formula patched.
+     HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
+     ```
 
-      >[!NOTE]
-      >
-      >As entregas `not patchable` precisam ser atualizadas manualmente. A ID pode ser encontrada no log de.
+     >[!NOTE]
+     >
+     >As entregas `not patchable` precisam ser atualizadas manualmente. A ID pode ser encontrada no log de.
 
-   1. Execute o script no modo de execução da seguinte maneira para atualizar deliveries:
+  1. Execute o script no modo de execução da seguinte maneira para atualizar deliveries:
 
-      ```sql
-      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
-      ```
+     ```sql
+     nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
+     ```
 
   +++
 
@@ -211,7 +226,7 @@ Para verificar se você foi afetado, você pode filtrar seus **Serviços e Assin
 
 #### Pré-requisitos {#ios-transition-prerequisites}
 
-* Para o Campaign Classic v7, o suporte ao modo de **Autenticação baseada em token** foi adicionado na versão 20.2. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para essa alteração é atualizar seu ambiente para a [compilação mais recente do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=pt-BR){target="_blank"}. Para o Campaign v8, o modo de **autenticação baseada em token** é compatível com todas as versões, e nenhuma atualização é necessária.
+* Para o Campaign Classic v7, o suporte ao modo de **Autenticação baseada em token** foi adicionado na versão 20.2. Se seu ambiente estiver sendo executado em uma versão mais antiga, um pré-requisito para essa alteração é atualizar seu ambiente para a [compilação mais recente do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. Para o Campaign v8, o modo de **autenticação baseada em token** é compatível com todas as versões, e nenhuma atualização é necessária.
 
 * Você precisa de uma chave de assinatura de token de autenticação APNs para gerar os tokens que seu servidor usa. Você solicita essa chave da sua conta de desenvolvedor do Apple, conforme explicado na [Documentação do desenvolvedor do Apple](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 

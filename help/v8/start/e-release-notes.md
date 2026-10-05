@@ -6,22 +6,32 @@ role: User
 level: Beginner
 hide: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-TQID: https://experienceleague.adobe.com/vxR3VYl7aRItdg0KDZNPPIK4LVFPHPmLNaW-BaE4Yko
+TQID: 'https://experienceleague.adobe.com/vxR3VYl7aRItdg0KDZNPPIK4LVFPHPmLNaW-BaE4Yko'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: b285c321f3b905150b31621941ea99608d627739
+    internal-label: Implementation
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 306
+source-wordcount: '306'
 ht-degree: 97%
-
 ---
-
 # Notas de versão anteriores {#e-new-release}
 
 Esta página descreve as melhorias e correções incluídas no próximo lançamento do Campaign v8. **As notas de versão antecipadas abaixo estão sujeitas a alterações sem aviso prévio até a data de disponibilidade do lançamento**. Links, telas e a documentação atualizada são publicados nas [notas de versão](release-notes.md) na data do lançamento.
@@ -35,7 +45,7 @@ _3 de setembro de 2024_
 >
 >Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
->Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa migração na [documentação da interface do Campaign Web v8](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html?lang=pt-BR){target="_blank"}.
+>Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa migração na [documentação da interface do Campaign Web v8](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html){target="_blank"}.
 
 ### Novos recursos {#new-8-7-2}
 

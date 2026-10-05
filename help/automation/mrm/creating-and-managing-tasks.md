@@ -5,22 +5,28 @@ description: Criar e gerenciar tarefas
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-TQID: https://experienceleague.adobe.com/LggpejZ5h1fYPh3efYx2f7x3DEhqVlvPndjgNkNUUCs
+TQID: 'https://experienceleague.adobe.com/LggpejZ5h1fYPh3efYx2f7x3DEhqVlvPndjgNkNUUCs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 8d5d4b17-44c6-5e7b-891c-b4277613013d
+    internal-label: Resource Management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Implementation
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3764
-ht-degree: 84%
-
+source-wordcount: '3766'
+ht-degree: 85%
 ---
-
 # Criar e gerenciar tarefas{#creating-and-managing-tasks}
 
 O Adobe Campaign permite criar tarefas e gerenciar seu ciclo de vida completo diretamente no aplicativo. A implementação de programas e campanhas pode ser dividida em tarefas atribuídas aos operadores do Adobe Campaign ou aos provedores de serviços externos. Esse modo de operação permite criar um ambiente de colaboração aberto que inclui todos os participantes do programa e participantes externos.
@@ -323,8 +329,8 @@ A tarefa de criação de recursos de marketing interage com o recurso vinculado 
 
   É possível usar uma série de tarefas vinculadas para definir um ciclo de aprovação completo. Marque a opção **[!UICONTROL Publish the marketing resource]** somente para a última tarefa: todas as tarefas precisarão ser concluídas para que o recurso seja publicado. Além disso, quando você cria uma tarefa de recurso de marketing filho, o recurso será selecionado automaticamente na tarefa filho.
 
-   * **Por meio do recurso**: se enviar o recurso para aprovação ou aprová-lo, essas ações não afetarão a tarefa.
-   * **Via the task**: se a opção **[!UICONTROL Publish the marketing resource]** estiver marcada na tarefa, o recurso será aprovado e publicado automaticamente após a conclusão da tarefa (veja acima). Se a opção não estiver marcada, a tarefa e o recurso não irão interagir: atuando em um não afetará o outro.
+  * **Por meio do recurso**: se enviar o recurso para aprovação ou aprová-lo, essas ações não afetarão a tarefa.
+  * **Via the task**: se a opção **[!UICONTROL Publish the marketing resource]** estiver marcada na tarefa, o recurso será aprovado e publicado automaticamente após a conclusão da tarefa (veja acima). Se a opção não estiver marcada, a tarefa e o recurso não irão interagir: atuando em um não afetará o outro.
 
 #### Configurar uma tarefa de criação de recurso de marketing {#configuring-a-marketing-resource-creation-task}
 
@@ -420,7 +426,7 @@ A dependência entre tarefas é representada por setas no painel de campanha.
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-No caso de tarefas agrupadas, o Adobe Campaign atribui automaticamente a data final da tarefa pai à tarefa filho como data inicial. Por exemplo, se uma tarefa filho de **Criar convite** terminar em 15 de outubro às 3:30PM, a tarefa filho **Enviar email de convite** será iniciada em 15 de outubro às 3:30PM.
+No caso de tarefas agrupadas, o Adobe Campaign atribui automaticamente a data final da tarefa pai à tarefa filho como data inicial. Por exemplo, se uma tarefa **Criar convite** terminar em 15 de outubro às 15:30, a tarefa derivada **Enviar email de convite** começará em 15 de outubro às 15:30.
 
 Além disso, se adiar o fim de uma tarefa pai, algumas de suas tarefas filho poderão ser afetadas: essas são as tarefas filho cujo status é **[!UICONTROL Scheduled]** e cuja data inicial é anterior à nova data final da tarefa pai. A duração da tarefa permanece a mesma. Se a data inicial de uma tarefa filho for posterior à nova data final da tarefa pai, a tarefa filho não será afetada.
 

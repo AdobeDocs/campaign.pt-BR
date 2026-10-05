@@ -5,22 +5,32 @@ feature: Federated Data Access
 role: Admin
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-TQID: https://experienceleague.adobe.com/lM7a0NhOPSZsHW4X60S3-TTlnnuTMb1Ip30uRpBctEQ
+TQID: 'https://experienceleague.adobe.com/lM7a0NhOPSZsHW4X60S3-TTlnnuTMb1Ip30uRpBctEQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: ee3dfd63-9a21-4961-9f24-ea3385284a21
+    internal-label: Federated Data Access
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 734
+source-wordcount: '734'
 ht-degree: 40%
-
 ---
-
 # Federated Data Access (FDA){#gs-fda}
 
 Use o conector FDA (Federated Data Access) para conectar o Campaign a um ou mais **bancos de dados externos** e processar as informações armazenadas neles sem afetar os dados do banco de dados da nuvem do Campaign. Em seguida, é possível acessar dados externos sem alterar a estrutura dos dados do Adobe Campaign.
@@ -44,9 +54,9 @@ Além disso, esteja ciente das seguintes limitações e práticas recomendadas:
 
 * Evite o máximo possível as operações que precisam usar o banco de dados tanto do Adobe Campaign quanto externo. Para fazer isso, é possível:
 
-   * Exportar o banco de dados do Adobe Campaign para o banco de dados externo e executar as operações somente do banco de dados externo antes de importar novamente os resultados para o Adobe Campaign.
+  * Exportar o banco de dados do Adobe Campaign para o banco de dados externo e executar as operações somente do banco de dados externo antes de importar novamente os resultados para o Adobe Campaign.
 
-   * Coletar os dados do banco de dados externo do Adobe Campaign e executar as operações no local.
+  * Coletar os dados do banco de dados externo do Adobe Campaign e executar as operações no local.
 
   Se você quiser realizar a personalização de entregas usando dados do banco de dados externo, colete os dados para usar em um fluxo de trabalho para torná-lo disponível em uma tabela temporária. Em seguida, use os dados da tabela temporária para personalizar sua entrega. Para fazer isso, pré-processe a personalização da mensagem em um fluxo de trabalho dedicado usando a opção **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de entrega. Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao target em uma tabela temporária, incluindo dados de tabelas vinculadas em um banco de dados externo.
 

@@ -3,13 +3,22 @@ title: Solução de problemas de API
 description: Saiba mais sobre problemas comuns relacionados às APIs do Campaign Standard
 role: Developer
 level: Experienced
-source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '353'
 ht-degree: 0%
-
 ---
-
 # Solução de problemas de API {#troubleshooting}
 
 * **Ao acessar o Console do Adobe.io, você recebe o seguinte erro: &quot;O console do Adobe I/O só está disponível para membros selecionados de contas corporativas. Se você acha que deve ter acesso, contate o Administrador do Sistema.&quot;**
@@ -47,7 +56,7 @@ Verifique seu perfil IMS com essa solicitação.
 -H 'X-Api-Key: <API_KEY>'
 ```
 
-Na resposta, o valor ORGANIZATION_ID deve ser o mesmo na primeira solicitação do GET.
+Na resposta, o valor ORGANIZATION_ID deve ser o mesmo na primeira solicitação GET.
 
 ```
 {

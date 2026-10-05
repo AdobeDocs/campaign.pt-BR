@@ -1,35 +1,42 @@
 ---
-title: Introdução a canais personalizados
+title: Primeiros passos com canais personalizados
 description: Saiba como criar e enviar entregas de canal personalizadas com o Adobe Campaign Web
 role: User
 level: Beginner, Intermediate
 exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
-TQID: https://experienceleague.adobe.com/vIbTQOF44tDuRchXTQ5m5cD0VsbTk0oftZbtCgicg2I
+TQID: 'https://experienceleague.adobe.com/vIbTQOF44tDuRchXTQ5m5cD0VsbTk0oftZbtCgicg2I'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 560
-ht-degree: 1%
-
+source-wordcount: '560'
+ht-degree: 3%
 ---
-
-# Introdução a canais personalizados {#gs-custom-channel}
+# Primeiros passos com canais personalizados {#gs-custom-channel}
 
 O Adobe Campaign permite criar canais externos ou de API personalizados integrados a terceiros. Em seguida, você pode orquestrar e executar deliveries com base nesses canais.
 
 A criação e o envio do delivery podem ser executados no Console do cliente e na interface do usuário da Web. No entanto, a configuração do canal personalizado só é executada no Console do cliente.
 
-Para saber como criar e enviar uma entrega com base em um canal personalizado, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=pt-BR){target="_blank"}.
+Para saber como criar e enviar uma entrega com base em um canal personalizado, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html){target="_blank"}.
 
 Estas são as etapas para configurar um novo canal personalizado no Console do cliente. Essas etapas são comuns aos canais externos e de API personalizados:
 

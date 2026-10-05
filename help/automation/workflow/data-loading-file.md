@@ -6,22 +6,31 @@ feature: Workflows, Data Management Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-TQID: https://experienceleague.adobe.com/XM-wH6gqH3EvqBp0qMShsy76VheGg1w6kul8Ui4f-pc
+TQID: 'https://experienceleague.adobe.com/XM-wH6gqH3EvqBp0qMShsy76VheGg1w6kul8Ui4f-pc'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: 97f7b899-98c8-5133-9446-bfaf99a51b9f
+    internal-label: Data Management Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Data management
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1110
+source-wordcount: '1110'
 ht-degree: 96%
-
 ---
-
 # Carregamento de dados (arquivo){#data-loading-file}
 
 
@@ -36,7 +45,7 @@ A seção superior da janela de configuração dessa atividade permite definir o
 
 >[!CAUTION]
 >
->Somente os arquivos de estrutura simples são suportados (por exemplo, CSV, TXT e etc.). Não é recomendável usar o formato XML. Com o console do cliente, você pode carregar arquivos de até 150 MB. Na Interface do usuário da Web, a atividade Load file tem um limite de 50 MB. [Saiba mais](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=pt-BR){target="_blank"}
+>Somente os arquivos de estrutura simples são suportados (por exemplo, CSV, TXT e etc.). Não é recomendável usar o formato XML. Com o console do cliente, você pode carregar arquivos de até 150 MB. Na Interface do usuário da Web, a atividade Load file tem um limite de 50 MB. [Saiba mais](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 
@@ -70,27 +79,27 @@ A formatação de coluna permite definir o processamento de valor de cada coluna
 * **[!UICONTROL Data type]**: especifica o tipo de dados esperado para cada coluna.
 * **[!UICONTROL Allow NULLs]**: especifica como gerenciar valores vazios.
 
-   * **[!UICONTROL Adobe Campaign default]**: gera um erro apenas para os campos numéricos, caso contrário, insere um valor NULL.
-   * **[!UICONTROL Empty value allowed]**: autoriza valores vazios. O valor NULL é então inserido.
-   * **[!UICONTROL Always populated]**: gera um erro se um valor estiver vazio.
+  * **[!UICONTROL Adobe Campaign default]**: gera um erro apenas para os campos numéricos, caso contrário, insere um valor NULL.
+  * **[!UICONTROL Empty value allowed]**: autoriza valores vazios. O valor NULL é então inserido.
+  * **[!UICONTROL Always populated]**: gera um erro se um valor estiver vazio.
 
 * **[!UICONTROL Length]**: especifica o número máximo de caracteres para o tipo de dados da **string**.
 * **[!UICONTROL Format]**: define o formato de data e hora.
 * **[!UICONTROL Data transformation]**: define se um processo de ocorrência de caractere precisa ser aplicado em uma **string**.
 
-   * **[!UICONTROL None]**: a string importada não é modificada.
-   * **[!UICONTROL First letter in upper case]**: a primeira letra de cada palavra da string começa com maiúscula.
-   * **[!UICONTROL Upper case]**: todos os caracteres na string estão em maiúsculas.
-   * **[!UICONTROL Lower case]**: todos os caracteres na string estão em minúsculas.
+  * **[!UICONTROL None]**: a string importada não é modificada.
+  * **[!UICONTROL First letter in upper case]**: a primeira letra de cada palavra da string começa com maiúscula.
+  * **[!UICONTROL Upper case]**: todos os caracteres na string estão em maiúsculas.
+  * **[!UICONTROL Lower case]**: todos os caracteres na string estão em minúsculas.
 
 * **[!UICONTROL White space management]**: especifica se determinados espaços precisam ser ignorados em uma string. O valor **[!UICONTROL Ignore spaces]** permite somente espaços no início e no final de uma string a ser ignorada.
 * **[!UICONTROL Error processings]**: define o comportamento se um erro for encontrado.
 
-   * **[!UICONTROL Ignore the value]**: o valor é ignorado. Um aviso é gerado no log de execução do fluxo de trabalho.
-   * **[!UICONTROL Reject line]**: a linha inteira não é processada.
-   * **[!UICONTROL Use a default value in case of error]**: substitui o valor que causa o erro por um valor padrão, definido no campo **[!UICONTROL Default value]**.
-   * **[!UICONTROL Reject the line when there is no remapping value]**: a linha inteira só será processada se um tiver sido definido para o valor errado (consulte a opção **[!UICONTROL Mapping]** Mapping abaixo).
-   * **[!UICONTROL Use a default value in case the value is not remapped]**: substitui o valor que causa o erro por um valor padrão, definido no campo **[!UICONTROL Default value]**, a menos que um tenha sido definido para o valor incorreto (consulte a opção **[!UICONTROL Mapping]** Mapping abaixo).
+  * **[!UICONTROL Ignore the value]**: o valor é ignorado. Um aviso é gerado no log de execução do fluxo de trabalho.
+  * **[!UICONTROL Reject line]**: a linha inteira não é processada.
+  * **[!UICONTROL Use a default value in case of error]**: substitui o valor que causa o erro por um valor padrão, definido no campo **[!UICONTROL Default value]**.
+  * **[!UICONTROL Reject the line when there is no remapping value]**: a linha inteira só será processada se um tiver sido definido para o valor errado (consulte a opção **[!UICONTROL Mapping]** Mapping abaixo).
+  * **[!UICONTROL Use a default value in case the value is not remapped]**: substitui o valor que causa o erro por um valor padrão, definido no campo **[!UICONTROL Default value]**, a menos que um tenha sido definido para o valor incorreto (consulte a opção **[!UICONTROL Mapping]** Mapping abaixo).
 
 * **[!UICONTROL Default value]**: especifica o valor padrão de acordo com o processamento de erros escolhido.
 * **[!UICONTROL Mapping]**: esse campo está disponível apenas na configuração de detalhe da coluna (acessada por um clique duplo ou através das opções à direita da lista de colunas). Isso transforma determinados valores ao serem importados. Por exemplo, você pode transformar &quot;três&quot; em &quot;3&quot;.
