@@ -19,7 +19,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 829f03234f4899643a7af4c8f21707f4dc7c5389
+source-git-commit: 8e5d8570e198b0e6db350ba82e521bee8a2f6d9e
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 7%
@@ -75,7 +75,7 @@ Observe que, como cliente, você também deve garantir que esteja usando as vers
 
 Conforme compartilhamos no [Protegendo clientes mais rapidamente: como a Adobe está respondendo à descoberta de vulnerabilidades acelerada por IA](https://blog.adobe.com/security/protecting-customers-faster-how-adobe-is-responding-to-ai-accelerated-vulnerability-discovery), as equipes de segurança da Adobe usam ferramentas assistidas por IA para identificar e solucionar vulnerabilidades com mais rapidez. Nós aplicamos essa abordagem em nossos produtos, incluindo o Adobe Campaign.
 
-Esta publicação explica como avaliamos e priorizamos problemas de segurança, como implantamos correções e o que isso significa para você.
+Esta página explica como avaliamos e priorizamos problemas de segurança, como implantamos correções e o que isso significa para você.
 
 ### Como avaliamos e priorizamos os problemas de segurança {#assess-security-issues}
 
@@ -91,8 +91,8 @@ Validamos as atualizações de segurança antes do lançamento e escolhemos uma 
 
 Dependendo do escopo da atualização, usamos uma das duas abordagens de implantação:
 
-- Manutenção da pilha de segurança: atualizações direcionadas que não alteram o número da build nem introduzem alterações desejadas na funcionalidade do produto. Os clientes com configurações padrão normalmente não precisam tomar providências.
-- Atualizações de build orientadas por segurança: atualizações que alteram o número da build e seguem os processos padrão de notificação, nota de versão e implantação da Adobe.
+* **Manutenção da pilha de segurança**: atualizações direcionadas que não alteram o número de compilação nem introduzem alterações pretendidas à funcionalidade do produto. Os clientes com configurações padrão normalmente não precisam tomar providências.
+* **Atualizações de compilação orientadas por segurança**: atualizações que alteram seu número de compilação e seguem os processos padrão de notificação, nota de versão e implantação da Adobe.
 
 Para configurações padrão e prontas para uso, suas integrações e campanhas em execução continuam funcionando como antes.
 
@@ -135,7 +135,7 @@ Novas versões e quais alterações elas trazem — incluindo correções de seg
 
 Para ser informado sobre novos lançamentos de soluções da Experience Cloud e seu conteúdo, inscreva-se na comunicação [Atualizações Prioritárias de Produtos da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html){target="_blank"}.
 
-Você também pode visitar a [Comunidade do Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=pt&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"} para ser informado sobre atualizações de lançamento.
+Você também pode visitar a [Comunidade do Campaign](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"} para ser informado sobre atualizações de lançamento.
 
 ### Por que minha organização precisa de uma atualização? {#upgrades-1}
 
