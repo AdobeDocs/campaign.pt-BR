@@ -6,27 +6,39 @@ feature: Approvals, Campaigns
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-TQID: https://experienceleague.adobe.com/YuwN3F1QHL4OR3KLaq2D2j-xxAGsuw4433TgKvMMzsI
+TQID: 'https://experienceleague.adobe.com/YuwN3F1QHL4OR3KLaq2D2j-xxAGsuw4433TgKvMMzsI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
+  - id: ce296ecd-3d06-45ab-83c3-37214e8ce31c
+    internal-label: Approvals
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 2287
-ht-degree: 56%
-
+source-wordcount: '2294'
+ht-degree: 59%
 ---
-
 # Configurar e gerenciar o processo de aprovação {#approval-marketing-campaigns}
 
 Métodos e pessoas envolvidas na criação e aprovação de campanhas de marketing são específicos para cada organização. O processo de aprovação de campanha envolve a coordenação de várias partes interessadas: profissionais de marketing digital, gerentes de delivery, gerentes de conteúdo e proprietários externos, como parceiros ou fornecedores.
@@ -204,12 +216,12 @@ Essa opção permite que você defina uma pessoa encarregada da edição de cont
 
    * o link **[!UICONTROL Available content]** no Console do Cliente do Adobe Campaign.
    * o link na mensagem de notificação.
-O operador pode adicionar um comentário antes de enviar o conteúdo para a pessoa responsável pela campanha.
-A mensagem de notificação permite que o revisor aprove ou rejeite o conteúdo.
+     O operador pode adicionar um comentário antes de enviar o conteúdo para a pessoa responsável pela campanha.
+     A mensagem de notificação permite que o revisor aprove ou rejeite o conteúdo.
 
 #### Aprovação de conteúdo externo {#external-content-approval}
 
-Essa opção permite definir um operador externo encarregado de aprovar a renderização do delivery, como consistência de comunicação da marca, taxas etc. Quando a opção **[!UICONTROL External content approval]** é selecionada na janela de configurações de aprovação, várias etapas de aprovação são adicionadas entre a aprovação do conteúdo e o delivery da notificação à pessoa responsável pelo conteúdo:
+Esta opção permite definir um operador externo responsável por aprovar a renderização da entrega, como a consistência da comunicação da marca, taxas etc. Quando a opção **[!UICONTROL External content approval]** é selecionada na janela de configurações de aprovação, várias etapas de aprovação são adicionadas entre a aprovação do conteúdo e a entrega da notificação à pessoa responsável pela campanha:
 
 1. O gerente de conteúdo externo recebe um e-mail de notificação informando que o conteúdo foi aprovado e solicitando aprovação externa.
 1. O e-mail de notificação contém links para as provas enviadas, o que permite visualizar a renderização de entrega e um botão para aprovação ou rejeição do conteúdo da entrega.

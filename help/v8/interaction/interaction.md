@@ -5,24 +5,35 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
-TQID: https://experienceleague.adobe.com/VpyoAhpD-da4BUAXLJyUyaJBPMqoQ-PHNcZToe3QBlc
+TQID: 'https://experienceleague.adobe.com/VpyoAhpD-da4BUAXLJyUyaJBPMqoQ-PHNcZToe3QBlc'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Privacy
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1620
+source-wordcount: '1620'
 ht-degree: 48%
-
 ---
-
 # Gerenciar interações em tempo real
 
 O Campaign vem com um módulo **Interaction** que permite responder em tempo real durante uma interação com um determinado contato, propondo a ele uma única ou várias ofertas específicas. Essas ofertas podem ser mensagens de comunicação simples, ofertas especiais de um ou vários produtos ou um serviço.
@@ -93,14 +104,14 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
 
 * **Ambiente**: conjunto que inclui um catálogo de oferta e ganchos (espaços de ofertas). Crie um ambiente por targeting dimension. Há dois tipos de ambientes:
 
-   * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de indivíduos a serem alvos das ofertas e a tabela para armazenar todas as apresentações de oferta também são definidas aqui. O nó **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** existe um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
-   * **Ambiente dinâmico**: ambiente vinculado a um **[!UICONTROL Design environment]**. Ele contém ofertas somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **[!UICONTROL Design environment]**. Eles estão disponíveis para serem exibidos em um site ou inseridos em uma mensagem.
+  * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de indivíduos a serem alvos das ofertas e a tabela para armazenar todas as apresentações de oferta também são definidas aqui. O nó **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** existe um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
+  * **Ambiente dinâmico**: ambiente vinculado a um **[!UICONTROL Design environment]**. Ele contém ofertas somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **[!UICONTROL Design environment]**. Eles estão disponíveis para serem exibidos em um site ou inseridos em uma mensagem.
 
 * **Espaço de ofertas**: pasta que define o local onde a oferta é exposta. Ao definir um espaço, você pode:
-   * selecionar o canal
-   * escolha se ele pode ser usado no modo unitário (por padrão: somente no modo de lote)
-   * criar o conteúdo da oferta usando funções de renderização
-   * especificar as ofertas a serem apresentadas
+  * selecionar o canal
+  * escolha se ele pode ser usado no modo unitário (por padrão: somente no modo de lote)
+  * criar o conteúdo da oferta usando funções de renderização
+  * especificar as ofertas a serem apresentadas
 
   Um espaço é uma interface entre o canal e o mecanismo de oferta.
 
@@ -129,12 +140,12 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
 * **Arbitragem**: selecionar ofertas para exibir em um ambiente (ofertas qualificadas). O princípio de arbitragem classifica as ofertas por prioridade de acordo com os critérios definidos nas categorias, ofertas e ofertas de contexto.
 * **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a uma dimensão de direcionamento. Há dois tipos de contatos:
 
-   * **[!UICONTROL Identified contact]**: um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
-   * **[!UICONTROL Anonymous contact]**: um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
+  * **[!UICONTROL Identified contact]**: um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
+  * **[!UICONTROL Anonymous contact]**: um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
 
-     >[!NOTE]
-     >
-     >Contatos anônimos e não identificados são atribuídos à dimensão de direcionamento do visitante.
+    >[!NOTE]
+    >
+    >Contatos anônimos e não identificados são atribuídos à dimensão de direcionamento do visitante.
 
 * **Interação de saída**: chamada para o mecanismo de oferta de uma lista de contatos (usada para entrega de emails, correspondência direta etc.). As mesmas regras e processos são aplicados a cada contato. Normalmente, esse tipo de interação é processado em modo de lote.
 * **Interação de entrada**: interação seguindo uma chamada recebida gerada pela ação de um contato no canal. Esse tipo de interação geralmente é processado no modo unitário.
@@ -142,9 +153,9 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
 * **Modo Unitário**: um único contato é processado de cada vez. Normalmente, esse modo é aplicado para interações de entrada e mensagens transacionais.
 * **Modo de identificação**: refere-se ao status de um contato:
 
-   * **[!UICONTROL explicit]**: os contatos são identificados por seu logon na interface do canal.
-   * **[!UICONTROL implicit]**: os contatos são identificados por um cookie (permanente ou de sessão). Ele pode ser processado como um contato anônimo ou identificado.
-   * **[!UICONTROL anonymous]**: os contatos não podem ser identificados.
+  * **[!UICONTROL explicit]**: os contatos são identificados por seu logon na interface do canal.
+  * **[!UICONTROL implicit]**: os contatos são identificados por um cookie (permanente ou de sessão). Ele pode ser processado como um contato anônimo ou identificado.
+  * **[!UICONTROL anonymous]**: os contatos não podem ser identificados.
 
 * **Oferta elegível**: a oferta se encontra com as restrições definidas upstream que podem ser oferecidas de forma consistente a um público-alvo.
 * **Regras de apresentação**: regras de tipologia mencionadas no ambiente de oferta, que permitem excluir algumas ofertas levando em conta o histórico de apresentações.

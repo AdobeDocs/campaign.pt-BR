@@ -4,21 +4,31 @@ description: Cálculo de métricas de relatório integradas
 feature: Reporting
 role: Developer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
-TQID: https://experienceleague.adobe.com/YmXVTLb7YprsFybV4JXJQuFdqtS8LNKIbfIZOAabsWI
+TQID: 'https://experienceleague.adobe.com/YmXVTLb7YprsFybV4JXJQuFdqtS8LNKIbfIZOAabsWI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3090
-ht-degree: 93%
-
+source-wordcount: '3106'
+ht-degree: 99%
 ---
-
 # Cálculo de métricas de relatório integradas {#metrics-calculation}
 
 ## Atividades do usuário {#user-activities-1}
@@ -54,7 +64,7 @@ ht-degree: 93%
  </tbody> 
 </table>
 
-Este relatório é baseado na tabela **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Essa tabela de agregação é usada por motivos de desempenho ao exibir relatórios em vez da tabela **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp), e não é calculada em tempo real. A tabela é gerada alguns minutos após os logs de rastreamento serem recuperados. Se os indicadores estiverem atualizados, os resultados serão iguais aos indicadores do relatório **Indicadores de rastreamento.** O indicador @totalclicks expressa o número total de cliques em um período de 5 minutos.
+Este relatório é baseado na tabela **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Essa tabela de agregação é usada por motivos de desempenho ao exibir relatórios, em vez da tabela **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp), e ela não é calculada em tempo real. A tabela é gerada alguns minutos após os logs de rastreamento serem recuperados. Se os indicadores estiverem atualizados, os resultados serão iguais aos indicadores do relatório **Indicadores de rastreamento.** O indicador @totalclicks expressa o número total de cliques em um período de 5 minutos.
 
 ## Não entregáveis e rejeições {#non-deliverables-and-bounces-1}
 
@@ -797,7 +807,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 
 ## Hot clicks {#hot-clicks-1}
 
-Este relatório é baseado nas tabelas Delivery(nms:delivery) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
+Este relatório é baseado nas tabelas Entrega (nms:delivery) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
 
 Este relatório mostra o conteúdo da mensagem (HTML e/ou texto) com a porcentagem de cliques nos links, em cada link. Os links de unsubscription de blocos de personalização e links de mirror pages são considerados no total de cliques, mas não são exibidos no relatório.
 
@@ -897,7 +907,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
 
 ## Detalhamento de aberturas {#breakdown-of-opens-1}
 
-Este relatório é baseado nas tabelas de **Deliveries** (nms:delivery) e **Logs de rastreamento** (nms:trackingLogRcp).
+Este relatório é baseado nas tabelas **Entregas** (nms:delivery) e **Logs de rastreamento** (nms:trackingLogRcp).
 
 <table> 
  <thead> 
@@ -920,7 +930,7 @@ Este relatório é baseado nas tabelas de **Deliveries** (nms:delivery) e **Logs
 
 ## Outros indicadores {#other-indicators}
 
-O indicador **Enviado** (@sent), acessado pelo nó **Entregas (nms:delivery) > Indicadores** corresponde ao número total de SMS enviado ao provedor de serviços. Esse indicador é usado apenas para entregas de SMS e não deve ser usado para outros tipos de entregas (não deve ser confundido com os indicadores **@success** e **@processed**).
+O indicador **Enviado** (@sent), acessado pelo nó **Entregas (nms:delivery) > Indicadores** corresponde ao número total de mensagens SMS enviadas ao provedor de serviço. Esse indicador é usado apenas para entregas de SMS e não deve ser usado para outros tipos de entregas (não deve ser confundido com os indicadores **@success** e **@processed**).
 
 ## Sincronização de indicadores {#indicator-synchronization}
 

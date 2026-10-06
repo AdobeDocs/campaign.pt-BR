@@ -6,25 +6,36 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-TQID: https://experienceleague.adobe.com/KNLqBQfgg8rT8syInLXJWAo5477JlxSXzG4xT6LFjBo
+TQID: 'https://experienceleague.adobe.com/KNLqBQfgg8rT8syInLXJWAo5477JlxSXzG4xT6LFjBo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e8d937ec-9046-41b5-834b-d22a624e0d37
+    internal-label: Campaign overview
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Implementation
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1234
+source-wordcount: '1234'
 ht-degree: 70%
-
 ---
-
 # Conheça a interface {#ui-client-console}
 
 Você pode acessar o Adobe Campaign por meio do console do cliente ou da interface da web. Você também pode usar APIs para gerenciar dados e executar tarefas na plataforma do Campaign.
@@ -133,7 +144,7 @@ Este espaço de trabalho permite acessar a árvore do Explorer para navegar por 
 
 ## Interface do Campaign Web {#ac-web-ui}
 
-Como usuário do Campaign v8, a partir da versão v8.6.1, você tem acesso a um ambiente da Web, disponível por meio da interface de usuário central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços.
+Como usuário do Campaign v8, a partir da versão v8.6.1, você tem acesso a um ambiente da Web, disponível por meio da interface central da Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços.
 
 ![Página inicial da interface do Adobe Campaign Web](assets/ac-web-home.png)
 
@@ -153,11 +164,11 @@ Os idiomas compatíveis dependem da interface.
 
 * Para a interface do console do cliente do Campaign, os idiomas compatíveis são:
 
-   * Inglês (Reino Unido)
-   * Inglês (EUA)
-   * Francês
-   * Alemão
-   * Japonês
+  * Inglês (Reino Unido)
+  * Inglês (EUA)
+  * Francês
+  * Alemão
+  * Japonês
 
 
   >[!CAUTION]

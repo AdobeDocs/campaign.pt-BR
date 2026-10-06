@@ -6,20 +6,27 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 68c5b903-5043-4e74-b3f6-90a7f2fb3b9a
-TQID: https://experienceleague.adobe.com/KvqJgnEmIVPmL4K5bSC2t02SQoZ1xskNzrgTTeESnVA
+TQID: 'https://experienceleague.adobe.com/KvqJgnEmIVPmL4K5bSC2t02SQoZ1xskNzrgTTeESnVA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 237333ba-90fa-554c-bc8d-2047e6173477
+    internal-label: Cross Channel Orchestration
+  - id: 6641bfdc-d19c-56e4-9045-0f6d06e8a43b
+    internal-label: Programs
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 806
+source-wordcount: '806'
 ht-degree: 63%
-
 ---
-
 # Campanhas recorrentes e periódicas {#recurring-and-periodic-campaigns}
 
 Uma **campanha recorrente** é uma campanha baseada em um modelo específico, cujos fluxos de trabalho são configurados para serem executados de acordo com um agendamento associado. O direcionamento é duplicado em cada execução e os vários processos e populações de destino são rastreados.  Depois de configuradas, as campanhas recorrentes criam automaticamente um novo fluxo de trabalho (duplicando o modelo de fluxo de trabalho) e o executam. Por exemplo, se você precisar enviar um lembrete mensal para um segmento de público-alvo, configure uma campanha recorrente para que, no início de cada ano, ela crie 12 fluxos de trabalho, um para cada mês. [Saiba mais](#create-a-recurring-campaign)

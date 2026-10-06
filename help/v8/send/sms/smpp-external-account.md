@@ -5,25 +5,38 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-TQID: https://experienceleague.adobe.com/9iAR7QuskmaBkt8AwYws3nzdL47xCgC9zsIonQBDeIg
+TQID: 'https://experienceleague.adobe.com/9iAR7QuskmaBkt8AwYws3nzdL47xCgC9zsIonQBDeIg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: ffeb9430b382b598af412555b1b0a6ff42bc68d0
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3659
-ht-degree: 27%
-
+source-wordcount: '3638'
+ht-degree: 28%
 ---
-
 # Configurações de conta externa SMPP {#smpp-external-account}
 
 O Adobe Campaign usa o protocolo SMPP para enviar SMS a um provedor de serviço.
@@ -54,9 +67,9 @@ Estes são os parâmetros e suas funções necessárias para configurar a conex�
 O número total de conexões pode ser calculado usando esta fórmula:
   *Total de conexões = Número de processos de SMS* número de threads de envio * número de conexões filho do MTA*
 
-   * O número de processos de SMS normalmente é 1. Em algumas instâncias de desempenho muito alto, vários processos de SMS podem ser iniciados em paralelo.
-   * O número de threads de envio está definido em serverConf (configuração sendingThreads ). O padrão é 1.
-   * Número de conexões filho do MTA é esta configuração na conta externa.
+  * O número de processos de SMS normalmente é 1. Em algumas instâncias de desempenho muito alto, vários processos de SMS podem ser iniciados em paralelo.
+  * O número de threads de envio está definido em serverConf (configuração sendingThreads ). O padrão é 1.
+  * Número de conexões filho do MTA é esta configuração na conta externa.
 
   Com valores padrão, essa configuração define diretamente o número de conexões.
 
@@ -69,8 +82,8 @@ Não há como alterar o equilíbrio entre transmissores e receptores.
 Para o Adobe Campaign v8.7.2 e versões posteriores, essa opção deve estar sempre ativada. Ela tem muitos impactos em como as mensagens são processadas.
 * **Modo de conexão SMPP**:
 Defina a conexão no modo transceptor ou no modo separado de transmissor+receptor.
-   * Transmissor+receptor (ou TX+RX): duas conexões TCP separadas são usadas para transmitir e receber mensagens.
-   * Transceptor (ou TRX): uma única conexão TCP é usada para transmitir e receber mensagens.
+  * Transmissor+receptor (ou TX+RX): duas conexões TCP separadas são usadas para transmitir e receber mensagens.
+  * Transceptor (ou TRX): uma única conexão TCP é usada para transmitir e receber mensagens.
 * **Usar parâmetros diferentes para o receptor**:
 Disponível somente no modo transmissor+receptor.
 Quando a caixa está desmarcada, as mesmas configurações são usadas para transmissor e receptor. Quando a caixa estiver marcada, as configurações padrão serão aplicadas somente ao transmissor, enquanto as configurações do receptor serão aplicadas somente ao receptor.
@@ -279,7 +292,7 @@ Isso indica o formato da ID retornada no campo message_id da PDU SUBMIT_SM_RESP.
 
 * **Não modificar**: a ID é armazenada como está no banco de dados, como texto codificado em ASCII. Não ocorre pré-processamento nem filtragem.
 * **Número decimal**: espera-se que a ID seja um número decimal no formato ASCII. Espaços à esquerda e à direita e zeros à esquerda são removidos quando essa configuração é usada.
-* **Número hexadecimal**: espera-se que a identificação seja um número hexadecimal no formato ASCII, sem 0x à esquerda nem h à direita. A ID é convertida em um número decimal antes de ser armazenada no banco de dados.
+* **Número hexadecimal**: espera-se que a ID seja um número hexadecimal no formato ASCII, sem “0x” à esquerda nem “h” à direita. A ID é convertida em um número decimal antes de ser armazenada no banco de dados.
 * **String hexadecimal**: espera-se que a ID seja um texto codificado em ASCII que seja uma string de bytes codificada como hexadecimal. Por exemplo, na PDU, você encontrará 0x34 0x31 0x34 0x32 0x34 0x33, o que significa ASCII &quot;414243&quot;; em seguida, essa string é decodificada como uma string hexadecimal de bytes, e você obtém &quot;ABC&quot; como resultado: você armazenará a ID &quot;ABC&quot; no banco de dados.
 
 ### Formato de ID no SR

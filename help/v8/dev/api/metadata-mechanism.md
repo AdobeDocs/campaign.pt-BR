@@ -7,25 +7,32 @@ topic-tags: campaign-standard-apis
 role: Developer
 level: Experienced
 exl-id: 58ec0999-b28a-4198-8d57-729b074c6a6d
-TQID: https://experienceleague.adobe.com/yi2PDkImYnF-UqGqklMAlvGAIHl9GE47VsCEGj6--yU
+TQID: 'https://experienceleague.adobe.com/yi2PDkImYnF-UqGqklMAlvGAIHl9GE47VsCEGj6--yU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Metadata
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 228
+source-wordcount: '228'
 ht-degree: 1%
-
 ---
-
 # Mecanismo de metadados {#metadata-mechanism}
 
-Você pode recuperar os metadados dos recursos usando o **resourceType** em uma solicitação GET:
+Você pode recuperar os metadados dos recursos usando **resourceType** em uma solicitação GET:
 
 `GET /profileAndServices/resourceType/<resourceName>`
 
@@ -33,14 +40,14 @@ A resposta retorna os principais metadados do recurso (todos os outros campos s�
 
 * O nó **Content** retorna os campos do recurso. Para cada campo no nó **content**, podemos encontrar os seguintes campos:
 
-   * &quot;apiName&quot;: nome do atributo usado nas APIs.
-   * &quot;type&quot;: esta é a definição de tipo de alto nível (sequência, número, link, coleção, enumeração...).
-   * &quot;dataPolicy&quot;: o valor do campo deve seguir as regras de política fornecidas. Por exemplo, se a regra dataPolicy estiver definida como &quot;email&quot;, o valor deverá ser um email válido. Durante uma PATCH ou POST, a dataPolicy pode verificar o valor ou modificar o valor para transformar (smartCase, por exemplo).
-   * &quot;category&quot;: fornece a categoria do campo no editor de consultas.
-   * &quot;resType&quot;: é o tipo técnico.
+  * &quot;apiName&quot;: nome do atributo usado nas APIs.
+  * &quot;type&quot;: esta é a definição de tipo de alto nível (sequência, número, link, coleção, enumeração...).
+  * &quot;dataPolicy&quot;: o valor do campo deve seguir as regras de política fornecidas. Por exemplo, se a regra dataPolicy estiver definida como &quot;email&quot;, o valor deverá ser um email válido. Durante uma PATCH ou POST, a dataPolicy pode verificar o valor ou modificar o valor para transformar (smartCase, por exemplo).
+  * &quot;category&quot;: fornece a categoria do campo no editor de consultas.
+  * &quot;resType&quot;: é o tipo técnico.
 
-     Se &quot;type&quot; for concluído com o valor &quot;link&quot; ou &quot;collection&quot;, o valor resTarget será o nome do recurso direcionado pelo link.
-Se &quot;type&quot; for concluído com o valor &quot;enumeration&quot;, um campo &quot;values&quot; será adicionado e cada valor de enumeração será detalhado no nó **values**.
+    Se &quot;type&quot; for concluído com o valor &quot;link&quot; ou &quot;collection&quot;, o valor resTarget será o nome do recurso direcionado pelo link.
+    Se &quot;type&quot; for concluído com o valor &quot;enumeration&quot;, um campo &quot;values&quot; será adicionado e cada valor de enumeração será detalhado no nó **values**.
 
 * O nó **Filtros** retorna a URL para recuperar os filtros associados. Para obter mais informações sobre filtros, consulte [esta seção](sorting.md#filtering).
 

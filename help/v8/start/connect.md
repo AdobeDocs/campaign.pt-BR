@@ -5,22 +5,29 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-TQID: https://experienceleague.adobe.com/aQ7qHePaWM8LnbvZmkebVyUUw8Vbjmgo2pj4MKZd1VE
+TQID: 'https://experienceleague.adobe.com/aQ7qHePaWM8LnbvZmkebVyUUw8Vbjmgo2pj4MKZd1VE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 5ea984c6-e1ec-59c0-bf35-0d3c05f585e1
+    internal-label: Client Console
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: ffeb9430b382b598af412555b1b0a6ff42bc68d0
+    internal-label: Reporting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1111
-ht-degree: 94%
-
+source-wordcount: '1111'
+ht-degree: 98%
 ---
-
 # Conectar-se ao Adobe Campaign v8{#gs-ac-connect}
 
 Para começar a trabalhar com o Campaign, você deve instalar e configurar o Console do cliente.
@@ -111,7 +118,7 @@ Se tiver problemas ao entrar no **[!UICONTROL Client Console]** com sua Adobe ID
    * `C:\ProgramData\Neolane\NL_5\nlclient\`
    * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
 
-1. Reinicie o **[!UICONTROL Client Console]** e entre com sua Adobe ID. As pastas de cache serão automaticamente recriadas na próxima inicialização.
+1. Reinicie o **[!UICONTROL Client Console]** e faça logon com sua Adobe ID. As pastas de cache serão automaticamente recriadas na próxima inicialização.
 
 ## Atualizar o Console do cliente{#upgrade-ac-console}
 

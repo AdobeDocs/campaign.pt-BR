@@ -5,28 +5,40 @@ feature: Data Model
 role: Developer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-TQID: https://experienceleague.adobe.com/pUzg-KbbYOXppAjG0nQe9T16Co61ipNXywTjNaV76bU
+TQID: 'https://experienceleague.adobe.com/pUzg-KbbYOXppAjG0nQe9T16Co61ipNXywTjNaV76bU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
+  - id: a1681cd8-6b2e-4955-9113-33b5f7a22b8c
+    internal-label: Data model architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 737
+source-wordcount: '737'
 ht-degree: 5%
-
 ---
-
 # Introdução ao modelo de dados do Campaign {#gs-ac-datamodel}
 
 O Adobe Campaign vem com um modelo de dados predefinido. Esta seção fornece alguns detalhes sobre as tabelas integradas do modelo de dados do Adobe Campaign e suas interações. O Adobe Campaign depende de um banco de dados na nuvem que contém tabelas vinculadas.
@@ -39,9 +51,9 @@ A estrutura básica do modelo de dados do Adobe Campaign pode ser descrita da se
 
 * **Tabelas de logs**: essas tabelas armazenam todos os logs associados à execução das campanhas.
 
-   * Os logs do delivery são todas as mensagens enviadas aos recipients ou dispositivos em todos os canais. A tabela principal de logs de Entrega (**NmsBroadLogRcp**) contém os logs de entrega para todos os destinatários.
-   * A tabela **nmsBroadlog** é a maior tabela do sistema. Ele armazena um registro por mensagem enviada e esses registros são inseridos, atualizados para rastrear o status do delivery e excluídos quando o histórico é removido.
-   * A tabela de logs de Rastreamento principal (**NmsTrackingLogRcp**) armazena os logs de rastreamento para todos os destinatários. Os logs de rastreamento se referem às reações dos recipients, como aberturas e cliques de email. Cada reação corresponde a um log de rastreamento.
+  * Os logs do delivery são todas as mensagens enviadas aos recipients ou dispositivos em todos os canais. A tabela principal de logs de Entrega (**NmsBroadLogRcp**) contém os logs de entrega para todos os destinatários.
+  * A tabela **nmsBroadlog** é a maior tabela do sistema. Ele armazena um registro por mensagem enviada e esses registros são inseridos, atualizados para rastrear o status do delivery e excluídos quando o histórico é removido.
+  * A tabela de logs de Rastreamento principal (**NmsTrackingLogRcp**) armazena os logs de rastreamento para todos os destinatários. Os logs de rastreamento se referem às reações dos recipients, como aberturas e cliques de email. Cada reação corresponde a um log de rastreamento.
 
   Os logs do delivery e os logs de rastreamento são excluídos após um determinado período, que é especificado no Adobe Campaign e pode ser modificado. Portanto, é altamente recomendável exportar os logs regularmente.
 

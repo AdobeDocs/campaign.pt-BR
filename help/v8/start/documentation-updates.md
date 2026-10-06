@@ -5,27 +5,36 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-TQID: https://experienceleague.adobe.com/3FTCgVEDf0XxbqOoqH1n5OxgwkEb4xDNk9MW-WTwIi4
+TQID: 'https://experienceleague.adobe.com/3FTCgVEDf0XxbqOoqH1n5OxgwkEb4xDNk9MW-WTwIi4'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: fc92f46a1df96412cc86b9a8c0946132f79a2da8
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 295
-ht-degree: 93%
-
+source-wordcount: '295'
+ht-degree: 100%
 ---
-
 # Atualizações da documentação {#latest-updates}
 
 Esta página lista todas as atualizações mais recentes na documentação do [!DNL Campaign] v8 (console).
 
 ## Junho de 2026 {#june-2026}
 
-Uma página foi adicionada sobre a orientação da CNIL para pixels de rastreamento de email e os recursos relacionados do Adobe Campaign. [Leia mais](cnil-pixel-tracking.md)
+Adicionada uma página sobre as diretrizes da CNIL para pixels de rastreamento de email e os recursos relacionados do Adobe Campaign. [Leia mais](cnil-pixel-tracking.md)
 
 ## Abril de 2025 {#april-2025}
 

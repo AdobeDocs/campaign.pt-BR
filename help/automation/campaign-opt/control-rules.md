@@ -4,18 +4,26 @@ title: Configurar regras de controle
 description: Saiba como configurar regras de controle
 feature: Typology Rules
 exl-id: 79e442ea-f856-41bf-b065-25cb2ad2c65b
-TQID: https://experienceleague.adobe.com/xluD-4nygREOMWZyFT6OrenJvfvFVWTVf7i6-ZoYfTI
+TQID: 'https://experienceleague.adobe.com/xluD-4nygREOMWZyFT6OrenJvfvFVWTVf7i6-ZoYfTI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
+subfeature_v2:
+  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+    internal-label: Typology rules
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Optimization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 360
+source-wordcount: '360'
 ht-degree: 96%
-
 ---
-
 # Regras de controle{#control-rules}
 
 Regras de controle permitem que você garanta a validade e a qualidade das mensagens antes da entrega: exibição de caracteres, tamanho do SMS, formato de endereço etc.

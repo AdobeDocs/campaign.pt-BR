@@ -6,21 +6,28 @@ feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: f4a329e3-70d2-43cd-a04a-0bbd5e3ca390
-TQID: https://experienceleague.adobe.com/qfSKBHeQUkAYJb-PSeTxYMxGp-WicmITitT9qh8tHBs
+TQID: 'https://experienceleague.adobe.com/qfSKBHeQUkAYJb-PSeTxYMxGp-WicmITitT9qh8tHBs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 500
-ht-degree: 86%
-
+source-wordcount: '500'
+ht-degree: 97%
 ---
-
 # Gerar documentos personalizados em PDF{#generating-personalized-pdf-documents}
 
 ## Sobre documentos em PDF variáveis {#about-variable-pdf-documents}
@@ -49,7 +56,7 @@ O procedimento para gerar tabelas dinâmicas é da seguinte maneira:
 
 >[!IMPORTANT]
 >
->A versão 8.9.3 inclui uma atualização da lista de permissões de URL externa. Verifique se os domínios usados para imagens externas em seus anexos foram adicionados à lista de permissões aprovada da instância para que os recursos continuem a ser carregados sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
+>A versão 8.9.3 inclui uma atualização da lista de permissões de URL externa. Verifique se os domínios usados para imagens externas em seus anexos foram adicionados à lista de permissões aprovada da instância para que os recursos continuem sendo carregados sem interrupção. Como administrador do Campaign, use o Painel de controle para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
 
 A inserção de imagens externas é útil se, por exemplo, você deseja personalizar um documento com uma imagem cujo URL é inserido em um campo do destinatário.
 

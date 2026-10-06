@@ -6,23 +6,31 @@ role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-TQID: https://experienceleague.adobe.com/LHKXRb4lBbTL6DVrnsnTIPE-Pj-f5I5qQcG3O57Wz5I
+TQID: 'https://experienceleague.adobe.com/LHKXRb4lBbTL6DVrnsnTIPE-Pj-f5I5qQcG3O57Wz5I'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 62f279d8b36160ff56f4fdc1f7fba0099bdbc8ad
+    internal-label: Optimization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 832
-ht-degree: 28%
-
+source-wordcount: '832'
+ht-degree: 31%
 ---
-
 # Enviar e monitorar emails  {#send-and-monitor-emails}
 
 Quando o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a análise do delivery. [Saiba mais](delivery-analysis.md)
@@ -53,7 +61,7 @@ Disponível para todos os clientes do Campaign v8, garante escalabilidade, alta 
 
 O Adobe Campaign usa o **MTA aprimorado** (Agente de Transferência de Email), um mecanismo de entrega de email de alto desempenho.
 
-O MTA aprimorado inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançarem e manterem as taxas ideais de delivery da caixa de entrada.
+O MTA aprimorado inclui um gerenciamento mais inteligente de mensagens devolvidas e um recurso automatizado de otimização da capacidade de entrega, que ajuda os remetentes a alcançar e manter taxas ideais de entrega na caixa de entrada.
 
 * O MTA permite um aumento maciço na velocidade geral de taxa de transferência e uma redução significativa em rejeições temporárias.
 * Ele usa a mais recente tecnologia MTA para fornecer a você as velocidades de taxa de transferência ideais para seu delivery de email.

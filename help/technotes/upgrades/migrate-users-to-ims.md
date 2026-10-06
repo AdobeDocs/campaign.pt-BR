@@ -2,13 +2,16 @@
 title: Migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 description: Saiba como migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 3%
-
 ---
-
 # Migrar operadores do Campaign para o Adobe Identity Management System (IMS) {#migrate-users-to-ims}
 
 A partir do Campaign v8.6, o processo de autenticação para o Campaign v8 está sendo aprimorado. Todos os operadores usarão o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} **only** para se conectar ao Campaign. A conexão com usuário/senha (também conhecida como autenticação nativa) não será mais permitida. A Adobe recomenda executar essa migração no Campaign v8.5.2 para migrar sem problemas para o Campaign v8.6.
@@ -29,7 +32,7 @@ Essa alteração é aplicável a partir do Campaign v8.5.2, e é **obrigatória*
 
 Se os operadores em sua organização estiverem se conectando ao console do cliente do Campaign usando seu logon/senha (também conhecido como. autenticação nativa), você será afetado e deverá migrar esse(s) operador(es) para o Adobe IMS conforme detalhado abaixo.
 
-A migração para o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} é uma obrigação de segurança para tornar seus ambientes seguros e padronizados, pois a maioria das outras soluções e aplicativos da Adobe Experience Cloud já está no IMS.
+A migração para o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} é uma obrigação de segurança para tornar seus ambientes seguros e padronizados, pois a maioria das outras soluções e aplicativos da Adobe Experience Cloud já estão no IMS.
 
 >[!IMPORTANT]
 >

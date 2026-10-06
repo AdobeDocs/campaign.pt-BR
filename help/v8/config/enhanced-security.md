@@ -5,21 +5,34 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-TQID: https://experienceleague.adobe.com/33R4OS8KQrMdktwwbwMUHJe5YG9gZbasiDwrcADS4f4
+TQID: 'https://experienceleague.adobe.com/33R4OS8KQrMdktwwbwMUHJe5YG9gZbasiDwrcADS4f4'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
+    internal-label: Configuration guidelines
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Privacy
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 801
+source-wordcount: '801'
 ht-degree: 3%
-
 ---
-
 # Complemento de segurança aprimorada do Campaign {#enhanced-security}
 
 Esta página faz parte das [orientações sobre configuração segura recomendada publicamente disponível](security.md#public-guidance) para o Campaign v8.
@@ -56,7 +69,7 @@ Para habilitar a integração CMK com o Campaign, siga as etapas abaixo:
 
 1. Conecte-se à sua conta do [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}.
 
-1. Gere uma chave com rotação automática ao usar o Serviço de Gerenciamento de Chaves (KMS) da AWS. [Saiba como](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
+1. Gere uma chave com rotação automática ao usar o AWS Key Management Service (KMS). [Saiba como](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
 1. Aplique a política fornecida a você pelo Adobe em sua conta do AWS para conceder acesso aos recursos. [Saiba mais](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
@@ -71,7 +84,7 @@ As seguintes medidas de proteção e limitações se aplicam à integração do 
 
 * A Adobe não fornece uma conta do [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}. Você deve ter sua própria conta da AWS e configurá-la para gerar e compartilhar sua chave com a Adobe.
 
-* Somente [há suporte para chaves KMS (Serviço de Gerenciamento de Chaves) do AWS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"}. Nenhuma chave gerada pelo cliente fora do KMS pode ser usada.&#x200B;
+* Somente as chaves [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS) têm suporte. Nenhuma chave gerada pelo cliente fora do KMS pode ser usada.&#x200B;
 
 * O tempo de inatividade é esperado durante a primeira configuração. &#x200B;A duração do tempo de inatividade depende do tamanho do banco de dados.
 

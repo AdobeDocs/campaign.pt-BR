@@ -3,30 +3,46 @@ title: Notas de versão do Campaign v8 (console) de 2025
 description: Lista de recursos e melhorias disponíveis nas versões 2025 do Campaign v8
 feature: Release Notes
 exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
-TQID: https://experienceleague.adobe.com/OJjLadHvAgwmaelChtIjHv-xYlTV8syMi7IMIrkMvjs
+TQID: 'https://experienceleague.adobe.com/OJjLadHvAgwmaelChtIjHv-xYlTV8syMi7IMIrkMvjs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
+    internal-label: REST API
   - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+    internal-label: Triggers
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Privacy
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3608
+source-wordcount: '3609'
 ht-degree: 33%
-
 ---
-
 # Notas de versão de 2025 {#2025-rn}
 
 Esta página lista novos recursos, melhorias e correções incluídos nas **versões do Campaign v8 de 2025**. Para obter a versão mais recente, consulte [esta página](release-notes.md).
@@ -146,9 +162,9 @@ ACC * Rich Push Notification templates - You can now send rich push notification
 Anteriormente lançado com Disponibilidade Limitada, o seguinte recurso agora está disponível **sob demanda**:
 
 <!--
-* **Dynamic Reporting** - You can now access Dynamic Reporting which provides fully customizable and real-time reports to measure the impact of your marketing activities. It adds access to profile data, enabling demographic analysis by profile dimensions such as gender, city and age in addition to functional email campaign data like opens and clicks. Dynamic reporting is also available for multilingual email deliveries and transactional messages. [Read more](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=pt-BR){target="_blank"}
+* **Dynamic Reporting** - You can now access Dynamic Reporting which provides fully customizable and real-time reports to measure the impact of your marketing activities. It adds access to profile data, enabling demographic analysis by profile dimensions such as gender, city and age in addition to functional email campaign data like opens and clicks. Dynamic reporting is also available for multilingual email deliveries and transactional messages. [Read more](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html){target="_blank"}
 
-ACC **Dynamic Reporting for Transactional messages** - You can now monitor your transactional messages in the Dynamic Reporting user interface. These reports provide the ability to the marketer to view the all the reporting metrics and dimensions of transactional messages, breakdown of deliveries sent through a template in real time. [Read more](https://experienceleague.adobe.com/pt-br/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
+ACC **Dynamic Reporting for Transactional messages** - You can now monitor your transactional messages in the Dynamic Reporting user interface. These reports provide the ability to the marketer to view the all the reporting metrics and dimensions of transactional messages, breakdown of deliveries sent through a template in real time. [Read more](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
 ACC - Dynamic Reporting - As a Campaign Standard migrated user, you can access Dynamic Reporting which provides fully customizable and real-time reports to measure the impact of your marketing activities. It adds access to profile data, enabling demographic analysis by profile dimensions such as gender, city and age in addition to functional email campaign data like opens and clicks. Read more
 * **Dynamic Reporting for Multilingual** - Dynamic reporting is now available for multilingual email deliveries. For more information, refer to the [detailed documentation](../reporting/global-reports.md).
 -->
@@ -163,9 +179,9 @@ ACC - Dynamic Reporting - As a Campaign Standard migrated user, you can access D
 
 <!--
 ACC - Rest APIs - As a Campaign Standard migrated user, you can use Rest APIs to create integrations for Adobe Campaign and build your own ecosystem by interfacing Adobe Campaign with the panel of technologies that you use. Read more
-* **SMS REST API support (LA)** - The Transactional Messaging REST API is now available for the SMS channel. When both email and mobilePhone are present in the payload, you can use the "wishedChannel" field to specify the channel. If not provided, email will be used by default unless wishedChannel explicitly requests SMS. For more information, refer to the [detailed documentation](https://experienceleague.adobe.com/pt-br/docs/experience-cloud/campaign/apis/managing-transactional-messages){target=_blank}.
+* **SMS REST API support (LA)** - The Transactional Messaging REST API is now available for the SMS channel. When both email and mobilePhone are present in the payload, you can use the "wishedChannel" field to specify the channel. If not provided, email will be used by default unless wishedChannel explicitly requests SMS. For more information, refer to the [detailed documentation](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages){target=_blank}.
 ACC - SMS REST API support - The Transactional Messaging REST API is now available for the SMS channel. When both email and mobilePhone are present in the payload, you can use the "wishedChannel" field to specify the channel. If not provided, email will be used by default unless wishedChannel explicitly requests SMS.
-ACC * **Transactional messaging REST APIs** - Event-based Transactional APIs are now available for Emails. [Read more](https://experienceleague.adobe.com/pt-br/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
+ACC * **Transactional messaging REST APIs** - Event-based Transactional APIs are now available for Emails. [Read more](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
 -->
 
 Além dos recursos listados acima, esta versão também vem com um conjunto de funcionalidades disponíveis com a interface do usuário da Web do Campaign:
@@ -270,7 +286,7 @@ Consulte as [notas de versão](https://experienceleague.adobe.com/docs/campaign-
 * Correção de um problema em que a pré-visualização de arquivos de saída de correspondência direta fazia com que os painéis ficassem em branco. O painel agora é exibido corretamente após as visualizações de arquivo. (NEO-75359)
 * Indicadores de rastreamento aprimorados para notificações por push para incluir cliques e aberturas. Indicadores como `@recipientClick`, `@personClick` e `@totalRecipientClick` agora são responsáveis por cliques de notificação móvel. (NEO-75240)
 * Correção de erros em workflows de limpeza para deliveries com status externos de cancelamento pendente. A lógica de recuperação de registros do banco de dados foi corrigida. (NEO-74833)
-* Solução de um problema de discrepância de fuso horário na Rússia (UTC+3:00 Moscou) em que `nlserver` os horários de saída estavam incorretos. A lógica de sincronização de tempo foi atualizada. (NEO-74754)
+* Solução de um problema de discrepância de fuso horário na Rússia (UTC+3:00 Moscou) em que os horários de saída de `nlserver` estavam incorretos. A lógica de sincronização de tempo foi atualizada. (NEO-74754)
 * Correção de erros no fluxo de trabalho `defaultMidSourcingDlvStat` causados por sintaxe SQL incorreta para bancos de dados MSSQL. A lógica de geração de consulta foi ajustada para fins de compatibilidade. (NEO-74156)
 * Foram solucionadas várias falhas no processo da Web. (NEO-73174)
 * Correção de um problema em que as consultas do BigQuery falhavam quando apóstrofos estavam presentes em condições. A lógica de manipulação de consultas foi atualizada para interpretar corretamente caracteres especiais. (NEO-72547)
@@ -318,7 +334,7 @@ _10 de abril de 2025_
 
 >[!AVAILABILITY]
 >
->Esta versão está em **disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
+>Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
 >Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa migração na [documentação da interface do Campaign Web v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
@@ -340,7 +356,7 @@ _14 de fevereiro de 2025_
 
 >[!AVAILABILITY]
 >
->Esta versão está em **disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
+>Esta versão está em **Disponibilidade limitada** (LA). É restrita aos clientes que estão migrando **do Adobe Campaign Standard para o Adobe Campaign v8** e não pode ser implantada em nenhum outro ambiente.
 >
 >Como usuário do Campaign Standard em transição para o Campaign v8, saiba mais sobre essa migração na [documentação da interface do Campaign Web v8](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
@@ -387,8 +403,8 @@ Os seguintes conectores FDA foram adicionados. Consulte esta [página](compatibi
 
 * Agora há um novo conector ODBC de FDA do Amazon Redshift disponível. Ele oferece conectividade aprimorada, manutenção mais fácil e compatibilidade aprimorada. Essa nova versão traz as seguintes melhorias:
 
-   * O novo conector é baseado na interface ODBC que se alinha aos conectores FDA mais recentes. Isso garante suporte a longo prazo.
-   * Ele também introduz um novo mecanismo de carregamento de dados usando buckets s3, melhorando significativamente o desempenho.
+  * O novo conector é baseado na interface ODBC que se alinha aos conectores FDA mais recentes. Isso garante suporte a longo prazo.
+  * Ele também introduz um novo mecanismo de carregamento de dados usando buckets s3, melhorando significativamente o desempenho.
 
   O conector legado ainda pode ser usado. Se quiser experimentar o novo, entre em contato com um(a) representante da Adobe.
 

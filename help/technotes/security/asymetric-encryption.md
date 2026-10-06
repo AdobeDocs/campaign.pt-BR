@@ -4,13 +4,16 @@ title: Nota técnica - Criptografia e descriptografia assimétrica no Adobe Camp
 description: Nota técnica - Criptografia e descriptografia assimétrica no Adobe Campaign
 hide: true
 exl-id: 6ee8b05b-2a46-4adf-a036-82fdd4809d0d
-source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '155'
-ht-degree: 6%
-
+ht-degree: 10%
 ---
-
 # Nota técnica: Criptografia assimétrica e descriptografia no Adobe Campaign {#asymetric-encryption}
 
 Criptografia de chave pública, ou criptografia assimétrica, é o campo dos sistemas criptográficos que usam pares de chaves relacionadas. Cada par de chaves consiste em uma **chave pública** e uma **chave privada** correspondente.

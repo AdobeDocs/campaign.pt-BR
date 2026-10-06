@@ -5,20 +5,29 @@ feature: Transactional Messaging
 role: User
 level: Intermediate
 exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
-TQID: https://experienceleague.adobe.com/ni7XuCsnpZaGAozdYRZF4Dy-PQAGe720g0WTimQPpX0
+TQID: 'https://experienceleague.adobe.com/ni7XuCsnpZaGAozdYRZF4Dy-PQAGe720g0WTimQPpX0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+    internal-label: Transactional messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Intermediate
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 750
-ht-degree: 87%
-
+source-wordcount: '750'
+ht-degree: 96%
 ---
-
 # Entender a descrição do evento {#about-event-desc}
 
 ## Modelo de dados de mensagens transacionais {#about-mc-datamodel}
@@ -29,15 +38,15 @@ As mensagens transacionais dependem do modelo de dados do Adobe Campaign e usam 
 
 Esta seção detalha os métodos SOAP associados aos esquemas do módulo de mensagens transacionais.
 
-Dois métodos SOAP **PushEvent** ou **PushEvents** estão vinculados aos dois dataschemas **nms:rtEvent** e **nms:BatchEvent**. É o sistema de informações que determina se um evento é do tipo &quot;batch&quot; ou &quot;em tempo real&quot;.
+Dois métodos SOAP **PushEvent** ou **PushEvents** estão vinculados aos dois esquemas de dados: **nms:rtEvent** e **nms:BatchEvent**. É o sistema de informações que determina se um evento é do tipo &quot;batch&quot; ou &quot;em tempo real&quot;.
 
 * O **PushEvent** permite inserir um único evento na mensagem,
 * O **PushEvents** permite inserir uma série de eventos na mensagem.
 
 O caminho WSDL para acessar ambos os métodos é:
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** para acessar o esquema do tipo em tempo real.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** para acessar o esquema de tipo lote.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** para acessar o esquema do tipo “em tempo real”.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** para acessar o esquema do tipo “lote”.
 
 Ambos os métodos contêm um elemento **`<urn:sessiontoken>`** para fazer logon no módulo de mensagens transacionais. Recomendamos usar um método de identificação por meio de endereços IP confiáveis. Para recuperar o token de sessão, execute uma chamada SOAP de logon e depois um token GET seguido de um logoff. Use o mesmo token para várias chamadas RT. Os exemplos incluídos nesta seção estão usando o método de token de sessão que é o recomendado.
 

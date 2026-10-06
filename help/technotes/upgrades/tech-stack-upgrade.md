@@ -4,13 +4,16 @@ title: Nota técnica - Atualizações de sistema da Adobe Campaign
 description: Atualização do sistema Adobe Campaign
 hide: true
 exl-id: cc64cce1-2473-4136-aadc-8b13e89ef7f9
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 11%
-
 ---
-
 # Atualizações de ambiente do Adobe Campaign 2023 {#ac-system-upgrade}
 
 A infraestrutura do Campaign depende de sistemas de terceiros que devem ser atualizados regularmente com as versões e correções mais recentes. Essas atualizações são obrigatórias para garantir a continuidade do serviço e proteger os ambientes do Campaign contra riscos de segurança. Além disso, uma atualização do Campaign é necessária para garantir a compatibilidade com alterações no sistema de terceiros.

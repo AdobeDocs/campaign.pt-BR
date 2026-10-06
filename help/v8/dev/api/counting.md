@@ -7,13 +7,22 @@ topic-tags: campaign-standard-apis
 role: Developer
 level: Experienced
 exl-id: d6354249-3b0d-4532-951f-b0fae953f7e1
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 2%
-
 ---
-
 # Contagem
 
 A API REST do Adobe Campaign pode contar o número de registros em uma solicitação. Para fazer isso, use a URL retornada no nó **count**.
@@ -22,7 +31,7 @@ A API REST do Adobe Campaign pode contar o número de registros em uma solicita�
 
 ***Solicitação de exemplo***
 
-Para contar todos os serviços que têm um valor **messageType** igual a &quot;sms&quot;, execute uma solicitação GET com o filtro **byChannel**.
+Para contar todos os serviços que têm um valor de **messageType** igual a &quot;sms&quot;, execute uma solicitação GET com o filtro **byChannel**.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \

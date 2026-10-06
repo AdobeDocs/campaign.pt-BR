@@ -5,23 +5,31 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
-TQID: https://experienceleague.adobe.com/A1EyDmVc2Y7okJFeFT7lsckZm8-IFDD-XFIqpb-Q7v8
+TQID: 'https://experienceleague.adobe.com/A1EyDmVc2Y7okJFeFT7lsckZm8-IFDD-XFIqpb-Q7v8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 693
+source-wordcount: '693'
 ht-degree: 52%
-
 ---
-
 # Análise de entrega {#analyze-delivery}
 
 A análise é a etapa de preparação do delivery. Ele pode ser iniciado assim que o público-alvo for definido e o conteúdo da mensagem estiver pronto e testado. Durante a análise de delivery, a população do target é calculada e o conteúdo do delivery é preparado. Uma vez concluído, a entrega estará pronta para ser enviada.
@@ -94,9 +102,9 @@ Essa guia fornece acesso às seguintes opções:
 
   Os seguintes modos de aprovação estão disponíveis:
 
-   * **[!UICONTROL Manual]**: no final da fase de análise, o usuário deverá confirmar a entrega para começar a enviar. Para fazer isso, clique no botão **[!UICONTROL Start]** para iniciar a entrega.
-   * **[!UICONTROL Semi-automatic]**: o envio começa automaticamente se a fase de análise não gerar mensagens de advertência.
-   * **[!UICONTROL Automatic]**: o envio começa automaticamente no fim da fase de análise, independentemente do resultado.
+  * **[!UICONTROL Manual]**: no final da fase de análise, o usuário deverá confirmar a entrega para começar a enviar. Para fazer isso, clique no botão **[!UICONTROL Start]** para iniciar a entrega.
+  * **[!UICONTROL Semi-automatic]**: o envio começa automaticamente se a fase de análise não gerar mensagens de advertência.
+  * **[!UICONTROL Automatic]**: o envio começa automaticamente no fim da fase de análise, independentemente do resultado.
 
 * **[!UICONTROL Start job in a detached process]**: essa opção permite iniciar a análise de entrega em um processo separado. A função de análise usa o processo do servidor de aplicativos Adobe Campaign (Web nlserver) por padrão. Ao selecionar essa opção, você garante que a análise será concluída mesmo no caso de falha do servidor de aplicativos.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]**: essa opção adiciona os logs de consulta SQL ao diário de entrega durante a fase de análise.

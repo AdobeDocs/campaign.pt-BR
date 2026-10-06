@@ -6,22 +6,33 @@ feature: Workflows, Approvals
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-TQID: https://experienceleague.adobe.com/wVcQzhDcvinh3rooWklkMsf-KQvWepqYcgcgrHlbdXg
+TQID: 'https://experienceleague.adobe.com/wVcQzhDcvinh3rooWklkMsf-KQvWepqYcgcgrHlbdXg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: ce296ecd-3d06-45ab-83c3-37214e8ce31c
+    internal-label: Approvals
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 648
+source-wordcount: '648'
 ht-degree: 92%
-
 ---
-
 # Aprovação local{#local-approval}
 
 Quando integrado em um fluxo de trabalho de segmentação, a atividade **[!UICONTROL Local approval]** permite configurar um processo de aprovação de destinatário antes do envio da entrega.
@@ -60,14 +71,14 @@ Os campos a serem inseridos no caso de uma notificação para aprovação de tar
 
 * **[!UICONTROL Approval management]**
 
-   * Selecione o modelo de entrega e o assunto que será usado para a notificação por email. Um modelo padrão está disponível: **[!UICONTROL Local approval notification]**. Você também pode adicionar uma descrição que aparecerá acima das listas de destinatários nas notificações de aprovação e de feedback.
-   * Especifique o **[!UICONTROL Approval type]** que corresponda ao prazo final de aprovação (data ou prazo final do início da aprovação). Nesta data, o fluxo de trabalho começa novamente e os destinatários que não foram aprovados não serão considerados na segmentação. Depois que as notificações forem enviadas, a atividade será colocada em fila para que os supervisores locais possam aprovar seus contatos.
+  * Selecione o modelo de entrega e o assunto que será usado para a notificação por email. Um modelo padrão está disponível: **[!UICONTROL Local approval notification]**. Você também pode adicionar uma descrição que aparecerá acima das listas de destinatários nas notificações de aprovação e de feedback.
+  * Especifique o **[!UICONTROL Approval type]** que corresponda ao prazo final de aprovação (data ou prazo final do início da aprovação). Nesta data, o fluxo de trabalho começa novamente e os destinatários que não foram aprovados não serão considerados na segmentação. Depois que as notificações forem enviadas, a atividade será colocada em fila para que os supervisores locais possam aprovar seus contatos.
 
-     >[!NOTE]
-     >
-     >Por padrão, quando o processo de aprovação é iniciado, a atividade fica pendente por três dias.
+    >[!NOTE]
+    >
+    >Por padrão, quando o processo de aprovação é iniciado, a atividade fica pendente por três dias.
 
-     Você também pode adicionar um ou mais lembretes para informar aos supervisores locais que o prazo final está se aproximando. Para fazer isso, clique em **[!UICONTROL Add a reminder]**.
+    Você também pode adicionar um ou mais lembretes para informar aos supervisores locais que o prazo final está se aproximando. Para fazer isso, clique em **[!UICONTROL Add a reminder]**.
 
 * **[!UICONTROL Complementary set]**: a opção **[!UICONTROL Generate complement]** permite gerar um segundo conjunto que inclui todos os targets não aprovados.
 
