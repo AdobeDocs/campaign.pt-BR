@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1039'
 ht-degree: 1%
 ---
 # Atualizar perfis do Adobe Experience Platform a partir de páginas de aterrissagem do Adobe Campaign {#ac-aep-lp}
@@ -81,7 +81,7 @@ Com a conexão OAuth estabelecida, a próxima etapa é criar uma conexão do Sou
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=pt-BR){target="_blank"}.
+1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
 
    Na etapa **[!UICONTROL Authentication]**, alterne a opção **[!UICONTROL Enable authentication]** para autenticar usando o token de acesso gerado anteriormente pela integração OAuth.
 
@@ -123,7 +123,7 @@ Navegue pelas guias abaixo para descobrir os dois métodos:
 
 >[!TAB Adicionar opções usando uma atividade de código JavaScript]
 
-Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=pt-BR#JavaScript-code){target="_blank"}.
+Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
 
 Na execução do workflow, as opções são criadas automaticamente no console do Campaign com os valores fornecidos.
 
@@ -369,5 +369,5 @@ Este é um exemplo de uma página de aterrissagem e uma atividade de código Jav
 ### Mais informações
 
 * [Configurar uma atividade de código JavaScript](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Criar uma página de destino](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=pt-BR){target="_blank"}
+* [Criar uma página de destino](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html){target="_blank"}
 * [Gerenciar assinaturas e cancelamentos de assinaturas](../start/subscriptions.md)
