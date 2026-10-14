@@ -1,6 +1,6 @@
 ---
-title: Pixels de rastreamento de email e orientação da CNIL
-description: Noções básicas sobre a orientação atualizada da CNIL sobre pixels de rastreamento de email e os recursos do Adobe Campaign que podem dar suporte aos esforços de conformidade.
+title: Orientação Sobre Pixels De Rastreamento De Email
+description: Entenda as orientações normativas sobre pixels de rastreamento de email e os recursos do Adobe Campaign que podem dar suporte aos esforços de conformidade.
 version: Campaign v8, Campaign Classic v7
 hide: true
 product_v2:
@@ -8,27 +8,25 @@ product_v2:
     internal-label: Campaign
   - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
     internal-label: Campaign v8
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 93335b46b1c706a9409f0816b2ced4ebc612d5fe
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 3%
+source-wordcount: '834'
+ht-degree: 2%
 ---
 
-# Noções básicas sobre a orientação atualizada da CNIL sobre pixels de rastreamento de email
+# Orientação Sobre Pixels De Rastreamento De Email
 
 Esta publicação é apenas para fins informativos. Não é um aconselhamento jurídico e não garante a sua conformidade com a legislação aplicável. Os recursos do produto Adobe Campaign descritos abaixo são componentes básicos que, configurados e operados adequadamente, podem oferecer suporte a uma implementação em conformidade. Cada cliente é responsável por determinar e cumprir suas obrigações conforme a legislação aplicável.
 
 ## Visão geral
 
-Em 14 de abril de 2026, a _Commission nationale de l&#39;informatique et des libertés_ (CNIL), autoridade de proteção de dados da França, publicou uma [recomendação sobre o uso de pixels de rastreamento em emails](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf). As orientações esclarecem quando o consentimento é necessário e destacam a importância de práticas de consentimento adequadas para o rastreamento de pixels de email. Essa política pode afetar as práticas de envio para qualquer entidade que entregue emails a assinantes com sede na França.
+Em 14 de abril de 2026, a _Commission nationale de l&#39;informatique et des libertés_ (CNIL), autoridade de proteção de dados da França, publicou uma [recomendação sobre o uso de pixels de rastreamento em emails](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf). Pouco depois, a autoridade independente italiana para a proteção de dados (&quot;Garante&quot;) publicou a disposição n.º 284 (a &quot;Disposição do Garante&quot;) em 17 de abril de 2026. Ambos os documentos de orientação, embora não sejam juridicamente vinculativos, esclarecem quando o consentimento é necessário e destacam a importância de práticas de consentimento adequadas para o rastreamento de pixels de email. Essa política pode afetar as práticas de envio para qualquer entidade que entregue emails a assinantes ao abrigo da legislação da UE aplicável em matéria de privacidade.
 
-A CNIL forneceu um período de três meses a partir da data da recomendação para que as empresas informassem seus destinatários de email (&quot;usuários&quot;) sobre a presença dos pixels de rastreamento, sua finalidade e o direito dos usuários de recusarem. Durante esse período de transição, espera-se que os clientes notifiquem os usuários sobre o rastreamento de pixels e forneçam uma opção de não participação, se necessário. A CNIL deve iniciar as atividades de fiscalização após 14 de julho de 2026.
+À medida que os reguladores continuam a esclarecer orientações sobre rastreamento de pixels e problemas relacionados, a Adobe continuará a monitorar alterações e informar os clientes sobre os recursos técnicos dos produtos da Adobe que oferecem suporte ao marketing por email, incluindo o Adobe Campaign. A documentação da Adobe sobre pixels de rastreamento de email reflete a orientação regulamentar atual. A Adobe continuará atualizando a documentação conforme necessário para refletir as alterações relevantes que podem afetar o uso dos produtos CXO da Adobe à medida que os requisitos normativos evoluírem. Atrasos na atualização do material não constituem uma falha em nome da Adobe.
 
-À medida que a CNIL e outros reguladores esclarecem as orientações sobre rastreamento de pixels e questões relacionadas, a Adobe continuará a monitorar atualizações e informar os clientes sobre os recursos técnicos dos produtos da Adobe que oferecem suporte ao marketing por email, incluindo o Adobe Campaign.
+Os aplicativos de execução de marketing por email do Adobe, incluindo Adobe Journey Optimizer, Journey Optimizer B2B, Adobe Campaign e Marketo Engage, fornecem controles que podem ajudar os clientes a gerenciar o rastreamento aberto no nível do delivery ou do email. Os clientes são responsáveis por determinar suas próprias obrigações de conformidade de acordo com as orientações aplicáveis e outras leis, mas esses recursos podem apoiar os esforços de conformidade do cliente.
 
-Os aplicativos de execução de marketing por email do Adobe, incluindo Adobe Journey Optimizer, Journey Optimizer B2B, Adobe Campaign e Marketo Engage, fornecem controles que podem ajudar os clientes a gerenciar o rastreamento aberto no nível do delivery ou do email. Os clientes são responsáveis por determinar suas próprias obrigações de conformidade de acordo com as orientações da CNIL e outras leis aplicáveis, mas esses recursos podem apoiar os esforços de conformidade do cliente.
-
-## O que é um pixel de rastreamento de email
+## O que é um pixel de rastreamento de email?
 
 Um pixel de rastreamento de email é uma imagem transparente 1x1 inserida na HTML de um email. Quando o cliente de email do recipient carrega essa imagem, o pixel faz o ping em um servidor que registra dados, como carimbo de data e hora, tipo de dispositivo, cliente de email e, às vezes, um endereço IP para localização aproximada. Esse log é vinculado ao registro de um recipient, permitindo que os profissionais de marketing vejam se um email está aberto.
 
@@ -38,7 +36,7 @@ Os clientes que buscam assistência para implementar as alterações descritas a
 
 ## Funcionalidade do Adobe Campaign relacionada ao rastreamento de email
 
-Os clientes podem usar o rastreamento nativo, o esquema e os mecanismos de personalização da Adobe Campaign para abordar determinados elementos ao configurar a arquitetura para abordar a orientação da CNIL:
+Os clientes podem usar o rastreamento nativo, o esquema e os mecanismos de personalização do Adobe Campaign para lidar com determinados elementos ao configurar a arquitetura para abordar as orientações em torno dos pixels de rastreamento de email:
 
 * **Classificação da entrega.** Estenda `nms:delivery` com um atributo `emailType` (autenticação, somente entregabilidade, transacional, marketing, serviço público, prospecção B2B). A classificação direciona quais pixels são permitidos sem consentimento.
 
