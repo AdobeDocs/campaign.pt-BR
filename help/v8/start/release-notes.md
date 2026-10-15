@@ -26,20 +26,44 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7ae0ea8d334af5e3580b594d5ddc8b52b10fa5b6
 workflow-type: tm+mt
-source-wordcount: '2098'
-ht-degree: 11%
+source-wordcount: '2446'
+ht-degree: 9%
 ---
 # Versões mais recentes {#latest-release}
 
 Esta página lista novos recursos, melhorias e correções das **últimas versões** do Campaign v8 (console). Saiba mais sobre lançamentos, versões e atualizações do Campaign [nesta página](upgrades.md). Outras versões estão listadas na seção Versões anteriores desta documentação.
 
+## Versão 8.9.4 {#release-8-9-4}
+
+_15 de outubro de 2026_
+
+### Aprimoramentos {#improvements-8-9-4}
+
+* Os temas da interface do usuário do console do cliente agora podem ser armazenados e compartilhados entre os usuários. (NEO-96823)
+
+### Correções {#fixes-8-9-4}
+
+* Correção de um problema em que determinadas mensagens de feedback de rejeição podiam interromper as atualizações do status do delivery, deixando os deliveries afetados travados no status &quot;Levado em consideração pelo provedor de serviço&quot;. (NEO-98183)
+* Correção de um problema em que os alertas de entrega para entregas travadas em um status pendente de início longo podiam ser acionados incorretamente devido a um erro de cálculo de limite. (NEO-93434)
+* Correção de um problema em que o envio de deliveries de conteúdo de texto podia causar falha no processo do servidor mid-sourcing. (NEO-95122)
+* Correção de um problema em que a atividade de fluxo de trabalho **Grupo de Leitura** poderia gerar SQL inválido para campos de expressão calculada. (NEO-95233)
+* Correção de um problema em que as IDs de parte de entrega geradas para entregas de mid-sourcing do FFDA podiam colidir. (NEO-95777)
+* Correção de um problema em que determinados caracteres nos URLs de navegação do navegador incorporado podiam causar falha no Console do cliente. (NEO-96267)
+* Correção de um problema em que os deliveries de SMS eram reportados incorretamente no Dynamic Reporting. (NEO-96401)
+* Correção de um problema em que a preparação do delivery podia falhar para destinos de arquivo externo Snowflake ou FFDA que não usam mapeamento de perfil. (NEO-96507)
+* Correção de um problema em que os workflows contendo várias consultas vinculadas a diferentes fontes FDA podiam falhar. (NEO-97249)
+* Correção de um problema em que os workflows de enriquecimento em tempo quase real podiam falhar intermitentemente com erros SQL quando os eventos de processamento eram acionados muito próximos no tempo. (NEO-97557)
+* Correção de um problema em que um mecanismo de bloqueio interno podia entrar em um loop de repetição e causar alto uso do CPU no servidor. (NEO-94845)
+* Correção de um problema em que a preparação do delivery podia falhar com um erro SQL ao usar seed addresses junto com um target mapping personalizado. (NEO-94966)
+* Correção de um problema em que os workflows FDA podiam falhar com um erro de estouro de coluna ao carregar dados no Redshift. (NEO-96125)
+* Correção de um problema em que a conta externa do Analytics podia falhar com um erro &quot;Desfeito&quot; (410). (NEO-99019)
+* Correção de um problema em que algumas entregas podiam permanecer presas no status de personalização pendente mesmo que as mensagens correspondentes fossem enviadas com êxito. (NEO-94471)
+
 ## Versão 8.9.3 {#release-8-9-3}
 
 _11 de agosto de 2026_
-
-<!-- CONFIRM: is a client console upgrade required for 8.9.3? If yes, add the >[!CAUTION] notice used in 8.9.2/8.9.1. If no, add an explicit one-line "no console upgrade required for this release" statement so the absence reads as intentional. -->
 
 ### Melhorias de segurança {#security-8-9-3}
 
@@ -83,7 +107,7 @@ _3 de maio de 2026_
 * Correção de um problema em que as notificações por push silenciosas do Android e do iOS falhavam durante a preparação do delivery quando os campos de título e corpo estavam vazios. (NEO-93739)
 * Correção de um problema que impedia que o campo de idioma fosse capturado para tokens de registro de aplicativo do Android devido a chaves de reconciliação incorretas. (NEO-93100)
 * Correção de um problema em que a preparação do delivery falhava ao aplicar regras de tipologia personalizadas com regras de pressão. (NEO-94457)
-* Correção de um problema em que o console do cliente podia enfrentar falhas de processamento de solicitação HTTP. (NEO-94071)
+* Correção de um problema em que o Console do cliente podia enfrentar falhas de processamento de solicitação HTTP. (NEO-94071)
 * O monitoramento FDA agora está desabilitado por padrão para evitar erros de inserção no log de conexão. (NEO-94841)
 * Correção de um problema em que as chamadas de Interaction SOAP usadas para resgate de oferta podiam falhar com um erro de resolução de namespace. (NEO-94787)
 * Correção de um problema em que campos de sequência com comprimento 1 podiam causar erros SQL em tabelas temporárias de workflow no PostgreSQL 17. (NEO-94487)
@@ -170,8 +194,8 @@ Consulte as [notas de versão](https://experienceleague.adobe.com/docs/campaign-
 * Correção de um erro que ocorria ao concatenar um campo &quot;char&quot; no PostgreSQL 15. (NEO-88028)
 * Correção de um problema em que a ordem das variáveis do template do delivery era alterada ao salvar ou duplicar o template. (NEO-87845)
 * Correção de um problema em que a criação de um novo esquema da Biblioteca de dados causava uma falha na interface da Web. (NEO-87816)
-* Correção de um problema em que com conjuntos complementares na atividade Desduplicação. (NEO-87711)
-* Correção de uma solicitação para o pacote de instalação sem dependência X11. (NEO-87471)
+* Correção de um problema em que os códigos de segmento para conjuntos de complementos não funcionavam corretamente na atividade Desduplicação. (NEO-87711)
+* Adição de uma opção de pacote de instalação que não requer a dependência do X11. (NEO-87471)
 * Correção de um problema em que os códigos de segmento não podiam ser usados em relatórios dinâmicos. (NEO-87276)
 * Correção de um problema em que os workflows travavam na atividade Atualizar dados. (NEO-87252)
 * Correção de um problema em que o BigQuery estava usando um fuso horário incorreto. (NEO-86622)
@@ -183,7 +207,7 @@ Consulte as [notas de versão](https://experienceleague.adobe.com/docs/campaign-
 * Correção de um problema em que os templates técnicos do delivery não eram atualizados após alterações feitas nas opções. (NEO-84149)
 * Correção de um erro no fluxo de trabalho de faturamento pronto para uso. (NEO-83624)
 * Correção de um problema com a exclusão de duplicatas com base apenas na chave primária de registros direcionados. (NEO-82910)
-* Correção de discrepâncias nos relatórios da interface da Web do Campaign, em que as estatísticas de rastreamento exibiam valores diferentes em comparação ao console. (NEO-82339)
+* Correção de discrepâncias nos relatórios da interface da Web do Campaign, em que as estatísticas de rastreamento exibiam valores diferentes em comparação ao Console do cliente. (NEO-82339)
 * Correção de um problema em que a data da última modificação era alterada mesmo se o registro não deveria ser atualizado na atividade Atualizar dados. (NEO-82002)
 * Correção de um problema em que a adição de novos atributos em uma lista causava a falha dos workflows que liam a lista. (NEO-80258)
 * Correção de um problema em que o relatório de Indicadores de rastreamento exibia valores incorretos para aberturas distintas. (NEO-79466)
