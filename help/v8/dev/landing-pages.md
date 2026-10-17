@@ -78,11 +78,11 @@ Você também pode navegar pelas seguintes seções:
 <p>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates">
+<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/lp-templates">
 <img alt="Validação" src="assets/do-not-localize/lp-reporting.jpg">
 </a>
 <div>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates"><strong>Trabalhar com modelos de página de aterrissagem</strong></a>
+<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/lp-templates"><strong>Trabalhar com modelos de página de aterrissagem</strong></a>
 </div>
 <p>
 </td>
