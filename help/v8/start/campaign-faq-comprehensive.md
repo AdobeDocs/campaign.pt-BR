@@ -925,7 +925,7 @@ Um fluxo de trabalho também pode envolver um ou mais operadores a serem notific
 
 **Tópicos relacionados:**
 
-[Introdução aos fluxos de trabalho](../config/workflows.md) | [Crie seu primeiro fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target="_blank"} | [Casos de uso de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Monitorar a execução do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR){target="_blank"}
+[Introdução aos fluxos de trabalho](../config/workflows.md) | [Crie seu primeiro fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target="_blank"} | [Casos de uso de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html?lang=pt-BR){target="_blank"} | [Monitorar a execução do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR){target="_blank"}
 
 +++
 
@@ -956,7 +956,7 @@ Padrões comuns de fluxo de trabalho: importação de dados, segmentação de p�
 
 **Tópicos relacionados:**
 
-[Criar um fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target="_blank"} | [Atividades do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html){target="_blank"} | [Práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR){target="_blank"} | [Casos de uso de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
+[Criar um fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target="_blank"} | [Atividades do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html?lang=pt-BR){target="_blank"} | [Práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR){target="_blank"} | [Casos de uso de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html?lang=pt-BR){target="_blank"}
 
 +++
 
@@ -984,7 +984,7 @@ Use fluxos de trabalho com a atividade **Scheduler** para automatizar campanhas 
 
 **Tópicos relacionados:**
 
-[Atividade do agendador](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=pt-BR){target="_blank"} | [Entregas recorrentes](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/sending-a-birthday-email.html){target="_blank"} | [Automação de campanha](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"}
+[Atividade do agendador](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=pt-BR){target="_blank"} | [Entregas recorrentes](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=pt-BR){target="_blank"} | [Automação de campanha](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"}
 
 +++
 
@@ -1040,7 +1040,7 @@ Os workflows automatizam processos de marketing, incluindo:
 
 **Tópicos relacionados:**
 
-[Biblioteca de casos de uso de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Criar um fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target="_blank"} | [Práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR){target="_blank"}
+[Biblioteca de casos de uso de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html?lang=pt-BR){target="_blank"} | [Criar um fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target="_blank"} | [Práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR){target="_blank"}
 
 +++
 
@@ -1054,7 +1054,7 @@ Configure as chaves de reconciliação para uma correspondência precisa e escol
 
 **Tópicos relacionados:**
 
-[Atualizar atividade de dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=pt-BR){target="_blank"} | [Atividades de gestão de dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
+[Atualizar atividade de dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=pt-BR){target="_blank"} | [Atividades de gestão de dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html?lang=pt-BR){target="_blank"}
 
 +++
 
@@ -1066,7 +1066,7 @@ As atividades de gerenciamento de dados permitem operações sofisticadas: Enriq
 
 **Tópicos relacionados:**
 
-[Atividades de gerenciamento de dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html){target="_blank"} | [Atividade de enriquecimento](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=pt-BR){target="_blank"}
+[Atividades de gerenciamento de dados](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html?lang=pt-BR){target="_blank"} | [Atividade de enriquecimento](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=pt-BR){target="_blank"}
 
 +++
 
@@ -1090,7 +1090,7 @@ Use a atividade **[!UICONTROL Split]** para dividir as populações: Condições
 
 **Tópicos relacionados:**
 
-[Dividir atividade](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=pt-BR){target="_blank"} | [Guia de teste A/B](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
+[Dividir atividade](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=pt-BR){target="_blank"} | [Guia de teste A/B](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html?lang=pt-BR){target="_blank"}
 
 +++
 
@@ -1439,7 +1439,7 @@ O Campaign oferece várias opções de relatórios dependendo das suas necessida
 
 **Tópicos relacionados:**
 
-[Introdução aos relatórios](../reporting/gs-reporting.md) | [Relatórios de interface do usuário da Web do Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Introdução aos relatórios](../reporting/gs-reporting.md) | [Relatórios de interface do usuário da Web do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -1564,7 +1564,7 @@ Sim, o Campaign oferece suporte a vários formatos de exportação para relatór
 
 **Tópicos relacionados:**
 
-[Relatórios personalizados](../reporting/custom-reports.md) | [Relatórios de interface do usuário da Web do Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Relatórios personalizados](../reporting/custom-reports.md) | [Relatórios de interface do usuário da Web do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 

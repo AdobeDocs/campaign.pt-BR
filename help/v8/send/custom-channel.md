@@ -109,7 +109,7 @@ Na interface do usuário da Web do Campaign, configure a definição de tela per
 
    ![](assets/cus-schema2.png){zoomable="yes"}
 
-1. Selecione a guia que corresponde ao canal e defina como os campos serão exibidos na tela de conteúdo do delivery. Para obter mais informações sobre edição de tela, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
+1. Selecione a guia que corresponde ao canal e defina como os campos serão exibidos na tela de conteúdo do delivery. Para obter mais informações sobre edição de tela, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=pt-BR#fields){target="_blank"}.
 
    ![](assets/cus-schema3.png){zoomable="yes"}
 
