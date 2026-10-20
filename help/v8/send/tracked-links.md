@@ -88,8 +88,8 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
 * Colchetes [ ]
 * Chaves { }
 
-Neste exemplo, o URL https://www.adobe.com é seguido por um ponto e vírgula. O ponto e vírgula pode ser interpretado pelos clientes de email do destinatário como parte do URL. Isso pode quebrar o link. Para evitar esse problema, é possível colocar o URL em delimitadores de uma destas maneiras:
+Neste exemplo, o URL https://www.adobe.com/br é seguido por um ponto e vírgula. O ponto e vírgula pode ser interpretado pelos clientes de email do destinatário como parte do URL. Isso pode quebrar o link. Para evitar esse problema, é possível colocar o URL em delimitadores de uma destas maneiras:
 
-* (https://www.adobe.com);
-* [https://www.adobe.com];
-* {https://www.adobe.com};
+* (https://www.adobe.com/br);
+* [https://www.adobe.com/br];
+* {https://www.adobe.com/br};
