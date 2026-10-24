@@ -1,9 +1,8 @@
 ---
 source-git-commit: d62a185eabf9536f7198d60702c02682af05e06d
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 22%
-
+source-wordcount: '300'
+ht-degree: 34%
 ---
 # Contribuição
 
@@ -13,34 +12,48 @@ A seguir, um conjunto de orientações a serem seguidas ao contribuir para esse 
 
 ## Código de conduta
 
-Este projeto adere ao [código de conduta](code-of-conduct.md) da Adobe. Ao participar, é necessário manter este código. Informe qualquer comportamento inaceitável para
+Este projeto adere ao [código de conduta](code-of-conduct.md) da Adobe. Ao participar,
+espera-se que você mantenha esse código. Denuncie comportamento inaceitável para
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Documentação do Guia do colaborador
 
-Consulte a [Guia do colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
+Consulte o [Guia do colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
 
-## Tem Dúvidas?
+## Dúvidas?
 
-Comece registrando um problema. Os autores atuais do commit trabalham para chegar a um consenso sobre a direção do projeto e para gerar soluções dentro dos processos de problemas (quando apropriado).
+Comece registrando um problema. Os executores existentes neste projeto trabalham para alcançar
+consenso sobre a direção do projeto e soluções de problemas nos threads de problemas
+(quando apropriado).
 
-## Contrato de Licença de Colaborador
+## Contrato de licença de colaborador
 
-Todas as contribuições de terceiros para este projeto devem ser acompanhadas por um contrato de licença do contribuidor assinado. Isso dá à Adobe a permissão de redistribuir suas contribuições como parte do projeto. [Assine nosso CLA](http://opensource.adobe.com/cla.html). Você só precisa enviar um Adobe CLA uma vez, portanto, se já tiver enviado um anteriormente, fique tranquilo!
+Todas as contribuições de terceiros a este projeto devem ser acompanhadas por um contribuidor assinado
+contrato de licença. Dessa forma, a Adobe tem permissão para redistribuir suas contribuições
+como parte do projeto. [Assine nosso CLA](http://opensource.adobe.com/cla.html). Você
+é necessário enviar apenas um Adobe CLA por vez. Se já tiver enviado anteriormente,
+você está pronto para ir!
 
 ## Revisões do código
 
-Todos os envios devem vir na forma de solicitações de envio e precisam ser revisados pelos confirmadores do projeto. Leia a [documentação de solicitação de envio do GitHub](https://help.github.com/pt/github/collaborating-with-issues-and-pull-requests/about-pull-requests) para obter mais informações sobre envio de pull requests.
+Todos os envios devem vir na forma de solicitações de pull e precisam ser revisados
+pelos responsáveis pelo projeto. Leia a documentação de solicitação de pull do [GitHub](https://help.github.com/articles/about-pull-requests/)
+para obter mais informações sobre envio de pull requests.
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
 submitting a pull request!
 -->
 
-## Do contribuidor para o autor do commit
+## Do colaborador para o autor do commit
 
-Adoramos contribuições de nossa comunidade! Se você quiser ir além do contribuidor e se tornar autor do commit com acesso total à gravação e direito a dar opiniões, você deve ser convidado para o projeto. Os autores atuais do commit usam um processo de nomeação interna que deve chegar a um consenso lento (silêncio é aprovação) antes de os convites serem emitidos. Se você se sentir qualificado e quiser aprofundar seu envolvimento, fique à vontade para contatar os autores atuais do commit e conversar sobre isso.
+Adoramos as contribuições de nossa comunidade! Se você quiser ir além como colaborador
+e se tornar um executor com acesso total à gravação e voz ativa no projeto, você deve
+para o projeto. Os responsáveis existentes empregam uma indicação interna
+processo que deve alcançar consenso lento (silêncio é aprovação) antes dos convites
+são emitidos. Se você se sentir qualificado e quiser se envolver mais,
+fique à vontade para entrar em contato com os responsáveis existentes e conversar sobre isso.
 
 ## Problemas de segurança
 
-Problemas de segurança não devem ser relatados neste rastreador de problemas. Em vez disso, [envie um problema para nossos especialistas em segurança](https://helpx.adobe.com/br/security/alertus.html)
+Problemas de segurança não devem ser relatados neste rastreador de problemas. Em vez disso, [registre um problema com nossos especialistas em segurança](https://helpx.adobe.com/br/security/alertus.html)
