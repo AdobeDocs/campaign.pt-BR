@@ -49,9 +49,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f0e325102f748f6268a21a5397774a08a6994e51
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3475'
 ht-degree: 55%
 ---
 # Entender as falhas de entrega {#delivery-failures}
@@ -156,6 +156,8 @@ A configuração do período de validade em seus deliveries do Campaign é limit
 Por exemplo, se o período de validade for definido como o valor padrão de 5 dias no Campaign, as mensagens com rejeição temporária entrarão na fila de tentativas do MTA e serão repetidas apenas por até 3,5 dias a partir do momento em que a mensagem chegar ao MTA. Nesse caso, o valor definido no Campaign não será usado.
 
 Quando uma mensagem estiver na fila do MTA por 3,5 dias e não for entregue, o tempo limite expirará, e seu status será atualizado de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** nos logs de entrega.
+
+Uma mensagem pode expirar antes do fim de seu período de validade, quando a próxima tentativa cair após o tempo de expiração. O log de delivery mostra a falha da última tentativa de delivery.
 
 <!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=pt-BR#defining-validity-period){target="_blank"}.-->
 

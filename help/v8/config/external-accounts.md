@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 0ad8b1536e0bc065131ea64d6778dc18a0f27f04
 workflow-type: tm+mt
-source-wordcount: '2133'
-ht-degree: 8%
+source-wordcount: '2184'
+ht-degree: 7%
 ---
 # Configurar as contas externas {#config-external-accounts}
 
@@ -252,6 +252,10 @@ Essas contas externas podem ser usadas para importar ou exportar dados para o Ad
   * **[!UICONTROL Encryption]**: Tipo de criptografia: **[!UICONTROL None]** ou **[!UICONTROL SSL]**.
 
   * **[!UICONTROL Access key]**: Saiba como encontrar seu **[!UICONTROL Access key]** na [documentação do Microsoft](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}.
+
+  >[!NOTE]
+  >
+  >O Azure Blob Storage filtra os arquivos por prefixo de nome, não por padrão. Um asterisco (`*`) à direita em uma máscara de arquivo foi removido, portanto, `TEST_EXPORT_AZURE_*` corresponde a todos os arquivos que iniciam com `TEST_EXPORT_AZURE_`. Os caracteres após o asterisco, como em `TEST_EXPORT_AZURE_*.csv`, não são suportados. [Saiba mais na documentação do Microsoft](https://learn.microsoft.com/en-us/rest/api/storageservices/list-blobs){target="_blank"}.
 
 * **Microsoft Fabric** - A conta externa **Microsoft Fabric** permite importar e exportar dados entre o Microsoft Fabric e o Adobe Campaign usando a atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. Para configurar essa integração, forneça os seguintes detalhes:
 

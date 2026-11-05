@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 2d8aa27d6565e216cc0842ba22678c884479ff43
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 68%
+source-wordcount: '1244'
+ht-degree: 66%
 ---
 # Configurar e enviar a entrega {#configure-delivery}
 
@@ -98,6 +98,8 @@ Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, gara
 >* Certifique-se de que as últimas ondas não excedam o prazo da entrega, que é definido na guia **[!UICONTROL Validity]**. Caso contrário, algumas mensagens podem não ser enviadas. Saiba mais sobre o período de validade de uma entrega em [esta seção](delivery-failures.md#valid-period).
 >
 >* Você também deve definir tempo suficiente para tentativas ao configurar as últimas ondas. Saiba mais sobre tentativas em [esta seção](delivery-failures.md#retries).
+>
+>* As ondas são programadas a partir da data de contato da entrega. Se o delivery começar após o tempo planejado de uma ou mais ondas, essas ondas vencidas serão todas enviadas juntas, em vez de serem espaçadas.
 
 ### Monitorar ondas {#monitor-waves}
 

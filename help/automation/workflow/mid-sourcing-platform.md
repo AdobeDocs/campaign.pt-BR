@@ -18,10 +18,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8a7bf8408d15e0bd9e1c3e72f7846bf9a79c6885
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 100%
+source-wordcount: '112'
+ht-degree: 41%
 ---
 
 # Plataforma Mid-sourcing{#mid-sourcing-platform}
@@ -45,3 +45,6 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo da **plata
  </tbody> 
 </table>
 
+>[!NOTE]
+>
+>O período de retenção de log no servidor de mid-sourcing deve ser maior que o período de validade de entrega mais o valor **indicatorsDuration**. Caso contrário, os indicadores de delivery diminuirão quando os logs antigos forem removidos e os valores mais baixos serão sincronizados com a instância de marketing. Por exemplo, com um período de validade de 5 dias e uma **indicatorsDuration** de 30 dias, defina o período de retenção para pelo menos 36 dias.
