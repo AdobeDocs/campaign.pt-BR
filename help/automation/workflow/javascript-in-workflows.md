@@ -27,10 +27,10 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 3ee068c0bb8fd8516218711ed2e0efa1cb12c643
 workflow-type: tm+mt
-source-wordcount: '1777'
-ht-degree: 100%
+source-wordcount: '1779'
+ht-degree: 98%
 ---
 # Exemplos de código JavaScript em fluxos de trabalho{#javascript-in-workflows}
 
@@ -71,7 +71,7 @@ Para gravar no banco de dados, é possível usar o método estático `Write` no 
    1. Chame o método `Write` no esquema `xtk:session`.
 
       >[!IMPORTANT]
-      > Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de **Ingestão** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
+      > Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de **Ingestão** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}.
 
    1. Transmita o código XML como argumento para a solicitação de gravação.
 
@@ -581,7 +581,7 @@ for each (var w in res.recipient)
 * A operação `delete`
 
 >[!IMPORTANT]
-> Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de **Ingestão** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
+> Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de **Ingestão** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}.
 
 #### Exemplo 1: inserir ou atualizar um registro
 
