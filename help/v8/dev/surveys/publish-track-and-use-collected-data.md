@@ -103,7 +103,7 @@ As respostas de uma pesquisa podem ser exportadas em um arquivo externo para ser
 
    Para exportar dados do relatório, clique no botão **[!UICONTROL Export]** e escolha o formato de exportação.
 
-   Para obter mais informações sobre exportação de dados de relatórios, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
+   Para obter mais informações sobre exportação de dados de relatórios, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
 
 1. Exportação de respostas
 

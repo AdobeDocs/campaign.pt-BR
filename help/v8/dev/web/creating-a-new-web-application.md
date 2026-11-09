@@ -65,7 +65,7 @@ Esse modelo determina o tipo de aplicação web. É possível criar:
 
 1. Pesquisas
 
-   O Adobe Campaign permite que você, através da opção **Survey Manager**, projete e gerencie pesquisas online e processe seus resultados: criação dinâmica de campos, gestão de pontuação, exportação de respostas e relatórios dedicados. Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentação do Campaign v8).
+   O Adobe Campaign permite que você, através da opção **Survey Manager**, projete e gerencie pesquisas online e processe seus resultados: criação dinâmica de campos, gestão de pontuação, exportação de respostas e relatórios dedicados. Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentação do Campaign v8).
 
    >[!CAUTION]
    >
@@ -73,7 +73,7 @@ Esse modelo determina o tipo de aplicação web. É possível criar:
 
 1. Aplicativos do Facebook
 
-   Graças à opção **Social Marketing**, o Adobe Campaign permite publicar conteúdo personalizado em uma aplicação do Facebook. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
+   Graças à opção **Social Marketing**, o Adobe Campaign permite publicar conteúdo personalizado em uma aplicação do Facebook. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
 
    >[!CAUTION]
    >
