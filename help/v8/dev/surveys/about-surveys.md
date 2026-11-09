@@ -53,13 +53,13 @@ Saiba como criar sua primeira pesquisa [nesta página](getting-started-with-surv
 
 >[!NOTE]
 >
->* As etapas para criar um formulário Web padrão estão disponíveis, em detalhes, [neste documento](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>* As etapas para criar um formulário Web padrão estão disponíveis, em detalhes, [neste documento](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 >
->* O gerenciamento de aplicativos Web é detalhado [neste documento](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-applications/about-web-applications){target="_blank"}. Consulte este capítulo para obter mais informações.
+>* O gerenciamento de aplicativos Web é detalhado [neste documento](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-applications/about-web-applications){target="_blank"}. Consulte este capítulo para obter mais informações.
 
 ## Escopo do recurso {#campaign-surveys-scope}
 
-No Adobe Campaign, use as [aplicativos Web](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} para:
+No Adobe Campaign, use as [aplicativos Web](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} para:
 
 * Criar formulários de várias páginas,
 * Gerenciar formulários multilíngues com uma ferramenta de tradução integrada,
@@ -90,7 +90,7 @@ Siga as etapas abaixo para criar e entregar uma pesquisa e processar seus result
 1. Publicar e, em seguida, enviar a pesquisa aos destinatários (por exemplo, incluir link em uma entrega ou em um site).
 1. Monitore as respostas e visualize os relatórios.
 
-Para obter mais informações sobre configuração e sequenciamento dessas etapas, consulte [este documento](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}. Neste capítulo, são detalhadas somente as configurações específicas para pesquisas.
+Para obter mais informações sobre configuração e sequenciamento dessas etapas, consulte [este documento](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}. Neste capítulo, são detalhadas somente as configurações específicas para pesquisas.
 
 >[!CAUTION]
 >
@@ -107,4 +107,4 @@ As configurações são armazenadas nas seguintes pastas:
 
 >[!NOTE]
 >
->Os detalhes das configurações estão disponíveis [neste documento](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>Os detalhes das configurações estão disponíveis [neste documento](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.

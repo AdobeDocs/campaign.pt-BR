@@ -125,7 +125,7 @@ No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 c
 
   >[!NOTE]
   >
-  >Para cada campo ou pergunta, você pode adaptar o layout da página para atender às suas necessidades, graças às opções na guia **[!UICONTROL Advanced]**. O layout das telas de pesquisa é detalhado [nesta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+  >Para cada campo ou pergunta, você pode adaptar o layout da página para atender às suas necessidades, graças às opções na guia **[!UICONTROL Advanced]**. O layout das telas de pesquisa é detalhado [nesta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 
   Na tela de detalhes, clique na guia **[!UICONTROL Preview]** para exibir a renderização da pesquisa recém-criada.
 

@@ -42,7 +42,7 @@ As páginas do formulário são criadas usando um editor especial que permite de
 
 >[!NOTE]
 >
->Para obter mais informações sobre como definir conteúdo e criar layouts de tela para um formulário Web, consulte [este documento](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>Para obter mais informações sobre como definir conteúdo e criar layouts de tela para um formulário Web, consulte [este documento](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 
 ## Adicionar campos {#adding-fields}
 
@@ -71,7 +71,7 @@ A natureza do campo a ser adicionado (lista suspensa, campo de texto, caixas de 
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-Os vários tipos de campos disponíveis são detalhados [nesta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+Os vários tipos de campos disponíveis são detalhados [nesta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 
 ## Elementos específicos da pesquisa {#survey-specific-elements}
 
@@ -106,7 +106,7 @@ Além disso, o local de armazenamento para esse campo de entrada deve ser de **[
 
 ### Adicionar perguntas {#adding-questions}
 
-Há dois tipos de containers: padrão e pergunta. Os containers padrão são usados para configurar o layout da página e a exibição condicional em uma página. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+Há dois tipos de containers: padrão e pergunta. Os containers padrão são usados para configurar o layout da página e a exibição condicional em uma página. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 
 Use um container **Pergunta** para adicionar uma pergunta à página e inserir as respostas possíveis abaixo na hierarquia. As respostas do usuário às perguntas colocadas nesse tipo de container podem ser analisadas em relatórios.
 
@@ -120,7 +120,7 @@ O rótulo da pergunta é inserido no campo de rótulo. Nesse caso, o estilo da f
 
 >[!NOTE]
 >
->Consulte [este documento](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} para obter informações sobre como usar o editor de HTML.
+>Consulte [este documento](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} para obter informações sobre como usar o editor de HTML.
 
 Por exemplo:
 

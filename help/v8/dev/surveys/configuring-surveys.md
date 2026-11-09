@@ -36,7 +36,7 @@ ht-degree: 83%
 
 As pesquisas online são totalmente configuráveis e personalizáveis para atender aos seus requisitos. Os parâmetros devem ser inseridos na janela de propriedades.
 
-Os parâmetros disponíveis são detalhados [neste documento](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"}.
+Os parâmetros disponíveis são detalhados [neste documento](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"}.
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
