@@ -23,7 +23,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 100%
@@ -38,7 +38,7 @@ Uma intersecção permite extrair somente a população que é comum a todos os 
 
 ![](assets/s_user_segmentation_inter.png)
 
-Para obter mais informações sobre como configurar e usar a atividade de intersecção, consulte [Extraindo dados conjuntos (Intersecção)](targeting-workflows.md#extracting-joint-data--intersection-).
+Para obter mais informações sobre como configurar e usar a atividade de intersecção, consulte [Extraindo dados conjuntos (Intersecção)](targeting-workflows.md#extract-joint-data--intersection-).
 
 Marque a opção **[!UICONTROL Generate complement]** se desejar processar a população restante. O complemento conterá a união dos resultados de todas as atividades de entrada menos a intersecção. Uma transição de saída adicional será adicionada à atividade, da seguinte maneira:
 

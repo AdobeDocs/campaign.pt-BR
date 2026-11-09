@@ -5,10 +5,10 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: b5e9265db5409f3f0fada35c43cb08fafa1ec4e0
+source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 86%
+source-wordcount: '921'
+ht-degree: 87%
 ---
 
 # Documentação do Adobe Campaign v8 (console) {#campaign-v8}
@@ -37,17 +37,8 @@ ht-degree: 86%
   + [Do Campaign Classic v7 para o v8](start/v7-to-v8.md)
   + [Do Campaign Standard ao v8](start/acs-to-v8.md)
   + [Perguntas frequentes](start/campaign-faq-comprehensive.md)
-  + {hide-from-toc}[Perguntas frequentes](start/campaign-faq.md)
   + {hide-from-toc}[Pixels de rastreamento de email e Orientação da CNIL](start/cnil-pixel-tracking.md)
-+ Administração e permissões {#permissions}
-  + [Introdução a permissões](start/gs-permissions.md)
-  + [Gerenciar permissões do usuário](start/manage-permissions.md)
-  + [Adicionar permissões em pastas](start/folder-permissions.md)
-  + [Painel de controle](config/self-service.md)
-+ Gerenciamento de campanhas {#campaigns}
-  + [Introdução às campanhas](start/campaigns.md)
-  + [Documentação do Campaign Orchestration >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR)
-+ Enviar mensagens {#send}
++ Mensagens {#send}
   + [Introdução a mensagens](start/gs-message.md)
   + [Criar a primeira entrega](start/create-message.md)
   + [Trabalho com modelos de entrega](send/create-templates.md)
@@ -123,7 +114,7 @@ ht-degree: 86%
       + [Coletar e processar eventos](send/event-processing.md)
       + [Entender a descrição do evento](send/event-description.md)
       + [Enviar e monitorar mensagens](send/delivery-execution.md)
-+ Perfis e públicos-alvo {#audience}
++ Perfis e públicos {#audience}
   + [Introdução a perfis e públicos-alvo](audiences/gs-audiences.md)
   + [Trabalhar com públicos-alvo](start/audiences.md)
   + [Acessar perfis](audiences/view-profiles.md)
@@ -139,17 +130,25 @@ ht-degree: 86%
     + {hide-from-toc}[Compartilhar públicos-alvo com soluções da Adobe](start/shared-audiences.md)
   + {hide-from-toc}[Práticas recomendadas](audiences/audiences-best-practices.md)
   + [Gerenciar assinaturas](start/subscriptions.md)
-+ Landing Pages e Forms {#content}
++ Landing pages e formulários {#content}
   + [Criar páginas de destino](dev/landing-pages.md)
   + [Criar aplicativos e formulários web](dev/webapps.md)
+  + Pesquisas {#surveys}
+    + [Introdução às pesquisas](dev/surveys/about-surveys.md)
+    + [Etapas principais para criar uma pesquisa](dev/surveys/getting-started-with-surveys.md)
+    + [Criar uma pesquisa](dev/surveys/building-a-survey.md)
+    + [Gerenciar respostas](dev/surveys/managing-answers.md)
+    + [Publicar, rastrear e usar dados coletados](dev/surveys/publish-track-and-use-collected-data.md)
+    + [Configurar pesquisas](dev/surveys/configuring-surveys.md)
+    + [Caso de uso: criar um formulário de indicação](dev/surveys/use-case-creating-a-refer-a-friend-form.md)
+    + [Caso de uso: exibir relatório sobre as respostas a uma pesquisa online](dev/surveys/use-case-displaying-report-on-answers-to-an-online-survey.md)
++ Campanhas {#campaigns}
+  + [Introdução às campanhas](start/campaigns.md)
+  + [Documentação do Campaign Orchestration >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR)
 + Fluxos de trabalho {#workflows}
   + [Introdução aos fluxos de trabalho](config/workflows.md)
   + [Documentação do fluxo de trabalho >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
-+ Privacidade e segurança {#privacy}
-  + [Gerenciar solicitações de privacidade](start/privacy.md)
-  + [Diretrizes de segurança](config/security.md)
-  + [Complemento de segurança aprimorado](config/enhanced-security.md)
-+ Gerenciamento de ofertas - Interação {#offers}
++ Ofertas e interação {#offers}
   + [Introdução à interação em tempo real](interaction/interaction.md)
   + [Ambientes e arquitetura](interaction/interaction-architecture.md)
   + [Práticas recomendadas](interaction/interaction-best-practices.md)
@@ -167,7 +166,14 @@ ht-degree: 86%
     + [Gerenciar interações anônimas](interaction/anonymous-interactions.md)
   + [Relatórios e histórico](interaction/interaction-tracking.md)
   + [Casos de uso](interaction/interaction-use-cases.md)
-+ Rastreamento e análise {#analytics}
+  + [Configurações avançadas](interaction/interaction-advanced-settings.md)
++ Consulta e dados {#data}
+  + Consultar o banco de dados {#query}
+    + [Trabalhar com o editor de consultas](start/query-editor.md)
+    + [Criar consultas](start/design-queries.md)
+    + [Definir condições de filtro](start/filter-conditions.md)
+  + [Importar dados](start/import.md)
++ Relatórios e rastreamento {#analytics}
   + Rastreamento de mensagens {#tracking}
     + [Introdução ao rastreamento](send/tracking.md)
     + [Configurar links rastreados](send/tracked-links.md)
@@ -190,13 +196,6 @@ ht-degree: 86%
       + [Relatórios de entrega](reporting/delivery-reports.md)
       + [Cálculo de métricas integradas](reporting/metrics-calculation.md)
     + [Relatórios personalizados](reporting/custom-reports.md)
-+ Gerenciamento de dados {#data}
-  + Consultar o banco de dados {#query}
-    + [Trabalhar com o editor de consultas](start/query-editor.md)
-    + [Criar consultas](start/design-queries.md)
-    + [Definir condições de filtro](start/filter-conditions.md)
-  + [Importar dados](start/import.md)
-  + [Documentação do fluxo de trabalho >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR)
 + Integrações {#connect}
   + [Conectar o Campaign a outras soluções](connect/integration.md)
   + Campaign + Experience Platform {#ac-aep}
@@ -215,6 +214,15 @@ ht-degree: 86%
     + [Trabalhar com o Campaign e o SFDC](connect/ac-sfdc.md)
     + [Trabalhar com o Campaign e o Microsoft Dynamics](connect/ac-ms-dyn.md)
     + [Sincronizar dados](connect/crm-data-sync.md)
++ Administração e permissões {#permissions}
+  + [Introdução a permissões](start/gs-permissions.md)
+  + [Gerenciar permissões do usuário](start/manage-permissions.md)
+  + [Adicionar permissões em pastas](start/folder-permissions.md)
+  + [Painel de controle](config/self-service.md)
++ Privacidade e segurança {#privacy}
+  + [Gerenciar solicitações de privacidade](start/privacy.md)
+  + [Diretrizes de segurança](config/security.md)
+  + [Complemento de segurança aprimorado](config/enhanced-security.md)
 + Arquitetura {#architecture}
   + [Princípios globais](architecture/general-architecture.md)
   + [Modelos de arquitetura](architecture/architecture.md)

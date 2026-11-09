@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1599'
 ht-degree: 58%
 ---
 # Trabalhar com o Campaign e o Adobe Analytics {#ac-aa}
@@ -49,7 +49,7 @@ Essa integração permite que o Adobe Campaign e o Adobe Analytics interajam por
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support) para conectar o Campaign aos serviços e soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
+>Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq-comprehensive.md#support) para conectar o Campaign aos serviços e soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
 
 Usando o Adobe Analytics Connector, o Adobe Campaign tem uma forma de medir o público-alvo da Internet (Web Analytics). As ferramentas do Web Analytics permitem que o Adobe Campaign encaminhe indicadores e atributos de campanha para o Analytics.
 
@@ -85,7 +85,7 @@ Para criar seu **[!UICONTROL Report suite]** em [!DNL Adobe Analytics], siga as 
 
 1. Na página **[!UICONTROL Report suite manager]**, clique em **[!UICONTROL Create new]** e depois em **[!UICONTROL Report suite]**.
 
-   Para obter o procedimento detalhado sobre a criação de **[!UICONTROL Report suite]**, consulte a [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites){target="_blank"}.
+   Para obter o procedimento detalhado sobre a criação de **[!UICONTROL Report suite]**, consulte a [Documentação do Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 

@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 27%
@@ -54,7 +54,7 @@ Um programa é um conjunto de atividades de marketing definidas para um período
 Uma campanha centraliza todos os elementos relacionados a uma campanha de marketing: entregas, regras de direcionamento, custos, arquivos de exportação, documentos relacionados etc. Cada campanha é anexada a um programa. Saiba como criar uma campanha [nesta seção](marketing-campaign-create.md#create-a-campaign).
 
 1. **Selecionar a audiência**
-Os públicos podem ser importados de uma lista ou criados em um fluxo de trabalho de campanha usando queries. Saiba como definir o público-alvo de uma campanha [nesta seção](marketing-campaign-target.md#select-the-target-population).
+Os públicos podem ser importados de uma lista ou criados em um fluxo de trabalho de campanha usando queries. Saiba como definir o público-alvo de uma campanha [nesta seção](marketing-campaign-target.md).
 
 1. **Criar entregas**
 Orquestrar suas entregas entre canais em suas campanhas. Simplifique suas comunicações com o Adobe Campaign por meio de emails personalizados, SMS, notificações por push e mensagens no aplicativo. Você também pode adicionar deliveries de correspondência direta. Saiba como criar, validar e monitorar entregas em suas campanhas [nesta seção](marketing-campaign-deliveries.md).
@@ -68,7 +68,7 @@ Acompanhe suas campanhas no painel, verifique os status do delivery e a execuç�
 1. **Rastreie orçamentos, estoques e custos associados**.
 Use o Adobe Campaign para controlar a alocação de orçamento, gerenciar seus fornecedores, estoques e custos. [Saiba mais](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
 
-Quando essas etapas forem concluídas, você poderá [iniciar os deliveries](marketing-campaign-deliveries.md#start-a-delivery), verificar os dados, processos e informações relacionados aos deliveries e, se necessário, [gerenciar os documentos associados](marketing-campaign-deliveries.md#manage-associated-documents). Você também pode [rastrear e monitorar a execução](marketing-campaign-monitoring.md) de suas campanhas e entregas.
+Quando essas etapas forem concluídas, você poderá [iniciar os deliveries](marketing-campaign-deliveries.md#start-a-delivery), verificar os dados, processos e informações relacionados aos deliveries e, se necessário, [gerenciar os documentos associados](marketing-campaign-deliveries.md). Você também pode [rastrear e monitorar a execução](marketing-campaign-monitoring.md) de suas campanhas e entregas.
 
 
 ## Principais conceitos em vídeo {#key-concepts-video}

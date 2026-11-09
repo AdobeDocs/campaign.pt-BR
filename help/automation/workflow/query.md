@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 93%
@@ -105,10 +105,10 @@ Para adicionar dados do banco de dados do Adobe Campaign:
 
    Você pode adicionar:
 
-   * Um campo calculado com base nos dados obtidos da população de destino ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Selecionar dados](targeting-workflows.md#selecting-data).
+   * Um campo calculado com base nos dados obtidos da população de destino ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Selecionar dados](targeting-workflows.md).
    * Um novo campo, criado por meio do botão **[!UICONTROL Add]** à direita da lista de colunas de output.
 
-     Também é possível adicionar uma coleção de informações, por exemplo, uma lista de contratos, as últimas 5 entregas etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Editar dados adicionais](targeting-workflows.md#editing-additional-data).
+     Também é possível adicionar uma coleção de informações, por exemplo, uma lista de contratos, as últimas 5 entregas etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Editar dados adicionais](targeting-workflows.md#edit-additional-data).
 
 Para adicionar uma coleção de informações vinculadas a uma população direcionada:
 
@@ -222,7 +222,7 @@ O equivalente da dimensão do filtro no SQL é a associação interna:
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Para saber mais sobre as dimensões do filtro, consulte [esta seção](build-a-workflow.md#targeting-and-filtering-dimensions).
+Para saber mais sobre as dimensões do filtro, consulte [esta seção](build-a-workflow.md).
 
 ### Arquitetura {#architecture}
 

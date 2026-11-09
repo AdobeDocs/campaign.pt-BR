@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 4%
@@ -224,7 +224,7 @@ Como resultado, a tabela de preparo é atualizada conforme esperado.
 
 O gerenciamento de assinaturas do Campaign está descrito em [esta página](../start/subscriptions.md).
 
-A inserção de dados de assinatura e cancelamento de assinatura depende do [Mecanismo de preparo](staging.md) no banco de dados local do Campaign. As informações do assinante são armazenadas temporariamente em tabelas intermediárias no banco de dados local, e o workflow de sincronização envia esses dados do banco de dados local para o banco de dados da nuvem. Como consequência, os processos de assinatura e cancelamento de assinatura são **assíncronos**. As solicitações de aceitação e recusa são processadas a cada hora por meio de um fluxo de trabalho técnico específico. [Saiba mais](replication.md#tech-wf)
+A inserção de dados de assinatura e cancelamento de assinatura depende do [Mecanismo de preparo](staging.md) no banco de dados local do Campaign. As informações do assinante são armazenadas temporariamente em tabelas intermediárias no banco de dados local, e o workflow de sincronização envia esses dados do banco de dados local para o banco de dados da nuvem. Como consequência, os processos de assinatura e cancelamento de assinatura são **assíncronos**. As solicitações de aceitação e recusa são processadas a cada hora por meio de um fluxo de trabalho técnico específico. [Saiba mais](replication.md#workflows)
 
 
 **Tópicos relacionados**

@@ -20,7 +20,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 41%
@@ -87,7 +87,7 @@ Cada um desses campos pode ser personalizado usando o ícone dedicado. Saiba mai
 
 ![](assets/email-smtp-bounce.png)
 
-Para obter mais informações sobre gerenciamento de rejeição de emails, consulte [esta seção](delivery-failures.md#bounce-mail-management).
+Para obter mais informações sobre gerenciamento de rejeição de emails, consulte [esta seção](delivery-failures.md#bounce-mail-qualification).
 
 ## Ativar lista de um clique - cancelar inscrição {#one-click-list-unsubscribe}
 

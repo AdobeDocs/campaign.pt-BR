@@ -3,12 +3,15 @@ product: campaign
 title: Introdução ao marketing distribuído
 description: Introdução ao marketing distribuído
 feature: Distributed Marketing
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
 TQID: https://experienceleague.adobe.com/Xic-o4WB0jDoHpUAdN2U9Uunuf8rAcQ7rrcpXIFLqSI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -27,16 +30,14 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
-source-wordcount: 1135
-ht-degree: 94%
-
+source-wordcount: '1135'
+ht-degree: 96%
 ---
-
 # Introdução ao marketing distribuído{#about-distributed-marketing}
 
-O Adobe Campaign oferece um aplicativo de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **[!UICONTROL list of campaign packages]**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
+O Adobe Campaign oferece um aplicativo de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sedes, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **[!UICONTROL list of campaign packages]**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
 
 A entidade central fornece campanhas que entidades locais poderão usar. As campanhas são materializadas por pacotes que representam campanhas locais ou colaborativas. Para usar uma campanha, a entidade local deverá fazer solicitá-la e a solicitação deverá ser aprovada.
 
@@ -52,10 +53,10 @@ A entidade central fornece campanhas que entidades locais poderão usar. As camp
 
   O módulo de marketing distribuído permite à entidade central:
 
-   * configurar pacotes de campanha de marketing para entidades locais,
-   * aumentar o grau de autonomia das entidades locais em relação à sua escolha para comunicação com cliente/cliente potencial, direcionamento, conteúdo etc.
-   * gerenciar e controlar custos,
-   * lidar com uma rede de agências.
+  * configurar pacotes de campanha de marketing para entidades locais,
+  * aumentar o grau de autonomia das entidades locais em relação à sua escolha para comunicação com cliente/cliente potencial, direcionamento, conteúdo etc.
+  * gerenciar e controlar custos,
+  * lidar com uma rede de agências.
 
 * **Entidades locais**
 
@@ -87,10 +88,10 @@ A entidade central fornece campanhas que entidades locais poderão usar. As camp
 
   Uma campanha colaborativa é uma campanha cujo **cronograma de execução é definido** pela entidade central, que a entidade local pode usar. O conteúdo permanece o mesmo para cada entidade local, mas os custos são compartilhados. Para participarem, as entidades locais se inscrevem na campanha colaborativa.
 
-   * **[!UICONTROL Collaborative campaign (by form)]**: recomendado para campanhas que envolvam até 300 entidades locais. A entidade local pode inserir parâmetros predefinidos para direcionamento e personalização de conteúdo em um formulário da Web. O formulário pode ser um formulário do Adobe Campaign ou um formulário externo (cliente extranet). Um administrador funcional pode definir e configurar o formulário com base em um modelo de formulário definido pelo integrador. Para solicitar a campanha, a entidade local precisa apenas de acesso à web.
-   * **[!UICONTROL Collaborative campaign (by campaign)]**: recomendado para campanhas destinadas a dezenas de entidades locais. Esse tipo de campanha cria campanhas filho para cada entidade local. Quando o **[!UICONTROL collaborative campaign (by campaign)]** é aprovado pela entidade central, a campanha é disponibilizada à entidade local, que pode modificá-la. A execução é automaticamente sincronizada entre campanhas pai e filho. A entidade local deve ter acesso a uma instância para solicitar uma campanha e participar dela.
-   * **[!UICONTROL Collaborative campaign (by target approval)]**: recomendado para campanhas destinadas a milhares de entidades locais. A entidade local recebe uma lista de contatos que foi predefinida pela entidade central. A entidade local decide se mantém determinados contatos com base no conteúdo da campanha por meio de um formulário web. As entidades locais são selecionadas da lista de contatos selecionados. Para participar da campanha, a entidade local só precisa de acesso à web.
-   * **[!UICONTROL Collaborative campaign (simple)]**: esse modo garante a compatibilidade com os processos de execução específicos das versões anteriores.
+  * **[!UICONTROL Collaborative campaign (by form)]**: recomendado para campanhas que envolvam até 300 entidades locais. A entidade local pode inserir parâmetros predefinidos para direcionamento e personalização de conteúdo em um formulário da Web. O formulário pode ser um formulário do Adobe Campaign ou um formulário externo (cliente extranet). Um administrador funcional pode definir e configurar o formulário com base em um modelo de formulário definido pelo integrador. Para solicitar a campanha, a entidade local precisa apenas de acesso à web.
+  * **[!UICONTROL Collaborative campaign (by campaign)]**: recomendado para campanhas destinadas a dezenas de entidades locais. Esse tipo de campanha cria campanhas filho para cada entidade local. Quando o **[!UICONTROL collaborative campaign (by campaign)]** é aprovado pela entidade central, a campanha é disponibilizada à entidade local, que pode modificá-la. A execução é automaticamente sincronizada entre campanhas pai e filho. A entidade local deve ter acesso a uma instância para solicitar uma campanha e participar dela.
+  * **[!UICONTROL Collaborative campaign (by target approval)]**: recomendado para campanhas destinadas a milhares de entidades locais. A entidade local recebe uma lista de contatos que foi predefinida pela entidade central. A entidade local decide se mantém determinados contatos com base no conteúdo da campanha por meio de um formulário web. As entidades locais são selecionadas da lista de contatos selecionados. Para participar da campanha, a entidade local só precisa de acesso à web.
+  * **[!UICONTROL Collaborative campaign (simple)]**: esse modo garante a compatibilidade com os processos de execução específicos das versões anteriores.
 
   Consulte [Criar uma campanha colaborativa](creating-a-collaborative-campaign.md)
 

@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 52%
@@ -119,11 +119,11 @@ As campanhas são criadas por meio de modelos de campanha. É possível configur
 
 Para cada campanha, os seguintes recursos estão disponíveis:
 
-* Documentos e recursos de referência: é possível associar documentos à campanha (resumo, relatório, imagens etc.). Todos os formatos de documento são suportados. [Saiba mais](marketing-campaign-deliveries.md#manage-associated-documents).
-* Definir custos: para cada campanha, o Adobe Campaign permite definir entradas de custo e estruturas de cálculo de custo que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala etc. [Saiba mais](providers-stocks-and-budgets.md#defining-cost-categories).
+* Documentos e recursos de referência: é possível associar documentos à campanha (resumo, relatório, imagens etc.). Todos os formatos de documento são suportados. [Saiba mais](marketing-campaign-deliveries.md).
+* Definir custos: para cada campanha, o Adobe Campaign permite definir entradas de custo e estruturas de cálculo de custo que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala etc. [Saiba mais](providers-stocks-and-budgets.md#define-cost-categories).
 * Definir objetivos: é possível definir objetivos quantificáveis para uma campanha, por exemplo, número de assinantes, volume de negócios etc. Essas informações são usadas posteriormente nos relatórios de campanha.
-* Gerenciar seed addresses e grupos de controle. [Saiba mais](marketing-campaign-deliveries.md#defining-a-control-group).
-* Gerenciar aprovações: é possível selecionar os tratamentos a serem aprovados e, se necessário, selecionar os operadores de revisão ou grupos de operadores. [Saiba mais](marketing-campaign-approval.md#checking-and-approving-deliveries).
+* Gerenciar seed addresses e grupos de controle. [Saiba mais](marketing-campaign-deliveries.md).
+* Gerenciar aprovações: é possível selecionar os tratamentos a serem aprovados e, se necessário, selecionar os operadores de revisão ou grupos de operadores. [Saiba mais](marketing-campaign-approval.md#review-and-approve-deliveries).
 
 >[!NOTE]
 >
@@ -218,7 +218,7 @@ Aprovações de um target ou conteúdo de delivery podem ser realizadas via aces
 
 ![](assets/web-access-approval.png)
 
-Você também pode usar o link contido nas mensagens de notificação. Para obter mais informações, consulte [esta seção](marketing-campaign-approval.md#checking-and-approving-deliveries).
+Você também pode usar o link contido nas mensagens de notificação. Para obter mais informações, consulte [esta seção](marketing-campaign-approval.md#review-and-approve-deliveries).
 
 
 ## Tutorial em vídeo {#video}

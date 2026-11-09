@@ -26,7 +26,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 17%
@@ -73,7 +73,7 @@ Perfis de produto são grupos de produtos e serviços que podem ser atribuídos 
 
 Na Admin Console, cada **perfil de produto** da Adobe Experience Cloud para o Campaign está associado a um **grupo de operadores** no Console do Cliente do Campaign.
 
-Saiba como criar e atribuir perfis de produto em [esta página](manage-permissions.md#create-a-product-profile).
+Saiba como criar e atribuir perfis de produto em [esta página](manage-permissions.md#create-product-profile).
 
 ## Direitos nomeados da campanha{#named-rights}
 

@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '3162'
 ht-degree: 69%
@@ -336,7 +336,7 @@ Esses mapeamentos são apresentados [nesta seção](../audiences/target-mappings
 
 ### Destinatários externos {#external-recipients}
 
-Você pode enviar entregas para destinatários armazenados em um arquivo externo em vez de salvos no banco de dados. Saiba mais [nesta seção](create-message.md#select-external-recipients-selecting-external-recipients).
+Você pode enviar entregas para destinatários armazenados em um arquivo externo em vez de salvos no banco de dados. Saiba mais [nesta seção](create-message.md#selecting-external-recipients).
 
 <!--
 ### Send to your subscribers {#send-to-subscribers}
@@ -348,7 +348,7 @@ To send messages to the subscribers of a newsletter, you can directly target the
 
 Para testar sua entrega, use provas antes de enviar para o público-alvo principal.
 
-Selecione os destinatários de prova apropriados, porque eles validam a forma e o conteúdo da mensagem. As etapas para definir os destinatários de prova são apresentadas [nesta seção](create-message.md#select-the-recipients-of-proof-messages-select-the-proof-target).
+Selecione os destinatários de prova apropriados, porque eles validam a forma e o conteúdo da mensagem. As etapas para definir os destinatários de prova são apresentadas [nesta seção](create-message.md#select-the-proof-target).
 
 
 ### Cancelar endereços duplicados {#deduplicate-addresses}

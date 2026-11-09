@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '2969'
 ht-degree: 52%
 ---
 # Práticas recomendadas de segurança do Campaign {#ac-security}
@@ -172,7 +172,7 @@ O Adobe Campaign oferece vários conjuntos de recursos dedicados ao gerenciament
 * Solicitações de privacidade (Direito de acesso e Direito de ser esquecido). Consulte [esta seção](#privacy-requests).
 * Recusar a venda de informações pessoais (específico para CCPA).
 
-Os principais recursos de privacidade do Campaign e um exemplo das personalidades envolvidas são apresentados nesta [seção](https://helpx.adobe.com/br/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow).
+Os principais recursos de privacidade do Campaign e um exemplo das personalidades envolvidas são apresentados nesta [seção](#personal-data).
 
 ### Consentimento, retenção e funções {#consent}
 

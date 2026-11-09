@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 33%
@@ -88,7 +88,7 @@ Se um usuário qualificar um email como spam, a mensagem será automaticamente r
 
 Ao contrário de erros graves, os erros suaves não enviam um endereço para quarentena imediatamente, mas incrementam um contador de erros. Quando o contador de erros atinge o limite, o endereço é colocado em quarentena. Saiba mais sobre tentativas e tipos de erro em [Noções básicas sobre falhas de entrega](delivery-failures.md).
 
-O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. O status do endereço é alterado para **[!UICONTROL Valid]** e excluído da lista de quarentenas pelo fluxo de trabalho **[!UICONTROL Database cleanup]**. [Saiba mais sobre fluxos de trabalho técnicos](../config/workflows.md#technical-workflows).
+O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. O status do endereço é alterado para **[!UICONTROL Valid]** e excluído da lista de quarentenas pelo fluxo de trabalho **[!UICONTROL Database cleanup]**. [Saiba mais sobre fluxos de trabalho técnicos](../config/workflows.md).
 
 ## Acessar endereços em quarentena {#access-quarantined-addresses}
 

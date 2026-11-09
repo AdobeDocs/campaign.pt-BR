@@ -51,7 +51,7 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 87%
@@ -146,4 +146,4 @@ Já conhece o Campaign Classic? Saiba mais sobre as principais diferenças entre
 * [Espaço de trabalho do Campaign](campaign-ui.md)
 * [Matriz de compatibilidade do Campaign v8](compatibility-matrix.md)
 * [Conectar ao Campaign](connect.md)
-* [Perguntas frequentes](campaign-faq.md)
+* [Perguntas frequentes](campaign-faq-comprehensive.md)

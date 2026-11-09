@@ -28,7 +28,7 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 92%
@@ -67,7 +67,7 @@ Os campos a serem inseridos no caso de uma notificação para aprovação de tar
 
 * **[!UICONTROL Distribution context]**: selecione a opção **[!UICONTROL Specified in the transition]** se estiver usando uma atividade do tipo **[!UICONTROL Split]** para limitar a população de destino. Nesse caso, o modelo de distribuição é inserido na atividade de Split. Se você não estiver limitando a população de destino, selecione a opção **[!UICONTROL Explicit]** aqui e insira o modelo de distribuição no campo **[!UICONTROL Data distribution]**.
 
-  Para obter mais informações sobre como criar um modelo de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+  Para obter mais informações sobre como criar um modelo de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limit-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Approval management]**
 

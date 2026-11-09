@@ -23,7 +23,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 98%
@@ -62,7 +62,7 @@ As principais etapas do ciclo de aprovação de conteúdo são:
 
 O modelo de distribuição de dados permite limitar a população resultante do direcionamento com base no agrupamento de dados, permitindo atribuir cada valor a um supervisor local. Neste exemplo, definimos o campo **[!UICONTROL Email address domain]** como um campo de distribuição e atribuímos um domínio a cada supervisor local
 
-Para obter mais informações sobre como criar um modelo de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Para obter mais informações sobre como criar um modelo de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limit-the-number-of-subset-records-per-data-distribution).
 
 1. Para criar o modelo de distribuição de dados, vá para o nó **[!UICONTROL Resources > Campaign management > Data distribution]** e clique em **[!UICONTROL New]**.
 
@@ -117,7 +117,7 @@ As seguintes atividades foram adicionadas:
 
 O direcionamento de upstream é composto de duas consultas, uma intersecção e um Split. A população resultante do direcionamento pode ser limitado por meio de uma atividade **[!UICONTROL Split]** usando um modelo de distribuição de dados.
 
-Para obter mais informações sobre como configurar uma atividade Split, consulte [Split](split.md). A criação de um modelo de distribuição de dados é detalhada em [Limitação do número de registros do subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Para obter mais informações sobre como configurar uma atividade Split, consulte [Split](split.md). A criação de um modelo de distribuição de dados é detalhada em [Limitação do número de registros do subconjunto por distribuição de dados](split.md#limit-the-number-of-subset-records-per-data-distribution).
 
 Se não quiser limitar a população da consulta, não utilize as atividades **[!UICONTROL Query]**, **[!UICONTROL Intersection]** e **[!UICONTROL Split]**. Nesse caso, complete o modelo de distribuição de dados na primeira atividade **[!UICONTROL Local approval]**.
 

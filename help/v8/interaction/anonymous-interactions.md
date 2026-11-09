@@ -3,6 +3,7 @@ product: campaign
 title: Apresentar ofertas a perfis anônimos (interação de entrada)
 description: Saiba como apresentar ofertas a perfis anônimos
 feature: Interaction, Offers
+version: Campaign v8, Campaign Classic v7
 role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
 TQID: 'https://experienceleague.adobe.com/rl7SIcS-OkMmLnxvPiEfjs51xouGSSyLJV4in-vsoCE'
@@ -21,7 +22,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 75%
@@ -48,7 +49,7 @@ O campo **[!UICONTROL Visitor folder]** é exibido. Ele é automaticamente preen
 
 Assim como as interações de saída, as interações de entrada são organizadas em um catálogo de ofertas que é composto por categorias e ofertas.
 
-Para criar categorias e espaços, aplique o mesmo processo que os visitantes identificados. Consulte [Criar uma categoria de oferta](interaction-offer-catalog.md#creating-offer-categories) e [Criar um ambiente de oferta](interaction-env.md#creating-an-offer-environment)).
+Para criar categorias e espaços, aplique o mesmo processo que os visitantes identificados. Consulte [Criar uma categoria de oferta](interaction-offer-catalog.md#creating-offer-categories) e [Criar um ambiente de oferta](interaction-env.md#create-an-offer-environment)).
 
 ## Visitantes anônimos {#anonymous-visitors}
 
