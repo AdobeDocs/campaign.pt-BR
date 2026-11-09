@@ -43,7 +43,7 @@ As etapas básicas são criar um template de mensagem transacional no Campaign e
 ![](assets/ajo-integration.png)
 
 
-[Descubra esta integração nesta amostra completa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}.
+[Descubra esta integração nesta amostra completa](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}.
 
 
-[Saiba mais na documentação do Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.
+[Saiba mais na documentação do Journey Optimizer](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.
