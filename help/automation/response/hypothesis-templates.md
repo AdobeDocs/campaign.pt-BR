@@ -134,7 +134,7 @@ A guia **[!UICONTROL General]** do modelo também permite especificar os parâme
 
 ### Transações {#transactions}
 
-Esta guia contém vários campos e tabelas que permitem salvar o histórico das reações do destinatário em termos de transações. Consulte esta [seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/about-schema-reference){target="_blank"} para obter mais informações sobre as tabelas dedicadas à gestão de resposta.
+Esta guia contém vários campos e tabelas que permitem salvar o histórico das reações do destinatário em termos de transações. Consulte esta [seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/about-schema-reference){target="_blank"} para obter mais informações sobre as tabelas dedicadas à gestão de resposta.
 
 * **[!UICONTROL Schema (reaction log storage)]**: selecione a tabela de reação de destinatário. A tabela pronta para uso no Adobe Campaign é a **NmsRemaMatchRcp**.
 * **[!UICONTROL Transaction schema]**: escolha a tabela relacionada à hipótese, ou seja, a tabela de transação ou a de compra.
