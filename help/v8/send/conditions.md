@@ -2,6 +2,7 @@
 title: Conteúdo condicional
 description: Saiba como criar conteúdo condicional
 feature: Personalization
+version: Campaign v8, Campaign Classic v7
 role: User
 level: Beginner
 exl-id: bcbf3101-d43c-4ed3-ab02-a9936ec55b71
@@ -19,7 +20,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 52%
@@ -98,4 +99,4 @@ No exemplo abaixo, saiba como criar um email multilíngue. O conteúdo é exibid
 
 Saiba como adicionar conteúdo condicional a uma entrega no caso de um informativo multilíngue.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446716?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)
