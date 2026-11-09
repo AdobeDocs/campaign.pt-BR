@@ -19,10 +19,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 83%
+source-wordcount: '126'
+ht-degree: 93%
 ---
 # Configurar pesquisas online{#configuring-surveys}
 
@@ -36,7 +36,7 @@ ht-degree: 83%
 
 As pesquisas online são totalmente configuráveis e personalizáveis para atender aos seus requisitos. Os parâmetros devem ser inseridos na janela de propriedades.
 
-Os parâmetros disponíveis são detalhados [neste documento](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"}.
+Os parâmetros disponíveis são detalhados [neste documento](../web/defining-web-forms-properties.md).
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 

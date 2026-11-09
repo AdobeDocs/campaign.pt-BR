@@ -17,10 +17,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 98%
+source-wordcount: '790'
+ht-degree: 100%
 ---
 # O que é capacidade de entrega{#about-deliverability}
 
@@ -74,9 +74,9 @@ Ao configurar, projetar e testar sua mensagem, siga as práticas recomendadas me
 
 Para evitar o envio de mensagens a endereços inválidos, limitar as comunicações inadequadas e melhorar a reputação do remetente, a Adobe recomenda a implementação de um mecanismo de aceitação dupla. Esse método garante que seus destinatários se inscreveram intencionalmente.
 
-Para obter mais informações, consulte [Criar um formulário de assinatura com aceitação dupla](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
+Para obter mais informações, consulte [Criar um formulário de assinatura com aceitação dupla](../dev/web/use-cases-web-forms.md).
 
-Para obter mais informações sobre as práticas recomendadas ao coletar dados de clientes, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth#data-quality-and-hygiene){target="_blank"}.
+Para obter mais informações sobre as práticas recomendadas ao coletar dados de clientes, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html?lang=pt-BR#data-quality-and-hygiene){target="_blank"}.
 
 ### Aproveitar o gerenciamento de quarentena
 
