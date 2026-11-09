@@ -5,10 +5,10 @@ user-guide-description: Documentação do produto do Adobe Campaign v8 (console 
 title: Documentação do Adobe Campaign v8
 description: Documentação do Campaign v8
 breadcrumb-title: Documentação do Campaign v8
-source-git-commit: 9b9c573de6120f4b3da0d5eee98192b56b4754df
+source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 86%
+source-wordcount: '921'
+ht-degree: 87%
 ---
 
 # Documentação do Adobe Campaign v8 (console) {#campaign-v8}
@@ -37,7 +37,6 @@ ht-degree: 86%
   + [Do Campaign Classic v7 para o v8](start/v7-to-v8.md)
   + [Do Campaign Standard ao v8](start/acs-to-v8.md)
   + [Perguntas frequentes](start/campaign-faq-comprehensive.md)
-  + {hide-from-toc}[Perguntas frequentes](start/campaign-faq.md)
   + {hide-from-toc}[Pixels de rastreamento de email e Orientação da CNIL](start/cnil-pixel-tracking.md)
 + Mensagens {#send}
   + [Introdução a mensagens](start/gs-message.md)
@@ -134,6 +133,15 @@ ht-degree: 86%
 + Landing pages e formulários {#content}
   + [Criar páginas de destino](dev/landing-pages.md)
   + [Criar aplicativos e formulários web](dev/webapps.md)
+  + Pesquisas {#surveys}
+    + [Introdução às pesquisas](dev/surveys/about-surveys.md)
+    + [Etapas principais para criar uma pesquisa](dev/surveys/getting-started-with-surveys.md)
+    + [Criar uma pesquisa](dev/surveys/building-a-survey.md)
+    + [Gerenciar respostas](dev/surveys/managing-answers.md)
+    + [Publicar, rastrear e usar dados coletados](dev/surveys/publish-track-and-use-collected-data.md)
+    + [Configurar pesquisas](dev/surveys/configuring-surveys.md)
+    + [Caso de uso: criar um formulário de indicação](dev/surveys/use-case-creating-a-refer-a-friend-form.md)
+    + [Caso de uso: exibir relatório sobre as respostas a uma pesquisa online](dev/surveys/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Campanhas {#campaigns}
   + [Introdução às campanhas](start/campaigns.md)
   + [Documentação do Campaign Orchestration >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR)
@@ -158,6 +166,7 @@ ht-degree: 86%
     + [Gerenciar interações anônimas](interaction/anonymous-interactions.md)
   + [Relatórios e histórico](interaction/interaction-tracking.md)
   + [Casos de uso](interaction/interaction-use-cases.md)
+  + [Configurações avançadas](interaction/interaction-advanced-settings.md)
 + Consulta e dados {#data}
   + Consultar o banco de dados {#query}
     + [Trabalhar com o editor de consultas](start/query-editor.md)
