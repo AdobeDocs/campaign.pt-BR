@@ -21,7 +21,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 63%
@@ -42,4 +42,3 @@ As seguintes atividades são atividades de banco de dados: elas são usadas para
 * **[Test](test.md)**: permite uma transição com base em um resultado de teste.
 * **[Time constraint](time-constraint.md)**: permite pausar uma tarefa por um período definido.
 * **[Wait](wait.md)**: permite a transição de saída após um determinado limite de tempo.
-  <!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->

@@ -27,7 +27,7 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 25%
@@ -36,11 +36,11 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support) para implementar os acionadores da Experience Cloud com o Campaign.
+>Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq-comprehensive.md#support) para implementar os acionadores da Experience Cloud com o Campaign.
 
 Você pode usar os Acionadores da Experience Cloud para conectar dados entre a Adobe Campaign e a Adobe Analytics usando o pipeline. O pipeline recupera as ações ou acionadores do usuário do seu site. O abandono do carrinho é um exemplo de acionador. Os acionadores são processados no Adobe Campaign para enviar emails em tempo quase real.
 
-Saiba mais sobre a Adobe Campaign e os Acionadores da Experience Cloud [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre a Adobe Campaign e os Acionadores da Experience Cloud [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html){target="_blank"}.
 
 Descubra como [criar um acionador da Experience Cloud](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=pt-BR){target="_blank"} e identificar, definir e monitorar comportamentos de consumidores críticos.
 

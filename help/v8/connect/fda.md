@@ -26,7 +26,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 40%
@@ -41,7 +41,7 @@ Use o conector FDA (Federated Data Access) para conectar o Campaign a um ou mais
 >
 >* No contexto de uma [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md), uma conta externa específica está disponível para gerenciar a comunicação entre o banco de dados local do Campaign e o banco de dados da nuvem do Snowflake. Esta conta externa foi configurada para você pela Adobe e **não deve** ser modificado.
 >
->* Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support) para conectar o(s) banco(s) de dados externo(s) com o Campaign.
+>* Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq-comprehensive.md#support) para conectar o(s) banco(s) de dados externo(s) com o Campaign.
 
 
 ## Práticas recomendadas e limitações

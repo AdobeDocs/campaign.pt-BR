@@ -3,6 +3,7 @@ product: campaign
 title: Introdução às tipologias de campanha
 description: Saiba como configurar e implementar tipologias de campanha
 feature: Typology Rules
+version: Campaign v8, Campaign Classic v7
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 TQID: 'https://experienceleague.adobe.com/Pxzz3-z8BorlEgP1gGwLK--l6hEAGZ-DQhGuxsLk6oU'
 product_v2:
@@ -27,7 +28,7 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 41%
@@ -67,7 +68,7 @@ O Campaign vem com um conjunto de regras padrão de **Filtragem** e **Controle**
 O complemento de Otimização de Campanha fornece dois tipos adicionais de **regras de tipologia**:
 
 * Regras de **Pressão**, que permitem controlar a fadiga da marca. [Saiba mais](pressure-rules.md).
-* Regras de **Capacidade**, que permitem limitar cargas para garantir condições de processamento ideais. [Saiba mais](consistency-rules.md#controlling-capacity).
+* Regras de **Capacidade**, que permitem limitar cargas para garantir condições de processamento ideais. [Saiba mais](consistency-rules.md#control-capacity).
 
 
 >[!NOTE]
@@ -100,11 +101,11 @@ Casos de uso de exemplo das regras de tipologia de pressão estão disponíveis 
 
 Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign utilizando regras de tipologia.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448336?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
 
 ### Configurar o gerenciamento de fadiga usando filtros predefinidos
 
 O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de destinatários. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que filtrará a população do público-alvo pelo número de mensagens recebidas
 Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign usando filtros.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444605?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

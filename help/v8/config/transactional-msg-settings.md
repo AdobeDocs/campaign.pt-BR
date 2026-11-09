@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 28%
@@ -38,7 +38,7 @@ Entenda a arquitetura de mensagens transacionais em [esta página](../architectu
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq.md#support) para instalar e configurar as mensagens transacionais do Campaign em seu ambiente.
+>Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq-comprehensive.md#support) para instalar e configurar as mensagens transacionais do Campaign em seu ambiente.
 
 ## Definir permissões {#mc-permissions}
 
@@ -82,7 +82,7 @@ Veja abaixo um exemplo de uma configuração de evento para enviar notificaçõe
                 <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
-                    <url>http://www.adobe.com/br</url>
+                    <url>http://www.adobe.com</url>
                 </ctx>
               </rtEvent>
 
@@ -115,8 +115,8 @@ Na instância de controle, você deve criar um fluxo de trabalho de arquivamento
 
 Na(s) instância(s) de execução, você deve iniciar os seguintes workflows técnicos:
 
-* **[!UICONTROL Processing batch events]** (internal name: **[!UICONTROL batchEventsProcessing]** ): esse fluxo de trabalho permite dividir eventos em lote em uma fila antes que eles sejam vinculados a um modelo de mensagem.
-* **[!UICONTROL Processing real time events]** (internal name: **[!UICONTROL rtEventsProcessing]** ): esse fluxo de trabalho permite dividir eventos em tempo real em uma fila antes que eles sejam vinculados a um modelo de mensagem.
+* **[!UICONTROL Processing batch events]** (internal name: **[!UICONTROL batchEventsProcessing]** ): esse fluxo de trabalho permite detalhar eventos em lote em uma fila antes que eles sejam vinculados a um modelo de mensagem.
+* **[!UICONTROL Processing real time events]** (internal name: **[!UICONTROL rtEventsProcessing]** ): esse fluxo de trabalho permite detalhar eventos em tempo real em uma fila antes que eles sejam vinculados a um modelo de mensagem.
 * **[!UICONTROL Update event status]** (internal name: **[!UICONTROL updateEventStatus]** ): esse fluxo de trabalho permite que você atribua um status ao evento.
 
   Os possíveis status do evento são:

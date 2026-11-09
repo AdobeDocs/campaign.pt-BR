@@ -20,7 +20,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 55%
@@ -126,7 +126,7 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
 * **Grupo de controle**
 
-  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do modelo e às campanhas baseadas nesse modelo. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre grupos de controle [nesta seção](marketing-campaign-deliveries.md#defining-a-control-group).
+  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do modelo e às campanhas baseadas nesse modelo. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre grupos de controle [nesta seção](marketing-campaign-deliveries.md).
 
   ![](assets/template-activate-1.png)
 
@@ -139,7 +139,7 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
 * **Documentos**
 
-  Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edit]** do modelo e às campanhas com base nesse modelo. Os documentos anexados podem ser adicionados do modelo ou individualmente para cada campanha. Saiba mais sobre documentos [nesta seção](marketing-campaign-deliveries.md#manage-associated-documents).
+  Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edit]** do modelo e às campanhas com base nesse modelo. Os documentos anexados podem ser adicionados do modelo ou individualmente para cada campanha. Saiba mais sobre documentos [nesta seção](marketing-campaign-deliveries.md).
 
   ![](assets/template-activate-3.png)
 
@@ -151,7 +151,7 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
 * **Segmentação e fluxos de trabalho**
 
-  Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais fluxos de trabalho para campanhas com base nesse modelo. Os fluxos de trabalho também podem ser configurados individualmente para cada campanha com base nesse modelo.Saiba mais sobre os fluxos de trabalho de campanhas [nesta seção](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+  Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais fluxos de trabalho para campanhas com base nesse modelo. Os fluxos de trabalho também podem ser configurados individualmente para cada campanha com base nesse modelo.Saiba mais sobre os fluxos de trabalho de campanhas [nesta seção](marketing-campaign-deliveries.md).
 
   ![](assets/template-activate-5.png)
 

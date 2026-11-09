@@ -1,6 +1,6 @@
 ---
 audience: end-user
-title: Criar um delivery de notificação por push avançado
+title: Criar uma entrega de push avançada para Android
 description: Saiba como criar um delivery de notificação por push avançado com o Adobe Campaign Web
 feature: Push
 role: User
@@ -30,16 +30,16 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
 workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 9%
+ht-degree: 10%
 ---
 # Criar uma entrega de push avançada para Android {#rich-push}
 
 >[!IMPORTANT]
 >
->Antes de criar uma Notificação por push avançada, primeiro é necessário configurar o conector V2. Consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) para obter o procedimento detalhado.
+>Antes de criar uma Notificação por push avançada, primeiro é necessário configurar o conector V2. Consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) para obter o procedimento detalhado.
 
 Com o Firebase Cloud Messaging, você pode escolher entre dois tipos de mensagens:
 

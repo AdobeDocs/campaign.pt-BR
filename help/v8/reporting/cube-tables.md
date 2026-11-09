@@ -29,7 +29,7 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 68%
@@ -126,7 +126,7 @@ Para adicionar e configurar medidas, siga as etapas abaixo:
 
    ![](assets/cube-pivot-table-config.png)
 
-   Você pode então escolher se exibe ou não os rótulos de medida. [Saiba mais](customize-cubes.md#configure-the-display).
+   Você pode então escolher se exibe ou não os rótulos de medida. [Saiba mais](customize-cubes.md#configuring-the-display).
 
 1. Você pode criar novas medidas com base nas existentes. Para fazer isso, clique **[!UICONTROL Create a measure]** e configure-a.
 

@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 45%
+source-wordcount: '505'
+ht-degree: 44%
 ---
 # Documentação do Adobe Campaign v8 (console) {#campaign-documentation}
 
@@ -98,7 +98,7 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Introdução</strong><br/><a href="start/campaign-ui.md">Interface do usuário</a> - <a href="start/ac-components.md">Componentes e processos</a> - <a href="start/v7-to-v8.md">Do Classic v7 para o v8</a> - <a href="start/campaign-faq.md">Perguntas frequentes</a>
+      <strong>Introdução</strong><br/><a href="start/campaign-ui.md">Interface do usuário</a> - <a href="start/ac-components.md">Componentes e processos</a> - <a href="start/v7-to-v8.md">Do Classic v7 para o v8</a> - <a href="start/campaign-faq-comprehensive.md">Perguntas frequentes</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
@@ -132,5 +132,5 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
 
 ## Recursos adicionais
 
-[Descrição de produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentação da interface da Web do Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=pt-BR){target="_blank"} - [Tutoriais](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] guia de automação](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"} - [Pixels de rastreamento de email e Orientação da CNIL](../v8/start/cnil-pixel-tracking.md)
+[Descrição de produto do Adobe Campaign v8](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Documentação da interface da Web do Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Tutoriais](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [[!DNL Adobe Campaign] guia de automação](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=pt-BR){target="_blank"} - [Painel de controle do Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"} - [Pixels de rastreamento de email e Orientação da CNIL](../v8/start/cnil-pixel-tracking.md)
 

@@ -19,7 +19,7 @@ subfeature_v2:
     internal-label: Workflows
   - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
     internal-label: Targeting Activity
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 84%
@@ -32,7 +32,7 @@ Um **[!UICONTROL Union]** agrupa o resultado de várias atividades de entrada em
 
 >[!NOTE]
 >
->Para obter mais informações sobre como configurar e usar a atividade **[!UICONTROL Union]**, consulte [esta página](targeting-workflows.md#combining-several-targets--union-).
+>Para obter mais informações sobre como configurar e usar a atividade **[!UICONTROL Union]**, consulte [esta página](targeting-workflows.md#combine-several-targets--union-).
 
 ## Exemplo de união {#union-example}
 

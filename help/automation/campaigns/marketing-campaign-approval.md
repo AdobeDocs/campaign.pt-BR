@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '2294'
 ht-degree: 59%
@@ -121,7 +121,7 @@ Para cada campanha você pode aprovar o target, [conteúdo de entrega](#approvin
 
 Para entregas de correspondência direta, os operadores do Adobe Campaign podem exibir o arquivo de extração antes que seja enviada ao roteador e, se necessário, podem alterar o formato e reenviar a extração. [Saiba mais](#approve-an-extraction-file).
 
-Quando essas fases de validação estiverem concluídas, a entrega poderá ser iniciada. [Saiba mais](marketing-campaign-deliveries.md#starting-a-delivery).
+Quando essas fases de validação estiverem concluídas, a entrega poderá ser iniciada. [Saiba mais](marketing-campaign-deliveries.md#start-a-delivery).
 
 >[!NOTE]
 >

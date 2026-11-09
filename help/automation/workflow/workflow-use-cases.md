@@ -20,7 +20,7 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 60%
@@ -56,7 +56,7 @@ Saiba mais sobre os diferentes contextos em que os workflows podem ser usados e 
 * [Criar uma lista de resumo](create-a-summary-list.md)
 * [Enriquecer dados](enrich-data.md)
 * [Usar agregações](using-aggregates.md)
-* [Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign](use-workflow-data.md#use-case-gpg-encrypt)
+* [Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign](use-workflow-data.md)
 * [Atualização da lista trimestral usando uma consulta incremental](quarterly-list-update.md)
 * [Usar a funcionalidade de mesclagem da atividade de desduplicação](deduplication-merge.md)
 * [Configurar um fluxo de trabalho de importação recorrente](recurring-import-workflow.md)

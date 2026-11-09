@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 78%
@@ -115,7 +115,7 @@ O Adobe Campaign oferece um complemento de **Marketing distribuído** para imple
 
 >[!NOTE]
 >
->Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md)
 
 Saiba como configurar e usar os recursos de Marketing distribuído do Campaign em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=pt-BR){target="_blank"}.
 
@@ -125,6 +125,6 @@ O Adobe Campaign oferece um complemento de **Gerenciamento de resposta** que per
 
 >[!NOTE]
 >
->Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md)
 
-[&#128279;](../assets/do-not-localize/book.png) Saiba como configurar e usar o Gestor de Resposta do Campaign na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=pt-BR){target="_blank"}.
+[](../assets/do-not-localize/book.png) Saiba como configurar e usar o Gestor de Resposta do Campaign na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=pt-BR){target="_blank"}.

@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 46%
@@ -85,7 +85,7 @@ No entanto, também é possível permitir que o proprietário da campanha confir
 
 Após todas as aprovações serem concedidas, o status da entrega será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por meio de um [fluxo de trabalho técnico](../workflow/technical-workflows.md) dedicado que, em uma configuração padrão, inicia automaticamente quando uma entrega de correspondência direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
 
-Após executar o fluxo de trabalho de extração com sucesso, o arquivo de extração deve ser aprovado (fornecido de forma que a aprovação do arquivo de extração tenha sido selecionada nas configurações da entrega). [Saiba mais](marketing-campaign-approval.md#approving-an-extraction-file).
+Após executar o fluxo de trabalho de extração com sucesso, o arquivo de extração deve ser aprovado (fornecido de forma que a aprovação do arquivo de extração tenha sido selecionada nas configurações da entrega). [Saiba mais](marketing-campaign-approval.md#approve-an-extraction-file).
 
 Siga as etapas abaixo para validar o conteúdo e enviar o arquivo para o provedor:
 

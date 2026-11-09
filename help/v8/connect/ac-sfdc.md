@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 29%
@@ -99,7 +99,7 @@ Após a criação do esquema, você pode sincronizar enumerações automaticamen
 
 1. Clique em **[!UICONTROL Next]** e depois em **[!UICONTROL Start]** para começar a importar as listas discriminadas.
 
-1. Navegue pelo nó **[!UICONTROL Administration > Platform > Enumerations]** para verificar os valores importados. Saiba mais sobre enumerações em [esta página](../config/ui-settings.md#enumerations).
+1. Navegue pelo nó **[!UICONTROL Administration > Platform > Enumerations]** para verificar os valores importados. Saiba mais sobre enumerações em [esta página](../config/ui-settings.md).
 
 O Adobe Campaign e o Salesforce.com agora estão conectados. Você pode configurar a sincronização de dados entre os dois sistemas.
 

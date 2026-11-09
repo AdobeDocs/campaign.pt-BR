@@ -28,7 +28,7 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 13%
@@ -37,7 +37,7 @@ ht-degree: 13%
 
 Uma landing page é uma página da Web dedicada criada com uma meta de marketing específica. Os visitantes normalmente chegam a uma página de aterrissagem depois de clicar em um link por email, em uma publicação de mídia social ou em um resultado de mecanismo de pesquisa. Ao contrário das páginas gerais do site, as páginas de aterrissagem se concentram em conduzir uma única ação bem definida, como fazer uma compra, assinar/cancelar a assinatura de um serviço ou baixar um recurso. Com o Adobe Campaign, crie páginas de aterrissagem para direcionar seus usuários para um formulário online onde eles possam atualizar seus dados, aceitar/recusar receber suas comunicações ou assinar um serviço específico, como um boletim informativo.
 
-Para criar páginas de aterrissagem, navegue até a [interface de usuário da Web](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). O Adobe Campaign vem com uma experiência de usuário recriada para landing pages, disponível somente na interface da Web.
+Para criar páginas de aterrissagem, navegue até a [interface de usuário da Web](../start/campaign-ui.md#ac-web-ui). O Adobe Campaign vem com uma experiência de usuário recriada para landing pages, disponível somente na interface da Web.
 
 >[!AVAILABILITY]
 >
@@ -55,34 +55,34 @@ Com landing pages, você pode:
 * Forneça aos recipients a capacidade de cancelar a inscrição do recebimento de suas comunicações.
 
 
-Saiba mais sobre landing pages na [documentação da interface do usuário da Web do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
+Saiba mais sobre landing pages na [documentação da interface do usuário da Web do Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
 
 Você também pode navegar pelas seguintes seções:
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
-<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/create-lp">
+<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/create-lp">
 <img alt="Lead" src="assets/do-not-localize/lp-subscription.jpeg">
 </a>
-<div><a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/create-lp"><strong>Criar páginas de destino</strong>
+<div><a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/create-lp"><strong>Criar páginas de destino</strong>
 </div>
 <p>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/lp-content">
+<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-content">
 <img alt="Validação" src="assets/do-not-localize//lp-design.jpg">
 </a>
 <div>
-<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/lp-content"><strong>Design de páginas de destino</strong></a>
+<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-content"><strong>Design de páginas de destino</strong></a>
 </div>
 <p>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/lp-templates">
+<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates">
 <img alt="Validação" src="assets/do-not-localize/lp-reporting.jpg">
 </a>
 <div>
-<a href="https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/lp-templates"><strong>Trabalhar com modelos de página de aterrissagem</strong></a>
+<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates"><strong>Trabalhar com modelos de página de aterrissagem</strong></a>
 </div>
 <p>
 </td>

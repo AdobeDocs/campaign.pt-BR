@@ -3,25 +3,26 @@ product: campaign
 title: Rastrear uma campanha
 description: Saiba como rastrear uma campanha com o Marketing distribuído do Campaign
 feature: Distributed Marketing
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 9904c1c6-c233-4aa2-a237-338ebde15661
 TQID: https://experienceleague.adobe.com/v-ZkfPAMBCbVOb0FheuwmYILdV4uFjbGu6cv2uoKccc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
-source-wordcount: 417
-ht-degree: 89%
-
+source-wordcount: '417'
+ht-degree: 100%
 ---
-
 # Rastrear uma campanha{#tracking-a-campaign}
 
 
@@ -37,7 +38,7 @@ Isso permite:
 
 ## Pacotes de filtro {#filter-packages}
 
-Na guia **[!UICONTROL Campaigns]**, é possível exibir a lista de **[!UICONTROL Campaign packages]** que reagrupa todas as campanhas de marketing distribuído existentes. Você pode filtrar essa lista para exibir somente campanhas publicadas, atrasadas, pendentes de aprovação etc. Para fazer isso, clique nos links na seção superior desta exibição ou use o link **[!UICONTROL Filter list]** e selecione o status do pacote da campanha a ser exibido.
+Na guia **[!UICONTROL Campaigns]**, é possível exibir a lista de **[!UICONTROL Campaign packages]** que reagrupa todas as campanhas de marketing distribuído existentes. Você pode filtrar esta lista para exibir apenas as campanhas publicadas, atrasadas, com aprovação pendente etc. Para isso, clique nos links na parte superior desta visualização ou use o link **[!UICONTROL Filter list]** e selecione o status do pacote da campanha que deseja exibir.
 
 ![](assets/mkg_dist_catalog_filter.png)
 

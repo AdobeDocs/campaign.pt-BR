@@ -23,7 +23,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 67%
@@ -70,7 +70,7 @@ Para configurar a atividade **[!UICONTROL Change dimension]**, siga as etapas ab
 
      >[!NOTE]
      >
-     >Para obter informações sobre como criar e gerenciar colunas adicionais, consulte [Adicionar dados](query.md#add-data).
+     >Para obter informações sobre como criar e gerenciar colunas adicionais, consulte [Adicionar dados](query.md#adding-data).
 
    * Selecione a dimensão de direcionamento anterior (antes da troca de eixo) e selecione **[!UICONTROL Zip Code]** na árvore secundária **[!UICONTROL Location]** do destinatário e clique em **[!UICONTROL Edit expression]**.
 

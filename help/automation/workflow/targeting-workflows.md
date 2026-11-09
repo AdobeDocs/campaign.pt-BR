@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '2258'
 ht-degree: 93%
@@ -86,11 +86,11 @@ Enquanto para **Visitors**, a lista conterá as seguintes dimensões de filtro:
 
 ### Trabalhar com dados adicionais {#select-data}
 
-Uma atividade **[!UICONTROL Query]** permite que você selecione dados básicos para criar a população de destino. Para obter mais informações, consulte [esta seção](query.md#create-a-query).
+Uma atividade **[!UICONTROL Query]** permite que você selecione dados básicos para criar a população de destino. Para obter mais informações, consulte [esta seção](query.md#creating-a-query).
 
 Também é possível usar as seguintes atividades para consultar e refinar dados do banco de dados: [Incremental query](incremental-query.md) e [Read list](read-list.md).
 
-É possível coletar dados adicionais para serem encaminhados e processados durante o ciclo de vida do fluxo de trabalho. Para obter mais informações, consulte [Adicionar dados](query.md#add-data) e [Editar dados adicionais](#edit-additional-data).
+É possível coletar dados adicionais para serem encaminhados e processados durante o ciclo de vida do fluxo de trabalho. Para obter mais informações, consulte [Adicionar dados](query.md#adding-data) e [Editar dados adicionais](#edit-additional-data).
 
 ### Editar dados adicionais {#edit-additional-data}
 
