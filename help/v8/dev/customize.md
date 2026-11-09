@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 5%
+source-wordcount: '503'
+ht-degree: 6%
 ---
 # Personalizar sua instância {#gs-ac-custom}
 
@@ -92,7 +92,7 @@ A interface do Adobe Campaign usa muitas aplicações web para acessar, gerencia
 
 Os aplicativos Web internos são armazenados na pasta **Administration > Configuration > Web applications** do Explorer.
 
-Saiba como criar uma página de visão geral no Campaign na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-applications/use-cases-creating-overviews#creating-a-single-page-web-application){target="_blank"}
+Saiba como criar uma página de visão geral no Campaign em [esta seção](web/use-cases-creating-overviews.md#creating-a-single-page-web-application)
 
 
 ## Personalizar listas e criar filtros {#gs-lists-and-filters}

@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '3864'
+source-wordcount: '3849'
 ht-degree: 96%
 ---
 # Importar dados para o Campaign {#ootb-profiles}
@@ -462,7 +462,7 @@ Use o Campaign para criar formulários web e coletar e gerenciar informações d
 
 ![](assets/web-form-page.png)
 
-Saiba como criar formulários Web na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=pt-BR){target="_blank"}.
+Saiba como criar formulários Web em [esta seção](../dev/web/about-web-forms.md).
 
 **Tópicos relacionados**
 

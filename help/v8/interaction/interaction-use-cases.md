@@ -24,19 +24,19 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 5%
+source-wordcount: '42'
+ht-degree: 14%
 ---
 # Casos de uso
 
-Aproveite os recursos de interação do Campaign por meio desses casos de uso passo a passo disponíveis na documentação do Campaign Classic v7:
+Aproveite os recursos de interação do Campaign por meio desses casos de uso passo a passo:
 
-[Criar e aplicar uma regra de apresentação](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html?lang=pt-BR){target="_blank"}
+[Criar e aplicar uma regra de apresentação](presentation-rules.md)
 
-[Enviar uma entrega de oferta por email](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=pt-BR){target="_blank"}
+[Enviar uma entrega de oferta por email](offers-on-an-outbound-channel.md)
 
-[Apresentar uma oferta a um visitante anônimo](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=pt-BR){target="_blank"}
+[Apresentar uma oferta a um visitante anônimo](offers-on-an-inbound-channel.md#presenting-an-offer-to-an-anonymous-visitor)
 
-[Executar uma simulação de oferta](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=pt-BR){target="_blank"}
+[Executar uma simulação de oferta](offers-on-an-outbound-channel.md#perform-an-offer-simulation)

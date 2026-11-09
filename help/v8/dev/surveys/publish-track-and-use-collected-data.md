@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 90%
+source-wordcount: '896'
+ht-degree: 93%
 ---
 # Publicar, rastrear e usar dados coletados{#publish-track-and-use-collected-data}
 
@@ -39,7 +39,7 @@ Depois que o formulário tiver sido criado, configurado e publicado, é possíve
 
 >[!NOTE]
 >
->O ciclo de vida de uma pesquisa no Adobe Campaign, bem como seus modos de publicação e entrega são semelhantes aos dos formulários Web: esses são detalhados [nesta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>O ciclo de vida de uma pesquisa no Adobe Campaign, bem como seus modos de publicação e entrega são semelhantes aos dos formulários Web: esses são detalhados [nesta seção](../web/about-web-forms.md).
 
 ## Painel de pesquisa {#survey-dashboard}
 
@@ -69,7 +69,7 @@ A origem é indicada na URL da pesquisa adicionando os seguintes caracteres:
 
 enquanto a pesquisa está sendo editada, o URL contém o parâmetro **[!UICONTROL __uuid]**, indicando que está em uma fase de teste e ainda não online. Ao acessar a pesquisa por meio dessa URL, os registros criados não são considerados no acompanhamento (relatórios). A origem é forçada ao valor **[!UICONTROL Adobe Campaign]**.
 
-Para obter mais informações sobre parâmetros de URL, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties#form-url-parameters){target="_blank"}.
+Para obter mais informações sobre parâmetros de URL, consulte [esta página](../web/defining-web-forms-properties.md#form-url-parameters).
 
 ### Relatórios sobre pesquisas {#reports-on-surveys}
 

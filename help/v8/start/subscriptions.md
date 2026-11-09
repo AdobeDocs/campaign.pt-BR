@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 29%
+source-wordcount: '490'
+ht-degree: 30%
 ---
 # Gerenciar assinaturas e cancelamentos de assinaturas {#optin-optout}
 
@@ -67,7 +67,7 @@ Para assinar (aceitar) um perfil para um serviço, as opções disponíveis são
 
   ![](assets/web-app.png)
 
-  Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"}.
+  Saiba mais [nesta seção](../dev/web/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 
 * Crie um fluxo de trabalho de direcionamento e use uma atividade **[!UICONTROL Subscription service]**.

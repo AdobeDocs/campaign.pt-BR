@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 47%
+source-wordcount: '837'
+ht-degree: 48%
 ---
 # Criar espaços de oferta{#creating-offer-spaces}
 
@@ -173,4 +173,4 @@ Se um recipient não estiver qualificado para ofertas, isso será mostrado na vi
 
 A visualização pode ignorar contextos quando eles são restritos a um espaço. Esse é o caso quando o schema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada.
 
-Para obter mais informações, consulte esta amostra na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações, consulte esta amostra em [esta seção](extension-example.md).
