@@ -57,7 +57,7 @@ Para assinar (aceitar) um perfil para um serviço, as opções disponíveis são
 
 * Importar destinatários e inscrevê-los automaticamente em um serviço de informação. Para fazer isso, selecione o serviço na última etapa do assistente de importação.
 
-  Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html#step-5---additional-step-when-importing-recipients){target="_blank"}.
+  Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=pt-BR#step-5---additional-step-when-importing-recipients){target="_blank"}.
 
 * Usar um formulário da Web para que os destinatários possam subscrever-se a um serviço.
 
