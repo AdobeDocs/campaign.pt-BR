@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 66d00cbaf20d714f56ab02bba593cff4a0d23571
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1071'
 ht-degree: 13%
 ---
 # Introdução à arquitetura do Campaign{#gs-ac-archi}
@@ -51,7 +51,7 @@ Dois tipos de ambientes estão disponíveis:
 
 É possível exportar e importar pacotes de um ambiente para outro.
 
-Saiba mais sobre pacotes na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=pt-BR){target="_blank"}
+Saiba mais sobre pacotes na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
 ## Modelos de implantação {#ac-deployment}
 
@@ -82,7 +82,7 @@ O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA
 
 >[!AVAILABILITY]
 >
->Esse recurso está disponível somente para clientes com várias configurações de instâncias mid-sourcing (MID).
+>Esse recurso está na disponibilidade limitada (DL) e está disponível somente para clientes com várias configurações de instâncias de mid-sourcing (MID).
 
 Dependendo do pacote do Campaign v8, você recebe um número específico de instâncias de mid-sourcing responsáveis pela execução dos deliveries.
 
