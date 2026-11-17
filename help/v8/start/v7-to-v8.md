@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 76%
+source-wordcount: '732'
+ht-degree: 73%
 ---
 # Transição do [!DNL Campaign Classic] v7 para o [!DNL Campaign] v8{#gs-matrix}
 
@@ -91,7 +91,7 @@ Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../../v8/ar
 
 ## Usar sua Adobe ID para se conectar ao Campaign{#adobe-id}
 
-Os usuários do Campaign se conectam apenas por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos da Adobe associados a uma única conta, para todas as soluções da Adobe Experience Cloud.
+Os usuários do Campaign se conectam apenas por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos da Adobe associados a uma única conta, para todas as soluções do [!DNL Adobe CX Enterprise].
 
 Saiba como se conectar a [!DNL Campaign] em [esta página](connect.md).
 

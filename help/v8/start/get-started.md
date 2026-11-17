@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1055'
 ht-degree: 87%
 ---
 # Introdução ao Adobe Campaign{#gs-ac-v8}
@@ -129,7 +129,7 @@ O recurso de relatório de campanha facilita a criação de relatórios dinâmic
 
 Saiba mais sobre os recursos de relatórios e rastreamento [nesta seção](../reporting/gs-reporting.md).
 
-## Integrações com a Adobe Experience Cloud {#adobe-experience-cloud-integrations}
+## [!DNL Adobe CX Enterprise] integrações {#adobe-experience-cloud-integrations}
 
 Você pode combinar as funcionalidades de entrega e as funcionalidades avançadas de gerenciamento de campanhas do Adobe Campaign com um conjunto de soluções criadas para ajudar a personalizar a experiência do usuário: os acionadores do Adobe Experience Manager, Adobe Analytics, Adobe Target ou Adobe Experience Cloud, por exemplo.
 

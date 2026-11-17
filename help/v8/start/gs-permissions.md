@@ -26,9 +26,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '513'
 ht-degree: 17%
 ---
 # Introdução às permissões{#gs-permissions}
@@ -69,9 +69,9 @@ Saiba como adicionar usuários em [esta página](manage-permissions.md#add-users
 
 ## Sobre perfis de produto{#ootb-product-profiles}
 
-Perfis de produto são grupos de produtos e serviços que podem ser atribuídos a usuários. Na Adobe Experience Cloud, as permissões se baseiam no perfil de um produto, não no usuário. No entanto, você pode delegar direitos administrativos a usuários específicos.
+Perfis de produto são grupos de produtos e serviços que podem ser atribuídos a usuários. No [!DNL Adobe CX Enterprise], as permissões se baseiam no perfil de um produto, não no usuário. No entanto, você pode delegar direitos administrativos a usuários específicos.
 
-Na Admin Console, cada **perfil de produto** da Adobe Experience Cloud para o Campaign está associado a um **grupo de operadores** no Console do Cliente do Campaign.
+Na Admin Console, cada [!DNL CX Enterprise] **perfil de produto** do Campaign está associado a um **grupo de operadores** no Console do Cliente do Campaign.
 
 Saiba como criar e atribuir perfis de produto em [esta página](manage-permissions.md#create-product-profile).
 

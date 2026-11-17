@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 91%
+source-wordcount: '1661'
+ht-degree: 88%
 ---
 # Notas de versão de 2024 {#2024-rn}
 
@@ -188,7 +188,7 @@ _14 de fevereiro de 2024_
 
 ### Novos recursos {#new-8-6-1}
 
-* A partir desta versão, você terá acesso à nova **Interface do Campaign Web**, disponível por meio do ambiente central do Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços. Saiba como se conectar à Adobe Experience Cloud e acessar a interface do Adobe Campaign Web [nesta página](campaign-ui.md#ac-web-ui).
+* A partir desta versão, você terá acesso à nova **interface da Web do Campaign**, disponível por meio do ambiente [!DNL Adobe CX Enterprise] central. [!DNL CX Enterprise] é a família integrada de aplicativos de marketing digital, produtos e serviços da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços. Saiba como se conectar ao [!DNL CX Enterprise] e acessar a interface da Web do Adobe Campaign [nesta página](campaign-ui.md#ac-web-ui).
 
   >[!AVAILABILITY]
   >

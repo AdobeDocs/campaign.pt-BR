@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 58%
+source-wordcount: '1590'
+ht-degree: 56%
 ---
 # Trabalhar com o Campaign e o Adobe Analytics {#ac-aa}
 
@@ -49,7 +49,7 @@ Essa integração permite que o Adobe Campaign e o Adobe Analytics interajam por
 
 >[!NOTE]
 >
->Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq-comprehensive.md#support) para conectar o Campaign aos serviços e soluções da Adobe Experience Cloud. O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
+>Como usuário do Managed Cloud Services, [contate a Adobe](../start/campaign-faq-comprehensive.md#support) para conectar o Campaign aos serviços e soluções [!DNL Adobe CX Enterprise]. O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
 
 Usando o Adobe Analytics Connector, o Adobe Campaign tem uma forma de medir o público-alvo da Internet (Web Analytics). As ferramentas do Web Analytics permitem que o Adobe Campaign encaminhe indicadores e atributos de campanha para o Analytics.
 
@@ -254,7 +254,7 @@ Este fluxo de trabalho está disponível na árvore do Campaign Explorer, na pas
 
 ![](assets/webanalytics_workflows.png)
 
-O fluxo de trabalho **[!UICONTROL Sending of indicators and campaign attributes]** permite enviar indicadores de campanha de email via Adobe Campaign para a Adobe Experience Cloud usando o Adobe Analytics Connector. Esse fluxo de trabalho é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
+O fluxo de trabalho **[!UICONTROL Sending of indicators and campaign attributes]** permite enviar indicadores de campanha de email via Adobe Campaign para o [!DNL CX Enterprise] usando o Adobe Analytics Connector. Esse fluxo de trabalho é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
 
 Observe que esse fluxo de trabalho não deve ser reiniciado ou todos os dados anteriores podem distorcer os resultados do Analytics.
 
@@ -288,7 +288,7 @@ Os atributos enviados são os seguintes:
 
 ## Rastrear entregas {#tracking-deliveries-in-adobe-campaign}
 
-Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois que o Adobe Campaign enviou a entrega, é necessário fazer referência ao conector correspondente nas propriedades de entrega. Para fazer isso, siga as etapas abaixo:
+Para que o [!DNL CX Enterprise] possa rastrear a atividade nos sites, depois que a entrega é enviada pelo Adobe Campaign, é necessário fazer referência ao conector correspondente nas propriedades de entrega. Para fazer isso, siga as etapas abaixo:
 
 1. Abra a entrega da campanha a ser rastreada.
 

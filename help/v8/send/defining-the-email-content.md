@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 93%
+source-wordcount: '2111'
+ht-degree: 91%
 ---
 # Definir o conteúdo do email {#defining-the-email-content}
 
@@ -85,6 +85,10 @@ Também é possível inserir emoticons na linha do assunto com a janela pop-up *
 >[!IMPORTANT]
 >
 >A versão 8.9.3 inclui uma atualização da lista de permissões de URL externa. Verifique se os domínios usados no conteúdo da mensagem foram adicionados à lista de permissões aprovada da instância para que os recursos continuem sendo carregados sem interrupção. Como administrador do Campaign, use o Painel de controle para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
+
+>[!IMPORTANT]
+>
+>Não use a marca HTML `<base>` no seu conteúdo de email. Por motivos de segurança, essa tag não é compatível e pode impedir que o conteúdo seja carregado no editor de conteúdo. Em vez disso, use URLs absolutos para seus links e recursos externos.
 
 O conteúdo da mensagem é definido na seção inferior da janela de configuração de entrega.
 
