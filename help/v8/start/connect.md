@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 98%
+source-wordcount: '1103'
+ht-degree: 94%
 ---
 # Conectar-se ao Adobe Campaign v8{#gs-ac-connect}
 
@@ -146,14 +146,14 @@ Saiba mais sobre usuários e como definir suas permissões [nesta seção](gs-pe
 
 ### Interface da web {#connect-web-ui}
 
-A partir da versão 8.6 do Campaign, você terá acesso à nova **interface de usuário do Campaign Web**, disponível por meio do ambiente central da Adobe Experience Cloud. A Experience Cloud é a família integrada de aplicativos, produtos e serviços de marketing digital da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços.
+A partir da versão v8.6 do Campaign, você terá acesso à nova **interface de usuário da Web do Campaign**, disponível por meio do ambiente [!DNL Adobe CX Enterprise] central. [!DNL CX Enterprise] é a família integrada de aplicativos de marketing digital, produtos e serviços da Adobe. Com sua interface intuitiva, você pode acessar rapidamente os aplicativos em nuvem, recursos do produto e serviços.
 
 >[!AVAILABILITY]
 >
 >A interface do Campaign Web só está disponível para usuários que se conectam ao Adobe Campaign com sua Adobe ID. Saiba mais sobre o [Sistema de gerenciamento de identidades (IMS) da Adobe](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}.
 >
 
-Saiba como se conectar à Adobe Experience Cloud e acessar a interface do Adobe Campaign Web [nesta página](campaign-ui.md#ac-web-ui).
+Saiba como se conectar ao [!DNL CX Enterprise] e acessar a interface da Web do Adobe Campaign [nesta página](campaign-ui.md#ac-web-ui).
 
 Saiba mais na [documentação da interface do Adobe Campaign Web](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 

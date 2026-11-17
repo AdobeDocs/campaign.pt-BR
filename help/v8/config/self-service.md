@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 92%
+source-wordcount: '516'
+ht-degree: 90%
 ---
 # Painel de controle do Campaign {#ac-control-panel}
 
@@ -51,7 +51,7 @@ Saiba mais em [documentação do Painel de controle do Campaign](https://experie
 
 ## Como acessar o Painel de controle? {#ac-control-panel-access}
 
-O Painel de controle está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores.
+O Painel de Controle está disponível diretamente em [!DNL Adobe CX Enterprise]. Ele pode ser acessado apenas por usuários administradores.
 
 >[!IMPORTANT]
 >
