@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 30b0f5eda9c80b72af5c8574e01cec6965b05564
 workflow-type: tm+mt
-source-wordcount: '1944'
-ht-degree: 51%
+source-wordcount: '1949'
+ht-degree: 50%
 ---
 # Trabalhar com pacotes de dados{#data-packages}
 
@@ -59,6 +59,8 @@ ht-degree: 51%
 Você pode usar pacotes de dados para exportar e importar dados e configurações personalizadas da plataforma. Os pacotes podem conter diferentes tipos de configurações e componentes, filtrados ou não.
 
 Em pacotes de dados do Campaign, as entidades do banco de dados do Adobe Campaign podem ser exibidas em arquivos XML. Em um pacote, cada entidade é representada com todos os seus dados.
+
+Esta página descreve pacotes de dados **personalizados**, que você cria e gerencia. Os pacotes que fornecem os recursos do Campaign são **pacotes integrados**, que o Adobe instala e gerencia. Saiba mais em [Pacotes internos](../architecture/built-in-packages.md).
 
 O princípio de **pacotes de dados** é exportar uma configuração de dados e integrá-la a outro ambiente do Adobe Campaign. Saiba como manter um conjunto consistente de pacotes de dados nesta [seção](#data-package-best-practices).
 
@@ -302,11 +304,9 @@ O conteúdo do pacote a ser importado é exibido na seção intermediária do ed
 
 Clique em **[!UICONTROL Next]** e em **[!UICONTROL Start]** para iniciar a importação.
 
-### Instalar um pacote integrado {#install-a-standard-package}
+### Pacotes incorporados {#install-a-standard-package}
 
-Pacotes incorporados (também conhecido como pacotes padrão) são instalados quando o Adobe Campaign é configurado. Dependendo das suas permissões, do modelo de implantação e da oferta de produto, você pode importar novos pacotes padrão.
-
-Consulte o contrato de licença para verificar quais pacotes você pode instalar.
+O Adobe instala e gerencia os pacotes incorporados no Campaign v8. Saiba mais em [Pacotes internos](../architecture/built-in-packages.md).
 
 ## Práticas recomendadas para o pacote de dados {#data-package-best-practices}
 
