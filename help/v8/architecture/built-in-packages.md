@@ -26,10 +26,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: b37128ff4180befd5655c0c16b9ff0834235a84a
+source-git-commit: 9f70a309a882347a0df658d00c47127f31d28eb9
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 17%
+source-wordcount: '820'
+ht-degree: 16%
 ---
 # Pacotes incorporados {#built-in-packages}
 
@@ -65,7 +65,7 @@ A tabela a seguir lista os pacotes incorporados para obter informações. A disp
 | Controle e execução de mensagens transacionais (Centro de mensagens) | Gerencia mensagens de acionamento geradas por eventos em sistemas de informações, com maior disponibilidade e melhor gerenciamento de carga. [Saiba mais](../send/transactional.md) |
 | Canal LINE | Envia deliveries por meio do canal LINE. [Saiba mais](../send/line/line.md) |
 | Canal de correspondência direta | Envia deliveries por meio do canal de correspondência direta. [Saiba mais](../send/direct-mail.md) |
-| Canal móvel (SMS) | Envia deliveries pelo canal móvel (SMS). [Saiba mais](../send/sms/sms.md) |
+| Canal móvel (SMS) | Envia deliveries por meio do canal móvel (SMS), incluindo o conector SMS v2 (geralmente disponível desde a versão 8.9.1). [Saiba mais](../send/sms/sms.md) |
 | Canal de aplicativo móvel | Envia notificações personalizadas para dispositivos iOS e Android por meio de aplicativos. [Saiba mais](../send/push.md) |
 | Gerenciador de conteúdo | Cria informativos ou sites recorrentes e, em seguida, valida e publica suas mensagens. [Saiba mais](../../automation/workflow/content-management.md) |
 | Pesquisas online (Gerenciador de pesquisas) | Cria e gerencia formulários online para adicionar ou modificar informações de perfil, assinar, cancelar inscrição ou inserir um concurso. [Saiba mais](../dev/surveys/about-surveys.md) |
