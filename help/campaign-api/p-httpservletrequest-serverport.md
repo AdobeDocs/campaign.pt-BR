@@ -17,7 +17,7 @@ serverPort
 Exemplo: o serverPort do seguinte URL:
 
 ```javascript
-http://adobe.com:8080/nms/test.jst
+http://adobe.com/br:8080/nms/test.jst
 ```
 
 retorna a seguinte cadeia de caracteres:

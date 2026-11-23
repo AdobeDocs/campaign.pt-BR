@@ -8,7 +8,7 @@ ht-degree: 5%
 
 > Aviso:
 >
-> Esta documentação foi atualizada. Para obter mais detalhes, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/technotes/gcm-functions#decryptpassword-headding-anchor-decryptpassword-javascript).
+> Esta documentação foi atualizada. Para obter mais detalhes, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/technotes/gcm-functions#decryptpassword-headding-anchor-decryptpassword-javascript).
 
 Descriptografa uma senha armazenada em uma conta externa.
 

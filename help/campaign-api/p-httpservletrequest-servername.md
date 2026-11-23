@@ -17,7 +17,7 @@ serverName
 Exemplo: o serverName do seguinte URL:
 
 ```javascript
-      http://adobe.com:8080/nms/test.jst?id=1234&param=dummy#aFragment
+      http://adobe.com/br:8080/nms/test.jst?id=1234&param=dummy#aFragment
 ```
 
 retorna a seguinte cadeia de caracteres:

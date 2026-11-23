@@ -8,7 +8,7 @@ ht-degree: 6%
 
 > Aviso:
 >
-> Esta função está totalmente obsoleta. Para obter mais detalhes, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/technotes/gcm-functions#deprecated-functions-headding-anchor-depracated-functions).
+> Esta função está totalmente obsoleta. Para obter mais detalhes, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/technotes/gcm-functions#deprecated-functions-headding-anchor-depracated-functions).
 
 Criptografa uma cadeia de caracteres com a chave da instância ou qualquer outra chave.
 
