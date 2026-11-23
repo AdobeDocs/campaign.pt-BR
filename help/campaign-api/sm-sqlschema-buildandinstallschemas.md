@@ -16,7 +16,7 @@ BuildAndInstallSchemas ( String dataSource, String namespace, XML tableList )
 
 **dataSource** ID da fonte de dados
 
-Namespace **1}**
+Namespace **1&rbrace;**
 
 **tableList** Lista de tabelas selecionadas
 
