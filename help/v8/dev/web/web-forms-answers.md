@@ -153,4 +153,4 @@ Você pode selecionar uma pasta de pesquisa para a reconciliação e a pasta de 
 >
 >As possíveis operações são: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
 >A pasta padrão de um operador é a primeira pasta a que o operador tem permissão de gravação.\
->Consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+>Consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
