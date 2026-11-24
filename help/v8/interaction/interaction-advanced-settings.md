@@ -20,20 +20,20 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '120'
 ht-degree: 0%
 ---
 # Configurações avançadas do módulo de interação
 
 A configuração do módulo de interação do Campaign é reservada para usuários especialistas. As configurações avançadas estão detalhadas na **documentação do Campaign Classic v7**:
 
-Saiba como usar dados contextuais adicionais nas ofertas [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html?lang=pt-BR){target="_blank"}.
+Saiba como usar dados contextuais adicionais nas ofertas [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html){target="_blank"}.
 
 Saiba como enriquecer os critérios de qualificação de suas ofertas [nesta página](extension-example.md).
 
-Saiba mais sobre as etapas para criar um ambiente de teste [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre as etapas para criar um ambiente de teste [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html){target="_blank"}.
 
-Saiba como usar ganchos para modificar o comportamento padrão do Mecanismo de oferta [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html?lang=pt-BR){target="_blank"}.
+Saiba como usar ganchos para modificar o comportamento padrão do Mecanismo de oferta [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html){target="_blank"}.
 

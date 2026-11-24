@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 63%
+source-wordcount: '890'
+ht-degree: 58%
 ---
 # Criar uma oferta
 
@@ -58,7 +58,7 @@ Agora você pode usar a guia **[!UICONTROL Eligibility]** para definir:
 
 ### Período de qualificação da oferta{#eligibility-period}
 
-Na guia **[!UICONTROL Eligibility]** da oferta, defina o período de qualificação da oferta. use as listas suspensas para selecionar uma data de início e uma de término no calendário.
+Na guia **[!UICONTROL Eligibility]** da oferta, defina o período de qualificação da oferta. Use as listas suspensas para selecionar uma data de início e término no calendário.
 
 ![](assets/offer_eligibility_create_002.png)
 
@@ -80,7 +80,7 @@ Se os filtros predefinidos já tiverem sido criados, é possível selecioná-los
 
 Para permitir que o mecanismo decida entre várias ofertas que o target está qualificado, é necessário atribuir um ou mais pesos à oferta. Também é possível aplicar filtros ao target se necessário ou restringir o espaço de oferta ao qual o peso será aplicado. Uma oferta com um peso mais significativo será preferível sobre uma oferta com menos peso.
 
-É possível configurar vários pesos para a mesma oferta, por exemplo, para distinguir sub-períodos, alvos específicos ou até mesmo um espaço de oferta.
+É possível configurar vários pesos para a mesma oferta, por exemplo, para distinguir subperíodos, alvos específicos ou até mesmo um espaço de oferta.
 
 Por exemplo, uma oferta pode ter um peso de A para contatos com idade entre 18 e 25 e um peso de B para contatos acima desse intervalo. Se uma oferta estiver qualificada para o verão todo, ela também poderá ter um peso de A em julho e um peso de B em agosto.
 
@@ -141,7 +141,7 @@ Use a guia **[!UICONTROL Content]** para definir o conteúdo da oferta.
    * **[!UICONTROL Title]**: especifique o título que quer que apareça em sua oferta. Aviso: não se refere ao rótulo da oferta, que é definido na guia **[!UICONTROL General]**.
    * **[!UICONTROL Destination URL]**: especifique a URL da sua oferta. Deve começar com &quot;http://&quot; ou &quot;https://&quot;.
    * **[!UICONTROL Image URL]**: especifique uma URL ou um caminho de acesso para a imagem da sua oferta.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**: digite o corpo da oferta na guia desejada. Para gerar o rastreamento, o **[!UICONTROL HTML content]** deve ser composto de elementos HTML que podem ser colocados em um elemento de tipo `<div>`. Por exemplo, o resultado de um elemento `<table>` na página HTML será o seguinte:
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**: digite o corpo da oferta na guia desejada. Para gerar o rastreamento, o **[!UICONTROL HTML content]** deve ser composto de elementos HTML que podem ser colocados em um elemento de tipo `<div>`. Por exemplo, o resultado de um elemento `<table>` na página do HTML será o seguinte:
 
    ```
       <div> 

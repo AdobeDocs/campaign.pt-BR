@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 88%
+source-wordcount: '1444'
+ht-degree: 86%
 ---
 # Personalizar os seus cubos{#cube-custom}
 
@@ -117,7 +117,7 @@ O Adobe Campaign também oferece uma enumeração em domínios que permite exibi
 
 ![](assets/nmx_report_sample.png)
 
-Ele é criado usando o seguinte modelo:
+Ele é criado usando o seguinte template:
 
 ![](assets/nmx_enum_domain.png)
 
@@ -255,7 +255,7 @@ Para isso:
 
    ![](assets/cube_multiple_filters.png)
 
-Cada vez que um filtro é modificado (adicionar, remover, alterar), o relatório deve ser recalculado.
+Cada vez que um filtro é modificado (adicionado, removido, alterado), o relatório deve ser recalculado.
 
 Os filtros também podem ser criados com base em uma seleção. Para fazer isso, selecione as células, linhas e colunas de origem e clique no ícone **[!UICONTROL Add a filter]**.
 

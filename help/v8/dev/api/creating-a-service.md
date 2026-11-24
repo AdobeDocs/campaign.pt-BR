@@ -19,14 +19,14 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 0%
 ---
 # Criação de um serviço com APIs{#creating-a-service-api}
 
-A criação de serviços é executada com uma solicitação **POST** no recurso de serviço.
+A criação do serviço é executada com uma solicitação **POST** no recurso de serviço.
 
 Se quiser criar o serviço com atributos específicos, adicione-os à carga. Caso contrário, o novo serviço será criado com os padrões.
 

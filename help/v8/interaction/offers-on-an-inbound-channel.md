@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '2146'
-ht-degree: 100%
+source-wordcount: '2144'
+ht-degree: 96%
 ---
 # Ofertas em um canal de entrada{#offers-on-an-inbound-channel}
 
@@ -147,7 +147,7 @@ Siga o procedimento detalhado em [Criar um ambiente de oferta](https://experienc
 
 ### Configurar o espaço de ofertas no site {#configure-the-web-offer-space-on-the-website}
 
-Para que as ofertas recém-configuradas fiquem visíveis no site, insira um código JavaScript na página HTML do site para chamar o mecanismo de interação (para mais informações, consulte [Sobre canais de entrada](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} na documentação do Campaign v8).
+Para que as ofertas recém-configuradas fiquem visíveis no site, insira o código JavaScript na página HTML do site para chamar o mecanismo do Interaction (para obter mais informações, consulte [Sobre canais de entrada](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentação do Campaign v8)).
 
 1. Vá para a página HTML e insira um atributo @id com um valor correspondente ao nome interno do espaço de ofertas anônimo criado anteriormente (consulte [Criar espaços de oferta anônimos](#creating-anonymous-offer-spaces)), precedido por **i_**.
 
@@ -340,7 +340,7 @@ Neste exemplo, a identificação de contato ocorre graças ao endereço de email
 Vamos criar duas categorias separadas: a categoria **Melhor oferta** e a categoria **Parceiro**, cada uma com duas ofertas personalizadas.
 
 1. Vá para o nó **[!UICONTROL Offer catalogs]** no ambiente identificado.
-1. Como no ambiente anônimo, adicione duas pastas de **[!UICONTROL Offer category]** com **Best Offer** e **Partner** como rótulos.
+1. Como no ambiente anônimo, adicione duas pastas **[!UICONTROL Offer category]** com **Melhor Oferta** e **Parceiro** como rótulos.
 
    ![](assets/offer_inbound_fallback_example_009.png)
 
@@ -417,7 +417,7 @@ Para configurar esses espaços de ofertas na página HTML do site, siga o seguin
 
    A URL contém **EnvNeobankRecip**, o nome interno do ambiente identificado.
 
-Ao abrir a página da Web, o script permite chamar o mecanismo do Interaction para exibir o conteúdo de ofertas nos espaços relevantes da página da Web. Em uma única chamada ao servidor do Adobe Campaign, o mecanismo determina o ambiente, o espaço de oferta e as categorias a serem selecionadas.
+Quando você abre a página da Web, o script permite chamar o mecanismo do Interaction para exibir o conteúdo de ofertas nos espaços relevantes da página da Web. Em uma única chamada ao servidor do Adobe Campaign, o mecanismo determina o ambiente, o espaço de oferta e as categorias a serem selecionadas.
 
 Neste exemplo, o mecanismo reconhece o ambiente identificado (**EnvNeobankIdnRecip**). Identifica o espaço de oferta (**OSWebBestOfferIdentified**) e a categoria **Best Offer** (**CatBestOffer**) para os primeiros e segundo espaços de oferta na página da Web, bem como o espaço de oferta (**OSWebPartnerIdentified**) e a categoria **Partner** (**CatPartner**) para o terceiro espaço de oferta do site.
 

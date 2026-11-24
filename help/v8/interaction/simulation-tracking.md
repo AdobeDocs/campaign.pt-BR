@@ -29,10 +29,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 83%
+source-wordcount: '164'
+ht-degree: 66%
 ---
 # Rastreamento de simulação{#simulation-tracking}
 
@@ -44,12 +44,12 @@ Os resultados da simulação contêm um detalhamento de propostas por classifica
 
 É possível salvar estes resultados e exportá-los se necessário, criando uma análise descritiva dos resultados. Para fazer isso, clique no link apropriado na janela de resultados.
 
-Consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} para mais informações sobre o assistente de análise descritiva.
+Consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} para mais informações sobre o assistente de análise descritiva.
 
 ![](assets/offer_simulation_012.png)
 
 Uma tabela dinâmica fornece uma visão rápida dos detalhamentos de oferta por classificação. Como todos os relatórios do Adobe Campaign, é possível exportar, imprimir, arquivar ou exibir os relatórios em um navegador da Web.
 
-Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
+Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
 
 ![](assets/offer_simulation_013.png)

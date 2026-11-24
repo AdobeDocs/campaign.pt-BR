@@ -23,7 +23,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 Os conectores Adobe Campaign Managed Cloud Service Destination e Source permitem uma integração perfeita entre o Adobe Campaign e o Adobe Experience Platform. Com essa integração, você pode:
 
-* Envie públicos-alvo da Adobe Experience Platform para a Adobe Campaign e envie de volta os logs de entrega e rastreamento para a Adobe Experience Platform para fins de análise,
+* Envie públicos-alvo da Adobe Experience Platform para a Adobe Campaign e envie de volta logs de entrega e rastreamento para a Adobe Experience Platform para fins de análise,
 * Traga atributos de perfil do Adobe Experience Platform para o Adobe Campaign e tenha um processo de sincronização em vigor para que eles possam ser atualizados regularmente.
 
 ## Enviar públicos da Adobe Experience Platform para o Campaign {#audiences}
@@ -56,7 +56,7 @@ As principais etapas para enviar públicos-alvo da Adobe Experience Platform par
 
 * Use uma **conexão Source** do Adobe Campaign Managed Cloud Services para enviar a entrega do Adobe Campaign e os logs de rastreamento para o Adobe Experience Platform:
 
-  Para fazer isso, configure uma nova **conexão com o Source** para assimilar eventos do Campaign na Adobe Experience Platform. Forneça detalhes sobre a instância do Campaign e o esquema a ser usado, selecione um conjunto de dados onde os dados devem ser assimilados e configure os campos a serem recuperados. [Saiba como criar uma conexão de origem do Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/sources-campaign-ui-en)
+  Para fazer isso, configure uma nova **conexão com o Source** do Adobe Campaign Managed Cloud Services para assimilar eventos do Campaign no Adobe Experience Platform. Forneça detalhes sobre a instância do Campaign e o esquema a ser usado, selecione um conjunto de dados onde os dados devem ser assimilados e configure os campos a serem recuperados. [Saiba como criar uma conexão de origem do Adobe Campaign Managed Cloud Services](https://www.adobe.com/go/sources-campaign-ui-en)
 
   ![](assets/aep-logs.png){width="800" align="center"}
 

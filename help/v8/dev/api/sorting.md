@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '763'
 ht-degree: 2%
 ---
 # Operações adicionais {#additional-operations}
@@ -108,7 +108,7 @@ Para identificar os metadados de um filtro e determinar como usá-lo, é necess�
 
 ***Solicitação de exemplo***
 
-As cargas de amostra abaixo mostram como recuperar os metadados do filtro &quot;byText&quot; para o recurso &quot;perfil&quot;. Primeiro, execute uma solicitação GET na metada de recurso &quot;perfil&quot;.
+As cargas de amostra abaixo mostram como recuperar os metadados do filtro &quot;byText&quot; para o recurso &quot;perfil&quot;. Primeiro, execute uma solicitação GET nos metadados de recurso de &quot;perfil&quot;.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
@@ -243,7 +243,7 @@ os campos email ou sobrenome (o filtro byText pesquisa nos campos email e sobren
   }
   ```
 
-* Exemplo de solicitação GET para recuperar os recursos de serviços com o tipo &quot;email&quot; e o rótulo &quot;esporte&quot;.
+* Exemplo de solicitação GET para recuperar os recursos de serviço com o tipo &quot;email&quot; e o rótulo &quot;esporte&quot;.
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/byText?channel=email&text=sport \
@@ -283,8 +283,8 @@ Se quiser usar um filtro personalizado, será necessário criá-lo e personaliz�
 
 Para obter mais informações, consulte a documentação do Campaign Standard:
 
-* [Configurando definição de filtro](https://helpx.adobe.com/br/campaign/standard/developing/using/configuring-filter-definition.html).
-* [Caso de uso: chamada de um recurso usando uma chave de identificação composta](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html?lang=pt-BR).
+* [Configurando definição de filtro](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html).
+* [Caso de uso: chamada de um recurso usando uma chave de identificação composta](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html).
 
 <br/>
 
@@ -354,7 +354,7 @@ A API REST do Adobe Campaign pode contar o número de registros em uma solicita�
 
 ***Solicitação de exemplo***
 
-Para contar todos os serviços que têm um valor de **messageType** igual a &quot;sms&quot;, execute uma solicitação GET com o filtro **byChannel**.
+Para contar todos os serviços que têm um valor **messageType** igual a &quot;sms&quot;, execute uma solicitação GET com o filtro **byChannel**.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \

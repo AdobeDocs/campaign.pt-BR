@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 94%
+ht-degree: 91%
 ---
 # Caso de uso: criar um formulário de indicação{#use-case-creating-a-refer-a-friend-form}
 
@@ -109,7 +109,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    * Esse modelo contém um link para o formulário da competição e o link de subscrição para o indicado se subscrever no boletim informativo.
 
-     O link de subscrição é inserido por um bloco de personalização. Por padrão, ele permite subscrever perfis no serviço de **boletim informativo.** Esse bloco de personalização pode ser alterado para atender a sua necessidade, por exemplo, para subscrever o destinatário a um serviço diferente.
+     O link de subscrição é inserido por um bloco de personalização. Por padrão, ele permite subscrever perfis no serviço de **boletim informativo.** Esse bloco de personalização pode ser alterado para atender às suas necessidades, por exemplo, para subscrever o recipient a um serviço diferente.
 
    * O nome interno (&quot;quem indicou&quot; aqui) será usado no script de entrega da mensagem conforme mostrado abaixo.
 

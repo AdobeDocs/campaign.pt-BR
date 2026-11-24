@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1278'
 ht-degree: 58%
 ---
 # Enviar uma oferta{#send}
@@ -180,7 +180,7 @@ A entrega armazena automaticamente a classificação e o peso das ofertas. Essas
 
 A atividade **[!UICONTROL Offer engine]** também permite especificar uma chamada para o mecanismo de oferta antes da entrega.
 
-Para obter mais informações sobre a atividade de **Mecanismo de oferta**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre a atividade de **Mecanismo de oferta**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}.
 
 Esta atividade funciona de acordo com o mesmo princípio que a atividade **Enriquecimento** com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de uma entrega.
 
@@ -189,7 +189,7 @@ Esta atividade funciona de acordo com o mesmo princípio que a atividade **Enriq
 Após configurar sua atividade **Query**:
 
 1. Adicione e abra uma atividade de **[!UICONTROL Offer engine]**.
-1. Preencha os vários campos disponíveis para especificar a chamada para Offer engine parameters (espaços de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros.
+1. Preencha os vários campos disponíveis para especificar a chamada para os parâmetros Offer engine (espaço de ofertas, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros.
 
    >[!CAUTION]
    >
@@ -203,7 +203,7 @@ Após configurar sua atividade **Query**:
 
 A atividade **[!UICONTROL Offers by cell]** permite distribuir a população de entrada (de uma consulta, por exemplo) em vários segmentos e especificar uma oferta a ser apresentada para cada um desses segmentos.
 
-Para obter mais informações sobre a atividade **Oferecer por célula**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre a atividade **Oferecer por célula**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}.
 
 Para fazer isso, realize o seguinte processo:
 

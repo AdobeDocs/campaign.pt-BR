@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2568'
 ht-degree: 4%
 ---
 # Introdução aos formulários de entrada {#gs-ac-forms}
@@ -529,7 +529,7 @@ Exemplo no campo &quot;Sexo&quot;:
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## Adicionar botão de opção {#radio-button}
+## Adicionar um botão de opção {#radio-button}
 
 Um botão de opção permite escolher entre várias opções. As marcas **`<input>`** são usadas para listar as opções possíveis, e o atributo **checkedValue** especifica o valor associado à escolha.
 

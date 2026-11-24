@@ -17,10 +17,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 98%
 ---
 # O que é capacidade de entrega{#about-deliverability}
 
@@ -84,7 +84,7 @@ O Adobe Campaign gerencia uma lista que reúne reclamações de spam, rejeiçõe
 
 Para proteger sua capacidade de entrega, os destinatários cujos endereços estão nessa lista são excluídos por padrão de todas as entregas futuras, porque o envio para esses contatos pode prejudicar sua reputação de envio.
 
-Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos é muito alta. A quarentena, portanto, evita que você seja adicionado à lista de bloqueios por esses provedores.
+Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos é muito alta. A quarentena, portanto, evita que você seja adicionado a um incluo na lista de bloqueios por esses provedores.
 
 Para obter mais informações, consulte estas seções:
 

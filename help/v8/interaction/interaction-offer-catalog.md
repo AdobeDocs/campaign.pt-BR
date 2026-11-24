@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 29%
+ht-degree: 31%
 ---
 # Criar um catálogo de oferta
 
@@ -67,13 +67,13 @@ Para criar uma nova categoria, siga as etapas abaixo:
 
    * **[!UICONTROL Edit query]** para aplicar filtros ao destino da oferta.
 
-   * Um resumo das regras de qualificação.Para visualizá-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]**.
+   * Um resumo das regras de qualificação. Para visualizá-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]**.
 
 ## Adicionar uma categoria substituta
 
 Para garantir que todos os recipients recebam uma apresentação de oferta, é possível adicionar sistematicamente uma ou várias categorias de ofertas nas recomendações.
 
-Essas ofertas de fallback devem ter um peso baixo (mas não nulo), para que sejam consideradas somente se nenhuma oferta de peso mais alto for qualificada.
+Essas ofertas de fallback devem ter um peso baixo (mas não nulo), para que sejam consideradas somente se nenhuma oferta de peso maior for qualificada.
 
 Além disso, não deve haver uma regra de apresentação aplicada a essas ofertas para garantir que elas estejam sempre incluídas nas recomendações. Isso significa que, durante uma apresentação, se nenhuma oferta de peso mais alto estiver disponível, o recipient receberá pelo menos uma oferta desta categoria.
 

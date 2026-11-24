@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 36%
+source-wordcount: '1432'
+ht-degree: 35%
 ---
 # Trabalhar com o Campaign e o Microsoft Dynamics 365{#crm-ms-dynamics}
 
@@ -84,7 +84,7 @@ Saiba mais na [documentação do Microsoft Dynamics 365](https://docs.microsoft.
 
 ### Gerar o identificador de chave de certificado e a ID de chave do Microsoft Dynamics {#config-certificate-key-id}
 
-Para obter o **Identificador de chave de certificado (customKeyIdentifier)** e a **ID de chave (keyId)**, carregue um certificado. Os certificados podem ser usados como segredos para provar a identidade do aplicativo ao solicitar um token. Também podem ser chamadas de chaves públicas.
+Para obter o **Identificador de chave de certificado (customKeyIdentifier)** e a **ID de chave (keyId)**, carregue um certificado. Os certificados podem ser usados como segredos para provar a identidade do aplicativo ao solicitar um token. Elas também podem ser chamadas de chaves públicas.
 
 Siga as etapas abaixo:
 
@@ -145,7 +145,7 @@ O usuário do aplicativo é o usuário que o aplicativo registrado acima usará.
 **Etapa 1**: criar um usuário não interativo no Azure Active Directory
 
 1. Clique em **Azure Ative Directory > Usuários** e clique em **Novo usuário**.
-1. Dê um nome adequado que você deseja usar, e o nome de usuário deve ser um formato do email.
+1. Dê um nome adequado que você deseja usar, e o nome de usuário deve ser um formato de email.
 1. Escolha **Administrador do Dynamics 365** na **Função de diretório**.
 
 **Etapa 2**: atribuir uma licença adequada ao usuário criado

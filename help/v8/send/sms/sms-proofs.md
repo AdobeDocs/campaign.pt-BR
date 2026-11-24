@@ -26,9 +26,9 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '247'
 ht-degree: 6%
 ---
 # Enviar uma prova de entrega de SMS {#sms-proof}
@@ -46,7 +46,7 @@ Você pode enviar uma prova para o delivery de SMS para validá-lo:
    * **[!UICONTROL Definition of a specific proof target]**: permite consultar com filtros os endereços no banco de dados como o destino da prova
    * **[!UICONTROL Substitution of the address]**: permite inserir seus endereços de teste e usar os dados do destinatário de destino para validar o conteúdo. Os endereços de substituição podem ser inseridos manualmente ou selecionados na lista suspensa. A [enumeração](../../config/enumerations.md) associada é **[!UICONTROL Substitution address (rcpAddress)]**.
      Por padrão, a substituição é executada aleatoriamente, mas você pode selecionar um recipient específico do público-alvo principal, por meio do ícone **[!UICONTROL Detail]**.
-   * **[!UICONTROL Seed addresses]**: permite acesso a seed addresses para ser o destino da prova. Esses endereços podem ser importados de um arquivo ou inseridos manualmente.
+   * **[!UICONTROL Seed addresses]**: permite que você acesse seed addresses para ser o destino da prova. Esses endereços podem ser importados de um arquivo ou inseridos manualmente.
    * **[!UICONTROL Specific target and Seed addresses]**: permite combinar seed addresses e endereços de recipients.
 
 1. Depois de escolher o **[!UICONTROL Targeting mode]**, adicione seus endereços de prova de acordo com ele

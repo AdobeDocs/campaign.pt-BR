@@ -35,10 +35,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1565'
-ht-degree: 96%
+ht-degree: 93%
 ---
 # Criar a primeira entrega {#create-a-msg}
 
@@ -129,7 +129,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
      ![](assets/target-recipient-delivery.png)
 
-   * **[!UICONTROL Delivery recipients belonging to a folder]**: use esta opção para criar o público-alvo a partir das entregas de destinatários incluídos em uma pasta específica.
+   * **[!UICONTROL Delivery recipients belonging to a folder]**: use esta opção para criar o público alvo a partir dos destinatários de entregas incluídos em uma pasta específica.
 
      ![](assets/target-delivery-folder.png)
 
@@ -146,7 +146,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
      ![](assets/target-service.png)
 
    * **[!UICONTROL User filters]**: esta opção permite acessar os filtros pré-configurados para usar como critérios de filtragem de perfis no banco de dados. Os filtros pré-configurados são apresentados [nesta seção](../audiences/create-filters.md#default-filters).
-   * A opção **[!UICONTROL Exclude recipients from this segment]** permite direcionar destinatários que não atendem aos critérios definidos. Para usar essa opção, selecione a caixa apropriada e, em seguida, aplique o direcionamento, conforme definido anteriormente, para excluir os perfis resultantes.
+   * A opção **[!UICONTROL Exclude recipients from this segment]** permite direcionar destinatários que não atendem aos critérios de destino definidos. Para usar essa opção, selecione a caixa apropriada e, em seguida, aplique o direcionamento, conforme definido anteriormente, para excluir os perfis resultantes.
 
 1. Insira um nome para esse direcionamento no campo **[!UICONTROL Label]**. Por padrão, será utilizado o rótulo do primeiro critério de direcionamento. Ao combinar critérios de filtragem, é recomendável usar um nome explícito.
 1. Clique em **[!UICONTROL Finish]** para validar as opções de direcionamento.
@@ -209,7 +209,7 @@ Para obter mais informações sobre destinatários e envio de provas, consulte 
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
@@ -230,6 +230,6 @@ Para fazer isso:
 
 ## Configurar e enviar a entrega {#configuring-and-sending-the-delivery}
 
-Acesse os parâmetros de entrega para ajustar mais configurações e definir como enviar as mensagens. Você pode definir a prioridade de entrega, configurar ondas de envio, definir as configurações de novas tentativas e testar o envio da entrega. Após a conclusão dessa configuração, será possível confirmar o envio. As mensagens são enviadas imediatamente ou com base no cronograma da entrega.
+Acesse os parâmetros de entrega para ajustar mais configurações e definir como enviar as mensagens. Você pode definir a prioridade do delivery, configurar o envio de ondas, definir as configurações de nova tentativa e testar o envio do delivery. Após a conclusão dessa configuração, será possível confirmar o envio. As mensagens são enviadas imediatamente ou com base no cronograma da entrega.
 
 Saiba como definir as configurações de entrega [nesta página](../send/configure-and-send.md).

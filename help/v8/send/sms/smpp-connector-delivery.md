@@ -28,7 +28,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -120,7 +120,7 @@ As afinidades são ignoradas pelo conector de processo dedicado; ele apenas é e
 
 ## opções serverConf {#sms-serverconf-options}
 
-Algumas configurações podem ser ajustadas em serverConf.xml. Como qualquer outra configuração nesse arquivo, ele deve ser especificado no arquivo config-instance.xml. Todas as configurações estão no elemento &lt; mta2 >.
+Algumas configurações podem ser ajustadas em serverConf.xml. Como qualquer outra configuração nesse arquivo, elas devem ser especificadas no arquivo config-instance.xml. Todas as configurações estão no elemento &lt; mta2 >.
 
 Esta tabela resume todas as configurações. Os valores de sensibilidade mín./máx. dão uma ideia aproximada do intervalo que deve ser considerado na maioria dos casos. O valor de depuração é o valor a ser escolhido ao tentar encontrar problemas que não estão relacionados ao desempenho.
 

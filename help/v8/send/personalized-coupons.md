@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 98%
 ---
 # Cupons personalizados{#personalized-coupons}
@@ -94,7 +94,7 @@ Os valores de **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL 
 
 ## Inserir um cupom em uma entrega por email {#inserting-a-coupon-into-an-email-delivery}
 
-No exemplo abaixo, a entrega é criada a partir da Home page. Para obter instruções detalhadas sobre como criar um delivery, consulte [esta seção](email.md)
+No exemplo abaixo, a entrega é criada a partir da Home page. Para obter instruções detalhadas sobre como criar uma entrega, consulte [esta seção](email.md).
 1. Acesse **[!UICONTROL Campaigns]** e escolha **[!UICONTROL Deliveries]**.
 1. Clique em **[!UICONTROL Create]**.
 

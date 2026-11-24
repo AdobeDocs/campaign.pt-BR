@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1518'
-ht-degree: 55%
+ht-degree: 53%
 ---
 # Notas de versão de 2023 {#2023-rn}
 
@@ -195,5 +195,5 @@ _27 de janeiro de 2023_
 * As referências restantes à biblioteca log4j foram removidas da instalação do Campaign no Windows. (NEO-44851)
 * Corrigido um problema que poderia resultar em erro ao adicionar o indicador **Destinatários que abriram** (estimatedRecipientOpen) nos dados adicionais de uma atividade de fluxo de trabalho de **Consulta**. (NEO-46665)
 * O gerenciamento de URLs de rastreamento foi aprimorado em fluxos de trabalho com várias entregas para melhorar o desempenho. (NEO-50894) <!--OKKKK-->
-* Correção de um problema que poderia causar falha na replicação de esquemas que usam a pasta Xtkfolder. (NEO-46787) <!--OKKKK-->
-* Correção de uma causa de problema que poderia fazer com que a coluna personalizada “lastModified” fosse descartada na tabela NmsSubscription. (NEO-48402)
+* Correção de um problema que causava a falha da replicação de esquemas que usam Xtkfolder. (NEO-46787) <!--OKKKK-->
+* Correção de um problema que fazia com que a coluna personalizada &quot;lastModified&quot; fosse descartada na tabela NmsSubscription. (NEO-48402)

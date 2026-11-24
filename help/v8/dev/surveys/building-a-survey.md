@@ -15,10 +15,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '797'
-ht-degree: 98%
+ht-degree: 97%
 ---
 # Criar uma pesquisa{#building-a-survey}
 
@@ -38,7 +38,7 @@ Selecione o modelo de pesquisa (**[!UICONTROL newSurvey]** por padrão).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-As páginas do formulário são criadas usando um editor especial que permite definir e configurar campos de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo do HTML etc.). Elas podem ser coletadas em &quot;containers&quot; e dispostas de acordo com os requisitos. [Saiba mais](#adding-questions)).
+As páginas do formulário são criadas usando um editor especial que permite definir e configurar campos de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo do HTML etc.). Elas podem ser coletadas em &quot;containers&quot; e dispostas de acordo com os requisitos. [Saiba mais](#adding-questions).
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Os vários tipos de campos disponíveis são detalhados [nesta seção](../web/a
 
 ## Elementos específicos da pesquisa {#survey-specific-elements}
 
-As pesquisas online têm como base os recursos de aplicativos Web. Os recursos específicos da pesquisa são detalhados abaixo.
+As pesquisas online são baseadas nos recursos de aplicativos Web. Os recursos específicos da pesquisa são detalhados abaixo.
 
 ### Múltipla escolha {#multiple-choice}
 

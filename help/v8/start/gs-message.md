@@ -43,14 +43,14 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 76%
+ht-degree: 71%
 ---
 # Introdução a mensagens {#gs-ac-msg}
 
-Com o Adobe Campaign, você pode enviar campanhas entre canais, incluindo e-mails, SMS, notificações push e correspondências diretas e medir a eficiência usando vários relatórios dedicados. Essas mensagens são projetadas e enviadas em entregas, e podem ser personalizadas para cada destinatário.
+Com o Adobe Campaign, você pode enviar campanhas entre canais, incluindo e-mails, SMS, notificações push e correspondências diretas e medir a eficiência usando vários relatórios dedicados. Essas mensagens são projetadas e enviadas através de entregas e podem ser personalizadas para cada destinatário.
 
 As funcionalidades principais incluem direcionamento, definição e personalização de mensagens, execução de comunicações e os relatórios operacionais associados.
 
@@ -123,7 +123,7 @@ As entregas recorrentes são criadas em fluxos de trabalho através da [atividad
 
 Uma **entrega contínua** está disponível no contexto de um fluxo de trabalho. Ela permite que você adicione novos destinatários a uma entrega já existente, o que evita a necessidade de criar uma nova entrega a cada execução.
 
-Se uma informação na entrega for alterado (conteúdo, nome, etc.), um novo objeto de entrega será criado na execução da entrega. Se nenhuma informação for alterada, o mesmo objeto da entrega será reutilizado e os logs de entrega e rastreamento serão adicionados no mesmo objeto.
+Se alguma informação no delivery for alterada (conteúdo, nome, etc.), um novo objeto de delivery será criado na execução do delivery. Se nenhuma informação for alterada, o mesmo objeto da entrega será reutilizado e os logs de entrega e rastreamento serão adicionados no mesmo objeto.
 
 Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabará com uma única entrega após um ano (desde que não tenha feito nenhuma alteração na entrega).
 
@@ -142,6 +142,6 @@ Você pode:
 
 ## Rastreamento e monitoramento {#gs-tracking-logs}
 
-O monitoramento de entregas após serem enviados é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes. Você pode monitorar após enviar uma entrega, bem como entender como as falhas de entrega e as quarentenas são gerenciadas.
+O monitoramento de deliveries, após serem enviados, é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes. Você pode monitorar após enviar uma entrega, bem como entender como as falhas de entrega e as quarentenas são gerenciadas.
 
 Saiba como [rastrear e monitorar suas entregas](../send/tracking.md)

@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f0e325102f748f6268a21a5397774a08a6994e51
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3475'
-ht-degree: 55%
+source-wordcount: '3476'
+ht-degree: 54%
 ---
 # Entender as falhas de entrega {#delivery-failures}
 
@@ -64,7 +64,7 @@ Se uma mensagem não puder ser enviada a um perfil, o servidor remoto enviará a
 
 Depois que uma mensagem for enviada, você poderá visualizar o status do delivery para cada perfil, o tipo de falha e o motivo associados nos logs do delivery.
 
-Quando um endereço de email está em quarentena ou se um perfil está na inclui na lista de bloqueios, o recipient é excluído na etapa de preparação do delivery. As mensagens excluídas são listadas no painel de entrega.
+Quando um endereço de email é colocado em quarentena, ou se um perfil estiver na inclui na lista de bloqueios, o recipient é excluído na etapa de preparação do delivery. As mensagens excluídas são listadas no painel de entrega.
 
 ## Por que a entrega da mensagem falhou? {#delivery-failure-reasons}
 
@@ -159,7 +159,7 @@ Quando uma mensagem estiver na fila do MTA por 3,5 dias e não for entregue, o t
 
 Uma mensagem pode expirar antes do fim de seu período de validade, quando a próxima tentativa cair após o tempo de expiração. O log de delivery mostra a falha da última tentativa de delivery.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=pt-BR#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## Tipos de erro de email {#email-error-types}

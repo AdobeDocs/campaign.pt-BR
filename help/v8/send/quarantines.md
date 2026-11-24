@@ -37,14 +37,14 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1363'
-ht-degree: 33%
+source-wordcount: '1364'
+ht-degree: 32%
 ---
 # Quarentena {#quarantine-management}
 
-O Adobe Campaign gerencia uma lista de endereços em quarentena para canais online (email, SMS, notificação por push). Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, evita que você seja adicionado à lista de bloqueios por esses provedores. Além disso, a quarentena ajuda a reduzir os custos de envio de SMS, excluindo números de telefone incorretos das entregas.
+O Adobe Campaign gerencia uma lista de endereços em quarentena para canais online (email, SMS, notificação por push). Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, evita que você seja adicionado ao arquivo por esses provedores. Além disso, a quarentena ajuda a reduzir os custos de envio de SMS, excluindo números de telefone incorretos das entregas.
 
 Quando o endereço ou número de telefone está em quarentena, os recipients são excluídos do target durante a análise de delivery: você não poderá enviar mensagens de marketing, incluindo emails de fluxo de trabalho automatizado, para esses contatos. Se esses endereços em quarentena também estiverem presentes em listas, eles serão excluídos ao enviar para essas listas. Um endereço de email pode ser colocado em quarentena, por exemplo, quando a caixa de entrada estiver cheia, se o endereço não existir ou se o servidor de email não estiver disponível.
 
@@ -58,19 +58,19 @@ A **Quarentena** se aplica somente a um **endereço**, um **número de telefone*
 >
 >Quando os destinatários relatam sua mensagem como spam ou respondem a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot;, seu endereço ou número de telefone ficam em quarentena como **[!UICONTROL Denylisted]**. Seu perfil é atualizado adequadamente.
 
-Por outro lado, **perfis** podem estar no **inclui na lista de bloqueios** como após um cancelamento de inscrição (recusa) de um determinado canal: isso implica que eles não serão mais direcionados por nenhuma entrega. Como consequência, se um perfil no canal tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios de um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
+Por outro lado, **perfis** podem estar no **incluo na lista de bloqueios** como após um cancelamento de inscrição (recusa) de um determinado canal: isso implica que eles não são mais direcionados por nenhuma entrega. Como consequência, se um perfil no canal tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios de um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
+>Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
 ## Por que um email, telefone ou dispositivo é enviado para quarentena? {#quarantine-reason}
 
-O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha do delivery e seu motivo. Eles são atribuídos durante a qualificação de mensagens de erro. Saiba mais sobre o gerenciamento de falha de entrega [nesta página](delivery-failures.md).
+O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha do delivery e seu motivo. Elas são atribuídas durante a qualificação da mensagem de erro. Saiba mais sobre o gerenciamento de falha de entrega [nesta página](delivery-failures.md).
 
-Dois tipos ou erros podem ser capturados:
+Dois tipos de erros podem ser capturados:
 
 * **Erro grave**: o endereço de email, o número de telefone ou o dispositivo é enviado imediatamente para quarentena.
 * **Erro leve**: erros suaves incrementam um contador de erros e podem colocar em quarentena um email, número de telefone ou token de dispositivo. O Campaign executa [tentativas](delivery-failures.md#retries): quando o contador de erros atinge o limite, o endereço, o número de telefone ou o token do dispositivo são colocados em quarentena. [Saiba mais](delivery-failures.md#retries).
@@ -96,7 +96,7 @@ Os endereços em quarentena podem ser exibidos para um delivery específico ou p
 
 ### Quarentenas para uma entrega{#delivery-quarantines}
 
-Os endereços de quarentena são listados durante a fase de preparação do delivery, nos logs do delivery do painel de delivery.
+Os endereços em quarentena são listados durante a fase de preparação do delivery, nos logs do delivery do painel de delivery.
 
 Para cada entrega, você também pode verificar o relatório **[!UICONTROL Delivery summary]**: ele mostra o número de endereços em quarentena no público-alvo da entrega e exibe:
 
@@ -121,7 +121,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 
 Além disso, o relatório interno **[!UICONTROL Non-deliverables and bounces]**, disponível na seção **Relatórios** desta home page, exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar os dados de um delivery específico ou personalizar este relatório conforme necessário.
 
-Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### Endereço de email na quarentena {#quarantined-recipient}
 

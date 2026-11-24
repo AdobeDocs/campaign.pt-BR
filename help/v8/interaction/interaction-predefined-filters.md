@@ -27,7 +27,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 39%
@@ -38,7 +38,7 @@ Crie filtros predefinidos para definir regras de qualificação para o público-
 
 >[!NOTE]
 >
->A interface do usuário da Web do Adobe Campaign oferece uma interface simples para gerenciar e personalizar facilmente filtros predefinidos para atender às suas necessidades específicas. Crie uma vez e salve para uso futuro. Para saber mais sobre os Filtros predefinidos para a interface do usuário da Web, consulte a [documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
+>A interface do usuário da Web do Adobe Campaign oferece uma interface simples para gerenciar e personalizar facilmente filtros predefinidos para atender às suas necessidades específicas. Crie uma vez e salve para uso futuro. Para saber mais sobre os Filtros predefinidos para a interface do usuário da Web, consulte a [documentação da interface do usuário da Web do Adobe Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
 
 
 Para criar um filtro predefinido, siga o seguinte processo:

@@ -24,9 +24,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '637'
 ht-degree: 40%
 ---
 # Usar blocos de personalização{#personalization-blocks}
@@ -58,7 +58,7 @@ Os blocos de personalização incorporados são:
 * **[!UICONTROL Enabled by Adobe Campaign]**: insere o logotipo &quot;Habilitado pela Adobe Campaign&quot;.
 * **[!UICONTROL Formatting function for proper nouns]**: gera a função JavaScript **[!UICONTROL toSmartCase]**, que coloca a primeira letra de cada palavra em maiúscula.
 * **[!UICONTROL Greetings]**: insere saudações com o nome completo do destinatário, seguido por vírgula. Exemplo: “Olá, fulano,”.
-* **[!UICONTROL Insert logo]**: insere um logotipo que é definido nas configurações de instância.
+* **[!UICONTROL Insert logo]**: insere um logotipo definido nas configurações de instância.
 * **[!UICONTROL Link to mirror page]**: insere um link para a [mirror page](mirror-page.md). O formato padrão é: &quot;Caso não consiga visualizar esta mensagem corretamente, clique aqui.&quot;
 * **[!UICONTROL Mirror page URL]**: insere a URL da mirror page, permitindo que os designers de entrega verifiquem o link.
 * **[!UICONTROL Offer acceptance URL in unitary mode]**: insere uma URL que permite definir uma oferta para **[!UICONTROL Accepted]**. (Este bloco estará disponível se o módulo Interação estiver habilitado)
@@ -100,4 +100,4 @@ Depois de salvo, o novo bloco de personalização fica disponível no editor de 
 
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo de sua entrega de email no vídeo a seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449011?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

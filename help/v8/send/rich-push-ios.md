@@ -25,16 +25,16 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 29%
+source-wordcount: '1119'
+ht-degree: 28%
 ---
 # Criar uma entrega de push avançada para iOS {#rich-push}
 
 >[!IMPORTANT]
 >
->Antes de criar uma Notificação por push avançada, primeiro é necessário configurar o conector V2. Consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application) para obter o procedimento detalhado.
+>Antes de criar uma Notificação por push avançada, primeiro é necessário configurar o conector V2. Consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application) para obter o procedimento detalhado.
 
 ## Definir o conteúdo de uma notificação do iOS {#push-message}
 
@@ -187,9 +187,9 @@ Depois de definir o conteúdo da mensagem, você pode usar assinantes de teste p
 
 | Parâmetro | Descrição |
 |---------|---------|
-| **[!UICONTROL Clean Badge]** | Ative essas opções para atualizar o valor do selo. |
+| **[!UICONTROL Clean Badge]** | Ative essa opção para atualizar o valor do selo. |
 | **[!UICONTROL Value]** | Defina um número que será usado para exibir o número de novas informações não lidas diretamente no ícone do aplicativo. |
-| **[!UICONTROL Critical alert mode]** | Ative essa opção para adicionar som à sua notificação, mesmo que o telefone do usuário esteja configurado no modo de foco ou se o iPhone estiver sem áudio. |
+| **[!UICONTROL Critical alert mode]** | Ative essa opção para adicionar som à sua notificação, mesmo se o telefone do usuário estiver configurado no modo de foco ou se o iPhone estiver sem áudio. |
 | **[!UICONTROL Name]** | Selecione o som a ser reproduzido pelo terminal móvel quando a notificação for recebida. |
 | **[!UICONTROL Volume]** | Defina o volume do seu som de 0 a 100. Os sons devem ser incluídos no aplicativo e definidos quando o serviço é criado. |
 
@@ -201,7 +201,7 @@ Depois de definir o conteúdo da mensagem, você pode usar assinantes de teste p
 | **[!UICONTROL Thread-id]** | Defina o identificador usado para agrupar notificações relacionadas. |
 | **[!UICONTROL Category]** | Defina o nome da ID da categoria que exibirá botões de ação. Essas notificações fornecem ao usuário uma maneira mais rápida de realizar tarefas diferentes em resposta a uma notificação sem abrir o aplicativo ou navegar até ele. |
 | **[!UICONTROL Target content ID]** | Defina um identificador usado para definir qual janela de aplicativo será apresentada quando a notificação for aberta. |
-| **[!UICONTROL Launch image]** | Defina o nome do arquivo de imagem a ser exibido na inicialização. Se o usuário optar por iniciar seu aplicativo, a imagem selecionada será exibida em vez da tela de inicialização do aplicativo. |
+| **[!UICONTROL Launch image]** | Defina o nome do arquivo de imagem que será exibido na inicialização. Se o usuário optar por iniciar seu aplicativo, a imagem selecionada será exibida em vez da tela de inicialização do aplicativo. |
 | **[!UICONTROL Click action]** | Defina a ação associada a um clique do usuário em sua notificação. |
 | **[!UICONTROL Interruption level]** | <ul><li>Ativo: definido por padrão, o sistema apresenta a notificação imediatamente, ativa a tela e pode reproduzir um som. As notificações não interrompem os modos de foco.</li><li>Passivo: o sistema adiciona a notificação à lista de notificações sem ativar a tela ou reproduzir um som. As notificações não interrompem os modos de foco.</li><li> Sensível ao tempo: o sistema apresenta a notificação imediatamente, ativa a tela, pode reproduzir um som e interrompe os modos de foco. Esse nível não requer uma permissão especial da Apple.</li><li>Crítico: o sistema apresenta a notificação imediatamente, ativa a tela e ignora os modos de foco e a opção de mudo. Observe que esse nível requer uma permissão especial da Apple.</li></ul> |
 | **[!UICONTROL Relevance score]** | Defina uma pontuação de relevância de 0 a 100. O sistema usa essa opção para classificar as notificações no resumo de notificações. |

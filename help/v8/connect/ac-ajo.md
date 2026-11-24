@@ -28,9 +28,9 @@ level_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '126'
 ht-degree: 0%
 ---
 # Trabalhar com o Campaign e o Adobe Journey Optimizer
@@ -43,7 +43,7 @@ As etapas básicas são criar um template de mensagem transacional no Campaign e
 ![](assets/ajo-integration.png)
 
 
-[Descubra esta integração nesta amostra completa](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}.
+[Descubra esta integração nesta amostra completa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}.
 
 
-[Saiba mais na documentação do Journey Optimizer](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.
+[Saiba mais na documentação do Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.

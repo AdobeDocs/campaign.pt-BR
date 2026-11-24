@@ -24,14 +24,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '441'
 ht-degree: 4%
 ---
 # APIs específicas do Campaign FFDA{#gs-new-api}
 
-No contexto de uma [implantação corporativa (FFDA)](enterprise-deployment.md), o Campaign v8 vem com duas APIs específicas para gerenciar dados entre o banco de dados local do Campaign e o banco de dados da nuvem. Os pré-requisitos para usá-los é ativar o mecanismo de preparo no esquema. [Saiba mais](staging.md)
+No contexto de uma [implantação corporativa (FFDA)](enterprise-deployment.md), o Campaign v8 vem com duas APIs específicas para gerenciar dados entre o banco de dados local do Campaign e o banco de dados da nuvem. Os pré-requisitos para usá-los são ativar o mecanismo de preparo no esquema. [Saiba mais](staging.md)
 
 * API de assimilação: **xtk.session.ingest**
 
@@ -88,7 +88,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada c
    </soapenv:Envelope>
    ```
 
-1. A UUID é enviada de volta para a resposta do SOAP:
+1. A UUID é enviada de volta na resposta do SOAP:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -164,7 +164,7 @@ Como resultado, a tabela de preparo é alimentada conforme esperado.
 
 ## Atualizar ou excluir dados{#data-update-api}
 
-A API **xtk.session.IngestExt** está otimizada para atualização/exclusão de dados. Para inserir somente, prefira **xtk.session.ingest**. Insert está funcionando se a chave do registro não estiver na tabela de preparo.
+A API **xtk.session.IngestExt** está otimizada para atualização/exclusão de dados. Para inserir somente, prefira **xtk.session.ingest**. A inserção funciona quando a chave do registro não está na tabela de preparo.
 
 ### Inserir/atualizar
 

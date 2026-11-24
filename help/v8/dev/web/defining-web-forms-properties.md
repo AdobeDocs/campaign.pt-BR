@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1382'
-ht-degree: 99%
+ht-degree: 96%
 ---
 # Definição das propriedades dos formulários web{#defining-web-forms-properties}
 
@@ -107,7 +107,7 @@ Uma renderização de amostra é exibida na parte inferior da janela de propried
 
 Você pode alterar o logotipo usado no formulário para seu próprio logotipo.
 
-Na guia **[!UICONTROL Rendering]** dentro de **[!UICONTROL Properties]** do seu aplicativo web, clique no ícone de copo do seu modelo:
+Na guia **[!UICONTROL Rendering]** dentro do **[!UICONTROL Properties]** do seu aplicativo Web, clique no ícone de vidro do seu modelo:
 
 ![](assets/logo_glass.png)
 
@@ -115,7 +115,7 @@ Na nova janela, clique no link **[!UICONTROL Page layout]**:
 
 ![](assets/logo_pagelayout.png)
 
-Você terá a possibilidade de alterar o caminho da imagem do logotipo aqui:
+É possível alterar o caminho da imagem do logotipo aqui:
 
 ![](assets/logo_path.png)
 
@@ -159,7 +159,7 @@ Quando a página for acessada, o seguinte formulário de autenticação será ex
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-O login e a senha são aqueles usados pelos operadores do Adobe Campaign. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+O login e a senha são aqueles usados pelos operadores do Adobe Campaign. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
 
 A opção **[!UICONTROL Use a specific account]** permite limitar a permissão de leitura ou gravação do operador que acessa o formulário. Use a caixa suspensa para selecionar um operador ou grupo de operadores que estará encarregado de conceder essas permissões.
 

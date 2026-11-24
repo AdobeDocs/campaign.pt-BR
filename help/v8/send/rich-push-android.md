@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 10%
@@ -39,7 +39,7 @@ ht-degree: 10%
 
 >[!IMPORTANT]
 >
->Antes de criar uma Notificação por push avançada, primeiro é necessário configurar o conector V2. Consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) para obter o procedimento detalhado.
+>Antes de criar uma Notificação por push avançada, primeiro é necessário configurar o conector V2. Consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) para obter o procedimento detalhado.
 
 Com o Firebase Cloud Messaging, você pode escolher entre dois tipos de mensagens:
 
@@ -211,7 +211,7 @@ Depois de definir o conteúdo da mensagem, você pode usar assinantes de teste p
 
 1. No menu **[!UICONTROL Color options]**, insira os códigos de cor hexadecimal para **[!UICONTROL Title]**, **[!UICONTROL Message]** e **[!UICONTROL Background]**.
 
-1. No menu **[!UICONTROL Input box options]**, preencha a seguinte opção:
+1. No menu **[!UICONTROL Input box options]**, preencha as seguintes opções:
 
    * **[!UICONTROL Input receiver name]**: insira o nome ou identificador do receptor da entrada.
    * **[!UICONTROL Input text]**: Digite o texto para a **Caixa de entrada**.

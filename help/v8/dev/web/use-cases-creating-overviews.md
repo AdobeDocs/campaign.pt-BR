@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 96%
+ht-degree: 94%
 ---
 # Casos de uso: criar páginas de visão geral{#use-cases-creating-overviews}
 
@@ -56,7 +56,7 @@ No exemplo a seguir, criaremos aplicativos tipo visão geral para exibir todas a
 
    ![](assets/s_ncs_configuration_webapp_create.png)
 
-1. Alteração do título da página.
+1. Alterar o título da página.
 
    Esse título aparecerá no cabeçalho da visão geral e na visão geral da aplicação web.
 
@@ -103,7 +103,7 @@ Em uma visão geral, você pode optar por acessar dados dependendo de sua locali
 
    >[!NOTE]
    >
-   >Nessa etapa, a aplicação web não está dentro do seu contexto de aplicação, portanto, o filtro não pode ser testado na pasta.
+   >Nesse estágio, a aplicação web não está dentro do contexto de aplicação; o filtro, portanto, não pode ser testado na pasta.
 
 ## Adicionar um botão para configurar um novo aplicativo Web {#adding-a-button-to-configure-a-new-web-application}
 

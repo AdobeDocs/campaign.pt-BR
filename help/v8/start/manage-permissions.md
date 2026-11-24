@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 40%
+source-wordcount: '1733'
+ht-degree: 39%
 ---
 # Gerenciar permissões do usuário{#manage-permissions}
 
@@ -221,7 +221,7 @@ Você pode usar o Admin Console para criar grupos de usuários e atribuir usuár
 
 Um grupo de usuários é uma coleção de usuários diferentes que precisam receber um conjunto compartilhado de permissões. Saiba como criar grupos de usuários em [esta seção](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}.
 
-É possível atribuir perfis de produto a grupos de usuários. Assim, todos os usuários nesse grupo receberão o mesmo conjunto de permissões do produto.
+É possível atribuir perfis de produto a grupos de usuários. Assim, todos os usuários nesse grupo recebem o mesmo conjunto de permissões do produto.
 
 ## Direitos nomeados{#use-named-rights}
 
@@ -259,7 +259,7 @@ Os direitos nomeados padrão no Adobe Campaign são:
 
 * **[!UICONTROL LOCAL]**: direito para gerenciamento local (marketing distribuído).
 
-* **[!UICONTROL MERGE]**: direito de mesclar os registros selecionados em um. Se houver destinatários duplicados, o direito **[!UICONTROL MERGE]** permitirá que o usuário selecione os duplicados e os mescle em um destinatário primário.
+* **[!UICONTROL MERGE]**: direito de mesclar os registros selecionados em um. Se houver recipients duplicados, o direito **[!UICONTROL MERGE]** permitirá que os usuários selecionem os duplicados e os mescle em um recipient primário.
 
 * **[!UICONTROL PREPARE DELIVERIES]**: direito de criar, editar e salvar uma entrega. Os usuários com o direito **[!UICONTROL PREPARE DELIVERIES]** também podem iniciar o processo de análise da entrega.
 

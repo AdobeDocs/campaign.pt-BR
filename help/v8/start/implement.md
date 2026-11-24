@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1218'
-ht-degree: 97%
+ht-degree: 92%
 ---
 # Diretrizes de implementação do Campaign{#gs-implementation}
 
@@ -67,7 +67,7 @@ Esta seção contém informações críticas sobre privacidade e segurança que 
 
 ### Privacidade{#implementation-privacy}
 
-O Adobe Campaign vem com processos e configurações que permitem usar o Campaign em conformidade com as leis de privacidade de dados aplicáveis e as preferências do destinatário. Você pode gerenciar:
+O Adobe Campaign vem com processos e configurações que permitem usar o Campaign em conformidade com as leis de privacidade de dados aplicáveis e as preferências de seus destinatários. Você pode gerenciar:
 
 * **Aquisição de dados**: o Adobe Campaign permite que você colete dados, incluindo informações pessoais e confidenciais. Portanto, é essencial que você receba e monitore o consentimento de seus destinatários.
 
@@ -195,7 +195,7 @@ Se estiver usando outras soluções da Adobe, você poderá conectá-las ao ambi
 
 Também é possível usar o logon único (SSO) para se conectar ao Campaign. Saiba mais [nesta página](connect.md).
 
-Conheça a lista completa de soluções da Adobe que podem ser integradas ao Adobe Campaign [nesta página](../connect/integration.md).
+Descubra a lista completa de soluções da Adobe que podem ser integradas ao Adobe Campaign [nesta página](../connect/integration.md).
 
 ### Conectores{#implementation-connectors}
 

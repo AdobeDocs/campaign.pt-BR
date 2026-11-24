@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3351'
-ht-degree: 99%
+source-wordcount: '3350'
+ht-degree: 98%
 ---
 # Definir condições de filtro{#filter-conditions}
 
@@ -78,7 +78,7 @@ Abaixo está uma lista dos operadores disponíveis:
   <tr> 
    <td> <span class="uicontrol">Not equal to</span> <br /> </td> 
    <td> Retorna todos os valores não idênticos ao valor inserido.<br /> </td> 
-   <td> <strong>Language (@language) to equal to 'English'</strong>.<br /> </td> 
+   <td> <strong>Idioma (@language) não é igual a 'Inglês'</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Starts with</span> <br /> </td> 
@@ -510,7 +510,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>Md5Digest</strong><br /> </td> 
-   <td> Retorna uma representação hexadecimal da chave MD5 de uma string<br /> </td> 
+   <td> Retorna uma representação hexadecimal da chave MD5 de uma cadeia de caracteres<br /> </td> 
    <td> Md5Digest(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -758,7 +758,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   <tr> 
    <td> <strong>TruncTime</strong><br /> </td> 
    <td> Arredonda a parte de horário para cima até o próximo segundo<br /> </td> 
-   <td> TruncTim(e&lt;date&gt;, &lt;number of seconds&gt;)<br /> </td>  
+   <td> TruncTime(&lt;data&gt;, &lt;número de segundos&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
@@ -781,7 +781,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
    <td> Year(&lt;data&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>YearAnd Month</strong><br /> </td> 
+   <td> <strong>YearAndMonth</strong><br /> </td> 
    <td> Retorna o número que representa o ano e o mês da data.<br /> </td> 
    <td> YearAndMonth(&lt;data&gt;)<br /> </td>  
   </tr> 

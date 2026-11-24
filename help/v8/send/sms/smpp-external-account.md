@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3638'
-ht-degree: 28%
+source-wordcount: '3642'
+ht-degree: 27%
 ---
 # Configurações de conta externa SMPP {#smpp-external-account}
 
@@ -229,7 +229,7 @@ Enviado como está no campo address_range da PDU BIND. Esse valor deverá ser de
 
 ### Contagem de confirmação de ID inválida
 
-Limita o número de &quot;ID da Mensagem inválida&quot; DELIVER_SM_RESP que pode ser enviado para um único SR. **Deve ser usado apenas para fins de solução de problemas temporária** e definido como 0 em condições normais.
+Limita o número de &quot;ID da Mensagem inválida&quot; DELIVER_SM_RESP que pode ser enviado para um único SR. **Isso só deve ser usado para fins de solução de problemas temporária** e definido como 0 em condições normais.
 
 Explicação detalhada: digamos que você defina essa configuração como 2:
 
@@ -244,7 +244,7 @@ Esse recurso destina-se a liberar buffers SR no provedor quando o SR inválido b
 
 Definir esse campo como 0 desativa o mecanismo para que &quot;ID da mensagem inválida&quot; seja sempre retornado, esse é um comportamento normal.
 
-Definir esse campo como 1 faz com que o conector sempre responda &quot;OK&quot;, mesmo que a ID seja inválida. Deve ser definido como 1, usado somente sob supervisão para solução de problemas e pelo período mínimo, por exemplo, para se recuperar de um problema do provedor.
+Definir esse campo como 1 faz com que o conector sempre responda &quot;OK&quot;, mesmo que a ID seja inválida. Deve ser definido como 1 e usado somente sob supervisão para solução de problemas e pelo período mínimo, por exemplo, para se recuperar de um problema do provedor.
 
 ### Regex de extração da ID no SR
 
@@ -264,7 +264,7 @@ Este regex captura o status do campo de texto das mensagens SR.
 
 Por padrão, captura entre 5 e 15 caracteres após &quot;stat:&quot;.
 
-O regex deve ter **exatamente um grupo de captura** (uma parte contida entre parênteses). A parte correspondente ao status deve estar entre parênteses. O formato do regex é PCRE.
+O regex deve ter **exatamente um grupo de captura** (uma parte contida entre parênteses). A parte que corresponde ao status deve estar entre parênteses. O formato do regex é PCRE.
 
 ### Regex aplicado para determinar o status de sucesso
 
@@ -364,7 +364,7 @@ Para cada campo, é possível definir a tag associada, bem como seu formato. Sol
 
 ### Resposta automática enviada ao MO
 
-Esse recurso permite responder rapidamente ao texto para o MO e lidar com blacklists por código curto.
+Esse recurso permite que você responda rapidamente com texto para o MO e manipule blacklists por código curto.
 
 As colunas *Palavra-chave* e *Código curto* definem condições para acionar a resposta automática: se ambos os campos forem correspondentes, o MO será enviado e a ação adicional será acionada. Para especificar um curinga, deixe o campo vazio. A palavra-chave corresponde à primeira palavra alfanumérica no texto MO, ignorando a pontuação e os espaços à esquerda. Isso significa que o campo Palavra-chave não pode conter espaços e deve ser uma única palavra.
 

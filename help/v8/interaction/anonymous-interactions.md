@@ -22,10 +22,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 75%
+source-wordcount: '400'
+ht-degree: 70%
 ---
 # Interações anônimas {#anonymous-interactions}
 
@@ -49,13 +49,13 @@ O campo **[!UICONTROL Visitor folder]** é exibido. Ele é automaticamente preen
 
 Assim como as interações de saída, as interações de entrada são organizadas em um catálogo de ofertas que é composto por categorias e ofertas.
 
-Para criar categorias e espaços, aplique o mesmo processo que os visitantes identificados. Consulte [Criar uma categoria de oferta](interaction-offer-catalog.md#creating-offer-categories) e [Criar um ambiente de oferta](interaction-env.md#create-an-offer-environment)).
+Para criar categorias e espaços, aplique o mesmo processo que os visitantes identificados. Consulte [Criar uma categoria de oferta](interaction-offer-catalog.md#creating-offer-categories) e [Criar um ambiente de oferta](interaction-env.md#create-an-offer-environment).
 
 ## Visitantes anônimos {#anonymous-visitors}
 
 Os visitantes anônimos podem ser submetidos a um processo de identificação por cookies quando se conectam. Esse reconhecimento implícito baseia-se no histórico do navegador do visitante.
 
-Durante essa etapa, uma comparação é feita entre os dados recuperados pelos cookies e aqueles no banco de dados. Em alguns casos, os visitantes são reconhecidos (são então identificados implicitamente), em outros casos, eles não são reconhecidos (e, portanto, permanecem anônimos).
+Durante essa etapa, uma comparação é feita entre os dados recuperados pelos cookies e aqueles no banco de dados. Em alguns casos, os visitantes são reconhecidos (são então identificados implicitamente), em outros casos, não são reconhecidos (e, portanto, permanecem anônimos).
 
 Para executar essa análise, para o espaço de ofertas, marque a opção **[!UICONTROL Implicitly identify the individual based on their browser history]**.
 

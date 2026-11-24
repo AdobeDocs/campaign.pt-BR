@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '4458'
 ht-degree: 17%
@@ -49,7 +49,7 @@ Antes de entrar em funcionamento, verifique se a configuração do SMPP está co
 
 >[!NOTE]
 >
->Ative rastreamentos SMPP detalhados durante verificações. Isso ajudará você e a equipe de suporte a entender os problemas.
+>Ative rastreamentos SMPP detalhados durante verificações. Isso ajudará você e a equipe de suporte a entenderem a solução de problemas.
 
 ### Verifique se há conflitos de conta externa {#sms-external-accounts-check}
 
@@ -67,7 +67,7 @@ Tente enviar alguns SMS em diferentes celulares.
 
 **Enviar SMS com todos os tipos de caracteres**
 
-Se você precisar enviar SMS com caracteres não GSM ou não ASCII, tente enviar algumas mensagens com os caracteres mais diversos possível. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os valores data_coding possíveis.
+Se você precisar enviar SMS com caracteres não GSM ou não ASCII, tente enviar algumas mensagens com os mais diversos caracteres possíveis. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os valores data_coding possíveis.
 
 **Verifique se o SR está corretamente processado**
 
@@ -96,7 +96,7 @@ O número mínimo de mensagens a enviar pode ser calculado assim:
 Após a conclusão do delivery, verifique o seguinte:
 
 * Verificar se todas as mensagens foram enviadas (não necessariamente recebidas)
-* Deve haver absolutamente zero PDU com command_status não 0x00000000, a menos que isso seja explicitamente declarado pelo provedor como operação normal
+* Deve haver absolutamente zero PDU com command_status e não 0x00000000, a menos que isso seja explicitamente declarado pelo provedor como operação normal
 * As conexões devem permanecer absolutamente estáveis (sem PDU BIND) durante todo o processo de entrega.
 * Verifique se todas as mensagens têm um SR e se ele foi processado corretamente (consulte [Verificar se o SR foi processado corretamente](#real-test)). Se uma pequena porcentagem tiver erros, verifique se eram erros reais de retorno do SR, não erros durante o envio ou o processamento no lado da campanha.
 * Se não tiver certeza sobre o desempenho, verifique se a latência é razoável, especialmente entre uma PDU e seu RESP correspondente. Ter mais de 500 ms de latência pode ser um problema para alta taxa de transferência. Use essa latência para verificar a fórmula da janela de envio (consulte a configuração da janela de envio para obter mais detalhes)
@@ -220,7 +220,7 @@ Se nenhuma dessas verificações causar uma causa raiz, entre em contato com o p
 #### Problema de mid-sourcing (hospedado)  {#sms-issue-hosted}
 
 * Se o problema ocorrer em um ambiente mid-sourcing, verifique se o delivery e os broadlogs foram criados e atualizados corretamente no servidor mid-sourcing. Se não for o caso, o problema não será um problema de SMS.
-* Certifique-se de que o nome do operador mid esteja estritamente em letras minúsculas, caso contrário o delivery permanecerá no status pending.
+* Verifique se o nome do operador mid está estritamente em letras minúsculas, caso contrário, o delivery permanecerá no status pending.
 * Se tudo funcionar no servidor intermediário e o SMS for enviado corretamente, mas a instância de marketing não for atualizada corretamente, ocorrerá um problema de sincronização intermediária.
 
 #### Problema ao conectar-se ao provedor {#sms-issue-connection}
@@ -246,7 +246,7 @@ Uma conexão é considerada instável se qualquer uma dessas coisas acontecer:
 
 **Como corrigir problemas de estabilidade de conexão:**
 
-* Conexões instáveis raramente são a causa principal. Muitas vezes, é o resultado de outro problema que aciona uma desconexão de uma maneira ou outra. Encontrar a causa raiz é a prioridade.
+* Conexões instáveis raramente são a causa principal. Muitas vezes, é o resultado de outro problema que aciona uma desconexão de uma maneira ou de outra. Encontrar a causa raiz é a prioridade.
 * Habilite rastreamentos SMPP detalhados. Você precisará deles para ver o que está acontecendo quando a conexão for reiniciada.
 * Se o provedor enviar PDUs UNBIND, provavelmente fará algo errado. Pergunte a eles por que enviam UNBIND e isso provavelmente levará à causa raiz.
 * Fazer uma captura de rede às vezes é a única maneira de ver como a conexão é fechada.
@@ -281,7 +281,7 @@ Redução da quantidade de duplicatas quando há uma nova tentativa:
 
 * Você precisará de rastreamentos SMPP habilitados para realizar qualquer tipo de solução de problemas de SR.
 * Verifique se o PDU DELIVER_SM vem do provedor e se está corretamente formado.
-* Verifique se o Campaign responde com uma PDU DELIVER_SM_RESP bem-sucedida em tempo hábil. Isso garante que o SR foi inserido na tabela providerMsgStatus para processamento diferido pelo processo de SMS.
+* Verifique se o Campaign responde com uma PDU DELIVER_SM_RESP bem-sucedida em tempo hábil. Isso garante que o SR foi inserido na tabela providerMsgStatus para processamento posterior pelo processo de SMS.
 
 Se o PDU DELIVER_SM não for confirmado com êxito, será necessário verificar algumas coisas:
 
@@ -294,7 +294,7 @@ Se você corrigiu tudo, mas alguns SR inválidos ainda estão nos buffers do pro
 
 Se o processamento SR for lento, tente qualificar as mensagens de status mais comuns na tabela BroadLogMsg.
 
-Se apenas alguns SRs forem recebidos, mas não todos, verifique se nenhum outro sistema se conecta à conta do provedor, como um sistema de teste. O SR pode ser roteado em qualquer conexão, portanto, alguns deles podem ser roteados para esse outro sistema. O provedor pode ajudar você a descobrir onde está esse outro sistema se conectando à conta.
+Se apenas alguns SR forem recebidos, mas não todos, verifique se nenhum outro sistema se conecta à conta do provedor, como um sistema de teste. O SR pode ser roteado em qualquer conexão, portanto, alguns deles podem ser roteados para esse outro sistema. O provedor pode ajudar você a descobrir onde está esse outro sistema se conectando à conta.
 
 #### Problema ao processar o MO (e quarentena/resposta automática)
 
@@ -376,7 +376,7 @@ Sempre que buscar assistência para um problema de SMS (seja para abrir um tíqu
 * Se você incluir logs, rastreamentos ou capturas, aponte o local exato no arquivo quando o problema ocorrer, bem como o local exato de um exemplo em funcionamento, se houver. Capturas ou rastreamentos podem ser grandes e tediosos de olhar, então qualquer coisa que ajude a encontrar informações neles é útil.
 * Se você mencionar mensagens, PDUs ou logs, indique claramente a data e a hora para que sejam fáceis de encontrar por outras pessoas.
 * Tente reproduzir o problema em um ambiente de teste. Se não tiver certeza sobre uma configuração, experimente-a no ambiente de teste e verifique o resultado com os rastreamentos SMPP. Geralmente, é melhor relatar problemas replicados em ambientes de teste do que problemas em ambientes de produção.
-* Inclua qualquer alteração ou ajuste feito na plataforma: mesmo uma pequena alteração pode ter enormes impactos. Além disso, inclua qualquer alteração que o provedor possa ter feito.
+* Inclua quaisquer alterações ou ajustes feitos na plataforma: mesmo uma pequena alteração pode ter enormes impactos. Além disso, inclua qualquer alteração que o provedor possa ter feito.
 
 #### Quando uma captura de rede é útil?
 

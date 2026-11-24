@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '772'
 ht-degree: 19%
 ---
 # Configurações de entrega de SMS {#sms-settings}
@@ -42,7 +42,7 @@ As configurações técnicas necessárias para um delivery de SMS são:
 * A conta externa SMPP para o roteamento de mensagens. [Saiba mais](smpp-external-account.md#smpp-connection-settings)
 * Configure a guia SMS. [Saiba como](#sms-tab)
 
-Você pode configurar tudo isso em um template do delivery para evitar a execução das configurações de cada criação de delivery de SMS.
+Você pode configurar tudo isso em um template do delivery para evitar as configurações de cada criação de delivery de SMS.
 
 ## Configurar a guia SMS {#sms-tab}
 

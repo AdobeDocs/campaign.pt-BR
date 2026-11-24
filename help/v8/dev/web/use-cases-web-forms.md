@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 94%
+source-wordcount: '988'
+ht-degree: 85%
 ---
 # Casos de uso: formulários web{#use-cases-web-forms}
 
@@ -45,7 +45,7 @@ Este exemplo é baseado no seguinte cenário:
 
 ### Etapa 1 - Criação de serviços de informação {#step-1---creating-information-services}
 
-1. Crie a subscrição no serviço de boletim informativo a ser oferecido aos destinatários. Para obter mais informações sobre como criar um boletim informativo, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
+1. Crie a subscrição no serviço de boletim informativo a ser oferecido aos destinatários. Para obter mais informações sobre como criar um boletim informativo, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -63,7 +63,7 @@ As mensagens de confirmação são enviadas por um modelo da entrega dedicado re
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Como os destinatários dessa entrega não confirmaram sua aprovação, eles ainda estão incluídos na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, você precisa autorizar as entregas com base nesse modelo a fim de direcionar destinatários incluídos na lista de bloqueios.
+1. Como os destinatários dessa entrega não confirmaram sua aprovação, eles ainda estão incluídos na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, é necessário autorizar os deliveries com base nesse template a fim de direcionar recipients no incluo na lista de bloqueios.
 
    Para fazer isso, clique na guia **[!UICONTROL Exclusions]**.
 
@@ -121,7 +121,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   A primeira atividade **[!UICONTROL Script]** incluirá os destinatários na lista de bloqueios até que eles confirmem a assinatura do boletim informativo. Seu conteúdo deve ser o seguinte:
+   A primeira atividade **[!UICONTROL Script]** adicionará recipients na inclui na lista de bloqueios até que eles confirmem a assinatura do boletim informativo. Seu conteúdo deve ser o seguinte:
 
    ```
    ctx.recipient.@blackList=1
@@ -129,7 +129,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   A segunda atividade **[!UICONTROL Script]** autoriza as entregas a serem enviadas aos usuários e faz a assinatura delas no boletim informativo. As duas últimas linhas do script permitirão transferir os destinatários da pasta temporária para outra pasta e reconciliar com perfis existentes assim que confirmarem a assinatura.
+   A segunda atividade **[!UICONTROL Script]** autoriza os deliveries a serem enviados aos usuários e faz a assinatura deles no boletim informativo. As duas últimas linhas do script permitirão transferir os recipients da pasta temporária para outra pasta e reconciliar com perfis existentes assim que confirmarem a assinatura.
 
    ```
    ctx.recipient.@blackList=0

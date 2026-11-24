@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 31%
+ht-degree: 30%
 ---
 # Enviar e monitorar emails  {#send-and-monitor-emails}
 
@@ -92,7 +92,7 @@ O Domain Keys Identified Mail (DKIM) é um método de autenticação usado para 
 
 No Adobe Campaign, a assinatura de autenticação de email do DKIM é executada pelo MTA.
 
-Saiba mais sobre o DKIM no [Manual de práticas recomendadas de capacidade de delivery do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication){target="_blank"}.
+Saiba mais sobre o DKIM no [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication){target="_blank"}.
 
 ## Serviço de feedback por email {#email-feedback-service}
 
@@ -123,5 +123,5 @@ A tabela abaixo mostra como os KPIs e os status dos logs de envio são atualizad
 | A mensagem foi transmitida com êxito do Campaign para o MTA | A porcentagem de **[!UICONTROL Success]** não é exibida (começa em 0%) | Levado em consideração pelo provedor de serviço |
 | Mensagens com rejeição permanente são relatadas de volta do MTA | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Com falha |
 | Mensagens com rejeição temporária são relatadas de volta do MTA | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Levado em consideração pelo provedor de serviço |
-| Tentativas de mensagens com rejeição temporária são bem-sucedidas | A porcentagem de **[!UICONTROL Success]** é aumentada de maneira apropriada | Enviado |
+| As tentativas de mensagem com rejeição temporária foram bem-sucedidas | A porcentagem de **[!UICONTROL Success]** é aumentada de maneira apropriada | Enviado |
 | Falha nas tentativas de mensagens com rejeição temporária | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Com falha |

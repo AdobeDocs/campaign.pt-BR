@@ -39,7 +39,7 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 49%
@@ -69,7 +69,7 @@ Os modelos de entrega são armazenados na pasta **[!UICONTROL Resources > Templa
 
 >[!NOTE]
 >
->Os modelos disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de entrega para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Outros modelos não estão visíveis neste contexto. Para obter mais informações, consulte [Trabalhar com mapeamentos de destino](../audiences/target-mappings.md) e [Gerenciar assinaturas e cancelar assinaturas](../start/subscriptions.md).
+>Os modelos disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de entrega para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Outros modelos não estão visíveis neste contexto. Para obter mais informações, consulte [Trabalhar com target mappings](../audiences/target-mappings.md) e [Gerenciar assinaturas e unsubscriptions](../start/subscriptions.md).
 
 
 ## Criar um modelo {#create-a-delivery-template}
@@ -152,7 +152,7 @@ Selecione o modelo de entrega a ser usado e clique em **[!UICONTROL Ok]**.
 
 ### Executar um modelo {#execute-a-template}
 
-Você pode iniciar a execução de um modelo diretamente da lista de modelos sem criar uma entrega primeiro. O modelo de entrega pode ser executado manualmente, conforme detalhado abaixo, ou acionado por um evento (executado em um horário definido, quando um arquivo está disponível no servidor, etc.), conforme explicado em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
+Você pode iniciar a execução de um modelo diretamente da lista de modelos sem criar uma entrega primeiro. O modelo de entrega pode ser executado manualmente, conforme detalhado abaixo, ou acionado por um evento (executado em um horário definido, quando um arquivo está disponível no servidor, etc.), conforme explicado em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery).
 
 Para executar um template manualmente, siga estas etapas:
 
@@ -172,18 +172,18 @@ Essa ação gera um delivery na pasta associada ao template. O nome dessa entreg
 
 O vídeo a seguir mostra como configurar um modelo para uma entrega ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409250?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
 
 ### Como configurar propriedades de modelos de entrega
 
 O vídeo a seguir mostra como definir as propriedades do modelo de entrega e explica em detalhes cada propriedade.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443406?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
 ### Como implantar um modelo de entrega ad-hoc
 
 Este vídeo explica como implantar um modelo de entrega de email ad-hoc, bem como a diferença entre uma entrega de email e um fluxo de trabalho de entrega.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444962?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

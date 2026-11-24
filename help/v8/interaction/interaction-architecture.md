@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 66%
+source-wordcount: '1327'
+ht-degree: 63%
 ---
 # Entender os ambientes e a arquitetura da interação do Campaign
 
@@ -64,7 +64,7 @@ Assim que uma oferta puder ou deve ser apresentada (de acordo com as configuraç
 Para oferecer suporte à escalabilidade e fornecer serviço 24 horas por dia, 7 dias por semana no canal de entrada, o módulo **Interação** é implementado em uma arquitetura distribuída. Este tipo de arquitetura já é usado com o [Centro de Mensagens](../architecture/architecture.md#transac-msg-archi) e é composto por várias instâncias:
 
 * uma ou várias instâncias de controle dedicadas ao canal de saída e contendo a base de design de marketing e ambiente.
-* uma ou várias instâncias de execução dedicadas ao canal de entrada.
+* uma ou várias instâncias de execução dedicadas ao canal de entrada
 
 ![](assets/interaction_powerbooster_schema.png)
 
@@ -90,7 +90,7 @@ Você deve estar ciente dos seguintes mecanismos de sincronização:
 
 * Se usar a função de fallback de um ambiente anônimo para um ambiente identificado, esses dois ambientes deverão estar na mesma instância de execução.
 * A sincronização entre várias instâncias de execução não é executada em tempo real. As interações do mesmo contato devem ser enviadas para a mesma instância. A instância de controle deve ser dedicada ao canal de saída (sem tempo real).
-* O banco de dados de marketing não é sincronizado automaticamente. Os dados de marketing usados nos pesos e regras de elegibilidade devem ser duplicados em instâncias de execução. Esse processo não é fornecido como padrão, é necessário desenvolvê-lo durante o período de integração.
+* O banco de dados de marketing não é sincronizado automaticamente. Os dados de marketing usados nos pesos e regras de elegibilidade devem ser duplicados em instâncias de execução. Esse processo não é fornecido como padrão; é necessário desenvolvê-lo durante o período de integração.
 * A sincronização de propostas é realizada exclusivamente pela conexão FDA.
 * Se usar o Interaction e o Message Center na mesma instância, a sincronização ocorrerá por meio do protocolo FDA nos dois casos.
 
@@ -102,7 +102,7 @@ O pacote **Interaction** está instalado em todas as instâncias (controle e exe
 
 >[!NOTE]
 >
->Ao instalar o pacote, os campos do tipo **long** da tabela **nms:proposition**, como a ID da proposta, tornam-se campos de tipo **int64**. Esse tipo de dado é detalhado na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=pt-BR#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
+>Ao instalar o pacote, os campos do tipo **long** da tabela **nms:proposition**, como a ID da proposta, tornam-se campos de tipo **int64**. Esse tipo de dado é detalhado na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
 A duração da retenção de dados é configurada em cada instância (por meio da janela **[!UICONTROL Data purge]** no assistente de implantação). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de elegibilidade serem calculadas.
 
@@ -168,7 +168,7 @@ Se a instância não tiver o pacote **Interaction**, nenhuma migração será ne
 >
 >Dependendo do volume de propostas existentes na instância, essa operação pode demorar algum tempo.
 
-* Se a instância tiver pouca ou nenhuma proposta, nenhuma modificação manual da tabela de propostas será necessária. A modificação será feita quando os pacotes estiverem instalados.
+* Se a instância tiver poucas ou nenhuma proposta, nenhuma modificação manual da tabela de propostas será necessária. A modificação será feita quando os pacotes estiverem instalados.
 * Se a instância tiver muitas propostas, é melhor alterar a estrutura da tabela de propostas antes de instalar os pacotes de controle e executá-las. Recomendamos executar as queries durante um período de baixa atividade.
 
 >[!NOTE]

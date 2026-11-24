@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1620'
-ht-degree: 48%
+ht-degree: 47%
 ---
 # Gerenciar interações em tempo real
 
@@ -117,7 +117,7 @@ Descubra os termos específicos da oferta e as orientações relacionadas antes 
 
   >[!CAUTION]
   >
-  >Um espaço de ofertas não é um canal de comunicação, ele coincide com um local específico de exposição no canal. Por exemplo, as ofertas expostas em um site pode ocupar dois espaços na mesma página. Nesse caso, você tem dois espaços para o mesmo canal.
+  >Um espaço de ofertas não é um canal de comunicação; ele coincide com um local de exposição específico no canal. Por exemplo, as ofertas expostas em um site pode ocupar dois espaços na mesma página. Nesse caso, você tem dois espaços para o mesmo canal.
   >
   >Os espaços devem ser definidos nas especificações e não devem ser modificados durante o projeto.
 

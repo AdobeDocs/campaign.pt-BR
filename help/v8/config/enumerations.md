@@ -31,9 +31,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 33%
 ---
 # Trabalhar com enumerações {#enumerations}
@@ -57,7 +57,7 @@ Uma enumeração pode ser: **Aberta**, **Sistema**, **Emoticon** ou **Fechada**.
 * Uma lista discriminada **Aberta** permite que os usuários adicionem novos valores diretamente nos campos com base nessa lista discriminada.
 * Uma enumeração **Closed** tem uma lista fixa de valores que só podem ser modificados na pasta **[!UICONTROL Administration > Platform > Enumerations]** do explorador.
 * Uma lista discriminada **Emoticon** é usada para atualizar a lista de emoticons. Saiba mais
-* Uma enumeração **System** está associada a campos do sistema e vem com um nome Interno.
+* Uma enumeração **System** está associada a campos do sistema e vem com um nome interno.
 
 Para as enumerações **Abertas** e **Fechadas**, opções específicas estão disponíveis:
 

@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 1%
@@ -55,7 +55,7 @@ As principais etapas para configurar essa integração são as seguintes:
 <td><img src="../assets/do-not-localize/icon-workflow.svg" width="60px"><p><a href="#script">Configurar o fluxo de trabalho da landing page</a></p></td>
 </table>
 
-## Configurar uma conexão Oauth {#oauth}
+## Configurar uma conexão OAuth {#oauth}
 
 As APIs da Adobe Cloud Platform usam o protocolo OAuth 2.0 para autenticação e autorização. Para conectar o Adobe Experience Platform ao Adobe Campaign usando chamadas de API, é necessário gerar um token de acesso usando a Integração OAuth criada no Adobe Developer Console.
 
@@ -71,7 +71,7 @@ Para fazer isso, siga estes passos:
 
    ![](assets/ac-lp-oauth.png){width="70%"}
 
-Agora que sua conexão Oauth está configurada, crie e configure uma nova conexão do Source **[!UICONTROL HTTP API]** para vincular o Adobe Campaign ao Adobe Experience Platform.
+Agora que sua conexão OAuth está configurada, crie e configure uma nova conexão do Source **[!UICONTROL HTTP API]** para vincular o Adobe Campaign ao Adobe Experience Platform.
 
 ## Criar uma conexão HTTP API Source {#source}
 
@@ -81,9 +81,9 @@ Com a conexão OAuth estabelecida, a próxima etapa é criar uma conexão do Sou
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=pt-BR){target="_blank"}.
+1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
 
-   Na etapa **[!UICONTROL Authentication]**, alterne a opção **[!UICONTROL Enable authentication]** para autenticar usando o token de acesso gerado anteriormente pela integração OAuth.
+   Na etapa **[!UICONTROL Authentication]**, alterne a opção **[!UICONTROL Enable authentication]** para autenticar usando o token de acesso gerado anteriormente por meio da integração OAuth.
 
    ![](assets/ac-lp-source-authentication.png){width="70%"}
 
@@ -123,7 +123,7 @@ Navegue pelas guias abaixo para descobrir os dois métodos:
 
 >[!TAB Adicionar opções usando uma atividade de código JavaScript]
 
-Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
+Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
 
 Na execução do workflow, as opções são criadas automaticamente no console do Campaign com os valores fornecidos.
 

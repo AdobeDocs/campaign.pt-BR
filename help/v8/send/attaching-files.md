@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 94%
+ht-degree: 93%
 ---
 # Anexar arquivos a um email{#attaching-files}
 
@@ -34,7 +34,7 @@ Você pode anexar um ou mais arquivos a uma entrega de email.
 
 >[!NOTE]
 >
->Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado na lista de opções do Campaign. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR#delivery).
+>Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado na lista de opções do Campaign. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 Há dois casos possíveis:
 
@@ -51,7 +51,7 @@ Para evitar problemas de desempenho, as imagens incluídas nos emails não podem
 
 A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, só é possível adicionar um arquivo como anexo a um email. Esse limite pode ser configurado na opção `NmsDelivery_MaxRecommendedAttachments`.
 
-Saiba mais na lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR#delivery).
+Saiba mais na lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 ## Anexar um arquivo local {#attaching-a-local-file}
 
@@ -59,7 +59,7 @@ Para anexar um arquivo local a uma entrega, siga as etapas abaixo.
 
 >[!NOTE]
 >
->Você pode anexar vários arquivos a uma entrega. Os anexos podem estar em qualquer formato, inclusive no formato zipado.
+>Você pode anexar vários arquivos a uma entrega. Os anexos podem estar em qualquer formato, incluindo o formato zipado.
 
 1. Clique no link **[!UICONTROL Attachments]**.
 1. Clique no botão **[!UICONTROL Add]**.

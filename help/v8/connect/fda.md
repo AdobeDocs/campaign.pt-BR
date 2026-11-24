@@ -26,10 +26,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 40%
+ht-degree: 37%
 ---
 # Federated Data Access (FDA){#gs-fda}
 
@@ -81,7 +81,7 @@ Você também pode definir diretamente uma conexão com um banco de dados extern
 
 >[!CAUTION]
 >
->Esse tipo de configuração só deve ser usada temporariamente para coletar dados. A configuração da conta externa deve ser preferida para qualquer outro uso.
+>Esse tipo de configuração só deve ser usado temporariamente para coletar dados. A configuração da conta externa deve ser preferida para qualquer outro uso.
 
 Por exemplo, na atividade **[!UICONTROL Query]**, é possível definir uma conexão temporária com um banco de dados externo da seguinte maneira:
 
@@ -92,5 +92,5 @@ Por exemplo, na atividade **[!UICONTROL Query]**, é possível definir uma conex
 1. Selecione a tabela onde os dados estão armazenados. Você pode inserir o nome da tabela diretamente no campo correspondente ou clicar no ícone edição para acessar a lista das tabelas do banco de dados.
 1. Clique no botão **[!UICONTROL Add]** para definir um ou vários campos de reconciliação entre os dados do banco de dados externo e os do banco de dados do Adobe Campaign. Os ícones **[!UICONTROL Edit expression]** do **[!UICONTROL Remote field]** e **[!UICONTROL Local field]** fornecem acesso à lista de campos de cada uma das tabelas.
 1. Se necessário, especifique uma condição de filtragem e o modo de classificação de dados.
-1. Selecione os dados adicionais a serem coletados no banco de dados externo. Para fazer isso, clique duas vezes nos campos que deseja adicionar para exibi-los nas **[!UICONTROL Output columns]**.
+1. Selecione os dados adicionais a serem coletados no banco de dados externo. Para fazer isso, clique duas vezes nos campos que deseja adicionar para exibi-los em **[!UICONTROL Output columns]**.
 1. Clique em **[!UICONTROL Finish]** para confirmar essa configuração.

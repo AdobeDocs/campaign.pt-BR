@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: e633414f053265108e33aa63d7b7504d307e05c3
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '3132'
-ht-degree: 98%
+ht-degree: 96%
 ---
 # Cálculo de métricas de relatório integradas {#metrics-calculation}
 
@@ -416,7 +416,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
   <tr> 
    <td> Páginas exibidas<br /> </td> 
    <td> @totalPages / @days<br /> </td> 
-   <td> Média diária do número total de cliques nos links de entrega por sistemas operacionais para todas as entregas.<br /> </td> 
+   <td> Média diária do número total de cliques nos links de entrega por sistema operacional para todas as entregas.<br /> </td> 
    <td> Sum(@pages)<br /> </td> 
   </tr> 
   <tr> 
@@ -809,7 +809,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 
 Este relatório é baseado nas tabelas Entrega (nms:delivery) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
 
-Este relatório mostra o conteúdo da mensagem (HTML e/ou texto) com a porcentagem de cliques nos links, em cada link. Os links de unsubscription de blocos de personalização e links de mirror pages são considerados no total de cliques, mas não são exibidos no relatório.
+Este relatório mostra o conteúdo da mensagem (HTML e/ou texto) com a porcentagem de cliques nos links, em cada link. Blocos de personalização, links de unsubscription e links de mirror pages são considerados no total de cliques acumulados, mas não são exibidos no relatório.
 
 ## Estatísticas de rastreamento {#tracking-statistics-1}
 
@@ -940,7 +940,7 @@ Se você enfrentar dessincronização ou inconsistência de determinados indicad
 
 ## Rastreamento de aberturas {#tracking-opens-}
 
-Para que o Adobe Campaign detecte aberturas de mensagem, o destinatário deve baixar as imagens no email. Os emails em HTML e Multipart/alternative incluem uma imagem de 0 pixel, que permite detectar mensagens que foram abertas. Como as mensagens em formato de texto não incluem imagens, é impossível detectar se foram abertas ou não. Os valores calculados com base na abertura de mensagem são sempre estimativas, devido à margem de erro vinculada à exibição de imagem.
+Para que o Adobe Campaign detecte aberturas de mensagem, o destinatário deve baixar as imagens no email. Os emails do HTML e Multipart/alternative incluem uma imagem de 0 pixel, que permite detectar mensagens que foram abertas. Como as mensagens em formato de texto não incluem imagens, é impossível detectar se foram abertas ou não. Os valores calculados com base na abertura de mensagem são sempre estimativas, devido à margem de erro vinculada à exibição de imagem.
 
 ## Pessoas/destinatários direcionados {#targeted-persons---recipients}
 

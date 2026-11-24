@@ -30,7 +30,7 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Tipos de associações, também conhecidas como cardinalidades, estão listadas 
 * Cardinalidade 1-N: uma ocorrência da tabela de origem pode ter várias ocorrências correspondentes da tabela de destino, mas uma ocorrência da tabela de destino pode ter no máximo uma ocorrência correspondente da tabela de origem.
 * Cardinalidade N-N: uma ocorrência da tabela de origem pode ter várias ocorrências correspondentes da tabela de destino e vice-versa.
 
-Na interface de uso, as cardinalidades são representadas com um ícone específico.
+Na interface do usuário, as cardinalidades são representadas com um ícone específico.
 
 Para relações de join com uma tabela/banco de dados de campanha:
 

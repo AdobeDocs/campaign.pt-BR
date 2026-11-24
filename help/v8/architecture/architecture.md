@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 66d00cbaf20d714f56ab02bba593cff4a0d23571
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1073'
 ht-degree: 13%
 ---
 # Introdução à arquitetura do Campaign{#gs-ac-archi}
@@ -51,7 +51,7 @@ Dois tipos de ambientes estão disponíveis:
 
 É possível exportar e importar pacotes de um ambiente para outro.
 
-Saiba mais sobre pacotes na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=pt-BR){target="_blank"}
+Saiba mais sobre pacotes na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
 ## Modelos de implantação {#ac-deployment}
 

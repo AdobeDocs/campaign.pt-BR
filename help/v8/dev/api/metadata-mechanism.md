@@ -25,14 +25,14 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 1%
 ---
 # Mecanismo de metadados {#metadata-mechanism}
 
-Você pode recuperar os metadados dos recursos usando **resourceType** em uma solicitação GET:
+Você pode recuperar os metadados do recurso usando **resourceType** em uma solicitação GET:
 
 `GET /profileAndServices/resourceType/<resourceName>`
 
@@ -44,7 +44,7 @@ A resposta retorna os principais metadados do recurso (todos os outros campos s�
   * &quot;type&quot;: esta é a definição de tipo de alto nível (sequência, número, link, coleção, enumeração...).
   * &quot;dataPolicy&quot;: o valor do campo deve seguir as regras de política fornecidas. Por exemplo, se a regra dataPolicy estiver definida como &quot;email&quot;, o valor deverá ser um email válido. Durante uma PATCH ou POST, a dataPolicy pode verificar o valor ou modificar o valor para transformar (smartCase, por exemplo).
   * &quot;category&quot;: fornece a categoria do campo no editor de consultas.
-  * &quot;resType&quot;: é o tipo técnico.
+  * &quot;resType&quot;: este é o tipo técnico.
 
     Se &quot;type&quot; for concluído com o valor &quot;link&quot; ou &quot;collection&quot;, o valor resTarget será o nome do recurso direcionado pelo link.
     Se &quot;type&quot; for concluído com o valor &quot;enumeration&quot;, um campo &quot;values&quot; será adicionado e cada valor de enumeração será detalhado no nó **values**.

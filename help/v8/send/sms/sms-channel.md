@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 24%
+source-wordcount: '1354'
+ht-degree: 22%
 ---
 # Características do canal de SMS {#sms-channel}
 
@@ -65,7 +65,7 @@ Um SMS transporta mais informações do que texto. Aqui está uma lista do que v
 >
 >A codificação de SMS é um assunto vasto e complexo com muitas armadilhas e implementações não conformes!
 
-A primeira regra é **sempre contatar o provedor SMPP em caso de problemas de codificação**. Somente eles têm um conhecimento preciso da codificação à qual dão suporte e das regras especiais que podem ser aplicáveis devido a limitações na plataforma técnica. Faça com que eles verifiquem o que você envia a eles e o que eles enviam de volta, esse é o único caminho para uma interconexão bem-sucedida e estável.
+A primeira regra é **sempre contatar o provedor SMPP em caso de problemas de codificação**. Somente eles têm conhecimento preciso da codificação à qual dão suporte e das regras especiais que podem ser aplicáveis devido a limitações na plataforma técnica. Faça com que eles verifiquem o que você envia a eles e o que eles enviam de volta, esse é o único caminho para uma interconexão bem-sucedida e estável.
 
 As mensagens SMS usam uma codificação especial de sete bits, geralmente chamada de codificação GSM7.  A Wikipédia tem [um bom artigo sobre ela (GSM 03.38 em inglês)](https://en.wikipedia.org/wiki/GSM_03.38).
 
@@ -78,7 +78,7 @@ Em caso de problemas de codificação, veja alguns itens importantes a serem ver
 * O Latin-1 nem sempre é compatível. Verifique a compatibilidade com seu provedor SMPP antes de tentar usar o Latin-1.
 * As tabelas de correspondência de idiomas nacionais não são compatíveis com o conector do Adobe Campaign. Em vez disso, você deve usar UCS-2 ou outro data_coding.
 * UCS-2 e UTF-16 são frequentemente misturados por telefones. Esse é um problema para as pessoas que enviam emojis e outros caracteres raramente usados que não estão presentes no UCS-2.
-* Os telefones exclusivos mais antigos não têm glifos de fonte para todos os caracteres UCS-2. Os smartphones mais recentes tendem a ser capazes de exibir caracteres raros com bastante facilidade, os smartphones mais antigos muitas vezes não têm muitos emojis, e telefones com recursos muito antigos geralmente têm suporte limitado ao que é útil na língua nativa do país em que foram comprados. Se você quiser usar emoji ou ASCII-art de algum tipo, teste-o em uma grande variedade de telefones antes de enviar. A visualização do Campaign não simula glifos ausentes e exibirá os símbolos disponíveis no navegador da Web que exibe a visualização.
+* Alguns telefones antigos não têm glifos de fonte para todos os caracteres UCS-2. Os smartphones mais recentes tendem a ser capazes de exibir caracteres raros com bastante facilidade, os smartphones mais antigos muitas vezes não têm muitos emojis, e telefones com recursos muito antigos geralmente têm suporte limitado ao que é útil na língua nativa do país em que foram comprados. Se você quiser usar emoji ou ASCII-art de algum tipo, teste-o em uma grande variedade de telefones antes de enviar. A visualização do Campaign não simula glifos ausentes e exibirá os símbolos disponíveis no navegador da Web que exibe a visualização.
 
 O campo *data_coding* informa qual codificação é usada. Um grande problema é que o valor 0 significa *codificação SMSC padrão* na especificação; em geral, significa GSM7, mas nem sempre é esse o caso. Verifique com o provedor SMPP qual codificação está associada a data_coding = 0. Outros valores data_coding tendem a seguir a especificação, mas a única maneira de ter certeza é verificar com o provedor SMPP.
 

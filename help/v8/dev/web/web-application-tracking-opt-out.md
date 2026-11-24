@@ -32,18 +32,18 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 100%
+ht-degree: 86%
 ---
 # Recusa de rastreamento de aplicativo web{#web-application-tracking-opt-out}
 
 
 
-O Adobe Campaign permite que você interrompa o rastreamento de comportamentos da Web de usuários finais que usam o opt out do rastreamento comportamental por meio de cookies ou web beacons. O recurso inclui a habilidade de exibir um banner para apresentar ao usuário final essa opção; você pode adicionar esses banners em aplicações web ou páginas de destino.
+O Adobe Campaign permite que você interrompa o rastreamento de comportamentos da Web de usuários finais que optam por não participar do rastreamento comportamental por meio de cookies ou web beacons. O recurso inclui a habilidade de exibir um banner para apresentar ao usuário final essa opção; você pode adicionar esses banners em aplicações web ou páginas de destino.
 
-Se um usuário final usar o opt out de rastreamento comportamental por meio de cookies ou Web beacons, essas informações serão transmitidas ao servidor de rastreamento do Adobe Campaign com APIs JavaScript. Observe que algumas jurisdições podem exigir que o Cliente apresente aos usuários finais um opt in antes que um opt out possa ser oferecido (ou ter outros requisitos legais) e é responsabilidade do cliente estar em conformidade com as leis aplicáveis.
+Se um usuário final optar por não participar do rastreamento comportamental por meio de cookies ou Web beacons, essas informações serão transmitidas ao servidor de rastreamento do Adobe Campaign com APIs do JavaScript. Observe que algumas jurisdições podem exigir que o Cliente apresente aos usuários finais um opt in antes que um opt out possa ser oferecido (ou ter outros requisitos legais) e é responsabilidade do cliente estar em conformidade com as leis aplicáveis.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Se um usuário final usar o opt out de rastreamento comportamental por meio de c
 
 Para ser exibido em aplicações web ou Páginas de destino, o banner precisa ser configurado.
 
-O Adobe Campaign é fornecido com um banner de exemplo que você deve adaptar às suas necessidades. Essa versão do banner aparece como um bloco de personalização localizado na pasta do modelo de conteúdo. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
+O Adobe Campaign é fornecido com um banner de exemplo que você deve adaptar às suas necessidades. Essa versão do banner aparece como um bloco de personalização localizado na pasta do modelo de conteúdo. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -106,7 +106,7 @@ As APIs disponíveis no lado do cliente para personalizar o banner são:
 
 * **NL.ClientWebTracking.allow()**: define o valor do cookie de opt out para permitir o rastreamento web. O rastreamento web é permitido por padrão.
 * **NL.ClientWebTracking.forbid()**: define o valor do cookie de opt out para proibir o rastreamento web. O rastreamento web precisa de uma entrada de usuário para ser proibido.
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: fecha o banner de cookie de opt out após o usuário clicar no botão Aceitar ou Recusar. (durante a fase de propagação de eventos de clique)
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: fecha o banner de cookie de opt out após o usuário clicar no botão Aceitar ou Recusar (durante a fase de propagação do evento de clique).
 
   bannerDomElt {DOMElement} o elemento DOM raiz do banner de cookies que precisa ser removido
 
