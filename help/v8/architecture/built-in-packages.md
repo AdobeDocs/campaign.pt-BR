@@ -26,10 +26,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: a2ca220e4be9dfb4a90465b69dd08a3552040a07
+source-git-commit: 87e9b7ceb3c082407ac4534e0909c6f7db76e62a
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 16%
+source-wordcount: '811'
+ht-degree: 17%
 ---
 # Pacotes incorporados {#built-in-packages}
 
@@ -43,7 +43,6 @@ O Campaign usa dois tipos de pacotes. Certifique-se de trabalhar com o correto.
 |---|---|---|
 | Finalidade | Forneça os recursos do Campaign, como canais, integrações e complementos. | Exporte e importe sua própria configuração e dados, por exemplo, de um ambiente de preparo para um de produção. |
 | Quem os gerencia | O Adobe os instala e gerencia. Com o Managed Cloud Services, não é possível modificar pacotes integrados instalados. | Você pode criá-los, exportá-los e importá-los. |
-| Onde saber mais | Esta página. | [Trabalhar com pacotes de dados](../dev/packages.md) |
 
 ## Verificar os pacotes instalados {#check-installed-packages}
 
