@@ -23,9 +23,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 36111995a9a550d5089107bbc1f734c204db8aff
+source-git-commit: 92bab89570eca3eb13d6010db0deec74e7860c91
 workflow-type: tm+mt
-source-wordcount: '2828'
+source-wordcount: '2849'
 ht-degree: 3%
 ---
 # Opções de campanha {#campaign-options}
@@ -60,7 +60,7 @@ Você pode ler e gravar valores de opção no código, na personalização e em 
 
 ## Opções disponíveis {#available-options}
 
-As tabelas abaixo listam as opções disponíveis no Campaign v8, agrupadas por área. Quando outra página da documentação descreve uma opção, a tabela é vinculada a ela.
+As tabelas abaixo listam as opções disponíveis no Campaign v8, agrupadas por área. Quando outra página da documentação descreve uma opção, a tabela é vinculada a ela. Algumas entradas são opções informativas ou de manutenção. Listar uma opção não significa que é seguro alterá-la.
 
 ### Entregas {#delivery-options}
 
@@ -83,7 +83,6 @@ Essas opções controlam como os deliveries são preparados e enviados. Elas abr
 | NmsMTA_Alert_Delay | Atraso, em minutos, após o qual um delivery é considerado atrasado. O valor padrão é de 30 minutos. |
 | NmsServer_MirrorPageUrl | URL do servidor de mirror pages. É o valor padrão de deliveries de email quando a definição de roteamento não especifica um URL. Por padrão, é idêntico ao URL do servidor de rastreamento. |
 | XtkBarcode_CaractereEspecial | Ativa ou desativa o suporte de caracteres especiais para os códigos de barras do Código 128. |
-| XtkSecurity_Restrict_EditXML | Adicione-o com o valor 0 para desativar a edição do código XML dos deliveries (Editar fonte XML ou Ctrl+F4). |
 | NMS_AtivateOwnerConfirmation | Defina-o como 1 para que o operador encarregado do delivery possa confirmar o envio, quando um operador ou grupo específico for designado para iniciar o delivery. Defina-o como 0 para desativar: somente o operador ou grupo designado, ou um administrador, pode confirmar o envio. |
 | NmsDelivery_senderAddressMask | Lista separada por vírgulas dos endereços de remetente permitidos no campo De email de deliveries de email. Quando a opção tem um valor, o campo se torna uma lista suspensa. A restrição é global: se aplica a todas as marcas e modelos de entrega e aceita somente endereços estáticos. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/options#restrict-sender-address){target="_blank"} |
 
@@ -164,6 +163,8 @@ Essas opções definem os limites que geram um aviso ou um alerta quando o proce
 
 O workflow de limpeza limpa registros antigos para impedir o crescimento do banco de dados. Essas opções definem por quanto tempo o Campaign mantém cada tipo de dados. Uma opção de atraso de limpeza é criada automaticamente quando você altera o atraso na interface. Se você editá-lo na lista de opções, expresse o valor em segundos. Saiba mais em [Arquitetura geral](general-architecture.md) e [Diretrizes de segurança](../config/security.md#consent).
 
+Somente administradores podem modificar as opções de atraso de limpeza. Os valores apropriados dependem do seu ambiente, portanto, verifique o valor atual na sua instância e não assuma um padrão universal.
+
 | Opção | Descrição |
 |---|---|
 | NmsCleanup_BroadLogPurgeDelay | Atraso após o qual os logs do delivery (broadlogs) são apagados. |
@@ -178,7 +179,6 @@ O workflow de limpeza limpa registros antigos para impedir o crescimento do banc
 | NmsCleanup_RejectsPurgeDelay | Atraso após o qual as rejeições são apagadas. |
 | NmsCleanup_VisitorPurgeDelay | Atraso após o qual os visitantes são apagados. |
 | NmsCleanup_WorkflowResultPurgeDelay | Atraso após o qual os resultados do fluxo de trabalho são apagados. |
-| XtkCleanup_NoStats | Defina como 1 para que o workflow de limpeza não atualize as estatísticas do banco de dados. |
 | WdbcKillSessionPolicy | Comportamento da interrupção incondicional de workflows no PostgreSQL. 0 (padrão): interrompe o processo de workflow sem impacto no banco de dados. 1: interrompe o processo e cancela a consulta (pg_cancel_backend). 2: interrompe o processo e encerra a consulta (pg_terminate_backend). |
 | XtkSequence_AutoGeneration | Aplica-se a esquemas personalizados criados após a definição desta opção, com autopk=&quot;true&quot; e nenhum atributo pkSequence: o Campaign gera a sequência automaticamente. |
 
@@ -201,8 +201,8 @@ Essas opções se aplicam à Interação do Campaign, o módulo de gestão de of
 | Opção | Descrição |
 |---|---|
 | NmsInteraction_UseDaemon | Defina-o como 1 para ativar a gravação assíncrona de apresentações ou como 0 para desativá-la. |
-| NmsInteraction_MapWorkflowId | Lista de todos os workflows de sincronização gerados. Opção de manutenção da instância de controle. |
-| NmsExecutionInstanceId | Identificador da instância de execução. Disponível em instâncias de execução. |
+| NmsInteraction_MapWorkflowId | Lista de todos os workflows de sincronização gerados. Opção de manutenção informativa da instância de controle: não a modifique. |
+| NmsExecutionInstanceId | Identificador da instância de execução. Opção informativa disponível em instâncias de execução: não a modifique. |
 
 As seguintes opções também são opções de manutenção da instância de controle:
 
