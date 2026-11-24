@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -87,7 +87,7 @@ Os workflows técnicos que garantem a replicação de dados são os seguintes:
 
 Se necessário, é possível iniciar a sincronização de dados manualmente. Para fazer isso, clique com o botão direito do mouse na atividade **Scheduler** e selecione **Executar tarefa(s) pendente(s) agora**.
 
-Além do fluxo de trabalho técnico interno **Replicar tabelas de referência**, você pode forçar a replicação de dados em seus fluxos de trabalho usando um destes métodos
+Além do fluxo de trabalho técnico interno **Replicar tabelas de referência**, você pode forçar a replicação de dados em seus fluxos de trabalho usando um destes métodos:
 
 +++Como forçar a replicação de dados
 

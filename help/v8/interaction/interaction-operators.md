@@ -27,7 +27,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 35%
@@ -44,7 +44,7 @@ Dois tipos de operadores podem usar a Interação de campanha: **Gerentes de ofe
 1. Crie um operador. [Saiba mais](../start/manage-permissions.md#add-users)
 1. Navegue até a janela **[!UICONTROL Groups and named rights]**, clique em **[!UICONTROL Add]** e selecione o grupo **[!UICONTROL Offer manager]**.
 
-As permissões associadas aos gerentes de oferta estão descritas [aqui](../start/manage-permissions.md#ootb-productprofiles)
+As permissões associadas aos gerentes de oferta estão descritas [aqui](../start/manage-permissions.md#ootb-productprofiles).
 
 ## Criar um operador de Gerente de delivery {#delivery-manager}
 

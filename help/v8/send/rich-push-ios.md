@@ -25,7 +25,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 28%
@@ -153,7 +153,7 @@ Depois de definir o conteúdo da mensagem, você pode usar assinantes de teste p
 
    ![](assets/rich_push_ios_timer_1.png)
 
-1. Para redigir a mensagem, digite o texto nos campos **[!UICONTROL Title]**,**[!UICONTROL Expanded title]**, **[!UICONTROL Message]** e **[!UICONTROL Expanded message]**.
+1. Para redigir a mensagem, digite o texto nos campos **[!UICONTROL Title]**, **[!UICONTROL Expanded title]**, **[!UICONTROL Message]** e **[!UICONTROL Expanded message]**.
 
    O texto **[!UICONTROL Message]** aparece no modo de exibição recolhido enquanto **[!UICONTROL Expanded message]** é exibido quando a notificação é expandida.
 

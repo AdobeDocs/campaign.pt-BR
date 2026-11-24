@@ -31,16 +31,16 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '457'
 ht-degree: 6%
 ---
 # Exibir perfis existentes {#view-profiles}
 
 Navegue até **[!UICONTROL Profiles and targets]** para acessar destinatários armazenados no banco de dados do Adobe Campaign.
 
-Nesta página, você pode [criar novo destinatário](create-profiles.md), editar um destinatário existente e acessar seus detalhes de perfil.
+Nesta página, você pode [criar um novo destinatário](create-profiles.md), editar um destinatário existente e acessar seus detalhes de perfil.
 
 ![](assets/profiles-and-targets.png)
 

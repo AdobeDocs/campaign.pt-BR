@@ -42,7 +42,7 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 53%
@@ -132,7 +132,7 @@ Clique no link **[!UICONTROL Advanced campaign settings...]** e depois na guia *
 
 ## Seed addresses e tabela personalizada {#using-an-external-recipient-table}
 
-Se a tabela da entrega for uma tabela externa, você precisará fazer configurações adicionais. O esquema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados
+Se a tabela da entrega for uma tabela externa, você precisará fazer configurações adicionais. O esquema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados.
 
 Nesse caso, para adicionar seed addresses ao delivery, insira os campos adequados diretamente na guia correspondente ou importe os templates de endereços.
 

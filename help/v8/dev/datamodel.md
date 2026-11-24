@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 5%
@@ -47,7 +47,7 @@ A estrutura básica do modelo de dados do Adobe Campaign pode ser descrita da se
 
 * **Tabela de destinatários**: o modelo de dados depende de uma tabela principal que é, por padrão, a tabela de destinatários (**nmsRecipient**). Esta tabela armazena todos os perfis de marketing. Saiba mais sobre a tabela de destinatários em [esta seção](#ootb-profiles).
 
-* **Tabela de entrega**: esta tabela armazena um registro por ação de entrega. Geralmente é a tabela Delivery (**NmsDelivery**). Um registro nesta tabela representa uma ação de entrega ou um modelo de entrega. Ele contém todos os parâmetros necessários para executar deliveries, como target, conteúdo etc. Cada registro é atualizado várias vezes para refletir o progresso do delivery
+* **Tabela de entrega**: esta tabela armazena um registro por ação de entrega. Geralmente é a tabela Delivery (**NmsDelivery**). Um registro nesta tabela representa uma ação de entrega ou um modelo de entrega. Ele contém todos os parâmetros necessários para executar deliveries, como target, conteúdo etc. Cada registro é atualizado várias vezes para refletir o progresso do delivery.
 
 * **Tabelas de logs**: essas tabelas armazenam todos os logs associados à execução das campanhas.
 

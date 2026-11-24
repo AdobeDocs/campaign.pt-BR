@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
 workflow-type: tm+mt
 source-wordcount: '1327'
-ht-degree: 63%
+ht-degree: 61%
 ---
 # Entender os ambientes e a arquitetura da interação do Campaign
 
@@ -68,7 +68,7 @@ Para oferecer suporte à escalabilidade e fornecer serviço 24 horas por dia, 7 
 
 ![](assets/interaction_powerbooster_schema.png)
 
-As instâncias de controle são dedicadas ao canal de entrada e contêm a versão online do catálogo. Cada instância de execução é independente e dedicada a um segmento de contato (por exemplo, uma instância de execução por país). As chamadas para o mecanismo de oferta devem ser executadas diretamente na execução (uma URL específica por instância de execução). Como a sincronização entre instâncias não é automática, as interações do mesmo contato devem ser enviadas pela mesma instância.
+As instâncias de execução são dedicadas ao canal de entrada e contêm a versão online do catálogo. Cada instância de execução é independente e dedicada a um segmento de contato (por exemplo, uma instância de execução por país). As chamadas para o mecanismo de oferta devem ser executadas diretamente na execução (uma URL específica por instância de execução). Como a sincronização entre instâncias não é automática, as interações do mesmo contato devem ser enviadas pela mesma instância.
 
 ### Sincronização {#synchronization}
 

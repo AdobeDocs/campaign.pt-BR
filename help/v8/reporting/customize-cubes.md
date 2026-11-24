@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1444'
-ht-degree: 86%
+ht-degree: 83%
 ---
 # Personalizar os seus cubos{#cube-custom}
 
@@ -40,7 +40,7 @@ Use compartimentalização de dados para simplificar a exibição de dados agrup
 
 Em geral, três tipos de compartimentalização estão disponíveis:
 
-1. Uso de intervalos de valor definidos manualmente. Por exemplo, a idade, o carrinho de compras médio, o número de entregas abertos, etc.). Para obter mais informações, consulte [Definição de cada compartimento](#defining-each-bin).
+1. Uso de intervalos de valor definidos manualmente. Por exemplo, idade, carrinho de compras médio, número de deliveries abertos, etc. Para obter mais informações, consulte [Definição de cada compartimento](#defining-each-bin).
 1. Dinamicamente, dependendo dos valores de uma [enumeração](../config/enumerations.md): apenas exibe os valores contidos na enumeração, todos os outros valores são agrupados em &#39;Outros&#39;. Para obter mais informações, consulte [Gestão dinâmica de compartimentos](#dynamically-managing-bins).
 1. Uso de intervalos de valor, todos os outros sendo agrupados. Por exemplo, de 18 a 25 anos, 26 a 59 anos e os outros. Para obter mais informações, consulte [Criação de intervalos de valor](#creating-value-ranges).
 
@@ -139,7 +139,7 @@ Saiba mais sobre enumerações em [esta página](../../v8/config/ui-settings.md)
 
 Os maiores volumes de dados podem ser calculados em agregações.
 
-Agregações são úteis ao manipular grandes volumes de dados. Eles são atualizados automaticamente com base nas configurações definidas na caixa de fluxo de trabalho dedicada, para integrar os dados a serem coletados mais recentemente nos indicadores
+Agregações são úteis ao manipular grandes volumes de dados. Eles são atualizados automaticamente com base nas configurações definidas na caixa de workflow dedicada, para integrar os dados coletados mais recentemente nos indicadores
 
 As agregações são definidas na guia relevante de cada cubo.
 

@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 100%
+ht-degree: 97%
 ---
 # Gestão de apresentação de ofertas{#managing-offer-presentation}
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 ## Visão geral das regras de apresentação {#presentation-rules-overview}
 
-A interação permite controlar o fluxo de apresentações de oferta usando regras de apresentação. Essas regras, que são específicas à Interação, são regras de tipologia. Elas permitem excluir ofertas com base no histórico de apresentações já feitas a um destinatário. Eles são referenciados no ambiente
+A interação permite controlar o fluxo de apresentações de oferta usando regras de apresentação. Essas regras, que são específicas à Interação, são regras de tipologia. Elas permitem excluir ofertas com base no histórico de apresentações já feitas a um destinatário. Eles são referenciados no ambiente.
 
 ## Criação e referência a uma regra de apresentação de oferta {#creating-and-referencing-an-offer-presentation-rule}
 

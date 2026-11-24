@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 80%
+ht-degree: 78%
 ---
 # Gerenciar solicitações de privacidade no Campaign {#privacy}
 
@@ -144,7 +144,7 @@ O padrão para um nome de arquivo é: `<InstanceName>-<NamespaceId>-<Reconciliat
 
 Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Campaign pesquisa todos os dados do Titular dos dados com base em **[!UICONTROL Reconciliation value]** em todas as tabelas que tenham um link para a tabela do destinatário (tipo próprio).
 
-As tabelas integradas consideradas ao executar solicitações de privacidade são:
+A lista de tabelas integradas consideradas ao executar solicitações de privacidade é:
 
 * Recipients (destinatário)
 * Log de entrega de destinatário (broadLogRcp)

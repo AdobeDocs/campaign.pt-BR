@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 93%
+ht-degree: 89%
 ---
 # Caso de uso: exibição do relatório sobre as respostas de uma pesquisa online{#use-case-displaying-report-on-answers-to-an-online-survey}
 
@@ -45,7 +45,7 @@ ht-degree: 93%
 
 As respostas às pesquisas do Adobe Campaign podem ser coletadas e analisadas usando relatórios dedicados.
 
-No exemplo a seguir, queremos coletar respostas de uma pesquisa on-line e exibi-las em uma tabela dinâmica
+No exemplo a seguir, queremos coletar respostas de uma pesquisa online e exibi-las em uma tabela dinâmica.
 
 Siga as etapas abaixo:
 

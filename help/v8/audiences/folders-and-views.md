@@ -39,7 +39,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 5%
@@ -128,7 +128,7 @@ No exemplo abaixo, criaremos uma nova pasta para exibir apenas deliveries dos EU
 
 Por padrão, uma nova pasta é adicionada na parte superior da hierarquia.
 
-Procure a guia **Subpastas** das propriedades de uma pasta para organizar suas subpastas.
+Procure a guia **Subpastas** das propriedades da pasta para organizar suas subpastas.
 
 Você pode mover as pastas com as setas à direita ou selecionar a opção **[!UICONTROL Sort the sub-folders in alphabetical order]** para classificá-las automaticamente.
 
