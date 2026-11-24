@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 96%
+ht-degree: 92%
 ---
 # Matriz de compatibilidade do Campaign v8 {#compat-matrix}
 
@@ -85,7 +85,7 @@ Os bancos de dados externos compatíveis com o módulo Federated Data Access (FD
 
 
 >[!AVAILABILITY]
->Além disso, com o [Complemento de segurança aprimorado](../config/enhanced-security.md#secure-vpn-tunneling), você pode acessar os seus bancos de dados locais por meio dos túneis seguros de VPN. [Saiba mais](../config/enhanced-security.md)
+>Além disso, com o [Complemento de Segurança Aprimorado](../config/enhanced-security.md#secure-vpn-tunneling), você pode acessar seus bancos de dados locais por meio do encapsulamento VPN seguro. [Saiba mais](../config/enhanced-security.md)
 
 ## SDK móvel {#MobileSDK}
 

@@ -31,10 +31,10 @@ topic_v2:
     internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 66%
+source-wordcount: '1782'
+ht-degree: 63%
 ---
 # Relatórios globais {#global-reports}
 
@@ -118,7 +118,7 @@ Os seguintes indicadores são usados:
 * **[!UICONTROL Inbox full]**: Tipo de erro gerado após cinco tentativas de entrega para indicar que a caixa de entrada dos destinatários contém muitas mensagens.
 * **[!UICONTROL Account disabled]**: Tipo de erro gerado ao enviar uma entrega para indicar que o endereço não existe mais.
 * **[!UICONTROL Rejected]**: Tipo de erro gerado quando um endereço é rejeitado pelo IAP (Provedor de Acesso à Internet), por exemplo, ao seguir uma regra de segurança da aplicação (software antispam).
-* **[!UICONTROL Unreachable]**: Tipo de erro que ocorre na cadeia de caracteres de distribuição de mensagens: incidente na retransmissão SMTP, domínio temporariamente inacessível, etc
+* **[!UICONTROL Unreachable]**: Tipo de erro que ocorre na cadeia de caracteres de distribuição de mensagens: incidente na retransmissão SMTP, domínio temporariamente inacessível, etc.
 * **[!UICONTROL Not connected]**: Tipo de erro para indicar que o celular do recipient está desligado ou sem rede no momento do envio.
 
   >[!NOTE]
@@ -263,7 +263,7 @@ Na tabela de valores de estatística global, clique no nome de cada sistema oper
 
 As estatísticas são apresentadas no formato de uma curva, um gráfico e uma tabela de valores.
 
-A curva **[!UICONTROL History]** representa a taxa de uso deste sistema operacional por dia. Essa taxa é a relação do número de visitantes por dia (neste sistema operacional) em relação ao número de visitantes medidos no dia com a maior participação.
+A curva **[!UICONTROL History]** representa a taxa de uso deste sistema operacional por dia. Essa taxa é a relação do número de visitantes por dia (nesse sistema operacional) em relação ao número de visitantes medidos no dia com a maior participação.
 
 O gráfico **[!UICONTROL Breakdown by version]** representa o detalhamento dos visitantes por versão em relação ao número total de visitantes neste sistema operacional.
 

@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 51%
+ht-degree: 48%
 ---
 # Rastrear links personalizados {#tracking-personalized-links}
 
@@ -36,7 +36,7 @@ Os links no conteúdo de email que contêm personalização precisam de sintaxe 
 
 A utilização do JavaScript no conteúdo de email (HTML ou Texto) permite gerar e enviar conteúdo dinâmico para os destinatários, com duas limitações:
 
-* O script não pode acessar o banco de dados diretamente (as funções SQL e API não estão disponíveis),
+* O script não pode acessar o banco de dados diretamente (funções SQL e funções API não estão disponíveis),
 * O Adobe Campaign deve ser capaz de detectar URLs para que os links possam ser rastreados.
 
 ## Instruções de pré-processamento {#pre-processing-instructions}

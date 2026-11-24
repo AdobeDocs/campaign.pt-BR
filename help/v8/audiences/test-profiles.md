@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 56%
+ht-degree: 53%
 ---
 # Criar e gerenciar perfis de teste {#create-test-profiles}
 
@@ -55,7 +55,7 @@ Os perfis de teste são criados como seed addresses. Eles são usados para direc
 
 Os seed addresses têm os seguintes benefícios:
 
-* Substituição aleatória de campos com dados obtidos de perfis de recipients: permite inserir somente o endereço de email, por exemplo, na seção seed address e permite que o Campaign preencha automaticamente os outros campos no formulário do perfil. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}.
+* Substituição aleatória de campos com dados obtidos de perfis de recipients: permite inserir somente o endereço de email, por exemplo, na seção seed address e permite que o Campaign preencha automaticamente os outros campos do perfil. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}.
 * Ao usar um fluxo de trabalho com funcionalidades de gestão de dados, os dados adicionais processados nas entregas podem ser inseridos no nível do seed address para forçar valores, evitando assim a substituição de valores aleatórios.
 * Os seed addresses são excluídos automaticamente dos relatórios nas seguintes estatísticas da entrega: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
@@ -63,7 +63,7 @@ Esses seed addresses são adicionados ao target das entregas ao serem importados
 
 >[!NOTE]
 >
->Os seed addresses não são criados na tabela de recipients, mas em uma tabela separada. Se a tabela de destinatários é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados. Caso contrário, os campos estendidos não são considerados para seed addresses.
+>Os seed addresses não são criados na tabela de recipients, mas em uma tabela separada. Se a tabela de destinatários é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados. Caso contrário, os campos estendidos não serão considerados para os seed addresses.
 >
 >Um exemplo de como estender a tabela de seed addresses é apresentado na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}.
 
@@ -94,7 +94,7 @@ Para criar seed addresses, siga estas etapas:
 
 ### Criar modelos de seed address {#creating-seed-address-templates}
 
-Você pode criar templates de endereço que podem ser importados e modificados para cada delivery. O processo é o mesmo que ao definir um novo seed address. A única diferença é que os modelos de seed address devem ser armazenados em uma pasta do tipo &#39;modelo&#39;.
+Você pode criar templates de endereço que podem ser importados e modificados para cada delivery. O processo é o mesmo que ao definir um novo seed address. A única diferença é que os endereços de modelo de seed address devem ser armazenados em uma pasta do tipo &#39;Template&#39;.
 
 ### Seed addresses para deliveries de correspondência direta {#direct-mail-seed-addresses}
 

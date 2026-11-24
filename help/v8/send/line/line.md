@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 93%
+source-wordcount: '1198'
+ht-degree: 87%
 ---
 # Criar entregas LINE
 
@@ -144,7 +144,7 @@ Para criar uma entrega [!DNL LINE], é necessário seguir estas etapas:
 
    ![](assets/line_message_10.png)
 
-1. No editor de entrega, clique em **[!UICONTROL Add]** para adicionar uma ou várias mensagens e selecione o **[!UICONTROL Content type]**.
+1. No editor de entrega, clique em **[!UICONTROL Add]** para adicionar uma ou várias mensagens e selecione a **[!UICONTROL Content type]**.
 
    Para obter mais informações sobre os diferentes **[!UICONTROL Content type]** disponíveis, consulte [Definir o tipo de conteúdo](#defining-the-content).
 
@@ -160,7 +160,7 @@ Para criar uma entrega [!DNL LINE], é necessário seguir estas etapas:
 
 ## Definir o tipo de conteúdo {#defining-the-content}
 
-Para definir o conteúdo de uma entrega [!DNL LINE], primeiro adicione o tipo de mensagem à entrega. Cada entrega [!DNL LINE] pode conter até 5 mensagens.
+Para definir o conteúdo de uma entrega [!DNL LINE], primeiro adicione um tipo de mensagem à entrega. Cada entrega [!DNL LINE] pode conter até 5 mensagens.
 
 É possível escolher entre dois tipos de mensagem:
 
@@ -222,7 +222,7 @@ Uma entrega **[!UICONTROL Image and link]**&#x200B;[!DNL LINE] é uma mensagem e
 
 ### Configuração de uma entrega de mensagem de vídeo {#configuring-a-video-message-delivery}
 
-Uma entrega **[!UICONTROL Video message]** [!DNL LINE] é uma mensagem enviada aos recipients no formato de um vídeo que pode conter um URL.
+Uma entrega **[!UICONTROL Video message]** [!DNL LINE] é uma mensagem enviada aos destinatários no formato de vídeo que pode conter uma URL.
 
 O campo **[!UICONTROL Preview Image URL]** permite adicionar o URL de uma imagem de pré-visualização com um limite de 1000 caracteres. JPEG e PNG são compatíveis com um limite de tamanho de arquivo de 1 MB.
 

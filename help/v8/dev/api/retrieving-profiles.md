@@ -19,9 +19,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '233'
 ht-degree: 4%
 ---
 # Recuperação de perfis com APIs {#retrieving-profiles}
@@ -101,7 +101,7 @@ O parâmetro **[!UICONTROL filterType]** permite recuperar perfis com base em um
 
 >[!NOTE]
 >
->As pesquisas diferenciam maiúsculas de minúsculas e são executadas somente em prefixos. Por exemplo, você não poderá procurar um perfil usando as últimas letras do nome.
+>As pesquisas diferenciam maiúsculas de minúsculas e são executadas somente em prefixos. Por exemplo, você não poderá pesquisar um perfil usando as últimas letras do nome.
 
 ***Solicitações de exemplo***
 

@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 41%
+source-wordcount: '534'
+ht-degree: 37%
 ---
 # Trabalhar com públicos no Campaign{#gs-ac-audiences}
 
@@ -61,7 +61,7 @@ Saiba como criar um público em um fluxo de trabalho de campanha na [esta págin
 
 ## Perfis ativos {#active-profiles}
 
-Um perfil ativo é aquele com o qual o cliente tentou se comunicar nos últimos 12 meses por meio de qualquer canal.
+Um perfil ativo é aquele com o qual um cliente tentou se comunicar nos últimos 12 meses por meio de qualquer canal.
 
 De acordo com seu contrato, cada uma das instâncias do Campaign é provisionada com uma quantidade específica de perfis ativos que são contados para fins de faturamento. Consulte seu contrato mais recente para obter uma referência sobre o número de perfis ativos adquiridos. Saiba mais em [descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 

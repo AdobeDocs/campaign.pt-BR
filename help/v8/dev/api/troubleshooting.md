@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Você só pode criar chaves de API para as organizações das quais é administr
 
 Isso significa que há um problema com o provisionamento IMS do seu produto específico do Campaign: a equipe IMS precisa corrigi-lo.
 
-Para obter mais detalhes, você pode chamar a API do IMS com seu token para ver a aparência do seu perfil IMS: É necessário ter um prodCtx em que a organization_id seja a mesma que você inseriu no URL do Adobe.io para poder rotear sua solicitação.
+Para obter mais detalhes, você pode chamar a API do IMS com seu token para ver a aparência do seu perfil IMS: É necessário ter um prodCtx, em que a organization_id seja a mesma que você inseriu no URL do Adobe.io para poder rotear sua solicitação.
 Se estiver faltando, o provisionamento de IMS precisará ser corrigido.
 
 ```
@@ -83,7 +83,7 @@ Na resposta, o valor ORGANIZATION_ID deve ser o mesmo na primeira solicitação 
 
 * **Ao fazer uma solicitação para o Adobe.io, você obtém {&quot;code&quot;:500, &quot;message&quot;:&quot;Oops. Algo deu errado. Verifique seu URI e tente novamente.&quot;}**
 
-Adobe.io declara seu URI inválido: provavelmente o URI que você está solicitando não é válido. No Adobe.io, ao selecionar o serviço do Campaign, você obtém um seletor com uma lista de IDs_organizações possíveis. Você precisa verificar se aquele que você escolher é o que você colocou no seu URL.
+O Adobe.io declara seu URI inválido: provavelmente o URI que você está solicitando não é válido. No Adobe.io, ao selecionar o serviço do Campaign, você obtém um seletor com uma lista de IDs_organizações possíveis. Você precisa verificar se aquele que você escolher é o que você colocou no seu URL.
 
 * **Ao fazer uma solicitação para o Adobe.io, você obtém {&quot;error_code&quot;:&quot;401013&quot;,&quot;message&quot;:&quot;Oauth token is not valid&quot;}**
 

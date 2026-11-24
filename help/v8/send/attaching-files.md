@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 94%
+ht-degree: 93%
 ---
 # Anexar arquivos a um email{#attaching-files}
 
@@ -59,7 +59,7 @@ Para anexar um arquivo local a uma entrega, siga as etapas abaixo.
 
 >[!NOTE]
 >
->Você pode anexar vários arquivos a uma entrega. Os anexos podem estar em qualquer formato, inclusive no formato zipado.
+>Você pode anexar vários arquivos a uma entrega. Os anexos podem estar em qualquer formato, incluindo o formato zipado.
 
 1. Clique no link **[!UICONTROL Attachments]**.
 1. Clique no botão **[!UICONTROL Add]**.

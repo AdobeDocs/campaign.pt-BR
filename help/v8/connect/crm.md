@@ -35,10 +35,10 @@ topic_v2:
     internal-label: Email marketing
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 35%
+source-wordcount: '341'
+ht-degree: 31%
 ---
 # Conectar seu CRM ao Campaign {#gs-crm}
 
@@ -61,7 +61,7 @@ Os principais benefícios são:
 
 ## Sistemas compatíveis {#compatible-crm-systems-and-limitations}
 
-O CRM e as versões compatíveis estão detalhados na [Matriz de compatibilidade](../start/compatibility-matrix.md) do Campaign.
+Os CRMs e as versões compatíveis estão detalhados na [Matriz de compatibilidade](../start/compatibility-matrix.md) do Campaign.
 
 >[!CAUTION]
 >

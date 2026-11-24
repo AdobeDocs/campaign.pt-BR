@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2111'
-ht-degree: 91%
+ht-degree: 88%
 ---
 # Definir o conteúdo do email {#defining-the-email-content}
 
@@ -94,7 +94,7 @@ O conteúdo da mensagem é definido na seção inferior da janela de configuraç
 
 As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo com a preferência do destinatário. Recomendamos a criação de conteúdo nos dois formatos para garantir que as mensagens possam ser exibidas corretamente em qualquer sistema de email. Para obter mais informações, consulte [Seleção de formatos de mensagem](email-parameters.md#selecting-message-formats).
 
-* Para importar um conteúdo HTML, clique no botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
+* Para importar conteúdo do HTML, use o botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
 
   Se você estiver usando o Editor de Conteúdo Digital (DCE), consulte [esta seção](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
@@ -132,14 +132,14 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
   ![](assets/s_ncs_user_wizard_email01_141.png)
 
-  Já para o formato HTML, clique na guia **[!UICONTROL Preview]** na parte inferior da página para exibir a renderização da mensagem com sua personalização.
+  Quanto ao formato HTML, clique na guia **[!UICONTROL Preview]** na parte inferior da página para exibir a renderização da mensagem com sua personalização.
 
   ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Definir o conteúdo interativo {#amp-for-email-format}
 
-O Adobe Campaign possibilita experimentar o novo formato interativo [AMP for Email](https://amp.dev/pt_br/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
+O Adobe Campaign permite experimentar o novo formato interativo [AMP for Email](https://amp.dev/pt_br/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
 
 Para obter mais informações, consulte [esta seção](defining-interactive-content.md).
 

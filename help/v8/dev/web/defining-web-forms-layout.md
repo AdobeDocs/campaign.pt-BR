@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '525'
-ht-degree: 100%
+ht-degree: 96%
 ---
 # Definir o layout de formulários web{#defining-web-forms-layout}
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## Criação de containers {#creating-containers}
 
-Os containers permitem combinar os campos de uma página e configurar seu layout para organizar os elementos na página.
+Os containers permitem combinar os campos de uma página, configurar seu layout e organizar os elementos na página.
 
 Para cada página do formulário, os são criados por meio do botão **[!UICONTROL Containers]** Containers da barra de ferramentas.
 

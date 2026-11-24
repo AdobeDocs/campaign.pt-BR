@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 93%
+source-wordcount: '895'
+ht-degree: 91%
 ---
 # Publicar, rastrear e usar dados coletados{#publish-track-and-use-collected-data}
 
@@ -35,7 +35,7 @@ ht-degree: 93%
 
 
 
-Depois que o formulário tiver sido criado, configurado e publicado, é possível compartilhar o link com o público-alvo e acompanhar as respostas.
+Depois que o formulário tiver sido criado, configurado e publicado, você poderá compartilhar o link com o público-alvo e acompanhar as respostas.
 
 >[!NOTE]
 >

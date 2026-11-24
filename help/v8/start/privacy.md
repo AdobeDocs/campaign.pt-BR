@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 85%
+ht-degree: 80%
 ---
 # Gerenciar solicitações de privacidade no Campaign {#privacy}
 
@@ -45,7 +45,7 @@ Dependendo da natureza da sua empresa e das jurisdições sob as quais ela opera
 A Adobe oferece ferramentas aos controladores de dados para criar e processar solicitações de privacidade de dados armazenados no Campaign. No entanto, é sua responsabilidade, como controlador de dados, verificar a identidade do titular dos dados que faz a solicitação e confirmar que os dados retornados ao solicitante pertencem ao titular dos dados. Saiba mais sobre dados pessoais e as diferentes entidades que gerenciam dados na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#personal-data){target="_blank"}.
 
 
-Para gerenciar a solicitação de privacidade no Campaign, primeiro você deve [definir um namespace](#namespaces). Em seguida, será possível criar e gerenciar solicitações de privacidade. Para executar solicitações de privacidade, use a integração do **Adobe Privacy Service**. As solicitações de privacidade transmitidas pelo Privacy Service para todas as soluções do [!DNL Adobe CX Enterprise] são tratadas automaticamente pelo Campaign, por meio de um fluxo de trabalho específico. [Saiba mais](#create-privacy-request)
+Para gerenciar solicitações de privacidade no Campaign, primeiro [defina um namespace](#namespaces). Em seguida, será possível criar e gerenciar solicitações de privacidade. Para executar solicitações de privacidade, use a integração do **Adobe Privacy Service**. As solicitações de privacidade transmitidas pelo Privacy Service para todas as soluções do [!DNL Adobe CX Enterprise] são tratadas automaticamente pelo Campaign, por meio de um fluxo de trabalho específico. [Saiba mais](#create-privacy-request)
 
 Saiba mais sobre o **Direito de acesso** e o **Direito ao esquecimento** (solicitação de exclusão) na [documentação do Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=pt-BR#right-access-forgotten){target="_blank"}.
 
@@ -75,7 +75,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Crie um namespace no [serviço de namespace de identidade](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
 
-1. Quando [listar os namespaces de identidade](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} disponíveis para sua organização, você obterá o namespace seguido dos detalhes; por exemplo:
+1. Quando [listar os namespaces de identidade](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} disponíveis para sua organização, você obterá os seguintes detalhes do namespace, por exemplo:
 
    ```
    {
@@ -157,7 +157,7 @@ As tabelas integradas consideradas ao executar solicitações de privacidade sã
 * Inscrições (inscrição)
 * Apresentação da oferta do destinatário (propositionRcp)
 
-Se você criou tabelas personalizadas que tenham um link para a tabela do destinatário (tipo próprio), elas também serão consideradas. Por exemplo, se você tiver uma tabela de transações vinculada à tabela do destinatário e uma tabela de detalhes da transação vinculada à tabela de transações, ambas serão consideradas.
+Se você criou tabelas personalizadas que tenham um link para a tabela do destinatário (tipo próprio), elas também serão consideradas. Por exemplo, se você tiver uma tabela de transações vinculada à tabela do recipient e uma tabela de detalhes da transação vinculada à tabela de transações, ambas serão consideradas.
 <!--
 >[!CAUTION]
 >

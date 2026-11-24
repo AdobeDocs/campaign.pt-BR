@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '644'
 ht-degree: 14%
 ---
 # Introdução aos fluxos de trabalho{#gs-with-workflows}
@@ -142,7 +142,7 @@ Dependendo da finalidade do seu fluxo de trabalho, você pode escolher entre os 
 
 ## Configurar campanhas recorrentes
 
-Crie um fluxo de trabalho recorrente e crie uma nova instância de delivery sempre que o fluxo de trabalho for executado. Por exemplo, se o fluxo de trabalho for projetado para ser executado uma vez por semana, o resultado será 52 deliveries em um ano. Isso também significa que os logs serão separados por cada instância do delivery.
+Crie um fluxo de trabalho recorrente e crie uma nova instância de delivery toda vez que o fluxo de trabalho for executado. Por exemplo, se o fluxo de trabalho for projetado para ser executado uma vez por semana, o resultado será 52 deliveries em um ano. Isso também significa que os logs serão separados por cada instância do delivery.
 
 Saiba como criar uma campanha recorrente em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=pt-BR){target="_blank"}.
 
@@ -151,7 +151,7 @@ Saiba como criar uma campanha recorrente em [esta página](https://experiencelea
 
 Usar mensagens transacionais do Campaign para automatizar mensagens geradas por eventos acionados de sistemas de informações. Essas mensagens transacionais podem ser fatura, confirmação de pedido, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta ou criação de conta de site, por exemplo. Essas mensagens podem ser enviadas individualmente ou em lote por email, SMS ou notificações por push.
 
-Saiba mais sobre os recursos de mensagens transacionais no [esta seção](../send/transactional.md).
+Saiba mais sobre os recursos de mensagens transacionais em [esta seção](../send/transactional.md).
 
 Conecte o Adobe Campaign e o Adobe Analytics para recuperar ações do usuário e enviar mensagens personalizadas quase em tempo real.
 

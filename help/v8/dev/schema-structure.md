@@ -39,9 +39,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1448'
 ht-degree: 12%
 ---
 # Estrutura de esquema{#schema-structure}
@@ -251,7 +251,7 @@ Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <
 
 `<default>`: permite preencher previamente o campo com um valor padrão ao criar entidades. O valor não será um valor SQL padrão.
 
-`<sqldefault>`: permite que você tenha um valor agregado ao criar um campo. Esse valor aparece como um resultado SQL. Durante uma atualização de schema, somente os novos registros serão afetados por esse valor.
+`<sqldefault>`: permite que você tenha um valor adicionado ao criar um campo. Esse valor aparece como um resultado SQL. Durante uma atualização de schema, somente os novos registros serão afetados por esse valor.
 
 ### Enumerações {#enumerations}
 

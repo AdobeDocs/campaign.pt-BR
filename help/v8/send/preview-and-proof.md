@@ -23,7 +23,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 22%
@@ -32,7 +32,7 @@ ht-degree: 22%
 
 Depois que o conteúdo da mensagem for definido, você poderá usar perfis de teste para pré-visualizá-la e testá-la. Se você inseriu [conteúdo personalizado](personalize.md), é possível verificar como esse conteúdo é exibido na mensagem, usando os dados do perfil de teste. Além disso, para detectar possíveis erros no conteúdo da mensagem ou nas configurações de personalização, envie provas para perfis de teste. Uma prova deve ser enviada sempre que uma alteração for feita, para validar o conteúdo mais recente.
 
-## Visualização de conteúdo {#preview-content}
+## Visualização do conteúdo {#preview-content}
 
 Antes de enviar provas, uma prática recomendada é verificar o conteúdo da mensagem na seção de pré-visualização da janela de delivery.
 
@@ -107,7 +107,7 @@ Navegue até a guia **[!UICONTROL Audit]** da entrega para verificar a entrega d
 
 ### Propriedades da prova {#proofs-properties}
 
-As propriedades de prova são definidas na guia **[!UICONTROL Advanced]** das janelas de propriedades de entrega. Navegue até o link **[!UICONTROL Proof properties...]** para definir os parâmetros e o rótulo das provas. Você pode optar por manter:
+As propriedades de prova são definidas na guia **[!UICONTROL Advanced]** da janela de propriedades de entrega. Navegue até o link **[!UICONTROL Proof properties...]** para definir os parâmetros e o rótulo das provas. Você pode optar por manter:
 
 * Endereços duplicados na prova
 * endereços ➡ Incluídos na lista de bloqueios na prova

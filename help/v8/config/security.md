@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2947'
-ht-degree: 52%
+ht-degree: 50%
 ---
 # Práticas recomendadas de segurança do Campaign {#ac-security}
 
@@ -101,9 +101,9 @@ O Adobe Campaign faz parte das soluções da Adobe Experience Cloud. A maneira c
   * As soluções da Adobe Experience Cloud usam cookies e tecnologias semelhantes, como web beacons (também conhecidos como tags ou pixels), para permitir que você colete informações. Para obter mais informações sobre cookies e recursos de rastreamento com o Adobe Campaign, consulte [esta seção](#tracking-capabilities).
   * Você também pode usar as tecnologias da Adobe Experience Cloud em seus aplicativos móveis. Para obter mais informações sobre como enviar entregas móveis com o Campaign, consulte [canal SMS](../send/sms/sms-channel.md) e canal de aplicativo móvel.
 
-* **As opções de privacidade dos usuários sobre o uso da Adobe Experience Cloud**
+* **As opções de privacidade de seus usuários sobre o uso da Adobe Experience Cloud**
 
-  A Adobe solicita que você forneça aos seus clientes políticas de privacidade descrevendo:
+  A Adobe solicita que você forneça as políticas de privacidade dos clientes descrevendo:
 
   * Suas práticas de privacidade em conexão com a Adobe Experience Cloud
   * Como os usuários podem definir suas preferências para a coleção ou usar suas informações em conexão com a Adobe Experience Cloud
@@ -165,7 +165,7 @@ O Adobe Campaign permite coletar dados, inclusive informações pessoais e confi
 
 ## Gerenciamento de privacidade {#privacy-management}
 
-O gerenciamento de privacidade está relacionado a todos os processos e ferramentas que podem ajudar você a cumprir as regras de privacidade (RGPD, CCPA, etc.).
+O gerenciamento de privacidade está relacionado a todos os processos e ferramentas que podem ajudar você a cumprir as regras de privacidade (RGPD, CCPA etc.).
 
 O Adobe Campaign oferece vários conjuntos de recursos dedicados ao gerenciamento de privacidade:
 * Gerenciamento de consentimento, retenção de dados e funções de usuário. Consulte [esta seção](#consent).
@@ -292,7 +292,7 @@ Ao adicionar links personalizados ao seu conteúdo, sempre evite qualquer person
 
 Você precisa ter certeza que as senhas criptografadas não estarão acessíveis a um usuário autenticado de baixo privilégio. Para fazer isso, há duas formas principais: restringir o acesso aos campos de senha somente ou à entidade inteira.
 
-Essa restrição permite remover campos de senhas, mas deixa a conta externa acessível a partir da interface para todos os usuários. Saiba mais [nesta página](../dev/restrict-pi-view.md).
+Essa restrição permite remover campos de senha, mas deixa a conta externa acessível a partir da interface para todos os usuários. Saiba mais [nesta página](../dev/restrict-pi-view.md).
 
 1. Vá em **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
 

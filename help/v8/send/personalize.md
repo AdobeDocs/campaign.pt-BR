@@ -24,14 +24,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 64%
+source-wordcount: '476'
+ht-degree: 53%
 ---
 # Introdução à personalização {#personalize-content}
 
-Para aproveitar ao máximo cada campanha de marketing, o Adobe Campaign oferece uma maneira de fornecer conteúdo personalizado que fala com os clientes em seu nível. Com base nos dados do perfil, recursos de personalização para criar uma experiência personalizada para diferentes grupos e indivíduos: você pode adaptar suas mensagens a cada recipient específico, aproveitando os dados e as informações que tem sobre eles. Pode ser seu nome, interesses, onde vivem, o que compraram e muito mais.
+Para aproveitar ao máximo cada campanha de marketing, o Adobe Campaign oferece uma maneira de fornecer conteúdo personalizado que fala com os clientes em seu nível. Com base nos dados do perfil, os recursos de personalização permitem criar uma experiência personalizada para diferentes grupos e indivíduos: você pode adaptar suas mensagens a cada recipient específico, aproveitando os dados e as informações que tem sobre eles. Pode ser seu nome, interesses, onde vivem, o que compraram e muito mais.
 
 O Adobe Campaign simplifica a personalização: você pode exibir diferentes tipos de conteúdo personalizado para cada destinatário usando um único [modelo de mensagem](create-templates.md). Em suas mensagens transacionais, como emails de confirmação de compra ou abandono de carrinho, inclua informações de listagens de produtos para cada indivíduo em um único modelo de email.
 
@@ -52,9 +52,9 @@ Você pode personalizar o conteúdo da mensagem ao:
 
   O Campaign vem com um conjunto de blocos de personalização contendo uma renderização específica que você pode inserir nas entregas. Por exemplo, você pode adicionar um logotipo, uma mensagem de saudação ou um link para a mirror page da mensagem. Os blocos de conteúdo estão disponíveis em uma entrada dedicada no editor de personalização. [Saiba mais](personalization-blocks.md).
 
-* Criação de **conteúdo condicional**
+* Criando **conteúdo condicional**
 
-  Configure o conteúdo condicional para adicionar personalização dinâmica com base no perfil do destinatário, por exemplo. Blocos de texto e/ou imagens são inseridos quando uma determinada condição for satisfeita. [Saiba mais](conditions.md).
+  Configure o conteúdo condicional para adicionar personalização dinâmica com base no perfil do recipient, por exemplo,. Blocos de texto e/ou imagens são inseridos quando uma determinada condição for satisfeita. [Saiba mais](conditions.md).
 
 <!--
 * Add **personalized offers**
@@ -85,7 +85,7 @@ As variáveis a seguir são variáveis internas que podem ser usadas para person
 
 ## Tutorial em vídeo {#personalization-video}
 
-Entenda os diferentes tipos de conteúdo dinâmico e saiba como criar e aplicar blocos de personalização e declarações condicionais a uma entrega.
+Entenda os diferentes tipos de conteúdo dinâmico e saiba como criar e aplicar blocos de personalização e declarações condicionais a um delivery.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452873?captions=por_br&quality=12)

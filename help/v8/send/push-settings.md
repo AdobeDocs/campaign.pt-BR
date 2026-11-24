@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1830'
 ht-degree: 22%
 ---
 # Configurar canal de notificação por push {#push-notification-configuration}
@@ -61,7 +61,7 @@ Para configurar seu aplicativo com SDKs do Adobe Experience Platform Mobile, sig
 1. (opcional) Adicione o [Adobe Experience Platform Assurance ao seu aplicativo](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} para validar sua implementação. Saiba como implementar a extensão do Adobe Experience Platform Assurance [nesta página](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
 1. Configure o iOS e o Android Mobile Services no Adobe Campaign conforme detalhado [nesta página](#push-service).
 1. Instale e configure a [Extensão do Adobe Campaign](#configure-extension) na sua propriedade móvel.
-1. Siga a [documentação do Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} para obter a configuração com os SDKs do Adobe Experience Platform Mobile no seu aplicativo.
+1. Siga a [documentação do Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} para configurar os SDKs do Adobe Experience Platform Mobile no seu aplicativo.
 
 ## Pré-requisitos {#before-starting}
 
@@ -79,7 +79,7 @@ Para atribuir direitos de **Propriedade** e **Empresa**, siga as etapas abaixo:
 1. Na guia **[!UICONTROL Products]**, selecione o cartão **[!UICONTROL Adobe Experience Platform Data Collection]**.
 1. Selecione um **[!UICONTROL Product Profile]** existente ou crie um novo com o botão **[!UICONTROL New profile]**. Saiba como criar um novo **[!UICONTROL New profile]** na [documentação do Admin Console](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=pt-BR#ui){target="_blank"}.
 1. Na guia **[!UICONTROL Permissions]**, selecione **[!UICONTROL Property Rights]**.
-1. Clique em **[!UICONTROL Add all]**. Isso adicionará o seguinte direito ao perfil de produto:
+1. Clique em **[!UICONTROL Add all]**. Isso adicionará os seguintes direitos ao perfil de produto:
    * **[!UICONTROL Approve]**
    * **[!UICONTROL Develop]**
    * **[!UICONTROL Edit Property]**
@@ -213,7 +213,7 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 1. Insira o nome do aplicativo no campo **[!UICONTROL Label]**.
 1. (opcional) Você pode enriquecer um conteúdo de mensagem de push com alguns **[!UICONTROL Application variables]**. Eles são totalmente personalizáveis e uma parte da carga da mensagem é enviada para o dispositivo móvel.
 
-   No exemplo abaixo, as variáveis **mediaURl** e **mediaExt** são adicionadas para criar notificações por push avançadas e, em seguida, fornecem ao aplicativo a imagem que será exibida na notificação.
+   No exemplo abaixo, as variáveis **mediaURl** e **mediaExt** são adicionadas para criar notificações por push avançadas e, em seguida, fornecer ao aplicativo a imagem que será exibida na notificação.
 
    ![](assets/ios-app-parameters.png){width="600"}
 
@@ -304,7 +304,7 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
 ## Configurar a extensão do Adobe Campaign na sua propriedade móvel {#configure-extension}
 
-A **extensão do Adobe Campaign Classic** para SDKs do Adobe Experience Platform Mobile possibilita notificações por push para seus aplicativos móveis e ajuda a coletar tokens de push do usuário e gerenciar a medição de interação com os serviços da Adobe Experience Platform.
+A **extensão do Adobe Campaign Classic** para SDKs do Adobe Experience Platform Mobile possibilita notificações por push para seus aplicativos móveis e ajuda a coletar tokens de push do usuário e gerencia a medição de interação com os serviços da Adobe Experience Platform.
 
 Essa extensão, que se aplica ao Campaign Classic v7 e ao Campaign v8, é pré-instalada em seu ambiente e deve ser configurada. Para configurar a extensão para sua propriedade de tag móvel, siga estas etapas:
 

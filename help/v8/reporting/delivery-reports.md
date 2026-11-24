@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 60%
+ht-degree: 58%
 ---
 # Relatórios de entrega {#delivery-reports}
 
@@ -35,7 +35,7 @@ Você pode acompanhar a execução de entregas por meio de vários relatórios a
 Para acessar os relatórios, siga as etapas abaixo:
 
 1. Navegue até a guia **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Delivery]** para exibir a lista de entregas.
-1. Clique no nome do delivery que os relatórios que deseja acessar.
+1. Clique no nome do delivery cujos relatórios você deseja acessar.
 1. Selecione a guia **[!UICONTROL Summary]** e clique em **[!UICONTROL Reports]** para acessar os relatórios específicos da entrega.
 
    ![](assets/detailed-report-2.png)
@@ -192,7 +192,7 @@ Esta seção inclui os seguintes indicadores:
 
 ## Hot clicks {#hot-clicks}
 
-Este relatório mostra o conteúdo da mensagem (HTML e/ou texto) com a porcentagem de cliques nos links, em cada link. Links de unsubscription de blocos de personalização, links de mirror pages e links de ofertas são considerados no total de cliques acumulados, mas não são exibidos no relatório.
+Este relatório mostra o conteúdo da mensagem (HTML e/ou texto) com a porcentagem de cliques nos links, em cada link. Blocos de personalização, links de unsubscription, links de mirror pages e links de ofertas são considerados no total de cliques acumulados, mas não são exibidos no relatório.
 
 >[!NOTE]
 >

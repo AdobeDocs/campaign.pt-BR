@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2404'
-ht-degree: 99%
+ht-degree: 96%
 ---
 # Adicionar campos a um formulário web{#adding-fields-to-a-web-form}
 
@@ -88,11 +88,11 @@ Para adicionar um campo de entrada, clique no botão **[!UICONTROL Input control
 
 Há cinco tipos diferentes de campos de texto que podem ser inseridos em uma página de formulário:
 
-* **Text**: permite que o usuário insira um texto em uma linha.
+* **Text**: permite que o usuário insira texto em uma linha.
 
   ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Number**: permite que o usuário insira um texto em uma linha. Para obter mais informações, consulte [Adicionar números](#adding-numbers).
+* **Number**: permite que o usuário insira um texto em uma linha. Para obter mais informações, consulte [Adicionando números](#adding-numbers).
 
   Quando a página é aprovada, o conteúdo é verificado para garantir que o valor inserido seja compatível com o campo. Para obter mais informações, consulte [Definir configurações de controle](form-rendering.md#defining-control-settings).
 
@@ -233,7 +233,7 @@ Para adicionar botões de opção por meio de uma lista, vá para o menu **[!UIC
 
 ![](assets/s_ncs_admin_survey_radio_button_sample2.png)
 
-Adicione a mesma quantidade de botões de opção que houver de rótulos. A vantagem desse recurso é que você pode importar valores de um campo existente (caso de um campo discriminado) e fazer com que o usuário escolha uma opção. No entanto, o layout dos botões é menos flexível.
+Adicione a mesma quantidade de botões de opção que houver de rótulos. A vantagem desse recurso é que você pode importar valores de um campo existente (no caso de um campo discriminado) e possibilitar que o usuário escolha uma opção. No entanto, o layout dos botões é menos flexível.
 
 >[!NOTE]
 >

@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Reporting
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 52%
+ht-degree: 44%
 ---
 # [!DNL Campaign] implantação do FFDA {#gs-ac-ffda}
 
@@ -59,7 +59,7 @@ O Campaign v8 Enterprise (FFDA) traz uma escala completa em qualquer etapa do pr
 * Dimensione o desempenho das consultas para segmentação e direcionamento, mas também a ingestão e a saída de dados
 * Dimensionar a preparação da entrega (de horas a minutos)
 
-É uma mudança fundamental na arquitetura de software. Agora os dados são remotos e o Campaign federa todos os dados, incluindo Perfis. Os processos do [!DNL Campaign] agora são escalonados de ponta a ponta, desde o direcionamento até a execução da mensagem: ingestão de dados, segmentação, direcionamento, consultas e entregas agora normalmente são executados em minutos. Esta nova versão resolve todo o desafio do dimensionamento, mantendo o mesmo nível de flexibilidade e extensibilidade. O número de perfis é quase ilimitado e a retenção de dados pode ser estendida.
+É uma mudança fundamental na arquitetura de software. Agora os dados são remotos e o Campaign federa todos os dados, incluindo Perfis. [!DNL Campaign] processos agora são escalonados de ponta a ponta, desde o direcionamento até a execução da mensagem: assimilação de dados, segmentação, direcionamento, consultas e entregas agora normalmente são executados em minutos. Esta nova versão resolve todo o desafio do dimensionamento, mantendo o mesmo nível de flexibilidade e extensibilidade. O número de perfis é quase ilimitado e a retenção de dados pode ser estendida.
 
 O armazenamento na nuvem é feito no **[!DNL Snowflake]**: uma nova **conta externa** incorporada garante a conectividade com o banco de dados na nuvem. Ele é configurado pela Adobe e não deve ser modificado. [Saiba mais](../config/external-accounts.md)
 
@@ -144,9 +144,9 @@ Os objetos do Campaign v8 agora usam um **Identificador exclusivo universal (UUI
 
 Observe que essa ID é baseada em uma string e não é sequencial. A chave primária não é um valor numérico no Campaign v8 e você precisa usar os atributos **autouuid** e **autopk** em seus esquemas.
 
-No Campaign Classic v7 e em versões anteriores, a unicidade de uma chave em um esquema (ou seja, tabela) é manipulada no nível do mecanismo de banco de dados. Em geral, os mecanismos do banco de dados do Classic como PostgreSQL, Oracle ou SQL Server incluem um mecanismo nativo para impedir a inserção de linhas duplicadas com base em uma coluna ou um conjunto de colunas por meio de chaves primárias e/ou índices únicos. A ID duplicada não existe nessas versões quando o índice adequado e as chaves primárias são definidos no nível do banco de dados.
+No Campaign Classic v7 e em versões anteriores, a unicidade de uma chave em um esquema (ou seja, tabela) é manipulada no nível do mecanismo de banco de dados. Em geral, os mecanismos do banco de dados do Classic como PostgreSQL, Oracle ou SQL Server incluem um mecanismo nativo para impedir a inserção de linhas duplicadas com base em uma coluna ou um conjunto de colunas por meio de chaves primárias e/ou índices únicos. IDs duplicadas não existem nessas versões quando o índice adequado e as chaves primárias são definidos no nível do banco de dados.
 
-O Adobe Campaign v8 vem com o Snowflake como o banco de dados principal. Como aumenta drasticamente a escala de consultas, a arquitetura distribuída do banco de dados do Snowflake não fornece esses mecanismos para gerenciar e impor a unicidade de uma chave dentro de uma tabela. Como consequência, com o Adobe Campaign v8, nada impede a ingestão de chaves duplicadas em uma tabela. Os usuários finais agora são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign. [Saiba mais](keys.md)
+O Adobe Campaign v8 vem com o Snowflake como o banco de dados principal. Como aumenta drasticamente a escala de consultas, a arquitetura distribuída do banco de dados do Snowflake não fornece esses mecanismos para gerenciar e aplicar a unicidade de uma chave em uma tabela. Como consequência, com o Adobe Campaign v8, nada impede a ingestão de chaves duplicadas em uma tabela. Os usuários finais agora são responsáveis por garantir a consistência das chaves no banco de dados do Adobe Campaign. [Saiba mais](keys.md)
 
 ### Disponibilidade de recursos {#feature-availability}
 

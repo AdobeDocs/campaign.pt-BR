@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 80%
+source-wordcount: '572'
+ht-degree: 76%
 ---
 # Configurar links rastreados {#how-to-configure-tracked-links}
 
@@ -74,7 +74,7 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
    * **[!UICONTROL Enabled]**: ativa o rastreamento nesta URL.
    * **[!UICONTROL Not tracked]**: desativa o rastreamento nesta URL.
    * **[!UICONTROL Always enabled]**: sempre ativa o rastreamento desta URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um conteúdo de mensagem futura, o rastreamento será ativado automaticamente.
-   * **[!UICONTROL Never tracked]**: nunca ativa o rastreamento desta URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um uma mensagem futura, o rastreamento será desativado automaticamente.
+   * **[!UICONTROL Never tracked]**: nunca ativa o rastreamento desta URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em uma mensagem futura, o rastreamento será desativado automaticamente.
    * **[!UICONTROL Opt-out]**: considera esta URL como recusa ou cancelamento de assinatura.
    * **[!UICONTROL Mirror page]**: considera esta URL como sendo de mirror page.
 

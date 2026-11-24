@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 89%
+source-wordcount: '1111'
+ht-degree: 88%
 ---
 # Relatórios integrados do Adobe Campaign {#ootb-reports}
 
@@ -292,7 +292,7 @@ Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados n
   </tr> 
   <tr> 
    <td> Evolução cumulativa do orçamento (budgetCumulativeEvolution)<br /> </td> 
-   <td> Evolução dos custos do orçamento acumulado divididos por nível de<br /> compromisso. </td> 
+   <td> Evolução dos custos do orçamento acumulado divididos por nível de compromisso. </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 

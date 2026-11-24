@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
     internal-label: Email design
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 100%
+source-wordcount: '537'
+ht-degree: 95%
 ---
 # Interface do editor de conteúdo{#content-editor-interface}
 
@@ -40,7 +40,7 @@ A janela de edição do DCE está dividida em três seções diferentes. Elas pe
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou a entrega sendo criada, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte [Status de conteúdo HTML](content-editing-best-practices.md#html-content-statuses).
+1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou o delivery que está sendo criado, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte [Status de conteúdo HTML](content-editing-best-practices.md#html-content-statuses).
 1. A seção à **esquerda** da janela é a área para edição de conteúdo. Nesta área, o usuário pode interagir diretamente com o conteúdo usando a barra de ferramentas pop-up: inserir um link em uma imagem, alterar a fonte, excluir um campo etc. Para mais informações sobre isso, consulte [Edição de formulários](editing-content.md#editing-forms).
 1. A seção à **direita** da janela é a área do painel de controle. Esta área reúne as diferentes opções do editor, especialmente aquelas relacionadas à configuração do cabeçalho da página e às opções gerais de um bloco: adicionar uma borda, vincular um campo do banco de dados a um campo de entrada, acessar as propriedades da página da web etc. Para mais informações sobre o assunto, consulte as seções [Opções globais](#global-options) e [Edição de conteúdo](editing-content.md).
 

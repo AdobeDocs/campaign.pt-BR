@@ -29,10 +29,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 83%
+source-wordcount: '164'
+ht-degree: 66%
 ---
 # Rastreamento de simulação{#simulation-tracking}
 

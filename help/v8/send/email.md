@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 26%
@@ -105,7 +105,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
      Saiba mais sobre como gerenciar a mirror page em [esta seção](mirror-page.md#link-to-mirror-page).
 
-1. Você pode definir parâmetros adicionais para o email, como enviar uma cópia das mensagens para um endereço BBC, alterar o formato da mensagem, definir uma codificação específica etc. Saiba mais em [esta seção](email-parameters.md).
+1. Você pode definir parâmetros adicionais para o email, como enviar uma cópia das mensagens para um endereço CCo, alterar o formato da mensagem, definir uma codificação específica etc. Saiba mais em [esta seção](email-parameters.md).
 
 1. Quando o conteúdo estiver pronto, clique em **Salvar**: ele será exibido na lista de entregas, na guia **[!UICONTROL Campaigns > Deliveries]**.
 

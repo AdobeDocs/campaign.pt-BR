@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1583'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # Traduzir um formulário web{#translating-a-web-form}
 
@@ -85,7 +85,7 @@ Cada vez que uma string é convertida, sua tradução é adicionada ao dicionár
 
 Quando o processo de coleta detecta que uma tradução já existe, essa conversão é exibida na coluna **[!UICONTROL Text]** da string. O status da string é definido como **[!UICONTROL Translated]**.
 
-Para strings que nunca foram traduzidas, o campo **[!UICONTROL Text]** fica vazio e o status é **[!UICONTROL To translate]**.
+Para cadeias de caracteres que nunca foram traduzidas, o campo **[!UICONTROL Text]** fica vazio e o status é **[!UICONTROL To translate]**.
 
 ### Filtragem de strings {#filtering-strings}
 
@@ -143,7 +143,7 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
      >
      >Esse tipo de exportação não está disponível para exportações XLIFF.
 
-1. Em seguida, escolha a **[!UICONTROL Target folder]** onde os arquivos serão gravados.
+1. Em seguida, escolha o **[!UICONTROL Target folder]** onde os arquivos serão gravados.
 1. Selecione o formato de arquivo (**[!UICONTROL CSV]** ou **[!UICONTROL XLIFF]**) e clique em **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_admin_survey_trad_export_start.png)
@@ -188,7 +188,7 @@ se o idioma for o primeiro ou único parâmetro da URL. Por exemplo: **https://m
 &lang=xx
 ```
 
-se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
 
 Os idiomas e os dicionários de tradução disponíveis como padrão estão listados abaixo.
 
@@ -419,7 +419,7 @@ Os idiomas e os dicionários de tradução disponíveis como padrão estão list
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Waloon (wa)<br /> </td> 
+   <td> Walloon (wa)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -449,7 +449,7 @@ Você pode adicionar **?lang=es** ou **=lang=de** para exibi-la em espanhol ou a
 >[!NOTE]
 >
 >Se outros parâmetros já estiverem sendo usados para essa aplicação web, adicione **&amp;lang=**.\
->Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## Configuração avançada de tradução {#advanced-translation-configuration}
 

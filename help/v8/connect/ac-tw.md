@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1076'
 ht-degree: 11%
 ---
 # Trabalhar com o Campaign e o X (Twitter) {#tw-ac-ovv}
@@ -59,7 +59,7 @@ O módulo **Managing social networks (Social Marketing)** permite interagir com 
 
 Para configurar o Adobe Campaign para publicar tweets em suas contas do X, delegue acesso de gravação ao Adobe Campaign para essas contas. Para fazer isso, você deve:
 
-1. Crie uma conta do X e cadastre-se em uma conta de desenvolvedor. [Saiba mais](#dev-account)
+1. Crie uma conta X e cadastre-se em uma conta de desenvolvedor. [Saiba mais](#dev-account)
 1. (opcional) Crie uma conta de teste X para enviar provas. [Saiba mais](#tw-test-account)
 1. Crie um aplicativo X (um aplicativo por conta X). [Saiba mais](#create-an-app-on-twitter)
 1. Crie um novo serviço para **[!UICONTROL Twitter]** (um serviço por conta X). [Saiba mais](#create-tw-service)
@@ -79,7 +79,7 @@ Depois de ter sido aprovado com Acesso elevado, crie um aplicativo X para permit
 1. Conecte-se ao [X portal do desenvolvedor](https://developer.twitter.com/en/apps){target="_blank"}.
 1. Selecione **Criar um aplicativo**.
 1. Deixe o X assistant orientá-lo pelo processo.
-1. Para permitir que o Adobe Campaign crie publicações em sua conta, edite em **Permissões do aplicativo** na seção Configuração de autenticação de usuário do seu aplicativo. Selecione **Mensagens de Leitura, Gravação e Diretas**.
+1. Para permitir que o Adobe Campaign crie publicações em sua conta, edite as **Permissões do aplicativo** na seção Configuração de autenticação de usuário do seu aplicativo. Selecione **Mensagens de Leitura, Gravação e Diretas**.
 
    ![](assets/tw-permissions.png)
 
@@ -108,7 +108,7 @@ Para vincular a instância do Campaign à conta X, crie um serviço do **Twitter
 >Cada serviço do **Twitter** também deve ser criado pela Adobe na sua instância de mid-sourcing (MID). Entre em contato com seu representante da Adobe para configurar seu ambiente.
 >
 
-Para inserir as configurações, você deve acessar o Console do cliente do Adobe Campaign e suas permissões do aplicativo X.
+Para inserir as configurações, você deve acessar o Console do cliente do Adobe Campaign e as permissões do aplicativo X.
 
 1. No **Adobe Campaign**, navegue até a guia **[!UICONTROL Profiles and targets]** e selecione o link **[!UICONTROL Services and Subscriptions]**
 1. Crie um novo serviço.
@@ -169,7 +169,7 @@ Quando essa configuração estiver concluída, você poderá criar publicações
 
 ## Criar uma conta de teste em X {#tw-test-account}
 
-Além da conta X, crie uma conta X privada que possa ser usada para enviar [provas de tweet](../send/twitter.md). Para fazer isso, siga as etapas abaixo:
+Além de uma conta X, crie uma conta X privada que possa ser usada para enviar [provas de tweet](../send/twitter.md). Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma nova conta X.
 1. Acesse as **Configurações** da conta.

@@ -21,10 +21,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 99%
+source-wordcount: '943'
+ht-degree: 98%
 ---
 # Etapas principais para criar uma pesquisa{#getting-started-with-surveys}
 
@@ -109,7 +109,7 @@ No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 c
 
   ![](assets/s_ncs_admin_survey_add_qu.png)
 
-  Insira o rótulo da pergunta e insira o(s) campo(s) de resposta como sub-ramificações da pergunta. Para fazer isso, o nó vinculado à pergunta deve ser selecionado ao criar o campo de resposta. Adicione um **[!UICONTROL drop-down listx]** usando o ícone **[!UICONTROL Selection controls]** ou clicando com o botão direito do mouse, como mostrado abaixo:
+  Insira o rótulo da pergunta e insira o(s) campo(s) de resposta como sub-ramificações da pergunta. Para fazer isso, o nó vinculado à pergunta deve ser selecionado ao criar o campo de resposta. Adicione um **[!UICONTROL drop-down list]** usando o ícone **[!UICONTROL Selection controls]** ou clicando com o botão direito do mouse, como mostrado abaixo:
 
   ![](assets/s_ncs_admin_survey_add_list.png)
 
@@ -125,7 +125,7 @@ No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 c
 
   >[!NOTE]
   >
-  >Para cada campo ou pergunta, você pode adaptar o layout da página para atender às suas necessidades, graças às opções na guia **[!UICONTROL Advanced]**. O layout das telas de pesquisa é detalhado [nesta seção](../web/about-web-forms.md).
+  >Para cada campo ou pergunta, você pode adaptar o layout da página para atender às suas necessidades, graças às opções na guia **[!UICONTROL Advanced]**. O layout das telas de pesquisa está detalhado em [esta seção](../web/about-web-forms.md).
 
   Na tela de detalhes, clique na guia **[!UICONTROL Preview]** para exibir a renderização da pesquisa recém-criada.
 

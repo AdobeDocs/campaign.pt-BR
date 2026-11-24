@@ -21,9 +21,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '185'
 ht-degree: 25%
 ---
 # Apresentar a melhor oferta{#interaction-present-offers}
@@ -36,7 +36,7 @@ Para que uma oferta seja selecionada pelo mecanismo de Oferta, ela deve ser apro
 
 Para obter mais informações, consulte [esta seção](approving-and-activating-an-offer.md#approving-offer-content).
 
-No contexto de um contato de entrada para um contato, o usuário que está navegando na página pode ser identificado pelo site ou não. O mecanismo de oferta apresenta diferentes ofertas para perfis identificados e para perfis anônimos.
+No contexto de um contato de entrada, o usuário que está navegando na página pode ser identificado pelo site ou não. O mecanismo de oferta apresenta diferentes ofertas para perfis identificados e para perfis anônimos.
 
 Antes de poder apresentar ofertas em um canal de entrada, é necessário configurar a chamada do Mecanismo de oferta onde deseja que as ofertas sejam apresentadas. Na maioria dos casos para uma interação de entrada, esta é a página da Web.
 

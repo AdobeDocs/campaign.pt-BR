@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 100%
+ht-degree: 94%
 ---
 # Atualizações da documentação {#latest-updates}
 
@@ -55,7 +55,7 @@ Adição de uma nota para especificar como limpar variáveis de instância ao re
 
 ## Maio de 2024 {#may-2024}
 
-* A lista de canais e tipos de entregas agora está listada [nesta página](create-message.md).
+* A lista de canais e tipos de entregas agora está listada em [esta página](create-message.md).
 * As seções de configurações de entrega e gerenciamento de ondas foram reorganizadas e melhoradas. [Leia mais](../send/configure-and-send.md).
 * Uma observação foi adicionada para especificar que as atividades **[!UICONTROL Change Dimension]** e **[!UICONTROL Change Data source]** não devem ser adicionadas em uma linha e precisam ter uma atividade **[!UICONTROL Enrichement]** entre elas. Leia mais nas seções [Mudar dimensão](../../automation/workflow/change-dimension.md) e [Alterar fonte de dados](../../automation/workflow/change-data-source.md).
 

@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '739'
 ht-degree: 5%
 ---
 # Introdução ao modelo de dados do Campaign {#gs-ac-datamodel}
@@ -47,7 +47,7 @@ A estrutura básica do modelo de dados do Adobe Campaign pode ser descrita da se
 
 * **Tabela de destinatários**: o modelo de dados depende de uma tabela principal que é, por padrão, a tabela de destinatários (**nmsRecipient**). Esta tabela armazena todos os perfis de marketing. Saiba mais sobre a tabela de destinatários em [esta seção](#ootb-profiles).
 
-* **Tabela de entrega**: esta tabela armazena um registro por ação de entrega. Geralmente é a tabela Delivery (**NmsDelivery**). nesta tabela, representa uma ação de entrega ou um modelo de entrega. Ele contém todos os parâmetros necessários para executar deliveries, como target, conteúdo etc. Cada registro é atualizado várias vezes para refletir o progresso do delivery
+* **Tabela de entrega**: esta tabela armazena um registro por ação de entrega. Geralmente é a tabela Delivery (**NmsDelivery**). Um registro nesta tabela representa uma ação de entrega ou um modelo de entrega. Ele contém todos os parâmetros necessários para executar deliveries, como target, conteúdo etc. Cada registro é atualizado várias vezes para refletir o progresso do delivery
 
 * **Tabelas de logs**: essas tabelas armazenam todos os logs associados à execução das campanhas.
 
@@ -81,7 +81,7 @@ Os benefícios de usar a tabela de recipients padrão são:
 * Trabalhar pronto para uso com funcionalidades importantes, como assinaturas, listas de propagação e muito mais
 * Fornecer um banco de dados de marketing com um modelo de dados centrado no recipient
 * Implementação mais rápida
-* Fácil manutenção pelo suporte e pelos parceiros
+* Fácil manutenção por parte do suporte e dos parceiros
 
 É possível estender a tabela do recipient, mas não reduzir o número de campos ou links na tabela.
 

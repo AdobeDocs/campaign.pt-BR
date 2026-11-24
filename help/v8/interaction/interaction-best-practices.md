@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 67%
+source-wordcount: '1177'
+ht-degree: 57%
 ---
 # Práticas recomendadas de interação {#interaction-best-practices}
 
@@ -40,14 +40,14 @@ Esta seção apresenta as práticas recomendadas para gerenciar o módulo **Inte
 
 * Ao **implementar e configurar interações**, você deve estar ciente das seguintes recomendações:
 
-  * Para o motor em lote (normalmente usado em comunicações de saída como email), a taxa de transferência é a principal preocupação, pois vários contatos podem ser manipulados ao mesmo tempo. O afunilamento típico é o desempenho do banco de dados.
-  * A restrição principal do motor unitário (normalmente usado em comunicações de entrada como um banner em um site) é latência, pois alguém espera uma resposta. O afunilamento típico é o desempenho da CPU.
+  * Para o mecanismo em lote (normalmente usado em comunicações de saída como email), a taxa de transferência é a principal preocupação, pois vários contatos podem ser manipulados ao mesmo tempo. O afunilamento típico é o desempenho do banco de dados.
+  * A restrição principal do mecanismo unitário (normalmente usado em comunicações de entrada, como um banner em um site) é latência, pois alguém espera uma resposta. O afunilamento típico é o desempenho da CPU.
   * O design do catálogo de ofertas tem um enorme impacto no desempenho do Adobe Campaign.
   * Ao trabalhar com muitas ofertas, a prática recomendada é dividi-las em vários catálogos de ofertas.
 
 * Abaixo estão listadas algumas práticas recomendadas para trabalhar com **regras de qualificação**:
 
-  * Simplifique as regras. A complexidade das regras afeta o desempenho enquanto estende a pesquisa. Uma regra complexa é qualquer regra com mais de cinco condições.
+  * Simplifique as regras. A complexidade das regras afeta o desempenho à medida que estende a pesquisa. Uma regra complexa é qualquer regra com mais de cinco condições.
   * Para aumentar o desempenho, as regras podem ser divididas em filtros predefinidos distintos que são compartilhados entre várias ofertas.
   * Coloque as regras de categoria de oferta mais restritivas na posição mais alta possível na árvore. Ao fazer isso, eles filtram a maioria dos contatos primeiro, reduzindo o número de target e evitando que sejam processados por regras adicionais.
   * Coloque as regras mais dispendiosas em termos de tempo ou processamento na parte inferior da árvore. Ao fazer isso, essas regras só serão executadas no público-alvo restante.
@@ -61,7 +61,7 @@ Esta seção apresenta as práticas recomendadas para gerenciar o módulo **Inte
 
   * Use um número mínimo de regras para tornar o processamento mais rápido possível.
   * Limite o número de registros na tabela de apresentação: mantenha os registros necessários para rastrear sua atualização de status e o que é necessário para as regras, e arquive em outro sistema.
-  * Realize a manutenção intensiva do banco de dados na tabela de apresentação, como índices de reconstrução ou recriação da tabela.
+  * Realize a manutenção intensiva do banco de dados na tabela de proposta, como a reconstrução de índices ou a recriação da tabela.
   * Limite o número de apresentações realizadas por target. Não defina mais do que você realmente vai usar.
   * Evite junções o máximo possível nos critérios da regra.
 

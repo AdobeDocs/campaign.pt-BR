@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1278'
 ht-degree: 58%
 ---
 # Enviar uma oferta{#send}
@@ -189,7 +189,7 @@ Esta atividade funciona de acordo com o mesmo princípio que a atividade **Enriq
 Após configurar sua atividade **Query**:
 
 1. Adicione e abra uma atividade de **[!UICONTROL Offer engine]**.
-1. Preencha os vários campos disponíveis para especificar a chamada para Offer engine parameters (espaços de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros.
+1. Preencha os vários campos disponíveis para especificar a chamada para os parâmetros Offer engine (espaço de ofertas, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros.
 
    >[!CAUTION]
    >

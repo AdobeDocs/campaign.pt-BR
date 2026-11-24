@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 100%
+source-wordcount: '365'
+ht-degree: 93%
 ---
 # Traduzir um aplicativo web{#translating-a-web-application}
 
@@ -55,7 +55,7 @@ Para sinalizar as strings a ser traduzidas:
 
    Há três casos específicos:
 
-   * Quando o bloco selecionado contiver várias strings/blocos, ele será sinalizado como uma única string a ser traduzida. A string contém então o código HTML dos elementos dentro desse bloco.
+   * Quando o bloco selecionado contiver várias strings/blocos, ele será sinalizado como uma única string a ser traduzida. A string contém o código HTML dos elementos dentro desse bloco.
    * Quando você deseja sinalizar um bloco que contém várias strings e, se pelo menos uma dessas cadeias já estiver sinalizada, um aviso será exibido. Você pode então remover o sinalizador da string isolada e adicionar todo o bloco.
 
      ![](assets/dce_translation_4.png)

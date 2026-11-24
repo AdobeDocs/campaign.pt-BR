@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 34%
+source-wordcount: '186'
+ht-degree: 33%
 ---
 # Introdução a SMS {#gs-sms-channel}
 
@@ -40,7 +40,7 @@ Use o Adobe Campaign para enviar mensagens de texto aos seus clientes em seus di
 Para enviar SMS para dispositivos móveis com o Adobe Campaign, é necessário:
 
 * Uma conta externa configurada no canal **[!UICONTROL Mobile (SMS)]**. Saiba como configurar o canal de SMS na sua [infraestrutura de mid-sourcing](sms-mid-sourcing.md). Para esta configuração, você precisa entender os [parâmetros de conta externa SMPP](smpp-external-account.md) e as [características do canal SMS](sms-channel.md).
-Após essa configuração, verifique a conexão SMPP e saiba como solucionar problemas, se necessário. [Saiba mais](smpp-connection.md).
+Após essa configuração, verifique sua conexão SMPP e saiba como solucionar problemas se necessário. [Saiba mais](smpp-connection.md).
 
 * Um template do delivery de SMS que esteja vinculado corretamente a essa conta externa.
 

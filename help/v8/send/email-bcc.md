@@ -24,7 +24,7 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## Sobre email Cco {#gs-bcc}
 
-Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma. Essa opção permite enviar mensagens para um endereço de email CCO dedicado (Cópia oculta), de onde elas podem ser processadas e arquivadas usando um sistema externo.
+Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma. Essa opção permite enviar mensagens para um endereço de email Cco dedicado (Cópia oculta), de onde elas podem ser processadas e arquivadas usando um sistema externo.
 
 >[!CAUTION]
 >

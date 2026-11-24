@@ -34,16 +34,16 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 98%
+source-wordcount: '757'
+ht-degree: 89%
 ---
-# Caso de uso: criar uma entrega por email{#use-case-creating-an-email-delivery}
+# Caso de uso: criar uma entrega de email{#use-case-creating-an-email-delivery}
 
 
 
-Nesse caso de uso, você aprenderá as etapas para projetar uma entrega de email usando o Adobe Campaign Digital Content Editor (DCE).
+Nesse caso de uso, você aprenderá as etapas para projetar um delivery de email usando o Editor de conteúdo digital (DCE) do Adobe Campaign.
 
 Nosso objetivo final é criar uma entrega com um modelo personalizado que contém:
 
@@ -66,11 +66,11 @@ Para criar uma nova entrega, coloque o cursor na guia **Campaigns** e clique em 
 
 ## Etapa 2 - Seleção de um modelo {#step-2---selecting-a-template}
 
-Selecione um modelo da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus destinatários, no entanto, esse título será exibido na lista de entregas. Clique em **[!UICONTROL Continue]**.
+Selecione um modelo da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus recipients; no entanto, esse cabeçalho será exibido na lista de deliveries. Clique em **[!UICONTROL Continue]**.
 
 ![](assets/dce_delivery_model.png)
 
-## Etapa 3 - Seleção de um conteúdo {#step-3---selecting-a-content}
+## Etapa 3 - Seleção do conteúdo {#step-3---selecting-a-content}
 
 O Editor de conteúdo digital vem com vários modelos prontos para uso com várias estruturas (colunas, áreas de texto, etc.).
 
@@ -78,7 +78,7 @@ Selecione o modelo de conteúdo que deseja usar e clique no botão **[!UICONTROL
 
 ![](assets/dce_select_model.png)
 
-Você também pode importar um conteúdo HTML criado fora do Adobe Campaign selecionando **[!UICONTROL From a file]**.
+Você também pode importar o conteúdo do HTML criado fora do Adobe Campaign selecionando **[!UICONTROL From a file]**.
 
 ![](assets/dce_select_from_file_template.png)
 

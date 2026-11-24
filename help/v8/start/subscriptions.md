@@ -25,7 +25,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 30%
@@ -34,7 +34,7 @@ ht-degree: 30%
 
 Use o Adobe Campaign para criar e monitorar seus serviços de informações, como boletins informativos, e gerenciar as assinaturas/cancelamentos de assinaturas desses serviços. Vários serviços podem ser definidos em paralelo, por exemplo: boletins informativos especializados para determinadas categorias de produtos, temas ou áreas de um site, subscrições a vários tipos de mensagens de alerta e notificações em tempo real.
 
-Saiba como criar um serviço de informações, enviar informativo e gerenciar a aceitação e a recusa na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=pt-BR){target="_blank"}
+Saiba como criar um serviço de informações, enviar informativos e gerenciar a aceitação e a recusa na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=pt-BR){target="_blank"}
 
 Para assinar (aceitar) um perfil para um serviço, as opções disponíveis são:
 

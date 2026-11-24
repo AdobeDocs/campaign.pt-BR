@@ -34,14 +34,14 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '322'
 ht-degree: 2%
 ---
 # Mecanismo de preparo da API do Campaign
 
-No contexto de uma [implantação corporativa (FFDA)](enterprise-deployment.md), a geração de chamadas unitárias não é recomendada em relação a desempenhos (latência e simultaneidade). A menos que você esteja enviando um volume extremamente baixo, a operação em lote **deve** ser usada. Para melhorar o desempenho, as APIs de assimilação são redirecionadas para o banco de dados local.
+No contexto de uma [implantação corporativa (FFDA)](enterprise-deployment.md), a geração de chamadas unitárias não é recomendada em relação a desempenhos (latência e simultaneidade). A menos que você esteja enviando um volume extremamente baixo, as operações em lote **devem** ser usadas. Para melhorar o desempenho, as APIs de assimilação são redirecionadas para o banco de dados local.
 
 O recurso de preparo do Campaign está habilitado por padrão em alguns esquemas integrados. Também podemos ativá-la em qualquer esquema personalizado. Mecanismo de preparo em poucas palavras:
 
@@ -51,7 +51,7 @@ O recurso de preparo do Campaign está habilitado por padrão em alguns esquemas
 
 Alguns esquemas internos são Preparados por padrão, como nmsSubscriptionRcp, nmsAppSubscriptionRcp, nmsRecipient.
 
-As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se beneficiar desse novo mecanismo de preparo: as chamadas de API fluem para diretamente para o banco de dados da nuvem. A Adobe recomenda usar o novo mecanismo de preparo o máximo possível para reduzir a pressão e a latência gerais no banco de dados da nuvem do Campaign.
+As APIs do Campaign Classic v7 ainda estão disponíveis, mas não podem se beneficiar desse novo mecanismo de preparo: as chamadas de API fluem diretamente para o banco de dados da nuvem. A Adobe recomenda usar o novo mecanismo de Preparo o máximo possível para reduzir a pressão e a latência gerais no banco de dados da nuvem do Campaign.
 
 >[!CAUTION]
 >

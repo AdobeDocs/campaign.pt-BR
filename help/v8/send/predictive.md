@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 58%
+source-wordcount: '800'
+ht-degree: 56%
 ---
 # Otimização de tempo de envio e pontuação preditiva de engajamento{#optimize-message-delivery}
 
@@ -65,7 +65,7 @@ No modelo de Otimização preditiva de tempo de envio, há dois submodelos:
 
 Detalhes da saída:
 
-* Calcule o melhor horário do dia para enviar um email nos 7 dias da semana com intervalos de 1 hora (por exemplo: 9h, 10h, 11h)
+* Calcule o melhor horário do dia para enviar um email para os 7 dias da semana com intervalos de 1 hora (por exemplo: 9h, 10h, 11h)
 * O modelo indicará o melhor dia da semana e o melhor horário do dia
 * Cada horário ideal é calculado duas vezes: uma vez para maximizar a taxa de abertura e outra para maximizar a taxa de cliques
 * São administrados 16 campos (14 para os dias da semana e 2 para a semana inteira):
@@ -103,7 +103,7 @@ A pontuação preditiva de engajamento permite:
 Este modelo usa várias pontuações para indicar:
 
 * **Pontuação de engajamento ao abrir/Pontuação de engajamento ao clicar**: esse valor corresponde à probabilidade de um assinante se engajar com uma mensagem específica (abrir ou clicar). Os valores variam de 0,0 a 1,0.
-* **Probabilidade de cancelamento de inscrição**: esse valor corresponde à probabilidade do destinatário cancelar a inscrição do canal de email considerando um email aberto. Os valores variam de 0,0 a 1,0.
+* **Probabilidade de cancelamento de inscrição**: esse valor corresponde à probabilidade de um destinatário cancelar a inscrição do canal de email considerando um email aberto. Os valores variam de 0,0 a 1,0.
 * **Nível de retenção**: esse valor classifica os usuários em três níveis: baixo, médio e alto. O alto tem mais probabilidade de adesão à marca, enquanto o baixo provavelmente cancelará a assinatura.
 * **Classificação de percentil de retenção**: Classificação do perfil em termos de probabilidade de cancelamento de assinatura. Os valores variam de 0,0 a 1,0. Por exemplo, se a classificação de porcentagem de retenção for de 0,953, esse recipient terá mais probabilidade de permanecer com a marca e menos probabilidade de cancelar a inscrição do que 95,3% de todos os recipients.
 

@@ -29,7 +29,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 31%
@@ -42,7 +42,7 @@ Para configurar o conteúdo do delivery de SMS:
 
    ![](assets/sms_content.png){zoomable="yes"}
 
-1. Você pode personalizar a mensagem inserindo campos de personalização (por exemplo, adicionando o nome) ou inserindo um bloco de personalização predefinido (por exemplo, adicionando saudações). Clique no botão de personalização para adicionar estes:
+1. Você pode personalizar a mensagem inserindo campos de personalização (por exemplo, adicionando o nome) ou inserindo blocos de personalização predefinidos (por exemplo, adicionando saudações). Clique no botão de personalização para adicionar estes:
 
    ![](assets/sms_perso.png){zoomable="yes"}
 

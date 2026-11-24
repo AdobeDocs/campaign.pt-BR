@@ -23,9 +23,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1422'
 ht-degree: 17%
 ---
 # Configuração de notificação por push revisada {#push-notifications-config}
@@ -44,7 +44,7 @@ No contexto desta implementação atualizada, para enviar notificações por pus
 
 1. [Criar e configurar uma propriedade móvel na Coleção de dados da Adobe Experience Platform](#create-mobile-property)
 
-1. [Adicionar extensão do Adobe Adobe Experience Platform Assurance](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(recomendado)
+1. [Adicionar extensão do Adobe Experience Platform Assurance](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(recomendado)
 
 1. [Adicionar o Campaign Classic ao seu aplicativo para dispositivos móveis](#campaign-mobile-ap)
 
@@ -68,7 +68,7 @@ O registro da credencial de push do aplicativo móvel é necessário para autori
 
 1. Insira um **[!UICONTROL Name]** para a configuração.
 
-1. Em **[!UICONTROL Mobile Application Configuration]**, selecione o Sistema operacional:
+1. Em **[!UICONTROL Mobile Application Configuration]**, selecione o sistema operacional:
 
 >[!BEGINTABS]
 
@@ -88,7 +88,7 @@ O registro da credencial de push do aplicativo móvel é necessário para autori
 
 1. Forneça a **Key ID**. Esta é uma sequência de 10 caracteres atribuída durante a criação da chave de autenticação p8.
 
-   Ele pode ser encontrado na guia **Chaves** da página **Certificados**, **Identificadores** e **Perfis** da sua conta de desenvolvedor do Apple.
+   Ele pode ser encontrado na guia **Chaves** das páginas **Certificados**, **Identificadores** e **Perfis** da sua conta de desenvolvedor do Apple.
 
 1. Forneça a **ID da Equipe**. Este é um valor de cadeia de caracteres que pode ser encontrado na guia **Associação**.
 
@@ -112,7 +112,7 @@ O registro da credencial de push do aplicativo móvel é necessário para autori
 
 ### Criar um serviço {#create-service}
 
-Antes de enviar notificações por push, você deve definir as configurações de aplicativos iOS e Android no Adobe Campaign.
+Antes de enviar notificações por push, você deve definir as configurações de aplicativo do iOS e do Android no Adobe Campaign.
 
 As notificações por push são enviadas aos usuários do aplicativo por meio de um serviço dedicado. Quando os usuários instalam seu aplicativo, eles assinam esse serviço: a Adobe Campaign depende desse serviço para direcionar somente os assinantes do seu aplicativo. Neste serviço, é necessário adicionar os aplicativos iOS e Android para enviar em dispositivos iOS e Android.
 
@@ -152,7 +152,7 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
 1. (opcional) Você pode enriquecer um conteúdo de mensagem de push com alguns **[!UICONTROL Application variables]**. Eles são totalmente personalizáveis e uma parte da carga da mensagem é enviada para o dispositivo móvel.
 
-   No exemplo abaixo, as variáveis **mediaURl** e **mediaExt** são adicionadas para criar notificações por push avançadas e, em seguida, fornecem ao aplicativo a imagem que será exibida na notificação.
+   No exemplo abaixo, as variáveis **mediaURl** e **mediaExt** são adicionadas para criar notificações por push avançadas e, em seguida, fornecer ao aplicativo a imagem que será exibida na notificação.
 
    ![](assets/push-config-8.png)
 

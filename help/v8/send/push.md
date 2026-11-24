@@ -33,10 +33,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 62%
+source-wordcount: '971'
+ht-degree: 55%
 ---
 # Criar e enviar notificações por push{#push-notifications-create}
 
@@ -100,11 +100,11 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
 1. Na guia **[!UICONTROL Sound and Badge]**, é possível editar as seguintes opções:
 
-   * **[!UICONTROL Clean Badge]**: habilite essas opções para atualizar o valor do selo.
+   * **[!UICONTROL Clean Badge]**: habilite esta opção para atualizar o valor do selo.
 
    * **[!UICONTROL Value]**: defina um número que será usado para exibir o número de novas informações não lidas diretamente no ícone do aplicativo.
 
-   * **[!UICONTROL Critical alert mode]**: habilite essa opção para adicionar som à sua notificação, mesmo que o telefone do usuário esteja configurado no modo de foco ou se o iPhone estiver sem áudio.
+   * **[!UICONTROL Critical alert mode]**: habilite esta opção para adicionar som à sua notificação mesmo se o telefone do usuário estiver configurado no modo de foco ou se o iPhone estiver sem áudio.
 
    * **[!UICONTROL Name]**: selecione o som a ser reproduzido pelo terminal móvel quando a notificação for recebida.
 

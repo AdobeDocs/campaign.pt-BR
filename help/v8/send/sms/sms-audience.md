@@ -26,9 +26,9 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '460'
 ht-degree: 17%
 ---
 # Selecionar a audiência da entrega de SMS {#sms-audience}
@@ -76,11 +76,11 @@ Para selecionar o público do seu delivery, siga as etapas abaixo:
 
    ![](assets/audience_finish.png){zoomable="yes"}
 
-   Você pode adicionar a população alvo quantas forem necessárias ao clicar novamente no botão **[!UICONTROL Add]**. Você também pode excluir alguns deles clicando na cruz localizada depois de seu rótulo.
+   Você pode adicionar quantos públicos-alvo forem necessários clicando novamente no botão **[!UICONTROL Add]**. Você também pode excluir alguns deles clicando na cruz localizada depois de seu rótulo.
 
 ## Público-alvo em um arquivo externo {#external-audience}
 
-Você pode usar o Adobe Campaign para enviar uma entrega em um público-alvo que não esteja em seu banco de dados, mas em um arquivo externo.
+Você pode usar o Adobe Campaign para enviar uma entrega em um público-alvo que não esteja no banco de dados, mas em um arquivo externo.
 
 Estas são as etapas:
 

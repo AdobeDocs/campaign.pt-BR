@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 90%
+source-wordcount: '517'
+ht-degree: 83%
 ---
 # Painel de controle do Campaign {#ac-control-panel}
 
@@ -45,7 +45,7 @@ Principais benefícios:
 * Defina as configurações de acordo com as diferentes necessidades da sua empresa em momentos diferentes.
 * Aumente a segurança controlando as configurações de acesso conforme a necessidade.
 
-Você também pode usar o Painel de controle do Campaign para definir as configurações da instância, como a lista de permissões de IP, as permissões de URL e recuperar informações sobre a instância.
+Você também pode usar o Painel de controle do Campaign para definir as configurações da instância, como a lista de permissões de IP, as permissões de URL e para recuperar informações sobre a instância.
 
 Saiba mais em [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target="_blank"}.
 
@@ -86,7 +86,7 @@ Para o Campaign v8 Managed Cloud Services, a Adobe também monitora os processos
 
 ## Configurações de instância
 
-Saiba como gerenciar as configurações de instâncias do Campaign no Painel de controle.
+Saiba como gerenciar as configurações de instância do Campaign no Painel de controle.
 * [IP na lista de permissões](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR){target="_blank"}
 * [Permissões de URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR){target="_blank"}
 * [Detalhes da instância](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=pt-BR){target="_blank"}

@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '11502'
-ht-degree: 15%
+ht-degree: 14%
 ---
 # Perguntas frequentes {#faq}
 
@@ -220,7 +220,7 @@ Essas limitações estão evoluindo à medida que a Adobe aprimora o v8. Consult
 
 A migração automatizada de um ambiente do Campaign Classic v7 ainda não está disponível.
 
-O Campaign v8 está disponível **somente** como um Managed Cloud Service e não pode ser implantado em ambientes locais ou híbridos.
+O Campaign v8 está **somente** disponível como um Managed Cloud Service e não pode ser implantado em um ambiente local ou híbrido.
 
 Para obter mais informações sobre o processo de migração, entre em contato com o representante da Adobe.
 

@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 95%
+ht-degree: 92%
 ---
 # Enviar emails em dispositivos móveis japoneses {#sending-emails-on-japanese-mobiles}
 
@@ -114,7 +114,7 @@ Para fazer isso, use a atividade **[!UICONTROL Split]** no fluxo de trabalho e d
 
 Quando o Adobe Campaign gerencia dinamicamente os formatos de acordo com o domínio (perfis com formatos de email definidos como **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** ou **[!UICONTROL Text]**), você pode enviar a mesma entrega a todos os destinatários.
 
-O contato da mensagem será exibido corretamente para os usuários em celulares japoneses, assim como para os destinatários padrão.
+O conteúdo da mensagem será exibido corretamente para os usuários em celulares japoneses, assim como para os recipients padrão.
 
 >[!IMPORTANT]
 >

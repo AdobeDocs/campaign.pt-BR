@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1458'
-ht-degree: 64%
+ht-degree: 63%
 ---
 # Adicionar uma oferta em uma página da Web{#add-an-offer-in-web}
 
@@ -227,7 +227,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
 1. **Estender a fórmula de oferta para editar novos campos e modificar um campo existente**
 
-   Edite o formulário de entrada **Offer (nsm)**.
+   Edite o formulário de entrada **Oferta (nms)**.
 
    Na seção &quot;Views&quot;, insira os dois novos campos com o seguinte conteúdo:
 

@@ -39,7 +39,7 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 49%
@@ -69,7 +69,7 @@ Os modelos de entrega são armazenados na pasta **[!UICONTROL Resources > Templa
 
 >[!NOTE]
 >
->Os modelos disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de entrega para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Outros modelos não estão visíveis neste contexto. Para obter mais informações, consulte [Trabalhar com mapeamentos de destino](../audiences/target-mappings.md) e [Gerenciar assinaturas e cancelar assinaturas](../start/subscriptions.md).
+>Os modelos disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de entrega para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Outros modelos não estão visíveis neste contexto. Para obter mais informações, consulte [Trabalhar com target mappings](../audiences/target-mappings.md) e [Gerenciar assinaturas e unsubscriptions](../start/subscriptions.md).
 
 
 ## Criar um modelo {#create-a-delivery-template}

@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 36%
+ht-degree: 28%
 ---
 # Introdução a perfis e públicos-alvo{#gs-profiles-and-audiences}
 
@@ -44,7 +44,7 @@ Um perfil é um registro na tabela **nmsRecipient** ou uma tabela externa que ar
 
 No Adobe Campaign, **recipients** são os perfis padrão direcionados para envio de entregas (emails, SMS etc.).
 
-Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
+Os dados do recipient armazenados no banco de dados permitem filtrar o target que receberá qualquer delivery e adicionar dados de personalização ao conteúdo de delivery. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
 
 Para preencher o Adobe Campaign com dados de perfil, você pode:
 

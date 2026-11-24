@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1280'
-ht-degree: 100%
+ht-degree: 96%
 ---
 # Publicar um formulário web{#publishing-a-web-form}
 
@@ -119,7 +119,7 @@ Há três estágios no ciclo de vida de um formulário:
 
    Quando a fase de design é concluída, o formulário pode ser entregue.
 
-   Quando um formulário tem o status **[!UICONTROL Being edited]** ou **[!UICONTROL Pending publication]**, ele deve ser [publicado](#publishing-a-form) para ficar online e acessível por meio do URL do formulário web em um navegador.
+   Quando um formulário tem o status **[!UICONTROL Being edited]** ou **[!UICONTROL Pending publication]**, ele deve ser [publicado](#publishing-a-form) para estar online e acessível através da URL do formulário web em um navegador.
 
    Após a publicação, o formulário ficará acessível até expirar.
 
@@ -203,7 +203,7 @@ Saiba mais sobre os diferentes status de um formulário web [nesta seção](#lif
 
   * Se o formulário web já existir na nova instância, ele será substituído pela nova versão do formulário e assumirá o status **[!UICONTROL Pending publication]**, mesmo que a versão antiga do formulário fosse **[!UICONTROL Online]**.
 
-  * Independentemente da existência de um formulário igual, este deverá ser [publicado](#publishing-a-form) para se tornar **[!UICONTROL Online]** na nova instância e acessível através do URL do formulário web em um navegador.
+  * Se o formulário existia ou não, o formulário deve ser [publicado](#publishing-a-form) para se tornar **[!UICONTROL Online]** na nova instância e acessível através da URL do formulário web em um navegador.
 
 * Se o status do formulário web era **[!UICONTROL Being edited]** quando exportado:
 

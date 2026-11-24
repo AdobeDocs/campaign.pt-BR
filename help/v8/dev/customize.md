@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '501'
 ht-degree: 6%
 ---
 # Personalizar sua instância {#gs-ac-custom}
@@ -82,7 +82,7 @@ Caso de uso: vincular um campo a uma tabela de referência existente na [documen
 
 ## Modificar os formulários de entrada
 
-Os formulários de entrada do Campaign podem ser adaptados para se adaptarem à sua implementação. É possível adicionar ou remover campos de formulário modificando o conteúdo XML.
+Os formulários de entrada da campanha podem ser adaptados para se ajustarem à sua implementação. É possível adicionar ou remover campos de formulário modificando o conteúdo XML.
 
 Saiba como modificar um formulário de entrada existente ou criar um novo formulário em [esta seção](../dev/forms.md).
 
@@ -103,6 +103,6 @@ Ao navegar na árvore do Adobe Campaign Explorer, os dados contidos no banco de 
 
 Saiba como configurar listas e salvar uma configuração de lista em [esta página](../start/campaign-ui.md).
 
-Aplique filtros nessas listas para exibir apenas os dados necessários ao operador. Em seguida, as ações podem ser executadas nos dados filtrados. A configuração de filtro permite selecionar dados de uma lista dinamicamente. Se os dados forem modificados, os dados filtrados serão atualizados.
+Aplique filtros a essas listas para exibir apenas os dados necessários ao operador. As ações podem ser executadas nos dados filtrados. A configuração de filtro permite selecionar dados de uma lista dinamicamente. Se os dados forem modificados, os dados filtrados serão atualizados.
 
 Saiba mais sobre as opções de filtragem em [esta página](../audiences/create-filters.md).

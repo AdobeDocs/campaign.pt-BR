@@ -35,7 +35,7 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 3%
@@ -44,6 +44,6 @@ ht-degree: 3%
 
 O Adobe Campaign vem com uma tabela de perfil interna: **nmsRecipient**. Essa tabela tem vários campos e tabelas predefinidos que podem ser facilmente estendidos. Saiba mais sobre esta tabela em [esta página](datamodel.md#ootb-profiles).
 
-A extensão de tabela integrada oferece flexibilidade, mas não permite remover alguns campos ou links não usados. Como consequência, o uso de uma tabela de recipients personalizada pode ser uma boa opção quando o modelo de dados difere bastante da estrutura integrada da tabela de recipients do Campaign ou se você tiver um grande número de perfis.  No entanto, esse método requer determinadas precauções ao implementá-lo.
+A extensão de tabela integrada oferece flexibilidade, mas não permite remover alguns campos ou links não usados. Como consequência, o uso de uma tabela de recipients personalizada pode ser uma boa opção quando o modelo de dados difere drasticamente da estrutura integrada da tabela de recipients do Campaign ou se você tiver um grande número de perfis.  No entanto, esse método requer determinadas precauções ao implementá-lo.
 
 Saiba como configurar sua instância para usar uma tabela de destinatários personalizada na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html?lang=pt-BR){target="_blank"}.

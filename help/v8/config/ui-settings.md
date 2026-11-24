@@ -25,7 +25,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 45%
@@ -145,7 +145,7 @@ Para salvar uma configuração de lista de modo que ela possa ser reutilizada, s
 1. Clique em **[!UICONTROL Advanced settings]** e especifique um nome no campo **[!UICONTROL Configuration]**.
 1. Clique em **[!UICONTROL OK]** e em **[!UICONTROL Save]**.
 
-É possível aplicar essa configuração a qualquer outra pasta do mesmo tipo. Saiba mais sobre pastas em [esta página](../audiences/folders-and-views.md).
+É possível aplicar essa configuração a outra pasta do mesmo tipo. Saiba mais sobre pastas em [esta página](../audiences/folders-and-views.md).
 
 ### Exportar uma lista {#exporting-a-list}
 

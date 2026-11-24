@@ -31,9 +31,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '456'
 ht-degree: 6%
 ---
 # Exibir perfis existentes {#view-profiles}
@@ -66,7 +66,7 @@ Para um recipient incorporado típico, você pode acessar as seguintes guias:
 
 * **[!UICONTROL General]**, para todos os dados gerais do perfil. Em particular, contém o sobrenome, nome, endereço de email, formato do email, etc.
 
-  Esta guia também armazena o sinalizador **recusar** para o perfil: quando a opção **[!UICONTROL No longer contact (by any channel)]** é selecionada, o perfil fica em incluir na lista de bloqueios. Essas informações serão adicionadas aos dados de contato se o recipient clicar em um link de cancelamento de subscrição em um boletim informativo, por exemplo. Esse recipient não será mais direcionado em nenhum canal (email, correspondência direta etc.). Para obter mais informações, consulte [esta página](../send/quarantines.md).
+  Esta guia também armazena o sinalizador **recusar** para o perfil: quando a opção **[!UICONTROL No longer contact (by any channel)]** é selecionada, o perfil fica no arquivo de inclui na lista de bloqueios. Essas informações serão adicionadas aos dados de contato se o recipient clicar em um link de cancelamento de subscrição em um boletim informativo, por exemplo. Esse recipient não é mais direcionado em nenhum canal (email, correspondência direta etc.). Para obter mais informações, consulte [esta página](../send/quarantines.md).
 
 * **Informações de contato**, que contêm o endereço de correspondência direta do perfil selecionado.
 

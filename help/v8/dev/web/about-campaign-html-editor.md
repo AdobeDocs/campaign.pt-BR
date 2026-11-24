@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 80%
+source-wordcount: '351'
+ht-degree: 74%
 ---
 # Introdução ao editor de HTML do Campaign{#about-campaign-html-editor}
 
@@ -68,7 +68,7 @@ A operação geral é a seguinte:
 Para criar um **aplicativo web** simples, é necessário:
 
 1. Criar um aplicativo web – [Saiba mais](creating-a-landing-page.md)
-1. Selecione conteúdo existente ou crie conteúdo por meio de um modelo padrão – [Saiba mais](template-management.md)
+1. Selecione conteúdo existente ou crie conteúdo por meio de um modelo padrão - [Saiba mais](template-management.md)
 1. Editar e configurar conteúdo – [Saiba mais](editing-content.md)
 1. Publicar o aplicativo web – [Saiba mais](creating-a-landing-page.md#step-3---publishing-content)
 
@@ -79,7 +79,7 @@ Para criar um **aplicativo web** simples, é necessário:
 Para criar uma **entrega de email**, é necessário:
 
 1. Criar uma entrega a partir de um modelo DCE – [Saiba mais](use-case-creating-an-email-delivery.md)
-1. Selecione um conteúdo existente ou crie conteúdo por meio de um [modelo padrão](template-management.md)
+1. Selecionar conteúdo existente ou criar conteúdo de um [modelo padrão](template-management.md)
 1. Edite e configure conteúdo online
 1. Enviar a entrega – Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}
 

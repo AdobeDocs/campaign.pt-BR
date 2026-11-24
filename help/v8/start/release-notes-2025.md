@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3609'
-ht-degree: 33%
+source-wordcount: '3608'
+ht-degree: 32%
 ---
 # Notas de versão de 2025 {#2025-rn}
 
@@ -312,7 +312,7 @@ _25 de abril de 2025_
 
 ### Novos recursos {#features-8-6-5}
 
-**Novo conector de envio de SMS**: o conector de envio de SMS foi modernizado e aprimorado para permitir conexões SMPP no modo transceptor, permitir conexões SMPP persistentes e garantir uma melhor compatibilidade para ambientes em transição do Adobe Campaign Standard. Uma nova conta externa de SMS agora está disponível para todas as novas implementações de SMS. A implementação atual ainda é compatível, mas é recomendável mudar para esse novo conector moderno e estendido. [Leia mais](../send/sms/sms.md).
+**Novo conector de envio de SMS**: o conector de envio de SMS foi modernizado e aprimorado para permitir conexões SMPP no modo transceptor, permitir conexões SMPP persistentes e garantir uma melhor compatibilidade para ambientes em transição do Adobe Campaign Standard. Uma nova conta externa de SMS agora está disponível para todas as novas implementações de SMS. As implementações existentes ainda são compatíveis, no entanto, recomenda-se mudar para esse novo conector moderno e estendido. [Leia mais](../send/sms/sms.md).
 
 ### Melhorias gerais {#improvements-8-6-5}
 
@@ -362,7 +362,7 @@ _14 de fevereiro de 2025_
 
 ### Novos recursos {#features-8-7-3}
 
-* **Relatórios dinâmicos para mensagens transacionais**: agora você pode monitorar as mensagens transacionais na interface de relatórios dinâmicos. Esses relatórios oferecem a profissionais de marketing a capacidade de visualizar todas as métricas e dimensões de relatórios de mensagens transacionais, além de detalhar entregas enviadas por meio de um modelo em tempo real. [Leia mais](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=pt-BR){target="_blank"}
+* **Relatórios dinâmicos para mensagens transacionais**: agora você pode monitorar as mensagens transacionais na interface de relatórios dinâmicos. Esses relatórios oferecem ao profissional de marketing a capacidade de visualizar em tempo real todas as métricas e dimensões de relatórios das mensagens transacionais e o detalhamento das entregas enviadas por meio de um modelo. [Leia mais](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=pt-BR){target="_blank"}
 
 * **APIs REST de mensagens transacionais**: as APIs transacionais baseadas em eventos agora estão disponíveis para emails. [Leia mais](../dev/api/get-started-apis.md)
 
@@ -380,7 +380,7 @@ _15 de janeiro de 2025_
 
 * A estabilidade do aplicativo do Campaign foi aprimorada durante a análise de entrega no contexto de [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md).
 * Essa versão inclui mecanismos de arquitetura FFDA aprimorados e fortalecidos, incluindo gerenciamento de chaves, preparo e replicação de dados.
-* Novos fluxos de trabalho técnicos foram introduzidos para a [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md). Esses fluxos de trabalho replicam a entrega e dados relacionados centralizando solicitações de replicação paralelas em tabelas correspondentes. Esse fluxo de trabalho começa com `Replicate nms`. [Leia mais](../architecture/replication.md)
+* Novos fluxos de trabalho técnicos foram introduzidos para a [implantação corporativa (FFDA)](../../v8/architecture/enterprise-deployment.md). Esses fluxos de trabalho replicam a entrega e dados relacionados centralizando solicitações de replicação paralelas em tabelas correspondentes. Esses fluxos de trabalho começam com `Replicate nms`. [Leia mais](../architecture/replication.md)
 * Uma nova opção **Habilitar supervisor de watchdog para manter o fluxo de trabalho em execução permanente** agora está disponível nas propriedades do fluxo de trabalho. Quando essa opção está habilitada, os fluxos de trabalho são reiniciados automaticamente após um erro. A reinicialização ocorre a cada 30 segundos por padrão se o fluxo de trabalho ainda estiver com erro. Para ajustar esse intervalo, você pode criar uma nova opção `XtkWorkflow_WatchdogRestartTimerTimeout` e utilizar o tipo de dados “Inteiro” para especificar o novo atraso. Essa opção só deve ser habilitada em fluxos de trabalho técnicos. [Leia mais](../../automation/workflow/workflow-properties.md#execution)
 
 ### Melhorias de segurança {#security-8-6-4}

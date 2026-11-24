@@ -47,18 +47,18 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 30b0f5eda9c80b72af5c8574e01cec6965b05564
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 50%
+ht-degree: 48%
 ---
 # Trabalhar com pacotes de dados{#data-packages}
 
 ## Introdução a pacotes {#gs-data-packages}
 
-Você pode usar pacotes de dados para exportar e importar dados e configurações personalizadas da plataforma. Os pacotes podem conter diferentes tipos de configurações e componentes, filtrados ou não.
+Você pode usar pacotes de dados para exportar e importar dados e configurações personalizadas da plataforma. Um pacote pode conter diferentes tipos de configurações e componentes, filtrados ou não.
 
-Em pacotes de dados do Campaign, as entidades do banco de dados do Adobe Campaign podem ser exibidas em arquivos XML. Em um pacote, cada entidade é representada com todos os seus dados.
+Em pacotes de dados do Campaign, as entidades do banco de dados do Adobe Campaign são exibidas em arquivos XML. Em um pacote, cada entidade é representada com todos os seus dados.
 
 Esta página descreve pacotes de dados **personalizados**, que você cria e gerencia. Os pacotes que fornecem os recursos do Campaign são **pacotes integrados**, que o Adobe instala e gerencia. Saiba mais em [Pacotes internos](../architecture/built-in-packages.md).
 
@@ -369,7 +369,7 @@ Por exemplo, você pode usar a seguinte convenção:
 
 #### Ordem dos pacotes de entidade {#entity-packages-order}
 
-Para ajudar na importação, os pacotes de entidade devem ser ordenados, pois devem ser importados.
+Para ajudar na importação, os pacotes de entidade devem ser solicitados, pois devem ser importados.
 
 Por exemplo:
 

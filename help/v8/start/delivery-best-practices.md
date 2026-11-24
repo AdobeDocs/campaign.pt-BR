@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '3162'
-ht-degree: 69%
+ht-degree: 66%
 ---
 # Práticas recomendadas de entrega {#delivery-best-practices}
 
@@ -60,7 +60,7 @@ Antes mesmo de começar a criar as entregas, você pode realizar várias ações
 
 Vários fatores podem afetar diretamente o desempenho do servidor e retardar sua plataforma do Campaign:
 
-* O número e o tipo de elementos [personalização](../send/personalize.md): a personalização em emails extrai dados do banco de dados para cada destinatário. no caso de muitos elementos de personalização, a quantidade de dados necessária para preparar o delivery é maior. Isso pode tornar sua plataforma lenta. Saiba mais sobre as medidas de proteção de personalização em [esta seção](../send/personalize.md#perso-guardrails).
+* O número e o tipo de elementos [personalização](../send/personalize.md): a personalização em emails extrai dados do banco de dados para cada destinatário. No caso de muitos elementos de personalização, a quantidade de dados necessária para preparar o delivery é maior. Isso pode tornar sua plataforma lenta. Saiba mais sobre as medidas de proteção de personalização em [esta seção](../send/personalize.md#perso-guardrails).
 
 * A carga do servidor: quando o servidor de marketing estiver lidando com várias tarefas diferentes ao mesmo tempo, o desempenho poderá ser retardado. O servidor de marketing precisa coordenar todos os dados de entrada e saída de todas as entregas para garantir que os dados estejam corretos no momento correto.
 Para evitar isso, coordene a programação de deliveries com os outros membros da equipe, garantindo um melhor desempenho.
@@ -116,7 +116,7 @@ Os modelos da entrega oferecem mais eficiência ao fornecer cenários prontos pa
 
 ### Subdomínios e marcas {#subdomains-and-branding}
 
-Quando você gerencia várias marcas no Adobe Campaign, a Adobe recomenda ter um subdomínio por marca. Por exemplo, um banco pode ter vários subdomínios correspondentes a cada uma de suas agências regionais. Se um banco for proprietário do domínio bluebank.com, seus subdomínios podem ser @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com etc. Ter um modelo de entrega por subdomínio permite usar sempre os parâmetros pré-configurados certos para cada marca, o que evita erros e economiza tempo. Saiba mais sobre a identidade visual do subdomínio na [documentação do Painel de Controle do Campaign](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Quando você gerencia várias marcas no Adobe Campaign, a Adobe recomenda ter um subdomínio por marca. Por exemplo, um banco pode ter vários subdomínios correspondentes a cada uma de suas agências regionais. Se um banco for proprietário do domínio bluebank.com, seus subdomínios poderão ser @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com etc. Ter um template do delivery por subdomínio permite usar sempre os parâmetros pré-configurados certos para cada uma das marcas, o que evita erros e economiza tempo. Saiba mais sobre a identidade visual do subdomínio na [documentação do Painel de Controle do Campaign](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Configurar endereços {#configure-addresses}
 
@@ -173,7 +173,7 @@ Para personalizar suas mensagens, você pode usar os dados dos recipients armaze
 
   Para obter mais informações sobre blocos de personalização, consulte [esta seção](../send/personalization-blocks.md).
 
-* Preparar dados de personalização - Você pode preparar dados de personalização em um workflow para melhorar a análise de preparação de delivery. Isso deve ser usado se os dados de personalização vierem de uma tabela através do Federated Data Access (FDA). Esta opção está descrita nesta [seção](../send/personalization-data.md#optimize-personalization)
+* Preparar dados de personalização - Você pode preparar dados de personalização em um workflow para melhorar a análise de preparação de delivery. Isso deve ser usado se os dados de personalização vierem de uma tabela externa por meio do Federated Data Access (FDA). Esta opção está descrita em [esta seção](../send/personalization-data.md#optimize-personalization)
 +++
 
 ### Criar conteúdo otimizado {#build-optimized-content}
@@ -215,7 +215,7 @@ Trabalhe na [linha de assunto](../send/personalization-fields.md#personalization
 
 ### Mirror page {#mirror-page-check}
 
-Sempre inclua um link de mirror page. A posição preferencial é a parte superior do email. Saiba mais sobre a mirror page em [esta página](../send/mirror-page.md)
+Sempre inclua um link de mirror page. A posição preferida é na parte superior do email. Saiba mais sobre a mirror page em [esta página](../send/mirror-page.md)
 
 ### Link de unsubscription {#unsub-link-check}
 

@@ -62,16 +62,16 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1501'
-ht-degree: 70%
+ht-degree: 63%
 ---
 # Principais recursos do Adobe Campaign v8 {#ac-gs-what-is-new}
 
-O Adobe Campaign v8 foi projetado para profissionais de marketing de vários canais que precisam da melhor solução em nuvem do setor para o gerenciamento de campanhas em vários canais com escala corporativa. Ele oferece recursos avançados de ETL e gerenciamento de dados para ajudar a criar e preparar a campanha perfeita. Seu mecanismo de orquestração fornece programas de marketing multitoque avançados com foco principal em jornadas orientadas por lote. Ele também vem com um servidor de mensagens escalável em tempo real que permite que as equipes de marketing enviem mensagens predefinidas com base em um conteúdo abrangente a partir de qualquer sistema de TI para realizar tarefas como redefinição de senha, confirmação de pedido, geração de recibos eletrônicos e muito mais.
+O Adobe Campaign v8 foi projetado para profissionais de marketing de vários canais que precisam da melhor solução em nuvem do setor para o gerenciamento de campanhas em vários canais com escala corporativa. Ele oferece recursos avançados de ETL e gerenciamento de dados para ajudar a criar e preparar a campanha perfeita. Seu mecanismo de orquestração fornece programas de marketing multitoque avançados com foco principal em jornadas orientadas por lote. Ele também vem com um servidor de mensagens escalável em tempo real, que permite que as equipes de marketing enviem mensagens predefinidas com base em uma carga abrangente a partir de qualquer sistema de TI, para realizar tarefas como redefinição de senha, confirmação de pedido, recibos eletrônicos e muito mais.
 
-O Adobe Campaign v8 oferece melhorias significativas de infraestrutura, segurança, capacidade de entrega e monitoramento. Ele está disponível como um **Managed Cloud Services** que combina serviços com uma supervisão proativa e alterações oportunas. Saiba mais sobre Managed Cloud Services do Campaign [nesta seção](#acms-desc).
+O Adobe Campaign v8 oferece melhorias significativas de infraestrutura, segurança, capacidade de entrega e monitoramento. Ele está disponível como uma **Cloud Service Gerenciada** que combina serviços com supervisão proativa e alertas oportunos. Saiba mais sobre Managed Cloud Services do Campaign [nesta seção](#acms-desc).
 
 ![](assets/home-page.png)
 
@@ -150,7 +150,7 @@ Observe que a nova arquitetura de nuvem permite que o Campaign simplifique proce
 
 >[!AVAILABILITY]
 >
->* O Campaign v8 está disponível **somente** como um Managed Cloud Service e não pode ser implantado em ambientes locais ou híbridos.
+>* O Campaign v8 está **somente** disponível como um Managed Cloud Service e não pode ser implantado em um ambiente local ou híbrido.
 >
 >* A migração automatizada de um ambiente do Campaign Classic v7 ainda não está disponível.
 
@@ -223,7 +223,7 @@ Essa abordagem garante que a instância do Campaign esteja sempre segura, otimiz
 
 ## Interface de administrador do autoatendimento{#self-service-admin}
 
-Como administrador de produto, você pode gerenciar as configurações e rastrear o uso de cada uma das instâncias do Campaign v8 com o **Painel de controle do Campaign**.
+Como administrador de produto, você pode gerenciar as configurações e rastrear o uso de cada uma das instâncias do Campaign v8 com o **Painel de Controle do Campaign**.
 
 Por meio de uma interface intuitiva, os administradores podem monitorar o uso dos principais ativos e realizar tarefas avançadas, como listar permissões de endereços IP, monitorar o armazenamento SFTP, gerenciar chaves e muito mais. Essa interface de autoatendimento oferece mais flexibilidade e ajuda a:
 

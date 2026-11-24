@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '651'
-ht-degree: 19%
+ht-degree: 17%
 ---
 # Trabalhar com o Campaign e o Adobe Experience Manager {#ac-aem}
 
@@ -114,7 +114,7 @@ Seu boletim informativo agora está pronto e sincronizado no Adobe Campaign.
 
 1. Para remover a vinculação entre o Experience Manager e o Campaign, clique em **[!UICONTROL Desynchronize]**.
 
-O email agora está pronto para ser enviado ao seu público-alvo.
+Seu email agora está pronto para ser enviado ao seu público-alvo.
 
 ## Importar ativos da biblioteca do Adobe Experience Manager Assets {#assets-library}
 

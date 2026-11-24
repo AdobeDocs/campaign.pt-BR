@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 52%
+source-wordcount: '429'
+ht-degree: 47%
 ---
 # Criação de conteúdo condicional{#conditional-content}
 
@@ -93,7 +93,7 @@ No exemplo abaixo, saiba como criar um email multilíngue. O conteúdo é exibid
 
    >[!NOTE]
    >
-   >Como nenhuma versão alternativa foi definida no conteúdo do email, filtre a população de destino antes de enviar o email.
+   >Como nenhuma versão alternativa foi definida no conteúdo do email, filtre o público-alvo antes de enviar o email.
 
 ## Tutorial em vídeo {#conditionnal-content-video}
 

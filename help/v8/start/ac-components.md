@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 100%
+source-wordcount: '640'
+ht-degree: 78%
 ---
 # Entender os componentes e processos do Campaign {#components-and-processes}
 
@@ -55,7 +55,7 @@ Os componentes do Adobe Campaign e a arquitetura global estão descritos abaixo.
 
 ### Camada de apresentação{#presentation-layer}
 
-Você pode acessar o Adobe Campaign por meio de um cliente avançado, um cliente simples ou uma integração de API.
+Você pode acessar o Adobe Campaign por meio de um cliente avançado, um cliente fino ou uma integração de API.
 
 * Cliente avançado
 
@@ -63,7 +63,7 @@ Você pode acessar o Adobe Campaign por meio de um cliente avançado, um cliente
 
 * Cliente simples
 
-  Os recursos de acesso do Adobe Campaign Web permitem acessar um subconjunto de recursos do Campaign com um navegador da web, usando uma interface em HTML. Use essa interface da web para acessar relatórios, controlar e validar mensagens, acessar painéis de monitoramento e muito mais.  [Saiba mais sobre o acesso ao Campaign Web](../start/connect.md).
+  Os recursos de acesso à web do Adobe Campaign permitem acessar um subconjunto de recursos do Campaign com um navegador da web, usando uma interface de usuário HTML. Use essa interface da web para acessar relatórios, controlar e validar mensagens, acessar painéis de monitoramento e muito mais.  [Saiba mais sobre o acesso ao Campaign Web](../start/connect.md).
 
 * Aplicativos externos com APIs
 
@@ -71,13 +71,13 @@ Você pode acessar o Adobe Campaign por meio de um cliente avançado, um cliente
 
 ### Camada de persistência{#persistance-layer}
 
-Os bancos de dados do Campaign são usados como camadas de persistência e contêm quase todas as informações e dados gerenciados pelo Adobe Campaign. Isso inclui: dados funcionais, como perfis, assinaturas, conteúdo; dados técnicos, como processos de entrega e logs, logs de rastreamento; e dados de trabalho (compras, leads).
+Os bancos de dados do Campaign são usados como uma camada de persistência e contêm quase todas as informações e dados gerenciados pelo Adobe Campaign. Isso inclui: dados funcionais, como perfis, assinaturas, conteúdo; dados técnicos, como processos de entrega e logs, logs de rastreamento; e dados de trabalho (compras, leads).
 
 A confiabilidade do banco de dados é de extrema importância porque a maioria dos componentes do Adobe Campaign requer acesso ao banco de dados para executar suas tarefas (com exceção do módulo de redirecionamento).
 
 ### Camada de aplicação lógica{#logical-app-layer}
 
-A camada de aplicação lógica do Campaign é facilmente configurável para atender a necessidades empresariais complexas. Você pode usar o Campaign como uma única plataforma com diferentes aplicativos que se combinam para criar uma arquitetura aberta e escalável. Cada instância do Campaign é uma coleção de processos na camada de aplicação, alguns dos quais são compartilhados e outros são dedicados.
+A camada de aplicação lógica do Campaign é facilmente configurável para atender a necessidades empresariais complexas. Você pode usar o Campaign como uma única plataforma com diferentes aplicativos que se combinam para criar uma arquitetura aberta e escalável. Cada instância do Campaign é uma coleção de processos na camada do aplicativo, alguns dos quais são compartilhados e outros são dedicados.
 
 ## Managed Cloud Services do Campaign{#ac-managed-services}
 
@@ -89,7 +89,7 @@ O servidor do Campaign Web controla o acesso aos processos do Campaign Web. Java
 
 ![](assets/do-not-localize/ac-processes.png)
 
-O console do cliente do Campaign se conecta ao servidor web usando o XML SOAP por HTTP. O servidor web fornece a camada de segurança, transmite as solicitações para a camada de aplicação usando Javascript e os processos internos do Campaign acessam o banco de dados usando SQL.
+O console do cliente do Campaign se conecta ao servidor web usando o XML SOAP por HTTP. O servidor Web fornece a camada de segurança, passa as solicitações para a camada Aplicativo usando Javascript e os processos internos do Campaign acessam o banco de dados usando SQL.
 
 <!--
 The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
@@ -97,6 +97,6 @@ The overall communication between Campaign processes are described in the follow
 ![](assets/do-not-localize//ac-standalone.png)
 -->
 
-O usuário se conecta ao servidor de aplicativos do Campaign usando o HTTP. Todos os dados e informações são gerenciados no banco de dados do Campaign. Se um desenvolvedor do Campaign executar qualquer alteração de configuração, ela será capturada no banco de dados. Se um(a) profissional de marketing criar uma nova campanha, todas as informações e dados relacionados a essa nova campanha também serão gerenciados no banco de dados. Quando um profissional de marketing executa uma campanha, as entregas de email são enviadas aos perfis do servidor da campanha por meio do servidor SMTP. À medida que os perfis interagem com as entregas de email, como ao abrir o email, esses dados de rastreamento são enviados de volta ao servidor de rastreamento.
+O usuário se conecta ao servidor de aplicativos do Campaign usando HTTP. Todos os dados e informações são gerenciados no banco de dados do Campaign. Se um desenvolvedor do Campaign executar qualquer alteração de configuração, ela será capturada no banco de dados. Se um(a) profissional de marketing criar uma nova campanha, todas as informações e dados relacionados a essa nova campanha também serão gerenciados no banco de dados. Quando um profissional de marketing executa uma campanha, as entregas de email são enviadas aos perfis do servidor da campanha por meio do servidor SMTP. À medida que os perfis interagem com as entregas de email, como ao abrir o email, esses dados de rastreamento são enviados de volta ao servidor de rastreamento.
 
 [Saiba mais sobre os processos do Campaign](../architecture/general-architecture.md#dev-env).

@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 54%
 ---
 # Trabalhar com o Campaign e o Adobe Target
@@ -54,7 +54,7 @@ Os seguintes tipos de dados podem ser usados pelo Adobe Target:
 * Segmentos vinculados à ID de visitante no Adobe Target, somente se os dados usados não estiverem sujeitos a limitações legais
 * Dados do Adobe Target: agente do usuário, endereço IP, dados de geolocalização
 
-## Inserir um conteúdo dinâmico
+## Inserir conteúdo dinâmico
 
 No exemplo abaixo, você aprenderá a integrar **uma oferta dinâmica** do Adobe Target a um email do Adobe Campaign.
 
@@ -159,7 +159,7 @@ Primeiro, é necessário definir o público-alvo:
 
 1. Crie outra experiência ao clicar em **[!UICONTROL Add Experience Targeting]**.
 
-Em seguida, adicione um conteúdo para cada público:
+Em seguida, adicione o conteúdo para cada público:
 
 1. Selecione o nome do local escolhido ao inserir a oferta dinâmica no Adobe Campaign.
 

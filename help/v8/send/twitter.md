@@ -24,9 +24,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '784'
 ht-degree: 23%
 ---
 # Postar mensagens no X (Twitter) com o Adobe Campaign {#post-tw-messages}
@@ -42,7 +42,7 @@ Após configurar a integração, é possível:
 
 As etapas de configuração para integrar sua conta X com o Adobe Campaign estão descritas em [esta página](../connect/ac-tw.md).
 
-## Criar e publicar uma publicação no X {#publish-on-tw}
+## Criar e publicar uma publicação X {#publish-on-tw}
 
 Siga as etapas abaixo para postar uma mensagem em sua conta X:
 
@@ -81,7 +81,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta X:
 
    >[!CAUTION]
    >
-   >Ao fazer uma postagem em X, as limitações se aplicam:
+   >Ao fazer uma contabilização em X, as seguintes limitações se aplicam:
    >
    >* A mensagem não pode exceder 140 caracteres.
    >* O formato HTML não é compatível.

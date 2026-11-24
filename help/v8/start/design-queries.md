@@ -27,9 +27,9 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '886'
 ht-degree: 30%
 ---
 # Consultar banco de dados do Campaign
@@ -155,7 +155,7 @@ Neste exemplo, dados são classificados em ordem crescente com base na idade do 
 
 >[!NOTE]
 >
->Como em para todas as listas disponíveis no console, por padrão, apenas as primeiras 200 linhas são exibidas na janela **[!UICONTROL Data preview]**. Para alterar isso, insira um número na caixa **[!UICONTROL Lines to display]** e clique em **[!UICONTROL Start the preview of the data]**. [Saiba mais](../config/ui-settings.md#customize-lists)
+>Como para todas as listas disponíveis no console, por padrão, apenas as primeiras 200 linhas são exibidas na janela **[!UICONTROL Data preview]**. Para alterar isso, insira um número na caixa **[!UICONTROL Lines to display]** e clique em **[!UICONTROL Start the preview of the data]**. [Saiba mais](../config/ui-settings.md#customize-lists)
 
 
 
