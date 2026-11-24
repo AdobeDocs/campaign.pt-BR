@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1733'
-ht-degree: 39%
+ht-degree: 38%
 ---
 # Gerenciar permissões do usuário{#manage-permissions}
 
@@ -239,7 +239,7 @@ A associação de grupos de operadores pode conceder ou restringir direitos de a
 
 Os direitos nomeados padrão no Adobe Campaign são:
 
-* **[!UICONTROL ADMINISTRATION]**: operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, entrega, scripts, etc. **Observação:** Perfis de produto na Adobe Admin Console que contêm a palavra &quot;administrador&quot; concedem acesso ao Painel de Controle do Campaign.
+* **[!UICONTROL ADMINISTRATION]**: Operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, entrega, scripts, etc. **Observação:** Perfis de produto na Adobe Admin Console que contêm a palavra &quot;administrador&quot; concedem acesso ao Painel de Controle do Campaign.
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em fluxos de trabalho e entregas para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas. **Observação:** perfis de produto que contêm a palavra &quot;administrador&quot; (como &quot;administrador de aprovação&quot;) concedem acesso ao Painel de Controle do Campaign.
 

@@ -21,10 +21,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 98%
+ht-degree: 97%
 ---
 # Etapas principais para criar uma pesquisa{#getting-started-with-surveys}
 
@@ -141,7 +141,7 @@ No exemplo abaixo, ao salvar (confirmação), se um perfil for salvo no banco de
 
 ![](assets/s_ncs_admin_survey_save_edit.png)
 
-Clique em **[!UICONTROL OK]** para confirmar e, em seguida, clique em **[!UICONTROL Save]** para salvar a pesquisa
+Clique em **[!UICONTROL OK]** para confirmar e, em seguida, clique em **[!UICONTROL Save]** para salvar a pesquisa.
 
 ## Etapa 6 — publicação das páginas {#step-6---publishing-the-pages}
 

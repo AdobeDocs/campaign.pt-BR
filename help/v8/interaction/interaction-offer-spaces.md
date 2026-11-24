@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 48%
@@ -49,7 +49,7 @@ Para criar um novo espaço de ofertas, siga as etapas abaixo:
 
    ![](assets/offer_space_create_002.png)
 
-1. Marque a opção **[!UICONTROL Enable unitary mode]**
+1. Marque a opção **[!UICONTROL Enable unitary mode]**.
 
 1. Vá para a janela **[!UICONTROL Content field]** e clique em **[!UICONTROL Add]**.
 

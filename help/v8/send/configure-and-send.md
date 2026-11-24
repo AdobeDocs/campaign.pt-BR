@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 66%
@@ -54,7 +54,7 @@ Use a opção **[!UICONTROL Test SMTP delivery]** para testar o envio via SMTP. 
 >
 >* Essa opção não deve ser definida no mid-sourcing.
 >
->* Saiba mais sobre a configuração do servidor SMTP na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=pt-BR#smtp-relay){target="_blank"}.
+>* Saiba mais sobre a configuração do servidor SMTP na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
 
 ## Enviar usando várias ondas {#sending-using-multiple-waves}
 
@@ -103,7 +103,7 @@ Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, gara
 
 ### Monitorar ondas {#monitor-waves}
 
-Para monitorar seus envios, navegue até os logs do delivery. Ver [esta página](send.md)
+Para monitorar seus envios, navegue até os logs do delivery. Consulte [esta página](send.md).
 
 Você pode ver as entregas que já foram enviadas nas ondas processadas (status **[!UICONTROL Sent]**) e as entregas a serem enviadas nas ondas restantes (status **[!UICONTROL Pending]**).
 

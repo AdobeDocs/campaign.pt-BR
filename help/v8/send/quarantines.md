@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1365'
 ht-degree: 32%
 ---
 # Quarentena {#quarantine-management}
@@ -58,11 +58,11 @@ A **Quarentena** se aplica somente a um **endereço**, um **número de telefone*
 >
 >Quando os destinatários relatam sua mensagem como spam ou respondem a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot;, seu endereço ou número de telefone ficam em quarentena como **[!UICONTROL Denylisted]**. Seu perfil é atualizado adequadamente.
 
-Por outro lado, **perfis** podem estar no **incluo na lista de bloqueios** como após um cancelamento de inscrição (recusa) de um determinado canal: isso implica que eles não são mais direcionados por nenhuma entrega. Como consequência, se um perfil no canal tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios de um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
+Por outro lado, **perfis** podem estar no **incluo na lista de bloqueios**, como depois de um cancelamento de inscrição (recusa), para um determinado canal: isso implica que eles não são mais direcionados por nenhuma entrega. Como consequência, se um perfil no canal tiver dois endereços de email, ambos os endereços serão excluídos do delivery. Você pode verificar se um perfil está na lista de bloqueios de um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. [Saiba mais](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
+>Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -121,7 +121,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 
 Além disso, o relatório interno **[!UICONTROL Non-deliverables and bounces]**, disponível na seção **Relatórios** desta home page, exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar os dados de um delivery específico ou personalizar este relatório conforme necessário.
 
-Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### Endereço de email na quarentena {#quarantined-recipient}
 

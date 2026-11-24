@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '764'
 ht-degree: 2%
 ---
 # Operações adicionais {#additional-operations}
@@ -283,8 +283,8 @@ Se quiser usar um filtro personalizado, será necessário criá-lo e personaliz�
 
 Para obter mais informações, consulte a documentação do Campaign Standard:
 
-* [Configurando definição de filtro](https://helpx.adobe.com/br/campaign/standard/developing/using/configuring-filter-definition.html).
-* [Caso de uso: chamada de um recurso usando uma chave de identificação composta](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html?lang=pt-BR).
+* [Configurando definição de filtro](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html).
+* [Caso de uso: chamada de um recurso usando uma chave de identificação composta](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html).
 
 <br/>
 
@@ -462,4 +462,4 @@ Por padrão, o nó **próximo** não está disponível ao interagir com tabelas 
 
 >[!NOTE]
 >
->O número de registros acima do qual uma tabela é considerada grande é definido na opção **XtkBigTableThreshold** da Campaign Standard. O valor padrão é 100.000 registros.
+>O número de registros acima do qual uma tabela é considerada grande é definido na opção **XtkBigTableThreshold** do Campaign Standard. O valor padrão é 100.000 registros.

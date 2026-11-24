@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 100%
+ht-degree: 93%
 ---
 # Regras de apresentação{#presentation-rules}
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 ## Criação de uma regra de apresentação {#creating-a-presentation-rule}
 
-Em nosso banco de dados, existem várias ofertas de viagens para Europa, África, Estados Unidos e Canadá. Queremos enviar ofertas para uma viagem ao Canadá, mas se o destinatário recusar esse tipo de envio, então não queremos enviá-lo novamente
+Em nosso banco de dados, existem várias ofertas de viagens para Europa, África, Estados Unidos e Canadá. Queremos enviar ofertas para uma viagem ao Canadá, mas se o recipient recusar esse tipo de oferta, não queremos enviá-lo novamente.
 
 Vamos configurar nossa regra para que a viagem ao Canadá seja oferecida apenas uma vez por destinatário e, caso seja rejeitada, não será oferecida novamente.
 

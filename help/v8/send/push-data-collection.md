@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 17%
+source-wordcount: '1425'
+ht-degree: 15%
 ---
 # Configuração de notificação por push revisada {#push-notifications-config}
 
@@ -100,7 +100,7 @@ O registro da credencial de push do aplicativo móvel é necessário para autori
 
 1. Forneça o **[!UICONTROL App ID (Android package name)]**. Normalmente, o nome do pacote é a ID do aplicativo no arquivo `build.gradle`.
 
-1. Alterne **[!UICONTROL Push Credentials]** para adicionar suas credenciais.
+1. Ative **[!UICONTROL Push Credentials]** para adicionar suas credenciais.
 
 1. Arraste e solte as credenciais de push do FCM. Para obter mais detalhes sobre como obter as credenciais de push, consulte a [Documentação do Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
@@ -158,7 +158,7 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
 1. Navegue até a guia **[!UICONTROL Subscription parameters]** para definir o mapeamento com uma extensão do esquema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**.
 
-1. Navegue até a guia **[!UICONTROL Sounds]** para definir um som a ser reproduzido. Clique em **[!UICONTROL Add]** e preencha o campo **[!UICONTROL Internal name]** que deve conter o nome do arquivo incorporado no aplicativo ou o nome do som do sistema.
+1. Navegue até a guia **[!UICONTROL Sounds]** para definir um som a ser reproduzido. Clique em **[!UICONTROL Add]** e preencha o campo **[!UICONTROL Internal name]**, que deve conter o nome do arquivo incorporado no aplicativo ou o nome do som do sistema.
 
 1. Clique em **[!UICONTROL Next]** para configurar o aplicativo de desenvolvimento.
 

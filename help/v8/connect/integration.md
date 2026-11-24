@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 13%
@@ -57,9 +57,9 @@ O Campaign v8 pode se conectar com as seguintes soluções da Adobe. Navegue pel
 
 Você também pode combinar seus **públicos-alvo** e **ativos** em [!DNL CX Enterprise] soluções com os recursos de compartilhamento de ativos e público-alvo.
 
-Saiba mais sobre o **Compartilhamento de público** entre o Campaign e as soluções [!DNL CX Enterprise] na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=pt-BR#integrating-with-adobe-experience-cloud){target="_blank"}.
+Saiba mais sobre o **Compartilhamento de público** entre o Campaign e as soluções [!DNL CX Enterprise] na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}.
 
-Saiba mais sobre o **Compartilhamento de ativos** entre o Campaign e as soluções [!DNL CX Enterprise] na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=pt-BR#integrating-with-adobe-experience-cloud){target="_blank"}.
+Saiba mais sobre o **Compartilhamento de ativos** entre o Campaign e as soluções [!DNL CX Enterprise] na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}.
 
 >[!NOTE]
 >
@@ -73,13 +73,13 @@ Você pode conectar sua plataforma do Adobe Campaign aos seus **sistemas de terc
 Ativar os dados do CRM na comunicação entre canais: saiba como transmitir contatos do sistema CRM para o Adobe Campaign e compartilhar dados de campanha do Adobe Campaign com o sistema CRM.
 Os conectores CRM permitem uma integração de dados rápida e fácil: o Adobe Campaign fornece um assistente dedicado para coletar e selecionar entre as tabelas disponíveis no CRM. Isso garante a sincronização bidirecional para assegurar que os dados estejam sempre atualizados em todos os sistemas.
 
-Saiba como integrar o Campaign com o Microsoft Dynamics 365 e o Salesforce.com nesta [página](crm.md)
+Saiba como integrar o Campaign com o Microsoft Dynamics 365 e o Salesforce.com nesta [página](crm.md).
 
 ## Conecte terceiros com o Federated Data Access{#gs-fda}
 
 Use o conector FDA (Federated Data Access) para conectar o Campaign a um ou mais **bancos de dados externos** e processar as informações armazenadas neles sem afetar os dados do banco de dados da nuvem do Campaign.
 
-Saiba mais [nesta página](fda.md)
+Saiba mais [nesta página](fda.md).
 
 ## Trabalhar com redes sociais{#gs-social}
 

@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 26%
@@ -38,11 +38,11 @@ ht-degree: 26%
 >
 >Para os casos de uso mais comuns, crie suas landing pages na interface da Web do Campaign, onde você pode facilmente projetá-las e publicá-las. As landing pages criadas no console do cliente, conforme descrito nesta seção, oferecem mais configurações e abordam casos de uso mais avançados.
 >
->[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 O Adobe Campaign integra um módulo gráfico para definir e publicar **formulários Web** para criar páginas com campos de entrada e seleção e que podem incluir dados do banco de dados. Isso permite a criação e publicação de páginas da Web onde os usuários podem visualizar ou inserir informações.
 
-Saiba como criar e publicar formulários Web em [esta seção](web/about-web-forms.md)
+Saiba como criar e publicar formulários Web em [esta seção](web/about-web-forms.md).
 
 ![](assets/sample.png)
 
@@ -50,4 +50,4 @@ O Adobe Campaign também permite criar e publicar **aplicativos web** dinâmicos
 
 É possível criar páginas, como um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada, etc. Essa funcionalidade permite criar e publicar páginas da Web em que os usuários podem pesquisar ou inserir informações.
 
-Saiba como criar e publicar aplicativos Web em [esta seção](web/about-web-applications.md)
+Saiba como criar e publicar aplicativos Web em [esta seção](web/about-web-applications.md).

@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '624'
 ht-degree: 2%
 ---
 # Trilha de auditoria{#audit-trail}
@@ -59,8 +59,8 @@ A funcionalidade **[!UICONTROL Audit trail]** no Adobe Campaign oferece um regis
   * Parar
   * Restart
   * Limpeza que é igual ao histórico de Expurgação da ação
-  * Simular qual é igual ao Início da ação no modo de simulação
-  * Ativar que é igual à ação Executar tarefas pendentes agora
+  * Simular qual é igual ao início da ação no modo de simulação
+  * Wakeup que é igual à ação Executar tarefas pendentes agora
   * Interrupção incondicional
 
   Para obter mais informações sobre fluxos de trabalho, consulte esta [página](../../automation/workflow/about-workflows.md).
@@ -69,7 +69,7 @@ A funcionalidade **[!UICONTROL Audit trail]** no Adobe Campaign oferece um regis
 
 * **A opção trilha de auditoria** permite que você verifique as atividades e as últimas modificações feitas em suas opções.
 
-  Para obter mais informações sobre opções, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
+  Para obter mais informações sobre opções, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
 
 * **Trilha de auditoria de entrega** permite que você verifique as atividades e as últimas modificações feitas em suas entregas.
 

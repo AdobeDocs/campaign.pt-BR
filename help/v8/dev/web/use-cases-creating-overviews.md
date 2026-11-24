@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 94%
+ht-degree: 92%
 ---
 # Casos de uso: criar páginas de visão geral{#use-cases-creating-overviews}
 
@@ -140,7 +140,7 @@ Ao configurar uma lista na sua visão geral, você pode optar por exibir detalhe
 
    ![](assets/s_ncs_configuration_webapp_detail.png)
 
-1. Na guia **[!UICONTROL Data]**, adicione as colunas **[!UICONTROL Primary key]**, **[!UICONTROL Internal name]** e **[!UICONTROL Description]** e selecione a opção **[!UICONTROL Hidden field]** para cada uma.
+1. Na guia **[!UICONTROL Data]**, adicione as colunas **[!UICONTROL Primary key]** , **[!UICONTROL Internal name]** e **[!UICONTROL Description]** e selecione a opção **[!UICONTROL Hidden field]** para cada uma.
 
    ![](assets/s_ncs_configuration_webapp_detail002.png)
 

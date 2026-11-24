@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 96%
+source-wordcount: '875'
+ht-degree: 93%
 ---
 # Respostas dos formulários web{#web-forms-answers}
 
@@ -99,19 +99,19 @@ Isso significa que, se o usuário selecionar um veículo comercial, o formulári
 
 Para cada formulário, as respostas fornecidas podem ser reutilizadas nos campos ou nos rótulos. As seguintes sintaxes devem ser usadas:
 
-* Para um conteúdo armazenado em um campo do banco de dados:
+* Para conteúdo armazenado em um campo do banco de dados:
 
   ```
   <%=ctx.recipient.@field name%
   ```
 
-* Para um conteúdo armazenado em uma variável local:
+* Para conteúdo armazenado em uma variável local:
 
   ```
   <%= ctx.vars.variable name %
   ```
 
-* Para um conteúdo armazenado em um campo de texto HTML:
+* Para conteúdo armazenado em um campo de texto do HTML:
 
   ```
   <%== HTML field name %
@@ -153,4 +153,4 @@ Você pode selecionar uma pasta de pesquisa para a reconciliação e a pasta de 
 >
 >As possíveis operações são: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
 >A pasta padrão de um operador é a primeira pasta a que o operador tem permissão de gravação.\
->Consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+>Consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.

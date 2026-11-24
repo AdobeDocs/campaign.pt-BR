@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -74,7 +74,7 @@ As políticas de replicação definem quantos dados são replicados de uma tabel
 
 O Campaign v8 depende de workflows técnicos específicos para gerenciar a replicação de dados agendada. Esses fluxos de trabalho técnicos estão disponíveis no nó **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** do explorador do Campaign. **Eles não devem ser modificados.**
 
-Os workflows técnicos executam processos ou trabalhos, agendados regularmente no servidor. A lista completa de fluxos de trabalho técnicos está detalhada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=pt-BR){target="_blank"}.
+Os workflows técnicos executam processos ou trabalhos, agendados regularmente no servidor. A lista completa de fluxos de trabalho técnicos está detalhada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}.
 
 Os workflows técnicos que garantem a replicação de dados são os seguintes:
 
@@ -87,7 +87,7 @@ Os workflows técnicos que garantem a replicação de dados são os seguintes:
 
 Se necessário, é possível iniciar a sincronização de dados manualmente. Para fazer isso, clique com o botão direito do mouse na atividade **Scheduler** e selecione **Executar tarefa(s) pendente(s) agora**.
 
-Além do fluxo de trabalho técnico interno **Replicar tabelas de referência**, você pode forçar a replicação de dados em seus fluxos de trabalho usando um destes métodos
+Além do fluxo de trabalho técnico interno **Replicar tabelas de referência**, você pode forçar a replicação de dados em seus fluxos de trabalho usando um destes métodos:
 
 +++Como forçar a replicação de dados
 
@@ -149,4 +149,4 @@ Este vídeo apresenta os principais conceitos de quais bancos de dados o Adobe C
 
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-Os tutoriais adicionais do Console do Cliente do Campaign v8 estão disponíveis [aqui](https://experienceleague.adobe.com/pt-br/docs/campaign-learn/tutorials/overview).
+Os tutoriais adicionais do Console do Cliente do Campaign v8 estão disponíveis [aqui](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview).

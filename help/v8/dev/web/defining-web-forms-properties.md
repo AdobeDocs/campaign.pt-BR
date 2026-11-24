@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 96%
@@ -159,7 +159,7 @@ Quando a página for acessada, o seguinte formulário de autenticação será ex
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-O login e a senha são aqueles usados pelos operadores do Adobe Campaign. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+O login e a senha são aqueles usados pelos operadores do Adobe Campaign. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
 
 A opção **[!UICONTROL Use a specific account]** permite limitar a permissão de leitura ou gravação do operador que acessa o formulário. Use a caixa suspensa para selecionar um operador ou grupo de operadores que estará encarregado de conceder essas permissões.
 
