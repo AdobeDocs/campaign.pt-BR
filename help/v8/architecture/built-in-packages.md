@@ -26,9 +26,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 9f70a309a882347a0df658d00c47127f31d28eb9
+source-git-commit: a2ca220e4be9dfb4a90465b69dd08a3552040a07
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 16%
 ---
 # Pacotes incorporados {#built-in-packages}
@@ -57,7 +57,7 @@ A tabela a seguir lista os pacotes incorporados para obter informações. A disp
 
 | Pacote | Descrição |
 |---|---|
-| Entrega | Monitora os deliveries e os problemas encontrados durante o envio de mensagens. [Saiba mais](../start/monitor.md) |
+| Entrega | Pacote principal obrigatório do Adobe Campaign. Ele permite enviar deliveries. [Saiba mais](../start/gs-message.md) |
 | Campanhas de marketing (Campaign) | Define, otimiza, executa e analisa campanhas de comunicação e marketing. [Saiba mais](../start/campaigns.md) |
 | Recursos de marketing (MRM) | Controla ações de marketing em um modo colaborativo, com gerenciamento e rastreamento de tarefas, orçamentos e recursos de marketing. [Saiba mais](../../automation/mrm/about-marketing-resource-management.md) |
 | Dispositivo de oferta (interação) | Responde em tempo real durante uma interação com um contato, fazendo uma ou várias ofertas adaptadas. [Saiba mais](../interaction/interaction.md) |
