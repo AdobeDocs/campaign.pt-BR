@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 47%
@@ -44,7 +44,7 @@ A interação permite criar e gerenciar um catálogo de ofertas e configurar as 
 
 ![](assets/interaction-cycle.png)
 
-Primeiro, um contato ocorre entre um cliente e uma empresa por meio de um canal de comunicação: pode ser um site (interação de saída), um email, SMS, notificação por push (interações de entrada). [Saiba mais](#interaction-types)
+Primeiro, um contato ocorre entre um cliente e uma empresa por meio de um canal de comunicação: pode ser um site (interação de entrada), um email, SMS, notificação por push (interações de saída). [Saiba mais](#interaction-types)
 
 Este contato resulta em uma chamada para o mecanismo de oferta. (1)
 
