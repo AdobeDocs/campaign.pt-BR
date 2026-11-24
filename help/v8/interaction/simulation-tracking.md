@@ -44,12 +44,12 @@ Os resultados da simulação contêm um detalhamento de propostas por classifica
 
 É possível salvar estes resultados e exportá-los se necessário, criando uma análise descritiva dos resultados. Para fazer isso, clique no link apropriado na janela de resultados.
 
-Consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} para mais informações sobre o assistente de análise descritiva.
+Consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} para mais informações sobre o assistente de análise descritiva.
 
 ![](assets/offer_simulation_012.png)
 
 Uma tabela dinâmica fornece uma visão rápida dos detalhamentos de oferta por classificação. Como todos os relatórios do Adobe Campaign, é possível exportar, imprimir, arquivar ou exibir os relatórios em um navegador da Web.
 
-Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
+Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
 
 ![](assets/offer_simulation_013.png)

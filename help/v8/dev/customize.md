@@ -65,7 +65,7 @@ Dois modos de extensão de tabela estão disponíveis:
 
 * Na interface, usando o assistente **Novo campo**
 
-  Saiba como adicionar rapidamente um novo campo no Campaign na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}
+  Saiba como adicionar rapidamente um novo campo no Campaign na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=pt-BR#configuring-campaign-classic){target="_blank"}
 
 * Programaticamente, estendendo o schema. Saiba como estender um esquema existente [nesta seção](../dev/extend-schema.md).
 
@@ -75,9 +75,9 @@ Para adicionar um tipo de dados totalmente novo que não existe pronto para uso 
 
 **Tópicos relacionados**
 
-Exemplo de edição de esquema na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}
+Exemplo de edição de esquema na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=pt-BR#configuring-campaign-classic){target="_blank"}
 
-Caso de uso: vincular um campo a uma tabela de referência existente na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}
+Caso de uso: vincular um campo a uma tabela de referência existente na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=pt-BR#uc-link){target="_blank"}
 
 
 ## Modificar os formulários de entrada

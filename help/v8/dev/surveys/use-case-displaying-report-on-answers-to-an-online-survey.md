@@ -93,7 +93,7 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
 ## Etapa 2 — criação do cubo, suas medidas e seus indicadores {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-É possível então criar o cubo e configurar suas medidas: elas serão usados para criar os indicadores que serão mostrados no relatório. Para obter mais informações sobre a criação e configuração de cubos, consulte [Sobre os cubos](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}.
+É possível então criar o cubo e configurar suas medidas: elas serão usados para criar os indicadores que serão mostrados no relatório. Para obter mais informações sobre a criação e configuração de cubos, consulte [Sobre os cubos](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}.
 
 Neste exemplo, o cubo se baseia nos dados da lista alimentados pelo fluxo de trabalho criado anteriormente.
 
