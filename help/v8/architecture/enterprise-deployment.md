@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Reporting
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 44%
+source-wordcount: '1093'
+ht-degree: 42%
 ---
 # [!DNL Campaign] implantação do FFDA {#gs-ac-ffda}
 
@@ -76,11 +76,11 @@ Em uma implantação [Corporativa (FFDA)](../architecture/enterprise-deployment.
 
 O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem.
 
-APIs específicas estão disponíveis para gerenciar dados entre o banco de dados local e na nuvem. Saiba como essas novas APIs funcionam e como usá-las [nesta página](new-apis.md).
+APIs específicas estão disponíveis para gerenciar dados entre o banco de dados local e na nuvem. Saiba como essas novas APIs funcionam e como usá-las em [Novas APIs do Campaign v8](new-apis.md).
 
 A comunicação geral entre servidores e processos é realizada de acordo com o seguinte esquema:
 
-![](assets/architecture.png)
+![Instância de marketing com Snowflake e PgSQL, instâncias do Centro de mensagens e Mid Sourcing, consumidores, rastreamento, etapas 1 a 4](assets/architecture.png)
 
 * Os módulos de gerenciamento de execução e rejeição estão desativados na instância.
 * O aplicativo é configurado para executar mensagens em um servidor remoto de &quot;origem intermediária&quot;, orientado por chamadas do SOAP (por HTTP ou HTTPS).

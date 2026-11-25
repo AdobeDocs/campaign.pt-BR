@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '348'
 ht-degree: 0%
 ---
 # Implantação do FDA do [!DNL Campaign]{#gs-fda}
@@ -69,6 +69,6 @@ Com esse modelo de implantação, os usuários do Adobe Campaign podem estender 
 
 A comunicação geral entre servidores e processos é realizada de acordo com o seguinte esquema:
 
-![](assets/fda-architecture.png)
+![Fluxo de dados FDA: servidores de marketing do Campaign, Snowflake, PgSQL, servidores do Centro de Mensagens e Mid Sourcing, etapas numeradas de 1 a 5](assets/fda-architecture.png)
 
 O PostgreSQL é o banco de dados principal e o Snowflake pode ser usado como o banco de dados secundário. Você pode estender seu modelo de dados e armazenar seus dados no Snowflake. Posteriormente, é possível executar ETL, segmentação e relatórios em um grande conjunto de dados com desempenhos excelentes.

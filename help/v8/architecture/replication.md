@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '849'
 ht-degree: 2%
 ---
 # Replicação de dados {#wf-data-replication}
@@ -74,7 +74,7 @@ As políticas de replicação definem quantos dados são replicados de uma tabel
 
 O Campaign v8 depende de workflows técnicos específicos para gerenciar a replicação de dados agendada. Esses fluxos de trabalho técnicos estão disponíveis no nó **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** do explorador do Campaign. **Eles não devem ser modificados.**
 
-Os workflows técnicos executam processos ou trabalhos, agendados regularmente no servidor. A lista completa de fluxos de trabalho técnicos está detalhada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=pt-BR){target="_blank"}.
+Os workflows técnicos executam processos ou trabalhos, agendados regularmente no servidor. A lista completa de fluxos de trabalho técnicos está detalhada em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}.
 
 Os workflows técnicos que garantem a replicação de dados são os seguintes:
 
@@ -97,7 +97,7 @@ Além do fluxo de trabalho técnico interno **Replicar tabelas de referência**,
   nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
   ```
 
-  ![](assets/jscode.png)
+  ![Atividade de código JavaScript com o script nms.replicationStrategy.StartReplicateStagingData para dem:sampleTable](assets/jscode.png)
 
 * Adicione uma atividade **nlmodule** específica com o seguinte comando:
 
@@ -105,7 +105,7 @@ Além do fluxo de trabalho técnico interno **Replicar tabelas de referência**,
   nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
   ```
 
-  ![](assets/nlmodule.png)
+  ![natividade do módulo lserver com o parâmetro ffdaReplicateStaging -stagingSchema -instance:acc1](assets/nlmodule.png)
 
 +++
 
@@ -149,4 +149,4 @@ Este vídeo apresenta os principais conceitos de quais bancos de dados o Adobe C
 
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-Os tutoriais adicionais do Console do Cliente do Campaign v8 estão disponíveis [aqui](https://experienceleague.adobe.com/pt-br/docs/campaign-learn/tutorials/overview).
+Os tutoriais adicionais do Console do Cliente do Campaign v8 estão disponíveis [aqui](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview).

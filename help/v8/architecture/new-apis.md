@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 4%
+source-wordcount: '492'
+ht-degree: 3%
 ---
 # APIs específicas do Campaign FFDA{#gs-new-api}
 
@@ -102,7 +102,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada c
 
 Como resultado, a tabela de preparo é alimentada conforme esperado.
 
-![](assets/no-reconciliation.png)
+![Conteúdo da Tabela de Amostra de Esquema de Preparo (Preparo) listando quatro registros com valores de Col 1 de Teste e Col 2 de Teste](assets/no-reconciliation.png)
 
 ### Inserir com reconciliação
 
@@ -122,7 +122,7 @@ logInfo(strUuid);
 
 Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada conforme esperado.
 
-![](assets/with-reconciliation.png)
+![O conteúdo da Tabela de Exemplo de Esquema de Preparo (Preparo) agora lista seis registros, incluindo ABC12345 e ABDCD321](assets/with-reconciliation.png)
 
 
 **De uma chamada do SOAP**
@@ -183,7 +183,7 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 Depois que o fluxo de trabalho é executado, a tabela de preparo é atualizada conforme esperado.
 
-![](assets/updated-data.png)
+![O conteúdo da tabela de preparo onde o registro ABC12345 agora mostra testValue A (atualizado) e testValue B (atualizado)](assets/updated-data.png)
 
 **De uma chamada do SOAP**
 
@@ -222,7 +222,7 @@ Como resultado, a tabela de preparo é atualizada conforme esperado.
 
 ## Gerenciamento de assinaturas {#sub-apis}
 
-O gerenciamento de assinaturas do Campaign está descrito em [esta página](../start/subscriptions.md).
+O gerenciamento de assinaturas do Campaign está descrito em [Gerenciar assinaturas e cancelamentos de assinaturas do Campaign](../start/subscriptions.md).
 
 A inserção de dados de assinatura e cancelamento de assinatura depende do [Mecanismo de preparo](staging.md) no banco de dados local do Campaign. As informações do assinante são armazenadas temporariamente em tabelas intermediárias no banco de dados local, e o workflow de sincronização envia esses dados do banco de dados local para o banco de dados da nuvem. Como consequência, os processos de assinatura e cancelamento de assinatura são **assíncronos**. As solicitações de aceitação e recusa são processadas a cada hora por meio de um fluxo de trabalho técnico específico. [Saiba mais](replication.md#workflows)
 
