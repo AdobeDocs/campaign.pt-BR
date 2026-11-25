@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 9548dde346f10c57350f21e5946690f2f988b939
 workflow-type: tm+mt
-source-wordcount: '4502'
-ht-degree: 82%
+source-wordcount: '4507'
+ht-degree: 78%
 ---
 # Importar dados para o Campaign {#ootb-profiles}
 
@@ -169,7 +169,7 @@ Existem quatro tipos de campos calculados:
 
 ### Etapa 4 - Reconciliação {#step-4---reconciliation}
 
-A etapa de reconciliação do assistente de importação permite definir o modo de reconciliação dos dados do arquivo com os dados existentes no banco de dados e definir as regras de prioridade entre os dados do arquivo e os dados do banco de dados. A janela de configuração tem esta aparência:
+A etapa de reconciliação do assistente de importação permite definir como os dados do arquivo são reconciliados com os dados existentes no banco de dados. Também permite definir as regras de prioridade entre os dados do arquivo e os dados do banco de dados. A janela de configuração tem esta aparência:
 
 ![Tela de reconciliação com a árvore de campos, onde o Nome é definido como parte da chave de reconciliação 1.](assets/s_ncs_user_import_wizard04_1.png)
 
@@ -205,7 +205,7 @@ Pelo menos uma chave de reconciliação deve ser preenchida para gerenciar a cor
 
 Uma chave de reconciliação é um conjunto de campos usados para identificar um registro. Por exemplo, ao importar destinatários, a chave de reconciliação pode ser o número da conta, o campo “email” ou os campos “Sobrenome, Nome, Empresa”, etc.
 
-Nesse caso, para descobrir se uma linha de um arquivo corresponde a um destinatário existente no banco de dados, o mecanismo de importação compara os valores do arquivo com aqueles do banco de dados para todos os campos da chave. Quando os campos são específicos de um registro, uma comparação entre os dados de origem e de destino pode ser executada, garantindo a integridade dos dados após a importação. Uma segunda chave de reconciliação pode ser preenchida para a mesma tabela; ela é usada para as linhas cuja primeira chave está vazia.
+Nesse caso, o mecanismo de importação compara os valores do arquivo com os do banco de dados para todos os campos da chave. É assim que ele descobre se uma linha do arquivo corresponde a um recipient existente no banco de dados. Quando os campos são específicos de um registro, uma comparação entre os dados de origem e de destino pode ser executada, garantindo a integridade dos dados após a importação. Uma segunda chave de reconciliação pode ser preenchida para a mesma tabela; ela é usada para as linhas cuja primeira chave está vazia.
 
 Evite escolher um campo que possa ser modificado durante a importação; se isso ocorrer, o mecanismo poderá criar registros adicionais.
 
@@ -253,7 +253,7 @@ Os detalhes dessas recusas podem ser exibidos por meio da guia **[!UICONTROL Rej
 Há dois tipos de recusas (o tipo é exibido na coluna **[!UICONTROL Connector]**):
 
 * Recusas dos erros em relação ao conector de texto que ocorrem enquanto a linha de arquivo está sendo processada (campo calculado, análise de dados etc.). Nessa situação, no caso de um erro, a linha inteira é sempre recusada.
-* Rejeições do conector do banco de dados são relacionados a erros ocorridos durante a reconciliação ou escrita dos dados no banco de dados. No caso de uma importação para várias tabelas, a rejeição pode ocorrer apenas em uma parte do registro (por exemplo, para uma importação de destinatários e eventos associados, um erro pode impedir a atualização de um evento sem recusar o destinatário).
+* Rejeições do conector do banco de dados são relacionados a erros ocorridos durante a reconciliação ou escrita dos dados no banco de dados. No caso de uma importação para várias tabelas, a rejeição pode dizer respeito apenas a uma parte do registro. Por exemplo, para uma importação de recipients e eventos associados, um erro pode impedir a atualização de um evento sem rejeitar o recipient.
 
 Na página de reconciliação de dados, é possível definir o campo do tipo de gerenciamento de erros desejado por campo e tabela por tabela.
 
@@ -271,7 +271,7 @@ Você pode gerar um arquivo contendo esses registros por meio do ícone **[!UICO
 
 ### Etapa 5 - Etapa adicional ao importar destinatários {#step-5---additional-step-when-importing-recipients}
 
-A próxima etapa do assistente de importação permite selecionar ou criar a pasta para a qual os dados serão importados, mapear automaticamente destinatários importados com uma lista (nova ou já existente) e assinar um serviço para os destinatários.
+A próxima etapa do assistente de importação permite selecionar ou criar a pasta na qual os dados serão importados. Você também pode mapear automaticamente destinatários importados com uma lista (nova ou existente) e assinar destinatários a um serviço.
 
 ![Tela Importar destinatários com Links de edição para pasta, lista e serviço, além do campo Origem.](assets/s_ncs_user_import_wizard05_1.png)
 
@@ -315,7 +315,7 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
   1. Como assinar um serviço
 
-     Para inscrever todos os destinatários importados para um serviço de informações, clique no link **[!UICONTROL Edit...]** da seção **[!UICONTROL Subscribe recipients to a service]** para selecionar ou criar o serviço de informações ao qual os destinatários serão inscritos. Você pode selecionar a opção **[!UICONTROL Send a confirmation message]**: o conteúdo desta mensagem é definido no modelo da entrega associado ao serviço de assinatura.
+     Para inscrever todos os recipients importados para um serviço de informações, clique no link **[!UICONTROL Edit...]** da seção **[!UICONTROL Subscribe recipients to a service]**. Em seguida, selecione ou crie o serviço de informação ao qual os recipients serão inscritos. Você pode selecionar a opção **[!UICONTROL Send a confirmation message]**: o conteúdo desta mensagem é definido no modelo da entrega associado ao serviço de assinatura.
 
      ![Inscreva destinatários em uma caixa de diálogo de serviço com um serviço existente selecionado e envie uma mensagem de confirmação marcada.](assets/s_ncs_user_import_wizard05_7.png)
 
