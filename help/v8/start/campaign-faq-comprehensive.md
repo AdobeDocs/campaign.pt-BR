@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 011875268793bca1a000d745818dbd6c69461227
 workflow-type: tm+mt
-source-wordcount: '11502'
+source-wordcount: '11508'
 ht-degree: 14%
 ---
 # Perguntas frequentes {#faq}
@@ -102,7 +102,7 @@ Sim! Graças à integração com o IMS (Adobe Identity Management System), os us
 
 +++ Quais conceitos da interface do usuário do Campaign eu devo conhecer?
 
-Consulte [esta seção](campaign-ui.md) para saber mais sobre as noções básicas da interface de usuário do Adobe Campaign.
+Consulte [Conheça a interface do usuário do Campaign](campaign-ui.md) para saber mais sobre as noções básicas da interface do usuário do Adobe Campaign.
 
 A partir da versão v8.6 do Campaign, você também terá acesso à nova **interface de usuário da Web do Campaign**, disponível por meio do ambiente [!DNL CX Enterprise] central.
 
@@ -534,7 +534,7 @@ Saiba como projetar mensagens de marketing eficazes no Campaign v8, incluindo mo
 
 +++ Quais são as práticas recomendadas para criar e-mails no Campaign?
 
-Principais diretrizes: garantir design responsivo para dispositivos móveis, usar código compatível com HTML 4.0/XHTML com CSS em linha, otimizar imagens (abaixo de 100 KB) com texto alternativo, usar campos de mesclagem de personalização, testar clientes de email antes de enviar e incluir uma versão de texto simples. Tenha como meta o tamanho total do email abaixo de 500 KB para uma entrega ideal.
+Principais diretrizes: garanta um design responsivo para dispositivos móveis e use o código compatível com HTML 4.0/XHTML com CSS em linha. Otimizar imagens (abaixo de 100 KB) com texto alternativo, usar campos de mesclagem de personalização, testar clientes de email antes de enviar e incluir uma versão de texto simples. Tenha como meta o tamanho total do email abaixo de 500 KB para uma entrega ideal.
 
 **Tópicos relacionados:**
 
@@ -1212,7 +1212,7 @@ O Painel de controle do Campaign é uma interface administrativa baseada na Web 
 O Adobe Campaign v8 oferece a capacidade de comparar todas as configurações atuais de contas administrativas de nível superior e contas privilegiadas com padrões seguros recomendados.
 
 * **Configurações atuais (visibilidade total):** Todas as configurações de contas administrativas e privilegiadas podem ser revisadas em **[!UICONTROL Administration]** > **[!UICONTROL Access management]** (console do cliente ou interface da Web do Campaign): **[!UICONTROL Operators]**, **[!UICONTROL Operator groups]**, **[!UICONTROL Named rights]** (por exemplo, ADMINISTRATION, APPROVAL ADMINISTRATION) e permissões de nível de pasta. Os administradores de produtos também podem revisar as configurações no nível da instância no [Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR){target="_blank"} (incluo na lista de permissões IP, permissões de URL, detalhes da instância e muito mais).
-* **Padrões seguros recomendados:** As [diretrizes de segurança](../config/security.md) definem a linha de base segura recomendada para contas administrativas e privilegiadas, incluindo: criar grupos de segurança suficientes, atribuir direitos de acesso apropriados por operador e limitar o uso do operador administrador e do grupo de administradores. Quando aplicável, consulte também o [Complemento de segurança aprimorado](../config/enhanced-security.md) para proteção de rede e criptografia.
+* **Padrões seguros recomendados:** As [diretrizes de segurança](../config/security.md) definem a linha de base segura recomendada para contas administrativas e privilegiadas. Eles recomendam que você crie grupos de segurança suficientes, atribua direitos de acesso apropriados por operador e limite o uso do operador administrador e do grupo de administradores. Quando aplicável, consulte também o [Complemento de segurança aprimorado](../config/enhanced-security.md) para proteção de rede e criptografia.
 * **Comparação:** os administradores comparam a configuração atual com essas recomendações documentadas para identificar lacunas e alinhar com padrões seguros.
 
 **Tópicos relacionados:**

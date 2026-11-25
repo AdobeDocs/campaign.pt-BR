@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 63%
+source-wordcount: '985'
+ht-degree: 54%
 ---
 # Criar entregas de correspondência direta
 
@@ -52,14 +52,14 @@ Para criar uma nova entrega de correspondência direta, siga as etapas abaixo:
 
 >[!NOTE]
 >
->Os conceitos globais sobre a criação de entrega são apresentados [nesta seção](../start/create-message.md).
+>Os conceitos globais sobre a criação de delivery são apresentados em [Criar a primeira delivery](../start/create-message.md).
 
 1. Crie uma nova entrega, por exemplo, no painel Entrega.
 1. Selecione o modelo da entrega **Entrega por correspondência direta (papel)**.
 
-   ![](assets/direct_mail.png)
+   ![Caixa de diálogo de nova entrega com o modelo Entrega por correspondência direta (papel) selecionado na lista](assets/direct_mail.png)
 
-1. Identifique a entrega com um rótulo, código e descrição. Para obter mais informações, consulte [esta seção](../start/create-message.md#create-the-delivery).
+1. Identifique a entrega com um rótulo, código e descrição. Para obter mais informações, consulte [Criar o delivery](../start/create-message.md#create-the-delivery).
 1. Clique em **Continuar** para confirmar essas informações e exibir a janela de configuração de mensagem.
 
 ## Definir o público-alvo{#defining-the-direct-mail-audience}
@@ -70,7 +70,7 @@ Os endereços postais são campos calculados. Um endereço pode conter até seis
 
 Um endereço será considerado completo se o nome, o CEP/código postal e a cidade não estiverem em branco. Quaisquer destinatários com endereços incompletos serão excluídos das entregas de correspondência direta.
 
-Saiba mais [nesta seção](../start/create-message.md#target-population).
+Saiba mais em [Definir o público-alvo](../start/create-message.md#target-population).
 
 ## Definir o conteúdo do arquivo{#defining-the-direct-mail-content}
 
@@ -80,17 +80,17 @@ O nome do arquivo que contém os dados extraídos é definido no campo **[!UICON
 
 Por padrão, o arquivo de extração é criado e armazenado no servidor. Você pode salvá-lo em seu computador. Para fazer isso, marque a opção **[!UICONTROL Download the generated file after the analysis of the delivery]**. Nesse caso, é necessário indicar o caminho de acesso para o diretório de armazenamento local, bem como o nome do arquivo.
 
-![](assets/s_ncs_user_mail_delivery_local_file.png)
+![Guia Extração com a opção Baixar o arquivo gerado marcada e um caminho de arquivo local inserido](assets/s_ncs_user_mail_delivery_local_file.png)
 
 Para uma entrega de correspondência direta, o conteúdo da extração é definido no link **[!UICONTROL Edit the extraction file format...]**.
 
-![](assets/s_ncs_user_mail_delivery_format_link.png)
+![Guia Extração com o link Editar o formato de arquivo de extração realçado](assets/s_ncs_user_mail_delivery_format_link.png)
 
 Este link permite que você acesse o assistente de extração e defina as informações (colunas) a serem exportadas para o arquivo de saída.
 
-![](assets/s_ncs_user_mail_delivery_format_wz.png)
+![Dados para extrair o assistente com campos arrastados de Campos disponíveis para Colunas de saída](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Você pode inserir um URL personalizado no arquivo de extração. Para obter mais informações, consulte [esta seção](../dev/web/publishing-a-web-form.md).
+Você pode inserir um URL personalizado no arquivo de extração. Para obter mais informações, consulte [Publicar um formulário web](../dev/web/publishing-a-web-form.md).
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Verifique o resultado da análise e o conteúdo do arquivo de output.
 
 No contexto de uma campanha de marketing, na data de extração, o arquivo de extração é criado. Você pode visualizar o conteúdo do arquivo extraído, aprová-lo ou alterar o formato e reiniciar a extração, se necessário. Depois que o arquivo for aprovado, você poderá enviar o e-mail de notificação para o roteador. Saiba mais [nesta página](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"}.
 
-Os conceitos globais ao validar uma entrega são apresentados [nesta seção](../start/create-message.md#validate-the-delivery).
+Os conceitos globais ao validar uma entrega são apresentados em [Preparar e validar a entrega](../start/create-message.md#validate-the-delivery).
 
 O arquivo de output de uma entrega de correspondência direta é gerado durante a análise de entrega. O conteúdo do arquivo depende das colunas de saída selecionadas (consulte este [arquivo de seção](#defining-the-direct-mail-content)).
 
@@ -116,7 +116,7 @@ Verifique o resultado da análise e o conteúdo do arquivo de output antes de cl
 
 A confirmação do envio inicia a extração dos dados no arquivo especificado.
 
-![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
+![Iniciar caixa de diálogo de confirmação de entrega com OK e Cancelar para uma entrega de Correspondência Direta com status Pendente](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
 Então, é possível fechar o assistente e examinar os logs de entrega por meio da guia **[!UICONTROL Delivery]**, acessível pelos detalhes da entrega.
 

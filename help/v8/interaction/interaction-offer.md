@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 58%
+source-wordcount: '1119'
+ht-degree: 45%
 ---
 # Criar uma oferta
 
@@ -60,7 +60,7 @@ Agora você pode usar a guia **[!UICONTROL Eligibility]** para definir:
 
 Na guia **[!UICONTROL Eligibility]** da oferta, defina o período de qualificação da oferta. Use as listas suspensas para selecionar uma data de início e término no calendário.
 
-![](assets/offer_eligibility_create_002.png)
+![Guia de qualificação com o calendário suspenso de datas de início e término do período de qualificação de oferta.](assets/offer_eligibility_create_002.png)
 
 Fora desse período, a oferta não será selecionada. Se também tiver configurado datas de elegibilidade para a categoria de oferta, o período mais restritivo será aplicado.
 
@@ -70,11 +70,11 @@ Na guia **[!UICONTROL Eligibility]** da oferta, aplique filtros ao destino da of
 
 Para fazer isso, clique no link **[!UICONTROL Edit query]** e selecione o filtro que deseja aplicar.
 
-![](assets/offer_eligibility_create_003.png)
+![Selecione o assistente de condições de filtragem de direcionamento, aberto a partir do link Editar consulta na guia Qualificação.](assets/offer_eligibility_create_003.png)
 
 Se os filtros predefinidos já tiverem sido criados, é possível selecioná-los na lista de filtros de usuário. [Saiba mais](interaction-predefined-filters.md)
 
-![](assets/offer_eligibility_create_004.png)
+![Lista de filtros de usuário no assistente de direcionamento, com o filtro selecionado aplicado e uma visualização dos destinatários correspondentes.](assets/offer_eligibility_create_004.png)
 
 ### Definir o peso da oferta {#offer-weight}
 
@@ -92,11 +92,11 @@ Para criar um peso em uma oferta, aplique as seguintes etapas:
 
 1. Na guia **[!UICONTROL Eligibility]**, clique em **[!UICONTROL Add]**.
 
-   ![](assets/offer_weight_create_001.png)
+   ![Guia Qualificação com o botão Adicionar, abrindo a caixa de diálogo Peso para criar um peso de oferta.](assets/offer_weight_create_001.png)
 
 1. Altere o rótulo e atribua um peso. O valor padrão é 1.
 
-   ![](assets/offer_weight_create_006.png)
+   ![Caixa de diálogo de Peso com o campo Rótulo e o valor de Peso na seção Arbitragem.](assets/offer_weight_create_006.png)
 
    >[!CAUTION]
    >
@@ -104,19 +104,19 @@ Para criar um peso em uma oferta, aplique as seguintes etapas:
 
 1. Se desejar que o peso seja aplicado por um determinado período, defina datas de elegibilidade.
 
-   ![](assets/offer_weight_create_002.png)
+   ![Caixa de diálogo de peso com data de Início e data de Término definidas na seção Datas de qualificação.](assets/offer_weight_create_002.png)
 
 1. Se necessário, restrinja o peso a um espaço de oferta específico.
 
-   ![](assets/offer_weight_create_003.png)
+   ![Caixa de diálogo de peso com o menu suspenso Espaço de ofertas listando os espaços aos quais o peso pode ser restrito.](assets/offer_weight_create_003.png)
 
 1. Aplique um filtro a um target.
 
-   ![](assets/offer_weight_create_004.png)
+   ![Caixa de diálogo de peso com o link Editar consulta em Filtros no destino realçada.](assets/offer_weight_create_004.png)
 
 1. Clique em **[!UICONTROL OK]** para salvar o peso.
 
-   ![](assets/offer_weight_create_005.png)
+   ![Tabela de peso da guia de qualificação listando o novo peso Premium com suas datas e filtro.](assets/offer_weight_create_005.png)
 
    >[!NOTE]
    >
@@ -128,13 +128,13 @@ Quando a configuração for concluída, um resumo das regras de elegibilidade es
 
 Para fazer isso, clique no link **[!UICONTROL Schedule and eligibility rules]**.
 
-![](assets/offer_eligibility_create_005.png)
+![Painel de ofertas com o link de regras de agendamento e qualificação realçado.](assets/offer_eligibility_create_005.png)
 
 ## Criar o conteúdo da oferta {#creating-the-offer-content}
 
 Use a guia **[!UICONTROL Content]** para definir o conteúdo da oferta.
 
-![](assets/offer_content_create_001.png)
+![Guia Conteúdo da oferta com os campos Título, URL de Destino, URL da Imagem e o editor de conteúdo do HTML.](assets/offer_content_create_001.png)
 
 1. Defina os vários parâmetros do conteúdo da oferta.
 
@@ -143,7 +143,7 @@ Use a guia **[!UICONTROL Content]** para definir o conteúdo da oferta.
    * **[!UICONTROL Image URL]**: especifique uma URL ou um caminho de acesso para a imagem da sua oferta.
    * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**: digite o corpo da oferta na guia desejada. Para gerar o rastreamento, o **[!UICONTROL HTML content]** deve ser composto de elementos HTML que podem ser colocados em um elemento de tipo `<div>`. Por exemplo, o resultado de um elemento `<table>` na página do HTML será o seguinte:
 
-   ```
+   ```xml
       <div> 
        <table>
         <tr>
@@ -158,13 +158,13 @@ Use a guia **[!UICONTROL Content]** para definir o conteúdo da oferta.
       </div>
    ```
 
-   Saiba como definir a URL de aceitação em [esta seção](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
+   Saiba como definir a URL de aceitação no [Status da oferta quando a proposta for aceita](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
 
-   ![](assets/offer_content_create_002.png)
+   ![A guia Conteúdo foi preenchida com um título, uma URL de destino e uma URL de imagem, além do link Definições de conteúdo.](assets/offer_content_create_002.png)
 
    Para localizar os campos obrigatórios conforme foram definidos durante a configuração do espaço de oferta, clique no link **[!UICONTROL Content definitions]** para exibir a lista. [Saiba mais](interaction-offer-spaces.md)
 
-   ![](assets/offer_content_create_003.png)
+   ![Listagem da caixa de diálogo de definições de conteúdo, para cada espaço de oferta, os campos de conteúdo necessários.](assets/offer_content_create_003.png)
 
    Neste exemplo, a oferta deve incluir um título, uma imagem, conteúdo HTML e uma URL de destino.
 
@@ -176,11 +176,11 @@ Para isso:
 
 1. Clique na guia **[!UICONTROL Preview]**.
 
-   ![](assets/offer_preview_create_001.png)
+   ![Guia Preview da oferta, listando as representações a serem visualizadas para cada espaço de oferta.](assets/offer_preview_create_001.png)
 
 1. Selecione a representação da oferta que deseja visualizar.
 
-   ![](assets/offer_preview_create_002.png)
+   ![A guia Visualizar com a representação Email /clients foi expandida para mostrar o conteúdo da oferta renderizada.](assets/offer_preview_create_002.png)
 
 1. Se tiver personalizado o conteúdo da oferta, selecione o target da oferta para visualizar a personalização.
 
@@ -202,13 +202,13 @@ Creating hypotheses is detailed in [this page](../../automation/response/about-r
 
 Agora você pode aprovar e ativar a oferta para disponibilizá-la no ambiente **Live**.
 
-Para obter mais informações, consulte [esta seção](approving-and-activating-an-offer.md#approving-offer-content).
+Para obter mais informações, consulte [Aprovação do conteúdo da oferta](approving-and-activating-an-offer.md#approving-offer-content).
 
 ## Gerenciar apresentação de ofertas{#offer-presentation}
 
 O Campaign permite controlar o fluxo de apresentações de oferta usando regras de apresentação. Essas regras, que são específicas à Interação do Campaign, são **regras de tipologia**. Elas permitem excluir ofertas com base no histórico de apresentações já feitas a um destinatário. Eles são referenciados no ambiente.
 
-Para obter mais informações, consulte [esta seção](managing-offer-presentation.md).
+Para obter mais informações, consulte [Gestão de apresentação de ofertas](managing-offer-presentation.md).
 
 ## Simulação de oferta
 
@@ -216,4 +216,4 @@ O módulo **Simulation** permite testar a distribuição de ofertas pertencentes
 
 A simulação leva em consideração os contextos e as regras de qualificação aplicadas anteriormente às ofertas e suas regras de apresentação. Isso permite testar e refinar várias versões da apresentação de oferta sem realmente usar uma oferta ou sobrecarregar ou não um destino, já que a simulação não tem impacto nos destinatários de destino.
 
-Para obter mais informações sobre a Simulação de oferta, consulte [esta seção](about-offers-simulation.md).
+Para obter mais informações sobre a Simulação de oferta, consulte [Sobre a simulação de ofertas](about-offers-simulation.md).

@@ -22,10 +22,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 69%
+source-wordcount: '448'
+ht-degree: 62%
 ---
 # Interações anônimas {#anonymous-interactions}
 
@@ -39,7 +39,7 @@ O **[!UICONTROL Targeting dimension]** é automaticamente concluído. Por padrã
 
 O campo **[!UICONTROL Visitor folder]** é exibido. Ele é automaticamente preenchido para vincular à pasta **[!UICONTROL Visitors]**. Este campo permite escolher onde armazenar os perfis de visitantes.
 
-![](assets/anonymous_environment_option.png)
+![Ambiente de oferta com Ambiente dedicado a interações anônimas recebidas selecionado e campos de pasta do Visitante](assets/anonymous_environment_option.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Durante essa etapa, uma comparação é feita entre os dados recuperados pelos c
 
 Para executar essa análise, para o espaço de ofertas, marque a opção **[!UICONTROL Implicitly identify the individual based on their browser history]**.
 
-![](assets/identification_anonymous_visitors.png)
+![Espaço de ofertas com a opção Identificar implicitamente o indivíduo com base no histórico do navegador selecionada](assets/identification_anonymous_visitors.png)
 
 ## Processamento de visitantes anônimos não identificados {#processing-unidentified-anonymous-visitors}
 
@@ -69,4 +69,4 @@ Se não houver elemento que permitam identificar um contato ou se não quiser su
 
 Para fazer isso, marque a opção **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** e, em seguida, especifique o ambiente dedicado para esses visitantes não identificados em **[!UICONTROL Linked anonymous space]** quando especificar um espaço de oferta.
 
-![](assets/anonymous_to_anonymous_environment.png)
+![Espaço de oferta com a opção Fall back on an anonymous environment selecionada e um campo Espaço anônimo vinculado](assets/anonymous_to_anonymous_environment.png)

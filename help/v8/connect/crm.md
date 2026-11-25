@@ -35,10 +35,10 @@ topic_v2:
     internal-label: Email marketing
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 31%
+source-wordcount: '350'
+ht-degree: 29%
 ---
 # Conectar seu CRM ao Campaign {#gs-crm}
 
@@ -69,8 +69,8 @@ Os CRMs e as versões compatíveis estão detalhados na [Matriz de compatibilida
 
 ## Etapas de implementação {#crm-implementation-steps}
 
-Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Microsoft Dynamics nesta [página](ac-ms-dyn.md).
+Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Microsoft Dynamics no [Trabalho com o Campaign e o Microsoft Dynamics](ac-ms-dyn.md).
 
-Saiba mais sobre o procedimento passo a passo para conectar Campaign e Salesforce.com nesta [página](ac-sfdc.md).
+Saiba mais sobre o procedimento passo a passo para conectar Campaign e Salesforce.com no [Trabalho com o Campaign e o SFDC](ac-sfdc.md).
 
-A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de fluxo de trabalho. Crie seus workflows para automatizar a sincronização entre o Campaign e o CRM. Você pode criar um workflow que importa contatos por meio do Microsoft Dynamics, sincroniza com os dados existentes do Adobe Campaign, exclui os contatos duplicados e atualiza o banco de dados do Adobe Campaign. Saiba mais [nesta página](crm-data-sync.md).
+A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de fluxo de trabalho. Crie seus workflows para automatizar a sincronização entre o Campaign e o CRM. Você pode criar um workflow que importa contatos por meio do Microsoft Dynamics, sincroniza com os dados existentes do Adobe Campaign, exclui os contatos duplicados e atualiza o banco de dados do Adobe Campaign. Saiba mais em [sincronização de dados de Conectores CRM](crm-data-sync.md).

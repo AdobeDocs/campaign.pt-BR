@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 88%
+source-wordcount: '2528'
+ht-degree: 73%
 ---
 # Definir o conteúdo do email {#defining-the-email-content}
 
@@ -39,11 +39,11 @@ ht-degree: 88%
 
 Para definir o nome e o endereço do remetente que aparecerá no cabeçalho das mensagens enviadas, clique no link **[!UICONTROL From]**.
 
-![](assets/s_ncs_user_wizard_email02.png)
+![Caixa de diálogo de parâmetros do cabeçalho de email aberta no link De, com o menu de personalização no campo De](assets/s_ncs_user_wizard_email02.png)
 
 Todas as informações necessárias para criação dos cabeçalhos de mensagens de email devem ser inseridas nessa janela. Essas informações podem ser personalizadas. Para fazer isso, use os botões à direita dos campos de entrada para inserir campos de personalização.
 
-Para saber como inserir e usar campos de personalização, consulte [esta seção](personalize.md).
+Para saber como inserir e usar campos de personalização, consulte [Introdução à personalização](personalize.md).
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ O assunto da mensagem é configurado no campo correspondente. Você pode inseri-
 >
 >O assunto da mensagem é obrigatório.
 
-![](assets/s_ncs_user_wizard_email_object.png)
+![Editar caixa de diálogo de assunto da mensagem com o menu de personalização aberto no Destinatário para inserir o Nome](assets/s_ncs_user_wizard_email_object.png)
 
 O conteúdo do campo será substituído pelo valor no perfil do destinatário quando a mensagem for enviada.
 
@@ -72,7 +72,7 @@ Por exemplo, na mensagem acima, o assunto da mensagem é personalizado para cada
 
 >[!NOTE]
 >
->O uso de campos de personalização é apresentado em [esta seção](personalize.md).
+>O uso de campos de personalização é apresentado em [Introdução à personalização](personalize.md).
 
 Também é possível inserir emoticons na linha do assunto com a janela pop-up **[!UICONTROL Insert emoticon]**.
 
@@ -96,7 +96,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
 * Para importar conteúdo do HTML, use o botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
 
-  Se você estiver usando o Editor de Conteúdo Digital (DCE), consulte [esta seção](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
+  Se estiver usando o Editor de Conteúdo Digital (DCE), consulte [Etapa 3 - Seleção de conteúdo](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -106,11 +106,11 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
   Os botões da barra de ferramentas fornecem acesso aos parâmetros padrão de ações e formatação da página HTML.
 
-  ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![Guia Conteúdo do HTML com a barra de ferramentas de formatação e o botão Inserir link de hipertexto realçado](assets/s_ncs_user_wizard_email01_138.png)
 
   Você pode inserir imagens em mensagens de um arquivo local ou de uma biblioteca de imagens no Adobe Campaign. Para fazer isso, clique no ícone **[!UICONTROL Image]** e selecione a opção apropriada.
 
-  ![](assets/s_ncs_user_wizard_email01_18.png)
+  ![Menu do botão Imagem na barra de ferramentas do HTML com as opções De um arquivo local e Da biblioteca](assets/s_ncs_user_wizard_email01_18.png)
 
   As imagens da biblioteca podem ser acessadas através da pasta **[!UICONTROL Resources>Online>Public resources]** na árvore de pastas. Consulte também [Adicionar imagens](#adding-images).
 
@@ -118,40 +118,40 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
   >[!NOTE]
   >
-  >O uso de campos de personalização é apresentado em [esta seção](personalize.md).
+  >O uso de campos de personalização é apresentado em [Introdução à personalização](personalize.md).
 
   As guias na parte inferior da página permitem exibir o código HTML da página que está sendo criada e exibir a renderização da mensagem com sua personalização. Para iniciar essa exibição, clique em **[!UICONTROL Preview]** e selecione um destinatário usando o botão **[!UICONTROL Test personalization]** na barra de ferramentas. Você pode selecionar um destinatário no(s) target(s) definido(s) ou escolher outro.
 
-  ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![Visualizar na guia de conteúdo do HTML: menu de personalização para escolher um destinatário, seed address ou população alvo](assets/s_ncs_user_wizard_email01_139.png)
 
   Você pode validar a mensagem HTML. Também é possível visualizar o conteúdo do cabeçalho do email.
 
-  ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![Visualização do HTML para um destinatário selecionado, com assunto e conteúdo personalizados e o cabeçalho From, Subject e Size](assets/s_ncs_user_wizard_email01_140.png)
 
 * Para importar um conteúdo de texto, clique no botão **[!UICONTROL Open]** ou na guia **[!UICONTROL Text Content]** para inserir o conteúdo da mensagem quando exibido no formato de texto. Use os botões da barra de ferramentas para acessar ações no conteúdo. O último botão permite inserir campos de personalização.
 
-  ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![Guia Conteúdo de texto com a fonte de mensagem de texto sem formatação e os campos de personalização](assets/s_ncs_user_wizard_email01_141.png)
 
   Quanto ao formato HTML, clique na guia **[!UICONTROL Preview]** na parte inferior da página para exibir a renderização da mensagem com sua personalização.
 
-  ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![Visualização de conteúdo de texto para um destinatário selecionado, com texto personalizado e mirror page e blocos de unsubscription](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Definir o conteúdo interativo {#amp-for-email-format}
 
 O Adobe Campaign permite experimentar o novo formato interativo [AMP for Email](https://amp.dev/pt_br/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
 
-Para obter mais informações, consulte [esta seção](defining-interactive-content.md).
+Para obter mais informações, consulte [Definir conteúdo interativo no Adobe Campaign](defining-interactive-content.md).
 
 ## Usar gerenciamento de conteúdo {#using-content-management}
 
 O conteúdo da entrega pode ser definido nos formulários de gerenciamento de conteúdo, diretamente no assistente de entrega. Para fazer isso, você deve consultar o modelo de publicação do gerenciamento de conteúdo que será usado na guia **[!UICONTROL Advanced]** das propriedades de entrega.
 
-![](assets/s_ncs_content_in_delivery.png)
+![Guia Propriedades de entrega Avançadas com um modelo de publicação selecionado no campo Modelo](assets/s_ncs_content_in_delivery.png)
 
 Uma guia adicional permite inserir conteúdo que será integrado e formatado automaticamente de acordo com as regras de gerenciamento de conteúdo.
 
-![](assets/s_ncs_content_in_delivery_edition_tab.png)
+![Entrega com um modelo de conteúdo, mostrando a guia Editar com os campos de conteúdo a serem preenchidos](assets/s_ncs_content_in_delivery_edition_tab.png)
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Uma guia adicional permite inserir conteúdo que será integrado e formatado aut
 1. Clique no ícone **[!UICONTROL Insert emoticon]**.
 1. Selecione um emoticon na janela pop-up.
 
-   ![](assets/emoticon_4.png)
+   ![Inserir emoticon na janela pop-up listando os emoticons disponíveis, com um selecionado para o conteúdo do HTML](assets/emoticon_4.png)
 
 1. Clique no botão **[!UICONTROL Close]** quando terminar.
 
@@ -196,7 +196,7 @@ As imagens podem ser:
 
 O assistente de entrega permite adicionar imagens locais ou armazenadas na biblioteca ao conteúdo das mensagens. Para fazer isso, clique no botão **[!UICONTROL Image]** na barra de ferramentas do conteúdo HTML.
 
-![](assets/s_ncs_user_image_from_library.png)
+![Menu do botão Imagem na barra de ferramentas do HTML com a opção Da biblioteca selecionada](assets/s_ncs_user_image_from_library.png)
 
 >[!IMPORTANT]
 >
@@ -205,18 +205,18 @@ O assistente de entrega permite adicionar imagens locais ou armazenadas na bibli
 Para gerenciar imagens por meio do assistente de entrega:
 
 1. Clique no ícone **[!UICONTROL Tracking & Images]** na barra de ferramentas.
-   ![](assets/s_ncs_user_email_del_img_param.png)
+   ![Botão de rastreamento e imagens realçado na barra de ferramentas de entrega](assets/s_ncs_user_email_del_img_param.png)
 
 1. Selecione **[!UICONTROL Upload images]** na guia **[!UICONTROL Images]**.
 1. Você pode escolher se deseja incluir as imagens na mensagem de email.
-   ![](assets/s_ncs_user_email_del_img_upload.png)
+   ![Guia Imagens com Carregar imagens selecionadas e a lista de imagens detectadas com status Ainda não online](assets/s_ncs_user_email_del_img_upload.png)
 
 * Você pode carregar imagens manualmente sem esperar a fase de análise de entrega. Para fazer isso, clique em **[!UICONTROL Upload the images straightaway...]**.
 * Você pode especificar outro caminho para acessar as imagens no servidor de rastreamento. Para fazer isso, insira-o no campo **[!UICONTROL Images URL]**. Este valor substitui o valor definido nos parâmetros do assistente de instalação.
 
 Quando você abre um conteúdo HTML com imagens inclusas no assistente de entrega, aparece uma mensagem com a opção de fazer upload das imagens imediatamente, de acordo com os parâmetros da entrega.
 
-![](assets/s_ncs_user_email_del_img_local.png)
+![Perguntar se deseja publicar as imagens relativas do arquivo do HTML aberto agora, com os botões Sim e Não](assets/s_ncs_user_email_del_img_local.png)
 
 >[!IMPORTANT]
 >
@@ -227,11 +227,11 @@ Quando você abre um conteúdo HTML com imagens inclusas no assistente de entreg
 
 Veja a seguir um exemplo de entrega com quatro imagens:
 
-![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
+![Conteúdo HTML de uma entrega com setas apontando para suas quatro imagens](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
 Essas imagens vêm de um diretório ou site local, como pode ser verificado na guia **[!UICONTROL Source]**.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
+![Guia Source da entrega mostrando os caminhos de imagem, de um diretório ou site local, marcado por setas](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 
 Clique no ícone **[!UICONTROL Tracking & Images]** e, em seguida, na guia **[!UICONTROL Images]** para iniciar a detecção de imagens na mensagem.
 
@@ -249,7 +249,7 @@ Durante a fase de análise, as imagens são carregadas automaticamente no servid
 
 Você pode trabalhar com antecedência e carregar imagens para que elas possam ser visualizadas por outros operadores do Adobe Campaign. Isso pode ser útil se você trabalhar de forma colaborativa. Para fazer isso, clique em **[!UICONTROL Upload the images straightaway...]** para fazer upload das imagens no servidor.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
+![Guia Imagens listando caminhos de imagem locais com status Ainda não online e o link Carregar as imagens imediatamente](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
 >[!NOTE]
 >
@@ -257,11 +257,11 @@ Você pode trabalhar com antecedência e carregar imagens para que elas possam s
 
 Quando as imagens estiverem online, você poderá exibir as alterações nos nomes e nos caminhos na guia **[!UICONTROL Source]** da mensagem.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_4.png)
+![Guia Source após o carregamento, com as URLs de imagem substituídas por novos caminhos marcados por setas](assets/s_ncs_user_images_in_delivery_wiz_4.png)
 
 Se você selecionar **[!UICONTROL Include the images in the email]**, será possível escolher imagens para incluir na coluna correspondente.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_5.png)
+![Guia Imagens com Incluir as imagens no email selecionado e a opção Incorporar no email para uma imagem](assets/s_ncs_user_images_in_delivery_wiz_5.png)
 
 >[!NOTE]
 >
@@ -275,7 +275,7 @@ O módulo de geração de código de barras permite criar vários tipos de códi
 
 Para inserir um código de barras em um email, coloque o cursor no conteúdo onde deseja exibi-lo e clique no botão de personalização. Selecione **[!UICONTROL Include > Barcode...]**.
 
-![](assets/barcode_insert_14.png)
+![Menu Personalization no editor do HTML com a opção Incluir e o Código de Barras selecionado](assets/barcode_insert_14.png)
 
 Em seguida, configure os seguintes elementos para atender às suas necessidades:
 
@@ -285,28 +285,28 @@ Em seguida, configure os seguintes elementos para atender às suas necessidades:
 
      Exemplo de um código de barras 1D:
 
-     ![](assets/barcode_insert_08.png)
+     ![Exemplo de um código de barras 1D com seu número abaixo](assets/barcode_insert_08.png)
 
    * Os tipos DataMatrix e PDF417 correspondem ao formato 2D.
 
      Exemplo de um código de barras 2D:
 
-     ![](assets/barcode_insert_09.png)
+     ![Exemplo de um código de barras DataMatrix 2D](assets/barcode_insert_09.png)
 
    * Para inserir um código QR, selecione esse tipo e digite a taxa de correção de erro a ser aplicada. Essa taxa define a quantidade de informações repetidas e a tolerância à deterioração.
 
-     ![](assets/barcode_insert_06.png)
+     ![Configurações de código de barras com tipo de código QR, um valor com um campo de personalização e 30% de correção de erros](assets/barcode_insert_06.png)
 
      Exemplo de código QR:
 
-     ![](assets/barcode_insert_12.png)
+     ![Exemplo de código QR](assets/barcode_insert_12.png)
 
 1. Insira o tamanho do código de barras que deseja inserir no email: a configuração da escala permite aumentar ou reduzir o tamanho do código de barras, de x1 a x10.
 1. O campo **[!UICONTROL Value]** permite definir o valor do código de barras. Um valor pode corresponder a uma oferta especial e pode ser a função de um critério, ele pode ser o valor de um campo de banco de dados vinculado aos clientes.
 
    Este exemplo mostra um código de barras do tipo EAN-8, ao qual foi adicionado o número da conta de um destinatário. Para adicionar esse número de conta, clique no botão de personalização à direita do campo **[!UICONTROL Value]** e selecione **[!UICONTROL Recipient > Account number]**.
 
-   ![](assets/barcode_insert_15.png)
+   ![Menu de personalização de campo Valor do Código de Barras com Destinatário e Número da Conta selecionados](assets/barcode_insert_15.png)
 
 1. O campo **[!UICONTROL Height]** permite configurar a altura do código de barras sem alterar sua largura, alterando a quantidade do espaço entre cada barra.
 
@@ -322,10 +322,10 @@ Em seguida, configure os seguintes elementos para atender às suas necessidades:
 
 Após configurar estes elementos, você pode finalizar seu email e enviá-lo. Para evitar erros, sempre verifique se o conteúdo é exibido corretamente antes de executar uma entrega clicando na guia **[!UICONTROL Preview]**.
 
-![](assets/barcode_insert_10.png)
+![Visualização de entrega com um código QR inserido ao final do conteúdo da mensagem personalizada](assets/barcode_insert_10.png)
 
 >[!NOTE]
 >
 >Se o valor de um código de barras estiver incorreto, seu bitmap é exibido riscado em vermelho.
 
-![](assets/barcode_insert_11.png)
+![Visualização de um email no qual um valor de código de barras inválido mostra o código de barras riscado em vermelho](assets/barcode_insert_11.png)

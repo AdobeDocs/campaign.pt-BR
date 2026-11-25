@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 86%
+source-wordcount: '740'
+ht-degree: 82%
 ---
 # Recusa de rastreamento de aplicativo web{#web-application-tracking-opt-out}
 
@@ -66,11 +66,11 @@ Se o rastreamento web estiver ativado, você pode ter:
 * Nenhum banner.
 * Configure o banner manualmente em cada página: marque essa opção e selecione o banner em cada página nas propriedades da página.
 
-  ![](assets/pageproperties.png)
+  ![Cabeçalho da caixa de diálogo de propriedades da página com a opção Habilitar transições de saída marcada.](assets/pageproperties.png)
 
 * Adicione automaticamente o banner a todas as páginas: selecione o banner diretamente nas propriedades da aplicação web.
 
-  ![](assets/optoutconfig.png)
+  ![Guia Propriedades Gerais do aplicativo Web com as opções de banner para opção de não participação: nenhum banner, manual por página ou automático.](assets/optoutconfig.png)
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Se o rastreamento web estiver ativado, você pode ter:
 
 O banner padrão tem a seguinte estrutura:
 
-```
+```xml
 <div onClick="NL.ClientWebTracking.closeOptOutBanner(this);" id="defaultOptOutBanner">
   <p>Please insert your message here
    <a onClick="NL.ClientWebTracking.allow();" class="optout-accept">Accept</a>
@@ -90,7 +90,7 @@ O banner padrão tem a seguinte estrutura:
 
 Você deve substituir a mensagem **Inserir sua mensagem aqui** com o bloco contendo suas informações de rastreamento. Essa substituição deve ser executada em seu novo bloco de personalização relacionado ao banner Opt out.
 
-O banner é fornecido com um CSS específico. No entanto, você pode substituir os estilos ao criar e configurar uma página da Web. Consulte [esta página](content-editor-interface.md).
+O banner é fornecido com um CSS específico. No entanto, você pode substituir os estilos ao criar e configurar uma página da Web. Consulte [Interface do editor de conteúdo](content-editor-interface.md).
 
 ## Definição do cookie de recusa usando a API {#setting-the-opt-out-cookie-using-api}
 
@@ -137,7 +137,7 @@ Se você precisar gravar uma JSSP, as APIs do lado do servidor estarão disponí
 
 Exemplo de JSSP:
 
-```
+```html
 <%@ page import="/nl/core/shared/nl.js" %>
 <!doctype html>
 <%

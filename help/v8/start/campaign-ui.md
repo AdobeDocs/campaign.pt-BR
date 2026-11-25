@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 62%
+source-wordcount: '1240'
+ht-degree: 59%
 ---
 # Conheça a interface {#ui-client-console}
 
@@ -42,7 +42,7 @@ Você pode acessar o Adobe Campaign por meio do console do cliente ou da interfa
 
 * **Console do cliente**: o Console do cliente do Campaign é um aplicativo nativo que se comunica com o servidor de aplicativos do Adobe Campaign por meio de protocolos padrão de Internet, como SOAP e HTTP. O Console do cliente do Campaign centraliza todos os recursos e configurações e requer largura de banda mínima, pois depende de um cache local. Projetado para fácil implantação, o Console do cliente do Campaign pode ser implantado a partir de um navegador da Internet, atualizado automaticamente e não requer nenhuma configuração de rede específica, pois gera apenas tráfego HTTP(S). [Saiba mais](#ui-access)
 
-  Aprenda como instalar e configurar o Console do cliente do Campaign [nesta seção](../start/connect.md).
+  Saiba como instalar e configurar o console do cliente do Campaign em [Conectar-se ao Campaign v8](../start/connect.md).
 
 * **Acesso à Web** - Os recursos de acesso à Web do Adobe Campaign permitem acessar um subconjunto de recursos do Campaign com um navegador da Web, usando uma interface de usuário do HTML. Use essa interface da web para acessar relatórios, controlar e validar mensagens, acessar painéis de monitoramento e muito mais.  Saiba mais sobre o acesso ao Campaign Web [nesta seção](../start/connect.md#web-access).
 
@@ -95,7 +95,7 @@ Você também pode usar um navegador da web para acessar o Campaign. Nesse conte
 
 Depois de se conectar ao console do cliente do Campaign, navegue pelas guias na seção superior para acessar os recursos da chave do Campaign:
 
-![](assets/overview-home.png)
+![Página inicial do Campaign com as guias Campanhas, Perfis e Alvos, Monitoramento e Relatórios destacadas](assets/overview-home.png)
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Navegue pelo Explorer do Campaign para acessar todos os recursos e configuraçõ
 
 Este espaço de trabalho permite acessar a árvore do Explorer para navegar por todos os recursos e opções.
 
-* A seção esquerda mostra a árvore do Explorer do Campaign e permite navegar por todos os componentes e configurações da sua instância, com base nas suas permissões. Você pode adicionar e personalizar pastas conforme explicado [nesta página](../audiences/folders-and-views.md).
+* A seção esquerda mostra a árvore do Explorer do Campaign e permite navegar por todos os componentes e configurações da sua instância, com base nas suas permissões. Você pode adicionar e personalizar pastas conforme explicado em [Pastas e exibições](../audiences/folders-and-views.md).
 
 * A seção superior mostra a lista de registros na pasta atual. Essas listas são totalmente personalizáveis. [Saiba mais](../config/ui-settings.md)
 

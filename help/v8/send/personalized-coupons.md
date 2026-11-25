@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 97%
+source-wordcount: '1159'
+ht-degree: 72%
 ---
 # Cupons personalizados{#personalized-coupons}
 
@@ -55,12 +55,12 @@ Antes de seguir as etapas abaixo, verifique se você sabe o tipo de cupom que de
 
 1. Na árvore do Campaign, acesse **[!UICONTROL Resources > Campaign management > Coupons]**.
 
-   ![](assets/deliv_coup_01.png)
+   ![Árvore de campanhas com Recursos, Gerenciamento de campanhas expandido e o nó Cupons selecionado](assets/deliv_coup_01.png)
 
 1. Clique no botão **[!UICONTROL New]**.
 1. Insira o nome do cupom no campo **[!UICONTROL Label]**. Um código exclusivo foi inserido automaticamente no **[!UICONTROL Coupon code]**. Você pode manter o código ou inserir um novo.
 
-   ![](assets/deliv_coup_02.png)
+   ![Lista de cupons e guia Geral de um cupom com Rótulo, Código do cupom, Tipo de cupom, Data inicial e Campos de data final](assets/deliv_coup_02.png)
 
 1. Escolha **[!UICONTROL Start date]** e **[!UICONTROL End date]** para definir o período de validade do cupom.
 1. Em **[!UICONTROL Coupon type]**, escolha Anônimo ou Individual.
@@ -77,11 +77,11 @@ Antes de seguir as etapas abaixo, verifique se você sabe o tipo de cupom que de
 
    >[!NOTE]
    >
-   >Os cupons individuais podem ser importados em massa. Para obter detalhes sobre a importação e exportação, consulte [esta seção](../start/import.md).
+   >Os cupons individuais podem ser importados em massa. Para obter detalhes sobre a importação e exportação, consulte [Introdução aos perfis](../start/import.md).
 
 ### Configurar cupons individuais {#configuring-individual-coupons}
 
-![](assets/deliv_coup_03.png)
+![Guia Cupons de um cupom que lista códigos de cupom individuais, cada um com um status Disponível](assets/deliv_coup_03.png)
 
 A guia Cupons está disponível apenas com cupons individuais. Depois que um cupom é associado a uma entrega, a guia Cupons fornece os seguintes detalhes:
 
@@ -94,64 +94,64 @@ Os valores de **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL 
 
 ## Inserir um cupom em uma entrega por email {#inserting-a-coupon-into-an-email-delivery}
 
-No exemplo abaixo, a entrega é criada a partir da Home page. Para obter instruções detalhadas sobre como criar uma entrega, consulte [esta seção](email.md).
+No exemplo abaixo, a entrega é criada a partir da Home page. Para obter instruções detalhadas sobre como criar um delivery, consulte [Enviar emails com o Adobe Campaign](email.md).
 1. Acesse **[!UICONTROL Campaigns]** e escolha **[!UICONTROL Deliveries]**.
 1. Clique em **[!UICONTROL Create]**.
 
-   ![](assets/deliv_coup_04.png)
+   ![Lista de entregas na guia Campanhas com o botão Criar realçado](assets/deliv_coup_04.png)
 
 1. Insira um nome em **[!UICONTROL Label]** e clique em **[!UICONTROL Continue]**.
 1. Clique em **[!UICONTROL To]** para adicionar destinatários.
 1. Clique em **[!UICONTROL Add]** para escolher os destinatários da entrega Depois de selecionar seus destinatários, clique em **[!UICONTROL Ok]** para retornar para a entrega.
 
-   ![](assets/deliv_coup_05.png)
+   ![Caixa de diálogo Selecionar destino na guia Destino principal com o botão Adicionar realçado](assets/deliv_coup_05.png)
 
 1. Insira um assunto e adicione conteúdo à mensagem.
 
-   ![](assets/deliv_coup_06.png)
+   ![Editor de entrega com um assunto e conteúdo do HTML para o email de cupom](assets/deliv_coup_06.png)
 
 1. Na barra de ferramentas, clique em **[!UICONTROL Properties]** e escolha a guia **[!UICONTROL Advanced]**.
 1. Clique no ícone de pasta para **[!UICONTROL Coupon management]**.
 
-   ![](assets/deliv_coup_07.png)
+   ![Guia Propriedades de entrega Avançadas com o ícone de pasta ao lado do campo Cupom na Gestão de cupom realçado](assets/deliv_coup_07.png)
 
 1. Escolha o cupom e clique em **[!UICONTROL Ok]**. Clique novamente em **[!UICONTROL Ok]**.
 
-   ![](assets/deliv_coup_08.png)
+   ![Caixa de diálogo de seleção de cupom listando documentos de cupom com cupons de futebol selecionados](assets/deliv_coup_08.png)
 
 1. Clique na mensagem para escolher onde deseja colocar o cupom.
 
-   ![](assets/deliv_coup_09.png)
+   ![Editor de conteúdo do HTML com o cursor colocado onde o código do cupom deve ser inserido](assets/deliv_coup_09.png)
 
 1. Clique no ícone de personalização para fazer a escolha baseada no tipo de cupom:
 
    * Cupom anônimo: **[!UICONTROL Coupon > Coupon code]**
 
-     ![](assets/deliv_coup_10.png)
+     ![Menu do Personalization com Cupom e código do cupom selecionado, para um cupom anônimo](assets/deliv_coup_10.png)
 
    * Cupom individual: **[!UICONTROL Coupon value > Coupon code]**
 
-     ![](assets/deliv_coup_11.png)
+     ![Menu do Personalization com valor do cupom e código do cupom selecionado, para um cupom individual](assets/deliv_coup_11.png)
 
      O cupom é inserido na mensagem como código em vez do nome que você atribuiu. O código é usado no modelo padrão de dados do Campaign.
 
-   ![](assets/deliv_coup_12.png)
+   ![Conteúdo de email com o script de código de cupom inserido, couponValue.couponCode, realçado](assets/deliv_coup_12.png)
 
 1. Execute um teste para confirmar o nome atribuído ao cupom. Acesse a guia **[!UICONTROL Preview]** e clique em **[!UICONTROL Test personalization]**. Escolha um destinatário para o teste.
 
-   ![](assets/deliv_coup_13.png)
+   ![Guia Visualizar com o menu de personalização de teste aberto e a opção Destinatário realçada](assets/deliv_coup_13.png)
 
    Após o teste, o cupom deve aparecer como o nome atribuído em vez do código.
 
-   ![](assets/deliv_coup_14.png)
+   ![Visualização do email com o código do cupom Trynow exibido no corpo da mensagem](assets/deliv_coup_14.png)
 
 1. Na barra de ferramentas, clique em **[!UICONTROL Send]**, no canto superior esquerdo, e escolha como enviar a entrega.
 
-   ![](assets/deliv_coup_15.png)
+   ![Enviar para a caixa de diálogo principal do destino de entrega com a opção Enviar assim que possível e o botão Analisar](assets/deliv_coup_15.png)
 
 1. Clique em **[!UICONTROL Analyze]**. Se o log de análise confirmar que há cupons suficientes para todos os destinatários, clique em **[!UICONTROL Confirm delivery]** para enviar a mensagem.
 
-   ![](assets/deliv_coup_16.png)
+   ![Log de análise de entrega mostrando 2 cupons reciclados e o botão Confirmar entrega disponível](assets/deliv_coup_16.png)
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Para confirmar que a entrega foi bem-sucedida:
 1. Vá para **[!UICONTROL Explorer > Resources > Campaign management > Coupons]**.
 1. Clique na guia **[!UICONTROL Deliveries]**.
 
-   ![](assets/deliv_coup_17.png)
+   ![Guia Entregas de um cupom que lista as entregas que o usam com suas contagens de status e mensagens](assets/deliv_coup_17.png)
 
    O status é lido como **[!UICONTROL Finished]** para uma entrega bem-sucedida.
 
@@ -180,12 +180,12 @@ A análise da entrega para se o número de cupons for menor que de mensagens. Ne
 1. Clique em **[!UICONTROL To]**.
 1. Em **[!UICONTROL Select target]**, acesse a guia **[!UICONTROL Exclusions]**.
 
-   ![](assets/deliv_coup_18.png)
+   ![Caixa de diálogo Selecionar destino com a guia Exclusões realçada e o link Editar para configurações de exclusão](assets/deliv_coup_18.png)
 
 1. Na seção de configurações de exclusão, clique em **[!UICONTROL Edit]**.
 1. Insira o número de mensagens que deseja enviar em **[!UICONTROL Limit delivery to...messages]** e clique em **[!UICONTROL Ok]**. Você pode enviar a entrega.
 
-   ![](assets/deliv_coup_19.png)
+   ![Caixa de diálogo de configurações de exclusão com o campo Limitar entrega a definido como 20 mensagens realçadas](assets/deliv_coup_19.png)
 
 >[!NOTE]
 >

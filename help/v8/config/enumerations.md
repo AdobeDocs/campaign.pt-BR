@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 33%
+source-wordcount: '822'
+ht-degree: 32%
 ---
 # Trabalhar com enumerações {#enumerations}
 
@@ -42,7 +42,7 @@ Uma enumeração (também chamada de lista discriminada) é uma lista predefinid
 
 Quando definidos, os valores são exibidos em uma lista suspensa. Um valor pode ser selecionado diretamente ou inserido por meio da inserção preditiva, que sugere e conclui as inserções correspondentes. Alguns campos incluem enumerações predefinidas, e enumerações adicionais podem ser criadas, se necessário.
 
-![](assets/enum_values.png)
+![Formulário do destinatário com o menu suspenso Idioma aberto, listando os valores de enumeração inglês, francês, italiano, russo e espanhol](assets/enum_values.png)
 
 
 ## Tipos de enumerações {#types-of-enum}

@@ -29,15 +29,15 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 24%
+source-wordcount: '100'
+ht-degree: 19%
 ---
 # Coletar e atualizar perfis com formulários web
 
 Use o Campaign para criar formulários web e coletar e gerenciar dados de perfil de forma fácil e eficiente. Você pode compartilhar esses formulários no seu site, o que torna mais fácil para seus contatos fornecer suas informações. Os dados são enviados ao Campaign para criar ou atualizar seu perfil.
 
-![](assets/web-form-page.png)
+![Atividade de página de um fluxo de trabalho de aplicativo web, mostrando o formulário do informativo Luma com um campo de email e o botão Enviar.](assets/web-form-page.png)
 
-Saiba como criar formulários Web em [esta seção](../dev/web/about-web-forms.md).
+Saiba como criar formulários Web no [Introdução aos formulários Web](../dev/web/about-web-forms.md).

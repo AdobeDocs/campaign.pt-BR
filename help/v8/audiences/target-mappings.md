@@ -36,10 +36,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 38%
+source-wordcount: '449'
+ht-degree: 32%
 ---
 # Trabalhar com target mappings{#gs-target-mappings}
 
@@ -71,7 +71,7 @@ Você também pode criar um target mapping. Talvez seja necessário adicionar um
 * usar uma tabela de recipient personalizada,
 * configure uma dimensão de filtro diferente da targeting dimension integrada na tela target mapping.
 
-Saiba mais sobre tabelas de destinatários personalizadas em [esta página](../dev/custom-recipient.md).
+Saiba mais sobre tabelas de destinatários personalizadas em [Altere a tabela de destinatários padrão](../dev/custom-recipient.md).
 
 O assistente de criação de target mapping do Adobe Campaign ajuda a criar todos os esquemas necessários para usar seu target mapping personalizado.
 
@@ -79,16 +79,16 @@ O assistente de criação de target mapping do Adobe Campaign ajuda a criar todo
 
 1. Crie um novo target mapping e selecione seu esquema personalizado como o targeting dimension.
 
-   ![](assets/new-target-mapping.png)
+   ![Selecione a etapa de targeting dimension do novo assistente de target mapping, com Clientes de Rótulo e Contratos de Targeting dimension.](assets/new-target-mapping.png)
 
 
 1. Indique os campos onde as informações do perfil são armazenadas: sobrenome, nome, email, endereço, etc.
 
-   ![](assets/wf_new_mapping_define_join.png)
+   ![Etapa de edição de formulários de endereço, em que cada campo de endereço de entrega, como Email, está vinculado a um campo da nova dimensão.](assets/wf_new_mapping_define_join.png)
 
 1. Especifique os parâmetros para armazenamento de informações, incluindo o sufixo dos schemas de extensão para que sejam facilmente identificáveis.
 
-   ![](assets/wf_new_mapping_define_names.png)
+   ![Etapa de armazenamento com Namespace, Sufixo dos esquemas de extensão e opções de Exclusões para armazenar exclusões e mensagens.](assets/wf_new_mapping_define_names.png)
 
    Você pode escolher se deseja armazenar exclusões (**excludelog**), com mensagens (**broadlog**) ou em uma tabela separada.
 
@@ -96,6 +96,6 @@ O assistente de criação de target mapping do Adobe Campaign ajuda a criar todo
 
 1. Em seguida, selecione as extensões a serem consideradas. O tipo de extensão depende das configurações e dos complementos do Campaign.
 
-   ![](assets/wf_new_mapping_define_extensions.png)
+   ![Etapa de extensões com a opção Generate a storage schema for propositions selecionada no mecanismo de oferta.](assets/wf_new_mapping_define_extensions.png)
 
    Clique no botão **[!UICONTROL Save]** para iniciar a criação de mapeamento de entrega: todas as tabelas vinculadas são criadas automaticamente com base nos parâmetros selecionados.

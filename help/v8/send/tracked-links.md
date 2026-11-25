@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 76%
+source-wordcount: '621'
+ht-degree: 70%
 ---
 # Configurar links rastreados {#how-to-configure-tracked-links}
 
@@ -39,17 +39,17 @@ Para cada entrega, você pode rastrear a recepção das mensagens e a ativação
 
 >[!NOTE]
 >
->Os links no conteúdo de email que contêm personalização precisam de sintaxe específica para serem rastreados. Saiba mais sobre como adicionar links a emails que podem ser personalizados e que oferecem suporte ao rastreamento em [esta seção](personalized-links.md).
+>Os links no conteúdo de email que contêm personalização precisam de sintaxe específica para serem rastreados. Saiba mais sobre como adicionar links a emails que podem ser personalizados e que oferecem suporte ao rastreamento em [Rastrear links personalizados](personalized-links.md).
 
 O rastreamento de mensagens é habilitado por padrão. Para personalizar como URLs são rastreados, siga as etapas abaixo:
 
 1. Selecione a opção **[!UICONTROL Display URLs]** na seção inferior do assistente de entrega, abaixo do conteúdo da mensagem.
 
-   ![](assets/s_ncs_user_email_del_display_urls.png)
+   ![Delivery de conteúdo do HTML com a opção Exibir URLs abaixo do conteúdo, ainda não selecionada](assets/s_ncs_user_email_del_display_urls.png)
 
    Ao selecionar um dos URLs rastreados na lista, ele é realçado no conteúdo da entrega, exceto pelo link na mirror page e no link de cancelamento de subscrição fornecido como padrão.
 
-   ![](assets/s_ncs_user_email_del_show_urls.png)
+   ![Lista de URLs rastreadas com uma URL selecionada e seu link correspondente realçado no conteúdo da entrega](assets/s_ncs_user_email_del_show_urls.png)
 
 1. Para cada URL da mensagem, selecione se deseja ativar ou não o rastreamento.
 
@@ -67,7 +67,7 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
 
 1. Se necessário, altere o modo de rastreamento. Selecione um novo modo na coluna **[!UICONTROL Tracking]** que corresponde ao link direcionado, conforme abaixo:
 
-   ![](assets/s_ncs_user_select_tracking_mode.png)
+   ![Lista suspensa da coluna de rastreamento listando os modos de rastreamento de uma URL, de Habilitado a Mirror page](assets/s_ncs_user_select_tracking_mode.png)
 
    Para cada URL individual, é possível definir o modo de rastreamento para um destes valores:
 
@@ -78,7 +78,7 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
    * **[!UICONTROL Opt-out]**: considera esta URL como recusa ou cancelamento de assinatura.
    * **[!UICONTROL Mirror page]**: considera esta URL como sendo de mirror page.
 
-1. Além disso, é possível selecionar uma categoria para cada URL rastreado na lista suspensa da coluna **[!UICONTROL Category]**. Essas categorias podem ser exibidas em relatórios, como no relatório **[!UICONTROL URLs and click streams]** (consulte [esta seção](../reporting/delivery-reports.md#urls-and-click-streams)). As categorias estão definidas em uma enumeração específica: **[!UICONTROL urlCategory]**. Saiba mais sobre como trabalhar com enumerações em [esta seção](../config/enumerations.md).
+1. Além disso, é possível selecionar uma categoria para cada URL rastreado na lista suspensa da coluna **[!UICONTROL Category]**. Essas categorias podem ser exibidas em relatórios, como no relatório **[!UICONTROL URLs and click streams]** (consulte [URLs e fluxos de cliques](../reporting/delivery-reports.md#urls-and-click-streams)). As categorias estão definidas em uma enumeração específica: **[!UICONTROL urlCategory]**. Saiba mais sobre como trabalhar com enumerações em [Gerenciar enumerações](../config/enumerations.md).
 
 ## Práticas recomendadas para delimitadores de URL {#url-delimiters}
 

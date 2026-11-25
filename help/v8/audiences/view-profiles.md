@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 6%
+source-wordcount: '582'
+ht-degree: 3%
 ---
 # Exibir perfis existentes {#view-profiles}
 
@@ -42,11 +42,11 @@ Navegue até **[!UICONTROL Profiles and targets]** para acessar destinatários a
 
 Nesta página, você pode [criar um novo destinatário](create-profiles.md), editar um destinatário existente e acessar seus detalhes de perfil.
 
-![](assets/profiles-and-targets.png)
+![Guia Perfis e destinos da página inicial do Campaign, mostrando a lista de Destinatários com o botão Criar](assets/profiles-and-targets.png)
 
 Para manipulações de perfil mais avançadas, acesse a árvore do Campaign pelo link **[!UICONTROL Explorer]** na página inicial do Adobe Campaign.
 
-![](assets/recipients-in-explorer.png)
+![Árvore do Explorer com a pasta Recipients selecionada, a lista de destinatários e os detalhes do destinatário selecionado](assets/recipients-in-explorer.png)
 
 
 >[!CAUTION]
@@ -58,7 +58,7 @@ Para manipulações de perfil mais avançadas, acesse a árvore do Campaign pelo
 
 Selecione um perfil para exibir detalhes em uma nova guia.
 
-![](assets/edit-a-profile.png)
+![Guia Perfil do destinatário com as seções Geral, Informações de contato, Outros, Assinaturas, Entregas e Acompanhamento](assets/edit-a-profile.png)
 
 Os dados relativos aos perfis são agrupados em guias. Essas guias e seu conteúdo dependem das configurações específicas e dos pacotes instalados.
 
@@ -66,7 +66,7 @@ Para um recipient incorporado típico, você pode acessar as seguintes guias:
 
 * **[!UICONTROL General]**, para todos os dados gerais do perfil. Em particular, contém o sobrenome, nome, endereço de email, formato do email, etc.
 
-  Esta guia também armazena o sinalizador **recusar** para o perfil: quando a opção **[!UICONTROL No longer contact (by any channel)]** é selecionada, o perfil fica no arquivo de inclui na lista de bloqueios. Essas informações serão adicionadas aos dados de contato se o recipient clicar em um link de cancelamento de subscrição em um boletim informativo, por exemplo. Esse recipient não é mais direcionado em nenhum canal (email, correspondência direta etc.). Para obter mais informações, consulte [esta página](../send/quarantines.md).
+  Esta guia também armazena o sinalizador **recusar** para o perfil: quando a opção **[!UICONTROL No longer contact (by any channel)]** é selecionada, o perfil fica no arquivo de inclui na lista de bloqueios. Essas informações serão adicionadas aos dados de contato se o recipient clicar em um link de cancelamento de subscrição em um boletim informativo, por exemplo. Esse recipient não é mais direcionado em nenhum canal (email, correspondência direta etc.). Para obter mais informações, consulte [Gerenciamento de quarentena no Campaign](../send/quarantines.md).
 
 * **Informações de contato**, que contêm o endereço de correspondência direta do perfil selecionado.
 
@@ -76,15 +76,15 @@ Para um recipient incorporado típico, você pode acessar as seguintes guias:
 
   Use o menu contextual **[!UICONTROL Field properties…]** para alterar os nomes dos campos e definir seus formatos.
 
-  ![](assets/other-tab-field-properties.png)
+  ![Outra guia de um destinatário com a opção Propriedades de campo selecionada no menu de contexto do campo Booleano 1](assets/other-tab-field-properties.png)
 
   Insira as novas configurações conforme abaixo:
 
-  ![](assets/change-field-properties.png)
+  ![Caixa de diálogo de propriedades de campo com o campo Rótulo definido como Programa Luma Gold e o campo Descrição preenchido](assets/change-field-properties.png)
 
   Verifique a atualização na interface do usuário:
 
-  ![](assets/other-tab-updated.png)
+  ![Outra guia de um destinatário, onde o campo Booleano 1 agora aparece como Programa Luma Gold com um valor Sim ou Não](assets/other-tab-updated.png)
 
 
   >[!CAUTION]
@@ -94,7 +94,7 @@ Para um recipient incorporado típico, você pode acessar as seguintes guias:
 
 * **Assinaturas**, para todas as assinaturas ativas para serviços. Use a guia **Histórico** para acessar os detalhes de assinaturas e cancelamentos de assinaturas deste contato.
 
-  ![](assets/subscription-tab.png)
+  ![Guia Assinaturas de um destinatário listando assinaturas ativas, com as guias Assinaturas ativas e Histórico](assets/subscription-tab.png)
 
   Saiba mais sobre Assinaturas [nesta seção](../start/subscriptions.md).
 

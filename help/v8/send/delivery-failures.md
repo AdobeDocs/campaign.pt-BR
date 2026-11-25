@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3476'
-ht-degree: 54%
+source-wordcount: '3478'
+ht-degree: 53%
 ---
 # Entender as falhas de entrega {#delivery-failures}
 
@@ -714,7 +714,7 @@ Antes de um novo tipo de erro ser qualificado, o motivo da falha é sempre defin
 
 Exemplo de uma mensagem gerada:
 
-```
+```text
 SR Generic DELIVRD 000|#MESSAGE#
 ```
 
@@ -750,7 +750,7 @@ Os logs da entrega são fundamentais para saber por que uma entrega falhou. Este
 
 Se as mensagens do destinatário falharem com uma declaração de erro &quot;Inacessível&quot;:
 
-```
+```text
 Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
 ```
 
@@ -758,13 +758,13 @@ Error while compiling script 'content htmlContent' line X: `[table]` is not defi
 
 **Solução**: revise o fluxo de trabalho e o conteúdo da entrega para determinar especificamente qual personalização está tentando chamar a tabela em questão. Em seguida, remova a chamada para esta tabela no HTML ou corrija o mapeamento para o delivery.
 
-Saiba mais sobre a personalização em [esta seção](personalize.md).
+Saiba mais sobre a personalização em [Introdução à personalização](personalize.md).
 
 ### Erro de múltiplos valores de personalização {#multiple-values-error}
 
 Quando uma entrega falha, o seguinte erro pode aparecer nos logs de entrega:
 
-```
+```text
 DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
 ```
 
@@ -776,7 +776,7 @@ DLV-XXXX The count of message prepared (123) is greater than the number of messa
 
 Alguns deliveries podem falhar com um erro &quot;Inacessível&quot; informando:
 
-```
+```text
 Inbound email bounce (rule 'Auto_replies' has matched this bounce).
 ```
 

@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 31%
+source-wordcount: '334'
+ht-degree: 23%
 ---
 # Definir o conteúdo do SMS {#sms-content}
 
@@ -40,25 +40,25 @@ Para configurar o conteúdo do delivery de SMS:
 
 1. Insira o conteúdo da mensagem na guia **[!UICONTROL Text content]**.
 
-   ![](assets/sms_content.png){zoomable="yes"}
+   ![Guia de conteúdo de texto da entrega de SMS com o texto da mensagem inserido](assets/sms_content.png){zoomable="yes"}
 
 1. Você pode personalizar a mensagem inserindo campos de personalização (por exemplo, adicionando o nome) ou inserindo blocos de personalização predefinidos (por exemplo, adicionando saudações). Clique no botão de personalização para adicionar estes:
 
-   ![](assets/sms_perso.png){zoomable="yes"}
+   ![Menu do Personalization aberto no conteúdo de texto do SMS com submenu Destinatário mostrando o Nome e outros campos](assets/sms_perso.png){zoomable="yes"}
 
    Por exemplo, depois de clicar em **[!UICONTROL Recipient]** > **[!UICONTROL First name]**, o conteúdo do SMS é atualizado com o campo de personalização, conforme abaixo:
 
-   ![](assets/sms_perso_recipient.png){zoomable="yes"}
+   ![Conteúdo de texto SMS com o campo de personalização de nome inserido na mensagem](assets/sms_perso_recipient.png){zoomable="yes"}
 
-   Saiba mais sobre a personalização no Adobe Campaign em [esta seção](../personalize.md).
+   Saiba mais sobre a personalização no Adobe Campaign em [Introdução à personalização](../personalize.md).
 
 1. Você pode visualizar o conteúdo da entrega na guia **[!UICONTROL Preview]**. Para verificar suas configurações de personalização, clique na lista suspensa **[!UICONTROL Test personalization]** e selecione um recipient.
 
-   ![](assets/sms_preview.png){zoomable="yes"}
+   ![Guia Visualizar do SMS com o menu suspenso de Personalização de teste aberto para selecionar um destinatário](assets/sms_preview.png){zoomable="yes"}
 
    Você pode verificar a pré-visualização do SMS com a personalização:
 
-   ![](assets/sms_preview_phone.png){zoomable="yes"}
+   ![Visualização de SMS com o nome substituído pelo valor do destinatário, mostrado como texto e em um modelo de telefone](assets/sms_preview_phone.png){zoomable="yes"}
 
 >[!NOTE]
 >

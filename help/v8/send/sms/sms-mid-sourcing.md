@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 14%
+source-wordcount: '762'
+ht-degree: 11%
 ---
 # SMS em uma infraestrutura de mid-sourcing {#sms-mid}
 
@@ -59,22 +59,22 @@ Para criar sua operadora de SMS, siga as etapas abaixo:
 
    Observe que o Nome (logon) deverá ser usado posteriormente para nomear sua conta externa SMPP no servidor intermediário.
 
-   ![](assets/smsoperator_mid.png){zoomable="yes"}
+   ![Novo formulário de operador SMS no mid-server com Nome (logon), Senha e Rótulo e o botão Adicionar para direitos](assets/smsoperator_mid.png){zoomable="yes"}
 
 1. Na parte **[!UICONTROL Groups and named rights]**, clique no botão **[!UICONTROL Add]**.
 Na nova janela aberta, escolha **[!UICONTROL Named rights]** na lista **[!UICONTROL Folder]** e selecione **[!UICONTROL ADMINISTRATION]** na lista direita.
 
 1. Clique no botão **[!UICONTROL Ok]**.
 
-   ![](assets/smsoperator_rights.png){zoomable="yes"}
+   ![Caixa de diálogo Adicionar grupos ou direitos nomeados com o direito nomeado ADMINISTRATION selecionado](assets/smsoperator_rights.png){zoomable="yes"}
 
 1. Clique no botão **[!UICONTROL Save]** para finalizar a criação do operador SMS.
 
-   ![](assets/smsoperator_save.png){zoomable="yes"}
+   ![Formulário do operador SMS com o direito ADMINISTRATION adicionado e o botão Salvar realçado](assets/smsoperator_save.png){zoomable="yes"}
 
 Você pode vê-lo na lista de operadores agora.
 
-![](assets/smsoperator_list.png){zoomable="yes"}
+![Lista de operadores mostrando o novo operador Mid sms (smsOperator)](assets/smsoperator_list.png){zoomable="yes"}
 
 ## Criar uma conta externa de SMS no servidor de marketing {#sms-external-account}
 
@@ -86,17 +86,17 @@ Em uma infraestrutura intermediária, é necessário criar uma conta externa de 
 
 1. Em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**, clique no ícone **[!UICONTROL New]**
 
-   ![](assets/sms_extaccount.png){zoomable="yes"}
+   ![Lista de Contas Externas em Administração > Plataforma com o ícone Novo realçado](assets/sms_extaccount.png){zoomable="yes"}
 
 1. Configure o **[!UICONTROL Label]** e o **[!UICONTROL Internal name]** da sua conta externa. Defina o tipo de conta como **[!UICONTROL Routing]**, marque a caixa **[!UICONTROL Enabled]**, selecione **[!UICONTROL Mobile (SMS)]** para o canal e **[!UICONTROL Mid-sourcing]** para o modo de entrega.
 
-   ![](assets/mid_smsextaccount.png){zoomable="yes"}
+   ![Guia Geral da conta externa: Tipo de roteamento, Habilitado, canal Móvel (SMS) e modo de entrega Mid-sourcing](assets/mid_smsextaccount.png){zoomable="yes"}
 
 1. Na guia **[!UICONTROL Mid-sourcing]**, preencha o formulário com a URL do servidor mid-sourcing e o operador de SMS criado anteriormente no servidor mid-sourcing.
 
    Confirme a conexão clicando no botão **[!UICONTROL Test the connection]**.
 
-   ![](assets/midtab_smsextaccount.png){zoomable="yes"}
+   ![Guia Mid-sourcing com URL do servidor, conta de operador SMS, senha e botão Testar conexão](assets/midtab_smsextaccount.png){zoomable="yes"}
 
 1. Clique em **[!UICONTROL Save]**.
 
@@ -120,13 +120,13 @@ Para fazer isso, siga as etapas abaixo:
    >
 
    Defina o tipo de conta como **[!UICONTROL Routing]**, marque a caixa **[!UICONTROL Enabled]**, selecione **[!UICONTROL Mobile (SMS)]** para o canal e **[!UICONTROL Bulk delivery]** para o modo de entrega.
-   ![](assets/mid_extaccount.png){zoomable="yes"}
+   ![Guia Geral da conta externa de mid-server: Tipo de roteamento, Habilitado, Canal móvel (SMS) e Modo de entrega em massa](assets/mid_extaccount.png){zoomable="yes"}
 
 1. Na guia **[!UICONTROL Mobile]**, mantenha **[!UICONTROL Extended generic SMPP]** na lista suspensa **[!UICONTROL Connector]**.
 
    A caixa **[!UICONTROL Send messages through a dedicated process]** está marcada por padrão.
 
-   ![](assets/sms_extaccount_connector.png){zoomable="yes"}
+   ![Guia Mobile com o conector SMPP genérico estendido e Enviar mensagens por meio de um processo dedicado marcado](assets/sms_extaccount_connector.png){zoomable="yes"}
 
    Para configurar a conexão, você precisa preencher as guias deste formulário. Para obter detalhes, [saiba mais sobre a conta externa SMPP](smpp-external-account.md#smpp-connection-settings).
 
@@ -136,18 +136,18 @@ Para facilitar a criação do delivery de SMS, crie um template do delivery de S
 
 Em **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** no servidor de marketing, clique com o botão direito do mouse no modelo de entrega para dispositivos móveis existente e escolha **[!UICONTROL Duplicate]**.
 
-![](assets/sms_template_duplicate.png){zoomable="yes"}
+![Lista de modelos de entrega com Duplicata selecionada no menu de contexto para o modelo de SMS (Mobile)](assets/sms_template_duplicate.png){zoomable="yes"}
 
 Altere o **[!UICONTROL Label]** e o **[!UICONTROL Internal name]** do seu modelo para reconhecê-lo facilmente, e clique no botão **[!UICONTROL Properties]**.
 
-![](assets/sms_template_name.png){zoomable="yes"}
+![Modelo de entrega duplicado com os campos Rótulo e Nome interno, e o botão Propriedades realçado](assets/sms_template_name.png){zoomable="yes"}
 
 Na guia **[!UICONTROL General]**, em **[!UICONTROL Routing]**, selecione a conta externa SMPP.
 
-![](assets/mid_template.png){zoomable="yes"}
+![Guia Geral de propriedades de entrega com o campo Roteamento definido para a conta externa SMPP](assets/mid_template.png){zoomable="yes"}
 
 Na guia **[!UICONTROL SMS]**, é possível adicionar parâmetros opcionais ao modelo.
 
-![](assets/sms_template_properties.png){zoomable="yes"}
+![Guia SMS de propriedades de entrega com parâmetros gerais e parâmetros SMPP opcionais (TLV)](assets/sms_template_properties.png){zoomable="yes"}
 
 [Saiba mais sobre esta configuração da guia SMS](sms-delivery-settings.md).

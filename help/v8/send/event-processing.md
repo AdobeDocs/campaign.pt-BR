@@ -26,14 +26,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 56%
+source-wordcount: '744'
+ht-degree: 49%
 ---
 # Processamento de evento {#event-processing}
 
-No contexto de mensagens transacionais, um evento é gerado por um sistema de informações externo e enviado ao Adobe Campaign através dos métodos **[!UICONTROL PushEvent]** e **[!UICONTROL PushEvents]**. Estes métodos estão descritos em [esta seção](event-description.md).
+No contexto de mensagens transacionais, um evento é gerado por um sistema de informações externo e enviado ao Adobe Campaign através dos métodos **[!UICONTROL PushEvent]** e **[!UICONTROL PushEvents]**. Estes métodos estão descritos em [Entender a descrição do evento](event-description.md).
 
 Esse evento contém dados vinculados ao evento, como:
 
@@ -43,7 +43,7 @@ Esse evento contém dados vinculados ao evento, como:
 
 Exemplo de dados do evento:
 
-![](assets/mc-event-request.png)
+![Exemplo de XML de evento: atributos de dados de evento (tipo, email, origem) e dados de evento personalizados no elemento ctx](assets/mc-event-request.png)
 
 Para processar eventos de mensagens transacionais, as seguintes etapas são aplicadas na(s) instância(s) de execução:
 
@@ -65,11 +65,11 @@ Eventos gerados pelo sistema de informações podem ser coletados usando dois mo
 
 Depois que são coletados, os eventos são divididos por workflows técnicos entre as filas em tempo real e em lote das instâncias de execução enquanto aguardam a vinculação a um [modelo de mensagem](transactional-template.md).
 
-![](assets/mc-event-queues.png)
+![Pastas do Centro de Mensagens na instância de execução: Eventos em tempo real e Eventos em lote na pasta Padrão](assets/mc-event-queues.png)
 
 >[!NOTE]
 >
->Na instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode causar problemas de direito de acesso. Para obter mais informações sobre como configurar uma pasta como visualização, consulte [esta seção](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
+>Na instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode causar problemas de direito de acesso. Para obter mais informações sobre como configurar uma pasta como modo de exibição, consulte [Transformar uma pasta em modo de exibição](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
 ## Transferir um evento para um modelo {#event-to-template}
 
@@ -79,11 +79,11 @@ A etapa de roteamento consiste em vincular um evento ao modelo de mensagem aprop
 
 * O tipo de evento especificado nas propriedades do próprio evento:
 
-  ![](assets/event-type-sample.png)
+  ![XML de evento em lote com o atributo de tipo de evento definido como purchase_order](assets/event-type-sample.png)
 
 * O tipo de evento especificado nas propriedades do modelo de mensagem:
 
-  ![](assets/event-type-select.png)
+  ![Assistente de modelo de mensagem com a lista Tipo de evento mostrando purchase e purchase_def](assets/event-type-select.png)
 
 Por padrão, o roteamento é baseado nas seguintes informações:
 

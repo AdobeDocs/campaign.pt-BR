@@ -20,7 +20,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 47%
@@ -70,7 +70,7 @@ No exemplo abaixo, saiba como criar um email multilíngue. O conteúdo é exibid
 1. Crie um email e selecione a população de destino. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do destinatário. Estes valores estão definidos como **EN**, **FR**, **ES**.
 1. No conteúdo HTML de email, clique na guia **[!UICONTROL Source]** e cole o seguinte código:
 
-   ```
+   ```html
    <% if (language == "EN" ) { %>
    <DIV id=en-version>Hello <%= recipient.firstName %>,</DIV>
    <DIV>Discover your new offers!</DIV>

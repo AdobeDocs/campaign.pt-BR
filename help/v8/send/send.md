@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 30%
+source-wordcount: '838'
+ht-degree: 27%
 ---
 # Enviar e monitorar emails  {#send-and-monitor-emails}
 
@@ -77,7 +77,7 @@ O MTA qualifica a rejeição de SMTP e envia essa qualificação de volta ao Cam
 >
 >Atualmente, **as rejeições assíncronas** são qualificadas pelo processo do InMail por meio das **[!UICONTROL Inbound email]** regras.
 
-Saiba mais sobre falhas de entrega em [esta seção](delivery-failures.md).
+Saiba mais sobre falhas de entrega em [Falhas de entrega no Campaign](delivery-failures.md).
 
 
 ### Regras MX específicas
@@ -112,9 +112,9 @@ Quando mensagens com rejeição temporária são relatadas do MTA, o status do l
 
 >[!NOTE]
 >
->Para obter mais informações sobre rejeições permanentes e temporárias, consulte [esta seção](delivery-failures.md#delivery-failure-reasons).
+>Para obter mais informações sobre rejeições permanentes e temporárias, consulte [Por que a entrega da mensagem falhou](delivery-failures.md#delivery-failure-reasons).
 >
->Para obter mais informações sobre tentativas após uma falha temporária de entrega, consulte [esta seção](delivery-failures.md#retries).
+>Para obter mais informações sobre tentativas após uma falha temporária de entrega, consulte [Gerenciamento de tentativas](delivery-failures.md#retries).
 
 A tabela abaixo mostra como os KPIs e os status dos logs de envio são atualizados em cada etapa do processo de envio.
 

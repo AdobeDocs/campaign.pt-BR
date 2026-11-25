@@ -22,7 +22,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Para acionar um workflow, siga as etapas abaixo:
 
 Se quiser chamar o fluxo de trabalho com parâmetros, adicione-os à carga com o atributo **&quot;parameters&quot;**. A sintaxe consiste no nome do parâmetro seguido por seu valor (há suporte para os seguintes tipos: **string**, **number**, **booleano** e **date/time**).
 
-```
+```bash
   -X POST <TRIGGER_URL>
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
   -H 'Cache-Control: no-cache' \
@@ -76,7 +76,7 @@ Se quiser chamar o fluxo de trabalho com parâmetros, adicione-os à carga com o
 
 Execute uma solicitação GET no workflow.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -86,7 +86,7 @@ Execute uma solicitação GET no workflow.
 
 Ele retorna a atividade do sinal de workflow e o url de acionador associado.
 
-```
+```json
 {
 "PKey": "<PKEY>",
 "activities": {
@@ -105,7 +105,7 @@ Ele retorna a atividade do sinal de workflow e o url de acionador associado.
 
 Para acionar uma atividade de sinal, execute uma solicitação POST no url do acionador com a &quot;origem&quot;. Adicione os atributos &quot;parameters&quot; se quiser chamar o workflow com parâmetros.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<PKEY>/activities/activity/<PKEY>/trigger \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -129,7 +129,7 @@ Para acionar uma atividade de sinal, execute uma solicitação POST no url do ac
 
 Se um dos parâmetros não for declarado na atividade External signal, a solicitação POST retornará o erro abaixo, indicando qual parâmetro está ausente.
 
-```
+```text
 RST-360011 An error has occurred - please contact your administrator.
 'contentURL' parameter isn't defined in signal activity.
 XTK-170006 Unable to parse expression 'HandleTrigger(@name, $(source), $({parameters}))'.

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 98%
+source-wordcount: '541'
+ht-degree: 95%
 ---
 # Introdução às pesquisas{#about-surveys}
 
@@ -49,7 +49,7 @@ O add-on opcional de **Pesquisa** permite desenvolver um novo tipo de aplicativo
 
 Este capítulo detalha como criar e gerenciar **Pesquisas**, gerenciamento de campos e páginas, modos de armazenamento e registros.
 
-Saiba como criar sua primeira pesquisa [nesta página](getting-started-with-surveys.md).
+Saiba como criar sua primeira pesquisa em [Etapas principais para criar uma pesquisa](getting-started-with-surveys.md).
 
 >[!NOTE]
 >

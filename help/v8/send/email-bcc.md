@@ -24,9 +24,9 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '383'
 ht-degree: 1%
 ---
 # Enviar uma cópia de suas mensagens para um endereço CCo {#bcc}
@@ -62,7 +62,7 @@ Para habilitar o CCO para um [modelo de entrega](create-templates.md) específic
 1. Clique no botão **[!UICONTROL Properties]**.
 1. Na guia **[!UICONTROL Delivery]**, marque a opção **[!UICONTROL Email BCC with Enhanced MTA]**.
 
-   ![](assets/email-bcc.png)
+   ![Guia Entrega de propriedades de entrega com a opção Email Cco com Momentum aprimorada realçada](assets/email-bcc.png)
 
 1. Clique em **[!UICONTROL Ok]** para confirmar.
 

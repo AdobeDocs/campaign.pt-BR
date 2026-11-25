@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 100%
+source-wordcount: '271'
+ht-degree: 87%
 ---
 # Escopo de simulação{#simulation-scope}
 
@@ -50,7 +50,7 @@ Os seguintes itens são obrigatórios:
 
   O destinatário receberá muitas propostas. Por exemplo, se inserir 5, cada destinatário receberá no máximo 5 propostas de oferta.
 
-  ![](assets/offer_simulation_009.png)
+  ![Guia Escopo de Simulação com data de contato, Número de apresentações e a consulta de destino Folder Great travelers](assets/offer_simulation_009.png)
 
 Para refinar as ofertas a serem consideradas para a simulação, é possível adicionar um ou vários temas (especificados anteriormente nas categorias).
 
@@ -66,4 +66,4 @@ Também é possível optar por realizar a simulação em todas as ofertas ou ape
 
 Para fazer isso, clique no botão **[!UICONTROL Add]** e selecione os campos apropriados. Os eixos serão usados para calcular a simulação e são exibidos no relatório de análise. Para obter mais informações, consulte [Rastreamento de simulação](simulation-tracking.md).
 
-![](assets/offer_simulation_011.png)
+![Guia Cálculos com a caixa de diálogo Selecionar uma expressão escolhendo Data final para adicionar um eixo de relatórios de oferta](assets/offer_simulation_011.png)

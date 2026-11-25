@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 93%
+source-wordcount: '1290'
+ht-degree: 72%
 ---
 # Anexar arquivos a um email{#attaching-files}
 
@@ -65,21 +65,21 @@ Para anexar um arquivo local a uma entrega, siga as etapas abaixo.
 1. Clique no botão **[!UICONTROL Add]**.
 1. Clique em **[!UICONTROL File...]** para selecionar o arquivo a ser anexado à entrega.
 
-   ![](assets/s_ncs_user_wizard_email_attachement.png)
+   ![Caixa de diálogo Editar arquivos anexados com o menu Adicionar aberto e Arquivo... selecionada para anexar um arquivo a uma entrega de email](assets/s_ncs_user_wizard_email_attachement.png)
 
 Você também pode arrastar e soltar o arquivo diretamente no campo **[!UICONTROL Attachments]** da entrega, ou usar o ícone **[!UICONTROL Attach]** na barra de ferramentas do assistente de entrega,
 
-![](assets/s_ncs_user_wizard_add_file_ico.png)
+![Ícone Anexar na barra de ferramentas do assistente de entrega, ao lado da seção Parâmetros de email](assets/s_ncs_user_wizard_add_file_ico.png)
 
 Após selecionar o documento, ele será carregado imediatamente no servidor para estar disponível no momento da entrega. Está listado no campo **[!UICONTROL Attachments]**.
 
-![](assets/s_ncs_user_wizard_email_attachement_e.png)
+![Parâmetros de email com o arquivo carregado listado no campo Anexos](assets/s_ncs_user_wizard_email_attachement_e.png)
 
 ## Criação de anexos calculados {#creating-a-calculated-attachment}
 
 Quando você cria um anexo calculado, o nome do anexo pode ser computado durante a análise ou a entrega de cada mensagem e pode depender do destinatário. Ele também pode ser personalizado e convertido em PDF.
 
-![](assets/s_ncs_user_wizard_attachment.png)
+![Caixa de diálogo Editar arquivos anexados com o menu Adicionar aberto e o anexo Calculado... selecionado](assets/s_ncs_user_wizard_attachment.png)
 
 Para criar um anexo personalizado, siga estas etapas:
 
@@ -87,7 +87,7 @@ Para criar um anexo personalizado, siga estas etapas:
 1. Clique no botão **[!UICONTROL Add]** e selecione **[!UICONTROL Calculated attachment]**.
 1. Selecione o tipo de cálculo na lista suspensa **[!UICONTROL Type]**:
 
-![](assets/s_ncs_user_wizard_email01_136.png)
+![Caixa de diálogo de definição de anexo com a lista suspensa Tipo mostrando as quatro opções de anexo calculadas](assets/s_ncs_user_wizard_email01_136.png)
 
 As seguintes opções estão disponíveis:
 
@@ -103,11 +103,11 @@ Se o anexo for um arquivo local, selecione a opção: **[!UICONTROL File name is
 1. Selecione o arquivo a ser carregado no campo **[!UICONTROL Local file]**.
 1. Especifique o rótulo se necessário. O rótulo substitui o nome do arquivo quando visualizado em sistemas de mensagens. Se nada for especificado, o nome do arquivo será usado por padrão.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
+   ![Guia Geral de definição de anexo com campos Tipo, Rótulo e Arquivo local e a opção Carregar arquivo no servidor](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
 
 1. Se necessário, selecione **[!UICONTROL Upload file on the server]** e clique em **[!UICONTROL Update on server]** para iniciar a transferência.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
+   ![Janela de progresso do carregamento listando as mensagens de log e mostrando a transferência de arquivos para o servidor em 100%](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
 O arquivo está então disponível no servidor para ser anexado às diferentes entregas criadas com base nesse modelo.
 
@@ -115,7 +115,7 @@ O arquivo está então disponível no servidor para ser anexado às diferentes e
 
 A opção **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** permite selecionar um arquivo com campos de personalização, como o sobrenome e o nome do destinatário pretendido.
 
-![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
+![Documento do processador do Word contendo campos de personalização de nome e sobrenome do destinatário para um anexo do PDF](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
 Para este tipo de anexo, sigas as seguintes etapas de configuração:
 
@@ -124,13 +124,13 @@ Para este tipo de anexo, sigas as seguintes etapas de configuração:
 1. Selecione **[!UICONTROL Upload file on the server]** e clique em **[!UICONTROL Update on server]** para iniciar a transferência.
 1. Você pode exibir uma pré-visualização. Para fazer isso, selecione um destinatário.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
+   ![Caixa de diálogo de definição do anexo visualizando o PDF personalizado para um destinatário selecionado na lista de Visualização](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
 
 1. Analise sua entrega e, em seguida, inicie-a.
 
    Cada destinatário recebe um PDF personalizado anexado à entrega.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
+   ![Email recebido com um anexo personalizado do PDF, aberto para mostrar o nome do destinatário na saudação](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
 
 
@@ -149,13 +149,13 @@ Você pode calcular o nome do anexo durante a preparação da entrega. Para faze
    >
    >O arquivo deve estar presente no servidor.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_04.png)
+   ![Definição de anexo com um script que calcula o caminho e o nome do arquivo, incluindo a data, durante a análise de entrega](assets/s_ncs_user_wizard_email_calc_attachement_04.png)
 
 1. Analise e inicie sua entrega.
 
    A computação do nome de arquivo pode ser vista no log de análise.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
+   ![Log de análise de entrega com a linha mostrando o resultado do nome de arquivo de anexo computado realçado](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 
 ### Anexar um arquivo personalizado {#attach-a-personalized-file}
 
@@ -168,7 +168,7 @@ Ao selecionar o anexo, você pode escolher a opção **[!UICONTROL The file name
 1. Especifique o rótulo que deseja aplicar ao anexo.
 1. Especifique o caminho de acesso do arquivo e seu nome exato na janela de definição. Se o nome do arquivo for personalizado, você poderá usar os Campos de personalização para os valores relevantes.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
+   ![Anexar definição usando o sobrenome do destinatário no caminho do arquivo para escolher um arquivo diferente para cada destinatário](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
    >[!IMPORTANT]
    >
@@ -178,21 +178,21 @@ Ao selecionar o anexo, você pode escolher a opção **[!UICONTROL The file name
 
    No exemplo abaixo, o arquivo anexado foi escolhido de acordo com seu nome definido nos campos de mesclagem.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
+   ![Email recebido com um arquivo anexado cujo nome foi compilado do sobrenome do destinatário](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
 
 ### Configurações do anexo {#attachment-settings}
 
 Para as duas primeiras opções, escolha **[!UICONTROL Upload file on the server]** ao selecionar a opção apropriada. O link **[!UICONTROL Update the file on the server]** permite iniciar o upload.
 
-![](assets/s_ncs_user_wizard_email01_137.png)
+![Guia Geral de definição de anexo com Carregar arquivo no servidor selecionado e o link Atualizar no servidor](assets/s_ncs_user_wizard_email01_137.png)
 
 Uma mensagem informa que o arquivo foi carregado no servidor:
 
-![](assets/s_ncs_user_wizard_email01_1371.png)
+![Definição de anexo mostrando que o arquivo já existe na mensagem do servidor](assets/s_ncs_user_wizard_email01_1371.png)
 
 Para uma alteração de arquivo, uma mensagem de aviso é exibida:
 
-![](assets/s_ncs_user_wizard_email01_1372.png)
+![Definição de anexo mostrando o aviso de que o arquivo local não é igual ao do servidor](assets/s_ncs_user_wizard_email01_1372.png)
 
 A guia **[!UICONTROL Advanced]** permite definir opções avançadas em arquivos anexados:
 
@@ -201,4 +201,4 @@ A guia **[!UICONTROL Advanced]** permite definir opções avançadas em arquivos
 
   Insira seu texto na janela e use os campos de personalização disponíveis na lista suspensa. No exemplo a seguir, o nome do arquivo é personalizado para conter a data de hoje e o nome do destinatário.
 
-  ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
+  ![Guia Avançado com um script que personaliza o nome do arquivo anexo e o email mostrando o nome resultante](assets/s_ncs_user_wizard_email_calc_attachement_09.png)

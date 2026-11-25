@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 49%
+source-wordcount: '1153'
+ht-degree: 44%
 ---
 # Trabalho com modelos de entrega {#work-with-delivery-template}
 
@@ -59,7 +59,7 @@ Um modelo pode incluir definições de configuração parciais ou completas, com
 * Conteúdo, logotipo da empresa ou assinatura
 * Outras propriedades de entrega, como validade de recurso, parâmetros de nova tentativa ou configurações de quarentena.
 
-![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#delivery-template-video)
+![Reproduzir ícone do link do vídeo](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#delivery-template-video)
 
 Os modelos de entrega são armazenados na pasta **[!UICONTROL Resources > Templates > Delivery templates]** do Explorer. No Adobe Campaign, você pode trabalhar com dois tipos de modelos:
 
@@ -88,15 +88,15 @@ Para duplicar um modelo de entrega, siga as etapas abaixo:
 1. Selecione um template do delivery incorporado. Os modelos integrados estão em negrito na lista.
 1. Clique com o botão direito do mouse e selecione **[!UICONTROL Duplicate]**.
 
-   ![](assets/duplicate-built-in-template.png)
+   ![Lista de modelos de entrega com o menu do botão direito do mouse aberto e Duplicar selecionado em um modelo interno](assets/duplicate-built-in-template.png)
 
 1. Defina as configurações do modelo e salve o novo modelo.
 
-   ![](assets/delivery-template-new.png)
+   ![Propriedades de um modelo de email duplicado com seu rótulo, endereço de origem, assunto e conteúdo do HTML](assets/delivery-template-new.png)
 
 O modelo será adicionado à lista de modelos de entrega. Agora você pode selecioná-lo ao criar uma nova entrega.
 
-![](assets/select-the-new-template.png)
+![Lista suspensa de modelos de entrega listando os modelos internos e a nova Entrega de Email de Aviso de modelo personalizado](assets/select-the-new-template.png)
 
 ### Conversão de uma entrega já existente em um modelo {#convert-an-existing-delivery}
 
@@ -108,11 +108,11 @@ Para converter uma entrega em um modelo, siga as etapas abaixo:
 
 1. Clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Save as template...]**.
 
-   ![](assets/save-as-template.png)
+   ![Menu de clique com o botão direito na lista de entrega com Ações e Salvar como modelo selecionados](assets/save-as-template.png)
 
 1. Edite as propriedades do delivery e selecione a pasta onde o novo modelo deve ser salvo (no campo **[!UICONTROL Folder]**), e a pasta onde os deliveries criados com base nesse modelo devem ser criados (no campo **[!UICONTROL Execution folder]**).
 
-   ![](assets/template-select-folders.png)
+   ![Propriedades de entrega com os campos Pasta de execução, Pasta e Roteamento para o novo modelo](assets/template-select-folders.png)
 
 ### Criação de um novo modelo {#create-a-new-template}
 
@@ -140,11 +140,11 @@ Para configurar um modelo de entrega do zero, siga as etapas abaixo:
 
 Para criar uma entrega com base em um modelo existente, selecione um modelo disponível na lista..
 
-![](assets/select-the-new-template.png)
+![Lista suspensa de modelos de entrega listando os modelos internos e a nova Entrega de Email de Aviso de modelo personalizado](assets/select-the-new-template.png)
 
 Se não conseguir ver o modelo, clique na pasta **[!UICONTROL Select link]** à direita do campo para procurar pastas do Campaign.
 
-![](assets/browse-templates.png)
+![Caixa de diálogo de seleção de pasta mostrando modelos de entrega, aberta do campo Modelo de entrega](assets/browse-templates.png)
 
 Selecione o diretório desejado no campo **[!UICONTROL Folder]** ou clique no ícone **[!UICONTROL Display sub-levels]** para exibir o conteúdo dos diretórios nas subárvores do diretório atual.
 
@@ -160,7 +160,7 @@ Para executar um template manualmente, siga estas etapas:
 
    Você também pode usar **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
-   ![](assets/execute-delivery-template.png)
+   ![Lista de modelos de entrega com a opção de menu Executar o modelo de entrega selecionada](assets/execute-delivery-template.png)
 
 1. Insira os parâmetros de entrega e clique em **[!UICONTROL Send]**.
 

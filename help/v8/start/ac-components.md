@@ -36,22 +36,22 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 78%
+source-wordcount: '675'
+ht-degree: 73%
 ---
 # Entender os componentes e processos do Campaign {#components-and-processes}
 
 O Adobe Campaign é uma solução de marketing entre canais que automatiza campanhas por email, dispositivos móveis, redes sociais e offline. O Adobe Campaign fornece um local central para acessar os dados e perfis do cliente. Use o Adobe Campaign para orquestrar experiências consistentes para seus clientes, projetar, executar e personalizar seu marketing entre canais, enquanto melhora as experiências do cliente em cada dispositivo e ponto de contato. Com o Adobe Campaign, você pode gerenciar várias fontes de dados, definir segmentos de público-alvo e planejar e executar campanhas em várias etapas e entre canais por meio de uma interface de fluxo de trabalho visual de arrastar e soltar.
 
-Saiba mais sobre os principais recursos do Campaign [nesta página](../start/get-started.md).
+Saiba mais sobre os principais recursos do Campaign em [Introdução ao Campaign v8](../start/get-started.md).
 
 ## Componentes do Campaign {#ac-components}
 
 Os componentes do Adobe Campaign e a arquitetura global estão descritos abaixo.
 
-![](assets/do-not-localize//ac-components.png)
+![Arquitetura: camadas de integração, apresentação, aplicativo lógico e persistência, além de execução de email, email e SMS](assets/do-not-localize//ac-components.png)
 
 ### Camada de apresentação{#presentation-layer}
 
@@ -87,7 +87,7 @@ O Adobe Campaign v8 é implantado como um Managed Service: todos os componentes 
 
 O servidor do Campaign Web controla o acesso aos processos do Campaign Web. Javascript é a linguagem do lado do servidor usada para personalização e recursos de produtos principais. O Tomcat é o mecanismo de back-end e está incorporado ao produto do Campaign como parte do processo da Web. O Javascript é usado, por exemplo, em páginas JSP ou JSSP para renderizar conteúdo dinâmico.
 
-![](assets/do-not-localize/ac-processes.png)
+![O Console do Cliente e outros aplicativos chamam o servidor Web e o processo da Web, que acessam o banco de dados por meio do SQL](assets/do-not-localize/ac-processes.png)
 
 O console do cliente do Campaign se conecta ao servidor web usando o XML SOAP por HTTP. O servidor Web fornece a camada de segurança, passa as solicitações para a camada Aplicativo usando Javascript e os processos internos do Campaign acessam o banco de dados usando SQL.
 

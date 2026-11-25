@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 97%
+source-wordcount: '1201'
+ht-degree: 83%
 ---
 # Gestão de apresentação de ofertas{#managing-offer-presentation}
 
@@ -42,24 +42,24 @@ A interação permite controlar o fluxo de apresentações de oferta usando regr
 1. Vá para o nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**.
 1. Crie uma regra de tipologia e escolha o tipo **[!UICONTROL Offer presentation]**.
 
-   ![](assets/offer_typology_001.png)
+   ![Nó de regras de tipologia com um novo formulário de regra e a lista Tipo de regra mostrando Apresentação da oferta](assets/offer_typology_001.png)
 
 1. Especifique o canal no qual a regra será aplicada:
 
-   ![](assets/offer_typology_002.png)
+   ![Lista de canais da regra de tipologia com Todos os canais realçados](assets/offer_typology_002.png)
 
 1. Configure os critérios de aplicação da regra. Para obter mais informações, consulte [Configurações da regra de apresentação](#presentation-rule-settings).
 1. Vá para o nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typologies]** e crie uma tipologia que irá agrupar todos os tipos de regras **[!UICONTROL Offer presentation]**.
 
-   ![](assets/offer_typology_003.png)
+   ![Nó Typologies com a tipologia Offers selecionada e a guia General exibida](assets/offer_typology_003.png)
 
 1. Depois da criação da tipologia, coloque o cursor nas regras de tipologia e as agrupe na tipologia recém-criada.
 
-   ![](assets/offer_typology_004.png)
+   ![Guia Tipologias da regra com a caixa de diálogo Adicionar tipologias listando a tipologia Ofertas selecionada](assets/offer_typology_004.png)
 
 1. No seu ambiente de oferta, faça referência à tipologia usando a lista suspensa.
 
-   ![](assets/offer_typology_005.png)
+   ![Guia Eligibility do Ambiente - o ambiente de oferta de visitantes, lista de tipologia Offer presentation com Ofertas](assets/offer_typology_005.png)
 
 ## Configurações da regra de apresentação {#presentation-rule-settings}
 
@@ -69,13 +69,13 @@ Os critérios de aplicação disponíveis na guia **[!UICONTROL General]** permi
 
 1. Na regra de tipologia, clique no link **[!UICONTROL Edit the rule application conditions...]** para criar sua consulta.
 
-   ![](assets/offer_typology_006.png)
+   ![Guia Geral de uma regra de tipologia com o link Editar as condições de aplicação da regra destacado](assets/offer_typology_006.png)
 
 1. Na janela de consulta, é possível aplicar um filtro nas ofertas às quais deseja aplicar uma regra de tipologia.
 
    Por exemplo, você pode selecionar uma categoria de oferta.
 
-   ![](assets/offer_typology_008.png)
+   ![Consulta na categoria igual a uma categoria de oferta selecionada na árvore de ofertas](assets/offer_typology_008.png)
 
 ### Dimensões da oferta {#offer-dimensions}
 
@@ -83,7 +83,7 @@ Na guia **[!UICONTROL Offer presentation]**, é necessário especificar as mesma
 
 O **[!UICONTROL Targeting dimension]** coincide com a tabela de destinatários (por padrão: `nms:recipients`) que receberão as propostas de oferta. O **[!UICONTROL Storage dimension]** coincide com a tabela que contém o histórico de propostas vinculado à dimensão de direcionamento (por padrão: `nms:propositionRcp`).
 
-![](assets/offer_typology_009.png)
+![Guia de apresentação de oferta com os campos Targeting dimension e Storage dimension realçados](assets/offer_typology_009.png)
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ O período começa **n** dias antes da data de apresentação e termina **n** di
 
 Use as setas para alterar o número de dias ou insira um período diretamente (&quot;2d 6h&quot;, por exemplo).
 
-![](assets/offer_typology_010.png)
+![Guia de apresentação da oferta com o período deslizante, campo Período considerado destacado](assets/offer_typology_010.png)
 
 ### Número de apresentações {#number-of-propositions}
 
@@ -108,7 +108,7 @@ Use as setas para alterar o número de dias ou insira um período diretamente (&
 
 Use as setas para modificar o número de apresentações de ofertas:
 
-![](assets/offer_typology_011.png)
+![Guia Offer presentation com o número máximo de apresentações, campo Quantity realçado](assets/offer_typology_011.png)
 
 ## Definição de apresentações e destinatários {#defining-propositions-and-recipients}
 
@@ -118,7 +118,7 @@ A seção **[!UICONTROL Propositions to count]** permite especificar os destinat
 
 Você pode selecionar critérios de filtragem para excluir apresentações com base no canal, as ofertas relacionadas ou o status das apresentações atribuídas anteriormente.
 
-![](assets/offer_typology_014.png)
+![Propostas para contar seção com No mesmo canal apenas, Ofertas e Filtros de status de apresentação realçados](assets/offer_typology_014.png)
 
 Esses critérios representam as aplicações mais frequentes das regras de apresentação. Para usar outros critérios, é possível criar uma consulta usando o link **[!UICONTROL Limit propositions...]**. Para obter mais informações, consulte a seção [Criação de uma consulta nas apresentações](#creating-a-query-on-propositions).
 
@@ -164,7 +164,7 @@ Esses critérios representam as aplicações mais frequentes das regras de apres
 
 Para especificar os destinatários, clique no link **[!UICONTROL Edit the query from the targeting dimension...]** e selecione os destinatários relacionados à regra.
 
-![](assets/offer_typology_012.png)
+![Editar assistente de consulta de filtragem selecionando Destinatários incluídos em uma pasta como a consulta de targeting dimension](assets/offer_typology_012.png)
 
 ### Criação de uma consulta em apresentações {#creating-a-query-on-propositions}
 
@@ -172,4 +172,4 @@ Para especificar as apresentações que serão contadas por meio de uma consulta
 
 No exemplo a seguir, as apresentações a serem contadas após duas apresentações são aquelas na categoria **Ofertas especiais**, para o espaço **Call center**, com um peso abaixo de **20**.
 
-![](assets/offer_typology_013.png)
+![Limite a consulta de propostas em peso, espaço de ofertas e um peso abaixo de 20 para que as propostas sejam contadas](assets/offer_typology_013.png)

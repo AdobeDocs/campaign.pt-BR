@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3162'
-ht-degree: 66%
+source-wordcount: '3182'
+ht-degree: 65%
 ---
 # Práticas recomendadas de entrega {#delivery-best-practices}
 
@@ -60,7 +60,7 @@ Antes mesmo de começar a criar as entregas, você pode realizar várias ações
 
 Vários fatores podem afetar diretamente o desempenho do servidor e retardar sua plataforma do Campaign:
 
-* O número e o tipo de elementos [personalização](../send/personalize.md): a personalização em emails extrai dados do banco de dados para cada destinatário. No caso de muitos elementos de personalização, a quantidade de dados necessária para preparar o delivery é maior. Isso pode tornar sua plataforma lenta. Saiba mais sobre as medidas de proteção de personalização em [esta seção](../send/personalize.md#perso-guardrails).
+* O número e o tipo de elementos [personalização](../send/personalize.md): a personalização em emails extrai dados do banco de dados para cada destinatário. No caso de muitos elementos de personalização, a quantidade de dados necessária para preparar o delivery é maior. Isso pode tornar sua plataforma lenta. Saiba mais sobre as medidas de proteção de personalização em [Medidas de proteção e recomendações](../send/personalize.md#perso-guardrails).
 
 * A carga do servidor: quando o servidor de marketing estiver lidando com várias tarefas diferentes ao mesmo tempo, o desempenho poderá ser retardado. O servidor de marketing precisa coordenar todos os dados de entrada e saída de todas as entregas para garantir que os dados estejam corretos no momento correto.
 Para evitar isso, coordene a programação de deliveries com os outros membros da equipe, garantindo um melhor desempenho.
@@ -143,7 +143,7 @@ Para configurar endereços na interface do Campaign, siga os passos abaixo:
 
 ### Configurar um grupo de controle {#set-up-control-group}
 
-Depois que a entrega é enviada, você pode comparar o comportamento dos destinatários excluídos com os destinatários que receberam a entrega. Você pode então medir a eficiência de suas campanhas. Saiba mais sobre grupos de controle [nesta seção](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
+Depois que a entrega é enviada, você pode comparar o comportamento dos destinatários excluídos com os destinatários que receberam a entrega. Você pode então medir a eficiência de suas campanhas. Saiba mais sobre grupos de controle em [Adicionar um grupo de controle](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
 ### Usar tipologias para aplicar filtros ou regras de controle {#create-typologies}
 
@@ -153,13 +153,13 @@ Na guia **[!UICONTROL Typology]** das propriedades do modelo, você pode selecio
 
 Por exemplo, para controlar melhor o tráfego de saída, você pode definir quais endereços IP podem ser usados, estabelecendo uma afinidade por subdomínio e criando uma tipologia por afinidade. As afinidades são definidas no arquivo de configuração da instância. Entre em contato com o administrador do Adobe Campaign.
 
-Para obter mais informações sobre tipologias, consulte [esta seção](../../automation/campaign-opt/campaign-typologies.md).
+Para obter mais informações sobre tipologias, consulte [Introdução às tipologias da campanha](../../automation/campaign-opt/campaign-typologies.md).
 
 ## Otimizar seu conteúdo {#optimize-content}
 
 ### Criar conteúdo personalizado {#perso-content}
 
-Para personalizar suas mensagens, você pode usar os dados dos recipients armazenados no banco de dados ou coletados por meio de rastreamento, landing pages, assinaturas, etc. As noções básicas do Personalization são apresentadas em [esta seção](../send/personalize.md).
+Para personalizar suas mensagens, você pode usar os dados dos recipients armazenados no banco de dados ou coletados por meio de rastreamento, landing pages, assinaturas, etc. As noções básicas do Personalization são apresentadas em [Introdução à personalização](../send/personalize.md).
 
 +++ **Leia algumas práticas recomendadas**
 
@@ -171,9 +171,9 @@ Para personalizar suas mensagens, você pode usar os dados dos recipients armaze
   %>
   &grave;&grave;
 
-  Para obter mais informações sobre blocos de personalização, consulte [esta seção](../send/personalization-blocks.md).
+  Para obter mais informações sobre blocos de personalização, consulte [Usar blocos de personalização](../send/personalization-blocks.md).
 
-* Preparar dados de personalização - Você pode preparar dados de personalização em um workflow para melhorar a análise de preparação de delivery. Isso deve ser usado se os dados de personalização vierem de uma tabela externa por meio do Federated Data Access (FDA). Esta opção está descrita em [esta seção](../send/personalization-data.md#optimize-personalization)
+* Preparar dados de personalização - Você pode preparar dados de personalização em um workflow para melhorar a análise de preparação de delivery. Isso deve ser usado se os dados de personalização vierem de uma tabela externa por meio do Federated Data Access (FDA). Esta opção está descrita em [Otimizar personalização](../send/personalization-data.md#optimize-personalization)
 +++
 
 ### Criar conteúdo otimizado {#build-optimized-content}
@@ -215,7 +215,7 @@ Trabalhe na [linha de assunto](../send/personalization-fields.md#personalization
 
 ### Mirror page {#mirror-page-check}
 
-Sempre inclua um link de mirror page. A posição preferida é na parte superior do email. Saiba mais sobre a mirror page em [esta página](../send/mirror-page.md)
+Sempre inclua um link de mirror page. A posição preferida é na parte superior do email. Saiba mais sobre a mirror page em [Adicionar um link à mirror page](../send/mirror-page.md)
 
 ### Link de unsubscription {#unsub-link-check}
 
@@ -320,7 +320,7 @@ No assistente de entrega, a subguia **[!UICONTROL Preview]** permite visualizar 
 
 ## Definir o público-alvo correto {#define-the-right-audience}
 
-A população de destino é fundamental: crie suas listas cuidadosamente, teste seus emails em clientes de email populares e dispositivos móveis e verifique se suas listas de email estão atualizadas (sem endereços desconhecidos ou obsoletos). Você também pode enviar provas que ajudam a configurar um ciclo de validação completo. Saiba mais sobre públicos-alvo [nesta seção](../audiences/gs-audiences.md).
+A população de destino é fundamental: crie suas listas cuidadosamente, teste seus emails em clientes de email populares e dispositivos móveis e verifique se suas listas de email estão atualizadas (sem endereços desconhecidos ou obsoletos). Você também pode enviar provas que ajudam a configurar um ciclo de validação completo. Saiba mais sobre públicos no [Introdução a perfis e públicos no Campaign](../audiences/gs-audiences.md).
 
 ### Direcionar ao público-alvo correto {#target-the-right-audience}
 

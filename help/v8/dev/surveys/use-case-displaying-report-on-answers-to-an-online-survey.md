@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 89%
+source-wordcount: '657'
+ht-degree: 66%
 ---
 # Caso de uso: exibição do relatório sobre as respostas de uma pesquisa online{#use-case-displaying-report-on-answers-to-an-online-survey}
 
@@ -63,27 +63,27 @@ Antes de começar neste caso de uso, é preciso ter acesso a uma pesquisa e um c
 
 Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
-1. Crie um fluxo de trabalho e coloque uma atividade **[!UICONTROL Answers to a survey]**. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](publish-track-and-use-collected-data.md#using-the-collected-data).
+1. Crie um fluxo de trabalho e coloque uma atividade **[!UICONTROL Answers to a survey]**. Para obter mais informações sobre como usar esta atividade, consulte [Como usar os dados coletados](publish-track-and-use-collected-data.md#using-the-collected-data).
 1. Edite a atividade e selecione a pesquisa cujas respostas deseja analisar.
 1. Habilite a opção **[!UICONTROL Select all the answer data]** para coletar todas as informações.
 
-   ![](assets/reporting_usecase_1_01.png)
+   ![Atividade de respostas de pesquisa no fluxo de trabalho de Pesquisa Online com uma pesquisa selecionada e a opção Selecionar todos os dados de resposta habilitada.](assets/reporting_usecase_1_01.png)
 
 1. Selecione as colunas a serem extraídas (nesse caso, selecione todos os campos arquivados). Esses são os campos que contêm as respostas.
 
-   ![](assets/reporting_usecase_1_02.png)
+   ![Selecione a caixa de diálogo de colunas extras para escolher os campos arquivados a serem adicionados às colunas de saída.](assets/reporting_usecase_1_02.png)
 
 1. Depois que a caixa de coleção de resposta estiver configurada, posicione uma atividade do tipo **[!UICONTROL List update]** para salvar os dados.
 
-   ![](assets/reporting_usecase_1_04.png)
+   ![Fluxo de trabalho com uma atividade de Survey responses vinculada por uma transição Result para uma atividade List update.](assets/reporting_usecase_1_04.png)
 
    Nesta atividade, especifique a lista que deve ser atualizada e desmarque a opção **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: as respostas são adicionadas à tabela existente. Essa opção permitirá fazer referência à lista em um cubo. O esquema vinculado à lista não será recriado em cada atualização, o que garante a integridade do cubo que usa essa lista.
 
-   ![](assets/reporting_usecase_1_03.png)
+   ![Caixa de diálogo de atualização de lista com a opção Limpar e reutilizar a lista se existir desmarcada para que as respostas sejam adicionadas à lista.](assets/reporting_usecase_1_03.png)
 
 1. Inicie o fluxo de trabalho para confirmar sua configuração.
 
-   ![](assets/reporting_usecase_1_05.png)
+   ![Diagrama de fluxo de trabalho de pesquisa online com respostas da pesquisa conectadas à atualização da lista, pronto para iniciar.](assets/reporting_usecase_1_05.png)
 
    A lista especificada é criada e inclui o esquema das respostas da pesquisa.
 
@@ -97,11 +97,11 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
 Neste exemplo, o cubo se baseia nos dados da lista alimentados pelo fluxo de trabalho criado anteriormente.
 
-![](assets/reporting_usecase_2_01.png)
+![A caixa de diálogo Cubo Responde à Pesquisa Online com a opção Usar uma lista selecionada e a lista REP WEB como lista de fatos.](assets/reporting_usecase_2_01.png)
 
 Defina as dimensões e as medidas a serem exibidas no relatório. Aqui, queremos exibir a data do contrato e o país do entrevistado.
 
-![](assets/reporting_usecase_2_02.png)
+![Guia Dimensões de Cubo com País e Depto., e guia Medidas com contrato Respondido, contrato de 2016 e contrato de 2017.](assets/reporting_usecase_2_02.png)
 
 A guia **[!UICONTROL Preview]** permite controlar a renderização do relatório.
 
@@ -109,8 +109,8 @@ A guia **[!UICONTROL Preview]** permite controlar a renderização do relatório
 
 Em seguida, é possível criar um relatório com base nesse cubo e processar os dados e informações.
 
-![](assets/reporting_usecase_3_01.png)
+![Criando uma nova página de relatório com o modelo de cubo de Pesquisa Online de Respostas selecionado e o botão Criar.](assets/reporting_usecase_3_01.png)
 
 Adapte as informações a serem exibidas com base nas suas necessidades.
 
-![](assets/reporting_usecase_3_02.png)
+![Tabela de relatório de pesquisa online de contagens de contrato de 2016 e 2017 por país, com a dimensão País nas linhas.](assets/reporting_usecase_3_02.png)

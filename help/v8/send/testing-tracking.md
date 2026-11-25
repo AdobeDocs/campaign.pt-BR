@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '688'
 ht-degree: 3%
 ---
 # Testar o rastreamento de mensagens {#testing-tracking}
@@ -59,7 +59,7 @@ Você pode testar o rastreamento em páginas de espelhamento, logs de email e li
 1. Projete seu conteúdo de email com links que deseja rastrear. [Saiba mais sobre design de conteúdo de email](defining-the-email-content.md)
 1. Adicione um bloco de personalização de mirror page no conteúdo do email. [Saiba mais sobre blocos de personalização](personalization-blocks.md)
 
-   ![](assets/mirror-page-insert.png)
+   ![Menu do Personalization com Incluir e Vincular à mirror page selecionado no editor de conteúdo de email](assets/mirror-page-insert.png)
 
 1. Especifique o usuário que receberá o email. Como esse usuário terá que abrir o email e clicar nos links que ele contém, verifique se foi selecionado um endereço de recipient de teste de controle. [Saiba mais sobre perfis de teste](../audiences/test-profiles.md)
 
@@ -71,7 +71,7 @@ Você pode testar o rastreamento em páginas de espelhamento, logs de email e li
    * Verifique se **[!UICONTROL Activate tracking]** está marcado
    * Certifique-se de que **[!UICONTROL Opens tracking]** esteja marcado se você deseja rastrear aberturas
 
-   ![](assets/s_ncs_user_email_del_tracking_param.png)
+   ![Caixa de diálogo Rastreamento e Imagens com a opção Ativar rastreamento e Abrir rastreamento marcada e a lista de URLs rastreadas](assets/s_ncs_user_email_del_tracking_param.png)
 
    [Saiba mais sobre as opções de rastreamento de URL](url-tracking.md)
 
@@ -92,7 +92,7 @@ Você pode testar o rastreamento em páginas de espelhamento, logs de email e li
    * Selecione a guia **[!UICONTROL Tracking]**
    * Verifique se a lista de logs de rastreamento é exibida com os URLs clicados e outros eventos de rastreamento
 
-   ![](assets/s_ncs_user_delivery_tracking_tab.png)
+   ![Guia Rastreamento de Entrega com uma lista de logs de rastreamento mostrando rótulos, tipos de clique e abertura e destinatários](assets/s_ncs_user_delivery_tracking_tab.png)
 
 ## Etapa 4: verificar a guia de rastreamento do recipient {#check-recipient-tracking}
 
@@ -101,7 +101,7 @@ Você pode testar o rastreamento em páginas de espelhamento, logs de email e li
 
 1. Selecione a guia **[!UICONTROL Tracking]**. [Saiba mais sobre logs de rastreamento](tracking-logs.md)
 
-   ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
+   ![Guia Rastreamento de perfil do destinatário listando logs de rastreamento com data, rótulo, tipo e entrega](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
 1. Verifique se os registros de rastreamento aparecem com:
    * O valor **[!UICONTROL Mirror Page]** na coluna **[!UICONTROL Type]**

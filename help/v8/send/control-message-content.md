@@ -17,10 +17,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 97%
+source-wordcount: '770'
+ht-degree: 95%
 ---
 # Controlar conteúdo da mensagem{#control-message-content}
 
@@ -52,7 +52,7 @@ Para obter mais informações sobre como definir o endereço do remetente, consu
 
 Para melhorar a experiência dos destinatários e fazer com que eles abram seu email, o Adobe Campaign permite personalizar as mensagens.
 
-Para obter mais informações sobre o uso de campos de personalização no Adobe Campaign, consulte [esta seção](personalization-fields.md).
+Para obter mais informações sobre como usar campos de personalização no Adobe Campaign, consulte [Adicionar campos de personalização](personalization-fields.md).
 
 ## Formulário e link para opção de não participação {#opt-out}
 

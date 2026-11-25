@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 22%
+source-wordcount: '829'
+ht-degree: 18%
 ---
 # Pré-visualizar e testar o email {#preview-test}
 
@@ -41,11 +41,11 @@ Para visualizar o conteúdo da mensagem, siga as etapas abaixo:
 1. Navegue até a guia **Visualização** da entrega.
 1. Clique no botão **[!UICONTROL Test personalization]** para selecionar um perfil para preencher os dados de personalização. Você pode escolher um recipient específico no banco de dados, um seed address ou selecionar um perfil do público-alvo, caso ele já tenha sido definido. Você também pode verificar o conteúdo sem personalização.
 
-   ![](assets/test-personalization.png)
+   ![Testar menu de personalização na guia de Visualização: Recipient, A seed address, População do público-alvo de entrega, Sem personalização](assets/test-personalization.png)
 
 1. A pré-visualização é gerada para que você possa verificar a renderização da mensagem. Na pré-visualização da mensagem, os elementos personalizados são substituídos pelos dados do perfil de teste selecionado.
 
-   ![](assets/test-personalization-with-a-recipient.png)
+   ![Visualização de email com o assunto e cabeçalho personalizados com o nome do perfil de teste selecionado](assets/test-personalization-with-a-recipient.png)
 
 1. Selecione outros perfis de teste para visualizar a renderização de email para cada variante da mensagem.
 
@@ -59,7 +59,7 @@ Uma prova é uma mensagem específica que permite testar uma mensagem antes de e
 
 O target de prova pode ser definido no template de delivery ou específico para um delivery. Em ambos os casos, navegue até a tela de definição de destino no link **[!UICONTROL To]** e selecione a guia **[!UICONTROL Target of the proofs]**.
 
-![](assets/target-of-proofs.png)
+![Caixa de diálogo Selecionar destino, Target da guia Provas, com o menu suspenso Modo de direcionamento e o botão Adicionar](assets/target-of-proofs.png)
 
 O tipo de destino de prova está selecionado na lista suspensa **[!UICONTROL Targeting mode]**.
 
@@ -68,11 +68,11 @@ O tipo de destino de prova está selecionado na lista suspensa **[!UICONTROL Tar
 
   Por padrão, a substituição é executada aleatoriamente, mas você pode selecionar um recipient específico do público-alvo principal, por meio do ícone **[!UICONTROL Detail]**.
 
-  ![](assets/target-of-proofs-substitution-details.png){width="800"}
+  ![Substituição do modo de endereço listando endereços de prova, com o ícone Detalhe usado para selecionar um perfil específico](assets/target-of-proofs-substitution-details.png){width="800"}
 
   Escolha a opção **[!UICONTROL Select a profile (must be included in the target)]** e selecione um recipient.
 
-  ![](assets/target-of-proofs-substitution.png){width="800"}
+  ![Caixa de diálogo de destinatário de prova stand-in com a opção Selecionar um perfil e um destinatário escolhido da lista](assets/target-of-proofs-substitution.png){width="800"}
 
 
 * Use a opção **[!UICONTROL Seed addresses]** para usar seed addresses como target de prova. Esses endereços podem ser importados de um arquivo ou inseridos manualmente.
@@ -81,7 +81,7 @@ O tipo de destino de prova está selecionado na lista suspensa **[!UICONTROL Tar
   >
   >Os seed addresses não pertencem à tabela de recipient padrão (nms:recipient), pois são criados em uma tabela separada. Se a tabela de recipients é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados.
 
-  Saiba mais sobre seed addresses [nesta seção](../audiences/test-profiles.md).
+  Saiba mais sobre seed addresses em [Criar perfis de teste no Campaign](../audiences/test-profiles.md).
 
 * Use a opção **[!UICONTROL Specific target and Seed addresses]** para combinar seed addresses e endereços de email específicos. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 
@@ -93,7 +93,7 @@ Para enviar provas de mensagem, siga as etapas abaixo:
 1. Na janela **[!UICONTROL Send a proof]**, verifique os recipients da prova.
 1. Clique em **[!UICONTROL Analyze]** para iniciar a preparação da mensagem de prova.
 
-   ![](assets/send-proof-analyze.png){width="800"}
+   ![Enviar uma janela de prova com endereços de substituição e o log de análise de entrega em execução após clicar em Analisar](assets/send-proof-analyze.png){width="800"}
 
 1. Quando a preparação da entrega for concluída, use o **[!UICONTROL Confirm delivery]** para começar a enviar mensagens de prova.
 
@@ -115,7 +115,7 @@ As propriedades de prova são definidas na guia **[!UICONTROL Advanced]** da jan
 
 Por padrão, as mensagens de prova são identificadas pela menção `Proof #N` no assunto, onde `N` é o número de prova. Esse número é incrementado a cada análise de delivery de prova. Você pode alterar o prefixo `proof`, conforme necessário.
 
-![](assets/proof-parameters.png){width="800"}
+![Caixa de diálogo Propriedades de prova da guia Avançado com opções de prova e o campo Prefixo do rótulo definido como Prova](assets/proof-parameters.png){width="800"}
 
 
 ## Vídeo tutorial {#video-proof}

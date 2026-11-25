@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 5%
+source-wordcount: '793'
+ht-degree: 4%
 ---
 # Gerenciar pastas e visualizações {#folders-and-views}
 
@@ -74,13 +74,13 @@ Para criar uma pasta, clique com o botão direito do mouse em uma pasta existent
 
 Para criar o mesmo tipo de pasta que a pasta selecionada, escolha a primeira opção no menu contextual. Por exemplo, em uma pasta Recipients, selecione **[!UICONTROL Create a new 'Recipients' folder]**.
 
-![](assets/create-recipient-folder.png)
+![Menu de contexto da pasta Destinatários com a opção Criar uma nova pasta &#39;Destinatários&#39; realçada](assets/create-recipient-folder.png)
 
 Você pode arrastar e soltar a nova pasta para organizar a árvore do explorador do Campaign conforme necessário.
 
 Para criar outro tipo de pasta, clique com o botão direito em uma pasta existente e selecione **[!UICONTROL Add new folder]**. É possível criar todos os tipos de pastas, dependendo dos dados a serem armazenados.
 
-![](assets/add-new-folder.png)
+![Adicionar novo menu de pasta mostrando o submenu Banco de Dados com o tipo de pasta Listas selecionado](assets/add-new-folder.png)
 
 >[!CAUTION]
 >
@@ -109,15 +109,15 @@ No exemplo abaixo, criaremos uma nova pasta para exibir apenas deliveries dos EU
 1. Clique com o botão direito do mouse nessa pasta e selecione **[!UICONTROL Properties...]**.
 1. Na guia **[!UICONTROL Restriction]**, selecione **[!UICONTROL This folder is a view]**. Todas as entregas no banco de dados serão exibidas.
 
-   ![](assets/this-folder-is-a-view.png)
+   ![Propriedades de pasta de Entregas EUA com a opção Esta pasta é uma opção de exibição selecionada na guia Restrição](assets/this-folder-is-a-view.png)
 
 1. Defina os critérios de filtro no editor de query na seção central da janela: somente os deliveries correspondentes ao filtro são exibidos na pasta.
 
-   ![](assets/filter-view.png)
+   ![Condições de filtro da guia Restrição definindo a exibição como nome interno começa com US](assets/filter-view.png)
 
    >[!NOTE]
    >
-   >Saiba como criar consultas em [esta página](create-filters.md#advanced-filters)
+   >Saiba como criar consultas em [Filtros avançados](create-filters.md#advanced-filters)
 
 
 >[!CAUTION]
@@ -132,7 +132,7 @@ Procure a guia **Subpastas** das propriedades da pasta para organizar suas subpa
 
 Você pode mover as pastas com as setas à direita ou selecionar a opção **[!UICONTROL Sort the sub-folders in alphabetical order]** para classificá-las automaticamente.
 
-![](assets/sort-folders.png)
+![Guia de subpastas das propriedades da pasta com a opção Mover seta para baixo e classificar alfabeticamente](assets/sort-folders.png)
 
 
 ## Filtrar dados em uma pasta{#filter-data-in-a-folder}
@@ -141,9 +141,9 @@ Para filtrar os dados armazenados em uma pasta, acesse as propriedades da pasta 
 
 Por exemplo, a pasta abaixo conterá apenas contatos com um endereço de email e cuja origem não esteja sinalizada como &#39;Externa&#39; ou esteja vazia.
 
-![](assets/add-a-filter-to-a-folder.png)
+![Guia Restrição das propriedades da pasta Entregas dos EUA, filtrada em nome interno começa com US](assets/add-a-filter-to-a-folder.png)
 
 
 ## Restringir o acesso a uma pasta{#restrict-access-to-a-folder}
 
-Use permissões em pastas para organizar e controlar o acesso aos dados do Campaign. Saiba mais sobre permissões em pastas em [esta seção](../start/folder-permissions.md).
+Use permissões em pastas para organizar e controlar o acesso aos dados do Campaign. Saiba mais sobre permissões em pastas em [Conceder e restringir permissões em pastas do Campaign](../start/folder-permissions.md).

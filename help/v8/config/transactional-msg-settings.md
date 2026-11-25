@@ -24,16 +24,16 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '603'
 ht-degree: 28%
 ---
 # Configurações de mensagens transacionais {#mc-settings}
 
-As mensagens transacionais (Centro de mensagens) são um módulo do Campaign criado para gerenciar mensagens acionadas. Saiba mais sobre mensagens transacionais em [esta seção](../send/transactional.md).
+As mensagens transacionais (Centro de mensagens) são um módulo do Campaign criado para gerenciar mensagens acionadas. Saiba mais sobre mensagens transacionais em [Mensagens transacionais do Campaign](../send/transactional.md).
 
-Entenda a arquitetura de mensagens transacionais em [esta página](../architecture/architecture.md#transac-msg-archi).
+Entenda a arquitetura de mensagens transacionais em [Arquitetura do Centro de Mensagens](../architecture/architecture.md#transac-msg-archi).
 
 
 >[!NOTE]

@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 82ae202007873dab2324bfa4b13a6014efd19887
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 65%
+source-wordcount: '1279'
+ht-degree: 48%
 ---
 # Usar cubos para explorar dados{#use-cubes-to-create-reports}
 
@@ -52,17 +52,17 @@ Para criar um relatório com base em um cubo existente, siga as etapas abaixo:
 
 1. Clique no botão **[!UICONTROL Create]** da guia **[!UICONTROL Reports]** e selecione o cubo que acabou de criar.
 
-   ![](assets/new-report-based-on-cube.png)
+   ![Criando uma nova página de relatório com o modelo de cubo Novo Perfil de Cliente selecionado e o botão Criar](assets/new-report-based-on-cube.png)
 
 1. Clique no botão **[!UICONTROL Create]** para confirmar: isso direcionará a tela para a configuração do relatório e a exibição da página.
 
    Por padrão, as duas primeiras dimensões disponíveis são oferecidas em linhas e colunas, mas nenhum valor é exibido na tabela. Clique no ícone principal para gerar a tabela:
 
-   ![](assets/cube-report-config.png)
+   ![Novo relatório de Perfil de Cliente com eixos de Idade e Data de criação e o ícone para exibir a tabela dinâmica](assets/cube-report-config.png)
 
 1. É possível alternar os eixos da dimensão, excluí-los, adicionar novas medidas etc. Para fazer isso, use os ícones apropriados.
 
-   ![](assets/cube-switch-axis.png)
+   ![Dimensão de data de criação arrastada do eixo esquerdo para o eixo superior ao lado de Idade no relatório Novo Perfil de Cliente](assets/cube-switch-axis.png)
 
    Essas operações são detalhadas abaixo.
 
@@ -72,15 +72,15 @@ A exibição padrão mostra as duas primeiras dimensões do cubo (idade e cidade
 
 Os botões **[!UICONTROL Add]** em cada eixo permitem adicionar dimensões.
 
-![](assets/cube-switch.png)
+![Botão Adicionar no eixo das linhas do relatório Novo Perfil de Cliente para adicionar uma dimensão](assets/cube-switch.png)
 
 1. Selecione as dimensões a serem exibidas nas linhas e colunas da tabela. Para fazer isso, arraste e solte as dimensões disponíveis.
 1. Selecione as dimensões que deseja adicionar à tabela na lista:
-   ![](assets/cube-select-dimension.png)
+   ![Adicione uma dimensão à caixa de diálogo da coluna listando Cidade, País, Data da Última Compra e Valor de Compras](assets/cube-select-dimension.png)
 
 1. Em seguida, selecione os parâmetros dessa dimensão.
 
-   ![](assets/cube-dimension-param.png)
+   ![Configurações do Dimension para a Cidade: Rotular, Expandir durante o carregamento, Classificar dados, ordenar e Número de linhas mostradas](assets/cube-dimension-param.png)
 
    Esses parâmetros dependem do tipo de dados da dimensão selecionada.
 
@@ -88,7 +88,7 @@ Os botões **[!UICONTROL Add]** em cada eixo permitem adicionar dimensões.
 
    Nesse caso, as seguintes opções estão disponíveis:
 
-   ![](assets/cube-config.png)
+   ![Configurações de dimensão de data por nível, Ano e Mês, incluindo Formato Longo ou Curto](assets/cube-config.png)
 
    É possível:
 
@@ -102,7 +102,7 @@ Os botões **[!UICONTROL Add]** em cada eixo permitem adicionar dimensões.
 
    O banner amarelo acima da tabela mostra que você fez alterações: clique no botão **[!UICONTROL Save]** para salvá-las.
 
-   ![](assets/cube-in-report.png)
+   ![Cidade adicionada ao eixo das linhas, com o banner amarelo solicitando que você Salve as alterações do relatório](assets/cube-in-report.png)
 
 ### Etapa 3 - Configurar as medidas para exibir {#step-3---configure-the-measures-to-display}
 
@@ -112,25 +112,25 @@ Para adicionar e configurar medidas, siga as etapas abaixo:
 
 1. Clique no botão **[!UICONTROL Measures]**.
 
-   ![](assets/cube-measure-button.png)
+   ![Botão Medidas abrindo a caixa de diálogo Configurar medidas com as opções Rótulo, Formatação e Unidade](assets/cube-measure-button.png)
 
 1. Com o botão **[!UICONTROL Use a measure]**, selecione uma das medidas existentes.
 
-   ![](assets/cube-add-measure.png)
+   ![Adicionar uma medida existente à caixa de diálogo da tabela dinâmica listando francês, alemão, homens e mulheres](assets/cube-add-measure.png)
 
    Escolha as informações a serem exibidas e as opções de formatação. A lista de opções depende do tipo de medida.
 
-   ![](assets/cube-measure-options.png)
+   ![Caixa de diálogo Configurar medidas com opções de Formatação Número e Porcentagem e botão Editar medida dinâmica](assets/cube-measure-options.png)
 
    A configuração de medida geral também está disponível por meio do ícone **[!UICONTROL Edit the configuration of the pivot table]** no cabeçalho.
 
-   ![](assets/cube-pivot-table-config.png)
+   ![Editar o ícone de configuração da tabela dinâmica na barra de ferramentas do relatório](assets/cube-pivot-table-config.png)
 
    Você pode então escolher se exibe ou não os rótulos de medida. [Saiba mais](customize-cubes.md#configuring-the-display).
 
 1. Você pode criar novas medidas com base nas existentes. Para fazer isso, clique **[!UICONTROL Create a measure]** e configure-a.
 
-   ![](assets/cube-create-new-measure.png)
+   ![Criando uma caixa de diálogo de medida dinâmica com a Combinação de tipo de medidas, operador e duas medidas](assets/cube-create-new-measure.png)
 
    Os seguintes tipos de medidas estão disponíveis:
 
@@ -144,7 +144,7 @@ Para adicionar e configurar medidas, siga as etapas abaixo:
 
    Depois de criada, a medida é adicionada ao relatório.
 
-   ![](assets/cube-display-new-measure.png)
+   ![Tabela dinâmica mostrando a nova medida em alemão e inglês ao lado de homens e mulheres, por empresa](assets/cube-display-new-measure.png)
 
    Depois de criar uma medida, você pode editá-la e alterar sua configuração. Para fazer isso, clique no botão **[!UICONTROL Measures]** e navegue até a guia da medida a ser editada.
 
@@ -158,31 +158,31 @@ Para agrupar uma população em uma lista, siga as etapas abaixo:
 
 1. Clique nas células que contêm a população a ser coletada para selecioná-las e depois clique no ícone **[!UICONTROL Add to cart]**.
 
-   ![](assets/cube-add-to-cart.png)
+   ![Ícone Adicionar ao carrinho na barra de ferramentas da tabela dinâmica de CLIENTES com células selecionadas](assets/cube-add-to-cart.png)
 
    Faça isso quantas vezes forem necessárias para coletar vários perfis.
 
 1. Clique no botão **[!UICONTROL Show cart]** para exibir seu conteúdo antes de executar a exportação.
 
-   ![](assets/cube-show-cart.png)
+   ![Mostrar botão do carrinho abrindo a caixa de diálogo Detalhes do carrinho com itens do carrinho e o botão Exportar](assets/cube-show-cart.png)
 
 1. Use o botão **[!UICONTROL Export]** para agrupar os itens do carrinho em uma lista.
 
    Insira o nome da lista e selecione o tipo de exportação a ser executada.
 
-   ![](assets/cube-export-report.png)
+   ![Caixa de diálogo Exportar carrinho 1/2 com exportação para uma nova lista, Etiqueta, Pasta e Tipo de exportação e Botão Iniciar](assets/cube-export-report.png)
 
    Clique em **[!UICONTROL Start]** para executar a exportação.
 
 1. Uma vez concluída a exportação, uma mensagem confirma sua execução e o número de registros processados.
 
-   ![](assets/cube-export-confirm.png)
+   ![A caixa de diálogo de confirmação da Exportação do carrinho 2/2 foi concluída com o número de registros e os botões Fechar](assets/cube-export-confirm.png)
 
    Você pode salvar o conteúdo do carrinho ou esvaziá-lo.
 
    A nova lista está disponível por meio da guia **[!UICONTROL Profiles and targets]**.
 
-   ![](assets/cube-list-available.png)
+   ![Lista a página em Perfis e destinos mostrando a nova lista de destinatários GOLD](assets/cube-list-available.png)
 
 ## Inserir uma tabela dinâmica em um relatório {#insert-a-pivot-table-into-a-report}
 
@@ -190,10 +190,10 @@ Para criar uma tabela e explorar os dados em um cubo, siga as etapas abaixo:
 
 1. Crie um novo relatório com uma única página e insira uma tabela dinâmica.
 
-   ![](assets/cube-insert-in-report.png)
+   ![Editor de relatórios com uma atividade Page e a opção de tabela dinâmica no menu da barra de ferramentas](assets/cube-insert-in-report.png)
 
 1. Na guia **[!UICONTROL Data]** da página, selecione um cubo para processar as dimensões que ele contém e exibir medidas calculadas.
 
-   ![](assets/cube-selected-in-report.png)
+   ![Guia Dados da tabela dinâmica com o cubo Novo Perfil de Cliente selecionado no campo Cubo](assets/cube-selected-in-report.png)
 
    Isso permite criar o relatório a ser exibido. Para obter mais informações, consulte [Etapa 2 - Selecionar linhas e colunas](#step-2---select-lines-and-columns).

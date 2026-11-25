@@ -35,16 +35,16 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 64%
+source-wordcount: '576'
+ht-degree: 59%
 ---
 # Status de entrega {#delivery-statuses}
 
 Depois que uma entrega é enviada, o painel da entrega exibe um status que permite monitorar se o envio foi bem sucedido. Os possíveis status estão detalhados na seção abaixo.
 
-![](assets/delivery-status.png)
+![Resumo do painel de entrega com o campo Status realçado, mostrando Concluído e a data de término](assets/delivery-status.png)
 
 Para obter mais detalhes sobre as diferentes falhas de entrega que podem ser encontradas e como resolvê-las, consulte [Noções básicas sobre falhas de entrega](delivery-failures.md).
 
@@ -108,7 +108,7 @@ Para obter mais detalhes sobre as diferentes falhas de entrega que podem ser enc
  </tbody> 
 </table>
 
-Para saber como otimizar a capacidade de entrega dos emails do Adobe Campaign, consulte [esta seção](about-deliverability.md). Para obter informações mais detalhadas sobre a capacidade de entrega, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
+Para saber como otimizar a capacidade de entrega dos emails do Adobe Campaign, consulte [Introdução à capacidade de entrega no Campaign](about-deliverability.md). Para obter informações mais detalhadas sobre a capacidade de entrega, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 ## Status pendente {#pending-status}
 

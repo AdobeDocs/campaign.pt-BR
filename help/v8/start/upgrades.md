@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 15%
+source-wordcount: '1796'
+ht-degree: 14%
 ---
 # Versões, atualizações e segurança {#upgrades}
 
@@ -43,7 +43,7 @@ Como usuário do Managed Cloud Services:
 
 * A instância do servidor do Campaign é atualizada pela Adobe a cada nova versão, automaticamente e sem exigir nenhuma ação da sua parte.
 * O representante da Adobe entra em contato com você antes de uma atualização que afeta seu ambiente.
-* **O console do cliente é o único componente pelo qual você é responsável.** Ele deve ser atualizado para a mesma versão que o servidor do Campaign. Saiba como atualizar seu console do cliente nesta [página](../start/connect.md#upgrade-ac-console).
+* **O console do cliente é o único componente pelo qual você é responsável.** Ele deve ser atualizado para a mesma versão que o servidor do Campaign. Saiba como atualizar seu console do cliente no [Atualizar seu Console do Cliente](../start/connect.md#upgrade-ac-console).
 
 Além disso, como cliente, verifique se você está usando a versão compatível mais recente dos sistemas listados na [Matriz de compatibilidade](compatibility-matrix.md).
 
@@ -92,7 +92,7 @@ Observe que, como cliente, você também deve garantir que esteja usando as vers
 
 Para verificar sua versão do Campaign, acesse o menu **Ajuda > Sobre...** no console do cliente.
 
-![](assets/ac-version.png)
+![Sobre a caixa de diálogo do console do cliente mostrando o console do cliente e as versões do servidor de aplicativos](assets/ac-version.png)
 
 Você acessa as seguintes informações:
 

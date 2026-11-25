@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 34%
+source-wordcount: '304'
+ht-degree: 32%
 ---
 # Importar perfis de um arquivo{#create-profiles}
 
@@ -61,6 +61,6 @@ O Adobe Campaign fornece a capacidade de importação genérica que permite, por
 
 As importações genéricas são gerenciadas no menu **[!UICONTROL Profiles and Targets > Jobs]** da página inicial do Adobe Campaign.
 
-![](assets/new-import-job.png)
+![Lista de trabalhos em Perfis e destinos com o menu Criar aberto para Nova importação e Nova exportação.](assets/new-import-job.png)
 
 As etapas para executar uma importação genérica estão detalhadas na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=pt-BR){target="_blank"}.

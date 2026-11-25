@@ -38,14 +38,14 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1521'
 ht-degree: 53%
 ---
 # Notas de versão de 2023 {#2023-rn}
 
-Esta página lista novos recursos, melhorias e correções incluídos nas **versões do Campaign v8 de 2023**. Para obter a versão mais recente, consulte [esta página](release-notes.md).
+Esta página lista novos recursos, melhorias e correções incluídos nas **versões do Campaign v8 de 2023**. Para obter a versão mais recente, consulte as [notas de versão do Campaign v8](release-notes.md).
 
 Para qualquer nova implementação ou atualização para um ambiente existente, instale a [versão mais recente](release-notes.md).
 
@@ -105,7 +105,7 @@ Para obter mais informações, consulte a [documentação detalhada](../send/pus
 
 * Agora você pode aproveitar a conexão de Destino do Adobe Experience Platform para sincronizar atributos de perfil, como dados de recusa entre o Adobe Experience Platform e o banco de dados do Campaign v8.
 * A preparação da entrega foi otimizada em todos os canais.
-* Uma nova opção de autenticação baseada em chave foi adicionada para a conta externa SFTP, juntamente com o método de autenticação de usuário/senha existente. Agora os usuários podem se autenticar com segurança usando uma chave privada, melhorando a segurança e fornecendo um mecanismo de autenticação alternativo para o acesso SFTP. Saiba mais [nesta seção](../config/external-accounts.md).
+* Uma nova opção de autenticação baseada em chave foi adicionada para a conta externa SFTP, juntamente com o método de autenticação de usuário/senha existente. Agora os usuários podem se autenticar com segurança usando uma chave privada, melhorando a segurança e fornecendo um mecanismo de autenticação alternativo para o acesso SFTP. Saiba mais em [Contas externas do Campaign](../config/external-accounts.md).
 
 **Melhorias de segurança**
 

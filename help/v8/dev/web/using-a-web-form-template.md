@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 100%
+source-wordcount: '262'
+ht-degree: 82%
 ---
 # Usar um modelo de formulário web{#using-a-web-form-template}
 
@@ -38,7 +38,7 @@ Aqui é possível criar novos modelos ou converter um formulário existente em u
 
 Um formulário pode ser alterado para um modelo e sua configuração pode ser reutilizada. Para fazer isso, escolha o formulário, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Save as template...]**.
 
-![](assets/s_ncs_admin_survey_saveastemplate.png)
+![Lista de aplicativos web com o menu de ações do botão direito do mouse aberto e o modelo Salvar como realçado](assets/s_ncs_admin_survey_saveastemplate.png)
 
 Essa ação abre a janela para a criação de aplicações Web. É possível inserir o nome e a descrição do modelo, além de selecionar a pasta onde será salvo.
 
@@ -46,11 +46,11 @@ Essa ação abre a janela para a criação de aplicações Web. É possível ins
 
 Para criar um modelo de formulário Web, clique com o botão direito do mouse na lista de modelos de aplicações web e selecione **[!UICONTROL New]**. Também é possível usar o botão **[!UICONTROL New]** acima da lista de modelos.
 
-![](assets/s_ncs_admin_survey_createtemplate.png)
+![Pasta de modelos de aplicativos Web no Explorer, com o botão Novo usado para criar um modelo](assets/s_ncs_admin_survey_createtemplate.png)
 
 Digite o nome do modelo. No campo **[!UICONTROL Instance folder]**, selecione a pasta onde são salvos os formulários Web criados com base nesse modelo. O campo **[!UICONTROL Nature]** permite adicionar as informações descritivas para classificar e/ou filtrar os vários modelos de aplicações web.
 
-![](assets/s_ncs_admin_survey_createtemplate_details.png)
+![Caixa de diálogo Novo aplicativo Web com opções de Rótulo, Pesquisa e Site Avançado, campos de pasta Natureza e Instâncias](assets/s_ncs_admin_survey_createtemplate_details.png)
 
 Clique no botão **[!UICONTROL Save]** para criar o modelo e, em seguida, crie o conteúdo e defina os parâmetros.
 

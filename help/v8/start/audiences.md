@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 37%
+source-wordcount: '541'
+ht-degree: 36%
 ---
 # Trabalhar com públicos no Campaign{#gs-ac-audiences}
 
@@ -44,13 +44,13 @@ Saiba como importar, atualizar e gerenciar perfis e públicos [nesta seção](..
 
 Uma lista é um conjunto estático de contatos que pode ser direcionado em ações de entrega ou atualizado durante uma importação ou outra ação de fluxo de trabalho. Por exemplo, uma população extraída do banco de dados por meio de uma consulta pode ser armazenada como uma lista.
 
-Saiba como criar e gerenciar listas em [esta página](../audiences/create-audiences.md).
+Saiba como criar e gerenciar listas em [Criar públicos de perfil no Campaign](../audiences/create-audiences.md).
 
 ## Filtrar o banco de dados{#filter-the-database}
 
 A configuração de filtro permite selecionar dados de uma lista **[!UICONTROL dynamically]**: quando os dados são modificados, os dados filtrados são atualizados. Você pode criar seus próprios filtros ou usar os filtros integrados para definir um público-alvo.
 
-Saiba como criar e gerenciar filtros em [esta página](../audiences/create-filters.md).
+Saiba como criar e gerenciar filtros no [Trabalhar com filtros no Adobe Campaign](../audiences/create-filters.md).
 
 ## Criar um público-alvo em um fluxo de trabalho
 

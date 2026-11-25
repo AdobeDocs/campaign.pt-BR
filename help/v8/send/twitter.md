@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 23%
+source-wordcount: '895'
+ht-degree: 20%
 ---
 # Postar mensagens no X (Twitter) com o Adobe Campaign {#post-tw-messages}
 
@@ -40,7 +40,7 @@ Após configurar a integração, é possível:
 * Colete novos contatos recuperando os dados do perfil, o que permite realizar campanhas de direcionamento e, quando possível, implementar estratégias entre canais. Esta ação requer o consentimento do usuário.
 
 
-As etapas de configuração para integrar sua conta X com o Adobe Campaign estão descritas em [esta página](../connect/ac-tw.md).
+As etapas de configuração para integrar sua conta X ao Adobe Campaign estão descritas em [Trabalhar com o Campaign e X (Twitter)](../connect/ac-tw.md).
 
 ## Criar e publicar uma publicação X {#publish-on-tw}
 
@@ -50,13 +50,13 @@ Siga as etapas abaixo para postar uma mensagem em sua conta X:
 
    Crie uma nova entrega com base no modelo de entrega **[!UICONTROL Tweet (twitter)]**.
 
-   ![](assets/tw-new-delivery.png)
+   ![Nova caixa de diálogo de entrega com o modelo de entrega Tweet (twitter) selecionado na lista de modelos](assets/tw-new-delivery.png)
 
 1. Seleção do público alvo principal
 
    Selecione as contas para as quais deseja enviar publicações.
 
-   ![](assets/tw-define-target.png)
+   ![Caixa de diálogo Selecionar destino na guia Destino principal com o destino de conta do Twitter e o botão Adicionar realçado](assets/tw-define-target.png)
 
    1. Clique no link **[!UICONTROL To]**.
    1. Clique no botão **[!UICONTROL Add]**.
@@ -77,7 +77,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta X:
 
    Insira o conteúdo da sua publicação na guia **[!UICONTROL Content]**.
 
-   ![](assets/tw-delivery-content.png)
+   ![Guia Conteúdo de uma entrega de Tweet com o texto da publicação e um campo de personalização inserido](assets/tw-delivery-content.png)
 
    >[!CAUTION]
    >
@@ -91,7 +91,7 @@ Siga as etapas abaixo para postar uma mensagem em sua conta X:
 
    Navegue pela guia **[!UICONTROL Preview]** para verificar a renderização da sua publicação.
 
-   ![](assets/tw-delivery-preview.png)
+   ![Guia Visualizar de uma entrega de Tweet mostrando o texto de postagem renderizado com o nome de serviço](assets/tw-delivery-preview.png)
 
    1. Clique na guia **[!UICONTROL Preview]**.
    1. Clique no menu suspenso **[!UICONTROL Test personalization]** e selecione **[!UICONTROL Service]**.
@@ -118,7 +118,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
 1. Seleção do público alvo principal
 
-   ![](assets/tw-dm-define-target.png)
+   ![Selecione a caixa de diálogo de destino com o mapeamento de assinaturas do visitante e o botão Adicionar realçado para uma mensagem direta](assets/tw-dm-define-target.png)
 
    1. Selecione o link **[!UICONTROL To]** e o botão **[!UICONTROL Add]**.
 
@@ -126,7 +126,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
       * Selecione **[!UICONTROL Twitter subscribers]** para enviar uma mensagem direta a todos os seus seguidores.
 
-      * Selecione **[!UICONTROL Filter conditions]** para definir uma consulta e visualizar seu resultado. Saiba como criar um filtro em [esta seção](../audiences/create-filters.md#advanced-filters).
+      * Selecione **[!UICONTROL Filter conditions]** para definir uma consulta e visualizar seu resultado. Saiba como criar um filtro em [Filtros avançados](../audiences/create-filters.md#advanced-filters).
 
 1. Selecione o público alvo da prova na guia **[!UICONTROL Target of the proofs]**: essa conta receberá a prova da sua mensagem direta.
 
@@ -139,15 +139,15 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
 1. Insira o conteúdo da mensagem na guia **[!UICONTROL Content]**.
 
-   ![](assets/tw-dm-content.png)
+   ![Guia Conteúdo de uma entrega de mensagem direta do Twitter com texto de mensagem personalizado](assets/tw-dm-content.png)
 
-   Campos de personalização podem ser usados da mesma forma que para entregas por email, por exemplo, para adicionar o nome do seguidor no corpo da mensagem. Saiba mais [nesta seção](../send/personalize.md).
+   Campos de personalização podem ser usados da mesma forma que para entregas por email, por exemplo, para adicionar o nome do seguidor no corpo da mensagem. Saiba mais em [Introdução à personalização](../send/personalize.md).
 
 1. Visualizar sua mensagem
 
    Navegue pela guia **[!UICONTROL Preview]** para verificar a renderização da sua publicação.
 
-   ![](assets/tw-dm-preview.png)
+   ![Guia Visualizar de uma mensagem direta do Twitter mostrando o texto personalizado para um assinante selecionado](assets/tw-dm-preview.png)
 
    1. Clique na guia **[!UICONTROL Preview]**.
    1. Clique no menu suspenso **[!UICONTROL Test personalization]** e selecione **[!UICONTROL Visitor Subscription]**.

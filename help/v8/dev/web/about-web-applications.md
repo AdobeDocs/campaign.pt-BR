@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 74%
+source-wordcount: '886'
+ht-degree: 67%
 ---
 # Introdução a aplicativos web{#about-web-applications}
 
@@ -61,7 +61,7 @@ O Adobe Campaign permite criar e publicar aplicações web dinâmicas e interati
 
 Pode ser um formulário de subscrição contendo dados pré-carregados com informações no banco de dados do Adobe Campaign, como mostrado abaixo:
 
-![](assets/webapp_form_sample.png)
+![Formulário de assinatura pré-carregado com um email, nome e país, com um botão Assinar.](assets/webapp_form_sample.png)
 
 Este capítulo fornece uma visão geral de como gerenciar as aplicações web.
 
@@ -101,7 +101,7 @@ Em comparação às aplicações Web, as pesquisas têm uma interface gráfica s
 >
 >As pesquisas estão detalhadas em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentação do Campaign v8).
 >
->As funcionalidades gerais de formulários web no Adobe Campaign estão detalhadas [nesta seção](about-web-forms.md).
+>As funcionalidades gerais de formulários Web no Adobe Campaign estão detalhadas em [Introdução aos formulários Web](about-web-forms.md).
 
 ## Implementação do aplicativo web {#web-application-implementation}
 
@@ -109,7 +109,7 @@ Para criar e publicar uma aplicação web, você deve:
 
 1. Crie o conteúdo (campos, listas, tabelas, gráficos, etc.).
 
-   Você também pode exibir a seção que detalha os campos disponíveis para formulários: todos esses campos também estão disponíveis para aplicações web. Essas informações estão disponíveis [nesta página](adding-fields-to-a-web-form.md).
+   Você também pode exibir a seção que detalha os campos disponíveis para formulários: todos esses campos também estão disponíveis para aplicações web. Estas informações estão disponíveis em [Adicionar campos a um formulário web](adding-fields-to-a-web-form.md).
 
 1. Conforme necessário, você pode adicionar pré-carregamento, testar e salvar etapas e configurar o sistema de controle de acesso (principalmente dentro da estrutura de uma publicação extranet).
 1. Publique a aplicação web para torná-la disponível em uma extranet ou no Adobe Campaign.
@@ -120,7 +120,7 @@ Os aplicativos Web são criados por meio do link **[!UICONTROL Web Applications]
 
 Os aplicativos web são armazenados no nó **[!UICONTROL Resources > Online > Web Applications]** da árvore do Adobe Campaign. As configurações estão divididas nas seguintes pastas:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: contém os modelos de renderização para a apresentação do formulário Web (aplicativos e pesquisas). O modelo permite gerar o formulário. Ele também usa uma folha de estilos CSS. Essa folha de estilos pode ser sobrecarregada no nível do modelo. Para obter mais informações, consulte [esta página](form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Administration > Configuration > Form renderings]**: contém os modelos de renderização para a apresentação do formulário Web (aplicativos e pesquisas). O modelo permite gerar o formulário. Ele também usa uma folha de estilos CSS. Essa folha de estilos pode ser sobrecarregada no nível do modelo. Para obter mais informações, consulte [Seleção do modelo de renderização do formulário](form-rendering.md#selecting-the-form-rendering-template).
 * **[!UICONTROL Resources > Templates > Web application templates]**: contém modelos de formulário. Para criar um formulário ou um aplicativo Web, você deve começar com um modelo.
 
 ## Modelos de aplicativo web {#web-application-templates}
@@ -135,7 +135,7 @@ Você pode criar novos modelos no nó **[!UICONTROL Resources > Templates > Web 
 
 O assistente de criação permite selecionar as opções que você deseja habilitar, conforme mostrado abaixo.
 
-![](assets/webapp_create_template.png)
+![Caixa de diálogo Novo aplicativo Web com as opções de Pesquisa e Site Avançado (extranet) a serem habilitadas.](assets/webapp_create_template.png)
 
 >[!CAUTION]
 >

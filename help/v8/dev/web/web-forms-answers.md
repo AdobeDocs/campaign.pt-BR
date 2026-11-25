@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 93%
+source-wordcount: '1069'
+ht-degree: 76%
 ---
 # Respostas dos formulários web{#web-forms-answers}
 
@@ -35,7 +35,7 @@ As respostas a formulários podem ser salvas em um campo do banco de dados ou te
 
 Para cada campo de entrada em um formulário, as seguintes opções de armazenamento estão disponíveis:
 
-![](assets/s_ncs_admin_survey_select_storage.png)
+![Campo de entrada Sobrenome com o link Editar armazenamento e a caixa de diálogo Armazenamento mostrando as opções Editar um destinatário e Variável.](assets/s_ncs_admin_survey_select_storage.png)
 
 * **[!UICONTROL Edit a recipient]**
 
@@ -49,7 +49,7 @@ Para cada campo de entrada em um formulário, as seguintes opções de armazenam
 
 Para salvar os dados em um campo existente do banco de dados, clique no ícone **[!UICONTROL Edit expression]** e selecione-o na lista de campos disponíveis.
 
-![](assets/s_ncs_admin_survey_storage_type1.png)
+![Caixa de diálogo de armazenamento com a expressão Edit abrindo o seletor de campo, onde Last name (@lastName) é selecionado.](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
@@ -61,15 +61,15 @@ Você pode usar variáveis locais de modo que, mesmo que os dados não sejam arm
 
 Isso significa que você pode utilizar o valor de um campo não salvo para autorizar a exibição de um grupo de opções na página. Na página abaixo, o tipo de veículo não está armazenado no banco de dados:
 
-![](assets/s_ncs_admin_survey_no_storage_variable.png)
+![Tipo de caixa de combinação de carro com armazenamento definido como a variável typeV e o link Editar armazenamento.](assets/s_ncs_admin_survey_no_storage_variable.png)
 
 Ele é armazenado em uma variável que deve ser selecionada durante a criação da caixa suspensa ou por meio do link **[!UICONTROL Edit storage...]**
 
-![](assets/s_ncs_admin_survey_no_storage_variable2.png)
+![Caixa de diálogo de armazenamento com a opção Variável e uma lista suspensa Tipo de carro, Caminhão em movimento e Carro pessoal.](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
 É possível exibir variáveis existentes e criar novas por meio deste link **[!UICONTROL Edit variables...]** Clique no botão **[!UICONTROL Add]** para criar uma nova variável.
 
-![](assets/s_ncs_admin_survey_add_a_variable.png)
+![Edite a lista de variáveis e a caixa de diálogo Variável com o rótulo Energia do Carro e o nome, digite Texto, para adicionar uma variável.](assets/s_ncs_admin_survey_add_a_variable.png)
 
 A variável adicionada estará disponível na lista de variáveis locais quando os campos de entrada da página forem criados.
 
@@ -81,19 +81,19 @@ A variável adicionada estará disponível na lista de variáveis locais quando 
 
 No exemplo acima, o container que inclui dados relativos aos veículos privados é exibido somente se a opção **[!UICONTROL Private]** estiver selecionada na lista suspensa, conforme indicado na condição de visibilidade:
 
-![](assets/s_ncs_admin_survey_add_a_condition.png)
+![Condição de visibilidade do contêiner Carro Pessoal: tipo de carro igual a Pessoal.](assets/s_ncs_admin_survey_add_a_condition.png)
 
 Se o usuário selecionar um veículo privado, o formulário web oferecerá as seguintes opções:
 
-![](assets/s_ncs_admin_survey_no_storage_conda.png)
+![Página do formulário de reserva de carro mostrando a lista suspensa Tipo de carro com Selecionar, Compacto, Intermediário e Padrão.](assets/s_ncs_admin_survey_no_storage_conda.png)
 
 O container que mantém os dados relativos aos veículos comerciais será exibido se a opção Profissional estiver selecionada, conforme expresso na condição de visibilidade:
 
-![](assets/s_ncs_admin_survey_view_a_condition.png)
+![Condição de Visibilidade de contêiner de Caminhão/Van: origem igual a Caminhão.](assets/s_ncs_admin_survey_view_a_condition.png)
 
 Isso significa que, se o usuário selecionar um veículo comercial, o formulário oferece as seguintes opções:
 
-![](assets/s_ncs_admin_survey_no_storage_condb.png)
+![Formulário de reserva de carro com Caminhão em movimento selecionado e lista suspensa Classe Minibus, Pick-up, Cargo Van e 20 Truck.](assets/s_ncs_admin_survey_no_storage_condb.png)
 
 ## Utilização das informações coletadas {#using-collected-information}
 
@@ -101,19 +101,19 @@ Para cada formulário, as respostas fornecidas podem ser reutilizadas nos campos
 
 * Para conteúdo armazenado em um campo do banco de dados:
 
-  ```
+  ```html
   <%=ctx.recipient.@field name%
   ```
 
 * Para conteúdo armazenado em uma variável local:
 
-  ```
+  ```html
   <%= ctx.vars.variable name %
   ```
 
 * Para conteúdo armazenado em um campo de texto do HTML:
 
-  ```
+  ```html
   <%== HTML field name %
   ```
 
@@ -125,7 +125,7 @@ Para cada formulário, as respostas fornecidas podem ser reutilizadas nos campos
 
 Para salvar as informações coletadas nas páginas de um formulário, você precisa colocar uma caixa de armazenamento no diagrama.
 
-![](assets/s_ncs_admin_survey_save_box.png)
+![Diagrama de formulário Web com atividades de Página de Boas-vindas, Assinar, Armazenamento e Finalizar, caixa Armazenamento realçada.](assets/s_ncs_admin_survey_save_box.png)
 
 Há duas maneiras de usar essa caixa:
 
@@ -139,13 +139,13 @@ Há duas maneiras de usar essa caixa:
 
 * Para enriquecer os dados dos destinatários no banco de dados, edite a caixa de armazenamento e selecione a chave de reconciliação. Para uso interno (normalmente um sistema de intranet) ou para um formulário usado para criar novos perfis por exemplo, você pode selecionar o(s) campo(s) de reconciliação. A caixa oferece todos os campos do banco de dados usados nas várias páginas da aplicação web:
 
-  ![](assets/s_ncs_admin_survey_save_box_edit.png)
+  ![Caixa de diálogo de atividade de armazenamento com a árvore de opções Reconciliação dos campos Destinatários e do campo Pasta de pesquisa.](assets/s_ncs_admin_survey_save_box_edit.png)
 
 Por padrão, os dados são importados para o banco de dados por uma operação **[!UICONTROL Update or insertion]**: se existir no banco de dados, o elemento é atualizado (por exemplo, o informativo selecionado ou o endereço de email inserido). Se não existir, as informações serão adicionadas.
 
 Você pode, entretanto, alterar esse comportamento. Para fazer isso, selecione a raiz do elemento e selecione a operação a ser executada na lista suspensa:
 
-![](assets/s_ncs_admin_survey_save_operation.png)
+![Lista de operações da atividade de armazenamento: somente reconciliação, Atualizar ou inserir, Inserir, Atualizar e Excluir.](assets/s_ncs_admin_survey_save_operation.png)
 
 Você pode selecionar uma pasta de pesquisa para a reconciliação e a pasta de criação para novos perfis. Se esses campos estiverem vazios, os perfis serão procurados e criados na pasta padrão do operador.
 

@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 85%
+source-wordcount: '1451'
+ht-degree: 57%
 ---
 # Casos de uso: formulários web{#use-cases-web-forms}
 
@@ -47,11 +47,11 @@ Este exemplo é baseado no seguinte cenário:
 
 1. Crie a subscrição no serviço de boletim informativo a ser oferecido aos destinatários. Para obter mais informações sobre como criar um boletim informativo, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
+   ![Caixa de diálogo de serviço para o serviço de Boletim Informativo Semanal com os campos Rótulo, Nome Interno, Email do Tipo e Boletim Informativo do Modo.](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
 1. Crie um segundo serviço de informação, um serviço temporário vinculado a um modelo da entrega para enviar mensagens de confirmação da subscrição.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
+   ![Painel de Serviço Temporário (temp_service) mostrando o Email do Tipo, o Boletim Informativo do Modo e sua pasta.](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
 ### Etapa 2 - Criação de mensagens de confirmação {#step-2---creating-confirmation-messages}
 
@@ -61,7 +61,7 @@ As mensagens de confirmação são enviadas por um modelo da entrega dedicado re
 1. Crie um modelo da entrega para enviar as mensagens de confirmação da subscrição.
 1. Clique no botão **[!UICONTROL To]** em **[!UICONTROL Email parameters]** para associar o modelo da entrega ao target mapping das assinaturas em vez de destinatários.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
+   ![Caixa de diálogo Selecionar destino no modelo de entrega com o target mapping das Assinaturas (nms:subscription) selecionado.](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. Como os destinatários dessa entrega não confirmaram sua aprovação, eles ainda estão incluídos na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, é necessário autorizar os deliveries com base nesse template a fim de direcionar recipients no incluo na lista de bloqueios.
 
@@ -77,15 +77,15 @@ As mensagens de confirmação são enviadas por um modelo da entrega dedicado re
 
 1. Personalize a entrega e insira o link de confirmação no conteúdo da mensagem. Esse link permite que você acesse o formulário web para registrar a confirmação da subscrição.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1b.png)
+   ![Email de confirmação no editor de entrega com um campo de personalização de nome e um link Click here.](assets/s_ncs_admin_survey_double-opt-in_sample_1b.png)
 
 1. Com o DCE, vincule sua URL ao formulário web. Como o formulário web ainda não foi criado, substitua o valor assim que criá-lo.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
+   ![Painel de links de hipertexto com o campo de aplicativo Web, ainda vazio, para o link Clique aqui no email de confirmação.](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
 
 1. Finalmente, vincule esse modelo ao serviço temporário criado anteriormente.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
+   ![Guia Edição de Serviço Temporário com a entrega de confirmação selecionada no campo Assinatura.](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
 ### Etapa 3 – Criação do formulário de assinatura {#step-3---creating-the-subscription-form}
 
@@ -93,45 +93,45 @@ O formulário web habilita a subscrição do destinatário e a confirmação da 
 
 O fluxo de trabalho do formulário web incluirá as seguintes atividades:
 
-![](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
+![Fluxo de trabalho de formulário da Web: Pré-carregamento, Teste e Email vazio levam a script de pesquisa, Assinatura, Armazenamento, Fim.](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
 
 Para fazer isso, siga as etapas abaixo:
 
 1. Crie um formulário web e escolha o modelo **[!UICONTROL Newsletter subscription (subNewsletter)]**.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
+   ![Caixa de diálogo Novo aplicativo Web com o modelo de assinatura do Boletim Informativo (subBoletim Informativo) selecionado.](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
 1. Na guia **[!UICONTROL Edit]**, precisamos configurar o fluxo de trabalho existente, já que queremos adicionar uma mensagem de confirmação aos destinatários que desejam assinar.
 
    Para fazer isso, clique duas vezes na caixa **[!UICONTROL Preloading]** e configure-a da seguinte maneira.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
+   ![Caixa de diálogo de atividade de pré-carregamento com dados de carregamento automático referenciados no formulário e Ignorar pré-carregamento se nenhuma ID for selecionada.](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
    Isso significa que, se o usuário acessar esse formulário por meio do link na mensagem de confirmação, suas informações de perfil serão carregadas. Se ele acessar o formulário web por meio de uma página do site, nenhuma informação será carregada.
 
 1. Adicione uma atividade **[!UICONTROL Test]** no seu fluxo de trabalho.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
+   ![Fluxo de trabalho de formulário web com uma atividade Test que ramifica em Email vazio para Subscription, Storage e End.](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
    A atividade **[!UICONTROL Test]** pode se referir ao email do destinatário. Nesse caso, configure-a da seguinte maneira:
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
+   ![Editor de ramificação de atividade de teste com a condição @email não está vazio.](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
 1. Adicione duas atividades **[!UICONTROL Script]** ao seu fluxo de trabalho.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
+   ![Fluxo de trabalho de formulário web com uma atividade Script em cada ramificação da atividade Test.](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
    A primeira atividade **[!UICONTROL Script]** adicionará recipients na inclui na lista de bloqueios até que eles confirmem a assinatura do boletim informativo. Seu conteúdo deve ser o seguinte:
 
-   ```
+   ```javascript
    ctx.recipient.@blackList=1
    ```
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
+   ![Atividade de Inclui na lista de bloqueios de script ctx.recipient.@blackList=1.](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
    A segunda atividade **[!UICONTROL Script]** autoriza os deliveries a serem enviados aos usuários e faz a assinatura deles no boletim informativo. As duas últimas linhas do script permitirão transferir os recipients da pasta temporária para outra pasta e reconciliar com perfis existentes assim que confirmarem a assinatura.
 
-   ```
+   ```javascript
    ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
@@ -142,17 +142,17 @@ Para fazer isso, siga as etapas abaixo:
    >
    >A partição **[!UICONTROL Temp]** também pode ser removida regularmente por meio de um fluxo de trabalho.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
+   ![Segunda atividade Script contendo as linhas de script unblocklist, Subscribe, folder e Unsubscribe.](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
 1. Clique duas vezes na atividade **[!UICONTROL Subscription]** para personalizar o formulário de assinatura e vincular uma caixa de seleção ao serviço temporário criado anteriormente.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
+   ![Editor de páginas com a caixa de seleção de consentimento vinculada ao Serviço Temporário no campo Serviço.](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
 1. Configure a atividade **[!UICONTROL Storage]** para salvar as informações inseridas na página do formulário.
 
    Essa atividade permite que você crie perfis de destinatários em uma pasta temporária dedicada para separá-los dos perfis no banco de dados, para quem as comunicações podem ser enviadas.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
+   ![Caixa de diálogo de atividade de armazenamento com a pasta Temp definida como a pasta de criação.](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
    >[!NOTE]
    >
@@ -162,75 +162,75 @@ Para fazer isso, siga as etapas abaixo:
 
    A segunda caixa **[!UICONTROL End]** exibirá a mensagem de confirmação quando a assinatura for concluída.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
+   ![Encerrar caixa de diálogo de atividade com a mensagem Sua assinatura foi concluída. Em breve você receberá nosso informativo.](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
 1. Depois que o formulário web é criado e configurado, você pode referenciá-lo no modelo da entrega para enviar mensagens de confirmação.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
+   ![Entrega de confirmação com o link Clique aqui apontando para o aplicativo Web de aceitação dupla da assinatura do Boletim Informativo.](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 
 ### Etapa 4 - Publicação e teste do formulário {#step-4---publishing-and-testing-the-form}
 
 Agora você pode publicar o formulário para torná-lo acessível aos usuários.
 
-![](assets/s_ncs_admin_survey_double-opt-in_sample_8b.png)
+![Painel do aplicativo Web com o botão Publicar e a mensagem de que ele deve ser publicado para ser acessado online.](assets/s_ncs_admin_survey_double-opt-in_sample_8b.png)
 
 A subscrição no boletim informativo envolve as seguintes etapas:
 
 1. O usuário do site entra na página de subscrição e aprova o formulário.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8c.png)
+   ![Formulário de assinatura do boletim informativo em um navegador com nome e email preenchidos, caixa de consentimento marcada e botão Assinar.](assets/s_ncs_admin_survey_double-opt-in_sample_8c.png)
 
    Ele é notificado por meio de uma mensagem em seu navegador de que sua solicitação foi levada em conta.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
+   ![Página Final do Navegador informando que a solicitação foi registrada e uma mensagem será exibida em seguida.](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
    O usuário é adicionado ao banco de dados do Adobe Campaign na pasta **[!UICONTROL Temp]** e seu perfil é incluído na lista de bloqueios até que ele confirme sua assinatura com o email.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
+   ![Pasta de destinatários temporários com o novo perfil selecionado e Não contatar mais (por nenhum canal) marcada.](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
 1. Uma mensagem de confirmação que inclui um link para aprovar a subscrição é enviada para o usuário.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8e.png)
+   ![Email de confirmação da assinatura com um link Clique aqui para confirmar a assinatura do boletim informativo.](assets/s_ncs_admin_survey_double-opt-in_sample_8e.png)
 
 1. Ao clicar nesse link, a página de aprovação é exibida no navegador.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
+   ![Página do navegador intitulada Parabéns! confirmando que a assinatura agora está ativa.](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
 
    No Adobe Campaign, o perfil do usuário é atualizado:
 
    * não estão mais na lista de bloqueios,
    * eles estão inscritos no serviço de informação.
 
-     ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
+     ![Perfil de destinatário atualizado com Não contatar mais limpo e a assinatura do Filme do Informativo listada.](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
 
 ## Exibição de diferentes opções dependendo dos valores selecionados {#displaying-different-options-depending-on-the-selected-values}
 
 No exemplo a seguir, o usuário é solicitado a selecionar um tipo de veículo. Você pode exibir as categorias de veículo disponíveis de acordo com o tipo selecionado. Isso significa que os itens exibidos na coluna à direita dependem da seleção do usuário:
 
-![](assets/s_ncs_admin_survey_condition_sample0.png)
+![Página de seleção de carro com um Tipo de lista suspensa de carro definido como Selecionar.](assets/s_ncs_admin_survey_condition_sample0.png)
 
 * Quando o usuário seleciona &quot;veículo privado&quot;, a escolha entre &quot;Compacto&quot; e &quot;Minivan&quot; é oferecida.
 
-  ![](assets/s_ncs_admin_survey_condition_sample2.png)
+  ![Página de seleção de carro com carro pessoal selecionado, mostrando as opções Padrão e Compacto.](assets/s_ncs_admin_survey_condition_sample2.png)
 
 * Quando o usuário seleciona &quot;veículo comercial&quot;, uma seleção é exibida em uma lista suspensa:
 
-  ![](assets/s_ncs_admin_survey_condition_sample1.png)
+  ![Página de seleção de carro com Caminhão em movimento selecionado e uma lista suspensa Classe de tipos de veículo.](assets/s_ncs_admin_survey_condition_sample1.png)
 
 Nesse exemplo, o tipo de veículo não é armazenado no banco de dados. A lista suspensa é configurada da seguinte maneira:
 
-![](assets/s_ncs_admin_survey_condition_config1.png)
+![Tipo de propriedades da caixa de combinação de carro com os valores Selecionar, Carro pessoal e Caminhão em movimento.](assets/s_ncs_admin_survey_condition_config1.png)
 
 Essas informações são armazenadas em uma variável local.
 
 A exibição condicional da coluna à direita é configurada nos containers:
 
-![](assets/s_ncs_admin_survey_condition_config1bis.png)
+![Caixa de diálogo de armazenamento com a opção Variável selecionada para o campo Tipo de carro.](assets/s_ncs_admin_survey_condition_config1bis.png)
 
 * Visibilidade condicional de campos para um veículo privado:
 
-  ![](assets/s_ncs_admin_survey_condition_config2.png)
+  ![Condição de visibilidade no contêiner Carro Pessoal: tipo de carro igual a Carro Pessoal.](assets/s_ncs_admin_survey_condition_config2.png)
 
 * Visibilidade condicional de campos para um veículo comercial:
 
-  ![](assets/s_ncs_admin_survey_condition_config3.png)
+  ![Condição de visibilidade no contêiner Caminhão/Van: tipo de carro igual a Caminhão em movimento.](assets/s_ncs_admin_survey_condition_config3.png)

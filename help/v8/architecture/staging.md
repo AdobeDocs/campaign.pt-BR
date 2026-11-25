@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '345'
 ht-degree: 2%
 ---
 # Mecanismo de preparo da API do Campaign
@@ -66,7 +66,7 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
 
 1. Crie um exemplo de esquema personalizado no banco de dados da Campaign Cloud. Nenhum preparo ativado nesta etapa.
 
-   ```
+   ```xml
    <srcSchema _cs="Sample Table (dem)" created="YYYY-DD-MM"
            entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Sample Table"
            lastModified="YYYY-DD-MM HH:MM:SS.TZ" mappingType="sql" md5="XXX"
@@ -79,13 +79,13 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
    </srcSchema>
    ```
 
-   Saiba mais sobre a criação de esquema personalizado em [esta página](../dev/create-schema.md).
+   Saiba mais sobre a criação de esquema personalizado em [Criar um novo esquema no Campaign](../dev/create-schema.md).
 
 1. Salvar e atualizar a estrutura do banco de dados.  [Saiba mais](../dev/update-database-structure.md)
 
 1. Habilite o mecanismo de preparo na definição do esquema adicionando o parâmetro **autoStg=&quot;true&quot;**.
 
-   ```
+   ```xml
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"
            entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Sample Table"
            lastModified="YYYY-DD-MM HH:MM:SS.TZ" mappingType="sql" md5="XXX"
@@ -100,6 +100,6 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
 
 1. Salve a modificação. Um novo esquema de preparo está disponível, que é uma cópia local do esquema inicial.
 
-   ![](assets/staging-mechanism.png)
+   ![Origem XML do dem de esquema de preparo gerado:sampleTableStg para a Tabela de Exemplo (Preparo), uma cópia local do esquema inicial](assets/staging-mechanism.png)
 
 1. Atualize a estrutura do banco de dados. A tabela de preparo será criada no banco de dados local do Campaign.

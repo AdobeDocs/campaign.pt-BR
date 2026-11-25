@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 61%
+source-wordcount: '1417'
+ht-degree: 58%
 ---
 # Entender os ambientes e a arquitetura da interação do Campaign
 
@@ -57,7 +57,7 @@ Esses dois tipos de interações podem ser realizadas no **modo unitário** (a o
 
 Assim que uma oferta puder ou deve ser apresentada (de acordo com as configurações realizadas), o mecanismo de Oferta reproduzirá a função intermediária: ele calcula automaticamente a melhor oferta possível para um contato entre as disponíveis ao combinar dados recebidos sobre o contato e as diferentes regras que podem ser aplicadas conforme especificado na aplicação.
 
-![](assets/architecture_interaction2.png)
+![Fluxos do mecanismo de oferta: entrega de lote de saída, identificou interações unitárias e anônimas com seus catálogos](assets/architecture_interaction2.png)
 
 ## Arquitetura distribuída
 
@@ -66,7 +66,7 @@ Para oferecer suporte à escalabilidade e fornecer serviço 24 horas por dia, 7 
 * uma ou várias instâncias de controle dedicadas ao canal de saída e contendo a base de design de marketing e ambiente.
 * uma ou várias instâncias de execução dedicadas ao canal de entrada
 
-![](assets/interaction_powerbooster_schema.png)
+![A instância de controle implanta ofertas de design em tempo real e envia pacotes para instâncias de execução que publicam em sites](assets/interaction_powerbooster_schema.png)
 
 As instâncias de execução são dedicadas ao canal de entrada e contêm a versão online do catálogo. Cada instância de execução é independente e dedicada a um segmento de contato (por exemplo, uma instância de execução por país). As chamadas para o mecanismo de oferta devem ser executadas diretamente na execução (uma URL específica por instância de execução). Como a sincronização entre instâncias não é automática, as interações do mesmo contato devem ser enviadas pela mesma instância.
 
@@ -82,7 +82,7 @@ As ofertas são automaticamente implantadas e publicadas em instâncias de execu
 
 Ofertas excluídas no ambiente de design são desabilitadas em todas as instâncias online. As propostas e ofertas obsoletas são excluídas automaticamente em todas as instâncias após o período de purga (especificado no assistente de implantação de cada instância) e o período de deslizamento (especificado nas regras de tipologia de propostas de entrada).
 
-![](assets/interaction_powerbooster_schema2.png)
+![Apresentações de oferta sincronizadas em ambas as direções entre a instância de controle e cada instância de execução](assets/interaction_powerbooster_schema2.png)
 
 Um fluxo de trabalho é criado para cada ambiente e conta externa para a sincronização de propostas. A frequência de sincronização pode ser ajustada para cada ambiente e conta externa.
 
@@ -110,7 +110,7 @@ Nas instâncias de controle:
 
 1. Crie uma conta externa por instância de execução:
 
-   ![](assets/interaction_powerbooster1.png)
+   ![Formulário de conta externa para uma instância de execução com as opções Enabled, connection, Message Center e Interaction](assets/interaction_powerbooster1.png)
 
    * Complete o rótulo e adicione um nome interno curto e explícito.
    * Selecione o **[!UICONTROL Execution instance]**.
@@ -120,7 +120,7 @@ Nas instâncias de controle:
    * Verifique o tipo de aplicativo usado:**[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** ou ambos.
    * Insira a conta da FDA utilizada. Um operador deve ser criado nas instâncias de execução e deve ter os seguintes direitos de leitura e gravação no banco de dados da instância em questão:
 
-     ```
+     ```sql
      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
      ```
@@ -131,7 +131,7 @@ Nas instâncias de controle:
 
 1. Configure o ambiente:
 
-   ![](assets/interaction_powerbooster2.png)
+   ![Guia Ambiente Geral listando instâncias de execução com frequência de atualização e filtragem de proposta por país](assets/interaction_powerbooster2.png)
 
    * Adicione a lista de instâncias de execução.
    * Para cada um, especifique o período de sincronização e os critérios do filtro (por exemplo, por país).
@@ -142,7 +142,7 @@ Nas instâncias de controle:
 
 Se, por motivos de otimização, apenas parte do banco de dados de marketing for duplicado nas instâncias de execução, é possível especificar um esquema restrito vinculado ao ambiente para permitir que os usuários usem apenas dados que estejam disponíveis nas instâncias de execução. É possível criar uma oferta usando dados que não estão disponíveis em instâncias de execução. Para fazer isso, é necessário desativar a regra nos outros canais limitando essa regra no canal de saída (campo **[!UICONTROL Taken into account if]**).
 
-![](assets/ita_filtering.png)
+![Filtro de item de população no País com o campo Taken into account if do canal](assets/ita_filtering.png)
 
 ### Opções de manutenção {#maintenance-options}
 
@@ -180,7 +180,7 @@ Há dois métodos:
 
 **Tabela de trabalho** (recomendado)
 
-```
+```sql
 CREATE TABLE NmsPropositionRcp_tmp AS SELECT * FROM nmspropositionrcp WHERE 0=1;
 ALTER TABLE nmspropositionrcp_tmp
   ALTER COLUMN ipropositionid TYPE bigint,
@@ -198,7 +198,7 @@ ALTER TABLE nmspropositionrcp_tmp RENAME TO nmspropositionrcp;
 
 **Alterar Tabela**
 
-```
+```sql
 ALTER TABLE nmspropositionrcp
   ALTER COLUMN ipropositionid TYPE bigint,
   ALTER COLUMN iinteractionid TYPE bigint;

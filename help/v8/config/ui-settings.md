@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 45%
+source-wordcount: '1077'
+ht-degree: 44%
 ---
 # Configurações da interface do usuário do Campaign {#ui-settings}
 
@@ -45,13 +45,13 @@ No Adobe Campaign, para campos que expressam uma duração (por exemplo, períod
 
 Você pode adicionar pastas ao explorador do Campaign, criar visualizações e atribuir permissões.
 
-Saiba como gerenciar pastas e modos de exibição em [esta página](../audiences/folders-and-views.md)
+Saiba como gerenciar pastas e exibições em [Pastas e exibições](../audiences/folders-and-views.md)
 
 ## Gerenciar e personalizar listas {#customize-lists}
 
 No Console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, é possível adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
 
-Além disso, é possível criar e salvar filtros.  Saiba mais sobre filtros em [esta página](../audiences/create-filters.md).
+Além disso, é possível criar e salvar filtros.  Saiba mais sobre filtros em [Trabalhar com filtros no Adobe Campaign](../audiences/create-filters.md).
 
 ### Número de registros {#number-of-records}
 
@@ -107,7 +107,7 @@ Se precisar remover uma coluna, selecione-a e clique no ícone **Lixeira**.
 
 Você pode usar o ícone **[!UICONTROL Distribution of values]** para exibir a repartição de valores para o campo selecionado na pasta atual.
 
-![](assets/value-distribution.png)
+![Caixa de diálogo de Distribuição de valores listando cada Tipo com sua Contagem e Porcentagem para a pasta Serviços e Assinaturas](assets/value-distribution.png)
 
 
 ### Criar uma nova coluna {#create-a-new-column}
@@ -145,7 +145,7 @@ Para salvar uma configuração de lista de modo que ela possa ser reutilizada, s
 1. Clique em **[!UICONTROL Advanced settings]** e especifique um nome no campo **[!UICONTROL Configuration]**.
 1. Clique em **[!UICONTROL OK]** e em **[!UICONTROL Save]**.
 
-É possível aplicar essa configuração a outra pasta do mesmo tipo. Saiba mais sobre pastas em [esta página](../audiences/folders-and-views.md).
+É possível aplicar essa configuração a outra pasta do mesmo tipo. Saiba mais sobre pastas em [Pastas e exibições](../audiences/folders-and-views.md).
 
 ### Exportar uma lista {#exporting-a-list}
 

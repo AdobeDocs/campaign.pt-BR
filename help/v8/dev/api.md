@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 14%
+source-wordcount: '319'
+ht-degree: 12%
 ---
 # Introdução às [!DNL Campaign] APIs {#gs-ac-api}
 
@@ -69,7 +69,7 @@ Antes de usar as APIs do [!DNL Adobe Campaign], você precisa se familiarizar co
 Para usar APIs e interagir com o [!DNL Adobe Campaign], você também deve estar familiarizado com seu modelo de dados.
 
 >[!NOTE]
->É possível gerar uma descrição completa do modelo de dados. Saiba mais [nesta página](datamodel.md).
+>É possível gerar uma descrição completa do modelo de dados. Saiba mais em [Introdução ao modelo de dados do Campaign](datamodel.md).
 
 
 **Tópicos relacionados**

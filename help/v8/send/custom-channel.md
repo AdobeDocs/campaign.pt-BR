@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 3%
+source-wordcount: '647'
+ht-degree: 2%
 ---
 # Primeiros passos com canais personalizados {#gs-custom-channel}
 
@@ -40,11 +40,11 @@ Para saber como criar e enviar uma entrega com base em um canal personalizado, c
 
 Estas são as etapas para configurar um novo canal personalizado no Console do cliente. Essas etapas são comuns aos canais externos e de API personalizados:
 
-1. Configurar o esquema, [leia mais](#configure-schema)
-1. Crie uma nova conta externa, [leia mais](#create-ext-account)
-1. Criar um novo modelo de entrega, [leia mais](#create-template)
+1. Configurar o esquema, [Configurar o esquema](#configure-schema)
+1. Criar uma nova conta externa, [Criar uma nova conta externa](#create-ext-account)
+1. Criar um novo modelo de entrega, [Criar um novo modelo de entrega](#create-template)
 
-Os canais de API personalizados exigem configuração adicional. [Leia mais](#api-additional)
+Os canais de API personalizados exigem configuração adicional. [Configuração adicional da API personalizada](#api-additional)
 
 ## Configurar o esquema{#configure-schema}
 
@@ -56,14 +56,14 @@ Primeiro, é necessário configurar o schema para adicionar o novo canal à list
 
    Por exemplo:
 
-   ```
+   ```xml
    <enumeration basetype="byte" default="mail" label="Channel" name="messageType">
    <value desc="My Webpush" img="ncm:channels.png" label="My Webpush" name="webpush"
           value="122"/>
    </enumeration>
    ```
 
-   ![](assets/cus-schema.png){zoomable="yes"}
+   ![Esquema de origem de entregas (cus) com a enumeração messageType para o canal personalizado realçado](assets/cus-schema.png){zoomable="yes"}
 
 ## Criar uma nova conta externa{#create-ext-account}
 
@@ -75,7 +75,7 @@ Em seguida, é necessário criar uma nova conta externa de roteamento.
 
 1. Selecione o canal e altere o modo de delivery. Escolha **Externo** para canais externos personalizados e **Em massa** para canais de API personalizados.
 
-   ![](assets/cus-ext-account.png){zoomable="yes"}
+   ![Conta externa do tipo Roteamento com o canal personalizado selecionado e o Modo de entrega definido como Externo](assets/cus-ext-account.png){zoomable="yes"}
 
 ## Criar um novo modelo de entrega{#create-template}
 
@@ -87,7 +87,7 @@ Agora, vamos criar o novo modelo associado ao novo canal.
 
 1. Clique em **Propriedades** e selecione a pasta correta e o roteamento.
 
-   ![](assets/cus-template.png){zoomable="yes"}
+   ![Propriedades do modelo de entrega, guia Geral, com os campos Pasta e Roteamento definidos como a conta externa do canal personalizado](assets/cus-template.png){zoomable="yes"}
 
 O novo canal agora está disponível. Você pode criar e executar deliveries com base neste canal.
 
@@ -107,13 +107,13 @@ Na interface do usuário da Web do Campaign, configure a definição de tela per
 
 1. Abra o esquema **Entrega** e clique em **Edição de tela**.
 
-   ![](assets/cus-schema2.png){zoomable="yes"}
+   ![Página de esquema de entregas (nms) com o botão Edição de tela na parte superior direita](assets/cus-schema2.png){zoomable="yes"}
 
 1. Selecione a guia que corresponde ao canal e defina como os campos serão exibidos na tela de conteúdo do delivery. Para obter mais informações sobre edição de tela, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=pt-BR#fields){target="_blank"}.
 
-   ![](assets/cus-schema3.png){zoomable="yes"}
+   ![Caixa de diálogo de definição de tela, guia de canal personalizado, listando campos personalizados com rótulo, atributo, tipo e opção obrigatória](assets/cus-schema3.png){zoomable="yes"}
 
-1. Na seção **Visualizar para simular conteúdo**, selecione o JSPP dedicado. Isso é opcional. Isso ativará a pré-visualização na tela de simulação do delivery. [Leia mais](#api-additional-preview)
+1. Na seção **Visualizar para simular conteúdo**, selecione o JSPP dedicado. Isso é opcional. Isso ativará a pré-visualização na tela de simulação do delivery. [Configurar a visualização](#api-additional-preview)
 
 ### Configurar a visualização{#api-additional-preview}
 
@@ -128,7 +128,7 @@ Ao clicar em **Abrir visualização** na tela de simulação de entrega na inter
 
 No Console do Cliente, selecione **Administração** > **Configuração** > **Páginas do Dynamic JavaScript** e crie um novo JSSP. Veja um exemplo com os parâmetros que precisam ser recuperados.
 
-```
+```html
 <%@ page import="xtk:shared/nl.js"
 %><%
   NL.require("/nl/core/shared/core.js")

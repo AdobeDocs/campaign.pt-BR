@@ -19,10 +19,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 99%
+source-wordcount: '1168'
+ht-degree: 73%
 ---
 # Gerenciar respostas{#managing-answers}
 
@@ -44,7 +44,7 @@ Além dos modos de armazenamento padrão comuns a todos os formulários Web no A
 
 É fácil estender o modelo de dados adicionando novos espaços de armazenamento para salvar as respostas fornecidas em pesquisas. Para fazer isso, marque a opção **[!UICONTROL Store answers to a question]** ao criar o campo de entrada. Clique no link **[!UICONTROL New field...]** e forneça suas propriedades:
 
-![](assets/s_ncs_admin_survey_new_space.png)
+![Caixa de diálogo Armazenar respostas a uma pergunta selecionada e a caixa de diálogo Criar novo campo arquivado para um campo Contrato.](assets/s_ncs_admin_survey_new_space.png)
 
 Insira o rótulo e o nome do campo e selecione o tipo de campo: Texto, Booliano, Número inteiro ou decimal, Data, etc.
 
@@ -62,15 +62,15 @@ Se esse campo for usado em uma lista, os valores da enumeração poderão ser re
 
 Por exemplo, é possível criar uma lista suspensa para o usuário selecionar seu idioma nativo. O campo arquivado correspondente pode ser associado à enumeração de **idioma** que contém uma lista de idiomas:
 
-![](assets/s_ncs_admin_survey_database_values_2b.png)
+![Criar nova caixa de diálogo de campo arquivado com a enumeração de idioma selecionada e o ícone Editar link realçado.](assets/s_ncs_admin_survey_database_values_2b.png)
 
 O ícone **[!UICONTROL Edit link]**, localizado à direita do campo, permite editar o conteúdo desta enumeração:
 
-![](assets/s_ncs_admin_survey_database_values_2c.png)
+![Editor de Idioma de Enumeração (idioma) listando os valores inglês, francês e alemão.](assets/s_ncs_admin_survey_database_values_2c.png)
 
 Na guia **[!UICONTROL General]** do campo, o link **[!UICONTROL Initialize the list of values from the database]** permite inserir automaticamente a lista de rótulos oferecidos.
 
-![](assets/s_ncs_admin_survey_database_values_2.png)
+![Guia Geral do campo suspenso, Inicialize a lista de valores do link do banco de dados preenchendo os rótulos de idioma.](assets/s_ncs_admin_survey_database_values_2.png)
 
 **Exemplo**: armazenamento dos contratos de um destinatário em um campo
 
@@ -78,35 +78,35 @@ Para armazenar diferentes tipos de contratos em um campo, crie um campo de entra
 
 Clique no link **[!UICONTROL New field...]** e insira as propriedades do campo. Selecione a opção **[!UICONTROL Multiple values]** para habilitar o armazenamento de vários valores.
 
-![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
+![Criar nova caixa de diálogo de campo arquivado para Contratos com a opção Vários valores selecionada.](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
 Crie campos de entrada para outros contratos e armazene os dados no mesmo campo arquivado.
 
-![](assets/s_ncs_admin_survey_storage_multi_ex2.png)
+![Caixa de diálogo de armazenamento e seletor de campo vinculando um campo de entrada ao campo arquivado de Contratos.](assets/s_ncs_admin_survey_storage_multi_ex2.png)
 
 Quando os usuários aprovarem a pesquisa, suas respostas serão armazenadas no campo **[!UICONTROL Contracts]**.
 
 Em nosso exemplo, para as seguintes respostas:
 
-![](assets/s_ncs_admin_survey_storage_multi_ex3.png)
+![Página de pesquisa de contratos com quatro campos de contrato preenchidos com os valores M, L, T e V.](assets/s_ncs_admin_survey_storage_multi_ex3.png)
 
 O perfil do entrevistado conterá os quatro contratos inseridos.
 
 Elas podem ser visualizadas na guia **[!UICONTROL Answers]** da pesquisa ao exibir as colunas relevantes.
 
-![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
+![Guia Respostas listando respostas com as colunas Contrat_1 a Contrat_4 mostrando os valores de respostas de vários valores.](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
 Você também pode filtrar destinatários com base em respostas para exibir apenas os usuários que interessam a você. Para fazer isso, crie um fluxo de trabalho de segmentação e use a caixa **[!UICONTROL Survey responses]**.
 
-![](assets/s_ncs_admin_survey_read_responses_wf.png)
+![Fluxo de trabalho de direcionamento com a atividade Survey responses arrastada da paleta Targeting para o diagrama.](assets/s_ncs_admin_survey_read_responses_wf.png)
 
 Crie a consulta com base nos perfis que você deseja recuperar. No exemplo a seguir, a consulta permite selecionar perfis com pelo menos dois contratos, incluindo um contrato do tipo A.
 
-![](assets/s_ncs_admin_survey_read_responses_edit.png)
+![A atividade de respostas da pesquisa e sua caixa de diálogo de consulta são filtradas em Contract_1 igual a E e Contract_2 igual a R.](assets/s_ncs_admin_survey_read_responses_edit.png)
 
 Para cada formulário, as respostas fornecidas podem ser usadas em campos ou rótulos. Use a sintaxe a seguir para o conteúdo armazenado em um campo arquivado:
 
-```
+```html
 <%= ctx.webAppLogRcpData.name of the archived field %
 ```
 
@@ -127,17 +127,17 @@ Para fazer isso:
 * Edite as propriedades da pesquisa por meio do botão **[!UICONTROL Properties]** da guia **[!UICONTROL Edit]**.
 * Clique no link **[!UICONTROL Advanced parameters]** e marque a opção **[!UICONTROL Save a copy of raw answers]**.
 
-![](assets/s_ncs_admin_survey_xml_archive_option.png)
+![Caixa de diálogo Parâmetros avançados do aplicativo Web com a opção Salvar uma cópia de respostas brutas selecionada.](assets/s_ncs_admin_survey_xml_archive_option.png)
 
 Você pode habilitá-lo por padrão para todas as pesquisas (esta opção é aplicada quando a pesquisa é publicada). Para fazer isso, crie a opção **[!UICONTROL NmsWebApp_XmlBackup]** e atribua o valor **[!UICONTROL 1]** a ela, conforme mostrado abaixo:
 
-![](assets/s_ncs_admin_survey_xml_global_option.png)
+Nó ![Options em Administration, Platform com a opção NmsWebApp_XmlBackup criada com o valor 1.](assets/s_ncs_admin_survey_xml_global_option.png)
 
 ## Gerenciamento de pontuação {#score-management}
 
 Você pode atribuir uma pontuação às opções oferecidas nas páginas do formulário. As pontuações só podem ser vinculadas a perguntas fechadas: caixa de seleção, valor de uma lista suspensa, subscrição e etc.
 
-![](assets/s_ncs_admin_survey_score_create.png)
+![Campo de caixa de combinação Guia geral listando valores de cartão-fidelidade Padrão para VIP com uma coluna de Pontuação de 2,00 a 10,00.](assets/s_ncs_admin_survey_score_create.png)
 
 As pontuações são acumuladas e salvas no lado do servidor ao confirmar a página, ou seja, quando o usuário clica no botão **[!UICONTROL Next]** ou **[!UICONTROL Finish]**.
 
@@ -153,7 +153,7 @@ As pontuações podem ser usadas em testes ou scripts.
 
 * Para usar pontuações em testes, use o campo **[!UICONTROL Score]** na fórmula de cálculo de teste, conforme mostrado abaixo:
 
-  ![](assets/s_ncs_admin_survey_score_in_a_test.png)
+  ![Teste a atividade com uma condição na pontuação maior que 6, selecionando o campo Pontuação no documento de Contexto.](assets/s_ncs_admin_survey_score_in_a_test.png)
 
 * Você pode usar a pontuação em um script.
 
@@ -161,18 +161,18 @@ As pontuações podem ser usadas em testes ou scripts.
 
 * Em uma pesquisa, a próxima página permite atribuir pontuações diferentes aos usuários, dependendo do valor selecionado na lista suspensa:
 
-  ![](assets/s_ncs_admin_survey_score_exa.png)
+  ![Campo suspenso de níveis de classe, Pré-escola para Faculdade, com pontuações de 2,00 a 7,00.](assets/s_ncs_admin_survey_score_exa.png)
 
 * Você pode combinar essa pontuação com um segundo valor, dependendo da opção selecionada:
 
-  ![](assets/s_ncs_admin_survey_score_exb.png)
+  ![Campo de múltipla escolha Você está... com o Pai pontuado 7,00 e o Aluno pontuado 2,00.](assets/s_ncs_admin_survey_score_exb.png)
 
 * Quando o usuário clica no botão **[!UICONTROL Next]**, os dois valores são somados.
 
-  ![](assets/s_ncs_admin_survey_score_exe.png)
+  ![Página de boas-vindas com Junior high selecionado na lista Nível e a opção Pai selecionada em Status.](assets/s_ncs_admin_survey_score_exe.png)
 
 * As condições podem ser aplicadas para que a página seja exibida de acordo com a pontuação. Isso é configurado da seguinte maneira:
 
-  ![](assets/s_ncs_admin_survey_score_exd.png)
+  ![Atividade Test com uma condição Edit branch: pontuação maior que 7,00.](assets/s_ncs_admin_survey_score_exd.png)
 
-  ![](assets/s_ncs_admin_survey_score_exg.png)
+  ![A atividade de teste é roteada para o Nível 1 quando a pontuação estiver abaixo de 7, para o Nível 2 quando for igual a 7 e para o Nível 3 acima de 7.](assets/s_ncs_admin_survey_score_exg.png)

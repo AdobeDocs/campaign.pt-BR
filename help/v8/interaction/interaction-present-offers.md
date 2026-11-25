@@ -21,20 +21,20 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 25%
+source-wordcount: '209'
+ht-degree: 15%
 ---
 # Apresentar a melhor oferta{#interaction-present-offers}
 
 As ofertas podem ser apresentadas em vários espaços de ofertas usando [um canal de entrada ou saída](interaction-architecture.md#interaction-types). Este capítulo detalha alguns recursos específicos para canais de entrada.
 
-![](assets/inbound-interactions.png)
+![Fluxo de entrada: navegar em um site, identificar o visitante por cookie ou logon, o Mecanismo de oferta escolhe a melhor oferta do catálogo](assets/inbound-interactions.png)
 
 Para que uma oferta seja selecionada pelo mecanismo de Oferta, ela deve ser aprovada e estar disponível em um ambiente ativo.
 
-Para obter mais informações, consulte [esta seção](approving-and-activating-an-offer.md#approving-offer-content).
+Para obter mais informações, consulte [Aprovação do conteúdo da oferta](approving-and-activating-an-offer.md#approving-offer-content).
 
 No contexto de um contato de entrada, o usuário que está navegando na página pode ser identificado pelo site ou não. O mecanismo de oferta apresenta diferentes ofertas para perfis identificados e para perfis anônimos.
 
@@ -44,4 +44,4 @@ Antes de poder apresentar ofertas em um canal de entrada, é necessário configu
 >
 >Para interações de entrada, é necessário configurar especificamente o mecanismo de Oferta para apresentar e atualizar uma ou várias ofertas.
 >
->Também é preciso habilitar o modo unitário em seus espaços de oferta. Para obter mais informações, consulte [esta página](interaction-offer-spaces.md).
+>Também é preciso habilitar o modo unitário em seus espaços de oferta. Para obter mais informações, consulte [Espaços de ofertas de interação de campanha](interaction-offer-spaces.md).

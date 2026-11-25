@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 100%
+source-wordcount: '1364'
+ht-degree: 76%
 ---
 # Elementos estáticos em um formulário web{#static-elements-in-a-web-form}
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 É possível incluir elementos com os quais o usuário não tem nenhuma interação nas páginas do formulário; trata-se de elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. Esses elementos são criados por meio do primeiro botão na barra de ferramentas, clicando em **[!UICONTROL Static elements]**.
 
-![](assets/s_ncs_admin_survey_add_static_element.png)
+![Menu da barra de ferramentas da página para elementos estáticos: Valor, Link, HTML, Imagem, Barra horizontal, Marca de rastreamento e Script](assets/s_ncs_admin_survey_add_static_element.png)
 
 Os seguintes tipos de campo estão disponíveis:
 
@@ -58,11 +58,11 @@ O editor HTML permite digitar o conteúdo a ser inserido na página de formulár
 
 É possível inserir e formatar seu conteúdo diretamente ou exibir a janela do código-fonte para colar em algum conteúdo externo. Para alternar para o modo &quot;código-fonte&quot;, clique no primeiro ícone na barra de ferramentas:
 
-![](assets/s_ncs_admin_survey_html_editor.png)
+![Editor HTML de uma página com o botão Exibir código-fonte realçado e a fonte do HTML exibida](assets/s_ncs_admin_survey_html_editor.png)
 
 Para inserir um campo de banco de dados, use o botão de personalização.
 
-![](assets/webapp_perso_button_in_html.png)
+![Menu de personalização do editor do HTML oferecendo campos de Destinatários como Nome, Sobrenome e Chave primária](assets/webapp_perso_button_in_html.png)
 
 >[!NOTE]
 >
@@ -74,14 +74,14 @@ Preencha os campos na janela de edição, como mostrado no seguinte exemplo:
 
 Para adicionar um link de hipertexto, vá para **[!UICONTROL Static elements]** > **[!UICONTROL Link]**.
 
-![](assets/s_ncs_admin_survey_add_link.png)
+![Propriedades do link: Rótulo, Ação definida como URL, URL mailto, Janela, Dica de Ferramenta e configurações de exibição](assets/s_ncs_admin_survey_add_link.png)
 
 * O **[!UICONTROL Label]** é o conteúdo do link de hipertexto como ele será exibido na página do formulário.
 * O **[!UICONTROL URL]** é o endereço desejado, por exemplo: [https://www.adobe.com/br](https://www.adobe.com/br) no caso de um site ou [info@adobe.com](mailto:info@adobe.com) para enviar uma mensagem.
 * O campo **[!UICONTROL Window]** permite selecionar o modo de exibição do link no caso de um site. Você pode optar por abrir o link em uma nova janela, a janela atual ou outra janela.
 * Você pode adicionar uma ToolTip, como mostrado abaixo:
 
-  ![](assets/s_ncs_admin_survey_send_an_email.png)
+  ![Renderizado Enviar um link de mensagem com a dica de ferramenta Clique aqui para nos enviar um email](assets/s_ncs_admin_survey_send_an_email.png)
 
 * Você pode escolher exibir o link como um botão ou uma imagem. Para fazer isso, selecione o tipo de exibição no campo **[!UICONTROL Type]**.
 
@@ -89,7 +89,7 @@ Para adicionar um link de hipertexto, vá para **[!UICONTROL Static elements]** 
 
 Por padrão, os links são associados a uma ação do tipo URL para que um endereço de destino de link possa ser inserido no campo URL.
 
-![](assets/s_ncs_admin_survey_link_url.png)
+![Vincular propriedades com uma URL mailto, o campo Janela definido como Criar uma nova janela e uma ToolTip](assets/s_ncs_admin_survey_link_url.png)
 
 Você pode definir outras ações para o link, para que o usuário possa clicar no link e fazer o seguinte:
 
@@ -97,33 +97,33 @@ Você pode definir outras ações para o link, para que o usuário possa clicar 
 
   Para fazer isso, selecione a opção **[!UICONTROL Refresh page]** na caixa suspensa do campo **[!UICONTROL Action]**.
 
-  ![](assets/s_ncs_admin_survey_link_refresh.png)
+  ![Lista suspensa Ação de link Nenhum, URL, Exibir, Atualizar página, Próxima página e Habilitar uma transição, com a opção Atualizar página escolhida](assets/s_ncs_admin_survey_link_refresh.png)
 
 * Exibir a página seguinte/anterior
 
   Para fazer isso, selecione a opção **[!UICONTROL Next page]** ou **[!UICONTROL Previous page]** na caixa suspensa do campo **[!UICONTROL Action]**.
 
-  ![](assets/s_ncs_admin_survey_link_next.png)
+  ![Lista suspensa Ação de link com Próxima página selecionada para um link chamado Próxima página](assets/s_ncs_admin_survey_link_next.png)
 
   Você pode ocultar os botões **[!UICONTROL Next]** e/ou **[!UICONTROL Back]** se eles forem substituídos por um link. Consulte esta [página](defining-web-forms-page-sequencing.md).
 
   O link substituirá o botão **[!UICONTROL Next]** usado por padrão.
 
-  ![](assets/s_ncs_admin_survey_link_next_ex.png)
+  ![Página de formulário com campos de Nome, Sobrenome e Senha e um link Próximo mostrando uma dica de ferramenta de validação](assets/s_ncs_admin_survey_link_next_ex.png)
 
 * Exibir outra página
 
   A opção **[!UICONTROL Enable a transition]** permite exibir uma página específica associada à transição de saída selecionada no campo **[!UICONTROL Transition]**.
 
-  ![](assets/s_ncs_admin_survey_link_viral.png)
+  ![Link com Ação definido para Habilitar uma transição e a lista de Transição oferecendo Próximo e Enviado para um amigo](assets/s_ncs_admin_survey_link_viral.png)
 
   Por padrão, uma página tem apenas uma transição de saída. Para criar novas transições, selecione a página e clique no botão **[!UICONTROL Add]** na seção **[!UICONTROL Output transitions]**, conforme mostrado abaixo:
 
-  ![](assets/s_ncs_admin_survey_add_transition.png)
+  ![Propriedades da página de boas-vindas com transições de saída habilitadas, listando Próximo e Viral (Enviado para um amigo) e o botão Adicionar](assets/s_ncs_admin_survey_add_transition.png)
 
   No diagrama, essa adição terá esta aparência:
 
-  ![](assets/s_ncs_admin_survey_add_transition_graph.png)
+  ![Fluxo de formulários web no qual Seus contratos levam à Sua conta, ou via Enviado a um amigo para o Patrocinador, depois Armazenamento e Fim](assets/s_ncs_admin_survey_add_transition_graph.png)
 
   >[!NOTE]
   >
@@ -133,7 +133,7 @@ Você pode definir outras ações para o link, para que o usuário possa clicar 
 
 Você pode personalizar o conteúdo HTML de uma página de formulário com dados registrados em uma página anterior. Por exemplo, você pode criar um formulário web de seguro de carro cuja primeira página permite fornecer informações de contato e a marca do carro.
 
-![](assets/s_ncs_admin_survey_tag_ctx_1.png)
+![Página de formulário 1 de 2 solicitando título, nome, email, identificador e marca de carro, com um botão Avançar](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
 Use campos de personalização para reinjetar o nome de usuário e marca selecionada na próxima página. A sintaxe a ser usada depende do modo de armazenamento de informações. Para obter mais informações, consulte [Uso das informações coletadas](web-forms-answers.md#using-collected-information).
 
@@ -143,16 +143,16 @@ Use campos de personalização para reinjetar o nome de usuário e marca selecio
 
 No nosso exemplo, o nome e o sobrenome do destinatário são armazenados em um campo do banco de dados, enquanto a marca do carro é armazenada em uma variável. A sintaxe da mensagem personalizada na página 2 será a seguinte:
 
-![](assets/webapp_perso_vars_include.png)
+![HTML de mensagem personalizada com nome, sobrenome e uma variável de marca de carro do destinatário inserida usando a sintaxe de marca](assets/webapp_perso_vars_include.png)
 
-```
+```xml
 <P>Welcome <%= ctx.recipient.@firstName %> <%= ctx.recipient.@lastName %>,</P>
 <P>To start your customized study, please select your car <%=ctx.vars.marque%> and its year of purchase.</P>
 ```
 
 Isso produz o seguinte resultado:
 
-![](assets/s_ncs_admin_survey_tag_ctx_2.png)
+![Página de formulário 2 de 2 saudando o destinatário por nome e marca, com as listas Selecionar modelo e Ano dos carros](assets/s_ncs_admin_survey_tag_ctx_2.png)
 
 ### Usar variáveis de texto {#using-text-variables}
 
@@ -167,11 +167,11 @@ Por exemplo, você pode criar um campo **Contato** que permitirá exibir a strin
 1. Na coluna **[!UICONTROL Identifier]**, digite o nome da variável
 1. Na coluna **[!UICONTROL Text]**, digite o valor padrão.
 
-   ![](assets/s_ncs_admin_survey_html_text.png)
+   ![Identificadores de lista da guia Textos do elemento HTML Country e DateFormat com seus valores de texto](assets/s_ncs_admin_survey_html_text.png)
 
 1. No conteúdo HTML, insira essa variável de texto pela sintaxe **&lt;%= $(Contact) %>** .
 
-   ![](assets/s_ncs_admin_survey_html_content.png)
+   ![Editor de conteúdo do HTML com o identificador de texto Contato inserido ao lado do campo de data da última modificação](assets/s_ncs_admin_survey_html_content.png)
 
    >[!CAUTION]
    >
@@ -179,7 +179,7 @@ Por exemplo, você pode criar um campo **Contato** que permitirá exibir a strin
 
 1. Abra o rótulo **[!UICONTROL Preview]** do formulário para exibir o valor inserido no HTML:
 
-   ![](assets/s_ncs_admin_survey_html_content_preview.png)
+   ![Página de formulário 2 de 2 exibindo a Data do último contato com o identificador de texto traduzido](assets/s_ncs_admin_survey_html_content_preview.png)
 
 Esse modo operacional permite que você defina o texto de formulários web e gerencie traduções usando a ferramenta de tradução integrada. Para obter mais informações, consulte [Tradução de um formulário Web](translating-a-web-form.md).
 
@@ -191,7 +191,7 @@ Selecione o menu **[!UICONTROL Static elements]** > **[!UICONTROL Image]**
 
 Selecione a fonte da imagem a ser inserida: ela pode vir da biblioteca de recurso público ou ser armazenada em um servidor externo acessível de fora.
 
-![](assets/s_ncs_admin_survey_add_img.png)
+![Propriedades do elemento de imagem para um Logotipo, com a Biblioteca de ofertas da lista de origem da imagem e Externo](assets/s_ncs_admin_survey_add_img.png)
 
 Se essa for uma imagem da biblioteca, selecione-a na caixa de combinação do campo; se estiver localizada em um arquivo externo, insira o caminho de acesso. O rótulo será exibido passando o cursor sobre a imagem (coincide com um campo ALT em HTML) ou quando a imagem não for exibida.
 

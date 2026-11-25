@@ -22,7 +22,7 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Se a solicitação de exclusão for bem-sucedida, o status da resposta será 204
 
 As cargas de exemplo abaixo mostram como cancelar a assinatura de um perfil de um serviço. Primeiro, execute uma solicitação GET para recuperar o perfil.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -57,7 +57,7 @@ As cargas de exemplo abaixo mostram como cancelar a assinatura de um perfil de u
 
 Ele retorna o URL de assinaturas do perfil.
 
-```
+```json
   {
     ...
     "postalAddress":...,
@@ -70,7 +70,7 @@ Ele retorna o URL de assinaturas do perfil.
 
 Execute uma solicitação GET no URL de assinaturas.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -80,7 +80,7 @@ Execute uma solicitação GET no URL de assinaturas.
 
 Ele retorna a lista de assinaturas do perfil selecionado, com um URL para cada serviço assinado.
 
-```
+```json
 ...
 "service": {
   "PKey": "<PKEY>",
@@ -94,7 +94,7 @@ Ele retorna a lista de assinaturas do perfil selecionado, com um URL para cada s
 
 Execute uma solicitação DELETE no URL do serviço desejado.
 
-```
+```bash
 -X DELETE https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -120,7 +120,7 @@ Se a solicitação de exclusão for bem-sucedida, o status da resposta será 204
 
 Recuperar o registro de serviço.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -130,7 +130,7 @@ Recuperar o registro de serviço.
 
 Ele retorna o URL de subscrições do serviço.
 
-```
+```json
 {
   ...
   "messageType": "email",
@@ -147,7 +147,7 @@ Ele retorna o URL de subscrições do serviço.
 
 Execute uma solicitação GET no URL de assinaturas.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -157,7 +157,7 @@ Execute uma solicitação GET no URL de assinaturas.
 
 Ele retorna a lista de assinaturas do serviço selecionado, com um URL (href) para cada assinatura de perfil.
 
-```
+```json
 {
   "PKey": "<PKEY>",
   "created": "2019-03-26 08:58:04.764Z",
@@ -174,7 +174,7 @@ Ele retorna a lista de assinaturas do serviço selecionado, com um URL (href) pa
 
 Execute uma solicitação de DELETE no URL de assinatura do perfil desejado.
 
-```
+```bash
 -X DELETE https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \

@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 26%
+source-wordcount: '704'
+ht-degree: 22%
 ---
 # Criar e enviar emails
 
@@ -42,13 +42,13 @@ Com o Adobe Campaign, é possível criar entregas de email para enviar emails pe
 >Para criar emails atraentes e personalizados individualmente, navegue até a [interface de usuário da Web](../start/campaign-ui.md#ac-web-ui). O Adobe Campaign vem com o Email Designer, uma interface intuitiva de arrastar e soltar, que permite projetar e refinar todo o conteúdo de cada email.
 
 
-Saiba mais sobre as principais etapas para criar e configurar uma entrega em [esta página](../start/create-message.md).
+Saiba mais sobre as principais etapas para criar e configurar uma entrega no [Criar a primeira entrega](../start/create-message.md).
 
 ## Crie uma entrega por email
 
 Crie emails personalizados e contextualmente relevantes que sejam consistentes com o restante da experiência do cliente.
 
-![](assets/new-email-content.png)
+![Editor de entrega de email com um assunto, conteúdo do HTML e a lista de URLs rastreadas exibida abaixo](assets/new-email-content.png)
 
 
 No exemplo a seguir, você aprenderá as etapas para criar um delivery de email no Adobe Campaign que contenha dados personalizados, links para um URL externo e um link para a mirror page.
@@ -57,19 +57,19 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
    Para criar uma nova entrega, navegue até a guia **Campanhas**, clique em **Entregas** e clique no botão **Criar** acima da lista de entregas existentes.
 
-   ![](assets/delivery_step_1.png)
+   ![Lista de entregas na guia Campanhas com o nó Entregas e o botão Criar realçado](assets/delivery_step_1.png)
 
 1. **Selecione o modelo**
 
    Selecione um modelo da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus destinatários, no entanto, esse título será exibido na lista de entregas. Clique em **[!UICONTROL Continue]**.
 
-   ![](assets/dce_delivery_model.png)
+   ![Nova caixa de diálogo de entrega com o modelo de entrega de email selecionado e um rótulo inserido, em seguida, Continuar](assets/dce_delivery_model.png)
 
 1. **Importar seu conteúdo**
 
    Clique na guia **Source** para colar o conteúdo do HTML.
 
-   ![](assets/paste-content.png)
+   ![Editor de entrega de email com a guia Source aberta mostrando o código HTML a ser colado](assets/paste-content.png)
 
    >[!NOTE]
    >
@@ -81,13 +81,13 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
      Para inserir o nome e o sobrenome dos perfis direcionados no conteúdo da mensagem, coloque o cursor onde deseja inseri-los, clique no último ícone na barra de ferramentas, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL Greetings]**.
 
-     ![](assets/include-greetings.png)
+     ![Menu do Personalization com Incluir e, em seguida, com Saudações selecionadas no conteúdo do HTML de email](assets/include-greetings.png)
 
      Navegue até a guia de visualização para verificar a personalização selecionando um recipient.
 
-     ![](assets/perso-check.png)
+     ![Guia Visualizar com um destinatário selecionado e a saudação personalizada destacada no texto do email](assets/perso-check.png)
 
-     Saiba mais sobre opções de personalização em [esta seção](personalize.md).
+     Saiba mais sobre as opções de personalização em [Introdução à personalização](personalize.md).
 
    * Inserir um link rastreado
 
@@ -95,7 +95,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
      Insira a URL do link no campo **URL** usando o seguinte formato **https://www.myURL.com** e, em seguida, confirme.
 
-     ![](assets/add-a-link.png)
+     ![Caixa de diálogo Adicionar link de hipertexto com uma URL inserida e o botão Adicionar sobre o texto selecionado](assets/add-a-link.png)
 
    * Adicionar uma mirror page
 
@@ -103,9 +103,9 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
      Coloque o cursor onde deseja inserir este link, clique no último ícone na barra de ferramentas, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL link to mirror page]**.
 
-     Saiba mais sobre como gerenciar a mirror page em [esta seção](mirror-page.md#link-to-mirror-page).
+     Saiba mais sobre como gerenciar a mirror page em [Adicionar um link à mirror page](mirror-page.md#link-to-mirror-page).
 
-1. Você pode definir parâmetros adicionais para o email, como enviar uma cópia das mensagens para um endereço CCo, alterar o formato da mensagem, definir uma codificação específica etc. Saiba mais em [esta seção](email-parameters.md).
+1. Você pode definir parâmetros adicionais para o email, como enviar uma cópia das mensagens para um endereço CCo, alterar o formato da mensagem, definir uma codificação específica etc. Saiba mais em [Parâmetros de email no Adobe Campaign](email-parameters.md).
 
 1. Quando o conteúdo estiver pronto, clique em **Salvar**: ele será exibido na lista de entregas, na guia **[!UICONTROL Campaigns > Deliveries]**.
 
@@ -124,7 +124,7 @@ Saiba como criar um fluxo de trabalho para importar um conteúdo de email neste 
 
 ## Testar e validar seus emails
 
-O Campaign oferece várias maneiras de testar e validar seus emails antes de enviá-los para seus públicos. Saiba como visualizar e testar seu conteúdo de email [nesta seção](../send/preview-and-proof.md).
+O Campaign oferece várias maneiras de testar e validar seus emails antes de enviá-los para seus públicos. Saiba como visualizar e testar seu conteúdo de email no [Visualizar e testar seu email](../send/preview-and-proof.md).
 
 Você pode:
 

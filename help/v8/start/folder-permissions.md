@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 28%
+source-wordcount: '333'
+ht-degree: 27%
 ---
 # Gerenciar permissões da pasta{#manage-folder-permissions}
 
@@ -40,14 +40,14 @@ ht-degree: 28%
 
 Use permissões em pastas para organizar e controlar o acesso aos dados do Campaign.
 
-O gerenciamento de pastas está detalhado em [esta página](../audiences/folders-and-views.md).
+O gerenciamento de pastas está detalhado em [Pastas e exibições](../audiences/folders-and-views.md).
 
 Para editar permissões em uma pasta específica do Campaign, siga as etapas abaixo:
 
 1. Clique com o botão direito do mouse na pasta e selecione **[!UICONTROL Properties...]**.
 1. Navegue até a guia **[!UICONTROL Security]** para visualizar as autorizações nessa pasta.
 
-   ![](assets/folder-permissions.png)
+   ![Guia Segurança de propriedades da pasta com autorizações para operadores ou grupos e direitos de Leitura, Gravação e Exclusão de dados](assets/folder-permissions.png)
 
 * Para **autorizar um grupo ou operador**, clique no botão **[!UICONTROL Add]** e selecione o grupo ou operador para atribuir autorizações para esta pasta.
 * Para **proibir um grupo ou operador**, clique em **[!UICONTROL Delete]** e selecione o grupo ou operador para remover a autorização para esta pasta.

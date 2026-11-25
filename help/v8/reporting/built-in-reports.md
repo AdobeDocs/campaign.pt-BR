@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 87%
+source-wordcount: '1189'
+ht-degree: 80%
 ---
 # Relatórios integrados do Adobe Campaign {#ootb-reports}
 
@@ -57,32 +57,32 @@ Para acessar os relatórios integrados do Campaign:
 
 1. Selecione a guia **[!UICONTROL Reports]** da interface do Adobe Campaign.
 
-   ![](assets/reporting-access-from-home.png)
+   ![A guia Relatórios foi realçada na página inicial do Campaign, mostrando a lista de Relatórios globais de relatórios internos.](assets/reporting-access-from-home.png)
 
 1. Use os campos de pesquisa para filtrar os relatórios exibidos.
 
 1. Em seguida, clique no relatório que deseja exibir.
 
-   ![](assets/edit-a-report.png)
+   ![Lista de relatórios globais filtrada com o campo de pesquisa no orçamento, mostrando os relatórios correspondentes a serem abertos.](assets/edit-a-report.png)
 
 1. Clique no link **[!UICONTROL Back]** na parte superior da tela para voltar para a lista de relatórios.
 
-   ![](assets/back-button.png)
+   ![Relatório de análise de custo com o botão Voltar realçado no canto superior direito para retornar à lista de relatórios.](assets/back-button.png)
 
 Os relatórios específicos a uma campanha ou uma entrega são acessíveis por meio de seus respectivos painéis.
 
-![](assets/reporting-on-delivery.png)
+![Painel de entrega com o link Relatórios realçado, listando os relatórios de entrega.](assets/reporting-on-delivery.png)
 
 O princípio é o mesmo para listas, serviços, ofertas, etc., conforme mostrado abaixo:
 
-![](assets/reporting-on-offer.png)
+![Painel de lista com o link Relatórios realçado para acessar os relatórios de lista.](assets/reporting-on-offer.png)
 
 
 ## Relatórios de entregas {#reports-on-deliveries}
 
 Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
-Para obter mais informações sobre o conteúdo desses relatórios, consulte [esta seção](delivery-reports.md).
+Para obter mais informações sobre o conteúdo desses relatórios, consulte [relatórios de entrega internos do Adobe Campaign](delivery-reports.md).
 
 <table> 
  <tbody> 

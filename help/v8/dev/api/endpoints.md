@@ -28,19 +28,19 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 9%
+source-wordcount: '201'
+ht-degree: 0%
 ---
 # Pontos de acesso {#endpoints}
 
 Os endpoints disponíveis para a API REST do Adobe Campaign:
 
 * **/profileAndServices**: interage com campos prontos para uso. Os campos estendidos não podem ser acessados com este endpoint.
-* **/profileAndServicesExt**: interage com campos personalizados adicionados durante a extensão de recurso personalizado Perfil ou Serviços. Para obter mais informações sobre recursos personalizados, consulte [esta seção](custom-resources.md).
-* **/&lt;transactionalAPI>**: interagir com a API de mensagens transacionais (o nome do ponto de extremidade da API de mensagens transacionais depende da configuração da instância). Para obter mais informações, consulte [esta seção](managing-transactional-messages.md).
-* **/workflow/execution**: interagir com fluxos de trabalho. Para obter mais informações, consulte [esta seção](controlling-a-workflow.md).
+* **/profileAndServicesExt**: interage com campos personalizados adicionados durante a extensão de recurso personalizado Perfil ou Serviços. Para obter mais informações sobre recursos personalizados, consulte [Recursos personalizados](custom-resources.md).
+* **/&lt;transactionalAPI>**: interagir com a API de mensagens transacionais (o nome do ponto de extremidade da API de mensagens transacionais depende da configuração da instância). Para obter mais informações, consulte [Gerenciamento de mensagens transacionais](managing-transactional-messages.md).
+* **/workflow/execution**: interagir com fluxos de trabalho. Para obter mais informações, consulte [Controle de um fluxo de trabalho](controlling-a-workflow.md).
 
 Por padrão, os principais recursos disponíveis para as APIs **profileAndServices** e **profileAndServicesExt** são:
 

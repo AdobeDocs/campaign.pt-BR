@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 13%
+source-wordcount: '472'
+ht-degree: 12%
 ---
 # Conectar o Campaign com suas soluções{#gs-ac-connectors}
 
@@ -73,13 +73,13 @@ Você pode conectar sua plataforma do Adobe Campaign aos seus **sistemas de terc
 Ativar os dados do CRM na comunicação entre canais: saiba como transmitir contatos do sistema CRM para o Adobe Campaign e compartilhar dados de campanha do Adobe Campaign com o sistema CRM.
 Os conectores CRM permitem uma integração de dados rápida e fácil: o Adobe Campaign fornece um assistente dedicado para coletar e selecionar entre as tabelas disponíveis no CRM. Isso garante a sincronização bidirecional para assegurar que os dados estejam sempre atualizados em todos os sistemas.
 
-Saiba como integrar o Campaign com o Microsoft Dynamics 365 e o Salesforce.com nesta [página](crm.md).
+Saiba como integrar o Campaign com o Microsoft Dynamics 365 e o Salesforce.com no [Trabalho com o Campaign e seu CRM](crm.md).
 
 ## Conecte terceiros com o Federated Data Access{#gs-fda}
 
 Use o conector FDA (Federated Data Access) para conectar o Campaign a um ou mais **bancos de dados externos** e processar as informações armazenadas neles sem afetar os dados do banco de dados da nuvem do Campaign.
 
-Saiba mais [nesta página](fda.md).
+Saiba mais em [Trabalhar com o Campaign e bancos de dados externos (FDA)](fda.md).
 
 ## Trabalhar com redes sociais{#gs-social}
 
@@ -91,6 +91,6 @@ Você pode:
 * Publicar em sua conta do X
 * Coletar novos contatos
 
-Saiba como configurar e usar a integração X na [esta página](../connect/ac-tw.md).
+Saiba como configurar e usar a integração do X no [Trabalhar com o Campaign e o X (Twitter)](../connect/ac-tw.md).
 
-Saiba como criar postagens no X e enviar mensagens diretas aos seus seguidores no [nesta página](../send/twitter.md).
+Saiba como criar postagens no X e enviar mensagens diretas aos seus seguidores em [Postar mensagens no X (Twitter) com o Adobe Campaign](../send/twitter.md).

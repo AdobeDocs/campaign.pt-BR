@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 74%
+source-wordcount: '370'
+ht-degree: 66%
 ---
 # Introdução ao editor de HTML do Campaign{#about-campaign-html-editor}
 
@@ -63,7 +63,7 @@ Esta seção apresenta as principais etapas para editar e fazer upload de conte�
 
 A operação geral é a seguinte:
 
-![](assets/dce_schema.png)
+![A página de aterrissagem e a entrega de email passam pelo Editor de Conteúdo Digital e, em seguida, são enviadas para publicação](assets/dce_schema.png)
 
 Para criar um **aplicativo web** simples, é necessário:
 
@@ -74,7 +74,7 @@ Para criar um **aplicativo web** simples, é necessário:
 
 >[!NOTE]
 >
->Uma amostra completa de implementação no contexto de um aplicativo web está disponível [nesta seção](creating-a-landing-page.md).
+>Uma amostra completa de implementação no contexto de um aplicativo Web está disponível em [Criar uma página de aterrissagem](creating-a-landing-page.md).
 
 Para criar uma **entrega de email**, é necessário:
 

@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 90%
+source-wordcount: '532'
+ht-degree: 78%
 ---
 # Personalizar a lista de emoticons {#customize-emoticons}
 
@@ -55,7 +55,7 @@ Observe que os emoticons só estão disponíveis para email e push. Para obter m
    >
    >Enumerações predefinidas só podem ser gerenciadas por um administrador do console do Adobe Campaign Classic.
 
-   ![](assets/emoticon_1.png)
+   ![Explorer com Administração, Plataforma e Enumerações selecionadas e a lista discriminada Emoticon destacada](assets/emoticon_1.png)
 
 1. Clique em **[!UICONTROL Add]**.
 
@@ -66,7 +66,7 @@ Observe que os emoticons só estão disponíveis para email e push. Para obter m
 
    * **[!UICONTROL Label]**: Rótulo do novo emoticon.
 
-   ![](assets/emoticon_5.png)
+   ![Caixa de diálogo de valor de enumeração com os campos Código U+ e Rótulo para um novo emoticon](assets/emoticon_5.png)
 
 1. Clique em **[!UICONTROL Ok]** e **[!UICONTROL Save]** quando a configuração for concluída.
 O novo emoticon será colocado automaticamente na loja.
@@ -77,7 +77,7 @@ O novo emoticon será colocado automaticamente na loja.
 
    <br>Neste exemplo, escolhemos o número de ordem de exibição 61, o que significa que se uma entrada já tiver esse pedido, ela será movida automaticamente para a loja e nossa nova entrada ocupará seu lugar na enumeração.
 
-   ![](assets/emoticon_2.png)
+   ![Caixa de diálogo de valor de enumeração com código U+, Rótulo e o campo Ordem de exibição definidos como 61](assets/emoticon_2.png)
 
 1. O novo emoticon foi adicionado à enumeração predefinida **[!UICONTROL Insert emoticon list]**. Você pode alterar a **[!UICONTROL Display order]** a qualquer momento ou movê-la para a loja se não precisar mais dela.
 
@@ -85,8 +85,8 @@ O novo emoticon será colocado automaticamente na loja.
 
 1. O novo emoticon agora pode ser encontrado nas entregas na janela pop-up **[!UICONTROL Insert emoticon]** na posição 61, conforme configurado nas etapas anteriores. Para obter mais informações sobre como usar emoticons nos deliveries, consulte esta [seção](defining-the-email-content.md#inserting-emoticons).
 
-   ![](assets/emoticon_4.png)
+   ![Inserir janela pop-up de emoticon com o novo emoticon adicionado na última posição](assets/emoticon_4.png)
 
 1. Se os emoticons a seguir forem exibidos na janela pop-up **[!UICONTROL Insert emoticon]**, significa que eles não foram configurados corretamente. Verifique se o código **[!UICONTROL U+]** ou **[!UICONTROL Display order]** está correto no **[!UICONTROL Emoticon list]**.
 
-   ![](assets/emoticon_6.png)
+   ![Inserir emoticons na janela pop-up com dois ícones vermelhos cruzados marcando emoticons configurados incorretamente](assets/emoticon_6.png)

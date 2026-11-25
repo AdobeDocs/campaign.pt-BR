@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 92%
+source-wordcount: '1259'
+ht-degree: 69%
 ---
 # Casos de uso: criar páginas de visão geral{#use-cases-creating-overviews}
 
@@ -48,13 +48,13 @@ No exemplo a seguir, criaremos aplicativos tipo visão geral para exibir todas a
 * um filtro por ferramenta de edição de links (consulte [Criação de um filtro usando um editor de links](#creating-a-filter-using-a-link-editor)),
 * um link de atualização (consulte [Criação de um link de atualização](#creating-a-refresh-link)).
 
-![](assets/s_ncs_configuration_webapp_overview.png)
+![Página de visão geral do aplicativo Web com rótulos: filtro de pasta, botão Novo, filtro do editor de link, link de atualização, lista, detalhes.](assets/s_ncs_configuration_webapp_overview.png)
 
 ## Criação de um aplicativo Web de uma única página {#creating-a-single-page-web-application}
 
 1. Crie uma aplicação web de uma única **[!UICONTROL Page]** e desabilite as transições de saída e faça a transição para a próxima página.
 
-   ![](assets/s_ncs_configuration_webapp_create.png)
+   ![Propriedades da página, guia Geral, com a opção Desabilitar próxima página selecionada e Habilitar transições de saída desmarcada.](assets/s_ncs_configuration_webapp_create.png)
 
 1. Alterar o título da página.
 
@@ -62,19 +62,19 @@ No exemplo a seguir, criaremos aplicativos tipo visão geral para exibir todas a
 
 1. Nas propriedades da aplicação web, modifique a renderização do seu aplicativo selecionando o modelo **[!UICONTROL Single-page Web application]**.
 
-   ![](assets/s_ncs_configuration_webapp_rendering.png)
+   ![Caixa de diálogo Propriedades, guia Renderização, com o modelo de aplicativo Web de página única selecionado na lista Modelo.](assets/s_ncs_configuration_webapp_rendering.png)
 
 1. Abra a atividade **[!UICONTROL Page]** da sua aplicação web e abra uma lista (**[!UICONTROL Static element > List]**).
 1. Na guia **[!UICONTROL Data]** da lista, selecione o tipo de documento **[!UICONTROL Web applications]** e as colunas de saída **[!UICONTROL Label]** , **[!UICONTROL Creation date]** e **[!UICONTROL Type of application]**.
 1. Na subguia **[!UICONTROL Filter]**, crie o filtro a seguir, como mostrado abaixo, para exibir somente as aplicações web e excluir os modelos da visualização.
 
-   ![](assets/s_ncs_configuration_webapp_filter.png)
+   ![Guia Listar Dados, subguia Filtro, com condições Modelo igual a Não e Chave primária diferente de 0.](assets/s_ncs_configuration_webapp_filter.png)
 
 1. Feche a janela de configuração da página e clique em **[!UICONTROL Preview]**.
 
    A lista de aplicativos Web disponíveis em seu banco de dados é exibida.
 
-   ![](assets/s_ncs_configuration_webapp_preview.png)
+   ![Guia Visualizar do aplicativo Web mostrando a lista de aplicativos Web por rótulo.](assets/s_ncs_configuration_webapp_preview.png)
 
 ## Adicionar um filtro a uma pasta {#adding-a-filter-on-a-folder}
 
@@ -91,15 +91,15 @@ Em uma visão geral, você pode optar por acessar dados dependendo de sua locali
 
 1. Aplique o tipo **[!UICONTROL XML]** à variável.
 
-   ![](assets/s_ncs_configuration_webapp_variable_xml.png)
+   ![Selecione a entrada da pasta com a opção Editar ramificações abertas e Editar ramificações mostrando a variável Pasta do tipo XML.](assets/s_ncs_configuration_webapp_variable_xml.png)
 
 1. Selecione a interação **[!UICONTROL Refresh page]**.
 
-   ![](assets/s_ncs_configuration_webapp_variable.png)
+   ![Entrada de pasta com a ação Atualizar página selecionada para a Ação a ser executada ao selecionar uma pasta.](assets/s_ncs_configuration_webapp_variable.png)
 
 1. Coloque o cursor na lista e na guia **[!UICONTROL Advanced]**, faça referência à variável criada anteriormente na guia **[!UICONTROL Folder filter XPath]** da lista. É necessário usar o nome do elemento relacionado ao link da pasta, isto é **folder**.
 
-   ![](assets/s_ncs_configuration_webapp_variable002.png)
+   ![Guia Lista Avançada com o campo XPath Filtro de pasta definido como pasta em Armazenamento/Filtragem.](assets/s_ncs_configuration_webapp_variable002.png)
 
    >[!NOTE]
    >
@@ -129,7 +129,7 @@ Em uma visão geral, você pode optar por acessar dados dependendo de sua locali
 
    Esse estilo é mencionado no modelo **[!UICONTROL Single-page Web application]** selecionado anteriormente.
 
-   ![](assets/s_ncs_configuration_webapp_link.png)
+   ![Novo elemento de link com a URL que abre o novo formulário de aplicativo web e o campo Estilo definidos como botão.](assets/s_ncs_configuration_webapp_link.png)
 
 ## Adicionar detalhes a uma lista {#adding-detail-to-a-list}
 
@@ -138,17 +138,17 @@ Ao configurar uma lista na sua visão geral, você pode optar por exibir detalhe
 1. Coloque o cursor no elemento de lista criado anteriormente.
 1. Na guia **[!UICONTROL General]**, selecione o modo de exibição **[!UICONTROL Columns and additional detail]** na lista suspensa.
 
-   ![](assets/s_ncs_configuration_webapp_detail.png)
+   ![Guia Geral de Lista com a opção Exibir definida como Colunas e Detalhes Adicionais.](assets/s_ncs_configuration_webapp_detail.png)
 
 1. Na guia **[!UICONTROL Data]**, adicione as colunas **[!UICONTROL Primary key]** , **[!UICONTROL Internal name]** e **[!UICONTROL Description]** e selecione a opção **[!UICONTROL Hidden field]** para cada uma.
 
-   ![](assets/s_ncs_configuration_webapp_detail002.png)
+   ![Guia Listar Dados com as colunas de saída Chave Primária, Nome Interno e Descrição marcadas como Campo Oculto.](assets/s_ncs_configuration_webapp_detail002.png)
 
    Dessa forma, essas informações só serão visíveis nos detalhes de cada entrada.
 
 1. Na guia **[!UICONTROL Additional detail]**, adicione o seguinte código:
 
-   ```
+   ```html
    <div class="detailBox">
      <div class="actionBox">
        <span class="action"><img src="/xtk/img/fileEdit.png"/><a title="Open" class="linkAction" href="xtk://open/?schema=nms:webApp&form=nms:webApp&pk=
@@ -192,22 +192,22 @@ Esses dois elementos serão agrupados no mesmo container para ser agrupados graf
 1. Posicione o cursor no elemento **[!UICONTROL Page]** e selecione **[!UICONTROL Container > Standard]**.
 1. Defina o número de colunas como **2**, para que o editor de link e o link estejam próximos um do outro.
 
-   ![](assets/s_ncs_configuration_webapp_container.png)
+   ![Contêiner de filtro com o campo de estilo Aparência definido como dottedFilter e duas colunas.](assets/s_ncs_configuration_webapp_container.png)
 
-   Para obter mais informações sobre layout de elementos, consulte [esta seção](about-web-forms.md).
+   Para obter informações sobre layout de elemento, consulte [Introdução aos formulários web](about-web-forms.md).
 
 1. Aplique **dotedFilter**.
 
    Esse estilo é mencionado no modelo **[!UICONTROL Single-page Web application]** selecionado anteriormente.
 
-   ![](assets/s_ncs_configuration_webapp_container002.png)
+   ![Guia Geral de contêiner de filtro com o campo de estilo Aparência definido como dottedFilter.](assets/s_ncs_configuration_webapp_container002.png)
 
 ### Criação de um filtro usando um editor de links {#creating-a-filter-using-a-link-editor}
 
 1. Coloque o cursor no container criado durante a etapa anterior e insira um editor de link no menu **[!UICONTROL Advanced controls]**.
 1. Na janela de armazenamento que abre automaticamente, selecione a opção **[!UICONTROL Variables]**, em seguida, clique no link **[!UICONTROL Edit variables]** e crie uma variável XML para filtrar dados.
 
-   ![](assets/s_ncs_configuration_webapp_variable003.png)
+   ![Entrada do editor de links: edite o armazenamento, edite as variáveis e a caixa de diálogo Variável criando a variável var2 XML.](assets/s_ncs_configuration_webapp_variable003.png)
 
 1. Modifique o rótulo.
 
@@ -215,7 +215,7 @@ Esses dois elementos serão agrupados no mesmo container para ser agrupados graf
 
 1. Escolha a tabela Operador como um esquema de aplicativo.
 
-   ![](assets/s_ncs_configuration_webapp_linkeditor.png)
+   ![Editor de links rotulado como Criado por, armazenando na variável var2, com o esquema de aplicativo Operador selecionado.](assets/s_ncs_configuration_webapp_linkeditor.png)
 
 1. Coloque o cursor no elemento da lista e crie um filtro através da guia **[!UICONTROL Data > Filter]**:
 
@@ -224,7 +224,7 @@ Esses dois elementos serão agrupados no mesmo container para ser agrupados graf
    * **Value:** Variáveis (variáveis)
    * **Taken into account if:** &#39;$(var2/@id)&#39;!=&#39;&#39;
 
-   ![](assets/s_ncs_configuration_webapp_filter002.png)
+   ![Listar condições de filtro, incluindo a chave Created by link igual a Variáveis, aplicada somente se a id var2 estiver definida.](assets/s_ncs_configuration_webapp_filter002.png)
 
 >[!CAUTION]
 >
@@ -237,13 +237,13 @@ Esses dois elementos serão agrupados no mesmo container para ser agrupados graf
 1. Selecione **[!UICONTROL Refresh data in a list]**.
 1. Adicione a lista criada anteriormente.
 
-   ![](assets/s_ncs_configuration_webapp_refreshlink.png)
+   ![Atualizar link com os Dados de atualização em uma ação de lista e Lista 1 escolhidos em Listas para atualização.](assets/s_ncs_configuration_webapp_refreshlink.png)
 
 1. Adicione o ícone de atualização no campo **[!UICONTROL Image]**: **/xtk/img/refresh.png**.
 1. Usar as setas de organização por tipo reorganiza os vários elementos da aplicação web, conforme mostrado abaixo.
 
-   ![](assets/s_ncs_configuration_webapp_orderelements.png)
+   ![Árvore de elementos de página com as setas de ordem de classificação realçadas para mover a Lista 1 abaixo do elemento Filtro.](assets/s_ncs_configuration_webapp_orderelements.png)
 
 A aplicação web agora está configurada. É possível clicar na guia **[!UICONTROL Preview]** para pré-visualizá-la.
 
-![](assets/s_ncs_configuration_webapp_result.png)
+![Visualização do aplicativo Web concluído: filtro de pasta, Novo link, Criado por filtro, Atualizar link e lista.](assets/s_ncs_configuration_webapp_result.png)

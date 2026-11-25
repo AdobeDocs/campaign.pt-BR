@@ -50,9 +50,9 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1180'
 ht-degree: 7%
 ---
 # Arquitetura geral{#general-architecture}
@@ -128,7 +128,7 @@ Em sua [implantação corporativa (FFDA)](enterprise-deployment.md), o banco de 
 
 Você pode implantar o Adobe Campaign usando o banco de dados e os esquemas predefinidos e, se necessário, esse ambiente predefinido pode ser estendido. Todos os dados no data mart são acessados pela Adobe Campaign por meio de chamadas SQL. O Adobe Campaign também fornece um complemento completo de ferramentas de ETL (Extract Transform and Load, Transformação e Carregamento de Extração) para executar a importação e exportação de dados para dentro e para fora do sistema.
 
-![](assets/data-flow-diagram.png)
+![Tráfego entre computadores cliente, servidores frontais com rastreamento e MTA, servidor de aplicativos, banco de dados, caixa de correio de devolução](assets/data-flow-diagram.png)
 
 
 >[!CAUTION]

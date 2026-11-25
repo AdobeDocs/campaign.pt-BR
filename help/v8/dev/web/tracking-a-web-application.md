@@ -32,10 +32,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 100%
+source-wordcount: '511'
+ht-degree: 76%
 ---
 # Rastrear visitas em um aplicativo Web{#tracking-a-web-application}
 
@@ -50,11 +50,11 @@ As principais melhorias apresentadas nessa versão são as seguintes:
 * Possibilidade de inserir várias tags de controle na mesma página para facilitar a definição dos caminhos de navegação (por exemplo, compra, subscrição, retorno, etc.).
 * Visualizar caminhos de navegação e tags de rastreamento das diferentes páginas no painel de aplicações web.
 
-  ![](assets/trackers_1.png)
+  ![Painel de aplicativo web com a seção Tags de rastreamento listando os caminhos de conversão e o estágio da tag de rastreamento em cada página](assets/trackers_1.png)
 
 * Gerar um relatório de rastreamento completo.
 
-  ![](assets/trackers_5.png)
+  ![Relatório de análise de marcas de rastreamento com gráfico de total de visitas, visitantes únicos, taxa de conversão, taxa de rejeição e visitas](assets/trackers_5.png)
 
   Os principais indicadores são os seguintes:
 
@@ -71,7 +71,7 @@ Dois modos diferentes podem ser usados para identificar de onde o visitante veio
 1. Enviar uma entrega específica para conceder acesso às páginas do aplicativo web: nesse caso, a fonte de tráfego é essa entrega,
 1. Associar a aplicação web a uma fonte de tráfego dedicada: nesse caso, ela deve ser uma entrega de tipo &quot;fonte de tráfego&quot; externo. Ela pode ser selecionada nas propriedades da aplicação web ou no target mapping.
 
-   ![](assets/trackers_6.png)
+   ![Caixa de diálogo de parâmetros avançados das propriedades do aplicativo Web, com o campo Fonte de tráfego definido como uma entrega Web](assets/trackers_6.png)
 
 Para identificar a fonte de tráfego em uma aplicação web, o Adobe Campaign procura as seguintes informações sucessivamente:
 
@@ -85,14 +85,14 @@ Para identificar a fonte de tráfego em uma aplicação web, o Adobe Campaign pr
 
 ## Aplicativos Web criados com o Editor de conteúdo digital (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Quando um aplicativo web é criado usando o editor de conteúdo HTML, o **Digital Content Editor (DCE)**, tags de rastreamento são inseridas a partir da guia **[!UICONTROL Properties]** do editor. Para obter mais informações sobre o Editor de conteúdo digital (DCE), consulte [esta seção](about-campaign-html-editor.md).
+Quando um aplicativo web é criado usando o editor de conteúdo HTML, o **Digital Content Editor (DCE)**, tags de rastreamento são inseridas a partir da guia **[!UICONTROL Properties]** do editor. Para obter mais informações sobre o Editor de conteúdo digital (DCE), consulte [Introdução ao editor do Campaign HTML](about-campaign-html-editor.md).
 
-![](assets/trackers_2.png)
+![Guia Propriedades da página de DCE, na qual uma marca de rastreamento recebe uma Meta, como Assinatura, Conversão ou Atualização](assets/trackers_2.png)
 
 Ao usar a interface da Web, as tags de rastreamento devem ser inseridas nas propriedades da página.
 
-![](assets/trackers_3.png)
+![Propriedades da caixa de diálogo da página, guia Marcas de rastreamento, listando cada marca com seu estágio e ação de destino](assets/trackers_3.png)
 
 O ícone **[!UICONTROL Display blocks]** permite exibir o número de tags de rastreamento definidas para a página.
 
-![](assets/trackers_4.png)
+![Exibir ícone de blocos no editor da Web, com uma dica de ferramenta indicando duas marcas de rastreamento na página](assets/trackers_4.png)

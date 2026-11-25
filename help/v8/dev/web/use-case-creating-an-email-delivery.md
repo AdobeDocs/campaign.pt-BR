@@ -34,10 +34,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 89%
+source-wordcount: '866'
+ht-degree: 78%
 ---
 # Caso de uso: criar uma entrega de email{#use-case-creating-an-email-delivery}
 
@@ -62,13 +62,13 @@ Nosso objetivo final é criar uma entrega com um modelo personalizado que conté
 
 Para criar uma nova entrega, coloque o cursor na guia **Campaigns** e clique em **Entregas**. Clique no botão **Criar** acima da lista de entregas existentes. Para obter mais informações sobre criação de entregas, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
 
-![](assets/delivery_step_1.png)
+![Lista de entregas na guia Campanhas com o botão Criar usado para iniciar uma nova entrega.](assets/delivery_step_1.png)
 
 ## Etapa 2 - Seleção de um modelo {#step-2---selecting-a-template}
 
 Selecione um modelo da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus recipients; no entanto, esse cabeçalho será exibido na lista de deliveries. Clique em **[!UICONTROL Continue]**.
 
-![](assets/dce_delivery_model.png)
+![Caixa de diálogo de criação de entrega com o modelo de entrega de email, um campo Rótulo e o botão Continuar.](assets/dce_delivery_model.png)
 
 ## Etapa 3 - Seleção do conteúdo {#step-3---selecting-a-content}
 
@@ -76,11 +76,11 @@ O Editor de conteúdo digital vem com vários modelos prontos para uso com vári
 
 Selecione o modelo de conteúdo que deseja usar e clique no botão **[!UICONTROL Start with the selected content]** para exibir o modelo na entrega criada.
 
-![](assets/dce_select_model.png)
+![Etapa de conteúdo de entrega listando os modelos de conteúdo com o botão Iniciar com o conteúdo selecionado.](assets/dce_select_model.png)
 
 Você também pode importar o conteúdo do HTML criado fora do Adobe Campaign selecionando **[!UICONTROL From a file]**.
 
-![](assets/dce_select_from_file_template.png)
+![Modelos de conteúdo disponíveis com a opção De um arquivo realçada.](assets/dce_select_from_file_template.png)
 
 Você pode salvar esse conteúdo como um modelo para uso futuro. Após criar um modelo de conteúdo personalizado, é possível pré-visualizá-lo na lista de modelos. Para saber mais, consulte [Gerenciamento de modelo](template-management.md).
 
@@ -94,13 +94,13 @@ Você pode salvar esse conteúdo como um modelo para uso futuro. Após criar um 
 
   Para inserir o nome e o sobrenome dos destinatários em um campo de texto na entrega, clique no campo de texto escolhido e coloque o cursor onde deseja exibi-los. Clique no primeiro ícone na barra de ferramentas pop-up e, depois, em **[!UICONTROL Personalization block]**. Selecione **[!UICONTROL Greetings]** e clique em **[!UICONTROL OK]**.
 
-  ![](assets/dce_personalizationblock_greetings.png)
+  ![Insira uma caixa de diálogo de elemento com o bloco de personalização Greetings selecionado, aberto no menu da barra de ferramentas.](assets/dce_personalizationblock_greetings.png)
 
 * Inserir um link em uma imagem
 
   Para levar os destinatários da entrega para um endereço externo por meio de uma imagem, clique na imagem relevante para exibir a barra de ferramentas pop-up, coloque o cursor no primeiro ícone e clique em **[!UICONTROL Link to an external URL]**. Para saber mais, consulte [Adição de um link](editing-content.md#adding-a-link).
 
-  ![](assets/dce_externalpage.png)
+  ![Menu da barra de ferramentas Imagem com a opção Vincular a uma URL externa selecionada.](assets/dce_externalpage.png)
 
   Insira a URL do link no campo **URL** usando o seguinte formato **https://www.myURL.com** e, em seguida, confirme.
 
@@ -122,7 +122,7 @@ Você pode salvar esse conteúdo como um modelo para uso futuro. Após criar um 
 
   Clique no campo de texto em que você deseja ver o link publicado. Clique no primeiro ícone na barra de ferramentas pop-up, selecione **[!UICONTROL Personalization block]** e, então, **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Clique em **[!UICONTROL Save]** para confirmar.
 
-  ![](assets/dce_mirrorpage.png)
+  ![Menu da barra de ferramentas no editor de texto com a opção de bloco Personalization selecionada.](assets/dce_mirrorpage.png)
 
   >[!CAUTION]
   >
@@ -134,7 +134,7 @@ Você pode salvar esse conteúdo como um modelo para uso futuro. Após criar um 
 
   Selecione um campo de texto para seu link para uma aplicação web e clique no primeiro ícone. Escolha **[!UICONTROL Link to a Web application]** e selecione a aplicação desejada clicando no ícone no final do campo **Web Application**.
 
-  ![](assets/dce_webapp.png)
+  ![Insira uma caixa de diálogo de link com os campos Rótulo e Aplicativo Web e um botão OK.](assets/dce_webapp.png)
 
   Clique em **Salvar** para confirmar.
 

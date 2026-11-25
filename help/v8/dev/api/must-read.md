@@ -22,7 +22,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Todos os recursos da API estão disponíveis em **JSON** com uma extensão de UR
 
 ***solicitar amostra***
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile.json \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -87,7 +87,7 @@ Use uma chave personalizada somente para **recursos de perfil de nível superior
 
 Para recuperar as assinaturas de um perfil usando uma chave personalizada, execute uma operação GET na chave personalizada.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<customKey> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -97,7 +97,7 @@ Para recuperar as assinaturas de um perfil usando uma chave personalizada, execu
 
 Execute uma solicitação GET no URL de assinaturas retornado.
 
-```
+```bash
 -X GET <SUBSCRIPTION_URL> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -107,7 +107,7 @@ Execute uma solicitação GET no URL de assinaturas retornado.
 
 Retorna a lista de assinaturas do perfil.
 
-```
+```json
 "service": {
 "PKey": "<PKEY>",
 "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>",

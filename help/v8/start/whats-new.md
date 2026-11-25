@@ -62,10 +62,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 63%
+source-wordcount: '1531'
+ht-degree: 62%
 ---
 # Principais recursos do Adobe Campaign v8 {#ac-gs-what-is-new}
 
@@ -73,7 +73,7 @@ O Adobe Campaign v8 foi projetado para profissionais de marketing de vários can
 
 O Adobe Campaign v8 oferece melhorias significativas de infraestrutura, segurança, capacidade de entrega e monitoramento. Ele está disponível como uma **Cloud Service Gerenciada** que combina serviços com supervisão proativa e alertas oportunos. Saiba mais sobre Managed Cloud Services do Campaign [nesta seção](#acms-desc).
 
-![](assets/home-page.png)
+![Página inicial do console do cliente do Campaign com uma mensagem de boas-vindas e um cartão Adobe Campaign Managed Cloud Services](assets/home-page.png)
 
 ## Principais recursos{#key-capabilities}
 
@@ -231,7 +231,7 @@ Por meio de uma interface intuitiva, os administradores podem monitorar o uso do
 * Defina as configurações de acordo com as diferentes necessidades da sua empresa em momentos diferentes
 * Aumente a segurança controlando as configurações de acesso conforme a necessidade
 
-![](assets/subdomain1.png)
+![Página de Gerenciamento de Subdomínio do Painel de Controle listando subdomínios configurados, com o novo subdomínio da Instalação destacado](assets/subdomain1.png)
 
 [Saiba mais sobre o Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
 

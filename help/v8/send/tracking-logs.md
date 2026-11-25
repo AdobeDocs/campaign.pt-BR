@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 19%
+source-wordcount: '372'
+ht-degree: 17%
 ---
 # Acessar logs de rastreamento {#accessing-the-tracking-logs}
 
@@ -45,7 +45,7 @@ Quando a entrega é enviada e o rastreamento é ativado, o fluxo de trabalho té
 
 Essas informações aparecem na guia **[!UICONTROL Tracking]** do perfil de destinatários direcionados pela entrega, como no exemplo a seguir:
 
-![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
+![Guia Rastreamento de uma lista de perfis de destinatários rastreou cliques e abre com data, rótulo, tipo e entrega](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
 Essa guia exibe todos os URLs rastreados e clicados pelo recipient, incluindo:
 
@@ -60,7 +60,7 @@ Essa guia exibe todos os URLs rastreados e clicados pelo recipient, incluindo:
 
 As informações de rastreamento também podem ser acessadas por meio da guia **[!UICONTROL Tracking]** da entrega.
 
-![](assets/s_ncs_user_select_tracking_tab_from_del.png)
+![Guia Rastreamento de logs de rastreamento de uma lista de entrega com data, rótulo, tipo e destinatário](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 Nessa guia, é possível exibir:
 
@@ -73,7 +73,7 @@ Nessa guia, é possível exibir:
 
 >[!NOTE]
 >
->Se não for possível ver a guia **[!UICONTROL Tracking]** de uma entrega, significa que o rastreamento não foi ativado. Consulte [esta seção](tracked-links.md) para saber como configurar o rastreamento.
+>Se não for possível ver a guia **[!UICONTROL Tracking]** de uma entrega, significa que o rastreamento não foi ativado. Consulte [Configurar links rastreados](tracked-links.md) para saber como configurar o rastreamento.
 
 ### Verifique o workflow técnico de rastreamento {#check-tracking-workflow}
 

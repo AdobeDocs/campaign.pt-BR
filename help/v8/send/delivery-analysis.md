@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 52%
+source-wordcount: '748'
+ht-degree: 48%
 ---
 # Análise de entrega {#analyze-delivery}
 
@@ -41,11 +41,11 @@ Para preparar o delivery, verifique se o conteúdo e o target do delivery foram 
 1. Nas janelas de entrega, clique no botão **[!UICONTROL Send]**.
 1. Selecione **[!UICONTROL Deliver as soon as possible]** para executar o cálculo de público-alvo e a preparação de conteúdo para um envio imediato. Você também pode adiar o delivery para uma data posterior ou obter uma estimativa da população sem preparar o conteúdo.
 
-   ![](assets/delivery-analysis-start.png)
+   ![Enviar para a caixa de diálogo principal do destino de entrega com a opção Entregar assim que possível selecionada, além do botão Analisar](assets/delivery-analysis-start.png)
 
 1. Clique em **[!UICONTROL Analyze]** para iniciar a análise manualmente. A barra de progresso mostra o progresso da análise.
 
-   Um conjunto de regras de verificação é aplicado durante a análise de delivery. Essas regras são definidas em uma **tipologia**, que é selecionada na guia **[!UICONTROL Typology]** nas propriedades de entrega. Saiba mais sobre tipologias em [esta seção](../../automation/campaign-opt/campaign-typologies.md).
+   Um conjunto de regras de verificação é aplicado durante a análise de delivery. Essas regras são definidas em uma **tipologia**, que é selecionada na guia **[!UICONTROL Typology]** nas propriedades de entrega. Saiba mais sobre tipologias em [Introdução às tipologias de campanha](../../automation/campaign-opt/campaign-typologies.md).
 
    Por padrão, para emails, a análise cobre os seguintes pontos:
 
@@ -72,7 +72,7 @@ Para preparar o delivery, verifique se o conteúdo e o target do delivery foram 
    * Um ícone amarelo indica um erro de processamento não crítico.
    * Um ícone vermelho indica um erro crítico que impede o envio do delivery.
 
-   ![](assets/delivery-analysis-results.png){width="800"}
+   ![Resultados da análise: preparação concluída, 22 mensagens para enviar, log com aviso e botão Confirmar entrega](assets/delivery-analysis-results.png){width="800"}
 
 1. Clique em **[!UICONTROL Close]** para corrigir os erros, se houver. Depois de fazer as alterações, reinicie a análise clicando em **[!UICONTROL Analyze]**.
 
@@ -88,7 +88,7 @@ Para preparar o delivery, verifique se o conteúdo e o target do delivery foram 
 
 Navegue até a guia **[!UICONTROL Analysis]** das propriedades de entrega para definir configurações para a preparação da mensagem durante a fase de análise.
 
-![](assets/delivery-properties-analysis-tab.png){width="800"}
+![Guia Análise de propriedades de entrega com opções de rótulo e código, modo de Aprovação definido como Manual e configurações de FFDA](assets/delivery-properties-analysis-tab.png){width="800"}
 
 Essa guia fornece acesso às seguintes opções:
 

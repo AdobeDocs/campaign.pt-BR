@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '664'
 ht-degree: 14%
 ---
 # Introdução aos fluxos de trabalho{#gs-with-workflows}
@@ -126,7 +126,7 @@ Saiba mais sobre **Propriedades do fluxo de trabalho** em [esta página](https:/
 
 Na guia **[!UICONTROL Execution]** do **[!UICONTROL Properties]** do fluxo de trabalho, você pode vincular o fluxo de trabalho a depósitos diferentes e otimizar o gerenciamento da carga de trabalho. Para obter mais informações sobre **Warehouses**, consulte a [documentação do Snowflake](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
 
-![](assets/warehouse.png)
+![Guia Execução de propriedades de fluxo de trabalho com o menu suspenso Depósito aberto: Padrão, Campanha, Importação/Exportação e Intermitência de Campanha](assets/warehouse.png)
 
 Dependendo da finalidade do seu fluxo de trabalho, você pode escolher entre os três depósitos a seguir no menu suspenso **[!UICONTROL Warehouse]**:
 
@@ -151,11 +151,11 @@ Saiba como criar uma campanha recorrente em [esta página](https://experiencelea
 
 Usar mensagens transacionais do Campaign para automatizar mensagens geradas por eventos acionados de sistemas de informações. Essas mensagens transacionais podem ser fatura, confirmação de pedido, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta ou criação de conta de site, por exemplo. Essas mensagens podem ser enviadas individualmente ou em lote por email, SMS ou notificações por push.
 
-Saiba mais sobre os recursos de mensagens transacionais em [esta seção](../send/transactional.md).
+Saiba mais sobre os recursos de mensagens transacionais em [Mensagens transacionais do Campaign](../send/transactional.md).
 
 Conecte o Adobe Campaign e o Adobe Analytics para recuperar ações do usuário e enviar mensagens personalizadas quase em tempo real.
 
-Saiba como integrar o Campaign a outras soluções na [esta seção](../start/connect.md)
+Saiba como integrar o Campaign a outras soluções no [Conectar-se ao Campaign v8](../start/connect.md)
 
 
 ## Casos de uso completos de fluxos de trabalho{#end-to-end-uc}
