@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 91%
+source-wordcount: '1463'
+ht-degree: 90%
 ---
 # Definir o conteúdo interativo{#defining-interactive-content}
 
@@ -39,7 +39,7 @@ Com o AMP para Email você pode:
 * Testar a entrega de emails do AMP para endereços específicos configurados adequadamente.
 * Entregar emails do AMP para endereços do Gmail ou Mail.ru depois de fazer o registro nos provedores correspondentes.
 
-Para obter mais informações sobre teste e envio de emails do AMP, consulte [esta seção](#targeting-amp-email).
+Para obter mais informações sobre teste e envio de emails do AMP, consulte [Target an AMP email](#targeting-amp-email).
 
 Esse recurso está disponível por meio de um pacote dedicado no Adobe Campaign. Dependendo das suas permissões e do modelo de implantação, é possível instalar esse pacote ou entrar em contato com a Adobe para solicitar a instalação.
 
@@ -216,4 +216,4 @@ Por exemplo, se uma lista de produtos é incluída no email, ao editar os preço
 
 O vídeo abaixo explica como ativar o AMP no Adobe Campaign e mostra sua utilização.
 
->[!VIDEO](https://video.tv.adobe.com/v/33179?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)

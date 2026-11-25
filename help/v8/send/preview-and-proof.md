@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 22%
+source-wordcount: '710'
+ht-degree: 21%
 ---
 # Pré-visualizar e testar o email {#preview-test}
 
@@ -81,7 +81,7 @@ O tipo de destino de prova está selecionado na lista suspensa **[!UICONTROL Tar
   >
   >Os seed addresses não pertencem à tabela de recipient padrão (nms:recipient), pois são criados em uma tabela separada. Se a tabela de recipients é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados.
 
-  Saiba mais sobre seed addresses [nesta seção](../audiences/test-profiles.md).
+  Saiba mais sobre seed addresses em [Criar perfis de teste no Campaign](../audiences/test-profiles.md).
 
 * Use a opção **[!UICONTROL Specific target and Seed addresses]** para combinar seed addresses e endereços de email específicos. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 
@@ -122,4 +122,4 @@ Por padrão, as mensagens de prova são identificadas pela menção `Proof #N` n
 
 Saiba como enviar e validar uma prova para uma entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447004?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

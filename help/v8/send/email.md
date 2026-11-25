@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '603'
 ht-degree: 26%
 ---
 # Criar e enviar emails
@@ -42,7 +42,7 @@ Com o Adobe Campaign, é possível criar entregas de email para enviar emails pe
 >Para criar emails atraentes e personalizados individualmente, navegue até a [interface de usuário da Web](../start/campaign-ui.md#ac-web-ui). O Adobe Campaign vem com o Email Designer, uma interface intuitiva de arrastar e soltar, que permite projetar e refinar todo o conteúdo de cada email.
 
 
-Saiba mais sobre as principais etapas para criar e configurar uma entrega em [esta página](../start/create-message.md).
+Saiba mais sobre as principais etapas para criar e configurar uma entrega no [Criar a primeira entrega](../start/create-message.md).
 
 ## Crie uma entrega por email
 
@@ -87,7 +87,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
      ![](assets/perso-check.png)
 
-     Saiba mais sobre opções de personalização em [esta seção](personalize.md).
+     Saiba mais sobre as opções de personalização em [Introdução à personalização](personalize.md).
 
    * Inserir um link rastreado
 
@@ -103,9 +103,9 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
      Coloque o cursor onde deseja inserir este link, clique no último ícone na barra de ferramentas, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL link to mirror page]**.
 
-     Saiba mais sobre como gerenciar a mirror page em [esta seção](mirror-page.md#link-to-mirror-page).
+     Saiba mais sobre como gerenciar a mirror page em [Adicionar um link à mirror page](mirror-page.md#link-to-mirror-page).
 
-1. Você pode definir parâmetros adicionais para o email, como enviar uma cópia das mensagens para um endereço CCo, alterar o formato da mensagem, definir uma codificação específica etc. Saiba mais em [esta seção](email-parameters.md).
+1. Você pode definir parâmetros adicionais para o email, como enviar uma cópia das mensagens para um endereço CCo, alterar o formato da mensagem, definir uma codificação específica etc. Saiba mais em [Parâmetros de email no Adobe Campaign](email-parameters.md).
 
 1. Quando o conteúdo estiver pronto, clique em **Salvar**: ele será exibido na lista de entregas, na guia **[!UICONTROL Campaigns > Deliveries]**.
 
@@ -124,7 +124,7 @@ Saiba como criar um fluxo de trabalho para importar um conteúdo de email neste 
 
 ## Testar e validar seus emails
 
-O Campaign oferece várias maneiras de testar e validar seus emails antes de enviá-los para seus públicos. Saiba como visualizar e testar seu conteúdo de email [nesta seção](../send/preview-and-proof.md).
+O Campaign oferece várias maneiras de testar e validar seus emails antes de enviá-los para seus públicos. Saiba como visualizar e testar seu conteúdo de email no [Visualizar e testar seu email](../send/preview-and-proof.md).
 
 Você pode:
 

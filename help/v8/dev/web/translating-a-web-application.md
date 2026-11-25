@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 93%
+source-wordcount: '367'
+ht-degree: 91%
 ---
 # Traduzir um aplicativo web{#translating-a-web-application}
 
@@ -36,7 +36,7 @@ Se você selecionar pelo menos um idioma adicional pela guia **[!UICONTROL Local
 
 Essa opção permite indicar se o conteúdo do bloco deve ser traduzido ou não.
 
-As strings a serem traduzidas são coletadas da mesma forma que as outras strings da aplicação web, através da guia **[!UICONTROL Translations]** da aplicação. Para obter mais informações, consulte [esta página](translating-a-web-form.md).
+As strings a serem traduzidas são coletadas da mesma forma que as outras strings da aplicação web, através da guia **[!UICONTROL Translations]** da aplicação. Para obter mais informações, consulte [Traduzir um formulário web](translating-a-web-form.md).
 
 Para sinalizar as strings a ser traduzidas:
 

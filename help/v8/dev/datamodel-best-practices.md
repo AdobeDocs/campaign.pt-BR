@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '2776'
-ht-degree: 5%
+source-wordcount: '2783'
+ht-degree: 4%
 ---
 # Práticas recomendadas do modelo de dados {#data-model-best-practices}
 
@@ -60,11 +60,11 @@ Este documento descreve as principais recomendações ao projetar o modelo de da
 
 O sistema Adobe Campaign é muito flexível e pode ser estendido além da implementação inicial. No entanto, embora as possibilidades sejam infinitas, é essencial tomar decisões sábias e criar bases sólidas para começar a projetar seu modelo de dados.
 
-Para entender melhor as tabelas integradas do Campaign e como elas se relacionam entre si, consulte [esta seção](datamodel.md).
+Para obter uma melhor compreensão das tabelas integradas do Campaign e como elas se relacionam entre si, consulte [Introdução ao modelo de dados do Campaign](datamodel.md).
 
-Leia [esta seção](schemas.md) para começar a usar esquemas do Campaign.
+Leia [Trabalhar com esquemas de campanha](schemas.md) para começar a usar esquemas de campanha.
 
-Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign nesta [página](extend-schema.md).
+Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign em [Estender esquemas do Campaign](extend-schema.md).
 
 ## Arquitetura do modelo de dados {#data-model-architecture}
 
@@ -136,7 +136,7 @@ A tabela a seguir descreve esses identificadores e sua finalidade.
 
 No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), a chave primária do Adobe Campaign é um UUID gerado automaticamente para todas as tabelas internas. Uma UUID também pode ser usada para tabelas personalizadas. [Saiba mais](../architecture/keys.md)
 
-Mesmo que o número de IDs seja infinito, você deve cuidar do tamanho do banco de dados para garantir um desempenho ideal. Para evitar qualquer problema, ajuste as configurações de limpeza da instância. Para obter mais informações, consulte [esta seção](#data-retention).
+Mesmo que o número de IDs seja infinito, você deve cuidar do tamanho do banco de dados para garantir um desempenho ideal. Para evitar qualquer problema, ajuste as configurações de limpeza da instância. Para obter mais informações, consulte [Retenção de dados](#data-retention).
 
 
 ## Chaves internas personalizadas {#custom-internal-keys}

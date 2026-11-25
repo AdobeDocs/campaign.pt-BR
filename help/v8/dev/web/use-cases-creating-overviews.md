@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 92%
+source-wordcount: '953'
+ht-degree: 91%
 ---
 # Casos de uso: criar páginas de visão geral{#use-cases-creating-overviews}
 
@@ -194,7 +194,7 @@ Esses dois elementos serão agrupados no mesmo container para ser agrupados graf
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   Para obter mais informações sobre layout de elementos, consulte [esta seção](about-web-forms.md).
+   Para obter informações sobre layout de elemento, consulte [Introdução aos formulários web](about-web-forms.md).
 
 1. Aplique **dotedFilter**.
 

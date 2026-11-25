@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 1%
+ht-degree: 0%
 ---
 # Gerenciamento de mensagens transacionais {#managing-transactional-messages}
 
@@ -51,7 +51,7 @@ O evento transacional é enviado por uma solicitação POST com a seguinte estru
 POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 ```
 
-* **&lt;ORGANIZAÇÃO>**: sua ID de ORGANIZAÇÃO pessoal. Consulte [esta seção](must-read.md).
+* **&lt;ORGANIZAÇÃO>**: sua ID de ORGANIZAÇÃO pessoal. Consulte [Deve-ler](must-read.md).
 
 * **&lt;transactionalAPI>**: os endPoints da API de Mensagens Transacionais.
 

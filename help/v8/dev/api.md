@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 14%
+source-wordcount: '319'
+ht-degree: 12%
 ---
 # Introdução às [!DNL Campaign] APIs {#gs-ac-api}
 
@@ -46,7 +46,7 @@ ht-degree: 14%
 
 Você pode usar as [APIs do Campaign JavaScript](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"} para gravar no banco de dados da nuvem do Campaign ou ler a partir do banco de dados:
 
-* APIs específicas de negócios que permitem que você atue em cada objeto: entregas, fluxos de trabalho, assinaturas e assim por diante. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=pt-BR){target="_blank"}.
+* APIs específicas de negócios que permitem que você atue em cada objeto: entregas, fluxos de trabalho, assinaturas e assim por diante. Saiba mais na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
 * APIs de acesso a dados genéricos para consultar os dados do modelo de dados usando `queryDef` e o objeto `NLWS`. Saiba mais em [Consultar o banco de dados com queryDef](query-api.md).
 
 Observe que em sua [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o Campaign funciona com dois bancos de dados: um banco de dados local para a interface de mensagens em tempo real, consultas unitárias e gravações por meio de APIs, e um banco de dados em nuvem para execução de campanha, relatórios, assimilação de dados, consultas em lote e execução de fluxo de trabalho.
@@ -69,7 +69,7 @@ Antes de usar as APIs do [!DNL Adobe Campaign], você precisa se familiarizar co
 Para usar APIs e interagir com o [!DNL Adobe Campaign], você também deve estar familiarizado com seu modelo de dados.
 
 >[!NOTE]
->É possível gerar uma descrição completa do modelo de dados. Saiba mais [nesta página](datamodel.md).
+>É possível gerar uma descrição completa do modelo de dados. Saiba mais em [Introdução ao modelo de dados do Campaign](datamodel.md).
 
 
 **Tópicos relacionados**

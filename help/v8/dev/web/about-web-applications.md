@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 74%
+source-wordcount: '859'
+ht-degree: 69%
 ---
 # Introdução a aplicativos web{#about-web-applications}
 
@@ -51,7 +51,7 @@ ht-degree: 74%
 >
 >Para os casos de uso mais comuns, crie suas landing pages na interface da Web do Campaign, onde você pode facilmente projetá-las e publicá-las. As landing pages criadas no console do cliente, conforme descrito nesta seção, oferecem mais configurações e abordam casos de uso mais avançados.
 >
->[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 
 
@@ -67,7 +67,7 @@ Este capítulo fornece uma visão geral de como gerenciar as aplicações web.
 
 >[!NOTE]
 >
->Consulte a [lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) para saber como otimizar a segurança para aplicativos web.
+>Consulte a [lista de verificação de segurança e privacidade](https://helpx.adobe.com/campaign/kb/acc-security.html) para saber como otimizar a segurança para aplicativos web.
 
 >[!CAUTION]
 >
@@ -82,26 +82,26 @@ Os aplicativos Web no Adobe Campaign oferecem acesso às seguintes funcionalidad
 * Interface de gestão de página gráfica, layout de página com várias colunas. Para obter mais informações, consulte esta [página](designing-a-web-application.md).
 * Personalização de renderização e posição de campo. Para obter mais informações, consulte esta [página](editing-content.md#adding-personalization-content).
 * Exibição condicional de campos de pesquisa de acordo com as respostas. Para obter mais informações, consulte esta [página](form-rendering.md#defining-fields-conditional-display).
-* Exibição aleatória de perguntas. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/surveys/building-a-survey#adding-questions){target="_blank"} (documentação do Campaign v8).
+* Exibição aleatória de perguntas. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/building-a-survey#adding-questions){target="_blank"} (documentação do Campaign v8).
 * Exibição de página condicional. Para obter mais informações, consulte esta [página](defining-web-forms-page-sequencing.md#conditional-page-display).
 * A verificação de informações antes da validação, dependendo do tipo de dados esperado (número, endereço de email, data etc.) e dos campos obrigatórios. Para obter mais informações, consulte esta [página](form-rendering.md#defining-control-settings).
 * Convites ou notificações por email. Para obter mais informações, consulte esta [página](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personalização de mensagens de erros e mensagens finais. Para obter mais informações, consulte esta [página](defining-web-forms-properties.md#setting-up-an-error-page).
 * Uso de imagens, vídeos, links de hipertexto, captcha etc. Para obter mais informações, consulte esta [página](editing-content.md).
-* Monitoramento de respostas em tempo real. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#response-tracking){target="_blank"} (documentação do Campaign v8).
+* Monitoramento de respostas em tempo real. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#response-tracking){target="_blank"} (documentação do Campaign v8).
 
 O módulo de criação **Survey** opcional oferece as seguintes funcionalidades adicionais:
 
-* Extensão dinâmica do banco de dados: criação de respostas não incluídas no modelo de dados inicial. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/surveys/managing-answers#storing-collected-answers){target="_blank"} (documentação do Campaign v8).
-* Geração de relatórios dedicados. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"} (documentação do Campaign v8).
+* Extensão dinâmica do banco de dados: criação de respostas não incluídas no modelo de dados inicial. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/managing-answers#storing-collected-answers){target="_blank"} (documentação do Campaign v8).
+* Geração de relatórios dedicados. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"} (documentação do Campaign v8).
 
 Em comparação às aplicações Web, as pesquisas têm uma interface gráfica simplificada com um número reduzido de controles de edição.
 
 >[!NOTE]
 >
->As pesquisas estão detalhadas em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentação do Campaign v8).
+>As pesquisas estão detalhadas em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentação do Campaign v8).
 >
->As funcionalidades gerais de formulários web no Adobe Campaign estão detalhadas [nesta seção](about-web-forms.md).
+>As funcionalidades gerais de formulários Web no Adobe Campaign estão detalhadas em [Introdução aos formulários Web](about-web-forms.md).
 
 ## Implementação do aplicativo web {#web-application-implementation}
 
@@ -109,7 +109,7 @@ Para criar e publicar uma aplicação web, você deve:
 
 1. Crie o conteúdo (campos, listas, tabelas, gráficos, etc.).
 
-   Você também pode exibir a seção que detalha os campos disponíveis para formulários: todos esses campos também estão disponíveis para aplicações web. Essas informações estão disponíveis [nesta página](adding-fields-to-a-web-form.md).
+   Você também pode exibir a seção que detalha os campos disponíveis para formulários: todos esses campos também estão disponíveis para aplicações web. Estas informações estão disponíveis em [Adicionar campos a um formulário web](adding-fields-to-a-web-form.md).
 
 1. Conforme necessário, você pode adicionar pré-carregamento, testar e salvar etapas e configurar o sistema de controle de acesso (principalmente dentro da estrutura de uma publicação extranet).
 1. Publique a aplicação web para torná-la disponível em uma extranet ou no Adobe Campaign.
@@ -120,7 +120,7 @@ Os aplicativos Web são criados por meio do link **[!UICONTROL Web Applications]
 
 Os aplicativos web são armazenados no nó **[!UICONTROL Resources > Online > Web Applications]** da árvore do Adobe Campaign. As configurações estão divididas nas seguintes pastas:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: contém os modelos de renderização para a apresentação do formulário Web (aplicativos e pesquisas). O modelo permite gerar o formulário. Ele também usa uma folha de estilos CSS. Essa folha de estilos pode ser sobrecarregada no nível do modelo. Para obter mais informações, consulte [esta página](form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Administration > Configuration > Form renderings]**: contém os modelos de renderização para a apresentação do formulário Web (aplicativos e pesquisas). O modelo permite gerar o formulário. Ele também usa uma folha de estilos CSS. Essa folha de estilos pode ser sobrecarregada no nível do modelo. Para obter mais informações, consulte [Seleção do modelo de renderização do formulário](form-rendering.md#selecting-the-form-rendering-template).
 * **[!UICONTROL Resources > Templates > Web application templates]**: contém modelos de formulário. Para criar um formulário ou um aplicativo Web, você deve começar com um modelo.
 
 ## Modelos de aplicativo web {#web-application-templates}

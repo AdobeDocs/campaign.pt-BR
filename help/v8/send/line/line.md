@@ -33,16 +33,16 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 87%
+source-wordcount: '1201'
+ht-degree: 86%
 ---
 # Criar entregas LINE
 
 O LINE é um aplicativo para mensagens instantâneas, chamadas de voz e vídeo gratuitas, disponível em todos os dispositivos móveis e para PC. Você pode usar o Adobe Campaign para enviar mensagens LINE.
 
-O [!DNL LINE] também pode ser combinado com o módulo de mensagem transacional para enviar mensagens em tempo real no aplicativo [!DNL LINE] instalado nos dispositivos móveis do consumidor. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) na documentação do Campaign Classic v7.
+O [!DNL LINE] também pode ser combinado com o módulo de mensagem transacional para enviar mensagens em tempo real no aplicativo [!DNL LINE] instalado nos dispositivos móveis do consumidor. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) na documentação do Campaign Classic v7.
 
 ![](assets/line_message.png)
 
@@ -124,13 +124,13 @@ Para criar uma entrega [!DNL LINE], é necessário seguir estas etapas:
 
    ![](assets/line_message_01.png)
 
-1. Identifique a entrega com um **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** e **[!UICONTROL Description]**. Para obter mais informações, consulte [esta seção](../../start/create-message.md#create-the-delivery).
+1. Identifique a entrega com um **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** e **[!UICONTROL Description]**. Para obter mais informações, consulte [Criar o delivery](../../start/create-message.md#create-the-delivery).
 
 1. Clique em **[!UICONTROL Continue]** para criar a entrega de
 
 1. No editor de entrega, selecione **[!UICONTROL To]** para direcionar os destinatários da entrega [!DNL LINE]. O direcionamento foi realizado em **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
 
-   Para obter mais informações, consulte [esta página](../../audiences/target-mappings.md).
+   Para obter mais informações, consulte [Trabalhar com mapeamentos de destino](../../audiences/target-mappings.md).
 
    ![](assets/line_message_08.png)
 
@@ -182,7 +182,7 @@ A configuração desse tipo de mensagem é semelhante à configuração do **[!U
 
 ### Configuração de uma entrega de imagem e link {#configuring-an-image-and-link-delivery}
 
-Uma entrega **[!UICONTROL Image and link]**&#x200B;[!DNL LINE] é uma mensagem enviada aos recipients no formato de uma imagem que pode conter um ou vários URLs.
+Uma entrega **[!UICONTROL Image and link]**[!DNL LINE] é uma mensagem enviada aos recipients no formato de uma imagem que pode conter um ou vários URLs.
 
 É possível usar:
 

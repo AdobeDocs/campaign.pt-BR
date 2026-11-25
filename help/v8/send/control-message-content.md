@@ -17,10 +17,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 97%
+source-wordcount: '770'
+ht-degree: 95%
 ---
 # Controlar conteúdo da mensagem{#control-message-content}
 
@@ -31,7 +31,7 @@ Siga os princípios listados abaixo ao criar o conteúdo da mensagem:
 * [Endereço do remetente](#sender-address): o endereço deve identificar explicitamente o remetente. O domínio deve ser de propriedade do remetente e registrado por ele. O registro de domínio não deve ser privatizado.
 * [Personalização](#personalization): personalizar o conteúdo e definir um tempo de envio por destinatário aumenta as chances de sua mensagem ser aberta.
 * Imagens e texto: respeitar uma proporção adequada de texto/imagem (por exemplo, 60% de texto e 40% de imagens).
-* [Link de unsubscription &#x200B;](#opt-out) e página de destino: o link de unsubscription é essencial. Deve ser visível e válido e o formulário deve ser funcional.
+* [Link de unsubscription ](#opt-out) e página de destino: o link de unsubscription é essencial. Deve ser visível e válido e o formulário deve ser funcional.
 * Pré-visualização: use as ferramentas oferecidas pelo Adobe Campaign para verificar e otimizar o conteúdo do seu email ([renderização de caixa de entrada](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
 Para obter dicas adicionais para otimizar a capacidade de entrega ao projetar conteúdo, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery){target="_blank"}.
@@ -52,7 +52,7 @@ Para obter mais informações sobre como definir o endereço do remetente, consu
 
 Para melhorar a experiência dos destinatários e fazer com que eles abram seu email, o Adobe Campaign permite personalizar as mensagens.
 
-Para obter mais informações sobre o uso de campos de personalização no Adobe Campaign, consulte [esta seção](personalization-fields.md).
+Para obter mais informações sobre como usar campos de personalização no Adobe Campaign, consulte [Adicionar campos de personalização](personalization-fields.md).
 
 ## Formulário e link para opção de não participação {#opt-out}
 

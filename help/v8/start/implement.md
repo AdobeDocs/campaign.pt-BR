@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 92%
+source-wordcount: '1252'
+ht-degree: 81%
 ---
 # Diretrizes de implementação do Campaign{#gs-implementation}
 
@@ -77,7 +77,7 @@ O Adobe Campaign vem com processos e configurações que permitem usar o Campaig
 
   Saiba mais em [documentação de privacidade do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=pt-BR#consent){target="_blank"}
 
-* **Regulamentos de proteção de dados e privacidade**: consulte [esta seção](privacy.md) para obter mais informações sobre os requisitos de privacidade e como esses regulamentos afetam sua organização e o Adobe Campaign.
+* **Regulamentos de proteção de dados e privacidade**: consulte [Gerenciar solicitações de privacidade no Campaign](privacy.md) para obter informações sobre requisitos de privacidade e como esses regulamentos afetam sua organização e o Adobe Campaign.
 
 ### Segurança
 
@@ -89,7 +89,7 @@ Saiba mais sobre as diretrizes e princípios de segurança com o Adobe Campaign 
 
 Você pode adicionar usuários manualmente ao Campaign e associá-los a grupos, alinhados à sua hierarquia de funções. Os usuários poderão fazer logon e acessar os dados e permissões apropriados para eles.
 
-Saiba como adicionar usuários ao Adobe Campaign [nesta seção](../start/gs-permissions.md).
+Saiba como adicionar usuários ao Adobe Campaign no [Introdução às permissões no Campaign v8](../start/gs-permissions.md).
 
 ### Instalar o console do cliente do Campaign{#implementation-install-console}
 
@@ -145,17 +145,17 @@ Você pode personalizar diversas áreas e recursos do Campaign. A maioria de nos
 
    Consulte esta seção para saber mais sobre o [Modelo de dados integrado do Campaign](../dev/datamodel.md).
 
-   É possível estender esquemas já existentes ou criar novos do zero. Saiba mais [nesta página](../dev/customize.md).
+   É possível estender esquemas já existentes ou criar novos do zero. Saiba mais em [Personalizar sua instância](../dev/customize.md).
 
 1. **Painéis e listas**
 
    É possível configurar facilmente listas, adicionar e remover campos e personalizar colunas.
 
-   Saiba como gerenciar filtros e listas no Campaign [nesta página](../dev/customize.md#gs-lists-and-filters).
+   Saiba como gerenciar filtros e listas no Campaign em [Personalizar listas e criar filtros](../dev/customize.md#gs-lists-and-filters).
 
    Você também pode criar novos painéis para exibir dados do Campaign de acordo com suas necessidades.
 
-   Saiba mais [nesta página](../dev/customize.md#gs-custom-dashboards).
+   Saiba mais em [Personalizar painéis](../dev/customize.md#gs-custom-dashboards).
 
 1. **Relatórios**
 
@@ -163,7 +163,7 @@ Você pode personalizar diversas áreas e recursos do Campaign. A maioria de nos
 
    Além dos relatórios integrados, o Adobe Campaign permite gerar relatórios em vários contextos para atender a diferentes necessidades. Os princípios de uso e dos modos de implementação são detalhados neste documento.
 
-   Saiba mais sobre os recursos de relatórios no Campaign [nesta página](../reporting/gs-reporting.md).
+   Saiba mais sobre os recursos de relatórios no Campaign em [Introdução às ferramentas de relatório do Adobe Campaign](../reporting/gs-reporting.md).
 
 
 ## Configurar automação de campanha{#implementation-automation}
@@ -172,7 +172,7 @@ Para orquestrar campanhas de marketing complexas em públicos-alvo diferentes em
 
 * Use **fluxos de trabalho** para gerenciar processos e dados. Saiba mais [nesta documentação](../../automation/workflow/about-workflows.md)
 
-* Configurar processos de **assinatura** e **páginas de destino**.  Saiba mais [nesta página](../start/subscriptions.md)
+* Configurar processos de **assinatura** e **páginas de destino**.  Saiba mais em [Gerenciar assinaturas e cancelar assinaturas no Campaign](../start/subscriptions.md)
 
 * Configurar **regras de tipologia** para definir a fadiga e o gerenciamento de controle.  Saiba mais [nesta documentação](../../automation/campaign-opt/campaign-typologies.md)
 
@@ -193,7 +193,7 @@ Se estiver usando outras soluções da Adobe, você poderá conectá-las ao ambi
 * Campaign — conectores de dados do Analytics
 
 
-Também é possível usar o logon único (SSO) para se conectar ao Campaign. Saiba mais [nesta página](connect.md).
+Também é possível usar o logon único (SSO) para se conectar ao Campaign. Saiba mais em [Conectar-se ao Campaign v8](connect.md).
 
 Descubra a lista completa de soluções da Adobe que podem ser integradas ao Adobe Campaign [nesta página](../connect/integration.md).
 
@@ -201,16 +201,16 @@ Descubra a lista completa de soluções da Adobe que podem ser integradas ao Ado
 
 Conecte o Campaign com sistemas de terceiros para combinar uma grande variedade de recursos e automatizar processos.
 
-Saiba mais sobre conectores disponíveis [nesta seção](../connect/integration.md).
+Saiba mais sobre conectores disponíveis no [Connect Campaign com suas soluções](../connect/integration.md).
 
 **Conecte seu CRM ao Campaign**
 
 Você pode conectar sua plataforma do Adobe Campaign a seus sistemas de terceiros CRM e sincronizar dados: contatos, contas, compras etc.
 
-Saiba como conectar seu sistema de CRM ao Campaign [nesta seção](../connect/integration.md#gs-crm-connectors)
+Saiba como conectar seu sistema CRM ao Campaign no [Integrar ao seu Conector CRM](../connect/integration.md#gs-crm-connectors)
 
 **Conectar-se a um banco de dados externo**
 
 Você pode conectar o banco de dados da nuvem do Campaign a sistemas externos por meio do módulo Federated Data Access (FDA).
 
-Saiba como configurar o módulo FDA do Campaign para definir parâmetros de acesso [nesta seção](../connect/integration.md#gs-fda)
+Saiba como configurar o módulo FDA do Campaign para definir parâmetros de acesso no [Conectar terceiros com o Federated Data Access](../connect/integration.md#gs-fda)

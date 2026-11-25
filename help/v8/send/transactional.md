@@ -30,9 +30,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '454'
 ht-degree: 59%
 ---
 # Introdução a mensagens transacionais{#send-transactional-messages}
@@ -49,9 +49,9 @@ As mensagens transacionais são usadas para enviar:
 * uma resposta individual em tempo real a uma ação do cliente
 * conteúdo não promocional
 
-As configurações de mensagens transacionais estão detalhadas em [esta seção](../config/transactional-msg-settings.md).
+As configurações de mensagens transacionais são detalhadas em [Configurações de mensagens transacionais do Campaign](../config/transactional-msg-settings.md).
 
-Entenda a arquitetura de mensagens transacionais em [esta página](../architecture/architecture.md#transac-msg-archi).
+Entenda a arquitetura de mensagens transacionais em [Arquitetura do Centro de Mensagens](../architecture/architecture.md#transac-msg-archi).
 
 ## Princípio operacional das mensagens transacionais {#transactional-messaging-operating-principle}
 

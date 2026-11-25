@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 31%
 ---
 # Definir o conteúdo do SMS {#sms-content}
@@ -50,7 +50,7 @@ Para configurar o conteúdo do delivery de SMS:
 
    ![](assets/sms_perso_recipient.png){zoomable="yes"}
 
-   Saiba mais sobre a personalização no Adobe Campaign em [esta seção](../personalize.md).
+   Saiba mais sobre a personalização no Adobe Campaign em [Introdução à personalização](../personalize.md).
 
 1. Você pode visualizar o conteúdo da entrega na guia **[!UICONTROL Preview]**. Para verificar suas configurações de personalização, clique na lista suspensa **[!UICONTROL Test personalization]** e selecione um recipient.
 

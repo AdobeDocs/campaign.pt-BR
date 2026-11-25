@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 4%
+source-wordcount: '238'
+ht-degree: 0%
 ---
 # Recuperação de perfis com APIs {#retrieving-profiles}
 
@@ -30,7 +30,7 @@ A recuperação de perfis é executada com uma solicitação **GET**.
 
 Você pode refinar sua pesquisa usando filtros, ordenação e paginação. Para obter mais informações, consulte a seção [Operações adicionais](sorting.md).
 
-Além disso, as APIs do Campaign Standard permitem procurar perfis com base em um destes campos: email, nome, sobrenome ou qualquer campo personalizado. Para obter mais informações, consulte [esta seção](#searching-field).
+Além disso, as APIs do Campaign Standard permitem procurar perfis com base em um destes campos: email, nome, sobrenome ou qualquer campo personalizado. Para obter mais informações, consulte [Pesquisa de perfis com base em um campo](#searching-field).
 
 <br/>
 

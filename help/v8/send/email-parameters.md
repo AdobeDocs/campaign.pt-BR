@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 41%
+source-wordcount: '956'
+ht-degree: 39%
 ---
 # Parâmetros de email {#email-parameters}
 
@@ -31,7 +31,7 @@ Esta seção apresenta as opções e os parâmetros disponíveis nas propriedade
 
 ## Usar Email Cco {#email-bcc}
 
-Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma. Esta opção está detalhada em [esta página](email-bcc.md).
+Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma. Esta opção está detalhada em [Enviar uma cópia de suas mensagens para um endereço CCO](email-bcc.md).
 
 ## Selecionar formatos de mensagem {#selecting-message-formats}
 
@@ -83,15 +83,15 @@ A guia **[!UICONTROL SMTP]** das propriedades de entrega também permite configu
 
 * **[!UICONTROL Bounce address]**: você também pode definir outro endereço para o qual os emails devolvidos não processados são encaminhados. Esse endereço permite investigar os motivos para a rejeição quando os emails não puderam ser qualificados automaticamente pelo aplicativo.
 
-Cada um desses campos pode ser personalizado usando o ícone dedicado. Saiba mais sobre campos de personalização em [esta seção](personalization-fields.md).
+Cada um desses campos pode ser personalizado usando o ícone dedicado. Saiba mais sobre campos de personalização em [Adicionar campos de personalização](personalization-fields.md).
 
 ![](assets/email-smtp-bounce.png)
 
-Para obter mais informações sobre gerenciamento de rejeição de emails, consulte [esta seção](delivery-failures.md#bounce-mail-qualification).
+Para obter mais informações sobre o gerenciamento de emails rejeitados, consulte [Qualificação de emails rejeitados](delivery-failures.md#bounce-mail-qualification).
 
 ## Ativar lista de um clique - cancelar inscrição {#one-click-list-unsubscribe}
 
-O URL de um clique para cancelar a inscrição na lista é um link ou botão exibido ao lado das informações do remetente do email, que permite que os destinatários recusem instantaneamente suas listas de endereçamento com um único clique. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=pt-BR#list-unsubscribe){target="_blank"}-->
+O URL de um clique para cancelar a inscrição na lista é um link ou botão exibido ao lado das informações do remetente do email, que permite que os destinatários recusem instantaneamente suas listas de endereçamento com um único clique. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Ele é exibido como um link **Cancelar inscrição** nas interfaces de email dos ISPs. Por exemplo:
 
@@ -131,7 +131,7 @@ Dependendo do cliente de email e do método que estão usando para executar a re
 
 >[!NOTE]
 >
->Você também pode definir manualmente os métodos [List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} e [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} com um clique. As etapas detalhadas estão descritas no [Guia de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=pt-BR#list-unsubscribe){target="_blank"} da Experience Cloud.
+>Você também pode definir manualmente os métodos [List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} e [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} com um clique. As etapas detalhadas estão descritas no [Guia de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"} da Experience Cloud.
 
 
 ## Adicionar cabeçalhos SMTP {#adding-smtp-headers}
@@ -155,4 +155,4 @@ Os valores são codificados automaticamente se necessário.
 
 A mirror page é uma página HTML acessível online através de um navegador da Web. Seu conteúdo é idêntico ao email. Pode ser útil se seus recipients estiverem enfrentando problemas de renderização ou imagens com falha ao tentar exibir seu email na caixa de entrada.
 
-Saiba como inserir um link para a mirror page em [esta seção](mirror-page.md)
+Saiba como inserir um link para a mirror page em [Adicionar um link para a mirror page](mirror-page.md)

@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 68%
+source-wordcount: '1171'
+ht-degree: 64%
 ---
 # Monitorar seus deliveries na interface do Campaign {#delivery-dashboard}
 
@@ -90,7 +90,7 @@ A guia **[!UICONTROL Summary]** contém as características da entrega: status d
 
 O link **[!UICONTROL Reports]**, acessível na guia **[!UICONTROL Summary]**, permite que você veja um conjunto de relatórios referentes à ação da entrega: relatório geral da entrega, relatório detalhado, relatório da entrega, distribuição de mensagens com falha, taxa de abertura, cliques e transações, etc.
 
-O conteúdo dessa guia pode ser configurado de acordo com os requisitos. Para obter mais informações sobre relatórios de entrega, consulte [esta seção](../reporting/delivery-reports.md).
+O conteúdo dessa guia pode ser configurado de acordo com os requisitos. Para obter mais informações sobre relatórios de entrega, consulte [relatórios de entrega integrados do Adobe Campaign](../reporting/delivery-reports.md).
 
 ![](assets/delivery-report.png)
 
@@ -102,7 +102,7 @@ Para uma entrega, você pode exibir (por exemplo) apenas os destinatários com u
 
 >[!NOTE]
 >
->A lista que exibe os logs do delivery pode ser personalizada, como qualquer lista no Campaign. Por exemplo, você pode adicionar uma coluna para saber qual endereço IP enviou cada email em uma entrega. Para obter mais informações sobre a configuração de exibição de listas, consulte [esta seção](../config/ui-settings.md#customize-lists).
+>A lista que exibe os logs do delivery pode ser personalizada, como qualquer lista no Campaign. Por exemplo, você pode adicionar uma coluna para saber qual endereço IP enviou cada email em uma entrega. Para obter mais informações sobre como configurar a exibição de listas, consulte [Gerenciar e personalizar listas](../config/ui-settings.md#customize-lists).
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
@@ -122,7 +122,7 @@ A guia **[!UICONTROL Tracking]** lista o histórico de rastreamento dessa entreg
 
 A configuração de rastreamento é realizada no estágio apropriado do assistente de entrega. Consulte [Como configurar links rastreados](tracking.md).
 
-Os dados de **[!UICONTROL Tracking]** são interpretados nos relatórios de entrega. Consulte [esta seção](../reporting/delivery-reports.md).
+Os dados de **[!UICONTROL Tracking]** são interpretados nos relatórios de entrega. Consulte [relatórios de entrega internos do Adobe Campaign](../reporting/delivery-reports.md).
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
@@ -132,7 +132,7 @@ A guia **[!UICONTROL Inbox rendering]** permite que você visualize a mensagem e
 
 Assim você pode ter certeza de que a sua mensagem será exibida aos destinatários de forma eficaz em uma variedade de clientes da web, webmails e dispositivos.
 
-Para obter mais informações sobre renderização da Caixa de entrada, consulte [esta página](inbox-rendering.md)
+Para obter mais informações sobre renderização da caixa de entrada, consulte [Renderização da caixa de entrada no Campaign](inbox-rendering.md)
 
 
 ## Auditoria de entrega {#delivery-audit-}
@@ -147,7 +147,7 @@ A subguia **[!UICONTROL Proofs]** permite visualizar a lista de provas que foram
 
 ![](assets/s_ncs_user_delivery_log_tab.png)
 
-Você pode modificar as informações exibidas nessa janela (e das guias **[!UICONTROL Delivery]** e **[!UICONTROL Tracking]**) selecionando as colunas a serem exibidas. Para fazer isso, clique no ícone **[!UICONTROL Configure list]** localizado no canto inferior direito. Para obter mais informações sobre a configuração de exibição de listas, consulte [esta seção](../config/ui-settings.md#customize-lists).
+Você pode modificar as informações exibidas nessa janela (e das guias **[!UICONTROL Delivery]** e **[!UICONTROL Tracking]**) selecionando as colunas a serem exibidas. Para fazer isso, clique no ícone **[!UICONTROL Configure list]** localizado no canto inferior direito. Para obter mais informações sobre como configurar a exibição de listas, consulte [Gerenciar e personalizar listas](../config/ui-settings.md#customize-lists).
 
 ## Sincronização do painel de entrega {#delivery-dashboard-synchronization}
 

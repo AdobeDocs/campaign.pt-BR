@@ -26,10 +26,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 78%
+source-wordcount: '265'
+ht-degree: 76%
 ---
 # Medidas de proteção do produto{#guardrails}
 
@@ -47,4 +47,4 @@ As medidas de proteção e limitações identificam recursos, arquiteturas ou pr
 * No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), os mecanismos de assinatura (aceitação) e cancelamento de assinatura (recusa) e o registro em dispositivos móveis são processos assíncronos. As solicitações são processadas a cada hora por meio de um fluxo de trabalho técnico específico. [Saiba mais](../architecture/replication.md#workflows)
 * No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), os duplicados precisam ser manipulados manualmente pelos usuários finais. [Saiba mais](../architecture/keys.md)
 * O Adobe Campaign v8 não é compatível com a produtividade estendida em aplicativos da API e da Web; no caso de necessidades específicas, entre em contato com a Adobe para obter orientação
-* No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o módulo de Otimização do Adobe Campaign não leva em consideração as entregas agendadas nas regras de tipologia de pressão. Saiba mais [nesta página](../../automation/campaign-opt/pressure-rules.md)
+* No contexto de uma [implantação corporativa (FFDA)](../architecture/enterprise-deployment.md), o módulo de Otimização do Adobe Campaign não leva em consideração as entregas agendadas nas regras de tipologia de pressão. Saiba mais em [Configurar regras de pressão](../../automation/campaign-opt/pressure-rules.md)

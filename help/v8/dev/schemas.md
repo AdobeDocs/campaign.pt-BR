@@ -38,10 +38,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 9%
+source-wordcount: '1306'
+ht-degree: 8%
 ---
 # Trabalhar com esquemas{#gs-ac-schemas}
 
@@ -69,7 +69,7 @@ A Adobe Campaign emprega esquemas de dados para:
 * Definir links entre os diferentes objetos de dados no aplicativo Campaign.
 * Definir e descrever os campos individuais incluídos em cada objeto.
 
-Para entender melhor as tabelas integradas do Campaign e suas interações, consulte [esta seção](datamodel.md).
+Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [Introdução ao modelo de dados do Campaign](datamodel.md).
 
 >[!CAUTION]
 >
@@ -221,17 +221,17 @@ Neste exemplo, em vez de permitir que o atributo **@autopk** ou o **@autouuid** 
 >
 >Ao criar um novo esquema ou durante uma extensão de esquema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o esquema.
 
-Saiba mais sobre chaves em [esta seção](database-mapping.md).
+Saiba mais sobre chaves em [Mapeamento do banco de dados do Campaign](database-mapping.md).
 
 ## Atributos (Campos) {#attributes--fields-}
 
-Os atributos permitem definir os campos que compõem seu objeto de dados. Você pode usar o botão **[!UICONTROL Insert]** na barra de ferramentas da edição do esquema para soltar modelos de atributos vazios no XML onde o cursor está. Saiba mais [nesta seção](create-schema.md).
+Os atributos permitem definir os campos que compõem seu objeto de dados. Você pode usar o botão **[!UICONTROL Insert]** na barra de ferramentas da edição do esquema para soltar modelos de atributos vazios no XML onde o cursor está. Saiba mais em [Criar um novo esquema no Campaign](create-schema.md).
 
 ![](assets/schemaextension_2.png)
 
-A lista completa de atributos está disponível na seção de elemento `<attribute>` na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=pt-BR#content-model){target="_blank"}. Estes são alguns dos atributos usados com mais frequência: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull @required @ref @xml @type**, **&#x200B;**, **usar**, **&#x200B;**, **&#x200B;**.
+A lista completa de atributos está disponível na seção de elemento `<attribute>` na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model){target="_blank"}. Estes são alguns dos atributos usados com mais frequência: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull @required @ref @xml @type**, ****, **usar**, ****, ****.
 
-Para obter mais informações sobre cada atributo, consulte a Descrição do atributo na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=pt-BR#configuring-campaign-classic){target="_blank"}.
+Para obter mais informações sobre cada atributo, consulte a Descrição do atributo na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
 ### Exemplos {#examples}
 
@@ -313,7 +313,7 @@ Depois que as alterações forem concluídas e salvas, qualquer alteração que 
 
 ![](assets/schemaextension_3.png)
 
-Para obter mais informações, consulte [esta seção](update-database-structure.md).
+Para obter mais informações, consulte [Atualizar a estrutura do banco de dados](update-database-structure.md).
 
 >[!NOTE]
 >

@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 91%
+source-wordcount: '899'
+ht-degree: 86%
 ---
 # Publicar, rastrear e usar dados coletados{#publish-track-and-use-collected-data}
 
@@ -39,7 +39,7 @@ Depois que o formulário tiver sido criado, configurado e publicado, você poder
 
 >[!NOTE]
 >
->O ciclo de vida de uma pesquisa no Adobe Campaign, bem como seus modos de publicação e entrega são semelhantes aos dos formulários Web: esses são detalhados [nesta seção](../web/about-web-forms.md).
+>O ciclo de vida de uma pesquisa no Adobe Campaign, bem como seus modos de publicação e entrega são semelhantes aos dos formulários Web: eles são detalhados em [Introdução aos formulários Web](../web/about-web-forms.md).
 
 ## Painel de pesquisa {#survey-dashboard}
 
@@ -69,7 +69,7 @@ A origem é indicada na URL da pesquisa adicionando os seguintes caracteres:
 
 enquanto a pesquisa está sendo editada, o URL contém o parâmetro **[!UICONTROL __uuid]**, indicando que está em uma fase de teste e ainda não online. Ao acessar a pesquisa por meio dessa URL, os registros criados não são considerados no acompanhamento (relatórios). A origem é forçada ao valor **[!UICONTROL Adobe Campaign]**.
 
-Para obter mais informações sobre parâmetros de URL, consulte [esta página](../web/defining-web-forms-properties.md#form-url-parameters).
+Para obter mais informações sobre parâmetros de URL, consulte [Parâmetros de URL do formulário](../web/defining-web-forms-properties.md#form-url-parameters).
 
 ### Relatórios sobre pesquisas {#reports-on-surveys}
 
@@ -103,7 +103,7 @@ As respostas de uma pesquisa podem ser exportadas em um arquivo externo para ser
 
    Para exportar dados do relatório, clique no botão **[!UICONTROL Export]** e escolha o formato de exportação.
 
-   Para obter mais informações sobre exportação de dados de relatórios, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
+   Para obter mais informações sobre exportação de dados de relatórios, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
 
 1. Exportação de respostas
 

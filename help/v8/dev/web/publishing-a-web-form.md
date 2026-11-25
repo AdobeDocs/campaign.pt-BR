@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 96%
+source-wordcount: '1283'
+ht-degree: 94%
 ---
 # Publicar um formulário web{#publishing-a-web-form}
 
@@ -191,7 +191,7 @@ Você pode processar os logs de resposta fornecidos em queries, por exemplo, par
 
 Ao exportar e importar um pacote incluindo um formulário web de uma instância para outra (por exemplo, do preparo para produção), o status do formulário web na nova instância pode variar de acordo com várias condições. Os diferentes casos estão listados abaixo.
 
-Saiba mais sobre os diferentes status de um formulário web [nesta seção](#life-cycle-of-a-form).
+Saiba mais sobre os diferentes status de um formulário web em [Ciclo de vida de um formulário](#life-cycle-of-a-form).
 
 >[!NOTE]
 >

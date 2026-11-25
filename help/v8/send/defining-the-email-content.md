@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 88%
+source-wordcount: '2123'
+ht-degree: 87%
 ---
 # Definir o conteúdo do email {#defining-the-email-content}
 
@@ -43,7 +43,7 @@ Para definir o nome e o endereço do remetente que aparecerá no cabeçalho das 
 
 Todas as informações necessárias para criação dos cabeçalhos de mensagens de email devem ser inseridas nessa janela. Essas informações podem ser personalizadas. Para fazer isso, use os botões à direita dos campos de entrada para inserir campos de personalização.
 
-Para saber como inserir e usar campos de personalização, consulte [esta seção](personalize.md).
+Para saber como inserir e usar campos de personalização, consulte [Introdução à personalização](personalize.md).
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Por exemplo, na mensagem acima, o assunto da mensagem é personalizado para cada
 
 >[!NOTE]
 >
->O uso de campos de personalização é apresentado em [esta seção](personalize.md).
+>O uso de campos de personalização é apresentado em [Introdução à personalização](personalize.md).
 
 Também é possível inserir emoticons na linha do assunto com a janela pop-up **[!UICONTROL Insert emoticon]**.
 
@@ -96,7 +96,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
 * Para importar conteúdo do HTML, use o botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
 
-  Se você estiver usando o Editor de Conteúdo Digital (DCE), consulte [esta seção](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
+  Se estiver usando o Editor de Conteúdo Digital (DCE), consulte [Etapa 3 - Seleção de conteúdo](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -118,7 +118,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
   >[!NOTE]
   >
-  >O uso de campos de personalização é apresentado em [esta seção](personalize.md).
+  >O uso de campos de personalização é apresentado em [Introdução à personalização](personalize.md).
 
   As guias na parte inferior da página permitem exibir o código HTML da página que está sendo criada e exibir a renderização da mensagem com sua personalização. Para iniciar essa exibição, clique em **[!UICONTROL Preview]** e selecione um destinatário usando o botão **[!UICONTROL Test personalization]** na barra de ferramentas. Você pode selecionar um destinatário no(s) target(s) definido(s) ou escolher outro.
 
@@ -141,7 +141,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
 O Adobe Campaign permite experimentar o novo formato interativo [AMP for Email](https://amp.dev/pt_br/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
 
-Para obter mais informações, consulte [esta seção](defining-interactive-content.md).
+Para obter mais informações, consulte [Definir conteúdo interativo no Adobe Campaign](defining-interactive-content.md).
 
 ## Usar gerenciamento de conteúdo {#using-content-management}
 
@@ -179,7 +179,7 @@ As entregas de email em formato HTML podem conter imagens. No assistente de entr
 
 Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 KB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
 
-Saiba mais sobre a lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR#delivery).
+Saiba mais sobre a lista de opções do Campaign na [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 ### Tipos de imagens {#img-types}
 
@@ -190,7 +190,7 @@ As imagens podem ser:
 
   Os recursos públicos podem ser acessados por meio do nó **[!UICONTROL Resources > Online]** da hierarquia do Adobe Campaign. Elas são agrupadas em uma biblioteca e podem ser incluídas em mensagens de email, mas também podem ser usadas para campanhas ou tarefas, ou para gerenciamento de conteúdo.
 
-* Um ativo compartilhado com a Adobe Experience Cloud. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=pt-BR).
+* Um ativo compartilhado com a Adobe Experience Cloud. Consulte a [documentação do Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html).
 
 ### Inserir e gerenciar imagens {#manage-images}
 

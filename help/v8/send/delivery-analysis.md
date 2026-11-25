@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '696'
 ht-degree: 52%
 ---
 # Análise de entrega {#analyze-delivery}
@@ -45,7 +45,7 @@ Para preparar o delivery, verifique se o conteúdo e o target do delivery foram 
 
 1. Clique em **[!UICONTROL Analyze]** para iniciar a análise manualmente. A barra de progresso mostra o progresso da análise.
 
-   Um conjunto de regras de verificação é aplicado durante a análise de delivery. Essas regras são definidas em uma **tipologia**, que é selecionada na guia **[!UICONTROL Typology]** nas propriedades de entrega. Saiba mais sobre tipologias em [esta seção](../../automation/campaign-opt/campaign-typologies.md).
+   Um conjunto de regras de verificação é aplicado durante a análise de delivery. Essas regras são definidas em uma **tipologia**, que é selecionada na guia **[!UICONTROL Typology]** nas propriedades de entrega. Saiba mais sobre tipologias em [Introdução às tipologias de campanha](../../automation/campaign-opt/campaign-typologies.md).
 
    Por padrão, para emails, a análise cobre os seguintes pontos:
 

@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3162'
-ht-degree: 66%
+source-wordcount: '3182'
+ht-degree: 65%
 ---
 # Práticas recomendadas de entrega {#delivery-best-practices}
 
@@ -60,14 +60,14 @@ Antes mesmo de começar a criar as entregas, você pode realizar várias ações
 
 Vários fatores podem afetar diretamente o desempenho do servidor e retardar sua plataforma do Campaign:
 
-* O número e o tipo de elementos [personalização](../send/personalize.md): a personalização em emails extrai dados do banco de dados para cada destinatário. No caso de muitos elementos de personalização, a quantidade de dados necessária para preparar o delivery é maior. Isso pode tornar sua plataforma lenta. Saiba mais sobre as medidas de proteção de personalização em [esta seção](../send/personalize.md#perso-guardrails).
+* O número e o tipo de elementos [personalização](../send/personalize.md): a personalização em emails extrai dados do banco de dados para cada destinatário. No caso de muitos elementos de personalização, a quantidade de dados necessária para preparar o delivery é maior. Isso pode tornar sua plataforma lenta. Saiba mais sobre as medidas de proteção de personalização em [Medidas de proteção e recomendações](../send/personalize.md#perso-guardrails).
 
 * A carga do servidor: quando o servidor de marketing estiver lidando com várias tarefas diferentes ao mesmo tempo, o desempenho poderá ser retardado. O servidor de marketing precisa coordenar todos os dados de entrada e saída de todas as entregas para garantir que os dados estejam corretos no momento correto.
 Para evitar isso, coordene a programação de deliveries com os outros membros da equipe, garantindo um melhor desempenho.
 
 * A execução do fluxos de trabalho: o monitoramento de seus fluxos de trabalho é essencial para evitar problemas de desempenho na plataforma. Siga as diretrizes listadas [neste documento](../../automation/workflow/workflow-best-practices.md#execution-and-performance).
 
-* Conecte-se aos seus [recursos do Painel de Controle do Campaign](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/discover-control-panel/key-features){target="_blank"} para monitorar sua plataforma, usando as funcionalidades de [monitoramento de desempenho](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}.
+* Conecte-se aos seus [recursos do Painel de Controle do Campaign](https://experienceleague.adobe.com/en/docs/control-panel/using/discover-control-panel/key-features){target="_blank"} para monitorar sua plataforma, usando as funcionalidades de [monitoramento de desempenho](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}.
 
 #### Gerenciamento de quarentena {#quarantine-management}
 
@@ -76,9 +76,9 @@ Para evitar isso, coordene a programação de deliveries com os outros membros d
 Ao começar a enviar e-mails em uma nova plataforma, você pode usar uma lista de endereços que não são totalmente qualificados. Se você enviar para endereços inválidos ou endereços honeypot (caixas de correio criadas apenas para enganar spammers), a reputação da sua plataforma será afetada. Bons processos de gerenciamento de quarentena ajudam a manter a qualidade do endereço, evitar a lista de bloqueios de provedores de acesso à internet, reduzir a taxa de erro acelerando as entregas e a taxa de transferência.
 
 
-Saiba mais sobre como iniciar uma nova plataforma no [Manual de práticas recomendadas de capacidade de delivery do Adobe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}.
+Saiba mais sobre como iniciar uma nova plataforma no [Manual de práticas recomendadas de capacidade de delivery do Adobe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}.
 
-As recomendações técnicas estão listadas em [esta seção](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
+As recomendações técnicas estão listadas em [esta seção](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
 
 
 +++ **Leia algumas práticas recomendadas**
@@ -116,7 +116,7 @@ Os modelos da entrega oferecem mais eficiência ao fornecer cenários prontos pa
 
 ### Subdomínios e marcas {#subdomains-and-branding}
 
-Quando você gerencia várias marcas no Adobe Campaign, a Adobe recomenda ter um subdomínio por marca. Por exemplo, um banco pode ter vários subdomínios correspondentes a cada uma de suas agências regionais. Se um banco for proprietário do domínio bluebank.com, seus subdomínios poderão ser @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com etc. Ter um template do delivery por subdomínio permite usar sempre os parâmetros pré-configurados certos para cada uma das marcas, o que evita erros e economiza tempo. Saiba mais sobre a identidade visual do subdomínio na [documentação do Painel de Controle do Campaign](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Quando você gerencia várias marcas no Adobe Campaign, a Adobe recomenda ter um subdomínio por marca. Por exemplo, um banco pode ter vários subdomínios correspondentes a cada uma de suas agências regionais. Se um banco for proprietário do domínio bluebank.com, seus subdomínios poderão ser @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com etc. Ter um template do delivery por subdomínio permite usar sempre os parâmetros pré-configurados certos para cada uma das marcas, o que evita erros e economiza tempo. Saiba mais sobre a identidade visual do subdomínio na [documentação do Painel de Controle do Campaign](https://experienceleague.adobe.com/en/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Configurar endereços {#configure-addresses}
 
@@ -143,7 +143,7 @@ Para configurar endereços na interface do Campaign, siga os passos abaixo:
 
 ### Configurar um grupo de controle {#set-up-control-group}
 
-Depois que a entrega é enviada, você pode comparar o comportamento dos destinatários excluídos com os destinatários que receberam a entrega. Você pode então medir a eficiência de suas campanhas. Saiba mais sobre grupos de controle [nesta seção](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
+Depois que a entrega é enviada, você pode comparar o comportamento dos destinatários excluídos com os destinatários que receberam a entrega. Você pode então medir a eficiência de suas campanhas. Saiba mais sobre grupos de controle em [Adicionar um grupo de controle](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
 ### Usar tipologias para aplicar filtros ou regras de controle {#create-typologies}
 
@@ -153,27 +153,27 @@ Na guia **[!UICONTROL Typology]** das propriedades do modelo, você pode selecio
 
 Por exemplo, para controlar melhor o tráfego de saída, você pode definir quais endereços IP podem ser usados, estabelecendo uma afinidade por subdomínio e criando uma tipologia por afinidade. As afinidades são definidas no arquivo de configuração da instância. Entre em contato com o administrador do Adobe Campaign.
 
-Para obter mais informações sobre tipologias, consulte [esta seção](../../automation/campaign-opt/campaign-typologies.md).
+Para obter mais informações sobre tipologias, consulte [Introdução às tipologias da campanha](../../automation/campaign-opt/campaign-typologies.md).
 
 ## Otimizar seu conteúdo {#optimize-content}
 
 ### Criar conteúdo personalizado {#perso-content}
 
-Para personalizar suas mensagens, você pode usar os dados dos recipients armazenados no banco de dados ou coletados por meio de rastreamento, landing pages, assinaturas, etc. As noções básicas do Personalization são apresentadas em [esta seção](../send/personalize.md).
+Para personalizar suas mensagens, você pode usar os dados dos recipients armazenados no banco de dados ou coletados por meio de rastreamento, landing pages, assinaturas, etc. As noções básicas do Personalization são apresentadas em [Introdução à personalização](../send/personalize.md).
 
 +++ **Leia algumas práticas recomendadas**
 
 * Verifique as configurações de personalização - verifique se o conteúdo da sua mensagem foi projetado corretamente para evitar erros que possam estar relacionados à personalização. Uma tag de personalização do Adobe Campaign sempre tem o seguinte formato: `<%=table.field%>`. O uso incorreto de parâmetros em blocos de personalização pode ser um problema. Por exemplo, as variáveis em JavaScript devem ser usadas da seguinte forma:
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
-  Para obter mais informações sobre blocos de personalização, consulte [esta seção](../send/personalization-blocks.md).
+  Para obter mais informações sobre blocos de personalização, consulte [Usar blocos de personalização](../send/personalization-blocks.md).
 
-* Preparar dados de personalização - Você pode preparar dados de personalização em um workflow para melhorar a análise de preparação de delivery. Isso deve ser usado se os dados de personalização vierem de uma tabela externa por meio do Federated Data Access (FDA). Esta opção está descrita em [esta seção](../send/personalization-data.md#optimize-personalization)
+* Preparar dados de personalização - Você pode preparar dados de personalização em um workflow para melhorar a análise de preparação de delivery. Isso deve ser usado se os dados de personalização vierem de uma tabela externa por meio do Federated Data Access (FDA). Esta opção está descrita em [Otimizar personalização](../send/personalization-data.md#optimize-personalization)
 +++
 
 ### Criar conteúdo otimizado {#build-optimized-content}
@@ -215,7 +215,7 @@ Trabalhe na [linha de assunto](../send/personalization-fields.md#personalization
 
 ### Mirror page {#mirror-page-check}
 
-Sempre inclua um link de mirror page. A posição preferida é na parte superior do email. Saiba mais sobre a mirror page em [esta página](../send/mirror-page.md)
+Sempre inclua um link de mirror page. A posição preferida é na parte superior do email. Saiba mais sobre a mirror page em [Adicionar um link à mirror page](../send/mirror-page.md)
 
 ### Link de unsubscription {#unsub-link-check}
 
@@ -275,7 +275,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../architecture/campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode.
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 -->
 
 ## Gerenciamento de imagens {#manage-images}
@@ -320,7 +320,7 @@ No assistente de entrega, a subguia **[!UICONTROL Preview]** permite visualizar 
 
 ## Definir o público-alvo correto {#define-the-right-audience}
 
-A população de destino é fundamental: crie suas listas cuidadosamente, teste seus emails em clientes de email populares e dispositivos móveis e verifique se suas listas de email estão atualizadas (sem endereços desconhecidos ou obsoletos). Você também pode enviar provas que ajudam a configurar um ciclo de validação completo. Saiba mais sobre públicos-alvo [nesta seção](../audiences/gs-audiences.md).
+A população de destino é fundamental: crie suas listas cuidadosamente, teste seus emails em clientes de email populares e dispositivos móveis e verifique se suas listas de email estão atualizadas (sem endereços desconhecidos ou obsoletos). Você também pode enviar provas que ajudam a configurar um ciclo de validação completo. Saiba mais sobre públicos no [Introdução a perfis e públicos no Campaign](../audiences/gs-audiences.md).
 
 ### Direcionar ao público-alvo correto {#target-the-right-audience}
 

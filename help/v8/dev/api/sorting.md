@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '764'
-ht-degree: 2%
+ht-degree: 1%
 ---
 # Operações adicionais {#additional-operations}
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 A classificação está disponível por padrão em ordem crescente. Para classificar em ordem decrescente, anexe **%20desc** ao valor do parâmetro **_order**.
 
-Para saber se um campo pode ser classificado, verifique o parâmetro &quot;classitable&quot; nos metadados do recurso. Para obter mais informações, consulte [esta seção](metadata-mechanism.md).
+Para saber se um campo pode ser classificado, verifique o parâmetro &quot;classitable&quot; nos metadados do recurso. Para obter mais informações, consulte [Mecanismo de metadados](metadata-mechanism.md).
 
 <br/>
 
@@ -100,7 +100,7 @@ Para saber se um campo pode ser classificado, verifique o parâmetro &quot;class
 
 ### Recuperando metadados de filtros
 
-Os filtros estão disponíveis para cada recurso. Para identificar os filtros associados a um recurso, é necessário executar uma solicitação GET nos metadados do recurso. Essa solicitação retorna o URL em que todos os filtros são definidos para um determinado recurso. Para obter mais informações sobre metadados, consulte [esta seção](metadata-mechanism.md).
+Os filtros estão disponíveis para cada recurso. Para identificar os filtros associados a um recurso, é necessário executar uma solicitação GET nos metadados do recurso. Essa solicitação retorna o URL em que todos os filtros são definidos para um determinado recurso. Para obter mais informações sobre metadados, consulte [Mecanismo de metadados](metadata-mechanism.md).
 
 Para identificar os metadados de um filtro e determinar como usá-lo, é necessário executar uma solicitação GET no URL retornado anteriormente.
 
@@ -283,8 +283,8 @@ Se quiser usar um filtro personalizado, será necessário criá-lo e personaliz�
 
 Para obter mais informações, consulte a documentação do Campaign Standard:
 
-* [Configurando definição de filtro](https://helpx.adobe.com/br/campaign/standard/developing/using/configuring-filter-definition.html).
-* [Caso de uso: chamada de um recurso usando uma chave de identificação composta](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html?lang=pt-BR).
+* [Configurando definição de filtro](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html).
+* [Caso de uso: chamada de um recurso usando uma chave de identificação composta](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html).
 
 <br/>
 

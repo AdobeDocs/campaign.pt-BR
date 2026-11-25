@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 12%
+source-wordcount: '1449'
+ht-degree: 11%
 ---
 # Estrutura de esquema{#schema-structure}
 
@@ -156,7 +156,7 @@ As seguintes regras devem ser seguidas:
 
 O tipo de dados é inserido pelo atributo **type** nos elementos **`<attribute>`** e **`<element>`**.
 
-Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=pt-BR#configuring-campaign-classic){target="_blank"}.
+Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
 Quando este atributo não é populado, **string** é o tipo de dados padrão, a menos que o elemento contenha elementos filhos. Em caso afirmativo, ele é usado apenas para estruturar os elementos hierarquicamente (**`<location>`** elemento em nosso exemplo).
 
@@ -234,7 +234,7 @@ Os elementos **`<elements>`** e **`<attributes>`** do esquema de dados podem ser
 
 A propriedade **default** permite definir uma expressão que retorna um valor padrão na criação de conteúdo.
 
-O valor deve ser uma expressão compatível com a linguagem XPath. Para obter mais informações, consulte [esta seção](#reference-with-xpath).
+O valor deve ser uma expressão compatível com a linguagem XPath. Para obter mais informações, consulte [Referência com XPath](#reference-with-xpath).
 
 **Exemplo**:
 

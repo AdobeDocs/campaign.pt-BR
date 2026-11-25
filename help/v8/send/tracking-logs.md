@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '341'
 ht-degree: 19%
 ---
 # Acessar logs de rastreamento {#accessing-the-tracking-logs}
@@ -73,7 +73,7 @@ Nessa guia, é possível exibir:
 
 >[!NOTE]
 >
->Se não for possível ver a guia **[!UICONTROL Tracking]** de uma entrega, significa que o rastreamento não foi ativado. Consulte [esta seção](tracked-links.md) para saber como configurar o rastreamento.
+>Se não for possível ver a guia **[!UICONTROL Tracking]** de uma entrega, significa que o rastreamento não foi ativado. Consulte [Configurar links rastreados](tracked-links.md) para saber como configurar o rastreamento.
 
 ### Verifique o workflow técnico de rastreamento {#check-tracking-workflow}
 

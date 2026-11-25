@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 74%
+source-wordcount: '353'
+ht-degree: 69%
 ---
 # Introdução ao editor de HTML do Campaign{#about-campaign-html-editor}
 
@@ -41,7 +41,7 @@ ht-degree: 74%
 >
 >Para os casos de uso mais comuns, crie suas landing pages na interface da Web do Campaign, onde você pode facilmente projetá-las e publicá-las. As landing pages criadas no console do cliente, conforme descrito nesta seção, oferecem mais configurações e abordam casos de uso mais avançados.
 >
->[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 
 
@@ -74,7 +74,7 @@ Para criar um **aplicativo web** simples, é necessário:
 
 >[!NOTE]
 >
->Uma amostra completa de implementação no contexto de um aplicativo web está disponível [nesta seção](creating-a-landing-page.md).
+>Uma amostra completa de implementação no contexto de um aplicativo Web está disponível em [Criar uma página de aterrissagem](creating-a-landing-page.md).
 
 Para criar uma **entrega de email**, é necessário:
 

@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '268'
 ht-degree: 2%
 ---
 # Estender um esquema{#extend-schemas}
@@ -54,7 +54,7 @@ As principais etapas para personalizar o modelo de dados do Campaign são:
 >[!CAUTION]
 >O esquema incorporado não deve ser modificado diretamente. Se precisar adaptar um esquema incorporado, é necessário estendê-lo.
 
-Para entender melhor as tabelas integradas do Campaign e suas interações, consulte [esta página](datamodel.md). Consulte também recomendações ao criar um novo esquema na [esta página](create-schema.md).
+Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [Introdução ao modelo de dados do Campaign](datamodel.md). Consulte também recomendações ao criar um novo esquema no [Criar um novo esquema no Campaign](create-schema.md).
 
 Para estender um schema, siga as etapas abaixo:
 

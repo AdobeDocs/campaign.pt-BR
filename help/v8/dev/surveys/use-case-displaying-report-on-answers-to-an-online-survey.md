@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 89%
+source-wordcount: '500'
+ht-degree: 87%
 ---
 # Caso de uso: exibição do relatório sobre as respostas de uma pesquisa online{#use-case-displaying-report-on-answers-to-an-online-survey}
 
@@ -63,7 +63,7 @@ Antes de começar neste caso de uso, é preciso ter acesso a uma pesquisa e um c
 
 Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
-1. Crie um fluxo de trabalho e coloque uma atividade **[!UICONTROL Answers to a survey]**. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](publish-track-and-use-collected-data.md#using-the-collected-data).
+1. Crie um fluxo de trabalho e coloque uma atividade **[!UICONTROL Answers to a survey]**. Para obter mais informações sobre como usar esta atividade, consulte [Como usar os dados coletados](publish-track-and-use-collected-data.md#using-the-collected-data).
 1. Edite a atividade e selecione a pesquisa cujas respostas deseja analisar.
 1. Habilite a opção **[!UICONTROL Select all the answer data]** para coletar todas as informações.
 
@@ -93,7 +93,7 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
 ## Etapa 2 — criação do cubo, suas medidas e seus indicadores {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-É possível então criar o cubo e configurar suas medidas: elas serão usados para criar os indicadores que serão mostrados no relatório. Para obter mais informações sobre a criação e configuração de cubos, consulte [Sobre os cubos](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}.
+É possível então criar o cubo e configurar suas medidas: elas serão usados para criar os indicadores que serão mostrados no relatório. Para obter mais informações sobre a criação e configuração de cubos, consulte [Sobre os cubos](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}.
 
 Neste exemplo, o cubo se baseia nos dados da lista alimentados pelo fluxo de trabalho criado anteriormente.
 

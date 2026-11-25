@@ -32,10 +32,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 100%
+source-wordcount: '406'
+ht-degree: 95%
 ---
 # Rastrear visitas em um aplicativo Web{#tracking-a-web-application}
 
@@ -85,7 +85,7 @@ Para identificar a fonte de tráfego em uma aplicação web, o Adobe Campaign pr
 
 ## Aplicativos Web criados com o Editor de conteúdo digital (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Quando um aplicativo web é criado usando o editor de conteúdo HTML, o **Digital Content Editor (DCE)**, tags de rastreamento são inseridas a partir da guia **[!UICONTROL Properties]** do editor. Para obter mais informações sobre o Editor de conteúdo digital (DCE), consulte [esta seção](about-campaign-html-editor.md).
+Quando um aplicativo web é criado usando o editor de conteúdo HTML, o **Digital Content Editor (DCE)**, tags de rastreamento são inseridas a partir da guia **[!UICONTROL Properties]** do editor. Para obter mais informações sobre o Editor de conteúdo digital (DCE), consulte [Introdução ao editor do Campaign HTML](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 

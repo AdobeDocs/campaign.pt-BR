@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 91%
+source-wordcount: '800'
+ht-degree: 89%
 ---
 # Criar uma página de destino{#creating-a-landing-page}
 
@@ -37,7 +37,7 @@ ht-degree: 91%
 >
 >Para os casos de uso mais comuns, crie suas landing pages na interface da Web do Campaign, onde você pode facilmente projetá-las e publicá-las. As landing pages criadas no console do cliente, conforme descrito nesta seção, oferecem mais configurações e abordam casos de uso mais avançados.
 >
->[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 
 
@@ -73,7 +73,7 @@ Você obterá a seguinte sequência:
 
 >[!NOTE]
 >
->Para obter mais informações sobre criação de aplicação web, consulte [esta seção](creating-a-new-web-application.md).
+>Para obter mais informações sobre como criar um aplicativo Web, consulte [Criar um novo aplicativo Web](creating-a-new-web-application.md).
 
 ## Etapa 1 — seleção e carregamento de modelos {#step-1---selecting-and-loading-templates}
 

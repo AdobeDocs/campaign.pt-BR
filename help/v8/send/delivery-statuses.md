@@ -35,10 +35,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 64%
+source-wordcount: '562'
+ht-degree: 60%
 ---
 # Status de entrega {#delivery-statuses}
 
@@ -108,7 +108,7 @@ Para obter mais detalhes sobre as diferentes falhas de entrega que podem ser enc
  </tbody> 
 </table>
 
-Para saber como otimizar a capacidade de entrega dos emails do Adobe Campaign, consulte [esta seção](about-deliverability.md). Para obter informações mais detalhadas sobre a capacidade de entrega, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
+Para saber como otimizar a capacidade de entrega dos emails do Adobe Campaign, consulte [Introdução à capacidade de entrega no Campaign](about-deliverability.md). Para obter informações mais detalhadas sobre a capacidade de entrega, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 ## Status pendente {#pending-status}
 
@@ -122,7 +122,7 @@ Se a entrega não estiver sendo enviada e o status permanecer **[!UICONTROL Pend
 
   O limite de campanhas simultâneas é definido na opção **[!UICONTROL NmsOperation_LimitConcurrency]**. O valor padrão é 10.
 
-  Como usuário do Managed Cloud Services, você pode trabalhar com a Adobe para ajustar esse limite, se necessário. Saiba mais sobre opções na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=pt-BR){target="_blank"}.
+  Como usuário do Managed Cloud Services, você pode trabalhar com a Adobe para ajustar esse limite, se necessário. Saiba mais sobre opções na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}.
 
 * **Problemas de disponibilidade de recursos**
 

@@ -24,9 +24,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '790'
 ht-degree: 23%
 ---
 # Postar mensagens no X (Twitter) com o Adobe Campaign {#post-tw-messages}
@@ -40,7 +40,7 @@ Após configurar a integração, é possível:
 * Colete novos contatos recuperando os dados do perfil, o que permite realizar campanhas de direcionamento e, quando possível, implementar estratégias entre canais. Esta ação requer o consentimento do usuário.
 
 
-As etapas de configuração para integrar sua conta X com o Adobe Campaign estão descritas em [esta página](../connect/ac-tw.md).
+As etapas de configuração para integrar sua conta X ao Adobe Campaign estão descritas em [Trabalhar com o Campaign e X (Twitter)](../connect/ac-tw.md).
 
 ## Criar e publicar uma publicação X {#publish-on-tw}
 
@@ -126,7 +126,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
       * Selecione **[!UICONTROL Twitter subscribers]** para enviar uma mensagem direta a todos os seus seguidores.
 
-      * Selecione **[!UICONTROL Filter conditions]** para definir uma consulta e visualizar seu resultado. Saiba como criar um filtro em [esta seção](../audiences/create-filters.md#advanced-filters).
+      * Selecione **[!UICONTROL Filter conditions]** para definir uma consulta e visualizar seu resultado. Saiba como criar um filtro em [Filtros avançados](../audiences/create-filters.md#advanced-filters).
 
 1. Selecione o público alvo da prova na guia **[!UICONTROL Target of the proofs]**: essa conta receberá a prova da sua mensagem direta.
 
@@ -141,7 +141,7 @@ Para enviar mensagens diretas aos seus seguidores, siga as etapas abaixo:
 
    ![](assets/tw-dm-content.png)
 
-   Campos de personalização podem ser usados da mesma forma que para entregas por email, por exemplo, para adicionar o nome do seguidor no corpo da mensagem. Saiba mais [nesta seção](../send/personalize.md).
+   Campos de personalização podem ser usados da mesma forma que para entregas por email, por exemplo, para adicionar o nome do seguidor no corpo da mensagem. Saiba mais em [Introdução à personalização](../send/personalize.md).
 
 1. Visualizar sua mensagem
 

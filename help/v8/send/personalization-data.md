@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 46%
+source-wordcount: '627'
+ht-degree: 45%
 ---
 # Fontes de dados do Personalization{#personalization-data}
 
@@ -53,7 +53,7 @@ Para selecionar o arquivo a ser usado como fonte de dados, navegue até o link P
 
 Os dados do Personalization podem ser extraídos de uma tabela externa por meio do [Federated Data Access](../connect/fda.md).  Se você quiser realizar a personalização de deliveries usando dados do banco de dados externo, colete os dados para usar em um workflow para torná-lo disponível em uma tabela temporária.
 
-Para fazer isso, adicione uma atividade **Query** no fluxo de trabalho de direcionamento e use o link **Add data...** para selecionar o banco de dados externo. O processo detalhado está disponível em [esta seção](../../automation/workflow/query.md#adding-data).
+Para fazer isso, adicione uma atividade **Query** no fluxo de trabalho de direcionamento e use o link **Add data...** para selecionar o banco de dados externo. Processo detalhado disponível em [Adicionar dados](../../automation/workflow/query.md#adding-data).
 
 Em seguida, use os dados da tabela temporária para personalizar sua entrega. Após configurar a atividade de consulta, acesse os dados externos nas opções de personalização, a partir da entrada **Target extension**.
 
@@ -87,4 +87,4 @@ Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do fluxo
 
 Quando um delivery é criado no contexto de um workflow, você pode usar os dados da tabela de workflow temporário. Os dados armazenados na tabela de trabalho temporária do workflow estão disponíveis para tarefas de personalização. Os dados podem ser usados nos campos de personalização.
 
-Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [esta seção](../../automation/workflow/use-workflow-data.md#target-data).
+Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [Aproveitar dados de destino](../../automation/workflow/use-workflow-data.md#target-data).

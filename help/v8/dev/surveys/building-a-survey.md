@@ -15,10 +15,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 97%
+source-wordcount: '801'
+ht-degree: 94%
 ---
 # Criar uma pesquisa{#building-a-survey}
 
@@ -65,13 +65,13 @@ Ao adicionar um campo a uma pesquisa, você precisa selecionar seu tipo. As segu
 
    >[!NOTE]
    >
-   >Os modos de armazenamento e importações de campo são detalhados [nesta seção](managing-answers.md#storing-collected-answers).
+   >Os modos de armazenamento e as importações de campo são detalhados em [Armazenar respostas coletadas](managing-answers.md#storing-collected-answers).
 
 A natureza do campo a ser adicionado (lista suspensa, campo de texto, caixas de seleção etc.) adapta-se ao modo de armazenamento selecionado. É possível alterá-lo por meio do campo **[!UICONTROL Type]** da guia **[!UICONTROL General]**, mas mantenha a consistência com o tipo de dados.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-Os vários tipos de campos disponíveis são detalhados [nesta seção](../web/about-web-forms.md).
+Os vários tipos de campos disponíveis são detalhados em [Introdução aos formulários web](../web/about-web-forms.md).
 
 ## Elementos específicos da pesquisa {#survey-specific-elements}
 

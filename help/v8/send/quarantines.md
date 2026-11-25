@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 32%
+source-wordcount: '1371'
+ht-degree: 31%
 ---
 # Quarentena {#quarantine-management}
 
@@ -62,7 +62,7 @@ Por outro lado, **perfis** podem estar no **incluo na lista de bloqueios**, como
 
 >[!NOTE]
 >
->Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
+>Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -103,7 +103,7 @@ Para cada entrega, você também pode verificar o relatório **[!UICONTROL Deliv
 * O número de endereços colocados em quarentena durante a análise de entrega,
 * O número de endereços colocados em quarentena após a ação de entrega.
 
-Saiba mais sobre relatórios de entrega [nesta seção](../reporting/gs-reporting.md).
+Saiba mais sobre relatórios de entrega em [Introdução às ferramentas de relatório do Adobe Campaign](../reporting/gs-reporting.md).
 
 ### Endereços não entregues e rejeitados{#non-deliverable-bounces}
 
@@ -121,7 +121,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 
 Além disso, o relatório interno **[!UICONTROL Non-deliverables and bounces]**, disponível na seção **Relatórios** desta home page, exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar os dados de um delivery específico ou personalizar este relatório conforme necessário.
 
-Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### Endereço de email na quarentena {#quarantined-recipient}
 
@@ -143,7 +143,7 @@ Os endereços que correspondem a condições específicas são excluídos automa
 Os endereços são removidos automaticamente da lista de quarentena nos seguintes casos:
 
 * Os endereços em um status **[!UICONTROL With errors]** serão removidos da lista de quarentena após uma entrega bem-sucedida.
-* Os endereços em um status **[!UICONTROL With errors]** serão removidos da lista de quarentena se o último retorno de erro tiver ocorrido há mais de 10 dias. Para obter mais informações sobre o gerenciamento de erros de software, consulte [esta seção](#soft-error-management).
+* Os endereços em um status **[!UICONTROL With errors]** serão removidos da lista de quarentena se o último retorno de erro tiver ocorrido há mais de 10 dias. Para obter mais informações sobre o gerenciamento de erros leves, consulte [Gerenciamento de erros leves](#soft-error-management).
 * Os endereços em um status **[!UICONTROL With errors]** que tiverem retornado com o erro **[!UICONTROL Mailbox full]** serão removidos da lista de quarentena após 30 dias.
 
 O status muda então para **[!UICONTROL Valid]**.

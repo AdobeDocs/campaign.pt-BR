@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Data quality
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 57%
@@ -44,7 +44,7 @@ O [relatório de renderização da Caixa de Entrada](inbox-rendering.md) permite
 
 ### Taxa de transferência de entrega {#throughput-reports}
 
-O relatório **[!UICONTROL Delivery throughput]** fornece uma visão geral de todo o rendimento da plataforma em um determinado período. Para obter mais informações, consulte [esta seção](../reporting/global-reports.md#delivery-throughput).
+O relatório **[!UICONTROL Delivery throughput]** fornece uma visão geral de todo o rendimento da plataforma em um determinado período. Para obter mais informações, consulte [Taxa de transferência de entrega](../reporting/global-reports.md#delivery-throughput).
 
 ### Estatísticas de transmissão {#broadcast-statistics}
 

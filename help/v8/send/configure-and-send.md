@@ -19,14 +19,14 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 66%
+source-wordcount: '1250'
+ht-degree: 65%
 ---
 # Configurar e enviar a entrega {#configure-delivery}
 
-Acesse os parâmetros de entrega para ajustar mais configurações e definir como enviar as mensagens. Você pode definir a entrega [prioridade](#delivery-priority), configurar [ondas](#sending-using-multiple-waves) e testar o envio da entrega. Quando esta configuração estiver concluída, você poderá confirmar o envio conforme descrito em [esta seção](#confirm-delivery). As mensagens são enviadas imediatamente ou de acordo com a [programação](#schedule-delivery-sending) de entrega.
+Acesse os parâmetros de entrega para ajustar mais configurações e definir como enviar as mensagens. Você pode definir a entrega [prioridade](#delivery-priority), configurar [ondas](#sending-using-multiple-waves) e testar o envio da entrega. Quando essa configuração estiver concluída, você poderá confirmar o envio conforme descrito em [Confirmar o delivery](#confirm-delivery). As mensagens são enviadas imediatamente ou de acordo com a [programação](#schedule-delivery-sending) de entrega.
 
 ## Definir parâmetros adicionais {#delivery-additional-parameters}
 
@@ -54,7 +54,7 @@ Use a opção **[!UICONTROL Test SMTP delivery]** para testar o envio via SMTP. 
 >
 >* Essa opção não deve ser definida no mid-sourcing.
 >
->* Saiba mais sobre a configuração do servidor SMTP na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=pt-BR#smtp-relay){target="_blank"}.
+>* Saiba mais sobre a configuração do servidor SMTP na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
 
 ## Enviar usando várias ondas {#sending-using-multiple-waves}
 
@@ -91,19 +91,19 @@ Você pode definir o tamanho de cada onda ou adicioná-las a um calendário.
 
 ### Verificação de agendamento de onda {#check-waves}
 
-Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, garante que a última onda seja planejada antes do limite da validade da entrega. As tipologias de campanha e suas regras, configuradas na guia **[!UICONTROL Typology]** das propriedades de entrega, são apresentadas em [esta seção](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
+Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, garante que a última onda seja planejada antes do limite da validade da entrega. As tipologias de campanha e suas regras, configuradas na guia **[!UICONTROL Typology]** das propriedades de entrega, são apresentadas em [Regras de tipologia e tipologias](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
 >[!IMPORTANT]
 >
->* Certifique-se de que as últimas ondas não excedam o prazo da entrega, que é definido na guia **[!UICONTROL Validity]**. Caso contrário, algumas mensagens podem não ser enviadas. Saiba mais sobre o período de validade de uma entrega em [esta seção](delivery-failures.md#valid-period).
+>* Certifique-se de que as últimas ondas não excedam o prazo da entrega, que é definido na guia **[!UICONTROL Validity]**. Caso contrário, algumas mensagens podem não ser enviadas. Saiba mais sobre o período de validade de uma entrega em [Período de validade](delivery-failures.md#valid-period).
 >
->* Você também deve definir tempo suficiente para tentativas ao configurar as últimas ondas. Saiba mais sobre tentativas em [esta seção](delivery-failures.md#retries).
+>* Você também deve definir tempo suficiente para tentativas ao configurar as últimas ondas. Saiba mais sobre tentativas em [Gerenciamento de tentativas](delivery-failures.md#retries).
 >
 >* As ondas são programadas a partir da data de contato da entrega. Se o delivery começar após o tempo planejado de uma ou mais ondas, essas ondas vencidas serão todas enviadas juntas, em vez de serem espaçadas.
 
 ### Monitorar ondas {#monitor-waves}
 
-Para monitorar seus envios, navegue até os logs do delivery. Consulte [esta página](send.md).
+Para monitorar seus envios, navegue até os logs do delivery. Consulte [Enviar e monitorar seus emails](send.md).
 
 Você pode ver as entregas que já foram enviadas nas ondas processadas (status **[!UICONTROL Sent]**) e as entregas a serem enviadas nas ondas restantes (status **[!UICONTROL Pending]**).
 
@@ -143,7 +143,7 @@ Para fazer isso, siga as etapas abaixo.
    * Para enviar a entrega imediatamente, selecione **[!UICONTROL Deliver as soon as possible]**.
    * Para agendar o envio para uma data posterior, selecione **[!UICONTROL Postpone the delivery]**. [Saiba mais](#schedule-delivery-sending)
 
-1. Clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [esta seção](delivery-analysis.md).
+1. Clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [Análise de entrega](delivery-analysis.md).
 
    ![](assets/delivery-send-analyze.png)
 

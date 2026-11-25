@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 3%
+source-wordcount: '570'
+ht-degree: 2%
 ---
 # Primeiros passos com canais personalizados {#gs-custom-channel}
 
@@ -36,15 +36,15 @@ O Adobe Campaign permite criar canais externos ou de API personalizados integrad
 
 A criação e o envio do delivery podem ser executados no Console do cliente e na interface do usuário da Web. No entanto, a configuração do canal personalizado só é executada no Console do cliente.
 
-Para saber como criar e enviar uma entrega com base em um canal personalizado, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=pt-BR){target="_blank"}.
+Para saber como criar e enviar uma entrega com base em um canal personalizado, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html){target="_blank"}.
 
 Estas são as etapas para configurar um novo canal personalizado no Console do cliente. Essas etapas são comuns aos canais externos e de API personalizados:
 
-1. Configurar o esquema, [leia mais](#configure-schema)
-1. Crie uma nova conta externa, [leia mais](#create-ext-account)
-1. Criar um novo modelo de entrega, [leia mais](#create-template)
+1. Configurar o esquema, [Configurar o esquema](#configure-schema)
+1. Criar uma nova conta externa, [Criar uma nova conta externa](#create-ext-account)
+1. Criar um novo modelo de entrega, [Criar um novo modelo de entrega](#create-template)
 
-Os canais de API personalizados exigem configuração adicional. [Leia mais](#api-additional)
+Os canais de API personalizados exigem configuração adicional. [Configuração adicional da API personalizada](#api-additional)
 
 ## Configurar o esquema{#configure-schema}
 
@@ -109,11 +109,11 @@ Na interface do usuário da Web do Campaign, configure a definição de tela per
 
    ![](assets/cus-schema2.png){zoomable="yes"}
 
-1. Selecione a guia que corresponde ao canal e defina como os campos serão exibidos na tela de conteúdo do delivery. Para obter mais informações sobre edição de tela, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=pt-BR#fields){target="_blank"}.
+1. Selecione a guia que corresponde ao canal e defina como os campos serão exibidos na tela de conteúdo do delivery. Para obter mais informações sobre edição de tela, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
 
    ![](assets/cus-schema3.png){zoomable="yes"}
 
-1. Na seção **Visualizar para simular conteúdo**, selecione o JSPP dedicado. Isso é opcional. Isso ativará a pré-visualização na tela de simulação do delivery. [Leia mais](#api-additional-preview)
+1. Na seção **Visualizar para simular conteúdo**, selecione o JSPP dedicado. Isso é opcional. Isso ativará a pré-visualização na tela de simulação do delivery. [Configurar a visualização](#api-additional-preview)
 
 ### Configurar a visualização{#api-additional-preview}
 

@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 70%
+source-wordcount: '744'
+ht-degree: 65%
 ---
 # Transição do [!DNL Campaign Classic] v7 para o [!DNL Campaign] v8{#gs-matrix}
 
@@ -62,7 +62,7 @@ A nova oferta combina os melhores serviços do setor com uma supervisão proativ
 * **Experiência do serviço** — monitoramento e resposta proativa a respeito de disponibilidade, capacidade e desempenho, evitando interrupções, solucionando incidentes mais rapidamente e melhorando o serviço de maneira contínua, através de análises regulares.
 * **Profundo conhecimento sobre o Campaign** — serviço de alta afinidade realizado por equipes especializadas em engenharia de clientes para atender às necessidades funcionais, técnicas ou relacionadas à capacidade de entrega, reduzir o risco de implantação e melhorar o gerenciamento de alterações.
 
-Como usuário do [!DNL Campaign Classic], observe que a maioria dos recursos do [!DNL Campaign Classic] v7 está disponível no [!DNL Campaign] v8, com exceção de um pequeno conjunto listado [nesta seção](#gs-removed).
+Como usuário do [!DNL Campaign Classic], observe que a maioria dos recursos do [!DNL Campaign Classic] v7 está disponível com o [!DNL Campaign] v8, exceto um pequeno conjunto listado em [Recursos sem suporte](#gs-removed).
 
 >A nova arquitetura em nuvem permite que o Campaign simplifique processos, reduza custos, gerencie riscos e melhore a segurança dos dados. Seu ambiente do Campaign v8 vem com uma nuvem privada virtual (VPC) dedicada pré-configurada para você.
 
@@ -77,7 +77,7 @@ Consequentemente:
 * O status dos deliveries não é atualizado instantaneamente - Um processo técnico é executado na instância de Marketing, o que atualizará os status do delivery em tempo hábil.
 
 
-Saiba mais sobre como enviar provas de mensagem transacional ao fazer a transição do v7 nesta [página](../send/transactional-template.md#transition-from-v7).
+Saiba mais sobre como enviar provas de mensagem transacional ao fazer a transição do v7 em [Transição do Campaign Classic v7](../send/transactional-template.md#transition-from-v7).
 
 
 ## [!DNL Campaign] e [!DNL Snowflake] {#ac-gs-snowflake}
@@ -86,20 +86,20 @@ Em sua implantação [Corporativa (FFDA)](../../v8/architecture/enterprise-deplo
 
 O Campaign v8 Enterprise traz o conceito de **Full Federated Data Access** (FFDA): agora, todos os dados estão disponíveis remotamente no banco de dados da nuvem. Com essa nova arquitetura, a implantação corporativa (FFDA) do Campaign v8 simplifica o gerenciamento de dados: nenhum índice é necessário no banco de dados da nuvem. Basta criar as tabelas, copiar os dados e iniciar. A tecnologia de banco de dados da nuvem não requer manutenção específica para garantir o nível de desempenho.
 
-Saiba mais sobre a arquitetura do [!DNL Campaign] v8 [nesta página](../../v8/architecture/architecture.md).
+Saiba mais sobre a arquitetura do [!DNL Campaign] v8 em [Introdução à arquitetura do Campaign](../../v8/architecture/architecture.md).
 
 
 ## Usar sua Adobe ID para se conectar ao Campaign{#adobe-id}
 
 Os usuários do Campaign se conectam apenas por meio da Adobe ID. A mesma Adobe ID é usada para manter todos os seus planos e produtos da Adobe associados a uma única conta, para todas as soluções do [!DNL Adobe CX Enterprise].
 
-Saiba como se conectar a [!DNL Campaign] em [esta página](connect.md).
+Saiba como se conectar a [!DNL Campaign] em [Conectar-se ao Campaign v8](connect.md).
 
 ## Analisar dados com cubos{#adobe-reporting}
 
 Use o módulo Marketing Analytics para analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo de relatórios. Além disso, crie relatórios e populações de públicos-alvo: uma vez identificados, eles são armazenados em listas que podem ser usadas no Adobe Campaign (direcionamento, segmentação etc.).
 
-Os relatórios de cubo do Adobe Campaign v8 estão otimizados e oferecem melhores recursos de escala do que o Campaign Classic v7. Nesse modelo de implantação específico, as antigas limitações dos cubos não se aplicam ao Campaign v8. Saiba mais sobre cubos [nesta seção](../../v8/reporting/gs-cubes.md).
+Os relatórios de cubo do Adobe Campaign v8 estão otimizados e oferecem melhores recursos de escala do que o Campaign Classic v7. Nesse modelo de implantação específico, as antigas limitações dos cubos não se aplicam ao Campaign v8. Saiba mais sobre cubos em [Introdução aos relatórios de análise do Adobe Campaign](../../v8/reporting/gs-cubes.md).
 
 ## Recursos indisponíveis{#gs-unavailable-features}
 

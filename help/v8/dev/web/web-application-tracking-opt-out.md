@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '711'
 ht-degree: 86%
 ---
 # Recusa de rastreamento de aplicativo web{#web-application-tracking-opt-out}
@@ -90,7 +90,7 @@ O banner padrão tem a seguinte estrutura:
 
 Você deve substituir a mensagem **Inserir sua mensagem aqui** com o bloco contendo suas informações de rastreamento. Essa substituição deve ser executada em seu novo bloco de personalização relacionado ao banner Opt out.
 
-O banner é fornecido com um CSS específico. No entanto, você pode substituir os estilos ao criar e configurar uma página da Web. Consulte [esta página](content-editor-interface.md).
+O banner é fornecido com um CSS específico. No entanto, você pode substituir os estilos ao criar e configurar uma página da Web. Consulte [Interface do editor de conteúdo](content-editor-interface.md).
 
 ## Definição do cookie de recusa usando a API {#setting-the-opt-out-cookie-using-api}
 

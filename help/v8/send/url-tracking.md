@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 94%
+source-wordcount: '170'
+ht-degree: 89%
 ---
 # Configurar opções de rastreamento de URL {#personalizing-url-tracking}
 
@@ -61,7 +61,7 @@ As configurações de rastreamento de mensagem avançadas são acessíveis por m
 
 Os URLs rastreados são listados na janela central em forma de árvore.
 
-É possível ativar ou desativar o rastreamento individualmente para cada URL da mensagem. Para obter mais informações, consulte [esta seção](tracked-links.md).
+É possível ativar ou desativar o rastreamento individualmente para cada URL da mensagem. Para obter mais informações, consulte [Configurar links rastreados](tracked-links.md).
 
 A guia **[!UICONTROL Advanced]** permite personalizar as fórmulas de cálculo dos URLs rastreados e de abertura.
 

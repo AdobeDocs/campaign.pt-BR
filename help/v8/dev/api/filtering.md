@@ -18,7 +18,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Recuperando metadados de filtros
 
-Os filtros estão disponíveis para cada recurso. Para identificar os filtros associados a um recurso, é necessário executar uma solicitação GET nos metadados do recurso. Essa solicitação retorna o URL em que todos os filtros são definidos para um determinado recurso. Para obter mais informações sobre metadados, consulte [esta seção](metadata-mechanism.md).
+Os filtros estão disponíveis para cada recurso. Para identificar os filtros associados a um recurso, é necessário executar uma solicitação GET nos metadados do recurso. Essa solicitação retorna o URL em que todos os filtros são definidos para um determinado recurso. Para obter mais informações sobre metadados, consulte [Mecanismo de metadados](metadata-mechanism.md).
 
 Para identificar os metadados de um filtro e determinar como usá-lo, é necessário executar uma solicitação GET no URL retornado anteriormente.
 
@@ -210,8 +210,8 @@ Se quiser usar um filtro personalizado, será necessário criá-lo e personaliz�
 
 Para obter mais informações, consulte a documentação do Campaign Standard:
 
-* [Configurando definição de filtro](https://helpx.adobe.com/br/campaign/standard/developing/using/configuring-filter-definition.html).
-* [Caso de uso: chamada de um recurso usando uma chave de identificação composta](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html?lang=pt-BR).
+* [Configurando definição de filtro](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html).
+* [Caso de uso: chamada de um recurso usando uma chave de identificação composta](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html).
 
 <br/>
 

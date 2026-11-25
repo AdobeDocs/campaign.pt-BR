@@ -26,10 +26,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 98%
+ht-degree: 96%
 ---
 # Renderização da caixa de entrada{#inbox-rendering}
 
@@ -89,7 +89,7 @@ Para obter mais informações sobre como criar, desenvolver e segmentar uma entr
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Uma prova é enviada. Você pode acessar as miniaturas de renderização nessa prova alguns minutos após o envio dos emails. Para obter mais informações sobre o envio de provas, consulte [esta seção](preview-and-proof.md#send-proofs).
+   Uma prova é enviada. Você pode acessar as miniaturas de renderização nessa prova alguns minutos após o envio dos emails. Para obter mais informações sobre o envio de provas, consulte [Enviar provas](preview-and-proof.md#send-proofs).
 
 1. Após ser enviada, a prova aparece na lista de entregas. Clique duas vezes nela.
 

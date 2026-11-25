@@ -21,10 +21,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 97%
+source-wordcount: '946'
+ht-degree: 96%
 ---
 # Etapas principais para criar uma pesquisa{#getting-started-with-surveys}
 
@@ -125,7 +125,7 @@ No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 c
 
   >[!NOTE]
   >
-  >Para cada campo ou pergunta, você pode adaptar o layout da página para atender às suas necessidades, graças às opções na guia **[!UICONTROL Advanced]**. O layout das telas de pesquisa está detalhado em [esta seção](../web/about-web-forms.md).
+  >Para cada campo ou pergunta, você pode adaptar o layout da página para atender às suas necessidades, graças às opções na guia **[!UICONTROL Advanced]**. O layout das telas de pesquisa é detalhado em [Introdução aos formulários web](../web/about-web-forms.md).
 
   Na tela de detalhes, clique na guia **[!UICONTROL Preview]** para exibir a renderização da pesquisa recém-criada.
 

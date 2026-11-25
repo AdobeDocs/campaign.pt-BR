@@ -26,14 +26,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 56%
+source-wordcount: '687'
+ht-degree: 53%
 ---
 # Processamento de evento {#event-processing}
 
-No contexto de mensagens transacionais, um evento é gerado por um sistema de informações externo e enviado ao Adobe Campaign através dos métodos **[!UICONTROL PushEvent]** e **[!UICONTROL PushEvents]**. Estes métodos estão descritos em [esta seção](event-description.md).
+No contexto de mensagens transacionais, um evento é gerado por um sistema de informações externo e enviado ao Adobe Campaign através dos métodos **[!UICONTROL PushEvent]** e **[!UICONTROL PushEvents]**. Estes métodos estão descritos em [Entender a descrição do evento](event-description.md).
 
 Esse evento contém dados vinculados ao evento, como:
 
@@ -69,7 +69,7 @@ Depois que são coletados, os eventos são divididos por workflows técnicos ent
 
 >[!NOTE]
 >
->Na instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode causar problemas de direito de acesso. Para obter mais informações sobre como configurar uma pasta como visualização, consulte [esta seção](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
+>Na instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode causar problemas de direito de acesso. Para obter mais informações sobre como configurar uma pasta como modo de exibição, consulte [Transformar uma pasta em modo de exibição](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
 ## Transferir um evento para um modelo {#event-to-template}
 

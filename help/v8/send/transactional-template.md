@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1204'
 ht-degree: 53%
 ---
 # Criar e publicar seu modelo para mensagens transacionais{#template-transactional-messages}
@@ -113,7 +113,7 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Inserir dados de teste. [Saiba mais sobre dados de personalização na documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. Inserir dados de teste. [Saiba mais sobre dados de personalização na documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
@@ -162,7 +162,7 @@ Você pode testar a entrega de mensagens enviando uma prova para um seed address
 
 O envio de uma prova envolve o mesmo processo de qualquer delivery.
 
-Saiba mais sobre provas em [esta seção](../send/preview-and-proof.md#proofs-send).
+Saiba mais sobre provas em [Enviar uma prova](../send/preview-and-proof.md#proofs-send).
 
 No entanto, para enviar uma prova de mensagem transacional, é necessário realizar as seguintes operações:
 

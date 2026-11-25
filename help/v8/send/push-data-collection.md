@@ -23,9 +23,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1430'
 ht-degree: 15%
 ---
 # Configuração de notificação por push revisada {#push-notifications-config}
@@ -126,7 +126,7 @@ Para criar um serviço para enviar notificações por push, siga as etapas abaix
 
    >[!NOTE]
    >
-   >O target mapping **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** padrão é vinculado à tabela de destinatários. Para utilizar um target mapping diferente, é necessário criar um novo e inseri-lo no campo **[!UICONTROL Target mapping]** do serviço. Saiba mais sobre target mappings em [esta página](../audiences/target-mappings.md).
+   >O target mapping **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** padrão é vinculado à tabela de destinatários. Para utilizar um target mapping diferente, é necessário criar um novo e inseri-lo no campo **[!UICONTROL Target mapping]** do serviço. Saiba mais sobre target mappings em [Trabalhar com target mappings](../audiences/target-mappings.md).
 
 1. Em seguida, use o ícone **[!UICONTROL Add]** à direita para definir os aplicativos móveis que usam esse serviço.
 
@@ -275,4 +275,4 @@ O Adobe Experience Platform Mobile SDK ajuda a potencializar as soluções e os 
 
 Depois de configurar com êxito o aplicativo móvel na Coleção de dados, você pode criar e enviar notificações por push no Adobe Campaign.
 
-Consulte [esta página](push.md#push-create) para obter os elementos detalhados específicos da entrega de notificações do iOS e do Android.
+Consulte [Criar a primeira notificação por push](push.md#push-create) para obter os elementos detalhados específicos da entrega de notificações do iOS e do Android.
