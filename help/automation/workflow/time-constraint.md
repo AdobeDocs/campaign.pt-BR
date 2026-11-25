@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 62%
+source-wordcount: '117'
+ht-degree: 52%
 ---
 # Restrição de tempo{#time-constraint}
 
@@ -30,4 +30,4 @@ Insira o rótulo para a atividade e especifique o período durante o qual a tare
 
 Quando a opção **[!UICONTROL Try again later if outside of execution period]** estiver selecionada, ela permitirá reiniciar a tarefa fora do período de execução. se desejar que a ação do fluxo de trabalho seja abandonada para sempre após sua suspensão, desmarque essa opção.
 
-![](assets/s_user_scheduled_wait.png)
+![Atividade de restrição de tempo com horas de Início e Término e Tente novamente mais tarde se fora do período de execução estiver marcado.](assets/s_user_scheduled_wait.png)

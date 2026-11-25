@@ -18,10 +18,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 71%
 ---
 # Rastrear uma campanha{#tracking-a-campaign}
 
@@ -40,7 +40,7 @@ Isso permite:
 
 Na guia **[!UICONTROL Campaigns]**, é possível exibir a lista de **[!UICONTROL Campaign packages]** que reagrupa todas as campanhas de marketing distribuído existentes. Você pode filtrar esta lista para exibir apenas as campanhas publicadas, atrasadas, com aprovação pendente etc. Para isso, clique nos links na parte superior desta visualização ou use o link **[!UICONTROL Filter list]** e selecione o status do pacote da campanha que deseja exibir.
 
-![](assets/mkg_dist_catalog_filter.png)
+![Lista de pacotes de campanha com o filtro de status aberto: Em edição, Aprovação pendente, Aprovado, Rejeitado e muito mais.](assets/mkg_dist_catalog_filter.png)
 
 ## Edição de pacotes {#edit-packages}
 
@@ -52,21 +52,21 @@ Clique no nome do pacote para editá-lo. Você também pode visualizar pedidos p
 
 Essas informações também estão disponíveis na visualização **[!UICONTROL Campaign orders]**, que lista todas as ordens.
 
-![](assets/mkg_dist_catalog_op_command_details.png)
+![Lista de pedidos de campanha mostrando cada pedido com sua entidade local, campanha e status (Disponível ou Cancelado).](assets/mkg_dist_catalog_op_command_details.png)
 
 O operador central pode editar o pedido. Há duas maneiras de fazer isso:
 
 1. O operador pode clicar no nome do pedido para editá-lo: isso exibe o detalhe do pedido.
 
-   ![](assets/mkg_dist_catalog_op_command_edit1.png)
+   ![Clicar em um pedido na lista de pedidos do Campaign abre seu painel com status, pacote, entidade local e aprovações.](assets/mkg_dist_catalog_op_command_edit1.png)
 
    A guia **[!UICONTROL Edit > General]** permite visualizar informações inseridas pela entidade local quando solicita a campanha.
 
-   ![](assets/mkg_dist_catalog_op_command_edit1a.png)
+   ![Guia Edição de Pedido, Geral: rótulo, entidade organizacional, operador atribuído, status e comentário da entidade local.](assets/mkg_dist_catalog_op_command_edit1a.png)
 
 1. O operador pode clicar no rótulo do pacote de campanha para editá-lo e alterar determinadas configurações.
 
-   ![](assets/mkg_dist_catalog_op_command_edit2.png)
+   ![Abrindo um pacote da lista e, em seguida, um de seus pedidos de campanha, cada um mostrando seu painel.](assets/mkg_dist_catalog_op_command_edit2.png)
 
 ## Cancelamento de um pacote {#cancel-a-package}
 
@@ -74,7 +74,7 @@ A entidade central pode cancelar um pacote de campanha a qualquer momento.
 
 Clique em **[!UICONTROL Cancel]** no **[!UICONTROL Dashboard]** do pacote de campanha.
 
-![](assets/mkg_dist_cancel_op_from_dashboard.png)
+![O botão Cancelar o pacote no Painel do pacote abre a caixa de diálogo Ação no pacote com um campo Comentário.](assets/mkg_dist_cancel_op_from_dashboard.png)
 
 O campo **[!UICONTROL Comment]** permite justificar o cancelamento.
 
@@ -84,15 +84,15 @@ Para **campanhas colaborativas**, cancelar um pacote aciona várias ações:
 
 1. Quaisquer pedidos relacionados a este pacote serão cancelados,
 
-   ![](assets/mkg_dist_mutual_op_cancelled.png)
+   ![Painel do pacote cancelado listando seus pedidos de campanha, cada um com o status Cancelado.](assets/mkg_dist_mutual_op_cancelled.png)
 
 1. A campanha de referência é cancelada e todos os processos ativos (fluxos de trabalho, entregas) são interrompidos,
 
-   ![](assets/mkg_dist_mutual_op_cancelled1.png)
+   ![Painel de campanha de referência cancelado com seus deliveries de email e SMS exibidos como Parados.](assets/mkg_dist_mutual_op_cancelled1.png)
 
 1. Uma notificação é enviada a todas as entidades locais relacionadas.
 
-   ![](assets/mkg_dist_mutual_op_cancelled2.png)
+   ![Cancelamento de email de pacote notificando uma entidade local de que a campanha foi cancelada centralmente.](assets/mkg_dist_mutual_op_cancelled2.png)
 
 Os pacotes cancelados ainda podem ser acessados e reiniciados pela entidade central (veja abaixo) se necessário. Eles só serão oferecidas às entidades locais quando forem aprovados e iniciados. O processo de reinicialização de pacote é mostrado abaixo.
 
@@ -103,11 +103,11 @@ Os pacotes de campanha que já foram publicados podem ser reiniciados, modificad
 1. Selecione o pacote desejado.
 1. Clique no link **[!UICONTROL Reinitialize the package to reuse it]** e clique em **[!UICONTROL OK]**.
 
-   ![](assets/mkg_dist_mutual_op_reinit.png)
+   ![Reinicialize a caixa de diálogo de confirmação do pacote: o status torna-se Being edited, com o botão OK.](assets/mkg_dist_mutual_op_reinit.png)
 
 1. Clique em **[!UICONTROL Save]** para aprovar o pacote reinicialização.
 
-   ![](assets/mkg_dist_mutual_op_reinit2.png)
+   ![Painel de pacote cancelado com o botão Salvar realçado para aprovar a reinicialização.](assets/mkg_dist_mutual_op_reinit2.png)
 
 1. O status do pacote muda para **[!UICONTROL Being edited]**. Modifique, aprove e publique ele novamente para restaurá-lo na lista de pacotes de campanha.
 

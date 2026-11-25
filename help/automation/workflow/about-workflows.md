@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 94%
+source-wordcount: '666'
+ht-degree: 77%
 ---
 # Introdução a fluxos de trabalho{#gs-workflows}
 
@@ -50,7 +50,7 @@ Um fluxo de trabalho é uma definição de processo: o diagrama do fulxo de trab
 
 O modelo de fluxo de trabalho descreve as várias tarefas a serem executadas e como elas são vinculadas. Os modelos de tarefa são chamados de atividades e são representados por ícones. Eles são vinculados por transições.
 
-![](assets/example1.png)
+![Diagrama de fluxo de trabalho de duas consultas de pasta por meio de União, Enriquecimento, Entrega e Aprovação para Atualização de Dados ou Fim](assets/example1.png)
 
 ## Principais princípios
 
@@ -62,7 +62,7 @@ Cada fluxo de trabalho contém:
 
   Em um diagrama de fluxo de trabalho, uma determinada atividade pode produzir várias tarefas, principalmente quando houver as ações de loop ou recorrentes (periódicas).
 
-  Todas as atividades do fluxo de trabalho são listadas [nesta seção](activities.md), incluindo casos de uso e exemplos.
+  Todas as atividades de fluxo de trabalho estão listadas em [Sobre atividades de fluxo de trabalho](activities.md), incluindo casos de uso e exemplos.
 
 * **[!UICONTROL Transitions]**
 
@@ -74,22 +74,22 @@ Cada fluxo de trabalho contém:
   >
   >Um fluxo de trabalho que contém transições não finalizadas ainda pode ser executado: uma mensagem de aviso será gerada e o fluxo de trabalho será pausado quando atingir a transição, mas não gerará um erro. Dessa forma, é possível iniciar um fluxo de trabalho sem que ele seja concluído e adicioná-lo durante o processo.
 
-  Para obter mais informações sobre como criar um fluxo de trabalho, consulte [esta seção](build-a-workflow.md).
+  Para obter mais informações sobre como criar um fluxo de trabalho, consulte [Criar um fluxo de trabalho](build-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
   A tabela de trabalho contém todas as informações transportadas pela transição. Cada fluxo de trabalho usa várias tabelas de trabalho. Os dados transmitidos nessas tabelas podem ser acelerados e usados no ciclo de vida do fluxo de trabalho, desde que não sejam apagados. De fato, tabelas desnecessárias são removidas toda vez que o fluxo de trabalho se torna passivo e possivelmente durante a execução dos maiores fluxos de trabalho para evitar sobrecarga no servidor.
 
-  Saiba mais sobre dados e tabelas de fluxos de trabalho [nesta seção](use-workflow-data.md).
+  Saiba mais sobre dados e tabelas de fluxo de trabalho em [Usar dados de fluxo de trabalho](use-workflow-data.md).
 
 ## Seções relacionadas
 
 Consulte estas seções para obter orientação e práticas recomendadas para automatizar processos com fluxos de trabalho:
 
-* Saiba mais sobre atividades de fluxo de trabalho [nesta página](use-workflow-data.md).
-* Saiba como criar um fluxo de trabalho [nesta seção](build-a-workflow.md).
-* Descubra como usar fluxos de trabalho para importar dados no Campaign em [esta seção](campaign-workflows.md).
-* As práticas recomendadas de fluxo de trabalho são detalhadas [nesta página](workflow-best-practices.md).
-* Encontre orientações sobre a execução do fluxo de trabalho [nesta seção](start-a-workflow.md).
-* Saiba como monitorar fluxos de trabalho [nesta página](monitor-workflow-execution.md).
-* Saiba como conceder acesso aos usuários para usar fluxos de trabalho [nesta página](managing-rights.md).
+* Saiba mais sobre atividades de fluxo de trabalho em [Usar dados de fluxo de trabalho](use-workflow-data.md).
+* Saiba como criar um fluxo de trabalho no [Criar um fluxo de trabalho](build-a-workflow.md).
+* Descubra como usar fluxos de trabalho para importar dados no Campaign no [Tipo de fluxos de trabalho](campaign-workflows.md).
+* As práticas recomendadas de fluxo de trabalho são detalhadas em [Práticas recomendadas de fluxo de trabalho](workflow-best-practices.md).
+* Encontre orientações sobre a execução do fluxo de trabalho em [Iniciar um fluxo de trabalho](start-a-workflow.md).
+* Saiba como monitorar workflows em [Monitorar a execução do workflow](monitor-workflow-execution.md).
+* Saiba como conceder acesso aos usuários para usar fluxos de trabalho em [Gerenciar permissões de fluxo de trabalho](managing-rights.md).

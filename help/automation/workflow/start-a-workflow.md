@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 94%
+source-wordcount: '1180'
+ht-degree: 91%
 ---
 # Iniciar, pausar, parar um fluxo de trabalho {#starting-a-workflow}
 
@@ -50,7 +50,7 @@ A lista de opções disponíveis no menu **[!UICONTROL Actions]** e no menu do b
 
 O botão **[!UICONTROL Actions]** da barra de ferramentas permite acessar opções de execução adicionais em fluxos de trabalho selecionados. Você também pode usar o menu **[!UICONTROL File > Actions]** ou clicar com o botão direito do mouse em um fluxo de trabalho e selecionar **[!UICONTROL Actions]**.
 
-![](assets/purge_historique.png)
+![Lista de fluxos de trabalho com o menu Ações aberto e o histórico de Limpeza destacado entre as opções Iniciar, Pausar, Parar e Reiniciar.](assets/purge_historique.png)
 
 * **[!UICONTROL Start]**
 
@@ -134,7 +134,7 @@ Melhore a estabilidade da instância implementando as seguintes práticas recome
 
 Quando uma ou mais atividades de fluxo de trabalho forem selecionadas, você pode clicar com o botão direito do mouse para agir em sua seleção.
 
-![](assets/contextual_menu.png)
+![Clique com o botão direito do mouse em um menu de uma atividade de fluxo de trabalho com Exibir logs realçados, além das opções Abrir, Recortar, Copiar, Excluir e Salvar.](assets/contextual_menu.png)
 
 As seguintes opções estão disponíveis no menu do botão direito do mouse:
 

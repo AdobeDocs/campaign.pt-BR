@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 90%
 ---
 # Interseção{#intersection}
 
@@ -36,13 +36,13 @@ Uma atividade do tipo **intersecção** cria um público alvo a partir da inters
 
 Uma intersecção permite extrair somente a população que é comum a todos os resultados da atividade de entrada. O target é criado com todos os resultados recebidos: todas as atividades anteriores devem então ser concluídas antes que a intersecção possa ser executada. Para configurar essa atividade, você precisa inserir um rótulo para ela, bem como as opções referentes ao resultado.
 
-![](assets/s_user_segmentation_inter.png)
+![Atividade de interseção com reconciliação definida como Keys only, um rótulo Result e a opção Generate complement](assets/s_user_segmentation_inter.png)
 
 Para obter mais informações sobre como configurar e usar a atividade de intersecção, consulte [Extraindo dados conjuntos (Intersecção)](targeting-workflows.md#extract-joint-data--intersection-).
 
 Marque a opção **[!UICONTROL Generate complement]** se desejar processar a população restante. O complemento conterá a união dos resultados de todas as atividades de entrada menos a intersecção. Uma transição de saída adicional será adicionada à atividade, da seguinte maneira:
 
-![](assets/s_user_segmentation_inter_compl.png)
+![Atividade de interseção com duas transições de saída: Resultado e Complemento](assets/s_user_segmentation_inter_compl.png)
 
 ## Exemplo de intersecção {#intersection-example}
 
@@ -60,7 +60,7 @@ No exemplo a seguir, o objetivo da intersecção é calcular os destinatários c
 
    O resultado da intersecção é enviado para a atualização da primeira lista. Se você optou usar o complemento, ele também será enviado para a segunda atualização da lista.
 
-   ![](assets/intersection_example.png)
+   ![Três consultas alimentando uma Interseção cujo Resultado e Complemento vão para duas atividades List update](assets/intersection_example.png)
 
 ## Parâmetros de entrada {#input-parameters}
 

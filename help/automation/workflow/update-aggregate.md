@@ -30,25 +30,25 @@ topic_v2:
     internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 11%
+source-wordcount: '143'
+ht-degree: 8%
 ---
 # Atualizar agregado{#update-aggregate}
 
 As agregações definidas em [cubos](../../v8/reporting/gs-cubes.md) para fins de relatório podem ser atualizadas com uma atividade específica. Uma guia **[!UICONTROL Workflow]** está disponível ao configurar a agregação.
 
-Saiba mais sobre cubos e agregações em [esta seção](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates).
+Saiba mais sobre cubos e agregações em [Agregações em cubos](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates).
 
 Para atualizar uma agregação, edite a atividade **[!UICONTROL Update aggregate]** e selecione o cubo e a agregação a serem atualizados.
 
 Você pode configurar uma **atualização completa** ou uma **atualização parcial**.
 
-![](assets/update-aggregate-details.png)
+![Atualize a atividade de agregação com os campos de Cubo e Agregação e as opções de atualização Completa ou Parcial.](assets/update-aggregate-details.png)
 
 Por padrão, uma atualização completa é executada durante cada cálculo. Para habilitar uma atualização parcial, selecione a opção e defina as condições de atualização.
 
-![](assets/update-aggregate-partial.png)
+![Editando a janela de condição de atualização com um filtro na data de criação posterior à data atual menos 1 mês.](assets/update-aggregate-partial.png)
 
 Uma prática recomendada é adicionar uma atividade **[!UICONTROL Scheduler]** para configurar a frequência das atualizações de cálculo.

@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 100%
+source-wordcount: '790'
+ht-degree: 65%
 ---
 # Enriquecimento de email com campos de data personalizados{#email-enrichment-with-custom-date-fields}
 
@@ -36,23 +36,23 @@ Neste exemplo, queremos enviar um e-mail com campos de dados personalizados para
 
 Precisamos direcionar os destinatários de uma lista que celebram os aniversariantes deste mês com uma atividade **[!UICONTROL Split]**. Em seguida, usando a atividade **[!UICONTROL Enrichment]**, o campo de dados personalizado atuará como as datas de validade no email para a oferta especial do cliente.
 
-![](assets/uc_enrichment.png)
+![Fluxo de trabalho: listar lido, Dividir com Subconjunto para Enriquecimento, depois Entrega de email e Complemento para Fim.](assets/uc_enrichment.png)
 
 Para criar este exemplo, aplique as seguintes etapas:
 
 1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, arraste e solte uma atividade **[!UICONTROL Read list]** para direcionar a lista de destinatários.
 1. A lista a ser processada pode ser especificada explicitamente, calculada por um script ou localizada dinamicamente, de acordo com as opções selecionadas e parâmetros definidos aqui.
 
-   ![](assets/uc_enrichment_1.png)
+   ![Ler atividade de lista com a lista especificada explicitamente e a seção de filtragem Source.](assets/uc_enrichment_1.png)
 
 1. Adicione uma atividade **[!UICONTROL Split]** para diferenciar os destinatários que farão aniversário neste mês dos outros destinatários.
 1. Para dividir a lista, na categoria **[!UICONTROL Filtering of selected records]**, selecione **[!UICONTROL Add a filtering condition on the inbound population]**. Em seguida, clique em **[!UICONTROL Edit]**.
 
-   ![](assets/uc_enrichment_2.png)
+   ![Guia Dividir Subconjuntos com Adicionar uma condição de filtragem na população de entrada e o link Editar realçado.](assets/uc_enrichment_2.png)
 
 1. Selecione **[!UICONTROL Filtering conditions]** e clique no botão **[!UICONTROL Edit expression]** para filtrar o mês de aniversário do destinatário.
 
-   ![](assets/uc_enrichment_3.png)
+   ![Janela do elemento de destino com o botão Editar expressão realçado ao lado do campo Expressão.](assets/uc_enrichment_3.png)
 
 1. Clique em **[!UICONTROL Advanced Selection]**, em **[!UICONTROL Edit the formula using an expression]** e adicione a seguinte expressão: Month(@birthDate).
 1. Na coluna **[!UICONTROL Operator]**, selecione **[!UICONTROL equal to]**.
@@ -60,42 +60,42 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    Isso consultará os destinatários cujo mês de aniversário corresponde ao mês atual.
 
-   ![](assets/uc_enrichment_4.png)
+   ![Condição do elemento de público alvo: mês de data de nascimento igual ao mês da data atual mais 14 dias.](assets/uc_enrichment_4.png)
 
 1. Clique em **[!UICONTROL Finish]**. Em seguida, na guia **[!UICONTROL General]** da sua atividade **[!UICONTROL Split]**, clique em **[!UICONTROL Generate complement]**, na categoria **[!UICONTROL Results]**.
 
    Com o resultado **[!UICONTROL Complement]**, é possível adicionar uma atividade de entrega ou atualizar uma lista. Aqui, adicionamos uma atividade **[!UICONTROL End]**.
 
-   ![](assets/uc_enrichment_6.png)
+   ![Divida a guia Geral com a opção Gerar complemento marcada na seção Resultados.](assets/uc_enrichment_6.png)
 
 Agora, é necessário configurar a atividade **[!UICONTROL Enrichment]**:
 
 1. Adicione uma atividade **[!UICONTROL Enrichment]** depois do subconjunto para adicionar campos de data personalizados.
 
-   ![](assets/uc_enrichment_7.png)
+   ![Fluxo de trabalho com uma atividade Enrichment adicionada à transição de Subconjunto da atividade Split.](assets/uc_enrichment_7.png)
 
 1. Abra a atividade **[!UICONTROL Enrichment]**. Na categoria **[!UICONTROL Complementary information]**, clique em **[!UICONTROL Add data]**.
 
-   ![](assets/uc_enrichment_8.png)
+   ![Atividade Enrichment com o link de dados Add realçada na seção Complementary information.](assets/uc_enrichment_8.png)
 
 1. Selecione **[!UICONTROL Data linked to the filtering dimension]** e, em seguida, **[!UICONTROL Data of the filtering dimension]**.
 1. Clique no botão **[!UICONTROL Add]**.
 
-   ![](assets/uc_enrichment_9.png)
+   ![Janela de dados a serem adicionados com o botão Adicionar realçado ao lado da lista Colunas de saída.](assets/uc_enrichment_9.png)
 
 1. Adicione um **[!UICONTROL Label]**. Em seguida, na coluna **[!UICONTROL Expression]**, clique em **[!UICONTROL Edit expression]**.
 
-   ![](assets/uc_enrichment_10.png)
+   ![Colunas de saída com o rótulo Birthdate e o botão Editar expressão realçados na coluna Expression.](assets/uc_enrichment_10.png)
 
 1. Primeiro, precisamos direcionar a semana antes da data de nascimento como a **Validity start date** com a seguinte **[!UICONTROL Expression]**: `SubDays([target/@birthDate], 7)`.
 
-   ![](assets/uc_enrichment_11.png)
+   ![Colunas de saída com o rótulo Birthdate e a expressão Date of birth (target/@birthDate).](assets/uc_enrichment_11.png)
 
 1. Depois, para criar o campo personalizado **Validity end date** que direciona a semana após a data de nascimento, é necessário adicionar a **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`.
 
    É possível adicionar um rótulo à expressão.
 
-   ![](assets/uc_enrichment_12.png)
+   ![Colunas de saída listando Birthdate e a coluna Validity start date com sua expressão e alias.](assets/uc_enrichment_12.png)
 
 1. Clique em **[!UICONTROL Ok]**. Agora o enriquecimento está pronto.
 
@@ -103,7 +103,7 @@ Após a atividade **[!UICONTROL Enrichment]**, você pode adicionar uma entrega.
 
 1. Arraste e solte uma atividade **[!UICONTROL Email delivery]** após a atividade **[!UICONTROL Enrichment]**.
 
-   ![](assets/uc_enrichment_15.png)
+   ![Fluxo de trabalho com uma atividade de entrega de email adicionada após a atividade de Enriquecimento.](assets/uc_enrichment_15.png)
 
 1. Clique duas vezes na atividade **[!UICONTROL Email delivery]** para começar a personalizar a entrega.
 1. Adicione um **[!UICONTROL Label]** à entrega e clique em **[!UICONTROL Continue]**.
@@ -112,7 +112,7 @@ Após a atividade **[!UICONTROL Enrichment]**, você pode adicionar uma entrega.
 
    Em seguida, inicie o fluxo de trabalho para enriquecer a transição de saída com as informações de direcionamento.
 
-   ![](assets/uc_enrichment_18.png)
+   ![Guia Aprovações de propriedades de entrega com a opção Confirmar a entrega antes de enviar marcada.](assets/uc_enrichment_18.png)
 
 Agora é possível começar a projetar a entrega de email com os campos de data personalizados criados na atividade **[!UICONTROL Enrichment]**.
 
@@ -124,16 +124,16 @@ Agora é possível começar a projetar a entrega de email com os campos de data 
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Clique em ![](assets/uc_enrichment_16.png). Selecione **[!UICONTROL Target extension]** e então as datas de validade personalizadas criadas anteriormente com a atividade **[!UICONTROL Enrichment]** para adicionar a extensão à expressão formatDate.
+1. Clique no botão ![Personalization da barra de ferramentas com uma seta suspensa.](assets/uc_enrichment_16.png). Selecione **[!UICONTROL Target extension]** e então as datas de validade personalizadas criadas anteriormente com a atividade **[!UICONTROL Enrichment]** para adicionar a extensão à expressão formatDate.
 
-   ![](assets/uc_enrichment_19.png)
+   ![Menu do Personalization Submenu de extensão do Target listando a data de início da validade e a data de término da validade.](assets/uc_enrichment_19.png)
 
 1. Configure seu conteúdo de e-mail conforme necessário.
 
-   ![](assets/uc_enrichment_17.png)
+   ![Conteúdo do HTML de email com expressões formatDate usando campos targetData para as datas de validade.](assets/uc_enrichment_17.png)
 
 1. Visualize seu e-mail para verificar se os campos de data personalizados foram corretamente configurados.
 
-   ![](assets/uc_enrichment_20.png)
+   ![Guia Visualização de email mostrando a mensagem de aniversário com as datas de validade de 20/12 a 03/01 preenchidas.](assets/uc_enrichment_20.png)
 
 Seu e-mail está pronto. É possível começar a enviar as provas e confirmar a entrega para enviar os e-mails de aniversário.

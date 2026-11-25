@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 98%
+source-wordcount: '1003'
+ht-degree: 85%
 ---
 # Atualizar dados{#update-data}
 
@@ -43,7 +43,7 @@ O campo **[!UICONTROL Operation type]** permite escolher o processo que deve ser
 * **[!UICONTROL Update and merge collections]**: atualiza os dados e escolhe um registro principal e, em seguida, vincula os elementos ligados às duplicações neste registro principal. Os duplicados podem ser excluídos sem criar elementos anexados órfãos.
 * **[!UICONTROL Delete]**: excluir dados.
 
-![](assets/s_advuser_update_data_1.png)
+![Atualize a atividade de dados com a lista Tipo de operação aberta, mostrando Inserir ou atualizar por meio de Excluir.](assets/s_advuser_update_data_1.png)
 
 O campo **[!UICONTROL Batch size]** permite selecionar o número de elementos de transição de entrada que serão atualizados. Por exemplo, se o número declarado for 500, os primeiros 500 registros serão atualizados.
 
@@ -57,17 +57,17 @@ Especificar como identificar os registros no banco de dados:
 
 * Caso contrário, especifique um ou mais links que permitirão a identificação dos dados no banco de dados ou uso direto das chaves de reconciliação.
 
-![](assets/s_advuser_update_data_2.png)
+![Atualizar atividade de dados, Identificação de registro: selecionando o esquema de Destinatários como a Dimensão atualizada.](assets/s_advuser_update_data_2.png)
 
 ## Selecionar os campos a serem atualizados {#selecting-the-fields-to-be-updated}
 
 Use a opção **[!UICONTROL Automatically associate fields with the same name]** para que o Adobe Campaign identifique os campos que serão atualizados de forma automática.
 
-![](assets/s_advuser_update_data_3b.png)
+![Campos para atualizar tabela preenchidos pelo botão de varinha que associa automaticamente campos com o mesmo nome.](assets/s_advuser_update_data_3b.png)
 
 Também é possível usar o ícone **[!UICONTROL Insert]** para selecionar manualmente os campos do banco de dados que devem ser atualizados.
 
-![](assets/s_advuser_update_data_3.png)
+![Botão Editar expressão em um novo campo para atualizar a linha, abrindo o seletor de campo para o documento Destinatários.](assets/s_advuser_update_data_3.png)
 
 Selecione todos os campos que serão atualizados e, se necessário, adicione condições dependendo da atualização. Para fazer isso, use a coluna **[!UICONTROL Taken into account if]**. As condições são aplicadas uma após a outra mantendo a ordem na lista. Use as setas à direita para alterar a ordem das atualizações.
 
@@ -75,7 +75,7 @@ Selecione todos os campos que serão atualizados e, se necessário, adicione con
 
 Em uma operação **[!UICONTROL Insert or update]**, é possível selecionar a campanha que deve ser aplicada individualmente ou em cada campo. Para fazer isso, selecione o valor desejado na coluna **[!UICONTROL Operation]**.
 
-![](assets/s_advuser_update_data_5.png)
+![Coluna de operação dos Campos para atualizar a tabela com as opções Tudo, Inserir e Atualizar.](assets/s_advuser_update_data_5.png)
 
 Os campos **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** e **[!UICONTROL createdBy]** são atualizados automaticamente durante as atualizações de dados, a menos que o modo de gerenciamento esteja configurado especificamente na tabela de atualização dos campos.
 
@@ -108,11 +108,11 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 
 1. Selecione a operação **[!UICONTROL Update and merge collections]**.
 
-   ![](assets/update_and_merge_collections1.png)
+   ![Atualize a atividade de dados com o tipo de operação Atualizar e mesclar coleções selecionado na lista Tipo de operação.](assets/update_and_merge_collections1.png)
 
 1. Selecione a ordem de prioridade dos links. Isso permite identificar o registro principal. Os links disponíveis variam de acordo com a transição de entrada.
 
-   ![](assets/update_and_merge_collections2.png)
+   ![Seção de identificação de registro listando os links, por ordem de prioridade, usados para localizar o registro principal.](assets/update_and_merge_collections2.png)
 
 1. Selecione as coleções a serem movidas para o registro primário e os campos a serem atualizados.
 
@@ -126,7 +126,7 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 
 1. Especifique a ordem que os registros secundários precisam ser processados selecionando **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
 
-   ![](assets/update_and_merge_collections3.png)
+   ![Campos e coleções do registro de destino a serem atualizados, com a expressão Source e as colunas Taken into account if.](assets/update_and_merge_collections3.png)
 
 Os dados de registros secundários são associados ao registro principal se as regras definidas forem aplicáveis. De acordo com o tipo de atualização selecionada, os registros secundários podem ser excluídos.
 

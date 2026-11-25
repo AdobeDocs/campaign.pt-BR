@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 70%
+source-wordcount: '881'
+ht-degree: 55%
 ---
 # Gerenciar ativos e documentos {#manage-assets-documents}
 
@@ -54,19 +54,19 @@ Para uma campanha, a guia **[!UICONTROL Documents]** contém:
 
 Os documentos são vinculados ao programa ou à campanha através da guia **[!UICONTROL Edit > Documents]**.
 
-![](assets/op_add_document.png)
+![Guia Editar da campanha, subguia Documentos: lista de documentos anexados com os botões Adicionar, Excluir e Detalhar.](assets/op_add_document.png)
 
 Você também pode adicionar um documento a uma campanha no link dedicado no painel.
 
-![](assets/add_a_document_in_op.png)
+![Painel de campanha com o link Adicionar um documento e a caixa de diálogo Documento de marketing para carregar um arquivo.](assets/add_a_document_in_op.png)
 
 Clique no ícone **[!UICONTROL Detail...]** para exibir o conteúdo de um arquivo e adicionar informações:
 
-![](assets/add_document_details.png)
+![Caixa de diálogo do documento aberta de Detalhes: rótulo, versão, natureza, link e descrição do arquivo carregado.](assets/add_document_details.png)
 
 No painel, os documentos associados à campanha são agrupados na seção **[!UICONTROL Document(s)]**, como no exemplo a seguir:
 
-![](assets/edit_documents.png)
+![Painel de campanha com a seção Documento(s) destacando os documentos anexados à campanha.](assets/edit_documents.png)
 
 Eles também podem ser editados e modificados nessa visualização.
 
@@ -86,7 +86,7 @@ Para uma campanha, delivery outlines permitem que você estruture elementos exte
 
 Para criar um delivery outline, clique na guia **[!UICONTROL Edit > Documents]** da campanha relacionada e depois clique na subguia **[!UICONTROL Delivery outlines]**.
 
-![](assets/add-a-delivery-outline.png)
+![Guia Editar da campanha, Documentos, subguia Delivery outlines com o link Adicionar um delivery outline.](assets/add-a-delivery-outline.png)
 
 
 >[!NOTE]
@@ -98,33 +98,33 @@ Em seguida, clique em **[!UICONTROL Add a delivery outline]** e crie a hierarqui
 1. Clique com o botão direito do mouse na raiz da árvore e selecione **[!UICONTROL New > Delivery outlines]**.
 1. Clique com o botão direito do mouse no outline recém criado e selecione **[!UICONTROL New > Item]** ou **[!UICONTROL New > Personalization fields]**.
 
-![](assets/del-outline-add-new-item.png)
+![Árvore de delivery outlines com o menu do botão direito do mouse: Novo > Item, Campos de personalização ou Oferta.](assets/del-outline-add-new-item.png)
 
 Uma estrutura pode conter itens, campos de personalização e ofertas:
 
 * Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados à entrega.
 * Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores a serem utilizados em entregas para um público-alvo específico (oferta de boas-vindas, desconto etc.) Elas são criadas no Adobe Campaign e importadas para a estrutura por meio do link **[!UICONTROL Import personalization fields...]**.
 
-  ![](assets/del-outline-perso-field.png)
+  ![Selecione a caixa de diálogo de campos de personalização Pack, Gold e Premium, aberta em Importar campos de personalização.](assets/del-outline-perso-field.png)
 
   Eles também podem ser criados diretamente na estrutura clicando no ícone **[!UICONTROL Add]** à direita da zona de lista.
 
-  ![](assets/add-del-outline-button.png)
+  ![Lista de campos de personalização em uma estrutura de entrega com valores inseridos e o ícone Adicionar à direita da lista.](assets/add-del-outline-button.png)
 
 
 ### Selecionar um outline {#select-an-outline}
 
 Para cada entrega, você pode selecionar o outline para associar na seção reservada para o outline da extração, como no exemplo a seguir:
 
-![](assets/select-delivery-outline.png)
+![Guia Correspondência Direta de uma entrega com a caixa de diálogo Selecionar uma estrutura de entrega listando Unidade B, Unidade C e Unidade A.](assets/select-delivery-outline.png)
 
 A estrutura selecionada é então exibida na seção inferior da janela. Ele pode ser editado usando o ícone à direita do campo ou alterado usando a lista suspensa:
 
-![](assets/delivery-outline-selected.png)
+![Guia Correspondência Direta de uma entrega com o campo Estrutura de entrega destacado e mostrando a Unidade C.](assets/delivery-outline-selected.png)
 
 A guia **[!UICONTROL Summary]** da entrega também exibe essas informações:
 
-![](assets/delivery-outline-in-dashboard.png)
+![Guia Resumo da Entrega com uma seta apontando para o valor da Estrutura de Entrega, Unidade C.](assets/delivery-outline-in-dashboard.png)
 
 ### Resultado da extração {#extraction-result}
 
@@ -132,6 +132,6 @@ No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, 
 
 No seguinte exemplo, o rótulo, custo estimado e descrição do outline associado à entrega serão adicionados no arquivo de extração.
 
-![](assets/campaign-export-template.png)
+![Dados para extrair a etapa do modelo de exportação com a coluna de saída Rótulo (Estrutura de Entrega/Entrega) realçada.](assets/campaign-export-template.png)
 
 O modelo de exportação deve estar associado ao provedor de serviços selecionado para a entrega. Consulte [esta seção](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).

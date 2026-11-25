@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 77%
+source-wordcount: '2173'
+ht-degree: 65%
 ---
 # Provedores, estoques e orçamentos{#providers-stocks-and-budgets}
 
@@ -66,7 +66,7 @@ Você pode criar quantos provedores de serviços forem necessários para suas en
 1. Clique no botão **[!UICONTROL New]** acima da lista de provedores de serviços.
 1. Na seção inferior da janela, especifique o nome e os detalhes de contato do provedor de serviços.
 
-   ![](assets/add-a-supplier.png)
+   ![Lista de provedores de serviços no Explorer e um novo formulário de provedor de serviços com os campos Rótulo, Nome interno e Comentário](assets/add-a-supplier.png)
 
 1. Clique no botão **[!UICONTROL Save]** para adicionar o provedor de serviço à lista.
 
@@ -80,11 +80,11 @@ Para criar um template de serviço e definir seu conteúdo, siga as etapas abaix
 
 1. Na guia **[!UICONTROL Services]** do provedor de serviço, clique no botão **[!UICONTROL Add]** e insira o nome do modelo de serviço.
 
-   ![](assets/supplier-new-template.png)
+   ![Caixa de diálogo de serviço para um novo modelo de serviço, guia Geral, com os campos Rótulo, Nome interno e Comentário](assets/supplier-new-template.png)
 
 1. Crie as categorias de custo para cada tipo de processo (tarefa ou entrega por correspondência direta/email/etc.). Para fazer isso, clique na guia **[!UICONTROL Cost categories]** e, em seguida, no botão **[!UICONTROL Add]** e insira os parâmetros de cada categoria de custo.
 
-   ![](assets/add-cost-categories.png)
+   ![Guia Categorias de custo com o botão Adicionar e a caixa de diálogo Categoria de custo para uma categoria de Mala Direta e seus tipos de custo](assets/add-cost-categories.png)
 
    * Insira um rótulo para esta categoria de custo e selecione o tipo de processo em questão: **[!UICONTROL Direct mail]**, **[!UICONTROL Email]**, **[!UICONTROL Mobile]**, etc.
    * Clique no botão **[!UICONTROL Add]** para definir os tipos de custo associados a esta categoria.
@@ -96,7 +96,7 @@ Para criar um template de serviço e definir seu conteúdo, siga as etapas abaix
 
 1. Você pode pré-selecionar um valor para essa categoria de custo, que é o padrão nas categorias de custo do provedor de serviços (em vez de uma vazia). Para fazer isso, habilite a opção **Sim** na coluna **[!UICONTROL Selected]** para o tipo de categoria em questão:
 
-   ![](assets/default-cost-type.png)
+   ![Caixa de diálogo de categoria de custo com a opção Sim habilitada na coluna Selecionado para o tipo de custo Carta](assets/default-cost-type.png)
 
    No nível de delivery, o valor será selecionado por padrão.
 
@@ -106,7 +106,7 @@ Para cada tipo de custo, a estrutura de custos especifica as regras de cálculo 
 
 Clique na guia **[!UICONTROL Cost structure]** para configurar o cálculo de custo para cada categoria de custo e tipo. Clique em **[!UICONTROL Add]** e insira a estrutura de custos.
 
-![](assets/add-cost-structure.png)
+![Guia de estrutura de custo com o botão Adicionar e a caixa de diálogo de definição de estrutura de custo: canal, categoria de custo, cálculo](assets/add-cost-structure.png)
 
 * Para criar a estrutura de custos, selecione o tipo de mensagem e a categoria de custo relacionada às listas suspensas, bem como o tipo de custo ao qual a regra de cálculo será aplicada. O conteúdo dessas listas suspensas é proveniente das informações inseridas por meio da guia **[!UICONTROL Cost categories]**.
 
@@ -126,7 +126,7 @@ Se a quantidade for sempre a mesma para uma mensagem (ou um lote de mensagens) i
 
 Se essa quantia se aplicar a um lote de mensagens, especifique o número de mensagens relacionadas ao campo **[!UICONTROL for]**.
 
-![](assets/supplier_cost_structure_calc.png)
+![Caixa de diálogo de estrutura de custo com Por mensagem e Linear selecionada, uma quantidade de 4,00 para 5 unidades](assets/supplier_cost_structure_calc.png)
 
 
 #### Estrutura linear por limite {#linear-structure-by-threshold}
@@ -135,7 +135,7 @@ Se a quantidade se aplicar ao limite de cada mensagem, você deve definir uma es
 
 A configuração é a seguinte:
 
-![](assets/supplier-cost-structure-linear.png)
+![Caixa de diálogo de estrutura de custo com o tipo de limite Linear by, uma lista de limites com valores e um valor Beyond](assets/supplier-cost-structure-linear.png)
 
 Para adicionar um limite, clique no botão **[!UICONTROL Add]** à direita da lista.
 
@@ -143,13 +143,13 @@ Para adicionar um limite, clique no botão **[!UICONTROL Add]** à direita da li
 
 Por fim, você pode configurar um cálculo de custo de acordo com o número total de mensagens. Para fazer isso, selecione uma estrutura de cálculo **[!UICONTROL Constant by threshold]**. Por exemplo, o custo será definido em uma quantidade fixa de 12,00 para 1 a 100 mensagens, de 100,00 para uma entrega de 101 a 1.000 mensagens e de 500,00 para qualquer entrega acima de 1.000 mensagens, independentemente do número total.
 
-![](assets/supplier-cost-structure-constant.png)
+![Caixa de diálogo de estrutura de custo com o valor Constante por tipo de limite, uma lista de limites com valores fixos e um valor Além](assets/supplier-cost-structure-constant.png)
 
 ### Configurar trabalhos associados a um serviço {#configure-processes-associated-with-a-service}
 
 Você pode associar informações nos processos associados ao provedor de serviços através da guia **[!UICONTROL Jobs]**. Esta seção permite configurar o envio de informações para o roteador.
 
-![](assets/cost-supplier-jobs.png)
+![Guia Trabalhos de um serviço mostrando as configurações de extração de Arquivo, email de Notificação e modelo de fluxo de trabalho de pós-processamento](assets/cost-supplier-jobs.png)
 
 * A seção **[!UICONTROL File extraction]** indica o modelo de exportação usado para a entrega quando esse serviço é selecionado. Você pode indicar o nome do arquivo de saída no campo **[!UICONTROL Extraction file]**. O botão à direita do campo permite inserir variáveis.
 
@@ -171,18 +171,18 @@ Quando um serviço é selecionado, as categorias de custo correspondentes ao tip
 
 * Para uma entrega de correspondência direta, você pode selecionar o serviço na janela de configuração.
 
-  ![](assets/supplier-mail-delivery-select.png)
+  ![Entrega de correspondência direta com a seção Provedor de serviço destacada: Campo de serviço e Lista de categorias de custo](assets/supplier-mail-delivery-select.png)
 
 * Para um delivery em canais móveis, o mesmo modo de seleção se aplica.
 * Para uma entrega de email, o serviço é selecionado na guia **[!UICONTROL Advanced]** nas propriedades da entrega, como no exemplo a seguir:
 
-  ![](assets/supplier-email-delivery-select.png)
+  ![Propriedades de entrega, guia Avançado, com a seção Provedor de serviço mostrando o campo Serviço e a lista de categorias de Custo](assets/supplier-email-delivery-select.png)
 
 A coluna **[!UICONTROL Amount to surcharge]** permite que você adicione um custo para essa categoria no contexto da entrega ou tarefa relacionada.
 
 Você pode definir uma seleção obrigatória de um tipo de custo durante a definição de categorias de custo para um delivery. Para fazer isso, selecione **[!UICONTROL A cost type must be selected]**.
 
-![](assets/cost-type-must-be-selected.png)
+![A caixa de diálogo de categoria de custo com a opção Tipo de custo A deve ser selecionado está marcada, acima da lista de tipos de custo](assets/cost-type-must-be-selected.png)
 
 ## Gerenciamento de estoque e pedido {#stock-and-order-management}
 
@@ -202,7 +202,7 @@ O procedimento para configurar o estoque e o gerenciamento de pedidos no Adobe C
 
 O Adobe Campaign poderá alertar um grupo de operadores se o estoque tiver acabado ou atingido um limite mínimo. Os níveis de estoque podem ser acessados poe meio do link **[!UICONTROL Stocks]** da guia **[!UICONTROL Campaigns]** por meio do link **[!UICONTROL Other choices]** da área de navegação.
 
-![](assets/stock-dashboard.png)
+![Página inicial do Adobe Campaign, guia Campanhas, com a lista Ações mostrando as ações disponíveis](assets/stock-dashboard.png)
 
 #### Criar um estoque {#creating-a-stock}
 
@@ -217,17 +217,17 @@ Um estoque consiste em várias linhas de estoque. Uma linha de estoque contém u
 
 Ao criar um estoque, clique na guia **[!UICONTROL Stock lines]** para adicionar novas linhas.
 
-![](assets/stock-new-lines.png)
+![Tela de edição do Stock, guia Stock lines, listando linhas de estoque com colunas de nível Initial stock, Consumed, In stock e Alert](assets/stock-new-lines.png)
 
 Depois que o estoque for criado, use seu painel para criar e monitorar linhas de estoque.
 
 Clique no botão **[!UICONTROL Create]** para adicionar novas linhas de estoque.
 
-![](assets/add-stock-lines.png)
+![Painel de estoque com o botão Criar acima de uma lista de linhas de estoque que mostram quantidades iniciais, consumidas e em estoque](assets/add-stock-lines.png)
 
 * Indique a quantidade inicialmente em estoque no campo **[!UICONTROL Initial stock]**. Os campos **[!UICONTROL Consumed]** e **[!UICONTROL In stock]** são calculados automaticamente e atualizados conforme as campanhas avançam.
 
-  ![](assets/create-new-stock-line.png)
+  ![Caixa de diálogo Linha do estoque, guia Geral, com as quantidades Estoque inicial, Consumido e Em estoque e o campo Nível de alerta](assets/create-new-stock-line.png)
 
 * Indique o limite do qual os operadores devem ser avisados no estoque de pedidos no campo **[!UICONTROL Alert level]**. Quando o nível de alerta for atingido, uma mensagem de aviso será exibida na janela de aprovação de entregas usando esse estoque.
 
@@ -235,7 +235,7 @@ Clique no botão **[!UICONTROL Create]** para adicionar novas linhas de estoque.
 
 Para determinado provedor de serviços, em um serviço, uma linha de estoque pode ser referenciada por uma das classes de custo, da seguinte maneira:
 
-![](assets/select-stock-line-supplier.png)
+![Caixa de diálogo de categoria de custo com uma linha de estoque selecionada na lista suspensa Linha de estoque de um tipo de custo](assets/select-stock-line-supplier.png)
 
 ### Rastreamento de estoque {#stock-tracking}
 
@@ -243,7 +243,7 @@ Para determinado provedor de serviços, em um serviço, uma linha de estoque pod
 
 Um alerta é exibido quando um estoque referenciado em uma entrega é insuficiente. Por exemplo, o alerta a seguir será exibido quando um arquivo de extração for aprovado:
 
-![](assets/stock-alert.png)
+![A ação na caixa de diálogo de entrega mostra um alerta de estoque insuficiente com as opções Aceitar e Rejeitar antes da aprovação do arquivo](assets/stock-alert.png)
 
 #### Pedidos {#orders}
 
@@ -251,7 +251,7 @@ A subguia **[!UICONTROL Orders]** permite visualizar pedidos atuais e salvar nov
 
 Para salvar um pedido, edite a linha de estoque direcionada, clique no botão **[!UICONTROL Add]** e especifique a data e a quantidade da entrega.
 
-![](assets/order-stocks.png)
+![Guia Ordens de linha de estoque com o botão Adicionar e uma caixa de diálogo Ordem de estoque com Data de entrega e Volume nos campos de ordem](assets/order-stocks.png)
 
 >[!NOTE]
 >

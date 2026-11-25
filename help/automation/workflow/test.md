@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 100%
+source-wordcount: '210'
+ht-degree: 85%
 ---
 # Teste{#test}
 
@@ -30,11 +30,11 @@ Uma atividade de tipo **Teste** ativa a primeira transição que satisfaz a cond
 
 Uma condição é uma expressão JavaScript que deve ser avaliada como &quot;verdadeira&quot; ou &quot;falsa&quot;. Para inserir a expressão, clique no ícone à direita do nome da condição e selecione **[!UICONTROL Edit...]**.
 
-![](assets/edit_test.png)
+![Teste a tabela Condições da atividade com o menu de personalização aberto na opção Editar e a caixa Usar conexão padrão](assets/edit_test.png)
 
 Para obter mais informações sobre todas as funções adicionais do JavaScript e métodos SOAP do servidor do aplicativo acessível via JavaScript de fluxo de trabalho, consulte a [documentação JSAPI](https://experienceleague.adobe.com/pt-br/tools/campaign-api){target="_blank"}.
 
-Também é possível inserir variáveis diretamente no editor. Para obter mais informações sobre como trabalhar com variáveis, consulte [esta seção](javascript-scripts-and-templates.md#variables).
+Também é possível inserir variáveis diretamente no editor. Para obter mais informações sobre como trabalhar com variáveis, consulte [Variáveis](javascript-scripts-and-templates.md#variables).
 
 As condições podem ser adicionadas, excluídas ou ordenadas a partir da janela de edição da propriedade de atividade, mas também podem ser modificadas a partir da transição.
 

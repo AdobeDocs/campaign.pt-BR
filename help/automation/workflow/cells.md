@@ -30,24 +30,24 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 28%
+source-wordcount: '166'
+ht-degree: 19%
 ---
 # Células{#cells}
 
 A atividade **[!UICONTROL Cells]** fornece uma exibição dos vários subconjuntos como colunas de dados. Ele facilita a manipulação de subconjunto e também foi projetado para aproveitar os recursos de personalização.
 
-![](assets/wf_split_cells.png)
+![Guia Cells da atividade Cells listando o Subconjunto 1 a 3 com colunas de filtro, limitação, exclusão e código de segmento.](assets/wf_split_cells.png)
 
 Essa atividade pode ser configurada para inserir parâmetros específicos com base nas necessidades do usuário. Por padrão, os detalhes de cada subconjunto são detalhados em uma janela dedicada por meio das guias **[!UICONTROL Cells]** e **[!UICONTROL Advanced]**.
 
-![](assets/wf_split_cells_with_customization.png)
+![Guia Células com o botão Detalhe realçado para abrir os detalhes do subconjunto selecionado.](assets/wf_split_cells_with_customization.png)
 
 No exemplo abaixo, o formulário de entrada foi modificado: uma guia **[!UICONTROL Data]** foi adicionada para habilitar a associação de uma oferta e um nível de prioridade para cada subconjunto.
 
-![](assets/cells-activity-sample.png)
+![Detalhes do subconjunto com uma guia Dados personalizada mantendo os campos Código do segmento, Prioridade, Identificador da célula e Ofertas.](assets/cells-activity-sample.png)
 
 Para essa configuração, as seguintes informações foram adicionadas ao formulário do fluxo de trabalho, no nó **[!UICONTROL Administration > Configurations > Input forms]** do explorador do Adobe Campaign:
 

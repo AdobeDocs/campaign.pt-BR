@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 100%
+source-wordcount: '507'
+ht-degree: 84%
 ---
 # Subfluxo de trabalho{#sub-workflow}
 
@@ -30,13 +30,13 @@ A atividade **[!UICONTROL Sub-workflow]** permite acionar a execução de outro 
 
 Você pode chamar vários subfluxos de trabalho em um único fluxo de trabalho. Os Subfluxos de trabalho são executados de forma síncrona.
 
-No exemplo abaixo, um fluxo de trabalho chama um subfluxo de trabalho por meio de saltos. Para obter mais informações sobre objetos gráficos do tipo salto, consulte [esta seção](jump-start-point-and-end-point.md).
+No exemplo abaixo, um fluxo de trabalho chama um subfluxo de trabalho por meio de saltos. Para obter mais informações sobre objetos gráficos do tipo salto, consulte [Jump (ponto inicial e ponto final)](jump-start-point-and-end-point.md).
 
 1. Crie um fluxo de trabalho que será usado como um subfluxo de trabalho em outro fluxo de trabalho.
 1. Insira uma atividade **[!UICONTROL Jump (end point)]** com prioridade 1 no início do fluxo de trabalho. Se você tiver vários saltos do tipo &quot;ponto final&quot;, o Adobe Campaign usará o salto &quot;ponto final&quot; com o número mais baixo.
 1. Insira uma atividade **[!UICONTROL Jump (start point)]** com prioridade 2 no fim do fluxo de trabalho. Se você tiver vários saltos do tipo &quot;ponto inicial&quot;, o Adobe Campaign usará o salto &quot;ponto inicial&quot; com o número mais alto.
 
-   ![](assets/subworkflow_jumps.png)
+   ![Diagrama de subfluxo de trabalho que começa com Jump (ponto final) 1 e termina com Jump (ponto inicial) 2 sobre queries e uma Union.](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
@@ -49,12 +49,12 @@ No exemplo abaixo, um fluxo de trabalho chama um subfluxo de trabalho por meio d
 1. Insira uma atividade **[!UICONTROL Sub-workflow]** e abra-a.
 1. Selecione o fluxo de trabalho que deseja usar na lista suspensa **[!UICONTROL Workflow template]**.
 
-   ![](assets/subworkflow_selection.png)
+   ![Atividade do subfluxo de trabalho com a lista suspensa Modelo de fluxo de trabalho disponível, Subfluxo de trabalho (WKF55) selecionado.](assets/subworkflow_selection.png)
 
 1. Também é possível adicionar um script de configuração para alterar o fluxo de trabalho referenciado.
 1. Clique em **[!UICONTROL Ok]**. Uma transição de saída com o rótulo da atividade **[!UICONTROL Jump (start point)]** será criada automaticamente a partir do fluxo de trabalho selecionado.
 
-   ![](assets/subworkflow_outbound.png)
+   ![Fluxo de trabalho principal com Subfluxo de Trabalho de Chamada e uma transição de saída rotulada Jump (ponto inicial) 2.](assets/subworkflow_outbound.png)
 
 1. Execute o fluxo de trabalho.
 
@@ -64,7 +64,7 @@ Uma vez executado, o fluxo de trabalho chamado como um subfluxo de trabalho aind
 * A contagem de populações intermediárias não pode ser exibida.
 * Os registros do subfluxo de trabalho são exibidos no fluxo de trabalho principal.
 
-  ![](assets/subworkflow_logs.png)
+  ![Guia Auditoria do fluxo de trabalho principal mostrando mensagens de log do subfluxo de trabalho para a consulta Resultado.](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >

@@ -24,16 +24,16 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 40%
+source-wordcount: '796'
+ht-degree: 32%
 ---
 # Enviar um relatório a uma lista{#send-a-report-to-a-list}
 
 Esse caso de uso detalha como gerar um relatório mensal imediato **[!UICONTROL Tracking indicators]** em formato PDF e como enviá-lo para uma lista de destinatários.
 
-![](assets/use_case_report_intro.png)
+![Fluxo de trabalho de relatório mensal com Scheduler, código e entrega do JavaScript e email com indicators.pdf anexado.](assets/use_case_report_intro.png)
 
 As principais etapas de implementação para este caso de uso são:
 
@@ -49,7 +49,7 @@ Para criar a lista de recipients alvos, siga as etapas abaixo:
 1. Clique no botão **[!UICONTROL Create]**.
 1. Selecione **[!UICONTROL New list]** e crie uma nova lista de destinatários para a qual o relatório será enviado.
 
-Para obter mais informações sobre criação de listas, consulte [esta seção](../../v8/audiences/create-audiences.md).
+Para obter mais informações sobre como criar listas, consulte [Criar públicos-alvo de perfil no Campaign](../../v8/audiences/create-audiences.md).
 
 ## Etapa 2: criar o template do delivery {#step-2--create-the-delivery-template}
 
@@ -57,7 +57,7 @@ Para criar o template do delivery, siga as etapas abaixo:
 
 1. Navegue até o nó **[!UICONTROL Resources > Templates > Delivery templates]** do explorador do Adobe Campaign e duplique o modelo interno **[!UICONTROL Email delivery]**.
 
-   Para obter mais informações sobre criação de modelo de entrega, consulte [esta seção](../../v8/send/create-templates.md).
+   Para obter mais informações sobre como criar um modelo de entrega, consulte [Trabalhar com modelos de entrega](../../v8/send/create-templates.md).
 
 1. Insira os parâmetros do template: rótulo, target (a lista de recipients criados anteriormente), assunto e conteúdo.
 
@@ -67,17 +67,17 @@ Para criar o template do delivery, siga as etapas abaixo:
 
    * Clique no link **[!UICONTROL Attachments]** e clique na seta ao lado do botão **[!UICONTROL Add]**. Selecione **[!UICONTROL Calculated attachment...]**.
 
-     ![](assets/use_case_report_4.png)
+     ![Janela Editar arquivos anexados com o menu Adicionar aberto e o anexo Calculado selecionado.](assets/use_case_report_4.png)
 
    * Na lista suspensa **[!UICONTROL Type]**, selecione a opção mais recente: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
-     ![](assets/use_case_report_5.png)
+     ![Definição de anexo com Type definido como nome de arquivo computada durante a entrega de cada mensagem e Label Report.](assets/use_case_report_5.png)
 
      O valor inserido no campo **[!UICONTROL Label]** não aparecerá na entrega final.
 
    * Na zona de texto, digite o caminho de acesso e o nome do arquivo.
 
-     ![](assets/use_case_report_6.png)
+     ![Guia Geral de definição de anexo com o caminho do arquivo /tmp/indicators.pdf inserido na zona de texto.](assets/use_case_report_6.png)
 
      >[!CAUTION]
      >
@@ -85,13 +85,13 @@ Para criar o template do delivery, siga as etapas abaixo:
 
    * Selecione a guia **[!UICONTROL Advanced]** e marque **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Na zona de texto, digite o nome do anexo no delivery final.
 
-     ![](assets/use_case_report_6b.png)
+     ![Guia Avançado de definição de anexo com Script do nome do arquivo verificado e latest-report.pdf inserido.](assets/use_case_report_6b.png)
 
 ## Etapa 3: criar o fluxo de trabalho {#step-3--creating-the-workflow}
 
 Crie o fluxo de trabalho a seguir para este caso de uso.
 
-![](assets/use_case_report_8.png)
+![Indicadores de relatórios mensais do fluxo de trabalho: Agendador, código JavaScript e Entrega.](assets/use_case_report_8.png)
 
 Ele usa três atividades:
 
@@ -104,17 +104,17 @@ Para criar esse workflow, siga as etapas abaixo:
 1. Navegue até o nó **[!UICONTROL Administration > Production > Technical workflows]** do Campaign Explorer e crie uma nova pasta para armazenar seus fluxos de trabalho.
 1. Crie um novo workflow.
 
-   ![](assets/use_case_report_7.png)
+   ![Caixa de diálogo Novo fluxo de trabalho em Administração > Produção > Fluxos de trabalho técnicos com um campo Rótulo e botão Salvar.](assets/use_case_report_7.png)
 
 1. Comece adicionando uma atividade do tipo **[!UICONTROL Scheduler]** e a configure para que o fluxo de trabalho seja executado na primeira segunda-feira do mês.
 
-   ![](assets/use_case_report_9.png)
+   ![A atividade do Agendador está mostrando o Acionamento às 12h00 da manhã, na primeira segunda-feira de cada mês.](assets/use_case_report_9.png):00:
 
    Para obter mais informações sobre a configuração do scheduler, consulte [Scheduler](scheduler.md).
 
 1. Em seguida, adicione uma atividade tipo **[!UICONTROL JavaScript code]**.
 
-   ![](assets/use_case_report_10.png)
+   ![Atividade de código JavaScript com o script definindo reportName, path, exportFormat e a chamada xtk.report.export.](assets/use_case_report_10.png)
 
    Insira o seguinte código na zona de edição:
 
@@ -137,14 +137,14 @@ Para criar esse workflow, siga as etapas abaixo:
 
      >[!CAUTION]
      >
-     >O arquivo deve ser salvo no servidor. Você deve inserir o mesmo caminho e o mesmo nome da guia **[!UICONTROL General]** da janela de edição do anexo calculado, conforme detalhado [aqui](#step-2--create-the-delivery-template)).
+     >O arquivo deve ser salvo no servidor. Insira o mesmo caminho e o mesmo nome da guia **[!UICONTROL General]** da janela de edição do anexo calculado, conforme detalhado [Etapa 2: criar o modelo de entrega](#step-2--create-the-delivery-template)).
 
    * **var exportFormat**: insira o formato de exportação do arquivo (&quot;PDF&quot;).
    * **var _ctx** (contexto): neste caso, estamos usando o relatório **[!UICONTROL Tracking indicators]** em seu contexto global.
 
 1. Conclua adicionando uma atividade **[!UICONTROL Delivery]** com as seguintes opções:
 
-   ![](assets/use_case_report_11.png)
+   ![Atividade de entrega: novo do modelo, Preparar e iniciar, transição de saída e erros de Processo desmarcados.](assets/use_case_report_11.png)
 
    * **[!UICONTROL Delivery]**: selecione **[!UICONTROL New, created from a template]** e selecione o modelo de entrega criado anteriormente.
    * Para os campos **[!UICONTROL Recipients]** e **[!UICONTROL Content]**, selecione **[!UICONTROL Specified in the delivery]**.

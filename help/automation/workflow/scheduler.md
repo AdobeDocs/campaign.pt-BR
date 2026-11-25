@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 42%
+source-wordcount: '473'
+ht-degree: 35%
 ---
 # Scheduler {#scheduler}
 
@@ -50,22 +50,22 @@ A atividade **[!UICONTROL Scheduler]** deve ser considerada como um início agen
 
 O scheduler define o agendamento de ativação da transição. Para configurá-lo, clique duas vezes no objeto gráfico e clique em **[!UICONTROL Change...]**
 
-![](assets/s_user_segmentation_scheduler.png)
+![Caixa de diálogo da atividade Scheduler com o botão Alterar usado para definir a frequência de execução](assets/s_user_segmentation_scheduler.png)
 
 Um assistente permite definir a frequência e o período de validade da atividade. As etapas de configuração são as seguintes:
 
 1. Selecione a frequência de ativação e clique em **[!UICONTROL Next]**.
 
-   ![](assets/s_user_segmentation_scheduler2.png)
+   ![Assistente para edição de agendamento, Selecione o tipo de frequência: várias vezes por dia, diariamente, semanalmente, mensalmente, uma vez](assets/s_user_segmentation_scheduler2.png)
 
 1. Forneça os dias e horas de ativação. Os parâmetros desta etapa dependem da frequência selecionada na etapa anterior. Se optar iniciar a atividade várias vezes por dia, as opções de configuração serão as seguintes:
 
-   ![](assets/s_user_segmentation_scheduler3.png)
+   ![Agendar assistente de edição, Muitas vezes ao dia: Seleção de hora nas horas selecionadas e Seleção de dia com dias da semana](assets/s_user_segmentation_scheduler3.png)
 
 1. Defina o período de validade do agendamento ou especifique quantas vezes será executado.
 
-   ![](assets/s_user_segmentation_scheduler4.png)
+   ![Assistente de edição de agendamento, Período de validade: validade permanente, datas Válido de e Até ou número máximo de iterações](assets/s_user_segmentation_scheduler4.png)
 
 1. Verifique a configuração e clique em **[!UICONTROL Finish]** para salvar.
 
-   ![](assets/s_user_segmentation_scheduler5.png)
+   ![Assistente para edição de agendamento, Resumo: descrição do agendamento e lista dos próximos horários de inicialização, com o botão Concluir](assets/s_user_segmentation_scheduler5.png)

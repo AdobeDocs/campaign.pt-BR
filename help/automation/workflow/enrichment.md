@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 100%
+source-wordcount: '1729'
+ht-degree: 75%
 ---
 # Enriquecimento{#enrichment}
 
@@ -36,24 +36,24 @@ ht-degree: 100%
 
 A atividade **[!UICONTROL Enrichment]** permite adicionar informações a uma lista de perfis e a vincula a uma tabela existente (criar uma nova associação). Os critérios de reconciliação com perfis no banco de dados também podem ser definidos.
 
-![](assets/enrichment_design.png)
+![Diagrama de fluxo de trabalho com atividades de Enriquecimento, como 3 boletins informativos e Serviço de rótulo, alimentando uma atividade Top 1000.](assets/enrichment_design.png)
 
 ## Definições {#definitions}
 
 Para utilizar a atividade de enriquecimento, é preciso estar familiarizado com as várias opções disponíveis ao adicionar dados.
 
-![](assets/enrichment_edit.png)
+![Atividade de Enriquecimento Adicionar link de dados abrindo o Assistente de dados adicionais com os cinco tipos de dados a serem adicionados.](assets/enrichment_edit.png)
 
 A opção **[!UICONTROL Data linked to the filtering dimension]** dá acesso a:
 
 * Dados da dimensão do filtro: acesso aos dados da tabela de trabalho.
 * Dados vinculados à dimensão do filtro: acesso aos dados vinculados à tabela de trabalho.
 
-![](assets/wf_enrich_linkoptions.png)
+![Selecione campos para adicionar a página com Dados da dimensão de filtro e Dados vinculados às opções de dimensão de filtro.](assets/wf_enrich_linkoptions.png)
 
 A opção **[!UICONTROL A link]** permite criar uma ligação em qualquer tabela do banco de dados.
 
-![](assets/wf_enrich_linkstype.png)
+![Página de definição de link listando os quatro tipos de link, com a opção Definir uma coleção selecionada e a seção Destino do link.](assets/wf_enrich_linkstype.png)
 
 Existem quatro tipos de vinculações:
 
@@ -83,27 +83,27 @@ O campo **[!UICONTROL Primary set]** permite selecionar a transição de entrada
 
 Clique no link **[!UICONTROL Add data]** e selecione o tipo de dados a serem adicionados. A lista de tipos de dados oferecidos depende dos módulos e das opções instalados na sua plataforma. Em uma configuração mínima, é sempre possível adicionar dados vinculados à dimensão do filtro e um link.
 
-![](assets/enrichment_edit.png)
+![Atividade de Enriquecimento Adicionar link de dados abrindo o Assistente de dados adicionais com os cinco tipos de dados a serem adicionados.](assets/enrichment_edit.png)
 
 No exemplo abaixo, a transição de saída será enriquecida com informações sobre a idade dos perfis de destino.
 
-![](assets/enrichment_add_data.png)
+![Dados para adicionar a página com o campo Idade selecionado na Targeting dimension e listado em Output columns.](assets/enrichment_add_data.png)
 
 Clique com o botão direito na transição de entrada da atividade de enriquecimento para visualizar os dados antes da fase de enriquecimento.
 
-![](assets/enrichment_content_before.png)
+![Menu de contexto na transição após Union 2 com a opção Exibir o destino realçada.](assets/enrichment_content_before.png)
 
 A tabela de trabalho contém os seguintes dados e o esquema associado:
 
-![](assets/enrichment_content_before_a.png)
+![Visualize a população com os dados da tabela de trabalho antes do enriquecimento e seu esquema com chave primária e dimensão de Direcionamento.](assets/enrichment_content_before_a.png)
 
 Repita esta operação na saída da fase de enriquecimento.
 
-![](assets/enrichment_content_after.png)
+![Menu de contexto na transição após a atividade Enrichment 3 com a opção Display the target realçada.](assets/enrichment_content_after.png)
 
 Veja que os dados relacionados ao perfil idades foram adicionados:
 
-![](assets/enrichment_content_after_a.png)
+![Visualize a população com a coluna Age adicionada e o esquema enriquecido com Age, Primary key e Targeting dimension.](assets/enrichment_content_after_a.png)
 
 O esquema correspondente também foi enriquecido.
 
@@ -111,11 +111,11 @@ O esquema correspondente também foi enriquecido.
 
 Desmarque a opção **[!UICONTROL Keep all additional data from the main set]** se não quiser manter os dados adicionais definidos anteriormente. Neste caso, somente as colunas adicionais que foram selecionadas na atividade de enriquecimento serão adicionadas na tabela de trabalho de saída. As informações adicionais adicionadas às atividades transmitidas não serão salvas.
 
-![](assets/enrichment_edit_without_additional.png)
+![Guia Enriquecimento com Manter todos os dados adicionais do conjunto principal limpos e somente a Idade (Targeting dimension) listada.](assets/enrichment_edit_without_additional.png)
 
 Os dados e o esquema na saída do estágio de enriquecimento serão como a seguir:
 
-![](assets/enrichment_content_after_without_additional.png)
+![Visualize a janela de população com a coluna Idade e seu esquema após o enriquecimento sem os dados adicionais do conjunto principal.](assets/enrichment_content_after_without_additional.png)
 
 ## Criação de um link {#creating-a-link}
 
@@ -140,19 +140,19 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Edite a atividade de enriquecimento e clique no link **Add data...** para criar uma ligação com a tabela País.
 
-   ![](assets/enrichment_edit_after_file_box.png)
+   ![Fluxo de trabalho com File collector, Data loading (file) e Enrichment, com o link Add data da atividade Enrichment.](assets/enrichment_edit_after_file_box.png)
 
 1. Selecione a opção **[!UICONTROL Link definition]** e clique no botão **[!UICONTROL Next]**. Especifique o tipo de link a ser criado. Neste exemplo, devemos reconciliar o país do destinatário do arquivo com um país na lista de países disponíveis na tabela dedicada do banco de dados. Escolha a opção **[!UICONTROL Define a link by searching for a reference among several options]**. Selecione a tabela do país no campo **[!UICONTROL Target schema]**.
 
-   ![](assets/enrichment_add_a_link_select_option4.png)
+   ![Definição de link com Definir um link procurando uma referência entre várias opções e o destino País (nms).](assets/enrichment_add_a_link_select_option4.png)
 
 1. Finalmente, selecione os campos que permitirão vincular os valores do arquivo de origem àqueles no banco de dados.
 
-   ![](assets/enrichment_add_a_link_select_join.png)
+   ![Condições de associação de definição de link que mapeiam o País de origem para o campo de rótulo em inglês do esquema País.](assets/enrichment_add_a_link_select_join.png)
 
 Na saída desta atividade de enriquecimento, o esquema temporário conterá o link para a tabela de países:
 
-![](assets/enrichment_external_link_schema.png)
+![Guia Esquema da janela de resultados mostrando a estrutura gerada com a chave estrangeira e o link de País e seus campos.](assets/enrichment_external_link_schema.png)
 
 ## Reconciliação dos dados {#data-reconciliation}
 
@@ -162,7 +162,7 @@ Selecione a opção **[!UICONTROL Identify the targeting document based on work 
 
 É possível usar um ou mais critérios de reconciliação.
 
-![](assets/enrichment_reconciliations_tab_01.png)
+![Guia Reconciliação com Identificar o documento a partir dos dados de trabalho e das expressões de origem e destino.](assets/enrichment_reconciliations_tab_01.png)
 
 Se várias condições de associação forem especificadas, TODAS elas deverão ser verificadas para que os dados possam ser vinculados.
 
@@ -174,7 +174,7 @@ Para obter mais informações sobre a atividade de enriquecimento, consulte esta
 
 Por exemplo, é possível enriquecer os dados de uma consulta de destinatário antes de uma entrega.
 
-![](assets/int_enrichment_offer1.png)
+![Fluxo de trabalho com uma atividade Query, uma atividade Enrichment e uma atividade Direct mail delivery conectada em sequência.](assets/int_enrichment_offer1.png)
 
 Após configurar sua consulta (consulte esta [seção](query.md)):
 
@@ -182,18 +182,18 @@ Após configurar sua consulta (consulte esta [seção](query.md)):
 1. Na guia **[!UICONTROL Enrichment]**, selecione **[!UICONTROL Add data]**.
 1. Selecione **[!UICONTROL An offer proposition]** nos tipos de dados para adicionar.
 
-   ![](assets/int_enrichment_offer2.png)
+   ![Selecione o tipo de dados para adicionar a página com uma apresentação de oferta selecionada.](assets/int_enrichment_offer2.png)
 
 1. Especifique um identificador e um rótulo para a proposta que será adicionada.
 1. Especifique a seleção da oferta. Há duas opções possíveis para isso:
 
    * **[!UICONTROL Search for the best offer in a category]**: marque esta opção e especifique os parâmetros de chamada do mecanismo de oferta (espaços de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros. Recomendamos completar o campo **[!UICONTROL Category]** ou o campo **[!UICONTROL Theme]**, em vez de ambos ao mesmo tempo.
 
-     ![](assets/int_enrichment_offer3.png)
+     ![Página de apresentação da oferta com campos de identificador, rótulo, Espaço, Categoria da oferta e Data de contato para a melhor pesquisa de oferta.](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A predefined offer]**: marque esta opção e especifique um espaço de ofertas, uma oferta específica e uma data de contato para configurar diretamente a oferta que deseja adicionar, sem chamar o mecanismo de oferta.
 
-     ![](assets/int_enrichment_offer4.png)
+     ![Página de apresentação da oferta com identificador, rótulo, Espaço, uma Oferta específica e data de contato para uma oferta predefinida.](assets/int_enrichment_offer4.png)
 
 1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
 
@@ -211,11 +211,11 @@ Para fazer isso:
 1. Na janela onde você escolhe o tipo de dados a serem adicionados, selecione **[!UICONTROL A link]**.
 1. Selecione o tipo de link que deseja estabelecer, assim como seu target. Nesse caso, o target é o esquema de oferta.
 
-   ![](assets/int_enrichment_link1.png)
+   ![Página de definição de link com um link cujo destino está sempre disponível e Ofertas de marketing (nms) como esquema de destino.](assets/int_enrichment_link1.png)
 
 1. Especifique a ligação entre os dados da tabela de entrada na atividade de enriquecimento (aqui a tabela de destinatários) e a tabela de ofertas. Por exemplo, é possível vincular um código de oferta a um destinatário.
 
-   ![](assets/int_enrichment_link2.png)
+   ![Condições de associação de definição de link que vinculam a cryptedId de origem ao código de oferta, com a oferta do Identificador.](assets/int_enrichment_link2.png)
 
 1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
 
@@ -234,11 +234,11 @@ No entanto, é possível armazenar essas informações da seguinte maneira:
 1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma consulta e antes de uma atividade de entrega.
 1. Na janela principal da atividade, selecione **[!UICONTROL Edit additional data...]**.
 
-   ![](assets/ita_enrichment_rankweight_1.png)
+   ![Guia Enrichment listando as colunas de apresentação de oferta, com o link Edit additional data realçado.](assets/ita_enrichment_rankweight_1.png)
 
 1. Adicione as colunas **[!UICONTROL @rank]** para a classificação e **[!UICONTROL @weight]** para o peso da oferta.
 
-   ![](assets/ita_enrichment_rankweight_2.png)
+   ![Selecione a janela de colunas adicional com colunas de Peso e Classificação adicionadas à proposta usando Adicionar um subitem.](assets/ita_enrichment_rankweight_2.png)
 
 1. Confirme sua adição e salve seu fluxo de trabalho.
 

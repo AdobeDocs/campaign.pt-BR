@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 100%
+source-wordcount: '206'
+ht-degree: 71%
 ---
 # Filtrar destinatários duplicados {#filtering-duplicated-recipients}
 
@@ -37,19 +37,19 @@ Para criar este exemplo, aplique as seguintes etapas:
 1. Arraste e solte uma atividade **[!UICONTROL Query]** em um fluxo de trabalho e abra a atividade.
 1. Clique em **[!UICONTROL Edit query]** e defina as dimensões do filtro e do direcionamento para **[!UICONTROL Recipients]**.
 
-   ![](assets/query_recipients_1.png)
+   ![Etapa de dimensão de filtragem e direcionamento da atividade Query com Destinatários selecionados. Condições de filtragem destacadas.](assets/query_recipients_1.png)
 
 1. Defina a seguinte condição de filtro para o destinatário do target que existe no log de entrega. Escolha **Recipient delivery log (broadlog)** na coluna **Expression**, escolha **exist such as** na coluna **Operator**.
 
-   ![](assets/query_recipients_2.png)
+   ![Etapa de filtro com a condição Logs de entrega do destinatário (broadLog) e o operador existe, como.](assets/query_recipients_2.png)
 
 1. Defina a condição de filtro a seguir para direcionar sua entrega. Escolha **[!UICONTROL Internal name]** na coluna Expression e **[!UICONTROL equal to]** na coluna Operator.
 1. Na coluna Valor, adicione o nome interno da entrega desejada.
 
-   ![](assets/query_recipients_3.png)
+   ![Condição de filtro no nome interno da entrega, igual ao valor summer_delivery_sales, em existe, como.](assets/query_recipients_3.png)
 
 1. Com um operador **[!UICONTROL AND]**, repita as mesmas operações para selecionar outras entregas.
 
-   ![](assets/query_recipients_4.png)
+   ![Existem duas condições unidas por And, direcionadas para summer_delivery_sales e summer_delivery_new_collection.](assets/query_recipients_4.png)
 
 A transição de saída contém os destinatários duplicados alcançados nas entregas.

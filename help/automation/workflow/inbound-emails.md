@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 100%
+source-wordcount: '382'
+ht-degree: 89%
 ---
 # Emails de entrada{#inbound-emails}
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 A atividade de **emails de entrada** permite baixar e processar mensagens de email de um servidor de email POP3.
 
-![](assets/email_rec_edit_1.png)
+![Caixa de diálogo de atividade de Emails de Entrada com o servidor POP3, Conta Externa e Campos de Script](assets/email_rec_edit_1.png)
 
 A primeira guia da atividade de **Emails de Entrada** permite inserir os parâmetros do servidor POP3 e digitar o script a ser executado no recebimento de cada mensagem. A segunda guia permite atribuir uma agenda à atividade e a terceira guia define as condições de expiração da atividade.
 
@@ -46,7 +46,7 @@ A primeira guia da atividade de **Emails de Entrada** permite inserir os parâme
 
      Se essa opção não estiver selecionada, especifique os seguintes parâmetros:
 
-     ![](assets/email_rec_edit_1b.png)
+     ![Seção do servidor POP3 com os campos Servidor POP3, Conta POP3, Senha e Porta](assets/email_rec_edit_1b.png)
 
      * **[!UICONTROL POP3 server]**
 
@@ -91,6 +91,6 @@ A primeira guia da atividade de **Emails de Entrada** permite inserir os parâme
 
    Você pode definir atrasos de expiração por meio da guia **[!UICONTROL Expiration]**.
 
-   ![](assets/email_rec_edit_3.png)
+   ![Guia Expiração de Emails de Entrada com a lista Tipo de expiração mostrando as opções de atraso e expiração](assets/email_rec_edit_3.png)
 
    A configuração é igual à atividade de agendamento. Consulte [Expirações](define-approvals.md).

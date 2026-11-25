@@ -29,10 +29,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 93%
 ---
 # Gerenciar fusos horários{#managing-time-zones}
 
@@ -46,7 +46,7 @@ Em um fluxo de trabalho, é possível adaptar os agendamentos de execução de a
 
 Para todas as tarefas agendadas, ou seja, todas as atividades com opções de agendamento, é possível selecionar o fuso horário a ser aplicado. O fuso horário é selecionado por meio da guia **[!UICONTROL Advanced]** da atividade relacionada:
 
-![](assets/wf-timezone-in-a-box.png)
+![Guia Avançado do Agendador com o menu suspenso Fuso horário aberto, listando os fusos horários Padrão, Servidor, Operador e banco de dados.](assets/wf-timezone-in-a-box.png)
 
 Os valores possíveis são:
 

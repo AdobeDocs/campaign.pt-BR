@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 98%
+source-wordcount: '1626'
+ht-degree: 78%
 ---
 # Amostras de marketing distribuído{#distributed-marketing-samples}
 
@@ -38,7 +38,7 @@ A interface web tipo **By form** envolve o uso de um **aplicativo web**. Depende
 
 Ao criar o modelo de campanha, clique no ícone **[!UICONTROL Zoom]** dentro da opção **[!UICONTROL Web interface]** do link **[!UICONTROL Advanced campaign parameters...]** para acessar os detalhes do aplicativo web.
 
-![](assets/mkg_dist_local_op_form1.png)
+![Configurações avançadas, guia Marketing distribuído: campo de interface da Web com o ícone Editar link realçado.](assets/mkg_dist_local_op_form1.png)
 
 >[!NOTE]
 >
@@ -46,21 +46,21 @@ Ao criar o modelo de campanha, clique no ícone **[!UICONTROL Zoom]** dentro da 
 
 Na guia **[!UICONTROL Edit]**, selecione a atividade **Campaign order** e a abra para acessar o conteúdo.
 
-![](assets/mkg_dist_web_app1.png)
+![Fluxo de trabalho de aplicativo Web com a atividade de página de ordem de campanha aberta para mostrar seu conteúdo.](assets/mkg_dist_web_app1.png)
 
 Neste exemplo, a atividade da **Campaign order** inclui:
 
 * campos a serem inseridos pela entidade local durante o pedido,
 
-  ![](assets/mkg_dist_web_app2.png)
+  ![Campos de página de pedido de campanha (data de contato, canal preferido, segmento de idade, imagem, mensagem) e seu formulário web.](assets/mkg_dist_web_app2.png)
 
 * links que permitirão à entidade local avaliar a campanha (por exemplo, o target, o orçamento, o conteúdo, etc.),
 
-  ![](assets/mkg_dist_web_app3.png)
+  ![Avalie o direcionamento, o orçamento e os links de conteúdo na página e no formulário Web.](assets/mkg_dist_web_app3.png)
 
 * scripts que permitem calcular e exibir o resultado destas avaliações.
 
-  ![](assets/mkg_dist_web_app4.png)
+  ![Árvore de páginas com os itens de resultado de Direcionamento, resultado de Orçamento e resultado de Conteúdo realçados.](assets/mkg_dist_web_app4.png)
 
 Neste exemplo, as seguintes APIs são usadas:
 
@@ -113,15 +113,15 @@ As etapas são as seguintes:
 
 1. As entidades locais que foram escolhidas para participar da campanha receberão uma notificação por e-mail.
 
-   ![](assets/mkg_dist_use_case_target_valid8.png)
+   ![Email de aprovação do público-alvo com o link Acessar sua lista de contatos e aprovar o direcionamento.](assets/mkg_dist_use_case_target_valid8.png)
 
 1. Ao clicar no link **[!UICONTROL Access your contact list and approve targeting]**, a entidade local recebe acesso (via navegador da web) à lista de clientes selecionados para a campanha.
 
-   ![](assets/mkg_dist_use_case_target_valid9.png)
+   ![Página da Web de aprovação de público alvo listando os contatos direcionados com caixas de seleção e o botão Aprovar direcionamento.](assets/mkg_dist_use_case_target_valid9.png)
 
 1. A entidade local desmarca determinados contatos da lista porque já foram contatados para uma oferta semelhante desde o início do ano.
 
-   ![](assets/mkg_dist_use_case_target_valid10.png)
+   ![Página de aprovação do Target com três contatos desmarcados e um comentário explicando as exclusões.](assets/mkg_dist_use_case_target_valid10.png)
 
 Depois que as verificações foram aprovadas, a campanha poderá iniciar automaticamente.
 
@@ -131,7 +131,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
 
 1. Para configurar uma campanha colaborativa (por aprovação de target), primeiro você deve criar um **[!UICONTROL Data distribution activity]**. Clique no ícone **[!UICONTROL New]** na pasta **[!UICONTROL Resources > Campaign management > Data distribution]** do explorador do Campaign.
 
-   ![](assets/mkg_dist_use_case_target_valid3.png)
+   ![Guia Geral de distribuição de dados: targeting dimension, campo de distribuição Origin, tipo de atribuição Entidade local.](assets/mkg_dist_use_case_target_valid3.png)
 
 1. Na guia **[!UICONTROL General]**, você deve especificar:
 
@@ -147,7 +147,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
    * a entidade local **[!UICONTROL label]**.
    * o **[!UICONTROL Size]** (fixo ou como uma porcentagem). O **valor padrão 0** envolve selecionar todos os destinatários vinculados à entidade local.
 
-   ![](assets/mkg_dist_use_case_target_valid4.png)
+   ![Guia Detalhamento de distribuição de dados listando os valores de distribuição Leste, Norte, Sul e Oeste e entidades locais.](assets/mkg_dist_use_case_target_valid4.png)
 
 1. Salve a nova distribuição de dados.
 
@@ -156,7 +156,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
 1. Na pasta **[!UICONTROL Campaign management > Campaign]** do explorador do Campaign, crie um novo **[!UICONTROL collaborative campaign (by target approval)]**.
 1. Na guia **[!UICONTROL Targeting and workflows]**, crie um fluxo de trabalho para sua campanha. Deve conter uma atividade **Split** na qual o **[!UICONTROL Record count limitation]** é definido pela atividade **[!UICONTROL Data distribution]**.
 
-   ![](assets/mkg_dist_use_case_target_valid5.png)
+   ![Limitação da contagem de registros da atividade Split definida como By data distribution, usando Local entities distribution.](assets/mkg_dist_use_case_target_valid5.png)
 
 1. Adicione uma ação **[!UICONTROL Local approval]** onde você pode especificar:
 
@@ -164,7 +164,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
    * o lembrete de aprovação,
    * o processamento esperado da campanha.
 
-   ![](assets/mkg_dist_use_case_target_valid7.png)
+   ![Atividade de aprovação local: notificação de aprovação de público alvo, tipo de aprovação, modelo e descrição para entidades locais.](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Salve seu registro.
 
@@ -177,15 +177,15 @@ Agora você pode adicionar um **pacote de campanha** na guia **[!UICONTROL Campa
    * no modo **Manual** , as entidades locais participam da campanha se aceitarem o convite da entidade central. Eles podem excluir os contatos pré-selecionados se desejarem e a aprovação do gerente é necessária para confirmar a participação na campanha.
    * no modo **Automatic** , as entidades locais devem participar da campanha, a menos que ela cancelem a inscrição. Elas podem excluir contatos sem precisar de aprovação.
 
-   ![](assets/mkg_dist_use_case_target_valid.png)
+   ![Caixa de diálogo de criação de pacote de campanha com a campanha de referência e o campo Modo de aprovação definidos como Manual.](assets/mkg_dist_use_case_target_valid.png)
 
 1. Na guia **[!UICONTROL Description]**, é possível adicionar uma descrição para a campanha, bem como quaisquer documentos a serem enviados às entidades locais.
 
-   ![](assets/mkg_dist_use_case_target_valid1.png)
+   ![Guia Descrição do pacote de campanha com a descrição do pacote e a lista Documentos anexados.](assets/mkg_dist_use_case_target_valid1.png)
 
 1. Aprove seu pacote de campanha e inicie o fluxo de trabalho para publicar o pacote e disponibilizá-lo a todas as entidades locais na lista de pacotes.
 
-   ![](assets/mkg_dist_use_case_target_valid2.png)
+   ![Painel de pacotes com o botão Aprovar o pacote, mostrando o status Sendo editado.](assets/mkg_dist_use_case_target_valid2.png)
 
 ## Criar uma campanha colaborativa (por formulário) {#creating-a-collaborative-campaign--by-form-}
 
@@ -221,7 +221,7 @@ As etapas são as seguintes:
 
 1. As entidades locais selecionadas para participar da campanha recebem uma notificação por e-mail informando sobre suas participações na campanha.
 
-   ![](assets/mkg_dist_use_case_form_7.png)
+   ![Registro do email da campanha com o link Registrar para a campanha para entidades locais.](assets/mkg_dist_use_case_form_7.png)
 
 1. As entidades locais preenchem o formulário personalizado e, em seguida:
 
@@ -229,35 +229,35 @@ As etapas são as seguintes:
    * pré-visualizam o conteúdo da entrega,
    * aprovam sua participação.
 
-     ![](assets/mkg_dist_use_case_form_8.png)
+     ![Formulário web de pedido de campanha com links de avaliação, uma visualização de imagem e o botão Validar.](assets/mkg_dist_use_case_form_8.png)
 
 1. O operador encarregado de validar pedidos aprova a participação.
 
-   ![](assets/mkg_dist_use_case_form_9.png)
+   ![Página de aprovação de pedido de campanha com detalhes do pedido, comentário do pedido e o botão Validar.](assets/mkg_dist_use_case_form_9.png)
 
 ### Lado da entidade central {#central-entity-side-1}
 
 1. Para implementar uma campanha colaborativa (por formulário), você deve criar uma campanha usando o modelo **Collaborative campaign (by form)**.
 
-   ![](assets/mkg_dist_use_case_form_1.png)
+   ![Nova caixa de diálogo de campanha de marketing usando o modelo Campanha colaborativa (por formulário).](assets/mkg_dist_use_case_form_1.png)
 
 1. Na guia **[!UICONTROL Edit]** da campanha, clique no link **[!UICONTROL Advanced campaign parameters...]** para configurá-la como uma campanha local. Consulte [Criar uma campanha local (por formulário)](#creating-a-local-campaign--by-form-).
 
-   ![](assets/mkg_dist_use_case_form_2.png)
+   ![Configurações avançadas, guia Marketing distribuído: nível colaborativo, Configurável por formulário, valores padrão.](assets/mkg_dist_use_case_form_2.png)
 
 1. Configure o fluxo de trabalho da campanha e o formulário da Web. Consulte [Criar uma campanha local (por formulário)](#creating-a-local-campaign--by-form-).
 1. Crie seu pacote de campanha especificando o cronograma de execução e as entidades locais envolvidas.
 
-   ![](assets/mkg_dist_use_case_form_3.png)
+   ![Caixa de diálogo do pacote de campanha com campanha de referência, cronograma de execução, prazos finais e lista de entidades locais.](assets/mkg_dist_use_case_form_3.png)
 
 1. Finalize a configuração do pacote selecionando o modo de aprovação na guia **[!UICONTROL Edit]**.
 
-   ![](assets/mkg_dist_use_case_form_4.png)
+   ![Oferta suspensa de modo de aprovação Manual e Automática.](assets/mkg_dist_use_case_form_4.png)
 
 1. Na guia **[!UICONTROL Description]**, é possível inserir uma descrição do pacote de campanha, uma mensagem de notificação a ser enviada às entidades locais quando o pacote é publicado e anexar quaisquer documentos informativos ao seu pacote de campanha.
 
-   ![](assets/mkg_dist_use_case_form_5.png)
+   ![Guia Descrição do Pacote com a opção de email de notificação, mensagem para a entidade local e documentos anexados.](assets/mkg_dist_use_case_form_5.png)
 
 1. Aprove o pacote para publicá-lo.
 
-   ![](assets/mkg_dist_use_case_form_6.png)
+   ![Aprove o botão de pacote abrindo a caixa de diálogo Ação no pacote com as opções Aceitar e Rejeitar.](assets/mkg_dist_use_case_form_6.png)

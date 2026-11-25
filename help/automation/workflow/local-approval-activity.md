@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 98%
+source-wordcount: '1640'
+ht-degree: 76%
 ---
 # Usar a atividade de aprovação local{#using-the-local-approval-activity}
 
@@ -38,13 +38,13 @@ A atividade **[!UICONTROL Local approval]** integrada em um fluxo de trabalho de
 
 Para configurar esse caso de uso, criamos o seguinte fluxo de trabalho de segmentação:
 
-![](assets/local_validation_workflow.png)
+![Fluxo de trabalho de direcionamento: duas consultas, interseção, divisão, notificação de aprovação, entrega, espera, notificação de feedback, fim](assets/local_validation_workflow.png)
 
 As principais etapas do ciclo de aprovação de conteúdo são:
 
 1. A população resultante do direcionamento pode ser limitada graças a uma atividade tipo **[!UICONTROL Split]** que usa um template de distribuição de dados.
 
-   ![](assets/local_validation_intro_1.png)
+   ![Lista de distribuição de dados a 10% por domínio, limitando a saída dividida de 3.332 para 333 destinatários no fluxo de trabalho](assets/local_validation_intro_1.png)
 
 1. A atividade **[!UICONTROL Local approval]** enviará um email de notificação para cada supervisor local. A atividade permanece pendente até que cada supervisor local aprove os destinatários atribuídos a eles.
 
@@ -54,7 +54,7 @@ As principais etapas do ciclo de aprovação de conteúdo são:
    >
    >Ao atingir o prazo final, os destinatários que não tiverem sido aprovados serão excluídos do direcionamento.
 
-   ![](assets/local_validation_intro_6.png)
+   ![Fluxo de trabalho com a atividade Delivery realçada após a notificação de validação e antes da atividade Wait](assets/local_validation_intro_6.png)
 
 1. Alguns dias depois, a segunda atividade do tipo **[!UICONTROL Local approval]** envia um email de notificação para cada supervisor local com um resumo das ações executadas pelos contatos (cliques, aberturas etc.).
 
@@ -66,18 +66,18 @@ Para obter mais informações sobre como criar um modelo de distribuição de da
 
 1. Para criar o modelo de distribuição de dados, vá para o nó **[!UICONTROL Resources > Campaign management > Data distribution]** e clique em **[!UICONTROL New]**.
 
-   ![](assets/local_validation_data_distribution_1.png)
+   ![Árvore do Explorer em Recursos > Gerenciamento de campanha > Distribuição de dados com o botão Novo realçado](assets/local_validation_data_distribution_1.png)
 
 1. Selecione a guia **[!UICONTROL General]**.
 
-   ![](assets/local_validation_data_distribution_2.png)
+   ![Guia Geral de distribuição de dados com Rótulo, Dimensão de direcionamento, Campo e tipo de distribuição e Armazenamento de aprovação](assets/local_validation_data_distribution_2.png)
 
 1. Insira o **[!UICONTROL Label]** e o **[!UICONTROL Distribution context]**. Neste exemplo, selecionamos o esquema de direcionamento **[!UICONTROL Recipient]** e o campo **[!UICONTROL Email domain]** como um campo de distribuição. A lista de destinatários será dividida por domínio.
 1. No campo **[!UICONTROL Distribution type]**, selecione como o valor de limitação de target será expresso na guia **[!UICONTROL Distribution]**. Aqui, escolhemos **[!UICONTROL Percentage]**.
 1. No campo **[!UICONTROL Approval storage]**, insira o esquema de armazenamento das aprovações que correspondem ao esquema de direcionamento em uso. Aqui vamos usar o esquema de armazenamento padrão: **[!UICONTROL Local approval of recipients]**.
 1. Depois clique no link **[!UICONTROL Advanced parameters]**.
 
-   ![](assets/local_validation_data_distribution_3.png)
+   ![Parâmetros avançados: Aprove as mensagens direcionadas, Rótulo de entrega, Campo de agrupamento e Editar mensagens direcionadas](assets/local_validation_data_distribution_3.png)
 
 1. Mantenha a opção **[!UICONTROL Approve the targeted messages]** selecionada de forma que todos os destinatários sejam pré-selecionados da lista de destinatários a serem aprovados.
 1. No campo **[!UICONTROL Delivery label]**, deixamos a expressão padrão (cálculo da string da entrega). O rótulo padrão da entrega será usado na notificação de feedback.
@@ -85,7 +85,7 @@ Para obter mais informações sobre como criar um modelo de distribuição de da
 1. Na seção **[!UICONTROL Edit targeted messages]**, selecionamos o aplicativo web **[!UICONTROL Edit recipients]** e o parâmetro **[!UICONTROL recipientId]**. Nas notificações de aprovação e de feedback, os destinatários serão clicáveis e apontarão para a URL da aplicação Web. O parâmetro de URL adicional será **[!UICONTROL recipientId]**.
 1. Depois, clique na guia **[!UICONTROL Distribution]**. Para cada domínio, insira os seguintes campos:
 
-   ![](assets/local_validation_data_distribution_4.png)
+   ![Guia de detalhamento listando cada domínio com sua porcentagem, rótulo e o grupo ou operador atribuído a ele](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Value]**: insira o valor do nome de domínio.
    * **[!UICONTROL Percentage / Fixed]**: para cada domínio, insira o máximo. número de destinatários para os quais você deseja enviar a entrega. Neste exemplo, queremos limitar a entrega a 10% por domínio.
@@ -100,7 +100,7 @@ Para obter mais informações sobre como criar um modelo de distribuição de da
 
 Para configurar esse caso de uso, criamos o seguinte fluxo de trabalho de segmentação:
 
-![](assets/local_validation_workflow.png)
+![Fluxo de trabalho de direcionamento: duas consultas, interseção, divisão, notificação de aprovação, entrega, espera, notificação de feedback, fim](assets/local_validation_workflow.png)
 
 As seguintes atividades foram adicionadas:
 
@@ -123,23 +123,23 @@ Se não quiser limitar a população da consulta, não utilize as atividades **[
 
 1. Na seção **[!UICONTROL Record count limitation]**, selecione a opção **[!UICONTROL Limit the selected records]** e clique no link **[!UICONTROL Edit]**.
 
-   ![](assets/local_validation_split_1.png)
+   ![Guia Dividir Subconjuntos com a opção Limitar os registros selecionados e o link Editar na Limitação da contagem de registros](assets/local_validation_split_1.png)
 
 1. Selecione a opção **[!UICONTROL Keep only the first records after sorting]** e clique em **[!UICONTROL Next]**.
 
-   ![](assets/local_validation_split_1bis.png)
+   ![Tipo de etapa de limite com Manter apenas os primeiros registros após a classificação selecionada](assets/local_validation_split_1bis.png)
 
 1. Na seção **[!UICONTROL Sort columns]**, adicione o campo no qual a classificação é aplicada. Aqui, escolhemos o campo **[!UICONTROL Email]**. Clique em **[!UICONTROL Next]**.
 
-   ![](assets/local_validation_split_2.png)
+   ![Etapa de classificação com a coluna Email adicionada em Classificar colunas e o botão Avançar](assets/local_validation_split_2.png)
 
 1. Selecione a opção **[!UICONTROL By data distribution]** e o modelo de distribuição criado anteriormente (consulte [Etapa 1: criação do modelo de distribuição de dados](#step-1--creating-the-data-distribution-template-)) e clique em **[!UICONTROL Finish]**.
 
-   ![](assets/local_validation_split_3.png)
+   ![Etapa de limites com By data distribution selecionada e o template Distribution aplicado aos recipients escolhido](assets/local_validation_split_3.png)
 
 No modelo de distribuição, limitamos o população a 10% por valor de agrupamento, o que coincide com os valores exibidos no fluxo de trabalho (340 como entrada e 34 como saída).
 
-![](assets/local_validation_intro_1.png)
+![Lista de distribuição de dados a 10% por domínio, limitando a saída dividida de 3.332 para 333 destinatários no fluxo de trabalho](assets/local_validation_intro_1.png)
 
 ### Notificação de aprovação {#approval-notification}
 
@@ -147,7 +147,7 @@ A atividade **[!UICONTROL Local approval]** permite enviar uma notificação par
 
 Para obter mais informações sobre como configurar a atividade **[!UICONTROL Local approval]**, consulte [Aprovação de local](local-approval.md).
 
-![](assets/local_validation_workflow_2.png)
+![Atividade de aprovação local definida como Notificação de aprovação de público alvo, Especificada na transição, com atraso 3d e lembrete](assets/local_validation_workflow_2.png)
 
 Os seguintes campos precisam ser inseridos:
 
@@ -165,13 +165,13 @@ Um email de notificação é enviado pela atividade **[!UICONTROL Local approval
 
 A atividade de espera permite adiar o início da segunda atividade de aprovação local que enviará a notificação de feedback de entrega. No campo **[!UICONTROL Duration]**, inserimos o valor **[!UICONTROL 5d]** (5 dias). As ações executadas por destinatários em um período de cinco dias após o envio da entrega serão incluídas na notificação de feedback.
 
-![](assets/local_validation_workflow_3.png)
+![Atividade de espera com o campo Duração definido como 5d](assets/local_validation_workflow_3.png)
 
 ### Notificação de feedback {#feedback-notification}
 
 A segunda atividade **[!UICONTROL Local approval]** permite enviar uma notificação de feedback de entrega para cada supervisor local.
 
-![](assets/local_validation_workflow_4.png)
+![Atividade de aprovação local definida como Relatório de feedback de entrega com a entrega Especificada na transição](assets/local_validation_workflow_4.png)
 
 Os seguintes campos precisam ser inseridos.
 
@@ -181,7 +181,7 @@ Os seguintes campos precisam ser inseridos.
 
 Quando o prazo configurado na atividade de espera é atingido, a segunda atividade do tipo **[!UICONTROL Local approval]** envia o email de notificação a seguir para cada supervisor local:
 
-![](assets/local_validation_intro_3.png)
+![Página da Web de validação local com uma lista de comentários de entrega de destinatários por gênero e seu status: enviado, aberto, clicado](assets/local_validation_intro_3.png)
 
 ### Controle de aprovação pelo administrador {#approval-tracking-by-the-administrator}
 
@@ -189,15 +189,15 @@ Toda vez que a atividade de aprovação local começa, uma tarefa de aprovação
 
 Vá para o fluxo de trabalho de segmentação da sua campanha e clique na guia **[!UICONTROL Local approval tasks]**.
 
-![](assets/local_validation_admin_1.png)
+![Guia de tarefas de aprovação local do fluxo de trabalho da campanha listando a tarefa, o prazo de aprovação, o fluxo de trabalho e a campanha](assets/local_validation_admin_1.png)
 
 A lista de tarefas de aprovação local também pode ser acessada pela guia **[!UICONTROL Approval tasks]** do modelo de distribuição de dados.
 
-![](assets/local_validation_admin_2.png)
+![Guia de tarefas de aprovação do modelo de distribuição de dados listando a tarefa de aprovação local e suas mensagens direcionadas](assets/local_validation_admin_2.png)
 
 Selecione a tarefa que deseja monitorar e clique no botão **[!UICONTROL Detail]**. A guia **[!UICONTROL General]** da tarefa de aprovação local permite exibir informações da tarefa. Se necessário, você pode alterar a aprovação e as datas de lembrete.
 
-![](assets/local_validation_admin_3.png)
+![Guia Geral da tarefa de aprovação local com rótulo, identificador, distribuição, fluxo de trabalho, campanha, aprovação e datas de lembrete](assets/local_validation_admin_3.png)
 
 Essa guia exibe as seguintes informações:
 
@@ -209,11 +209,11 @@ Essa guia exibe as seguintes informações:
 
 A guia **[!UICONTROL Distribution]** da tarefa permite visualizar os logs de aprovação, o status, o número de mensagens direcionadas, a data de aprovação e o operador que aprovou a entrega.
 
-![](assets/local_validation_admin_4.png)
+![Guia de Detalhamento de Tarefas listando logs de aprovação locais com status, mensagens direcionadas, data de validação e aprovador](assets/local_validation_admin_4.png)
 
 Selecione um log de aprovação e clique no botão **[!UICONTROL Detail]** para exibir mais informações. A guia **[!UICONTROL General]** do log de aprovação local permite exibir informações gerais de log. Você também pode alterar o status de aprovação.
 
-![](assets/local_validation_admin_5.png)
+![Guia Geral de log de aprovação com tarefa de aprovação, status, aprovador, data de aprovação e mensagens direcionadas e aprovadas](assets/local_validation_admin_5.png)
 
 Essa guia exibe as seguintes informações:
 
@@ -225,4 +225,4 @@ Essa guia exibe as seguintes informações:
 
 A guia **[!UICONTROL Targeted]** do log de aprovação exibe a lista de destinatários alvos e seu status de aprovação. Você pode alterar este status, se necessário.
 
-![](assets/local_validation_admin_6.png)
+![Guia de destino do log de aprovação listando destinatários direcionados com uma caixa de seleção de aprovação editável Sim ou Não](assets/local_validation_admin_6.png)

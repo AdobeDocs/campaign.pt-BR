@@ -27,10 +27,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 93%
+source-wordcount: '1915'
+ht-degree: 78%
 ---
 # Consulta{#query}
 
@@ -39,9 +39,9 @@ ht-degree: 93%
 ## Criar uma consulta {#creating-a-query}
 
 Uma consulta permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado da consulta e inserir dados adicionais nele.
-Saiba como criar consultas por meio de casos de uso em [esta seção](querying-recipient-table.md). Consulte também a seção sobre o [Editor de consultas](../../v8/start/query-editor.md).
+Saiba como criar consultas por meio de casos de uso em [Consultar a tabela de destinatários](querying-recipient-table.md). Consulte também a seção sobre o [Editor de consultas](../../v8/start/query-editor.md).
 
-![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
+![Caixa de diálogo da atividade Query com campos Edit query, Add data, Edit additional data e Results label e Segment code.](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -57,15 +57,15 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
    Para obter mais informações, consulte [Direcionamento e dimensões de filtragem](targeting-workflows.md#targeting-and-filtering-dimensions).
 
-   ![](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
+   ![Etapa da dimensão de filtragem e direcionamento com Destinatários como dimensão de direcionamento e Destinatário como dimensão de filtragem.](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
 
    Um consulta pode ser baseada em dados a partir da transição de entrada, se necessário, selecionando **[!UICONTROL Temporary schema]** ao escolher as dimensões de direcionamento e de filtro.
 
-   ![](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
+   ![Etapa de dimensão de filtragem e direcionamento com a opção de esquema Temporário selecionada e a Consulta A de esquema escolhida.](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
 
 1. Defina as populações usando o assistente. Os campos a serem inseridos podem variar de acordo com o tipo de público-alvo. Você pode visualizar a população de destino com seus critérios atuais usando a guia **[!UICONTROL Preview]**.
 
-   ![](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
+   ![Etapa do Filtro de Consulta com uma pasta, uma entrega e um serviço de informações selecionados como critérios, além de uma guia de Visualização.](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
 
 1. Se você selecionou **[!UICONTROL Filtering conditions]** na etapa 1 ou usou a opção **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**, será necessário adicionar manualmente os critérios de filtragem posteriormente.
 
@@ -81,11 +81,11 @@ As colunas adicionais permitem coletar informações adicionais sobre a populaç
 
 O link **[!UICONTROL Add data...]** permite selecionar os dados adicionais a serem coletados.
 
-![](assets/wf_add_data_link.png){width="70%" align="center" zoomable="yes"}
+![Caixa de diálogo da atividade Query com o link Add data na seção Complementary information realçada.](assets/wf_add_data_link.png){width="70%" align="center" zoomable="yes"}
 
 Comece selecionando o tipo de dado a ser adicionado:
 
-![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
+![Assistente de dados adicionais com as opções Dados vinculados à dimensão do filtro, Dados externos e Uma apresentação de oferta.](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
 * Selecione **[!UICONTROL Data linked to the filtering dimension]** para selecionar os dados no banco de dados do Adobe Campaign.
 * Selecione **[!UICONTROL External data]** para adicionar dados de um banco de dados externo. Essa opção só estará disponível se você tiver adquirido a opção **Federated Data Access**. Para obter mais informações, consulte [Acessar um banco de dados externo (FDA)](accessing-an-external-database-fda.md).
@@ -97,11 +97,11 @@ Para adicionar dados do banco de dados do Adobe Campaign:
 
 1. Selecione o tipo de dados que deseja adicionar. Estes podem ser dados pertencentes à dimensão do filtro ou dados armazenados em tabelas vinculadas.
 
-   ![](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
+   ![Selecione campos para adicionar etapa com Dados da dimensão de filtro selecionados e Dados vinculados à dimensão de filtro.](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
 
 1. Se os dados pertencerem à dimensão de filtro da consulta, basta selecioná-la na lista de campos disponíveis para exibi-la nas colunas de output.
 
-   ![](assets/wf_add_data_field_selection.png){width="70%" align="center" zoomable="yes"}
+   ![Dados para adicionar a etapa listando campos de destinatários como campos disponíveis e as colunas de saída escolhidas, incluindo a Empresa.](assets/wf_add_data_field_selection.png){width="70%" align="center" zoomable="yes"}
 
    Você pode adicionar:
 
@@ -115,7 +115,7 @@ Para adicionar uma coleção de informações vinculadas a uma população direc
 1. Na primeira etapa do assistente, selecione a opção **[!UICONTROL Data linked to the filtering dimension]**:
 1. Selecione a tabela que contém as informações que você deseja coletar e clique em **[!UICONTROL Next]**.
 
-   ![](assets/wf_add_data_linked_table.png){width="70%" align="center" zoomable="yes"}
+   ![Selecione campos para adicionar uma etapa com dados vinculados à dimensão do filtro selecionada e uma árvore de tabelas vinculadas.](assets/wf_add_data_linked_table.png){width="70%" align="center" zoomable="yes"}
 
 1. Se necessário, especifique o número de elementos da coleção que você deseja manter ao selecionar um dos valores no campo **[!UICONTROL Data collected]**. Por padrão, todas as linhas da coleção são recuperadas e filtradas de acordo com as condições especificadas na etapa a seguir.
 
@@ -130,11 +130,11 @@ Para adicionar uma coleção de informações vinculadas a uma população direc
    * Se você optar por recuperar várias linhas (**[!UICONTROL Limit the line count]**), será possível especificar o número de linhas a serem coletadas.
    * Se as colunas coletadas contiverem agregados, por exemplo, o número de falhas declaradas, a despesa média em um site, entre outras informações, você pode usar o valor **[!UICONTROL Aggregates]**.
 
-   ![](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
+   ![Etapa de parâmetros gerais com a lista de Dados coletados aberta: Todas as linhas, Limitar a contagem de linhas, Agregações, Mesclar.](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
 
 1. Especifique a subseleção da coleção.
 
-   ![](assets/query_add_columns_collection_filter.png){width="70%" align="center" zoomable="yes"}
+   ![A etapa do filtro da coleção com as condições Rótulo contém ofertas e Data de criação após uma determinada data.](assets/query_add_columns_collection_filter.png){width="70%" align="center" zoomable="yes"}
 
 1. Se você selecionou a opção **[!UICONTROL Limit the line count]**, defina a ordem na qual os dados coletados serão filtrados. Quando o número de linhas coletadas for maior que o número de linhas especificado a ser mantido, a ordem de filtragem permite que você especifique quais linhas manter.
 
@@ -144,7 +144,7 @@ No exemplo a seguir, a consulta busca identificar homens que moram na França co
 
 >[!NOTE]
 >
->Os exemplos de consulta são apresentados [nesta seção](querying-recipient-table.md).
+>Exemplos adicionais de consulta são apresentados em [Consultar a tabela de destinatários](querying-recipient-table.md).
 
 1. Nomeie a consulta e selecione o link **[!UICONTROL Edit query...]**.
 1. Selecione **[!UICONTROL Filtering conditions]** na lista de tipos de filtros disponíveis.
@@ -155,20 +155,20 @@ No exemplo a seguir, a consulta busca identificar homens que moram na França co
    * Destinatários acima de 18 anos.
    * Destinatários que vivem na França.
 
-   ![](assets/query_example.png){width="70%" align="center" zoomable="yes"}
+   ![Filtro de consulta com gênero igual a Masculino, idade de 18 a 30 e região dos EUA igual a Oeste.](assets/query_example.png){width="70%" align="center" zoomable="yes"}
 
    Você pode exibir o SQL correspondente com sua combinação de critérios:
 
-   ![](assets/query_example_sql.png){width="70%" align="center" zoomable="yes"}
+   ![Consulta SQL nativa gerada a partir dos critérios de filtro sobre gênero, idade e região.](assets/query_example_sql.png){width="70%" align="center" zoomable="yes"}
 
 1. Você pode verificar se os seus critérios estão corretos visualizando os destinatários que correspondam a sua consulta na guia relevante:
 
-   ![](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
+   ![Guia de visualização da consulta listando três destinatários correspondentes, com uma contagem de 3.](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
 
 1. Salve os filtros para usá-los posteriormente clicando em **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
 1. Continue editando seu fluxo de trabalho adicionando outras atividades a ele. Depois de iniciado e após o término da etapa da consulta anterior, o número de destinatários encontrados será exibido. Você pode exibir mais detalhes usando o menu pop-up do mouse (clique com o botão direito do mouse na transição > **[!UICONTROL Display the target...]**).
 
-   ![](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
+   ![Atividade de Consulta de Fluxo de Trabalho com uma transição de saída rotulada 3 - Resultado mostrando o número de destinatários encontrados.](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
 
 ## Parâmetros de saída {#output-parameters}
 
@@ -208,7 +208,7 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
 
 Use a dimensão do filtro da consulta em vez de usar o operador &quot;exists such as&quot;.
 
-![](assets/optimize-queries-filtering.png){width="70%" align="center" zoomable="yes"}
+![Existem condições de filtro usando logs de entrega de destinatário (broadLog), como, com nome interno igual a uma entrega.](assets/optimize-queries-filtering.png){width="70%" align="center" zoomable="yes"}
 
 Em consultas, as condições &quot;exists such as&quot; em filtros não são eficientes. Elas são o equivalente de uma subconsulta no SQL:
 
@@ -216,13 +216,13 @@ Em consultas, as condições &quot;exists such as&quot; em filtros não são efi
 
 A prática recomendada é usar a dimensão do filtro da consulta:
 
-![](assets/optimize-queries-filtering2.png){width="70%" align="center" zoomable="yes"}
+![Dimensão de direcionamento Destinatários com a dimensão de filtro definida como Logs de entrega do destinatário.](assets/optimize-queries-filtering2.png){width="70%" align="center" zoomable="yes"}
 
 O equivalente da dimensão do filtro no SQL é a associação interna:
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Para saber mais sobre as dimensões do filtro, consulte [esta seção](build-a-workflow.md).
+Para saber mais sobre as dimensões do filtro, consulte [Criar um fluxo de trabalho](build-a-workflow.md).
 
 ### Arquitetura {#architecture}
 

@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 16%
+source-wordcount: '355'
+ht-degree: 14%
 ---
 # Alterar fonte de dados {#change-data-source}
 
@@ -61,22 +61,22 @@ Para usar a atividade **[!UICONTROL Change Data Source]**, você deve:
 
 1. Adicione uma atividade **[!UICONTROL Change data source]**.
 
-   ![](assets/change-data-source.png)
+   ![Fluxo de trabalho com Início e Consulta, e atividade Change Data Source realçada na paleta](assets/change-data-source.png)
 
 1. Edite sua atividade **[!UICONTROL Change data source]** para selecionar **[!UICONTROL Default data source]**.
 
    A tabela de trabalho, que contém o resultado do query, é então movida para o banco de dados local padrão do Campaign.
 
-   ![](assets/change-data-source_2.png)
+   ![Alterar atividade do Data Source com a opção Fonte de dados padrão selecionada](assets/change-data-source_2.png)
 
 1. Adicione uma atividade **[!UICONTROL JavaScript code]** para executar operações unitárias na tabela de trabalho.
 
-   Para obter mais informações sobre a atividade **[!UICONTROL JavaScript code]**, consulte [esta página](sql-code-and-javascript-code.md#javascript-code).
+   Para obter mais informações sobre a atividade **[!UICONTROL JavaScript code]**, consulte o [código JavaScript e o código JavaScript avançado](sql-code-and-javascript-code.md#javascript-code).
 
 1. Adicione outra atividade **[!UICONTROL Change data source]** para alternar de volta para o banco de dados em nuvem.
 
 1. Edite esta atividade e selecione **[!UICONTROL Active FDA external account]** e a conta externa **[!UICONTROL External database]** correspondente.
 
-   ![](assets/change-data-source_3.png)
+   ![Alterar atividade do Data Source com a conta externa do Ative FDA selecionada e o Snowflake realçado na lista](assets/change-data-source_3.png)
 
 1. Agora, você pode iniciar o seu fluxo de trabalho.

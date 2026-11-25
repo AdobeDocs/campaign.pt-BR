@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 100%
+source-wordcount: '404'
+ht-degree: 88%
 ---
 # Exclusão{#exclusion}
 
@@ -36,7 +36,7 @@ Uma atividade do tipo **Exclusão** cria um target com base em um target princip
 
 Para configurar essa atividade, insira seu rótulo e selecione o conjunto principal de destinatários: a população do conjunto principal permite construir o resultado. Os perfis compartilhados pelo conjunto principal e pelo menos uma das atividades de entrada serão excluídos.
 
-![](assets/s_user_segmentation_exclu.png)
+![Atividade de exclusão com o conjunto Principal, regras de exclusão, rótulo de Resultado e opção Gerar complemento.](assets/s_user_segmentation_exclu.png)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Para configurar essa atividade, insira seu rótulo e selecione o conjunto princi
 
 Marque a opção **[!UICONTROL Generate complement]** se desejar explorar a população restante. O complemento conterá a população principal de entrada menos a população de saída. Uma transição de output adicional será adicionada à atividade, da seguinte maneira:
 
-![](assets/s_user_segmentation_exclu_compl.png)
+![Atividade de exclusão com duas transições de saída rotuladas como Resultado e Complemento.](assets/s_user_segmentation_exclu_compl.png)
 
 ## Exemplos de exclusão {#exclusion-examples}
 
@@ -56,7 +56,7 @@ O exemplo a seguir busca compilar uma lista de destinatários com idade entre 18
 1. Aprove a configuração de exclusão e depois insira uma atividade de lista de atualização no resultado. Você também pode inserir uma atualização de lista adicional no complemento onde for necessário.
 1. Execute o fluxo de trabalho Neste exemplo, o resultado é composto por destinatários com idade entre 18 e 30 anos, mas esses que moram em Paris são excluídos e enviados ao complemento.
 
-   ![](assets/exclusion_example.png)
+   ![O fluxo de trabalho no qual 18-30 e vivem em consultas de paris alimentam uma Exclusão com Resultado e Complemento indo cada um para uma atualização de Lista.](assets/exclusion_example.png)
 
 ## Parâmetros de entrada {#input-parameters}
 

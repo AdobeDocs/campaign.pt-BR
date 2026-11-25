@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 100%
+source-wordcount: '213'
+ht-degree: 74%
 ---
 # Alterar imagens de atividade{#change-activity-images}
 
@@ -41,7 +41,7 @@ As imagens usadas nos diagramas dos vários fluxos de trabalho podem ser alterad
 
 * Para alterar a imagem de fundo, selecione o fluxo de trabalho de segmentação desejado e clique na guia **[!UICONTROL Properties]**.
 
-  ![](assets/s_user_segmentation_properties_tab.png)
+  ![Propriedades do fluxo de trabalho, guia Avançado: campo de imagem de plano de fundo com o ícone Selecionar link realçado.](assets/s_user_segmentation_properties_tab.png)
 
   Para selecionar a imagem a ser usada, clique no ícone **[!UICONTROL Select link]** à direita do campo **[!UICONTROL Background image]**.
 
@@ -49,7 +49,7 @@ As imagens usadas nos diagramas dos vários fluxos de trabalho podem ser alterad
   >
   >A largura em pixels da imagem do plano de fundo deve ser em múltiplo de 4.
 
-  ![](assets/s_user_segmentation_background_select.png)
+  ![Janela de seleção de imagens listando imagens de fundo como backgrounds/grid.png, com Ok para confirmar.](assets/s_user_segmentation_background_select.png)
 
   O ícone **[!UICONTROL Edit link]** permite visualizar a imagem selecionada.
 
@@ -57,11 +57,11 @@ As imagens usadas nos diagramas dos vários fluxos de trabalho podem ser alterad
 
   Para selecionar a imagem a ser usada, clique no ícone **[!UICONTROL Select link]** à direita do campo **[!UICONTROL Image]**.
 
-  ![](assets/s_user_segmentation_activity_image.png)
+  ![Guia Avançado de uma atividade com o campo Imagem realçado, definido como activities/dedup.png.](assets/s_user_segmentation_activity_image.png)
 
   O ícone **[!UICONTROL Edit link]** permite visualizar a imagem selecionada.
 
-  ![](assets/s_user_segmentation_activity_image_select.png)
+  ![Visualização dos nms de imagem selecionados:activities/dedup.png, exibidos com o ícone Editar link.](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >

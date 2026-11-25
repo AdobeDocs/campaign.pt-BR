@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 100%
+source-wordcount: '534'
+ht-degree: 85%
 ---
 # Rastreamento de hipótese{#hypothesis-tracking}
 
@@ -50,7 +50,7 @@ O resultado dos cálculos da hipótese está disponível em vários níveis da p
 
 Depois que a hipótese é calculada, vários indicadores de medição são atualizados automaticamente. Eles estão disponíveis na guia **[!UICONTROL General]** da hipótese.
 
-![](assets/response_hypothesis_delivery_example_010.png)
+![Guia Geral de uma hipótese concluída com os indicadores calculados pela hipótese destacados.](assets/response_hypothesis_delivery_example_010.png)
 
 Esses indicadores são:
 
@@ -62,7 +62,7 @@ Esses indicadores são:
 
 Para obter a lista completa de indicadores, clique no link **[!UICONTROL Display the list]**:
 
-![](assets/response_hypothesis_indicators_002.png)
+![Janela de indicadores somente leitura aberta a partir de Exibir a lista, mostrando a lista completa de indicadores e seus valores.](assets/response_hypothesis_indicators_002.png)
 
 Os indicadores fornecem as seguintes informações:
 
@@ -88,7 +88,7 @@ Os indicadores fornecem as seguintes informações:
 1. Depois que o cálculo da hipótese é concluído, acesse o nó **[!UICONTROL Campaign management > Measurement hypotheses]** da árvore do Adobe Campaign.
 1. Selecione a hipótese e clique na guia **[!UICONTROL Reactions]** para visualizar a lista de destinatários que pode comprar algo após a campanha de marketing.
 
-   ![](assets/response_hypothesis_reactions_001.png)
+   ![Guia Reações de uma hipótese listando os entrevistados e se cada um pertence ao grupo de controle.](assets/response_hypothesis_reactions_001.png)
 
 ## Relatórios {#reports}
 
@@ -96,8 +96,8 @@ O **[!UICONTROL Hypothesis report]** permite a visualização dos resultados da 
 
 * **No nível da campanha**: clique no link **[!UICONTROL Reports]** da campanha relevante e selecione o **[!UICONTROL Hypothesis report]**. Esse relatório contém a lista de entregas da campanha e a hipótese calculada para cada uma delas.
 
-  ![](assets/response_hypothesis_campaign_report_001.png)
+  ![Relatório de hipótese no nível da campanha listando a hipótese calculada para cada entrega com seus indicadores.](assets/response_hypothesis_campaign_report_001.png)
 
 * **No nível da entrega**: para acessar o relatório, abra a entrega relacionada, clique em **[!UICONTROL Reports]** na guia **[!UICONTROL Summary]** e selecione o **[!UICONTROL Hypothesis report]**. Se várias hipóteses são calculadas para a mesma entrega, o relatório mostra todas as alternativas.
 
-  ![](assets/response_hypothesis_delivery_report_001.png)
+  ![Relatório de hipótese no nível de entrega mostrando os detalhes da hipótese, o estado e os indicadores calculados.](assets/response_hypothesis_delivery_report_001.png)

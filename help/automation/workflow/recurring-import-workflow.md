@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 99%
+source-wordcount: '1187'
+ht-degree: 85%
 ---
 # Configurar um fluxo de trabalho de importação recorrente {#setting-up-a-recurring-import}
 
@@ -48,7 +48,7 @@ Esse exemplo mostra como predefinir um fluxo de trabalho que pode ser reutilizad
    * **[!UICONTROL Deduplication]**: elimine a duplicação dos dados do arquivo de entrada antes de ele ser inserido no banco de dados.
    * **[!UICONTROL Update data]**: atualize o banco de dados com os perfis importados.
 
-   ![](assets/import_template_example0.png)
+   ![Fluxo de trabalho do modelo de importação: Carregamento de dados (arquivo), Enriquecimento, Divisão, Eliminação de Duplicação, duas atividades Update data e Fim.](assets/import_template_example0.png)
 
 1. Configure a atividade **[!UICONTROL Data Loading (file)]**:
 
@@ -63,14 +63,14 @@ Esse exemplo mostra como predefinir um fluxo de trabalho que pode ser reutilizad
 
      Você pode usar qualquer uma das opções, mas precisa modificar o modelo adequadamente. Por exemplo, se você selecionar **[!UICONTROL Specified in the transition]**, será possível adicionar uma atividade **[!UICONTROL File Transfer]** antes de recuperar o arquivo para importar de um servidor FTP/SFTP. Com a conexão S3 ou SFTP, também será possível importar dados de segmento para o Adobe Campaign com a Adobe Real-time Customer Data Platform. Para obter mais informações, consulte a [documentação do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=pt-BR){target="_blank"}.
 
-     ![](assets/import_template_example1.png)
+     ![Atividade de carregamento de dados (arquivo) com uma pré-visualização de arquivo de amostra e Carregar um arquivo do computador local selecionado.](assets/import_template_example1.png)
 
 1. Configure a atividade **[!UICONTROL Enrichment]**. A finalidade dessa atividade nesse contexto é identificar os dados de entrada.
 
    * Na guia **[!UICONTROL Enrichment]**, selecione **[!UICONTROL Add data]** e defina um vínculo entre os dados importados e a dimensão de direcionamento destinatários. Neste exemplo, o campo personalizado **ID do CRM** é usado para criar a condição de associação. Use o campo ou uma combinação de campos que você precisa, desde que isso permita identificar registros únicos.
    * Na guia **[!UICONTROL Reconciliation]**, deixe a opção **[!UICONTROL Identify the document from the working data]** desmarcada.
 
-   ![](assets/import_template_example2.png)
+   ![Atividade de enriquecimento com a tela de definição de link: link cujo destino pode não existir, esquema de Destinatários (nms).](assets/import_template_example2.png)
 
 1. Configure a atividade **[!UICONTROL Split]** para recuperar os destinatários reconciliados em uma transição e destinatários que não puderam ser reconciliados, mas que tenham dados suficientes em uma segunda transição.
 
@@ -84,13 +84,13 @@ Esse exemplo mostra como predefinir um fluxo de trabalho que pode ser reutilizad
 
    * No primeiro subconjunto da guia **[!UICONTROL Subsets]**, adicione uma condição de filtragem na população de entrada para selecionar apenas registros para os quais a chave primária do destinatário não for igual a 0. Dessa forma, os dados do arquivo reconciliado com destinatários do banco de dados são selecionados nesse subconjunto.
 
-     ![](assets/import_template_example3.png)
+     ![Dividir chave primária de subconjunto diferente de 0 com o filtro Query: chave primária de destinatários diferente de 0.](assets/import_template_example3.png)
 
    * Adicione um segundo subconjunto que seleciona registros não reconciliados que tenham dados suficientes para serem inseridos no banco de dados. Por exemplo: endereço de email, nome e sobrenome.
 
      Os subconjuntos são processados na ordem de criação, isso significa que quando esse segundo subconjunto é processado, todos os registros que já existem no banco de dados já estão selecionados no primeiro subconjunto.
 
-     ![](assets/import_template_example3_2.png)
+     ![Dividir subconjunto de dados suficientes para inserir filtragem no email, nome e sobrenome não estão vazios.](assets/import_template_example3_2.png)
 
    * Todos os registros que não estão selecionados nos dois primeiros subconjuntos são selecionados no **[!UICONTROL Complement]**.
 
@@ -100,18 +100,18 @@ Esse exemplo mostra como predefinir um fluxo de trabalho que pode ser reutilizad
    * Na seção **[!UICONTROL Record identification]**, selecione **[!UICONTROL Using reconciliation keys]** e defina uma chave entre a dimensão de direcionamento e o link criado no **[!UICONTROL Enrichment]**. Neste exemplo, o campo personalizado **ID do CRM** é usado.
    * Na guia **[!UICONTROL Fields to update]**, indique os campos da dimensão de destinatários que serão atualizados com o valor da coluna correspondente no arquivo. Se os nomes das colunas de arquivo forem idênticos ou quase idênticos aos dos campos de dimensão dos destinatários, você poderá usar o botão de varinha mágica para combinar os diferentes campos automaticamente.
 
-     ![](assets/import_template_example6.png)
+     ![Atualize dados com a operação Update, a chave de reconciliação @crmid nos Destinatários e as colunas de arquivo mapeadas para os campos.](assets/import_template_example6.png)
 
 1. Configure a atividade **[!UICONTROL Deduplication]** localizada após a transição que contém os destinatários não reconciliados:
 
    * Selecione **[!UICONTROL Edit configuration]** e defina a dimensão de segmentação para o esquema temporário gerado pela atividade **[!UICONTROL Enrichment]** do fluxo de trabalho.
 
-     ![](assets/import_template_example4.png)
+     ![Tela da dimensão de Direcionamento de Desduplicação com esquema Temporário selecionado e o esquema de Enriquecimento escolhido.](assets/import_template_example4.png)
 
    * Nesse exemplo, o campo de email é usado para localizar perfis únicos. Você pode usar qualquer campo que você tem certeza que está preenchido e é parte de uma combinação única.
    * Na tela **[!UICONTROL Deduplication method]**, selecione **[!UICONTROL Advanced parameters]** e marque a opção **[!UICONTROL Disable automatic filtering of 0 ID records]** para garantir que os registros com uma chave primária igual a 0 (que deve ser todos os registros desta transição) não serão excluídos.
 
-   ![](assets/import_template_example7.png)
+   ![Atividade de desduplicação configurada para desduplicar no campo de email com o método Choose for me.](assets/import_template_example7.png)
 
 1. Configure a atividade **[!UICONTROL Update data]**, localizada após a atividade **[!UICONTROL Deduplication]**, configurada anteriormente.
 
@@ -119,11 +119,11 @@ Esse exemplo mostra como predefinir um fluxo de trabalho que pode ser reutilizad
    * Na seção **[!UICONTROL Record identification]**, selecione **[!UICONTROL Directly using the targeting dimension]** e escolha a dimensão **[!UICONTROL Recipients]**.
    * Na guia **[!UICONTROL Fields to update]**, indique os campos da dimensão de destinatários que serão atualizados com o valor da coluna correspondente no arquivo. Se os nomes das colunas de arquivo forem idênticos ou quase idênticos aos dos campos de dimensão dos destinatários, você poderá usar o botão de varinha mágica para combinar os diferentes campos automaticamente.
 
-     ![](assets/import_template_example8.png)
+     ![Atualize os dados 2 com a operação Inserir, direcionando os Destinatários da dimensão e as colunas de arquivo mapeadas para campos de destinatários.](assets/import_template_example8.png)
 
 1. Após a terceira transição da atividade **[!UICONTROL Split]**, adicione uma atividade **[!UICONTROL Data extraction (file)]** e uma atividade **[!UICONTROL File transfer]** se desejar acompanhar os dados não inseridos no banco de dados. Configure essas atividades para exportar a coluna necessária e transferir o arquivo em um servidor FTP ou SFTP, onde você pode recuperá-la.
 1. Adicione uma atividade **[!UICONTROL End]** e salve o modelo do fluxo de trabalho.
 
 Agora o modelo pode ser usado e está disponível para todo fluxo de trabalho novo. Basta especificar o arquivo que contém os dados que serão importados na atividade **[!UICONTROL Data loading (file)]**.
 
-![](assets/import_template_example9.png)
+![Fluxo de trabalho de importação executado mostrando contagens de registros em cada transição, incluindo a transição Complement para End.](assets/import_template_example9.png)

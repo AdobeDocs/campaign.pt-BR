@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 85%
+source-wordcount: '292'
+ht-degree: 79%
 ---
 # Entrega recorrente{#recurring-delivery}
 
@@ -34,7 +34,7 @@ ht-degree: 85%
 
 Uma atividade **[!UICONTROL Recurring delivery]** permite configurar uma ocorrência de modelo de entrega específico para uma campanha.
 
-![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#recurring-delivery-video)
+![Ícone do botão Reproduzir para o link do vídeo.](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#recurring-delivery-video)
 
 Essa atividade só está disponível na guia **[!UICONTROL Targeting and workflows]** localizada em uma campanha.
 
@@ -42,7 +42,7 @@ Para fazer isso:
 
 1. Selecione o modelo de entrega no qual a atividade será baseada.
 
-   ![](assets/recurring_delivery_001.png)
+   ![Janela de entrega com o menu suspenso Modelo de entrega e Entrega de email (email) selecionada.](assets/recurring_delivery_001.png)
 
 1. Configure o modelo de entrega.
 
@@ -68,6 +68,6 @@ Se desejar impedir a execução de uma entrega recorrente, cancele completamente
 
 Este vídeo explica como configurar uma entrega recorrente e uma atividade de scheduler.
 
->[!VIDEO](https://video.tv.adobe.com/v/31846?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=pt-BR){target="_blank"}.
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 52%
+source-wordcount: '1529'
+ht-degree: 44%
 ---
 # Criar programas e campanhas{#create-programs-and-campaigns}
 
@@ -36,9 +36,9 @@ Os componentes da orquestração de campanha são encontrados na guia **[!UICONT
 
 Um programa de marketing é composto por campanhas, que são compostas por deliveries, recursos etc. Todas as informações relacionadas aos deliveries, orçamentos, revisores e documentos vinculados são agrupadas na campanha.
 
-![](assets/campaigns-create-from-home.png)
+![Página inicial das campanhas com a lista Campanhas de marketing, o botão Criar e o menu Calendário da campanha](assets/campaigns-create-from-home.png)
 
-![](assets/do-not-localize/how-to-video.png) [Descubra programas e campanhas em vídeo](#video)
+![Ícone Reproduzir para o vídeo sobre programas e campanhas](assets/do-not-localize/how-to-video.png) [Descubra programas e campanhas em vídeo](#video)
 
 ## Trabalhar com programas e planos{#work-with-plan-and-program}
 
@@ -52,18 +52,18 @@ Antes de começar a criar suas campanhas e deliveries, configure a hierarquia de
 1. Clique com o botão direito na pasta em que deseja criar o plano.
 1. Selecione **Add new folder > Campaign Management > Plan**.
 
-   ![](assets/create-new-plan-folder.png)
+   ![Adicionar novo menu de pasta no Explorer, com Gerenciamento de campanha > Plano selecionado](assets/create-new-plan-folder.png)
 
 1. Renomeie o plano.
 1. Clique com o botão direito do mouse no plano recém-criado e selecione **Properties...**.
 1. Na guia **General** , modifique o **nome interno** para evitar duplicidades durante exportações de pacote.
 
-   ![](assets/plan-properties.png)
+   ![Caixa de diálogo de propriedades da pasta, guia Geral, com os campos Rótulo e Nome interno e o botão Salvar](assets/plan-properties.png)
 
 1. Clique em **Save**.
 1. Clique com o botão direito do mouse no plano recém-criado e selecione **Create a new &#39;Program&#39; folder**.
 
-   ![](assets/program-folder.png)
+   ![Clique com o botão direito do mouse na pasta de planos com a opção Criar uma nova pasta &#39;Programa&#39; selecionada](assets/program-folder.png)
 
 1. Repita as etapas acima para renomear a nova pasta do programa e seu nome interno.
 
@@ -76,7 +76,7 @@ Ao editar um programa, use as guias descritas abaixo para procurar e configurar.
 
 * A guia **Editar** permite personalizar o programa: nome, datas inicial e final, orçamento, documentos vinculados etc.
 
-  ![](assets/new-program-edit-tab.png)
+  ![Guia Editar Programa com Rótulo, Nome interno, Datas de agendamento, Orçamento e Objetivos relacionados](assets/new-program-edit-tab.png)
 
 ## Trabalhar com campanhas{#work-with-campaigns}
 
@@ -86,7 +86,7 @@ Você pode criar uma campanha por meio da lista de campanhas. Para exibir esta e
 
 O campo **[!UICONTROL Program]** permite selecionar o programa ao qual a campanha será anexada. Essas informações são obrigatórias.
 
-![](assets/new-campaign-settings.png)
+![Nova caixa de diálogo de campanha de marketing com os campos Modelo, Rótulo e Programa, e o botão Ok](assets/new-campaign-settings.png)
 
 As campanhas também podem ser criadas por meio do calendário da campanha ou do programa. [Saiba mais](#campaign-calendar)
 
@@ -102,7 +102,7 @@ Você pode editar a campanha que acabou de criar e definir seus parâmetros. Par
 
 Todas essas ações direcionam você ao painel de campanha.
 
-![](assets/campaigns-dashboard-approve.png)
+![Painel de campanha com o menu de Aprovação em uma oferta de entrega Aprovar conteúdo e Aprovar direcionamento](assets/campaigns-dashboard-approve.png)
 
 Acesse as seguintes seções para saber como configurar a campanha:
 
@@ -133,17 +133,17 @@ Para cada campanha, os seguintes recursos estão disponíveis:
 
 Para cada campanha, as tarefas, os recursos e as entregas são centralizados em um painel. Essa interface permite gerenciar e orquestrar ações de marketing.
 
-Com o Adobe Campaign, você pode configurar processos colaborativos para a criação e aprovação das várias etapas de suas campanhas: aprovação do orçamento, destino, conteúdo etc. Esta orquestração está detalhada em [esta seção](marketing-campaign-approval.md).
+Com o Adobe Campaign, você pode configurar processos colaborativos para a criação e aprovação das várias etapas de suas campanhas: aprovação do orçamento, destino, conteúdo etc. Esta orquestração está detalhada em [Configurar e gerenciar o processo de aprovação](marketing-campaign-approval.md).
 
-![](assets/campaigns-dashboard-approval-tab.png)
+![Painel de entrega do painel de campanha com menu de Aprovação, conteúdo e status de direcionamento](assets/campaigns-dashboard-approval-tab.png)
 
 >[!NOTE]
 >
->Os componentes disponíveis em uma campanha dependem do seu template. A configuração do modelo de campanha é apresentada em [esta seção](marketing-campaign-templates.md#campaign-templates).
+>Os componentes disponíveis em uma campanha dependem do seu template. A configuração do modelo de campanha é apresentada em [Criar e configurar modelos de campanha](marketing-campaign-templates.md#campaign-templates).
 
 Depois que a campanha for realizada, use o link **[!UICONTROL Reports]** para acessar os relatórios da campanha.
 
-![](assets/campaigns-reports-dashboard.png)
+![Guia Relatórios do painel de campanha listando relatórios de campanha como Despesas de campanha e Resumo da entrega](assets/campaigns-reports-dashboard.png)
 
 ## Calendário da campanha {#campaign-calendar}
 
@@ -151,11 +151,11 @@ O calendário da campanha mostra todos os programas, planos, campanhas e deliver
 
 Para editar um plano, programa, campanha ou entrega, navegue até o nome no calendário e use o link **[!UICONTROL Open]**. Ele é exibido em uma nova guia, conforme mostrado abaixo:
 
-![](assets/campaign-calendar.png)
+![Calendário da campanha com um pop-up para uma campanha mostrando o link, a programação e o status Abertos](assets/campaign-calendar.png)
 
 Você pode filtrar as informações exibidas no calendário da campanha. Para fazer isso, clique no link **[!UICONTROL Filter]** e selecione os critérios de filtragem.
 
-![](assets/campaign_planning_filter.png)
+![Link de filtro do calendário da campanha expandindo as opções de filtro para campanhas, entregas, tarefas e programas](assets/campaign_planning_filter.png)
 
 >[!NOTE]
 >
@@ -167,11 +167,11 @@ Os ícones vinculados a cada item permitem visualizar o status: concluído, em a
 
 Para filtrar as campanhas a serem exibidas, clique no link **[!UICONTROL Filter]** e selecione o status das campanhas a serem exibidas.
 
-![](assets/calendar-filter-options.png)
+![Filtro de calendário de campanha com status de listagem suspensa de Tarefas, como Editando, Iniciado e Concluído](assets/calendar-filter-options.png)
 
 Como navegar pelo calendário, você também pode criar um programa ou uma campanha.
 
-![](assets/campaign-create-from-calendar.png)
+![Guia Agenda de Programas com a oferta de menu Adicionar Adicione um programa e Adicione uma campanha](assets/campaign-create-from-calendar.png)
 
 Ao criar uma campanha por meio da guia **[!UICONTROL Schedule]** de um programa, a campanha é vinculada automaticamente ao programa relacionado. O campo **[!UICONTROL Program]** está oculto nesse caso.
 
@@ -183,7 +183,7 @@ Você pode acessar as telas do Console do cliente do Adobe Campaign por meio de 
 1. Faça logon como de costume via https://`<your instance>:<port>/view/home`.
 1. Use os menus para acessar as exibições.
 
-   ![](assets/web-access-campaigns.png)
+   ![Lista de campanhas de marketing na interface da Web com status de campanha e o menu Ações](assets/web-access-campaigns.png)
 
 Além de navegar entre campanhas e visualizá-las, é possível executar esses tipos de tarefas:
 
@@ -216,13 +216,13 @@ Esta tabela resume as ações que você pode realizar nas campanhas a partir de 
 
 Aprovações de um target ou conteúdo de delivery podem ser realizadas via acesso à web.
 
-![](assets/web-access-approval.png)
+![Ação na caixa de diálogo de entrega na interface da Web com opções Aceitar e Rejeitar e um campo Comentário](assets/web-access-approval.png)
 
-Você também pode usar o link contido nas mensagens de notificação. Para obter mais informações, consulte [esta seção](marketing-campaign-approval.md#review-and-approve-deliveries).
+Você também pode usar o link contido nas mensagens de notificação. Para obter mais informações, consulte [Revisar e aprovar remessas](marketing-campaign-approval.md#review-and-approve-deliveries).
 
 
 ## Tutorial em vídeo {#video}
 
 Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449904?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

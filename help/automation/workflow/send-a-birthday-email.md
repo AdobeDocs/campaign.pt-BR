@@ -20,10 +20,10 @@ subfeature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 94%
+source-wordcount: '1036'
+ht-degree: 74%
 ---
 # Enviar email de aniversário{#sending-a-birthday-email}
 
@@ -31,7 +31,7 @@ Este caso de uso apresenta como planejar o envio de um e-mail recorrente para um
 
 Para configurar esse caso de uso, criamos o seguinte fluxo de trabalho de segmentação:
 
-![](assets/birthday-workflow_usecase_1.png)
+![Fluxo de trabalho de aniversário: Agendador, consulta, teste de 1º de março, Bifurcação com consulta de ano bissexto, União e Entrega.](assets/birthday-workflow_usecase_1.png)
 
 Esse fluxo de trabalho (execução diária) seleciona todos os destinatários que fazem aniversário na data atual.
 
@@ -48,20 +48,20 @@ Para fazer isso, siga as etapas abaixo:
 1. Arraste e solte uma atividade **[!UICONTROL Query]** no fluxo de trabalho e clique duas vezes nela.
 1. Clique no link **Editar consulta** e selecione **[!UICONTROL Filtering conditions]**.
 
-   ![](assets/s_ncs_user_create_exp_exple00.png)
+   ![Janela de dimensão de filtragem e direcionamento com Destinatários selecionados e Condições de filtragem realçadas.](assets/s_ncs_user_create_exp_exple00.png)
 
 1. Clique na primeira célula da coluna **[!UICONTROL Expression]** e clique em **[!UICONTROL Edit expression]** para abrir o editor de expressão.
 
-   ![](assets/s_ncs_user_create_exp_exple.png)
+   ![O editor de condições de filtro com uma célula de Expressão vazia e o botão Editar expressão exibido.](assets/s_ncs_user_create_exp_exple.png)
 
 1. Clique em **[!UICONTROL Advanced selection]** para selecionar o modo do filtro.
 
-   ![](assets/s_ncs_user_create_exp_exple_a.png)
+   ![Campo para selecionar a janela listando os campos de Destinatários, com o botão de seleção Avançado destacado.](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Selecione **[!UICONTROL Edit the formula using an expression]** e clique em **[!UICONTROL Next]** para exibir o editor de expressão.
 1. Na lista de funções, clique duas vezes em **[!UICONTROL Day]**, que é acessível no nó **[!UICONTROL Date]**. Essa função retorna o número que representa o dia correspondente à data passada como parâmetro.
 
-   ![](assets/s_ncs_user_create_exp_exple01.png)
+   ![Edite a janela de expressão com Day() na zona de edição e a função Day selecionada na lista de funções.](assets/s_ncs_user_create_exp_exple01.png)
 
 1. Na lista de campos disponíveis, clique duas vezes em **[!UICONTROL Birth date]**. A seção superior do editor exibe a seguinte fórmula:
 
@@ -73,13 +73,13 @@ Para fazer isso, siga as etapas abaixo:
 
 1. No editor de consultas, na primeira célula da coluna **[!UICONTROL Operator]**, selecione **[!UICONTROL equal to]**.
 
-   ![](assets/s_ncs_user_create_exp_exple02.png)
+   ![Filtrar condições com dia de nascimento como expressão e o menu suspenso Operador aberto com igual a selecionado.](assets/s_ncs_user_create_exp_exple02.png)
 
 1. Em seguida, clique na primeira célula da segunda coluna (**[!UICONTROL Value]**) e clique em **[!UICONTROL Edit expression]** para abrir o editor de expressão.
 1. Na lista de funções, clique duas vezes em **[!UICONTROL Day]**, que é acessível no nó **[!UICONTROL Date]**.
 1. Clique duas vezes na função **[!UICONTROL GetDate]** para recuperar a data atual.
 
-   ![](assets/s_ncs_user_create_exp_exple04.png)
+   ![Edite a janela de expressão que mostra Day(GetDate()) com as funções Day e GetDate realçadas na lista de funções.](assets/s_ncs_user_create_exp_exple04.png)
 
    A seção superior do editor exibe a seguinte fórmula:
 
@@ -93,7 +93,7 @@ Para fazer isso, siga as etapas abaixo:
 
    A consulta completa é a seguinte:
 
-   ![](assets/s_ncs_user_create_exp_exple03.png)
+   ![Consulta completa: dia de nascimento igual ao dia da data atual e mês de nascimento igual ao mês da data atual.](assets/s_ncs_user_create_exp_exple03.png)
 
 Vincule o resultado da atividade **[!UICONTROL Query]** a uma atividade **[!UICONTROL Email delivery]** para enviar um email para a lista de todos os destinatários aniversariantes.
 
@@ -121,7 +121,7 @@ Após configurar a atividade **[!UICONTROL Scheduler]** para que o fluxo de trab
 >
 >Se o ano atual for um ano bissexto, todos os destinatários nascidos no 29 de fevereiro serão incluídos automaticamente.
 
-![](assets/birthday-workflow_usecase_2.png)
+![O filtro de atividade de consulta chamado Mês+dia de nascimento é igual à data atual, correspondendo o mês e o dia da data de nascimento ao dia de hoje.](assets/birthday-workflow_usecase_2.png)
 
 Selecionar destinatários cujo aniversário corresponde à data atual é apresentado na seção [Identifying recipients whose birthday it is](#identifying-recipients-whose-birthday-it-is).
 
@@ -175,7 +175,7 @@ vars.firstOfMarch = 1;
 }
 ```
 
-![](assets/birthday-workflow_usecase_3.png)
+![Guia Avançado da atividade de teste com um script de inicialização definindo a função isLeapYear.](assets/birthday-workflow_usecase_3.png)
 
 Adicione a seguinte condição na seção **[!UICONTROL Conditional forks]**:
 
@@ -183,7 +183,7 @@ Adicione a seguinte condição na seção **[!UICONTROL Conditional forks]**:
 vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 ```
 
-![](assets/birthday-workflow_usecase_4.png)
+![Guia de teste 1º de março e NÃO um ano bissexto, com condição Verdadeira vars.currentIsALeapYear == 0 &amp;&amp; vars.firstOfMarch == 1.](assets/birthday-workflow_usecase_4.png)
 
 ### Etapa 3: Selecionar todos os destinatários nascidos em 29 de fevereiro {#step-3--select-any-recipients-born-on-february-29th}
 
@@ -191,7 +191,7 @@ Crie uma atividade **[!UICONTROL Fork]** e vincule uma das transições de saíd
 
 Nesta consulta, selecione todos os destinatários cuja data de nascimento é 29 de fevereiro.
 
-![](assets/birthday-workflow_usecase_5.png)
+![Consulta selecionando destinatários nascidos em 29 de fevereiro: mês de data de nascimento igual a 2 e dia de data de nascimento igual a 29.](assets/birthday-workflow_usecase_5.png)
 
 Combine os resultados com uma atividade **[!UICONTROL Union]**.
 
@@ -207,4 +207,4 @@ Adicione uma atividade de **Entrega recorrente** com base no modelo de email de 
 >
 >Se as etapas de aprovação estiverem habilitadas para a campanha, as remessas serão enviadas apenas quando essas etapas tiverem sido confirmadas. Para obter mais informações, consulte esta seção.
 
-![](assets/birthday-workflow_usecase_1.png)
+![Fluxo de trabalho de aniversário: Agendador, consulta, teste de 1º de março, Bifurcação com consulta de ano bissexto, União e Entrega.](assets/birthday-workflow_usecase_1.png)

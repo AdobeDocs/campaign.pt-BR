@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '22'
-ht-degree: 100%
+source-wordcount: '38'
+ht-degree: 57%
 ---
 # Módulo nlserver{#nlserver-module}
 
@@ -32,4 +32,4 @@ ht-degree: 100%
 
 Uma atividade do **módulo nlserver** inicia um módulo nlserver com os parâmetros especificados na janela central.
 
-![](assets/nlserver_module_edit.png)
+![natividade do módulo lserver com uma área de Parâmetros vazia e o menu de personalização aberto nas opções de Atividade.](assets/nlserver_module_edit.png)

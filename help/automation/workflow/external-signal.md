@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 100%
+source-wordcount: '194'
+ht-degree: 86%
 ---
 # Sinal externo{#external-signal}
 
@@ -38,7 +38,7 @@ Consulte a documentação online sobre chamadas SOAP para obter mais informaçõ
 
 É possível configurar essa atividade para definir eventos se nenhum sinal for recebido. Para fazer isso, crie a atividade e clique na guia **[!UICONTROL Expiration]**. Clique no botão **[!UICONTROL Insert]** para criar e configurar um evento.
 
-![](assets/edit_signal.png)
+![Guia Expiração de sinal externo listando três expirações, com a janela Detalhes da expiração aberta](assets/edit_signal.png)
 
 A configuração das expirações é apresentada em [Expirações](define-approvals.md).
 
@@ -46,4 +46,4 @@ O campo **Delay** permite especificar um atraso de expiração nas unidades de s
 
 Cada linha representa um tipo de expiração e coincides com uma transição.
 
-![](assets/external_sign_diag.png)
+![Atividade de sinal externo com transições de saída Expiração, Expiração 2, Expiração 3 e Novo](assets/external_sign_diag.png)

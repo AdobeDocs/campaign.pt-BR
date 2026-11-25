@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 96%
+source-wordcount: '1202'
+ht-degree: 91%
 ---
 # Introdução ao marketing distribuído{#about-distributed-marketing}
 
@@ -103,7 +103,7 @@ Se uma entidade local se registra para uma campanha, isso é feito em um pedido 
 
 A lista de pacotes de campanha pode ser acessada na guia **Campanhas**: clique no link **[!UICONTROL Campaign packages]**.
 
-![](assets/mkg_dist_home_local_op.png)
+![Guia Campanhas: clicar em Pacotes de campanha no menu Navegação abre a lista de pacotes de campanha.](assets/mkg_dist_home_local_op.png)
 
 Essa janela permite que todos os operadores visualizem as campanhas disponíveis para sua agência local.
 
@@ -113,7 +113,7 @@ No caso de agências centrais, essa janela exibe todos os pacotes disponíveis n
 
 Comece especificando os operadores de entidade centrais e locais pela pasta **[!UICONTROL Access management]**.
 
-![](assets/s_advuser_mkg_dist_tree.png)
+![Árvore do Explorer com Administration > Access Management expandida, mostrando Operadores e entidades organizacionais.](assets/s_advuser_mkg_dist_tree.png)
 
 ### Operadores {#operators}
 
@@ -123,13 +123,13 @@ Os operadores centrais devem pertencer ao grupo de operadores **[!UICONTROL Cent
 
 Os operadores locais devem pertencer ao grupo de operadores **[!UICONTROL Local management]** ou ter o direito nomeado **[!UICONTROL LOCAL]**. Eles também devem estar vinculados à sua entidade local.
 
-![](assets/s_advuser_mkg_dist_local_create.png)
+![Guia de direitos de Acesso do Operador listando os grupos de segurança Gerenciamento local e Gerenciamento central.](assets/s_advuser_mkg_dist_local_create.png)
 
 ### Entidades organizacionais {#organizational-entities}
 
 Para criar uma entidade organizacional, clique na pasta **[!UICONTROL Administration > Access management > Organizational entities]** e clique no ícone **[!UICONTROL New]**, acima da lista de entidades.
 
-![](assets/s_advuser_mkg_dist_local_list.png)
+![Pasta de entidades organizacionais com o ícone Novo destacado acima da lista de entidades.](assets/s_advuser_mkg_dist_local_list.png)
 
 Cada entidade organizacional contém informações de identificação (etiqueta, nome interno, informações de contato etc.) e grupos envolvidos no processo de aprovação de pedidos. Eles são definidos na seção **[!UICONTROL Notifications and approvals]** localizada na guia **[!UICONTROL General]**.
 
@@ -152,7 +152,7 @@ O procedimento de implementação depende do tipo de pacote de campanha usado e 
 1. Criar entidades locais.
 1. Vincule destinatários com os operadores que gerenciam entidades locais.
 
-   ![](assets/mkg_dist_local_entity_association.png)
+   ![Formulário de destinatário com o campo Origem realçado, vinculando o destinatário a uma entidade local.](assets/mkg_dist_local_entity_association.png)
 
 1. Especificar direitos e regras de navegação para entidades locais
 1. Especifique o conjunto de campos necessários para a localização da campanha:

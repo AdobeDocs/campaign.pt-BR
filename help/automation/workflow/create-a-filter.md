@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 77%
+source-wordcount: '296'
+ht-degree: 57%
 ---
 # Criar um filtro {#creating-a-filter}
 
@@ -41,19 +41,19 @@ O nó **[!UICONTROL Administration > Configuration > Predefined filters]** cont�
 
 Por exemplo, a lista de operadores pode ser filtrada por **[!UICONTROL Active accounts]**:
 
-![](assets/query_editor_filter_sample_1.png)
+![Lista de operadores com o menu Filtros aberto e o filtro Contas ativas selecionado](assets/query_editor_filter_sample_1.png)
 
 O filtro correspondente contém a consulta no valor **[!UICONTROL Account disabled]** do esquema **[!UICONTROL Operators]**:
 
-![](assets/query_editor_filter_sample_2.png)
+![Lista de filtros predefinidos com o filtro Por logon ou rótulo selecionado, mostrando o rótulo, o nome interno e o tipo de documento](assets/query_editor_filter_sample_2.png)
 
 Para a mesma lista, o filtro **[!UICONTROL By login or label]** permite filtrar os dados na lista com base no valor inserido no campo de filtro:
 
-![](assets/query_editor_filter_sample_3.png)
+![Lista de operadores filtrada com agência digitada no campo Logon ou rótulo contém, retornando um operador](assets/query_editor_filter_sample_3.png)
 
 Ele é construído da seguinte maneira:
 
-![](assets/query_editor_filter_sample_4.png)
+![Por logon ou definição de filtro de rótulo com três condições de Filtro no rótulo, nome e descrição](assets/query_editor_filter_sample_4.png)
 
 Para corresponder às condições do filtro, a conta do operador deve verificar uma das seguintes condições:
 
@@ -63,11 +63,11 @@ Para corresponder às condições do filtro, a conta do operador deve verificar 
 
 >[!NOTE]
 >
->A função **[!UICONTROL Upper]** permite desativar a função com diferenciação de maiúsculas e minúsculas.
+>A função **[!UICONTROL Upper]** permite desativar a função que diferencia maiúsculas de minúsculas.
 
 A coluna **[!UICONTROL Taken into account if]** permite definir os critérios do aplicativo para essas condições de filtro. Aqui, os caracteres **$(/tmp/@text)** representam o conteúdo do campo de entrada vinculado ao filtro:
 
-![](assets/query_editor_filter_sample_5.png)
+![Lista de operadores com a agência inserida no campo Logon ou rótulo contém, retornando à agência de Londres](assets/query_editor_filter_sample_5.png)
 
 Aqui, **$(/tmp/@text)=&#39;agency&#39;**
 

@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1260'
-ht-degree: 100%
+source-wordcount: '1775'
+ht-degree: 70%
 ---
 # Consultar informações da entrega {#querying-delivery-information}
 
@@ -50,7 +50,7 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
 1. Abra o **[!UICONTROL Generic query editor]** e selecione o esquema **[!UICONTROL Recipient tracking logs]**.
 
-   ![](assets/query_editor_tracklog_05.png)
+   ![Janela de tipo de documento filtrada no rastreamento com logs de rastreamento de destinatários (nms) selecionados.](assets/query_editor_tracklog_05.png)
 
 1. Na janela **[!UICONTROL Data to extract]**, queremos criar uma agregação para coletar informações. Para fazer isso, adicione a chave primária (localizada acima do elemento principal de registros **[!UICONTROL Recipient tracking logs]**). A contagem de log de rastreamento é realizada neste campo **[!UICONTROL Primary key]**. A expressão editada será **[!UICONTROL x=count(primary key)]**. Ele vincula a soma de vários logs de rastreamento a um único endereço de e-mail.
 
@@ -58,27 +58,27 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
    * Clique no ícone **[!UICONTROL Add]** à direita do campo **[!UICONTROL Output columns]**. Na janela **[!UICONTROL Formula type]**, selecione a opção **[!UICONTROL Edit the formula using an expression]** e clique em **[!UICONTROL Next]**. Na janela **[!UICONTROL Field to select]**, clique em **[!UICONTROL Advanced selection]**.
 
-     ![](assets/query_editor_tracklog_06.png)
+     ![Campo para selecionar a janela para o esquema de log de rastreamento de destinatário com o botão de seleção Avançado realçado.](assets/query_editor_tracklog_06.png)
 
    * Na janela **[!UICONTROL Formula type]**, execute um processo na função agregada. Esse processo será uma contagem de chaves primárias.
 
      Selecione **[!UICONTROL Process on an aggregate function]** na seção **[!UICONTROL Aggregate]** e clique em **[!UICONTROL Count]**.
 
-     ![](assets/query_editor_nveau_18.png)
+     ![Janela de tipo de fórmula com Process em uma função de agregação e Count selecionada.](assets/query_editor_nveau_18.png)
 
      Clique em **[!UICONTROL Next]**.
 
    * Selecione o campo **[!UICONTROL Primary key (@id)]**. O output da coluna **[!UICONTROL count (primary key)]** está configurado.
 
-     ![](assets/query_editor_nveau_19.png)
+     ![Dados para extrair janela com a coluna de saída count(primary key) configurada.](assets/query_editor_nveau_19.png)
 
 1. Selecione o outro campo a ser exibido na coluna de saída. Na coluna **[!UICONTROL Available fields]**, abra o nó **[!UICONTROL Recipient]** e escolha **[!UICONTROL Email]**. Marque a caixa **[!UICONTROL Group]** com **[!UICONTROL Yes]** para agrupar os logs de rastreamento por endereço de email. Este grupo vincula cada log ao respectivo destinatário.
 
-   ![](assets/query_editor_nveau_20.png)
+   ![A janela de dados para extração com Email (Destinatário) foi adicionada como uma segunda coluna de saída e o Grupo foi definido como Sim.](assets/query_editor_nveau_20.png)
 
 1. Configure a classificação de coluna para que os destinatários mais ativos (com os maior número de logs de rastreamento) sejam exibidos primeiro. Verifique **[!UICONTROL Yes]** na coluna **[!UICONTROL Descending sort]**.
 
-   ![](assets/query_editor_nveau_64.png)
+   ![Janela de classificação com classificação Decrescente definida como Sim na coluna count(primary key).](assets/query_editor_nveau_64.png)
 
 1. É preciso então, filtrar os logs que interessam, ou seja, aqueles que estão abaixo de 2 semanas e abordam entregas relacionadas às vendas.
 
@@ -86,19 +86,19 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
    * Configure o filtro de dados. Para fazer isso, selecione **[!UICONTROL Filter conditions]** e clique em **[!UICONTROL Next]**.
 
-     ![](assets/query_editor_nveau_22.png)
+     ![Janela de filtragem de dados com condições de filtragem selecionadas na lista de filtros de restrição.](assets/query_editor_nveau_22.png)
 
    * Recuperar logs de rastreamento em um determinado período de uma entrega específica. São necessárias três condições de filtro: duas condições de data para definir o período de pesquisa entre 2 semanas antes da data atual e o dia antes da data atual; e outra condição para restringir a pesquisa a uma entrega específica.
 
      Na janela **[!UICONTROL Target element]**, configure a data a partir da qual os logs de rastreamento serão considerados. Clique em **[!UICONTROL Add]**. Uma linha de condição é exibida. Edite a coluna **[!UICONTROL Expression]** ao clicar na função **[!UICONTROL Edit expression]**. Na janela **[!UICONTROL Field to select]**, selecione **[!UICONTROL Date (@logDate)]**.
 
-     ![](assets/query_editor_nveau_23.png)
+     ![Campo para selecionar a janela para a lista de esquema do log de rastreamento do destinatário Date, External Id e Primary key.](assets/query_editor_nveau_23.png)
 
      Selecione o operador **[!UICONTROL greater than]**. Na coluna **[!UICONTROL Value]**, clique em **[!UICONTROL Edit expression]**, e na janela **[!UICONTROL Formula type]**, selecione **[!UICONTROL Process on dates]**. Por fim, em **[!UICONTROL Current date minus n days]**, digite &quot;15&quot;.
 
      Clique em **[!UICONTROL Finish]**.
 
-     ![](assets/query_editor_nveau_24.png)
+     ![Janela do tipo Fórmula com Process on dates e Current date minus n days definida como 15, e Finish realçado.](assets/query_editor_nveau_24.png)
 
    * Para selecionar a data final da pesquisa de log de rastreamento, crie uma segunda condição clicando em **[!UICONTROL Add]**. Na coluna **[!UICONTROL Expression]**, escolha novamente **[!UICONTROL Date (@logDate)]**.
 
@@ -106,7 +106,7 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
      Clique em **[!UICONTROL Finish]**.
 
-     ![](assets/query_editor_nveau_65.png)
+     ![Janela do tipo Fórmula com Process on dates e Current date minus n days definida como 1, e Finish realçado.](assets/query_editor_nveau_65.png)
 
      Agora, devemos configurar a terceira condição do filtro, ou seja, o rótulo de entrega que nossa consulta aborda.
 
@@ -114,18 +114,18 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
      Clique em **[!UICONTROL Finish]**.
 
-     ![](assets/query_editor_nveau_66.png)
+     ![Campo para selecionar a janela com o campo Rótulo (@label) realçado e Término realçado.](assets/query_editor_nveau_66.png)
 
      Procure uma entrega contendo a palavra &quot;sales&quot;. Se você não lembrar o rótulo exato, é possível escolher o operador **[!UICONTROL contains]** e digitar &quot;vendas&quot; na coluna **[!UICONTROL Value]**.
 
-     ![](assets/query_editor_nveau_25.png)
+     ![Janela de elemento de público alvo com data após 15 dias antes, data antes de 1 dia antes e rótulo contém sales.](assets/query_editor_nveau_25.png)
 
 1. Clique em **[!UICONTROL Next]** até chegar à janela **[!UICONTROL Data preview]**. Nenhuma formatação é necessária.
 1. Na janela **[!UICONTROL Data preview]**, clique em **[!UICONTROL Start the preview of the data]** para ver o número de logs de rastreamento para cada destinatário de entrega.
 
    O resultado é exibido em ordem decrescente.
 
-   ![](assets/query_editor_tracklog_04.png)
+   ![Contagens de log de rastreamento da janela de visualização de dados por email do destinatário em ordem decrescente, de 6 para 2.](assets/query_editor_tracklog_04.png)
 
    O número mais alto de logs para um usuário é de 6 para esta entrega. 5 usuários diferentes abriram o e-mail de entrega ou clicaram em um dos links no e-mail.
 
@@ -138,33 +138,33 @@ Para criar este exemplo, aplique as seguintes etapas:
 1. Arraste e solte uma atividade **[!UICONTROL Query]** em um fluxo de trabalho e abra a atividade.
 1. Clique em **[!UICONTROL Edit query]** e defina as dimensões do filtro e do direcionamento para **[!UICONTROL Recipients]**.
 
-   ![](assets/query_recipients_1.png)
+   ![Janela de dimensão de filtragem e direcionamento com ambas as dimensões definidas como Recipients e Condições de filtragem selecionadas.](assets/query_recipients_1.png)
 
 1. Selecione **[!UICONTROL Filtering conditions]** e clique em **[!UICONTROL Next]**.
 1. Clique no botão **[!UICONTROL Add]** e selecione **[!UICONTROL Tracking logs]**.
 1. Defina o **[!UICONTROL Operator]** da expressão **[!UICONTROL Tracking logs]** para **[!UICONTROL Do not exist such as]**.
 
-   ![](assets/query_open_1.png)
+   ![Janela de filtro com a expressão de logs de rastreamento (trackingLog) e não existem, como o operador.](assets/query_open_1.png)
 
 1. Adicione outra expressão. Selecione **[!UICONTROL Type]** na categoria **[!UICONTROL URL]**.
 1. Em seguida, defina seu **[!UICONTROL Operator]** como **[!UICONTROL equal to]** e o **[!UICONTROL Value]** como **[!UICONTROL Open]**.
 
-   ![](assets/query_open_2.png)
+   ![Janela de filtro com uma condição Type (url/@type) definida como igual a Open na expressão de logs de rastreamento.](assets/query_open_2.png)
 
 1. Adicione outra expressão e selecione **[!UICONTROL Date]**. O **[!UICONTROL Operator]** deve ser definido como **[!UICONTROL on or after]**.
 
-   ![](assets/query_open_3.png)
+   ![Janela de filtro com uma condição Date of Tracking logs (@logDate) usando o operador on ou after, valor ainda vazio.](assets/query_open_3.png)
 
 1. Para definir o valor last 7 days, clique em **[!UICONTROL Edit expression]** no campo **[!UICONTROL Value]**.
 1. Na categoria **[!UICONTROL Function]**, selecione **[!UICONTROL Current date minus n days]** e adicione o número de dias que deseja segregar. Aqui, devemos selecionar os últimos 7 dias.
 
-   ![](assets/query_open_4.png)
+   ![Janela de tipo de fórmula com Process on dates e Current date minus n days definida como 7.](assets/query_open_4.png)
 
 A transição de saída contém destinatários que não abriram um e-mail nos últimos 7 dias.
 
 Se, caso contrário, quiser filtrar os destinatários que abriram pelo menos um e-mail, a sua consulta deverá ser como a seguinte. Observe que, nesse caso, o **[!UICONTROL Filtering dimension]** deve ser definido como **[!UICONTROL Tracking logs (Recipients)]**.
 
-![](assets/query_open_5.png)
+![Janela de filtro com a condição Chave primária (@id) diferente de 0 e o resumo da consulta abaixo dela.](assets/query_open_5.png)
 
 ## Destinatários que abriram uma entrega {#recipients-who-have-opened-a-delivery}
 
@@ -172,25 +172,25 @@ O exemplo a seguir mostra como selecionar perfis que abriram uma entrega nas úl
 
 1. Para direcionar perfis que tenham aberto uma entrega, é necessário usar os logs de rastreamento. são armazenados em uma tabela vinculada: comece selecionando essa tabela na lista suspensa do campo **[!UICONTROL Filtering dimension]**, como mostrado abaixo:
 
-   ![](assets/s_advuser_query_sample1.0.png)
+   ![Lista suspensa de dimensão de filtro com log de rastreamento de destinatário entre as tabelas disponíveis.](assets/s_advuser_query_sample1.0.png)
 
 1. Com relação às condições do filtro, clique no ícone **[!UICONTROL Edit expression]** dos critérios mostrados na estrutura de subárvore dos logs de rastreamento. Selecione o campo **[!UICONTROL Date]**.
 
-   ![](assets/s_advuser_query_sample1.1.png)
+   ![Dimensão do filtro definida como Log de rastreamento do destinatário, com o campo Data selecionado na janela Campo a ser selecionado.](assets/s_advuser_query_sample1.1.png)
 
    Clique em **[!UICONTROL Finish]** para confirmar a seleção.
 
    Para recuperar somente os logs de rastreamento que tenham menos de duas semanas, selecione o operador **[!UICONTROL Greater than]**.
 
-   ![](assets/s_advuser_query_sample1.4.png)
+   ![Filtrar janela em Date (@logDate) com o menu suspenso do operador aberto e o operador after realçado.](assets/s_advuser_query_sample1.4.png)
 
    Em seguida, clique no ícone **[!UICONTROL Edit expression]** na coluna **[!UICONTROL Value]** para definir a fórmula de cálculo a ser aplicada. Selecione a fórmula **[!UICONTROL Current date minus n days]** e insira 15 no campo correspondente.
 
-   ![](assets/s_advuser_query_sample1.5.png)
+   ![Janela do tipo Fórmula aberta a partir da expressão Edit, com a data Current menos n dias definida como 15.](assets/s_advuser_query_sample1.5.png)
 
    Clique em **[!UICONTROL Finish]** na janela da fórmula. Na janela do filtro, clique na guia **[!UICONTROL Preview]** para verificar os critérios de direcionamento.
 
-   ![](assets/s_advuser_query_sample1.6.png)
+   ![Janela de filtro na guia de Visualização listando os 53 destinatários que correspondem aos critérios de direcionamento.](assets/s_advuser_query_sample1.6.png)
 
 ## Filtragem do comportamento de destinatários após uma entrega {#filtering-recipients--behavior-folllowing-a-delivery}
 
@@ -208,19 +208,19 @@ Em um fluxo de trabalho, as caixas **[!UICONTROL Query]** e **[!UICONTROL Split]
 
 As etapas a seguir mostram como configurar a caixa **[!UICONTROL Split]** ao integrar dois comportamentos diferentes:
 
-1. Insira a caixa **[!UICONTROL Split]** no fluxo de trabalho. Esta caixa separa os destinatários da primeira entrega em duas entregas subsequentes. O detalhamento ocorre com base nas condições de filtragem vinculadas ao comportamento do destinatário durante a primeira entrega.
+1. Insira a caixa **[!UICONTROL Split]** no fluxo de trabalho. Esta caixa detalha os destinatários da primeira entrega nas duas entregas subsequentes. O detalhamento ocorre com base nas condições de filtragem vinculadas ao comportamento do destinatário durante a primeira entrega.
 
-   ![](assets/query_editor_ex_09.png)
+   ![Fluxo de trabalho com Consulta, Entrega de oferta esportiva de verão, Aguardar 4 dias e uma Divisão com base na atividade comportamental.](assets/query_editor_ex_09.png)
 
 1. Abra a caixa **[!UICONTROL Split]**. Na guia **[!UICONTROL General]**, digite um rótulo: **Split based on behavior** por exemplo.
 
-   ![](assets/query_editor_ex_04.png)
+   ![Divida a guia Atividade Geral com o campo Rótulo definido como Dividir com base no comportamento.](assets/query_editor_ex_04.png)
 
 1. Na guia **[!UICONTROL Subsets]**, defina a primeira ramificação. Por exemplo, insira o rótulo **Clicked** para esta ramificação.
 1. Selecione a opção **[!UICONTROL Add a filtering condition on the incoming population]**. Clique em **[!UICONTROL Edit]**.
 1. Na janela **[!UICONTROL Targeting and filtering dimension]**, clique duas vezes no filtro **[!UICONTROL Recipients of a delivery]**.
 
-   ![](assets/query_editor_ex_05.png)
+   ![Guia Dividir Subconjuntos com Adicionar uma condição de filtragem selecionada e Destinatários de uma entrega destacados.](assets/query_editor_ex_05.png)
 
 1. Na janela **[!UICONTROL Target element]**, selecione o comportamento que deseja aplicar a essa ramificação: **[!UICONTROL Recipients having clicked (email)]**.
 
@@ -228,23 +228,23 @@ As etapas a seguir mostram como configurar a caixa **[!UICONTROL Split]** ao int
 
    Esta é a entrega &quot;oferta de artigos de esportes aquáticos&quot;.
 
-   ![](assets/query_editor_ex_08.png)
+   ![Janela do elemento de destino com Comportamento definido como Destinatários que clicaram (email) e Entrega especificada pela transição.](assets/query_editor_ex_08.png)
 
 1. Defina a segunda ramificação. Esta ramificação incluirá o e-mail de acompanhamento com o mesmo conteúdo da primeira entrega. Acesse a guia **[!UICONTROL Subsets]** e clique em **[!UICONTROL Add]** para criá-la.
 
-   ![](assets/query_editor_ex_06.png)
+   ![Divida a guia Subconjuntos com o subconjunto Clicado e o botão Adicionar realçado para criar um segundo subconjunto.](assets/query_editor_ex_06.png)
 
 1. Outra sub-guia é exibida. Nomeie de &quot;**Não clicou**&quot;.
 1. Clique em **[!UICONTROL Add a filtering condition for the incoming population]**. Em seguida, clique em **[!UICONTROL Edit...]**.
 
-   ![](assets/query_editor_ex_07.png)
+   ![Guia Dividir Subconjuntos para o subconjunto Não clicou com o link Editar realçado para a condição de filtragem.](assets/query_editor_ex_07.png)
 
 1. Clique em **[!UICONTROL Delivery recipients]** na janela **[!UICONTROL Targeting and filtering dimension]**.
 1. Na janela **[!UICONTROL Target element]**, selecione a comportamento **[!UICONTROL Recipients who did not click (email)]**. Selecione a opção **[!UICONTROL Delivery specified by the transition]** como mostrado na última ramificação.
 
    A caixa **[!UICONTROL Split]** está totalmente configurada.
 
-   ![](assets/query_editor_ex_03.png)
+   ![Fluxo de trabalho no qual a Divisão envia os destinatários Clicados para a oferta do Watersport e os que não foram clicados para o lembrete.](assets/query_editor_ex_03.png)
 
 Abaixo está a lista dos vários componentes configurados por padrão:
 
@@ -256,4 +256,4 @@ Abaixo está a lista dos vários componentes configurados por padrão:
 * **[!UICONTROL Recipients who didn't open or click (email),]**
 * **[!UICONTROL Recipients who didn't click (email).]**
 
-  ![](assets/query_editor_ex_02.png)
+  ![Lista de comportamentos do elemento de destino com Todos os destinatários, aberta ou clicada, clicada, falhou e não clicou nas opções.](assets/query_editor_ex_02.png)

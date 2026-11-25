@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 100%
+source-wordcount: '146'
+ht-degree: 73%
 ---
 # SMS de entrada{#inbound-sms}
 
@@ -41,7 +41,7 @@ A atividade de **SMS de Entrada** permite baixar e processar mensagens de texto 
 
 ## Propriedades {#properties}
 
-![](assets/sms_rec_edit.png)
+![Atividade de SMS de entrada com o campo Conta externa, as mensagens de Filtros para processar links e uma área de Script.](assets/sms_rec_edit.png)
 
 A primeira guia da atividade de **SMS de Entrada** permite inserir os parâmetros de roteamento para mensagens SMS e inserir o script a ser executado no recebimento de cada mensagem. A segunda guia permite atribuir um cronograma à atividade e a terceira guia define as condições de expiração da atividade.
 
@@ -49,7 +49,7 @@ A primeira guia da atividade de **SMS de Entrada** permite inserir os parâmetro
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
-   ![](assets/sms_rec_edit_2.png)
+   ![Guia Agendamento de SMS de Entrada com Execução de plano marcada e Interromper agendamento assim que um SMS for recebido marcado.](assets/sms_rec_edit_2.png)
 
 1. **[!UICONTROL Expiration]**
 

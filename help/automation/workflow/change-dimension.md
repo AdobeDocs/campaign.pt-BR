@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 67%
+source-wordcount: '589'
+ht-degree: 47%
 ---
 # Mudar dimensão{#change-dimension}
 
@@ -42,11 +42,11 @@ Para configurar a atividade **[!UICONTROL Change dimension]**, siga as etapas ab
 
 1. Selecione a nova dimensão de direcionamento por meio do campo **[!UICONTROL Change dimension]**.
 
-   ![](assets/s_user_change_dimension_param1.png)
+   ![Alterar campo de dimensão da atividade com o seletor de campos aberto e Assinaturas selecionadas como a nova dimensão](assets/s_user_change_dimension_param1.png)
 
 1. Durante a mudança de dimensão, é possível manter todos os elementos ou selecioná-los para serem mantidos na saída. No exemplo a seguir, o número máximo de duplicados é definido como 2.
 
-   ![](assets/s_user_change_dimension_limit.png)
+   ![Opção Limitar o número de itens no novo documento de direcionamento selecionado com o campo Limite definido como 2](assets/s_user_change_dimension_limit.png)
 
    Quando você escolhe manter apenas um registro, uma coleção é exibida no esquema de trabalho: essa coleção representa todos os registros que não serão direcionados ao resultado final (já que apenas um registro é mantido). Como todas as outras coleções, esta é a que permite calcular agregações ou recuperar informações em colunas.
 
@@ -54,7 +54,7 @@ Para configurar a atividade **[!UICONTROL Change dimension]**, siga as etapas ab
 
 1. Se optar por não manter todas essas informações, poderá configurar o modo de gerenciamento de duplicados.
 
-   ![](assets/s_user_change_dimension_param2.png)
+   ![Caixa de diálogo de desduplicação listando os campos de email e número de conta com as setas que definem sua prioridade](assets/s_user_change_dimension_param2.png)
 
    As setas azuis permitem definir a prioridade de processamento de duplicados.
 
@@ -66,7 +66,7 @@ Para configurar a atividade **[!UICONTROL Change dimension]**, siga as etapas ab
 
    * Clique no link **[!UICONTROL Add data...]** e selecione **[!UICONTROL Data linked to the filtering dimension]**.
 
-     ![](assets/wf_change-dimension_sample_01.png)
+     ![Guia Resultado Adicionar link de dados abrindo o assistente de dados adicionais com Dados vinculados à dimensão de filtro selecionada](assets/wf_change-dimension_sample_01.png)
 
      >[!NOTE]
      >
@@ -74,22 +74,22 @@ Para configurar a atividade **[!UICONTROL Change dimension]**, siga as etapas ab
 
    * Selecione a dimensão de direcionamento anterior (antes da troca de eixo) e selecione **[!UICONTROL Zip Code]** na árvore secundária **[!UICONTROL Location]** do destinatário e clique em **[!UICONTROL Edit expression]**.
 
-     ![](assets/wf_change-dimension_sample_02.png)
+     ![Assistente de dados adicionais com CEP/Código Postal da subárvore Location adicionado como uma coluna de saída e Edit expression](assets/wf_change-dimension_sample_02.png)
 
    * Clique em **[!UICONTROL Advanced selection]** e escolha **[!UICONTROL Edit the formula using an expression]**.
 
-     ![](assets/wf_change-dimension_sample_03.png)
+     ![Botão de seleção avançada que abre Tipo de fórmula com Editar a fórmula usando uma expressão selecionada](assets/wf_change-dimension_sample_03.png)
 
    * Use as funções oferecidas na lista e especifique o cálculo a ser executado.
 
-     ![](assets/wf_change-dimension_sample_04.png)
+     ![Editor de expressão com a Subcadeia de fórmula do código postal do caractere 1 com comprimento 2 e a lista de funções](assets/wf_change-dimension_sample_04.png)
 
    * Finalmente, insira o rótulo da coluna que acabou de criar.
 
-     ![](assets/wf_change-dimension_sample_05.png)
+     ![Colunas de saída com o rótulo County e a expressão Substring(zip/código postal, 1, 2)](assets/wf_change-dimension_sample_05.png)
 
 1. Execute o fluxo de trabalho para exibir o resultado dessa configuração. Compare os dados nas tabelas antes e depois da atividade de alteração de dimensão e compare a estrutura das tabelas do fluxo de trabalho, conforme mostrado nos exemplos a seguir:
 
-   ![](assets/wf_change-dimension_sample_06.png)
+   ![Exibir a opção de destino na transição antes da dimensão Change, com seus dados e esquema na população View](assets/wf_change-dimension_sample_06.png)
 
-   ![](assets/wf_change-dimension_sample_07.png)
+   ![Exibir a opção de destino após a dimensão Change, mostrando os dados com a coluna County e o novo esquema](assets/wf_change-dimension_sample_07.png)

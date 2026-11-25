@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 83%
+source-wordcount: '100'
+ht-degree: 71%
 ---
 # Alerta{#alert}
 
@@ -32,6 +32,6 @@ ht-degree: 83%
 
 Uma atividade **Alert** envia uma mensagem a um grupo de operadores. Ela opera da mesma forma que uma atividade de aprovação, mas nenhuma resposta é esperada nesse caso.
 
-![](assets/edit_alerte.png)
+![Atividade de alerta com o Grupo de tipo de atribuição, o Atribuído e o Título e corpo da mensagem.](assets/edit_alerte.png)
 
 Um alerta não é persistente e, portanto, não é visível no Console do cliente. Os operadores do grupo atribuído devem ter um endereço de e-mail completo para receber a notificação. A configuração dessa atividade é semelhante àquela de um **Approval**. O modelo de entrega padrão usado para alertar os operadores é o &quot;alertAssignee&quot;.

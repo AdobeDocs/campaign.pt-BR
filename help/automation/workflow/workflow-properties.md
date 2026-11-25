@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 80%
+source-wordcount: '684'
+ht-degree: 75%
 ---
 # Propriedades do fluxo de trabalho{#workflow-properties}
 
@@ -35,7 +35,7 @@ ht-degree: 80%
 
 A guia **[!UICONTROL Execution]** da janela **[!UICONTROL Properties]** em um fluxo de trabalho está dividida em três seções:
 
-![](assets/wf_execution_tab.png)
+![Guia Execução com as seções Agendador, Execução e Gerenciamento de erros das propriedades do fluxo de trabalho.](assets/wf_execution_tab.png)
 
 ### Scheduler {#scheduler}
 
@@ -65,7 +65,7 @@ Esta seção só é exibida nos fluxos de trabalho da campanha.
 
   Os queries são exibidos em uma guia **[!UICONTROL SQL logs]** adicionada ao fluxo de trabalho (exceto fluxos de trabalho da campanha) e à atividade **[!UICONTROL Properties]** quando a opção está habilitada. A aba **[!UICONTROL Audit]** também inclui queries SQL.
 
-  ![](assets/wf_tab_log_sql.png)
+  ![Janela de fluxo de trabalho com a guia de logs SQL realçada ao lado das guias Diagrama e Auditoria.](assets/wf_tab_log_sql.png)
 
 * **[!UICONTROL Execute in the engine]**
 
@@ -102,7 +102,7 @@ Esta seção só é exibida nos fluxos de trabalho da campanha.
 
   Os operadores envolvidos serão notificados por e-mail, se houver um endereço de e-mail em seu perfil. Para definir supervisores de fluxo de trabalho, vá até o campo **[!UICONTROL Supervisor(s)]** das propriedades (guia **[!UICONTROL General]**).
 
-  ![](assets/wf-properties_select-supervisors.png)
+  ![Guia Geral com a lista suspensa de Supervisor(es) aberta(s) e supervisores de Fluxo de Trabalho realçados.](assets/wf-properties_select-supervisors.png)
 
   O modelo padrão **[!UICONTROL Notification to a workflow supervisor]** inclui um link para acessar o Console do Cliente do Adobe Campaign pela Web para que o recipient possa trabalhar no problema quando estiver conectado.
 

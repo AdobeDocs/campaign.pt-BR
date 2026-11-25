@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 82%
+source-wordcount: '436'
+ht-degree: 79%
 ---
 # Gerenciamento de dados SQL{#sql-data-management}
 
@@ -73,7 +73,7 @@ Consulte [Código SQL](sql-code-and-javascript-code.md#important-notes) para obt
 
    Caso contrário, digite ou copie e cole o script SQL na área dedicada.
 
-   ![](assets/sql_datamanagement.png)
+   ![Atividade de Gerenciamento de Dados SQL com Destinatários de esquema de Saída e um script SQL usando os nomes de tabela de transição de entrada](assets/sql_datamanagement.png)
 
    A atividade permite usar as seguintes variáveis no script:
 

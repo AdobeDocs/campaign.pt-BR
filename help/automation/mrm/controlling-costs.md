@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 93%
+source-wordcount: '3051'
+ht-degree: 74%
 ---
 # Controlar custos{#controlling-costs}
 
@@ -40,7 +40,7 @@ Os custos comprometidos com os vários processos de uma campanha são cobrados d
 
 O gerenciamento e o acompanhamento dos orçamentos são centralizados em um nó dedicado da árvore do Adobe Campaign. Isso permite monitorar os valores alocados, reservados, comprometidos e gastos na mesma visão e para todos os orçamentos.
 
-![](assets/s_ncs_user_budget_node_02.png)
+![Nó de orçamentos da árvore de Gerenciamento de Campanha com o orçamento de eMarketing mostrando valores e categorias de despesas.](assets/s_ncs_user_budget_node_02.png)
 
 As etapas a seguir devem ser aplicadas para implementar o gerenciamento de orçamento usando MRM:
 
@@ -62,11 +62,11 @@ Para criar um orçamento, siga as etapas abaixo:
 1. Defina o período de validade inserindo as datas inicial e final. Estas informações são apenas indicativas.
 1. Crie as categorias de despesas às quais os custos atribuídos a esse orçamento para campanhas, tarefas etc. podem ser vinculados. [Saiba mais](#expense-categories).
 
-![](assets/s_ncs_user_budget_create_and_save.png)
+![Novo formulário de orçamento com rótulo, agenda, Valor alocado e as categorias de despesas de Design, Recursos e Dados.](assets/s_ncs_user_budget_create_and_save.png)
 
 >[!NOTE]
 >
->Você pode selecionar um orçamento relacionado. Para obter mais informações, consulte [esta seção](#linking-a-budget-to-another).
+>Você pode selecionar um orçamento relacionado. Para obter mais informações, consulte [Vincular um orçamento a outro](#linking-a-budget-to-another).
 >
 
 ### Calcular valores {#calculating-amounts}
@@ -79,7 +79,7 @@ Cada orçamento é definido por um valor inicial que será diminuído com os cus
 
 Para campanhas, de acordo com o nível de compromisso, um custo pode ser planejado, comprometido ou reservado para uma ação futura.
 
-![](assets/s_user_cost_op_engaged.png)
+![A seção Orçamento da Campanha com a lista de nível Compromisso aberta mostrando Planejado, Reservado e Comprometido.](assets/s_user_cost_op_engaged.png)
 
 >[!CAUTION]
 >
@@ -89,11 +89,11 @@ Para campanhas, de acordo com o nível de compromisso, um custo pode ser planeja
 
 Por exemplo, o custo planejado estimado de uma campanha da web é 45.000 Euros.
 
-![](assets/s_user_edit_budget_node_impact_0.png)
+![Seção do orçamento da campanha com um custo provisional estimado de 45.000, cobrado no orçamento da Web no nível Planejado.](assets/s_user_edit_budget_node_impact_0.png)
 
 Para a campanha, quando o status de criação do orçamento é estabelecido como **[!UICONTROL Defined]**, o custo real da campanha (ou o custo calculado) é inserido nos totais do orçamento.
 
-![](assets/s_user_budget_in_op_a.png)
+![Seção Orçamento da campanha com o campo Status do processo definido como Definido para que os custos sejam consolidados na execução.](assets/s_user_budget_in_op_a.png)
 
 De acordo com o nível de compromisso do orçamento da campanha, o valor é inserido nos campos **[!UICONTROL Planned]**, **[!UICONTROL Reserved]** ou **[!UICONTROL Committed]**.
 
@@ -102,15 +102,15 @@ O nível de comprometimento pode ser modificado:
 * no nível da **campanha**, na janela **[!UICONTROL Budget]**, encontrada na guia **[!UICONTROL Edit]**. É onde os orçamentos, custos e despesas são configurados.
 * no nível de **tarefas**, na janela **[!UICONTROL Expenses and revenues]**.
 
-![](assets/s_user_op_engagement_level_costs.png)
+![Seção de Orçamento da Campanha com a lista de nível Compromisso aberta, acima da guia Despesas listando uma linha de despesa.](assets/s_user_op_engagement_level_costs.png)
 
 Quando o status for **[!UICONTROL Reserved]**, a atualização é executada automaticamente para o orçamento cobrado.
 
-![](assets/s_user_edit_budget_node_impact_2.png)
+![Formulário de orçamento em que o Valor reservado mostra 45.000 depois que o nível de compromisso da campanha foi definido como Reservado.](assets/s_user_edit_budget_node_impact_2.png)
 
 O procedimento é o mesmo em nível de tarefa.
 
-![](assets/s_user_edit_budget_node_impact_task.png)
+![Janela de receitas e despesas de tarefas com a lista de nível Compromisso aberta mostrando Planejado, Reservado e Comprometido.](assets/s_user_edit_budget_node_impact_task.png)
 
 Quando uma despesa cria uma fatura e o pagamento é efetuado, seu valor é inserido no campo **[!UICONTROL Invoiced]**.
 
@@ -120,7 +120,7 @@ Os valores podem ser distribuídos em várias categorias de despesas para melhor
 
 Para adicionar uma categoria, clique no botão **[!UICONTROL Add]** na seção inferior da janela.
 
-![](assets/s_user_budget_category.png)
+![Formulário de orçamento com o botão Adicionar da lista de categorias de Despesas para as categorias Design, Impressão e Web.](assets/s_user_budget_category.png)
 
 É possível selecionar uma categoria dentre as existentes ou definir uma nova categoria, digitando-a diretamente no campo. Quando confirmar a entrada, uma mensagem de confirmação permite adicionar essa categoria à lista de categorias existentes e associá-la a uma Natureza, se necessário. Essas informações serão usadas nos relatórios de orçamento.
 
@@ -128,11 +128,11 @@ Para adicionar uma categoria, clique no botão **[!UICONTROL Add]** na seção i
 
 É possível vincular um orçamento a um orçamento principal. Para fazer isso, selecione o orçamento principal no campo **[!UICONTROL related budget]** dos orçamentos secundários.
 
-![](assets/budget_link.png)
+![Formulário de orçamento secundário com o campo Orçamento relacionado definido para o orçamento principal de eMarketing.](assets/budget_link.png)
 
 Uma guia adicional será adicionada ao orçamento principal para exibir a lista de orçamentos relacionados.
 
-![](assets/budget_link_new_tab.png)
+![Orçamento principal com a guia Orçamentos adicionada listando seus orçamentos vinculados.](assets/budget_link_new_tab.png)
 
 Essas informações são inseridas nos relatórios de orçamento.
 
@@ -140,7 +140,7 @@ Essas informações são inseridas nos relatórios de orçamento.
 
 As linhas de despesa são adicionadas automaticamente ao orçamento. Elas são criadas durante a análise de entrega e quando uma tarefa é concluída.
 
-![](assets/s_ncs_user_budget_line_edit.png)
+![Guia Despesas de Orçamento com o botão Detalhe abrindo uma linha de despesa com sua campanha, entrega e divisão de categoria de custo.](assets/s_ncs_user_budget_line_edit.png)
 
 Para cada campanha, entrega ou tarefa, os custos gerados são agrupados nas linhas de despesa do orçamento ao qual são descontadas. Essas linhas de despesas são criadas de acordo com as linhas de custo do provedor de serviços relacionadas e calculadas por meio das estruturas de custo associadas.
 
@@ -156,15 +156,15 @@ No exemplo acima, a linha de despesa editada contém os custos calculados para a
 
 O cálculo de custo para essa entrega baseia-se nas categorias de custo selecionadas para o provedor de serviços relacionado:
 
-![](assets/s_user_edit_del_supplier_costs.png)
+![Linha de despesa vinculada a uma entrega cuja guia Mala Direta lista as categorias de custo do provedor de serviços.](assets/s_user_edit_del_supplier_costs.png)
 
 De acordo com as categorias de custo selecionadas, as estruturas de custo correspondentes são aplicadas a fim de calcular as linhas de custo. Neste exemplo, para o provedor de serviços relacionado, as estruturas de custo são as seguintes:
 
-![](assets/s_user_edit_node_supplier_costs.png)
+![Guia Estrutura de Custo de Serviço com os Elementos Gráficos - Detalhes da estrutura de custo 01: canal de Correspondência Direta, por mensagem, linear.](assets/s_user_edit_node_supplier_costs.png)
 
 >[!NOTE]
 >
->As categorias e estruturas de custo são apresentadas em [esta página](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
+>As categorias e estruturas de custo são apresentadas em [Criar um provedor de serviços e suas categorias de custo](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
 
 ## Compromisso de custo, cálculo e cobrança {#cost-commitment--calculation-and-charging}
 
@@ -180,7 +180,7 @@ Os custos dividem-se em três categorias:
 
    Essa quantia é entrada manualmente e pode ser dividida em várias categorias de despesas. Para o detalhamento de um custo, clique no link **[!UICONTROL Breakdown...]** e, em seguida, no botão **[!UICONTROL Add]** para definir uma novo valor.
 
-   ![](assets/s_user_edit_budget_tab_ventil.png)
+   ![Edite a janela de detalhamento de custo a partir do link de detalhamento de custo provisional estimado, dividindo o custo por categoria.](assets/s_user_edit_budget_tab_ventil.png)
 
    É possível associar cada custo com uma categoria para que o detalhamento de custos por categoria de despesa possa ser visualizada posteriormente no orçamento relacionado e nos relatórios de orçamento.
 
@@ -223,29 +223,29 @@ Vamos criar uma campanha com:
 
 1. Defina um orçamento de 10.000 euros no campo **[!UICONTROL Allocated]** da seção **[!UICONTROL Amounts]**. Adicione duas categorias de despesas na seção inferior da janela:
 
-![](assets/s_user_cost_mgmt_sample_1.png)
+![Formulário de orçamento com 10.000 itens alocados e duas categorias de despesas, 1ª categoria e 2ª categoria.](assets/s_user_cost_mgmt_sample_1.png)
 
 #### Etapa 2 - Configurar o provedor de serviços e definir as estruturas de custo {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Crie um provedor de serviços e um modelo de serviço com a estrutura de custo do nó **[!UICONTROL Administration > Campaigns]**. Para obter mais informações, consulte [esta seção](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
+1. Crie um provedor de serviços e um modelo de serviço com a estrutura de custo do nó **[!UICONTROL Administration > Campaigns]**. Para obter mais informações, consulte [Criar um provedor de serviços e suas categorias de custo](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
 
    Para entregas de correspondência direta, crie **[!UICONTROL Envelopes]** de categorias de custo (tipos 114x229 e 162x229), **[!UICONTROL Postage]** e **[!UICONTROL Print]** (tipos A3 e A4). E, em seguida, crie as seguintes estruturas de custo:
 
-   ![](assets/s_user_cost_mgmt_sample_2.png)
+   ![Envelopes de estruturas de custo - 114x229, Postagem - Padrão e Imprimir - A4: Correspondência direta, por mensagem, valores lineares.](assets/s_user_cost_mgmt_sample_2.png)
 
 1. Adicione um custo fixo (nas categorias de custo) cujo cálculo é fixo e cuja quantidade está em branco (na estrutura de custo correspondente) e que será especificada individualmente para cada entrega.
 
-   ![](assets/s_user_cost_mgmt_sample_5.png)
+   ![Custo Fixo da estrutura de custos - Design com o canal de Correspondência Direta, Cálculo fixo e um valor em branco.](assets/s_user_cost_mgmt_sample_5.png)
 
    Para tarefas, crie as duas categorias de custo a seguir:
 
    * **[!UICONTROL Room reservation]** (Pequena sala e Sala grande), com uma estrutura de custo **fixa** na quantidade de 300 e 500 euros:
 
-   ![](assets/s_user_cost_mgmt_sample_6.png)
+   ![Reserva de sala da estrutura de custo - Grande para o canal Tarefa com um cálculo Fixo e uma quantidade de 500.](assets/s_user_cost_mgmt_sample_6.png)
 
    * **[!UICONTROL Creation]** (**tipo de modelo de conteúdo**), com uma estrutura de custo **diária** de 300 euros:
 
-   ![](assets/s_user_cost_mgmt_sample_7.png)
+   ![Design da estrutura de custo - Modelo de conteúdo para o canal de Tarefa com um cálculo Diário e uma quantidade de 300.](assets/s_user_cost_mgmt_sample_7.png)
 
 #### Etapa 3 — carregar o orçamento na campanha {#step-3---charging-the-budget-in-the-campaign}
 
@@ -255,11 +255,11 @@ Vamos criar uma campanha com:
    >
    >Por padrão, o orçamento selecionado para o programa é aplicado em todas as campanhas do programa.
 
-   ![](assets/s_user_cost_mgmt_sample_4.png)
+   ![A seção Orçamento da Campanha com a lista de Cobrança aberta mostrando as Operações Especiais, o eMarketing e o Programa de Preparação.](assets/s_user_cost_mgmt_sample_4.png)
 
 1. Especifique o custo provisional estimado, com detalhamento:
 
-   ![](assets/s_user_cost_mgmt_sample_9.png)
+   ![Custo provisional estimado de 3.000 divididos pela primeira categoria e pela segunda categoria na janela Editar custo.](assets/s_user_cost_mgmt_sample_9.png)
 
 1. Clique em **[!UICONTROL Ok]** e então, **[!UICONTROL Save]** para confirmar essas informações. O custo calculado da campanha é, então, atualizado com o custo provisional estimado.
 
@@ -271,7 +271,7 @@ Vamos criar uma campanha com:
 
 1. Substitua o custo dos envelopes e adicione um custo fixo. Além disso, selecione as categorias, relacionadas a esses custos.
 
-   ![](assets/s_user_cost_mgmt_sample_3.png)
+   ![Entrega de catálogo no fluxo de trabalho com as categorias de custo do provedor de serviços, incluindo o Custo Fixo de 560.](assets/s_user_cost_mgmt_sample_3.png)
 
    >[!NOTE]
    >
@@ -279,19 +279,19 @@ Vamos criar uma campanha com:
 
 1. Inicie o fluxo de trabalho que acabou de criar para iniciar a análise e calcular os custos.
 
-   ![](assets/s_user_cost_mgmt_sample_10.png)
+   ![Barra de ferramentas do fluxo de trabalho de direcionamento com o botão Iniciar selecionado para executar a análise e calcular os custos.](assets/s_user_cost_mgmt_sample_10.png)
 
 1. Se a aprovação do orçamento for habilitada para esta campanha, aprove o orçamento através do painel. É possível verificar a aprovação de categorias de custo.
 
-   ![](assets/s_user_cost_mgmt_sample_10b.png)
+   ![Menu de Aprovação de Entrega com Aprovar orçamento abrindo a caixa de diálogo Ação na entrega com divisão de custo e Aprovação de orçamento.](assets/s_user_cost_mgmt_sample_10b.png)
 
 A linha de despesas com relação a entrega é adicionada na guia **[!UICONTROL Edit > Budget]** da campanha. Edite-a para exibir os detalhes do cálculo.
 
-![](assets/s_user_cost_mgmt_sample_11.png)
+![Guia Despesas de Orçamento da Campanha com o botão Detalhe abrindo a linha de despesas de entrega e sua divisão de custos.](assets/s_user_cost_mgmt_sample_11.png)
 
 O custo calculado para a entrega é atualizado com estas informações:
 
-![](assets/s_user_cost_mgmt_sample_12.png)
+![Janela de receitas e despesas de entrega com o custo calculado de 22.844 das estruturas de custo.](assets/s_user_cost_mgmt_sample_12.png)
 
 Ao editar o custo calculado, é possível verificar o detalhamento de custo e o status e a data do cálculo de custo.
 
@@ -305,11 +305,11 @@ Para fazer isso, no painel de campanha, clique no botão **[!UICONTROL Add a tas
 
 1. Na guia **[!UICONTROL Properties]**, selecione o serviço e a categoria de custo correspondente:
 
-   ![](assets/s_user_cost_mgmt_sample_14.png)
+   ![A janela Propriedades da tarefa com a lista Tipo de categoria de custo de reserva de Sala aberta mostrando Grande, Medium e Pequeno.](assets/s_user_cost_mgmt_sample_14.png)
 
 1. Em seguida, clique no ícone **[!UICONTROL Expenses and revenue]** da tarefa e especifique o custo provisional estimado.
 
-   ![](assets/s_user_cost_mgmt_sample_15.png)
+   ![Janela de receitas e despesas de tarefas com um custo provisional estimado de 5.500 cobrado em Operações Especiais.](assets/s_user_cost_mgmt_sample_15.png)
 
    Quando a tarefa for salva, o custo calculado é especificado com o valor inserido para o custo provisional estimado.
 
@@ -317,23 +317,23 @@ Para fazer isso, no painel de campanha, clique no botão **[!UICONTROL Add a tas
 
 1. Em seguida, crie uma segunda tarefa de acordo com o mesmo procedimento; agendada por cinco dias e relacionada à estrutura de custos criada anteriormente.
 
-   ![](assets/s_user_cost_mgmt_sample_16.png)
+   ![Criação de conteúdo da segunda tarefa, cuja janela de propriedades Tarefa mostra uma lista de tipos de categoria de custo aberta.](assets/s_user_cost_mgmt_sample_16.png)
 
    Quando a tarefa é concluída, o custo calculado é especificado com o valor da estrutura de custo relacionada, ou seja 1500 euros em nosso exemplo (5 dias x 300 euros):
 
-   ![](assets/s_user_cost_mgmt_sample_17.png)
+   ![Tarefa de Criação de Conteúdo concluída com um custo calculado de 1.500 na janela Despesas e Receita.](assets/s_user_cost_mgmt_sample_17.png)
 
 #### Etapa 6 — atualizar o status do orçamento da campanha {#step-6---update-the-campaign-budget-status}
 
 Quando a campanha é configurada, é possível atualizar o status ao alterá-lo para **[!UICONTROL Specified]**. O custo calculado da campanha indicará a soma dos custos calculados da entrega e das tarefas da campanha:
 
-![](assets/s_user_cost_mgmt_sample_18.png)
+![Seção do Orçamento da campanha com a lista de status do processo aberta: sendo editada, definida e executada, acima das linhas de custo.](assets/s_user_cost_mgmt_sample_18.png)
 
 #### Aprovação de orçamento {#budget-approval}
 
 Quando a aprovação é ativada, um link especial permite aprovar o orçamento do painel de campanha. Esse link é exibido quando o fluxo de trabalho de segmentação foi iniciado e uma entrega de mala direta precisa ser aprovada.
 
-![](assets/s_user_cost_mgmt_sample_19.png)
+![Aprovar opção de orçamento no menu Aprovação de entrega abrindo Ação na entrega com aprovação Aceitar, Rejeitar e Orçamento.](assets/s_user_cost_mgmt_sample_19.png)
 
 É possível clicar no link para conceder ou rejeitar a aprovação, ou usar o link no email de notificação, se a notificação tiver sido ativada para esta campanha.
 
@@ -349,7 +349,7 @@ Para salvar um novo pedido com um provedor de serviços, clique no nó **[!UICON
 
 Especifique o número do pedido, o provedor de serviços e o valor total do pedido.
 
-![](assets/s_user_cost_create_order.png)
+![Nó Pedidos em MRM com a lista de pedidos e um formulário de pedido mostrando o número, o provedor de serviços e o valor.](assets/s_user_cost_create_order.png)
 
 ### Emitir e rastrear faturas {#issuing-and-tracking-invoices}
 
@@ -357,15 +357,15 @@ Para cada provedor de serviços, é possível salvar faturas e definir seus stat
 
 As faturas são criadas e armazenadas no nó **[!UICONTROL MRM > Invoices]** da árvore do Adobe Campaign.
 
-![](assets/s_user_cost_create_invoice.png)
+![Nó de faturas em MRM com um formulário de fatura mostrando número, provedor de serviços, orçamento, valor e status.](assets/s_user_cost_create_invoice.png)
 
 Uma fatura consiste em linhas de fatura cujo total permite que o valor seja calculado automaticamente. Essas linhas são criadas manualmente na guia **[!UICONTROL Invoice lines]**. Elas podem ser associados a um pedido para carregar as informações nos pedidos.
 
-![](assets/s_user_cost_invoice_add_line.png)
+![Guia Linhas da fatura com o botão Adicionar, abrindo um formulário de linha da fatura com ordem, valor e opção Liquidada.](assets/s_user_cost_invoice_add_line.png)
 
 As faturas de cada provedor de serviços são exibidas na guia **[!UICONTROL Invoices]** do perfil:
 
-![](assets/s_ncs_user_invoice_from_supplier.png)
+![Nó de provedores de serviços com a guia Faturas listando as faturas do provedor de serviços selecionado.](assets/s_ncs_user_invoice_from_supplier.png)
 
 A guia **[!UICONTROL Details]** permite exibir o conteúdo da fatura.
 

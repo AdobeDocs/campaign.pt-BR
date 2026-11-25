@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 52%
+source-wordcount: '271'
+ht-degree: 42%
 ---
 # Monitorar campanhas de marketing {#monitor-marketing-campaigns}
 
@@ -38,11 +38,11 @@ As seguintes informações podem ser acessadas por meio desta subguia:
 
 * A subguia **[!UICONTROL Audit]** mostra o diário de atividades. Ele contém as tarefas executadas na campanha: criação ou início, aprovação, extração, gerenciamento de estoque etc. do workflow.
 
-  ![](assets/campaign-audit-tab.png)
+  ![Guia Editar da campanha, seção Auditoria, subguia Diário listando as mensagens e os tipos de log do diário de atividades](assets/campaign-audit-tab.png)
 
 * A subguia **[!UICONTROL Deliveries]** contém todas as entregas da campanha. Eles podem ser editados nessa visualização. Para fazer isso, selecione a entrega e clique no ícone **[!UICONTROL Detail]**.
 
-  ![](assets/campaign-delivery-tab.png)
+  ![Seção de auditoria da campanha, subguia Deliveries listando canal, status, status do direcionamento e status do conteúdo](assets/campaign-delivery-tab.png)
 
 * A subguia **[!UICONTROL Approvals]** contém todo o processo de aprovação da campanha. Você pode verificar detalhes e comentários
 
@@ -52,7 +52,7 @@ As seguintes informações podem ser acessadas por meio desta subguia:
 
 A lista de entregas está disponível através do link **[!UICONTROL Deliveries]** do nó do Campaign.
 
-![](assets/filter-deliveries-from-homepage.png)
+![Lista de entregas na página inicial com a lista suspensa de filtro de status Sendo editada, Em andamento e Concluída](assets/filter-deliveries-from-homepage.png)
 
 Para cada entrega, essa lista permite acessar os indicadores-chave: status, número de destinatários direcionados, campanhas vinculadas, etc.
 

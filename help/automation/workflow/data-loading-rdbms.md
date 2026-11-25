@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 80%
 ---
 # Carregamento de dados (RDBMS){#data-loading-rdbms}
 
@@ -43,15 +43,15 @@ A operação é como descrita a seguir:
 
 1. Selecione a fonte de dados da lista e digite o nome da tabela com os dados a serem extraídos.
 
-   ![](assets/s_advuser_wf_sgbd_sample_1.png)
+   ![Atividade de carregamento de dados (RDBMS) com uma fonte de dados externa compartilhada selecionada e o nome da tabela nmsrecipient.](assets/s_advuser_wf_sgbd_sample_1.png)
 
    O nome da tabela inserido no campo correspondente é usado como um modelo para coletar dados no banco de dados externo. O nome da tabela processada pelo fluxo de trabalho pode ser calculado ou transmitido pela transição de entrada da atividade de carregamento de dados. Para selecionar a tabela a ser usada, clique no link **[!UICONTROL Advanced..]**. e selecione a opção **[!UICONTROL Specified in the transition]** ou **[!UICONTROL Explicit]**.
 
-   ![](assets/s_advuser_wf_sgbd_sample_5.png)
+   ![Parâmetros avançados para seleção de nome de tabela: Idêntico ao modelo, Especificado na transição, Explícito.](assets/s_advuser_wf_sgbd_sample_5.png)
 
 1. Clique no link **[!UICONTROL Select the columns to extract...]** para escolher os dados que serão coletados no banco de dados.
 
-   ![](assets/s_advuser_wf_sgbd_sample_2.png)
+   ![Selecione a janela de colunas extras listando os campos disponíveis e as colunas de saída escolhidas para extração.](assets/s_advuser_wf_sgbd_sample_2.png)
 
 1. Você pode definir um filtro nesses dados. Para fazer isso, clique em **[!UICONTROL Edit query....]**.
 

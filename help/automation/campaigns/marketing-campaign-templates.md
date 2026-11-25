@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 55%
+source-wordcount: '1331'
+ht-degree: 37%
 ---
 # Criar e configurar modelos de campanha {#campaign-templates}
 
@@ -45,7 +45,7 @@ Para criar um modelo de campanha, siga as etapas abaixo:
 1. Abra o Campaign **Explorer** e navegue até **Recursos > Modelos > Modelos de campanha**.
 1. Clique em **Novo** na barra de ferramentas acima da lista de modelos.
 
-![](assets/campaign-template-node.png)
+![Lista de modelos de campanha em Recursos > Modelos, com o botão Novo realçado na barra de ferramentas.](assets/campaign-template-node.png)
 
 Você também pode **duplicar** o modelo interno para reutilizar e adaptar sua configuração. Para fazer isso, clique com o botão direito do mouse no modelo e selecione **Duplicar**.
 
@@ -54,13 +54,13 @@ Você também pode **duplicar** o modelo interno para reutilizar e adaptar sua c
 1. Na guia **Editar**, defina as propriedades do modelo.
 1. Selecione o link **Advanced campaign parameters...** para adicionar um fluxo de trabalho ao seu template de campanha.
 
-   ![](assets/campaign-template-parameters.png)
+   ![Nova guia Editar de modelo de campanha com o link Parâmetros de campanha avançados realçado.](assets/campaign-template-parameters.png)
 
-1. Altere o valor de **Targeting and workflows** para **Yes**. e confirme. Saiba como adicionar funcionalidades em [esta seção](#typology-of-enabled-modules).
+1. Altere o valor de **Targeting and workflows** para **Yes**. e confirme. Saiba como adicionar funcionalidades na [Tipologia de módulos](#typology-of-enabled-modules).
 1. A guia **Direcionamento e fluxos de trabalho** é adicionada ao modelo. Clique em **Adicionar um fluxo de trabalho...**, digite um **Rótulo** e clique em **Ok**.
 1. Crie o fluxo de trabalho de acordo com suas necessidades.
 
-   ![](assets/campaign-template-create-wf.png)
+   ![Guia Direcionamento e fluxos de trabalho do modelo com um fluxo de trabalho contendo Consulta e Lista de leitura que leva à entrega de email.](assets/campaign-template-create-wf.png)
 
 1. Clique em **Save**. Seu template está pronto para ser usado para criar uma nova campanha.
 
@@ -70,7 +70,7 @@ As várias guias e subguias do modelo de campanha permitem que você acesse as c
 
 O link **[!UICONTROL Advanced campaign parameters...]** permite habilitar e desabilitar processos para as campanhas com base neste modelo. Selecione os recursos que deseja habilitar nas campanhas criadas com base neste modelo.
 
-![](assets/campaign-template-select-modules.png)
+![Guia Configuração de configurações avançadas listando cada funcionalidade com um valor Sim ou Não; Despesas e objetivos é Não.](assets/campaign-template-select-modules.png)
 
 Se uma funcionalidade não estiver selecionada, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecem na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha e as guias disponíveis coincidem com as funcionalidades selecionadas no template. Por exemplo, a funcionalidade **Despesas e objetivos** não está habilitada, a guia **[!UICONTROL Budget]** correspondente não é exibida em campanhas baseadas nesse modelo.
 
@@ -80,44 +80,44 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
 * Por exemplo, com as seguintes configurações:
 
-  ![](assets/campaign-template-select-functionalities.png)
+  ![Configurações avançadas: Grupo de controle, Seed addresses e Documentos definidos como Sim; Aprovações, Direcionamento e fluxos de trabalho definidos como Não.](assets/campaign-template-select-functionalities.png)
 
   O painel de campanha mostra:
 
-  ![](assets/campaign-template-dashboard-sample-1.png)
+  ![Painel de campanha somente com as guias Dashboard e Editar, e Adicionar uma entrega e Adicionar links de documentos.](assets/campaign-template-dashboard-sample-1.png)
 
   A guia **[!UICONTROL Targeting and workflows]** está ausente.
 
   As seguintes funcionalidades estão disponíveis:
 
-  ![](assets/campaign-template-edit-sample-1.png)
+  ![Guia Editar da campanha com as seções Propriedades, Documentos e Auditoria e nenhuma seção Orçamento.](assets/campaign-template-edit-sample-1.png)
 
   A guia **[!UICONTROL Budget]** está ausente.
 
   As configurações avançadas do Campaign também refletem essa configuração.
 
-  ![](assets/campaign-template-parameters-sample-1.png)
+  ![Configurações avançadas do Campaign com guias População de controle e Endereços de seed e sem aprovações.](assets/campaign-template-parameters-sample-1.png)
 
   Observe que a guia **[!UICONTROL Approvals]** não está disponível.
 
 * Com esta configuração:
-  ![](assets/campaign-template-dashboard-sample-2.png)
+  ![Configurações avançadas: aprovações, direcionamento e fluxos de trabalho, despesas e objetivos definidos como Sim; outras funcionalidades definidas como Sim.](assets/campaign-template-dashboard-sample-2.png)
 
   O painel de campanha mostra:
 
-  ![](assets/campaign-template-select-functionalities-2.png)
+  ![Painel do Campaign com a guia Targeting and workflows e um link Add a delivery, mas nenhum Add a document link.](assets/campaign-template-select-functionalities-2.png)
 
   A guia **[!UICONTROL Targeting and workflows]** está disponível, mas o link **Adicionar um documento** está ausente.
 
   As seguintes funcionalidades estão disponíveis:
 
-  ![](assets/campaign-template-edit-sample-2.png)
+  ![Guia Editar com a seção Orçamento aberta, mostrando as guias relacionadas a orçamento, objetivos e Custos e Despesas.](assets/campaign-template-edit-sample-2.png)
 
   Observe que a guia **[!UICONTROL Budget]** está disponível.
 
   As configurações avançadas do Campaign também refletem essa configuração.
 
-  ![](assets/campaign-template-parameters-sample-2.png)
+  ![Configurações avançadas com a guia Aprovações e validações de trabalho, e sem as guias População de controle ou Seed addresses.](assets/campaign-template-parameters-sample-2.png)
 
   Observe que a guia **[!UICONTROL Approvals]** está disponível, mas as guias **[!UICONTROL Control population]** e **[!UICONTROL Seed addresses]** não estão habilitadas.
 
@@ -126,42 +126,42 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
 * **Grupo de controle**
 
-  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do modelo e às campanhas baseadas nesse modelo. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre grupos de controle [nesta seção](marketing-campaign-deliveries.md).
+  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do modelo e às campanhas baseadas nesse modelo. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre grupos de controle em [Entregas de campanha de marketing](marketing-campaign-deliveries.md).
 
-  ![](assets/template-activate-1.png)
+  ![Guia de população de Controle de configurações avançadas com a opção de grupo de controle habilitada e um link Editar para sua configuração.](assets/template-activate-1.png)
 
 
 * **Seed addresses**
 
   Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do modelo e às campanhas baseadas nesse modelo. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha.
 
-  ![](assets/template-activate-2.png)
+  ![Guia Seed addresses de configurações avançadas com um link Import seed templates e uma lista de seed addresses.](assets/template-activate-2.png)
 
 * **Documentos**
 
-  Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edit]** do modelo e às campanhas com base nesse modelo. Os documentos anexados podem ser adicionados do modelo ou individualmente para cada campanha. Saiba mais sobre documentos [nesta seção](marketing-campaign-deliveries.md).
+  Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edit]** do modelo e às campanhas com base nesse modelo. Os documentos anexados podem ser adicionados do modelo ou individualmente para cada campanha. Saiba mais sobre documentos em [Entregas de campanha de marketing](marketing-campaign-deliveries.md).
 
-  ![](assets/template-activate-3.png)
+  ![Seção Documentos da guia Editar listando documentos anexados, com os botões Adicionar, Excluir e Detalhar.](assets/template-activate-3.png)
 
 * **Outline de entrega**
 
-  Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir as descrições das entregas da campanha. Saiba mais sobre descrições das entregas [nesta seção](marketing-campaign-assets.md#delivery-outlines).
+  Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir as descrições das entregas da campanha. Saiba mais sobre delivery outlines em [Usar delivery outlines](marketing-campaign-assets.md#delivery-outlines).
 
-  ![](assets/template-activate-4.png)
+  ![Subguia Delivery outlines da seção Documents com um link Add a delivery outline.](assets/template-activate-4.png)
 
 * **Segmentação e fluxos de trabalho**
 
-  Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais fluxos de trabalho para campanhas com base nesse modelo. Os fluxos de trabalho também podem ser configurados individualmente para cada campanha com base nesse modelo.Saiba mais sobre os fluxos de trabalho de campanhas [nesta seção](marketing-campaign-deliveries.md).
+  Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais fluxos de trabalho para campanhas com base nesse modelo. Os fluxos de trabalho também podem ser configurados individualmente para cada campanha com base nesse modelo.Saiba mais sobre os fluxos de trabalho da campanha em [Entregas de campanha de marketing](marketing-campaign-deliveries.md).
 
-  ![](assets/template-activate-5.png)
+  ![Guia Direcionamento e fluxos de trabalho com um fluxo de trabalho: Consulta e Lista de Leitura, Eliminação de Duplicação e Entrega móvel.](assets/template-activate-5.png)
 
   Quando este módulo é habilitado, uma guia **[!UICONTROL Jobs]** é adicionada às configurações avançadas da campanha para definir a sequência de execução do processo.
 
 * **Aprovações**
 
-  Se você habilitar o **[!UICONTROL Approvals]**, poderá selecionar os processos a serem aprovados e os operadores de aprovação. Saiba mais sobre aprovações [nesta seção](marketing-campaign-approval.md#select-reviewers).
+  Se você habilitar o **[!UICONTROL Approvals]**, poderá selecionar os processos a serem aprovados e os operadores de aprovação. Saiba mais sobre aprovações em [Selecionar revisores](marketing-campaign-approval.md#select-reviewers).
 
-  ![](assets/template-activate-6.png)
+  ![Guia Aprovações de configurações avançadas com aprovações de conteúdo, destino, orçamento e extração habilitadas e revisores atribuídos.](assets/template-activate-6.png)
 
   Você pode optar por habilitar ou não a aprovação do processo por meio da guia **[!UICONTROL Approvals]** da seção de configurações avançadas dos modelos.
 
@@ -169,21 +169,21 @@ Além disso, os atalhos para as janelas de configuração são adicionados ao pa
 
   Quando esse módulo for selecionado, uma guia **[!UICONTROL Budget]** é adicionada aos detalhes do modelo e às campanhas com base nesse modelo para que o orçamento associado possa ser selecionado.
 
-  ![](assets/template-activate-7.png)
+  ![Seção Budget da guia Edit com campos de orçamento relacionados, guia Objetives e Costs com linhas de custo.](assets/template-activate-7.png)
 
 
 ## Propriedades do modelo {#template-properties}
 
-![](assets/template-op-type.png)
+![Guia Editar do modelo de campanha com o menu suspenso Tipo de operação aberto, mostrando Exclusivo, Recorrente e Periódico.](assets/template-op-type.png)
 
 Ao criar um modelo de campanha, você precisa inserir as seguintes informações:
 
 * Insira o **rótulo** do modelo: o rótulo é obrigatório e é o rótulo padrão para todas as campanhas baseadas neste modelo.
 * Selecione a **natureza** da campanha na lista suspensa. Os valores disponíveis nesta lista são os que foram salvos na enumeração **[!UICONTROL natureOp]**.
 
-  Saiba como acessar e configurar suas enumerações em [esta página](../../v8/config/enumerations.md).
+  Saiba como acessar e configurar suas enumerações em [Gerenciar enumerações](../../v8/config/enumerations.md).
 
-* Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os modelos de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas [nesta seção](recurring-periodic-campaigns.md).
+* Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os modelos de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas em [Criar campanhas recorrentes e periódicas](recurring-periodic-campaigns.md).
 * Especifique a duração da campanha, ou seja, o número de dias em que a campanha ocorrerá. Ao criar uma campanha com base nesse modelo, as datas inicial e final da campanha serão preenchidas automaticamente.
 
   Se a campanha for recorrente, você deverá especificar as datas inicial e final da campanha diretamente no modelo.

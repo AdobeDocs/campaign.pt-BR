@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 45%
+source-wordcount: '568'
+ht-degree: 42%
 ---
 # Fóruns de discussão{#discussion-forums}
 
@@ -43,13 +43,13 @@ Os operadores podem se inscrever em um fórum para receber um email de notifica�
 
 Para acessar um fórum, navegue até um painel e clique no link **[!UICONTROL Forum]** no canto superior direito.
 
-![](assets/mrm-forum-icon.png)
+![Painel de campanha com uma seta apontando para o link do Fórum e a lista de discussões.](assets/mrm-forum-icon.png)
 
 As mensagens e suas respostas são mostradas da mais nova para a mais antiga.
 
 Para iniciar um novo thread, clique no botão **[!UICONTROL Add a discussion]** no canto superior direito. A caixa **[!UICONTROL Discussion forum]** aparecerá (veja abaixo).
 
-![](assets/mrm-forum-new-thread.png)
+![Caixa de diálogo do fórum de discussão com Assunto, Mensagem, Operador para notificar, Anexar um documento e Criar a mensagem.](assets/mrm-forum-new-thread.png)
 
 
 Insira o texto no campo **[!UICONTROL Message]** e um título de discussão no campo **[!UICONTROL Subject]**.
@@ -85,7 +85,7 @@ Para responder a uma mensagem, clique no corpo do e-mail e, em seguida, faça lo
 
 * O painel pessoal lista os fóruns inscritos. Clique no link **[!UICONTROL Subscription to discussion forums]** para exibir a lista e, em seguida, clique no item que lhe interessa para acessar seu fórum.
 
-  ![](assets/forum-subscribed.png)
+  ![Painel de operador com a lista de fóruns de Assinaturas para discussão destacada.](assets/forum-subscribed.png)
 
 
 ## Solução de problemas de entrega de notificação {#checking-notification-delivery}

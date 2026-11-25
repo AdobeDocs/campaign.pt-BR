@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 100%
+source-wordcount: '573'
+ht-degree: 85%
 ---
 # Download da Web{#web-download}
 
@@ -47,23 +47,23 @@ A atividade de **download da Web** inicia o download de um arquivo em uma URL ex
 
    * Para inserir diretamente o URL do arquivo a ser baixado, selecione a opção **[!UICONTROL Explicit URL]** e especifique o URL no campo apropriado. Este URL pode ser construído com dados variáveis.
 
-     ![](assets/download_web_edit.png)
+     ![Atividade de download da Web com a opção URL explícita selecionada e um campo de URL vazio.](assets/download_web_edit.png)
 
    * Para usar uma **[!UICONTROL External account]**, selecione a conta na lista suspensa e especifique o arquivo a ser baixado.
 
      Contas externas são configuradas no nó **[!UICONTROL Administration > Platform > External accounts]** da árvore do Adobe Campaign. Os parâmetros da conta podem ser editados por meio do ícone **[!UICONTROL Edit link]**.
 
-     ![](assets/download_web_edit_external.png)
+     ![Seção do arquivo da Web com Conta externa selecionada, com uma conta e o nome do arquivo para download.](assets/download_web_edit_external.png)
 
    * Para baixar o arquivo da instância do Adobe Campaign, selecione a opção **[!UICONTROL Adobe Campaign Instance]**.
 
-     ![](assets/download_web_edit_instance.png)
+     ![Seção do arquivo da Web com a instância do Adobe Campaign selecionada e um nome de arquivo que usa uma variável.](assets/download_web_edit_instance.png)
 
 1. **Historização de arquivo**
 
    O link **[!UICONTROL File historization settings...]** possibilita especificar o diretório de armazenamento de arquivos e a frequência de limpeza desse diretório.
 
-   ![](assets/download_web_edit_hist.png)
+   ![Caixa de diálogo de configurações de histórico com o diretório de armazenamento, Número de arquivos e configurações de limpeza de Tamanho máximo (em MB).](assets/download_web_edit_hist.png)
 
    As seguintes opções estão disponíveis:
 
@@ -85,7 +85,7 @@ A atividade de **download da Web** inicia o download de um arquivo em uma URL ex
    * **[!UICONTROL Add the HTTP headers to the file]**: em alguns casos, talvez você queira adicionar outros cabeçalhos HTTP a um arquivo. Normalmente, esses cabeçalhos serão usados para fornecer informações adicionais para fins de solução de problemas, para [Compartilhamento de recursos entre origens (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS) ou para definir diretivas específicas de armazenamento em cache.
    * **[!UICONTROL Ignore the HTTP return code]**: os códigos de retorno HTTP, também conhecidos como códigos de status HTTP, indicam o resultado de uma solicitação HTTP.
 
-   ![](assets/download_web_edit_advanced.png)
+   ![Caixa de diálogo de parâmetros avançados com os redirecionamentos Seguir, Adicionar os cabeçalhos HTTP ao arquivo e Ignorar o código de retorno HTTP.](assets/download_web_edit_advanced.png)
 
    A opção **[!UICONTROL Process errors]** é detalhada em [Processamento de erros](monitor-workflow-execution.md#processing-errors).
 

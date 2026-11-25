@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 97%
+source-wordcount: '609'
+ht-degree: 87%
 ---
 # Aprovação{#approval}
 
@@ -47,7 +47,7 @@ Se necessário, é possível atribuir a tarefa de aprovação a um único operad
 
 * Para selecionar um único operador, selecione o valor **[!UICONTROL Operator]** e depois o campo **[!UICONTROL Assignment type]**, então selecione o operador relevante na lista suspensa do campo **[!UICONTROL Assignee]**.
 
-  ![](assets/s_advuser_validation_box_assign.png)
+  ![Atividade de aprovação com a lista Tipo de atribuição aberta e Operador realçado](assets/s_advuser_validation_box_assign.png)
 
   >[!CAUTION]
   >
@@ -55,7 +55,7 @@ Se necessário, é possível atribuir a tarefa de aprovação a um único operad
 
 * É possível definir uma consulta para filtrar operadores de aprovação. Para fazer isso, selecione o valor **[!UICONTROL Filter]** no campo **[!UICONTROL Assignment type]** e clique no link **[!UICONTROL Advanced parameters...]** para definir as condições do filtro, conforme mostrado no exemplo a seguir:
 
-  ![](assets/s_advuser_validation_box_filter.png)
+  ![Atividade de aprovação definida como Filtro, com condições de filtragem de parâmetros Avançados onde Departamento é igual a um valor](assets/s_advuser_validation_box_filter.png)
 
 No caso de aprovação única, a transição correspondente à escolha do operador é ativada e a tarefa é concluída: os outros operadores não podem mais responder.
 
@@ -69,13 +69,13 @@ A modificação do título ou do corpo da mensagem da atividade não afeta as ta
 
 As tarefas do tipo **Approval** podem ser acessadas no nó **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]**: os operadores podem acessar o formulário de aprovação diretamente por meio desse modo de exibição.
 
-![](assets/s_advuser_validation_from_console.png)
+![Lista de aprovações pendentes com a janela Aprovação de tarefa mostrando a mensagem, Escolha Sim ou Não e o botão Aprovar](assets/s_advuser_validation_from_console.png)
 
 ## Propriedades {#properties}
 
 As variáveis de personalização podem ser usadas na mensagem enviada aos revisores. Elas podem ser inseridas no título da mensagem ou no corpo.
 
-![](assets/edit_validation.png)
+![Atividade de aprovação com um menu de personalização usado para inserir variáveis de atividade e evento no campo de Título](assets/edit_validation.png)
 
 O campo **[!UICONTROL Title]** contém o título da mensagem: é o assunto da mensagem de email enviada. O título, bem como o corpo da mensagem, são modelos JavaScript e, portanto, podem conter valores calculados de acordo com o contexto do fluxo de trabalho.
 

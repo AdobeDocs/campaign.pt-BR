@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '528'
+ht-degree: 73%
 ---
 # Consultar a tabela de destinatários {#querying-recipient-table}
 
@@ -55,18 +55,18 @@ Para criar este exemplo, aplique as seguintes etapas:
 1. Clique em **[!UICONTROL Tools > Generic query editor...]** e escolha a tabela **Destinatários** (**nms:recipient**). Em seguida, clique em **[!UICONTROL Next]**.
 1. Escolha: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** e **[!UICONTROL Account number]**. Esses campos são adicionados em **[!UICONTROL Output columns]**. Em seguida, clique em **[!UICONTROL Next]**.
 
-   ![](assets/query_editor_03.png)
+   ![Dados para extrair a etapa com os campos Email, Sobrenome, Nome, Cidade e Número da Conta nas colunas de Saída](assets/query_editor_03.png)
 
 1. Classifique as colunas para exibi-las na ordem correta. Aqui, devemos classificar números de conta em ordem decrescente e nomes em ordem alfabética. Em seguida, clique em **[!UICONTROL Next]**.
 
-   ![](assets/query_editor_04.png)
+   ![Etapa de classificação com Número da Conta classificada em ordem decrescente e Sobrenome classificado em ordem crescente](assets/query_editor_04.png)
 
 1. Na janela **[!UICONTROL Data filtering]**, refine sua pesquisa: escolha **[!UICONTROL Filtering conditions]** e clique em **[!UICONTROL Next]**.
 1. A janela **[!UICONTROL Target element]** permite inserir as configurações de filtro.
 
    Defina a seguinte condição de filtro: destinatários com um domínio de e-mail igual a &quot;orange.co.uk&quot;. Para fazer isso, escolha **Email domain (@email)** na coluna **[!UICONTROL Expression]**, escolha **equal to** na coluna **[!UICONTROL Operator]** e digite &quot;orange.co.uk&quot; na coluna **[!UICONTROL Value]**.
 
-   ![](assets/query_editor_05.png)
+   ![Etapa de elemento do Target com o filtro Email domain (@domain) igual a orange.co.uk e o resumo da consulta](assets/query_editor_05.png)
 
 1. Se necessário, clique no botão **[!UICONTROL Distribution of values]** para visualizar uma distribuição baseada no domínio de email de clientes potenciais. Uma porcentagem está disponível para cada domínio de e-mail no banco de dados. Domínios diferentes de &quot;orange.co.uk&quot; são exibidos até o filtro ser aplicado.
 
@@ -74,19 +74,19 @@ Para criar este exemplo, aplique as seguintes etapas:
 
 1. Clique em **[!UICONTROL Preview]** para obter visualização do resultado da consulta: somente os domínios de email &quot;orange.co.uk&quot; são exibidos.
 
-   ![](assets/query_editor_nveau_17.png)
+   ![Guia Visualização do elemento de destino listando apenas destinatários com um endereço de email orange.co.uk](assets/query_editor_nveau_17.png)
 
 1. Agora, vamos alterar a consulta para localizar os contatos que não moram em Londres.
 
    Selecione **[!UICONTROL City (location/@city)]** na coluna **[!UICONTROL Expression]**, **[!UICONTROL different from]** como operador e insira **[!UICONTROL London]** na coluna **[!UICONTROL Value]**.
 
-   ![](assets/query_editor_08.png)
+   ![Etapa do elemento de destino com a condição Cidade (location/@city) diferente de Londres adicionada ao filtro](assets/query_editor_08.png)
 
 1. Isso abrirá a janela **[!UICONTROL Data formatting]**. Verifique a ordem da coluna. Mova a coluna &quot;City&quot; logo ao lado da coluna &quot;Account number&quot;.
 
    Desmarque a coluna &quot;First name&quot; para removê-la da lista.
 
-   ![](assets/query_editor_nveau_15.png)
+   ![Etapa de formatação de dados com a ordem da coluna e a coluna de Nome desmarcada](assets/query_editor_nveau_15.png)
 
 1. Na janela **[!UICONTROL Data preview]**, clique em **[!UICONTROL Start the preview of the data]**. Essa função calcula o resultado da consulta.
 
@@ -94,12 +94,12 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    O resultado mostra todos os destinatários com um domínio de e-mail &quot;orange.co.uk&quot; que não vivem em Londres. A coluna &quot;First name&quot; não é mostrada porque foi desmarcada durante o estágio anterior. Os números de conta são classificados em ordem decrescente.
 
-   ![](assets/query_editor_nveau_12.png)
+   ![Visualização de dados com a guia Coluna de resultados mostrando o número da conta, a cidade, o email e o sobrenome do resultado da consulta](assets/query_editor_nveau_12.png)
 
    A guia **[!UICONTROL XML result]** mostra o resultado no formato XML.
 
-   ![](assets/query_editor_nveau_13.png)
+   ![Visualização de dados com a guia de resultado XML mostrando o resultado da consulta como elementos XML do destinatário](assets/query_editor_nveau_13.png)
 
    A guia **[!UICONTROL Generated SQL queries]** mostra o resultado da consulta no formato SQL.
 
-   ![](assets/query_editor_nveau_14.png)
+   ![Visualização de dados com a guia de consultas Generated SQL mostrando a instrução SELECT da consulta](assets/query_editor_nveau_14.png)

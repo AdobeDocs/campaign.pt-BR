@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Workflow HeatMap do Campaign
-description: Monitore seus fluxos de trabalho do com o Workflow HeatMap
+title: Mapa de calor de fluxos de trabalho do Campaign
+description: Monitore fluxos de trabalho com o Mapa de calor de fluxos de trabalho
 feature: Workflows, Heatmap
 role: Admin
 version: Campaign v8, Campaign Classic v7
@@ -28,18 +28,18 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 95%
+source-wordcount: '1305'
+ht-degree: 81%
 ---
-# Workflow HeatMap {#workflow-heatmap}
+# Mapa de calor de fluxos de trabalho {#workflow-heatmap}
 
-O Workflow HeatMap do Campaign consiste em uma representação gráfica colorida de todos os fluxos de trabalho que estão sendo executados no momento. Ele só está disponível para **Administradores do Campaign**.
+O Mapa de calor de fluxos de trabalho do Campaign consiste em uma representação gráfica colorida de todos os fluxos de trabalho que estão sendo executados no momento. Ele só está disponível para **Administradores do Campaign**.
 
-## Introdução ao Workflow HeatMap {#about-the-workflow-heatmap}
+## Introdução ao Mapa de calor de fluxos de trabalho {#about-the-workflow-heatmap}
 
-Ao fornecer uma visão geral rápida do número de fluxos de trabalho simultâneos, o Workflow HeatMap permite que os administradores da plataforma Adobe Campaign monitorem a carga da instância e planejem os fluxos de trabalho de acordo.
+Ao fornecer uma visão geral rápida do número de fluxos de trabalho simultâneos, o Mapa de calor de fluxos de trabalho permite que os administradores da plataforma Adobe Campaign monitorem a carga da instância e, consequentemente, planejem os fluxos de trabalho.
 
 Mais precisamente, ajuda os administradores de plataforma a:
 
@@ -54,17 +54,17 @@ Mais precisamente, ajuda os administradores de plataforma a:
 >
 >Além do **Workflow Heatmap**, é possível criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de fluxos de trabalho e enviar mensagens recorrentes aos supervisores. Para obter mais informações, consulte a [seção dedicada](workflow-supervision.md).
 
-O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [fluxos de trabalho](about-workflows.md), [atividades](activities.md) e [práticas recomendadas de fluxo de trabalho](workflow-best-practices.md).
+O uso do Mapa de calor de fluxos de trabalho requer uma boa compreensão dos seguintes conceitos: [Workflows](about-workflows.md), [Activities](activities.md) e[Workflow Best Practices](workflow-best-practices.md).
 
-## Personalizar o Workflow HeatMap {#using-the-heatmap}
+## Personalizar o Mapa de calor de fluxos de trabalho {#using-the-heatmap}
 
 >[!NOTE]
 >
->Se nenhum dado for exibido no Workflow HeatMap, clique no botão **[!UICONTROL Load data]**.
+>Se nenhum dado for exibido no Mapa de calor de fluxos de trabalho, clique no botão **[!UICONTROL Load data]**.
 
 1. Vá para **[!UICONTROL Monitoring]** e clique no link **[!UICONTROL Workflow HeatMap]** para exibir a página **[!UICONTROL Campaign Workflow HeatMap]**.
 
-   ![](assets/wkf_monitoring_path.png)
+   ![Guia Monitoramento com o link Workflow HeatMap selecionado, abrindo a grade Campaign Workflow HeatMap.](assets/wkf_monitoring_path.png)
 
 1. Clique no calendário para selecionar um dia.
 
@@ -72,19 +72,19 @@ O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [
 
    >[!NOTE]
    > 
-   >Por padrão, o fuso horário do Workflow HeatMap é aquele definido para o usuário administrador atual. Por exemplo, talvez você queira alterá-la se não estiver na mesma área dos usuários de marketing com os quais você está trabalhando.
+   >Por padrão, o fuso horário do Mapa de calor de fluxos de trabalho é aquele definido para o usuário administrador atual. Por exemplo, talvez você queira alterá-la se não estiver na mesma área dos usuários de marketing com os quais você está trabalhando.
 
 1. Clique no botão **[!UICONTROL Filters]**.
 
-   ![](assets/wkf_monitoring_filters.png)
+   ![Página do Campaign Workflow HeatMap com o botão Filters realçado ao lado de Ajuda e Carregar dados.](assets/wkf_monitoring_filters.png)
 
 1. Use o controle deslizante para definir a duração mínima de 0 segundo a 1 hora. Isso permite pesquisar somente os fluxos de trabalho em execução por mais de um determinado número de segundos ou minutos.
 
-   ![](assets/wkf_monitoring_filters_duration.png)
+   ![Painel de filtros do HeatMap com o controle deslizante de duração mínima definido como 30 minutos, acima dos campos de tipo Fluxos de Trabalho e Fluxo de Trabalho.](assets/wkf_monitoring_filters_duration.png)
 
 1. Você também pode escolher um fluxo de trabalho específico na lista suspensa **[!UICONTROL Workflows]**:
 
-   ![](assets/wkf_monitoring_filters_workflows.png)
+   ![Lista suspensa de fluxos de trabalho nos filtros do HeatMap mostrando tudo, Limpeza do banco de dados, Previsão e outros fluxos de trabalho.](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
@@ -99,16 +99,16 @@ O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [
 
 1. Se você editou alguns fluxos de trabalho no intervalo de tempo, clique no botão **[!UICONTROL Reload data]** para atualizar os dados exibidos na grade.
 
-## Interpretar o Workflow HeatMap {#reading-the-heatmap}
+## Interpretar o Mapa de calor de fluxos de trabalho {#reading-the-heatmap}
 
-O Campaign Workflow HeatMap é uma grade naturalmente legível do canto superior esquerdo ao inferior direito, permitindo encontrar as &quot;zonas ativas&quot; com um intervalo de cores verde a vermelho.
+O Mapa de calor de fluxos de trabalho do Campaign é uma grade naturalmente legível do canto superior esquerdo ao inferior direito, permitindo encontrar as &quot;zonas ativas&quot; com um intervalo de cores verde a vermelho.
 
 * As células vermelhas mais escuras correspondem a períodos em que um número alto de fluxos de trabalho está sendo executado ao mesmo tempo.
 * As células cinza correspondem a períodos em que nenhum fluxo de trabalho está em execução.
 
-Para saber como o código de cor é aplicado e como navegar no HeatMap, clique no botão **[!UICONTROL Help]**.
+Para saber como o código de cor é aplicado e como navegar no Mapa de calor, clique no botão **[!UICONTROL Help]**.
 
-![](assets/wkf_monitoring_legend.png)
+![Painel de ajuda do HeatMap listando controles de teclado e a legenda de cores de verde para 1 fluxo de trabalho para vermelho para 50.](assets/wkf_monitoring_legend.png)
 
 Cada linha representa uma hora do dia e cada célula representa 5 minutos dessa hora.
 
@@ -116,44 +116,44 @@ A grade mostra todos os fluxos de trabalho que estão sendo executados ao mesmo 
 
 No exemplo abaixo, entre as 8h e a 8h05 da manhã, três workflows estão em execução (independentemente da duração individual):
 
-![](assets/wkf_monitoring_ex_8am.png)
+![Grade do HeatMap com a linha 08h, célula de coluna 00m realçada, mostrando três fluxos de trabalho executados entre 8h e 8h05.](assets/wkf_monitoring_ex_8am.png)
 
 1. Clique em uma célula colorida para exibir os detalhes de todos os fluxos de trabalho simultâneos em execução durante esse período.
 
-   ![](assets/wkf_monitoring_details.png)
+   ![HeatMap com a célula 08h selecionada e uma tabela listando os três fluxos de trabalho simultâneos com atividade e duração.](assets/wkf_monitoring_details.png)
 
    Para cada fluxo de trabalho, todas as atividades que ele contém são listadas, com sua duração.
 
 1. Clique na ID ou no nome do fluxo de trabalho para abri-lo diretamente.
 1. Para voltar para a exibição do **[!UICONTROL Campaign Workflow HeatMap]**, clique no botão **[!UICONTROL Home]**.
 
-## Casos de uso: usar o HeatMap para realizar ações {#use-cases--using-the-heatmap-to-take-actions}
+## Casos de uso: usar o Mapa de calor para realizar ações {#use-cases--using-the-heatmap-to-take-actions}
 
-Há dois casos principais em que o Workflow HeatMap do Campaign pode ser útil.
+Há dois casos principais em que o Mapa de calor de fluxos de trabalho do Campaign pode ser útil.
 
 ### Reduzir o número de fluxos de trabalho simultâneos {#reducing-the-number-of-concurrent-workflows}
 
-Como administrador do Campaign, o Workflow HeatMap pode ajudá-lo a entender a carga na instância e planejar fluxos de trabalho novos ou existentes em momentos apropriados.
+Como administrador do Campaign, o Mapa de calor de fluxos de trabalho pode ajudar a entender a carga na instância e planejar fluxos de trabalho novos ou existentes em momentos apropriados.
 
 1. Na exibição do **[!UICONTROL Campaign Workflow HeatMap]**, clique no botão **[!UICONTROL Filters]**.
 1. Defina a duração para alguns segundos ou alguns minutos.
 1. Aumente o filtro de duração para excluir os fluxos de trabalho mais curtos que não são significativos.
 
-   ![](assets/wkf_monitoring_short_duration.png)
+   ![Filtros do HeatMap com o controle deslizante de duração mínima definido como 3 minutos (189 segundos) para excluir os fluxos de trabalho mais curtos.](assets/wkf_monitoring_short_duration.png)
 
 1. Explore os resultados para entender a carga na instância e execute as ações apropriadas:
 
    * Se você encontrar problemas de desempenho e se uma ou mais células vermelhas forem exibidas na grade, considere alterar a hora de início de vários fluxos de trabalho. Solicite aos usuários de marketing que movam fluxos de trabalho manualmente de períodos ocupados (&quot;ativos&quot;) para períodos mais disponíveis. Isso deve manter um nível estável de atividade ao longo do dia.
-   * Para evitar picos e a sobrecarga da instância, verifique o HeatMap antes de planejar novos fluxos de trabalho e escolha o melhor momento. Considere os intervalos de tempo correspondentes às células cinza ou verde na grade para iniciar novos fluxos de trabalho.
+   * Para evitar picos e a sobrecarga da instância, verifique o Mapa de calor antes de planejar novos fluxos de trabalho e escolha o melhor momento. Considere os intervalos de tempo correspondentes às células cinza ou verde na grade para iniciar novos fluxos de trabalho.
 
 ### Encontrar fluxos de trabalho de longa duração que afetam desempenhos {#finding-long-running-workflows-that-impact-performance}
 
-Como administrador do Campaign, o Workflow HeatMap ajuda você a encontrar os fluxos de trabalho mais longos que podem retardar a atividade.
+Como administrador do Campaign, o Mapa de calor de fluxos de trabalho ajuda você a encontrar os fluxos de trabalho mais longos que podem retardar a atividade.
 
 1. Na exibição do **[!UICONTROL Campaign Workflow HeatMap]**, clique no botão **[!UICONTROL Filters]**.
 1. Defina a duração como 1 hora.
 
-   ![](assets/wkf_monitoring_long_duration.png)
+   ![Filtros do HeatMap com controle deslizante de duração mínima definido para o máximo de 1 hora (3600 segundos).](assets/wkf_monitoring_long_duration.png)
 
 1. Inclua mais resultados diminuindo o filtro **[!UICONTROL Min duration]**.
 1. Explore os resultados para encontrar os fluxos de trabalho mais longos, que podem potencialmente ter mais impacto nos recursos do servidor e do banco de dados (CPU, RAM, rede, IOPS etc.).
@@ -162,18 +162,18 @@ Como administrador do Campaign, o Workflow HeatMap ajuda você a encontrar os fl
    * Aconselhe os usuários de marketing a dividirem os fluxos de trabalho mais longos para reduzir o tempo de processamento.
    * Inicie uma análise mais profunda de fluxos de trabalho específicos e atividades específicas (como JavaScript, importação, exportação etc.) para isolar os problemas e resolvê-los com mais facilidade.
 
-## Usar o HeatMap para aprimorar o planejamento do fluxo de trabalho {#example--using-the-heatmap-to-improve-workflow-planning}
+## Usar o Mapa de calor para aprimorar o planejamento do fluxo de trabalho {#example--using-the-heatmap-to-improve-workflow-planning}
 
-O exemplo abaixo mostra como o planejamento pode ser mais eficiente e como o desempenho pode ser melhorado ao usar o Adobe Campaign Workflow HeatMap.
+O exemplo abaixo mostra como o planejamento pode ser mais eficiente e como o desempenho pode ser melhorado ao usar o Mapa de calor de fluxos de trabalho do Adobe Campaign.
 
 Nesse caso, muitos usuários estão reclamando do desempenho do fluxo de trabalho. Você precisa verificar o que está atrasando a atividade e como resolver o problema.
 
 1. Vá para **[!UICONTROL Monitoring]** e clique no link **[!UICONTROL Workflows]** para exibir a página **[!UICONTROL Campaign Workflow HeatMap]**.
 1. Defina o filtro **[!UICONTROL Min duration]** como 5 minutos.
 1. Defina o filtro **[!UICONTROL Workflow type]** como **[!UICONTROL Marketing]**.
-1. Na grade do HeatMap, observe o seguinte:
+1. Na grade do Mapa de calor, observe o seguinte:
 
-   ![](assets/wkf_monitoring_without.png)
+   ![Grade do HeatMap sem o filtro de duração, com um pico de 50 fluxos de trabalho na linha 10 e poucas células após 14h.](assets/wkf_monitoring_without.png)
 
    * Cinquenta fluxos de trabalho da campanha de longa duração (mais de 5 minutos) estão sendo executados às 10h.
    * A maioria deles tem um estado pendente (por padrão, o limite de simultaneidade é definido como 20).
@@ -184,7 +184,7 @@ Nesse caso, muitos usuários estão reclamando do desempenho do fluxo de trabalh
 1. Volte para a página **[!UICONTROL Campaign Workflow HeatMap]** e clique no botão **[!UICONTROL Reload data]**.
 1. Agora observe o seguinte:
 
-   ![](assets/wkf_monitoring_with.png)
+   ![Grade do HeatMap com o filtro de duração aplicado, mostrando uma distribuição diferente com o pico reduzido a 18 fluxos de trabalho.](assets/wkf_monitoring_with.png)
 
    * Apenas dezoito fluxos de trabalho da campanha de longa duração ainda estão em execução às 10h.
    * Não há mais fluxos de trabalho em estado pendente (o limite de simultaneidade ainda está definido como 20).
