@@ -118,7 +118,7 @@ Isso permite que você faça referência a um ícone que será exibido na barra 
 
 ## Definição das configurações de controle {#defining-control-settings}
 
-Quando o usuário preenche o formulário, uma verificação é automaticamente executada em determinados campos, dependendo do formato ou da configuração. Isso permite que você torne determinados campos obrigatórios (consulte [Definição de campos obrigatórios](#defining-mandatory-fields)) ou verifique o formato dos dados inseridos (consulte [Verificação do formato de dados ](#checking-data-format)). As verificações são realizadas durante a aprovação da página (clicando em um link ou botão que permite uma transição de saída).
+Quando o usuário preenche o formulário, uma verificação é automaticamente executada em determinados campos, dependendo do formato ou da configuração. Isso permite que você torne determinados campos obrigatórios (consulte [Definição de campos obrigatórios](#defining-mandatory-fields)) ou verifique o formato dos dados inseridos (consulte [Verificação do formato de dados &#x200B;](#checking-data-format)). As verificações são realizadas durante a aprovação da página (clicando em um link ou botão que permite uma transição de saída).
 
 ### Definição de campos obrigatórios {#defining-mandatory-fields}
 
