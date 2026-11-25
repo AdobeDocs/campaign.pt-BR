@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 63%
+source-wordcount: '1566'
+ht-degree: 59%
 ---
 # Adicionar uma oferta em uma página da Web{#add-an-offer-in-web}
 
@@ -119,7 +119,7 @@ No conteúdo da página da Web, é necessário adicionar o script a seguir para 
 
 1. Vá para o espaço de oferta que será chamado pela página da Web, clique em **[!UICONTROL Advanced parameters]** e adicione uma ou mais chaves de identificação.
 
-   ![](assets/interaction_htmlmode_001.png)
+   ![Guia de identificação de Target de parâmetros avançados com o Caminho da chave @email e o campo Sobrenome sendo adicionado como uma segunda chave](assets/interaction_htmlmode_001.png)
 
    Neste exemplo, a chave de identificação é composta por ser baseada no e-mail e no nome do destinatário.
 
@@ -141,7 +141,7 @@ Para gerar a representação de oferta HTML automaticamente, é possível usar u
 1. Selecione **[!UICONTROL Overload the HTML rendering function]**.
 1. Vá para a guia **[!UICONTROL HTML rendering]** e insira as variáveis que correspondem aos campos definidos para o conteúdo da oferta no espaço de oferta.
 
-   ![](assets/interaction_htmlmode_002.png)
+   ![Caixa de diálogo Editar funções do espaço de ofertas, guia Renderização do HTML, com a opção Sobrecarregar a função de renderização do HTML e o script](assets/interaction_htmlmode_002.png)
 
    Neste exemplo, a oferta é exibida no formato de um banner na página da Web e é composta de uma imagem clicável e um título que corresponde aos campos definidos no conteúdo da oferta.
 
@@ -184,9 +184,9 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
 1. **Criar um ambiente e um espaço de ofertas**
 
-   Para obter mais informações sobre como criar um ambiente, consulte [esta página](interaction-env.md).
+   Para obter mais informações sobre como criar um ambiente, consulte [Trabalhar com ambientes de interação do Campaign](interaction-env.md).
 
-   Para obter mais informações sobre como criar um espaço de ofertas, consulte [esta página](interaction-offer-spaces.md).
+   Para obter mais informações sobre como criar um espaço de ofertas, consulte [Espaços de ofertas de interação de campanha](interaction-offer-spaces.md).
 
 1. **Estender o esquema de oferta para adicionar novos campos**
 
@@ -256,7 +256,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
    Comente o campo URL de destino:
 
-   ![](assets/interaction_xmlmode_form_001.png)
+   ![Formulário de representação da oferta XML com o bloco de entrada da URL de Destino comentado](assets/interaction_xmlmode_form_001.png)
 
    >[!CAUTION]
    >
@@ -264,17 +264,17 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
 
    A renderização nas representações de oferta é semelhante a esta:
 
-   ![](assets/interaction_xmlmode_form.png)
+   ![Guia Conteúdo da Oferta com os campos Título, URL de Destino e URL de Imagem vazios acima do editor de conteúdo do HTML](assets/interaction_xmlmode_form.png)
 
    Os campos **[!UICONTROL Title 2]** e **[!UICONTROL Price]** foram adicionados e o campo **[!UICONTROL Destination URL]** não é mais exibido.
 
 1. **Criar uma oferta**
 
-   Para obter mais informações sobre criação de ofertas, consulte [esta página](interaction-offer.md).
+   Para obter mais informações sobre como criar ofertas, consulte [Oferta de interação de campanha](interaction-offer.md).
 
    No caso de uso a seguir, a oferta é inserida da seguinte maneira:
 
-   ![](assets/interaction_xmlmode_offer.png)
+   ![Guia Conteúdo da Oferta com Título, URL de Destino e URL da Imagem preenchidos e conteúdo do HTML usando recipient.firstName](assets/interaction_xmlmode_offer.png)
 
 1. **Aprovar a oferta**
 
@@ -327,7 +327,7 @@ O caso de uso abaixo detalha as configurações a serem executadas no Adobe Camp
    } 
    ```
 
-![](assets/interaction_xmlmode_001.png)
+![Caixa de diálogo Editar funções do espaço de ofertas, guia de renderização XML, com a opção Sobrecarregar a função de renderização XML e o script](assets/interaction_xmlmode_001.png)
 
 ## Configurar uma integração do SOAP
 

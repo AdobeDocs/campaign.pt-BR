@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 48%
+source-wordcount: '1015'
+ht-degree: 39%
 ---
 # Criar espaços de oferta{#creating-offer-spaces}
 
@@ -37,27 +37,27 @@ Como **administrador técnico**, você pode criar espaços de oferta no ambiente
 
 A renderização do HTML é criada por meio de uma função de renderização. A seqüência dos campos definidos na função de renderização deve ser idêntica à sequência configurada no conteúdo.
 
-![](assets/offer_space_create_009.png)
+![Propriedades do espaço de ofertas com campos obrigatórios URL da imagem, URL de destino, Título e uma função de renderização HTML correspondente](assets/offer_space_create_009.png)
 
 Para criar um novo espaço de ofertas, siga as etapas abaixo:
 
 1. Na lista de espaços de oferta, clique em **[!UICONTROL New]**.
 
-   ![](assets/offer_space_create_001.png)
+   ![Lista de espaços de oferta com o botão Novo realçado e um espaço de oferta de Email selecionado](assets/offer_space_create_001.png)
 
 1. Selecione o canal que deseja usar e altere o rótulo do espaço de oferta.
 
-   ![](assets/offer_space_create_002.png)
+   ![Guia Propriedades do espaço de ofertas com o Rótulo definido como Email/clientes e o Canal definido como Email](assets/offer_space_create_002.png)
 
 1. Marque a opção **[!UICONTROL Enable unitary mode]**.
 
 1. Vá para a janela **[!UICONTROL Content field]** e clique em **[!UICONTROL Add]**.
 
-   ![](assets/offer_space_create_003.png)
+   ![Propriedades do espaço de oferta com o botão adicionar ao lado da lista de campos de conteúdo de oferta](assets/offer_space_create_003.png)
 
 1. Vá para o nó **[!UICONTROL Content]** e selecione os campos na seguinte ordem: **[!UICONTROL Title]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** e **[!UICONTROL Destination URL]**.
 
-   ![](assets/offer_space_create_004.png)
+   ![Selecione uma caixa de diálogo de expressão listando os campos Conteúdo, como URL da Imagem, Conteúdo de Texto e Título](assets/offer_space_create_004.png)
 
 1. Marque a opção **[!UICONTROL Required]** para tornar cada campo obrigatório.
 
@@ -65,7 +65,7 @@ Para criar um novo espaço de ofertas, siga as etapas abaixo:
    >
    >Essa opção é usada na pré-visualização e oferece espaços de oferta inválidos ao publicar se um dos campos obrigatórios não estiver presente na oferta. No entanto, se uma oferta já estiver disponível em um espaço de oferta, esses critérios não serão levados em consideração.
 
-   ![](assets/offer_space_create_005.png)
+   ![Lista de campos de conteúdo da oferta com Título, URL da Imagem, conteúdo do HTML e URL de Destino, todos necessários](assets/offer_space_create_005.png)
 
 1. Clique em **[!UICONTROL Edit functions]** para criar uma função de renderização.
 
@@ -73,12 +73,12 @@ Para criar um novo espaço de ofertas, siga as etapas abaixo:
 
    **Observação** - o formato XML está restrito às interações de entrada que não estão disponíveis nesta versão do produto. [Saiba mais](../start/v7-to-v8.md#gs-unavailable-features)
 
-   ![](assets/offer_space_create_006.png)_
+   ![Propriedades do espaço de ofertas com o link Editar funções em Funções de renderização realçadas](assets/offer_space_create_006.png)_
 
 1. Acesse a guia **[!UICONTROL HTML rendering]** e selecione **[!UICONTROL Overload the HTML rendering function]**.
 1. Insira a função de renderização.
 
-   ![](assets/offer_space_create_007.png)
+   ![Guia de renderização do HTML com a opção Sobrecarregar a função de renderização do HTML e uma função de exemplo](assets/offer_space_create_007.png)
 
 ## Status da apresentação de oferta {#offer-proposition-statuses}
 
@@ -116,7 +116,7 @@ Para fazer isso, siga as etapas abaixo:
 1. Vá para a guia **[!UICONTROL Storage]** do espaço desejado.
 1. Selecione o status a ser aplicado à proposta quando ela for criada.
 
-   ![](assets/offer_update_status_001.png)
+   ![Guia Armazenamento com a lista Status na apresentação aberta e o status Apresentado sendo selecionado](assets/offer_update_status_001.png)
 
 ### Status da oferta quando a proposta for aceita {#configuring-the-status-when-the-proposition-is-accepted}
 
@@ -127,7 +127,7 @@ Para fazer isso, siga as etapas abaixo:
 1. Vá para a guia **[!UICONTROL Storage]** do espaço desejado.
 1. Selecione o status que deseja aplicar à proposta quando for aceita.
 
-   ![](assets/offer_update_status_002.png)
+   ![Guia Armazenamento com a lista Status de aceitação aberta e o status Aceito sendo selecionado](assets/offer_update_status_002.png)
 
 
 **Interação de entrada**
@@ -150,7 +150,7 @@ Assim que um visitante clica na oferta, e portanto na URL, o status **[!UICONTRO
 >
 >Se desejar especificar outro status na url (por exemplo, se uma apresentação de oferta for rejeitada), use o valor correspondente ao status desejado. Exemplo: **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot; e assim por diante.
 >
->Os status e seus valores podem ser recuperados no esquema de dados **[!UICONTROL Offer propositions (nms)]**. Para obter mais informações, consulte [esta página](../dev/create-schema.md).
+>Os status e seus valores podem ser recuperados no esquema de dados **[!UICONTROL Offer propositions (nms)]**. Para obter mais informações, consulte [Criar um novo esquema no Campaign](../dev/create-schema.md).
 
 **Interação de saída**
 
@@ -164,13 +164,13 @@ Você pode aplicar automaticamente o status **[!UICONTROL Interested]** a uma ap
 
 Na guia **[!UICONTROL Preview]**, é possível exibir as ofertas para as quais o destinatário está qualificado por meio de um método escolhido. No exemplo abaixo, o destinatário está qualificado para três propostas de ofertas por e-mail.
 
-![](assets/offer_space_overview_002.png)
+![Guia Visualização do espaço de ofertas com três ofertas qualificadas classificadas por peso e o conteúdo de oferta renderizado](assets/offer_space_overview_002.png)
 
 Se um recipient não estiver qualificado para ofertas, isso será mostrado na visualização.
 
-![](assets/offer_space_overview_001.png)
+![Guia Visualização do espaço de ofertas mostrando a mensagem Nenhuma oferta está qualificada](assets/offer_space_overview_001.png)
 
 
 A visualização pode ignorar contextos quando eles são restritos a um espaço. Esse é o caso quando o schema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada.
 
-Para obter mais informações, consulte esta amostra em [esta seção](extension-example.md).
+Para obter mais informações, consulte esta amostra em [Exemplo de extensão](extension-example.md).

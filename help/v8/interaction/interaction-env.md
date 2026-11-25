@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 57%
+source-wordcount: '478'
+ht-degree: 48%
 ---
 # Trabalhar com ambientes{#work-with-environments}
 
@@ -41,7 +41,7 @@ O Interaction opera com dois tipos de ambientes de oferta:
 * Os ambientes de oferta **[!UICONTROL Design]** que incluem ofertas que estão sendo editadas e podem ser alteradas. Essas ofertas não foram feitas pelo ciclo de aprovação e não são entregues aos contatos.
 * Os ambientes de oferta **[!UICONTROL Live]** que incluem ofertas aprovadas conforme são apresentadas aos contatos. As ofertas neste ambiente são somente leitura.
 
-![](assets/offer_environments_overview_001.png)
+![Árvore do Explorer com ambientes de oferta em tempo real e de design, cada um com espaços de oferta e pastas de administração.](assets/offer_environments_overview_001.png)
 
 Cada ambiente **[!UICONTROL Design]** está vinculado a um ambiente **[!UICONTROL Live]**. Quando uma oferta é concluída, suas regras de conteúdo e elegibilidade estão sujeitas a um ciclo de aprovação. Depois que este ciclo for concluído, a oferta relacionada será implantada automaticamente no ambiente **[!UICONTROL Live]**. A partir deste momento, ele estará disponível para entrega.
 
@@ -51,7 +51,7 @@ Por padrão, o Campaign vem com um ambiente **[!UICONTROL Design]** e um ambient
 >
 >Para direcionar a tabela de recipients, é necessário usar o assistente de target mapping para criar os ambientes. [Saiba mais](#creating-an-offer-environment).
 
-![](assets/offer_environments_overview_002.png)
+![Guia Geral do ambiente de design com o tipo Design e seu campo Ambiente dinâmico vinculado realçado.](assets/offer_environments_overview_002.png)
 
 Os gerentes de delivery só podem visualizar o ambiente **[!UICONTROL Live]** e aproveitar as ofertas para entregá-los. Os gerentes de oferta podem visualizar e usar o ambiente **[!UICONTROL Design]** e visualizar o ambiente **[!UICONTROL Live]**. [Saiba mais](interaction-operators.md)
 
@@ -63,11 +63,11 @@ Siga as etapas abaixo:
 
 1. Navegue até **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**, clique com o botão direito no target mapping que deseja usar e selecione **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
 
-   ![](assets/offer_env_anonymous_001.png)
+   ![Lista de target mappings com o menu Actions e Modifique as opções da targeting dimension selecionada.](assets/offer_env_anonymous_001.png)
 
 1. Clique em **[!UICONTROL Next]**, selecione a opção **[!UICONTROL Generate a storage schema for propositions]** e clique em **[!UICONTROL Save]**.
 
-   ![](assets/offer_env_anonymous_002.png)
+   ![Etapa de extensões do assistente com Gerar um esquema de armazenamento para propostas selecionadas.](assets/offer_env_anonymous_002.png)
 
    >[!NOTE]
    >
@@ -81,7 +81,7 @@ Essa opção permite ativar funções específicas de interação anônima, espe
 
 Por exemplo, é possível vincular um espaço de oferta de ambiente de destinatário (contato identificado) com um espaço de oferta que corresponda a um ambiente de visitante (contato não identificado). Dessa forma, as diferentes ofertas serão disponibilizadas para o contato, dependendo se ele for identificado ou não. Para obter mais informações, consulte [Criação de espaços de oferta](interaction-offer-spaces.md).
 
-![](assets/offer_env_anonymous_003.png)
+![Ambientes de design e ao vivo de visitantes, com a opção dedicada às interações anônimas recebidas marcada.](assets/offer_env_anonymous_003.png)
 
 >[!NOTE]
 >

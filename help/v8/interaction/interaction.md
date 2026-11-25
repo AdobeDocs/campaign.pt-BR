@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1636'
 ht-degree: 47%
 ---
 # Gerenciar interações em tempo real
@@ -42,7 +42,7 @@ Você pode criar um catálogo de ofertas que faça interface com seus canais de 
 
 A interação permite criar e gerenciar um catálogo de ofertas e configurar as regras de elegibilidade e os temas de aplicações vinculados a elas. Dependendo do canal escolhido, o conteúdo da oferta pode ser personalizado graças a várias funções de renderização. Por fim, você pode usar o módulo de simulação para calcular o impacto de uma apresentação de ofertas.
 
-![](assets/interaction-cycle.png)
+![Ciclo do mecanismo de oferta: chamada do mecanismo, chamada do catálogo, seleção e personalização, histórico, apresentação da oferta](assets/interaction-cycle.png)
 
 Primeiro, um contato ocorre entre um cliente e uma empresa por meio de um canal de comunicação: pode ser um site (interação de entrada), um email, SMS, notificação por push (interações de saída). [Saiba mais](#interaction-types)
 
@@ -76,7 +76,7 @@ Se o espaço for definido por um canal unitário no modo identificado, você dev
 
 1. Configure o Mecanismo de oferta para interações de entrada para apresentar e atualizar uma ou várias ofertas.
 
-   Os vários modos de integração estão detalhados em [esta seção](interaction-present-offers.md).
+   Os vários modos de integração são detalhados em [Apresentar uma oferta (interação de entrada)](interaction-present-offers.md).
 
    >[!NOTE]
    >

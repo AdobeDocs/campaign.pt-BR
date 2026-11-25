@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 58%
+source-wordcount: '1565'
+ht-degree: 47%
 ---
 # Enviar uma oferta{#send}
 
@@ -41,37 +41,37 @@ Para inserir apresentações de oferta em um delivery, siga as etapas abaixo:
 
 1. Na janela de entrega, clique no ícone **Ofertas**.
 
-   ![](assets/offer_delivery_001.png)
+   ![Entrega de email com o botão Ofertas, abrindo a caixa de diálogo Gerenciamento de ofertas com um campo Espaço de ofertas vazio](assets/offer_delivery_001.png)
 
 1. Selecione o espaço que corresponde ao seu ambiente de oferta.
 
-   ![](assets/offer_delivery_002.png)
+   ![Menu suspenso Espaço de ofertas na caixa de diálogo Gerenciamento de ofertas listando os espaços de ofertas de Email disponíveis](assets/offer_delivery_002.png)
 
 1. Para refinar a opção de ofertas do motor, selecione a categoria da qual a(s) oferta(s) a ser apresentada é uma parte, ou um/vários temas. Recomendamos usar apenas um desses campos de cada vez para evitar sobrecarga de restrições.
 
-   ![](assets/offer_delivery_003.png)
+   ![Caixa de diálogo Gerenciamento de ofertas com o menu suspenso Categoria listando as categorias do catálogo de ofertas](assets/offer_delivery_003.png)
 
-   ![](assets/offer_delivery_004.png)
+   ![Caixa de diálogo Gerenciamento de ofertas com o campo Temas preenchido](assets/offer_delivery_004.png)
 
 1. Especifique o número de ofertas que deseja inserir no corpo da entrega.
 
-   ![](assets/offer_delivery_005.png)
+   ![Caixa de diálogo de gerenciamento de ofertas com o campo Número de propostas por mensagem definido como 2](assets/offer_delivery_005.png)
 
 1. Selecione a opção **[!UICONTROL Exclude non-eligible recipients]** se necessário. [Saiba mais](#parameters-for-calling-offer-engine)
 
-   ![](assets/offer_delivery_006.png)
+   ![Caixa de diálogo Gerenciamento de ofertas com a opção Excluir destinatários não qualificados selecionada](assets/offer_delivery_006.png)
 
 1. Se necessário, selecione a opção **[!UICONTROL Do not display anything if no offers are selected]**. [Saiba mais](#parameters-for-calling-offer-engine)
 
-   ![](assets/offer_delivery_007.png)
+   ![A caixa de diálogo Gerenciamento de ofertas com a opção Não exibir nada se nenhuma oferta for selecionada](assets/offer_delivery_007.png)
 
 1. Insira as propriedades no conteúdo do delivery usando os campos de mesclagem. O número de apresentações disponíveis depende da forma como a chamada do motor é configurada e sua ordem depende da prioridade das ofertas.
 
-   ![](assets/offer_delivery_008.png)
+   ![Caminho do menu de conteúdo de entrega Propositions, Propositions 2, função de renderização, renderização de HTML](assets/offer_delivery_008.png)
 
 1. Finalize o conteúdo, teste e envie seu delivery.
 
-   ![](assets/offer_delivery_010.png)
+   ![O conteúdo do delivery de email com duas propostas inclui scripts e o botão Enviar fica realçado](assets/offer_delivery_010.png)
 
 
 ### Parâmetros do mecanismo de oferta {#parameters-for-calling-offer-engine}
@@ -97,7 +97,7 @@ A atividade **Enrichment** permite adicionar ofertas ou links para ofertas de re
 
 Por exemplo, é possível enriquecer os dados de uma consulta de destinatário antes de uma entrega.
 
-![](assets/int_enrichment_offer1.png)
+![Fluxo de trabalho com uma atividade Query, Enrichment e Direct mail delivery vinculada por transições Result](assets/int_enrichment_offer1.png)
 
 Há dois métodos para especificar apresentações de oferta.
 
@@ -112,20 +112,20 @@ Após configurar sua atividade **Query**:
 1. Na guia **[!UICONTROL Enrichment]**, selecione **[!UICONTROL Add data]**.
 1. Selecione **[!UICONTROL An offer proposition]** nos tipos de dados para adicionar.
 
-   ![](assets/int_enrichment_offer2.png)
+   ![Assistente de dados adicionais com a opção An offer proposition selecionada](assets/int_enrichment_offer2.png)
 
 1. Especifique um identificador e um rótulo para a proposta que será adicionada.
 1. Especifique a seleção da oferta. Há duas opções possíveis para isso:
 
    * **[!UICONTROL Search for the best offer in a category]**: marque esta opção e especifique os parâmetros de chamada do mecanismo de oferta (espaços de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros. Recomendamos completar o campo **[!UICONTROL Category]** ou o campo **[!UICONTROL Theme]**, em vez de ambos ao mesmo tempo.
 
-     ![](assets/int_enrichment_offer3.png)
+     ![Etapa de apresentação de oferta definida para procurar a melhor oferta em uma categoria, com espaço, categoria e ofertas a serem mantidas](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A pre-defined offer]**: marque esta opção e especifique um espaço de ofertas, uma oferta específica e uma data de contato para configurar diretamente a oferta que deseja adicionar, sem chamar o mecanismo de Oferta.
 
-     ![](assets/int_enrichment_offer4.png)
+     ![Etapa de apresentação de oferta definida como uma oferta predefinida, com os campos Espaço e Oferta](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -141,13 +141,13 @@ Para fazer isso, siga as etapas abaixo:
 1. Na janela onde você escolhe o tipo de dados a serem adicionados, selecione **[!UICONTROL A link]**.
 1. Selecione o tipo de link que deseja estabelecer, assim como seu target. Nesse caso, o target é o esquema de oferta.
 
-   ![](assets/int_enrichment_link1.png)
+   ![Etapa de definição de link com um link cujo destino está sempre disponível e o esquema de Ofertas de marketing como destino](assets/int_enrichment_link1.png)
 
 1. Especifique a ligação entre os dados da tabela de entrada na atividade de enriquecimento (aqui a tabela de destinatários) e a tabela de ofertas. Por exemplo, é possível vincular um código de oferta a um destinatário.
 
-   ![](assets/int_enrichment_link2.png)
+   ![Condições de associação de definição de link que correspondem ao campo de origem cryptedId para o campo de código de destino](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -166,11 +166,11 @@ No entanto, é possível armazenar essas informações da seguinte maneira:
 1. Crie uma chamada para o Motor de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de delivery. [Saiba mais](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. Na janela principal da atividade, selecione **[!UICONTROL Edit additional data...]**.
 
-   ![](assets/ita_enrichment_rankweight_1.png)
+   ![Atividade Enrichment com o link Edit additional data realçado, listando os dados de apresentação](assets/ita_enrichment_rankweight_1.png)
 
 1. Adicione as colunas **[!UICONTROL @rank]** para a classificação e **[!UICONTROL @weight]** para o peso da oferta.
 
-   ![](assets/ita_enrichment_rankweight_2.png)
+   ![Selecione a caixa de diálogo de colunas adicionais com as colunas de saída Peso e Classificação adicionadas na proposta](assets/ita_enrichment_rankweight_2.png)
 
 1. Confirme sua adição e salve seu fluxo de trabalho.
 
@@ -180,11 +180,11 @@ A entrega armazena automaticamente a classificação e o peso das ofertas. Essas
 
 A atividade **[!UICONTROL Offer engine]** também permite especificar uma chamada para o mecanismo de oferta antes da entrega.
 
-Para obter mais informações sobre a atividade de **Mecanismo de oferta**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre a atividade de **Mecanismo de oferta**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}.
 
 Esta atividade funciona de acordo com o mesmo princípio que a atividade **Enriquecimento** com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de uma entrega.
 
-![](assets/int_offerengine_activity2.png)
+![Fluxo de trabalho com uma Query, um Mecanismo de oferta e uma Atividade de entrega de correspondência direta vinculada por Transições de resultado](assets/int_offerengine_activity2.png)
 
 Após configurar sua atividade **Query**:
 
@@ -195,15 +195,15 @@ Após configurar sua atividade **Query**:
    >
    >Se usar essa atividade, somente as propostas de oferta usadas na entrega serão armazenadas.
 
-   ![](assets/int_offerengine_activity1.png)
+   ![Atividade do mecanismo de oferta com o espaço de oferta, categoria de oferta e número de propostas a serem calculadas](assets/int_offerengine_activity1.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. [Saiba mais](#inserting-an-offer-proposition-into-a-delivery)
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. [Saiba mais](#inserting-an-offer-proposition-into-a-delivery)
 
 ### Ofertas por célula {#offers-by-cell}
 
 A atividade **[!UICONTROL Offers by cell]** permite distribuir a população de entrada (de uma consulta, por exemplo) em vários segmentos e especificar uma oferta a ser apresentada para cada um desses segmentos.
 
-Para obter mais informações sobre a atividade **Oferecer por célula**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre a atividade **Oferecer por célula**, consulte [esta página](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}.
 
 Para fazer isso, realize o seguinte processo:
 
@@ -214,7 +214,7 @@ Para fazer isso, realize o seguinte processo:
    * Especifique a população de subconjunto usando o filtro disponível e as regras de limitação.
    * Em seguida, selecione a oferta que deseja apresentar ao subconjunto. As ofertas disponíveis são aquelas elegíveis no ambiente de oferta que foi selecionado na etapa anterior.
 
-     ![](assets/int_offer_per_cell1.png)
+     ![Atividade de subconjunto com um espaço de oferta de email e o menu suspenso Oferta listando as ofertas disponíveis](assets/int_offer_per_cell1.png)
 
 1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido.
 

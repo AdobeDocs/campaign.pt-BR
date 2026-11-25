@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 31%
+source-wordcount: '463'
+ht-degree: 25%
 ---
 # Criar um catálogo de oferta
 
@@ -45,15 +45,15 @@ Para criar uma nova categoria, siga as etapas abaixo:
 
 1. Navegue até a pasta **[!UICONTROL Offer catalog]**.
 
-   ![](assets/offer_cat_create_001.png)
+   ![Árvore do Explorer com a pasta de catálogo Oferta selecionada em Ofertas - Design e Ambiente - Destinatário](assets/offer_cat_create_001.png)
 
 1. Clique com o botão direito e selecione **[!UICONTROL Create a new "Offer category" folder]** na lista suspensa.
 
-   ![](assets/offer_cat_create_002.png)
+   ![Menu de contexto no Catálogo de oferta com a opção Create a new Offer category folder realçada](assets/offer_cat_create_002.png)
 
 1. Renomeie a categoria. É possível editar o rótulo posteriormente usando a guia **[!UICONTROL General]**.
 
-   ![](assets/offer_cat_create_003.png)
+   ![Nova pasta de categoria chamada Neobank - Personal banking na árvore de catálogo Oferta, pronta para renomear](assets/offer_cat_create_003.png)
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Para criar uma nova categoria, siga as etapas abaixo:
 
    * Atribuir datas de elegibilidade pela guia **[!UICONTROL Eligibility]**.
 
-     ![](assets/offer_cat_create_004.png)
+     ![Guia de qualificação com campos de data de início e data de término, um calendário aberto e o link Editar consulta para filtros de destino](assets/offer_cat_create_004.png)
 
    * **[!UICONTROL Edit query]** para aplicar filtros ao destino da oferta.
 
@@ -83,4 +83,4 @@ Para incluir uma categoria de fallback nas recomendações, siga as etapas abaix
 1. Clique na guia **[!UICONTROL Eligibility]** e selecione a opção **[!UICONTROL Always include this category in the recommendations]**.
 1. Clique em **[!UICONTROL Save]**.
 
-   ![](assets/offer_cat_default_001.png)
+   ![Guia Qualificação da Categoria com Sempre incluir esta categoria nas recomendações selecionadas](assets/offer_cat_default_001.png)

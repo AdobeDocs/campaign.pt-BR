@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 57%
+source-wordcount: '1269'
+ht-degree: 53%
 ---
 # Práticas recomendadas de interação {#interaction-best-practices}
 
@@ -77,13 +77,13 @@ Ao selecionar ofertas em uma atividade de **Enriquecimento**, você pode escolhe
 
 No exemplo abaixo, o espaço de ofertas selecionado na entrega é **[!UICONTROL Email (Environment - Recipient)]**:
 
-![](assets/Interaction-best-practices-offer-space-selected.png)
+![Seção de seleção de oferta de uma entrega com o campo Espaço de oferta definido como Email (Ambiente - Destinatário).](assets/Interaction-best-practices-offer-space-selected.png)
 
 Se o espaço de ofertas selecionado na entrega não tiver uma função de renderização HTML configurada, você não o verá no menu da entrega e ele não estará disponível para seleção. Isso é independente do espaço de ofertas selecionado na atividade **Enrichment**.
 
 No exemplo abaixo, a função de renderização HTML está disponível na lista suspensa porque o espaço de ofertas selecionado na entrega tem uma função de renderização:
 
-![](assets/Interaction-best-practices-HTML-rendering.png)
+![Menu de campo do Personalization com Propositions, proposition e a opção de renderização do HTML realçada.](assets/Interaction-best-practices-HTML-rendering.png)
 
 Essa função insere código como: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
@@ -99,7 +99,7 @@ Consequentemente, para evitar qualquer problema, recomenda-se que todos os espa�
 
 Os espaços de ofertas têm a capacidade de armazenar dados na tabela de propostas quando as proposições são geradas ou aceitas:
 
-![](assets/Interaction-best-practices-offer-space-storage.png)
+![Guia Armazenamento de um espaço de ofertas com expressões On proposition e On acceptance status e storage path.](assets/Interaction-best-practices-offer-space-storage.png)
 
 No entanto, isso se aplica somente às interações de entrada.
 
@@ -109,15 +109,15 @@ Qualquer campo da tabela temporária do fluxo de trabalho cujo nome corresponda 
 
 Por exemplo, ao selecionar uma oferta manualmente (sem interação) em uma atividade de fluxo de trabalho **Enriquecimento**, os campos padrão são definidos da seguinte maneira:
 
-![](assets/Interaction-best-practices-manual-offer-std-fields.png)
+![Colunas de saída de uma atividade Enrichment com os campos padrão de uma oferta selecionada manualmente.](assets/Interaction-best-practices-manual-offer-std-fields.png)
 
 Campos adicionais podem ser adicionados, como um campo `@rank`:
 
-![](assets/Interaction-best-practices-manual-offer-add-fields.png)
+![Colunas de saída de uma atividade Enrichment com um campo Ranking adicionado para a proposta.](assets/Interaction-best-practices-manual-offer-add-fields.png)
 
 Como há um campo na tabela de proposta chamado `@rank`, o valor na tabela temporária do fluxo de trabalho será copiado.
 
-Para obter mais informações sobre como armazenar campos adicionais na tabela de propostas, consulte [esta seção](interaction-send-offers.md#storing-offer-rankings-and-weights).
+Para obter mais informações sobre como armazenar campos adicionais na tabela de propostas, consulte [Armazenar classificações e pesos de ofertas](interaction-send-offers.md#storing-offer-rankings-and-weights).
 
 Para ofertas de saída com interação, isso é útil quando várias ofertas são selecionadas e você deseja gravar em qual ordem elas serão exibidas em um email.
 
@@ -127,7 +127,7 @@ Ao usar a interação de saída, o campo `@rank` pode ser adicionado, como no ex
 
 Ao usar a interação e selecionar ofertas manualmente, o usuário pode combinar ambas as abordagens. Por exemplo, o usuário pode definir manualmente o campo `@rank` como 1 para a oferta selecionada manualmente e usar uma expressão como `"1 + @rank"` para as ofertas retornadas pela interação. Supondo que a interação selecione três ofertas, as ofertas retornadas por ambas as abordagens serão classificadas de 1 a 4:
 
-![](assets/Interaction-best-practices-manual-offer-combined.png)
+![Colunas de saída que combinam a Interação de Oferta com uma expressão de Classificação 1 + para definir a classificação manualmente.](assets/Interaction-best-practices-manual-offer-combined.png)
 
 ### Estender o esquema nms:offer {#extending-nms-offer-schema}
 

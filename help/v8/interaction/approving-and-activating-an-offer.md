@@ -21,10 +21,10 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 98%
+source-wordcount: '848'
+ht-degree: 72%
 ---
 # Aprovação e ativação de uma oferta{#approving-and-activating-an-offer}
 
@@ -34,7 +34,7 @@ Após completar o conteúdo da oferta, é preciso aprová-la para ser duplicada 
 
 O banner no painel de oferta informa se a oferta precisa passar pelo ciclo de aprovação ou não.
 
-![](assets/offer_validate_001.png)
+![Banner do painel de oferta informando que a oferta está com aprovação pendente, com o botão Aprovação.](assets/offer_validate_001.png)
 
 ## Aprovação do conteúdo da oferta {#approving-offer-content}
 
@@ -52,15 +52,15 @@ Para aprovar o conteúdo da oferta, aplique as seguintes etapas:
 
 1. Clique no botão **[!UICONTROL Approval]** e selecione **[!UICONTROL Approve content]** na janela pop-up.
 
-   ![](assets/offer_validate_002.png)
+   ![Menu de aprovação com Aprovar conteúdo selecionado, abrindo a Ação na caixa de diálogo de oferta.](assets/offer_validate_002.png)
 
 1. Utilizando a lista suspensa, selecione as representações que deseja continuar editando ou aquelas que deseja publicar no ambiente live, então clique em **[!UICONTROL Content approval]**.
 
-   ![](assets/offer_validate_003.png)
+   ![Ação na caixa de diálogo de oferta: escolha Continuar edição ou Habilitar, adicione um comentário e clique em Aprovação de conteúdo.](assets/offer_validate_003.png)
 
    Quando o conteúdo da oferta for aprovado, as informações serão atualizadas na tabela do painel de ofertas.
 
-   ![](assets/offer_validate_004.png)
+   ![Painel de ofertas após a aprovação: a representação mostra Habilitado e a seção Aprovações mostra Conteúdo aprovado.](assets/offer_validate_004.png)
 
    >[!NOTE]
    >
@@ -76,33 +76,33 @@ Aprovar a elegibilidade de oferta significa aceitar ou rejeitar pesos de oferta 
 
 * A lista completa de regras pode ser visualizada clicando em **[!UICONTROL Schedule and eligibility rules]**.
 
-  ![](assets/offer_validate_005.png)
+  ![Lista de regras de agendamento e qualificação com pesos e intervalos de datas, aberta na caixa de diálogo de aprovação.](assets/offer_validate_005.png)
 
 * Para alterar as regras de elegibilidade, clique em **[!UICONTROL Reject]** e em **[!UICONTROL Eligibility approval]**.
 
-  ![](assets/offer_validate_007.png)
+  ![Caixa de diálogo de aprovação de qualificação com Rejeitar selecionado, um comentário e o botão Aprovação de qualificação.](assets/offer_validate_007.png)
 
   Os vários status são atualizados no painel de ofertas.
 
-  ![](assets/offer_validate_006.png)
+  ![Painel após a rejeição: a aprovação da qualificação foi rejeitada com o banner, o botão Enviar qualificação, A qualificação foi rejeitada.](assets/offer_validate_006.png)
 
 * Para aceitar a elegibilidade da oferta, clique em **[!UICONTROL Approve eligibility]**.
 
-  ![](assets/offer_validate_008.png)
+  ![Botão Enviar qualificação abrindo a Ação na caixa de diálogo de oferta com as opções Aprovar e Rejeitar.](assets/offer_validate_008.png)
 
   Aprove a elegibilidade, adicione um comentário se necessário e clique em **[!UICONTROL Eligibility approval]**.
 
-  ![](assets/offer_validate_009.png)
+  ![Caixa de diálogo Aprovação de qualificação com Aprovar selecionada, um comentário inserido e o botão Aprovação de qualificação.](assets/offer_validate_009.png)
 
   Os vários status são atualizados no painel de ofertas.
 
-  ![](assets/offer_validate_010.png)
+  ![Painel mostrando a oferta com implantação pendente para o ambiente live, com Qualificação aprovada e Conteúdo aprovado.](assets/offer_validate_010.png)
 
 ## Rastreamento de aprovação {#approval-tracking}
 
 O rastreamento de aprovação está disponível no painel de ofertas. Clique em **[!UICONTROL Hide/display logs]** para acessá-lo.
 
-![](assets/offer_validate_012.png)
+![Painel de ofertas com os logs de aprovação exibidos após clicar em Ocultar/exibir logs, listar ação, tipo e aprovador.](assets/offer_validate_012.png)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Depois que a aprovação for iniciada, ela poderá ser reiniciada. Para fazer is
 1. Na janela **[!UICONTROL Edit]** que aparece, selecione a aprovação para reiniciar e clique em **[!UICONTROL Re-initialize approval to submit it again]**.
 1. Confirme clicando em **[!UICONTROL Ok]**.
 
-![](assets/offer_validate_013.png)
+![Diário de aprovações na janela Editar com o link Reinicializar aprovação para enviá-lo novamente.](assets/offer_validate_013.png)
 
 ## Publicação da oferta {#publishing-the-offer}
 
@@ -124,11 +124,11 @@ Uma vez que o conteúdo e a elegibilidade de uma oferta tenham sido aprovados, a
 
 O painel de controle disponível no ambiente de design contém informações sobre a publicação, incluindo o nome da oferta correspondente no ambiente live.
 
-![](assets/offer_golive_001.png)
+![Criar painel de ofertas: banner de data de implantação, link de Ofertas online com status Publicado, representação online.](assets/offer_golive_001.png)
 
 Para exibir a oferta disponível no ambiente ativo, clique no rótulo da oferta: a oferta ativa tem um painel que contém todas as informações relevantes.
 
-![](assets/offer_golive_002.png)
+![Link para o painel de ofertas em tempo real, que mostra o status Online, seu ambiente e suas regras de agendamento e qualificação.](assets/offer_golive_002.png)
 
 ## Desabilitação de uma oferta {#disabling-an-offer}
 
@@ -142,4 +142,4 @@ Você também pode desabilitar diretamente uma categoria indo até a guia **[!UI
 >
 >Quando uma oferta é excluída em um ambiente de design, ela é automaticamente desativada no ambiente online vinculado. Após um período de retenção de apresentações, as ofertas desativadas são excluídas do ambiente online.
 
-![](assets/offer_preview_deactivate.png)
+![Implantação pendente do painel de ofertas, com o botão Desabilitar oferta usado para desativar a oferta.](assets/offer_preview_deactivate.png)

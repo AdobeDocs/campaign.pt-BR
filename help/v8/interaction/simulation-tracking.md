@@ -29,10 +29,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 66%
+source-wordcount: '198'
+ht-degree: 55%
 ---
 # Rastreamento de simulação{#simulation-tracking}
 
@@ -44,12 +44,12 @@ Os resultados da simulação contêm um detalhamento de propostas por classifica
 
 É possível salvar estes resultados e exportá-los se necessário, criando uma análise descritiva dos resultados. Para fazer isso, clique no link apropriado na janela de resultados.
 
-Consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} para mais informações sobre o assistente de análise descritiva.
+Consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"} para mais informações sobre o assistente de análise descritiva.
 
-![](assets/offer_simulation_012.png)
+![Guia Resultados da Simulação com o detalhamento de propostas por ofertas e o link Análise Descritiva de Resultados](assets/offer_simulation_012.png)
 
 Uma tabela dinâmica fornece uma visão rápida dos detalhamentos de oferta por classificação. Como todos os relatórios do Adobe Campaign, é possível exportar, imprimir, arquivar ou exibir os relatórios em um navegador da Web.
 
-Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
+Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
 
-![](assets/offer_simulation_013.png)
+![Painel de simulação, Detalhamento de ofertas por relatório de classificação, com tabela de classificação de oferta, gráfico de pizza e barra de ferramentas de exportação](assets/offer_simulation_013.png)

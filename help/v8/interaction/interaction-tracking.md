@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 74%
+source-wordcount: '232'
+ht-degree: 44%
 ---
 # Histórico e relatórios da interação em tempo real
 
@@ -44,15 +44,15 @@ Depois que as apresentações da oferta são feitas, é possível visualizar o h
 
 * No nível da oferta, clique em **[!UICONTROL Edit]** na guia **[!UICONTROL Propositions]**.
 
-  ![](assets/offer_followup_006.png)
+  ![Guia Propositions de uma lista de ofertas e apresentações feitas para a oferta com data, espaço e status do evento](assets/offer_followup_006.png)
 
 * A partir do perfil de um destinatário, clique na guia **[!UICONTROL Propositions]**.
 
-  ![](assets/offer_followup_002.png)
+  ![Guia Propositions de um perfil de destinatário listando ofertas com data de evento, status, espaço de oferta e entrega](assets/offer_followup_002.png)
 
 * No nível de espaço de oferta, clique na guia **[!UICONTROL Propositions]**.
 
-  ![](assets/offer_space_prop_001_b.png)
+  ![Guia Propositions de um espaço de ofertas listando apresentações feitas com classificação, peso e status](assets/offer_space_prop_001_b.png)
 
 ## Relatório da análise da oferta{#offer-analysis-report}
 
@@ -62,14 +62,14 @@ As estatísticas são classificadas com base em três critérios:
 
 * Por data:
 
-  ![](assets/offer_report_perdate.png)
+  ![Relatório da análise da oferta, Estatísticas por data, com contagens de apresentações, taxas aceitas e rejeitadas e um gráfico](assets/offer_report_perdate.png)
 
 * Por espaço:
 
-  ![](assets/offer_report_perspaces.png)
+  ![Relatório de análise da oferta, Estatísticas por espaço, com taxas aceitas e rejeitadas por canal e um gráfico de barras](assets/offer_report_perspaces.png)
 
 * Por entregas:
 
-  ![](assets/offer_report_perdeliveries.png)
+  ![Relatório de análise da oferta, Estatísticas por entrega, com propostas, contagens aceitas e rejeitadas por entrega](assets/offer_report_perdeliveries.png)
 
 Os dados podem ser filtrados com base em vários critérios disponíveis na seção superior do relatório. Após selecionar os critérios desejados, clique no link **[!UICONTROL Refresh]** para aplicá-los ao relatório.
