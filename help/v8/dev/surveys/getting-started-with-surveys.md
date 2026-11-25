@@ -21,10 +21,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 96%
+source-wordcount: '1244'
+ht-degree: 73%
 ---
 # Etapas principais para criar uma pesquisa{#getting-started-with-surveys}
 
@@ -36,7 +36,7 @@ ht-degree: 96%
 
 A seguir há uma visão geral rápida das principais etapas para criar uma pesquisa simples, usando o seguinte modelo integrado:
 
-![](assets/s_ncs_admin_survey_result.png)
+![Página de pesquisa Seus detalhes com sobrenome, número de conta e campos de email, uma lista de formato de email e um botão Validar](assets/s_ncs_admin_survey_result.png)
 
 São elas:
 
@@ -52,13 +52,13 @@ São elas:
 
 Para criar uma nova pesquisa, vá para a guia **[!UICONTROL Campaigns]** ou **[!UICONTROL Profiles and targets]** e clique no menu **[!UICONTROL Web Applications]**. Clique no botão **[!UICONTROL Create]** acima da lista de formulários.
 
-![](assets/s_ncs_admin_survey_create.png)
+![Lista de Aplicativos Web na guia Campanhas com o botão Criar acima da lista de formulários](assets/s_ncs_admin_survey_create.png)
 
 ## Etapa 2 — seleção do modelo {#step-2---selecting-the-template}
 
 Selecione um modelo de pesquisa e nomeie a pesquisa. Esse nome não será visto pelos usuários finais, mas permite a identificação da pesquisa no Adobe Campaign. Clique em **[!UICONTROL Save]** para adicionar a pesquisa à lista de aplicações Web.
 
-![](assets/s_ncs_admin_survey_wz_00.png)
+![Caixa de diálogo Novo aplicativo Web com o modelo de pesquisa Novo selecionado, um rótulo, uma pasta e o botão Salvar](assets/s_ncs_admin_survey_wz_00.png)
 
 ## Etapa 3 — criação da pesquisa {#step-3---building-the-survey}
 
@@ -70,34 +70,34 @@ Uma pesquisa deve conter **pelo menos** três componentes: uma página, uma caix
 
 * Para criar uma página, selecione o objeto da **[!UICONTROL Page]** na seção à esquerda do editor e o coloque na seção intermediária, conforme mostrado abaixo:
 
-  ![](assets/s_ncs_admin_survey_new_page.png)
+  ![Editor de pesquisa com o objeto Page sendo arrastado da lista Common para a área do diagrama](assets/s_ncs_admin_survey_new_page.png)
 
 * Em seguida, selecione o objeto de **[!UICONTROL Storage]** e o coloque na transição de saída da página.
 * Finalmente, selecione o objeto do **[!UICONTROL End]** e o coloque no final da transição de saída da caixa de armazenamento para obter o diagrama a seguir:
 
-  ![](assets/s_ncs_admin_survey_end.png)
+  ![Diagrama de pesquisa com uma Página, uma Caixa de armazenamento e um objeto Final vinculado por transições](assets/s_ncs_admin_survey_end.png)
 
 ## Etapa 4 — criação do conteúdo da página {#step-4---creating-the-page-content}
 
 No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 compatibility)]**. Esse tipo de página é acessado por meio do menu avançado da guia **[!UICONTROL Edit]**.
 
-![](assets/s_ncs_admin_survey_pagev5.png)
+![Lista avançada da guia Editar com o objeto Página (compatibilidade v5) selecionado em um diagrama Página, Armazenamento, Fim](assets/s_ncs_admin_survey_pagev5.png)
 
 * **Adicionar campos de entrada**
 
   Para criar o conteúdo da página, você deve editá-lo: para fazer isso, clique duas vezes no objeto **[!UICONTROL Page]**. Clique no primeiro ícone da barra de ferramentas para abrir o assistente de criação de campos. Para criar um campo de entrada para o nome de usuário a ser armazenado no campo correspondente do perfil do destinatário, selecione **[!UICONTROL Edit a recipient]**.
 
-  ![](assets/s_ncs_admin_survey_add_field_menu.png)
+  ![Assistente de criação de campo com a opção Editar um destinatário selecionada para adicionar um campo de formulário](assets/s_ncs_admin_survey_add_field_menu.png)
 
   Clique no botão **[!UICONTROL Next]** para selecionar o campo para armazenamento de dados no banco de dados. Nesse caso, o campo &quot;Sobrenome&quot;.
 
-  ![](assets/s_ncs_admin_survey_choose_field.png)
+  ![Assistente de criação de campo listando campos de destinatário, com Sobrenome selecionado como o campo a ser inserido](assets/s_ncs_admin_survey_choose_field.png)
 
   Clique em **[!UICONTROL Finish]** para confirmar a criação do campo.
 
   Por padrão, quando as informações são armazenadas em um campo já existente no banco de dados, o campo assume o nome do campo selecionado, ou seja, &quot;Sobrenome&quot; neste exemplo. Você pode modificar esse rótulo conforme mostrado abaixo:
 
-  ![](assets/s_ncs_admin_survey_change_label.png)
+  ![Editor de páginas onde o rótulo do campo Sobrenome é alterado para Seu nome, armazenado no campo de banco de dados @lastName](assets/s_ncs_admin_survey_change_label.png)
 
   Agora, crie um campo de entrada para o número da conta de usuário. Repita a operação e selecione o campo &quot;Número da conta&quot;.
 
@@ -107,19 +107,19 @@ No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 c
 
   Para criar uma pergunta, clique com o botão direito do mouse no último elemento da árvore e selecione **[!UICONTROL Containers > Question]** ou clique no ícone **[!UICONTROL Containers]** e selecione **[!UICONTROL Question]**.
 
-  ![](assets/s_ncs_admin_survey_add_qu.png)
+  ![Editor de páginas com o menu Contêineres aberto e Pergunta selecionado, abaixo do nome, número de conta e campos de email](assets/s_ncs_admin_survey_add_qu.png)
 
   Insira o rótulo da pergunta e insira o(s) campo(s) de resposta como sub-ramificações da pergunta. Para fazer isso, o nó vinculado à pergunta deve ser selecionado ao criar o campo de resposta. Adicione um **[!UICONTROL drop-down list]** usando o ícone **[!UICONTROL Selection controls]** ou clicando com o botão direito do mouse, como mostrado abaixo:
 
-  ![](assets/s_ncs_admin_survey_add_list.png)
+  ![Clique com o botão direito do mouse no menu da pergunta com os controles Selection abertos e a caixa de combinação realçada](assets/s_ncs_admin_survey_add_list.png)
 
   Selecione um espaço de armazenamento: selecione um campo de enumeração para recuperar os valores automaticamente (o formato do email, nesse caso).
 
-  ![](assets/s_ncs_admin_survey_add_itz_list.png)
+  ![Caixa de diálogo de armazenamento com a opção Editar um destinatário selecionada e o campo de banco de dados Formato do email (@emailFormat)](assets/s_ncs_admin_survey_add_itz_list.png)
 
   Na guia **[!UICONTROL General]**, clique no link **[!UICONTROL Initialize the list of values from the database]**: a tabela de valores é inserida automaticamente.
 
-  ![](assets/s_ncs_admin_survey_add_value.png)
+  ![Guia Geral da caixa de combinação com a lista Inicializar a lista de valores do link do banco de dados e a lista de valores preenchida](assets/s_ncs_admin_survey_add_value.png)
 
   Clique em **[!UICONTROL OK]** para fechar o editor e em **[!UICONTROL Save]** salvar as alterações.
 
@@ -129,7 +129,7 @@ No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 c
 
   Na tela de detalhes, clique na guia **[!UICONTROL Preview]** para exibir a renderização da pesquisa recém-criada.
 
-  ![](assets/s_ncs_admin_survey_preview.png)
+  ![Guia Visualizar mostrando a página de pesquisa com os campos nome, número da conta, email e formato de email e um botão Validar](assets/s_ncs_admin_survey_preview.png)
 
 ## Etapa 5 — armazenamento dos dados da pesquisa {#step-5---storing-the-survey-data-}
 
@@ -139,7 +139,7 @@ Para fazer isso, edite a caixa e selecione o campo que será usado como uma chav
 
 No exemplo abaixo, ao salvar (confirmação), se um perfil for salvo no banco de dados com o mesmo número da conta que a entrada no formulário, o perfil será atualizado. Se o perfil não existir, ele será criado.
 
-![](assets/s_ncs_admin_survey_save_edit.png)
+![Caixa de diálogo da caixa de armazenamento com o campo Account # marcado como a chave de reconciliação no Recipient](assets/s_ncs_admin_survey_save_edit.png)
 
 Clique em **[!UICONTROL OK]** para confirmar e, em seguida, clique em **[!UICONTROL Save]** para salvar a pesquisa.
 
@@ -150,17 +150,17 @@ Para que os usuários possam acessar as páginas HTML, a aplicação deve ser di
 * Clique no botão **[!UICONTROL Publish]** localizado acima do painel de pesquisa.
 * Clique em **[!UICONTROL Start]** para iniciar a publicação e fechar o assistente.
 
-  ![](assets/s_ncs_admin_survey_start_publ.png)
+  ![Botão Publicar do Painel que abre a caixa de diálogo de publicação do aplicativo Web com o botão Iniciar](assets/s_ncs_admin_survey_start_publ.png)
 
   O status da pesquisa muda para **online**.
 
-  ![](assets/survey_published.png)
+  ![Painel de pesquisa com o status alterado para Online e a data de publicação e URL pública exibida](assets/survey_published.png)
 
 ## Etapa 7 — compartilhamento da pesquisa online {#step-7---sharing-your-online-survey}
 
 Quando estiver em produção, a pesquisa é acessível no servidor e você pode entregá-la. A URL para acessar a pesquisa é exibida no painel.
 
-![](assets/survey_url_from_dashboard.png)
+![Painel de pesquisa com uma seta apontando para o campo URL público da pesquisa online](assets/survey_url_from_dashboard.png)
 
 Para entregar a pesquisa, você pode enviar uma mensagem contendo um link de acesso para a população de destino ou colocar a URL de acesso da pesquisa em uma página da Web, por exemplo.
 

@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 100%
+source-wordcount: '1298'
+ht-degree: 76%
 ---
 # Renderização do formulário{#form-rendering}
 
@@ -39,17 +39,17 @@ ht-degree: 100%
 
 As configurações de formulário permitem selecionar o modelo usado para gerar as páginas. Para acessá-las, clique no botão **[!UICONTROL Properties]** na barra de ferramentas de detalhes do formulário e selecione a guia **[!UICONTROL Rendering]**. Há vários modelos (folhas de estilos) disponíveis por padrão.
 
-![](assets/s_ncs_admin_survey_rendering_select.png)
+![Guia Renderização das propriedades do formulário com a lista de Modelos aberta, mostrando o Formulário padrão e o Tema 1 para o Tema 7.](assets/s_ncs_admin_survey_rendering_select.png)
 
 A seção inferior do editor permite exibir uma renderização do modelo selecionado.
 
 O recurso de zoom permite editar o modelo selecionado.
 
-![](assets/s_ncs_admin_survey_render_edit.png)
+![Caixa de diálogo de Tema 5 do modelo de geração de formulário com o link do Layout da página e as configurações de CSS.](assets/s_ncs_admin_survey_render_edit.png)
 
 É possível modificar ou substituir esses modelos. Para fazer isso, clique no link **[!UICONTROL Page layout...]** e personalize as informações.
 
-![](assets/s_ncs_admin_survey_render_edit_param.png)
+![Caixa de diálogo de layout de página, guia Propriedades, com imagem de logotipo, largura e altura e o caminho da imagem de visualização.](assets/s_ncs_admin_survey_render_edit_param.png)
 
 É possível:
 
@@ -58,19 +58,19 @@ O recurso de zoom permite editar o modelo selecionado.
 
 A guia **[!UICONTROL Headers/Footers]** permite alterar as informações exibidas nos cabeçalhos e rodapés de cada página de formulário usando esse modelo.
 
-![](assets/s_ncs_admin_survey_render_edit_header.png)
+![Caixa de diálogo de layout de página, guia Cabeçalhos / Rodapés, com linhas de Cabeçalhos de página e rodapés de página e campos de Posição.](assets/s_ncs_admin_survey_render_edit_header.png)
 
 Cada linha da seção **[!UICONTROL Page headers]** e **[!UICONTROL Page footers]** corresponde a uma linha na página HTML. Clique em **[!UICONTROL Add]** para criar uma nova linha.
 
 Selecione uma linha existente e clique no botão **[!UICONTROL Detail]** para personalizá-la.
 
-![](assets/s_ncs_admin_survey_render_edit_header_detail.png)
+![Caixa de diálogo de detalhes de cabeçalhos de página com layout de Página, guias de Bordas e Fonte e conteúdo de zona esquerda e direita.](assets/s_ncs_admin_survey_render_edit_header_detail.png)
 
 Você pode alterar o conteúdo da linha, adicionar bordas e alterar os atributos da fonte por meio das guias relevantes. Clique em **[!UICONTROL OK]** para confirmar as alterações.
 
 Os campos **[!UICONTROL Position]** permitem definir a posição dos elementos no cabeçalho e no rodapé da página.
 
-![](assets/s_ncs_admin_survey_render_edit_header_position.png)
+![Guia Cabeçalhos / Rodapés com as listas de Posição para cabeçalhos e rodapés, oferecendo Oculto, Fora da página, Na página.](assets/s_ncs_admin_survey_render_edit_header_position.png)
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Você pode sobrecarregar a folha de estilos de cada elemento do formulário (cam
 
 Para fazer isso, use a guia **[!UICONTROL Advanced]**.
 
-![](assets/s_ncs_admin_survey_advanced_tab.png)
+![Guia Avançado de um elemento de formulário com configurações de exibição, como Número de células e Alinhamento vertical.](assets/s_ncs_admin_survey_advanced_tab.png)
 
 Ela permite que você defina as seguintes propriedades:
 
@@ -98,7 +98,7 @@ Ela permite que você defina as seguintes propriedades:
 * **[!UICONTROL Lines]**: número de linhas para uma zona de tipo **[!UICONTROL Multi-line text]**,
 * **[!UICONTROL Style inline]**: permite que você sobrecarregue a folha de estilos CSS com configurações adicionais. Eles são separados usando os caracteres **;** como mostrado no exemplo abaixo:
 
-  ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
+  ![Guia Avançado com o valor embutido Style definido como font-size:16pt; background: blue.](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
 ### Definição de cabeçalhos e rodapés {#defining-headers-and-footers}
 
@@ -106,7 +106,7 @@ Os campos são sequenciados em uma estrutura de árvore cuja raiz tem o mesmo no
 
 O título da janela deve ser inserido na guia **[!UICONTROL Page]** da janela de propriedade do formulário. Você também pode adicionar um conteúdo definido ao cabeçalho e ao rodapé da página (essas informações serão exibidas em todas as páginas). Esse conteúdo é inserido nas seções correspondentes da guia **[!UICONTROL Texts]**, conforme mostrado abaixo:
 
-![](assets/s_ncs_admin_survey_titles_config.png)
+![Guia Página de propriedades de formulário com o título da janela, cabeçalho da página e conteúdo do rodapé da página.](assets/s_ncs_admin_survey_titles_config.png)
 
 ### Adição de elementos ao cabeçalho HTML {#adding-elements-to-html-header}
 
@@ -114,7 +114,7 @@ O título da janela deve ser inserido na guia **[!UICONTROL Page]** da janela de
 
 Isso permite que você faça referência a um ícone que será exibido na barra de título da página, por exemplo.
 
-![](assets/webform_header_page_tab.png)
+![Guia Cabeçalho da Página com um elemento de link para um ícone de atalho adicionado ao cabeçalho do HTML.](assets/webform_header_page_tab.png)
 
 ## Definição das configurações de controle {#defining-control-settings}
 
@@ -124,19 +124,19 @@ Quando o usuário preenche o formulário, uma verificação é automaticamente e
 
 Para tornar determinados campos obrigatórios, selecione essa opção ao criar o campo.
 
-![](assets/s_ncs_admin_survey_required_field.png)
+![Guia Geral de Campo com a opção Obrigatório marcada para o campo Sobrenome.](assets/s_ncs_admin_survey_required_field.png)
 
 Se o usuário aprovar essa página sem ter inserido o campo, a seguinte mensagem será exibida:
 
-![](assets/s_ncs_admin_survey_required_default_msg.png)
+![A página do formulário que mostra a mensagem de erro padrão Campo &#39;Sobrenome&#39; é obrigatória, com o campo vazio realçado.](assets/s_ncs_admin_survey_required_default_msg.png)
 
 Você pode personalizar esta mensagem clicando no link **[!UICONTROL Personalize this message]**.
 
-![](assets/s_ncs_admin_survey_required_custom_msg.png)
+![Caixa de diálogo de personalização de mensagens aberta em Personalizar a mensagem com texto personalizado para um campo obrigatório vazio.](assets/s_ncs_admin_survey_required_custom_msg.png)
 
 Se o usuário aprovar essa página sem ter inserido o campo, a seguinte mensagem será exibida:
 
-![](assets/s_ncs_admin_survey_required_custom_msg2.png)
+![Página de formulário que mostra a mensagem CAMPO OBRIGATÓRIO personalizado acima do campo vazio destacado.](assets/s_ncs_admin_survey_required_custom_msg2.png)
 
 ### Verificação do formato de dados {#checking-data-format}
 
@@ -146,7 +146,7 @@ Para verificações de formulário cujos valores são armazenados em uma variáv
 
 Por exemplo, se você criar uma verificação **[!UICONTROL Number]** para armazenar o número do cliente, conforme mostrado abaixo:
 
-![](assets/s_ncs_admin_survey_choose_format.png)
+![Campo do tipo Number que armazena seu valor em uma variável do cliente, com caixas de diálogo Storage e Edit branches mostrando o tipo Integer.](assets/s_ncs_admin_survey_choose_format.png)
 
 O usuário deve inserir um inteiro no campo de formulário.
 
@@ -156,13 +156,13 @@ Você pode configurar a exibição de campos na página a ser exibida com base n
 
 Para cada elemento da página, a seção **[!UICONTROL Visibility]** permite definir as condições de exibição.
 
-![](assets/s_ncs_admin_survey_condition_edit.png)
+![Guia Contêiner Geral com o link Editar Visibilidade abrindo a caixa de diálogo de condição Visibilidade.](assets/s_ncs_admin_survey_condition_edit.png)
 
 As condições podem se referir ao valor dos campos ou variáveis do banco de dados.
 
 Na janela de seleção de campo, você pode escolher entre os seguintes dados:
 
-![](assets/s_ncs_admin_survey_condition_select.png)
+![Selecione uma caixa de diálogo de campo que mostre a Árvore de contexto com Identificador, Idioma, Origem, Destinatários e Variáveis.](assets/s_ncs_admin_survey_condition_select.png)
 
 * A árvore principal contém os parâmetros do contexto de formulário. Os parâmetros padrão incluem o Identificador (que corresponde ao identificador criptografado do destinatário), Idioma e Origem.
 
@@ -186,11 +186,11 @@ Para importar um elemento para um formulário, siga as etapas abaixo:
 
 1. Edite a página em que deseja inserir um ou mais elementos e clique em **[!UICONTROL Import an existing block]** na barra de ferramentas.
 
-   ![](assets/s_ncs_admin_survey_import_block.png)
+   ![Barra de ferramentas do editor de páginas com o botão Importar um bloco existente realçado.](assets/s_ncs_admin_survey_import_block.png)
 
 1. Selecione o formulário web que contém os campos a serem importados e escolha os containers e campos a serem importados.
 
-   ![](assets/s_ncs_admin_survey_import_block_selection.png)
+   ![Importar uma caixa de diálogo de bloqueio existente com um aplicativo Web de origem e os blocos a serem importados marcados.](assets/s_ncs_admin_survey_import_block_selection.png)
 
    >[!NOTE]
    >
@@ -198,4 +198,4 @@ Para importar um elemento para um formulário, siga as etapas abaixo:
 
 1. Clique em **[!UICONTROL Ok]** para confirmar a inserção.
 
-   ![](assets/s_ncs_admin_survey_import_block_rendering.png)
+   ![Árvore de páginas após a importação, contendo agora os campos Sobrenome, País, Número da Conta e Email.](assets/s_ncs_admin_survey_import_block_rendering.png)

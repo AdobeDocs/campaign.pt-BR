@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
     internal-label: Email design
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 95%
+source-wordcount: '661'
+ht-degree: 77%
 ---
 # Interface do editor de conteúdo{#content-editor-interface}
 
@@ -38,7 +38,7 @@ ht-degree: 95%
 
 A janela de edição do DCE está dividida em três seções diferentes. Elas permitem visualizar, modificar e verificar o status do conteúdo.
 
-![](assets/dce_decoupe_window_nb.png)
+![Janela de edição do DCE com três seções numeradas: mensagem de status, área de conteúdo e painel de opções direito](assets/dce_decoupe_window_nb.png)
 
 1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou o delivery que está sendo criado, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte [Status de conteúdo HTML](content-editing-best-practices.md#html-content-statuses).
 1. A seção à **esquerda** da janela é a área para edição de conteúdo. Nesta área, o usuário pode interagir diretamente com o conteúdo usando a barra de ferramentas pop-up: inserir um link em uma imagem, alterar a fonte, excluir um campo etc. Para mais informações sobre isso, consulte [Edição de formulários](editing-content.md#editing-forms).
@@ -48,17 +48,17 @@ A janela de edição do DCE está dividida em três seções diferentes. Elas pe
 
 A seção superior direita do editor permite que você acesse opções globais que possibilitam controlar o conteúdo que está sendo criado no momento.
 
-![](assets/dce_global_options.png)
+![Parte superior direita do editor com quatro ícones de opção global acima do painel de opções de bloco](assets/dce_global_options.png)
 
 Ela tem quatro ícones:
 
-![](assets/dce_icons_sidebar.png)
+![Ícones de opção globais: Exibir / Ocultar blocos, Escolher outro conteúdo, Salvar como modelo e Propriedades da página](assets/dce_icons_sidebar.png)
 
 * O ícone **Display/Hide blocks** permite exibir quadros azuis ao redor dos blocos de conteúdo (correspondentes à tag HTML `<div>`).
 
 * O ícone **Escolher outro conteúdo** permite que o usuário carregue o novo conteúdo de um modelo (modelo existente ou modelo pronto para uso).
 
-  ![](assets/dce_popup_templatechoice.png)
+  ![Escolha uma caixa de diálogo de conteúdo com De um arquivo e modelos disponíveis, como Contato e Clickthrough](assets/dce_popup_templatechoice.png)
 
   >[!CAUTION]
   >
@@ -66,15 +66,15 @@ Ela tem quatro ícones:
 
 * O ícone **Salvar como modelo** permite salvar o conteúdo atual como modelo. Você deve inserir o rótulo e o nome interno do modelo. Os modelos são armazenados no nó **[!UICONTROL Resources > Templates > Content templates]**.
 
-  ![](assets/dce_popup_savetemplate.png)
+  ![Caixa de diálogo Salvar como modelo com os campos Rótulo, Nome interno e Pasta](assets/dce_popup_savetemplate.png)
 
   Depois de salvo, o modelo está disponível e pode ser selecionado ao criar o novo conteúdo.
 
-  ![](assets/dce_create_fromtemplate.png)
+  ![Guia Conteúdo do HTML de entrega de email com o modelo Música e Artes salvo, disponível entre os modelos de conteúdo](assets/dce_create_fromtemplate.png)
 
 * O ícone **Propriedades da página** permite selecionar informações de conteúdo na parte superior da página HTML.
 
-  ![](assets/dce_popup_headerhtml.png)
+  ![Propriedades da caixa de diálogo da página com os campos Título, Palavras-chave e Descrição do cabeçalho da página do HTML](assets/dce_popup_headerhtml.png)
 
   >[!NOTE]
   >
@@ -86,7 +86,7 @@ Ela tem quatro ícones:
 
 A seção à direita do editor agrupa as principais opções que permitem que você atue de acordo com o conteúdo. Para exibir essas opções, você deve selecionar um bloco: a natureza dessas opções depende do bloco selecionado.
 
-![](assets/dce_right_section.png)
+![Seção direita do editor com as opções de Bloco: Condição de visibilidade, Bordas e Cor de fundo](assets/dce_right_section.png)
 
 É possível:
 

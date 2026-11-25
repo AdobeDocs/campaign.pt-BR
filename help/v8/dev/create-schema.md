@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '515'
 ht-degree: 0%
 ---
 # Criar um novo esquema {#create-new-schema}
@@ -47,11 +47,11 @@ Para editar, criar e configurar os esquemas, clique no nó **[!UICONTROL Adminis
 >
 >Os esquemas de dados incorporados só podem ser excluídos por um administrador do console do Adobe Campaign.
 
-![](assets/schema_navtree.png)
+![Árvore do Explorer com o nó Administração, Configuração e Esquemas de dados realçado.](assets/schema_navtree.png)
 
 A guia **[!UICONTROL Edit]** mostra o conteúdo XML de um esquema:
 
-![](assets/schema_edition.png)
+![Editor de esquema do Source, guia Editar, mostrando os campos Nome e Rótulo e o conteúdo XML do esquema.](assets/schema_edition.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ A guia **[!UICONTROL Edit]** mostra o conteúdo XML de um esquema:
 
 A guia **[!UICONTROL Preview]** gera automaticamente o esquema estendido:
 
-![](assets/schema_edition2.png)
+![Editor de esquema do Source, guia Visualizar, mostrando o XML de esquema estendido gerado.](assets/schema_edition2.png)
 
 >[!NOTE]
 >
@@ -76,11 +76,11 @@ Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura
 1. Edite o nó **[!UICONTROL Administration > Configuration > Data schemas]** da árvore do Adobe Campaign e clique em **[!UICONTROL New]**.
 1. Escolha a opção **[!UICONTROL Create a new table in the data template]** e clique em **[!UICONTROL Next]**.
 
-   ![](assets/create_new_schema.png)
+   ![Página de tipo de esquema do assistente de esquema de dados com a opção Criar uma nova tabela no modelo de dados selecionado.](assets/create_new_schema.png)
 
 1. Especifique um nome para a tabela e um namespace.
 
-   ![](assets/create_new_param.png)
+   ![Página de parâmetros de esquema com Namespace cus, Contratos de Nome, Rótulo, Rótulo (singular) e Descrição preenchida.](assets/create_new_param.png)
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura
 
 1. Crie o conteúdo da tabela. Recomendamos usar o assistente dedicado para garantir que nenhuma configuração esteja ausente. Para fazer isso, clique no botão **[!UICONTROL Insert]** e escolha o tipo de configuração a ser adicionada.
 
-   ![](assets/create_new_content.png)
+   ![Página Editar esquema com o menu Inserir aberto, mostrando os tipos de Atributo como Cadeia de Caracteres e Inteiro.](assets/create_new_content.png)
 
 1. Defina as configurações da tabela de contratos.
 
@@ -138,6 +138,6 @@ Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura
 
 1. Salve o esquema e clique na guia **[!UICONTROL Structure]** para gerar a estrutura:
 
-   ![](assets/configuration_structure.png)
+   ![Guia Estrutura do titular da lista de esquemas de Contratos, cotitular, número do contrato e atributos da data de assinatura.](assets/configuration_structure.png)
 
 1. Atualize a estrutura do banco de dados para criar a tabela à qual o schema será vinculado. Para obter mais informações, consulte [Atualizar a estrutura do banco de dados](update-database-structure.md).

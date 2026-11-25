@@ -19,10 +19,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 93%
+source-wordcount: '140'
+ht-degree: 84%
 ---
 # Configurar pesquisas online{#configuring-surveys}
 
@@ -38,7 +38,7 @@ As pesquisas online são totalmente configuráveis e personalizáveis para atend
 
 Os parâmetros disponíveis são detalhados [neste documento](../web/defining-web-forms-properties.md).
 
-![](assets/s_ncs_admin_survey_properties_general.png)
+![Guia Editar do aplicativo Web de Evento Infantil com o botão Propriedades destacado acima do fluxo de trabalho.](assets/s_ncs_admin_survey_properties_general.png)
 
 ## Armazenamento de dados de pesquisa {#survey-data-storage}
 

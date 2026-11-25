@@ -39,9 +39,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1524'
 ht-degree: 11%
 ---
 # Estrutura de esquema{#schema-structure}
@@ -156,7 +156,7 @@ As seguintes regras devem ser seguidas:
 
 O tipo de dados é inserido pelo atributo **type** nos elementos **`<attribute>`** e **`<element>`**.
 
-Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=pt-BR#configuring-campaign-classic){target="_blank"}.
+Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
 Quando este atributo não é populado, **string** é o tipo de dados padrão, a menos que o elemento contenha elementos filhos. Em caso afirmativo, ele é usado apenas para estruturar os elementos hierarquicamente (**`<location>`** elemento em nosso exemplo).
 
@@ -214,7 +214,7 @@ Os elementos **`<elements>`** e **`<attributes>`** do esquema de dados podem ser
 
   O rótulo pode ser visto no formulário de entrada do Console do cliente do Adobe Campaign:
 
-  ![](assets/schema_label.png)
+  ![Campo de entrada de email no console, rotulado Email com um endereço de email inserido.](assets/schema_label.png)
 
 * A propriedade **desc** permite inserir uma descrição longa.
 
@@ -267,7 +267,7 @@ O nome dado à enumeração pode ser escolhido livremente e compartilhado com ou
 
 Esses valores são mostrados em uma lista suspensa no formulário de entrada:
 
-![](assets/schema_user_enum.png)
+![O campo Cidade no formulário de entrada mostra uma lista suspensa de valores de uma enumeração de usuários.](assets/schema_user_enum.png)
 
 >[!NOTE]
 >
@@ -281,7 +281,7 @@ O atributo **enum** refere-se à definição de uma classe de enumeração preen
 
 As enumerações permitem que o usuário selecione um valor em uma lista suspensa em vez de inserir o valor em um campo de entrada regular:
 
-![](assets/schema_enum.png)
+![Lista suspensa de gênero mostrando os valores Nenhum especificado, Masculino e Feminino.](assets/schema_enum.png)
 
 Exemplo de uma declaração de enumeração no schema de dados:
 
@@ -317,7 +317,7 @@ Os valores de enumeração são declarados no elemento **`<value>`** com os segu
 
   Essa lista discriminada é usada para especificar a natureza das campanhas, por exemplo.
 
-  ![](assets/schema_dbenum.png)
+  ![Nova caixa de diálogo de campanha de marketing com o menu suspenso Natureza aberto, mostrando Nenhum especificado e Remarketing.](assets/schema_dbenum.png)
 
 ### Exemplo {#example}
 
@@ -396,7 +396,7 @@ Foram adicionadas funções de alto nível às expressões, a fim de enriquecer 
 
 Você pode acessar a lista de funções disponíveis por meio de qualquer editor de expressão no Console do cliente do Adobe Campaign:
 
-![](assets/schema_function.png)
+![Árvore de funções do editor de expressão com grupos Aggregate, String, Date e Numerical, como Abs, Ceil e Round.](assets/schema_function.png)
 
 **Exemplo**:
 

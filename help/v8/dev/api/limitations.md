@@ -35,9 +35,9 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1071'
 ht-degree: 1%
 ---
 # Recomendações e limitações {#limitations}
@@ -81,7 +81,7 @@ Por enquanto, as APIs REST listadas abaixo estão disponíveis para uso:
 
 * Para usar os filtros em cargas da API REST, é necessário editá-los no Campaign v8 e fornecer um nome para usar em suas cargas. Para fazer isso, acesse os parâmetros adicionais do filtro na guia **[!UICONTROL Parameters]** e forneça o nome desejado no campo **[!UICONTROL Filter name in REST API]**.
 
-  ![](assets/api-filtering.png)
+  ![Caixa de diálogo de parâmetros avançados de um filtro predefinido com o nome do Filtro no campo API REST definido como byEmailNotEmpty](assets/api-filtering.png)
 
 
 * O prefixo &quot;by&quot; necessário para usar filtros personalizados não é mais necessário. O nome do filtro deve ser usado como está em suas solicitações.

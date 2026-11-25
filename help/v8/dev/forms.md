@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '2568'
-ht-degree: 4%
+source-wordcount: '2820'
+ht-degree: 3%
 ---
 # Introdução aos formulários de entrada {#gs-ac-forms}
 
@@ -51,15 +51,15 @@ A chave de identificação de um formulário é uma cadeia de caracteres formada
 
 Crie e configure formulários de entrada da pasta **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** do Console do Cliente:
 
-![](assets/form_arbo.png)
+![Árvore do Explorer em Configuração com a pasta Formulários de entrada selecionada](assets/form_arbo.png)
 
 A zona de edição permite inserir o conteúdo XML do formulário de entrada:
 
-![](assets/form_edit.png)
+![Guia Editar do editor de formulário de entrada mostrando o XML do formulário Recipient (cus) com entradas birthDate, gender e email](assets/form_edit.png)
 
 A pré-visualização gera uma exibição do formulário de entrada:
 
-![](assets/form_preview.png)
+![Guia Visualizar do formulário Destinatário (cus) mostrando os campos Data de nascimento, Gênero e Email](assets/form_preview.png)
 
 ## Estrutura do formulário
 
@@ -93,7 +93,7 @@ Por padrão, um formulário é associado ao schema de dados com o mesmo nome e n
 
 O formulário de entrada com base no schema de exemplo:
 
-![](assets/do-not-localize/form_exemple1.png)
+![Renderização do formulário de entrada como Sexo, Data de nascimento e Email como três campos empilhados](assets/do-not-localize/form_exemple1.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -122,7 +122,7 @@ O layout dos controles é semelhante ao layout usado nas tabelas do HTML, com a 
 
 Para exibir os controles do exemplo acima em duas colunas:
 
-![](assets/do-not-localize/form_exemple2.png)
+![Formulário de entrada com Sexo e Data de Nascimento lado a lado em duas colunas e Email abaixo](assets/do-not-localize/form_exemple2.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -138,7 +138,7 @@ O elemento **`<container>`** com o atributo **colcount** permite forçar a exibi
 
 O atributo **colspan** em um controle estende o controle pelo número de colunas inseridas em seu valor:
 
-![](assets/do-not-localize/form_exemple3.png)
+![Formulário de entrada de duas colunas com o campo Email estendido em ambas as colunas](assets/do-not-localize/form_exemple3.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -152,7 +152,7 @@ O atributo **colspan** em um controle estende o controle pelo número de colunas
 
 Ao preencher o atributo **type=&quot;frame&quot;**, o contêiner adiciona um quadro ao redor dos controles filho com o rótulo contido no atributo **label**:
 
-![](assets/do-not-localize/form_exemple4.png)
+![Formulário de entrada de duas colunas com Gênero, Data de nascimento e um campo Email de largura total, sem um quadro visível](assets/do-not-localize/form_exemple4.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -166,7 +166,7 @@ Ao preencher o atributo **type=&quot;frame&quot;**, o contêiner adiciona um qua
 
 Um elemento **`<static>`** pode ser usado para formatar o formulário de entrada:
 
-![](assets/do-not-localize/form_exemple5.png)
+![Formulário de entrada com campos de Sexo, Data e Email e uma linha de texto de ajuda estática abaixo deles](assets/do-not-localize/form_exemple5.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -212,7 +212,7 @@ Os containers são usados para construir controles complexos usando um conjunto 
 
 Use um contêiner de **bloco de anotações** para formatar dados em páginas que possam ser acessadas de guias.
 
-![](assets/do-not-localize/form_exemple6.png)
+![Formulário de entrada com guias Geral e Local acima dos campos Gênero, Data e Email](assets/do-not-localize/form_exemple6.png)
 
 ```xml
 <container type="notebook">
@@ -231,7 +231,7 @@ O container principal é definido pelo atributo **type=&quot;notebook&quot;**. A
 
 Adicione o atributo **style=&quot;down&quot;** para forçar o posicionamento vertical dos rótulos de tabulação abaixo do controle. Este atributo é opcional. O valor padrão é **&quot;up&quot;**.
 
-![](assets/do-not-localize/form_exemple7.png)
+![Formulário de entrada com os rótulos das guias Geral e Local posicionados abaixo dos campos Gênero, Data e Email](assets/do-not-localize/form_exemple7.png)
 
 `<container style="down" type="notebook">  ... </container>`
 
@@ -239,7 +239,7 @@ Adicione o atributo **style=&quot;down&quot;** para forçar o posicionamento ver
 
 Use este contêiner para exibir uma barra de ícones vertical que permite selecionar as páginas a serem exibidas.
 
-![](assets/do-not-localize/form_exemple8.png)
+![Formulário de entrada com uma barra de ícones vertical que oferece as páginas Geral e Localização ao lado dos campos Gênero, Data e Email](assets/do-not-localize/form_exemple8.png)
 
 ```xml
 <container type="iconbox">
@@ -308,7 +308,7 @@ Lembre-se de que um link é declarado no schema de dados da seguinte maneira:
 
 O controle de edição do link em seu formulário de entrada é o seguinte:
 
-![](assets/do-not-localize/form_exemple9.png)
+![Campo da empresa mostrando um controle de edição suspenso para um link, com o Adobe selecionado](assets/do-not-localize/form_exemple9.png)
 
 ```xml
 <input xpath="company"/>
@@ -421,7 +421,7 @@ Exemplo de uma tabela de relação em um esquema:
 
 Para nosso exemplo, começamos com o formulário de entrada do esquema &quot;cus:recipient&quot;. A lista deve exibir as associações com assinaturas para serviços e permitir que você adicione uma assinatura selecionando um serviço existente.
 
-![](assets/do-not-localize/form_exemple12.png)
+![Selecione a caixa de diálogo de serviços na lista de Negros, MobApp, Informativo e outros serviços para adicionar uma assinatura](assets/do-not-localize/form_exemple12.png)
 
 ```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
@@ -522,7 +522,7 @@ Para exibir um campo e evitar que ele seja editado, use a marca **`<value>`** ou
 
 Exemplo no campo &quot;Sexo&quot;:
 
-![](assets/do-not-localize/form_exemple16.png)
+![Campo de gênero exibido como uma lista suspensa com o valor Masculino](assets/do-not-localize/form_exemple16.png)
 
 ```xml
 <value value="@gender"/>
@@ -541,7 +541,7 @@ Exemplo no campo &quot;Sexo&quot;:
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
 ```
 
-![](assets/do-not-localize/form_exemple17.png)
+![Campo de gênero exibido como botões de opção Opção 1, Opção 2 e Opção 3, com Opção 1 selecionada](assets/do-not-localize/form_exemple17.png)
 
 ## Adicionar uma caixa de seleção {#checkbox}
 
@@ -552,7 +552,7 @@ Uma caixa de seleção reflete um estado booleano (selecionado ou não). Por pad
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
 
-![](assets/do-not-localize/form_exemple20.png)
+![Duas caixas de seleção desmarcadas rotuladas Boolean1 e field1](assets/do-not-localize/form_exemple20.png)
 
 ## Editar hierarquia de navegação {#navigation-hierarchy-edit}
 
@@ -573,7 +573,7 @@ Os controles a serem editados estão agrupados em um **`<container>`** inserido 
 </input>
 ```
 
-![](assets/do-not-localize/form_exemple18.png)
+![Controle de edição de árvore com campos de texto e grupos de campos booleanos, listando text1 como text3 e Boolean1 como Boolean3](assets/do-not-localize/form_exemple18.png)
 
 ## Adicionar um campo de expressão {#expression-field}
 

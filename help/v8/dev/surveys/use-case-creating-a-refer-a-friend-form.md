@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 91%
+source-wordcount: '820'
+ht-degree: 71%
 ---
 # Caso de uso: criar um formulário de indicação{#use-case-creating-a-refer-a-friend-form}
 
@@ -45,7 +45,7 @@ ht-degree: 91%
 
 Neste exemplo, queremos oferecer uma competição aos destinatários do banco de dados. O formulário Web terá uma seção para inserir respostas e outra para indicar um amigo inserindo seu endereço de email.
 
-![](assets/s_ncs_admin_survey_viral_sample_0.png)
+![Formulário de competição com uma área de identificação, uma área de teste com perguntas aleatórias e uma área de convite para indicar um amigo](assets/s_ncs_admin_survey_viral_sample_0.png)
 
 Os blocos de identificação e concorrência são criados usando os processos descritos anteriormente.
 
@@ -53,7 +53,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
 1. Crie um formulário Web de competição com perguntas e um campo para inserir as informações de contato de um amigo, conforme mostrado abaixo:
 
-   ![](assets/s_ncs_admin_survey_viral_sample_2.png)
+   ![Estrutura do formulário de competição com uma Identificação, um Jogo e uma seção de Indicação com campos de contatos de amigos](assets/s_ncs_admin_survey_viral_sample_2.png)
 
    O campo **Sua mensagem** permite inserir uma mensagem para o indicado. Quem indicou também deve inserir seu **Sobrenome**, **Nome** e **Email**.
 
@@ -65,7 +65,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
    >
    >Neste exemplo, queremos direcionar os destinatários para sugerir que façam parte da competição recomendada por quem indicou. No entanto, nessa mensagem, também queremos oferecer uma subscrição de um de nossos serviços de informação. Caso se subscrevam, eles podem ser armazenados no banco de dados.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_5.png)
+   ![Estrutura do formulário com o campo Seu sobrenome na seção Indique um amigo selecionado](assets/s_ncs_admin_survey_viral_sample_5.png)
 
    O conteúdo dos campos relacionados ao indicado será usado no script de criação de perfil e na mensagem enviada para eles.
 
@@ -73,7 +73,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    Ele contém as seguintes instruções:
 
-   ![](assets/s_ncs_admin_survey_viral_sample_4.png)
+   ![Diagrama de formulário com a caixa de script Informações do indicado aberta, definindo a ID de visitante, URL de encaminhamento e campos de referenciador](assets/s_ncs_admin_survey_viral_sample_4.png)
 
    ```javascript
    ctx.recipient.visitor.@id = xtk.session.GetNewIds(1)
@@ -89,23 +89,23 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
 1. A caixa de armazenamento permite coletar informações e armazená-las no banco de dados.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
+   ![Caixa de diálogo de armazenamento com o elemento Visitante selecionado nas opções de reconciliação para armazenar o indicado](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
 1. Em seguida, crie o modelo da entrega vinculado ao serviço de informação criado durante a etapa 1. Ele será selecionado no campo **[!UICONTROL Choose scenario]** do serviço de informações.
 
    O modelo da entrega usado para criar a mensagem de oferta de referência contém as seguintes informações:
 
-   ![](assets/s_ncs_admin_survey_viral_sample_7.png)
+   ![Convidar um modelo de entrega de amigo com um assunto e conteúdo do HTML que use campos de personalização](assets/s_ncs_admin_survey_viral_sample_7.png)
 
    Esse modelo tem as seguintes características:
 
    * Selecione a tabela do visitante como target mapping.
 
-     ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
+     ![Caixa de diálogo Selecionar destino com Visitantes (nms:visitor) selecionada como mapeamento de destino da entrega](assets/s_ncs_admin_survey_viral_sample_7b.png)
 
    * As informações de contato do indicado e as informações de quem indicou são obtidas na tabela do visitante. Elas são inseridas usando o botão de personalização.
 
-     ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
+     ![Menu Personalization no conteúdo de entrega, lista do submenu Visitante Sobrenome, Nome, Email e campos de Referenciador](assets/s_ncs_admin_survey_viral_sample_7a.png)
 
    * Esse modelo contém um link para o formulário da competição e o link de subscrição para o indicado se subscrever no boletim informativo.
 
@@ -119,7 +119,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
 1. Crie o segundo script para entregar as mensagens de subscrição.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_7c.png)
+   ![Caixa de script Referee de armazenamento e envio de mensagens, com código que enfileira a notificação de email de referência para o indicado](assets/s_ncs_admin_survey_viral_sample_7c.png)
 
    ```javascript
    // Updtate visitor to have a link to the referrer recipient
@@ -146,10 +146,10 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
 1. Publique o formulário da competição e envie um convite para os destinatários do público alvo inicial. Quando um deles convida um amigo, uma entrega com base no modelo de **oferta de indicação** é criado.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_8.png)
+   ![Página de questionário concluída com uma seção Convidar um amigo e a lista de Entregas mostrando a entrega em andamento](assets/s_ncs_admin_survey_viral_sample_8.png)
 
    O indicado é adicionado à pasta do visitante no **[!UICONTROL Administration > Visitors node]**:
 
-   ![](assets/s_ncs_admin_survey_viral_sample_9.png)
+   ![Pasta Visitantes listando o indicado, com a guia Geral do visitante mostrando o nome, email e referenciador](assets/s_ncs_admin_survey_viral_sample_9.png)
 
    Seu perfil contém as informações inseridas por quem indicou. Ele é armazenado com base nas configurações inseridas no script de formulário. Se decidirem subscrever o boletim informativo, eles serão salvos na tabela de destinatários.

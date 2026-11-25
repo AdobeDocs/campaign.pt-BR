@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 96%
+source-wordcount: '1710'
+ht-degree: 77%
 ---
 # Definição das propriedades dos formulários web{#defining-web-forms-properties}
 
@@ -39,13 +39,13 @@ Você pode configurar e personalizar totalmente os formulários web para atender
 
 A janela de propriedades é acessível por meio do botão **[!UICONTROL Properties]** na barra de ferramentas do formulário web. Essa janela permite que você acesse um intervalo de configurações específicas ao formulário web. Algumas configurações podem resultar da configuração do modelo.
 
-![](assets/s_ncs_admin_survey_properties_general.png)
+![Editor de aplicativo web com o botão Propriedades, que abre a janela de propriedades do formulário, realçada na barra de ferramentas](assets/s_ncs_admin_survey_properties_general.png)
 
 ## Propriedades gerais do formulário {#overall-form-properties}
 
 Na guia **[!UICONTROL General]** da janela de propriedades, você pode modificar o **Label** do formulário. É extremamente recomendável não alterar o **nome Interno**.
 
-![](assets/s_ncs_admin_survey_properties_general_tab.png)
+![Guia Geral da janela Propriedades do formulário com Rótulo, Nome interno, Natureza, Status, Data inicial e final, Controle de acesso](assets/s_ncs_admin_survey_properties_general_tab.png)
 
 O modelo de formulário é escolhido durante a criação do formulário. Ele não pode ser alterado posteriormente. Para obter mais informações sobre como criar e gerenciar modelos de formulário, consulte [Uso de um modelo de formulário web](using-a-web-form-template.md).
 
@@ -63,11 +63,11 @@ A página de erro é definida na guia correspondente da janela de propriedades d
 
 Por padrão, ela exibe as seguintes informações:
 
-![](assets/s_ncs_admin_survey_default_error_page.png)
+![Página do navegador mostrando a mensagem de erro padrão: ocorreu um erro. Se o problema persistir, contate o administrador](assets/s_ncs_admin_survey_default_error_page.png)
 
 O conteúdo das strings exibidas é definido na guia **[!UICONTROL Error page]** da janela de propriedades. A guia **[!UICONTROL HTML]** exibe a renderização e a guia **[!UICONTROL Texts]** permite modificar as strings de texto e adicionar texto se necessário:
 
-![](assets/s_ncs_admin_survey_error_page.png)
+![Guia Página de erro de Propriedades, com a guia Textos listando as cadeias de caracteres linha1 e linha2 da mensagem de erro](assets/s_ncs_admin_survey_error_page.png)
 
 ## Localização do formulário {#form-localization}
 
@@ -81,7 +81,7 @@ A guia **[!UICONTROL Rendering]** permite definir o tipo de navegação entre p�
 
 Você pode escolher navegar por meio de links ou botões.
 
-![](assets/s_ncs_admin_survey_wz_02_navig_type.png)
+![Opções de navegação: um botão Avançar e um link Avançar, as duas maneiras de se mover entre páginas de formulário](assets/s_ncs_admin_survey_wz_02_navig_type.png)
 
 Os botões são os elementos de navegação por padrão. Eles permitem executar as seguintes ações:
 
@@ -101,7 +101,7 @@ Os temas são salvos no nó **[!UICONTROL Administration>Configuration>Form rend
 
 Uma renderização de amostra é exibida na parte inferior da janela de propriedades. O ícone **[!UICONTROL Edit link]** permite visualizar a configuração do tema selecionado.
 
-![](assets/s_ncs_admin_survey_properties_render.png)
+![Guia Renderização de Propriedades com botões Usar ou Usar links, Posição do rótulo e pré-visualização de Modelo com o ícone Editar link](assets/s_ncs_admin_survey_properties_render.png)
 
 ## Logotipo no formulário {#logo-in-the-form}
 
@@ -109,15 +109,15 @@ Você pode alterar o logotipo usado no formulário para seu próprio logotipo.
 
 Na guia **[!UICONTROL Rendering]** dentro do **[!UICONTROL Properties]** do seu aplicativo Web, clique no ícone de vidro do seu modelo:
 
-![](assets/logo_glass.png)
+![Guia Renderização de Propriedades com o ícone de lupa ao lado do campo Modelo realçado para abrir o modelo](assets/logo_glass.png)
 
 Na nova janela, clique no link **[!UICONTROL Page layout]**:
 
-![](assets/logo_pagelayout.png)
+![Janela de modelo de geração de formulário com o link de layout de Página realçado](assets/logo_pagelayout.png)
 
 É possível alterar o caminho da imagem do logotipo aqui:
 
-![](assets/logo_path.png)
+![Janela de layout de página com o campo Imagem sob Logotipo realçado, mantendo o caminho da imagem do logotipo](assets/logo_path.png)
 
 As imagens disponíveis estão em **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**. É possível adicionar seu logotipo aqui.
 
@@ -141,7 +141,7 @@ Um formulário web é acessível aos usuários se ele estiver **[!UICONTROL Onli
 
 O período de validade é executado da data **[!UICONTROL Start]** para a data **[!UICONTROL End date]**. Se nenhuma data for especificada nesses campos, o formulário terá validade permanente.
 
-![](assets/s_ncs_admin_survey_properties_date.png)
+![Guia Geral de Propriedades com o calendário de Data final aberto para selecionar a data em que o formulário deixa de ser válido](assets/s_ncs_admin_survey_properties_date.png)
 
 >[!NOTE]
 >
@@ -153,17 +153,17 @@ Por padrão, o acesso aos formulários web é realizado no modo anônimo: todos 
 
 Você pode habilitar o controle de acesso para a exibição do formulário, por exemplo, ao entregar um formulário em um site da Intranet para autenticar usuários. Para fazer isso, exiba a janela **[!UICONTROL Properties]** do formulário relacionado e clique na opção **[!UICONTROL Enable access control]**, conforme mostrado abaixo:
 
-![](assets/s_ncs_admin_survey_access_ctrl.png)
+![Guia Geral de Propriedades com a opção Habilitar controle de acesso selecionada no Controle de acesso](assets/s_ncs_admin_survey_access_ctrl.png)
 
 Quando a página for acessada, o seguinte formulário de autenticação será exibido:
 
-![](assets/s_ncs_admin_survey_access_login.png)
+![Formulário de autenticação com campos de Logon e Senha e um botão de Logon, exibido quando o controle de acesso está habilitado](assets/s_ncs_admin_survey_access_login.png)
 
-O login e a senha são aqueles usados pelos operadores do Adobe Campaign. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+O login e a senha são aqueles usados pelos operadores do Adobe Campaign. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
 
 A opção **[!UICONTROL Use a specific account]** permite limitar a permissão de leitura ou gravação do operador que acessa o formulário. Use a caixa suspensa para selecionar um operador ou grupo de operadores que estará encarregado de conceder essas permissões.
 
-![](assets/s_ncs_admin_survey_access_op_select.png)
+![Use uma opção de conta específica selecionada, com os operadores da lista suspensa Operador para escolher](assets/s_ncs_admin_survey_access_op_select.png)
 
 ## Parâmetros de URL do formulário {#form-url-parameters}
 
@@ -194,7 +194,7 @@ Os seguintes parâmetros estão disponíveis por padrão:
 
 Os parâmetros podem ser adicionados através da guia **[!UICONTROL Parameters...]** na janela Propriedades do formulário. Eles podem ser obrigatórios, conforme mostrado abaixo:
 
-![](assets/s_ncs_admin_survey_properties_param.png)
+![Guia Parâmetros listando a empresa, o gênero e o status, com a opção de parâmetro Obrigatório marcada para o status](assets/s_ncs_admin_survey_properties_param.png)
 
 Você deve especificar um local de armazenamento a partir do qual o valor do parâmetro será recuperado. Para fazer isso, selecione uma das opções de armazenamento e clique na guia **[!UICONTROL Storage]** para selecionar o campo ou a variável correspondente. As opções de armazenamento são detalhadas nos [Response storage fields](web-forms-answers.md#response-storage-fields).
 
@@ -202,20 +202,20 @@ O status do entrevistado (0, 1 ou qualquer outro valor) pode então ser adiciona
 
 1. Home page para clientes (**status=1**):
 
-   ![](assets/s_ncs_admin_survey_test_client.png)
+   ![Página Inicial do Cliente do formulário, aberta com o parâmetro de URL status=1 e um campo de ID](assets/s_ncs_admin_survey_test_client.png)
 
 1. Home page para clientes potenciais (**status=0**):
 
-   ![](assets/s_ncs_admin_survey_test_prospect.png)
+   ![Página Inicial do Prospecto do formulário, aberta com o parâmetro de URL status=0 e os campos name, email e captcha](assets/s_ncs_admin_survey_test_prospect.png)
 
 1. Home page para outros perfis (por exemplo, **status=12**):
 
-   ![](assets/s_ncs_admin_survey_test_other.png)
+   ![Contate a Página Inicial do formulário, aberto com o parâmetro de URL status=12 e os campos de nome, email e mensagem](assets/s_ncs_admin_survey_test_other.png)
 
 Para configurar este formulário, crie uma caixa de teste e coloque-a no início do diagrama, conforme mostrado abaixo:
 
-![](assets/s_ncs_admin_survey_test.png)
+![Diagrama de formulário onde uma caixa de teste Cliente/Prospecto/Contato se ramifica para as home pages Prospecto, Cliente e Contato](assets/s_ncs_admin_survey_test.png)
 
 A caixa de teste permite configurar as condições de sequenciamento de página:
 
-![](assets/s_ncs_admin_survey_test_box.png)
+![Caixa de diálogo da caixa de teste com ramificações definidas pelo status, onde a variável de status é selecionada nos campos de Contexto](assets/s_ncs_admin_survey_test_box.png)

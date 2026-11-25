@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 2%
+source-wordcount: '353'
+ht-degree: 1%
 ---
 # Estender um esquema{#extend-schemas}
 
@@ -61,23 +61,23 @@ Para estender um schema, siga as etapas abaixo:
 1. Navegue até a pasta **[!UICONTROL Administration > Configuration > Data schemas]** no Explorer.
 1. Clique no botão **Novo** e selecione **[!UICONTROL Extend the data in a table using an extension schema]**.
 
-   ![](assets/extend-schema-option.png)
+   ![Etapa de tipo de esquema com Estender os dados na tabela usando um esquema de extensão selecionado](assets/extend-schema-option.png)
 
 1. Identifique o esquema incorporado que será estendido e selecione-o.
 
-   ![](assets/extend-schema-select.png)
+   ![Caixa de diálogo de seleção de esquema do Source filtrada no destinatário, com Destinatários (nms) selecionados](assets/extend-schema-select.png)
 
    Por convenção, nomeie o esquema de extensão como o esquema incorporado e use um namespace personalizado.  Observe que alguns namespaces são somente internos. [Saiba mais](schemas.md#reserved-namespaces)
 
-   ![](assets/extend-schema-validate.png)
+   ![Etapa de parâmetros de esquema do esquema de extensão com nome cus, nome recipient e rótulo Recipients](assets/extend-schema-validate.png)
 
 1. Uma vez no editor de esquema, adicione os elementos necessários usando o menu contextual e salve.
 
-   ![](assets/extend-schema-edit.png)
+   ![Editor de esquemas com o menu Inserir aberto em Atributo, listando Cadeia de Caracteres, Booleano, Inteiro, Data e outros tipos](assets/extend-schema-edit.png)
 
    No exemplo abaixo, adicionamos o atributo **MembershipYear**, colocamos um limite de comprimento para o sobrenome (esse limite substituirá o padrão) e removemos a data de nascimento do esquema incorporado.
 
-   ![](assets/extend-schema-sample.png)
+   ![XML de esquema de extensão adicionando MembershipYear, um lastName de 50 caracteres e excluindo birthDate](assets/extend-schema-sample.png)
 
    ```xml
    <srcSchema created="YYYY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
@@ -93,7 +93,7 @@ Para estender um schema, siga as etapas abaixo:
 
 1. Desconecte e reconecte ao Campaign para verificar a atualização da estrutura de esquema na guia **[!UICONTROL Structure]**.
 
-   ![](assets/extend-schema-structure.png)
+   ![Guia Estrutura dos campos de listagem do esquema cus:recipient, incluindo o novo Membro desde o campo](assets/extend-schema-structure.png)
 
 1. Atualize a estrutura do banco de dados para aplicar as alterações. [Saiba mais](update-database-structure.md)
 

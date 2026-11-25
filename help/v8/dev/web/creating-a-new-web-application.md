@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 85%
+source-wordcount: '418'
+ht-degree: 81%
 ---
 # Criar um novo aplicativo web{#creating-a-new-web-application}
 
@@ -43,7 +43,7 @@ Os tipos de aplicativo web são selecionados durante a criação.
 
 Vá para a guia **Campaigns** e selecione o menu **[!UICONTROL Web Applications]**. Clique no botão **[!UICONTROL Create]**. Selecione o modelo de aplicação web que deseja usar:
 
-![](assets/webapp_create_from_campaign.png)
+![Lista de aplicativos Web com o botão Criar e a lista de modelos incluindo Nova página de aterrissagem e Novo formulário Web](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Esse modelo determina o tipo de aplicação web. É possível criar:
 
 1. Pesquisas
 
-   O Adobe Campaign permite que você, através da opção **Survey Manager**, projete e gerencie pesquisas online e processe seus resultados: criação dinâmica de campos, gestão de pontuação, exportação de respostas e relatórios dedicados. Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentação do Campaign v8).
+   O Adobe Campaign permite que você, através da opção **Survey Manager**, projete e gerencie pesquisas online e processe seus resultados: criação dinâmica de campos, gestão de pontuação, exportação de respostas e relatórios dedicados. Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentação do Campaign v8).
 
    >[!CAUTION]
    >
@@ -73,7 +73,7 @@ Esse modelo determina o tipo de aplicação web. É possível criar:
 
 1. Aplicativos do Facebook
 
-   Graças à opção **Social Marketing**, o Adobe Campaign permite publicar conteúdo personalizado em uma aplicação do Facebook. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
+   Graças à opção **Social Marketing**, o Adobe Campaign permite publicar conteúdo personalizado em uma aplicação do Facebook. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
 
    >[!CAUTION]
    >

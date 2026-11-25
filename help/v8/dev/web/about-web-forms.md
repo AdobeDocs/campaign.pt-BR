@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 98%
+source-wordcount: '623'
+ht-degree: 79%
 ---
 # Introdução aos formulários Web{#about-web-forms}
 
@@ -55,19 +55,19 @@ Os formulários web são acessados pelo menu Web Applications da guia **Campaign
 
 Para criar um formulário web, clique no botão **[!UICONTROL Create]** acima da lista de aplicações web.
 
-![](assets/webapp_create_new.png)
+![Lista de aplicativos Web em Campanhas com o botão Criar realçado para iniciar um novo formulário Web.](assets/webapp_create_new.png)
 
 Selecione o modelo de formulário web (**[!UICONTROL newWebForm]** por padrão).
 
-![](assets/s_ncs_admin_survey_select_template.png)
+![Caixa de diálogo Novo aplicativo Web com o modelo Novo formulário Web (newWebForm) selecionado na lista Modelo.](assets/s_ncs_admin_survey_select_template.png)
 
 Isso o levará ao painel do formulário.
 
-![](assets/webapp_empty_dashboard.png)
+![Guia Painel de um novo formulário Web mostrando seu status, esquema, pasta, URL pública e o botão Publicar.](assets/webapp_empty_dashboard.png)
 
 A guia **[!UICONTROL Edit]** permite criar o conteúdo.
 
-![](assets/webapp_edit_tab.png)
+![Guia Editar de um formulário web mostrando o diagrama de atividades (Início, Página, Teste, Armazenamento, Término) e a paleta de atividades.](assets/webapp_edit_tab.png)
 
 Para definir a configuração e o conteúdo do formulário Web, siga as etapas abaixo:
 
@@ -85,7 +85,7 @@ Para definir a configuração e o conteúdo do formulário Web, siga as etapas a
 
 ## Sobre o design de formulários Web {#about-web-forms-designing}
 
-As páginas do formulário são criadas por meio de um editor específico que permite definir e configurar as zonas de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo do HTML etc.). Elas podem ser agrupadas em contêineres e o layout pode ser alterado para atender às suas necessidades (para obter mais informações, consulte).[&#128279;](defining-web-forms-layout.md#creating-containers)
+As páginas do formulário são criadas por meio de um editor específico que permite definir e configurar as zonas de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo do HTML etc.). Elas podem ser agrupadas em contêineres e o layout pode ser alterado para atender às suas necessidades (para obter mais informações, consulte).[](defining-web-forms-layout.md#creating-containers)
 
 As seções a seguir detalham como definir o conteúdo e o layout nas telas do formulário:
 
@@ -104,12 +104,12 @@ As seções a seguir detalham como definir o conteúdo e o layout nas telas do f
 
 É possível usar os ícones na barra de ferramentas ou um clique com o botão direito do mouse para inserir uma zona de entrada.
 
-![](assets/s_ncs_admin_webform_add_selection.png)
+![Menu da barra de ferramentas do editor de páginas para adicionar um campo de entrada: Caixa de combinação, Caixa de seleção, Botão de opção, Múltipla escolha, Data, Grade.](assets/s_ncs_admin_webform_add_selection.png)
 
 Nesse caso, primeiro selecione o tipo de campo que deve ser adicionado e o modo de armazenamento de resposta.
 
-![](assets/s_ncs_admin_webform_select_storage.png)
+![Caixa de diálogo de armazenamento: escolha Editar um destinatário ou Variável e escolha o campo Banco de Dados com a expressão Editar.](assets/s_ncs_admin_webform_select_storage.png)
 
 Clique em **[!UICONTROL Ok]** para aprovar a seleção.
 
-![](assets/s_ncs_admin_webform_confirm_storage.png)
+![Selecionar o campo Saudação em Selecionar uma expressão preenche o campo Banco de Dados na caixa de diálogo Armazenamento; clique em Ok.](assets/s_ncs_admin_webform_confirm_storage.png)

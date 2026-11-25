@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 86%
+source-wordcount: '1150'
+ht-degree: 67%
 ---
 # Publicar, rastrear e usar dados coletados{#publish-track-and-use-collected-data}
 
@@ -47,7 +47,7 @@ Cada pesquisa tem seu próprio painel de controle que permite visualizar seu sta
 
 O URL público da pesquisa é mostrado no painel:
 
-![](assets/survey_public_url.png)
+![Painel de pesquisa mostrando o status Online e uma seta apontando para a URL pública usada para acessar a pesquisa](assets/survey_public_url.png)
 
 ## Rastreamento de resposta {#response-tracking}
 
@@ -57,7 +57,7 @@ Você pode rastrear as respostas da pesquisa em logs e relatórios.
 
 Para cada pesquisa entregue, você pode acompanhar as respostas na guia **[!UICONTROL Logs]**. Essa guia exibe a lista de usuários que concluíram a pesquisa e sua origem:
 
-![](assets/s_ncs_admin_survey_logs.png)
+![Guia Respostas da pesquisa listando a data, o destinatário e a origem de cada resposta](assets/s_ncs_admin_survey_logs.png)
 
 Clique duas vezes em uma linha para exibir o formulário de pesquisa como preenchido pelo entrevistado. Você pode navegar pela pesquisa e acessar as respostas integralmente. Elas podem ser exportadas em um arquivo externo. Para obter mais informações, consulte [Exportação de respostas](#exporting-answers).
 
@@ -75,7 +75,7 @@ Para obter mais informações sobre parâmetros de URL, consulte [Parâmetros de
 
 A guia do painel permite acessar relatórios de pesquisa. Clique em um nome de relatório para visualizá-lo.
 
-![](assets/s_ncs_admin_survey_report_doc.png)
+![Exibição de relatórios do painel de pesquisa com Detalhamento de respostas, Geral, Documentação e relatórios de análise de microsites](assets/s_ncs_admin_survey_report_doc.png)
 
 A estrutura da pesquisa é visível no relatório **[!UICONTROL Documentation]**.
 
@@ -87,13 +87,13 @@ Dois outros relatórios sobre pesquisas na web estão disponíveis na guia **[!U
 
   Exemplo de um relatório geral:
 
-  ![](assets/s_ncs_admin_survey_report_0.png)
+  ![Relatório geral com data de início, número de respostas e um gráfico de respostas ao longo do tempo](assets/s_ncs_admin_survey_report_0.png)
 
 * Detalhamento das respostas
 
   Este relatório mostra o detalhamento das respostas para cada pergunta. Esse detalhamento só está disponível para respostas dos campos armazenados em containers do tipo **[!UICONTROL Question]**. É válido apenas para controles de seleção (sem detalhamento em campos de texto, por exemplo).
 
-  ![](assets/s_ncs_admin_survey_report_2.png)
+  ![Detalhamento do relatório de respostas com a contagem e a porcentagem de cada resposta a uma pergunta](assets/s_ncs_admin_survey_report_2.png)
 
 ## Exportação de respostas {#exporting-answers}
 
@@ -103,13 +103,13 @@ As respostas de uma pesquisa podem ser exportadas em um arquivo externo para ser
 
    Para exportar dados do relatório, clique no botão **[!UICONTROL Export]** e escolha o formato de exportação.
 
-   Para obter mais informações sobre exportação de dados de relatórios, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
+   Para obter mais informações sobre exportação de dados de relatórios, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
 
 1. Exportação de respostas
 
    Para exportar respostas, clique na guia **[!UICONTROL Responses]** da pesquisa e clique com o botão direito do mouse. Selecione **[!UICONTROL Export...]**.
 
-   ![](assets/s_ncs_admin_survey_logs_export_menu.png)
+   ![Guia Respostas com todas as respostas selecionadas e o menu do botão direito mostra a opção Exportar](assets/s_ncs_admin_survey_logs_export_menu.png)
 
    Em seguida, insira as informações que deseja exportar e o arquivo de armazenamento.
 
@@ -123,7 +123,7 @@ As respostas de uma pesquisa podem ser exportadas em um arquivo externo para ser
 
    Se a pesquisa que você deseja exportar contiver vários campos **[!UICONTROL Multi-line text]** ou **[!UICONTROL HTML text]**, ela deve ser exportada no formato **[!UICONTROL XML]**. Para fazer isso, selecione este formato na lista suspensa do campo **[!UICONTROL Output format]**, conforme mostrado abaixo:
 
-   ![](assets/s_ncs_admin_survey_logs_export_xml.png)
+   ![Assistente de lista de exportação com o menu suspenso Formato de saída aberto e XML selecionado](assets/s_ncs_admin_survey_logs_export_xml.png)
 
    Clique em **[!UICONTROL Start]** para executar a exportação.
 
@@ -137,25 +137,25 @@ As informações coletadas por pesquisas online podem ser recuperadas na estrutu
 
 No exemplo a seguir, queremos fazer uma oferta da Web especialmente para os cinco destinatários com pelo menos duas crianças e com as pontuações mais altas em uma pesquisa online. As respostas para essa pesquisa são:
 
-![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
+![Guia Respostas de uma pesquisa listando cada entrevistado com pontuação, número de filhos e tipo de contato](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
 No fluxo de trabalho de segmentação, as **[!UICONTROL Survey responses]** serão configuradas da seguinte maneira:
 
-![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
+![Caixa de respostas de pesquisa em um fluxo de trabalho de direcionamento, com a pesquisa selecionada e o link para selecionar as colunas a serem extraídas](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
 Comece selecionando a pesquisa relacionada e os dados a serem extraídos na seção central da janela. Nesse caso, precisamos extrair pelo menos a coluna de pontuação, pois ela será usada na caixa de divisão para recuperar as cinco pontuações mais altas.
 
 Indique as condições de filtragem para respostas clicando no link **[!UICONTROL Edit query...]**.
 
-![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
+![Caixa de respostas de pesquisa com uma filtragem de consulta respostas em número de filhos e pontuação maior que 50](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
 Inicie o fluxo de trabalho de segmentação. A consulta recupera 8 destinatários.
 
-![](assets/s_ncs_admin_survey_responses_wf_box_5.png)
+![Menu de atalho de transição de resultados do fluxo de trabalho com a opção Exibir o destino realçada](assets/s_ncs_admin_survey_responses_wf_box_5.png)
 
 Clique com o botão direito do mouse na transição de saída da caixa de coleção para exibi-los.
 
-![](assets/s_ncs_admin_survey_responses_wf_box_6.png)
+![Exibir janela de população listando os 8 destinatários retornados pela consulta de respostas da pesquisa com suas pontuações](assets/s_ncs_admin_survey_responses_wf_box_6.png)
 
 Em seguida, coloque uma caixa de divisão no fluxo de trabalho para recuperar os 5 destinatários com a pontuação mais alta.
 
@@ -163,19 +163,19 @@ Edite a caixa de divisão para configurá-la:
 
 * Comece selecionando o esquema adequado na guia **[!UICONTROL General]** e configure o subconjunto:
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
+  ![Guia Geral da caixa de divisão com a opção Usar somente dados adicionais selecionada, após a caixa Respostas da pesquisa](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
 * Acesse a guia **[!UICONTROL Sub-sets]** e selecione a opção **[!UICONTROL Limit the selected records]**; depois, clique no link **[!UICONTROL Edit...]**.
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
+  ![Guia Subconjuntos da caixa dividida com a opção Limitar os registros selecionados e o link Editar](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
 * Selecione a opção **[!UICONTROL Keep only the first records after sorting]** e selecione a coluna de classificação. Marque a opção **[!UICONTROL Descending sort]**.
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
+  ![Assistente de limitação de contagem de registros com Manter apenas os primeiros registros após a classificação e uma classificação decrescente na Pontuação](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
 * Clique no botão **[!UICONTROL Next]** e limite o número de registros a 5.
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
+  ![A etapa Limites de contagem de registros com o tamanho Máximo definido como 5 e o botão Concluir](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
 * Clique em **[!UICONTROL Finish]** e reinicie o fluxo de trabalho para aprovar a segmentação.
 

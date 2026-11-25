@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 69%
+source-wordcount: '370'
+ht-degree: 66%
 ---
 # Introdução ao editor de HTML do Campaign{#about-campaign-html-editor}
 
@@ -41,7 +41,7 @@ ht-degree: 69%
 >
 >Para os casos de uso mais comuns, crie suas landing pages na interface da Web do Campaign, onde você pode facilmente projetá-las e publicá-las. As landing pages criadas no console do cliente, conforme descrito nesta seção, oferecem mais configurações e abordam casos de uso mais avançados.
 >
->[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 
 
@@ -63,7 +63,7 @@ Esta seção apresenta as principais etapas para editar e fazer upload de conte�
 
 A operação geral é a seguinte:
 
-![](assets/dce_schema.png)
+![A página de aterrissagem e a entrega de email passam pelo Editor de Conteúdo Digital e, em seguida, são enviadas para publicação](assets/dce_schema.png)
 
 Para criar um **aplicativo web** simples, é necessário:
 

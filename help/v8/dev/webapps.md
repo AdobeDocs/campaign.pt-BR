@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 25%
+source-wordcount: '251'
+ht-degree: 23%
 ---
 # Introdução a aplicativos web e formulários web{#gs-ac-web}
 
@@ -38,13 +38,13 @@ ht-degree: 25%
 >
 >Para os casos de uso mais comuns, crie suas landing pages na interface da Web do Campaign, onde você pode facilmente projetá-las e publicá-las. As landing pages criadas no console do cliente, conforme descrito nesta seção, oferecem mais configurações e abordam casos de uso mais avançados.
 >
->[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[Saiba mais sobre landing pages na interface da Web do Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 O Adobe Campaign integra um módulo gráfico para definir e publicar **formulários Web** para criar páginas com campos de entrada e seleção e que podem incluir dados do banco de dados. Isso permite a criação e publicação de páginas da Web onde os usuários podem visualizar ou inserir informações.
 
 Saiba como criar e publicar formulários Web no [Introdução aos formulários Web](web/about-web-forms.md).
 
-![](assets/sample.png)
+![Exemplo de formulário da Web para uma assinatura de boletim informativo por email com campos de email, nome e país e um botão Assinar.](assets/sample.png)
 
 O Adobe Campaign também permite criar e publicar **aplicativos web** dinâmicos e interativos com dados do banco de dados e conteúdo adaptado aos direitos do usuário conectado.
 

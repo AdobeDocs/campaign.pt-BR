@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 98%
+source-wordcount: '1823'
+ht-degree: 85%
 ---
 # Traduzir um formulário web{#translating-a-web-form}
 
@@ -57,7 +57,7 @@ Para definir um ou mais idiomas de tradução, clique no botão **[!UICONTROL Pr
 >
 >Esta janela também permite alterar o idioma padrão e o idioma de edição.
 
-![](assets/s_ncs_admin_survey_add_lang.png)
+![Guia Localização de Propriedades do aplicativo Web com design e idioma padrão e outros idiomas Francês e Espanhol](assets/s_ncs_admin_survey_add_lang.png)
 
 Quando você adiciona idiomas de tradução para uma aplicação web (ou quando o idioma padrão e o idioma de edição são diferentes), uma subguia **[!UICONTROL Translation]**&#x200B;é adicionada à guia **[!UICONTROL Edit]** para gerenciar traduções.
 
@@ -73,7 +73,7 @@ Na primeira vez que você abrir essa guia, ela não conterá dados. Clique no li
 
 O Adobe Campaign coleta os rótulos dos campos e strings definidos nas guias **[!UICONTROL Texts]** de todos os elementos estáticos: blocos HTML, JavaScript etc. Os elementos estáticos são descritos em [Elementos estáticos de um formulário web](static-elements-in-a-web-form.md).
 
-![](assets/s_ncs_admin_survey_trad_tab.png)
+![Guia Traduções de um aplicativo Web com o comando Coletar as cadeias de caracteres para traduzir link e cadeias de caracteres para traduzir](assets/s_ncs_admin_survey_trad_tab.png)
 
 >[!CAUTION]
 >
@@ -91,7 +91,7 @@ Para cadeias de caracteres que nunca foram traduzidas, o campo **[!UICONTROL Tex
 
 Por padrão, cada idioma de tradução da aplicação Web é exibido. Há dois filtros padrão: idioma e status. Clique no botão **[!UICONTROL Filters]** e, em seguida, clique em **[!UICONTROL By language or status]** para exibir as caixas suspensas correspondentes. Você também pode criar um filtro avançado. Para mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
-![](assets/s_ncs_admin_survey_trad_tab_en.png)
+![Guia Traduções menu Filtros com Por idioma ou status, filtrando cadeias de caracteres francesas com o status Para traduzir](assets/s_ncs_admin_survey_trad_tab_en.png)
 
 Vá para a caixa suspensa **[!UICONTROL Language]** para selecionar o idioma de tradução.
 
@@ -101,7 +101,7 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
 
 1. Para traduzir uma palavra, clique duas vezes na sua linha na lista de strings.
 
-   ![](assets/s_ncs_admin_survey_trad_tab_add_term.png)
+   ![Caixa de diálogo de tradução com a cadeia de caracteres de origem, a tradução em francês, a opção Tradução aprovada e Salvar](assets/s_ncs_admin_survey_trad_tab_add_term.png)
 
    A string de origem é então exibida na seção superior da janela.
 
@@ -125,7 +125,7 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
 
 1. Selecione as aplicações web cujas strings você deseja importar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Export strings for translation...]**
 
-   ![](assets/s_ncs_admin_survey_trad_export.png)
+   ![Lista de aplicativos Web com o botão direito do mouse no menu Ações, com o realce Exportar cadeias de caracteres para tradução](assets/s_ncs_admin_survey_trad_export.png)
 
 1. Selecione um **[!UICONTROL Export strategy]**:
 
@@ -146,7 +146,7 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
 1. Em seguida, escolha o **[!UICONTROL Target folder]** onde os arquivos serão gravados.
 1. Selecione o formato de arquivo (**[!UICONTROL CSV]** ou **[!UICONTROL XLIFF]**) e clique em **[!UICONTROL Start]**.
 
-![](assets/s_ncs_admin_survey_trad_export_start.png)
+![Exportar cadeias de caracteres para o assistente de tradução com um arquivo por idioma, uma pasta de destino, formato CSV ou XLIFF e Início](assets/s_ncs_admin_survey_trad_export_start.png)
 
 >[!NOTE]
 >
@@ -164,11 +164,11 @@ Uma vez concluída a conversão externa, você pode importar os arquivos traduzi
    >
    >Não há necessidade de selecionar as aplicações web relacionadas à tradução. Coloque o cursor em qualquer lugar da lista de aplicações web.
 
-   ![](assets/s_ncs_admin_survey_trad_import.png)
+   ![Lista de aplicativos Web com o botão direito do mouse no menu Ações com Importar cadeias de caracteres traduzidas realçadas](assets/s_ncs_admin_survey_trad_import.png)
 
 1. Selecione o arquivo a ser importado e clique em **[!UICONTROL Upload]**.
 
-   ![](assets/s_ncs_admin_survey_trad_import_start.png)
+   ![Assistente de importação de cadeias de caracteres traduzidas com um arquivo CSV local selecionado para importação e o botão Carregar](assets/s_ncs_admin_survey_trad_import_start.png)
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ se o idioma for o primeiro ou único parâmetro da URL. Por exemplo: **https://m
 &lang=xx
 ```
 
-se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
+se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Os idiomas e os dicionários de tradução disponíveis como padrão estão listados abaixo.
 
@@ -434,7 +434,7 @@ Os idiomas e os dicionários de tradução disponíveis como padrão estão list
 
 O formulário web a seguir está disponível em quatro idiomas: inglês, francês, alemão e espanhol. As strings foram traduzidas por meio da guia **[!UICONTROL Translation]** do formulário web. Como o idioma padrão é inglês, quando a pesquisa é publicada, use a URL padrão para exibi-la em inglês.
 
-![](assets/s_ncs_admin_survey_trad_sample_fr.png)
+![Página de Boas-vindas do formulário Web exibida em inglês, com campos de título, nome, email, telefone e endereço e um botão Avançar](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
 Adicione **?lang=fr** ao final da URL para exibi-la em francês:
 
@@ -442,14 +442,14 @@ Adicione **?lang=fr** ao final da URL para exibi-la em francês:
 >
 >A lista de símbolos para cada idioma é detalhada em [Alteração do idioma de exibição dos formulários](#changing-forms-display-language).
 
-![](assets/s_ncs_admin_survey_trad_sample_en.png)
+![A mesma Página de Boas-vindas exibida em francês após adicionar lang=fr à URL, com o parâmetro lang realçado](assets/s_ncs_admin_survey_trad_sample_en.png)
 
 Você pode adicionar **?lang=es** ou **=lang=de** para exibi-la em espanhol ou alemão.
 
 >[!NOTE]
 >
 >Se outros parâmetros já estiverem sendo usados para essa aplicação web, adicione **&amp;lang=**.\
->Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
+>Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Configuração avançada de tradução {#advanced-translation-configuration}
 
@@ -463,18 +463,18 @@ As strings do sistema são strings prontas para uso, utilizadas por todas as apl
 
 Se você traduzir a aplicação web para um idioma para o qual o dicionário do sistema não foi traduzido, uma mensagem de aviso será exibida para avisá-lo que algumas traduções estão ausentes.
 
-![](assets/s_ncs_admin_survey_trad_error.png)
+![Aviso na guia Traduções: 27 traduções ausentes para idiomas es e fr no dicionário do sistema](assets/s_ncs_admin_survey_trad_error.png)
 
 Para adicionar um idioma, siga as etapas abaixo:
 
 1. Vá para a árvore do Adobe Campaign e clique em **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]**.
 1. Na seção superior da janela, selecione a string do sistema a ser traduzida e clique em **[!UICONTROL Add]** na seção inferior.
 
-   ![](assets/s_ncs_admin_survey_trad_system_translation.png)
+   ![Dicionário do sistema no Dicionário global com uma cadeia de caracteres como buttonPrevious selecionada e o botão Adicionar realçado](assets/s_ncs_admin_survey_trad_system_translation.png)
 
 1. Selecione o idioma de tradução e insira uma tradução para a string. Você pode aprovar a tradução marcando a opção **[!UICONTROL Translation approved]**.
 
-   ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
+   ![Caixa de diálogo de tradução para buttonPrevious com o francês selecionado, o texto traduzido e a opção de Tradução aprovada](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
    >[!NOTE]
    >
@@ -490,8 +490,8 @@ Para traduzir aplicações web para idiomas diferentes do padrão (consulte [Alt
 
 1. Clique no nó **[!UICONTROL Administration > Platform > Enumerations]** da árvore do Adobe Campaign e selecione **[!UICONTROL Languages available for translation]** na lista. A lista de traduções disponíveis é exibida na seção inferior da janela.
 
-   ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
+   ![Lista de enumerações com idiomas disponíveis para tradução (dictionaryLocale) selecionada e o botão Adicionar realçado](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
 1. Clique no botão **[!UICONTROL Add]**, em seguida, digite o **[!UICONTROL Internal name]**, **[!UICONTROL Label]** e o identificador da imagem (sinalizador). Para adicionar uma nova imagem, entre em contato com o administrador.
 
-   ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)
+   ![Caixa de diálogo de valor de enumeração para um novo idioma com os campos Nome Interno, Galês de Etiqueta e Imagem](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)

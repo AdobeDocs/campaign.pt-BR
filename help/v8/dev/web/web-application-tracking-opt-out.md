@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 86%
+source-wordcount: '740'
+ht-degree: 82%
 ---
 # Recusa de rastreamento de aplicativo web{#web-application-tracking-opt-out}
 
@@ -66,11 +66,11 @@ Se o rastreamento web estiver ativado, você pode ter:
 * Nenhum banner.
 * Configure o banner manualmente em cada página: marque essa opção e selecione o banner em cada página nas propriedades da página.
 
-  ![](assets/pageproperties.png)
+  ![Cabeçalho da caixa de diálogo de propriedades da página com a opção Habilitar transições de saída marcada.](assets/pageproperties.png)
 
 * Adicione automaticamente o banner a todas as páginas: selecione o banner diretamente nas propriedades da aplicação web.
 
-  ![](assets/optoutconfig.png)
+  ![Guia Propriedades Gerais do aplicativo Web com as opções de banner para opção de não participação: nenhum banner, manual por página ou automático.](assets/optoutconfig.png)
 
 >[!NOTE]
 >

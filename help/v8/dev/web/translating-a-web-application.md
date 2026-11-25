@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 91%
+source-wordcount: '428'
+ht-degree: 78%
 ---
 # Traduzir um aplicativo web{#translating-a-web-application}
 
@@ -42,12 +42,12 @@ Para sinalizar as strings a ser traduzidas:
 
 1. Abra uma página de conteúdo editada com DCE em uma aplicação web.
 
-   ![](assets/dce_translation_3.png)
+   ![Editor de aplicativo Web com a atividade Page realçada no Fluxo Preloading, Page, Storage, End](assets/dce_translation_3.png)
 
 1. Selecione um bloco HTML.
 1. No bloco de parâmetros à direita, a opção **[!UICONTROL Localization]** permite sinalizar o conteúdo do bloco selecionado. Por padrão, somente o título da página será traduzido.
 
-   ![](assets/dce_translation_1.png)
+   ![As opções de Bloqueio com a seção Localização e a opção Traduzir Sim/Não estão realçadas](assets/dce_translation_1.png)
 
    >[!NOTE]
    >
@@ -58,11 +58,11 @@ Para sinalizar as strings a ser traduzidas:
    * Quando o bloco selecionado contiver várias strings/blocos, ele será sinalizado como uma única string a ser traduzida. A string contém o código HTML dos elementos dentro desse bloco.
    * Quando você deseja sinalizar um bloco que contém várias strings e, se pelo menos uma dessas cadeias já estiver sinalizada, um aviso será exibido. Você pode então remover o sinalizador da string isolada e adicionar todo o bloco.
 
-     ![](assets/dce_translation_4.png)
+     ![Caixa de diálogo de confirmação de agrupamento avisando que o bloco já contém 2 elementos a serem traduzidos](assets/dce_translation_4.png)
 
    * Quando você deseja remover o sinalizador de uma string contida em um bloco que já está sinalizado, não é possível modificar diretamente a opção de conversão de string. No entanto, você pode acessar o bloco contendo a string para alterá-lo.
 
-     ![](assets/dce_translation_2.png)
+     ![Aviso da seção de localização de que o elemento já está em um bloco a ser traduzido, com um botão Selecionar bloco](assets/dce_translation_2.png)
 
 1. Depois de concluir a sinalização das strings, volte para a aplicação web e selecione a guia **[!UICONTROL Translations]**.
 1. Selecione **[!UICONTROL Collect the strings to translate]**. As strings sinalizadas no DCE são adicionadas às strings da aplicação web.

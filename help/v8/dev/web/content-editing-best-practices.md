@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 93%
+source-wordcount: '599'
+ht-degree: 87%
 ---
 # Práticas recomendadas de edição de conteúdo{#content-editing-best-practices}
 
@@ -51,13 +51,13 @@ Para garantir a operação ideal do editor, recomendamos observar as seguintes d
 
   O atributo **&quot;type&quot;** é visível na interface do seguinte formulário:
 
-  ![](assets/dce_sidebar_inputtypechanges.png)
+  ![Painel da barra lateral da zona de entrada (email) com a seção Dados de formulário, um seletor de campo e a opção obrigatória Sim ou Não](assets/dce_sidebar_inputtypechanges.png)
 
   A lista oficial de atributos ‘type’ está disponível [neste site](https://www.w3schools.com/tags/att_input_type.asp).
 
 * Etapas para simular uma página final com o DCE:
 
-  ![](assets/dce_enchainement.png)
+  ![Diagrama de formulário com as caixas Preloading, Page, Storage e Page 2 em sequência, simulando uma página final](assets/dce_enchainement.png)
 
 * Verifique se há apenas um `<body> </body>` na página.
 * Quando um arquivo CSS ou JS é carregado, as imagens contidas no arquivo .zip não são carregadas. As referências a essas imagens presentes no CSS, portanto, não são atualizadas.

@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 82%
 ---
 # Criar um aplicativo web{#designing-a-web-application}
 
@@ -47,21 +47,21 @@ Os aplicativos Web são criados e gerenciados de acordo com o mesmo princípio q
 
 Você pode incluir gráficos em aplicações web. Para fazer isso, use a lista suspensa de gráficos na barra de tarefas para selecionar o tipo de gráfico a ser inserido.
 
-![](assets/s_ncs_admin_webapps_bar_graph.png)
+![Lista suspensa do gráfico da barra de ferramentas do editor de páginas: Histograma, Pizza, Radar, Áreas, Curvas e Funnel.](assets/s_ncs_admin_webapps_bar_graph.png)
 
 É possível também selecionar o menu **[!UICONTROL Add a chart]**.
 
-![](assets/s_ncs_admin_webapps_graph.png)
+![Menu de contexto de página com Adicionar um submenu de gráfico listando Histograma, Pizza, Radar, Áreas, Curvas e Funnel.](assets/s_ncs_admin_webapps_graph.png)
 
 ## Inserção de tabelas em um aplicativo web {#inserting-tables-in-a-web-application}
 
 Para adicionar uma tabela, use a lista suspensa de tabelas na barra de tarefas para selecionar o tipo de tabela a ser usada.
 
-![](assets/s_ncs_admin_webapps_bar_table.png)
+![Lista suspensa da tabela da barra de ferramentas do editor de páginas listando a tabela dinâmica, a lista com o grupo e a distribuição.](assets/s_ncs_admin_webapps_bar_table.png)
 
 Você também pode selecionar o tipo de tabela no menu suspenso.
 
-![](assets/s_ncs_admin_webapps_table.png)
+![Menu de contexto de página com Adicionar um submenu de tabela listando Tabela dinâmica, Lista com grupo e Distribuição.](assets/s_ncs_admin_webapps_table.png)
 
 ## Aplicativos Web do tipo Visão geral {#overview-type-web-applications}
 

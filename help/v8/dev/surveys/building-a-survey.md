@@ -15,10 +15,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 94%
+source-wordcount: '996'
+ht-degree: 76%
 ---
 # Criar uma pesquisa{#building-a-survey}
 
@@ -36,7 +36,7 @@ Os formulários web são acessados por meio do nó **[!UICONTROL Resources > Onl
 
 Selecione o modelo de pesquisa (**[!UICONTROL newSurvey]** por padrão).
 
-![](assets/s_ncs_admin_survey_select_template.png)
+![Caixa de diálogo Novo aplicativo Web com a lista de modelos aberta para escolher uma pesquisa ou um modelo de formulário Web.](assets/s_ncs_admin_survey_select_template.png)
 
 As páginas do formulário são criadas usando um editor especial que permite definir e configurar campos de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo do HTML etc.). Elas podem ser coletadas em &quot;containers&quot; e dispostas de acordo com os requisitos. [Saiba mais](#adding-questions).
 
@@ -48,7 +48,7 @@ As páginas do formulário são criadas usando um editor especial que permite de
 
 Os campos em um formulário permitem aos usuários inserir informações e selecionar opções. Para cada página no formulário, eles são criados por meio do primeiro botão na barra de ferramentas através do menu **[!UICONTROL Add using the assistant]**.
 
-![](assets/s_ncs_admin_survey_add_field_menu.png)
+![O assistente de criação de campos foi aberto em Adicionar usando o assistente, com quatro opções de campo de Responder uma pergunta a Importar.](assets/s_ncs_admin_survey_add_field_menu.png)
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Ao adicionar um campo a uma pesquisa, você precisa selecionar seu tipo. As segu
 
 A natureza do campo a ser adicionado (lista suspensa, campo de texto, caixas de seleção etc.) adapta-se ao modo de armazenamento selecionado. É possível alterá-lo por meio do campo **[!UICONTROL Type]** da guia **[!UICONTROL General]**, mas mantenha a consistência com o tipo de dados.
 
-![](assets/s_ncs_admin_survey_change_type.png)
+![Guia Geral do editor de páginas com a lista Tipo aberta, mostrando Multiple choice, caixa de combinação e outros tipos de campo.](assets/s_ncs_admin_survey_change_type.png)
 
 Os vários tipos de campos disponíveis são detalhados em [Introdução aos formulários web](../web/about-web-forms.md).
 
@@ -81,11 +81,11 @@ As pesquisas online são baseadas nos recursos de aplicativos Web. Os recursos e
 
 Para controles do tipo **[!UICONTROL Multiple choice]**, é possível definir um número mínimo e máximo de seleções. Por exemplo, essa opção permite forçar a seleção de pelo menos **2** valores e no máximo **4** valores das opções disponíveis:
 
-![](assets/s_ncs_admin_survey_multichoice_ex1.png)
+![Página de pesquisa Selecione seus interesses com caixas de seleção, três a quatro opções selecionadas.](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
 Se o número de seleções for muito grande ou muito pequeno, a mensagem apropriada será exibida.
 
-![](assets/s_ncs_admin_survey_multichoice_ex2.png)
+![Página de pesquisa de interesses mostrando a mensagem de erro. Não escolha mais de quatro interesses.](assets/s_ncs_admin_survey_multichoice_ex2.png)
 
 >[!NOTE]
 >
@@ -93,11 +93,11 @@ Se o número de seleções for muito grande ou muito pequeno, a mensagem apropri
 
 A configuração correspondente é a seguinte:
 
-![](assets/s_ncs_admin_survey_multichoice_ex3.png)
+![Campo de múltipla escolha definido para permitir várias seleções, com 2 seleções necessárias e 4 permitidas.](assets/s_ncs_admin_survey_multichoice_ex3.png)
 
 Além disso, o local de armazenamento para esse campo de entrada deve ser de **[!UICONTROL Multiple values]** do tipo **archived field**:
 
-![](assets/s_ncs_admin_survey_multiple_values_field.png)
+![Criar nova caixa de diálogo de campo arquivado com a opção Valores múltiplos marcada para o campo Interesses.](assets/s_ncs_admin_survey_multiple_values_field.png)
 
 >[!CAUTION]
 >
@@ -114,7 +114,7 @@ Use um container **Pergunta** para adicionar uma pergunta à página e inserir a
 >
 >Nunca insira um container **Pergunta** abaixo de outro container **Pergunta** na hierarquia.
 
-![](assets/s_ncs_admin_question_label.png)
+![Guia Geral do contêiner de perguntas com a opção Inserir o título no formato HTML marcada e o editor do HTML exibido.](assets/s_ncs_admin_question_label.png)
 
 O rótulo da pergunta é inserido no campo de rótulo. Nesse caso, o estilo da folha de estilos do formulário será aplicado. Selecione a opção **[!UICONTROL Enter the title in HTML format]** para personalizar. Isso dará acesso ao editor de HTML.
 
@@ -124,11 +124,11 @@ O rótulo da pergunta é inserido no campo de rótulo. Nesse caso, o estilo da f
 
 Por exemplo:
 
-![](assets/s_ncs_admin_survey_containers_qu_arbo.png)
+![Árvore de páginas com contêineres Pergunta para contratos e formato de email e as configurações da guia Geral da página.](assets/s_ncs_admin_survey_containers_qu_arbo.png)
 
 No exemplo acima, a renderização será a seguinte:
 
-![](assets/s_ncs_admin_survey_containers_qu_ex.png)
+![Página de pesquisa renderizada com campos, uma lista suspensa de formato de email e uma pergunta de caixa de seleção de contratos.](assets/s_ncs_admin_survey_containers_qu_ex.png)
 
 >[!NOTE]
 >
@@ -136,11 +136,11 @@ No exemplo acima, a renderização será a seguinte:
 
 Você pode habilitar o desenho aleatório de perguntas pelo Adobe Campaign. É possível especificar o número de perguntas a serem exibidas na página, no campo localizado na parte inferior da janela de configuração.
 
-![](assets/s_ncs_admin_survey_containers_qu_display.png)
+![Guia Geral de Página com Exibição verificada aleatoriamente e o número de perguntas a serem exibidas definido como 1.](assets/s_ncs_admin_survey_containers_qu_display.png)
 
 A renderização terá esta aparência:
 
-![](assets/s_ncs_admin_survey_containers_qu_display_rendering.png)
+![Página renderizada mostrando apenas duas perguntas selecionadas aleatoriamente, Pergunta 2 e Pergunta 3, com o botão Avançar.](assets/s_ncs_admin_survey_containers_qu_display_rendering.png)
 
 Quando a página é atualizada, as perguntas exibidas não são as mesmas.
 

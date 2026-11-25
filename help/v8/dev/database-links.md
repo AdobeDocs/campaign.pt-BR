@@ -30,9 +30,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '957'
 ht-degree: 0%
 ---
 # Gerenciamento de link {#links--relation-between-tables}
@@ -49,14 +49,14 @@ Na interface do usuário, as cardinalidades são representadas com um ícone esp
 
 Para relações de join com uma tabela/banco de dados de campanha:
 
-* ![](assets/do-not-localize/join_with_campaign11.png): Cardinalidade 1-1. Por exemplo, entre um recipient e um pedido atual. Um recipient pode ser relacionado a apenas uma ocorrência da tabela de pedidos atual por vez.
-* ![](assets/do-not-localize/externaljoin11.png): Cardinalidade 1-1, junção externa. Por exemplo, entre um recipient e seu país. Um recipient pode ser relacionado a apenas uma ocorrência do país da tabela. O conteúdo da tabela do país não será salvo.
-* ![](assets/do-not-localize/join_with_campaign1n.png): Cardinalidade 1-N. Por exemplo, entre um recipient e a tabela de subscrições. Um recipient pode ser relacionado a várias ocorrências na tabela de assinaturas.
+* ![Ícone para um link de cardinalidade 1-1](assets/do-not-localize/join_with_campaign11.png): Cardinalidade 1-1. Por exemplo, entre um recipient e um pedido atual. Um recipient pode ser relacionado a apenas uma ocorrência da tabela de pedidos atual por vez.
+* ![Ícone para uma associação externa de cardinalidade 1-1](assets/do-not-localize/externaljoin11.png): Cardinalidade 1-1, associação externa. Por exemplo, entre um recipient e seu país. Um recipient pode ser relacionado a apenas uma ocorrência do país da tabela. O conteúdo da tabela do país não será salvo.
+* ![Ícone para um link de cardinalidade 1-N](assets/do-not-localize/join_with_campaign1n.png): Cardinalidade 1-N. Por exemplo, entre um recipient e a tabela de subscrições. Um recipient pode ser relacionado a várias ocorrências na tabela de assinaturas.
 
 Para relações de join usando o Federated Database Access (FDA):
 
-* ![](assets/do-not-localize/join_fda_11.png): Cardinalidade 1-1
-* ![](assets/do-not-localize/join_fda_1m.png): Cardinalidade 1-N
+* ![Ícone para um link de cardinalidade 1-1](assets/do-not-localize/join_fda_11.png): Cardinalidade 1-1
+* ![Ícone para um link de cardinalidade 1-N](assets/do-not-localize/join_fda_1m.png): Cardinalidade 1-N
 
 Para obter mais informações sobre tabelas FDA, consulte [Acesso a um banco de dados externo](../connect/fda.md).
 
