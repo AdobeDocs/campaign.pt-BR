@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 78%
+source-wordcount: '1116'
+ht-degree: 77%
 ---
 # Gerenciar solicitações de privacidade no Campaign {#privacy}
 
@@ -52,7 +52,7 @@ Saiba mais sobre o **Direito de acesso** e o **Direito ao esquecimento** (solici
 
 >[!NOTE]
 >
->Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md)
+>Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte a [matriz de compatibilidade do Campaign v8](compatibility-matrix.md)
 
 ## Definir um namespace {#namespaces}
 
@@ -94,7 +94,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. No Adobe Campaign, acesse **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]** e selecione **[!UICONTROL New]**.
 
-   ![](assets/privacy-namespaces-new.png)
+   ![Caminho do Explorer Administration > Platform > Namespaces com o botão New realçado](assets/privacy-namespaces-new.png)
 
 1. Insira um **[!UICONTROL Label]**.
 
@@ -104,7 +104,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
    * o **[!UICONTROL Internal name]** deve corresponder ao atributo “código”
    * o **[!UICONTROL Reconciliation key]** deve corresponder ao atributo “idType”
 
-   ![](assets/privacy-namespaces-details.png)
+   ![Novo formulário de namespace com ID de namespace AEC, nome interno e campos de chave de reconciliação realçados](assets/privacy-namespaces-details.png)
 
    O campo **[!UICONTROL Reconciliation key]** será usado para identificar o titular dos dados no banco de dados do Adobe Campaign.
 

@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 78%
+source-wordcount: '929'
+ht-degree: 70%
 ---
 # Introdução às campanhas {#gs-ac-campaigns}
 
@@ -42,7 +42,7 @@ As campanhas incluem ações (entregas) e processos (importação ou extração 
 
 O Adobe Campaign permite criar e organizar campanhas direcionadas e personalizadas em vários canais: email, correspondência direta, SMS e notificação por push. Uma única interface fornece todas as funções necessárias para agendar, organizar, configurar, personalizar, automatizar, executar e medir todas as suas campanhas e comunicações.
 
-![](assets/campaign-tab.png)
+![Guia Campanhas da página inicial listando campanhas de marketing com status, datas e o botão Criar](assets/campaign-tab.png)
 
 ### Conceitos principais{#ac-core-concepts}
 
@@ -64,7 +64,7 @@ Antes de começar a implementar campanhas de marketing, você precisa conhecer o
 
 O Adobe Campaign permite criar, configurar, executar e analisar todas as campanhas de marketing de um centro de controle unificado.
 
-![](assets/calendar.png)
+![Calendário da campanha mostrando campanhas e entregas em uma linha do tempo, com um pop-up detalhado do Programa de fidelidade](assets/calendar.png)
 
 Descubra como acessar e implementar campanhas de marketing em [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR){target="_blank"}.
 
@@ -88,7 +88,7 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    Você pode criar o público-alvo em um fluxo de trabalho ou selecionar um grupo existente, como uma lista de destinatários, assinantes de um boletim informativo, destinatários de uma entrega anterior ou qualquer condição de filtragem.
 
-   ![](assets/campaign-wf.png)
+   ![Fluxo de trabalho da campanha: consulta e feed da lista de leitura uma entrega de ofertas de verão, depois uma entrega de espera e uma entrega móvel](assets/campaign-wf.png)
 
    Saiba como definir o público-alvo de suas mensagens [nesta página](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR){target="_blank"}.
 
@@ -96,11 +96,11 @@ As principais etapas para criar uma campanha de marketing entre canais são:
 
    Selecione os canais, defina o conteúdo da mensagem e inicie as entregas.
 
-   ![](assets/campaign-dashboard.png)
+   ![Painel de campanha com status, agendamento, documentos, ações e a lista de entregas com seus status](assets/campaign-dashboard.png)
 
-   Saiba como criar e iniciar entregas de campanhas de marketing [nesta página](../../automation/campaigns/marketing-campaign-deliveries.md).
+   Saiba como criar e iniciar entregas de campanha de marketing em [Criar entregas](../../automation/campaigns/marketing-campaign-deliveries.md#create-deliveries) e [Iniciar uma entrega](../../automation/campaigns/marketing-campaign-deliveries.md#start-a-delivery).
 
-   Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama etc. Saiba mais sobre documentos associados em [esta página](../../automation/campaigns/marketing-campaign-assets.md).
+   Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama etc. Saiba mais sobre documentos associados em [Ativos, documentos e delivery outlines da campanha de marketing](../../automation/campaigns/marketing-campaign-assets.md).
 
 1. **Configurar o processo de aprovação**
 
@@ -115,7 +115,7 @@ O Adobe Campaign oferece um complemento de **Marketing distribuído** para imple
 
 >[!NOTE]
 >
->Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md)
+>Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte a [matriz de compatibilidade do Campaign v8](compatibility-matrix.md)
 
 Saiba como configurar e usar os recursos de Marketing distribuído do Campaign em [esta página](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=pt-BR){target="_blank"}.
 
@@ -125,6 +125,6 @@ O Adobe Campaign oferece um complemento de **Gerenciamento de resposta** que per
 
 >[!NOTE]
 >
->Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte [esta seção](compatibility-matrix.md)
+>Esse recurso está disponível a partir do Campaign v8.3. Para verificar sua versão, consulte a [matriz de compatibilidade do Campaign v8](compatibility-matrix.md)
 
-[&#128279;](../assets/do-not-localize/book.png) Saiba como configurar e usar o Gestor de Resposta do Campaign na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=pt-BR){target="_blank"}.
+[](../assets/do-not-localize/book.png) Saiba como configurar e usar o Gestor de Resposta do Campaign na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=pt-BR){target="_blank"}.

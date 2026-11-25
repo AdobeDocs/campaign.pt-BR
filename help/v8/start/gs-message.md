@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 71%
+source-wordcount: '1057'
+ht-degree: 66%
 ---
 # Introdução a mensagens {#gs-ac-msg}
 
@@ -60,21 +60,21 @@ Para enviar mensagens, você deve criar um delivery. O modo de criação do deli
 
 >[!NOTE]
 >
->Ao criar um delivery, você deve selecionar um template. Os modelos padrão estão disponíveis para cada canal. Saiba mais sobre modelos de entrega em [esta página](../send/create-templates.md).
+>Ao criar um delivery, você deve selecionar um template. Os modelos padrão estão disponíveis para cada canal. Saiba mais sobre modelos de entrega em [Trabalhar com modelos de entrega](../send/create-templates.md).
 
-1. **Mensagens únicas** - Você pode enviar mensagens únicas para um público-alvo. Saiba como enviar sua primeira mensagem em [esta seção](create-message.md).
+1. **Mensagens únicas** - Você pode enviar mensagens únicas para um público-alvo. Saiba como enviar sua primeira mensagem no [Crie sua primeira entrega](create-message.md).
 
-   ![](assets/send-email.png)
+   ![Editor de entrega de email com campos De, Para e Assunto, conteúdo do HTML e o botão Enviar](assets/send-email.png)
 
-1. **Mensagens em uma campanha de marketing** - Você pode enviar mensagens no contexto de uma [campanha de marketing](campaigns.md), definir um processo de aprovação, enviá-las e rastreá-las em um painel consolidado. Saiba mais em [esta seção](../../automation/campaigns/marketing-campaign-deliveries.md).
+1. **Mensagens em uma campanha de marketing** - Você pode enviar mensagens no contexto de uma [campanha de marketing](campaigns.md), definir um processo de aprovação, enviá-las e rastreá-las em um painel consolidado. Saiba mais sobre [Entregas de campanha de marketing](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-   ![](assets/deliveries-in-a-campaign.png)
+   ![Painel de campanha listando entregas com seus status de aprovação, como Para aprovar e Para enviar](assets/deliveries-in-a-campaign.png)
 
-1. **Mensagens em um fluxo de trabalho** - Você pode enviar mensagens por meio de um [fluxo de trabalho](../config/workflows.md) e automatizar suas entregas. Saiba mais em [esta página](../../automation/workflow/delivery.md).
+1. **Mensagens em um fluxo de trabalho** - Você pode enviar mensagens por meio de um [fluxo de trabalho](../config/workflows.md) e automatizar suas entregas. Saiba mais sobre [Entrega](../../automation/workflow/delivery.md).
 
-   ![](assets/send-in-a-wf.png)
+   ![Fluxo de trabalho de campanha com Consulta e Lista de leitura alimentando uma entrega de Ofertas de verão, uma Entrega de espera e uma Entrega móvel](assets/send-in-a-wf.png)
 
-1. **Mensagens acionadas** - Você pode [Acionar mensagens](../send/transactional.md) a partir de um evento. O envio de mensagens transacionais (Centro de mensagens) é o módulo do Campaign criado para gerenciar mensagens por acionador. As etapas para configurar e enviar mensagens transacionais são detalhadas [nesta página](../send/transactional.md)
+1. **Mensagens acionadas** - Você pode [Acionar mensagens](../send/transactional.md) a partir de um evento. O envio de mensagens transacionais (Centro de mensagens) é o módulo do Campaign criado para gerenciar mensagens por acionador. As etapas para configurar e enviar mensagens transacionais são detalhadas em [Mensagens transacionais do Campaign](../send/transactional.md)
 
 ## Canais de comunicação {#gs-channel}
 
@@ -111,7 +111,7 @@ Uma **entrega** é um objeto de entrega independente executado uma vez. Ele pode
 
 As entregas podem ser criadas a partir da lista de entregas ou em um fluxo de trabalho através de uma atividade de [Entrega](../../automation/workflow/delivery.md) .
 
-Os fluxos de trabalho também fornecem atividades de entrega específicas de acordo com o tipo de canal que você deseja usar. Para obter mais informações sobre essas atividades, consulte [esta seção](../../automation/workflow/cross-channel-deliveries.md).
+Os fluxos de trabalho também fornecem atividades de entrega específicas de acordo com o tipo de canal que você deseja usar. Para obter mais informações sobre essas atividades, consulte [Cross-channel deliveries](../../automation/workflow/cross-channel-deliveries.md).
 
 ### Entrega recorrente {#recurring-delivery}
 
