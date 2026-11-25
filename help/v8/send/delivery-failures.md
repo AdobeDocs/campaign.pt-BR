@@ -159,7 +159,7 @@ Quando uma mensagem estiver na fila do MTA por 3,5 dias e não for entregue, o t
 
 Uma mensagem pode expirar antes do fim de seu período de validade, quando a próxima tentativa cair após o tempo de expiração. O log de delivery mostra a falha da última tentativa de delivery.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=pt-BR#defining-validity-period){target="_blank"}.-->
 
 
 ## Tipos de erro de email {#email-error-types}
