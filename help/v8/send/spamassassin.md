@@ -19,10 +19,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 92%
+source-wordcount: '315'
+ht-degree: 77%
 ---
 # SpamAssassin{#spamassassin}
 
@@ -52,7 +52,7 @@ Para obter mais informações sobre como criar uma entrega, consulte esta [pági
 1. Acesse a guia **[!UICONTROL Preview]**.
 1. Selecione um destinatário para pré-visualizar sua entrega.
 
-   ![](assets/s_tn_del_preview_spamassassin_recipient.png)
+   ![Guia Visualização de Entrega com a lista de destinatários aberta para escolher um destinatário para a verificação antisspam](assets/s_tn_del_preview_spamassassin_recipient.png)
 
    >[!NOTE]
    >
@@ -60,13 +60,13 @@ Para obter mais informações sobre como criar uma entrega, consulte esta [pági
 
 1. Uma mensagem de aviso dará o resultado do teste. Se um alto nível de risco for detectado, a seguinte mensagem de aviso será exibida:
 
-   ![](assets/s_tn_del_preview_spamassassin_ko.png)
+   ![Aviso da guia Visualizar: a verificação antisspam detectou um alto risco para este email, com o link Mais](assets/s_tn_del_preview_spamassassin_ko.png)
 
 1. Clique no link **[!UICONTROL More...]** próximo ao aviso.
 1. Selecione a guia **[!UICONTROL Anti-spam checking]**.
 1. Acesse a seção **[!UICONTROL Points / Rule / Description]** para exibir os motivos para esse risco.
 
-   ![](assets/s_tn_del_msg_spamassassin_ko.png)
+   ![Guia Verificação antisspam com pontuação de spam, pontuação máxima autorizada e a lista Pontos / Regra / Descrição](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >

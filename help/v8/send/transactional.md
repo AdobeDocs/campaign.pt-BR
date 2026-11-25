@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 59%
+source-wordcount: '468'
+ht-degree: 57%
 ---
 # Introdução a mensagens transacionais{#send-transactional-messages}
 
@@ -86,7 +86,7 @@ Para criar tipos de evento que serão processados pelo Adobe Campaign, siga as e
 1. Selecione a enumeração **[!UICONTROL Event type]** na lista.
 1. Clique em **[!UICONTROL Add]** para criar um valor enumeração. Pode ser uma confirmação de pedido, uma alteração de senha, uma alteração de entrega de pedido etc.
 
-   ![](assets/messagecenter_eventtype_enum_001.png)
+   ![Enumeração de tipo de evento em Administration > Platform > Enumerations, com a caixa de diálogo Add e Enumeration value](assets/messagecenter_eventtype_enum_001.png)
 
    >[!CAUTION]
    >

@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 58%
+source-wordcount: '985'
+ht-degree: 54%
 ---
 # Criar entregas de correspondência direta
 
@@ -57,7 +57,7 @@ Para criar uma nova entrega de correspondência direta, siga as etapas abaixo:
 1. Crie uma nova entrega, por exemplo, no painel Entrega.
 1. Selecione o modelo da entrega **Entrega por correspondência direta (papel)**.
 
-   ![](assets/direct_mail.png)
+   ![Caixa de diálogo de nova entrega com o modelo Entrega por correspondência direta (papel) selecionado na lista](assets/direct_mail.png)
 
 1. Identifique a entrega com um rótulo, código e descrição. Para obter mais informações, consulte [Criar o delivery](../start/create-message.md#create-the-delivery).
 1. Clique em **Continuar** para confirmar essas informações e exibir a janela de configuração de mensagem.
@@ -80,21 +80,21 @@ O nome do arquivo que contém os dados extraídos é definido no campo **[!UICON
 
 Por padrão, o arquivo de extração é criado e armazenado no servidor. Você pode salvá-lo em seu computador. Para fazer isso, marque a opção **[!UICONTROL Download the generated file after the analysis of the delivery]**. Nesse caso, é necessário indicar o caminho de acesso para o diretório de armazenamento local, bem como o nome do arquivo.
 
-![](assets/s_ncs_user_mail_delivery_local_file.png)
+![Guia Extração com a opção Baixar o arquivo gerado marcada e um caminho de arquivo local inserido](assets/s_ncs_user_mail_delivery_local_file.png)
 
 Para uma entrega de correspondência direta, o conteúdo da extração é definido no link **[!UICONTROL Edit the extraction file format...]**.
 
-![](assets/s_ncs_user_mail_delivery_format_link.png)
+![Guia Extração com o link Editar o formato de arquivo de extração realçado](assets/s_ncs_user_mail_delivery_format_link.png)
 
 Este link permite que você acesse o assistente de extração e defina as informações (colunas) a serem exportadas para o arquivo de saída.
 
-![](assets/s_ncs_user_mail_delivery_format_wz.png)
+![Dados para extrair o assistente com campos arrastados de Campos disponíveis para Colunas de saída](assets/s_ncs_user_mail_delivery_format_wz.png)
 
 Você pode inserir um URL personalizado no arquivo de extração. Para obter mais informações, consulte [Publicar um formulário web](../dev/web/publishing-a-web-form.md).
 
 >[!NOTE]
 >
->Este assistente inclui as etapas do assistente de exportação detalhado na [documentação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=pt-BR){target="_blank"} do Adobe Campaign Classic.
+>Este assistente inclui as etapas do assistente de exportação detalhado na [documentação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"} do Adobe Campaign Classic.
 
 ## Validar a entrega{#validating}
 
@@ -116,7 +116,7 @@ Verifique o resultado da análise e o conteúdo do arquivo de output antes de cl
 
 A confirmação do envio inicia a extração dos dados no arquivo especificado.
 
-![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
+![Iniciar caixa de diálogo de confirmação de entrega com OK e Cancelar para uma entrega de Correspondência Direta com status Pendente](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
 Então, é possível fechar o assistente e examinar os logs de entrega por meio da guia **[!UICONTROL Delivery]**, acessível pelos detalhes da entrega.
 

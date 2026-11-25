@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '647'
 ht-degree: 2%
 ---
 # Primeiros passos com canais personalizados {#gs-custom-channel}
@@ -36,7 +36,7 @@ O Adobe Campaign permite criar canais externos ou de API personalizados integrad
 
 A criação e o envio do delivery podem ser executados no Console do cliente e na interface do usuário da Web. No entanto, a configuração do canal personalizado só é executada no Console do cliente.
 
-Para saber como criar e enviar uma entrega com base em um canal personalizado, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=pt-BR){target="_blank"}.
+Para saber como criar e enviar uma entrega com base em um canal personalizado, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html){target="_blank"}.
 
 Estas são as etapas para configurar um novo canal personalizado no Console do cliente. Essas etapas são comuns aos canais externos e de API personalizados:
 
@@ -63,7 +63,7 @@ Primeiro, é necessário configurar o schema para adicionar o novo canal à list
    </enumeration>
    ```
 
-   ![](assets/cus-schema.png){zoomable="yes"}
+   ![Esquema de origem de entregas (cus) com a enumeração messageType para o canal personalizado realçado](assets/cus-schema.png){zoomable="yes"}
 
 ## Criar uma nova conta externa{#create-ext-account}
 
@@ -75,7 +75,7 @@ Em seguida, é necessário criar uma nova conta externa de roteamento.
 
 1. Selecione o canal e altere o modo de delivery. Escolha **Externo** para canais externos personalizados e **Em massa** para canais de API personalizados.
 
-   ![](assets/cus-ext-account.png){zoomable="yes"}
+   ![Conta externa do tipo Roteamento com o canal personalizado selecionado e o Modo de entrega definido como Externo](assets/cus-ext-account.png){zoomable="yes"}
 
 ## Criar um novo modelo de entrega{#create-template}
 
@@ -87,7 +87,7 @@ Agora, vamos criar o novo modelo associado ao novo canal.
 
 1. Clique em **Propriedades** e selecione a pasta correta e o roteamento.
 
-   ![](assets/cus-template.png){zoomable="yes"}
+   ![Propriedades do modelo de entrega, guia Geral, com os campos Pasta e Roteamento definidos como a conta externa do canal personalizado](assets/cus-template.png){zoomable="yes"}
 
 O novo canal agora está disponível. Você pode criar e executar deliveries com base neste canal.
 
@@ -107,11 +107,11 @@ Na interface do usuário da Web do Campaign, configure a definição de tela per
 
 1. Abra o esquema **Entrega** e clique em **Edição de tela**.
 
-   ![](assets/cus-schema2.png){zoomable="yes"}
+   ![Página de esquema de entregas (nms) com o botão Edição de tela na parte superior direita](assets/cus-schema2.png){zoomable="yes"}
 
-1. Selecione a guia que corresponde ao canal e defina como os campos serão exibidos na tela de conteúdo do delivery. Para obter mais informações sobre edição de tela, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=pt-BR#fields){target="_blank"}.
+1. Selecione a guia que corresponde ao canal e defina como os campos serão exibidos na tela de conteúdo do delivery. Para obter mais informações sobre edição de tela, consulte esta [página](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
 
-   ![](assets/cus-schema3.png){zoomable="yes"}
+   ![Caixa de diálogo de definição de tela, guia de canal personalizado, listando campos personalizados com rótulo, atributo, tipo e opção obrigatória](assets/cus-schema3.png){zoomable="yes"}
 
 1. Na seção **Visualizar para simular conteúdo**, selecione o JSPP dedicado. Isso é opcional. Isso ativará a pré-visualização na tela de simulação do delivery. [Configurar a visualização](#api-additional-preview)
 

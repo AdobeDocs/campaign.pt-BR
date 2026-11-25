@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 39%
+source-wordcount: '1048'
+ht-degree: 36%
 ---
 # Parâmetros de email {#email-parameters}
 
@@ -37,7 +37,7 @@ Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviado
 
 Você pode alterar o formato das mensagens de email enviadas. Para fazer isso, edite as propriedades da entrega e clique na guia **[!UICONTROL Delivery]**.
 
-![](assets/email-message-format.png)
+![Guia Delivery das propriedades de entrega com a seção Formatos de email realçada e três opções de formato](assets/email-message-format.png)
 
 Selecione o formato do email na seção inferior da janela:
 
@@ -73,7 +73,7 @@ Por exemplo, você deseja enviar um email contendo caracteres japoneses. Para ga
 
 Para fazer isso, selecione a opção **[!UICONTROL Force the encoding used for messages]** na seção **[!UICONTROL Character encoding]** e escolha uma codificação na lista suspensa que é exibida.
 
-![](assets/email-smtp-encoding.png)
+![Guia SMTP com Forçar a codificação usada para mensagens selecionadas e a lista suspensa Codificação aberta](assets/email-smtp-encoding.png)
 
 ## Gerenciar emails rejeitados {#managing-bounce-emails}
 
@@ -85,17 +85,17 @@ A guia **[!UICONTROL SMTP]** das propriedades de entrega também permite configu
 
 Cada um desses campos pode ser personalizado usando o ícone dedicado. Saiba mais sobre campos de personalização em [Adicionar campos de personalização](personalization-fields.md).
 
-![](assets/email-smtp-bounce.png)
+![Guia SMTP com a seção Emails de rejeição realçada: Campos de endereço de erro e endereço de rejeição](assets/email-smtp-bounce.png)
 
 Para obter mais informações sobre o gerenciamento de emails rejeitados, consulte [Qualificação de emails rejeitados](delivery-failures.md#bounce-mail-qualification).
 
 ## Ativar lista de um clique - cancelar inscrição {#one-click-list-unsubscribe}
 
-O URL de um clique para cancelar a inscrição na lista é um link ou botão exibido ao lado das informações do remetente do email, que permite que os destinatários recusem instantaneamente suas listas de endereçamento com um único clique. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=pt-BR#list-unsubscribe){target="_blank"}-->
+O URL de um clique para cancelar a inscrição na lista é um link ou botão exibido ao lado das informações do remetente do email, que permite que os destinatários recusem instantaneamente suas listas de endereçamento com um único clique. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Ele é exibido como um link **Cancelar inscrição** nas interfaces de email dos ISPs. Por exemplo:
 
-![](assets/email-list-unsubscribe-example.png)
+![Linha de remetente do cliente de email com o link Cancelar inscrição exibido ao lado do endereço do remetente](assets/email-list-unsubscribe-example.png)
 
 Adicionar um cabeçalho SMTP chamado List-Unsubscribe é obrigatório para garantir o gerenciamento ideal de deliverability e pode ser usado como uma alternativa ao ícone &quot;Relatar como SPAM&quot;. Na verdade, o uso dessa funcionalidade diminui as taxas de reclamação e ajuda a proteger sua reputação.
 
@@ -109,7 +109,7 @@ Para habilitar esta funcionalidade, selecione a opção **[!UICONTROL Addition o
 >
 >Essa opção está habilitada por padrão.
 
-![](assets/email-smtp-list-unsubscribe.png)
+A guia ![SMTP com a seção Lista de Cancelamento de Inscrição com Um Clique e a opção de cabeçalho selecionada por padrão](assets/email-smtp-list-unsubscribe.png)
 
 <!--
 >[!WARNING]
@@ -131,7 +131,7 @@ Dependendo do cliente de email e do método que estão usando para executar a re
 
 >[!NOTE]
 >
->Você também pode definir manualmente os métodos [List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} e [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} com um clique. As etapas detalhadas estão descritas no [Guia de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=pt-BR#list-unsubscribe){target="_blank"} da Experience Cloud.
+>Você também pode definir manualmente os métodos [List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} e [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} com um clique. As etapas detalhadas estão descritas no [Guia de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"} da Experience Cloud.
 
 
 ## Adicionar cabeçalhos SMTP {#adding-smtp-headers}
@@ -148,7 +148,7 @@ Os valores são codificados automaticamente se necessário.
 >
 >A sintaxe desse script deve estar em conformidade com os requisitos desse tipo de conteúdo: não há espaço não utilizado, nenhuma linha vazia, etc.
 
-![](assets/email-smtp-headers.png)
+![Guia SMTP com a área de script de cabeçalhos SMTP adicionais realçada, usando o formato de nome:value](assets/email-smtp-headers.png)
 
 
 ## Gerar mirror page {#generating-mirror-page}

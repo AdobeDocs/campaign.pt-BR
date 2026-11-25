@@ -26,10 +26,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 96%
+source-wordcount: '793'
+ht-degree: 83%
 ---
 # Renderização da caixa de entrada{#inbox-rendering}
 
@@ -72,7 +72,7 @@ Cada vez que você usa o recurso **[!UICONTROL Inbox rendering]** em uma entrega
 
 O número de tokens disponíveis restantes é exibido no [Relatório de renderização da caixa de entrada](#inbox-rendering-report).
 
-![](assets/s_tn_inbox_rendering_tokens.png)
+![Relatório de Resultados da Renderização da Caixa de Entrada com o número de tokens usados do pacote mensal destacado](assets/s_tn_inbox_rendering_tokens.png)
 
 Normalmente, o recurso de renderização da Caixa de Entrada é usado para testar a estrutura HTML de um email recém-criado. Cada renderização requer aproximadamente até 70 tokens (dependendo do número de ambientes geralmente testados). No entanto, em alguns casos, podem ser necessários vários relatórios de renderização da caixa de entrada para testar totalmente sua entrega. Portanto, seriam necessários mais tokens para completar várias verificações.
 
@@ -87,17 +87,17 @@ Para obter mais informações sobre como criar, desenvolver e segmentar uma entr
 
 1. Selecione **[!UICONTROL Analyze]** para iniciar o processo de captura.
 
-   ![](assets/s_tn_inbox_rendering_button.png)
+   ![Botão de renderização da Caixa de Entrada na barra de ferramentas de entrega e o botão Analisar da caixa de diálogo de renderização da Caixa de Entrada](assets/s_tn_inbox_rendering_button.png)
 
    Uma prova é enviada. Você pode acessar as miniaturas de renderização nessa prova alguns minutos após o envio dos emails. Para obter mais informações sobre o envio de provas, consulte [Enviar provas](preview-and-proof.md#send-proofs).
 
 1. Após ser enviada, a prova aparece na lista de entregas. Clique duas vezes nela.
 
-   ![](assets/s_tn_inbox_rendering_delivery_list.png)
+   ![Lista de entregas com a prova de entrega de email selecionada após ser enviada](assets/s_tn_inbox_rendering_delivery_list.png)
 
 1. Vá para a guia **Renderização da caixa de entrada** da prova.
 
-   ![](assets/s_tn_inbox_rendering_tab.png)
+   ![Guia Renderização da Caixa de Entrada da prova, destacada, com o resumo do relatório e a seção Móvel](assets/s_tn_inbox_rendering_tab.png)
 
    O relatório de renderização da caixa de entrada é exibido.
 
@@ -107,14 +107,14 @@ Este relatório exibe as renderizações da caixa de entrada como são exibidas 
 
 A seção superior apresenta a repartição do número de mensagens recebidas, indesejadas (spam), não recebidas ou com recebimentos pendentes por meio de uma representação gráfica colorida.
 
-![](assets/s_tn_inbox_rendering_summary.png){width="40%"}
+![Gráfico de pizza da Caixa de entrada, Spam, Não recebido e Aguardando recebimento, com Não recebido e Aguardando oculto](assets/s_tn_inbox_rendering_summary.png){width="40%"}
 
 Passe o mouse sobre o gráfico para exibir os detalhes de cada cor. Clique em um item na lista para ocultar ou exibir a categoria correspondente no gráfico.
 
 O conjunto do relatório está dividido em três partes: **[!UICONTROL Mobile]**, **[!UICONTROL Desktop]** e **[!UICONTROL Webmails]**. Role para baixo no relatório para exibir todas as renderizações agrupadas nessas três categorias.
 
-![](assets/s_tn_inbox_rendering_report.png)
+![Seção de emails do relatório de renderização da Caixa de Entrada com um cartão para cada combinação de email e navegador](assets/s_tn_inbox_rendering_report.png)
 
 Para obter os detalhes de cada relatório, clique no cartão correspondente. A renderização é exibida para o método de recebimento selecionado.
 
-![](assets/s_tn_inbox_rendering_example.png)
+![Renderização detalhada do email no Gmail no Chrome, aberta a partir de seu cartão no relatório](assets/s_tn_inbox_rendering_example.png)

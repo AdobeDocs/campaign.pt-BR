@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 19%
+source-wordcount: '788'
+ht-degree: 18%
 ---
 # Configurações de entrega de SMS {#sms-settings}
 
@@ -46,7 +46,7 @@ Você pode configurar tudo isso em um template do delivery para evitar as config
 
 ## Configurar a guia SMS {#sms-tab}
 
-![](assets/send_settings.png){zoomable="yes"}
+![Guia SMS das propriedades de entrega com parâmetros gerais e a tabela de parâmetros SMPP opcionais (TLV)](assets/send_settings.png){zoomable="yes"}
 
 Estas são as informações necessárias para preencher este formulário. Cada campo é explicado abaixo:
 

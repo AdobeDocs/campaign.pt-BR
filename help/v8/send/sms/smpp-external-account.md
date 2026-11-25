@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '3642'
+source-wordcount: '3734'
 ht-degree: 27%
 ---
 # Configurações de conta externa SMPP {#smpp-external-account}
@@ -53,7 +53,7 @@ O equipamento de rede do lado do provedor de serviço SMS é frequentemente cham
 
 ## Configurações de conexão {#smpp-connection-settings}
 
-![](assets/smpp_connection_settings.png){zoomable="yes"}
+![Guia de configurações de conexão da conta externa SMPP: servidor, porta, conta, senha e modo de conexão](assets/smpp_connection_settings.png){zoomable="yes"}
 
 Estes são os parâmetros e suas funções necessárias para configurar a conexão:
 
@@ -94,7 +94,7 @@ Quando ativado, os logs adicionais serão enviados para o arquivo de log. Isso �
 
 ## Configurações de canal de SMPP {#smpp-channel-settings}
 
-![](assets/smpp_channel_settings.png){zoomable="yes"}
+![Guia de configurações de canal SMPP: opção de transliteração, número de origem, TON/NPI de origem e destino, tipo de serviço](assets/smpp_channel_settings.png){zoomable="yes"}
 
 ### Autorizar transliteração de caracteres {#smpp-transliteration}
 
@@ -124,7 +124,7 @@ Esse campo é transmitido como está no campo service_type da PDU SUBMIT_SM. Def
 
 ## Taxa de transferência e atrasos {#smpp-delays}
 
-![](assets/smpp_throughput.png){zoomable="yes"}
+![Guia Taxa de transferência e atrasos: janela de envio, taxa de transferência máxima de MT, reconexão, expiração, tempo limite de associação, enquire_link](assets/smpp_throughput.png){zoomable="yes"}
 
 Essas configurações controlam todos os aspectos de tempo do canal SMPP. Alguns provedores exigem controle muito preciso da taxa de mensagens, da janela e dos tempos de novas tentativas, portanto, essas configurações devem ser definidas com valores que correspondam à capacidade do provedor e às condições indicadas no contrato.
 
@@ -134,7 +134,7 @@ A janela é o número de PDUs SUBMIT_SM que podem ser enviados sem esperar por u
 
 Exemplo de uma transmissão com uma janela máxima de 4:
 
-![](assets/sms_sending_window.png){zoomable="yes"}
+![Sequência entre o Campaign e o SMSC: solicitações SUBMIT_SM e respostas SUBMIT_SM_RESP com uma janela de 4](assets/sms_sending_window.png){zoomable="yes"}
 
 A janela ajuda a aumentar a taxa de transferência quando o link da rede tem uma latência alta. O valor da janela deve ser pelo menos o número de SMS/s multiplicado pela latência do link (em segundos) para que o conector nunca aguarde um SUBMIT_SM_RESP antes de enviar a próxima mensagem.
 
@@ -199,7 +199,7 @@ Se a mensagem não puder ser codificada no GSM, será codificada em UCS-2 e defi
 
 ## Especificidades do SMSC {#smsc-specificities}
 
-![](assets/smsc_specificities.png){zoomable="yes"}
+![Guia de especificidades de SMSC com message_payload, associação de TON/NPI, regexes de status, formatos de ID e opções de TLS](assets/smsc_specificities.png){zoomable="yes"}
 
 ### Ativar message_payload
 
@@ -347,7 +347,7 @@ Se habilitado, todas as conexões com o SMSC serão criptografadas usando TLS.
 
 ## Tráfego de entrada {#incoming-traffic}
 
-![](assets/incoming_traffic.png){zoomable="yes"}
+![Guia Tráfego de entrada: parâmetros SMPP opcionais (TLV) em MO e a tabela de resposta automática para o MO](assets/incoming_traffic.png){zoomable="yes"}
 
 ### Parâmetros SMPP opcionais (TLV) no MO
 

@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 65%
+source-wordcount: '1440'
+ht-degree: 56%
 ---
 # Configurar e enviar a entrega {#configure-delivery}
 
@@ -32,7 +32,7 @@ Acesse os parâmetros de entrega para ajustar mais configurações e definir com
 
 Antes de enviar a entrega, você poderá definir os parâmetros de envio nas propriedades da entrega, por meio da guia **[!UICONTROL Delivery]**.
 
-![](assets/delivery-properties-delivery.png)
+![Guia Entrega de propriedades de entrega com prioridade, ondas, novas tentativas, personalização e configurações de formato de email](assets/delivery-properties-delivery.png)
 
 ### Prioridade de entrega {#delivery-priority}
 
@@ -54,7 +54,7 @@ Use a opção **[!UICONTROL Test SMTP delivery]** para testar o envio via SMTP. 
 >
 >* Essa opção não deve ser definida no mid-sourcing.
 >
->* Saiba mais sobre a configuração do servidor SMTP na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=pt-BR#smtp-relay){target="_blank"}.
+>* Saiba mais sobre a configuração do servidor SMTP na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
 
 ## Enviar usando várias ondas {#sending-using-multiple-waves}
 
@@ -67,7 +67,7 @@ Para definir ondas, siga estas etapas:
 1. Abra as propriedades de entrega e navegue até a guia **[!UICONTROL Delivery]**.
 1. Ative a opção **[!UICONTROL Send using multiple waves]** e clique no link **[!UICONTROL Define waves...]**.
 
-   ![](assets/delivery-define-waves.png)
+   ![Guia Delivery com Send usando várias ondas selecionadas e o link Define waves realçado](assets/delivery-define-waves.png)
 
 ### Configurar ondas {#config-waves}
 
@@ -81,13 +81,13 @@ Você pode definir o tamanho de cada onda ou adicioná-las a um calendário.
 
   No campo **[!UICONTROL Period]**, especifique o atraso entre o início de duas ondas consecutivas. Por exemplo, se você inserir **[!UICONTROL 2d]**, a primeira onda começará imediatamente, a segunda onda começará em dois dias, a terceira onda em quatro dias e assim por diante.
 
-  ![](assets/delivery-waves-size.png)
+  ![Caixa de diálogo de definição de ondas com ondas de tamanho igual definidas como 30% e um período 2d entre ondas](assets/delivery-waves-size.png)
 
 * **Defina um calendário para enviar cada onda**.  Por exemplo, a primeira onda representa 25% do número total de mensagens incluídas no delivery e iniciará imediatamente. As próximas duas ondas completam a entrega e são definidas para começar em intervalos de seis horas.
 
   Na coluna **[!UICONTROL Start]**, especifique o atraso entre o início de duas ondas consecutivas. Na coluna **[!UICONTROL Size]**, insira um número fixo ou uma porcentagem.
 
-  ![](assets/delivery-waves-calendar.png)
+  ![Caixa de diálogo de definição de ondas com um calendário de três ondas: 25% em 0s, 50% em 6h e 25% em 6h](assets/delivery-waves-calendar.png)
 
 ### Verificação de agendamento de onda {#check-waves}
 
@@ -120,7 +120,7 @@ Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas
 
   Para fazer isso, use a opção **[!UICONTROL Schedule waves according to a calendar]**. Por exemplo, defina a primeira onda para 10%, a segunda para 15% e assim por diante.
 
-  ![](assets/delivery-waves-ex-ramp-up.png)
+  ![Calendário de definição de ondas com cinco ondas de tamanho crescente, de 10% a 30%, com 12h de diferença](assets/delivery-waves-ex-ramp-up.png)
 
 * **Campanhas com uma central de atendimento**
 
@@ -130,7 +130,7 @@ Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas
 
   Para fazer isso, selecione a opção **[!UICONTROL Schedule multiple waves of the same size]**. Insira **[!UICONTROL 20]** como o tamanho da onda e **[!UICONTROL 1d]** no campo **[!UICONTROL Period]**.
 
-  ![](assets/delivery-waves-ex-call-center.png)
+  ![Caixa de diálogo de definição de ondas com ondas de tamanho igual a 20 mensagens e um período 1d](assets/delivery-waves-ex-call-center.png)
 
 ## Confirmar o delivery {#confirm-delivery}
 
@@ -145,11 +145,11 @@ Para fazer isso, siga as etapas abaixo.
 
 1. Clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [Análise de entrega](delivery-analysis.md).
 
-   ![](assets/delivery-send-analyze.png)
+   ![Enviar para a caixa de diálogo principal do destino de entrega com a opção Entregar assim que possível selecionada e o botão Analisar realçado](assets/delivery-send-analyze.png)
 
 1. Depois de concluído, clique em **[!UICONTROL Confirm delivery]** para iniciar a entrega de mensagens.
 
-   ![](assets/delivery-send-confirm.png)
+   ![Enviar para a caixa de diálogo principal do destino de entrega após a análise, com o botão Confirmar entrega realçado](assets/delivery-send-confirm.png)
 
 1. Você pode fechar o assistente de entrega e controlar a execução da entrega a partir da guia **[!UICONTROL Delivery]**, acessível por meio do detalhe desta entrega ou pela lista de entregas.
 
@@ -168,7 +168,7 @@ Para fazer isso, siga as etapas abaixo.
 
 1. Especifique uma data inicial no campo **[!UICONTROL Contact date]**.
 
-   ![](assets/delivery-send-postpone.png)
+   ![Enviar para a caixa de diálogo principal do destino de entrega com Adiar a entrega selecionada e uma data de contato inserida](assets/delivery-send-postpone.png)
 
 1. Inicie a análise de delivery e confirme o envio do delivery. No entanto, o envio da entrega não será iniciado até a data indicada no campo **[!UICONTROL Contact date]**.
 
@@ -176,13 +176,13 @@ Para fazer isso, siga as etapas abaixo.
    >
    >Depois de iniciar a análise, a data de contato que você definiu será corrigida. Se você modificar essa data, será necessário reiniciar a análise para que suas modificações sejam levadas em conta.
 
-   ![](assets/delivery-send-scheduled.png)
+   ![Mensagem de conclusão da preparação da entrega mostrando a Entrega agendada para data e o botão Confirmar entrega](assets/delivery-send-scheduled.png)
 
 Na lista de entrega, a entrega será exibida com o status **[!UICONTROL Pending]**.
 
 O agendamento pode ser configurado de forma ascendente através do botão **[!UICONTROL Scheduling]** da entrega.
 
-![](assets/delivery-scheduling-button.png)
+![Caixa de diálogo de agendamento aberta a partir do botão Agendamento, com a opção Agendar entrega (sem execução automática) selecionada](assets/delivery-scheduling-button.png)
 
 Isso permite adiar a entrega para uma data posterior ou salvar a entrega no calendário provisional.
 
@@ -198,7 +198,7 @@ Datas e horas são expressas no fuso horário do operador atual. A lista suspens
 
 Por exemplo, se você agendar uma entrega para que ela seja executada automaticamente às 8h, horário de Londres, a hora será convertida automaticamente para o fuso horário selecionado:
 
-![](assets/delivery-schedule-time-zone.png)
+![Caixa de diálogo de agendamento com a lista suspensa Fuso horário aberta para converter a data de contato em outro fuso horário](assets/delivery-schedule-time-zone.png)
 
 <!--
 ## Adjust delivery failure management {#delivery-failure-management}

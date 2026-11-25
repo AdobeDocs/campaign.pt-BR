@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 40%
+source-wordcount: '689'
+ht-degree: 37%
 ---
 # Usar blocos de personalização{#personalization-blocks}
 
@@ -44,7 +44,7 @@ Para inserir um bloco de personalização em uma mensagem, siga as etapas abaixo
 1. No editor de conteúdo do assistente de entrega, clique no ícone de personalização e selecione o menu **[!UICONTROL Include]**.
 1. Selecione um bloco de personalização na lista ou clique no menu **[!UICONTROL Other...]** para acessar a lista completa.
 
-   ![](assets/perso-content-block.png)
+   ![Incluir submenu no menu de personalização listando blocos, como Link para mirror page, com Outros... no final](assets/perso-content-block.png)
 
 1. O bloco de personalização é então inserido como um script. Ele é adaptado automaticamente ao perfil do destinatário quando a personalização é gerada.
 1. Navegue até a guia **[!UICONTROL Preview]** e selecione um destinatário para exibir o conteúdo deste bloco para um destinatário específico.
@@ -82,11 +82,11 @@ Para criar um bloco de personalização, siga as etapas abaixo:
 1. Navegue até a pasta **[!UICONTROL Resources > Campaign Management > Personalization blocks]** do explorador do Campaign.
 1. Acima da lista de blocos internos, clique em **[!UICONTROL New]**.
 
-   ![](assets/perso-new-block.png)
+   ![Lista de blocos de personalização no explorador do Campaign com uma seta no botão Novo](assets/perso-new-block.png)
 
 1. Preencha as configurações do bloco de personalização:
 
-   ![](assets/perso-custom-block.png)
+   ![Novo formulário de bloco de personalização com Rótulo, Nome interno, Tipo de conteúdo e conteúdo de script para um link para opção de não participação](assets/perso-custom-block.png)
 
    * Insira o rótulo do bloco. Esse rótulo é exibido na janela de inserção do campo de personalização.
    * Selecione um tipo de conteúdo de **Entrega**.
@@ -100,4 +100,4 @@ Depois de salvo, o novo bloco de personalização fica disponível no editor de 
 
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo de sua entrega de email no vídeo a seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449011?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

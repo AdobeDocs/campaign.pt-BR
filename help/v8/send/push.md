@@ -33,10 +33,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 54%
+source-wordcount: '1158'
+ht-degree: 46%
 ---
 # Criar e enviar notificações por push{#push-notifications-create}
 
@@ -59,7 +59,7 @@ Esta seção detalha os elementos específicos para o delivery de notificações
 
 Para criar uma nova entrega, navegue até a guia **[!UICONTROL Campaigns]**, clique em **[!UICONTROL Deliveries]** e no botão **[!UICONTROL Create]** acima da lista de entregas existentes.
 
-![](assets/delivery_step_1.png)
+![Lista de entregas na guia Campanhas com o link Entregas realçado e uma seta no botão Criar](assets/delivery_step_1.png)
 
 
 Por padrão, o Adobe Campaign vem com dois templates de delivery: um para o iOS, um para o Android. É possível duplicá-los para definir suas próprias configurações. As etapas para configurar um delivery por push com base nesses modelos estão detalhadas abaixo.
@@ -72,19 +72,19 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
 1. Selecione o modelo de entrega **[!UICONTROL Deliver on iOS]**.
 
-   ![](assets/push_ios_1.png)
+   ![Lista de modelos de entrega com Deliver on iOS (ios) selecionada antes de clicar em Continuar](assets/push_ios_1.png)
 
 1. Para definir o target da notificação, clique no link **[!UICONTROL To]** e, em seguida, clique em **[!UICONTROL Add]**.
 
-   ![](assets/push_ios_2.png)
+   ![Selecione a caixa de diálogo de destino com o mapeamento de aplicativos do assinante e o botão Adicionar na população do destino de entrega](assets/push_ios_2.png)
 
 1. Selecione **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, o serviço relevante para o aplicativo móvel e a versão iOS do aplicativo.
 
-   ![](assets/push_ios_3.png)
+   ![Etapa de Tipo de Destino com Assinantes de um aplicativo iOS para dispositivos móveis (iPhone, iPad) selecionada](assets/push_ios_3.png)
 
 1. Escolha seu **[!UICONTROL Notification type]**: **[!UICONTROL General notification (Alert, Sound, Badge)]** ou **[!UICONTROL Silent notification]**.
 
-   ![](assets/push_ios_4.png)
+   ![Guia Geral com Tipo de Notificação: Notificação Geral (Alerta, Som, Medalha) ou Notificação Silenciosa](assets/push_ios_4.png)
 
    >[!NOTE]
    >
@@ -112,10 +112,10 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
      >[!NOTE]
      > 
-     >Os sons devem ser incluídos no aplicativo e definidos quando o serviço é criado.
+     >Os sons devem ser incluídos no aplicativo e definidos quando o serviço for criado.
      >
 
-   ![](assets/push_ios_5.png)
+   ![Guia Som e Medalha com valor de Medalha, Medalha Limpa, Modo de Alerta Crítico e configurações de Nome de som](assets/push_ios_5.png)
 
 1. Na guia **[!UICONTROL Application variables]**, suas **[!UICONTROL Application variables]** são adicionadas automaticamente. Elas permitem definir o comportamento da notificação: por exemplo, é possível configurar uma tela de aplicativo específica para ser exibida quando o usuário ativar a notificação.
 
@@ -127,7 +127,7 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
    * **[!UICONTROL Category]**: nome da ID da categoria que exibirá botões de ação. Essas notificações fornecem ao usuário uma maneira mais rápida de realizar tarefas diferentes em resposta a uma notificação sem abrir o aplicativo ou navegar até ele.
 
-   ![](assets/push_ios_6.png)
+   ![Guia Avançado com campos Conteúdo mutável, Thread-id e Categoria realçados](assets/push_ios_6.png)
 
 1. Para notificações sensíveis ao tempo, é possível especificar as seguintes opções:
 
@@ -147,11 +147,11 @@ Para enviar notificações em dispositivos iOS, siga estas etapas:
 
    * **[!UICONTROL Relevance score]**: defina uma pontuação de relevância de 0 a 100. O sistema usa essa opção para classificar as notificações no resumo de notificações.
 
-   ![](assets/push_ios_7.png)
+   ![Guia Avançado com ID de Conteúdo do Target, imagem de Inicialização, nível de Interrupção e pontuação de Relevância preenchida](assets/push_ios_7.png)
 
 1. Quando a notificação estiver configurada, clique na guia **[!UICONTROL Preview]** para visualizar a notificação.
 
-   ![](assets/push-ios-preview.png)
+   ![Guia Visualização mostrando o título e a mensagem da notificação por push do iOS em um modelo de telefone](assets/push-ios-preview.png)
 
 
 >[!TAB Android]
@@ -160,7 +160,7 @@ Para enviar notificações em dispositivos Android, siga estas etapas:
 
 1. Selecione o modelo de entrega **[!UICONTROL Deliver on Android (android)]**.
 
-   ![](assets/push-template-android.png)
+   ![Lista de modelos de entrega com Deliver on Android (android) selecionado antes de clicar em Continuar](assets/push-template-android.png)
 
    >[!NOTE]
    > 
@@ -169,15 +169,15 @@ Para enviar notificações em dispositivos Android, siga estas etapas:
 
 1. Para definir o target da notificação, clique no link **[!UICONTROL To]** e, em seguida, clique em **[!UICONTROL Add]**.
 
-   ![](assets/push-android-select-target.png)
+   ![Selecione a caixa de diálogo de destino com o mapeamento de aplicativos do assinante e o botão Adicionar para a entrega do Android](assets/push-android-select-target.png)
 
 1. Selecione **[!UICONTROL Subscribers of an Android mobile application]**, escolha o serviço relevante para seu aplicativo móvel (Neotrips, neste caso) e selecione a versão Android do aplicativo.
 
-   ![](assets/push-android-subscribers.png)
+   ![Etapa de Tipo de Destino com Assinantes de um aplicativo Android para dispositivos móveis selecionada](assets/push-android-subscribers.png)
 
 1. Em seguida, insira o conteúdo da notificação.
 
-   ![](assets/push-android-content.png)
+   ![Guia Conteúdo de entrega do Android com opções de Tipo de Mensagem, texto de mensagem e tabela Variáveis de aplicativo](assets/push-android-content.png)
 
 1. Clique no ícone **[!UICONTROL Insert emoticon]** para inserir emoticons à notificação via push.
 

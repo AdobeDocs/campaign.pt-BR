@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 26%
+source-wordcount: '704'
+ht-degree: 22%
 ---
 # Criar e enviar emails
 
@@ -48,7 +48,7 @@ Saiba mais sobre as principais etapas para criar e configurar uma entrega no [Cr
 
 Crie emails personalizados e contextualmente relevantes que sejam consistentes com o restante da experiência do cliente.
 
-![](assets/new-email-content.png)
+![Editor de entrega de email com um assunto, conteúdo do HTML e a lista de URLs rastreadas exibida abaixo](assets/new-email-content.png)
 
 
 No exemplo a seguir, você aprenderá as etapas para criar um delivery de email no Adobe Campaign que contenha dados personalizados, links para um URL externo e um link para a mirror page.
@@ -57,19 +57,19 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
    Para criar uma nova entrega, navegue até a guia **Campanhas**, clique em **Entregas** e clique no botão **Criar** acima da lista de entregas existentes.
 
-   ![](assets/delivery_step_1.png)
+   ![Lista de entregas na guia Campanhas com o nó Entregas e o botão Criar realçado](assets/delivery_step_1.png)
 
 1. **Selecione o modelo**
 
    Selecione um modelo da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus destinatários, no entanto, esse título será exibido na lista de entregas. Clique em **[!UICONTROL Continue]**.
 
-   ![](assets/dce_delivery_model.png)
+   ![Nova caixa de diálogo de entrega com o modelo de entrega de email selecionado e um rótulo inserido, em seguida, Continuar](assets/dce_delivery_model.png)
 
 1. **Importar seu conteúdo**
 
    Clique na guia **Source** para colar o conteúdo do HTML.
 
-   ![](assets/paste-content.png)
+   ![Editor de entrega de email com a guia Source aberta mostrando o código HTML a ser colado](assets/paste-content.png)
 
    >[!NOTE]
    >
@@ -81,11 +81,11 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
      Para inserir o nome e o sobrenome dos perfis direcionados no conteúdo da mensagem, coloque o cursor onde deseja inseri-los, clique no último ícone na barra de ferramentas, clique em **[!UICONTROL Include]** e selecione **[!UICONTROL Greetings]**.
 
-     ![](assets/include-greetings.png)
+     ![Menu do Personalization com Incluir e, em seguida, com Saudações selecionadas no conteúdo do HTML de email](assets/include-greetings.png)
 
      Navegue até a guia de visualização para verificar a personalização selecionando um recipient.
 
-     ![](assets/perso-check.png)
+     ![Guia Visualizar com um destinatário selecionado e a saudação personalizada destacada no texto do email](assets/perso-check.png)
 
      Saiba mais sobre as opções de personalização em [Introdução à personalização](personalize.md).
 
@@ -95,7 +95,7 @@ No exemplo a seguir, você aprenderá as etapas para criar um delivery de email 
 
      Insira a URL do link no campo **URL** usando o seguinte formato **https://www.myURL.com** e, em seguida, confirme.
 
-     ![](assets/add-a-link.png)
+     ![Caixa de diálogo Adicionar link de hipertexto com uma URL inserida e o botão Adicionar sobre o texto selecionado](assets/add-a-link.png)
 
    * Adicionar uma mirror page
 

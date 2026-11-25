@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 75%
+source-wordcount: '621'
+ht-degree: 70%
 ---
 # Configurar links rastreados {#how-to-configure-tracked-links}
 
@@ -45,11 +45,11 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
 
 1. Selecione a opção **[!UICONTROL Display URLs]** na seção inferior do assistente de entrega, abaixo do conteúdo da mensagem.
 
-   ![](assets/s_ncs_user_email_del_display_urls.png)
+   ![Delivery de conteúdo do HTML com a opção Exibir URLs abaixo do conteúdo, ainda não selecionada](assets/s_ncs_user_email_del_display_urls.png)
 
    Ao selecionar um dos URLs rastreados na lista, ele é realçado no conteúdo da entrega, exceto pelo link na mirror page e no link de cancelamento de subscrição fornecido como padrão.
 
-   ![](assets/s_ncs_user_email_del_show_urls.png)
+   ![Lista de URLs rastreadas com uma URL selecionada e seu link correspondente realçado no conteúdo da entrega](assets/s_ncs_user_email_del_show_urls.png)
 
 1. Para cada URL da mensagem, selecione se deseja ativar ou não o rastreamento.
 
@@ -67,7 +67,7 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
 
 1. Se necessário, altere o modo de rastreamento. Selecione um novo modo na coluna **[!UICONTROL Tracking]** que corresponde ao link direcionado, conforme abaixo:
 
-   ![](assets/s_ncs_user_select_tracking_mode.png)
+   ![Lista suspensa da coluna de rastreamento listando os modos de rastreamento de uma URL, de Habilitado a Mirror page](assets/s_ncs_user_select_tracking_mode.png)
 
    Para cada URL individual, é possível definir o modo de rastreamento para um destes valores:
 
@@ -88,8 +88,8 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
 * Colchetes [ ]
 * Chaves { }
 
-Neste exemplo, o URL https://www.adobe.com/br é seguido por um ponto e vírgula. O ponto e vírgula pode ser interpretado pelos clientes de email do destinatário como parte do URL. Isso pode quebrar o link. Para evitar esse problema, é possível colocar o URL em delimitadores de uma destas maneiras:
+Neste exemplo, o URL https://www.adobe.com é seguido por um ponto e vírgula. O ponto e vírgula pode ser interpretado pelos clientes de email do destinatário como parte do URL. Isso pode quebrar o link. Para evitar esse problema, é possível colocar o URL em delimitadores de uma destas maneiras:
 
-* (https://www.adobe.com/br);
-* [https://www.adobe.com/br];
-* {https://www.adobe.com/br};
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};

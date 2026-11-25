@@ -28,9 +28,9 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '311'
 ht-degree: 0%
 ---
 # Monitorar e rastrear um SMS
@@ -47,25 +47,25 @@ Para acessar o painel, clique duas vezes no delivery na lista de delivery.
 
 Na guia **[!UICONTROL Summary]**, você tem os dados principais, como o número de mensagens processadas e o número de sucessos.
 
-![](assets/sms_summary.png){zoomable="yes"}
+![Guia Resumo do painel de entrega de SMS com mensagens a enviar, taxas de sucesso e processadas e status de entrega](assets/sms_summary.png){zoomable="yes"}
 
 Após o envio do SMS, a guia **[!UICONTROL SMS]**, que é sobre o conteúdo da entrega, não estará mais acessível para alteração.
 
 Na guia **[!UICONTROL Delivery]**, você tem as informações sobre os logs de entrega. Para cada endereço contatado, você pode ver se o SMS foi enviado ou não
 
-![](assets/sms_deliverylogs.png){zoomable="yes"}
+![Lista de logs da guia Entrega mostrando, para cada endereço contatado, se o SMS foi enviado, com status e motivo](assets/sms_deliverylogs.png){zoomable="yes"}
 
 Você pode ver na guia **[!UICONTROL Exclusions]** os detalhes sobre por que alguns endereços são excluídos do público-alvo.
 
-![](assets/sms_exclusions.png){zoomable="yes"}
+![Guia de entrega - Lista de guias de exclusões de endereços ignorados com o motivo; por exemplo, endereço ou Duplo](assets/sms_exclusions.png){zoomable="yes"}
 
 A guia **[!UICONTROL Tracking]** é sobre o rastreamento. Abaixo o exemplo de um URL rastreado no conteúdo do SMS.
 
-![](assets/sms_trackinglogs.png){zoomable="yes"}
+![Lista de URLs da guia de rastreamento mostrando uma URL rastreada do conteúdo de SMS com seu rótulo, tipo e URL de origem](assets/sms_trackinglogs.png){zoomable="yes"}
 
 E por último, a guia **[!UICONTROL Audit]** com todos os detalhes durante a inicialização da entrega:
 
-![](assets/sms_audit.png){zoomable="yes"}
+![Guia Auditoria Log listando as mensagens registradas durante a inicialização da entrega, com colunas de data e mensagem](assets/sms_audit.png){zoomable="yes"}
 
 ## Entender as falhas de SMS
 

@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 31%
+source-wordcount: '1417'
+ht-degree: 30%
 ---
 # Quarentena {#quarantine-management}
 
@@ -62,7 +62,7 @@ Por outro lado, **perfis** podem estar no **incluo na lista de bloqueios**, como
 
 >[!NOTE]
 >
->Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/pt-br/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
+>Os recipients não inscritos por meio do método [&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} não são enviados para quarentena. Eles têm a assinatura cancelada do [serviço](../start/subscriptions.md) associado à entrega ou são enviados para o arquivo (visível na seção **[!UICONTROL No longer contact]** do perfil) se nenhum serviço tiver sido definido para a entrega.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -109,7 +109,7 @@ Saiba mais sobre relatórios de entrega em [Introdução às ferramentas de rela
 
 Para exibir a lista de endereços em quarentena **para toda a plataforma**, os administradores do Campaign podem navegar até **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**. Esta seção lista os elementos colocados em quarentena para os canais de **email**, **SMS** e **Notificação por push**.
 
-![](assets/tech-quarantine.png)
+![Registro de endereço em quarentena com status de Quarentena, motivo do erro, texto do erro e ação de entrega](assets/tech-quarantine.png)
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ Para exibir a lista de endereços em quarentena **para toda a plataforma**, os a
 
 Além disso, o relatório interno **[!UICONTROL Non-deliverables and bounces]**, disponível na seção **Relatórios** desta home page, exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e um detalhamento de falha por domínio. Você pode filtrar os dados de um delivery específico ou personalizar este relatório conforme necessário.
 
-Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre endereços rejeitados no [Manual de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### Endereço de email na quarentena {#quarantined-recipient}
 
@@ -131,7 +131,7 @@ Para fazer isso, selecione o perfil do destinatário e clique na guia **[!UICONT
 
 Para cada pasta, você pode exibir apenas os recipients cujo endereço de email está em quarentena, com o filtro integrado **[!UICONTROL Quarantined email address]**, conforme abaixo:
 
-![](assets/quarantine-filter.png)
+![Menu Filtros da lista de destinatários com o filtro interno Endereço de email em quarentena realçado](assets/quarantine-filter.png)
 
 
 ## Remover um endereço em quarentena {#remove-a-quarantined-address}
@@ -156,7 +156,7 @@ O status muda então para **[!UICONTROL Valid]**.
 
 Você também pode remover manualmente um endereço da lista da quarentena. Para remover manualmente um endereço da quarentena, você pode alterar seu status para **[!UICONTROL Valid]** no nó **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
 
-![](assets/tech-quarantine-status.png)
+![Registro de endereço com a lista suspensa Status aberta e o status Válido selecionado para removê-lo da quarentena](assets/tech-quarantine-status.png)
 
 ### Atualizações em massa {#unquarantine-bulk}
 

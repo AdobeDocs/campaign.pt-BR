@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 15%
+source-wordcount: '1651'
+ht-degree: 13%
 ---
 # Configuração de notificação por push revisada {#push-notifications-config}
 
@@ -64,7 +64,7 @@ O registro da credencial de push do aplicativo móvel é necessário para autori
 
 1. Clique em **[!UICONTROL Create App Surface]** para criar uma nova configuração.
 
-   ![](assets/push-config-1.png)
+   ![Lista de Superfícies de Aplicativo na Coleção de Dados com o botão Criar Superfície de Aplicativo realçado](assets/push-config-1.png)
 
 1. Insira um **[!UICONTROL Name]** para a configuração.
 
@@ -74,7 +74,7 @@ O registro da credencial de push do aplicativo móvel é necessário para autori
 
 >[!TAB iOS]
 
-![](assets/push-config-2.png)
+![Criar superfície de aplicativo para o Apple iOS: ID do aplicativo, opção de credenciais de push e zona de destino do arquivo de chave p8](assets/push-config-2.png)
 
 1. Insira a **Id do Pacote** do aplicativo móvel no campo **[!UICONTROL App ID (iOS Bundle ID)]**.
 
@@ -96,7 +96,7 @@ O registro da credencial de push do aplicativo móvel é necessário para autori
 
 >[!TAB Android]
 
-![](assets/push-config-3.png)
+![Criar superfície de aplicativo para o Android: ID do aplicativo (nome de pacote do Android), opção de Credenciais de push e zona de soltar da chave JSON](assets/push-config-3.png)
 
 1. Forneça o **[!UICONTROL App ID (Android package name)]**. Normalmente, o nome do pacote é a ID do aplicativo no arquivo `build.gradle`.
 
@@ -120,7 +120,7 @@ Para criar um serviço para enviar notificações por push, siga as etapas abaix
 
 1. Navegue até a guia **[!UICONTROL Profiles and Targets > Services and Subscriptions]** e clique em **[!UICONTROL Create]**.
 
-   ![](assets/push-config-4.png){width="800"}
+   ![Nova caixa de diálogo de serviço com Rótulo, Nome interno, Tipo de aplicativo móvel e Mapeamento de destino de aplicativos do assinante](assets/push-config-4.png){width="800"}
 
 1. Insira um **[!UICONTROL Label]** e um **[!UICONTROL Internal name]**, e selecione um tipo **[!UICONTROL Mobile application]**.
 
@@ -130,7 +130,7 @@ Para criar um serviço para enviar notificações por push, siga as etapas abaix
 
 1. Em seguida, use o ícone **[!UICONTROL Add]** à direita para definir os aplicativos móveis que usam esse serviço.
 
-   ![](assets/push-config-5.png)
+   ![Caixa de diálogo de serviço com o ícone Adicionar realçado para definir os aplicativos móveis que usam o serviço](assets/push-config-5.png)
 
 ### Criar um aplicativo para dispositivos móveis {#create-sapp}
 
@@ -144,17 +144,17 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
 
 1. Em seu Serviço, clique em **[!UICONTROL Add]** e selecione **[!UICONTROL Create an iOS application]**. Clique em **[!UICONTROL Next]**.
 
-   ![](assets/push-config-6.png)
+   ![Assistente de criação de aplicativo móvel com a opção Criar um aplicativo iOS selecionada](assets/push-config-6.png)
 
 1. Na janela **[!UICONTROL Launch app configurations list]**, selecione a superfície App criada anteriormente nesta seção. Clique em **[!UICONTROL Next]**.
 
-   ![](assets/push-config-7.png)
+   ![Iniciar lista de configurações do aplicativo listando a superfície do aplicativo de demonstração a ser selecionada](assets/push-config-7.png)
 
 1. (opcional) Você pode enriquecer um conteúdo de mensagem de push com alguns **[!UICONTROL Application variables]**. Eles são totalmente personalizáveis e uma parte da carga da mensagem é enviada para o dispositivo móvel.
 
    No exemplo abaixo, as variáveis **mediaURl** e **mediaExt** são adicionadas para criar notificações por push avançadas e, em seguida, fornecer ao aplicativo a imagem que será exibida na notificação.
 
-   ![](assets/push-config-8.png)
+   ![Parâmetros gerais com as variáveis de aplicativo mediaURL e mediaExt adicionadas](assets/push-config-8.png)
 
 1. Navegue até a guia **[!UICONTROL Subscription parameters]** para definir o mapeamento com uma extensão do esquema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**.
 
@@ -175,7 +175,7 @@ Para criar um aplicativo para dispositivos iOS, siga estas etapas:
    >
    > Não é possível usar o mesmo certificado para a versão de desenvolvimento (sandbox) e a versão de produção do aplicativo.
 
-   ![](assets/push-config-9.png)
+   ![Etapa do aplicativo de desenvolvimento com os campos Chave de integração e Ícone do aplicativo para iOS](assets/push-config-9.png)
 
 1. Selecione o ícone do campo **[!UICONTROL Application icon]** para personalizar o aplicativo para dispositivos móveis em seu serviço.
 
@@ -191,11 +191,11 @@ Para criar um aplicativo para dispositivos Android, siga estas etapas:
 
 1. Em seu Serviço, clique em **[!UICONTROL Add]** e selecione **[!UICONTROL Create an Android application]**. Clique em **[!UICONTROL Next]**.
 
-   ![](assets/push-config-10.png)
+   ![Assistente de criação de aplicativo móvel com a opção Criar um aplicativo Android selecionada](assets/push-config-10.png)
 
 1. Na janela **[!UICONTROL Launch app configurations list]**, selecione a superfície de Aplicativo criada nesta seção e clique em **[!UICONTROL Next]**.
 
-   ![](assets/push-config-11.png)
+   ![Lista de Configurações de Aplicativo de Inicialização listando a Superfície de Aplicativo de Aplicativo de Demonstração para o aplicativo Android](assets/push-config-11.png)
 
 1. A chave de integração é específica para cada aplicativo. Ele vincula o aplicativo móvel ao Adobe Campaign e será usado ao configurar a extensão do Campaign.
 
@@ -207,7 +207,7 @@ Para criar um aplicativo para dispositivos Android, siga estas etapas:
    >
    > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da string, mas precisa ser exatamente a mesma especificada no SDK.
 
-   ![](assets/push-config-12.png)
+   ![Parâmetros gerais do Android com a chave de Integração, o ícone Aplicativo e as variáveis Aplicativo](assets/push-config-12.png)
 
 1. Selecione o ícone do campo **[!UICONTROL Application icon]** para personalizar o aplicativo para dispositivos móveis em seu serviço.
 
@@ -234,11 +234,11 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
 1. Clique em **[!UICONTROL New Property]**.
 
-   ![](assets/push-config-13.png)
+   ![Lista de Propriedades da Marca na Coleção de Dados com o botão Nova Propriedade realçado](assets/push-config-13.png)
 
 1. Digite um nome para a propriedade e selecione **[!UICONTROL Mobile]** como plataforma.
 
-   ![](assets/push-config-14.png)
+   ![Criar formulário de Propriedade com um nome inserido e a plataforma Móvel selecionada](assets/push-config-14.png)
 
 1. Clique em **[!UICONTROL Save]** para criar a propriedade móvel.
 
@@ -246,18 +246,18 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
 1. No painel de propriedades móveis, acesse o menu **[!UICONTROL Extensions]** e depois a guia **[!UICONTROL Catalog]**.
 
-   ![](assets/push-config-15.png)
+   ![Página de extensões de propriedade móvel com a guia Catálogo realçada](assets/push-config-15.png)
 
 1. Instale a extensão **[!DNL Adobe Campaign Classic]**. [Saiba mais sobre a extensão do Campaign](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configure-campaign-classic-extension)
 
-   ![](assets/push-config-16.png)
+   ![Catálogo de extensões com o botão Instalar realçado na extensão do Adobe Campaign Classic](assets/push-config-16.png)
 
 1. Preencha os detalhes da instância:
 
    * As URLs **[!UICONTROL Registration endpoint]** ou **[!UICONTROL Tracking endpoint]** podem ser encontradas no menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Deployment wizard]** no Campaign.
    * **[!UICONTROL Integration keys]** pode ser encontrado no aplicativo móvel configurado em [esta seção](#create-app).
 
-   ![](assets/push-config-17.png)
+   ![Página Instalar Extensão com pontos de extremidade de registro e rastreamento e chaves de integração do iOS e do Android](assets/push-config-17.png)
 
 1. Clique em **[!UICONTROL Save]**.
 

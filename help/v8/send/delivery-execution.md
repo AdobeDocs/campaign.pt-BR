@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 54%
+source-wordcount: '820'
+ht-degree: 51%
 ---
 # Enviar e monitorar mensagens transacionais {#delivery-execution}
 
@@ -69,9 +69,9 @@ To monitor the activity and running of the execution instance(s), see [Transacti
 
 O Adobe Campaign oferece vários relatórios que permitem controlar a atividade e suavizar a execução das instâncias de execução.
 
-É possível acessar esses relatórios do Message Center na guia **[!UICONTROL Reports]**&#x200B;**da instância de controle**.
+É possível acessar esses relatórios do Message Center na guia **[!UICONTROL Reports]****da instância de controle**.
 
-![](assets/mc-reports.png)
+![Página de relatórios globais na guia Relatórios com os três relatórios do Centro de Mensagens destacados](assets/mc-reports.png)
 
 ### Histórico de eventos do Centro de mensagens {#history-events}
 
@@ -86,7 +86,7 @@ Você pode exibir os dados específicos para cada tipo de evento, por período d
 
 O relatório **[!UICONTROL Message Center processing time]** exibe os principais indicadores relacionados à fila em tempo real. Este relatório também pode ser acessado através da guia **[!UICONTROL Monitoring]** na instância de controle.
 
-![](assets/mc-processing-time-report.png)
+![Relatório de tempo de processamento do Centro de Mensagens com filtros de canal, instância e período, indicadores e gráfico](assets/mc-processing-time-report.png)
 
 Você pode exibir estatísticas globais ou aquelas relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico.
 
@@ -135,4 +135,4 @@ Para fazer isso, siga as etapas abaixo:
 1. Abra o assistente de implantação na **instância de execução** e navegue até a página **[!UICONTROL Message Center]**.
 1. Use as setas para modificar os limites.
 
-   ![](assets/mc-thresholds.png)
+   ![Assistente de configuração do Centro de Mensagens com configurações da instância de execução e limites de aviso e alerta](assets/mc-thresholds.png)

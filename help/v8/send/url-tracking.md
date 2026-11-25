@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 89%
+source-wordcount: '212'
+ht-degree: 71%
 ---
 # Configurar opções de rastreamento de URL {#personalizing-url-tracking}
 
@@ -45,7 +45,7 @@ As configurações de rastreamento de mensagem avançadas são acessíveis por m
 >
 >A gestão de imagens em emails também é configurada nessa janela. Consulte [Adicionar imagens](defining-the-email-content.md#adding-images).
 
-![](assets/s_ncs_user_email_del_tracking_ico.png)
+![Entrega de email com o ícone de Imagens e Acompanhamento realçado na barra de ferramentas](assets/s_ncs_user_email_del_tracking_ico.png)
 
 É possível configurar as seguintes opções de rastreamento:
 
@@ -57,7 +57,7 @@ As configurações de rastreamento de mensagem avançadas são acessíveis por m
 
 * A opção Ativar/desativar rastreamento para mensagem é aberta.
 
-![](assets/s_ncs_user_email_del_tracking_param.png)
+![Janela de rastreamento e imagens, guia Rastreamento, com as opções Ativar rastreamento e Abrir rastreamento, e a árvore de URLs rastreadas](assets/s_ncs_user_email_del_tracking_param.png)
 
 Os URLs rastreados são listados na janela central em forma de árvore.
 
@@ -65,7 +65,7 @@ Os URLs rastreados são listados na janela central em forma de árvore.
 
 A guia **[!UICONTROL Advanced]** permite personalizar as fórmulas de cálculo dos URLs rastreados e de abertura.
 
-![](assets/s_ncs_user_email_del_tracking_param_adv.png)
+![Janela Imagens e Acompanhamento, guia Avançado, com as fórmulas de cálculo URL rastreada e Abrir](assets/s_ncs_user_email_del_tracking_param_adv.png)
 
 >[!CAUTION]
 >

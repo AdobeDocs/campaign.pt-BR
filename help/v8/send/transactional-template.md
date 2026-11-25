@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 53%
+source-wordcount: '1491'
+ht-degree: 42%
 ---
 # Criar e publicar seu modelo para mensagens transacionais{#template-transactional-messages}
 
@@ -50,16 +50,16 @@ Para criar um template de mensagem, siga as etapas abaixo:
 1. Acesse a pasta **[!UICONTROL Message Center >Transactional message templates]** da árvore do Adobe Campaign.
 1. Clique com o botão direito do mouse na lista de modelos de mensagem transacional e selecione **[!UICONTROL New]** no menu suspenso ou clique no botão **[!UICONTROL New]** acima da lista de modelos de mensagem transacional.
 
-   ![](assets/messagecenter_create_model_001.png)
+   ![Novo botão na lista de modelos de mensagem transacional, usado para criar um modelo de mensagem](assets/messagecenter_create_model_001.png)
 
 1. Na janela da entrega, selecione o modelo da entrega apropriado para o canal que deseja usar.
 
-   ![](assets/messagecenter_create_model_002.png)
+   ![Lista de modelos de entrega com modelos de mensagem transacional para Android, Correspondência direta, Email, iOS e Celular](assets/messagecenter_create_model_002.png)
 
 1. Altere seu rótulo se necessário.
 1. Selecione o tipo de evento que corresponda à mensagem a ser enviada. Os tipos de evento destinados a serem processados pelo Adobe Campaign devem ser criados previamente. [Saiba mais](../send/transactional.md#create-event-types)
 
-   ![](assets/messagecenter_create_model_003.png)
+   ![Menu suspenso tipo de evento na nova janela de entrega de mensagens transacionais, listando tipos de evento de compra e comando](assets/messagecenter_create_model_003.png)
 
    >[!CAUTION]
    >
@@ -80,7 +80,7 @@ A definição do conteúdo da mensagem transacional é a mesma de todos os deliv
 
 Após definir o conteúdo da mensagem, você pode integrar as informações do evento no corpo da mensagem e personalizá-lo. As informações do evento são inseridas no corpo do texto graças às tags de personalização.
 
-![](assets/messagecenter_create_content.png)
+![Editor de conteúdo do HTML com o menu Mensagem aberto para inserir campos de personalização em uma mensagem transacional](assets/messagecenter_create_content.png)
 
 * Todos os campos de personalização vêm da carga.
 * É possível referenciar um ou vários blocos de personalização em uma mensagem transacional. <!--The block content will be added to the delivery content during the publication to the execution instance.-->
@@ -91,11 +91,11 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 1. Insira o corpo da mensagem.
 1. No corpo do texto, insira a tag usando os menus **[!UICONTROL Real time events>Event XML]**.
 
-   ![](assets/messagecenter_create_custo_1.png)
+   ![Menu de eventos em tempo real com XML de evento selecionado para inserir uma marca de personalização de evento no conteúdo HTML](assets/messagecenter_create_custo_1.png)
 
 1. Preencha a tag usando a seguinte sintaxe: **nome do elemento**.@**nome do atributo**, conforme mostrado abaixo.
 
-   ![](assets/messagecenter_create_custo_2.png)
+   ![Marcas de personalização de eventos no conteúdo do HTML usando o nome do elemento e a sintaxe do atributo, uma marca sublinhada](assets/messagecenter_create_custo_2.png)
 
 ## Testar o modelo de mensagem transacional {#test-message-template}
 
@@ -105,23 +105,23 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
 
 1. No modelo de mensagem transacional, clique na guia **[!UICONTROL Seed addresses]** e no botão **[!UICONTROL Add]**.
 
-   ![](assets/messagecenter_create_seed_1.png)
+   ![Guia Seed addresses do modelo com o botão Adicionar realçado](assets/messagecenter_create_seed_1.png)
 
 1. Atribua um rótulo a ele para facilitar a seleção posteriormente e, em seguida, insira o seed address (email ou celular, dependendo do canal de comunicação).
 
 1. Insira o identificador externo: este campo opcional permite inserir uma chave de negócio (identificador exclusivo, nome + email etc.) que é comum a todas as aplicações do seu site e é usada para identificar seus perfis. Se esse campo também estiver presente no banco de dados de marketing do Adobe Campaign, você poderá reconciliar um evento com um perfil no banco de dados.
 
-   ![](assets/messagecenter_create_seed_2.png)
+   ![Caixa de diálogo de seed address com campos de Rótulo, Email e Identificador externo preenchidos](assets/messagecenter_create_seed_2.png)
 
-1. Inserir dados de teste. [Saiba mais sobre dados de personalização na documentação do Campaign Classic v7](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. Inserir dados de teste. [Saiba mais sobre dados de personalização na documentação do Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
-   ![](assets/messagecenter_create_custo_3.png)
+   ![Caixa de diálogo de seed address com dados de teste na seção Conteúdo, gravada como XML para o contexto de evento](assets/messagecenter_create_custo_3.png)
 
 1. Clique em **[!UICONTROL Ok]** para confirmar a criação do seed address.
 
 1. Repita o processo para criar quantos endereços forem necessários.
 
-   ![](assets/messagecenter_create_seed_6.png)
+   ![Guia Seed addresses listando três seed addresses criados para o modelo de Entrega de compra](assets/messagecenter_create_seed_6.png)
 
 Depois que os endereços forem criados, você poderá acessar sua pré-visualização e personalização.
 
@@ -150,11 +150,11 @@ Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-v
 
 1. No modelo de mensagem, clique na guia **[!UICONTROL Preview]** e selecione **[!UICONTROL A seed address]** na lista suspensa.
 
-   ![](assets/messagecenter_preview_1.png)
+   ![Guia Visualizar com o menu de personalização de teste aberto e um seed address selecionado](assets/messagecenter_preview_1.png)
 
 1. Selecione o seed address criado anteriormente para exibir a mensagem personalizada.
 
-   ![](assets/messagecenter_create_seed_7.png)
+   ![Caixa de diálogo de seleção de seed address e a visualização mostrando o conteúdo da mensagem personalizada](assets/messagecenter_create_seed_7.png)
 
 ### Enviar uma prova {#send-proof}
 
@@ -175,15 +175,15 @@ Para enviar a prova:
 1. Analise a entrega.
 1. Corrija qualquer erro e confirme a entrega.
 
-   ![](assets/messagecenter_send_proof_001.png)
+   ![Enviar uma caixa de diálogo de prova mostrando a conclusão da preparação da entrega com Mensagens a serem enviadas e o botão Confirmar entrega](assets/messagecenter_send_proof_001.png)
 
 1. Verifique se a mensagem foi entregue ao seed address e se seu conteúdo está em conformidade com sua configuração.
 
-   ![](assets/messagecenter_send_proof_002.png)
+   ![Email de prova recebido com valores de personalização dos dados de seed address sublinhados](assets/messagecenter_send_proof_002.png)
 
 É possível acessar as provas em cada modelo através da guia **[!UICONTROL Audit]**.
 
-![](assets/messagecenter_send_proof_003.png)
+![Guia Auditoria do modelo listando as provas enviadas, com suas mensagens para enviar, processadas e contagens de êxito](assets/messagecenter_send_proof_003.png)
 
 #### Transição do [!DNL Campaign Classic] v7 {#transition-from-v7}
 
@@ -193,7 +193,7 @@ No entanto, ao criar um modelo de mensagem transacional, o roteamento necessári
 
 Consequentemente, para enviar uma prova para seu modelo de mensagem transacional, você deve alterar o roteamento da entrega de email interna para a **conta de roteamento de mid-sourcing**.
 
-![](assets/messagecenter_send_proof_004.png)
+![Guia Geral de propriedades de entrega com o campo Roteamento e o roteamento de email usando a conta mid-sourcing selecionada](assets/messagecenter_send_proof_004.png)
 
 Depois que as provas forem enviadas, você deverá alterar o roteamento de volta para o delivery de email interno antes de publicar o template de mensagem transacional.
 
@@ -217,11 +217,11 @@ Publication lets you automatically create two message templates on the execution
 1. Selecione o modelo que deseja publicar<!--on your execution instances-->.
 1. Clique em **[!UICONTROL Publish]**.
 
-   ![](assets/messagecenter_publish_template.png)
+   ![A publicação da caixa de diálogo de modelo com Processo foi concluída e o log da publicação, depois de clicar em Publicar](assets/messagecenter_publish_template.png)
 
 Uma vez concluída a publicação, ambos os modelos de mensagem a serem aplicados em eventos batch e em tempo real são criados na pasta **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**.
 
-![](assets/messagecenter_deployed_model.png)
+![Modelo publicado na lista e seus dois modelos implantados na pasta Message Center Execution](assets/messagecenter_deployed_model.png)
 
 Depois que um modelo for publicado, se o evento correspondente for acionado, o Adobe Campaign<!--execution instance--> receberá o evento, o vinculará ao modelo transacional e enviará a mensagem transacional correspondente a cada destinatário.
 
@@ -250,7 +250,7 @@ Para desfazer a publicação de um modelo de mensagem transacional, siga as etap
 1. Clique em **[!UICONTROL Unpublish]**.
 1. Clique em **[!UICONTROL Start]**.
 
-![](assets/message-center-unpublish.png)
+![Desfazer a publicação da caixa de diálogo de modelo com o botão Iniciar, aberto no botão Desfazer publicação de um modelo publicado](assets/message-center-unpublish.png)
 
 O status do modelo de mensagem transacional muda de **[!UICONTROL Published]** para **[!UICONTROL Being edited]**.
 

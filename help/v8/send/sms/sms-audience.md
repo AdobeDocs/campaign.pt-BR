@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 17%
+source-wordcount: '524'
+ht-degree: 15%
 ---
 # Selecionar a audiência da entrega de SMS {#sms-audience}
 
@@ -45,7 +45,7 @@ Para selecionar o público do seu delivery, siga as etapas abaixo:
 
 1. Como o público é armazenado no banco de dados do Adobe Campaign, na guia **[!UICONTROL Main target]**, escolha a opção **[!UICONTROL Defined in the database]**.
 
-   ![](assets/audience_to.png){zoomable="yes"}
+   ![Caixa de diálogo Selecionar destino com a opção Definido no banco de dados selecionada, aberta no link Para](assets/audience_to.png){zoomable="yes"}
 
 1. Selecione o **[!UICONTROL Target mapping]** na lista suspensa. O target mapping padrão do Adobe Campaign é Destinatários, com base no esquema **[!UICONTROL nms:recipient]**.
 
@@ -55,7 +55,7 @@ Para selecionar o público do seu delivery, siga as etapas abaixo:
 
    Em seguida, é possível selecionar o tipo de filtragem a ser aplicado:
 
-   ![](assets/audience_filters.png){zoomable="yes"}
+   ![Caixa de diálogo Selecionar elemento de destino listando os tipos de destino e filtros de usuário a serem escolhidos](assets/audience_filters.png){zoomable="yes"}
 
    Para usar um tipo de destino, selecione-o e clique no botão **[!UICONTROL Next]**.
 
@@ -74,7 +74,7 @@ Para selecionar o público do seu delivery, siga as etapas abaixo:
 
 1. Insira o nome do público no campo de rótulo e clique no botão **[!UICONTROL Finish]** para validar o público.
 
-   ![](assets/audience_finish.png){zoomable="yes"}
+   ![A definição do elemento de destino com o rótulo móvel não está vazia, um filtro em Móvel e Término está realçado](assets/audience_finish.png){zoomable="yes"}
 
    Você pode adicionar quantos públicos-alvo forem necessários clicando novamente no botão **[!UICONTROL Add]**. Você também pode excluir alguns deles clicando na cruz localizada depois de seu rótulo.
 
@@ -88,7 +88,7 @@ Estas são as etapas:
 
 1. Escolha a opção **[!UICONTROL Defined in an external file]**.
 
-   ![](assets/audience_externalfile.png){zoomable="yes"}
+   ![Selecione a caixa de diálogo de destino com a opção Definido em um arquivo externo selecionada e o link de definição de formato de arquivo](assets/audience_externalfile.png){zoomable="yes"}
 
 1. Por padrão, os destinatários são importados do banco de dados. Nesse caso, você precisa selecionar o **[!UICONTROL Target mapping]**. Para obter mais informações sobre target mappings, consulte [Trabalhar com target mappings](../../audiences/target-mappings.md).
 

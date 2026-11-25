@@ -26,10 +26,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 53%
+source-wordcount: '744'
+ht-degree: 49%
 ---
 # Processamento de evento {#event-processing}
 
@@ -43,7 +43,7 @@ Esse evento contém dados vinculados ao evento, como:
 
 Exemplo de dados do evento:
 
-![](assets/mc-event-request.png)
+![Exemplo de XML de evento: atributos de dados de evento (tipo, email, origem) e dados de evento personalizados no elemento ctx](assets/mc-event-request.png)
 
 Para processar eventos de mensagens transacionais, as seguintes etapas são aplicadas na(s) instância(s) de execução:
 
@@ -65,7 +65,7 @@ Eventos gerados pelo sistema de informações podem ser coletados usando dois mo
 
 Depois que são coletados, os eventos são divididos por workflows técnicos entre as filas em tempo real e em lote das instâncias de execução enquanto aguardam a vinculação a um [modelo de mensagem](transactional-template.md).
 
-![](assets/mc-event-queues.png)
+![Pastas do Centro de Mensagens na instância de execução: Eventos em tempo real e Eventos em lote na pasta Padrão](assets/mc-event-queues.png)
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ A etapa de roteamento consiste em vincular um evento ao modelo de mensagem aprop
 
 * O tipo de evento especificado nas propriedades do próprio evento:
 
-  ![](assets/event-type-sample.png)
+  ![XML de evento em lote com o atributo de tipo de evento definido como purchase_order](assets/event-type-sample.png)
 
 * O tipo de evento especificado nas propriedades do modelo de mensagem:
 
-  ![](assets/event-type-select.png)
+  ![Assistente de modelo de mensagem com a lista Tipo de evento mostrando purchase e purchase_def](assets/event-type-select.png)
 
 Por padrão, o roteamento é baseado nas seguintes informações:
 

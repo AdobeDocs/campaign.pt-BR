@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 56%
+source-wordcount: '482'
+ht-degree: 50%
 ---
 # Link para a mirror page {#mirror-page}
 
@@ -51,7 +51,7 @@ Inserir um link para a mirror page é uma boa prática. Esse link pode ser, por 
 
 No Adobe Campaign, você pode inserir um link para a mirror page no conteúdo do email usando o **bloco de personalização** dedicado. O bloco de personalização do **Link integrado para a mirror page** insere o seguinte código no conteúdo do email: `<%@ include view='MirrorPage' %>`.
 
-![](assets/mirror-page-insert.png){width="800"}
+![Menu de personalização do editor de email com Incluir e Vincular à mirror page selecionado](assets/mirror-page-insert.png){width="800"}
 
 
 Para obter mais informações sobre como inserir blocos de conteúdo de personalização, consulte [Blocos de personalização](personalization-blocks.md).
@@ -65,7 +65,7 @@ Você pode controlar o modo de geração da mirror page de email. As opções es
 1. Navegue até a guia **[!UICONTROL Validity]** das propriedades de email.
 1. Na seção **Gerenciamento da mirror page**, verifique a lista suspensa **[!UICONTROL Mode]**.
 
-![](assets/mirror-page-generation.png){width="800"}
+![Guia Validade com a lista suspensa Modo de gerenciamento de página espelhada listando quatro opções de geração](assets/mirror-page-generation.png){width="800"}
 
 Além do modo padrão, as seguintes opções estão disponíveis:
 
@@ -83,6 +83,6 @@ Para acessar essa mirror page:
 
 1. Selecione um destinatário e clique no link **[!UICONTROL Display the mirror page for this message...]**.
 
-   ![](assets/mirror-page-display.png){width="800"}
+   ![Logs de entrega com um log selecionado e a opção Exibir a mirror page deste link de mensagem na parte inferior esquerda](assets/mirror-page-display.png){width="800"}
 
    A mirror page é exibida em uma tela dedicada, com dados de personalização para o recipient selecionado.

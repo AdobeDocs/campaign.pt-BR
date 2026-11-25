@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 6%
+source-wordcount: '303'
+ht-degree: 5%
 ---
 # Enviar uma prova de entrega de SMS {#sms-proof}
 
@@ -39,7 +39,7 @@ Você pode enviar uma prova para o delivery de SMS para validá-lo:
 
 1. Clique no botão **[!UICONTROL Send a proof]**. Uma janela será aberta
 
-   ![](assets/proof_targeting.png){zoomable="yes"}
+   ![Enviar uma caixa de diálogo de prova com a lista de modos de Direcionamento: destino de prova específico, substituição de endereço, seed addresses ou ambos](assets/proof_targeting.png){zoomable="yes"}
 
    Há vários modos para enviar uma prova:
 
@@ -53,12 +53,12 @@ Você pode enviar uma prova para o delivery de SMS para validá-lo:
 
    No exemplo abaixo, escolhemos **[!UICONTROL Definition of a specific proof target]** e adicionamos um recipient:
 
-   ![](assets/proof_recipient.png){zoomable="yes"}
+   ![Enviar uma caixa de diálogo de prova na Definição de um modo de destino de prova específico com um destinatário adicionado e o botão Analisar](assets/proof_recipient.png){zoomable="yes"}
 
 1. Clique no botão **[!UICONTROL Analyze]**.
 O Adobe Campaign realizará todo o controle antes de validar o envio da prova. No final da análise, o botão **[!UICONTROL Confirm delivery]** será clicável.
 
-   ![](assets/proof_analyze.png){zoomable="yes"}
+   ![Enviar uma caixa de diálogo de prova após a análise: preparação concluída, 1 mensagem para enviar, log de análise e botão Confirmar entrega](assets/proof_analyze.png){zoomable="yes"}
 
 1. Para enviar a prova da entrega do SMS, clique no botão **[!UICONTROL Confirm delivery]**.
 
