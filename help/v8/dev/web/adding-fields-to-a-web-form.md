@@ -332,7 +332,7 @@ Indique o rótulo da caixa de seleção e selecione o serviço de informação e
 
 >[!NOTE]
 >
->Os serviços de informação são detalhados nesta [página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions){target="_blank"}.
+>Os serviços de informação são detalhados nesta [página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions){target="_blank"}.
 
 O usuário se subscreve no serviço marcando a opção relevante.
 
