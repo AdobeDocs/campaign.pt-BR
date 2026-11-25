@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '678'
 ht-degree: 2%
 ---
 # Trilha de auditoria{#audit-trail}
@@ -69,7 +69,7 @@ A funcionalidade **[!UICONTROL Audit trail]** no Adobe Campaign oferece um regis
 
 * **A opção trilha de auditoria** permite que você verifique as atividades e as últimas modificações feitas em suas opções.
 
-  Para obter mais informações sobre opções, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
+  Para obter mais informações sobre opções, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
 
 * **Trilha de auditoria de entrega** permite que você verifique as atividades e as últimas modificações feitas em suas entregas.
 
@@ -105,7 +105,7 @@ Para acessar o **[!UICONTROL Audit trail]** da sua instância:
 
 1. No menu **[!UICONTROL Administration]**, selecione **[!UICONTROL Audit]** e depois **[!UICONTROL Audit Trail]**.
 
-   ![](assets/audit-trail-1.png)
+   ![Árvore do Explorer com Administração, Auditoria e, em seguida, Trilha de Auditoria selecionada, além da lista de entidades auditadas](assets/audit-trail-1.png)
 
 1. A janela **[!UICONTROL Audit trail]** é aberta com a lista de suas entidades. O Adobe Campaign auditará as ações de criação, edição e exclusão de suas diferentes entidades.
 
@@ -119,7 +119,7 @@ Para acessar o **[!UICONTROL Audit trail]** da sua instância:
    * **[!UICONTROL Action]**: Última ação executada nesta entidade: Criada, Modificada ou Excluída.
    * **[!UICONTROL Modification date]**: Data da última ação executada nesta entidade.
 
-   ![](assets/audit-trail-2.png)
+   ![Detalhes da entidade de auditoria mostrando Tipo, Entidade, Modificado por, Ação e Data de Modificação](assets/audit-trail-2.png)
 
 >[!NOTE]
 >
@@ -148,10 +148,10 @@ Para fazer isso:
    * Para Operador: **[!UICONTROL XtkAudit_Operator]**
    * Para cada entidade: **[!UICONTROL XtkAudit_Enable_All]**
 
-   ![](assets/audit-trail-3.png)
+   ![Lista de opções em Administração, Plataforma filtrada em XtkAudit_ com a opção XtkAudit_Delivery selecionada](assets/audit-trail-3.png)
 
 1. Altere o **[!UICONTROL Value]** para 1 se quiser habilitar a entidade ou para 0 se quiser desabilitá-la.
 
-   ![](assets/audit-trail-4.png)
+   ![Opção XtkAudit_Delivery com o campo Valor (inteiro) definido como 1 para habilitar a Trilha de auditoria](assets/audit-trail-4.png)
 
 1. Clique em **[!UICONTROL Save]**.

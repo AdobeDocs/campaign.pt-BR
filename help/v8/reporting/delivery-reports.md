@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 58%
+source-wordcount: '1071'
+ht-degree: 55%
 ---
 # Relatórios de entrega {#delivery-reports}
 
@@ -38,7 +38,7 @@ Para acessar os relatórios, siga as etapas abaixo:
 1. Clique no nome do delivery cujos relatórios você deseja acessar.
 1. Selecione a guia **[!UICONTROL Summary]** e clique em **[!UICONTROL Reports]** para acessar os relatórios específicos da entrega.
 
-   ![](assets/detailed-report-2.png)
+   ![Guia Resumo da Entrega com o link Relatórios realçado, listando os relatórios de entrega disponíveis.](assets/detailed-report-2.png)
 
    Por padrão, os seguintes relatórios estão disponíveis:
 
@@ -64,7 +64,7 @@ Este relatório combina os indicadores principais para rastrear o comportamento 
 >
 >Os valores calculados com base em mensagem são sempre estimativas, devido à margem de erro vinculada aos emails em formato de texto. Os indicadores **[!UICONTROL Distinct opens/Sum of opens for the population reached]** levam em consideração essa margem de erro. [Saiba mais](metrics-calculation.md#tracking-opens-).
 
-![](assets/tracking-report-synthesis.png)
+![Os indicadores de rastreamento relatam com quatro seções numeradas, de Estatísticas de entrega a Fluxos de clique gerados.](assets/tracking-report-synthesis.png)
 
 **[!UICONTROL 1. Delivery statistics]**
 
@@ -101,7 +101,7 @@ Esta tabela de valores mostra o detalhamento das entregas, aberturas, cliques e 
 >
 >Os nomes de domínio exibidos neste relatório são definidos na lista discriminada usada no nível de cubo. Para alterar, adicionar ou remover domínios padrão, edite a lista discriminada **[!UICONTROL Domains]** e modifique valores e aliases. A categoria **[!UICONTROL Others]** inclui nomes de domínio que não pertencem a nenhum valor da lista discriminada.
 >
->Saiba como acessar e configurar suas enumerações em [esta página](../config/enumerations.md).
+>Saiba como acessar e configurar suas enumerações em [Gerenciar enumerações](../config/enumerations.md).
 
 
 **[!UICONTROL 4. Generated click streams]**
@@ -168,7 +168,7 @@ This chart shows the breakdown of cumulated clicks per day.
 
 Esse relatório fornece todas as informações principais sobre a entrega.
 
-![](assets/user-report-summary.png)
+![Resumo da notificação de entrega com população de público alvo inicial, Causas de exclusão e seções de estatísticas de entrega.](assets/user-report-summary.png)
 
 **[!UICONTROL Target population]**
 
