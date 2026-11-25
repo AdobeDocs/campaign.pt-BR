@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
+source-git-commit: 011875268793bca1a000d745818dbd6c69461227
 workflow-type: tm+mt
-source-wordcount: '2986'
-ht-degree: 68%
+source-wordcount: '2989'
+ht-degree: 64%
 ---
 # Ofertas em um canal de entrada{#offers-on-an-inbound-channel}
 
@@ -147,7 +147,7 @@ Siga o procedimento detalhado em [Criar um ambiente de oferta](https://experienc
 
 ### Configurar o espaço de ofertas no site {#configure-the-web-offer-space-on-the-website}
 
-Para que as ofertas recém-configuradas fiquem visíveis no site, insira o código JavaScript na página HTML do site para chamar o mecanismo do Interaction (para obter mais informações, consulte [Sobre canais de entrada](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentação do Campaign v8)).
+Para que as ofertas recém-configuradas fiquem visíveis no site, insira o código do JavaScript na página HTML do site. Esse código chama o mecanismo do Interaction. Para obter mais informações, consulte [Sobre canais de entrada](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentação do Campaign v8).
 
 1. Vá para a página HTML e insira um atributo @id com um valor correspondente ao nome interno do espaço de ofertas anônimo criado anteriormente (consulte [Criar espaços de oferta anônimos](#creating-anonymous-offer-spaces)), precedido por **i_**.
 
@@ -157,7 +157,7 @@ Para que as ofertas recém-configuradas fiquem visíveis no site, insira o códi
 
    ![Chamada de script do HTML para interactionProposal.js com os parâmetros env=liveVisitor e th=financing realçados](assets/offer_inbound_anonymous_example_020.png)
 
-   As caixas azuis de URL acima correspondem ao nome da instância, ao nome interno do ambiente (consulte [Criação de um ambiente anônimo](#creating-an-anonymous-environment)) e ao tema vinculado à categoria ([Criação de uma categoria de oferta e um tema](#creating-an-offer-category-and-a-theme)). O último é opcional.
+   As caixas azuis de URL acima correspondem ao nome da instância, ao nome interno do ambiente e ao tema vinculado à categoria. Para obter mais informações, consulte [Criação de um ambiente anônimo](#creating-an-anonymous-environment) e [Criação de uma categoria de oferta e um tema](#creating-an-offer-category-and-a-theme). O tema é opcional.
 
 Quando um visitante acessa a home page do site, as ofertas com o tema de **financiamento** são exibidas como configuradas na página HTML.
 
@@ -409,7 +409,7 @@ Para configurar esses espaços de ofertas na página HTML do site, siga o seguin
 
    Variável ![interactionTarget definida para o email da pessoa que faz logon no script de página](assets/offer_inbound_fallback_example_043.png)
 
-   A identificação da pessoa pode ser baseada em um cookie de navegador, um parâmetro de leitura na URL, e-mail ou identificador da pessoa. Se um campo da tabela de destinatários diferente da chave primária for usado, ele precisará ser definido nos parâmetros avançados do espaço (consulte [Especificar as configurações avançadas dos espaços de ofertas identificados](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
+   A identificação da pessoa pode ser baseada em um cookie de navegador, um parâmetro de leitura na URL, e-mail ou identificador da pessoa. Se você usar um campo da tabela de recipients diferente da chave primária, defina-o nos parâmetros avançados do espaço. Para obter mais informações, consulte [Especificação das configurações avançadas dos espaços de ofertas identificados](#specifying-the-advanced-settings-of-the-identified-offer-spaces).
 
 1. Insira a URL de chamada.
 
@@ -419,6 +419,6 @@ Para configurar esses espaços de ofertas na página HTML do site, siga o seguin
 
 Quando você abre a página da Web, o script permite chamar o mecanismo do Interaction para exibir o conteúdo de ofertas nos espaços relevantes da página da Web. Em uma única chamada ao servidor do Adobe Campaign, o mecanismo determina o ambiente, o espaço de oferta e as categorias a serem selecionadas.
 
-Neste exemplo, o mecanismo reconhece o ambiente identificado (**EnvNeobankIdnRecip**). Identifica o espaço de oferta (**OSWebBestOfferIdentified**) e a categoria **Best Offer** (**CatBestOffer**) para os primeiros e segundo espaços de oferta na página da Web, bem como o espaço de oferta (**OSWebPartnerIdentified**) e a categoria **Partner** (**CatPartner**) para o terceiro espaço de oferta do site.
+Neste exemplo, o mecanismo reconhece o ambiente identificado (**EnvNeobankIdnRecip**). Identifica o espaço de oferta (**OSWebBestOfferIdentified**) e a categoria **Best Offer** (**CatBestOffer**) para os primeiros e segundo espaços de oferta na página da Web. No terceiro espaço de oferta, identifica o espaço de oferta (**OSWebPartnerIdentified**) e a categoria **Partner** (**CatPartner**).
 
 Se o mecanismo não puder identificar o destinatário, ele alternará para os espaços de oferta anônimos referenciados nos espaços de oferta identificados e em direção às categorias anônimas (**CatPartner** e **CatPartnerAnonym**) conforme especificado no script.
