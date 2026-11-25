@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1161'
 ht-degree: 1%
 ---
 # Atualizar perfis do Adobe Experience Platform a partir de páginas de aterrissagem do Adobe Campaign {#ac-aep-lp}
@@ -69,7 +69,7 @@ Para fazer isso, siga estes passos:
    * `CLIENT SECRET`
    * `ORGANIZATION ID`
 
-   ![](assets/ac-lp-oauth.png){width="70%"}
+   ![Projeto do Adobe Developer Console com API do Experience Platform e credenciais OAuth de servidor para servidor](assets/ac-lp-oauth.png){width="70%"}
 
 Agora que sua conexão OAuth está configurada, crie e configure uma nova conexão do Source **[!UICONTROL HTTP API]** para vincular o Adobe Campaign ao Adobe Experience Platform.
 
@@ -79,21 +79,21 @@ Com a conexão OAuth estabelecida, a próxima etapa é criar uma conexão do Sou
 
 1. Navegue até Adobe Experience Platform **[!UICONTROL Sources]**, pesquise a origem **[!UICONTROL HTTP API]** e clique em **[!UICONTROL Add data]**.
 
-   ![](assets/ac-lp-source.png){width="70%"}
+   ![O catálogo de Fontes do Experience Platform pesquisou http, com o botão Adicionar dados da fonte de API HTTP](assets/ac-lp-source.png){width="70%"}
 
-1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=pt-BR){target="_blank"}.
+1. Configure a conexão de acordo com suas necessidades. Informações detalhadas sobre como configurar uma conexão HTTP API estão disponíveis na [documentação de origens do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
 
    Na etapa **[!UICONTROL Authentication]**, alterne a opção **[!UICONTROL Enable authentication]** para autenticar usando o token de acesso gerado anteriormente por meio da integração OAuth.
 
-   ![](assets/ac-lp-source-authentication.png){width="70%"}
+   ![Etapa de conta da API HTTP de Conexão com a opção Habilitar autenticação ativada](assets/ac-lp-source-authentication.png){width="70%"}
 
 1. Depois que a conexão de origem é configurada, o endpoint de transmissão é exibido. Esse endpoint é necessário para assimilar dados na Adobe Experience Platform.
 
-   ![](assets/ac-lp-endpoint.png){width="70%"}
+   ![Página de detalhes da fonte da API HTTP com o campo de ponto de extremidade de streaming realçado](assets/ac-lp-endpoint.png){width="70%"}
 
    Você também pode acessar uma amostra do formato de dados assimilado na Adobe Experience Platform abrindo o fluxo de dados recém-criado na guia **[!UICONTROL Dataflows]**.
 
-   ![](assets/ac-lp-schema.png){width="70%"}
+   ![Página de fluxo de dados da API HTTP com a opção de carga Copiar esquema realçada](assets/ac-lp-schema.png){width="70%"}
 
 Agora que a conexão HTTP API Source está configurada, é necessário adicionar opções específicas no Adobe Campaign para habilitar a conexão com o Adobe Experience Platform.
 
@@ -115,7 +115,7 @@ Navegue pelas guias abaixo para descobrir os dois métodos:
    * IMS_ORG_ID = ID DA ORGANIZAÇÃO
    * IMS_CLIENT_API_KEY = cryptString(CLIENT ID)
 
-   ![](assets/ac-lp-xtk.png){width="70%"}
+   ![Lista de Opções do Campaign com IMS_CLIENT_API_KEY, IMS_CLIENT_ID, IMS_CLIENT_SECRET e IMS_ORG_ID selecionados](assets/ac-lp-xtk.png){width="70%"}
 
    >[!NOTE]
    >
@@ -123,7 +123,7 @@ Navegue pelas guias abaixo para descobrir os dois métodos:
 
 >[!TAB Adicionar opções usando uma atividade de código JavaScript]
 
-Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
+Para configurar essas opções automaticamente na execução do fluxo de trabalho de páginas de aterrissagem, adicione uma atividade **[!UICONTROL JavaScript code]** ao fluxo de trabalho com o código abaixo. [Saiba como configurar uma atividade de código JavaScript](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
 
 Na execução do workflow, as opções são criadas automaticamente no console do Campaign com os valores fornecidos.
 
@@ -157,7 +157,7 @@ Para permitir a sincronização de dados entre landing pages e o Adobe Experienc
    >
    >O token de acesso e os dados de autenticação são recuperados automaticamente das opções configuradas anteriormente.
 
-   ![](assets/ac-lp-script.png){width="70%"}
+   ![Lista de códigos JavaScript do Campaign com o código aepAPI personalizado que atualiza um perfil no AEP](assets/ac-lp-script.png){width="70%"}
 
    +++  Script 1 - Carregar atributos de perfil do Experience Platform
 
@@ -358,13 +358,13 @@ Com os códigos JavaScript adicionados ao Adobe Campaign, você pode aproveitá-
 
 Este é um exemplo de fluxo de trabalho usando as atividades de código JavaScript antes e depois de uma página de aterrissagem:
 
-![](assets/ac-lp-wkf.png){width="70%"}
+![Fluxo de trabalho da página de aterrissagem: Pré-Carregamento, Carregar Detalhes do Perfil do AEP, Recusar/Entrar na Página da Web, Atualizar Perfil, Fim](assets/ac-lp-wkf.png){width="70%"}
 
 Este é um exemplo de uma página de aterrissagem e uma atividade de código JavaScript configuradas para atualizar atributos de perfil no Adobe Experience Platform:
 
-![](assets/ac-lp-example.png){width="70%"}
+![Pré-visualização da página de aterrissagem com caixas de seleção para opção de não participação em email, SMS e push e um botão Enviar](assets/ac-lp-example.png){width="70%"}
 
-![](assets/ac-lp-code.png){width="70%" zoomable="yes"}
+![Atualizar atividade de script de perfil com o código que envia os valores de recusa de perfil para o Experience Platform](assets/ac-lp-code.png){width="70%" zoomable="yes"}
 
 ### Mais informações
 

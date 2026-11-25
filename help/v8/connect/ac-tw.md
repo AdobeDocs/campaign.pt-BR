@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 11%
+source-wordcount: '1168'
+ht-degree: 10%
 ---
 # Trabalhar com o Campaign e o X (Twitter) {#tw-ac-ovv}
 
@@ -81,15 +81,15 @@ Depois de ter sido aprovado com Acesso elevado, crie um aplicativo X para permit
 1. Deixe o X assistant orientá-lo pelo processo.
 1. Para permitir que o Adobe Campaign crie publicações em sua conta, edite as **Permissões do aplicativo** na seção Configuração de autenticação de usuário do seu aplicativo. Selecione **Mensagens de Leitura, Gravação e Diretas**.
 
-   ![](assets/tw-permissions.png)
+   ![Permissões de aplicativo com mensagem direta e de leitura e gravação selecionadas](assets/tw-permissions.png)
 
 1. Na seção **Tipo de aplicativo**, selecione **Aplicativo Web, Aplicativo Automatizado ou Bot**. Você pode deixar o campo **URL de retorno** vazio e salvar sua configuração.
 
-   ![](assets/tw-app-type.png)
+   ![Tipo de aplicativo com Aplicativo Web, Aplicativo Automatizado ou Bot selecionado como cliente confidencial](assets/tw-app-type.png)
 
 1. De volta ao painel do aplicativo, selecione seu aplicativo e navegue até a guia **Chaves e tokens**. Em **Token de Acesso e Segredo**, se a permissão **Ler, Gravar e Mensagens Diretas** não for mencionada, você deverá regenerar o token e o segredo do seu aplicativo. Observe que todas as chaves e tokens devem ser salvas após a criação. Você precisará deles para configurar o serviço Campaign Twitter.
 
-   ![](assets/tw-permissions-check.png)
+   ![Tokens de Autenticação mostrando o Token de Acesso e o Segredo criados com permissões de Leitura, Gravação e Mensagens Diretas](assets/tw-permissions-check.png)
 
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Para inserir as configurações, você deve acessar o Console do cliente do Adob
 
 1. Por padrão, os seguidores são salvos na pasta **[!UICONTROL Visitors]**. Você pode selecionar outro local no campo **[!UICONTROL Visitor folder]**. [Saiba mais](../send/twitter.md#direct-tw-messages)
 
-   ![](assets/tw-service-in-ac.png)
+   ![Formulário Novas Ofertas de Serviço Disponíveis com Rótulo, Tipo de Email, Pasta do visitante e os campos de token de consumidor e acesso OAuth](assets/tw-service-in-ac.png)
 
    >[!NOTE]
    >
@@ -138,7 +138,7 @@ Para verificar as configurações, é possível:
 
 * Edite o serviço **Twitter** que acabou de criar.
 * Navegue pela guia **[!UICONTROL Twitter page]**: sua conta do Twitter deve ser exibida.
-  ![](assets/tw-page.png)
+  ![Guia de página do Twitter do Serviço no console do Adobe Campaign exibindo a conta vinculada do Jane Marge](assets/tw-page.png)
 
 ## Sincronizar a conta do X {#synchro-tw-accounts}
 
@@ -148,7 +148,7 @@ Elas são interrompidas por padrão: você deve iniciá-las manualmente quando c
 
 O fluxo de trabalho técnico do **[!UICONTROL Synchronization of Twitter accounts]** sincroniza as contas X no Adobe Campaign. Esse workflow recupera a lista de seguidores X para que você possa enviar mensagens diretas a eles. [Saiba mais](../send/twitter.md#direct-tw-messages)
 
-Por padrão, esse workflow é acionado todas as quintas-feiras às 7h30. Você pode usar a opção **[!UICONTROL Execute pending task(s) now]** para iniciar o fluxo de trabalho a qualquer momento enquanto implementa essa integração.  Também é possível editar o scheduler para alterar a frequência de acionamento do fluxo de trabalho. Saiba mais [nesta página](../../automation/workflow/scheduler.md).
+Por padrão, esse workflow é acionado todas as quintas-feiras às 7h30. Você pode usar a opção **[!UICONTROL Execute pending task(s) now]** para iniciar o fluxo de trabalho a qualquer momento enquanto implementa essa integração.  Também é possível editar o scheduler para alterar a frequência de acionamento do fluxo de trabalho. Saiba mais em [Configurando a atividade Scheduler](../../automation/workflow/scheduler.md#configuring-scheduler-activity).
 
 >[!CAUTION]
 >
@@ -175,6 +175,6 @@ Além de uma conta X, crie uma conta X privada que possa ser usada para enviar [
 1. Acesse as **Configurações** da conta.
 1. Navegue até **Privacidade e Segurança** e **Público-alvo e Marcação** e marque a opção **Proteger suas postagens**. Suas publicações e outras informações da conta só estarão visíveis para as pessoas que seguem você.
 
-![](assets/do-not-localize/social_tw_test_page.png)
+![X configurações Página de público-alvo, mídia e marcação com a opção Proteger suas postagens selecionada](assets/do-not-localize/social_tw_test_page.png)
 
 Configure seu aplicativo X e o serviço do Campaign para funcionar com essa conta de teste, conforme descrito acima.
