@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 36%
+source-wordcount: '987'
+ht-degree: 29%
 ---
 # Criar um público-alvo em uma lista {#create-segments}
 
@@ -38,13 +38,13 @@ Uma lista é um conjunto estático de contatos que pode ser direcionado em açõ
 
 As listas são criadas e gerenciadas pelo link **[!UICONTROL Lists]** na guia **[!UICONTROL Profiles and targets]**. Estas listas são baseadas na tabela de perfil padrão do Adobe Campaign (nms:recipient). [Saiba mais](../dev/datamodel.md#ootb-profiles)
 
-![](assets/list-dashboard.png)
+![Página Listas em Perfis e Destinos mostrando listas existentes e o botão Criar](assets/list-dashboard.png)
 
 Você pode criar uma lista usando a atividade **Atualizar lista** em um fluxo de trabalho. Esta atividade armazena a população resultante em uma lista. Use-a para criar uma nova lista ou atualizar uma lista existente. Para criar listas contendo outros tipos de dados além da tabela de perfil integrada, você deve executar um workflow. Por exemplo, usando uma consulta na tabela de visitantes e atualizando a lista, é possível criar uma lista de visitantes. [Saiba mais](#create-a-list-wf).
 
 Assista a este vídeo para saber mais sobre o Gerenciamento de listas no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426464?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
 ## Criar uma lista de contatos {#create-a-list-of-contacts}
@@ -53,11 +53,11 @@ Para criar uma lista de contatos, siga as etapas abaixo:
 
 1. Clique no botão **[!UICONTROL Create]** e selecione **[!UICONTROL New list]**.
 
-   ![](assets/new-list.png)
+   ![Criar menu na página Listas com a opção Nova lista](assets/new-list.png)
 
 1. Insira as informações na guia **[!UICONTROL Edit]** da janela de criação da lista.
 
-   ![](assets/list-details.png)
+   ![Guia Editar da janela de criação de lista com os campos Rótulo, Nome interno, Tipo de lista, Esquema e Pasta](assets/list-details.png)
 
    * Insira o nome da lista no campo **[!UICONTROL Label]** e, se necessário, altere o nome interno.
    * Adicione uma descrição para esta lista.
@@ -66,7 +66,7 @@ Para criar uma lista de contatos, siga as etapas abaixo:
 
 1. Na guia **[!UICONTROL Content]**, clique em **[!UICONTROL Add]** para selecionar os perfis que pertencem à lista.
 
-   ![](assets/add-profiles-to-a-list.png)
+   ![Adicionar destinatários à caixa de diálogo da lista com vários destinatários selecionados da pasta Conjunto de Dados](assets/add-profiles-to-a-list.png)
 
    Você pode criar um novo perfil e adicioná-lo à lista diretamente desta janela usando o ícone **[!UICONTROL Create]**. O perfil será adicionado ao banco de dados.
 
@@ -83,15 +83,15 @@ Para criar uma lista de contatos, siga as etapas abaixo:
 
 1. Selecione **[!UICONTROL Actions > Associate selection with a list...]**.
 
-   ![](assets/add-selection-to-a-list.png)
+   ![Menu de ações com a opção Associar seleção a uma lista para destinatários selecionados](assets/add-selection-to-a-list.png)
 
 1. Selecione uma lista existente ou crie uma nova lista e clique em **[!UICONTROL Next]**.
 
-   ![](assets/select-the-list.png)
+   ![Selecione a etapa de lista do Assistente de Destinatários e Listas com uma lista selecionada e o botão Avançar](assets/select-the-list.png)
 
 1. Clique no botão **[!UICONTROL Start]**.
 
-   ![](assets/record-a-list.png)
+   ![Grave em uma etapa de lista do assistente com a opção Recriar a lista e o botão Iniciar](assets/record-a-list.png)
 
 Selecione a opção **[!UICONTROL Recreate the list]** para excluir o conteúdo existente da lista e otimizar a criação da lista (nenhuma consulta é necessária para verificar se os perfis já estão vinculados à lista).
 
@@ -111,22 +111,22 @@ No exemplo abaixo, você cria uma lista de todos os recipients entre 25 e 40.
 1. Selecione **[!UICONTROL Profiles and targets]** e **[!UICONTROL Targeting workflows]** e crie um novo fluxo de trabalho pelo botão **[!UICONTROL Create]**.
 1. Insira um rótulo para este fluxo de trabalho, por exemplo, &quot;25-40 contatos&quot;, adicione uma descrição e clique em **[!UICONTROL Next]**.
 
-   ![](assets/targeting-wf-sample.png)
+   ![Caixa de diálogo Novo fluxo de trabalho em fluxos de trabalho de Direcionamento com o Rótulo e a Descrição preenchidos para 25-40 contatos](assets/targeting-wf-sample.png)
 
 1. Insira uma atividade **[!UICONTROL Query]** para definir o público alvo e editar a consulta.
 
-   ![](assets/targeting-wf-edit-query.png)
+   ![Atividade Query com o link Edit query e a etapa Targeting and filtering dimension com condições Filtering](assets/targeting-wf-edit-query.png)
 
 1. Defina as condições do filtro, conforme abaixo:
 
-   ![](assets/targeting-wf-age-filter.png)
+   ![Etapa de filtro da consulta com idade maior ou igual a 25 e menor ou igual a 40](assets/targeting-wf-age-filter.png)
 
    Saiba como criar uma consulta em um fluxo de trabalho em [esta seção](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=pt-BR){target="_blank"}.
 
 1. Adicione um rótulo para esta consulta e salve as alterações.
 1. Adicione uma atividade **[!UICONTROL List update]** e edite-a.
 
-   ![](assets/list-update-activity.png)
+   ![Configurações de atividade de atualização de lista no fluxo de trabalho, com criação de lista e opções de pasta e o botão Ok](assets/list-update-activity.png)
 
 1. Insira um rótulo para a atividade.
 1. Selecione a opção **[!UICONTROL Create the list if necessary (Computed name)]** para mostrar que a lista é criada quando o primeiro fluxo de trabalho é executado e, em seguida, atualizada com as execuções seguintes.
@@ -140,7 +140,7 @@ No exemplo abaixo, você cria uma lista de todos os recipients entre 25 e 40.
 
    A lista de recipients correspondentes é então criada. Você pode acessar esta lista a partir da entrada **[!UICONTROL Lists]** da home page.
 
-   ![](assets/access-new-list.png)
+   ![Página Listas mostrando a nova lista de 25-40 contatos na parte superior, acessada a partir da entrada Listas](assets/access-new-list.png)
 
    Você pode tornar esse workflow recorrente adicionando um scheduler ao workflow. [Saiba mais](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=pt-BR){target="_blank"}.
 
