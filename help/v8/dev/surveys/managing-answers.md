@@ -19,7 +19,7 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 99%
@@ -106,7 +106,7 @@ Crie a consulta com base nos perfis que você deseja recuperar. No exemplo a seg
 
 Para cada formulário, as respostas fornecidas podem ser usadas em campos ou rótulos. Use a sintaxe a seguir para o conteúdo armazenado em um campo arquivado:
 
-```
+```html
 <%= ctx.webAppLogRcpData.name of the archived field %
 ```
 

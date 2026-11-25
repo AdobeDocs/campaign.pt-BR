@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1947'
 ht-degree: 84%
@@ -106,7 +106,7 @@ Para otimizar a segurança, os tokens de segurança foram removidos dos URLs ger
 * Essa alteração se aplica somente aos URLs GET. Outros tipos, incluindo URLs POST, não são afetados.
 * Se você usa código personalizado, os tokens de segurança não são mais recuperados do parâmetro securitytoken do URL GET. Você precisa gerar um novo token de segurança usando o seguinte código JSSP:
 
-  ```
+  ```javascript
   getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);
   ```
 

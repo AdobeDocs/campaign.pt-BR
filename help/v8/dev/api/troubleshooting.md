@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Isso significa que há um problema com o provisionamento IMS do seu produto espe
 Para obter mais detalhes, você pode chamar a API do IMS com seu token para ver a aparência do seu perfil IMS: É necessário ter um prodCtx, em que a organization_id seja a mesma que você inseriu no URL do Adobe.io para poder rotear sua solicitação.
 Se estiver faltando, o provisionamento de IMS precisará ser corrigido.
 
-```
+```bash
 -X GET https://mc.adobe.io/{ORGANIZATION}/campaign/profileAndServices/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -42,13 +42,13 @@ Se estiver faltando, o provisionamento de IMS precisará ser corrigido.
 
 Ele retorna o seguinte erro.
 
-```
+```json
 {"error_code":"403023","message":"Profile is not valid"}
 ```
 
 Verifique seu perfil IMS com essa solicitação.
 
-```
+```bash
 -X GET https://ims-na1.adobelogin.com/ims/profile/v1 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -58,7 +58,7 @@ Verifique seu perfil IMS com essa solicitação.
 
 Na resposta, o valor ORGANIZATION_ID deve ser o mesmo na primeira solicitação GET.
 
-```
+```json
 {
   "countryCode": "FR",
   "mrktPermEmail": null,

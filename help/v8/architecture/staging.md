@@ -34,7 +34,7 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -66,7 +66,7 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
 
 1. Crie um exemplo de esquema personalizado no banco de dados da Campaign Cloud. Nenhum preparo ativado nesta etapa.
 
-   ```
+   ```xml
    <srcSchema _cs="Sample Table (dem)" created="YYYY-DD-MM"
            entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Sample Table"
            lastModified="YYYY-DD-MM HH:MM:SS.TZ" mappingType="sql" md5="XXX"
@@ -85,7 +85,7 @@ Para implementar o mecanismo de preparo do Campaign em uma tabela específica, s
 
 1. Habilite o mecanismo de preparo na definição do esquema adicionando o parâmetro **autoStg=&quot;true&quot;**.
 
-   ```
+   ```xml
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"
            entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Sample Table"
            lastModified="YYYY-DD-MM HH:MM:SS.TZ" mappingType="sql" md5="XXX"

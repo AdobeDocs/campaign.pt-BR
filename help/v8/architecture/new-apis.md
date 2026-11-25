@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 4%
@@ -53,7 +53,7 @@ A API **xtk.session.ingest** é dedicada somente à Inserção de Dados. Nenhuma
 
 Use o seguinte código em uma atividade **Javascript code** para inserir dados no banco de dados na nuvem sem reconciliação:
 
-```
+```javascript
 var xmlStagingSampleTable = <sampleTableStg
                                 testcol1="testValue1"
                                 testcol2="testValue2"
@@ -70,7 +70,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada c
 1. Obtenha o token de autenticação.
 1. Acione a API. A carga é:
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -90,7 +90,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada c
 
 1. A UUID é enviada de volta na resposta do SOAP:
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default">
@@ -110,7 +110,7 @@ Como resultado, a tabela de preparo é alimentada conforme esperado.
 
 Use o seguinte código em uma atividade **Javascript code** para inserir dados no banco de dados na nuvem com reconciliação:
 
-```
+```javascript
 var xmlStagingSampleTable = <sampleTableStg  _key="@id" id="ABC12345"
                               testcol1="testValue1"
                               testcol2="testValue2"
@@ -130,7 +130,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada c
 1. Obtenha o token de autenticação.
 1. Acione a API. A carga é:
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -150,7 +150,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é alimentada c
 
 1. Nesse caso, a UUID não é fornecida de volta para a resposta porque foi fornecida na carga. A resposta é:
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default">
@@ -172,7 +172,7 @@ A API **xtk.session.IngestExt** está otimizada para atualização/exclusão de 
 
 Use o seguinte código em uma atividade **Javascript code** para atualizar dados no banco de dados na nuvem:
 
-```
+```javascript
 var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
                               testcol1="testValue A (updated)"
                               testcol2="testValue B (updated)"
@@ -190,7 +190,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é atualizada c
 1. Obtenha o token de autenticação.
 1. Acione a API. A carga é:
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -210,7 +210,7 @@ Depois que o fluxo de trabalho é executado, a tabela de preparo é atualizada c
 
 1. A resposta da SOAP é:
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestExtResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default"/>

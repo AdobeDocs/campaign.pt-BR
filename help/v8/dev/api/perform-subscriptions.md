@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 Execute uma solicitação GET para recuperar o perfil.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -40,7 +40,7 @@ Execute uma solicitação GET para recuperar o perfil.
 
 Ele retorna o URL de assinaturas do perfil.
 
-```
+```json
   {
     ...
     "postalAddress":...,
@@ -54,7 +54,7 @@ Ele retorna o URL de assinaturas do perfil.
 
 Execute uma solicitação POST no URL de subscrições com a chave primária de serviço desejada dentro da carga.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -66,7 +66,7 @@ Execute uma solicitação POST no URL de subscrições com a chave primária de 
 
 Retorna o perfil atualizado com o nó de serviço concluído.
 
-```
+```json
 {
   ...
   "service": {
@@ -83,7 +83,7 @@ Retorna o perfil atualizado com o nó de serviço concluído.
 
 Execute uma solicitação GET para recuperar o serviço.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -93,7 +93,7 @@ Execute uma solicitação GET para recuperar o serviço.
 
 Ele retorna o URL de subscrições do serviço.
 
-```
+```json
   {
     ...
     "messageType": "email",
@@ -107,7 +107,7 @@ Ele retorna o URL de subscrições do serviço.
 
 Faça uma solicitação POST no URL de assinaturas com a chave primária de perfil desejada dentro da carga.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign//profileAndServices/service/<PKEY>/subscriptions/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -119,7 +119,7 @@ Faça uma solicitação POST no URL de assinaturas com a chave primária de perf
 
 Retorna o serviço atualizado com o nó de assinantes concluído.
 
-```
+```json
 {
   ...
   "service": ...,

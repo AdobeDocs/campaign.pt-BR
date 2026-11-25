@@ -49,7 +49,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '3476'
 ht-degree: 54%
@@ -159,7 +159,7 @@ Quando uma mensagem estiver na fila do MTA por 3,5 dias e não for entregue, o t
 
 Uma mensagem pode expirar antes do fim de seu período de validade, quando a próxima tentativa cair após o tempo de expiração. O log de delivery mostra a falha da última tentativa de delivery.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=pt-BR#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## Tipos de erro de email {#email-error-types}
@@ -714,7 +714,7 @@ Antes de um novo tipo de erro ser qualificado, o motivo da falha é sempre defin
 
 Exemplo de uma mensagem gerada:
 
-```
+```text
 SR Generic DELIVRD 000|#MESSAGE#
 ```
 
@@ -750,7 +750,7 @@ Os logs da entrega são fundamentais para saber por que uma entrega falhou. Este
 
 Se as mensagens do destinatário falharem com uma declaração de erro &quot;Inacessível&quot;:
 
-```
+```text
 Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
 ```
 
@@ -764,7 +764,7 @@ Saiba mais sobre a personalização em [esta seção](personalize.md).
 
 Quando uma entrega falha, o seguinte erro pode aparecer nos logs de entrega:
 
-```
+```text
 DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
 ```
 
@@ -776,7 +776,7 @@ DLV-XXXX The count of message prepared (123) is greater than the number of messa
 
 Alguns deliveries podem falhar com um erro &quot;Inacessível&quot; informando:
 
-```
+```text
 Inbound email bounce (rule 'Auto_replies' has matched this bounce).
 ```
 

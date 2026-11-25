@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 4%
@@ -38,7 +38,7 @@ Além disso, as APIs do Campaign Standard permitem procurar perfis com base em u
 
 * Exemplo de solicitação GET para recuperar todos os perfis.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -48,7 +48,7 @@ Além disso, as APIs do Campaign Standard permitem procurar perfis com base em u
 
   Resposta à solicitação.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -64,7 +64,7 @@ Além disso, as APIs do Campaign Standard permitem procurar perfis com base em u
 
 * Exemplo de solicitação GET para recuperar os primeiros 10 valores de email.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_lineCount=10 \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -74,7 +74,7 @@ Além disso, as APIs do Campaign Standard permitem procurar perfis com base em u
 
   Resposta à solicitação. O nó &quot;next&quot; retorna o URL que dá acesso aos 10 próximos valores de email.
 
-  ```
+  ```json
   {
   "content": [
       "amy.dakota@mail.com",
@@ -107,7 +107,7 @@ O parâmetro **[!UICONTROL filterType]** permite recuperar perfis com base em um
 
 * Exemplo de solicitação para filtrar perfis com base no nome.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=John&filterType=firstName \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -117,7 +117,7 @@ O parâmetro **[!UICONTROL filterType]** permite recuperar perfis com base em um
 
 * Exemplo de solicitação para filtrar perfis com base no sobrenome.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=Miller&filterType=lastName \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -127,7 +127,7 @@ O parâmetro **[!UICONTROL filterType]** permite recuperar perfis com base em um
 
 * Exemplo de solicitação para filtrar perfis com base em email.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=John%40gmail.com&filterType=email \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -137,7 +137,7 @@ O parâmetro **[!UICONTROL filterType]** permite recuperar perfis com base em um
 
 * Exemplo de solicitação para filtrar perfis com base no campo personalizado &quot;Hobby&quot;.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/byText?cusHobby=Dancing&filterType=Hobby \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \

@@ -25,7 +25,7 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 1%
@@ -64,7 +64,7 @@ si on prend l'exemple de l'org unit, on aura un bon exemple lien
 
 Execute uma solicitação GET no recurso.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -74,7 +74,7 @@ Execute uma solicitação GET no recurso.
 
 Retorna a descrição completa do recurso de perfil.
 
-```
+```json
 {
 ...
 "content": {

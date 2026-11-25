@@ -25,7 +25,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Por exemplo, você deseja que um evento de &quot;Abandono de carrinho&quot; seja
 
 O evento transacional é enviado por uma solicitação POST com a seguinte estrutura de URL:
 
-```
+```http
 POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 ```
 
@@ -67,7 +67,7 @@ A solicitação deve conter um cabeçalho &quot;Content-Type: application/json&q
 
 Você deve adicionar um conjunto de caracteres, por exemplo **utf-8**. Observe que esse valor depende do aplicativo REST que você está usando.
 
-```
+```bash
 -X POST \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -100,7 +100,7 @@ Se o payload contiver apenas &quot;mobilePhone&quot;, o canal de comunicação S
 
 O exemplo abaixo mostra uma carga em que uma comunicação SMS será acionada:
 
-```
+```bash
 curl --location 'https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment' \
 --header 'Authorization: Bearer <ACCESS_TOKEN>' \
 --header 'Cache-Control: no-cache' \
@@ -135,7 +135,7 @@ A resposta POST retorna o status do evento transacional no momento em que ele fo
 
 Solicitação POST para enviar o evento.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -161,7 +161,7 @@ Solicitação POST para enviar o evento.
 
 Resposta à solicitação POST.
 
-```
+```json
 {
   "PKey":"<PKEY>",
   "ctx":

@@ -21,7 +21,7 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 93%
@@ -101,19 +101,19 @@ Para cada formulário, as respostas fornecidas podem ser reutilizadas nos campos
 
 * Para conteúdo armazenado em um campo do banco de dados:
 
-  ```
+  ```html
   <%=ctx.recipient.@field name%
   ```
 
 * Para conteúdo armazenado em uma variável local:
 
-  ```
+  ```html
   <%= ctx.vars.variable name %
   ```
 
 * Para conteúdo armazenado em um campo de texto do HTML:
 
-  ```
+  ```html
   <%== HTML field name %
   ```
 
@@ -153,4 +153,4 @@ Você pode selecionar uma pasta de pesquisa para a reconciliação e a pasta de 
 >
 >As possíveis operações são: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
 >A pasta padrão de um operador é a primeira pasta a que o operador tem permissão de gravação.\
->Consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+>Consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.

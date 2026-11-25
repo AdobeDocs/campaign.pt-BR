@@ -24,7 +24,7 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '2144'
 ht-degree: 95%
@@ -81,7 +81,7 @@ Siga o procedimento detalhado em [Criar um ambiente de oferta](https://experienc
 
 1. Edite a função de renderização HTML, por exemplo:
 
-   ```
+   ```javascript
    function (imageUrl, targetUrl, shortContent, htmlSource){
          var html = "<p><b>" + shortContent + "</b></p>";
          html += "<p>" + htmlSource + "</p>";

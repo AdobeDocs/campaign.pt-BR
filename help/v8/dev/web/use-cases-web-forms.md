@@ -25,7 +25,7 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 85%
@@ -45,7 +45,7 @@ Este exemplo é baseado no seguinte cenário:
 
 ### Etapa 1 - Criação de serviços de informação {#step-1---creating-information-services}
 
-1. Crie a subscrição no serviço de boletim informativo a ser oferecido aos destinatários. Para obter mais informações sobre como criar um boletim informativo, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
+1. Crie a subscrição no serviço de boletim informativo a ser oferecido aos destinatários. Para obter mais informações sobre como criar um boletim informativo, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -123,7 +123,7 @@ Para fazer isso, siga as etapas abaixo:
 
    A primeira atividade **[!UICONTROL Script]** adicionará recipients na inclui na lista de bloqueios até que eles confirmem a assinatura do boletim informativo. Seu conteúdo deve ser o seguinte:
 
-   ```
+   ```javascript
    ctx.recipient.@blackList=1
    ```
 
@@ -131,7 +131,7 @@ Para fazer isso, siga as etapas abaixo:
 
    A segunda atividade **[!UICONTROL Script]** autoriza os deliveries a serem enviados aos usuários e faz a assinatura deles no boletim informativo. As duas últimas linhas do script permitirão transferir os recipients da pasta temporária para outra pasta e reconciliar com perfis existentes assim que confirmarem a assinatura.
 
-   ```
+   ```javascript
    ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>

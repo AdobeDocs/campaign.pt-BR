@@ -39,7 +39,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 12%
@@ -48,7 +48,7 @@ ht-degree: 12%
 
 A estrutura básica de um `<srcschema>` é a seguinte:
 
-```
+```xml
 <srcSchema>
     <enumeration>
         ...          //definition of enumerations
@@ -88,7 +88,7 @@ A estrutura básica de um `<srcschema>` é a seguinte:
 
 O documento XML de um esquema de dados deve conter o **`<srcschema>`** elemento raiz com os atributos **name** e **namespace** para preencher o nome e o namespace do esquema.
 
-```
+```xml
 <srcSchema name="schema_name" namespace="namespace">
 ...
 </srcSchema>
@@ -96,7 +96,7 @@ O documento XML de um esquema de dados deve conter o **`<srcschema>`** elemento 
 
 Vamos usar o seguinte conteúdo XML para ilustrar a estrutura de um schema de dados:
 
-```
+```xml
 <recipient email="John.doe@aol.com" created="AAAA/DD/MM" gender="1"> 
   <location city="London"/>
 </recipient>
@@ -104,7 +104,7 @@ Vamos usar o seguinte conteúdo XML para ilustrar a estrutura de um schema de da
 
 Com seu schema de dados correspondente:
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email"/>
@@ -123,7 +123,7 @@ O ponto de entrada do esquema é seu elemento principal. É fácil identificar p
 
 No nosso exemplo, o elemento principal é representado pela seguinte linha:
 
-```
+```xml
 <element name="recipient">
 ```
 
@@ -131,7 +131,7 @@ Os elementos **`<attribute>`** e **`<element>`** que seguem o elemento principal
 
 No nosso esquema de amostra, são eles:
 
-```
+```xml
 <attribute name="email"/>
 <attribute name="created"/>
 <attribute name="gender"/>
@@ -156,7 +156,7 @@ As seguintes regras devem ser seguidas:
 
 O tipo de dados é inserido pelo atributo **type** nos elementos **`<attribute>`** e **`<element>`**.
 
-Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=pt-BR#configuring-campaign-classic){target="_blank"}.
+Uma lista detalhada está disponível na [documentação do Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
 
 Quando este atributo não é populado, **string** é o tipo de dados padrão, a menos que o elemento contenha elementos filhos. Em caso afirmativo, ele é usado apenas para estruturar os elementos hierarquicamente (**`<location>`** elemento em nosso exemplo).
 
@@ -181,7 +181,7 @@ Os seguintes tipos de dados são aceitos em esquemas:
 
 Aqui está nosso schema de exemplo com os tipos inseridos:
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email" type="string" length="80"/>
@@ -208,7 +208,7 @@ Os elementos **`<elements>`** e **`<attributes>`** do esquema de dados podem ser
 
   **Exemplo**:
 
-  ```
+  ```xml
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
@@ -226,7 +226,7 @@ Os elementos **`<elements>`** e **`<attributes>`** do esquema de dados podem ser
 
   **Exemplo**:
 
-  ```
+  ```xml
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
   ```
 
@@ -285,7 +285,7 @@ As enumerações permitem que o usuário selecione um valor em uma lista suspens
 
 Exemplo de uma declaração de enumeração no schema de dados:
 
-```
+```xml
 <enumeration name="gender" basetype="byte" default="0">    
   <value name="unknown" label="Not specified" value="0"/>    
   <value name="male" label="male" value="1"/>   
@@ -323,7 +323,7 @@ Os valores de enumeração são declarados no elemento **`<value>`** com os segu
 
 Este é o nosso exemplo de esquema com as propriedades preenchidas:
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -350,7 +350,7 @@ O atributo **unbound** com o valor &quot;true&quot; permite preencher um element
 
 **Exemplo**: definição do elemento de coleção **`<group>`** no esquema.
 
-```
+```xml
 <element name="group" unbound="true" label="List of groups">
   <attribute name="label" type="string" label="Label"/>
 </element>
@@ -358,7 +358,7 @@ O atributo **unbound** com o valor &quot;true&quot; permite preencher um element
 
 Com projeção do conteúdo XML:
 
-```
+```xml
 <group label="Group1"/>
 <group label="Group2"/>
 ```
@@ -412,7 +412,7 @@ A **Cálculo de cadeia de caracteres** é definida por meio do elemento **`<comp
 
 **Exemplo**: cadeia de caracteres de cálculo da tabela de destinatários.
 
-```
+```xml
 <srcSchema name="recipient" namespace="nms">  
   <element name="recipient">
     <compute-string expr="@lastName + ' ' + @firstName +' (' + @email + ')' "/>

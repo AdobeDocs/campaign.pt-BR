@@ -21,7 +21,7 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 100%
@@ -80,7 +80,7 @@ No exemplo a seguir, queremos configurar um formulário web que, quando aprovado
 
 1. A URL da entrega deve incluir o nome interno do formulário de destino, por exemplo:
 
-   ```
+   ```text
    https://[myserver]/webForm/APP62?&next=APP22
    ```
 
