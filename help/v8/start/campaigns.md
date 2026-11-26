@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 7d3481d1a8453d0663d67765c664c60ed988aee6
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 70%
+source-wordcount: '933'
+ht-degree: 67%
 ---
 # Introdução às campanhas {#gs-ac-campaigns}
 
@@ -40,7 +40,7 @@ As campanhas incluem ações (entregas) e processos (importação ou extração 
 
 ## Orquestração de campanha entre canais{#cross-channel-orchestration}
 
-O Adobe Campaign permite criar e organizar campanhas direcionadas e personalizadas em vários canais: email, correspondência direta, SMS e notificação por push. Uma única interface fornece todas as funções necessárias para agendar, organizar, configurar, personalizar, automatizar, executar e medir todas as suas campanhas e comunicações.
+O Adobe Campaign permite criar e orquestrar campanhas direcionadas e personalizadas em vários canais: email, correspondência direta, SMS, notificação por push, LINE e canais personalizados. Uma única interface fornece todas as funções necessárias para agendar, organizar, configurar, personalizar, automatizar, executar e medir todas as suas campanhas e comunicações.
 
 ![Guia Campanhas da página inicial listando campanhas de marketing com status, datas e o botão Criar](assets/campaign-tab.png)
 
