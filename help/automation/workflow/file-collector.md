@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 100%
+source-wordcount: '559'
+ht-degree: 93%
 ---
 # File collector{#file-collector}
 
@@ -43,7 +43,7 @@ Os arquivos devem estar no servidor no qual o módulo wfserver desse fluxo de tr
 
 A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar o diretório de origem e, se necessário, filtrar os arquivos coletados. As outras guias são detalhadas em [Inbound Emails](inbound-emails.md) (guias **[!UICONTROL Schedule]** e **[!UICONTROL Expiry]**).
 
-![](assets/file_collect_edit.png)
+![Guia Diretório do coletor de arquivos com as opções Diretório, Filtrar e Parar assim que um arquivo for processado](assets/file_collect_edit.png)
 
 1. **Download de arquivos**
 
@@ -89,7 +89,7 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
 A ordem de processamento do arquivo não pode ser determinada. Para processar um conjunto de arquivos sequencialmente, use a opção **[!UICONTROL Stop as soon as a file has been processed]** e crie um loop. Nesse caso, os arquivos serão processados em ordem alfabética. A opção **[!UICONTROL Process file nonexistence]** permite concluir a iteração.
 
-![](assets/file_collect_loop.png)
+![Looping de fluxo de trabalho de Importar de volta para o Coletor de arquivos, com uma atividade Alert na transição Nenhum arquivo](assets/file_collect_loop.png)
 
 ## Parâmetros de saída {#output-parameters}
 

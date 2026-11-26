@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 100%
+source-wordcount: '170'
+ht-degree: 80%
 ---
 # Mecanismo de oferta{#offer-engine}
 
@@ -36,7 +36,7 @@ A atividade **[!UICONTROL Offer engine]** permite definir uma chamada para o mec
 
 Essa atividade funciona de acordo com o mesmo princípio que a atividade de enriquecimento com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de uma entrega.
 
-![](assets/int_offerengine_activity2.png)
+![Diagrama de fluxo de trabalho com a atividade de Offer engine colocada entre uma Consulta e uma Entrega de correspondência direta.](assets/int_offerengine_activity2.png)
 
 Após configurar sua consulta (consulte esta [seção](query.md)):
 
@@ -47,6 +47,6 @@ Após configurar sua consulta (consulte esta [seção](query.md)):
    >
    >Se usar essa atividade, somente as propostas de oferta usadas na entrega serão armazenadas.
 
-   ![](assets/int_offerengine_activity1.png)
+   ![Atividade do mecanismo de oferta com Espaço de ofertas, Categoria de oferta, Temas, Número de propostas a serem calculadas e Data de contato.](assets/int_offerengine_activity1.png)
 
 1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).

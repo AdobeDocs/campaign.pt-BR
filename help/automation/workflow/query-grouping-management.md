@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 100%
+source-wordcount: '329'
+ht-degree: 74%
 ---
 # Consultar usando gerenciamento de agrupamento {#querying-using-grouping-management}
 
@@ -50,32 +50,32 @@ Para criar este exemplo, aplique as seguintes etapas:
 
 1. Abra o **[!UICONTROL Generic query editor]** e escolha a tabela “Destinatários” (**nms:recipient**).
 
-   ![](assets/query_editor_02.png)
+   ![Tela de tipo de documento do editor de consulta genérico com Destinatários (nms) selecionados.](assets/query_editor_02.png)
 
 1. Na janela **[!UICONTROL Data to extract]**, selecione os campos **[!UICONTROL Email domain]** e **[!UICONTROL Primary key]**. Execute uma contagem no campo **[!UICONTROL Primary key]**.
 
 1. Marque a caixa **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**.
 
-   ![](assets/query_editor_nveau_29.png)
+   ![Dados para extrair a tela com as colunas Email domain e count(primary key), Handle groupings (GROUP BY + HAVING) marcadas.](assets/query_editor_nveau_29.png)
 
 1. Na janela **[!UICONTROL Sorting]**, classifique os domínios de email em ordem decrescente. Para fazer isso, marque **[!UICONTROL Yes]** na coluna **[!UICONTROL Descending sort]**. Clique em **[!UICONTROL Next]**.
 
-   ![](assets/query_editor_nveau_70.png)
+   ![Tela Classificação com domínio de email classificado, mostrando as colunas Classificação e Classificação decrescente.](assets/query_editor_nveau_70.png)
 
 1. Em **[!UICONTROL Data filtering]**, selecione **[!UICONTROL Filtering conditions]**. Vá para a janela **[!UICONTROL Target elements]** e clique em **[!UICONTROL Next]**.
 1. Na janela **[!UICONTROL Data grouping]**, selecione o **[!UICONTROL Email domain]** clicando em **[!UICONTROL Add]**.
 
    Esta janela de agrupamento de dados é exibida somente se a caixa **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) foi marcada.
 
-   ![](assets/query_editor_blocklist_04.png)
+   ![Tela de agrupamento de dados listando o domínio de email (@domain) como a coluna de grupo para a cláusula GROUP BY.](assets/query_editor_blocklist_04.png)
 
 1. Na janela **[!UICONTROL Grouping condition]**, indique uma contagem de chaves primárias maior que 30, pois desejamos que apenas domínios de e-mail alcançados mais de 30 vezes sejam retornados como resultados.
 
    Esta janela aparece quando a caixa **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** foi marcada: é aqui que o resultado do agrupamento é filtrado (HAVING).
 
-   ![](assets/query_editor_blocklist_05.png)
+   ![Tela de condição de agrupamento com count(primary key) maior que 30 para a cláusula HAVING.](assets/query_editor_blocklist_05.png)
 
 1. Na janela **[!UICONTROL Data formatting]**, clique em **[!UICONTROL Next]**: nenhuma formatação é necessária aqui.
 1. Na janela de visualização de dados, clique em **[!UICONTROL Launch data preview]**: aqui, três domínios de e-mail diferentes alcançados mais de 30 vezes são retornados.
 
-   ![](assets/query_editor_blocklist_06.png)
+   ![A tela de visualização de dados retorna dois domínios de email após o início da visualização.](assets/query_editor_blocklist_06.png)

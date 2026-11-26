@@ -20,10 +20,10 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 96%
+source-wordcount: '457'
+ht-degree: 75%
 ---
 # Regras de controle{#control-rules}
 
@@ -52,11 +52,11 @@ Siga as etapas abaixo:
 
 1. Crie uma regra de tipologia **[!UICONTROL Control]**. Selecione um nível de alerta **[!UICONTROL Warning]**.
 
-   ![](assets/campaign_opt_create_control_01.png)
+   ![Caixa de diálogo de criação de regra de tipologia, guia Geral: Tipo de regra de controle, canal SMS, menu suspenso Nível com o Aviso realçado.](assets/campaign_opt_create_control_01.png)
 
 1. Na guia **[!UICONTROL Code]**, insira o script para aplicar o limite desejado, conforme mostrado abaixo:
 
-   ![](assets/campaign_opt_create_control_02.png)
+   ![Guia Código da regra de tipologia com o script que registra um aviso quando o destino da entrega excede 100 contatos.](assets/campaign_opt_create_control_02.png)
 
    Este script acionará um aviso se o target da entrega exceder 100 contatos:
 
@@ -66,18 +66,18 @@ Siga as etapas abaixo:
 
 1. Vincule esta regra a uma tipologia de campanha e faça referência à tipologia na entrega do SMS em questão.
 
-   ![](assets/campaign_opt_create_control_03.png)
+   ![Propriedades de Entrega, guia Tipologia: lista suspensa Tipologia Móvel (Máx. 100) entre as tipologias disponíveis.](assets/campaign_opt_create_control_03.png)
 
 1. Durante a análise da entrega, a regra é aplicada e um aviso é criado se aplicável.
 
-   ![](assets/campaign_opt_create_control_04.png)
+   ![Log de análise de entrega mostrando um aviso de que a regra +100 mensagens detectou um problema; confirme se a entrega está disponível.](assets/campaign_opt_create_control_04.png)
 
    No entanto, a entrega ainda estará pronta para ser enviada.
 
    Se você aumentar o nível de alerta, isso impedirá que a entrega seja iniciada.
 
-   ![](assets/campaign_opt_create_control_05.png)
+   ![Guia Geral da regra de tipologia com o menu suspenso Nível aberto e Erro selecionado em vez de Aviso.](assets/campaign_opt_create_control_05.png)
 
    No final da análise, o botão **[!UICONTROL Confirm delivery]** não estará disponível.
 
-   ![](assets/campaign_opt_create_control_06.png)
+   ![Log de análise de entrega com erro, com o botão Confirmar entrega desabilitado.](assets/campaign_opt_create_control_06.png)

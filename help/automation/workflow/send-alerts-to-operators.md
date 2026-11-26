@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 100%
+source-wordcount: '467'
+ht-degree: 74%
 ---
 # Enviar alertas personalizados aos operadores{#sending-personalized-alerts-to-operators}
 
@@ -37,7 +37,7 @@ O processo é criar um fluxo de trabalho como abaixo:
 1. Utilize uma atividade **[!UICONTROL Test]** para verificar a contagem de população.
 1. Use uma atividade **[!UICONTROL Alert]** para enviar um alerta para um operador, dependendo do resultado da atividade **[!UICONTROL Test]**.
 
-![](assets/uc_operator_1.png)
+![Fluxo de trabalho com uma consulta, código JavaScript e atividade Test; a ramificação True leva a uma atividade Alert, False to End 2.](assets/uc_operator_1.png)
 
 ## Salvar a população na variável de instância {#saving-the-population-to-the-instance-variable}
 
@@ -60,21 +60,21 @@ Verifique se o código Javascript corresponde às suas informações de fluxo de
 * A tag **[!UICONTROL queryDef schema]** deve corresponder ao nome da dimensão de direcionamento usada na atividade de consulta.
 * A tag **[!UICONTROL node expr]** deve corresponder ao nome dos campos que você deseja recuperar.
 
-![](assets/uc_operator_3.png)
+![Script de código JavaScript com o esquema queryDef temp:query e os nós firstName e lastName de destino realçados.](assets/uc_operator_3.png)
 
 Para recuperar essas informações, siga as etapas abaixo:
 
 1. Clique com o botão direito do mouse na transição de saída da atividade de **[!UICONTROL Query]** e selecione **[!UICONTROL Display the target]**.
 
-   ![](assets/uc_operator_4.png)
+   ![Clique com o botão direito do mouse no menu na transição de saída da atividade Query com Display the target selecionado.](assets/uc_operator_4.png)
 
 1. Clique com o botão direito do mouse na lista e depois selecione **[!UICONTROL Configure list]**.
 
-   ![](assets/uc_operator_5.png)
+   ![Registros da lista de destino com o menu do botão direito do mouse aberto e a lista Configurar selecionada.](assets/uc_operator_5.png)
 
 1. A dimensão de direcionamento e os nomes de campos da consulta são exibidos na lista.
 
-   ![](assets/uc_operator_6.png)
+   ![Configure a guia Colunas da lista mostrando o elemento raiz :query temporário da consulta realçado e seus campos de targeting dimension.](assets/uc_operator_6.png)
 
 ## Teste da contagem de população {#testing-the-population-count}
 
@@ -84,7 +84,7 @@ Adicione o código abaixo na atividade **[!UICONTROL Test]** para verificar se a
 var.recCount>0
 ```
 
-![](assets/uc_operator_7.png)
+![Teste a atividade com uma bifurcação condicional True usando a condição vars.recCount>0 e uma ramificação False padrão.](assets/uc_operator_7.png)
 
 ## Configuração de um alerta {#setting-up-the-alert}
 
@@ -108,4 +108,4 @@ for each (var item in items){
 >O comando **[!UICONTROL <%= item.target.recipient.@fieldName %>]** permite adicionar um dos campos que foram salvos na variável da instância por meio da atividade **[!UICONTROL JavaScript code]**.\
 >É possível adicionar quantos campos desejar, desde que tenham sido inseridos no código JavaScript.
 
-![](assets/uc_operator_8.png)
+![Atividade de alerta atribuída a um operador, com uma mensagem que percorre os itens salvos para listar o nome e o sobrenome.](assets/uc_operator_8.png)

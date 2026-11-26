@@ -27,10 +27,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 46%
+source-wordcount: '861'
+ht-degree: 38%
 ---
 # Entregas de campanha de marketing {#marketing-campaign-deliveries}
 
@@ -44,13 +44,13 @@ Você tem duas maneiras de adicionar deliveries às suas campanhas de marketing:
 
 * No link **[!UICONTROL Add a delivery]** no painel de campanha.
 
-  ![](assets/campaign_op_add_delivery.png)
+  ![Painel de campanha com o link Add a delivery e a nova janela de entrega para selecionar um modelo e um rótulo.](assets/campaign_op_add_delivery.png)
 
   Depois de salvo, o delivery é adicionado ao painel de campanha.
 
 * Em um fluxo de trabalho da campanha, na guia **[!UICONTROL Targeting and workflows]**, adicionando a entrega.
 
-  ![](assets/campaign-wf-delivery.png)
+  ![Guia Direcionamento e fluxos de trabalho com a paleta Entregas e um fluxo de trabalho terminando em uma atividade de entrega.](assets/campaign-wf-delivery.png)
 
   Depois que o workflow é iniciado, o delivery é adicionado ao painel de campanha.
 
@@ -60,23 +60,23 @@ Saiba como configurar e executar o fluxo de aprovação de entrega [nesta págin
 
 Um delivery pode ser enviado assim que todas as aprovações forem concedidas. O processo de execução do delivery depende do canal.
 
-* Para deliveries de email ou canais móveis, consulte [esta seção](#start-an-online-delivery)
+* Para deliveries de email ou canais móveis, consulte [Iniciar um delivery de email ou móvel](#start-an-online-delivery)
 
-* Para deliveries de correspondência direta, consulte [esta seção](#start-an-offline-delivery)
+* Para deliveries de correspondência direta, consulte [Iniciar um delivery de correspondência direta](#start-an-offline-delivery)
 
 ### Iniciar um delivery de email ou móvel {#start-an-online-delivery}
 
 Depois que todas as solicitações de aprovação tiverem sido concedidas, o status do delivery será alterado para **[!UICONTROL Pending confirmation]** e ele poderá ser iniciado. Os revisores que podem iniciar o delivery são notificados de que um delivery está pronto para ser iniciado.
 
-![](assets/confirm-delivery.png)
+![Resumo da entrega com o botão Confirmar entrega, exibido assim que todas as aprovações forem concedidas e o status for Pending.](assets/confirm-delivery.png)
 
 As informações também aparecem no painel de campanha. O link **[!UICONTROL Confirm delivery]** permite iniciar a entrega.
 
-![](assets/confirm-delivery-from-dashboard.png)
+![Painel do Campaign com o link Confirmar entrega em uma entrega com confirmação Pendente.](assets/confirm-delivery-from-dashboard.png)
 
 A confirmação do delivery é restrita aos administradores e ao operador ou grupo de operadores explicitamente mencionados nas propriedades de delivery ou campanha. Se nenhum operador for projetado, os administradores e o proprietário da campanha poderão aprovar.
 
-![](assets/select-delivery-reviewers.png)
+![Guia Aprovações de propriedades de entrega mostrando os revisores para cada aprovação e para o início da entrega.](assets/select-delivery-reviewers.png)
 
 No entanto, também é possível permitir que o proprietário da campanha confirme o envio, mesmo que revisores específicos tenham sido definidos nas propriedades de entrega ou campanha. Para fazer isso, como Administrador, crie a opção **NmsCampaign_Ativate_OwnerConfirmation** e defina-a como **1**. As opções são gerenciadas na pasta **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** do explorador do Campaign.
 
@@ -93,7 +93,7 @@ Siga as etapas abaixo para validar o conteúdo e enviar o arquivo para o provedo
 
    Esta etapa só estará disponível se a opção **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** tiver sido habilitada na guia **[!UICONTROL Approvals]** dos parâmetros avançados da campanha.
 
-   ![](assets/enable-proof-validation.png)
+   ![Janela de validação de prova com Habilitar o envio e a validação de provas (correspondência direta) selecionadas e um grupo de prova.](assets/enable-proof-validation.png)
 
 1. Clique no botão **[!UICONTROL Send a proof]** para criar as provas.
 
@@ -115,17 +115,17 @@ A extração de arquivo inicia dois processos: cálculo de orçamento e cálculo
 
 * A guia **[!UICONTROL Budget]** permite gerenciar os orçamentos da campanha. O total das entradas de custo é exibido no campo **[!UICONTROL Calculated cost]** da guia principal da campanha e o programa ao qual ele pertence. Os montantes também são refletidos no orçamento da campanha.
 
-  ![](assets/campaign-budget-tab.png)
+  ![Guia Orçamento da Campanha mostrando o orçamento relacionado, o custo calculado e a lista de linhas de Custo por entrega.](assets/campaign-budget-tab.png)
 
   O custo real será calculado de acordo com as informações fornecidas pelo roteador. Apenas mensagens enviadas são faturadas.
 
 * Os estoques são definidos no nó **[!UICONTROL Administration > Campaign management > Stocks]** da árvore.
 
-  ![](assets/campaign-stocks.png)
+  ![Nó de ações no explorador do Campaign com o painel de ações de folhetos de vendas e suas linhas de ações.](assets/campaign-stocks.png)
 
   Estruturas de custo no nó **[!UICONTROL Administration > Campaign management > Service providers]**.
 
-  ![](assets/campaign-service-providers.png)
+  ![Nó de provedores de serviços no explorador do Campaign com o provedor Blue Print e sua lista de serviços.](assets/campaign-service-providers.png)
 
   As linhas de estoque estão visíveis na seção de estoque. Para definir o estoque inicial, abra uma linha de estoque. O estoque é reduzido sempre que uma entrega ocorre. Você pode definir um nível de alerta e notificações.
 

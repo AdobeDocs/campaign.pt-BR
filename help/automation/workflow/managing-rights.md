@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 96%
+source-wordcount: '329'
+ht-degree: 95%
 ---
 # Gerenciar permissões de fluxo de trabalho{#managing-rights}
 
@@ -40,7 +40,7 @@ Em geral, os operadores que atuam com fluxos de trabalho precisam acessar os arq
 
 Eles também devem ser mapeados com os direitos nomeados que coincidam com as ações executadas pelos fluxos de trabalho que eles afetarão (importação do destinatário, acesso à arquivos, fusão, execução de script SQL, etc.).
 
-Para obter mais informações sobre gerenciamento de operadores e permissões, consulte [esta seção](../../v8/start/gs-permissions.md).
+Para obter mais informações sobre gerenciamento de operadores e permissões, consulte [Introdução a permissões no Campaign v8](../../v8/start/gs-permissions.md).
 
 ## Grupos de operadores {#operator-groups-wf}
 

@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 100%
+source-wordcount: '175'
+ht-degree: 77%
 ---
 # Início e término{#start-and-end}
 
@@ -32,14 +32,14 @@ As atividades **[!UICONTROL Start]** e **[!UICONTROL End]** permitem marcar graf
 
   A execução de um fluxo de trabalho começa com atividades sem uma transição de entrada e atividades tipo início.
 
-  ![](assets/s_user_segmentation_start_stop.png)
+  ![Fluxo de trabalho com atividade de Início, Entrega, Aprovação, Controle de entrega e duas atividades de Término, uma por resultado de aprovação.](assets/s_user_segmentation_start_stop.png)
 
 * **[!UICONTROL End]**
 
   É possível configurar a atividade **[!UICONTROL End]** para interromper todas as tarefas em andamento. Para fazer isso, clique duas vezes na atividade para exibir suas propriedades e marque a opção apropriada.
 
-  ![](assets/s_user_segmentation_end.png)
+  ![Encerre as propriedades da atividade com a opção Parar todas as tarefas em andamento selecionada.](assets/s_user_segmentation_end.png)
 
   Os dados na tabela de trabalho são excluídos automaticamente quando a atividade final é habilitada. Se isso não for necessário e para evitar cargas desnecessárias, é possível desabilitar a transição na última saída de atividade. Por exemplo, em uma saída de remessa, se nenhum processo estiver agendado, desmarque a opção relevante conforme mostrado abaixo:
 
-  ![](assets/s_advuser_delivery_option_no_output.png)
+  ![Propriedades da atividade de entrega com a opção Generate an outbound transition desmarcada.](assets/s_advuser_delivery_option_no_output.png)

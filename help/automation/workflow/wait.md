@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 100%
+source-wordcount: '206'
+ht-degree: 93%
 ---
 # Aguardar{#wait}
 
@@ -30,7 +30,7 @@ Uma atividade **Wait** ativa sua transição após um atraso de tempo de qualque
 
 É possível inserir o rótulo e o tempo de espera usando o editor, como no exemplo abaixo:
 
-![](assets/edit_wait.png)
+![Editor de atividade de espera com o rótulo Wait 90s e com uma duração de 1m 30s.](assets/edit_wait.png)
 
 No campo **[!UICONTROL Duration]**, o valor pode ser expresso na unidade de sua escolha: (de acordo com as configurações regionais do operador):
 

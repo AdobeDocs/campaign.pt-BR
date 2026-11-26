@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 96%
+source-wordcount: '388'
+ht-degree: 90%
 ---
 # Entrega contínua{#continuous-delivery}
 
@@ -34,11 +34,11 @@ ht-degree: 96%
 
 Uma ação do tipo **Entrega contínua** permite adicionar novos destinatários a uma entrega existente. Esse tipo de entrega evita que você tenha que criar uma nova entrega toda vez: este modo é frequentemente mais eficiente, em especial para alertas de baixo volume ou notificações enviadas quando necessário.
 
-![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#continuous-delivery-video)
+![Ícone de reprodução de vídeo](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#continuous-delivery-video)
 
 Em um nível de modelo de entrega, você pode especificar um script para calcular o rótulo (e a pasta da campanha) da entrega associada. Se o script calcula uma entrega que ainda não existe, ele será criado imediatamente.
 
-![](assets/edit_diffusion_fil.png)
+![Atividade de entrega contínua com um campo Modelo e opções de Destinatários, além da caixa de seleção Processar erros](assets/edit_diffusion_fil.png)
 
 A opção **[!UICONTROL Process errors]** exibe uma transição específica que será ativada se um erro for gerado. Nesse caso, o fluxo de trabalho não entra no modo de erro e continua a execução.
 

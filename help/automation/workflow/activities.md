@@ -26,26 +26,26 @@ topic_v2:
     internal-label: Implementation
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 23%
+source-wordcount: '141'
+ht-degree: 15%
 ---
 # Atividades de fluxos de trabalho{#wf-activities}
 
 As atividades de workflow são agrupadas por categoria, em quatro guias diferentes.
 
-![](assets/wf-activity-tabs.png)
+![Paleta de atividades com suas quatro guias de categoria realçadas e as atividades de Direcionamento listadas.](assets/wf-activity-tabs.png)
 
 Dependendo das suas permissões, da sua implementação e do contexto em que o fluxo de trabalho é criado, as atividades disponíveis podem ser diferentes.
 
 Por exemplo, os fluxos de trabalho criados em uma campanha têm uma guia **Deliveries** específica, com todos os canais. Esta guia não está disponível em [workflow técnico](technical-workflows.md).
 
-![](assets/campaign-wf-activities.png)
+![Guia Deliveries de um fluxo de trabalho de campanha: Email, Correspondência direta, Celular, iOS, Android, Outros e Entrega recorrente.](assets/campaign-wf-activities.png)
 
 Os fluxos de trabalho técnicos têm uma guia **Eventos** específica que não está disponível nos [fluxos de trabalho da campanha](campaign-workflows.md).
 
-![](assets/tech-wf-activities.png)
+![Guia Eventos de um fluxo de trabalho técnico: coletor de arquivos, transferência de arquivos, download da Web, emails de entrada e SMS de entrada.](assets/tech-wf-activities.png)
 
 Todas as atividades estão detalhadas nas seções abaixo:
 

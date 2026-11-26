@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 100%
+source-wordcount: '294'
+ht-degree: 94%
 ---
 # Atualização da lista trimestral usando uma consulta incremental {#quarterly-list-update}
 
@@ -36,7 +36,7 @@ No exemplo a seguir, uma [consulta incremental](incremental-query.md) é usada p
 
 Como essas campanhas são iniciadas no início de cada temporada para oferecer atividades esportivas relevantes, essas listas são atualizadas a cada trimestre. No entanto, um destinatário só deve ser alvo dessa campanha uma vez a cada 9 meses. Isso permite espaçar a frequência de elegibilidade do destinatário e oferecer atividades para diferentes estações ao longo dos anos.
 
-![](assets/incremental_query_example.png)
+![Fluxo de trabalho com uma atividade de Query incremental vinculada pela sua transição de Resultado para uma atividade de atualização de Lista](assets/incremental_query_example.png)
 
 1. Adicione uma consulta incremental, bem como uma atividade de atualização da lista em um novo fluxo de trabalho.
 1. Configure a guia **[!UICONTROL Incremental query]** da atividade, conforme especificado em [Criar uma consulta](query.md#creating-a-query).

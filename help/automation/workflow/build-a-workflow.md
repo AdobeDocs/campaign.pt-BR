@@ -18,10 +18,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 78%
+source-wordcount: '1005'
+ht-degree: 65%
 ---
 # Criar um fluxo de trabalho {#build-a-workflow}
 
@@ -31,7 +31,7 @@ O fluxo de criação do workflow depende do tipo de workflow. Você pode:
 
 * Crie [workflows para construção do target](#targeting-workflows) a partir do nó **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]** do Explorer ou a partir da guia **[!UICONTROL Profiles and Targets]** da home page, por meio da subguia **[!UICONTROL Targeting workflows]**.
 
-  ![](assets/create-targeting-wf.png)
+  ![Lista de fluxos de trabalho para construção do target na guia Perfis e destinos com o botão Criar realçado](assets/create-targeting-wf.png)
 
 * Criar [Fluxos de trabalho de campanha](#campaign-workflows) a partir da guia **[!UICONTROL Targeting and workflows]** de uma campanha
 
@@ -39,7 +39,7 @@ O fluxo de criação do workflow depende do tipo de workflow. Você pode:
 
 Clique no botão **[!UICONTROL New]** acima da lista de fluxos de trabalho.
 
-![](assets/create_a_wf_icon.png)
+![Lista de fluxos de trabalho para construção do target com o botão New destacado acima da lista](assets/create_a_wf_icon.png)
 
 Insira um rótulo e clique em **[!UICONTROL Save]**.
 
@@ -47,7 +47,7 @@ Insira um rótulo e clique em **[!UICONTROL Save]**.
 
 Defina agora as várias atividades e as vincule no diagrama. Nessa fase de configuração, podemos ver o rótulo do diagrama e o status do fluxo de trabalho (Edição em andamento). A seção inferior da janela é usada para editar apenas o diagrama. Ela contém uma barra de ferramentas, uma paleta de atividades (à esquerda) e o próprio diagrama (à direita).
 
-![](assets/new-workflow-2.png)
+![Editor de fluxo de trabalho com rótulo, Status sendo editado, barra de ferramentas, paleta de atividades e área de diagrama vazia](assets/new-workflow-2.png)
 
 >[!NOTE]
 >
@@ -66,17 +66,17 @@ Criação do diagrama
 
    Adicione uma atividade de **Iniciar** e, em seguida, uma atividade **Entrega** no diagrama.
 
-   ![](assets/new-workflow-3.png)
+   ![Diagrama com uma atividade Start e uma atividade Delivery sendo soltas nela](assets/new-workflow-3.png)
 
 1. Vincule as atividades ao arrastar a atividade de transição **Iniciar** e soltar na atividade de **Entrega**.
 
-   ![](assets/new-workflow-4.png)
+   ![Iniciar atividade vinculada por uma transição para a atividade de Entrega](assets/new-workflow-4.png)
 
    Você pode vincular automaticamente uma atividade à atividade anterior ao colocar a nova atividade no final da transição.
 
 1. Adicione as atividades necessárias e as vincule conforme mostrado no diagrama abaixo.
 
-   ![](assets/new-workflow-5.png)
+   ![Diagrama de fluxo de trabalho que vincula as transições Início, Entrega, Aprovação, Controle de Entrega e Fim com Sim e Sem](assets/new-workflow-5.png)
 
 >[!CAUTION]
 >
@@ -88,11 +88,11 @@ Você pode alterar a exibição e o layout do gráfico usando os seguintes eleme
 
   A barra de ferramentas de edição do diagrama oferece acesso às funções de layout e de execução do fluxo de trabalho.
 
-  ![](assets/wf-toolbar.png)
+  ![Barra de ferramentas de edição de diagramas realçada acima de um fluxo de trabalho com consultas, união, eliminação de duplicação, divisão e entregas](assets/wf-toolbar.png)
 
   Isso permite adaptar o layout da ferramenta de edição: exibição da paleta e da visão geral, tamanho e alinhamento de objetos gráficos.
 
-  ![](assets/s_user_segmentation_toolbar.png)
+  ![Grupos de barras de ferramentas: exibição e layout, rastreamento e execução, além do botão Propriedades](assets/s_user_segmentation_toolbar.png)
 
   Os ícones relacionados ao progresso e à exibição de logs são detalhados nestas seções:
 
@@ -115,17 +115,17 @@ Clique duas vezes em uma atividade para configurá-la ou clique com o botão dir
 
 >[!NOTE]
 >
->As atividades de fluxo de trabalho da campanha são detalhadas [nesta seção](activities.md).
+>As atividades de fluxo de trabalho de campanha são detalhadas em [Sobre atividades de fluxo de trabalho](activities.md).
 
 As primeiras guias contêm a configuração básica. A guia **[!UICONTROL Advanced]** contém os parâmetros adicionais, que são usados principalmente para definir o comportamento em caso de erro, especificando a duração da execução para uma atividade e para inserir um script de inicialização.
 
 Para entender melhor as atividades e melhorar a legibilidade do fluxo de trabalho, você pode inserir comentários nas atividades.
 
-![](assets/example1-comment.png)
+![Guia Avançado da atividade de query com um comentário inserido no campo Comentário](assets/example1-comment.png)
 
 Esses comentários são exibidos automaticamente quando os operadores navegam pela atividade.
 
-![](assets/example2-comment.png)
+![Texto de comentário exibido em uma dica de ferramenta quando o ponteiro está sobre a atividade Split no diagrama](assets/example2-comment.png)
 
 
 ## Modelos de fluxo de trabalho {#workflow-templates}
@@ -138,7 +138,7 @@ Os modelos de fluxo de trabalho são armazenados no nó **[!UICONTROL Resources 
 
 Além das propriedades usuais do fluxo de trabalho, as propriedades do modelo permitem especificar o arquivo de execução para fluxos de trabalho criados com base nesse modelo.
 
-![](assets/wf-template-properties.png)
+![Guia Geral de propriedades do fluxo de trabalho com o seletor de pasta Execução aberto na pasta Fluxos de Trabalho](assets/wf-template-properties.png)
 
 ## Fluxos de trabalho duplicados {#duplicate-workflows}
 
@@ -149,7 +149,7 @@ A Adobe recomenda duplicar um fluxo de trabalho em vez de executar uma cópia/co
 1. Clique com o botão direito do mouse em um fluxo de trabalho.
 1. Clique em **Duplicate**.
 
-   ![](assets/duplicate-workflows.png)
+   ![Lista de fluxos de trabalho com o menu do botão direito do mouse aberto e a opção Duplicar realçada](assets/duplicate-workflows.png)
 
 1. Na janela do fluxo de trabalho, altere o rótulo do fluxo de trabalho.
 1. Clique em **Save**.

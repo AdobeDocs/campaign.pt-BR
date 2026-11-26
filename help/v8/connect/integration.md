@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: 765af3342eb29f27dafa12f72634f5d91361bed5
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 12%
+source-wordcount: '489'
+ht-degree: 11%
 ---
 # Conectar o Campaign com suas soluções{#gs-ac-connectors}
 
@@ -49,7 +49,7 @@ O Campaign v8 pode se conectar com as seguintes soluções da Adobe. Navegue pel
 
 * Adobe Analytics. [Saiba mais](../connect/ac-aa.md)
 * Acionadores da Adobe Experience Cloud. [Saiba mais](../connect/ac-triggers.md)
-* Adobe Experience Manager. [Saiba mais](../connect/ac-aem.md)
+* Adobe Experience Manager, incluindo ativos e modelos do Adobe Experience Manager as a Cloud Service na interface da Web do Campaign. [Saiba mais](../connect/ac-aem.md)
 * Adobe Experience Platform. [Saiba mais](../connect/ac-aep.md)
 * Adobe Journey Optimizer. [Saiba mais](../connect/ac-ajo.md)
 * Adobe Target. [Saiba mais](../connect/ac-at.md)

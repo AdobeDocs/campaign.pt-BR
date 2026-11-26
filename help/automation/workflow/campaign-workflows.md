@@ -30,16 +30,16 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 79%
+source-wordcount: '128'
+ht-degree: 59%
 ---
 # Fluxos de trabalho da campanha {#campaign-workflows}
 
 Para cada campanha, você pode criar fluxos de trabalho que serão executados na guia **[!UICONTROL Targeting and workflows]**. Esses fluxos de trabalho são específicos da campanha.
 
-![](assets/wf-in-op-edit-delivery-tab.png)
+![Guia Direcionamento e fluxos de trabalho de uma campanha que mostra a lista de fluxos de trabalho e um diagrama com consultas, divisão e entregas.](assets/wf-in-op-edit-delivery-tab.png)
 
 Esta guia contém as mesmas atividades que todos os fluxos de trabalho. [Saiba mais](#implementation-steps-)
 
@@ -47,6 +47,6 @@ Além de campanhas de segmentação, os fluxos de trabalho da campanha permitem 
 
 Todos os fluxos de trabalho da campanha são centralizados no nó **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**.
 
-![](assets/campaigns_wf.png)
+![Explorer com o nó Administration > Production > Objects created automatically > Campaign workflows selecionado.](assets/campaigns_wf.png)
 
-Workflows da campanha e exemplos de implementação são detalhados em [esta seção](../campaigns/marketing-campaign-target.md).
+Os fluxos de trabalho da campanha e exemplos de implementação são detalhados em [Público-alvo da campanha de marketing](../campaigns/marketing-campaign-target.md).

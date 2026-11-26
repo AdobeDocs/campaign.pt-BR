@@ -23,10 +23,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 100%
+source-wordcount: '745'
+ht-degree: 77%
 ---
 # Usar a funcionalidade de mesclagem da atividade de desduplicação {#deduplication-merge}
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 Este caso de uso descreve como usar a funcionalidade **[!UICONTROL Merge]** na atividade de **[!UICONTROL Deduplication]**.
 
-Para obter mais informações sobre essa funcionalidade, consulte [esta seção](deduplication.md#merging-fields-into-single-record).
+Para obter mais informações sobre esta funcionalidade, consulte [Mesclar campos em um único registro de dados](deduplication.md#merging-fields-into-single-record).
 
 A atividade **[!UICONTROL Deduplication]** é usada para remover linhas duplicadas de um conjunto de dados. Nesse caso de uso, os dados mostrados abaixo são duplicados com base no campo Email.
 
@@ -57,11 +57,11 @@ Para habilitar a funcionalidade de mesclagem, primeiro é necessário configurar
 
 1. Selecione o campo de reconciliação a ser usado para a desduplicação e clique em **[!UICONTROL Next]**. Neste exemplo, queremos desduplicar com base no campo de email.
 
-   ![](assets/uc_merge_edit.png)
+   ![Janela de dimensão de direcionamento de desduplicação com Destinatários selecionados e o campo de reconciliação de email escolhido.](assets/uc_merge_edit.png)
 
 1. Clique no link **[!UICONTROL Advanced parameters]** e ative as opções **[!UICONTROL Merge records]** e **[!UICONTROL Use several record merging criteria]**.
 
-   ![](assets/uc_merge_advanced_parameters.png)
+   ![Caixa de diálogo de parâmetro de eliminação de duplicação com registros Mesclados e várias opções de critérios de mesclagem de registros marcadas.](assets/uc_merge_advanced_parameters.png)
 
 1. A guia **[!UICONTROL Merge]** é adicionada à tela de configuração **[!UICONTROL Deduplication]**. Usaremos essa guia para especificar os dados a serem mesclados ao executar a desduplicação.
 
@@ -78,31 +78,31 @@ Para configurar essas regras, siga estas etapas:
 
 1. Abra a guia **[!UICONTROL Merge]** e clique no botão **[!UICONTROL Add]**.
 
-   ![](assets/uc_merge_add.png)
+   ![Mescle a guia da atividade de Eliminação de Duplicação com o botão Adicionar acima de uma lista vazia de dados mesclados.](assets/uc_merge_add.png)
 
 1. Especifique o identificador e o rótulo do grupo de campos que serão mesclados.
 
-   ![](assets/uc_merge_identifier.png)
+   ![Identificador e etapa de rótulo do assistente Selecionar dados a serem mesclados, com o nome do identificador e o Nome do rótulo inseridos.](assets/uc_merge_identifier.png)
 
 1. Indique as condições de seleção dos registros que serão considerados.
 
-   ![](assets/uc_merge_filter.png)
+   ![A etapa de filtro com condições Nome não está vazia e Sobrenome não está vazia para selecionar os registros a serem mesclados.](assets/uc_merge_filter.png)
 
 1. Classifique pela última data de modificação para selecionar o nome mais recente.
 
-   ![](assets/uc_merge_sort.png)
+   ![Etapa de classificação com data de modificação classificada em ordem decrescente para selecionar o registro mais recente.](assets/uc_merge_sort.png)
 
 1. Selecione os campos que serão mesclados. Neste exemplo, queremos manter os campos de nome e sobrenome.
 
-   ![](assets/uc_merge_keep.png)
+   ![Etapa de campos a serem mantidos com o Nome e Sobrenome selecionados como colunas de saída.](assets/uc_merge_keep.png)
 
 1. Os campos são adicionados ao conjunto de dados para mesclagem, e um novo elemento é adicionado ao esquema de fluxo de trabalho.
 
    Repita essas etapas para configurar os campos de telefone celular e telefone.
 
-   ![](assets/dedup8.png)
+   ![Guia Mesclar listando o Nome, celular e telefone dos grupos mesclados com seus aliases e as condições de if habilitado.](assets/dedup8.png)
 
-   ![](assets/dedup9.png)
+   ![Guia Esquema mostrando a estrutura de dados gerada da desduplicação com os nós móvel, nome e telefone.](assets/dedup9.png)
 
 ## Resultados {#results}
 

@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 89%
+source-wordcount: '513'
+ht-degree: 82%
 ---
 # Monitorar fluxos de trabalho técnicos {#monitoring-technical-workflows}
 
@@ -37,7 +37,7 @@ Os fluxos de trabalho técnicos precisam ser monitorados e ações precisam ser 
 
 O painel de monitoramento da instância pode ser acessado por meio da guia **[!UICONTROL Monitoring]**.
 
-![](assets/monitoring_technical_workflows1.png)
+![Painel de monitoramento de instância com a lista de processos, fluxos de trabalho e entregas com falha e links de indicadores do sistema](assets/monitoring_technical_workflows1.png)
 
 Em Indicadores do sistema e arquivos principais, verifique se nenhum indicador está realçado em vermelho. Se esse for o caso, e alguns são, você deve:
 
@@ -75,7 +75,7 @@ Para **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
 O grupo **[!UICONTROL Workflow supervisors]** deve conter operadores que precisam ser informados sobre falhas e quem pode realizar uma ação a tempo.
 
-![](assets/monitoring_technical_workflows3.png)
+![Guia Geral de propriedades do fluxo de trabalho com supervisores de fluxo de trabalho selecionados no campo Supervisor(es)](assets/monitoring_technical_workflows3.png)
 
 Um alerta deve ser gerado e enviado ao grupo correto no caso de problema.
 
@@ -93,7 +93,7 @@ Todos os fluxos de trabalho técnicos personalizados devem ser documentados em u
 * Operador responsável pelo monitoramento.
 * Instruções sobre o que fazer em caso de erro.
 
-![](assets/monitoring_technical_workflows4.png)
+![Planilha de manutenção listando cada frequência, início, duração, pasta, nome, crítica e dependências do fluxo de trabalho](assets/monitoring_technical_workflows4.png)
 
 ## Planejamento e automação do monitoramento {#planning-and-automation-of-monitoring}
 

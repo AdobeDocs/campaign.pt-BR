@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 84%
+source-wordcount: '1058'
+ht-degree: 77%
 ---
 # Aplicar regras de tipologia{#applying-rules}
 
@@ -45,14 +45,14 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Vá para a guia **[!UICONTROL Rules]**, clique no botão **[!UICONTROL Add]** e selecione as regras a serem aplicadas com esta tipologia.
 
-   ![](assets/campaign_opt_pressure_sample_1_6.png)
+   ![Guia Regras de tipologia com o botão Adicionar e a caixa de diálogo Adicionar regras listando as regras de tipologia a serem selecionadas](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. Salve a tipologia: ela será adicionada à lista de tipologias existentes.
 1. Abra o delivery ao qual deseja aplicar as regras.
 1. Navegue até as propriedades de entrega e abra a guia **[!UICONTROL Typology]**.
 1. Selecione a tipologia na lista suspensa.
 
-   ![](assets/campaign_opt_pressure_sample_1_7.png)
+   ![Propriedades de entrega, guia Tipologia, com o menu suspenso Tipologia listando Pressão de Clientes/Clientes Potenciais](assets/campaign_opt_pressure_sample_1_7.png)
 
    >[!NOTE]
    >
@@ -68,7 +68,7 @@ Para definir as condições de aplicação de uma regra, clique no link **[!UICO
 
 Em seguida, use o [editor de consulta](../../v8/start/query-editor.md) para definir condições de filtragem. No exemplo a seguir, a regra de capacidade apresenta apenas as entregas com a palavra &#39;oferta&#39; em seu rótulo ou entregas criadas antes de 1º de abril de 2013.
 
-![](assets/campaign_opt_create_capacity_criterion.png)
+![A guia Geral da regra de capacidade com a consulta de condições de aplicativo no rótulo contém a oferta e a data de criação](assets/campaign_opt_create_capacity_criterion.png)
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Por exemplo, uma regra de pressão com ordem de execução de 20 é executada an
 
 Para regras de **[!UICONTROL Control]**, é possível decidir em qual ponto do ciclo de vida da entrega ela será aplicada: antes ou depois do direcionamento, no início da personalização, no final da análise. Na guia **[!UICONTROL Phase]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL General]**.
 
-![](assets/campaign_opt_define_control_phase.png)
+![Guia Geral da regra de tipologia de controle com o menu suspenso Fase listando as quatro fases do aplicativo](assets/campaign_opt_define_control_phase.png)
 
 Os valores possíveis são:
 
@@ -147,7 +147,7 @@ Os valores possíveis são:
 
 Como opção, é possível usar o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular as entregas ao servidor de entregas (MTA) dessa afinidade. Isso permite a restrição do número de emails para entregas específicas em máquinas ou endereços de saída.
 
-![](assets/campaign_opt_select_ip_affinity.png)
+![Guia Geral de Tipologia com o campo Afinidade em Gerenciamento de afinidades com endereços IP](assets/campaign_opt_select_ip_affinity.png)
 
 >[!NOTE]
 >
@@ -161,9 +161,9 @@ Como opção, é possível usar o campo **[!UICONTROL Managing affinities with I
 
 A guia **[!UICONTROL Distributed Marketing]** permite definir o remapeamento de tipologias e/ou regras que se aplicam quando uma campanha compartilhada é solicitada e/ou reservada. As tipologias/regras definidas para uma entidade local (vinculada àqueles definidos para a entidade central) substituem as regras/tipologias vinculadas à entidade central. O remapeamento permite adaptar regras da entidade central às entidades locais que solicitam a campanha.
 
-![](assets/simu_campaign_opti_distrib_mkg.png)
+![Guia Marketing distribuído de tipologia com a entidade organizacional e os campos de tipologia central associados](assets/simu_campaign_opti_distrib_mkg.png)
 
 >[!NOTE]
 >
 >Em tipologias e regras de tipologia, a guia **[!UICONTROL Distributed Marketing]** será adicionada caso a licença inclua essa opção: verifique o contrato de licença.\
->Para obter mais informações sobre Marketing distribuído, consulte [esta seção](../distributed-marketing/about-distributed-marketing.md).
+>Para obter mais informações sobre Marketing distribuído, consulte [Introdução ao marketing distribuído](../distributed-marketing/about-distributed-marketing.md).

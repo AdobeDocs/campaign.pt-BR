@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 84%
+source-wordcount: '1067'
+ht-degree: 57%
 ---
 # Enriquecer dados{#enriching-data}
 
@@ -39,7 +39,7 @@ ht-degree: 84%
 
 Este caso de uso detalha possíveis usos da atividade **[!UICONTROL Enrichment]** em um fluxo de trabalho de direcionamento. Para obter mais informações sobre como usar a atividade **[!UICONTROL Enrichment]**, consulte [Enriquecimento](enrichment.md).
 
-Um caso de uso sobre como enriquecer uma entrega de email com datas personalizadas também está disponível [nesta seção](email-enrichment-with-custom-date-fields.md).
+Um caso de uso sobre como enriquecer uma entrega de email com datas personalizadas também está disponível em [Enriquecimento de email com campos de data personalizados](email-enrichment-with-custom-date-fields.md).
 
 Os contatos do banco de dados de marketing recebem um convite para participar de uma competição por meio de um aplicativo Web. Os resultados da competição são recuperados na tabela **[!UICONTROL Competition results]**. Esta tabela está vinculada à tabela de contatos (**[!UICONTROL Recipients]**). A tabela **[!UICONTROL Competition results]** contém os seguintes campos:
 
@@ -47,17 +47,17 @@ Os contatos do banco de dados de marketing recebem um convite para participar de
 * Trial number (@trial)
 * Score (@pontuação)
 
-![](assets/uc1_enrich_1.png)
+![Tabela de destinatários vinculada 1-n à tabela de resultados da concorrência com os campos Nome da concorrência, Número da avaliação e Pontuação.](assets/uc1_enrich_1.png)
 
 Um contato encontrado na tabela **[!UICONTROL Recipients]** pode ser vinculado a várias linhas na tabela **[!UICONTROL Competition results]**. A relação entre essas duas tabelas é do tipo 1-n. Aqui está um exemplo dos logs de resultados de um destinatário:
 
-![](assets/uc1_enrich_2.png)
+![Guia Competições de um destinatário listando três linhas de resultados da Competição com nome da Competição, número de Avaliação e Pontuação.](assets/uc1_enrich_2.png)
 
 O objetivo desse caso de uso é enviar entregas personalizadas às pessoas que faziam parte da competição mais recente, dependendo de suas pontuações mais altas. O destinatário com a pontuação mais alta obtém o primeiro prêmio, o destinatário com a segunda pontuação mais alta recebe um prêmio de consolação e todos os outros obtêm uma mensagem desejando uma sorte melhor da próxima vez.
 
 Para configurar esse caso de uso, criamos o seguinte fluxo de trabalho de segmentação:
 
-![](assets/uc1_enrich_3.png)
+![Fluxo de trabalho de direcionamento: duas consultas alimentam uma Interseção e, em seguida, Enriquecimento e Divisão, resultando em três atividades de entrega.](assets/uc1_enrich_3.png)
 
 Para criar o fluxo de trabalho, aplique as seguintes etapas:
 
@@ -70,11 +70,11 @@ Para criar o fluxo de trabalho, aplique as seguintes etapas:
 
 O primeiro query é usado para direcionar recipients que foram adicionados ao banco de dados nos últimos seis meses.
 
-![](assets/uc1_enrich_4.png)
+![Atividade Query Assinantes recentes com o filtro Data de criação (@created) em ou após MonthsAgo(-6).](assets/uc1_enrich_4.png)
 
 O segundo query é usado para direcionar os recipients que faziam parte da última competição.
 
-![](assets/uc1_enrich_5.png)
+![A filtragem da atividade de consulta nos resultados da Concorrência existe, como Nome da Concorrência igual ao Link mais fraco.](assets/uc1_enrich_5.png)
 
 Em seguida, uma atividade tipo **[!UICONTROL Intersection]** é adicionada para direcionar os destinatários incluídos no banco de dados nos últimos seis meses e que entraram na última competição.
 
@@ -84,62 +84,62 @@ Neste exemplo, saiba como personalizar entregas de acordo com o campo **[!UICONT
 
 1. Na tela de edição da atividade de enriquecimento, selecione **[!UICONTROL Add data]**, então **[!UICONTROL Data linked to the filtering dimension]** e clique em **[!UICONTROL Next]**.
 
-   ![](assets/uc1_enrich_6.png)
+   ![Caixa de diálogo Dados adicionais com a opção Dados vinculados à dimensão do filtro selecionada e Próximo realçado.](assets/uc1_enrich_6.png)
 
 1. Em seguida, selecione a opção **[!UICONTROL Data linked to the filtering dimension]**, selecione a tabela **[!UICONTROL Competition results]** e clique em **[!UICONTROL Next]**.
 
-   ![](assets/uc1_enrich_7.png)
+   ![Selecione campos para adicionar a tela com o link Competition results selecionado em Data linked to the filtering dimension.](assets/uc1_enrich_7.png)
 
 1. Digite um ID e um rótulo e selecione a opção **[!UICONTROL Limit the line count]** no campo **[!UICONTROL Data collected]**. No campo **[!UICONTROL Lines to retrieve]**, selecione &#39;1&#39; como um valor. A atividade de enriquecimento adicionará uma única linha da tabela **[!UICONTROL Competition results]** à tabela de trabalho do fluxo de trabalho para cada destinatário. Clique em **[!UICONTROL Next]**.
 
-   ![](assets/uc1_enrich_8.png)
+   ![Tela de parâmetros gerais com Dados coletados definidos como Limitar a contagem de linhas e Linhas a serem recuperadas definidas como 1.](assets/uc1_enrich_8.png)
 
 1. Neste exemplo, devemos recuperar a pontuação mais alta do destinatário, mas apenas da última competição. Para fazer isso, adicione um filtro ao campo **[!UICONTROL Competition name]** para excluir todas as linhas relacionadas às competições anteriores. Clique em **[!UICONTROL Next]**.
 
-   ![](assets/uc1_enrich_9.png)
+   ![Filtrar tela com a condição Nome da concorrência (@game) igual ao Link mais fraco.](assets/uc1_enrich_9.png)
 
 1. Vá para a tela **[!UICONTROL Sort]** e clique no botão **[!UICONTROL Add]**, selecione o campo **[!UICONTROL Score]** e marque a caixa na coluna **[!UICONTROL descending]** para classificar os itens dos campos **[!UICONTROL Score]** em ordem decrescente. Para cada destinatário, a atividade de enriquecimento adiciona uma linha que corresponde à pontuação mais alta para o último jogo. Clique em **[!UICONTROL Next]**.
 
-   ![](assets/uc1_enrich_10.png)
+   ![Classificar tela onde o campo Pontuação é adicionado com a opção Descendente marcada para manter a pontuação mais alta.](assets/uc1_enrich_10.png)
 
 1. Na janela **[!UICONTROL Data to add]**, clique duas vezes no campo **[!UICONTROL Score]**. Para cada destinatário, a atividade de enriquecimento adicionará somente o campo **[!UICONTROL Score]**. Clique em **[!UICONTROL Finish]**.
 
-   ![](assets/uc1_enrich_11.png)
+   ![Dados para adicionar a tela somente com o campo Pontuação (@score) em Colunas de saída e Término realçado.](assets/uc1_enrich_11.png)
 
 Clique com o botão direito do mouse na transição de entrada da atividade de enriquecimento e selecione **[!UICONTROL Display the target]**. A tabela de trabalho contém os seguintes dados:
 
-![](assets/uc1_enrich_13.png)
+![Exibir janela de população aberta com Exibir o destino, listando a chave primária e o targeting dimension, sem pontuação.](assets/uc1_enrich_13.png)
 
 O esquema vinculado é:
 
-![](assets/uc1_enrich_15.png)
+![Guia Esquema da população de entrada mostrando apenas a Interseção com chave primária e Targeting dimension.](assets/uc1_enrich_15.png)
 
 Renovar esta operação na transição de saída da atividade de enriquecimento. Podemos ver que os dados vinculados às pontuações do destinatário foram adicionados. A pontuação mais alta de cada destinatário foi recuperada.
 
-![](assets/uc1_enrich_12.png)
+![Exibir janela de população após Enriquecimento listando uma coluna de Pontuação com a pontuação mais alta de cada destinatário.](assets/uc1_enrich_12.png)
 
 O esquema correspondente também foi enriquecido.
 
-![](assets/uc1_enrich_14.png)
+![Guia Esquema da população enriquecida mostrando os resultados da Concorrência com o campo Pontuação adicionado.](assets/uc1_enrich_14.png)
 
 ## Etapa 3: Divisão e entrega {#step-3--split-and-delivery}
 
 Para classificar os destinatários com base em suas pontuações, uma atividade **[!UICONTROL Split]** é adicionada após o enriquecimento.
 
-![](assets/uc1_enrich_18.png)
+![Divida a atividade com três transições de saída para as atividades de entrega em primeiro lugar, em segundo lugar e tente novamente.](assets/uc1_enrich_18.png)
 
 1. Um subconjunto do primeiro (**Vencedor**) foi definido para incluir o destinatário com a pontuação mais alta. Para fazer isso, defina uma limitação do número de registros, aplique uma classificação decrescente à pontuação e limite o número de registros a 1.
 
-   ![](assets/uc1_enrich_16.png)
+   ![Vencedor do subconjunto dividido limitado a um registro, ordenado por Pontuação (Dados adicionais/Resultados da competição) decrescente.](assets/uc1_enrich_16.png)
 
 1. O subconjunto do segundo (**Segundo lugar**) inclui o destinatário com a segunda pontuação mais alta. A configuração é igual ao primeiro subconjunto.
 
-   ![](assets/uc1_enrich_17.png)
+   ![Segundo lugar do subconjunto dividido configurado como Vencedor: ordenado por Pontuação decrescente, limitado a 1.](assets/uc1_enrich_17.png)
 
 1. O terceiro subconjunto (**perdedores**) contém todos os outros destinatários. Acesse a guia **[!UICONTROL General]** e marque a caixa **[!UICONTROL Generate complement]** para direcionar todos os destinatários que não atingiram as duas pontuações mais altas.
 
-   ![](assets/uc1_enrich_19.png)
+   ![Guia Dividir Geral com Gerar complemento marcado e o complemento rotulado como Perdedores.](assets/uc1_enrich_19.png)
 
 1. Adicione uma atividade do tipo **[!UICONTROL Delivery]** para cada subconjunto, usando um modelo de entrega diferente para cada um.
 
-   ![](assets/uc1_enrich_20.png)
+   ![Primeiro lugar da atividade de entrega criado a partir da entrega de primeiro lugar do modelo (DM41).](assets/uc1_enrich_20.png)

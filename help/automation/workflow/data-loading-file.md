@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 96%
+source-wordcount: '1287'
+ht-degree: 83%
 ---
 # Carregamento de dados (arquivo){#data-loading-file}
 
@@ -47,11 +47,11 @@ A seção superior da janela de configuração dessa atividade permite definir o
 >
 >Somente os arquivos de estrutura simples são suportados (por exemplo, CSV, TXT e etc.). Não é recomendável usar o formato XML. Com o console do cliente, você pode carregar arquivos de até 150 MB. Na Interface do usuário da Web, a atividade Load file tem um limite de 50 MB. [Saiba mais](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=pt-BR){target="_blank"}
 
-![](assets/s_advuser_wf_etl_file.png)
+![Atividade de carregamento de dados (arquivo) com um arquivo de exemplo, visualização das colunas, opções de nome de arquivo e gerenciamento de rejeição.](assets/s_advuser_wf_etl_file.png)
 
 Você pode definir um pré-processamento a ser executado durante a importação do arquivo, por exemplo, para não precisar descompactar o arquivo no servidor (e, portanto, economizar espaço para o arquivo descompactado), e incluir a descompactação no processamento de arquivo. Selecione a opção **[!UICONTROL Pre-process the file]** e escolha uma das três opções: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) ou **[!UICONTROL Decrypt]** (gpg).
 
-![](assets/preprocessing-dataloading.png)
+![Carregamento de dados (arquivo) com Pré-processamento do arquivo selecionado e Lista de comandos: None, Decompression, Decrypt.](assets/preprocessing-dataloading.png)
 
 >[!IMPORTANT]
 >
@@ -63,7 +63,7 @@ Quando você carrega um arquivo, o formato da coluna é automaticamente detectad
 
 Para fazer isso, selecione **[!UICONTROL Click here to change the file format...]** na janela principal da atividade **[!UICONTROL Data loading (file)]**. A janela de detalhes do formato será aberta.
 
-![](assets/file_loading_columns_format.png)
+![Janela de formato de arquivo com configurações gerais de arquivo e uma tabela Colunas com tipo de dados, Permitir NULLs e comprimento.](assets/file_loading_columns_format.png)
 
 Em seguida, você pode modificar a formatação geral do arquivo, bem como a formatação de cada coluna.
 
@@ -108,7 +108,7 @@ A formatação de coluna permite definir o processamento de valor de cada coluna
 
 O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carregar seu conteúdo e atualizar os dados no banco de dados, dependendo das informações que ele contém. O arquivo a ser coletado contém informações sobre clientes que podem ter comprado (cerca de 3.000 euros), pediram reembolso em uma compra ou visitaram a loja sem adquirir nada. Dependendo dessas informações, vários processos serão aplicados ao seu perfil no banco de dados.
 
-![](assets/s_advuser_load_file_sample_0.png)
+![Fluxo de trabalho com File collector, Data loading (file) e Split, levando a quatro atividades Update data por tipo de compra.](assets/s_advuser_load_file_sample_0.png)
 
 1. O coletor de arquivos permite recuperar arquivos armazenados em um diretório, dependendo da frequência fornecida.
 
@@ -116,13 +116,13 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 
    O uso de **[!UICONTROL File collector]** é detalhado na seção [File collector](file-collector.md).
 
-   ![](assets/s_advuser_load_file_sample_1.png)
+   ![Guia Diretório do coletor de arquivos com um diretório de servidor e o filtro para arquivos de texto de clientes.](assets/s_advuser_load_file_sample_1.png)
 
    A guia **[!UICONTROL Schedule]** permite agendar a execução do coletor, ou seja, especificar a frequência com que a presença desses arquivos será verificada.
 
    Aqui, queremos acionar o coletor todo dia útil às 9:00 PM.
 
-   ![](assets/s_advuser_load_file_sample_2.png)
+   ![Guia Agendar do coletor de arquivos com a opção Planejar execução marcada e o acionador diário das 21:00, além do botão Alterar.](assets/s_advuser_load_file_sample_2.png)
 
    Para fazer isso, clique no botão **[!UICONTROL Change...]** localizado na seção inferior direita da ferramenta de edição e configure o cronograma.
 
@@ -130,7 +130,7 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 
 1. Em seguida, configure a atividade de carregamento de dados (arquivo) para indicar como os arquivos coletados devem ser lidos. Para fazer isso, selecione um arquivo de exemplo com a mesma estrutura dos arquivos a serem carregados.
 
-   ![](assets/s_advuser_load_file_sample_3.png)
+   ![Atividade de carregamento de dados (arquivo) com um arquivo de exemplo e uma visualização das colunas Event, lastname, firstname e other.](assets/s_advuser_load_file_sample_3.png)
 
    Aqui, o arquivo contém cinco colunas:
 
@@ -143,15 +143,15 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 
    A atividade de Split é detalhada na seção.
 
-   ![](assets/s_advuser_load_file_sample_4.png)
+   ![Dividir subconjunto para Sem compra, com o link Editar abrindo uma consulta em que o campo Evento é selecionado como a expressão.](assets/s_advuser_load_file_sample_4.png)
 
    Para cada subconjunto, especifique um dos valores na coluna **Evento**.
 
-   ![](assets/s_advuser_load_file_sample_5.png)
+   ![Condição de filtro de consulta com a expressão Event (Event) igual a 0 para o subconjunto.](assets/s_advuser_load_file_sample_5.png)
 
    A atividade **[!UICONTROL Split]** conterá as seguintes informações:
 
-   ![](assets/s_advuser_load_file_sample_6.png)
+   ![Divida a atividade com guias de subconjunto para menos de 3000 compras, Nenhuma compra, Devolver e mais de 3000 compras; Nenhuma compra exibida.](assets/s_advuser_load_file_sample_6.png)
 
 1. Então especifique os processos a serem executados para cada tipo de população. No nosso exemplo, vamos **[!UICONTROL Update the data]** no banco de dados. Para fazer isso, posicione uma atividade **[!UICONTROL Update data]** no final de cada transição de saída da atividade Split.
 

@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 82%
+source-wordcount: '1391'
+ht-degree: 80%
 ---
 # Práticas recomendadas de fluxos de trabalho{#workflow-best-practices}
 
@@ -76,7 +76,7 @@ Antes de começar a construir um fluxo de trabalho, lembre-se de definir supervi
 
 Verifique regularmente a guia **[!UICONTROL Monitoring]** para visualizar o status geral dos fluxos de trabalho ativos. Para obter mais informações, consulte [Supervisão de instância](monitor-workflow-execution.md#instance-supervision).
 
-O Workflow HeatMap permite aos administradores da plataforma Adobe Campaign monitorarem a carga na instância e planejarem os fluxos de trabalho correspondentes. Para obter mais informações, consulte [Monitoramento de fluxo de trabalho](heatmap.md).
+O Mapa de calor de fluxos de trabalho permite aos administradores da plataforma Adobe Campaign monitorarem a carga na instância e, consequentemente, planejarem os fluxos de trabalho. Para obter mais informações, consulte [Monitoramento de fluxo de trabalho](heatmap.md).
 
 ## Atividades {#using-activities}
 
@@ -95,7 +95,7 @@ O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não 
 * Sempre inicie o fluxo de trabalho com uma atividade **[!UICONTROL Start]** ou atividade **[!UICONTROL Scheduler]** . Quando pertinente, também é possível usar uma atividade **[!UICONTROL External signal]**.
 * Ao criar o fluxo de trabalho, use apenas uma atividade **[!UICONTROL Scheduler]** por ramificação. Se a mesma ramificação de um fluxo de trabalho tiver vários schedulers (vinculados uns aos outros), o número de tarefas a serem executadas será multiplicado exponencialmente, o que irá sobrecarregar consideravelmente o banco de dados. Essa regra também se aplica a todas as atividades com uma guia **[!UICONTROL Scheduling & History]**. Saiba mais em [Agendamento](scheduler.md).
 
-  ![](assets/wf-scheduler.png)
+  ![Corrija o layout com um Agendador por ramificação, versus dois Agendadores em uma ramificação marcada como não permitida.](assets/wf-scheduler.png)
 
 * Use atividades **[!UICONTROL End]** para cada fluxo de trabalho. Isso permite que o Adobe Campaign libere espaço temporário usado para cálculos dentro de fluxos de trabalho. Para obter mais informações, consulte [início e fim](start-and-end.md).
 
@@ -158,4 +158,4 @@ Práticas recomendadas adicionais devem ser aplicadas ao planejamento de execuç
 
 Em um ambiente de produção, evite executar workflows no mecanismo. Quando a opção **[!UICONTROL Execute in the engine]** estiver marcada em **[!UICONTROL Workflow properties]**, o fluxo de trabalho terá prioridade e todos os outros fluxos serão interrompidos pelo mecanismo do fluxo de trabalho até que este seja concluído.
 
-![](assets/wf-execute-in-engine.png)
+![Guia Execução de propriedades do fluxo de trabalho com a opção Executar no mecanismo (não usar na produção) marcada.](assets/wf-execute-in-engine.png)

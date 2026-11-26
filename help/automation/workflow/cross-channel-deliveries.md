@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 74%
+source-wordcount: '337'
+ht-degree: 56%
 ---
 # Entregas entre canais{#cross-channel-deliveries}
 
@@ -46,26 +46,26 @@ No exemplo abaixo, saiba como criar um fluxo de trabalho para enviar um email ou
    >
    >Para as notificações por push, use a dimensão de direcionamento dos **aplicativos de assinante**.
 
-   ![](assets/cross_channel_delivery_1.png)
+   ![Atividade de consulta com o esquema de aplicativos do Assinante selecionado como o documento no qual filtrar.](assets/cross_channel_delivery_1.png)
 
 1. Adicione as condições de filtro à sua consulta. Nesse caso, selecionamos destinatários com um número de celular ou endereço de email.
 
-   ![](assets/cross_channel_delivery_2.png)
+   ![O filtro de consulta com dispositivo móvel não está vazio e uma condição ou para email não está vazia.](assets/cross_channel_delivery_2.png)
 
 1. Adicione uma atividade **[!UICONTROL Split]** ao fluxo de trabalho para dividir destinatários com um número de celular e aqueles com um endereço de email.
 1. Na guia **[!UICONTROL Delivery]**, selecione um workflow para cada target.
 
    Crie seu delivery da mesma forma que com um assistente de delivery comum clicando duas vezes na atividade de delivery no seu workflow.
 
-   ![](assets/cross_channel_delivery_3.png)
+   ![Fluxo de trabalho de campanha com uma consulta e uma divisão que leva a uma entrega por dispositivo móvel e uma entrega por email.](assets/cross_channel_delivery_3.png)
 
 1. Adicione e configure uma atividade **[!UICONTROL Wait]** para os destinatários não receberem muitas entregas de uma vez.
 1. Adicione uma atividade **[!UICONTROL Split]** para dividir os assinantes de aplicativos móveis iOS ou Android.
 
    Selecione um serviço para cada um dos sistemas operacionais.
 
-   ![](assets/cross_channel_delivery_4.png)
+   ![Caixa de diálogo de consulta com aplicativos do assinante como targeting dimension e Assinantes de um aplicativo móvel Android selecionados.](assets/cross_channel_delivery_4.png)
 
 1. Selecione e configure uma entrega de aplicativo móvel para cada um dos sistemas operacionais.
 
-   ![](assets/cross_channel_delivery_5.png)
+   ![Fluxo de trabalho com entregas de email e SMS ingressando em uma atividade de espera e, em seguida, em entregas Split to Push iOS e Push Android.](assets/cross_channel_delivery_5.png)

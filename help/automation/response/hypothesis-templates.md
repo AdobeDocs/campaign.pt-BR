@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 98%
+source-wordcount: '1828'
+ht-degree: 76%
 ---
 # Modelos de hipótese{#hypothesis-templates}
 
@@ -46,7 +46,7 @@ Aplique as seguintes etapas para criar um modelo de hipótese:
 
 1. No explorer do Adobe Campaign, clique em **[!UICONTROL Resources>Templates>Hypothesis templates]**.
 
-   ![](assets/response_hypothesis_model_creation_001.png)
+   ![Explorador com Recursos > Modelos > Modelos de hipótese selecionados e um modelo de hipótese aberto na guia Geral.](assets/response_hypothesis_model_creation_001.png)
 
 1. Clique em **[!UICONTROL New]** ou selecione com o botão direito na lista de modelos e escolha **[!UICONTROL New]** na lista suspensa.
 1. Insira o rótulo da hipótese.
@@ -88,7 +88,7 @@ A guia **[!UICONTROL General]** permite especificar as opções gerais do modelo
 
 * **[!UICONTROL Channel]**: é possível escolher um canal específico ou disponibilizar o modelo da hipótese em todos os canais no console do Adobe Campaign selecionando **[!UICONTROL All channels]** na lista suspensa. Se o modelo for configurado para um canal específico, é possível filtrar automaticamente as entregas por canal ao criar a hipótese. [Saiba mais](creating-hypotheses.md)
 
-  ![](assets/response_properties_001.png)
+  ![Guia Geral de modelo de hipótese com o menu suspenso Canal aberto e Todos os canais realçados.](assets/response_properties_001.png)
 
 * **[!UICONTROL Execution folder]**: permite especificar a pasta de execução da hipótese.
 * **[!UICONTROL Taken into account in campaign ROI calculation]**: considera o resultado da hipótese no cálculo do ROI da respectiva campanha.
@@ -99,29 +99,29 @@ A guia **[!UICONTROL General]** do modelo também permite especificar os parâme
 
 * **[!UICONTROL Schedule execution for a time of low activity]**: permite agendar a aplicação da hipótese para otimizar desempenhos do Adobe Campaign. Quando essa opção é marcada, o fluxo de trabalho do processamento em campanhas executa o cálculo de hipóteses durante o tempo de inatividade.
 
-  ![](assets/response_exec_settings_002.png)
+  ![Configurações de Execução de modelo de hipótese com a opção Schedule execution for a time of low activity verificada.](assets/response_exec_settings_002.png)
 
 * **[!UICONTROL Priority]**: nível aplicado para espaçar as ordens de cálculo da hipótese se houver execuções simultâneas.
 
-  ![](assets/response_exec_settings_003.png)
+  ![Lista suspensa de Prioridade de modelo de hipótese baixa, média e alta.](assets/response_exec_settings_003.png)
 
 * **[!UICONTROL Automatic execution]**: se necessário, permite agendar o recálculo da hipótese (por exemplo, é possível atualizar os indicadores regularmente até o fim da entrega).
 
-  ![](assets/response_exec_settings_001.png)
+  ![A execução automática foi verificada com o link Frequency of execution e sua caixa de diálogo Hypothesis com o botão Change.](assets/response_exec_settings_001.png)
 
   Aplique o seguinte processo para especificar um cronograma:
 
   1. Clique no link **[!UICONTROL Frequency of execution...]** e depois no botão **[!UICONTROL Change...]**.
 
-     ![](assets/response_frequency_execution_001.png)
+     ![Caixa de diálogo de hipótese informando que o agendamento de tarefas não está definido, com o botão Alterar para definir a frequência.](assets/response_frequency_execution_001.png)
 
   1. Configure a frequência, os eventos relacionados e o período de validade.
 
-     ![](assets/response_frequency_execution_002.png)
+     ![Assistente para edição de agendamento: frequência semanal, quarta e sexta-feira selecionadas e Válido a partir do período de validade.](assets/response_frequency_execution_002.png)
 
   1. Clique em **[!UICONTROL Finish]** para salvar o cronograma.
 
-     ![](assets/response_frequency_execution_003.png)
+     ![Etapa de resumo do assistente de edição de agendamento listando os horários de inicialização, com o botão Concluir.](assets/response_frequency_execution_003.png)
 
 * **[!UICONTROL Log SQL queries in journal]**: esta função é destinada para usuários especialistas. Ele permite adicionar uma guia à auditoria da hipótese de mensuração para mostrar queries SQL. Isso permite a detecção de possíveis defeitos se uma simulação terminar com erros.
 * **[!UICONTROL Keep execution workflow]**: permite manter o fluxo de trabalho gerado automaticamente no início do cálculo da hipótese. Na hipótese criada a partir de um modelo que tem essa opção marcada, o fluxo de trabalho gerado está disponível para seguir o processo.
@@ -146,19 +146,19 @@ Esta guia contém vários campos e tabelas que permitem salvar o histórico das 
 
   Quando a hipótese está vinculada a uma entrega, a mensuração é acionada automaticamente por alguns dias após a data de contato da correspondência direta ou após a data do email ou SMS.
 
-  ![](assets/response_measurement_001.png)
+  ![Guia Transactions com o campo de data de transação e o início e o fim dos períodos de cálculo.](assets/response_measurement_001.png)
 
   Se a hipótese é iniciada em tempo real, pode ser forçada para acionar imediatamente. Caso contrário, ocorre o acionamento automático com base na configuração de término da data de cálculo, que é baseada na data de criação da hipótese. [Saiba mais](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
 
 * **[!UICONTROL Transaction/Margin amount]**: esses campos são opcionais e permitem o cálculo dos indicadores de faturamento automaticamente. [Saiba mais](hypothesis-tracking.md#indicators)
 * **[!UICONTROL Unit amount]**: permite que você defina um valor para calcular a receita. [Saiba mais](hypothesis-tracking.md#indicators)
 
-  ![](assets/response_transactions_001.png)
+  ![Guia Transactions com o valor da transação definido como @amount e uma seta apontando para o campo Unit amount.](assets/response_transactions_001.png)
 
 * **[!UICONTROL Additional measures and data]**: permite a especificação de relatórios adicionais de medidas ou eixos de campos nas diferentes tabelas.
 * **[!UICONTROL Update offer proposition status]**: permite a alteração do status da apresentação da oferta se um destinatário for identificado pela hipótese.
 
-  ![](assets/response_offer_status_001.png)
+  ![Guia Transactions Seção Propositions com a opção Update offer proposition status marcada e o menu suspenso Status aberto.](assets/response_offer_status_001.png)
 
 ### Perímetro da hipótese {#hypothesis-perimeter}
 
@@ -168,29 +168,29 @@ Depois de definir a tabela de transações e os campos que são relacionados, é
 
   1. Clique no link **[!UICONTROL Edit query]**.
 
-     ![](assets/response_scope_filtering_001.png)
+     ![Guia Escopo com o link Editar consulta em Filtragem de transações vinculadas a reações.](assets/response_scope_filtering_001.png)
 
   1. Especifique as condições de filtragem.
 
-     ![](assets/response_scope_filtering_002.png)
+     ![Assistente de edição de consultas: as condições de filtragem foram selecionadas, o botão Editar expressão e a árvore de seleção de campos.](assets/response_scope_filtering_002.png)
 
   1. Selecione a transação que a hipótese deve relacionar.
 
-     ![](assets/response_scope_filtering_003.png)
+     ![Editar condições do filtro de consulta: existem linhas de compra como, com a lista Compra igual ao valor aberta.](assets/response_scope_filtering_003.png)
 
 * **Filter on recipients**: na guia **[!UICONTROL Scope]**, é possível limitar a hipótese de qualquer informação vinculada a uma mensagem (entrega, destinatário, endereço de email, serviço, etc.):
 
   1. Clique no link **[!UICONTROL Add a filter]** e depois em **[!UICONTROL Edit query]**.
 
-     ![](assets/response_scope_filtering_004.png)
+     ![Guia Escopo com os links Adicionar um filtro e Editar consulta em Filtragem das mensagens de entrega.](assets/response_scope_filtering_004.png)
 
   1. Especifique as condições de filtragem.
 
-     ![](assets/response_scope_filtering_005.png)
+     ![Editar assistente de consulta no esquema do log de entrega do destinatário com uma condição de filtro O email contém.](assets/response_scope_filtering_005.png)
 
   1. Clique em **[!UICONTROL Finish]** para salvar sua consulta.
 
-     ![](assets/response_scope_filtering_006.png)
+     ![Guia Escopo mostrando o filtro de mensagens de entrega salvo, Consulta: email contém, realçado.](assets/response_scope_filtering_006.png)
 
 * **Script**: é possível usar um script JavaScript para sobrecarregar dinamicamente as configurações de hipótese durante a execução.
 
@@ -200,7 +200,7 @@ Depois de definir a tabela de transações e os campos que são relacionados, é
   >
   >Esse procedimento destina-se somente aos usuários especializados.
 
-  ![](assets/response_hypothesis_model_creation_011.png)
+  ![Caixa de diálogo de configurações avançadas com um script de inicialização inserido, aberta a partir do link Configurações avançadas na guia Escopo.](assets/response_hypothesis_model_creation_011.png)
 
 ## Exemplo: criar um modelo de hipótese em uma entrega {#example--creating-a-hypothesis-template-on-a-delivery}
 
@@ -209,11 +209,11 @@ Neste exemplo é criado um modelo de hipótese em uma entrega do tipo mala diret
 1. No explorer do Adobe Campaign, vá para o nó **[!UICONTROL Resources > Templates > Hypothesis templates]**.
 1. Clique em **[!UICONTROL New]** para criar um modelo.
 
-   ![](assets/response_hypothesis_model_example_001.png)
+   ![Lista de modelos de hipótese com o botão New realçado e um novo modelo aberto na guia General.](assets/response_hypothesis_model_example_001.png)
 
 1. Alterar o rótulo do modelo.
 
-   ![](assets/response_hypothesis_model_example_002.png)
+   ![Guia Modelo Geral com o rótulo alterado para Hipótese de compras e Entregas como tipo de hipótese.](assets/response_hypothesis_model_example_002.png)
 
 1. Selecione **[!UICONTROL Deliveries]** como tipo de hipótese.
 1. Marque a opção correspondente para especificar que a entrega pode conter um grupo de controle.
@@ -225,33 +225,33 @@ Neste exemplo é criado um modelo de hipótese em uma entrega do tipo mala diret
 
 1. Na guia **[!UICONTROL Transactions]**, selecione a tabela de reações do destinatário.
 
-   ![](assets/response_hypothesis_model_example_006.png)
+   ![Guia Transações com a caixa de diálogo Selecionar um Esquema e as reações do esquema de destinatários selecionado.](assets/response_hypothesis_model_example_006.png)
 
 1. No campo **[!UICONTROL Transactions schema]** escolha a tabela de compra.
 
-   ![](assets/response_hypothesis_model_example_007.png)
+   ![Guia Transações com a caixa de diálogo Selecionar um documento filtrada na compra e Compras selecionadas.](assets/response_hypothesis_model_example_007.png)
 
 1. Selecione as linhas de compra no campo **[!UICONTROL Querying schema]**.
 
-   ![](assets/response_hypothesis_model_example_008.png)
+   ![Consultando o esquema suspenso listando linhas de compra, compras e reações dos destinatários.](assets/response_hypothesis_model_example_008.png)
 
 1. Escolha os destinatários vinculados à tabela de compras.
 
-   ![](assets/response_hypothesis_model_example_009.png)
+   ![Selecione uma caixa de diálogo de expressão para Link a pessoas físicas com o link de Destinatário selecionado em Compra.](assets/response_hypothesis_model_example_009.png)
 
 1. Selecione o campo vinculado à data de compra.
 
    Isso permite a definição de um período de tempo para hipóteses. Este estágio não é obrigatório, mas é recomendado.
 
-   ![](assets/response_hypothesis_model_example_010.png)
+   ![Selecione uma caixa de diálogo de expressão para a Data da transação com o campo Data de compra selecionado.](assets/response_hypothesis_model_example_010.png)
 
 1. Configure o período de cálculo de 5 a 25 dias.
 
-   ![](assets/response_hypothesis_model_example_005.png)
+   ![Guia Transactions com o início do cálculo definido como 5d e o fim do cálculo definido como 25d realçado.](assets/response_hypothesis_model_example_005.png)
 
 1. Na guia **[!UICONTROL Scope]**, clique em **[!UICONTROL Edit query]** para criar um filtro na hipótese.
 
-   ![](assets/response_hypothesis_model_example_011.png)
+   ![Guia Escopo com a opção Editar consulta clicada e o assistente Editar consulta listando os tipos de filtro, Filtrar por produto selecionado.](assets/response_hypothesis_model_example_011.png)
 
    O modelo criado permite a execução da hipótese nos produtos ou artigos da tabela de compras.
 

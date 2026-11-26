@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 100%
+source-wordcount: '1377'
+ht-degree: 90%
 ---
 # Modelos e scripts JavaScript{#javascript-scripts-and-templates}
 
@@ -39,7 +39,7 @@ Os scripts são universais em um diagrama de fluxo de trabalho:
 * A atividade de &#39;Teste&#39; avalia expressões JavaScript para ativar a transição apropriada.
 * A maioria dos campos de texto são modelos do JavaScript: expressões JavaScript podem ser incluídas entre &lt;%= and %>. Estes campos oferecem um botão que abre uma lista suspensa para ajudá-lo a inserir expressões.
 
-  ![](assets/script-button.png)
+  ![Botão com uma seta suspensa à direita de um campo de texto que lista as propriedades disponíveis para expressões.](assets/script-button.png)
 
 ## Objetos expostos {#objects-exposed}
 
@@ -63,7 +63,7 @@ As propriedades disponíveis para esses objetos podem ser visualizadas em uma li
 
 Neste exemplo, e nos exemplos a seguir, crie um fluxo de trabalho que inclua uma atividade de **código JavaScript** e uma atividade **final** como exibido no diagrama a seguir.
 
-![](assets/script-1.png)
+![Fluxo de trabalho com uma atividade de código JavaScript conectada por uma transição Ok a uma atividade End.](assets/script-1.png)
 
 Clique duas vezes na atividade de **código JavaScript** e insira o seguinte script:
 
@@ -104,7 +104,7 @@ Certas variáveis de evento são modificadas ou lidas pelas várias atividades. 
 
 >[!NOTE]
 >
->Outros casos de uso de fluxo de trabalho estão disponíveis [nesta seção](workflow-use-cases.md).
+>Outros casos de uso de fluxo de trabalho estão disponíveis em [Casos de uso de fluxo de trabalho](workflow-use-cases.md).
 
 **Exemplo 1**
 
@@ -116,7 +116,7 @@ Neste exemplo, uma variável de instância é usada para calcular dinamicamente 
 
    Por exemplo: `instance.vars.segmentpercent = 10;`
 
-   ![](assets/js_ex1.png)
+   ![Atividade de código JavaScript com o script instance.vars.segmentpercent = 10; inserido no campo Script.](assets/js_ex1.png)
 
 1. Adicione uma atividade Query e destinatários de acordo com suas necessidades.
 
@@ -124,7 +124,7 @@ Neste exemplo, uma variável de instância é usada para calcular dinamicamente 
 
    É a porcentagem que é atualizada dinamicamente graças à variável de instância definida anteriormente.
 
-   ![](assets/js_ex2.png)
+   ![Guia Dividir Subconjuntos de atividades com Limitar os registros selecionados habilitado e Amostragem aleatória limitada a 50%.](assets/js_ex2.png)
 
 1. Na seção Initialization script da guia Advanced da atividade Split, defina uma condição JS. A condição JS seleciona a porcentagem de amostragem aleatória da primeira transição que sai da atividade Split e a atualiza para um valor definido pela variável de instância criada anteriormente.
 
@@ -132,13 +132,13 @@ Neste exemplo, uma variável de instância é usada para calcular dinamicamente 
    activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
    ```
 
-   ![](assets/js_ex3.png)
+   ![Divida a atividade na guia Avançado com a configuração de script de inicialização limiter.percent para instance.vars.segmentpercent.](assets/js_ex3.png)
 
 1. Certifique-se de que o complemento seja gerado em uma transição separada da atividade Split e adicione as atividades End após cada transição de saída.
 
 1. Salve e execute o fluxo de trabalho. A amostragem dinâmica é aplicada de acordo com a variável de instância.
 
-   ![](assets/js_ex4.png)
+   ![Fluxo de trabalho com código JavaScript, uma consulta e uma Split, com transições First Set e Complement para duas atividades End.](assets/js_ex4.png)
 
 **Exemplo 2**
 
@@ -180,7 +180,7 @@ Por exemplo:
 
 1. Crie uma variável de instância que define o nome interno de uma entrega através do **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
 
-   ![](assets/wkf_js_activity_1.png)
+   ![Atividade de código JavaScript com o script instance.vars.deliveryIN = &#39;DM42&#39; no campo Script.](assets/wkf_js_activity_1.png)
 
 1. Criar uma consulta cujo direcionamento e dimensões de filtro são os destinatários. Nas condições, especifique que deseja localizar todos os destinatários que receberam a entrega especificada pela variável .
 
@@ -190,7 +190,7 @@ Por exemplo:
 
    O fluxo de trabalho retornará os destinatários da entrega DM42.
 
-   ![](assets/wkf_var_in_query.png)
+   ![Filtro de consulta em logs de entrega de destinatários em que o nome interno da entrega é igual ao valor de instance/vars/deliveryIN.](assets/wkf_var_in_query.png)
 
 ## Funções avançadas {#advanced-functions}
 

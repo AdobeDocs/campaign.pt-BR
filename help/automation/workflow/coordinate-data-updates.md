@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 83%
 ---
 # Coordenar atualizações de dados{#coordinating-data-updates}
 
@@ -37,7 +37,7 @@ Esse caso de uso detalha a criação de um fluxo de trabalho que permite gerenci
 
 O objetivo é verificar se o processo de atualização terminou antes de executar outra operação de atualização. Para fazer isso, vamos configurar uma variável de instância e permitir que o fluxo de trabalho teste, se a instância estiver em execução, decidir se continua ou não a execução do fluxo de trabalho e realizar a atualização.
 
-![](assets/uc_dataupdate_wkf.png)
+![Fluxo de trabalho: Scheduler, Está em execução? teste terminando em Fim em Sim, ou Consulta, Atualização de Dados e Fim 2 em Não.](assets/uc_dataupdate_wkf.png)
 
 Este fluxo de trabalho é composto por:
 
@@ -55,19 +55,19 @@ Para criar o fluxo de trabalho, siga as etapas abaixo:
    >
    >&quot;isRunning&quot; é o nome da variável de instância que escolhemos para este exemplo. Essa não é uma variável interna.
 
-   ![](assets/uc_dataupdate_test.png)
+   ![Está em execução? atividade de teste com a condição Yes instance.vars.isRunning e a ramificação padrão rotulada como No.](assets/uc_dataupdate_test.png)
 
 1. Adicione uma atividade **End** à bifurcação **No.** Dessa forma, nada será executado se o fluxo de trabalho já estiver em execução.
 1. Adicione as atividades desejadas à bifurcação **Yes.** Em nosso caso, as atividades **Query** e **Update Data**.
 1. Abra a primeira atividade e adicione o comando **instance.vars.isRunning = true** na guia **[!UICONTROL Advanced]**. Dessa forma, a variável de instância é definida como em execução.
 
-   ![](assets/uc_dataupdate_query.png)
+   ![Guia Avançado da atividade Consulta com o script de inicialização instance.vars.isRunning = true.](assets/uc_dataupdate_query.png)
 
 1. Adicione uma atividade **End** ao final da bifurcação **[!UICONTROL Yes]** e adicione o comando **instance.vars.isRunning = false** na guia **[!UICONTROL Advanced]**.
 
    Desta maneira, nenhuma ação será executada enquanto o fluxo de trabalho estiver em execução.
 
-   ![](assets/uc_dataupdate_end.png)
+   ![Guia Avançado da atividade End 2 com o script de inicialização instance.vars.isRunning = false.](assets/uc_dataupdate_end.png)
 
 **Tópicos relacionados:**
 

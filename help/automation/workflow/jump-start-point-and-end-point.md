@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 100%
+source-wordcount: '153'
+ht-degree: 77%
 ---
 # Jump (ponto inicial e ponto final){#jump-start-point-and-end-point}
 
@@ -36,12 +36,12 @@ Jumps são transições sem setas.
 
 Elas vão de uma atividade para outra, como no exemplo a seguir:
 
-![](assets/s_user_segmentation_jump_sample.png)
+![O fluxo de trabalho no qual os saltos do ponto de início substituem longas transições para dois saltos do ponto de extremidade que alimentam uma União e uma Eliminação de Duplicação.](assets/s_user_segmentation_jump_sample.png)
 
 Para cada transição de tipo &quot;ponto inicial&quot;, uma transição de tipo &quot;ponto final&quot; deve ser posicionada.
 
 É possível inserir vários pontos iniciais e pontos finais no mesmo fluxo de trabalho. Eles são identificados por um número que deve ser inserido nos parâmetros:
 
-![](assets/s_user_segmentation_jump_in.png)
+![Atividade Jump (ponto inicial) com o campo Label e o campo Jump number definidos como 1.](assets/s_user_segmentation_jump_in.png)
 
 Para melhorar a legibilidade do diagrama, é possível alterar a imagem associada aos saltos para exibir o número relacionado. Consulte [Alterar imagens de atividades](change-activity-images.md).

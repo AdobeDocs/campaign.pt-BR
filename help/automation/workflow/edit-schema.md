@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 100%
+source-wordcount: '149'
+ht-degree: 77%
 ---
 # Editar esquema{#edit-schema}
 
@@ -38,10 +38,10 @@ Os dados podem ser transformados, normalizados e, se necessário, enriquecidos n
 
 Essa atividade não altera os dados na tabela de trabalho, altera apenas seu esquema, ou seja, o modo de exibição lógico dos dados.
 
-![](assets/wf_manipulation_box.png)
+![Editar atividade de esquema com colunas e expressões de saída, incluindo uma coluna Média de pedidos calculada com Média](assets/wf_manipulation_box.png)
 
 Também é possível criar associações com outras tabelas de trabalho, por meio da guia **[!UICONTROL Links]**.
 
-![](assets/wf_manipulation_box_link_tab.png)
+![Guia Links do esquema Editar com a caixa de diálogo Definição de link mostrando o esquema de destino e as condições de associação](assets/wf_manipulation_box_link_tab.png)
 
 A seção inferior permite configurar a lista de condições de associação, isto é, os critérios utilizados para reconciliar os dados a partir das duas tabelas.

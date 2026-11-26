@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 97%
+source-wordcount: '532'
+ht-degree: 84%
 ---
 # Atualizar lista{#list-update}
 
@@ -36,13 +36,13 @@ ht-degree: 97%
 
 Uma atividade **List update** armazena a população especificada na transição em uma lista de destinatários.
 
-![](assets/s_user_segmentation_update_group.png)
+![Editor de atividade de atualização de lista com Especificado explicitamente selecionado, a pasta Listas e as opções de tipo de salvamento.](assets/s_user_segmentation_update_group.png)
 
 A lista pode ser selecionada na lista de grupos existentes.
 
 Ele também pode ser criado por meio das opções **[!UICONTROL Create the list if necessary (Computed name)]** e **[!UICONTROL Create the list if necessary (Computed Folder and Name)]**. Essas opções permitem selecionar o rótulo de sua escolha para criar uma lista e, posteriormente, a pasta na qual ela será salva. O rótulo também pode ser gerado automaticamente inserindo campos dinâmicos ou um script. Os diferentes campos dinâmicos estão disponíveis no menu pop-up à direita do rótulo.
 
-![](assets/s_user_segmentation_update_list_calc.png)
+![Listar atividade de atualização com Criar a lista se necessário (Nome computado) selecionada e um script de rótulo computado.](assets/s_user_segmentation_update_list_calc.png)
 
 Se a lista já existe, os destinatários são adicionados ao conteúdo existente, a menos que a opção **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** esteja habilitada. Nesse caso, o conteúdo da lista é excluído antes da atualização.
 
@@ -52,7 +52,7 @@ Para usar a opção, as tabelas específicas devem ter sido configuradas em sua 
 
 Geralmente, salvar um target em uma lista marca o final de um fluxo de trabalho. Por padrão, a atividade **[!UICONTROL List update]** não tem uma transição de saída. Marque a opção **[!UICONTROL Generate an outbound transition]** para adicionar uma.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra como criar uma lista de recipients pelo Explorer em vídeo](#video)
+![Ícone do botão Reproduzir para o link do vídeo.](assets/do-not-localize/how-to-video.png) [Descubra como criar uma lista de destinatários pelo Explorer em vídeo](#video)
 
 ## Exemplo: atualização de lista {#example--list-update}
 
@@ -71,7 +71,7 @@ No exemplo a seguir, a atividade de atualização da lista segue uma consulta di
 1. Deixe a opção **[!UICONTROL Generate an outbound transition]** desmarcada.
 1. Clique em **[!UICONTROL Ok]** e inicie o fluxo de trabalho.
 
-   ![](assets/s_user_segmentation_update_list_calc_example.png)
+   ![Atividade de atualização de lista definida para criar a lista M_WestUS_18-30 na pasta Listas, com a opção de limpeza e reutilização marcada.](assets/s_user_segmentation_update_list_calc_example.png)
 
    A lista de destinatários correspondentes é então criada ou atualizada.
 

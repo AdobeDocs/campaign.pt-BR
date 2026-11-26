@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 92%
+source-wordcount: '2232'
+ht-degree: 64%
 ---
 # Criar uma campanha local{#creating-a-local-campaign}
 
@@ -52,15 +52,15 @@ Para criar um pacote de campanha, primeiro crie o **modelo de campanha** por mei
 
 Para criar um novo modelo local, duplique o template padrão **[!UICONTROL Local campaign (opLocal)]**.
 
-![](assets/mkg_dist_local_op_creation.png)
+![Lista de modelos de campanha com o menu de contexto Campanha local (opLocal) e a opção Duplicar realçada](assets/mkg_dist_local_op_creation.png)
 
 Nomeie seu modelo de campanha e preencha os campos disponíveis.
 
-![](assets/mkg_dist_local_op_creation1.png)
+![Nova caixa de diálogo de campanha de marketing com campos Label, Nature, Operation type, Main channel, duration e description](assets/mkg_dist_local_op_creation1.png)
 
 Na janela da campanha, clique na guia **[!UICONTROL Edit]** e clique no link **[!UICONTROL Advanced campaign parameters...]**.
 
-![](assets/mkt_distr_4.png)
+![Guia Editar da campanha com o link Parâmetros de campanha avançados na seção Propriedades](assets/mkt_distr_4.png)
 
 ### Interface da Web {#web-interface}
 
@@ -70,17 +70,17 @@ A interface da web corresponde a um formulário a ser preenchido pela entidade l
 
 Selecione o tipo de interface da web a ser aplicada às campanhas criadas a partir do modelo:
 
-![](assets/mkt_distr_1.png)
+![Guia Marketing distribuído de configurações avançadas com lista de tipos de interface da Web: Predefinido, Por resumo, Por formulário, Por formulário externo](assets/mkt_distr_1.png)
 
 Há quatro tipos de interfaces da web disponíveis:
 
 * **[!UICONTROL By brief]**: a entidade local deve fornecer uma descrição com as configurações da campanha. Uma vez aprovado o pedido, a entidade central configura e executa a campanha como um todo.
 
-  ![](assets/mkt_distr_6.png)
+  ![Página da Web de pedido de campanha para o por breve interface com campos de definição de metas e descrição de conteúdo e botão Validar](assets/mkt_distr_6.png)
 
 * **[!UICONTROL By form]**: a entidade local tem acesso a um formulário web onde, dependendo do modelo usado, podem editar o conteúdo, o direcionamento, o tamanho máximo, bem como datas de criação e extração usando campos de personalização. A entidade local pode avaliar o público-alvo e pré-visualizar o conteúdo desse formulário web.
 
-  ![](assets/mkt_distr_8.png)
+  ![Formulário web de pedido de campanha com data de contato, canal preferencial, segmento de idade, imagem, campos de mensagem e links de avaliação](assets/mkt_distr_8.png)
 
   O formulário oferecido é especificado em um aplicativo web que deve ser selecionado em uma lista suspensa no campo **[!UICONTROL web Interface]** no link do modelo **[!UICONTROL Advanced campaign parameters...]**. Consulte [Criar uma campanha local (por formulário)](examples.md#creating-a-local-campaign--by-form-).
 
@@ -88,12 +88,12 @@ Há quatro tipos de interfaces da web disponíveis:
   >
   >A aplicação web utilizada é um exemplo. É necessário criar um aplicativo web específico para poder usar um formulário.
 
-  ![](assets/mkt_distr_7.png)
+  ![Lista suspensa de aplicativos Web da interface da Web de configurações avançadas, como personalização da ordem de campanha](assets/mkt_distr_7.png)
 
 * **[!UICONTROL By external form]**: a entidade local tem acesso aos parâmetros da campanha em sua extranet (não Adobe Campaign). Esses parâmetros são idênticos aos de uma **campanha local (por formulário)**.
 * **[!UICONTROL Pre-set]**: entidade local solicita uma campanha usando o formulário padrão, sem localizá-lo.
 
-  ![](assets/mkt_distr_5.png)
+  ![Formulário de pedido de campanha com campos Start, End, Assigned to, Reviewer 1 e 2 e Description, e um botão Validate](assets/mkt_distr_5.png)
 
 ### Valores padrão {#default-values}
 
@@ -103,21 +103,21 @@ Selecione o **[!UICONTROL Default values]** a ser completado por entidades locai
 * contato e datas de extração,
 * características do target (segmento de idade, etc.).
 
-![](assets/mkg_dist_local_op_creation2.png)
+![Tabela de valores padrão de configurações avançadas com os valores Canal preferencial, Data de contato e Quantidade solicitada](assets/mkg_dist_local_op_creation2.png)
 
 Preencha os campos **[!UICONTROL Parent marketing program]** e **[!UICONTROL Charge]**.
 
-![](assets/mkg_dist_local_op_creation3.png)
+![Configurações avançadas com os campos de programa de marketing Pai e Encargo destacados abaixo da tabela de Valores padrão](assets/mkg_dist_local_op_creation3.png)
 
 ### Aprovações {#approvals}
 
 No link **[!UICONTROL Advanced parameters for campaign entry]**, é possível especificar o número máximo de revisores.
 
-![](assets/s_advuser_mkg_dist_add_valid_op1.png)
+![Parâmetros avançados para caixa de diálogo de entrada de campanha com campos Número de revisores e Número de documentos](assets/s_advuser_mkg_dist_add_valid_op1.png)
 
 Os revisores serão inseridos pela entidade local ao solicitar a campanha.
 
-![](assets/mkt_distr_5.png)
+![Formulário de pedido de campanha com campos Start, End, Assigned to, Reviewer 1 e 2 e Description, e um botão Validate](assets/mkt_distr_5.png)
 
 Se você não deseja nomear revisores para uma campanha, insira 0.
 
@@ -125,11 +125,11 @@ Se você não deseja nomear revisores para uma campanha, insira 0.
 
 Você pode permitir que operadores de entidades locais vinculem documentos (arquivos de texto, planilhas, imagens, descrições de campanha etc.) à campanha local ao criar o pedido. O link **[!UICONTROL Advanced parameters for campaign entry...]** permite restringir o número de documentos. Para fazer isso, basta inserir o número máximo permitido no campo **[!UICONTROL Number of documents]**.
 
-![](assets/s_advuser_mkg_dist_local_docs.png)
+![Campo Número de documentos definido como 2, o número máximo de documentos definido ao criar a ordem](assets/s_advuser_mkg_dist_local_docs.png)
 
 Ao solicitar um pacote de campanha, o formulário sugere vincular quantos documentos forem indicados no campo correspondente no modelo.
 
-![](assets/s_advuser_mkg_dist_add_docs.png)
+![Formulário web de pedido de campanha com campos de carregamento de arquivo do Documento 1 e Documento 2, além de campos de revisor e orçamento](assets/s_advuser_mkg_dist_add_docs.png)
 
 Para não exibir um campo para fazer upload de documento, digite **[!UICONTROL 0]** no campo **[!UICONTROL Number of documents]**.
 
@@ -137,43 +137,43 @@ Para não exibir um campo para fazer upload de documento, digite **[!UICONTROL 0
 >
 >O **[!UICONTROL Advanced parameters for campaign entry]** pode ser desativado verificando o **[!UICONTROL Do not display the page used to enter the campaign parameters]**.
 
-![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
+![Configurações avançadas com Não exibir a página usada para inserir a opção de parâmetros de campanha marcada](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
 ### Fluxo de trabalho {#workflow}
 
 Na guia **[!UICONTROL Targeting and workflows]**, crie o fluxo de trabalho que coleta os **[!UICONTROL Default values]** especificados nas **[!UICONTROL Advanced campaign parameters...]** e cria as entregas.
 
-![](assets/mkg_dist_local_op_creation4b.png)
+![Guia Direcionamento e fluxos de trabalho com um fluxo de trabalho padrão: query, Split, Entrega de email e Entrega por correspondência direta](assets/mkg_dist_local_op_creation4b.png)
 
 Clique duas vezes na atividade **[!UICONTROL Query]** para configurá-la de acordo com os **[!UICONTROL Default values]** especificados.
 
-![](assets/mkt_dist_local_campaign_localize_query.png)
+![Atividade Query com Edit query link abrindo um filtro onde o segmento Age é igual ao segmento Age do pedido atual](assets/mkt_dist_local_campaign_localize_query.png)
 
 ### Entrega {#delivery}
 
 Na guia **[!UICONTROL Audit]**, clique no ícone **[!UICONTROL Detail...]** para visualizar o **[!UICONTROL Scheduling]** da entrega selecionada.
 
-![](assets/mkg_dist_local_op_creation4c.png)
+![Lista de entregas da guia Auditoria com o botão Detalhe abrindo uma entrega cujo ícone Agendamento está realçado](assets/mkg_dist_local_op_creation4c.png)
 
 O ícone **[!UICONTROL Scheduling]** permite configurar o contato da entrega e a data de execução.
 
-![](assets/mkg_dist_local_op_creation4d.png)
+![Caixa de diálogo de agendamento com a opção Agendar entrega selecionada e cálculo de Data de contato com base em campos adicionais](assets/mkg_dist_local_op_creation4d.png)
 
 Se necessário, configure o tamanho máximo da entrega:
 
-![](assets/mkg_dist_local_op_creation4e.png)
+![Caixa de diálogo de configurações de exclusão com o campo Limitar entrega a, aberto na guia Selecionar exclusões de destino](assets/mkg_dist_local_op_creation4e.png)
 
 Localize o HTML da sua entrega. Por exemplo, no campo **[!UICONTROL Delivery > Current order > Additional fields]**, use o campo **[!UICONTROL Age segment]** para localizar a entrega de acordo com a idade do público-alvo.
 
-![](assets/mkt_dist_local_campaign_localize_html.png)
+![Caixa de diálogo de seleção de campo mostrando o campo de dados adicionais do código de segmento, inserido via Mensagem e Outros](assets/mkt_dist_local_campaign_localize_html.png)
 
 Salve seu modelo de campanha. Agora você pode usá-lo na visualização **[!UICONTROL Campaign packages]** na guia **[!UICONTROL Campaigns]** clicando no botão **[!UICONTROL Create]**.
 
-![](assets/mkt_distr_9.png)
+![Exibição dos pacotes de campanha com o botão Criar, abrindo a caixa de diálogo do pacote de campanha com o modelo e a campanha de referência](assets/mkt_distr_9.png)
 
 >[!NOTE]
 >
->Os modelos de campanha e suas configurações gerais estão detalhados em [esta página](../campaigns/marketing-campaign-templates.md).
+>Os modelos de campanha e suas configurações gerais estão detalhados em [Modelos de campanha de marketing](../campaigns/marketing-campaign-templates.md).
 
 ## Criação do pacote de campanha {#creating-the-campaign-package}
 
@@ -184,7 +184,7 @@ Siga as etapas abaixo:
 1. Na seção **[!UICONTROL Navigation]** da página **Campaigns**, clique no link **[!UICONTROL Campaign packages]**.
 1. Clique no botão **[!UICONTROL Create]**.
 
-   ![](assets/mkg_dist_add_an_entry.png)
+   ![Caixa de diálogo do pacote de campanha com os campos Template, Reference campaign, Label, Folder e Execution schedule](assets/mkg_dist_add_an_entry.png)
 
 1. A seção acima da janela permite selecionar o modelo do pacote de campanha especificado [anteriormente](#creating-a-local-campaign-template) .
 
@@ -204,19 +204,19 @@ A data de disponibilidade é a data em que a campanha fica disponível para enti
 
 Essas informações são encontradas na mensagem de notificação enviada para agências locais, conforme mostrado abaixo:
 
-![](assets/s_advuser_mkg_dist_local_notif.png)
+![Novo email de notificação de entrada de catálogo com o link Solicitar a campanha, a programação do pacote e a data de disponibilidade da campanha](assets/s_advuser_mkg_dist_local_notif.png)
 
 ### Público-alvo {#audience}
 
 Para uma campanha local, a entidade central pode especificar as entidades locais envolvidas marcando a opção **[!UICONTROL Limit the package to a set of local entities]**.
 
-![](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
+![Caixa de diálogo do pacote de campanha com a opção Limit the package to a set of local entities realçada](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
 
 ### Configurações adicionais {#additional-settings}
 
 Depois que o pacote é salvo, a entidade central pode editá-la na guia **[!UICONTROL Edit]**.
 
-![](assets/mkg_dist_edit_kit.png)
+![Guia Editar do pacote de campanha Seção geral com link de parâmetros de Aprovação, Opções de pedido e Cronograma de execução](assets/mkg_dist_edit_kit.png)
 
 Na guia **[!UICONTROL General]**, a entidade central pode:
 
@@ -230,7 +230,7 @@ Na guia **[!UICONTROL General]**, a entidade central pode:
 >   
 >Marque a opção **[!UICONTROL Enable multiple creation]** para permitir que várias campanhas locais sejam criadas no pacote de campanha.
 
-![](assets/mkg_dist_local_op_multi_crea.png)
+![Guia Editar do pacote de campanha com Habilitar criação múltipla marcada e a lista de entidades locais](assets/mkg_dist_local_op_multi_crea.png)
 
 ### Notificações {#notifications}
 
@@ -244,7 +244,7 @@ Os pacotes de campanha ficam acessíveis às entidades locais quando aprovados e
 >
 >Se algumas entidades locais foram especificadas ao criar o pacote de campanha, elas serão as únicas a receberem uma notificação. Se nenhuma entidade local tiver sido especificada, todas as entidades locais receberão uma notificação.
 
-![](assets/mkg_dist_local_op_notification.png)
+![Email notificando que um novo pacote está disponível, com o link Solicitar a campanha e os detalhes de agendamento do pacote](assets/mkg_dist_local_op_notification.png)
 
 Para usar uma campanha oferecida pela entidade central, a entidade local deve solicitá-la.
 
@@ -256,29 +256,29 @@ Para solicitar uma campanha:
 
 1. Insira as informações necessárias na primeira página (rótulo do pedido e comentário) e clique em **[!UICONTROL Next]**.
 
-   ![](assets/mkg_dist_subscribe_step1.png)
+   ![Página da Web de pedido de campanha com número do pedido, entidade local, Rótulo do pedido, campos de Comentário do pedido e botão Próximo](assets/mkg_dist_subscribe_step1.png)
 
 1. Complete os parâmetros disponíveis e aprove o pedido.
 
 1. Uma notificação é enviada ao gerente da entidade organizacional à qual a entidade local pertence, para aprovar esse pedido.
 
-   ![](assets/mkg_dist_subscribe_step3.png)
+   ![Página da Web de aprovação de pedidos com opções Aceitar e Rejeitar, campo Comentário e botão Aprovação](assets/mkg_dist_subscribe_step3.png)
 
 1. As informações são retornadas às entidades locais e centrais. Embora entidades locais possam exibir apenas seus próprios pedidos, a entidade central pode visualizar todos os pedidos por qualquer entidade local, conforme mostrado abaixo:
 
-   ![](assets/mkg_dist_subscribe_central_view.png)
+   ![Guia Ordens do pacote de campanha listando quatro ordens de venda de verão com status Disponível, campanha, datas de início e término](assets/mkg_dist_subscribe_central_view.png)
 
    Os operadores podem exibir detalhes do pedido:
 
-   ![](assets/mkg_dist_local_op_catalog_detail_1.png)
+   ![Painel de pedidos aberto na lista Pedidos com status, pacote de campanha, entidade local e detalhes da campanha](assets/mkg_dist_local_op_catalog_detail_1.png)
 
    A guia **[!UICONTROL Edit]** contém as informações inseridas pela entidade local ao solicitar a campanha.
 
-   ![](assets/mkg_dist_local_op_catalog_detail_1b.png)
+   ![Guia Edição de Pedido com Etiqueta, Entidade organizacional, Status e comentário inseridos pela entidade local](assets/mkg_dist_local_op_catalog_detail_1b.png)
 
 1. O pedido deve ser aprovado pela entidade central para ser finalizado.
 
-   ![](assets/mkg_dist_local_op_catalog_detail_3.png)
+   ![Painel de pedidos com status de aprovação pendente e o botão Aprovar assinatura](assets/mkg_dist_local_op_catalog_detail_3.png)
 
    Para obter mais informações, consulte a seção [Approval process](#approval-process).
 
@@ -286,7 +286,7 @@ Para solicitar uma campanha:
 
    A opção **[!UICONTROL Start targeting with order approval]** permite que a entidade local execute a campanha assim que o pedido for aprovado.
 
-   ![](assets/mkg_dist_local_op_catalog_use.png)
+   ![Lista de pacotes de campanha na guia Campanhas com um pacote local publicado disponível para uso](assets/mkg_dist_local_op_catalog_use.png)
 
 ## Aprovar um pedido {#approving-an-order}
 
@@ -304,19 +304,19 @@ A visão geral **[!UICONTROL Campaign orders]**, acessada pela guia **Campanhas*
 
 Quando uma campanha é solicitada por uma entidade local, seus revisores são notificados por e-mail, conforme mostrado abaixo:
 
-![](assets/mkg_dist_valid_notif_email.png)
+![Aprovação de email de pedido de campanha com link Aceitar ou rejeitar, detalhes e prazos do pedido e do pacote](assets/mkg_dist_valid_notif_email.png)
 
 >[!NOTE]
 >
 >A seleção de revisores é apresentada na seção [Revisores](#reviewers). Eles podem aceitar ou rejeitar o pedido.
 
-![](assets/mkg_dist_command_valid_web.png)
+![Página da Web de aprovação de pedidos com Aceitar selecionado, um comentário e o botão Aprovação](assets/mkg_dist_command_valid_web.png)
 
 #### Aprovar via console do cliente {#approving-via-the-adobe-campaign-console}
 
 O pedido também pode ser aprovado por meio do Console do cliente, na visão geral do pedido de campanha. Para aprovar um pedido, selecione-o e clique em **[!UICONTROL Approve the order]**.
 
-![](assets/mkg_dist_local_order_valid.png)
+![Painel de pedidos no console com o botão Aprovar assinatura, abrindo a caixa de diálogo Aceitar ou Rejeitar aprovação](assets/mkg_dist_local_order_valid.png)
 
 >[!NOTE]
 >
@@ -326,7 +326,7 @@ O pedido também pode ser aprovado por meio do Console do cliente, na visão ger
 
 Uma vez aprovado o pedido de campanha, ele pode ser configurado e executado pela entidade local.
 
-![](assets/mkg_dist_mutual_op_created.png)
+![Lista de pacotes de campanha com status Aprovado, Rejeitado e Em edição; o link da campanha está sendo clicado](assets/mkg_dist_mutual_op_created.png)
 
 Para obter mais informações, consulte [Como acessar campanhas](accessing-campaigns.md).
 
@@ -334,17 +334,17 @@ Para obter mais informações, consulte [Como acessar campanhas](accessing-campa
 
 O operador encarregado da aprovação pode rejeitar um pedido ou um pacote de campanha.
 
-![](assets/mkg_dist_do_not_valid.png)
+![Ação na caixa de diálogo do pacote com a opção Rejeitar selecionada, um campo Comentário e o botão Aprovação](assets/mkg_dist_do_not_valid.png)
 
 Se o revisor rejeitar um pedido, a notificação relevante será automaticamente enviada às entidades locais relacionadas: ela exibirá o comentário inserido pelo operador que rejeitou a aprovação.
 
 As informações são exibidas na lista da página de pacotes de campanha ou na página do pedido da campanha.. Se tiverem acesso ao Console do cliente do Adobe Campaign, entidades locais serão informadas dessa rejeição.
 
-![](assets/mkg_dist_do_not_valid_view.png)
+![Lista de pacotes de campanha com o selo de status Rejeitado destacado em um pacote de campanha local](assets/mkg_dist_do_not_valid_view.png)
 
 Eles podem exibir o comentário relacionado do pacote de campanha na guia **[!UICONTROL Edit]**.
 
-![](assets/mkg_dist_do_not_valid_tab.png)
+![Guia Auditoria de pacote de campanha com diário de aprovações mostrando uma ação Rejeitada, com coluna Comentário](assets/mkg_dist_do_not_valid_tab.png)
 
 ### Revisores {#reviewers}
 
@@ -360,6 +360,6 @@ Para cada entidade local, os revisores são selecionados para aprovação de ped
 
 A agência central pode cancelar um pedido com o botão **[!UICONTROL Delete]**, localizado no painel de pedidos.
 
-![](assets/mkg_dist_local_op_cancel.png)
+![Painel do pacote de campanha com o menu Actions em um pedido e a opção Delete realçada](assets/mkg_dist_local_op_cancel.png)
 
 Isso cancela a campanha na visualização **[!UICONTROL Campaign orders]**.

@@ -23,16 +23,16 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 73%
+source-wordcount: '898'
+ht-degree: 58%
 ---
 # Usar dados de fluxo de trabalho{#how-to-use-workflow-data}
 
 Você pode usar atividades de workflow para executar várias tarefas. Encontre abaixo exemplos de uso para atualizar o banco de dados criando listas, gerenciar assinaturas, enviar mensagens por meio de um fluxo de trabalho ou enriquecer seus deliveries e seus públicos.
 
-Um conjunto de casos de uso de fluxo de trabalho está disponível em [esta seção](workflow-use-cases.md).
+Um conjunto de casos de uso de fluxo de trabalho está disponível em [Casos de uso de fluxo de trabalho](workflow-use-cases.md).
 
 ## Ciclo de vida dos dados {#data-life-cycle}
 
@@ -42,7 +42,7 @@ Nos fluxos de trabalho, os dados transportados de uma atividade para outra são 
 
 Esses dados podem ser exibidos e analisados clicando com o botão direito do mouse na transição apropriada.
 
-![](assets/wf-right-click-analyze.png)
+![Fluxo de trabalho com um menu exibido ao clicar com o botão direito do mouse em uma transição que mostra as opções Exibir o destino e Analisar destino.](assets/wf-right-click-analyze.png)
 
 Para fazer isso, selecione o menu relevante:
 
@@ -50,13 +50,13 @@ Para fazer isso, selecione o menu relevante:
 
   Esse menu exibe os dados disponíveis sobre o público-alvo.
 
-  ![](assets/wf-right-click-display.png)
+  ![Exibir janela de população, guia Dados, listando os registros do destino com seus campos.](assets/wf-right-click-display.png)
 
   Você pode acessar a estrutura da tabela de trabalho na guia **[!UICONTROL Schema]**.
 
-  ![](assets/wf-right-click-schema.png)
+  ![Exibir janela de população, guia Esquema, mostrando a estrutura da tabela de trabalho temporária:enrich e seus campos.](assets/wf-right-click-schema.png)
 
-  Para obter mais informações, consulte [esta seção](monitor-workflow-execution.md#worktables-and-workflow-schema).
+  Para obter mais informações, consulte [Tabelas de trabalho e esquema de fluxo de trabalho](monitor-workflow-execution.md#worktables-and-workflow-schema).
 
 * **[!UICONTROL Analyze target...]**
 
@@ -66,7 +66,7 @@ Para fazer isso, selecione o menu relevante:
 
 Os dados do target são descartados na execução do fluxo de trabalho Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
 
-![](assets/wf-purge-data-option.png)
+![Propriedades do fluxo de trabalho com a opção Keep the result of interim populations between two executions marcada.](assets/wf-purge-data-option.png)
 
 >[!CAUTION]
 >
@@ -89,7 +89,7 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
 
 1. Crie um fluxo de trabalho para coletar informações, reconcilie com os dados já existentes no banco de dados, e depois inicie uma entrega.
 
-   ![](assets/wf-targetdata-sample-1.png)
+   ![Fluxo de trabalho com carregamento de dados (arquivo), atividades de Enriquecimento e Entrega conectadas em sequência.](assets/wf-targetdata-sample-1.png)
 
 1. No nosso exemplo, o conteúdo do arquivo é o seguinte:
 
@@ -105,15 +105,15 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
 
    Para carregar o arquivo, configure a atividade **[!UICONTROL Data loading (file)]** conforme abaixo:
 
-   ![](assets/wf-targetdata-sample-2.png)
+   ![Atividade de carregamento de dados (arquivo) com um arquivo CSV de exemplo, uma visualização de suas colunas e o recurso Upload de um arquivo do computador local.](assets/wf-targetdata-sample-2.png)
 
 1. Configure a atividade **[!UICONTROL Enrichment]** para reconciliar os dados coletados com os existentes no banco de dados do Adobe Campaign. Aqui, a chave de reconciliação é o número da conta:
 
-   ![](assets/wf-targetdata-sample-3.png)
+   ![Atividade de enriquecimento, guia Reconciliação, com a expressão de origem Account correspondente ao destino @account.](assets/wf-targetdata-sample-3.png)
 
 1. Em seguida, configure o **[!UICONTROL Delivery]**: ele é criado com base em um modelo e os destinatários são especificados pela transição de entrada.
 
-   ![](assets/wf-targetdata-sample-4.png)
+   ![Atividade de entrega criada a partir de um modelo, com destinatários especificados pelos eventos de entrada e pela ação Preparar.](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
@@ -123,13 +123,13 @@ No exemplo a seguir, você está coletando uma lista de informações sobre clie
 
    Para fazer isso, insira os campos de personalização do tipo **[!UICONTROL Target extension]**.
 
-   ![](assets/wf-targetdata-sample-5.png)
+   ![Menu de personalização do editor de entrega com extensão do Target aberta, listando campos como Música, Conta e Cartão.](assets/wf-targetdata-sample-5.png)
 
    Nesse exemplo, queremos inserir o gênero de música e o tipo de mídia favoritos do cliente (CD ou DVD), conforme declarado no arquivo coletado pelo fluxo de trabalho.
 
    Como um diferencial, vamos adicionar um cupom para os titulares de cartões de fidelidade, ou seja, destinatários para os quais o valor &#39;Cartão&#39; for igual a 1.
 
-   ![](assets/wf-targetdata-sample-6.png)
+   ![Conteúdo de entrega com um script que adiciona 10% de desconto quando targetData.Card for igual a 1 e targetData.Music for personalizado.](assets/wf-targetdata-sample-6.png)
 
    Os dados do tipo **[!UICONTROL Target extension]** (targetData) são inseridos em entregas usando as mesmas características de todos os campos de personalização. Eles também podem ser usados no assunto, rótulos de link ou nos próprios links.
 
@@ -146,7 +146,7 @@ Os dados do banco de dados do Adobe Campaign e as listas existentes podem ser at
 
   Você pode selecionar uma lista existente ou criar uma. Nesse caso, o nome e possivelmente a pasta de registro são calculados.
 
-  ![](assets/s_user_create_list.png)
+  ![Listar atividade de atualização com uma lista especificada explicitamente, salva no banco de dados do targeting dimension com sua própria tabela.](assets/s_user_create_list.png)
 
   Consulte [Atualização da lista](list-update.md).
 

@@ -18,10 +18,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 86%
+source-wordcount: '563'
+ht-degree: 70%
 ---
 # Publicar o pacote de campanha{#publishing-the-campaign-package}
 
@@ -33,15 +33,15 @@ Antes de serem publicados na lista de pacotes de campanha, os pacotes de campanh
 
 Para selecionar o revisor, clique no link **[!UICONTROL Approval parameters]** do pacote de campanha e escolha o revisor relevante na lista suspensa.
 
-![](assets/s_advuser_mkg_dist_define_valid.png)
+![Caixa de diálogo de parâmetros de aprovação de um pacote de campanha com o campo Revisor definido como um grupo de gerenciamento central.](assets/s_advuser_mkg_dist_define_valid.png)
 
 Você pode iniciar o processo de aprovação clicando em **[!UICONTROL Submit for approval]**.
 
-![](assets/s_advuser_mkg_dist_valid_process.png)
+![Painel do pacote de campanha mostrando a mensagem enviada para aprovação e o botão Aprovar o pacote.](assets/s_advuser_mkg_dist_valid_process.png)
 
 Uma mensagem de notificação é enviada ao revisor para confirmar a disponibilidade desse pacote de campanha. A mensagem contém um link para aceitar ou rejeitar a aprovação via acesso à web.
 
-![](assets/s_advuser_mkg_dist_valid_process1.png)
+![Email de aprovação com o link Aceitar ou Rejeitar abrindo a página Ação no pacote com as opções Aceitar e Rejeitar.](assets/s_advuser_mkg_dist_valid_process1.png)
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Uma mensagem de notificação é enviada ao revisor para confirmar a disponibili
 
 É possível adicionar outros revisores a partir do link **[!UICONTROL Edit...]**, localizado na guia **[!UICONTROL Approval parameters...]** do pacote de campanha.
 
-![](assets/s_advuser_mkg_dist_select_op_valid.png)
+![Editar link nos Parâmetros de aprovação abrindo a janela Editar revisores com Revisores adicionais e Agendamento de aprovação.](assets/s_advuser_mkg_dist_select_op_valid.png)
 
 ## Cronograma de aprovação {#approval-periods}
 
@@ -61,7 +61,7 @@ Na janela dos revisores de edição, é possível definir lembretes para enviar 
 
 Os lembretes podem ser enviados em uma determinada data e/ou **x** dias após a data de envio. O tipo de lembrete pode ser configurado na primeira coluna da tabela de lembretes. No exemplo abaixo, os revisores receberão uma mensagem de lembrete em 11/01/2023, ou seja, dois dias antes da data selecionada na coluna **[!UICONTROL Date]**, e um segundo lembrete um dia antes do final do período de aprovação, ou seja, dois dias após a data de envio para aprovação.
 
-![](assets/s_advuser_mkg_dist_reminder_planning.png)
+![Editar janela de revisores com um atraso de aprovação 3d e dois lembretes: Atraso do prazo de aprovação e Data especificada.](assets/s_advuser_mkg_dist_reminder_planning.png)
 
 Depois que estiver definido e o pacote for enviado para aprovação, o cronograma de execução é exibido na guia **[!UICONTROL Audit]**. Ele mostra o prazo de processamento calculado com base na configuração anterior, bem como nas datas de todos os lembretes configurados.
 
@@ -69,6 +69,6 @@ Depois que estiver definido e o pacote for enviado para aprovação, o cronogram
 
 Se nenhum revisor tiver sido especificado ou se nenhum dos operadores notificados tiver aprovado o pacote, o botão **[!UICONTROL Approve the package]** permitirá prosseguir diretamente para a aprovação no **[!UICONTROL Dashboard]** do pacote de campanha ou da visão geral dos pacotes.
 
-![](assets/s_advuser_mkg_dist_valid_button.png)
+![Aprove o botão de pacote abrindo a caixa de diálogo Ação no pacote com as opções Aceitar ou Rejeitar e um campo Comentário.](assets/s_advuser_mkg_dist_valid_button.png)
 
 Após a aprovação, a campanha é publicada, adicionada à lista e, assim que sua data de disponibilidade é alcançada, as entidades locais podem usá-la. Se as entidades locais foram especificadas ao criar a campanha, uma mensagem é enviada aos operadores no grupo de notificação para saberem que a campanha está disponível. Se nenhuma entidade foi especificada anteriormente, a campanha estará disponível para todas as entidades locais, por padrão. Para obter mais informações, consulte [Entidades organizacionais](about-distributed-marketing.md#organizational-entities).

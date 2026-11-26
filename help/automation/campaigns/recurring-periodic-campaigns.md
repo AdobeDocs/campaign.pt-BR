@@ -22,10 +22,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 63%
+source-wordcount: '888'
+ht-degree: 57%
 ---
 # Campanhas recorrentes e periódicas {#recurring-and-periodic-campaigns}
 
@@ -43,10 +43,10 @@ Para criar um template para campanhas recorrentes, siga as etapas abaixo:
 
 1. Abra o explorador do Campaign e navegue até **[!UICONTROL Resources > Templates > Campaign templates]**.
 1. Duplique o modelo **[!UICONTROL Recurring campaign]** interno.
-   ![](assets/recurring-campaign-duplicate.png)
+   ![Lista de modelos de campanha com o comando Duplicar selecionado no menu de contexto do modelo de campanha Recorrente.](assets/recurring-campaign-duplicate.png)
 1. Insira o nome do modelo e a duração da campanha.
 1. Para esse tipo de campanha, uma guia **[!UICONTROL Schedule]** é adicionada para criar o agendamento de execução do modelo. Use essa guia para definir as datas de execução das campanhas com base nesse template.
-   ![](assets/recurring-campaign-schedule.png)
+   ![Guia Agendamento de um modelo de campanha com a lista Agendamento de execução e um seletor de calendário para definir uma data de início.](assets/recurring-campaign-schedule.png)
 
    O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do fluxo de trabalho. [Saiba mais](../workflow/scheduler.md).
 
@@ -61,7 +61,7 @@ Para criar um template para campanhas recorrentes, siga as etapas abaixo:
    >
    >Esse fluxo de trabalho deve ser salvo como um modelo de fluxo de trabalho recorrente. Para fazer isso, edite as propriedades do fluxo de trabalho e selecione na guia **[!UICONTROL Recurring workflow template]** a opção **[!UICONTROL Execution]**.
 
-   ![](assets/recurring-campaign-wf-properties.png)
+   ![Propriedades do fluxo de trabalho, guia Execução, com a opção Modelo de fluxo de trabalho Recorrente selecionada.](assets/recurring-campaign-wf-properties.png)
 
 ### Criar a campanha recorrente {#create-the-recurring-campaign}
 
@@ -81,13 +81,13 @@ Para criar a campanha recorrente e executar os workflows de acordo com o agendam
 
 1. Os fluxos de trabalho recorrentes são criados automaticamente a partir do modelo de fluxo de trabalho presente na campanha. Eles ficam visíveis na guia **[!UICONTROL Targeting and workflows]** da campanha.
 
-   ![](assets/recurring-wf-created.png)
+   ![Guia Direcionamento e fluxos de trabalho listando o fluxo de trabalho padrão e suas instâncias recorrentes numeradas #1 e #2.](assets/recurring-wf-created.png)
 
    O rótulo de uma instância de fluxo de trabalho recorrente consiste no rótulo do seu modelo e no número do fluxo de trabalho, sendo que entre eles há o caractere &quot;#&quot;.
 
    Os fluxos de trabalho criados a partir do agendamento são associados automaticamente a ele na coluna **[!UICONTROL Workflow]** da guia **[!UICONTROL Schedule]**.
 
-   ![](assets/recurring-wf-schedule-executed.png)
+   ![Guia Agendar com a coluna Fluxo de Trabalho vinculando fluxos de trabalho criados a linhas de agendamento; Criado antecipadamente para é 15d.](assets/recurring-wf-schedule-executed.png)
 
    Cada fluxo de trabalho pode ser editado desta guia.
 

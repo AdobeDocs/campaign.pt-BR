@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 100%
+source-wordcount: '527'
+ht-degree: 93%
 ---
 # Parâmetros avançados{#advanced-parameters}
 
@@ -39,11 +39,11 @@ A janela das propriedades de uma atividade tem uma guia **[!UICONTROL Advanced]*
 
 * uma versão simplificada (para atividades de **[!UICONTROL Start]** e **[!UICONTROL End]**, por exemplo)
 
-  ![](assets/wf-advanced-basic.png)
+  ![Guia Avançado simplificado de uma atividade Iniciar com os campos Nome, Imagem, Script de inicialização e Comentário.](assets/wf-advanced-basic.png)
 
 * uma versão mais detalhada (para a atividade de **[!UICONTROL Query]**, por exemplo)
 
-  ![](assets/wf-advanced-full.png)
+  ![Guia Avançado Detalhada de uma atividade de Query com campos de Execução, Afinidade, Comportamento, Fuso horário e gerenciamento de erros.](assets/wf-advanced-full.png)
 
 Os campos a serem inseridos na guia **[!UICONTROL Advanced]** estão detalhados nas seções a seguir.
 

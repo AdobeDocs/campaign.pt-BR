@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 96%
+source-wordcount: '212'
+ht-degree: 83%
 ---
 # AND-join{#and-join}
 
@@ -34,7 +34,7 @@ Um join aciona sua transição de saída somente quando todas as transições de
 
 Por exemplo, você pode usar uma atividade AND-join no contexto de criação de conteúdo e automação de envio de entrega, para garantir que uma entrega seja iniciada somente depois que as etapas de consulta de públicos-alvos e atualizações de conteúdo forem concluídas. Um caso de uso específico está disponível no
 
-![](assets/and-join-usage.png)
+![Fluxo de trabalho no qual uma Bifurcação executa uma Consulta e um Gerenciamento de Conteúdo em paralelo em uma associação AND antes da Entrega.](assets/and-join-usage.png)
 
 >[!NOTE]
 >
@@ -46,4 +46,4 @@ A transição de saída só pode conter uma das populações de transição de e
 
 >[!CAUTION]
 >
->No caso de atividades do tipo **AND-join**, as variáveis do evento são mescladas, mas se uma mesma variável for definida duas vezes, há um conflito e o valor permanece indeterminado. Para obter mais informações, consulte [esta seção](javascript-scripts-and-templates.md#event-variables).
+>No caso de atividades do tipo **AND-join**, as variáveis do evento são mescladas, mas se uma mesma variável for definida duas vezes, há um conflito e o valor permanece indeterminado. Para obter mais informações, consulte [Variáveis de evento](javascript-scripts-and-templates.md#event-variables).

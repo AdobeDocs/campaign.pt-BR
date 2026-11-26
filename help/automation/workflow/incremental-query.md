@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 100%
+source-wordcount: '409'
+ht-degree: 86%
 ---
 # Consulta incremental{#incremental-query}
 
@@ -54,15 +54,15 @@ Para fazer isso:
 
    Na janela **[!UICONTROL Schedule editing wizard]**, você pode configurar o tipo de frequência, a recorrência do evento e o período de validade do evento.
 
-   ![](assets/s_user_segmentation_wizard_11.png)
+   ![Assistente para edição de agendamento: frequência semanal, quinta-feira selecionada e um período de validade com uma data Válida de e Até.](assets/s_user_segmentation_wizard_11.png)
 
 1. Clique em **[!UICONTROL Finish]** para salvar o cronograma.
 
-   ![](assets/s_user_segmentation_wizard_valid.png)
+   ![Página Resumo do assistente de edição de agendamento com a descrição do agendamento, a lista de horários de inicialização e o botão Concluir.](assets/s_user_segmentation_wizard_valid.png)
 
 1. A seção inferior da guia **[!UICONTROL Scheduling & History]** permite selecionar o número de dias que serão considerados no histórico.
 
-   ![](assets/edit_request_inc.png)
+   ![Guia Agendamento e Histórico de consulta incremental com execução do plano selecionada e o campo Histórico em dias definido como 10.](assets/edit_request_inc.png)
 
    * **[!UICONTROL History in days]**
 

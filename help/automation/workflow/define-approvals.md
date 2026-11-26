@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 98%
+source-wordcount: '885'
+ht-degree: 91%
 ---
 # Definir aprovações {#defining-approvals}
 
@@ -43,11 +43,11 @@ Uma mensagem é enviada a um grupo de operadores e o fluxo de trabalho aguarda u
 
 Uma aprovação pode conter várias opções para o operador escolher. No entanto, é possível restringir o número de escolhas a um para enviar uma tarefa a ser executada por um operador, como, por exemplo, a execução de direcionamento. O operador pode responder depois que a tarefa for executada (o processo então reinicia). O exemplo a seguir ilustra esses tipos de aprovações:
 
-![](assets/validation-1.png)
+![Fluxo de trabalho com uma aprovação de Validação de Entrega que resulta em Enviar, Notificar recusa e Notificar solicitação de modificação](assets/validation-1.png)
 
 Em operações, todos os estágios que exigem aprovação se baseiam no mesmo princípio.
 
-![](assets/validation-1-in-op.png)
+![Bloco de entrega de campanha com menu de Aprovação mostrando o conteúdo Aprovar e o direcionamento Aprovar, ambos com aprovação pendente](assets/validation-1-in-op.png)
 
 Um operador pode responder de uma das duas formas seguintes: validação usando a página da Web vinculada na mensagem de email ou através do console.
 
@@ -69,7 +69,7 @@ Em operações, os elementos a serem aprovados são exibidos no painel da campan
 
 Para fluxos de trabalho técnicos, as tarefas que o usuário pode aprovar podem ser acessadas a partir da estrutura de árvore na pasta **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**.
 
-![](assets/validation-node.png)
+![Árvore do Explorer com Administração > Produção > Objetos criados automaticamente > Aprovações pendentes selecionada](assets/validation-node.png)
 
 ## Grupos {#groups}
 
@@ -86,7 +86,7 @@ Expirações são transições específicas usadas em diferentes tipos de ativid
 
 A segunda guia nas propriedades da atividade de aprovação permite definir uma ou mais expirações. Na verdade, você pode definir vários tipos de expiração.
 
-![](assets/expiration.png)
+![Guia de Expiração de Aprovação com uma janela de detalhes de expiração e a lista de opções de atraso do tipo Expiração](assets/expiration.png)
 
 Para adicionar uma nova expiração, clique em **[!UICONTROL Add]**. Uma transição é adicionada a cada expiração criada. É possível:
 

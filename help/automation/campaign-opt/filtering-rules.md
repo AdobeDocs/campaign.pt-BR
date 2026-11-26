@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 77%
+source-wordcount: '659'
+ht-degree: 61%
 ---
 # Regras de filtragem{#filtering-rules}
 
@@ -44,27 +44,27 @@ Para definir esse filtro, aplique as seguintes etapas:
 1. Navegue até a pasta **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** do explorador do Campaign e clique no ícone **Novo** para criar uma regra de tipologia.
 1. Crie uma regra de tipologia **[!UICONTROL Filtering]** aplicável a todos os canais.
 
-   ![](assets/campaign_opt_create_filter_01.png)
+   ![Nova regra de tipologia com Filtragem como o tipo de regra e a opção Todos os canais selecionada na lista Canal.](assets/campaign_opt_create_filter_01.png)
 
 1. Na guia **Filtro**, altere o targeting dimension padrão para **Assinaturas** (**nms:subscription**).
 
-   ![](assets/campaign_opt_create_filter_02.png)
+   ![Guia Filtro com o esquema de Assinaturas (nms) selecionado como dimensão de direcionamento.](assets/campaign_opt_create_filter_02.png)
 
 1. Crie o filtro usando o link **[!UICONTROL Edit the query from the targeting dimension...]**.
 
-   ![](assets/campaign_opt_create_filter_03.png)
+   ![Caixa de diálogo Editar consulta de filtragem, etapa do tipo Target, com Condições de filtragem selecionadas.](assets/campaign_opt_create_filter_03.png)
 
 1. Filtre a página do recipient e salve a condição de filtragem.
 
-   ![](assets/campaign_opt_create_filter_03b.png)
+   ![Editar caixa de diálogo de consulta de filtragem com a condição Age (recipient/@age) greater than 18.](assets/campaign_opt_create_filter_03b.png)
 
 1. Na guia **Typologies**, vincule esta regra a uma tipologia de campanha e salve-a.
 
-   ![](assets/campaign_opt_create_filter_04.png)
+   ![Guia Tipologias da regra de filtragem com a caixa de diálogo Adicionar tipologias e a tipologia Boletins Informativos selecionada.](assets/campaign_opt_create_filter_04.png)
 
 Quando essa regra for usada em uma entrega, os assinantes menores de idade serão excluídos automaticamente. Uma mensagem específica indica quando a regra é aplicada:
 
-![](assets/campaign_opt_create_filter_05.png)
+![Log de análise de entrega com uma seta nas linhas que aplicam as regras Excluir endereços e Excluir domínios.](assets/campaign_opt_create_filter_05.png)
 
 ## Condicionar uma regra de filtro {#condition-a-filtering-rule}
 
@@ -86,17 +86,17 @@ Nesse caso, mesmo que a regra esteja vinculada a todas as entregas, ela só ser�
 
 É possível criar tipologias **[!UICONTROL Filtering]**: elas contêm apenas regras de filtragem.
 
-![](assets/campaign_opt_create_typo_filtering.png)
+![Tipologia com a lista Tipo definida como Filtragem e sua guia Regras listando as regras de filtragem a serem aplicadas.](assets/campaign_opt_create_typo_filtering.png)
 
 Essas tipologias específicas podem ser vinculadas a uma entrega quando o target for selecionado: no assistente da entrega, clique no link **[!UICONTROL To]** e, em seguida, na guia **[!UICONTROL Exclusions]**.
 
-![](assets/campaign_opt_apply_typo_filtering.png)
+![Caixa de diálogo Selecionar destino, guia Exclusões, com o link Adicionar uma regra de filtragem em Regras de filtragem.](assets/campaign_opt_apply_typo_filtering.png)
 
 Em seguida, selecione o filtro a ser aplicado à entrega. Para fazer isso, clique no botão **[!UICONTROL Add]** e selecione as tipologias a serem aplicadas.
 
 Você também poderá vincular regras de filtragem diretamente por meio desta guia, sem que sejam agrupadas em uma tipologia. Para fazer isso, use a seção inferior da janela.
 
-![](assets/campaign_opt_select_typo_filtering.png)
+![Guia Exclusões com uma tipologia de filtragem e uma regra de filtragem adicionada por meio dos dois botões Adicionar.](assets/campaign_opt_select_typo_filtering.png)
 
 >[!NOTE]
 >

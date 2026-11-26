@@ -24,20 +24,20 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 99%
+source-wordcount: '1246'
+ht-degree: 77%
 ---
 # Criar uma lista de resumo{#creating-a-summary-list}
 
 Esse caso de uso detalha a criação de um fluxo de trabalho, que, após coletar arquivos e a passar por vários enriquecimentos, permite criar uma lista de resumo. O exemplo é baseado em uma lista de contatos que compraram em uma loja.
 
-![](assets/uc2_enrich_overview.png)
+![Diagrama de Fluxo de Trabalho: File collector, Data loading (file), Enrichment, Update data, Enrichment 2, List update e a Wait.](assets/uc2_enrich_overview.png)
 
 A seguinte estrutura de dados é usada:
 
-![](assets/uc2_enrich_data.png)
+![Estrutura de dados: tabelas de compras e de contatos vinculadas e uma tabela de lojas separada com refStoreName e zipCodeRef.](assets/uc2_enrich_data.png)
 
 Seu objetivo é:
 
@@ -73,21 +73,21 @@ Esses dados estão contidos em um arquivo de texto &quot;Purchases.txt&quot;.
 
    A atividade **File collector** permite coletar e enviar arquivos de e para o servidor do Adobe Campaign.
 
-   A atividade **Data loading (file)** permite enriquecer a tabela de trabalho do fluxo de trabalho com os dados coletados. Para obter mais informações sobre esta atividade, consulte [esta página](data-loading-file.md).
+   A atividade **Data loading (file)** permite enriquecer a tabela de trabalho do fluxo de trabalho com os dados coletados. Para obter mais informações sobre esta atividade, consulte [Carregamento de dados (arquivo)](data-loading-file.md).
 
 1. Configure a atividade **File collector** para coletar arquivos de texto (*&#42;txt) do diretório selecionado.
 
-   ![](assets/uc2_enrich_collecteur.png)
+   ![Atividade do coletor de arquivos: guia Diretory com o filtro *.txt e a opção Process file nonexistence marcadas.](assets/uc2_enrich_collecteur.png)
 
    A atividade **File collector** permite gerenciar a ausência de um arquivo no diretório de origem. Para fazer isso, marque a opção **[!UICONTROL Process file nonexistence]**. Neste fluxo de trabalho, uma atividade **Wait** foi adicionada para tentar outra coleção de arquivos se estiver ausente no diretório no momento da coleta.
 
 1. Configure a atividade **Data loading (file)** usando um arquivo de amostra com o mesmo formato dos dados a serem importados.
 
-   ![](assets/uc2_enrich_chargement1.png)
+   ![Atividade de carregamento de dados (arquivo) com Purchases.txt como arquivo de exemplo e visualização de productName, productPrice, storeName.](assets/uc2_enrich_chargement1.png)
 
    Clique no link **[!UICONTROL Click here to change the file format...]** para renomear as colunas usando os nomes e rótulos internos da tabela “Compras”.
 
-   ![](assets/uc2_enrich_chargement2.png)
+   ![Janela de formato de arquivo com colunas productName, productPrice e storeName, separador de ponto-e-vírgula e primeira linha como cabeçalho.](assets/uc2_enrich_chargement2.png)
 
 Após importar os dados, o enriquecimento é executado criando um link para uma tabela de referência que corresponde ao esquema &quot;Lojas&quot;.
 
@@ -95,22 +95,22 @@ Adicione a atividade de Enrichment e a configure como a seguir:
 
 1. Selecione o conjunto principal de dados da atividade **Data loading (file)**.
 
-   ![](assets/uc2_enrich_enrich1.png)
+   ![Atividade de enriquecimento com Carregamento de dados (arquivo) como o Conjunto principal, além dos links Adicionar dados e Editar dados adicionais.](assets/uc2_enrich_enrich1.png)
 
 1. Clique em **[!UICONTROL Add data]** e selecione a opção **[!UICONTROL A link]**.
 
-   ![](assets/uc2_enrich_enrich2.png)
+   ![Selecione o tipo de dados para adicionar a janela com a opção de link A selecionada.](assets/uc2_enrich_enrich2.png)
 
 1. Selecione a opção **[!UICONTROL Define a collection]**.
 1. Selecione o esquema &quot;Lojas&quot; como target.
 
-   ![](assets/uc2_enrich_enrich3.png)
+   ![Definição de link: defina uma coleção selecionada como o tipo de link, com o esquema Lojas como o esquema de destino.](assets/uc2_enrich_enrich3.png)
 
 Para obter mais informações sobre os vários tipos de links, consulte [Enriquecimento e modificação de dados](targeting-workflows.md#enrich-and-modify-data).
 
 Na janela a seguir, é preciso criar uma condição de associação selecionando o campo de origem (no conjunto principal) e o campo do alvo (pertencente ao esquema &quot;Lojas&quot;) para configurar a reconciliação de dados.
 
-![](assets/uc2_enrich_enrich4.png)
+![Condições de associação de definição de link que correspondem ao campo de origem storeName com o campo de destino refStoreName.](assets/uc2_enrich_enrich4.png)
 
 Agora que o link foi criado, vamos adicionar uma coluna à tabela de trabalho do fluxo de trabalho a partir do esquema &quot;Lojas&quot;: o campo &quot;ZipCode Reference&quot;.
 
@@ -118,11 +118,11 @@ Agora que o link foi criado, vamos adicionar uma coluna à tabela de trabalho do
 1. Clique em **[!UICONTROL Edit additional data]**.
 1. Adicione o campo &quot;ZipCode Reference&quot; ao **[!UICONTROL Output columns]**.
 
-![](assets/uc2_enrich_enrich5.png)
+![Campo de Referência de CEP do link Lojas adicionado às colunas de Saída do enriquecimento.](assets/uc2_enrich_enrich5.png)
 
 Os dados na tabela de trabalho do fluxo de trabalho após esse enriquecimento serão os seguintes:
 
-![](assets/uc2_enrich_population1.png)
+![Dados da tabela de trabalho após o enriquecimento, com a coluna de Referência de CEP ao lado de productName, productPrice e storeName.](assets/uc2_enrich_population1.png)
 
 ## Etapa 2: gravar dados enriquecidos na tabela “Compras” {#step-2--writing-enriched-data-to-the--purchases--table}
 
@@ -136,7 +136,7 @@ Uma reconciliação entre os dados na tabela de trabalho do fluxo de trabalho e 
 1. Selecione um &quot;Destination expression&quot; para os dados na tabela “Compras” (o campo &quot;storename&quot; neste caso).
 1. Marque a opção **[!UICONTROL Keep unreconciled data coming from the work table]**.
 
-![](assets/uc2_enrich_reconciliation.png)
+![Guia de reconciliação com a targeting dimension e storeName de Compras correspondentes a @storeName.](assets/uc2_enrich_reconciliation.png)
 
 Na atividade **Update data**, a seguinte configuração é necessária:
 
@@ -160,23 +160,23 @@ O objetivo deste segundo enriquecimento é criar um agregado no esquema de compr
 1. Clique na opção **[!UICONTROL Data linked to the filtering dimension]** na janela **[!UICONTROL Select fields to add]**.
 1. Selecione o nó **[!UICONTROL Purchases]** e clique em **[!UICONTROL Next]**.
 
-   ![](assets/uc2_enrich_enrich9.png)
+   ![Selecione campos para adicionar a janela com dados vinculados à dimensão do filtro selecionada e o nó Compras realçado.](assets/uc2_enrich_enrich9.png)
 
 1. Altere o campo **[!UICONTROL Collected data]** selecionando a opção **[!UICONTROL Aggregates]**.
 
-   ![](assets/uc2_enrich_enrich10.png)
+   ![Parâmetros gerais da coleção Purchases com o campo Data collected definido como Aggregates.](assets/uc2_enrich_enrich10.png)
 
 1. Clique em **[!UICONTROL Next]**.
 1. Adicione a seguinte expressão para calcular o total de compras para cada contato: &quot;Sum(@prodprice)&quot;.
 
-   ![](assets/uc2_enrich_enrich6.png)
+   ![Dados para adicionar a janela com a expressão Sum(product Price) definida como uma coluna de saída para o total de compras.](assets/uc2_enrich_enrich6.png)
 
 Para preparar a lista de resumo, é necessário adicionar campos do campo “Compras” e do primeiro enriquecimento: o campo &quot;ZipCode Reference&quot;.
 
 1. Clique no link **[!UICONTROL Edit additional data...]** na atividade de enriquecimento.
 1. Adicione os campos &quot;Store Name&quot; e &quot;Purchases / Zip Code Reference&quot;.
 
-   ![](assets/uc2_enrich_enrich7.png)
+   ![Colunas de saída do Enriquecimento 2: link de compras, Sum(productPrice), storeName e o campo de Referência de CEP.](assets/uc2_enrich_enrich7.png)
 
 1. Clique na guia **[!UICONTROL Properties]**.
 1. Altere o segundo link para criar apenas uma linha.
@@ -196,4 +196,4 @@ Após executar o fluxo de trabalho, a lista incluirá:
 * uma coluna &quot;Store name&quot;,
 * a coluna &quot;Zip Code Reference&quot; inserida para todas as lojas contidas no esquema de referência de lojas.
 
-![](assets/uc2_enrich_listfinal.png)
+![Conteúdo da lista final com colunas de contatos, Sum(productPrice), nome da loja e CEP.](assets/uc2_enrich_listfinal.png)
